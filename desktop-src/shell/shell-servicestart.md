@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 9c88b1980d215ad088a4a24362f17147b5d6e432
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: afdc1e7cac8d50de08e21cfad5cb492b5b51dcb647e963b4c003e9600a924244
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108083753"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119709555"
 ---
 # <a name="shellservicestart-method"></a>Método Shell.ServiceStart
 
@@ -85,7 +85,7 @@ Devuelve **true si** se realiza correctamente; de lo contrario, **false**.
 
 ## <a name="remarks"></a>Comentarios
 
-El método devuelve **false** si el servicio ya se ha iniciado. Antes de llamar a este método, puede llamar a [**Shell.IsServiceRunning**](./shell-isservicerunning.md) para determinar el estado del servicio.
+El método devuelve **false** si el servicio ya se ha iniciado. Antes de llamar a este método, puede llamar a [**Shell.IsServiceRunning para**](./shell-isservicerunning.md) determinar el estado del servicio.
 
 Este método no está disponible actualmente en Microsoft Visual Basic.
 
@@ -93,7 +93,7 @@ Este método no está disponible actualmente en Microsoft Visual Basic.
 
 En los ejemplos siguientes se muestra el uso de **ServiceStart** para iniciar el servicio Messenger. El uso se muestra para JScript y VBScript.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -133,11 +133,11 @@ Vbscript:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
+| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 

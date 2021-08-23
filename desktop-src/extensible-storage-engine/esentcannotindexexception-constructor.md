@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentCannotIndexException'
-title: Constructor de EsentCannotIndexException
+description: 'Más información sobre: Constructor EsentCannotIndexException'
+title: Constructor EsentCannotIndexException
 TOCTitle: 'EsentCannotIndexException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentCannotIndexException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentcannotindexexception.esentcannotindexexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 84f56c0c6b1a7c5cd911fab4182c7465e2d746d7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 91cfc6fdbb5665351ced0051ce23487a72fa2c3c1423416f33594b0dacb0d89d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104081964"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119737125"
 ---
-# <a name="esentcannotindexexception-constructor"></a>Constructor de EsentCannotIndexException
+# <a name="esentcannotindexexception-constructor"></a>Constructor EsentCannotIndexException
 
 Inicializa una nueva instancia de la clase EsentCannotIndexException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentCannotIndexException()
 public EsentCannotIndexException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentCannotIndexException()
 
 [Miembros de EsentCannotIndexException](./esentcannotindexexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

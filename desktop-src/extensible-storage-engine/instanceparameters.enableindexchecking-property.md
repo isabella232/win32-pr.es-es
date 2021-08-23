@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: InstanceParameters. EnableIndexChecking (propiedad)'
-title: Propiedad InstanceParameters. EnableIndexChecking
+description: 'Más información sobre: Propiedad InstanceParameters.EnableIndexChecking'
+title: Propiedad InstanceParameters.EnableIndexChecking
 TOCTitle: 'EnableIndexChecking property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.InstanceParameters.EnableIndexChecking
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instanceparameters.enableindexchecking(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0a3090c1e5c1e42aca3758496b1367f3932e123c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0f48e4058741ab69677d62f7441cb6181e0783900d69eaff9cec73aa6bb46eb7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668283"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119834375"
 ---
-# <a name="instanceparametersenableindexchecking-property"></a>Propiedad InstanceParameters. EnableIndexChecking
+# <a name="instanceparametersenableindexchecking-property"></a>Propiedad InstanceParameters.EnableIndexChecking
 
-Obtiene o establece un valor que indica si [JetAttachDatabase (JET_SESID, String, AttachDatabaseGrbit)](./api.jetattachdatabase-method.md) comprobará si hay índices compilados con una versión anterior de la biblioteca NLS en el sistema operativo.
+Obtiene o establece un valor que indica si [JetAttachDatabase(JET_SESID, String, AttachDatabaseGrbit)](./api.jetattachdatabase-method.md) comprobará los índices que se compilaron con una versión anterior de la biblioteca NLS en el sistema operativo.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,7 +62,7 @@ public bool EnableIndexChecking { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 
 ## <a name="see-also"></a>Vea también
 
@@ -70,6 +70,6 @@ Tipo: [System. Boolean](/dotnet/api/system.boolean)
 
 [Clase InstanceParameters](./instanceparameters-class.md)
 
-[Miembros de InstanceParameters](./instanceparameters-members.md)
+[Miembros instanceParameters](./instanceparameters-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

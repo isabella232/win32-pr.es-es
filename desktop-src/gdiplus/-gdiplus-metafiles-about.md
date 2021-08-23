@@ -1,31 +1,31 @@
 ---
-description: Windows GDI+ proporciona la clase Metafile para que pueda grabar y mostrar metarchivos.
+description: Windows GDI+ proporciona la clase Metafile para que pueda registrar y mostrar metarchivos.
 ms.assetid: a9f9bac4-f3c7-44a1-9f0f-59ff1a27b077
-title: Metaarchivos (GDI+)
+title: Metarchivos (GDI+)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae75c2185670563f9a9e624d868da5b0e299cbec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 190d03edd8857da3e840c2b3fde04314fa1fb1ddb01c8e69c684bccecf3e708d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360280"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119778685"
 ---
-# <a name="metafiles-gdi"></a>Metaarchivos (GDI+)
+# <a name="metafiles-gdi"></a>Metarchivos (GDI+)
 
-Windows GDI+ proporciona la clase Metafile para que pueda grabar y mostrar [**metarchivos**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-metafile) . Un metarchivo, también denominado imagen vectorial, es una imagen que se almacena como una secuencia de comandos y valores de dibujo. Los comandos y la configuración registrados en un objeto de **metarchivo** se pueden almacenar en memoria o guardar en un archivo o una secuencia.
+Windows GDI+ proporciona la [**clase Metafile**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-metafile) para que pueda registrar y mostrar metarchivos. Un metarchivo, también denominado imagen vectorial, es una imagen que se almacena como una secuencia de comandos y configuraciones de dibujo. Los comandos y la configuración registrados en un **objeto metarchivo** se pueden almacenar en memoria o guardarse en un archivo o secuencia.
 
-GDI+ puede mostrar los metaarchivos que se han almacenado en los formatos siguientes:
+GDI+ pueden mostrar metarchivos que se han almacenado en los siguientes formatos:
 
--   Formato WMF (WMF)
+-   Windows Formato de metarchivo (WMF)
 -   Metarchivo mejorado (EMF)
--   EMF +
+-   EMF+
 
-GDI+ puede grabar metaarchivos en los formatos EMF y EMF +, pero no en formato WMF.
+GDI+ puede registrar metarchivos en los formatos EMF y EMF+, pero no en el formato WMF.
 
-EMF + es una extensión de EMF que permite almacenar registros GDI+. Hay dos variaciones en el formato EMF +: EMF + only y EMF + dual. Los metaarchivos EMF + Only solo contienen registros GDI+. Estos metaarchivos se pueden mostrar en GDI+, pero no en Windows Interfaz de dispositivo gráfico (GDI). Los metaarchivos EMF + dual contienen registros GDI+ y GDI. Cada registro de GDI+ de un metarchivo EMF + dual se empareja con un registro GDI alternativo. Estos metaarchivos se pueden mostrar en GDI+ o en GDI.
+EMF+ es una extensión de EMF que permite almacenar GDI+ registros. Hay dos variaciones en el formato EMF+: EMF+ Only y EMF+ Dual. EMF+ Solo los metarchivos contienen GDI+ registros. Estos metarchivos se pueden mostrar GDI+, pero no Windows Interfaz de dispositivo gráfico (GDI). Los metarchivos duales de EMF+ contienen GDI+ y GDI. Cada GDI+ registro en un metarchivo dual emf+ se empareja con un registro GDI alternativo. Estos metarchivos se pueden mostrar mediante GDI+ o GDI.
 
-En el ejemplo siguiente se registra una configuración y un comando de dibujo en un archivo de disco. Tenga en cuenta que en el ejemplo se crea un objeto [**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) y que el constructor del objeto **Graphics** recibe la dirección de un objeto de [**metarchivo**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-metafile) como argumento.
+En el ejemplo siguiente se registra una configuración y un comando de dibujo en un archivo de disco. Tenga en cuenta que en el ejemplo se crea un objeto [**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) y que el constructor del objeto **Graphics** recibe la dirección de un objeto [**Metarchivo**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-metafile) como argumento.
 
 
 ```
@@ -41,7 +41,7 @@ delete myMetafile;
 
 
 
-Como se muestra en el ejemplo anterior, la clase [**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) es la clave para registrar instrucciones y configuraciones en un objeto de [**metarchivo**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-metafile) . Cualquier llamada realizada a un método de un objeto **Graphics** se puede grabar en un objeto de **metarchivo** . Del mismo modo, puede establecer cualquier propiedad de un objeto **Graphics** y grabar esa configuración en un objeto de **metarchivo** . La grabación finaliza cuando el objeto **Graphics** se elimina o sale del ámbito.
+Como se muestra en el ejemplo anterior, la [**clase Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) es la clave para registrar las instrucciones y la configuración en un [**objeto Metarchivo.**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-metafile) Cualquier llamada realizada a un método de un **objeto Graphics** se puede registrar en un **objeto Metarchivo.** Del mismo modo, puede establecer cualquier propiedad de un objeto **Graphics** y registrar esa configuración en un **objeto Metarchivo.** La grabación finaliza cuando el **objeto Graphics** se elimina o sale del ámbito.
 
 En el ejemplo siguiente se muestra el metarchivo creado en el ejemplo anterior. El metarchivo se muestra con la esquina superior izquierda en (100, 100).
 
@@ -54,7 +54,7 @@ myGraphics.DrawImage(&myImage, 100, 100);
 
 
 
-En el ejemplo siguiente se registran varios valores de propiedades (región de recorte, transformación universal y modo de suavizado) en un objeto de [**metarchivo**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-metafile) . Después, el código registra varias instrucciones de dibujo. Las instrucciones y la configuración se guardan en un archivo de disco.
+En el ejemplo siguiente se registra varias configuraciones de propiedades (región de recorte, transformación del mundo y modo de suavizado) en un [**objeto Metarchivo.**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-metafile) A continuación, el código registra varias instrucciones de dibujo. Las instrucciones y la configuración se guardan en un archivo de disco.
 
 
 ```

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentInvalidCountryException'
-title: Constructor de EsentInvalidCountryException
+description: 'Más información sobre: Constructor EsentInvalidCountryException'
+title: Constructor EsentInvalidCountryException
 TOCTitle: 'EsentInvalidCountryException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentInvalidCountryException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentinvalidcountryexception.esentinvalidcountryexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d47e39c6a9b94a20b3a39fb642c911cea3591469
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7027b7893c01325f11cc668783464b6527fb4061c44fe05e7671c3e29bb6e51c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105706009"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119723765"
 ---
-# <a name="esentinvalidcountryexception-constructor"></a>Constructor de EsentInvalidCountryException
+# <a name="esentinvalidcountryexception-constructor"></a>Constructor EsentInvalidCountryException
 
 Inicializa una nueva instancia de la clase EsentInvalidCountryException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentInvalidCountryException()
 public EsentInvalidCountryException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentInvalidCountryException()
 
 [Miembros de EsentInvalidCountryException](./esentinvalidcountryexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

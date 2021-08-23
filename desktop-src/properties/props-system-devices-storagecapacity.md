@@ -1,17 +1,17 @@
 ---
 description: Capacidad total de almacenamiento del dispositivo.
 ms.assetid: 204cf253-be35-4213-ab84-45a952beffd1
-title: System. Devices. StorageCapacity
+title: System.Devices.StorageCapacity
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da5ac9b89927bfaf6c3e40154d6e7cbc9e3c49c0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f674d1c675fce2f95c980cc044dd3f0ce23c3839bd3d6e0cef8d1b35d1d3cff6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103813507"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119775445"
 ---
-# <a name="systemdevicesstoragecapacity"></a>System. Devices. StorageCapacity
+# <a name="systemdevicesstoragecapacity"></a>System.Devices.StorageCapacity
 
 Capacidad total de almacenamiento del dispositivo.
 
@@ -37,9 +37,9 @@ propertyDescription
             setValue = 0
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -54,7 +54,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -66,7 +66,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -84,7 +84,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

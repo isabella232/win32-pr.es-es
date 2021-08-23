@@ -1,7 +1,7 @@
 ---
 description: Indica la versión de CTL3D que se está ejecutando actualmente.
 ms.assetid: 38c0842c-417f-4ca1-acc2-3bbadf45c804
-title: Ctl3dGetVer función)
+title: Función Ctl3dGetVer
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - Ctl3d32.dll
-ms.openlocfilehash: e548d8933538ea85ba94f6e120032453079d69ab
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f29963020290686521d5e3bd165d2c8fac6e5e0c96f34552ad11f725d95567cf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105650058"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119654505"
 ---
-# <a name="ctl3dgetver-function"></a>Ctl3dGetVer función)
+# <a name="ctl3dgetver-function"></a>Función Ctl3dGetVer
 
 Indica la versión de CTL3D que se está ejecutando actualmente.
 
@@ -39,17 +39,17 @@ Esta función no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor que contiene el número de versión principal en el byte de orden superior y el número de versión secundaria en el byte de orden inferior.
+Devuelve un valor que contiene el número de versión principal en el byte de orden superior y el número de versión secundaria en el byte de orden bajo.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función no tiene asociado ningún archivo de encabezado o biblioteca de importación. debe llamarlo mediante las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Esta función no tiene asociada la biblioteca de importación ni el archivo de encabezado; Debe llamarlo mediante las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**y GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------|----------------------------------------------------------------------------------------|
 | Archivo DLL<br/> | <dl> <dt>Ctl3d32.dll</dt> </dl> |
 

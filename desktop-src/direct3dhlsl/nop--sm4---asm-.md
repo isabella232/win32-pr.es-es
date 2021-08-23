@@ -1,30 +1,30 @@
 ---
-title: NOP (SM4-ASM)
+title: nop (sm4 - asm)
 description: No haga nada.
 ms.assetid: 0FFCBD8D-F67F-418B-B37A-0428DA27A778
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 99b5653750e66071883a8843b92c25f867274cfd
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: f26b705f5da7c00ad2a0a72f73b4beee7734180f7667eee7817cc833f83ddf21
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104996948"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119854059"
 ---
-# <a name="nop-sm4---asm"></a>NOP (SM4-ASM)
+# <a name="nop-sm4---asm"></a>nop (sm4 - asm)
 
 No haga nada.
 
 
 
-| instrucción |
+| Nop |
 |-----|
 
 
 
- 
+ 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
@@ -36,9 +36,9 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
 
 
- 
+ 
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -46,27 +46,27 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sí       |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Shader Model 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Ensamblado modelo de sombreador 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo 4 del sombreador (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: c222a7091550b5ee831330f100292549e31ce5ff
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c169636931ff0d284d20cb616450a5a716848dd074347f3e96abafd4a153693a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119682435"
 ---
 # <a name="geterror-method-of-the-msvm_concretejob-class"></a>Método GetError de la clase ConcreteJob de \_ Msvm
 
@@ -86,7 +86,7 @@ Este método devuelve uno de los valores siguientes.
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-**El sistema no está disponible** (32777)
+**El sistema no está** disponible (32777)
 </dt> <dt>
 
 **Memoria sin memoria** (32778)
@@ -94,7 +94,7 @@ Este método devuelve uno de los valores siguientes.
 
 ## <a name="remarks"></a>Comentarios
 
-El acceso a [**la clase \_ Msvm ConcreteJob**](msvm-concretejob.md) podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
+El acceso a [**la clase \_ ConcreteJob de Msvm**](msvm-concretejob.md) podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -102,15 +102,15 @@ El acceso a [**la clase \_ Msvm ConcreteJob**](msvm-concretejob.md) podría esta
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 8 solo \[ aplicaciones de escritorio\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
 | Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

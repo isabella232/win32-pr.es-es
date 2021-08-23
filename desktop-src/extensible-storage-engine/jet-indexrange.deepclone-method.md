@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_INDEXRANGE. Método DeepClone'
+description: 'Más información sobre: JET_INDEXRANGE. Método DeepClone'
 title: JET_INDEXRANGE. Método DeepClone
 TOCTitle: 'DeepClone method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_INDEXRANGE.DeepClone
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f3332505e564846ee6b4465e057db27709958880
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e04a382b9c8d6298e3756ceef8422aa3e99b92c1ac3e3e74a3d37162faafafa5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716828"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119780685"
 ---
 # <a name="jet_indexrangedeepclone-method"></a>JET_INDEXRANGE. Método DeepClone
 
-Devuelve una copia en profundidad del objeto.
+Devuelve una copia en profundidad del objeto .
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,8 +56,8 @@ public JET_INDEXRANGE DeepClone()
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_INDEXRANGE](./jet-indexrange-class.md)  
-Una copia en profundidad del objeto.  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_INDEXRANGE](./jet-indexrange-class.md)  
+Copia en profundidad del objeto.  
 
 #### <a name="implements"></a>Implementaciones
 
@@ -67,8 +67,8 @@ Una copia en profundidad del objeto.
 
 #### <a name="reference"></a>Referencia
 
-[JET_INDEXRANGE (clase)](./jet-indexrange-class.md)
+[JET_INDEXRANGE clase](./jet-indexrange-class.md)
 
-[Miembros de JET_INDEXRANGE](./jet-indexrange-members.md)
+[JET_INDEXRANGE miembros](./jet-indexrange-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

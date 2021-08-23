@@ -11,18 +11,18 @@ api_name:
 - SimIccID
 api_type:
 - Schema
-ms.openlocfilehash: f566253ad3e86b4f7ee7317cf125d9e649034847
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8a6e4a20d93396337e2af0f0533486618dc707760f1ccd5c4f20f399cbdbf203
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119777865"
 ---
 # <a name="simiccid-mbnprofile-element"></a>Elemento SimIccID (MBNProfile)
 
-El elemento **SimIccID (MBNProfile)** identifica el número de identificación de SIM para dispositivos GSM.
+El **elemento SimIccID (MBNProfile)** identifica el número de identificación de SIM para dispositivos GSM.
 
-Este elemento es opcional y lo establece el servicio de banda ancha móvil para uso interno. Una aplicación no debe establecer este campo al crear o actualizar un perfil.
+Este elemento es opcional y lo establece el servicio banda ancha móvil para uso interno. Una aplicación no debe establecer este campo al crear o actualizar un perfil.
 
 ``` syntax
 <xs:element name="SimIccID"
@@ -30,7 +30,7 @@ Este elemento es opcional y lo establece el servicio de banda ancha móvil para 
  />
 ```
 
-El elemento **SimIccID** se define mediante el elemento [**MBNProfile**](schema-mbnprofile-element.md) .
+El **elemento SimIccID** se define mediante el [**elemento MBNProfile.**](schema-mbnprofile-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,7 +38,7 @@ El elemento **SimIccID** se define mediante el elemento [**MBNProfile**](schema-
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 7 \|\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio \| para UWP\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                         |
 
 

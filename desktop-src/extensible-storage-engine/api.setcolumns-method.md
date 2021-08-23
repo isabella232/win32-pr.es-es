@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: API. SetColumns (método)'
-title: API. SetColumns (método)
+description: 'Más información sobre: Método Api.SetColumns'
+title: Método Api.SetColumns
 TOCTitle: 'SetColumns method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.SetColumns(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.ColumnValue[])
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.setcolumns(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f4ed75c668c0000c1d01d521a57ead46055bc8e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b7d1fa66826fc32c02d8a33fb42d86e1ad0ca62941c52c8cc432fadb10a99466
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103808257"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119738635"
 ---
-# <a name="apisetcolumns-method"></a>API. SetColumns (método)
+# <a name="apisetcolumns-method"></a>Método Api.SetColumns
 
-Establece las columnas de los objetos ColumnValue.
+Establece columnas a partir de objetos ColumnValue.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -66,23 +66,23 @@ public static void SetColumns(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión que se va a usar.
+    Sesión que se usará.
 
 <!-- end list -->
 
-  - TABLEID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    Cursor que se va a actualizar. Se debe preparar una actualización.
+    Cursor que se actualizará. Se debe preparar una actualización.
 
 <!-- end list -->
 
   - valores  
-    Automáticamente \[\]  
+    Tipo: \[\]  
     
-    Valores que se van a establecer.
+    Valores que se establecerán.
 
 ## <a name="see-also"></a>Vea también
 
@@ -90,6 +90,6 @@ public static void SetColumns(
 
 [Clase de API](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,7 +1,7 @@
 ---
 description: La clase CMediaPosition controla los métodos IDispatch de la interfaz dual IMediaPosition.
 ms.assetid: 5e84a2b6-39d4-47a4-93b4-690df12e2d19
-title: Clase CMediaPosition (Ctlutil. h)
+title: CMediaPosition (clase, Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,35 +16,35 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 60d06a08badf3302ef4ddb352d840842a2605600
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7305d5eded589e167352ce7ff13194b52965b939daf907e8381b64684a03d1bb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634855"
 ---
-# <a name="cmediaposition-class"></a>Clase CMediaPosition
+# <a name="cmediaposition-class"></a>CMediaPosition (clase)
 
-![jerarquía de clases cmediaposition](images/cutil14.png)
+![Jerarquía de clases cmediaposition](images/cutil14.png)
 
-La clase **CMediaPosition** controla los métodos **IDispatch** de la interfaz dual [**IMediaPosition**](/windows/desktop/api/Control/nn-control-imediaposition) .
+La **clase CMediaPosition** controla los métodos **IDispatch** de la interfaz dual [**IMediaPosition.**](/windows/desktop/api/Control/nn-control-imediaposition)
 
-Esta clase hereda la interfaz [**IMediaPosition**](/windows/desktop/api/Control/nn-control-imediaposition) , pero no la implementa. Implementa **IDispatch** a través de la clase [**CBaseDispatch**](cbasedispatch.md) y la biblioteca de tipos de DirectShow. No utilice esta clase directamente. En su lugar, utilice una de las clases siguientes:
+Esta clase hereda la [**interfaz IMediaPosition,**](/windows/desktop/api/Control/nn-control-imediaposition) pero no la implementa. Implementa **IDispatch a través** de la [**clase CBaseDispatch**](cbasedispatch.md) y la DirectShow de tipos. No use esta clase directamente. En su lugar, use una de las clases siguientes:
 
--   Filtros de origen: Use la clase base [**CSourceSeeking**](csourceseeking.md) para implementar operaciones de búsqueda.
--   Filtros de transformación: Use la clase [**CPosPassThru**](cpospassthru.md) para pasar los comandos de búsqueda ascendentes.
--   Representadores: Use la clase [**CRendererPosPassThru**](crendererpospassthru.md) para pasar comandos de búsqueda ascendentes.
+-   Filtros de origen: use la clase base [**CSourceSeeking**](csourceseeking.md) para implementar la búsqueda.
+-   Filtros de transformación: use la [**clase CPosPassThru para**](cpospassthru.md) pasar los comandos de búsqueda ascendentes.
+-   Representadores: use la [**clase CRendererPosPassThru para**](crendererpospassthru.md) pasar los comandos de búsqueda ascendentes.
 
 
 
 | Métodos públicos                                              | Descripción                                                                                                         |
 |-------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| [**CMediaPosition**](cmediaposition-cmediaposition.md)     | Método de constructor.                                                                                                 |
+| [**CMediaPosition**](cmediaposition-cmediaposition.md)     | Método constructor.                                                                                                 |
 | Métodos IDispatch                                           | Descripción                                                                                                         |
-| [**GetIDsOfNames**](cmediaposition-getidsofnames.md)       | Asigna un conjunto de nombres a un conjunto correspondiente de DispId.                                                              |
-| [**GetTypeInfo**](cmediaposition-gettypeinfo.md)           | Recupera la información de tipo para el objeto, que se puede usar para obtener la información de tipo de una interfaz. |
-| [**GetTypeInfoCount**](cmediaposition-gettypeinfocount.md) | Recupera el número de interfaces de información de tipo que proporciona el objeto.                                            |
-| [**Invocar**](cmediaposition-invoke.md)                     | Proporciona acceso a las propiedades y los métodos expuestos por el objeto.                                                    |
+| [**GetIDsOfNames**](cmediaposition-getidsofnames.md)       | Mapas un conjunto de nombres a un conjunto correspondiente de DISPID.                                                              |
+| [**GetTypeInfo**](cmediaposition-gettypeinfo.md)           | Recupera la información de tipo del objeto , que se puede usar para obtener la información de tipo de una interfaz. |
+| [**GetTypeInfoCount**](cmediaposition-gettypeinfocount.md) | Recupera el número de interfaces de información de tipo que proporciona el objeto .                                            |
+| [**Invocar**](cmediaposition-invoke.md)                     | Proporciona acceso a las propiedades y los métodos expuestos por el objeto .                                                    |
 
 
 
@@ -56,8 +56,8 @@ Esta clase hereda la interfaz [**IMediaPosition**](/windows/desktop/api/Control/
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Esta clase hereda la interfaz [**IMediaPosition**](/windows/desktop/api/Control/
 
 <dl> <dt>
 
-[Clases base de DirectShow](directshow-base-classes.md)
+[DirectShow Clases base](directshow-base-classes.md)
 </dt> </dl>
 
  

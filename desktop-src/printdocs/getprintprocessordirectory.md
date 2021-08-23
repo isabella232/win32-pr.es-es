@@ -1,7 +1,7 @@
 ---
 description: La función GetPrintProcessorDirectory recupera la ruta de acceso al directorio del procesador de impresión en el servidor especificado.
 ms.assetid: a2443cfd-e5ba-41c6-aaf4-45051a3d0e26
-title: Función GetPrintProcessorDirectory (winspool. h)
+title: Función GetPrintProcessorDirectory (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: a105025ba22c7e188b8dd20df67f5e8ad28fce01
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 27e79305295d078912169a2a12a99aa516372486f9b5dcd1997161a030103dee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119719255"
 ---
-# <a name="getprintprocessordirectory-function"></a>GetPrintProcessorDirectory función)
+# <a name="getprintprocessordirectory-function"></a>Función GetPrintProcessorDirectory
 
-La función **GetPrintProcessorDirectory** recupera la ruta de acceso al directorio del procesador de impresión en el servidor especificado.
+La **función GetPrintProcessorDirectory** recupera la ruta de acceso al directorio del procesador de impresión en el servidor especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,58 +46,58 @@ BOOL GetPrintProcessorDirectory(
 
 <dl> <dt>
 
-*pName* \[ de\]
+*pName* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica el nombre del servidor. Si este parámetro es **null**, se devuelve una ruta de acceso local.
+Puntero a una cadena terminada en NULL que especifica el nombre del servidor. Si este parámetro es **NULL,** se devuelve una ruta de acceso local.
 
 </dd> <dt>
 
-*pEnvironment* \[ de\]
+*pEnvironment* \[ En\]
 </dt> <dd>
 
-Un puntero a una cadena terminada en null que especifica el entorno (por ejemplo, Windows x86, Windows IA64 o Windows x64). Si este parámetro es **null**, se utiliza el entorno actual de la aplicación que realiza la llamada y el equipo cliente (no la aplicación de destino y el servidor de impresión).
+Puntero a una cadena terminada en NULL que especifica el entorno (por ejemplo, Windows x86, Windows IA64 o Windows x64). Si este parámetro es **NULL,** se usa el entorno actual de la aplicación que realiza la llamada y el equipo cliente (no de la aplicación de destino ni del servidor de impresión).
 
 </dd> <dt>
 
-*Nivel* \[ de de\]
+*Nivel* \[ En\]
 </dt> <dd>
 
 Nivel de estructura. Este valor debe ser 1.
 
 </dd> <dt>
 
-*pPrintProcessorInfo* \[ enuncia\]
+*pPrintProcessorInfo* \[ out\]
 </dt> <dd>
 
-Un puntero a un búfer que recibe la ruta de acceso. Tenga en cuenta que, para los sistemas operativos anteriores a Windows Server 2003 SP 1, la ruta de acceso está en el formato local del servidor, no en el formato remoto real. Por ejemplo, la ruta de acceso se proporciona como "% WINDIR% \\ system32 \\ spool \\ Prtprocs \\ % Environment%" en lugar de " \\ \\ ServerName \\ Print $ \\ Prtprocs \\ % Environment%", incluso cuando se llama para un servidor remoto. En el caso de los sistemas operativos Windows Server 2003 SP 1 y versiones posteriores, se devuelve la ruta de acceso remota verdadera.
+Puntero a un búfer que recibe la ruta de acceso. Tenga en cuenta que, en el caso de los sistemas operativos anteriores a Windows Server 2003 SP 1, la ruta de acceso está en el formato local del servidor, no en el formato remoto real. Por ejemplo, la ruta de acceso se da como "%Windir% \\ System32 \\ Spool \\ Prtprocs %Environment%" en lugar de \\ \\ \\ "ServerName \\ Print$ \\ Prtprocs \\ %Environment%", incluso cuando se llama para un servidor remoto. Para los sistemas operativos Windows Server 2003 SP 1 y versiones posteriores, se devuelve la ruta de acceso remota verdadera.
 
 </dd> <dt>
 
-*cbBuf* \[ de\]
+*cbBuf* \[ En\]
 </dt> <dd>
 
-Tamaño del búfer al que apunta *pPrintProcessorInfo*.
+Tamaño del búfer al que apunta *pPrintProcessorInfo.*
 
 </dd> <dt>
 
-*pcbNeeded* \[ enuncia\]
+*pwNeeded* \[ out\]
 </dt> <dd>
 
-Un puntero a un valor que especifica el número de bytes copiados si la función se ejecuta correctamente, o el número de bytes necesarios si *cbBuf* es demasiado pequeño.
+Puntero a un valor que especifica el número de bytes copiados si la función se realiza correctamente o el número de bytes necesarios si *cbBuf* es demasiado pequeño.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto es un valor distinto de cero.
+Si la función se realiza correctamente, el valor devuelto es un valor distinto de cero.
 
 Si la función no se realiza correctamente, el valor devuelto es cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> Se trata de una función de bloqueo o sincrónica y podría no volver inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que parezca que la aplicación no responde.
+> Se trata de una función de bloqueo o sincrónica y es posible que no se devuelva inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que la aplicación parezca no responder.
 
  
 
@@ -109,9 +109,9 @@ Si la función no se realiza correctamente, el valor devuelto es cero.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
-| Archivo DLL<br/>                      | <dl> <dt>Winspool. drv</dt> </dl>                   |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
+| Archivo DLL<br/>                      | <dl> <dt>Winspool.drv</dt> </dl>                   |
 | Nombres Unicode y ANSI<br/>   | **GetPrintProcessorDirectoryW** (Unicode) y **GetPrintProcessorDirectoryA** (ANSI)<br/>           |
 
 

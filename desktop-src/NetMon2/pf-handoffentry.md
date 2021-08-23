@@ -1,7 +1,7 @@
 ---
-description: La \_ estructura PF HANDOFFENTRY define un protocolo que monitor de red agrega al conjunto de entrega de un analizador.
+description: La estructura \_ PF HANDOFFENTRY define un protocolo que Monitor de red al conjunto de entrega de un analizador.
 ms.assetid: c26bee6e-7dbf-4994-a0a7-a280cf4838be
-title: Estructura de PF_HANDOFFENTRY (Netmon. h)
+title: PF_HANDOFFENTRY estructura (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 5ad431e936265be96831778f9949ae67ef737beb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: faf98490424754d6ae2223ca063e0e3a4eec69c113b1a220e9657b7db5edbb8a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678132"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119778675"
 ---
-# <a name="pf_handoffentry-structure"></a>\_Estructura PF HANDOFFENTRY
+# <a name="pf_handoffentry-structure"></a>Estructura \_ PF HANDOFFENTRY
 
-La estructura **PF \_ HANDOFFENTRY** define un protocolo que monitor de red agrega al conjunto de entrega de un analizador.
+La **estructura \_ PF HANDOFFENTRY** define un protocolo que Monitor de red al conjunto de entrega de un analizador.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,7 +46,7 @@ typedef struct _PF_HANDOFFENTRY {
 **szIniFile**
 </dt> <dd>
 
-Nombre del archivo INI asociado al Protocolo.
+Nombre del archivo INI asociado al protocolo.
 
 </dd> <dt>
 
@@ -67,22 +67,22 @@ Nombre del protocolo.
 **dwHandOffValue**
 </dt> <dd>
 
-Valor asociado al Protocolo.
+Valor asociado al protocolo.
 
 </dd> <dt>
 
 **ValueFormatBase**
 </dt> <dd>
 
-Base numérica del valor del protocolo que se especifica en **dwHandOffValue**. La función **ValueFormatBase** debe establecerse en uno de los siguientes elementos:
+Base numérica del valor de protocolo especificado en **dwHandOffValue.** La **función ValueFormatBase** debe establecerse en una de las siguientes opciones:
 
 
 
-| Value                                                                                                                                                                                                                        | Significado                     |
+| Valor                                                                                                                                                                                                                        | Significado                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| <span id="HANDOFF_VALUE_FORMAT_BASE_UNKNOWN"></span><span id="handoff_value_format_base_unknown"></span><dl> <dt>**BASE de formato de valor de entrega \_ \_ \_ \_ desconocida**</dt> </dl> | Base desconocida<br/>     |
-| <span id="HANDOFF_VALUE_FORMAT_BASE_DECIMAL"></span><span id="handoff_value_format_base_decimal"></span><dl> <dt>**formato de valor de entrega \_ \_ \_ \_ decimal base**</dt> </dl> | Base decimal<br/>     |
-| <span id="HANDOFF_VALUE_FORMAT_BASE_HEX"></span><span id="handoff_value_format_base_hex"></span><dl> <dt>**formato de valor de entrega \_ \_ \_ \_ hexadecimal base**</dt> </dl>             | Base hexadecimal<br/> |
+| <span id="HANDOFF_VALUE_FORMAT_BASE_UNKNOWN"></span><span id="handoff_value_format_base_unknown"></span><dl> <dt>**BASE DESCONOCIDA DEL \_ FORMATO DE VALOR DE \_ \_ ENTREGA \_**</dt> </dl> | Base desconocida<br/>     |
+| <span id="HANDOFF_VALUE_FORMAT_BASE_DECIMAL"></span><span id="handoff_value_format_base_decimal"></span><dl> <dt>**HANDOFF \_ VALUE \_ FORMAT \_ BASE \_ DECIMAL**</dt> </dl> | Base decimal<br/>     |
+| <span id="HANDOFF_VALUE_FORMAT_BASE_HEX"></span><span id="handoff_value_format_base_hex"></span><dl> <dt>**HANDOFF \_ VALUE \_ FORMAT \_ BASE \_ HEX**</dt> </dl>             | Base hexadecimal<br/> |
 
 
 
@@ -90,9 +90,9 @@ Base numérica del valor del protocolo que se especifica en **dwHandOffValue**. 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se usa una matriz de las estructuras **PF \_ HANDOFFENTRY** en la estructura [PF \_ HANDOFFSET](pf-handoffset.md) .
+En la estructura [PF \_ HANDOFFSET](pf-handoffset.md) se usa una matriz de las estructuras **\_ PF HANDOFFENTRY.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -102,7 +102,7 @@ Se usa una matriz de las estructuras **PF \_ HANDOFFENTRY** en la estructura [PF
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

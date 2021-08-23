@@ -1,17 +1,17 @@
 ---
 description: La API de Canal de fibra virtual de Hyper-V define los siguientes elementos de programación.
 ms.assetid: B63F0660-4731-405B-9828-C57106E685F8
-title: Referencia de API de Canal de fibra virtual de Hyper-V
+title: Referencia de la API de Canal de fibra virtual de Hyper-V
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e21b6d46652bacbc012c85e020b76686b9073970
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7b80d45e3fea50ce58816cfaa5067588b7074e5a67874ee01409cab6cf9c008f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104544307"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119694655"
 ---
-# <a name="hyper-v-virtual-fibre-channel-api-reference"></a>Referencia de API de Canal de fibra virtual de Hyper-V
+# <a name="hyper-v-virtual-fibre-channel-api-reference"></a>Referencia de la API de Canal de fibra virtual de Hyper-V
 
 La API de Canal de fibra virtual de Hyper-V define los siguientes elementos de programación.
 
@@ -21,16 +21,16 @@ La API de Canal de fibra virtual de Hyper-V define los siguientes elementos de p
 
 | Tema                                                                                    | Descripción                                                                                                    |
 |------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| [**MSVM \_ ExternalFcPort**](msvm-externalfcport.md)<br/>                           | Representa un puerto de Canal de fibra externo.<br/>                                                          |
-| [**MSVM \_ FcActiveConnection**](msvm-fcactiveconnection.md)<br/>                   | Conecta un puerto del conmutador al punto de conexión Canal de fibra al que está conectado el puerto.<br/>                |
-| [**MSVM \_ FcDeviceSAPImplementation**](msvm-fcdevicesapimplementation.md)<br/>     | Representa una asociación entre un punto de acceso al servicio y el dispositivo lógico que lo implementa.<br/> |
-| [**MSVM \_ FcEndpoint**](msvm-fcendpoint.md)<br/>                                   | Representa el punto de conexión lógico para un puerto Canal de fibra.<br/>                                   |
-| [**MSVM \_ FcPortAllocationSettingData**](msvm-fcportallocationsettingdata.md)<br/> | Representa el estado configurado de un puerto de Canal de fibra sintético o un puerto de conmutador Canal de fibra.<br/>   |
-| [**MSVM \_ FcSwitchPort**](msvm-fcswitchport.md)<br/>                               | Representa un puerto en el conmutador de Canal de fibra virtual.<br/>                                              |
-| [**MSVM \_ SyntheticFcPort**](msvm-syntheticfcport.md)<br/>                         | Representa un puerto de Canal de fibra sintético.<br/>                                                          |
-| [**MSVM \_ SyntheticFcPortSettingData**](msvm-syntheticfcportsettingdata.md)<br/>   | Representa el estado configurado de un puerto de Canal de fibra sintético.<br/>                                  |
-| [**MSVM \_ VirtualFcSwitch**](msvm-virtualfcswitch.md)<br/>                         | Representa un modificador de Canal de fibra virtual.<br/>                                                          |
-| [**MSVM \_ VirtualFcSwitchSettingData**](msvm-virtualfcswitchsettingdata.md)<br/>   | Representa la configuración de un modificador de Canal de fibra virtual.<br/>                                     |
+| [**Msvm \_ ExternalFcPort**](msvm-externalfcport.md)<br/>                           | Representa un puerto Canal de fibra externo.<br/>                                                          |
+| [**Msvm \_ FcActiveConnection**](msvm-fcactiveconnection.md)<br/>                   | Conecta un puerto de conmutador al punto de conexión Canal de fibra al que está conectado el puerto.<br/>                |
+| [**Msvm \_ FcDeviceSAPImplementation**](msvm-fcdevicesapimplementation.md)<br/>     | Representa una asociación entre un punto de acceso de servicio y el dispositivo lógico que lo implementa.<br/> |
+| [**Msvm \_ FcEndpoint**](msvm-fcendpoint.md)<br/>                                   | Representa el punto de conexión lógico para un Canal de fibra puerto.<br/>                                   |
+| [**Msvm \_ FcPortAllocationSettingData**](msvm-fcportallocationsettingdata.md)<br/> | Representa el estado configurado de un puerto de Canal de fibra sintético o un Canal de fibra de conmutador.<br/>   |
+| [**Msvm \_ FcSwitchPort**](msvm-fcswitchport.md)<br/>                               | Representa un puerto en el conmutador Canal de fibra virtual.<br/>                                              |
+| [**Msvm \_ SyntheticFcPort**](msvm-syntheticfcport.md)<br/>                         | Representa un puerto de Canal de fibra sintético.<br/>                                                          |
+| [**Msvm \_ SyntheticFcPortSettingData**](msvm-syntheticfcportsettingdata.md)<br/>   | Representa el estado configurado de un puerto Canal de fibra sintético.<br/>                                  |
+| [**Msvm \_ VirtualFcSwitch**](msvm-virtualfcswitch.md)<br/>                         | Representa un conmutador Canal de fibra virtual.<br/>                                                          |
+| [**Msvm \_ VirtualFcSwitchSettingData**](msvm-virtualfcswitchsettingdata.md)<br/>   | Representa la configuración de un conmutador Canal de fibra virtual.<br/>                                     |
 
 
 

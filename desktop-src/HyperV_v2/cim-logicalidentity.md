@@ -1,7 +1,7 @@
 ---
 description: Representa una asociación genérica entre dos elementos administrados que representan distintos aspectos de la misma entidad subyacente.
 ms.assetid: 28d153de-ce9c-4cd3-8995-0d959846be4d
-title: CIM_LogicalIdentity (clase, administración de Hyper-V)
+title: CIM_LogicalIdentity (administración de Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,14 +15,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 71382910dc195c0fa6ef2456e1811d66d90a41e6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9520817a2099901d1b6e61ab37ccacf1c2e2a61e76c57a9f327bdef32df63285
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666237"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119695455"
 ---
-# <a name="cim_logicalidentity-class-hyper-v-management"></a>CIM_LogicalIdentity (clase, administración de Hyper-V)
+# <a name="cim_logicalidentity-class-hyper-v-management"></a>CIM_LogicalIdentity (administración de Hyper-V)
 
 Representa una asociación genérica entre dos elementos administrados que representan distintos aspectos de la misma entidad subyacente.
 
@@ -39,13 +39,13 @@ class CIM_LogicalIdentity
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ LogicalIdentity** tiene estos tipos de miembros:
+La **clase \_ LogicalIdentity** de CIM tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ LogicalIdentity** tiene estas propiedades.
+La **clase \_ LogicalIdentity** de CIM tiene estas propiedades.
 
 <dl> <dt>
 
@@ -58,7 +58,7 @@ Tipo de datos: **CIM \_ ManagedElement**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **Clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Segundo aspecto de la asociación.
@@ -74,10 +74,10 @@ Tipo de datos: **CIM \_ ManagedElement**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **Clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Primer aspecto de la asociación. El uso del sistema en el nombre de la propiedad no limita el ámbito de la asociación.
+Primer aspecto de la asociación. El uso de System en el nombre de propiedad no limita el ámbito de la asociación.
 
 </dd> </dl>
 
@@ -85,12 +85,12 @@ Primer aspecto de la asociación. El uso del sistema en el nombre de la propieda
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
-| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

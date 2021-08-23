@@ -1,7 +1,7 @@
 ---
-description: Define los atributos de fuente.
+description: Define atributos de fuente.
 ms.assetid: 66e8a320-2b83-4766-a9a7-5571ee6c9f2a
-title: D3DX10_FONT_DESC estructura (D3DX10. h)
+title: D3DX10_FONT_DESC estructura (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10.h
-ms.openlocfilehash: 0b358c57e6410827177e76e3da30b2f5f9896ee2
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f3ee6dea032475eb94a723229751d9523c12d118f7319da8f0296cc8c8c42a2c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105649401"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634955"
 ---
-# <a name="d3dx10_font_desc-structure"></a>D3DX10 de la \_ \_ estructura DESC de la fuente
+# <a name="d3dx10_font_desc-structure"></a>D3DX10 \_ FONT \_ DESC (estructura)
 
-Define los atributos de fuente.
+Define atributos de fuente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,62 +51,62 @@ typedef struct D3DX10_FONT_DESC {
 **Height**
 </dt> <dd>
 
-Tipo: **[ **int**](../winprog/windows-data-types.md)**
+Tipo: **[ **INT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Alto, en unidades lógicas, de la celda de caracteres o carácter de la fuente.
+Alto, en unidades lógicas, de la celda de caracteres o el carácter de la fuente.
 
 </dd> <dt>
 
 **Width**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Ancho, en unidades lógicas, de caracteres de la fuente.
+Ancho, en unidades lógicas, de caracteres en la fuente.
 
 </dd> <dt>
 
 **Peso**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Peso de la fuente en el intervalo comprendido entre 0 y 1000.
+Peso de la fuente en el intervalo de 0 a 1000.
 
 </dd> <dt>
 
 **MipLevels**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Número de niveles de mipmap solicitados. Si este valor es cero o el valor predeterminado de D3DX \_ , se crea una cadena de mipmap completa. Si el valor es 1, el espacio de textura se asigna de forma idéntica al espacio de la pantalla.
+Número de niveles de asignación mip solicitados. Si este valor es cero o D3DX DEFAULT, se crea una \_ cadena de asignación mipmap completa. Si el valor es 1, el espacio de textura se asigna de forma idéntica al espacio de pantalla.
 
 </dd> <dt>
 
 **Cursiva**
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Establézcalo en **true** para una fuente en cursiva.
+Establezca en **TRUE para** una fuente cursiva.
 
 </dd> <dt>
 
-**CharSet**
+**Charset**
 </dt> <dd>
 
-Tipo: **[ **byte**](../winprog/windows-data-types.md)**
+Tipo: **[ **BYTE**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -117,18 +117,18 @@ Juego de caracteres.
 **OutputPrecision**
 </dt> <dd>
 
-Tipo: **[ **byte**](../winprog/windows-data-types.md)**
+Tipo: **[ **BYTE**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Precisión de salida. La precisión de salida define el grado en que la salida debe coincidir con el alto de fuente, el ancho, la orientación de carácter, el escape, el paso y el tipo de fuente solicitados.
+Precisión de salida. La precisión de salida define la precisión con la que la salida debe coincidir con el alto de fuente, el ancho, la orientación de caracteres, el escape, el tono y el tipo de fuente solicitados.
 
 </dd> <dt>
 
 **Quality**
 </dt> <dd>
 
-Tipo: **[ **byte**](../winprog/windows-data-types.md)**
+Tipo: **[ **BYTE**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -139,30 +139,30 @@ Calidad de salida.
 **PitchAndFamily**
 </dt> <dd>
 
-Tipo: **[ **byte**](../winprog/windows-data-types.md)**
+Tipo: **[ **BYTE**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-El paso y la familia de la fuente.
+Tono y familia de la fuente.
 
 </dd> <dt>
 
-**FaceName \[ LF \_\]**
+**FaceName \[ LF \_ FACESIZE\]**
 </dt> <dd>
 
 Tipo: **TCHAR**
 
 </dd> <dd>
 
-Una cadena terminada en NULL que especifica el nombre del tipo de letra de la fuente. La longitud de la cadena no debe superar los 32 caracteres, incluido el carácter **nulo** de terminación. Si FaceName es una cadena vacía, se utilizará la primera fuente que coincida con los demás atributos especificados. Si la configuración del compilador requiere Unicode, el tipo de datos TCHAR se resuelve como WCHAR; de lo contrario, el tipo de datos se resuelve como CHAR. Vea la sección Comentarios.
+Cadena terminada en NULL que especifica el nombre del tipo de letra de la fuente. La longitud de la cadena no debe superar los 32 caracteres, incluido el carácter **NULL final.** Si FaceName es una cadena vacía, se usará la primera fuente que coincida con los demás atributos especificados. Si la configuración del compilador requiere Unicode, el tipo de datos TCHAR se resuelve en WCHAR; De lo contrario, el tipo de datos se resuelve en CHAR. Vea la sección Comentarios.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La configuración del compilador también determina el tipo de estructura. Si se define Unicode, el \_ tipo de estructura D3DX10 Font desc se \_ resuelve como una \_ fuente D3DX10 \_ DESCW; de lo contrario, el tipo de estructura se resuelve como una \_ fuente D3DX10 \_ Desca.
+La configuración del compilador también determina el tipo de estructura. Si se define Unicode, el tipo de estructura DESC FONT DESC de D3DX10 se resuelve en D3DX10 FONT DESCW; de lo contrario, el tipo de estructura se resuelve en un \_ \_ \_ \_ \_ \_ DESCA FONT D3DX10.
 
-Los valores posibles de los miembros anteriores se proporcionan en la estructura de [LOGFONT](/previous-versions//ms533931(v=vs.85)) de GDI.
+Los valores posibles de los miembros anteriores se dan en la estructura [LOGFONT de](/previous-versions//ms533931(v=vs.85)) GDI.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -170,7 +170,7 @@ Los valores posibles de los miembros anteriores se proporcionan en la estructura
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3DX10. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3DX10.h</dt> </dl> |
 
 
 
@@ -178,7 +178,7 @@ Los valores posibles de los miembros anteriores se proporcionan en la estructura
 
 <dl> <dt>
 
-[Estructuras de D3DX](d3d10-graphics-reference-d3dx10-structures.md)
+[Estructuras D3DX](d3d10-graphics-reference-d3dx10-structures.md)
 </dt> </dl>
 
  

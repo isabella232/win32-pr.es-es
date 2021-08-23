@@ -1,11 +1,11 @@
 ---
-title: atributo MS-WMI-ChangeDate
-description: Última fecha en que se cambió este objeto.
+title: Atributo ms-WMI-ChangeDate
+description: La última fecha en que se cambió este objeto.
 ms.assetid: a445c659-8f38-4eae-b23c-844a4c5be331
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-WMI-ChangeDate
-- msWMI-ChangeDate atributo AD Schema
+- Esquema de AD del atributo ms-WMI-ChangeDate
+- Esquema de AD del atributo msWMI-ChangeDate
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d8a349baf922bcc4c93d64401a6b9ce90f1e646f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 316e726f16c81a87c3713075c4fca4b583eb48e34c9944e290540c8451cc5a0d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119760875"
 ---
-# <a name="ms-wmi-changedate-attribute"></a>atributo MS-WMI-ChangeDate
+# <a name="ms-wmi-changedate-attribute"></a>Atributo ms-WMI-ChangeDate
 
-Última fecha en que se cambió este objeto.
+La última fecha en que se cambió este objeto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------------|
-| CN                | MS-WMI-ChangeDate                                 |
-| Nombre para mostrar de LDAP | msWMI-ChangeDate                                  |
-| Tamaño              | Representación de tipo de datos DateTime de WMI-26 caracteres. |
-| Actualizar privilegio  | El sistema establece este valor.                  |
+| CN                | ms-WMI-ChangeDate                                 |
+| Ldap-Display-Name | msWMI-ChangeDate                                  |
+| Size              | Representación del tipo de datos datetime de WMI: 26 caracteres. |
+| Privilegio actualizar  | El sistema establece este valor.                  |
 | Frecuencia de actualización  | \-                                                |
 | Attribute-Id      | 1.2.840.113556.1.4.1624                           |
-| System-ID-GUID    | f9cdf7a0-ec44-4937-a79b-cd91522b3aa8              |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)       |
+| System-Id-Guid    | f9cdf7a0-ec44-4937-a79b-cd91522b3aa8              |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)       |
 
 
 
@@ -54,18 +54,18 @@ ms.locfileid: "104151759"
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                         |
-| System-Only            | False                                                                                                                                                                      |
-| Tiene un único valor       | True                                                                                                                                                                       |
-| Está indexado             | False                                                                                                                                                                      |
-| En el catálogo global      | False                                                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                               |
+| System-Only            | Falso                                                                                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                                                                                       |
+| Está indexado             | Falso                                                                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                 |
-| Clases usadas en        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-SOM**](c-mswmi-som.md)<br/> |
+| Clases usadas en        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 
@@ -73,20 +73,20 @@ ms.locfileid: "104151759"
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                         |
-| System-Only            | False                                                                                                                                                                      |
-| Tiene un único valor       | True                                                                                                                                                                       |
-| Está indexado             | False                                                                                                                                                                      |
-| En el catálogo global      | False                                                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                               |
+| System-Only            | Falso                                                                                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                                                                                       |
+| Está indexado             | Falso                                                                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                 |
-| Clases usadas en        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-SOM**](c-mswmi-som.md)<br/> |
+| Clases usadas en        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 
@@ -94,20 +94,20 @@ ms.locfileid: "104151759"
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                         |
-| System-Only            | False                                                                                                                                                                      |
-| Tiene un único valor       | True                                                                                                                                                                       |
-| Está indexado             | False                                                                                                                                                                      |
-| En el catálogo global      | False                                                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                               |
+| System-Only            | Falso                                                                                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                                                                                       |
+| Está indexado             | Falso                                                                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                 |
-| Clases usadas en        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-SOM**](c-mswmi-som.md)<br/> |
+| Clases usadas en        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ ms.locfileid: "104151759"
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                         |
-| System-Only            | False                                                                                                                                                                      |
-| Tiene un único valor       | True                                                                                                                                                                       |
-| Está indexado             | False                                                                                                                                                                      |
-| En el catálogo global      | False                                                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                               |
+| System-Only            | Falso                                                                                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                                                                                       |
+| Está indexado             | Falso                                                                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                 |
-| Clases usadas en        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-SOM**](c-mswmi-som.md)<br/> |
+| Clases usadas en        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 
@@ -138,18 +138,18 @@ ms.locfileid: "104151759"
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                         |
-| System-Only            | False                                                                                                                                                                      |
-| Tiene un único valor       | True                                                                                                                                                                       |
-| Está indexado             | False                                                                                                                                                                      |
-| En el catálogo global      | False                                                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                               |
+| System-Only            | Falso                                                                                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                                                                                       |
+| Está indexado             | Falso                                                                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                 |
-| Clases usadas en        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-SOM**](c-mswmi-som.md)<br/> |
+| Clases usadas en        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 

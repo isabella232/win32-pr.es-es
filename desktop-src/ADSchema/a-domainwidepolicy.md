@@ -1,11 +1,11 @@
 ---
-title: Atributo de la Directiva para todo el dominio
-description: Esto es para que la Directiva extensible del usuario se replique a los clientes.
+title: Atributo de directiva para todo el dominio
+description: Esto es para que la directiva extensible del usuario se replique en los clientes.
 ms.assetid: 930a2733-31c4-45de-a611-437e3d61d304
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de directiva para todo el dominio
-- domainWidePolicy esquema de AD de atributos
+- Esquema de AD de atributo de dominio para toda la directiva
+- Esquema de AD del atributo domainWidePolicy
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3dc732ee761ee6c294ffb14dac832c36d5821927
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3d2283f49719ed188f6dbcfa1837105b4ac6112b56175dfb66bb51759668526d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804339"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119656695"
 ---
-# <a name="domain-wide-policy-attribute"></a>Atributo de la Directiva para todo el dominio
+# <a name="domain-wide-policy-attribute"></a>Atributo de directiva para todo el dominio
 
-Esto es para que la Directiva extensible del usuario se replique a los clientes.
+Esto es para que la directiva extensible del usuario se replique en los clientes.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | Directiva para todo el dominio                                    |
-| Nombre para mostrar de LDAP | domainWidePolicy                                      |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| Ldap-Display-Name | domainWidePolicy                                      |
+| Size              | \-                                                    |
+| Privilegio actualizar  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.421                                |
-| System-ID-GUID    | 80a67e29-9f22-11d0-afdd-00c04fd930c9                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 80a67e29-9f22-11d0-afdd-00c04fd930c9                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -55,13 +55,13 @@ Esto es para que la Directiva extensible del usuario se replique a los clientes.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Tiene un único valor       | False                                              |
-| Está indexado             | False                                              |
-| En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Falso                                              |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Falso                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -76,13 +76,13 @@ Esto es para que la Directiva extensible del usuario se replique a los clientes.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Tiene un único valor       | False                                              |
-| Está indexado             | False                                              |
-| En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Falso                                              |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Falso                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -97,13 +97,13 @@ Esto es para que la Directiva extensible del usuario se replique a los clientes.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Tiene un único valor       | False                                              |
-| Está indexado             | False                                              |
-| En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Falso                                              |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Falso                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -116,15 +116,15 @@ Esto es para que la Directiva extensible del usuario se replique a los clientes.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Tiene un único valor       | False                                              |
-| Está indexado             | False                                              |
-| En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Falso                                              |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Falso                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -139,13 +139,13 @@ Esto es para que la Directiva extensible del usuario se replique a los clientes.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Tiene un único valor       | False                                              |
-| Está indexado             | False                                              |
-| En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Falso                                              |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Falso                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -160,13 +160,13 @@ Esto es para que la Directiva extensible del usuario se replique a los clientes.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Tiene un único valor       | False                                              |
-| Está indexado             | False                                              |
-| En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Falso                                              |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Falso                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |

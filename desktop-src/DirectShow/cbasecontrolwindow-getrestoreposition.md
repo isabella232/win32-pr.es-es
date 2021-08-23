@@ -1,7 +1,7 @@
 ---
-description: El método GetRestorePosition recupera la posición en la que se restaurará la ventana cuando no esté maximizada o minimizada.
+description: El método GetRestorePosition recupera la posición en la que se restaurará la ventana cuando no esté maximizada ni minimizada.
 ms.assetid: 5f129be3-c4d8-4583-bbc8-870e0bcafd80
-title: Método CBaseControlWindow. GetRestorePosition (Ctlutil. h)
+title: Método CBaseControlWindow.GetRestorePosition (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f922a97f69f4dae03d4e61a54bd99c52d69a984a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 215b71d731227641df02716dd2b760f7e023bbec0c50bc66ac6d390ed87d002e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660595"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119757615"
 ---
-# <a name="cbasecontrolwindowgetrestoreposition-method"></a>CBaseControlWindow. GetRestorePosition, método
+# <a name="cbasecontrolwindowgetrestoreposition-method"></a>Método CBaseControlWindow.GetRestorePosition
 
-El `GetRestorePosition` método recupera la posición en la que se restaurará la ventana cuando no esté maximizada o minimizada.
+El método recupera la posición en la que se restaurará la ventana cuando `GetRestorePosition` no esté maximizada ni minimizada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,21 +48,21 @@ HRESULT GetRestorePosition(
 *pLeft* 
 </dt> <dd>
 
-Puntero al valor de la coordenada izquierda.
+Puntero al valor de la coordenada situada más a la izquierda.
 
 </dd> <dt>
 
 *pTop* 
 </dt> <dd>
 
-Puntero en el valor de la parte superior de la ventana.
+Puntero al valor de la parte superior de la ventana.
 
 </dd> <dt>
 
 *pWidth* 
 </dt> <dd>
 
-Puntero al valor del ancho de la ventana.
+Puntero al valor para el ancho de la ventana.
 
 </dd> <dt>
 
@@ -75,11 +75,11 @@ Puntero al valor para el alto de la ventana.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Es igual que los valores devueltos por la función [**CBaseControlWindow:: GetWindowPosition**](cbasecontrolwindow-getwindowposition.md) cuando la ventana no está maximizada ni minimizada.
+Esto es igual que los valores devueltos por la función [**CBaseControlWindow::GetWindowPosition**](cbasecontrolwindow-getwindowposition.md) cuando la ventana no está maximizada ni minimizada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -87,8 +87,8 @@ Es igual que los valores devueltos por la función [**CBaseControlWindow:: GetWi
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -96,7 +96,7 @@ Es igual que los valores devueltos por la función [**CBaseControlWindow:: GetWi
 
 <dl> <dt>
 
-[**Clase CBaseControlWindow**](cbasecontrolwindow.md)
+[**CBaseControlWindow (clase)**](cbasecontrolwindow.md)
 </dt> </dl>
 
  

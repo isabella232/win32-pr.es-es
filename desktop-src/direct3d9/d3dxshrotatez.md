@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: ed7db57dc3acedd1e65edab7377b525940ea10e2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ccc1d85ff1fda2bc2a67744a2e9ef75ad99839d63ee8b9e332660a2bd36a30fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119630765"
 ---
 # <a name="d3dxshrotatez-function-d3dx9mathh"></a>Función D3DXSHRotateZ (D3dx9math.h)
 
@@ -103,14 +103,14 @@ Cada coeficiente de la función base Ylm se almacena en la ubicación de memoria
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [Funciones matemáticas](dx9-graphics-reference-d3dx-functions-math.md)
 </dt> <dt>
 
-[Transferencia de radiancia precalcalada (Direct3D 9)](precomputed-radiance-transfer.md)
+[Transferencia de radiancia precalutada (Direct3D 9)](precomputed-radiance-transfer.md)
 </dt> </dl>
 
  

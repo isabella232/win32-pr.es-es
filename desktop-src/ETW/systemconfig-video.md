@@ -23,12 +23,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 716194eb9ceb67b609f886482393795eaef2ef09
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 09d68fcd2710e4f16b315182624ce32eaa3729f370a4a6a071c55f705dcbe6af
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119811705"
 ---
 # <a name="systemconfig_video-class"></a>Clase SystemConfig \_ Video
 
@@ -144,7 +144,7 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (7), **Max** (256), **Format("s")**
 </dt> </dl>
 
-Nombre del chip del convertidor digital a analógico (DAC) del adaptador.
+Nombre del chip del convertidor digital a análogo (DAC) del adaptador.
 
 </dd> <dt>
 
@@ -196,11 +196,11 @@ Marcas de estado del dispositivo. Puede ser cualquier combinación razonable de 
 
 
 
-| Valor                                                                                                                                                                                                                                                                                        | Significado                                                                                                                                                                                                                      |
+| Value                                                                                                                                                                                                                                                                                        | Significado                                                                                                                                                                                                                      |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="DISPLAY_DEVICE_ATTACHED_TO_DESKTOP"></span><span id="display_device_attached_to_desktop"></span><dl> <dt>**DISPLAY \_ DISPOSITIVO \_ CONECTADO \_ AL \_ ESCRITORIO**</dt> <dt>1 (0x1)</dt> </dl> | El dispositivo forma parte del escritorio.<br/>                                                                                                                                                                                |
 | <span id="DISPLAY_DEVICE_MIRRORING_DRIVER"></span><span id="display_device_mirroring_driver"></span><dl> <dt>**DISPLAY \_ CONTROLADOR \_ DE CREACIÓN DE REFLEJO \_ DEL**</dt> <dt>DISPOSITIVO 8 (0x8)</dt> </dl>           | Representa un pseudodispositivo que se usa para reflejar el dibujo de la aplicación para conectarse a un equipo remoto u otros propósitos. Un pseudo monitor invisible está asociado a este dispositivo. Por ejemplo, NetMeeting lo usa.<br/> |
-| <span id="DISPLAY_DEVICE_MODESPRUNED"></span><span id="display_device_modespruned"></span><dl> <dt>**DISPLAY \_ MODOS \_ DE DISPOSITIVORUNED**</dt> <dt>134217728 (0x8000000)</dt> </dl>             | El dispositivo tiene más modos de presentación de los que admiten sus dispositivos de salida.<br/>                                                                                                                                                |
+| <span id="DISPLAY_DEVICE_MODESPRUNED"></span><span id="display_device_modespruned"></span><dl> <dt>**DISPLAY \_ MODOS \_ DE DISPOSITIVOPRUNED**</dt> <dt>134217728 (0x8000000)</dt> </dl>             | El dispositivo tiene más modos de presentación de los que admiten sus dispositivos de salida.<br/>                                                                                                                                                |
 | <span id="DISPLAY_DEVICE_PRIMARY_DEVICE"></span><span id="display_device_primary_device"></span><dl> <dt>**DISPLAY \_ DISPOSITIVO \_ PRINCIPAL \_ DISPOSITIVO**</dt> <dt>4 (0x4)</dt> </dl>                 | El escritorio principal está en el dispositivo. Para un sistema con una sola tarjeta de presentación, esto siempre se establece. Para un sistema con varias tarjetas de presentación, solo un dispositivo puede tener este conjunto.<br/>                                   |
 | <span id="DISPLAY_DEVICE_REMOVABLE"></span><span id="display_device_removable"></span><dl> <dt>**DISPLAY \_ DISPOSITIVO \_ EXTRAÍBLE**</dt> <dt>32 (0x20)</dt> </dl>                               | El dispositivo es extraíble; no puede ser la pantalla principal.<br/>                                                                                                                                                        |
 | <span id="DISPLAY_DEVICE_VGA_COMPATIBLE"></span><span id="display_device_vga_compatible"></span><dl> <dt>**DISPLAY \_ COMPATIBLE \_ CON \_ DEVICE VGA**</dt> <dt>16 (0x10)</dt> </dl>               | El dispositivo es compatible con VGA.<br/>                                                                                                                                                                                     |
@@ -263,14 +263,14 @@ Número actual de píxeles verticales.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ Vista\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

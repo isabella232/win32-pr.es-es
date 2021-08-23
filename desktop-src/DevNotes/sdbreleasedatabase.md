@@ -1,7 +1,7 @@
 ---
-description: Cierra la base de datos de correcciones de compatibilidad inicializada con la función SdbInitDatabase.
+description: Cierra la base de datos shim inicializada mediante la función SdbInitDatabase.
 ms.assetid: 8452ab14-a1e9-41b3-a1ac-7ff3a7d3a7ed
-title: SdbReleaseDatabase función)
+title: Función SdbReleaseDatabase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 7df4b62af6b2fe654269a8bea4b2e866d0d765b3
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 82a7cf785927a5ef14e3e033c29233afcc4a49cf89d610757d110583bce4eff6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104538655"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119815335"
 ---
-# <a name="sdbreleasedatabase-function"></a>SdbReleaseDatabase función)
+# <a name="sdbreleasedatabase-function"></a>Función SdbReleaseDatabase
 
-Cierra la base de datos de correcciones de compatibilidad inicializada con la función [**SdbInitDatabase**](sdbinitdatabase.md) .
+Cierra la base de datos shim inicializada mediante la [**función SdbInitDatabase.**](sdbinitdatabase.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,10 +39,10 @@ void WINAPI SdbReleaseDatabase(
 
 <dl> <dt>
 
-*hSDB* \[ de\]
+*hSDB* \[ En\]
 </dt> <dd>
 
-Identificador de la base de datos de correcciones de compatibilidad (shim) devuelta por la función [**SdbInitDatabase**](sdbinitdatabase.md) .
+Identificador de la base de datos shim devuelta por la [**función SdbInitDatabase.**](sdbinitdatabase.md)
 
 </dd> </dl>
 
@@ -56,8 +56,8 @@ Esta función no devuelve ningún valor.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                   |
 | Archivo DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

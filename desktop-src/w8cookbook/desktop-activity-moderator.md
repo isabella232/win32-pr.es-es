@@ -4,118 +4,118 @@ description: Moderador de la actividad del escritorio
 ms.assetid: F1C54DB0-0AFC-4A1B-9697-6CEB519C2663
 keywords:
 - duración de la batería
-- en modo de espera conectado
-- suspensivo
+- espera conectada
+- Suspensión
 - limitación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b8bb3d7925633d3feca8bb6ed5af191670af681
-ms.sourcegitcommit: ea4baf9953a78d2d6bd530b680601e39f3884541
+ms.openlocfilehash: b465bbb377a06fdad50d04d5fcf788cb2e687fdf5db852125e4143fd971773d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "103794188"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119815425"
 ---
 # <a name="desktop-activity-moderator"></a>Moderador de la actividad del escritorio
 
 ## <a name="platform"></a>Plataforma
 
-**Clientes** : Windows 8 
+**Clientes:** Windows 8 
 
 
 > [!Note]  
-> La madre solo está presente en equipos cliente de Windows 8 que admiten el modo de espera conectado. El DAM no está presente en las SKU del servidor.
+> EL SISTEMA DE CONSUMO solo está presente en Windows 8 equipos cliente que admiten el modo de espera conectado. EL SISTEMA DE ACCESO no está presente en las SKU del servidor.
 
- 
+ 
 
   
 
 > [!Note]  
-> Las aplicaciones de la tienda Windows compiladas para Windows 8 no se ven afectadas por la madre.
+> Windows Las aplicaciones de la tienda Windows 8 no se verán afectadas por el SISTEMA DE SEGURIDAD.
 
- 
+ 
 
   
 </dl>
 
 ## <a name="description"></a>Descripción
 
-Nuestros clientes están desplazando hacia las plataformas más claras, más pequeñas y más móviles para satisfacer sus necesidades informáticas. Como parte de la transición a los dispositivos móviles, los usuarios están cada vez más preocupados por la duración de la batería de sus dispositivos. El moderador de actividades de escritorio (DAM) es una de las nuevas características de Windows 8 diseñadas para garantizar una larga duración de la batería para dispositivos que admiten el modo de espera conectado.
+Nuestros clientes se desplazan hacia plataformas más ligeras, más pequeñas y móviles para satisfacer sus necesidades informáticas. Como parte del cambio a los dispositivos móviles, los usuarios se han preocupar cada vez más por la duración de la batería de sus dispositivos. Desktop Activity Moderator (DAM) es una de las nuevas características de Windows 8 diseñadas para garantizar una duración de la batería coherente y larga para los dispositivos que admiten el modo de espera conectado.
 
-El modo de espera conectado se produce cuando el dispositivo está encendido, pero la pantalla está desactivada. En este estado de energía, el sistema técnicamente siempre está "activado" (para admitir escenarios clave como correo, VoIP, redes sociales y mensajería instantánea con aplicaciones de la tienda Windows). Es análogo al estado en el que se encuentra un smartphone cuando el usuario presiona el botón de encendido.
+El modo de espera conectado se produce cuando el dispositivo está encendido, pero la pantalla está apagada. En este estado de energía, el sistema está técnicamente siempre "encendido" (para admitir escenarios clave como correo, VoIP, redes sociales y mensajería instantánea con aplicaciones de Windows Store). Es análogo al estado en el que se encuentra un teléfono inteligente cuando el usuario presiona el botón de encendido.
 
-Como tal, el software (incluidas las aplicaciones y el software del sistema operativo) debe comportarse correctamente durante el modo de espera conectado. El DAM se creó para suprimir la ejecución de la aplicación de escritorio de forma similar al estado de suspensión (S3 en dispositivos ACPI). Esto lo hace suspendiendo o limitando los procesos de software de escritorio en el sistema tras la entrada en espera conectada. Esto permite a los sistemas que admiten Connected Standby ofrecer un uso minimizado de los recursos y una duración de la batería larga y coherente, al tiempo que permite que las aplicaciones de la tienda Windows entreguen las experiencias conectadas que prometen
+Por lo tanto, el software (incluidas las aplicaciones y el software del sistema operativo) debe comportarse correctamente durante el modo de espera conectado. La clase DAM se creó para suprimir la ejecución de aplicaciones de escritorio de forma similar al estado de suspensión (S3 en dispositivos ACPI). Para ello, suspende o limita los procesos de software de escritorio en todo el sistema tras la entrada en espera conectada. Esto permite a los sistemas que admiten el modo de espera conectado ofrecer un uso mínimo de los recursos y una duración de la batería larga y coherente, al tiempo que permite que las aplicaciones de Windows Store proporcionen las experiencias conectadas que ofrecen.
 
 ## <a name="details"></a>Detalles
 
-La DAM es un controlador de modo kernel que se carga y se inicializa durante el arranque del sistema si el sistema admite el modo de espera conectado. (Esto se determina mediante la evaluación de si el campo AOAC del sistema \_ La \_ estructura de capacidades de energía devuelta por CallNtPowerInformation está establecida en true).
+EL SISTEMA DE CARGA es un controlador en modo kernel que se carga e inicializa en el arranque del sistema si el sistema admite el modo de espera conectado. (Esto se determina mediante la evaluación de si el campo AOAC del sistema \_ La \_ estructura POWER CAPABILITIES devuelta por CallNtPowerInformation se establece en TRUE).
 
-Cuando el DAM está habilitado y se crea el proceso de escritorio, el DAM agrega el proceso a objetos de trabajo administrados por el sistema:
+Cuando se habilita EL SISTEMA DE ACCESO Y se crea el proceso de escritorio, el SISTEMA AGREGA el proceso a los objetos de trabajo administrados por el sistema:
 
--   Si el proceso se creó en la sesión 0, DAM agrega el proceso a un objeto de trabajo sujeto a **limitación**
--   Si el proceso se ha creado en una sesión interactiva (sesión 1 o superior), DAM agrega el proceso a un objeto de trabajo sujeto a **suspensión** .
+-   Si el proceso se creó en la sesión 0, LAN agrega el proceso a un objeto de trabajo sujeto a **limitación**
+-   Si el proceso se creó en una sesión interactiva (sesión 1 o superior), LAN agrega el proceso a un objeto de trabajo sujeto a **suspensión.**
 
 > [!Note]  
-> En Windows 8, los objetos de trabajo se pueden anidar. Esto significa que el uso de los objetos de trabajo de la madre no interfiere con el uso existente de los objetos de trabajo de la aplicación.
+> Por Windows 8, los objetos de trabajo se pueden anidar. Esto significa que el uso de objetos de trabajo por parte de LAN no interfiere con el uso existente de objetos de trabajo de una aplicación.
 
- 
+ 
 
-Cuando la pantalla está activada, el DAM se desactivará y no afectará a ningún proceso del sistema. Cuando el sistema está en modo de espera conectado, dependiendo de la actividad en el sistema, DAM podría limitar o suspender procesos.
+Cuando la pantalla está en pantalla, el sistema DESA se desactiva y no afecta a ningún proceso del sistema. Cuando el sistema está en modo de espera conectado, en función de la actividad del sistema, LAN podría limitar o suspender los procesos.
 
--   Los procesos que están sujetos a la suspensión tienen suspendidos todos los subprocesos (no se permite que se ejecuten en ninguna circunstancia); se mantiene el estado de la aplicación (memoria de proceso)
--   Procesos que están sujetos al ciclo de limitación entre suspendido y sin suspender (una gran mayoría de tiempo se dedica al estado suspendido)
-    -   Tenga en cuenta que Windows también puede detectar que se están produciendo actividades críticas y podría no suspender los servicios limitados durante períodos de tiempo más largos durante esta actividad.
-    -   Además, tenga en cuenta que, mientras está en modo de espera conectado, es posible que los sensores y redes no estén disponibles, por lo que los procesos limitados deben diseñarse para ser resistentes a condiciones de red deficientes (para la mayoría de los procesos, esto no requiere ningún cambio).
+-   Los procesos que están sujetos a suspensión tienen todos sus subprocesos suspendidos (no pueden ejecutarse en ninguna circunstancia); Se mantiene el estado de la aplicación (memoria de proceso)
+-   Procesos que están sujetos a un ciclo de limitación entre suspendidos y sin suspensión (una gran mayoría del tiempo se dedica al estado suspendido)
+    -   Tenga en cuenta Windows que también pueden detectar que se están produciendo actividades críticas y podrían no tener en cuenta los servicios con limitaciones durante períodos de tiempo más largos durante esta actividad.
+    -   Además, tenga en cuenta que mientras están en espera conectada, es posible que los sensores y las redes no estén disponibles, por lo que los procesos con limitación deben diseñarse para ser resistentes a condiciones de red deficientes (para la mayoría de los procesos, esto no requiere ningún cambio).
 
-Cuando se contrae o se desactive la suspensión de DAM, el DAM desencadena la entrega de un mensaje de POWERBROADCAST de WM \_ a esos procesos sujetos a la suspensión que ha optado por la entrega de mensajes (a través de correcciones de compatibilidad o llamada de API, que se describe más adelante). Después de un retraso de unos segundos, DAM suspende el proceso.
+Cuando se activa o desactiva la suspensión de LA SUSPENSIÓN, LAN desencadena la entrega de un mensaje WM POWERBROADCAST a los procesos sujetos a suspensión que han participado en la entrega de mensajes (a través de la llamada API o la corrección de compatibilidad, que se describe más \_ adelante). Después de unos segundos de retraso, LAN suspende el proceso.
 
-No hay notificaciones cuando el límite de la DAM está embragado o desactivado. No es necesario modificar los procesos; los procesos continúan funcionando, aunque a una velocidad inferior.
+No hay notificaciones cuando se activa o se desasombre la limitación de LAN. Los procesos no deben ser modificados; los procesos siguen funcionando, aunque a una velocidad más lenta.
 
 ## <a name="manifestation"></a>Manifestación
 
-Los procesos se suelen suspender o limitar durante el estado de espera conectado. Para la mayoría de las aplicaciones suspendidas, esto debe ser muy similar a una transición de S3/reanudación de S3 o de hibernación/reanudación de S4. Manifestaciones puede incluir, pero no se limita a las incoherencias en tiempo de actividad/tiempo de ejecución frente a tiempo de reloj de la pared, incoherencias en el comportamiento del temporizador o cambios drásticos en el estado del sistema operativo antes y después de que se complete la suspensión.
+Los procesos a menudo se suspenden o limitan durante el estado de espera conectado. Para la mayoría de las aplicaciones suspendidas, esto debe ser muy similar a una transición de suspensión/ reanudación de S3 o hibernación/reanudación de S4. Entre las expresiones se incluyen, entre otras, incoherencias en tiempo de actividad/tiempo de ejecución frente a tiempo de reloj, incoherencias en el comportamiento del temporizador o cambios drásticos en el estado del sistema operativo antes y después de que se complete la suspensión.
 
-La suspensión y la limitación se producen como una unidad (todos los procesos que se pueden suspender se suspenden y no se suspenden en el unísono, y todos los procesos que se pueden limitar se limitan y no se limitan al unísono), por lo que la comunicación entre dos procesos suspendidos o dos procesos limitados no plantea ningún problema.
+La suspensión y la limitación se produce como una unidad (todos los procesos suspendibles se suspenden y no se suspenden al unísono, y todos los procesos que se pueden limitar se limitan y no se limitan al unísono), por lo que la comunicación entre dos procesos suspendidos o dos procesos con limitaciones no supone un problema.
 
 El software que se basa en la comunicación entre procesos puede necesitar una consideración especial:
 
--   **Comunicación entre procesos en la sesión 0 (limitado) y sesión 1 + (suspendido)** : algunos ejemplos incluyen iconos de bandeja o componentes de interfaz de usuario que representan el estado actual del servicio.
--   **Comunicación entre componentes en modo de usuario (sesión 0 o 1) y controladores (que no están limitados ni suspendidos)** : algunos ejemplos incluyen servicios que funcionan en nombre de un controlador
+-   **Comunicación entre los procesos de la sesión 0 (limitada)** y la sesión 1+ (suspendida): algunos ejemplos incluyen iconos de bandeja o componentes de interfaz de usuario que representan el estado actual del servicio.
+-   Comunicación entre componentes en modo de usuario **(sesión 0 o 1)** y controladores (que no están limitadas ni suspendidas): algunos ejemplos incluyen servicios que funcionan en nombre de un controlador.
 
-En estos casos, si la comunicación entre procesos no se controla correctamente, las aplicaciones pueden aparecer bloqueadas o no responden (aunque es posible que el usuario no vea este impacto directamente, ya que la pantalla se apagará cuando esté en modo de espera conectado). Sin embargo, en la mayoría de los casos, los servicios y los controladores ya deben estar desarrollados para ser sólidos contra problemas de comunicación entre procesos.
+En estos casos, si la comunicación entre procesos no se controla correctamente, las aplicaciones pueden aparecer como desaprobadas o no responder (aunque es posible que el usuario no vea este impacto directamente, ya que la pantalla estará desactivada cuando esté en espera conectada). Sin embargo, en la mayoría de los casos, los servicios y los controladores ya deben desarrollarse para ser sólidos frente a problemas de comunicación entre procesos.
 
-Los proveedores que crean software para, o que dependen de, deben tener en cuenta cómo la suspensión del proceso afecta a las duraciones de conexión y los protocolos de enlace. Además, dado que es posible que la conectividad de red no esté disponible en el modo de espera conectado, los desarrolladores de procesos creados en la sesión 0 deben tener en cuenta especialmente el modo en que las conexiones de red intermitentes afectan al proceso.
+Los proveedores que crean software para la web o que dependen de este deben considerar cómo afecta la suspensión del proceso a la duración de la conexión y los protocolos de enlace. Además, dado que es posible que la conectividad de red no esté disponible en modo de espera conectada, los desarrolladores de procesos creados en la sesión 0 deben ser especialmente conscientes de cómo afectan las conexiones de red intermitentes al proceso.
 
 ## <a name="solution"></a>Solución
 
-Las aplicaciones de la tienda Windows no se ven afectadas por la madre. Si la aplicación de escritorio se ve afectada por la madre, puede solicitar notificaciones antes de que se lleve a cabo la suspensión (por ejemplo, para guardar el estado o cerrar las conexiones de red) mediante uno de estos métodos:
+Windows Las aplicaciones de la tienda no se verán afectadas por el SISTEMA DE SEGURIDAD. Si la aplicación de escritorio se ve afectada por el sistema DESA, puede solicitar notificaciones antes de que se desasocie la suspensión (por ejemplo, para guardar el estado o cerrar las conexiones de red) mediante uno de estos métodos:
 
--   Si la aplicación tiene una ventana (HWND) y desea controlar estas notificaciones a través del procedimiento de ventana, llame a [RegisterSuspendResumeNotification](/windows/win32/api/winuser/nf-winuser-registersuspendresumenotification) para registrar estos mensajes (o [UnregisterSuspendResumeNotification](/windows/win32/api/winuser/nf-winuser-unregistersuspendresumenotification) para anular el registro). Puede usar \_ \_ \_ el identificador de la ventana de notificación del dispositivo en el parámetro flags y pasar el HWND de la ventana en como parámetro de destinatario. El mensaje recibido es el mensaje de POWERBROADCAST de WM \_ .
--   Si la aplicación no tiene una ventana (HWND) o desea una devolución de llamada directa, llame a [PowerRegisterSuspendResumeNotification](/windows/win32/api/powerbase/nf-powerbase-powerregistersuspendresumenotification) para registrar estos mensajes (o [PowerUnregisterSuspendResumeNotification](/windows/win32/api/powerbase/nf-powerbase-powerunregistersuspendresumenotification) para anular el registro). Debe usar \_ \_ la devolución de llamada de notificación de dispositivo en el parámetro flags y pasar un valor de tipo PDEVICE \_ Notify \_ subscribe \_ Parameters en el parámetro Recipient.
--   Si no se puede volver a compilar la aplicación, puede optar por recibir estos mensajes de WM \_ POWERBROADCAST a través del [Kit de herramientas de AppCompat](../win7appqual/application-compatibility-toolkit--act-.md) (mediante la corrección de compatibilidad de PromoteDAM).
+-   Si la aplicación tiene una ventana (HWND) y desea controlar estas notificaciones a través del procedimiento de ventana, llame a [RegisterSuspendResumeNotification](/windows/win32/api/winuser/nf-winuser-registersuspendresumenotification) para registrarse para estos mensajes (o [UnregisterSuspendResumeNotification para](/windows/win32/api/winuser/nf-winuser-unregistersuspendresumenotification) anular el registro). Puede usar DEVICE NOTIFY WINDOW HANDLE en el parámetro Flags y pasar el HWND de la ventana \_ \_ como parámetro \_ Recipient. El mensaje recibido es el mensaje \_ WM POWERBROADCAST.
+-   Si la aplicación no tiene una ventana (HWND) o desea una devolución de llamada directa, llame a [PowerRegisterSuspendResumeNotification](/windows/win32/api/powerbase/nf-powerbase-powerregistersuspendresumenotification) para registrarse para estos mensajes (o [PowerUnregisterSuspendResumeNotification](/windows/win32/api/powerbase/nf-powerbase-powerunregistersuspendresumenotification) para anular el registro). Debe usar DEVICE NOTIFY CALLBACK en el parámetro Flags y pasar un valor de \_ \_ tipo PDEVICE NOTIFY SUBSCRIBE \_ PARAMETERS en el parámetro \_ \_ Recipient.
+-   Si no se puede volver a compilar la aplicación, puede optar por recibir estos mensajes DE WM POWERBROADCAST a través del kit de herramientas \_ [de AppCompat](../win7appqual/application-compatibility-toolkit--act-.md) (mediante la corrección de compatibilidad (shim) promote SHIM.
 
-El mensaje Suspend es WM \_ POWERBROADCAST con wParam = PBT \_ APMSUSPEND; este mensaje se transmite simultáneamente a todos los procesos que se hayan incorporado en el sistema. La aplicación debe realizar cualquier trabajo en la ruta de acceso de suspensión de forma rápida y eficaz. El tiempo de espera después de la notificación de difusión es global, no por proceso, por lo que es posible que el proceso esté intentando tener recursos del sistema si el trabajo necesario en esta ruta de acceso es amplio.
+El mensaje de suspensión es WM \_ POWERBROADCAST con wParam=PBT APMSUSPEND; este mensaje se difunde simultáneamente a todos los procesos que participaron en el \_ sistema. La aplicación debe realizar cualquier trabajo en la ruta de acceso de suspensión de forma rápida y eficaz. El tiempo de espera después de la notificación de difusión es global, no por proceso, por lo que el proceso podría estar contendiendo por los recursos del sistema si el trabajo necesario en esta ruta es amplio.
 
-El mensaje de reanudación es WM \_ POWERBROADCAST con wParam = PBT \_ APMRESUME; este mensaje se difundirá simultáneamente a todos los procesos que se hayan incorporado después de reanudarse. No se garantiza el tiempo relativo de entrega a la salida del sistema desde el modo de espera conectado.
+El mensaje de reanudación es WM \_ POWERBROADCAST con wParam=PBT APMRESUME; este mensaje se difunde simultáneamente a todos los procesos que participaron después de una \_ reanudación. No se garantiza el tiempo relativo de entrega a la salida del sistema del modo de espera conectado.
 
-En el caso de las aplicaciones relacionadas con la cámara, cuando se lleva a cabo la transición del estado de energía, durante la notificación de suspensión, las aplicaciones deben liberar todas las referencias a la cámara (todos los objetos de canalización de captura deben cerrarse y eliminarse).  Para evitar una posible purga de la batería, en Windows 10 RS3 + Systems, el servicio del servidor de trama de la cámara de Windows cerrará todas las sesiones de captura si la aplicación no controla correctamente la notificación de suspensión.  El efecto secundario de esto es que cuando el sistema sale del estado en espera o S3/S4, la canalización de captura de la aplicación ya no está en un estado de funcionamiento.
+En el caso de las aplicaciones relacionadas con la cámara, cuando se realiza la transición de estado de energía, durante la notificación de suspensión, las aplicaciones deben liberar todas las referencias a la cámara (todos los objetos de canalización de captura deben apagarse y eliminarse).  Para evitar una posible purga de batería, en los sistemas Windows 10 RS3+ Cámara de Windows el servicio Frame Server cerrará todas las sesiones de captura si la aplicación no controla correctamente la notificación de suspensión.  El efecto secundario de esto es que cuando el sistema sale del estado de espera o S3/S4, la canalización de captura de la aplicación ya no está en estado de funcionamiento.
 
 ## <a name="tests"></a>Pruebas
 
-Pruebe el software en las transiciones de modo de espera conectadas.
+Pruebe el software en las transiciones en espera conectadas.
 
 ## <a name="resources"></a>Recursos
 
--   [Soluciones de duración de batería móvil para Windows 7](/previous-versions/windows/hardware/design/dn641606(v=vs.85))
--   [\_capacidades de energía del sistema \_](/windows/win32/api/winnt/ns-winnt-system_power_capabilities)
--   [CallNtPowerInformation función)](/windows/win32/api/powerbase/nf-powerbase-callntpowerinformation)
+-   [Soluciones de duración de la batería móvil para Windows 7](/previous-versions/windows/hardware/design/dn641606(v=vs.85))
+-   [FUNCIONALIDADES \_ DE ENERGÍA \_ DEL SISTEMA](/windows/win32/api/winnt/ns-winnt-system_power_capabilities)
+-   [Función CallNtPowerInformation](/windows/win32/api/powerbase/nf-powerbase-callntpowerinformation)
 -   [Objetos de trabajo](../procthread/job-objects.md)
 -   [RegisterSuspendResumeNotification](/windows/win32/api/winuser/nf-winuser-registersuspendresumenotification)
 -   [UnregisterSuspendResumeNotification](/windows/win32/api/winuser/nf-winuser-unregistersuspendresumenotification)
 -   [PowerRegisterSuspendResumeNotification](/windows/win32/api/powerbase/nf-powerbase-powerregistersuspendresumenotification)
 -   [PowerUnregisterSuspendResumeNotification](/windows/win32/api/powerbase/nf-powerbase-powerunregistersuspendresumenotification)
--   [Kit de herramientas AppCompat](../win7appqual/application-compatibility-toolkit--act-.md)
+-   [Kit de herramientas de AppCompat](../win7appqual/application-compatibility-toolkit--act-.md)
 
- 
+ 
 
- 
+ 

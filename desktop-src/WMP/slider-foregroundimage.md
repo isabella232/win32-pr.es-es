@@ -1,9 +1,9 @@
 ---
-title: SLIDEr. foregroundImage
+title: SLIDER.foregroundImage
 description: El atributo foregroundImage especifica o recupera la imagen de primer plano del control deslizante.
 ms.assetid: f713fba8-e965-4fed-b323-8a513d1f13e6
 keywords:
-- CONTROL SLIDEr. foregroundImage Windows Media Player
+- SLIDER.foregroundImage Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a286d3b73a2647160a0bd23357703f4fcb88d267
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2f7fad50a6e33ca4de5890dfca340e36aa2fdc0af0c0b938793eac4edc1dfb71
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661191"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119735715"
 ---
-# <a name="sliderforegroundimage"></a>SLIDEr. foregroundImage
+# <a name="sliderforegroundimage"></a>SLIDER.foregroundImage
 
-El atributo **foregroundImage** especifica o recupera la imagen de primer plano del control deslizante.
+El **atributo foregroundImage** especifica o recupera la imagen de primer plano del control deslizante.
 
 ``` syntax
         elementID.foregroundImage
@@ -29,17 +29,17 @@ El atributo **foregroundImage** especifica o recupera la imagen de primer plano 
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura que contiene el nombre de un archivo de imagen.
+Este atributo es una cadena de **lectura** y escritura que contiene el nombre de un archivo de imagen.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo es opcional. Al usar imágenes para construir un control deslizante, la **BackgroundImage** se usa para la imagen del control deslizante principal. **ThumbImage** representa el control deslizante real y se puede desplazar mediante el mouse. En el control deslizante **thumbImage** hay una línea invisible en la que se muestra la imagen de fondo en un lado de la línea y la imagen de primer plano se muestra en el otro lado.
+Este atributo es opcional. Cuando se usan imágenes para construir un control deslizante, **backgroundImage** se usa para la imagen del control deslizante principal. **ThumbImage representa** el control deslizante real y se puede mover con el mouse. En el **control deslizante thumbImage** hay una línea invisible donde la imagen de fondo se muestra en un lado de la línea y la imagen de primer plano se muestra en el otro lado.
 
-Cuando el control deslizante **thumbImage** se mueve con el mouse, si la **diapositiva** está establecida en true, la imagen de primer plano se desliza como si lo extrajo el control deslizante para abarcar la imagen de fondo. Si **Slide** está establecido en false, la imagen de primer plano no se mueve, sino que se revela, como si el control deslizante fuera la imagen de fondo de la imagen de primer plano.
+Cuando el **control deslizante thumbImage** se  mueve con el mouse, si la diapositiva está establecida en true, la imagen de primer plano se desliza como si el control deslizante lo extrayes para cubrir la imagen de fondo. Si **la** diapositiva se establece en false, la imagen de primer plano no se mueve, pero se muestra en su lugar, como si el control deslizante mueve la imagen de fondo fuera de la imagen de primer plano.
 
-Si el atributo en **mosaico** está establecido en true y la imagen de primer plano es menor que el área de primer plano del control deslizante, la imagen se organizará en mosaico horizontal o verticalmente, según el atributo **Direction** , para rellenar el espacio disponible.
+Si el atributo **en** mosaico se establece en true y la imagen de primer plano es menor que el  área de primer plano del control deslizante, la imagen se mosaico horizontal o verticalmente, dependiendo del atributo de dirección, para rellenar el espacio disponible.
 
-Los formatos admitidos son BMP, JPG, PNG y GIF (sin incluir los GIF animados).
+Los formatos admitidos son BMP, JPG, PNG y GIF (sin incluir GIF animados).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,7 +47,7 @@ Los formatos admitidos son BMP, JPG, PNG y GIF (sin incluir los GIF animados).
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -55,19 +55,19 @@ Los formatos admitidos son BMP, JPG, PNG y GIF (sin incluir los GIF animados).
 
 <dl> <dt>
 
-[**Elemento SLIDEr**](slider-element.md)
+[**Elemento SLIDER**](slider-element.md)
 </dt> <dt>
 
-[**Control deslizante. backgroundImage**](slider-backgroundimage.md)
+[**SLIDER.backgroundImage**](slider-backgroundimage.md)
 </dt> <dt>
 
-[**Control deslizante. Slide**](slider-slide.md)
+[**SLIDER.slide**](slider-slide.md)
 </dt> <dt>
 
-[**SLIDEr. thumbImage**](slider-thumbimage.md)
+[**SLIDER.thumbImage**](slider-thumbimage.md)
 </dt> <dt>
 
-[**Control deslizante. valor**](slider-value.md)
+[**SLIDER.value**](slider-value.md)
 </dt> </dl>
 
  

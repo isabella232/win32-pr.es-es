@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 24dd07faecc66bc50c408eab36bcbd8c93c460ef
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 942fcf03d97c7d787231e896199bce0d4c53cf78d16f6b25741e604238bf06b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110549220"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119741765"
 ---
 # <a name="fileokstring-message"></a>Mensaje FILEOKSTRING
 
-\[A partir de Windows Vista, **los** cuadros de **diálogo** Abrir y Guardar como comunes se han reemplazado por el [cuadro de diálogo Elemento común](../shell/common-file-dialog.md). Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca común de cuadros de diálogo.\]
+\[A partir Windows Vista,  los  cuadros de diálogo Abrir y Guardar como comunes se han reemplazado por el [cuadro de diálogo Elemento común](../shell/common-file-dialog.md). Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca común de cuadros de diálogo.\]
 
 Un **cuadro** de **diálogo** Abrir o Guardar como envía el mensaje **registrado FILEOKSTRING** al procedimiento de enlace, [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc), cuando el usuario especifica un nombre de archivo y hace clic en el **botón** Aceptar. El procedimiento de enlace puede aceptar el nombre de archivo y permitir que el cuadro de diálogo se cierre, o rechazar el nombre de archivo y forzar que el cuadro de diálogo permanezca abierto.
 
@@ -58,7 +58,7 @@ Puntero a una [**estructura OPENFILENAME.**](/windows/win32/api/commdlg/ns-commd
 
 Si el procedimiento de enlace  devuelve cero, **el** cuadro de diálogo Abrir o Guardar como acepta el nombre de archivo especificado y se cierra.
 
-Si el procedimiento de enlace devuelve  un valor distinto de cero, el cuadro de diálogo Abrir o Guardar **como** rechaza el nombre de archivo especificado y permanece abierto.
+Si el procedimiento de enlace devuelve  un  valor distinto de cero, el cuadro de diálogo Abrir o Guardar como rechaza el nombre de archivo especificado y permanece abierto.
 
 ## <a name="remarks"></a>Comentarios
 
@@ -77,14 +77,14 @@ El procedimiento de enlace debe especificar la **constante FILEOKSTRING** en una
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 **Referencia**
 </dt> <dt>
 
-[**CDN \_ FILEOK**](cdn-fileok.md)
+[**\_CDN FILEOK**](cdn-fileok.md)
 </dt> <dt>
 
 [**OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea)

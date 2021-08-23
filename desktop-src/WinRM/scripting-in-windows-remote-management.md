@@ -1,11 +1,11 @@
 ---
-title: Scripting en Administración remota de Windows
-description: La API de scripting en WinRM y la API COM adjunta para C++ están diseñadas para reflejar de cerca las operaciones del Protocolo de WS-Management.
+title: Scripting en Windows administración remota
+description: La API de scripting de WinRM y la API COM que lo acompaña para C++ están diseñadas para reflejar estrechamente las operaciones del WS-Management protocolo.
 ms.assetid: fda2042a-8fca-4cd8-bb55-fd1c3591921e
 ms.tgt_platform: multiple
 keywords:
-- Scripting en Administración remota de Windows
-- Administración remota de Windows, scripting en
+- Scripting en Windows administración remota
+- Windows Administración remota, scripting en
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -13,36 +13,36 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 75af10fea03853de99c884eda0a74ce340683b49
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 3c10d36420b2826162a6ed5e3fb6bf69408a74032faafac75c84c25a754cf534
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104149291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119795435"
 ---
-# <a name="scripting-in-windows-remote-management"></a>Scripting en Administración remota de Windows
+# <a name="scripting-in-windows-remote-management"></a>Scripting en Windows administración remota
 
-La [API de scripting en WinRM](winrm-scripting-api.md) y la API com adjunta para C++ están diseñadas para reflejar de cerca las operaciones del protocolo de WS-Management.
+La [API de scripting de WinRM](winrm-scripting-api.md) y la API COM que lo acompaña para C++ están diseñadas para reflejar estrechamente las operaciones del WS-Management protocolo.
 
-La API de scripting de WinRM en Administración remota de Windows admite todas las operaciones de protocolo de WS-Management, excepto una. No permite suscripciones a eventos. Para suscribirse a eventos del registro de eventos del sistema BMC, debe usar las herramientas de línea de comandos Wecutil o wevtutil. Para más información, vea [Eventos](events.md).
+WinRM Scripting API en Windows Remote Management admite todas las operaciones WS-Management protocolo, excepto una. No permite suscripciones a eventos. Para suscribirse a eventos del registro de eventos del sistema BMC, debe usar las herramientas de línea de comandos Wecutil o Wevtutil. Para más información, vea [Eventos](events.md).
 
-Winrm.vbs, una herramienta de línea de comandos, que se escribe en Visual Basic Scripting Edition (VBScript), llama a la API de scripting de WinRM. Winrm.vbs proporciona ejemplos de cómo usar la [API de scripting de WinRM](winrm-scripting-api.md).
+La API de scripting de WinRM se llama mediante Winrm.vbs, una herramienta de línea de comandos, que se escribe en Visual Basic Scripting Edition (VBScript). Winrm.vbs proporciona ejemplos de cómo usar [La API de scripting de WinRM](winrm-scripting-api.md).
 
-## <a name="using-wsman-compared-to-using-wmi-scripting"></a>Usar WSman en comparación con el uso de scripting de WMI
+## <a name="using-wsman-compared-to-using-wmi-scripting"></a>Uso de WSman en comparación con el uso de scripting WMI
 
-WMI se conecta a equipos remotos a través de DCOM, que requiere la configuración descrita en [conexión a WMI en un equipo remoto](/windows/desktop/WmiSdk/connecting-to-wmi-on-a-remote-computer). WinRM no usa DCOM para conectarse a un equipo remoto. En su lugar, el protocolo WS-Management envía mensajes SOAP y el servicio utiliza un único puerto para HTTP y un puerto para el transporte HTTPS.
+WMI se conecta a equipos remotos a través de DCOM, que requiere la configuración descrita en [Conexión a WMI en un equipo remoto.](/windows/desktop/WmiSdk/connecting-to-wmi-on-a-remote-computer) WinRM no usa DCOM para conectarse a un equipo remoto. En su lugar, WS-Management protocolo envía mensajes SOAP y el servicio usa un único puerto para HTTP y un puerto para el transporte HTTPS.
 
-A diferencia de la herramienta de línea de comandos de **WinRM** , los scripts deben proporcionar el XML necesario para pasar a los mensajes de protocolo WS-Management. También deben proporcionar URI. Para obtener más información, vea [URI de recursos](resource-uris.md) y [administración remota de Windows y WMI](windows-remote-management-and-wmi.md).
+A diferencia de la herramienta de línea de comandos **winrm,** los scripts deben proporcionar el XML necesario para pasar al WS-Management protocolo. También deben proporcionar URI. Para obtener más información, vea [Identificadores URI de](resource-uris.md) [recursos Windows Administración remota y WMI.](windows-remote-management-and-wmi.md)
 
-La API de scripting de WMI funciona con objetos, como instancias de [**Win32 \_ LogicalDisk**](/windows/desktop/CIMWin32Prov/win32-logicaldisk), que representan recursos de un equipo. Esta clase WMI se define en archivos de [*Managed Object Format (MOF)*](/windows/desktop/WmiSdk/gloss-m) , que se almacenan en formato binario en el repositorio WMI. En WMI, una operación Get para un único recurso o una consulta para varias instancias devuelve objetos WMI.
+Wmi Scripting API funciona con objetos, como instancias de [**\_ LogicalDisk de Win32,**](/windows/desktop/CIMWin32Prov/win32-logicaldisk)que representan recursos en un equipo. Esta clase WMI se define en [*Managed Object Format (MOF),*](/windows/desktop/WmiSdk/gloss-m) que se almacenan en formato binario en el repositorio WMI. En WMI, una operación Get para un único recurso o una consulta para varias instancias devuelve objetos WMI.
 
-Un script WinRM no devuelve objetos, sino secuencias de texto XML. Para obtener más información, vea [administración remota de Windows y WMI](windows-remote-management-and-wmi.md).
+Un script WinRM no devuelve objetos, sino secuencias de texto XML. Para obtener más información, [vea Windows Administración remota y WMI.](windows-remote-management-and-wmi.md)
 
-## <a name="displaying-xml-output-from-winrm-scripts"></a>Mostrar la salida XML de los scripts de WinRM
+## <a name="displaying-xml-output-from-winrm-scripts"></a>Mostrar la salida XML de scripts WinRM
 
-La API de scripting de WinRM obtiene y recibe cadenas XML que describen los recursos. El XML resultante está en forma de una secuencia de texto y requiere que se muestre una transformación XML de otra manera.
+WinRM Scripting API obtiene y recibe cadenas XML que describen los recursos. El XML resultante tiene el formato de una secuencia de texto y requiere que se muestre una transformación XML de alguna otra manera.
 
-El siguiente script WinRM genera una salida XML sin formato.
+El siguiente script de WinRM genera una salida XML sin formato.
 
 
 ```VB
@@ -57,7 +57,7 @@ xmlFile.Save( "c:\RawOutput.xml")
 
 
 
-En el siguiente bloque de texto se muestra la salida XML del script WinRM.
+El siguiente bloque de texto muestra la salida XML del script WinRM.
 
 
 ```XML
@@ -94,7 +94,7 @@ _Service>
 
 
 
-Los scripts pueden usar una transformación XML para que esta salida sea más legible. Para obtener más información, vea [Mostrar la salida XML de los scripts de WinRM](displaying-xml-output-from-winrm-scripts.md).
+Los scripts pueden usar una transformación XML para que esta salida sea más legible. Para obtener más información, vea [Mostrar la salida XML de scripts winRM.](displaying-xml-output-from-winrm-scripts.md)
 
 La siguiente versión del script da formato al XML en una salida legible.
 
@@ -114,7 +114,7 @@ Wscript.Echo xmlFile.TransformNode( xslFile )
 
 
 
-La transformación XSL crea el siguiente resultado.
+La transformación XSL crea la salida siguiente.
 
 
 ```XML
@@ -148,26 +148,26 @@ Win32_Service
 
 
 
-## <a name="winrm-script-and-winrmcmd-output"></a>Script de WinRM y salida de WinRM. cmd
+## <a name="winrm-script-and-winrmcmd-output"></a>Salida del script WinRM y Winrm.cmd
 
-La salida de un script de WinRM se codifica en Unicode. Si crea un [FileSystemObject](/previous-versions//6kxy1a51(v=vs.85)) y escribe un archivo desde el script, el archivo resultante es Unicode. Sin embargo, si redirige la salida a un archivo, la codificación es ANSI. Si redirige la salida a un archivo XML y hay caracteres Unicode en la salida, el XML no será válido. Tenga en cuenta que la herramienta de línea de comandos de **WinRM** genera ANSI.
+La salida de un script WinRM está codificada en Unicode. Si crea un [objeto FileSystemObject](/previous-versions//6kxy1a51(v=vs.85)) y escribe un archivo desde el script, el archivo resultante es Unicode. Sin embargo, si redirige la salida a un archivo, la codificación es ANSI. Si redirige la salida a un archivo XML y hay caracteres Unicode en la salida, el XML no será válido. Tenga en cuenta que la herramienta de línea de comandos **Winrm** genera ANSI.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Acerca de Administración remota de Windows](about-windows-remote-management.md)
+[Acerca de Windows administración remota](about-windows-remote-management.md)
 </dt> <dt>
 
-[Usar Administración remota de Windows](using-windows-remote-management.md)
+[Uso de Windows administración remota](using-windows-remote-management.md)
 </dt> <dt>
 
-[MSXSL](/previous-versions/windows/desktop/ms763742(v=vs.85))
+[Msxsl](/previous-versions/windows/desktop/ms763742(v=vs.85))
 </dt> <dt>
 
 [Referencia de DOM](/previous-versions/windows/desktop/ms764730(v=vs.85))
 </dt> </dl>
 
- 
+ 
 
- 
+ 

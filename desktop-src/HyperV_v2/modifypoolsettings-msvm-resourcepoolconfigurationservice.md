@@ -1,7 +1,7 @@
 ---
 description: Cambia la configuración de un grupo secundario que no está relacionado con la asignación.
 ms.assetid: f60068e0-f333-41e2-8f11-78aa48dfa260
-title: Método ModifyPoolSettings de la clase Msvm_ResourcePoolConfigurationService
+title: Método ModifyPoolSettings de la Msvm_ResourcePoolConfigurationService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: edc5f48dabfb84554954cc80d9c4e8a20678d34f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e1c8d71f8f380d5049d6bd2743e1f1d48573407431372c53aaeaacf4297ec56e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119694045"
 ---
-# <a name="modifypoolsettings-method-of-the-msvm_resourcepoolconfigurationservice-class"></a>Método ModifyPoolSettings de la \_ clase ResourcePoolConfigurationService de MSVM
+# <a name="modifypoolsettings-method-of-the-msvm_resourcepoolconfigurationservice-class"></a>Método ModifyPoolSettings de la clase ResourcePoolConfigurationService de Msvm \_
 
 Cambia la configuración de un grupo secundario que no está relacionado con la asignación.
 
@@ -41,24 +41,24 @@ uint32 ModifyPoolSettings(
 
 <dl> <dt>
 
-*ChildPool* \[ de\]
+*ChildPool* \[ En\]
 </dt> <dd>
 
-Referencia a una instancia de la clase [**\_ ResourcePool de CIM**](cim-resourcepool.md) que representa el grupo secundario que se va a modificar.
+Referencia a una instancia de la clase [**\_ ResourcePool de CIM**](cim-resourcepool.md) que representa el grupo secundario que se debe modificar.
 
 </dd> <dt>
 
-*PoolSettings* \[ de\]
+*PoolSettings* \[ En\]
 </dt> <dd>
 
-Instancia insertada de la clase [**MSVM \_ ResourcePoolSettingData**](msvm-resourcepoolsettingdata.md) que se usa para especificar la nueva configuración para el grupo.
+Instancia incrustada de la [**clase \_ ResourcePoolSettingData de Msvm**](msvm-resourcepoolsettingdata.md) que se usa para especificar la nueva configuración del grupo.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ ConcreteJob CIM**](/previous-versions//cc136808(v=vs.85)).
+Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ CIM ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
 
 </dd> </dl>
 
@@ -68,7 +68,7 @@ Este método devuelve uno de los valores siguientes.
 
 <dl> <dt>
 
-**Trabajo completado sin errores** (0)
+**Trabajo completado sin error** (0)
 </dt> <dt>
 
 **DMTF reservado** (..)
@@ -77,7 +77,7 @@ Este método devuelve uno de los valores siguientes.
 **Parámetros de método comprobados: trabajo iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (de no.. 32767)
+**Método reservado** (4097..32767)
 </dt> <dt>
 
 **Error** (32768)
@@ -92,16 +92,16 @@ Este método devuelve uno de los valores siguientes.
 **Desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
 **En uso** (32774)
 </dt> <dt>
 
-**Estado no válido** (32775)
+**Estado no** válido (32775)
 </dt> <dt>
 
 **Tipo de recurso incorrecto para el grupo** (32776)
@@ -110,22 +110,22 @@ Este método devuelve uno de los valores siguientes.
 **No disponible** (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria no suficiente** (32778)
 </dt> <dt>
 
-**Proveedor reservado** (32779)
+**Vendor Reserved** (32779)
 </dt> <dt>
 
 **Recursos insuficientes** (32780)
 </dt> <dt>
 
-**No se encontró el objeto** (32781.. 32787)
+**Objeto no encontrado** (32781..32787)
 </dt> <dt>
 
-**Existe el objeto** (32788)
+**Objeto existe** (32788)
 </dt> <dt>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -134,10 +134,10 @@ Este método devuelve uno de los valores siguientes.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -146,7 +146,7 @@ Este método devuelve uno de los valores siguientes.
 
 <dl> <dt>
 
-[**MSVM \_ ResourcePoolConfigurationService**](msvm-resourcepoolconfigurationservice.md)
+[**Msvm \_ ResourcePoolConfigurationService**](msvm-resourcepoolconfigurationservice.md)
 </dt> </dl>
 
  

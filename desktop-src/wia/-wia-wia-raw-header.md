@@ -1,7 +1,7 @@
 ---
-description: La \_ estructura de \_ encabezado sin formato de WIA define una imagen en el formato de datos sin procesar de un dispositivo y permite a las aplicaciones usar el formato RAW en las transferencias de adquisición de imágenes de Windows (WIA).
+description: La estructura WIA RAW HEADER define una imagen en el formato de datos RAW de un dispositivo y permite a las aplicaciones usar el formato RAW en las transferencias Windows adquisición de imágenes \_ \_ (WIA).
 ms.assetid: c7b50816-d596-4c62-a00e-cd8d6e303e42
-title: WIA_RAW_HEADER estructura (Wiadef. h)
+title: WIA_RAW_HEADER estructura (Wiadef.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Wiadef.h
-ms.openlocfilehash: 8da33f0b257168712f1b16fb7f940df5db862d3f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2b4e89f47737788fa9ebf238f06f6420eafbc31d7b27ab7933372d0716fb6588
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715174"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119812955"
 ---
-# <a name="wia_raw_header-structure"></a>\_Estructura de encabezado sin formato de WIA \_
+# <a name="wia_raw_header-structure"></a>Estructura DE \_ ENCABEZADO SIN FORMATO DE WIA \_
 
-La estructura de **\_ \_ encabezado sin formato de WIA** define una imagen en el formato de datos sin procesar de un dispositivo y permite a las aplicaciones usar el formato RAW en las transferencias de adquisición de imágenes de Windows (WIA).
+La **estructura WIA \_ RAW \_ HEADER** define una imagen en el formato de datos RAW de un dispositivo y permite a las aplicaciones usar el formato RAW en las transferencias Windows adquisición de imágenes (WIA).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,7 +64,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Nombre del formato. Debe ser el literal ' WRAW ' (cuatro caracteres ASCII de un solo byte).
+Nombre del formato. Debe ser el literal 'WRAW' (cuatro caracteres ASCII de un solo byte).
 
 </dd> <dt>
 
@@ -75,7 +75,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Versión del formato sin formato. Use siempre 0x00010000.
+Versión del formato RAW. Use siempre 0x00010000.
 
 </dd> <dt>
 
@@ -86,7 +86,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Bytes totales válidos en el encabezado.
+Bytes válidos totales en el encabezado.
 
 </dd> <dt>
 
@@ -141,7 +141,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-El número de bytes en una línea de una imagen sin comprimir. Use 0 cuando se compriman los datos para indicar que se desconoce el número de bytes por línea.
+Número de bytes de una línea de una imagen sin comprimir. Use 0 cuando los datos se comprimen para indicar que se desconoce el número de bytes por línea.
 
 </dd> <dt>
 
@@ -152,7 +152,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Número total de bits por píxel para todos los canales de píxeles.
+Número total de bits por píxel para todos los canales del píxel.
 
 </dd> <dt>
 
@@ -163,7 +163,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Número de canales de color de un píxel.
+Número de canales de color en un píxel.
 
 </dd> <dt>
 
@@ -174,14 +174,14 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-\_ \_ Tipo de la imagen del IPA de WIA. Puesto que \_ \_ el formato de IPA de WIA se establece en WiaImgFmt \_ raw, se trata de una lista de valores permitidos entre los que la aplicación elige.
+EL DATATYPE de IPA de WIA \_ \_ de la imagen. Puesto que WIA IPA FORMAT se establece en \_ \_ WiaImgFmt RAW, se trata de una lista de valores permitidos entre los que \_ elige la aplicación.
 
 </dd> <dt>
 
 **BitsPerChannel \[ 8\]**
 </dt> <dd>
 
-Tipo: **byte**
+Tipo: **BYTE**
 
 </dd> <dd>
 
@@ -196,7 +196,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Un \_ \_ valor de compresión de IPA de WIA que especifica el tipo de compresión utilizado, si existe.
+Valor IPA COMPRESSION de WIA \_ que especifica el tipo de compresión \_ utilizado, si lo hay.
 
 </dd> <dt>
 
@@ -207,7 +207,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Un \_ \_ valor INTERP de fotométrico del IPA \_ de WIA que especifica la interpretación fotométrica de la imagen.
+Valor DE WIA \_ IPA \_ PHOTOMETRIC \_ INTERP que especifica la interpretación fotométrica de la imagen.
 
 </dd> <dt>
 
@@ -218,7 +218,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Valor que representa el orden de la línea de la imagen. Siempre es el orden de las \_ líneas \_ de WIA \_ de arriba abajo o el \_ \_ \_ orden de las líneas de la parte \_ \_ inferior \_ \_ .
+Valor que representa el orden de línea de la imagen. Siempre se trata de WIA \_ LINE ORDER TOP TO BOTTOM o \_ \_ \_ \_ WIA LINE ORDER BOTTOM \_ TO \_ \_ \_ \_ TOP.
 
 </dd> <dt>
 
@@ -262,17 +262,17 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Tamaño, en bytes, de la tabla Palette. (Es 0 si no hay ninguna paleta).
+Tamaño, en bytes, de la tabla de paleta. (Es 0, si no hay ninguna paleta).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Dado que este no es un formato de archivo, use una cadena vacía para la propiedad de extensión de archivo del IPA de WIA \_ \_ \_ .
+Dado que no se trata de un formato de archivo, use una cadena vacía para la propiedad WIA \_ IPA \_ FILE \_ EXTENSION.
 
-La paleta y los datos pueden aparecer en cualquier orden.
+La paleta y los datos pueden estar en cualquier orden.
 
-**RawDataSize** no incluye el encabezado o la paleta. Utilice este campo para comprobar que la transferencia de la imagen se ha realizado correctamente.
+**RawDataSize** no incluye el encabezado ni la paleta. Use este campo para comprobar que la transferencia de la imagen se ha realizado correctamente.
 
 **PaletteSize** es bytes, no el número de entradas de la paleta.
 
@@ -280,11 +280,11 @@ La paleta y los datos pueden aparecer en cualquier orden.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                      |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Wiadef. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                      |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                |
+| Header<br/>                   | <dl> <dt>Wiadef.h</dt> </dl> |
 
 
 

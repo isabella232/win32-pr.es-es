@@ -1,9 +1,9 @@
 ---
-title: función glEvalMesh1 (GL. h)
+title: Función glEvalMesh1 (Gl.h)
 description: Calcula una cuadrícula unidimensional de puntos o líneas.
 ms.assetid: 176a4b81-f1a7-42fc-8ecd-bba77a0ec5b3
 keywords:
-- glEvalMesh1 (función) OpenGL
+- Función GlEvalMesh1 OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8950dcf397816fca8eb5a6add45c45512c48866
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c325134a8a8fd60afdc764eebc8a4de9bd507b5b667ebb8e1b2ab967edcd7e77
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534480"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119625475"
 ---
-# <a name="glevalmesh1-function"></a>glEvalMesh1 función)
+# <a name="glevalmesh1-function"></a>Función glEvalMesh1
 
 Calcula una cuadrícula unidimensional de puntos o líneas.
 
@@ -45,21 +45,21 @@ void WINAPI glEvalMesh1(
 *mode* 
 </dt> <dd>
 
-Valor que especifica si se va a calcular una malla unidimensional de puntos o líneas. Se aceptan las siguientes constantes simbólicas: el \_ punto de contabilidad y la línea de contabilidad \_ .
+Valor que especifica si se debe calcular una malla unidimensional de puntos o líneas. Se aceptan las siguientes constantes simbólicas: GL \_ POINT y GL \_ LINE.
 
 </dd> <dt>
 
-*I1* 
+*i1* 
 </dt> <dd>
 
-El primer valor entero para la variable de dominio de cuadrícula i.
+Primer valor entero para la variable de dominio de cuadrícula i.
 
 </dd> <dt>
 
-*I2* 
+*i2* 
 </dt> <dd>
 
-El último valor entero para la variable de dominio de cuadrícula i.
+Último valor entero de la variable de dominio de cuadrícula i.
 
 </dd> </dl>
 
@@ -75,45 +75,45 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                                  | Significado                                                                                                                                |
 |-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_enumeración GL no válida \_**</dt> </dl>      | Indica que el *modo* no es un valor aceptado. <br/>                                                                            |
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md). <br/> |
+| <dl> <dt>**ENUMERACIÓN \_ \_ NO VÁLIDA DE GL**</dt> </dl>      | Indica que *el modo* no es un valor aceptado. <br/>                                                                            |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md). <br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use [**glMapGrid**](glmapgrid-functions.md) y [**glEvalMesh**](glevalmesh-functions.md) juntos para generar y evaluar de forma eficaz una serie de valores de dominio de mapa con espaciado uniforme. La función **glEvalMesh** se recorre a través del dominio entero de una cuadrícula de una o dos dimensiones, cuyo intervalo es el dominio de las asignaciones de evaluación especificadas por [**glMap1**](glmap1.md) y [**glMap2**](glmap2.md). El parámetro Mode determina si los vértices resultantes se conectan como puntos, líneas o polígonos rellenos.
+Use [**glMapGrid**](glmapgrid-functions.md) y [**glEvalMesh**](glevalmesh-functions.md) juntos para generar y evaluar eficazmente una serie de valores de dominio de mapa espaciados uniformemente. La **función glEvalMesh** pasa por el dominio entero de una cuadrícula unidimensional o bidimensional, cuyo intervalo es el dominio de los mapas de evaluación especificados por [**glMap1**](glmap1.md) y [**glMap2.**](glmap2.md) El parámetro mode determina si los vértices resultantes están conectados como puntos, líneas o polígonos rellenos.
 
-En el caso unidimensional, **glEvalMesh1**, la malla se genera como si se ejecutara el siguiente fragmento de código:
+En el caso unidimensional, **glEvalMesh1,** la malla se genera como si se ejecutara el siguiente fragmento de código:
 
-[**glBegin**](glbegin.md)(*tipo*);
+[**glBegin**](glbegin.md)*(tipo*);
 
-para (i = i1; i <= I2; i + = 1)
+for (i = i1; i <= i2; i += 1)
 
 {
 
-[**glEvalCoord1**](glevalcoord1d.md)(i? u + U1)
+[**glEvalCoord1**](glevalcoord1d.md)(i?u + u1)
 
 }
 
-[**glEnd**](glend.md)();
+[**glEnd**](glend.md)( );
 
 where
 
-? u = (U2 U1)/n
+?u = (u2 u1) / n
 
-y n, U1 y U2 son los argumentos de la función [**glMapGrid1**](glmapgrid1d.md) más reciente. El parámetro de *tipo* es el de los puntos de contabilidad si el modo \_ es un \_ punto de contabilidad o líneas de contabilidad \_ si el modo es línea de contabilidad \_ . El único requisito absoluto es que si i = n, el valor calculado desde i? u + U1 es exactamente U2.
+y n, u1 y u2 son los argumentos de la función [**glMapGrid1 más**](glmapgrid1d.md) reciente. El *parámetro de* tipo es GL POINTS si el modo es GL POINT o GL LINES si el modo es GL \_ \_ \_ \_ LINE. El único requisito numérico absoluto es que si i = n, el valor calculado a partir de i?u + u1 es exactamente u2.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

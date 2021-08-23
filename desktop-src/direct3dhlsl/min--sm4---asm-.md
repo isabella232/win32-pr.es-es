@@ -4,12 +4,12 @@ description: Mínimo flotante por componente.
 ms.assetid: 8EDD5503-76D5-4078-BFBA-1DA9260C6E68
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8791589b77edc66eeab4b48f10f4a9b16b5cb2d9
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: eddabe79f70255cddc0f94302eb8147037e378c3197f3656a6d3369bb68e3e36
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107993902"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119672585"
 ---
 # <a name="min-sm4---asm"></a>min (sm4 - asm)
 
@@ -17,7 +17,7 @@ Mínimo flotante por componente.
 
 
 
-| min \[ \_ sat \] dest \[ .mask \] , \[ - \] src0 \[ \_ abs \] \[ .swzzle \] , \[ - \] src1 abs \[ \_ \] \[ .sw swle \] , |
+| min \[ \_ sat \] dest \[ .mask \] , \[ - \] src0 \[ \_ abs \] \[ .swzzle \] , \[ - \] src1 abs \[ \_ \] \[ .sw swzzle \] , |
 |---------------------------------------------------------------------------------------------|
 
 
@@ -30,7 +30,7 @@ Mínimo flotante por componente.
 |-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
 | <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[en \] El resultado de la operación.<br/> *dest*  =  *src0*  <  *src1* ? *src0:* *src1*<br/> |
 | <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] Los componentes que se comparan con *src1*.<br/>                                                  |
-| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[en \] Los componentes que se comparan con *src0*.<br/>                                                  |
+| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[en \] Los componentes que se comparan con *src0.*<br/>                                                  |
 
 
 
@@ -38,7 +38,7 @@ Mínimo flotante por componente.
 
 ## <a name="remarks"></a>Comentarios
 
->= se usa en lugar > para que si min(x,y) = x, max(x,y) = y.
+>= se usa en lugar de > para que si min(x,y) = x, max(x,y) = y.
 
 NaN tiene un control especial. Si un operando de origen es NaN, se devuelve el otro operando de origen y la elección se realiza por componente. Si ambos son NaN, se devuelve cualquier representación de NaN. Esto se ajusta a las nuevas reglas IEEE 754R.
 
@@ -79,12 +79,12 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | sí       |
-| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
@@ -94,7 +94,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado del modelo de sombreador 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo 4 del sombreador (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

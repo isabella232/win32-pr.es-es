@@ -1,7 +1,7 @@
 ---
 description: Cierra el administrador de OC.
 ms.assetid: feba9954-03b2-4b57-b7ba-933e171751ff
-title: OcTerminate función)
+title: Función OcTerminate
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - OcManage.dll
-ms.openlocfilehash: 2e747c19db5e5a79e2827dc3bcfb88b97fae2ba6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 399bdb936befb4f7ff45f9f5a3b132245b984bf2a5201ce054ee0fbeb50f5598
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649649"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119833355"
 ---
-# <a name="octerminate-function"></a>OcTerminate función)
+# <a name="octerminate-function"></a>Función OcTerminate
 
 Cierra el administrador de OC.
 
@@ -42,7 +42,7 @@ VOID OcTerminate(
 *OcManagerContext* \[ in, out\]
 </dt> <dd>
 
-En la entrada, contiene el puntero de contexto del administrador de OC devuelto por [**OcInitialize**](ocinitialize.md). En la salida, recibe **null**.
+En la entrada, contiene el puntero de contexto del administrador de OC devuelto [**por OcInitialize**](ocinitialize.md). En la salida, recibe **NULL.**
 
 </dd> </dl>
 
@@ -50,15 +50,15 @@ En la entrada, contiene el puntero de contexto del administrador de OC devuelto 
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función no tiene asociado ningún archivo de encabezado o biblioteca de importación. debe llamarlo mediante las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Esta función no tiene asociada la biblioteca de importación ni el archivo de encabezado; Debe llamarlo mediante las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**y GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------|-----------------------------------------------------------------------------------------|
 | Archivo DLL<br/> | <dl> <dt>OcManage.dll</dt> </dl> |
 

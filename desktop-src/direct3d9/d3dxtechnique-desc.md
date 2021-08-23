@@ -1,7 +1,7 @@
 ---
 description: Describe una técnica utilizada por un efecto.
 ms.assetid: 7ba2dbb3-8039-4d1c-ad9d-130d9bf3d80a
-title: D3DXTECHNIQUE_DESC estructura (D3dx9effect. h)
+title: D3DXTECHNIQUE_DESC estructura (D3dx9effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9effect.h
-ms.openlocfilehash: 35dd483a983f17371d6a77e6c020b3a45d9e9360
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7e835c0eac067825942568464df8d5d345a06b530b71b7eaf7f319eae5f5d366
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104083716"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119630735"
 ---
 # <a name="d3dxtechnique_desc-structure"></a>D3DXTECHNIQUE \_ DESC (estructura)
 
@@ -52,31 +52,31 @@ Cadena que contiene el nombre de la técnica.
 
 </dd> <dt>
 
-**Paso**
+**Pasa**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Número de pasos de representación que requiere la técnica. Vea la sección Comentarios.
+El número de representaciones pasa lo que requiere la técnica. Vea la sección Comentarios.
 
 </dd> <dt>
 
-**Anotaciones**
+**anotaciones**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Número de anotaciones. Consulte [Agregar información a los parámetros de efectos con \_ anotaciones](using-an-effect.md).
+Número de anotaciones. Vea [Agregar información a parámetros de efecto con \_ anotaciones](using-an-effect.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Algunas tarjetas de vídeo pueden representar dos texturas en un solo paso. Sin embargo, si una tarjeta no tiene esta capacidad, a menudo es posible representar el mismo efecto en dos pasos, utilizando una textura para cada paso.
+Algunas tarjetas de vídeo pueden representar dos texturas en un solo paso. Sin embargo, si una tarjeta no tiene esta funcionalidad, a menudo es posible representar el mismo efecto en dos pases, con una textura para cada paso.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -84,7 +84,7 @@ Algunas tarjetas de vídeo pueden representar dos texturas en un solo paso. Sin 
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9effect. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9effect.h</dt> </dl> |
 
 
 
@@ -92,7 +92,7 @@ Algunas tarjetas de vídeo pueden representar dos texturas en un solo paso. Sin 
 
 <dl> <dt>
 
-[Estructuras de efectos](dx9-graphics-reference-effects-structures.md)
+[Estructuras de efecto](dx9-graphics-reference-effects-structures.md)
 </dt> </dl>
 
  

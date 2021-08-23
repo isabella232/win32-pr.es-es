@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: ee4e8ae904292bae06770f23cf6c853d5e5448bd
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 85423711ff62cb1005151173a42451eb57af67ecb378f14a74ce2a5d2f441ea2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119693885"
 ---
 # <a name="modifyservicesettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método ModifyServiceSettings de la clase Msvm \_ VirtualSystemManagementService
 
@@ -99,7 +99,7 @@ Este método devuelve uno de los valores siguientes.
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-**El sistema no está** disponible (32777)
+**El sistema no está disponible** (32777)
 </dt> <dt>
 
 **Memoria sin memoria** (32778)
@@ -107,7 +107,7 @@ Este método devuelve uno de los valores siguientes.
 
 ## <a name="remarks"></a>Comentarios
 
-El acceso a la [**clase \_ VirtualSystemManagementService de Msvm**](msvm-virtualsystemmanagementservice.md) podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
+El acceso a [**la clase Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -115,15 +115,15 @@ El acceso a la [**clase \_ VirtualSystemManagementService de Msvm**](msvm-virtua
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 8 solo \[ aplicaciones de escritorio\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
 | Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

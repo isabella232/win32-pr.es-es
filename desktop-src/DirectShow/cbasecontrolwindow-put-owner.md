@@ -1,7 +1,7 @@
 ---
-description: El \_ método put Owner establece la ventana primaria de la ventana de vídeo; a continuación, la ventana primaria reenvía determinados mensajes a la ventana de vídeo.
+description: El método put Owner establece la ventana primaria de la ventana de vídeo; a continuación, la ventana primaria \_ reenvía determinados mensajes a la ventana de vídeo.
 ms.assetid: 8ed85cb0-47be-40c1-947a-dd9f7850d867
-title: Método CBaseControlWindow.put_Owner (Ctlutil. h)
+title: CBaseControlWindow.put_Owner método (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 16817d1c3f0fbdf756f6c054b875b8507fd1172a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8f33e0c26506faea93afc11f51aaba13007c443fc011839efafce436fe9f2b2d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661144"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119635904"
 ---
-# <a name="cbasecontrolwindowput_owner-method"></a>CBaseControlWindow. put ( \_ método de propietario)
+# <a name="cbasecontrolwindowput_owner-method"></a>CBaseControlWindow.put \_ Owner (método)
 
-El `put_Owner` método establece la ventana primaria de la ventana de vídeo; a continuación, la ventana primaria reenvía determinados mensajes a la ventana de vídeo.
+El método establece la ventana primaria de la ventana de vídeo; a continuación, la `put_Owner` ventana primaria reenvía determinados mensajes a la ventana de vídeo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,13 +51,13 @@ Identificador de la ventana primaria.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve NoError.
+Devuelve NOERROR.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Internamente, este método llama a la función **SetParent** de Microsoft Win32 para establecer el nuevo propietario y establece el estilo de la ventana primaria en WS \_ Child. A continuación, la ventana primaria reenvía determinados conjuntos de mensajes (en particular, los mensajes del mouse y del teclado) a la ventana de vídeo.
+Internamente, este método llama a la función **SetParent** de Microsoft Win32 para establecer el nuevo propietario y establece el estilo de la ventana primaria en WS \_ CHILD. A continuación, la ventana primaria reenviará determinados conjuntos de mensajes (en particular, mensajes del mouse y del teclado) a la ventana de vídeo.
 
-Después de establecer el propietario de la ventana de vídeo, debe establecer el propietario en **null** y el estilo de ventana del propietario en WS \_ OVERLAPPED y WS \_ CLIPCHILDREN antes de liberar el gráfico de filtro. Cuando se establece el propietario en **null**, este método desactiva el bit de WS secundario de la ventana primaria \_ . Si no establece el propietario en **null**, la ventana primaria seguirá transmitiendo mensajes a la ventana de vídeo y es probable que se produzcan errores cuando se cierre la aplicación.
+Después de establecer el propietario de la ventana de vídeo, debe establecer el propietario en **NULL** y el estilo de ventana del propietario en WS OVERLAPPED y WS CLIPCHILDREN antes de liberar el gráfico \_ \_ de filtros. Al establecer el propietario en **NULL,** este método desactiva el bit WS CHILD de la \_ ventana primaria. Si no establece el propietario en **NULL,** la ventana primaria seguirá pasando mensajes a la ventana de vídeo y es probable que se produzcan errores cuando se cierre la aplicación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ Después de establecer el propietario de la ventana de vídeo, debe establecer e
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -74,7 +74,7 @@ Después de establecer el propietario de la ventana de vídeo, debe establecer e
 
 <dl> <dt>
 
-[**Clase CBaseControlWindow**](cbasecontrolwindow.md)
+[**CBaseControlWindow (clase)**](cbasecontrolwindow.md)
 </dt> </dl>
 
  

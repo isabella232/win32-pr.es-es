@@ -1,5 +1,5 @@
 ---
-description: 'Método CBaseFilter.StreamTime: el método StreamTime recupera el tiempo de transmisión actual.'
+description: 'Método CBaseFilter.StreamTime: el método StreamTime recupera el tiempo de secuencia actual.'
 ms.assetid: 88a2939d-fb51-49fd-af71-21c99511de43
 title: Método CBaseFilter.StreamTime (Amfilter.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f3334ac273a733c3f0591b76af7e76460997a199
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: af266e22cb8ee5a2ff5d5d233dc6cfc623e37cd0d34c073db4dbab71d9c221ff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108120073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119635485"
 ---
 # <a name="cbasefilterstreamtime-method"></a>Método CBaseFilter.StreamTime
 
@@ -66,7 +66,7 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los enumerados en l
 
 ## <a name="remarks"></a>Comentarios
 
-La hora de la secuencia se define como la hora de referencia actual (según lo indicado por el reloj de referencia) menos la hora de inicio (especificada por [**CBaseFilter::m \_ tStart**](cbasefilter-m-tstart.md)). La marca de tiempo de *un ejemplo multimedia* especifica el tiempo de secuencia en el que se debe representar. Si aún no se ha representado un ejemplo con una marca de tiempo inferior a la hora de transmisión actual, es tarde.
+La hora de la secuencia se define como la hora de referencia actual (según lo indicado por el reloj de referencia) menos la hora de inicio (especificada por [**CBaseFilter::m \_ tStart).**](cbasefilter-m-tstart.md) La marca de tiempo de *un ejemplo multimedia* especifica el tiempo de secuencia en el que se debe representar. Si aún no se ha representado una muestra con una marca de tiempo inferior a la hora de transmisión actual, es tarde.
 
 Este método obtiene el tiempo de secuencia llamando a [**IReferenceClock::GetTime**](/windows/desktop/api/Strmif/nf-strmif-ireferenceclock-gettime) para obtener la hora de referencia actual y restando la hora de inicio inicial.
 
@@ -76,12 +76,12 @@ Este método obtiene el tiempo de secuencia llamando a [**IReferenceClock::GetTi
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

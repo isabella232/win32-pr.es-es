@@ -1,29 +1,29 @@
 ---
-description: Generado por un receptor de flujo cuando completa la transición al estado detenido. La transición a Stopped se produce cuando se llama al método STOP IMFPresentationClock en el reloj de la presentación de receptores.
+description: Lo genera un receptor de flujo cuando completa la transición al estado detenido. La transición a detenido se produce cuando se llama al método IMFPresentationClock Stop en el reloj de presentación de receptores.
 ms.assetid: 1a8c7faa-4d4a-4458-ad08-a760a15dc347
-title: Evento MEStreamSinkStopped (Mfobjects. h)
+title: Evento MEStreamSinkStopped (Mfobjects.h)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e35313ab3d43c950184a82e403fa6ad0eb5b4ab4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8d7bf6a39dca8f50fed8fdd1d0137405225624999fab42771e485174ba4f0afa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104082970"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119715105"
 ---
 # <a name="mestreamsinkstopped-event"></a>Evento MEStreamSinkStopped
 
-Generado por un receptor de flujo cuando completa la transición al estado detenido. La transición a Stopped se produce cuando se llama al método [**IMFPresentationClock:: Stop**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationclock-stop) en el reloj de presentación del receptor.
+Lo genera un receptor de flujo cuando completa la transición al estado detenido. La transición a detenido se produce cuando se llama al método [**IMFPresentationClock::Stop**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationclock-stop) en el reloj de presentación del receptor.
 
 ## <a name="event-values"></a>Valores de evento
 
-Los valores posibles recuperados de [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) son los siguientes.
+Entre los valores posibles recuperados [**de IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) se incluyen los siguientes.
 
 
 
 | VARTYPE              | Descripción                           |
 |----------------------|---------------------------------------|
-| VT \_ vacío<br/> | Sin datos del evento.<br/> <br/> |
+| VT \_ EMPTY<br/> | Sin datos del evento.<br/> <br/> |
 
 
 
@@ -33,9 +33,9 @@ Los valores posibles recuperados de [**IMFMediaEvent:: GetValue**](/windows/desk
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Mfobjects. h (incluye Mfidl. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Mfobjects.h (incluir Mfidl.h)</dt> </dl> |
 
 
 
@@ -43,7 +43,7 @@ Los valores posibles recuperados de [**IMFMediaEvent:: GetValue**](/windows/desk
 
 <dl> <dt>
 
-[Eventos de Media Foundation](media-foundation-events.md)
+[Media Foundation eventos](media-foundation-events.md)
 </dt> <dt>
 
 [Receptores de medios](media-sinks.md)

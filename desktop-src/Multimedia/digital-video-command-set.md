@@ -4,12 +4,12 @@ description: Digital-Video conjunto de comandos
 ms.assetid: 408587b1-3ead-4720-a063-5fb749273043
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a37e093b1363fdf8485f63be803a2fce1627706
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c3b17c57bf6aa6c00fcf075492a1be9691925ddf569f54c456d0259175faecd7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104076094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119678875"
 ---
 # <a name="digital-video-command-set"></a>Digital-Video conjunto de comandos
 
@@ -17,56 +17,56 @@ Los dispositivos de vídeo digital (por ejemplo, el controlador MCIAVI) admiten 
 
 
 
-| Forma de cadena                      | Formulario de mensaje                              |
+| Formulario de cadena                      | Formulario de mensaje                              |
 |----------------------------------|-------------------------------------------|
-| [**break**](break.md)           | [**interrupción de MCI \_**](mci-break.md)           |
-| [**pueda**](capability.md) | [**MCI \_ GETDEVCAPS**](mci-getdevcaps.md) |
-| [**grabar**](capture.md)       | [**captura de MCI \_**](mci-capture.md)       |
-| [**cercanos**](close.md)           | [**\_cerrar MCI**](mci-close.md)           |
-| [**configurar**](configure.md)   | [**configuración de MCI \_**](mci-configure.md)   |
-| [**copiar**](copy.md)             | [**copia de MCI \_**](mci-copy.md)             |
-| [**indicación**](cue.md)               | [**\_pista MCI**](mci-cue.md)               |
-| [**límite**](cut.md)               | [**corte de MCI \_**](mci-cut.md)               |
-| [**elimínelos**](delete.md)         | [**eliminación de MCI \_**](mci-delete.md)         |
-| [**Inmovilice**](freeze.md)         | [**inmovilización de MCI \_**](mci-freeze.md)         |
-| [**superclase**](info.md)             | [**información de MCI \_**](mci-info.md)             |
-| [**list**](list.md)             | [**lista de MCI \_**](mci-list.md)             |
-| [**Dataloader**](load.md)             | [**carga de MCI \_**](mci-load.md)             |
-| [**control**](monitor.md)       | [**MONITOR de MCI \_**](mci-monitor.md)       |
-| [**Ábra**](open.md)             | [**MCI \_ abierto**](mci-open.md)             |
-| [**copiar**](paste.md)           | [**\_pegar MCI**](mci-paste.md)           |
-| [**temporalmente**](pause.md)           | [**pausa de MCI \_**](mci-pause.md)           |
-| [**reproducción**](play.md)             | [**reproducción de MCI \_**](mci-play.md)             |
-| [**pondrán**](put.md)               | [**colocación de MCI \_**](mci-put.md)               |
-| [**calidad**](quality.md)       | [**calidad de MCI \_**](mci-quality.md)       |
-| [**alcanzar**](realize.md)       | [**\_obtener MCI**](mci-realize.md)       |
-| [**registro**](record.md)         | [**registro de MCI \_**](mci-record.md)         |
-| [**reserva**](reserve.md)       | [**Reserva de MCI \_**](mci-reserve.md)       |
-| [**restaurar**](restore.md)       | [**restauración de MCI \_**](mci-restore.md)       |
-| [**Recuper**](resume.md)         | [**\_reanudación de MCI**](mci-resume.md)         |
-| [**guardar**](save.md)             | [**\_Guardar MCI**](mci-save.md)             |
-| [**desean**](seek.md)             | [**búsqueda de MCI \_**](mci-seek.md)             |
-| [**set**](set.md)               | [**MCI \_ set**](mci-set.md)               |
+| [**Romper**](break.md)           | [**MCI \_ BREAK**](mci-break.md)           |
+| [**Capacidad**](capability.md) | [**MCI \_ GETDEVCAPS**](mci-getdevcaps.md) |
+| [**capturar**](capture.md)       | [**CAPTURA \_ DE MCI**](mci-capture.md)       |
+| [**Cerca**](close.md)           | [**MCI \_ CLOSE**](mci-close.md)           |
+| [**Configurar**](configure.md)   | [**MCI \_ CONFIGURE**](mci-configure.md)   |
+| [**Copia**](copy.md)             | [**COPIA \_ de MCI**](mci-copy.md)             |
+| [**Cue**](cue.md)               | [**MCI \_ CUE**](mci-cue.md)               |
+| [**Cortar**](cut.md)               | [**MCI \_ CUT**](mci-cut.md)               |
+| [**Eliminar**](delete.md)         | [**MCI \_ DELETE**](mci-delete.md)         |
+| [**Congelar**](freeze.md)         | [**MCI \_ FREEZE**](mci-freeze.md)         |
+| [**Información**](info.md)             | [**INFORMACIÓN \_ de MCI**](mci-info.md)             |
+| [**list**](list.md)             | [**LISTA \_ DE MCI**](mci-list.md)             |
+| [**Carga**](load.md)             | [**MCI \_ LOAD**](mci-load.md)             |
+| [**Monitor**](monitor.md)       | [**MCI \_ MONITOR**](mci-monitor.md)       |
+| [**abierto**](open.md)             | [**MCI \_ OPEN**](mci-open.md)             |
+| [**pegar**](paste.md)           | [**PEGAR \_ MCI**](mci-paste.md)           |
+| [**Pausa**](pause.md)           | [**PAUSA \_ DE MCI**](mci-pause.md)           |
+| [**Jugar**](play.md)             | [**MCI \_ PLAY**](mci-play.md)             |
+| [**Poner**](put.md)               | [**MCI \_ PUT**](mci-put.md)               |
+| [**Calidad**](quality.md)       | [**MCI \_ QUALITY**](mci-quality.md)       |
+| [**darse cuenta de**](realize.md)       | [**MCI \_ REALIZE**](mci-realize.md)       |
+| [**grabar**](record.md)         | [**REGISTRO \_ de MCI**](mci-record.md)         |
+| [**reserva**](reserve.md)       | [**MCI \_ RESERVE**](mci-reserve.md)       |
+| [**restaurar**](restore.md)       | [**RESTAURACIÓN DE MCI \_**](mci-restore.md)       |
+| [**Reanudar**](resume.md)         | [**MCI \_ RESUME**](mci-resume.md)         |
+| [**Salvar**](save.md)             | [**MCI \_ SAVE**](mci-save.md)             |
+| [**Buscar**](seek.md)             | [**MCI \_ SEEK**](mci-seek.md)             |
+| [**Establecer**](set.md)               | [**MCI \_ SET**](mci-set.md)               |
 | [**setaudio**](setaudio.md)     | [**MCI \_ SETAUDIO**](mci-setaudio.md)     |
 | [**setvideo**](setvideo.md)     | [**MCI \_ SETVIDEO**](mci-setvideo.md)     |
-| [**marcar**](signal.md)         | [**señal de MCI \_**](mci-signal.md)         |
-| [**status**](status.md)         | [**Estado de MCI \_**](mci-status.md)         |
-| [**pasar**](step.md)             | [**\_paso MCI**](mci-step.md)             |
-| [**detener**](stop.md)             | [**detención de MCI \_**](mci-stop.md)             |
-| [sysinfo](sysinfo.md)           | [**MCI \_ SYSINFO**](mci-sysinfo.md)       |
-| [**hacer**](undo.md)             | [**deshacer MCI \_**](mci-undo.md)             |
-| [**liberar**](unfreeze.md)     | [**desbloqueo de MCI \_**](mci-unfreeze.md)     |
-| [**Update**](update.md)         | [**actualización de MCI \_**](mci-update.md)         |
-| [**where**](where.md)           | [**MCI \_ donde**](mci-where.md)           |
-| [**ventana**](window.md)         | [**\_ventana MCI**](mci-window.md)         |
+| [**signal**](signal.md)         | [**MCI \_ SIGNAL**](mci-signal.md)         |
+| [**status**](status.md)         | [**ESTADO \_ DE MCI**](mci-status.md)         |
+| [**Paso**](step.md)             | [**PASO \_ de MCI**](mci-step.md)             |
+| [**Parada**](stop.md)             | [**MCI \_ STOP**](mci-stop.md)             |
+| [Sysinfo](sysinfo.md)           | [**SYSINFO de MCI \_**](mci-sysinfo.md)       |
+| [**Deshacer**](undo.md)             | [**MCI \_ UNDO**](mci-undo.md)             |
+| [**Descongelar**](unfreeze.md)     | [**MCI \_ UNFREEZE**](mci-unfreeze.md)     |
+| [**actualizar**](update.md)         | [**ACTUALIZACIÓN \_ de MCI**](mci-update.md)         |
+| [**Dónde**](where.md)           | [**MCI \_ WHERE**](mci-where.md)           |
+| [**Ventana**](window.md)         | [**VENTANA \_ MCI**](mci-window.md)         |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,24 +1,24 @@
 ---
-description: Se recomienda que todas las suscripciones permanentes se compilen en el espacio de nombres de la \\ \\ suscripción raíz.
+description: Se recomienda compilar todas las suscripciones permanentes en el espacio \\ de nombres de la suscripción \\ raíz.
 ms.assetid: 6d4ccc86-f29f-4ca5-bea5-c77ee07d7789
 ms.tgt_platform: multiple
 title: Implementación de suscripciones de eventos permanentes entre espacios de nombres
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 52771e40d4dfb036354c3b37b562b32edd3034ba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4b175f89a4a686aa47818daf3479d521306f6190fb245222c4c21c17ca6470dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716559"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119757955"
 ---
 # <a name="implementing-cross-namespace-permanent-event-subscriptions"></a>Implementación de suscripciones de eventos permanentes entre espacios de nombres
 
-Se recomienda que todas las suscripciones permanentes se compilen en el espacio de nombres de la \\ \\ suscripción raíz. Esto evita la necesidad de compilar el consumidor permanente en cada espacio de nombres que se está usando, lo que significa que solo hay un espacio de nombres para buscar suscripciones permanentes. Use la propiedad **EventNamespace** de [**\_ \_ EventFilter**](--eventfilter.md) para implementar una suscripción entre espacios de nombres.
+Se recomienda compilar todas las suscripciones permanentes en el espacio \\ de nombres de la suscripción \\ raíz. Esto evita la necesidad de compilar el consumidor permanente en cada espacio de nombres que se usa, lo que significa que solo hay un espacio de nombres para buscar suscripciones permanentes. Use la **propiedad EventNamespace** de [**\_ \_ EventFilter**](--eventfilter.md) para implementar una suscripción entre espacios de nombres.
 
-Cuando se usa [**CommandLineEventConsumer**](commandlineeventconsumer.md), es importante proteger el archivo ejecutable que se está iniciando. Si el archivo ejecutable no está en una ubicación segura o está protegido con una lista de control de acceso (ACL) segura, cualquiera puede reemplazar el ejecutable por uno propio. Para obtener más información acerca de las ACL, vea [crear un descriptor de seguridad para un nuevo objeto en C++](/windows/desktop/SecAuthZ/creating-a-security-descriptor-for-a-new-object-in-c--).
+Cuando se usa [**CommandLineEventConsumer,**](commandlineeventconsumer.md)es importante proteger el ejecutable que se va a iniciar. Si el ejecutable no está en una ubicación segura o está protegido con una lista de control de acceso seguro (ACL), cualquiera puede reemplazar el ejecutable por uno de los suyos propios. Para obtener más información sobre las ACL, vea [Crear un descriptor de seguridad para un nuevo objeto en C++.](/windows/desktop/SecAuthZ/creating-a-security-descriptor-for-a-new-object-in-c--)
 
-En el siguiente ejemplo de código de Managed Object Format (MOF) se muestra una suscripción entre espacios de nombres.
+En el siguiente Managed Object Format de código de Managed Object Format (MOF) se muestra una suscripción entre espacios de nombres.
 
 ``` syntax
 #pragma namespace("\\root\\subscription")
