@@ -11,7 +11,7 @@
           href: '-search-3x-wds-included-in-index.md'
         - name: Proceso de indexación en Windows Search
           href: '-search-indexing-process-overview.md'
-        - name: Consulta del proceso en Windows Search
+        - name: Proceso de consulta en Windows Búsqueda
           href: querying-process--windows-search-.md
         - name: Proceso de notificaciones en Windows Search
           href: '-search-3x-wds-support.md'
@@ -19,15 +19,15 @@
           href: url-formatting-requirements.md
         - name: Novedades de Windows 7 Search
           href: new-for-windows-7-search.md
-        - name: Indexación de los eventos de priorización y de conjunto de filas en Windows 7
+        - name: Indexación de prioridad y eventos de conjunto de filas en Windows 7
           href: indexing-prioritization-and-rowset-events.md
-        - name: Bibliotecas de Shell de Windows
+        - name: Windows Bibliotecas de shell
           href: '-search-win7-development-scenarios.md'
-        - name: Idiomas admitidos por búsqueda de Windows
+        - name: Idiomas admitidos por Windows Search
           href: '-search-3x-wds-language-support.md'
         - name: Uso de código administrado con datos de shell y Windows Search
           href: '-search-3x-wds-managed-code.md'
-    - name: Guía del desarrollador de Windows Search
+    - name: Windows Guía del desarrollador de búsqueda
       href: '-search-developers-guide-entry-page.md'
       items:
         - name: Administración del índice
@@ -35,128 +35,128 @@
           items:
             - name: Interfaces para administrar el índice
               href: interfaces-for-managing-the-index.md
-            - name: Usar el administrador de búsqueda
+            - name: Uso del Administrador de búsqueda
               href: '-search-3x-wds-mngidx-searchmanager.md'
-            - name: Usar el administrador de catálogos
+            - name: Uso del Administrador de catálogos
               href: '-search-3x-wds-mngidx-catalog-manager.md'
-            - name: Usar el administrador de ámbito de rastreo
+            - name: Uso del Administrador del ámbito de rastreo
               href: '-search-3x-wds-extidx-csm.md'
               items:
                 - name: Administración de raíces de búsqueda
                   href: '-search-3x-wds-extidx-csm-searchroots.md'
-                - name: Administrar reglas de ámbito
+                - name: Administración de reglas de ámbito
                   href: '-search-3x-wds-extidx-csm-scoperules.md'
         - name: Consulta del índice mediante programación
           href: '-search-3x-wds-qryidx-overview.md'
           items:
-            - name: Uso de enfoques de SQL y AQS para consultar el índice
+            - name: Usar SQL y enfoques de AQS para consultar el índice
               href: using-sql-and-aqs-to-query-the-index.md
-            - name: Consultar el índice con ISearchQueryHelper
+            - name: Consulta del índice con ISearchQueryHelper
               href: '-search-3x-wds-qryidx-searchqueryhelper.md'
-            - name: Consultar el índice con el protocolo Search-MS
+            - name: Consulta del índice con el protocolo search-ms
               href: '-search-3x-wds-qryidx-searchms.md'
               items:
-                - name: Introducción con argumentos de Parameter-Value
+                - name: Tareas iniciales con Parameter-Value argumentos
                   href: getting-started-with-parameter-value-arguments.md
-                - name: Argumentos de identificador de configuración regional
+                - name: Argumentos del identificador de configuración regional
                   href: '-search-3x-wds-qryidx-localeidentifiers.md'
-                - name: Argumento de MIGAs de
+                - name: Argumento CRUMB
                   href: '-search-3x-wds-qryidx-crumb.md'
-                - name: Argumento de sintaxis
+                - name: Argumento SYNTAX
                   href: '-search-3x-wds-qryidx-syntaxargument.md'
                 - name: Argumento STACKEDBY
                   href: '-search-3x-wds-qryidx-stackedby.md'
-                - name: Argumento de subconsulta
+                - name: Argumento SUBQUERY
                   href: '-search-3x-wds-qryidx-subquery.md'
-            - name: Consultar el índice con la sintaxis SQL de Windows Search
+            - name: Consulta del índice con la sintaxis Windows search SQL búsqueda
               href: '-search-sql-windowssearch-entry.md'
               items:
-                - name: Información general sobre la sintaxis SQL de búsqueda de Windows
+                - name: Información general sobre la Windows de SQL búsqueda
                   href: '-search-sql-ovwofsearchquery.md'
                 - name: Información general del lenguaje de consulta
                   href: '-search-sql-generalqueryinfo.md'
                   items:
-                    - name: Extensiones SQL en Microsoft Search
+                    - name: SQL Extensiones en Microsoft Windows Search
                       href: '-search-sql-extensions-sps.md'
-                    - name: Características de SQL no disponibles en Microsoft Search
+                    - name: SQL Características no disponibles en Microsoft Windows Search
                       href: '-search-sql-featuresunavailableinspssearch.md'
                     - name: Identificadores
                       href: '-search-sql-identifiers.md'
                     - name: Literales
                       href: '-search-sql-literals.md'
-                    - name: Distinción de mayúsculas y minúsculas en búsquedas
+                    - name: Confidencialidad de mayúsculas y minúsculas en las búsquedas
                       href: '-search-sql-casesensitivityinsearches.md'
-                    - name: Sensibilidad diacrítica en las búsquedas
+                    - name: Confidencialidad diacrítica en las búsquedas
                       href: '-search-sql-accentinsensitivitysearches.md'
-                    - name: Conversión del tipo de datos de una columna
+                    - name: Convertir el tipo de datos de una columna
                       href: '-search-sql-castingdatacolumntype.md'
-                    - name: Asignaciones de tipos de datos
+                    - name: Asignaciones de tipo de datos
                       href: '-search-sql-datatypemappings.md'
                     - name: Descripción de los valores de relevancia
                       href: '-search-sql-understandingrelevancevalues.md'
                     - name: Uso de búsquedas localizadas
                       href: '-search-sql-usinglocsearches.md'
                       items:
-                        - name: Configuración regional del sistema y del documento
+                        - name: Document and System Locale Configuración
                           href: '-search-sql-docandlocalesystemsettings.md'
                         - name: Especificar idiomas
                           href: '-search-sql-specifyinglanguages.md'
-                - name: AGRUPAR POR... MÁS DE... Privacidad
+                - name: GROUP ON ... Sobre... Declaración
                   href: '-search-sql-group-on-over.md'
                   items:
-                    - name: ORDER IN GROUP (cláusula)
+                    - name: CLÁUSULA ORDER IN GROUP
                       href: '-search-sql-orderingroup.md'
                     - name: Funciones de agregado
                       href: '-search-sql-aggregates.md'
                 - name: Instrucción SELECT
                   href: '-search-sql-select.md'
-                - name: Cláusula FROM
+                - name: FROM (Cláusula)
                   href: '-search-sql-from.md'
                 - name: DONDE cláusula
                   href: '-search-sql-where.md'
                   items:
-                    - name: ReuseWhere función)
+                    - name: ReuseWhere (Función)
                       href: '-search-sql-reusewhere.md'
-                    - name: Predicados de ámbito y directorio
+                    - name: Predicados SCOPE y DIRECTORY
                       href: '-search-sql-folderdepth.md'
-                    - name: CON el predicado de alias de grupo AS
+                    - name: 'WITH : predicado de alias de grupo de AS'
                       href: '-search-sql-with-as.md'
-                    - name: Predicados de Full-Text
+                    - name: Full-Text predicados
                       href: '-search-sql-fulltextpredicates.md'
                       items:
-                        - name: Predicado CONTAINS
+                        - name: CONTAINS Predicate
                           href: '-search-sql-contains.md'
                           items:
                             - name: Usar caracteres comodín en el predicado CONTAINS
                               href: '-search-sql-wildcards.md'
-                            - name: Términos de FORMs
+                            - name: Término FORMSOF
                               href: '-search-sql-formsof.md'
-                            - name: Término ISABOUT
+                            - name: ISABOUT Term
                               href: '-search-sql-isabout.md'
-                            - name: A corto plazo
+                            - name: NEAR Term
                               href: '-search-sql-near.md'
                         - name: Predicado FREETEXT
                           href: '-search-sql-freetext.md'
                     - name: Predicados que no son de texto completo
                       href: '-search-sql-nonfulltextpredicates.md'
                       items:
-                        - name: Todos los SOME_BITWISE bit a bit y
+                        - name: TODOS BIT A BIT y SOME_BITWISE
                           href: all-bitwise.md
                         - name: Función DATEADD
                           href: '-search-sql-dateadd.md'
-                        - name: LIKE (predicado)
+                        - name: Predicado LIKE
                           href: '-search-sql-like.md'
                         - name: Comparación de valores literales
                           href: '-search-sql-literalvaluecomparison.md'
-                        - name: Comparaciones de varios valores (matriz)
+                        - name: Comparaciones multivalor (ARRAY)
                           href: '-search-sql-multivaluedcomparisons.md'
                         - name: Predicado NULL
                           href: '-search-sql-null.md'
                 - name: Cláusula ORDER BY
                   href: '-search-sql-orderby.md'
-                - name: RANK BY (cláusula)
+                - name: Cláusula RANK BY
                   href: '-search-sql-rankby.md'
-                - name: SET (instrucción)
+                - name: Set (Instrucción)
                   href: '-search-sql-set.md'
                 - name: Propiedades del conjunto de filas
                   href: '-search-sql-rowset-properties.md'
@@ -165,65 +165,65 @@
         - name: Extender el índice
           href: '-search-3x-wds-extidx-overview.md'
           items:
-            - name: Desarrollar controladores de filtro para Windows Search
+            - name: Desarrollar controladores de filtro para la Windows búsqueda
               href: '-search-ifilter-conceptual.md'
               items:
-                - name: Descripción de los controladores de filtro en Windows Search
+                - name: Descripción de los controladores de filtros en Windows búsqueda
                   href: '-search-ifilter-about.md'
-                - name: Prácticas recomendadas para crear controladores de filtro en Windows Search
+                - name: Procedimientos recomendados para crear controladores de filtro en Windows búsqueda
                   href: '-search-3x-wds-extidx-filters.md'
-                - name: Devolver propiedades de un controlador de filtro
+                - name: Devolver propiedades de un controlador de filtros
                   href: '-search-ifilter-property-filtering.md'
-                - name: Controladores de filtro que se distribuyen con Windows
+                - name: Controladores de filtro que se envían con Windows
                   href: '-search-ifilter-implementations.md'
-                - name: Implementar controladores de filtro en Windows Search
+                - name: Implementar controladores de filtro en la Windows búsqueda
                   href: '-search-ifilter-constructing-filters.md'
-                - name: Registrar controladores de filtro
+                - name: Registro de controladores de filtro
                   href: '-search-ifilter-registering-filters.md'
                 - name: Probar controladores de filtro
                   href: '-search-ifilter-testing-filters.md'
-            - name: Desarrollar controladores de propiedades para Windows Search
+            - name: Desarrollar controladores de propiedades para Windows búsqueda
               href: '-search-3x-wds-extidx-propertyhandlers.md'
               items:
-                - name: System-Defined propiedades de los formatos de archivo personalizados
+                - name: System-Defined propiedades para formatos de archivo personalizados
                   href: '-shell-systemdefinedpropertiesforfileformats.md'
-            - name: Desarrollo de controladores de protocolo para Windows Search
+            - name: Desarrollar controladores de protocolo para Windows búsqueda
               href: '-search-3x-wds-phaddins.md'
               items:
                 - name: Descripción de los controladores de protocolo
                   href: '-search-3x-wds-extidx-prot-implementing.md'
-                - name: Notificar el índice de cambios
+                - name: Notificación al índice de cambios
                   href: '-search-3x-wds-notifyingofchanges.md'
                 - name: 'Agregar iconos, vistas previas y menús contextuales'
                   href: '-search-3x-wds-ph-ui-extensions.md'
-                - name: 'Código de ejemplo: extensiones de Shell para controladores de protocolo'
+                - name: 'Ejemplo de código: Extensiones de shell para controladores de protocolo'
                   href: '-search-3x-wds-ph-ui-samplecode.md'
-                - name: Instalar y registrar controladores de protocolo
+                - name: Instalación y registro de controladores de protocolo
                   href: '-search-3x-wds-ph-install-registration.md'
                 - name: Crear un conector de búsqueda para un controlador de protocolo
                   href: '-search-3x-wds-ph-search-connector.md'
-                - name: Controladores de protocolo de depuración
+                - name: Depuración de controladores de protocolo
                   href: '-search-ws-protocolhandlertesting.md'
-        - name: Extensión de recursos de idioma
+        - name: Extensión de recursos de lenguaje
           href: extending-language-resources-in-windows-search.md
           items:
             - name: Descripción de los componentes de recursos de lenguaje
               href: understanding-language-resource-components.md
-            - name: Implementar un separador de palabras y un analizador lingüístico
+            - name: Implementar un separador de palabras y un lematizador
               href: implementing-a-word-breaker-and-stemmer.md
             - name: Consideraciones lingüísticas y Unicode
               href: linguistic-and-unicode-considerations.md
               items:
-                - name: Normalización del formulario de superficie
+                - name: Normalización de formularios surface
                   href: surface-form-normalization.md
-                - name: Consideraciones lingüísticas y Unicode misceláneas
+                - name: Varias consideraciones lingüísticas y Unicode
                   href: miscellaneous-linguistic-and-unicode-considerations.md
             - name: Solución de problemas de recursos de lenguaje y procedimientos recomendados
               href: troubleshooting-language-resources.md
-    - name: Referencia de Windows Search
+    - name: Windows Referencia de búsqueda
       href: '-search-reference-entry-page.md'
       items:
-        - name: Interfaces de Windows Search
+        - name: Windows Interfaces de búsqueda
           href: '-search-interfaces-entry-page.md'
           items:
             - name: Interfaces de controladores de protocolo
@@ -232,9 +232,9 @@
                 - name: IItemPropertyBag
                   href: iitempropertybag.md
                   items:
-                    - name: Método Countproperties (
+                    - name: Método CountProperties
                       href: /previous-versions/windows/desktop/legacy/ff684387(v=vs.85)
-                    - name: Método GetPropertyInfo
+                    - name: GetPropertyInfo (método)
                       href: iitempropertybag-getpropertyinfo.md
                     - name: Método Read
                       href: iitempropertybag-read.md
@@ -254,12 +254,12 @@
                   items:
                     - name: CreateAccessor
                       href: /previous-versions/windows/desktop/legacy/bb231445(v=vs.85)
-                    - name: 0x%08x
+                    - name: GetFilter
                       href: /previous-versions/windows/desktop/legacy/bb231446(v=vs.85)
                 - name: IProtocolHandlerSite
                   href: /windows/desktop/api/Searchapi/nn-searchapi-iprotocolhandlersite
                   items:
-                    - name: 0x%08x
+                    - name: GetFilter
                       href: /windows/desktop/api/Searchapi/nf-searchapi-iprotocolhandlersite-getfilter
                 - name: ISearchProtocol
                   href: /windows/desktop/api/Searchapi/nn-searchapi-isearchprotocol
@@ -422,11 +422,11 @@
                       href: /windows/desktop/api/Structuredquery/nf-structuredquery-ientity-getnamedentity
                     - name: GetRelationship
                       href: /windows/desktop/api/Structuredquery/nf-structuredquery-ientity-getrelationship
-                    - name: Repositorio
+                    - name: Metadatos
                       href: /windows/desktop/api/Structuredquery/nf-structuredquery-ientity-metadata
                     - name: Nombre
                       href: /windows/desktop/api/Structuredquery/nf-structuredquery-ientity-name
-                    - name: NamedEntities
+                    - name: Entidades con nombre
                       href: /windows/desktop/api/Structuredquery/nf-structuredquery-ientity-namedentities
                     - name: Relaciones
                       href: /windows/desktop/api/Structuredquery/nf-structuredquery-ientity-relationships
@@ -466,7 +466,7 @@
                 - name: IQueryParser
                   href: /windows/desktop/api/Structuredquery/nn-structuredquery-iqueryparser
                   items:
-                    - name: GetOption (
+                    - name: GetOption
                       href: /windows/desktop/api/Structuredquery/nf-structuredquery-iqueryparser-getoption
                     - name: GetSchemaProvider
                       href: /windows/desktop/api/Structuredquery/nf-structuredquery-iqueryparser-getschemaprovider
@@ -480,7 +480,7 @@
                       href: /windows/desktop/api/Structuredquery/nf-structuredquery-iqueryparser-restatetostring
                     - name: SetMultiOption
                       href: /windows/desktop/api/Structuredquery/nf-structuredquery-iqueryparser-setmultioption
-                    - name: SetOption (
+                    - name: Setoption
                       href: /windows/desktop/api/Structuredquery/nf-structuredquery-iqueryparser-setoption
                 - name: IQueryParserManager
                   href: /windows/desktop/api/Structuredquery/nn-structuredquery-iqueryparsermanager
@@ -489,7 +489,7 @@
                       href: /windows/desktop/api/Structuredquery/nf-structuredquery-iqueryparsermanager-createloadedparser
                     - name: InitializeOptions
                       href: /windows/desktop/api/Structuredquery/nf-structuredquery-iqueryparsermanager-initializeoptions
-                    - name: SetOption (
+                    - name: Setoption
                       href: /windows/desktop/api/Structuredquery/nf-structuredquery-iqueryparsermanager-setoption
                 - name: IQuerySolution
                   href: /windows/desktop/api/Structuredquery/nn-structuredquery-iquerysolution
@@ -507,9 +507,9 @@
                       href: /windows/desktop/api/Structuredquery/nf-structuredquery-irelationship-defaultphrase
                     - name: Destination
                       href: /windows/desktop/api/Structuredquery/nf-structuredquery-irelationship-destination
-                    - name: IsReal
+                    - name: Isreal
                       href: /windows/desktop/api/Structuredquery/nf-structuredquery-irelationship-isreal
-                    - name: Repositorio
+                    - name: Metadatos
                       href: /windows/desktop/api/Structuredquery/nf-structuredquery-irelationship-metadata
                     - name: Nombre
                       href: /windows/desktop/api/Structuredquery/nf-structuredquery-irelationship-name
@@ -556,7 +556,7 @@
                       href: /windows/desktop/api/Structuredquery/nf-structuredquery-ischemaprovider-localize
                     - name: LookupAuthoredNamedEntity
                       href: /windows/desktop/api/Structuredquery/nf-structuredquery-ischemaprovider-lookupauthorednamedentity
-                    - name: Repositorio
+                    - name: Metadatos
                       href: /windows/desktop/api/Structuredquery/nf-structuredquery-ischemaprovider-metadata
                     - name: RootEntity
                       href: /windows/desktop/api/Structuredquery/nf-structuredquery-ischemaprovider-rootentity
@@ -722,7 +722,7 @@
                       href: /windows/desktop/api/Searchapi/nf-searchapi-isearchroot-put_rooturl
                     - name: put_Schedule
                       href: /windows/desktop/api/searchapi/nf-searchapi-isearchroot-put_schedule
-                    - name: método put_UseNotificationsOnly
+                    - name: put_UseNotificationsOnly método
                       href: /windows/desktop/api/Searchapi/nf-searchapi-isearchroot-put_usenotificationsonly
                     - name: put_User
                       href: /windows/desktop/api/searchapi/nf-searchapi-isearchroot-put_user
@@ -772,12 +772,12 @@
                   items:
                     - name: Método GetColumnMapper
                       href: /windows/desktop/api/indexsrv/nf-indexsrv-icolumnmappercreator-getcolumnmapper
-                - name: Imaging
+                - name: Ifilter
                   href: /windows/win32/api/filter/nn-filter-ifilter
                   items:
                     - name: BindRegion
                       href: /windows/win32/api/filter/nf-filter-ifilter-bindregion
-                    - name: GetChunk
+                    - name: Getchunk
                       href: /windows/win32/api/filter/nf-filter-ifilter-getchunk
                     - name: GetText
                       href: /windows/win32/api/filter/nf-filter-ifilter-gettext
@@ -797,7 +797,7 @@
                 - name: IPhraseSink
                   href: /windows/desktop/api/indexsrv/nn-indexsrv-iphrasesink
                   items:
-                    - name: Método PutPhrase
+                    - name: PutPhrase (método)
                       href: /windows/desktop/api/Indexsrv/nf-indexsrv-iphrasesink-putphrase
                     - name: Método PutSmallPhrase
                       href: /windows/desktop/api/indexsrv/nf-indexsrv-iphrasesink-putsmallphrase
@@ -841,22 +841,22 @@
                 - name: IWordFormSink
                   href: /windows/desktop/api/Indexsrv/nn-indexsrv-iwordformsink
                   items:
-                    - name: Método PutAltWord
+                    - name: PutAltWord (método)
                       href: iwordformsink-putphrase.md
-                    - name: Método PutWord
+                    - name: PutWord (método)
                       href: iwordformsink-putword.md
                 - name: IWordSink
                   href: iwordsink.md
                   items:
-                    - name: Método EndAltPhrase
+                    - name: EndAltPhrase (método)
                       href: iwordsink-endaltphrase.md
-                    - name: Método PutAltWord
+                    - name: PutAltWord (método)
                       href: iwordsink-putaltword.md
-                    - name: Método PutBreak
+                    - name: PutBreak (método)
                       href: iwordsink-putbreak.md
-                    - name: Método PutWord
+                    - name: PutWord (método)
                       href: iwordsink-putword.md
-                    - name: Método StartAltPhrase
+                    - name: StartAltPhrase (método)
                       href: iwordsink-startaltphrase.md
             - name: Interfaces de administración de índices
               href: '-search-index-mgt-interfaces-entry-page.md'
@@ -888,7 +888,7 @@
                       href: /windows/desktop/api/Searchapi/nf-searchapi-isearchcatalogmanager-get_diacriticsensitivity
                     - name: get_Name
                       href: /windows/desktop/api/Searchapi/nf-searchapi-isearchcatalogmanager-get_name
-                    - name: Númerodeelementos
+                    - name: NumberOfItems
                       href: /windows/desktop/api/Searchapi/nf-searchapi-isearchcatalogmanager-numberofitems
                     - name: NumberOfItemsToIndex
                       href: /windows/desktop/api/Searchapi/nf-searchapi-isearchcatalogmanager-numberofitemstoindex
@@ -953,9 +953,9 @@
                 - name: ISearchManager2
                   href: /windows/desktop/api/searchapi/nn-searchapi-isearchmanager2
                   items:
-                    - name: Método CreateCatalog
+                    - name: CreateCatalog (método)
                       href: isearchmanager2-createcatalog.md
-                    - name: Método DeleteCatalog
+                    - name: DeleteCatalog (método)
                       href: /windows/desktop/api/searchapi/nf-searchapi-isearchmanager2-deletecatalog
             - name: Interfaces de notificaciones
               href: '-search-notifications-interfaces-entry-page.md'
@@ -1011,9 +1011,9 @@
                 - name: ISearchViewChangedSink
                   href: /windows/desktop/api/searchapi/nn-searchapi-isearchviewchangedsink
                   items:
-                    - name: OnChange
+                    - name: Onchange
                       href: /windows/desktop/api/searchapi/nf-searchapi-isearchviewchangedsink-onchange
-        - name: Estructuras de Windows Search
+        - name: Windows Estructuras de búsqueda
           href: '-search-structures-entry-page.md'
           items:
             - name: AUTHENTICATION_INFO
@@ -1052,10 +1052,10 @@
               href: /windows/win32/api/Indexsrv/ns-indexsrv-text_source
             - name: TIMEOUT_INFO
               href: /windows/win32/api/Searchapi/ns-searchapi-timeout_info
-        - name: Constantes y enumeraciones de búsqueda de Windows
+        - name: Windows Buscar constantes y enumeraciones
           href: '-search-constants-and-enumerations-entry-page.md'
           items:
-            - name: Mensajes de error del controlador de búsqueda
+            - name: Mensajes de error del controlador de protocolo de búsqueda
               href: '-search-prth-error-constants.md'
             - name: AUTH_TYPE
               href: /windows/win32/api/Searchapi/ne-searchapi-auth_type
@@ -1079,7 +1079,7 @@
               href: /windows/win32/api/Structuredquerycondition/ne-structuredquerycondition-condition_type
             - name: FOLLOW_FLAGS
               href: /windows/win32/api/Searchapi/ne-searchapi-follow_flags
-            - name: DISPLAYSTATE
+            - name: Displaystate
               href: displaystate.md
             - name: IFILTER_FLAGS
               href: /windows/desktop/api/filter/ne-filter-ifilter_flags
@@ -1125,11 +1125,11 @@
               href: /windows/win32/api/Structuredquery/ne-structuredquery-structured_query_syntax
             - name: WORDREP_BREAK_TYPE
               href: /previous-versions/windows/desktop/legacy/ff819130(v=vs.85)
-        - name: Asignaciones de propiedades (de WDS 2. x a 3. x)
+        - name: Asignaciones de propiedades (de WDS 2.x a 3.x)
           href: '-search-3x-wds-propertymappings.md'
         - name: Formato de archivo de búsqueda guardado
           href: '-search-savedsearchfileformat.md'
-    - name: Ejemplos de código de Windows Search
+    - name: Windows Ejemplos de código de búsqueda
       href: '-search-samples-ovw.md'
       items:
         - name: CrawlScopeCommandLine
@@ -1157,19 +1157,19 @@
     - name: Búsqueda federada en Windows
       href: '-search-federated-search-overview.md'
       items:
-        - name: Introducción con búsqueda federada en Windows
+        - name: Tareas iniciales con la búsqueda federada en Windows
           href: getting-started-with-federated-search-in-windows.md
-        - name: Conexión del servicio Web en la búsqueda federada de Windows
+        - name: Conexión del servicio web en Windows búsqueda federada
           href: '-search-federated-search-web-service.md'
-        - name: Habilitación del almacén de datos en la búsqueda federada de Windows
+        - name: Habilitación del almacén de datos en Windows búsqueda federada
           href: '-search-federated-search-data-store.md'
-        - name: Creación de un archivo de descripción de OpenSearch en Windows Federated Search
+        - name: Crear un archivo OpenSearch descripción en Windows búsqueda federada
           href: '-search-federated-search-osdx-file.md'
-        - name: Siguientes procedimientos recomendados en la búsqueda federada de Windows
+        - name: Seguir los procedimientos recomendados en Windows búsqueda federada
           href: '-search-fedsearch-best.md'
-        - name: Implementación de conectores de búsqueda en la búsqueda federada de Windows
+        - name: Implementación de conectores de búsqueda en Windows búsqueda federada
           href: '-search-federated-search-deploying.md'
-        - name: Esquema de Descripción del conector de búsqueda
+        - name: Esquema de descripción del conector de búsqueda
           href: search-sconn-desc-schema-entry.md
           items:
             - name: Elemento searchConnectorDescriptionType (esquema del conector de búsqueda)
@@ -1180,49 +1180,49 @@
               href: search-schema-sconn-isdefaultsavelocation.md
             - name: Elemento isDefaultNonOwnerSaveLocation (esquema del conector de búsqueda)
               href: search-schema-sconn-isdefaultnonownersavelocation.md
-            - name: Elemento Description (esquema del conector de búsqueda)
+            - name: elemento description (Esquema del conector de búsqueda)
               href: search-schema-sconn-description.md
-            - name: Elemento iconReference (esquema del conector de búsqueda)
+            - name: elemento iconReference (Esquema del conector de búsqueda)
               href: search-schema-sconn-iconreference.md
             - name: Elemento imageLink (esquema del conector de búsqueda)
               href: search-schema-sconn-imagelink.md
-            - name: imageLink URL (elemento) (esquema del conector de búsqueda)
+            - name: Elemento imageLink url (esquema del conector de búsqueda)
               href: search-schema-sconn-imagelink-url.md
-            - name: Elemento Author (esquema del conector de búsqueda)
+            - name: elemento author (Esquema del conector de búsqueda)
               href: search-schema-sconn-author.md
-            - name: Elemento dateCreated (esquema del conector de búsqueda)
+            - name: elemento dateCreated (esquema del conector de búsqueda)
               href: search-schema-sconn-datecreated.md
-            - name: Elemento templateInfo (esquema del conector de búsqueda)
+            - name: elemento templateInfo (esquema del conector de búsqueda)
               href: search-schema-sconn-templateinfo.md
             - name: Elemento folderType (esquema del conector de búsqueda)
               href: search-schema-sconn-foldertype.md
-            - name: Elemento simpleLocation (esquema del conector de búsqueda)
+            - name: elemento simpleLocation (esquema del conector de búsqueda)
               href: search-schema-sconn-simplelocation.md
-            - name: simpleLocation URL (elemento) (esquema del conector de búsqueda)
+            - name: elemento simpleLocation url (esquema del conector de búsqueda)
               href: search-schema-sconn-url.md
-            - name: Elemento locationProvider (esquema del conector de búsqueda)
+            - name: elemento locationProvider (esquema del conector de búsqueda)
               href: search-schema-sconn-locationprovider.md
-            - name: Elemento propertyBag (esquema del conector de búsqueda)
+            - name: elemento propertyBag (esquema del conector de búsqueda)
               href: search-schema-sconn-propertybag.md
-            - name: Elemento Property de locationProvider (esquema del conector de búsqueda)
+            - name: elemento property de locationProvider (esquema del conector de búsqueda)
               href: search-schema-sconn-locationproviderproperty.md
-            - name: Elemento Scope (esquema del conector de búsqueda)
+            - name: elemento scope (esquema del conector de búsqueda)
               href: search-schema-sconn-scope.md
-            - name: Elemento scopeItem (esquema del conector de búsqueda)
+            - name: elemento scopeItem (esquema del conector de búsqueda)
               href: search-schema-sconn-scopeitem.md
-            - name: Elemento Mode (esquema del conector de búsqueda)
+            - name: elemento mode (Esquema del conector de búsqueda)
               href: search-schema-sconn-scope-mode.md
-            - name: Depth (elemento) (esquema del conector de búsqueda)
+            - name: elemento depth (Esquema del conector de búsqueda)
               href: search-schema-sconn-scope-depth.md
-            - name: scopeItem URL (elemento) (esquema del conector de búsqueda)
+            - name: elemento scopeItem url (esquema del conector de búsqueda)
               href: search-schema-sconn-scope-url.md
-            - name: Elemento propertyStore (esquema del conector de búsqueda)
+            - name: elemento propertyStore (esquema del conector de búsqueda)
               href: search-schema-sconn-propertystore.md
-            - name: Elemento Property de propertyStore (esquema del conector de búsqueda)
+            - name: elemento property de propertyStore (esquema del conector de búsqueda)
               href: search-schema-sconn-propstore-property.md
-            - name: Elemento includeInStartMenuScope (esquema del conector de búsqueda)
+            - name: elemento includeInStartMenuScope (esquema del conector de búsqueda)
               href: search-schema-sconn-includeinstartmenuscope.md
-            - name: Elemento domain (esquema del conector de búsqueda)
+            - name: elemento domain (Esquema del conector de búsqueda)
               href: search-schema-sconn-domain.md
             - name: Elemento supportsAdvancedQuerySyntax (esquema del conector de búsqueda)
               href: search-schema-sconn-supportsadvancedquerysyntax.md
@@ -1230,5 +1230,5 @@
               href: search-schema-sconn-isindexed.md
     - name: Tecnologías de búsqueda relacionadas
       href: '-search-3x-wds-sampleentry.md'
-    - name: Glosario de búsqueda de Windows
+    - name: Windows Glosario de búsqueda
       href: search-glossary.md

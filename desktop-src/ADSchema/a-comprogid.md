@@ -1,11 +1,11 @@
 ---
-title: COM-ProgID atributo)
-description: Este atributo almacena la lista de identificadores de programa de objeto COM que se implementan en este paquete de aplicación.
+title: COM-ProgID atributo
+description: Este atributo almacena la lista de los id. de programa de objetos COM que se implementan en este paquete de aplicación.
 ms.assetid: 9d2945e4-f236-48f6-bed3-145d445ff653
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de COM-ProgID
-- Esquema de AD del atributo comprogid
+- COM-ProgID esquema de AD de atributo
+- Esquema de AD del atributo cOMProgID
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 686976732bedf2c4ba486186634720568d3b6c3c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8ca9d952719483f30448045221d1a366c37c0718770f5d6db88d21d5f5bbd994
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509565"
 ---
-# <a name="com-progid-attribute"></a>COM-ProgID atributo)
+# <a name="com-progid-attribute"></a>COM-ProgID atributo
 
-Este atributo almacena la lista de identificadores de programa de objeto COM que se implementan en este paquete de aplicación.
+Este atributo almacena la lista de los id. de programa de objetos COM que se implementan en este paquete de aplicación.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|----------------------------------------------------------------------------------|
 | CN                | COM-ProgID                                                                       |
-| Nombre para mostrar de LDAP | comprogid                                                                        |
-| Tamaño              | \-                                                                               |
-| Actualizar privilegio  | Cualquier usuario puede actualizar este objeto en función de la seguridad del objeto que se va a crear. |
+| Ldap-Display-Name | cOMProgID                                                                        |
+| Size              | \-                                                                               |
+| Actualizar privilegios  | Cualquiera puede actualizar este objeto en función de la seguridad del objeto que se va a crear. |
 | Frecuencia de actualización  | \-                                                                               |
 | Attribute-Id      | 1.2.840.113556.1.4.21                                                            |
-| System-ID-GUID    | bf96793d-0de6-11d0-a285-00aa003049e2                                             |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                                      |
+| System-Id-Guid    | bf96793d-0de6-11d0-a285-00aa003049e2                                             |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
 
@@ -55,18 +55,18 @@ Este atributo almacena la lista de identificadores de programa de objeto COM que
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
-| System-Only            | False                                                                                                                         |
-| Tiene un único valor       | False                                                                                                                         |
-| Está indexado             | False                                                                                                                         |
-| En el catálogo global      | False                                                                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                  |
+| System-Only            | Falso                                                                                                                         |
+| Es de un solo valor       | Falso                                                                                                                         |
+| Está indexado             | Falso                                                                                                                         |
+| En el catálogo global      | Falso                                                                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Clases usadas en        | [**Registro de clases**](c-classregistration.md)<br/> [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de clases**](c-classregistration.md)<br/> [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Este atributo almacena la lista de identificadores de programa de objeto COM que
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
-| System-Only            | False                                                                                                                         |
-| Tiene un único valor       | False                                                                                                                         |
-| Está indexado             | False                                                                                                                         |
-| En el catálogo global      | False                                                                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                  |
+| System-Only            | Falso                                                                                                                         |
+| Es de un solo valor       | Falso                                                                                                                         |
+| Está indexado             | Falso                                                                                                                         |
+| En el catálogo global      | Falso                                                                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Clases usadas en        | [**Registro de clases**](c-classregistration.md)<br/> [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de clases**](c-classregistration.md)<br/> [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Este atributo almacena la lista de identificadores de programa de objeto COM que
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
-| System-Only            | False                                                                                                                         |
-| Tiene un único valor       | False                                                                                                                         |
-| Está indexado             | False                                                                                                                         |
-| En el catálogo global      | False                                                                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                  |
+| System-Only            | Falso                                                                                                                         |
+| Es de un solo valor       | Falso                                                                                                                         |
+| Está indexado             | Falso                                                                                                                         |
+| En el catálogo global      | Falso                                                                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Clases usadas en        | [**Registro de clases**](c-classregistration.md)<br/> [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de clases**](c-classregistration.md)<br/> [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Este atributo almacena la lista de identificadores de programa de objeto COM que
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
-| System-Only            | False                                                                                                                         |
-| Tiene un único valor       | False                                                                                                                         |
-| Está indexado             | False                                                                                                                         |
-| En el catálogo global      | False                                                                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                  |
+| System-Only            | Falso                                                                                                                         |
+| Es de un solo valor       | Falso                                                                                                                         |
+| Está indexado             | Falso                                                                                                                         |
+| En el catálogo global      | Falso                                                                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Clases usadas en        | [**Registro de clases**](c-classregistration.md)<br/> [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de clases**](c-classregistration.md)<br/> [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Este atributo almacena la lista de identificadores de programa de objeto COM que
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
-| System-Only            | False                                                                                                                         |
-| Tiene un único valor       | False                                                                                                                         |
-| Está indexado             | False                                                                                                                         |
-| En el catálogo global      | False                                                                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                  |
+| System-Only            | Falso                                                                                                                         |
+| Es de un solo valor       | Falso                                                                                                                         |
+| Está indexado             | Falso                                                                                                                         |
+| En el catálogo global      | Falso                                                                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Clases usadas en        | [**Registro de clases**](c-classregistration.md)<br/> [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de clases**](c-classregistration.md)<br/> [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Este atributo almacena la lista de identificadores de programa de objeto COM que
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
-| System-Only            | False                                                                                                                         |
-| Tiene un único valor       | False                                                                                                                         |
-| Está indexado             | False                                                                                                                         |
-| En el catálogo global      | False                                                                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                  |
+| System-Only            | Falso                                                                                                                         |
+| Es de un solo valor       | Falso                                                                                                                         |
+| Está indexado             | Falso                                                                                                                         |
+| En el catálogo global      | Falso                                                                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Clases usadas en        | [**Registro de clases**](c-classregistration.md)<br/> [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de clases**](c-classregistration.md)<br/> [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 

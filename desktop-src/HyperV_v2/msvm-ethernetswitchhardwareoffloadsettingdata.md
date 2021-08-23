@@ -1,7 +1,7 @@
 ---
 description: Representa la configuración de descarga del conmutador.
 ms.assetid: 4e00544e-a8db-4337-af3f-f651bfcf6b05
-title: Msvm_EthernetSwitchHardwareOffloadSettingData (clase)
+title: Msvm_EthernetSwitchHardwareOffloadSettingData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,14 +20,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 86ef0e22143ffd424ee3acee616504e45d8125bf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 751e5f3256da82d2b7cae2da17a8b9dfb54bc5331ebf2679e745bc67c0b4d3b6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105689588"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119524554"
 ---
-# <a name="msvm_ethernetswitchhardwareoffloadsettingdata-class"></a>MSVM \_ EthernetSwitchHardwareOffloadSettingData (clase)
+# <a name="msvm_ethernetswitchhardwareoffloadsettingdata-class"></a>Clase Msvm \_ EthernetSwitchHardwareOffloadSettingData
 
 Representa la configuración de descarga del conmutador.
 
@@ -51,13 +51,13 @@ class Msvm_EthernetSwitchHardwareOffloadSettingData : Msvm_EthernetSwitchFeature
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ EthernetSwitchHardwareOffloadSettingData** tiene estos tipos de miembros:
+La **clase Msvm \_ EthernetSwitchHardwareOffloadSettingData** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ EthernetSwitchHardwareOffloadSettingData** tiene estas propiedades.
+La **clase Msvm \_ EthernetSwitchHardwareOffloadSettingData** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -67,23 +67,23 @@ La clase **MSVM \_ EthernetSwitchHardwareOffloadSettingData** tiene estas propie
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (2), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Especifica la configuración de VMMQ para la cola predeterminada del vSwitch.
+Especifica la configuración de VMMQ para la cola predeterminada del vswitch.
 
 </dd> <dt>
 
 **DefaultQueueVmmqQueuePairs**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (3), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -99,13 +99,13 @@ Especifica el número de colas para la cola predeterminada.
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (1), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Especifica la configuración de VRss para la cola predeterminada del vSwitch.
+Especifica la configuración de las VRs para la cola predeterminada del vswitch.
 
 </dd> <dt>
 
@@ -121,10 +121,10 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (6), **InterfaceVersion** (2), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica si la CPU VMQ primaria está excluida de la tabla de indirección VRSS/VMMQ.
+Indica si la CPU de VMQ principal se excluye de la tabla de direccionamiento indirecto de VRSS/VMMQ.
 
 > [!Note]  
-> Agregado en Windows 10, versión 1709.
+> Se ha agregado Windows 10, versión 1709.
 
  
 
@@ -142,10 +142,10 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (7), **InterfaceVersion** (2), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica si se va a realizar siempre la propagación de VRSS para la cola predeterminada, independientemente del estado de RSS del vPort externo.
+Indica si se debe realizar siempre la propagación de VRSS para la cola predeterminada, independientemente del estado RSS del vPort externo.
 
 > [!Note]  
-> Agregado en Windows 10, versión 1709.
+> Se ha agregado Windows 10, versión 1709.
 
  
 
@@ -154,7 +154,7 @@ Indica si se va a realizar siempre la propagación de VRSS para la cola predeter
 **DefaultQueueVrssMinQueuePairs**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -166,7 +166,7 @@ Calificadores: **WmiDataId** (4), **InterfaceVersion** (2), **InterfaceRevision*
 Indica el número mínimo de colas usadas para VRSS/VMMQ.
 
 > [!Note]  
-> Agregado en Windows 10, versión 1709.
+> Se ha agregado Windows 10, versión 1709.
 
  
 
@@ -175,7 +175,7 @@ Indica el número mínimo de colas usadas para VRSS/VMMQ.
 **DefaultQueueVrssQueueSchedulingMode**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -184,10 +184,10 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (5), **InterfaceVersion** (2), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica cómo se dirigen las colas de VRSS/VMMQ a diferentes procesadores de host.
+Indica cómo las colas VRSS/VMMQ se dirige a distintos procesadores de host.
 
 > [!Note]  
-> Agregado en Windows 10, versión 1709.
+> Se ha agregado Windows 10, versión 1709.
 
  
 
@@ -197,12 +197,12 @@ Indica cómo se dirigen las colas de VRSS/VMMQ a diferentes procesadores de host
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1703 \[\]<br/>                                               |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1703 \[\]<br/>                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -211,7 +211,7 @@ Indica cómo se dirigen las colas de VRSS/VMMQ a diferentes procesadores de host
 
 <dl> <dt>
 
-[**MSVM \_ EthernetSwitchFeatureSettingData**](msvm-ethernetswitchfeaturesettingdata.md)
+[**Msvm \_ EthernetSwitchFeatureSettingData**](msvm-ethernetswitchfeaturesettingdata.md)
 </dt> </dl>
 
  

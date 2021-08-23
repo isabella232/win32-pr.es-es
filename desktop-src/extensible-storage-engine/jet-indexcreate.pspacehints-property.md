@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_INDEXCREATE. pSpaceHints'
-title: Propiedad JET_INDEXCREATE. pSpaceHints
+description: 'Más información sobre: JET_INDEXCREATE.pSpaceHints'
+title: JET_INDEXCREATE.pSpaceHints, propiedad
 TOCTitle: 'pSpaceHints property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_INDEXCREATE.pSpaceHints
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_indexcreate.pspacehints(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3fa3fe7a1420fbff7c755fc7958661eff8cd62f0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 823f430331d6bc8cc4f1db729b756a4455765e4d0e6fe1d3b2e4f3cdaff2d008
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697463"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119604029"
 ---
-# <a name="jet_indexcreatepspacehints-property"></a>Propiedad JET_INDEXCREATE. pSpaceHints
+# <a name="jet_indexcreatepspacehints-property"></a>JET_INDEXCREATE.pSpaceHints, propiedad
 
-Obtiene o establece las sugerencias de asignación, mantenimiento y uso de espacio.
+Obtiene o establece sugerencias de asignación, mantenimiento y uso de espacio.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public JET_SPACEHINTS pSpaceHints { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_SPACEHINTS](./jet-spacehints-class.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_SPACEHINTS](./jet-spacehints-class.md)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_INDEXCREATE (clase)](./jet-indexcreate-class.md)
+[JET_INDEXCREATE clase](./jet-indexcreate-class.md)
 
-[Miembros de JET_INDEXCREATE](./jet-indexcreate-members.md)
+[JET_INDEXCREATE miembros](./jet-indexcreate-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

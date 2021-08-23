@@ -1,8 +1,8 @@
 ---
-description: El método de clase WMI SetDefaultPrinter establece la impresora predeterminada del sistema para el usuario que llama al método.
+description: El método de clase WMI SetDefaultPrinter establece la impresora del sistema predeterminada para el usuario que llama al método .
 ms.assetid: 7e896961-363d-4b8b-9d22-bbfc9681e97b
 ms.tgt_platform: multiple
-title: Método SetDefaultPrinter de la clase Win32_Printer
+title: Método SetDefaultPrinter de la Win32_Printer predeterminada
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a18c6d7771eb0e95d86142f41262d721509eb6f8
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: d896fe76946881ebbc52591da1bfce1fbc0fb99ce4adfb02418aa35b912f0e75
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907535"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119440185"
 ---
-# <a name="setdefaultprinter-method-of-the-win32_printer-class"></a>Método SetDefaultPrinter de la \_ clase Printer de Win32
+# <a name="setdefaultprinter-method-of-the-win32_printer-class"></a>Método SetDefaultPrinter de la clase Printer de Win32 \_
 
-El método de [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetDefaultPrinter** establece la impresora predeterminada del sistema para el usuario que llama al método.
+El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetDefaultPrinter** establece la impresora del sistema predeterminada para el usuario que llama al método .
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,13 +42,13 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 (cero) si es correcto y otro valor si se produce un error. Para ver otros códigos de error, consulte [**constantes de error de WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores de **HRESULT** generales, vea [códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve 0 (cero) si se realiza correctamente y otro valor si se produce un error. Para obtener códigos de error adicionales, [**vea Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 ## <a name="examples"></a>Ejemplos
 
-El ejemplo [instalar un puerto de impresora TCP/IP y una impresora](https://Gallery.TechNet.Microsoft.Com/41a4c996-b7f7-4d58-808d-2acac20ddbf7) de VBScript instala un puerto de impresora TCP/IP, instala una impresora y, a continuación, establece la impresora como predeterminada.
+El ejemplo Instalar un puerto de impresora [TCP/IP](https://Gallery.TechNet.Microsoft.Com/41a4c996-b7f7-4d58-808d-2acac20ddbf7) e impresora VBScript instala un puerto de impresora TCP/IP, instala una impresora y, a continuación, establece la impresora como predeterminada.
 
-En el siguiente ejemplo de código de VBScript se establece la impresora predeterminada en un equipo.
+El siguiente ejemplo de código VBScript establece la impresora predeterminada en un equipo.
 
 
 ```VB
@@ -74,8 +74,8 @@ Next
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                      |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                        |
-| MOF<br/>                      | <dl> <dt>Win32 \_ printer. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                        |
+| MOF<br/>                      | <dl> <dt>Win32 \_ Printer.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl>       |
 
 
@@ -84,13 +84,13 @@ Next
 
 <dl> <dt>
 
-[Clases de hardware de sistema del equipo](computer-system-hardware-classes.md)
+[Clases de hardware del sistema de equipo](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[Tareas de WMI: impresoras e impresión](/windows/desktop/WmiSdk/wmi-tasks--printers-and-printing)
+[Tareas wmi: impresoras e impresión](/windows/desktop/WmiSdk/wmi-tasks--printers-and-printing)
 </dt> <dt>
 
-[**\_Impresora Win32**](win32-printer.md)
+[**Impresora \_ Win32**](win32-printer.md)
 </dt> </dl>
 
  

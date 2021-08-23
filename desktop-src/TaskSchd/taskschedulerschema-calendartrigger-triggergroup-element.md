@@ -1,10 +1,10 @@
 ---
 title: Elemento CalendarTrigger (triggerGroup)
-description: Especifica un desencadenador de día de la semana (DOW) diario, semanal, mensual o mensual.
+description: Especifica un desencadenador diario, semanal, mensual o mensual del día de la semana (DOW).
 ms.assetid: 9b9218bf-222c-4ece-8b37-5c5d8b765015
 keywords:
-- desencadenador de calendario Programador de tareas, elemento XML
-- Programador de tareas del elemento CalendarTrigger
+- desencadenador de calendario Programador de tareas elemento , XML
+- Elemento CalendarTrigger Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 02c061d8821dffa82eca8756ab26acadc6bb9281
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d02b14fa056940a8139e87d9b471f6eaef84c311eb095073f274a9b4adf3c6dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119516975"
 ---
 # <a name="calendartrigger-triggergroup-element"></a>Elemento CalendarTrigger (triggerGroup)
 
-Especifica un desencadenador de día de la semana (DOW) diario, semanal, mensual o mensual.
+Especifica un desencadenador diario, semanal, mensual o mensual del día de la semana (DOW).
 
 ``` syntax
 <xs:element name="CalendarTrigger"
@@ -31,7 +31,7 @@ Especifica un desencadenador de día de la semana (DOW) diario, semanal, mensual
  />
 ```
 
-El elemento **CalendarTrigger** se define mediante el tipo complejo de [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md) .
+El **elemento CalendarTrigger** se define mediante el [**tipo complejo calendarTriggerType.**](taskschedulerschema-calendartriggertype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -50,12 +50,12 @@ El elemento **CalendarTrigger** se define mediante el tipo complejo de [**calend
 | Elemento                                                                                                                            | Tipo                                                                                                 | Descripción                                                                                                                        |
 |------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | [**Habilitado (triggerBaseType)**](taskschedulerschema-enabled-triggerbasetype-element.md)                                           | boolean                                                                                              | Especifica que el desencadenador está habilitado.<br/>                                                                                  |
-| [**EndBoundary (triggerBaseType)**](taskschedulerschema-endboundary-triggerbasetype-element.md)                                   | dateTime                                                                                             | Especifica la fecha y hora de desactivación del desencadenador. El desencadenador no puede iniciar la tarea después de que se haya desactivado.<br/> |
-| [**ExecutionTimeLimit (triggerBaseType)**](taskschedulerschema-executiontimelimit-triggerbasetype-element.md)                     | duration                                                                                             | Especifica la cantidad máxima de tiempo que el desencadenador puede iniciar la tarea.<br/>                                   |
-| [**Repetición (triggerBaseType)**](taskschedulerschema-repetition-triggerbasetype-element.md)                                     | [**repetitionType**](taskschedulerschema-repetitiontype-complextype.md)                             | Especifica la frecuencia con que se ejecuta la tarea y cuánto tiempo se repite el patrón de repetición una vez iniciada la tarea.<br/>          |
+| [**EndBoundary (triggerBaseType)**](taskschedulerschema-endboundary-triggerbasetype-element.md)                                   | dateTime                                                                                             | Especifica la fecha y hora en que se desactiva el desencadenador. El desencadenador no puede iniciar la tarea después de desactivarla.<br/> |
+| [**ExecutionTimeLimit (triggerBaseType)**](taskschedulerschema-executiontimelimit-triggerbasetype-element.md)                     | duration                                                                                             | Especifica la cantidad máxima de tiempo en la que el desencadenador puede iniciar la tarea.<br/>                                   |
+| [**Repetición (triggerBaseType)**](taskschedulerschema-repetition-triggerbasetype-element.md)                                     | [**repetitionType**](taskschedulerschema-repetitiontype-complextype.md)                             | Especifica la frecuencia con la que se ejecuta la tarea y cuánto tiempo se repite el patrón de repetición después de iniciar la tarea.<br/>          |
 | [**ScheduleByDay (calendarTriggerType)**](taskschedulerschema-schedulebyday-calendartriggertype-element.md)                       | [**dailyScheduleType**](taskschedulerschema-dailyscheduletype-complextype.md)                       | Especifica una programación diaria.<br/>                                                                                             |
 | [**ScheduleByMonth (calendarTriggerType)**](taskschedulerschema-schedulebymonth-calendartriggertype-element.md)                   | [**monthlyScheduleType**](taskschedulerschema-monthlyscheduletype-complextype.md)                   | Especifica una programación mensual.<br/>                                                                                           |
-| [**ScheduleByMonthDayOfWeek (calendarTriggerType)**](taskschedulerschema-schedulebymonthdayofweek-calendartriggertype-element.md) | [**monthlyDayOfWeekScheduleType**](taskschedulerschema-monthlydayofweekscheduletype-complextype.md) | Especifica un desencadenador que inicia un trabajo en una programación mensual de día de la semana.<br/>                                                |
+| [**ScheduleByMonthDayOfWeek (calendarTriggerType)**](taskschedulerschema-schedulebymonthdayofweek-calendartriggertype-element.md) | [**monthlyDayOfWeekScheduleType**](taskschedulerschema-monthlydayofweekscheduletype-complextype.md) | Especifica un desencadenador que inicia un trabajo según una programación mensual del día de la semana.<br/>                                                |
 | [**ScheduleByWeek (calendarTriggerType)**](taskschedulerschema-schedulebyweek-calendartriggertype-element.md)                     | [**weeklyScheduleType**](taskschedulerschema-weeklyscheduletype-complextype.md)                     | Especifica una programación semanal.<br/>                                                                                            |
 | [**StartBoundary (triggerBaseType)**](taskschedulerschema-startboundary-triggerbasetype-element.md)                               | dateTime                                                                                             | Especifica la fecha y hora en que se activa el desencadenador. Este elemento es obligatorio.<br/>                                    |
 
@@ -67,24 +67,24 @@ El elemento **CalendarTrigger** se define mediante el tipo complejo de [**calend
 
 | Nombre | Tipo | Descripción                               |
 |------|------|-------------------------------------------|
-| Identificador   | id   | Identificador del desencadenador.<br/> |
+| Identificador   | ID   | Identificador del desencadenador.<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El elemento [**StartBoundary**](taskschedulerschema-startboundary-triggerbasetype-element.md) es un elemento necesario para los desencadenadores de tiempo y calendario ([**TimeTrigger**](taskschedulerschema-timetrigger-triggergroup-element.md) y **CalendarTrigger**).
+El [**elemento StartBoundary**](taskschedulerschema-startboundary-triggerbasetype-element.md) es un elemento necesario para los desencadenadores time y calendar [**(TimeTrigger**](taskschedulerschema-timetrigger-triggergroup-element.md) **y CalendarTrigger).**
 
-Los elementos secundarios enumerados anteriormente se definen mediante los tipos de elementos complejos [**triggerBaseType**](taskschedulerschema-triggerbasetype-complextype.md) y [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md) .
+Los elementos secundarios enumerados anteriormente se definen mediante los tipos de elementos complejos [**triggerBaseType**](taskschedulerschema-triggerbasetype-complextype.md) y [**calendarTriggerType.**](taskschedulerschema-calendartriggertype-complextype.md)
 
-Para el desarrollo de scripts, los desencadenadores de calendario se especifican mediante uno de los siguientes objetos.
+Para el desarrollo de scripts, los desencadenadores de calendario se especifican mediante uno de los objetos siguientes.
 
 -   [**DailyTrigger**](dailytrigger.md)
 -   [**WeeklyTrigger**](weeklytrigger.md)
 -   [**MonthlyTrigger**](monthlytrigger.md)
 -   [**MonthlyDOWTrigger**](monthlydowtrigger.md)
 
-En el desarrollo de C++, los desencadenadores de calendario se especifican mediante una de las interfaces siguientes.
+Para el desarrollo de C++, los desencadenadores de calendario se especifican mediante una de las interfaces siguientes.
 
 -   [**IDailyTrigger**](/windows/desktop/api/taskschd/nn-taskschd-idailytrigger)
 -   [**IWeeklyTrigger**](/windows/desktop/api/taskschd/nn-taskschd-iweeklytrigger)
@@ -93,16 +93,16 @@ En el desarrollo de C++, los desencadenadores de calendario se especifican media
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener un ejemplo completo del XML de una tarea que especifica un desencadenador de calendario, vea [ejemplo de desencadenador diario (XML)](daily-trigger-example--xml-.md).
+Para obtener un ejemplo completo del XML para una tarea que especifica un desencadenador de calendario, vea Ejemplo de desencadenador diario [(XML).](daily-trigger-example--xml-.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -110,7 +110,7 @@ Para obtener un ejemplo completo del XML de una tarea que especifica un desencad
 
 <dl> <dt>
 
-[Programador de tareas elementos de esquema](task-scheduler-schema-elements.md)
+[Programador de tareas de esquema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

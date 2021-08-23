@@ -4,23 +4,23 @@ ms.assetid: b08e7739-55d4-4690-9ce5-2a8cb29214e9
 title: Cambiar el directorio actual
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02e507d206bcd988a7c00f557bde2b8a0ad39c79
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 60cf742c872bab7d37e115afa815fff961d2f975bfbd3db75ff61a5e992d64a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688729"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119632115"
 ---
 # <a name="changing-the-current-directory"></a>Cambiar el directorio actual
 
-El directorio situado al final de la ruta de acceso activa se denomina directorio actual. es el directorio en el que se inició la aplicación activa, a menos que se haya cambiado explícitamente. Una aplicación puede determinar qué directorio está actualizado mediante una llamada a la función [**GetCurrentDirectory**](/windows/desktop/api/WinBase/nf-winbase-getcurrentdirectory) . A veces es necesario usar la función [**GetFullPathName**](/windows/desktop/api/FileAPI/nf-fileapi-getfullpathnamea) para asegurarse de que la letra de unidad se incluye en caso de que la aplicación lo requiera.
+El directorio al final de la ruta de acceso activa se denomina directorio actual; es el directorio en el que se inició la aplicación activa, a menos que se haya cambiado explícitamente. Una aplicación puede determinar qué directorio está actual llamando a la [**función GetCurrentDirectory.**](/windows/desktop/api/WinBase/nf-winbase-getcurrentdirectory) A veces es necesario usar la [**función GetFullPathName**](/windows/desktop/api/FileAPI/nf-fileapi-getfullpathnamea) para asegurarse de que la letra de unidad se incluye si la aplicación lo requiere.
 
 > [!Note]  
-> Aunque cada proceso solo puede tener un directorio actual, si la aplicación cambia los volúmenes mediante la función [**SetCurrentDirectory**](/windows/desktop/api/WinBase/nf-winbase-setcurrentdirectory) , el sistema recuerda la última ruta de acceso actual de cada volumen (letra de unidad). Este comportamiento solo se manifestará cuando se especifica una letra de unidad sin una ruta de acceso completa al cambiar el punto de directorio actual de referencia a un volumen diferente. Esto se aplica a las operaciones GET o set.
+> Aunque cada proceso solo puede tener un directorio actual, si la aplicación cambia los volúmenes mediante la función [**SetCurrentDirectory,**](/windows/desktop/api/WinBase/nf-winbase-setcurrentdirectory) el sistema recuerda la última ruta de acceso actual para cada volumen (letra de unidad). Este comportamiento se manifesta solo cuando se especifica una letra de unidad sin una ruta de acceso completa al cambiar el punto de referencia del directorio actual a otro volumen. Esto se aplica a las operaciones Get o Set.
 
  
 
-Una aplicación puede cambiar el directorio actual llamando a la función [**SetCurrentDirectory**](/windows/desktop/api/WinBase/nf-winbase-setcurrentdirectory) .
+Una aplicación puede cambiar el directorio actual llamando a la [**función SetCurrentDirectory.**](/windows/desktop/api/WinBase/nf-winbase-setcurrentdirectory)
 
 En el ejemplo siguiente se muestra el uso de [**GetCurrentDirectory**](/windows/desktop/api/WinBase/nf-winbase-getcurrentdirectory) y [**SetCurrentDirectory**](/windows/desktop/api/WinBase/nf-winbase-setcurrentdirectory).
 

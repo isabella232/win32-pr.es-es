@@ -1,7 +1,7 @@
 ---
 description: Restablece la referencia de enumeración al primer objeto IWiaItem2.
 ms.assetid: 392e3471-f7fc-456f-a1cc-ab4eb6d3fe18
-title: 'IEnumWiaItem2:: RESET (método) (WIA. h)'
+title: Método IEnumWiaItem2::Reset (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: ab4d5a9effbcb003265da53ddc753f63630df51a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4811ab00cc842712502556a4ab8a315b6b6780031e7fc52852f9a3b6fdde96b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275640"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119451125"
 ---
-# <a name="ienumwiaitem2reset-method"></a>IEnumWiaItem2:: RESET (método)
+# <a name="ienumwiaitem2reset-method"></a>IEnumWiaItem2::Reset (Método)
 
-Restablece la referencia de enumeración al primer objeto [**IWiaItem2**](-wia-iwiaitem2.md) .
+Restablece la referencia de enumeración al primer [**objeto IWiaItem2.**](-wia-iwiaitem2.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,7 +41,7 @@ Este método no tiene parámetros.
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,10 +49,10 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
 
 
 

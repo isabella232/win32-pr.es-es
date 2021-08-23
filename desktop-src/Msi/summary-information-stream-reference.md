@@ -1,37 +1,37 @@
 ---
-description: Una lista de las propiedades de la secuencia de información de Resumen de Windows Installer.
+description: Una lista de las propiedades del flujo de Windows de resumen del instalador.
 ms.assetid: bf094997-5afc-490d-9651-ef1c169f0787
-title: Referencia de flujo de información de Resumen
+title: Referencia de flujo de información de resumen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a68bd29541eb15b2a6e554e9da2646dc1ada9457
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8b68e8b45c187647035072542378107637d7f500a1ab9ad0431ef2165be46338
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103910365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119627025"
 ---
-# <a name="summary-information-stream-reference"></a>Referencia de flujo de información de Resumen
+# <a name="summary-information-stream-reference"></a>Referencia de flujo de información de resumen
 
-En la lista siguiente se muestran las propiedades de flujo de información de Resumen de Windows Installer:
+En la lista siguiente se muestran las propiedades del flujo de información de resumen Windows Instalador:
 
--   [**Propiedad Resumen del autor**](author-summary.md)
--   [**Propiedad de Resumen de recuento de caracteres**](character-count-summary.md)
--   [**Propiedad de Resumen CodePage**](codepage-summary.md)
--   [**Propiedad de Resumen de comentarios**](comments-summary.md)
--   [**Crear propiedad de Resumen de fecha y hora**](create-time-date-summary.md)
--   [**Creando propiedad de Resumen de la aplicación**](creating-application-summary.md)
--   [**Propiedad de Resumen de palabras clave**](keywords-summary.md)
--   [**Última propiedad de Resumen impresa**](last-printed-summary.md)
--   [**Última vez que se guardó la propiedad Summary**](last-saved-by-summary.md)
--   [**Propiedad de Resumen de fecha y hora de la última actualización**](last-saved-time-date-summary.md)
--   [**Propiedad de Resumen de recuento de palabras**](word-count-summary.md)
--   [**Propiedad de Resumen de recuento de páginas**](page-count-summary.md)
--   [**Propiedad de Resumen de número de revisión**](revision-number-summary.md)
--   [**Propiedad de Resumen de seguridad**](security-summary.md)
--   [**Propiedad de Resumen de asunto**](subject-summary.md)
--   [**Propiedad de Resumen de plantilla**](template-summary.md)
--   [**Propiedad de Resumen de título**](title-summary.md)
+-   [**Propiedad De resumen del autor**](author-summary.md)
+-   [**Propiedad Resumen de recuento de caracteres**](character-count-summary.md)
+-   [**Propiedad Resumen de página de códigos**](codepage-summary.md)
+-   [**Propiedad Resumen de comentarios**](comments-summary.md)
+-   [**Create Time/Date Summary (Propiedad de resumen de fecha y hora)**](create-time-date-summary.md)
+-   [**Crear la propiedad De resumen de la aplicación**](creating-application-summary.md)
+-   [**Propiedad Summary de palabras clave**](keywords-summary.md)
+-   [**Última propiedad Resumen impreso**](last-printed-summary.md)
+-   [**Último guardado por la propiedad Resumen**](last-saved-by-summary.md)
+-   [**Propiedad Resumen de fecha y hora guardadas por última vez**](last-saved-time-date-summary.md)
+-   [**Propiedad Resumen de recuento de palabras**](word-count-summary.md)
+-   [**Propiedad Resumen de recuento de páginas**](page-count-summary.md)
+-   [**Propiedad Resumen de número de revisión**](revision-number-summary.md)
+-   [**Propiedad Resumen de seguridad**](security-summary.md)
+-   [**Subject Summary (Propiedad)**](subject-summary.md)
+-   [**Propiedad Resumen de plantilla**](template-summary.md)
+-   [**Propiedad De resumen de título**](title-summary.md)
 
  
 

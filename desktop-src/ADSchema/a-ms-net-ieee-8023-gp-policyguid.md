@@ -1,10 +1,10 @@
 ---
-title: atributo MS-net-IEEE-8023-GP-PolicyGUID
-description: Contiene un GUID que identifica un objeto 802,3 directiva de grupo específico en el dominio.
+title: Atributo ms-net-ieee-8023-GP-PolicyGUID
+description: Contiene un GUID que identifica un objeto 802.3 específico directiva de grupo en el dominio.
 ms.assetid: 1503d7b9-af9d-445d-8bc0-6ebe6093d1fa
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-net-IEEE-8023-GP-PolicyGUID
+- ms-net-ieee-8023-GP-PolicyGUID attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 09848a7bd6f75af65d537d429a95de4b5814f252
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 01d3fcb54d3ed9ca659b59bd5e913f1180fec2c8ddb9daa6f9e94a815ddd03c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104535793"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705463"
 ---
-# <a name="ms-net-ieee-8023-gp-policyguid-attribute"></a>atributo MS-net-IEEE-8023-GP-PolicyGUID
+# <a name="ms-net-ieee-8023-gp-policyguid-attribute"></a>Atributo ms-net-ieee-8023-GP-PolicyGUID
 
-Contiene un GUID que identifica un objeto 802,3 directiva de grupo específico en el dominio.
+Contiene un GUID que identifica un objeto 802.3 específico directiva de grupo en el dominio.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | MS-net-IEEE-8023-GP-PolicyGUID              |
-| Nombre para mostrar de LDAP | MS-net-IEEE-8023-GP-PolicyGUID              |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | ms-net-ieee-8023-GP-PolicyGUID              |
+| Ldap-Display-Name | ms-net-ieee-8023-GP-PolicyGUID              |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1954                     |
-| System-ID-GUID    | 94a7b05a-b8b2-4f59-9c25-39e69baa1684        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 94a7b05a-b8b2-4f59-9c25-39e69baa1684        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -51,18 +51,18 @@ Contiene un GUID que identifica un objeto 802,3 directiva de grupo específico e
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                |
+| Id. de vínculo                | \-                                                                                |
 | MAPI-Id                | \-                                                                                |
-| System-Only            | False                                                                             |
-| Tiene un único valor       | True                                                                              |
-| Está indexado             | False                                                                             |
-| En el catálogo global      | False                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                      |
+| System-Only            | Falso                                                                             |
+| Es de un solo valor       | Verdadero                                                                              |
+| Está indexado             | Falso                                                                             |
+| En el catálogo global      | Falso                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                      |
 | Range-Lower            | \-                                                                                |
 | Range-Upper            | \-                                                                                |
 | Search-Flags           | 0x00000000                                                                        |
 | System-Flags           | 0x00000010                                                                        |
-| Clases usadas en        | [**MS-net-IEEE-8023-GroupPolicy**](c-ms-net-ieee-8023-grouppolicy.md)<br/> |
+| Clases usadas en        | [**ms-net-ieee-8023-GroupPolicy**](c-ms-net-ieee-8023-grouppolicy.md)<br/> |
 
 
 
@@ -72,18 +72,18 @@ Contiene un GUID que identifica un objeto 802,3 directiva de grupo específico e
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                |
+| Id. de vínculo                | \-                                                                                |
 | MAPI-Id                | \-                                                                                |
-| System-Only            | False                                                                             |
-| Tiene un único valor       | True                                                                              |
-| Está indexado             | False                                                                             |
-| En el catálogo global      | False                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                      |
+| System-Only            | Falso                                                                             |
+| Es de un solo valor       | Verdadero                                                                              |
+| Está indexado             | Falso                                                                             |
+| En el catálogo global      | Falso                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                      |
 | Range-Lower            | \-                                                                                |
 | Range-Upper            | \-                                                                                |
 | Search-Flags           | 0x00000000                                                                        |
 | System-Flags           | 0x00000010                                                                        |
-| Clases usadas en        | [**MS-net-IEEE-8023-GroupPolicy**](c-ms-net-ieee-8023-grouppolicy.md)<br/> |
+| Clases usadas en        | [**ms-net-ieee-8023-GroupPolicy**](c-ms-net-ieee-8023-grouppolicy.md)<br/> |
 
 
 
@@ -93,18 +93,18 @@ Contiene un GUID que identifica un objeto 802,3 directiva de grupo específico e
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                |
+| Id. de vínculo                | \-                                                                                |
 | MAPI-Id                | \-                                                                                |
-| System-Only            | False                                                                             |
-| Tiene un único valor       | True                                                                              |
-| Está indexado             | False                                                                             |
-| En el catálogo global      | False                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                      |
+| System-Only            | Falso                                                                             |
+| Es de un solo valor       | Verdadero                                                                              |
+| Está indexado             | Falso                                                                             |
+| En el catálogo global      | Falso                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                      |
 | Range-Lower            | \-                                                                                |
 | Range-Upper            | \-                                                                                |
 | Search-Flags           | 0x00000000                                                                        |
 | System-Flags           | 0x00000010                                                                        |
-| Clases usadas en        | [**MS-net-IEEE-8023-GroupPolicy**](c-ms-net-ieee-8023-grouppolicy.md)<br/> |
+| Clases usadas en        | [**ms-net-ieee-8023-GroupPolicy**](c-ms-net-ieee-8023-grouppolicy.md)<br/> |
 
 
 

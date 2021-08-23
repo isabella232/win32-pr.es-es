@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 09c6d0f9400a04cc6e5a8ed4bd49ec7075b3c190
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 12d12928196a7c9389f1ee2417977d2e74bdf2753e4a4d87c93e3d796d8fa295
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108089812"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119547475"
 ---
 # <a name="copy-method-of-the-cim_devicefile-class"></a>Método Copy de la clase \_ DeviceFile de CIM
 
@@ -30,7 +30,7 @@ El **método Copy** copia el archivo lógico (o directorio) especificado en la r
 
  
 
-En este tema se Managed Object Format sintaxis de MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -72,7 +72,7 @@ Correcto.
 **2**
 </dt> <dd>
 
-Acceso denegado.
+Acceso denegado:
 
 </dd> <dt>
 
@@ -142,7 +142,7 @@ Archivo de inicio no válido.
 **17**
 </dt> <dd>
 
-Privilegios no mantenidos.
+Privilegio no mantenido.
 
 </dd> <dt>
 
@@ -157,7 +157,7 @@ Parámetro no válido.
 
 Wmi no implementa actualmente este método. Para usar este método, debe implementarlo en su propio proveedor.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -173,7 +173,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

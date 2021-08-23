@@ -4,21 +4,21 @@ description: Esta propiedad ya no está disponible para su uso. | Propiedad Port
 ms.assetid: 8d831ed3-1f4a-41a9-b283-507c5d9eea22
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad PortablePassword
-- Propiedad PortablePassword Servicios de Escritorio remoto, interfaz IMsTscNonScriptable
-- Servicios de Escritorio remoto de la interfaz IMsTscNonScriptable, propiedad PortablePassword
-- Servicios de Escritorio remoto de la propiedad PortablePassword, objeto MsTscAx
-- Servicios de Escritorio remoto de objeto MsTscAx, propiedad PortablePassword
-- Propiedad PortablePassword Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable, propiedad PortablePassword
-- Propiedad PortablePassword Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable2, propiedad PortablePassword
-- Propiedad PortablePassword Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable3, propiedad PortablePassword
-- Propiedad PortablePassword Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable4, propiedad PortablePassword
-- Propiedad PortablePassword Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable5, propiedad PortablePassword
+- Propiedad PortablePassword Servicios de Escritorio remoto
+- Propiedad PortablePassword Servicios de Escritorio remoto , interfaz IMsTscNonScriptable
+- Interfaz IMsTscNonScriptable Servicios de Escritorio remoto , propiedad PortablePassword
+- Propiedad PortablePassword Servicios de Escritorio remoto , objeto MsTscAx
+- Objeto MsTscAx Servicios de Escritorio remoto , propiedad PortablePassword
+- Propiedad PortablePassword Servicios de Escritorio remoto , interfaz IMsRdpClientNonScriptable
+- Interfaz IMsRdpClientNonScriptable Servicios de Escritorio remoto , propiedad PortablePassword
+- Propiedad PortablePassword Servicios de Escritorio remoto , interfaz IMsRdpClientNonScriptable2
+- Interfaz IMsRdpClientNonScriptable2 Servicios de Escritorio remoto , propiedad PortablePassword
+- Propiedad PortablePassword Servicios de Escritorio remoto , interfaz IMsRdpClientNonScriptable3
+- Interfaz IMsRdpClientNonScriptable3 Servicios de Escritorio remoto , propiedad PortablePassword
+- Propiedad PortablePassword Servicios de Escritorio remoto , interfaz IMsRdpClientNonScriptable4
+- Interfaz IMsRdpClientNonScriptable4 Servicios de Escritorio remoto , propiedad PortablePassword
+- Propiedad PortablePassword Servicios de Escritorio remoto , interfaz IMsRdpClientNonScriptable5
+- Interfaz IMsRdpClientNonScriptable5 Servicios de Escritorio remoto , propiedad PortablePassword
 topic_type:
 - apiref
 api_name:
@@ -47,20 +47,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a5259e83087287395e6114bb8ffe3eb7e859ab52
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: fad57f972d3f33f199a3908f1c088f889fa7a56933878cd616feadd418f9424f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105678699"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119512045"
 ---
-# <a name="imstscnonscriptableportablepassword-property"></a>IMsTscNonScriptable::P propiedad ortablePassword
+# <a name="imstscnonscriptableportablepassword-property"></a>Propiedad IMsTscNonScriptable::P ortablePassword
 
 Esta propiedad ya no está disponible para su uso.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -77,7 +77,7 @@ HRESULT get_PortablePassword(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-La nueva parte de la contraseña, en formato codificado portable.
+La nueva parte de contraseña, en formato codificado portable.
 
 ## <a name="error-codes"></a>Códigos de error
 
@@ -87,7 +87,7 @@ Devuelve **E \_ NOTIMPL**.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
@@ -95,7 +95,7 @@ Devuelve **E \_ NOTIMPL**.
 | Fin de compatibilidad de servidor<br/>    | No se admite ninguno<br/>                                                              |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsTscNonScriptable se define como c1e6743a-41c1-4a74-832A-0dd06c1c7a0e<br/> |
+| IID<br/>                      | IID \_ IMsTscNonScriptable se define como c1e6743a-41c1-4a74-832a-0dd06c1c7a0e<br/> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Given-Name atributo)
+title: Given-Name atributo
 description: Contiene el nombre especificado (nombre) del usuario.
 ms.assetid: acffe751-9911-4e80-8a26-351a21a6385e
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Given-Name
-- atributo givenName esquema de AD
+- Given-Name esquema de AD de atributo
+- Esquema de AD del atributo givenName
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a76ab181c6aaf03c2a497be1718df789bfddc6b0
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8ee788506d098123888a9389d9256dd4203cae463cf008723e99e8180750d591
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906082"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119706065"
 ---
-# <a name="given-name-attribute"></a>Given-Name atributo)
+# <a name="given-name-attribute"></a>Given-Name atributo
 
 Contiene el nombre especificado (nombre) del usuario.
 
@@ -30,13 +30,13 @@ Contiene el nombre especificado (nombre) del usuario.
 | Entrada | Value |
 |-------------------|---------------------------------------------|
 | CN                | Given-Name                                  |
-| Nombre para mostrar de LDAP | givenName                                   |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | Administrador de dominio o propietario de la cuenta.      |
+| Ldap-Display-Name | givenName                                   |
+| Size              | \-                                          |
+| Actualizar privilegios  | Administrador de dominio o propietario de la cuenta.      |
 | Frecuencia de actualización  | Cuando se crea el registro del usuario.          |
 | Attribute-Id      | 2.5.4.42                                    |
-| System-ID-GUID    | f0f8ff8e-1191-11d0-a060-00aa006c33ed        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | f0f8ff8e-1191-11d0-a060-00aa006c33ed        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,13 +55,13 @@ Contiene el nombre especificado (nombre) del usuario.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x3A06                                                             |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | True                                                               |
-| En el catálogo global      | True                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Verdadero                                                               |
+| En el catálogo global      | Verdadero                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000005                                                         |
@@ -76,13 +76,13 @@ Contiene el nombre especificado (nombre) del usuario.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                     |
+| Id. de vínculo                | \-                                                                                                                     |
 | MAPI-Id                | 0x3A06                                                                                                                 |
-| System-Only            | False                                                                                                                  |
-| Tiene un único valor       | True                                                                                                                   |
-| Está indexado             | True                                                                                                                   |
-| En el catálogo global      | True                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                           |
+| System-Only            | Falso                                                                                                                  |
+| Es de un solo valor       | Verdadero                                                                                                                   |
+| Está indexado             | Verdadero                                                                                                                   |
+| En el catálogo global      | Verdadero                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                           |
 | Range-Lower            | 1                                                                                                                      |
 | Range-Upper            | 64                                                                                                                     |
 | Search-Flags           | 0x00000005                                                                                                             |
@@ -97,13 +97,13 @@ Contiene el nombre especificado (nombre) del usuario.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                     |
+| Id. de vínculo                | \-                                                                                                                     |
 | MAPI-Id                | 0x3A06                                                                                                                 |
-| System-Only            | False                                                                                                                  |
-| Tiene un único valor       | True                                                                                                                   |
-| Está indexado             | True                                                                                                                   |
-| En el catálogo global      | True                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                           |
+| System-Only            | Falso                                                                                                                  |
+| Es de un solo valor       | Verdadero                                                                                                                   |
+| Está indexado             | Verdadero                                                                                                                   |
+| En el catálogo global      | Verdadero                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                           |
 | Range-Lower            | 1                                                                                                                      |
 | Range-Upper            | 64                                                                                                                     |
 | Search-Flags           | 0x00000005                                                                                                             |
@@ -118,13 +118,13 @@ Contiene el nombre especificado (nombre) del usuario.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                     |
+| Id. de vínculo                | \-                                                                                                                     |
 | MAPI-Id                | 0x3A06                                                                                                                 |
-| System-Only            | False                                                                                                                  |
-| Tiene un único valor       | True                                                                                                                   |
-| Está indexado             | True                                                                                                                   |
-| En el catálogo global      | True                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                           |
+| System-Only            | Falso                                                                                                                  |
+| Es de un solo valor       | Verdadero                                                                                                                   |
+| Está indexado             | Verdadero                                                                                                                   |
+| En el catálogo global      | Verdadero                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                           |
 | Range-Lower            | 1                                                                                                                      |
 | Range-Upper            | 64                                                                                                                     |
 | Search-Flags           | 0x00000005                                                                                                             |
@@ -139,13 +139,13 @@ Contiene el nombre especificado (nombre) del usuario.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                     |
+| Id. de vínculo                | \-                                                                                                                     |
 | MAPI-Id                | 0x3A06                                                                                                                 |
-| System-Only            | False                                                                                                                  |
-| Tiene un único valor       | True                                                                                                                   |
-| Está indexado             | True                                                                                                                   |
-| En el catálogo global      | True                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                           |
+| System-Only            | Falso                                                                                                                  |
+| Es de un solo valor       | Verdadero                                                                                                                   |
+| Está indexado             | Verdadero                                                                                                                   |
+| En el catálogo global      | Verdadero                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                           |
 | Range-Lower            | 1                                                                                                                      |
 | Range-Upper            | 64                                                                                                                     |
 | Search-Flags           | 0x00000005                                                                                                             |
@@ -160,13 +160,13 @@ Contiene el nombre especificado (nombre) del usuario.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                     |
+| Id. de vínculo                | \-                                                                                                                     |
 | MAPI-Id                | 0x3A06                                                                                                                 |
-| System-Only            | False                                                                                                                  |
-| Tiene un único valor       | True                                                                                                                   |
-| Está indexado             | True                                                                                                                   |
-| En el catálogo global      | True                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                           |
+| System-Only            | Falso                                                                                                                  |
+| Es de un solo valor       | Verdadero                                                                                                                   |
+| Está indexado             | Verdadero                                                                                                                   |
+| En el catálogo global      | Verdadero                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                           |
 | Range-Lower            | 1                                                                                                                      |
 | Range-Upper            | 64                                                                                                                     |
 | Search-Flags           | 0x00000005                                                                                                             |

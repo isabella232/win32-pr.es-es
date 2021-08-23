@@ -1,10 +1,10 @@
 ---
-title: Enumeración DRM_INDIVIDUALIZATION_STATUS (Drmexternals. h)
-description: El \_ \_ tipo de enumeración estado de individualización de DRM define los Estados válidos para la individualización DRM. | Enumeración DRM_INDIVIDUALIZATION_STATUS (Drmexternals. h)
+title: DRM_INDIVIDUALIZATION_STATUS enumeración (Drmexternals.h)
+description: El tipo de enumeración DRM \_ INDIVIDUALIZATION \_ STATUS define los estados válidos para la individualización de DRM. | DRM_INDIVIDUALIZATION_STATUS enumeración (Drmexternals.h)
 ms.assetid: 76748fb3-340e-47e2-969d-5e857bb4e4d8
 keywords:
-- DRM_INDIVIDUALIZATION_STATUS enumeración formato de Windows Media
-- enumeración Windows Media Format
+- DRM_INDIVIDUALIZATION_STATUS de enumeración windows Media Format
+- enumeración windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e8d59a19c58c775ee22d78e17bc09add2825948e
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 081a8714d29cb48236bdb9191c15e92db96b18a9f8c1d9c2388c5baee7783296
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104424292"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705655"
 ---
-# <a name="drm_individualization_status-enumeration-drmexternalsh"></a>Enumeración DRM_INDIVIDUALIZATION_STATUS (Drmexternals. h)
+# <a name="drm_individualization_status-enumeration-drmexternalsh"></a>DRM_INDIVIDUALIZATION_STATUS enumeración (Drmexternals.h)
 
-El tipo de enumeración **\_ \_ Estado de individualización de DRM** define los Estados válidos para la [*individualización*](wmformat-glossary.md)DRM. Cuando una aplicación inicia la individualización con una llamada a [**IWMDRMReader:: individualizate**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-individualize), el progreso de la solicitud de individualización se transmite a la aplicación a través de las llamadas al método [**IWMStatusCallback:: en status**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstatuscallback-onstatus) . Todos los mensajes de estado de la individualización usarán el \_ miembro de usuario de WMT del tipo de enumeración [**\_ Estado de WMT**](/previous-versions/windows/desktop/api/Wmsdkidl/ne-wmsdkidl-wmt_status) como parámetro *status* . El estado de la individualización se pasa a **Alstatus** en el parámetro *pValue* .
+El **tipo de enumeración DRM \_ INDIVIDUALIZATION \_ STATUS** define los estados válidos para [*la individualización de*](wmformat-glossary.md)DRM. Cuando una aplicación inicia la individualización con una llamada a [**IWMDRMReader::Individualize**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-individualize), el progreso de la solicitud de individualización se transmite a la aplicación a través de llamadas al método [**IWMStatusCallback::OnStatus.**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstatuscallback-onstatus) Todos los mensajes de estado de individualización usarán el miembro WMT INDIVIDUALIZE del tipo de enumeración \_ [**WMT \_ STATUS**](/previous-versions/windows/desktop/api/Wmsdkidl/ne-wmsdkidl-wmt_status) como *parámetro Status.* El estado de la individualización se pasa a **OnStatus** en el *parámetro pValue.*
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -47,58 +47,58 @@ typedef enum DRM_INDIVIDUALIZATION_STATUS {
 
 <dl> <dt>
 
-<span id="INDI_UNDEFINED"></span><span id="indi_undefined"></span>**INDIr \_ sin definir**
+<span id="INDI_UNDEFINED"></span><span id="indi_undefined"></span>**INDI \_ UNDEFINED**
 </dt> <dd>
 
 Este valor está reservado para uso futuro.
 
 </dd> <dt>
 
-<span id="INDI_BEGIN"></span><span id="indi_begin"></span>**Inicio de INDI \_**
+<span id="INDI_BEGIN"></span><span id="indi_begin"></span>**INDI \_ BEGIN**
 </dt> <dd>
 
 Indica el inicio del proceso de individualización.
 
 </dd> <dt>
 
-<span id="INDI_SUCCEED"></span><span id="indi_succeed"></span>**INDI \_ correctamente**
+<span id="INDI_SUCCEED"></span><span id="indi_succeed"></span>**INDI \_ SUCCEED**
 </dt> <dd>
 
 Indica que se ha completado el proceso de individualización.
 
 </dd> <dt>
 
-<span id="INDI_FAIL"></span><span id="indi_fail"></span>**error de INDI \_**
+<span id="INDI_FAIL"></span><span id="indi_fail"></span>**ERROR \_ DE INDI**
 </dt> <dd>
 
-Indica que se ha producido un error en el proceso de individualización.
+Indica que se ha fallado el proceso de individualización.
 
 </dd> <dt>
 
-<span id="INDI_CANCEL"></span><span id="indi_cancel"></span>**cancelación de INDI \_**
+<span id="INDI_CANCEL"></span><span id="indi_cancel"></span>**INDI \_ CANCEL**
 </dt> <dd>
 
-Indica que el proceso de individualización se canceló como resultado de una llamada a [**IWMDRMReader:: CancelIndividualization**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-cancelindividualization).
+Indica que el proceso de individualización se canceló como resultado de una llamada a [**IWMDRMReader::CancelIndividualization**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-cancelindividualization).
 
 </dd> <dt>
 
-<span id="INDI_DOWNLOAD"></span><span id="indi_download"></span>**descarga de INDI \_**
+<span id="INDI_DOWNLOAD"></span><span id="indi_download"></span>**DESCARGA \_ DE INDI**
 </dt> <dd>
 
 Indica que se está descargando la actualización de seguridad.
 
 </dd> <dt>
 
-<span id="INDI_INSTALL"></span><span id="indi_install"></span>**instalación de INDI \_**
+<span id="INDI_INSTALL"></span><span id="indi_install"></span>**INSTALACIÓN \_ DE INDI**
 </dt> <dd>
 
 Indica que se está instalando la actualización de seguridad.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta enumeración se usa en la estructura de [**\_ \_ Estado**](wm-individualize-status.md) de la función de WM.
+La estructura WM [**\_ INDIVIDUALIZE \_ STATUS**](wm-individualize-status.md) utiliza esta enumeración.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -108,8 +108,8 @@ Esta enumeración se usa en la estructura de [**\_ \_ Estado**](wm-individualize
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                      |
-| Versión<br/>                  | SDK de Windows Media Format 7 o versiones posteriores del SDK<br/>                       |
-| Encabezado<br/>                   | <dl> <dt>Drmexternals. h</dt> </dl> |
+| Versión<br/>                  | Windows SDK de formato multimedia 7 o versiones posteriores del SDK<br/>                       |
+| Header<br/>                   | <dl> <dt>Drmexternals.h</dt> </dl> |
 
 
 
@@ -117,7 +117,7 @@ Esta enumeración se usa en la estructura de [**\_ \_ Estado**](wm-individualize
 
 <dl> <dt>
 
-[**\_Estado http de DRM \_**](drm-http-status.md)
+[**ESTADO \_ HTTP DE DRM \_**](drm-http-status.md)
 </dt> <dt>
 
 [**Tipos de enumeración**](enumeration-types.md)

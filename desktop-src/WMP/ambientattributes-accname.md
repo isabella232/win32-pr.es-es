@@ -3,7 +3,7 @@ title: AmbientAttributes.accName
 description: El atributo accName especifica o recupera un nombre para cualquier elemento.
 ms.assetid: 4cb453c9-1b5b-4bd9-8ae4-6d4bccc45562
 keywords:
-- AmbientAttributes. accName Windows Media Player
+- AmbientAttributes.accName Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 506af45bd214a91eda26b19453810ae90629dec9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a525688683584b112ae002b4179ae68623a5709d67685ad38b34256226f55f62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699545"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509665"
 ---
 # <a name="ambientattributesaccname"></a>AmbientAttributes.accName
 
-El atributo **accName** especifica o recupera un nombre para cualquier elemento.
+El **atributo accName** especifica o recupera un nombre para cualquier elemento.
 
 ``` syntax
         elementID.accName
@@ -29,11 +29,11 @@ El atributo **accName** especifica o recupera un nombre para cualquier elemento.
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura con un valor predeterminado igual al atributo **ID** .
+Este atributo es una cadena de lectura **y** escritura con un valor predeterminado igual al **atributo id.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo se usa para fines de accesibilidad. Permite que un programa lector lea en voz alta el nombre de cualquier elemento.
+Este atributo se usa con fines de accesibilidad. Permite que un programa de lector lea en voz alta el nombre de cualquier elemento.
 
 Este atributo también se aplica a los elementos de botón dentro de un control de grupo de botones.
 
@@ -41,9 +41,9 @@ Este atributo también se aplica a los elementos de botón dentro de un control 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
@@ -51,7 +51,7 @@ Este atributo también se aplica a los elementos de botón dentro de un control 
 
 <dl> <dt>
 
-[**Atributos de ambiente**](ambient-attributes.md)
+[**Atributos ambientales**](ambient-attributes.md)
 </dt> </dl>
 
  

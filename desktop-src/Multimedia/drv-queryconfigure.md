@@ -1,9 +1,9 @@
 ---
-title: Mensaje de DRV_QUERYCONFIGURE (mmsystem. h)
+title: DRV_QUERYCONFIGURE mensaje (Mmsystem.h)
 description: Indica al controlador que especifique si admite la configuración personalizada.
 ms.assetid: fb2e36a7-8d6b-4b08-b2d7-e128ca7082dc
 keywords:
-- Mensaje de DRV_QUERYCONFIGURE de Windows multimedia
+- DRV_QUERYCONFIGURE mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 66780106fdd42364d247db534a838842f25dc16a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 22c49ec54d1822bbc9ddc4d2606f8905a21c5193322a12df335549074dacdea3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104274544"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119691575"
 ---
-# <a name="drv_queryconfigure-message"></a>\_Mensaje QUERYCONFIGURE DRV
+# <a name="drv_queryconfigure-message"></a>DRV \_ QUERYCONFIGURE message
 
 Indica al controlador que especifique si admite la configuración personalizada.
 
@@ -32,7 +32,7 @@ Indica al controlador que especifique si admite la configuración personalizada.
 <span id="dwDriverId"></span><span id="dwdriverid"></span><span id="DWDRIVERID"></span>*dwDriverId*
 </dt> <dd>
 
-Identificador del controlador instalable. Este es el mismo valor que el controlador devolvió previamente desde el mensaje [**\_ abierto DRV**](drv-open.md) .
+Identificador del controlador instalable. Este es el mismo valor devuelto anteriormente por el controlador del [**mensaje DRV \_ OPEN.**](drv-open.md)
 
 </dd> <dt>
 
@@ -45,11 +45,11 @@ Identificador de la instancia del controlador instalable.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor distinto de cero si el controlador puede mostrar un cuadro de diálogo de configuración o cero de lo contrario.
+Devuelve un valor distinto de cero si el controlador puede mostrar un cuadro de diálogo de configuración o cero en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-No se usan los parámetros *lParam1* y *lParam2* .
+No se usan los parámetros *lParam1* y *lParam2.*
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ No se usan los parámetros *lParam1* y *lParam2* .
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: La \_ enumeración de unidades de streaming WPD \_ especifica los tipos de unidad que se van a usar para las operaciones IPortableDeviceUnitsStream.
+description: La enumeración WPD STREAM UNITS especifica los tipos de unidad que se \_ \_ usarán para las operaciones IPortableDeviceUnitsStream.
 ms.assetid: BE668696-7AF3-44AA-891A-9BFF67FB5544
-title: Enumeración WPD_STREAM_UNITS (PortableDeviceTypes. h)
+title: WPD_STREAM_UNITS enumeración (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDeviceTypes.h
-ms.openlocfilehash: 8e70455402a49673b574a0c696b6dda30cc6a884
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d2419453beac6b493ddd1bbbe1281b1596ce00456599074b3872fecb003550c5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103816806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119440765"
 ---
-# <a name="wpd_stream_units-enumeration"></a>\_Enumeración de unidades de streaming WPD \_
+# <a name="wpd_stream_units-enumeration"></a>Enumeración \_ WPD STREAM \_ UNITS
 
-La enumeración de **\_ \_ unidades de streaming WPD** especifica los tipos de unidad que se van a usar para las operaciones [**IPortableDeviceUnitsStream**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceunitsstream) .
+La **enumeración \_ WPD STREAM \_ UNITS** especifica los tipos de unidad que se usarán para las [**operaciones IPortableDeviceUnitsStream.**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceunitsstream)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,38 +43,38 @@ typedef enum _WPD_STREAM_UNITS {
 
 <dl> <dt>
 
-<span id="WPD_STREAM_UNITS_BYTES"></span><span id="wpd_stream_units_bytes"></span>**\_ \_ bytes de unidades de STREAMing WPD \_**
+<span id="WPD_STREAM_UNITS_BYTES"></span><span id="wpd_stream_units_bytes"></span>**BYTES DE \_ UNIDADES DE \_ FLUJO WPD \_**
 </dt> <dd>
 
-Las unidades de streaming se especifican en bytes.
+Las unidades de flujo se especifican en bytes.
 
 </dd> <dt>
 
-<span id="WPD_STREAM_UNITS_FRAMES"></span><span id="wpd_stream_units_frames"></span>**\_ \_ tramas de unidades de STREAMing WPD \_**
+<span id="WPD_STREAM_UNITS_FRAMES"></span><span id="wpd_stream_units_frames"></span>**MARCOS DE \_ UNIDADES \_ DE FLUJO WPD \_**
 </dt> <dd>
 
-Las unidades de streaming se especifican en fotogramas.
+Las unidades de flujo se especifican en fotogramas.
 
 </dd> <dt>
 
-<span id="WPD_STREAM_UNITS_ROWS"></span><span id="wpd_stream_units_rows"></span>**\_filas de unidades de streaming de WPD \_ \_**
+<span id="WPD_STREAM_UNITS_ROWS"></span><span id="wpd_stream_units_rows"></span>**FILAS DE \_ UNIDADES DE \_ FLUJO WPD \_**
 </dt> <dd>
 
-Las unidades de streaming se especifican en filas.
+Las unidades de flujo se especifican en filas.
 
 </dd> <dt>
 
-<span id="WPD_STREAM_UNITS_MILLISECONDS"></span><span id="wpd_stream_units_milliseconds"></span>**unidades de streaming de WPD en \_ \_ \_ milisegundos**
+<span id="WPD_STREAM_UNITS_MILLISECONDS"></span><span id="wpd_stream_units_milliseconds"></span>**UNIDADES \_ DE FLUJO \_ WPD \_ MILISEGUNDOS**
 </dt> <dd>
 
-Las unidades de streaming se especifican en milisegundos.
+Las unidades de flujo se especifican en milisegundos.
 
 </dd> <dt>
 
-<span id="WPD_STREAM_UNITS_MICROSECONDS"></span><span id="wpd_stream_units_microseconds"></span>**unidades de streaming de WPD en \_ \_ \_ microsegundos**
+<span id="WPD_STREAM_UNITS_MICROSECONDS"></span><span id="wpd_stream_units_microseconds"></span>**\_MICROSEGUNDOS \_ DE UNIDADES DE \_ FLUJO WPD**
 </dt> <dd>
 
-Las unidades de streaming se especifican en microsegundos.
+Las unidades de flujo se especifican en microsegundos.
 
 </dd> </dl>
 
@@ -84,9 +84,9 @@ Las unidades de streaming se especifican en microsegundos.
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                        |
-| Encabezado<br/>                   | <dl> <dt>PortableDeviceTypes. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>PortableDeviceTypes.h</dt> </dl> |
 
 
 

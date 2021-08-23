@@ -1,6 +1,6 @@
 ---
-title: Método ID3DX12PipelineParserCallbacks StreamOutputCb (D3DX12. h)
-description: Llama a la devolución de llamada de subobjeto de descripción de salida de flujo de un objeto que implementa esta interfaz.
+title: Método Id3DX12PipelineParserCallbacks StreamOutputCb (D3DX12.h)
+description: Llama a la devolución de llamada del subobjeto de descripción de salida de secuencia de un objeto que implementa esta interfaz.
 ms.assetid: 93447ABE-A942-4562-A532-600EC63072DA
 keywords:
 - Método StreamOutputCb
@@ -17,16 +17,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae32f084edd2b6af374aa9b1cac4e563ef8a2eb6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f1e484d044bc4de2be3d40c6080e77b62aa57b59f0161c2021b8696316970542
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119632355"
 ---
-# <a name="id3dx12pipelineparsercallbacksstreamoutputcb-method"></a>ID3DX12PipelineParserCallbacks:: StreamOutputCb (método)
+# <a name="id3dx12pipelineparsercallbacksstreamoutputcb-method"></a>Método ID3DX12PipelineParserCallbacks::StreamOutputCb
 
-Llama a la devolución de llamada de subobjeto de descripción de salida de flujo de un objeto que implementa esta interfaz.
+Llama a la devolución de llamada del subobjeto de descripción de salida de secuencia de un objeto que implementa esta interfaz.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,12 +43,12 @@ void StreamOutputCb(
 
 <dl> <dt>
 
-*StreamOutput* \[ CLI\]
+*StreamOutput* \[ Ref\]
 </dt> <dd>
 
-Tipo: **[**D3D12 de \_ \_ salida de \_ flujo**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_stream_output_desc) const**
+Tipo: **const [**D3D12 \_ STREAM OUTPUT \_ \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_stream_output_desc)**
 
-Detalles del subobjeto de descripción de salida de flujo analizado desde una secuencia de estado de canalización.
+Detalles del subobjeto de descripción de salida de la secuencia analizada desde una secuencia de estado de canalización.
 
 </dd> </dl>
 
@@ -62,8 +62,8 @@ No devuelve nada.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX12. h</dt> </dl>  |
-| Biblioteca<br/> | <dl> <dt>D3D12. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX12.h</dt> </dl>  |
+| Biblioteca<br/> | <dl> <dt>D3D12.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>D3D12.dll</dt> </dl> |
 
 
@@ -72,13 +72,13 @@ No devuelve nada.
 
 <dl> <dt>
 
-[Interfaces auxiliares de Direct3D 12](helper-interfaces-for-d3d12.md)
+[Interfaces auxiliares para Direct3D 12](helper-interfaces-for-d3d12.md)
 </dt> <dt>
 
 [**ID3DX12PipelineParserCallbacks**](id3dx12pipelineparsercallbacks.md)
 </dt> <dt>
 
-[**DESC. de \_ salida de flujo D3D12 \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_stream_output_desc)
+[**D3D12 \_ STREAM \_ OUTPUT \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_stream_output_desc)
 </dt> </dl>
 
  

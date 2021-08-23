@@ -3,7 +3,7 @@ title: WM/MediaIsLive
 description: El atributo WM/MediaIsLive indica si el contenido es una difusión en directo.
 ms.assetid: 1eae83a5-c296-4ffe-9d7f-96ecaa3180b1
 keywords:
-- Formato de Windows Media WM/MediaIsLive
+- Formato multimedia de Windows WM/MediaIsLive
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e78b5735411c011015bf66674fe297a46e78d22
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 990cd0842a24e4911cc16f0d907ce87159b1ee9ae8de8de3ae7ac4e6a3c440e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104148944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119584435"
 ---
 # <a name="wmmediaislive"></a>WM/MediaIsLive
 
-El atributo **WM/MediaIsLive** indica si el contenido es una difusión en directo.
+El **atributo WM/MediaIsLive** indica si el contenido es una difusión en directo.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,11 +29,11 @@ g \_ wszWMMediaIsLive
 
 ## <a name="data-type"></a>Tipo de datos
 
-**tipo de WMT \_ \_ bool**
+**WMT \_ TYPE \_ BOOL**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo se utiliza para la televisión de difusión.
+Este atributo se usa para la televisión de difusión.
 
 ## <a name="see-also"></a>Vea también
 
@@ -42,9 +42,9 @@ Este atributo se utiliza para la televisión de difusión.
 [**Lista de atributos**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

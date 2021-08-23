@@ -1,11 +1,11 @@
 ---
-title: GP-Options atributo)
+title: GP-Options atributo
 description: Opciones que afectan a todas las directivas de grupo asociadas al objeto que hospeda esta propiedad.
 ms.assetid: 180ada21-7185-4589-a5a2-2cd1bbe64d0c
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de GP-Options
-- atributo de gPOptions esquema de AD
+- GP-Options esquema de AD del atributo
+- Esquema de AD del atributo gPOptions
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 289537abf29601caf2921b670428defbc494c9f5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c82aa5eb16aff76fbae8030e8995b6a7d5592777b11d11602eac3030f3aac84c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997476"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705965"
 ---
-# <a name="gp-options-attribute"></a>GP-Options atributo)
+# <a name="gp-options-attribute"></a>GP-Options atributo
 
 Opciones que afectan a todas las directivas de grupo asociadas al objeto que hospeda esta propiedad.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | GP-Options                           |
-| Nombre para mostrar de LDAP | gPOptions                            |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | gPOptions                            |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.892               |
-| System-ID-GUID    | f30e3bbf-9ff0-11d1-b603-0000f80367c1 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | f30e3bbf-9ff0-11d1-b603-0000f80367c1 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -55,18 +55,18 @@ Opciones que afectan a todas las directivas de grupo asociadas al objeto que hos
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                                            |
-| System-Only            | False                                                                                                                                         |
-| Tiene un único valor       | True                                                                                                                                          |
-| Está indexado             | False                                                                                                                                         |
-| En el catálogo global      | False                                                                                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                  |
+| System-Only            | Falso                                                                                                                                         |
+| Es de un solo valor       | Verdadero                                                                                                                                          |
+| Está indexado             | Falso                                                                                                                                         |
+| En el catálogo global      | Falso                                                                                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                  |
 | Range-Lower            | \-                                                                                                                                            |
 | Range-Upper            | \-                                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                                    |
-| Clases usadas en        | [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sitio**](c-site.md)<br/> |
+| Clases usadas en        | [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sitio**](c-site.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Opciones que afectan a todas las directivas de grupo asociadas al objeto que hos
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                                |
-| System-Only            | False                                                                                                                                                                                             |
-| Tiene un único valor       | True                                                                                                                                                                                              |
-| Está indexado             | False                                                                                                                                                                                             |
-| En el catálogo global      | False                                                                                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                      |
+| System-Only            | Falso                                                                                                                                                                                             |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                              |
+| Está indexado             | Falso                                                                                                                                                                                             |
+| En el catálogo global      | Falso                                                                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                                        |
-| Clases usadas en        | [**Configuración**](c-configuration.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sitio**](c-site.md)<br/> |
+| Clases usadas en        | [**Configuración**](c-configuration.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sitio**](c-site.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Opciones que afectan a todas las directivas de grupo asociadas al objeto que hos
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                                |
-| System-Only            | False                                                                                                                                                                                             |
-| Tiene un único valor       | True                                                                                                                                                                                              |
-| Está indexado             | False                                                                                                                                                                                             |
-| En el catálogo global      | False                                                                                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                      |
+| System-Only            | Falso                                                                                                                                                                                             |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                              |
+| Está indexado             | Falso                                                                                                                                                                                             |
+| En el catálogo global      | Falso                                                                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                                        |
-| Clases usadas en        | [**Configuración**](c-configuration.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sitio**](c-site.md)<br/> |
+| Clases usadas en        | [**Configuración**](c-configuration.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sitio**](c-site.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Opciones que afectan a todas las directivas de grupo asociadas al objeto que hos
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                                |
-| System-Only            | False                                                                                                                                                                                             |
-| Tiene un único valor       | True                                                                                                                                                                                              |
-| Está indexado             | False                                                                                                                                                                                             |
-| En el catálogo global      | False                                                                                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                      |
+| System-Only            | Falso                                                                                                                                                                                             |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                              |
+| Está indexado             | Falso                                                                                                                                                                                             |
+| En el catálogo global      | Falso                                                                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                                        |
-| Clases usadas en        | [**Configuración**](c-configuration.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sitio**](c-site.md)<br/> |
+| Clases usadas en        | [**Configuración**](c-configuration.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sitio**](c-site.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Opciones que afectan a todas las directivas de grupo asociadas al objeto que hos
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                                |
-| System-Only            | False                                                                                                                                                                                             |
-| Tiene un único valor       | True                                                                                                                                                                                              |
-| Está indexado             | False                                                                                                                                                                                             |
-| En el catálogo global      | False                                                                                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                      |
+| System-Only            | Falso                                                                                                                                                                                             |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                              |
+| Está indexado             | Falso                                                                                                                                                                                             |
+| En el catálogo global      | Falso                                                                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                                        |
-| Clases usadas en        | [**Configuración**](c-configuration.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sitio**](c-site.md)<br/> |
+| Clases usadas en        | [**Configuración**](c-configuration.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sitio**](c-site.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Opciones que afectan a todas las directivas de grupo asociadas al objeto que hos
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                                |
-| System-Only            | False                                                                                                                                                                                             |
-| Tiene un único valor       | True                                                                                                                                                                                              |
-| Está indexado             | False                                                                                                                                                                                             |
-| En el catálogo global      | False                                                                                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                      |
+| System-Only            | Falso                                                                                                                                                                                             |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                              |
+| Está indexado             | Falso                                                                                                                                                                                             |
+| En el catálogo global      | Falso                                                                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                                        |
-| Clases usadas en        | [**Configuración**](c-configuration.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sitio**](c-site.md)<br/> |
+| Clases usadas en        | [**Configuración**](c-configuration.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sitio**](c-site.md)<br/> |
 
 
 

@@ -1,8 +1,8 @@
 ---
-description: Comprime el archivo de paginación lógica (o directorio) especificado en la ruta de acceso del objeto.
+description: Comprime el archivo de paginación lógico (o directorio) especificado en la ruta de acceso del objeto.
 ms.assetid: ebc69c9d-5a86-462b-9362-1ae02869ffa2
 ms.tgt_platform: multiple
-title: Método compress de la clase Win32_PageFile
+title: Método Compress de la Win32_PageFile clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: eabbe266356a5a5f4b0645b897bf36288b6174de
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 67219703bcc5a1f829d595e0e32ec2dbe85fc2259861e475c2d645139c88fff6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907026"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119547725"
 ---
-# <a name="compress-method-of-the-win32_pagefile-class"></a>Método compress de la clase de archivo de \_ paginación Win32
+# <a name="compress-method-of-the-win32_pagefile-class"></a>Método Compress de la clase PageFile de Win32 \_
 
-El método **compress** [WMI Class](/windows/desktop/WmiSdk/retrieving-a-class) comprime el archivo de paginación lógico (o directorio) especificado en la ruta de acceso del objeto.
+El **método de** [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) Compress comprime el archivo de paginación lógico (o directorio) especificado en la ruta de acceso del objeto.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de 0 (cero) si el archivo se ha comprimido correctamente y cualquier otro número para indicar un error.
+Devuelve un valor de 0 (cero) si el archivo se comprimió correctamente y cualquier otro número para indicar un error.
 
 <dl> <dt>
 
@@ -63,7 +63,7 @@ Se denegó el acceso.
 **8**
 </dt> <dd>
 
-Se produjo un error no especificado.
+Error no especificado.
 
 </dd> <dt>
 
@@ -91,7 +91,7 @@ El sistema de archivos no es NTFS.
 **12**
 </dt> <dd>
 
-La plataforma no es Windows.
+La plataforma no está Windows.
 
 </dd> <dt>
 
@@ -112,7 +112,7 @@ El directorio no está vacío.
 **15**
 </dt> <dd>
 
-Se ha producido una infracción de uso compartido.
+Se ha infringido el uso compartido.
 
 </dd> <dt>
 
@@ -145,8 +145,8 @@ Un parámetro especificado no es válido.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -158,7 +158,7 @@ Un parámetro especificado no es válido.
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**Archivo de \_ paginación Win32**](win32-pagefile.md)
+[**Win32 \_ PageFile**](win32-pagefile.md)
 </dt> </dl>
 
  

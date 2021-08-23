@@ -1,17 +1,17 @@
 ---
 description: Otro nombre de estado de dirección del contacto.
 ms.assetid: 9a6381c8-5228-445f-8f7a-a3cc69737e61
-title: System. contact. OtherAddressState
+title: System.Contact.OtherAddressState
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e8a24556962b33a5ada75c7cbf6f00ade090e0a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 37a6d02f28f4b1bcb2b713b83b0919d93d26a6a91d957b0a1f0566e34ab4310e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716938"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119599285"
 ---
-# <a name="systemcontactotheraddressstate"></a>System. contact. OtherAddressState
+# <a name="systemcontactotheraddressstate"></a>System.Contact.OtherAddressState
 
 Otro nombre de estado de dirección del contacto.
 
@@ -30,9 +30,9 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

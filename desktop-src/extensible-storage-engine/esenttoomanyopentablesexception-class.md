@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: clase EsentTooManyOpenTablesException'
+description: 'Más información sobre: Clase EsentTooManyOpenTablesException'
 title: Clase EsentTooManyOpenTablesException
 TOCTitle: EsentTooManyOpenTablesException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentTooManyOpenTablesException
@@ -24,32 +24,32 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 066191af07aab606731f98a16369b2500d24cda6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aa166efdba39c3d8d877768cec8e2163664e6811bfbb3831824e27fc9a2003db
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155416"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119604465"
 ---
 # <a name="esenttoomanyopentablesexception-class"></a>Clase EsentTooManyOpenTablesException
 
-Clase base para JET_err. Excepciones TooManyOpenTables.
+Clase base para JET_err. Excepciones de TooManyOpenTables.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
   [System.Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. esent. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. esent. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. esent. Interop. EsentOperationException](./esentoperationexception-class.md)  
-          [Microsoft. ISAM. esent. Interop. EsentResourceException](./esentresourceexception-class.md)  
-            [Microsoft. ISAM. esent. Interop. EsentQuotaException](./esentquotaexception-class.md)  
-              Microsoft. ISAM. esent. Interop. EsentTooManyOpenTablesException  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentOperationException](./esentoperationexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentResourceException](./esentresourceexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentQuotaException](./esentquotaexception-class.md)  
+              Microsoft.Isam.Esent.Interop.EsentTooManyOpenTablesException  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -75,4 +75,4 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 [Miembros de EsentTooManyOpenTablesException](./esenttoomanyopentablesexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

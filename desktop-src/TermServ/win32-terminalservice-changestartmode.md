@@ -1,12 +1,12 @@
 ---
 title: Método ChangeStartMode de la clase Win32_Service (Servicios de Escritorio remoto)
-description: Modifica el modo de inicio de un TerminalService de Win32 \_ .
+description: Modifica el modo de inicio de un TerminalService de \_ Win32.
 ms.assetid: 4F4B8CFC-B38C-47C6-A2BA-D498EC2B7F55
 ms.tgt_platform: multiple
 keywords:
 - Método ChangeStartMode Servicios de Escritorio remoto
-- Método ChangeStartMode Servicios de Escritorio remoto, clase Win32_Service
-- Win32_Service de clase Servicios de Escritorio remoto, método ChangeStartMode
+- Método ChangeStartMode Servicios de Escritorio remoto , Win32_Service clase
+- Win32_Service clase Servicios de Escritorio remoto método , ChangeStartMode
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a46c6b72fbb070dac32b2b6990a217068c77da9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cf7189d687c8cdc58122da4e20750c6158396587cf07b08f6fc53cecee625ebd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105685964"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119514395"
 ---
 # <a name="changestartmode-method-of-the-win32_service-class-remote-desktop-services"></a>Método ChangeStartMode de la clase Win32_Service (Servicios de Escritorio remoto)
 
-El método de [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **ChangeStartMode** modifica el modo de inicio de [**un \_ TerminalService de Win32**](win32-terminalservice.md).
+El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **ChangeStartMode** modifica el modo de inicio de [**un \_ TerminalService de Win32.**](win32-terminalservice.md)
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,10 +45,10 @@ uint32 ChangeStartMode(
 
 <dl> <dt>
 
-*StartMode* \[ de\]
+*StartMode* \[ En\]
 </dt> <dd>
 
-Modo de inicio del servicio base de Windows.
+Modo de inicio del Windows base.
 
 <dt>
 
@@ -59,18 +59,18 @@ Modo de inicio del servicio base de Windows.
 
 </dt> <dd>
 
-Controlador de dispositivo Iniciado por el cargador del sistema operativo. Este valor solamente es válido para servicios de controladores.
+Controlador de dispositivo iniciado por el cargador del sistema operativo. Este valor solamente es válido para servicios de controladores.
 
 </dd> <dt>
 
 <span id="System"></span><span id="system"></span><span id="SYSTEM"></span>
 
-<span id="System"></span><span id="system"></span><span id="SYSTEM"></span>**Integrado**
+<span id="System"></span><span id="system"></span><span id="SYSTEM"></span>**Sistema**
 
 
 </dt> <dd>
 
-Controlador de dispositivo Iniciado por el proceso de inicialización del sistema operativo. Este valor solamente es válido para servicios de controladores.
+Controlador de dispositivo iniciado por el proceso de inicialización del sistema operativo. Este valor solamente es válido para servicios de controladores.
 
 </dd> <dt>
 
@@ -81,7 +81,7 @@ Controlador de dispositivo Iniciado por el proceso de inicialización del sistem
 
 </dt> <dd>
 
-Servicio que el administrador de control de servicios iniciará automáticamente durante el inicio del sistema.
+Servicio que el Administrador de control de servicios iniciará automáticamente durante el inicio del sistema.
 
 </dd> <dt>
 
@@ -92,13 +92,13 @@ Servicio que el administrador de control de servicios iniciará automáticamente
 
 </dt> <dd>
 
-Servicio que el administrador de control de servicios iniciará cuando un proceso llame al método [**StartService**](win32-terminalservice-startservice.md) .
+Servicio que va a iniciar el Administrador de control de servicios cuando un proceso llama al [**método StartService.**](win32-terminalservice-startservice.md)
 
 </dd> <dt>
 
 <span id="Disabled"></span><span id="disabled"></span><span id="DISABLED"></span>
 
-<span id="Disabled"></span><span id="disabled"></span><span id="DISABLED"></span>**Disponible**
+<span id="Disabled"></span><span id="disabled"></span><span id="DISABLED"></span>**Deshabilitado**
 
 
 </dt> <dd>
@@ -109,7 +109,7 @@ Servicio que ya no se puede iniciar.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro valor para indicar un error. Para ver otros códigos de error, consulte [**constantes de error de WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores de **HRESULT** generales, vea [códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro valor para indicar un error. Para obtener códigos de error adicionales, [**vea Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -151,7 +151,7 @@ El código de control solicitado no es válido o no es aceptable para el servici
 **5**
 </dt> <dd>
 
-El código de control solicitado no se puede enviar al servicio porque el estado del servicio ([**Win32 \_ BaseService**](/windows/desktop/CIMWin32Prov/win32-baseservice).**State** Property) es igual a 0, 1 o 2.
+El código de control solicitado no se puede enviar al servicio porque el estado del servicio ([**Win32 \_ BaseService**](/windows/desktop/CIMWin32Prov/win32-baseservice).**State** property) es igual a 0, 1 o 2.
 
 </dd> <dt>
 
@@ -179,7 +179,7 @@ Error desconocido al iniciar el servicio.
 **9**
 </dt> <dd>
 
-No se encontró la ruta de acceso al directorio del archivo ejecutable del servicio.
+No se encontró la ruta de acceso del directorio al archivo ejecutable del servicio.
 
 </dd> <dt>
 
@@ -200,7 +200,7 @@ La base de datos para agregar un nuevo servicio está bloqueada.
 **12**
 </dt> <dd>
 
-Una dependencia de la que depende este servicio se ha quitado del sistema.
+Se ha quitado del sistema una dependencia en la que se basa este servicio.
 
 </dd> <dt>
 
@@ -242,14 +242,14 @@ El servicio no tiene ningún subproceso de ejecución.
 **18**
 </dt> <dd>
 
-El servicio tiene dependencias circulares al iniciarse.
+El servicio tiene dependencias circulares cuando se inicia.
 
 </dd> <dt>
 
 **19**
 </dt> <dd>
 
-Se está ejecutando un servicio con el mismo nombre.
+Un servicio se ejecuta con el mismo nombre.
 
 </dd> <dt>
 
@@ -270,7 +270,7 @@ Se han pasado parámetros no válidos al servicio.
 **22**
 </dt> <dd>
 
-La cuenta con la que se ejecuta este servicio no es válida o carece de permisos para ejecutar el servicio.
+La cuenta con la que se ejecuta este servicio no es válida o carece de los permisos para ejecutar el servicio.
 
 </dd> <dt>
 
@@ -290,7 +290,7 @@ El servicio se encuentra en pausa actualmente en el sistema.
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente [cambio de StartMode de un](https://Gallery.TechNet.Microsoft.Com/6d0f06ed-f840-4228-ad2d-e16ebe6a3aed) ejemplo de PowerShell de servicio, extraído de la galería de TechNet, cambia el modo de inicio de un servicio.
+El siguiente [cambio startMode de un ejemplo de](https://Gallery.TechNet.Microsoft.Com/6d0f06ed-f840-4228-ad2d-e16ebe6a3aed) PowerShell de servicio, que se extrajo de la Galería de TechNet, cambia el modo de inicio de un servicio.
 
 
 ```PowerShell
@@ -313,8 +313,8 @@ ELSE
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -323,16 +323,16 @@ ELSE
 
 <dl> <dt>
 
-[**\_Servicio Win32**](/windows/desktop/CIMWin32Prov/win32-service)
+[**Servicio \_ Win32**](/windows/desktop/CIMWin32Prov/win32-service)
 </dt> <dt>
 
 [Clases de sistema operativo](/windows/desktop/CIMWin32Prov/operating-system-classes)
 </dt> <dt>
 
-[**Win32 \_ TerminalService**](win32-terminalservice.md)
+[**TerminalService de Win32 \_**](win32-terminalservice.md)
 </dt> <dt>
 
-[Tareas WMI: servicios](/windows/desktop/WmiSdk/wmi-tasks--services)
+[Tareas wmi: servicios](/windows/desktop/WmiSdk/wmi-tasks--services)
 </dt> </dl>
 
  

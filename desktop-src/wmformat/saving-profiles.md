@@ -3,30 +3,30 @@ title: Guardar perfiles
 description: Guardar perfiles
 ms.assetid: 07c1ef16-6696-4314-aed8-58cda464b0db
 keywords:
-- SDK de Windows Media Format, guardar perfiles
-- SDK de Windows Media Format, almacenamiento de perfiles
-- perfiles, guardar
-- perfiles, interfaz IWMProfileManager
+- Windows SDK de formato multimedia, guardar perfiles
+- Windows SDK de formato multimedia, guardado de perfiles
+- profiles,saving
+- profiles,IWMProfileManager (interfaz)
 - IWMProfileManager, guardar perfiles
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 276b002f0b7f98de2e84f2c27a4f52bde25726bb
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 6befb09d7e0d628462bdd22e1e905c351be58dc077959089883ce3707dc493d3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104420240"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119547045"
 ---
 # <a name="saving-profiles"></a>Guardar perfiles
 
-Puede usar el método [**IWMProfileManager:: SaveProfile**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofilemanager-saveprofile) para guardar el contenido de un objeto de perfil en una cadena con formato XML. No se proporciona ningún método para almacenar la cadena de perfil en un archivo; puede usar las rutinas de e/s de archivo de su elección.
+Puede usar el método [**IWMProfileManager::SaveProfile**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofilemanager-saveprofile) para guardar el contenido de un objeto de perfil en una cadena con formato XML. No se proporciona ningún método para almacenar la cadena de perfil en un archivo; puede usar las rutinas de E/S de archivo que prefiera.
 
 > [!Note]  
-> Nunca debe modificar la cadena de perfil escrita en un archivo. Los cambios que desee realizar en un perfil deben realizarse mediante programación. Cambiar los valores en un archivo. prx puede producir resultados imprevisibles.
+> Nunca debe modificar la cadena de perfil escrita en un archivo. Los cambios que quiera realizar en un perfil se deben realizar mediante programación. El cambio de valores en un archivo .prx puede provocar resultados impredecibles.
 
- 
+ 
 
-El ejemplo siguiente es una función para guardar un perfil en un archivo mediante la e/s de archivo de estilo C estándar. Para compilar una aplicación que utiliza este ejemplo, debe incluir stdio. h en el proyecto.
+El ejemplo siguiente es una función para guardar un perfil en un archivo mediante E/S de archivo de estilo C estándar. Para compilar una aplicación que use este ejemplo, debe incluir stdio.h en el proyecto.
 
 
 ```C++
@@ -94,9 +94,9 @@ HRESULT ProfileToFile(IWMProfileManager* pProfileMgr,
 [**Trabajar con perfiles**](working-with-profiles.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Especifica el ancho de la región de Pan/Scan, en píxeles.
+description: Especifica el ancho de la región de panorámica o examen, en píxeles.
 ms.assetid: c0dcf305-ec81-45df-891c-8aaacd95f620
-title: Propiedad MFPKEY_RESIZE_PANSCANAPWIDTH (Wmcodecdsp. h)
+title: MFPKEY_RESIZE_PANSCANAPWIDTH propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 65040307901bf01fee6c095f32dd4e579b6caad3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f912541eb0ce5f0dab304c83bb90e7f7b0eef36f7d62685801ac5d11be01cf73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082470"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119603765"
 ---
-# <a name="mfpkey_resize_panscanapwidth-property"></a>MFPKEY \_ cambiar el tamaño de la \_ propiedad PANSCANAPWIDTH
+# <a name="mfpkey_resize_panscanapwidth-property"></a>Propiedad MFPKEY \_ RESIZE \_ PANSCANAPWIDTH
 
-Especifica el ancho de la región de Pan/Scan, en píxeles.
+Especifica el ancho de la región de panorámica o examen, en píxeles.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
@@ -25,7 +25,7 @@ VT \_ I4
 
 ## <a name="applies-to"></a>Se aplica a
 
--   [Vídeo de tamaño DSP](videoresizer.md)
+-   [DSP de cambio de tamaño de vídeo](videoresizer.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -33,9 +33,9 @@ VT \_ I4
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -43,7 +43,7 @@ VT \_ I4
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

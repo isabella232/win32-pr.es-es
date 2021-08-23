@@ -1,11 +1,11 @@
 ---
-title: Método Modify de la clase MicrosoftDNS_WKSType
-description: El método Modify actualiza un registro de recursos de Well-Known Services (WKS).
+title: Método Modify de la MicrosoftDNS_WKSType clase
+description: El método Modify actualiza un registro de recursos Well-Known Services (WKS).
 ms.assetid: 3a9100eb-dc90-45bb-9739-14026da100fd
 keywords:
-- Modificar DNS de método
-- Modificar el método DNS, MicrosoftDNS_WKSType clase
-- MicrosoftDNS_WKSType de clase DNS, Modify (método)
+- Modificación del dns del método
+- Modificar el método DNS , MicrosoftDNS_WKSType clase
+- MicrosoftDNS_WKSType clase DNS , Método Modify
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 30f7cf58a231d93288a3cdc170fa857bb12687af
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7d6f58a71b7d3a3237a744d42c90bc437714ed50553639253bafb0b2b9fb2977
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905388"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119692245"
 ---
-# <a name="modify-method-of-the-microsoftdns_wkstype-class"></a>Método Modify de la \_ clase MicrosoftDNS WKSType
+# <a name="modify-method-of-the-microsoftdns_wkstype-class"></a>Método Modify de la clase WKSType de MicrosoftDNS \_
 
-El método **Modify** actualiza un registro de recursos de Well-Known Services (WKS).
+El **método Modify** actualiza un registro de recursos Well-Known Services (WKS).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,7 +46,7 @@ void Modify(
 
 <dl> <dt>
 
-*TTL* \[ de en, opcional\]
+*TTL* \[ en, opcional\]
 </dt> <dd>
 
 Tiempo, en segundos, que un solucionador DNS puede almacenar en caché el RR.
@@ -67,17 +67,17 @@ Cadena que representa el protocolo IP para este registro. Los valores válidos s
 
 </dd> <dt>
 
-*Servicios* \[ de en, opcional\]
+*Servicios* \[ en, opcional\]
 </dt> <dd>
 
-Cadena que contiene todos los servicios utilizados por el registro de servicio conocido (WKS).
+Cadena que contiene todos los servicios utilizados por el registro Well Known Service (WKS).
 
 </dd> <dt>
 
-*RR* \[ out, Ref\]
+*RR* \[ out, ref\]
 </dt> <dd>
 
-Referencia al nuevo objeto.
+Referencia al nuevo objeto .
 
 </dd> </dl>
 
@@ -85,20 +85,20 @@ Referencia al nuevo objeto.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los parámetros no especificados se dejan sin cambios en el registro modificado.
+Cualquier parámetro no especificado se deja sin modificar en el registro modificado.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Espacio de nombres<br/>                | \\MicrosoftDNS raíz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -109,10 +109,10 @@ Los parámetros no especificados se dejan sin cambios en el registro modificado.
 [**MicrosoftDNS \_ WKSType**](microsoftdns-wkstype.md)
 </dt> <dt>
 
-[**Método CreateInstanceFromPropertyData de la \_ clase MicrosoftDNS WKSType**](microsoftdns-wkstype-createinstancefrompropertydata.md)
+[**Método CreateInstanceFromPropertyData de la clase WKSType de MicrosoftDNS \_**](microsoftdns-wkstype-createinstancefrompropertydata.md)
 </dt> <dt>
 
-[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
+[**ResourceRecord de MicrosoftDNS \_**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

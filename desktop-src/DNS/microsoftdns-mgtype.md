@@ -3,7 +3,7 @@ title: MicrosoftDNS_MGType clase
 description: Subclase de ResourceRecord de MicrosoftDNS \_ que representa un registro de grupo de correo (MG).
 ms.assetid: ce5795d1-e575-46ef-ad82-62b329e261d6
 keywords:
-- MicrosoftDNS_MGType DNS de clase
+- MicrosoftDNS_MGType dns de clase
 - MicrosoftDNS_MGType clase DNS , descrita
 topic_type:
 - apiref
@@ -27,7 +27,7 @@ ms.locfileid: "119692605"
 ---
 # <a name="microsoftdns_mgtype-class"></a>Clase MGType de MicrosoftDNS \_
 
-Subclase de [**\_ ResourceRecord de MicrosoftDNS**](microsoftdns-resourcerecord.md) que representa un registro de grupo de correo (MG).
+Subclase [**de \_ ResourceRecord de MicrosoftDNS**](microsoftdns-resourcerecord.md) que representa un registro de grupo de correo (MG).
 
 La sintaxis siguiente se simplifica a partir del código MOF.
 
@@ -55,7 +55,7 @@ La **clase \_ MGType de MicrosoftDNS** tiene estos métodos.
 
 | Método                             | Descripción                                                                                                                                                                                                                                                                                                                                                      |
 |:-----------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **CreateInstanceFromPropertyData** | Este método crea una instancia de un tipo MG de RR en función de los datos de los parámetros de entrada del método: el nombre del servidor DNS del registro, el nombre del contenedor, el nombre del propietario del grupo de correo, la clase (valor predeterminado = IN), el valor de período de vida y el nombre del buzón. Devuelve una referencia al nuevo objeto como parámetro de salida. <br/> Calificadores: Implementado, estático<br/> |
+| **CreateInstanceFromPropertyData** | Este método crea instancias de un tipo MG de RR en función de los datos de los parámetros de entrada del método: el nombre del servidor DNS del registro, el nombre del contenedor, el nombre del propietario del grupo de correo, la clase (valor predeterminado = IN), el valor de período de vida y el nombre del buzón. Devuelve una referencia al nuevo objeto como parámetro de salida. <br/> Calificadores: implementados, estáticos<br/> |
 | **Modificar**                         | Este método actualiza el buzón de TTL y MG a los valores especificados como parámetros de entrada de este método. Si no se especifica un nuevo valor para un parámetro, no se cambia el valor actual del parámetro. El método devuelve una referencia al objeto modificado como parámetro de salida. <br/> Calificadores: Implementado<br/>                |
 
 
@@ -77,7 +77,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-FQDN que especifica un buzón que es miembro del grupo de correo especificado por el nombre de propietario del registro.
+FQDN que especifica un buzón de correo que es miembro del grupo de correo especificado por el nombre de propietario del registro.
 
 </dd> </dl>
 
@@ -94,7 +94,7 @@ FQDN que especifica un buzón que es miembro del grupo de correo especificado po
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

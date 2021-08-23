@@ -1,11 +1,11 @@
 ---
-title: Método Modify de la clase MicrosoftDNS_MINFOType
+title: Método Modify de la MicrosoftDNS_MINFOType clase
 description: El método Modify actualiza un registro de recursos de información de correo (MINFO).
 ms.assetid: fbec0cd3-f735-44c6-b010-80f35cc33d98
 keywords:
-- Modificar DNS de método
-- Modificar el método DNS, MicrosoftDNS_MINFOType clase
-- MicrosoftDNS_MINFOType de clase DNS, Modify (método)
+- Modificación del dns del método
+- Modificar el método DNS , MicrosoftDNS_MINFOType clase
+- MicrosoftDNS_MINFOType clase DNS , Método Modify
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b59d7d1231ed88e61a0ecf94cef50041ca772f4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 954015ffdb01a8655a7762d3c364abe3440a8cfd19ec7eabf5ad8db5cf11c8c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489773"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119692565"
 ---
-# <a name="modify-method-of-the-microsoftdns_minfotype-class"></a>Método Modify de la \_ clase MicrosoftDNS MINFOType
+# <a name="modify-method-of-the-microsoftdns_minfotype-class"></a>Método Modify de la clase MINFOType de MicrosoftDNS \_
 
-El método **Modify** actualiza un registro de recursos de información de correo (MINFO).
+El **método Modify** actualiza un registro de recursos de información de correo (MINFO).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ void Modify(
 
 <dl> <dt>
 
-*TTL* \[ de en, opcional\]
+*TTL* \[ en, opcional\]
 </dt> <dd>
 
 Tiempo, en segundos, que un solucionador DNS puede almacenar en caché el RR.
@@ -55,18 +55,18 @@ Tiempo, en segundos, que un solucionador DNS puede almacenar en caché el RR.
 *ResponsibleMailbox* \[ en, opcional\]
 </dt> <dd>
 
-FQDN que especifica un buzón responsable de la lista de distribución de correo o el buzón especificado en el nombre del propietario del registro.
+FQDN que especifica un buzón de correo responsable de la lista de distribución de correo o buzón especificado en el nombre de propietario del registro.
 
 </dd> <dt>
 
 *ErrorMailbox* \[ en, opcional\]
 </dt> <dd>
 
-FQDN que especifica un buzón para recibir mensajes de error relacionados con la lista de distribución de correo o con el buzón especificado por el nombre del propietario del registro MINFO.
+FQDN que especifica un buzón para recibir mensajes de error relacionados con la lista de distribución de correo o con el buzón especificado por el nombre de propietario del registro MINFO.
 
 </dd> <dt>
 
-*RR* \[ out, Ref\]
+*RR* \[ out, ref\]
 </dt> <dd>
 
 Referencia al objeto modificado.
@@ -77,20 +77,20 @@ Referencia al objeto modificado.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los parámetros no especificados se dejan sin cambios en el registro modificado.
+Cualquier parámetro no especificado se deja sin modificar en el registro modificado.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Espacio de nombres<br/>                | \\MicrosoftDNS raíz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -101,10 +101,10 @@ Los parámetros no especificados se dejan sin cambios en el registro modificado.
 [**MicrosoftDNS \_ MINFOType**](microsoftdns-minfotype.md)
 </dt> <dt>
 
-[**Método CreateInstanceFromPropertyData de la \_ clase MicrosoftDNS MINFOType**](microsoftdns-minfotype-createinstancefrompropertydata.md)
+[**Método CreateInstanceFromPropertyData de la clase MINFOType de MicrosoftDNS \_**](microsoftdns-minfotype-createinstancefrompropertydata.md)
 </dt> <dt>
 
-[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
+[**ResourceRecord de MicrosoftDNS \_**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

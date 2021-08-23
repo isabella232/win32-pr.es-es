@@ -1,7 +1,7 @@
 ---
 description: Agrega un objeto de datos como un objeto secundario. En desuso.
 ms.assetid: 43771dd6-c17f-4376-9b0a-459ba61ff4c5
-title: 'IDirectXFileData:: AddDataObject (método) (DXFile. h)'
+title: Método IDirectXFileData::AddDataObject (DXFile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dxof.lib
 - D3dxof.dll
-ms.openlocfilehash: 393526bb249b0337964bee0af5be1b55b8dd513e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: db11f5f3c0d9078663c87db8948bc483ab05d229cd4d7fd0950efaf5143e1408
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119491835"
 ---
-# <a name="idirectxfiledataadddataobject-method"></a>IDirectXFileData:: AddDataObject (método)
+# <a name="idirectxfiledataadddataobject-method"></a>IDirectXFileData::AddDataObject (método)
 
 Agrega un objeto de datos como un objeto secundario. En desuso.
 
@@ -40,12 +40,12 @@ HRESULT AddDataObject(
 
 <dl> <dt>
 
-*pDataObj* \[ de\]
+*pDataObj* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECTXFILEDATA**](idirectxfiledata.md)**
 
-Puntero a una interfaz [**IDirectXFileData**](idirectxfiledata.md) que representa el objeto de datos de archivo que se va a agregar como un objeto secundario.
+Puntero a una [**interfaz IDirectXFileData,**](idirectxfiledata.md) que representa el objeto de datos de archivo que se agregará como un objeto secundario.
 
 </dd> </dl>
 
@@ -53,11 +53,11 @@ Puntero a una interfaz [**IDirectXFileData**](idirectxfiledata.md) que represent
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es DXFILE \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los valores siguientes. DXFILEERR \_ BADALLOC DXFILEERR \_ BADVALUE
+Si el método se realiza correctamente, el valor devuelto es DXFILE \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes valores. DXFILEERR \_ BADALLOC DXFILEERR \_ BADVALUE
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use el método [**IDirectXFileSaveObject:: CreateDataObject**](idirectxfilesaveobject--createdataobject.md) para crear el objeto [**IDirectXFileData**](idirectxfiledata.md) antes de llamar a este método.
+Use el [**método IDirectXFileSaveObject::CreateDataObject**](idirectxfilesaveobject--createdataobject.md) para crear el objeto [**IDirectXFileData**](idirectxfiledata.md) antes de llamar a este método.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ Use el método [**IDirectXFileSaveObject:: CreateDataObject**](idirectxfilesaveo
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>DXFile. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3dxof. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>DXFile.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3dxof.lib</dt> </dl> |
 
 
 

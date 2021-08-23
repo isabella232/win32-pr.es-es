@@ -1,7 +1,7 @@
 ---
-description: Libera un bloqueo parcial para que otros compradores de bloqueos exclusivos o parciales puedan escribir ahora.
+description: Libera un bloqueo parcial para que otros usuarios de bloqueo exclusivos o parciales puedan entrar ahora.
 ms.assetid: 95a3e0d1-4e8b-4e30-b4fd-709b9db465de
-title: CShareLockNH::P método artialUnlock
+title: CShareLockLOCK::P artialUnlock (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Rwnh.dll
-ms.openlocfilehash: 930c0f51e199c1668a70f2dd017b0280939b0710
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7b06285cf03315296a78cda000d281ba674ae6778c6d11102aac463546befd87
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649748"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119691685"
 ---
-# <a name="csharelocknhpartialunlock-method"></a>CShareLockNH::P método artialUnlock
+# <a name="csharelocknhpartialunlock-method"></a>CShareLockLOCK::P artialUnlock (método)
 
-Libera un bloqueo parcial para que otros compradores de bloqueos exclusivos o parciales puedan escribir ahora.
+Libera un bloqueo parcial para que otros usuarios de bloqueo exclusivos o parciales puedan entrar ahora.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,15 +41,15 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función no tiene asociado ningún archivo de encabezado o biblioteca de importación. debe llamarlo mediante las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Esta función no tiene asociada la biblioteca de importación ni el archivo de encabezado; Debe llamarlo mediante las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**y GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------|-------------------------------------------------------------------------------------|
 | Archivo DLL<br/> | <dl> <dt>Rwnh.dll</dt> </dl> |
 

@@ -1,12 +1,12 @@
 ---
-title: Método Disconnect de la clase Win32_VirtualDesktopSession
+title: Método Disconnect de la Win32_VirtualDesktopSession clase
 description: Desconecta la sesión de escritorio virtual.
 ms.assetid: 9dbb256c-c416-4749-87be-05a906070560
 ms.tgt_platform: multiple
 keywords:
-- Desconectar método Servicios de Escritorio remoto
-- Método Disconnect Servicios de Escritorio remoto, clase Win32_VirtualDesktopSession
-- Servicios de Escritorio remoto de clase Win32_VirtualDesktopSession, método Disconnect
+- Método disconnect Servicios de Escritorio remoto
+- Método Disconnect Servicios de Escritorio remoto , Win32_VirtualDesktopSession clase
+- Win32_VirtualDesktopSession clase Servicios de Escritorio remoto método , Disconnect
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d473286dec0d286b0e5e9e310c146bd46a2f95b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0998e6dad97c1dcf6e55a999f02eac34a9881efa27c6cb6636f729cbb75befad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422436"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119515665"
 ---
-# <a name="disconnect-method-of-the-win32_virtualdesktopsession-class"></a>Método Disconnect de la \_ clase VirtualDesktopSession de Win32
+# <a name="disconnect-method-of-the-win32_virtualdesktopsession-class"></a>Método Disconnect de la clase VirtualDesktopSession de Win32 \_
 
 Desconecta la sesión de escritorio virtual.
 
@@ -43,7 +43,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error de WMI.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error WMI.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,8 +53,8 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                              |
-| Espacio de nombres<br/>                | RDMs raíz de \\ CIMv2 \\<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Rdms \\ de CIMv2 \\ raíz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -63,7 +63,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 
 <dl> <dt>
 
-[**Win32 \_ VirtualDesktopSession**](win32-virtualdesktopsession.md)
+[**VirtualDesktopSession de Win32 \_**](win32-virtualdesktopsession.md)
 </dt> </dl>
 
  

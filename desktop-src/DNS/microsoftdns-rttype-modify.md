@@ -1,11 +1,11 @@
 ---
-title: Método Modify de la clase MicrosoftDNS_RTType
-description: El método Modify actualiza un registro de recursos de ruta a través de (RT).
+title: Método Modify de la MicrosoftDNS_RTType clase
+description: El método Modify actualiza un registro de recursos de Route Through (RT).
 ms.assetid: 80053ae6-8ce8-4aa1-be2b-aac9daa5dae3
 keywords:
-- Modificar DNS de método
-- Modificar el método DNS, MicrosoftDNS_RTType clase
-- MicrosoftDNS_RTType de clase DNS, Modify (método)
+- Modificación del dns del método
+- Modificar el método DNS , MicrosoftDNS_RTType clase
+- MicrosoftDNS_RTType clase DNS , Método Modify
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8267bf1dc256ec95a456978643226ab5c01af93f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2003f8e2840a2684f91a7a01b0341e2e8dcdf0ca88b6bf31fcf58b3a3c6f79bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534324"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119692405"
 ---
-# <a name="modify-method-of-the-microsoftdns_rttype-class"></a>Método Modify de la \_ clase MicrosoftDNS RTType
+# <a name="modify-method-of-the-microsoftdns_rttype-class"></a>Método Modify de la clase RTType de MicrosoftDNS \_
 
-El método **Modify** actualiza un registro de recursos de ruta a través de (RT).
+El **método Modify** actualiza un registro de recursos de Route Through (RT).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ void Modify(
 
 <dl> <dt>
 
-*TTL* \[ de en, opcional\]
+*TTL* \[ en, opcional\]
 </dt> <dd>
 
 Tiempo, en segundos, que un solucionador DNS puede almacenar en caché el RR.
@@ -55,21 +55,21 @@ Tiempo, en segundos, que un solucionador DNS puede almacenar en caché el RR.
 *Preferencia* \[ en, opcional\]
 </dt> <dd>
 
-Preferencia asignada a este RR entre otros en el mismo propietario. Se prefieren los valores inferiores.
+Preferencia dada a este RR entre otros en el mismo propietario. Se prefieren valores más bajos.
 
 </dd> <dt>
 
 *IntermediateHost* \[ en, opcional\]
 </dt> <dd>
 
-FQDN que especifica un host que actúa como intermediario para alcanzar el host especificado por el propietario.
+FQDN que especifica un host que sirve como intermedio para llegar al host especificado por el propietario.
 
 </dd> <dt>
 
-*RR* \[ out, Ref\]
+*RR* \[ out, ref\]
 </dt> <dd>
 
-Referencia al nuevo objeto.
+Referencia al nuevo objeto .
 
 </dd> </dl>
 
@@ -77,20 +77,20 @@ Referencia al nuevo objeto.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los parámetros no especificados se dejan sin cambios en el registro modificado.
+Cualquier parámetro no especificado se deja sin modificar en el registro modificado.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Espacio de nombres<br/>                | \\MicrosoftDNS raíz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -101,10 +101,10 @@ Los parámetros no especificados se dejan sin cambios en el registro modificado.
 [**MicrosoftDNS \_ RTType**](microsoftdns-rttype.md)
 </dt> <dt>
 
-[**Método CreateInstanceFromPropertyData de la \_ clase MicrosoftDNS RTType**](microsoftdns-rttype-createinstancefrompropertydata.md)
+[**Método CreateInstanceFromPropertyData de la clase MICROSOFTDNS \_ RTType**](microsoftdns-rttype-createinstancefrompropertydata.md)
 </dt> <dt>
 
-[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
+[**ResourceRecord de MicrosoftDNS \_**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

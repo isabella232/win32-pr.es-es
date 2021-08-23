@@ -1,11 +1,11 @@
 ---
-title: Método Load de ID3DX11DataLoader (D3DX11core. h)
-description: Tenga en cuenta que la biblioteca de utilidades de D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de la tienda Windows. Carga los datos de un disco.
+title: Método ID3DX11DataLoader Load (D3DX11core.h)
+description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Carga datos desde un disco.
 ms.assetid: 21dee078-af8f-4ca1-bb2e-d4ecc0471609
 keywords:
-- Método Load Direct3D 11
-- Método Load Direct3D 11, interfaz ID3DX11DataLoader
-- Interfaz ID3DX11DataLoader Direct3D 11, método Load
+- Método de carga Direct3D 11
+- Método de carga Direct3D 11, interfaz ID3DX11DataLoader
+- ID3DX11DataLoader interface Direct3D 11 , Load method
 topic_type:
 - apiref
 api_name:
@@ -17,21 +17,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c0f720a5e6884bfdf1935c6d93f7a05decae5e8a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b5f698896ca696a6d63b4738f1246deb35be0139f3bff817518cc5f81b52a191
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104987252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119632995"
 ---
-# <a name="id3dx11dataloaderload-method"></a>ID3DX11DataLoader:: Load (método)
+# <a name="id3dx11dataloaderload-method"></a>Método ID3DX11DataLoader::Load
 
 > [!Note]  
-> La biblioteca de utilidades de D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para aplicaciones de la tienda Windows.
+> La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
 
  
 
-Carga los datos de un disco.
+Carga datos desde un disco.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,11 +50,11 @@ Este método no tiene parámetros.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que se muestran en [códigos de retorno de Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno [de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método lo usa una [**interfaz ID3DX11ThreadPump**](id3dx11threadpump.md).
+Este método lo usa una interfaz [**ID3DX11ThreadPump**](id3dx11threadpump.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,8 +62,8 @@ Este método lo usa una [**interfaz ID3DX11ThreadPump**](id3dx11threadpump.md).
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX11core. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX11. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX11core.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX11.lib</dt> </dl>   |
 
 
 
@@ -74,7 +74,7 @@ Este método lo usa una [**interfaz ID3DX11ThreadPump**](id3dx11threadpump.md).
 [ID3DX11DataLoader](id3dx11dataloader.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d11-graphics-reference-d3dx11-interfaces.md)
+[D3DX Interfaces](d3d11-graphics-reference-d3dx11-interfaces.md)
 </dt> </dl>
 
  

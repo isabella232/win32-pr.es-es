@@ -1,25 +1,25 @@
 ---
-title: Usar el parámetro de contexto
-description: Usar el parámetro de contexto
+title: Usar el parámetro context
+description: Usar el parámetro context
 ms.assetid: 50e37c36-0ce1-4abd-bb25-f18bb164fdeb
 keywords:
-- SDK de Windows Media Format, parámetro de contexto
-- SDK de Windows Media Format, parámetro pvContext
-- parámetro pvContext
+- Windows SDK de formato multimedia, parámetro de contexto
+- Windows SDK de formato multimedia, parámetro pvContext
+- Parámetro pvContext
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 084d7ac0f58d3f3e19ae6b1d6f990a1867988bcd
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 102315470243910158fd3bf474a209fa1e0888536671e3ede3764be519c672f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104149074"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119585205"
 ---
-# <a name="using-the-context-parameter"></a>Usar el parámetro de contexto
+# <a name="using-the-context-parameter"></a>Usar el parámetro context
 
-Algunas de las devoluciones de llamada utilizadas por el SDK de Windows Media Format toman un parámetro denominado *pvContext*. Los objetos de llamada pasan a lo largo del valor especificado en el método que inició la acción asincrónica. Por ejemplo, al llamar a [**IWMReader:: Open**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreader-open), puede pasar un valor para *pvContext*. Cuando el objeto de lector llama al método [**IWMStatusCallback:: en status**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstatuscallback-onstatus) para notificar a la aplicación que el archivo se ha abierto, pasará cualquier valor que se haya usado en la llamada a **Open** como el parámetro *pvContext* de en **status**. Este parámetro de contexto se proporciona para su uso y puede usarlo de la forma que desee.
+Algunas de las devoluciones de llamada usadas por Windows SDK de formato multimedia toman un parámetro denominado *pvContext*. Los objetos que llaman pasan a lo largo del valor especificado en el método que inició la acción asincrónica. Por ejemplo, cuando se llama a [**IWMReader::Open**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreader-open), se puede pasar un valor para *pvContext*. Cuando el objeto lector llama al método [**IWMStatusCallback::OnStatus**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstatuscallback-onstatus) para notificar a la aplicación que el archivo se ha abierto, pasará el valor que usó en la llamada a **Open** como parámetro *pvContext* de **OnStatus.** Este parámetro de contexto se proporciona para su uso y puede usarlo de la manera que quiera.
 
-Normalmente, el parámetro *pvContext* se usa cuando es necesario que varios objetos compartan la misma devolución de llamada. Por ejemplo, varios objetos usan el método [**IWMStatusCallback:: en status**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstatuscallback-onstatus) . Puede usar *pvContext* para permitir que los distintos objetos compartan una implementación de en **Estado** pasando un valor diferente para *pvContext* en la llamada original. En la implementación de en el **Estado**, puede crear una bifurcación de la lógica de control de mensajes basada en el valor de *pvContext*.
+El *parámetro pvContext se* usa con mayor frecuencia cuando varios objetos necesitan compartir la misma devolución de llamada. Por ejemplo, varios objetos usan el [**método IWMStatusCallback::OnStatus.**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstatuscallback-onstatus) Puede usar *pvContext para permitir* que los distintos objetos compartan una implementación de **OnStatus** pasando un valor diferente para *pvContext* en la llamada original. En la implementación de **OnStatus**, puede bifurcar la lógica de control de mensajes en función del valor de *pvContext*.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -28,9 +28,9 @@ Normalmente, el parámetro *pvContext* se usa cuando es necesario que varios obj
 [**Usar los métodos de devolución de llamada**](using-the-callback-methods.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

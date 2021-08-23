@@ -1,11 +1,11 @@
 ---
-title: atributo MS-IEEE-80211-ID
-description: Identificador usado para un objeto de directiva inalámbrica en AD.
+title: Atributo ms-ieee-80211-ID
+description: Identificador que se usa para un objeto de directiva inalámbrica en AD.
 ms.assetid: 751eb9e1-a97f-4a94-a726-151e85ae2dbf
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-IEEE-80211-ID
-- Esquema de AD del atributo msieee80211-ID
+- Esquema de AD del atributo ms-ieee-80211-ID
+- Msieee80211-ID attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef1b380617cadf5cfc8b5048e6c9513d40001504
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e88953b46bdaa58f25d12ccdfb74f2fe6ca3fd04c27f0b86a597f14d9a918354
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997424"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119551275"
 ---
-# <a name="ms-ieee-80211-id-attribute"></a>atributo MS-IEEE-80211-ID
+# <a name="ms-ieee-80211-id-attribute"></a>Atributo ms-ieee-80211-ID
 
-Identificador usado para un objeto de directiva inalámbrica en AD.
+Identificador que se usa para un objeto de directiva inalámbrica en AD.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|----------------------------------------------------------------------------------|
-| CN                | MS-IEEE-80211-ID                                                                 |
-| Nombre para mostrar de LDAP | IDENTIFICADOR de msieee80211                                                                   |
-| Tamaño              | \-                                                                               |
-| Actualizar privilegio  | Administrador de dominio                                                             |
-| Frecuencia de actualización  | Cada vez que un administrador de dominio cambia la Directiva de red inalámbrica para un dominio o una unidad organizativa. |
+| CN                | ms-ieee-80211-ID                                                                 |
+| Ldap-Display-Name | msieee80211-ID                                                                   |
+| Size              | \-                                                                               |
+| Actualizar privilegios  | Administrador de dominio                                                             |
+| Frecuencia de actualización  | Cada vez que un administrador de dominio cambia la directiva de red inalámbrica para un dominio o unidad organizativa. |
 | Attribute-Id      | 1.2.840.113556.1.4.1823                                                          |
-| System-ID-GUID    | 7f73ef75-14c9-4c23-81de-dd07a06f9e8b                                             |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                                      |
+| System-Id-Guid    | 7f73ef75-14c9-4c23-81de-dd07a06f9e8b                                             |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
 
@@ -54,18 +54,18 @@ Identificador usado para un objeto de directiva inalámbrica en AD.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Tiene un único valor       | True                                                            |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Verdadero                                                            |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**MS-IEEE-80211-Directiva**](c-msieee80211-policy.md)<br/> |
+| Clases usadas en        | [**ms-ieee-80211-Policy**](c-msieee80211-policy.md)<br/> |
 
 
 
@@ -75,18 +75,18 @@ Identificador usado para un objeto de directiva inalámbrica en AD.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Tiene un único valor       | True                                                            |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Verdadero                                                            |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**MS-IEEE-80211-Directiva**](c-msieee80211-policy.md)<br/> |
+| Clases usadas en        | [**ms-ieee-80211-Policy**](c-msieee80211-policy.md)<br/> |
 
 
 
@@ -96,18 +96,18 @@ Identificador usado para un objeto de directiva inalámbrica en AD.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Tiene un único valor       | True                                                            |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Verdadero                                                            |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**MS-IEEE-80211-Directiva**](c-msieee80211-policy.md)<br/> |
+| Clases usadas en        | [**ms-ieee-80211-Policy**](c-msieee80211-policy.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ Identificador usado para un objeto de directiva inalámbrica en AD.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Tiene un único valor       | True                                                            |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Verdadero                                                            |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**MS-IEEE-80211-Directiva**](c-msieee80211-policy.md)<br/> |
+| Clases usadas en        | [**ms-ieee-80211-Policy**](c-msieee80211-policy.md)<br/> |
 
 
 
@@ -138,18 +138,18 @@ Identificador usado para un objeto de directiva inalámbrica en AD.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Tiene un único valor       | True                                                            |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Verdadero                                                            |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**MS-IEEE-80211-Directiva**](c-msieee80211-policy.md)<br/> |
+| Clases usadas en        | [**ms-ieee-80211-Policy**](c-msieee80211-policy.md)<br/> |
 
 
 

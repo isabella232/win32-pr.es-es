@@ -1,11 +1,11 @@
 ---
-title: Atributo NT-Group-members
-description: Este atributo no se utiliza. | Atributo NT-Group-members
+title: Atributo NT-Group-Members
+description: Este atributo no se usa. | Atributo NT-Group-Members
 ms.assetid: e7f7cf82-eff9-429f-ab3d-a35b9385362a
 ms.tgt_platform: multiple
 keywords:
-- Atributo NT-Group-Members esquema de AD
-- nTGroupMembers esquema de AD de atributos
+- Esquema de AD del atributo NT-Group-Members
+- Esquema de AD del atributo nTGroupMembers
 topic_type:
 - apiref
 api_name:
@@ -14,31 +14,31 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f212da06992c367a4221cc49eb7217a309886745
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 11a2b4f3e7927b07bcee4a17116da41aea9e3db0d7114e71bb1c3774b692819d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362085"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648265"
 ---
-# <a name="nt-group-members-attribute"></a>Atributo NT-Group-members
+# <a name="nt-group-members-attribute"></a>Atributo NT-Group-Members
 
-Este atributo no se utiliza.
+Este atributo no se usa.
 
-El atributo [**member**](a-member.md) se usa para contener los miembros de un grupo.
+El [**atributo**](a-member.md) de miembro se usa para contener los miembros de un grupo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | Miembros de grupo NT                                      |
-| Nombre para mostrar de LDAP | nTGroupMembers                                        |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| CN                | NT-Group-Members                                      |
+| Ldap-Display-Name | nTGroupMembers                                        |
+| Size              | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.89                                 |
-| System-ID-GUID    | bf9679df-0de6-11d0-a285-00aa003049e2                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | bf9679df-0de6-11d0-a285-00aa003049e2                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -57,13 +57,13 @@ El atributo [**member**](a-member.md) se usa para contener los miembros de un gr
 
 | Entrada | Value |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | \-                                  |
+| Id. de vínculo                | \-                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | False                               |
-| Tiene un único valor       | False                               |
-| Está indexado             | False                               |
-| En el catálogo global      | False                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| System-Only            | Falso                               |
+| Es de un solo valor       | Falso                               |
+| Está indexado             | Falso                               |
+| En el catálogo global      | Falso                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
@@ -76,15 +76,15 @@ El atributo [**member**](a-member.md) se usa para contener los miembros de un gr
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | \-                                  |
+| Id. de vínculo                | \-                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | False                               |
-| Tiene un único valor       | False                               |
-| Está indexado             | False                               |
-| En el catálogo global      | False                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| System-Only            | Falso                               |
+| Es de un solo valor       | Falso                               |
+| Está indexado             | Falso                               |
+| En el catálogo global      | Falso                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
@@ -97,15 +97,15 @@ El atributo [**member**](a-member.md) se usa para contener los miembros de un gr
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | \-                                  |
+| Id. de vínculo                | \-                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | False                               |
-| Tiene un único valor       | False                               |
-| Está indexado             | False                               |
-| En el catálogo global      | False                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| System-Only            | Falso                               |
+| Es de un solo valor       | Falso                               |
+| Está indexado             | Falso                               |
+| En el catálogo global      | Falso                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
@@ -118,15 +118,15 @@ El atributo [**member**](a-member.md) se usa para contener los miembros de un gr
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | \-                                  |
+| Id. de vínculo                | \-                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | False                               |
-| Tiene un único valor       | False                               |
-| Está indexado             | False                               |
-| En el catálogo global      | False                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| System-Only            | Falso                               |
+| Es de un solo valor       | Falso                               |
+| Está indexado             | Falso                               |
+| En el catálogo global      | Falso                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
@@ -141,13 +141,13 @@ El atributo [**member**](a-member.md) se usa para contener los miembros de un gr
 
 | Entrada | Value |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | \-                                  |
+| Id. de vínculo                | \-                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | False                               |
-| Tiene un único valor       | False                               |
-| Está indexado             | False                               |
-| En el catálogo global      | False                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| System-Only            | Falso                               |
+| Es de un solo valor       | Falso                               |
+| Está indexado             | Falso                               |
+| En el catálogo global      | Falso                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
@@ -162,13 +162,13 @@ El atributo [**member**](a-member.md) se usa para contener los miembros de un gr
 
 | Entrada | Value |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | \-                                  |
+| Id. de vínculo                | \-                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | False                               |
-| Tiene un único valor       | False                               |
-| Está indexado             | False                               |
-| En el catálogo global      | False                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| System-Only            | Falso                               |
+| Es de un solo valor       | Falso                               |
+| Está indexado             | Falso                               |
+| En el catálogo global      | Falso                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |

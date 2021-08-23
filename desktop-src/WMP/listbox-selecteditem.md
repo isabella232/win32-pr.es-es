@@ -1,9 +1,9 @@
 ---
-title: LISTBOX. selectedItem
+title: LISTBOX.selectedItem
 description: El atributo selectedItem especifica o recupera el índice del elemento seleccionado en el control de cuadro de lista.
 ms.assetid: 8c4eb914-c3a3-447e-a42b-8bb80b8aa8f4
 keywords:
-- LISTBOX. selectedItem Windows Media Player
+- LISTBOX.selectedItem Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b6ec30032e62713436e85f3924f63344c96944ed
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bd236e288bf91d77cdf79b2b5f4f4cb2e8ebcf4b2bcb6eb876c6978dc2249335
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708839"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119508504"
 ---
-# <a name="listboxselecteditem"></a>LISTBOX. selectedItem
+# <a name="listboxselecteditem"></a>LISTBOX.selectedItem
 
-El atributo **SelectedItem** especifica o recupera el índice del elemento seleccionado en el control de cuadro de lista.
+El **atributo selectedItem** especifica o recupera el índice del elemento seleccionado en el control de cuadro de lista.
 
 ``` syntax
         elementID.selectedItem
@@ -29,19 +29,19 @@ El atributo **SelectedItem** especifica o recupera el índice del elemento selec
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **número** de lectura y escritura (**Long**).
+Este atributo es un número de lectura y **escritura** **(long).**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad seleccionará una línea en el control de cuadro de lista. Se anulará la selección de cualquier otra línea seleccionada.
+Esta propiedad seleccionará una línea en el control de cuadro de lista. No se seleccionará ninguna otra línea seleccionada.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------------|
-| Versión<br/> | Windows Media Player para Windows XP o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media para Windows XP o posterior<br/> |
 
 
 

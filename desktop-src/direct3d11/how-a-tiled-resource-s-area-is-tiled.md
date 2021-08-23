@@ -1,25 +1,25 @@
 ---
-title: Cómo se organiza en mosaico el área de un recurso en mosaico
-description: Cuando se crea un recurso en mosaico, las dimensiones, el tamaño de los elementos de formato y el número de mapas MIP y/o segmentos de matriz (si procede) determinan el número de mosaicos necesarios para respaldar todo el área expuesta.
+title: Cómo se en mosaico el área de un recurso en mosaico
+description: Al crear un recurso en mosaico, las dimensiones, el tamaño del elemento de formato y el número de mipmaps o segmentos de matriz (si procede) determinan el número de mosaicos necesarios para realizar una copia de seguridad de toda la superficie.
 ms.assetid: 834E317F-CFFD-460C-9F89-793081BA1853
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c9ae1bf4ad1ca308fb3c93a36c4b3478aabdb0f7
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 75feaa7852a7bc2567d7b4983ff4d59d12b516f5feb4be2886f93294f77bd6c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104997124"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119633225"
 ---
-# <a name="how-a-tiled-resources-area-is-tiled"></a>Cómo se organiza en mosaico el área de un recurso en mosaico
+# <a name="how-a-tiled-resources-area-is-tiled"></a>Cómo se en mosaico el área de un recurso en mosaico
 
-Cuando se crea un recurso en mosaico, las dimensiones, el tamaño de los elementos de formato y el número de mapas MIP y/o segmentos de matriz (si procede) determinan el número de mosaicos necesarios para respaldar todo el área expuesta. El diseño de píxeles/bytes dentro de los mosaicos viene determinado por la implementación de. El número de píxeles que caben en un mosaico, dependiendo del tamaño del elemento de formato, es fijo y idéntico si se usa un swizzle estándar o no.
+Al crear un recurso en mosaico, las dimensiones, el tamaño del elemento de formato y el número de mipmaps o segmentos de matriz (si procede) determinan el número de mosaicos necesarios para realizar una copia de seguridad de toda la superficie. La implementación determina el diseño de píxel/byte dentro de los iconos. El número de píxeles que caben en un icono, dependiendo del tamaño del elemento de formato, es fijo e idéntico, independientemente de si se usa un swzzle estándar o no.
 
-El número de mosaicos que va a usar un tamaño de superficie y un ancho de elemento de formato determinados está bien definido y predecible en función de las tablas de las secciones siguientes. En el caso de los recursos que contienen mapas MIP o casos en los que las dimensiones de la superficie no rellenan un icono, existen algunas restricciones y se tratan en el [empaquetado de mipmap](mipmap-packing.md).
+El número de iconos que usará un tamaño de superficie determinado y el ancho del elemento de formato están bien definidos y son predecibles en función de las tablas de las secciones siguientes. En el caso de los recursos que contienen mapas mip o casos en los que las dimensiones de superficie no rellenan un icono, existen algunas restricciones y se de abordan en [Empaquetado de Mipmap](mipmap-packing.md).
 
-Los distintos recursos en mosaico pueden apuntar a la memoria idéntica con formatos diferentes, siempre y cuando las aplicaciones no se basen en los resultados de escribir en la memoria con un formato y leer con otro. Sin embargo, en circunstancias limitadas, las aplicaciones pueden confiar en los resultados de escribir en la memoria con un formato y leer con otro si los formatos están en la misma familia de formato (es decir, tienen el mismo formato primario sin tipo). Por ejemplo, el formato de DXGI \_ \_ R8G8B8A8 \_ UNORM y el formato de dxgi \_ \_ R8G8B8A8 \_ uint son compatibles entre sí, pero no con el formato de dxgi \_ \_ R16G16 \_ UNORM. Una aplicación debe coincidir con todas las propiedades de recurso para reinterpretar los datos entre dos texturas, ya que los patrones de mosaico son muy conservadormente indefinidos. Obviamente, sin embargo, el formato es más LAX. Los formatos solo deben ser compatibles como se muestra anteriormente. Una excepción es donde se definen bien los datos de sangrados de un formato de alias a otro: Si un mosaico contiene completamente 0 para todos sus bits, ese mosaico se puede usar con cualquier formato que interprete el contenido de la memoria como 0 (independientemente del diseño de memoria). Por lo tanto, un icono se puede borrar a 0x00 con el formato DXGI \_ \_ \_ UNORM y después usarse con un formato como dxgi \_ format \_ R32G32 \_ float y parecería que el contenido sigue siendo (0.0 f, 0.0 f).
+Los distintos recursos en mosaico pueden apuntar a una memoria idéntica con formatos diferentes, siempre y cuando las aplicaciones no se basen en los resultados de escribir en la memoria con un formato y leer con otro. Pero, en circunstancias restringidas, las aplicaciones pueden basarse en los resultados de escribir en la memoria con un formato y leer con otro si los formatos están en la misma familia de formatos (es decir, tienen el mismo formato primario sin tipo). Por ejemplo, DXGI \_ FORMAT \_ R8G8B8A8 UNORM y DXGI FORMAT R8G8B8A8 UINT son compatibles entre sí, pero no con \_ \_ \_ \_ DXGI \_ FORMAT \_ R16G16 \_ UNORM. Una aplicación debe coincidir de forma conservadora con todas las propiedades de recursos para reinterpretar los datos entre dos texturas, ya que los patrones de mosaico no están definidos de forma muy conservadora. Obviamente, sin embargo, el formato es más lax. Los formatos solo deben ser compatibles como se muestra anteriormente. Una excepción es que los datos de un formato con alias a otro están bien definidos: si un icono contiene completamente 0 para todos sus bits, ese icono se puede usar con cualquier formato que interprete ese contenido de memoria como 0 (independientemente del diseño de memoria). Por lo tanto, un icono podría borrarse a 0x00 con el formato DXGI FORMAT R8 UNORM y, a continuación, usarse con un formato como DXGI FORMAT R32G32 FLOAT y parecería que el contenido sigue siendo \_ \_ \_ \_ \_ \_ (0.0f,0.0f).
 
-El diseño de los datos dentro de un mosaico puede depender de las propiedades de los recursos, el subrecurso en el que reside y la ubicación del icono en el subrecurso. Las excepciones principales se ilustran anteriormente: los formatos compatibles con otras propiedades de recursos son iguales y cuando todos los textura son el mismo patrón.
+El diseño de los datos dentro de un icono puede depender de las propiedades del recurso, el subrecurso en el que reside y la ubicación del icono dentro del subrecurso. Las excepciones principales se ilustran anteriormente: formatos compatibles con otras propiedades de recursos que son iguales y cuando todos los elementos de textura tienen el mismo patrón.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -27,10 +27,10 @@ El diseño de los datos dentro de un mosaico puede depender de las propiedades d
 
 | Tema                                                                                                             | Descripción                                                                                                                                                                                                                                                                            |
 |-------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Mosaico de subrecurso Texture2D y Texture2DArray](texture2d-and-texture2darray-subresource-tiling.md)<br/> | En estas tablas se muestra cómo se muestran los Subrecursos [**Texture2D**](/windows/desktop/direct3dhlsl/sm5-object-texture2d) y [**Texture2DArray**](/windows/desktop/direct3dhlsl/sm5-object-texture2darray) en mosaico. <br/>                                                                                                          |
-| [Mosaico de subrecurso Texture3D](texture3d-subresource-tiling.md)<br/>                                       | En esta tabla se muestra cómo se muestran los Subrecursos de [**Texture3D**](/windows/desktop/direct3dhlsl/sm5-object-texture3d) en mosaico. <br/>                                                                                                                                                                            |
-| [Mosaico de búfer](buffer-tiling.md)<br/>                                                                     | Un recurso de [búfer](overviews-direct3d-11-resources-buffers.md) se divide en mosaicos de 64 KB, con un espacio vacío en el último mosaico si el tamaño no es múltiplo de 64 KB.<br/>                                                                                                  |
-| [Empaquetado de mapas MIP](mipmap-packing.md)<br/>                                                                   | En función del nivel de compatibilidad de los recursos [en](tiled-resources-features-tiers.md) mosaico, los mapas MIP con ciertas dimensiones no siguen las formas de mosaico estándar y se consideran que todos están empaquetados juntos entre sí de forma opaca para la aplicación. <br/> |
+| [Mosaico de subrecurso Texture2D y Texture2DArray](texture2d-and-texture2darray-subresource-tiling.md)<br/> | Estas tablas muestran cómo se [**en mosaicos los**](/windows/desktop/direct3dhlsl/sm5-object-texture2d) subrecursos [**Texture2D y Texture2DArray.**](/windows/desktop/direct3dhlsl/sm5-object-texture2darray) <br/>                                                                                                          |
+| [Mosaico de subrecurso Texture3D](texture3d-subresource-tiling.md)<br/>                                       | En esta tabla se muestra cómo se en mosaicos los subrecursos de [**Texture3D.**](/windows/desktop/direct3dhlsl/sm5-object-texture3d) <br/>                                                                                                                                                                            |
+| [Mosaico de búfer](buffer-tiling.md)<br/>                                                                     | Un [recurso](overviews-direct3d-11-resources-buffers.md) de búfer se divide en iconos de 64 KB, con algún espacio vacío en el último icono si el tamaño no es un múltiplo de 64 KB.<br/>                                                                                                  |
+| [Empaquetado de mapas MIP](mipmap-packing.md)<br/>                                                                   | En función [](tiled-resources-features-tiers.md) del nivel de compatibilidad de los recursos en mosaico, los mapas mip con determinadas dimensiones no siguen las formas de mosaico estándar y se consideran empaquetados entre sí de una manera opaca para la aplicación. <br/> |
 
 
 
@@ -40,7 +40,7 @@ El diseño de los datos dentro de un mosaico puede depender de las propiedades d
 
 <dl> <dt>
 
-[Crear recursos en mosaico](creating-tiled-resources.md)
+[Creación de recursos en mosaico](creating-tiled-resources.md)
 </dt> </dl>
 
  

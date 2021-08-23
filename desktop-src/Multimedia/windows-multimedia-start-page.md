@@ -1,34 +1,34 @@
 ---
-title: Multimedia de Windows
-description: La compatibilidad con multimedia de Microsoft Windows permite a las aplicaciones usar sonido y vídeo.
+title: Windows Multimedia
+description: La Windows multimedia de Microsoft permite a las aplicaciones usar sonido y vídeo.
 ms.assetid: c035f3d0-c2ca-4698-b5ae-281d5098a83d
 keywords:
-- Multimedia de Windows, acerca de
+- Windows multimedia, acerca de
 - multimedia, acerca de
-- Multimedia de Windows, página de inicio
+- Windows multimedia,Página de inicio
 - multimedia, página de inicio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb559a7514db9af0aaef39124c35ed727e593cd1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3df2dfc07e94eef731cfff8550dd97904240f544bfa5e1c71fd7f70237fd076c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105651288"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119687125"
 ---
-# <a name="windows-multimedia"></a>Multimedia de Windows
+# <a name="windows-multimedia"></a>Windows Multimedia
 
 ## <a name="purpose"></a>Propósito
 
-La compatibilidad con multimedia de Microsoft Windows permite a las aplicaciones usar sonido y vídeo.
+La Windows multimedia de Microsoft permite a las aplicaciones usar sonido y vídeo.
 
 ## <a name="where-applicable"></a>Donde sea aplicable
 
-Los elementos multimedia de Windows se pueden usar en todas las aplicaciones basadas en Windows.
+Windows multimedia se puede usar en todas las Windows basadas en aplicaciones.
 
 ## <a name="developer-audience"></a>Audiencia de desarrolladores
 
-Windows multimedia está diseñado para que lo usen los programadores de C/C++. Es necesario estar familiarizado con la interfaz gráfica de usuario de Windows y la arquitectura controlada por mensajes.
+Windows multimedia está diseñado para su uso por parte de programadores de C/C++. Es necesario estar familiarizado Windows interfaz gráfica de usuario y la arquitectura controlada por mensajes.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -36,12 +36,12 @@ Windows multimedia está diseñado para que lo usen los programadores de C/C++. 
 
 | Tema                                                       | Descripción                                                                                         |
 |-------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| [MCI](mci.md)<br/>                                   | Información general sobre cómo usar la interfaz de control de medios.<br/>                        |
-| [Clase de ventana MCIWnd](mciwnd-window-class.md)<br/>   | Información general sobre una clase de ventana que puede actuar como control para la reproducción multimedia.<br/> |
-| [Audio multimedia](multimedia-audio.md)<br/>         | Información general sobre el uso de audio multimedia.<br/>                                   |
+| [Mci](mci.md)<br/>                                   | Información general sobre cómo usar la interfaz de control multimedia.<br/>                        |
+| [Clase Window de MCIWnd](mciwnd-window-class.md)<br/>   | Información general sobre una clase de ventana que puede actuar como control para la reproducción multimedia.<br/> |
+| [Multimedia Audio](multimedia-audio.md)<br/>         | Información general sobre cómo usar audio multimedia.<br/>                                   |
 | [Entrada multimedia](multimedia-input.md)<br/>         | Información general sobre cómo usar la entrada multimedia.<br/>                                   |
-| [Vídeo para Windows](video-for-windows.md)<br/>       | Información general sobre el uso de vídeo para Windows.<br/>                                  |
-| [Referencia multimedia](multimedia-reference.md)<br/> | Documentación de funciones, interfaces, comandos y mensajes multimedia de Windows.<br/>       |
+| [Vídeo para Windows](video-for-windows.md)<br/>       | Información general sobre cómo usar Video para Windows.<br/>                                  |
+| [Referencia multimedia](multimedia-reference.md)<br/> | Documentación de Windows funciones multimedia, interfaces, comandos y mensajes multimedia.<br/>       |
 
 
 

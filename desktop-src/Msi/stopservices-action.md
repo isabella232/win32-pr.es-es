@@ -4,12 +4,12 @@ ms.assetid: 1ad01205-f8b6-400f-be1d-c00a5b71ccfd
 title: Acción StopServices
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 31cb271b99c434a1ac54ab9744697b991e9e1fcc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2fee0082d1588c3a1486b51bd4f06869374e1f6babfa71d309d65512e1ff1b0b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677531"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119627385"
 ---
 # <a name="stopservices-action"></a>Acción StopServices
 
@@ -17,7 +17,7 @@ La acción StopServices detiene los servicios del sistema. Esta acción consulta
 
 ## <a name="sequence-restrictions"></a>Restricciones de secuencia
 
-Las acciones de servicios se deben usar en la secuencia siguiente:
+Las acciones de servicios deben usarse en la secuencia siguiente:
 
 -   StopServices
 -   [DeleteServices](deleteservices-action.md)
@@ -46,9 +46,9 @@ Cualquiera de las siguientes acciones:
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta acción requiere que el usuario sea administrador o que tenga privilegios elevados con permiso para controlar los servicios o que la aplicación forme parte de una instalación administrada.
+Esta acción requiere que el usuario sea administrador o tenga privilegios elevados con permiso para controlar los servicios o que la aplicación sea parte de una instalación administrada.
 
  
 

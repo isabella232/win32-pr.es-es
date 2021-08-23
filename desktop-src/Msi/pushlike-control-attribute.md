@@ -4,12 +4,12 @@ ms.assetid: c30b383a-7fae-413a-a6e6-8e958009f10c
 title: Atributo de control PushLike
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 839adfceb0484bc908b8c8c6d14616cfd03acdb6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9ab516038538849ac97d273d5fb3ede2be5be17417c48cf9a5624af98789867c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677768"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119692485"
 ---
 # <a name="pushlike-control-attribute"></a>Atributo de control PushLike
 
@@ -31,11 +31,11 @@ Si este bit se establece en una casilla o un grupo de botones de radio, el botó
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para establecer este atributo en un control, incluya el bit PushLike en la columna Attributes del registro del control en la [tabla de control](control-table.md).
+Para establecer este atributo en un control, incluya el bit PushLike en la columna Atributos del registro del control en la [tabla Control](control-table.md).
 
-Vea [controles y](controls.md) [atributos de control](control-attributes.md) .
+Vea [Controles y atributos](control-attributes.md) de [control.](controls.md)
 
  
 

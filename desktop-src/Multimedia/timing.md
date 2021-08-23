@@ -1,35 +1,35 @@
 ---
-title: Temporización (Windows multimedia)
+title: Control de tiempo (Windows Multimedia)
 description: Control de tiempo
 ms.assetid: 9ab284c7-eebc-4b44-b9e1-cc95efde22c1
 keywords:
-- DrawDib, temporización
-- DrawDibTime función)
-- DrawDib, depuración
-- depurar DrawDib
+- DrawDib,timing
+- Función DrawDibTime
+- DrawDib,debugging
+- depuración de DrawDib
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: adddd43ff5067d08334a40f2e52e79109c8a8bb7
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 1bc4324de5336a00b246ad644794ce8d0b3491bb644f34e8fc22dc8a7e460ba1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104488753"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119688085"
 ---
-# <a name="timing-windows-multimedia"></a>Temporización (Windows multimedia)
+# <a name="timing-windows-multimedia"></a>Control de tiempo (Windows Multimedia)
 
-Como parte de la depuración de una aplicación, puede obtener información sobre la cantidad de tiempo necesario para completar las operaciones repetitivas de DrawDib. La función [**DrawDibTime**](/windows/desktop/api/Vfw/nf-vfw-drawdibtime) devuelve información de tiempo para las siguientes operaciones:
+Como parte de la depuración de una aplicación, puede obtener información sobre la cantidad de tiempo necesaria para completar operaciones DrawDib repetitivas. La [**función DrawDibTime**](/windows/desktop/api/Vfw/nf-vfw-drawdibtime) devuelve información de tiempo para las operaciones siguientes:
 
--   Dibujo de un mapa de bits
--   Descomprimir un mapa de bits
--   Tramar un mapa de bits
+-   Dibujar un mapa de bits
+-   Descompresión de un mapa de bits
+-   Dithering a bitmap
 -   Ajustar un mapa de bits
--   Transferir un mapa de bits mediante la función [**bitblt**](/windows/desktop/api/wingdi/nf-wingdi-bitblt)
--   Transferir un mapa de bits mediante la función [**StretchDIBits**](/windows/desktop/api/wingdi/nf-wingdi-stretchdibits)
+-   Transferencia de un mapa de bits mediante [**la función BitBlt**](/windows/desktop/api/wingdi/nf-wingdi-bitblt)
+-   Transferencia de un mapa de bits mediante [**la función StretchDIBits**](/windows/desktop/api/wingdi/nf-wingdi-stretchdibits)
 
 Después de recuperar un conjunto de valores, [**DrawDibTime**](/windows/desktop/api/Vfw/nf-vfw-drawdibtime) restablece el recuento y el valor de cada operación.
 
-La función [**DrawDibTime**](/windows/desktop/api/Vfw/nf-vfw-drawdibtime) solo está disponible en la versión de depuración de las funciones DrawDib.
+La [**función DrawDibTime**](/windows/desktop/api/Vfw/nf-vfw-drawdibtime) solo está disponible en la versión de depuración de las funciones DrawDib.
 
 ## <a name="related-topics"></a>Temas relacionados
 
