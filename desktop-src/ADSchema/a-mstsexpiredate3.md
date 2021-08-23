@@ -1,11 +1,11 @@
 ---
 title: Atributo MS-TS-ExpireDate3
-description: Fecha de expiración de la tercera CAL por usuario de TS.
+description: Fecha de expiración del tercer TS por cal de usuario.
 ms.assetid: 47dea1aa-54c3-4d0a-b82f-5161deaefd3d
 ms.tgt_platform: multiple
 keywords:
 - Esquema de AD del atributo MS-TS-ExpireDate3
-- msTSExpireDate3 esquema de AD de atributos
+- Esquema de AD del atributo msTSExpireDate3
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d4dac7405699357e7e9db7cd771e077633452b6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: dc9ea487fe93ec01854563042f262128a1d54ad879e9cfd40e4301d03a91cfdf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119589615"
 ---
 # <a name="ms-ts-expiredate3-attribute"></a>Atributo MS-TS-ExpireDate3
 
-Fecha de expiración de la tercera CAL por usuario de TS.
+Fecha de expiración del tercer TS por cal de usuario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------------------------|
 | CN                | MS-TS-ExpireDate3                                             |
-| Nombre para mostrar de LDAP | msTSExpireDate3                                               |
-| Tamaño              | \-                                                            |
-| Actualizar privilegio  | \-                                                            |
+| Ldap-Display-Name | msTSExpireDate3                                               |
+| Size              | \-                                                            |
+| Privilegio actualizar  | \-                                                            |
 | Frecuencia de actualización  | \-                                                            |
 | Attribute-Id      | 1.2.840.113556.1.4.2003                                       |
-| System-ID-GUID    | 41bc7f04-be72-4930-bd10-1f3439412387                          |
-| Sintaxis            | [**String(Generalized-Time)**](s-string-generalized-time.md) |
+| System-Id-Guid    | 41bc7f04-be72-4930-bd10-1f3439412387                          |
+| Syntax            | [**String(Generalized-Time)**](s-string-generalized-time.md) |
 
 
 
@@ -52,13 +52,13 @@ Fecha de expiración de la tercera CAL por usuario de TS.
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | True         |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Verdadero         |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000001   |
@@ -73,13 +73,13 @@ Fecha de expiración de la tercera CAL por usuario de TS.
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | True         |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Verdadero         |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000001   |
@@ -94,13 +94,13 @@ Fecha de expiración de la tercera CAL por usuario de TS.
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | True         |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Verdadero         |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000001   |

@@ -1,11 +1,11 @@
 ---
-title: Mostrar como atributo de solo vista avanzado
-description: TRUE si este atributo debe estar visible en el modo avanzado de la interfaz de usuario.
+title: Atributo Show-In-Advanced-View-Only
+description: TRUE si este atributo va a estar visible en el modo Avanzado de la interfaz de usuario.
 ms.assetid: af2e3b9c-50ad-40e4-88b7-155f792965f1
 ms.tgt_platform: multiple
 keywords:
-- Mostrar en el esquema de AD de atributo de solo vista avanzado
-- Del showinadvancedviewonly esquema de AD de atributos
+- Esquema de AD del atributo Show-In-Advanced-View-Only
+- ShowInAdvancedViewOnly attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7fb466371183aad02613ee1454f1e0b40a410625
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 16028fd59095041df2a9ee5092796fa48e264aff1d84bc3a97661b551364d4e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997503"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119645835"
 ---
-# <a name="show-in-advanced-view-only-attribute"></a>Mostrar como atributo de solo vista avanzado
+# <a name="show-in-advanced-view-only-attribute"></a>Atributo Show-In-Advanced-View-Only
 
-**True** si este atributo debe estar visible en el modo avanzado de la interfaz de usuario.
+**TRUE** si este atributo va a estar visible en el modo Avanzado de la interfaz de usuario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------------------------------------------------------|
-| CN                | Mostrar en la vista avanzada                                                              |
-| Nombre para mostrar de LDAP | showInAdvancedViewOnly                                                                  |
-| Tamaño              | 4 bytes                                                                                 |
-| Actualizar privilegio  | Administrador de dominio                                                                    |
+| CN                | Show-In-Advanced-View-Only                                                              |
+| Ldap-Display-Name | showInAdvancedViewOnly                                                                  |
+| Size              | 4 bytes                                                                                 |
+| Actualizar privilegios  | Administrador de dominio                                                                    |
 | Frecuencia de actualización  | Cuando se crea el objeto o cuando es necesario cambiar los aspectos de visualización del atributo. |
 | Attribute-Id      | 1.2.840.113556.1.2.169                                                                  |
-| System-ID-GUID    | bf967984-0de6-11d0-a285-00aa003049e2                                                    |
-| Sintaxis            | [**Booleano**](s-boolean.md)                                                            |
+| System-Id-Guid    | bf967984-0de6-11d0-a285-00aa003049e2                                                    |
+| Syntax            | [**Boolean**](s-boolean.md)                                                            |
 
 
 
@@ -44,7 +44,7 @@ ms.locfileid: "103997503"
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,13 +56,13 @@ ms.locfileid: "103997503"
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | True                            |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000011                      |
@@ -77,13 +77,13 @@ ms.locfileid: "103997503"
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | True                            |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000011                      |
@@ -92,19 +92,19 @@ ms.locfileid: "103997503"
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | True                            |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000011                      |
@@ -117,15 +117,15 @@ ms.locfileid: "103997503"
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | True                            |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000011                      |
@@ -140,13 +140,13 @@ ms.locfileid: "103997503"
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | True                            |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000011                      |
@@ -161,13 +161,13 @@ ms.locfileid: "103997503"
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | True                            |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000011                      |
@@ -180,15 +180,15 @@ ms.locfileid: "103997503"
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | True                            |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000011                      |

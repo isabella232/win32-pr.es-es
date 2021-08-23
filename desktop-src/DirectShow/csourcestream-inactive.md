@@ -1,7 +1,7 @@
 ---
-description: 'El método Inactive notifica al pin que el filtro ya no está activo. Este método invalida el método CBasePin:: INACTIVE. Si el subproceso de streaming está activo, este método lo detiene y espera a que se cierre el subproceso.'
+description: El método Inactivo notifica al pin que el filtro ya no está activo. Este método invalida el método CBasePin::Inactive. Si el subproceso de streaming está activo, este método lo detiene y espera a que se cierre el subproceso.
 ms.assetid: 82cf0f13-e563-4a0b-b2e1-25ab19f7ed78
-title: Método CSourceStream. Inactive (Source. h)
+title: Método CSourceStream.Inactive (Source.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6c4fab336f5f06d932189ee991fd190d1ae42b27
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c9d9424f4299d7a07ad98010846fa917307bd38eead028b4b8c38c40e2284c1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690418"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119687375"
 ---
-# <a name="csourcestreaminactive-method"></a>CSourceStream. Inactive (método)
+# <a name="csourcestreaminactive-method"></a>Método CSourceStream.Inactive
 
-El `Inactive` método notifica al pin que el filtro ya no está activo. Este método invalida el método [**CBasePin:: Inactive**](cbasepin-inactive.md) . Si el subproceso de streaming está activo, este método lo detiene y espera a que se cierre el subproceso.
+El `Inactive` método notifica al pin que el filtro ya no está activo. Este método invalida el [**método CBasePin::Inactive.**](cbasepin-inactive.md) Si el subproceso de streaming está activo, este método lo detiene y espera a que se cierre el subproceso.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ OK u otro valor **HRESULT** .
+Devuelve S \_ OK u otro valor **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve S \_ OK u otro valor **HRESULT** .
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Source. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Source.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve S \_ OK u otro valor **HRESULT** .
 
 <dl> <dt>
 
-[**Clase CSourceStream**](csourcestream.md)
+[**CSourceStream (clase)**](csourcestream.md)
 </dt> </dl>
 
  

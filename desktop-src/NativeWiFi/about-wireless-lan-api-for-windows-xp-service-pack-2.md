@@ -1,35 +1,35 @@
 ---
-description: Se admite un subconjunto de la funcionalidad nativa de la API WiFi en Windows XP con Service Pack 2 (SP2) y Windows XP con Service Pack 3 (SP3).
+description: Se admite un subconjunto de la funcionalidad de api Wi-Fi nativa en Windows XP con Service Pack 2 (SP2) y Windows XP con Service Pack 3 (SP3).
 ms.assetid: d32c4a03-59e8-4fdd-9d5a-e7ef0eb25e84
-title: Compatibilidad con la API WiFi nativa en Windows XP
+title: Compatibilidad nativa con la API Wifi en Windows XP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4cd422c6589b37f516b9d45d072489c9d5e00b82
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4fc284ed24a6aa6ddb266b410a6233c15e063bf909aa9c82f0afa3dc070c9289
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104360801"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119685315"
 ---
-# <a name="native-wifi-api-support-on-windows-xp"></a>Compatibilidad con la API WiFi nativa en Windows XP
+# <a name="native-wifi-api-support-on-windows-xp"></a>Compatibilidad nativa con la API Wifi en Windows XP
 
-Se admite un subconjunto de la funcionalidad nativa de la API WiFi en Windows XP con Service Pack 2 (SP2) y Windows XP con Service Pack 3 (SP3). Esta funcionalidad se incluye de forma predeterminada en Windows XP con SP3. En Windows XP con SP2, esta funcionalidad se puede agregar mediante la aplicación de una revisión, que se conoce como API de LAN inalámbrica para Windows XP con Service Pack 2 (SP2). Para obtener más información o descargar la revisión, consulte "los desarrolladores no pueden crear programas cliente inalámbricos que administren perfiles inalámbricos y conexiones a través del servicio de configuración inalámbrica rápida en Microsoft Windows XP Service Pack 2 (SP2)" en la Knowledge base de ayuda y soporte técnico en [https://support.microsoft.com/kb/918997](https://support.microsoft.com/kb/918997) .
+Se admite un subconjunto de la funcionalidad de api Wi-Fi nativa en Windows XP con Service Pack 2 (SP2) y Windows XP con Service Pack 3 (SP3). Esta funcionalidad se incluye en Windows XP con SP3 de forma predeterminada. En Windows XP con SP2, esta funcionalidad se puede agregar aplicando una revisión, que se conoce como API de LAN inalámbrica para Windows XP con Service Pack 2 (SP2). Para obtener más información o descargar la revisión, vea "Los desarrolladores no pueden crear programas cliente inalámbricos que administren perfiles inalámbricos y conexiones a través del servicio Configuración inalámbrica cero en Microsoft Windows XP Service Pack 2 (SP2)" en la página ayuda y soporte técnico Knowledge Base en [https://support.microsoft.com/kb/918997](https://support.microsoft.com/kb/918997) .
 
-Debido a las diferencias arquitectónicas subyacentes en Windows XP, la API WiFi nativa de tiene algunas limitaciones. Esta es una lista de limitaciones:
+Debido a las diferencias de arquitectura subyacentes Windows XP, la API De Wi-Fi nativa en tiene algunas limitaciones. Esta es una lista de limitaciones:
 
--   Como máximo, un SSID puede asociarse a un perfil.
+-   Como máximo, se puede asociar un SSID a un perfil.
 -   Las redes de infraestructura siempre aparecen antes que las redes ad hoc en la lista de perfiles.
 -   Los nombres de perfil se derivan del SSID y el usuario no puede establecerlo en una cadena arbitraria.
--   No se admiten los tipos de PHY.
+-   No se admiten los tipos PHY.
 -   No se admite el almacenamiento en caché de clave maestra en pares (PMK).
 -   No se admiten las funciones de extensibilidad del proveedor de hardware independiente (IHV).
--   No se admiten los permisos de perfil.
--   Solo \_ se completa la conexión ACM de notificación de WLAN \_ \_ \_ y las \_ notificaciones de WLAN desconectadas de la notificación de WLAN \_ \_ están disponibles.
--   No se admiten las opciones de configuración de 802.1 X y EAPOL globales.
+-   No se admiten permisos de perfil.
+-   Solo están disponibles las notificaciones acm de notificación de wlan completadas y las notificaciones \_ \_ wlan \_ \_ \_ \_ acm \_ disconnected.
+-   No se admiten las opciones de configuración global 802.1X y EAPOL.
 
-Las siguientes funciones son compatibles con Windows XP con SP3 y la API de LAN inalámbrica para Windows XP con SP2:
+Las siguientes funciones son compatibles con Windows XP con SP3 e WIRELESS LAN API para Windows XP con SP2:
 
--   [**devolución de llamada de \_ notificación de WLAN \_**](/windows/win32/api/wlanapi/nc-wlanapi-wlan_notification_callback)
+-   [**DEVOLUCIÓN \_ DE LLAMADA DE NOTIFICACIÓN DE WLAN \_**](/windows/win32/api/wlanapi/nc-wlanapi-wlan_notification_callback)
 -   [**WlanAllocateMemory**](/windows/desktop/api/wlanapi/nf-wlanapi-wlanallocatememory)
 -   [**WlanCloseHandle**](/windows/desktop/api/wlanapi/nf-wlanapi-wlanclosehandle)
 -   [**WlanConnect**](/windows/desktop/api/wlanapi/nf-wlanapi-wlanconnect)
@@ -58,7 +58,7 @@ Las siguientes funciones son compatibles con Windows XP con SP3 y la API de LAN 
 [https://support.microsoft.com/kb/918997](https://support.microsoft.com/kb/918997)
 </dt> <dt>
 
-[Acerca de WiFi nativo](about-native-wifi.md)
+[Acerca de Wi-Fi nativo](about-native-wifi.md)
 </dt> </dl>
 
  

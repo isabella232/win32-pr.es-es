@@ -1,9 +1,9 @@
 ---
-title: SLIDEr. foregroundProgress
-description: El atributo foregroundProgress especifica o recupera la posición actual de la barra de progreso del primer plano como un porcentaje del área del control deslizante.
+title: SLIDER.foregroundProgress
+description: El atributo foregroundProgress especifica o recupera la posición actual de la barra de progreso de primer plano como porcentaje del área deslizante.
 ms.assetid: 1218ca5a-445c-441b-aa62-74a184a25c2d
 keywords:
-- CONTROL SLIDEr. foregroundProgress Windows Media Player
+- SLIDER.foregroundProgress Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a4597630453444564411d0bcfad8dc6b39914d13
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6e48819a2b3245fc8a72d29e9a30135cc37702417ca498c88b8be01578b74988
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661000"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119646345"
 ---
-# <a name="sliderforegroundprogress"></a>SLIDEr. foregroundProgress
+# <a name="sliderforegroundprogress"></a>SLIDER.foregroundProgress
 
-El atributo **foregroundProgress** especifica o recupera la posición actual de la barra de progreso del primer plano como un porcentaje del área del control deslizante.
+El **atributo foregroundProgress** especifica o recupera la posición actual de la barra de progreso de primer plano como porcentaje del área deslizante.
 
 ``` syntax
         elementID.foregroundProgress
@@ -29,13 +29,13 @@ El atributo **foregroundProgress** especifica o recupera la posición actual de 
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **número** de lectura/escritura (**float**) que va de 0 a 100.
+Este atributo es un número de lectura y **escritura** **(float)** que va de 0 a 100.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo se usa principalmente para realizar el seguimiento del progreso de la descarga de un archivo multimedia mientras realiza un seguimiento simultáneo de la posición de reproducción actual del archivo mediante el atributo de **valor** . La posición del control deslizante está restringida al área del progreso en primer plano. Esto permite que la búsqueda interactiva tenga lugar solo dentro de la parte disponible de un archivo de descarga.
+Este atributo se usa principalmente para realizar un seguimiento del progreso de descarga de un archivo multimedia mientras se realiza el seguimiento simultáneo de la posición de reproducción actual del archivo mediante el **atributo value.** La posición del control deslizante está restringida al área del progreso de primer plano. Esto permite que la búsqueda interactiva solo se lleve a cabo dentro de la parte disponible de un archivo de descarga.
 
-Para usar esta funcionalidad, el atributo **useForegroundProgress** debe establecerse en true.
+Para usar esta funcionalidad, el **atributo useForegroundProgress** debe establecerse en true.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -62,9 +62,9 @@ Para usar esta funcionalidad, el atributo **useForegroundProgress** debe estable
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -72,19 +72,19 @@ Para usar esta funcionalidad, el atributo **useForegroundProgress** debe estable
 
 <dl> <dt>
 
-[**Elemento SLIDEr**](slider-element.md)
+[**Elemento SLIDER**](slider-element.md)
 </dt> <dt>
 
-[**SLIDEr. min**](slider-min.md)
+[**SLIDER.min**](slider-min.md)
 </dt> <dt>
 
-[**Control deslizante. Max**](slider-max.md)
+[**SLIDER.max**](slider-max.md)
 </dt> <dt>
 
-[**SLIDEr. useForegroundProgress**](slider-useforegroundprogress.md)
+[**SLIDER.useForegroundProgress**](slider-useforegroundprogress.md)
 </dt> <dt>
 
-[**Control deslizante. valor**](slider-value.md)
+[**SLIDER.value**](slider-value.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: AlHacerClic
-description: El controlador de eventos OnClick controla un evento que se produce cuando el usuario hace clic en el elemento.
+title: Onclick
+description: El controlador de eventos onclick controla un evento que se produce cuando el usuario hace clic en el elemento .
 ms.assetid: 59aa0038-b004-4dc3-849a-6015db764843
 keywords:
-- Media Player de Windows OnClick
+- onclick Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,32 +13,32 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: be07d2cc8a7720f686ca5ae0847870b27279b8da
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ae69bcd5ff7d806db5bcaf1e7fd978fc43881d8b390ada7922f394f4f7225b4a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699510"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647205"
 ---
-# <a name="onclick"></a>AlHacerClic
+# <a name="onclick"></a>Onclick
 
-El controlador de eventos **onclick** controla un evento que se produce cuando el usuario hace clic en el elemento.
+El **controlador de eventos onclick** controla un evento que se produce cuando el usuario hace clic en el elemento .
 
 ``` syntax
 onclick
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este controlador de eventos no es aplicable al elemento de **lista de reproducción** , al elemento **popup** , al elemento de **vídeo** , al elemento **ListBox** , al *vídeo*. **Windowless** es false o el elemento **Effects** cuando tiene *efectos*. **windowed** es true.
+Este controlador de eventos no es aplicable al elemento **PLAYLIST,** **el elemento POPUP,** el **elemento VIDEO,** el **elemento LISTBOX,** cuando *VIDEO*. **windowless** es false o el elemento **EFFECTS** cuando *EFFECTS*. **windowed** es true.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|-----------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 70 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 70 o posterior<br/> |
 
 
 
@@ -46,7 +46,7 @@ Este controlador de eventos no es aplicable al elemento de **lista de reproducci
 
 <dl> <dt>
 
-[**Controladores de eventos de ambiente**](ambient-event-handlers.md)
+[**Controladores de eventos ambiente**](ambient-event-handlers.md)
 </dt> </dl>
 
  

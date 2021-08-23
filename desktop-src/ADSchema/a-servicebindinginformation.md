@@ -1,11 +1,11 @@
 ---
-title: Atributo de información de enlace de servicio
+title: Atributo Service-Binding-Information
 description: Información de enlace específica del servicio en formato de cadena.
 ms.assetid: 0348b375-85cd-4ca7-87bc-122548d5e48d
 ms.tgt_platform: multiple
 keywords:
-- Atributo de información de enlace de servicio esquema de AD
-- serviceBindingInformation esquema de AD de atributos
+- Esquema de AD del atributo Service-Binding-Information
+- ServiceBindingInformation attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 061592e86561fea2c6b09563237c9213c5fb32e1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: bd7d4f6935020287f40f86ddb16271d0005ae4254a799b34011dee8d665f4e2c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104536160"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119646105"
 ---
-# <a name="service-binding-information-attribute"></a>Atributo de información de enlace de servicio
+# <a name="service-binding-information-attribute"></a>Atributo Service-Binding-Information
 
 Información de enlace específica del servicio en formato de cadena.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Información de enlace de servicio                 |
-| Nombre para mostrar de LDAP | serviceBindingInformation                   |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | Service-Binding-Information                 |
+| Ldap-Display-Name | serviceBindingInformation                   |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.510                      |
-| System-ID-GUID    | b7b1311c-b82e-11d0-afee-0000f80367c1        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | b7b1311c-b82e-11d0-afee-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,13 +55,13 @@ Información de enlace específica del servicio en formato de cadena.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | False                                                                   |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | True                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Falso                                                                   |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Verdadero                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
@@ -76,13 +76,13 @@ Información de enlace específica del servicio en formato de cadena.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | False                                                                   |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | True                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Falso                                                                   |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Verdadero                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
@@ -97,13 +97,13 @@ Información de enlace específica del servicio en formato de cadena.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | False                                                                   |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | True                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Falso                                                                   |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Verdadero                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
@@ -116,15 +116,15 @@ Información de enlace específica del servicio en formato de cadena.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | False                                                                   |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | True                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Falso                                                                   |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Verdadero                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
@@ -139,13 +139,13 @@ Información de enlace específica del servicio en formato de cadena.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | False                                                                   |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | True                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Falso                                                                   |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Verdadero                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
@@ -160,13 +160,13 @@ Información de enlace específica del servicio en formato de cadena.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | False                                                                   |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | True                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Falso                                                                   |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Verdadero                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |

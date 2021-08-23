@@ -1,23 +1,23 @@
 ---
-description: En la tabla siguiente se enumeran las etiquetas de propiedad de imagen GDI+ de Windows en orden numérico.
+description: En la tabla siguiente se enumeran Windows GDI+ etiquetas de propiedad de imagen en orden numérico.
 ms.assetid: 44417090-a468-47c9-996c-bc7629a6e53f
 title: Etiquetas de propiedad en orden numérico
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2fee3f21a67bf21b86014c5bfc50527ada1d9790
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 46d4a03a97159cb40262da6e4ccf3c84fb5cc1253cc3d5bdf5a4729c5b3f113f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104997528"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119666365"
 ---
 # <a name="property-tags-in-numerical-order"></a>Etiquetas de propiedad en orden numérico
 
-En la tabla siguiente se enumeran las etiquetas de propiedad de imagen GDI+ de Windows en orden numérico.
+En la tabla siguiente se enumeran Windows GDI+ etiquetas de propiedad de imagen en orden numérico.
 
 
 
-| Etiqueta de propiedad                                                                                                                            | Value  |
+| Etiqueta de propiedad                                                                                                                            | Valor  |
 |-----------------------------------------------------------------------------------------------------------------------------------------|--------|
 | [PropertyTagGpsVer](-gdiplus-constant-property-item-descriptions.md)                                                 | 0x0000 |
 | [PropertyTagGpsLatitudeRef](-gdiplus-constant-property-item-descriptions.md)                                 | 0x0001 |
@@ -106,15 +106,15 @@ En la tabla siguiente se enumeran las etiquetas de propiedad de imagen GDI+ de W
 | [PropertyTagSMinSampleValue](-gdiplus-constant-property-item-descriptions.md)                               | 0x0154 |
 | [PropertyTagSMaxSampleValue](-gdiplus-constant-property-item-descriptions.md)                               | 0x0155 |
 | [PropertyTagTransferRange](-gdiplus-constant-property-item-descriptions.md)                                   | 0x0156 |
-| [PropertyTagJPEGProc](-gdiplus-constant-property-item-descriptions.md)                                             | 0x0200 |
-| [PropertyTagJPEGInterFormat](-gdiplus-constant-property-item-descriptions.md)                               | 0x0201 |
-| [PropertyTagJPEGInterLength](-gdiplus-constant-property-item-descriptions.md)                               | 0x0202 |
-| [PropertyTagJPEGRestartInterval](-gdiplus-constant-property-item-descriptions.md)                       | 0x0203 |
-| [PropertyTagJPEGLosslessPredictors](-gdiplus-constant-property-item-descriptions.md)                 | 0x0205 |
-| [PropertyTagJPEGPointTransforms](-gdiplus-constant-property-item-descriptions.md)                       | 0x0206 |
-| [PropertyTagJPEGQTables](-gdiplus-constant-property-item-descriptions.md)                                       | 0x0207 |
-| [PropertyTagJPEGDCTables](-gdiplus-constant-property-item-descriptions.md)                                     | 0x0208 |
-| [PropertyTagJPEGACTables](-gdiplus-constant-property-item-descriptions.md)                                     | 0x0209 |
+| [PropertyTagPERMISSIONEGProc](-gdiplus-constant-property-item-descriptions.md)                                             | 0x0200 |
+| [PropertyTag JPEGInterFormat](-gdiplus-constant-property-item-descriptions.md)                               | 0x0201 |
+| [PropertyTagGSEGInterLength](-gdiplus-constant-property-item-descriptions.md)                               | 0x0202 |
+| [PropertyTag JPEGRestartInterval](-gdiplus-constant-property-item-descriptions.md)                       | 0x0203 |
+| [PropertyTagREVEGLosslessPredictors](-gdiplus-constant-property-item-descriptions.md)                 | 0x0205 |
+| [PropertyTagTRANSFORMEGPointTransforms](-gdiplus-constant-property-item-descriptions.md)                       | 0x0206 |
+| [PropertyTag CONFIGURABLEEGQTables](-gdiplus-constant-property-item-descriptions.md)                                       | 0x0207 |
+| [PropertyTag JPEGDCTables](-gdiplus-constant-property-item-descriptions.md)                                     | 0x0208 |
+| [PropertyTagAGAEGACTables](-gdiplus-constant-property-item-descriptions.md)                                     | 0x0209 |
 | [PropertyTagYCbCrCoefficients](-gdiplus-constant-property-item-descriptions.md)                           | 0x0211 |
 | [PropertyTagYCbCrSubsampling](-gdiplus-constant-property-item-descriptions.md)                             | 0x0212 |
 | [PropertyTagYCbCrPositioning](-gdiplus-constant-property-item-descriptions.md)                             | 0x0213 |
@@ -138,7 +138,7 @@ En la tabla siguiente se enumeran las etiquetas de propiedad de imagen GDI+ de W
 | [PropertyTagHalftoneShape](-gdiplus-constant-property-item-descriptions.md)                                   | 0x500D |
 | [PropertyTagHalftoneMisc](-gdiplus-constant-property-item-descriptions.md)                                     | 0x500E |
 | [PropertyTagHalftoneScreen](-gdiplus-constant-property-item-descriptions.md)                                 | 0x500F |
-| [PropertyTagJPEGQuality](-gdiplus-constant-property-item-descriptions.md)                                       | 0x5010 |
+| [PropertyTagQUALEGQuality](-gdiplus-constant-property-item-descriptions.md)                                       | 0x5010 |
 | [PropertyTagGridSize](-gdiplus-constant-property-item-descriptions.md)                                             | 0x5011 |
 | [PropertyTagThumbnailFormat](-gdiplus-constant-property-item-descriptions.md)                               | 0x5012 |
 | [PropertyTagThumbnailWidth](-gdiplus-constant-property-item-descriptions.md)                                 | 0x5013 |
@@ -172,7 +172,7 @@ En la tabla siguiente se enumeran las etiquetas de propiedad de imagen GDI+ de W
 | [PropertyTagThumbnailDateTime](-gdiplus-constant-property-item-descriptions.md)                           | 0x5033 |
 | [PropertyTagThumbnailArtist](-gdiplus-constant-property-item-descriptions.md)                               | 0x5034 |
 | [PropertyTagThumbnailWhitePoint](-gdiplus-constant-property-item-descriptions.md)                       | 0x5035 |
-| [PropertyTagThumbnailPrimaryChromaticities](-gdiplus-constant-property-item-descriptions.md) | 0x5036 |
+| [PropertyTagThumbnailPrimaryCroticities](-gdiplus-constant-property-item-descriptions.md) | 0x5036 |
 | [PropertyTagThumbnailYCbCrCoefficients](-gdiplus-constant-property-item-descriptions.md)         | 0x5037 |
 | [PropertyTagThumbnailYCbCrSubsampling](-gdiplus-constant-property-item-descriptions.md)           | 0x5038 |
 | [PropertyTagThumbnailYCbCrPositioning](-gdiplus-constant-property-item-descriptions.md)           | 0x5039 |

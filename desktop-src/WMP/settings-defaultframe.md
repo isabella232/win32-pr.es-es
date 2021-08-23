@@ -1,9 +1,9 @@
 ---
-title: Settings. defaultFrame
-description: La propiedad defaultFrame especifica o recupera el nombre del marco que se usa para mostrar una dirección URL que se recibe en un evento comando.
+title: Configuración.defaultFrame
+description: La propiedad defaultFrame especifica o recupera el nombre del marco utilizado para mostrar una dirección URL que se recibe en un evento ScriptCommand.
 ms.assetid: c2edb253-a545-4820-85aa-8fb7badf4d81
 keywords:
-- Settings. defaultFrame Windows Media Player
+- Configuración.defaultFrame Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,40 +14,40 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a6182a635e4bd73a946c3cf85efb7d39966c0007
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0240864cd19c1a4d84c30abfc6e6b8ecb08457d26c3c660d19fc18d228b19615
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649811"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119571815"
 ---
-# <a name="settingsdefaultframe"></a>Settings. defaultFrame
+# <a name="settingsdefaultframe"></a>Configuración.defaultFrame
 
-La propiedad **defaultFrame** especifica o recupera el nombre del marco que se usa para mostrar una dirección URL que se recibe en un evento **comando** .
+La **propiedad defaultFrame** especifica o recupera el nombre del marco utilizado para mostrar una dirección URL que se recibe en un **evento ScriptCommand.**
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
-Player. Settings. defaultFrame
+player.settings.defaultFrame
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es una **cadena** de lectura/escritura que corresponde al valor del atributo **Name** del elemento de marco de destino.
+Esta propiedad es una cadena de lectura y **escritura** que corresponde al valor del atributo **name** del elemento FRAME de destino.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si se especifica un marco de destino en el propio evento **comando** , se omite esta propiedad.
+Si se especifica un marco de destino en el propio **evento ScriptCommand,** se omite esta propiedad.
 
-Esta propiedad se omite cuando se usa el applet Java de Netscape Navigator. En el navegador, cada comando de script de dirección URL recibido muestra la dirección URL en una nueva ventana del explorador, independientemente del valor de *configuración*. **defaultFrame**.
+Esta propiedad se omite cuando se usa el applet De Java de Netscape Navigator. En Navegador, cada comando de script de dirección URL recibido muestra la dirección URL en una nueva ventana del explorador, independientemente del valor de *Configuración*. **defaultFrame**.
 
-**Windows Media Player 10 Mobile**: esta propiedad es de solo lectura y siempre devuelve una cadena vacía.
+**Reproductor de Windows Media 10 Mobile:** esta propiedad es de solo lectura y siempre devuelve una cadena vacía.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -56,10 +56,10 @@ Esta propiedad se omite cuando se usa el applet Java de Netscape Navigator. En e
 
 <dl> <dt>
 
-[**Evento Player. comando**](player-player-scriptcommand.md)
+[**Evento Player.ScriptCommand**](player-player-scriptcommand.md)
 </dt> <dt>
 
-[**Objeto de configuración**](settings-object.md)
+[**Configuración Objeto**](settings-object.md)
 </dt> <dt>
 
 [**Uso del Reproductor de Windows Media con Netscape 7.1**](using-windows-media-player-with-netscape-7-1.md)

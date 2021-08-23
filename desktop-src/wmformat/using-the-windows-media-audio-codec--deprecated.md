@@ -1,9 +1,9 @@
 ---
-title: Usar el códec de Windows Media Audio
-description: Para obtener la documentación actual sobre los códecs de Windows Media y los procesadores de señal digital, consulte Windows Media Audio y vídeo códec y API de DSP. | Usar el códec de Windows Media Audio
+title: Uso del códec Windows media audio
+description: Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP APIs (Api de códecs de audio y vídeo multimedia y DSP). | Uso del códec Windows media audio
 ms.assetid: 1ea0c353-7b76-45ff-9a2c-951018d5af06
 keywords:
-- Usar el formato de Windows Media de códec de Windows Media Audio
+- Usar el códec de Windows media con formato multimedia de Windows
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ba9865beaac04dadcf283d4a82b96755d62969c
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 943ff0e401816c13a9cb75fb158c50b9de0530bca21cf880faa16327385d96ff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103820759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119590825"
 ---
-# <a name="using-the-windows-media-audio-codec"></a>Usar el códec de Windows Media Audio
+# <a name="using-the-windows-media-audio-codec"></a>Uso del códec Windows media audio
 
-Para obtener la documentación actual sobre los códecs de Windows Media y los procesadores de señal digital, consulte [Windows Media Audio y vídeo códec y API de DSP.](/previous-versions//dd464626(v=vs.85))
+Para obtener la documentación actual Windows códecs multimedia y procesadores de señales digitales, vea Windows [Media Audio and Video Codec and DSP APIs (Api](/previous-versions//dd464626(v=vs.85)) de códecs de audio y vídeo multimedia y DSP).
 
  
 

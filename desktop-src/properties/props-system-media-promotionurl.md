@@ -4,12 +4,12 @@ ms.assetid: a0e464a0-ff43-43a8-87f7-2fef17ca15eb
 title: System.Media.PromotionUrl
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 17e2649c9eb567e5afe5889856ef5161ea195f79
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e2308aebb34b84b3b6cf098b5356232d98bab80c5715a4fcb710b5e6f082f27e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091993"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119597685"
 ---
 # <a name="systemmediapromotionurl"></a>System.Media.PromotionUrl
 

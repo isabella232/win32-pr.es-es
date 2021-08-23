@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5aa8dcfbf573f6ca5b047c9f84567a84985732c7
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d4a7769f706dc7f21213f3c8d02cc76752b0a5623313915f6d557a93ae3d3e6c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084803"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119538065"
 ---
-# <a name="ctransformoutputpinsetmediatype-method"></a>CTransformOutputPin.SetMediaType (método)
+# <a name="ctransformoutputpinsetmediatype-method"></a>Método CTransformOutputPin.SetMediaType
 
 El `SetMediaType` método establece el tipo de medio para la conexión.
 
@@ -65,7 +65,7 @@ El pin debe comprobar que el tipo de medio es aceptable antes de llamar a este m
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 

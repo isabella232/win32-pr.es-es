@@ -1,19 +1,19 @@
 ---
-description: Nombre del espacio de nombres del shell de un elemento relativo a una carpeta principal.
+description: Nombre del espacio de nombres de Shell de un elemento relativo a una carpeta primaria.
 ms.assetid: 8d17d99f-a4c2-489e-97b3-74586b191cf2
-title: System. ParsingName
+title: System.ParsingName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b36e11d95141abd546f8e5f2721eb7d4ed270a7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a9f41b16b2d38378fa4212712f2f2d98d2310fe4b7403a466d8fae9e7de0920e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667093"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119598345"
 ---
-# <a name="systemparsingname"></a>System. ParsingName
+# <a name="systemparsingname"></a>System.ParsingName
 
-Nombre del espacio de nombres del shell de un elemento relativo a una carpeta principal.
+Nombre del espacio de nombres de Shell de un elemento relativo a una carpeta primaria.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -31,11 +31,11 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
-Este valor se puede pasar al método [**ParseDisplayName**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellfolder-parsedisplayname) del objeto [**IShellFolder**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) que representa la carpeta de Shell primaria.
+Este valor se puede pasar al [**método ParseDisplayName**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellfolder-parsedisplayname) del objeto [**IShellFolder**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) que representa la carpeta principal de Shell.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -50,7 +50,7 @@ Este valor se puede pasar al método [**ParseDisplayName**](/windows/win32/api/s
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -62,7 +62,7 @@ Este valor se puede pasar al método [**ParseDisplayName**](/windows/win32/api/s
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -80,7 +80,7 @@ Este valor se puede pasar al método [**ParseDisplayName**](/windows/win32/api/s
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

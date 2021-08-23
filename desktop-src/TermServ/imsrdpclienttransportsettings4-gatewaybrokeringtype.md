@@ -1,12 +1,12 @@
 ---
-title: Propiedad GatewayBrokeringType de IMsRdpClientTransportSettings4
+title: Propiedad IMsRdpClientTransportSettings4 GatewayBrokeringType
 description: Obtiene y establece el tipo de agente de puerta de enlace.
 ms.assetid: be98538e-e875-48cd-9c8b-5e588f5e1c46
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad GatewayBrokeringType
-- Propiedad GatewayBrokeringType Servicios de Escritorio remoto, interfaz IMsRdpClientTransportSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientTransportSettings4, propiedad GatewayBrokeringType
+- Propiedad GatewayBrokeringType Servicios de Escritorio remoto
+- Propiedad GatewayBrokeringType Servicios de Escritorio remoto , interfaz IMsRdpClientTransportSettings4
+- Interfaz IMsRdpClientTransportSettings4 Servicios de Escritorio remoto , propiedad GatewayBrokeringType
 topic_type:
 - apiref
 api_name:
@@ -18,20 +18,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 98d0a8588331d775cecb667375e0db6d873f59e9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: aab168b185a20f0a6371e9d3182b1e120ec5b52d27331a412bb3c71564b8edd1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489515"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119620775"
 ---
-# <a name="imsrdpclienttransportsettings4gatewaybrokeringtype-property"></a>IMsRdpClientTransportSettings4:: GatewayBrokeringType (propiedad)
+# <a name="imsrdpclienttransportsettings4gatewaybrokeringtype-property"></a>Propiedad IMsRdpClientTransportSettings4::GatewayBrokeringType
 
 Obtiene y establece el tipo de agente de puerta de enlace.
 
 Esta propiedad es de solo escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -50,10 +50,10 @@ Tipo.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                            |
-| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                 |
+| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                 |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>            |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>            |
 | IID<br/>                      | IID \_ IMsRdpClientTransportSettings4 se define como 011C3236-4D81-4515-9143-067AB630D299<br/> |

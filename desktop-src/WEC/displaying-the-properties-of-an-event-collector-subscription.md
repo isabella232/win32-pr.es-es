@@ -1,30 +1,30 @@
 ---
-title: Mostrar Propiedades de suscripción del recopilador de eventos
-description: Puede ver información útil sobre una suscripción del recopilador de eventos y sus orígenes de eventos mediante la recuperación y visualización de las propiedades de la suscripción.
+title: Mostrar las propiedades de suscripción del recopilador de eventos
+description: Puede ver información útil sobre una suscripción del recopilador de eventos y sus orígenes de eventos recuperando y mostrando las propiedades de la suscripción.
 ms.assetid: 984e21cf-3671-4aca-9e8e-bcad1fa2f02c
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4630bfc41ecbc0cc9372ae6bb99ce6d3184e4b6e
-ms.sourcegitcommit: 2e9db3c7d9a3dbea15196b03c883846fad6f32be
+ms.openlocfilehash: 0a39042997fd61b3e8bb96eb7fb8030d0fbe1c91d7aa84b9c1482319355db411
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "103784775"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119620695"
 ---
-# <a name="display-event-collector-subscription-properties"></a>Mostrar Propiedades de suscripción del recopilador de eventos
+# <a name="display-event-collector-subscription-properties"></a>Mostrar las propiedades de suscripción del recopilador de eventos
 
-Puede ver información útil sobre una suscripción del recopilador de eventos y sus orígenes de eventos mediante la recuperación y visualización de las propiedades de la suscripción.
+Puede ver información útil sobre una suscripción del recopilador de eventos y sus orígenes de eventos recuperando y mostrando las propiedades de la suscripción.
 
 > [!Note]
 >
 > Puede usar este ejemplo para mostrar los valores de propiedad de una suscripción o puede escribir el siguiente comando en el símbolo del sistema:
 >
-> **wecutil GS** *SubscriptionName*
+> **wecutil gs** *SubscriptionName*
 
- 
+ 
 
-Para mostrar sus propiedades, especifique el nombre de una suscripción. Para obtener más información y un ejemplo de código de C++ en el que se enumeran los nombres de las suscripciones actuales de un equipo local, vea [enumerar las suscripciones del recopilador de eventos](listing-event-collector-subscriptions.md)o puede escribir el siguiente comando en el símbolo del sistema:
+Para mostrar sus propiedades, especifique el nombre de una suscripción. Para obtener más información y un ejemplo de código de C++ sobre cómo enumerar los nombres de las suscripciones actuales en un equipo local, vea [Enumerar](listing-event-collector-subscriptions.md)suscripciones del recopilador de eventos o puede escribir el siguiente comando en el símbolo del sistema:
 
 **wecutil es**
 
@@ -32,11 +32,11 @@ En el ejemplo de código siguiente se sigue un procedimiento para mostrar las pr
 
 **Para mostrar las propiedades de una suscripción del recopilador de eventos y sus orígenes de eventos**
 
-1.  Abra la suscripción proporcionando el nombre de la suscripción y los derechos de acceso como parámetros a la función [**EcOpenSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) . Para obtener más información sobre los derechos de acceso, consulte [**constantes del recopilador de eventos de Windows**](windows-event-collector-constants.md).
-2.  Obtenga y muestre las propiedades de la suscripción y los orígenes de eventos mediante una llamada a la función [**EcGetSubscriptionProperty**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionproperty) y la función [**EcGetObjectArrayProperty**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetobjectarrayproperty) . Para obtener más información sobre las propiedades de origen de eventos y suscripciones que se pueden mostrar, vea la enumeración ID. de [**\_ propiedad de suscripción de \_ \_ EC**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_property_id) .
-3.  Cierre la suscripción mediante una llamada a la función [**EcClose**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose) .
+1.  Abra la suscripción proporcionando el nombre de la suscripción y los derechos de acceso como parámetros a la [**función EcOpenSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) Para obtener más información sobre los derechos de acceso, vea Windows event collector constants (Constantes [**del recopilador de eventos).**](windows-event-collector-constants.md)
+2.  Obtenga y muestre las propiedades de los orígenes de suscripción y eventos mediante una llamada a la [**función EcGetSubscriptionProperty**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionproperty) y a [**la función EcGetObjectArrayProperty.**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetobjectarrayproperty) Para obtener más información sobre las propiedades de origen de eventos y suscripciones que se pueden mostrar, vea la [**enumeración EC \_ SUBSCRIPTION PROPERTY \_ \_ ID.**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_property_id)
+3.  Cierre la suscripción mediante una llamada a [**la función EcClose.**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose)
 
-En el ejemplo de código de C++ siguiente se muestra cómo mostrar las propiedades de una suscripción del recopilador de eventos.
+En el siguiente ejemplo de código de C++ se muestra cómo mostrar las propiedades de una suscripción del recopilador de eventos.
 
 
 ```C++
@@ -774,15 +774,15 @@ std::wstring ConvertEcSubscriptionType(DWORD code)
 
 <dl> <dt>
 
-[Enumerar las suscripciones del recopilador de eventos](listing-event-collector-subscriptions.md)
+[Enumerar suscripciones del recopilador de eventos](listing-event-collector-subscriptions.md)
 </dt> <dt>
 
-[Referencia del recopilador de eventos de Windows](windows-event-collector-reference.md)
+[Windows Referencia del recopilador de eventos](windows-event-collector-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

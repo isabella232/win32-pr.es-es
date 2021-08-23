@@ -1,31 +1,31 @@
 ---
-title: Efecto resaltado y sombras
-description: Ajusta las iluminaciones y las sombras de la imagen.
+title: Efecto de resaltado y sombras
+description: Ajusta los resaltados y las sombras de la imagen.
 ms.assetid: ebbb7d99-9144-ffff-af73-d89e7d269924
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d595a5b82a2df0b0b0bab14c03e6a807511ed61
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3335de3bc6b115221c1a2a343cac9c5c5154a6d868c9fa8f63b2cfa719e287c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104555857"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119569624"
 ---
-# <a name="highlights-and-shadows-effect"></a>Efecto resaltado y sombras
+# <a name="highlights-and-shadows-effect"></a>Efecto de resaltado y sombras
 
-Ajusta las iluminaciones y las sombras de la imagen.
+Ajusta los resaltados y las sombras de la imagen.
 
 El CLSID para este efecto es CLSID \_ D2D1HighlightsShadows.
 
 -   [Imagen de ejemplo](#example-image)
 -   [Código de ejemplo](#sample-code)
--   [Propiedades del efecto](#effect-properties)
+-   [Propiedades de efecto](#effect-properties)
 -   [Requisitos](#requirements)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="example-image"></a>Imagen de ejemplo
 
-![ejemplo de resultado de efecto](images/highlights-and-shadows-effect.png)
+![ejemplo de salida de efecto](images/highlights-and-shadows-effect.png)
 
 ## <a name="sample-code"></a>Código de ejemplo
 
@@ -45,18 +45,18 @@ m_d2dContext->DrawImage(hueToRgbEffect.Get());
 m_d2dContext->EndDraw();
 ```
 
-## <a name="effect-properties"></a>Propiedades del efecto
+## <a name="effect-properties"></a>Propiedades de efecto
 
-Las propiedades del efecto resaltados y sombras se definen mediante la enumeración [**\_ \_ prop de D2D1 HIGHLIGHTSANDSHADOWS**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_highlightsandshadows_prop) .
+Las propiedades del efecto de resaltado y sombra se definen mediante la enumeración [**D2D1 \_ HIGHLIGHTSANDSHADOWS \_ PROP.**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_highlightsandshadows_prop)
 
 ## <a name="requirements"></a>Requisitos
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------------|---------------------------------------------------|
-| Cliente mínimo compatible | Aplicaciones de la tienda Windows de Windows 10 \[ Desktop apps \|\] |
-| Servidor mínimo compatible | Aplicaciones de la tienda Windows de Windows 10 \[ Desktop apps \|\] |
-| Encabezado                   | d2d1effects \_ 2. h                                  |
-| Biblioteca                  | d2d1. lib, dxguid. lib                              |
+| Cliente mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows aplicaciones de la Tienda\] |
+| Servidor mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows aplicaciones de la Tienda\] |
+| Header                   | d2d1effects \_ 2.h                                  |
+| Biblioteca                  | d2d1.lib, dxguid.lib                              |
 
 ## <a name="related-topics"></a>Temas relacionados
 

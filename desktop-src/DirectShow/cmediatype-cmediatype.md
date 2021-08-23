@@ -1,7 +1,7 @@
 ---
-description: Obtenga información sobre el método CMediaType. CMediaType constructor (mtype. h). Este método no usa ningún parámetro.
+description: Obtenga información sobre el método del constructor CMediaType.CMediaType (Mtype.h). Este método no usa ningún parámetro.
 ms.assetid: 6636a56c-5b13-47bb-94e3-dedd8ed27a3f
-title: 'Constructor CMediaType. CMediaType (mtype. h): no hay parámetros'
+title: 'Constructor CMediaType.CMediaType (Mtype.h): sin parámetros'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0b688c5b12fa82269ba18ff032abcbe82ebe859a
-ms.sourcegitcommit: 11f52354f570aacaf1ba2a266b2e507abd73352a
+ms.openlocfilehash: 7e6a579cb7ff0210a7c820b3dc22bccb6838ac41196da306431d90a0b5a6e105
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "105689900"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119566415"
 ---
-# <a name="cmediatypecmediatype-constructor-mtypeh---no-parameters"></a>Constructor CMediaType. CMediaType (mtype. h): no hay parámetros
+# <a name="cmediatypecmediatype-constructor-mtypeh---no-parameters"></a>Constructor CMediaType.CMediaType (Mtype.h): sin parámetros
 
-Método de constructor.
+Método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,22 +40,22 @@ CMediaType();
 
 Este constructor no tiene parámetros.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El constructor llama al método [**CMediaType:: InitMediaType**](cmediatype-initmediatype.md) para inicializar el tipo de archivo multimedia.
+El constructor llama al [**método CMediaType::InitMediaType para**](cmediatype-initmediatype.md) inicializar el tipo de medio.
 
 ## <a name="requirements"></a>Requisitos
 
 | Requisito                   | Value                                                                                                                                                                                           |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado  | Mtype. h (incluir streams. h)                                                                                     |
-| Biblioteca | Strmbase. lib (compilaciones comerciales); Strmbasd. lib (compilaciones de depuración) |
+| Encabezado  | Mtype.h (incluir Secuencias.h)                                                                                     |
+| Biblioteca | Strmbase.lib (compilaciones comerciales); Strmbasd.lib (compilaciones de depuración) |
 
 ## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**Clase CMediaType**](cmediatype.md)
+[**CMediaType (clase)**](cmediatype.md)
 </dt> </dl>
 
  

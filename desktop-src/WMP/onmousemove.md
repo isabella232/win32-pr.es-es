@@ -1,9 +1,9 @@
 ---
-title: almovermouse
-description: El controlador de eventos onmousemove controla un evento que se produce cuando el usuario mueve el puntero del mouse mientras se encuentra sobre un elemento.
+title: Onmousemove
+description: El controlador de eventos onmousemove controla un evento que se produce cuando el usuario mueve el puntero del mouse mientras está sobre un elemento.
 ms.assetid: 8c834593-c842-48db-862d-994922aad776
 keywords:
-- Media Player de Windows almovermouse
+- onmousemove Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,32 +13,32 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d18dcbfee95b1e8c96c3074efe41ae3769b8e1a4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5dcb53be16f2a3422e88328561f9cb2a9613b1ee3860ad8a23cf922d01afd9aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647025"
 ---
-# <a name="onmousemove"></a>almovermouse
+# <a name="onmousemove"></a>Onmousemove
 
-El controlador de eventos **onmousemove** controla un evento que se produce cuando el usuario mueve el puntero del mouse mientras se encuentra sobre un elemento.
+El **controlador de eventos onmousemove** controla un evento que se produce cuando el usuario mueve el puntero del mouse mientras está sobre un elemento.
 
 ``` syntax
 onmousemove
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este controlador de eventos no es aplicable al elemento de **lista de reproducción** , el elemento de **vídeo** cuando hay *vídeo*. **Windowless** es false o el elemento **Effects** cuando tiene *efectos*. **windowed** es true.
+Este controlador de eventos no es aplicable al elemento **PLAYLIST,** el **elemento VIDEO** cuando *VIDEO*. **windowless** es false o el elemento **EFFECTS** cuando *EFFECTS*. **windowed** es true.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|-----------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 70 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 70 o posterior<br/> |
 
 
 
@@ -46,7 +46,7 @@ Este controlador de eventos no es aplicable al elemento de **lista de reproducci
 
 <dl> <dt>
 
-[**Controladores de eventos de ambiente**](ambient-event-handlers.md)
+[**Controladores de eventos ambiente**](ambient-event-handlers.md)
 </dt> </dl>
 
  

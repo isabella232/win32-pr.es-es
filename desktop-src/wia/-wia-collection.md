@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: cf9c5fc6b01574b930b7b8b74186243d00fa5202
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 63f2d1be37ae244eee5960feb8d5eae22ce379a8567bd782c3b0c3e43eabb53b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360719"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119593345"
 ---
 # <a name="collection-object"></a>Collection (objeto)
 
@@ -26,30 +26,30 @@ Collection (clase)
 
 ## <a name="members"></a>Miembros
 
-El objeto de **colección** tiene estos tipos de miembros:
+El **objeto Collection** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-El objeto de **colección** tiene estas propiedades.
+El **objeto Collection** tiene estas propiedades.
 
 
 
 | Propiedad                                           | Tipo de acceso          | Descripción                                                |
 |:---------------------------------------------------|:---------------------|:-----------------------------------------------------------|
-| [**Contabiliza**](-wia-icollection-count.md)<br/> | Solo lectura<br/> | Devuelve el número de miembros de la colección.<br/> |
+| [**Count**](-wia-icollection-count.md)<br/> | Solo lectura<br/> | Devuelve el número de miembros de la colección.<br/> |
 | [**Elemento**](-wia-icollection-item.md)<br/>   | Solo lectura<br/> | Devuelve el elemento especificado en la colección.<br/>    |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-### <a name="creationaccess-functions"></a>Funciones de acceso de creación \\
+### <a name="creationaccess-functions"></a>Funciones de \\ acceso de creación
 
-Use cualquiera de las siguientes opciones para recuperar una referencia al objeto:
+Use cualquiera de las siguientes opciones para recuperar una referencia al objeto :
 
 
 
@@ -67,11 +67,11 @@ Use cualquiera de las siguientes opciones para recuperar una referencia al objet
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Archivo DLL<br/>                      | <dl> <dt>Wiascr.dll (versión 4,90 o posterior)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de \[ escritorio XP\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
+| Archivo DLL<br/>                      | <dl> <dt>Wiascr.dll (versión 4.90 o posterior)</dt> </dl> |
 
 
 

@@ -3,15 +3,15 @@ title: Funciones de WCS obsoletas
 description: En esta sección se delinean las funciones que están obsoletas en WCS 1.0. Actualmente se mantienen por compatibilidad con versiones anteriores. Sin embargo, se quitarán de la API en versiones posteriores de WCS.
 ms.assetid: 49c26320-41c2-4075-aad2-005447616726
 keywords:
-- Sistema de colores de Windows (WCS), funciones
-- WCS (Sistema de colores de Windows), funciones
+- Windows Sistema de colores (WCS), funciones
+- WCS (Windows Color System),functions
 - administración de colores de imagen, funciones
 - administración de colores, funciones
 - colors,functions
 - WCS reference,functions
 - referencia de WCS,functions
-- Sistema de colores de Windows (WCS), funciones obsoletas
-- WCS (Sistema de colores de Windows), funciones obsoletas
+- Windows Sistema de colores (WCS), funciones obsoletas
+- WCS (Windows color), funciones obsoletas
 - administración de colores de imagen, funciones obsoletas
 - administración de colores, funciones obsoletas
 - colors,obsolete functions
@@ -20,12 +20,12 @@ keywords:
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 64886367ba6b3af680b506abbc1418e122c71965
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: f866308ddd2f1acbfb9311b9711a0a796d9ceeb3e8abb4cd783b99d4a035a222
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443076"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119593375"
 ---
 # <a name="obsolete-wcs-functions"></a>Funciones de WCS obsoletas
 

@@ -1,19 +1,19 @@
 ---
-description: Especifica el equilibrio entre la calidad y la velocidad de codificación. Esta propiedad es válida en todos los modos de control de velocidad.
+description: Especifica el equilibrio entre la calidad y la velocidad de la codificación. Esta propiedad es válida en todos los modos de control de velocidad.
 ms.assetid: d721a50d-dec9-4e2d-bda5-25913f225d68
-title: Propiedad AVEncCommonQualityVsSpeed (Codecapi. h)
+title: Propiedad AVEncCommonQualityVsSpeed (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d8af65f816bc9be6642e2a23ee4dc05e2e4fa40
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 9def8fc53a6cf88384a42870ef695294a0117ab3bfdd26ba69c95bd2b02a63b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104152577"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119540885"
 ---
 # <a name="avenccommonqualityvsspeed-property"></a>Propiedad AVEncCommonQualityVsSpeed
 
-Especifica el equilibrio entre la calidad y la velocidad de codificación. Esta propiedad es válida en todos los modos de control de velocidad.
+Especifica el equilibrio entre la calidad y la velocidad de la codificación. Esta propiedad es válida en todos los modos de control de velocidad.
 
 Esta propiedad es de lectura y escritura.
 
@@ -27,11 +27,11 @@ Esta propiedad es de lectura y escritura.
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El valor de esta propiedad tiene el siguiente intervalo.
+El valor de esta propiedad tiene el intervalo siguiente.
 
 
 
-| Value | Descripción                      |
+| Valor | Descripción                      |
 |-------|----------------------------------|
 | 0     | Codificación más rápida y de menor calidad.  |
 | 100   | Codificación más lenta y de mayor calidad. |
@@ -44,11 +44,11 @@ El valor de esta propiedad tiene el siguiente intervalo.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ El valor de esta propiedad tiene el siguiente intervalo.
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

@@ -19,7 +19,7 @@ ms.locfileid: "119622025"
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [tipo EsentColumnLongException](./esentcolumnlongexception-class.md) expone los siguientes miembros.
+El [tipo EsentColumnLongException](./esentcolumnlongexception-class.md) expone los miembros siguientes.
 
 ## <a name="properties"></a>Propiedades
 
@@ -83,7 +83,7 @@ El [tipo EsentColumnLongException](./esentcolumnlongexception-class.md) expone l
 
 Superior
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

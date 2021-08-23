@@ -1,21 +1,21 @@
 ---
-description: El elemento booleano opcional <isDefaultSaveLocation> especifica si la ubicación descrita en el conector de búsqueda debe usarse como ubicación de almacenamiento predeterminada. Este elemento no tiene ningún elemento secundario y no tiene atributos.
+description: El elemento booleano opcional especifica si la ubicación descrita en el <isDefaultSaveLocation> conector de búsqueda debe usarse como ubicación de guardado predeterminada. Este elemento no tiene elementos secundarios ni atributos.
 ms.assetid: 4a33f411-d71e-41d3-b5fd-018a92dceeac
 title: Elemento isDefaultSaveLocation (esquema del conector de búsqueda)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 75b664e4cd6f7c88f1dfbeb44ba23faee5d24a43
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e94cfe2f620dd7c4ccac2bed27dd87511e9174861aeb74dce9ac5737263e9275
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119597485"
 ---
 # <a name="isdefaultsavelocation-element-search-connector-schema"></a>Elemento isDefaultSaveLocation (esquema del conector de búsqueda)
 
-El elemento booleano opcional <isDefaultSaveLocation> especifica si la ubicación descrita en el conector de búsqueda debe usarse como ubicación de almacenamiento predeterminada. Este elemento no tiene ningún elemento secundario y no tiene atributos.
+El elemento booleano opcional especifica si la ubicación descrita en el <isDefaultSaveLocation> conector de búsqueda debe usarse como ubicación de guardado predeterminada. Este elemento no tiene elementos secundarios ni atributos.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```
@@ -45,9 +45,9 @@ El elemento booleano opcional <isDefaultSaveLocation> especifica si la ubicació
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando un usuario elige guardar un elemento, el explorador de Windows guarda el elemento en la ubicación especificada en el <simpleLocation> elemento. Los usuarios pueden cambiar esta configuración mediante el cuadro de diálogo Propiedades del conector de búsqueda.
+Cuando un usuario elige guardar un elemento, Windows Explorer lo guarda en la ubicación especificada en el <simpleLocation> elemento. Los usuarios pueden cambiar esta configuración mediante el cuadro de diálogo Propiedades del conector de búsqueda.
 
 ## <a name="example"></a>Ejemplo
 

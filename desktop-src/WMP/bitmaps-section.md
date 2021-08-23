@@ -1,24 +1,24 @@
 ---
-title: Sección de mapas de bits
-description: Sección de mapas de bits
+title: Sección Mapas de bits
+description: Sección Mapas de bits
 ms.assetid: db2801e5-c55a-4681-9fe9-6027f28653e0
 keywords:
-- Máscaras móviles de Windows Media Player, mapas de bits
+- Reproductor de Windows Media Máscaras móviles, mapas de bits
 - máscaras, mapas de bits
-- crear máscaras, sección de mapas de bits
-- escribir código para máscaras, sección de mapas de bits
-- mapas de bits en máscaras, sección de mapas de bits
-- archivos de definición de máscara, sección de mapas de bits
+- crear máscaras, sección Mapas de bits
+- escribir código para máscaras, sección Mapas de bits
+- mapas de bits en máscaras, sección Mapas de bits
+- archivos de definición de máscara, sección Mapas de bits
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf4a5e41e8e2b095b199a072e31abde3c1cbaa29
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3062a8679e916fc8eaa733ab82c3df51845969873fcf83534be5f9ec6e4c6f14
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075639"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119573465"
 ---
-# <a name="bitmaps-section"></a>Sección de mapas de bits
+# <a name="bitmaps-section"></a>Sección Mapas de bits
 
 A continuación, debe tener una sección que defina cada uno de los archivos de mapa de bits. Cada tipo de mapa de bits que usará debe tener un archivo asignado, aunque puede tener más de un tipo con el mismo mapa de bits.
 
@@ -38,12 +38,12 @@ A continuación, debe tener una sección que defina cada uno de los archivos de 
 
 
 
-La sección de mapas de bits debe comenzar con los mapas de bits de Word entre corchetes y, a continuación, una línea para cada tipo de mapa de bits que desee definir. En este ejemplo, se definieron cinco tipos de mapas de bits. Para obtener más información sobre la sección de mapas de bits, vea [mapas de bits](bitmaps.md) en la referencia de máscara.
+La sección Mapas de bits debe comenzar con la palabra Mapas de bits entre corchetes y, a continuación, una línea para cada tipo de mapa de bits que quiera definir. En este ejemplo, se definieron cinco tipos de mapas de bits. Para obtener más información sobre la sección Mapas de bits, vea [Mapas de bits](bitmaps.md) en la referencia de máscara.
 
 > [!Note]  
-> Los mapas de bits de región y súper están desusados en las máscaras de Windows Media Player 10 Mobile o posterior.
+> Los mapas de bits Region y Super están en desuso Reproductor de Windows Media 10 máscaras móviles o posteriores.
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -52,9 +52,9 @@ La sección de mapas de bits debe comenzar con los mapas de bits de Word entre c
 [**Escritura del código**](writing-the-code.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,30 +4,30 @@ description: Propiedad ListeningTip
 ms.assetid: 02a678bb-5eb6-495f-b339-35170a44b15e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 402fd970bf902f034fd6ffb713029e3a27095c8e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6d6a743eb26d1e2b57d106e72d77c3774938ffe7e56ca4ba4147001d74bb99f4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105695446"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119665445"
 ---
 # <a name="listeningtip-property"></a>Propiedad ListeningTip
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 <dl> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Denominación**
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Descripción**
 </dt> <dd>
 
-Devuelve un valor booleano que indica la configuración del usuario actual para la sugerencia de escucha.
+Devuelve un valor booleano que indica la configuración actual del usuario para la sugerencia de escucha.
 
 </dd> <dt>
 
-<span id="Syntax_"></span><span id="syntax_"></span><span id="SYNTAX_"></span>**Sintáctica** 
+<span id="Syntax_"></span><span id="syntax_"></span><span id="SYNTAX_"></span>**Sintaxis** 
 </dt> <dd>
 
-*agente * * *. SpeechInput.ListeningTip**
+*agent,. SpeechInput.ListeningTip**
 
 
 
@@ -38,22 +38,22 @@ Devuelve un valor booleano que indica la configuración del usuario actual para 
 
 
 
- 
+ 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La propiedad **ListeningTip** indica si está habilitada la opción Mostrar sugerencia de escucha en la hoja de propiedades del agente de Microsoft (opciones avanzadas de caracteres). Cuando **ListeningTip** devuelve **true** y la entrada de voz está habilitada, el servidor muestra la ventana de sugerencia cuando el usuario presiona la tecla de escucha.
+La **propiedad ListeningTip** indica si la opción Mostrar sugerencia de escucha de la hoja de propiedades de Microsoft Agent (Opciones avanzadas de caracteres) está habilitada. Cuando **ListeningTip** devuelve **True y** la entrada de voz está habilitada, el servidor muestra la ventana de sugerencias cuando el usuario presiona la tecla Listening.
 
 ## <a name="see-also"></a>Consulte también
 
 [**Evento AgentPropertyChange**](agentpropertychange-event.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de HDM_INSERTITEM (commctrl. h)
-description: Inserta un nuevo elemento en un control de encabezado. Puede enviar este mensaje explícitamente o utilizar el encabezado \_ InsertItem macro.
+title: HDM_INSERTITEM mensaje (Commctrl.h)
+description: Inserta un nuevo elemento en un control de encabezado. Puede enviar este mensaje explícitamente o usar la macro Header \_ InsertItem.
 ms.assetid: aececf32-090d-4cd4-a239-4435a322f72e
 keywords:
-- HDM_INSERTITEM controles de mensajes de Windows
+- HDM_INSERTITEM controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c9cabf86fea79fd437b3e9fb7e32890b3ba1a780
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e30a07637afae1a3efcf71b3b556c32bebf96775bb2a5cbdf6e92513d33ec5c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490709"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544745"
 ---
-# <a name="hdm_insertitem-message"></a>HDM \_ INSERTITEM Message
+# <a name="hdm_insertitem-message"></a>Mensaje \_ INSERTITEM de HDM
 
-Inserta un nuevo elemento en un control de encabezado. Puede enviar este mensaje explícitamente o utilizar el [**encabezado \_ InsertItem**](/windows/desktop/api/Commctrl/nf-commctrl-header_insertitem) macro.
+Inserta un nuevo elemento en un control de encabezado. Puede enviar este mensaje explícitamente o usar la macro [**Header \_ InsertItem.**](/windows/desktop/api/Commctrl/nf-commctrl-header_insertitem)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -34,30 +34,30 @@ Inserta un nuevo elemento en un control de encabezado. Puede enviar este mensaje
 *wParam* 
 </dt> <dd>
 
-Índice del elemento después del cual se va a insertar el nuevo elemento. El nuevo elemento se inserta al final del control de encabezado si *wParam* es mayor o igual que el número de elementos del control. Si *wParam* es cero, el nuevo elemento se inserta al principio del control de encabezado.
+Índice del elemento después del cual se va a insertar el nuevo elemento. El nuevo elemento se inserta al final del control de encabezado si *wParam* es mayor o igual que el número de elementos del control. Si *wParam es* cero, el nuevo elemento se inserta al principio del control de encabezado.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**HDITEM**](/windows/win32/api/commctrl/ns-commctrl-hditema) que contiene información sobre el nuevo elemento.
+Puntero a una [**estructura HDITEM**](/windows/win32/api/commctrl/ns-commctrl-hditema) que contiene información sobre el nuevo elemento.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el índice del nuevo elemento si se realiza correctamente, o-1 en caso contrario.
+Devuelve el índice del nuevo elemento si se realiza correctamente o -1 en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **HDM \_ INSERTITEMW** (Unicode) y **HDM \_ INSERTITEMA** (ANSI)<br/>             |
 
 

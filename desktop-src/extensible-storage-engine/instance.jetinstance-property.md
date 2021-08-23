@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: propiedad Instance. JetInstance'
-title: Propiedad Instance. JetInstance
+description: 'Más información sobre: Propiedad Instance.JetInstance'
+title: Propiedad Instance.JetInstance
 TOCTitle: 'JetInstance property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.Instance.JetInstance
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instance.jetinstance(v=EXCHG.10)
@@ -25,21 +25,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cc1e330be27f25fe677410d5468e56eea7b26933
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e886e2367fd1ab7204d1fe3d31aba8644355cd80ea8a8281f43a968d1f673fc1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104543363"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119618305"
 ---
-# <a name="instancejetinstance-property"></a>Propiedad Instance. JetInstance
+# <a name="instancejetinstance-property"></a>Propiedad Instance.JetInstance
 
-Obtiene el JET_INSTANCE que esta instancia contiene.
+Obtiene el JET_INSTANCE que contiene esta instancia.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -58,7 +58,7 @@ public JET_INSTANCE JetInstance { get; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
 
 ## <a name="see-also"></a>Vea también
 
@@ -68,4 +68,4 @@ Tipo: [Microsoft.ISAM.esent.Interop.JET_INSTANCE](./jet-instance-structure.md)
 
 [Miembros de instancia](./instance-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

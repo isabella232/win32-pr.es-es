@@ -1,11 +1,11 @@
 ---
-title: Site-Object atributo)
-description: Nombre distintivo para el sitio al que pertenece esta subred.
+title: Site-Object atributo
+description: Nombre distintivo del sitio al que pertenece esta subred.
 ms.assetid: 4533c742-4276-48df-b0cd-7ba1641737a7
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Site-Object
-- siteObject esquema de AD de atributos
+- Site-Object esquema de AD de atributo
+- Esquema de AD del atributo siteObject
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ac43fb4ee0718aec855de4b7eb251a5d67c1a5fd
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 31bb6f97e3018ec91f308aa2a894422b79beca8e94d9659c178968c69a96aed9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906105"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119645645"
 ---
-# <a name="site-object-attribute"></a>Site-Object atributo)
+# <a name="site-object-attribute"></a>Site-Object atributo
 
-Nombre distintivo para el sitio al que pertenece esta subred.
+Nombre distintivo del sitio al que pertenece esta subred.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
 | CN                | Site-Object                             |
-| Nombre para mostrar de LDAP | siteObject                              |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | Administrador de dominio                    |
+| Ldap-Display-Name | siteObject                              |
+| Size              | \-                                      |
+| Actualizar privilegios  | Administrador de dominio                    |
 | Frecuencia de actualización  | Cada vez que se crea un sitio.             |
 | Attribute-Id      | 1.2.840.113556.1.4.512                  |
-| System-ID-GUID    | 3e10944c-c354-11d0-aff8-0000f80367c1    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 3e10944c-c354-11d0-aff8-0000f80367c1    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -44,7 +44,7 @@ Nombre distintivo para el sitio al que pertenece esta subred.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,13 +56,13 @@ Nombre distintivo para el sitio al que pertenece esta subred.
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | 46                                    |
+| Id. de vínculo                | 46                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -77,13 +77,13 @@ Nombre distintivo para el sitio al que pertenece esta subred.
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | 46                                    |
+| Id. de vínculo                | 46                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -92,19 +92,19 @@ Nombre distintivo para el sitio al que pertenece esta subred.
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | 46                                    |
+| Id. de vínculo                | 46                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -117,15 +117,15 @@ Nombre distintivo para el sitio al que pertenece esta subred.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | 46                                    |
+| Id. de vínculo                | 46                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -140,13 +140,13 @@ Nombre distintivo para el sitio al que pertenece esta subred.
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | 46                                    |
+| Id. de vínculo                | 46                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -161,13 +161,13 @@ Nombre distintivo para el sitio al que pertenece esta subred.
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | 46                                    |
+| Id. de vínculo                | 46                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -180,20 +180,20 @@ Nombre distintivo para el sitio al que pertenece esta subred.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | 46                                    |
+| Id. de vínculo                | 46                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Clases usadas en        | [**Subnet**](c-subnet.md)<br/> |
+| Clases usadas en        | [**Subred**](c-subnet.md)<br/> |
 
 
 

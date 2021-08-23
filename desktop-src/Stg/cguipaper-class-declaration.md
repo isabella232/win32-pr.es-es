@@ -4,16 +4,16 @@ description: Declaración de clase CGuiPaper
 ms.assetid: b772d056-bf89-46a8-9462-21772cf96dfa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 269694b83804f3e85cd8654cd2a1be843396a2ce
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3d684618eea78247b94ed03223cfce45d2cc713f5507b1e290731d3451212b09
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075253"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119663525"
 ---
 # <a name="cguipaper-class-declaration"></a>Declaración de clase CGuiPaper
 
-La siguiente es la declaración de clase **CGuiPaper** de GUIPAPER. H.
+A continuación se muestra **la declaración de clase CGuiPaper** de GUIPAPER.H.
 
 
 ```C++
@@ -75,21 +75,21 @@ class CGuiPaper
 
 
 
-**CGuiPaper** mantiene las propiedades de la interfaz gráfica de usuario actual para el papel del dibujo. Los miembros **m \_ crInkColor**, **m \_ crInkWidth** y **m \_ WinRect** contienen valores para el color de tinta actual, el ancho de la tinta y el rectángulo del dibujo. El miembro del **\_ hWnd m** almacena el identificador en la ventana en la que se realiza el dibujo.
+**CGuiPaper mantiene** las propiedades actuales de la GUI para el papel de dibujo. Los **miembros m \_ crInkColor**, **m \_ crInkWidth** y **m \_ WinRect** contienen valores para el color de lápiz actual, el ancho de lápiz y el rectángulo de dibujo. El **miembro m \_ hWnd** almacena el identificador en la ventana donde se realiza el dibujo.
 
-El dibujo real de imágenes se realiza mediante un identificador de un contexto de dispositivo que se encuentra en el miembro **m \_ HDC**. Un identificador del lápiz de dibujo actual se mantiene en el miembro **m \_ hPen**. El lápiz se destruye y se vuelve a crear cuando el usuario cambia el color o el ancho.
+El dibujo real de las imágenes se realiza mediante un identificador para un contexto de dispositivo mantenido en el **miembro m \_ hDC**. Un identificador del lápiz de dibujo actual se mantiene en el **miembro m \_ hPen**. El lápiz se destruye y se vuelve a crear cuando el usuario cambia su color o ancho.
 
-Los miembros **m \_ pCOPaperSink** y **m \_ dwPaperSink** contienen los valores necesarios para conectar con el copaper para recibir notificaciones entrantes a través de la interfaz [**IPaperSink**](ipapersink-methods.md) . El miembro **m \_ bDirty** contiene una marca que indica que el usuario ha cambiado el dibujo y que ya no refleja los datos almacenados en su archivo.
+Los **miembros m \_ pCOPaperSink** y **m \_ dwPaperSink** mantienen los valores necesarios para conectarse con COPaper para recibir notificaciones entrantes a través de la [**interfaz IPaperSink.**](ipapersink-methods.md) El **miembro m \_ bDirty** contiene una marca que indica que el usuario ha cambiado el dibujo y que ya no refleja los datos almacenados en su archivo.
 
-El miembro **m \_ pIPaper** contiene el puntero de interfaz principal al objeto de copaper. Se tiene acceso a todas las funciones de copaper a través de este puntero.
+El **miembro m \_ pIPaper** contiene el puntero de interfaz principal al objeto COPaper. A través de este puntero se accede a toda la funcionalidad de COPaper.
 
-El miembro **m \_ nLockKey** se usa para admitir un esquema de bloqueo de cliente que se usa con varios clientes para permitir que un cliente tenga acceso exclusivo a un objeto de copaper compartido. El copaper asigna **m \_ nLockKey** durante una llamada a [**IPaper**](ipaper-methods.md)::**Lock** y se pasa como un parámetro por el cliente en llamadas posteriores a copapers. El copaper realizará el trabajo en esas llamadas solo si la tecla de bloqueo que se pasa coincide con la última entrega de la clave a un cliente mediante el copapel.
+El **miembro m \_ nLockKey** se usa para admitir un esquema de bloqueo de cliente que se usa con varios clientes para permitir a un cliente acceso exclusivo a un objeto COPaper compartido. COPaper asigna **m \_ nLockKey** durante una llamada [**IPaper**](ipaper-methods.md)::**Lock** y el cliente pasa como parámetro en llamadas posteriores a COPaper. COPaper realizará el trabajo en esas llamadas solo si la clave de bloqueo que se pasa coincide con la clave que COPaper entregó por última vez a un cliente.
 
-El miembro **m \_ pPapFile** contiene un puntero a un objeto [**CPapFile**](cpapfile-class-and-methods.md) . Es un objeto de C++ que encapsula las operaciones de carga y guardado en un archivo compuesto de almacenamiento estructurado. **CPapFile** funciona con el objeto de copaper subyacente basado en servidor para cargar y guardar los datos del dibujo de copapeles.
+El **miembro m \_ pPapFile** contiene un puntero a un [**objeto CPapFile.**](cpapfile-class-and-methods.md) Es un objeto de C++ que encapsula las operaciones de carga y guardado en un archivo compuesto de almacenamiento estructurado. **CPapFile funciona** con el objeto COPaper basado en servidor subyacente para cargar y guardar los datos de dibujo de COPaper.
 
- 
+ 
 
- 
+ 
 
 
 

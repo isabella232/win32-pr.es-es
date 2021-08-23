@@ -1,19 +1,19 @@
 ---
-description: El archivo de código fuente ha cambiado. La aplicación debe volver a generar el gráfico de filtro.
+description: El archivo de origen ha cambiado. La aplicación debe volver a generar el gráfico de filtros.
 ms.assetid: f99df68f-d7e8-4dbf-b958-84fe3f0821f0
-title: EC_PLEASE_REOPEN (DShow. h)
+title: EC_PLEASE_REOPEN (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d1c02b1a945a773717f1dd1f1cfe237b764faa09
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: efafbcd441dc62b48612e325a3520f9b3cfbdeb9b3b4d5b11144e12f9f22acd4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105678915"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119686185"
 ---
-# <a name="ec_please_reopen"></a>EC \_ vuelva a \_ abrirlo
+# <a name="ec_please_reopen"></a>EC \_ PLEASE \_ REOPEN
 
-El archivo de código fuente ha cambiado. La aplicación debe volver a generar el gráfico de filtro.
+El archivo de origen ha cambiado. La aplicación debe volver a generar el gráfico de filtros.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -37,9 +37,9 @@ Cero.
 
 Ninguno.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El filtro de [origen de Windows Media](windows-media-source-filter.md) heredado envía este evento. Los nuevos filtros no deben enviar este evento.
+El filtro heredado [Windows origen multimedia](windows-media-source-filter.md) envía este evento. Los nuevos filtros no deben enviar este evento.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,7 +47,7 @@ El filtro de [origen de Windows Media](windows-media-source-filter.md) heredado 
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>DShow. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

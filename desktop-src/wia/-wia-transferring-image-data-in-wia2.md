@@ -1,28 +1,28 @@
 ---
-description: Dado que la transferencia de datos de imagen se basa en secuencias en la adquisición de imágenes de Windows (WIA) 2,0, no es necesario especificar un tipo de destino (por ejemplo,
+description: Dado que la transferencia de datos de imagen se basa en secuencias en Windows Image Acquisition (WIA) 2.0, no es necesario especificar un tipo de destino (por ejemplo,
 ms.assetid: ebb9fce5-9450-4ffe-b480-b21670b60f90
-title: Transferir datos de imagen en WIA 2,0
+title: Transferencia de datos de imagen en WIA 2.0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 85ded5c6cd8fb94b1beccd86c3cd8aef3018aed0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 66aca2179c477f49bc76197795ddf9d59792ca242da8729c169c39aa69553161
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360330"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119592965"
 ---
-# <a name="transferring-image-data-in-wia-20"></a>Transferir datos de imagen en WIA 2,0
+# <a name="transferring-image-data-in-wia-20"></a>Transferencia de datos de imagen en WIA 2.0
 
 > [!Note]  
-> En este tutorial se muestra cómo transferir datos de imagen en aplicaciones que se ejecutan en Windows Vista o posterior. Consulte [transferencia de datos de imagen en WIA 1,0](-wia-transferring-image-data.md) para obtener información sobre cómo transferir datos de imagen en aplicaciones que se ejecutan en Windows XP o versiones anteriores.
+> En este tutorial se muestra cómo transferir datos de imagen en aplicaciones que se ejecutan en Windows Vista o versiones posteriores. Consulte Transferencia de datos de imagen en [WIA 1.0](-wia-transferring-image-data.md) para obtener información sobre cómo transferir datos de imagen en aplicaciones que se ejecutan Windows XP o versiones anteriores.
 
  
 
-Dado que la transferencia de datos de imagen se basa en secuencias en la adquisición de imágenes de Windows (WIA) 2,0, no es necesario especificar un tipo de destino (por ejemplo, memoria o archivo). La aplicación simplemente proporciona a WIA 2,0 el flujo que se va a usar y el controlador lee o escribe en la secuencia. La secuencia puede ser un flujo de archivo, una secuencia de memoria o cualquier otro tipo de secuencia y es transparente para el controlador. El uso de secuencias también proporciona una fácil integración con el filtro de procesamiento de imágenes.
+Dado que la transferencia de datos de imagen se basa en secuencias en Windows Image Acquisition (WIA) 2.0, no es necesario especificar un tipo de destino (por ejemplo, memoria o archivo). La aplicación simplemente proporciona a WIA 2.0 la secuencia que se usará y el controlador lee o escribe en la secuencia. La secuencia puede ser una secuencia de archivo, una secuencia de memoria o cualquier otro tipo de secuencia, y es transparente para el controlador. El uso de secuencias también proporciona una integración sencilla con el filtro De procesamiento de imágenes.
 
-Use los métodos de la interfaz [**IWiaTransfer**](-wia-iwiatransfer.md) para transferir datos desde un dispositivo WIA 2,0 a una aplicación. Esta interfaz está disponible a través de la interfaz [**IWiaItem2**](-wia-iwiaitem2.md) . La interfaz **IWiaTransfer** tiene métodos para solicitar la carga o descarga de datos hacia y desde un dispositivo. Estos métodos toman una devolución de llamada que la aplicación proporciona y usan una [IStream](/windows/win32/api/objidl/nn-objidl-istream) proporcionada por la aplicación para el destino real de la transferencia de datos.
+Use los métodos de la [**interfaz IWiaTransfer**](-wia-iwiatransfer.md) para transferir datos desde un dispositivo WIA 2.0 a una aplicación. Esta interfaz está disponible a través de [**la interfaz IWiaItem2.**](-wia-iwiaitem2.md) La **interfaz IWiaTransfer** tiene métodos para solicitar la carga o descarga de datos hacia y desde un dispositivo. Estos métodos toman una devolución de llamada que proporciona la aplicación y usan un [IStream](/windows/win32/api/objidl/nn-objidl-istream) proporcionado por la aplicación para el destino real de la transferencia de datos.
 
-Las aplicaciones deben consultar un elemento de imagen para obtener un puntero a su interfaz [**IWiaTransfer**](-wia-iwiatransfer.md) , tal y como se muestra en el ejemplo de código siguiente:
+Las aplicaciones deben consultar un elemento de imagen para obtener un puntero a su [**interfaz IWiaTransfer,**](-wia-iwiatransfer.md) como se muestra en el ejemplo de código siguiente:
 
 
 ```
@@ -34,7 +34,7 @@ Las aplicaciones deben consultar un elemento de imagen para obtener un puntero a
 
 
 
-En el código anterior, suponemos que **pWiaItem2** es un puntero válido a la interfaz [**IWiaItem2**](-wia-iwiaitem2.md) . La llamada a [IUnknown:: QueryInterface](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) rellena **pWiaTransfer** con un puntero a la interfaz [**IWiaTransfer**](-wia-iwiatransfer.md) del elemento al que hace referencia **pWiaItem2**.
+En el código anterior, se supone que **pWiaItem2** es un puntero válido a la [**interfaz IWiaItem2.**](-wia-iwiaitem2.md) La llamada a [IUnknown::QueryInterface](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) rellena **pWiaTransfer** con un puntero a la [**interfaz IWiaTransfer**](-wia-iwiatransfer.md) del elemento al que hace referencia **pWiaItem2**.
 
 A continuación, la aplicación crea una instancia del objeto de devolución de llamada, como se muestra aquí.
 
@@ -47,7 +47,7 @@ A continuación, la aplicación crea una instancia del objeto de devolución de 
 
 
 
-La aplicación siguiente establece las propiedades mediante la interfaz [**IWiaPropertyStorage**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiapropertystorage) de [**IWiaItem2**](-wia-iwiaitem2.md) Item y realiza la transferencia.
+A continuación, la aplicación establece las propiedades mediante la [**interfaz IWiaPropertyStorage**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiapropertystorage) del elemento [**IWiaItem2**](-wia-iwiaitem2.md) y realiza la transferencia.
 
 Descarga:
 
@@ -59,7 +59,7 @@ Descarga:
 
 
 
-Cargar
+Cargar:
 
 
 ```

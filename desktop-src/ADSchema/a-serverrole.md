@@ -1,11 +1,11 @@
 ---
-title: Server-Role atributo)
-description: Por compatibilidad con servidores anteriores a Windows 2000 Server. Un equipo que ejecuta Windows NT Server puede ser un servidor independiente, un controlador de dominio principal (PDC) o un controlador de dominio de copia de seguridad (BDC).
+title: Server-Role atributo
+description: Por compatibilidad con servidores Windows 2000 Server. Un equipo que ejecuta Windows NT Server puede ser un servidor independiente, un controlador de dominio principal (PDC) o un controlador de dominio de copia de seguridad (BDC).
 ms.assetid: 0c2e5b18-14ad-4f77-a62c-eeb95aabbb99
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Server-Role
-- Esquema de AD de atributo de la función de función
+- Server-Role esquema de AD de atributo
+- ServerRole attribute AD Schema (Esquema de AD del atributo serverRole)
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58a127a94cd1ecc2bfce3701c11ee2a5e0c2376c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4e46345362e78590cd50e75e2ea592f55f3bda2db96c4c412c85afccc5eb6f2a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658975"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119646125"
 ---
-# <a name="server-role-attribute"></a>Server-Role atributo)
+# <a name="server-role-attribute"></a>Server-Role atributo
 
-Por compatibilidad con servidores anteriores a Windows 2000 Server. Un equipo que ejecuta Windows NT Server puede ser un servidor independiente, un controlador de dominio principal (PDC) o un controlador de dominio de copia de seguridad (BDC).
+Por compatibilidad con servidores Windows 2000 Server. Un equipo que ejecuta Windows NT Server puede ser un servidor independiente, un controlador de dominio principal (PDC) o un controlador de dominio de copia de seguridad (BDC).
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | Server-Role                          |
-| Nombre para mostrar de LDAP | serverRole                           |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | serverRole                           |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | 4 bytes                              |
 | Attribute-Id      | 1.2.840.113556.1.4.157               |
-| System-ID-GUID    | bf967a33-0de6-11d0-a285-00aa003049e2 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | bf967a33-0de6-11d0-a285-00aa003049e2 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -55,18 +55,18 @@ Por compatibilidad con servidores anteriores a Windows 2000 Server. Un equipo qu
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------|
-| Identificador de vínculo                | \-                                                    |
+| Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
-| System-Only            | False                                                 |
-| Tiene un único valor       | True                                                  |
-| Está indexado             | False                                                 |
-| En el catálogo global      | False                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                          |
+| System-Only            | Falso                                                 |
+| Es de un solo valor       | Verdadero                                                  |
+| Está indexado             | Falso                                                 |
+| En el catálogo global      | Falso                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Clases usadas en        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Por compatibilidad con servidores anteriores a Windows 2000 Server. Un equipo qu
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------|
-| Identificador de vínculo                | \-                                                    |
+| Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
-| System-Only            | False                                                 |
-| Tiene un único valor       | True                                                  |
-| Está indexado             | False                                                 |
-| En el catálogo global      | False                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                          |
+| System-Only            | Falso                                                 |
+| Es de un solo valor       | Verdadero                                                  |
+| Está indexado             | Falso                                                 |
+| En el catálogo global      | Falso                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Clases usadas en        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Por compatibilidad con servidores anteriores a Windows 2000 Server. Un equipo qu
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------|
-| Identificador de vínculo                | \-                                                    |
+| Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
-| System-Only            | False                                                 |
-| Tiene un único valor       | True                                                  |
-| Está indexado             | False                                                 |
-| En el catálogo global      | False                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                          |
+| System-Only            | Falso                                                 |
+| Es de un solo valor       | Verdadero                                                  |
+| Está indexado             | Falso                                                 |
+| En el catálogo global      | Falso                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Clases usadas en        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Por compatibilidad con servidores anteriores a Windows 2000 Server. Un equipo qu
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------|
-| Identificador de vínculo                | \-                                                    |
+| Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
-| System-Only            | False                                                 |
-| Tiene un único valor       | True                                                  |
-| Está indexado             | False                                                 |
-| En el catálogo global      | False                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                          |
+| System-Only            | Falso                                                 |
+| Es de un solo valor       | Verdadero                                                  |
+| Está indexado             | Falso                                                 |
+| En el catálogo global      | Falso                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Clases usadas en        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Por compatibilidad con servidores anteriores a Windows 2000 Server. Un equipo qu
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------|
-| Identificador de vínculo                | \-                                                    |
+| Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
-| System-Only            | False                                                 |
-| Tiene un único valor       | True                                                  |
-| Está indexado             | False                                                 |
-| En el catálogo global      | False                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                          |
+| System-Only            | Falso                                                 |
+| Es de un solo valor       | Verdadero                                                  |
+| Está indexado             | Falso                                                 |
+| En el catálogo global      | Falso                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Clases usadas en        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Por compatibilidad con servidores anteriores a Windows 2000 Server. Un equipo qu
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------|
-| Identificador de vínculo                | \-                                                    |
+| Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
-| System-Only            | False                                                 |
-| Tiene un único valor       | True                                                  |
-| Está indexado             | False                                                 |
-| En el catálogo global      | False                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                          |
+| System-Only            | Falso                                                 |
+| Es de un solo valor       | Verdadero                                                  |
+| Está indexado             | Falso                                                 |
+| En el catálogo global      | Falso                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Clases usadas en        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 

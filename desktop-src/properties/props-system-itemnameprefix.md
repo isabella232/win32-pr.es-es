@@ -1,19 +1,19 @@
 ---
-description: 'El prefijo de un elemento, que se usa para los mensajes de correo electrónico en los que el asunto comienza con el prefijo &\# 0034; Re: &\# 0034;.'
+description: Prefijo de un elemento, que se usa para los mensajes de correo electrónico donde el asunto comienza con el prefijo &\# 0034; Re:&\# 0034;.
 ms.assetid: 3c257edc-b7f7-498d-8347-0be4fca41023
-title: System. ItemNamePrefix
+title: System.ItemNamePrefix
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cf669dd867c8cf60046f226e33dae18f46060cd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fd7830f63c3e9e0f6026099c95d11820a1d8592928cece72ebe72d76936d8467
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119598465"
 ---
-# <a name="systemitemnameprefix"></a>System. ItemNamePrefix
+# <a name="systemitemnameprefix"></a>System.ItemNamePrefix
 
-El prefijo de un elemento, que se usa para los mensajes de correo electrónico en los que el asunto comienza con el prefijo "re:".
+Prefijo de un elemento, que se usa para los mensajes de correo electrónico en los que el asunto comienza con el prefijo "Re:".
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -31,22 +31,22 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
-Si el elemento es un archivo, el valor de esta propiedad es VT \_ vacío. Si el elemento es un mensaje, el valor de esta propiedad son los prefijos de reenvío o respuesta (incluidos los dos puntos delimitadores, pero no hay espacios en blanco) o VT \_ vacío si no hay prefijo.
+Si el elemento es un archivo, el valor de esta propiedad es VT \_ EMPTY. Si el elemento es un mensaje, el valor de esta propiedad son los prefijos de reenvío o respuesta (incluidos los dos puntos delimitadores, pero ningún espacio en blanco) o VT EMPTY si no hay ningún \_ prefijo.
 
 Valores de ejemplo:
 
 
 
-| System. ItemNamePrefix | System. ItemName  | System.ItemNameDisplay |
+| System.ItemNamePrefix | System.ItemName  | System.ItemNameDisplay |
 |-----------------------|------------------|------------------------|
-| VT \_ vacío             | "Día excelente"      | "Día excelente"            |
-| "Re:"                 | "Día excelente"      | "Re: excelente día"        |
-| "FWD:"               | "Presupuesto mensual" | "FWD: Monthly Budget"  |
-| VT \_ vacío             | accounts.xls     | accounts.xls           |
+| VT \_ EMPTY             | "Buen día"      | "Buen día"            |
+| "Re:"                 | "Buen día"      | "Re: Great day"        |
+| "Fwd: "               | "Presupuesto mensual" | "Fwd: Presupuesto mensual"  |
+| VT \_ EMPTY             | accounts.xls     | accounts.xls           |
 
 
 
@@ -65,7 +65,7 @@ Valores de ejemplo:
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -77,7 +77,7 @@ Valores de ejemplo:
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -95,7 +95,7 @@ Valores de ejemplo:
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: La \_ estructura de cadena Unicode KEYSVC \_ define una cadena Unicode y una longitud máxima para la cadena. La función RKeyPFXInstall usa esta estructura.
+description: La estructura KEYSVC \_ UNICODE STRING define una cadena Unicode y una longitud máxima para la \_ cadena. La función RKeyPFXInstall usa esta estructura.
 ms.assetid: 12142543-5c53-4638-9fd7-f523594142c8
-title: KEYSVC_UNICODE_STRING estructura (Rkeysvcc. h)
+title: KEYSVC_UNICODE_STRING estructura (Rkeysvcc.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Rkeysvcc.h
-ms.openlocfilehash: 5424fa103b2bbbadd735dbda0bb92f9dea21787b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ac1e82ab481b9844e8a21940112c6014a19f111cab53db2974c488dff0982027
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688672"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119622335"
 ---
-# <a name="keysvc_unicode_string-structure"></a>KEYSVC \_ estructura de \_ cadena Unicode
+# <a name="keysvc_unicode_string-structure"></a>Estructura DE CADENA \_ UNICODE KEYSVC \_
 
-La estructura de **\_ \_ cadena Unicode KEYSVC** define una cadena [*Unicode*](../secgloss/u-gly.md) y una longitud máxima para la cadena. La función [**RKeyPFXInstall**](rkeypfxinstall.md) usa esta estructura.
+La **estructura KEYSVC \_ UNICODE \_ STRING** define una [*cadena Unicode*](../secgloss/u-gly.md) y una longitud máxima para la cadena. La función [**RKeyPFXInstall**](rkeypfxinstall.md) usa esta estructura.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,21 +44,21 @@ typedef struct _KEYSVC_UNICODE_STRING {
 **Duración**
 </dt> <dd>
 
-Valor **USHORT** que especifica la longitud, en bytes, que se usa para el **búfer**.
+Valor **USHORT que** especifica la longitud, en bytes, usada para **buffer**.
 
 </dd> <dt>
 
 **MaximumLength**
 </dt> <dd>
 
-Valor **USHORT** que especifica la longitud máxima, en bytes, permitida para el **búfer**.
+Valor **USHORT que** especifica la longitud máxima, en bytes, permitida para **buffer**.
 
 </dd> <dt>
 
 **Buffer**
 </dt> <dd>
 
-Un puntero a un valor **USHORT** que representa la cadena Unicode.
+Puntero a un **USHORT que** representa la cadena Unicode.
 
 </dd> </dl>
 
@@ -69,8 +69,8 @@ Un puntero a un valor **USHORT** que representa la cadena Unicode.
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Rkeysvcc. h</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Rkeysvcc.h</dt> </dl> |
 
 
 
@@ -81,7 +81,7 @@ Un puntero a un valor **USHORT** que representa la cadena Unicode.
 [**RKeyPFXInstall**](rkeypfxinstall.md)
 </dt> <dt>
 
-[**\_BLOB KEYSVC**](keysvc-blob.md)
+[**KEYSVC \_ BLOB**](keysvc-blob.md)
 </dt> </dl>
 
  

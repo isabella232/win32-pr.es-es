@@ -3,26 +3,26 @@ title: Variables para administrar el búfer de retraso
 description: Variables para administrar el búfer de retraso
 ms.assetid: 2c5963a1-04e2-4421-8f56-14c1e059de4e
 keywords:
-- Complementos de Windows Media Player, echo ejemplo de recursos de streaming
-- complementos, echo ejemplo de recursos de streaming
-- Complementos de procesamiento de señal digital, echo ejemplo de recursos de streaming
-- Complementos DSP, echo ejemplo de recursos de streaming
+- Reproductor de Windows Media complementos, recursos de streaming de ejemplo de eco
+- complementos, recursos de streaming de ejemplo de eco
+- complementos de procesamiento de señales digitales, recursos de streaming de ejemplo de eco
+- Complementos DE DSP, recursos de streaming de ejemplo de eco
 - Ejemplo de complemento DSP de eco, recursos de streaming
-- Ejemplo de complemento DSP de eco, búfer de retraso
+- Ejemplo del complemento DSP de eco, búfer de retraso
 - búfer de retraso
 - búferes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 09d7f9657d16d0805ff2fc85d2238635fbfa6e5e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5be71bc7f2ded34dcd5f29bc10ce01796b6498d36a9a194a48b0bfdec0e14662
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104268941"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119571745"
 ---
 # <a name="variables-to-manage-the-delay-buffer"></a>Variables para administrar el búfer de retraso
 
-Debe agregar las declaraciones de las variables de miembro que necesita para administrar el búfer de retraso. Agregue las declaraciones siguientes a ECHO. h en la sección "privada":
+Debe agregar las declaraciones de las variables miembro que necesita para administrar el búfer de retraso. Agregue las siguientes declaraciones a Echo.h en la sección "private":
 
 
 ```C++
@@ -53,9 +53,9 @@ m_cbDelayBuffer = 0;
 [**Trabajar con recursos de streaming**](working-with-streaming-resources.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

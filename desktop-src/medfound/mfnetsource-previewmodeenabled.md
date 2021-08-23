@@ -1,49 +1,49 @@
 ---
-description: Habilita o deshabilita el modo de vista previa, que permite que la aplicación sobrescriba la lógica de almacenamiento en búfer inicial.
+description: Habilita o deshabilita el modo de vista previa, lo que permite a la aplicación sobrescribir la lógica de almacenamiento en búfer inicial.
 ms.assetid: 8aa8c6ac-8746-4bf6-9f57-b1426495a275
-title: Propiedad MFNETSOURCE_PREVIEWMODEENABLED (Mfidl. h)
+title: MFNETSOURCE_PREVIEWMODEENABLED propiedad (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1170135b0feb90a79bf5e26d36a02e262fdc1977
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e03940828c6fa32b9e0367a03f960d4d64d88edf691100817ed31883013ce1b5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105652875"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119663865"
 ---
-# <a name="mfnetsource_previewmodeenabled-property"></a>\_Propiedad PREVIEWMODEENABLED de MFNETSOURCE
+# <a name="mfnetsource_previewmodeenabled-property"></a>Propiedad MFNETSOURCE \_ PREVIEWMODEENABLED
 
-Habilita o deshabilita el modo de vista previa, que permite que la aplicación sobrescriba la lógica de almacenamiento en búfer inicial.
+Habilita o deshabilita el modo de vista previa, lo que permite a la aplicación sobrescribir la lógica de almacenamiento en búfer inicial.
 
 
 
 Tipo de datos
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 Miembro de PROPVARIANT
 
-**BOOLEANO**
+**Bool**
 
-VT \_ bool
+VT \_ BOOL
 
 **lVal**
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La constante **MFNETSOURCE \_ PREVIEWMODEENABLED** define el GUID de la clave de propiedad. El identificador de propiedad (PID) es cero. Esta propiedad se establece en el origen de red pasando un puntero **IPropertyStore** a la resolución de origen. Para obtener más información, consulte [configuración de un origen de medios](configuring-a-media-source.md).
+La constante **MFNETSOURCE \_ PREVIEWMODEENABLED** define el GUID de la clave de propiedad. El identificador de propiedad (PID) es cero. Esta propiedad se establece en el origen de red pasando un **puntero IPropertyStore** al solucionador de origen. Para obtener más información, vea [Configuring a Media Source](configuring-a-media-source.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                            |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                            |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -51,10 +51,10 @@ La constante **MFNETSOURCE \_ PREVIEWMODEENABLED** define el GUID de la clave de
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> <dt>
 
-[Funciones de red en Media Foundation](networking-in-media-foundation.md)
+[Redes en Media Foundation](networking-in-media-foundation.md)
 </dt> </dl>
 
  

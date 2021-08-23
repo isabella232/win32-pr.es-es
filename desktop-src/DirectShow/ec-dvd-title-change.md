@@ -1,7 +1,7 @@
 ---
-description: Indica cuándo cambia el número de título de DVD actual.
+description: Indica cuándo cambia el número de título del DVD actual.
 ms.assetid: 9888f2ec-fc2d-4d6d-a03d-b381373337eb
-title: EC_DVD_TITLE_CHANGE (Dvdevcode. h)
+title: EC_DVD_TITLE_CHANGE (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: 9539d29704797b1c7b001d426250762d2ed27b3e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 667d8f11270865f1caa4549377db2cccb278053ea9848b71aa38f0d5f7528689
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653403"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119686215"
 ---
-# <a name="ec_dvd_title_change"></a>\_cambio de \_ título de DVD de EC \_
+# <a name="ec_dvd_title_change"></a>CAMBIO \_ DE TÍTULO DEL DVD DE \_ \_ EC
 
-Indica cuándo cambia el número de título de DVD actual.
+Indica cuándo cambia el número de título del DVD actual.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -31,7 +31,7 @@ Indica cuándo cambia el número de título de DVD actual.
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-Valor **DWORD** que indica el nuevo número de título.
+**Valor DWORD** que indica el nuevo número de título.
 
 </dd> <dt>
 
@@ -42,11 +42,11 @@ Cero.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los números de título oscilan entre 1 y 99. Este número indica el valor de TTN, que es el número de título con respecto a todo el disco, no a la TTN de VTS, \_ que es el número de título con respecto a un STB actual.
+Los números de título oscilan entre 1 y 99. Este número indica el TTN, que es el número de título con respecto a todo el disco, no el TTN de VTS, que es el número de título con respecto a solo un \_ VTS actual.
 
-Este evento se desencadena en el dominio de título.
+Este evento se genera en el dominio de título.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Este evento se desencadena en el dominio de título.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dvdevcode. h (incluir DShow. h)</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dvdevcode.h (incluir Dshow.h)</dt> </dl> |
 
 
 

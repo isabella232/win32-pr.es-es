@@ -1,11 +1,11 @@
 ---
-title: IGatherNotify OnDataMove (deprecated) (método)
-description: Este tema de la interfaz de búsqueda en el escritorio de Windows está en desuso y se ha sustituido por la API ISearchPersistentItemsChangedSink de Windows Search en el Windows SDK. | IGatherNotify OnDataMove (deprecated) (método)
+title: Método IGatherNotify OnDataMove (en desuso)
+description: Este Windows interfaz de búsqueda de escritorio está en desuso y se sustituye por la API Windows Search ISearchPersistentItemsChangedSink en el SDK Windows. | Método IGatherNotify OnDataMove (en desuso)
 ms.assetid: cc223d0f-6508-4e38-b365-c60660db5324
 keywords:
-- OnDataMove (obsoleto) características de entorno de Windows heredado
-- OnDataMove (obsoleto) características de entorno heredado de Windows, interfaz IGatherNotify
-- Interfaz IGatherNotify características del entorno heredado de Windows, OnDataMove (en desuso) (método)
+- Método OnDataMove (en desuso) Heredado Windows Environment Features
+- Método OnDataMove (en desuso) Heredado Windows Environment Features , IGatherNotify (interfaz)
+- IGatherNotify interface Legacy Windows Environment Features , OnDataMove (Deprecated) method
 topic_type:
 - apiref
 api_name:
@@ -15,20 +15,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9fe38cd11e9072981334e5b724445ea3393d4361
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 2f3d4f7d91bc9e9741f227812997a820ab4180ccf438d52ae8cfea93f67dc0bf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362200"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119665875"
 ---
-# <a name="igathernotifyondatamove-deprecated-method"></a>IGatherNotify:: OnDataMove (deprecated) (método)
+# <a name="igathernotifyondatamove-deprecated-method"></a>Método IGatherNotify::OnDataMove (en desuso)
 
 \[**OnDataMove** puede modificarse o no estar disponible en versiones posteriores del sistema operativo o del producto.\]
 
-Este tema de la interfaz de búsqueda en el escritorio de Windows está en desuso y se ha sustituido por la API [**ISearchPersistentItemsChangedSink**](/windows/desktop/api/searchapi/nn-searchapi-isearchpersistentitemschangedsink) de Windows Search en el Windows SDK.
+Este Windows interfaz de búsqueda de escritorio está en desuso y se sustituye por la API Windows Search [**ISearchPersistentItemsChangedSink**](/windows/desktop/api/searchapi/nn-searchapi-isearchpersistentitemschangedsink) en el SDK Windows.
 
-Este método notifica al indizador de los datos que se han despasado. Cuando envía la notificación al indexador, incluye la dirección anterior, la nueva dirección y la dirección lógica.
+Este método notifica al indexador los datos que se han movido. Cuando envía la notificación al indexador, incluye la dirección antigua, la nueva dirección y la dirección lógica.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,39 +48,39 @@ void OnDataMove (Deprecated)(
 
 <dl> <dt>
 
-*eChangeAdviseSemantics* \[ de\]
+*eChangeAdviseSemantics* \[ En\]
 </dt> <dd>
 
-Tipo: **Long**
+Tipo: **long**
 
 Parámetro enumerado que describe el tipo de movimiento que se ha producido.
 
 </dd> <dt>
 
-*bstrOldAddress* \[ de\]
+*bstrOldAddress* \[ En\]
 </dt> <dd>
 
 Tipo: **BSTR**
 
-Dirección antigua del elemento que se ha desplace. En el caso de los archivos normales,*eChangeAdviseSematics* es **null**. En el caso de una carpeta o directorio, establezca *eChangeAdviseSematics* en el \_ directorio GTHR CA \_ Semantics \_ .
+Dirección antigua del elemento que se movió. Para los archivos normales,*eChangeAdviseSematics* es **NULL.** Para una carpeta o directorio, establezca *eChangeAdviseSematics en* GTHR \_ CA \_ SEMANTICS \_ DIRECTORY.
 
 </dd> <dt>
 
-*bstrNewAddress* \[ de\]
+*bstrNewAddress* \[ En\]
 </dt> <dd>
 
 Tipo: **BSTR**
 
-Nueva dirección del elemento que se ha despasado.
+Nueva dirección del elemento que se ha movido.
 
 </dd> <dt>
 
-*bstrLogicalAddress* \[ de\]
+*bstrLogicalAddress* \[ En\]
 </dt> <dd>
 
 Tipo: **BSTR**
 
-Dirección lógica del elemento que se ha despasado.
+Dirección lógica del elemento que se ha movido.
 
 </dd> </dl>
 

@@ -1,21 +1,21 @@
 ---
-description: El sistema difunde el \_ \_ evento de dispositivo DBT DEVNODES Changed cuando se ha agregado o quitado un dispositivo del sistema. Las aplicaciones que mantienen listas de dispositivos en el sistema deben actualizar sus listas.
+description: El sistema difunde el evento de dispositivo \_ DBT DEVNODES CHANGED cuando se ha agregado o quitado un dispositivo \_ del sistema. Las aplicaciones que mantienen listas de dispositivos en el sistema deben actualizar sus listas.
 ms.assetid: 62acc633-7dad-4792-a5a2-1f95356479d1
-title: Evento DBT_DEVNODES_CHANGED (DBT. h)
+title: DBT_DEVNODES_CHANGED evento (Dbt.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1450e9a87d541e5df3d9a9286e48601697e6aaae
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 00d43873241c3f72336dd996fb9fa3486229d9ffcf522923d68ab606313afb7e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153092"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119539165"
 ---
-# <a name="dbt_devnodes_changed-event"></a>\_Evento DBT DEVNODES \_ Changed
+# <a name="dbt_devnodes_changed-event"></a>Evento \_ DBT DEVNODES \_ CHANGED
 
-El sistema difunde el \_ \_ evento de dispositivo DBT DEVNODES Changed cuando se ha agregado o quitado un dispositivo del sistema. Las aplicaciones que mantienen listas de dispositivos en el sistema deben actualizar sus listas.
+El sistema difunde el evento de dispositivo \_ DBT DEVNODES CHANGED cuando se ha agregado o quitado un dispositivo \_ del sistema. Las aplicaciones que mantienen listas de dispositivos en el sistema deben actualizar sus listas.
 
-Para difundir este evento de dispositivo, el sistema usa el mensaje de [**\_ DEVICECHANGE de WM**](wm-devicechange.md) con *wParam* establecido en DBT \_ DEVNODES \_ Changed y *lParam* establecido en cero.
+Para difundir este evento de dispositivo, el sistema usa el mensaje [**\_ DEVICECHANGE**](wm-devicechange.md) de WM con *wParam* establecido en DBT \_ DEVNODES CHANGED y \_ *lParam* establecido en cero.
 
 
 ```C++
@@ -33,7 +33,7 @@ LRESULT CALLBACK WindowProc(
 
 <dl> <dt>
 
-*identificador* 
+*Hwnd* 
 </dt> <dd>
 
 Identificador a una ventana.
@@ -43,14 +43,14 @@ Identificador a una ventana.
 *uMsg* 
 </dt> <dd>
 
-Identificador del mensaje de [**\_ DEVICECHANGE de WM**](wm-devicechange.md) .
+Identificador [**del mensaje \_ DEVICECHANGE**](wm-devicechange.md) de WM.
 
 </dd> <dt>
 
 *wParam* 
 </dt> <dd>
 
-Se establece en DBT \_ DEVNODES \_ Changed.
+Se establece en DBT \_ DEVNODES \_ CHANGED.
 
 </dd> <dt>
 
@@ -63,11 +63,11 @@ Establecer en cero.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true**.
+Devuelve **TRUE.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-No hay información adicional sobre qué dispositivo se ha agregado o quitado del sistema. Las aplicaciones que requieren más información deben registrarse para recibir notificaciones de dispositivo mediante la función [**RegisterDeviceNotification**](/windows/desktop/api/Winuser/nf-winuser-registerdevicenotificationa) .
+No hay información adicional sobre qué dispositivo se ha agregado o quitado del sistema. Las aplicaciones que requieren más información deben registrarse para la notificación del dispositivo mediante [**la función RegisterDeviceNotification.**](/windows/desktop/api/Winuser/nf-winuser-registerdevicenotificationa)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -77,7 +77,7 @@ No hay información adicional sobre qué dispositivo se ha agregado o quitado de
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP<br/>                                                            |
 | Servidor mínimo compatible<br/> | Windows Server 2003<br/>                                                   |
-| Encabezado<br/>                   | <dl> <dt>DBT. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Dbt.h</dt> </dl> |
 
 
 
@@ -88,13 +88,13 @@ No hay información adicional sobre qué dispositivo se ha agregado o quitado de
 [Eventos de dispositivo](device-events.md)
 </dt> <dt>
 
-[Eventos de administración de dispositivos](device-management-events.md)
+[Administración de dispositivos eventos](device-management-events.md)
 </dt> <dt>
 
-[**DEV \_ Broadcast \_ HDR**](/windows/desktop/api/Dbt/ns-dbt-dev_broadcast_hdr)
+[**DEV \_ BROADCAST \_ HDR**](/windows/desktop/api/Dbt/ns-dbt-dev_broadcast_hdr)
 </dt> <dt>
 
-[**DEVICECHANGE de WM \_**](wm-devicechange.md)
+[**WM \_ DEVICECHANGE**](wm-devicechange.md)
 </dt> </dl>
 
  

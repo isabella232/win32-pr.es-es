@@ -1,7 +1,7 @@
 ---
-description: Agrega datos de adyacencia al búfer de índice de la malla. Cuando la malla se va a enviar a un sombreador de geometría que toma datos de adyacencias, es necesario que el búfer de índice de la malla contenga datos de adyacencia.
+description: Agrega datos de adyacencia al búfer de índice de la malla. Cuando la malla se va a enviar a un sombreador de geometría que toma datos de adyacencia, es necesario que el búfer de índice de la malla contenga datos de adyacencia.
 ms.assetid: 8e587620-a4b6-4415-8fe7-9ec22f253b16
-title: 'ID3DX10Mesh:: GenerateGSAdjacency (método) (D3DX10. h)'
+title: Método ID3DX10Mesh::GenerateGSAdjacency (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: d47747acfa97fbe843dabf527c8f94742db78d6b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3bd6fdcfac53ca4655cc85e0d4373ee862f92f9bad673ed5bb20210ab9b77ca1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104083760"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119566885"
 ---
-# <a name="id3dx10meshgenerategsadjacency-method"></a>ID3DX10Mesh:: GenerateGSAdjacency (método)
+# <a name="id3dx10meshgenerategsadjacency-method"></a>Método ID3DX10Mesh::GenerateGSAdjacency
 
-Agrega datos de adyacencia al búfer de índice de la malla. Cuando la malla se va a enviar a un sombreador de geometría que toma datos de adyacencias, es necesario que el búfer de índice de la malla contenga datos de adyacencia.
+Agrega datos de adyacencia al búfer de índice de la malla. Cuando la malla se va a enviar a un sombreador de geometría que toma datos de adyacencia, es necesario que el búfer de índice de la malla contenga datos de adyacencia.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que aparecen en los [códigos de retorno de Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -62,7 +62,7 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 [ID3DX10Mesh](id3dx10mesh.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

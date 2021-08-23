@@ -1,9 +1,9 @@
 ---
-title: Mensaje de HDM_GETIMAGELIST (commctrl. h)
-description: Obtiene el identificador de la lista de imágenes que se ha establecido para un control de encabezado existente. Puede enviar este mensaje explícitamente o utilizar la \_ macro header GetImageList o header \_ GetStateImageList.
+title: HDM_GETIMAGELIST mensaje (Commctrl.h)
+description: Obtiene el identificador de la lista de imágenes que se ha establecido para un control de encabezado existente. Puede enviar este mensaje explícitamente o usar la macro Header \_ GetImageList o Header \_ GetStateImageList.
 ms.assetid: 3e1a979c-60c5-4538-bd4d-16238829062e
 keywords:
-- HDM_GETIMAGELIST controles de mensajes de Windows
+- HDM_GETIMAGELIST controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e199d603af873f1957d33855ccf5c59a90a4002
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8149dd4914ceb1835e9e04442492855e9c25340604ed4e4eeb2619c62b88e69f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802858"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119540915"
 ---
-# <a name="hdm_getimagelist-message"></a>HDM \_ GETIMAGELIST
+# <a name="hdm_getimagelist-message"></a>Mensaje \_ GETIMAGELIST de HDM
 
-Obtiene el identificador de la lista de imágenes que se ha establecido para un control de encabezado existente. Puede enviar este mensaje explícitamente o utilizar la macro [**Header \_ GetImageList**](/windows/desktop/api/Commctrl/nf-commctrl-header_getimagelist) o [**Header \_ GetStateImageList**](/windows/desktop/api/Commctrl/nf-commctrl-header_getstateimagelist) .
+Obtiene el identificador de la lista de imágenes que se ha establecido para un control de encabezado existente. Puede enviar este mensaje explícitamente o usar la macro [**Header \_ GetImageList**](/windows/desktop/api/Commctrl/nf-commctrl-header_getimagelist) o [**Header \_ GetStateImageList.**](/windows/desktop/api/Commctrl/nf-commctrl-header_getstateimagelist)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -31,8 +31,8 @@ Obtiene el identificador de la lista de imágenes que se ha establecido para un 
 
 | Valor                                                                                                                                                      | Significado                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| <span id="HDSIL_NORMAL"></span><span id="hdsil_normal"></span><dl> <dt>**HDSIL \_ normal**</dt> </dl> | Indica que se trata de una lista de imágenes normal.<br/> |
-| <span id="HDSIL_STATE"></span><span id="hdsil_state"></span><dl> <dt>**Estado de HDSIL \_**</dt> </dl>    | Indica que se trata de una lista de imágenes de estado.<br/>  |
+| <span id="HDSIL_NORMAL"></span><span id="hdsil_normal"></span><dl> <dt>**HDSIL \_ NORMAL**</dt> </dl> | Indica que se trata de una lista de imágenes normal.<br/> |
+| <span id="HDSIL_STATE"></span><span id="hdsil_state"></span><dl> <dt>**HDSIL \_ STATE**</dt> </dl>    | Indica que se trata de una lista de imágenes de estado.<br/>  |
 
 
 
@@ -45,17 +45,17 @@ Obtiene el identificador de la lista de imágenes que se ha establecido para un 
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un identificador para el conjunto de lista de imágenes para el control de encabezado.
+Devuelve un identificador al conjunto de lista de imágenes para el control de encabezado.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

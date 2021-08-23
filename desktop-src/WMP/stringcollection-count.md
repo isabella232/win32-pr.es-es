@@ -1,9 +1,9 @@
 ---
-title: StringCollection. Count
-description: La propiedad Count recupera el número de elementos de la colección de cadenas.
+title: StringCollection.count
+description: La propiedad count recupera el número de elementos de la colección de cadenas.
 ms.assetid: bf02d102-deb2-4c5a-971c-d54f36dd2ad8
 keywords:
-- Media Player de Windows de StringCollection. Count
+- StringCollection.count Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,36 +14,36 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ce3e0a755411228d8a71de1cdc781c360050ee94
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ac93b14cf79aadc6622f00e9d3867d3dfdb50955799f1185db80d2fb1e8b271d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119571785"
 ---
-# <a name="stringcollectioncount"></a>StringCollection. Count
+# <a name="stringcollectioncount"></a>StringCollection.count
 
-La propiedad **Count** recupera el número de elementos de la colección de cadenas.
+La **propiedad count** recupera el número de elementos de la colección de cadenas.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
-*reproductor*. *mediaCollection*. **getAttributeStringCollection**( *atributo*, *mediaType*). **recuento**
+*player*. *mediaCollection*. **getAttributeStringCollection**( *atributo*, *mediaType*). **count**
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es un **número** de solo lectura (**Long**).
+Esta propiedad es un número de solo **lectura** (**long**).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -52,10 +52,10 @@ Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la bi
 
 <dl> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configuración.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configuración.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> <dt>
 
 [**StringCollection (objeto)**](stringcollection-object.md)

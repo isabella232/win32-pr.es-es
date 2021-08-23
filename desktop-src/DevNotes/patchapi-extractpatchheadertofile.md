@@ -1,6 +1,6 @@
 ---
-description: Extrae la información de encabezado de un delta.
-title: ExtractPatchHeaderToFileA/W (función)
+description: Extrae la información de encabezado de una diferencia.
+title: Función ExtractPatchHeaderToFileA/W
 ms.topic: reference
 ms.date: 04/17/2020
 ms.keywords: ExtractPatchHeaderToFileA, ExtractPatchHeaderToFileW
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - mspatchc.dll
-ms.openlocfilehash: 40835a0b88558046ff9086ffcd7ec4609d1ed863
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 626bd53e3361f4d29cc76e17ae2788ddea3bc8b99b580196bcbf77c27a6983d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105721595"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119571805"
 ---
-# <a name="extractpatchheadertofileaw-function"></a>ExtractPatchHeaderToFileA/W (función)
+# <a name="extractpatchheadertofileaw-function"></a>Función ExtractPatchHeaderToFileA/W
 
-Las funciones **ExtractPatchHeaderToFileA** y **ExtractPatchHeaderToFileW** extraen la información de encabezado de un delta. La diferencia se proporciona como una ruta de acceso de archivo. El encabezado de salida también se escribe en una ruta de acceso proporcionada.
+Las **funciones ExtractPatchHeaderToFileA** **y ExtractPatchHeaderToFileW** extraen la información de encabezado de una diferencia. La diferencia se proporciona como una ruta de acceso de archivo. El encabezado de salida también se escribe en una ruta de acceso proporcionada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,7 +44,7 @@ BOOL  PATCHAPI  ExtractPatchHeaderToFileW(
 
 *PatchFileName*
 
-Nombre del delta que contiene el encabezado.
+Nombre de la diferencia que contiene el encabezado.
 
 *PatchHeaderFileName*
 
@@ -52,13 +52,13 @@ Nombre del archivo de encabezado que se va a crear.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve **true** si se realiza correctamente; de lo contrario, devuelve **false**.
+Esta función devuelve **TRUE** si se realiza correctamente; de lo contrario, devuelve **FALSE**.
 
 ## <a name="requirements"></a>Requisitos
 
 | Requisito | Value |
 |----------------|---------------------------------------------------------------------------------------|
-| Encabezado | patchapi. h |
+| Encabezado | patchapi.h |
 | Archivo DLL | mspatchc.dll |
 | Unicode | Se implementa como ExtractPatchHeaderToFileW (Unicode) y ExtractPatchHeaderToFileA (ANSI) |
 

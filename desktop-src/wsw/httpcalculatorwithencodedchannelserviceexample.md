@@ -1,6 +1,6 @@
 ---
 title: HttpCalculatorWithEncodedChannelServiceExample
-description: Revise un ejemplo de C++ de la API de servicios web de Windows (WWSAPI) de una calculadora HTTP con el servicio de canal codificado.
+description: Revise un Windows C++ de web Services API (WWSAPI) de una calculadora HTTP con servicio de canal codificado.
 ms.assetid: 3b8d58dd-2f0c-4008-81ad-abda23a26a52
 keywords:
 - HttpCalculatorWithEncodedChannelServiceExample Native-Web-Services
@@ -8,12 +8,12 @@ keywords:
 - Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c1eb0ef089b546a87ce741934ce26855e726c38a
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: cc24880433d11079c5c842d24b41e2badd8a7e33e7b305125ee25b04f7701b8d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112404168"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119590155"
 ---
 # <a name="httpcalculatorwithencodedchannelserviceexample"></a>HttpCalculatorWithEncodedChannelServiceExample
 

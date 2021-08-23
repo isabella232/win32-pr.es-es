@@ -1,9 +1,9 @@
 ---
-title: Mensaje de LVM_GETHOTCURSOR (commctrl. h)
-description: Recupera el valor de HCURSOR que se usa cuando el puntero se encuentra sobre un elemento mientras está habilitado el seguimiento activo. Puede enviar este mensaje explícitamente o utilizar la \_ macro GetHotCursor de ListView.
+title: LVM_GETHOTCURSOR mensaje (Commctrl.h)
+description: Recupera el valor HCURSOR usado cuando el puntero está sobre un elemento mientras está habilitado el seguimiento en caliente. Puede enviar este mensaje explícitamente o usar la \_ macro ListView GetHotCursor.
 ms.assetid: 064d04b2-d74e-4a80-aec6-97a3c53fc4fb
 keywords:
-- LVM_GETHOTCURSOR controles de mensajes de Windows
+- LVM_GETHOTCURSOR controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ddd8fa4c038bf2fb1c10816319504dd9de32c0e9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1e5703d252d239124b78656c4a5991efdecb2107552fb6e2ab0f87701af4e18d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803404"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119540805"
 ---
-# <a name="lvm_gethotcursor-message"></a>\_Mensaje GETHOTCURSOR LVM
+# <a name="lvm_gethotcursor-message"></a>Mensaje \_ GETHOTCURSOR de LVM
 
-Recupera el valor de HCURSOR que se usa cuando el puntero se encuentra sobre un elemento mientras está habilitado el seguimiento activo. Puede enviar este mensaje explícitamente o utilizar la [**macro \_ GetHotCursor de ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_gethotcursor) .
+Recupera el valor HCURSOR usado cuando el puntero está sobre un elemento mientras está habilitado el seguimiento en caliente. Puede enviar este mensaje explícitamente o usar la macro [**\_ ListView GetHotCursor.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_gethotcursor)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -37,21 +37,21 @@ Recupera el valor de HCURSOR que se usa cuando el puntero se encuentra sobre un 
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de HCURSOR que es el identificador del cursor que el control de vista de lista utiliza cuando está habilitado el seguimiento activo.
+Devuelve un valor HCURSOR que es el identificador del cursor que usa el control de vista de lista cuando está habilitado el seguimiento en caliente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un control de vista de lista usa el seguimiento activo y la selección del mouse cuando se establece el estilo [**LVS \_ ex \_ TRACKSELECT**](extended-list-view-styles.md) .
+Un control de vista de lista usa el seguimiento en caliente y la selección del mouse cuando se establece el estilo [**LVS \_ EX \_ TRACKSELECT.**](extended-list-view-styles.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

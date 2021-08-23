@@ -1,32 +1,32 @@
 ---
 title: Colores primarios aditivos
-description: El método aditivo de la combinación de colores se basa en la suposición de que comienza con negro. Es decir, si no hay otros colores presentes (la imagen es negro) y se agrega rojo, la imagen aparece en rojo. Si después agrega Blue, la imagen aparece de color magenta.
+description: El método aditivo de combinación de colores se basa en la suposición de que empieza por el negro. Es decir, si no hay ningún otro color presente (la imagen es negra) y agrega rojo, la imagen aparece en rojo. Si luego agrega azul, la imagen aparece como "blue".
 ms.assetid: 4ecc1d29-92fe-46b6-bd65-d385a16f83d7
 keywords:
-- Sistema de color de Windows (WCS), colores primarios aditivos
-- WCS (sistema de colores de Windows), colores primarios aditivos
-- Administración del color de imagen, colores primarios aditivos
-- Administración del color, colores primarios aditivos
-- colores, principal aditivo
-- colores primarios aditivos
-- colores primarios
+- Windows Sistema de colores (WCS), colores primarios aditivos
+- WCS (Windows color), colores primarios aditivos
+- administración de colores de imagen, adiciones de colores primarios
+- administración de colores, adiciones de colores primarios
+- colors,additive primary
+- adiciones de colores primarios
+- colores principales
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db71d92709116683171397401961601bc7ee9664
-ms.sourcegitcommit: 38954f8f0d70f44bff4a943784f468ebd7ef691a
+ms.openlocfilehash: f36b8a288e4211f8705ec2a9629ab2271d818b21cf10ce7fd5f41d8d5e0efa91
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "105721152"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119593655"
 ---
 # <a name="additive-primary-colors"></a>Colores primarios aditivos
 
-El método aditivo de la combinación de colores se basa en la suposición de que comienza con negro. Es decir, si no hay otros colores presentes (la imagen es negro) y se agrega rojo, la imagen aparece en rojo. Si después agrega Blue, la imagen aparece de color magenta.
+El método aditivo de combinación de colores se basa en la suposición de que empieza por el negro. Es decir, si no hay ningún otro color presente (la imagen es negra) y agrega rojo, la imagen aparece en rojo. Si luego agrega azul, la imagen aparece como "blue".
 
-Los tres [colores primarios](p.md) aditivos son rojo, verde y azul. En la ilustración siguiente se muestra la combinación de colores primarios aditivos.
+Los tres colores [principales aditivos](p.md) son rojo, verde y azul. En la ilustración siguiente se muestra la combinación de colores primarios aditiva.
 
-![combinación de colores para los colores primarios aditivos](images/400px-additivecolor.png)
+![combinación de colores para colores primarios aditivos](images/400px-additivecolor.png)
 
  
 

@@ -1,7 +1,7 @@
 ---
-description: Agrega datos de trazo para un solo trazo al IInkAnalyzer y asigna el identificador de referencia cultural del subproceso de entrada activo al trazo.
+description: Agrega datos de trazo para un único trazo al IInkAnalyzer y asigna el identificador de referencia cultural del subproceso de entrada activo al trazo.
 ms.assetid: 0e603e5a-d722-4ab8-bc59-605e131c863b
-title: 'IInkAnalyzer:: AddStroke (método) (IACom. h)'
+title: Método IInkAnalyzer::AddStroke (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: fc946e7975772eb7be6fff54d01bb1a6dae8ebe7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f7ba08e779e115c243918d94e5b41e8a7d77f54fab92b045274135ead2ae0264
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119590595"
 ---
-# <a name="iinkanalyzeraddstroke-method"></a>IInkAnalyzer:: AddStroke (método)
+# <a name="iinkanalyzeraddstroke-method"></a>IInkAnalyzer::AddStroke (método)
 
-Agrega datos de trazo para un solo trazo al [**IInkAnalyzer**](iinkanalyzer.md) y asigna el identificador de referencia cultural del subproceso de entrada activo al trazo.
+Agrega datos de trazo para un único trazo al [**IInkAnalyzer**](iinkanalyzer.md) y asigna el identificador de referencia cultural del subproceso de entrada activo al trazo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,80 +44,80 @@ HRESULT AddStroke(
 
 <dl> <dt>
 
-*lStrokeId* \[ de\]
+*lStrokeId* \[ En\]
 </dt> <dd>
 
-Identificador del trazo que se va a agregar.
+Identificador del trazo que se agregará.
 
 </dd> <dt>
 
-*ulStrokePacketDataCount* \[ de\]
+*ulStrokePacketDataCount* \[ En\]
 </dt> <dd>
 
-Número de paquetes del trazo.
+Número de paquetes en el trazo.
 
 </dd> <dt>
 
-*plStrokePacketData* \[ de\]
+*plStrokePacketData* \[ En\]
 </dt> <dd>
 
-Una matriz que contiene los datos del paquete del trazo.
+Matriz que contiene los datos del paquete para el trazo.
 
 </dd> <dt>
 
-*ulStrokePacketDescriptionCount* \[ de\]
+*ulStrokePacketDescriptionCount* \[ En\]
 </dt> <dd>
 
-El número de propiedades de paquete en cada paquete.
+Número de propiedades de paquete en cada paquete.
 
 </dd> <dt>
 
-*pStrokePacketDescriptionGuids* \[ de\]
+*pStrokePacketDescriptionGuids* \[ En\]
 </dt> <dd>
 
-Una matriz que contiene los identificadores de propiedad de paquete.
+Matriz que contiene los identificadores de propiedad de paquete.
 
 </dd> <dt>
 
-*ppContextNodeStrokeAddedTo* \[ enuncia\]
+*ppContextNodeStrokeAddedTo* \[ out\]
 </dt> <dd>
 
-Puntero al [**IContextNode**](icontextnode.md) en el que el [**IInkAnalyzer**](iinkanalyzer.md) agregó el trazo.
+Puntero al [**IContextNode al**](icontextnode.md) que [**IInkAnalyzer**](iinkanalyzer.md) agregó el trazo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Caution]  
-> Para evitar una pérdida de memoria, llame a [**IUnknown:: Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) en *ppContextNodeStrokeAddedTo* cuando ya no necesite usar el objeto.
+> Para evitar una pérdida de memoria, llame a [**IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) en *ppContextNodeStrokeAddedTo* cuando ya no necesite usar el objeto .
 
  
 
-Cuando *ppContextNodeStrokeAddedTo* es **null**, indica que el llamador no está interesado en el valor devuelto del método.
+Cuando *ppContextNodeStrokeAddedTo* es **NULL,** indica que el autor de la llamada no está interesado en el valor devuelto del método .
 
-El [**IInkAnalyzer**](iinkanalyzer.md) agrega el trazo a un [**IContextNode**](icontextnode.md) de tipo UnclassifiedInk (consulte [tipos de nodo de contexto](context-node-types.md)). Este nodo está en la colección de subnodos del nodo raíz (consulte métodos [**IInkAnalyzer:: GetRootNode**](iinkanalyzer-getrootnode.md) y [**IContextNode:: GetSubNodes**](icontextnode-getsubnodes.md) ).
+[**IInkAnalyzer**](iinkanalyzer.md) agrega el trazo a un [**IContextNode**](icontextnode.md) de tipo UnclassifiedInk (vea [Tipos de nodos de contexto).](context-node-types.md) Este nodo está en la colección de subnodos del nodo raíz (vea Los métodos [**IInkAnalyzer::GetRootNode**](iinkanalyzer-getrootnode.md) y [**IContextNode::GetSubNodes).**](icontextnode-getsubnodes.md)
 
-[**IInkAnalyzer**](iinkanalyzer.md) asigna el identificador de referencia cultural del subproceso de entrada activo al trazo y agrega el trazo al primer nodo de contexto UnclassifiedInk bajo el nodo raíz del analizador de tinta que contiene los trazos con el mismo identificador de referencia cultural. Si el analizador de tintas no tiene un nodo con el mismo identificador de referencia cultural, crea un nuevo nodo de contexto UnclassifiedInk en el nodo raíz y agrega el trazo al nuevo nodo de contexto UnclassifiedInk.
+[**IInkAnalyzer**](iinkanalyzer.md) asigna el identificador de referencia cultural del subproceso de entrada activo al trazo y agrega el trazo al primer nodo de contexto UnclassifiedInk bajo el nodo raíz del analizador de entrada de lápiz que contiene trazos con el mismo identificador de referencia cultural. Si el analizador de entrada de lápiz no tiene un nodo con el mismo identificador de referencia cultural, crea un nuevo nodo de contexto UnclassifiedInk en su nodo raíz y agrega el trazo al nuevo nodo de contexto UnclassifiedInk.
 
-*plStrokePacketData* contiene datos de paquetes para todos los puntos del trazo. *pStrokePacketDescriptionGuids* contiene los identificadores únicos globales (GUID) que describen los tipos de datos de paquete incluidos para cada punto del trazo. Para obtener una lista completa de las propiedades de paquete disponibles, consulte [constantes de PacketPropertyGuids](packetpropertyguids-constants.md).
+*plStrokePacketData contiene* datos de paquetes para todos los puntos del trazo. *pStrokePacketDescriptionGuids* contiene los identificadores únicos globales (GUID) que describen los tipos de datos de paquete incluidos para cada punto del trazo. Para obtener una lista completa de las propiedades de paquete disponibles, [vea PacketPropertyGuids Constants](packetpropertyguids-constants.md).
 
-Este método expande la región desfasada a la Unión del valor actual de la región y el rectángulo de selección del trazo agregado.
+Este método expande la región desusada a la unión del valor actual de la región y el cuadro de límite del trazo agregado.
 
-Si el [**IInkAnalyzer**](iinkanalyzer.md) ya contiene un trazo con el mismo identificador de trazo, el **IInkAnalyzer** devuelve un **valor HRESULT** de **E \_ INVALIDARG**.
+Si [**IInkAnalyzer**](iinkanalyzer.md) ya contiene un trazo con el mismo identificador de trazo, **IInkAnalyzer** devuelve **un HRESULT** de **E \_ INVALIDARG**.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -129,22 +129,22 @@ Si el [**IInkAnalyzer**](iinkanalyzer.md) ya contiene un trazo con el mismo iden
 [**InkAnalyzer**](iinkanalyzer.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: AddStrokeForLanguage (método)**](iinkanalyzer-addstrokeforlanguage.md)
+[**IInkAnalyzer::AddStrokeForLanguage (Método)**](iinkanalyzer-addstrokeforlanguage.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: AddStrokes (método)**](iinkanalyzer-addstrokes.md)
+[**IInkAnalyzer::AddStrokes (Método)**](iinkanalyzer-addstrokes.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: AddStrokesForLanguage (método)**](iinkanalyzer-addstrokesforlanguage.md)
+[**IInkAnalyzer::AddStrokesForLanguage (Método)**](iinkanalyzer-addstrokesforlanguage.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: RemoveStroke (método)**](iinkanalyzer-removestroke.md)
+[**IInkAnalyzer::RemoveStroke (Método)**](iinkanalyzer-removestroke.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: RemoveStrokes (método)**](iinkanalyzer-removestrokes.md)
+[**IInkAnalyzer::RemoveStrokes (Método)**](iinkanalyzer-removestrokes.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

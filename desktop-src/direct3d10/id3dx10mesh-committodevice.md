@@ -1,7 +1,7 @@
 ---
-description: Confirme los cambios realizados en una malla en el dispositivo para que los cambios se puedan representar. Se debe llamar a este método después de que se modifiquen los datos de una malla y antes de que se representen. No se puede representar una malla a menos que se confirme en el dispositivo. Vea Notas.
+description: Confirme los cambios realizados en una malla en el dispositivo para que se puedan representar. Se debe llamar a esto después de modificar los datos de una malla y antes de representarse. Una malla no se puede representar a menos que se haya confirmado en el dispositivo. Vea Notas.
 ms.assetid: 26927553-d1d8-4745-85ad-a8a6fe949306
-title: 'ID3DX10Mesh:: CommitToDevice (método) (D3DX10. h)'
+title: Método ID3DX10Mesh::CommitToDevice (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 160f97a3a00ddc7bbf69989991b2794ab3d6e5e8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 50dde79e57ca7edf838f05b1fa1b4d10f5da5cc936b3cbf563c7838703650806
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104083734"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119567035"
 ---
-# <a name="id3dx10meshcommittodevice-method"></a>ID3DX10Mesh:: CommitToDevice (método)
+# <a name="id3dx10meshcommittodevice-method"></a>Método ID3DX10Mesh::CommitToDevice
 
-Confirme los cambios realizados en una malla en el dispositivo para que los cambios se puedan representar. Se debe llamar a este método después de que se modifiquen los datos de una malla y antes de que se representen. No se puede representar una malla a menos que se confirme en el dispositivo. Vea Notas.
+Confirme los cambios realizados en una malla en el dispositivo para que se puedan representar. Se debe llamar a esto después de modificar los datos de una malla y antes de representarse. Una malla no se puede representar a menos que se haya confirmado en el dispositivo. Vea Notas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que aparecen en los [códigos de retorno de Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando se carga una malla, se cargan los datos en los recursos de almacenamiento provisional, lo que significa que los datos se pueden modificar pero no se representan. Cuando se llama a CommitToDevice, los datos de los recursos de almacenamiento provisional se copian en recursos de dispositivo para que se puedan representar. Aunque los datos se confirman en el dispositivo, los recursos de almacenamiento provisional permanecen y se pueden modificar. Si se realizan modificaciones en los recursos de almacenamiento provisional, los recursos de almacenamiento provisional deben volver a confirmarse en el dispositivo para que esos cambios se representen en la pantalla.
+Cuando se carga una malla, los datos se cargan en recursos de almacenamiento provisional, lo que significa que los datos se pueden modificar pero no representar. Cuando se llama a CommitToDevice, los datos de los recursos de almacenamiento provisional se copian en los recursos del dispositivo para que se puedan representar. Aunque los datos se confirman en el dispositivo, los recursos de almacenamiento provisional permanecen y se pueden modificar. Si se realizan modificaciones en los recursos de almacenamiento provisional, los recursos de almacenamiento provisional deben volver a estar confirmados en el dispositivo para que esos cambios se represente en pantalla.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Cuando se carga una malla, se cargan los datos en los recursos de almacenamiento
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -66,7 +66,7 @@ Cuando se carga una malla, se cargan los datos en los recursos de almacenamiento
 [ID3DX10Mesh](id3dx10mesh.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

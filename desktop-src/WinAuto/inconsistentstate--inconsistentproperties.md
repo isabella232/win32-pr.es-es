@@ -4,18 +4,18 @@ description: InconsistentState, InconsistentProperties
 ms.assetid: 82A2ECA8-0155-402A-A745-B97D3F633643
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5522025eff8aecbdf0f4313c0052afebd4a17958
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 30533125c342bd80134c9eab45f14917a3b3ad04af9d969140c49502cbfd192a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103774263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119644845"
 ---
 # <a name="inconsistentstate-inconsistentproperties"></a>InconsistentState, InconsistentProperties
 
 ## <a name="text"></a>Texto
 
-Un control tiene Estados/propiedades incoherentes {0} y {1}
+Un control tiene estados o propiedades que son incoherentes {0} y {1}
 
 ## <a name="type"></a>Tipo
 
@@ -23,23 +23,23 @@ Error
 
 ## <a name="description"></a>Descripción
 
-Un elemento informa de los Estados de MSAA incoherentes o en conflicto o de las propiedades de automatización de la interfaz de usuario. Por ejemplo, cuando el método [**Get \_ accState**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accstate) devuelve cualquiera de las siguientes combinaciones.
+Un elemento informa de estados MSAA incoherentes o en conflicto Automatización de la interfaz de usuario propiedades. Por ejemplo, cuando el [**método get \_ accState**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accstate) devuelve cualquiera de las combinaciones siguientes.
 
--   Sistema \_ \_ de estado expandido y sistema de estado \_ \_ contraído
--   \_Sistema \_ de estado seleccionado y no \_ seleccionable del sistema de estado \_
--   \_Sistema \_ de estado centrado y sin \_ sistema de estado \_ enfocable
+-   SISTEMA \_ DE \_ ESTADO EXPANDIDO Y SISTEMA DE ESTADO \_ \_ CONTRAÍDO
+-   SISTEMA \_ DE ESTADO SELECCIONADO Y NO SISTEMA DE ESTADO \_ \_ \_ SELECCIONABLE
+-   SISTEMA \_ DE ESTADO CENTRADO Y NO SISTEMA DE ESTADO \_ \_ \_ FOCUSABLE
 
-Este problema causa problemas para las personas que confían en un lector de pantalla y un teclado para la navegación porque es posible que se notifique al usuario un estado incorrecto del elemento.
+Este problema provoca problemas para las personas que dependen de un lector de pantalla y un teclado para la navegación, ya que es posible que se notifica al usuario un estado de elemento incorrecto.
 
 ## <a name="possible-causes"></a>Causas posibles
 
-El elemento o su elemento primario tiene un estado de MSAA establecido incorrectamente.
+El elemento o su elemento primario tienen un estado MSAA establecido de forma inapropiada.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**IAccessible:: get \_ accState**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accstate)
+[**IAccessible::get \_ accState**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accstate)
 </dt> <dt>
 
 [**Constantes de estado de objeto**](object-state-constants.md)
@@ -48,9 +48,9 @@ El elemento o su elemento primario tiene un estado de MSAA establecido incorrect
 [Estados y propiedades](uiauto-msaa.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

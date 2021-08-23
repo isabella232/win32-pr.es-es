@@ -1,24 +1,24 @@
 ---
-description: Valores del registro
+description: Valores del Registro
 ms.assetid: 05393F8E-3C79-4EFA-B281-95B53FF08A45
-title: Valores del registro
+title: Valores del Registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b7711ea05b527b6c6a4c12e6e3361db53aefdd8c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 796b8c4b72d67367b3bafb3772d2874dfbc2ed6fe4c0ce262beddd1122d10a7a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104423171"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119571725"
 ---
-# <a name="registry-values"></a>Valores del registro
+# <a name="registry-values"></a>Valores del Registro
 
 ## <a name="in-this-section"></a>En esta sección
 
 -   [AddHijriDate](addhijridate.md)
 -   [CEIPEnable](ceipenable.md)
 -   [ConnectTo](connectto.md)
--   [Ejec](exec.md)
+-   [Exec](exec.md)
 -   [SCRNSAVE.EXE](scrnsave-exe.md)
 
  

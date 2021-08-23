@@ -1,9 +1,9 @@
 ---
 title: Elemento Navigate
-description: Tenga en cuenta que en esta sección se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea. El elemento Navigate especifica una dirección URL que usan las llamadas a external. NavigateTaskPaneURL.
+description: Nota En esta sección se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea. El elemento Navigate especifica una dirección URL utilizada por las llamadas a External.NavigateTaskPaneURL.
 ms.assetid: 3898e381-baf8-481a-90ee-d64e55b319a0
 keywords:
-- Desplazarse por las ventanas de elementos Media Player
+- Elemento Navigate Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,21 +13,21 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ab3a76fba522332f1414b02d3e317f2793e88292
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a9e62dc0defae10eb0c271543e3ef3c85aab409325a21611792011d487840740
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647635"
 ---
 # <a name="navigate-element"></a>Elemento Navigate
 
 > [!Note]  
-> En esta sección se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
+> En esta sección se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
 
  
 
-El elemento **Navigate** especifica una dirección URL que usan las llamadas a **external. NavigateTaskPaneURL**.
+El **elemento Navigate** especifica una dirección URL utilizada por las llamadas a **External.NavigateTaskPaneURL.**
 
 ``` syntax
 <Navigate
@@ -41,7 +41,7 @@ El elemento **Navigate** especifica una dirección URL que usan las llamadas a *
 
 | Término                                                                                                                                             | Descripción                                                                                                                         |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="BaseURL__required_"></span><span id="baseurl__required_"></span><span id="BASEURL__REQUIRED_"></span>**Baseurl** (obligatorio)<br/> | Dirección URL completa de la página web a la que se va a navegar. **NavigateTaskPaneURL** puede anexar una cadena de consulta a esta dirección URL.<br/> |
+| <span id="BaseURL__required_"></span><span id="baseurl__required_"></span><span id="BASEURL__REQUIRED_"></span>**BaseURL** (obligatorio)<br/> | Dirección URL completa de la página web a la que se va a navegar. **NavigateTaskPaneURL puede** anexar una cadena de consulta a esta dirección URL.<br/> |
 
 
 
@@ -64,9 +64,9 @@ El elemento **Navigate** especifica una dirección URL que usan las llamadas a *
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|----------------------------------------------|
-| Versión<br/> | Windows Media Player 10 o posterior.<br/> |
+| Versión<br/> | Reproductor de Windows Media 10 o posterior.<br/> |
 
 
 
@@ -74,13 +74,13 @@ El elemento **Navigate** especifica una dirección URL que usan las llamadas a *
 
 <dl> <dt>
 
-[**Ejemplo de documento ServiceInfo para una tienda en línea de tipo 1**](example-serviceinfo-document-for-a-type-1-online-store.md)
+[**Documento ServiceInfo de ejemplo para un almacén en línea de tipo 1**](example-serviceinfo-document-for-a-type-1-online-store.md)
 </dt> <dt>
 
-[**Ejemplo de documento ServiceInfo para una tienda en línea de tipo 2**](example-serviceinfo-document-for-a-type-2-online-store.md)
+[**Documento ServiceInfo de ejemplo para una tienda en línea de tipo 2**](example-serviceinfo-document-for-a-type-2-online-store.md)
 </dt> <dt>
 
-[**External. NavigateTaskPaneURL**](external-navigatetaskpaneurl.md)
+[**External.NavigateTaskPaneURL**](external-navigatetaskpaneurl.md)
 </dt> <dt>
 
 [**Documento ServiceInfo**](serviceinfo-document.md)

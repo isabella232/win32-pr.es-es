@@ -1,11 +1,11 @@
 ---
-title: Atributo Service-Instance-version
+title: Atributo Service-Instance-Version
 description: Versión de un servicio Winsock.
 ms.assetid: fabed006-7c3a-40ba-b229-3ceae3113250
 ms.tgt_platform: multiple
 keywords:
-- Atributo Service-Instance-version esquema de AD
-- serviceInstanceVersion esquema de AD de atributos
+- Esquema de AD del atributo Service-Instance-Version
+- Esquema de AD del atributo serviceInstanceVersion
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 53981f3871797e0809d8dda1d7e35551c48c22ec
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a917ff8056f62ff7ecaeb6eecc9efeb2abd7a60e22e972b3a45ea805a8e1a390
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997504"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119646015"
 ---
-# <a name="service-instance-version-attribute"></a>Atributo Service-Instance-version
+# <a name="service-instance-version-attribute"></a>Atributo Service-Instance-Version
 
 Versión de un servicio Winsock.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | Versión de instancia de servicio                              |
-| Nombre para mostrar de LDAP | serviceInstanceVersion                                |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| CN                | Service-Instance-Version                              |
+| Ldap-Display-Name | serviceInstanceVersion                                |
+| Size              | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.199                                |
-| System-ID-GUID    | bf967a37-0de6-11d0-a285-00aa003049e2                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | bf967a37-0de6-11d0-a285-00aa003049e2                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -55,13 +55,13 @@ Versión de un servicio Winsock.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | True                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Verdadero                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 0                                                        |
 | Range-Upper            | 8                                                        |
 | Search-Flags           | 0x00000000                                               |
@@ -76,13 +76,13 @@ Versión de un servicio Winsock.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | True                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Verdadero                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 0                                                        |
 | Range-Upper            | 8                                                        |
 | Search-Flags           | 0x00000000                                               |
@@ -97,13 +97,13 @@ Versión de un servicio Winsock.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | True                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Verdadero                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 0                                                        |
 | Range-Upper            | 8                                                        |
 | Search-Flags           | 0x00000000                                               |
@@ -116,15 +116,15 @@ Versión de un servicio Winsock.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | True                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Verdadero                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 0                                                        |
 | Range-Upper            | 8                                                        |
 | Search-Flags           | 0x00000000                                               |
@@ -139,13 +139,13 @@ Versión de un servicio Winsock.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | True                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Verdadero                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 0                                                        |
 | Range-Upper            | 8                                                        |
 | Search-Flags           | 0x00000000                                               |
@@ -160,13 +160,13 @@ Versión de un servicio Winsock.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | True                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Verdadero                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 0                                                        |
 | Range-Upper            | 8                                                        |
 | Search-Flags           | 0x00000000                                               |

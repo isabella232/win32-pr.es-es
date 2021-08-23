@@ -2,7 +2,7 @@
 description: Establezca la nueva configuración activa del recopilador.
 ms.assetid: 1979e657-a8f3-4eab-991c-a884bde10724
 ms.tgt_platform: multiple
-title: Método SetConfiguration de la clase control
+title: Método SetConfiguration de la clase Control
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 - COM
 api_location:
 - BEvtCol.exe
-ms.openlocfilehash: 4f482de9c4cd8f410371da51e605762a1f92e104
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 41ff2c97eaa4b3e2080493c640b716ae4a822762b0f598c94e141a8cc4b4ac6b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103806986"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119589075"
 ---
-# <a name="setconfiguration-method-of-the-control-class"></a>Método SetConfiguration de la clase control
+# <a name="setconfiguration-method-of-the-control-class"></a>Método SetConfiguration de la clase Control
 
 Establezca la nueva configuración activa del recopilador.
 
@@ -48,66 +48,66 @@ Uint32 SetConfiguration(
 
 <dl> <dt>
 
-*Configuración* \[ de de\]
+*Configuración* \[ En\]
 </dt> <dd>
 
-Configuración que se va a activar.
+Configuración que se debe activar.
 
 </dd> <dt>
 
-*OldTimestampLow* \[ de\]
+*OldTimestampLow* \[ En\]
 </dt> <dd>
 
 Bits de orden inferior de una marca de tiempo que indica cuándo se estableció la configuración activa actual. La comprobación de atomicidad está habilitada si esta propiedad no está establecida en 0.
 
 </dd> <dt>
 
-*OldTimestampHigh* \[ de\]
+*OldTimestampHigh* \[ En\]
 </dt> <dd>
 
 Bits de orden superior de una marca de tiempo que indica cuándo se estableció la configuración activa actual. La comprobación de atomicidad está habilitada si esta propiedad no está establecida en 0.
 
 </dd> <dt>
 
-*NewTimestampLow* \[ enuncia\]
+*NewTimestampLow* \[ out\]
 </dt> <dd>
 
-Cuando este método finaliza, este parámetro contiene los bits de orden inferior de una marca de tiempo que indica cuándo se estableció la nueva configuración. La comprobación de atomicidad está habilitada si esta propiedad no está establecida en 0.
+Cuando este método devuelve un resultado, este parámetro contiene los bits de orden inferior de una marca de tiempo que indica cuándo se estableció la nueva configuración. La comprobación de atomicidad está habilitada si esta propiedad no está establecida en 0.
 
 </dd> <dt>
 
-*NewTimestampHigh* \[ enuncia\]
+*NewTimestampHigh* \[ out\]
 </dt> <dd>
 
-Cuando este método finaliza, este parámetro contiene los bits de orden superior de la marca de tiempo que indica cuándo se estableció la nueva configuración. La comprobación de atomicidad está habilitada si esta propiedad no está establecida en 0.
+Cuando este método devuelve un resultado, este parámetro contiene los bits de orden superior de la marca de tiempo que indica cuándo se estableció la nueva configuración. La comprobación de atomicidad está habilitada si esta propiedad no está establecida en 0.
 
 </dd> <dt>
 
-*ErrorString* \[ enuncia\]
+*ErrorString* \[ out\]
 </dt> <dd>
 
-Cuando este método devuelve un error, este parámetro contiene la descripción del error.
+Cuando este método devuelve un resultado, si se produjo un error, este parámetro contiene la descripción del error.
 
 </dd> <dt>
 
-*WarningString* \[ enuncia\]
+*WarningString* \[ out\]
 </dt> <dd>
 
-Cuando este método finaliza, este parámetro contiene cualquier mensaje de advertencia para la operación.
+Cuando este método devuelve un resultado, este parámetro contiene los mensajes de advertencia de la operación.
 
 </dd> <dt>
 
-*InfoString* \[ enuncia\]
+*InfoString* \[ out\]
 </dt> <dd>
 
-Cuando este método finaliza, este parámetro contiene información para la nueva configuración activa.
+Cuando este método devuelve un resultado, este parámetro contiene información para la nueva configuración activa.
 
 </dd> <dt>
 
-*ErrorType* \[ enuncia\]
+*ErrorType* \[ out\]
 </dt> <dd>
 
-Cuando este método devuelve un error, este parámetro indica el tipo de error.
+Cuando este método devuelve un resultado, si se produjo un error, este parámetro indica el tipo de error.
 
 <dt>
 
@@ -135,14 +135,14 @@ La nueva configuración no es válida.
 3
 </dt> <dd>
 
-Error producido por un socket abierto.
+Se produjo un error debido a un socket abierto.
 
 </dd> <dt>
 
 4
 </dt> <dd>
 
-Se produjo un error de escritura en el archivo.
+Se produjo un error de escritura de archivo.
 
 </dd> <dt>
 
@@ -181,10 +181,10 @@ Correcto
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                          |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                          |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                       |
-| Espacio de nombres<br/>                | Raíz de \\ Microsoft \\ Windows \\ BootEventCollector<br/>                                              |
-| MOF<br/>                      | <dl> <dt>BootEventCollectorWMI. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Raíz \\ de Microsoft Windows \\ \\ BootEventCollector<br/>                                              |
+| MOF<br/>                      | <dl> <dt>BootEventCollectorWMI.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>BEvtCol.exe</dt> </dl>               |
 
 

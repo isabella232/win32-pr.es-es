@@ -1,7 +1,7 @@
 ---
-description: La función GetBitmapSubtype devuelve el GUID del subtipo de medios para el mapa de bits especificado.
+description: La función GetBitmapSubtype devuelve el GUID del subtipo multimedia para el mapa de bits especificado.
 ms.assetid: 0af8a64b-8d3c-4308-9fd6-174864a1ca26
-title: Función GetBitmapSubtype (Wxutil. h)
+title: Función GetBitmapSubtype (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7ba12ffcd1b50b920f28e1969444a2d31a9d073d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8903e4a404367327b677a239b8ab28e3cb47e5679203857154f453a5cc01e25e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680213"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119536685"
 ---
-# <a name="getbitmapsubtype-function"></a>GetBitmapSubtype función)
+# <a name="getbitmapsubtype-function"></a>Función GetBitmapSubtype
 
-La `GetBitmapSubtype` función devuelve el **GUID** del subtipo de medios para el mapa de bits especificado.
+La `GetBitmapSubtype` función devuelve el GUID del subtipo de **medio** para el mapa de bits especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,19 +45,19 @@ const GUID GetBitmapSubtype(
 *pHeader* 
 </dt> <dd>
 
-Puntero a una estructura [**BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) .
+Puntero a una [**estructura BITMAPINFOHEADER.**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el **GUID** del subtipo de medio.
+Devuelve el GUID del subtipo **de medio**.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En el caso de los tipos RGB sin comprimir, esta función asigna el campo **biBitCount** al subtipo. En el caso de los tipos de vídeo comprimidos, esta función usa la clase [**FOURCCMap**](fourccmap.md) para asignar el campo de **bicompresión** al subtipo.
+Para los tipos RGB sin comprimir, esta función asigna **el campo biBitCount** al subtipo. Para los tipos de vídeo comprimidos, esta función usa la [**clase FOURCCMap**](fourccmap.md) para asignar el **campo biCompression** al subtipo.
 
-Si la función no puede coincidir con el formato de un subtipo, el valor devuelto es GUID \_ null.
+Si la función no puede hacer coincidir el formato con un subtipo, el valor devuelto es GUID \_ NULL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ Si la función no puede coincidir con el formato de un subtipo, el valor devuelt
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxutil. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxutil.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 

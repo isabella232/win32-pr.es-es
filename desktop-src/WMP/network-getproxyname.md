@@ -1,11 +1,11 @@
 ---
-title: Network. getProxyName (método)
-description: El método getProxyName recupera el nombre del servidor proxy que se está usando.
+title: Método Network.getProxyName
+description: El método getProxyName recupera el nombre del servidor proxy que se está utilizando.
 ms.assetid: 273b1f7d-84b7-4e50-9f80-9fd1978e7528
 keywords:
-- método getProxyName de Windows Media Player
-- método getProxyName Windows Media Player, clase de red
-- Clase de red Windows Media Player, método getProxyName
+- Método getProxyName Reproductor de Windows Media
+- Método getProxyName Reproductor de Windows Media , clase Network
+- Clase de red Reproductor de Windows Media , método getProxyName
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a97e51508e9df9aeac85dbc01116e80e710dcb45
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 43f40eb7eb695376768cd8168e1eb1d1916c8e84e6ede8ef93251df6097a15d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647455"
 ---
-# <a name="networkgetproxyname-method"></a>Network. getProxyName (método)
+# <a name="networkgetproxyname-method"></a>Método Network.getProxyName
 
-El método **getProxyName** recupera el nombre del servidor proxy que se está usando.
+El **método getProxyName** recupera el nombre del servidor proxy que se está utilizando.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,26 +42,26 @@ strRetVal = Network.getProxyName(
 
 <dl> <dt>
 
-*Protocolo* \[ de de\]
+*protocolo* \[ En\]
 </dt> <dd>
 
-**Cadena** que especifica el nombre del protocolo. Para obtener una lista de protocolos admitidos, consulte [protocolos y tipos de archivo admitidos](supported-protocols-and-file-types.md).
+**Cadena** que especifica el nombre del protocolo. Para obtener una lista de los protocolos admitidos, vea [Protocolos y tipos de archivo admitidos.](supported-protocols-and-file-types.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este método devuelve una **cadena** que contiene el nombre del servidor proxy que se está usando. El valor devuelto solo es significativo cuando **getProxySettings** devuelve un valor de 2 (use la configuración manual).
+Este método devuelve una **cadena que** contiene el nombre del servidor proxy que se está utilizando. El valor devuelto es significativo solo cuando **getProxySettings** devuelve un valor de 2 (use la configuración manual).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método produce un error a menos que la aplicación que realiza la llamada se ejecute en el equipo local o en la intranet.
+Este método produce un error a menos que la aplicación que realiza la llamada se ejecute en el equipo local o intranet.
 
-**Windows Media Player 10 Mobile:** Este método no se admite.
+**Reproductor de Windows Media 10 Mobile:** No se admite este método.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de JScript se usa *Network*. **getProxyName** para mostrar los nombres de servidor proxy de Windows Media Player para los protocolos http y MMS. El objeto **Player** se creó con ID = "Player".
+En el ejemplo JScript siguiente se usa *Network*. **getProxyName para** mostrar los nombres Reproductor de Windows Media servidor proxy para los protocolos HTTP y MMS. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -91,9 +91,9 @@ document.write("The current MMS proxy server name is: " + proxyNameMMS);
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -105,7 +105,7 @@ document.write("The current MMS proxy server name is: " + proxyNameMMS);
 [**Objeto de red**](network-object.md)
 </dt> <dt>
 
-[**Network. getProxySettings**](network-getproxysettings.md)
+[**Network.getProxySettings**](network-getproxysettings.md)
 </dt> </dl>
 
  
