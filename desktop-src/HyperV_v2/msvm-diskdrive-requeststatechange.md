@@ -1,5 +1,5 @@
 ---
-description: 'Método RequestStateChange de la Msvm_DiskDrive: solicita un cambio de estado.'
+description: 'Método RequestStateChange de la Msvm_DiskDrive clase : solicita un cambio de estado.'
 ms.assetid: 9dfa96b1-19d4-42ea-b927-80b0d63a9be1
 title: Método RequestStateChange de la Msvm_DiskDrive clase
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: ca2f9263d29a4412ab505e94268d0d18d28a60b6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b6702fefd72a51f1e593f4b775bc4de5e93aed368468557b1f9f9b8edac7fdab
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119431055"
 ---
 # <a name="requeststatechange-method-of-the-msvm_diskdrive-class"></a>Método RequestStateChange de la clase DiskDrive de Msvm \_
 
@@ -44,7 +44,7 @@ uint32 RequestStateChange(
 *RequestedState* \[ En\]
 </dt> <dd>
 
-Estado solicitado para el elemento. Esta información se colocará en la propiedad RequestedState de la instancia si el código de retorno del método RequestStateChange es 0 ('Completed with No Error') o 4096 (0x1000) ('Job Started'). Consulte la descripción de las propiedades EnabledState y RequestedState para obtener explicaciones detalladas de los valores requestedState.
+Estado solicitado para el elemento. Esta información se colocará en la propiedad RequestedState de la instancia si el código devuelto del método RequestStateChange es 0 ('Completed with No Error') o 4096 (0x1000) ('Job Started'). Consulte la descripción de las propiedades EnabledState y RequestedState para obtener explicaciones detalladas de los valores RequestedState.
 
 <dt>
 
@@ -106,7 +106,7 @@ Estado solicitado para el elemento. Esta información se colocará en la propied
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-**Restablecer** (11)
+**Restablecimiento** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -135,9 +135,9 @@ Puede contener una referencia a la instancia de ConcreteJob creada para realizar
 *TimeoutPeriod* \[ En\]
 </dt> <dd>
 
-Período de tiempo de espera que especifica la cantidad máxima de tiempo que el cliente espera que se lleve la transición al nuevo estado. El formato de intervalo debe usarse para especificar timeoutPeriod. Un valor de 0 o un parámetro null indica que el cliente no tiene ningún requisito de tiempo para la transición.
+Período de tiempo de espera que especifica la cantidad máxima de tiempo que el cliente espera que se lleve la transición al nuevo estado. El formato de intervalo debe usarse para especificar TimeoutPeriod. Un valor de 0 o un parámetro null indica que el cliente no tiene ningún requisito de tiempo para la transición.
 
-Si esta propiedad no contiene 0 o NULL y la implementación no admite este parámetro, se devolverá un código de retorno "Use Of Timeout Parameter Not Supported" (No se admite el parámetro de tiempo de espera).
+Si esta propiedad no contiene 0 o NULL y la implementación no admite este parámetro, se devolverá un código de retorno "Use Of Timeout Parameter Not Supported" (No se admite el uso del parámetro de tiempo de espera).
 
 </dd> </dl>
 
@@ -157,7 +157,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -167,7 +167,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

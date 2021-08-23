@@ -1,12 +1,12 @@
 ---
-title: Método Update de la clase Win32_TSGatewayResourceGroup
+title: Método Update de la Win32_TSGatewayResourceGroup clase
 description: Actualiza el grupo de recursos.
 ms.assetid: b5927046-f461-41cd-861b-0fd77f2008e5
 ms.tgt_platform: multiple
 keywords:
-- Método Update Servicios de Escritorio remoto
-- Método Update Servicios de Escritorio remoto, clase Win32_TSGatewayResourceGroup
-- Servicios de Escritorio remoto de clase Win32_TSGatewayResourceGroup, método Update
+- Actualización del método Servicios de Escritorio remoto
+- Método Update Servicios de Escritorio remoto , Win32_TSGatewayResourceGroup clase
+- Win32_TSGatewayResourceGroup clase Servicios de Escritorio remoto método , Update
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a7b1610fc14aa522fa4d8b7caf03fccd7b37375
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e0c2f32e7f0c06f67ad0d32a7754c701097320564c5c01de3c348b9935b8b702
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422363"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119423915"
 ---
-# <a name="update-method-of-the-win32_tsgatewayresourcegroup-class"></a>Método Update de la \_ clase Win32 TSGatewayResourceGroup
+# <a name="update-method-of-the-win32_tsgatewayresourcegroup-class"></a>Método Update de la clase \_ TSGatewayResourceGroup de Win32
 
 Actualiza el grupo de recursos.
 
@@ -45,38 +45,38 @@ uint32 Update(
 
 <dl> <dt>
 
-*Nombre* \[ de de\]
+*Nombre* \[ En\]
 </dt> <dd>
 
 Nombre del grupo de recursos.
 
 </dd> <dt>
 
-*Descripción* \[ de de\]
+*Descripción* \[ En\]
 </dt> <dd>
 
 Descripción del grupo de recursos.
 
 </dd> <dt>
 
-*Recursos* \[ de de\]
+*Recursos* \[ En\]
 </dt> <dd>
 
-Lista de recursos separados por punto y coma en este grupo de recursos. Un " \* " hace referencia a todos los recursos.
+Lista separada por punto y coma de los recursos de este grupo de recursos. "" \* significa todos los recursos.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, vea [servicios de escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
+Si el método se realiza correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI.](terminal-services-wmi-provider-error-codes.md)
 
 ## <a name="remarks"></a>Observaciones
 
-Si hay varios recursos en el parámetro de *recursos* y no se puede procesar uno de los recursos, no se procesará ninguno de los recursos.
+Si hay varios recursos en el *parámetro Resources* y uno de los recursos no se puede procesar, no se procesará ninguno de los recursos.
 
-Para llamar a este método, debe ser miembro del grupo administradores.
+Debe ser miembro del grupo Administradores para llamar a este método.
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -86,8 +86,8 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TSGateway. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
@@ -96,7 +96,7 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 
 <dl> <dt>
 
-[**Win32 \_ TSGatewayResourceGroup**](win32-tsgatewayresourcegroup.md)
+[**TSGatewayResourceGroup de Win32 \_**](win32-tsgatewayresourcegroup.md)
 </dt> </dl>
 
  

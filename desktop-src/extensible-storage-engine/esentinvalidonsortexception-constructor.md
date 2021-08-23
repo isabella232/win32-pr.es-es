@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentInvalidOnSortException'
-title: Constructor de EsentInvalidOnSortException
+description: 'Más información sobre: Constructor EsentInvalidOnSortException'
+title: Constructor EsentInvalidOnSortException
 TOCTitle: 'EsentInvalidOnSortException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentInvalidOnSortException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentinvalidonsortexception.esentinvalidonsortexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ee2d98dd135348bf990e725cfc94920ada740f81
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8267deaa4d13b3768690a73f24bd13b0b2b9ccb7c2152039ec1493f1511829de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105717271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119041043"
 ---
-# <a name="esentinvalidonsortexception-constructor"></a>Constructor de EsentInvalidOnSortException
+# <a name="esentinvalidonsortexception-constructor"></a>Constructor EsentInvalidOnSortException
 
 Inicializa una nueva instancia de la clase EsentInvalidOnSortException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentInvalidOnSortException()
 public EsentInvalidOnSortException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentInvalidOnSortException()
 
 [Miembros de EsentInvalidOnSortException](./esentinvalidonsortexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

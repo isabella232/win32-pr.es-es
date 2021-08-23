@@ -1,9 +1,9 @@
 ---
-title: Mensaje de LB_ADDFILE (Winuser. h)
+title: LB_ADDFILE mensaje (Winuser.h)
 description: Agrega el nombre de archivo especificado a un cuadro de lista que contiene una lista de directorios.
 ms.assetid: 60426293-779b-4a4b-95a2-4901b5f6a13b
 keywords:
-- LB_ADDFILE controles de mensajes de Windows
+- LB_ADDFILE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 18b3d66c6a6c8495c67df2078370911ca9cd31df
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8077bda3015fef36d6383f37f272ddaf25469fcb6930bb38bd0fa8122efc5b55
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119434485"
 ---
-# <a name="lb_addfile-message"></a>Mensaje de LB \_ ADDFILE
+# <a name="lb_addfile-message"></a>Mensaje \_ ADDFILE de LB
 
 Agrega el nombre de archivo especificado a un cuadro de lista que contiene una lista de directorios.
 
@@ -39,21 +39,21 @@ Este parámetro no se utiliza.
 *lParam* 
 </dt> <dd>
 
-Un puntero a un búfer que especifica el nombre del archivo que se va a agregar.
+Puntero a un búfer que especifica el nombre del archivo que se agregará.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es el índice de base cero del archivo que se agregó, o LB \_ Err si se produce un error.
+El valor devuelto es el índice de base cero del archivo que se agregó o \_ LB ERR si se produce un error.
 
 ## <a name="remarks"></a>Observaciones
 
-La función [**DlgDirList**](/windows/desktop/api/Winuser/nf-winuser-dlgdirlista) debe haber rellenado el cuadro de lista al que se agrega *lParam* .
+La función [**DlgDirList**](/windows/desktop/api/Winuser/nf-winuser-dlgdirlista) debe haber rellenado el cuadro de lista al que se agrega *lParam.*
 
-El mensaje [**lb \_ INITSTORAGE**](lb-initstorage.md) ayuda a acelerar la inicialización de cuadros de lista que tienen un gran número de elementos (más de 100). Reserva la cantidad de memoria especificada para que los mensajes de la **lb \_** de la carga posterior tarden el menor tiempo posible. Puede usar estimaciones para los parámetros *wParam* e *lParam* . Si sobrestima, se asigna la memoria adicional; Si se subestima, se usa la asignación normal para los elementos que superan la cantidad solicitada.
+El [**mensaje \_ LB INITSTORAGE**](lb-initstorage.md) ayuda a acelerar la inicialización de cuadros de lista que tienen un gran número de elementos (más de 100). Reserva la cantidad de memoria especificada para que los mensajes **\_ LB ADDFILE** subsiguientes tarden el menor tiempo posible. Puede usar estimaciones para los *parámetros wParam* *y lParam.* Si sobreestima, se asigna la memoria adicional; Si se infravalora, la asignación normal se usa para los elementos que superan la cantidad solicitada.
 
-En el caso de una aplicación ANSI, el sistema convierte el texto de un cuadro de lista en Unicode mediante CP \_ ACP. Esto puede causar problemas. Por ejemplo, los caracteres romanos acentuados en un cuadro de lista no Unicode en las ventanas japonesas se desactivarán. Para solucionar este error, compile la aplicación como Unicode o use un cuadro de lista dibujado por el propietario.
+Para una aplicación ANSI, el sistema convierte el texto de un cuadro de lista en Unicode mediante CP \_ ACP. Esto puede causar problemas. Por ejemplo, los caracteres latinos acentuados en un cuadro de lista no Unicode en Windows japonés aparecerán desconsolados. Para solucionar este problema, compile la aplicación como Unicode o use un cuadro de lista dibujado por el propietario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,9 +61,9 @@ En el caso de una aplicación ANSI, el sistema convierte el texto de un cuadro d
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

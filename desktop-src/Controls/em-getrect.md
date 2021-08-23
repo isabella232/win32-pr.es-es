@@ -1,9 +1,9 @@
 ---
-title: Mensaje de EM_GETRECT (Winuser. h)
+title: EM_GETRECT mensaje (Winuser.h)
 description: Obtiene el rectángulo de formato de un control de edición.
 ms.assetid: eef0150d-9b7a-4247-acbf-6fea2efd1dc3
 keywords:
-- EM_GETRECT controles de mensajes de Windows
+- EM_GETRECT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a8192fd4c3aa7fbe953a36217f6b1408f055d8d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f1d4ad7dbab40a8d294d814e3524b54c5b11206c91608e9293bdf88df2a63f23
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905311"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119541045"
 ---
-# <a name="em_getrect-message"></a>\_Mensaje GETRECT em
+# <a name="em_getrect-message"></a>Mensaje \_ EM GETRECT
 
-Obtiene el [rectángulo de formato](about-edit-controls.md) de un control de edición. El rectángulo de formato es el rectángulo de limitación en el que el control dibuja el texto. El rectángulo de limitación es independiente del tamaño de la ventana de control de edición. Puede enviar este mensaje a un control de edición o a un control Rich Edit.
+Obtiene el [rectángulo de formato](about-edit-controls.md) de un control de edición. El rectángulo de formato es el rectángulo delimitador en el que el control dibuja el texto. El rectángulo de limitación es independiente del tamaño de la ventana de control de edición. Puede enviar este mensaje a un control de edición o a un control de edición enriquecido.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -39,7 +39,7 @@ Este parámetro no se utiliza.
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**Rect**](/previous-versions//dd162897(v=vs.85)) que recibe el rectángulo de formato.
+Puntero a una [**estructura RECT**](/previous-versions//dd162897(v=vs.85)) que recibe el rectángulo de formato.
 
 </dd> </dl>
 
@@ -47,23 +47,23 @@ Puntero a una estructura [**Rect**](/previous-versions//dd162897(v=vs.85)) que r
 
 El valor devuelto no es significativo.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Puede modificar el rectángulo de formato de un control de edición multilínea mediante los mensajes [**em \_ SETRECT**](em-setrect.md) y [**em \_ SETRECTNP**](em-setrectnp.md) .
+Puede modificar el rectángulo de formato de un control de edición multilínea mediante los mensajes [**EM \_ SETRECT**](em-setrect.md) y [**EM \_ SETRECTNP.**](em-setrectnp.md)
 
-En determinadas condiciones, es posible que **em \_ GETRECT** no devuelva los valores exactos que [**em \_ SETRECT**](em-setrect.md) o [**em \_ SETRECTNP**](em-setrectnp.md) set será aproximadamente correcto, pero puede estar desactivado en unos pocos píxeles.
+En determinadas condiciones, **EM \_ GETRECT** podría no devolver los valores exactos que [**EM \_ SETRECT**](em-setrect.md) o [**EM \_ SETRECTNP**](em-setrectnp.md) establecen que será aproximadamente correcto, pero puede estar desactivado en unos pocos píxeles.
 
-**Edición enriquecida:** Compatible con Microsoft Rich Edit 1,0 y versiones posteriores. El rectángulo de formato no incluye la barra de selección, que es un área no marcada a la izquierda de cada párrafo. Al hacer clic en ella, la barra de selección selecciona la línea. Para obtener información sobre la compatibilidad de las versiones de edición enriquecidas con las distintas versiones del sistema, vea acerca de los [controles Rich Edit](about-rich-edit-controls.md).
+**Edición enriqueceda:** Compatible con Microsoft Rich Edit 1.0 y versiones posteriores. El rectángulo de formato no incluye la barra de selección, que es un área sin marca a la izquierda de cada párrafo. Cuando se hace clic en ella, la barra de selección selecciona la línea. Para obtener información sobre la compatibilidad de las versiones de edición enriquecciones con las distintas versiones del sistema, vea [About Rich Edit Controls](about-rich-edit-controls.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -74,16 +74,16 @@ En determinadas condiciones, es posible que **em \_ GETRECT** no devuelva los va
 **Referencia**
 </dt> <dt>
 
-[**\_SETRECT em**](em-setrect.md)
+[**EM \_ SETRECT**](em-setrect.md)
 </dt> <dt>
 
-[**\_SETRECTNP em**](em-setrectnp.md)
+[**EM \_ SETRECTNP**](em-setrectnp.md)
 </dt> <dt>
 
 **Otros recursos**
 </dt> <dt>
 
-[**RECT**](/previous-versions//dd162897(v=vs.85))
+[**Rect**](/previous-versions//dd162897(v=vs.85))
 </dt> </dl>
 
  

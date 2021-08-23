@@ -1,23 +1,23 @@
 ---
-description: En este tema se enumeran las tablas de frecuencia usadas para la optimización de TV analógica para Suiza.
+description: En este tema se enumeran las tablas de frecuencia usadas para la optimización de televisión análoga para Suiza.
 ms.assetid: 67f7b6f0-9dd5-49de-b29c-e2a7343aaf73
-title: Asignaciones de canal de Suiza
+title: Asignaciones de canales de Suiza
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 103a43c8e2ddf0e084f31dbfac1bb126988317ff
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5005d1194e835882abe82d2024d28b60f134f2061bd8210b15362274dffe4c6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678411"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119072349"
 ---
-# <a name="switzerland-channel-assignments"></a>Asignaciones de canal de Suiza
+# <a name="switzerland-channel-assignments"></a>Asignaciones de canales de Suiza
 
-En este tema se enumeran las tablas de frecuencia usadas para la optimización de TV analógica para Suiza.
+En este tema se enumeran las tablas de frecuencia usadas para la optimización de televisión análoga para Suiza.
 
-Para obtener una explicación de las tablas siguientes, vea [tablas y asignaciones](tables-and-assignments.md).
+Para obtener una explicación de las tablas siguientes, vea [Tablas y asignaciones.](tables-and-assignments.md)
 
-Las siguientes asignaciones de canal se introdujeron en Windows 7. Anteriormente, se usaba la [tabla de frecuencias Unicable](unicable-frequency-table.md) .
+Las siguientes asignaciones de canales se introdujeron en Windows 7. Anteriormente, se [usaba la tabla de frecuencias unicables.](unicable-frequency-table.md)
 
 ## <a name="cable-assignments"></a>Asignaciones de cable
 
@@ -177,7 +177,7 @@ Las siguientes asignaciones de canal se introdujeron en Windows 7. Anteriormente
 
 <dl> <dt>
 
-[Ajuste de TV analógica internacional](international-analog-tv-tuning.md)
+[Ajuste de televisión análoga internacional](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

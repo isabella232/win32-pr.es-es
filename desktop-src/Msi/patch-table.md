@@ -1,21 +1,21 @@
 ---
-description: La tabla patch especifica el archivo que va a recibir una revisión determinada y la ubicación física de los archivos de revisión en las imágenes multimedia.
+description: La tabla Patch especifica el archivo que va a recibir una revisión determinada y la ubicación física de los archivos de revisión en las imágenes multimedia.
 ms.assetid: 1b624702-de25-4b1a-9dac-21f359ee97f7
-title: Tabla de revisión
+title: Tabla de revisiones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 061b2082f88a8c7c3967652900bb6bf6e1c29802
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a9e5f41f206557589bf0b90d9ffb125a80d05d39ce809dc01a8e687a21045475
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103818558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119558465"
 ---
-# <a name="patch-table"></a>Tabla de revisión
+# <a name="patch-table"></a>Tabla de revisiones
 
-La tabla patch especifica el archivo que va a recibir una revisión determinada y la ubicación física de los archivos de revisión en las imágenes multimedia.
+La tabla Patch especifica el archivo que va a recibir una revisión determinada y la ubicación física de los archivos de revisión en las imágenes multimedia.
 
-La tabla patch tiene las columnas siguientes.
+La tabla Patch tiene las columnas siguientes.
 
 
 
@@ -25,7 +25,7 @@ La tabla patch tiene las columnas siguientes.
 | Secuencia    | [Entero](integer.md)             | Y   | N        |
 | PatchSize   | [DoubleInteger](doubleinteger.md) | N   | N        |
 | Atributos  | [Entero](integer.md)             | N   | N        |
-| Encabezado      | [Binario](binary.md)               | N   | Y        |
+| Header      | [Binario](binary.md)               | N   | Y        |
 | StreamRef\_ | [Identificador](identifier.md)       | N   | Y        |
 
 
@@ -36,17 +36,17 @@ La tabla patch tiene las columnas siguientes.
 
 <dl> <dt>
 
-<span id="File_"></span><span id="file_"></span><span id="FILE_"></span>Filesystem\_
+<span id="File_"></span><span id="file_"></span><span id="FILE_"></span>Archivo\_
 </dt> <dd>
 
-La revisión se aplica al archivo especificado por el identificador en esta columna. Se trata de una clave principal para la tabla y es una clave externa de la [tabla de archivos](file-table.md).
+La revisión se aplica al archivo especificado por el identificador de esta columna. Se trata de una clave principal para la tabla y es una clave externa para la [tabla File](file-table.md).
 
 </dd> <dt>
 
-<span id="Sequence"></span><span id="sequence"></span><span id="SEQUENCE"></span>SPRJ
+<span id="Sequence"></span><span id="sequence"></span><span id="SEQUENCE"></span>Secuencia
 </dt> <dd>
 
-Esta es la posición del archivo de revisión en el orden de secuencia de archivos en las imágenes multimedia. El orden de secuencia debe corresponder al orden de los archivos en el archivo contenedor del paquete de revisión. Esta es una clave principal de esta tabla. El límite máximo es de 32767 archivos, para crear un paquete de Windows Installer con más archivos, consulte crear [un paquete de gran tamaño](authoring-a-large-package.md).
+Esta es la posición del archivo de revisión en el orden de secuencia de los archivos en las imágenes multimedia. El orden de secuencia debe corresponder al orden de los archivos del archivo de archivador del paquete de revisión. Se trata de una clave principal para esta tabla. El límite máximo es de 32767 archivos. Para crear un paquete de Windows Installer con más archivos, consulte Creación de [un paquete grande.](authoring-a-large-package.md)
 
 </dd> <dt>
 
@@ -57,17 +57,17 @@ Esta columna proporciona el tamaño de la revisión en bytes escritos como un en
 
 </dd> <dt>
 
-<span id="Attributes"></span><span id="attributes"></span><span id="ATTRIBUTES"></span>Sus
+<span id="Attributes"></span><span id="attributes"></span><span id="ATTRIBUTES"></span>Atributos
 </dt> <dd>
 
-Entero que contiene los marcadores de bits que representan los atributos de la revisión. Inserte un valor de 1 en esta columna para indicar que no se ha producido un error grave al aplicar esta revisión.
+Entero que contiene marcas de bits que representan atributos de revisión. Inserte un valor de 1 en esta columna para indicar que el error al aplicar esta revisión no es un error irresal.
 
 
 
 | Constante                         | Hexadecimal | Decimal | Descripción                                                          |
 |----------------------------------|-------------|---------|----------------------------------------------------------------------|
-| (ninguno)                           | 0x000       | 0       | Un error grave no se pudo aplicar a esta revisión.                        |
-| **msidbPatchAttributesNonVital** | 0x001       | 1       | Indica que no se ha producido un error grave al aplicar esta revisión. |
+| (ninguno)                           | 0x000       | 0       | Si no se aplica esta revisión, es un error irresal.                        |
+| **msidbPatchAttributesNonVital** | 0x001       | 1       | Indica que el error al aplicar esta revisión no es un error grave. |
 
 
 
@@ -75,23 +75,23 @@ Entero que contiene los marcadores de bits que representan los atributos de la r
 
 </dd> <dt>
 
-<span id="Header"></span><span id="header"></span><span id="HEADER"></span>Encabezado
+<span id="Header"></span><span id="header"></span><span id="HEADER"></span>Rúbrica
 </dt> <dd>
 
-Esta columna es el encabezado de revisión de la secuencia binaria que se utiliza para la validación de revisiones. Esta columna debe ser null si la \_ columna StreamRef no es NULL. En este caso, la secuencia de encabezado Patch se almacena en la [tabla MsiPatchHeaders](msipatchheaders-table.md) para superar la limitación de nombre de flujo descrita en [limitaciones OLE en las secuencias](ole-limitations-on-streams.md).
+Esta columna es el encabezado de revisión de flujo binario usado para la validación de revisiones. Esta columna debe ser NULL si la columna StreamRef \_ no es NULL. En este caso, la secuencia de encabezado de revisión se almacena en la tabla [MsiPatchHeaders](msipatchheaders-table.md) para superar la limitación de nombre de flujo descrita en [Limitaciones](ole-limitations-on-streams.md)ole Secuencias .
 
 </dd> <dt>
 
 <span id="StreamRef_"></span><span id="streamref_"></span><span id="STREAMREF_"></span>StreamRef\_
 </dt> <dd>
 
-Clave externa en la tabla MsiPatchHeaders que especifica la fila que contiene la secuencia de encabezado patch.
+Clave externa en la tabla MsiPatchHeaders que especifica la fila que contiene el flujo de encabezado de revisión.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La [acción PatchFiles](patchfiles-action.md)procesa esta tabla. Normalmente se agrega al paquete de instalación mediante una transformación de un paquete de revisión. Normalmente no se crea directamente en un paquete de instalación.
+Esta tabla se procesa mediante la [acción PatchFiles](patchfiles-action.md). Normalmente se agrega al paquete de instalación mediante una transformación de un paquete de revisión. Normalmente no se ha escrito directamente en un paquete de instalación.
 
 ## <a name="validation"></a>Validación
 

@@ -1,11 +1,11 @@
 ---
-title: Método INapServerInfo GetFailureCategoryMappings (NapServerManagement. h)
-description: Recupera las asignaciones de categorías de error para un SHA o SHV especificado.
+title: Método INapServerInfo GetFailureCategoryMappings (NapServerManagement.h)
+description: Recupera las asignaciones de categoría de error para un SHA o SHV especificado.
 ms.assetid: 89b89003-40b3-4763-aec8-01cd0c307649
 keywords:
-- Método GetFailureCategoryMappings NAP
-- Método GetFailureCategoryMappings NAP, interfaz INapServerInfo
-- Interfaz INapServerInfo NAP, método GetFailureCategoryMappings
+- Método NAP getFailureCategoryMappings
+- Método NAP de GetFailureCategoryMappings, interfaz INapServerInfo
+- Nap de interfaz INapServerInfo, método GetFailureCategoryMappings
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a7ba830dd8a35a2c60b14c4feec14846125223e5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 13fcd87105eace269d3b8f395392c8a0ba275a135c212863ef69e45e597eb752
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104493234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144388"
 ---
-# <a name="inapserverinfogetfailurecategorymappings-method"></a>INapServerInfo:: GetFailureCategoryMappings (método)
+# <a name="inapserverinfogetfailurecategorymappings-method"></a>Método INapServerInfo::GetFailureCategoryMappings
 
 > [!Note]  
 > La plataforma de protección de acceso a redes no está disponible a partir de Windows 10
 
  
 
-El método **INapServerInfo:: GetFailureCategoryMappings** recupera las asignaciones de categorías de error para un Sha o SHV especificado.
+El **método INapServerInfo::GetFailureCategoryMappings** recupera las asignaciones de categoría de error para un SHA o SHV especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,17 +48,17 @@ HRESULT GetFailureCategoryMappings(
 
 <dl> <dt>
 
-*ID.* \[ en\]
+*id* \[ en\]
 </dt> <dd>
 
-[**SystemHealthEntityId**](nap-type-constants.md) que contiene el identificador único de la Sha o el SHV.
+[**SystemHealthEntityId que**](nap-type-constants.md) contiene el identificador único de SHA o SHV.
 
 </dd> <dt>
 
-*asignación* \[ de enuncia\]
+*asignación* \[ out\]
 </dt> <dd>
 
-Un puntero a un [**FailureCategoryMapping**](/windows/win32/api/naptypes/ns-naptypes-failurecategorymapping) que contiene los datos de asignación.
+Puntero a un [**elemento FailureCategoryMapping**](/windows/win32/api/naptypes/ns-naptypes-failurecategorymapping) que contiene los datos de asignación.
 
 </dd> </dl>
 
@@ -70,9 +70,9 @@ También se pueden devolver otros códigos de error específicos de COM.
 
 | Código devuelto                                                                                     | Descripción                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <dl> <dt>**S \_ Aceptar**</dt> </dl>           | Operación realizada correctamente.<br/>                                    |
+| <dl> <dt>**S \_ Ok (Aceptar)**</dt> </dl>           | Operación realizada correctamente.<br/>                                    |
 | <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Error de permisos, acceso denegado.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Límite de recursos del sistema, no se pudo realizar la operación.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | El límite de recursos del sistema no pudo realizar la operación.<br/> |
 
 
 
@@ -85,9 +85,9 @@ También se pueden devolver otros códigos de error específicos de COM.
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                               |
-| Encabezado<br/>                   | <dl> <dt>NapServerManagement. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapServerManagement. idl</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                               |
+| Header<br/>                   | <dl> <dt>NapServerManagement.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapServerManagement.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qsvrmgmt.dll</dt> </dl>            |
 
 

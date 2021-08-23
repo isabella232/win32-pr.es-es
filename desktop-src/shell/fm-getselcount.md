@@ -1,5 +1,5 @@
 ---
-description: Enviado por una extensión del Administrador de archivos para recuperar un recuento de los archivos seleccionados en la ventana activa del Administrador de archivos (ya sea la ventana de directorio o la ventana Resultados de la búsqueda).
+description: Enviado por una extensión del Administrador de archivos para recuperar un recuento de los archivos seleccionados en la ventana activa del Administrador de archivos (la ventana de directorio o la ventana Resultados de la búsqueda).
 title: FM_GETSELCOUNT mensaje (Wfext.h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 0d43bf37-863c-45cc-94ea-5b2aedba5353
-ms.openlocfilehash: 727e098a98ecfe4a4349ebcf9c6f931a8579b70d
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: e309b274567ba8d7732e8db0a80bea3a001da34bd076d80c307736c4355672f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842376"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119094170"
 ---
 # <a name="fm_getselcount-message"></a>Mensaje \_ DE FM GETSELCOUNT
 
-Enviado por una extensión del Administrador de archivos para recuperar un recuento de los archivos seleccionados en la ventana activa del Administrador de archivos (ya sea la ventana de directorio o la ventana Resultados de la búsqueda).
+Enviado por una extensión del Administrador de archivos para recuperar un recuento de los archivos seleccionados en la ventana activa del Administrador de archivos (la ventana de directorio o la ventana Resultados de la búsqueda).
 
 ## <a name="parameters"></a>Parámetros
 
@@ -50,7 +50,7 @@ Devuelve el número de archivos seleccionados.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

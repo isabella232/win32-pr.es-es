@@ -1,10 +1,10 @@
 ---
-title: MPNIS_PRIVATE_DATA estructura (MpClient. h)
-description: Notificaciones NIS privadas.
+title: MPNIS_PRIVATE_DATA estructura (MpClient.h)
+description: Notificaciones privadas de NIS.
 ms.assetid: 19B4928F-BC78-4DEA-A563-1516B6454465
 keywords:
-- MPNIS_PRIVATE_DATA estructura de las características heredadas del entorno de Windows
-- Puntero de estructura de PMPNIS_PRIVATE_DATA características de entorno heredado de Windows
+- MPNIS_PRIVATE_DATA estructura heredada de Windows environment
+- PMPNIS_PRIVATE_DATA puntero de estructura Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 21340665a32b619c42d7909e8cd1b72ca6d09fb7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a50719e4ecc0beff848467023a1c5f941ff06ceb891b05674e199d47a38b8659
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119556145"
 ---
-# <a name="mpnis_private_data-structure"></a>MPNIS \_ \_ estructura de datos privada
+# <a name="mpnis_private_data-structure"></a>Estructura DE \_ DATOS PRIVADOS DE MPZON \_
 
-Notificaciones NIS privadas.
+Notificaciones privadas de NIS.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -68,11 +68,11 @@ Tamaño de los datos reservados, en bytes.
 **pbData**
 </dt> <dd>
 
-Tipo: **byte \***
+Tipo: **\* BYTE**
 
 </dd> <dd>
 
-Puntero a los datos reservados.
+Puntero a datos reservados.
 
 </dd> </dl>
 
@@ -80,11 +80,11 @@ Puntero a los datos reservados.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

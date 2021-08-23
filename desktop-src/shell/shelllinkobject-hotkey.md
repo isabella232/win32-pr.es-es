@@ -1,7 +1,7 @@
 ---
 description: Obtiene o establece el método abreviado de teclado para el vínculo.
 ms.assetid: edc65fe8-c7f3-46d0-86ca-1c0c93e7ca64
-title: Propiedad ShellLinkObject. Hotkey (Shldisp. h)
+title: Propiedad ShellLinkObject.Hotkey (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,20 +13,20 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 23ab8615421eee7289e5f0bb58582bf8e0d48f17
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5b741b40d0947119109d3496a214ccdd75c59272fd7c5f4d0eac569a5b24c3a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104985958"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119591905"
 ---
-# <a name="shelllinkobjecthotkey-property"></a>Propiedad ShellLinkObject. Hotkey
+# <a name="shelllinkobjecthotkey-property"></a>Propiedad ShellLinkObject.Hotkey
 
 Obtiene o establece el método abreviado de teclado para el vínculo.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```JScript
@@ -38,7 +38,7 @@ ShellLinkObject.Hotkey(iHotkey) = iHotkey
 
 ## <a name="property-value"></a>Valor de propiedad
 
-método abreviado de teclado del vínculo. El método abreviado de teclado virtual está en bytes de orden inferior, y los marcadores modificadores se encuentran en el byte de orden superior. Las marcas modificadoras pueden ser una combinación de los valores siguientes.
+Método abreviado de teclado del vínculo. El método abreviado de teclado virtual está en el byte de orden bajo y las marcas modificadoras están en el byte de orden superior. Las marcas modificadoras pueden ser una combinación de los valores siguientes.
 
 <dt>
 
@@ -49,7 +49,7 @@ método abreviado de teclado del vínculo. El método abreviado de teclado virtu
 
 </dt> <dd>
 
-Tecla Mayús
+Tecla MAYÚS
 
 </dd> <dt>
 
@@ -88,9 +88,9 @@ Clave extendida
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso correcto de esta propiedad en JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se muestra el uso adecuado de esta propiedad en JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -131,7 +131,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -218,13 +218,13 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo para aplicaciones de escritorio de Windows 2000 Professional con SP3 \[\]<br/>                                           |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional solo con aplicaciones de escritorio sp3 \[\]<br/>                                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 

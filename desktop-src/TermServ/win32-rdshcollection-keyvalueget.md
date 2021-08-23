@@ -1,12 +1,12 @@
 ---
-title: Método KeyValueGet de la clase Win32_RDSHCollection
-description: Recupera el valor asociado a la clave especificada de la colección.
+title: Método KeyValueGet de la clase Win32_RDSHCollection clave
+description: Recupera el valor asociado a la clave especificada en la colección.
 ms.assetid: 69d309a4-b32e-4dbc-bd28-be79d395ac26
 ms.tgt_platform: multiple
 keywords:
 - Método KeyValueGet Servicios de Escritorio remoto
-- Método KeyValueGet Servicios de Escritorio remoto, clase Win32_RDSHCollection
-- Win32_RDSHCollection de clase Servicios de Escritorio remoto, método KeyValueGet
+- Método KeyValueGet Servicios de Escritorio remoto , Win32_RDSHCollection clase
+- Win32_RDSHCollection clase Servicios de Escritorio remoto método , KeyValueGet
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5304cca379106094d4d00b9a0b5506c8df7075a1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 943db8db044758e7f78e7d79b4ae5280c6ce51281b5858237a24e5f83add33a4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119422685"
 ---
-# <a name="keyvalueget-method-of-the-win32_rdshcollection-class"></a>Método KeyValueGet de la \_ clase RDSHCollection de Win32
+# <a name="keyvalueget-method-of-the-win32_rdshcollection-class"></a>Método KeyValueGet de la clase RDSHCollection win32 \_
 
-Recupera el valor asociado a la clave especificada de la colección.
+Recupera el valor asociado a la clave especificada en la colección.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,14 +44,14 @@ uint32 KeyValueGet(
 
 <dl> <dt>
 
-*Clave* \[ de de\]
+*Clave* \[ En\]
 </dt> <dd>
 
-Clave que identifica el valor que se desea recuperar.
+Clave que identifica el valor que desea recuperar.
 
 </dd> <dt>
 
-*Valor* \[ de enuncia\]
+*Valor* \[ out\]
 </dt> <dd>
 
 Si se ejecuta correctamente, devuelve el valor asociado a la clave especificada.
@@ -66,8 +66,8 @@ Si se ejecuta correctamente, devuelve el valor asociado a la clave especificada.
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                              |
-| Espacio de nombres<br/>                | RDMs raíz de \\ cimv2 \\<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Rdms \\ cimv2 \\ raíz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -76,7 +76,7 @@ Si se ejecuta correctamente, devuelve el valor asociado a la clave especificada.
 
 <dl> <dt>
 
-[**Win32 \_ RDSHCollection**](win32-rdshcollection.md)
+[**RDSHCollection de Win32 \_**](win32-rdshcollection.md)
 </dt> </dl>
 
  

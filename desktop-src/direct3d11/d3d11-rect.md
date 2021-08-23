@@ -1,6 +1,6 @@
 ---
-title: D3D11_RECT (D3D11. h)
-description: D3D11 \_ Rect se declara como sigue
+title: D3D11_RECT (D3D11.h)
+description: D3D11 \_ RECT se declara como sigue
 ms.assetid: d1cbbbd7-1221-4706-b805-8422c5ebdadc
 keywords:
 - D3D11_RECT Direct3D 11
@@ -15,26 +15,26 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f7fac5627c74123c977aac379826d5264d767ba6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ec65cc8c14cd1c659a9ed9634c124ea0d5355c35e4eb56221e28112f5ac1b1ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103914802"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119378365"
 ---
-# <a name="d3d11_rect"></a>D3D11 \_ Rect
+# <a name="d3d11_rect"></a>D3D11 \_ RECT
 
-D3D11 \_ Rect se declara como sigue:
+D3D11 \_ RECT se declara de la siguiente manera:
 
 ``` syntax
 typedef RECT D3D11_RECT;
 ```
 
-Para obtener más información sobre esta estructura de rectángulos GDI, vea [**Rect**](/previous-versions//dd162897(v=vs.85)).
+Para obtener más información sobre esta estructura de rectánguloS GDI, vea [**RECT**](/previous-versions//dd162897(v=vs.85)).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta estructura se usa para rectángulos con tijeras por [**ID3D11DeviceContext:: RSGetScissorRects**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-rsgetscissorrects) y [**ID3D11DeviceContext:: RSSetScissorRects**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-rssetscissorrects).
+[**Id3D11DeviceContext::RSGetScissorRects**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-rsgetscissorrects) usa esta estructura para rectángulos de rectángulos. [](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-rssetscissorrects)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -42,12 +42,12 @@ Esta estructura se usa para rectángulos con tijeras por [**ID3D11DeviceContext:
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3D11. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3D11. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3D11.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3D11.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

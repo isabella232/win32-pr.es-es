@@ -1,7 +1,7 @@
 ---
-description: Aplica una colección de instantáneas a la colección de sistemas del equipo virtual.
+description: Aplica una colección de instantáneas a la colección del sistema de equipo virtual.
 ms.assetid: c76c552a-ae07-4dab-a938-740d77447a53
-title: Método ApplySnapshot de la clase Msvm_CollectionSnapshotService
+title: Método ApplySnapshot de la clase Msvm_CollectionSnapshotService aplicación
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 1fa5b664b39541b9d697dfbbfd0493f7a6f7cf96
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f4dd36db457099aaa9c134593fa385f21480e036e15629d10c32e716e604a462
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686743"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119426935"
 ---
-# <a name="applysnapshot-method-of-the-msvm_collectionsnapshotservice-class"></a>Método ApplySnapshot de la \_ clase CollectionSnapshotService de MSVM
+# <a name="applysnapshot-method-of-the-msvm_collectionsnapshotservice-class"></a>Método ApplySnapshot de la clase \_ CollectionSnapshotService de Msvm
 
-Aplica una colección de instantáneas a la colección de sistemas del equipo virtual.
+Aplica una colección de instantáneas a la colección del sistema de equipo virtual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,23 +40,23 @@ uint32 ApplySnapshot(
 
 <dl> <dt>
 
-*SnapshotCollection* \[ de\]
+*SnapshotCollection* \[ En\]
 </dt> <dd>
 
-Referencia a una [**\_ colección CIM**](cim-collection.md) que representa la colección de instantáneas que se va a aplicar.
+Referencia a una colección [**CIM \_ que**](cim-collection.md) representa la colección de instantáneas que se va a aplicar.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Referencia opcional que se devuelve si la operación se ejecuta de forma asincrónica. Si está presente, la referencia devuelta a una instancia de [**CIM \_ ConcreteJob**](cim-concretejob.md) se puede usar para supervisar el progreso y obtener el resultado del método.
+Referencia opcional que se devuelve si la operación se ejecuta de forma asincrónica. Si está presente, la referencia devuelta a una instancia de [**CIM \_ ConcreteJob**](cim-concretejob.md) se puede usar para supervisar el progreso y obtener el resultado del método .
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si se ejecuta correctamente, devuelve un 0; de lo contrario, devuelve un error.
+Si se ejecuta correctamente, devuelve 0; de lo contrario, devuelve un error.
 
 <dl> <dt>
 
@@ -69,7 +69,7 @@ Si se ejecuta correctamente, devuelve un 0; de lo contrario, devuelve un error.
 **Error** (2)
 </dt> <dt>
 
-**Tiempo de espera** (3)
+**Tiempo de** espera (3)
 </dt> <dt>
 
 **Parámetro no válido** (4)
@@ -87,10 +87,10 @@ Si se ejecuta correctamente, devuelve un 0; de lo contrario, devuelve un error.
 **Parámetros de método comprobados: trabajo iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (de no.. 32767)
+**Método reservado** (4097..32767)
 </dt> <dt>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -99,10 +99,10 @@ Si se ejecuta correctamente, devuelve un 0; de lo contrario, devuelve un error.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1703 \[\]<br/>                                               |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1703 \[\]<br/>                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -111,7 +111,7 @@ Si se ejecuta correctamente, devuelve un 0; de lo contrario, devuelve un error.
 
 <dl> <dt>
 
-[**MSVM \_ CollectionSnapshotService**](msvm-collectionsnapshotservice.md)
+[**Colección de \_ MsvmSnapshotService**](msvm-collectionsnapshotservice.md)
 </dt> </dl>
 
  

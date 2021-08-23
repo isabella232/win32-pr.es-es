@@ -1,26 +1,26 @@
 ---
-title: Propiedad HotKeyCtrlAltDel de IMsRdpClientAdvancedSettings
-description: Especifica el código de tecla virtual que se va a agregar a CTRL + ALT para determinar el reemplazo de la tecla de método abreviado para CTRL + ALT + SUPR, también denominado secuencia de atención segura (SAS).
+title: Propiedad IMsRdpClientAdvancedSettings HotKeyCtrlAltDel
+description: Especifica el código de clave virtual que se agregará a CTRL+ALT para determinar el reemplazo de la tecla de acceso rápido para CTRL+ALT+DELETE, también denominado secuencia de atención segura (SAS).
 ms.assetid: bce55cdb-4444-4291-b443-9bc1b3743e23
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad HotKeyCtrlAltDel
-- Propiedad HotKeyCtrlAltDel Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings, propiedad HotKeyCtrlAltDel
-- Propiedad HotKeyCtrlAltDel Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings2, propiedad HotKeyCtrlAltDel
-- Propiedad HotKeyCtrlAltDel Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings3, propiedad HotKeyCtrlAltDel
-- Propiedad HotKeyCtrlAltDel Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings4, propiedad HotKeyCtrlAltDel
-- Propiedad HotKeyCtrlAltDel Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad HotKeyCtrlAltDel
-- Propiedad HotKeyCtrlAltDel Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad HotKeyCtrlAltDel
-- Propiedad HotKeyCtrlAltDel Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad HotKeyCtrlAltDel
-- Propiedad HotKeyCtrlAltDel Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad HotKeyCtrlAltDel
+- Propiedad HotKeyCtrlAltDel Servicios de Escritorio remoto
+- Propiedad HotKeyCtrlAltDel Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad HotKeyCtrlAltDel
+- Propiedad HotKeyCtrlAltDel Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad HotKeyCtrlAltDel
+- Propiedad HotKeyCtrlAltDel Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad HotKeyCtrlAltDel
+- Propiedad HotKeyCtrlAltDel Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad HotKeyCtrlAltDel
+- Propiedad HotKeyCtrlAltDel Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad HotKeyCtrlAltDel
+- Propiedad HotKeyCtrlAltDel Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad HotKeyCtrlAltDel
+- Propiedad HotKeyCtrlAltDel Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad HotKeyCtrlAltDel
+- Propiedad HotKeyCtrlAltDel Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad HotKeyCtrlAltDel
 topic_type:
 - apiref
 api_name:
@@ -54,19 +54,19 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 00fa4c1f963841d0c1ea0375cdf11913b28d0286
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 47975b2c4586728fc4727044b7340d87c275c5a5f47aac1c68ab3d9fdafbda6c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422004"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119424415"
 ---
-# <a name="imsrdpclientadvancedsettingshotkeyctrlaltdel-property"></a>IMsRdpClientAdvancedSettings:: HotKeyCtrlAltDel (propiedad)
+# <a name="imsrdpclientadvancedsettingshotkeyctrlaltdel-property"></a>Propiedad IMsRdpClientAdvancedSettings::HotKeyCtrlAltDel
 
-Especifica el código de tecla virtual que se va a agregar a CTRL + ALT para determinar el reemplazo de la tecla de método abreviado para CTRL + ALT + SUPR, también denominado secuencia de atención segura (SAS).
+Especifica el código de clave virtual que se agregará a CTRL+ALT para determinar el reemplazo de la tecla de acceso rápido para CTRL+ALT+DELETE, también denominado secuencia de atención segura (SAS).
 
 > [!Note]  
-> CTRL + ALT + SUPR nunca se redirige al servidor remoto, incluso cuando la propiedad [KeyboardHookMode](imsrdpclientsecuredsettings-keyboardhookmode.md) está habilitada; CTRL + ALT + SUPR es la secuencia SAS local.
+> CTRL+ALT+DELETE nunca se redirige al servidor remoto, incluso cuando la [propiedad KeyboardHookMode](imsrdpclientsecuredsettings-keyboardhookmode.md) está habilitada; CTRL+ALT+DELETE es la secuencia sas local.
 
  
 
@@ -89,15 +89,15 @@ HRESULT get_HotKeyCtrlAltDel(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El nuevo código de tecla virtual. **VK \_ END** es el valor predeterminado.
+Nuevo código de clave virtual. **VK \_ END** es el valor predeterminado.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
 ## <a name="remarks"></a>Observaciones
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 

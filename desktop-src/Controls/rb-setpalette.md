@@ -1,9 +1,9 @@
 ---
-title: Mensaje de RB_SETPALETTE (commctrl. h)
+title: RB_SETPALETTE mensaje (Commctrl.h)
 description: Establece la paleta actual del control rebar.
 ms.assetid: 85f0726a-21fd-41b3-aa52-6a0a0c1947fa
 keywords:
-- RB_SETPALETTE controles de mensajes de Windows
+- RB_SETPALETTE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e7ee47985c05bcd8a857620e7fe501bddf53bdec
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 85cd2968fa5fa74915e37f40f30dd47751e2316e8d91d0f51f9d3c7145b893fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996721"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119434945"
 ---
-# <a name="rb_setpalette-message"></a>Mensaje de SETPALETTE de RB \_
+# <a name="rb_setpalette-message"></a>Mensaje \_ SETPALETTE de RB
 
 Establece la paleta actual del control rebar.
 
@@ -35,17 +35,17 @@ Establece la paleta actual del control rebar.
 *lParam* 
 </dt> <dd>
 
-**HPALETTE** que especifica la nueva paleta que usará el control rebar.
+**HPATTE que** especifica la nueva paleta que usará el control rebar.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un **HPALETTE** que especifica la paleta anterior del control rebar.
+Devuelve un **HPATTE** que especifica la paleta anterior del control rebar.
 
 ## <a name="remarks"></a>Observaciones
 
-Es responsabilidad de la aplicación que envía este mensaje eliminar el **HPALETTE** que se pasa en este mensaje (vea [**DeleteObject**](/windows/desktop/api/wingdi/nf-wingdi-deleteobject)). El control rebar no eliminará un conjunto de **HPALETTE** con este mensaje.
+Es responsabilidad de la aplicación que envía este mensaje eliminar el **HPATTE** pasado en este mensaje (vea [**DeleteObject**](/windows/desktop/api/wingdi/nf-wingdi-deleteobject)). El control rebar no eliminará un **conjunto de HPATTE** con este mensaje.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ Es responsabilidad de la aplicación que envía este mensaje eliminar el **HPALE
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Es responsabilidad de la aplicación que envía este mensaje eliminar el **HPALE
 
 <dl> <dt>
 
-[**\_GETPALETTE RB**](rb-getpalette.md)
+[**RB \_ GETPALETTE**](rb-getpalette.md)
 </dt> </dl>
 
  

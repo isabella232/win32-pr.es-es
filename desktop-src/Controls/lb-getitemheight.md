@@ -1,9 +1,9 @@
 ---
-title: Mensaje de LB_GETITEMHEIGHT (Winuser. h)
+title: LB_GETITEMHEIGHT mensaje (Winuser.h)
 description: Obtiene el alto de los elementos de un cuadro de lista.
 ms.assetid: ee96fce6-babd-4581-ac0e-2eb955fe543b
 keywords:
-- LB_GETITEMHEIGHT controles de mensajes de Windows
+- LB_GETITEMHEIGHT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f44aa9e9b6d52c082a5f33a10280837a33372245
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 29c232c172f14774db9dd7c783e18a10f0888190708432b9336208570f0d5031
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905174"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119434335"
 ---
-# <a name="lb_getitemheight-message"></a>\_Mensaje lb GETITEMHEIGHT
+# <a name="lb_getitemheight-message"></a>Mensaje \_ GETITEMHEIGHT de LB
 
 Obtiene el alto de los elementos de un cuadro de lista.
 
@@ -32,9 +32,9 @@ Obtiene el alto de los elementos de un cuadro de lista.
 *wParam* 
 </dt> <dd>
 
-Índice de base cero del elemento de cuadro de lista. Este índice solo se utiliza si el cuadro de lista tiene el estilo [**lbs \_ OWNERDRAWVARIABLE**](list-box-styles.md) ; de lo contrario, debe ser cero.
+Índice de base cero del elemento de cuadro de lista. Este índice solo se usa si el cuadro de lista tiene el estilo [**LB \_ OWNERDRAWVARIABLE;**](list-box-styles.md) de lo contrario, debe ser cero.
 
-Windows 95, Windows 98 o Windows Millennium Edition (Windows me): el parámetro *wParam* está limitado a valores de 16 bits. Esto significa que los cuadros de lista no pueden contener más de 32.767 elementos. Aunque el número de elementos está restringido, el tamaño total en bytes de los elementos de un cuadro de lista está limitado únicamente por la memoria disponible.
+Windows edición 95/Windows 98/Windows Millennium Edition (Windows Me): el parámetro *wParam* está limitado a valores de 16 bits. Esto significa que los cuadros de lista no pueden contener más de 32 767 elementos. Aunque el número de elementos está restringido, el tamaño total en bytes de los elementos de un cuadro de lista solo está limitado por la memoria disponible.
 
 </dd> <dt>
 
@@ -47,7 +47,7 @@ Este parámetro no se utiliza.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es el alto, en píxeles, de cada elemento del cuadro de lista. El valor devuelto es el alto del elemento especificado por el parámetro *wParam* si el cuadro de lista tiene el estilo [**lbs \_ OWNERDRAWVARIABLE**](list-box-styles.md) . El valor devuelto es LB \_ Err si se produce un error.
+El valor devuelto es el alto, en píxeles, de cada elemento del cuadro de lista. El valor devuelto es el alto del elemento especificado por el parámetro *wParam* si el cuadro de lista tiene el [**estilo LB \_ OWNERDRAWVARIABLE.**](list-box-styles.md) El valor devuelto es \_ LB ERR si se produce un error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,9 +55,9 @@ El valor devuelto es el alto, en píxeles, de cada elemento del cuadro de lista.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

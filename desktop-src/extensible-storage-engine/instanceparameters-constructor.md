@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor InstanceParameters'
-title: Constructor de InstanceParameters
+description: 'Más información sobre: Constructor InstanceParameters'
+title: Constructor InstanceParameters
 TOCTitle: 'InstanceParameters constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.InstanceParameters.#ctor(Microsoft.Isam.Esent.Interop.JET_INSTANCE)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instanceparameters.instanceparameters(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: be5b4415cd231078b23a3f3df19e2c96feba4b9c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 147cc3c68856744dc904d9dc730e44ad5c83b8593723b345e317f9c9602512b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705820"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119618205"
 ---
-# <a name="instanceparameters-constructor"></a>Constructor de InstanceParameters
+# <a name="instanceparameters-constructor"></a>Constructor InstanceParameters
 
 Inicializa una nueva instancia de la clase InstanceParameters.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,9 +60,9 @@ public InstanceParameters(
 #### <a name="parameters"></a>Parámetros
 
   - instance  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
     
-    Instancia en la que se van a establecer los parámetros. Es si se JET_INSTANCE. Nil, la configuración afecta a la configuración predeterminada de las instancias futuras.
+    Instancia en la que se establecen los parámetros. Si se trata de JET_INSTANCE. Nil, la configuración afecta a la configuración predeterminada de las instancias futuras.
 
 ## <a name="see-also"></a>Vea también
 
@@ -70,6 +70,6 @@ public InstanceParameters(
 
 [Clase InstanceParameters](./instanceparameters-class.md)
 
-[Miembros de InstanceParameters](./instanceparameters-members.md)
+[Miembros instanceParameters](./instanceparameters-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

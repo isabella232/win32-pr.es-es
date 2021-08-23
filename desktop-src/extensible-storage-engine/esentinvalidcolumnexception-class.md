@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: clase EsentInvalidColumnException'
+description: 'Más información sobre: Clase EsentInvalidColumnException'
 title: Clase EsentInvalidColumnException
 TOCTitle: EsentInvalidColumnException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentInvalidColumnException
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9768a479ebb1257b349e28eb7a352f0034ca7317
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e30b03b7bbe5d4e0eb5243dd00a478ec950a1901fecf1f77da2f5d3d4226cac6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119620905"
 ---
 # <a name="esentinvalidcolumnexception-class"></a>Clase EsentInvalidColumnException
 
@@ -39,13 +39,13 @@ Excepción que se produce cuando se produce un error en una conversión de colum
 
 [System.Object](/dotnet/api/system.object)  
   [System.Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. esent. EsentException](./esentexception-class.md)  
-      Microsoft. ISAM. esent. Interop. EsentInvalidColumnException  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      Microsoft.Isam.Esent.Interop.EsentInvalidColumnException  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -71,4 +71,4 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 [Miembros de EsentInvalidColumnException](./esentinvalidcolumnexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,21 +1,21 @@
 ---
-description: Los proveedores basados en manifiestos usan un manifiesto para publicar el esquema para sus eventos.
+description: Los proveedores basados en manifiestos usan un manifiesto para publicar el esquema de sus eventos.
 ms.assetid: 37d1a504-ecc7-4df3-bf31-546debb62123
 title: Publicar el esquema de eventos para un proveedor basado en manifiestos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b4c100dd041d5bd454d8ec64d40fcc9a953d8fd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 70d2ffd6d991e90ea19d20e78d3d18faff3d24c158d285834b23838b10e78239
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001242"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069835"
 ---
 # <a name="publishing-your-event-schema-for-a-manifest-based-provider"></a>Publicar el esquema de eventos para un proveedor basado en manifiestos
 
-Los proveedores [basados en manifiestos](about-event-tracing.md) usan un manifiesto para publicar el esquema para sus eventos. El manifiesto se incrusta en el binario del proveedor, lo que significa que el proveedor debe estar disponible en el equipo para que el consumidor consuma sus eventos. Para obtener información detallada acerca de cómo escribir un manifiesto, consulte [escribir un manifiesto de instrumentación](../wes/writing-an-instrumentation-manifest.md).
+[Los proveedores basados](about-event-tracing.md) en manifiestos usan un manifiesto para publicar el esquema de sus eventos. El manifiesto se inserta en el binario del proveedor, lo que significa que el proveedor debe estar disponible en el equipo para que el consumidor consuma sus eventos. Para obtener detalles completos sobre cómo escribir un manifiesto, vea [Escribir un manifiesto de instrumentación.](../wes/writing-an-instrumentation-manifest.md)
 
-El siguiente manifiesto define los eventos que se usan en los ejemplos de la sección [proporcionar eventos](providing-events.md) y [consumir eventos](consuming-events.md) del documento.
+El manifiesto siguiente define los eventos que se usan en los ejemplos de la sección [Proporcionar](providing-events.md) eventos y [consumir](consuming-events.md) eventos del documento.
 
 ``` syntax
 <!-- <?xml version="1.0" encoding="UTF-16"?> -->

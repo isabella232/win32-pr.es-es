@@ -1,11 +1,11 @@
 ---
-title: Win32_SessionBrokerFarm (clase)
-description: Define la consulta para una granja de agentes de sesiones.
+title: Win32_SessionBrokerFarm clase
+description: Define la consulta de una granja de agentes de sesión.
 ms.assetid: 55a2a7ea-e891-4723-b919-ee3c908eaffb
 ms.tgt_platform: multiple
 keywords:
 - Win32_SessionBrokerFarm clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_SessionBrokerFarm de clase, se describe
+- Win32_SessionBrokerFarm clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -18,16 +18,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e6a3ccbb5e1e08a036fb9973d552db73ee1607c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ab65d00cd4be793556929d3049db549ad8ab9729d1e2e2752e550c3e2cf357d1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490588"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119422515"
 ---
-# <a name="win32_sessionbrokerfarm-class"></a>\_Clase Win32 SessionBrokerFarm
+# <a name="win32_sessionbrokerfarm-class"></a>Clase \_ SessionBrokerFarm de Win32
 
-Define la consulta para una granja de agentes de sesiones.
+Define la consulta de una granja de agentes de sesión.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -63,10 +63,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-El nombre de la granja de agentes de sesiones que debe consultarse.
+Nombre de la granja de agentes de sesión que debe consultarse.
 
 </dd> <dt>
 
@@ -79,7 +79,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Nombre del complemento.
@@ -105,8 +105,8 @@ queryString = string.Format("SELECT * FROM Win32_SessionBrokerFarm WHERE PluginN
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                      |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                               |
-| MOF<br/>                      | <dl> <dt>TssdWmi. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                               |
+| MOF<br/>                      | <dl> <dt>TssdWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TssdWmi.dll</dt> </dl> |
 
 

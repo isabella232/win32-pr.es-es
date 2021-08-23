@@ -1,9 +1,9 @@
 ---
-title: función gluScaleImage (GLU. h)
+title: Función gluScaleImage (Glu.h)
 description: La función gluScaleImage escala una imagen a un tamaño arbitrario.
 ms.assetid: f47191e8-b22d-4f6a-949a-9c7782d6d338
 keywords:
-- gluScaleImage (función) OpenGL
+- Función gluScaleImage OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7da95f1545996a83adeb27deaceb7fab6290005e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0a6bab8865dec475087743f658429fd633fc9bb1443da14bd1198e8a7c73b0fd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104421902"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119488745"
 ---
-# <a name="gluscaleimage-function"></a>gluScaleImage función)
+# <a name="gluscaleimage-function"></a>función gluScaleImage
 
-La función **gluScaleImage** escala una imagen a un tamaño arbitrario.
+La **función gluScaleImage** escala una imagen a un tamaño arbitrario.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,32 +51,32 @@ int WINAPI gluScaleImage(
 *format* 
 </dt> <dd>
 
-Formato de los datos de píxeles. Los valores simbólicos siguientes son válidos: el \_ Índice de color \_ de GL, el \_ Índice de la galería de símbolos GL \_ , el \_ componente de profundidad de contabilidad \_ , GL \_ rojo, GL \_ verde, GL \_ Blue, GL \_ alfa, GL \_ RGB, GL \_ RGBA, GL \_ BGR \_ , GL BGRA ext, GL de \_ \_ Contabilidad y la luminancia de \_ GL \_ \_ .
+Formato de los datos de píxeles. Los siguientes valores simbólicos son válidos: GL \_ COLOR \_ INDEX, GL \_ STENCIL \_ INDEX, GL \_ DEPTH \_ \_ COMPONENT, GL RED, GL \_ GREEN, GL \_ BLUE, GL \_ ALPHA, GL \_ RGB, GL \_ RGBA, GL \_ BGR \_ EXT, GL \_ BGRA \_ EXT, GL \_ LUMINANCE y GL \_ LUMINANCE \_ ALPHA.
 
 </dd> <dt>
 
-*ancho* 
+*widthin* 
 </dt> <dd>
 
 Ancho de la imagen de origen que se escala.
 
 </dd> <dt>
 
-*alto* 
+*heightin* 
 </dt> <dd>
 
 Alto de la imagen de origen que se escala.
 
 </dd> <dt>
 
-*escribir* 
+*typein* 
 </dt> <dd>
 
-El tipo de datos para los *datos*. Debe ser uno de los siguientes: \_ bytes sin signo de libro \_ de contabilidad, \_ bytes de contabilidad, mapa de bits de GL \_ , GL \_ sin signo \_ corto, GL \_ Short, libro de contabilidad \_ sin signo \_ \_ \_ de contab.
+Tipo de datos para *datain*. Debe ser uno de los siguientes: GL \_ \_ UNSIGNED BYTE, GL \_ BYTE, GL \_ BITMAP, GL \_ UNSIGNED \_ SHORT, GL \_ SHORT, GL \_ UNSIGNED \_ INT, GL INT o \_ GL \_ FLOAT.
 
 </dd> <dt>
 
-*datos* 
+*datain* 
 </dt> <dd>
 
 Puntero a la imagen de origen.
@@ -100,11 +100,11 @@ Alto de la imagen de destino.
 *typeout* 
 </dt> <dd>
 
-El tipo de datos para *dataout*. Debe ser uno de los siguientes: \_ bytes sin signo de libro \_ de contabilidad, \_ bytes de contabilidad, mapa de bits de GL \_ , GL \_ sin signo \_ corto, GL \_ Short, libro de contabilidad \_ sin signo \_ \_ \_ de contab.
+Tipo de datos para *dataout*. Debe ser uno de los siguientes: GL \_ \_ UNSIGNED BYTE, GL \_ BYTE, GL \_ BITMAP, GL \_ UNSIGNED \_ SHORT, GL \_ SHORT, GL \_ UNSIGNED \_ INT, GL INT o \_ GL \_ FLOAT.
 
 </dd> <dt>
 
-*dataout* 
+*salida de datos* 
 </dt> <dd>
 
 Puntero a la imagen de destino.
@@ -115,26 +115,26 @@ Puntero a la imagen de destino.
 
 Si la función es correcta, el valor devuelto es cero.
 
-Si se produce un error en la función, el valor devuelto es un código de error GLU (vea [**gluErrorString**](gluerrorstring.md)).
+Si se produce un error en la función, el valor devuelto es un código de error glu [**(vea gluErrorString).**](gluerrorstring.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **gluScaleImage** escala una imagen de píxeles usando los modos de almacén de píxeles adecuados para desempaquetar los datos de la imagen de origen y empaquetar los datos en la imagen de destino.
+La **función gluScaleImage** escala una imagen de píxel mediante los modos de almacén de píxeles adecuados para desempaquetar datos de la imagen de origen y empaquetar los datos en la imagen de destino.
 
-Al reducir una imagen, **gluScaleImage** usa un filtro de cuadro para muestrear la imagen de origen y crear píxeles para la imagen de destino. Al aumentar una imagen, los píxeles de la imagen de origen se interpolan linealmente para crear la imagen de destino.
+Al reducir una imagen, **gluScaleImage** usa un filtro de cuadro para muestrear la imagen de origen y crear píxeles para la imagen de destino. Al ampliar una imagen, los píxeles de la imagen de origen se interpolan linealmente para crear la imagen de destino.
 
-Para obtener una descripción de los valores aceptables para los parámetros *Format*, *typeof* y *typeout* , consulte [**glReadPixels**](glreadpixels.md).
+Para obtener una descripción de los valores aceptables para los parámetros *de* formato , *typein* y *typeout,* [**vea glReadPixels**](glreadpixels.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Glu. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 

@@ -1,7 +1,7 @@
 ---
-description: Obtiene el número de vértices en la malla.
+description: Obtiene el número de vértices de la malla.
 ms.assetid: fea8a3b5-ca10-4066-b2ca-6579829d31b6
-title: 'ID3DX10Mesh:: GetVertexCount (método) (D3DX10. h)'
+title: Método ID3DX10Mesh::GetVertexCount (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 189be6ff6872cfb85c2f336c29dedef2e435382e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 00fd0cd84aedb32e2da567a92ffc421f41394a991872f9216b06a4f28f895183
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707985"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119566895"
 ---
-# <a name="id3dx10meshgetvertexcount-method"></a>ID3DX10Mesh:: GetVertexCount (método)
+# <a name="id3dx10meshgetvertexcount-method"></a>Método ID3DX10Mesh::GetVertexCount
 
-Obtiene el número de vértices en la malla. Una malla puede contener varios búferes de vértices (es decir, un búfer de vértices puede contener todos los datos de posición, otro puede contener todos los datos de coordenadas de textura, etc.); sin embargo, cada búfer de vértice contendrá el mismo número de elementos.
+Obtiene el número de vértices de la malla. Una malla puede contener varios búferes de vértices (es decir, un búfer de vértices puede contener todos los datos de posición, otro puede contener todos los datos de coordenadas de textura, etc.), pero cada búfer de vértice contendrá el mismo número de elementos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,9 +40,9 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-El número de vértices en la malla.
+Número de vértices de la malla.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ El número de vértices en la malla.
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -62,7 +62,7 @@ El número de vértices en la malla.
 [ID3DX10Mesh](id3dx10mesh.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

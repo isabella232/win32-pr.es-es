@@ -1,7 +1,7 @@
 ---
-description: El método Name recupera el identificador del PIN.
+description: El método Name recupera el identificador de pin.
 ms.assetid: 1bc2498f-3f2d-42c7-96cb-9b91bbfb08f5
-title: Método CBasePin.Name (Amfilter. h)
+title: CBasePin.Name método (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0294baf2c7a399bf7e75bb69bbb2b46723e5d002
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0bb519e67bf1def3abeb98bcfea1310d9b6fe68f06e891e44f925e267982f2e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119429885"
 ---
-# <a name="cbasepinname-method"></a>Método CBasePin.Name
+# <a name="cbasepinname-method"></a>CBasePin.Name método
 
-El `Name` método recupera el identificador del PIN.
+El `Name` método recupera el identificador de pin.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el valor de la variable miembro [**CBasePin:: m \_ pName**](cbasepin-m-pname.md) .
+Devuelve el valor de la variable [**miembro CBasePin::m \_ pName.**](cbasepin-m-pname.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve el valor de la variable miembro [**CBasePin:: m \_ pName**](cbasepin-m-
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve el valor de la variable miembro [**CBasePin:: m \_ pName**](cbasepin-m-
 
 <dl> <dt>
 
-[**Clase CBasePin**](cbasepin.md)
+[**CBasePin (clase)**](cbasepin.md)
 </dt> </dl>
 
  

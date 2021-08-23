@@ -1,29 +1,29 @@
 ---
-description: Es posible que la aplicación tenga que solicitar al usuario la información de nombre de usuario y contraseña para evitar almacenar una contraseña de administrador o comprobar que el token contiene los privilegios adecuados.
+description: Es posible que la aplicación tenga que solicitar al usuario información de nombre de usuario y contraseña para evitar almacenar una contraseña de administrador o para comprobar que el token contiene los privilegios adecuados.
 ms.assetid: 966de0cc-63de-4430-843f-668de2dfe0a6
-title: Solicitar credenciales al usuario
+title: Pedir credenciales al usuario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8adb315837d86a9f1dda4075b8d89db33f0dd22e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dc9b9941be168a307e35b3575f4d12241dc624553686a61b232f2c5ba86e9c0f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119480495"
 ---
-# <a name="asking-the-user-for-credentials"></a>Solicitar credenciales al usuario
+# <a name="asking-the-user-for-credentials"></a>Pedir credenciales al usuario
 
-Es posible que la aplicación tenga que solicitar al usuario la información de nombre de usuario y contraseña para evitar almacenar una contraseña de administrador o comprobar que el token contiene los privilegios adecuados.
+Es posible que la aplicación tenga que solicitar al usuario información de nombre de usuario y contraseña para evitar almacenar una contraseña de administrador o para comprobar que el token contiene los privilegios adecuados.
 
-Sin embargo, simplemente solicitar credenciales puede entrenar a los usuarios para que proporcionen a los cuadros de diálogo aleatorios no identificados que aparecen en la pantalla. Se recomienda el procedimiento siguiente para reducir el efecto de entrenamiento.
+Sin embargo, simplemente solicitar credenciales puede entrenar a los usuarios para que los proporcionen a cualquier cuadro de diálogo aleatorio no identificado que aparezca en la pantalla. Se recomienda el procedimiento siguiente para reducir ese efecto de entrenamiento.
 
 **Para adquirir correctamente las credenciales de usuario**
 
-1.  Informe al usuario mediante un mensaje que forma claramente parte de la aplicación, que verá un cuadro de diálogo que solicita su nombre de usuario y contraseña. También puede usar la estructura [**CREDUI \_ info**](/windows/desktop/api/wincred/ns-wincred-credui_infoa) en la llamada a [**CredUIPromptForCredentials**](/windows/desktop/api/wincred/nf-wincred-creduipromptforcredentialsa) para transmitir datos de identificación o un mensaje.
-2.  Llame a [**CredUIPromptForCredentials**](/windows/desktop/api/wincred/nf-wincred-creduipromptforcredentialsa). Tenga en cuenta que el número máximo de caracteres especificado para la información de nombre de usuario y contraseña incluye el carácter nulo de terminación.
-3.  Llame a [**CredUIParseUserName**](/windows/desktop/api/wincred/nf-wincred-creduiparseusernamea) y [**CredUIConfirmCredentials**](/windows/desktop/api/wincred/nf-wincred-creduiconfirmcredentialsa) para comprobar que obtuvo las credenciales adecuadas.
+1.  Informe al usuario, mediante un mensaje que claramente forma parte de la aplicación, que verá un cuadro de diálogo que solicita su nombre de usuario y contraseña. También puede usar la estructura [**CREDUI \_ INFO**](/windows/desktop/api/wincred/ns-wincred-credui_infoa) en la llamada a [**CredUIPromptForCredentials**](/windows/desktop/api/wincred/nf-wincred-creduipromptforcredentialsa) para transmitir datos de identificación o un mensaje.
+2.  Llame [**a CredUIPromptForCredentials.**](/windows/desktop/api/wincred/nf-wincred-creduipromptforcredentialsa) Tenga en cuenta que el número máximo de caracteres especificado para la información de nombre de usuario y contraseña incluye el carácter nulo de terminación.
+3.  Llame [**a CredUIParseUserName**](/windows/desktop/api/wincred/nf-wincred-creduiparseusernamea) y [**CredUIConfirmCredentials**](/windows/desktop/api/wincred/nf-wincred-creduiconfirmcredentialsa) para comprobar que ha obtenido las credenciales adecuadas.
 
-En el ejemplo siguiente se muestra cómo llamar a [**CredUIPromptForCredentials**](/windows/desktop/api/wincred/nf-wincred-creduipromptforcredentialsa) para pedir al usuario un nombre de usuario y una contraseña. Comienza rellenando una estructura de \_ información CREDUI con información sobre las solicitudes que se deben usar. A continuación, el código rellena dos búferes con ceros. Esto se hace para asegurarse de que no se pase información a la función que pueda revelar un nombre de usuario o contraseña antiguos al usuario. La llamada a **CredUIPromptForCredentials** muestra el cuadro de diálogo. Por motivos de seguridad, en este ejemplo se usa la \_ marca CREDUI Flags \_ \_ no \_ Persist para evitar que el sistema operativo almacene la contraseña, ya que podría exponerse. Si no hay ningún error, **CredUIPromptForCredentials** rellena las variables pszName empiezan y pszPwd y devuelve cero. Cuando la aplicación ha terminado de usar las credenciales, debe colocar ceros en los búferes para evitar que la información se revele accidentalmente.
+En el ejemplo siguiente se muestra cómo llamar a [**CredUIPromptForCredentials**](/windows/desktop/api/wincred/nf-wincred-creduipromptforcredentialsa) para pedir al usuario un nombre de usuario y una contraseña. Comienza rellenando una estructura DE INFORMACIÓN DE CREDUI \_ con información sobre las solicitudes que se deben usar. A continuación, el código rellena dos búferes con ceros. Esto se hace para asegurarse de que no se pasa información a la función que pueda revelar al usuario un nombre de usuario o una contraseña antiguos. La llamada a **CredUIPromptForCredentials** abre el cuadro de diálogo. Por motivos de seguridad, en este ejemplo se usa la marca CREDUI FLAGS DO NOT PERSIST para evitar que el sistema operativo almacene la contraseña porque podría \_ \_ \_ \_ exponerse. Si no hay errores, **CredUIPromptForCredentials** rellena las variables pszName y pszPwd y devuelve cero. Cuando la aplicación haya terminado de usar las credenciales, debe colocar ceros en los búferes para evitar que la información se revele accidentalmente.
 
 
 ```C++

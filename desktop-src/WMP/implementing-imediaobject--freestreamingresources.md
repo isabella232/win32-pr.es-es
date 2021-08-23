@@ -3,24 +3,24 @@ title: Implementación de IMediaObject FreeStreamingResources
 description: Implementación de IMediaObject FreeStreamingResources
 ms.assetid: 970dd10b-a7a0-4ba0-97e3-725d5c914500
 keywords:
-- Complementos de Windows Media Player, echo ejemplo de recursos de streaming
-- complementos, echo ejemplo de recursos de streaming
-- Complementos de procesamiento de señal digital, echo ejemplo de recursos de streaming
-- Complementos DSP, echo ejemplo de recursos de streaming
+- Reproductor de Windows Media complementos, recursos de streaming de ejemplo de eco
+- complementos, recursos de streaming de ejemplo de eco
+- complementos de procesamiento de señales digitales, recursos de streaming de ejemplo de eco
+- Complementos de DSP, recursos de streaming de ejemplo de eco
 - Ejemplo de complemento DSP de eco, recursos de streaming
-- Ejemplo de complemento de DSP de eco, liberar memoria
+- Ejemplo de complemento DSP de eco, liberación de memoria
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a31a293cfc68caf43496d031426de2441c9c1d05
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 30da5f92ec8420ccc90f74256003aae02664a57a8ffad3470901f672cf37aa73
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119617325"
 ---
-# <a name="implementing-imediaobjectfreestreamingresources"></a>Implementación de IMediaObject:: FreeStreamingResources
+# <a name="implementing-imediaobjectfreestreamingresources"></a>Implementación de IMediaObject::FreeStreamingResources
 
-Es importante que el código libere cualquier memoria asignada antes de que se destruya el objeto de complemento. Windows Media Player llama a **FreeStreamingResources** para que pueda hacerlo. Por motivos de seguridad, el ejemplo creado por el Asistente para complementos incluye una llamada a **FreeStreamingResources** en el método **FinalRelease** para asegurarse de que se libera la memoria. Debe agregar el código siguiente a **FreeStreamingResources** para el ejemplo echo:
+Es importante que el código libere cualquier memoria asignada antes de que se destruya el objeto de complemento. Reproductor de Windows Media a **FreeStreamingResources** para permitirle hacerlo. Por motivos de seguridad, el ejemplo creado por el asistente para complementos incluye una llamada a **FreeStreamingResources** en el método **FinalRelease** para asegurarse de que se libera la memoria. Debe agregar el código siguiente a **FreeStreamingResources para** el ejemplo de eco:
 
 
 ```
@@ -43,9 +43,9 @@ if (m_pbDelayBuffer)
 [**Trabajar con recursos de streaming**](working-with-streaming-resources.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

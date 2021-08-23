@@ -1,9 +1,9 @@
 ---
-title: Función UpdateSubresources (D3dx12. h)
-description: Actualiza los Subrecursos, se deben rellenar todas las matrices de Subrecursos, normalmente llamando a ID3D12Device GetCopyableFootprints.
+title: Función UpdateSubresources (D3dx12.h)
+description: Actualiza los subrecursos, todas las matrices de subrecursos deben rellenarse, normalmente mediante una llamada a ID3D12Device GetCopyableFootprints.
 ms.assetid: D6885165-095E-452D-8D93-A2C43A215F48
 keywords:
-- UpdateSubresources función)
+- Función UpdateSubresources
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 885ee058aacbfca238448830f2b7b1b54a298f89
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: bb1e48f4bc574d0b032b878c19c7749f63f86aba21a659c1c0a8f6f526f5bce5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105708083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119496605"
 ---
-# <a name="updatesubresources-function"></a>UpdateSubresources función)
+# <a name="updatesubresources-function"></a>Función UpdateSubresources
 
-Actualiza los Subrecursos, se deben rellenar todas las matrices de Subrecursos, normalmente mediante una llamada a [**ID3D12Device:: GetCopyableFootprints**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-getcopyablefootprints).
+Actualiza los subrecursos, todas las matrices de subrecursos deben rellenarse, normalmente llamando a [**ID3D12Device::GetCopyableFootprints**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-getcopyablefootprints).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,48 +50,48 @@ UINT64 inline UpdateSubresources(
 
 <dl> <dt>
 
-*pCmdList* \[ de\]
+*pCmdList* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **ID3D12GraphicsCommandList**](/windows/desktop/api/d3d12/nn-d3d12-id3d12graphicscommandlist)\***
 
-La lista de comandos, como un puntero a un [**ID3D12GraphicsCommandList**](/windows/desktop/api/d3d12/nn-d3d12-id3d12graphicscommandlist).
+Lista de comandos, como puntero a [**id3D12GraphicsCommandList.**](/windows/desktop/api/d3d12/nn-d3d12-id3d12graphicscommandlist)
 
 </dd> <dt>
 
-*pDestinationResource* \[ de\]
+*pDestinationResource* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **ID3D12Resource**](/windows/desktop/api/d3d12/nn-d3d12-id3d12resource)\***
 
-El recurso de destino, como un puntero a un [**ID3D12Resource**](/windows/desktop/api/d3d12/nn-d3d12-id3d12resource).
+Recurso de destino, como puntero a [**id3D12Resource.**](/windows/desktop/api/d3d12/nn-d3d12-id3d12resource)
 
 </dd> <dt>
 
-*pIntermediate* \[ de\]
+*pIntermediate* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **ID3D12Resource**](/windows/desktop/api/d3d12/nn-d3d12-id3d12resource)\***
 
-El recurso intermedio, como un puntero a un [**ID3D12Resource**](/windows/desktop/api/d3d12/nn-d3d12-id3d12resource).
+Recurso intermedio, como puntero a [**id3D12Resource.**](/windows/desktop/api/d3d12/nn-d3d12-id3d12resource)
 
 </dd> <dt>
 
-*FirstSubresource* \[ de\]
+*FirstSubresource* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Índice del primer subrecurso del recurso. El intervalo de valores válidos es de 0 a D3D12 \_ req \_ subsources.
+Índice del primer subrecurso del recurso. El intervalo de valores válidos es de 0 a D3D12 \_ REQ \_ SUBRESOURCES.
 
 </dd> <dt>
 
-*NumSubresources* \[ de\]
+*NumSubresources* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-El número de Subrecursos del recurso. El intervalo de valores válidos es de 0 a (D3D12 \_ req \_ subsources- *FirstSubresource*).
+Número de subrecursos del recurso. El intervalo de valores válidos es de 0 a (D3D12 \_ REQ \_ SUBRESOURCES - *FirstSubresource*).
 
 </dd> <dt>
 
@@ -104,39 +104,39 @@ Tamaño necesario, en bytes, para la actualización.
 
 </dd> <dt>
 
-*emisiones* \[ de\]
+*pLayouts* \[ En\]
 </dt> <dd>
 
-Tipo: **\* const [**D3D12 \_ colocada \_ \_ superficie de Subrecursos**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_placed_subresource_footprint)**
+Tipo: **const [**D3D12 \_ PLACED \_ SUBRESOURCE \_ FOOTPRINT**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_placed_subresource_footprint) \***
 
-Puntero a una matriz (de longitud *NumSubresources*) de punteros a las estructuras que contiene la descripción y la ubicación de los Subrecursos del recurso.
+Puntero a una matriz (de longitud *NumSubresources)* de punteros a las estructuras que contiene la descripción y la ubicación de los subrecursos del recurso.
 
 </dd> <dt>
 
-*pNumRows* \[ de\]
+*pNumRows* \[ En\]
 </dt> <dd>
 
-Tipo: **const [**uint**](/windows/desktop/WinProg/windows-data-types) \***
+Tipo: **const [**UINT**](/windows/desktop/WinProg/windows-data-types) \***
 
-Puntero a una matriz (de longitud *NumSubresources*) de los uint que contienen el número de filas de cada subrecurso.
+Puntero a una matriz (de longitud *NumSubresources)* de UINTS que contiene el número de filas para cada subrecurso.
 
 </dd> <dt>
 
-*pRowSizesInBytes* \[ de\]
+*pRowSizesInBytes* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**UINT64**](/windows/desktop/WinProg/windows-data-types) \***
 
-Puntero a una matriz (de longitud *NumSubresources*) de los uint que contiene el tamaño, en bytes, de cada fila.
+Puntero a una matriz (de longitud *NumSubresources)* de UINTS que contiene el tamaño, en bytes, de cada fila.
 
 </dd> <dt>
 
-*pSrcData* \[ de\]
+*pSrcData* \[ En\]
 </dt> <dd>
 
-Tipo: **\* [**datos de \_ subrecurso \_ D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_data) const**
+Tipo: **const [**D3D12 \_ SUBRESOURCE \_ DATA**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_data) \***
 
-Puntero a una matriz (de longitud *NumSubresources*) de punteros a estructuras de [**\_ \_ datos de Subrecursos de D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_data) que contienen descripciones de los datos de los Subrecursos utilizados para la actualización.
+Puntero a una matriz (de longitud *NumSubresources)* de punteros a estructuras [**\_ SUBRESOURCE \_ DATA de D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_data) que contienen descripciones de los datos de subrecursos usados para la actualización.
 
 </dd> </dl>
 
@@ -152,8 +152,8 @@ Tamaño del búfer en bytes.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx12. h</dt> </dl>  |
-| Biblioteca<br/> | <dl> <dt>D3D12. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx12.h</dt> </dl>  |
+| Biblioteca<br/> | <dl> <dt>D3D12.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>D3D12.dll</dt> </dl> |
 
 

@@ -1,25 +1,25 @@
 ---
-description: 'Más información sobre: métodos Windows8Api'
-title: Métodos Windows8Api (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Más información sobre: Métodos Windows8Api'
+title: Métodos Windows8Api (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: Windows8Api methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.Windows8.Windows8Api
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.windows8api_methods(v=EXCHG.10)
 ms:contentKeyID: 55104457
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: d8eb8b822affcbf41c375f7ef23b6a71d03afc64
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bdfcbee5e4673068bf98126523dfdd582bedbc3bd82c49efbe8140df68e27e55
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104564127"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119470875"
 ---
-# <a name="windows8api-methods"></a>Métodos Windows8Api
+# <a name="windows8api-methods"></a>Métodos de Windows8Api
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El tipo [Windows8Api](./windows8api-class.md) expone los siguientes miembros.
+El [tipo Windows8Api](./windows8api-class.md) expone los miembros siguientes.
 
 ## <a name="methods"></a>Métodos
 
@@ -35,22 +35,22 @@ El tipo [Windows8Api](./windows8api-class.md) expone los siguientes miembros.
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn335374(v=exchg.10).md">JetBeginTransaction3</a></td>
-<td>Hace que una sesión escriba una transacción o cree un nuevo punto de retorno en una transacción existente.</td>
+<td>Hace que una sesión escriba una transacción o cree un nuevo punto de guardado en una transacción existente.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn335489(v=exchg.10).md">JetCommitTransaction2</a></td>
-<td>Confirma los cambios realizados en el estado de la base de datos durante el punto de almacenamiento actual y los migra al punto de almacenamiento anterior. Si se confirma el punto de almacenamiento más externo, los cambios realizados durante ese punto de almacenamiento se confirmarán en el estado de la base de datos y la sesión finalizará la transacción.</td>
+<td>Confirma los cambios realizados en el estado de la base de datos durante el punto de guardado actual y los migra al punto de guardado anterior. Si se confirma el punto de guardado más externo, los cambios realizados durante ese punto de guardado se confirman en el estado de la base de datos y la sesión sale de la transacción.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn335488(v=exchg.10).md">JetCreateIndex4</a></td>
-<td>Crea índices sobre los datos de una base de datos ESE.</td>
+<td>Crea índices sobre datos en una base de datos ese.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn335377(v=exchg.10).md">JetCreateTableColumnIndex4</a></td>
-<td>Crea una tabla, agrega columnas e índices en esa tabla. <a href="dn292129(v=exchg.10).md">JetCreateTableColumnIndex3 (JET_SESID, JET_DBID, JET_TABLECREATE)</a></td>
+<td>Crea una tabla, agrega columnas e índices en esa tabla. <a href="dn292129(v=exchg.10).md">JetCreateTableColumnIndex3(JET_SESID, JET_DBID, JET_TABLECREATE)</a></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
@@ -60,12 +60,12 @@ El tipo [Windows8Api](./windows8api-class.md) expone los siguientes miembros.
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn335378(v=exchg.10).md">JetOpenTemporaryTable2</a></td>
-<td>Crea una tabla temporal con un índice único. Una tabla temporal almacena y recupera registros como una tabla normal creada mediante JetCreateTableColumnIndex. Sin embargo, las tablas temporales son mucho más rápidas que las normales debido a su naturaleza volátil. También se pueden usar para ordenar de forma muy rápida y realizar una eliminación duplicada en conjuntos de registros cuando se tiene acceso a ellos de forma puramente secuencial. Vea también <a href="dn292231(v=exchg.10).md">JetOpenTempTable (JET_SESID, [], Int32, TempTableGrbit, JET_TABLEID, [])</a>, &quot; API. JetOpenTempTable2 &quot; , <a href="dn292233(v=exchg.10).md">JetOpenTempTable3 (JET_SESID, [], Int32, JET_UNICODEINDEX, TempTableGrbit, JET_TABLEID, [])</a>. <a href="dn335326(v=exchg.10).md">JetOpenTemporaryTable (JET_SESID, JET_OPENTEMPORARYTABLE)</a>.</td>
+<td>Crea una tabla temporal con un único índice. Una tabla temporal almacena y recupera registros igual que una tabla normal creada mediante JetCreateTableColumnIndex. Sin embargo, las tablas temporales son mucho más rápidas que las tablas normales debido a su naturaleza volátil. También se pueden usar para ordenar y realizar rápidamente la eliminación de duplicados en conjuntos de registros cuando se accede a ellos de una manera puramente secuencial. Vea también <a href="dn292231(v=exchg.10).md">JetOpenTempTable(JET_SESID, [], Int32, TempTableGrbit, JET_TABLEID, [])</a>, &quot; Api.JetOpenTempTable2, &quot; <a href="dn292233(v=exchg.10).md">JetOpenTempTable3(JET_SESID, [], Int32, JET_UNICODEINDEX, TempTableGrbit, JET_TABLEID, []).</a> <a href="dn335326(v=exchg.10).md">JetOpenTemporaryTable(JET_SESID, JET_OPENTEMPORARYTABLE)</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn335382(v=exchg.10).md">JetPrereadIndexRanges</a></td>
-<td>Si los registros con los intervalos de claves especificados no están en la caché del búfer, inicie las lecturas asincrónicas para traer los registros a la memoria caché del búfer de la base de datos.</td>
+<td>Si los registros con los intervalos de claves especificados no están en la caché del búfer, inicie lecturas asincrónicas para llevar los registros a la caché del búfer de base de datos.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
@@ -75,27 +75,27 @@ El tipo [Windows8Api](./windows8api-class.md) expone los siguientes miembros.
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn335383(v=exchg.10).md">JetSetCursorFilter</a></td>
-<td>Establezca una matriz de filtros simples para <a href="dn292217(v=exchg.10).md">JetMove (JET_SESID, JET_TABLEID, Int32, MoveGrbit)</a>.</td>
+<td>Establezca una matriz de filtros simples para <a href="dn292217(v=exchg.10).md">JetMove(JET_SESID, JET_TABLEID, Int32, MoveGrbit).</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn335495(v=exchg.10).md">JetSetSessionParameter</a></td>
-<td>Establece un parámetro en el estado de sesión proporcionado, que se usa para la duración de esta sesión o hasta que se restablezca.</td>
+<td>Establece un parámetro en el estado de sesión proporcionado, que se usa durante la duración de esta sesión o hasta que se restablece.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn335494(v=exchg.10).md">JetStopServiceInstance2</a></td>
-<td>Prepara una instancia para la terminación. También se puede usar para reanudar una inactividad anterior.</td>
+<td>Prepara una instancia para la terminación. También se puede usar para reanudar un tiempo de incoación anterior.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn335386(v=exchg.10).md">JetTryPrereadIndexRanges</a></td>
-<td>Si los registros con los intervalos de claves especificados no están en la caché del búfer, inicie las lecturas asincrónicas para traer los registros a la memoria caché del búfer de la base de datos.</td>
+<td>Si los registros con los intervalos de claves especificados no están en la caché del búfer, inicie lecturas asincrónicas para llevar los registros a la caché del búfer de base de datos.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn335499(v=exchg.10).md">PrereadKeyRanges</a></td>
-<td>Si los registros con los intervalos de claves especificados no están en la caché del búfer, inicie las lecturas asincrónicas para traer los registros a la memoria caché del búfer de la base de datos.</td>
+<td>Si los registros con los intervalos de claves especificados no están en la caché del búfer, inicie lecturas asincrónicas para llevar los registros a la caché del búfer de base de datos.</td>
 </tr>
 </tbody>
 </table>
@@ -109,4 +109,4 @@ Superior
 
 [Clase Windows8Api](./windows8api-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

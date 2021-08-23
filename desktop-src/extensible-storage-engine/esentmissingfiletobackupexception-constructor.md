@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentMissingFileToBackupException'
-title: Constructor de EsentMissingFileToBackupException
+description: 'Más información sobre: Constructor EsentMissingFileToBackupException'
+title: Constructor EsentMissingFileToBackupException
 TOCTitle: 'EsentMissingFileToBackupException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentMissingFileToBackupException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentmissingfiletobackupexception.esentmissingfiletobackupexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: baf7f1bfdee61906f534ac0a3f8c0eff0194a5cb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d676c7907932482711cf9451a3b2de4d99a62cb07aca7307f233baac125486ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696774"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119040683"
 ---
-# <a name="esentmissingfiletobackupexception-constructor"></a>Constructor de EsentMissingFileToBackupException
+# <a name="esentmissingfiletobackupexception-constructor"></a>Constructor EsentMissingFileToBackupException
 
 Inicializa una nueva instancia de la clase EsentMissingFileToBackupException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentMissingFileToBackupException()
 public EsentMissingFileToBackupException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentMissingFileToBackupException()
 
 [Miembros de EsentMissingFileToBackupException](./esentmissingfiletobackupexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

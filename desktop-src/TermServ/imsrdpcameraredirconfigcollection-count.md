@@ -3,9 +3,9 @@ title: Propiedad Count de la interfaz IMsRdpCameraRedirConfigCollection
 description: Devuelve el número de objetos IMsRdpCameraRedirConfig de la colección.
 ms.tgt_platform: multiple
 keywords:
-- Propiedad Count Servicios de Escritorio remoto
-- Propiedad Count Servicios de Escritorio remoto, interfaz IMsRdpCameraRedirConfigCollection
-- Servicios de Escritorio remoto de la interfaz IMsRdpCameraRedirConfigCollection, propiedad Count
+- Recuento de propiedades Servicios de Escritorio remoto
+- Propiedad Count Servicios de Escritorio remoto , interfaz IMsRdpCameraRedirConfigCollection
+- Interfaz IMsRdpCameraRedirConfigCollection Servicios de Escritorio remoto , propiedad Count
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: 31927428b709136de87f436ad92cc6a78fa9795a
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: 8966bcd47793646b678c70eeaf4a263086fb9ced6eb2c56eb7b3821ac3d0f1df
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "104494164"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119475975"
 ---
-# <a name="imsrdpcameraredirconfigcollectioncount-property"></a>IMsRdpCameraRedirConfigCollection:: Count (propiedad)
+# <a name="imsrdpcameraredirconfigcollectioncount-property"></a>IMsRdpCameraRedirConfigCollection::Count, propiedad
 
-Devuelve el número de objetos [IMsRdpCameraRedirConfig](imsrdpcameraredirconfig.md) de la colección.
+Devuelve el número de [objetos IMsRdpCameraRedirConfig](imsrdpcameraredirconfig.md) de la colección.
 
 Esta propiedad es de solo lectura.
 

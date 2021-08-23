@@ -1,22 +1,22 @@
 ---
-title: Ejemplo de código de C/C++ recuperar el nombre de la aplicación de tarea
-description: En este ejemplo se recupera el nombre de la aplicación asociada a una tarea determinada y se muestra ese nombre en la pantalla. En este ejemplo se da por supuesto que la tarea y la tarea de prueba ya existen en el equipo local.
+title: Ejemplo de código de C/C++ para recuperar el nombre de la aplicación de tarea
+description: En este ejemplo se recupera el nombre de la aplicación asociada a una tarea determinada y se muestra ese nombre en la pantalla. En este ejemplo se supone que la tarea y la tarea de prueba ya existen en el equipo local.
 ms.assetid: 7cf20a14-fee3-4507-83a9-4a081a9783fc
 keywords:
 - recuperar nombres de aplicación Programador de tareas
-- recuperación de las propiedades de la tarea Programador de tareas, nombre de la aplicación
+- recuperar propiedades de tarea Programador de tareas , nombre de la aplicación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eeb590900cf7b4c6d8821560e91e2f05c21c0f73
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: dde0d00910ab590e8668e66da3380744a85228e86dafba4d1db7349b24bb80a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105685526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139638"
 ---
-# <a name="cc-code-example-retrieving-the-task-application-name"></a>Ejemplo de código de C/C++: recuperar el nombre de la aplicación de tarea
+# <a name="cc-code-example-retrieving-the-task-application-name"></a>Ejemplo de código de C/C++: Recuperar el nombre de la aplicación de tarea
 
-En este ejemplo se recupera el nombre de la aplicación asociada a una tarea determinada y se muestra ese nombre en la pantalla. En este ejemplo se da por supuesto que la tarea y la tarea de prueba ya existen en el equipo local.
+En este ejemplo se recupera el nombre de la aplicación asociada a una tarea determinada y se muestra ese nombre en la pantalla. En este ejemplo se supone que la tarea y la tarea de prueba ya existen en el equipo local.
 
 
 ```C++
@@ -119,12 +119,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Ejemplos de Programador de tareas 1,0](task-scheduler-1-0-examples.md)
+[Programador de tareas ejemplos de 1.0](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

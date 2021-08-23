@@ -1,9 +1,9 @@
 ---
-title: función glVertex2fv (GL. h)
-description: Especifica un vértice. | función glVertex2fv (GL. h)
+title: Función glVertex2fv (Gl.h)
+description: Especifica un vértice. | Función glVertex2fv (Gl.h)
 ms.assetid: bae32d27-2a19-40d5-a3f7-0e7a41918034
 keywords:
-- glVertex2fv (función) OpenGL
+- Función glVertex2fv OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ecd7a57aff2166f3605d7007cd194f5cff04784
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 1fa303bdc24637a7963f460ed3a4f2839f6c038323d8a06c66d98dce3ba6545f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105670155"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119488165"
 ---
-# <a name="glvertex2fv-function"></a>glVertex2fv función)
+# <a name="glvertex2fv-function"></a>Función glVertex2fv
 
 Especifica un vértice.
 
@@ -40,7 +40,7 @@ void WINAPI glVertex2fv(
 
 <dl> <dt>
 
-*v* 
+*V* 
 </dt> <dd>
 
 Puntero a una matriz de dos elementos. Los elementos son las coordenadas x e y de un vértice.
@@ -59,8 +59,8 @@ Esta función no devuelve ningún valor.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

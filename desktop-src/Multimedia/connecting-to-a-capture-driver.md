@@ -3,19 +3,19 @@ title: Conexión a un controlador de captura
 description: Conexión a un controlador de captura
 ms.assetid: ce83329f-de5a-4428-bc0d-be5f3d35ff1a
 keywords:
-- capDriverDisconnect (macro)
+- CapDriverDisconnect macro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2161279f5b8b8dc528ee548d0a6a8ad6e9b397f4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b34e606c439143400f1ea1845db37e7faf93009350254c173c4003400c3996f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105676145"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144868"
 ---
 # <a name="connecting-to-a-capture-driver"></a>Conexión a un controlador de captura
 
-En el ejemplo siguiente se conecta la ventana de captura con el identificador *hWndC* al controlador MSVIDEO y, a continuación, se desconectan mediante la macro [**capDriverDisconnect**](/windows/desktop/api/Vfw/nf-vfw-capdriverdisconnect) :
+En el ejemplo siguiente se conecta la ventana de captura con el identificador *hWndC* al controlador MSVIDEO y, a continuación, se desconecta mediante la macro [**capDriverDisconnect:**](/windows/desktop/api/Vfw/nf-vfw-capdriverdisconnect)
 
 
 ```C++
@@ -35,12 +35,12 @@ capDriverDisconnect (hWndC);
 
 <dl> <dt>
 
-[Uso de la captura de vídeo](using-video-capture.md)
+[Uso de captura de vídeo](using-video-capture.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

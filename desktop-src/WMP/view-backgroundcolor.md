@@ -1,9 +1,9 @@
 ---
-title: VIEW. backgroundColor
-description: El atributo backgroundColor especifica o recupera el color de fondo de la vista o la subvista.
+title: VIEW.backgroundColor
+description: El atributo backgroundColor especifica o recupera el color de fondo de VIEW o SUBVIEW.
 ms.assetid: 02804e03-3518-4825-8ad0-bf91f74b5f74
 keywords:
-- VIEW. backgroundColor Windows Media Player
+- VIEW.backgroundColor Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 73bbee10c6f442c9c03f46baa26251a7f6f85c22
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5081b8bf6a0f9790c7d9bc1baf3cf32e924029716241f4d38c87f1cc3e7d8fbb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649621"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119615485"
 ---
-# <a name="viewbackgroundcolor"></a>VIEW. backgroundColor
+# <a name="viewbackgroundcolor"></a>VIEW.backgroundColor
 
-El atributo **BackgroundColor** especifica o recupera el color de fondo de la **vista** o la **subvista**.
+El **atributo backgroundColor** especifica o recupera el color de fondo de **VIEW** o **SUBVIEW.**
 
 ``` syntax
         elementID.backgroundColor
@@ -29,17 +29,17 @@ El atributo **BackgroundColor** especifica o recupera el color de fondo de la **
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura que contiene cualquier valor de color de Microsoft Internet Explorer o el valor "none". Tiene un valor predeterminado de "blanco" para los elementos de **vista** o "ninguno" para los elementos de la **vista previa** .
+Este atributo es una cadena de **lectura** y escritura que contiene cualquier valor de color Internet Explorer microsoft o el valor "none". Tiene un valor predeterminado de "white" para **los elementos VIEW** o "none" para los elementos **SUBVIEW.**
 
-En un paquete de descarga de Windows Media, si especifica el atributo backgroundImage para un elemento de **vista** , también debe especificar el atributo **BackgroundColor** para ese elemento.
+En un Windows de descarga multimedia, si especifica el atributo backgroundImage para un elemento **VIEW,** también debe especificar el atributo **backgroundColor** para ese elemento.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -50,7 +50,7 @@ En un paquete de descarga de Windows Media, si especifica el atributo background
 [**Referencia de color**](color-reference.md)
 </dt> <dt>
 
-[**Elemento de vista**](view-element.md)
+[**ELEMENTO VIEW**](view-element.md)
 </dt> </dl>
 
  

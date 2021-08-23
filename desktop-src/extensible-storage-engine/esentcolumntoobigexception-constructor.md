@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentColumnTooBigException'
-title: Constructor de EsentColumnTooBigException
+description: 'Más información sobre: Constructor EsentColumnTooBigException'
+title: Constructor EsentColumnTooBigException
 TOCTitle: 'EsentColumnTooBigException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentColumnTooBigException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentcolumntoobigexception.esentcolumntoobigexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 248b6811b0260914550399bb979a02b2b6133a22
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4d1e148ab60221ac50f8966045137ff806b10daa6473eb66c82129b80605a220
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119041693"
 ---
-# <a name="esentcolumntoobigexception-constructor"></a>Constructor de EsentColumnTooBigException
+# <a name="esentcolumntoobigexception-constructor"></a>Constructor EsentColumnTooBigException
 
 Inicializa una nueva instancia de la clase EsentColumnTooBigException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentColumnTooBigException()
 public EsentColumnTooBigException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentColumnTooBigException()
 
 [Miembros de EsentColumnTooBigException](./esentcolumntoobigexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

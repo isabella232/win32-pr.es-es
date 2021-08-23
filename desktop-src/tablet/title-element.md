@@ -4,12 +4,12 @@ ms.assetid: efeed3a6-de5e-4698-9dc3-d0acb3d13dee
 title: Elemento Title
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef687f809aae5c3722cdad84ee63d79c7bfcfb21
-ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
+ms.openlocfilehash: 52648e3f5783e706c91cf42a041e3a2e01952427ea4f66381405789827aa2eee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111432227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119589325"
 ---
 # <a name="title-element"></a>Elemento Title
 
@@ -45,7 +45,7 @@ Contiene información de título sobre la nota de diario.
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Requerido</th>
+<th>Obligatorio</th>
 <th>Descripción</th>
 <th>Valores posibles</th>
 </tr>
@@ -54,7 +54,7 @@ Contiene información de título sobre la nota de diario.
 <tr class="odd">
 <td><strong>Estilo</strong></td>
 <td><strong>xs:string</strong></td>
-<td>Requerido</td>
+<td>Obligatorio</td>
 <td>Especifica el tipo de borde que rodea el título de la nota.</td>
 <td><ul>
 <li>Ninguno</li>
@@ -68,7 +68,7 @@ Contiene información de título sobre la nota de diario.
 <tr class="even">
 <td><strong>DateStyle</strong></td>
 <td><strong>xs:string</strong></td>
-<td>Requerido</td>
+<td>Obligatorio</td>
 <td>Define si el título incluye una fecha o no.</td>
 <td><ul>
 <li>Ninguno</li>

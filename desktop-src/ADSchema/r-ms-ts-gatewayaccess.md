@@ -13,18 +13,18 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b3b9ac561d502e63ed2628c5c4a86c43c852a61
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4ae083bc3741825dcd6739c17f8f308b529bd867d338213f46e73a681e1b0538
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104079862"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119531655"
 ---
 # <a name="ms-ts-gatewayaccess-property-set"></a>Conjunto de propiedades MS-TS-GatewayAccess
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|--------------------------------------|
 | CN           | MS-TS-GatewayAccess                  |
 | Display-Name | MS-TS-GatewayAccess                  |
@@ -42,10 +42,10 @@ ms.locfileid: "104079862"
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|-------------------------------------------|
 | Applies-To              | [**Computer**](c-computer.md)<br/> |
-| Localización: ID. de presentación | 74                                        |
+| Localization-Display-ID | 74                                        |
 | Miembros del conjunto de propiedades    | \-                                        |
 
 
@@ -56,8 +56,8 @@ ms.locfileid: "104079862"
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Computer**](c-computer.md)<br/> [**Cuenta de servicio de MS-DS-Managed**](c-msds-managedserviceaccount.md)<br/> |
-| Localización: ID. de presentación | 74                                                                                                                         |
+| Applies-To              | [**Computer**](c-computer.md)<br/> [**ms-DS-Managed-Service-Account**](c-msds-managedserviceaccount.md)<br/> |
+| Localization-Display-ID | 74                                                                                                                         |
 | Miembros del conjunto de propiedades    | \-                                                                                                                         |
 
 
@@ -68,8 +68,8 @@ ms.locfileid: "104079862"
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Computer**](c-computer.md)<br/> [**Cuenta de servicio de MS-DS-Managed**](c-msds-managedserviceaccount.md)<br/> |
-| Localización: ID. de presentación | 74                                                                                                                         |
+| Applies-To              | [**Computer**](c-computer.md)<br/> [**ms-DS-Managed-Service-Account**](c-msds-managedserviceaccount.md)<br/> |
+| Localization-Display-ID | 74                                                                                                                         |
 | Miembros del conjunto de propiedades    | \-                                                                                                                         |
 
 

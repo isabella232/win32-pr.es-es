@@ -1,23 +1,23 @@
 ---
-title: Referencia de la extensión ADSI para Servicios de Escritorio remoto configuración de usuario
+title: Referencia de la extensión ADSI para la configuración Servicios de Escritorio remoto usuario
 description: Métodos de propiedad que puede usar para examinar y configurar Servicios de Escritorio remoto propiedades de usuario.
 ms.assetid: 7c8b654d-5899-4f4d-8341-92e0650e403b
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la clase IADsTSUserEx
-- Servicios de Escritorio remoto Servicios de Escritorio remoto, clase IADsTSUserEx
+- Clase IADsTSUserEx Servicios de Escritorio remoto
+- Servicios de Escritorio remoto Servicios de Escritorio remoto , clase IADsTSUserEx
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 54fb8cca961ddc48e2444da55f6b507120bc468e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1ade30d34118f10afda4b03572f026fc302b709f6e8e81b3087b607c2883f2cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104532020"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138028"
 ---
-# <a name="reference-for-the-adsi-extension-for-remote-desktop-services-user-configuration"></a>Referencia de la extensión ADSI para Servicios de Escritorio remoto configuración de usuario
+# <a name="reference-for-the-adsi-extension-for-remote-desktop-services-user-configuration"></a>Referencia de la extensión ADSI para la configuración Servicios de Escritorio remoto usuario
 
-La extensión ADSI para Servicios de Escritorio remoto configuración de usuario permite a los administradores de dominio escribir scripts para automatizar el mantenimiento de las propiedades de usuario específicas de Servicios de Escritorio remoto. Incluye la interfaz dual siguiente.
+La extensión ADSI para Servicios de Escritorio remoto usuario permite a los administradores de dominio escribir scripts para automatizar el mantenimiento de Servicios de Escritorio remoto propiedades de usuario específicas. Incluye la siguiente interfaz dual.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -26,13 +26,13 @@ La extensión ADSI para Servicios de Escritorio remoto configuración de usuario
 [**IADsTSUserEx**](/windows/desktop/api/Tsuserex/nn-tsuserex-iadstsuserex)
 </dt> <dd>
 
-Se utiliza para examinar y configurar las propiedades de usuario de Servicios de Escritorio remoto.
+Se usa para examinar y configurar Servicios de Escritorio remoto propiedades de usuario.
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,21 +1,21 @@
 ---
-description: El \_ método get SessionID obtiene el valor de NTP de 32 bits (Protocolo de tiempo de red) que actúa como identificador de sesión. Se genera automáticamente cuando se crea la sesión.
+description: El método get SessionId obtiene el valor NTP de 32 bits (Protocolo de tiempo de \_ red) que actúa como identificador de sesión. Esto se genera automáticamente cuando se crea la sesión.
 ms.assetid: 5177f120-4b93-40bc-9481-aedf65a8dee9
-title: 'Método ITSdp:: get_SessionId (Sdpblb. h)'
+title: Método ITSdp::get_SessionId (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ad593b61f4c935a220e59383ae170569f04af54
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 67f7e8ea9bef17e5cb34ca23443b1f16f815c964c3cf76b9b122878e8662d051
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690332"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119621545"
 ---
-# <a name="itsdpget_sessionid-method"></a>ITSdp:: get \_ SessionID (método)
+# <a name="itsdpget_sessionid-method"></a>ItSdp::get \_ SessionId (método)
 
-\[ Las interfaces y controles de conferencias de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y las versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[Las interfaces y los controles de conferencia de telefonía IP de Rendezvous no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-El método **Get \_ SessionID** obtiene el valor de NTP de 32 bits (Protocolo de tiempo de red) que actúa como identificador de sesión. Se genera automáticamente cuando se crea la sesión.
+El **método \_ get SessionId** obtiene el valor NTP de 32 bits (Protocolo de tiempo de red) que actúa como identificador de sesión. Esto se genera automáticamente cuando se crea la sesión.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,7 +32,7 @@ HRESULT get_SessionId(
 
 <dl> <dt>
 
-*pSessionId* \[ enuncia\]
+*pSessionId* \[ out\]
 </dt> <dd>
 
 Puntero al identificador de sesión.
@@ -47,10 +47,10 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                                   | Descripción                                                     |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>          | El método se realizó correctamente.<br/>                                    |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | El parámetro *pSessionId* no es válido.<br/>             |
-| <dl> <dt>**\_puntero E**</dt> </dl>     | El parámetro *pSessionId* no es un puntero válido.<br/>   |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No hay memoria suficiente para realizar la operación.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | El método se realizó correctamente.<br/>                                    |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | El *parámetro pSessionId* no es válido.<br/>             |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>     | El *parámetro pSessionId* no es un puntero válido.<br/>   |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No existe memoria suficiente para realizar la operación.<br/> |
 | <dl> <dt>**E \_ FAIL**</dt> </dl>        | Error no especificado.<br/>                                   |
 | <dl> <dt>**E \_ NOTIMPL**</dt> </dl>     | Este método aún no se ha implementado.<br/>                  |
 
@@ -58,19 +58,19 @@ Este método puede devolver uno de estos valores.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor devuelto de este método podría ser **ULong**, pero Visual Basic no admite el tipo **ULong** . Un **valor Double** es el siguiente tipo más pequeño que abarca todo el intervalo de valores requerido.
+El valor devuelto de este método podría ser **ULONG,** Visual Basic no admite el **tipo ULONG.** Double **es** el siguiente tipo más pequeño que abarca todo el intervalo de valores necesarios.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,0 o posterior<br/>                                                 |
-| Encabezado<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
+| Header<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 

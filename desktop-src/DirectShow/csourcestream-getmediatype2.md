@@ -1,7 +1,7 @@
 ---
 description: El método GetMediaType recupera un tipo de medio preferido.
 ms.assetid: 85605885-adb5-4f13-91af-48bf74684eca
-title: 'CSourceStream. GetMediaType (método) (Source. h): parámetro pMediaType'
+title: 'Método CSourceStream.GetMediaType (Source.h): parámetro pMediaType'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8306da8451d4af7da8ce4f4c7d4d3f6fd367e1ec
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: 2850d08726337f1ff43ad09319aea8b0af95d107ad9dad9c0f89ce94474c7261
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106389188"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073199"
 ---
-# <a name="csourcestreamgetmediatype-method-sourceh"></a>CSourceStream. GetMediaType (método) (Source. h)
+# <a name="csourcestreamgetmediatype-method-sourceh"></a>Método CSourceStream.GetMediaType (Source.h)
 
 El `GetMediaType` método recupera un tipo de medio preferido.
 
@@ -45,22 +45,22 @@ virtual HRESULT GetMediaType(
 *pMediaType* 
 </dt> <dd>
 
-Puntero a un objeto [**CMediaType**](cmediatype.md) que recibe el tipo de medio.
+Puntero a un [**objeto CMediaType**](cmediatype.md) que recibe el tipo de medio.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores **HRESULT** que se muestran en la tabla siguiente.
+Devuelve uno de los **valores HRESULT** que se muestran en la tabla siguiente.
 
 
 
 | Código devuelto                                                                                            | Descripción                      |
 |--------------------------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>                   | Correcto.<br/>              |
-| <dl> <dt>**VFW \_ S \_ no hay \_ más \_ elementos**</dt> </dl> | Índice fuera del intervalo.<br/>   |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>           | Índice inferior a cero.<br/> |
-| <dl> <dt>**E \_ inesperado**</dt> </dl>           | error inesperado.<br/>     |
+| <dl> <dt>**S \_ OK**</dt> </dl>                   | Correcto.<br/>              |
+| <dl> <dt>**VFW \_ S \_ NO \_ MORE \_ ITEMS**</dt> </dl> | Índice fuera del intervalo.<br/>   |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>           | Índice menor que cero.<br/> |
+| <dl> <dt>**E \_ UNEXPECTED**</dt> </dl>           | error inesperado.<br/>     |
 
 
 
@@ -68,12 +68,12 @@ Devuelve uno de los valores **HRESULT** que se muestran en la tabla siguiente.
 
 ## <a name="remarks"></a>Comentarios
 
-Hay dos versiones de este método. Una versión invalida el método [**CBasePin:: GetMediaType**](cbasepin-getmediatype.md) y toma un valor de índice como parámetro. La otra versión está diseñada para recuperar un tipo de medio único, por lo que carece del parámetro de índice.
+Hay dos versiones de este método. Una versión invalida el [**método CBasePin::GetMediaType**](cbasepin-getmediatype.md) y toma un valor de índice como parámetro. La otra versión está diseñada para recuperar un único tipo de medio, por lo que carece del parámetro index.
 
-El método de un solo parámetro devuelve E \_ inesperado. El método de dos parámetros comprueba que el parámetro *iPosition* es cero y, a continuación, llama a la versión de un solo parámetro. En función del número de tipos de medios que admita el PIN, debe invalidar uno de estos métodos:
+El método de parámetro único devuelve E \_ UNEXPECTED. El método de dos parámetros comprueba que el parámetro *iPosition* es cero y, a continuación, llama a la versión de parámetro único. En función del número de tipos de medios que admita el pin, debe invalidar uno de estos métodos:
 
--   Si el PIN admite exactamente un tipo de medio, invalide la versión de un solo parámetro. Rellene el tipo de medio que admite el PIN.
--   Si el PIN admite más de un tipo de medio, invalide la versión de dos parámetros. También invalide el método [**CSourceStream:: CheckMediaType**](csourcestream-checkmediatype.md) .
+-   Si el pin admite exactamente un tipo de medio, invalide la versión de parámetro único. Rellene el tipo de medio que admite el pin.
+-   Si el pin admite más de un tipo de medio, invalide la versión de dos parámetros. Invalide también [**el método CSourceStream::CheckMediaType.**](csourcestream-checkmediatype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,8 +81,8 @@ El método de un solo parámetro devuelve E \_ inesperado. El método de dos par
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Source. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Source.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -90,7 +90,7 @@ El método de un solo parámetro devuelve E \_ inesperado. El método de dos par
 
 <dl> <dt>
 
-[**Clase CSourceStream**](csourcestream.md)
+[**CSourceStream (clase)**](csourcestream.md)
 </dt> </dl>
 
  

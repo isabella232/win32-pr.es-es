@@ -1,9 +1,9 @@
 ---
-title: 'Métodos Texture2DArray:: Texture2DArray GatherRed'
-description: Muestrea un Texture2DArray y devuelve el componente rojo.
+title: Métodos GatherRed texture2DArray::Texture2DArray
+description: Muestrea un objeto Texture2DArray y devuelve el componente rojo.
 ms.assetid: 93171b98-1801-41a5-9ba2-7dd5b539ae34
 keywords:
-- GatherRed métodos HLSL
+- Métodos de GatherRed HLSL
 topic_type:
 - apiref
 api_type:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 6d77fd25e57d18948287fc48d381bdc687da2a25
-ms.sourcegitcommit: 5724b38883e518ac565e1b266defa85ad0941bb2
+ms.openlocfilehash: 18dfdc90ccd2339f3f245b5c663fe120436d0664bcae398e29512db8a68b838d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "104279766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119406085"
 ---
-# <a name="texture2darraygatherred-methods"></a>Texture2DArray:: GatherRed (métodos)
+# <a name="texture2darraygatherred-methods"></a>Métodos Texture2DArray::GatherRed
 
-Devuelve los componentes rojo de los cuatro valores de textura de un [**Texture2DArray**](sm5-object-texture2darray.md)que se utilizarían en una operación de filtrado bilineal.
+Devuelve los componentes rojos de los cuatro valores de texel de [**Texture2DArray**](sm5-object-texture2darray.md)que se usarían en una operación de filtrado bi lineal.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,10 +29,10 @@ Devuelve los componentes rojo de los cuatro valores de textura de un [**Texture2
 
 | Método                                                                                                      | Descripción                                                                                                                                     |
 |:------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**GatherRed (S, Float, int)**](sm5-object-texture2darray-gatherred.md)                                        | Devuelve los componentes rojo de los cuatro valores de textura que se utilizarían en una operación de filtrado bilineal.<br/>                                 |
-| [**GatherRed (S, Float, int, uint)**](t2darray-gatherred-s-float-int-uint-.md)                                  | Devuelve los componentes rojo de los cuatro valores de textura que se utilizarían en una operación de filtrado bilineal, junto con el estado de asignación de mosaicos.<br/> |
-| [**GatherRed (S, Float, INT2, INT2, INT2, INT2)**](t2darray-gatherred-s-float-int2-int2-int2-int2-.md)            | Devuelve los componentes rojo de los cuatro valores de textura que se utilizarían en una operación de filtrado bilineal.<br/>                                 |
-| [**GatherRed (S, Float, INT2, INT2, INT2, INT2, uint)**](t2darray-gatherred-s-float-int2-int2-int2-int2-uint-.md)  | Devuelve los componentes rojo de los cuatro valores de textura que se utilizarían en una operación de filtrado bilineal, junto con el estado de asignación de mosaicos.<br/> |
+| [**GatherRed(S,float,int)**](sm5-object-texture2darray-gatherred.md)                                        | Devuelve los componentes rojos de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal.<br/>                                 |
+| [**GatherRed(S,float,int,uint)**](t2darray-gatherred-s-float-int-uint-.md)                                  | Devuelve los componentes rojos de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal, junto con el estado de asignación de mosaicos.<br/> |
+| [**GatherRed(S,float,int2,int2,int2,int2,int2)**](t2darray-gatherred-s-float-int2-int2-int2-int2-.md)            | Devuelve los componentes rojos de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal.<br/>                                 |
+| [**GatherRed(S,float,int2,int2,int2,int2,uint)**](t2darray-gatherred-s-float-int2-int2-int2-int2-uint-.md)  | Devuelve los componentes rojos de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal, junto con el estado de asignación de mosaicos.<br/> |
 
 
 
