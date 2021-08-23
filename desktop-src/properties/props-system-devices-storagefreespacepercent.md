@@ -1,19 +1,19 @@
 ---
-description: Espacio de almacenamiento libre total en el dispositivo, en forma de porcentaje.
+description: Espacio de almacenamiento libre total en el dispositivo, como porcentaje.
 ms.assetid: ede845c6-abd8-4bb1-b0d8-c1f3facffa41
-title: System. Devices. StorageFreeSpacePercent
+title: System.Devices.StorageFreeSpacePercent
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: df717e488d1fabac811a2629a75160a2e7f81df9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 64c46cd5e8eef5c7daf90f27844555c1511e4a4604cfd27e0ed4b2829b30316d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001810"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119097064"
 ---
-# <a name="systemdevicesstoragefreespacepercent"></a>System. Devices. StorageFreeSpacePercent
+# <a name="systemdevicesstoragefreespacepercent"></a>System.Devices.StorageFreeSpacePercent
 
-Espacio de almacenamiento libre total en el dispositivo, en forma de porcentaje.
+Espacio de almacenamiento libre total en el dispositivo, como porcentaje.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -51,9 +51,9 @@ propertyDescription
             defineToken = STORAGESPACE_10_PERCENT
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -68,7 +68,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -80,7 +80,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -98,7 +98,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

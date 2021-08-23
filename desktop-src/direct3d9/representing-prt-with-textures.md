@@ -13,7 +13,7 @@ ms.locfileid: "118797930"
 ---
 # <a name="representing-prt-with-textures-direct3d-9"></a>Representar PRT con texturas (Direct3D 9)
 
-El ejemplo PRTDemo y el simulador PRTCmdLine incluidos en el SDK de DirectX representan vectores de transferencia en los vértices de una malla. Para representar la señal PRT con precisión, esto puede requerir teselaciones que pueden ser poco prácticas para los juegos actuales. La representación de vectores de transferencia en mapas de textura es un enfoque alternativo que tiene el mismo costo de datos independientemente de la complejidad de la malla. Hay varias maneras de generar mapas de textura de vector de transferencia mediante la biblioteca PRT D3DX.
+El ejemplo PRTDemo y el simulador PRTCmdLine incluidos en el SDK de DirectX representan vectores de transferencia en los vértices de una malla. Para representar la señal PRT con precisión, esto puede requerir teselaciones que pueden ser poco prácticas para los juegos actuales. Representar vectores de transferencia en mapas de textura es un enfoque alternativo que tiene el mismo costo de datos independientemente de la complejidad de la malla. Hay varias maneras de generar mapas de textura de vector de transferencia mediante la biblioteca PRT D3DX.
 
 ## <a name="precomputing-transfer-vectors"></a>Calcular previamente vectores de transferencia
 
@@ -22,7 +22,7 @@ Un enfoque sería modificar los ejemplos PRTDemo y PRTCmdLine para calcular un v
 1.  Modifique la llamada a [**D3DXCreatePRTEngine para**](d3dxcreateprtengine.md) extraer las coordenadas de textura de la malla (ExtractUVs debe ser **TRUE)**
 2.  Reemplace [**las llamadas D3DXCreatePRTBuffer**](d3dxcreateprtbuffer.md) por [**D3DXCreatePRTBufferTex**](d3dxcreateprtbuffertex.md) con el mismo tamaño de textura.
 
-Todos los métodos ID3DXPRTEngine funcionan con simulaciones por texel, excepto: ComputeBounceAdaptive, ComputeSSAdaptive, ComputeSS y ComputeDirectLightingSHAdaptive. Aunque la simulación de espacio de textura generará el resultado correcto, a menudo puede ser bastante lento, ya que lo más probable es que esté computando vectores de transferencia a una alta densidad.
+Todos los métodos ID3DXPRTEngine funcionan con simulaciones por texel, excepto ComputeBounceAdaptive, ComputeSSAdaptive, ComputeSS y ComputeDirectLightingSHAdaptive. Aunque la simulación de espacio de textura generará el resultado correcto, a menudo puede ser bastante lento, ya que lo más probable es que esté computando vectores de transferencia a una alta densidad.
 
 Otro enfoque consiste en calcular una simulación de PRT adaptable por vértice (con coordenadas de textura que se usarán para los datos por elemento de textura) y, a continuación, llamar a [**ID3DXPRTEngine::ResampleBuffer**](id3dxprtengine--resamplebuffer.md) (mediante un búfer de salida creado mediante [**D3DXCreatePRTBufferTex en**](d3dxcreateprtbuffertex.md) la resolución adecuada). Esto funciona con todas las funcionalidades de PRT D3DX del SDK y a menudo puede ser mucho más eficaz que calcular directamente un búfer de transferencia por textura.
 

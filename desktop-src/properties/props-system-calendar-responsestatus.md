@@ -1,19 +1,19 @@
 ---
-description: Almacena el estado de las respuestas de un usuario a las reuniones en el calendario.
+description: Almacena el estado de las respuestas de un usuario a las reuniones del calendario.
 ms.assetid: 5cbc0306-20c7-4f12-bb8b-3889b93dfd69
-title: System. Calendar. ResponseStatus
+title: System.Calendar.ResponseStatus
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7af8f69d177dba751ead02a0ee71f5ea4a42ae4a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e3900e95e6cd0a9d9becc9e86b44c391e06ad02bf1f592d75e8ea6d2896b1316
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155941"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119098552"
 ---
-# <a name="systemcalendarresponsestatus"></a>System. Calendar. ResponseStatus
+# <a name="systemcalendarresponsestatus"></a>System.Calendar.ResponseStatus
 
-Almacena el estado de las respuestas de un usuario a las reuniones en el calendario.
+Almacena el estado de las respuestas de un usuario a las reuniones del calendario.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -103,9 +103,9 @@ propertyDescription
             defineName = CALENDAR_RESPONSESTATUS_NOTRESPONDED
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -120,7 +120,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -132,7 +132,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -150,7 +150,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

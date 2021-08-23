@@ -25,7 +25,7 @@ propertyDescription
       type = UI_SWATCHCOLORTYPE
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Una \_ aplicación usa ui PKEY FontProperties ForegroundColorType, junto con la interfaz de usuario \_ \_ [ \_ PKEY \_ FontProperties \_ ForegroundColor](windowsribbon-reference-properties-uipkey-fontproperties-foregroundcolor.md),  para consultar la configuración de la galería de colores de texto.
 

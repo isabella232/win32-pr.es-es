@@ -1,25 +1,25 @@
 ---
-title: Extraer el contenido del paquete de la aplicación (C++)
-description: Obtenga información sobre cómo extraer archivos del paquete de aplicación de una aplicación de Windows mediante la API de empaquetado.
+title: Extracción del contenido del paquete de aplicación (C++)
+description: Obtenga información sobre cómo extraer archivos del paquete de aplicación para una Windows aplicación mediante la API de empaquetado.
 ms.assetid: 72C368F9-2EBA-4930-81CF-9B85717CC0AA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8830ba7bc21553a9f8145bc97a6b98b3e32729af
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 4960a2b30ad7946f1f68e11df5170ae5246f3c36564a7e5e9bc27595be0b7903
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104420526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119049053"
 ---
-# <a name="extract-app-package-contents-c"></a>Extraer el contenido del paquete de la aplicación (C++)
+# <a name="extract-app-package-contents-c"></a>Extracción del contenido del paquete de aplicación (C++)
 
-Obtenga información sobre cómo extraer archivos del paquete de aplicación de una aplicación de Windows mediante la [API de empaquetado](interfaces.md).
+Obtenga información sobre cómo extraer archivos del paquete de aplicación para una Windows aplicación mediante la [API de empaquetado](interfaces.md).
 
-También puede usar la herramienta MakeAppx.exe para extraer archivos de un paquete de aplicación o agrupación. Vea [extraer archivos de un paquete o agrupación](/windows/msix/package/create-app-package-with-makeappx-tool#extract-files-from-a-package-or-bundle) para obtener más información.
+También puede usar la herramienta MakeAppx.exe para extraer archivos de un paquete o paquete de aplicación. Consulte [Extracción de archivos de un paquete o agrupación](/windows/msix/package/create-app-package-with-makeappx-tool#extract-files-from-a-package-or-bundle) para obtener más información.
 
-### <a name="create-a-package-reader"></a>Crear un lector de paquetes
+### <a name="create-a-package-reader"></a>Creación de un lector de paquetes
 
-Para crear un lector de paquetes, llame al método [**IAppxFactory:: CreatePackageReader**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfactory-createpackagereader) . El primer parámetro es un flujo de entrada para el paquete (archivo. appx). El segundo parámetro es un parámetro de salida que recibe un puntero a un puntero [**IAppxPackageReader**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxpackagereader) .
+Para crear un lector de paquetes, llame al [**método IAppxFactory::CreatePackageReader.**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfactory-createpackagereader) El primer parámetro es un flujo de entrada para el paquete (archivo .appx). El segundo parámetro es un parámetro de salida que recibe un puntero a un [**puntero IAppxPackageReader.**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxpackagereader)
 
 
 ```C++
@@ -127,9 +127,9 @@ HRESULT GetPackageReader(
 
 
 
-### <a name="extract-footprint-files"></a>Extraer archivos de superficie
+### <a name="extract-footprint-files"></a>Extracción de archivos de superficie
 
-Llame al método [**IAppxPackageReader:: GetFootprintFile**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackagereader-getfootprintfile) para obtener cada archivo de superficie. Cada archivo de superficie se representa mediante una interfaz [**IAppxFile**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxfile) . La `ExtractFile` función de este ejemplo usa los métodos [**GetName**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfile-getname), [**GetContentType**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfile-getcontenttype)y [](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfile-getsize) método de **IAppxFile** para mostrar información básica sobre el archivo de superficie.
+Llame al [**método IAppxPackageReader::GetFootprintFile**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackagereader-getfootprintfile) para obtener cada archivo de superficie. Cada archivo de superficie se representa mediante una [**interfaz IAppxFile.**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxfile) La función de este ejemplo usa los métodos `ExtractFile` [**GetName**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfile-getname), [**GetContentType**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfile-getcontenttype)y [**GetSize**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfile-getsize) de **IAppxFile** para mostrar información básica sobre el archivo de superficie.
 
 
 ```C++
@@ -267,7 +267,7 @@ HRESULT ExtractFile(
 
 
 
-El código anterior usa estas definiciones de variable y la `GetOutputStream` función auxiliar.
+El código anterior usa estas definiciones de variables y la `GetOutputStream` función auxiliar.
 
 
 ```C++
@@ -354,9 +354,9 @@ HRESULT GetOutputStream(
 
 
 
-### <a name="extract-payload-files"></a>Extraer archivos de carga
+### <a name="extract-payload-files"></a>Extracción de archivos de carga
 
-Llame al método [**IAppxPackageReader:: GetPayloadFiles**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackagereader-getpayloadfiles) para enumerar los archivos de carga. Cada archivo de carga se representa mediante una interfaz [**IAppxFile**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxfile) . La `ExtractFile` función de este ejemplo usa los métodos [**GetName**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfile-getname), [**GetContentType**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfile-getcontenttype)y [](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfile-getsize) método de **IAppxFile** para mostrar información básica sobre el archivo de carga.
+Llame al [**método IAppxPackageReader::GetPayloadFiles**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackagereader-getpayloadfiles) para enumerar los archivos de carga. Cada archivo de carga se representa mediante una [**interfaz IAppxFile.**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxfile) La función de este ejemplo usa los métodos `ExtractFile` [**GetName**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfile-getname), [**GetContentType**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfile-getcontenttype)y [**GetSize**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfile-getsize) de **IAppxFile** para mostrar información básica sobre el archivo de carga.
 
 Este código usa la `ExtractFile` función auxiliar que se muestra en el paso anterior para crear la secuencia para el manifiesto del paquete.
 
@@ -422,9 +422,9 @@ HRESULT ExtractPayloadFiles(
 
 
 
-### <a name="clean-up-the-package-reader"></a>Limpiar el lector de paquetes
+### <a name="clean-up-the-package-reader"></a>Limpieza del lector de paquetes
 
-Antes de volver de la `wmain` función, llame al método [**Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) para limpiar el lector de paquetes y llamar a la función [**CoUninitialize**](/windows/desktop/api/combaseapi/nf-combaseapi-couninitialize) .
+Antes de volver de la función , llame al método Release para limpiar el lector de paquetes y `wmain` llamar a la función [**CoUninitialize.**](/windows/desktop/api/combaseapi/nf-combaseapi-couninitialize) [](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release)
 
 
 ```C++
@@ -447,7 +447,7 @@ CoUninitialize();
 **Ejemplos**
 </dt> <dt>
 
-[Ejemplo de extracción de contenido de paquete de aplicación](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/AppxPackingExtractAppx)
+[Ejemplo de extracción del contenido del paquete de aplicación](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/AppxPackingExtractAppx)
 </dt> <dt>
 
 **Referencia**
@@ -456,6 +456,6 @@ CoUninitialize();
 [**IAppxPackageReader**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxpackagereader)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

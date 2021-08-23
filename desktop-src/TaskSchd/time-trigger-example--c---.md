@@ -1,48 +1,48 @@
 ---
 title: Ejemplo de desencadenador de tiempo (C++)
-description: En este ejemplo de C++ se muestra cómo crear una tarea programada para ejecutar el Bloc de notas a una hora especificada.
+description: En este ejemplo de C++ se muestra cómo crear una tarea que está programada para ejecutar Bloc de notas en un momento especificado.
 ms.assetid: e45b18b0-5a7f-4283-b42f-15e9ffcfaff7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 39f7f8d3c8bd1f179b0def9be069d710a2e126a6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 227d6fe24aa63b430376a7ce50d23b4b8ecd282f807315384b42175b9903d1b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103774443"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059662"
 ---
 # <a name="time-trigger-example-c"></a>Ejemplo de desencadenador de tiempo (C++)
 
-En este ejemplo de C++ se muestra cómo crear una tarea programada para ejecutar el Bloc de notas a una hora especificada. La tarea contiene un desencadenador basado en tiempo que especifica un límite de inicio y un límite de fin para la tarea. La tarea también contiene una acción que especifica la tarea para ejecutar el Bloc de notas. La tarea se registra mediante un tipo de inicio de sesión interactivo, lo que significa que la tarea se ejecuta en el contexto de seguridad del usuario que ejecuta la aplicación. La tarea también contiene la configuración de inactividad, que especifica cómo Programador de tareas realiza tareas cuando el equipo está en una condición de inactividad.
+En este ejemplo de C++ se muestra cómo crear una tarea que está programada para ejecutar Bloc de notas en un momento especificado. La tarea contiene un desencadenador basado en tiempo que especifica un límite inicial y un límite final para la tarea. La tarea también contiene una acción que especifica la tarea que se ejecutará Bloc de notas. La tarea se registra mediante un tipo de inicio de sesión interactivo, lo que significa que la tarea se ejecuta en el contexto de seguridad del usuario que ejecuta la aplicación. La tarea también contiene la configuración inactiva, que especifica Programador de tareas realiza tareas cuando el equipo está en una condición de inactividad.
 
 En el procedimiento siguiente se describe cómo programar una tarea para iniciar un ejecutable en un momento determinado.
 
-**Programar el Bloc de notas para que se inicie a una hora específica**
+**Para programar Bloc de notas iniciar en un momento específico**
 
 1.  Inicialice COM y establezca la seguridad COM general.
-2.  Cree el objeto [**ITaskService**](/windows/desktop/api/taskschd/nn-taskschd-itaskservice) .
+2.  Cree el [**objeto ITaskService.**](/windows/desktop/api/taskschd/nn-taskschd-itaskservice)
 
     Este objeto permite crear tareas en una carpeta especificada.
 
-3.  Obtenga una carpeta de tareas para crear una tarea en.
+3.  Obtenga una carpeta de tareas en la que crear una tarea.
 
-    Use el método [**ITaskService:: GetFolder**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-getfolder) para obtener la carpeta y el método [**ITaskService:: newtask**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-newtask) para crear el objeto [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) .
+    Use el [**método ITaskService::GetFolder**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-getfolder) para obtener la carpeta y el método [**ITaskService::NewTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-newtask) para crear el [**objeto ITaskDefinition.**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition)
 
-4.  Defina la información sobre la tarea mediante el objeto [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) , como la información de registro de la tarea.
+4.  Defina información sobre la tarea mediante el [**objeto ITaskDefinition,**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) como la información de registro de la tarea.
 
-    Use la [**propiedad RegistrationInfo de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_registrationinfo) y otras propiedades de la interfaz [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) para definir la información de la tarea.
+    Use la [**propiedad RegistrationInfo de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_registrationinfo) y otras propiedades de la [**interfaz ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) para definir la información de la tarea.
 
-5.  Cree un desencadenador basado en el tiempo mediante la [**propiedad triggers de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_triggers) para tener acceso al [**ITriggerCollection**](/windows/desktop/api/taskschd/nn-taskschd-itriggercollection) de la tarea.
+5.  Cree un desencadenador basado en el tiempo mediante la propiedad Triggers de [**ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_triggers) para tener acceso a [**ITriggerCollection**](/windows/desktop/api/taskschd/nn-taskschd-itriggercollection) para la tarea.
 
-    Use el método [**ITriggerCollection:: Create**](/windows/desktop/api/taskschd/nf-taskschd-itriggercollection-create) (especificando el tipo de desencadenador que desea crear) para crear un desencadenador basado en tiempo. Esto le permite establecer el límite inicial y el límite final del desencadenador para que las acciones de la tarea se programen para ejecutarse en un momento determinado.
+    Use el [**método ITriggerCollection::Create**](/windows/desktop/api/taskschd/nf-taskschd-itriggercollection-create) (especificando el tipo de desencadenador que desea crear) para crear un desencadenador basado en tiempo. Esto le permite establecer el límite inicial y el límite final del desencadenador para que las acciones de la tarea se programen para que se ejecuten en un momento especificado.
 
-6.  Cree una acción para que la tarea se ejecute mediante la [**propiedad Actions de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_actions) para tener acceso a la interfaz [**IActionCollection**](/windows/desktop/api/taskschd/nn-taskschd-iactioncollection) de la tarea.
+6.  Cree una acción para que la tarea se ejecute mediante la propiedad Actions de [**ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_actions) para tener acceso a la [**interfaz IActionCollection**](/windows/desktop/api/taskschd/nn-taskschd-iactioncollection) de la tarea.
 
-    Use el método [**IActionCollection:: Create**](/windows/desktop/api/taskschd/nf-taskschd-iactioncollection-create) para especificar el tipo de acción que desea crear. En este ejemplo se usa un objeto [**IExecAction**](/windows/desktop/api/taskschd/nn-taskschd-iexecaction) , que representa una acción que ejecuta una operación de línea de comandos.
+    Use el [**método IActionCollection::Create**](/windows/desktop/api/taskschd/nf-taskschd-iactioncollection-create) para especificar el tipo de acción que desea crear. En este ejemplo se [**usa un objeto IExecAction,**](/windows/desktop/api/taskschd/nn-taskschd-iexecaction) que representa una acción que ejecuta una operación de línea de comandos.
 
-7.  Registre la tarea mediante el método [**ITaskFolder:: RegisterTaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertaskdefinition) .
+7.  Registre la tarea mediante el [**método ITaskFolder::RegisterTaskDefinition.**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertaskdefinition)
 
-En el siguiente ejemplo de C++ se muestra cómo programar una tarea para ejecutar el Bloc de notas un minuto después de registrar la tarea.
+En el siguiente ejemplo de C++ se muestra cómo programar una tarea para que se ejecute Bloc de notas un minuto después de registrar la tarea.
 
 
 ```C++
@@ -415,12 +415,12 @@ int __cdecl wmain()
 
 <dl> <dt>
 
-[Usar el Programador de tareas](using-the-task-scheduler.md)
+[Uso del Programador de tareas](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

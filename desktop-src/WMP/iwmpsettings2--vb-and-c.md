@@ -1,10 +1,10 @@
 ---
-title: Interfaz IWMPSettings2 (VB y C) (WMP. h)
+title: Interfaz IWMPSettings2 (VB y C) (Wmp.h)
 description: Proporciona propiedades y un método que complementan la interfaz IWMPSettings. Además de las propiedades y los métodos heredados de IWMPSettings, la interfaz IWMPSettings2 expone las siguientes propiedades.
 ms.assetid: 6bd0f6dd-df49-4c21-b47c-c8c63f85c2c0
 keywords:
-- IWMPSettings2 (VB y C) interfaz de Windows Media Player
-- IWMPSettings2 (VB y C) interfaz de Windows Media Player, se describe
+- Interfaz IWMPSettings2 (VB y C) Reproductor de Windows Media
+- Interfaz IWMPSettings2 (VB y C) Reproductor de Windows Media , descrita
 topic_type:
 - apiref
 api_name:
@@ -15,29 +15,29 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eb782433085544a94db0eab6b9314f1e4df488e5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4e227cc255eee625df926031369ef8be0fe270e377b143adff2c3ed2d9ab0aeb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700240"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135361"
 ---
 # <a name="iwmpsettings2-vb-and-c-interface"></a>Interfaz IWMPSettings2 (VB y C#)
 
-Proporciona propiedades y un método que complementan la interfaz **IWMPSettings** .
+Proporciona propiedades y un método que complementan la **interfaz IWMPSettings.**
 
-Además de las propiedades y los métodos heredados de **IWMPSettings**, la interfaz **IWMPSettings2** expone las siguientes propiedades.
+Además de las propiedades y los métodos heredados de **IWMPSettings,** la **interfaz IWMPSettings2** expone las siguientes propiedades.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IWMPSettings2 (VB y C#)** tiene estos tipos de miembros:
+La **interfaz IWMPSettings2 (VB y C#)** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **IWMPSettings2 (VB y C#)** tiene estos métodos.
+La **interfaz IWMPSettings2 (VB y C#)** tiene estos métodos.
 
 
 
@@ -51,7 +51,7 @@ La interfaz **IWMPSettings2 (VB y C#)** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La interfaz **IWMPSettings2 (VB y C#)** tiene estas propiedades.
+La **interfaz IWMPSettings2 (VB y C#)** tiene estas propiedades.
 
 
 
@@ -64,7 +64,7 @@ La interfaz **IWMPSettings2 (VB y C#)** tiene estas propiedades.
 
  
 
-Obtenga una interfaz **IWMPSettings2** convirtiendo el valor devuelto por la propiedad **AxWindowsMediaPlayer. Settings** .
+Obtenga una **interfaz IWMPSettings2** mediante la conversión del valor devuelto por la **propiedad AxWindowsMediaPlayer.settings.**
 
 
 
@@ -82,7 +82,7 @@ Obtenga una interfaz **IWMPSettings2** convirtiendo el valor devuelto por la pro
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>WMP. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmp.h</dt> </dl> |
 
 
 

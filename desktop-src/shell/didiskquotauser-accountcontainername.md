@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 5b9b0355-ea69-4c34-b0be-fc8e5855ec73
-ms.openlocfilehash: 1cb709ccc4fa0afcb56314bd097b1b0120b8b59a
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: a7a439fe36262e7f73fd7b839fd60af5b1b0a9b05f77769ab1d6a8c5ee9d06fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109843356"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119094240"
 ---
 # <a name="didiskquotauseraccountcontainername-property"></a>Propiedad DIDiskQuotaUser.AccountContainerName
 
@@ -39,7 +39,7 @@ AccountContainerName = DIDiskQuotaUser.AccountContainerName
 
 Valor de cadena que se establece en el nombre del contenedor de la cuenta del usuario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Para las cuentas sin información de servicios de directorio, esta propiedad contiene el nombre de dominio. Para las cuentas con información de servicios de directorio, esta propiedad contiene un nombre canónico con el nombre del objeto de terminación quitado.
 
@@ -55,7 +55,7 @@ Para las cuentas sin información de servicios de directorio, esta propiedad con
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

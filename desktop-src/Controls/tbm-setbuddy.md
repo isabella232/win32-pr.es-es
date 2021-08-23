@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TBM_SETBUDDY (commctrl. h)
-description: Asigna una ventana como la ventana relacionada para un control TrackBar. Las ventanas de amigos de la barra de desplazamiento se muestran automáticamente en una ubicación relativa a la orientación del control (horizontal o vertical).
+title: TBM_SETBUDDY mensaje (Commctrl.h)
+description: Asigna una ventana como ventana de compañeros para un control de barra de seguimiento. Las ventanas de barras de seguimiento se muestran automáticamente en una ubicación relativa a la orientación del control (horizontal o vertical).
 ms.assetid: ab35911f-bf81-47f3-98aa-0901aa877dea
 keywords:
-- TBM_SETBUDDY controles de mensajes de Windows
+- TBM_SETBUDDY controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ab33e53117933390d7a34ec75a49724003255108
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e4f2586c84740cb2d5e8b1f1aadfb910cd241270d3e18363accf1f166c3c35ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079072"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118167191"
 ---
-# <a name="tbm_setbuddy-message"></a>TBM \_ SETBUDDY
+# <a name="tbm_setbuddy-message"></a>Mensaje \_ SETBUDDY de TBM
 
-Asigna una ventana como la ventana relacionada para un control TrackBar. Las ventanas de amigos de la barra de desplazamiento se muestran automáticamente en una ubicación relativa a la orientación del control (horizontal o vertical).
+Asigna una ventana como ventana de compañeros para un control de barra de seguimiento. Las ventanas de barras de seguimiento se muestran automáticamente en una ubicación relativa a la orientación del control (horizontal o vertical).
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,14 +32,14 @@ Asigna una ventana como la ventana relacionada para un control TrackBar. Las ven
 *wParam* 
 </dt> <dd>
 
-Valor que especifica la ubicación en la que se va a mostrar la ventana relacionada. Este valor puede ser uno de los siguientes:
+Valor que especifica la ubicación en la que se va a mostrar la ventana del compañero. Este valor puede ser uno de los siguientes:
 
 
 
-| Value                                                                                                                                | Significado                                                                                                                                                                                                                                                                                         |
+| Valor                                                                                                                                | Significado                                                                                                                                                                                                                                                                                         |
 |--------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="TRUE"></span><span id="true"></span><dl> <dt>**REALES**</dt> </dl>    | El amigo aparecerá a la izquierda del control TrackBar si el control TrackBar usa el estilo [**TBS \_ horizontal**](trackbar-control-styles.md) . Si la barra de mandos usa el estilo [**\_ vertical de TBS**](trackbar-control-styles.md) , el amigo aparece sobre el control TrackBar.<br/>  |
-| <span id="FALSE"></span><span id="false"></span><dl> <dt>**ES**</dt> </dl> | El amigo aparecerá a la derecha del control TrackBar si el control TrackBar usa el estilo [**TBS \_ horizontal**](trackbar-control-styles.md) . Si la barra de mandos usa el estilo [**\_ vertical de TBS**](trackbar-control-styles.md) , el amigo aparece debajo del control TrackBar.<br/> |
+| <span id="TRUE"></span><span id="true"></span><dl> <dt>**Verdad**</dt> </dl>    | El compañero aparecerá a la izquierda de la barra de seguimiento si el control trackbar usa el [**estilo \_ HORZ de TBS.**](trackbar-control-styles.md) Si la barra de seguimiento usa el [**estilo \_ VERT de TBS,**](trackbar-control-styles.md) el compañero aparece encima del control trackbar.<br/>  |
+| <span id="FALSE"></span><span id="false"></span><dl> <dt>**Falso**</dt> </dl> | El compañero aparecerá a la derecha de la barra de seguimiento si el control trackbar usa el [**estilo \_ HORZ de TBS.**](trackbar-control-styles.md) Si la barra de seguimiento usa el [**estilo \_ VERT de TBS,**](trackbar-control-styles.md) el compañero aparece debajo del control trackbar.<br/> |
 
 
 
@@ -50,18 +50,18 @@ Valor que especifica la ubicación en la que se va a mostrar la ventana relacion
 *lParam* 
 </dt> <dd>
 
-Identificador de la ventana que se establecerá como el Buddy del control TrackBar.
+Identificador de la ventana que se establecerá como el compañero del control trackbar.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el identificador de la ventana que se asignó previamente al control en esa ubicación.
+Devuelve el identificador a la ventana que se asignó previamente al control en esa ubicación.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> Los controles de barra de seguimiento admiten hasta dos ventanas relacionadas. Esto puede ser útil cuando se debe mostrar texto o imágenes en cada extremo del control.
+> Los controles de barra de seguimiento admiten hasta dos ventanas de compañeros. Esto puede ser útil cuando debe mostrar texto o imágenes en cada extremo del control.
 
  
 
@@ -69,11 +69,11 @@ Devuelve el identificador de la ventana que se asignó previamente al control en
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

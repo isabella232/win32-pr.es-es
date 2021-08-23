@@ -22,7 +22,7 @@ El "directorio" del componente de proveedor de ejemplo consta de dos nodos raíz
 
 En términos jerárquicos, el nodo Espacio de nombres contiene "Seattle" y "Toronto". "Seattle" contiene "Bellevue" y "Redmond". "Bellevue" y "Redmond" contienen un conjunto de cuentas de usuario. "Toronto" contiene directamente las cuentas de usuario sin nodos organizativos intermedios.
 
-El componente de proveedor de ejemplo representa esta estructura con solo dos tipos Active Directory objeto: un objeto contenedor y un objeto hoja. "Seattle", "Toronto", "Bellevue" y "Redmond" son objetos de contenedor y cada cuenta de usuario es un objeto hoja.
+El componente de proveedor de ejemplo representa esta estructura con solo dos Active Directory de objeto: un objeto contenedor y un objeto hoja. "Seattle", "Toronto", "Bellevue" y "Redmond" son objetos de contenedor y cada cuenta de usuario es un objeto hoja.
 
 El componente de proveedor de ejemplo crea una clase de esquema denominada "Unidad organizativa" para un tipo de objeto de contenedor y una clase de esquema denominada "User" para una cuenta de usuario.
 

@@ -1,19 +1,19 @@
 ---
 description: 'Evento InkCollector.MouseUp: se produce cuando el puntero del mouse está sobre el objeto InkCollector o InkOverlay y se libera un botón del mouse.'
 ms.assetid: 6dcc6c68-89f7-4020-b378-56df9d46974b
-title: Evento InkCollector.MouseUp (Ms mouseut.h)
+title: Evento InkCollector.MouseUp (Msplaceut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc4fde64603a00ecb8a47d3869f2eb90352fcc4f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2b5cf3e746c3fbac19b2dc83fd707fd9c0e9e175ba66e94d545a29eafca78ce3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032103"
 ---
 # <a name="inkcollectormouseup-event"></a>Evento InkCollector.MouseUp
 
-Se produce cuando el puntero del mouse está sobre el objeto [**InkCollector**](inkcollector-class.md) o [**InkOverlay**](inkoverlay-class.md) y se libera un botón del mouse.
+Se produce cuando el puntero del mouse está sobre el [**objeto InkCollector**](inkcollector-class.md) o [**InkOverlay**](inkoverlay-class.md) y se libera un botón del mouse.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,7 +51,7 @@ Estado de la tecla MAYÚS.
 *pX* \[ En\]
 </dt> <dd>
 
-Coordenada X, en píxeles, de un clic del mouse.
+Coordenada x, en píxeles, de un clic del mouse.
 
 </dd> <dt>
 
@@ -65,7 +65,7 @@ Coordenada y, en píxeles, de un clic del mouse.
 *Cancelar* \[ in, out\]
 </dt> <dd>
 
-**VARIANT \_ TRUE** para cancelar el evento del control primario; de lo contrario, **VARIANT \_ FALSE**.
+**VARIANT \_ TRUE** para cancelar el evento del control primario; en caso contrario, **VARIANT \_ FALSE**.
 
 </dd> </dl>
 
@@ -78,12 +78,12 @@ Este evento no devuelve un valor.
 Para mejorar el rendimiento de la entrada de lápiz en tiempo real, oculte o muestre el cursor del mouse en los controladores de eventos [**MouseDown**](inkcollector-mousedown.md) y **MouseUp.**
 
 > [!Note]  
-> Las propiedades *pX* y *pY* están en píxeles y no las unidades HIMETRIC asociadas al espacio de entrada de lápiz. Esto se debe a que este evento reemplaza el evento de mouse relacionado de una aplicación sin conocimiento de lápiz y este tipo de aplicación solo entiende píxeles.
+> Las propiedades *pX* y *pY están* en píxeles y no las unidades HIMETRIC asociadas al espacio de entrada de lápiz. Esto se debe a que este evento reemplaza el evento de mouse relacionado de una aplicación sin conocimiento de lápiz y este tipo de aplicación solo entiende píxeles.
 
  
 
 > [!Note]  
-> Algunos controles se basan en una relación específica entre [**los eventos MouseDown**](inkcollector-mousedown.md), [**MouseMove**](inkcollector-mousemove.md)y **MouseUp.** La cancelación de algunos de estos eventos puede tener resultados imprevistos.
+> Algunos controles se basan en una relación específica entre [**los eventos MouseDown,**](inkcollector-mousedown.md) [**MouseMove**](inkcollector-mousemove.md)y **MouseUp.** La cancelación de algunos de estos eventos puede tener resultados imprevistos.
 
  
 
@@ -95,14 +95,14 @@ Este método de evento se define en las interfaces de solo envío \_ \_ (dispint
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC \[ Edition\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Encabezado<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Msgniut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

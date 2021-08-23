@@ -22,7 +22,7 @@ ms.locfileid: "118648167"
 ---
 # <a name="saveproperties-method-of-the-cim_logicaldevice-class"></a>Método SaveProperties de la clase \_ LogicalDevice de CIM
 
-Solicita que el dispositivo capture su configuración, configuración o información de estado actuales en un almacén de respaldo. El objetivo sería usar esta información más adelante (a través del método RestoreProperties) para devolver un dispositivo a su "condición" actual. Es posible que este método no sea compatible con todos los dispositivos. El método debe devolver 0 si se realiza correctamente, 1 si no se admite la solicitud y algún otro valor si se produjo algún otro error. En una subclase, se podría especificar el conjunto de códigos de retorno posibles mediante un calificador ValueMap en el método . Las cadenas a las que se "traduce" el contenido de ValueMap también se pueden especificar en la subclase como calificador de matriz Values.
+Solicita que el dispositivo capture su configuración, configuración o información de estado actuales en un almacén de respaldo. El objetivo sería usar esta información más adelante (a través del método RestoreProperties) para devolver un dispositivo a su "condición" actual. Es posible que este método no sea compatible con todos los dispositivos. El método debe devolver 0 si se realiza correctamente, 1 si no se admite la solicitud y algún otro valor si se produjo cualquier otro error. En una subclase, se podría especificar el conjunto de códigos de retorno posibles, mediante un calificador ValueMap en el método . Las cadenas a las que se "traduce" el contenido de ValueMap también se pueden especificar en la subclase como calificador de matriz Values.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,13 +39,13 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
+Devuelve un 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -55,7 +55,7 @@ Devuelve un valor 0 si se ejecuta correctamente; de lo contrario, devuelve un er
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,9 +1,9 @@
 ---
-title: Player. enableContextMenu
-description: La propiedad enableContextMenu especifica o recupera un valor que indica si se debe habilitar el menú contextual, que aparece al hacer clic con el botón secundario del mouse.
+title: Player.enableContextMenu
+description: La propiedad enableContextMenu especifica o recupera un valor que indica si se debe habilitar el menú contextual, que aparece cuando se hace clic con el botón derecho del mouse.
 ms.assetid: 736c8714-5650-4912-9e97-914a20137b91
 keywords:
-- Media Player de Windows Player. enableContextMenu
+- Player.enableContextMenu Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,41 +14,41 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 324ab0f14b83621651869e715c1fd4a882ceb650
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2ead93634131483ab1a79c396453f7fa5918c8c5f82eae8bf253a70e74a6d7f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698674"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118836226"
 ---
-# <a name="playerenablecontextmenu"></a>Player. enableContextMenu
+# <a name="playerenablecontextmenu"></a>Player.enableContextMenu
 
-La propiedad **enableContextMenu** especifica o recupera un valor que indica si se debe habilitar el menú contextual, que aparece al hacer clic con el botón secundario del mouse.
+La **propiedad enableContextMenu** especifica o recupera un valor que indica si se debe habilitar el menú contextual, que aparece cuando se hace clic con el botón derecho del mouse.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
-*reproductor*. **enableContextMenu**
+*player*. **enableContextMenu**
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es un valor booleano de lectura/escritura.
+Esta propiedad es un booleano de lectura y escritura.
 
 
 
-| Value | Descripción                       |
+| Valor | Descripción                       |
 |-------|-----------------------------------|
-| true  | Predeterminada. Habilita el menú contextual. |
+| true  | Predeterminada. Habilite el menú contextual. |
 | false | No habilite el menú contextual.   |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Durante la reproducción a pantalla completa, Windows Media Player oculta el cursor del mouse cuando **enableContextMenu** es igual a false y **uiMode** es igual a "none".
+Durante la reproducción a pantalla completa, Reproductor de Windows Media el cursor del mouse cuando **enableContextMenu** es igual a false y **uiMode** es igual a "none".
 
-**Windows Media Player 10 Mobile:** Esta propiedad no se admite.
+**Reproductor de Windows Media 10 Mobile:** Esta propiedad no se admite.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,7 +56,7 @@ Durante la reproducción a pantalla completa, Windows Media Player oculta el cur
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

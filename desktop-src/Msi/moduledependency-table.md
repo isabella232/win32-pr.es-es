@@ -1,19 +1,19 @@
 ---
-description: La tabla ModuleDependency mantiene una lista de otros módulos de combinación que son necesarios para que este módulo de combinación funcione correctamente.
+description: La tabla ModuleDependency mantiene una lista de otros módulos de combinación necesarios para que este módulo de combinación funcione correctamente.
 ms.assetid: 36418331-bec7-40c9-8fdf-fe4b958a1443
-title: Tabla ModuleDependency
+title: ModuleDependency Table
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8bb0c550f8c5ae480a07ca10401d1d3b67c496ba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 08d527ba5874c8fffb0234dbf8f041f424b7bf9aecff5e8f29005324f2a17fdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678033"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118628595"
 ---
-# <a name="moduledependency-table"></a>Tabla ModuleDependency
+# <a name="moduledependency-table"></a>ModuleDependency Table
 
-La tabla ModuleDependency mantiene una lista de otros módulos de combinación que son necesarios para que este módulo de combinación funcione correctamente. Esta tabla habilita una herramienta de combinación o comprobación para asegurarse de que los módulos de combinación necesarios se incluyen en realidad en la base de datos del instalador del usuario. La herramienta comprueba mediante una referencia cruzada a esta tabla con la tabla ModuleSignature en la base de datos del instalador.
+La tabla ModuleDependency mantiene una lista de otros módulos de combinación necesarios para que este módulo de combinación funcione correctamente. Esta tabla habilita una herramienta de combinación o comprobación para asegurarse de que los módulos de combinación necesarios se incluyen de hecho en la base de datos del instalador del usuario. La herramienta comprueba haciendo referencia cruzada a esta tabla con la tabla ModuleSignature de la base de datos del instalador.
 
 La tabla ModuleDependency tiene las columnas siguientes.
 
@@ -45,7 +45,7 @@ Identificador del módulo de combinación. Se trata de una clave externa en la [
 <span id="ModuleLanguage"></span><span id="modulelanguage"></span><span id="MODULELANGUAGE"></span>ModuleLanguage
 </dt> <dd>
 
-IDENTIFICADOR de idioma decimal del módulo de combinación en ModuleID. Se trata de una clave externa en la [tabla ModuleSignature](modulesignature-table.md).
+Identificador de idioma decimal del módulo de combinación en ModuleID. Se trata de una clave externa en la [tabla ModuleSignature](modulesignature-table.md).
 
 </dd> <dt>
 
@@ -59,14 +59,14 @@ Identificador del módulo de combinación requerido por el módulo de combinaci�
 <span id="RequiredLanguage"></span><span id="requiredlanguage"></span><span id="REQUIREDLANGUAGE"></span>RequiredLanguage
 </dt> <dd>
 
-IDENTIFICADOR de idioma numérico del módulo de combinación de RequiredID. La columna RequiredLanguage puede especificar el identificador de idioma de un solo idioma, por ejemplo, 1033 para Inglés de EE. UU., o especificar el identificador de idioma de un grupo de idiomas, como 9 para cualquier inglés. Si el campo contiene un identificador de idioma de grupo, cualquier módulo de combinación que tenga un código de idioma en ese grupo cumple la dependencia. Si RequiredLanguage se establece en 0, cualquier módulo de combinación que llene los demás requisitos satisface la dependencia.
+Id. de idioma numérico del módulo de combinación en RequiredID. La columna RequiredLanguage puede especificar el identificador de idioma de un solo idioma, como 1033 para inglés de EE. UU., o especificar el identificador de idioma de un grupo de idioma, como 9 para cualquier inglés. Si el campo contiene un identificador de idioma de grupo, cualquier módulo de combinación con un código de idioma en ese grupo satisface la dependencia. Si RequiredLanguage está establecido en 0, cualquier módulo de combinación que rellene los demás requisitos cumplirá la dependencia.
 
 </dd> <dt>
 
 <span id="RequiredVersion"></span><span id="requiredversion"></span><span id="REQUIREDVERSION"></span>RequiredVersion
 </dt> <dd>
 
-Versión del módulo de combinación de RequiredID. Si este campo es null, cualquier versión rellena la dependencia.
+Versión del módulo de combinación en RequiredID. Si este campo es Null, cualquier versión rellena la dependencia.
 
 </dd> </dl>
 

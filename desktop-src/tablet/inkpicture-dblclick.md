@@ -1,7 +1,7 @@
 ---
 description: Se produce cuando se hace doble clic en el control InkPicture.
 ms.assetid: 5b2a6413-d415-4bf1-a291-35f4c3c5a0dc
-title: Evento InkPicture.DblClick (Ms inkut.h)
+title: Evento InkPicture.DblClick (Msyecciónut.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 515d16d16fb585771a8e2e06e642476b6be7a29851b750add4d6de2ca1a89bda
@@ -41,7 +41,7 @@ Si el evento se debe cancelar para el control primario.
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
 > Para distinguir entre los botones izquierdo, derecho y central del mouse, use los eventos [**MouseDown**](inkpicture-mousedown.md) y [**MouseUp.**](inkpicture-mouseup.md) Si hay código en el evento [**Click,**](inkpicture-click.md) el **evento DblClick** nunca se desencadenará.
@@ -54,7 +54,7 @@ Este método de evento se define en la **\_ interfaz IInkPictureEvents.** La **\
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
@@ -63,7 +63,7 @@ Este método de evento se define en la **\_ interfaz IInkPictureEvents.** La **\
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

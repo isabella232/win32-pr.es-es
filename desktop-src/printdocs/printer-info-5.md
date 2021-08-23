@@ -1,7 +1,7 @@
 ---
-description: La estructura de la información de la impresora \_ \_ 5 especifica información detallada de la impresora.
+description: La estructura PRINTER \_ INFO \_ 5 especifica información detallada de la impresora.
 ms.assetid: c8599f2e-3b7c-4fde-a340-ca7d3ddaa106
-title: Estructura de PRINTER_INFO_5 (winspool. h)
+title: PRINTER_INFO_5 estructura (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 2ec207b60eca8cc20f6f24e2bb08bb1e3b191fcc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ef50f3bfd83a0c2dd49eb0a15cdae31f25588106926e606887292c705602dd44
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105720616"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118731426"
 ---
-# <a name="printer_info_5-structure"></a>Estructura de la información de la impresora \_ \_ 5
+# <a name="printer_info_5-structure"></a>Printer \_ INFO \_ 5 (estructura)
 
-La estructura de la información de la **impresora \_ \_ 5** especifica información detallada de la impresora.
+La **estructura PRINTER INFO \_ \_ 5** especifica información detallada de la impresora.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,58 +48,58 @@ typedef struct _PRINTER_INFO_5 {
 **pPrinterName**
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica el nombre de la impresora.
+Puntero a una cadena terminada en NULL que especifica el nombre de la impresora.
 
 </dd> <dt>
 
 **pPortName**
 </dt> <dd>
 
-Puntero a una cadena terminada en null que identifica los puertos utilizados para transmitir datos a la impresora. Si una impresora está conectada a más de un puerto, los nombres de cada puerto deben estar separados por comas (por ejemplo, "LPT1:, LPT2:, LPT3:").
+Puntero a una cadena terminada en NULL que identifica los puertos utilizados para transmitir datos a la impresora. Si una impresora está conectada a más de un puerto, los nombres de cada puerto deben estar separados por comas (por ejemplo, "LPT1:,LPT2:,LPT3:").
 
 </dd> <dt>
 
 **Atributos**
 </dt> <dd>
 
-Atributos de la impresora. Este miembro puede ser cualquier combinación razonable de los siguientes valores.
+Atributos de impresora. Este miembro puede ser cualquier combinación razonable de los valores siguientes.
 
-| Value                                   | Significado                                                                                                                                                                                 |
+| Valor                                   | Significado                                                                                                                                                                                 |
 |-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| atributo de impresora \_ \_ directo              | El trabajo se envía directamente a la impresora (no se pone en cola).                                                                                                                                |
-| el atributo de impresora se \_ \_ \_ completa \_ primero | Si se establece set y Printer para la puesta en cola de impresión, los trabajos que hayan finalizado la cola de impresión estarán programados para imprimirse antes que los trabajos que no hayan completado la cola de impresión.                          |
-| atributo de impresora- \_ \_ habilitar \_ DEVQ        | Si se establece, se llama a **DevQueryPrint** . **DevQueryPrint** puede producir un error si las configuraciones de documento e impresora no coinciden. Si se establece esta marca, se mantendrán los documentos no coincidentes en la cola. |
-| atributo de impresora \_ \_ oculto              | Reservado.                                                                                                                                                                               |
-| atributo de impresora \_ \_ KEEPPRINTEDJOBS     | Si se establece, los trabajos se mantienen una vez que se imprimen. Si no se anula, se eliminan los trabajos.                                                                                                               |
-| atributo de impresora \_ \_ local               | La impresora es una impresora local.                                                                                                                                                             |
-| \_red de atributos de impresora \_             | La impresora es una conexión de impresora de red.                                                                                                                                                |
-| atributo de impresora \_ \_ publicado           | Indica si la impresora está publicada en el servicio de directorio.                                                                                                                    |
-| atributo de impresora \_ \_ en cola              | Si se establece, la impresora se pone en cola y comienza la impresión después de que la última página se haya puesto en cola. Si no se establece y \_ \_ no se establece el atributo de impresora Direct, la impresora se pone en cola y se imprime durante la puesta en cola.      |
-| atributo de impresora \_ \_ solo sin formato \_           | Indica que solo se pueden poner en cola los trabajos de impresión de tipo de datos sin procesar.                                                                                                                            |
-| atributo de impresora \_ \_ compartido              | La impresora está compartida.                                                                                                                                                                      |
+| ATRIBUTO \_ DE \_ IMPRESORA DIRECTO              | El trabajo se envía directamente a la impresora (no está en cola).                                                                                                                                |
+| EL \_ ATRIBUTO PRINTER SE COMPLETA \_ \_ \_ PRIMERO | Si set e printer se establecen para la cola de impresión, los trabajos que hayan completado la cola se programan para imprimirse antes que los trabajos que no hayan completado la cola.                          |
+| ATRIBUTO \_ PRINTER \_ ENABLE \_ DEVQ        | Si se establece, **se llama a DevQueryPrint.** **DevQueryPrint puede producir** un error si las configuraciones de documentos e impresoras no coinciden. Al establecer esta marca, los documentos no coincidentes se mantienen en la cola. |
+| ATRIBUTO DE \_ IMPRESORA \_ OCULTO              | Reservado.                                                                                                                                                                               |
+| ATRIBUTO \_ \_ DE IMPRESORA KEEPPRINTEDJOBS     | Si se establece, los trabajos se mantienen después de imprimirse. Si no se han eliminado, se eliminan los trabajos.                                                                                                               |
+| ATRIBUTO \_ DE IMPRESORA \_ LOCAL               | La impresora es una impresora local.                                                                                                                                                             |
+| RED DE \_ ATRIBUTOS DE \_ IMPRESORA             | La impresora es una conexión de impresora de red.                                                                                                                                                |
+| ATRIBUTO \_ DE \_ IMPRESORA PUBLICADO           | Indica si la impresora está publicada en el servicio de directorio.                                                                                                                    |
+| ATRIBUTO \_ DE IMPRESORA EN \_ COLA              | Si se establece, la impresora se pone en cola y se inicia la impresión después de que se pone en cola la última página. Si no se establece e PRINTER ATTRIBUTE DIRECT no está establecido, la impresora se cola e \_ imprime mientras se encuentra en \_ cola.      |
+| SOLO SIN \_ FORMATO DE ATRIBUTO DE \_ \_ IMPRESORA           | Indica que solo se pueden colar trabajos de impresión de tipo de datos sin formato.                                                                                                                            |
+| ATRIBUTO \_ DE IMPRESORA \_ COMPARTIDO              | La impresora se comparte.                                                                                                                                                                      |
 
 
 
  
 
-En Windows XP y versiones posteriores de Windows, también se puede usar el valor siguiente.
+En Windows XP y versiones posteriores de Windows, también se puede usar el siguiente valor.
 
-| Value                   | Significado                                                                                                                                                                                           |
+| Valor                   | Significado                                                                                                                                                                                           |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_fax de atributo de impresora \_ | Si se establece, la impresora es una impresora de fax. Solo se puede establecer mediante [**AddPrinter (**](addprinter.md), pero puede ser recuperado por [**EnumPrinters**](enumprinters.md) y [**GetPrinter**](getprinter.md). |
+| FAX DE \_ ATRIBUTO DE \_ IMPRESORA | Si se establece, la impresora es una impresora de fax. [**AddPrinter**](addprinter.md)solo puede establecerlo, pero [**EnumPrinters**](enumprinters.md) y [**GetPrinter pueden recuperarlo.**](getprinter.md) |
 
 
 
  
 
-En Windows Vista y versiones posteriores de Windows, también se pueden usar los valores siguientes.
+En Windows Vista y versiones posteriores de Windows, también se pueden usar los siguientes valores.
 
-| Value                               | Significado                                                                          |
+| Valor                               | Significado                                                                          |
 |-------------------------------------|----------------------------------------------------------------------------------|
-| \_ \_ nombre descriptivo del atributo de impresora \_  | Un equipo se ha conectado a esta impresora y se le ha dado un nombre descriptivo.           |
-| \_máquina de atributos de impresora \_         | La impresora es una conexión por equipo.                                             |
-| atributo de impresora \_ \_ Push \_ User    | La impresora se instaló mediante la Directiva de usuario de las conexiones de impresión de la impresora.     |
-| el \_ atributo de impresora \_ insertó el \_ equipo | La impresora se instaló mediante la Directiva de equipo de las conexiones de impresión de extracción. |
+| NOMBRE DESCRIPTIVO \_ DEL ATRIBUTO \_ DE \_ IMPRESORA  | Un equipo se ha conectado a esta impresora y le ha dado un nombre descriptivo.           |
+| MÁQUINA DE \_ ATRIBUTOS DE \_ IMPRESORA         | La impresora es una conexión por máquina.                                             |
+| USUARIO DE \_ INSERCIÓN \_ DE ATRIBUTO DE \_ IMPRESORA    | La impresora se instaló mediante la directiva de usuario Conexiones de impresora de inserción.     |
+| MÁQUINA CON \_ INSERCIÓN \_ DE ATRIBUTOS DE \_ IMPRESORA | La impresora se instaló mediante la directiva de equipo Conexiones de impresora de inserción. |
 
 
 
@@ -125,23 +125,23 @@ Este valor no se utiliza.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Nombres Unicode y ANSI<br/>   | Información de la **\_ impresora \_ \_ 5W** (Unicode) e información de la **\_ impresora \_ \_ 5A** (ANSI)<br/>                           |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Nombres Unicode y ANSI<br/>   | **\_ PRINTER \_ INFO \_ 5W** (Unicode) e **\_ PRINTER INFO \_ \_ 5A** (ANSI)<br/>                           |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Impresión](printdocs-printing.md)
 </dt> <dt>
 
-[Estructuras de API del administrador de trabajos de impresión](printing-and-print-spooler-structures.md)
+[Estructuras de LA API del colador de impresión](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**EnumPrinters**](enumprinters.md)
@@ -153,16 +153,16 @@ Este valor no se utiliza.
 [**SetPrinter**](setprinter.md)
 </dt> <dt>
 
-[**Información de la impresora \_ \_ 1**](printer-info-1.md)
+[**PRINTER \_ INFO \_ 1**](printer-info-1.md)
 </dt> <dt>
 
-[**Información de la impresora \_ \_ 2**](printer-info-2.md)
+[**PRINTER \_ INFO \_ 2**](printer-info-2.md)
 </dt> <dt>
 
-[**Información de la impresora \_ \_ 3**](printer-info-3.md)
+[**PRINTER \_ INFO \_ 3**](printer-info-3.md)
 </dt> <dt>
 
-[**Información de la impresora \_ \_ 4**](printer-info-4.md)
+[**PRINTER \_ INFO \_ 4**](printer-info-4.md)
 </dt> </dl>
 
  

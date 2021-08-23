@@ -1,28 +1,28 @@
 ---
-description: La infraestructura del mismo nivel utiliza las siguientes constantes comunes. ConstantDescriptionPEER \_ Connection \_ FLAGSSpecifies los tipos de conexiones que puede tener un elemento del mismo nivel. Conexión del mismo nivel \_ \_ STATUSSpecifies el estado de una conexión directa o de vecino del mismo nivel. El cambio de registro del mismo nivel \_ \_ \_ TYPESpecifies los cambios que se pueden producir en un registro. El registro del mismo nivel \_ \_ FLAGSSpecifies un conjunto de marcas para los comportamientos del registro del mismo nivel.
+description: La infraestructura del mismo nivel usa las siguientes constantes comunes. ConstantDescriptionPEER \_ CONNECTION \_ FLAGS Especifica los tipos de conexiones que puede tener un elemento del mismo nivel. ESTADO \_ DE CONEXIÓN DEL MISMO \_ NIVELEspecifica el estado de una conexión directa o de vecino del mismo nivel. PEER \_ RECORD CHANGE TYPE Especifica los cambios que se pueden producir en un \_ \_ registro. PEER RECORD FLAGS Especifica un conjunto de marcas para \_ los \_ comportamientos de los registros del mismo nivel.
 ms.assetid: 457db259-b1f0-4711-a8f0-201ff314cb1e
 title: Constantes comunes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2346d47aafa9fd1b44a1bae43a5ebda1beb97fef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9fbe6246f98c32f6b7201f7bd81f8e6fabb3b481b1a724367a202006de50e1ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104545534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119011713"
 ---
 # <a name="common-constants"></a>Constantes comunes
 
-La infraestructura del mismo nivel utiliza las siguientes constantes comunes.
+La infraestructura del mismo nivel usa las siguientes constantes comunes.
 
 
 
 | Constante                                                      | Descripción                                                   |
 |---------------------------------------------------------------|---------------------------------------------------------------|
-| [**\_marcas de conexión del mismo nivel \_**](/windows/desktop/api/P2P/ne-p2p-peer_connection_flags)      | Especifica los tipos de conexiones que puede tener un elemento del mismo nivel.      |
-| [**\_Estado de conexión del mismo nivel \_**](/windows/desktop/api/P2P/ne-p2p-peer_connection_status)    | Especifica el estado de una conexión directa o de vecino del mismo nivel. |
-| [**\_tipo de \_ cambio de registro del mismo nivel \_**](/windows/desktop/api/P2P/ne-p2p-peer_record_change_type) | Especifica los cambios que se pueden producir en un registro.             |
-| [**\_marcas de registro del mismo nivel \_**](/windows/desktop/api/P2P/ne-p2p-peer_record_flags)              | Especifica un conjunto de marcas para los comportamientos de registro del mismo nivel.           |
+| [**MARCAS \_ DE CONEXIÓN DEL MISMO \_ NIVEL**](/windows/desktop/api/P2P/ne-p2p-peer_connection_flags)      | Especifica los tipos de conexiones que puede tener un elemento del mismo nivel.      |
+| [**ESTADO DE \_ CONEXIÓN DEL \_ MISMO NIVEL**](/windows/desktop/api/P2P/ne-p2p-peer_connection_status)    | Especifica el estado de una conexión directa o de vecino del mismo nivel. |
+| [**TIPO \_ DE CAMBIO DE REGISTRO DEL MISMO \_ \_ NIVEL**](/windows/desktop/api/P2P/ne-p2p-peer_record_change_type) | Especifica los cambios que pueden producirse en un registro.             |
+| [**MARCAS \_ DE REGISTROS DEL MISMO \_ NIVEL**](/windows/desktop/api/P2P/ne-p2p-peer_record_flags)              | Especifica un conjunto de marcas para los comportamientos de los registros del mismo nivel.           |
 
 
 

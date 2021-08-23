@@ -1,9 +1,9 @@
 ---
-title: Atributo Location (SDK de Windows Media Player)
-description: El atributo Location es la ubicación geográfica de la estación de radio o \ 0034; net Only \ 0034;.
+title: Atributo Location (Reproductor de Windows Media SDK)
+description: El atributo Location es la ubicación geográfica de la estación de radio o \ 0034;Net only \ 0034;.
 ms.assetid: fdc0b68b-56a5-4027-a618-6811e7536766
 keywords:
-- Media Player de atributos de ubicación de Windows
+- Atributo location Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,26 +12,26 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5bc502bc147c160dd8dd65cc1eb3c26bba0b1e1e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b5955a0f638f9d71557736c5c834978710e36f046ff9b66a9f38d4ddd6e2d171
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708835"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135228"
 ---
-# <a name="location-attribute"></a>Location (atributo)
+# <a name="location-attribute"></a>Atributo location
 
-El atributo **Location** es la ubicación geográfica de la estación de radio o "net Only".
+El **atributo Location** es la ubicación geográfica de la estación de radio o "Net only".
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [Elementos de radio](radio-item-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este atributo solo se almacena en la biblioteca.
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,7 +39,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------|
-| Versión<br/> | Solo Windows Media Player 9 series<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 solo<br/> |
 
 
 
@@ -47,7 +47,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

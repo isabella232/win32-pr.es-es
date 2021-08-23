@@ -1,22 +1,22 @@
 ---
-title: Interfaces de tipos de datos
-description: En este tema se enumeran las interfaces ADSI que funcionan con tipos de datos diferentes.
+title: Interfaces de tipo de datos
+description: En este tema se enumeran las interfaces ADSI que funcionan con diferentes tipos de datos.
 ms.assetid: b9cfd99e-f2df-4db0-ae94-889f7aacd92d
 ms.tgt_platform: multiple
 keywords:
-- interfaces de tipo de datos ADSI
+- ADSI de interfaces de tipo de datos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1329637121c60325424fe4ddf2d204053983d8c8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 643b71204775224e1e7090f455a2bfb1d9fb590b9e544c0bd7dfa7caa2049470
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103772979"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119082709"
 ---
-# <a name="data-type-interfaces"></a>Interfaces de tipos de datos
+# <a name="data-type-interfaces"></a>Interfaces de tipo de datos
 
-En esta sección se describen las siguientes interfaces de tipos de datos:
+En esta sección se describen las siguientes interfaces de tipo de datos:
 
 -   [**IADsAcl**](/windows/desktop/api/Iads/nn-iads-iadsacl)
 -   [**IADsBackLink**](/windows/desktop/api/Iads/nn-iads-iadsbacklink)
@@ -35,9 +35,9 @@ En esta sección se describen las siguientes interfaces de tipos de datos:
 -   [**IADsTimestamp**](/windows/desktop/api/Iads/nn-iads-iadstimestamp)
 -   [**IADsTypedName**](/windows/desktop/api/Iads/nn-iads-iadstypedname)
 
- 
+ 
 
- 
+ 
 
 
 

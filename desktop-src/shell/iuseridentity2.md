@@ -1,5 +1,5 @@
 ---
-description: IUserIdentity2 no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, use Cuentas de usuario con cambio rápido de usuario y Escritorio remoto.
+description: IUserIdentity2 no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, use cuentas de usuario con cambio rápido de usuario y Escritorio remoto.
 ms.assetid: 85238574-f6bf-43d7-a41b-3ea086c45e07
 title: Interfaz IUserIdentity2 (Msident.h)
 ms.topic: reference
@@ -20,11 +20,11 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118720591"
 ---
-# <a name="iuseridentity2-interface"></a>Interfaz IUserIdentity2
+# <a name="iuseridentity2-interface"></a>IUserIdentity2 (interfaz)
 
-\[**IUserIdentity2** no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, [use cuentas de usuario con cambio rápido de usuario y Escritorio remoto](fastuserswitching.md).\]
+\[**IUserIdentity2** no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, [use cuentas de usuario con cambio rápido de usuario Escritorio remoto](fastuserswitching.md).\]
 
-Expone métodos que proporcionan nomenclatura, contraseña y control ordinal para una identidad de usuario específica.
+Expone métodos que proporcionan nombres, contraseñas y control ordinal para una identidad de usuario específica.
 
 ## <a name="members"></a>Miembros
 
@@ -48,15 +48,15 @@ La **interfaz IUserIdentity2** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta interfaz también proporciona los métodos de la [**interfaz IUserIdentity,**](iuseridentity.md) de la que hereda.
+Esta interfaz también proporciona los métodos de [**la interfaz IUserIdentity,**](iuseridentity.md) de la que hereda.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
@@ -68,7 +68,7 @@ Esta interfaz también proporciona los métodos de la [**interfaz IUserIdentity,
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

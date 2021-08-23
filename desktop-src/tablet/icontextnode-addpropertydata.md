@@ -68,17 +68,17 @@ Matriz de enteros de 8 bits sin signo que contiene la información de propiedad 
 
 Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Use **IContextNode::AddPropertyData para** asociar datos a un nodo de contexto. Para recuperar los datos más adelante, use [**IContextNode::GetPropertyData**](icontextnode-getpropertydata.md).
 
-El analizador de entrada de lápiz puede eliminar el nodo como parte del análisis de entrada de lápiz, a menos que se confirme el nodo de contexto (vea [**IContextNode::Confirm).**](icontextnode-confirm.md) Para obtener más información sobre cómo sincronizar los datos de la aplicación con [**IInkAnalyzer**](iinkanalyzer.md), vea Proxy de [datos con análisis de entrada de lápiz.](data-proxy-with-ink-analysis.md)
+El analizador de entrada de lápiz puede eliminar el nodo como parte del análisis de entrada de lápiz, a menos que se confirme el nodo de contexto (vea [**IContextNode::Confirm**](icontextnode-confirm.md)). Para obtener más información sobre cómo sincronizar los datos de la aplicación con [**IInkAnalyzer**](iinkanalyzer.md), vea [Proxy de datos con análisis de entrada de lápiz.](data-proxy-with-ink-analysis.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
@@ -87,7 +87,7 @@ El analizador de entrada de lápiz puede eliminar el nodo como parte del anális
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

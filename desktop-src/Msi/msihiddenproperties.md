@@ -1,22 +1,22 @@
 ---
-description: La propiedad MsiHiddenProperties se puede usar para impedir que el instalador muestre contraseñas u otra información confidencial en el archivo de registro.
+description: La propiedad MsiHiddenProperties se puede usar para evitar que el instalador muestre contraseñas u otra información confidencial en el archivo de registro.
 ms.assetid: 7d5eb9cf-04a5-41bd-9ca9-f30af45ab0a5
 title: Propiedad MsiHiddenProperties
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6124f7002edd8ab7d3d5e6691b7b0a322b93c285
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: acea21b946a4169748c96970143d6c44c6bf682ce6f6a8e4624791c52d0ba813
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118628129"
 ---
 # <a name="msihiddenproperties-property"></a>Propiedad MsiHiddenProperties
 
-La propiedad **MsiHiddenProperties** se puede usar para impedir que el instalador muestre contraseñas u otra información confidencial en el archivo de registro. Para evitar que una propiedad se escriba en el archivo de registro, establezca el valor de la propiedad **MsiHiddenProperties** en el nombre de la propiedad que desea ocultar. Puede ocultar varias propiedades si especifica una cadena de nombres de propiedad delimitados por punto y coma (;).
+La **propiedad MsiHiddenProperties** se puede usar para evitar que el instalador muestre contraseñas u otra información confidencial en el archivo de registro. Para evitar que una propiedad se escriba en el archivo de registro, establezca el valor de la propiedad **MsiHiddenProperties** en el nombre de la propiedad que desea ocultar. Puede ocultar varias propiedades especificando una cadena de nombres de propiedad delimitados por punto y coma (;).
 
 > [!Note]  
-> Cuando la Directiva de [depuración](debug.md) está establecida en un valor de 7, el instalador escribe la información especificada en una línea de comandos en el registro. Esto hace que las propiedades públicas escritas en una línea de comandos sean visibles aunque la propiedad esté incluida en la propiedad **MsiHiddenProperties** . Esto puede hacer que la información confidencial especificada en una línea de comandos esté visible en el registro. Para obtener más información, vea [impedir que se escriba información confidencial en el archivo de registro](preventing-confidential-information-from-being-written-into-the-log-file.md).
+> Cuando la [directiva](debug.md) de depuración se establece en un valor de 7, el instalador escribirá la información especificada en una línea de comandos en el registro. Esto hace que las propiedades públicas especificadas en una línea de comandos sean visibles incluso si la propiedad está incluida en **la propiedad MsiHiddenProperties.** Esto puede hacer que la información confidencial especificada en una línea de comandos sea visible en el registro. Para obtener más información, vea [Evitar que la información confidencial se escriba en el archivo de registro](preventing-confidential-information-from-being-written-into-the-log-file.md).
 
  
 
@@ -24,9 +24,9 @@ La propiedad **MsiHiddenProperties** se puede usar para impedir que el instalado
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP. Consulte los [requisitos de Run-Time de Windows Installer](windows-installer-portal.md) para obtener información sobre la Service Pack mínima de Windows que requiere una versión Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una versión Windows Installer.<br/> |
 
 
 

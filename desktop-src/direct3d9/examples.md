@@ -1,5 +1,5 @@
 ---
-description: A continuación se siguen dos definiciones de plantilla binaria de ejemplo y un ejemplo de un objeto de datos binarios.
+description: A continuación se siguen dos definiciones de plantilla binarias de ejemplo y un ejemplo de un objeto de datos binarios.
 ms.assetid: vs|directx_sdk|~\examples.htm
 title: Ejemplos (gráficos de Direct3D 9)
 ms.topic: article
@@ -13,14 +13,14 @@ ms.locfileid: "118523102"
 ---
 # <a name="examples-direct3d-9-graphics"></a>Ejemplos (gráficos de Direct3D 9)
 
-A continuación se siguen dos definiciones de plantilla binaria de ejemplo y un ejemplo de un objeto de datos binarios.
+A continuación se siguen dos definiciones de plantilla binarias de ejemplo y un ejemplo de un objeto de datos binarios.
 
 > [!Note]  
 > Los datos se almacenan en formato little-endian, que no se muestra en estos ejemplos.
 
  
 
-La plantilla cerrada RGB se identifica mediante el UUID {55b6d780-37ec-11d0-ab39-0020af71e433} y tiene tres miembros (r, g y b), cada uno de tipo float.
+La plantilla cerrada RGB se identifica mediante el UUID {55b6d780-37ec-11d0-ab39-0020af71e433} y tiene tres miembros (r, g y b) cada uno de tipo float.
 
 
 ```
@@ -48,7 +48,7 @@ TOKEN_CBRACE
 
 
 
-El objeto de datos binario siguiente muestra una instancia de la plantilla RGB definida anteriormente. El objeto de ejemplo se denomina blue y sus tres miembros (r, g y b) tienen los valores 0.0, 0.0 y 1.0, respectivamente.
+El objeto de datos binario siguiente muestra una instancia de la plantilla RGB definida anteriormente. El objeto de ejemplo se denomina azul y sus tres miembros (r, g y b) tienen los valores 0.0, 0.0 y 1.0, respectivamente.
 
 
 ```

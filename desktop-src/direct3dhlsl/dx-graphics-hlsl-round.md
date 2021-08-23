@@ -1,9 +1,9 @@
 ---
-title: Round (Corecrt \_ Math. h)
-description: Redondea el valor especificado al entero más próximo.
+title: round (Corecrt \_ math.h)
+description: Redondea el valor especificado al entero más cercano.
 ms.assetid: 258ce717-dca1-4ed2-ad98-1ecfdb58f939
 keywords:
-- Round-HLSL
+- HLSL round
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f00bf845dfe16a92729b523fba62f6fd6dcde2b5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3997e93dbbe7cfda210fea97a2759620f0afb47638d2ec519b9ad56abe3664c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104003858"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118513844"
 ---
 # <a name="round"></a>round
 
-Redondea el valor especificado al entero más próximo. Los casos de medio ciclo se redondean a los pares más cercanos.
+Redondea el valor especificado al entero más cercano. La mitad de los casos se redondea al par más cercano.
 
 
 
-| *RET* Round (*x*) |
+| *ret* round(*x*) |
 |------------------|
 
 
@@ -40,7 +40,7 @@ Redondea el valor especificado al entero más próximo. Los casos de medio ciclo
 
 | Elemento                                                   | Descripción                            |
 |--------------------------------------------------------|----------------------------------------|
-| <span id="x"></span><span id="X"></span>*x1*<br/> | \[en \] el valor especificado.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[en \] El valor especificado.<br/> |
 
 
 
@@ -48,22 +48,22 @@ Redondea el valor especificado al entero más próximo. Los casos de medio ciclo
 
 ## <a name="return-value"></a>Valor devuelto
 
-Parámetro *x* , redondeado al entero más próximo dentro de un tipo de punto flotante.
+Parámetro *x,* redondeado al entero más cercano dentro de un tipo de punto flotante.
 
 ## <a name="type-description"></a>Descripción del tipo
 
 
 
-| Nombre  | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Tamaño                           |
+| Nombre  | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Size                           |
 |-------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------|
-| *x*   | [**escalar**](dx-graphics-hlsl-intrinsic-functions.md), **Vector** o **matriz** | [**flot**](/windows/desktop/WinProg/windows-data-types)                        | cualquiera                            |
-| *direcc* | igual que la entrada *x*                                                                                              | [**flot**](/windows/desktop/WinProg/windows-data-types)                        | mismas dimensiones que la entrada *x* |
+| *x*   | [**escalar,**](dx-graphics-hlsl-intrinsic-functions.md) **vector** o **matriz** | [**Flotador**](/windows/desktop/WinProg/windows-data-types)                        | cualquiera                            |
+| *Ret* | igual que la entrada *x*                                                                                              | [**Flotador**](/windows/desktop/WinProg/windows-data-types)                        | las mismas dimensiones que la entrada *x* |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -71,8 +71,8 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                       | Compatible           |
 |------------------------------------------------------------------------------------|---------------------|
-| Modelador [modelo 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) y modelos de sombreador más altos | sí                 |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | sí ( \_ solo vs 1 \_ 1) |
+| [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) y modelos de sombreador superiores | Sí                 |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | sí (solo \_ frente a \_ 1 1) |
 
 
 
@@ -84,7 +84,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Requisito | Value |
 |-------------------|--------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Corecrt \_ Math. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Corecrt \_ math.h</dt> </dl> |
 
 
 
@@ -92,7 +92,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[**Funciones intrínsecas (DirectX HLSL)**](dx-graphics-hlsl-intrinsic-functions.md)
+[**Funciones intrínsecas (HLSL de DirectX)**](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> </dl>
 
  

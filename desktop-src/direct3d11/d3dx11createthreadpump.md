@@ -71,7 +71,7 @@ Número de subprocesos de proceso que se crearán. Si se especifica 0, Direct3D 
 
 Tipo: **[ **ID3DX11ThreadPump**](id3dx11threadpump.md)\*\***
 
-El bombeo de subprocesos creado. Vea [**ID3DX11ThreadPump (Interfaz).**](id3dx11threadpump.md)
+El bombeo de subprocesos creado. Vea [**ID3DX11ThreadPump (interfaz).**](id3dx11threadpump.md)
 
 </dd> </dl>
 
@@ -81,9 +81,9 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 El valor devuelto es uno de los valores enumerados en Códigos de retorno [de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una bomba de subprocesos es un objeto que consume muchos recursos. Solo se debe crear un bombeo de subprocesos por aplicación.
+Un bombeo de subprocesos es un objeto que consume muchos recursos. Solo se debe crear un bombeo de subprocesos por aplicación.
 
 No hay ninguna implementación del cargador asincrónico fuera de D3DX 10 y D3DX 11.
 
@@ -102,7 +102,7 @@ En el caso de las aplicaciones de escritorio Win32, puede usar el Runtime de sim
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

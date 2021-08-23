@@ -41,7 +41,7 @@ Object distinguishedName = RootDirEntry.Properties["defaultNamingContext"].Value
 
 
 
-El siguiente ejemplo de código de C/C++ obtiene el nombre distintivo del dominio del que es miembro el equipo local mediante el enlace sin servidor.
+En el siguiente ejemplo de código de C/C++ se obtiene el nombre distintivo del dominio del que es miembro el equipo local mediante el enlace sin servidor.
 
 
 ```C++

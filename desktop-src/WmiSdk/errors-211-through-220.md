@@ -1,5 +1,5 @@
 ---
-description: Describe los errores del proveedor SNMP de WMI del 211 al 220.
+description: Describe los errores del proveedor WMI SNMP del 211 al 220.
 ms.assetid: beaa644d-51b3-4a57-8853-0b37f69f615a
 ms.tgt_platform: multiple
 title: Errores del 211 al 220
@@ -14,7 +14,7 @@ ms.locfileid: "118556707"
 ---
 # <a name="errors-211-through-220"></a>Errores del 211 al 220
 
-Describe los errores del proveedor SNMP de WMI del 211 al 220.
+Describe los errores del proveedor WMI SNMP del 211 al 220.
 
 [Mensaje de información 211](#information-message-211)
 
@@ -84,7 +84,7 @@ Error de sintaxis del módulo en la sección IMPORTS.
 
 <dl> <dt>
 
-<span id="_215__Fatal_____fileName___line____Syntax_Error_in_IMPORTS__missing_module_name__._Last_token_read_is__token__"></span><span id="_215__fatal_____filename___line____syntax_error_in_imports__missing_module_name__._last_token_read_is__token__"></span><span id="_215__FATAL_____FILENAME___LINE____SYNTAX_ERROR_IN_IMPORTS__MISSING_MODULE_NAME__._LAST_TOKEN_READ_IS__TOKEN__"></span>**<215, Error de>: " :<línea>: Error de sintaxis en IMPORTS (¿falta el nombre <fileName> \# del módulo?). La última lectura del token es <token> "**
+<span id="_215__Fatal_____fileName___line____Syntax_Error_in_IMPORTS__missing_module_name__._Last_token_read_is__token__"></span><span id="_215__fatal_____filename___line____syntax_error_in_imports__missing_module_name__._last_token_read_is__token__"></span><span id="_215__FATAL_____FILENAME___LINE____SYNTAX_ERROR_IN_IMPORTS__MISSING_MODULE_NAME__._LAST_TOKEN_READ_IS__TOKEN__"></span>**<215, Error de>: " <fileName> :<line>: Error de sintaxis en IMPORTS (¿falta el nombre \# del módulo?). La última lectura del token es <token> "**
 </dt> <dd>
 
 Error de sintaxis del módulo en la sección IMPORTS.
@@ -106,7 +106,7 @@ Error de sintaxis del módulo en la sección IMPORTS.
 
 <dl> <dt>
 
-<span id="_217__Fatal_____fileName___line____Syntax_error_in_INTEGER_Enumeration._Last_token_read_is__token__"></span><span id="_217__fatal_____filename___line____syntax_error_in_integer_enumeration._last_token_read_is__token__"></span><span id="_217__FATAL_____FILENAME___LINE____SYNTAX_ERROR_IN_INTEGER_ENUMERATION._LAST_TOKEN_READ_IS__TOKEN__"></span>**<217, error de>: " :<línea>: Error de sintaxis en <fileName> la \# enumeración INTEGER. La última lectura del token es <token> "**
+<span id="_217__Fatal_____fileName___line____Syntax_error_in_INTEGER_Enumeration._Last_token_read_is__token__"></span><span id="_217__fatal_____filename___line____syntax_error_in_integer_enumeration._last_token_read_is__token__"></span><span id="_217__FATAL_____FILENAME___LINE____SYNTAX_ERROR_IN_INTEGER_ENUMERATION._LAST_TOKEN_READ_IS__TOKEN__"></span>**<217, Error irresumen>: " <fileName> :<línea>: Error de \# sintaxis en la enumeración INTEGER. La última lectura del token es <token> "**
 </dt> <dd>
 
 Cualquier error de sintaxis de módulo entre las llaves izquierda y derecha de una definición de enumeración MIB genera este mensaje.
@@ -117,7 +117,7 @@ Cualquier error de sintaxis de módulo entre las llaves izquierda y derecha de u
 
 <dl> <dt>
 
-<span id="_218__Fatal_____fileName___line____Syntax_Error_in_sub-type_specification._Last_token_read_is__token__"></span><span id="_218__fatal_____filename___line____syntax_error_in_sub-type_specification._last_token_read_is__token__"></span><span id="_218__FATAL_____FILENAME___LINE____SYNTAX_ERROR_IN_SUB-TYPE_SPECIFICATION._LAST_TOKEN_READ_IS__TOKEN__"></span>**<218, Error>: " :<line>: Error de sintaxis en la especificación <fileName> \# de subtipo. La última lectura del token es <token> "**
+<span id="_218__Fatal_____fileName___line____Syntax_Error_in_sub-type_specification._Last_token_read_is__token__"></span><span id="_218__fatal_____filename___line____syntax_error_in_sub-type_specification._last_token_read_is__token__"></span><span id="_218__FATAL_____FILENAME___LINE____SYNTAX_ERROR_IN_SUB-TYPE_SPECIFICATION._LAST_TOKEN_READ_IS__TOKEN__"></span>**<218, Error>: " :<línea>: Error de sintaxis en la especificación <fileName> \# de subtipo. La última lectura del token es <token> "**
 </dt> <dd>
 
 Cualquier error de sintaxis de módulo entre paréntesis en una especificación de subtipo genera este mensaje.

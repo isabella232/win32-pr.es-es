@@ -56,7 +56,7 @@ Los verbos disponibles habitualmente incluyen:
 
 
 
-Cada verbo corresponde al comando que se usaría para iniciar la aplicación desde una ventana de consola. El **verbo** abierto es un buen ejemplo, ya que se admite normalmente. Para .exe archivos, **abrir** simplemente inicia la aplicación. Sin embargo, se usa con más frecuencia para iniciar una aplicación que funciona en un archivo determinado. Por ejemplo, Microsoft WordPad .txt abrir los archivos. Por **tanto,** el verbo abierto .txt archivo se correspondería con algo parecido al comando siguiente:
+Cada verbo corresponde al comando que se usaría para iniciar la aplicación desde una ventana de consola. El **verbo** abierto es un buen ejemplo, ya que se admite normalmente. Para .exe archivos, **abrir** simplemente inicia la aplicación. Sin embargo, se usa con más frecuencia para iniciar una aplicación que funciona en un archivo determinado. Por ejemplo, Microsoft WordPad .txt abrir los archivos. El **verbo** abierto para un .txt archivo se correspondería con algo parecido al comando siguiente:
 
 
 ```C++
@@ -160,7 +160,7 @@ main()
 
 La aplicación recupera primero el PIDL del directorio Windows y enumera su contenido hasta que encuentra el primer .bmp archivo. A diferencia del ejemplo anterior, [**se usa IShellFolder::GetDisplayNameOf**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-getdisplaynameof) para recuperar el nombre de análisis del archivo en lugar de su nombre para mostrar. Dado que se trata de una carpeta del sistema de archivos, el nombre del análisis es una ruta de acceso completa, que es lo que se necesita [**para ShellExecuteEx**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa).
 
-Una vez que se .bmp el primer archivo, se asignan los valores adecuados a los miembros de una [**estructura SHELLEXECUTEINFO.**](/windows/desktop/api/Shellapi/ns-shellapi-shellexecuteinfoa) El **miembro lpFile** se establece en el nombre de análisis del archivo y el miembro **lpVerb** en **NULL** para comenzar la operación predeterminada. En este caso, la operación predeterminada es "open". A continuación, la estructura se pasa a [**ShellExecuteEx**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa), que inicia el controlador predeterminado para los archivos de mapa de bits, normalmente MSPaint.exe, para abrir el archivo. Una vez que se devuelve la función, se liberan los PIDL y se libera Windows interfaz [**IShellFolder**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) de la carpeta.
+Una vez que se .bmp archivo, se asignan los valores adecuados a los miembros de una [**estructura SHELLEXECUTEINFO.**](/windows/desktop/api/Shellapi/ns-shellapi-shellexecuteinfoa) El **miembro lpFile** se establece en el nombre de análisis del archivo y el miembro **lpVerb** en **NULL** para comenzar la operación predeterminada. En este caso, la operación predeterminada es "open". A continuación, la estructura se pasa a [**ShellExecuteEx**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa), que inicia el controlador predeterminado para los archivos de mapa de bits, normalmente MSPaint.exe, para abrir el archivo. Una vez que se devuelve la función, se liberan los PIDL y se libera Windows interfaz [**IShellFolder**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) de la carpeta.
 
  
 

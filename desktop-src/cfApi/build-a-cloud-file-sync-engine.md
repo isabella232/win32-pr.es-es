@@ -1,6 +1,6 @@
 ---
 description: Aprenda a crear un motor de sincronización de archivos en la nube que use archivos de marcador de posición mediante la API de archivos en la nube.
-title: Compilación de un motor de sincronización en la nube que admita archivos de marcador de posición
+title: Compilación de un motor de Sincronización en la nube que admita archivos de marcador de posición
 ms.topic: article
 ms.date: 11/12/2020
 ms.openlocfilehash: d7d1efae4a56e6f52473002953730fb9f1f9459f1ed8dc82e0ba75ddebf05dc2
@@ -10,16 +10,16 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118551582"
 ---
-# <a name="build-a-cloud-sync-engine-that-supports-placeholder-files"></a>Compilación de un motor de sincronización en la nube que admita archivos de marcador de posición
+# <a name="build-a-cloud-sync-engine-that-supports-placeholder-files"></a>Compilación de un motor de Sincronización en la nube que admita archivos de marcador de posición
 
-Un motor de sincronización es un servicio que sincroniza archivos, normalmente entre un host remoto y un cliente local. Los motores de sincronización Windows suelen presentar esos archivos al usuario a través del sistema de archivos Windows y Explorador de archivos. Antes de Windows 10, versión 1709, la compatibilidad del motor de sincronización en Windows se limitaba a superficies ad hoc independientes del escenario, como el panel de navegación de Explorador de archivos, la bandeja del sistema de Windows y los controladores de filtro del sistema de archivos (para aplicaciones más técnicas).
+Un motor de sincronización es un servicio que sincroniza archivos, normalmente entre un host remoto y un cliente local. Los motores de sincronización Windows a menudo presentan esos archivos al usuario a través del sistema de archivos Windows y Explorador de archivos. Antes de Windows 10, versión 1709, la compatibilidad del motor de sincronización en Windows se limitaba a superficies ad hoc independientes del escenario, como el panel de navegación de Explorador de archivos, la bandeja del sistema de Windows y los controladores de filtro del sistema de archivos (para aplicaciones más técnicas).
 
 Windows 10 versión 1709 (también denominada Fall Creators Update) introdujo la *API de archivos en la nube*. Esta API es una nueva plataforma que formaliza la compatibilidad con los motores de sincronización. La API de archivos en la nube proporciona compatibilidad con los motores de sincronización de una manera que ofrece muchas ventajas nuevas a los desarrolladores y usuarios finales.
 
 La API de archivos en la nube contiene las siguientes API nativas de Win32 y Windows Runtime (WinRT):
 
-* [CLOUD Filter API:](cloud-filter-reference.md)esta API nativa de Win32 proporciona funcionalidad en el límite entre el modo de usuario y el sistema de archivos. Esta API controla la creación y administración de archivos y directorios de marcador de posición.
-* [Windows. Storage. Espacio de nombres del](/uwp/api/windows.storage.provider)proveedor: esta API de WinRT permite a las aplicaciones configurar el proveedor de almacenamiento en la nube y registrar la raíz de sincronización con el sistema operativo.
+* [CLOUD Filter API:](cloud-filter-reference.md)esta API nativa de Win32 proporciona funcionalidad en el límite entre el modo de usuario y el sistema de archivos. Esta API controla la creación y administración de directorios y archivos de marcador de posición.
+* [Windows. Storage. Espacio de nombres](/uwp/api/windows.storage.provider)del proveedor: esta API de WinRT permite a las aplicaciones configurar el proveedor de almacenamiento en la nube y registrar la raíz de sincronización con el sistema operativo.
 
 > [!NOTE]
 > La API de archivos en la nube no admite actualmente la implementación de motores de sincronización en la nube en aplicaciones para UWP. Los motores de sincronización en la nube deben implementarse en aplicaciones de escritorio.
@@ -30,8 +30,8 @@ La API de archivos en la nube proporciona las siguientes características para c
 
 ### <a name="placeholder-files"></a>Archivos de marcador de posición
 
-* Los motores de sincronización pueden crear archivos de marcador de posición que consumen solo 1 KB de almacenamiento para el encabezado del sistema de archivos y que se hidratan automáticamente en archivos completos en condiciones de uso normal. Los archivos de marcador de posición se presentan como archivos típicos a las aplicaciones y a los usuarios finales en Windows Shell.
-* Los archivos de marcador de posición se integran verticalmente desde el kernel de Windows hasta Windows Shell, y la compatibilidad de la aplicación con los archivos de marcador de posición suele ser un problema. Tanto si usa las API del sistema de archivos, el símbolo del sistema, un escritorio o una aplicación para UWP para acceder a un archivo de marcador de posición, el archivo se hidratará sin cambios de código adicionales y esa aplicación puede usar el archivo normalmente.
+* Los motores de sincronización pueden crear archivos de marcador de posición que consumen solo 1 KB de almacenamiento para el encabezado del sistema de archivos y que se hidratan automáticamente en archivos completos en condiciones de uso normal. Los archivos de marcador de posición se presentan como archivos típicos para las aplicaciones y los usuarios finales en Windows Shell.
+* Los archivos de marcador de posición se integran verticalmente desde el kernel de Windows hasta Windows Shell, y la compatibilidad de aplicaciones con archivos de marcador de posición no suele ser un problema. Tanto si usas las API del sistema de archivos, el símbolo del sistema, un escritorio o una aplicación para UWP para acceder a un archivo de marcador de posición, el archivo se hidratará sin cambios de código adicionales y esa aplicación puede usar el archivo normalmente.
 * Los archivos pueden existir en tres estados:
   * **Archivo de marcador** de posición: una representación vacía del archivo y solo disponible si el servicio de sincronización está disponible.
   * **Archivo completo:** el archivo se ha hidratado implícitamente y el sistema podría deshidratarlo si se necesita espacio.
@@ -43,7 +43,7 @@ En la imagen siguiente se muestra cómo se muestran los estados de archivo compl
 
 ### <a name="standardized-sync-root-registration"></a>Registro raíz de sincronización estandarizado
 
-* El registro de una raíz de sincronización es sencillo y estandarizado. Esto incluye la creación de un nodo de marca en el panel de navegación Explorador de archivos, como se muestra en la captura de pantalla siguiente. Las raíces se pueden crear como entradas individuales de nivel superior o como elementos secundarios de una agrupación primaria.
+* El registro de una raíz de sincronización es sencillo y estandarizado. Esto incluye la creación de un nodo de marca en el panel de navegación de Explorador de archivos, como se muestra en la captura de pantalla siguiente. Las raíces se pueden crear como entradas individuales de nivel superior o como elementos secundarios de una agrupación primaria.
 
   ![Ejemplo de una entrada raíz de sincronización en Explorador de archivos](images/register-sync-root-file-explorer.png)
 
@@ -51,27 +51,27 @@ En la imagen siguiente se muestra cómo se muestran los estados de archivo compl
 
 * Iconos de estado:
   * La API de archivos en la nube proporciona iconos de estado de hidratación estandarizados y automáticos que se muestran en Explorador de archivos y en Windows escritorio.
-  * Además de los iconos de Windows de estado estándar que se usan para el estado de hidratación, puede proporcionar iconos de estado personalizados para propiedades adicionales específicas del servicio.
+  * Además de los iconos de Windows estándar usados para el estado de hidratación, puede proporcionar iconos de estado personalizados para propiedades adicionales específicas del servicio.
   * Reemplaza las extensiones de Shell superpuestas a iconos heredados.
 * Indicación de progreso:
   * Al abrir un archivo de marcador de posición que tarda más de unos segundos en hidratarse, se mostrará el progreso de la hidratación. El progreso se muestra en algunas ubicaciones en función del contexto:
     * En una ventana de diálogo del motor de copia.
     * El progreso en línea se muestra junto al archivo en Explorador de archivos.
-    * Si el archivo no se abre en la instrucción específica del usuario, se muestra una notificación del sistema para informar al usuario y proporcionar una manera de controlar la actividad de hidratación no deseada.
+    * Si el archivo no se abre por instrucciones específicas del usuario, se muestra una notificación del sistema para informar al usuario y proporcionar una manera de controlar la actividad de hidratación no deseada.
 * Miniaturas y metadatos:
   * Los archivos de marcador de posición pueden tener miniaturas enriquecciones proporcionadas por el servicio y metadatos de archivo extendidos para proporcionar al usuario una experiencia Explorador de archivos sin problemas.
 * Explorador de archivos panel de navegación:
-  * El registro de una raíz de sincronización con la API de archivos en la nube hace que esa raíz de sincronización (con un icono y un nombre personalizado) aparezca en Explorador de archivos panel de navegación del usuario.
+  * El registro de una raíz de sincronización con la API de archivos en la nube hace que esa raíz de sincronización (con un icono y un nombre personalizado) aparezca en Explorador de archivos panel de navegación de la aplicación.
 * Explorador de archivos menús contextuales:
   * El registro de una raíz de sincronización con la API de archivos en la nube proporciona automáticamente varios verbos (entradas de menú) en el menú contextual de Explorador de archivos que permiten al usuario controlar el estado de hidratación de su archivo.
   * Se pueden agregar verbos adicionales a esta sección del menú contextual mediante Puente de dispositivo de escritorio API compatibles.
 * Control de usuario de la hidratación de archivos:
-  * Los usuarios siempre controlan la hidratación de archivos, incluso cuando el usuario no hidrata explícitamente los archivos. Se muestra un sistema interactivo para la hidratación en segundo plano para alertar al usuario y proporcionar opciones. En la imagen siguiente se muestra una notificación del sistema para un archivo de hidratación.
+  * Los usuarios siempre tienen el control de la hidratación de archivos, incluso cuando el usuario no hidrata explícitamente los archivos. Se muestra un sistema interactivo para la hidratación en segundo plano para alertar al usuario y proporcionar opciones. En la imagen siguiente se muestra una notificación del sistema para un archivo de hidratación.
     ![Ejemplo de un sistema interactivo que se muestra para la hidratación de archivos en segundo plano](images/file-hydration-interactive-toast.png)
-  * Si un usuario impide que una aplicación pueda hidratar archivos a  través de un sistema interactivo, puede desbloquear la aplicación en la página Descargas automáticas de archivos **Configuración**.
+  * Si un usuario impide que una aplicación retrase archivos a través  de un sistema interactivo, puede desbloquear la aplicación en la página Descargas automáticas de archivos **Configuración**.
     ![Captura de pantalla de la configuración de descargas automáticas de archivos](images/allow-automatic-file-downloads-setting.png)
 * Enlazar operaciones del motor de copia (admitidas en Windows 10 Insider Preview Build 19624 y versiones posteriores):
-  * Los proveedores de almacenamiento en la nube pueden registrar un enlace de copia de shell para supervisar las operaciones de archivo dentro de su raíz de sincronización.
+  * Los proveedores de almacenamiento en la nube pueden registrar un enlace de copia de shell para supervisar las operaciones de archivos dentro de su raíz de sincronización.
   * El proveedor registra su enlace de copia estableciendo el valor del Registro **CopyHook** bajo su clave del Registro raíz de sincronización en un CLSID de su objeto de servidor local COM. Este objeto de servidor local implementa la [interfaz IStorageProviderCopyHook.](../shell/nn-shobjidl-istorageprovidercopyhook.md)
 
 ### <a name="desktop-bridge"></a>Puente de dispositivo de escritorio
@@ -80,7 +80,7 @@ En la imagen siguiente se muestra cómo se muestran los estados de archivo compl
 
 ## <a name="cloud-mirror-sample"></a>Ejemplo de Cloud Mirror
 
-En [el ejemplo de Cloud Mirror](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/CloudMirror) se muestra cómo crear una solución que usa la API de archivos en la nube. No está pensado para usarse como código de producción. Carece de un control de errores sólido y está escrito para que se entienda lo más fácilmente posible. Se denomina Reflejo en la nube porque simplemente refleja una carpeta local en el disco local. Especifique una carpeta de servidor que esté pensada para representar el servidor de archivos en la nube y una carpeta de cliente que esté pensada para especificar la ruta de acceso raíz de sincronización. Aparece un nodo de nivel superior en el panel de navegación de Explorador de archivos denominado **TestStorageProviderDisplayName** y este nodo se asigna a la carpeta de cliente especificada.
+En [el ejemplo de Cloud Mirror](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/CloudMirror) se muestra cómo crear una solución que usa la API de archivos en la nube. No está pensado para usarse como código de producción. Carece de un control de errores sólido y se escribe para que se entienda lo más fácilmente posible. Se denomina Reflejo en la nube porque simplemente refleja una carpeta local en el disco local. Especifique una carpeta de servidor que esté pensada para representar el servidor de archivos en la nube y una carpeta de cliente que esté pensada para especificar la ruta de acceso raíz de sincronización. Aparece un nodo de nivel superior en el panel de navegación de Explorador de archivos denominado **TestStorageProviderDisplayName** y este nodo se asigna a la carpeta de cliente especificada.
 
 En lo que respecta a la sincronización, estos son los aspectos que debe implementar un proveedor de sincronización de archivos en la nube totalmente desarrollado:
 
@@ -90,12 +90,12 @@ En lo que respecta a la sincronización, estos son los aspectos que debe impleme
 
 ### <a name="use-the-sample"></a>Uso del ejemplo
 
-1. Cree dos carpetas en el disco duro local. Uno de ellos actuará como servidor y el otro como cliente.
-2. Agregue algunos archivos a la carpeta del servidor. Asegúrese de que la carpeta de cliente está vacía.
+1. Cree dos carpetas en el disco duro local. Una de ellas actuará como servidor y la otra como cliente.
+2. Agregue algunos archivos a la carpeta del servidor. Asegúrese de que la carpeta del cliente está vacía.
 3. Abra el ejemplo de Cloud Mirror en Visual Studio. Establezca el **proyecto CloudMirrorPackage** como proyecto de inicio y, a continuación, compile y ejecute el ejemplo. Cuando se le solicite en el ejemplo, escriba las dos rutas de acceso a las carpetas de servidor y cliente. Después, verá una ventana de consola con información de diagnóstico.
-4. Abra Explorador de archivos y confirme que ve el nodo **TestStorageProviderDisplayName** y los marcadores de posición de todos los archivos que copió en la carpeta del servidor. Para simular una aplicación que intenta abrir archivos sin usar el selector, copie varias imágenes en la carpeta del servidor. Haga doble clic en uno de ellos en la carpeta raíz de sincronización y confirme que se hidrata. A continuación, abra Fotos aplicación. La aplicación cargará previamente los archivos adyacentes en segundo plano para que sea más probable que el usuario no experimente retrasos al mirar las otras imágenes. Puede observar que la deshidratación en segundo plano se realiza a través de notificaciones del sistema o en Explorador de archivos.
-5. Haga clic con el botón derecho en Explorador de archivos abrir un menú contextual y confirme que ve el **elemento de menú TestCommand.** Al hacer clic en este elemento de menú se mostrará un cuadro de mensaje.
-6. Para detener el ejemplo, establezca el foco en la salida de la consola y **presione Ctrl+C.** Esto limpiará el registro raíz de sincronización para que se desinstale el proveedor. Si el ejemplo se bloquea, es posible que la raíz de sincronización permanezca registrada. Esto hará que Explorador de archivos se reinicie cada vez que haga clic en cualquier cosa y se le pedirán las ubicaciones de cliente y servidor falsas. Si esto ocurre, desinstale la aplicación de ejemplo **CloudMirrorPackage** del equipo.
+4. Abra Explorador de archivos y confirme que ve el nodo **TestStorageProviderDisplayName** y los marcadores de posición de todos los archivos que copió en la carpeta del servidor. Para simular una aplicación que intenta abrir archivos sin usar el selector, copie varias imágenes en la carpeta del servidor. Haga doble clic en uno de ellos en la carpeta raíz de sincronización y confirme que se hidrata. A continuación, abra Fotos aplicación. La aplicación cargará previamente los archivos adyacentes en segundo plano para que sea más probable que el usuario no experimente retrasos al mirar las otras imágenes. Puede observar que la dehidratación en segundo plano se realiza a través de notificaciones del sistema o Explorador de archivos.
+5. Haga clic con el botón derecho en Explorador de archivos para abrir un menú contextual y confirme que ve el elemento de menú **TestCommand.** Al hacer clic en este elemento de menú se mostrará un cuadro de mensaje.
+6. Para detener el ejemplo, establezca el foco en la salida de la consola y **presione Ctrl+C.** Esto limpiará el registro raíz de sincronización para que se desinstale el proveedor. Si el ejemplo se bloquea, es posible que la raíz de sincronización permanezca registrada. Esto hará que Explorador de archivos iniciar cada vez que haga clic en cualquier cosa y se le pedirán las ubicaciones de cliente y servidor falsas. Si esto ocurre, desinstale la aplicación de ejemplo **CloudMirrorPackage** del equipo.
 
 ### <a name="sample-architecture"></a>Arquitectura de muestra
 
@@ -104,7 +104,7 @@ El ejemplo es deliberadamente sencillo. Usa clases estáticas para que no sea ne
 * **FakeCloudProvider:** esta clase de nivel superior controla las siguientes clases de trabajo:
   * **CloudProviderRegistrar:** registra la información raíz de sincronización con Windows Shell.
   * **Marcadores de posición:** genera los archivos de marcador de posición en la ruta de acceso raíz de sincronización.
-  * **ShellServices:** construye los proveedores Windows Shell para el menú contextual, las miniaturas y otros servicios.
+  * **ShellServices:** crea los proveedores Windows Shell para el menú contextual, las miniaturas y otros servicios.
   * **CloudProviderSyncRootWatcher:** crea una instancia de DirectoryWatcher para supervisar los cambios en la ruta de acceso raíz de sincronización y actuar en función de los cambios.
   * **FileCopierWithProgress:** copia los archivos de la carpeta del servidor en la carpeta de cliente lentamente en fragmentos para simular su descarga desde un servidor en la nube real. Proporciona una indicación de progreso para que las notificaciones Explorador de archivos interfaz de usuario muestre al usuario algo informativo.
 
@@ -112,7 +112,7 @@ Además de las clases anteriores, el ejemplo también proporciona varias clases 
 
 ## <a name="cloud-files-api-architecture"></a>Arquitectura de API de archivos en la nube
 
-En el núcleo de la pila de almacenamiento de la API de archivos en la nube se encuentra un controlador de minifiltro del sistema de archivos denominado cldflt.sys. Este controlador actúa como proxy entre las aplicaciones del usuario y el motor de sincronización. El motor de sincronización sabe cómo descargar y cargar los datos a petición, mientras que es responsabilidad de cldflt.sys trabajar con shell para presentar archivos como si los datos en la nube estuvieran disponibles localmente.
+En el núcleo de la pila de almacenamiento en la API de archivos en la nube se encuentra un controlador de minifiltro del sistema de archivos denominado cldflt.sys. Este controlador actúa como proxy entre las aplicaciones del usuario y el motor de sincronización. El motor de sincronización sabe cómo descargar y cargar los datos a petición, mientras que es responsabilidad de cldflt.sys trabajar con shell para presentar archivos como si los datos en la nube estuvieran disponibles localmente.
 
 Cldflt.sys admite actualmente volúmenes NTFS porque depende de algunas características únicas de NTFS.
 
@@ -122,9 +122,9 @@ Los controladores de minifiltro del sistema de archivos se administran y admiten
 
 ## <a name="hydration-policies"></a>Directivas de hidratación
 
-Windows admite una variedad de directivas de [hidratación principales y](/windows/desktop/api/cfapi/ne-cfapi-cf_hydration_policy_primary) [modificadores de directiva](/windows/desktop/api/cfapi/ne-cfapi-cf_hydration_policy_modifier) de hidratación secundarios. Las directivas de hidratación principal tienen este orden:
+Windows admite una variedad de directivas [de hidratación principales y](/windows/desktop/api/cfapi/ne-cfapi-cf_hydration_policy_primary) [modificadores de directiva de hidratación](/windows/desktop/api/cfapi/ne-cfapi-cf_hydration_policy_modifier) secundarios. Las directivas de hidratación principal tienen este orden:
 
-  **Always full > Full > Progressive > Partial**
+  **Siempre completa > full > progressive > partial**
 
 Tanto las aplicaciones como los motores de sincronización pueden definir su directiva de hidratación principal preferida. Si no se especifica, la directiva de hidratación predeterminada es progresiva para las aplicaciones y los motores de sincronización.
 

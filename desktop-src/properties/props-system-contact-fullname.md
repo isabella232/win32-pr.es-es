@@ -1,17 +1,17 @@
 ---
 description: Indica el nombre completo del contacto.
 ms.assetid: 24b1cc89-092f-4186-a5d3-a2be7a405538
-title: System. contact. FullName
+title: System.Contact.FullName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9267facc2e5466d57597a19152d108e80901e01e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2177d711f3e30c6329f91240eaab3ff66172416ee7e98503c8c4f0d4e8562929
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277664"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119098399"
 ---
-# <a name="systemcontactfullname"></a>System. contact. FullName
+# <a name="systemcontactfullname"></a>System.Contact.FullName
 
 Indica el nombre completo del contacto.
 
@@ -30,9 +30,9 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

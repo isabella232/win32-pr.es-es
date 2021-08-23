@@ -1,22 +1,22 @@
 ---
-description: Describe un vector 2D compuesto por enteros con signo, de 8 bits (1 byte) de longitud.
+description: Describe un vector 2D de 8 bits (1 byte) de longitud y enteros con signo.
 ms.assetid: 4b01065e-28de-4c67-92ed-2a3564817656
-title: Extensiones de XMBYTE2
+title: Extensiones XMBYTE2
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a7399a8fe5bb26e38bdb6a006f5a899c540e038
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f72c4b1fc0c9db63e378e89f300aa7a492d2feb2a325d1f5155d9bdf6de467b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082332"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118501678"
 ---
-# <a name="xmbyte2-extensions"></a>Extensiones de XMBYTE2
+# <a name="xmbyte2-extensions"></a>Extensiones XMBYTE2
 
-Describe un vector 2D compuesto por enteros con signo, de 8 bits (1 byte) de longitud.
+Describe un vector 2D de 8 bits (1 byte) de longitud y enteros con signo.
 
 > [!Note]  
-> Las características que se enumeran aquí solo están disponibles cuando se desarrollan con C++.
+> Las características enumeradas aquí solo están disponibles al desarrollar con C++.
 
  
 

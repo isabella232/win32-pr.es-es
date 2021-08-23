@@ -1,9 +1,9 @@
 ---
 title: Función TextureCube::GatherCmpAlpha(S,float,float,uint)
-description: Para cuatro valores de texel que se usarían en una operación de filtrado bi lineal, devuelve una comparación de su componente alfa con un valor de comparación junto con el estado de asignación de mosaicos. | Función TextureCube::GatherCmpAlpha(S,float,float,uint)
+description: Para cuatro valores de texel que se usarían en una operación de filtrado bi linear, devuelve una comparación de su componente alfa con un valor de comparación junto con el estado de asignación de mosaicos. | Función TextureCube::GatherCmpAlpha(S,float,float,uint)
 ms.assetid: 8DC43B02-0B3C-49F0-AA94-80894A1A54BD
 keywords:
-- Función GatherCmpAlpha HLSL
+- Función HLSL de GatherCmpAlpha
 topic_type:
 - apiref
 api_name:
@@ -22,7 +22,7 @@ ms.locfileid: "118506514"
 ---
 # <a name="texturecubegathercmpalphasfloatfloatuint-function"></a>Función TextureCube::GatherCmpAlpha(S,float,float,uint)
 
-Para cuatro valores de texel que se usarían en una operación de filtrado bi lineal, devuelve una comparación de su componente alfa con un valor de comparación junto con el estado de asignación de mosaicos.
+Para cuatro valores de texel que se usarían en una operación de filtrado bi linear, devuelve una comparación de su componente alfa con un valor de comparación junto con el estado de asignación de mosaicos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -74,7 +74,7 @@ Valor que se compara con cada valor muestreado.
 
 Tipo: **uint**
 
-Estado de la operación. No se puede acceder al estado directamente; en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** devuelve **TRUE** si todos los valores de la operación Sample **,** **Gather** o **Load** correspondientes accedieron a iconos asignados en un recurso [en mosaico.](/windows/desktop/direct3d11/direct3d-11-2-features) Si se tomaron valores de un icono no asociado, **CheckAccessFullyMapped** devuelve **FALSE.**
+Estado de la operación. No se puede acceder al estado directamente; en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** devuelve **TRUE** si todos los valores de la operación **Sample**, **Gather** o **Load** correspondientes accedieron a iconos asignados en un recurso [en mosaico.](/windows/desktop/direct3d11/direct3d-11-2-features) Si se tomaron valores de un icono no asociado, **CheckAccessFullyMapped** devuelve **FALSE.**
 
 </dd> </dl>
 
@@ -86,7 +86,7 @@ Valor de cuatro componentes cuyo tipo es el mismo que el tipo de plantilla.
 
 ## <a name="remarks"></a>Comentarios
 
-Las muestras de textura se pueden usar para la interpolación bilineal.
+Los ejemplos de textura se pueden usar para la interpolación bilineal.
 
 Esta función es compatible con los siguientes tipos de sombreadores:
 

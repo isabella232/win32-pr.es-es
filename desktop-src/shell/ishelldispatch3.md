@@ -49,7 +49,7 @@ El **objeto IShellDispatch3** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Para obtener una explicación de Windows servicios, consulte la [documentación de](../services/services.md) servicios.
 
@@ -57,7 +57,7 @@ Para obtener una explicación de Windows servicios, consulte la [documentación 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
@@ -67,7 +67,7 @@ Para obtener una explicación de Windows servicios, consulte la [documentación 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

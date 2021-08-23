@@ -1,7 +1,7 @@
 ---
 description: Función de proxy para el método GetDecoderInfo.
 ms.assetid: 4117492e-d652-4c72-9979-cc4e554a6fd8
-title: IWICBitmapDecoder_GetDecoderInfo_Proxy función)
+title: IWICBitmapDecoder_GetDecoderInfo_Proxy función
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 4ca3e234bc6bbff8899b88c89169a59d9838350b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 158f1f65a55e1dd1c8a93c632f588d475d78e3add3412545e78c6cdadaee8840
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104497332"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119088407"
 ---
-# <a name="iwicbitmapdecoder_getdecoderinfo_proxy-function"></a>IWICBitmapDecoder \_ GetDecoderInfo, \_ función de proxy
+# <a name="iwicbitmapdecoder_getdecoderinfo_proxy-function"></a>Función IWICBitmapDecoder \_ GetDecoderInfo \_ Proxy
 
-Función de proxy para el método [**GetDecoderInfo**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getdecoderinfo) .
+Función de proxy para [**el método GetDecoderInfo.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getdecoderinfo)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,21 +41,21 @@ HRESULT IWICBitmapDecoder_GetDecoderInfo_Proxy(
 
 <dl> <dt>
 
-*Este \_ PTR* \[ en\]
+*THIS \_ PTR* \[ en\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) \** _
+Tipo: **[ **IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder)\***
 
-Puntero a este objeto [_ *IWICBitmapDecoder* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) .
+Puntero a este [**objeto IWICBitmapDecoder.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder)
 
 </dd> <dt>
 
-*ppIDecoderInfo* \[ enuncia\]
+*ppIDecoderInfo* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **IWICBitmapDecoderInfo**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoderinfo)\*\***
 
-Puntero que recibe un puntero a un [**IWICBitmapDecoderInfo**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoderinfo).
+Puntero que recibe un puntero a [**IWICBitmapDecoderInfo**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoderinfo).
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Puntero que recibe un puntero a un [**IWICBitmapDecoderInfo**](/windows/desktop/
 
 Tipo: **HRESULT**
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
@@ -71,11 +71,11 @@ Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo con
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP con SP2, \[ solo aplicaciones de escritorio de Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                                                                             |
-| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP con SP2, solo Windows de \[ escritorio de Vista\]<br/>                                                                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                                                                             |
+| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

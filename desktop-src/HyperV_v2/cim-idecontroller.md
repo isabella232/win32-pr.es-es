@@ -41,7 +41,7 @@ La **clase \_ CIM IDEController** no define ningún miembro.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
@@ -51,7 +51,7 @@ La **clase \_ CIM IDEController** no define ningún miembro.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

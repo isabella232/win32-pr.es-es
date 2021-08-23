@@ -1,11 +1,11 @@
 ---
-title: MSMQ-Digests atributo)
-description: Una matriz de resúmenes de los certificados correspondientes en el atributo mSMQ-Sign-Certificates. Se usan para asignar una síntesis a un certificado.
+title: MSMQ-Digests atributo
+description: Matriz de resúmenes de los certificados correspondientes en el atributo mSMQ-Sign-Certificates. Se usan para asignar un resumen a un certificado.
 ms.assetid: a9b03edd-1506-4f2d-afe1-7d953977f6fa
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de MSMQ-Digests
-- mSMQDigests esquema de AD de atributos
+- MSMQ-Digests esquema de AD del atributo
+- Esquema de AD del atributo mSMQDigests
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 06d51c607b1d99af0aed46f259513f4bcf790844
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: dff810ec6cbb8b9d461cec7d349cfb7abd08f1d6e8e330e9b0e1b23e7caefff5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659084"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081889"
 ---
-# <a name="msmq-digests-attribute"></a>MSMQ-Digests atributo)
+# <a name="msmq-digests-attribute"></a>MSMQ-Digests atributo
 
-Una matriz de resúmenes de los certificados correspondientes en el atributo mSMQ-Sign-Certificates. Se usan para asignar una síntesis a un certificado.
+Matriz de resúmenes de los certificados correspondientes en el atributo mSMQ-Sign-Certificates. Se usan para asignar un resumen a un certificado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | MSMQ-Digests                                          |
-| Nombre para mostrar de LDAP | mSMQDigests                                           |
-| Tamaño              | Cada síntesis es de 16 bytes.                              |
-| Actualizar privilegio  | \-                                                    |
+| Ldap-Display-Name | mSMQDigests                                           |
+| Size              | Cada resumen es de 16 bytes.                              |
+| Privilegio actualizar  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.948                                |
-| System-ID-GUID    | 9a0dc33c-c100-11d1-bbc5-0080c76670c0                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 9a0dc33c-c100-11d1-vamos5-0080c76670c0                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -55,18 +55,18 @@ Una matriz de resúmenes de los certificados correspondientes en el atributo mSM
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                            |
+| Id. de vínculo                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
-| System-Only            | False                                                                                         |
-| Tiene un único valor       | False                                                                                         |
-| Está indexado             | True                                                                                          |
-| En el catálogo global      | True                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                  |
+| System-Only            | Falso                                                                                         |
+| Es de un solo valor       | Falso                                                                                         |
+| Está indexado             | Verdadero                                                                                          |
+| En el catálogo global      | Verdadero                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | 16                                                                                            |
 | Range-Upper            | 16                                                                                            |
 | Search-Flags           | 0x00000001                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Clases usadas en        | [**MSMQ-Migrated: usuario**](c-msmqmigrateduser.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Una matriz de resúmenes de los certificados correspondientes en el atributo mSM
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                            |
+| Id. de vínculo                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
-| System-Only            | False                                                                                         |
-| Tiene un único valor       | False                                                                                         |
-| Está indexado             | True                                                                                          |
-| En el catálogo global      | True                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                  |
+| System-Only            | Falso                                                                                         |
+| Es de un solo valor       | Falso                                                                                         |
+| Está indexado             | Verdadero                                                                                          |
+| En el catálogo global      | Verdadero                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | 16                                                                                            |
 | Range-Upper            | 16                                                                                            |
 | Search-Flags           | 0x00000001                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Clases usadas en        | [**MSMQ-Migrated: usuario**](c-msmqmigrateduser.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ Una matriz de resúmenes de los certificados correspondientes en el atributo mSM
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                            |
+| Id. de vínculo                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
-| System-Only            | False                                                                                         |
-| Tiene un único valor       | False                                                                                         |
-| Está indexado             | True                                                                                          |
-| En el catálogo global      | True                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                  |
+| System-Only            | Falso                                                                                         |
+| Es de un solo valor       | Falso                                                                                         |
+| Está indexado             | Verdadero                                                                                          |
+| En el catálogo global      | Verdadero                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | 16                                                                                            |
 | Range-Upper            | 16                                                                                            |
 | Search-Flags           | 0x00000001                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Clases usadas en        | [**MSMQ-Migrated: usuario**](c-msmqmigrateduser.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Una matriz de resúmenes de los certificados correspondientes en el atributo mSM
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                            |
+| Id. de vínculo                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
-| System-Only            | False                                                                                         |
-| Tiene un único valor       | False                                                                                         |
-| Está indexado             | True                                                                                          |
-| En el catálogo global      | True                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                  |
+| System-Only            | Falso                                                                                         |
+| Es de un solo valor       | Falso                                                                                         |
+| Está indexado             | Verdadero                                                                                          |
+| En el catálogo global      | Verdadero                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | 16                                                                                            |
 | Range-Upper            | 16                                                                                            |
 | Search-Flags           | 0x00000001                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Clases usadas en        | [**MSMQ-Migrated: usuario**](c-msmqmigrateduser.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Una matriz de resúmenes de los certificados correspondientes en el atributo mSM
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                            |
+| Id. de vínculo                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
-| System-Only            | False                                                                                         |
-| Tiene un único valor       | False                                                                                         |
-| Está indexado             | True                                                                                          |
-| En el catálogo global      | True                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                  |
+| System-Only            | Falso                                                                                         |
+| Es de un solo valor       | Falso                                                                                         |
+| Está indexado             | Verdadero                                                                                          |
+| En el catálogo global      | Verdadero                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | 16                                                                                            |
 | Range-Upper            | 16                                                                                            |
 | Search-Flags           | 0x00000001                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Clases usadas en        | [**MSMQ-Migrated: usuario**](c-msmqmigrateduser.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Una matriz de resúmenes de los certificados correspondientes en el atributo mSM
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                            |
+| Id. de vínculo                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
-| System-Only            | False                                                                                         |
-| Tiene un único valor       | False                                                                                         |
-| Está indexado             | True                                                                                          |
-| En el catálogo global      | True                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                  |
+| System-Only            | Falso                                                                                         |
+| Es de un solo valor       | Falso                                                                                         |
+| Está indexado             | Verdadero                                                                                          |
+| En el catálogo global      | Verdadero                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | 16                                                                                            |
 | Range-Upper            | 16                                                                                            |
 | Search-Flags           | 0x00000001                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Clases usadas en        | [**MSMQ-Migrated: usuario**](c-msmqmigrateduser.md)<br/> [**Usuario**](c-user.md)<br/> |
+| Clases usadas en        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 

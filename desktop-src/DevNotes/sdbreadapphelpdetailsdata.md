@@ -1,7 +1,7 @@
 ---
-Description: Recupera datos de la base de datos de detalles de apphelp.
+Description: Recupera datos de la base de datos de detalles de Apphelp.
 ms.assetid: f3731561-bf3f-4139-9890-bd4ce73d83fa
-title: SdbReadApphelpDetailsData función)
+title: Función SdbReadApphelpDetailsData
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: a0a352e3fe33115133b827b5ad03d99a14101b34
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a9e116080ffbfd81cff7dca8674b6be6fc977f3f7b3024bf32779887bde04d03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118404414"
 ---
-# <a name="sdbreadapphelpdetailsdata-function"></a>SdbReadApphelpDetailsData función)
+# <a name="sdbreadapphelpdetailsdata-function"></a>Función SdbReadApphelpDetailsData
 
-Recupera datos de la base de datos de detalles de apphelp.
+Recupera datos de la base de datos de detalles de Apphelp.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,32 +40,32 @@ BOOL WINAPI SdbReadApphelpDetailsData(
 
 <dl> <dt>
 
-archivo *PDB* \[ de\]
+*pdb* \[ En\]
 </dt> <dd>
 
-Identificador de la base de datos de detalles de apphelp, apphelp. sdb.
+Identificador de la base de datos de detalles de Apphelp, Apphelp.sdb.
 
 </dd> <dt>
 
-*pdata* \[ enuncia\]
+*pData* \[ out\]
 </dt> <dd>
 
-Una estructura de [**\_ datos APPHELP**](apphelp-data.md) .
+Una [**estructura DE DATOS \_ APPHELP.**](apphelp-data.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función devuelve **true** si se ejecuta correctamente o **false** en caso de error.
+La función devuelve **TRUE si** se ejecuta correctamente o **FALSE** en caso de error.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                   |
 | Archivo DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

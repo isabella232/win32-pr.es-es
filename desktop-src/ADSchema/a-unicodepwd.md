@@ -27,7 +27,7 @@ Contraseña del usuario en formato un Windows NT un way (OWF). Windows 2000 usa 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|------------------------------------------------------------------------------|
 | CN                | Unicode-Pwd                                                                  |
 | Ldap-Display-Name | unicodePwd                                                                   |
@@ -36,7 +36,7 @@ Contraseña del usuario en formato un Windows NT un way (OWF). Windows 2000 usa 
 | Frecuencia de actualización  | Cuando se crea el registro del usuario y cada vez que es necesario cambiar la contraseña. |
 | Attribute-Id      | 1.2.840.113556.1.4.90                                                        |
 | System-Id-Guid    | bf9679e1-0de6-11d0-a285-00aa003049e2                                         |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md)                        |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md)                        |
 
 
 
@@ -58,10 +58,10 @@ Contraseña del usuario en formato un Windows NT un way (OWF). Windows 2000 usa 
 |------------------------|-----------------------------------|
 | Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
+| System-Only            | Falso                             |
 | Es de un solo valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
@@ -79,10 +79,10 @@ Contraseña del usuario en formato un Windows NT un way (OWF). Windows 2000 usa 
 |------------------------|-----------------------------------|
 | Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Es de un solo valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
@@ -100,10 +100,10 @@ Contraseña del usuario en formato un Windows NT un way (OWF). Windows 2000 usa 
 |------------------------|-------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                |
 | MAPI-Id                | \-                                                                |
-| System-Only            | False                                                             |
-| Es de un solo valor       | True                                                              |
-| Está indexado             | False                                                             |
-| En el catálogo global      | False                                                             |
+| System-Only            | Falso                                                             |
+| Es de un solo valor       | Verdadero                                                              |
+| Está indexado             | Falso                                                             |
+| En el catálogo global      | Falso                                                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
@@ -117,14 +117,14 @@ Contraseña del usuario en formato un Windows NT un way (OWF). Windows 2000 usa 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------|
 | Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Es de un solo valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
@@ -142,10 +142,10 @@ Contraseña del usuario en formato un Windows NT un way (OWF). Windows 2000 usa 
 |------------------------|-----------------------------------|
 | Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
+| System-Only            | Falso                             |
 | Es de un solo valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
@@ -163,10 +163,10 @@ Contraseña del usuario en formato un Windows NT un way (OWF). Windows 2000 usa 
 |------------------------|-----------------------------------|
 | Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
+| System-Only            | Falso                             |
 | Es de un solo valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
@@ -184,10 +184,10 @@ Contraseña del usuario en formato un Windows NT un way (OWF). Windows 2000 usa 
 |------------------------|-----------------------------------|
 | Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
+| System-Only            | Falso                             |
 | Es de un solo valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |

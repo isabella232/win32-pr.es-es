@@ -21,7 +21,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118412761"
 ---
-# <a name="em_reconversion-message"></a>Mensaje EM \_ RECONVERSION
+# <a name="em_reconversion-message"></a>Mensaje DE \_ EM RECONVERSION
 
 Invoca el cuadro de diálogo de reconversión del Editor de métodos de entrada (IME).
 

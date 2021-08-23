@@ -61,7 +61,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
 </dt> </dl>
 
-Sistema [**CIM \_ que**](cim-system.md) contiene **PartComponent.**
+Sistema [**CIM \_ que**](cim-system.md) contiene **partcomponente**.
 
 </dd> <dt>
 
@@ -85,7 +85,7 @@ Elemento [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md) secun
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
@@ -95,7 +95,7 @@ Elemento [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md) secun
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,20 +4,20 @@ ms.assetid: cd3952ca-3958-4944-8fde-f0163a47bff9
 title: Procesadores de señal digital
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0961554d9c9902e68f74c6b2b57662b23846614f
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 88f5c9aa0ee3c4cc2a8c7f725b3a8444f4852c8c5b52ee3713b533ec435f4a3f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105697918"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119100947"
 ---
 # <a name="digital-signal-processors"></a>Procesadores de señal digital
 
-En esta sección se describen los objetos de procesador de señal digital (DSP) proporcionados por Windows.
+En esta sección se describen los objetos del procesador de señales digitales (DSP) proporcionados por Windows.
 
-Microsoft usa el término *procesador de señal digital* para designar un conjunto de objetos com que realizan transformaciones en datos de audio y vídeo sin comprimir. Los DSP descritos en este SDK transforman audio y vídeo en diversos formatos sin comprimir.
+Microsoft usa el término *procesador de señales digitales* para designar un conjunto de objetos COM que realizan transformaciones en datos de audio y vídeo sin comprimir. Los DSP descritos en este SDK transforman audio y vídeo en una variedad de formatos sin comprimir.
 
-Los DSP pueden usarse por sí solos o en combinación con los códecs de audio y vídeo. A excepción del DSP de captura de voz, cada DSP mostrado aquí implementa dos interfaces independientes pero similares.
+Los DSP se pueden usar por sí mismos o en combinación con códecs de audio y vídeo. A excepción del DSP de captura de voz, cada DSP enumerado aquí implementa dos interfaces independientes pero similares.
 
 
 
@@ -30,19 +30,19 @@ Los DSP pueden usarse por sí solos o en combinación con los códecs de audio y
 
  
 
-Puede configurar los DSP mediante la interfaz [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) para establecer propiedades. Algunos de los DSP tienen interfaces adicionales que establecen propiedades. Para utilizar estas interfaces, llame al método [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) de cualquier otra interfaz del DSP. En el tema de referencia de cada DSP se enumeran las propiedades, interfaces y otras características admitidas.
+Puede configurar los DSP mediante la interfaz [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) para establecer propiedades. Algunos de los DSP tienen interfaces adicionales que establecen propiedades. Para usar estas interfaces, llame al [**método QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) de cualquier otra interfaz del DSP. En el tema de referencia de cada DSP se enumeran las propiedades, interfaces y otras características admitidas.
 
 Esta sección contiene los temas siguientes.
 
 
 
-| DSP                                                      | Descripción                                          |
+| Dsp                                                      | Descripción                                          |
 |----------------------------------------------------------|------------------------------------------------------|
-| [DSP de remuestreador de audio](audioresampler.md)                | Convierte la velocidad de muestreo de una secuencia de audio.       |
+| [Audio Resampler DSP](audioresampler.md)                | Convierte la frecuencia de muestreo de una secuencia de audio.       |
 | [DSP de transformación de control de color](colorcontroltransform.md) | Ajusta las características de color de una secuencia de vídeo. |
-| [DSP de convertidor de colores](colorconverter.md)                | Convierte un flujo de vídeo entre formatos de color.       |
-| [DSP de convertidor de velocidad de fotogramas](framerateconverter.md)       | Cambia la velocidad de fotogramas de una secuencia de vídeo.            |
-| [Vídeo de tamaño DSP](videoresizer.md)                    | Cambia el tamaño de una secuencia de vídeo.                              |
+| [DSP de convertidor de colores](colorconverter.md)                | Convierte una secuencia de vídeo entre formatos de color.       |
+| [DSP del convertidor de velocidad de fotogramas](framerateconverter.md)       | Cambia la velocidad de fotogramas de una secuencia de vídeo.            |
+| [DSP de cambio de tamaño de vídeo](videoresizer.md)                    | Cambia el tamaño de una secuencia de vídeo.                              |
 | [DSP de captura de voz](voicecapturedmo.md)                 | Encapsula varios DSP relacionados con la captura de voz.  |
 
 

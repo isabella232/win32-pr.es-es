@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de TBN_HOTITEMCHANGE (commctrl. h)
-description: Se envía por un control de barra de herramientas cuando cambia el elemento activo (resaltado). Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: TBN_HOTITEMCHANGE de notificación (Commctrl.h)
+description: Enviado por un control de barra de herramientas cuando cambia el elemento de acceso rápido (resaltado). Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 49e68e2a-d9c0-463d-954d-34c9adfad62b
 keywords:
-- TBN_HOTITEMCHANGE controles de código de notificación de Windows
+- TBN_HOTITEMCHANGE código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d314a7250128a0f3e6b3fed54e5765487619d8e2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b51765a3c0590b4584b817772cec73df626363dfce6a5ef472ceec6c3ea023f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801069"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118167043"
 ---
-# <a name="tbn_hotitemchange-notification-code"></a>Código de notificación de HOTITEMCHANGE de TBN \_
+# <a name="tbn_hotitemchange-notification-code"></a>Código de notificación \_ HOTITEMCHANGE de TBN
 
-Se envía por un control de barra de herramientas cuando cambia el elemento activo (resaltado). Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Enviado por un control de barra de herramientas cuando cambia el elemento de acceso rápido (resaltado). Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,23 +41,23 @@ TBN_HOTITEMCHANGE
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMTBHOTITEM**](/windows/win32/api/commctrl/ns-commctrl-nmtbhotitem) que contiene información sobre este código de notificación.
+Puntero a una [**estructura NMTBHOTITEM**](/windows/win32/api/commctrl/ns-commctrl-nmtbhotitem) que contiene información sobre este código de notificación.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero para permitir que se resalte el elemento, o un valor distinto de cero, para evitar que se resalte el elemento.
+Devuelve cero para permitir que se resalte el elemento o distinto de cero para evitar que se resalte el elemento.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

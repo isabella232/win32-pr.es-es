@@ -1,8 +1,8 @@
 ---
-title: Estructura de DO_DOWNLOAD_ENUM_CATEGORY
-description: 'Lo usa **IDOManager:: EnumDownloads** para filtrar la enumeración downloads por el valor de la propiedad específica.'
+title: DO_DOWNLOAD_ENUM_CATEGORY estructura
+description: Usado por **IDOManager::EnumDownloads** para filtrar la enumeración de descargas por el valor de la propiedad específica.
 keywords:
-- Estructura de DO_DOWNLOAD_ENUM_CATEGORY
+- DO_DOWNLOAD_ENUM_CATEGORY estructura
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 07/03/2019
-ms.openlocfilehash: a78c94cd9d8854453517976300e12a031f65b8cb
-ms.sourcegitcommit: c20a43b333f03175ac23823c55f3204bfe8cd243
+ms.openlocfilehash: 32bdc7ca9a84bfe87ff453d34c4ecff57a8dabf5f67b21cc0d54ba079efd1578
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "105720103"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118543775"
 ---
-# <a name="do_download_enum_category-structure"></a>Estructura de DO_DOWNLOAD_ENUM_CATEGORY
+# <a name="do_download_enum_category-structure"></a>DO_DOWNLOAD_ENUM_CATEGORY estructura
 
-**IDOManager:: EnumDownloads** usa la estructura **DO_DOWNLOAD_ENUM_CATEGORY** para filtrar la enumeración downloads por el valor de la propiedad específica.
+**IDOManager::EnumDownloads** usa la estructura DO_DOWNLOAD_ENUM_CATEGORY para filtrar la enumeración de descargas por el valor de la propiedad específica. 
 
 ## <a name="syntax"></a>Sintaxis
 ```cpp
@@ -38,7 +38,7 @@ typedef struct _DO_DOWNLOAD_ENUM_CATEGORY
 
 `Property`
 
-Nombre de propiedad que se va a utilizar para la enumeración de descarga. Estas propiedades se admiten para la enumeración.
+Nombre de propiedad que se va a usar para la enumeración de descarga. Estas propiedades se admiten con fines de enumeración.
 - **DODownloadProperty_Id**
 - **DODownloadProperty_Uri**
 - **DODownloadProperty_ContentId**
@@ -53,6 +53,6 @@ Valor de la propiedad.
 
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Cliente mínimo compatible** | Solo aplicaciones Win32 de Windows 10, versión 1809 \[\] |
-| **Servidor mínimo compatible** | Windows Server, versión 1809 \[ Win32 Applications Only\] |
-| **Header** | Do. h |
+| **Cliente mínimo compatible** | \[Windows 10, versión 1809 Solo aplicaciones Win32\] |
+| **Servidor mínimo compatible** | Windows Servidor, versión 1809 \[ Solo aplicaciones Win32\] |
+| **Header** | Do.h |

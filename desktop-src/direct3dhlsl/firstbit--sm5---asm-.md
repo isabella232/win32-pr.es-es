@@ -28,7 +28,7 @@ Busca el primer conjunto de bits en un número, ya sea desde LSB o MSB.
 
 | Elemento                                                            | Descripción                                                                                                                           |
 |-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[en La posición entera del primer conjunto de bits en src0 a partir del LSB para el primer bit lo o \]  \_ MSB para firstbit \_ hi.<br/> |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[en La posición entera del primer bit establecido en src0 a partir del LSB para el primer bit lo o \]  \_ MSB para el primer \_ bit hi.<br/> |
 | <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] El entero de entrada.<br/>                                                                                                  |
 
 
@@ -37,11 +37,11 @@ Busca el primer conjunto de bits en un número, ya sea desde LSB o MSB.
 
 ## <a name="remarks"></a>Comentarios
 
-Esta operación devuelve la posición entera del primer conjunto de bits en la entrada de 32 bits a partir del LSB para el primer bit lo o \_ MSB para el primer bit \_ hi. Por ejemplo, firstbit \_ lo en 0x00000001 devuelve 0. firstbit \_ hi on 0x10000000 devuelve 3.
+Esta operación devuelve la posición de entero del primer conjunto de bits en la entrada de 32 bits a partir del LSB para el primer bit lo o \_ MSB para firstbit \_ hi. Por ejemplo, firstbit \_ lo en 0x00000001 devuelve 0. firstbit \_ hi on 0x10000000 devuelve 3.
 
 firstbit shi (s para signed) devuelve el primer 0 del MSB si el número es negativo; de lo contrario, devuelve el primer 1 del \_ MSB.
 
-Todas las variantes de la instrucción devuelven ~0 (0xffffffff en el registro de 32 bits) si no se encuentra ninguna coincidencia.
+Todas las variantes de la instrucción devuelven ~0 (0xffffffff registro de 32 bits) si no se encuentra ninguna coincidencia.
 
 Use esta instrucción para enumerar rápidamente los bits establecidos en un campo de bits o buscar la potencia más grande de 2 en un número.
 
@@ -49,7 +49,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -57,7 +57,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-## <a name="mimimum-shader-model"></a>Modelo de sombreador de Mimimum
+## <a name="mimimum-shader-model"></a>Modelo de sombreador mimimum
 
 Esta instrucción se admite en los siguientes modelos de sombreador:
 
@@ -65,9 +65,9 @@ Esta instrucción se admite en los siguientes modelos de sombreador:
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
 | [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | No        |
-| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | No        |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | No        |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
 | [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |

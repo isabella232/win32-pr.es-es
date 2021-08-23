@@ -17,7 +17,7 @@ ms.locfileid: "118393892"
 
 En Windows Server 2003 con Service Pack 1 (SP1), la API del servidor HTTP permite las siguientes solicitudes de clientes HTTP.
 
--   Solicitudes que usan un único avance de línea (LF) como terminadores de línea.
+-   Solicitudes que usan una sola fuente de línea (LF) como terminadores de línea.
 -   Solicitudes que contienen espacios en blanco lineales (LWS) entre la línea de solicitud HTTP y el inicio de encabezados.
 
 Estos comportamientos están habilitados de forma predeterminada y no se controlan mediante la configuración del Registro.

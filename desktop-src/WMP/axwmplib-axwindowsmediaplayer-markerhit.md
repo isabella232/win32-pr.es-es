@@ -1,9 +1,9 @@
 ---
 title: Evento MarkerHit del objeto AxWindowsMediaPlayer
-description: El evento MarkerHit se produce cuando se alcanza un marcador. | Evento MarkerHit del objeto AxWindowsMediaPlayer
+description: El evento MarkerHit tiene lugar cuando se alcanza un marcador. | Evento MarkerHit del objeto AxWindowsMediaPlayer
 ms.assetid: 247fc22c-18c4-46b6-b42c-4882209a47f4
 keywords:
-- Evento MarkerHit del objeto AxWindowsMediaPlayer Media Player de Windows
+- Evento MarkerHit del objeto AxWindowsMediaPlayer Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 03bad8d9d64b4711937cd984bbd9d335acebfe67
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b5b51d1eb580937aba40fb3b8318450578cad5b2154539275701239aea27f6d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700160"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118841214"
 ---
 # <a name="markerhit-event-of-the-axwindowsmediaplayer-object"></a>Evento MarkerHit del objeto AxWindowsMediaPlayer
 
-El evento MarkerHit se produce cuando se alcanza un marcador.
+El evento MarkerHit tiene lugar cuando se alcanza un marcador.
 
 ``` syntax
 [C#]
@@ -47,7 +47,7 @@ El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 | Propiedad      | Descripción                                                             |
 |---------------|-------------------------------------------------------------------------|
-| **MarkerNum** | System. Int32Indicates número del marcador que se alcanzó.<br/> |
+| **MarkerNum** | System.Int32Indica el número del marcador que se ha alcanzado.<br/> |
 
 
 
@@ -59,7 +59,7 @@ El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 | Requisito | Value |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                          |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Ensamblado<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 

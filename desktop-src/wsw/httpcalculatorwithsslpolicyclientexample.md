@@ -1,29 +1,29 @@
 ---
 title: HttpCalculatorWithSslPolicyClientExample
-description: En este ejemplo se muestra cómo usar las rutinas de aplicación auxiliar de directivas generadas por wsutil para crear un proxy de servicio para comunicarse con un servicio de calculadora, con seguridad de transporte SSL.
+description: En este ejemplo se muestra cómo usar las rutinas del asistente de directivas generadas wsutil para crear un proxy de servicio para hablar con un servicio de calculadora, con seguridad de transporte SSL.
 ms.assetid: cf2455d4-0670-4ea2-8ee7-073698bfb765
 keywords:
 - HttpCalculatorWithSslPolicyClientExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d010d666ab4801b9920933547841963c0d1063f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6cd9aaaddee3d2cef79fd57f46dffd8da85b2e72bafc710783f025eec68aa5f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994297"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119026483"
 ---
 # <a name="httpcalculatorwithsslpolicyclientexample"></a>HttpCalculatorWithSslPolicyClientExample
 
-En este ejemplo se muestra cómo usar las rutinas de aplicación auxiliar de directivas generadas por wsutil para crear un proxy de servicio para comunicarse con un servicio de calculadora, con seguridad de transporte SSL. En esta configuración, la conexión de transporte está protegida (firmada, cifrada) por SSL, que también proporciona autenticación de servidor.
+En este ejemplo se muestra cómo usar las rutinas del asistente de directivas generadas wsutil para crear un proxy de servicio para hablar con un servicio de calculadora, con seguridad de transporte SSL. En esta configuración, la conexión de transporte está protegida (firmada, cifrada) por SSL, que también proporciona autenticación de servidor.
 
--   [HttpCalculatorWithSslPolicyClient. cpp](#httpcalculatorwithsslpolicyclientcpp)
--   [CalculatorServiceWithPolicy. wsdl](#calculatorservicewithpolicywsdl)
+-   [HttpCalculatorWithSslPolicyClient.cpp](#httpcalculatorwithsslpolicyclientcpp)
+-   [CalculatorServiceWithPolicy.wsdl](#calculatorservicewithpolicywsdl)
 -   [Archivo Make](#makefile)
 
-## <a name="httpcalculatorwithsslpolicyclientcpp"></a>HttpCalculatorWithSslPolicyClient. cpp
+## <a name="httpcalculatorwithsslpolicyclientcpp"></a>HttpCalculatorWithSslPolicyClient.cpp
 
 
 ```C++
@@ -181,7 +181,7 @@ Exit:
 
 
 
-## <a name="calculatorservicewithpolicywsdl"></a>CalculatorServiceWithPolicy. wsdl
+## <a name="calculatorservicewithpolicywsdl"></a>CalculatorServiceWithPolicy.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -334,9 +334,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

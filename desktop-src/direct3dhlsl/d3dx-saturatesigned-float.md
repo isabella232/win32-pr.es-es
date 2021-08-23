@@ -1,9 +1,9 @@
 ---
-title: D3DX_SaturateSigned_FLOAT función)
-description: Recupera un valor saturado con signo del valor FLOAT dado.
+title: D3DX_SaturateSigned_FLOAT función
+description: Recupera un valor saturado con firma del float especificado.
 ms.assetid: 2737ea61-5dbf-4451-bb4f-436e6ea95db6
 keywords:
-- D3DX_SaturateSigned_FLOAT de la función HLSL
+- D3DX_SaturateSigned_FLOAT function HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 64e6ccf5cf941b1abd3577efa5899b8d827e24e7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b94941dab692db1007c1c88b87377f9bed6ad248760e7f01c58005c93bcdb2e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118515706"
 ---
-# <a name="d3dx_saturatesigned_float-function"></a>D3DX \_ SaturateSigned \_ float (función)
+# <a name="d3dx_saturatesigned_float-function"></a>Función D3DX \_ SaturateSigned \_ FLOAT
 
-Recupera un valor saturado con signo del valor FLOAT dado.
+Recupera un valor saturado con firma del float especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,13 +40,13 @@ Recupera un valor saturado con signo del valor FLOAT dado.
 *\_V* 
 </dt> <dd>
 
-Valor que se va a saturar.
+Valor que se saturará.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Valor saturado con signo.
+Valor saturado con firma.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Valor saturado con signo.
 
 | Requisito | Value |
 |-------------------|--------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert. INL</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert.inl</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Valor saturado con signo.
 [Funciones](format-conversion-functions.md)
 </dt> <dt>
 
-[Desempaquetar y empaquetar el \_ formato de DXGI para la edición de In-Place imagen](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Desempaquetar y empaquetar DXGI \_ FORMAT para la edición In-Place imágenes](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
  

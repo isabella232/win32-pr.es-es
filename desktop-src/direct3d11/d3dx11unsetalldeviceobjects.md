@@ -77,7 +77,7 @@ El valor devuelto es uno de los valores enumerados en Códigos de retorno [de Di
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

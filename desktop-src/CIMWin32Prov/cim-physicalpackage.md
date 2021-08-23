@@ -1,5 +1,5 @@
 ---
-description: La clase PhysicalPackage de CIM \_ representa elementos físicos que contienen u hospedan otros componentes. Algunos ejemplos son un gabinete de bastidor o una tarjeta adaptadora.
+description: La clase \_ Cim PhysicalPackage representa elementos físicos que contienen u hospedan otros componentes. Algunos ejemplos son un gabinete de bastidor o una tarjeta adaptadora.
 ms.assetid: 9182d413-aa7e-4c2f-94fe-12e99980520c
 ms.tgt_platform: multiple
 title: CIM_PhysicalPackage clase
@@ -45,10 +45,10 @@ ms.locfileid: "118677537"
 ---
 # <a name="cim_physicalpackage-class"></a>\_Clase PhysicalPackage de CIM
 
-La **clase \_ PhysicalPackage** de CIM representa elementos físicos que contienen u hospedan otros componentes. Algunos ejemplos son un gabinete de bastidor o una tarjeta adaptadora.
+La **clase \_ Cim PhysicalPackage** representa elementos físicos que contienen u hospedan otros componentes. Algunos ejemplos son un gabinete de bastidor o una tarjeta adaptadora.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. ACTUALMENTE, WMI solo admite los [esquemas de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -94,13 +94,13 @@ La **clase \_ PhysicalPackage** de CIM tiene estos tipos de miembros:
 
 ### <a name="methods"></a>Métodos
 
-La **clase \_ Cim PhysicalPackage** tiene estos métodos.
+La **clase \_ PhysicalPackage** de CIM tiene estos métodos.
 
 
 
 | Método                                                                   | Descripción                                                                                                                                      |
 |:-------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**IsCompatible**](iscompatible-method-in-class-cim-physicalpackage.md) | Comprueba si el elemento físico al que se hace referencia puede incluirse en el paquete físico o insertarlo en este. Wmi no implementa.<br/> |
+| [**IsCompatible**](iscompatible-method-in-class-cim-physicalpackage.md) | Comprueba si el elemento físico al que se hace referencia puede incluirse en el paquete físico o insertarlo en este. Wmi no implementa .<br/> |
 
 
 
@@ -108,7 +108,7 @@ La **clase \_ Cim PhysicalPackage** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ Cim PhysicalPackage** tiene estas propiedades.
+La **clase \_ PhysicalPackage** de CIM tiene estas propiedades.
 
 <dl> <dt>
 
@@ -144,7 +144,7 @@ Calificadores: [**\_ clave CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifie
 
 Nombre de la clase o subclase usada en la creación de una instancia de . Cuando se usa con otras propiedades clave de la clase , esta propiedad permite identificar de forma única todas las instancias de la clase y sus subclases.
 
-Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
@@ -241,9 +241,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nombre de la organización que produjo el elemento físico. Para obtener más información, vea la **propiedad Vendor** del [**producto \_ CIM.**](cim-product.md)
+Nombre de la organización que produjo el elemento físico. Para obtener más información, vea la **propiedad Vendor** del [**producto CIM. \_**](cim-product.md)
 
-Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
@@ -261,7 +261,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 
 Nombre por el que se suele conocer el elemento físico.
 
-Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
@@ -277,7 +277,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre")
 </dt> </dl>
 
-Etiqueta por la que se conoce el objeto. Cuando se encuentra en subclases, esta propiedad se puede invalidar para que sea una propiedad de clave.
+Etiqueta por la que se conoce el objeto. Cuando se subclasifica, esta propiedad se puede invalidar para que sea una propiedad de clave.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -292,9 +292,9 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Datos adicionales, más allá de la información de etiquetas de recurso, que se pueden usar para identificar un elemento físico. Un ejemplo son los datos de código de barras asociados a un elemento, que también tiene una etiqueta de recurso. Tenga en cuenta que si solo hay datos de código de barras disponibles y es único y se puede usar como clave de elemento, esta propiedad sería NULL y los datos del código de barra se usarían como clave de clase en la **propiedad Tag.**
+Datos adicionales, más allá de la información de etiquetas de recurso, que se pueden usar para identificar un elemento físico. Un ejemplo son los datos de código de barras asociados a un elemento, que también tiene una etiqueta de recurso. Tenga en cuenta que si solo están disponibles los datos de código de barras y es único y se puede usar como clave de elemento, esta propiedad sería null y los datos del código de barras se usarían como clave de clase en la **propiedad Tag.**
 
-Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
@@ -312,7 +312,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 
 Número de pieza asignado por la organización que produjo o fabricó el elemento físico.
 
-Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
@@ -436,7 +436,7 @@ Los valores son los siguientes:
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Unknown** ("Unknown")
+**Desconocido** ("Desconocido")
 
 
 </dt> <dd></dd> <dt>
@@ -567,7 +567,7 @@ Ancho del paquete físico, en pulgadas.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La **clase \_ PhysicalPackage** de CIM se deriva de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
@@ -579,7 +579,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -589,7 +589,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

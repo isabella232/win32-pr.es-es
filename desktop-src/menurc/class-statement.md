@@ -38,7 +38,7 @@ Entero de 16 bits sin signo o una cadena, entre comillas dobles ("), que identif
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La **instrucción CLASS** solo debe usarse con casos especiales, ya que invalida el procesamiento normal de un cuadro de diálogo. La **instrucción CLASS** convierte un cuadro de diálogo en una ventana de la clase especificada; dependiendo de la clase , esto podría dar resultados no deseados. No use los nombres de clase de control redefinidos con esta instrucción.
 
@@ -50,7 +50,7 @@ En el ejemplo siguiente se muestra el uso de la **instrucción CLASS:**
 CLASS "myclass" 
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

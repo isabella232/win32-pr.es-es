@@ -1,8 +1,8 @@
 ---
-description: La \_ clase WMI MemoryArrayLocation Association de Win32 relaciona una matriz de memoria lógica y la matriz de memoria física en la que existe.
+description: La clase WMI de asociación MemoryArrayLocation de Win32 relaciona una matriz de memoria lógica y la matriz de memoria física en \_ la que existe.
 ms.assetid: 455daeee-ad67-4599-84d6-fa3f4ac593aa
 ms.tgt_platform: multiple
-title: Win32_MemoryArrayLocation (clase)
+title: Win32_MemoryArrayLocation clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 62aae3bf672b12bdb947ff8ce6b76f919eaa11b7
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a0fd01751794dc9177f3840804f0412db70531f6706a452793fe6cbcf3aa2389
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104539231"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119079808"
 ---
-# <a name="win32_memoryarraylocation-class"></a>\_Clase Win32 MemoryArrayLocation
+# <a name="win32_memoryarraylocation-class"></a>Clase MemoryArrayLocation de Win32 \_
 
-La [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ MemoryArrayLocation** Association de Win32 relaciona una matriz de memoria lógica y la matriz de memoria física en la que existe.
+La clase WMI **de asociación \_ MemoryArrayLocation** [de](/windows/desktop/WmiSdk/retrieving-a-class) Win32 relaciona una matriz de memoria lógica y la matriz de memoria física en la que existe.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -61,14 +61,14 @@ Tipo de datos: **Win32 \_ PhysicalMemoryArray**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ PhysicalMemoryArray")
+Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ PhysicalMemoryArray")
 </dt> </dl>
 
-[**\_ PhysicalMemoryArray de Win32**](win32-physicalmemoryarray.md) que describe la matriz de memoria física que implementa la matriz de memoria lógica.
+Clase [**\_ PhysicalMemoryArray de Win32**](win32-physicalmemoryarray.md) que describe la matriz de memoria física que implementa la matriz de memoria lógica.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **Win32 \_ MemoryArray**
@@ -77,39 +77,39 @@ Tipo de datos: **Win32 \_ MemoryArray**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependiente"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ MemoryArray")
+Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ MemoryArray")
 </dt> </dl>
 
-[**\_ MemoryArray de Win32**](win32-memoryarray.md) que describe la matriz de memoria lógica implementada por la matriz de memoria física.
+MemoryArray [**de \_ Win32**](win32-memoryarray.md) que describe la matriz de memoria lógica implementada por la matriz de memoria física.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La **clase \_ MemoryArrayLocation de Win32** se deriva de los [**\_ beneficios de CIM**](cim-realizes.md).
+La **clase \_ MemoryArrayLocation de Win32** se deriva de [**CIM \_ Realizes**](cim-realizes.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Contrataciones \_ de CIM**](cim-realizes.md)
+[**CIM \_ Se da cuenta**](cim-realizes.md)
 </dt> <dt>
 
-[Clases de hardware de sistema del equipo](computer-system-hardware-classes.md)
+[Clases de hardware del sistema de equipo](computer-system-hardware-classes.md)
 </dt> </dl>
 
  

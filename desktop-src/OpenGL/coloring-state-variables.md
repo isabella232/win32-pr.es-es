@@ -1,6 +1,6 @@
 ---
-title: Colores de variables de estado
-description: Coloring State Variables
+title: Variables de estado de la opción de coloreado
+description: Variables de estado de la opción de coloreado
 ms.assetid: 783a798a-f45c-4262-99b8-badd15f52cd5
 keywords:
 - Coloring State Variables OpenGL
@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb41866aa194461fd4edf72fdba8f4dad5de8766
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 2fafcd3400df351ac9dd8f50a1b4c4fb31f5a1ef14924f55588d3b9b1866c65a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909293"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119063295"
 ---
-# <a name="coloring-state-variables"></a>Coloring State Variables
+# <a name="coloring-state-variables"></a>Variables de estado de la opción de coloreado
 
 <dl> <dt><span id="GL_FOG_COLOR"></span><span id="gl_fog_color"></span>GL \_ FOG \_ COLOR</dt> <dd> 
 
@@ -64,7 +64,7 @@ ms.locfileid: "107909293"
 
 | Propiedad | Value |
 |------------------|--------------------------------------------------------------------------------|
-| Descripción:     | Inicio lineal de la curva                                                               |
+| Descripción:     | Inicio lineal de la matriz                                                               |
 | Grupo de atributos: | luz                                                                            |
 | Valor inicial:   | 0,0                                                                            |
 | Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
@@ -73,7 +73,7 @@ ms.locfileid: "107909293"
 
  
 
-</dd> <dt><span id="GL_FOG_END"></span><span id="gl_fog_end"></span>GL \_ FOG \_ END</dt> <dd> 
+</dd> <dt><span id="GL_FOG_END"></span><span id="gl_fog_end"></span>GL \_ END DE GL \_</dt> <dd> 
 
 | Propiedad | Value |
 |------------------|--------------------------------------------------------------------------------|
@@ -86,7 +86,7 @@ ms.locfileid: "107909293"
 
  
 
-</dd> <dt><span id="GL_FOG_MODE"></span><span id="gl_fog_mode"></span>MODO \_ GL \_</dt> <dd> 
+</dd> <dt><span id="GL_FOG_MODE"></span><span id="gl_fog_mode"></span>MODO \_ GL GL \_</dt> <dd> 
 
 | Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|

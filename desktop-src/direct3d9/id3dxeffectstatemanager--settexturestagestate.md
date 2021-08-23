@@ -89,7 +89,7 @@ El método implementado por el usuario debe devolver S \_ OK. Si se produce un e
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

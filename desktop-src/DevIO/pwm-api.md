@@ -1,5 +1,5 @@
 ---
-description: La diferenciación de ancho de pulso (PWM) es la técnica para generar una onda de pulso rectangular que tiene un ancho de pulso que se modulará para dar lugar a la variación del valor medio de la onda.
+description: Pulse Width Width Variation (PWM) es la técnica de generación de una onda de pulso rectangular que tiene un ancho de pulso que se modular para dar lugar a la variación del valor medio de la onda.
 ms.assetid: 16B1E46F-2C42-4D94-949E-BE8F53EB1E1E
 title: PWM API
 ms.topic: article
@@ -20,7 +20,7 @@ ms.locfileid: "118405199"
 
 \[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-La diferenciación de ancho de pulso (PWM) es la técnica para generar una onda de pulso rectangular que tiene un ancho de pulso que se modulará para dar lugar a la variación del valor medio de la onda. Entre los usos más comunes se incluyen la conducción de motores de carreras, la atenuación de LED u otras funciones relacionadas. PWM está pensado para usarse principalmente para Internet de las cosas escenarios.
+Pulse Width Width Variation (PWM) es la técnica de generación de una onda de pulso rectangular que tiene un ancho de pulso que se modular para dar lugar a la variación del valor medio de la onda. Los usos más comunes incluyen la conducción de motores de carreras, LED atenuados u otras funciones relacionadas. PWM está pensado para usarse principalmente para Internet de las cosas escenarios.
 
 ## <a name="about-pulse-width-modulation"></a>Acerca de la frecuencia de ancho de pulso
 
@@ -28,13 +28,13 @@ Una forma de onda de PWM se puede clasificar por dos parámetros:
 
 -   Un período de forma de onda (T)
 
--   El ciclo de servicio, donde la frecuencia de forma de onda (f) es el recíproco del período f=1/T
+-   El ciclo de servicio, donde la frecuencia de onda (f) es el recíproco del período f=1/T
 
-El ciclo de servicio describe la proporción de en tiempo activo con respecto al /  intervalo normal o **período** de tiempo. Un ciclo de servicio bajo corresponde a un promedio de potencia de salida baja, porque la energía está apagada durante la mayor parte del tiempo. El ciclo de servicio se expresa como un porcentaje. Totalmente on es 100 %. Totalmente desactivado es 0 %. **La** mitad del tiempo activo es del 50 %.
+El ciclo de servicio describe la proporción de **en tiempo** activo con respecto al intervalo normal o /  **período** de tiempo. Un ciclo de servicio bajo corresponde a un promedio de potencia de salida baja, porque la energía está apagada la mayor parte del tiempo. El ciclo de servicio se expresa como un porcentaje. Totalmente en es 100 %. Totalmente desactivado es 0 %. **La** mitad del tiempo activa es del 50 %.
 
-Los desarrolladores que buscan implementar PWM en sus aplicaciones de IoT deben investigar la [documentación de PwM de WinRT.](/uwp/api/windows.devices.pwm)
+Los desarrolladores que buscan implementar PWM en sus aplicaciones de IoT deben investigar la [documentación de WinRT PWM.](/uwp/api/windows.devices.pwm)
 
-## <a name="pulse-width-modulation-types"></a>Tipos de amplitud de ancho de pulso
+## <a name="pulse-width-modulation-types"></a>Tipos de pulse Width Width Width
 
 PWM usa [estos códigos de control de E/S,](pwm-control-codes.md) [estructuras](pwm-structures.md)y [enumeraciones.](pwm-enumeration-types.md)
 

@@ -1,6 +1,6 @@
 ---
 title: atributo enum
-description: La palabra clave enum identifica un tipo enumerado.
+description: La enumeración keyword identifica un tipo enumerado.
 ms.assetid: 1aaa3c36-17f7-42ff-8f4c-66133fcf4a1a
 keywords:
 - atributo de enumeración MIDL
@@ -21,7 +21,7 @@ ms.locfileid: "118384494"
 ---
 # <a name="enum-attribute"></a>atributo enum
 
-La palabra **clave enum** identifica un tipo enumerado.
+La **enumeración keyword** identifica un tipo enumerado.
 
 ``` syntax
 enum [tag ] 
@@ -58,15 +58,15 @@ Especifica un valor entero constante.
 
 ## <a name="remarks"></a>Comentarios
 
-**Los tipos de** enumeración pueden aparecer como especificadores de tipo en declaraciones [**typedef,**](typedef.md) declaraciones generales y declaradores de función (ya sea como function-return-type o como un especificador de tipo de parámetro). Para obtener el contexto en el que aparecen los especificadores de tipo, vea [Archivo de definición de interfaz (IDL).](interface-definition-idl-file.md)
+**Los tipos** de enumeración pueden aparecer como especificadores de tipo en declaraciones [**typedef,**](typedef.md) declaraciones generales y declaradores de función (ya sea como function-return-type o como un especificador de tipo de parámetro). Para el contexto en el que aparecen los especificadores de tipo, vea Archivo de [definición de interfaz (IDL).](interface-definition-idl-file.md)
 
-En el modo predeterminado del compilador MIDL, puede asignar valores enteros a enumeradores. (Esta característica no está disponible cuando se compila con el [**modificador /osf).**](-osf.md) Al igual que con los enumeradores del lenguaje C, los nombres de enumerador deben ser únicos, pero los valores del enumerador no deben ser.
+En el modo predeterminado del compilador MIDL, puede asignar valores enteros a enumeradores. (Esta característica no está disponible cuando se compila con el [**modificador /osf).**](-osf.md) Al igual que con los enumeradores en lenguaje C, los nombres de enumerador deben ser únicos, pero los valores del enumerador no deben ser.
 
-Cuando no se proporcionan operadores de asignación, los identificadores se asignan a enteros consecutivos de izquierda a derecha, empezando por cero. Cuando se proporcionan operadores de asignación, los valores asignados comienzan por el valor asignado más recientemente.
+Cuando no se proporcionan operadores de asignación, los identificadores se asignan a enteros consecutivos de izquierda a derecha, empezando por cero. Cuando se proporcionan operadores de asignación, los valores asignados comienzan a partir del valor asignado más recientemente.
 
 El número máximo de identificadores es 65 535.
 
-Los objetos de **tipo enum** son [**tipos int**](int.md) y su tamaño depende del sistema. De forma predeterminada, los objetos **de tipos de** enumeración se tratan como objetos de 16 bits de tipo [**unsigned**](unsigned.md) [**short**](short.md) cuando se transmiten a través de una red. Los valores fuera del intervalo de 0 a 32 767 provocan la excepción en tiempo de ejecución RPC \_ X \_ ENUM \_ VALUE OUT \_ \_ OF \_ RANGE. Para transmitir objetos como entidades de 32 bits, aplique el atributo **\[** [**\_ de enumeración v1**](v1-enum.md) a **\]** la **definición de** tipo de enumeración.
+Los objetos de **tipo enum** son [**tipos int**](int.md) y su tamaño depende del sistema. De forma predeterminada, los objetos **de tipos de** enumeración [](unsigned.md) se tratan como objetos de 16 bits de tipo sin signo [**corto**](short.md) cuando se transmiten a través de una red. Los valores fuera del intervalo de 0 a 32 767 provocan la excepción en tiempo de ejecución RPC \_ X \_ ENUM \_ VALUE OUT \_ \_ OF \_ RANGE. Para transmitir objetos como entidades de 32 bits, aplique el atributo **\[** [**\_ de enumeración v1**](v1-enum.md) a **\]** la **definición de** tipo de enumeración.
 
 ## <a name="examples"></a>Ejemplos
 

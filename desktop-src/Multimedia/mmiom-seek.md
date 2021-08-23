@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MMIOM_SEEK (mmsystem. h)
-description: La \_ función mmioSeek envía el mensaje de búsqueda MMIOM a un procedimiento de e/s para solicitar que se mueva la posición del archivo actual.
+title: MMIOM_SEEK mensaje (Mmsystem.h)
+description: La función mmioSeek envía el mensaje MMIOM SEEK a un procedimiento de E/S para solicitar que se mueve la posición \_ del archivo actual.
 ms.assetid: 428b231a-6e00-4458-9ba2-e9b0b028843a
 keywords:
-- Mensaje de MMIOM_SEEK de Windows multimedia
+- MMIOM_SEEK mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4855ec4e610f1456e1bf26ee05800e31933f05fd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4ea33db15de3a4617561c437f2d5086afbf4bff2155e657677b171b1413b1c96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686196"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065305"
 ---
-# <a name="mmiom_seek-message"></a>MMIOM \_ Buscar mensaje
+# <a name="mmiom_seek-message"></a>Mensaje \_ DE MMIOM SEEK
 
-La función [**mmioSeek**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioseek) envía el mensaje de **\_ búsqueda MMIOM** a un procedimiento de e/s para solicitar que se mueva la posición del archivo actual.
+La función [**mmioSeek**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioseek) envía el mensaje **\_ MMIOM SEEK** a un procedimiento de E/S para solicitar que se mueve la posición del archivo actual.
 
 
 ```C++
@@ -54,9 +54,9 @@ Marca que especifica cómo se cambia la posición del archivo. Se definen los va
 
 | Requisito | Value |
 |-----------|------------------------------------------------------------------------------------------------------------------------|
-| BUSCAR \_ CUR | Mueva la posición del archivo a *lNewFilePos* bytes desde la posición actual. *lNewFilePos* puede ser positivo o negativo. |
-| fin de búsqueda \_ | Mueva la posición del archivo a *lNewFilePos* bytes desde el final del archivo.                                             |
-| conjunto de búsqueda \_ | Mueva la posición del archivo a *lNewFilePos* bytes desde el principio del archivo.                                       |
+| SEEK \_ CUR | Mueva la posición del archivo para *que sea lNewFilePos* bytes desde la posición actual. *lNewFilePos* puede ser positivo o negativo. |
+| SEEK \_ END | Mueva la posición del archivo para *que sea lNewFilePos* bytes desde el final del archivo.                                             |
+| SEEK \_ SET | Mueva la posición del archivo para *que sea lNewFilePos* bytes desde el principio del archivo.                                       |
 
 
 
@@ -66,11 +66,11 @@ Marca que especifica cómo se cambia la posición del archivo. Se definen los va
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve la nueva posición del archivo. Si hay un error, el valor devuelto es 1.
+Devuelve la nueva posición del archivo. Si se produce un error, el valor devuelto es 1.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El procedimiento de e/s es responsable de mantener la posición del archivo actual en el miembro **lDiskOffset** de la estructura [**MMIOINFO**](/previous-versions//dd757322(v=vs.85)) .
+El procedimiento de E/S es responsable de mantener la posición actual del archivo en el **miembro lDiskOffset** de la [**estructura MMIOINFO.**](/previous-versions//dd757322(v=vs.85))
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,7 +80,7 @@ El procedimiento de e/s es responsable de mantener la posición del archivo actu
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: D3DX_FLOAT2_to_R16G16_FLOAT función)
-description: Vuelve a empaquetar el XMFLOAT2 determinado en un formato de DXGI \_ \_ R16G16 \_ float.
+title: D3DX_FLOAT2_to_R16G16_FLOAT función
+description: Empaqueta el XMFLOAT2 especificado de nuevo en un DXGI \_ FORMAT \_ R16G16 \_ FLOAT.
 ms.assetid: 8d03fac3-68f0-4c85-afaa-ff2cb76f1b73
 keywords:
-- D3DX_FLOAT2_to_R16G16_FLOAT de la función HLSL
+- D3DX_FLOAT2_to_R16G16_FLOAT function HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 849eb4dde5ab11e98675a1581519aabbeeb1e8da
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f96d9c2652966ef4b35f4c07ec13d1ea5b6f92af641c2e86a1bf4e0b12ca4487
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104998299"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118516611"
 ---
-# <a name="d3dx_float2_to_r16g16_float-function"></a>D3DX \_ FLOAT2 \_ a \_ R16G16 \_ función Float
+# <a name="d3dx_float2_to_r16g16_float-function"></a>Función FLOAT de D3DX \_ FLOAT2 \_ a \_ R16G16 \_
 
-Vuelve a empaquetar el XMFLOAT2 determinado en un formato de DXGI \_ \_ R16G16 \_ float.
+Empaqueta el XMFLOAT2 especificado de nuevo en un DXGI \_ FORMAT \_ R16G16 \_ FLOAT.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,13 +40,13 @@ UINT D3DX_FLOAT2_to_R16G16_FLOAT(
 *unpackedInput* 
 </dt> <dd>
 
-Datos del sombreador desempaquetado.
+Datos del sombreador desempaquetar.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Datos del sombreador empaquetado.
+Datos empaquetados del sombreador.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Datos del sombreador empaquetado.
 
 | Requisito | Value |
 |-------------------|--------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert. INL</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert.inl</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Datos del sombreador empaquetado.
 [Funciones](format-conversion-functions.md)
 </dt> <dt>
 
-[Desempaquetar y empaquetar el \_ formato de DXGI para la edición de In-Place imagen](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Desempaquetar y empaquetar DXGI \_ FORMAT para la edición In-Place imágenes](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
  

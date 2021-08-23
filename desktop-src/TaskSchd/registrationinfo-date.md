@@ -1,11 +1,11 @@
 ---
-title: RegistrationInfo. Date (propiedad)
-description: En el caso de scripting, obtiene o establece la fecha y hora en que se registra la tarea.
+title: RegistrationInfo.Date, propiedad
+description: Para el scripting, obtiene o establece la fecha y hora en que se registra la tarea.
 ms.assetid: ecff01b6-a1de-458a-9728-34169f17d42b
 keywords:
-- Programador de tareas de la propiedad Date
-- Propiedad Date Programador de tareas, objeto RegistrationInfo
-- Programador de tareas de objeto RegistrationInfo, propiedad Date
+- Fecha de la propiedad Programador de tareas
+- Propiedad Date Programador de tareas , objeto RegistrationInfo
+- Objeto RegistrationInfo Programador de tareas , propiedad Date
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: adfdfa8b2dd3f8dcaa3b2fd5778b1e50dabfab51
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dc0982eeba16d5760af5ba4a7334ed3e5050b3b730d727f7a10cb4b4a260d956
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105685841"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119060003"
 ---
-# <a name="registrationinfodate-property"></a>RegistrationInfo. Date (propiedad)
+# <a name="registrationinfodate-property"></a>RegistrationInfo.Date, propiedad
 
-En el caso de scripting, obtiene o establece la fecha y hora en que se registra la tarea.
+Para el scripting, obtiene o establece la fecha y hora en que se registra la tarea.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -40,19 +40,19 @@ RegistrationInfo.Date As String
 
 Fecha de registro de la tarea.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Al leer o escribir XML para una tarea, la fecha de registro se especifica mediante el elemento [**Date**](taskschedulerschema-date-registrationinfotype-element.md) del esquema de programador de tareas.
+Al leer o escribir XML para una tarea, la fecha de registro se especifica mediante el [**elemento Date**](taskschedulerschema-date-registrationinfotype-element.md) del Programador de tareas esquema.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

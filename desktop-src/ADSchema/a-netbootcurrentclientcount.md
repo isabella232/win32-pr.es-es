@@ -4,8 +4,8 @@ description: El atributo netboot-Current-Client-Count está reservado para uso i
 ms.assetid: c9f088ff-e5f6-4a5e-b6c4-ab869a8ed67e
 ms.tgt_platform: multiple
 keywords:
-- netboot-Current-Client-Count atributo AD Schema
-- netbootCurrentClientCount esquema de AD de atributos
+- Esquema de AD del atributo netboot-Current-Client-Count
+- Esquema de AD del atributo netbootCurrentClientCount
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a1c43ce76cb56e89831f3d6108bfef6d3b403a1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: af2621c363bacc2cf864e4b39999e760cfd615358d664ffb4c8197336eca32e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997387"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081539"
 ---
 # <a name="netboot-current-client-count-attribute"></a>atributo netboot-Current-Client-Count
 
-El atributo **netboot-Current-Client-Count** está reservado para uso interno.
+El **atributo netboot-Current-Client-Count** está reservado para uso interno.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | netboot: actual-Client-Count         |
-| Nombre para mostrar de LDAP | netbootCurrentClientCount            |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | El sistema establece este valor.     |
+| CN                | netboot-Current-Client-Count         |
+| Ldap-Display-Name | netbootCurrentClientCount            |
+| Size              | \-                                   |
+| Actualizar privilegios  | El sistema establece este valor.     |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.852               |
-| System-ID-GUID    | 07383079-91df-11d1-aebc-0000f80367c1 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | 07383079-91df-11d1-aebc-0000f80367c1 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -55,18 +55,18 @@ El atributo **netboot-Current-Client-Count** está reservado para uso interno.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | True                                                       |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Verdadero                                                       |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Clases usadas en        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Clases usadas en        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ El atributo **netboot-Current-Client-Count** está reservado para uso interno.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | True                                                       |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Verdadero                                                       |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Clases usadas en        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Clases usadas en        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ El atributo **netboot-Current-Client-Count** está reservado para uso interno.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | True                                                       |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Verdadero                                                       |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Clases usadas en        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Clases usadas en        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ El atributo **netboot-Current-Client-Count** está reservado para uso interno.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | True                                                       |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Verdadero                                                       |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Clases usadas en        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Clases usadas en        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ El atributo **netboot-Current-Client-Count** está reservado para uso interno.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | True                                                       |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Verdadero                                                       |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Clases usadas en        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Clases usadas en        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ El atributo **netboot-Current-Client-Count** está reservado para uso interno.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | True                                                       |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Verdadero                                                       |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Clases usadas en        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Clases usadas en        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 

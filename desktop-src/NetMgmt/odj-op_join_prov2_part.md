@@ -1,20 +1,20 @@
 ---
 title: OP_JOINPROV2_PART
-description: Definición de OP_JOINPROV2_PART IDL
+description: OP_JOINPROV2_PART definición de IDL
 ms.assetid: c220627e-49bd-49f2-a03c-9cdef4b973ca
 ms.topic: reference
 ms.date: 10/12/2020
 ms.reviewer: jsimmons
-ms.openlocfilehash: f8537b6ca9627a15470115a20f99082dae80e040
-ms.sourcegitcommit: 1e64562147b11f90de802c2431173582d066fae6
+ms.openlocfilehash: fa6853846695c02aabf85d0be865254608b9d4c00f39a372e99f1332e6eb4003
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "104149715"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119012463"
 ---
-# <a name="op_joinprov2_part-structure"></a>Estructura de OP_JOINPROV2_PART
+# <a name="op_joinprov2_part-structure"></a>OP_JOINPROV2_PART estructura
 
-Contiene información adicional que se usa para configurar un cliente unido a un dominio.
+Contiene información adicional utilizada para configurar un cliente unido a un dominio.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,15 +38,15 @@ Debe establecerse en cero o en uno de los valores siguientes:
 
 |Value|Significado|
 | --- | --- |
-|OP_JP2_FLAG_PERSISTENTSITE (0x00000001)|El sitio especificado en lpSiteName debe considerarse como el sitio permanente para el cliente.|
+|OP_JP2_FLAG_PERSISTENTSITE (0x00000001)|El sitio especificado en lpSiteName DEBE considerarse el sitio permanente para el cliente.|
 
 ### <a name="lpnetbiosname"></a>lpNetbiosName
 
-Contiene el nombre NetBIOS de la cuenta de equipo en formato Unicode.
+Contiene el nombre Netbios de la cuenta de equipo en formato Unicode.
 
 ### <a name="lpsitename"></a>lpSiteName
 
-Contiene el nombre del sitio Active Directory que el cliente debe utilizar.
+Contiene el nombre del sitio Active Directory que debe usar el cliente.
 
 ### <a name="lpprimarydnsdomain"></a>lpPrimaryDNSDomain
 
@@ -62,4 +62,4 @@ Reservado para uso futuro y debe establecerse en NULL.
 
 ## <a name="see-also"></a>Vea también
 
-[**Definiciones IDL de unión a dominio sin conexión**](odj-idl.md)
+[**Definiciones de IDL de unión a un dominio sin conexión**](odj-idl.md)

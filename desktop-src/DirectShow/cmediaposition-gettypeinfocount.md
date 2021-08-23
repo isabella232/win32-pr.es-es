@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8cfc54f414a6722f7f69a0330fad2d1a0cfab425
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 032584025d91d6e21b02ed74b26b2e59d55e3a6e044c215d586913d8417a412e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108095483"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118157013"
 ---
 # <a name="cmediapositiongettypeinfocount-method"></a>Método CMediaPosition.GetTypeInfoCount
 
@@ -58,7 +58,7 @@ Devuelve uno de los valores siguientes.
 | Código devuelto                                                                               | Descripción                           |
 |-------------------------------------------------------------------------------------------|---------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>      | Correcto.<br/>                   |
-| <dl> <dt>**PUNTERO \_ E**</dt> </dl> | **Argumento de** puntero NULL.<br/> |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl> | Argumento de puntero **NULL.**<br/> |
 
 
 
@@ -70,12 +70,12 @@ Devuelve uno de los valores siguientes.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -25,7 +25,7 @@ propertyDescription
       type = VT_ARRAY | VT_UNKNOWN
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 [Interfaz de usuario \_ Una aplicación usa PKEY \_ Pinned](windowsribbon-reference-properties-uipkey-pinned.md) para consultar la matriz de elementos de la colección de elementos usados más recientemente (MRU) del [menú de la aplicación](windowsribbon-controls-applicationmenu.md). La información de cada elemento de MRU se encapsula en un [**objeto IUISimplePropertySet**](/windows/desktop/api/uiribbon/nn-uiribbon-iuisimplepropertyset) e incluye las tres claves de propiedad siguientes:
 

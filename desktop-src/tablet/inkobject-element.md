@@ -13,7 +13,7 @@ ms.locfileid: "118717753"
 ---
 # <a name="inkobject-element"></a>Elemento InkObject
 
-Contiene los datos binarios codificados en Base64 del objeto Ink para [**un objeto InkWord**](inkword-element.md) o [**Drawing**](drawing-element.md).
+Contiene los datos binarios codificados en Base64 del objeto Ink para [**un objeto InkWord**](inkword-element.md) o [**Drawing.**](drawing-element.md)
 
 ## <a name="definition"></a>Definición
 

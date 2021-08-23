@@ -1,54 +1,54 @@
 ---
-title: Compatibilidad heredada con la panorámica con barras de desplazamiento
-description: En esta sección se describe la compatibilidad con la panorámica mediante barras de desplazamiento en aplicaciones basadas en Windows.
+title: Compatibilidad heredada con desplazamiento panorámico con barras de desplazamiento
+description: En esta sección se describe la compatibilidad con el movimiento panorámico mediante barras de desplazamiento Windows aplicaciones basadas en aplicaciones.
 ms.assetid: a8906b48-b804-4f3a-bb9b-dc94b632e2f7
 keywords:
 - Windows Touch, compatibilidad heredada
-- panorámica con barras de desplazamiento
-- Windows Touch, panorámica con barras de desplazamiento
-- Windows Touch, barras de desplazamiento
-- barras de desplazamiento, movimiento panorámico
+- desplazamiento panorámico con barras de desplazamiento
+- Windows Táctil, desplazamiento panorámico con barras de desplazamiento
+- Windows Touch,scroll bars
+- barras de desplazamiento, desplazamiento panorámico
 - barras de desplazamiento, compatibilidad heredada
-- Windows Touch, gestos
-- gestos, panorámica con barras de desplazamiento
-- Windows Touch, gestos
-- gestos, panorámica con barras de desplazamiento
-- gestos, deshabilitar
-- Windows Touch, mensajes de la rueda del mouse
-- mensajes de la rueda del mouse
-- Windows Touch, personalización de movimiento panorámico
-- movimiento panorámico, barras de desplazamiento
-- panorámica, compatibilidad heredada
+- Windows Táctil, gestos
+- gestos, desplazamiento panorámico con barras de desplazamiento
+- Windows Touch,flicks
+- flicks,panning with scroll bars
+- flicks,disabling
+- Windows Mensajes táctiles y de rueda del mouse
+- mensajes de rueda del mouse
+- Windows Táctil, personalización del movimiento panorámico
+- desplazamiento panorámico, barras de desplazamiento
+- movimiento panorámico, compatibilidad heredada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 57f6b9dd47821205a6aa5b6f07e5053e31597358
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 97190d637cae5cc6936ecd78dca31e1e6c0f9ef1037b292b6080f973fc4e8701
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104571479"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119086317"
 ---
-# <a name="legacy-support-for-panning-with-scroll-bars"></a>Compatibilidad heredada con la panorámica con barras de desplazamiento
+# <a name="legacy-support-for-panning-with-scroll-bars"></a>Compatibilidad heredada con desplazamiento panorámico con barras de desplazamiento
 
-En esta sección se describe la compatibilidad con la panorámica mediante barras de desplazamiento en aplicaciones basadas en Windows.
+En esta sección se describe la compatibilidad con el movimiento panorámico mediante barras de desplazamiento Windows aplicaciones basadas en aplicaciones.
 
-En Windows 7, los gestos de movimiento panorámico generan \_ \* mensajes de desplazamiento de WM para habilitar la compatibilidad heredada con el movimiento panorámico. Dado que es posible que las aplicaciones no admitan todos los mensajes de desplazamiento de WM \_ \* , puede que la panorámica no funcione correctamente. En este tema se describen los pasos que debe seguir para asegurarse de que la experiencia de movimiento panorámico heredada en las aplicaciones funcione como se espera en los usuarios.
+En Windows 7, los gestos de desplazamiento panorámico generan mensajes WM SCROLL para habilitar \_ \* la compatibilidad heredada con el movimiento panorámico. Dado que es posible que las aplicaciones no admitan todos los mensajes SCROLL de WM, es posible que el movimiento panorámico \_ \* no funcione correctamente. En este tema se describen los pasos que debe seguir para asegurarse de que la experiencia de desplazamiento panorámico heredada en las aplicaciones funciona según lo previsto por los usuarios.
 
 ## <a name="overview"></a>Información general
 
-En las secciones siguientes se explica cómo habilitar la experiencia de movimiento panorámico heredada:
+En las secciones siguientes se explica cómo habilitar la experiencia de desplazamiento panorámico heredada:
 
 -   Cree una aplicación con barras de desplazamiento.
--   Deshabilitar gestos.
--   Personalizar la experiencia de movimiento panorámico.
+-   Deshabilite los gestos.
+-   Personalice la experiencia de desplazamiento panorámico.
 
-## <a name="create-an-application-with-scroll-bars"></a>Crear una aplicación con barras de desplazamiento
+## <a name="create-an-application-with-scroll-bars"></a>Creación de una aplicación con barras de desplazamiento
 
-Inicie un nuevo proyecto de Win32 con el Asistente para Microsoft Visual Studio. Asegúrese de que el tipo de aplicación está establecido en la aplicación Windows. No es necesario habilitar la compatibilidad con el Active Template Library (ATL). En la imagen siguiente se muestra el aspecto que tendrá el proyecto después de haberse iniciado.
+Inicie un nuevo proyecto win32 con el asistente para Microsoft Visual Studio aplicaciones. Asegúrese de que el tipo de aplicación está establecido en el Windows aplicación. No es necesario habilitar la compatibilidad con el Active Template Library (ATL). En la imagen siguiente se muestra el aspecto del proyecto después de haber iniciado el proyecto.
 
 ![captura de pantalla que muestra una ventana sin barras de desplazamiento](images/gpd-1.png)
 
-A continuación, habilite las barras de desplazamiento en la imagen. Cambie el código de creación de la ventana en **InitInstance** para que la llamada a la función [**CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) cree una ventana con barras de desplazamiento. El código siguiente muestra cómo hacerlo.
+A continuación, habilite las barras de desplazamiento en la imagen. Cambie el código de creación de la ventana **en InitInstance para** que la llamada a [**la función CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) cree una ventana con barras de desplazamiento. El código siguiente muestra cómo hacerlo.
 
 
 ```C++
@@ -69,11 +69,11 @@ A continuación, habilite las barras de desplazamiento en la imagen. Cambie el c
 
 
 
-Después de cambiar el código de creación de la ventana, la aplicación tendrá una barra de desplazamiento. En la imagen siguiente se muestra el aspecto que podría tener la aplicación en este punto.
+Después de cambiar el código de creación de la ventana, la aplicación tendrá una barra de desplazamiento. En la imagen siguiente se muestra cómo podría verse la aplicación en este punto.
 
-![captura de pantalla que muestra una ventana con una barra de desplazamiento vertical pero sin texto](images/gpd-2.png)
+![captura de pantalla que muestra una ventana con una barra de desplazamiento vertical, pero sin texto](images/gpd-2.png)
 
-Después de cambiar el código de creación de la ventana, agregue un objeto de barra de desplazamiento a la aplicación y texto para desplazarse. Coloque el código siguiente en la parte superior del método **WndProc** .
+Después de cambiar el código de creación de la ventana, agregue un objeto de barra de desplazamiento a la aplicación y texto para desplazarse. Coloque el código siguiente en la parte superior del **método WndProc.**
 
 
 ```C++
@@ -121,7 +121,7 @@ Después de cambiar el código de creación de la ventana, agregue un objeto de 
 
 
 
-A continuación, implemente la lógica de la aplicación para configurar los cálculos de texto para las métricas de texto. El código siguiente debe reemplazar el caso existente de **\_ Create de WM** en la función **WndProc** .
+A continuación, implemente la lógica de aplicación para configurar los cálculos de texto para las métricas de texto. El código siguiente debe reemplazar el caso **CREATE \_ de WM** existente en la **función WndProc.**
 
 
 ```C++
@@ -148,7 +148,7 @@ A continuación, implemente la lógica de la aplicación para configurar los cá
 
 
 
-A continuación, implemente la lógica de la aplicación para volver a calcular el bloque de texto cuando se cambie el tamaño de la ventana. El código siguiente debe colocarse en el cambio de mensaje en **WndProc**.
+A continuación, implemente la lógica de aplicación para volver a calcular el bloque de texto cuando se cambie el tamaño de la ventana. El código siguiente debe colocarse en el modificador de mensaje **en WndProc**.
 
 
 ```C++
@@ -178,7 +178,7 @@ A continuación, implemente la lógica de la aplicación para volver a calcular 
 
 
 
-A continuación, implemente la lógica de la aplicación para los mensajes de desplazamiento vertical. El código siguiente debe colocarse en el cambio de mensaje en **WndProc**.
+A continuación, implemente la lógica de aplicación para los mensajes de desplazamiento vertical. El código siguiente debe colocarse en el modificador de mensaje **en WndProc**.
 
 
 ```C++
@@ -251,7 +251,7 @@ A continuación, implemente la lógica de la aplicación para los mensajes de de
 
 
 
-A continuación, actualice el código para volver a dibujar la ventana. El código siguiente debe reemplazar el caso **de \_ Paint de WM** predeterminado en **WndProc**.
+A continuación, actualice el código para volver a dibujar la ventana. El código siguiente debe reemplazar el caso **\_ PREDETERMINADO de WM PAINT** en **WndProc**.
 
 
 ```C++
@@ -297,18 +297,18 @@ A continuación, actualice el código para volver a dibujar la ventana. El códi
 
 
 
-Ahora, al compilar y ejecutar la aplicación, debe tener el texto reutilizable y una barra de desplazamiento vertical. En la imagen siguiente se muestra el aspecto que podría tener la aplicación.
+Ahora, al compilar y ejecutar la aplicación, debe tener el texto reutilizable y una barra de desplazamiento vertical. En la imagen siguiente se muestra el aspecto de la aplicación.
 
 ![captura de pantalla que muestra una ventana con una barra de desplazamiento vertical y texto](images/gpd-3.png)
 
-## <a name="disable-flicks"></a>Deshabilitar gestos
+## <a name="disable-flicks"></a>Deshabilitar Flicks
 
-Para mejorar la experiencia de movimiento panorámico en la aplicación, debe desactivar los gestos. Para ello, establezca las propiedades de la ventana en el valor *hWnd* cuando se inicializa. Los valores usados para los gestos se almacenan en el encabezado tpcshrd. h, que también se debe incluir. El código siguiente debe colocarse en las directivas de inclusión y en la función **InitInstance** después de haber creado el *hWnd*.
+Para mejorar la experiencia de desplazamiento panorámico en la aplicación, debe desactivar los gestos. Para ello, establezca las propiedades de la ventana en *el valor hWnd* cuando se inicialice. Los valores usados para los gestos se almacenan en el encabezado tpcshrd.h, que también se debe incluir. El código siguiente debe colocarse en las directivas include y en la **función InitInstance** después de haber creado *el hWnd*.
 
 > [!Note]  
-> Esto resulta útil para las aplicaciones que requieren comentarios inmediatos sobre un evento Touch o Pen Down en lugar de probar un umbral de tiempo o de distancia.
+> Esto es útil para las aplicaciones que requieren comentarios inmediatos sobre un evento táctil o de lápiz en lugar de probar un umbral de tiempo o distancia.
 
- 
+ 
 
 
 ```C++
@@ -340,17 +340,17 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow){
 
 
 
-## <a name="customize-the-panning-experience"></a>Personalización de la experiencia de movimiento panorámico
+## <a name="customize-the-panning-experience"></a>Personalización de la experiencia de desplazamiento panorámico
 
-Es posible que desee una experiencia de movimiento panorámico diferente a la de las ofertas de Windows 7 de forma predeterminada. Para mejorar la experiencia de movimiento panorámico, debe agregar el controlador para el mensaje de [**\_ gesto de WM**](wm-gesture.md) . Para obtener más información, consulte [mejorar la experiencia de movimiento panorámico Single-Finger](improving-the-single-finger-panning-experience.md).
+Es posible que desee una experiencia de movimiento panorámico diferente a Windows 7 ofertas de forma predeterminada. Para mejorar la experiencia de desplazamiento panorámico, debe agregar el controlador para el [**mensaje WM \_ GESTURE.**](wm-gesture.md) Para obtener más información, [vea Improving the Single-Finger Panning Experience](improving-the-single-finger-panning-experience.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Gestos táctiles de Windows](guide-multi-touch-gestures.md)
+[Windows Gestos táctiles](guide-multi-touch-gestures.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

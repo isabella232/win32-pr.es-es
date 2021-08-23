@@ -1,9 +1,9 @@
 ---
 title: Función WaveActiveCountBits
-description: Cuenta el número de variables booleanas que se evalúan como true en todos los sentidos activos de la onda actual y replica el resultado en todos los sentidos de la onda.
+description: Cuenta el número de variables booleanas que se evalúan como true en todos los carriles activos de la ola actual y replica el resultado en todos los carriles de la onda.
 ms.assetid: 053E100C-7E09-4F9D-9F38-9D5E208A38CE
 keywords:
-- Función HLSL de WaveActiveCountBits
+- Función WaveActiveCountBits HLSL
 topic_type:
 - apiref
 api_name:
@@ -22,7 +22,7 @@ ms.locfileid: "118504940"
 ---
 # <a name="waveactivecountbits-function"></a>Función WaveActiveCountBits
 
-Cuenta el número de variables booleanas que se evalúan como true en todos los sentidos activos de la onda actual y replica el resultado en todos los sentidos de la onda.
+Cuenta el número de variables booleanas que se evalúan como true en todos los carriles activos de la ola actual y replica el resultado en todos los carriles de la onda.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,13 +42,13 @@ uint WaveActiveCountBits(
 *bBit* 
 </dt> <dd>
 
-Variables booleanas que se evaluarán. Si se proporciona un valor booleano verdadero explícito, se devuelve el número de pistas activas.
+Variables booleanas que se evaluarán. Si se proporciona un valor booleano verdadero explícito, se devuelve el número de rutas activas.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El número de que se evalúa como true en todos los sentidos activos de la ola actual.
+El número de que se evalúan como true en todos los carriles activos de la ola actual.
 
 ## <a name="remarks"></a>Comentarios
 
@@ -73,7 +73,7 @@ result = WaveActiveCountBits( WaveActiveBallot( bBit ) );
 [Información general del modelo de sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
 </dt> <dt>
 
-[Modelo de sombreador 6](shader-model-6-0.md)
+[Shader Model 6](shader-model-6-0.md)
 </dt> </dl>
 
  

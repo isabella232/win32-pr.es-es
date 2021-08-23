@@ -1,5 +1,5 @@
 ---
-description: El uso de Microsoft Visual Basic entorno de desarrollo integrado (IDE) para la depuración proporciona a los desarrolladores de Visual Basic acceso a herramientas conocidas y facilidad de uso.
+description: El uso del entorno Visual Basic de desarrollo integrado (IDE) de Microsoft Visual Basic proporciona a los desarrolladores de Visual Basic acceso a herramientas conocidas y facilidad de uso.
 ms.assetid: d31efc97-c286-434d-93f5-77b34ec16205
 title: Depuración en el IDE de Visual Basic
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118548014"
 ---
 # <a name="debugging-in-the-visual-basic-ide"></a>Depuración en el IDE de Visual Basic
 
-El uso de Microsoft Visual Basic entorno de desarrollo integrado (IDE) para la depuración proporciona a los desarrolladores de Visual Basic acceso a herramientas conocidas y facilidad de uso. Aunque a la larga muchos componentes tendrán que depurarse más por completo mediante el entorno de Microsoft Visual C++, una estrategia podría ser depurar primero tanta funcionalidad como sea posible con Visual Basic. Por ejemplo, es posible que desee usar el IDE de Visual Basic para la depuración en COM+ cuando aún no esté depurando multithreading, seguimiento de componentes, llamadas remotas o aislamiento de procesos.
+El uso del entorno Visual Basic de desarrollo integrado (IDE) de Microsoft Visual Basic proporciona a los desarrolladores de Visual Basic acceso a herramientas conocidas y facilidad de uso. Aunque muchos componentes tendrán que depurarse por completo con el entorno de Microsoft Visual C++, una estrategia podría ser depurar primero tanta funcionalidad como sea posible con Visual Basic. Por ejemplo, es posible que desee usar el IDE de Visual Basic para la depuración en COM+ cuando aún no esté depurando multithreading, seguimiento de componentes, llamadas remotas o aislamiento de procesos.
 
 En general, cuando se usa el Visual Basic para la depuración, primero se compila el proyecto y se agrega el archivo DLL a una aplicación COM+. A continuación, establezca la compatibilidad binaria para el proyecto, haciendo referencia al archivo DLL que hizo e inicie el proyecto para comenzar la depuración.
 
@@ -32,9 +32,9 @@ En general, cuando se usa el Visual Basic para la depuración, primero se compil
 
 1.  Abra el proyecto de componente en Visual Basic.
 
-2.  Compile el componente y, a continuación, establezca la compatibilidad binaria del proyecto en el componente compilado.
+2.  Compile el componente y, a continuación, establezca la compatibilidad binaria en el proyecto en el componente compilado.
 
-3.  Establezca la propiedad MTSTransactionMode en un valor distinto de 0: NotAnMTSObject. Al iniciar el proyecto, esta configuración le Visual Basic activar el componente en COM+.
+3.  Establezca la propiedad MTSTransactionMode en un valor distinto de 0: NotAnMTSObject. Al iniciar el proyecto, esta configuración solicita Visual Basic activar el componente en COM+.
 
 4.  En el **menú Project,** haga clic en **Propiedades** y, a continuación, escriba el programa de inicio en la **pestaña** Depuración. El programa de inicio es el ejecutable de cliente que llama a este componente.
 
@@ -51,7 +51,7 @@ Después de presionar F5, Visual Basic inicia la aplicación cliente y ejecuta e
 
 <dl> <dt>
 
-[Compatibilidad con la depuración de com+ Visual Basic con MTS](com--visual-basic-debugging-support-contrasted-with-mts.md)
+[Compatibilidad con la depuración de Visual Basic COM+ contrastada con MTS](com--visual-basic-debugging-support-contrasted-with-mts.md)
 </dt> <dt>
 
 [Depuración de componentes Visual Basic compilados](debugging-compiled-visual-basic-components.md)

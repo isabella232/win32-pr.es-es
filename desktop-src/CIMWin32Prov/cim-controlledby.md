@@ -1,8 +1,8 @@
 ---
-description: La relación de ControlledBy de CIM indica los dispositivos a los \_ que se puede acceder o a los que se accede mediante el dispositivo lógico del controlador.
+description: La relación CIM ControlledBy indica qué dispositivos son controlados por el dispositivo lógico del controlador o a los que se accede a \_ través de ellos.
 ms.assetid: 6aa4e088-32a0-4c88-bb82-341b6ab53b4c
 ms.tgt_platform: multiple
-title: CIM_ControlledBy (clase) (proveedores WMI de CIMWin32)
+title: CIM_ControlledBy clase (proveedores WMI CIMWin32)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,19 +21,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 315eea9fa207a92c3aa1add6fe021127dc3949d5
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: efaf4d0d9312e929fa79d689490bd9e5b6a3e164dfdecafaf7cd9fe87b16990d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907182"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119080819"
 ---
-# <a name="cim_controlledby-class-cimwin32-wmi-providers"></a>CIM_ControlledBy (clase) (proveedores WMI de CIMWin32)
+# <a name="cim_controlledby-class-cimwin32-wmi-providers"></a>CIM_ControlledBy clase (proveedores WMI CIMWin32)
 
-La relación de **\_ ControlledBy de CIM** indica los dispositivos a los que se puede acceder o a los que se accede mediante el dispositivo lógico del controlador.
+La **relación \_ CIM ControlledBy** indica qué dispositivos son controlados por el dispositivo lógico del controlador o a los que se accede a través de ellos.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -57,26 +57,26 @@ class CIM_ControlledBy : CIM_DeviceConnection
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ ControlledBy** tiene estos tipos de miembros:
+La **clase \_ CIM ControlledBy** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ ControlledBy** tiene estas propiedades.
+La **clase \_ CIM ControlledBy** tiene estas propiedades.
 
 <dl> <dt>
 
 **AccessState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si el controlador está activamente realizando comandos o accediendo al dispositivo. Esta información es necesaria cuando se puede realizar el comando de un dispositivo lógico, o bien a través de varios controladores.
+Indica si el controlador está comandoando activamente o accediendo al dispositivo. Esta información es necesaria cuando varios controladores pueden usar o acceder a un dispositivo lógico.
 
 <dt>
 
@@ -106,39 +106,39 @@ Indica si el controlador está activamente realizando comandos o accediendo al d
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ controlador CIM**
+Tipo de datos: **Controlador CIM \_**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente")
 </dt> </dl>
 
-Un [**\_ controlador CIM**](cim-controller.md) que representa el controlador.
+Controlador [**CIM \_ que**](cim-controller.md) representa el controlador.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ LogicalDevice de CIM**
+Tipo de datos: **CIM \_ LogicalDevice**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependiente")
+Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
 </dt> </dl>
 
-Un [**\_ LogicalDevice de CIM**](cim-logicaldevice.md) que representa el dispositivo controlado.
+Un [**dispositivo \_ lógico CIM**](cim-logicaldevice.md) que representa el dispositivo controlado.
 
 </dd> <dt>
 
 **NegotiatedDataWidth**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -147,16 +147,16 @@ Tipo de acceso: solo lectura
 Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bits")
 </dt> </dl>
 
-Cuando se pueden usar varios buses o anchos de datos de conexión, esta propiedad define el que se utiliza entre los dispositivos. El ancho de los datos se especifica en bits. Si no se negocia el ancho de los datos, o si esta información no está disponible o es importante para la administración de dispositivos, la propiedad debe establecerse en 0 (cero).
+Cuando son posibles varios anchos de datos de conexión o bus, esta propiedad define el que se usa entre los dispositivos. El ancho de los datos se especifica en bits. Si no se negocia el ancho de los datos, o si esta información no está disponible o no es importante para la administración de dispositivos, la propiedad debe establecerse en 0 (cero).
 
-Esta propiedad se hereda de [**CIM \_ DeviceConnection**](cim-deviceconnection.md).
+Esta propiedad se hereda de [**CIM \_ DeviceConnection.**](cim-deviceconnection.md)
 
 </dd> <dt>
 
 **NegotiatedSpeed**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -165,58 +165,58 @@ Tipo de acceso: solo lectura
 Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bits por segundo")
 </dt> </dl>
 
-Cuando se pueden realizar varias velocidades de conexión o bus, esta propiedad define el que se utiliza entre los dispositivos. La velocidad se especifica en bits por segundo. Si no se negocian las velocidades de conexión o de bus, o si esta información no está disponible o es importante para la administración de dispositivos, la propiedad debe establecerse en 0 (cero).
+Cuando son posibles varias velocidades de conexión o bus, esta propiedad define la que se usa entre los dispositivos. La velocidad se especifica en bits por segundo. Si no se negocian las velocidades de conexión o bus, o si esta información no está disponible o es importante para la administración de dispositivos, la propiedad debe establecerse en 0 (cero).
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
-Esta propiedad se hereda de [**CIM \_ DeviceConnection**](cim-deviceconnection.md).
+Esta propiedad se hereda de [**CIM \_ DeviceConnection.**](cim-deviceconnection.md)
 
 </dd> <dt>
 
 **NumberOfHardResets**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número de restablecimientos fuertes emitidos por el controlador. Un restablecimiento de hardware devuelve el dispositivo a su estado de inicialización o arranque. Se pierden todos los datos y la información de estado de los dispositivos internos.
+Número de restablecimientos de seguridad emitidos por el controlador. Un restablecimiento de seguridad devuelve el dispositivo a su estado de inicialización o arranque. Se pierden toda la información y los datos internos del estado del dispositivo.
 
 </dd> <dt>
 
 **NumberOfSoftResets**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número de restablecimientos flexibles emitidos por el controlador. Un restablecimiento parcial no borra completamente los datos y el estado del dispositivo actual. La semántica exacta depende del dispositivo y de los protocolos y mecanismos utilizados para comunicarse con él.
+Número de restablecimientos de programación emitidos por el controlador. Un restablecimiento de programación no borra completamente el estado y los datos actuales del dispositivo. La semántica exacta depende del dispositivo y de los protocolos y mecanismos que se usan para comunicarse con él.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase **CIM \_ ControlledBy** se deriva de [**CIM \_ DeviceConnection**](cim-deviceconnection.md).
+La **clase \_ CIM ControlledBy** se deriva de [**CIM \_ DeviceConnection**](cim-deviceconnection.md).
 
-WMI no implementa esta clase. Para obtener más información sobre las clases derivadas de **CIM \_ ControlledBy**, vea [Win32 classes](win32-provider.md).
+WMI no implementa esta clase. Para obtener más información sobre las clases derivadas de **CIM \_ ControlledBy**, vea [Clases win32](win32-provider.md).
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -225,7 +225,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[**DeviceConnection de CIM \_**](cim-deviceconnection.md)
+[**CIM \_ DeviceConnection**](cim-deviceconnection.md)
 </dt> </dl>
 
  
