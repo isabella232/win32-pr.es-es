@@ -1,21 +1,21 @@
 ---
-description: Desusado. El PenInputPanel se ha reemplazado por el panel de entrada de texto (TIP). Se produce cuando el objeto PenInputPanel se ha mostrado u oculto.
+description: Desusado. PenInputPanel se ha reemplazado por el Panel de entrada de texto (TIP). Se produce cuando el objeto PenInputPanel se muestra u se oculta a sí mismo.
 ms.assetid: bf4651f4-2cf4-4952-a93e-3c6ba4846722
-title: Evento PenInputPanel. VisibleChanged (Msinkaut. h)
+title: Evento PenInputPanel.VisibleChanged (Msalterut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c739f3517ad9739f1d1ba95af9e5001dfbe659a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5cc917f34c09ef0d4f079fd55e476bbbc4cea266e1b1c436a62b20d6c08ed1b8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697816"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119596619"
 ---
-# <a name="peninputpanelvisiblechanged-event"></a>Evento PenInputPanel. VisibleChanged
+# <a name="peninputpanelvisiblechanged-event"></a>PenInputPanel.VisibleChanged, evento
 
-En desuso. El [**PenInputPanel**](peninputpanel-class.md) se ha reemplazado por el [Panel de entrada de texto (TIP)](text-input-panel-reference.md).
+En desuso. [**PenInputPanel se**](peninputpanel-class.md) ha reemplazado por el [Panel de entrada de texto (TIP).](text-input-panel-reference.md)
 
-Se produce cuando el objeto [**PenInputPanel**](peninputpanel-class.md) se ha mostrado u oculto.
+Se produce cuando el [**objeto PenInputPanel**](peninputpanel-class.md) se muestra u se oculta a sí mismo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,30 +32,30 @@ HRESULT VisibleChanged(
 
 <dl> <dt>
 
-*NewVisibility* \[ de\]
+*NewVisibility* \[ En\]
 </dt> <dd>
 
-**Variante \_ TRUE** para hacer que el objeto [**PenInputPanel**](peninputpanel-class.md) se convierta en visible; de lo contrario, **Variant \_ false**.
+**VARIANT \_ TRUE** para hacer que [**el objeto PenInputPanel**](peninputpanel-class.md) se vuelva visible; en caso contrario, **VARIANT \_ FALSE**.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este evento se realiza correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este evento se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El evento **VisibleChanged** se aplica al destino de mantener el mouse del panel de entrada de Tablet PC. Sin embargo, no se genera cuando el destino de mantener el mouse se expande para mostrar el panel de entrada completo de Tablet PC.
+El **evento VisibleChanged** se aplica al destino del puntero del panel de entrada de Tablet PC. Sin embargo, no se genera cuando el destino del mouse se expande para mostrar el panel de entrada completo de Tablet PC.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Encabezado<br/>                   | <dl> <dt>Msinkaut. h (también requiere Msinkaut \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Msgniut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 

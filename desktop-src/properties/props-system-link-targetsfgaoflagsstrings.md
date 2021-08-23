@@ -1,19 +1,19 @@
 ---
-description: Expresa las marcas SFGAO de un vínculo como valores de cadena y se utiliza como una optimización de consulta.
+description: Expresa las marcas SFGAO de un vínculo como valores de cadena y se usa como optimización de consultas.
 ms.assetid: 1a8f220c-0d2a-4f1f-b7f0-ee6381d0c6a9
-title: System. Link. TargetSFGAOFlagsStrings
+title: System.Link.TargetSFGAOFlagsStrings
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fcfaf06c349af8e7cc9f6daa7bf4355e4b242e07
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a274cd310953c7f13d1dae2ca293f103ce7ea6148b48d66de09ec3f4d5dead38
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677715"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119597715"
 ---
-# <a name="systemlinktargetsfgaoflagsstrings"></a>System. Link. TargetSFGAOFlagsStrings
+# <a name="systemlinktargetsfgaoflagsstrings"></a>System.Link.TargetSFGAOFlagsStrings
 
-Expresa las marcas SFGAO de un vínculo como valores de cadena y se utiliza como una optimización de consulta. Consulte PKEY \_ Shell \_ SFGAOFlagsStrings para obtener los valores posibles de esta propiedad.
+Expresa las marcas SFGAO de un vínculo como valores de cadena y se usa como optimización de consultas. Vea \_ \_ SFGAOFlagsStrings de Shell PKEY para ver los valores posibles de esta propiedad.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -30,9 +30,9 @@ propertyDescription
       type = Multivalue String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

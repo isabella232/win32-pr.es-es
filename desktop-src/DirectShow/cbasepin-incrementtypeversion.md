@@ -1,7 +1,7 @@
 ---
 description: El método IncrementTypeVersion incrementa el número de versión en el conjunto de tipos de medios preferidos.
 ms.assetid: 30cad0ae-58e7-47f6-94ee-75e24ce0a7e9
-title: Método CBasePin. IncrementTypeVersion (Amfilter. h)
+title: Método CBasePin.IncrementTypeVersion (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6db3c08972bebbaf1172c44412ae9c8652100da8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8a8c2536b91d5630141e5a62fa1aa895555537b61f89a574f4cdc1ec208810c6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119526865"
 ---
-# <a name="cbasepinincrementtypeversion-method"></a>CBasePin. IncrementTypeVersion, método
+# <a name="cbasepinincrementtypeversion-method"></a>Método CBasePin.IncrementTypeVersion
 
 El `IncrementTypeVersion` método incrementa el número de versión en el conjunto de tipos de medios preferidos.
 
@@ -44,9 +44,9 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método incrementa la variable miembro [**CBasePin:: m \_ TypeVersion**](cbasepin-m-typeversion.md) . Si el PIN cambia dinámicamente la lista de tipos de medios preferidos, llame a este método cada vez que cambie la lista. Para obtener más información, vea [**CBasePin:: GetMediaTypeVersion**](cbasepin-getmediatypeversion.md).
+Este método incrementa la variable [**miembro CBasePin::m \_ TypeVersion.**](cbasepin-m-typeversion.md) Si el pin cambia dinámicamente la lista de tipos de medios preferidos, llame a este método cada vez que cambie la lista. Para obtener más información, [**vea CBasePin::GetMediaTypeVersion**](cbasepin-getmediatypeversion.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Este método incrementa la variable miembro [**CBasePin:: m \_ TypeVersion**](cb
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Este método incrementa la variable miembro [**CBasePin:: m \_ TypeVersion**](cb
 
 <dl> <dt>
 
-[**Clase CBasePin**](cbasepin.md)
+[**CBasePin (clase)**](cbasepin.md)
 </dt> </dl>
 
  

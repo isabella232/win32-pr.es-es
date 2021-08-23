@@ -1,47 +1,47 @@
 ---
 title: Buscar archivos
-description: De forma predeterminada, RC busca en primer lugar los archivos de encabezado y los archivos de recursos (como los archivos de icono y de cursor) en el directorio actual y, después, en los directorios especificados por la variable de entorno INCLUDE.
+description: De forma predeterminada, RC busca archivos de encabezado y archivos de recursos (como archivos de icono y cursor) primero en el directorio actual y, a continuación, en los directorios especificados por la variable de entorno INCLUDE.
 ms.assetid: 6c8c905d-b0f6-4665-9a93-62617ff30137
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 078a04a4cf2f3461d03c7026e0f1d73d8fd38665
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c4fecaa3c20c9bedf498c30462d5e139da83f11d45a47c6d5e7554adb8ed325b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105704737"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119601565"
 ---
 # <a name="searching-for-files"></a>Buscar archivos
 
-De forma predeterminada, RC busca en primer lugar los archivos de encabezado y los archivos de recursos (como los archivos de icono y de cursor) en el directorio actual y, después, en los directorios especificados por la variable de entorno INCLUDE. (La variable de entorno PATH no tiene ningún efecto en qué directorios busca en RC).
+De forma predeterminada, RC busca archivos de encabezado y archivos de recursos (como archivos de icono y cursor) primero en el directorio actual y, a continuación, en los directorios especificados por la variable de entorno INCLUDE. (La variable de entorno PATH no tiene ningún efecto en los directorios que RC busca).
 
-## <a name="adding-a-directory-to-search"></a>Agregar un directorio para buscar
+## <a name="adding-a-directory-to-search"></a>Agregar un directorio a la búsqueda
 
-Puede usar la opción **/i** para agregar un directorio a la lista de directorios de búsquedas RC. Después, el compilador busca en los directorios en el siguiente orden:
+Puede usar la opción **/i** para agregar un directorio a la lista de directorios que RC busca. A continuación, el compilador busca en los directorios en el orden siguiente:
 
 1.  Directorio actual
-2.  Directorio o directorios que se especifican mediante la opción **/i** , en el orden en que aparecen en la línea de comandos de RC
-3.  La lista de directorios especificados por la variable de entorno INCLUDE, en el orden en que la variable los muestra, a menos que especifique la opción **/x**
+2.  El directorio o directorios que especifique mediante la **opción /i,** en el orden en que aparecen en la línea de comandos rc
+3.  Lista de directorios especificados por la variable de entorno INCLUDE, en el orden en que la variable los enumera, a menos que especifique la **opción /x.**
 
-En el ejemplo siguiente se compila el archivo de definición de recursos MyApp. RC:
+En el ejemplo siguiente se compila el archivo de definición de recursos MyApp.rc:
 
-**rc/i c: \\ contenido de origen \\ /i d: \\ Resources MyApp. RC**
+**rc /i c: \\ source \\ stuff /i d: \\ resources myapp.rc**
 
-Al compilar el script MyApp. rc, RC busca primero los archivos de encabezado y los archivos de recursos en el directorio actual, en C: \\ source \\ Materials and D: \\ Resources y, a continuación, en los directorios especificados por la variable de entorno include.
+Al compilar el script MyApp.rc, RC busca primero archivos de encabezado y archivos de recursos en el directorio actual, luego en C: Source Stuff y D: Resources y, a continuación, en los directorios especificados por la variable de entorno \\ \\ \\ INCLUDE.
 
 ## <a name="ignoring-the-include-environment-variable"></a>Omitir la variable de entorno INCLUDE
 
-Puede evitar que RC use la variable de entorno INCLUDE al determinar los directorios en los que buscar. Para ello, use la opción **/x** . A continuación, el compilador busca los archivos solo en el directorio actual y en los directorios especificados mediante la opción **/i** .
+Puede evitar que RC use la variable de entorno INCLUDE al determinar los directorios en los que se va a buscar. Para ello, use la **opción /x.** A continuación, el compilador busca archivos solo en el directorio actual y en los directorios que especifique mediante **la opción /i.**
 
-El siguiente comando compila el archivo de script MyApp. RC:
+El comando siguiente compila el archivo de script MyApp.rc:
 
-**RC/x/i c: \\ código fuente \\ MyApp. RC**
+**rc /x /i c: \\ source \\ stuff myapp.rc**
 
-Al compilar el script MyApp. rc, RC busca primero los archivos de encabezado y los archivos de recursos en el directorio actual y, después, en C: \\ source \\ materials. No busca en los directorios especificados por la variable de entorno INCLUDE.
+Al compilar el script MyApp.rc, RC busca primero los archivos de encabezado y los archivos de recursos en el directorio actual y, a continuación, en C: \\ Source \\ Stuff. No busca en los directorios especificados por la variable de entorno INCLUDE.
 
- 
+ 
 
- 
+ 
 
 
 

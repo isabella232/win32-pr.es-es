@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de EN_LOWFIRTF (RichEdit. h)
-description: Notifica a la ventana primaria de un control Rich Edit de Microsoft que se ha recibido una palabra clave de formato de texto enriquecido (RTF) no compatible. Un control Rich Edit envía este código de notificación en forma de mensaje de \_ notificación de WM.
+title: EN_LOWFIRTF de notificación (Richedit.h)
+description: Notifica a la ventana primaria de un control Edición enriquecible de Microsoft que se ha recibido una palabra clave de formato de texto enriquecido (RTF) no admitida. Un control Rich Edit envía este código de notificación en forma de mensaje \_ WM NOTIFY.
 ms.assetid: 3b18320b-ebc3-44f2-a93c-e967a028c522
 keywords:
-- EN_LOWFIRTF controles de código de notificación de Windows
+- EN_LOWFIRTF de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e74a6e5dada471fdd8364b34bf2ed1b4da7f2314
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ffafccf7fc52506ce72c6591ae9d4b5e3f5ee8855788267fbfae98497165e4ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119576325"
 ---
-# <a name="en_lowfirtf-notification-code"></a>\_Código de notificación en LOWFIRTF
+# <a name="en_lowfirtf-notification-code"></a>Código de notificación DE EN \_ LOWFIRTF
 
-Notifica a la ventana primaria de un control Rich Edit de Microsoft que se ha recibido una palabra clave de formato de texto enriquecido (RTF) no compatible. Un control Rich Edit envía este código de notificación en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Notifica a la ventana primaria de un control Edición enriquecible de Microsoft que se ha recibido una palabra clave de formato de texto enriquecido (RTF) no admitida. Un control Rich Edit envía este código de notificación en forma de mensaje [**\_ WM NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ EN_LOWFIRTF
 *lParam* 
 </dt> <dd>
 
-Estructura [**ENLOWFIRTF**](/windows/desktop/api/Richedit/ns-richedit-enlowfirtf) .
+Estructura [**ENLOWFIRTF.**](/windows/desktop/api/Richedit/ns-richedit-enlowfirtf)
 
 </dd> </dl>
 
@@ -49,19 +49,19 @@ Estructura [**ENLOWFIRTF**](/windows/desktop/api/Richedit/ns-richedit-enlowfirtf
 
 Este código de notificación no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para recibir una \_ notificación en LOWFIRTF, especifique la \_ marca LOWFIRTF de ENM en la máscara enviada con el mensaje [**em \_ SETEVENTMASK**](em-seteventmask.md) .
+Para recibir una notificación EN LOWFIRTF, especifique la marca ENM LOWFIRTF en la máscara enviada con el \_ \_ mensaje EM [**\_ SETEVENTMASK.**](em-seteventmask.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP con SP1 \[\]<br/>                                  |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de \[ escritorio sp1\]<br/>                                  |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -75,7 +75,7 @@ Para recibir una \_ notificación en LOWFIRTF, especifique la \_ marca LOWFIRTF 
 [**ENLOWFIRTF**](/windows/desktop/api/Richedit/ns-richedit-enlowfirtf)
 </dt> <dt>
 
-[**\_notificaciones de WM**](wm-notify.md)
+[**WM \_ NOTIFY**](wm-notify.md)
 </dt> </dl>
 
  

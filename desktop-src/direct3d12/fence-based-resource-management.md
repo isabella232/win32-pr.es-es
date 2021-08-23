@@ -1,20 +1,20 @@
 ---
-title: Administración de recursos Fence-Based
-description: Muestra cómo administrar la duración de los datos de recursos mediante el seguimiento del progreso de la GPU a través de vallas. La memoria se puede reutilizar eficazmente con barreras administrando cuidadosamente la disponibilidad de espacio libre en memoria, como en una implementación de búfer de anillo para un montón de carga.
+title: Administración de recursos basada en límites
+description: Muestra cómo administrar el intervalo de vida de los datos de recursos mediante el seguimiento del progreso de la GPU a través de barreras. La memoria se puede volver a usar de forma eficaz con barreras que administran cuidadosamente la disponibilidad del espacio libre en la memoria, como en una implementación de búfer en anillo para un montón Upload anillo.
 ms.assetid: A7AB6569-EC6B-4B1B-9266-D05B6DB3A27B
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aba8afd66f8a50a54b699c6a314ba148ebcef023
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0cbfd9231e3013099c8382072049f1ae1478e28f00830e89fb4ecef1b835ce58
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "74104424"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119728895"
 ---
-# <a name="fence-based-resource-management"></a>Administración de recursos Fence-Based
+# <a name="fence-based-resource-management"></a>Administración de recursos basada en límites
 
-Muestra cómo administrar la duración de los datos de recursos mediante el seguimiento del progreso de la GPU a través de vallas. La memoria se puede reutilizar eficazmente con barreras administrando cuidadosamente la disponibilidad de espacio libre en memoria, como en una implementación de búfer de anillo para un montón de carga.
+Muestra cómo administrar el intervalo de vida de los datos de recursos mediante el seguimiento del progreso de la GPU a través de barreras. La memoria se puede volver a usar de forma eficaz con barreras que administran cuidadosamente la disponibilidad del espacio libre en la memoria, como en una implementación de búfer en anillo para un montón Upload anillo.
 
 -   [Escenario de búfer en anillo](#ring-buffer-scenario)
 -   [Ejemplo de búfer en anillo](#ring-buffer-sample)
@@ -22,35 +22,35 @@ Muestra cómo administrar la duración de los datos de recursos mediante el segu
 
 ## <a name="ring-buffer-scenario"></a>Escenario de búfer en anillo
 
-A continuación se presenta un ejemplo en el que una aplicación experimenta una demanda poco frecuente de carga de memoria del montón.
+A continuación se muestra un ejemplo en el que una aplicación experimenta una demanda poco frecuente de memoria del montón de carga.
 
-Un búfer en anillo es una manera de administrar un montón de carga. El búfer en anillo contiene los datos necesarios para los siguientes fotogramas. La aplicación mantiene un puntero de entrada de datos actual y una cola de desplazamiento de fotogramas para registrar cada fotograma y el desplazamiento de inicio de los datos de recursos para ese marco.
+Un búfer en anillo es una manera de administrar un montón de carga. El búfer en anillo contiene los datos necesarios para los siguientes fotogramas. La aplicación mantiene un puntero de entrada de datos actual y una cola de desplazamiento de marco para registrar cada fotograma y el desplazamiento inicial de los datos de recursos para ese marco.
 
-Una aplicación crea un búfer de anillo basado en un búfer para cargar datos en la GPU de cada fotograma. Actualmente se ha representado el marco 2, el búfer en anillo se ajusta en torno a los datos del fotograma 4, todos los datos necesarios para el marco 5 está presente y es necesario subasignar un búfer de constantes grande requerido para el marco 6.
+Una aplicación crea un búfer en anillo basado en un búfer para cargar datos en la GPU para cada fotograma. Actualmente se ha representado el fotograma 2, el búfer en anillo se ajusta alrededor de los datos del fotograma 4, todos los datos necesarios para el fotograma 5 están presentes y es necesario asignar un búfer constante grande necesario para el fotograma 6.
 
-**Figura 1** : la aplicación intenta la subasignación para el búfer de constantes, pero no tiene suficiente memoria libre.
+**Figura 1:** la aplicación intenta la subasignación para el búfer constante, pero no encuentra suficiente memoria libre.
 
 ![memoria libre insuficiente en este búfer en anillo](images/ring-buffer-1.png)
 
-**Figura 2** : a través del sondeo de barrera, la aplicación detecta que se ha representado el fotograma 3, la cola de desplazamiento de fotogramas se actualiza y el estado actual del búfer de anillo sigue, sin embargo, la memoria libre todavía no es suficientemente grande para alojar el búfer de constantes.
+**Figura 2:** a través del sondeo de barrera, la aplicación detecta que se ha representado el fotograma 3, la cola de desplazamiento del marco se actualiza y el estado actual del búfer en anillo sigue; sin embargo, la memoria libre todavía no es lo suficientemente grande como para alojar el búfer constante.
 
-![no hay memoria suficiente después de representar el fotograma 3](images/ring-buffer-2.png)
+![memoria insuficiente después de que se haya representado el fotograma 3](images/ring-buffer-2.png)
 
-**Figura 3** : dada la situación, la CPU se bloquea (a través de barrera en espera) hasta que se representa el marco 4, lo que libera la memoria subasignada para el marco 4.
+**Figura 3:** Dada la situación, la CPU se bloquea a sí misma (a través de la espera de barrera) hasta que se ha representado el fotograma 4, lo que libera la memoria subasignada para el fotograma 4.
 
-![la representación del fotograma 4 libera más espacio en el búfer en anillo](images/ring-buffer-3.png)
+![el marco de representación 4 libera más del búfer en anillo](images/ring-buffer-3.png)
 
-**Figura 4** : ahora la memoria libre es suficientemente grande para el búfer de constantes y la subasignación se realiza correctamente. la aplicación copia los datos de búfer de constantes grandes en la memoria usada anteriormente por los datos de recursos para los marcos 3 y 4. El puntero de entrada actual se ha actualizado por última vez.
+**Figura 4:** ahora la memoria libre es lo suficientemente grande para el búfer constante y la subatribución se realiza correctamente; La aplicación copia los datos de búfer de constantes grandes en la memoria usada anteriormente por los datos de recursos para los fotogramas 3 y 4. El puntero de entrada actual se actualiza finalmente.
 
-![Ahora hay espacio desde el fotograma 6 en el búfer de anillo.](images/ring-buffer-4.png)
+![ahora hay espacio del marco 6 en el búfer en anillo](images/ring-buffer-4.png)
 
-Si una aplicación implementa un búfer en anillo, el búfer en anillo debe ser lo suficientemente grande como para admitir el escenario de peor caso de los tamaños de los datos de recursos.
+Si una aplicación implementa un búfer en anillo, el búfer en anillo debe ser lo suficientemente grande como para hacer frente al escenario peor de los tamaños de los datos de recursos.
 
 ## <a name="ring-buffer-sample"></a>Ejemplo de búfer en anillo
 
-En el código de ejemplo siguiente se muestra cómo se puede administrar un búfer en anillo y se presta atención a la rutina de subasignación que controla el sondeo de barrera y la espera. Para simplificar, el ejemplo utiliza \_ memoria insuficiente \_ para ocultar los detalles de "no hay suficiente memoria libre en el montón", ya que esa lógica (basada en *m \_ pDataCur* y desplazamientos dentro de *FrameOffsetQueue*) no está estrechamente relacionada con los montones o las barreras. El ejemplo se ha simplificado para sacrificar la velocidad de fotogramas en lugar de la utilización de memoria.
+El código de ejemplo siguiente muestra cómo se puede administrar un búfer en anillo, prestando atención a la rutina de subatribución que controla el sondeo y la espera de barreras. Para simplificar, el ejemplo usa MEMORIA INSUFICIENTE para ocultar los detalles de "memoria libre insuficiente que se encuentra en el montón", ya que esa lógica (basada en m pDataCur y los desplazamientos dentro de \_ \_ *FrameOffsetQueue)* *\_* no está estrechamente relacionada con montones o barreras. El ejemplo se simplifica para sacrificar la velocidad de fotogramas en lugar del uso de memoria.
 
-Tenga en cuenta que se espera que la compatibilidad con el búfer de anillo sea un escenario popular; sin embargo, el diseño del montón no impide el uso de otros, como la parametrización y reutilización de la lista de comandos.
+Tenga en cuenta que se espera que la compatibilidad con el búfer en anillo sea un escenario popular. sin embargo, el diseño del montón no impide otro uso, como la parametrización de la lista de comandos y la re-utilización.
 
 ``` syntax
 struct FrameResourceOffset
@@ -149,12 +149,12 @@ void FreeUpMemoryUntilFrame(UINT lastCompletedFrame)
 [**ID3D12Fence**](/windows/desktop/api/d3d12/nn-d3d12-id3d12fence)
 </dt> <dt>
 
-[Subasignación dentro de búferes](large-buffers.md)
+[Subasignación en los búferes](large-buffers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

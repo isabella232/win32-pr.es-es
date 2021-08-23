@@ -4,26 +4,26 @@ ms.assetid: ab852feb-9e26-429e-a02a-11fe0abdfafc
 title: Uso de clústeres de caracteres
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11357a929cf8fec2a7b0caa2bb6ae1ac403e3b91
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f7a48dc8ec1b6fa3ea28cd116f275b1f410b8abd7e232442cff430ab843765f4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103819006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119631825"
 ---
 # <a name="using-character-clusters"></a>Uso de clústeres de caracteres
 
-Los clústeres de caracteres son secuencias de glifo que no se pueden dividir entre líneas. Algunos lenguajes, por ejemplo tailandés e hindú, restringen la colocación del símbolo de intercalación a puntos entre los clústeres. Esta restricción se aplica al movimiento de intercalación iniciado con las acciones del teclado o del mouse (prueba de posicionamiento).
+Los clústeres de caracteres son secuencias de glifo que no se pueden dividir entre líneas. Algunos idiomas, por ejemplo, tailandés e indic, restringen la colocación del signo de inserción a puntos entre clústeres. Esta restricción se aplica al movimiento del cursor de cursor iniciado con acciones del teclado o del mouse (pruebas de pulsación).
 
-Uniscribe proporciona información del clúster en los atributos visuales contenidos en una estructura [**\_ VISATTR de script**](/windows/win32/api/usp10/ns-usp10-script_visattr) y los atributos lógicos contenidos en una estructura [**\_ LOGATTR de script**](/windows/win32/api/usp10/ns-usp10-script_logattr) . Una vez que la aplicación llama a [**ScriptShape**](/windows/desktop/api/Usp10/nf-usp10-scriptshape), la información del clúster se representa mediante secuencias del mismo valor en la matriz de **\_ LOGATTR de script** y el miembro **fClusterStart** de la matriz de **script \_ VISATTR** .
+Uniscribe proporciona información de clúster en los atributos visuales contenidos en una estructura [**\_ SCRIPT RGPDTTR**](/windows/win32/api/usp10/ns-usp10-script_visattr) y en los atributos lógicos contenidos en una [**estructura \_ LOGATTR**](/windows/win32/api/usp10/ns-usp10-script_logattr) de SCRIPT. Después de que la aplicación llame a [**ScriptShape**](/windows/desktop/api/Usp10/nf-usp10-scriptshape), la información del clúster se representa mediante secuencias del mismo valor en la matriz **\_ LOGATTR** de SCRIPT y por el miembro **fClusterStart** en la matriz **SCRIPT SCRIPTS \_ SCRIPTSTTR.**
 
-[**ScriptBreak**](/windows/desktop/api/Usp10/nf-usp10-scriptbreak) también recupera el miembro **fCharStop** de la estructura [**\_ LOGATTR del script**](/windows/win32/api/usp10/ns-usp10-script_logattr) para identificar las posiciones del clúster.
+[**ScriptBreak**](/windows/desktop/api/Usp10/nf-usp10-scriptbreak) también recupera el miembro **fCharStop** de la estructura [**\_ LOGATTR**](/windows/win32/api/usp10/ns-usp10-script_logattr) de SCRIPT para identificar las posiciones del clúster.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Usar Uniscribe](using-uniscribe.md)
+[Uso de Uniscribe](using-uniscribe.md)
 </dt> </dl>
 
  

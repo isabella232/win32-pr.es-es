@@ -1,7 +1,7 @@
 ---
-description: El método BeginFlush informa al filtro propietario de vaciar los filtros de nivel inferior. La clase derivada debe implementar este método.
+description: El método BeginFlush informa al filtro propietario para vaciar los filtros de nivel inferior. La clase derivada debe implementar este método.
 ms.assetid: 612f230c-7f23-42cf-b565-344fae0b6f9a
-title: Método CPullPin. BeginFlush (Pullpin. h)
+title: Método CPullPin.BeginFlush (Pullpin.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f2e4c26b99c78794449077e73040d98b5481fb91
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d2c7998c1c38a533d67edcd2cc237188a627ec8258a8b0349066e31ecf0fbaf4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680276"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119687755"
 ---
-# <a name="cpullpinbeginflush-method"></a>CPullPin. BeginFlush, método
+# <a name="cpullpinbeginflush-method"></a>Método CPullPin.BeginFlush
 
-El `BeginFlush` método informa al filtro propietario de vaciar los filtros de nivel inferior. La clase derivada debe implementar este método.
+El `BeginFlush` método informa al filtro propietario para vaciar los filtros de nivel inferior. La clase derivada debe implementar este método.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,13 +42,13 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**CPullPin:: Seek**](cpullpin-seek.md) llama a este método. Implemente este método para llamar al método [**IPin:: BeginFlush**](/windows/desktop/api/Strmif/nf-strmif-ipin-beginflush) en cada pin de entrada de nivel inferior que reciba datos de este objeto. Si los anclajes de salida del filtro se derivan de [**CBaseOutputPin**](cbaseoutputpin.md), llame al método [**eliverbeginflush de CBaseOutputPin::D**](cbaseoutputpin-deliverbeginflush.md) .
+El [**método CPullPin::Seek**](cpullpin-seek.md) llama a este método. Implemente este método para llamar al método [**IPin::BeginFlush**](/windows/desktop/api/Strmif/nf-strmif-ipin-beginflush) en cada pin de entrada de nivel inferior que recibe datos de este objeto. Si los pin de salida del filtro derivan de [**CBaseOutputPin,**](cbaseoutputpin.md)llame al método [**CBaseOutputPin::D eliverBeginFlush.**](cbaseoutputpin-deliverbeginflush.md)
 
-Este diseño permite que el filtro busque el flujo simplemente mediante una llamada a **Seek** en el objeto **CPullPin** .
+Este diseño permite que el filtro busque la secuencia simplemente llamando a **Seek** en el **objeto CPullPin.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,8 +56,8 @@ Este diseño permite que el filtro busque el flujo simplemente mediante una llam
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Pullpin. h</dt> </dl>                                                                                                       |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Pullpin.h</dt> </dl>                                                                                                       |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Este diseño permite que el filtro busque el flujo simplemente mediante una llam
 
 <dl> <dt>
 
-[**Clase CPullPin**](cpullpin.md)
+[**CPullPin (clase)**](cpullpin.md)
 </dt> </dl>
 
  

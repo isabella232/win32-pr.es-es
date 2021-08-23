@@ -6,7 +6,7 @@
     - name: Guía de programación
       href: programming-guide.md
       items:
-        - name: Introducción a DirectWrite
+        - name: Presentación de DirectWrite
           href: introducing-directwrite.md
         - name: 'Tutorial: Tareas iniciales con DirectWrite'
           href: getting-started-with-directwrite.md
@@ -24,7 +24,7 @@
           href: text-metrics.md
         - name: Fuentes de colores
           href: color-fonts.md
-        - name: Representación de DirectWrite
+        - name: Representación DirectWrite
           href: rendering-directwrite.md
           items:
             - name: Representación mediante Direct2D
@@ -36,7 +36,7 @@
         - name: Temas de procedimientos
           href: how-to-topics.md
           items:
-            - name: Cómo alinear texto
+            - name: Alineación de texto
               href: how-to-align-text.md
             - name: Cómo agregar compatibilidad con varios monitores
               href: how-to-add-support-for-multiple-monitors.md
@@ -52,7 +52,7 @@
               href: how-to-add-inline-objects-to-a-text-layout.md
             - name: Cómo agregar efectos de dibujo de cliente a un diseño de texto
               href: how-to-add-custom-drawing-efffects-to-a-text-layout.md
-        - name: Ejecuciones de glifos y glifos
+        - name: Glifos y ejecuciones de glifos
           href: glyphs-and-glyph-runs.md
         - name: Conjuntos de fuentes personalizadas
           href: custom-font-sets-win10.md
@@ -64,19 +64,19 @@
           href: appendix--win32-migration.md
         - name: Interoperación con GDI
           href: interoperating-with-gdi.md
-        - name: Glosario de DirectWrite
+        - name: DirectWrite Glosario
           href: directwrite-glossary.md
     - name: Referencia de API
       href: reference.md
       items:
-        - name: Functions
+        - name: Funciones
           href: functions.md
           items:
             - name: DWriteCreateFactory
               href: /windows/win32/api/dwrite/nf-dwrite-dwritecreatefactory
             - name: DWriteCoreCreateFactory (DWriteCore)
               href: /windows/windows-app-sdk/api/win32/dwrite_core/nf-dwrite_core-dwritecorecreatefactory
-        - name: Enumeraciones de DirectWrite
+        - name: DirectWrite enumeraciones
           href: enumerations.md
           items:
             - name: DWRITE_AUTOMATIC_FONT_AXES
@@ -346,7 +346,7 @@
                   items:
                     - name: 'Método CreateFontFaceReference(IDWriteFontFile*, UINT32, DWRITE_FONT_SIMULATIONS, IDWriteFontFaceReference**)'
                       href: /windows/win32/api/dwrite_3/nf-dwrite_3-idwritefactory3-createfontfacereference(idwritefontfile_uint32_dwrite_font_simulations_idwritefontfacereference)
-                    - name: 'Método CreateFontFaceReference(WCHAR const *, FILETIME const*, UINT32, DWRITE_FONT_SIMULATIONS, IDWriteFontFaceReference**)'
+                    - name: 'Método CreateFontFaceReference(WCHAR const *, FILETIME const,* UINT32, DWRITE_FONT_SIMULATIONS, IDWriteFontFaceReference**)'
                       href: /windows/win32/api/dwrite_3/nf-dwrite_3-idwritefactory3-createfontfacereference(idwritefontfile_uint32_dwrite_font_simulations_idwritefontfacereference)
                 - name: Método CreateFontSetBuilder
                   href: /windows/win32/api/dwrite_3/nf-dwrite_3-idwritefactory3-createfontsetbuilder
@@ -499,7 +499,7 @@
             - name: IDWriteFontDownloadListener
               href: /windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontdownloadlistener
               items:
-                - name: Método DownloadCompleted
+                - name: DownloadCompleted (método)
                   href: /windows/win32/api/dwrite_3/nf-dwrite_3-idwritefontdownloadlistener-downloadcompleted
             - name: IDWriteFontDownloadQueue
               href: /windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontdownloadqueue
@@ -727,7 +727,7 @@
             - name: IDWriteFontFile
               href: /windows/win32/api/dwrite/nn-dwrite-idwritefontfile
               items:
-                - name: Análisis
+                - name: Analizar
                   href: /windows/win32/api/dwrite/nf-dwrite-idwritefontfile-analyze
                 - name: GetLoader
                   href: /windows/win32/api/dwrite/nf-dwrite-idwritefontfile-getloader
@@ -965,11 +965,11 @@
             - name: IDWriteLocalFontFileLoader
               href: idwritelocalfontfileloader.md
               items:
-                - name: GetFilePathLengthFromKey (método)
+                - name: Método GetFilePathLengthFromKey
                   href: idwritelocalfontfileloader-getfilepathlengthfromkey.md
-                - name: GetFilePathFromKey (método)
+                - name: Método GetFilePathFromKey
                   href: idwritelocalfontfileloader-getfilepathfromkey.md
-                - name: GetLastWriteTimeFromKey (método)
+                - name: Método GetLastWriteTimeFromKey
                   href: idwritelocalfontfileloader-getlastwritetimefromkey.md
             - name: IDWriteLocalizedStrings
               href: /windows/win32/api/dwrite/nn-dwrite-idwritelocalizedstrings
@@ -1351,7 +1351,7 @@
                   href: idwritetextlayout3-getlinemetrics.md
                 - name: Método GetLineSpacing
                   href: idwritetextlayout3-getlinespacing.md
-                - name: Método InvalidateLayout
+                - name: InvalidateLayout (método)
                   href: idwritetextlayout3-invalidatelayout.md
                 - name: Método SetLineSpacing
                   href: idwritetextlayout3-setlinespacing.md
@@ -1386,14 +1386,14 @@
                   href: /windows/win32/api/dwrite/nf-dwrite-idwritetypography-getfontfeature
                 - name: GetFontFeatureCount
                   href: /windows/win32/api/dwrite/nf-dwrite-idwritetypography-getfontfeaturecount
-        - name: Macros de DirectWrite
+        - name: DirectWrite macros
           href: macros.md
           items:
             - name: DWRITE_MAKE_FONT_AXIS_TAG
               href: /windows/win32/api/dwrite_3/nf-dwrite_3-dwrite_make_font_axis_tag
             - name: DWRITE_MAKE_OPENTYPE_TAG
               href: /windows/win32/api/dwrite/nf-dwrite-dwrite_make_opentype_tag
-        - name: Estructuras de DirectWrite
+        - name: DirectWrite estructuras
           href: structures.md
           items:
             - name: DWRITE_BITMAP_DATA_BGRA32 (DWriteCore)

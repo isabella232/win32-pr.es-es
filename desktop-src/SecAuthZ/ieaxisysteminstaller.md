@@ -12,18 +12,18 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 391088a70aa845cd685511f10e4eb6e809dc7fcf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fb462c4b4f8fc28d9d00de230dea1bbd3670c4fb6eaa962d59875b4fd9054c8a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083253"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119671015"
 ---
 # <a name="ieaxisysteminstaller-interface"></a>Interfaz IeAxiSystemInstaller
 
-La interfaz **IeAxiSystemInstaller** instala un objeto ActiveX.
+La **interfaz IeAxiSystemInstaller** instala un ActiveX objeto .
 
-Esta interfaz no está declarada en un encabezado público. Las aplicaciones deben definirla. El siguiente fragmento del lenguaje de definición de interfaz (IDL) describe esta interfaz, incluido su IID.
+Esta interfaz no se declara en un encabezado público. Las aplicaciones deben definirla por sí mismas. El siguiente fragmento del lenguaje de definición de interfaz (IDL) describe esta interfaz, incluido su IID.
 
 ``` syntax
 [
@@ -44,13 +44,13 @@ interface IeAxiSystemInstaller : IUnknown
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IeAxiSystemInstaller** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IeAxiSystemInstaller** también tiene estos tipos de miembros:
+La **interfaz IeAxiSystemInstaller** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IeAxiSystemInstaller también** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **IeAxiSystemInstaller** tiene estos métodos.
+La **interfaz IeAxiSystemInstaller tiene** estos métodos.
 
 
 
@@ -66,11 +66,11 @@ La interfaz **IeAxiSystemInstaller** tiene estos métodos.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista Business, Windows Vista Enterprise, Windows Vista Ultimate \[ solo aplicaciones de escritorio\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Vista Business, Windows Vista Enterprise, Windows aplicaciones de escritorio de Vista \[ Ultimate\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                 |
-| IID<br/>                      | IID \_ IeAxiSystemInstaller se define como a50ea6f8-4764-4299-B309-022b2a8b4d8d<br/>                   |
+| IID<br/>                      | IID \_ IeAxiSystemInstaller se define como a50ea6f8-4764-4299-b309-022b2a8b4d8d<br/>                   |
 
 
 

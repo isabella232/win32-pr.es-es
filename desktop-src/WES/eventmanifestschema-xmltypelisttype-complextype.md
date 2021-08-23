@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de XmlTypeListType
-description: Define una lista de tipos de salida que el servicio usa para determinar cómo se representa un tipo de datos de entrada.
+title: Tipo complejo XmlTypeListType
+description: Define los tipos de salida de una lista que el servicio usa para determinar cómo representar un tipo de datos de entrada.
 ms.assetid: d90b32cc-a0b5-44d1-8083-781aa5e10783
 keywords:
-- XmlTypeListType tipo complejo EventLog
+- Tipo complejo XmlTypeListType EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 388161572ec9c84ed46d5b40987df5fb8d1ed077
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e30ca23a0e4ab0168ff7479a5246acfb4b34e3a43bc62886d988d5f54549672b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359757"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119620325"
 ---
-# <a name="xmltypelisttype-complex-type"></a>Tipo complejo de XmlTypeListType
+# <a name="xmltypelisttype-complex-type"></a>Tipo complejo XmlTypeListType
 
-Define una lista de tipos de salida que el servicio usa para determinar cómo se representa un tipo de datos de entrada.
+Define los tipos de salida de una lista que el servicio usa para determinar cómo representar un tipo de datos de entrada.
 
 ``` syntax
 <xs:complexType name="XmlTypeListType">
@@ -73,14 +73,14 @@ Define una lista de tipos de salida que el servicio usa para determinar cómo se
 | Nombre   | Tipo                                                              | Descripción                                                                                                                                                                                                                                                |
 |--------|-------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | name   | **QName**                                                         | Nombre del tipo de salida.<br/>                                                                                                                                                                                                                    |
-| símbolo | [**CSymbolType**](eventmanifestschema-csymboltype-simpletype.md) | Símbolo que se va a usar para hacer referencia al tipo de salida de la aplicación. El [**compilador de mensajes (MC.exe)**](message-compiler--mc-exe-.md) utiliza el símbolo para crear una constante para el tipo de salida en el archivo de encabezado que genera el compilador.<br/> |
-| value  | string                                                            | Valor entero que identifica de forma única el tipo de salida en la lista de tipos de salida que se define.<br/>                                                                                                                                          |
+| símbolo | [**CSymbolType**](eventmanifestschema-csymboltype-simpletype.md) | Símbolo que se usará para hacer referencia al tipo de salida de la aplicación. El [**compilador de mensajes (MC.exe)**](message-compiler--mc-exe-.md) usa el símbolo para crear una constante para el tipo de salida en el archivo de encabezado que genera el compilador.<br/> |
+| value  | string                                                            | Valor entero que identifica de forma única el tipo de salida en la lista de tipos de salida que defina.<br/>                                                                                                                                          |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El \\ archivo de inclusión de \\Winmeta.xml, que se incluye en el Windows SDK, contiene una lista de tipos de salida predefinidos.
+El archivoWinmeta.xml, que se incluye en el SDK de Windows, contiene una lista de \\ tipos de salida \\ predefinidos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -88,8 +88,8 @@ El \\ archivo de inclusión de \\Winmeta.xml, que se incluye en el Windows SDK, 
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

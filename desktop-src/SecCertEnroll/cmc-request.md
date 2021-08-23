@@ -1,19 +1,19 @@
 ---
-description: El ejemplo siguiente contiene una solicitud de certificado CMC. El ejemplo se generó con las herramientas Certreq.exe y Certutil.exe. El archivo. inf que se usa como entrada para Certreq.exe contiene la configuración siguiente.
+description: El ejemplo siguiente contiene una solicitud de certificado de CMC. El ejemplo se generó mediante las herramientas Certreq.exe y Certutil.exe. El archivo .inf utilizado como entrada para Certreq.exe contiene la configuración siguiente.
 ms.assetid: 54c9c447-5c97-462f-b9cb-2df7d4126d80
 title: Solicitud de CMC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 39097ab92065aa902b23e7388b406a7c17e88944
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 074602a9afb87562502e622dbdf0e6ceb95b979dc95820f015d2ae3edef88031
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687316"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119670345"
 ---
 # <a name="cmc-request"></a>Solicitud de CMC
 
-El ejemplo siguiente contiene una solicitud de certificado CMC. El ejemplo se generó con las herramientas Certreq.exe y Certutil.exe. El archivo. inf que se usa como entrada para Certreq.exe contiene la configuración siguiente.
+El ejemplo siguiente contiene una solicitud de certificado de CMC. El ejemplo se generó mediante las herramientas Certreq.exe y Certutil.exe. El archivo .inf utilizado como entrada para Certreq.exe contiene la configuración siguiente.
 
 ``` syntax
 [NewRequest]
@@ -24,13 +24,13 @@ RequestType=cmc
 CertificateTemplate=User
 ```
 
-Esta configuración genera el siguiente resultado de ejemplo. La configuración especifica el asunto, el tipo de solicitud (CMC) y la plantilla de certificado (usuario). La plantilla de usuario especifica que:
+Esta configuración genera la siguiente salida de ejemplo. La configuración especifica el asunto, el tipo de solicitud (CMC) y la plantilla de certificado (usuario). La plantilla Usuario especifica que:
 
--   La solicitud debe usar el proveedor de servicios criptográficos de base de Microsoft 1,0 o el proveedor de servicios criptográficos de Microsoft mejorado 1,0.
--   El nombre del firmante se debe crear a partir de Active Directory.
--   La solicitud incluye el nombre de la plantilla de certificado, el uso mejorado de clave (EKU) y las extensiones de uso de claves. La extensión EKU especifica que el certificado emitido se puede usar para Sistema de cifrado de archivos (EFS), correo electrónico seguro y autenticación del cliente.
+-   La solicitud debe usar el proveedor de servicios criptográficos base de Microsoft 1.0 o el proveedor de servicios criptográficos mejorado de Microsoft 1.0.
+-   El nombre del sujeto debe crearse a partir Active Directory.
+-   La solicitud incluye las extensiones Nombre de plantilla de certificado, Uso mejorado de clave (EKU) y Uso de claves. La extensión EKU especifica que el certificado emitido se puede usar para Sistema de cifrado de archivos (EFS), el correo electrónico seguro y la autenticación de cliente.
 
-Una solicitud de certificado CMC se representa mediante la interfaz [**IX509CertificateRequestCmc**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequestcmc) .
+Una solicitud de certificado de CMC se representa mediante la [**interfaz IX509CertificateRequestCmc.**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequestcmc)
 
 ``` syntax
 PKCS7/CMS Message:

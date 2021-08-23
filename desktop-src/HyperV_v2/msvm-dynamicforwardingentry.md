@@ -1,7 +1,7 @@
 ---
-description: Representa una entrada en la base de datos de reenvío (filtrado) que está asociada con el servicio de puente transparente.
+description: Representa una entrada en la base de datos de reenvío (filtrado) asociada al servicio de puente transparente.
 ms.assetid: 3C9FAE99-9543-4A6A-B578-3F4626598DB3
-title: Msvm_DynamicForwardingEntry (clase)
+title: Msvm_DynamicForwardingEntry clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -35,18 +35,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: f14f8b3a8f5f62e1a474b3d7b7f832b6acd530f4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 04fef4c5e55be6a5e955c51102620dbda24b264fead6b74d1bf2148eb1db7505
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687952"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119525305"
 ---
-# <a name="msvm_dynamicforwardingentry-class"></a>MSVM \_ DynamicForwardingEntry (clase)
+# <a name="msvm_dynamicforwardingentry-class"></a>Clase Msvm \_ DynamicForwardingEntry
 
-Representa una entrada en la base de datos de reenvío (filtrado) que está asociada con el servicio de puente transparente. La entrada es débil para el servicio, como se especifica en [**MSVM \_ TransparentBridgingDynamicForwarding**](msvm-transparentbridgingdynamicforwarding.md).
+Representa una entrada en la base de datos de reenvío (filtrado) asociada al servicio de puente transparente. La entrada es débil para el servicio, como especifica [**Msvm \_ TransparentBridgingDynamicForwarding**](msvm-transparentbridgingdynamicforwarding.md).
 
-La siguiente sintaxis es código simplificado de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se Managed Object Format código (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -81,13 +81,13 @@ class Msvm_DynamicForwardingEntry : CIM_DynamicForwardingEntry
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ DynamicForwardingEntry** tiene estos tipos de miembros:
+La **clase Msvm \_ DynamicForwardingEntry** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ DynamicForwardingEntry** tiene estas propiedades.
+La **clase Msvm \_ DynamicForwardingEntry** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -103,20 +103,20 @@ Tipo de acceso: solo lectura
 Calificadores: **MaxLen** (64)
 </dt> </dl>
 
-Breve descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Breve descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **CommunicationStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica la capacidad de la instrumentación de comunicarse con el elemento administrado subyacente. Un valor **null** indica que esta propiedad no está implementada. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Indica la capacidad de la instrumentación para comunicarse con el elemento administrado subyacente. Un **valor** NULL indica que esta propiedad no está implementada. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
@@ -129,10 +129,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**, **MaxLen** (256)
+Calificadores: **Key**, **MaxLen** (256)
 </dt> </dl>
 
-El nombre de la clase o la subclase utilizada en la creación de una instancia de. Cuando se usa con las otras propiedades de clave de esta clase, esta propiedad permite que todas las instancias de esta clase y sus subclases se identifiquen de forma única. Esta propiedad se hereda de [**\_ DynamicForwardingEntry CIM**](/previous-versions//cc136814(v=vs.85)).
+Nombre de la clase o la subclase usada en la creación de una instancia de . Cuando se usa con las otras propiedades clave de esta clase, esta propiedad permite identificar de forma única todas las instancias de esta clase y sus subclases. Esta propiedad se hereda de [**CIM \_ DynamicForwardingEntry.**](/previous-versions//cc136814(v=vs.85))
 
 </dd> <dt>
 
@@ -145,40 +145,40 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **DetailedStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Complementa la propiedad **PrimaryStatus** con detalles de estado adicionales. Un valor **null** indica que esta propiedad no está implementada. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Complementa la propiedad **PrimaryStatus con** detalles de estado adicionales. Un **valor** NULL indica que esta propiedad no está implementada. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **DynamicStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Estado de la entrada. Esta propiedad se hereda de [**\_ DynamicForwardingEntry CIM**](/previous-versions//cc136814(v=vs.85)).
+Estado de la entrada. Esta propiedad se hereda de [**CIM \_ DynamicForwardingEntry.**](/previous-versions//cc136814(v=vs.85))
 
 <dl> <dt>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Otro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Otros** (1)
 </dt> <dt>
 
-<span id="Invalid"></span><span id="invalid"></span><span id="INVALID"></span>**No válido** (2)
+<span id="Invalid"></span><span id="invalid"></span><span id="INVALID"></span>**No** válido (2)
 </dt> <dt>
 
 <span id="Learned"></span><span id="learned"></span><span id="LEARNED"></span>**Aprendido** (3)
@@ -187,7 +187,7 @@ Estado de la entrada. Esta propiedad se hereda de [**\_ DynamicForwardingEntry C
 <span id="Self"></span><span id="self"></span><span id="SELF"></span>**Self** (4)
 </dt> <dt>
 
-<span id="Mgmt"></span><span id="mgmt"></span><span id="MGMT"></span>**MGMT** (5)
+<span id="Mgmt"></span><span id="mgmt"></span><span id="MGMT"></span>**Mgmt** (5)
 </dt> </dl>
 
 </dd> <dt>
@@ -201,33 +201,33 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre para mostrar del elemento. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Nombre para mostrar del elemento. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **HealthState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Estado actual del elemento. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)y siempre está establecida en 5 ("correcto").
+Estado actual del elemento. Esta propiedad se hereda de [**\_ MANAGEDSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)y siempre se establece en 5 ("Ok").
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Se rellena automáticamente cuando se crea la máquina virtual. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Se rellena automáticamente cuando se crea la máquina virtual. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
@@ -240,14 +240,14 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
-Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
-**Mac**
+**MACAddress**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -256,10 +256,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**, **MaxLen** (12)
+Calificadores: **Key**, **MaxLen** (12)
 </dt> </dl>
 
-Dirección MAC de unidifusión para la que el servicio de puentes transparente tiene información de reenvío y filtrado. La dirección MAC tiene el formato de doce dígitos hexadecimales (por ejemplo, "010203040506"), donde cada par representa uno de los seis octetos de la dirección MAC en el orden de bits "canónico" según RFC 2469. Esta propiedad se hereda de [**\_ DynamicForwardingEntry CIM**](/previous-versions//cc136814(v=vs.85)).
+Dirección MAC de unidifusión para la que el servicio de puente transparente tiene información de reenvío y filtrado. La dirección MAC tiene el formato de doce dígitos hexadecimales (por ejemplo, "010203040506"), y cada par representa uno de los seis octetos de la dirección MAC en orden de bits "canónico" según RFC 2469. Esta propiedad se hereda de [**CIM \_ DynamicForwardingEntry.**](/previous-versions//cc136814(v=vs.85))
 
 </dd> <dt>
 
@@ -272,46 +272,46 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Etiqueta por la que se conoce el objeto. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Etiqueta por la que se conoce el objeto. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **OperatingStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Proporciona información sobre el estado actual de la condición operativa del elemento y se puede usar para proporcionar más detalles con respecto al valor de la propiedad **EnabledState** . Un valor **null** indica que esta propiedad no está implementada. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Proporciona información de estado actual para la condición operativa del elemento y se puede usar para proporcionar más detalles con respecto al valor de la **propiedad EnabledState.** Un **valor** NULL indica que esta propiedad no está implementada. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **OperationalStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement), pero no se admite.
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement,**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)pero no se admite.
 
 </dd> <dt>
 
 **PrimaryStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Proporciona información de estado de alto nivel. Esta propiedad debe utilizarse junto con la propiedad **DetailedStatus** para proporcionar información de estado de mantenimiento detallada y de alto nivel para el elemento y sus subcomponentes. Un valor **null** indica que esta propiedad no está implementada. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Proporciona información de estado de alto nivel. Esta propiedad debe usarse junto con la propiedad **DetailedStatus** para proporcionar información de estado de mantenimiento detallada y de alto nivel para el elemento y sus subcomponentes. Un **valor** NULL indica que esta propiedad no está implementada. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
@@ -324,10 +324,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**, **MaxLen** (256)
+Calificadores: **Key**, **MaxLen** (256)
 </dt> </dl>
 
-**CreationClassName** del servicio de ámbito. Esta propiedad se hereda de [**\_ DynamicForwardingEntry CIM**](/previous-versions//cc136814(v=vs.85)).
+**CreationClassName** del servicio de ámbito. Esta propiedad se hereda de [**CIM \_ DynamicForwardingEntry.**](/previous-versions//cc136814(v=vs.85))
 
 </dd> <dt>
 
@@ -340,10 +340,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**, **MaxLen** (256)
+Calificadores: **Key**, **MaxLen** (256)
 </dt> </dl>
 
-Nombre del servicio de ámbito. Esta propiedad se hereda de [**\_ DynamicForwardingEntry CIM**](/previous-versions//cc136814(v=vs.85)).
+Nombre del servicio de ámbito. Esta propiedad se hereda de [**CIM \_ DynamicForwardingEntry.**](/previous-versions//cc136814(v=vs.85))
 
 </dd> <dt>
 
@@ -356,20 +356,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement), pero no se usa.
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement,**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)pero no se usa.
 
 </dd> <dt>
 
 **StatusDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement), pero no se admite.
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement,**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)pero no se admite.
 
 </dd> <dt>
 
@@ -382,10 +382,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**, **MaxLen** (256)
+Calificadores: **Key**, **MaxLen** (256)
 </dt> </dl>
 
-**CreationClassName** del sistema de ámbito. Esta propiedad se hereda de [**\_ DynamicForwardingEntry CIM**](/previous-versions//cc136814(v=vs.85)).
+CreationClassName del sistema **de ámbito.** Esta propiedad se hereda de [**CIM \_ DynamicForwardingEntry.**](/previous-versions//cc136814(v=vs.85))
 
 </dd> <dt>
 
@@ -398,33 +398,33 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**, **MaxLen** (256)
+Calificadores: **Key**, **MaxLen** (256)
 </dt> </dl>
 
-Nombre del sistema de ámbito. Esta propiedad se hereda de [**\_ DynamicForwardingEntry CIM**](/previous-versions//cc136814(v=vs.85)).
+Nombre del sistema de ámbito. Esta propiedad se hereda de [**CIM \_ DynamicForwardingEntry.**](/previous-versions//cc136814(v=vs.85))
 
 </dd> <dt>
 
 **VlanId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Identificador de LAN virtual asociado a esta entrada.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El acceso a la clase **MSVM \_ DynamicForwardingEntry** puede estar restringido por el filtrado de UAC. Para obtener más información, vea [control de cuentas de usuario y WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+El acceso a **la clase \_ DynamicForwardingEntry de Msvm** puede estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="examples"></a>Ejemplos
 
-Consulte [consultar objetos de red](querying-networking-objects.md).
+Consulte [Consulta de objetos de red.](querying-networking-objects.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -432,10 +432,10 @@ Consulte [consultar objetos de red](querying-networking-objects.md).
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -444,10 +444,10 @@ Consulte [consultar objetos de red](querying-networking-objects.md).
 
 <dl> <dt>
 
-[**\_DYNAMICFORWARDINGENTRY CIM**](cim-dynamicforwardingentry.md)
+[**CIM \_ DynamicForwardingEntry**](cim-dynamicforwardingentry.md)
 </dt> <dt>
 
-[**\_DYNAMICFORWARDINGENTRY CIM**](/previous-versions//cc136814(v=vs.85))
+[**CIM \_ DynamicForwardingEntry**](/previous-versions//cc136814(v=vs.85))
 </dt> </dl>
 
  

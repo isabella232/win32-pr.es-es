@@ -1,9 +1,9 @@
 ---
-title: Evento external. OnColorChange
-description: Tenga en cuenta que en este tema se describe la funcionalidad diseñada para su uso en tiendas en línea. | Evento external. OnColorChange
+title: Evento External.OnColorChange
+description: Nota En este tema se describe la funcionalidad diseñada para su uso por las tiendas en línea. | Evento External.OnColorChange
 ms.assetid: f2cd44b1-c813-479b-b847-96ddb9572697
 keywords:
-- Media Player de eventos external. OnColorChange de Windows
+- Evento External.OnColorChange Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 029c8bb860443ed026737c7413be2bed8862c6d2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: eae4ca15d4d7035fc342fa20263220560570d902e28b9245a6458ac59c40a4f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699761"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648755"
 ---
-# <a name="externaloncolorchange-event"></a>Evento external. OnColorChange
+# <a name="externaloncolorchange-event"></a>Evento External.OnColorChange
 
 > [!Note]  
-> En este tema se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
+> En este tema se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
 
  
 
-El evento **OnColorChange** se produce cuando cambia el color de la interfaz de usuario de Windows Media Player.
+El **evento OnColorChange** tiene lugar cuando cambia el color del Reproductor de Windows Media interfaz de usuario.
 
 ``` syntax
 window.external.OnColorChange = FunctionName
@@ -36,23 +36,23 @@ window.external.OnColorChange = FunctionName
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta es una propiedad de solo escritura que especifica el nombre de la función en el script que Windows Media Player llama cuando se produce el evento.
+Se trata de una propiedad de solo escritura que especifica el nombre de la función en el script que Reproductor de Windows Media cuando se produce el evento.
 
 ## <a name="parameters"></a>Parámetros
 
 La función que controla este evento no toma ningún parámetro.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los usuarios pueden cambiar el color de la interfaz de usuario de Windows Media Player. Puede usar este evento para personalizar la apariencia de la página web hospedada para que coincida con el reproductor.
+Los usuarios pueden cambiar el color de la interfaz Reproductor de Windows Media usuario. Puede usar este evento para personalizar la apariencia de la página web hospedada para que coincida con el reproductor.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/>                                  |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/>                                  |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -61,7 +61,7 @@ Los usuarios pueden cambiar el color de la interfaz de usuario de Windows Media 
 
 <dl> <dt>
 
-[**Objeto externo para las tiendas en línea de tipo 2**](external-object-for-type-2-online-stores.md)
+[**Objeto externo para almacenes en línea de tipo 2**](external-object-for-type-2-online-stores.md)
 </dt> </dl>
 
  

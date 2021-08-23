@@ -1,41 +1,41 @@
 ---
-description: Código de ejemplo que muestra cómo crear un archivo temporal para la manipulación de datos mediante las funciones GetTempFileName y GetTempPath.
+description: Código de ejemplo que muestra cómo crear un archivo temporal con fines de manipulación de datos mediante las funciones GetTempFileName y GetTempPath.
 ms.assetid: 6254c67d-5d34-499d-b1a4-8cac526dd294
 title: Crear y usar un archivo temporal
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ca18b7b72aab7c53bea95c38147af66f2b7fef9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f242b9b021744c42e7e1b8745c7eec2b6388249246872192ecfd6308bdab55af
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686746"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119650425"
 ---
 # <a name="creating-and-using-a-temporary-file"></a>Crear y usar un archivo temporal
 
-Las aplicaciones pueden obtener nombres de archivo y ruta de acceso únicos para los archivos temporales mediante las funciones [**GetTempFileName**](/windows/desktop/api/FileAPI/nf-fileapi-gettempfilenamea) y [**GetTempPath**](/windows/desktop/api/FileAPI/nf-fileapi-gettemppatha) . La función **GetTempFileName** genera un nombre de archivo único y la función **GetTempPath** recupera la ruta de acceso a un directorio en el que se deben crear los archivos temporales.
+Las aplicaciones pueden obtener nombres de archivo y ruta de acceso únicos para los archivos temporales mediante las funciones [**GetTempFileName**](/windows/desktop/api/FileAPI/nf-fileapi-gettempfilenamea) y [**GetTempPath.**](/windows/desktop/api/FileAPI/nf-fileapi-gettemppatha) La **función GetTempFileName** genera un nombre de archivo único y la función **GetTempPath** recupera la ruta de acceso a un directorio donde se deben crear archivos temporales.
 
-En el procedimiento siguiente se describe cómo una aplicación crea un archivo temporal para la manipulación de datos.
+En el procedimiento siguiente se describe cómo una aplicación crea un archivo temporal con fines de manipulación de datos.
 
 **Para crear y usar un archivo temporal**
 
 1.  La aplicación abre el archivo de texto de origen proporcionado por el usuario mediante [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea).
-2.  La aplicación recupera una ruta de acceso y un nombre de archivo temporales mediante las funciones [**GetTempPath**](/windows/desktop/api/FileAPI/nf-fileapi-gettemppatha) y [**GetTempFileName**](/windows/desktop/api/FileAPI/nf-fileapi-gettempfilenamea) y, a continuación, usa [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) para crear el archivo temporal.
-3.  La aplicación Lee bloques de datos de texto en un búfer, convierte el contenido del búfer en mayúsculas mediante la función [CharUpperBuffA](/windows/win32/api/winuser/nf-winuser-charupperbuffa) y escribe el búfer convertido en el archivo temporal.
-4.  Cuando todo el archivo de código fuente se escribe en el archivo temporal, la aplicación cierra ambos archivos y cambia el nombre del archivo temporal a "allcaps.txt" mediante la función [**MoveFileEx**](/windows/desktop/api/WinBase/nf-winbase-movefileexa) .
+2.  La aplicación recupera una ruta de acceso de archivo temporal y un nombre de archivo mediante las funciones [**GetTempPath**](/windows/desktop/api/FileAPI/nf-fileapi-gettemppatha) y [**GetTempFileName**](/windows/desktop/api/FileAPI/nf-fileapi-gettempfilenamea) y, a continuación, usa [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) para crear el archivo temporal.
+3.  La aplicación lee bloques de datos de texto en un búfer, convierte el contenido del búfer a mayúsculas mediante la función [CharUpperBuffA](/windows/win32/api/winuser/nf-winuser-charupperbuffa) y escribe el búfer convertido en el archivo temporal.
+4.  Cuando todo el archivo de origen se escribe en el archivo temporal, la aplicación cierra ambos archivos y cambia el nombre del archivo temporal a "allcaps.txt" mediante la función [**MoveFileEx.**](/windows/desktop/api/WinBase/nf-winbase-movefileexa)
 
-En cada uno de los pasos anteriores se comprueba que la operación se ha realizado correctamente antes de pasar al paso siguiente y se muestra una descripción del error si se produce un error. La aplicación finalizará inmediatamente después de mostrar el mensaje de error.
+Se comprueba si cada uno de los pasos anteriores se ha hecho correctamente antes de pasar al paso siguiente y se muestra una descripción del error si se produce un error. La aplicación finalizará inmediatamente después de mostrar el mensaje de error.
 
-Tenga en cuenta que la manipulación del archivo de texto se ha elegido solo para facilitar la demostración y se puede reemplazar por cualquier procedimiento de manipulación de datos deseado requerido. El archivo de datos puede tener cualquier tipo de datos, no solo texto.
+Tenga en cuenta que la manipulación de archivos de texto se eligió solo para facilitar la demostración y se puede reemplazar por cualquier procedimiento de manipulación de datos deseado necesario. El archivo de datos puede ser de cualquier tipo de datos, no solo texto.
 
-La función [**GetTempPath**](/windows/desktop/api/FileAPI/nf-fileapi-gettemppatha) recupera una cadena de ruta de acceso completa de una variable de entorno, pero no comprueba de antemano la existencia de la ruta de acceso o los derechos de acceso adecuados a esa ruta de acceso, que es responsabilidad del desarrollador de la aplicación. Para obtener más información, vea [**GetTempPath**](/windows/desktop/api/FileAPI/nf-fileapi-gettemppatha). En el ejemplo siguiente, se considera un error como una condición de terminal y la aplicación se cierra después de enviar un mensaje descriptivo a la salida estándar. Sin embargo, existen muchas otras opciones, como pedir al usuario un directorio temporal o simplemente intentar usar el directorio actual.
+La función [**GetTempPath**](/windows/desktop/api/FileAPI/nf-fileapi-gettemppatha) recupera una cadena de ruta de acceso completa de una variable de entorno, pero no comprueba de antemano la existencia de la ruta de acceso ni los derechos de acceso adecuados a esa ruta de acceso, que es responsabilidad del desarrollador de la aplicación. Para obtener más información, [**vea GetTempPath**](/windows/desktop/api/FileAPI/nf-fileapi-gettemppatha). En el ejemplo siguiente, un error se considera una condición terminal y la aplicación se cierra después de enviar un mensaje descriptivo a la salida estándar. Sin embargo, existen muchas otras opciones, como solicitar al usuario un directorio temporal o simplemente intentar usar el directorio actual.
 
 > [!Note]  
-> La función [**GetTempFileName**](/windows/desktop/api/FileAPI/nf-fileapi-gettempfilenamea) no requiere que se use la función [**GetTempPath**](/windows/desktop/api/FileAPI/nf-fileapi-gettemppatha) .
+> La [**función GetTempFileName**](/windows/desktop/api/FileAPI/nf-fileapi-gettempfilenamea) no requiere que se utilice la función [**GetTempPath.**](/windows/desktop/api/FileAPI/nf-fileapi-gettemppatha)
 
  
 
-En el siguiente ejemplo de C++ se muestra cómo crear un archivo temporal para la manipulación de datos.
+En el siguiente ejemplo de C++ se muestra cómo crear un archivo temporal con fines de manipulación de datos.
 
 
 ```C++

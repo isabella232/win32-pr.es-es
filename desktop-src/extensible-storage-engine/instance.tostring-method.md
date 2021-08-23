@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: método Instance. ToString'
-title: Método Instance. ToString
+description: 'Más información sobre: Método Instance.ToString'
+title: Método Instance.ToString
 TOCTitle: 'ToString method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Instance.ToString
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instance.tostring(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2456701e7111036a938d794bdb817992c86ddd6d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7227f1141840c76c2b71f542483d0a57f2eceedeb01961c60ae1a99bb3f7a30f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104543358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119618295"
 ---
-# <a name="instancetostring-method"></a>Método Instance. ToString
+# <a name="instancetostring-method"></a>Método Instance.ToString
 
-Devuelve una [cadena](/dotnet/api/system.string) que representa la [instancia](./instance-class.md)actual.
+Devuelve una [cadena que](/dotnet/api/system.string) representa la instancia [actual de](./instance-class.md).
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,8 +56,8 @@ public override string ToString()
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. String](/dotnet/api/system.string)  
-[Cadena](/dotnet/api/system.string) que representa la [instancia](./instance-class.md)actual.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Cadena [que](/dotnet/api/system.string) representa la instancia [actual](./instance-class.md)de .  
 
 ## <a name="see-also"></a>Vea también
 
@@ -67,4 +67,4 @@ Tipo: [System. String](/dotnet/api/system.string)
 
 [Miembros de instancia](./instance-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MCIWNDM_GETACTIVETIMER (VFW. h)
-description: El \_ mensaje MCIWNDM GETACTIVETIMER recupera el período de actualización que se usa cuando la ventana de MCIWnd es la ventana activa. Puede enviar este mensaje explícitamente o mediante la macro MCIWndGetActiveTimer.
+title: MCIWNDM_GETACTIVETIMER mensaje (Vfw.h)
+description: El mensaje GETACTIVETIMER de MCIWNDM recupera el período de actualización utilizado cuando la \_ ventana MCIWnd es la ventana activa. Puede enviar este mensaje explícitamente o mediante la macro MCIWndGetActiveTimer.
 ms.assetid: f9e6f9ed-75fd-4e45-ad92-79a82d8d572c
 keywords:
-- Mensaje de MCIWNDM_GETACTIVETIMER de Windows multimedia
+- MCIWNDM_GETACTIVETIMER mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4cb86fc2940c8bd5d82c004754b81e5389ada892
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1bc542e5a4b43b974eb7f28bc59d8e2fab7547834f28b5bccb6ea46f978e2158
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151236"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119525525"
 ---
-# <a name="mciwndm_getactivetimer-message"></a>MCIWNDM \_ GETACTIVETIMER
+# <a name="mciwndm_getactivetimer-message"></a>Mensaje GETACTIVETIMER de MCIWNDM \_
 
-El mensaje **MCIWNDM \_ GETACTIVETIMER** recupera el período de actualización que se usa cuando la ventana de MCIWnd es la ventana activa. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndGetActiveTimer**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetactivetimer) .
+El **mensaje \_ GETACTIVETIMER de MCIWNDM** recupera el período de actualización utilizado cuando la ventana MCIWnd es la ventana activa. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndGetActiveTimer.**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetactivetimer)
 
 
 ```C++
@@ -42,11 +42,11 @@ Devuelve el período de actualización en milisegundos. El valor predeterminado 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

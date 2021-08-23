@@ -1,7 +1,7 @@
 ---
-description: La propiedad FeatureValidStates del objeto de sesión devuelve un entero que representa las marcas de bits con cada bit pertinente que representa un estado de instalación válido de la característica especificada.
+description: La propiedad FeatureValidStates del objeto Session devuelve un entero que representa marcas de bits con cada bit pertinente que representa un estado de instalación válido para la característica especificada.
 ms.assetid: 8a1f6911-b0a6-4fac-ba77-df4f1b7d15e2
-title: Propiedad Session. FeatureValidStates
+title: Propiedad Session.FeatureValidStates
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: b76080bb7854c75cbfbb06697de9fc7d7a1af0c2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2c6b7e2683ea9c3e82684f77057319fb359429036cd43192fa9793ff7490386e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653826"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119629215"
 ---
-# <a name="sessionfeaturevalidstates-property"></a>Propiedad Session. FeatureValidStates
+# <a name="sessionfeaturevalidstates-property"></a>Propiedad Session.FeatureValidStates
 
-La propiedad **FeatureValidStates** del objeto de [**sesión**](session-object.md) devuelve un entero que representa las marcas de bits con cada bit pertinente que representa un estado de instalación válido de la característica especificada.
+La **propiedad FeatureValidStates** del objeto [**Session**](session-object.md) devuelve un entero que representa marcas de bits con cada bit pertinente que representa un estado de instalación válido para la característica especificada.
 
 Esta propiedad es de solo lectura.
 
@@ -37,37 +37,37 @@ propVal = Session.FeatureValidStates
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Nombre de cadena necesario del elemento de característica cuyos Estados de instalación válidos se van a recuperar.
+Nombre de cadena requerido del elemento de característica cuyos estados de instalación válidos se van a recuperar.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor devuelto se compone de marcas de bits como se indica a continuación. Bit 0: si se establece, local es un estado válido. Bit 1: si se establece, el origen es un estado válido.
+El valor devuelto se compone de marcas de bits como se muestra a continuación. Bit 0: si se establece, Local es un estado válido. Bit 1: si se establece, source es un estado válido.
 
-La propiedad **FeatureValidStates** solo se realiza correctamente después de que el instalador haya llamado a las acciones [CostInitialize](costinitialize-action.md) y [CostFinalize](costfinalize-action.md) .
+La **propiedad FeatureValidStates** solo se realiza correctamente después de que el instalador haya llamado a las acciones [CostInitialize](costinitialize-action.md) [y CostFinalize.](costfinalize-action.md)
 
-**FeatureValidStates** determina la validez del estado mediante la consulta de todos los componentes que están vinculados a la característica especificada sin tener en cuenta el estado de instalación actual de ningún componente.
+**FeatureValidStates determina** la validez del estado consultando todos los componentes que están vinculados a la característica especificada sin tener en cuenta el estado instalado actual de ningún componente.
 
 Los posibles estados válidos para una característica se determinan de la siguiente manera:
 
--   Si la característica no contiene componentes, tanto \_ \_ el origen de installstate local como el de installstate son Estados válidos para la característica.
--   Si al menos un componente de la característica tiene un atributo de msidbComponentAttributesLocalOnly o msidbComponentAttributesOptional, INSTALLSTATE \_ local es un estado válido para la característica.
--   Si al menos un componente de la característica tiene un atributo de msidbComponentAttributesSourceOnly o msidbComponentAttributesOptional, \_ el origen de INSTALLSTATE es un estado válido para la característica.
--   Si se aplica una revisión a un archivo de un componente que pertenece a la característica o desde un origen comprimido, \_ el origen de INSTALLSTATE no se incluye como un estado válido para la característica.
--   INSTALLSTATE \_ anunciar no es un estado válido si la característica no permite el anuncio (msidbFeatureAttributesDisallowAdvertise) o la característica requiere compatibilidad con la plataforma para el anuncio (msidbFeatureAttributesNoUnsupportedAdvertise) y la plataforma no lo admite.
--   INSTALLSTATE \_ ausente es un estado válido para la característica si sus atributos no incluyen msidbFeatureAttributesUIDisallowAbsent.
--   Los Estados válidos para las características secundarias marcadas para seguir la característica primaria (msidbFeatureAttributesFollowParent) se basan en la acción o el estado instalado de la característica primaria.
+-   Si la característica no contiene componentes, INSTALLSTATE \_ LOCAL y INSTALLSTATE \_ SOURCE son estados válidos para la característica.
+-   Si al menos un componente de la característica tiene un atributo msidbComponentAttributesLocalOnly o msidbComponentAttributesOptional, INSTALLSTATE LOCAL es un estado válido para \_ la característica.
+-   Si al menos un componente de la característica tiene un atributo msidbComponentAttributesSourceOnly o msidbComponentAttributesOptional, INSTALLSTATE SOURCE es un estado válido para \_ la característica.
+-   Si se ha parcheado un archivo de un componente que pertenece a la característica o desde un origen comprimido, INSTALLSTATE SOURCE no se incluye como un estado válido \_ para la característica.
+-   INSTALLSTATE ADVERTISE no es un estado válido si la característica no permite anuncios (msidbFeatureAttributesDisallowAdvertise) o la característica requiere compatibilidad con la plataforma para \_ anuncios (msidbFeatureAttributesNoUnsupportedAdvertise) y la plataforma no la admite.
+-   INSTALLSTATE ABSENT es un estado válido para la característica si sus atributos no incluyen \_ msidbFeatureAttributesUIDisallowAbsent.
+-   Los estados válidos de las características secundarias marcadas para seguir la característica primaria (msidbFeatureAttributesFollowParent) se basan en la acción o el estado instalado de la característica primaria.
 
-Si se produce un error en la propiedad, puede obtener información de error extendida mediante el método [**LastErrorRecord**](installer-lasterrorrecord.md) .
+Si se produce un error en la propiedad , puede obtener información de error extendida mediante el [**método LastErrorRecord.**](installer-lasterrorrecord.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | El IID \_ ISession se define como 000C109E-0000-0000-C000-000000000046<br/>                                                                                                                                                                             |
+| IID<br/>     | IID ISession se define como \_ 000C109E-0000-0000-C000-00000000046<br/>                                                                                                                                                                             |
 
 
 

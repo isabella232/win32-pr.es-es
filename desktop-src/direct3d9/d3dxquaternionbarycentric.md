@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 2ce0cfc7b3a59dc2a3cae6fa240015e70a035695
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1fd226fbeb150af22d56fff8dac28e8a651a03ffd10ca8c50f0c1b40ae742090
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119631095"
 ---
 # <a name="d3dxquaternionbarycentric-function-d3dx9mathh"></a>Función D3DXQuaternionBaryCentric (D3dx9math.h)
 
@@ -103,11 +103,11 @@ Factor de ponderación. Vea la sección Comentarios.
 
 Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)\***
 
-Puntero a una [**estructura D3DXQUATERNION**](d3dxquaternion.md) en coordenadas centradas en baría.
+Puntero a una [**estructura D3DXQUATERNION**](d3dxquaternion.md) en coordenadas centradas en Barycentric.
 
 ## <a name="remarks"></a>Comentarios
 
-Para calcular las coordenadas barítmicas, la función **D3DXQuaternionBaryCentric** implementa la siguiente serie de operaciones de interpolación lineal esférica:
+Para calcular las coordenadas centradas en barras, la función **D3DXQuaternionBaryCentric** implementa la siguiente serie de operaciones de interpolación lineal esférica:
 
 
 ```
@@ -116,11 +116,11 @@ Slerp(Slerp(Q1, Q2, f+g), Slerp(Q1, Q3, f+g), g/(f+g))
 
 
 
-El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De este modo, la **función D3DXQuaternionBaryCentric** se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXQuaternionBaryCentric** se puede usar como parámetro para otra función.
 
 Use [**D3DXQuaternionNormalize para cualquier**](d3dxquaternionnormalize.md) entrada de cuaternión que aún no esté normalizada.
 
-Las coordenadas barítricas definen un punto dentro de un triángulo en términos de los vértices del triángulo. Para obtener una descripción más detallada de las coordenadas baricéntricas, vea [Mathworld's Barycentric Coordinates Description](https://mathworld.wolfram.com/BarycentricCoordinates.html).
+Las coordenadas centradas en barras definen un punto dentro de un triángulo en términos de los vértices del triángulo. Para obtener una descripción más detallada de las coordenadas centradas en barras, vea [Mathworld's Barycentric Coordinates Description](https://mathworld.wolfram.com/BarycentricCoordinates.html).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -133,7 +133,7 @@ Las coordenadas barítricas definen un punto dentro de un triángulo en término
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

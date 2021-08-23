@@ -1,19 +1,19 @@
 ---
-description: Marca del contenedor de la aplicación. El identificador de zona determinado por el último escritor del archivo.
+description: Marca del contenedor de aplicaciones. Identificador de zona determinado por el último sistema de escritura del archivo.
 ms.assetid: 39f3dc07-8f13-4a76-a39a-7d7092f64378
-title: System. AppZoneIdentifier
+title: System.AppZoneIdentifier
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 18566700af5824a377776a54c52478c44eca620b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8ad7f5eae7cb5fb57fd9289bf6b8bb0cbda9b191b2d728aa2bd151e44baf560f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908616"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119554515"
 ---
-# <a name="systemappzoneidentifier"></a>System. AppZoneIdentifier
+# <a name="systemappzoneidentifier"></a>System.AppZoneIdentifier
 
-Marca del contenedor de la aplicación. El identificador de zona determinado por el último escritor del archivo.
+Marca del contenedor de aplicaciones. Identificador de zona determinado por el último sistema de escritura del archivo.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = false
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

@@ -1,26 +1,26 @@
 ---
-title: Cómo compilar un árbol visual sencillo
-description: En este tema se muestra cómo crear un árbol visual DirectComposition de Microsoft simple. En el ejemplo de este tema se crea y se compone un árbol visual que consta de un elemento visual raíz y tres objetos visuales secundarios.
+title: Cómo crear un árbol visual simple
+description: En este tema se muestra cómo crear un árbol visual simple de Microsoft DirectComposition. El ejemplo de este tema compila y compone un árbol visual que consta de un objeto visual raíz y tres objetos visuales secundarios.
 ms.assetid: 86006C3C-67A8-4931-BE76-D0CA9DB19505
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 621e3f48f76b76be92dc464678dce23b08ebdbd6
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 0e27a3af12976f08a1f878779506ac1a42076adecebda02550149e5cb1653d31
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104420735"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119670885"
 ---
-# <a name="how-to-build-a-simple-visual-tree"></a>Cómo compilar un árbol visual sencillo
+# <a name="how-to-build-a-simple-visual-tree"></a>Cómo crear un árbol visual simple
 
 > [!NOTE]
-> En el caso de las aplicaciones de Windows 10, se recomienda usar las API de Windows. UI. Composition en lugar de DirectComposition. Para obtener más información, consulte [modernice su aplicación de escritorio con el nivel de objetos visuales](/windows/uwp/composition/visual-layer-in-desktop-apps).
+> Para las aplicaciones Windows 10, se recomienda usar Windows.UI.Composition API en lugar de DirectComposition. Para obtener más información, [consulte Modernización de la aplicación de escritorio mediante la capa visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
 
-En este tema se muestra cómo crear un árbol visual DirectComposition de Microsoft simple. En el ejemplo de este tema se crea y se compone un árbol visual que consta de un elemento visual raíz y tres objetos visuales secundarios. El contenido del elemento visual raíz es un mapa de bits claro y azul que sirve de fondo para los objetos visuales secundarios. En esta ilustración se muestra la composición creada por el código de ejemplo de este tema.
+En este tema se muestra cómo crear un árbol visual simple de Microsoft DirectComposition. El ejemplo de este tema compila y compone un árbol visual que consta de un objeto visual raíz y tres objetos visuales secundarios. El contenido del objeto visual raíz es un mapa de bits azul claro que actúa como fondo para los objetos visuales secundarios. En esta ilustración se muestra la composición creada por el código de ejemplo de este tema.
 
-![una composición formada por un mapa de bits raíz y tres mapas de bits secundarios](images/buildvisualtree.png)
+![una composición que consta de un mapa de bits raíz y tres mapas de bits secundarios](images/buildvisualtree.png)
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
@@ -28,26 +28,26 @@ En este tema se muestra cómo crear un árbol visual DirectComposition de Micros
 -   [Gráficos de Direct3D 11](/windows/desktop/direct3d11/atoc-dx-graphics-direct3d-11)
 -   [Infraestructura de gráficos de DirectX (DXGI)](/windows/desktop/direct3ddxgi/dx-graphics-dxgi)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
-Conocimiento de:
+Conocimientos de:
 
 -   C/C++
 -   Microsoft Win32
 -   Modelo de objetos componentes (COM)
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="step-1-initialize-the-device-and-composition-target-objects"></a>Paso 1: inicializar los objetos de destino de composición y dispositivo
+### <a name="step-1-initialize-the-device-and-composition-target-objects"></a>Paso 1: Inicializar el dispositivo y los objetos de destino de composición
 
-Para obtener más información, vea [cómo inicializar DirectComposition](initialize-directcomposition.md).
+Para obtener más información, [vea Cómo inicializar DirectComposition](initialize-directcomposition.md).
 
-### <a name="step-2-create-the-visual-objects-and-set-the-bitmap-content"></a>Paso 2: crear los objetos visuales y establecer el contenido del mapa de bits
+### <a name="step-2-create-the-visual-objects-and-set-the-bitmap-content"></a>Paso 2: Crear los objetos visuales y establecer el contenido del mapa de bits
 
-Use el método [**IDCompositionDevice:: CreateVisual**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createvisual) para crear los objetos visuales y el método [**IDCompositionVisual:: SetContent**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-setcontent) para establecer el contenido del mapa de bits de los objetos visuales.
+Use el [**método IDCompositionDevice::CreateVisual**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createvisual) para crear los objetos visuales y el método [**IDCompositionVisual::SetContent**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-setcontent) para establecer el contenido del mapa de bits de los objetos visuales.
 
 > [!NOTE]  
-> En el ejemplo siguiente, el primer elemento de la `m_hBitmaps` matriz contiene el mapa de bits para el elemento visual raíz y los elementos restantes contienen los mapas de bits de los objetos visuales secundarios.
+> En el ejemplo siguiente, el primer elemento de la matriz contiene el mapa de bits del objeto visual raíz y los elementos restantes contienen los mapas de bits de `m_hBitmaps` los objetos visuales secundarios.
 
 ```cpp
 #define NUM_VISUALS 4 // number of visuals in the composition
@@ -83,7 +83,7 @@ for (int i = 0; i < NUM_VISUALS; i++)
 }
 ``` 
 
-La siguiente función definida por la aplicación muestra cómo crear la superficie de Microsoft DirectComposition y representar un mapa de bits de Windows Interfaz de dispositivo gráfico (GDI) en la superficie.
+La siguiente función definida por la aplicación muestra cómo crear la superficie de Microsoft DirectComposition y representar un mapa de bits Windows Interfaz de dispositivo gráfico (GDI) en la superficie.
 
 ```cpp
 // MyCreateGDIRenderedDCompSurface - Creates a DirectComposition surface and 
@@ -169,9 +169,9 @@ HRESULT DemoApp::MyCreateGDIRenderedDCompSurface(HBITMAP hBitmap, IDCompositionS
 }
 ```
 
-### <a name="step-3-set-the-root-visual"></a>Paso 3: establecer el valor visual raíz
+### <a name="step-3-set-the-root-visual"></a>Paso 3: Establecer el objeto visual raíz
 
-Establezca los desplazamientos horizontal y vertical del valor visual raíz y, a continuación, agréguelo al árbol visual llamando al método [**IDCompositionTarget:: SetRoot**](/windows/win32/api/dcomp/nf-dcomp-idcompositiontarget-setroot) .
+Establezca los desplazamientos horizontal y vertical del objeto visual raíz y, a continuación, agrégrélo al árbol visual mediante una llamada al [**método IDCompositionTarget::SetRoot.**](/windows/win32/api/dcomp/nf-dcomp-idcompositiontarget-setroot)
 
 ```cpp
 float xPosRoot = 50.0;
@@ -185,9 +185,9 @@ pVisuals[0]->SetOffsetY(yPosRoot);
 hr = m_pCompTarget->SetRoot(pVisuals[0]);
 ```
 
-### <a name="step-4-add-the-child-visuals-and-commit-the-composition"></a>Paso 4: agregar los objetos visuales secundarios y confirmar la composición
+### <a name="step-4-add-the-child-visuals-and-commit-the-composition"></a>Paso 4: Agregar los objetos visuales secundarios y confirmar la composición
 
-Use los métodos expuestos por la interfaz [**IDCompositionVisual**](/windows/win32/api/dcomp/nn-dcomp-idcompositionvisual) de cada elemento visual secundario para establecer el contenido del mapa de bits y otras propiedades y, a continuación, use el método [**IDCompositionVisual:: AddVisual**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-addvisual) del elemento visual raíz para agregar los objetos visuales secundarios a la raíz del árbol visual. Llame a [**IDCompositionDevice:: commit**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-commit) para confirmar el lote de comandos que se va a DirectComposition para su procesamiento. La composición resultante aparece en la ventana de destino.
+Use métodos expuestos por la interfaz [**IDCompositionVisual**](/windows/win32/api/dcomp/nn-dcomp-idcompositionvisual) de cada objeto visual secundario para establecer el contenido del mapa de bits y otras propiedades y, a continuación, use el método [**IDCompositionVisual::AddVisual**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-addvisual) del objeto visual raíz para agregar los objetos visuales secundarios a la raíz del árbol visual. Llame [**a IDCompositionDevice::Commit para**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-commit) confirmar el lote de comandos en DirectComposition para su procesamiento. La composición resultante aparece en la ventana de destino.
 
 ```cpp
 float xPosChild = 20.0f;
@@ -211,9 +211,9 @@ if (SUCCEEDED(hr))
 hr = m_pDevice->Commit();
 ```
 
-### <a name="step-5-free-the-directcomposition-objects"></a>Paso 5: liberación de los objetos DirectComposition
+### <a name="step-5-free-the-directcomposition-objects"></a>Paso 5: Liberar los objetos DirectComposition
 
-Libere los objetos visuales tan pronto como ya no los necesite. En el siguiente fragmento de código se llama a la macro [**SafeRelease**](/windows/desktop/medfound/saferelease) definida por la aplicación para liberar los objetos visuales.
+Libera los objetos visuales en cuanto ya no los necesites. Este siguiente fragmento de código llama a la macro [**SafeRelease**](/windows/desktop/medfound/saferelease) definida por la aplicación para liberar los objetos visuales.
 
 ```cpp
 Cleanup:
@@ -224,7 +224,7 @@ Cleanup:
     }
 ```
 
-Además, recuerde liberar los objetos de destino de composición y de dispositivo antes de salir de la aplicación.
+Además, no olvide liberar los objetos de destino del dispositivo y la composición antes de que se cierre la aplicación.
 
 ```cpp
 SafeRelease(&m_pD3D11Device);
@@ -856,9 +856,9 @@ HRESULT DemoApp::MyCreateGDIRenderedDCompSurface(HBITMAP hBitmap, IDCompositionS
 ## <a name="related-topics"></a>Temas relacionados
 
 * [**DCompositionCreateDevice**](/windows/desktop/api/Dcomp/nf-dcomp-dcompositioncreatedevice)
-* [**IDCompositionDevice:: commit**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-commit)
+* [**IDCompositionDevice::Commit**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-commit)
 * [**IDCompositionDevice::CreateTargetForHwnd**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createtargetforhwnd)
 * [**IDCompositionDevice::CreateVisual**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createvisual)
 * [**IDCompositionTarget::SetRoot**](/windows/win32/api/dcomp/nf-dcomp-idcompositiontarget-setroot)
-* [**IDCompositionVisual:: SetContent**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-setcontent)
+* [**IDCompositionVisual::SetContent**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-setcontent)
 * [**SafeRelease**](/windows/desktop/medfound/saferelease)

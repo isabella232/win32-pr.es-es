@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: InstanceParameters. PrereadIOMax (propiedad)'
-title: Propiedad InstanceParameters. PrereadIOMax
+description: 'Más información sobre: Propiedad InstanceParameters.PrereadIOMax'
+title: Propiedad InstanceParameters.PrereadIOMax
 TOCTitle: 'PrereadIOMax property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.InstanceParameters.PrereadIOMax
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instanceparameters.prereadiomax(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 68a6b569a59c2a4a80137f9dafed62ca62a85a13
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cc3af75d137b07df729d987ac4942612ac88aded08d546378b89146d5ae121ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105717247"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119617935"
 ---
-# <a name="instanceparametersprereadiomax-property"></a>Propiedad InstanceParameters. PrereadIOMax
+# <a name="instanceparametersprereadiomax-property"></a>Propiedad InstanceParameters.PrereadIOMax
 
-Obtiene o establece el número máximo de operaciones de e/s enviadas para un propósito determinado.
+Obtiene o establece el número máximo de operaciones de E/S enviadas para un propósito determinado.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,7 +62,7 @@ public int PrereadIOMax { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vea también
 
@@ -70,6 +70,6 @@ Tipo: [System. Int32](/dotnet/api/system.int32)
 
 [Clase InstanceParameters](./instanceparameters-class.md)
 
-[Miembros de InstanceParameters](./instanceparameters-members.md)
+[Miembros InstanceParameters](./instanceparameters-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

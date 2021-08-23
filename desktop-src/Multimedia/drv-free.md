@@ -1,9 +1,9 @@
 ---
-title: Mensaje de DRV_FREE (mmsystem. h)
-description: Notifica al controlador que se va a quitar de la memoria. El controlador debe liberar la memoria y otros recursos del sistema que haya asignado.
+title: DRV_FREE mensaje (Mmsystem.h)
+description: Notifica al controlador que se está quitando de la memoria. El controlador debe liberar cualquier memoria y otros recursos del sistema que haya asignado.
 ms.assetid: 0447f8e9-4c4d-4be5-ab1f-ecd3e8cd2e67
 keywords:
-- Mensaje de DRV_FREE de Windows multimedia
+- DRV_FREE mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: abb9d70d269cb84e0d6ef0881618b67cfef11068
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 21a558dc7a2c3ece040790b2351ff39dc3054d660eb9368567ed7ce79d40c8a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103997091"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119526215"
 ---
-# <a name="drv_free-message"></a>DRV ( \_ mensaje gratuito)
+# <a name="drv_free-message"></a>Mensaje DRV \_ FREE
 
-Notifica al controlador que se va a quitar de la memoria. El controlador debe liberar la memoria y otros recursos del sistema que haya asignado.
+Notifica al controlador que se está quitando de la memoria. El controlador debe liberar cualquier memoria y otros recursos del sistema que haya asignado.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -40,11 +40,11 @@ Identificador de la instancia del controlador instalable.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-No se usan los parámetros *dwDriverId*, *lParam1* y *lParam2* .
+No se usan los parámetros *dwDriverId,* *lParam1* y *lParam2.*
 
-El mensaje de **\_ disponibilidad de DRV** es siempre el último mensaje que recibe un controlador de dispositivo.
+El **mensaje DRV \_ FREE** siempre es el último que recibe un controlador de dispositivo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ El mensaje de **\_ disponibilidad de DRV** es siempre el último mensaje que rec
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Especifica si el DSP de la captura de voz usa el modo de origen o el modo de filtro.
+description: Especifica si el DSP de captura de voz usa el modo de origen o el modo de filtro.
 ms.assetid: d1d3beba-678c-48fd-ad12-45e0418e1236
-title: Propiedad MFPKEY_WMAAECMA_DMO_SOURCE_MODE (Wmcodecdsp. h)
+title: MFPKEY_WMAAECMA_DMO_SOURCE_MODE propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec5749ff1f142603cc45df475caae7bc71182bde
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1ec9dd01be5a020047410362b2fdfc27fd8d703a393e3ae2f557b1dd3a42bf80
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275856"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119555305"
 ---
-# <a name="mfpkey_wmaaecma_dmo_source_mode-property"></a>Propiedad del modo de origen de MFPKEY \_ WMAAECMA \_ DMO \_ \_
+# <a name="mfpkey_wmaaecma_dmo_source_mode-property"></a>Propiedad MFPKEY \_ WMAAECMA \_ DMO \_ SOURCE \_ MODE
 
-Especifica si el DSP de la captura de voz usa el modo de origen o el modo de filtro.
+Especifica si el DSP de captura de voz usa el modo de origen o el modo de filtro.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
@@ -21,55 +21,55 @@ Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/n
 
 ## <a name="data-type"></a>Tipo de datos
 
-VT \_ bool
+VT \_ BOOL
 
 ## <a name="default-value"></a>Valor predeterminado
 
-VARIANTE \_ true
+VARIANT \_ TRUE
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [DSP de captura de voz](voicecapturedmo.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En el modo de origen, la aplicación no tiene que enviar datos de entrada al DSP, porque el DSP extrae automáticamente los datos de los dispositivos de audio. En el modo de filtro, la aplicación debe enviar los datos de entrada al DSP.
+En el modo de origen, la aplicación no necesita enviar datos de entrada al DSP, ya que este extrae automáticamente los datos de los dispositivos de audio. En el modo de filtro, la aplicación debe enviar los datos de entrada al DSP.
 
-Esta propiedad puede tener los valores siguientes.
+Esta propiedad puede tener los siguientes valores.
 
 
 
 | Value          | Descripción  |
 |----------------|--------------|
-| VARIANTE \_ false | Modo de filtro. |
-| VARIANTE \_ true  | Modo de origen. |
+| VARIANT \_ FALSE | Modo de filtro. |
+| VARIANT \_ TRUE  | Modo de origen. |
 
 
 
  
 
 > [!Note]  
-> Cuando DMO está en modo de origen, solo debe llamar a [**IMediaObject:: SetOutputType**](/previous-versions/windows/desktop/api/mediaobj/nf-mediaobj-imediaobject-setoutputtype) para establecer el formato del flujo de salida y no llamar a [**IMediaObject:: SetInputType**](/previous-versions/windows/desktop/api/mediaobj/nf-mediaobj-imediaobject-setinputtype) para establecer formatos de flujo de entrada. De lo contrario, se producirá un error al inicializar DMO
+> Cuando el DMO está en modo de origen, solo debe llamar a [**IMediaObject::SetOutputType para**](/previous-versions/windows/desktop/api/mediaobj/nf-mediaobj-imediaobject-setoutputtype) establecer el formato del flujo de salida y no llamar a [**IMediaObject::SetInputType para**](/previous-versions/windows/desktop/api/mediaobj/nf-mediaobj-imediaobject-setinputtype) establecer los formatos de flujo de entrada. De lo DMO se producirá un error en la inicialización.
 
  
 
-Si el valor de esta propiedad es VARIANT \_ true, el DSP tiene cero entradas. Si el valor es VARIANT \_ false, el DSP tiene una o dos entradas, dependiendo del valor de la propiedad [MFPKEY \_ WMAAECMA \_ del \_ modo del sistema](mfpkey-wmaaecma-system-modeproperty.md) , como se muestra en la tabla siguiente.
+Si el valor de esta propiedad es VARIANT \_ TRUE, el DSP tiene cero entradas. Si el valor es VARIANT FALSE, el DSP tiene una o dos entradas, dependiendo del valor de la propiedad \_ [MFPKEY \_ WMAAECMA \_ SYSTEM \_ MODE,](mfpkey-wmaaecma-system-modeproperty.md) como se muestra en la tabla siguiente.
 
 
 
 | Value                     | Número de entradas |
 |---------------------------|------------------|
-| \_matriz OPTIBEAM \_ y \_ AEC | 2                |
-| \_solo matriz \_ OPTIBEAM     | 1                |
-| \_AEC de canal único \_      | 2                |
-| \_NSAGC de canal único \_    | 1                |
+| OPTIBEAM \_ ARRAY \_ Y \_ AEC | 2                |
+| OPTIBEAM ARRAY ONLY (SOLO \_ MATRIZ DE OPTIBEAM) \_     | 1                |
+| AEC \_ \_ DE CANAL ÚNICO      | 2                |
+| \_ \_ NSAGC DE CANAL ÚNICO    | 1                |
 
 
 
  
 
 > [!Note]  
-> Solo los modos con una sola entrada funcionarán con el filtro de contenedor DMO de la API de DirectShow 9,0.
+> Solo los modos con una sola entrada funcionarán con el filtro de DMO de la API DirectShow 9.0.
 
  
 
@@ -77,11 +77,11 @@ Si el valor de esta propiedad es VARIANT \_ true, el DSP tiene cero entradas. Si
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -89,7 +89,7 @@ Si el valor de esta propiedad es VARIANT \_ true, el DSP tiene cero entradas. Si
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> <dt>
 
 [DSP de captura de voz](voicecapturedmo.md)

@@ -1,7 +1,7 @@
 ---
-description: La estructura de la información de la impresora \_ \_ 2 especifica información detallada de la impresora.
+description: La estructura PRINTER \_ INFO \_ 2 especifica información detallada de la impresora.
 ms.assetid: 944cbfcd-9edf-4b60-a45c-9bb1839f8141
-title: Estructura de PRINTER_INFO_2 (winspool. h)
+title: PRINTER_INFO_2 estructura (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: b299cb1bbdd3ac2475b7a9f2b600bcd9652246d7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1f7a2b871cc0181fbceab56e4ac14170bf46fa1b31081f4b4365ad7296ec2e85
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104546366"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119600615"
 ---
-# <a name="printer_info_2-structure"></a>Estructura de la información de la impresora \_ \_ 2
+# <a name="printer_info_2-structure"></a>Printer \_ INFO \_ 2 (estructura)
 
-La estructura de la información de la **impresora \_ \_ 2** especifica información detallada de la impresora.
+La **estructura PRINTER INFO \_ \_ 2** especifica información detallada de la impresora.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,49 +64,49 @@ typedef struct _PRINTER_INFO_2 {
 **pServerName**
 </dt> <dd>
 
-Puntero a una cadena terminada en null que identifica el servidor que controla la impresora. Si esta cadena es **null**, la impresora se controla localmente.
+Puntero a una cadena terminada en NULL que identifica el servidor que controla la impresora. Si esta cadena es **NULL,** la impresora se controla localmente.
 
 </dd> <dt>
 
 **pPrinterName**
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica el nombre de la impresora.
+Puntero a una cadena terminada en NULL que especifica el nombre de la impresora.
 
 </dd> <dt>
 
 **pShareName**
 </dt> <dd>
 
-Puntero a una cadena terminada en null que identifica el punto de recurso compartido de la impresora. (Esta cadena solo se usa si la impresora \_ \_Se estableció una constante compartida de atributo para el miembro **attributes** .)
+Puntero a una cadena terminada en NULL que identifica el punto de recurso compartido de la impresora. (Esta cadena solo se usa si printer \_ Se \_ estableció la constante ATTRIBUTE SHARED para el **miembro Attributes).**
 
 </dd> <dt>
 
 **pPortName**
 </dt> <dd>
 
-Puntero a una cadena terminada en null que identifica los puertos utilizados para transmitir datos a la impresora. Si una impresora está conectada a más de un puerto, los nombres de cada puerto deben estar separados por comas (por ejemplo, "LPT1:, LPT2:, LPT3:").
+Puntero a una cadena terminada en NULL que identifica los puertos utilizados para transmitir datos a la impresora. Si una impresora está conectada a más de un puerto, los nombres de cada puerto deben estar separados por comas (por ejemplo, "LPT1:,LPT2:,LPT3:").
 
 </dd> <dt>
 
 **pDriverName**
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica el nombre del controlador de impresora.
+Puntero a una cadena terminada en NULL que especifica el nombre del controlador de impresora.
 
 </dd> <dt>
 
 **pComment**
 </dt> <dd>
 
-Un puntero a una cadena terminada en null que proporciona una breve descripción de la impresora.
+Puntero a una cadena terminada en NULL que proporciona una breve descripción de la impresora.
 
 </dd> <dt>
 
 **pLocation**
 </dt> <dd>
 
-Un puntero a una cadena terminada en null que especifica la ubicación física de la impresora (por ejemplo, "Bldg. 38, habitación 1164 ").
+Puntero a una cadena terminada en NULL que especifica la ubicación física de la impresora (por ejemplo, "Bldg. 38, Habitación 1164").
 
 </dd> <dt>
 
@@ -120,89 +120,89 @@ Puntero a una estructura [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmo
 **pSepFile**
 </dt> <dd>
 
-Un puntero a una cadena terminada en null que especifica el nombre del archivo que se usa para crear la página del separador. Esta página se utiliza para separar los trabajos de impresión que se envían a la impresora.
+Puntero a una cadena terminada en NULL que especifica el nombre del archivo utilizado para crear la página separadora. Esta página se usa para separar los trabajos de impresión enviados a la impresora.
 
 </dd> <dt>
 
 **pPrintProcessor**
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica el nombre del procesador de impresión utilizado por la impresora. Puede usar la función [**EnumPrintProcessors**](enumprintprocessors.md) para obtener una lista de procesadores de impresión instalados en un servidor.
+Puntero a una cadena terminada en NULL que especifica el nombre del procesador de impresión utilizado por la impresora. Puede usar la función [**EnumPrintProcessors**](enumprintprocessors.md) para obtener una lista de procesadores de impresión instalados en un servidor.
 
 </dd> <dt>
 
 **pDatatype**
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica el tipo de datos utilizado para registrar el trabajo de impresión. Puede usar la función [**EnumPrintProcessorDatatypes**](enumprintprocessordatatypes.md) para obtener una lista de tipos de datos admitidos por un procesador de impresión específico.
+Puntero a una cadena terminada en NULL que especifica el tipo de datos utilizado para registrar el trabajo de impresión. Puede usar la función [**EnumPrintProcessorDatatypes**](enumprintprocessordatatypes.md) para obtener una lista de tipos de datos admitidos por un procesador de impresión específico.
 
 </dd> <dt>
 
 **pParameters**
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica los parámetros predeterminados del procesador de impresión.
+Puntero a una cadena terminada en NULL que especifica los parámetros predeterminados del procesador de impresión.
 
 </dd> <dt>
 
 **pSecurityDescriptor**
 </dt> <dd>
 
-Puntero a una estructura [**de \_ descriptores de seguridad**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) para la impresora. Este miembro puede ser **null**.
+Puntero a una estructura [**\_ DESCRIPTOR DE SEGURIDAD**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) para la impresora. Este miembro puede ser **NULL.**
 
 </dd> <dt>
 
 **Atributos**
 </dt> <dd>
 
-Atributos de la impresora. Este miembro puede ser cualquier combinación razonable de los siguientes valores.
+Atributos de impresora. Este miembro puede ser cualquier combinación razonable de los valores siguientes.
 
-| Value                                   | Significado                                                                                                                                                                                 |
+| Valor                                   | Significado                                                                                                                                                                                 |
 |-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| atributo de impresora \_ \_ directo              | El trabajo se envía directamente a la impresora (no se pone en cola).                                                                                                                                |
-| el atributo de impresora se \_ \_ \_ completa \_ primero | Si se establece set y Printer para la puesta en cola de impresión, los trabajos que hayan finalizado la cola de impresión estarán programados para imprimirse antes que los trabajos que no hayan completado la cola de impresión.                          |
-| atributo de impresora- \_ \_ habilitar \_ DEVQ        | Si se establece, se llama a **DevQueryPrint** . **DevQueryPrint** puede producir un error si las configuraciones de documento e impresora no coinciden. Si se establece esta marca, se mantendrán los documentos no coincidentes en la cola. |
-| atributo de impresora \_ \_ oculto              | Reservado.                                                                                                                                                                               |
-| atributo de impresora \_ \_ KEEPPRINTEDJOBS     | Si se establece, los trabajos se mantienen una vez que se imprimen. Si no se anula, se eliminan los trabajos.                                                                                                               |
-| atributo de impresora \_ \_ local               | La impresora es una impresora local.                                                                                                                                                             |
-| \_red de atributos de impresora \_             | La impresora es una conexión de impresora de red.                                                                                                                                                |
-| atributo de impresora \_ \_ publicado           | Indica si la impresora está publicada en el servicio de directorio.                                                                                                                    |
-| atributo de impresora \_ \_ en cola              | Si se establece, la impresora se pone en cola y comienza la impresión después de que la última página se haya puesto en cola. Si no se establece y \_ \_ no se establece el atributo de impresora Direct, la impresora se pone en cola y se imprime durante la puesta en cola.      |
-| atributo de impresora \_ \_ solo sin formato \_           | Indica que solo se pueden poner en cola los trabajos de impresión de tipo de datos sin procesar.                                                                                                                            |
-| atributo de impresora \_ \_ compartido              | La impresora está compartida.                                                                                                                                                                      |
+| ATRIBUTO \_ DE \_ IMPRESORA DIRECTO              | El trabajo se envía directamente a la impresora (no está en cola).                                                                                                                                |
+| EL \_ ATRIBUTO PRINTER SE COMPLETA \_ \_ \_ PRIMERO | Si set e printer se establecen para la cola de impresión, los trabajos que hayan completado la cola se programan para imprimirse antes que los trabajos que no hayan completado la cola.                          |
+| ATRIBUTO \_ PRINTER \_ ENABLE \_ DEVQ        | Si se establece, **se llama a DevQueryPrint.** **DevQueryPrint puede producir** un error si las configuraciones de documentos e impresoras no coinciden. Al establecer esta marca, los documentos no coincidentes se mantienen en la cola. |
+| ATRIBUTO DE \_ IMPRESORA \_ OCULTO              | Reservado.                                                                                                                                                                               |
+| ATRIBUTO \_ \_ DE IMPRESORA KEEPPRINTEDJOBS     | Si se establece, los trabajos se mantienen después de imprimirse. Si no se han creado, se eliminan los trabajos.                                                                                                               |
+| ATRIBUTO \_ DE IMPRESORA \_ LOCAL               | La impresora es una impresora local.                                                                                                                                                             |
+| RED DE \_ ATRIBUTOS DE \_ IMPRESORA             | La impresora es una conexión de impresora de red.                                                                                                                                                |
+| ATRIBUTO \_ DE \_ IMPRESORA PUBLICADO           | Indica si la impresora está publicada en el servicio de directorio.                                                                                                                    |
+| ATRIBUTO \_ DE IMPRESORA EN \_ COLA              | Si se establece, la impresora se pone en cola y se inicia la impresión después de que se pone en cola la última página. Si no se establece e PRINTER ATTRIBUTE DIRECT no está establecido, la impresora se cola e \_ imprime mientras se encuentra en \_ cola.      |
+| SOLO SIN \_ FORMATO DE ATRIBUTO DE \_ \_ IMPRESORA           | Indica que solo se pueden colar trabajos de impresión de tipo de datos sin procesar.                                                                                                                            |
+| ATRIBUTO DE \_ IMPRESORA \_ COMPARTIDO              | La impresora se comparte.                                                                                                                                                                      |
 
 
 
  
 
-En Windows XP y versiones posteriores de Windows, también se puede usar el valor siguiente.
+En Windows XP y versiones posteriores de Windows, también se puede usar el siguiente valor.
 
-| Value                   | Significado                                                                                                                                                                                           |
+| Valor                   | Significado                                                                                                                                                                                           |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_fax de atributo de impresora \_ | Si se establece, la impresora es una impresora de fax. Solo se puede establecer mediante [**AddPrinter (**](addprinter.md), pero puede ser recuperado por [**EnumPrinters**](enumprinters.md) y [**GetPrinter**](getprinter.md). |
+| FAX DE \_ ATRIBUTO DE \_ IMPRESORA | Si se establece, la impresora es una impresora de fax. [**AddPrinter**](addprinter.md)solo puede establecerlo, pero [**EnumPrinters**](enumprinters.md) y [**GetPrinter pueden recuperarlo.**](getprinter.md) |
 
 
 
  
 
-En Windows Vista y versiones posteriores de Windows, también se pueden usar los valores siguientes.
+En Windows Vista y versiones posteriores de Windows, también se pueden usar los siguientes valores.
 
 | Value                               | Significado                                                                          |
 |-------------------------------------|----------------------------------------------------------------------------------|
-| \_ \_ nombre descriptivo del atributo de impresora \_  | Un equipo se ha conectado a esta impresora y se le ha dado un nombre descriptivo.           |
-| \_máquina de atributos de impresora \_         | La impresora es una conexión por equipo.                                             |
-| atributo de impresora \_ \_ Push \_ User    | La impresora se instaló mediante la Directiva de usuario de las conexiones de impresión de la impresora.     |
-| el \_ atributo de impresora \_ insertó el \_ equipo | La impresora se instaló mediante la Directiva de equipo de las conexiones de impresión de extracción. |
+| NOMBRE DESCRIPTIVO \_ DEL ATRIBUTO \_ DE \_ IMPRESORA  | Un equipo se ha conectado a esta impresora y le ha dado un nombre descriptivo.           |
+| MÁQUINA DE \_ ATRIBUTOS DE \_ IMPRESORA         | La impresora es una conexión por máquina.                                             |
+| USUARIO \_ DE INSERCIÓN \_ DE ATRIBUTO DE \_ IMPRESORA    | La impresora se instaló mediante la directiva de usuario Insertar conexiones de impresora.     |
+| MÁQUINA CON \_ INSERCIÓN \_ DE ATRIBUTOS DE \_ IMPRESORA | La impresora se instaló mediante la directiva de equipo Conexiones de impresora de inserción. |
 
 
 
  
 
-En Windows Server 2003, también se puede usar el valor siguiente.
+En Windows Server 2003, también se puede usar el siguiente valor.
 
 | Value                  | Significado                                                                 |
 |------------------------|-------------------------------------------------------------------------|
-| atributo de impresora \_ \_ TS | Indica que la impresora está conectada actualmente a través de un servidor de Terminal Server. |
+| TS \_ DE \_ ATRIBUTO DE IMPRESORA | Indica que la impresora está conectada actualmente a través de un servidor terminal. |
 
 
 
@@ -213,7 +213,7 @@ En Windows Server 2003, también se puede usar el valor siguiente.
 **Prioridad**
 </dt> <dd>
 
-Valor de prioridad que el administrador de trabajos de impresión utiliza para enrutar los trabajos de impresión.
+Valor de prioridad que el colador usa para enrutar los trabajos de impresión.
 
 </dd> <dt>
 
@@ -227,51 +227,51 @@ Valor de prioridad predeterminado asignado a cada trabajo de impresión.
 **StartTime**
 </dt> <dd>
 
-La primera hora en la que la impresora imprimirá un trabajo. Este valor se expresa como minutos transcurridos desde 12:00 AM GMT (hora del meridiano de Greenwich).
+La primera vez que la impresora imprimirá un trabajo. Este valor se expresa como minutos transcurridos desde las 12:00 a.m. GMT (hora media de Greenwich).
 
 </dd> <dt>
 
 **UntilTime**
 </dt> <dd>
 
-La hora más reciente a la que la impresora imprimirá un trabajo. Este valor se expresa como minutos transcurridos desde 12:00 AM GMT (hora del meridiano de Greenwich).
+La hora más reciente a la que la impresora imprimirá un trabajo. Este valor se expresa como minutos transcurridos desde las 12:00 a.m. GMT (hora media de Greenwich).
 
 </dd> <dt>
 
 **Estado**
 </dt> <dd>
 
-El estado de la impresora. Este miembro puede ser cualquier combinación razonable de los siguientes valores.
+Estado de la impresora. Este miembro puede ser cualquier combinación razonable de los valores siguientes.
 
 
 
-| Value                               | Significado                                                          |
+| Valor                               | Significado                                                          |
 |-------------------------------------|------------------------------------------------------------------|
-| Estado de la impresora \_ \_ ocupado               | La impresora está ocupada.                                             |
-| puerta de estado de la impresora \_ \_ \_ abierta         | La puerta de la impresora está abierta.                                        |
-| \_error de estado de la impresora \_              | La impresora está en un estado de error.                                |
-| Estado de la impresora \_ \_ inicializando       | La impresora se está inicializando.                                     |
-| \_e/s de estado de impresora \_ \_ activa         | La impresora está en un estado de entrada/salida activo                   |
-| \_ \_ alimentación manual de estado de la impresora \_       | La impresora está en un estado de alimentación manual.                           |
-| Estado de la impresora \_ \_ sin \_ tóner          | Se ha agotado el tóner de la impresora.                                     |
-| Estado de la impresora \_ \_ no \_ disponible     | La impresora no está disponible para imprimir.                       |
-| Estado de la impresora \_ \_ sin conexión            | La impresora no está conectada.                                          |
-| \_Estado de la impresora \_ sin \_ \_ memoria    | La impresora se ha quedado sin memoria.                               |
-| bandeja de salida de estado de la impresora \_ \_ \_ \_ llena  | La bandeja de salida de la impresora está llena.                                |
-| Página de estado de la impresora \_ \_ \_ aparcan         | La impresora no puede imprimir la página actual.                       |
-| \_atasco de \_ papel del estado de la impresora \_         | El papel está atascado en la impresora                                   |
-| \_papel del estado de la impresora \_ \_         | La impresora se ha quedado sin papel.                                     |
-| \_problema de \_ papel del estado de la impresora \_     | La impresora tiene un problema de papel.                                 |
-| Estado de la impresora en \_ \_ pausa             | La impresora está en pausa.                                           |
-| Estado de la impresora \_ \_ pendiente de \_ eliminación  | La impresora se está eliminando.                                    |
-| Estado de la impresora- \_ \_ \_ guardar energía        | La impresora está en modo de ahorro de energía.                               |
-| \_impresión del estado de la impresora \_           | La impresora se está imprimiendo.                                         |
-| \_procesamiento del estado de la impresora \_         | La impresora está procesando un trabajo de impresión.                           |
-| servidor de estado de impresora \_ \_ \_ desconocido    | No se conoce el estado de la impresora.                                   |
-| Estado de la impresora \_ \_ tóner \_ bajo         | La impresora tiene poco tóner.                                     |
-| Estado de la impresora- \_ \_ intervención del usuario \_ | La impresora tiene un error que requiere que el usuario haga algo. |
-| Estado de la impresora en \_ \_ espera            | La impresora está en espera.                                          |
-| \_preparación del \_ estado \_ de la impresora        | La impresora se está preparando.                                       |
+| ESTADO DE \_ LA IMPRESORA \_ OCUPADO               | La impresora está ocupada.                                             |
+| PUERTA DE \_ ESTADO DE LA IMPRESORA \_ \_ ABIERTA         | La puerta de la impresora está abierta.                                        |
+| ERROR DE \_ ESTADO DE \_ LA IMPRESORA              | La impresora está en un estado de error.                                |
+| INICIALIZACIÓN \_ DEL ESTADO DE LA \_ IMPRESORA       | La impresora se está inicializando.                                     |
+| ESTADO DE \_ LA \_ IMPRESORA \_ E/S ACTIVA         | La impresora está en un estado de entrada/salida activo                   |
+| FUENTE \_ MANUAL DE ESTADO DE LA \_ \_ IMPRESORA       | La impresora está en un estado de fuente manual.                           |
+| ESTADO \_ DE LA IMPRESORA SIN \_ \_ TONER          | Se ha agotado el tóner de la impresora.                                     |
+| ESTADO \_ DE LA IMPRESORA NO \_ \_ DISPONIBLE     | La impresora no está disponible para impresión.                       |
+| ESTADO DE \_ LA IMPRESORA \_ SIN CONEXIÓN            | La impresora no está conectada.                                          |
+| ESTADO DE \_ LA IMPRESORA FUERA DE \_ \_ \_ MEMORIA    | La impresora se ha quedo sin memoria.                               |
+| BANDEJA DE \_ SALIDA DE ESTADO DE LA IMPRESORA \_ \_ \_ COMPLETA  | La bandeja de salida de la impresora está llena.                                |
+| PUNT \_ DE LA PÁGINA DE ESTADO DE LA \_ \_ IMPRESORA         | La impresora no puede imprimir la página actual.                       |
+| ATASCO \_ DE PAPEL DE ESTADO DE LA \_ \_ IMPRESORA         | El papel está atascado en la impresora                                   |
+| PAPEL DE \_ ESTADO DE LA IMPRESORA \_ \_ FUERA         | La impresora se ha quedado sin papel.                                     |
+| PROBLEMA DE \_ PAPEL DE ESTADO DE LA \_ \_ IMPRESORA     | La impresora tiene un problema de papel.                                 |
+| ESTADO DE \_ LA \_ IMPRESORA EN PAUSA             | La impresora está en pausa.                                           |
+| ESTADO DE \_ LA IMPRESORA PENDIENTE DE \_ \_ ELIMINACIÓN  | La impresora se está eliminando.                                    |
+| GUARDADO \_ DE ENERGÍA DEL ESTADO DE LA \_ \_ IMPRESORA        | La impresora está en modo de ahorro de energía.                               |
+| IMPRESIÓN DE \_ ESTADO DE \_ IMPRESORA           | La impresora está imprimiendo.                                         |
+| PROCESAMIENTO DEL \_ ESTADO DE \_ LA IMPRESORA         | La impresora está procesando un trabajo de impresión.                           |
+| SERVIDOR DE \_ ESTADO \_ DE IMPRESORA \_ DESCONOCIDO    | Se desconoce el estado de la impresora.                                   |
+| EL ESTADO \_ DE LA IMPRESORA ES \_ \_ BAJO         | La impresora tiene poca toner.                                     |
+| INTERVENCIÓN \_ DEL USUARIO DEL ESTADO DE LA \_ \_ IMPRESORA | La impresora tiene un error que requiere que el usuario haga algo. |
+| ESTADO DE \_ LA \_ IMPRESORA EN ESPERA            | La impresora está esperando.                                          |
+| ESTADO \_ DE LA IMPRESORA EN \_ \_ CALIENTE        | La impresora se está preparando.                                       |
 
 
 
@@ -282,7 +282,7 @@ El estado de la impresora. Este miembro puede ser cualquier combinación razonab
 **cJobs**
 </dt> <dd>
 
-El número de trabajos de impresión que se han puesto en cola para la impresora.
+Número de trabajos de impresión que se han puesto en cola para la impresora.
 
 </dd> <dt>
 
@@ -301,8 +301,8 @@ Número medio de páginas por minuto que se han impreso en la impresora.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Nombres Unicode y ANSI<br/>   | Información de la **\_ impresora \_ \_ 2W** (Unicode) y la información de la **\_ impresora \_ \_ 2A** (ANSI)<br/>                           |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Nombres Unicode y ANSI<br/>   | **\_ PRINTER \_ INFO \_ 2W** (Unicode) e **\_ PRINTER INFO \_ \_ 2A** (ANSI)<br/>                           |
 
 
 
@@ -313,25 +313,25 @@ Número medio de páginas por minuto que se han impreso en la impresora.
 [Impresión](printdocs-printing.md)
 </dt> <dt>
 
-[Estructuras de API del administrador de trabajos de impresión](printing-and-print-spooler-structures.md)
+[Estructuras de LA API del colador de impresión](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
-[**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea)
+[**Devmode**](/windows/win32/api/wingdi/ns-wingdi-devmodea)
 </dt> <dt>
 
 [**EnumPrinters**](enumprinters.md)
 </dt> <dt>
 
-[**Información de la impresora \_ \_ 1**](printer-info-1.md)
+[**PRINTER \_ INFO \_ 1**](printer-info-1.md)
 </dt> <dt>
 
-[**Información de la impresora \_ \_ 3**](printer-info-3.md)
+[**PRINTER \_ INFO \_ 3**](printer-info-3.md)
 </dt> <dt>
 
-[**Información de la impresora \_ \_ 4**](printer-info-4.md)
+[**PRINTER \_ INFO \_ 4**](printer-info-4.md)
 </dt> <dt>
 
-[**descriptor de seguridad \_**](/windows/desktop/api/winnt/ns-winnt-security_descriptor)
+[**DESCRIPTOR \_ DE SEGURIDAD**](/windows/desktop/api/winnt/ns-winnt-security_descriptor)
 </dt> </dl>
 
  

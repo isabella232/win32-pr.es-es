@@ -1,23 +1,23 @@
 ---
-title: breakc (SM4-ASM)
-description: Mueve condicionalmente el punto de ejecución a la instrucción después del siguiente ENDLOOP o endswitch.
+title: breakc (sm4 - asm)
+description: Mueve condicionalmente el punto de ejecución a la instrucción después del siguiente endloop o endswitch.
 ms.assetid: 5735EF88-1E8C-4142-8442-9328D78999A7
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 019a1c859f7d1e0ee6368f5b9984775ef9bfaba1
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 1eff9be2428db0d0df24879f50964ce14f6831e235c54655958d9401224d7225
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104419943"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119626475"
 ---
-# <a name="breakc-sm4---asm"></a>breakc (SM4-ASM)
+# <a name="breakc-sm4---asm"></a>breakc (sm4 - asm)
 
-Mueve condicionalmente el punto de ejecución a la instrucción después del siguiente [ENDLOOP](endloop--sm4---asm-.md) o [endswitch](endswitch--sm4---asm-.md).
+Mueve condicionalmente el punto de ejecución a la instrucción después del [siguiente endloop](endloop--sm4---asm-.md) o [endswitch](endswitch--sm4---asm-.md).
 
 
 
-| breakc { \_ z \|\_NZ} src0. Select ( \_ componente) |
+| breakc{ \_ z\|\_Componente nz} src0.select \_ |
 |------------------------------------------|
 
 
@@ -28,17 +28,17 @@ Mueve condicionalmente el punto de ejecución a la instrucción después del sig
 
 | Elemento                                                            | Descripción                                                     |
 |-----------------------------------------------------------------|-----------------------------------------------------------------|
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] el componente en el que se va a probar la condición.<br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] El componente en el que se va a probar la condición.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El formato de token contiene el desplazamiento de la instrucción **ENDLOOP** correspondiente en el sombreador como una comodidad.
+El formato del token contiene el desplazamiento de la instrucción **endloop** correspondiente en el sombreador por comodidad.
 
-En el ejemplo siguiente se muestra la instrucción **breakc** .
+En el ejemplo siguiente se muestra **la instrucción breakc.**
 
 
 ```
@@ -53,9 +53,9 @@ En el ejemplo siguiente se muestra la instrucción **breakc** .
 
 
 
-Esta instrucción debe aparecer dentro de un **bucle** / **ENDLOOP** o **Switch** / **endswitch**.
+Esta instrucción debe aparecer dentro de **un** / **bucle endloop** o **switch** / **endswitch**.
 
-El registro de 32 bits proporcionado por *src0* se prueba en un nivel de bits. Si algún bit es distinto de cero, **breakc \_ NZ** realizará la interrupción. Si todos los bits son cero, **breakc \_ z** llevará a cabo la interrupción.
+El registro de 32 bits proporcionado por *src0* se prueba en un nivel de bits. Si algún bit es distinto de cero, **breakc \_ nz** realizará la interrupción. Si todos los bits son cero, **breakc \_ z** realizará la interrupción.
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
@@ -69,7 +69,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -77,12 +77,12 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sí       |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
@@ -92,7 +92,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado modelo de sombreador 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo 4 del sombreador (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

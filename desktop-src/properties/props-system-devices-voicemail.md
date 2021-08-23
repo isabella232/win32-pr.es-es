@@ -1,19 +1,19 @@
 ---
-description: Indica si el dispositivo admite el correo de voz.
+description: Indica si el dispositivo admite el buzón de voz.
 ms.assetid: f127ffb3-1d9f-4729-aec9-cb1fb8948df5
-title: System. Devices. correo de voz
+title: System.Devices.Buzón
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a3255bb6ac35fb4b511108177d6989a7d3806d16
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 00383352ac508d423eadbbea1426a4a59f1c427fe5860aa71654e83c21bebaee
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103813502"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119598925"
 ---
-# <a name="systemdevicesvoicemail"></a>System. Devices. correo de voz
+# <a name="systemdevicesvoicemail"></a>System.Devices.Buzón
 
-Indica si el dispositivo admite el correo de voz.
+Indica si el dispositivo admite el buzón de voz.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -111,9 +111,9 @@ propertyDescription
             defineToken = VOICEMAIL_NEW_VOICEMAIL
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -128,7 +128,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -140,7 +140,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -158,7 +158,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

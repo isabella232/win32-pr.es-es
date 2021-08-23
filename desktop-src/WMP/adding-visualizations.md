@@ -1,26 +1,26 @@
 ---
-title: Agregar visualizaciones
-description: Agregar visualizaciones
+title: Adición de visualizaciones
+description: Adición de visualizaciones
 ms.assetid: adb5d10b-070c-426c-a74a-8d4881d9acbf
 keywords:
 - crear máscaras, visualizaciones
-- Máscaras de Windows Media Player, visualizaciones
+- Reproductor de Windows Media máscaras, visualizaciones
 - máscaras, visualizaciones
 - visualizaciones, máscaras
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9750b114d99af8c59777ea28ff4dab85a56dd229
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d236990d3e29cf4e51dbb46e8e1269b0c8a50ccaf205940a6f34b97c89fa6e62
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103776321"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119619155"
 ---
-# <a name="adding-visualizations"></a>Agregar visualizaciones
+# <a name="adding-visualizations"></a>Adición de visualizaciones
 
-Puede Agregar una ventana de visualización de la misma manera que agregó una ventana de vídeo. Se puede usar la misma máscara, pero se usa un elemento **Effects** .
+Puede agregar una ventana de visualización de la misma manera que agregó una ventana de vídeo. Se puede usar la misma máscara, pero se **usa un elemento EFFECTS.**
 
-En primer lugar, debe agregar el elemento **Effects** y asignarle un identificador y un tamaño:
+En primer lugar, debe agregar **el elemento EFFECTS** y darle un identificador y un tamaño:
 
 
 ```C++
@@ -35,7 +35,7 @@ En primer lugar, debe agregar el elemento **Effects** y asignarle un identificad
 
 
 
-A continuación, puede asignar los dos botones a una cadena de código de visualización anterior y siguiente:
+A continuación, puede asignar a los dos botones una cadena de código de visualización anterior y siguiente:
 
 
 ```C++
@@ -53,9 +53,9 @@ A continuación, puede asignar los dos botones a una cadena de código de visual
 
 
 
-Las capas y los mapas de bits eran los mismos que se usaron en el ejemplo de vídeo, con la excepción de que se ha copiado y volteado horizontalmente la flecha de reproducción.
+Las capas y los mapas de bits eran los mismos que se usaban en el ejemplo de vídeo, salvo que la flecha de reproducción se copiaba y volteó horizontalmente.
 
-Por último, se ha agregado un elemento **Player** simple con el atributo **URL** para elegir la canción que se va a reproducir.
+Por último, se ha agregado un elemento **PLAYER** sencillo con el atributo **URL** para elegir una canción para reproducir.
 
 
 ```C++
@@ -76,9 +76,9 @@ Puede ver una máscara de visualización de trabajo similar en la sección de ej
 [**Guía de creación de máscaras**](skin-creation-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

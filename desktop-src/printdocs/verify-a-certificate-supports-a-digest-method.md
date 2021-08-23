@@ -1,28 +1,28 @@
 ---
-description: En este tema se describe cómo comprobar que el sistema admite un método de síntesis.
+description: En este tema se describe cómo comprobar que el sistema admite un método de resumen.
 ms.assetid: dd1b53cd-66b9-46b3-89ad-ee84b4690e1e
-title: Comprobar que el sistema admite un método de síntesis
+title: Comprobar que el sistema admite un método de resumen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9acf3e0c2c7f4927fc6047c88039e443e2db3e71
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 272db3f7169ba66fdaa67c2943030d53e7c75927c2024750d405aa9a8246949e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119600306"
 ---
-# <a name="verify-the-system-supports-a-digest-method"></a>Comprobar que el sistema admite un método de síntesis
+# <a name="verify-the-system-supports-a-digest-method"></a>Comprobar que el sistema admite un método de resumen
 
-En este tema se describe cómo comprobar que el sistema admite un método de síntesis.
+En este tema se describe cómo comprobar que el sistema admite un método de resumen.
 
-Las firmas digitales XPS usan la API de cifrado, que proporciona métodos para comprobar que el sistema admite un método de síntesis específico. Para usar la función **CryptXmlEnumAlgorithmInfo** de la API de Crypto con el fin de enumerar los métodos de síntesis admitidos por el sistema, el llamador debe proporcionar un método de devolución de llamada y una estructura de datos. La función **CryptXmlEnumAlgorithmInfo** devuelve los datos de la enumeración al llamador mediante el método de devolución de llamada.
+Las firmas digitales XPS usan Crypto API, que proporciona métodos para comprobar que el sistema admite un método de resumen específico. Para usar la función **CryptXmlEnumAlgorithmInfo** de crypto API para enumerar los métodos de resumen admitidos por el sistema, el autor de la llamada debe proporcionar un método de devolución de llamada y una estructura de datos. La **función CryptXmlEnumAlgorithmInfo** devuelve los datos de enumeración al autor de la llamada mediante el método de devolución de llamada.
 
-La estructura de datos usada en este ejemplo se muestra en el ejemplo de código siguiente y contiene los siguientes campos:
+La estructura de datos utilizada en este ejemplo se muestra en el ejemplo de código siguiente y contiene los campos siguientes:
 
 | Campo                            | Descripción                                                                                                |
 |----------------------------------|------------------------------------------------------------------------------------------------------------|
-| **userDigestAlgorithm**          | Un campo **LPWStr** que apunta a la cadena que contiene el URI del algoritmo de resumen que se va a comprobar. |
-| **userDigestAlgorithmSupported** | Un valor **booleano** que indica si el algoritmo de síntesis es compatible con el certificado.           |
+| **userDigestAlgorithm**          | Campo **LPWSTR** que apunta a la cadena que contiene el URI del algoritmo de resumen que se va a comprobar. |
+| **userDigestAlgorithmSupported** | Valor **booleano** que indica si el certificado admite el algoritmo de resumen.           |
 
 
 
@@ -39,7 +39,7 @@ struct DigestMethodData
 
 
 
-El método de la API de cifrado que enumera los métodos de síntesis utiliza un método de devolución de llamada para devolver datos al llamador. **CryptXmlEnumAlgorithmInfo** enumera los métodos de síntesis que admite el sistema y llama al método de devolución de llamada para cada método de síntesis que enumera, hasta que el método de devolución de llamada devuelve **false** o hasta que se enumeran todos los métodos de síntesis admitidos por el sistema. En este ejemplo, el método de devolución de llamada compara el método de síntesis que **CryptXmlEnumAlgorithmInfo** pasa con el método de síntesis proporcionado por el método de llamada.
+El método de crypto API que enumera los métodos de resumen usa un método de devolución de llamada para devolver datos al autor de la llamada. **CryptXmlEnumAlgorithmInfo** enumera los métodos de resumen admitidos por el sistema y llama al método de devolución de llamada para cada método de resumen que enumera, hasta que el método de devolución de llamada devuelve **FALSE** o hasta que se enumeran todos los métodos de resumen admitidos por el sistema. El método de devolución de llamada de este ejemplo compara el método de resumen que **pasa CryptXmlEnumAlgorithmInfo** con el método de resumen proporcionado por el método de llamada.
 
 
 ```C++
@@ -96,7 +96,7 @@ EnumDigestMethodCallback (
 
 
 
-En el ejemplo de código siguiente se incluye la funcionalidad de validación en un único método, que devuelve un valor **booleano** que indica si el sistema admite el método de síntesis.
+El ejemplo de código siguiente encapsula la funcionalidad de validación en un único método, que devuelve un **valor booleano** que indica si el sistema admite el método de resumen.
 
 
 ```C++
@@ -144,10 +144,10 @@ SupportsDigestAlgorithm (
 [Cargar un certificado desde un archivo](load-a-certificate-from-a-file.md)
 </dt> <dt>
 
-[Comprobar que un certificado admite un método de firma](verify-a-certificate-supports-a-signature-method.md)
+[Comprobar que un certificado admite un método signature](verify-a-certificate-supports-a-signature-method.md)
 </dt> <dt>
 
-[Insertar cadenas de certificado en un documento](embedding-certificate-trust-chains-in-a-document.md)
+[Insertar cadenas de certificados en un documento](embedding-certificate-trust-chains-in-a-document.md)
 </dt> <dt>
 
 **Se usa en este ejemplo**
@@ -159,16 +159,16 @@ SupportsDigestAlgorithm (
 **Para obtener más información**
 </dt> <dt>
 
-[API de criptografía](/windows/desktop/SecCrypto/cryptography-portal)
+[Cryptography API](/windows/desktop/SecCrypto/cryptography-portal)
 </dt> <dt>
 
 [Funciones de criptografía](/windows/desktop/SecCrypto/cryptography-functions)
 </dt> <dt>
 
-[Errores de la API de firma digital XPS](xps-digital-signatures-errors.md)
+[Errores de API de firma digital XPS](xps-digital-signatures-errors.md)
 </dt> <dt>
 
-[Errores de documento XPS](xps-document-errors.md)
+[Errores del documento XPS](xps-document-errors.md)
 </dt> <dt>
 
 [XML Paper Specification](https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf)

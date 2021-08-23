@@ -1,7 +1,7 @@
 ---
 description: El método SetStretchMode calcula si se debe ajustar la imagen de vídeo.
 ms.assetid: ffdcaf9c-e157-4557-9193-8430c1c451bf
-title: Método CDrawImage. SetStretchMode (Winutil. h)
+title: Método CDrawImage.SetStretchMode (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 33a4b3a6b104b9e2888776cc59183835f412fdcb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b3886910bce57aca728f64ffbe9d660c1073d1281864a7721faa7e757c7c7d81
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661396"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119526495"
 ---
-# <a name="cdrawimagesetstretchmode-method"></a>CDrawImage. SetStretchMode, método
+# <a name="cdrawimagesetstretchmode-method"></a>Método CDrawImage.SetStretchMode
 
-El `SetStretchMode` método calcula si se debe ajustar la imagen de vídeo.
+El método calcula si se debe extender la imagen `SetStretchMode` de vídeo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,9 +44,9 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase **CDrawImage** llama automáticamente a este método cada vez que cambia el rectángulo de origen o de destino.
+La **clase CDrawImage llama** automáticamente a este método cada vez que cambia el rectángulo de origen o de destino.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ La clase **CDrawImage** llama automáticamente a este método cada vez que cambi
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ La clase **CDrawImage** llama automáticamente a este método cada vez que cambi
 
 <dl> <dt>
 
-[**Clase CDrawImage**](cdrawimage.md)
+[**CDrawImage (clase)**](cdrawimage.md)
 </dt> </dl>
 
  

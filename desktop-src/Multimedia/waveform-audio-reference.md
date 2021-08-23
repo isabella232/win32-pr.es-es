@@ -1,51 +1,51 @@
 ---
 title: Referencia de audio de forma de onda
-description: En esta sección se enumeran las funciones, las estructuras y los mensajes asociados con el audio de onda, que se documentan en referencia de multimedia. Estos elementos se agrupan de la siguiente manera.
+description: En esta sección se enumeran las funciones, estructuras y mensajes asociados al audio de forma de onda, que se documentan en Referencia multimedia. Estos elementos se agrupan como se muestra a continuación.
 ms.assetid: 723953f7-b38e-4f24-8d54-9849e013011d
 keywords:
-- Multimedia de Windows, referencia de audio de onda
-- multimedia, referencia de audio de onda
-- audio multimedia, referencia de onda
-- audio, referencia de onda
-- Multimedia de Windows, audio de onda
-- multimedia, audio de onda
-- audio multimedia, de onda
-- audio, de onda
-- audio de la onda, referencia
-- referencia de audio de onda, acerca de
-- referencia de wavefore audio, acerca de
-- referencia de audio de la onda, dispositivos auxiliares
-- referencia de wavefore audio, dispositivos auxiliares
-- referencia de audio de onda, reproducción
-- referencia de wavefore audio, reproducción
-- referencia de audio de onda, errores
-- referencia de wavefore audio, errores
-- referencia de audio de onda, abrir
-- referencia de wavefore audio, abrir
-- referencia de audio de onda, cerrar
-- referencia de wavefore audio, cerrar
-- referencia de audio de onda, paso
-- referencia de wavefore audio, brea
-- referencia de audio de onda, volumen
-- referencia de wavefore audio, volumen
-- referencia de audio de onda, mensajes
-- referencia de wavefore audio, mensajes
+- Windows multimedia, referencia de audio de forma de onda
+- multimedia, referencia de audio de forma de onda
+- audio multimedia, referencia de forma de onda
+- audio, referencia de forma de onda
+- Windows multimedia, audio de forma de onda
+- multimedia, audio de forma de onda
+- audio multimedia, forma de onda
+- audio, forma de onda
+- audio de forma de onda, referencia
+- referencia de audio de forma de onda, acerca de
+- referencia de audio wavefore, acerca de
+- referencia de audio de forma de onda, dispositivos auxiliares
+- referencia de audio wavefore, dispositivos auxiliares
+- referencia de audio de forma de onda, reproducción
+- referencia de audio wavefore, reproducción
+- referencia de audio de forma de onda, errores
+- referencia de audio wavefore, errores
+- referencia de audio de forma de onda, apertura
+- referencia de audio wavefore, apertura
+- referencia de audio de forma de onda, cierre
+- referencia de audio wavefore, cierre
+- referencia de audio de forma de onda, pitch
+- referencia de audio wavefore, pitch
+- referencia de audio de forma de onda, volumen
+- referencia de audio wavefore, volumen
+- referencia de audio de forma de onda, mensajes
+- referencia de audio wavefore, mensajes
 - referencia de audio de forma de onda, posición actual
-- referencia de wavefore audio, posición actual
-- referencia de audio de onda, grabación
-- referencia de wavefore audio, grabación
+- referencia de audio wavefore, posición actual
+- referencia de audio de forma de onda, grabación
+- referencia de audio wavefore, grabación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c74b37984b2d3fab5dad1ea0df4f1f62dfa1855e
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 4fd83f843de130d247749acfc87a67c60948871bb8cd878f9aa180fcd385fb13
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104077662"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119687425"
 ---
 # <a name="waveform-audio-reference"></a>Referencia de audio de forma de onda
 
-En esta sección se enumeran las funciones, las estructuras y los mensajes asociados con el audio de onda, que se documentan en [referencia de multimedia](multimedia-reference.md). Estos elementos se agrupan de la siguiente manera.
+En esta sección se enumeran las funciones, estructuras y mensajes asociados al audio de forma de onda, que se documentan en [Referencia multimedia.](multimedia-reference.md) Estos elementos se agrupan como se muestra a continuación.
 
 ## <a name="auxiliary-devices"></a>Dispositivos auxiliares
 
@@ -58,7 +58,7 @@ En esta sección se enumeran las funciones, las estructuras y los mensajes asoci
 
 ## <a name="easy-playback"></a>Reproducción sencilla
 
--   [**Reproducción**](/previous-versions//dd743680(v=vs.85))
+-   [**PlaySound**](/previous-versions//dd743680(v=vs.85))
 -   [**sndPlaySound**](/previous-versions//dd798676(v=vs.85))
 
 ## <a name="errors"></a>Errors
@@ -66,55 +66,55 @@ En esta sección se enumeran las funciones, las estructuras y los mensajes asoci
 -   [**waveInGetErrorText**](/windows/win32/api/mmeapi/nf-mmeapi-waveingeterrortext)
 -   [**waveOutGetErrorText**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutgeterrortext)
 
-## <a name="opening-and-closing"></a>Abrir y cerrar
+## <a name="opening-and-closing"></a>Apertura y cierre
 
 -   [**PCMWAVEFORMAT**](/windows/win32/api/mmreg/ns-mmreg-pcmwaveformat)
--   [**MM \_ - \_ cerrar Wim**](mm-wim-close.md)
--   [**MM \_ Wim \_ abierto**](mm-wim-open.md)
--   [**cierre de MM \_ WOM \_**](mm-wom-close.md)
--   [**MM \_ WOM \_ abierto**](mm-wom-open.md)
+-   [**MM \_ WIM \_ CLOSE**](mm-wim-close.md)
+-   [**MM \_ WIM \_ OPEN**](mm-wim-open.md)
+-   [**MM \_ WOM \_ CLOSE**](mm-wom-close.md)
+-   [**MM \_ WOM \_ OPEN**](mm-wom-open.md)
 -   [**WAVEFORMAT**](/windows/win32/api/mmreg/ns-mmreg-waveformat)
--   [**WAVEFORMATEX**](/windows/win32/api/mmeapi/ns-mmeapi-waveformatex)
+-   [**FORMA DE ONDAATEX**](/windows/win32/api/mmeapi/ns-mmeapi-waveformatex)
 -   [**waveInClose**](/windows/win32/api/mmeapi/nf-mmeapi-waveinclose)
 -   [**waveInProc**](/previous-versions//dd743849(v=vs.85))
 -   [**waveInOpen**](/windows/win32/api/mmeapi/nf-mmeapi-waveinopen)
 -   [**waveOutClose**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutclose)
 -   [**waveOutProc**](/previous-versions//dd743869(v=vs.85))
 -   [**waveOutOpen**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutopen)
--   [**\_cerrar Wim**](wim-close.md)
--   [**WIM \_ abierto**](wim-open.md)
--   [**WOM \_ cerrar**](wom-close.md)
--   [**WOM \_ abrir**](wom-open.md)
+-   [**WIM \_ CLOSE**](wim-close.md)
+-   [**WIM \_ OPEN**](wim-open.md)
+-   [**WOM \_ CLOSE**](wom-close.md)
+-   [**WOM \_ OPEN**](wom-open.md)
 
 ## <a name="pitch"></a>Inclinación
 
 -   [**waveOutGetPitch**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutgetpitch)
--   [**waveOutSetPitch**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutsetpitch)
+-   [**waveOutSetPjunto**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutsetpitch)
 
 ## <a name="playback-rate"></a>Velocidad de reproducción
 
 -   [**waveOutGetPlaybackRate**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutgetplaybackrate)
 -   [**waveOutSetPlaybackRate**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutsetplaybackrate)
 
-## <a name="playback-progress"></a>Progreso de la reproducción
+## <a name="playback-progress"></a>Progreso de reproducción
 
--   [**MM \_ WOM \_ listo**](mm-wom-done.md)
+-   [**MM \_ WOM \_ DONE**](mm-wom-done.md)
 -   [**waveOutBreakLoop**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutbreakloop)
 -   [**waveOutPause**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutpause)
 -   [**waveOutReset**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutreset)
 -   [**waveOutRestart**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutrestart)
--   [**WOM \_ completado**](wom-done.md)
+-   [**WOM \_ DONE**](wom-done.md)
 
 ## <a name="playing"></a>Reproduciendo
 
--   [**MM \_ WOM \_ listo**](mm-wom-done.md)
+-   [**MM \_ WOM \_ DONE**](mm-wom-done.md)
 -   [**WAVEHDR**](/windows/win32/api/mmeapi/ns-mmeapi-wavehdr)
 -   [**waveOutPrepareHeader**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutprepareheader)
 -   [**waveOutUnprepareHeader**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutunprepareheader)
 -   [**waveOutWrite**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutwrite)
--   [**WOM \_ completado**](wom-done.md)
+-   [**WOM \_ DONE**](wom-done.md)
 
-## <a name="querying-a-device"></a>Consultar un dispositivo
+## <a name="querying-a-device"></a>Consulta de un dispositivo
 
 -   [**WAVEINCAPS**](/windows/win32/api/mmeapi/ns-mmeapi-waveincaps)
 -   [**waveInGetDevCaps**](/windows/win32/api/mmeapi/nf-mmeapi-waveingetdevcaps)
@@ -123,18 +123,18 @@ En esta sección se enumeran las funciones, las estructuras y los mensajes asoci
 -   [**waveOutGetDevCaps**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutgetdevcaps)
 -   [**waveOutGetNumDevs**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutgetnumdevs)
 
-## <a name="recording"></a>Grabando
+## <a name="recording"></a>Grabación
 
--   [**\_datos Wim \_ mm**](mm-wim-data.md)
+-   [**MM \_ WIM \_ DATA**](mm-wim-data.md)
 -   [**waveInAddBuffer**](/windows/win32/api/mmeapi/nf-mmeapi-waveinaddbuffer)
 -   [**waveInPrepareHeader**](/windows/win32/api/mmeapi/nf-mmeapi-waveinprepareheader)
 -   [**waveInReset**](/windows/win32/api/mmeapi/nf-mmeapi-waveinreset)
 -   [**waveInStart**](/windows/win32/api/mmeapi/nf-mmeapi-waveinstart)
 -   [**waveInStop**](/windows/win32/api/mmeapi/nf-mmeapi-waveinstop)
 -   [**waveInUnprepareHeader**](/windows/win32/api/mmeapi/nf-mmeapi-waveinunprepareheader)
--   [**\_datos Wim**](wim-data.md)
+-   [**DATOS \_ DE WIM**](wim-data.md)
 
-## <a name="retrieving-device-identifiers"></a>Recuperando identificadores de dispositivo
+## <a name="retrieving-device-identifiers"></a>Recuperar identificadores de dispositivo
 
 -   [**waveInGetID**](/windows/win32/api/mmeapi/nf-mmeapi-waveingetid)
 -   [**waveOutGetID**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutgetid)
@@ -158,9 +158,9 @@ En esta sección se enumeran las funciones, las estructuras y los mensajes asoci
 
 <dl> <dt>
 
-[Audio de onda](waveform-audio.md)
+[Audio de forma de onda](waveform-audio.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

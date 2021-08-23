@@ -4,21 +4,21 @@ ms.assetid: 591F0EE3-BA8E-4499-B9E3-9826DB94B00A
 title: Métodos ISecurityInformation2
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d1be445cc0ae738b30bc22d0a8d817323a7b90cd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a63dd92048a7ea90b120b20a7d7db8df837cc2d76a325659b1b81aabca1dda8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668396"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119670725"
 ---
 # <a name="isecurityinformation2-methods"></a>Métodos ISecurityInformation2
 
-La interfaz [**ISecurityInformation2**](/windows/win32/api/aclui/nn-aclui-isecurityinformation2) expone los métodos siguientes.
+La [**interfaz ISecurityInformation2**](/windows/win32/api/aclui/nn-aclui-isecurityinformation2) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**Método IsDaclCanonical**](/windows/win32/api/aclui/nf-aclui-isecurityinformation2-isdaclcanonical)
--   [**Método LookupSids**](/windows/win32/api/aclui/nf-aclui-isecurityinformation2-lookupsids)
+-   [**IsDaclCannical (método)**](/windows/win32/api/aclui/nf-aclui-isecurityinformation2-isdaclcanonical)
+-   [**LookupSids (método)**](/windows/win32/api/aclui/nf-aclui-isecurityinformation2-lookupsids)
 
  
 

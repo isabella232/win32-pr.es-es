@@ -1,7 +1,7 @@
 ---
-description: 'El método CheckMediaType determina si el PIN acepta un tipo de medio específico. Este método invalida el método CBasePin:: CheckMediaType.'
+description: El método CheckMediaType determina si el pin acepta un tipo de medio específico. Este método invalida el método CBasePin::CheckMediaType.
 ms.assetid: 618c6f2e-2a15-43dd-811e-898dad0de226
-title: Método CRendererInputPin. CheckMediaType (Renbase. h)
+title: Método CRendererInputPin.CheckMediaType (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5d3229d1431e45a6177c454f94bf9873aaceaca5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d47f69c72ab2dab366b42d6dc80100508c0b1608d25abdcbfb1bb49c4177a278
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119687705"
 ---
-# <a name="crendererinputpincheckmediatype-method"></a>CRendererInputPin. CheckMediaType, método
+# <a name="crendererinputpincheckmediatype-method"></a>Método CRendererInputPin.CheckMediaType
 
-El `CheckMediaType` método determina si el PIN acepta un tipo de medio específico. Este método invalida el método [**CBasePin:: CheckMediaType**](cbasepin-checkmediatype.md) .
+El `CheckMediaType` método determina si el pin acepta un tipo de medio específico. Este método invalida el [**método CBasePin::CheckMediaType.**](cbasepin-checkmediatype.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ HRESULT CheckMediaType(
 
 <dl> <dt>
 
-*p.p.* 
+*Pmt* 
 </dt> <dd>
 
 Puntero a un objeto de tipo de medio que contiene el tipo de medio propuesto.
@@ -51,7 +51,7 @@ Puntero a un objeto de tipo de medio que contiene el tipo de medio propuesto.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Devuelve un valor **HRESULT** .
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Devuelve un valor **HRESULT** .
 
 <dl> <dt>
 
-[**Clase CRendererInputPin**](crendererinputpin.md)
+[**CRendererInputPin (clase)**](crendererinputpin.md)
 </dt> </dl>
 
  

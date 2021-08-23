@@ -1,29 +1,29 @@
 ---
-title: La ventana Propiedades de carácter predeterminado
-description: La ventana Propiedades de carácter predeterminado
+title: Ventana Propiedades de caracteres predeterminadas
+description: Ventana Propiedades de caracteres predeterminadas
 ms.assetid: a775738e-c3f8-443e-b519-1df0a5d3e95d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: acfa4345b9c95af40ce933ef072b576b987cdb9c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b3e66a2b101cfae80e9dfc7d97c2430355343a6c231986eea216975791ef03e1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103773921"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119555764"
 ---
-# <a name="the-default-character-properties-window"></a>La ventana Propiedades de carácter predeterminado
+# <a name="the-default-character-properties-window"></a>Ventana Propiedades de caracteres predeterminadas
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
-Además de permitir que las aplicaciones carguen un carácter concreto, las aplicaciones pueden cargar un carácter que sea un recurso compartido para el usuario, conocido como el *carácter predeterminado*. El carácter predeterminado es accesible desde cualquier aplicación, pero el carácter solo es seleccionable por el usuario. Para facilitar la selección de este carácter, el agente proporciona una ventana que proporciona acceso para seleccionar este carácter, denominado ventana de propiedades de caracteres predeterminados. El acceso a esta ventana se admite desde la API del agente.
+Además de permitir que las aplicaciones carguen un carácter específico, las aplicaciones pueden cargar un carácter que es un recurso compartido para el usuario, conocido como *el carácter predeterminado*. El carácter predeterminado es accesible desde cualquier aplicación, pero el usuario solo puede seleccionarlo. Para facilitar la selección de este carácter, el Agente proporciona una ventana que proporciona acceso a la selección de este carácter, denominada ventana de propiedades de caracteres predeterminada. El acceso a esta ventana se admite desde la API del agente.
 
-![cuadro de diálogo Propiedades de carácter de genio](images/f8dpwin.gif)
+![Cuadro de diálogo de propiedades de caracteres genie](images/f8dpwin.gif)
 
-La ventana Propiedades de carácter predeterminado no se puede usar para proporcionar una selección de caracteres que no sea para el carácter predeterminado.
+La ventana de propiedades de caracteres predeterminadas no se puede usar para proporcionar una selección de caracteres que no sea para el carácter predeterminado.
 
- 
+ 
 
- 
+ 
 
 
 

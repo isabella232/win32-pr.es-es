@@ -1,29 +1,29 @@
-- name: Administrador de animaciones de Windows
+- name: Windows Administrador de animaciones
   href: '-main-portal.md'
   items:
-    - name: Guía de desarrollo de animaciones de Windows
+    - name: Windows Guía de desarrollo de animaciones
       href: windows-animation-developer-guide.md
       items:
-        - name: Información general sobre animaciones de Windows
+        - name: Windows Información general sobre animaciones
           href: scenic-animation-api-overview.md
         - name: Información general sobre guiones gráficos
           href: storyboard-construction.md
-        - name: Tareas de animación de Windows
+        - name: Windows Tareas de animación
           href: using-windows-animation.md
           items:
             - name: Crear los objetos de animación principales
               href: adding-animation-to-an-application.md
             - name: Crear variables de animación
               href: create-animation-variables.md
-            - name: Actualizar el administrador de animaciones y dibujar marcos
+            - name: Actualizar el Administrador de animaciones y dibujar fotogramas
               href: introducing-windows-animation-manager.md
             - name: Leer los valores de las variables de animación
               href: updating---application-driven-animation.md
-            - name: Crear un guion gráfico y agregar transiciones
+            - name: Crear un guión gráfico y agregar transiciones
               href: updating---timer-driven-animation.md
-            - name: Programar un guion gráfico
+            - name: Programar un guión gráfico
               href: scheduling-a-storyboard.md
-    - name: Referencia de animación de Windows
+    - name: Windows Referencia de animación
       href: windows-animation-reference.md
       items:
         - name: Constantes
@@ -88,11 +88,11 @@
                 - name: IUIAnimationManager
                   href: /windows/desktop/api/UIAnimation/nn-uianimation-iuianimationmanager
                   items:
-                    - name: Método AbandonAllStoryboards
+                    - name: AbandonAllStoryboards (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-abandonallstoryboards
-                    - name: Método CreateAnimationVariable
+                    - name: CreateAnimationVariable (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-createanimationvariable
-                    - name: Método CreateStoryboard
+                    - name: CreateStoryboard (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-createstoryboard
                     - name: Método FinishAllStoryboards
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-finishallstoryboards
@@ -100,27 +100,27 @@
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-getstatus
                     - name: Método GetStoryboardFromTag
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-getstoryboardfromtag
-                    - name: Método GetVariableFromTag
+                    - name: GetVariableFromTag (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-getvariablefromtag
-                    - name: PAUSE (método)
+                    - name: Pause (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-pause
                     - name: Resume (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-resume
-                    - name: Método ScheduleTransition
+                    - name: ScheduleTransition (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-scheduletransition
-                    - name: Método SetAnimationMode
+                    - name: SetAnimationMode (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-setanimationmode
-                    - name: Método SetCancelPriorityComparison
+                    - name: SetCancelPriorityComparison (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-setcancelprioritycomparison
                     - name: Método SetCompressPriorityComparison
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-setcompressprioritycomparison
-                    - name: Método SetConcludePriorityComparison
+                    - name: SetConcludePriorityComparison (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-setconcludeprioritycomparison
                     - name: Método SetDefaultLongestAcceptableDelay
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-setdefaultlongestacceptabledelay
-                    - name: Método SetManagerEventHandler
+                    - name: SetManagerEventHandler (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-setmanagereventhandler
-                    - name: Método SetTrimPriorityComparison
+                    - name: SetTrimPriorityComparison (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-settrimprioritycomparison
                     - name: Método Shutdown
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-shutdown
@@ -129,13 +129,13 @@
                 - name: IUIAnimationManager2
                   href: /windows/desktop/api/UIAnimation/nn-uianimation-iuianimationmanager2
                   items:
-                    - name: Método AbandonAllStoryboards
+                    - name: AbandonAllStoryboards (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager2-abandonallstoryboards
-                    - name: Método CreateAnimationVariable
+                    - name: CreateAnimationVariable (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager2-createanimationvariable
-                    - name: Método CreateAnimationVectorVariable
+                    - name: CreateAnimationVectorVariable (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager2-createanimationvectorvariable
-                    - name: Método CreateStoryboard
+                    - name: CreateStoryboard (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager2-createstoryboard
                     - name: Método EstimateNextEventTime
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager2-estimatenexteventtime
@@ -145,27 +145,27 @@
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager2-getstatus
                     - name: Método GetStoryboardFromTag
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager2-getstoryboardfromtag
-                    - name: Método GetVariableFromTag
+                    - name: GetVariableFromTag (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager2-getvariablefromtag
-                    - name: PAUSE (método)
+                    - name: Pause (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager2-pause
                     - name: Resume (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager2-resume
-                    - name: Método ScheduleTransition
+                    - name: ScheduleTransition (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager2-scheduletransition
-                    - name: Método SetAnimationMode
+                    - name: SetAnimationMode (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager2-setanimationmode
-                    - name: Método SetCancelPriorityComparison
+                    - name: SetCancelPriorityComparison (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager2-setcancelprioritycomparison
                     - name: Método SetCompressPriorityComparison
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager2-setcompressprioritycomparison
-                    - name: Método SetConcludePriorityComparison
+                    - name: SetConcludePriorityComparison (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager2-setconcludeprioritycomparison
                     - name: Método SetDefaultLongestAcceptableDelay
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager2-setdefaultlongestacceptabledelay
-                    - name: Método SetManagerEventHandler
+                    - name: SetManagerEventHandler (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager2-setmanagereventhandler
-                    - name: Método SetTrimPriorityComparison
+                    - name: SetTrimPriorityComparison (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager2-settrimprioritycomparison
                     - name: Método Shutdown
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager2-shutdown
@@ -174,14 +174,14 @@
                 - name: IUIAnimationManagerEventHandler
                   href: /windows/desktop/api/UIAnimation/nn-uianimation-iuianimationmanagereventhandler
                   items:
-                    - name: Método OnManagerStatusChanged
+                    - name: OnManagerStatusChanged (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanagereventhandler-onmanagerstatuschanged
                 - name: IUIAnimationManagerEventHandler2
                   href: /windows/desktop/api/UIAnimation/nn-uianimation-iuianimationmanagereventhandler2
                   items:
-                    - name: Método OnManagerStatusChanged
+                    - name: OnManagerStatusChanged (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanagereventhandler2-onmanagerstatuschanged
-            - name: Interfaces de guion gráfico
+            - name: Interfaces de guión gráfico
               href: storyboard-interfaces.md
               items:
                 - name: IUIAnimationStoryboard
@@ -191,15 +191,15 @@
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-abandon
                     - name: Método AddKeyframeAfterTransition
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-addkeyframeaftertransition
-                    - name: Método AddKeyframeAtOffset
+                    - name: AddKeyframeAtOffset (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-addkeyframeatoffset
-                    - name: Método AddTransition
+                    - name: AddTransition (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-addtransition
-                    - name: Método AddTransitionAtKeyframe
+                    - name: AddTransitionAtKeyframe (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-addtransitionatkeyframe
                     - name: Método AddTransitionBetweenKeyframes
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-addtransitionbetweenkeyframes
-                    - name: Concluir (método)
+                    - name: Método Conclude
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-conclude
                     - name: Finish (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-finish
@@ -207,36 +207,36 @@
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-getelapsedtime
                     - name: GetStatus (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-getstatus
-                    - name: Método GetTag
+                    - name: GetTag (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-gettag
-                    - name: Método HoldVariable
+                    - name: HoldVariable (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-holdvariable
                     - name: Método RepeatBetweenKeyframes
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-repeatbetweenkeyframes
-                    - name: Método de programación
+                    - name: Schedule (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-schedule
-                    - name: Método SetLongestAcceptableDelay
+                    - name: SetLongestAcceptableDelay (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-setlongestacceptabledelay
-                    - name: Método SetStoryboardEventHandler
+                    - name: SetStoryboardEventHandler (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-setstoryboardeventhandler
-                    - name: Método SetTag
+                    - name: SetTag (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-settag
                 - name: IUIAnimationStoryboard2
                   href: /windows/desktop/api/uianimation/nn-uianimation-iuianimationstoryboard2
                   items:
                     - name: Abandon (método)
                       href: /windows/desktop/api/uianimation/nf-uianimation-iuianimationstoryboard2-abandon
-                    - name: Método AddKeyframeAfterTransition
+                    - name: AddKeyframeAfterTransition (método)
                       href: /windows/desktop/api/uianimation/nf-uianimation-iuianimationstoryboard2-addkeyframeaftertransition
-                    - name: Método AddKeyframeAtOffset
+                    - name: AddKeyframeAtOffset (método)
                       href: /windows/desktop/api/uianimation/nf-uianimation-iuianimationstoryboard2-addkeyframeatoffset
-                    - name: Método AddTransition
+                    - name: AddTransition (método)
                       href: /windows/desktop/api/uianimation/nf-uianimation-iuianimationstoryboard2-addtransition
-                    - name: Método AddTransitionAtKeyframe
+                    - name: AddTransitionAtKeyframe (método)
                       href: /windows/desktop/api/uianimation/nf-uianimation-iuianimationstoryboard2-addtransitionatkeyframe
                     - name: Método AddTransitionBetweenKeyframes
                       href: /windows/desktop/api/uianimation/nf-uianimation-iuianimationstoryboard2-addtransitionbetweenkeyframes
-                    - name: Concluir (método)
+                    - name: Método Conclude
                       href: /windows/desktop/api/uianimation/nf-uianimation-iuianimationstoryboard2-conclude
                     - name: Finish (método)
                       href: /windows/desktop/api/uianimation/nf-uianimation-iuianimationstoryboard2-finish
@@ -244,50 +244,50 @@
                       href: /windows/desktop/api/uianimation/nf-uianimation-iuianimationstoryboard2-getelapsedtime
                     - name: GetStatus (método)
                       href: /windows/desktop/api/uianimation/nf-uianimation-iuianimationstoryboard2-getstatus
-                    - name: Método GetTag
+                    - name: GetTag (método)
                       href: /windows/desktop/api/uianimation/nf-uianimation-iuianimationstoryboard2-gettag
-                    - name: Método HoldVariable
+                    - name: HoldVariable (método)
                       href: /windows/desktop/api/uianimation/nf-uianimation-iuianimationstoryboard2-holdvariable
                     - name: Método RepeatBetweenKeyframes
                       href: /windows/desktop/api/uianimation/nf-uianimation-iuianimationstoryboard2-repeatbetweenkeyframes
-                    - name: Método de programación
+                    - name: Schedule (método)
                       href: /windows/desktop/api/uianimation/nf-uianimation-iuianimationstoryboard2-schedule
-                    - name: Método SetSkipDuration
+                    - name: SetSkipDuration (método)
                       href: /windows/desktop/api/uianimation/nf-uianimation-iuianimationstoryboard2-setskipduration
-                    - name: Método SetLongestAcceptableDelay
+                    - name: SetLongestAcceptableDelay (método)
                       href: /windows/desktop/api/uianimation/nf-uianimation-iuianimationstoryboard2-setlongestacceptabledelay
-                    - name: Método SetStoryboardEventHandler
+                    - name: SetStoryboardEventHandler (método)
                       href: /windows/desktop/api/uianimation/nf-uianimation-iuianimationstoryboard2-setstoryboardeventhandler
-                    - name: Método SetTag
+                    - name: SetTag (método)
                       href: /windows/desktop/api/uianimation/nf-uianimation-iuianimationstoryboard2-settag
                 - name: IUIAnimationStoryboardEventHandler
                   href: /windows/desktop/api/UIAnimation/nn-uianimation-iuianimationstoryboardeventhandler
                   items:
                     - name: Método OnStoryboardStatusChanged
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboardeventhandler-onstoryboardstatuschanged
-                    - name: Método OnStoryboardUpdated
+                    - name: OnStoryboardUpdated (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboardeventhandler-onstoryboardupdated
                 - name: IUIAnimationStoryboardEventHandler2
                   href: /windows/desktop/api/UIAnimation/nn-uianimation-iuianimationstoryboardeventhandler2
                   items:
                     - name: Método OnStoryboardStatusChanged
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboardeventhandler2-onstoryboardstatuschanged
-                    - name: Método OnStoryboardUpdated
+                    - name: OnStoryboardUpdated (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboardeventhandler2-onstoryboardupdated
                 - name: IUIAnimationLoopIterationChangeHandler2
                   href: /windows/desktop/api/UIAnimation/nn-uianimation-iuianimationloopiterationchangehandler2
                   items:
-                    - name: Método OnLoopIterationChanged
+                    - name: OnLoopIterationChanged (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationloopiterationchangehandler2-onloopiterationchanged
                 - name: IUIAnimationPriorityComparison
                   href: /windows/desktop/api/UIAnimation/nn-uianimation-iuianimationprioritycomparison
                   items:
-                    - name: Método HasPriority
+                    - name: HasPriority (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationprioritycomparison-haspriority
                 - name: IUIAnimationPriorityComparison2
                   href: /windows/desktop/api/UIAnimation/nn-uianimation-iuianimationprioritycomparison2
                   items:
-                    - name: Método HasPriority
+                    - name: HasPriority (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationprioritycomparison2-haspriority
             - name: Interfaces de transición
               href: transition-interfaces.md
@@ -295,30 +295,30 @@
                 - name: IUIAnimationInterpolator
                   href: /windows/desktop/api/UIAnimation/nn-uianimation-iuianimationinterpolator
                   items:
-                    - name: Método GetDependencies
+                    - name: GetDependencies (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationinterpolator-getdependencies
-                    - name: Método GetDuration
+                    - name: GetDuration (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationinterpolator-getduration
-                    - name: Método GetFinalValue
+                    - name: GetFinalValue (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationinterpolator-getfinalvalue
                     - name: Método InterpolateValue
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationinterpolator-interpolatevalue
                     - name: Método InterpolateVelocity
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationinterpolator-interpolatevelocity
-                    - name: Método SetDuration
+                    - name: SetDuration (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationinterpolator-setduration
                     - name: Método SetInitialValueAndVelocity
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationinterpolator-setinitialvalueandvelocity
                 - name: IUIAnimationInterpolator2
                   href: /windows/desktop/api/UIAnimation/nn-uianimation-iuianimationinterpolator2
                   items:
-                    - name: Método GetDependencies
+                    - name: GetDependencies (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationinterpolator2-getdependencies
-                    - name: Método GetDimension
+                    - name: GetDimension (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationinterpolator2-getdimension
-                    - name: Método GetDuration
+                    - name: GetDuration (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationinterpolator2-getduration
-                    - name: Método GetFinalValue
+                    - name: GetFinalValue (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationinterpolator2-getfinalvalue
                     - name: Método GetPrimitiveInterpolation
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationinterpolator2-getprimitiveinterpolation
@@ -326,27 +326,27 @@
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationinterpolator2-interpolatevalue
                     - name: Método InterpolateVelocity
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationinterpolator2-interpolatevelocity
-                    - name: Método SetDuration
+                    - name: SetDuration (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationinterpolator2-setduration
                     - name: Método SetInitialValueAndVelocity
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationinterpolator2-setinitialvalueandvelocity
                 - name: IUIAnimationPrimitiveInterpolation
                   href: /windows/desktop/api/UIAnimation/nn-uianimation-iuianimationprimitiveinterpolation
                   items:
-                    - name: Método AddCubic
+                    - name: AddCubic (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationprimitiveinterpolation-addcubic
                     - name: Método AddSinusoidal
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationprimitiveinterpolation-addsinusoidal
                 - name: IUIAnimationTransition
                   href: /windows/desktop/api/UIAnimation/nn-uianimation-iuianimationtransition
                   items:
-                    - name: Método GetDuration
+                    - name: GetDuration (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransition-getduration
                     - name: Método IsDurationKnown
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransition-isdurationknown
                     - name: Método SetInitialValue
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransition-setinitialvalue
-                    - name: Método SetInitialVelocity
+                    - name: SetInitialVelocity (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransition-setinitialvelocity
                 - name: IUIAnimationTransition2
                   href: /windows/desktop/api/UIAnimation/nn-uianimation-iuianimationtransition2
@@ -357,173 +357,173 @@
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransition2-setinitialvectorvelocity
                     - name: Método IsDurationKnown
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransition2-isdurationknown
-                    - name: Método GetDuration
+                    - name: GetDuration (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransition2-getduration
-                    - name: Método GetDimension
+                    - name: GetDimension (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransition2-getdimension
                     - name: Método SetInitialValue
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransition2-setinitialvalue
-                    - name: Método SetInitialVelocity
+                    - name: SetInitialVelocity (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransition2-setinitialvelocity
                 - name: IUIAnimationTransitionFactory
                   href: /windows/desktop/api/UIAnimation/nn-uianimation-iuianimationtransitionfactory
                   items:
-                    - name: Método CreateTransition
+                    - name: CreateTransition (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionfactory-createtransition
                 - name: IUIAnimationTransitionFactory2
                   href: /windows/desktop/api/UIAnimation/nn-uianimation-iuianimationtransitionfactory2
                   items:
-                    - name: Método CreateTransition
+                    - name: CreateTransition (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionfactory2-createtransition
                 - name: IUIAnimationTransitionLibrary
                   href: /windows/desktop/api/UIAnimation/nn-uianimation-iuianimationtransitionlibrary
                   items:
-                    - name: Método CreateAccelerateDecelerateTransition
+                    - name: CreateAccelerateDecelerateTransition (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary-createacceleratedeceleratetransition
-                    - name: Método CreateConstantTransition
+                    - name: CreateConstantTransition (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary-createconstanttransition
-                    - name: Método CreateCubicTransition
+                    - name: CreateCubicTransition (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary-createcubictransition
-                    - name: Método CreateDiscreteTransition
+                    - name: CreateDiscreteTransition (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary-creatediscretetransition
-                    - name: Método CreateInstantaneousTransition
+                    - name: CreateInstantaneousTransition (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary-createinstantaneoustransition
-                    - name: Método CreateLinearTransition
+                    - name: CreateLinearTransition (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary-createlineartransition
-                    - name: Método CreateLinearTransitionFromSpeed
+                    - name: CreateLinearTransitionFromSpeed (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary-createlineartransitionfromspeed
-                    - name: Método CreateSmoothStopTransition
+                    - name: CreateSmoothStopTransition (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary-createsmoothstoptransition
-                    - name: Método CreateParabolicTransitionFromAcceleration
+                    - name: CreateParabolicTransitionFromAcceleration (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary-createparabolictransitionfromacceleration
-                    - name: Método CreateReversalTransition
+                    - name: CreateReversalTransition (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary-createreversaltransition
-                    - name: Método CreateSinusoidalTransitionFromRange
+                    - name: CreateSinusoidalTransitionFromRange (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary-createsinusoidaltransitionfromrange
-                    - name: Método CreateSinusoidalTransitionFromVelocity
+                    - name: CreateSinusoidalTransitionFromVelocity (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary-createsinusoidaltransitionfromvelocity
                 - name: IUIAnimationTransitionLibrary2
                   href: /windows/desktop/api/UIAnimation/nn-uianimation-iuianimationtransitionlibrary2
                   items:
-                    - name: Método CreateAccelerateDecelerateTransition
+                    - name: CreateAccelerateDecelerateTransition (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary2-createacceleratedeceleratetransition
-                    - name: Método CreateConstantTransition
+                    - name: CreateConstantTransition (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary2-createconstanttransition
-                    - name: Método CreateCubicBezierLinearTransition
+                    - name: CreateCubicBezierLinearTransition (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary2-createcubicbezierlineartransition
-                    - name: Método CreateCubicBezierLinearVectorTransition
+                    - name: CreateCubicBezierLinearVectorTransition (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary2-createcubicbezierlinearvectortransition
-                    - name: Método CreateCubicTransition
+                    - name: CreateCubicTransition (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary2-createcubictransition
-                    - name: Método CreateCubicVectorTransition
+                    - name: CreateCubicVectorTransition (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary2-createcubicvectortransition
-                    - name: Método CreateDiscreteTransition
+                    - name: CreateDiscreteTransition (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary2-creatediscretetransition
-                    - name: Método CreateDiscreteVectorTransition
+                    - name: CreateDiscreteVectorTransition (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary2-creatediscretevectortransition
-                    - name: Método CreateInstantaneousTransition
+                    - name: CreateInstantaneousTransition (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary2-createinstantaneoustransition
-                    - name: Método CreateInstantaneousVectorTransition
+                    - name: CreateInstantaneousVectorTransition (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary2-createinstantaneousvectortransition
-                    - name: Método CreateLinearTransition
+                    - name: CreateLinearTransition (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary2-createlineartransition
-                    - name: Método CreateLinearVectorTransition
+                    - name: CreateLinearVectorTransition (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary2-createlinearvectortransition
-                    - name: Método CreateLinearTransitionFromSpeed
+                    - name: CreateLinearTransitionFromSpeed (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary2-createlineartransitionfromspeed
-                    - name: Método CreateLinearVectorTransitionFromSpeed
+                    - name: CreateLinearVectorTransitionFromSpeed (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary2-createlinearvectortransitionfromspeed
-                    - name: Método CreateParabolicTransitionFromAcceleration
+                    - name: CreateParabolicTransitionFromAcceleration (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary2-createparabolictransitionfromacceleration
-                    - name: Método CreateReversalTransition
+                    - name: CreateReversalTransition (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary2-createreversaltransition
-                    - name: Método CreateSinusoidalTransitionFromRange
+                    - name: CreateSinusoidalTransitionFromRange (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary2-createsinusoidaltransitionfromrange
-                    - name: Método CreateSinusoidalTransitionFromVelocity
+                    - name: CreateSinusoidalTransitionFromVelocity (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary2-createsinusoidaltransitionfromvelocity
-                    - name: Método CreateSmoothStopTransition
+                    - name: CreateSmoothStopTransition (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtransitionlibrary2-createsmoothstoptransition
                 - name: IUIAnimationVariable
                   href: /windows/desktop/api/UIAnimation/nn-uianimation-iuianimationvariable
                   items:
-                    - name: Método GetCurrentStoryboard
+                    - name: GetCurrentStoryboard (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable-getcurrentstoryboard
-                    - name: Método GetFinalIntegerValue
+                    - name: GetFinalIntegerValue (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable-getfinalintegervalue
-                    - name: Método GetFinalValue
+                    - name: GetFinalValue (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable-getfinalvalue
-                    - name: Método GetIntegerValue
+                    - name: GetIntegerValue (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable-getintegervalue
-                    - name: Método GetPreviousIntegerValue
+                    - name: GetPreviousIntegerValue (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable-getpreviousintegervalue
-                    - name: Método GetPreviousValue
+                    - name: GetPreviousValue (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable-getpreviousvalue
-                    - name: Método GetTag
+                    - name: GetTag (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable-gettag
                     - name: Método GetValue
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable-getvalue
-                    - name: Método SetLowerBound
+                    - name: SetLowerBound (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable-setlowerbound
-                    - name: Método SetRoundingMode
+                    - name: SetRoundingMode (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable-setroundingmode
-                    - name: Método SetTag
+                    - name: SetTag (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable-settag
-                    - name: Método SetUpperBound
+                    - name: SetUpperBound (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable-setupperbound
-                    - name: Método SetVariableChangeHandler
+                    - name: SetVariableChangeHandler (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable-setvariablechangehandler
                     - name: Método SetVariableIntegerChangeHandler
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable-setvariableintegerchangehandler
                 - name: IUIAnimationVariable2
                   href: /windows/desktop/api/UIAnimation/nn-uianimation-iuianimationvariable2
                   items:
-                    - name: Método GetCurrentStoryboard
+                    - name: GetCurrentStoryboard (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable2-getcurrentstoryboard
-                    - name: Método GetCurve
+                    - name: GetCurve (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable2-getcurve
-                    - name: Método GetDimension
+                    - name: GetDimension (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable2-getdimension
-                    - name: Método GetFinalIntegerValue
+                    - name: GetFinalIntegerValue (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable2-getfinalintegervalue
-                    - name: Método GetFinalIntegerVectorValue
+                    - name: GetFinalIntegerVectorValue (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable2-getfinalintegervectorvalue
-                    - name: Método GetFinalVectorValue
+                    - name: GetFinalVectorValue (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable2-getfinalvectorvalue
-                    - name: Método GetFinalValue
+                    - name: GetFinalValue (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable2-getfinalvalue
-                    - name: Método GetIntegerValue
+                    - name: GetIntegerValue (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable2-getintegervalue
-                    - name: Método GetIntegerVectorValue
+                    - name: GetIntegerVectorValue (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable2-getintegervectorvalue
-                    - name: Método GetPreviousIntegerValue
+                    - name: GetPreviousIntegerValue (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable2-getpreviousintegervalue
                     - name: Método GetPreviousIntegerVectorValue
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable2-getpreviousintegervectorvalue
-                    - name: Método GetPreviousValue
+                    - name: GetPreviousValue (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable2-getpreviousvalue
-                    - name: Método GetPreviousVectorValue
+                    - name: GetPreviousVectorValue (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable2-getpreviousvectorvalue
-                    - name: Método GetTag
+                    - name: GetTag (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable2-gettag
                     - name: Método GetValue
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable2-getvalue
-                    - name: Método GetVectorCurve
+                    - name: GetVectorCurve (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable2-getvectorcurve
-                    - name: Método GetVectorValue
+                    - name: GetVectorValue (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable2-getvectorvalue
-                    - name: Método SetLowerBound
+                    - name: SetLowerBound (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable2-setlowerbound
-                    - name: Método SetLowerBoundVector
+                    - name: SetLowerBoundVector (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable2-setlowerboundvector
-                    - name: Método SetRoundingMode
+                    - name: SetRoundingMode (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable2-setroundingmode
-                    - name: Método SetTag
+                    - name: SetTag (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable2-settag
-                    - name: Método SetUpperBound
+                    - name: SetUpperBound (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable2-setupperbound
-                    - name: Método SetUpperBoundVector
+                    - name: SetUpperBoundVector (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable2-setupperboundvector
-                    - name: Método SetVariableChangeHandler
+                    - name: SetVariableChangeHandler (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable2-setvariablechangehandler
                     - name: Método SetVariableCurveChangeHandler
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable2-setvariablecurvechangehandler
@@ -532,29 +532,29 @@
                 - name: IUIAnimationVariableChangeHandler
                   href: /windows/desktop/api/UIAnimation/nn-uianimation-iuianimationvariablechangehandler
                   items:
-                    - name: Método OnValueChanged
+                    - name: OnValueChanged (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariablechangehandler-onvaluechanged
                 - name: IUIAnimationVariableChangeHandler2
                   href: /windows/desktop/api/UIAnimation/nn-uianimation-iuianimationvariablechangehandler2
                   items:
-                    - name: Método OnValueChanged
+                    - name: OnValueChanged (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariablechangehandler2-onvaluechanged
                 - name: IUIAnimationVariableIntegerChangeHandler
                   href: /windows/desktop/api/UIAnimation/nn-uianimation-iuianimationvariableintegerchangehandler
                   items:
-                    - name: Método OnIntegerValueChanged
+                    - name: OnIntegerValueChanged (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariableintegerchangehandler-onintegervaluechanged
                 - name: IUIAnimationVariableIntegerChangeHandler2
                   href: /windows/desktop/api/UIAnimation/nn-uianimation-iuianimationvariableintegerchangehandler2
                   items:
-                    - name: Método OnIntegerValueChanged
+                    - name: OnIntegerValueChanged (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariableintegerchangehandler2-onintegervaluechanged
                 - name: IUIAnimationVariableCurveChangeHandler2
                   href: /windows/desktop/api/UIAnimation/nn-uianimation-iuianimationvariablecurvechangehandler2
                   items:
-                    - name: Método OnCurveChanged
+                    - name: OnCurveChanged (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariablecurvechangehandler2-oncurvechanged
-            - name: Interfaces del temporizador de animación
+            - name: Interfaces de temporizador de animación
               href: animation-timer-interfaces.md
               items:
                 - name: IUIAnimationTimer
@@ -570,21 +570,21 @@
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtimer-isenabled
                     - name: Método SetFrameRateThreshold
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtimer-setframeratethreshold
-                    - name: Método SetTimerEventHandler
+                    - name: SetTimerEventHandler (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtimer-settimereventhandler
-                    - name: Método SetTimerUpdateHandler
+                    - name: SetTimerUpdateHandler (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtimer-settimerupdatehandler
                 - name: IUIAnimationTimerClientEventHandler
                   href: /windows/desktop/api/UIAnimation/nn-uianimation-iuianimationtimerclienteventhandler
                   items:
-                    - name: Método OnTimerClientStatusChanged
+                    - name: OnTimerClientStatusChanged (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtimerclienteventhandler-ontimerclientstatuschanged
                 - name: IUIAnimationTimerEventHandler
                   href: /windows/desktop/api/UIAnimation/nn-uianimation-iuianimationtimereventhandler
                   items:
-                    - name: Método OnPostUpdate
+                    - name: OnPostUpdate (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtimereventhandler-onpostupdate
-                    - name: Método OnPreUpdate
+                    - name: OnPreUpdate (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtimereventhandler-onpreupdate
                     - name: Método OnRenderingTooSlow
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtimereventhandler-onrenderingtooslow
@@ -593,11 +593,11 @@
                   items:
                     - name: Método ClearTimerClientEventHandler
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtimerupdatehandler-cleartimerclienteventhandler
-                    - name: Método Update
+                    - name: OnUpdate (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtimerupdatehandler-onupdate
-                    - name: Método SetTimerClientEventHandler
+                    - name: SetTimerClientEventHandler (método)
                       href: /windows/desktop/api/UIAnimation/nf-uianimation-iuianimationtimerupdatehandler-settimerclienteventhandler
-        - name: de la empresa
+        - name: Objetos
           href: '-objects-main.md'
           items:
             - name: UIAnimationManager
@@ -614,20 +614,20 @@
               href: /previous-versions/windows/desktop/legacy/dd317028(v=vs.85)
             - name: UIAnimationTransitionLibrary2
               href: /previous-versions/windows/desktop/legacy/hh448668(v=vs.85)
-        - name: Códigos de error de animación de Windows
+        - name: Windows Códigos de error de animación
           href: uianimation-error-codes.md
-    - name: Ejemplos de animación de Windows
+    - name: Windows Ejemplos de animación
       href: windows-animation-samples.md
       items:
-        - name: Ejemplo de animación Application-Driven
+        - name: Application-Driven de animación
           href: application-driven-animation-sample.md
-        - name: Ejemplo de animación Timer-Driven
+        - name: Timer-Driven de animación
           href: timer-driven-animation-sample.md
         - name: Ejemplo de interpolador personalizado
           href: custom-interpolator-sample.md
         - name: Ejemplo de diseño de cuadrícula
           href: grid-layout-sample.md
-        - name: Ejemplo de comparación de prioridades
+        - name: Ejemplo de comparación de prioridad
           href: priority-comparison-sample.md
-    - name: Glosario de animaciones de Windows
+    - name: Windows Glosario de animación
       href: '-ui-animation-glossary.md'

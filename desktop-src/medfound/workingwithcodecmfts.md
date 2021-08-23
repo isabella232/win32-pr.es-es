@@ -1,29 +1,29 @@
 ---
-description: Trabajar con códec MFTs
+description: Trabajar con codec MFT
 ms.assetid: 61567043-e76e-4166-9344-c57661e5752a
-title: Trabajar con códec MFTs
+title: Trabajar con codec MFT
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 008610dbf6bf17205de15b89440d1bdacee3c489
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bf39b4a413059542ff05dd0fb2e82c3a89117018ba68f489a968c85423e82866
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119602215"
 ---
-# <a name="working-with-codec-mfts"></a>Trabajar con códec MFTs
+# <a name="working-with-codec-mfts"></a>Trabajar con codec MFT
 
-En esta sección se proporciona información general sobre los aspectos básicos del trabajo con códecs como transformaciones de Media Foundation (MFTs). Incluye los temas siguientes.
+En esta sección se proporciona información general sobre los conceptos básicos del trabajo con códecs como Media Foundation transformaciones (MTA). Incluye los temas siguientes.
 
 
 
 | Sección                                                                                | Descripción                                                                        |
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [Crear instancias del códec MFTs](instantiatingcodecmfts.md)                                 | Explica cómo crear instancias del códec DirectX media Objects (MFTs).        |
-| [Trabajar con tipos de medios de MFT](workingwithmftmediatypes.md)                           | Describe las estructuras utilizadas por el códec MFTs para describir los tipos de medios.  |
-| [Trabajar con ejemplos y búferes de medios de MFT](workingwithmftmediabuffersandsamples.md) | Describe los búferes que se deben crear para procesar ejemplos con el códec MFTs. |
-| [Configuración de códecs MFTs](configuringcodecmfts.md)                                     | Describe la secuencia para configurar el códec MFTs.                             |
-| [Procesamiento de entrada y salida de MFT de códecs](processingcodecmftinputandoutput.md)          | Describe cómo procesar entradas y salidas mediante el códec MFTs.               |
+| [Creación de instancias de codec MFT](instantiatingcodecmfts.md)                                 | Explica cómo crear instancias del códec DirectX Media Objects (MFT).        |
+| [Trabajar con tipos de medios MFT](workingwithmftmediatypes.md)                           | Describe las estructuras usadas por los códecs de códec para describir los tipos de medios.  |
+| [Trabajar con ejemplos y búferes multimedia de MFT](workingwithmftmediabuffersandsamples.md) | Describe los búferes que debe crear para procesar ejemplos con los códecs MFT. |
+| [Configuración de las MTO de códec](configuringcodecmfts.md)                                     | Describe la secuencia para configurar las MTO de códec.                             |
+| [Entrada y salida de MFT del códec de procesamiento](processingcodecmftinputandoutput.md)          | Describe cómo procesar entradas y salidas mediante el códec MFT.               |
 
 
 

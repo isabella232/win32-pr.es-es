@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: API. JetGetLogInfoInstance (método)'
-title: Método API. JetGetLogInfoInstance
+description: Más información sobre el método Api.JetGetLogInfoInstance
+title: Método Api.JetGetLogInfoInstance
 TOCTitle: 'JetGetLogInfoInstance method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetGetLogInfoInstance(Microsoft.Isam.Esent.Interop.JET_INSTANCE,System.String@,System.Int32,System.Int32@)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetgetloginfoinstance(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 85e252b74c47d3274fc83af59e3fb571906219fa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 044e3a214a520ecb331956108eb83449b689decbd995f4b5b9330fdef6729a53
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105652389"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119670375"
 ---
-# <a name="apijetgetloginfoinstance-method"></a>Método API. JetGetLogInfoInstance
+# <a name="apijetgetloginfoinstance-method"></a>Método Api.JetGetLogInfoInstance
 
-Se usa durante una copia de seguridad iniciada por [JetBeginExternalBackupInstance (JET_INSTANCE, BeginExternalBackupGrbit)](./api.jetbeginexternalbackupinstance-method.md) para consultar a una instancia los nombres de los archivos de revisión de la base de datos y los archivos de registro que deben formar parte del conjunto de archivos de copia de seguridad. Estos archivos se pueden abrir posteriormente con [JetOpenFileInstance (JET_INSTANCE, String, JET_HANDLE, Int64, Int64)](./api.jetopenfileinstance-method.md) y leer mediante [JetReadFileInstance (JET_INSTANCE, JET_HANDLE, \[ \] , Int32, Int32)](./api.jetreadfileinstance-method.md).
+Se usa durante una copia de seguridad iniciada por [JetBeginExternalBackupInstance(JET_INSTANCE, BeginExternalBackupGrbit)](./api.jetbeginexternalbackupinstance-method.md) para consultar una instancia de los nombres de los archivos de revisión de base de datos y los archivos de registro que deben formar parte del conjunto de archivos de copia de seguridad. Estos archivos se pueden abrir posteriormente mediante [JetOpenFileInstance(JET_INSTANCE, String, JET_HANDLE, Int64, Int64)](./api.jetopenfileinstance-method.md) y leer con [JetReadFileInstance(JET_INSTANCE, JET_HANDLE, \[ \] , Int32, Int32).](./api.jetreadfileinstance-method.md)
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -68,41 +68,41 @@ public static void JetGetLogInfoInstance(
 #### <a name="parameters"></a>Parámetros
 
   - instance  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
     
-    Instancia para la que se va a obtener información.
+    Instancia de para la que se obtiene la información.
 
 <!-- end list -->
 
   - files  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
-    Devuelve una lista de cadenas terminadas en null que describen el conjunto de archivos de revisión de la base de datos y los archivos de registro que deben formar parte del conjunto de archivos de copia de seguridad. La lista de cadenas devueltas en este búfer está en el mismo formato que una cadena múltiple utilizada por el registro. Cada cadena terminada en NULL se devuelve en secuencia seguida de un terminador nulo final.
+    Devuelve una lista de cadenas terminadas en NULL que describen el conjunto de archivos de revisión de base de datos y los archivos de registro que deben formar parte del conjunto de archivos de copia de seguridad. La lista de cadenas devueltas en este búfer tiene el mismo formato que una cadena múltiple utilizada por el Registro. Cada cadena terminada en NULL se devuelve en secuencia seguida de un terminador null final.
 
 <!-- end list -->
 
   - maxChars  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Número máximo de caracteres que se van a recuperar.
+    Número máximo de caracteres que se recuperarán.
 
 <!-- end list -->
 
   - actualChars  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Tamaño real de la lista de archivos. Si es mayor que maxChars, la lista se ha truncado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Es importante tener en cuenta que esta API no devuelve un error o ADVERTENCIA Si el búfer de salida es demasiado pequeño para aceptar la lista completa de archivos que deben formar parte del conjunto de archivos de copia de seguridad.
+Es importante tener en cuenta que esta API no devuelve un error o una advertencia si el búfer de salida es demasiado pequeño para aceptar la lista completa de archivos que deben formar parte del conjunto de archivos de copia de seguridad.
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase de API](./api-class.md)
+[Api (clase)](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

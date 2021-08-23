@@ -1,11 +1,11 @@
 ---
-title: External. Buy (método)
-description: Tenga en cuenta que en este tema se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea. El método Buy inicia la compra de un conjunto de elementos multimedia.
+title: Método External.buy
+description: Nota En este tema se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea. El método de compra inicia la compra de un conjunto de elementos multimedia.
 ms.assetid: 78496de6-214e-4712-8fbc-11e002adce88
 keywords:
-- comprar método Media Player Windows
-- método Buy Windows Media Player, clase externa
-- Clase externa Windows Media Player, método Buy
+- comprar método Reproductor de Windows Media
+- método buy Reproductor de Windows Media , Clase externa
+- Clase externa Reproductor de Windows Media , método buy
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a5ffee188372e33ed4ceadf1bb1ee2ea0f986207
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 16acc578d18c2a93118e1d7aa55b0fdcbe474a8698a0982ef8c2df7edb3802ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699763"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119649525"
 ---
-# <a name="externalbuy-method"></a>External. Buy (método)
+# <a name="externalbuy-method"></a>Método External.buy
 
 > [!Note]  
-> En este tema se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
+> En este tema se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
 
  
 
-El método **Buy** inicia la compra de un conjunto de elementos multimedia.
+El **método de** compra inicia la compra de un conjunto de elementos multimedia.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,10 +48,10 @@ External.buy(
 
 <dl> <dt>
 
-*ViewType* \[ de\]
+*ViewType* \[ En\]
 </dt> <dd>
 
-**Cadena** que especifica el tipo de elemento que se va a adquirir. El autor de la llamada debe establecer este parámetro en una de las siguientes [constantes de ubicación de biblioteca](library-location-constants.md):
+**Cadena** que especifica el tipo de elemento que se va a comprar. El autor de la llamada debe establecer este parámetro en una de las siguientes constantes [de ubicación de biblioteca:](library-location-constants.md)
 
 CPListID
 
@@ -61,10 +61,10 @@ CPAlbumID
 
 </dd> <dt>
 
-*Viewid controles* \[ de\]
+*ViewIDs* \[ En\]
 </dt> <dd>
 
-**Cadena** que contiene los identificadores, delimitados por punto y coma, de los elementos que se van a adquirir.
+**Cadena** que contiene los identificadores, delimitados por punto y coma, de los artículos que se comprarán.
 
 </dd> </dl>
 
@@ -78,7 +78,7 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 11.<br/>                                                |
+| Versión<br/> | Reproductor de Windows Media 11.<br/>                                                |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -87,13 +87,13 @@ Este método no devuelve ningún valor.
 
 <dl> <dt>
 
-[**Objeto externo para las tiendas en línea de tipo 1**](external-object-for-type-1-online-stores.md)
+[**Objeto externo para almacenes en línea de tipo 1**](external-object-for-type-1-online-stores.md)
 </dt> <dt>
 
-[**External. download**](external-download.md)
+[**External.download**](external-download.md)
 </dt> <dt>
 
-[**IWMPContentPartner:: Buy**](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartner-buy)
+[**IWMPContentPartner::Buy**](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartner-buy)
 </dt> <dt>
 
 [**Compra de contenido multimedia**](purchasing-media-content.md)

@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXSHPRTCompSplitMeshSC: se usa con los resultados comprimidos de la versión de vértice del simulador de transferencia de radiaciones precalciadas (PRT).'
+description: 'Función D3DXSHPRTCompSplitMeshSC: se usa con resultados comprimidos de la versión de vértice del simulador de transferencia de radiancia precalciados (PRT).'
 ms.assetid: 10d81920-2a1b-42fa-aabe-7d6b504f4d36
 title: Función D3DXSHPRTCompSplitMeshSC (D3DX9Mesh.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e51a86ec9b12992d49364d3a7c614751dacafac3
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 14b138ae4c1b61b70147726d1a320e8dca1c0a57ffb11dd742419a46f9d131b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119630875"
 ---
 # <a name="d3dxshprtcompsplitmeshsc-function"></a>Función D3DXSHPRTCompSplitMeshSC
 
-Se usa con resultados comprimidos de la versión de vértice del simulador de transferencia de radiancia precalutada (PRT). Después de llamar a [**D3DXSHPRTCompSuperCluster,**](d3dxshprtcompsupercluster.md) esta función se puede usar para dividir la malla en un grupo de caras o vértices por superclúster. Cada superc cluster contiene todas las caras que contienen cualquier vértice clasificado en uno de sus clústeres. Todos los vértices conectados a este conjunto de caras también se incluyen con la matriz ppVertStatus devuelta que indica si el vértice pertenece o no al super clúster.
+Se usa con resultados comprimidos de la versión de vértice del simulador de transferencia de radiancia precalcalada (PRT). Después de llamar a [**D3DXSHPRTCompSuperCluster,**](d3dxshprtcompsupercluster.md) esta función se puede usar para dividir la malla en un grupo de caras o vértices por superclúster. Cada superc cluster contiene todas las caras que contienen cualquier vértice clasificado en uno de sus clústeres. Todos los vértices conectados a este conjunto de caras también se incluyen con la matriz devuelta ppVertStatus que indica si el vértice pertenece o no al supercluido.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,12 +55,12 @@ HRESULT D3DXSHPRTCompSplitMeshSC(
 
 <dl> <dt>
 
-*pClusterIDs* \[ En\]
+*pClusterID* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-*Los IDs de clúster NumVertices* (extraídos de un búfer comprimido).
+*Los IDs de* clúster de NumVertices (extraídos de un búfer comprimido).
 
 </dd> <dt>
 
@@ -82,12 +82,12 @@ Número de clústeres (parámetro de entrada a compresión).
 
 </dd> <dt>
 
-*pSClusterIDs* \[ En\]
+*pSClusterID* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Matriz de *numcs de tamaño* que contendrá los valores de super cluster ID.
+Matriz de *numcs de tamaño* que contendrá los valores de supercronía.
 
 </dd> <dt>
 
@@ -168,7 +168,7 @@ Asignación de cada cara de *ppIBData* a caras originales. La longitud \* *es pI
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Nueva estructura de datos de vértices. Tamaño de *pVertDataLength.*
+Nueva estructura de datos de vértices. Tamaño *de pVertDataLength.*
 
 </dd> <dt>
 
@@ -177,7 +177,7 @@ Nueva estructura de datos de vértices. Tamaño de *pVertDataLength.*
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Número de nuevos vértices en malla dividida. Se asigna en la función .
+Número de nuevos vértices en malla dividida. Asignado en la función .
 
 </dd> <dt>
 
@@ -216,7 +216,7 @@ Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

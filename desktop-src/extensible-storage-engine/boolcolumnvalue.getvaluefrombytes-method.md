@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: BoolColumnValue. GetValueFromBytes (método)'
-title: BoolColumnValue. GetValueFromBytes, método
+description: Más información sobre el método BoolColumnValue.GetValueFromBytes
+title: Método BoolColumnValue.GetValueFromBytes
 TOCTitle: 'GetValueFromBytes method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.BoolColumnValue.GetValueFromBytes(System.Byte[],System.Int32,System.Int32,System.Int32)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.boolcolumnvalue.getvaluefrombytes(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a0d4f41995525632f582cf89709076f60cdd6181
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 44fddd0e9eee1ce593b5ac8cb7cb2ca0efcabb2d48e7e614f1ed2d100ad38c8d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278751"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119670075"
 ---
-# <a name="boolcolumnvaluegetvaluefrombytes-method"></a>BoolColumnValue. GetValueFromBytes, método
+# <a name="boolcolumnvaluegetvaluefrombytes-method"></a>Método BoolColumnValue.GetValueFromBytes
 
 Dados los datos recuperados de ESENT, descodifique los datos y establezca el valor en el objeto ColumnValue.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -70,30 +70,30 @@ protected override void GetValueFromBytes(
 #### <a name="parameters"></a>Parámetros
 
   - value  
-    Automáticamente \[\]  
+    Tipo: \[\]  
     
     Matriz de bytes.
 
 <!-- end list -->
 
   - startIndex  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Posición inicial dentro de los bytes.
 
 <!-- end list -->
 
-  - count  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+  - recuento  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Número de bytes que se van a descodificar.
 
 <!-- end list -->
 
   - err  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Error devuelto desde ESENT.
+    Error devuelto de ESENT.
 
 ## <a name="see-also"></a>Vea también
 
@@ -101,6 +101,6 @@ protected override void GetValueFromBytes(
 
 [Clase BoolColumnValue](./boolcolumnvalue-class.md)
 
-[Miembros de BoolColumnValue](./boolcolumnvalue-members.md)
+[Miembros BoolColumnValue](./boolcolumnvalue-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

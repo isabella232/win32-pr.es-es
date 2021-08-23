@@ -1,39 +1,39 @@
 ---
-title: Tipos de datos de salida MIDI
-description: Tipos de datos de salida MIDI
+title: Tipos de datos de salida DE MIDI
+description: Tipos de datos de salida DE MIDI
 ms.assetid: d0cb0614-e979-4b9f-81ce-13457fdde906
 keywords:
-- Interfaz digital de instrumentos musicales (MIDI), tipos de datos de salida
-- MIDI (interfaz digital de instrumentos musicales), tipos de datos de salida
+- Interfaz digital instrumentable (MIDI), tipos de datos de salida
+- MIDI (Interfaz digital de instrumentar música), tipos de datos de salida
 - reproducir archivos MIDI, tipos de datos de salida
-- Tipos de datos de salida MIDI
-- MIDIHDR, tipo de datos
-- MIDIOUTCAPS, tipo de datos
+- Tipos de datos de salida DE MIDI
+- Tipo de datos MIDIHDR
+- Tipo de datos MIDIOUTCAPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e57911800e0d45c1db515e5b57045aae3856732c
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 8ba36163eb8074386f0f1fc573a123d4ef64271a8661ea42d521ab5b1b4c9aa9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103790894"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119525105"
 ---
-# <a name="midi-output-data-types"></a>Tipos de datos de salida MIDI
+# <a name="midi-output-data-types"></a>Tipos de datos de salida DE MIDI
 
 Windows define los siguientes tipos de datos para las funciones de salida de MIDI.
 
 
 
-| Value                              | Significado                                                                              |
+| Valor                              | Significado                                                                              |
 |------------------------------------|--------------------------------------------------------------------------------------|
-| **HMIDIOUT**                       | Identificador de un dispositivo de salida MIDI.                                                      |
-| [**MIDIHDR**](/windows/win32/api/mmeapi/ns-mmeapi-midihdr)         | Encabezado para un bloque de datos exclusivos del sistema MIDI o de secuencia.                          |
-| [**MIDIOUTCAPS**](/windows/win32/api/mmeapi/ns-mmeapi-midioutcaps) | Estructura usada para consultar las capacidades de un dispositivo de salida MIDI determinado. |
+| **HMIDIOUT**                       | Identificador de un dispositivo de salida DE MIDI.                                                      |
+| [**MIDIHDR**](/windows/win32/api/mmeapi/ns-mmeapi-midihdr)         | Encabezado para un bloque de datos de flujo o exclusivos del sistema DE LÍNEA.                          |
+| [**MIDIOUTCAPS**](/windows/win32/api/mmeapi/ns-mmeapi-midioutcaps) | Estructura que se usa para consultar las funcionalidades de un dispositivo de salida DE MIDI determinado. |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 

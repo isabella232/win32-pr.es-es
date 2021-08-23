@@ -1,7 +1,7 @@
 ---
-description: 'El método BeginFlush inicia una operación de vaciado. Este método invalida el método CBaseInputPin:: BeginFlush.'
+description: El método BeginFlush comienza una operación de vaciado. Este método invalida el método CBaseInputPin::BeginFlush.
 ms.assetid: c41260d3-04b2-47dd-96e6-675f000c4e3b
-title: Método CRendererInputPin. BeginFlush (Renbase. h)
+title: Método CRendererInputPin.BeginFlush (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 422ab72a0823e3bd1a014aca3aaed51858fdb8a3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 49464f9590741d6713befb306d53473d62ca0d12ab1b7e87872ccd03177f63cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660689"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119687735"
 ---
-# <a name="crendererinputpinbeginflush-method"></a>CRendererInputPin. BeginFlush, método
+# <a name="crendererinputpinbeginflush-method"></a>Método CRendererInputPin.BeginFlush
 
-El `BeginFlush` método inicia una operación de vaciado. Este método invalida el método [**CBaseInputPin:: BeginFlush**](cbaseinputpin-beginflush.md) .
+El `BeginFlush` método comienza una operación de vaciado. Este método invalida el [**método CBaseInputPin::BeginFlush.**](cbaseinputpin-beginflush.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve un valor **HRESULT** .
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve un valor **HRESULT** .
 
 <dl> <dt>
 
-[**Clase CRendererInputPin**](crendererinputpin.md)
+[**CRendererInputPin (clase)**](crendererinputpin.md)
 </dt> </dl>
 
  
