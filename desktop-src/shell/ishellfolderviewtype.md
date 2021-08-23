@@ -1,6 +1,6 @@
 ---
-description: Expone métodos que permiten a una carpeta de Shell admitir vistas diferentes en su contenido (diferentes diseños jerárquicos de sus datos).
-title: Interfaz IShellFolderViewType
+description: Expone métodos que permiten que una carpeta de Shell admita vistas diferentes en su contenido (diferentes diseños jerárquicos de sus datos).
+title: IShellFolderViewType (interfaz)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119714125"
 ---
-# <a name="ishellfolderviewtype-interface"></a>Interfaz IShellFolderViewType
+# <a name="ishellfolderviewtype-interface"></a>IShellFolderViewType (interfaz)
 
-Expone métodos que permiten a una carpeta de Shell admitir vistas diferentes en su contenido (diferentes diseños jerárquicos de sus datos).
+Expone métodos que permiten que una carpeta de Shell admita vistas diferentes en su contenido (diferentes diseños jerárquicos de sus datos).
 
 ## <a name="members"></a>Miembros
 
@@ -39,7 +39,7 @@ La **interfaz IShellFolderViewType** tiene estos métodos.
 | Método                                                                      | Descripción                                                                                                                                                          |
 |:----------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**EnumViews**](ishellfolderviewtype-enumviews.md)                         | Recupera un enumerador que devolverá un PIDL para cada vista extendida.<br/>                                                                                |
-| [**GetDefaultViewName**](ishellfolderviewtype-getdefaultviewname.md)       | Obtiene el nombre de la vista predeterminada. Llame [**a IShellFolder::GetDisplayNameOf para**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-getdisplaynameof) recuperar los nombres de las otras vistas.<br/> |
+| [**GetDefaultViewName**](ishellfolderviewtype-getdefaultviewname.md)       | Obtiene el nombre de la vista predeterminada. Llame [**a IShellFolder::GetDisplayNameOf**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-getdisplaynameof) para recuperar los nombres de las otras vistas.<br/> |
 | [**GetViewTypeProperties**](ishellfolderviewtype-getviewtypeproperties.md) | Obtiene las propiedades de la vista.<br/>                                                                                                                          |
 | [**TranslateViewPidl**](ishellfolderviewtype-translateviewpidl.md)         | Reconstruye un PIDL de una representación jerárquica de la carpeta Shell en una representación diferente.<br/>                                             |
 

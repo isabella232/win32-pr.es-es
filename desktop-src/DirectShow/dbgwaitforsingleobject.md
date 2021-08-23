@@ -49,7 +49,7 @@ DWORD DbgWaitForSingleObject(
 *h* 
 </dt> <dd>
 
-Identificador del objeto.
+Identificador del objeto .
 
 </dd> </dl>
 
@@ -64,7 +64,7 @@ Identificador del objeto.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

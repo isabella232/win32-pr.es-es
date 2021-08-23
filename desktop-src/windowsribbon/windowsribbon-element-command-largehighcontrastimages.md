@@ -51,7 +51,7 @@ No hay atributos.
 
 | Elemento                                                     |
 |-------------------------------------------------------------|
-| [**Get-Help**](windowsribbon-element-command.md)<br/> |
+| [**Comando**](windowsribbon-element-command.md)<br/> |
 
 
 
@@ -67,7 +67,7 @@ Los recursos de imagen deben cumplir el formato de gráfico estándar de mapa de
 
 En el ejemplo siguiente se muestra el marcado básico para [**SplitButton**](windowsribbon-element-splitbutton.md) con un [**elemento MenuGroup.**](windowsribbon-element-menugroup.md)
 
-En esta sección de código se muestran las declaraciones de los comandos [**SplitButton**](windowsribbon-element-splitbutton.md) y [**MenuGroup**](windowsribbon-element-menugroup.md) con recursos de imagen de contraste alto grandes y pequeños. También se [**declara**](windowsribbon-element-group.md) un grupo asociado que actúa como contenedor primario para el elemento **SplitButton.**
+En esta sección de código se muestran las [**declaraciones de**](windowsribbon-element-splitbutton.md) los comandos SplitButton y [**MenuGroup**](windowsribbon-element-menugroup.md) con recursos de imagen de contraste alto grandes y pequeños. También se [**declara**](windowsribbon-element-group.md) un grupo asociado que actúa como contenedor primario para el elemento **SplitButton.**
 
 
 ```XML
@@ -115,14 +115,14 @@ En esta sección de código se muestran las declaraciones de los comandos [**Spl
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

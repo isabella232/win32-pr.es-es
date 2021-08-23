@@ -364,7 +364,7 @@ Calificadores: **WmiDataId** (10), **InterfaceVersion** (2), **InterfaceRevision
 Indica cuántas colas se usan para VRSS/VMMQ.
 
 > [!Note]  
-> Esta propiedad se agregó en Windows 10 versión 1703 y Windows Server 2016.
+> Esta propiedad se agregó en Windows 10, versión 1703 y Windows Server 2016.
 
  
 
@@ -382,7 +382,7 @@ Tipo de acceso: lectura y escritura
 Calificadores: **WmiDataId** (4), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Identificador de cola de máquina virtual actual que se asigna al puerto. Esto es válido si **VMQOffloadUsage** no es cero.
+Identificador actual de la cola de máquinas virtuales que se asigna al puerto. Esto es válido si **VMQOffloadUsage** no es cero.
 
 </dd> <dt>
 
@@ -398,7 +398,7 @@ Tipo de acceso: lectura y escritura
 Calificadores: **WmiDataId** (3), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-La cola de máquina virtual (VMQ) actual descarga el uso.
+La cola de máquinas virtuales (VMQ) actual descarga el uso.
 
 </dd> <dt>
 
@@ -417,7 +417,7 @@ Calificadores: **WmiDataId** (8), **InterfaceVersion** (2), **InterfaceRevision*
 Indica si vRSS está activo.
 
 > [!Note]  
-> Esta propiedad se agregó en Windows 10 versión 1703.
+> Esta propiedad se agregó en Windows 10, versión 1703.
 
  
 
@@ -498,7 +498,7 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (12), **InterfaceVersion** (3), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica cómo las colas VRSS/VMMQ se dirige a distintos procesadores de host.
+Indica cómo las colas VRSS/VMMQ se dirige a diferentes procesadores host.
 
 > [!Note]  
 > Se ha agregado Windows 10, versión 1709.

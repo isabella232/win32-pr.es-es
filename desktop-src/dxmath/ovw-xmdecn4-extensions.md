@@ -1,22 +1,22 @@
 ---
-description: XMDECN4 describe un vector 4D para almacenar valores normalizados y firmados como componentes x, y y z con signo de 10 bits y un componente w-signed con signo de 2 bits.
+description: XMDECN4 describe un vector 4D para almacenar valores con firma y normalizados como componentes x-, y-y- con firma de 10 bits y un componente w de 2 bits con firma.
 ms.assetid: 7144ae8f-8c9d-41e6-8f75-6d388c3f297c
-title: Extensiones de XMDECN4
+title: Extensiones XMDECN4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b42df02919512c0ae881681d89493b262eeecc56
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 02296802a3e00d86205fb6a5e74479a7687558dbaa0bd4a8b7f96224704b6f5e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105720468"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119841655"
 ---
-# <a name="xmdecn4-extensions"></a>Extensiones de XMDECN4
+# <a name="xmdecn4-extensions"></a>Extensiones XMDECN4
 
-[**XMDECN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmdecn4) describe un vector 4D para almacenar valores normalizados y firmados como componentes x, y y z con signo de 10 bits y un componente w-signed con signo de 2 bits.
+[**XMDECN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmdecn4) describe un vector 4D para almacenar valores con firma y normalizados como componentes x-, y-y- con firma de 10 bits y un componente w de 2 bits con firma.
 
 > [!Note]  
-> Las características que se enumeran aquí solo están disponibles cuando se desarrollan con C++.
+> Las características enumeradas aquí solo están disponibles al desarrollar con C++.
 
  
 

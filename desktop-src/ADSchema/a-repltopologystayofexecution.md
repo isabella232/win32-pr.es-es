@@ -1,11 +1,11 @@
 ---
-title: REPL-topología-mantener el atributo de ejecución
+title: Atributo Repl-Topology-Stay-Of-Execution
 description: Retraso entre la eliminación de un objeto de servidor y su eliminación permanente de la topología de replicación.
 ms.assetid: 770231b0-4886-41c2-a3b5-ac488ac09669
 ms.tgt_platform: multiple
 keywords:
-- 'REPL-topología: esquema de AD de atributo de permanencia de ejecución'
-- replTopologyStayOfExecution esquema de AD de atributos
+- Esquema de AD del atributo Repl-Topology-Stay-Of-Execution
+- ReplTopologyAttributeOfExecution attribute AD Schema (Esquema de AD del atributo replTopologyAttributeOfExecution)
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a51c74c477cce926dd18ea17b8df2b1adcf99df1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 05cb589fdf6ab99654b688df5710117a3fea4926de9fa7a96460c9644ff1ea5f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804567"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837465"
 ---
-# <a name="repl-topology-stay-of-execution-attribute"></a>REPL-topología-mantener el atributo de ejecución
+# <a name="repl-topology-stay-of-execution-attribute"></a>Atributo Repl-Topology-Stay-Of-Execution
 
 Retraso entre la eliminación de un objeto de servidor y su eliminación permanente de la topología de replicación.
 
@@ -29,14 +29,14 @@ Retraso entre la eliminación de un objeto de servidor y su eliminación permane
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | REPL-topología-permanencia de ejecución      |
-| Nombre para mostrar de LDAP | replTopologyStayOfExecution          |
-| Tamaño              | 4 bytes                              |
-| Actualizar privilegio  | El sistema establece este valor.     |
-| Frecuencia de actualización  | Cada vez que se elimina un objeto de servidor. |
+| CN                | Repl-Topology-Stay-Of-Execution      |
+| Ldap-Display-Name | replTopologyTaxisOfExecution          |
+| Size              | 4 bytes                              |
+| Actualizar privilegios  | El sistema establece este valor.     |
+| Frecuencia de actualización  | Siempre que se elimina un objeto de servidor. |
 | Attribute-Id      | 1.2.840.113556.1.4.677               |
-| System-ID-GUID    | 7bfdcb83-4807-11d1-a9c3-0000f80367c1 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | 7bfdcb83-4807-11d1-a9c3-0000f80367c1 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -44,7 +44,7 @@ Retraso entre la eliminación de un objeto de servidor y su eliminación permane
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,18 +56,18 @@ Retraso entre la eliminación de un objeto de servidor y su eliminación permane
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Clases usadas en        | [**NTDS-servicio**](c-ntdsservice.md)<br/> |
+| Clases usadas en        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 
@@ -77,39 +77,39 @@ Retraso entre la eliminación de un objeto de servidor y su eliminación permane
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Clases usadas en        | [**NTDS-servicio**](c-ntdsservice.md)<br/> |
+| Clases usadas en        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Clases usadas en        | [**NTDS-servicio**](c-ntdsservice.md)<br/> |
+| Clases usadas en        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 
@@ -119,18 +119,18 @@ Retraso entre la eliminación de un objeto de servidor y su eliminación permane
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Clases usadas en        | [**NTDS-servicio**](c-ntdsservice.md)<br/> |
+| Clases usadas en        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 
@@ -140,18 +140,18 @@ Retraso entre la eliminación de un objeto de servidor y su eliminación permane
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Clases usadas en        | [**NTDS-servicio**](c-ntdsservice.md)<br/> |
+| Clases usadas en        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 
@@ -161,18 +161,18 @@ Retraso entre la eliminación de un objeto de servidor y su eliminación permane
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Clases usadas en        | [**NTDS-servicio**](c-ntdsservice.md)<br/> |
+| Clases usadas en        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 
@@ -182,18 +182,18 @@ Retraso entre la eliminación de un objeto de servidor y su eliminación permane
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Clases usadas en        | [**NTDS-servicio**](c-ntdsservice.md)<br/> |
+| Clases usadas en        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 

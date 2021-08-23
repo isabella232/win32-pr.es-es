@@ -23,7 +23,7 @@ ms.locfileid: "119787365"
 ---
 # <a name="wm_psd_yafullpagerect-message"></a>Mensaje \_ YAFULLPAGERECT de WM PSD \_
 
-Notifica al procedimiento de  enlace de un cuadro de diálogo Configurar página, [*PagePaintHook*](/windows/win32/api/commdlg/nc-commdlg-lppagepainthook), que el cuadro de diálogo está a punto de dibujar la parte de la dirección de devolución de una página de ejemplo de sobre.
+Notifica al procedimiento de  enlace de un cuadro de diálogo Configuración de página, [*PagePaintHook*](/windows/win32/api/commdlg/nc-commdlg-lppagepainthook), que el cuadro de diálogo está a punto de dibujar la parte de la dirección de retorno de una página de ejemplo de sobre.
 
 
 ```C++
@@ -67,7 +67,7 @@ El **cuadro de diálogo** Configuración de página incluye una imagen de una p�
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
@@ -75,7 +75,7 @@ El **cuadro de diálogo** Configuración de página incluye una imagen de una p�
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

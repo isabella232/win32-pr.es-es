@@ -1,7 +1,7 @@
 ---
-description: 'El método IWiaDevMgr2:: GetImageDlg muestra uno o varios cuadros de diálogo que permiten a un usuario adquirir una imagen de un dispositivo de adquisición de imágenes de Windows (WIA) 2,0 y escribir la imagen en un archivo especificado.'
+description: El método IWiaDevMgr2::GetImageDlg muestra uno o varios cuadros de diálogo que permiten a un usuario adquirir una imagen de un dispositivo Windows Image Acquisition (WIA) 2.0 y escribir la imagen en un archivo especificado.
 ms.assetid: 30a63426-150e-44cf-a03e-7b6da14450f7
-title: 'IWiaDevMgr2:: GetImageDlg (método) (WIA. h)'
+title: Método IWiaDevMgr2::GetImageDlg (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: 6777b839beeb809383e524960e8882392be4bd24
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0b03356e40f1c708c852917c890e4c1bf96b98cd18ccf82b75ebcaaccaa69597
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105720537"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119814045"
 ---
-# <a name="iwiadevmgr2getimagedlg-method"></a>IWiaDevMgr2:: GetImageDlg (método)
+# <a name="iwiadevmgr2getimagedlg-method"></a>IWiaDevMgr2::GetImageDlg (método)
 
-El método **IWiaDevMgr2:: GetImageDlg** muestra uno o varios cuadros de diálogo que permiten a un usuario adquirir una imagen de un dispositivo de adquisición de imágenes de Windows (WIA) 2,0 y escribir la imagen en un archivo especificado. Este método extiende la funcionalidad de [**IWiaDevMgr2:: SelectDeviceDlg**](-wia-iwiadevmgr2-selectdevicedlg.md) para encapsular la adquisición de imágenes en una única llamada API.
+El método **IWiaDevMgr2::GetImageDlg** muestra uno o varios cuadros de diálogo que permiten a un usuario adquirir una imagen de un dispositivo Windows Image Acquisition (WIA) 2.0 y escribir la imagen en un archivo especificado. Este método amplía la funcionalidad de [**IWiaDevMgr2::SelectDeviceDlg**](-wia-iwiadevmgr2-selectdevicedlg.md) para encapsular la adquisición de imágenes en una sola llamada API.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,10 +46,10 @@ HRESULT GetImageDlg(
 
 <dl> <dt>
 
-*lFlags* \[ de\]
+*lFlags* \[ En\]
 </dt> <dd>
 
-Tipo: **Long**
+Tipo: **LONG**
 
 Especifica el comportamiento del cuadro de diálogo. Se puede establecer en los siguientes valores:
 
@@ -58,7 +58,7 @@ Especifica el comportamiento del cuadro de diálogo. Se puede establecer en los 
 | Marca                                 | Significado                                                                                                                                                                     |
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0                                    | Comportamiento predeterminado.                                                                                                                                                           |
-| cuadro de diálogo de dispositivo WIA uso de la \_ \_ interfaz de \_ \_ \_ usuario común | Use la interfaz de usuario del sistema en lugar de la interfaz de usuario proporcionada por el proveedor. Si la interfaz de usuario del sistema no está disponible, se usa la interfaz de usuario del proveedor. Si no hay ninguna interfaz de usuario disponible, la función devuelve E \_ NOTIMPL. |
+| CUADRO DE DIÁLOGO \_ DE DISPOSITIVO WIA \_ USO DE LA INTERFAZ DE USUARIO \_ \_ \_ COMÚN | Use la interfaz de usuario del sistema en lugar de la interfaz de usuario proporcionada por el proveedor. Si la interfaz de usuario del sistema no está disponible, se usa la interfaz de usuario del proveedor. Si no hay ninguna interfaz de usuario disponible, la función devuelve E \_ NOTIMPL. |
 
 
 
@@ -66,57 +66,57 @@ Especifica el comportamiento del cuadro de diálogo. Se puede establecer en los 
 
 </dd> <dt>
 
-*bstrDeviceID* \[ de\]
+*bstrDeviceID* \[ En\]
 </dt> <dd>
 
 Tipo: **BSTR**
 
-Especifica el escáner que se va a usar.
+Especifica el analizador que se usará.
 
 </dd> <dt>
 
-*hwndParent* \[ de\]
+*hwndParent* \[ En\]
 </dt> <dd>
 
-Tipo: **hWnd**
+Tipo: **HWND**
 
-Identificador de la ventana que posee el cuadro de diálogo **obtener imagen** .
-
-</dd> <dt>
-
-*bstrFolderName* \[ de\]
-</dt> <dd>
-
-Tipo: **BSTR**
-
-Especifica el nombre de la carpeta Ito almacena los archivos digitalizados en.
+Identificador de la ventana que posee el cuadro **de diálogo Obtener** imagen.
 
 </dd> <dt>
 
-*bstrFilename* \[ de\]
+*bstrFolderName* \[ En\]
 </dt> <dd>
 
 Tipo: **BSTR**
 
-Especifica el nombre del archivo en el que se van a escribir los datos de la imagen.
+Especifica el nombre de la carpeta en la que se almacenan los archivos analizados.
 
 </dd> <dt>
 
-*plNumFiles* \[ de\]
+*bstrFilename* \[ En\]
 </dt> <dd>
 
-Tipo: **Long \** _
+Tipo: **BSTR**
 
-Puntero al número de archivos que se van a examinar.
+Especifica el nombre del archivo en el que se escribirán los datos de la imagen.
 
 </dd> <dt>
 
-_ppbstrFilePaths * \[ en\]
+*plNumFiles* \[ En\]
+</dt> <dd>
+
+Tipo: **\* LONG**
+
+Puntero al número de archivos que se va a examinar.
+
+</dd> <dt>
+
+*ppbstrFilePaths* \[ En\]
 </dt> <dd>
 
 Tipo: **BSTR \* \***
 
-Dirección de un puntero a una matriz de rutas de acceso de los archivos digitalizados. Inicialice el puntero para que apunte a una matriz de tamaño cero (0) antes de que se llame a **IWiaDevMgr2:: GetImageDlg** . Vea **Comentarios**.
+Dirección de un puntero a una matriz de rutas de acceso para los archivos analizados. Inicialice el puntero para que apunte a una matriz de tamaño cero (0) antes de llamar a **IWiaDevMgr2::GetImageDlg.** Vea **Comentarios**.
 
 </dd> <dt>
 
@@ -125,7 +125,7 @@ Dirección de un puntero a una matriz de rutas de acceso de los archivos digital
 
 Tipo: **[ **IWiaItem2**](-wia-iwiaitem2.md)\*\***
 
-Dirección de un puntero al [**IWiaItem2**](-wia-iwiaitem2.md) desde el que se analizaron las imágenes.
+Dirección de un puntero a [**IWiaItem2**](-wia-iwiaitem2.md) desde el que se examinaron las imágenes.
 
 </dd> </dl>
 
@@ -133,22 +133,22 @@ Dirección de un puntero al [**IWiaItem2**](-wia-iwiaitem2.md) desde el que se a
 
 Tipo: **HRESULT**
 
-**IWiaDevMgr2:: GetImageDlg** devuelve s \_ OK si los datos se transfieren correctamente, devuelve s \_ false si el usuario cancela el cuadro de diálogo o devuelve un error com estándar.
+**IWiaDevMgr2::GetImageDlg** devuelve S OK si los datos se transfieren correctamente, devuelve S FALSE si el usuario cancela el cuadro de diálogo o devuelve un \_ \_ error COM estándar.
 
 > [!Note]  
-> El parámetro *ppbstrFilePaths* no está necesariamente vacío, si la función devuelve S \_ false. Si el usuario cancela, las páginas que han completado el examen se procesan y se devuelven en *ppbstrFilePaths*. Incluso si no se usan, debe liberar la matriz. Vea **Comentarios**.
+> El *parámetro ppbstrFilePaths* no está necesariamente vacío, si la función devuelve S \_ FALSE. Si el usuario cancela, las páginas que han completado el examen se procesan y devuelven en *ppbstrFilePaths*. Aunque no se utilicen, debe liberar la matriz. Vea **Comentarios**.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si la aplicación pasa **null** para el valor del parámetro *bstrDeviceID* , **IWiaDevMgr2:: GetImageDlg** muestra el cuadro de diálogo **seleccionar dispositivo** para que el usuario pueda seleccionar el dispositivo de entrada WIA 2,0.
+Si la aplicación pasa NULL **para** el valor del parámetro *bstrDeviceID,*  **IWiaDevMgr2::GetImageDlg** muestra el cuadro de diálogo Seleccionar dispositivo para que el usuario pueda seleccionar el dispositivo de entrada WIA 2.0.
 
-Use un elemento de menú denominado **desde el escáner** en el menú **archivo** para que las selecciones de dispositivo e imagen estén disponibles en la aplicación.
+Use un elemento de menú denominado **From scanner (Desde escáner)** en el **menú** Archivo para que las selecciones de dispositivo e imagen estén disponibles en la aplicación.
 
-Llame a [SysFreeString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysfreestring) en cada BSTR de la matriz a la que apunta *ppbstrFilePaths* \[ \] , y llame a [CoTaskMemFree](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) en la matriz para liberar memoria asociada. Si \_ se devuelve S false, compruebe si el valor al que apunta *plNumFiles* no es cero. Si el valor no es cero, libere los  \[ \] recursos de ppbstrFilePaths i en la aplicación, ya que el usuario puede cancelar después de examinar una o más páginas. Inicialice *plNumFiles* en cero antes de llamar a **IWiaDevMgr2:: GetImageDlg**. Si *plNumFiles* no se inicializa en cero y un error en la infraestructura com hace que la función devuelva S \_ false antes de que se llame a **IWiaDevMgr2:: GetImageDlg** , entonces *plNumFiles* tendrá un valor de elemento no utilizado erróneo.
+Llame [a SysFreeString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysfreestring) en cada BSTR de la matriz a la que *apunta ppbstrFilePaths* i y llame a \[ \] [CoTaskMemFree](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) en la propia matriz para liberar la memoria asociada. Si se devuelve S FALSE, compruebe si el valor al \_ que *apunta plNumFiles* no es cero. Si el valor no es cero, libera los recursos *ppbstrFilePaths* i de la aplicación, ya que el usuario podría cancelar después de examinar \[ una o varias \] páginas. Inicialice *plNumFiles* en cero antes de llamar a **IWiaDevMgr2::GetImageDlg**. Si *plNumFiles* no se inicializa en cero y un error en la infraestructura COM hace que la función devuelva S FALSE antes de llamar \_ a **IWiaDevMgr2::GetImageDlg,** *plNumFiles* tendrá un valor de elementos no utilizados engañoso.
 
-El cuadro de diálogo debe tener derechos suficientes en *bstrFolderName* para que pueda guardar los archivos con nombres de archivo únicos. Proteja la carpeta con una lista de control de acceso (ACL), ya que contiene datos de usuario.
+El cuadro de diálogo debe tener derechos suficientes para *bstrFolderName* para poder guardar los archivos con nombres de archivo únicos. Proteja la carpeta con una lista de control de acceso (ACL) porque contiene datos de usuario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -156,9 +156,9 @@ El cuadro de diálogo debe tener derechos suficientes en *bstrFolderName* para q
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                   |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>WIA. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                   |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                             |
+| Header<br/>                   | <dl> <dt>Wia.h</dt> </dl> |
 
 
 

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentMustRollbackException'
-title: Constructor de EsentMustRollbackException
+description: 'Más información sobre: Constructor EsentMustRollbackException'
+title: Constructor EsentMustRollbackException
 TOCTitle: 'EsentMustRollbackException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentMustRollbackException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentmustrollbackexception.esentmustrollbackexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d87fc8be01a4623f799e6949180be7fd01da84e6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ca2bd1827eedf88af5a4bfa2cacc1806554adf84c8e21e57890e08f683ffe4af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105706007"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119836345"
 ---
-# <a name="esentmustrollbackexception-constructor"></a>Constructor de EsentMustRollbackException
+# <a name="esentmustrollbackexception-constructor"></a>Constructor EsentMustRollbackException
 
 Inicializa una nueva instancia de la clase EsentMustRollbackException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentMustRollbackException()
 public EsentMustRollbackException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentMustRollbackException()
 
 [Miembros de EsentMustRollbackException](./esentmustrollbackexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

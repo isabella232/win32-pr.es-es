@@ -5,7 +5,7 @@ ms.assetid: 238A5999-0E8B-4462-AFCF-790DB58CFCB4
 keywords:
 - Método SerialNumber de Media Streaming API
 - Método SerialNumber de Media Streaming API, interfaz IBasicDevice
-- IBasicDevice interface Media Streaming API , serialNumber (método)
+- IBasicDevice interface Media Streaming API , método SerialNumber
 topic_type:
 - apiref
 api_name:
@@ -22,7 +22,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119712945"
 ---
-# <a name="ibasicdeviceserialnumber-method"></a>IBasicDevice::SerialNumber (método)
+# <a name="ibasicdeviceserialnumber-method"></a>IBasicDevice::SerialNumber (Método)
 
 Recupera el número de serie del dispositivo.
 
@@ -62,7 +62,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

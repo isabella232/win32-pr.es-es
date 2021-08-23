@@ -54,7 +54,7 @@ Fecha en que se creó este objeto. Este valor se replica y se encuentra en el ca
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x3007                          |
@@ -138,7 +138,7 @@ Fecha en que se creó este objeto. Este valor se replica y se encuentra en el ca
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x3007                          |
@@ -159,7 +159,7 @@ Fecha en que se creó este objeto. Este valor se replica y se encuentra en el ca
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x3007                          |

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 2d7c464cebb050b9fd54c27656505e6f2221fe4d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f156bc4624d7a4d3b7ef9169c073124c64c17038be63a810cd38ec05e0ffc7dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119748795"
 ---
 # <a name="id3dxconstanttablesetvector-method"></a>Método ID3DXConstantTable::SetVector
 
@@ -86,7 +86,7 @@ Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

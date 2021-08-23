@@ -1,7 +1,7 @@
 ---
 description: Obtiene el formato XML de una referencia adjunta al token.
 ms.assetid: F4329A2E-61FD-40E0-9E24-87C9A4585E55
-title: 'IUpdateEndpointAuthToken:: TokenReferenceAttached (método) (UpdateEndpointAuth. h)'
+title: Método IUpdateEndpointAuthToken::TokenReferenceAttached (UpdateEndpointAuth.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - UpdateEndpointAuth.dll
-ms.openlocfilehash: 9582c54c42e2416d5d7a98e85eba3151fd6769a5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eae5e616e8583e2a1da8f8aa0882ea25160faad3f064734620466a0353736efe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119793865"
 ---
-# <a name="iupdateendpointauthtokentokenreferenceattached-method"></a>IUpdateEndpointAuthToken:: TokenReferenceAttached (método)
+# <a name="iupdateendpointauthtokentokenreferenceattached-method"></a>IUpdateEndpointAuthToken::TokenReferenceAttached (método)
 
 Obtiene el formato XML de una referencia adjunta al token.
 
@@ -39,7 +39,7 @@ HRESULT TokenReferenceAttached(
 
 <dl> <dt>
 
-*pszTokenReference* \[ enuncia\]
+*pszTokenReference* \[ out\]
 </dt> <dd>
 
 Puntero a la referencia de token adjunta.
@@ -48,11 +48,11 @@ Puntero a la referencia de token adjunta.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **S \_ correcto** si se realiza correctamente. De lo contrario, devuelve un código de error COM o Windows.
+Devuelve **S \_ OK si** se realiza correctamente. De lo contrario, devuelve un código com Windows error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una referencia adjunta hace referencia a un referece (como el signiture que usa el token) que está en el mismo mensaje en el que reside el token.
+Una referencia adjunta hace referencia a una referencia (como la firma que usa el token) que se encuentra en el mismo mensaje donde reside el token.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,11 +60,11 @@ Una referencia adjunta hace referencia a un referece (como el signiture que usa 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional con las \[ aplicaciones de escritorio de SP3 únicamente\]<br/>                   |
-| Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server con \[ solo aplicaciones de escritorio de SP3\]<br/>                |
-| Encabezado<br/>                   | <dl> <dt>UpdateEndpointAuth. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>UpdateEndpointAuth. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>UpdateEndpointAuth. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio SP3 \[\]<br/>                   |
+| Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server solo con aplicaciones de escritorio SP3 \[\]<br/>                |
+| Header<br/>                   | <dl> <dt>UpdateEndpointAuth.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>UpdateEndpointAuth.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>UpdateEndpointAuth.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>UpdateEndpointAuth.dll</dt> </dl> |
 
 

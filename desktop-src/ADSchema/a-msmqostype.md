@@ -1,11 +1,11 @@
 ---
-title: Atributo de tipo MSMQ-OS-Type
+title: Atributo MSMQ-OS-Type
 description: Tipo de sistema operativo.
 ms.assetid: e1ba4309-3cff-496f-8780-20fd66495465
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de tipo MSMQ-OS-Type
-- mSMQOSType esquema de AD de atributos
+- Esquema de AD del atributo MSMQ-OS-Type
+- Esquema de AD del atributo mSMQOSType
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f719736f050e966167556d91c990e1b41fc79901
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 0d5f8d8588ab624b1a356eee8c4990f39e288a211a6d47be9c6e27cf2945134c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804952"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803105"
 ---
-# <a name="msmq-os-type-attribute"></a>Atributo de tipo MSMQ-OS-Type
+# <a name="msmq-os-type-attribute"></a>Atributo MSMQ-OS-Type
 
 Tipo de sistema operativo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MSMQ-OS-tipo                         |
-| Nombre para mostrar de LDAP | mSMQOSType                           |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | MSMQ-OS-Type                         |
+| Ldap-Display-Name | mSMQOSType                           |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.935               |
-| System-ID-GUID    | 9a0dc330-c100-11d1-bbc5-0080c76670c0 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | 9a0dc330-c100-11d1-ero5-0080c76670c0 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -55,18 +55,18 @@ Tipo de sistema operativo.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | False                                                        |
-| En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Verdadero                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Clases usadas en        | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
+| Clases usadas en        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Tipo de sistema operativo.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | False                                                        |
-| En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Verdadero                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Clases usadas en        | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
+| Clases usadas en        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Tipo de sistema operativo.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | False                                                        |
-| En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Verdadero                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Clases usadas en        | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
+| Clases usadas en        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Tipo de sistema operativo.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | False                                                        |
-| En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Verdadero                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Clases usadas en        | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
+| Clases usadas en        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Tipo de sistema operativo.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | False                                                        |
-| En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Verdadero                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Clases usadas en        | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
+| Clases usadas en        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Tipo de sistema operativo.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | False                                                        |
-| En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Verdadero                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Clases usadas en        | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
+| Clases usadas en        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 

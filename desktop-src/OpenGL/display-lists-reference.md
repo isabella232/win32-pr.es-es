@@ -1,20 +1,20 @@
 ---
-title: Referencia de listas de visualización
-description: Referencia de listas de visualización
+title: Referencia de listas para mostrar
+description: Referencia de listas para mostrar
 ms.assetid: 12e5051d-8277-4c4c-981f-25e4ba7d7697
 keywords:
-- OpenGL, referencia de listas de visualización
+- Referencia de OpenGL,display lists
 - referencia de listas de visualización OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bfa1182650a87041fcfbe7cbf3169bbd62b58625
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7f320815fd83ab82c4feaf2eef011f6f5b1ca0b6bb7dfbdca3e0e8a8e799c5f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104419074"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119889175"
 ---
-# <a name="display-lists-reference"></a>Referencia de listas de visualización
+# <a name="display-lists-reference"></a>Referencia de listas para mostrar
 
 -   [**glCallList**](glcalllist.md)
 -   [**glCallLists**](glcalllists.md)
@@ -25,9 +25,9 @@ ms.locfileid: "104419074"
 -   [**glListBase**](gllistbase.md)
 -   [**glNewList**](glnewlist.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,36 +1,36 @@
 ---
-description: En el ejemplo siguiente se muestra el concepto del almacén de recopilación, un almacén de certificados temporal que realmente incluye el contenido de varios almacenes de certificados.
+description: En el ejemplo siguiente se muestra el concepto de almacén de recopilación, un almacén de certificados temporal que realmente incluye el contenido de varios almacenes de certificados.
 ms.assetid: 5349222f-ad68-477c-8712-fde16e68f600
-title: 'Programa C de ejemplo: operaciones del almacén de certificados de colección y del mismo nivel'
+title: 'Programa C de ejemplo: operaciones de colección y almacén de certificados del mismo nivel'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 79ad1957f37e1aabeabbda0be8c14662c14c3ecc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 52074b58cb96b37b17808cfa8de17e2cd4af3082cf58c7c4312b46eb8eca0e29
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119873875"
 ---
-# <a name="example-c-program-collection-and-sibling-certificate-store-operations"></a>Programa C de ejemplo: operaciones del almacén de certificados de colección y del mismo nivel
+# <a name="example-c-program-collection-and-sibling-certificate-store-operations"></a>Programa C de ejemplo: operaciones de colección y almacén de certificados del mismo nivel
 
-En el ejemplo siguiente se muestra el concepto del almacén de recopilación, un [*almacén de certificados*](../secgloss/c-gly.md) temporal que realmente incluye el contenido de varios almacenes de certificados. Se pueden agregar uno o varios almacenes a una colección que puede tener acceso al contenido de cualquiera de los almacenes de la colección con una única llamada de función.
+En el ejemplo siguiente se muestra el [](../secgloss/c-gly.md) concepto de almacén de recopilación, un almacén de certificados temporal que realmente incluye el contenido de varios almacenes de certificados. Se pueden agregar uno o varios almacenes a una colección que pueda acceder al contenido de cualquiera de los almacenes de la colección con una sola llamada de función.
 
-En este ejemplo se muestran las siguientes tareas y funciones de [*CryptoAPI*](../secgloss/c-gly.md) :
+En este ejemplo se muestran las siguientes tareas y [*funciones cryptoAPI:*](../secgloss/c-gly.md)
 
--   Apertura y cierre de un almacén de recopilación, un almacén de memoria y un almacén del sistema mediante [**CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore) y [**CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore).
--   Agregar un almacén relacionado a un almacén de recopilación mediante [**CertAddStoreToCollection**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddstoretocollection).
--   Buscar certificados y vínculos a certificados en almacenes que cumplan algunos criterios mediante [**CertFindCertificateInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfindcertificateinstore).
--   Adición de un certificado recuperado a un almacén en memoria mediante [**CertAddCertificateContextToStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddcertificatecontexttostore).
+-   Abrir y cerrar un almacén de recopilación, un almacén de memoria y un almacén del sistema mediante [**CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore) [**y CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore).
+-   Agregar un almacén relacionado a un almacén de colecciones [**mediante CertAddStoreToCollection**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddstoretocollection).
+-   Buscar certificados y vínculos a certificados en almacenes que cumplen algunos criterios mediante [**CertFindCertificateInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfindcertificateinstore).
+-   Agregar un certificado recuperado a un almacén en memoria mediante [**CertAddCertificateContextToStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddcertificatecontexttostore).
 -   Agregar un vínculo a un certificado a un almacén mediante [**CertAddCertificateLinkToStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddcertificatelinktostore).
--   Guardar la tienda en memoria en un archivo en disco.
+-   Guardar el almacén en memoria en un archivo en disco.
 -   Abrir y cerrar un almacén de certificados basado en archivos.
 -   Quitar un almacén relacionado de una colección mediante [**CertRemoveStoreFromCollection**](/windows/desktop/api/Wincrypt/nf-wincrypt-certremovestorefromcollection).
 
-En este ejemplo se usa la función [**MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo. El código de esta y otras funciones auxiliares también se enumeran en [funciones de de uso general](general-purpose-functions.md).
+En este ejemplo se usa la [**función MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo. El código de esta y otras funciones auxiliares también se muestra [en De uso general Functions](general-purpose-functions.md).
 
-En este ejemplo se usa la función **CreateMyDACL** , que se define en el tema [crear una DACL](../secbp/creating-a-dacl.md) , para asegurarse de que el archivo abierto se crea con una DACL adecuada.
+En este ejemplo se usa la función **CreateMyDACL,** definida en el tema Creación de una [DACL,](../secbp/creating-a-dacl.md) para asegurarse de que el archivo abierto se crea con una DACL adecuada.
 
-En el ejemplo siguiente se abre un almacén de recopilación, se crea un nuevo almacén de certificados en la memoria y se agrega el nuevo almacén como un almacén relacionado al almacén de recopilación. A continuación, el programa abre un almacén del sistema y recupera un certificado. Ese certificado se agrega al almacén de memoria. Se recupera un segundo certificado del almacén del sistema y se agrega un vínculo a ese certificado al almacén de memoria. A continuación, el certificado y el vínculo se recuperan del almacén de recopilación que muestra que los certificados y los vínculos de un almacén relacionado se pueden recuperar del almacén de recopilación. La memoria se guarda en el disco. A continuación, el almacén de memoria se quita de la colección. El vínculo agregado al almacén de memoria todavía se puede encontrar en el almacén de memoria, pero ya no se encuentra en el almacén de recopilación. Todos los almacenes y archivos están cerrados, se vuelve a abrir el almacén de archivos y se realiza una búsqueda para el vínculo de certificado. El éxito de este programa depende de que mi almacén esté disponible. Ese almacén debe incluir un certificado con el asunto "Insert \_ CERT \_ firmante \_ nombre1" y otro certificado con el asunto "Insert \_ CERT \_ Subject \_ nombre2". Los nombres de los asuntos deben cambiarse a los nombres de los asuntos de certificado que se sabe que están en mi almacén.
+En el ejemplo siguiente se abre un almacén de recopilación, se crea un nuevo almacén de certificados en memoria y se agrega el nuevo almacén como un almacén relacionado al almacén de recopilación. A continuación, el programa abre un almacén del sistema y recupera un certificado. Ese certificado se agrega al almacén de memoria. Se recupera un segundo certificado del almacén del sistema y se agrega un vínculo a ese certificado al almacén de memoria. A continuación, el certificado y el vínculo se recuperan del almacén de recopilación que muestra que los certificados y vínculos de un almacén relacionado se pueden recuperar del almacén de recopilación. La memoria se guarda en el disco. A continuación, el almacén de memoria se quita de la colección. El vínculo agregado al almacén de memoria todavía se puede encontrar en el almacén de memoria, pero ya no se puede encontrar en el almacén de recopilación. Se cierran todos los almacenes y archivos, se vuelve a abrir el almacén de archivos y se realiza una búsqueda para el vínculo de certificado. El éxito de este programa depende de que mi tienda esté disponible. Ese almacén debe incluir un certificado con el asunto "Insert cert subject name1" (Insertar nombre de sujeto del certificado1) y un segundo certificado con el asunto "Insert cert subject name2" (Insertar nombre de \_ \_ sujeto del \_ \_ \_ \_ certificado2). Los nombres de los asuntos deben cambiarse por los nombres de los firmantes de certificado que se sabe que están en el almacén Mi.
 
 
 ```C++

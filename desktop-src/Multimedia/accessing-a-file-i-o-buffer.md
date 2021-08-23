@@ -1,27 +1,27 @@
 ---
-title: Obtener acceso a un búfer de e/s de archivos
-description: Obtener acceso a un búfer de e/s de archivos
+title: Acceso a un búfer de E/S de archivo
+description: Acceso a un búfer de E/S de archivo
 ms.assetid: b829d8ef-8e0b-4c30-b8cf-e9feccc63bbf
 keywords:
-- e/s de archivos multimedia, acceso a búferes
-- e/s de archivos, acceso a búferes
-- entrada y salida (e/s), acceso a búferes
-- E/s (entrada y salida), tener acceso a los búferes
-- obtener acceso a búferes de e/s
-- e/s almacenada en búfer
-- mmioSetInfo función)
+- E/S de archivos multimedia, acceso a búferes
+- E/S de archivo, acceso a búferes
+- entrada y salida (E/S), acceso a búferes
+- E/S (entrada y salida), acceso a búferes
+- acceso a búferes de E/S
+- E/S en búfer
+- Función mmioSetInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 57c89b2376f1bae68d55c76d7731b6ee78f6bf7d
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 9e4ab9533f0f121d42f859961b60d405477856faacee8d8cf36a0dfb975e2587
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105676368"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119808645"
 ---
-# <a name="accessing-a-file-io-buffer"></a>Obtener acceso a un búfer de e/s de archivos
+# <a name="accessing-a-file-io-buffer"></a>Acceso a un búfer de E/S de archivo
 
-En el ejemplo siguiente se accede directamente a un búfer de e/s para leer datos de un archivo de audio de onda.
+En el ejemplo siguiente se accede directamente a un búfer de E/S para leer datos de un archivo de audio de forma de onda.
 
 
 ```C++
@@ -73,8 +73,8 @@ mmioClose(hmmio, 0);
 
 
 
-Cuando termine de acceder a un búfer de e/s de archivos, llame a la función [**mmioSetInfo**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmiosetinfo) , pasando una dirección de la estructura [**MMIOINFO**](/previous-versions//dd757322(v=vs.85)) rellenada por la función [**mmioGetInfo**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmiogetinfo) . Si ha escrito en el búfer, establezca la \_ marca MMIO Dirty en el miembro **dwFlags** de la estructura **MMIOINFO** antes de llamar a **mmioSetInfo**. De lo contrario, el búfer no se vaciará en el disco.
+Cuando termine de acceder a un búfer de E/S de archivo, llame a la función [**mmioSetInfo**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmiosetinfo) y pase una dirección de la estructura [**MMIOINFO**](/previous-versions//dd757322(v=vs.85)) rellenada por la [**función mmioGetInfo.**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmiogetinfo) Si escribió en el búfer, establezca la marca MMIO DIRTY en el miembro dwFlags de la estructura MMIOINFO antes de llamar \_ a  **mmioSetInfo**.  De lo contrario, el búfer no se vaciará en el disco.
 
- 
+ 
 
- 
+ 

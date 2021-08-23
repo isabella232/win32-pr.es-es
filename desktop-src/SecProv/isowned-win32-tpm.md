@@ -1,7 +1,7 @@
 ---
-description: El método IsOwned de la clase de Win32 \_ TPM indica si el dispositivo tiene un propietario. El método TakeOwnership cambia este valor.
+description: El método IsOwned de la clase Tpm de Win32 \_ indica si el dispositivo tiene un propietario. El método TakeOwnership cambia este valor.
 ms.assetid: 04a9394f-98de-43e3-8a19-7a8f409823b8
-title: Método IsOwned de la clase Win32_Tpm
+title: Método IsOwned de la Win32_Tpm clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Win32_tpm.dll
-ms.openlocfilehash: 6ad2d7d03059d8f96fe726d50ea18c2a70db64f4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 01686f9b93e4dd952ce42b43d58aed9684457fb9dedeb524cea8859e0f44ba4f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104540926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119797115"
 ---
-# <a name="isowned-method-of-the-win32_tpm-class"></a>Método IsOwned de la \_ clase Win32 TPM
+# <a name="isowned-method-of-the-win32_tpm-class"></a>Método IsOwned de la clase Tpm \_ win32
 
-El método **IsOwned** de la clase de [**Win32 \_ TPM**](win32-tpm.md) indica si el dispositivo tiene un propietario. El método [**TakeOwnerShip**](takeownership-win32-tpm.md) cambia este valor.
+El **método IsOwned** de la [**clase \_ Tpm win32**](win32-tpm.md) indica si el dispositivo tiene un propietario. El método [**TakeOwnership**](takeownership-win32-tpm.md) cambia este valor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,18 +39,18 @@ uint32 IsOwned(
 
 <dl> <dt>
 
-*IsOwned* \[ enuncia\]
+*IsOwned* \[ out\]
 </dt> <dd>
 
 Tipo: **booleano**
 
-Si **es true**, el dispositivo tiene un propietario.
+Si **es true,** el dispositivo tiene un propietario.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
 Se pueden devolver todos los errores de TPM, así como los errores específicos de los servicios base de TPM.
 
@@ -60,15 +60,15 @@ A continuación se enumeran los códigos de retorno comunes.
 
 | Código o valor devuelto                                                                                                                                 | Descripción                           |
 |---------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> <dt>0 (0X0)</dt> </dl> | Método realizado correctamente.<br/> |
+| <dl> <dt>**S \_ Ok**</dt> <dt>0 (0x0)</dt> </dl> | Método realizado correctamente.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte de la Windows SDK. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](../wmisdk/managed-object-format--mof-.md).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte del SDK Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,11 +76,11 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                      |
-| Espacio de nombres<br/>                | \\MicrosoftTpm de \\ seguridad de cimv2 raíz \\<br/>                                            |
-| MOF<br/>                      | <dl> <dt>Win32 \_ TPM. mof</dt> </dl> |
-| Archivo DLL<br/>                      | <dl> <dt>\_tpm.dllWin32</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                      |
+| Espacio de nombres<br/>                | Root \\ CIMV2 \\ Security \\ MicrosoftTpm<br/>                                            |
+| MOF<br/>                      | <dl> <dt>Win32 \_ tpm.mof</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Win32 \_tpm.dll</dt> </dl> |
 
 
 
@@ -88,7 +88,7 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 
 <dl> <dt>
 
-[**TPM de Win32 \_**](win32-tpm.md)
+[**Tpm de \_ Win32**](win32-tpm.md)
 </dt> </dl>
 
  

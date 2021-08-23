@@ -135,7 +135,7 @@ En las tablas siguientes se muestran las comparaciones de funcionalidad y compat
 
  
 
-**Nota**  La característica de cuotas de espacio en disco de nivel de directorio en NTFS está disponible a través del servidor de Resource Manager.
+**Nota**  La característica de cuotas de espacio en disco de nivel de directorio en NTFS está disponible a través del servidor de archivos Resource Manager.
 
 ## <a name="single-instance-store"></a>Single-Instance Store
 
@@ -149,7 +149,7 @@ En las tablas siguientes se muestran las comparaciones de funcionalidad y compat
 
  
 
-**Nota**  El almacén de instancia única para NTFS está disponible como parte de la característica Storage instancia única en Windows Server.
+**Nota**  El almacén de instancia única para NTFS está disponible como parte de la característica single instance Storage en Windows Server.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -158,7 +158,7 @@ En las tablas siguientes se muestran las comparaciones de funcionalidad y compat
 [Acerca de la administración de archivos](about-file-management.md)
 </dt> <dt>
 
-[Almacenamiento de instancia única y copia de seguridad de SIS](/windows/desktop/Backup/single-instance-store-and-sis-backup)
+[Almacén de instancia única y copia de seguridad de SIS](/windows/desktop/Backup/single-instance-store-and-sis-backup)
 </dt> </dl>
 
  

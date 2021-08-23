@@ -10,7 +10,7 @@ keywords:
 - ActiveX control,protocolos para el modelo de objetos
 - Reproductor de Windows Media Control de ActiveX móviles, protocolos para el modelo de objetos
 - Reproductor de Windows Media Móvil, protocolos para el modelo de objetos
-- protocolos, Reproductor de Windows Media de objetos
+- protocolos, Reproductor de Windows Media modelo de objetos
 - protocols,WMPDVD
 - Protocolo WMPDVD
 ms.topic: article

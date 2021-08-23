@@ -1,5 +1,5 @@
 ---
-description: 'Método GetErrorEx de la Msvm_CollectionReferencePointExportJob clase : recupera información adicional sobre un error.'
+description: 'Método GetErrorEx de la Msvm_CollectionReferencePointExportJob : recupera información adicional sobre un error.'
 ms.assetid: 64a90f18-3ae7-4021-857f-64adf8c40430
 title: Método GetErrorEx de la Msvm_CollectionReferencePointExportJob clase
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 3b84c41776c081c302078773d9402145b0fe41e6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 56eec72d70acbaa55374b54ba0e1eda161ba0b6e608069cc86a07518d8b735da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112093"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119681965"
 ---
-# <a name="geterrorex-method-of-the-msvm_collectionreferencepointexportjob-class"></a>Método GetErrorEx de la clase \_ CollectionReferencePointExportJob de Msvm
+# <a name="geterrorex-method-of-the-msvm_collectionreferencepointexportjob-class"></a>Método GetErrorEx de la clase \_ Msvm CollectionReferencePointExportJob
 
-Recupera información adicional sobre un error. Cuando el trabajo se está ejecutando o ha finalizado sin errores, **GetErrorEx** no devuelve ninguna [**instancia de \_ error de Msvm.**](msvm-error.md) Sin embargo, si se ha producido un error en el trabajo debido a algún problema interno o porque un cliente ha finalizado el trabajo, **GetErrorEx** devuelve una o varias instancias de error de **\_ Msvm.**
+Recupera información adicional sobre un error. Cuando el trabajo se está ejecutando o ha finalizado sin errores, **GetErrorEx** no devuelve ninguna [**instancia de \_ error de Msvm.**](msvm-error.md) Sin embargo, si se ha producido un error en el trabajo debido a algún problema interno o porque un cliente ha terminado el trabajo, **GetErrorEx** devuelve una o varias instancias de error de **\_ Msvm.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ uint32 GetErrorEx(
 *Errores* \[ out\]
 </dt> <dd>
 
-Si el estado operativo del trabajo no es "Correcto", este parámetro devuelve una matriz de instancias de error de [**Msvm. \_**](msvm-error.md) De lo contrario, si el trabajo es "OK", este parámetro contiene **NULL.**
+Si el estado operativo del trabajo no es "Correcto", este parámetro devuelve una matriz de instancias [**de \_ error de Msvm.**](msvm-error.md) De lo contrario, si el trabajo es "Ok", este parámetro contiene **NULL.**
 
 </dd> </dl>
 
@@ -92,9 +92,9 @@ Si se ejecuta correctamente, devuelve 0; de lo contrario, devuelve uno de los si
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1703 \[\]<br/>                                               |
+| Cliente mínimo compatible<br/> | Windows 10, versión 1703 \[ solo para aplicaciones de escritorio\]<br/>                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
 | Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
@@ -102,11 +102,11 @@ Si se ejecuta correctamente, devuelve 0; de lo contrario, devuelve uno de los si
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**Msvm \_ CollectionReferencePointExportJob**](msvm-collectionreferencepointexportjob.md)
+[**Colección de \_ MsvmReferencePointExportJob**](msvm-collectionreferencepointexportjob.md)
 </dt> </dl>
 
  

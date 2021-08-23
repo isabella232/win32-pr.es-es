@@ -1,7 +1,7 @@
 ---
 description: Representa una asociación entre un trabajo y el elemento administrado que puede verse afectado por su ejecución.
 ms.assetid: 125A4976-A4E3-4D7A-A43B-86045C3B00AE
-title: Msvm_AffectedJobElement (clase)
+title: Msvm_AffectedJobElement clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: bef667872a7afa4c726ee1b2c77a36c29649114d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f39d800516f96cf602257abc3bd8ed9ed5a8d5561f4b4a5e60f5eb140fc1c308
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119693545"
 ---
-# <a name="msvm_affectedjobelement-class"></a>MSVM \_ AffectedJobElement (clase)
+# <a name="msvm_affectedjobelement-class"></a>Clase Msvm \_ AffectedJobElement
 
 Representa una asociación entre un trabajo y el elemento administrado que puede verse afectado por su ejecución.
 
-La siguiente sintaxis es código simplificado de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se simplifica Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,13 +45,13 @@ class Msvm_AffectedJobElement : CIM_AffectedJobElement
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ AffectedJobElement** tiene estos tipos de miembros:
+La **clase Msvm \_ AffectedJobElement** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ AffectedJobElement** tiene estas propiedades.
+La **clase Msvm \_ AffectedJobElement** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -64,63 +64,63 @@ Tipo de datos: **[ **CIM \_ ManagedElement**](/previous-versions/windows/desktop
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Elemento administrado que se ve afectado por la ejecución del trabajo. Esta propiedad se hereda de [**\_ AffectedJobElement CIM**](/previous-versions//cc150663(v=vs.85)).
+Elemento administrado afectado por la ejecución del trabajo. Esta propiedad se hereda de [**CIM \_ AffectedJobElement.**](/previous-versions//cc150663(v=vs.85))
 
 </dd> <dt>
 
 **AffectingElement**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **[ **MSVM \_ ConcreteJob**](msvm-concretejob.md)**
+Tipo de datos: **[ **Msvm \_ ConcreteJob**](msvm-concretejob.md)**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El trabajo que afecta al elemento administrado. Esta propiedad se hereda de [**\_ AffectedJobElement CIM**](/previous-versions//cc150663(v=vs.85)).
+Trabajo que afecta al elemento administrado. Esta propiedad se hereda de [**CIM \_ AffectedJobElement.**](/previous-versions//cc150663(v=vs.85))
 
 </dd> <dt>
 
 **ElementEffects**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Una enumeración que describe el efecto en el elemento administrado. Esta propiedad se hereda de [**\_ AffectedJobElement CIM**](/previous-versions//cc150663(v=vs.85)).
+Enumeración que describe el efecto en el elemento administrado. Esta propiedad se hereda de [**CIM \_ AffectedJobElement.**](/previous-versions//cc150663(v=vs.85))
 
 </dd> <dt>
 
 **OtherElementEffectsDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Proporciona detalles sobre el efecto en la posición de la matriz correspondiente en **ElementEffects**. Esta propiedad se hereda de [**\_ AffectedJobElement CIM**](/previous-versions//cc150663(v=vs.85)).
+Proporciona detalles sobre el efecto en la posición de la matriz correspondiente en **ElementEffects**. Esta propiedad se hereda de [**CIM \_ AffectedJobElement.**](/previous-versions//cc150663(v=vs.85))
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El acceso a la clase **MSVM \_ AffectedJobElement** puede estar restringido por el filtrado de UAC. Para obtener más información, vea [control de cuentas de usuario y WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+El acceso a **la clase \_ Msvm AffectedJobElement** podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -129,13 +129,13 @@ El acceso a la clase **MSVM \_ AffectedJobElement** puede estar restringido por 
 
 <dl> <dt>
 
-[**\_AFFECTEDJOBELEMENT CIM**](cim-affectedjobelement.md)
+[**CIM \_ AffectedJobElement**](cim-affectedjobelement.md)
 </dt> <dt>
 
-[**\_AFFECTEDJOBELEMENT CIM**](/previous-versions//cc150663(v=vs.85))
+[**CIM \_ AffectedJobElement**](/previous-versions//cc150663(v=vs.85))
 </dt> <dt>
 
-[Clases de administración de sistema virtual](virtual-system-management-classes.md)
+[Clases de administración de sistemas virtuales](virtual-system-management-classes.md)
 </dt> </dl>
 
  

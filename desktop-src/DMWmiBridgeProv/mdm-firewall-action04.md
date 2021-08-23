@@ -1,6 +1,6 @@
 ---
 title: MDM_Firewall_Action04 clase
-description: La clase Mdm \_ Firewall \_ Action04 se usa para configurar los Windows Defender firewall.
+description: La clase Mdm \_ Firewall \_ Action04 se usa para configurar la configuración Windows Defender firewall.
 ms.assetid: d0704662-ac2b-4ff5-a2c1-8f2bc7835488
 keywords:
 - MDM_Firewall_Action04 clase
@@ -25,11 +25,11 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119694874"
 ---
-# <a name="mdm_firewall_action04-class"></a>Clase Mdm \_ Firewall \_ Action04
+# <a name="mdm_firewall_action04-class"></a>Clase \_ \_ Action04 del firewall de MDM
 
-\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-La clase Mdm \_ Firewall \_ Action04 se usa para configurar los Windows Defender firewall.
+La clase Mdm \_ Firewall \_ Action04 se usa para configurar la configuración Windows Defender firewall.
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -66,7 +66,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> <dt>
@@ -80,7 +80,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> <dt>

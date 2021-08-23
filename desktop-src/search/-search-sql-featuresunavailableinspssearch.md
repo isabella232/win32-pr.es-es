@@ -1,5 +1,5 @@
 ---
-description: El lenguaje de consulta de Microsoft Windows Search se basa en Lenguaje de consulta estructurado (SQL); sin embargo, no busca en una base de datos relacional con tablas o índices definidos por el usuario.
+description: El lenguaje de consulta de Microsoft Windows Search se basa en Lenguaje de consulta estructurado (SQL); sin embargo, no busca en una base de datos relacional con índices o tablas definidos por el usuario.
 ms.assetid: e81c436e-3a33-4b00-9860-9a54bc0eebbf
 title: SQL Características no disponibles en Microsoft Windows Search
 ms.topic: article
@@ -13,16 +13,16 @@ ms.locfileid: "119716125"
 ---
 # <a name="sql-features-unavailable-in-microsoft-windows-search"></a>SQL Características no disponibles en Microsoft Windows Search
 
-El lenguaje de consulta de Microsoft Windows Search se basa en Lenguaje de consulta estructurado (SQL); sin embargo, no busca en una base de datos relacional con tablas o índices definidos por el usuario. Por este problema, no se aplican muchas instrucciones SQL estándar y características de sintaxis. A continuación se muestra una lista de las características SQL más importantes que no se admiten en Windows Search.
+El lenguaje de consulta de Microsoft Windows Search se basa en Lenguaje de consulta estructurado (SQL); sin embargo, no busca en una base de datos relacional con índices o tablas definidos por el usuario. Por este problema, no se aplican muchas SQL y características de sintaxis estándar. A continuación se muestra una lista de las características SQL más importantes que no se admiten en Windows Search.
 
 
 -   Instrucciones BATCH
 -   Función COALESCE \_ TABLE
--   Función CONVERT (use en su lugar las funciones CAST)
+-   Función CONVERT (use las funciones CAST en su lugar)
 -   CREATE VIEW, instrucción
 -   Lenguaje de definición de datos
 -   Instrucción DATASOURCE
--   Formatos de fecha y hora distintos de la marca de fecha y hora ISO
+-   Formatos de fecha y hora distintos de marca de fecha y hora ISO
 -   Instrucción DELETE
 -   GRANT, instrucción
 -   Esquema de información

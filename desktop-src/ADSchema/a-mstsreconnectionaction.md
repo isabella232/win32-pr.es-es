@@ -1,11 +1,11 @@
 ---
-title: atributo MS-TS-Reconnection-Action
-description: Terminal Services acción de reconexión de la sesión especifica si se permite la reconexión a una sesión de Terminal Services desconectada desde cualquier equipo cliente.
+title: Atributo ms-TS-Reconnection-Action
+description: Acción de reconexión de sesión de Terminal Services especifica si se permite la reconexión a una sesión desconectada de Terminal Services desde cualquier equipo cliente.
 ms.assetid: 093c2477-aed6-4736-9c8a-05aeca539cf8
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de acción MS-TS-Reconnection
-- msTSReconnectionAction esquema de AD de atributos
+- Esquema de AD del atributo ms-TS-Reconnection-Action
+- Esquema de AD del atributo msTSReconnectionAction
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 15e09931ec652f2fdd1e9ae6c6cec71e7a896a9f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 68e75a6e1f205cbd2037ea40cbb02d5e8c37115fc2f1082c2977c35cf2801428
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906159"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119760955"
 ---
-# <a name="ms-ts-reconnection-action-attribute"></a>atributo MS-TS-Reconnection-Action
+# <a name="ms-ts-reconnection-action-attribute"></a>Atributo ms-TS-Reconnection-Action
 
-Terminal Services acción de reconexión de la sesión especifica si se permite la reconexión a una sesión de Terminal Services desconectada desde cualquier equipo cliente.
+Acción de reconexión de sesión de Terminal Services especifica si se permite la reconexión a una sesión desconectada de Terminal Services desde cualquier equipo cliente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-TS-Reconnection-Action            |
-| Nombre para mostrar de LDAP | msTSReconnectionAction               |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-TS-Reconnection-Action            |
+| Ldap-Display-Name | msTSReconnectionAction               |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1984              |
-| System-ID-GUID    | 366ed7ca-3e18-4c7f-abae-351a01e4b4f7 |
-| Sintaxis            | [**Booleano**](s-boolean.md)         |
+| System-Id-Guid    | 366ed7ca-3e18-4c7f-abae-351a01e4b4f7 |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 
@@ -52,18 +52,18 @@ Terminal Services acción de reconexión de la sesión especifica si se permite 
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -73,18 +73,18 @@ Terminal Services acción de reconexión de la sesión especifica si se permite 
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -92,15 +92,15 @@ Terminal Services acción de reconexión de la sesión especifica si se permite 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |

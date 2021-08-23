@@ -1,9 +1,9 @@
 ---
-title: MDM_Policy_User_Result01_CredentialsUI02 (clase)
-description: La \_ clase Result01 de usuario de directiva de MDM \_ \_ \_ CredentialsUI02 representa las directivas de credenciales disponibles.
+title: MDM_Policy_User_Result01_CredentialsUI02 clase
+description: La clase MDM \_ Policy \_ User \_ Result01 \_ CredentialsUI02 representa las directivas de credenciales disponibles.
 ms.assetid: e1df7798-676a-4846-89e5-2c05d0259086
 keywords:
-- MDM_Policy_User_Result01_CredentialsUI02 (clase)
+- MDM_Policy_User_Result01_CredentialsUI02 clase
 - MDM_Policy_User_Result01_CredentialsUI02 clase, descrita
 topic_type:
 - apiref
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f7659990ee980872059bd26b0a8b553202e6cab
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bdc05a163bbf41cc92ece0de50d3663de320350562d89a700ae012bab985e8d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079417"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119693755"
 ---
-# <a name="mdm_policy_user_result01_credentialsui02-class"></a>\_Clase CredentialsUI02 de usuario de directiva MDM \_ \_ Result01 \_
+# <a name="mdm_policy_user_result01_credentialsui02-class"></a>Clase Mdm \_ Policy \_ User \_ Result01 \_ CredentialsUI02
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-La \_ clase Result01 de usuario de directiva de MDM \_ \_ \_ CredentialsUI02 representa las directivas de credenciales disponibles.
+La clase MDM \_ Policy \_ User \_ Result01 \_ CredentialsUI02 representa las directivas de credenciales disponibles.
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -46,13 +46,13 @@ class MDM_Policy_User_Result01_CredentialsUI02
 
 ## <a name="members"></a>Miembros
 
-La clase Result01 de usuario de la **\_ Directiva MDM \_ \_ \_ CredentialsUI02** tiene estos tipos de miembros:
+La **clase Mdm Policy User \_ \_ \_ Result01 \_ CredentialsUI02** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase Result01 de usuario de la **\_ Directiva MDM \_ \_ \_ CredentialsUI02** tiene estas propiedades.
+La **clase MDM Policy User \_ \_ \_ Result01 \_ CredentialsUI02** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -62,7 +62,7 @@ La clase Result01 de usuario de la **\_ Directiva MDM \_ \_ \_ CredentialsUI02**
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -99,12 +99,12 @@ Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                      |
-| Espacio de nombres<br/>                | Dmmap de MDM raíz de \\ cimv2 \\ \\<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ cimv2 \\ mdm \\ dmmap<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

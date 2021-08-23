@@ -4,16 +4,16 @@ ms.assetid: 96cb9e17-588c-4a1a-a7ba-7f8439d5b79a
 title: Propiedad AVDecAudioDualMono (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: adc84e19d41840b358e3e79576152dbc8527e2bb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7a26bd6685cb9c9f326babbc01120019c93760fd7e1f9bf33f2a540d488300ad
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119873395"
 ---
 # <a name="avdecaudiodualmono-property"></a>AvDecAudioDualMono, propiedad
 
-Especifica si el audio de 2 canales se codifica como estéreo o mono dual.
+Especifica si el audio de 2 canales está codificado como estéreo o mono dual.
 
 Esta propiedad es de solo lectura.
 
@@ -37,15 +37,15 @@ Esta propiedad solo se aplica cuando la secuencia de bits de entrada del descodi
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Aplicaciones de escritorio para \[ UWP de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones de escritorio de Windows 2000 Server \[ \| para UWP\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional \[ aplicaciones de escritorio para \| UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

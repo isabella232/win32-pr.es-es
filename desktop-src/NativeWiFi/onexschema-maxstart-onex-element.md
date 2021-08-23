@@ -1,5 +1,5 @@
 ---
-description: Especifica el número máximo de mensajes de EAPOL-Start enviados.
+description: Especifica el número máximo de mensajes EAPOL-Start enviados.
 ms.assetid: 4e48f8b6-46eb-426e-ad22-3aa53cb66a17
 title: Elemento maxStart (OneX)
 ms.topic: reference
@@ -12,20 +12,20 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 14bf40538eafb3c8e78b68b7a435d0d37d401960
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7c50945b8de53b6d058556e3b5c995d3ec17bfdc8f8d55ec3dc2e6e56089b2a1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677750"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119800765"
 ---
 # <a name="maxstart-onex-element"></a>Elemento maxStart (OneX)
 
-El elemento maxStart (OneX) especifica el número máximo de mensajes EAPOL-Start enviados. Una vez enviado el número máximo de mensajes EAPOL-Start, el cliente supone que no hay ningún autenticador presente en la red.
+El elemento maxStart (OneX) especifica el número máximo de EAPOL-Start mensajes enviados. Una vez enviado el número máximo EAPOL-Start mensajes, el cliente asume que no hay ningún autenticador presente en la red.
 
 Este elemento es opcional. Cuando maxStart no se especifica en un perfil, se usa un valor de 3 mensajes.
 
-**Windows XP con SP3 y API de LAN inalámbrica para Windows XP con SP2:** Este elemento se omitirá si está presente en un perfil.
+**Windows XP con SP3 e WIRELESS LAN API para Windows XP con SP2:** Este elemento se omitirá si está presente en un perfil.
 
 ``` syntax
 <xs:element name="maxStart">
@@ -44,16 +44,16 @@ Este elemento es opcional. Cuando maxStart no se especifica en un perfil, se usa
 </xs:element>
 ```
 
-El elemento **maxStart** se define mediante el elemento [**Onex**](onexschema-onex-element.md) .
+El **elemento maxStart** se define mediante el [**elemento OneX.**](onexschema-onex-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -64,13 +64,13 @@ El elemento **maxStart** se define mediante el elemento [**Onex**](onexschema-on
 **Contexto de definición del elemento en el esquema**
 </dt> <dt>
 
-[**Onex-**](onexschema-onex-element.md)
+[**Onex**](onexschema-onex-element.md)
 </dt> <dt>
 
 **Posible elemento primario inmediato en la instancia de esquema**
 </dt> <dt>
 
-[**Onex-**](onexschema-onex-element.md)
+[**Onex**](onexschema-onex-element.md)
 </dt> </dl>
 
  

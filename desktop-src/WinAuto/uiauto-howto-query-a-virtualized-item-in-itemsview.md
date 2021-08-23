@@ -31,7 +31,7 @@ En este tema se describe cómo usar Microsoft Automatización de la interfaz de 
 
 ## <a name="overview"></a>Información general
 
-Vista elementos es un componente de interfaz de usuario que permite a los usuarios ver archivos y otros elementos e interactuar con ellos. En Windows 7, vista Elementos reemplaza el control de vista de lista para presentar elementos en la vista predeterminada de Windows Explorer. La vista Elementos también se usa en el cuadro de diálogo Elemento común, menú Inicio resultados de búsqueda y otros Windows 7 elementos de la interfaz de usuario que usan el control Explorador del Explorador. En comparación con el control list-view, la vista Elementos ofrece las siguientes ventajas a los usuarios:
+Vista elementos es un componente de interfaz de usuario que permite a los usuarios ver archivos y otros elementos e interactuar con ellos. En Windows 7, vista Elementos reemplaza el control de vista de lista para presentar elementos en la vista predeterminada de Windows Explorer. La vista Elementos también se usa en el cuadro de diálogo Elemento común, menú Inicio resultados de búsqueda y otros Windows de interfaz de usuario de Windows 7 que usan el control Explorador del Explorador. En comparación con el control list-view, la vista Elementos ofrece las siguientes ventajas a los usuarios:
 
 -   La vista Elementos puede presentar elementos de maneras más útiles, deseables y pertinentes, lo que permite a los usuarios buscar y organizar elementos de forma más sencilla, rápida y sencilla.
 -   La vista Elementos puede mostrar grandes conjuntos de elementos de orígenes de datos que tienen características de rendimiento diferentes, lo que permite a los usuarios examinar y buscar toda su colección de elementos en varios orígenes.
@@ -40,13 +40,13 @@ En la imagen siguiente se muestra la vista Elementos en Windows Explorer.
 
 ![captura de pantalla que muestra el explorador de Windows con el componente de vista de elementos](images/itemsview.gif)
 
-Desde la perspectiva del desarrollador, la estructura general y la funcionalidad de la vista Elementos es similar a la del control list-view. La principal diferencia es que la vista Elementos admite la virtualización, mientras que el control list-view no. Además, la vista Elementos usa dos nuevas interfaces Automatización de la interfaz de usuario para asegurarse de que el contenido virtualizado proporcionado por la vista Elementos es accesible. Estas interfaces se describen en las secciones siguientes de este tema.
+Desde la perspectiva de un desarrollador, la estructura general y la funcionalidad de la vista elementos es similar a la del control list-view. La principal diferencia es que la vista Elementos admite la virtualización, mientras que el control list-view no. Además, la vista Elementos usa dos nuevas interfaces Automatización de la interfaz de usuario para asegurarse de que el contenido virtualizado proporcionado por la vista Elementos es accesible. Estas interfaces se describen en las secciones siguientes de este tema.
 
 Para obtener información general sobre la virtualización Automatización de la interfaz de usuario, vea [Trabajar con elementos virtualizados.](uiauto-workingwithvirtualizeditems.md)
 
 ## <a name="items-view-tree-structure"></a>Estructura del árbol de vista Elementos
 
-En el Automatización de la interfaz de usuario, el elemento de nivel superior Automatización de la interfaz de usuario de la vista elementos tiene el nombre "ItemsView" y el tipo de control "list". En la imagen anterior, el elemento Automatización de la interfaz de usuario ItemsView se describe en rojo. Existen Automatización de la interfaz de usuario elementos de configuración por debajo del nivel superior de ItemsView, pero solo se hace referencia a otros dos elementos Automatización de la interfaz de usuario en este documento: elementos de grupo y elementos de lista.
+En el Automatización de la interfaz de usuario, el elemento de nivel superior Automatización de la interfaz de usuario de la vista elementos tiene el nombre "ItemsView" y el tipo de control "list". En la imagen anterior, el elemento Automatización de la interfaz de usuario ItemsView se describe en rojo. Existen varios Automatización de la interfaz de usuario de datos por debajo del nivel superior de ItemsView, pero solo se hace referencia a otros dos elementos Automatización de la interfaz de usuario en este documento: elementos de grupo y elementos de lista.
 
 Los elementos de grupo son los Automatización de la interfaz de usuario que contienen todos los elementos de lista de ese grupo; su tipo de control es "Group" y sus nombres varían en función del nombre del grupo. En la imagen anterior, el primer elemento de grupo contiene el encabezado "A-H (1)" y el elemento de lista "Carpeta", y su nombre es "A-H".
 
@@ -54,7 +54,7 @@ Los elementos de lista son Automatización de la interfaz de usuario que represe
 
 ## <a name="virtualization"></a>La virtualización
 
-La vista Elementos usa virtualización, lo que significa que los elementos fuera del área visible de la vista no se capturan del sistema y no se crea la representación de la interfaz de usuario de ellos. Estos elementos se *denominan elementos virtualizados.* Dado que no se crean, los elementos virtualizados no tienen elementos Automatización de la interfaz de usuario y, por tanto, no aparecen en el árbol de Automatización de la interfaz de usuario cuando un cliente de Automatización de la interfaz de usuario enumera el árbol. Además, Automatización de la interfaz de usuario patrones de control solo funcionan en elementos visibles. Por ejemplo, el patrón de control [Selection](uiauto-implementingselection.md) devuelve solo los elementos seleccionados visibles cuando un cliente llama al método [**IUIAutomationSelectionPattern::GetCurrentSelection.**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationselectionpattern-getcurrentselection)
+La vista Elementos usa virtualización, lo que significa que los elementos fuera del área visible de la vista no se capturan del sistema y no se crea la representación de la interfaz de usuario de ellos. Estos elementos se *denominan elementos virtualizados.* Dado que no se crean, los elementos virtualizados no tienen elementos Automatización de la interfaz de usuario y, por tanto, no aparecen en el árbol de Automatización de la interfaz de usuario cuando un cliente de Automatización de la interfaz de usuario enumera el árbol. Además, Automatización de la interfaz de usuario de control solo funcionan en elementos visibles. Por ejemplo, el patrón de control [Selection](uiauto-implementingselection.md) devuelve solo los elementos seleccionados visibles cuando un cliente llama al método [**IUIAutomationSelectionPattern::GetCurrentSelection.**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationselectionpattern-getcurrentselection)
 
 La vista Elementos admite la capacidad de recuperar la siguiente información sobre los elementos virtualizados:
 
@@ -68,7 +68,7 @@ Un cliente puede usar el elemento ItemsView para obtener un recuento de todos lo
 
 La propiedad ItemStatus es una cadena que especifica un recuento del número total de elementos y un recuento de los elementos seleccionados, separados por una coma. Por ejemplo: "3 elementos, 1 elemento seleccionado". Esta cadena está localizada y se puede comunicar directamente al usuario.
 
-Las propiedades personalizadas del elemento ItemsView incluyen una propiedad para el recuento de elementos y otra para el recuento de selección. Incluyen:
+Las propiedades personalizadas del elemento ItemsView incluyen una propiedad para el recuento de elementos y otra para el recuento de selección. Entre ellas, las siguientes:
 
 -   GUID de la propiedad ItemCount \_ \_ (ABBF5C45-5CCC-47b7-BB4E-87CB87BBD162): el recuento de todos los elementos únicos de la vista. Si se agrupa por una propiedad de varios valores (MVP) para que un único elemento pueda aparecer varias veces, cada elemento se cuenta solo una vez.
 
@@ -88,11 +88,11 @@ La propiedad ItemStatus es una cadena que contiene el índice de un elemento con
 
 La siguiente propiedad personalizada obtiene el índice de elemento de un elemento ListItem:
 
--   GUID de la propiedad ItemIndex \_ \_ (92A053DA-2969-4021-BF27-514CFC2E4A69): índice absoluto basado en 1 de un elemento. Si se agrupa por una propiedad de varios valores (MVP) para que un único elemento pueda aparecer dos veces, cada apariencia del elemento obtiene un índice independiente.
+-   GUID de propiedad ItemIndex \_ \_ (92A053DA-2969-4021-BF27-514CFC2E4A69): índice absoluto basado en 1 de un elemento. Si se agrupa por una propiedad de varios valores (MVP) para que un único elemento pueda aparecer dos veces, cada apariencia del elemento obtiene un índice independiente.
 
     (UIAutomationType: [**UIAutomationType \_ Int**](/windows/desktop/api/UIAutomationCore/ne-uiautomationcore-uiautomationtype), Nombre de programación: "ItemIndex")
 
-Esta propiedad personalizada se define en Shlguid.h, que se incluye en el SDK de Windows y se registra mediante el método [**IUIAutomationRegistrar::RegisterProperty.**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationregistrar-registerproperty) Automatización de la interfaz de usuario usan **RegisterProperty para** recuperar un identificador de propiedad (PROPERTYIDs) para la propiedad personalizada.
+Esta propiedad personalizada se define en Shlguid.h, que se incluye en el SDK de Windows y se registra mediante el método [**IUIAutomationRegistrar::RegisterProperty.**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationregistrar-registerproperty) Automatización de la interfaz de usuario clientes usan **RegisterProperty para** recuperar un identificador de propiedad (PROPERTYIDs) para la propiedad personalizada.
 
 ## <a name="obtaining-a-reference-to-a-vitualized-item"></a>Obtener una referencia a un elemento Vitualized
 
@@ -104,7 +104,7 @@ Los elementos ListItem y Group están virtualizados, pero solo se pueden devolve
 
 ItemsView admite las siguientes propiedades [**para FindItemByProperty**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationitemcontainerpattern-finditembyproperty):
 
--   Name (UIA NamePropertyId): busca el primer elemento \_ cuyo nombre coincide totalmente con la cadena especificada. La búsqueda no hace distinción de mayúsculas y minúsculas. No se admiten caracteres comodín ni coincidencia parcial. Si se **especifica un** nombre NULL, se devuelve el siguiente elemento después del elemento inicial. La **especificación de** nombres NULL permite a Automatización de la interfaz de usuario cliente enumerar todos los elementos de la vista; sin embargo, no se recomienda enumerar todos los elementos porque hace que todos los elementos de la vista se puedan realizar.
+-   Name (UIA NamePropertyId): busca el primer elemento \_ cuyo nombre coincide totalmente con la cadena especificada. La búsqueda no hace distinción de mayúsculas y minúsculas. No se admiten caracteres comodín ni coincidencia parcial. Si se **especifica** un nombre NULL, se devuelve el siguiente elemento después del elemento inicial. La **especificación de** nombres NULL permite a Automatización de la interfaz de usuario cliente enumerar todos los elementos de la vista; sin embargo, no se recomienda enumerar todos los elementos porque hace que todos los elementos de la vista se puedan realizar.
 -   SelectionItem \_ IsSelected (UIA \_ SelectionItemIsSelectedPropertyId): busca el primer elemento cuya propiedad SelectionItem IsSelected coincida con \_ el valor especificado. Especifique **TRUE** para buscar el primer elemento seleccionado o **FALSE** para buscar el primer elemento no seleccionado. Tenga cuidado al enumerar todos los elementos seleccionados porque el número de elementos seleccionados puede ser muy grande, especialmente si el usuario ha seleccionado todos los elementos.
 
 ## <a name="scrolling-a-virtualized-item-on-screen"></a>Desplazamiento de un elemento virtualizado en pantalla

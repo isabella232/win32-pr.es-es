@@ -1,5 +1,5 @@
 ---
-description: 'Informa de lo siguiente: las métricas disponibles para recopilarse para todas las instancias de una clase CIM, las clases CIM para las que una métrica definida por una instancia de BaseMetricDefinition CIM está disponible para recopilarse y si una métrica determinada se está recopilando actualmente para un elemento \_ administrado.'
+description: 'Informa de lo siguiente: las métricas disponibles para recopilarse para todas las instancias de una clase CIM, las clases CIM para las que una métrica definida por una instancia de BaseMetricDefinition de CIM está disponible para recopilarse y si una métrica determinada se está recopilando actualmente para un elemento \_ administrado.'
 ms.assetid: 0115a5b5-2824-4c43-a8dc-757524c5d3dd
 title: Método ShowMetricsByClass de la CIM_MetricService clase
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "119694964"
 ---
 # <a name="showmetricsbyclass-method-of-the-cim_metricservice-class"></a>Método ShowMetricsByClass de la clase \_ MetricService de CIM
 
-Informa de lo siguiente: las métricas disponibles para recopilarse para todas las instancias de una clase CIM, las clases CIM para las que una métrica definida por una instancia de [**\_ BaseMetricDefinition CIM**](cim-basemetricdefinition.md) está disponible para recopilarse y si una métrica determinada se está recopilando actualmente para un elemento administrado.
+Informa de lo siguiente: las métricas disponibles para recopilarse para todas las instancias de una clase CIM, las clases CIM para las que una métrica definida por una instancia de [**\_ BaseMetricDefinition**](cim-basemetricdefinition.md) de CIM está disponible para recopilarse y si una métrica determinada se está recopilando actualmente para un elemento administrado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,28 +46,28 @@ uint32 ShowMetricsByClass(
 *Asunto* \[ En\]
 </dt> <dd>
 
-Identifica una clase CIM para la que el método devuelve referencias a instancias de [**\_ Cim BaseMetricDefinition**](cim-basemetricdefinition.md) que definen métricas que están disponibles para capturarse para todas las instancias de la clase.
+Identifica una clase CIM para la que el método devuelve referencias a instancias de [**\_ BaseMetricDefinition**](cim-basemetricdefinition.md) de CIM que definen métricas que están disponibles para capturarse para todas las instancias de la clase.
 
 </dd> <dt>
 
 *Definición* \[ En\]
 </dt> <dd>
 
-Identifica una instancia de [**CIM \_ BaseMetricDefinition.**](cim-basemetricdefinition.md) El método devuelve referencias a instancias de [**\_ ManagedElement de CIM**](cim-managedelement.md) para las que las métricas definidas por la instancia de **Cim \_ BaseMetricDefinition** están disponibles para recopilarse.
+Identifica una instancia de [**CIM \_ BaseMetricDefinition.**](cim-basemetricdefinition.md) El método devuelve referencias a instancias de [**\_ ManagedElement**](cim-managedelement.md) de CIM para las que las métricas definidas por la instancia de **\_ BaseMetricDefinition** de CIM están disponibles para recopilarse.
 
 </dd> <dt>
 
 *DefinitionList* \[ out\]
 </dt> <dd>
 
-Si se ejecuta correctamente, puede contener referencias a instancias de objetos [**\_ BaseMetricDefinition de CIM**](cim-basemetricdefinition.md) que definen métricas disponibles para la colección para [**el elemento \_ ManagedElement**](cim-managedelement.md) de CIM identificado por el *parámetro Subject.*
+Si se ejecuta correctamente, puede contener referencias a instancias de objetos [**\_ BaseMetricDefinition**](cim-basemetricdefinition.md) de CIM que definen métricas disponibles para la recopilación para [**el elemento \_ ManagedElement**](cim-managedelement.md) de CIM identificado por el *parámetro Subject.*
 
 </dd> <dt>
 
 *MetricNames* \[ out\]
 </dt> <dd>
 
-Si se ejecuta correctamente, cada índice de matriz debe contener el valor de la propiedad **Name** para la instancia de [**CIM \_ BaseMetricDefinition**](cim-basemetricdefinition.md) a la que hace referencia el índice de matriz correspondiente *del parámetro DefinitionList.*
+Si se ejecuta correctamente, cada índice de matriz debe contener el valor de la propiedad **Name** para la instancia de [**CIM \_ BaseMetricDefinition**](cim-basemetricdefinition.md) a la que hace referencia el índice de matriz correspondiente del *parámetro DefinitionList.*
 
 </dd> <dt>
 
@@ -138,7 +138,7 @@ Devuelve un 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -148,7 +148,7 @@ Devuelve un 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

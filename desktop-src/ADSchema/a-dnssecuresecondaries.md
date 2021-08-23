@@ -1,11 +1,11 @@
 ---
-title: Atributo DNS-Secure-secundarias
-description: El atributo DNS-Secure-secundarias no se usa actualmente.
+title: Atributo Dns-Secure-Secondaries
+description: El atributo Dns-Secure-Secondaries no se usa actualmente.
 ms.assetid: ba5110f1-e451-4f85-897e-e4223649dc10
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de DNS-Secure-secundarias
-- dnsSecureSecondaries esquema de AD de atributos
+- Esquema de AD del atributo Dns-Secure-Secondaries
+- Esquema de AD del atributo dnsSecureSecondaries
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b4d6d45c642ec9045d5eb8593492e385245bc635
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f72ca21992256df6b2fbe92b34400b9e2b6e368101fc158ea513381ed0445acf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151428"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119804895"
 ---
-# <a name="dns-secure-secondaries-attribute"></a>Atributo DNS-Secure-secundarias
+# <a name="dns-secure-secondaries-attribute"></a>Atributo Dns-Secure-Secondaries
 
-El atributo **DNS-Secure-secundarias** no se usa actualmente.
+El **atributo Dns-Secure-Secondaries** no se usa actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | DNS-seguro-secundarios               |
-| Nombre para mostrar de LDAP | dnsSecureSecondaries                 |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | Dns-Secure-Secondaries               |
+| Ldap-Display-Name | dnsSecureSecondaries                 |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.380               |
-| System-ID-GUID    | e0fa1e67-9b45-11d0-afdd-00c04fd930c9 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | e0fa1e67-9b45-11d0-afdd-00c04fd930c9 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -55,13 +55,13 @@ El atributo **DNS-Secure-secundarias** no se usa actualmente.
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | \-                                       |
+| Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | False                                    |
-| Tiene un único valor       | False                                    |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Falso                                    |
+| Es de un solo valor       | Falso                                    |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -76,13 +76,13 @@ El atributo **DNS-Secure-secundarias** no se usa actualmente.
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | \-                                       |
+| Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | False                                    |
-| Tiene un único valor       | False                                    |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Falso                                    |
+| Es de un solo valor       | Falso                                    |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -97,13 +97,13 @@ El atributo **DNS-Secure-secundarias** no se usa actualmente.
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | \-                                       |
+| Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | False                                    |
-| Tiene un único valor       | False                                    |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Falso                                    |
+| Es de un solo valor       | Falso                                    |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -118,13 +118,13 @@ El atributo **DNS-Secure-secundarias** no se usa actualmente.
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | \-                                       |
+| Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | False                                    |
-| Tiene un único valor       | False                                    |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Falso                                    |
+| Es de un solo valor       | Falso                                    |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -139,13 +139,13 @@ El atributo **DNS-Secure-secundarias** no se usa actualmente.
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | \-                                       |
+| Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | False                                    |
-| Tiene un único valor       | False                                    |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Falso                                    |
+| Es de un solo valor       | Falso                                    |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -160,13 +160,13 @@ El atributo **DNS-Secure-secundarias** no se usa actualmente.
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | \-                                       |
+| Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | False                                    |
-| Tiene un único valor       | False                                    |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Falso                                    |
+| Es de un solo valor       | Falso                                    |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |

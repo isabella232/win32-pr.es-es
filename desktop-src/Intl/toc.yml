@@ -379,7 +379,7 @@
                       href: /windows/win32/api/Winnls/ns-winnls-nlsversioninfoex
                     - name: NUMBERFMT
                       href: /windows/win32/api/Winnls/ns-winnls-numberfmta
-                - name: Tipos de enumeración de compatibilidad con el lenguaje nacional
+                - name: Tipos de enumeración de compatibilidad con lenguaje nacional
                   href: national-language-support-enumeration-types.md
                   items:
                     - name: CALDATETIME_DATEUNIT
@@ -399,11 +399,11 @@
                       href: calendar-identifiers.md
                     - name: Información de tipo de calendario
                       href: calendar-type-information.md
-                    - name: 'Imágenes con formato de día, mes, año y era'
+                    - name: 'Imágenes de formato de día, mes, año y era'
                       href: day--month--year--and-era-format-pictures.md
                     - name: 'Imágenes de hora, minuto y segundo formato'
                       href: hour--minute--and-second-format-pictures.md
-                    - name: Constantes y cadenas de identificador de idioma
+                    - name: Constantes y cadenas de identificador de lenguaje
                       href: language-identifier-constants-and-strings.md
                     - name: Constantes de información de configuración regional
                       href: locale-information-constants.md
@@ -649,7 +649,7 @@
                           href: /windows/desktop/api/Spellcheck/nf-spellcheck-ispellchecker-add
                         - name: add_SpellCheckerChanged método
                           href: /windows/desktop/api/Spellcheck/nf-spellcheck-ispellchecker-add_spellcheckerchanged
-                        - name: AutoCorrect (método)
+                        - name: Método AutoCorrect
                           href: /windows/desktop/api/Spellcheck/nf-spellcheck-ispellchecker-autocorrect
                         - name: Método Check
                           href: /windows/desktop/api/Spellcheck/nf-spellcheck-ispellchecker-check
@@ -659,7 +659,7 @@
                           href: /windows/desktop/api/Spellcheck/nf-spellcheck-ispellchecker-getoptiondescription
                         - name: Método GetOptionValue
                           href: /windows/desktop/api/Spellcheck/nf-spellcheck-ispellchecker-getoptionvalue
-                        - name: Ignore (método)
+                        - name: Método Ignore
                           href: /windows/desktop/api/Spellcheck/nf-spellcheck-ispellchecker-ignore
                         - name: remove_SpellCheckerChanged método
                           href: /windows/desktop/api/Spellcheck/nf-spellcheck-ispellchecker-remove_spellcheckerchanged
@@ -667,7 +667,7 @@
                           href: /windows/desktop/api/Spellcheck/nf-spellcheck-ispellchecker-suggest
                         - name: Propiedad Id
                           href: /windows/desktop/api/Spellcheck/nf-spellcheck-ispellchecker-get_id
-                        - name: Propiedad LanguageTag
+                        - name: 'LanguageTag, propiedad'
                           href: /windows/desktop/api/Spellcheck/nf-spellcheck-ispellchecker-get_languagetag
                         - name: 'LocalizedName, propiedad'
                           href: /windows/desktop/api/Spellcheck/nf-spellcheck-ispellchecker-get_localizedname
@@ -709,7 +709,7 @@
                           href: /windows/desktop/api/Spellcheckprovider/nf-spellcheckprovider-ispellcheckprovider-suggest
                         - name: Propiedad Id
                           href: /windows/desktop/api/Spellcheckprovider/nf-spellcheckprovider-ispellcheckprovider-get_id
-                        - name: Propiedad LanguageTag
+                        - name: 'LanguageTag, propiedad'
                           href: /windows/desktop/api/Spellcheckprovider/nf-spellcheckprovider-ispellcheckprovider-get_languagetag
                         - name: 'LocalizedName, propiedad'
                           href: /windows/desktop/api/Spellcheckprovider/nf-spellcheckprovider-ispellcheckprovider-get_localizedname
@@ -727,7 +727,7 @@
                     - name: ISpellingError
                       href: /windows/desktop/api/Spellcheck/nn-spellcheck-ispellingerror
                       items:
-                        - name: Propiedad Correctaction
+                        - name: 'CorrectivoAction, propiedad'
                           href: /windows/desktop/api/Spellcheck/nf-spellcheck-ispellingerror-get_correctiveaction
                         - name: Propiedad Length
                           href: /windows/desktop/api/Spellcheck/nf-spellcheck-ispellingerror-get_length
@@ -742,7 +742,7 @@
                           href: /windows/desktop/api/Spellcheck/nf-spellcheck-iuserdictionariesregistrar-registeruserdictionary
                         - name: Método UnregisterUserDictionary
                           href: /windows/desktop/api/Spellcheck/nf-spellcheck-iuserdictionariesregistrar-unregisteruserdictionary
-                - name: Enumeraciones de corrector ortográfica
+                - name: Enumeraciones de revisión ortográfica
                   href: spell-checker-enumerations.md
                   items:
                     - name: CORRECTIVE_ACTION
@@ -765,7 +765,7 @@
               href: hot-keys.md
             - name: Mensajes IME
               href: ime-messages.md
-            - name: Clase Window de IME
+            - name: Clase de ventana de IME
               href: ime-window-class.md
             - name: Contexto de entrada
               href: input-context.md
@@ -1506,16 +1506,16 @@
                   href: using-escape-sequences-and-control-characters.md
                 - name: Usar separadores de líneas y párrafos
                   href: using-line-and-paragraph-separators.md
-                - name: Usar caracteres sin espacio y signos diacríticos
+                - name: Usar caracteres sin espacio y caracteres diacríticos
                   href: using-nonspacing-characters-and-diacritics.md
-                - name: Usar cadenas terminadas en NULL
+                - name: Uso de cadenas terminadas en NULL
                   href: using-null-terminated-strings.md
             - name: 'Escribir, asignar y ordenar caracteres EUDC y PUA'
               href: writing-mapping-and-sorting-eudc-and-pua-characters.md
         - name: Referencia de unicode y juego de caracteres
           href: unicode-and-character-set-reference.md
           items:
-            - name: Funciones Unicode y juego de caracteres
+            - name: Funciones unicode y juego de caracteres
               href: unicode-and-character-set-functions.md
               items:
                 - name: BytesToUnicode
@@ -1540,12 +1540,12 @@
                   href: /previous-versions/windows/desktop/legacy/dd374082(v=vs.85)
                 - name: WideCharToMultiByte
                   href: /windows/desktop/api/Stringapiset/nf-stringapiset-widechartomultibyte
-            - name: Macros Unicode y juego de caracteres
+            - name: Macros unicode y juego de caracteres
               href: unicode-and-character-set-macros.md
               items:
                 - name: TEXT
                   href: /windows/desktop/api/Winnt/nf-winnt-text
-            - name: Estructuras Unicode y juego de caracteres
+            - name: Estructuras unicode y juego de caracteres
               href: unicode-and-character-set-structures.md
               items:
                 - name: CHARSETINFO

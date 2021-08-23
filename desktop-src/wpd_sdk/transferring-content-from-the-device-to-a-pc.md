@@ -4,35 +4,35 @@ ms.assetid: 76069097-a513-42f7-bdcc-a65714e95f0a
 title: Transferencia de contenido desde el dispositivo a un equipo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de06861ba74b4b7883c8d96e25cebe3fbb64e21c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3a8695f8158040e75a4aae40f95386ed70af45df56a137dabc944ab6d1771e69
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278310"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119806525"
 ---
 # <a name="transferring-content-from-the-device-to-a-pc"></a>Transferencia de contenido desde el dispositivo a un equipo
 
-Una operación común que realiza una aplicación de WPD es la transferencia de contenido desde un dispositivo conectado al equipo.
+Una operación común que realiza una aplicación WPD es la transferencia de contenido desde un dispositivo conectado al equipo.
 
-Las transferencias de contenido se realizan mediante las interfaces descritas en la tabla siguiente.
+Las transferencias de contenido se logran mediante las interfaces descritas en la tabla siguiente.
 
 
 
 | Interfaz                                                                | Descripción                                                     |
 |--------------------------------------------------------------------------|-----------------------------------------------------------------|
-| [**Interfaz IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)       | Proporciona acceso a la interfaz **IPortableDeviceProperties** . |
-| [**Interfaz IPortableDeviceProperties**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties) | Proporciona acceso a los métodos específicos de la propiedad.                   |
-| [**Interfaz IPortableDeviceResources**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledeviceresources)   | Se usa para almacenar las claves de propiedad para el perfil especificado.          |
+| [**IPortableDeviceContent (interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)       | Proporciona acceso a la **interfaz IPortableDeviceProperties.** |
+| [**IPortableDeviceProperties (interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties) | Proporciona acceso a métodos específicos de la propiedad.                   |
+| [**IPortableDeviceResources (interfaz)**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledeviceresources)   | Se usa para almacenar las claves de propiedad para el perfil determinado.          |
 | IStream (interfaz)                                                        | Se usa para leer y escribir los datos.                                |
 
 
 
  
 
-La `TransferContentFromDevice` función del módulo ContentTransfer. cpp de la aplicación de ejemplo muestra cómo una aplicación podría transferir información de contacto desde un dispositivo conectado a un equipo.
+La `TransferContentFromDevice` función del módulo ContentTransfer.cpp de la aplicación de ejemplo muestra cómo una aplicación podría transferir información de contacto desde un dispositivo conectado a un equipo.
 
-La primera tarea que se realiza mediante la `TransferContentFromDevice` función es solicitar al usuario que escriba un identificador de objeto para el objeto primario en el dispositivo (con el que se transferirá el contenido).
+La primera tarea que realiza la función es pedir al usuario que escriba un identificador de objeto para el objeto primario en el dispositivo (bajo el cual se transferirá `TransferContentFromDevice` el contenido).
 
 
 ```C++
@@ -64,7 +64,7 @@ if (FAILED(hr))
 
 
 
-El paso siguiente es la recuperación de un objeto **IPortableDeviceContent** que el ejemplo utiliza para tener acceso a los métodos específicos del contenido.
+El siguiente paso es la recuperación de un **objeto IPortableDeviceContent** que el ejemplo usa para acceder a los métodos específicos del contenido.
 
 
 ```C++
@@ -80,7 +80,7 @@ if (SUCCEEDED(hr))
 
 
 
-El paso siguiente es la recuperación de un objeto **IPortableDeviceResources** que el ejemplo utiliza para tener acceso a los métodos específicos del recurso.
+El siguiente paso es la recuperación de un **objeto IPortableDeviceResources** que el ejemplo usa para acceder a los métodos específicos del recurso.
 
 
 ```C++
@@ -96,7 +96,7 @@ if (SUCCEEDED(hr))
 
 
 
-El paso siguiente es la recuperación de un objeto IStream que el ejemplo utiliza para leer los datos que se transfieren desde el dispositivo.
+El siguiente paso es la recuperación de un objeto IStream que el ejemplo usa para leer los datos que se transfieren desde el dispositivo.
 
 
 ```C++
@@ -116,7 +116,7 @@ if (SUCCEEDED(hr))
 
 
 
-El siguiente paso es la recuperación del nombre de archivo del objeto en el dispositivo. Esta cadena se usa para crear el nombre de archivo correspondiente en el equipo. Si el objeto no tiene un nombre de archivo en el dispositivo, el identificador del objeto se convierte en una cadena y se usa para crear el nombre de archivo de destino.
+El siguiente paso es la recuperación del nombre de archivo del objeto en el dispositivo. Esta cadena se usa para crear el nombre de archivo correspondiente en el equipo. Si el objeto no tiene un nombre de archivo en el dispositivo, el identificador del objeto se convierte en una cadena y se usa para crear el nombre del archivo de destino.
 
 
 ```C++
@@ -164,7 +164,7 @@ if (SUCCEEDED(hr))
 
 
 
-Por último, el objeto IStream de origen se copia en el destino del equipo.
+Por último, el objeto IStream de origen se copia en el destino en el equipo.
 
 
 ```C++
@@ -195,13 +195,13 @@ if (SUCCEEDED(hr))
 
 <dl> <dt>
 
-[**Interfaz IPortableDevice**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)
+[**IPortableDevice (interfaz)**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)
 </dt> <dt>
 
-[**Interfaz IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)
+[**IPortableDeviceContent (interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)
 </dt> <dt>
 
-[**Interfaz IPortableDeviceValues**](iportabledevicevalues.md)
+[**IPortableDeviceValues (interfaz)**](iportabledevicevalues.md)
 </dt> <dt>
 
 [**Guía de programación**](programming-guide.md)

@@ -21,7 +21,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119783085"
 ---
-# <a name="mciwndm_new-message"></a>Mensaje MCIWNDM \_ NEW
+# <a name="mciwndm_new-message"></a>NUEVO mensaje de MCIWNDM \_
 
 El **mensaje MCIWNDM \_ NEW** crea un nuevo archivo para el dispositivo MCI actual. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndNew.**](/windows/desktop/api/Vfw/nf-vfw-mciwndnew)
 
@@ -47,13 +47,13 @@ Puntero a un búfer que contiene el nombre del dispositivo MCI que usará el arc
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
@@ -61,7 +61,7 @@ Devuelve cero si se realiza correctamente o se produce un error en caso contrari
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

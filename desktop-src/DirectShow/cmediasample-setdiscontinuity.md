@@ -1,7 +1,7 @@
 ---
-description: 'El método SetDiscontinuity especifica si este ejemplo representa una interrupción en el flujo de datos. Este método implementa el método IMediaSample:: SetDiscontinuity.'
+description: El método SetDiscontinuity especifica si este ejemplo representa una interrupción en el flujo de datos. Este método implementa el método IMediaSample::SetDiscontinuity.
 ms.assetid: 29072130-1ec7-4b5b-8a43-5308b1365527
-title: Método CMediaSample. SetDiscontinuity (Amfilter. h)
+title: Método CMediaSample.SetDiscontinuity (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 35565b2cee0284d0e5b9f85d7335a630b5f54e87
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4189498c60a52692c057a867dba8bc48c43d2b1c32fbd6091738a3711102f4b9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119832185"
 ---
-# <a name="cmediasamplesetdiscontinuity-method"></a>CMediaSample. SetDiscontinuity, método
+# <a name="cmediasamplesetdiscontinuity-method"></a>Método CMediaSample.SetDiscontinuity
 
-El `SetDiscontinuity` método especifica si este ejemplo representa una interrupción en el flujo de datos. Este método implementa el método [**IMediaSample:: SetDiscontinuity**](/windows/desktop/api/Strmif/nf-strmif-imediasample-setdiscontinuity) .
+El `SetDiscontinuity` método especifica si este ejemplo representa una interrupción en el flujo de datos. Este método implementa el [**método IMediaSample::SetDiscontinuity.**](/windows/desktop/api/Strmif/nf-strmif-imediasample-setdiscontinuity)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,17 +45,17 @@ HRESULT SetDiscontinuity(
 *bDiscont* 
 </dt> <dd>
 
-Valor booleano que especifica si este ejemplo es una discontinuidad. Si es **true**, el ejemplo multimedia es discontinuo con el ejemplo anterior.
+Valor booleano que especifica si este ejemplo es una discontinuidad. Si **es TRUE,** el ejemplo multimedia es discontinuo con el ejemplo anterior.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método actualiza la variable miembro [**CMediaSample:: m \_ dwFlags**](cmediasample-m-dwflags.md) , que especifica la propiedad discontinuidad.
+Este método actualiza la variable [**miembro CMediaSample::m \_ dwFlags,**](cmediasample-m-dwflags.md) que especifica la propiedad discontinuity.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Este método actualiza la variable miembro [**CMediaSample:: m \_ dwFlags**](cme
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Este método actualiza la variable miembro [**CMediaSample:: m \_ dwFlags**](cme
 
 <dl> <dt>
 
-[**Clase CMediaSample**](cmediasample.md)
+[**CMediaSample (clase)**](cmediasample.md)
 </dt> </dl>
 
  

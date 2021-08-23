@@ -4,12 +4,12 @@ ms.assetid: 25f3d06e-460c-4338-b05d-a6d2c10c2a12
 title: PnPXCompatibleId, elemento
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f4a02191e2186926e5f26e5609aec82ff87f851f
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: e3da5386f08414c1968ac654c9f59cd857b9f9b4fa5c80903298a5b2b0d4b1e3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996642"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119793995"
 ---
 # <a name="pnpxcompatibleid-element"></a>PnPXCompatibleId, elemento
 

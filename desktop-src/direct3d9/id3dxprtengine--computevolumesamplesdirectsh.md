@@ -1,7 +1,7 @@
 ---
-description: Calcula una proyección de iluminación distanl en vectores de base de armónicos esféricos (SH) que representan el incidente radiance en las ubicaciones especificadas.
+description: Calcula una proyección de iluminación lejana en vectores de base armónicos esféricos (SH) que representan el brillo de los incidentes en ubicaciones especificadas.
 ms.assetid: 4d07b288-aec1-48eb-8d27-f3d7d8cfb69e
-title: 'ID3DXPRTEngine:: ComputeVolumeSamplesDirectSH (método) (D3DX9Mesh. h)'
+title: Método ID3DXPRTEngine::ComputeVolumeSamplesDirectSH (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 757e227907eab73848f43b2b8e2f40f9b4b1071b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a3aaa8f9332a80e35ffde43d145be1ed885caeaca6d61e4eb9190baba09b73ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105708061"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119747765"
 ---
-# <a name="id3dxprtenginecomputevolumesamplesdirectsh-method"></a>ID3DXPRTEngine:: ComputeVolumeSamplesDirectSH (método)
+# <a name="id3dxprtenginecomputevolumesamplesdirectsh-method"></a>Método ID3DXPRTEngine::ComputeVolumeSamplesDirectSH
 
-Calcula una proyección de iluminación distanl en vectores de base de armónicos esféricos (SH) que representan el incidente radiance en las ubicaciones especificadas.
+Calcula una proyección de iluminación lejana en vectores de base armónicos esféricos (SH) que representan el brillo de los incidentes en ubicaciones especificadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,39 +44,39 @@ HRESULT ComputeVolumeSamplesDirectSH(
 
 <dl> <dt>
 
-*Ordenar* \[ de\]
+*OrderIn* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Orden de la representación SH de la iluminación Distant. Debe estar en el intervalo de [D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, ambos incluidos. El grado de evaluación es Orderen-1.
+Orden de la representación SH de iluminación lejana. Debe estar en el intervalo de [D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, ambos inclusive. El grado de la evaluación es OrderIn - 1.
 
 </dd> <dt>
 
-*OrderOut* \[ de\]
+*OrderOut* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Orden de la representación SH de la iluminación local. Debe estar en el intervalo de [D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, ambos incluidos. El grado de evaluación es OrderOut-1.
+Orden de la representación SH de la iluminación local. Debe estar en el intervalo de [D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, ambos inclusive. El grado de la evaluación es OrderOut - 1.
 
 </dd> <dt>
 
-*NumVolSamples.xml* \[ de\]
+*NumVolSamples.xml* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Número de ubicaciones de ejemplo.
 
 </dd> <dt>
 
-*pSampleLocs* \[ de\]
+*pSampleLocs* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Posición de cada ejemplo.
+Posición para cada muestra.
 
 </dd> <dt>
 
@@ -85,7 +85,7 @@ Posición de cada ejemplo.
 
 Tipo: **[ **LPD3DXPRTBUFFER**](id3dxprtbuffer.md)**
 
-Puntero a un objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) de salida que proyecta la iluminación lejana en vectores de base SH. Este búfer debe tener asignado el número adecuado de canales de color para la simulación. Este método genera orderis ² \* OrderOut "² scalars per Channel en cada ubicación de ejemplo.
+Puntero a un objeto [**ID3DXPRTBuffer de**](id3dxprtbuffer.md) salida que proyecta la iluminación lejana en vectores de base SH. Este búfer debe tener asignado el número adecuado de canales de color para la simulación. Este método genera OrderInntes \* OrderOut"miento escalares por canal en cada ubicación de ejemplo.
 
 </dd> </dl>
 
@@ -93,13 +93,13 @@ Puntero a un objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) de salida que proyec
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método calcula cómo llega la luz de un origen distante en cada punto del espacio especificado por pSampleLocs. Los coeficientes SH representan la asignación, en cada punto de pSampleLocs, de Radiance de origen a Radiance de incidente transferido.
+Este método calcula cómo llega la luz de un origen lejano a cada punto del espacio especificado por pSampleLocs. Los coeficientes sh representan la asignación, en cada punto pSampleLocs, de la radiancia de origen a la radiación del incidente transferido.
 
-Para usar este método correctamente, debe establecer el muestreo en una esfera con UseSphere = **true** y UseCosine = **false** en [**ID3DXPRTEngine:: SetSamplingInfo**](id3dxprtengine--setsamplinginfo.md); de lo contrario, este método devolverá un error con D3DERR \_ INVALIDCALL.
+Para usar este método correctamente, debe establecer el muestreo en una esfera con UseSphere = **TRUE** y UseCosine = **FALSE** en [**ID3DXPRTEngine::SetSamplingInfo**](id3dxprtengine--setsamplinginfo.md); De lo contrario, este método devolverá un error con D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -107,8 +107,8 @@ Para usar este método correctamente, debe establecer el muestreo en una esfera 
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -19,7 +19,7 @@ ms.locfileid: "119782885"
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Clase base para JET_err. Excepciones LogSectorSizeMismatch.
+Clase base para JET_err. Excepciones logSectorSizeMismatch.
 
 El [tipo EsentLogSectorSizeMismatchException](./esentlogsectorsizemismatchexception-class.md) expone los miembros siguientes.
 
@@ -164,7 +164,7 @@ Superior
 
 Superior
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

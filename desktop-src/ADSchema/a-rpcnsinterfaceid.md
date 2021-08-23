@@ -1,11 +1,11 @@
 ---
-title: atributo RPC-NS-interface-ID
-description: IDENTIFICADOR de interfaz admitido por un servidor determinado.
+title: Atributo rpc-Ns-Interface-ID
+description: Identificador de interfaz compatible con un servidor determinado.
 ms.assetid: 9d9aa445-a4d8-4665-8cc4-66ba2028e3ec
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de ID. de interfaz de RPC-NS-interface
-- rpcNsInterfaceID esquema de AD de atributos
+- Esquema de AD del atributo rpc-Ns-Interface-ID
+- Esquema de AD del atributo rpcNsInterfaceID
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ceffd419e65cac9e7a69d8c386c718e3845609d6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b4e11c6264898eccbc46cad1a0733ebc0eeb4a277e38ec3eb953789cc557c57e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104493714"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837075"
 ---
-# <a name="rpc-ns-interface-id-attribute"></a>atributo RPC-NS-interface-ID
+# <a name="rpc-ns-interface-id-attribute"></a>Atributo rpc-Ns-Interface-ID
 
-IDENTIFICADOR de interfaz admitido por un servidor determinado.
+Identificador de interfaz compatible con un servidor determinado.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | IDENTIFICADOR de la interfaz de RPC-NS                         |
-| Nombre para mostrar de LDAP | rpcNsInterfaceID                            |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | rpc-Ns-Interface-ID                         |
+| Ldap-Display-Name | rpcNsInterfaceID                            |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.115                      |
-| System-ID-GUID    | bf967a25-0de6-11d0-a285-00aa003049e2        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | bf967a25-0de6-11d0-a285-00aa003049e2        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,18 +55,18 @@ IDENTIFICADOR de interfaz admitido por un servidor determinado.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                        |
+| Id. de vínculo                | \-                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                        |
-| System-Only            | False                                                                                                                     |
-| Tiene un único valor       | True                                                                                                                      |
-| Está indexado             | True                                                                                                                      |
-| En el catálogo global      | False                                                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                              |
+| System-Only            | Falso                                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                                      |
+| Está indexado             | Verdadero                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                              |
 | Range-Lower            | \-                                                                                                                        |
 | Range-Upper            | \-                                                                                                                        |
 | Search-Flags           | 0x00000001                                                                                                                |
 | System-Flags           | 0x00000010                                                                                                                |
-| Clases usadas en        | [**Elemento de Perfil de RPC**](c-rpcprofileelement.md)<br/> [**Elemento RPC-Server-**](c-rpcserverelement.md)<br/> |
+| Clases usadas en        | [**rpc-Profile-Element**](c-rpcprofileelement.md)<br/> [**rpc-Server-Element**](c-rpcserverelement.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ IDENTIFICADOR de interfaz admitido por un servidor determinado.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                        |
+| Id. de vínculo                | \-                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                        |
-| System-Only            | False                                                                                                                     |
-| Tiene un único valor       | True                                                                                                                      |
-| Está indexado             | True                                                                                                                      |
-| En el catálogo global      | False                                                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                              |
+| System-Only            | Falso                                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                                      |
+| Está indexado             | Verdadero                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                              |
 | Range-Lower            | \-                                                                                                                        |
 | Range-Upper            | \-                                                                                                                        |
 | Search-Flags           | 0x00000001                                                                                                                |
 | System-Flags           | 0x00000010                                                                                                                |
-| Clases usadas en        | [**Elemento de Perfil de RPC**](c-rpcprofileelement.md)<br/> [**Elemento RPC-Server-**](c-rpcserverelement.md)<br/> |
+| Clases usadas en        | [**rpc-Profile-Element**](c-rpcprofileelement.md)<br/> [**rpc-Server-Element**](c-rpcserverelement.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ IDENTIFICADOR de interfaz admitido por un servidor determinado.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                        |
+| Id. de vínculo                | \-                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                        |
-| System-Only            | False                                                                                                                     |
-| Tiene un único valor       | True                                                                                                                      |
-| Está indexado             | True                                                                                                                      |
-| En el catálogo global      | False                                                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                              |
+| System-Only            | Falso                                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                                      |
+| Está indexado             | Verdadero                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                              |
 | Range-Lower            | \-                                                                                                                        |
 | Range-Upper            | \-                                                                                                                        |
 | Search-Flags           | 0x00000001                                                                                                                |
 | System-Flags           | 0x00000010                                                                                                                |
-| Clases usadas en        | [**Elemento de Perfil de RPC**](c-rpcprofileelement.md)<br/> [**Elemento RPC-Server-**](c-rpcserverelement.md)<br/> |
+| Clases usadas en        | [**rpc-Profile-Element**](c-rpcprofileelement.md)<br/> [**rpc-Server-Element**](c-rpcserverelement.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ IDENTIFICADOR de interfaz admitido por un servidor determinado.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                        |
+| Id. de vínculo                | \-                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                        |
-| System-Only            | False                                                                                                                     |
-| Tiene un único valor       | True                                                                                                                      |
-| Está indexado             | True                                                                                                                      |
-| En el catálogo global      | False                                                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                              |
+| System-Only            | Falso                                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                                      |
+| Está indexado             | Verdadero                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                              |
 | Range-Lower            | \-                                                                                                                        |
 | Range-Upper            | \-                                                                                                                        |
 | Search-Flags           | 0x00000001                                                                                                                |
 | System-Flags           | 0x00000010                                                                                                                |
-| Clases usadas en        | [**Elemento de Perfil de RPC**](c-rpcprofileelement.md)<br/> [**Elemento RPC-Server-**](c-rpcserverelement.md)<br/> |
+| Clases usadas en        | [**rpc-Profile-Element**](c-rpcprofileelement.md)<br/> [**rpc-Server-Element**](c-rpcserverelement.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ IDENTIFICADOR de interfaz admitido por un servidor determinado.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                        |
+| Id. de vínculo                | \-                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                        |
-| System-Only            | False                                                                                                                     |
-| Tiene un único valor       | True                                                                                                                      |
-| Está indexado             | True                                                                                                                      |
-| En el catálogo global      | False                                                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                              |
+| System-Only            | Falso                                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                                      |
+| Está indexado             | Verdadero                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                              |
 | Range-Lower            | \-                                                                                                                        |
 | Range-Upper            | \-                                                                                                                        |
 | Search-Flags           | 0x00000001                                                                                                                |
 | System-Flags           | 0x00000010                                                                                                                |
-| Clases usadas en        | [**Elemento de Perfil de RPC**](c-rpcprofileelement.md)<br/> [**Elemento RPC-Server-**](c-rpcserverelement.md)<br/> |
+| Clases usadas en        | [**rpc-Profile-Element**](c-rpcprofileelement.md)<br/> [**rpc-Server-Element**](c-rpcserverelement.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ IDENTIFICADOR de interfaz admitido por un servidor determinado.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                        |
+| Id. de vínculo                | \-                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                        |
-| System-Only            | False                                                                                                                     |
-| Tiene un único valor       | True                                                                                                                      |
-| Está indexado             | True                                                                                                                      |
-| En el catálogo global      | False                                                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                              |
+| System-Only            | Falso                                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                                      |
+| Está indexado             | Verdadero                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                              |
 | Range-Lower            | \-                                                                                                                        |
 | Range-Upper            | \-                                                                                                                        |
 | Search-Flags           | 0x00000001                                                                                                                |
 | System-Flags           | 0x00000010                                                                                                                |
-| Clases usadas en        | [**Elemento de Perfil de RPC**](c-rpcprofileelement.md)<br/> [**Elemento RPC-Server-**](c-rpcserverelement.md)<br/> |
+| Clases usadas en        | [**rpc-Profile-Element**](c-rpcprofileelement.md)<br/> [**rpc-Server-Element**](c-rpcserverelement.md)<br/> |
 
 
 
