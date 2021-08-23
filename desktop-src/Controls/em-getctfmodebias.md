@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_GETCTFMODEBIAS (RichEdit. h)
-description: Obtiene los valores de sesgo del modo de marco de trabajo de servicios de texto para un control Rich Edit de Microsoft.
+title: EM_GETCTFMODEBIAS mensaje (Richedit.h)
+description: Obtiene los valores Text Services Framework de sesgo del modo de actualización para un control Microsoft Rich Edit.
 ms.assetid: 2421d37d-169d-480f-a5f7-4c6033ca6c1a
 keywords:
-- EM_GETCTFMODEBIAS controles de mensajes de Windows
+- EM_GETCTFMODEBIAS controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 109d5eabbddca1c13fefae99c29d8c550fbd274e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 60d6e030e3080ec9bf3d801583b9ade182483ba8560b3eccb2fb9813be7d39cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150406"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019753"
 ---
-# <a name="em_getctfmodebias-message"></a>\_Mensaje GETCTFMODEBIAS em
+# <a name="em_getctfmodebias-message"></a>Mensaje \_ EM GETCTFMODEBIAS
 
-Obtiene los valores de sesgo del modo de marco de trabajo de servicios de texto para un control Rich Edit de Microsoft.
+Obtiene los valores Text Services Framework de sesgo del modo de actualización para un control Microsoft Rich Edit.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,24 +32,24 @@ Obtiene los valores de sesgo del modo de marco de trabajo de servicios de texto 
 *wParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Valor de diferencia del modo de marco de servicios de texto actual.
+Valor de sesgo Text Services Framework modo actual.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener la diferencia del modo IME, llame a [**em \_ GETIMEMODEBIAS**](em-getimemodebias.md).
+Para obtener el sesgo del modo IME, llame a [**EM \_ GETIMEMODEBIAS**](em-getimemodebias.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,9 +57,9 @@ Para obtener la diferencia del modo IME, llame a [**em \_ GETIMEMODEBIAS**](em-g
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP con SP1 \[\]<br/>                                  |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de escritorio de SP1 \[\]<br/>                                  |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -70,10 +70,10 @@ Para obtener la diferencia del modo IME, llame a [**em \_ GETIMEMODEBIAS**](em-g
 **Referencia**
 </dt> <dt>
 
-[**\_SETCTFMODEBIAS em**](em-setctfmodebias.md)
+[**EM \_ SETCTFMODEBIAS**](em-setctfmodebias.md)
 </dt> <dt>
 
-[**\_GETIMEMODEBIAS em**](em-getimemodebias.md)
+[**EM \_ GETIMEMODEBIAS**](em-getimemodebias.md)
 </dt> </dl>
 
  

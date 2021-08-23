@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10.h
-ms.openlocfilehash: ab163149493ad73f892a251a691ad82544d7f382
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1ef80db70d0562b000aa527afe17da43eee0eed5d6498e5da5b3d1ad964f5f87
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119282785"
 ---
 # <a name="d3dx10_attribute_weights-structure"></a>Estructura D3DX10 \_ ATTRIBUTE \_ WEIGHTS
 
-Especifica los atributos de peso de malla.
+Especifica atributos de peso de malla.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -136,7 +136,7 @@ Binormal.
 
 ## <a name="remarks"></a>Comentarios
 
-En esta estructura se describe cómo una operación de simplificación considerará los datos de vértices al calcular los costos relativos entre los bordes que se contrae. Por ejemplo, si el campo Normal es 0,0, la operación de simplificación omitirá el componente normal del vértice al calcular el error para el contraer. Sin embargo, si el campo Normal es 1.0, la operación de simplificación usará el componente normal del vértice. Si el campo Normal es 2.0, duplica la cantidad de errores; si el campo Normal es 4.0, a continuación, se multiplica el número de errores, y así sucesivamente.
+En esta estructura se describe cómo una operación de simplificación considerará los datos de vértices al calcular los costos relativos entre los bordes con contraer. Por ejemplo, si el campo Normal es 0,0, la operación de simplificación omitirá el componente normal del vértice al calcular el error para el contrae. Sin embargo, si el campo Normal es 1.0, la operación de simplificación usará el componente normal del vértice. Si el campo Normal es 2.0, duplicó la cantidad de errores; si el campo Normal es 4.0, a continuación, el número de errores, y así sucesivamente.
 
 El tipo LPD3DX ATTRIBUTE WEIGHTS se define como un puntero a la estructura \_ \_ D3DX \_ ATTRIBUTE \_ WEIGHTS.
 
@@ -157,7 +157,7 @@ El tipo LPD3DX ATTRIBUTE WEIGHTS se define como un puntero a la estructura \_ \_
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-Primary-Computer
+title: Atributo ms-DS-Primary-Computer
 description: Para un objeto de usuario o grupo, identifica los equipos principales.
 ms.assetid: 627e7885-4e32-4dd9-a7b4-7e8c505cac85
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-Primary-Computer
-- Esquema de AD de atributo msDS-PrimaryComputer
+- Esquema de AD del atributo ms-DS-Primary-Computer
+- Esquema de AD del atributo msDS-PrimaryComputer
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 47f960bccd6067b8d31e7782a0d8d46a806ee7bb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8193ed84eab93e36d12d3ef370362df7d7b407863c921981b867525a32e3c015
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119294365"
 ---
-# <a name="ms-ds-primary-computer-attribute"></a>atributo MS-DS-Primary-Computer
+# <a name="ms-ds-primary-computer-attribute"></a>Atributo ms-DS-Primary-Computer
 
 Para un objeto de usuario o grupo, identifica los equipos principales.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | MS-DS-principal-equipo                  |
-| Nombre para mostrar de LDAP | msDS-PrimaryComputer                    |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | ms-DS-Primary-Computer                  |
+| Ldap-Display-Name | msDS-PrimaryComputer                    |
+| Size              | \-                                      |
+| Privilegio actualizar  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.2167                 |
-| System-ID-GUID    | a13df4e2-dbb0-4ceb-828b-8b2e143e9e81    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | a13df4e2-dbb0-4ceb-828b-8b2e143e9e81    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -50,13 +50,13 @@ Para un objeto de usuario o grupo, identifica los equipos principales.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------|
-| Identificador de vínculo                | 2186                                                                  |
+| Id. de vínculo                | 2186                                                                  |
 | MAPI-Id                | \-                                                                    |
-| System-Only            | False                                                                 |
-| Tiene un único valor       | False                                                                 |
-| Está indexado             | True                                                                  |
-| En el catálogo global      | True                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                          |
+| System-Only            | Falso                                                                 |
+| Es de un solo valor       | Falso                                                                 |
+| Está indexado             | Verdadero                                                                  |
+| En el catálogo global      | Verdadero                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000001                                                            |

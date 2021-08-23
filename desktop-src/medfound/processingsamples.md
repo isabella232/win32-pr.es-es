@@ -1,25 +1,25 @@
 ---
-description: Procesamiento de entradas y salidas de códecs DMO
+description: Procesamiento de códecs DMO entrada y salida
 ms.assetid: fab6244e-a20e-4395-a82c-0905e3225516
-title: Procesamiento de entradas y salidas de códecs DMO
+title: Procesamiento de códecs DMO entrada y salida
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 05c6781d877f4c863161537fcc5b6a746691cfe1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1e3b159ea9e8a323a8e980b9dbba227aa2a62d76316b90e09f45592044091f81
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360481"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119035093"
 ---
-# <a name="processing-codec-dmo-input-and-output"></a>Procesamiento de entradas y salidas de códecs DMO
+# <a name="processing-codec-dmo-input-and-output"></a>Procesamiento de códecs DMO entrada y salida
 
-Cuando haya configurado el tipo de entrada y de salida para un DMO, puede empezar a procesar los ejemplos de datos. Pase ejemplos a DMO para su procesamiento mediante el método **IMediaObject::P rocessinput** y, a continuación, recupere el ejemplo procesado llamando a **IMediaObject::P rocessoutput**. Debe establecer las marcas de tiempo y duraciones precisas para todos los ejemplos de entrada pasados. Las marcas de tiempo no son estrictamente necesarias pero ayudan a mantener la sincronización de audio y vídeo. Si no dispone de las marcas de tiempo para los ejemplos, es mejor dejarlas de usar valores inciertos.
+Cuando haya configurado el tipo de entrada y el tipo de salida para un DMO, puede empezar a procesar ejemplos de datos. Se pasan ejemplos al DMO para su procesamiento mediante el método **IMediaObject::P rocessInput** y, a continuación, se recupera el ejemplo procesado mediante una llamada a **IMediaObject::P rocessOutput**. Debe establecer marcas de tiempo y duraciones precisas para todas las muestras de entrada pasadas. Las marcas de tiempo no son estrictamente necesarias, pero ayudan a mantener la sincronización de audio y vídeo. Si no tiene las marcas de tiempo de los ejemplos, es mejor dejarlos fuera que usar valores no seguros.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Trabajar con códec DMOs](workingwithcodecdmos.md)
+[Trabajar con DDO de códec](workingwithcodecdmos.md)
 </dt> </dl>
 
  

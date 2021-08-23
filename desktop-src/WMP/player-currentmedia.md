@@ -1,9 +1,9 @@
 ---
-title: Player. currentMedia
-description: La propiedad currentMedia especifica o recupera el objeto multimedia actual.
+title: Player.currentMedia
+description: La propiedad currentMedia especifica o recupera el objeto Media actual.
 ms.assetid: 5cf45a10-9d0d-435e-97f1-d2c9c51f4b47
 keywords:
-- Media Player de Windows Player. currentMedia
+- Player.currentMedia Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,34 +14,34 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea90b7be72bcb10a8ec0d3c49116f3effceb9a93
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7df5e8cd2032d772cbd781d0b45794e86cc19eff7c730a6a963778d54a6f283d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699697"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054403"
 ---
-# <a name="playercurrentmedia"></a>Player. currentMedia
+# <a name="playercurrentmedia"></a>Player.currentMedia
 
-La propiedad **currentMedia** especifica o recupera el objeto multimedia actual.
+La **propiedad currentMedia** especifica o recupera el objeto Media actual.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
-*reproductor* . **currentMedia**
+*player* . **currentMedia**
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es un objeto multimedia de lectura/escritura.
+Esta propiedad es un objeto Multimedia de lectura y escritura.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Es si se trata de la *configuración*. la propiedad **autoStart** es true, la reproducción se inicia automáticamente cada vez que se establece **currentMedia**.
+Si el *Configuración*. **La propiedad autoStart** es true, la reproducción comienza automáticamente cada vez que se **establece currentMedia.**
 
-Esta propiedad toma un objeto multimedia, que se puede adquirir mediante la *lista de reproducción*. **elemento**. Para cargar un elemento **multimedia** con un nombre de archivo, establezca la propiedad URL o use **newMedia**.
+Esta propiedad toma un objeto Media, que se puede adquirir mediante la lista de *reproducción*. **elemento**. Para cargar un **elemento multimedia** con un nombre de archivo, establezca la propiedad URL o use **newMedia**.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de JScript se recupera el primer elemento multimedia de la biblioteca. A continuación, usa **currentMedia** para convertir el elemento multimedia recuperado en el elemento multimedia actual y, después, para mostrar el nombre del elemento multimedia actual. El objeto **Player** se creó con ID = "Player".
+En el JScript siguiente se recupera el primer elemento multimedia de la biblioteca. A continuación, **usa currentMedia** para convertir el elemento multimedia recuperado en el elemento multimedia actual y, a continuación, para mostrar el nombre del elemento multimedia actual. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -61,9 +61,9 @@ document.write("Found first media item. Name = " + Player.currentMedia.name);
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -78,13 +78,13 @@ document.write("Found first media item. Name = " + Player.currentMedia.name);
 [**Objeto Player**](player-object.md)
 </dt> <dt>
 
-[**Player. newMedia**](player-newmedia.md)
+[**Player.newMedia**](player-newmedia.md)
 </dt> <dt>
 
-[**Playlist. Item**](playlist-item.md)
+[**Playlist.item**](playlist-item.md)
 </dt> <dt>
 
-[**Configuración. Inicio automático**](settings-autostart.md)
+[**Configuración.autoStart**](settings-autostart.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Función FreeRootCauseInfos (Ndattributils. h)
+title: Función FreeRootCauseInfos (Ndattributils.h)
 description: Desasigna la memoria asignada internamente a una matriz de estructuras RootCauseInfo.
 ms.assetid: b45fa432-0db4-470b-80ce-ae25c33f88d6
 keywords:
-- FreeRootCauseInfos función NDF
+- Función FreeRootCauseInfos NDF
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 97d302a1c58f1a77aafa7611f437f3d445f29f9a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f9cbd0386af86ebe5e1fdc5e6350cebfb305f44544f8822e0f2bde4d46cb55f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801820"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065245"
 ---
-# <a name="freerootcauseinfos-function"></a>FreeRootCauseInfos función)
+# <a name="freerootcauseinfos-function"></a>Función FreeRootCauseInfos
 
-La función **FreeRootCauseInfos** desasigna la memoria asignada internamente a una matriz de estructuras [**RootCauseInfo**](/windows/win32/api/ndattrib/ns-ndattrib-rootcauseinfo) . Esta función llama a [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) para desasignar memoria.
+La **función FreeRootCauseInfos** desasigna la memoria asignada internamente a una matriz de [**estructuras RootCauseInfo.**](/windows/win32/api/ndattrib/ns-ndattrib-rootcauseinfo) Esta función llama [**a CoTaskMemFree para**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) desasignar memoria.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,30 +42,30 @@ VOID FreeRootCauseInfos(
 
 <dl> <dt>
 
-*Pinfo* \[ de\]
+*pInfo* \[ En\]
 </dt> <dd>
 
-Tipo: **[**RootCauseInfo**](/windows/win32/api/ndattrib/ns-ndattrib-rootcauseinfo) \** _
+Tipo: **[ **RootCauseInfo**](/windows/win32/api/ndattrib/ns-ndattrib-rootcauseinfo)\***
 
-Matriz de estructuras. La memoria asignada a la que apuntan estas estructuras se liberará.
+Matriz de estructuras. Se liberará la memoria asignada a la que apuntan estas estructuras.
 
 </dd> <dt>
 
-_RootCauseCount * 
+*RootCauseCount* 
 </dt> <dd>
 
-Tipo: **ULong**
+Tipo: **ULONG**
 
-El número de estructuras de la matriz a las que apunta *Pinfo*.
+Número de estructuras de la matriz a las que apunta *pInfo*.
 
 </dd> <dt>
 
 *bFreePointer* 
 </dt> <dd>
 
-Tipo: **bool**
+Tipo: **BOOL**
 
-True si también se debe eliminar la matriz de estructuras; en caso contrario, false.
+True si también se debe eliminar la matriz de estructuras; de lo contrario, false.
 
 </dd> </dl>
 
@@ -79,9 +79,9 @@ Esta función no devuelve ningún valor.
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                 |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                       |
-| Encabezado<br/>                   | <dl> <dt>Ndattributils. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                 |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                       |
+| Header<br/>                   | <dl> <dt>Ndattributils.h</dt> </dl> |
 
 
 

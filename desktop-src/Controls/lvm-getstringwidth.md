@@ -1,9 +1,9 @@
 ---
-title: Mensaje de LVM_GETSTRINGWIDTH (commctrl. h)
-description: Determina el ancho de una cadena especificada utilizando la fuente actual del control de vista de lista especificada. Puede enviar este mensaje explícitamente o mediante la \_ macro GetStringWidth de ListView.
+title: LVM_GETSTRINGWIDTH mensaje (Commctrl.h)
+description: Determina el ancho de una cadena especificada utilizando la fuente actual del control list-view especificado. Puede enviar este mensaje explícitamente o mediante la macro \_ ListView GetStringWidth.
 ms.assetid: ffe97640-d4b6-45ae-be5d-71fed69c2026
 keywords:
-- LVM_GETSTRINGWIDTH controles de mensajes de Windows
+- LVM_GETSTRINGWIDTH controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 71e27512eb7a2a260976356ed2a128b48975f9f3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9024cab94f59e543351e06d49ec058435ae369b6b746b1dc3fb2cd0472e3d57e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535038"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019313"
 ---
-# <a name="lvm_getstringwidth-message"></a>\_Mensaje GETSTRINGWIDTH LVM
+# <a name="lvm_getstringwidth-message"></a>Mensaje \_ GETSTRINGWIDTH de LVM
 
-Determina el ancho de una cadena especificada utilizando la fuente actual del control de vista de lista especificada. Puede enviar este mensaje explícitamente o mediante la macro [**\_ GetStringWidth de ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getstringwidth) .
+Determina el ancho de una cadena especificada utilizando la fuente actual del control list-view especificado. Puede enviar este mensaje explícitamente o mediante la macro [**\_ ListView GetStringWidth.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getstringwidth)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -43,11 +43,11 @@ Puntero a una cadena terminada en NULL.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el ancho de la cadena si se realiza correctamente o cero en caso contrario.
+Devuelve el ancho de cadena si se realiza correctamente o cero en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El \_ mensaje LVM GETSTRINGWIDTH devuelve el ancho exacto, en píxeles, de la cadena especificada. Si usa el ancho de cadena devuelto como el ancho de columna en el mensaje [**LVM \_ SETCOLUMNWIDTH**](lvm-setcolumnwidth.md) , la cadena se truncará. Para recuperar el ancho de columna que puede contener la cadena sin truncarla, debe agregar relleno al ancho de la cadena devuelta.
+El mensaje LVM \_ GETSTRINGWIDTH devuelve el ancho exacto, en píxeles, de la cadena especificada. Si usa el ancho de cadena devuelto como ancho de columna en el mensaje [**LVM \_ SETCOLUMNWIDTH,**](lvm-setcolumnwidth.md) la cadena se truncará. Para recuperar el ancho de columna que puede contener la cadena sin truncarla, debe agregar relleno al ancho de cadena devuelto.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,10 +55,10 @@ El \_ mensaje LVM GETSTRINGWIDTH devuelve el ancho exacto, en píxeles, de la ca
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
-| Nombres Unicode y ANSI<br/>   | **LVM \_ GETSTRINGWIDTHW** (Unicode) y **\_ GETSTRINGWIDTHA de LVM** (ANSI)<br/>     |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Nombres Unicode y ANSI<br/>   | **LVM \_ GETSTRINGWIDTHW** (Unicode) y **LVM \_ GETSTRINGWIDLG** (ANSI)<br/>     |
 
 
 

@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: InstanceParameters. MaxOpenTables (propiedad)'
-title: Propiedad InstanceParameters. MaxOpenTables
+description: 'Más información sobre: Propiedad InstanceParameters.MaxOpenTables'
+title: Propiedad InstanceParameters.MaxOpenTables
 TOCTitle: 'MaxOpenTables property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.InstanceParameters.MaxOpenTables
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instanceparameters.maxopentables(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 623d2f1fe536fb2b5916c96e97de8904fa5a7c86
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 30129e66a05116bfaab28fe737584c89b8b74fb0c8722b3d772c643f5165cffe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716548"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119039393"
 ---
-# <a name="instanceparametersmaxopentables-property"></a>Propiedad InstanceParameters. MaxOpenTables
+# <a name="instanceparametersmaxopentables-property"></a>Propiedad InstanceParameters.MaxOpenTables
 
-Obtiene o establece el número de recursos de árbol B + reservados para esta instancia.
+Obtiene o establece el número de recursos de árbol B+ reservados para esta instancia.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,7 +62,7 @@ public int MaxOpenTables { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vea también
 
@@ -70,6 +70,6 @@ Tipo: [System. Int32](/dotnet/api/system.int32)
 
 [Clase InstanceParameters](./instanceparameters-class.md)
 
-[Miembros de InstanceParameters](./instanceparameters-members.md)
+[Miembros instanceParameters](./instanceparameters-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

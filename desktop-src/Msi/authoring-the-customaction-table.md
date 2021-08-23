@@ -1,21 +1,21 @@
 ---
-description: Escriba los registros de las cinco acciones personalizadas de ejemplo creadas en la sección anterior en la tabla CustomAction. Para obtener más información sobre cómo rellenar la tabla CustomAction para este tipo de acción personalizada, vea acción personalizada tipo 1.
+description: Escriba los registros de las cinco acciones personalizadas de ejemplo creadas en la sección anterior en la tabla CustomAction. Para obtener más información sobre cómo rellenar la tabla CustomAction para este tipo de acción personalizada, vea Tipo de acción personalizada 1.
 ms.assetid: 56828105-bd72-426d-833f-f756c577c77f
 title: Creación de la tabla CustomAction
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 56fb7d8cf99a30200e6a5525e3516e2b888c1129
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9b618da6e88718aa59483b3b25c007ff0b41eb89f6e1dc18a7eb31563632dc54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001723"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119066085"
 ---
 # <a name="authoring-the-customaction-table"></a>Creación de la tabla CustomAction
 
-Escriba los registros de las cinco acciones personalizadas de ejemplo creadas en la sección anterior en la [tabla CustomAction](customaction-table.md). Para obtener más información sobre cómo rellenar la tabla CustomAction para este tipo de acción personalizada, vea [acción personalizada tipo 1](custom-action-type-1.md).
+Escriba los registros de las cinco acciones personalizadas de ejemplo creadas en la sección anterior en [la tabla CustomAction](customaction-table.md). Para obtener más información sobre cómo rellenar la tabla CustomAction para este tipo de acción personalizada, vea [Custom Action Type 1](custom-action-type-1.md).
 
-[Tabla CustomAction](customaction-table.md)
+[CustomAction (tabla)](customaction-table.md)
 
 
 
@@ -31,7 +31,7 @@ Escriba los registros de las cinco acciones personalizadas de ejemplo creadas en
 
  
 
-El código fuente de C++ de las bibliotecas de vínculos dinámicos se proporciona en el SDK de Windows Installer. Use Process. cpp para crear el archivo Process.dll. Utilice Create. cpp para crear el archivo Create.dll. Utilice Remove. cpp para crear Remove.dll. Agregue estos archivos de biblioteca de vínculos dinámicos a la tabla binaria.
+El código fuente de C++ para las bibliotecas de vínculos dinámicos se proporciona en el SDK Windows Installer. Use Process.cpp para crear el archivo Process.dll. Use Create.cpp para crear el archivo Create.dll. Use Remove.cpp para crear Remove.dll. Agregue estos archivos de biblioteca de vínculos dinámicos a la tabla Binaria.
 
 [Tabla binaria](binary-table.md)
 
@@ -47,7 +47,7 @@ El código fuente de C++ de las bibliotecas de vínculos dinámicos se proporcio
 
  
 
-Continúe [agregando una tabla CustomUserAccounts personalizada](adding-a-custom-customuseraccounts-table.md).
+Continúe con [Agregar una tabla CustomUserAccounts personalizada.](adding-a-custom-customuseraccounts-table.md)
 
  
 

@@ -4,23 +4,23 @@ ms.assetid: 24ee4959-9ec7-466f-a39d-4249cf7c1ca8
 title: Propiedades de IWindowsDriverUpdate4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f895c92289d81a55cc8ec39b385c212dd4bf6c75
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: af074b0fa22d7c08aa6747af7335173c5360979bb6af0003162facecb848b109
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119130417"
 ---
 # <a name="iwindowsdriverupdate4-properties"></a>Propiedades de IWindowsDriverUpdate4
 
-La interfaz [**IWindowsDriverUpdate4**](/windows/desktop/api/Wuapi/nn-wuapi-iwindowsdriverupdate4) define las siguientes propiedades.
+La [**interfaz IWindowsDriverUpdate4**](/windows/desktop/api/Wuapi/nn-wuapi-iwindowsdriverupdate4) define las siguientes propiedades.
 
 
 
 | Propiedad                                                                               | Descripción                                                                 |
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| [**Perusuario**](/windows/desktop/api/Wuapi/nf-wuapi-iwindowsdriverupdate4-get_peruser)                                       | Obtiene un valor booleano que indica si una actualización es una actualización por usuario. |
-| [**WindowsDriverUpdateEntries**](/windows/desktop/api/Wuapi/nf-wuapi-iwindowsdriverupdate4-get_windowsdriverupdateentries) | Obtiene las entradas de actualización de controladores aplicables a la actualización.          |
+| [**PerUser**](/windows/desktop/api/Wuapi/nf-wuapi-iwindowsdriverupdate4-get_peruser)                                       | Obtiene un valor booleano que indica si una actualización es una actualización por usuario. |
+| [**WindowsDriverUpdateEntries**](/windows/desktop/api/Wuapi/nf-wuapi-iwindowsdriverupdate4-get_windowsdriverupdateentries) | Obtiene las entradas de actualización del controlador que son aplicables a la actualización.          |
 
 
 

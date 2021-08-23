@@ -1,7 +1,7 @@
 ---
-description: El método SourceListForceResolution borra la última propiedad de origen utilizada.
+description: El método SourceListForceResolution borra la última propiedad de origen usada.
 ms.assetid: 9ecfdf6e-4fed-46fc-8956-85d20cbe5327
-title: Patch. SourceListForceResolution (método)
+title: Patch.SourceListForceResolution (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: f9a44d08c05b4ece24cf3c8c8d3be42e210aec32
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a02e538a1d61fb0adf081542f10dea29f2a636e36b9ce936d7d282e30823339d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653435"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065865"
 ---
-# <a name="patchsourcelistforceresolution-method"></a>Patch. SourceListForceResolution (método)
+# <a name="patchsourcelistforceresolution-method"></a>Patch.SourceListForceResolution (método)
 
-El método **SourceListForceResolution** borra la última propiedad de origen utilizada. Esto obliga al instalador a buscar en la lista de origen un origen de revisión válido la próxima vez que se requiera el origen de la revisión. Por ejemplo, el instalador requiere que el origen de la revisión realice una instalación o reinstalación cuando falta la copia de la caché local de la revisión. Este método llama a [**MsiSourceListForceResolution**](/windows/desktop/api/Msi/nf-msi-msisourcelistforceresolutiona).
+El **método SourceListForceResolution** borra la última propiedad de origen usada. Esto obliga al instalador a buscar en la lista de origen un origen de revisión válido la próxima vez que se requiera el origen de la revisión. Por ejemplo, el instalador requiere que el origen de la revisión realice una instalación o reinstalación cuando falta la copia de caché local de la revisión. Este método llama a [**MsiSourceListForceResolution.**](/windows/desktop/api/Msi/nf-msi-msisourcelistforceresolutiona)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,9 +47,9 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer 3,0 o posterior en Windows Server 2003, Windows XP y Windows 2000<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 3.0 o posterior en Windows Server 2003, Windows XP y Windows 2000<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                                                   |
-| IID<br/>     | IID \_ IPatch se define como 000C10A1-0000-0000-C000-000000000046<br/>                                                                                                                                                                                                            |
+| IID<br/>     | IID IPatch se define como \_ 000C10A1-0000-0000-C000-000000000046<br/>                                                                                                                                                                                                            |
 
 
 
@@ -57,13 +57,13 @@ Este método no devuelve ningún valor.
 
 <dl> <dt>
 
-[**Distribución**](patch-object.md)
+[**Parche**](patch-object.md)
 </dt> <dt>
 
 [**MsiSourceListForceResolution**](/windows/desktop/api/Msi/nf-msi-msisourcelistforceresolutiona)
 </dt> <dt>
 
-[No se admite en Windows Installer 2,0 y versiones anteriores](not-supported-in-windows-installer-version-2-0.md)
+[No se admite en Windows Installer 2.0 y versiones anteriores](not-supported-in-windows-installer-version-2-0.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: La estructura ADDRESSTABLE contiene una tabla de pares de direcciones.
 ms.assetid: 84577b6c-9d43-4e53-9f8d-33685329b11d
-title: Estructura ADDRESSTABLE (Netmon. h)
+title: Estructura ADDRESSTABLE (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 41acab19f83fdcc88a384c0407b666a7f641a598
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c1c766e29033136954abab69755e1231e610983314cdaa01da3957889af5eb33
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104497806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119064285"
 ---
-# <a name="addresstable-structure"></a>Estructura ADDRESSTABLE
+# <a name="addresstable-structure"></a>AddressTABLE (estructura)
 
-La estructura **ADDRESSTABLE** contiene una tabla de pares de direcciones.
+La **estructura ADDRESSTABLE** contiene una tabla de pares de direcciones.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,7 +44,7 @@ typedef struct _ADDRESSTABLE {
 **nAddressPairs**
 </dt> <dd>
 
-Número de pares de direcciones en la matriz **AddressPair** .
+Número de pares de direcciones en la **matriz AddressPair.**
 
 </dd> <dt>
 
@@ -62,23 +62,23 @@ Matriz de pares de direcciones. Tenga en cuenta que solo puede almacenar hasta o
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use esta estructura como parte del proceso de construcción del filtro de captura. Para obtener más información sobre la implementación de esta estructura, vea [Capture filters](capture-filters.md).
+Use esta estructura como parte del proceso de construcción del filtro de captura. Para obtener más información sobre cómo implementar esta estructura, vea [Capturar filtros](capture-filters.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

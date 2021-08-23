@@ -1,22 +1,22 @@
 ---
-description: La estructura XMUINT3 expone los siguientes operadores.
+description: La estructura XMUINT3 expone los operadores siguientes.
 ms.assetid: 6e732b64-9926-4949-9292-c3ac3a553967
 title: Operadores XMUINT3
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 07195c100e7b27e6171cb7a281b13789a471bd09
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4eac7a6a91fe41f2168b1c1c4265a12088b911cb8beb1a5138c4c4ab96a541af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908413"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119118335"
 ---
 # <a name="xmuint3-operators"></a>Operadores XMUINT3
 
-La estructura [**XMUINT3**](/windows/win32/api/directxmath/ns-directxmath-xmuint3) expone los siguientes operadores.
+La [**estructura XMUINT3**](/windows/win32/api/directxmath/ns-directxmath-xmuint3) expone los operadores siguientes.
 
 > [!Note]  
-> Los operadores que se enumeran aquí solo están disponibles en C++.
+> Los operadores enumerados aquí solo están disponibles en C++.
 
  
 
@@ -26,7 +26,7 @@ La estructura [**XMUINT3**](/windows/win32/api/directxmath/ns-directxmath-xmuint
 
 | Métodos                                              | Descripción                                                                                                        |
 |------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| [**operador =**](/windows/win32/api/directxmath/nf-directxmath-xmuint3-operator-assign)<br/> | Asigna los datos del componente de vector de una instancia de `XMUINT3` a la instancia actual de `XMUINT3` . <br/> |
+| [**operator =**](/windows/win32/api/directxmath/nf-directxmath-xmuint3-operator-assign)<br/> | Asigna los datos del componente vectorial de una instancia de `XMUINT3` a la instancia actual de `XMUINT3` . <br/> |
 
 
 
@@ -36,7 +36,7 @@ La estructura [**XMUINT3**](/windows/win32/api/directxmath/ns-directxmath-xmuint
 
 <dl> <dt>
 
-[Extensiones de XMUINT3](ovw-xmuint3-extensions.md)
+[Extensiones XMUINT3](ovw-xmuint3-extensions.md)
 </dt> <dt>
 
 **Referencia**

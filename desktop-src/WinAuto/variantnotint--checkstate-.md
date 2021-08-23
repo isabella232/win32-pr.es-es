@@ -4,18 +4,18 @@ description: VariantNotInt (CheckState)
 ms.assetid: 77140193-22E8-427D-AE9C-FEC6B93483DD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d951a51ae6aa3f4d9454fc95a56c76cfe30500c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5a3334a3609e9d64c1bb7109cc6f5bb52a2d09f9f9ac18cc41abf5d761f8e939
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104268786"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119052173"
 ---
 # <a name="variantnotint-checkstate"></a>VariantNotInt (CheckState)
 
 ## <a name="text"></a>Texto
 
-La variante devuelta de {0} debe ser una {1} pero es {2} .
+La variante devuelta de {0} debe ser , pero es {1} {2} .
 
 ## <a name="type"></a>Tipo
 
@@ -23,27 +23,27 @@ Error
 
 ## <a name="description"></a>Descripción
 
-Un elemento está informando de un estado de MSAA no válido. Por ejemplo, el método [**Get \_ accState**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accstate) que se usa para recuperar el estado de MSAA de un elemento debe devolver un valor entero que represente una de las constantes de estado de MSAA, pero que devuelve otra variante en su lugar.
+Un elemento informa de un estado MSAA no válido. Por ejemplo, el método [**get \_ accState**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accstate) usado para recuperar el estado MSAA de un elemento debe devolver un valor entero que represente una de las constantes de estado MSAA, pero en su lugar devuelve otra variante.
 
-Este problema causa problemas para las personas que confían en un lector de pantalla y un teclado para la navegación porque es posible que se notifique al usuario un estado incorrecto del elemento.
+Este problema provoca problemas para las personas que dependen de un lector de pantalla y un teclado para la navegación porque es posible que se notifica al usuario un estado de elemento incorrecto.
 
 ## <a name="possible-causes"></a>Causas posibles
 
-El elemento o su elemento primario tiene un estado de MSAA establecido incorrectamente.
+El elemento o su elemento primario tienen un estado MSAA establecido de forma inapropiada.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**IAccessible:: get \_ accState**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accstate)
+[**IAccessible::get \_ accState**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accstate)
 </dt> <dt>
 
 [**Constantes de estado de objeto**](object-state-constants.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

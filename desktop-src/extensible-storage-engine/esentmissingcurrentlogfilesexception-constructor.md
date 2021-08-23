@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentMissingCurrentLogFilesException'
-title: Constructor de EsentMissingCurrentLogFilesException
+description: 'Más información sobre: Constructor EsentMissingCurrentLogFilesException'
+title: Constructor EsentMissingCurrentLogFilesException
 TOCTitle: 'EsentMissingCurrentLogFilesException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentMissingCurrentLogFilesException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentmissingcurrentlogfilesexception.esentmissingcurrentlogfilesexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fa6a73ee855d15080e5a1e8ea249f24207d3e317
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7d2c774aeeed6f00e8c4294c7cd6d3b1693e03aef9b4ad0b96e11a459bc6ad12
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677602"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119115575"
 ---
-# <a name="esentmissingcurrentlogfilesexception-constructor"></a>Constructor de EsentMissingCurrentLogFilesException
+# <a name="esentmissingcurrentlogfilesexception-constructor"></a>Constructor EsentMissingCurrentLogFilesException
 
 Inicializa una nueva instancia de la clase EsentMissingCurrentLogFilesException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ public EsentMissingCurrentLogFilesException()
 
 [Miembros de EsentMissingCurrentLogFilesException](./esentmissingcurrentlogfilesexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

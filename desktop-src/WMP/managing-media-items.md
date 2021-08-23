@@ -4,34 +4,34 @@ description: Administración de elementos multimedia
 ms.assetid: fba1df60-d603-4e37-a021-8fa618144149
 keywords:
 - Reproductor de Windows Media,library
-- Reproductor de Windows Media modelo de objetos,library
+- Reproductor de Windows Media modelo de objetos,biblioteca
 - object model,library
-- Reproductor de Windows Media Móvil,biblioteca para el modelo de objetos
-- Reproductor de Windows Media control ActiveX, biblioteca para el modelo de objetos
-- Reproductor de Windows Media control ActiveX móvil,biblioteca para el modelo de objetos
-- Control ActiveX, biblioteca para el modelo de objetos
-- Reproductor de Windows Media, administrar elementos multimedia
+- Reproductor de Windows Media Móvil, biblioteca para el modelo de objetos
+- Reproductor de Windows Media ActiveX control,library para el modelo de objetos
+- Reproductor de Windows Media Control de ActiveX móvil, biblioteca para el modelo de objetos
+- ActiveX control,library para el modelo de objetos
+- Reproductor de Windows Media biblioteca, administración de elementos multimedia
 - library,managing media items
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf984c2f884ae828bd6426dd2a3f6da19a78ddea
-ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
+ms.openlocfilehash: ac689bd6951f09b39db20975d52f6a8ccfc08668d3266d5964c2b7eac28cfd38
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111386894"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054633"
 ---
 # <a name="managing-media-items"></a>Administración de elementos multimedia
 
-Un **objeto Media** representa un elemento multimedia. Tiene propiedades y métodos que puede usar para recuperar información y mostrarla al usuario, o para realizar diferentes acciones en función del valor que recupere.
+Un **objeto Media** representa un elemento multimedia. Tiene propiedades y métodos que puede usar para recuperar información y mostrarla al usuario, o para realizar acciones diferentes en función del valor que recupere.
 
-Gran parte del trabajo con objetos **Multimedia** implica metadatos sobre el contenido del elemento multimedia, denominados atributos. En el tema [Atributos de elementos multimedia](media-item-attributes.md) se describe cómo leer y cambiar los valores de atributo. Además de este tema, consulte las Directrices de uso de metadatos de [Windows Media](/previous-versions/ms867702(v=msdn.10)) en el sitio web de Microsoft para obtener más información sobre los atributos y su uso.
+Gran parte del trabajo con objetos **Multimedia** implica metadatos sobre el contenido del elemento multimedia, denominados atributos. En el tema [Atributos de elementos multimedia](media-item-attributes.md) se describe cómo leer y cambiar los valores de atributo. Además de este tema, consulte Windows [Media Metadata Usage Guidelines](/previous-versions/ms867702(v=msdn.10)) (Directrices de uso de metadatos multimedia) en el sitio web de Microsoft para obtener más información sobre los atributos y su uso.
 
-El **objeto** Media tiene propiedades y métodos que recuperan algunos atributos directamente, como el nombre o la duración del elemento. En el caso de los elementos de vídeo, puede recuperar el alto y el ancho de la imagen, y puede recuperar información de marcador basada en el nombre o índice de un marcador. También puede determinar si un elemento multimedia determinado está incluido en una lista de reproducción determinada.
+El **objeto Media** tiene propiedades y métodos que recuperan algunos atributos directamente, como el nombre o la duración del elemento. En el caso de los elementos de vídeo, puede recuperar el alto y el ancho de la imagen y recuperar la información del marcador en función del nombre o el índice de un marcador. También puede determinar si un elemento multimedia determinado está incluido en una lista de reproducción determinada.
 
 ## <a name="retrieving-a-media-object"></a>Recuperar un objeto multimedia
 
-Puede acceder rápidamente al elemento multimedia actual mediante el Reproductor *de*. **propiedad currentMedia.**
+Puede acceder rápidamente al elemento multimedia actual mediante el *Reproductor de*. **propiedad currentMedia.**
 
 A lo largo de este tema, **el objeto Player** se definió de la siguiente manera:
 
@@ -55,9 +55,9 @@ media = Player.currentMedia;
 
 
 
-Puede crear un nuevo elemento multimedia a partir de un archivo multimedia digital mediante el *Reproductor de*. **método newMedia.** Se pasa al método la ruta de acceso url a un archivo multimedia digital y se devuelve una referencia al nuevo **objeto Media.** El método no agrega directamente el nuevo objeto a la biblioteca. Sin embargo, puede pasar el objeto a la lista de *reproducción*. **Método appendItem** o lista *de reproducción*. **Método insertItem.**
+Puede crear un nuevo elemento multimedia a partir de un archivo multimedia digital mediante el *Reproductor de*. **método newMedia.** Pasa al método la ruta de acceso url a un archivo multimedia digital y devuelve una referencia al nuevo **objeto Multimedia.** El método no agrega directamente el nuevo objeto a la biblioteca. Sin embargo, puede pasar el objeto a la lista de *reproducción*. **Método appendItem** o lista de *reproducción.* **Método insertItem.**
 
-En el siguiente ejemplo de C# se crea un **objeto Media** basado en uno de los ejemplos de medios digitales instalados con Reproductor de Windows Media SDK.
+En el ejemplo siguiente de C# se crea un **objeto Media** basado en uno de los ejemplos de medios digitales instalados con Reproductor de Windows Media SDK.
 
 
 ```C++
@@ -73,7 +73,7 @@ media = Player.newMedia("C:\\WMSDK\\WMPSDK10\\samples\\media\\laure.wma");
 
  
 
-Puede crear un nuevo elemento multimedia a partir de un archivo multimedia digital y agregarlo a la biblioteca en un paso mediante *MediaCollection*. **add** method. Al igual que *el reproductor*. **método newMedia,** el **método add** toma una ruta de acceso a un archivo multimedia digital.
+Puede crear un nuevo elemento multimedia a partir de un archivo multimedia digital y agregarlo a la biblioteca en un paso mediante *MediaCollection*. **add** method. Al igual que *el reproductor* de . **método newMedia,** el **método add** toma una ruta de acceso a un archivo multimedia digital.
 
 En el siguiente ejemplo de C# se crea un **objeto Media** basado en uno de los archivos de ejemplo del SDK y se agrega ese objeto a la biblioteca.
 

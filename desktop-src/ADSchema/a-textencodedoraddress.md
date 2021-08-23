@@ -1,11 +1,11 @@
 ---
-title: Atributo con codificación de texto o dirección
-description: Este atributo se usa para admitir direcciones X. 400 en un formato de texto.
+title: Atributo Text-Encoded-OR-Address
+description: Este atributo se usa para admitir direcciones X.400 en formato de texto.
 ms.assetid: 90ec82c5-08c4-44e3-90d8-a0a7a6d5f7b8
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo con codificación de texto o dirección
-- atributo textEncodedORAddress-esquema de AD
+- Esquema de AD del atributo Text-Encoded-OR-Address
+- Esquema de AD del atributo textEncodedORAddress
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fc5123f75c4ca628671816e7e5a27c56ee2c6c8a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: fdf85fab73cd70d79e07dba5c15a1d414df519a629346058408ad3c97140b9f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658729"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022054"
 ---
-# <a name="text-encoded-or-address-attribute"></a>Atributo con codificación de texto o dirección
+# <a name="text-encoded-or-address-attribute"></a>Atributo Text-Encoded-OR-Address
 
-Este atributo se usa para admitir direcciones X. 400 en un formato de texto.
+Este atributo se usa para admitir direcciones X.400 en formato de texto.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | Codificación de texto o dirección                     |
-| Nombre para mostrar de LDAP | textEncodedORAddress                        |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | Text-Encoded-OR-Address                     |
+| Ldap-Display-Name | textEncodedORAddress                        |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 0.9.2342.19200300.100.1.2                   |
-| System-ID-GUID    | a8df7489-c5ea-11d1-bbcb-0080c76670c0        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | a8df7489-c5ea-11d1-menteb-0080c76670c0        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,13 +55,13 @@ Este atributo se usa para admitir direcciones X. 400 en un formato de texto.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | 0x8C81                                               |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000000                                           |
@@ -76,13 +76,13 @@ Este atributo se usa para admitir direcciones X. 400 en un formato de texto.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | 0x8C81                                               |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000000                                           |
@@ -97,18 +97,18 @@ Este atributo se usa para admitir direcciones X. 400 en un formato de texto.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | 0x8C81                                               |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000000                                           |
-| Clases usadas en        | [**Destinatario de correo**](c-mailrecipient.md)<br/> |
+| Clases usadas en        | [**Destinatario del correo**](c-mailrecipient.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Este atributo se usa para admitir direcciones X. 400 en un formato de texto.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | 0x8C81                                               |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000000                                           |
-| Clases usadas en        | [**Destinatario de correo**](c-mailrecipient.md)<br/> |
+| Clases usadas en        | [**Destinatario del correo**](c-mailrecipient.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Este atributo se usa para admitir direcciones X. 400 en un formato de texto.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | 0x8C81                                               |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000000                                           |
-| Clases usadas en        | [**Destinatario de correo**](c-mailrecipient.md)<br/> |
+| Clases usadas en        | [**Destinatario del correo**](c-mailrecipient.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Este atributo se usa para admitir direcciones X. 400 en un formato de texto.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | 0x8C81                                               |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000000                                           |
-| Clases usadas en        | [**Destinatario de correo**](c-mailrecipient.md)<br/> |
+| Clases usadas en        | [**Destinatario del correo**](c-mailrecipient.md)<br/> |
 
 
 

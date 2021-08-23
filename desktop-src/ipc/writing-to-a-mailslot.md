@@ -1,19 +1,19 @@
 ---
-description: Cómo escribir en un buzón de correo. Escribir en un buzón de correo es similar a escribir en un archivo de disco estándar.
+description: Cómo escribir en un mailslot. Escribir en un mailslot es similar a escribir en un archivo de disco estándar.
 ms.assetid: a69ba953-cd5c-487f-b9e0-dbd6c44b88b8
-title: Escribir en un buzón de correo
+title: Escribir en mailslot
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 568727f7a83d46925f3e681f3dec4906903ca8df
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d13c31fd6b24217267b394f80c2dcdf551b6949f8692811173021fb78326f2f3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697617"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119359315"
 ---
-# <a name="writing-to-a-mailslot"></a>Escribir en un buzón de correo
+# <a name="writing-to-a-mailslot"></a>Escribir en mailslot
 
-Escribir en un buzón de correo es similar a escribir en un archivo de disco estándar. En el código siguiente se usan las funciones [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea), [**WriteFile**](/windows/desktop/api/fileapi/nf-fileapi-writefile)y [**CloseHandle**](/windows/desktop/api/handleapi/nf-handleapi-closehandle) para colocar un mensaje corto en un buzón de correo. El mensaje se difunde al servidor de buzón de correo denominado "ejemplo \_ de buzón de correo" en el equipo local. El código funciona suponiendo que el servidor de buzón de correo ya se haya creado.
+Escribir en un mailslot es similar a escribir en un archivo de disco estándar. El código siguiente usa las [**funciones CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea), [**WriteFile**](/windows/desktop/api/fileapi/nf-fileapi-writefile)y [**CloseHandle**](/windows/desktop/api/handleapi/nf-handleapi-closehandle) para colocar un mensaje corto en un mailslot. El mensaje se difunde al servidor mailslot denominado \_ "mailslot de ejemplo" en el equipo local. El código funciona bajo la suposición de que el servidor mailslot ya se ha creado.
 
 
 ```C++
@@ -77,7 +77,7 @@ int main()
 
 
 
-El siguiente es el resultado que se muestra cuando se ejecuta este ejemplo con el servidor de buzón de correo que se muestra en [lectura de un buzón de correo](reading-from-a-mailslot.md).
+A continuación se muestra la salida que se muestra cuando se ejecuta este ejemplo con el servidor mailslot que se muestra en [Reading from a Mailslot](reading-from-a-mailslot.md).
 
 ``` syntax
 Slot written to successfully.

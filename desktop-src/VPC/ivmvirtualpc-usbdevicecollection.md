@@ -1,11 +1,11 @@
 ---
-title: Propiedad IVMVirtualPC USBDeviceCollection (VPCCOMInterfaces. h)
+title: Propiedad IVMVirtualPC USBDeviceCollection (VPCCOMInterfaces.h)
 description: Colección enumerable de todos los dispositivos USB conectados al host.
 ms.assetid: 80844912-15b1-44d1-8d07-dca90c579927
 keywords:
-- Propiedad USBDeviceCollection Virtual PC
-- Propiedad USBDeviceCollection Virtual PC, interfaz IVMVirtualPC
-- Interfaz IVMVirtualPC Virtual PC, propiedad USBDeviceCollection
+- USBDeviceCollection, propiedad Virtual PC
+- Propiedad USBDeviceCollection De PC virtual, interfaz IVMVirtualPC
+- IVMVirtualPC interface Virtual PC , PROPIEDAD USBDeviceCollection
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0428862cdd53ef6e657624d5dbd3e15c2445042f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2880a6f7adb60605e37fe78481613016d17fdbbd2e27f1a6add4ce031030deea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802678"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136528"
 ---
-# <a name="ivmvirtualpcusbdevicecollection-property"></a>IVMVirtualPC:: USBDeviceCollection (propiedad)
+# <a name="ivmvirtualpcusbdevicecollection-property"></a>IVMVirtualPC::USBDeviceCollection, propiedad
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Recupera una colección enumerable de todos los dispositivos USB conectados al host.
 
@@ -45,7 +45,7 @@ HRESULT get_USBDeviceCollection(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Referencia a un puntero [**IVMUSBDeviceCollection**](ivmusbdevicecollection.md) que representa una colección de objetos [**IVMUSBDevice**](ivmusbdevice.md) .
+Referencia a un [**puntero IVMUSBDeviceCollection**](ivmusbdevicecollection.md) que representa una colección de [**objetos IVMUSBDevice.**](ivmusbdevice.md)
 
 ## <a name="error-codes"></a>Códigos de error
 
@@ -53,11 +53,11 @@ Referencia a un puntero [**IVMUSBDeviceCollection**](ivmusbdevicecollection.md) 
 
 | Nombre o valor                                                                                                                                                                                | Significado                                                                                         |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| <dl> <dt>S \_ Aceptar</dt> <dt>0</dt> </dl>                                                   | La operación se realizó correctamente.<br/>                                                        |
-| <dl> <dt>E \_ PUNTERO</dt> <dt>0x80004003</dt> </dl>                                     | El parámetro es **null**.<br/>                                                           |
-| <dl> <dt>DISP \_ . E \_ excepción</dt> <dt>0x80020009</dt> </dl>                             | Se produjo un error inesperado.<br/>                                                    |
-| <dl> <dt>Máquina virtual \_ \_Error de \_ enumeración USB \_ \_ más \_ dispositivos</dt> <dt>0xA0040930</dt> </dl> | Hay más de 16 dispositivos USB conectados al host.<br/>                                  |
-| <dl> <dt>Máquina virtual \_ E \_ \_ virtualización de hardware \_ deshabilitada</dt> <dt>0xA0040951</dt> </dl>      | El procesador no es compatible con las extensiones de virtualización acelerada de hardware (haber).<br/> |
+| <dl> <dt>S \_ Ok</dt> <dt>0</dt> </dl>                                                   | La operación se realizó correctamente.<br/>                                                        |
+| <dl> <dt>E \_ Puntero</dt> <dt>0x80004003</dt> </dl>                                     | El parámetro es **NULL.**<br/>                                                           |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl>                             | Se produjo un error inesperado.<br/>                                                    |
+| <dl> <dt>Máquina virtual \_ E ERROR \_ DE ENUMERACIÓN USB \_ MÁS \_ \_ \_ DISPOSITIVOS</dt> <dt>0XA0040930</dt> </dl> | Hay más de 16 dispositivos USB conectados al host.<br/>                                  |
+| <dl> <dt>Máquina virtual \_ E \_ \_ VIRTUALIZACIÓN DE HARDWARE \_ DESHABILITADA</dt> <dt>0xA0040951</dt> </dl>      | El procesador no admite extensiones de virtualización acelerada de hardware (HAV).<br/> |
 
 
 
@@ -67,12 +67,12 @@ Referencia a un puntero [**IVMUSBDeviceCollection**](ivmusbdevicecollection.md) 
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMVirtualPC se define como 236ba0d9-a24a-4292-A132-27c1421dfd01<br/>               |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMVirtualPC se define como \_ 236ba0d9-a24a-4292-a132-27c1421dfd01<br/>               |
 
 
 

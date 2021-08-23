@@ -1,7 +1,7 @@
 ---
 description: Obtiene el número de perfiles de examen para el dispositivo.
 ms.assetid: fb1f8884-28ef-460e-a8c4-b9608cc89dc6
-title: 'IScanProfileMgr:: GetNumProfilesforDeviceID (método) (Scanprofilemgr. h)'
+title: Método IScanProfileMgr::GetNumProfilesforDeviceID (Scanprofilemgr.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Scanprofilemgr.h
-ms.openlocfilehash: 1a65e1f6571f4ec12a9bd91749c7419f9f9641c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c2af1e4bc73afee090d947e6bcca0060521cb15cf2faff06be8c9a893534ea4b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275636"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119264395"
 ---
-# <a name="iscanprofilemgrgetnumprofilesfordeviceid-method"></a>IScanProfileMgr:: GetNumProfilesforDeviceID (método)
+# <a name="iscanprofilemgrgetnumprofilesfordeviceid-method"></a>IScanProfileMgr::GetNumProfilesforDeviceID (método)
 
 Obtiene el número de perfiles de examen para el dispositivo.
 
@@ -40,29 +40,29 @@ HRESULT GetNumProfilesforDeviceID(
 
 <dl> <dt>
 
-*bstrDeviceID* \[ de\]
+*bstrDeviceID* \[ En\]
 </dt> <dd>
 
 Tipo: **BSTR**
 
-IDENTIFICADOR del dispositivo.
+Identificador del dispositivo.
 
 </dd> <dt>
 
-*pulNumProfiles* \[ enuncia\]
+*pulNumProfiles* \[ out\]
 </dt> <dd>
 
-Tipo: **ULong \** _
+Tipo: **ULONG \***
 
-Un puntero al número de perfiles disponibles para el dispositivo.
+Puntero al número de perfiles disponibles para el dispositivo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,10 +70,10 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                        |
-| Encabezado<br/>                   | <dl> <dt>Scanprofilemgr. h</dt> </dl> |
-| IDL<br/>                      | <dl> <dt>Scanprofiles. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                        |
+| Header<br/>                   | <dl> <dt>Scanprofilemgr.h</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 
@@ -84,7 +84,7 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 [**IScanProfileMgr**](-wia-iscanprofilemgr.md)
 </dt> <dt>
 
-[Esquema de análisis de perfil](-wia-scan-profile-schema.md)
+[Esquema de perfil de examen](-wia-scan-profile-schema.md)
 </dt> </dl>
 
  

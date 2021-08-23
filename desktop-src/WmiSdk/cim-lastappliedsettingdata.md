@@ -2,7 +2,7 @@
 description: Asociación entre un objeto y otro objeto que se le ha aplicado.
 ms.assetid: ee6b17b7-4f01-4731-8d6b-a3421621a75a
 ms.tgt_platform: multiple
-title: CIM_LastAppliedSettingData (clase)
+title: CIM_LastAppliedSettingData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_type:
 - Schema
 api_location:
 - Root\CIMV2
-ms.openlocfilehash: fbad71cd88992673af5dd60c04b92dd3c833e5b5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6c1e5174cb9fcaf9279d16eceda547e9e5060c4ca4f7deda09cc170cf3dd7653
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718635"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119244655"
 ---
-# <a name="cim_lastappliedsettingdata-class"></a>\_Clase LastAppliedSettingData de CIM
+# <a name="cim_lastappliedsettingdata-class"></a>Cim \_ LastAppliedSettingData (clase)
 
 Asociación entre un objeto y otro objeto que se le ha aplicado.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -46,13 +46,13 @@ class CIM_LastAppliedSettingData
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ LastAppliedSettingData** tiene estos tipos de miembros:
+La **clase \_ Cim LastAppliedSettingData** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ LastAppliedSettingData** tiene estas propiedades.
+La **clase \_ LastAppliedSettingData** de CIM tiene estas propiedades.
 
 <dl> <dt>
 
@@ -65,7 +65,7 @@ Tipo de datos: **CIM \_ ManagedElement**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
 Objeto que se aplicó al objeto de destino.
@@ -81,7 +81,7 @@ Tipo de datos: **CIM \_ ManagedElement**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
 Objeto que era el destino de la aplicación del objeto.
@@ -94,7 +94,7 @@ Objeto que era el destino de la aplicación del objeto.
 
 | Requisito | Value |
 |----------------------|------------------------|
-| Espacio de nombres<br/> | Origen de \\ cimv2<br/> |
+| Espacio de nombres<br/> | \\CIMV2 raíz<br/> |
 
 
 

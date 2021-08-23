@@ -1,21 +1,21 @@
 ---
-description: La Directiva de metadatos de fotos para la propiedad System. Photo. PeopleNames.
+description: Directiva de metadatos de fotos para la propiedad System.Photo.PeopleNames.
 ms.assetid: 567d5542-fc7b-4d19-bc3c-b9d6e26e3387
-title: Directiva de metadatos de la foto de System. Photo. PeopleNames
+title: Directiva de metadatos de fotos System.Photo.PeopleNames
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c3de9f5adda67fcd0e555194500f109df078bdf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4118cc8242d6dfe8a91d0bcd2b6039095fdf180037f51205d3541b9aefa2cc0d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678225"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119087057"
 ---
-# <a name="systemphotopeoplenames-photo-metadata-policy"></a>Directiva de metadatos de la foto de System. Photo. PeopleNames
+# <a name="systemphotopeoplenames-photo-metadata-policy"></a>Directiva de metadatos de fotos System.Photo.PeopleNames
 
-La Directiva de metadatos de fotos para la propiedad [System. Photo. PeopleNames](../properties/props-system-photo-peoplenames.md) .
+Directiva de metadatos de fotos para [la propiedad System.Photo.PeopleNames.](../properties/props-system-photo-peoplenames.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
 PKEY \_ Photo \_ PeopleNames
 
@@ -27,9 +27,9 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
-VT \_ Vector \| VT \_ LPWStr
+VT \_ VECTOR \| VT \_ LPWSTR
 
 ### <a name="input-type"></a>Tipo de entrada
 
@@ -37,33 +37,33 @@ StringMulti
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Se reconcilian los valores de los distintos esquemas.
+Se concilian los valores de esquemas diferentes.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
-| Pedido | Ruta                                                           | Formato de disco |
+| Pedido | Ruta de acceso                                                           | Formato de disco |
 |-------|----------------------------------------------------------------|-------------|
-| 1     | módulo de administración de/XMP/ <xmpstruct> : RegionInfo/ <xmpbag> mpri: regiones | ushort      |
+| 1     | /xmp/ <xmpstruct> MP:RegionInfo/ <xmpbag> MPRI:Regions | ushort      |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
-Esta propiedad no se puede escribir con la Directiva de metadatos.
+Esta propiedad no se puede escribir mediante la directiva de metadatos.
 
 ### <a name="remove-paths"></a>Quitar rutas de acceso
 
 
 
-| Pedido | Ruta                                |
+| Pedido | Ruta de acceso                                |
 |-------|-------------------------------------|
-| 1     | módulo de administración de/XMP/ <xmpstruct> : RegionInfo |
+| 1     | /xmp/ <xmpstruct> MP:RegionInfo |
 
 
 
@@ -71,41 +71,41 @@ Esta propiedad no se puede escribir con la Directiva de metadatos.
 
 ### <a name="tiff-policies"></a>Directivas TIFF
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
-| Pedido | Ruta                                                               | Formato de disco |
+| Pedido | Ruta de acceso                                                               | Formato de disco |
 |-------|--------------------------------------------------------------------|-------------|
-| 1     | módulo de administración de/IFD/XMP/ <xmpstruct> : RegionInfo/ <xmpbag> mpri: regiones | ushort      |
+| 1     | /ifd/xmp/ <xmpstruct> MP:RegionInfo/ <xmpbag> MPRI:Regions | ushort      |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
-Esta propiedad no se puede escribir con la Directiva de metadatos.
+Esta propiedad no se puede escribir mediante la directiva de metadatos.
 
 ### <a name="remove-paths"></a>Quitar rutas de acceso
 
 
 
-| Pedido | Ruta                                    |
+| Pedido | Ruta de acceso                                    |
 |-------|-----------------------------------------|
-| 1     | módulo de administración de/IFD/XMP/ <xmpstruct> : RegionInfo |
+| 1     | /ifd/xmp/ <xmpstruct> MP:RegionInfo |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[System. Photo. ProgramMode](../properties/props-system-photo-programmode.md)
+[System.Photo.ProgramMode](../properties/props-system-photo-programmode.md)
 </dt> </dl>
 
  

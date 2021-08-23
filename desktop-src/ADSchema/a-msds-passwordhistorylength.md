@@ -1,11 +1,11 @@
 ---
-title: atributo de longitud del historial MS-DS-Password
+title: Atributo ms-DS-Password-History-Length
 description: Longitud del historial de contraseñas para las cuentas de usuario.
 ms.assetid: 9a3a8420-253c-4a55-9d64-15c2c4035ea0
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de longitud del historial de contraseñas MS-DS-Password
-- Esquema de AD de atributo msDS-PasswordHistoryLength
+- Esquema de AD del atributo ms-DS-Password-History-Length
+- Esquema de AD del atributo msDS-PasswordHistoryLength
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3cfd79771e29e8fe755064e008510c5c18fd4e64
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7baa73decb4658e788125536cfafb6ef04f1641728cb37fa32b40b10d4ba2ef9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804676"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119294625"
 ---
-# <a name="ms-ds-password-history-length-attribute"></a>atributo de longitud del historial MS-DS-Password
+# <a name="ms-ds-password-history-length-attribute"></a>Atributo ms-DS-Password-History-Length
 
 Longitud del historial de contraseñas para las cuentas de usuario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-DS-password-History-longitud        |
-| Nombre para mostrar de LDAP | msDS-PasswordHistoryLength           |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-DS-Password-History-Length        |
+| Ldap-Display-Name | msDS-PasswordHistoryLength           |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2014              |
-| System-ID-GUID    | fed81bb7-768c-4c2f-9641-2245de34794d |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | fed81bb7-768c-4c2f-9641-2245de34794d |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -52,18 +52,18 @@ Longitud del historial de contraseñas para las cuentas de usuario.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                    |
+| Id. de vínculo                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
-| System-Only            | False                                                                 |
-| Tiene un único valor       | True                                                                  |
-| Está indexado             | False                                                                 |
-| En el catálogo global      | False                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                          |
+| System-Only            | Falso                                                                 |
+| Es de un solo valor       | Verdadero                                                                  |
+| Está indexado             | Falso                                                                 |
+| En el catálogo global      | Falso                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | 0                                                                     |
 | Range-Upper            | 65535                                                                 |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Clases usadas en        | [**Configuración de MS-DS-Password**](c-msds-passwordsettings.md)<br/> |
+| Clases usadas en        | [**ms-DS-Password-Configuración**](c-msds-passwordsettings.md)<br/> |
 
 
 
@@ -73,18 +73,18 @@ Longitud del historial de contraseñas para las cuentas de usuario.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                    |
+| Id. de vínculo                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
-| System-Only            | False                                                                 |
-| Tiene un único valor       | True                                                                  |
-| Está indexado             | False                                                                 |
-| En el catálogo global      | False                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                          |
+| System-Only            | Falso                                                                 |
+| Es de un solo valor       | Verdadero                                                                  |
+| Está indexado             | Falso                                                                 |
+| En el catálogo global      | Falso                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | 0                                                                     |
 | Range-Upper            | 65535                                                                 |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Clases usadas en        | [**Configuración de MS-DS-Password**](c-msds-passwordsettings.md)<br/> |
+| Clases usadas en        | [**ms-DS-Password-Configuración**](c-msds-passwordsettings.md)<br/> |
 
 
 
@@ -94,18 +94,18 @@ Longitud del historial de contraseñas para las cuentas de usuario.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                    |
+| Id. de vínculo                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
-| System-Only            | False                                                                 |
-| Tiene un único valor       | True                                                                  |
-| Está indexado             | False                                                                 |
-| En el catálogo global      | False                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                          |
+| System-Only            | Falso                                                                 |
+| Es de un solo valor       | Verdadero                                                                  |
+| Está indexado             | Falso                                                                 |
+| En el catálogo global      | Falso                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | 0                                                                     |
 | Range-Upper            | 65535                                                                 |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Clases usadas en        | [**Configuración de MS-DS-Password**](c-msds-passwordsettings.md)<br/> |
+| Clases usadas en        | [**ms-DS-Password-Configuración**](c-msds-passwordsettings.md)<br/> |
 
 
 

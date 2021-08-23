@@ -1,22 +1,22 @@
 ---
-title: Ejemplo de código de C/C++ configuración de la información de la cuenta de tarea
-description: En este ejemplo se establece la información de la cuenta para una tarea conocida. En este ejemplo se da por supuesto que la tarea \ 0034; test Task \ 0034; ya existe en el equipo local y el servicio Programador de tareas se está ejecutando.
+title: Ejemplo de código de C/C++ Configuración de la información de la cuenta de tarea
+description: En este ejemplo se establece la información de la cuenta para una tarea conocida. En este ejemplo se supone que la tarea \ 0034;tarea de prueba \ 0034; ya existe en el equipo local y que el servicio Programador de tareas está en ejecución.
 ms.assetid: ab865f70-f8d1-411e-b637-b1b1028ccf62
 keywords:
-- configuración de la información de cuenta Programador de tareas
-- establecer las propiedades de los elementos de trabajo Programador de tareas, información de la cuenta
+- configuración de la información de la cuenta Programador de tareas
+- establecer propiedades de elemento de trabajo Programador de tareas , información de la cuenta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fb5673653fa5dfe4875fb57a00535b30ae384e91
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9efa9307e930ba8bb23813cf9a2dd588c464435fb8df5f6c71724321f0854fef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119060233"
 ---
-# <a name="cc-code-example-setting-task-account-information"></a>Ejemplo de código de C/C++: establecer la información de la cuenta de tarea
+# <a name="cc-code-example-setting-task-account-information"></a>Ejemplo de código de C/C++: configuración de la información de la cuenta de tarea
 
-En este ejemplo se establece la información de la cuenta para una tarea conocida. En este ejemplo se da por supuesto que la tarea "test Task" ya existe en el equipo local y que el servicio Programador de tareas se está ejecutando.
+En este ejemplo se establece la información de la cuenta para una tarea conocida. En este ejemplo se da por supuesto que la tarea "tarea de prueba" ya existe en el equipo local y que el servicio Programador de tareas está en ejecución.
 
 
 ```C++
@@ -190,12 +190,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Ejemplos de Programador de tareas 1,0](task-scheduler-1-0-examples.md)
+[Programador de tareas ejemplos de 1.0](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXQuaternionBaryCentric (D3DX10Math.h): devuelve un cuaternión en coordenadas baricéntricas.'
+description: 'Función D3DXQuaternionBaryCentric (D3DX10Math.h): devuelve un cuaternión en coordenadas centradas en barras.'
 ms.assetid: 0a8d8d5a-f486-4457-86e9-27e76eaf1bc4
 title: Función D3DXQuaternionBaryCentric (D3DX10Math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 00d8e41a0173b7b26083f38beb82417365ef7067
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6a51a0606ae45be79c26d062c64ab5710a658436371ca146f81c2183c34ca85b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991155"
 ---
 # <a name="d3dxquaternionbarycentric-function-d3dx10mathh"></a>Función D3DXQuaternionBaryCentric (D3DX10Math.h)
 
-Devuelve un cuaternión en coordenadas baricéntricas.
+Devuelve un cuaternión en coordenadas centradas en barras.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -90,7 +90,7 @@ Factor de ponderación. Vea la sección Comentarios.
 
 </dd> <dt>
 
-*g* \[ in\]
+*g* \[ en\]
 </dt> <dd>
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
@@ -133,7 +133,7 @@ Las coordenadas centradas en barras definen un punto dentro de un triángulo en 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

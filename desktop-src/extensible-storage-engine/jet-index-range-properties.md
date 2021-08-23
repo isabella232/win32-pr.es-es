@@ -1,25 +1,25 @@
 ---
-description: 'Más información acerca de: JET_INDEX_RANGE propiedades'
-title: JET_INDEX_RANGE propiedades (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Más información sobre: JET_INDEX_RANGE propiedades'
+title: JET_INDEX_RANGE propiedades (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: JET_INDEX_RANGE properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.Windows8.JET_INDEX_RANGE
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.jet_index_range_properties(v=EXCHG.10)
 ms:contentKeyID: 55104438
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: a9b79de863f911fd3d644db0c8c5d33266833a86
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 077a91821ede2ae82d621079dddb445d8b05b3d3a6d82e0ce7d2a8001e064925
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104559318"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119232715"
 ---
-# <a name="jet_index_range-properties"></a>Propiedades de JET_INDEX_RANGE
+# <a name="jet_index_range-properties"></a>JET_INDEX_RANGE propiedades
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El tipo de [JET_INDEX_RANGE](./jet-index-range-class.md) expone los siguientes miembros.
+El [JET_INDEX_RANGE](./jet-index-range-class.md) expone los miembros siguientes.
 
 ## <a name="properties"></a>Propiedades
 
@@ -52,6 +52,6 @@ Superior
 
 #### <a name="reference"></a>Referencia
 
-[JET_INDEX_RANGE (clase)](./jet-index-range-class.md)
+[JET_INDEX_RANGE clase](./jet-index-range-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

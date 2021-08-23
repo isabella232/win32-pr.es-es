@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentRecordTooBigForBackwardCompatibilityException'
-title: Constructor de EsentRecordTooBigForBackwardCompatibilityException
+description: 'Más información sobre: Constructor EsentRecordTooBigForBackwardCompatibilityException'
+title: Constructor EsentRecordTooBigForBackwardCompatibilityException
 TOCTitle: 'EsentRecordTooBigForBackwardCompatibilityException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentRecordTooBigForBackwardCompatibilityException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentrecordtoobigforbackwardcompatibilityexception.esentrecordtoobigforbackwardcompatibilityexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 03ae790bece21694b0d4c18713b0311ab8d88d75
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 67c434e0b5883b91400fb5b95613be09406f90497e36d66b10fcf8dde18a5619
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104542622"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119040023"
 ---
-# <a name="esentrecordtoobigforbackwardcompatibilityexception-constructor"></a>Constructor de EsentRecordTooBigForBackwardCompatibilityException
+# <a name="esentrecordtoobigforbackwardcompatibilityexception-constructor"></a>Constructor EsentRecordTooBigForBackwardCompatibilityException
 
 Inicializa una nueva instancia de la clase EsentRecordTooBigForBackwardCompatibilityException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentRecordTooBigForBackwardCompatibilityException()
 public EsentRecordTooBigForBackwardCompatibilityException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentRecordTooBigForBackwardCompatibilityException()
 
 [Miembros de EsentRecordTooBigForBackwardCompatibilityException](./esentrecordtoobigforbackwardcompatibilityexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,8 +1,8 @@
 ---
-description: Asociación entre un sistema virtual y los datos de configuración de la instantánea que es el primario del sistema virtual.
+description: Asociación entre un sistema virtual y los datos de configuración de la instantánea que es el elemento primario del sistema virtual.
 ms.assetid: d11e00e0-a163-49ea-b8ef-e3909a7dc83f
 ms.tgt_platform: multiple
-title: CIM_PreviousSettingData (clase)
+title: CIM_PreviousSettingData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_type:
 - Schema
 api_location:
 - Root\CIMV2
-ms.openlocfilehash: 4422d590714b82120b610dc4eeb9377a385519d9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 85f08f22409df8a17bdae33ae81c06cb8167996ecb477f6a2d207d9e0ce2acca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708708"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119131767"
 ---
-# <a name="cim_previoussettingdata-class"></a>\_Clase PreviousSettingData de CIM
+# <a name="cim_previoussettingdata-class"></a>Cim \_ PreviousSettingData (clase)
 
-Asociación entre un sistema virtual y los datos de configuración de la instantánea que es el primario del sistema virtual.
+Asociación entre un sistema virtual y los datos de configuración de la instantánea que es el elemento primario del sistema virtual.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -46,13 +46,13 @@ class CIM_PreviousSettingData
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ PreviousSettingData** tiene estos tipos de miembros:
+La **clase \_ CIM PreviousSettingData** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ PreviousSettingData** tiene estas propiedades.
+La **clase \_ CIM PreviousSettingData** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -65,10 +65,10 @@ Tipo de datos: **CIM \_ ManagedElement**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
-Los datos de configuración de la instantánea que son el principal de este equipo.
+Los datos de configuración de instantáneas que son el elemento primario de este sistema de equipo.
 
 </dd> <dt>
 
@@ -81,10 +81,10 @@ Tipo de datos: **CIM \_ ManagedElement**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
-Sistema del equipo que era el destino de la aplicación.
+Sistema informático que era el destino de la aplicación.
 
 </dd> </dl>
 
@@ -94,7 +94,7 @@ Sistema del equipo que era el destino de la aplicación.
 
 | Requisito | Value |
 |----------------------|------------------------|
-| Espacio de nombres<br/> | Origen de \\ cimv2<br/> |
+| Espacio de nombres<br/> | \\CIMV2 raíz<br/> |
 
 
 

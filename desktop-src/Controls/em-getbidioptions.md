@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_GETBIDIOPTIONS (RichEdit. h)
-description: Indica el estado actual de las opciones bidireccionales en el control Rich Edit.
+title: EM_GETBIDIOPTIONS mensaje (Richedit.h)
+description: Indica el estado actual de las opciones bidireccionales en el control rich edit.
 ms.assetid: 055581c0-ae59-4601-a3e9-416705af429a
 keywords:
-- EM_GETBIDIOPTIONS controles de mensajes de Windows
+- EM_GETBIDIOPTIONS controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7fade63ac94007bedbf58642dc7a9451eb158fc3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 90b377e0fd3a439737fea9efbc403d2ccc64d6cf78eab1c7e31feeffd6c4b0f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150408"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019913"
 ---
-# <a name="em_getbidioptions-message"></a>\_Mensaje GETBIDIOPTIONS em
+# <a name="em_getbidioptions-message"></a>Mensaje \_ EM GETBIDIOPTIONS
 
-Indica el estado actual de las opciones bidireccionales en el control Rich Edit.
+Indica el estado actual de las opciones bidireccionales en el control rich edit.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -39,17 +39,17 @@ Este parámetro no se usa; debe ser cero.
 *lParam* 
 </dt> <dd>
 
-Una estructura [**BIDIOPTIONS**](/windows/desktop/api/Richedit/ns-richedit-bidioptions) que recibe el estado actual de las opciones bidireccionales en el control Rich Edit.
+Estructura [**BIDIOPTIONS**](/windows/desktop/api/Richedit/ns-richedit-bidioptions) que recibe el estado actual de las opciones bidireccionales en el control de edición enriquecido.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje no devuelve ningún valor.
+Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este mensaje establece los valores de los miembros **wMask** y **wEffects** en el valor del estado actual de las opciones bidireccionales en el control Rich Edit.
+Este mensaje establece los valores de los miembros **wMask** y **wEffects** en el valor del estado actual de las opciones bidireccionales en el control rich edit.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,10 +57,10 @@ Este mensaje establece los valores de los miembros **wMask** y **wEffects** en e
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Redistribuible<br/>          | Edición enriquecida 3,0<br/>                                                              |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Redistribuible<br/>          | Rich Edit 3.0<br/>                                                              |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -74,7 +74,7 @@ Este mensaje establece los valores de los miembros **wMask** y **wEffects** en e
 [**BIDIOPTIONS**](/windows/desktop/api/Richedit/ns-richedit-bidioptions)
 </dt> <dt>
 
-[**\_SETBIDIOPTIONS em**](em-setbidioptions.md)
+[**EM \_ SETBIDIOPTIONS**](em-setbidioptions.md)
 </dt> </dl>
 
  
