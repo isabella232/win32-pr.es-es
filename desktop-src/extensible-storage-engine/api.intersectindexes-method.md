@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: API. IntersectIndexes (método)'
-title: Método API. IntersectIndexes
+description: Más información sobre el método Api.IntersectIndexes
+title: Método Api.IntersectIndexes
 TOCTitle: 'IntersectIndexes method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.IntersectIndexes(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID[])
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.intersectindexes(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8dfe5784ecd5ab517e183f8eeeb5f79315fe585a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 88bcc872fc557e3942a119845206661bd48705317163520924059af5456f6e00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104539735"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118983685"
 ---
-# <a name="apiintersectindexes-method"></a>Método API. IntersectIndexes
+# <a name="apiintersectindexes-method"></a>Método Api.IntersectIndexes
 
-Intersecte un grupo de intervalos de índice y devuelva los marcadores de los registros que se encuentran en todos los intervalos de índice. Vea también [JetIntersectIndexes (JET_SESID, \[ \] , Int32, JET_RECORDLIST, IntersectIndexesGrbit)](./api.jetintersectindexes-method.md).
+Forma una intersección con un grupo de intervalos de índice y devuelve los marcadores de los registros que se encuentran en todos los intervalos de índice. Vea también [JetIntersectIndexes(JET_SESID, \[ \] , Int32, JET_RECORDLIST, IntersectIndexesGrbit).](./api.jetintersectindexes-method.md)
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -65,21 +65,21 @@ public static IEnumerable<byte[]> IntersectIndexes(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión que se va a usar.
+    Sesión que se usará.
 
 <!-- end list -->
 
   - tableids  
-    Automáticamente \[\]  
+    Tipo: \[\]  
     
-    Tableids que se va a usar. Cada TABLEID debe ser de un índice diferente en la misma tabla y tener un intervalo de índice activo. Use [JetSetIndexRange (JET_SESID, JET_TABLEID, SetIndexRangeGrbit)](./api.jetsetindexrange-method.md) para crear un intervalo de índices.
+    Los tableids que se usarán. Cada tableid debe ser de un índice diferente en la misma tabla y tener un intervalo de índice activo. Use [JetSetIndexRange(JET_SESID, JET_TABLEID, SetIndexRangeGrbit)](./api.jetsetindexrange-method.md) para crear un intervalo de índice.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. Collections. Generic. IEnumerable](/dotnet/api/system.collections.generic.ienumerable-1)\<\[\]\>  
-Marcadores de los registros que se encuentran en todos los intervalos de índice. Los marcadores se devuelven en el orden de la clave principal.  
+Tipo: [System.Collections.Generic.IEnumerable](/dotnet/api/system.collections.generic.ienumerable-1)\<\[\]\>  
+Marcadores de los registros que se encuentran en todos los intervalos de índice. Los marcadores se devuelven en orden de clave principal.  
 
 ## <a name="see-also"></a>Vea también
 
@@ -87,6 +87,6 @@ Marcadores de los registros que se encuentran en todos los intervalos de índice
 
 [Clase de API](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

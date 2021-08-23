@@ -1,11 +1,11 @@
 ---
-title: Propiedad IVMGuestOS IntegrationComponentsVersion (VPCCOMInterfaces. h)
+title: Propiedad IVMGuestOS IntegrationComponentsVersion (VPCCOMInterfaces.h)
 description: Recupera la versión de los componentes de integración instalados en el sistema operativo invitado.
 ms.assetid: 4baccb7d-5a3e-460f-9669-ee8dbaec91a9
 keywords:
-- Propiedad IntegrationComponentsVersion Virtual PC
-- Propiedad IntegrationComponentsVersion Virtual PC, interfaz IVMGuestOS
-- Interfaz IVMGuestOS Virtual PC, propiedad IntegrationComponentsVersion
+- IntegrationComponentsVersion, propiedad Virtual PC
+- IntegrationComponentsVersion, propiedad Virtual PC, interfaz IVMGuestOS
+- Interfaz IVMGuestOS Pc virtual, propiedad IntegrationComponentsVersion
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f85352614b89ab208377fe44fe3b970c693d60dd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 854cb86817f461085c72a437fa962649e50ab11b65a847d0756dc8e9c7b18177
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801274"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118999055"
 ---
-# <a name="ivmguestosintegrationcomponentsversion-property"></a>IVMGuestOS:: IntegrationComponentsVersion (propiedad)
+# <a name="ivmguestosintegrationcomponentsversion-property"></a>Propiedad IVMGuestOS::IntegrationComponentsVersion
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Recupera la versión de los componentes de integración instalados en el sistema operativo invitado.
 
@@ -53,11 +53,11 @@ La versión.
 
 | Nombre o valor                                                                                                                                                              | Significado                                                                                      |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| <dl> <dt>S \_ Aceptar</dt> <dt>0</dt> </dl>                                 | La operación se realizó correctamente.<br/>                                                     |
-| <dl> <dt>E \_ PUNTERO</dt> <dt>0x80004003</dt> </dl>                   | El parámetro es **null**.<br/>                                                        |
-| <dl> <dt>Máquina virtual \_ 0xA0040207 de \_ máquina virtual \_ desconocida</dt> <dt></dt> </dl>           | No se encontró la máquina virtual (VM).<br/>                                      |
-| <dl> <dt>Máquina virtual \_ E/s \_ \_ no \_ DISP</dt> <dt>0xA0040504</dt> </dl> | Los componentes de integración no están instalados en esta máquina virtual o la máquina virtual no se ha iniciado nunca.<br/> |
-| <dl> <dt>DISP \_ . E \_ excepción</dt> <dt>0x80020009</dt> </dl>           | Se produjo un error inesperado.<br/>                                                 |
+| <dl> <dt>S \_ Ok</dt> <dt>0</dt> </dl>                                 | La operación se realizó correctamente.<br/>                                                     |
+| <dl> <dt>E \_ Puntero</dt> <dt>0x80004003</dt> </dl>                   | El parámetro es **NULL.**<br/>                                                        |
+| <dl> <dt>Máquina virtual \_ E \_ VM \_ UNKNOWN</dt> <dt>0xA0040207</dt> </dl>           | No se encontró la máquina virtual.<br/>                                      |
+| <dl> <dt>Máquina virtual \_ E \_ LAS \_ ADICIONES NO ESTÁN \_ DISPONIBLES</dt> <dt>0xA0040504</dt> </dl> | Los componentes de integración no están instalados en esta máquina virtual o la máquina virtual nunca se inició.<br/> |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl>           | Se produjo un error inesperado.<br/>                                                 |
 
 
 
@@ -67,12 +67,12 @@ La versión.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMGuestOS se define como 99fea0db-4880-499A-b6d8-73dff9bc91be<br/>                 |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMGuestOS se define como \_ 99fea0db-4880-499a-b6d8-73dff9bc91be<br/>                 |
 
 
 

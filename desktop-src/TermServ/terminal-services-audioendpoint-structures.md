@@ -1,46 +1,46 @@
 ---
-title: Servicios de Escritorio remoto estructuras AudioEndpoint
-description: Las siguientes estructuras se usan con la API de AudioEndpoint.
+title: Servicios de Escritorio remoto AudioEndpoint Structures
+description: Las estructuras siguientes se usan con AudioEndpoint API.
 ms.assetid: 174661a6-f6be-4aac-837a-43dbee9cd839
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c38901d9901ab05d28f9ead90da3f95004acde5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 346cc3f3bc57e567c53961f16f5d8718014a6e6cfb253b41cfdd0e32d2378f06
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104532038"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119000055"
 ---
-# <a name="remote-desktop-services-audioendpoint-structures"></a>Servicios de Escritorio remoto estructuras AudioEndpoint
+# <a name="remote-desktop-services-audioendpoint-structures"></a>Servicios de Escritorio remoto AudioEndpoint Structures
 
-Las siguientes estructuras se usan con la API de AudioEndpoint.
+Las estructuras siguientes se usan con AudioEndpoint API.
 
 ## <a name="in-this-section"></a>En esta sección
 
 <dl> <dt>
 
-[**\_posición actual de AE \_**](/windows/desktop/api/Audioengineendpoint/ns-audioengineendpoint-ae_current_position)
+[**POSICIÓN ACTUAL DE AE \_ \_**](/windows/desktop/api/Audioengineendpoint/ns-audioengineendpoint-ae_current_position)
 </dt> <dd>
 
-Notifica la posición actual del marco desde el dispositivo a los clientes.
+Informa a los clientes de la posición actual del marco desde el dispositivo.
 
 </dd> <dt>
 
-[**\_propiedad de conexión de APO \_**](/windows/desktop/api/Audioapotypes/ns-audioapotypes-apo_connection_property)
+[**PROPIEDAD \_ DE CONEXIÓN DE \_ APO**](/windows/desktop/api/Audioapotypes/ns-audioapotypes-apo_connection_property)
 </dt> <dd>
 
 Contiene las propiedades de conexión que cambian dinámicamente.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La API de Servicios de Escritorio remoto AudioEndpoint es para su uso en escenarios de Escritorio remoto; no es para las aplicaciones cliente.
+La SERVICIOS DE ESCRITORIO REMOTO AudioEndpoint es para su uso en Escritorio remoto escenarios; no es para las aplicaciones cliente.
 
- 
+ 
 
- 
+ 
 
 
 

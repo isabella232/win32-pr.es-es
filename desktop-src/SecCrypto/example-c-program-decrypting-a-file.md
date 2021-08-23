@@ -1,25 +1,25 @@
 ---
 description: En el ejemplo siguiente se muestra el descifrado de un archivo.
 ms.assetid: be355b08-95c1-4ad3-bb05-6f646d5db5cd
-title: 'Programa C de ejemplo: descifrado de un archivo'
+title: 'Programa C de ejemplo: Descifrar un archivo'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 57e65b7e33ba58a80fe87cc51a25912c66bf3589
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ac4aa59245600fa99f9992a08bda9dd7cdaa39bbd899851052559ee22b08997e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105648599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007873"
 ---
-# <a name="example-c-program-decrypting-a-file"></a>Programa C de ejemplo: descifrado de un archivo
+# <a name="example-c-program-decrypting-a-file"></a>Programa C de ejemplo: Descifrar un archivo
 
-En el ejemplo siguiente se muestra el descifrado de un archivo. En el ejemplo se pide al usuario el nombre de un archivo cifrado y el nombre de un archivo donde se escribirán los datos descifrados. El archivo con los datos cifrados debe existir. En el ejemplo se crea o se sobrescribe el archivo de salida.
+En el ejemplo siguiente se muestra el descifrado de un archivo. En el ejemplo se solicita al usuario el nombre de un archivo cifrado y el nombre de un archivo donde se escribirán los datos descifrados. El archivo con los datos cifrados debe existir. En el ejemplo se crea o sobrescribe el archivo de salida.
 
-En el ejemplo también se solicita una cadena que se usa como contraseña. Si se usó una contraseña para crear la clave de sesión de cifrado, se debe especificar la misma contraseña para crear la clave de sesión de descifrado. Para obtener más información, vea [el ejemplo C programa: cifrar un archivo](example-c-program-encrypting-a-file.md).
+En el ejemplo también se solicita una cadena que se usa como contraseña. Si se usó una contraseña para crear la clave de sesión de cifrado, se debe especificar esa misma contraseña para crear la clave de sesión de descifrado. Para obtener más información, vea [Ejemplo de programa C: Cifrar un archivo](example-c-program-encrypting-a-file.md).
 
-Debido al cambio en las restricciones de control de exportación, el [*proveedor de servicios criptográficos*](../secgloss/c-gly.md) (CSP) y la [*longitud de clave*](../secgloss/k-gly.md) predeterminada pueden cambiar entre las versiones del sistema operativo. Es importante que tanto el cifrado como el descifrado usen el mismo CSP y que la longitud de la clave se establezca explícitamente para garantizar la interoperabilidad en distintas plataformas de sistema operativo.
+Debido al cambio de las restricciones de control de exportación, el proveedor de [*servicios*](../secgloss/c-gly.md) criptográficos (CSP) predeterminado y la longitud de clave predeterminada [*pueden*](../secgloss/k-gly.md) cambiar entre las versiones del sistema operativo. Es importante que tanto el cifrado como el descifrado usen el mismo CSP y que la longitud de la clave se establezca explícitamente para garantizar la interoperabilidad en distintas plataformas de sistema operativo.
 
-En este ejemplo se usa la función [**MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo. El código de esta y otras funciones auxiliares también se enumeran en [funciones de de uso general](general-purpose-functions.md).
+En este ejemplo se usa la [**función MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo. El código para esta y otras funciones auxiliares también se muestra en [De uso general Functions](general-purpose-functions.md).
 
 
 ```C++

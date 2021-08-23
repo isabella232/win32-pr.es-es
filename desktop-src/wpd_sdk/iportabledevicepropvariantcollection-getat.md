@@ -14,12 +14,12 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: b901e8fcfa065813e4c0942632f80901800ef0a9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 02fa273b3bedea78884e15d2dedb5b7d2f675c78330c735e3bfb1896bc9d5199
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106803"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963734"
 ---
 # <a name="iportabledevicepropvariantcollectiongetat-method"></a>IPortableDevicePropVariantCollection::GetAt (método)
 
@@ -57,7 +57,7 @@ Puntero a una **estructura PROPVARIANT.** El autor de la llamada es responsable 
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT.** Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
@@ -86,7 +86,7 @@ Para obtener un ejemplo de cómo usar este método, vea [Recuperación de las ca
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
@@ -99,10 +99,10 @@ Para obtener un ejemplo de cómo usar este método, vea [Recuperación de las ca
 [Recuperación de eventos de servicio admitidos](retrieving-supported-events.md)
 </dt> <dt>
 
-[Recuperación de formatos de servicio admitidos](retrieving-supported-formats.md)
+[Recuperar formatos de servicio admitidos](retrieving-supported-formats.md)
 </dt> <dt>
 
-[Recuperación de métodos de servicio admitidos](retrieving-supported-methods.md)
+[Recuperar métodos de servicio admitidos](retrieving-supported-methods.md)
 </dt> <dt>
 
 [Recuperar los tipos de contenido admitidos por un dispositivo](retrieving-the-content-types-supported-by-a-device.md)
@@ -111,7 +111,7 @@ Para obtener un ejemplo de cómo usar este método, vea [Recuperación de las ca
 [Recuperar las categorías funcionales admitidas por un dispositivo](retrieving-the-functional-categories-supported-by-a-device.md)
 </dt> <dt>
 
-[Recuperar los identificadores de objeto funcionales de un dispositivo](retrieving-the-functional-object-identifiers-for-a-device.md)
+[Recuperar los identificadores de objeto funcional de un dispositivo](retrieving-the-functional-object-identifiers-for-a-device.md)
 </dt> <dt>
 
 [Recuperar las funcionalidades de representación admitidas por un dispositivo](retrieving-the-rendering-capabilities-supported-by-a-device.md)

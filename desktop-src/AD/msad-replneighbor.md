@@ -1,11 +1,11 @@
 ---
-title: MSAD_ReplNeighbor (clase)
-description: Representa la \_ estructura de vecinos de REPL de DS \_ , que contiene la información de estado de la replicación de entrada para un par de contexto de nomenclatura (NC) y de servidor de origen determinados.
+title: MSAD_ReplNeighbor clase
+description: Representa la estructura DS REPL NEIGHBOR, que contiene la información de estado de replicación de entrada para un contexto de nomenclatura (NC) determinado y un par de \_ \_ servidor de origen.
 ms.assetid: fdd3934b-a3f6-49ad-827b-077bcd21cf23
 ms.tgt_platform: multiple
 keywords:
 - MSAD_ReplNeighbor clase Active Directory
-- Active Directory de MSAD_ReplNeighbor de clase, se describe
+- MSAD_ReplNeighbor clase Active Directory , descrita
 topic_type:
 - apiref
 api_name:
@@ -48,16 +48,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9554c73c7fb84aad10ae6dda51480a7644d8434a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0598116413d34334e0610895a9c3b0629399fed8bb482e0d08cdae9cafb17fe4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996436"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119025763"
 ---
-# <a name="msad_replneighbor-class"></a>MSAD \_ ReplNeighbor (clase)
+# <a name="msad_replneighbor-class"></a>Clase \_ ReplNeighbor de MSAD
 
-Representa la estructura de [**\_ \_ vecinos de REPL de DS**](/windows/desktop/api/Ntdsapi/ns-ntdsapi-ds_repl_neighborw) , que contiene la información de estado de la replicación de entrada para un determinado contexto de nomenclatura (NC) y de servidor de origen, tal y como lo devuelve la función [**DsReplicaGetInfo**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsreplicagetinfow) .
+Representa la estructura [**\_ DS REPL \_ NEIGHBOR,**](/windows/desktop/api/Ntdsapi/ns-ntdsapi-ds_repl_neighborw) que contiene la información de estado de replicación de entrada para un contexto de nomenclatura (NC) y un par de servidor de origen determinados, tal como lo devuelve la función [**DsReplicaGetInfo.**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsreplicagetinfow)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -102,14 +102,14 @@ class MSAD_ReplNeighbor
 
 ## <a name="members"></a>Miembros
 
-La clase **MSAD \_ ReplNeighbor** tiene estos tipos de miembros:
+La **clase \_ ReplNeighbor de MSAD** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La clase **MSAD \_ ReplNeighbor** tiene estos métodos.
+La **clase \_ ReplNeighbor de MSAD** tiene estos métodos.
 
 
 
@@ -123,33 +123,33 @@ La clase **MSAD \_ ReplNeighbor** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSAD \_ ReplNeighbor** tiene estas propiedades.
+La **clase \_ ReplNeighbor de MSAD** tiene estas propiedades.
 
 <dl> <dt>
 
 **AsyncIntersiteTransportDN**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **cadena**
+Tipo de datos: **Cadena**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Obtiene la ruta de acceso X. 500 del objeto [**interSiteTransport**](/windows/desktop/ADSchema/c-intersitetransport) que corresponde al transporte en el que se realiza la replicación. Establezca en **null** para la replicación de RPC/IP.
+Obtiene la ruta de acceso X.500 del [**objeto interSiteTransport**](/windows/desktop/ADSchema/c-intersitetransport) que corresponde al transporte en el que se realiza la replicación. Se establece **en NULL para** la replicación RPC/IP.
 
 </dd> <dt>
 
 **AsyncIntersiteTransportObjGuid**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **cadena**
+Tipo de datos: **Cadena**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Obtiene el GUID del objeto de transporte entre sitios que corresponde a la propiedad **AsyncIntersiteTransportDN** .
+Obtiene el GUID del objeto de transporte entre sitios que corresponde a la **propiedad AsyncIntersiteTransportDN.**
 
 </dd> <dt>
 
@@ -162,7 +162,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Obtiene el valor que indica si se ha establecido la marca de **NBR de replicación de DS para \_ \_ \_ comprimir \_ cambios** en la propiedad **ReplicaFlags** .
+Obtiene el valor que indica si la marca **\_ DS REPL \_ NBR \_ COMPRESS \_ CHANGES** se ha establecido en la **propiedad ReplicaFlags.**
 
 </dd> <dt>
 
@@ -175,20 +175,20 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Obtiene el valor que indica si se ha establecido en la propiedad **ReplicaFlags** la propiedad NBR de la **replicación de DS \_ \_ \_ \_ \_** .
+Obtiene el valor que indica si se ha establecido la marca **\_ DS REPL \_ NBR \_ DISABLE \_ SCHEDULED \_ SYNC** en la **propiedad ReplicaFlags.**
 
 </dd> <dt>
 
 **Dominio**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **cadena**
+Tipo de datos: **Cadena**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Obtiene el nombre canónico del dominio del NC replicado.
+Obtiene el nombre canónico del dominio del controlador de red replicado.
 
 </dd> <dt>
 
@@ -201,7 +201,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Obtiene el valor que indica si se ha establecido la marca de **\_ \_ \_ \_ \_ sincronización programada de NBR de replicación de DS** en la propiedad **ReplicaFlags** .
+Obtiene el valor que indica si se ha establecido la marca **\_ DS REPL \_ NBR \_ DO \_ SCHEDULED \_ SYNCS** en la **propiedad ReplicaFlags.**
 
 </dd> <dt>
 
@@ -214,7 +214,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Obtiene el valor que indica si se ha establecido la marca **\_ \_ \_ \_ de NBR de sincronización completa \_ en \_ curso en** la propiedad **ReplicaFlags** .
+Obtiene el valor que indica si se ha establecido la marca **\_ DS REPL \_ NBR \_ FULL SYNC IN \_ \_ \_ PROGRESS** en la **propiedad ReplicaFlags.**
 
 </dd> <dt>
 
@@ -227,7 +227,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Obtiene el valor que indica si se ha establecido en la propiedad **ReplicaFlags** la marca de **\_ \_ \_ \_ \_ \_ paquete de sincronización completa de NBR de replicación de DS** .
+Obtiene el valor que indica si se ha establecido la marca **\_ DS REPL \_ NBR \_ FULL SYNC NEXT \_ \_ \_ PACKET** en la **propiedad ReplicaFlags.**
 
 </dd> <dt>
 
@@ -240,7 +240,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Obtiene el valor que indica si se ha establecido en la propiedad **ReplicaFlags** el marcador **\_ REPL de \_ NBR \_ omitir \_ \_ notificaciones de cambios** .
+Obtiene el valor que indica si se ha establecido la marca **\_ REPL \_ NBR \_ IGNORE CHANGE \_ \_ NOTIFICATIONS** de DS en la propiedad **ReplicaFlags.**
 
 </dd> <dt>
 
@@ -253,40 +253,40 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Obtiene el valor que indica si esta conexión representa un controlador de dominio de origen que se ha eliminado. **True** si esta conexión representa un controlador de dominio de origen que se ha eliminado; en caso contrario, **false**. Por diseño, el DS seguirá replicando estas conexiones durante algún tiempo durante algún tiempo después de que se elimine el controlador de dominio de origen.
+Obtiene el valor que indica si esta conexión representa un controlador de dominio de origen que se ha eliminado. **TRUE** si esta conexión representa un controlador de dominio de origen que se ha eliminado; de lo contrario, **FALSE**. Por diseño, el DS seguirá replicando estas conexiones durante algún tiempo después de eliminar el controlador de dominio de origen.
 
 </dd> <dt>
 
 **LastSyncResult**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Obtiene el código de error **HRESULT** para el último intento de replicación.
+Obtiene el código de error **HRESULT** del último intento de replicación.
 
 </dd> <dt>
 
 **ModifiedNumConsecutiveSyncFailures**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Obtiene el número de intentos de replicación erróneos consecutivos, sin incluir las conexiones que se espera que generen un error. Por ejemplo, si la propiedad **IsDeletedSourceDsa** está establecida en **true**, se espera que se produzca un error.
+Obtiene el número de intentos consecutivos de replicación con errores, sin incluir las conexiones que se espera que no se puedan realizar correctamente. Por ejemplo, si la **propiedad IsDeletedSourceDsa** está establecida en **TRUE,** se espera que se producirá un error.
 
 </dd> <dt>
 
 **NamingContextDN**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **cadena**
+Tipo de datos: **Cadena**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -295,20 +295,20 @@ Tipo de acceso: solo lectura
 Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Obtiene la ruta de acceso X. 500 para el NC que replica esta conexión.
+Obtiene la ruta de acceso X.500 para el NC replicado por esta conexión.
 
 </dd> <dt>
 
 **NamingContextObjGuid**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **cadena**
+Tipo de datos: **Cadena**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Obtiene el GUID para el NC replicado.
+Obtiene el GUID del NC replicado.
 
 </dd> <dt>
 
@@ -321,7 +321,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Obtiene el valor que indica si se ha establecido la marca de **NBR de replicación de DS no \_ \_ \_ \_ sincronizado nunca** en la propiedad **ReplicaFlags** .
+Obtiene el valor que indica si se ha establecido la marca **\_ DS REPL \_ NBR \_ NEVER \_ SYNCED** en la **propiedad ReplicaFlags.**
 
 </dd> <dt>
 
@@ -334,39 +334,39 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Obtiene el valor que indica si se ha establecido la marca de **NBR de replicación de DS \_ \_ \_ no hay \_ \_ notificaciones de cambios** en la propiedad **ReplicaFlags** .
+Obtiene el valor que indica si se ha establecido la marca **DS \_ REPL \_ NBR \_ NO CHANGE \_ \_ NOTIFICATIONS** en la **propiedad ReplicaFlags.**
 
 </dd> <dt>
 
 **NumConsecutiveSyncFailures**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Obtiene el número de intentos de replicación erróneos consecutivos.
+Obtiene el número de intentos consecutivos de replicación con errores.
 
 </dd> <dt>
 
 **ReplicaFlags**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Obtiene el conjunto de marcadores que especifican los atributos y las opciones para los datos de replicación. Esta propiedad puede ser cero o una combinación de uno o varios de los siguientes marcadores.
+Obtiene el conjunto de marcas que especifican atributos y opciones para los datos de replicación. Esta propiedad puede ser cero o una combinación de una o varias de las marcas siguientes.
 
 <dt>
 
 <span id="DS_REPL_NBR_WRITEABLE"></span><span id="ds_repl_nbr_writeable"></span>
 
-<span id="DS_REPL_NBR_WRITEABLE"></span><span id="ds_repl_nbr_writeable"></span>**DS \_ REPL \_ NBR \_ grabable** (16 (0x10))
+<span id="DS_REPL_NBR_WRITEABLE"></span><span id="ds_repl_nbr_writeable"></span>**DS \_ REPL \_ NBR \_ WRITEABLE** (16 (0x10))
 
 
 </dt> <dd>
@@ -377,29 +377,29 @@ La copia local del contexto de nomenclatura es de escritura.
 
 <span id="DS_REPL_NBR_SYNC_ON_STARTUP"></span><span id="ds_repl_nbr_sync_on_startup"></span>
 
-<span id="DS_REPL_NBR_SYNC_ON_STARTUP"></span><span id="ds_repl_nbr_sync_on_startup"></span>**DS \_ REPL \_ NBR \_ Sync \_ ON \_ Startup** (32 (0x20))
+<span id="DS_REPL_NBR_SYNC_ON_STARTUP"></span><span id="ds_repl_nbr_sync_on_startup"></span>**DS \_ REPL \_ NBR \_ SYNC ON \_ \_ STARTUP** (32 (0x20))
 
 
 </dt> <dd>
 
-La replicación de este contexto de nomenclatura desde este origen se intenta cuando se arranca el servidor de destino. Esta marca normalmente solo se aplica a vecinos dentro del sitio.
+La replicación de este contexto de nomenclatura desde este origen se intenta cuando se arranca el servidor de destino. Normalmente, esta marca solo se aplica a los vecinos dentro del sitio.
 
 </dd> <dt>
 
 <span id="DS_REPL_NBR_DO_SCHEDULED_SYNCS"></span><span id="ds_repl_nbr_do_scheduled_syncs"></span>
 
-<span id="DS_REPL_NBR_DO_SCHEDULED_SYNCS"></span><span id="ds_repl_nbr_do_scheduled_syncs"></span>**DS \_ NBR de REPL \_ \_ realiza \_ \_ sincronizaciones programadas** (64 (0x40))
+<span id="DS_REPL_NBR_DO_SCHEDULED_SYNCS"></span><span id="ds_repl_nbr_do_scheduled_syncs"></span>**DS \_ REPL \_ NBR \_ DO \_ SCHEDULED \_ SYNCS** (64 (0x40))
 
 
 </dt> <dd>
 
-La replicación se realiza según una programación. Normalmente, esta marca se establece a menos que la programación para este contexto de nomenclatura o origen sea "Never", es decir, la programación vacía.
+La replicación se realiza según una programación. Normalmente, esta marca se establece a menos que la programación de este contexto de nomenclatura o origen sea "never", es decir, la programación vacía.
 
 </dd> <dt>
 
 <span id="DS_REPL_NBR_USE_ASYNC_INTERSITE_TRANSPORT"></span><span id="ds_repl_nbr_use_async_intersite_transport"></span>
 
-<span id="DS_REPL_NBR_USE_ASYNC_INTERSITE_TRANSPORT"></span><span id="ds_repl_nbr_use_async_intersite_transport"></span>**DS \_ REPL \_ NBR \_ usar \_ el \_ \_ transporte asincrónico entre sitios** (128 (0x80))
+<span id="DS_REPL_NBR_USE_ASYNC_INTERSITE_TRANSPORT"></span><span id="ds_repl_nbr_use_async_intersite_transport"></span>**DS \_ REPL \_ NBR \_ USE \_ ASYNC \_ INTERSITE \_ TRANSPORT** (128 (0x80))
 
 
 </dt> <dd>
@@ -410,18 +410,18 @@ La replicación se realiza indirectamente a través del servicio de mensajería 
 
 <span id="DS_REPL_NBR_TWO_WAY_SYNC"></span><span id="ds_repl_nbr_two_way_sync"></span>
 
-<span id="DS_REPL_NBR_TWO_WAY_SYNC"></span><span id="ds_repl_nbr_two_way_sync"></span>**DS \_ \_ \_ \_ \_ Sincronización de NBR bidireccional de REPL** (512 (0x200))
+<span id="DS_REPL_NBR_TWO_WAY_SYNC"></span><span id="ds_repl_nbr_two_way_sync"></span>**DS \_ REPL \_ NBR \_ TWO WAY \_ \_ SYNC** (512 (0x200))
 
 
 </dt> <dd>
 
-Si se establece, indica que cuando se completa la replicación de entrada, el servidor de destino debe indicar al servidor de origen que se sincronice en la dirección inversa. Esta característica se utiliza en escenarios de acceso telefónico en los que sólo uno de los dos servidores puede iniciar una conexión de acceso telefónico. Por ejemplo, esta opción se puede usar en una oficina central y en una sucursal, donde la sucursal se conecta a la oficina central corporativa a través de Internet por medio de una conexión de ISP de acceso telefónico.
+Si se establece, indica que cuando se completa la replicación entrante, el servidor de destino debe indicar al servidor de origen que se sincronice en la dirección inversa. Esta característica se utiliza en escenarios de acceso telefónico en los que sólo uno de los dos servidores puede iniciar una conexión de acceso telefónico. Por ejemplo, esta opción podría usarse en una oficina central corporativa y una sucursal, donde la sucursal se conecta a la oficina central corporativa a través de Internet mediante una conexión de ACCESO telefónico de ISP.
 
 </dd> <dt>
 
 <span id="DS_REPL_NBR_RETURN_OBJECT_PARENTS"></span><span id="ds_repl_nbr_return_object_parents"></span>
 
-<span id="DS_REPL_NBR_RETURN_OBJECT_PARENTS"></span><span id="ds_repl_nbr_return_object_parents"></span>**DS \_ REPL \_ NBR \_ devuelven \_ objetos \_ primarios** (2048 (0x800))
+<span id="DS_REPL_NBR_RETURN_OBJECT_PARENTS"></span><span id="ds_repl_nbr_return_object_parents"></span>**DS \_ REPL \_ NBR \_ RETURN OBJECT \_ \_ PARENTS** (2048 (0x800))
 
 
 </dt> <dd>
@@ -432,29 +432,29 @@ Este vecino está devolviendo los objetos primarios antes que los objetos secund
 
 <span id="DS_REPL_NBR_FULL_SYNC_IN_PROGRESS"></span><span id="ds_repl_nbr_full_sync_in_progress"></span>
 
-<span id="DS_REPL_NBR_FULL_SYNC_IN_PROGRESS"></span><span id="ds_repl_nbr_full_sync_in_progress"></span>**DS \_ \_ \_ Sincronización completa de REPL NBR \_ \_ en \_ curso** (65536 (0x10000))
+<span id="DS_REPL_NBR_FULL_SYNC_IN_PROGRESS"></span><span id="ds_repl_nbr_full_sync_in_progress"></span>**DS \_ REPL \_ NBR \_ FULL SYNC \_ IN \_ \_ PROGRESS** (65536 (0x10000))
 
 
 </dt> <dd>
 
-El servidor de destino está realizando una sincronización completa desde el servidor de origen. Las sincronizaciones completas no usan vectores que crean actualizaciones (por ejemplo [**, \_ \_ cursores de replicación de DS**](/windows/desktop/api/Ntdsapi/ns-ntdsapi-ds_repl_cursors)) para filtrar las actualizaciones. Las sincronizaciones completas no se usan como parte del Protocolo de replicación predeterminado.
+El servidor de destino está realizando una sincronización completa desde el servidor de origen. Las sincronizaciones completa no usan vectores que crean actualizaciones (como [**CURSORES \_ DE REPL \_ de DS)**](/windows/desktop/api/Ntdsapi/ns-ntdsapi-ds_repl_cursors)para filtrar las actualizaciones. Las sincronizaciones completa no se usan como parte del protocolo de replicación predeterminado.
 
 </dd> <dt>
 
 <span id="DS_REPL_NBR_FULL_SYNC_NEXT_PACKET"></span><span id="ds_repl_nbr_full_sync_next_packet"></span>
 
-<span id="DS_REPL_NBR_FULL_SYNC_NEXT_PACKET"></span><span id="ds_repl_nbr_full_sync_next_packet"></span>**DS \_ \_ \_ \_ \_ Siguiente \_ paquete de sincronización completa de REPL NBR** (131072 (0x20000))
+<span id="DS_REPL_NBR_FULL_SYNC_NEXT_PACKET"></span><span id="ds_repl_nbr_full_sync_next_packet"></span>**DS \_ PAQUETE \_ SIGUIENTE DE REPL NBR \_ \_ FULL SYNC \_ \_** (131072 (0x20000))
 
 
 </dt> <dd>
 
-El último paquete del origen indicó una modificación de un objeto que el servidor de destino aún no ha creado. El siguiente paquete que se va a solicitar indica al servidor de origen que ponga todos los atributos del objeto modificado en el paquete.
+El último paquete del origen indicaba una modificación de un objeto que el servidor de destino aún no ha creado. El siguiente paquete que se va a solicitar indica al servidor de origen que coloque todos los atributos del objeto modificado en el paquete.
 
 </dd> <dt>
 
 <span id="DS_REPL_NBR_NEVER_SYNCED"></span><span id="ds_repl_nbr_never_synced"></span>
 
-<span id="DS_REPL_NBR_NEVER_SYNCED"></span><span id="ds_repl_nbr_never_synced"></span>**DS \_ REPL \_ NBR \_ nunca se \_ sincronizó** (2097152 (0x200000))
+<span id="DS_REPL_NBR_NEVER_SYNCED"></span><span id="ds_repl_nbr_never_synced"></span>**DS \_ REPL \_ NBR \_ NEVER \_ SYNCED** (2097152 (0x200000))
 
 
 </dt> <dd>
@@ -465,51 +465,51 @@ Nunca se ha realizado una sincronización correcta desde este origen.
 
 <span id="DS_REPL_NBR_PREEMPTED"></span><span id="ds_repl_nbr_preempted"></span>
 
-<span id="DS_REPL_NBR_PREEMPTED"></span><span id="ds_repl_nbr_preempted"></span>**DS \_ REPL \_ NBR \_ adelantado** (16777216 (0x1000000))
+<span id="DS_REPL_NBR_PREEMPTED"></span><span id="ds_repl_nbr_preempted"></span>**DS \_ REPL \_ NBR \_ PREEMPTED** (16777216 (0x1000000))
 
 
 </dt> <dd>
 
-El motor de replicación ha detenido temporalmente el procesamiento de este vecino para poder atender a otro vecino de prioridad más alta, ya sea para esta partición o para otra partición. El motor de replicación reanudará el procesamiento de este vecino cuando finalice el trabajo de prioridad más alta.
+El motor de replicación ha dejado temporalmente de procesar este vecino para dar servicio a otro vecino de mayor prioridad, ya sea para esta partición o para otra partición. El motor de replicación reanudará el procesamiento de este vecino cuando finalice el trabajo de prioridad más alta.
 
 </dd> <dt>
 
 <span id="DS_REPL_NBR_IGNORE_CHANGE_NOTIFICATIONS"></span><span id="ds_repl_nbr_ignore_change_notifications"></span>
 
-<span id="DS_REPL_NBR_IGNORE_CHANGE_NOTIFICATIONS"></span><span id="ds_repl_nbr_ignore_change_notifications"></span>**DS \_ REPL \_ NBR \_ omitir \_ \_ notificaciones de cambios** (67108864 (0x4000000))
+<span id="DS_REPL_NBR_IGNORE_CHANGE_NOTIFICATIONS"></span><span id="ds_repl_nbr_ignore_change_notifications"></span>**DS \_ REPL \_ NBR \_ OMITIR NOTIFICACIONES \_ DE \_ CAMBIO** (67108864 (0x4000000))
 
 
 </dt> <dd>
 
-Este vecino está configurado para deshabilitar las sincronizaciones basadas en notificaciones. Dentro de un sitio, los controladores de dominio se sincronizan entre sí basándose en las notificaciones de cambios. Esta configuración impide que este vecino realice sincronizaciones que se desencadenan mediante notificaciones. El vecino seguirá realizando sincronizaciones en función de su programación o en respuesta a las sincronizaciones solicitadas manualmente.
+Este vecino está establecido para deshabilitar las sincronizaciones basadas en notificaciones. Dentro de un sitio, los controladores de dominio se sincronizan entre sí basándose en las notificaciones de cambios. Esta configuración impide que este vecino realice sincronizaciones desencadenadas por notificaciones. El vecino seguirá haciendo sincronizaciones según su programación o en respuesta a las sincronizaciones solicitadas manualmente.
 
 </dd> <dt>
 
 <span id="DS_REPL_NBR_DISABLE_SCHEDULED_SYNC"></span><span id="ds_repl_nbr_disable_scheduled_sync"></span>
 
-<span id="DS_REPL_NBR_DISABLE_SCHEDULED_SYNC"></span><span id="ds_repl_nbr_disable_scheduled_sync"></span>**DS \_ REPL \_ NBR \_ deshabilitar la \_ \_ sincronización programada** (134217728 (0x8000000))
+<span id="DS_REPL_NBR_DISABLE_SCHEDULED_SYNC"></span><span id="ds_repl_nbr_disable_scheduled_sync"></span>**DS \_ REPL \_ NBR \_ DISABLE \_ SCHEDULED \_ SYNC** (134217728 (0x8000000))
 
 
 </dt> <dd>
 
-Este vecino está configurado para no realizar sincronizaciones en función de su programación. La única manera en que este vecino realiza sincronizaciones es responder a las notificaciones de cambio o a las sincronizaciones solicitadas manualmente.
+Este vecino está establecido para no realizar sincronizaciones en función de su programación. La única manera en que este vecino realizará sincronizaciones es en respuesta a las notificaciones de cambio o a las sincronizaciones solicitadas manualmente.
 
 </dd> <dt>
 
 <span id="DS_REPL_NBR_COMPRESS_CHANGES"></span><span id="ds_repl_nbr_compress_changes"></span>
 
-<span id="DS_REPL_NBR_COMPRESS_CHANGES"></span><span id="ds_repl_nbr_compress_changes"></span>**DS \_ NBR de REPL- \_ \_ comprimir \_ cambios** (268435456 (0x10000000))
+<span id="DS_REPL_NBR_COMPRESS_CHANGES"></span><span id="ds_repl_nbr_compress_changes"></span>**DS \_ CAMBIOS DE \_ COMPRESIÓN DE REPL NBR \_ \_** (268435456 (0x10000000))
 
 
 </dt> <dd>
 
-Los cambios recibidos de este origen se comprimirán. Normalmente, la compresión solo se produce si el servidor de origen está en un sitio diferente.
+Los cambios recibidos de este origen se van a comprimir. Normalmente, la compresión solo se produce si el servidor de origen está en un sitio diferente.
 
 </dd> <dt>
 
 <span id="DS_REPL_NBR_NO_CHANGE_NOTIFICATIONS"></span><span id="ds_repl_nbr_no_change_notifications"></span>
 
-<span id="DS_REPL_NBR_NO_CHANGE_NOTIFICATIONS"></span><span id="ds_repl_nbr_no_change_notifications"></span>**DS \_ REPL \_ NBR \_ no \_ \_ notificaciones de cambios** (536870912 (0x20000000))
+<span id="DS_REPL_NBR_NO_CHANGE_NOTIFICATIONS"></span><span id="ds_repl_nbr_no_change_notifications"></span>**DS \_ REPL \_ NBR \_ NO CHANGE \_ \_ NOTIFICATIONS** (536870912 (0x20000000))
 
 
 </dt> <dd>
@@ -520,7 +520,7 @@ No deberían recibirse notificaciones de cambios desde este origen. Normalmente 
 
 <span id="DS_REPL_NBR_PARTIAL_ATTRIBUTE_SET"></span><span id="ds_repl_nbr_partial_attribute_set"></span>
 
-<span id="DS_REPL_NBR_PARTIAL_ATTRIBUTE_SET"></span><span id="ds_repl_nbr_partial_attribute_set"></span>**DS \_ \_Conjunto de \_ \_ atributos parciales \_ de REPL NBR** (1073741824 (0x40000000))
+<span id="DS_REPL_NBR_PARTIAL_ATTRIBUTE_SET"></span><span id="ds_repl_nbr_partial_attribute_set"></span>**DS \_ CONJUNTO DE ATRIBUTOS PARCIALES DE REPL \_ NBR \_ \_ \_** (1073741824 (0x40000000))
 
 
 </dt> <dd>
@@ -534,7 +534,7 @@ Este vecino está recompilando el contenido de esta réplica debido a un cambio 
 **SourceDsaAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **cadena**
+Tipo de datos: **String**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -552,62 +552,62 @@ Obtiene la dirección DNS del controlador de dominio de origen.
 **SourceDsaCN**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **cadena**
+Tipo de datos: **String**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Obtiene el componente de ruta de acceso del objeto DSA que representa el controlador de dominio de origen. Esta cadena suele ser similar al nombre del equipo, pero no siempre es idéntica.
+Obtiene el componente de ruta de acceso del objeto para el DSA que representa el controlador de dominio de origen. Esta cadena suele ser similar al nombre del equipo, pero no siempre es idéntica.
 
 </dd> <dt>
 
 **SourceDsaDN**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **cadena**
+Tipo de datos: **String**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Obtiene la ruta de acceso X. 500 del DSA que representa el controlador de dominio de origen.
+Obtiene la ruta de acceso X.500 para el DSA que representa el controlador de dominio de origen.
 
 </dd> <dt>
 
 **SourceDsaInvocationID**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **cadena**
+Tipo de datos: **String**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Obtiene el identificador de invocación utilizado por el servidor de origen a partir de la última replicación.
+Obtiene el identificador de invocación que usó el servidor de origen en la última replicación.
 
 </dd> <dt>
 
 **SourceDsaObjGuid**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **cadena**
+Tipo de datos: **String**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Obtiene el GUID para el agente de servicios de directorio (DSA) que representa el controlador de dominio de origen (DC).
+Obtiene el GUID del agente de servicio de directorio (DSA) que representa el controlador de dominio (DC) de origen.
 
 </dd> <dt>
 
 **SourceDsaSite**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **cadena**
+Tipo de datos: **String**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -626,14 +626,14 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Obtiene el valor que indica si se ha establecido en la propiedad **ReplicaFlags** la propiedad **\_ \_ NBR \_ de REPL de la sincronización en el indicador \_ de \_ Inicio** .
+Obtiene el valor que indica si la marca **\_ DS REPL \_ NBR \_ SYNC ON \_ \_ STARTUP** se ha establecido en la **propiedad ReplicaFlags.**
 
 </dd> <dt>
 
 **TimeOfLastSyncAttempt**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -646,7 +646,7 @@ Obtiene la marca de tiempo del último intento de replicación.
 **TimeOfLastSyncSuccess**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -665,7 +665,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Obtiene el valor que indica si se ha establecido la marca de **\_ sincronización DS REPL \_ NBR \_ \_ Biway \_** en la propiedad **ReplicaFlags** .
+Obtiene el valor que indica si se ha establecido la marca **\_ DS REPL \_ NBR \_ TWO WAY \_ \_ SYNC** en la **propiedad ReplicaFlags.**
 
 </dd> <dt>
 
@@ -678,33 +678,33 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Obtiene el valor que indica si se ha establecido en la propiedad **ReplicaFlags** el marcador REPL de NBR de uso de la marca de **\_ \_ \_ \_ \_ \_ transporte entre sitios asincrónica** .
+Obtiene el valor que indica si se ha establecido la marca **DS \_ REPL \_ NBR \_ USE \_ ASYNC \_ INTERSITE \_ TRANSPORT** en la **propiedad ReplicaFlags.**
 
 </dd> <dt>
 
 **USNAttributeFilter**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Obtiene el valor de la propiedad **USNLastObjChangeSynced** al final del último ciclo de replicación completado correctamente. Cero si no se ha completado correctamente ningún ciclo de replicación.
+Obtiene el **valor de la propiedad USNLastObjChangeSynced** al final del último ciclo de replicación completado correctamente. Cero si no se completaron correctamente los ciclos de replicación.
 
 </dd> <dt>
 
 **USNLastObjChangeSynced**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Obtiene el valor de atributo [**sin modificar**](/windows/desktop/ADSchema/a-usnchanged) de la última actualización de objeto que se recibió.
+Obtiene el [**valor de atributo sin**](/windows/desktop/ADSchema/a-usnchanged) cambios de la última actualización de objeto que se recibió.
 
 </dd> <dt>
 
@@ -717,7 +717,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Obtiene el valor que indica si se ha establecido la marca de escritura de NBR de replicación de DS en la propiedad **ReplicaFlags** . **\_ \_ \_**
+Obtiene el valor que indica si se ha establecido la marca **\_ \_ REPL NBR \_ WRITEABLE** de DS en la **propiedad ReplicaFlags.**
 
 </dd> </dl>
 
@@ -730,7 +730,7 @@ Obtiene el valor que indica si se ha establecido la marca de escritura de NBR de
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
 | Espacio de nombres<br/>                | \\MicrosoftActiveDirectory raíz<br/>                                               |
-| MOF<br/>                      | <dl> <dt>ReplProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Replprov.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Replprov.dll</dt> </dl> |
 
 

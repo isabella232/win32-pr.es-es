@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 751d6dd0376dc73f0213ddb83a19954dc154d633
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 03babe487bfd28048f726590ce567ac191c6cd3cf737daecc4853afaa53e535d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084033"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119046923"
 ---
 # <a name="id3dx10meshgetindexbuffer-method"></a>Método ID3DX10Mesh::GetIndexBuffer
 
@@ -66,7 +66,7 @@ El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Di
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

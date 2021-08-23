@@ -1,7 +1,7 @@
 ---
 description: Obtiene un conjunto de marcas que indican las opciones actuales de la vista.
 ms.assetid: 83a17033-bd7f-44de-a0c8-460d12c4825d
-title: Propiedad ShellFolderView. ViewOptions (Shldisp. h)
+title: Propiedad ShellFolderView.ViewOptions (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: e336034e7d5037b8037c6fd0ef549fe5f87da312
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3c49389700494c646976ee7df5e67782b110fc085f4328cb139b9604523c8622
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104997864"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968434"
 ---
-# <a name="shellfolderviewviewoptions-property"></a>Propiedad ShellFolderView. ViewOptions
+# <a name="shellfolderviewviewoptions-property"></a>Propiedad ShellFolderView.ViewOptions
 
 Obtiene un conjunto de marcas que indican las opciones actuales de la vista.
 
@@ -48,7 +48,7 @@ Variable de tipo [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) qu
 
 </dt> <dd>
 
-La opción **Mostrar todos los archivos** está habilitada.
+La **opción Mostrar todos los** archivos está habilitada.
 
 </dd> <dt>
 
@@ -59,7 +59,7 @@ La opción **Mostrar todos los archivos** está habilitada.
 
 </dt> <dd>
 
-La opción **Ocultar extensiones para tipos de archivo conocidos** está deshabilitada.
+La **opción Ocultar extensiones para tipos de archivo conocidos** está deshabilitada.
 
 </dd> <dt>
 
@@ -70,7 +70,7 @@ La opción **Ocultar extensiones para tipos de archivo conocidos** está deshabi
 
 </dt> <dd>
 
-La opción **Mostrar los archivos comprimidos y las carpetas con un color alternativo** está habilitada.
+La **opción Mostrar archivos y carpetas comprimidos con color** alternativo está habilitada.
 
 </dd> <dt>
 
@@ -81,7 +81,7 @@ La opción **Mostrar los archivos comprimidos y las carpetas con un color altern
 
 </dt> <dd>
 
-La opción no **Mostrar archivos ocultos** está habilitada.
+La **opción No mostrar archivos ocultos** está habilitada.
 
 </dd> <dt>
 
@@ -92,7 +92,7 @@ La opción no **Mostrar archivos ocultos** está habilitada.
 
 </dt> <dd>
 
-La opción de **estilo clásico** está habilitada.
+La **opción Estilo clásico** está habilitada.
 
 </dd> <dt>
 
@@ -103,7 +103,7 @@ La opción de **estilo clásico** está habilitada.
 
 </dt> <dd>
 
-La opción hacer **doble clic para abrir un elemento** está habilitada.
+La **opción Hacer doble clic para abrir un elemento** está habilitada.
 
 </dd> <dt>
 
@@ -114,17 +114,17 @@ La opción hacer **doble clic para abrir un elemento** está habilitada.
 
 </dt> <dd>
 
-La opción **Active Desktop: ver como página web** está habilitada.
+La **opción Active Desktop : Ver como página web** está habilitada.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Solo se puede llamar a [**FocusedItem**](shellfolderview-focuseditem.md) en el sistema local. No funcionará cuando se ejecute en una página web a través de HTTP o UNC.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso correcto de este método en JScript incrustado en HTML.
+En el ejemplo siguiente se muestra el uso adecuado de este método en JScript insertado en HTML.
 
 
 ```JScript
@@ -178,11 +178,11 @@ En el ejemplo siguiente se muestra el uso correcto de este método en JScript in
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

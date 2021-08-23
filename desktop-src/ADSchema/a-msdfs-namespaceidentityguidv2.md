@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DFS-namespace-Identity-GUID-V2
-description: Solo se establecerá cuando se cree el espacio de nombres. Estable en cambio de nombre o movimiento, siempre que el espacio de nombres no se reemplace por otro espacio de nombres que tenga el mismo nombre.
+title: Atributo ms-DFS-Namespace-Identity-GUID-v2
+description: Para establecerse solo cuando se crea el espacio de nombres. Estable en cambio de nombre o movimiento, siempre que el espacio de nombres no se reemplaza por otro espacio de nombres que tenga el mismo nombre.
 ms.assetid: 66907d40-48a7-40ae-9031-1366a4a4d2a2
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-DFS-namespace-Identity-GUID-V2
-- msDFS-NamespaceIdentityGUIDv2 atributo AD Schema
+- Esquema de AD del atributo ms-DFS-Namespace-Identity-GUID-v2
+- Esquema de AD del atributo msDFS-NamespaceIdentityGUIDv2
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9be75ccaa0a8d607502d4709afdf313f0ddfce99
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d8cf6129392ae0c4e9361f614f303c824c59be2b995dbcc36c4b8f5aaf35f0ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906225"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960984"
 ---
-# <a name="ms-dfs-namespace-identity-guid-v2-attribute"></a>atributo MS-DFS-namespace-Identity-GUID-V2
+# <a name="ms-dfs-namespace-identity-guid-v2-attribute"></a>Atributo ms-DFS-Namespace-Identity-GUID-v2
 
-Solo se establecerá cuando se cree el espacio de nombres. Estable en cambio de nombre o movimiento, siempre que el espacio de nombres no se reemplace por otro espacio de nombres que tenga el mismo nombre.
+Para establecerse solo cuando se crea el espacio de nombres. Estable en cambio de nombre o movimiento, siempre que el espacio de nombres no se reemplaza por otro espacio de nombres que tenga el mismo nombre.
 
 
 
 | Entrada | Value |
 |-------------------|-------------------------------------------------------|
-| CN                | MS-DFS-namespace-Identity-GUID-V2                     |
-| Nombre para mostrar de LDAP | msDFS-NamespaceIdentityGUIDv2                         |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| CN                | ms-DFS-Namespace-Identity-GUID-v2                     |
+| Ldap-Display-Name | msDFS-NamespaceIdentityGUIDv2                         |
+| Size              | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.2033                               |
-| System-ID-GUID    | 200432ce-ec5f-4931-A525-d7f4afe34e68                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 200432ce-ec5f-4931-a525-d7f4afe34e68                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -52,18 +52,18 @@ Solo se establecerá cuando se cree el espacio de nombres. Estable en cambio de 
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                   |
+| Id. de vínculo                | \-                                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                                                |
-| Tiene un único valor       | True                                                                                                                                                                                 |
-| Está indexado             | False                                                                                                                                                                                |
-| En el catálogo global      | False                                                                                                                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                         |
+| System-Only            | Falso                                                                                                                                                                                |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                 |
+| Está indexado             | Falso                                                                                                                                                                                |
+| En el catálogo global      | Falso                                                                                                                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                         |
 | Range-Lower            | 16                                                                                                                                                                                   |
 | Range-Upper            | 16                                                                                                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                                                                                                           |
 | System-Flags           | 0x00000010                                                                                                                                                                           |
-| Clases usadas en        | [**MS-DFS-Deleted-Link-V2**](c-msdfs-deletedlinkv2.md)<br/> [**MS-DFS-Link-V2**](c-msdfs-linkv2.md)<br/> [**MS-DFS-namespace-V2**](c-msdfs-namespacev2.md)<br/> |
+| Clases usadas en        | [**ms-DFS-Deleted-Link-v2**](c-msdfs-deletedlinkv2.md)<br/> [**ms-DFS-Link-v2**](c-msdfs-linkv2.md)<br/> [**ms-DFS-Namespace-v2**](c-msdfs-namespacev2.md)<br/> |
 
 
 
@@ -73,18 +73,18 @@ Solo se establecerá cuando se cree el espacio de nombres. Estable en cambio de 
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                   |
+| Id. de vínculo                | \-                                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                                                |
-| Tiene un único valor       | True                                                                                                                                                                                 |
-| Está indexado             | False                                                                                                                                                                                |
-| En el catálogo global      | False                                                                                                                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                         |
+| System-Only            | Falso                                                                                                                                                                                |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                 |
+| Está indexado             | Falso                                                                                                                                                                                |
+| En el catálogo global      | Falso                                                                                                                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                         |
 | Range-Lower            | 16                                                                                                                                                                                   |
 | Range-Upper            | 16                                                                                                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                                                                                                           |
 | System-Flags           | 0x00000010                                                                                                                                                                           |
-| Clases usadas en        | [**MS-DFS-Deleted-Link-V2**](c-msdfs-deletedlinkv2.md)<br/> [**MS-DFS-Link-V2**](c-msdfs-linkv2.md)<br/> [**MS-DFS-namespace-V2**](c-msdfs-namespacev2.md)<br/> |
+| Clases usadas en        | [**ms-DFS-Deleted-Link-v2**](c-msdfs-deletedlinkv2.md)<br/> [**ms-DFS-Link-v2**](c-msdfs-linkv2.md)<br/> [**ms-DFS-Namespace-v2**](c-msdfs-namespacev2.md)<br/> |
 
 
 
@@ -94,18 +94,18 @@ Solo se establecerá cuando se cree el espacio de nombres. Estable en cambio de 
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                   |
+| Id. de vínculo                | \-                                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                                                |
-| Tiene un único valor       | True                                                                                                                                                                                 |
-| Está indexado             | False                                                                                                                                                                                |
-| En el catálogo global      | False                                                                                                                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                         |
+| System-Only            | Falso                                                                                                                                                                                |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                 |
+| Está indexado             | Falso                                                                                                                                                                                |
+| En el catálogo global      | Falso                                                                                                                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                         |
 | Range-Lower            | 16                                                                                                                                                                                   |
 | Range-Upper            | 16                                                                                                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                                                                                                           |
 | System-Flags           | 0x00000010                                                                                                                                                                           |
-| Clases usadas en        | [**MS-DFS-Deleted-Link-V2**](c-msdfs-deletedlinkv2.md)<br/> [**MS-DFS-Link-V2**](c-msdfs-linkv2.md)<br/> [**MS-DFS-namespace-V2**](c-msdfs-namespacev2.md)<br/> |
+| Clases usadas en        | [**ms-DFS-Deleted-Link-v2**](c-msdfs-deletedlinkv2.md)<br/> [**ms-DFS-Link-v2**](c-msdfs-linkv2.md)<br/> [**ms-DFS-Namespace-v2**](c-msdfs-namespacev2.md)<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Recupera el nombre del fabricante de este dispositivo de hardware.
 ms.assetid: be8c91ea-eaf8-45d5-801d-ad02db3634f1
-title: Propiedad DeviceInfo. manufacturer
+title: Propiedad DeviceInfo.Manufacturer
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: 59a9052daae1d0f01928b118233771bcf2bae02f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3a40d4a416f8ca0447373b9ac9e80d2993a8ace92c2127636eb363e40f199c23
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105720538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965724"
 ---
-# <a name="deviceinfomanufacturer-property"></a>Propiedad DeviceInfo. manufacturer
+# <a name="deviceinfomanufacturer-property"></a>Propiedad DeviceInfo.Manufacturer
 
 Recupera el nombre del fabricante de este dispositivo de hardware.
 
@@ -45,9 +45,9 @@ Cadena que recibe el nombre.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Archivo DLL<br/>                      | <dl> <dt>Wiascr.dll (versión 4,90 o posterior)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
+| Archivo DLL<br/>                      | <dl> <dt>Wiascr.dll (versión 4.90 o posterior)</dt> </dl> |
 
 
 

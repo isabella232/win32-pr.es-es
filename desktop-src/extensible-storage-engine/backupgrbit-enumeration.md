@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: enumeración BackupGrbit'
-title: Enumeración BackupGrbit
+description: 'Más información sobre: BackupGrbit (enumeración)'
+title: BackupGrbit (enumeración)
 TOCTitle: BackupGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.BackupGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.backupgrbit(v=EXCHG.10)
@@ -30,21 +30,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bda9754efcae8ebe353b8272ba57c5640ecdf946
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a9d5225fb7ab3df89e719dcdcd89ddf1ab8f506db8c1098b997a7297befe1ba6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678417"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118982875"
 ---
-# <a name="backupgrbit-enumeration"></a>Enumeración BackupGrbit
+# <a name="backupgrbit-enumeration"></a>BackupGrbit (enumeración)
 
-Opciones para [JetBackupInstance (JET_INSTANCE, String, BackupGrbit, JET_PFNSTATUS)](./api.jetbackupinstance-method.md).
+Opciones de [JetBackupInstance(JET_INSTANCE, String, BackupGrbit, JET_PFNSTATUS).](./api.jetbackupinstance-method.md)
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -74,13 +74,13 @@ public enum BackupGrbit
 <tbody>
 <tr class="odd">
 <td></td>
-<td>None</td>
+<td>Ninguno</td>
 <td>Opciones predeterminadas.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>Incremental</td>
-<td>Crea una copia de seguridad incremental en lugar de una copia de seguridad completa. Esto significa que solo se realizará una copia de seguridad de los archivos de registro creados desde la última copia de seguridad completa o incremental.</td>
+<td>Crea una copia de seguridad incremental en lugar de una copia de seguridad completa. Esto significa que solo se hará una copia de seguridad de los archivos de registro creados desde la última copia de seguridad completa o incremental.</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -95,4 +95,4 @@ public enum BackupGrbit
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

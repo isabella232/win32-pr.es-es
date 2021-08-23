@@ -1,7 +1,7 @@
 ---
-description: Recupera las características de la fuente.
+description: Recupera las características de fuente.
 ms.assetid: ef7e0d18-492b-476b-945a-bfc0232a939a
-title: 'ID3DX10Font:: GetTextMetrics (método) (D3DX10. h)'
+title: Método ID3DX10Font::GetTextMetrics (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 72decdcf0a9573f7ad8ba0f4e363df6df3599477
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 97cbddc59dd84d0a5b83610212fe94e87a49757da0430d64cb420280c815d9cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104547942"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119047053"
 ---
-# <a name="id3dx10fontgettextmetrics-method"></a>ID3DX10Font:: GetTextMetrics (método)
+# <a name="id3dx10fontgettextmetrics-method"></a>Método ID3DX10Font::GetTextMetrics
 
-Recupera las características de la fuente.
+Recupera las características de fuente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,18 +40,18 @@ BOOL GetTextMetrics(
 
 <dl> <dt>
 
-*pTextMetrics* \[ de\]
+*pTextMetrics* \[ En\]
 </dt> <dd>
 
 Tipo: **TEXTMETRIC \***
 
-Puntero a una estructura [TEXTMETRIC](/previous-versions//ms534202(v=vs.85)) , que contiene las propiedades de fuente. Si se define Unicode, la función devuelve una estructura TEXTMETRICW. De lo contrario, la función devuelve una estructura TEXTMETRICA.
+Puntero a una [estructura TEXTMETRIC,](/previous-versions//ms534202(v=vs.85)) que contiene propiedades de fuente. Si se define Unicode, la función devuelve una estructura TEXTMETRICW. De lo contrario, la función devuelve una estructura TEXTMETRICA.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
 Es distinto de cero si la función se realiza correctamente; de lo contrario, es 0.
 
@@ -61,8 +61,8 @@ Es distinto de cero si la función se realiza correctamente; de lo contrario, es
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -73,7 +73,7 @@ Es distinto de cero si la función se realiza correctamente; de lo contrario, es
 [ID3DX10Font](id3dx10font.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

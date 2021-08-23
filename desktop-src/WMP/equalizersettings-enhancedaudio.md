@@ -3,7 +3,7 @@ title: EQUALIZERSETTINGS.enhancedAudio
 description: El atributo enhancedAudio especifica o recupera un valor que indica si el audio mejorado está activado.
 ms.assetid: 06f346fc-ec25-4fdc-8dc9-895d3754e36b
 keywords:
-- EQUALIZERSETTINGS. enhancedAudio Windows Media Player
+- EQUALIZERSETTINGS.enhancedAudio Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 641e00c1b5020ebc705cdd5a00109b94dc3b72cc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3ac8579490f76648d2f1664e8cac4e6e473035c820ab0f2f7e8881e5424d5834
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700322"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996655"
 ---
 # <a name="equalizersettingsenhancedaudio"></a>EQUALIZERSETTINGS.enhancedAudio
 
-El atributo **enhancedAudio** especifica o recupera un valor que indica si el audio mejorado está activado.
+El **atributo enhancedAudio** especifica o recupera un valor que indica si el audio mejorado está activado.
 
 ``` syntax
         elementID.enhancedAudio
@@ -29,7 +29,7 @@ El atributo **enhancedAudio** especifica o recupera un valor que indica si el au
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **valor booleano** de lectura/escritura.
+Este atributo es un valor booleano de lectura **y escritura.**
 
 
 
@@ -48,7 +48,7 @@ Este atributo es un **valor booleano** de lectura/escritura.
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
@@ -59,7 +59,7 @@ Este atributo es un **valor booleano** de lectura/escritura.
 [**Elemento EQUALIZERSETTINGS**](equalizersettings-element.md)
 </dt> <dt>
 
-[**EQUALIZERSETTINGS. Speaker**](equalizersettings-speakersize.md)
+[**EQUALIZERSETTINGS.speakerSize**](equalizersettings-speakersize.md)
 </dt> <dt>
 
 [**EQUALIZERSETTINGS.truBassLevel**](equalizersettings-trubasslevel.md)

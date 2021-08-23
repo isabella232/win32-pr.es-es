@@ -1,7 +1,7 @@
 ---
-description: Define el tipo que contiene el diseño de fondo utilizado por la nota de Journal.
+description: Define el tipo que contiene la papelería utilizada por la nota de diario.
 ms.assetid: acc0df57-9316-4c8b-8e64-929136dbefd7
-title: Tipo complejo de StationeryType
+title: Tipo complejo StationeryType
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 10dcfa5ccf572b2a8dd5672f973b924a2a840b96
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9e0bcfe22c4a083d93faf27591d56bc6a43f3bd7d61afc386957cb5ec5807c15
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678495"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118966764"
 ---
-# <a name="stationerytype-complex-type"></a>Tipo complejo de StationeryType
+# <a name="stationerytype-complex-type"></a>Tipo complejo StationeryType
 
-Define el tipo que contiene el diseño de fondo utilizado por la nota de Journal.
+Define el tipo que contiene la papelería utilizada por la nota de diario.
 
 ``` syntax
 <xs:complexType name="StationeryType" />
@@ -33,7 +33,7 @@ Define el tipo que contiene el diseño de fondo utilizado por la nota de Journal
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                     |
 
 

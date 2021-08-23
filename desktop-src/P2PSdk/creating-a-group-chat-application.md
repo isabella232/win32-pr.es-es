@@ -1,28 +1,28 @@
 ---
-description: En este tema se proporcionan ejemplos de código relevantes para los principales pasos del desarrollo de una aplicación de chat con la API de agrupación del mismo nivel, que proporciona un contexto para cada llamada de API.
+description: En este tema se proporcionan ejemplos de código pertinentes para los pasos principales para desarrollar una aplicación de chat con la API de agrupación del mismo nivel, lo que proporciona un contexto para cada llamada API.
 ms.assetid: 47bb8606-0b7b-4e71-9d6f-c400d6a82e43
 title: Creación de una aplicación de chat de grupo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 676d4e9913934024df3131c0f965a5d85477d148
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bcb8f9458f8e01bea86e42f0cd976395e951bda52f13af46952479d5810e46c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360707"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119011663"
 ---
 # <a name="creating-a-group-chat-application"></a>Creación de una aplicación de chat de grupo
 
-En este tema se proporcionan ejemplos de código relevantes para los principales pasos del desarrollo de una aplicación de chat con la API de agrupación del mismo nivel, que proporciona un contexto para cada llamada de API. No se incluyen los comportamientos de la interfaz de usuario ni la estructura general de la aplicación.
+En este tema se proporcionan ejemplos de código pertinentes para los pasos principales para desarrollar una aplicación de chat con la API de agrupación del mismo nivel, lo que proporciona un contexto para cada llamada API. No se incluyen los comportamientos de la interfaz de usuario ni la estructura general de la aplicación.
 
 > [!Note]  
-> La aplicación de ejemplo completa de chat de grupo del mismo nivel se proporciona en el SDK del mismo nivel. En este tema se hace referencia a las funciones proporcionadas en el ejemplo.
+> La aplicación de ejemplo chat de grupo del mismo nivel completa se proporciona en el SDK del mismo nivel. En este tema se hace referencia a las funciones proporcionadas en el ejemplo.
 
  
 
 ## <a name="initializing-a-group"></a>Inicialización de un grupo
 
-El primer paso al crear una aplicación de chat es inicializar la infraestructura de agrupación del mismo nivel llamando a [**PeerGroupStartup**](/windows/desktop/api/P2P/nf-p2p-peergroupstartup) con la versión más alta admitida. En este caso, **la \_ \_ versión del grupo del mismo nivel** se definirá en el archivo de encabezado de la aplicación. La versión admitida realmente por la infraestructura se devuelve en **peerVersion**.
+El primer paso al construir una aplicación de chat es inicializar la infraestructura de agrupación del mismo nivel mediante una llamada a [**PeerGroupStartup**](/windows/desktop/api/P2P/nf-p2p-peergroupstartup) con la versión más alta admitida. En este caso, **LA VERSIÓN DEL GRUPO \_ \_ DEL** MISMO NIVEL se definirá en el archivo de encabezado de la aplicación. La versión admitida realmente por la infraestructura se devuelve en **peerVersion**.
 
 
 ```C++
@@ -37,9 +37,9 @@ El primer paso al crear una aplicación de chat es inicializar la infraestructur
 
 
 
-## <a name="creating-a-group"></a>Creación de un grupo
+## <a name="creating-a-group"></a>Crear un grupo
 
-Una aplicación de chat debe ser capaz de crear un grupo del mismo nivel si no hay ningún grupo disponible para unirse o si el usuario de la aplicación desea crear uno nuevo. Para ello, debe crear una estructura de [**\_ \_ propiedades de grupo del mismo nivel**](/windows/desktop/api/P2P/ns-p2p-peer_group_properties) y rellenarla con la configuración inicial del grupo, incluido el clasificador del grupo del mismo nivel, el nombre descriptivo, el nombre del mismo nivel del creador y la duración de la presencia. Una vez que se ha rellenado esta estructura, se pasa a [**PeerGroupCreate**](/windows/desktop/api/P2P/nf-p2p-peergroupcreate).
+Una aplicación de chat debe ser capaz de crear un grupo del mismo nivel si no hay ningún grupo disponible para unirse o si el usuario de la aplicación desea crear uno nuevo. Para ello, debe crear una estructura [**PROPIEDADES \_ \_**](/windows/desktop/api/P2P/ns-p2p-peer_group_properties) DE GRUPO DEL MISMO NIVEL y rellenarla con la configuración inicial del grupo, incluido el clasificador del grupo del mismo nivel, el nombre descriptivo, el nombre del mismo nivel del creador y la duración de la presencia. Una vez que se ha rellenado esta estructura, se pasa a [**PeerGroupCreate**](/windows/desktop/api/P2P/nf-p2p-peergroupcreate).
 
 
 ```C++
@@ -91,11 +91,11 @@ HRESULT CreateGroup(PCWSTR pwzName, PCWSTR pwzIdentity)
 
 
 
-## <a name="issuing-invitations"></a>Emitir invitaciones
+## <a name="issuing-invitations"></a>Emisión de invitaciones
 
-Al emitir una invitación, se debe obtener el GMCs de los invitados. Estos se pueden obtener llamando a [**PeerIdentityGetXML**](/windows/desktop/api/P2P/nf-p2p-peeridentitygetxml) en la invitación con su nombre de identidad. Si se realiza correctamente, la información de identidad (el XML que contiene el certificado codificado en base 64 con la clave pública RSA) se escribe en una ubicación externa (un archivo, en este ejemplo) en el que el invitador puede obtenerlo y usarlo para crear una invitación.
+Al emitir una invitación, se deben obtener los GFC de los invitados. Para obtenerlos, llame a [**PeerIdentityGetXML**](/windows/desktop/api/P2P/nf-p2p-peeridentitygetxml) en el invitado con su nombre de identidad. Si se realiza correctamente, la información de identidad (el XML que contiene el certificado codificado en base 64 con la clave pública RSA) se escribe en una ubicación externa (un archivo, en este ejemplo) donde el invitador puede obtenerlo y usarlo para crear una invitación.
 
-En este momento, se debe establecer un mecanismo para la entrega de la invitación al invitado. Puede ser correo electrónico u otro método seguro de intercambio de archivos. En el ejemplo siguiente, la invitación se escribe en un archivo que se puede transferir al equipo del invitado.
+En este punto, se debe establecer un mecanismo para la entrega de la invitación al invitado. Puede ser un correo electrónico u otro método seguro de intercambio de archivos. En el ejemplo siguiente, la invitación se escribe en un archivo que, a continuación, se puede transferir al equipo del invitado.
 
 
 ```C++
@@ -146,7 +146,7 @@ HRESULT SaveIdentityInfo(PCWSTR pwzIdentity, PCWSTR pwzFile)
 
 
 
-Las invitaciones, como las identidades, también se emiten externamente. En este ejemplo, la invitación se escribe en un archivo con **fputws** donde el invitado puede obtenerlo y usarlo cuando llama a [**PeerGroupJoin**](/windows/desktop/api/P2P/nf-p2p-peergroupjoin).
+Las invitaciones, como las identidades, también se emiten externamente. En este ejemplo, la invitación se escribe en un archivo con **fputws** donde el invitado puede obtenerla y usarla cuando llama a [**PeerGroupJoin**](/windows/desktop/api/P2P/nf-p2p-peergroupjoin).
 
 
 ```C++
@@ -224,9 +224,9 @@ HRESULT CreateInvitation(PCWSTR wzIdentityInfoPath, PCWSTR wzInvitationPath)
 
 
 
-## <a name="joining-a-peer-group"></a>Unirse a un grupo del mismo nivel
+## <a name="joining-a-peer-group"></a>Unión a un grupo del mismo nivel
 
-Si el elemento del mismo nivel está intentando unirse a un grupo del mismo nivel creado por otro elemento del mismo nivel, necesitará una invitación de ese mismo nivel. Las invitaciones se entregan mediante un proceso externo o una aplicación al invitado y se guardan en un archivo local, especificado en el ejemplo siguiente como *pwzFileName*. El BLOB XML de invitación se lee desde el archivo en **wzInvitation** y se pasa a [**PeerGroupJoin**](/windows/desktop/api/P2P/nf-p2p-peergroupjoin).
+Si el elemento del mismo nivel intenta unirse a un grupo del mismo nivel creado por otro elemento del mismo nivel, necesitará una invitación de ese mismo nivel. Las invitaciones las entrega un proceso externo o una aplicación al invitado y se guardan en un archivo local, especificado en el ejemplo siguiente *como pwzFileName*. El blob XML de invitación se lee del archivo en **wzInvitation** y se pasa a [**PeerGroupJoin**](/windows/desktop/api/P2P/nf-p2p-peergroupjoin).
 
 
 ```C++
@@ -280,15 +280,15 @@ HRESULT JoinGroup(PCWSTR pwzIdentity, PCWSTR pwzFileName)
 
 
 
-## <a name="register-for-peer-events"></a>Registrar para eventos del mismo nivel
+## <a name="register-for-peer-events"></a>Registro para eventos del mismo nivel
 
-Antes de conectarse, debe registrarse para cada evento del mismo nivel correspondiente a la aplicación. En el ejemplo siguiente, se registra para los siguientes eventos:
+Antes de conectarse, debe registrarse para cada evento del mismo nivel pertinente para la aplicación. En el ejemplo siguiente, se registra para los siguientes eventos:
 
--   cambio de registro de evento de grupo del mismo nivel \_ \_ \_ \_ . Dado que los registros se usarán para contener mensajes públicos de chat, se debe notificar a la aplicación cada vez que se agrega una nueva. Cuando se recibe este evento del mismo nivel, los datos de evento exponen el registro con el mensaje de chat. Las aplicaciones solo deben registrarse para los tipos de registro que pretenden controlar directamente.
--   miembro de evento de grupo del mismo nivel \_ \_ \_ \_ cambiado. Se debe notificar a la aplicación cuando los miembros se unen o salen del grupo del mismo nivel, por lo que la lista de participantes puede actualizarse en consecuencia.
--   Estado de evento de grupo del mismo nivel \_ \_ \_ \_ cambiado. Los cambios en el estado del grupo del mismo nivel deben transmitirse a la aplicación. Solo se considera que un miembro del grupo del mismo nivel está disponible dentro del grupo del mismo nivel cuando su estado indica que está conectado al grupo, sincronizado con la base de datos de registros de grupo del mismo nivel y escuchando activamente las actualizaciones del registro.
--   conexión directa de eventos de grupo del mismo nivel \_ \_ \_ \_ . Los mensajes privados entre dos miembros y los intercambios de datos se deben realizar a través de una conexión directa, por lo que la aplicación debe ser capaz de controlar las solicitudes de conexión directas.
--   \_ \_ datos entrantes del evento de grupo del mismo nivel \_ \_ . Una vez iniciada una conexión directa, este evento del mismo nivel alerta a la aplicación de que se ha recibido un mensaje privado.
+-   SE HA \_ CAMBIADO EL REGISTRO DE EVENTOS DEL GRUPO DEL MISMO \_ \_ \_ NIVEL. Puesto que los registros se usarán para contener mensajes de chat públicos, se debe notificar a la aplicación cada vez que se agrega uno nuevo. Cuando se recibe este evento del mismo nivel, los datos del evento exponen el registro con el mensaje de chat. Las aplicaciones solo deben registrarse para los tipos de registro que pretenden controlar directamente.
+-   MIEMBRO DE \_ EVENTO DEL GRUPO DEL MISMO NIVEL \_ \_ \_ CAMBIADO. La aplicación debe recibir una notificación cuando los miembros se unan o abandonen el grupo del mismo nivel para que la lista de participantes se pueda actualizar en consecuencia.
+-   SE HA \_ CAMBIADO EL ESTADO DEL EVENTO DEL GRUPO DEL MISMO \_ \_ \_ NIVEL. Los cambios en el estado del grupo del mismo nivel se deben transmitir a la aplicación. Un miembro del grupo del mismo nivel solo se considera disponible dentro del grupo del mismo nivel cuando su estado indica que está conectado al grupo, sincronizado con la base de datos de registros del grupo del mismo nivel y escuchando activamente las actualizaciones de registros.
+-   CONEXIÓN \_ DIRECTA DE EVENTOS DE GRUPO DEL MISMO \_ \_ \_ NIVEL. Los mensajes privados entre dos miembros y los intercambios de datos deben realizarse a través de una conexión directa, por lo que la aplicación debe ser capaz de controlar las solicitudes de conexión directa.
+-   DATOS \_ \_ ENTRANTES DE \_ EVENTOS DE GRUPO DEL MISMO \_ NIVEL. Después de iniciar una conexión directa, este evento del mismo nivel avisa a la aplicación de que se ha recibido un mensaje privado.
 
 
 ```C++
@@ -337,11 +337,11 @@ HRESULT RegisterForEvents(void)
 
 ## <a name="connecting-to-a-peer-group"></a>Conexión a un grupo del mismo nivel
 
-Una vez que haya creado o combinado el grupo y registrado para los eventos adecuados, es el momento de conectarse y comenzar una sesión de chat activa. Para ello, llame a [**PeerGroupConnect**](/windows/desktop/api/P2P/nf-p2p-peergroupconnect) y pase el identificador de grupo Obtenido de [**PeerGroupCreate**](/windows/desktop/api/P2P/nf-p2p-peergroupcreate) o [**PeerGroupJoin**](/windows/desktop/api/P2P/nf-p2p-peergroupjoin). Después de llamar a, se recibirán mensajes de chat como eventos de cambio de registro de evento de grupo del mismo nivel \_ \_ \_ \_ .
+Una vez creado o unido al grupo y registrado para los eventos adecuados, es el momento de irse en línea y comenzar una sesión de chat activa. Para ello, llame a [**PeerGroupConnect**](/windows/desktop/api/P2P/nf-p2p-peergroupconnect) y pase el identificador de grupo obtenido de [**PeerGroupCreate**](/windows/desktop/api/P2P/nf-p2p-peergroupcreate) o [**PeerGroupJoin**](/windows/desktop/api/P2P/nf-p2p-peergroupjoin). Después de llamar a esto, los mensajes de chat se recibirán como eventos DE REGISTRO DE EVENTOS DE GRUPO DEL MISMO NIVEL \_ \_ \_ \_ CAMBIADOS.
 
 ## <a name="obtaining-a-list-of-peer-group-members"></a>Obtener una lista de miembros del grupo del mismo nivel
 
-Obtener una lista de miembros conectados al grupo del mismo nivel es simple: llamar a [**PeerGroupEnumMembers**](/windows/desktop/api/P2P/nf-p2p-peergroupenummembers) para recuperar la lista de miembros del grupo y, a continuación, llamar a [**PeerGetNextItem**](/windows/desktop/api/P2P/nf-p2p-peergetnextitem) de forma iterativa hasta que se recuperen todos los miembros. Debe llamar a [**PeerFreeData**](/windows/desktop/api/P2P/nf-p2p-peerfreedata) después de procesar cada estructura de miembro y debe cerrar la enumeración mediante una llamada a [**PeerEndEnumeration**](/windows/desktop/api/P2P/nf-p2p-peerendenumeration) cuando el procesamiento haya finalizado.
+Obtener una lista de miembros conectados al grupo del mismo nivel es sencillo: llame a [**PeerGroupEnumMembers**](/windows/desktop/api/P2P/nf-p2p-peergroupenummembers) para recuperar la lista de miembros del grupo y, a continuación, llame iterativamente a [**PeerGetNextItem**](/windows/desktop/api/P2P/nf-p2p-peergetnextitem) hasta que se recuperen todos los miembros. Debe llamar a [**PeerFreeData después**](/windows/desktop/api/P2P/nf-p2p-peerfreedata) de procesar cada estructura de miembro y debe cerrar la enumeración llamando a [**PeerEndEnumeration**](/windows/desktop/api/P2P/nf-p2p-peerendenumeration) cuando se complete el procesamiento.
 
 
 ```C++
@@ -400,7 +400,7 @@ void UpdateParticipantList(void)
 
 ## <a name="sending-a-chat-message"></a>Envío de un mensaje de chat
 
-En este ejemplo, se envía un mensaje de chat colocándolo en el campo de **datos** de una estructura de [**\_ registro del mismo nivel**](/windows/desktop/api/P2P/ns-p2p-peer_record) . El registro se agrega a los registros de grupo del mismo nivel mediante una llamada a [**PeerGroupAddRecord**](/windows/desktop/api/P2P/nf-p2p-peergroupaddrecord), que lo publicará y generará el \_ \_ \_ evento de cambio de registro de evento de grupo del mismo nivel \_ en todos los elementos del mismo nivel que participan en el grupo del mismo nivel.
+En este ejemplo, se envía un mensaje de chat colocándolo en el campo **de datos** de una estructura [**PEER \_ RECORD.**](/windows/desktop/api/P2P/ns-p2p-peer_record) El registro se agrega a los registros del grupo del mismo nivel mediante una llamada a [**PeerGroupAddRecord**](/windows/desktop/api/P2P/nf-p2p-peergroupaddrecord), que lo publicará y genera el evento PEER GROUP EVENT RECORD CHANGED en todos los pares que participan en el grupo del mismo \_ \_ \_ \_ nivel.
 
 
 ```C++
@@ -448,9 +448,9 @@ HRESULT AddChatRecord(PCWSTR pwzMessage)
 
 
 
-## <a name="receiving-a-chat-message"></a>Recibir un mensaje de chat
+## <a name="receiving-a-chat-message"></a>Recepción de un mensaje de chat
 
-Para recibir el mensaje de chat, cree una función de devolución de llamada para el evento de cambio de registro de evento de grupo del mismo nivel \_ \_ \_ \_ que llama a una función similar a la siguiente. El registro se obtiene llamando a [**PeerGroupGetRecord**](/windows/desktop/api/P2P/nf-p2p-peergroupgetrecord) en los datos de evento recibidos por una llamada anterior a [**PeerGroupGetEventData**](/windows/desktop/api/P2P/nf-p2p-peergroupgeteventdata) en la función de devolución de llamada. El mensaje de chat se almacena en el campo de **datos** de este registro.
+Para recibir el mensaje de chat, cree una función de devolución de llamada para el evento PEER GROUP EVENT RECORD CHANGED que llama \_ a una función similar a la \_ \_ \_ siguiente. El registro se obtiene mediante una llamada a [**PeerGroupGetRecord**](/windows/desktop/api/P2P/nf-p2p-peergroupgetrecord) en los datos de evento recibidos por una llamada anterior a [**PeerGroupGetEventData**](/windows/desktop/api/P2P/nf-p2p-peergroupgeteventdata) en la función de devolución de llamada. El mensaje de chat se almacena en el **campo de** datos de este registro.
 
 
 ```C++

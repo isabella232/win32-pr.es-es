@@ -1,11 +1,11 @@
 ---
-title: Dns-Record atributo)
-description: Se utiliza para almacenar los registros de recursos DNS binarios en objetos DNS.
+title: Dns-Record atributo
+description: Se usa para almacenar registros de recursos DNS binarios en objetos DNS.
 ms.assetid: 2d5a17da-0efc-450e-b247-3ab6d2de3a5d
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Dns-Record
-- dnsRecord esquema de AD de atributos
+- Dns-Record esquema de AD del atributo
+- Esquema de AD del atributo dnsRecord
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 013fa5ef4a9fcec151f996c347cdfd525438aa7d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 89580b0b2f39e94623d080a594d5ea15ff5df1cd26bf09552bede1c8a9b021ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151852"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961634"
 ---
-# <a name="dns-record-attribute"></a>Dns-Record atributo)
+# <a name="dns-record-attribute"></a>Dns-Record atributo
 
-Se utiliza para almacenar los registros de recursos DNS binarios en objetos DNS.
+Se usa para almacenar registros de recursos DNS binarios en objetos DNS.
 
 
 
 | Entrada | Value |
 |-------------------|-------------------------------------------------------|
 | CN                | Dns-Record                                            |
-| Nombre para mostrar de LDAP | dnsRecord                                             |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | El sistema establece este valor.                      |
-| Frecuencia de actualización  | Cada vez que se modifican los registros de recursos DNS.                 |
+| Ldap-Display-Name | dnsRecord                                             |
+| Size              | \-                                                    |
+| Privilegio actualizar  | El sistema establece este valor.                      |
+| Frecuencia de actualización  | Cada vez que cambian los registros de recursos DNS.                 |
 | Attribute-Id      | 1.2.840.113556.1.4.382                                |
-| System-ID-GUID    | e0fa1e69-9b45-11d0-afdd-00c04fd930c9                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | e0fa1e69-9b45-11d0-afdd-00c04fd930c9                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -55,18 +55,18 @@ Se utiliza para almacenar los registros de recursos DNS binarios en objetos DNS.
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | \-                                       |
+| Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | False                                    |
-| Tiene un único valor       | False                                    |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Falso                                    |
+| Es de un solo valor       | Falso                                    |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Clases usadas en        | [**Nodo DNS**](c-dnsnode.md)<br/> |
+| Clases usadas en        | [**Dns-Node**](c-dnsnode.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Se utiliza para almacenar los registros de recursos DNS binarios en objetos DNS.
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | \-                                       |
+| Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | False                                    |
-| Tiene un único valor       | False                                    |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Falso                                    |
+| Es de un solo valor       | Falso                                    |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Clases usadas en        | [**Nodo DNS**](c-dnsnode.md)<br/> |
+| Clases usadas en        | [**Dns-Node**](c-dnsnode.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Se utiliza para almacenar los registros de recursos DNS binarios en objetos DNS.
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | \-                                       |
+| Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | False                                    |
-| Tiene un único valor       | False                                    |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Falso                                    |
+| Es de un solo valor       | Falso                                    |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Clases usadas en        | [**Nodo DNS**](c-dnsnode.md)<br/> |
+| Clases usadas en        | [**Dns-Node**](c-dnsnode.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Se utiliza para almacenar los registros de recursos DNS binarios en objetos DNS.
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | \-                                       |
+| Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | False                                    |
-| Tiene un único valor       | False                                    |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Falso                                    |
+| Es de un solo valor       | Falso                                    |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Clases usadas en        | [**Nodo DNS**](c-dnsnode.md)<br/> |
+| Clases usadas en        | [**Dns-Node**](c-dnsnode.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Se utiliza para almacenar los registros de recursos DNS binarios en objetos DNS.
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | \-                                       |
+| Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | False                                    |
-| Tiene un único valor       | False                                    |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Falso                                    |
+| Es de un solo valor       | Falso                                    |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Clases usadas en        | [**Nodo DNS**](c-dnsnode.md)<br/> |
+| Clases usadas en        | [**Dns-Node**](c-dnsnode.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Se utiliza para almacenar los registros de recursos DNS binarios en objetos DNS.
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | \-                                       |
+| Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | False                                    |
-| Tiene un único valor       | False                                    |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Falso                                    |
+| Es de un solo valor       | Falso                                    |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Clases usadas en        | [**Nodo DNS**](c-dnsnode.md)<br/> |
+| Clases usadas en        | [**Dns-Node**](c-dnsnode.md)<br/> |
 
 
 

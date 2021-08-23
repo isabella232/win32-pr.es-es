@@ -1,9 +1,9 @@
 ---
-title: Mensaje de LVM_GETGROUPSTATE (commctrl. h)
-description: Obtiene el estado de un grupo especificado. Envíe este mensaje explícitamente o mediante la \_ macro GetGroupState de ListView.
+title: LVM_GETGROUPSTATE mensaje (Commctrl.h)
+description: Obtiene el estado de un grupo especificado. Envíe este mensaje explícitamente o mediante la \_ macro ListView GetGroupState.
 ms.assetid: f087d17f-9066-44fb-b21b-ac7ceb56eb45
 keywords:
-- LVM_GETGROUPSTATE controles de mensajes de Windows
+- LVM_GETGROUPSTATE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,38 +14,38 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 17b5bb25fd517816afd04bb700211222e6985f5d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 66272dd259e80f239804ffadbd706370f948a2505173cc03aaa40057b273a629
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489268"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118958434"
 ---
-# <a name="lvm_getgroupstate-message"></a>\_Mensaje GETGROUPSTATE LVM
+# <a name="lvm_getgroupstate-message"></a>Mensaje GETGROUPSTATE de LVM \_
 
-Obtiene el estado de un grupo especificado. Envíe este mensaje explícitamente o mediante la [**macro \_ GetGroupState de ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getgroupstate) .
+Obtiene el estado de un grupo especificado. Envíe este mensaje explícitamente o mediante la macro [**\_ ListView GetGroupState.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getgroupstate)
 
 ## <a name="parameters"></a>Parámetros
 
 <dl> <dt>
 
-*wParam* \[ de\]
+*wParam* \[ En\]
 </dt> <dd>
 
-Especifica el grupo por **iGroupId** (vea la estructura [**LVGROUP**](/windows/win32/api/commctrl/ns-commctrl-lvgroup) ).
+Especifica el grupo por **iGroupId** (vea [**ESTRUCTURA LVGROUP).**](/windows/win32/api/commctrl/ns-commctrl-lvgroup)
 
 </dd> <dt>
 
-*lParam* \[ de\]
+*lParam* \[ En\]
 </dt> <dd>
 
-Especifica los valores de estado que se van a recuperar. Se trata de una combinación de las marcas enumeradas para el miembro de **Estado** de [**LVGROUP**](/windows/win32/api/commctrl/ns-commctrl-lvgroup).
+Especifica los valores de estado que se recuperarán. Se trata de una combinación de las marcas enumeradas para el miembro **de** estado de [**LVGROUP**](/windows/win32/api/commctrl/ns-commctrl-lvgroup).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve la combinación de valores de estado que se establecen. Por ejemplo, si *lParam* es LVGS \_ contraído y el valor devuelto es cero, el \_ Estado contraído LVGS no se establece. Si no se encuentra el grupo, se devuelve cero.
+Devuelve la combinación de valores de estado que se establecen. Por ejemplo, si *lParam* es LVGS COLLAPSED y el valor devuelto es cero, no se establece el estado \_ \_ COLLAPSED de LVGS. Se devuelve cero si no se encuentra el grupo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ Devuelve la combinación de valores de estado que se establecen. Por ejemplo, si
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,28 +1,28 @@
 ---
 title: XmlDictionaryExample
-description: En este ejemplo se escribe un documento mediante un diccionario de WS \_ XML \_ .
+description: En este ejemplo se escribe un documento mediante un DICCIONARIO \_ XML de WS. \_
 ms.assetid: d8185577-3483-4005-84e5-0b10a6698e79
 keywords:
 - XmlDictionaryExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 039f1391c83ee98dc5f657bf51914080d52d4d34
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6748c6685e570af766e2d3feb177984f1a8f8d289ce0546173a3abebec64e1b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118962714"
 ---
 # <a name="xmldictionaryexample"></a>XmlDictionaryExample
 
-En este ejemplo se escribe un documento mediante un diccionario de WS \_ XML \_ .
+En este ejemplo se escribe un documento mediante un DICCIONARIO \_ XML de WS. \_
 
--   [XmlDictionary. cpp](#xmldictionarycpp)
+-   [XmlDictionary.cpp](#xmldictionarycpp)
 -   [Archivo Make](#makefile)
 
-## <a name="xmldictionarycpp"></a>XmlDictionary. cpp
+## <a name="xmldictionarycpp"></a>XmlDictionary.cpp
 
 
 ```C++
@@ -600,9 +600,9 @@ clean:
 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

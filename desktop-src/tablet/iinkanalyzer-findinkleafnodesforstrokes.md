@@ -1,7 +1,7 @@
 ---
-description: Recupera los nodos de hoja de tinta que contienen los trazos especificados.
+description: Recupera los nodos hoja de entrada de lápiz que contienen los trazos especificados.
 ms.assetid: d9ebc57d-63f5-4175-8bb6-a688b98823d4
-title: 'IInkAnalyzer:: FindInkLeafNodesForStrokes (método) (IACom. h)'
+title: Método IInkAnalyzer::FindInkLeafNodesForStrokes (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: d19bed823f5385533dfc938eb9f6013b4a5640c2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a7424f62008e15feb538df7a6a27745dda17bf6ace4612218608f8e509e75e59
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118967284"
 ---
-# <a name="iinkanalyzerfindinkleafnodesforstrokes-method"></a>IInkAnalyzer:: FindInkLeafNodesForStrokes (método)
+# <a name="iinkanalyzerfindinkleafnodesforstrokes-method"></a>IInkAnalyzer::FindInkLeafNodesForStrokes (método)
 
-Recupera los nodos de hoja de tinta que contienen los trazos especificados.
+Recupera los nodos hoja de entrada de lápiz que contienen los trazos especificados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,41 +41,41 @@ HRESULT FindInkLeafNodesForStrokes(
 
 <dl> <dt>
 
-*ulStrokeIdsCount* \[ de\]
+*ulStrokeIdsCount* \[ En\]
 </dt> <dd>
 
 Número de identificadores de trazo pasados.
 
 </dd> <dt>
 
-*plStrokeIds* \[ de\]
+*plStrokeIds* \[ En\]
 </dt> <dd>
 
 Matriz de los identificadores de trazo.
 
 </dd> <dt>
 
-*ppContextNodesFound* \[ enuncia\]
+*ppContextNodesFound* \[ out\]
 </dt> <dd>
 
-Colección de objetos [**IContextNode**](icontextnode.md) que contienen todos los nodos de hoja de tinta que contienen los trazos con identificadores en la matriz *plStrokeIds* .
+Colección de objetos [**IContextNode**](icontextnode.md) que contienen todos los nodos hoja de entrada de lápiz que contienen los trazos con identificadores de la *matriz plStrokeIds.*
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Caution]  
-> Para evitar una pérdida de memoria, llame a [**IUnknown:: Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) en *ppContextNodesFound* cuando ya no necesite usar el objeto.
+> Para evitar una pérdida de memoria, llame a [**IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) en *ppContextNodesFound* cuando ya no necesite usar el objeto .
 
  
 
-Los nodos hoja no contienen nodos secundarios. Los nodos de tinta contienen datos de trazo. Ejemplos de nodos de hoja de tinta son los objetos InkWord, InkDrawing, andInkBullet [**IContextNode**](icontextnode.md) . Para obtener más información, vea [tipos de nodo de contexto](context-node-types.md).
+Los nodos hoja no contienen nodos secundarios. Los nodos de entrada de lápiz contienen datos de trazo. Algunos ejemplos de nodos hoja de entrada de lápiz son los objetos InkWord, InkDrawing yInk Adret [**IContextNode.**](icontextnode.md) Para obtener más información, vea [Tipos de nodo de contexto.](context-node-types.md)
 
-Si ningún nodo contiene los trazos especificados, se devuelve una colección [**IContextNodes**](icontextnodes.md) vacía. Del mismo modo, si *ulStrokeIdsCount* es cero, se devuelve una colección **IContextNodes** vacía.
+Si ningún nodo contiene los trazos especificados, se devuelve una colección [**IContextNodes**](icontextnodes.md) vacía. De forma similar, *si ulStrokeIdsCount* es cero, se devuelve una colección **IContextNodes** vacía.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,9 +83,9 @@ Si ningún nodo contiene los trazos especificados, se devuelve una colección [*
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -97,31 +97,31 @@ Si ningún nodo contiene los trazos especificados, se devuelve una colección [*
 [**IInkAnalyzer**](iinkanalyzer.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: FindInkLeafNodes (método)**](iinkanalyzer-findinkleafnodes.md)
+[**IInkAnalyzer::FindInkLeafNodes (Método)**](iinkanalyzer-findinkleafnodes.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: FindLeafNodes (método)**](iinkanalyzer-findleafnodes.md)
+[**IInkAnalyzer::FindLeafNodes (Método)**](iinkanalyzer-findleafnodes.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: FindNode (método)**](iinkanalyzer-findnode.md)
+[**IInkAnalyzer::FindNode (Método)**](iinkanalyzer-findnode.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: FindNodesOfType (método)**](iinkanalyzer-findnodesoftype.md)
+[**IInkAnalyzer::FindNodesOfType (Método)**](iinkanalyzer-findnodesoftype.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: FindNodesOfTypeForStrokes (método)**](iinkanalyzer-findnodesoftypeforstrokes.md)
+[**IInkAnalyzer::FindNodesOfTypeForStrokes (Método)**](iinkanalyzer-findnodesoftypeforstrokes.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: FindNodesOfTypeInSubTree (método)**](iinkanalyzer-findnodesoftypeinsubtree.md)
+[**IInkAnalyzer::FindNodesOfTypeInSubTree (Método)**](iinkanalyzer-findnodesoftypeinsubtree.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: FindNodesWithCallBack (método)**](iinkanalyzer-findnodeswithcallback.md)
+[**IInkAnalyzer::FindNodesWithCallBack (Método)**](iinkanalyzer-findnodeswithcallback.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: FindNodesWithCallBackInSubTree (método)**](iinkanalyzer-findnodeswithcallbackinsubtree.md)
+[**IInkAnalyzer::FindNodesWithCallBackInSubTree (Método)**](iinkanalyzer-findnodeswithcallbackinsubtree.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

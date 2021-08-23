@@ -1,7 +1,7 @@
 ---
-description: Recupera un objeto de la colección de destinatarios.
+description: Recupera un objeto de la colección Recipients.
 ms.assetid: 03600d4a-5fd4-45c7-ae91-efdc26c084ee
-title: Recipients. Item (propiedad)
+title: Propiedad Recipients.Item
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,20 +13,20 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 2a80b472c8257597356c626a9e88aad97c447f4d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 82a9e45ee82c42f659d6fa9e60f0b96122ee8d0f701d2d039df6ce995d1c778a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670652"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118900802"
 ---
-# <a name="recipientsitem-property"></a>Recipients. Item (propiedad)
+# <a name="recipientsitem-property"></a>Propiedad Recipients.Item
 
-\[La propiedad **Item** está disponible para su uso en los sistemas operativos especificados en la sección requirements. En su lugar, use la [**clase CmsRecipientCollection**](/dotnet/api/system.security.cryptography.pkcs.cmsrecipientcollection?view=dotnet-plat-ext-3.1&preserve-view=true) en el espacio de nombres [**System. Security. Cryptography. Pkcs**](/dotnet/api/system.security.cryptography.pkcs?view=dotnet-plat-ext-3.1&preserve-view=true) .\]
+\[La **propiedad Item** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. En su lugar, use [**la clase CmsRecipientCollection**](/dotnet/api/system.security.cryptography.pkcs.cmsrecipientcollection?view=dotnet-plat-ext-3.1&preserve-view=true) en el espacio de nombres [**System.Security.Cryptography.Pkcs.**](/dotnet/api/system.security.cryptography.pkcs?view=dotnet-plat-ext-3.1&preserve-view=true)\]
 
-La propiedad **Item** recupera un objeto de la colección [**Recipients**](recipients.md) . Esta es la propiedad predeterminada.
+La **propiedad Item** recupera un objeto de la colección [**Recipients.**](recipients.md) Esta es la propiedad predeterminada.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -39,20 +39,20 @@ Recipients.Item( _
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Variante que representa el elemento indizado en la colección de [**destinatarios**](recipients.md) .
+Variante que representa el elemento indizado en la [**colección Recipients.**](recipients.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Redistribuible<br/> | CAPICOM 2,0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
+| Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

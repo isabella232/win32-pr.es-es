@@ -1,19 +1,19 @@
 ---
-title: Ejemplos de Tracelogging de .NET
-description: En este tema se incluye un ejemplo de Tracelogging de código administrado que muestra cómo registrar un evento solo cuando el nivel de detalle de la sesión es detallado y cómo registrar datos de eventos estructurados.
+title: Ejemplos de registro de seguimiento de .NET
+description: Este tema contiene un ejemplo de seguimiento de código administrado que muestra cómo registrar un evento solo cuando el nivel de detalle de la sesión es detallado y cómo registrar datos de eventos estructurados.
 ms.assetid: 156016FE-FDC7-4361-BFD0-5F41254FE14D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8064f2ce139b5fd07bc74b3de6e107abeb958530
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4346374974f450f11382f46f28ab1eda6c9ac891391ec0a565942e7918966c84
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357663"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118966524"
 ---
-# <a name="net-tracelogging-examples"></a>Ejemplos de Tracelogging de .NET
+# <a name="net-tracelogging-examples"></a>Ejemplos de registro de seguimiento de .NET
 
-En este tema se incluye un ejemplo de Tracelogging de código administrado que muestra cómo registrar un evento solo cuando el nivel de detalle de la sesión es detallado y cómo registrar datos de eventos estructurados.
+Este tema contiene un ejemplo de seguimiento de código administrado que muestra cómo registrar un evento solo cuando el nivel de detalle de la sesión es detallado y cómo registrar datos de eventos estructurados.
 
 
 ```CSharp
@@ -72,9 +72,9 @@ namespace MoreSimpleTraceLoggingExamples
 
 
 
- 
+ 
 
- 
+ 
 
 
 

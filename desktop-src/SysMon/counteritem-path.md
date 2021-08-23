@@ -1,11 +1,11 @@
 ---
-title: Propiedad de peritem. Path
+title: CounterItem.Path, propiedad
 description: Recupera la ruta de acceso del contador.
 ms.assetid: eca8eec0-948d-423c-b9c4-6a1955b4a4c9
 keywords:
-- Propiedad de ruta de acceso SysMon
-- Propiedad path SysMon, clase de contraelemento
-- Clase de contraelemento SysMon, propiedad path
+- Propiedad De ruta de acceso SysMon
+- Propiedad Path SysMon , clase CounterItem
+- Clase CounterItem SysMon , propiedad Path
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 34a8540ba556bb74dd9779e49c628df1bfe7f9a6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 074ed96c2f63ac59ad9997696f9b90ec312ac43b628f85760e0cd4172da07a84
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491902"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118883683"
 ---
-# <a name="counteritempath-property"></a>Propiedad de peritem. Path
+# <a name="counteritempath-property"></a>CounterItem.Path, propiedad
 
 Recupera la ruta de acceso del contador.
 
@@ -40,28 +40,28 @@ Property Path As String
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Ruta de acceso del contador, por ejemplo, "procesador ( \_ total) \\ % de tiempo de procesador".
+Ruta de acceso del contador, por ejemplo, "Procesador( \_ Total) \\ % tiempo de procesador".
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |
-| Archivo DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Elemento de**](counteritem.md)
+[**CounterItem**](counteritem.md)
 </dt> <dt>
 
-[**Counters. Add**](counters-add.md)
+[**Counters.Add**](counters-add.md)
 </dt> <dt>
 
 [**SystemMonitor.BrowseCounters**](systemmonitor-browsecounters.md)

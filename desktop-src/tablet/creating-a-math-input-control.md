@@ -1,27 +1,27 @@
 ---
 description: Explica cómo crear un control de entrada matemática.
 ms.assetid: 59976b01-9032-4226-a160-e9b2d4b8b23b
-title: Crear un control de entrada matemática
+title: Creación de un Control de entrada matemática
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a5084f29943395bc6781fe20598f86bdc08c6c61
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1ee8cca2a799bd44e79ef2f32691614bb3f22c933b40aa23dc4aa0cd6cfb6fb3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104553304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118967724"
 ---
-# <a name="creating-a-math-input-control"></a>Crear un control de entrada matemática
+# <a name="creating-a-math-input-control"></a>Creación de un Control de entrada matemática
 
 Para crear el control de entrada matemática, debe:
 
--   [Incluir encabezados y bibliotecas para el control de entrada matemática](#include-headers-and-libraries-for-the-math-input-control)
--   [Declare el puntero de control y llame a CoInitialize en el puntero de control](#declare-the-control-pointer-and-call-coinitialize-on-the-control-pointer)
+-   [Incluir encabezados y bibliotecas para el Control de entrada matemática](#include-headers-and-libraries-for-the-math-input-control)
+-   [Declarar el puntero de control y llamar a CoInitialize en el puntero de control](#declare-the-control-pointer-and-call-coinitialize-on-the-control-pointer)
 -   [Mostrar el control](#show-the-control)
 
-## <a name="include-headers-and-libraries-for-the-math-input-control"></a>Incluir encabezados y bibliotecas para el control de entrada matemática
+## <a name="include-headers-and-libraries-for-the-math-input-control"></a>Incluir encabezados y bibliotecas para el Control de entrada matemática
 
-El código siguiente debe colocarse en la parte superior del código donde se va a usar el control de entrada matemática.
+El código siguiente debe colocarse en la parte superior del código, donde se va a usar el control de entrada matemática.
 
 
 ```
@@ -33,11 +33,11 @@ El código siguiente debe colocarse en la parte superior del código donde se va
 
 
 
-Este código agregará compatibilidad para el control de entrada matemática a la aplicación.
+Este código agregará compatibilidad con el control de entrada matemática a la aplicación.
 
-## <a name="declare-the-control-pointer-and-call-coinitialize-on-the-control-pointer"></a>Declare el puntero de control y llame a CoInitialize en el puntero de control
+## <a name="declare-the-control-pointer-and-call-coinitialize-on-the-control-pointer"></a>Declarar el puntero de control y llamar a CoInitialize en el puntero de control
 
-Una vez incluidos los encabezados para el control, puede declarar el puntero de control y puede llamar a CoInitialize en él para crear un identificador de la interfaz de control de entrada matemática. El siguiente código se puede colocar en una clase o como una variable global en la implementación de la aplicación:
+Después de incluir los encabezados del control, puede declarar el puntero de control y llamar a CoInitialize en él para crear un identificador para la interfaz de control de entrada matemática. El código siguiente se puede colocar en una clase o como una variable global en la implementación de la aplicación:
 
 
 ```
@@ -47,7 +47,7 @@ Una vez incluidos los encabezados para el control, puede declarar el puntero de 
 
 
 
-En el código siguiente se muestra cómo se puede llamar a CoInitialize en el puntero de control.
+El código siguiente muestra cómo puede llamar a CoInitialize en el puntero de control.
 
 
 ```
@@ -58,7 +58,7 @@ En el código siguiente se muestra cómo se puede llamar a CoInitialize en el pu
 
 
 
-Después de llamar a CoInitialize en el puntero de control, tiene una referencia al control y puede tener acceso a los métodos del control. Por ejemplo, podría habilitar el conjunto extendido de controles tal como se muestra en el ejemplo siguiente.
+Después de llamar a CoInitialize en el puntero de control, tiene una referencia al control y puede acceder a los métodos del control. Por ejemplo, podría habilitar el conjunto extendido de controles como se muestra en el ejemplo siguiente.
 
 
 ```
@@ -70,7 +70,7 @@ Después de llamar a CoInitialize en el puntero de control, tiene una referencia
 
 ## <a name="show-the-control"></a>Mostrar el control
 
-El control no aparecerá automáticamente después de crearlo. Para mostrar el control, llame al método [**Show**](/windows/desktop/api/micaut/nf-micaut-imathinputcontrol-show) en la referencia de control que creó en el paso anterior. En el código siguiente se muestra cómo se puede llamar al método [**Show**](/windows/win32/api/peninputpanel/nf-peninputpanel-ipeninputpanel-get_autoshow) .
+El control no aparecerá automáticamente después de crearlo. Para mostrar el control, llame al [**método Show**](/windows/desktop/api/micaut/nf-micaut-imathinputcontrol-show) en la referencia de control que creó en el paso anterior. El código siguiente muestra cómo [**se**](/windows/win32/api/peninputpanel/nf-peninputpanel-ipeninputpanel-get_autoshow) puede llamar al método Show.
 
 
 ```
@@ -80,11 +80,11 @@ El control no aparecerá automáticamente después de crearlo. Para mostrar el c
 
 
 
-Una vez que se muestre el control, tendrá un aspecto similar al de la siguiente ilustración.
+Una vez que se muestre el control, tendrá un aspecto parecido al de la ilustración siguiente.
 
 ![captura de pantalla que muestra el control de entrada matemática](images/mic.png)
 
-Tenga en cuenta que he habilitado el conjunto extendido de botones para que las operaciones de **rehacer** y **Deshacer** estén disponibles.
+Tenga en cuenta que he habilitado el conjunto extendido de botones para que **rehacer** y **deshacer** estén disponibles.
 
  
 

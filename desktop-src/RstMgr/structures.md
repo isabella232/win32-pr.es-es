@@ -1,32 +1,32 @@
 ---
-title: Reinicio de las estructuras de administrador
-description: La API del administrador de reinicio contiene las siguientes estructuras
+title: Reiniciar estructuras del administrador
+description: La API de Restart Manager contiene las estructuras siguientes
 ms.assetid: fbe76ae7-ed4b-462d-a406-e7007cea41f8
 keywords:
-- Admin. de reinicio del administrador, referencia, estructuras
+- Restart Manager Restart Mgr , reference, structures
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ea75c0556cc81c220a8233a41fbbe741385dd69a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e2d86d74872d83b7c161cf694a6d9da6c8a27b758f8174fa20adcfa1a8f1c374
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119010063"
 ---
-# <a name="restart-manager-structures"></a>Reinicio de las estructuras de administrador
+# <a name="restart-manager-structures"></a>Reiniciar estructuras del administrador
 
-La API del administrador de reinicio contiene las siguientes estructuras:
+La API de Restart Manager contiene las estructuras siguientes:
 
 <dl>
 
-[**\_información de filtro de RM \_**](/windows/desktop/api/RestartManager/ns-restartmanager-rm_filter_info)  
-[**\_información del proceso de RM \_**](/windows/desktop/api/RestartManager/ns-restartmanager-rm_process_info)  
-[**\_proceso único de RM \_**](/windows/desktop/api/RestartManager/ns-restartmanager-rm_unique_process)  
+[**INFORMACIÓN \_ DE FILTRO DE \_ RM**](/windows/desktop/api/RestartManager/ns-restartmanager-rm_filter_info)  
+[**RM \_ PROCESS \_ INFO**](/windows/desktop/api/RestartManager/ns-restartmanager-rm_process_info)  
+[**PROCESO \_ ÚNICO DE \_ RM**](/windows/desktop/api/RestartManager/ns-restartmanager-rm_unique_process)  
 </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-HAB-Senior-index
-description: Contiene el índice de antigüedad tal como lo aplica la organización en la que trabaja la persona. | atributo MS-DS-HAB-Senior-index
+title: Atributo ms-DS-LA-Seniority-Index
+description: Contiene el índice de antigüedad aplicado por la organización donde trabaja la persona. | Atributo ms-DS-LA-Seniority-Index
 ms.assetid: 4110b6c3-6987-4f65-bfdf-244a9c9c0f46
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de índice de MS-DS-HAB-Senior-index
-- Esquema de AD de atributo msDS-HABSeniorityIndex
+- Esquema de AD del atributo ms-DS-LA-Seniority-Index
+- Esquema de AD del atributo msDS-LASdiceorityIndex
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f796b30d2676df76803ec407423e34e8cd96ecb
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 994719462ae47396e5765cde7ed24faf19f486c8052d089888e5751687b5619d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105660056"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960773"
 ---
-# <a name="ms-ds-hab-seniority-index-attribute"></a>atributo MS-DS-HAB-Senior-index
+# <a name="ms-ds-hab-seniority-index-attribute"></a>Atributo ms-DS-LA-Seniority-Index
 
-Contiene el índice de antigüedad tal como lo aplica la organización en la que trabaja la persona.
+Contiene el índice de antigüedad aplicado por la organización donde trabaja la persona.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | MS-DS-HAB-Senior-index            |
-| Nombre para mostrar de LDAP | msDS-HABSeniorityIndex               |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-DS-LA-Seniority-Index            |
+| Ldap-Display-Name | msDS-HABSeniorityIndex               |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1997              |
-| System-ID-GUID    | def449f1-fd3b-4045-98cf-d9658da788b5 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | def449f1-fd3b-4045-98cf-d9658da788b5 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -52,13 +52,13 @@ Contiene el índice de antigüedad tal como lo aplica la organización en la que
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x8CA0                                                             |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | True                                                               |
-| En el catálogo global      | True                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Verdadero                                                               |
+| En el catálogo global      | Verdadero                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000001                                                         |
@@ -73,13 +73,13 @@ Contiene el índice de antigüedad tal como lo aplica la organización en la que
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x8CA0                                                             |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | True                                                               |
-| En el catálogo global      | True                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Verdadero                                                               |
+| En el catálogo global      | Verdadero                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000001                                                         |
@@ -94,13 +94,13 @@ Contiene el índice de antigüedad tal como lo aplica la organización en la que
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x8CA0                                                             |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | True                                                               |
-| En el catálogo global      | True                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Verdadero                                                               |
+| En el catálogo global      | Verdadero                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000001                                                         |

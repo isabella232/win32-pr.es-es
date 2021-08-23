@@ -1,11 +1,11 @@
 ---
-title: Método IWMDRMLicenseManagement BackupLicenses (wmdrmsdk. h)
+title: Método IWMDRMLicenseManagement BackupLicenses (Wmdrmsdk.h)
 description: El método BackupLicenses crea una copia de seguridad de las licencias en el almacén de licencias local.
 ms.assetid: f265254d-b240-4a9f-9c67-de9c92e8a14d
 keywords:
-- Método BackupLicenses formato de Windows Media
-- Método BackupLicenses formato de Windows Media, interfaz IWMDRMLicenseManagement
-- Interfaz IWMDRMLicenseManagement formato de Windows Media, método BackupLicenses
+- BackupLicenses, método windows Media Format
+- Método BackupLicenses windows Media Format , interfaz IWMDRMLicenseManagement
+- IWMDRMLicenseManagement interfaz windows Media Format , Método BackupLicenses
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 61c7f676b532353c839a428571f6d28540851bee
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3905f8fd464645f7fcd22551360e6a9610913eeea7f191d7e770e24f5ea8cd49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718749"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119027653"
 ---
-# <a name="iwmdrmlicensemanagementbackuplicenses-method"></a>IWMDRMLicenseManagement:: BackupLicenses (método)
+# <a name="iwmdrmlicensemanagementbackuplicenses-method"></a>IWMDRMLicenseManagement::BackupLicenses (Método)
 
-El método **BackupLicenses** crea una copia de seguridad de las licencias en el almacén de licencias local.
+El **método BackupLicenses** crea una copia de seguridad de las licencias en el almacén de licencias local.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,48 +45,48 @@ HRESULT BackupLicenses(
 
 <dl> <dt>
 
-*bstrBackupDirectory* \[ de\]
+*bstrBackupDirectory* \[ En\]
 </dt> <dd>
 
 Ruta de acceso UNC de la ubicación en la que se realizará la copia de seguridad de las licencias.
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
-Marcas que especifican las opciones de copia de seguridad que se van a utilizar. La única marca admitida actualmente es \_ \_ sobrescribir la copia de seguridad de WMDRM, que configura el método para sobrescribir los archivos de copia de seguridad existentes en el directorio.
+Marcas que especifican las opciones de copia de seguridad que se usarán. La única marca admitida actualmente es WMDRM BACKUP OVERWRITE, que configura el método para sobrescribir los archivos de copia de seguridad \_ \_ existentes en el directorio.
 
 </dd> <dt>
 
-*ppunkCancelationCookie* \[ enuncia\]
+*piqueCancelationCookie* \[ out\]
 </dt> <dd>
 
-Puntero que recibe un puntero a la interfaz **IUnknown** de un objeto que identifica esta llamada asincrónica. Este puntero de interfaz se puede usar para cancelar la llamada asincrónica llamando al método [**IWMDRMEventGenerator:: CancelAsyncOperation**](iwmdrmeventgenerator-cancelasyncoperation.md) .
+Puntero que recibe un puntero a la **interfaz IUnknown** de un objeto que identifica esta llamada asincrónica. Este puntero de interfaz se puede usar para cancelar la llamada asincrónica llamando al [**método IWMDRMEventGenerator::CancelAsyncOperation.**](iwmdrmeventgenerator-cancelasyncoperation.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método se ejecuta de forma asincrónica. Vuelve inmediatamente después de llamarlo y, a continuación, genera una serie de eventos **MEWMDRMLicenseBackupProgress** seguidos de un evento **MEWMDRMLicenseBackupCompleted** cuando se completa el procesamiento. El valor de cada uno de los eventos **MEWMDRMLicenseBackupProgress** obtenidos mediante la llamada a **IMFMediaEvent:: GetValue** es un puntero **IUnknown** . Puede llamar al método **QueryInterface** de la interfaz **IUnknown** recuperada para obtener una instancia de la interfaz [**IWMDRMLicenseBackupRestoreStatus**](iwmdrmlicensebackuprestorestatus.md) .
+Este método se ejecuta de forma asincrónica. Devuelve inmediatamente después de llamarse y, a continuación, genera una serie de eventos **MEWMDRMLicenseBackupProgress** seguidos de un evento **MEWMDRMLicenseBackupCompleted** cuando se completa el procesamiento. El valor de cada uno de los eventos **MEWMDRMLicenseBackupProgress obtenidos** mediante una llamada a **IMFMediaEvent::GetValue** es un **puntero IUnknown.** Puede llamar al **método QueryInterface** de la interfaz **IUnknown** recuperada para obtener una instancia de la [**interfaz IWMDRMLicenseBackupRestoreStatus.**](iwmdrmlicensebackuprestorestatus.md)
 
-Para obtener más información sobre el uso de los métodos asincrónicos de las API extendidas del cliente DRM de Windows Media, vea [usar el modelo de eventos de Media Foundation](using-the-media-foundation-model.md).
+Para obtener más información sobre el uso de los métodos asincrónicos de Windows MEDIA DRM Client Extended API, vea [Using the Media Foundation Event Model](using-the-media-foundation-model.md).
 
-No se permite realizar copias de seguridad de todas las licencias. Este método solo realiza una copia de seguridad de las licencias que lo permiten.
+No se permite realizar una copia de seguridad de todas las licencias. Este método solo hace una copia de seguridad de las licencias que lo permiten.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -94,8 +94,8 @@ No se permite realizar copias de seguridad de todas las licencias. Este método 
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 
 
 
@@ -103,7 +103,7 @@ No se permite realizar copias de seguridad de todas las licencias. Este método 
 
 <dl> <dt>
 
-[**Interfaz IWMDRMLicenseManagement**](iwmdrmlicensemanagement.md)
+[**IWMDRMLicenseManagement (interfaz)**](iwmdrmlicensemanagement.md)
 </dt> </dl>
 
  

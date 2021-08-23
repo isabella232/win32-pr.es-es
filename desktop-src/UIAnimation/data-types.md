@@ -1,19 +1,19 @@
 ---
-title: Tipos de datos (Administrador de animaciones de Windows)
-description: Documentación de referencia para los tipos de datos definidos por el administrador de animación de Windows.
+title: Tipos de datos (Windows Animation Manager)
+description: Documentación de referencia para los tipos de datos definidos por Windows Animation Manager.
 ms.assetid: 11ef2412-c20c-4c97-9e54-447f493fab5f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ab4d629879a02d3bddc8ad9c47f60876bf616975
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: c54170c185ebb5f41e095a9abd4d09c0067525a0d976de21a5d49b978910d6c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "103995847"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118999695"
 ---
-# <a name="data-types-windows-animation-manager"></a>Tipos de datos (Administrador de animaciones de Windows)
+# <a name="data-types-windows-animation-manager"></a>Tipos de datos (Windows Animation Manager)
 
-Documentación de referencia para los tipos de datos definidos por el administrador de animación de Windows.
+Documentación de referencia para los tipos de datos definidos por Windows Animation Manager.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -21,8 +21,8 @@ Documentación de referencia para los tipos de datos definidos por el administra
 
 | Tema                                                               | Descripción                                                                        |
 |---------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [**\_fotograma clave de animación de IU \_**](/windows/win32/api/uianimation/ns-uianimation-__midl___midl_itf_uianimation_0000_0002_0003)<br/> | Define un fotograma clave, que representa un desplazamiento de tiempo dentro de un guion gráfico.<br/> |
-| [**\_segundos de animación de IU \_**](ui-animation-seconds.md)<br/>   | La unidad de tiempo que se usa para todas las animaciones.<br/>                               |
+| [**FOTOGRAMA CLAVE DE \_ ANIMACIÓN DE LA INTERFAZ DE \_ USUARIO**](/windows/win32/api/uianimation/ns-uianimation-__midl___midl_itf_uianimation_0000_0002_0003)<br/> | Define un fotograma clave, que representa un desplazamiento de tiempo dentro de un guión gráfico.<br/> |
+| [**SEGUNDOS DE \_ ANIMACIÓN DE LA INTERFAZ DE \_ USUARIO**](ui-animation-seconds.md)<br/>   | Unidad de tiempo usada para todas las animaciones.<br/>                               |
 
 
 
@@ -32,7 +32,7 @@ Documentación de referencia para los tipos de datos definidos por el administra
 
 <dl> <dt>
 
-[Referencia de animación de Windows](windows-animation-reference.md)
+[Windows Referencia de animación](windows-animation-reference.md)
 </dt> </dl>
 
  

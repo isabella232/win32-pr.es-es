@@ -1,5 +1,5 @@
 ---
-title: Métodos IDCompositionLinearTransferEffect setredyintercept (Dcomp. h)
+title: Métodos setredyintercept de IDCompositionLinearTransferEffect (Dcomp.h)
 description: Establece la intersección Y de la función lineal para el canal rojo.
 ms.assetid: 1ecb0d5e-a180-f135-a732-ebc0ea84e7b4
 keywords:
@@ -12,14 +12,14 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: c8e2d29aa795e0e407d62e151a24da82db2ff8d7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e243099c0e436aa269a2cb55f1f0967813d8ac3a986ac5d3abd1ca943cb3a71e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700048"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119043253"
 ---
-# <a name="idcompositionlineartransfereffectsetredyintercept-methods"></a>IDCompositionLinearTransferEffect:: setredyintercept (métodos)
+# <a name="idcompositionlineartransfereffectsetredyintercept-methods"></a>Métodos IDCompositionLinearTransferEffect::setredyintercept
 
 Establece la intersección Y de la función lineal para el canal rojo.
 
@@ -40,7 +40,7 @@ Establece la intersección Y de la función lineal para el canal rojo.
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dcomp. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dcomp.h</dt> </dl> |
 
 
 

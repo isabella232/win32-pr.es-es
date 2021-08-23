@@ -1,6 +1,6 @@
 ---
-title: logP-vs
-description: Precisión parcial logP ₂ (x).
+title: 'logp: vs'
+description: Logpción de precisión parcial(x).
 ms.assetid: 8547ca8a-7bde-4e41-9e65-f7fcd65454c1
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,46 +9,46 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0a261d63ad47dcf12728b8bcd0025ec578ede0b4
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 3c33242ec23070a78e8adee159d35c19121dcc7c3dfe2c013c3d00adceb16477
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104077101"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119043783"
 ---
-# <a name="logp---vs"></a>logP-vs
+# <a name="logp---vs"></a>logp: vs
 
-Precisión parcial logP ₂ (x).
+Logpción de precisión parcial(x).
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| logP DST, src |
+| logp dst, src |
 |---------------|
 
 
 
- 
+ 
 
-, donde
+where
 
--   DST es el registro de destino.
--   src es un registro de origen. El registro de origen requiere el uso explícito de replicate swizzle, es decir, se debe especificar exactamente uno de los componentes. x,. y,. z,. w swizzle (o. r,. g,. b,. a equivalentes).
+-   dst es el registro de destino.
+-   src es un registro de origen. El registro de origen requiere el uso explícito de replicar swzzle, es decir, debe especificarse exactamente uno de los componentes .x, .y, .z, .w swzzle (o .r, .g, .b, .a equivalentes).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
-| logp                   | x    | x    | x    | x     | x    | x     |
+| Logp                   | x    | x    | x    | x     | x    | x     |
 
 
 
- 
+ 
 
-En el siguiente fragmento de código se muestran las operaciones realizadas.
+El fragmento de código siguiente muestra las operaciones realizadas.
 
 
 ```
@@ -61,7 +61,7 @@ else
 
 
 
-Esta instrucción proporciona una precisión parcial del logaritmo en base 2, hasta 10 bits.
+Esta instrucción proporciona una precisión parcial de logaritmo base 2, hasta 10 bits.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -70,9 +70,9 @@ Esta instrucción proporciona una precisión parcial del logaritmo en base 2, ha
 [Instrucciones del sombreador de vértices](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

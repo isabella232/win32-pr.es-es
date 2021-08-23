@@ -1,51 +1,51 @@
 ---
-title: COLUMN, elemento
-description: COLUMN, elemento
+title: ELEMENTO COLUMN
+description: ELEMENTO COLUMN
 ms.assetid: 2ea8f730-91e2-47a6-acdf-e402fdd11f87
 keywords:
-- Aspectos de Windows Media Player, elemento COLUMN
-- máscaras, elemento COLUMN
+- Reproductor de Windows Media máscaras, elemento COLUMN
+- skins,COLUMN, elemento
 - COLUMN, elemento
-- referencia de las máscaras, elemento de columna
-- elementos, columna
+- referencia de máscaras, elemento COLUMN
+- elements,COLUMN
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bd0c69472c53cd6ab5101694343ed7513a9941e7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 91502ce75c9fd7ad9505f4f44b874ec23077b7ed98988f3174cd373198a17a1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104419008"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118997655"
 ---
-# <a name="column-element"></a>COLUMN, elemento
+# <a name="column-element"></a>ELEMENTO COLUMN
 
-El elemento **Column** representa una columna dentro de un control de lista de reproducción. Los elementos de **columna** siempre son elementos secundarios de elementos de **lista de reproducción** .
+El **elemento COLUMN** representa una columna dentro de un control de lista de reproducción. **Los elementos COLUMN** siempre son elementos secundarios de los **elementos PLAYLIST.**
 
-El elemento de **columna** admite los siguientes atributos.
+El **elemento COLUMN** admite los atributos siguientes.
 
 
 
 | Atributo                                       | Descripción                                                        |
 |-------------------------------------------------|--------------------------------------------------------------------|
-| [columnName](column-columnname.md)             | Especifica o recupera un nombre de columna en el control de **lista de reproducción** .  |
-| [columnID](column-columnid.md)                 | Especifica o recupera un identificador de columna en el control de **lista de reproducción** .    |
-| [columnResizeMode](column-columnresizemode.md) | Especifica o recupera el modo de cambiar el tamaño de esta columna.            |
-| [Ancho](column-columnwidth.md)           | Especifica o recupera un ancho de columna en el control de **lista de reproducción** . |
+| [columnName](column-columnname.md)             | Especifica o recupera un nombre de columna en el control **PLAYLIST.**  |
+| [columnID](column-columnid.md)                 | Especifica o recupera un identificador de columna en el control **PLAYLIST.**    |
+| [columnResizeMode](column-columnresizemode.md) | Especifica o recupera el modo de cambio de tamaño de esta columna.            |
+| [columnWidth](column-columnwidth.md)           | Especifica o recupera un ancho de columna en el control **PLAYLIST.** |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Referencia de programación de máscara**](skin-programming-reference.md)
+[**Referencia de programación de máscaras**](skin-programming-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

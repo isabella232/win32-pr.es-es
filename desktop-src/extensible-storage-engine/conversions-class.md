@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: conversiones (clase)'
-title: Conversions (clase)
+description: 'Más información sobre: Clase Conversions'
+title: Clase Conversions
 TOCTitle: Conversions class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Conversions
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.conversions(v=EXCHG.10)
@@ -24,26 +24,26 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 43a5716348fb41ce6875729f97094fddb05a228c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b224985569d5fd04c10bc923c591da0faecac2b967b6c347333d8bfe6c5d546c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001366"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119042313"
 ---
-# <a name="conversions-class"></a>Conversions (clase)
+# <a name="conversions-class"></a>Clase Conversions
 
-Proporcionan métodos para convertir datos y marcas entre Win32 y el .NET Framework.
+Proporcione métodos para convertir datos y marcas entre Win32 y .NET Framework.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
-  Microsoft. ISAM. esent. Interop. Conversions  
+  Microsoft.Isam.Esent.Interop.Conversions  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -66,4 +66,4 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 [Miembros de conversiones](./conversions-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

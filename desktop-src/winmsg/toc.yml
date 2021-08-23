@@ -370,10 +370,10 @@
               href: about-window-classes.md
             - name: Usar clases de ventana
               href: using-window-classes.md
-        - name: Referencia de clase Window
+        - name: Referencia de la clase Window
           href: window-class-reference.md
           items:
-            - name: Funciones de clase Window
+            - name: Funciones de clase window
               href: window-class-functions.md
               items:
                 - name: GetClassInfo
@@ -408,7 +408,7 @@
                   href: /windows/desktop/api/winuser/nf-winuser-setwindowlongptra
                 - name: UnregisterClass
                   href: /windows/desktop/api/winuser/nf-winuser-unregisterclassa
-            - name: Estructuras de clase window
+            - name: Estructuras de clase de ventana
               href: window-class-structures.md
               items:
                 - name: WNDCLASS
@@ -693,7 +693,7 @@
                   href: /windows/win32/api/winuser/ns-winuser-mousehookstructex
                 - name: MSLLHOOKSTRUCT
                   href: /windows/win32/api/winuser/ns-winuser-msllhookstruct
-    - name: Interfaz de múltiples documentos (MDI)
+    - name: Interfaz de varios documentos (MDI)
       href: multiple-document-interface.md
       items:
         - name: Información general de MDI

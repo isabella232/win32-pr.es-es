@@ -1,10 +1,10 @@
 ---
-title: MPTHREAT_STATS estructura (MpClient. h)
+title: MPTHREAT_STATS estructura (MpClient.h)
 description: Estadísticas relacionadas con amenazas.
 ms.assetid: 78B7E2A8-1BB4-4610-8E90-1F8ECBE740A8
 keywords:
-- MPTHREAT_STATS estructura de las características heredadas del entorno de Windows
-- Puntero de estructura de PMPTHREAT_STATS características de entorno heredado de Windows
+- MPTHREAT_STATS estructura heredada de Windows environment
+- PMPTHREAT_STATS puntero de estructura heredados Windows environment features
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 21a2eef7acde5fbeac2cf9951dfad3e6923ccea2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7671b45dc09c8aca494ad270aa69fc386ef3d7c03d5144fdc3e89b4f657bb07b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905208"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975945"
 ---
-# <a name="mpthreat_stats-structure"></a>MPTHREAT ( \_ estructura de estadísticas)
+# <a name="mpthreat_stats-structure"></a>Estructura DE \_ ESTADÍSTICAS DE MPTHREAT
 
 Estadísticas relacionadas con amenazas.
 
@@ -46,7 +46,7 @@ typedef struct tagMPTHREAT_STATS {
 **ThreatCount**
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
 </dd> <dd>
 
@@ -57,18 +57,18 @@ Número de amenazas detectadas.
 **SuspiciousThreatCount**
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
 </dd> <dd>
 
-Número de amenazas detectadas con supervisión de comportamiento.
+Número de amenazas detectadas con la supervisión del comportamiento.
 
 </dd> <dt>
 
 **Reserved**
 </dt> <dd>
 
-Tipo: **uint \[ 4 \]**
+Tipo: **UINT \[ 4 \]**
 
 </dd> <dd>
 
@@ -82,9 +82,9 @@ Campos reservados para uso futuro.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

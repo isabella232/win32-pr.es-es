@@ -1,5 +1,5 @@
 ---
-description: Este valor de cadena opcional permite invalidar el criterio de ordenación estándar de System. Música. Composer. Esto es muy importante para la ordenación correcta de los archivos de música en japonés que no se pueden ordenar correctamente fonéticamente (la ordenación esperada por el usuario) sin este campo. También se puede usar para personalizar la ordenación en escenarios que no son de Asia Oriental, como permitir al usuario quitar artículos con fines de ordenación.
+description: Este valor de cadena opcional permite reemplazar el criterio de ordenación estándar de System. Música. Composer. Esto es muy importante para la ordenación correcta de los archivos de música en japonés que no se pueden ordenar de forma fonética (la ordenación esperada por el usuario) sin este campo. También se puede usar para personalizar la ordenación en escenarios que no son de Asia Oriental, como permitir al usuario quitar artículos con fines de ordenación.
 ms.assetid: f087cbd3-7d0e-48c8-8e59-383d6b47cb12
 title: Sistema. Música. ComposerSortOverride
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118970234"
 ---
 # <a name="systemmusiccomposersortoverride"></a>Sistema. Música. ComposerSortOverride
 
-Este valor de cadena opcional permite invalidar el criterio de ordenación estándar de System. Música. Composer. Esto es muy importante para la ordenación correcta de los archivos de música en japonés que no se pueden ordenar correctamente fonéticamente (la ordenación esperada por el usuario) sin este campo. También se puede usar para personalizar la ordenación en escenarios que no son de Asia Oriental, como permitir al usuario quitar artículos con fines de ordenación.
+Este valor de cadena opcional permite reemplazar el criterio de ordenación estándar de System. Música. Composer. Esto es muy importante para la ordenación correcta de los archivos de música en japonés que no se pueden ordenar de forma fonética (la ordenación esperada por el usuario) sin este campo. También se puede usar para personalizar la ordenación en escenarios que no son de Asia Oriental, como permitir al usuario quitar artículos con fines de ordenación.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8
 

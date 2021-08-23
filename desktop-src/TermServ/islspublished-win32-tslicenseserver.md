@@ -1,12 +1,12 @@
 ---
-title: Método IsLSPublished de la clase Win32_TSLicenseServer
-description: Recupera si el servidor de licencias de Escritorio remoto se publica en Active Directory Domain Services (AD \ 160; DS).
+title: Método IsLSPublished de la Win32_TSLicenseServer clase
+description: Recupera si el Escritorio remoto de licencias de servidor de licencias se publica en Active Directory Domain Services (AD \ 160;DS).
 ms.assetid: 0e97c9df-5cb0-4e28-8436-08093a8667d9
 ms.tgt_platform: multiple
 keywords:
 - Método IsLSPublished Servicios de Escritorio remoto
-- Método IsLSPublished Servicios de Escritorio remoto, clase Win32_TSLicenseServer
-- Win32_TSLicenseServer de clase Servicios de Escritorio remoto, método IsLSPublished
+- Método IsLSPublished Servicios de Escritorio remoto , Win32_TSLicenseServer clase
+- Win32_TSLicenseServer clase Servicios de Escritorio remoto método , IsLSPublished
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 69add751497ed52a107ea7183bb4b7cce4ea88c1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6a5ca1fd4159b5b632dde5930f25b28ccbc7fcbad41ee2ee2da126252c6eb086
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676813"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119000655"
 ---
-# <a name="islspublished-method-of-the-win32_tslicenseserver-class"></a>Método IsLSPublished de la \_ clase TSLicenseServer de Win32
+# <a name="islspublished-method-of-the-win32_tslicenseserver-class"></a>Método IsLSPublished de la clase TSLicenseServer de Win32 \_
 
-Recupera si el servidor de licencias de Escritorio remoto se publica en Active Directory Domain Services (AD DS).
+Recupera si el servidor de Escritorio remoto licencia está publicado en Active Directory Domain Services (AD DS).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,7 +43,7 @@ uint32 IsLSPublished(
 
 <dl> <dt>
 
-*Publicado* \[ por enuncia\]
+*Publicado* \[ out\]
 </dt> <dd>
 
 Valor booleano que indica si el servidor de licencias está publicado en AD DS.
@@ -52,15 +52,15 @@ Valor booleano que indica si el servidor de licencias está publicado en AD DS.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, vea [servicios de escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
+Si el método se realiza correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para llamar a este método, debe ser miembro del grupo administradores.
+Debe ser miembro del grupo Administradores para llamar a este método.
 
-Si el servidor de licencias está publicado en AD DS, se detectará Escritorio remoto automáticamente en los servidores host de sesión de escritorio remoto (host de sesión de RD) del mismo bosque.
+Si el servidor de licencias se publica en AD DS, los servidores de host de sesión de Escritorio remoto (Host de sesión de Escritorio remoto) del mismo bosque lo detectarán automáticamente.
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,7 +71,7 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                            |
 | Espacio de nombres<br/>                | Root\\CIMv2<br/>                                                                    |
-| MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TlsWmiProv.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 
 
@@ -80,7 +80,7 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 
 <dl> <dt>
 
-[**Win32 \_ TSLicenseServer**](win32-tslicenseserver.md)
+[**TSLicenseServer de Win32 \_**](win32-tslicenseserver.md)
 </dt> </dl>
 
  

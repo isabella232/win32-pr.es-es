@@ -1,15 +1,15 @@
 ---
-description: El centro de llamadas TAPI admite funciones para crear un agente de línea y los grupos de agentes.
+description: TapI Call Center admite funciones para crear un agente de línea y grupos de agentes.
 ms.assetid: 81bd0e7b-2bf1-4a05-83f4-ef641641cf2b
 title: Funciones del centro de llamadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 261188a4a1440ca128a6a6830149230a47672581
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4ac927158c260a1a2bede4e114c6e46c1a5cac5b5939eb9de1a4c30a749a7670
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677616"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118870719"
 ---
 # <a name="call-center-functions"></a>Funciones del centro de llamadas
 

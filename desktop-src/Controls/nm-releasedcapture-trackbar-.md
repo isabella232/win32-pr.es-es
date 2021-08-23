@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de NM_RELEASEDCAPTURE (TrackBar) (commctrl. h)
-description: Notifica a la ventana primaria de un control TrackBar que el control está liberando la captura del mouse. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: NM_RELEASEDCAPTURE (barra de seguimiento) (Commctrl.h)
+description: Notifica a la ventana primaria de un control trackbar que el control está liberando la captura del mouse. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 1e3e4f67-672d-4e3e-84f4-b3fa6221d118
 keywords:
-- Controles de Windows de código de notificación de NM_RELEASEDCAPTURE (TrackBar)
+- NM_RELEASEDCAPTURE de notificación (barra de seguimiento) Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 684f58fb5328cfe0d25fc73ce7c1a2d9a189d86f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f987ba9aec66a2a637736cb1b675196538ec46c7401b9a6317e5458a0bba7c48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150757"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957954"
 ---
-# <a name="nm_releasedcapture-trackbar-notification-code"></a>Código de notificación de NM \_ RELEASEDCAPTURE (TrackBar)
+# <a name="nm_releasedcapture-trackbar-notification-code"></a>Código de notificación DE NM \_ RELEASEDCAPTURE (barra de seguimiento)
 
-Notifica a la ventana primaria de un control TrackBar que el control está liberando la captura del mouse. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Notifica a la ventana primaria de un control trackbar que el control está liberando la captura del mouse. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ NM_RELEASEDCAPTURE
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contiene información adicional sobre esta notificación.
+Puntero a una [**estructura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contiene información adicional sobre esta notificación.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ El control omite el valor devuelto de este código de notificación.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

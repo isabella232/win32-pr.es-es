@@ -1,9 +1,9 @@
 ---
-title: Tipo simple de HexInt16Type
+title: Tipo simple HexInt16Type
 description: Define un tipo hexadecimal de 2 bytes.
 ms.assetid: d33d24e7-d260-49ea-a8ba-187b9b7a3a9c
 keywords:
-- HexInt16Type de tipo simple de registro
+- Tipo simple HexInt16Type EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6aaa5021fbc5a7de5c16083c0f7744bc4a154c50
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e5f441071daa84f162a1dacbd16513fe2550b99d34d24ed90205ff4d8d184493
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492556"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055964"
 ---
-# <a name="hexint16type-simple-type"></a>Tipo simple de HexInt16Type
+# <a name="hexint16type-simple-type"></a>Tipo simple HexInt16Type
 
 Define un tipo hexadecimal de 2 bytes.
 
@@ -38,20 +38,20 @@ Define un tipo hexadecimal de 2 bytes.
 
 ## <a name="patterns"></a>Patrones
 
-El tipo simple **HexInt16Type** es una **cadena** restringida por el siguiente patrón:
+El **tipo simple HexInt16Type** es una **cadena** restringida por el siguiente patrón:
 
 -   `0[xX][0-9A-Fa-f]{1,4}`
 
-    El valor puede contener de uno a cuatro caracteres hexadecimales (por ejemplo, 0xA o 0xac7b).
+    El valor puede contener de uno a cuatro caracteres hexadecimales (por ejemplo, 0xa o 0xac7b).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

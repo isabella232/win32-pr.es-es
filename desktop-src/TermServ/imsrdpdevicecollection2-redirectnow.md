@@ -1,12 +1,12 @@
 ---
-title: IMsRdpDeviceCollection2 RedirectNow, método
-description: Fuerza la redirección o eliminación de los dispositivos que se seleccionaron o anularon de la colección.
+title: Método IMsRdpDeviceCollection2 RedirectNow
+description: Obliga a que los dispositivos seleccionados o no seleccionados de la colección se redirijan o quiten.
 ms.assetid: 9cd5849d-a589-43f3-b904-6b2e15ca033d
 ms.tgt_platform: multiple
 keywords:
-- Método RedirectNow Servicios de Escritorio remoto
-- Método RedirectNow Servicios de Escritorio remoto, interfaz IMsRdpDeviceCollection2
-- Interfaz IMsRdpDeviceCollection2 Servicios de Escritorio remoto, método RedirectNow
+- Método redirectNow Servicios de Escritorio remoto
+- Método RedirectNow Servicios de Escritorio remoto , interfaz IMsRdpDeviceCollection2
+- Interfaz IMsRdpDeviceCollection2 Servicios de Escritorio remoto , método RedirectNow
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 893d1e26f504d5aeb45f795ea7425eeefc3a6232
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 60c92eff142305e95a71c69cdce9789b0d2316e3d5e60b703a7c1aa8e835688f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103995945"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119058923"
 ---
-# <a name="imsrdpdevicecollection2redirectnow-method"></a>IMsRdpDeviceCollection2:: RedirectNow (método)
+# <a name="imsrdpdevicecollection2redirectnow-method"></a>IMsRdpDeviceCollection2::RedirectNow (método)
 
-Fuerza la redirección o eliminación de los dispositivos que se seleccionaron o anularon de la colección.
+Obliga a que los dispositivos seleccionados o no seleccionados de la colección se redirijan o quiten.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,12 +43,12 @@ HRESULT RedirectNow(
 
 <dl> <dt>
 
-*Tipo* \[ de de\]
+*Tipo* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **RedirectDeviceType**](redirectdevicetype.md)**
 
-Un valor de la enumeración [**RedirectDeviceType**](redirectdevicetype.md) que especifica el tipo de dispositivo que se va a redirigir.
+Valor de la [**enumeración RedirectDeviceType**](redirectdevicetype.md) que especifica el tipo de dispositivo que se va a redirigir.
 
 </dd> </dl>
 
@@ -56,7 +56,7 @@ Un valor de la enumeración [**RedirectDeviceType**](redirectdevicetype.md) que 
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor BoolColumnValue'
-title: Constructor de BoolColumnValue
+description: 'Más información sobre: Constructor BoolColumnValue'
+title: Constructor BoolColumnValue
 TOCTitle: 'BoolColumnValue constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.BoolColumnValue.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.boolcolumnvalue.boolcolumnvalue(v=EXCHG.10)
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b48948c3e1ba36fc60c7a2e0277d24a4d857ca1e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ec71df1f390ff0e1afc2a19549d8787c08f0b34efa1999f9d2d7a86cc79a23c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678341"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118982855"
 ---
-# <a name="boolcolumnvalue-constructor"></a>Constructor de BoolColumnValue
+# <a name="boolcolumnvalue-constructor"></a>Constructor BoolColumnValue
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,12 +50,12 @@ Dim instance As New BoolColumnValue()
 public BoolColumnValue()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase BoolColumnValue](./boolcolumnvalue-class.md)
+[BoolColumnValue (clase)](./boolcolumnvalue-class.md)
 
-[Miembros de BoolColumnValue](./boolcolumnvalue-members.md)
+[Miembros BoolColumnValue](./boolcolumnvalue-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

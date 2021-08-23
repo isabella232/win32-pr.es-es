@@ -1,7 +1,7 @@
 ---
-description: Marca que indica si ha cambiado la calidad.
+description: Marca que indica si la calidad ha cambiado.
 ms.assetid: 9084ab1d-b6a0-4e87-a653-86e64c74b07f
-title: 'Miembro CTransformFilter:: m_bQualityChanged (Transfrm. h)'
+title: Miembro CTransformFilter::m_bQualityChanged (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: abd0371389d6c17a074580643a06c3fe25bdf433
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 454d8bad4ced2291b061b09992ad450d9e483f269e3fd72b192adbbacb077d7c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680827"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953614"
 ---
-# <a name="ctransformfilterm_bqualitychanged-member"></a>Miembro bQualityChanged CTransformFilter:: m \_
+# <a name="ctransformfilterm_bqualitychanged-member"></a>Miembro CTransformFilter::m \_ bQualityChanged
 
-Marca que indica si ha cambiado la calidad. La primera vez que el filtro quita un ejemplo, envía un evento [**de \_ \_ cambio de calidad EC**](ec-quality-change.md) al administrador de gráficos de filtro y establece esta marca en **true**. No envía este evento de nuevo hasta que el filtro se detenga y se reinicie, incluso si continúa quitando muestras mientras tanto.
+Marca que indica si la calidad ha cambiado. La primera vez que el filtro quita una muestra, envía un evento [**EC \_ QUALITY \_ CHANGE**](ec-quality-change.md) al administrador de gráficos de filtros y establece esta marca en **TRUE.** No envía este evento de nuevo hasta que el filtro se detiene y se reinicia, aunque siga colocando muestras mientras tanto.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ BOOL m_bQualityChanged;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transfrm. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ BOOL m_bQualityChanged;
 
 <dl> <dt>
 
-[**Clase CTransformFilter**](ctransformfilter.md)
+[**CTransformFilter (clase)**](ctransformfilter.md)
 </dt> </dl>
 
  

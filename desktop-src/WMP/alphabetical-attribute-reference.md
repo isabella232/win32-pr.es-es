@@ -1,36 +1,36 @@
 ---
-title: Referencia de atributo alfabético
-description: Referencia de atributo alfabético
+title: Referencia alfabética de atributos
+description: Referencia alfabética de atributos
 ms.assetid: 12fdeba6-14db-4689-a3cb-cb36dbc9204f
 keywords:
-- Windows Media Player, atributos para elementos multimedia
-- Windows Media Player Mobile, atributos para elementos multimedia
-- Modelo de objetos de Windows Media Player, referencia
-- modelo de objetos, referencia
-- Control ActiveX, referencia
-- Control ActiveX de Windows Media Player, referencia
-- Control ActiveX móvil de Windows Media Player, referencia
-- Referencia del modelo de objetos, atributos
-- Modelo de objetos de Windows Media Player, atributos para elementos multimedia
+- Reproductor de Windows Media,atributos para elementos multimedia
+- Reproductor de Windows Media Móvil, atributos para elementos multimedia
+- Reproductor de Windows Media modelo de objetos, referencia
+- object model,reference
+- ActiveX control,reference
+- Reproductor de Windows Media ActiveX control,reference
+- Reproductor de Windows Media Control de ActiveX móvil, referencia
+- referencia para el modelo de objetos, atributos
+- Reproductor de Windows Media modelo de objetos, atributos para elementos multimedia
 - modelo de objetos, atributos para elementos multimedia
-- Control ActiveX de Windows Media Player, atributos para elementos multimedia
-- Control ActiveX móvil de Windows Media Player, atributos para elementos multimedia
-- Control ActiveX, atributos para elementos multimedia
-- atributos, referencia
+- Reproductor de Windows Media ActiveX control,atributos para elementos multimedia
+- Reproductor de Windows Media Control de ActiveX móviles, atributos para elementos multimedia
+- ActiveX control,atributos para elementos multimedia
+- attributes,reference
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eed878b474098e68701ad8bdde0e3d207c4b8596
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 41fae63365e9670119d89d11a2faf2d2d9979e7c21aeac2fc5975f072a07f086
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104268502"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055323"
 ---
-# <a name="alphabetical-attribute-reference"></a>Referencia de atributo alfabético
+# <a name="alphabetical-attribute-reference"></a>Referencia alfabética de atributos
 
-En esta sección se proporciona una lista alfabética de los atributos predefinidos usados en la biblioteca, CDs, DVDs u otros tipos de contenido multimedia digital. Pueden estar disponibles otros atributos definidos por el usuario.
+En esta sección se proporciona una lista alfabética de los atributos predefinidos que se usan en la biblioteca, los CD, los DVD u otros tipos de contenido multimedia digital. Pueden estar disponibles atributos adicionales definidos por el usuario.
 
--   [**Atributo Abstract**](abstract-attribute.md)
+-   [**Atributo abstracto**](abstract-attribute.md)
 -   [**Atributo AcquisitionTime**](acquisitiontime-attribute.md)
 -   [**Atributo AcquisitionTimeDay**](acquisitiontimeday-attribute.md)
 -   [**Atributo AcquisitionTimeMonth**](acquisitiontimemonth-attribute.md)
@@ -56,12 +56,12 @@ En esta sección se proporciona una lista alfabética de los atributos predefini
 -   [**Atributo CDTrackEnabled**](cdtrackenabled-attribute.md)
 -   [**Atributo de canales**](channels-attribute.md)
 -   [**Atributo chapterNum**](chapternum-attribute.md)
--   [**Atributo comment**](comment-attribute.md)
+-   [**Atributo Comment**](comment-attribute.md)
 -   [**Atributo ContentDistributorDuration**](contentdistributorduration-attribute.md)
--   [**Atributo Copyright**](copyright-attribute.md)
--   [**Count (atributo)**](count-attribute.md)
+-   [**Atributo copyright**](copyright-attribute.md)
+-   [**Atributo Count**](count-attribute.md)
 -   [**Atributo CurrentBitrate**](currentbitrate-attribute.md)
--   [**Descripción (atributo)**](description-attribute.md)
+-   [**Atributo Description**](description-attribute.md)
 -   [**Atributo DisplayArtist**](displayartist-attribute.md)
 -   [**DLNAServerUDN**](dlnaserverudn-attribute.md)
 -   [**Atributo DLNASourceURI**](dlnasourceuri-attribute.md)
@@ -69,34 +69,34 @@ En esta sección se proporciona una lista alfabética de los atributos predefini
 -   [**Atributo DRMKeyID**](drmkeyid-attribute.md)
 -   [**DTCPIPHost**](dtcpiphost-attribute.md)
 -   [**DTCPIPPort**](dtcpipport-attribute.md)
--   [**Duration (atributo)**](duration-attribute.md)
+-   [**Atributo Duration**](duration-attribute.md)
 -   [**Atributo DVDID**](dvdid-attribute.md)
 -   [**Atributo de evento**](event-attribute.md)
--   [**Atributo de archivo**](filesize-attribute.md)
--   [**FileType (atributo)**](filetype-attribute.md)
+-   [**Atributo FileSize**](filesize-attribute.md)
+-   [**Atributo FileType**](filetype-attribute.md)
 -   [**Atributo FormatTag**](formattag-attribute.md)
--   [**FourCC, atributo**](fourcc-attribute.md)
--   [**Velocidad de fotogramas**](framerate-attribute.md)
--   [**Frequency (atributo)**](frequency-attribute.md)
+-   [**Atributo FourCC**](fourcc-attribute.md)
+-   [**Atributo FrameRate**](framerate-attribute.md)
+-   [**Atributo Frequency**](frequency-attribute.md)
 -   [**Atributo IsNetworkFeed**](isnetworkfeed-attribute.md)
 -   [**Atributo IsVBR**](isvbr-attribute.md)
 -   [**Atributo LeadPerformer**](leadperformer-attribute.md)
--   [**IdBiblioteca**](libraryid-attribute.md)
--   [**Atributo Nombrebiblioteca**](libraryname-attribute.md)
--   [**Location (atributo)**](location-attribute.md)
--   [**MediaType (atributo)**](mediatype-attribute.md)
--   [**ModifiedBy (atributo)**](modifiedby-attribute.md)
+-   [**LibraryID**](libraryid-attribute.md)
+-   [**Atributo LibraryName**](libraryname-attribute.md)
+-   [**Atributo location**](location-attribute.md)
+-   [**Atributo MediaType**](mediatype-attribute.md)
+-   [**Atributo ModifiedBy**](modifiedby-attribute.md)
 -   [**Atributo MoreInfo**](moreinfo-attribute.md)
 -   [**Atributo PartOfSet**](partofset-attribute.md)
 -   [**Atributo PeakValue**](peakvalue-attribute.md)
 -   [**Atributo PixelAspectRatioX**](pixelaspectratiox.md)
--   [**Atributo PixelAspectRatioY**](pixelaspectratioy.md)
+-   [**Atributo PixelAspectRatioy**](pixelaspectratioy.md)
 -   [**Atributo PlaylistIndex**](playlistindex-attribute.md)
--   [**Atributo de proveedor**](provider-attribute.md)
+-   [**Atributo provider**](provider-attribute.md)
 -   [**Atributo ProviderLogoURL**](providerlogourl-attribute.md)
 -   [**Atributo ProviderURL**](providerurl-attribute.md)
--   [**Atributo de radiobanda**](radioband-attribute.md)
--   [**Atributo radioformat**](radioformat-attribute.md)
+-   [**Atributo RadioBand**](radioband-attribute.md)
+-   [**Atributo RadioFormat**](radioformat-attribute.md)
 -   [**Atributo RatingOrg**](ratingorg-attribute.md)
 -   [**Atributo RecordingTime**](recordingtime-attribute.md)
 -   [**Atributo RecordingTimeDay**](recordingtimeday-attribute.md)
@@ -113,28 +113,28 @@ En esta sección se proporciona una lista alfabética de los atributos predefini
 -   [**Atributo RequestState**](requeststate-attribute.md)
 -   [**Atributo ShadowFilePath**](shadowfilepath-attribute.md)
 -   [**Atributo SourceURL**](sourceurl-attribute.md)
--   [**Atributo de asunto**](subject-attribute.md)
+-   [**Atributo Subject**](subject-attribute.md)
 -   [**Atributo SyncState**](syncstate-attribute.md)
--   **Sync01**. Consulte [**atributos de sincronización**](sync-attributes.md).
--   **Sync02**. Consulte [**atributos de sincronización**](sync-attributes.md).
--   **Sync03**. Consulte [**atributos de sincronización**](sync-attributes.md).
--   **Sync04**. Consulte [**atributos de sincronización**](sync-attributes.md).
--   **Sync05**. Consulte [**atributos de sincronización**](sync-attributes.md).
--   **Sync06**. Consulte [**atributos de sincronización**](sync-attributes.md).
--   **Sync07**. Consulte [**atributos de sincronización**](sync-attributes.md).
--   **Sync08**. Consulte [**atributos de sincronización**](sync-attributes.md).
--   **Sync09**. Consulte [**atributos de sincronización**](sync-attributes.md).
--   **Sync10**. Consulte [**atributos de sincronización**](sync-attributes.md).
--   **Sync11**. Consulte [**atributos de sincronización**](sync-attributes.md).
--   **Sync12**. Consulte [**atributos de sincronización**](sync-attributes.md).
--   **Sync13**. Consulte [**atributos de sincronización**](sync-attributes.md).
--   **Sync14**. Consulte [**atributos de sincronización**](sync-attributes.md).
--   **Sync15**. Consulte [**atributos de sincronización**](sync-attributes.md).
--   **Sync16**. Consulte [**atributos de sincronización**](sync-attributes.md).
+-   **Sync01**. Vea [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync02**. Vea [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync03**. Vea [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync04**. Vea [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync05**. Vea [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync06**. Vea [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync07**. Vea [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync08**. Vea [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync09**. Vea [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync10**. Vea [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync11**. Vea [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync12**. Vea [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync13**. Vea [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync14**. Vea [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync15**. Vea [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync16**. Vea [**Atributos de sincronización.**](sync-attributes.md)
 -   [**Atributo SyncOnly**](synconly-attribute.md)
 -   [**Atributo temporal**](temporary-attribute.md)
--   [**Atributo title**](title-attribute.md)
--   [**Atributo titleNum**](titlenum-attribute.md)
+-   [**Atributo Title**](title-attribute.md)
+-   [**titleNum (Atributo)**](titlenum-attribute.md)
 -   [**Atributo TitleSortOrder**](titlesortorder-attribute.md)
 -   [**Atributo TotalDuration**](totalduration-attribute.md)
 -   [**Atributo TrackingID**](trackingid-attribute.md)
@@ -151,13 +151,13 @@ En esta sección se proporciona una lista alfabética de los atributos predefini
 -   [**Atributo UserPlaycountWeekend**](userplaycountweekend-attribute.md)
 -   [**Atributo UserRating**](userrating-attribute.md)
 -   [**Atributo UserServiceRating**](userservicerating-attribute.md)
--   [**Atributo de velocidad de bits**](videobitrate-attribute.md)
--   [**Atributo videoformat**](videoformat-attribute.md)
+-   [**Atributo VideoBitrate**](videobitrate-attribute.md)
+-   [**Atributo VideoFormat**](videoformat-attribute.md)
 -   [**Atributo WM/AlbumArtist**](wm-albumartist-attribute.md)
--   [**Atributo WM/álbum**](wm-albumtitle-attribute.md)
--   [**Atributo WM/categoría**](wm-category-attribute.md)
--   [**Atributo WM/compositor**](wm-composer-attribute.md)
--   [**Atributo WM/conductor**](wm-conductor-attribute.md)
+-   [**Atributo WM/AlbumTitle**](wm-albumtitle-attribute.md)
+-   [**Atributo WM/Category**](wm-category-attribute.md)
+-   [**Atributo WM/Composer**](wm-composer-attribute.md)
+-   [**Atributo WM/Conductor**](wm-conductor-attribute.md)
 -   [**Atributo WM/ContentDistributor**](wm-contentdistributor-attribute.md)
 -   [**Atributo WM/ContentDistributorType**](wm-contentdistributortype-attribute.md)
 -   [**Atributo WM/ContentGroupDescription**](wm-contentgroupdescription-attribute.md)
@@ -167,52 +167,52 @@ En esta sección se proporciona una lista alfabética de los atributos predefini
 -   [**Atributo WM/GenreID**](wm-genreid-attribute.md)
 -   [**Atributo WM/InitialKey**](wm-initialkey-attribute.md)
 -   [**Atributo WM/Language**](wm-language-attribute.md)
--   [**Atributo WM/letra**](wm-lyrics-attribute.md)
+-   [**Atributo WM/Attribute**](wm-lyrics-attribute.md)
 -   [**Atributo WM/MCDI**](wm-mcdi-attribute.md)
 -   [**Atributo WM/MediaClassPrimaryID**](wm-mediaclassprimaryid-attribute.md)
 -   [**Atributo WM/MediaClassSecondaryID**](wm-mediaclasssecondaryid-attribute.md)
 -   [**Atributo WM/MediaOriginalBroadcastDateTime**](wm-mediaoriginalbroadcastdatetime-attribute.md)
 -   [**Atributo WM/MediaOriginalChannel**](wm-mediaoriginalchannel-attribute.md)
 -   [**Atributo WM/MediaStationName**](wm-mediastationname-attribute.md)
--   [**Atributo WM/humor**](wm-mood-attribute.md)
+-   [**Atributo WM/Mood**](wm-mood-attribute.md)
 -   [**Atributo WM/OriginalAlbumTitle**](wm-originalalbumtitle-attribute.md)
 -   [**Atributo WM/OriginalArtist**](wm-originalartist-attribute.md)
 -   [**Atributo WM/OriginalLyricist**](wm-originallyricist-attribute.md)
 -   [**Atributo WM/ParentalRating**](wm-parentalrating-attribute.md)
 -   [**Atributo WM/PartOfSet**](wm-partofset-attribute.md)
--   [**Atributo WM/period**](wm-period-attribute.md)
--   [**Atributo de WM/productor**](wm-producer-attribute.md)
+-   [**Atributo WM/Period**](wm-period-attribute.md)
+-   [**Atributo WM/Producer**](wm-producer-attribute.md)
 -   [**Atributo WM/ProtectionType**](wm-protectiontype-attribute.md)
--   [**Atributo WM/proveedor**](wm-provider-attribute.md)
+-   [**Atributo WM/Provider**](wm-provider-attribute.md)
 -   [**Atributo WM/ProviderRating**](wm-providerrating-attribute.md)
 -   [**Atributo WM/ProviderStyle**](wm-providerstyle-attribute.md)
--   [**Atributo de WM/publicador**](wm-publisher-attribute.md)
+-   [**Atributo WM/Publisher**](wm-publisher-attribute.md)
 -   [**Atributo WM/SubscriptionContentID**](wm-subscriptioncontentid-attribute.md)
--   [**Atributo WM/subtítulo**](wm-subtitle-attribute.md)
+-   [**Atributo WM/SubTitle**](wm-subtitle-attribute.md)
 -   [**Atributo WM/SubTitleDescription**](wm-subtitledescription-attribute.md)
 -   [**Atributo WM/TrackNumber**](wm-tracknumber-attribute.md)
 -   [**Atributo WM/UniqueFileIdentifier**](wm-uniquefileidentifier-attribute.md)
 -   [**Atributo WM/VideoFrameRate**](wm-videoframerate-attribute.md)
--   [**Atributo de WM/videoaltura**](wm-videoheight-attribute.md)
+-   [**Atributo WM/VideoHeight**](wm-videoheight-attribute.md)
 -   [**Atributo WM/VideoWidth**](wm-videowidth-attribute.md)
 -   [**Atributo WM/WMCollectionGroupID**](wm-wmcollectiongroupid-attribute.md)
 -   [**Atributo WM/WMCollectionID**](wm-wmcollectionid-attribute.md)
 -   [**Atributo WM/WMContentID**](wm-wmcontentid-attribute.md)
 -   [**WM/WMShadowFileSourceDRMType**](wm-wmshadowfilesourcedrmtype.md)
 -   [**WM/WMShadowFileSourceFileType**](wm-wmshadowfilesourcefiletype.md)
--   [**Atributo WM/escritor**](wm-writer-attribute.md)
--   [**Atributo WM/año**](wm-year-attribute.md)
+-   [**Atributo WM/Writer**](wm-writer-attribute.md)
+-   [**Atributo WM/Year**](wm-year-attribute.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

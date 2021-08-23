@@ -1,19 +1,19 @@
 ---
-description: 'La interfaz de programación de servicios web en dispositivos define y utiliza las siguientes interfaces:'
+description: 'La interfaz de programación Servicios web en dispositivos define y usa las interfaces siguientes:'
 ms.assetid: 85033c35-6012-4146-871d-e95d789a60b2
-title: Interfaces de servicios web en dispositivos
+title: Servicios web en interfaces de dispositivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f60483df9fa8e6fadd07f695aa28cc110b9f94fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 562b78f0b6b59445967422672d675a55c6effba3dc6182ff50e2bde6ab26285b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706376"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991455"
 ---
-# <a name="web-services-on-devices-interfaces"></a>Interfaces de servicios web en dispositivos
+# <a name="web-services-on-devices-interfaces"></a>Servicios web en interfaces de dispositivos
 
-La interfaz de programación de servicios web en dispositivos define y utiliza las siguientes interfaces:
+La interfaz de programación Servicios web en dispositivos define y usa las interfaces siguientes:
 
 -   [**IWSDAddress**](/windows/desktop/api/Wsdbase/nn-wsdbase-iwsdaddress)
 -   [**IWSDAsyncCallback**](/windows/desktop/api/WsdClient/nn-wsdclient-iwsdasynccallback)

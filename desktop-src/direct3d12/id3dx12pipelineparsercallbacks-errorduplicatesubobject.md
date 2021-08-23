@@ -1,6 +1,6 @@
 ---
-title: Método ID3DX12PipelineParserCallbacks ErrorDuplicateSubobject (D3DX12. h)
-description: Llama a la devolución de llamada de error de subobjeto duplicado de un objeto que implementa esta interfaz.
+title: Método ID3DX12PipelineParserCallbacks ErrorDuplicateSubobject (D3DX12.h)
+description: Llama a la devolución de llamada de error del subobjeto duplicado de un objeto que implementa esta interfaz.
 ms.assetid: 625C72C4-7BFB-4DAD-8D39-EDDBC7189499
 keywords:
 - Método ErrorDuplicateSubobject
@@ -17,16 +17,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 43b00dae4675ff05a43e566a8ead815ea24f6c16
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c33724b1fdfec4951ce2efb31d4916ce210dc2b73858a5ef250c14a8744646bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718349"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119045473"
 ---
-# <a name="id3dx12pipelineparsercallbackserrorduplicatesubobject-method"></a>ID3DX12PipelineParserCallbacks:: ErrorDuplicateSubobject (método)
+# <a name="id3dx12pipelineparsercallbackserrorduplicatesubobject-method"></a>Método ID3DX12PipelineParserCallbacks::ErrorDuplicateSubobject
 
-Llama a la devolución de llamada de error de subobjeto duplicado de un objeto que implementa esta interfaz.
+Llama a la devolución de llamada de error del subobjeto duplicado de un objeto que implementa esta interfaz.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,9 +46,9 @@ void ErrorDuplicateSubobject(
 *DuplicateType* 
 </dt> <dd>
 
-Tipo: **[ **\_ \_ \_ \_ tipo de subobjeto de estado de canalización D3D12**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)**
+Tipo: TIPO DE SUBOBJETO DE ESTADO DE CANALIZACIÓN **[ **D3D12 \_ \_ \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)**
 
-El tipo de subobjeto que se ha duplicado.
+Tipo de subobjeto duplicado.
 
 </dd> </dl>
 
@@ -62,8 +62,8 @@ No devuelve nada.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX12. h</dt> </dl>  |
-| Biblioteca<br/> | <dl> <dt>D3D12. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX12.h</dt> </dl>  |
+| Biblioteca<br/> | <dl> <dt>D3D12.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>D3D12.dll</dt> </dl> |
 
 
@@ -72,13 +72,13 @@ No devuelve nada.
 
 <dl> <dt>
 
-[Interfaces auxiliares de Direct3D 12](helper-interfaces-for-d3d12.md)
+[Interfaces auxiliares para Direct3D 12](helper-interfaces-for-d3d12.md)
 </dt> <dt>
 
 [**ID3DX12PipelineParserCallbacks**](id3dx12pipelineparsercallbacks.md)
 </dt> <dt>
 
-[**\_Tipo de \_ subobjeto de estado de CANALización D3D12 \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)
+[**TIPO DE SUBOBJETO DE ESTADO \_ \_ DE CANALIZACIÓN \_ D3D12 \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)
 </dt> </dl>
 
  

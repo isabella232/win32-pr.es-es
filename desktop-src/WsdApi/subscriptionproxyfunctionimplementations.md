@@ -4,12 +4,12 @@ ms.assetid: aa26a3f1-df1e-4caa-9ada-6f4a6627b6b8
 title: elemento subscriptionProxyFunctionImplementations
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d9a3cba202c05d3f8b43b31c292dad8d601dc4e4
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: bf0abc98e0e9bebd4ff2185d669402c0dae025c07bc4af84be3116dda97b6657
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107995322"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991575"
 ---
 # <a name="subscriptionproxyfunctionimplementations-element"></a>elemento subscriptionProxyFunctionImplementations
 
@@ -28,7 +28,7 @@ Genera implementaciones para las funciones de proxy de suscripción o cancelaci�
 
 
 
-| Atributo                 | Tipo               | Obligatorio      | Descripción                                                                                                                   |
+| Atributo                 | Tipo               | Requerido      | Descripción                                                                                                                   |
 |---------------------------|--------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------|
 | **extensible**<br/> | boolean<br/> | No<br/> | La capacidad de agregar puntos de extensibilidad a funciones e interfaces. Este valor siempre se establece en true.<br/> <br/> |
 
@@ -41,7 +41,7 @@ Genera implementaciones para las funciones de proxy de suscripción o cancelaci�
 | Elemento                                                           | Descripción                                                                                            |
 |-------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
 | [**notificationInterface**](notificationinterface.md)<br/> | Especifica el nombre de la interfaz de notificación que se usa con las suscripciones de eventos.<br/> <br/> |
-| [**Operación**](operation.md)<br/>                         | Especifica una operación para la que se va a generar código.<br/> <br/>                       |
+| [**operation**](operation.md)<br/>                         | Especifica una operación para la que se va a generar código.<br/> <br/>                       |
 | [**portType**](porttype.md)<br/>                           | Especifica el tipo de puerto para el que se va a generar el código.<br/> <br/>                      |
 | [**proxyClass**](proxyclass.md)<br/>                       | Especifica el nombre de la clase de proxy del lado cliente.<br/> <br/>                              |
 
@@ -64,7 +64,7 @@ Genera implementaciones para las funciones de proxy de suscripción o cancelaci�
 
 | Elemento                         | Descripción                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**Archivo**](file.md)<br/> | Genera un archivo desde el generador de código.<br/> <br/> |
+| [**Archivo**](file.md)<br/> | Genera un archivo del generador de código.<br/> <br/> |
 
 
 

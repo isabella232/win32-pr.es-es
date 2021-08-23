@@ -1,29 +1,29 @@
 ---
 title: HttpPurchaseOrderWithUserNameOverSslServiceExample
-description: En este ejemplo se muestra cómo usar el host de servicio para hospedar un servicio PurchaseOrder a través de HTTP, con el nombre de usuario sobre la seguridad de modo mixto de SSL.
+description: En este ejemplo se muestra cómo usar el host de servicio para hospedar un servicio PurchaseOrder a través de HTTP, con el nombre de usuario sobre la seguridad en modo mixto de SSL.
 ms.assetid: 3dfedab1-d508-4cff-b179-591871078adb
 keywords:
 - HttpPurchaseOrderWithUserNameOverSslServiceExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e6558a119efda4f8e2c4c009b9de3ad2525985ae
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 63bb584286d749687889a1a24d638ba8fc62ae8620ffb821e940115d1655b42c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103777785"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119026453"
 ---
 # <a name="httppurchaseorderwithusernameoversslserviceexample"></a>HttpPurchaseOrderWithUserNameOverSslServiceExample
 
-En este ejemplo se muestra cómo usar el host de servicio para hospedar un servicio PurchaseOrder a través de HTTP, con el nombre de usuario sobre la seguridad de modo mixto de SSL. En esta configuración, la conexión de transporte está protegida (firmada, cifrada) por SSL, que también proporciona autenticación de servidor. La autenticación del cliente se proporciona mediante un par de nombre de usuario y contraseña en un encabezado de WS-Security en el mensaje.
+En este ejemplo se muestra cómo usar el host de servicio para hospedar un servicio PurchaseOrder a través de HTTP, con el nombre de usuario sobre la seguridad en modo mixto de SSL. En esta configuración, la conexión de transporte está protegida (firmada, cifrada) por SSL, que también proporciona autenticación de servidor. La autenticación de cliente se proporciona mediante un par de nombre de usuario y contraseña en WS-Security encabezado del mensaje.
 
--   [PurchaseOrderServiceUserNameOverSsl. cpp](#purchaseorderserviceusernameoversslcpp)
--   [PurchaseOrder. wsdl](#purchaseorderwsdl)
+-   [PurchaseOrderServiceUserNameOverSsl.cpp](#purchaseorderserviceusernameoversslcpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Archivo Make](#makefile)
 
-## <a name="purchaseorderserviceusernameoversslcpp"></a>PurchaseOrderServiceUserNameOverSsl. cpp
+## <a name="purchaseorderserviceusernameoversslcpp"></a>PurchaseOrderServiceUserNameOverSsl.cpp
 
 
 ```C++
@@ -470,7 +470,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. wsdl
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -609,9 +609,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 
