@@ -1,7 +1,7 @@
 ---
-description: El método ObjectsActive recupera un recuento de objetos activos en todo el proceso.
+description: El método ObjectsActive recupera un recuento de objetos activos para todo el proceso.
 ms.assetid: adbc023a-22b7-44e9-b078-a26831f961cc
-title: Método CBaseObject. ObjectsActive (ComBase. h)
+title: Método CBaseObject.ObjectsActive (Combase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2a3aee21fd9835b28bdcc23eabe30c1d2b5217b9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ea1b85303751531662123662c1af0e1a35799a780842e8b0bcbc912916c94976
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660385"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119640205"
 ---
-# <a name="cbaseobjectobjectsactive-method"></a>CBaseObject. ObjectsActive, método
+# <a name="cbaseobjectobjectsactive-method"></a>Método CBaseObject.ObjectsActive
 
-El `ObjectsActive` método recupera un recuento de objetos activos en todo el proceso.
+El `ObjectsActive` método recupera un recuento de objetos activos para todo el proceso.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,8 +50,8 @@ Devuelve el número de objetos activos.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>ComBase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Combase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve el número de objetos activos.
 
 <dl> <dt>
 
-[**Clase CBaseObject**](cbaseobject.md)
+[**CBaseObject (clase)**](cbaseobject.md)
 </dt> </dl>
 
  

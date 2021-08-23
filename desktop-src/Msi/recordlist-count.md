@@ -1,7 +1,7 @@
 ---
 description: La propiedad Count es una propiedad de solo lectura que devuelve el número de elementos del objeto RecordList.
 ms.assetid: df384d5c-931f-4a31-af55-d013f010e100
-title: RecordList. Count (propiedad)
+title: Propiedad RecordList.Count
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 01d1ee815140b86acefd6d8fee10ca7827eba9ca
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 06ee66668fc22ef8888c3be3bdccfff404b9c8bf0a2eb0498919de6c934a005c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119519405"
 ---
-# <a name="recordlistcount-property"></a>RecordList. Count (propiedad)
+# <a name="recordlistcount-property"></a>Propiedad RecordList.Count
 
-La propiedad **Count** es una propiedad de solo lectura que devuelve el número de elementos del objeto [**RecordList**](recordlist-object.md) .
+La **propiedad Count** es una propiedad de solo lectura que devuelve el número de elementos del objeto [**RecordList.**](recordlist-object.md)
 
 Esta propiedad es de solo lectura.
 
@@ -37,19 +37,19 @@ propVal = RecordList.Count
 
 ## <a name="property-value"></a>Valor de propiedad
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El cliente debe comprobar que el objeto [**RecordList**](recordlist-object.md) existe y no está vacío antes de hacer referencia a la propiedad Count.
+El cliente debe comprobar que el [**objeto RecordList**](recordlist-object.md) existe y no está vacío antes de hacer referencia a la propiedad Count.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IRecordList se define como 000C1096-0000-0000-C000-000000000046<br/>                                                                                                                                                                          |
+| IID<br/>     | IID IRecordList se define como \_ 000C1096-0000-0000-C000-000000000046<br/>                                                                                                                                                                          |
 
 
 

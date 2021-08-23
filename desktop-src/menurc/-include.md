@@ -1,19 +1,19 @@
 ---
 title: " include"
-description: La Directiva \ include hace que el compilador de recursos procese el archivo especificado en el parámetro FILENAME.
+description: La directiva \ include hace que el compilador de recursos procese el archivo especificado en el parámetro filename.
 ms.assetid: 9a3505c6-c19f-4c4f-85a4-94fbcfc0f9c6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a8d36f1d0ae24f3dc21d67eec57056872aabdbd
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: e8bf5d6fa40e45073ca7ccb5f97dd3ddb0d13dfdfced965d5c83332183da421e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104421867"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119599725"
 ---
-# <a name="-include"></a>inclui
+# <a name="-include"></a>'include'
 
-La directiva **\# include** hace que el compilador de recursos procese el archivo especificado en el parámetro *filename* . Este archivo debe ser un archivo de encabezado que defina las constantes que se usan en el archivo de definición de recursos. El archivo puede utilizar caracteres de un solo byte, de doble byte o Unicode.
+La **\# directiva include** hace que el compilador de recursos procese el archivo especificado en el parámetro *filename.* Este archivo debe ser un archivo de encabezado que defina las constantes usadas en el archivo de definición de recursos. El archivo puede usar caracteres Unicode, de un solo byte o de doble byte.
 
 ``` syntax
 #include filename
@@ -21,26 +21,26 @@ La directiva **\# include** hace que el compilador de recursos procese el archiv
 
 <dl> <dt>
 
-<span id="filename"></span><span id="FILENAME"></span>*extensión*
+<span id="filename"></span><span id="FILENAME"></span>*Nombre*
 </dt> <dd>
 
-Nombre del archivo que se va a incluir. Si el archivo está en el directorio actual, la cadena debe ir entre comillas dobles. Si el archivo se encuentra en el directorio especificado por la variable de entorno INCLUDE, la cadena se debe incluir entre caracteres de menor que y mayor que (<>). Debe proporcionar una ruta de acceso completa entre comillas dobles (") si el archivo no está en el directorio actual o en el directorio especificado por la variable de entorno INCLUDE.
+Nombre del archivo que se va a incluir. Si el archivo está en el directorio actual, la cadena debe incluirse entre comillas dobles; si el archivo está en el directorio especificado por la variable de entorno INCLUDE, la cadena debe incluirse entre caracteres menores y mayores que (<>). Debe proporcionar una ruta de acceso completa entre comillas dobles (") si el archivo no está en el directorio actual o en el directorio especificado por la variable de entorno INCLUDE.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use la siguiente instrucción en el archivo de encabezado para envolver las instrucciones que puede compilar un compilador de C pero no RC:
+Use la siguiente instrucción en el archivo de encabezado para rodear instrucciones que un compilador de C puede compilar pero no RC:
 
 ``` syntax
 #ifndef RC_INVOKED
 ```
 
-De este modo, puede usar los mismos archivos de inclusión en los archivos. c y. rc.
+De este modo, puede usar los mismos archivos de include en los archivos .c y .rc.
 
 ## <a name="example"></a>Ejemplo
 
-En este ejemplo se procesan los archivos de encabezado Windows. h y MyDefs. h mientras se compila el archivo de definición de recursos:
+Este ejemplo procesa los archivos de encabezado Windows.h y MyDefs.h al compilar el archivo de definición de recursos:
 
 ``` syntax
 #include <windows.h>

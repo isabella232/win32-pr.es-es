@@ -1,19 +1,19 @@
 ---
-description: Rango de relevancia de la fila, con un intervalo de 0-1000.
+description: Rango de relevancia de fila, con un intervalo entre 0 y 1000.
 ms.assetid: e0c03f6f-4539-4a6b-b58d-161bd985ee0f
-title: System. Search. Rank
+title: System.Search.Rank
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d23d1c78e5c3807c529fd68b04cc71b6f03300c0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 94b4607cf37136c8d1bb9d6d739afb2e5733cfaefe4b7b207637f930210cc30b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716232"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119595035"
 ---
-# <a name="systemsearchrank"></a>System. Search. Rank
+# <a name="systemsearchrank"></a>System.Search.Rank
 
-Rango de relevancia de la fila, con un intervalo de 0-1000. Los números mayores significan mejores coincidencias. Solo en tiempo de consulta; no se define en el esquema de búsqueda. Esta propiedad se recupera, pero no se pueden buscar.
+Rango de relevancia de fila, con un intervalo entre 0 y 1000. Los números más grandes significan mejores coincidencias. Solo en tiempo de consulta; no se define en el esquema de búsqueda. Esta propiedad se puede recuperar, pero no se puede buscar.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: Un filtro está pasando una cadena de texto a la aplicación.
+description: Un filtro pasa una cadena de texto a la aplicación.
 ms.assetid: 477c6456-c96c-4d3d-b877-2a426510de29
-title: EC_OLE_EVENT (DShow. h)
+title: EC_OLE_EVENT (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af10f606187dae5fa4d361a1d86deea29fa093f1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0753b5b5235be370a29416d9845d3b531640617c9607bd911187f94e013483e6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680804"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119639655"
 ---
-# <a name="ec_ole_event"></a>\_evento OLE de EC \_
+# <a name="ec_ole_event"></a>EC \_ OLE \_ EVENT
 
-Un filtro está pasando una cadena de texto a la aplicación.
+Un filtro pasa una cadena de texto a la aplicación.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -37,9 +37,9 @@ Un filtro está pasando una cadena de texto a la aplicación.
 
 Ninguno.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Por Convención, el primer parámetro contiene información de tipo (por ejemplo, "Text") y el segundo parámetro contiene la cadena de texto.
+Por convención, el primer parámetro contiene información de tipo (por ejemplo, "Text") y el segundo parámetro contiene la cadena de texto.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,7 +47,7 @@ Por Convención, el primer parámetro contiene información de tipo (por ejemplo
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>DShow. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

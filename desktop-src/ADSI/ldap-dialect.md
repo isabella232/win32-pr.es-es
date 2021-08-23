@@ -4,23 +4,23 @@ description: El dialecto LDAP es un formato para las instrucciones de consulta q
 ms.assetid: 29aca7e6-3ed5-4efd-8b03-6a2ee0571f1f
 ms.tgt_platform: multiple
 keywords:
-- ADSI de dialecto LDAP
+- LDAP Dialect ADSI
 - dialectos ADSI, dialecto LDAP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 15f7d1f65a41655596d0a14cf6e2a3595916c2cc
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0c231d3c4d619775cca2ed9542733bff51219d92ff31d922f6d38ea7b1bcd2e4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509985"
 ---
 # <a name="ldap-dialect"></a>Dialecto LDAP
 
-El dialecto LDAP es un formato para las instrucciones de consulta que usan la [Sintaxis de filtro de búsqueda LDAP](search-filter-syntax.md). Use una instrucción de consulta LDAP con las siguientes interfaces de búsqueda ADSI:
+El dialecto LDAP es un formato para las instrucciones de consulta que usan la sintaxis de filtro [de búsqueda LDAP](search-filter-syntax.md). Use una instrucción de consulta LDAP con las siguientes interfaces de búsqueda ADSI:
 
--   Interfaces de [objetos de datos ActiveX (ADO)](searching-with-activex-data-objects-ado.md) , que son interfaces de automatización que utilizan OLE DB.
--   [OLE DB](searching-with-ole-db.md), que es un conjunto de interfaces de C/C++ para la consulta de bases de datos.
+-   Las [ActiveX objeto de datos (ADO),](searching-with-activex-data-objects-ado.md) que son interfaces de Automation que usan OLE DB.
+-   [OLE DB](searching-with-ole-db.md), que es un conjunto de interfaces de C/C++ para consultar bases de datos.
 -   [**IDirectorySearch**](/windows/desktop/api/Iads/nn-iads-idirectorysearch), que es la interfaz de C/C++ para Active Directory.
 
 Una cadena de dialecto LDAP consta de cuatro partes separadas por punto y coma (;).
@@ -33,11 +33,11 @@ Una cadena de dialecto LDAP consta de cuatro partes separadas por punto y coma (
 
     
 
--   Filtros de búsqueda LDAP. Para obtener más información sobre los filtros de búsqueda, consulte [Sintaxis de filtro de búsqueda](search-filter-syntax.md).
--   Nombre LDAP para mostrar de los atributos que se van a recuperar. Varios atributos se separan mediante una coma.
--   Especifica el ámbito de la búsqueda. Los valores válidos son "base", "ONELEVEL" y "subárbol". El ámbito especificado en una cadena de consulta LDAP invalida cualquier ámbito de búsqueda especificado con la propiedad "SearchScope" del objeto de comando de ADO.
+-   Filtros de búsqueda LDAP. Para obtener más información sobre los filtros de búsqueda, vea [Sintaxis de filtro de búsqueda.](search-filter-syntax.md)
+-   Nombre para mostrar LDAP de los atributos que se recuperarán. Varios atributos están separados por una coma.
+-   Especifica el ámbito de la búsqueda. Los valores válidos son "base", "onelevel" y "subárbol". El ámbito especificado en una cadena de consulta LDAP invalida cualquier ámbito de búsqueda especificado con la propiedad "SearchScope" del objeto ADO Command.
 
-El siguiente es un ejemplo de código del dialecto LDAP en ADSI que busca en todos los objetos del subárbol.
+A continuación se muestra un ejemplo de código del dialecto LDAP en ADSI que busca en todos los objetos del subárbol.
 
 
 ```VB
@@ -46,7 +46,7 @@ El siguiente es un ejemplo de código del dialecto LDAP en ADSI que busca en tod
 
 
 
-No todas las opciones de búsqueda (por ejemplo, el tamaño de la página de búsqueda) se pueden expresar en el dialecto LDAP, por lo que debe establecer las opciones antes de que se inicie la ejecución real de la consulta.
+No todas las opciones de búsqueda (tamaño de página de búsqueda, por ejemplo) se pueden expresar en el dialecto LDAP, por lo que debe establecer las opciones antes de que se inicie la ejecución real de la consulta.
 
 ## <a name="example-code-for-performing-an-ldap-query"></a>Código de ejemplo para realizar una consulta LDAP
 
@@ -106,7 +106,7 @@ Debug.Print "No. of rows = ", rs.RecordCount
 
 
 
-Para obtener más información sobre la sintaxis de consulta, consulte [Sintaxis de filtro de búsqueda](search-filter-syntax.md).
+Para obtener más información sobre la sintaxis de consulta, vea [Sintaxis de filtro de búsqueda.](search-filter-syntax.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -115,21 +115,21 @@ Para obtener más información sobre la sintaxis de consulta, consulte [Sintaxis
 [Sintaxis de filtro de búsqueda](search-filter-syntax.md)
 </dt> <dt>
 
-[Dialecto SQL](sql-dialect.md)
+[SQL dialecto](sql-dialect.md)
 </dt> <dt>
 
-[Buscar con la interfaz IDirectorySearch](searching-with-idirectorysearch.md)
+[Búsqueda con la interfaz IDirectorySearch](searching-with-idirectorysearch.md)
 </dt> <dt>
 
-[Buscar con Objetos de datos ActiveX](searching-with-activex-data-objects-ado.md)
+[Buscar con objetos ActiveX datos](searching-with-activex-data-objects-ado.md)
 </dt> <dt>
 
-[Buscar con OLE DB](searching-with-ole-db.md)
+[Búsqueda con OLE DB](searching-with-ole-db.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

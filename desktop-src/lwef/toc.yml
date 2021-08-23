@@ -16,7 +16,7 @@
           href: web-view.md
         - name: Accesos directos a Internet de la aplicación
           href: internet-shortcuts.md
-        - name: Usar el objeto Active Desktop
+        - name: Usar el Active Desktop objeto
           href: active-desktop-interface.md
         - name: Crear controladores de columnas
           href: column-handlers.md
@@ -176,7 +176,7 @@
           href: introduction-to-microsoft-agent.md
         - name: Cambios de Microsoft Agent en Windows Vista
           href: microsoft-agent-changes-in-windows-vista.md
-        - name: El agente de Microsoft Interfaz de usuario
+        - name: Microsoft Agent Interfaz de usuario
           href: the-microsoft-agent-user-interface.md
           items:
             - name: Ventana De caracteres
@@ -254,7 +254,7 @@
                   items:
                     - name: Cargar un carácter
                       href: loading-a-character.md
-                    - name: Carga del carácter predeterminado
+                    - name: Cargar el carácter predeterminado
                       href: loading-the-default-character.md
                     - name: Animar un carácter
                       href: animating-a-character.md
@@ -458,7 +458,7 @@
                               href: helpfile-property.md
                             - name: Propiedad HelpModeOn
                               href: helpmodeon-property.md
-                            - name: Propiedad IdleOn
+                            - name: IdleOn( Propiedad)
                               href: idleon-property.md
                             - name: Propiedad LanguageID
                               href: languageid-property.md
@@ -482,7 +482,7 @@
                               href: srmodeid-property.md
                             - name: Propiedad SRStatus
                               href: srstatus-property.md
-                            - name: Propiedad Top
+                            - name: Top (Propiedad)
                               href: top-property.md
                             - name: Propiedad TTSModeID
                               href: ttsmodeid-property.md
@@ -543,7 +543,7 @@
                               href: caption-property.md
                             - name: Propiedad De confianza
                               href: confidence-property.md
-                            - name: Propiedad ConfidenceText
+                            - name: ConfidenceText (propiedad)
                               href: confidencetext-property.md
                             - name: Propiedad Enabled
                               href: enabled-property-co.md
@@ -555,7 +555,7 @@
                               href: voice-property-c.md
                             - name: Propiedad VoiceCaption
                               href: voicecaption-property-c.md
-                    - name: El objeto Globo
+                    - name: El objeto Balloon
                       href: the-balloon-object.md
                       items:
                         - name: Propiedad BackColor
@@ -578,7 +578,7 @@
                           href: fontsize-property-bal.md
                         - name: Propiedad FontStrikeThru
                           href: fontstrikethru-property.md
-                        - name: FontUnderline (propiedad)
+                        - name: Propiedad FontUnderline
                           href: fontunderline-property.md
                         - name: Propiedad ForeColor
                           href: forecolor-property.md
@@ -609,7 +609,7 @@
                               href: enabled-property-sio.md
                             - name: Propiedad HotKey
                               href: hotkey-property.md
-                            - name: Propiedad ListeningTip
+                            - name: ListeningTip(Propiedad)
                               href: listeningtip-property.md
                     - name: El objeto CommandsWindow
                       href: the-commandswindow-object.md
@@ -621,7 +621,7 @@
                               href: height-property-cwo.md
                             - name: Left (Propiedad)
                               href: left-property-cwo.md
-                            - name: Propiedad Top
+                            - name: Top (Propiedad)
                               href: top-property-cwo.md
                             - name: Propiedad Visible
                               href: visible-property-cwo.md
@@ -636,7 +636,7 @@
                           href: left-property-pso.md
                         - name: Propiedad Page
                           href: page-property.md
-                        - name: Propiedad Top
+                        - name: Top (Propiedad)
                           href: top-property-pso.md
                         - name: Propiedad Visible
                           href: visible-property.md
@@ -645,7 +645,7 @@
             - name: Programación de la interfaz del servidor de Microsoft Agent
               href: programming-the-microsoft-agent-server-interface.md
               items:
-                - name: Adición de la funcionalidad de Microsoft Agent a la aplicación
+                - name: Agregar funcionalidad de Microsoft Agent a la aplicación
                   href: adding-microsoft-agent-functionality-to-your-application.md
                 - name: Cargar datos de caracteres y animaciones
                   href: loading-character-and-animation-data.md
@@ -676,7 +676,7 @@
                       items:
                         - name: 'IAgentAudioOutputProperties::GetEnabled'
                           href: iagentaudiooutputproperties--getenabled.md
-                        - name: 'IAgentAudioOutputProperties::GetUsingSoundEffects'
+                        - name: 'IAgentAudioOutputProperties::GetUsing SoundEffects'
                           href: iagentaudiooutputproperties--getusingsoundeffects.md
                     - name: IAgentAudioOutputPropertiesEx
                       href: iagentaudiooutputpropertiesex.md
@@ -754,7 +754,7 @@
                           href: iagentcharacter--getposition.md
                         - name: 'IAgentCharacter::GetSize'
                           href: iagentcharacter--getsize.md
-                        - name: 'IAgentCharacter::GetSoundEffectsOn'
+                        - name: 'IAgentCharacter::GetEffectsOn'
                           href: iagentcharacter--getsoundeffectson.md
                         - name: 'IAgentCharacter::GetTTSPitch'
                           href: iagentcharacter--getttspitch.md
@@ -786,7 +786,7 @@
                           href: iagentcharacter--setposition.md
                         - name: 'IAgentCharacter::SetSize'
                           href: iagentcharacter--setsize.md
-                        - name: 'IAgentCharacter::SetSoundEffectsOn'
+                        - name: 'IAgentCharacter::SetEffectsOn'
                           href: iagentcharacter--setsoundeffectson.md
                         - name: 'IAgentCharacter::Show'
                           href: iagentcharacter--show.md
@@ -1096,7 +1096,7 @@
                       href: ittsattributesw.md
                 - name: Requisitos de los motores de reconocimiento de voz
                   href: requirements-for-speech-recognition-engines.md
-                - name: Requisitos para admitir la herramienta de edición de sonidos de información lingüística de Microsoft
+                - name: Requisitos para admitir la herramienta de edición de sonido de información lingüística de Microsoft
                   href: requirements-for-supporting-the-microsoft-linguistic-information-sound-editing-tool.md
                   items:
                     - name: ISRResGraphEx e IAttributes
@@ -1139,7 +1139,7 @@
                   href: the-office-animation-set.md
                 - name: Instalación del carácter
                   href: installing-your-character.md
-        - name: Uso de la herramienta de edición de sonidos de información lingüística de Microsoft
+        - name: Uso de la herramienta de edición de sonido de información lingüística de Microsoft
           href: using-the-microsoft-linguistic-information-sound-editing-tool.md
           items:
             - name: Instalación del Editor de sonido
@@ -1208,7 +1208,7 @@
                   href: '-search-2x-wds-ph-ui-extensions.md'
                 - name: Notificación al índice de cambios
                   href: '-search-2x-wds-notifyingofchanges.md'
-                - name: Código de ejemplo de controlador Interfaz de usuario personalizado
+                - name: Controlador de protocolo personalizado Interfaz de usuario código de ejemplo
                   href: '-search-2x-wds-ph-ui-samplecode.md'
                 - name: Instalación y registro de controladores de protocolo
                   href: '-search-2x-wds-ph-install-registration.md'

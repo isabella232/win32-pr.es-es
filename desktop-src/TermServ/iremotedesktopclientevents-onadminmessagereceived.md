@@ -1,12 +1,12 @@
 ---
-title: IRemoteDesktopClientEvents OnAdminMessageReceived, método
+title: Método IRemoteDesktopClientEvents OnAdminMessageReceived
 description: Se llama cuando el control de cliente recibe un mensaje administrativo.
 ms.assetid: CD580207-CEC1-493B-989E-7C1D4FA71228
 ms.tgt_platform: multiple
 keywords:
 - Método OnAdminMessageReceived Servicios de Escritorio remoto
-- Método OnAdminMessageReceived Servicios de Escritorio remoto, interfaz IRemoteDesktopClientEvents
-- Interfaz IRemoteDesktopClientEvents Servicios de Escritorio remoto, método OnAdminMessageReceived
+- Método OnAdminMessageReceived Servicios de Escritorio remoto , interfaz IRemoteDesktopClientEvents
+- Interfaz IRemoteDesktopClientEvents Servicios de Escritorio remoto método , OnAdminMessageReceived
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 201dd3111dbac0b6395654ef8dfad21318419de3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b6c50b4b3f26564cc93f1e41653e856f2984559234de92dd2ed2ab02bee20cd6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422472"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119511895"
 ---
-# <a name="iremotedesktopclienteventsonadminmessagereceived-method"></a>IRemoteDesktopClientEvents:: OnAdminMessageReceived (método)
+# <a name="iremotedesktopclienteventsonadminmessagereceived-method"></a>IRemoteDesktopClientEvents::OnAdminMessageReceived (método)
 
 Se llama cuando el control de cliente recibe un mensaje administrativo.
 
@@ -43,7 +43,7 @@ void OnAdminMessageReceived(
 
 <dl> <dt>
 
-*adminMessage* \[ de\]
+*adminMessage* \[ En\]
 </dt> <dd>
 
 Mensaje.

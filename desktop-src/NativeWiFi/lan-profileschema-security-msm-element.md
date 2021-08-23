@@ -1,5 +1,5 @@
 ---
-description: Contiene la configuración de seguridad para redes cableadas.
+description: Contiene la configuración de seguridad de las redes cableadas.
 ms.assetid: 08470cf4-3722-4cb9-9877-13eca2f7d04e
 title: Elemento Security (MSM) (LAN_policy)
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 2bd052679f207cd0778f212a73663d4dfd8ce165
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 8f66021f61536e8c8f09663e9ec2513b11d1ec87829f5c100b48cbf15d98cdd2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "105678857"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119685065"
 ---
 # <a name="security-msm-element-lan_policy"></a>Elemento Security (MSM) (LAN_policy)
 
-El elemento de seguridad (MSM) contiene la configuración de seguridad de las redes cableadas. Este elemento es opcional.
+El elemento de seguridad (MSM) contiene la configuración de seguridad para redes cableadas. Este elemento es opcional.
 
 ``` syntax
 <xs:element name="security">
@@ -44,7 +44,7 @@ El elemento de seguridad (MSM) contiene la configuración de seguridad de las re
 </xs:element>
 ```
 
-El elemento de **seguridad** se define mediante el elemento [**MSM**](lan-profileschema-msm-lanprofile-element.md) .
+El **elemento** de seguridad se define mediante el [**elemento MSM.**](lan-profileschema-msm-lanprofile-element.md)
 
 ## <a name="child-elements"></a>Elementos secundarios
 
@@ -52,8 +52,8 @@ El elemento de **seguridad** se define mediante el elemento [**MSM**](lan-profil
 
 | Elemento                                                                 | Tipo    | Descripción                                                                                                                              |
 |-------------------------------------------------------------------------|---------|------------------------------------------------------------------------------------------------------------------------------------------|
-| [**OneXEnabled**](lan-profileschema-onexenabled-security-element.md)   | boolean | Especifica si el servicio de configuración automática de redes cableadas intentará la autenticación del puerto mediante 802.1 X. <br/>      |
-| [**OneXEnforced**](lan-profileschema-onexenforced-security-element.md) | boolean | Especifica si el servicio de configuración automática para redes cableadas requiere el uso de 802.1 X para la autenticación de puertos. <br/> |
+| [**OneXEnabled**](lan-profileschema-onexenabled-security-element.md)   | boolean | Especifica si el servicio de configuración automática para redes cableadas intentará la autenticación de puerto mediante 802.1X. <br/>      |
+| [**OneXEnforced**](lan-profileschema-onexenforced-security-element.md) | boolean | Especifica si el servicio de configuración automática para redes cableadas requiere el uso de 802.1X para la autenticación de puertos. <br/> |
 
 
 
@@ -61,10 +61,10 @@ El elemento de **seguridad** se define mediante el elemento [**MSM**](lan-profil
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -75,7 +75,7 @@ El elemento de **seguridad** se define mediante el elemento [**MSM**](lan-profil
 **Contexto de definición del elemento en el esquema**
 </dt> <dt>
 
-[**MSM**](lan-profileschema-msm-lanprofile-element.md)
+[**Msm**](lan-profileschema-msm-lanprofile-element.md)
 </dt> <dt>
 
 **Posible elemento primario inmediato en la instancia de esquema**

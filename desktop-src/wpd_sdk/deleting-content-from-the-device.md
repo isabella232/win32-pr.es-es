@@ -4,31 +4,31 @@ ms.assetid: 195f68d5-f139-456e-b000-86c91732a292
 title: Eliminación de contenido del dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b1c7b8d266517933caaf770236e96110a3ef334c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d22400c5812c4996fe38836c1f05e264c9bff66ada5124969139c0f8f037b6b5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705527"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119657935"
 ---
 # <a name="deleting-content-from-the-device"></a>Eliminación de contenido del dispositivo
 
-Otra operación común que realiza una aplicación WPD es la eliminación del contenido de una ubicación en el dispositivo.
+Otra operación común que realiza una aplicación WPD es la eliminación de contenido de una ubicación en el dispositivo.
 
-Las operaciones de eliminación de contenido se realizan mediante las interfaces descritas en la tabla siguiente.
+Las operaciones de eliminación de contenido se logran mediante las interfaces descritas en la tabla siguiente.
 
 
 
 | Interfaz                                                                                      | Descripción                                      |
 |------------------------------------------------------------------------------------------------|--------------------------------------------------|
-| [**Interfaz IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)                             | Proporciona acceso a los métodos de eliminación de contenido. |
-| [**Interfaz IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) | Proporciona acceso a los métodos específicos de la propiedad.    |
+| [**IPortableDeviceContent (interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)                             | Proporciona acceso a los métodos de eliminación de contenido. |
+| [**IPortableDevicePropVariantCollection (Interfaz)**](iportabledevicepropvariantcollection.md) | Proporciona acceso a métodos específicos de la propiedad.    |
 
 
 
  
 
-La función DeleteContentFromDevice del módulo ContentTransfer. cpp de la aplicación de ejemplo muestra cómo una aplicación puede eliminar contenido en el dispositivo. Las operaciones de eliminación de contenido son muy similares a las operaciones de transferencia de contenido. La diferencia es que, durante una eliminación, la aplicación llama a [**IPortableDeviceContent::D iminar**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecontent-delete) en lugar de [**IPortableDeviceContent:: Move**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecontent-move). (Consulte el tema [mover contenido en el dispositivo](moving-content-on-the-device.md) para obtener una descripción de las tareas que conducen a llamar al método Delete).
+La función DeleteContentFromDevice del módulo ContentTransfer.cpp de la aplicación de ejemplo muestra cómo una aplicación podría eliminar contenido en el dispositivo. Las operaciones de eliminación de contenido son muy similares a las operaciones de transferencia de contenido. La única diferencia es que, durante una eliminación, la aplicación llama a [**IPortableDeviceContent::D elete**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecontent-delete) en lugar de [**IPortableDeviceContent::Move**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecontent-move). (Consulte el [tema Mover contenido en el dispositivo para](moving-content-on-the-device.md) obtener una descripción de las tareas que conducen a llamar al método Delete).
 
 
 ```C++
@@ -155,13 +155,13 @@ void DeleteContentFromDevice(
 
 <dl> <dt>
 
-[**Interfaz IPortableDevice**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)
+[**IPortableDevice (interfaz)**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)
 </dt> <dt>
 
-[**Interfaz IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)
+[**IPortableDeviceContent (interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)
 </dt> <dt>
 
-[**Interfaz IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md)
+[**IPortableDevicePropVariantCollection (Interfaz)**](iportabledevicepropvariantcollection.md)
 </dt> <dt>
 
 [**Guía de programación**](programming-guide.md)

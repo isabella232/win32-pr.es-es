@@ -1,9 +1,9 @@
 ---
 title: DRM_LicenseState_Copy
-description: La \_ propiedad de copia LicenseState de DRM \_ contiene una \_ estructura de datos de estado de la licencia de WM \_ \_ que contiene detalles sobre cómo se ha aplicado este derecho al contenido.
+description: La propiedad LicenseState Copy de DRM contiene una estructura WM LICENSE STATE DATA que contiene detalles sobre cómo se ha aplicado este derecho \_ \_ al \_ \_ \_ contenido.
 ms.assetid: 97a79e35-6533-4781-b368-ffe8d81956ec
 keywords:
-- DRM_LicenseState_Copy formato de Windows Media
+- DRM_LicenseState_Copy windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -12,28 +12,28 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 02ae90fecba85bf1b2fc0985fa89ea8417171204
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 245c200651e191d79bd2d33ef469487b26d490549bdef85db92c0f6c58b10caa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104078151"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119658855"
 ---
-# <a name="drm_licensestate_copy"></a>\_Copia de LicenseState de DRM \_
+# <a name="drm_licensestate_copy"></a>Copia \_ de LicenseState de DRM \_
 
-La propiedad de **\_ \_ copia LicenseState de DRM** contiene una estructura de [**\_ \_ \_ datos de estado**](/previous-versions/windows/desktop/legacy/dd757942(v=vs.85)) de la licencia de WM que contiene detalles sobre cómo se ha aplicado este derecho al contenido.
+La **propiedad \_ LicenseState Copy \_ de DRM** contiene una estructura WM LICENSE STATE [**\_ \_ \_ DATA**](/previous-versions/windows/desktop/legacy/dd757942(v=vs.85)) que contiene detalles sobre cómo se ha aplicado este derecho al contenido.
 
 ## <a name="global-constant"></a>Constante global
 
-g \_ wszWMDRM \_ LicenseState \_
+g \_ wszWMDRM \_ LicenseState \_ Copy
 
 ## <a name="data-type"></a>Tipo de datos
 
-**tipo de WMT \_ \_ binario**
+**BINARIO DE \_ TIPO \_ WMT**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se trata de una propiedad de solo lectura que se recupera mediante [**IWMDRMReader:: GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-getdrmproperty).
+Se trata de una propiedad de solo lectura que se recupera mediante [**IWMDRMReader::GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-getdrmproperty).
 
 ## <a name="see-also"></a>Vea también
 
@@ -42,6 +42,6 @@ Se trata de una propiedad de solo lectura que se recupera mediante [**IWMDRMRead
 [**Propiedades de DRM**](drm-properties.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

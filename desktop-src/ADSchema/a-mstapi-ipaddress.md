@@ -1,11 +1,11 @@
 ---
-title: atributo MS-TAPI-IP-address
-description: Direcciones IP de un equipo cliente TAPI en el que un usuario ha iniciado sesión. Este atributo se puede utilizar como atributo genérico para almacenar las direcciones IP del equipo.
+title: Atributo ms-TAPI-Ip-Address
+description: Direcciones IP de un equipo cliente TAPI en el que un usuario ha iniciado sesión. Este atributo se puede usar como atributo genérico para contener direcciones IP del equipo.
 ms.assetid: 4ea850ad-d54a-4b5f-a37d-68817432d874
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-TAPI-IP-address
-- msTAPI-IpAddress Attribute AD Schema
+- Esquema de AD del atributo ms-TAPI-Ip-Address
+- Esquema de AD del atributo msTAPI-IpAddress
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 078afde8200468df7e996e096deeef4bfd1b7ec0
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 633c941320c0e2a43e9328b409338c5d87e0086249f2ee18948bb6db7ad79c25
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997407"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119508524"
 ---
-# <a name="ms-tapi-ip-address-attribute"></a>atributo MS-TAPI-IP-address
+# <a name="ms-tapi-ip-address-attribute"></a>Atributo ms-TAPI-Ip-Address
 
-Direcciones IP de un equipo cliente TAPI en el que un usuario ha iniciado sesión. Este atributo se puede utilizar como atributo genérico para almacenar las direcciones IP del equipo.
+Direcciones IP de un equipo cliente TAPI en el que un usuario ha iniciado sesión. Este atributo se puede usar como atributo genérico para contener direcciones IP del equipo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|------------------------------------------------------------|
-| CN                | Dirección IP de MS-TAPI                                         |
-| Nombre para mostrar de LDAP | msTAPI-IpAddress                                           |
-| Tamaño              | Cada dirección IP se almacena como una cadena en una notación. B. C. D. |
-| Actualizar privilegio  | No se requieren privilegios especiales.                            |
-| Frecuencia de actualización  | Normalmente es muy baja.                                        |
+| CN                | ms-TAPI-Ip-Address                                         |
+| Ldap-Display-Name | msTAPI-IpAddress                                           |
+| Size              | Cada dirección IP se almacena como una cadena en la notación A.B.C.D. |
+| Actualizar privilegios  | No se requieren privilegios especiales.                            |
+| Frecuencia de actualización  | Normalmente es muy bajo.                                        |
 | Attribute-Id      | 1.2.840.113556.1.4.1701                                    |
-| System-ID-GUID    | efd7d7f7-178e-4767-87fa-f8a16b840544                       |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                |
+| System-Id-Guid    | efd7d7f7-178e-4767-87fa-f8a16b840544                       |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                |
 
 
 
@@ -54,18 +54,18 @@ Direcciones IP de un equipo cliente TAPI en el que un usuario ha iniciado sesió
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Tiene un único valor       | False                                                     |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Falso                                                     |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Clases usadas en        | [**MS-TAPI-RT-persona**](c-mstapi-rtperson.md)<br/> |
+| Clases usadas en        | [**ms-TAPI-Rt-Person**](c-mstapi-rtperson.md)<br/> |
 
 
 
@@ -75,18 +75,18 @@ Direcciones IP de un equipo cliente TAPI en el que un usuario ha iniciado sesió
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Tiene un único valor       | False                                                     |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Falso                                                     |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Clases usadas en        | [**MS-TAPI-RT-persona**](c-mstapi-rtperson.md)<br/> |
+| Clases usadas en        | [**ms-TAPI-Rt-Person**](c-mstapi-rtperson.md)<br/> |
 
 
 
@@ -96,18 +96,18 @@ Direcciones IP de un equipo cliente TAPI en el que un usuario ha iniciado sesió
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Tiene un único valor       | False                                                     |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Falso                                                     |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Clases usadas en        | [**MS-TAPI-RT-persona**](c-mstapi-rtperson.md)<br/> |
+| Clases usadas en        | [**ms-TAPI-Rt-Person**](c-mstapi-rtperson.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ Direcciones IP de un equipo cliente TAPI en el que un usuario ha iniciado sesió
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Tiene un único valor       | False                                                     |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Falso                                                     |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Clases usadas en        | [**MS-TAPI-RT-persona**](c-mstapi-rtperson.md)<br/> |
+| Clases usadas en        | [**ms-TAPI-Rt-Person**](c-mstapi-rtperson.md)<br/> |
 
 
 
@@ -138,18 +138,18 @@ Direcciones IP de un equipo cliente TAPI en el que un usuario ha iniciado sesió
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Tiene un único valor       | False                                                     |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Falso                                                     |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Clases usadas en        | [**MS-TAPI-RT-persona**](c-mstapi-rtperson.md)<br/> |
+| Clases usadas en        | [**ms-TAPI-Rt-Person**](c-mstapi-rtperson.md)<br/> |
 
 
 

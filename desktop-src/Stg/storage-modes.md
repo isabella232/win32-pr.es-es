@@ -1,26 +1,26 @@
 ---
-title: Modos de almacenamiento
-description: El almacenamiento asincrónico admite dos modos de almacenamiento que bloquean y no bloquean, que un cliente (ya sea un explorador o el propio objeto) puede especificar devolviendo BINDF \_ ASYNCSTORAGE desde la llamada del moniker a IBindStatusCallback GetBindInfo.
+title: Storage Modos
+description: El almacenamiento asincrónico admite dos modos de bloqueo y no bloqueo de almacenamiento, que un cliente (ya sea un explorador o el propio objeto) puede especificar devolviendo BINDF ASYNCSTORAGE desde la llamada del \_ moniker a IBindStatusCallback GetBindInfo.
 ms.assetid: df8f9e2c-40d2-4997-b5f9-bdbc524437cf
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 827e893f5077a64485251111837e6b56657756f0
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: db1a0a4c08daa1663f7513226dc25f4d5c8fd26341a6c8ee7d90a2ec0d1099db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104421131"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119661837"
 ---
-# <a name="storage-modes"></a>Modos de almacenamiento
+# <a name="storage-modes"></a>Storage Modos
 
-El almacenamiento asincrónico admite dos modos de almacenamiento: bloqueo y desbloqueo, que un cliente (ya sea un explorador o el propio objeto) puede especificar devolviendo BINDF \_ ASYNCSTORAGE desde la llamada del moniker a [**IBindStatusCallback:: GetBindInfo**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775058(v=vs.85)). Si un cliente especifica BINDF \_ ASYNCSTORAGE, recibe un puntero a un almacenamiento asincrónico sin bloqueos. De lo contrario, recibe un puntero a un almacenamiento asincrónico de bloqueo. Aunque el cliente no solicite una operación de enlace asincrónica (al no registrar [**IBindStatusCallback**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775060(v=vs.85)) con el contexto de enlace), el moniker sigue devolverá un almacenamiento asincrónico de bloqueo, lo que permite la carga progresiva de las aplicaciones heredadas.
+El almacenamiento asincrónico admite dos modos de almacenamiento: bloqueo y no bloqueo, que un cliente (ya sea un explorador o el propio objeto) puede especificar devolviendo BINDF ASYNCSTORAGE desde la llamada del \_ moniker a [**IBindStatusCallback::GetBindInfo**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775058(v=vs.85)). Si un cliente especifica BINDF \_ ASYNCSTORAGE, recibe un puntero a un almacenamiento asincrónico sin bloqueo. De lo contrario, recibe un puntero a un almacenamiento asincrónico de bloqueo. Incluso si el cliente no solicita una operación de enlace asincrónica (al no registrar [**IBindStatusCallback**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775060(v=vs.85)) con el contexto de enlace), el moniker sigue devuelve un almacenamiento asincrónico de bloqueo, lo que habilita la carga progresiva para las aplicaciones heredadas.
 
-En el modo de no bloqueo, un almacenamiento asincrónico devuelve E \_ pendiente cuando los datos no están disponibles. Al recibir este mensaje, el cliente espera la notificación de que hay datos adicionales disponibles antes de intentar descargarlo de nuevo.
+En el modo de no bloqueo, un almacenamiento asincrónico devuelve E \_ PENDING cuando los datos no están disponibles. Al recibir este mensaje, el cliente espera la notificación de que hay datos adicionales disponibles antes de intentar descargarlos de nuevo.
 
-En el modo de bloqueo, en lugar de devolver E \_ pendiente, el almacenamiento asincrónico bloquea la llamada hasta que los nuevos datos estén disponibles y, a continuación, desbloquea la llamada y devuelve los nuevos datos. El cliente debe estar listo para recibir los datos. Mientras se bloquea el subproceso, los datos que ya se han pasado al cliente están totalmente disponibles para el usuario.
+En modo de bloqueo, en lugar de devolver E PENDING, el almacenamiento asincrónico bloquea la llamada hasta que haya nuevos datos disponibles y, a continuación, desbloquea la llamada y \_ devuelve los nuevos datos. El cliente debe estar listo para recibir los datos. Mientras el subproceso está bloqueado, los datos que ya se han pasado al cliente están totalmente disponibles para el usuario.
 
-El modo de bloqueo es necesario porque los clientes que no reconocen el almacenamiento asincrónico no reconocerán E \_ pendientes y asumirán que se ha producido un error irrecuperable. El bloqueo del almacenamiento asincrónico permite que los clientes existentes realicen una representación progresiva.
+El modo de bloqueo es necesario porque los clientes que no son conscientes del almacenamiento asincrónico no reconocerán E PENDING y asumirán que se ha producido \_ un error irrecuperable. El bloqueo del almacenamiento asincrónico permite a los clientes existentes realizar una representación progresiva.
 
- 
+ 
 
- 
+ 

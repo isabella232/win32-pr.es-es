@@ -1,9 +1,9 @@
 ---
-title: función glFinish (GL. h)
-description: La función glFinish se bloquea hasta que se completa la ejecución de OpenGL.
+title: Función glFinish (Gl.h)
+description: La función glFinish se bloquea hasta que se completa toda la ejecución de OpenGL.
 ms.assetid: 1dcb4767-02ea-41d8-bf1f-d61d20873d4f
 keywords:
-- glFinish (función) OpenGL
+- Función glFinish OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4731ffc91dbb8d31137a792b59d3ebc36bb4d5d4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d99d4cb185beb09cb882667b80dbd06a25546fb9209da38a775cefa887443617
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535517"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119580185"
 ---
-# <a name="glfinish-function"></a>glFinish función)
+# <a name="glfinish-function"></a>función glFinish
 
-La función **glFinish** se bloquea hasta que se completa la ejecución de OpenGL.
+La **función glFinish se** bloquea hasta que se completa toda la ejecución de OpenGL.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,32 +44,32 @@ Esta función no devuelve ningún valor.
 
 ## <a name="error-codes"></a>Códigos de error
 
-La función [**glGetError**](glgeterror.md) puede recuperar el siguiente código de error.
+La función [**glGetError**](glgeterror.md) puede recuperar el código de error siguiente.
 
 
 
 | Nombre                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **glFinish** no devuelve ningún resultado hasta que se completen los efectos de todas las funciones OpenGL llamadas previamente. Estos efectos incluyen todos los cambios en el estado de OpenGL, todos los cambios en el estado de conexión y todos los cambios realizados en el contenido de fotogramas.
+La **función glFinish** no se devuelve hasta que se completan los efectos de todas las funciones de OpenGL llamadas anteriormente. Estos efectos incluyen todos los cambios en el estado OpenGL, todos los cambios en el estado de conexión y todos los cambios en el contenido del búfer de fotogramas.
 
-La función **glFinish** requiere un recorrido de ida y vuelta al servidor.
+La **función glFinish** requiere un recorrido de ida y vuelta al servidor.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

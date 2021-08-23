@@ -1,6 +1,6 @@
 ---
-description: 'Permite que el objeto de devolución de llamada especifique una cadena de texto de ayuda para los elementos de menú o los botones de la barra de herramientas. Usado por IShellFolderViewCB:: MessageSFVCB.'
-title: Mensaje de SFVM_GETHELPTEXT (ShlObj. h)
+description: Permite que el objeto de devolución de llamada especifique una cadena de texto de ayuda para los elementos de menú o los botones de la barra de herramientas. Usado por IShellFolderViewCB::MessageSFVCB.
+title: SFVM_GETHELPTEXT mensaje (Shlobj.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 9bd6d632-308c-4ba5-8ac6-2d0f65853947
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 5b33bd99c2dd1e6d1013da9015a5ff70bc111c79
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c015c1999cbd60174da1994d92766b4f334630294767ee390be21340aef97cc3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103815478"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119661025"
 ---
-# <a name="sfvm_gethelptext-message"></a>SFVM \_ GETHELPTEXT
+# <a name="sfvm_gethelptext-message"></a>Mensaje \_ GETHELPTEXT de SFVM
 
-Permite que el objeto de devolución de llamada especifique una cadena de texto de ayuda para los elementos de menú o los botones de la barra de herramientas. Usado por [**IShellFolderViewCB:: MessageSFVCB**](/windows/win32/api/shlobj_core/nf-shlobj_core-ishellfolderviewcb-messagesfvcb).
+Permite que el objeto de devolución de llamada especifique una cadena de texto de ayuda para los elementos de menú o los botones de la barra de herramientas. Usado por [**IShellFolderViewCB::MessageSFVCB**](/windows/win32/api/shlobj_core/nf-shlobj_core-ishellfolderviewcb-messagesfvcb).
 
 
 ```C++
@@ -41,17 +41,17 @@ SFVM_GETHELPTEXT
 
 <dl> <dt>
 
-*idCmd \_ cchMax* \[\]
+*idCmd \_ cchMax* \[ en\]
 </dt> <dd>
 
-La palabra de orden inferior de este parámetro contiene el identificador de comando. La palabra de orden superior contiene el número de caracteres en el búfer de *miembros pszText* .
+La palabra de orden bajo de este parámetro contiene el identificador del comando. La palabra de orden superior contiene el número de caracteres del búfer *pszText.*
 
 </dd> <dt>
 
-*miembros pszText* \[ enuncia\]
+*pszText* \[ out\]
 </dt> <dd>
 
-Una cadena terminada en null que contiene el texto de ayuda.
+Cadena terminada en NULL que contiene el texto de ayuda.
 
 </dd> </dl>
 
@@ -59,11 +59,11 @@ Una cadena terminada en null que contiene el texto de ayuda.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>ShlObj. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shlobj.h</dt> </dl> |
 
 
 

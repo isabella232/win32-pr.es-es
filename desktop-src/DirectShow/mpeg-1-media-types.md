@@ -4,12 +4,12 @@ ms.assetid: 4ea1cb84-0558-4c4a-9483-1b0f2a8f76f8
 title: Tipos de medios MPEG-1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e44db1f4423365efb7814d61b35c1985142aa14
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 64f6486b455fc2045ceb0256f6b6344f06a8923ef767c397068022acec052627
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107910033"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119684935"
 ---
 # <a name="mpeg-1-media-types"></a>Tipos de medios MPEG-1
 
@@ -19,7 +19,7 @@ En esta sección se enumeran los tipos de medios usados para los datos MPEG-1.
 
 
 
-| Etiqueta | Value |
+| Etiqueta | Valor |
 |-----------------------|-------------------------------------------------|
 | Tipo principal            | Secuencia \_ MEDIATYPE                               |
 | Subtype               | MEDIASUBTYPE \_ MPEG1System                       |
@@ -40,7 +40,7 @@ En esta sección se enumeran los tipos de medios usados para los datos MPEG-1.
 | Tipo principal            | Secuencia \_ MEDIATYPE          |
 | Subtype               | MEDIASUBTYPE \_ MPEG1VideoCD |
 | Tipo de formato           | GUID \_ NULL                 |
-| Estructura de formato      | None                       |
+| Estructura de formato      | Ninguno                       |
 | Contenido de ejemplo multimedia | Secuencia de bytes; sin alineación. |
 
 
@@ -73,7 +73,7 @@ En esta sección se enumeran los tipos de medios usados para los datos MPEG-1.
 | Subtype               | MEDIASUBTYPE \_ MPEG1Payload                 |
 | Tipo de formato           | FORMAT \_ WaveFormatEx                       |
 | Estructura de formato      | [**MPEG1WAVEFORMAT**](/windows/desktop/api/mmreg/ns-mmreg-mpeg1waveformat) |
-| Contenido de ejemplo multimedia | Datos de audio MPEG-1 alineados en bytes.            |
+| Contenido de ejemplo multimedia | Datos de audio MPEG-1 alineados con bytes.            |
 
 
 
@@ -83,9 +83,9 @@ En esta sección se enumeran los tipos de medios usados para los datos MPEG-1.
 
 
 
-| Etiqueta | Value |
+| Etiqueta | Valor |
 |-----------------------|------------------------------------------------|
-| Tipo principal            | Vídeo \_ DE MEDIATYPE                               |
+| Tipo principal            | Vídeo \_ MEDIATYPE                               |
 | Subtype               | MEDIASUBTYPE \_ MPEG1Packet                      |
 | Tipo de formato           | FORMAT \_ MPEGVideo                              |
 | Estructura de formato      | [**MPEG1VIDEOINFO**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-mpeg1videoinfo)       |
@@ -99,13 +99,13 @@ En esta sección se enumeran los tipos de medios usados para los datos MPEG-1.
 
 
 
-| Etiqueta | Value |
+| Etiqueta | Valor |
 |-----------------------|------------------------------------------|
-| Tipo principal            | Vídeo \_ DE MEDIATYPE                         |
+| Tipo principal            | Vídeo \_ MEDIATYPE                         |
 | Subtype               | MEDIASUBTYPE \_ MPEG1Payload               |
 | Tipo de formato           | FORMAT \_ MPEGVideo                        |
 | Estructura de formato      | [**MPEG1VIDEOINFO**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-mpeg1videoinfo) |
-| Contenido de ejemplo multimedia | Datos de vídeo MPEG-1 alineados con bytes.          |
+| Contenido de ejemplo multimedia | Datos de vídeo MPEG-1 alineados en bytes.          |
 
 
 
@@ -115,12 +115,12 @@ En esta sección se enumeran los tipos de medios usados para los datos MPEG-1.
 
 
 
-| Etiqueta | Value |
+| Etiqueta | Valor |
 |-----------------------|------------------------------------------------|
 | Tipo principal            | Secuencia \_ MEDIATYPE                              |
 | Subtype               | MEDIASUBTYPE \_ MPEG1Video                      |
 | Tipo de formato           | GUID \_ NULL                                     |
-| Estructura de formato      | None                                           |
+| Estructura de formato      | Ninguno                                           |
 | Contenido de ejemplo multimedia | Matriz de bytes de secuencia de vídeo (sin capa del sistema). |
 
 
@@ -136,7 +136,7 @@ En esta sección se enumeran los tipos de medios usados para los datos MPEG-1.
 | Tipo principal            | Secuencia \_ MEDIATYPE                              |
 | Subtype               | MEDIASUBTYPE \_ MPEG1Audio                      |
 | Tipo de formato           | GUID \_ NULL                                     |
-| Estructura de formato      | None                                           |
+| Estructura de formato      | Ninguno                                           |
 | Contenido de ejemplo multimedia | Matriz de bytes de secuencia de audio (sin capa del sistema). |
 
 
@@ -145,26 +145,26 @@ En esta sección se enumeran los tipos de medios usados para los datos MPEG-1.
 
 ## <a name="remarks"></a>Comentarios
 
-Los filtros MPEG-1 de DirectShow admiten estos tipos como se muestra a continuación.
+Los DirectShow MPEG-1 admiten estos tipos como se muestra a continuación.
 
 
 
-| Filtrar               | Dirección | Tipos de medios admitidos                                                                                             |
+| Filter               | Dirección | Tipos de medios admitidos                                                                                             |
 |----------------------|-----------|-------------------------------------------------------------------------------------------------------------------|
-| Divisor MPEG-1      | Entrada     | Secuencia del sistema MPEG-1MPEG-1 desde CD de vídeo (VCD)<br/>                                                 |
-| Divisor MPEG-1      | Resultados    | Carga de audio MPEG-1 Paquete de audioMPEG-1<br/> Paquete de vídeo MPEG-1<br/> Carga de vídeo MPEG-1<br/> |
-| Códec de audio de software | Entrada     | Carga de audio MPEG-1 Paquete de audioMPEG-1<br/>                                                                |
-| Códec de vídeo de software | Entrada     | Carga de vídeo MPEG-1 Paquete de vídeoMPEG-1<br/>                                                                |
-| Códec de audio de software | Resultados    | Audio de PCM                                                                                                         |
-| Códec de vídeo de software | Resultados    | Vídeo sin comprimir (Y41P, YUY2, UYVY, RGB-24, RGB-32, RGB-565, RGB-555, RGB-8)                                    |
+| Divisor MPEG-1      | Entrada     | Flujo del sistema MPEG-1 StreamMPEG-1 del sistema desde CD de vídeo (VCD)<br/>                                                 |
+| Divisor MPEG-1      | Salida    | Paquete de audio MPEG-1Mpeg-1 Carga de audio<br/> Paquete de vídeo MPEG-1<br/> Carga de vídeo MPEG-1<br/> |
+| Códec de audio de software | Entrada     | Paquete de audio MPEG-1Mpeg-1 Carga de audio<br/>                                                                |
+| Códec de vídeo de software | Entrada     | Carga de vídeo MPEG-1 Video packetMPEG-1<br/>                                                                |
+| Códec de audio de software | Salida    | Audio de PCM                                                                                                         |
+| Códec de vídeo de software | Salida    | Vídeo sin comprimir (Y41P, YUY2, UYVY, RGB-24, RGB-32, RGB-565, RGB-555, RGB-8)                                    |
 
 
 
  
 
-Los paquetes de vídeo MPEG-1 y los tipos de medios de carga útil contienen un encabezado de secuencia completo para que los datos se puedan reproducir desde el centro de un archivo sin necesidad de un encabezado de secuencia para inicializar la reproducción de vídeo.
+Los tipos multimedia de carga y paquete de vídeo MPEG-1 contienen un encabezado de secuencia completo para que los datos se puedan reproducir desde el centro de un archivo sin necesidad de un encabezado de secuencia para inicializar la reproducción de vídeo.
 
-El encabezado de secuencia de vídeo se anexa al tipo de datos de vídeo para el vídeo MPEG para que la reproducción pueda comenzar desde el medio de una secuencia. La longitud de este campo es de hasta 140 bytes; incluye el código de inicio del encabezado de secuencia (0x000001B3) al principio, junto con las matrices de cuantificación que se encuentran en el primer encabezado de secuencia encontrado.
+El encabezado de secuencia de vídeo se anexa al tipo de datos de vídeo para el vídeo MPEG para que la reproducción pueda comenzar desde el centro de una secuencia. La longitud de este campo es de hasta 140 bytes; incluye el código de inicio del encabezado de secuencia (0x000001B3) al principio, junto con las matrices de cuantificación que se encuentran en el primer encabezado de secuencia encontrado.
 
  
 

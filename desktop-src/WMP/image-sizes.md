@@ -3,25 +3,25 @@ title: Tamaños de imagen
 description: Tamaños de imagen
 ms.assetid: f639ac34-f173-4b84-95ac-360d7fc40d1b
 keywords:
-- Aspectos móviles de Windows Media Player, archivos de imagen
-- máscaras, archivos de imagen
-- archivos para máscaras, arte
-- archivos de imágenes para máscaras, tamaños de imagen
-- Máscaras móviles de Windows Media Player, tamaños de imagen
+- Reproductor de Windows Media Máscaras móviles, archivos de arte
+- skins,art files
+- archivos para máscaras,art
+- archivos de arte para máscaras, tamaños de imagen
+- Reproductor de Windows Media Máscaras móviles, tamaños de imagen
 - máscaras, tamaños de imagen
 - tamaños de imagen en máscaras
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d672532be9830c58a580d37161b3d9a0adf04ae
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2a0e2fbed1e1343369d5b01d883ff57073ad6e4a4864e97005e82c6083593f32
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105695321"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509275"
 ---
 # <a name="image-sizes"></a>Tamaños de imagen
 
-Debe tener en cuenta el tamaño del área de presentación al crear ilustraciones para máscaras. En la tabla siguiente se muestran los tamaños de área de visualización para diferentes configuraciones de pantalla.
+Debe tener en cuenta el tamaño del área de presentación al crear ilustraciones para máscaras. En la tabla siguiente se muestran los tamaños de área de presentación para diferentes configuraciones de pantalla.
 
 
 
@@ -38,23 +38,23 @@ Debe tener en cuenta el tamaño del área de presentación al crear ilustracione
 
 
 
- 
+ 
 
 > [!Note]  
-> Las versiones anteriores a Windows Media Player 9 series para Windows Mobile 2003 solo admiten máscaras en modo vertical de 96 ppp. Windows Media Player 10 Mobile o versiones posteriores admiten máscaras en modo vertical de 131 PPP en dispositivos Smartphone, y se espera que esta compatibilidad continúe en versiones futuras de Windows Media Player Mobile.
+> Las versiones anteriores a Reproductor de Windows Media serie 9 para Windows Mobile 2003 solo admiten máscaras en modo vertical de 96 PPP. Reproductor de Windows Media 10 Mobile o posterior admite máscaras en modo vertical de 131 PPP en dispositivos Smartphone, y se espera que esta compatibilidad continúe en versiones futuras de Reproductor de Windows Media Mobile.
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Archivos de imagen**](art-files-mobile.md)
+[**Archivos de arte**](art-files-mobile.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

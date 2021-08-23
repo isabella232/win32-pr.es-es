@@ -1,7 +1,7 @@
 ---
-description: Elimina una entrada de instantánea de VHD dentro de un archivo de VHD set.
+description: Elimina una entrada de instantánea de VHD dentro de un archivo de conjunto de VHD.
 ms.assetid: 37d55a5f-209d-42ce-8f69-8b494055e263
-title: Método DeleteVHDSnapshot de la clase Msvm_ImageManagementService
+title: Método DeleteVHDSnapshot de la Msvm_ImageManagementService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 5c7f3f115825aedb3a21a8f33326a712c52e0780
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 45a15b03b3ca26375ef0a563981cb9405c4397f355735c173e105029959d8282
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686942"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119522665"
 ---
-# <a name="deletevhdsnapshot-method-of-the-msvm_imagemanagementservice-class"></a>Método DeleteVHDSnapshot de la \_ clase ImageManagementService de MSVM
+# <a name="deletevhdsnapshot-method-of-the-msvm_imagemanagementservice-class"></a>Método DeleteVHDSnapshot de la clase ImageManagementService de Msvm \_
 
-Elimina una entrada de instantánea de VHD dentro de un archivo de VHD set.
+Elimina una entrada de instantánea de VHD dentro de un archivo de conjunto de VHD.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,31 +42,31 @@ uint32 DeleteVHDSnapshot(
 
 <dl> <dt>
 
-*VHDSetPath* \[ de\]
+*VHDSetPath* \[ En\]
 </dt> <dd>
 
-Cadena que contiene la ruta de acceso al archivo del conjunto de VHD que contiene la instantánea en cuestión.
+Cadena que contiene la ruta de acceso al archivo de conjunto de VHD que contiene la instantánea en cuestión.
 
 </dd> <dt>
 
-*SnapshotId* \[ de\]
+*SnapshotId* \[ En\]
 </dt> <dd>
 
-Un GUID que representa el identificador de la instantánea para la entrada de instantánea de VHD que se va a eliminar.
+GUID que representa el identificador de instantánea de la entrada de instantánea de VHD que se va a eliminar.
 
 </dd> <dt>
 
-*PersistReferenceSnapshot* \[ de\]
+*PersistReferenceSnapshot* \[ En\]
 </dt> <dd>
 
-Indica si se debe conservar o no un registro de instantánea de solo referencia después de que se elimine la instantánea.
+Indica si se debe conservar o no un registro de instantánea de solo referencia después de eliminar la instantánea.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Referencia al trabajo (puede ser null si se ha completado la tarea).
+Referencia al trabajo (puede ser NULL si se completa la tarea).
 
 </dd> </dl>
 
@@ -91,16 +91,16 @@ Este método devuelve uno de los siguientes valores:
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**El sistema está en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -109,13 +109,13 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está disponible** (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> <dt>
 
-**No se encontró el archivo** (32779)
+**Archivo no encontrado** (32779)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -124,10 +124,10 @@ El **sistema no está disponible** (32777)
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -136,7 +136,7 @@ El **sistema no está disponible** (32777)
 
 <dl> <dt>
 
-[**MSVM \_ ImageManagementService**](msvm-imagemanagementservice.md)
+[**Msvm \_ ImageManagementService**](msvm-imagemanagementservice.md)
 </dt> </dl>
 
  

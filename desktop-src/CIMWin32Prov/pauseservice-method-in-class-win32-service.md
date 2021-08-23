@@ -1,5 +1,5 @@
 ---
-description: 'Método PauseService de la clase Win32_Service (proveedores WMI CIMWin32): intenta colocar el servicio en estado en pausa.'
+description: 'Método PauseService de la Win32_Service (proveedores WMI CIMWin32): intenta colocar el servicio en estado en pausa.'
 ms.assetid: 5382457e-7f9c-48a5-9262-b815a1a4a605
 ms.tgt_platform: multiple
 title: Método PauseService de la clase Win32_Service (proveedores WMI CIMWin32)
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 7654feea410564137e98861c4c0b5de2b5e7192e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d5546ef4c67a6c9fa23f723f45725b19999770e11771608e197d6b759ca61de8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096953"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119504545"
 ---
 # <a name="pauseservice-method-of-the-win32_service-class-cimwin32-wmi-providers"></a>Método PauseService de la clase Win32_Service (proveedores WMI CIMWin32)
 
-El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **PauseService** intenta colocar el servicio en estado de pausa.
+El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **PauseService** intenta colocar el servicio en estado en pausa.
 
-En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro valor para indicar un error. Para obtener códigos de error adicionales, [**vea Constantes de error WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro valor para indicar un error. Para obtener códigos de error adicionales, [**vea Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -233,12 +233,12 @@ El código de scripting necesario para detener un servicio es casi idéntico al 
 
 ## <a name="examples"></a>Ejemplos
 
-El [ejemplo de VBScript Pausar](https://Gallery.TechNet.Microsoft.Com/12a256dd-39da-4690-b3f0-f0adccaf25f1) servicios que se ejecutan en una cuenta específica pausa todos los servicios que se ejecutan en la hipotética cuenta de servicio "Netsvc".
+El [ejemplo de](https://Gallery.TechNet.Microsoft.Com/12a256dd-39da-4690-b3f0-f0adccaf25f1) VBScript Pausar servicios que se ejecutan en una cuenta específica pausa todos los servicios que se ejecutan en la cuenta de servicio hipotética "Netsvc".
 
 En el siguiente ejemplo de código de VBScript se muestra cómo pausar un servicio específico desde instancias del [**servicio Win32 \_**](win32-service.md).
 
 > [!Note]  
-> El servicio debe admitir pausas y estar ejecutándose ya.
+> El servicio debe admitir la pausa y estar ejecutándose ya.
 
  
 
@@ -269,7 +269,7 @@ next
 En el ejemplo de código perl siguiente se muestra cómo pausar un servicio específico desde instancias del [**servicio Win32 \_**](win32-service.md).
 
 > [!Note]  
-> El servicio debe admitir pausas y estar ejecutándose ya.
+> El servicio debe admitir la pausa y estar ejecutándose ya.
 
  
 
@@ -332,7 +332,7 @@ else
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

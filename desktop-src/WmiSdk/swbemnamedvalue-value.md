@@ -1,8 +1,8 @@
 ---
-description: La propiedad Value del objeto SWbemNamedValue devuelve el valor Variant de un elemento SWbemNamedValue.
+description: La propiedad Value del objeto SWbemNamedValue devuelve el valor variant de un elemento SWbemNamedValue.
 ms.assetid: f9609bd2-893a-48c3-9faa-93cd033c4109
 ms.tgt_platform: multiple
-title: Propiedad SWbemNamedValue. Value (Wbemdisp. h)
+title: Propiedad SWbemNamedValue.Value (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,22 +17,22 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 4bf63b15a27c1149341200f29e938bdba6cd7bae
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e6b30be89022b100adf4fbf162f0da8c8d7951394fd0a251c440bd56a814d027
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155833"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119612195"
 ---
-# <a name="swbemnamedvaluevalue-property"></a>SWbemNamedValue. Value (propiedad)
+# <a name="swbemnamedvaluevalue-property"></a>Propiedad SWbemNamedValue.Value
 
-La propiedad **Value** del objeto [**SWbemNamedValue**](swbemnamedvalue.md) devuelve el valor Variant de un elemento **SWbemNamedValue** . Esta es la propiedad predeterminada de los objetos **SWbemNamedValue** . Los cambios realizados en la propiedad Value se reflejan automáticamente en la colección [**SWbemNamedValueSet**](swbemnamedvalueset.md) a la que pertenece el objeto **SWbemNamedValue** .
+La **propiedad Value** del objeto [**SWbemNamedValue**](swbemnamedvalue.md) devuelve el valor variant de un elemento **SWbemNamedValue.** Esta es la propiedad predeterminada para **los objetos SWbemNamedValue.** Los cambios realizados en la propiedad value se reflejan automáticamente en la colección [**SWbemNamedValueSet**](swbemnamedvalueset.md) a la que pertenece el objeto **SWbemNamedValue.**
 
-Para obtener una explicación de esta sintaxis, vea [convenciones de documentos para la API de scripting](document-conventions-for-the-scripting-api.md).
+Para obtener una explicación de esta sintaxis, vea [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -47,15 +47,15 @@ SWbemNamedValue.Value As Variant
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemNamedValue<br/>                                                       |
-| IID<br/>                      | \_ISWBEMNAMEDVALUE IID<br/>                                                        |
+| IID<br/>                      | IID \_ ISWbemNamedValue<br/>                                                        |
 
 
 

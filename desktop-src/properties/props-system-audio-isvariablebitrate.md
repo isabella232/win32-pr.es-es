@@ -1,19 +1,19 @@
 ---
-description: Indica si el archivo de audio tiene una velocidad de bits variable o constante.
+description: Indica si el archivo de audio tenía una velocidad de bits variable o constante.
 ms.assetid: 42f5b22f-b734-4766-b34b-fe9750df032a
-title: System. audio. IsVariableBitRate
+title: System.Audio.IsVariableBitRate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee04e48b2f6b1ac7ca54dd9094a731795a2d5bf5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1fd67bcec250989d68fc8c2cca4414b9e28fdd3e977140b15cf9a361cebf98eb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696848"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119554505"
 ---
-# <a name="systemaudioisvariablebitrate"></a>System. audio. IsVariableBitRate
+# <a name="systemaudioisvariablebitrate"></a>System.Audio.IsVariableBitRate
 
-Indica si el archivo de audio tiene una velocidad de bits variable o constante.
+Indica si el archivo de audio tenía una velocidad de bits variable o constante.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

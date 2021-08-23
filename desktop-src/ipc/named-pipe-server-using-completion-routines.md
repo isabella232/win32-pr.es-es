@@ -1,23 +1,23 @@
 ---
-description: El ejemplo de código es un servidor de canalización de un solo subproceso que crea una canalización de tipo de mensaje y utiliza operaciones superpuestas.
+description: El ejemplo de código es un servidor de canalización de un solo subproceso que crea una canalización de tipo mensaje y usa operaciones superpuestas.
 ms.assetid: 8b73485c-c6f7-44df-9e53-308df2c752e7
-title: Servidor de canalización con nombre mediante rutinas de finalización
+title: Servidor de canalización con nombre que usa rutinas de finalización
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: efa3ac238680de5cee701488bc4cd60f6543d991
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 61ddd1a5213de8593a5697341ef3aed4988b7a700c02db9eba83440f40634627
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666246"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119611205"
 ---
-# <a name="named-pipe-server-using-completion-routines"></a>Servidor de canalización con nombre mediante rutinas de finalización
+# <a name="named-pipe-server-using-completion-routines"></a>Servidor de canalización con nombre que usa rutinas de finalización
 
-El ejemplo siguiente es un servidor de canalización de un solo subproceso que crea una canalización de tipo de mensaje y utiliza operaciones superpuestas. Usa las funciones extendidas [**ReadFileEx**](/windows/desktop/api/fileapi/nf-fileapi-readfileex) y [**WriteFileEx**](/windows/desktop/api/fileapi/nf-fileapi-writefileex) para realizar operaciones de e/s superpuestas mediante una rutina de finalización que se pone en cola para su ejecución cuando finaliza la operación. El servidor de canalización usa la función [**WaitForSingleObjectEx**](/windows/desktop/api/synchapi/nf-synchapi-waitforsingleobjectex) , que realiza una operación de espera de alerta que devuelve cuando una rutina de finalización está lista para ejecutarse. La función wait también devuelve cuando se señala un objeto de evento, que en este ejemplo indica que la operación [**ConnectNamedPipe**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-connectnamedpipe) superpuesta ha finalizado (se ha conectado un nuevo cliente). Este servidor de canalización se puede usar con el cliente de canalización descrito en [cliente de canalización con nombre](named-pipe-client.md).
+El ejemplo siguiente es un servidor de canalización de un solo subproceso que crea una canalización de tipo mensaje y usa operaciones superpuestas. Usa las funciones extendidas [**ReadFileEx**](/windows/desktop/api/fileapi/nf-fileapi-readfileex) y [**WriteFileEx**](/windows/desktop/api/fileapi/nf-fileapi-writefileex) para realizar E/S superpuestas mediante una rutina de finalización, que se pone en cola para su ejecución cuando finaliza la operación. El servidor de canalización usa la [**función WaitForSingleObjectEx,**](/windows/desktop/api/synchapi/nf-synchapi-waitforsingleobjectex) que realiza una operación de espera de alerta que devuelve cuando una rutina de finalización está lista para ejecutarse. La función wait también devuelve cuando se señala un objeto de evento, que en este ejemplo indica que la operación [**ConnectNamedPipe**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-connectnamedpipe) superpuesta ha finalizado (se ha conectado un nuevo cliente). Este servidor de canalización se puede usar con el cliente de canalización descrito en [Cliente de canalización con nombre](named-pipe-client.md).
 
-Inicialmente, el servidor de canalización crea una instancia única de la canalización e inicia una operación [**ConnectNamedPipe**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-connectnamedpipe) superpuesta. Cuando un cliente se conecta, el servidor asigna una estructura para proporcionar almacenamiento para esa instancia de canalización y, a continuación, llama a la función [**ReadFileEx**](/windows/desktop/api/fileapi/nf-fileapi-readfileex) para iniciar una secuencia de operaciones de e/s para controlar las comunicaciones con el cliente. Cada operación especifica una rutina de finalización que realiza la siguiente operación en la secuencia. La secuencia finaliza cuando el cliente se desconecta y se cierra la instancia de canalización. Después de iniciar la secuencia de operaciones para el nuevo cliente, el servidor crea otra instancia de canalización y espera a que el siguiente cliente se conecte.
+Inicialmente, el servidor de canalización crea una única instancia de la canalización e inicia una operación [**ConnectNamedPipe**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-connectnamedpipe) superpuesta. Cuando un cliente se conecta, el servidor asigna una estructura para proporcionar almacenamiento para esa instancia de canalización y, a continuación, llama a la función [**ReadFileEx**](/windows/desktop/api/fileapi/nf-fileapi-readfileex) para iniciar una secuencia de operaciones de E/S para controlar las comunicaciones con el cliente. Cada operación especifica una rutina de finalización que realiza la siguiente operación en la secuencia. La secuencia finaliza cuando se desconecta el cliente y se cierra la instancia de canalización. Después de iniciar la secuencia de operaciones para el nuevo cliente, el servidor crea otra instancia de canalización y espera a que se conecte el siguiente cliente.
 
-Los parámetros de las funciones [**ReadFileEx**](/windows/desktop/api/fileapi/nf-fileapi-readfileex) y [**WriteFileEx**](/windows/desktop/api/fileapi/nf-fileapi-writefileex) especifican una rutina de finalización y un puntero a una estructura [**superpuesta**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) . Este puntero se pasa a la rutina de finalización en su parámetro *lpOverLap* . Dado que la estructura **superpuesta** apunta al primer miembro de la estructura asignada para cada instancia de canalización, la rutina de finalización puede utilizar su parámetro *lpOverLap* para tener acceso a la estructura de la instancia de canalización.
+Los parámetros de las [**funciones ReadFileEx**](/windows/desktop/api/fileapi/nf-fileapi-readfileex) y [**WriteFileEx**](/windows/desktop/api/fileapi/nf-fileapi-writefileex) especifican una rutina de finalización y un puntero a una [**estructura OVERLAPPED.**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) Este puntero se pasa a la rutina de finalización en su *parámetro lpOverLap.* Dado que la **estructura OVERLAPPED** apunta al primer miembro de la estructura asignada para cada instancia de canalización, la rutina de finalización puede usar su parámetro *lpOverLap* para tener acceso a la estructura de la instancia de canalización.
 
 
 ```C++

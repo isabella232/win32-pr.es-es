@@ -1,19 +1,19 @@
 ---
-description: Indica Wi-Fi la visibilidad actual del dispositivo directo.
+description: Indica Wi-Fi visibilidad actual del dispositivo directo.
 ms.assetid: b3a01302-c9ae-4409-b660-25b7a707878f
-title: System. Devices. WiFiDirect. IsVisible
+title: System.Devices.WiFiDirect.IsVisible
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e6845300bd461253c32733dcf232b591eed71f30
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1fd0fd4904d6e68a60637024e7b6da6206c5a984e6d2a3547f297da930d10116
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706781"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119598585"
 ---
-# <a name="systemdeviceswifidirectisvisible"></a>System. Devices. WiFiDirect. IsVisible
+# <a name="systemdeviceswifidirectisvisible"></a>System.Devices.WiFiDirect.IsVisible
 
-Indica Wi-Fi la visibilidad actual del dispositivo directo
+Indica Wi-Fi visibilidad actual del dispositivo directo
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

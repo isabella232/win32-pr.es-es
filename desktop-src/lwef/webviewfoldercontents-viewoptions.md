@@ -1,11 +1,11 @@
 ---
-title: Propiedad WebViewFolderContents. ViewOptions (Shldisp. h)
+title: Propiedad WebViewFolderContents.ViewOptions (Shldisp.h)
 description: Obtiene un conjunto de marcas ShellFolderViewOptions que indican las opciones actuales de la vista.
 ms.assetid: 96edb144-e532-4ab5-99ae-d945e211d744
 keywords:
-- Propiedad ViewOptions características de entorno heredado de Windows
-- Propiedad ViewOptions características de entorno heredado de Windows, objeto WebViewFolderContents
-- Objeto WebViewFolderContents características de entorno de Windows heredado, propiedad ViewOptions
+- ViewOptions property Legacy Windows Environment Features
+- Propiedad ViewOptions heredada Windows environment features , objeto WebViewFolderContents
+- Objeto WebViewFolderContents Heredado Windows Environment Features , Propiedad ViewOptions
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 737ec5cb22fdc5c0002006898b837b557b5f6089
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 95c897c75eab32962a18981c605c8465630aaf7b0c6b7d3e3f9a4fbe8e3d75d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104078958"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119607745"
 ---
-# <a name="webviewfoldercontentsviewoptions-property"></a>Propiedad WebViewFolderContents. ViewOptions
+# <a name="webviewfoldercontentsviewoptions-property"></a>Propiedad WebViewFolderContents.ViewOptions
 
-Obtiene un conjunto de marcas [**ShellFolderViewOptions**](/windows/desktop/api/shldisp/ne-shldisp-shellfolderviewoptions) que indican las opciones actuales de la vista.
+Obtiene un conjunto de [**marcas ShellFolderViewOptions**](/windows/desktop/api/shldisp/ne-shldisp-shellfolderviewoptions) que indican las opciones actuales de la vista.
 
 Esta propiedad es de solo lectura.
 
@@ -44,7 +44,7 @@ Variable de tipo [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oai
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso correcto de esta propiedad en JScript incrustado en HTML.
+En el ejemplo siguiente se muestra el uso adecuado de esta propiedad en JScript incrustada en HTML.
 
 
 ```HTML
@@ -84,11 +84,11 @@ En el ejemplo siguiente se muestra el uso correcto de esta propiedad en JScript 
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de \[ escritorio XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

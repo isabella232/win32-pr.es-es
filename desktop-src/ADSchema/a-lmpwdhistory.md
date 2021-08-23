@@ -1,11 +1,11 @@
 ---
-title: LM-pwd-atributo History
-description: El historial de contraseñas del usuario en el formato unidireccional (OWF) de LAN Manager (LM). LM OWF se usa para la compatibilidad con los clientes de LAN Manager 2. x, Windows 95 y Windows 98.
+title: Atributo Lm-Pwd-History
+description: El historial de contraseñas del usuario en formato un solo sentido (OWF) de LAN Manager (LM). Lm OWF se usa para la compatibilidad con clientes de LAN Manager 2.x, Windows 95 y Windows 98.
 ms.assetid: c4cb2e74-b37d-4c76-8d21-d71bc9c19a4a
 ms.tgt_platform: multiple
 keywords:
-- 'LM-pwd-History: esquema de AD de atributos'
-- lmPwdHistory esquema de AD de atributos
+- Esquema de AD del atributo Lm-Pwd-History
+- Esquema de AD del atributo lmPwdHistory
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 28f5c73b35bb0ea2cae9d01324d82e1568485541
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 365c5989f7118408ef31b7a3f0c6b3d91f98502127ef2c5161a9f276296732b7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301925"
 ---
-# <a name="lm-pwd-history-attribute"></a>LM-pwd-atributo History
+# <a name="lm-pwd-history-attribute"></a>Atributo Lm-Pwd-History
 
-El historial de contraseñas del usuario en el formato unidireccional (OWF) de LAN Manager (LM). LM OWF se usa para la compatibilidad con LAN Manager 2. clientes *x* , Windows 95 y Windows 98.
+El historial de contraseñas del usuario en formato un solo sentido (OWF) de LAN Manager (LM). Lm OWF se usa para la compatibilidad con LAN Manager 2. *x* clientes, Windows 95 y Windows 98.
 
 
 
 | Entrada | Value |
 |-------------------|-------------------------------------------------------|
-| CN                | LM-pwd-historial                                        |
-| Nombre para mostrar de LDAP | lmPwdHistory                                          |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | Administrador de dominio                                  |
+| CN                | Lm-Pwd-History                                        |
+| Ldap-Display-Name | lmPwdHistory                                          |
+| Size              | \-                                                    |
+| Privilegio actualizar  | Administrador de dominio                                  |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.160                                |
-| System-ID-GUID    | bf96799d-0de6-11d0-a285-00aa003049e2                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | bf96799d-0de6-11d0-a285-00aa003049e2                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -55,18 +55,18 @@ El historial de contraseñas del usuario en el formato unidireccional (OWF) de L
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | False                             |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Falso                             |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ El historial de contraseñas del usuario en el formato unidireccional (OWF) de L
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | False                             |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Falso                             |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ El historial de contraseñas del usuario en el formato unidireccional (OWF) de L
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | False                             |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Falso                             |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ El historial de contraseñas del usuario en el formato unidireccional (OWF) de L
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | False                             |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Falso                             |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ El historial de contraseñas del usuario en el formato unidireccional (OWF) de L
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | False                             |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Falso                             |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -160,13 +160,13 @@ El historial de contraseñas del usuario en el formato unidireccional (OWF) de L
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | False                             |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Falso                             |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |

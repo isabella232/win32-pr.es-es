@@ -1,23 +1,23 @@
 ---
-description: En este tema se enumeran las tablas de frecuencia usadas para la optimización de TV analógica para India.
+description: En este tema se enumeran las tablas de frecuencia usadas para la optimización de televisión análoga para la India.
 ms.assetid: 4bf7a67e-0434-4177-96c7-dcaad14c6545
-title: Asignaciones de canales de India
+title: Asignaciones del canal de la India
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ced8fdba140fba2a7274fa9dbd8dcae84ffce13
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 4cef59d270165a75dd42b05f1a9934bb413bdc0d9d53dd11eed987d6cee8aa9b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105686355"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119584555"
 ---
-# <a name="india-channel-assignments"></a>Asignaciones de canales de India
+# <a name="india-channel-assignments"></a>Asignaciones del canal de la India
 
-En este tema se enumeran las tablas de frecuencia usadas para la optimización de TV analógica para India.
+En este tema se enumeran las tablas de frecuencia usadas para la optimización de televisión análoga para la India.
 
-Para obtener una explicación de las tablas siguientes, vea [tablas y asignaciones](tables-and-assignments.md).
+Para obtener una explicación de las tablas siguientes, vea [Tablas y asignaciones.](tables-and-assignments.md)
 
-Las siguientes asignaciones de canal se introdujeron en Windows 7. Anteriormente, se usaba la [tabla de frecuencias Unicable](unicable-frequency-table.md) .
+Las siguientes asignaciones de canales se introdujeron en Windows 7. Anteriormente, se [usaba la tabla de frecuencias unicables.](unicable-frequency-table.md)
 
 ## <a name="cable-assignments"></a>Asignaciones de cable
 
@@ -138,7 +138,7 @@ Las siguientes asignaciones de canal se introdujeron en Windows 7. Anteriormente
 
 <dl> <dt>
 
-[Ajuste de TV analógica internacional](international-analog-tv-tuning.md)
+[Ajuste de televisión análoga internacional](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

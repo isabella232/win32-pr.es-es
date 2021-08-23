@@ -1,11 +1,11 @@
 ---
-title: Initials (atributo)
-description: Contiene las iniciales de las partes del nombre completo del usuario. Puede usarse como inicial central en la libreta de direcciones de Windows.
+title: Atributo Initials
+description: Contiene las iniciales de partes del nombre completo del usuario. Esto se puede usar como inicial central en la Windows de direcciones.
 ms.assetid: 220b4448-5276-4c3f-8a1b-217cec06135a
 ms.tgt_platform: multiple
 keywords:
-- Atributo iniciales esquema de AD
-- atributo iniciales esquema de AD
+- Esquema de AD del atributo Initials
+- Esquema de AD del atributo initials
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 946f6c9633c1126a30ae4898274096a54db9a402
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4c9aa6020dc5f442547582c71be475c7dc8e6e3efcd3e1588095c536f22e2347
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658953"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322915"
 ---
-# <a name="initials-attribute"></a>Initials (atributo)
+# <a name="initials-attribute"></a>Atributo Initials
 
-Contiene las iniciales de las partes del nombre completo del usuario. Puede usarse como inicial central en la libreta de direcciones de Windows.
+Contiene las iniciales de partes del nombre completo del usuario. Esto se puede usar como inicial central en la Windows de direcciones.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | Iniciales                                    |
-| Nombre para mostrar de LDAP | Initials                                    |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | Administrador de dominio o propietario de la cuenta.      |
+| Ldap-Display-Name | Initials                                    |
+| Size              | \-                                          |
+| Actualizar privilegios  | Administrador de dominio o propietario de la cuenta.      |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 2.5.4.43                                    |
-| System-ID-GUID    | f0f8ff90-1191-11d0-a060-00aa006c33ed        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | f0f8ff90-1191-11d0-a060-00aa006c33ed        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -53,15 +53,15 @@ Contiene las iniciales de las partes del nombre completo del usuario. Puede usar
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x3A0A                                                             |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 6                                                                  |
 | Search-Flags           | 0x00000000                                                         |
@@ -74,15 +74,15 @@ Contiene las iniciales de las partes del nombre completo del usuario. Puede usar
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                     |
+| Id. de vínculo                | \-                                                                                                                     |
 | MAPI-Id                | 0x3A0A                                                                                                                 |
-| System-Only            | False                                                                                                                  |
-| Tiene un único valor       | True                                                                                                                   |
-| Está indexado             | False                                                                                                                  |
-| En el catálogo global      | False                                                                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                           |
+| System-Only            | Falso                                                                                                                  |
+| Es de un solo valor       | Verdadero                                                                                                                   |
+| Está indexado             | Falso                                                                                                                  |
+| En el catálogo global      | Falso                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                           |
 | Range-Lower            | 1                                                                                                                      |
 | Range-Upper            | 6                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                             |
@@ -95,15 +95,15 @@ Contiene las iniciales de las partes del nombre completo del usuario. Puede usar
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                     |
+| Id. de vínculo                | \-                                                                                                                     |
 | MAPI-Id                | 0x3A0A                                                                                                                 |
-| System-Only            | False                                                                                                                  |
-| Tiene un único valor       | True                                                                                                                   |
-| Está indexado             | False                                                                                                                  |
-| En el catálogo global      | False                                                                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                           |
+| System-Only            | Falso                                                                                                                  |
+| Es de un solo valor       | Verdadero                                                                                                                   |
+| Está indexado             | Falso                                                                                                                  |
+| En el catálogo global      | Falso                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                           |
 | Range-Lower            | 1                                                                                                                      |
 | Range-Upper            | 6                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                             |
@@ -116,15 +116,15 @@ Contiene las iniciales de las partes del nombre completo del usuario. Puede usar
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                     |
+| Id. de vínculo                | \-                                                                                                                     |
 | MAPI-Id                | 0x3A0A                                                                                                                 |
-| System-Only            | False                                                                                                                  |
-| Tiene un único valor       | True                                                                                                                   |
-| Está indexado             | False                                                                                                                  |
-| En el catálogo global      | False                                                                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                           |
+| System-Only            | Falso                                                                                                                  |
+| Es de un solo valor       | Verdadero                                                                                                                   |
+| Está indexado             | Falso                                                                                                                  |
+| En el catálogo global      | Falso                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                           |
 | Range-Lower            | 1                                                                                                                      |
 | Range-Upper            | 6                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                             |
@@ -137,15 +137,15 @@ Contiene las iniciales de las partes del nombre completo del usuario. Puede usar
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                     |
+| Id. de vínculo                | \-                                                                                                                     |
 | MAPI-Id                | 0x3A0A                                                                                                                 |
-| System-Only            | False                                                                                                                  |
-| Tiene un único valor       | True                                                                                                                   |
-| Está indexado             | False                                                                                                                  |
-| En el catálogo global      | False                                                                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                           |
+| System-Only            | Falso                                                                                                                  |
+| Es de un solo valor       | Verdadero                                                                                                                   |
+| Está indexado             | Falso                                                                                                                  |
+| En el catálogo global      | Falso                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                           |
 | Range-Lower            | 1                                                                                                                      |
 | Range-Upper            | 6                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                             |
@@ -158,15 +158,15 @@ Contiene las iniciales de las partes del nombre completo del usuario. Puede usar
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                     |
+| Id. de vínculo                | \-                                                                                                                     |
 | MAPI-Id                | 0x3A0A                                                                                                                 |
-| System-Only            | False                                                                                                                  |
-| Tiene un único valor       | True                                                                                                                   |
-| Está indexado             | False                                                                                                                  |
-| En el catálogo global      | False                                                                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                           |
+| System-Only            | Falso                                                                                                                  |
+| Es de un solo valor       | Verdadero                                                                                                                   |
+| Está indexado             | Falso                                                                                                                  |
+| En el catálogo global      | Falso                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                           |
 | Range-Lower            | 1                                                                                                                      |
 | Range-Upper            | 6                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                             |

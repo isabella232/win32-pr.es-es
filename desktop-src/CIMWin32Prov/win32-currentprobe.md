@@ -1,8 +1,8 @@
 ---
-description: La \_ clase WMI CurrentProbe de Win32 representa las propiedades de un sensor de supervisión actual (ammeter).
+description: La clase WMI CurrentProbe de Win32 \_ representa las propiedades de un sensor de supervisión actual (ammeter).
 ms.assetid: 2e1da856-b787-404b-ac4b-080c4950bad8
 ms.tgt_platform: multiple
-title: Win32_CurrentProbe (clase)
+title: Win32_CurrentProbe clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -51,16 +51,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: be834e56eb3d958a8cd6ee653dc9a248c14ae3bc
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: f20fb9a81b0917586f7534de45f78a371c6c82aeb6220de56529f400a8ddf8d9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119504175"
 ---
-# <a name="win32_currentprobe-class"></a>\_Clase Win32 CurrentProbe
+# <a name="win32_currentprobe-class"></a>Clase CurrentProbe de Win32 \_
 
-La [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ CurrentProbe de Win32** representa las propiedades de un sensor de supervisión actual (ammeter).
+La **clase WMI \_ CurrentProbe** [de](/windows/desktop/WmiSdk/retrieving-a-class) Win32 representa las propiedades de un sensor de supervisión actual (ammeter).
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -117,13 +117,13 @@ La **clase \_ CurrentProbe de Win32** tiene estos tipos de miembros:
 
 ### <a name="methods"></a>Métodos
 
-La clase **Win32 \_ CurrentProbe** tiene estos métodos.
+La **clase \_ CurrentProbe de Win32** tiene estos métodos.
 
 
 
 | Método            | Descripción                                                                                                                                                                                                      |
 |:------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Reset**         | Sin implementar. Para implementar este método, consulte el método [**RESET**](reset-method-in-class-cim-controller.md) en [**CIM \_ CurrentSensor**](cim-currentsensor.md) para obtener documentación.<br/>                 |
+| **Reset**         | Sin implementar. Para implementar este método, consulte el método [**Reset**](reset-method-in-class-cim-controller.md) en [**CIM \_ CurrentSensor**](cim-currentsensor.md) para obtener documentación.<br/>                 |
 | **SetPowerState** | Sin implementar. Para implementar este método, consulte el método [**SetPowerState**](setpowerstate-method-in-class-cim-controller.md) en [**CIM \_ CurrentSensor**](cim-currentsensor.md) para obtener documentación.<br/> |
 
 
@@ -145,36 +145,36 @@ Tipo de datos: **sint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Sondeo actual eléctrico DMTF \| 001,19 ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Electrical Current Probe \| 001.19")
 </dt> </dl>
 
-Precisión del sensor para la propiedad medida. El valor se registra como más o menos centésimas de un porcentaje. La precisión, junto con la resolución y la tolerancia, se usa para calcular el valor real de la propiedad física medida. La precisión puede variar y depende de si el dispositivo es lineal o no sobre su intervalo dinámico.
+Precisión del sensor para la propiedad medida. El valor se registra como centésimas más o menos de un porcentaje. La precisión, junto con la resolución y la tolerancia, se usa para calcular el valor real de la propiedad física medida. La precisión puede variar y depende de si el dispositivo es lineal sobre su intervalo dinámico.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor**](cim-numericsensor.md).
+Esta propiedad se hereda de [**\_ NUMERICSensor de CIM.**](cim-numericsensor.md)
 
 </dd> <dt>
 
 **Disponibilidad**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Estado operativo DMTF \| 003,5 "," MIB. IETF \| host-REsources-MIB. hrDeviceStatus ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Operational State \| 003.5", "MIB. IETF \| HOST-RESOURCES-MIB.hrDeviceStatus")
 </dt> </dl>
 
 Disponibilidad y estado del dispositivo.
 
-Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Otro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -188,25 +188,25 @@ Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](cim-logicaldevice.md)
 
 <span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>
 
-<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>En **ejecución/corriente completa** (3)
+<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>**Energía completa o en ejecución** (3)
 
 
 </dt> <dd>
 
-En ejecución o completa
+Energía completa o en ejecución
 
 </dd> <dt>
 
 <span id="Warning"></span><span id="warning"></span><span id="WARNING"></span>
 
-<span id="Warning"></span><span id="warning"></span><span id="WARNING"></span>**ADVERTENCIA** (4)
+<span id="Warning"></span><span id="warning"></span><span id="WARNING"></span>**Advertencia** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span>
 
-<span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span>**En pruebas** (5)
+<span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span>**En prueba** (5)
 
 
 </dt> <dd></dd> <dt>
@@ -220,21 +220,21 @@ En ejecución o completa
 
 <span id="Power_Off"></span><span id="power_off"></span><span id="POWER_OFF"></span>
 
-<span id="Power_Off"></span><span id="power_off"></span><span id="POWER_OFF"></span>**Desconectar (7** )
+<span id="Power_Off"></span><span id="power_off"></span><span id="POWER_OFF"></span>**Apagado** (7)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Off_Line"></span><span id="off_line"></span><span id="OFF_LINE"></span>
 
-<span id="Off_Line"></span><span id="off_line"></span><span id="OFF_LINE"></span>Sin **conexión (8** )
+<span id="Off_Line"></span><span id="off_line"></span><span id="OFF_LINE"></span>**Off Line** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Off_Duty"></span><span id="off_duty"></span><span id="OFF_DUTY"></span>
 
-<span id="Off_Duty"></span><span id="off_duty"></span><span id="OFF_DUTY"></span>**Fuera del deber** (9)
+<span id="Off_Duty"></span><span id="off_duty"></span><span id="OFF_DUTY"></span>**Fuera de servicio** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -255,65 +255,65 @@ En ejecución o completa
 
 <span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>
 
-<span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>**Error de instalación** (12)
+<span id="Install_Error"></span><span id="install_error"></span><span id="INSTALL_ERROR"></span>**Error de** instalación (12)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Power_Save_-_Unknown"></span><span id="power_save_-_unknown"></span><span id="POWER_SAVE_-_UNKNOWN"></span>
 
-<span id="Power_Save_-_Unknown"></span><span id="power_save_-_unknown"></span><span id="POWER_SAVE_-_UNKNOWN"></span>Ahorro **de energía: desconocido** (13)
+<span id="Power_Save_-_Unknown"></span><span id="power_save_-_unknown"></span><span id="POWER_SAVE_-_UNKNOWN"></span>**Ahorro de energía: desconocido** (13)
 
 
 </dt> <dd>
 
-Se sabe que el dispositivo está en modo de ahorro de energía, pero su estado exacto es desconocido.
+Se sabe que el dispositivo está en modo de ahorro de energía, pero se desconoce su estado exacto.
 
 </dd> <dt>
 
 <span id="Power_Save_-_Low_Power_Mode"></span><span id="power_save_-_low_power_mode"></span><span id="POWER_SAVE_-_LOW_POWER_MODE"></span>
 
-<span id="Power_Save_-_Low_Power_Mode"></span><span id="power_save_-_low_power_mode"></span><span id="POWER_SAVE_-_LOW_POWER_MODE"></span>Ahorro **de energía: modo de baja energía** (14)
+<span id="Power_Save_-_Low_Power_Mode"></span><span id="power_save_-_low_power_mode"></span><span id="POWER_SAVE_-_LOW_POWER_MODE"></span>**Ahorro de energía: modo de bajo consumo** (14)
 
 
 </dt> <dd>
 
-El dispositivo se encuentra en un estado de ahorro de energía, pero sigue funcionando y puede mostrar un rendimiento degradado.
+El dispositivo está en un estado de ahorro de energía pero sigue funcionando y puede presentar un rendimiento degradado.
 
 </dd> <dt>
 
 <span id="Power_Save_-_Standby"></span><span id="power_save_-_standby"></span><span id="POWER_SAVE_-_STANDBY"></span>
 
-<span id="Power_Save_-_Standby"></span><span id="power_save_-_standby"></span><span id="POWER_SAVE_-_STANDBY"></span>Ahorro **de energía: en espera** (15)
+<span id="Power_Save_-_Standby"></span><span id="power_save_-_standby"></span><span id="POWER_SAVE_-_STANDBY"></span>**Ahorro de energía: en espera** (15)
 
 
 </dt> <dd>
 
-El dispositivo no funciona, pero puede que se ponga en marcha rápidamente.
+El dispositivo no funciona, pero se podría encender rápidamente.
 
 </dd> <dt>
 
 <span id="Power_Cycle"></span><span id="power_cycle"></span><span id="POWER_CYCLE"></span>
 
-<span id="Power_Cycle"></span><span id="power_cycle"></span><span id="POWER_CYCLE"></span>**Ciclo de energía** (16)
+<span id="Power_Cycle"></span><span id="power_cycle"></span><span id="POWER_CYCLE"></span>**Ciclo de** energía (16)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Power_Save_-_Warning"></span><span id="power_save_-_warning"></span><span id="POWER_SAVE_-_WARNING"></span>
 
-<span id="Power_Save_-_Warning"></span><span id="power_save_-_warning"></span><span id="POWER_SAVE_-_WARNING"></span>Ahorro **de energía: ADVERTENCIA** (17)
+<span id="Power_Save_-_Warning"></span><span id="power_save_-_warning"></span><span id="POWER_SAVE_-_WARNING"></span>**Ahorro de energía: advertencia** (17)
 
 
 </dt> <dd>
 
-El dispositivo está en un estado de advertencia, aunque también en el modo de ahorro de energía.
+El dispositivo está en estado de advertencia, aunque también en modo de ahorro de energía.
 
 </dd> <dt>
 
 <span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>
 
-<span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>En **pausa** (18)
+<span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>**En pausa** (18)
 
 
 </dt> <dd>
@@ -335,7 +335,7 @@ No está listo.
 
 <span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>
 
-<span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>**No configurado** (20)
+<span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>**Sin configurar** (20)
 
 
 </dt> <dd>
@@ -346,7 +346,7 @@ No configurado.
 
 <span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>
 
-<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**Inactivo** (21)
+<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**Quiesced** (21)
 
 
 </dt> <dd>
@@ -366,30 +366,30 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
+Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
 </dt> </dl>
 
 Breve descripción del objeto de una cadena de una línea.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **ConfigManagerErrorCode**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
+Calificadores: [**Esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
 </dt> </dl>
 
-Código de error de Configuration Manager de Win32.
+Código de error Administrador de configuración Win32.
 
-Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 <dt>
 
@@ -417,7 +417,7 @@ El dispositivo no está configurado correctamente.
 
 <span id="Windows_cannot_load_the_driver_for_this_device."></span><span id="windows_cannot_load_the_driver_for_this_device."></span><span id="WINDOWS_CANNOT_LOAD_THE_DRIVER_FOR_THIS_DEVICE."></span>
 
-<span id="windows_cannot_load_the_driver_for_this_device."></span><span id="WINDOWS_CANNOT_LOAD_THE_DRIVER_FOR_THIS_DEVICE."></span>**Windows no puede cargar el controlador para este dispositivo.** (2)
+<span id="windows_cannot_load_the_driver_for_this_device."></span><span id="WINDOWS_CANNOT_LOAD_THE_DRIVER_FOR_THIS_DEVICE."></span>**Windows puede cargar el controlador para este dispositivo.** (2)
 
 
 </dt> <dd></dd> <dt>
@@ -435,23 +435,23 @@ Es posible que el controlador de este dispositivo esté dañado o que el sistema
 
 <span id="This_device_is_not_working_properly._One_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="this_device_is_not_working_properly._one_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY._ONE_OF_ITS_DRIVERS_OR_YOUR_REGISTRY_MIGHT_BE_CORRUPTED."></span>
 
-<span id="This_device_is_not_working_properly._One_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="this_device_is_not_working_properly._one_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY._ONE_OF_ITS_DRIVERS_OR_YOUR_REGISTRY_MIGHT_BE_CORRUPTED."></span>**Este dispositivo no funciona correctamente. Uno de sus controladores o el registro pueden estar dañados.** (4)
+<span id="This_device_is_not_working_properly._One_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="this_device_is_not_working_properly._one_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY._ONE_OF_ITS_DRIVERS_OR_YOUR_REGISTRY_MIGHT_BE_CORRUPTED."></span>**Este dispositivo no funciona correctamente. Uno de sus controladores o el registro podrían estar dañados.** (4)
 
 
 </dt> <dd>
 
-El dispositivo no funciona correctamente. Uno de sus controladores o el registro pueden estar dañados.
+El dispositivo no funciona correctamente. Uno de sus controladores o el registro podrían estar dañados.
 
 </dd> <dt>
 
 <span id="The_driver_for_this_device_needs_a_resource_that_Windows_cannot_manage."></span><span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>
 
-<span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>**El controlador para este dispositivo necesita un recurso que Windows no puede administrar.** (5)
+<span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>**El controlador para este dispositivo necesita un recurso que Windows puede administrar.** (5)
 
 
 </dt> <dd>
 
-El controlador del dispositivo requiere un recurso que Windows no puede administrar.
+El controlador del dispositivo requiere un recurso que Windows puede administrar.
 
 </dd> <dt>
 
@@ -462,7 +462,7 @@ El controlador del dispositivo requiere un recurso que Windows no puede administ
 
 </dt> <dd>
 
-La configuración de arranque para el dispositivo entra en conflicto con otros dispositivos.
+La configuración de arranque del dispositivo entra en conflicto con otros dispositivos.
 
 </dd> <dt>
 
@@ -486,7 +486,7 @@ Falta el cargador de controladores para el dispositivo.
 
 <span id="This_device_is_not_working_properly_because_the_controlling_firmware_is_reporting_the_resources_for_the_device_incorrectly."></span><span id="this_device_is_not_working_properly_because_the_controlling_firmware_is_reporting_the_resources_for_the_device_incorrectly."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THE_CONTROLLING_FIRMWARE_IS_REPORTING_THE_RESOURCES_FOR_THE_DEVICE_INCORRECTLY."></span>
 
-<span id="this_device_is_not_working_properly_because_the_controlling_firmware_is_reporting_the_resources_for_the_device_incorrectly."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THE_CONTROLLING_FIRMWARE_IS_REPORTING_THE_RESOURCES_FOR_THE_DEVICE_INCORRECTLY."></span>**Este dispositivo no funciona correctamente porque el firmware de control informa de los recursos para el dispositivo de forma incorrecta.** (9)
+<span id="this_device_is_not_working_properly_because_the_controlling_firmware_is_reporting_the_resources_for_the_device_incorrectly."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THE_CONTROLLING_FIRMWARE_IS_REPORTING_THE_RESOURCES_FOR_THE_DEVICE_INCORRECTLY."></span>**Este dispositivo no funciona correctamente porque el firmware de control informa incorrectamente de los recursos del dispositivo.** (9)
 
 
 </dt> <dd>
@@ -519,23 +519,23 @@ Error en el dispositivo.
 
 <span id="This_device_cannot_find_enough_free_resources_that_it_can_use."></span><span id="this_device_cannot_find_enough_free_resources_that_it_can_use."></span><span id="THIS_DEVICE_CANNOT_FIND_ENOUGH_FREE_RESOURCES_THAT_IT_CAN_USE."></span>
 
-<span id="this_device_cannot_find_enough_free_resources_that_it_can_use."></span><span id="THIS_DEVICE_CANNOT_FIND_ENOUGH_FREE_RESOURCES_THAT_IT_CAN_USE."></span>**Este dispositivo no puede encontrar suficientes recursos libres que pueda usar.** (12)
+<span id="this_device_cannot_find_enough_free_resources_that_it_can_use."></span><span id="THIS_DEVICE_CANNOT_FIND_ENOUGH_FREE_RESOURCES_THAT_IT_CAN_USE."></span>**Este dispositivo no puede encontrar suficientes recursos gratuitos que pueda usar.** (12)
 
 
 </dt> <dd>
 
-El dispositivo no puede encontrar suficientes recursos disponibles para su uso.
+El dispositivo no encuentra suficientes recursos gratuitos para usarlos.
 
 </dd> <dt>
 
 <span id="Windows_cannot_verify_this_device_s_resources."></span><span id="windows_cannot_verify_this_device_s_resources."></span><span id="WINDOWS_CANNOT_VERIFY_THIS_DEVICE_S_RESOURCES."></span>
 
-<span id="windows_cannot_verify_this_device_s_resources."></span><span id="WINDOWS_CANNOT_VERIFY_THIS_DEVICE_S_RESOURCES."></span>**Windows no puede comprobar los recursos de este dispositivo.** (13)
+<span id="windows_cannot_verify_this_device_s_resources."></span><span id="WINDOWS_CANNOT_VERIFY_THIS_DEVICE_S_RESOURCES."></span>**Windows puede comprobar los recursos de este dispositivo.** (13)
 
 
 </dt> <dd>
 
-Windows no puede comprobar los recursos del dispositivo.
+Windows puede comprobar los recursos del dispositivo.
 
 </dd> <dt>
 
@@ -552,23 +552,23 @@ El dispositivo no puede funcionar correctamente hasta que se reinicie el equipo.
 
 <span id="This_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="this_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THERE_IS_PROBABLY_A_RE-ENUMERATION_PROBLEM."></span>
 
-<span id="This_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="this_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THERE_IS_PROBABLY_A_RE-ENUMERATION_PROBLEM."></span>**Este dispositivo no funciona correctamente porque es probable que haya un problema de reenumeración.** (15)
+<span id="This_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="this_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THERE_IS_PROBABLY_A_RE-ENUMERATION_PROBLEM."></span>**Este dispositivo no funciona correctamente porque probablemente haya un problema de enumeración.** (15)
 
 
 </dt> <dd>
 
-El dispositivo no funciona correctamente debido a un posible problema de reenumeración.
+El dispositivo no funciona correctamente debido a un posible problema de enumeración.
 
 </dd> <dt>
 
 <span id="Windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>
 
-<span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>**Windows no puede identificar todos los recursos que usa este dispositivo.** (16)
+<span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>**Windows puede identificar todos los recursos que usa este dispositivo.** (16)
 
 
 </dt> <dd>
 
-Windows no puede identificar todos los recursos que usa el dispositivo.
+Windows puede identificar todos los recursos que usa el dispositivo.
 
 </dd> <dt>
 
@@ -579,24 +579,24 @@ Windows no puede identificar todos los recursos que usa el dispositivo.
 
 </dt> <dd>
 
-El dispositivo está solicitando un tipo de recurso desconocido.
+El dispositivo solicita un tipo de recurso desconocido.
 
 </dd> <dt>
 
 <span id="Reinstall_the_drivers_for_this_device."></span><span id="reinstall_the_drivers_for_this_device."></span><span id="REINSTALL_THE_DRIVERS_FOR_THIS_DEVICE."></span>
 
-<span id="reinstall_the_drivers_for_this_device."></span><span id="REINSTALL_THE_DRIVERS_FOR_THIS_DEVICE."></span>**Vuelva a instalar los controladores para este dispositivo.** (18)
+<span id="reinstall_the_drivers_for_this_device."></span><span id="REINSTALL_THE_DRIVERS_FOR_THIS_DEVICE."></span>**Vuelva a instalar los controladores de este dispositivo.** (18)
 
 
 </dt> <dd>
 
-Se deben volver a instalar los controladores de dispositivos.
+Los controladores de dispositivo deben volver a instalarse.
 
 </dd> <dt>
 
 <span id="Failure_using_the_VxD_loader."></span><span id="failure_using_the_vxd_loader."></span><span id="FAILURE_USING_THE_VXD_LOADER."></span>
 
-<span id="failure_using_the_vxd_loader."></span><span id="FAILURE_USING_THE_VXD_LOADER."></span>**Error al usar el cargador de VxD.** (19)
+<span id="failure_using_the_vxd_loader."></span><span id="FAILURE_USING_THE_VXD_LOADER."></span>**Error al usar el cargador VxD.** (19)
 
 
 </dt> <dd></dd> <dt>
@@ -608,18 +608,18 @@ Se deben volver a instalar los controladores de dispositivos.
 
 </dt> <dd>
 
-Es posible que el registro esté dañado.
+Es posible que el Registro esté dañado.
 
 </dd> <dt>
 
 <span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>
 
-<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>**Error del sistema: intente cambiar el controlador para este dispositivo. Si eso no funciona, consulte la documentación del hardware. Windows está quitando este dispositivo.** (21)
+<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>**Error del sistema: intente cambiar el controlador de este dispositivo. Si eso no funciona, consulte la documentación de hardware. Windows está quitando este dispositivo.** (21)
 
 
 </dt> <dd>
 
-Error del sistema. Si el cambio de controlador de dispositivo es ineficaz, consulte la documentación del hardware. Windows está quitando el dispositivo.
+Error del sistema. Si cambiar el controlador del dispositivo no es eficaz, consulte la documentación de hardware. Windows está quitando el dispositivo.
 
 </dd> <dt>
 
@@ -636,12 +636,12 @@ El dispositivo está deshabilitado.
 
 <span id="System_failure__Try_changing_the_driver_for_this_device._If_that_doesn_t_work__see_your_hardware_documentation."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_doesn_t_work__see_your_hardware_documentation."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOESN_T_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION."></span>
 
-<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_doesn_t_work__see_your_hardware_documentation."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_doesn_t_work__see_your_hardware_documentation."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOESN_T_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION."></span>**Error del sistema: intente cambiar el controlador para este dispositivo. Si eso no funciona, consulte la documentación del hardware.** (23)
+<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_doesn_t_work__see_your_hardware_documentation."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_doesn_t_work__see_your_hardware_documentation."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOESN_T_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION."></span>**Error del sistema: intente cambiar el controlador de este dispositivo. Si eso no funciona, consulte la documentación de hardware.** (23)
 
 
 </dt> <dd>
 
-Error del sistema. Si el cambio de controlador de dispositivo es ineficaz, consulte la documentación del hardware.
+Error del sistema. Si cambiar el controlador del dispositivo no es eficaz, consulte la documentación de hardware.
 
 </dd> <dt>
 
@@ -658,23 +658,23 @@ El dispositivo no está presente, no funciona correctamente o no tiene todos sus
 
 <span id="Windows_is_still_setting_up_this_device."></span><span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>
 
-<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**Windows todavía está configurando este dispositivo.** (25)
+<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**Windows está configurando este dispositivo.** (25)
 
 
 </dt> <dd>
 
-Windows todavía está configurando el dispositivo.
+Windows está configurando el dispositivo.
 
 </dd> <dt>
 
 <span id="Windows_is_still_setting_up_this_device."></span><span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>
 
-<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**Windows todavía está configurando este dispositivo.** (26)
+<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**Windows está configurando este dispositivo.** (26)
 
 
 </dt> <dd>
 
-Windows todavía está configurando el dispositivo.
+Windows está configurando el dispositivo.
 
 </dd> <dt>
 
@@ -702,34 +702,34 @@ Los controladores de dispositivo no están instalados.
 
 <span id="This_device_is_disabled_because_the_firmware_of_the_device_did_not_give_it_the_required_resources."></span><span id="this_device_is_disabled_because_the_firmware_of_the_device_did_not_give_it_the_required_resources."></span><span id="THIS_DEVICE_IS_DISABLED_BECAUSE_THE_FIRMWARE_OF_THE_DEVICE_DID_NOT_GIVE_IT_THE_REQUIRED_RESOURCES."></span>
 
-<span id="this_device_is_disabled_because_the_firmware_of_the_device_did_not_give_it_the_required_resources."></span><span id="THIS_DEVICE_IS_DISABLED_BECAUSE_THE_FIRMWARE_OF_THE_DEVICE_DID_NOT_GIVE_IT_THE_REQUIRED_RESOURCES."></span>**Este dispositivo está deshabilitado porque el firmware del dispositivo no le proporcionó los recursos necesarios.** (29)
+<span id="this_device_is_disabled_because_the_firmware_of_the_device_did_not_give_it_the_required_resources."></span><span id="THIS_DEVICE_IS_DISABLED_BECAUSE_THE_FIRMWARE_OF_THE_DEVICE_DID_NOT_GIVE_IT_THE_REQUIRED_RESOURCES."></span>**Este dispositivo está deshabilitado porque el firmware del dispositivo no le ha dado los recursos necesarios.** (29)
 
 
 </dt> <dd>
 
-El dispositivo está deshabilitado. El firmware del dispositivo no proporcionó los recursos necesarios.
+El dispositivo está deshabilitado. El firmware del dispositivo no proporcionaba los recursos necesarios.
 
 </dd> <dt>
 
 <span id="This_device_is_using_an_Interrupt_Request__IRQ__resource_that_another_device_is_using."></span><span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>
 
-<span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>**Este dispositivo usa un recurso de solicitud de interrupción (IRQ) que otro dispositivo está usando.** (30)
+<span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>**Este dispositivo usa un recurso de solicitud de interrupción (IRQ) que usa otro dispositivo.** (30)
 
 
 </dt> <dd>
 
-El dispositivo usa un recurso de IRQ que otro dispositivo está usando.
+El dispositivo usa un recurso IRQ que usa otro dispositivo.
 
 </dd> <dt>
 
 <span id="This_device_is_not_working_properly_because_Windows_cannot_load_the_drivers_required_for_this_device."></span><span id="this_device_is_not_working_properly_because_windows_cannot_load_the_drivers_required_for_this_device."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_WINDOWS_CANNOT_LOAD_THE_DRIVERS_REQUIRED_FOR_THIS_DEVICE."></span>
 
-<span id="this_device_is_not_working_properly_because_windows_cannot_load_the_drivers_required_for_this_device."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_WINDOWS_CANNOT_LOAD_THE_DRIVERS_REQUIRED_FOR_THIS_DEVICE."></span>**Este dispositivo no funciona correctamente porque Windows no puede cargar los controladores necesarios para este dispositivo.** 31
+<span id="this_device_is_not_working_properly_because_windows_cannot_load_the_drivers_required_for_this_device."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_WINDOWS_CANNOT_LOAD_THE_DRIVERS_REQUIRED_FOR_THIS_DEVICE."></span>**Este dispositivo no funciona correctamente porque Windows puede cargar los controladores necesarios para este dispositivo.** (31)
 
 
 </dt> <dd>
 
-El dispositivo no funciona correctamente. Windows no puede cargar los controladores de dispositivos necesarios.
+El dispositivo no funciona correctamente. Windows cargar los controladores de dispositivo necesarios.
 
 </dd> </dl>
 
@@ -744,12 +744,12 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
+Calificadores: [**Esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
 </dt> </dl>
 
-Si es **true**, el dispositivo usa una configuración definida por el usuario.
+Si **es TRUE,** el dispositivo usa una configuración definida por el usuario.
 
-Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -762,12 +762,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **\_ clave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [ **Clave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Nombre de la primera clase concreta que aparece en la cadena de herencia utilizada en la creación de una instancia de. Cuando se usa con las otras propiedades de clave de la clase, la propiedad permite que todas las instancias de esta clase y sus subclases se identifiquen de forma única.
+Nombre de la primera clase concreta que aparece en la cadena de herencia utilizada en la creación de una instancia de . Cuando se usa con las demás propiedades clave de la clase , la propiedad permite que todas las instancias de esta clase y sus subclases se identifiquen de forma única.
 
-Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -780,12 +780,12 @@ Tipo de datos: **sint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Sondeo actual eléctrico DMTF \| 001,5 "), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) (" miliamperios ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Electrical Current Probe \| 001.5"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("milimperas")
 </dt> </dl>
 
 Valor actual indicado por el sensor.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor**](cim-numericsensor.md).
+Esta propiedad se hereda de [**\_ NUMERICSensor de CIM.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -798,16 +798,16 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Descripción")
+Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Description")
 </dt> </dl>
 
 Descripción del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
-**ID**
+**Deviceid**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -816,12 +816,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("DeviceId"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI")
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("DeviceId"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI")
 </dt> </dl>
 
 Identificador único del sondeo actual.
 
-Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -834,9 +834,9 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si es **true**, el error que se ha comunicado en **LastErrorCode** se borra.
+Si **es TRUE,** ahora se borra el error notificado en **LastErrorCode.**
 
-Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -851,25 +851,25 @@ Tipo de acceso: solo lectura
 
 Más información sobre el error registrado en **LastErrorCode** e información sobre las acciones correctivas que se pueden realizar.
 
-Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 "), [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" instalación de fecha ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Fecha de instalación")
 </dt> </dl>
 
 Fecha y hora en que se instaló el objeto. Esta propiedad no necesita un valor para indicar que el objeto está instalado.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -882,24 +882,24 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si es **true**, el sensor es lineal sobre su intervalo dinámico.
+Si **es TRUE,** el sensor es lineal sobre su intervalo dinámico.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor**](cim-numericsensor.md).
+Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
 
 </dd> <dt>
 
 **LastErrorCode**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Último código de error indicado por el dispositivo lógico.
+Último código de error notificado por el dispositivo lógico.
 
-Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -912,12 +912,12 @@ Tipo de datos: **sint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Sondeo actual eléctrico DMTF \| 001,13 "), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) (" miliamperios ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Electrical Current Probe \| 001.13"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("milimperas")
 </dt> </dl>
 
-Los valores de umbral del sensor especifican los intervalos (valores mínimo y máximo) para determinar si el sensor está funcionando en condiciones normales, no críticas, críticas o graves. Si **CurrentReading** está entre **LowerThresholdCritical** y **LowerThresholdFatal**, el estado actual es crítico.
+Los valores de umbral del sensor especifican los intervalos (valores mínimos y máximos) para determinar si el sensor funciona o no en condiciones normales, no críticas, críticas o fatales. Si **CurrentReading está** entre **LowerThresholdCritical** y **LowerThresholdFatal,** el estado actual es crítico.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor**](cim-numericsensor.md).
+Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -930,12 +930,12 @@ Tipo de datos: **sint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Sondeo actual eléctrico DMTF \| 001,15 "), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) (" miliamperios ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Electrical Current Probe \| 001.15"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("milimperas")
 </dt> </dl>
 
-Los valores de umbral del sensor especifican los intervalos (valores mínimo y máximo) para determinar si el sensor está funcionando en condiciones normales, no críticas, críticas o graves. Si **CurrentReading** está por debajo de **LowerThresholdFatal**, el estado actual es fatal.
+Los valores de umbral del sensor especifican los intervalos (valores mínimos y máximos) para determinar si el sensor funciona en condiciones normales, no críticas, críticas o fatales. Si **CurrentReading está** por **debajo de LowerThresholdFatal,** el estado actual es grave.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor**](cim-numericsensor.md).
+Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -948,12 +948,12 @@ Tipo de datos: **sint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Sondeo actual eléctrico DMTF \| 001,11 "), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) (" miliamperios ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Electrical Current Probe \| 001.11"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("milimperas")
 </dt> </dl>
 
-Los valores de umbral del sensor especifican los intervalos (valores mínimo y máximo) para determinar si el sensor está funcionando en condiciones normales, no críticas, críticas o graves. Si **CurrentReading** está entre **LowerThresholdNonCritical** y **UpperThresholdNonCritical**, el sensor informa de un valor normal. Si **CurrentReading** está entre **LowerThresholdNonCritical** y **LowerThresholdCritical**, el estado actual es no crítico.
+Los valores de umbral del sensor especifican los intervalos (valores mínimos y máximos) para determinar si el sensor funciona en condiciones normales, no críticas, críticas o fatales. Si **CurrentReading está** entre **LowerThresholdNonCritical** y **UpperThresholdNonCritical,** el sensor informa de un valor normal. Si **CurrentReading está** entre **LowerThresholdNonCritical** y **LowerThresholdCritical,** el estado actual no es crítico.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor**](cim-numericsensor.md).
+Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -966,12 +966,12 @@ Tipo de datos: **sint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Sondeo actual eléctrico DMTF \| 001,9 "), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) (" miliamperios ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Electrical Current Probe \| 001.9"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("milimperas")
 </dt> </dl>
 
-Valor mayor de la propiedad medida que puede ser leída por el sensor numérico.
+Valor más grande de la propiedad medida que puede leer el sensor numérico.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor**](cim-numericsensor.md).
+Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -984,12 +984,12 @@ Tipo de datos: **sint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Sondeo actual eléctrico DMTF \| 001,10 "), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) (" miliamperios ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Electrical Current Probe \| 001.10"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("milimperas")
 </dt> </dl>
 
-Valor menor de la propiedad medida que puede ser leída por el sensor numérico.
+Valor más pequeño de la propiedad medida que puede leer el sensor numérico.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor**](cim-numericsensor.md).
+Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -1002,12 +1002,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
+Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre")
 </dt> </dl>
 
-Etiqueta por la que se conoce el objeto. Cuando se subclasen, la propiedad se puede invalidar para ser una propiedad de clave.
+Etiqueta por la que se conoce el objeto. Cuando se subclasifica, la propiedad se puede invalidar para que sea una propiedad de clave.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -1020,12 +1020,12 @@ Tipo de datos: **sint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Sondeo actual eléctrico DMTF \| 001,6 "), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) (" miliamperios ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Electrical Current Probe \| 001.6"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("milimperas")
 </dt> </dl>
 
 Valor normal o esperado para el sensor numérico.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor**](cim-numericsensor.md).
+Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -1038,12 +1038,12 @@ Tipo de datos: **sint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Sondeo actual eléctrico DMTF \| 001,7 "), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) (" miliamperios ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Electrical Current Probe \| 001.7"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("milimperas")
 </dt> </dl>
 
 Valor normal o esperado para el sensor numérico.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor**](cim-numericsensor.md).
+Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -1056,12 +1056,12 @@ Tipo de datos: **sint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Sondeo actual eléctrico DMTF \| 001,8 "), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) (" miliamperios ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Electrical Current Probe \| 001.8"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("milimperas")
 </dt> </dl>
 
 Instrucciones para el usuario sobre el intervalo mínimo normal para el sensor numérico.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor**](cim-numericsensor.md).
+Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -1074,29 +1074,29 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
+Calificadores: [**Esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
 </dt> </dl>
 
-Identificador de dispositivo de Windows Plug and Play del dispositivo lógico.
+Windows Plug and Play identificador de dispositivo del dispositivo lógico.
 
-Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
-Ejemplo: " \* PNP030b"
+Ejemplo: \* "PNP030b"
 
 </dd> <dt>
 
 **PowerManagementCapabilities**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Matriz de las capacidades específicas de energía relacionadas con el dispositivo lógico.
+Matriz de las funcionalidades específicas relacionadas con la energía de un dispositivo lógico.
 
-Esta propiedad se hereda del **\_ LogicalDevice de CIM**.
+Esta propiedad se hereda de **CIM \_ LogicalDevice**.
 
 <dt>
 
@@ -1134,7 +1134,7 @@ Las características de administración de energía están habilitadas actualmen
 
 <span id="Power_Saving_Modes_Entered_Automatically"></span><span id="power_saving_modes_entered_automatically"></span><span id="POWER_SAVING_MODES_ENTERED_AUTOMATICALLY"></span>
 
-<span id="Power_Saving_Modes_Entered_Automatically"></span><span id="power_saving_modes_entered_automatically"></span><span id="POWER_SAVING_MODES_ENTERED_AUTOMATICALLY"></span>**Modos de ahorro de energía introducidos automáticamente** (4)
+<span id="Power_Saving_Modes_Entered_Automatically"></span><span id="power_saving_modes_entered_automatically"></span><span id="POWER_SAVING_MODES_ENTERED_AUTOMATICALLY"></span>**Modos de ahorro de energía especificados automáticamente** (4)
 
 
 </dt> <dd>
@@ -1145,36 +1145,36 @@ El dispositivo puede cambiar su estado de energía en función del uso u otros c
 
 <span id="Power_State_Settable"></span><span id="power_state_settable"></span><span id="POWER_STATE_SETTABLE"></span>
 
-<span id="Power_State_Settable"></span><span id="power_state_settable"></span><span id="POWER_STATE_SETTABLE"></span>**Estado de energía configurable** (5)
+<span id="Power_State_Settable"></span><span id="power_state_settable"></span><span id="POWER_STATE_SETTABLE"></span>**Power State Settable** (5)
 
 
 </dt> <dd>
 
-Se admite el método [**SetPowerState**](setpowerstate-method-in-class-cim-controller.md) . Este método se encuentra en la clase primaria de **\_ LogicalDevice de CIM** y se puede implementar. Para obtener más información, vea [diseñar clases Managed Object Format (MOF)](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes).
+Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase **\_ logicalDevice** de CIM primaria y se puede implementar. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes .](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes)
 
 </dd> <dt>
 
 <span id="Power_Cycling_Supported"></span><span id="power_cycling_supported"></span><span id="POWER_CYCLING_SUPPORTED"></span>
 
-<span id="Power_Cycling_Supported"></span><span id="power_cycling_supported"></span><span id="POWER_CYCLING_SUPPORTED"></span>**Ciclo de energía admitido** (6)
+<span id="Power_Cycling_Supported"></span><span id="power_cycling_supported"></span><span id="POWER_CYCLING_SUPPORTED"></span>**Power Cycling compatible** (6)
 
 
 </dt> <dd>
 
-El método [**SetPowerState**](setpowerstate-method-in-class-cim-controller.md) se puede invocar con el parámetro *PowerState* establecido en 5 (ciclo de alimentación).
+El [**método SetPowerState**](setpowerstate-method-in-class-cim-controller.md) se puede invocar con el *parámetro PowerState* establecido en 5 (Ciclo de energía).
 
 </dd> <dt>
 
 <span id="Timed_Power_On_Supported"></span><span id="timed_power_on_supported"></span><span id="TIMED_POWER_ON_SUPPORTED"></span>
 
-<span id="Timed_Power_On_Supported"></span><span id="timed_power_on_supported"></span><span id="TIMED_POWER_ON_SUPPORTED"></span>Se **admite el encendido con tiempo** (7)
+<span id="Timed_Power_On_Supported"></span><span id="timed_power_on_supported"></span><span id="TIMED_POWER_ON_SUPPORTED"></span>**Encendido con tiempo de encendido admitido** (7)
 
 
 </dt> <dd>
 
-Power-On de tiempo admitido
+Se admiten Power-On tiempo
 
-El método [**SetPowerState**](setpowerstate-method-in-class-cim-controller.md) se puede invocar con el parámetro *PowerState* establecido en 5 (ciclo de energía) y la *hora* establecida en una fecha y hora específicas, o intervalo, para el encendido.
+El [**método SetPowerState**](setpowerstate-method-in-class-cim-controller.md) se puede invocar con el parámetro  *PowerState* establecido en 5 (ciclo de energía) y el tiempo establecido en una fecha y hora específicas, o un intervalo, para el encendido.
 
 </dd> </dl>
 
@@ -1189,27 +1189,27 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es true**, el dispositivo puede administrarse con energía (se puede poner en modo de suspensión, etc.). La propiedad no indica que las características de administración de energía están habilitadas actualmente, solo que el dispositivo lógico es capaz de administrar energía.
+Si **es TRUE,** el dispositivo se puede administrar mediante energía (se puede poner en modo de suspensión, y así sucesivamente). La propiedad no indica que las características de administración de energía están habilitadas actualmente, solo que el dispositivo lógico es capaz de la administración de energía.
 
-Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
 **Resolución**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Sondeo actual eléctrico DMTF \| 001,17 "), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) (" décimas de miliamperios ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Electrical Current Probe \| 001.17"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("décimos de milimperas")
 </dt> </dl>
 
 Capacidad del sensor para resolver las diferencias en la propiedad medida. Este valor puede variar en función de si el dispositivo es lineal sobre su intervalo dinámico.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor**](cim-numericsensor.md).
+Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -1222,12 +1222,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("status")
+Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Status")
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios Estados operativos y no operativos. Los Estados operativos incluyen: "correcto", "degradado" y "Pred FAIL" (un elemento, como una unidad de disco duro habilitada para SMART, puede estar funcionando correctamente pero prediciendo un error en un futuro próximo). Los Estados no operativos incluyen: "error", "iniciando", "deteniendo" y "servicio". El último, "servicio", se puede aplicar durante la resilverización del reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo el trabajo está en línea, pero el elemento administrado no es "OK" ni está en uno de los otros Estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Los estados no operativo incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Los valores son los siguientes:
 
@@ -1235,84 +1235,84 @@ Los valores son los siguientes:
 
 <span id="OK"></span><span id="ok"></span>
 
-**Aceptar** ("Aceptar")
+**Ok** ("OK")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Error** ("error")
+**Error** ("Error")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradado** ("degradado")
+**Degradado** ("Degradado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("desconocido")
+**Desconocido** ("Desconocido")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Pred FAIL** ("Pred FAIL")
+**Error de pred** ("error de pred")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Iniciando** ("iniciando")
+**A partir** de ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("detener")
+**Detener** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servicio** ("servicio")
+**Servicio** ("Servicio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-Con **estrés** ("acentuado")
+**Estresado** ("estresado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Recover** ("Recover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Sin contacto** ("sin contacto")
+**Sin contacto** ("Sin contacto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicación perdida** ("pérdida de comunicación")
+**Comm perdido** ("Comm perdido")
 
 
 </dt> <dd></dd> </dl>
@@ -1322,24 +1322,24 @@ Con **estrés** ("acentuado")
 **StatusInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Estado operativo DMTF \| 003,3 ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Operational State \| 003.3")
 </dt> </dl>
 
-Estado del dispositivo lógico. Si esta propiedad no se aplica al dispositivo lógico, se debe usar el valor 5 (no aplicable).
+Estado del dispositivo lógico. Si esta propiedad no se aplica al dispositivo lógico, se debe usar el valor 5 (No aplicable).
 
-Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -1383,12 +1383,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ([**" \_ Sistema CIM**](cim-system.md).**CreationClassName**"), [**\_ clave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Valor de la propiedad **CreationClassName** del equipo de ámbito.
 
-Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -1401,12 +1401,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ([**" \_ Sistema CIM**](cim-system.md).**Name**"), [**\_ clave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**Nombre**"), [**Clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Nombre del sistema de ámbito.
 
-Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](cim-logicaldevice.md).
+Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -1419,12 +1419,12 @@ Tipo de datos: **sint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Sondeo actual eléctrico DMTF \| 001,18 "), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) (" miliamperios ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Electrical Current Probe \| 001.18"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("milimperas")
 </dt> </dl>
 
-Tolerancia del sensor para la propiedad medida. La tolerancia, junto con la resolución y la precisión, se usa para calcular el valor real de la propiedad física medida. La tolerancia puede variar en función de si el dispositivo es lineal sobre su intervalo dinámico.
+Tolerancia del sensor para la propiedad medida. La tolerancia, junto con la resolución y la precisión, se usa para calcular el valor real de la propiedad física medida. La tolerancia puede variar en función de si el dispositivo es lineal en su intervalo dinámico.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor**](cim-numericsensor.md).
+Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -1437,12 +1437,12 @@ Tipo de datos: **sint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Sondeo actual eléctrico DMTF \| 001,14 "), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) (" miliamperios ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Electrical Current Probe \| 001.14"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("milimperas")
 </dt> </dl>
 
-Los valores de umbral del sensor especifican los intervalos (valores mínimo y máximo) para determinar si el sensor está funcionando en condiciones normales, no críticas, críticas o graves. Si **CurrentReading** está entre **UpperThresholdCritical** y **UpperThresholdFatal**, el estado actual es crítico.
+Los valores de umbral del sensor especifican los intervalos (valores mínimos y máximos) para determinar si el sensor funciona en condiciones normales, no críticas, críticas o fatales. Si **CurrentReading está** entre **UpperThresholdCritical** y **UpperThresholdFatal,** el estado actual es crítico.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor**](cim-numericsensor.md).
+Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -1455,12 +1455,12 @@ Tipo de datos: **sint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Sondeo actual eléctrico DMTF \| 001,16 "), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) (" miliamperios ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Electrical Current Probe \| 001.16"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("milimperas")
 </dt> </dl>
 
-Los valores de umbral del sensor especifican los intervalos (valores mínimo y máximo) para determinar si el sensor está funcionando en condiciones normales, no críticas, críticas o graves. Si **CurrentReading** está por encima de **UpperThresholdFatal**, el estado actual es fatal.
+Los valores de umbral del sensor especifican los intervalos (valores mínimos y máximos) para determinar si el sensor funciona en condiciones normales, no críticas, críticas o fatales. Si **CurrentReading está** por encima **de UpperThresholdFatal,** el estado actual es grave.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor**](cim-numericsensor.md).
+Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -1473,18 +1473,18 @@ Tipo de datos: **sint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Sondeo actual eléctrico DMTF \| 001,12 "), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) (" miliamperios ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Electrical Current Probe \| 001.12"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("milimperas")
 </dt> </dl>
 
-Los valores de umbral del sensor especifican los intervalos (valores mínimo y máximo) para determinar si el sensor está funcionando en condiciones normales, no críticas, críticas o graves. Si **CurrentReading** está entre **LowerThresholdNonCritical** y **UpperThresholdNonCritical**, el sensor informa de un valor normal. Si **CurrentReading** está entre **UpperThresholdNonCritical** y **UpperThresholdCritical**, el estado actual es no crítico.
+Los valores de umbral del sensor especifican los intervalos (valores mínimos y máximos) para determinar si el sensor funciona en condiciones normales, no críticas, críticas o fatales. Si **CurrentReading está** entre **LowerThresholdNonCritical** y **UpperThresholdNonCritical,** el sensor informa de un valor normal. Si **CurrentReading está** entre **UpperThresholdNonCritical** y **UpperThresholdCritical,** el estado actual no es crítico.
 
-Esta propiedad se hereda de [**CIM \_ NumericSensor**](cim-numericsensor.md).
+Esta propiedad se hereda de [**CIM \_ NumericSensor.**](cim-numericsensor.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La **clase \_ CurrentProbe de Win32** se deriva de [**\_ CurrentSensor de CIM**](cim-currentsensor.md).
+La **clase \_ CurrentProbe de Win32** se deriva de [**CIM \_ CurrentSensor**](cim-currentsensor.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -1494,8 +1494,8 @@ La **clase \_ CurrentProbe de Win32** se deriva de [**\_ CurrentSensor de CIM**]
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -1504,10 +1504,10 @@ La **clase \_ CurrentProbe de Win32** se deriva de [**\_ CurrentSensor de CIM**]
 
 <dl> <dt>
 
-[**\_CURRENTSENSOR CIM**](cim-currentsensor.md)
+[**CIM \_ CurrentSensor**](cim-currentsensor.md)
 </dt> <dt>
 
-[Clases de hardware de sistema del equipo](computer-system-hardware-classes.md)
+[Clases de hardware del sistema de equipo](computer-system-hardware-classes.md)
 </dt> </dl>
 
  

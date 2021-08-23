@@ -1,5 +1,5 @@
 ---
-description: Especifica la configuración de EAPHost.
+description: especifica la configuración de EAPHost.
 ms.assetid: 71ec3ed6-3670-46fc-a24b-580d15297437
 title: Elemento EAPConfig (OneX)
 ms.topic: reference
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 955b3647aca787097495b6051407b718dfa91f53
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 539f30d6730ec0735006f9dd3812322468ce71c7b0fbd90610b6cd589e0d60bf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667142"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119684885"
 ---
 # <a name="eapconfig-onex-element"></a>Elemento EAPConfig (OneX)
 
-El elemento **EAPConfig** (Onex) especifica la configuración de EAPHost.
+El **elemento EAPConfig** (OneX) especifica la configuración de EAPHost.
 
-A diferencia de la mayoría de los elementos del esquema de perfil 802.1 X, este elemento se encuentra en el `https://www.microsoft.com/provisioning/EapHostConfig` espacio de nombres. Sus elementos secundarios se definen en el [esquema eaphostconfig](../eaphost/eaphostconfigschema-schema.md). El elemento [**EapHostConfig**](../eaphost/eaphostconfigschema-eaphostconfig-element.md) es un elemento secundario del elemento **EAPConfig** .
+A diferencia de la mayoría de los elementos del esquema de perfil 802.1X, este elemento está en el espacio de `https://www.microsoft.com/provisioning/EapHostConfig` nombres . Sus elementos secundarios se definen en el [esquema eaphostconfig](../eaphost/eaphostconfigschema-schema.md). El [**elemento EapHostConfig**](../eaphost/eaphostconfigschema-eaphostconfig-element.md) es un elemento secundario del **elemento EAPConfig.**
 
 ``` syntax
 <xs:element name="EAPConfig">
@@ -40,16 +40,16 @@ A diferencia de la mayoría de los elementos del esquema de perfil 802.1 X, este
 </xs:element>
 ```
 
-El elemento **EAPConfig** se define mediante el elemento [**Onex**](onexschema-onex-element.md) .
+El **elemento EAPConfig** se define mediante el [**elemento OneX.**](onexschema-onex-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista, Windows XP con SP3 \[ solo aplicaciones de escritorio\]<br/> |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                |
+| Cliente mínimo compatible<br/> | Windows Vista, Windows XP solo con aplicaciones de escritorio sp3 \[\]<br/> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                |
 | Redistribuible<br/>          | API de LAN inalámbrica para Windows XP con SP2<br/>                 |
 
 
@@ -61,13 +61,13 @@ El elemento **EAPConfig** se define mediante el elemento [**Onex**](onexschema-o
 **Contexto de definición del elemento en el esquema**
 </dt> <dt>
 
-[**Onex-**](onexschema-onex-element.md)
+[**Onex**](onexschema-onex-element.md)
 </dt> <dt>
 
 **Posible elemento primario inmediato en la instancia de esquema**
 </dt> <dt>
 
-[**Onex-**](onexschema-onex-element.md)
+[**Onex**](onexschema-onex-element.md)
 </dt> </dl>
 
  

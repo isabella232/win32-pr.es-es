@@ -1,7 +1,7 @@
 ---
-description: Marca que indica si el PIN se está vaciando actualmente. Si es TRUE, el PIN se está vaciando.
+description: Marca que indica si el pin se está vacíando actualmente. Si es TRUE, el pin se vacíe.
 ms.assetid: 5f5433e4-6c10-4e85-bcc7-68edea90db6b
-title: 'Miembro CBaseInputPin:: m_bFlushing (Amfilter. h)'
+title: Miembro CBaseInputPin::m_bFlushing (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ec7d04118cce54b0fe3e589ebb533b8527e1c51e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 987eec4340a6ea5c63e145c2109eea5668aa0185869d23390988b333556041c3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661011"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119640265"
 ---
-# <a name="cbaseinputpinm_bflushing-member"></a>Miembro bFlushing CBaseInputPin:: m \_
+# <a name="cbaseinputpinm_bflushing-member"></a>Miembro CBaseInputPin::m \_ bFlushing
 
-Marca que indica si el PIN se está vaciando actualmente. Si es **true**, el PIN se está vaciando.
+Marca que indica si el pin se está vacíando actualmente. Si **es TRUE,** el pin se vacíe.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ BYTE m_bFlushing;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ BYTE m_bFlushing;
 
 <dl> <dt>
 
-[**Clase CBaseInputPin**](cbaseinputpin.md)
+[**CBaseInputPin (clase)**](cbaseinputpin.md)
 </dt> </dl>
 
  

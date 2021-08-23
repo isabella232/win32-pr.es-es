@@ -1,11 +1,11 @@
 ---
-title: COM-InterfaceID atributo)
+title: COM-InterfaceID atributo
 description: Este atributo almacena la lista de interfaces que se implementan en este paquete de aplicación.
 ms.assetid: 56bdab1e-620b-4677-8307-14a7b24aa49e
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de COM-InterfaceID
-- cOMInterfaceID esquema de AD de atributos
+- COM-InterfaceID esquema de AD del atributo
+- Esquema de AD del atributo cOMInterfaceID
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7639011aaa0c6a03c2ef9efbc774fe6bff1d9db1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c599ae6e5e8cc969d69f28b53d0ad855928970c2a5de031209e860c9b1aad602
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906246"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509615"
 ---
-# <a name="com-interfaceid-attribute"></a>COM-InterfaceID atributo)
+# <a name="com-interfaceid-attribute"></a>COM-InterfaceID atributo
 
 Este atributo almacena la lista de interfaces que se implementan en este paquete de aplicación.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|----------------------------------------------------------------------------------|
 | CN                | COM-InterfaceID                                                                  |
-| Nombre para mostrar de LDAP | cOMInterfaceID                                                                   |
-| Tamaño              | \-                                                                               |
-| Actualizar privilegio  | Cualquier usuario puede actualizar este objeto en función de la seguridad del objeto que se va a crear. |
+| Ldap-Display-Name | cOMInterfaceID                                                                   |
+| Size              | \-                                                                               |
+| Privilegio actualizar  | Cualquier persona puede actualizar este objeto en función de la seguridad del objeto que se va a crear. |
 | Frecuencia de actualización  | \-                                                                               |
 | Attribute-Id      | 1.2.840.113556.1.4.20                                                            |
-| System-ID-GUID    | bf96793c-0de6-11d0-a285-00aa003049e2                                             |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                                      |
+| System-Id-Guid    | bf96793c-0de6-11d0-a285-00aa003049e2                                             |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
 
@@ -55,18 +55,18 @@ Este atributo almacena la lista de interfaces que se implementan en este paquete
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                             |
+| Id. de vínculo                | \-                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                             |
-| System-Only            | False                                                                                                                                                                          |
-| Tiene un único valor       | False                                                                                                                                                                          |
-| Está indexado             | False                                                                                                                                                                          |
-| En el catálogo global      | False                                                                                                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                   |
+| System-Only            | Falso                                                                                                                                                                          |
+| Es de un solo valor       | Falso                                                                                                                                                                          |
+| Está indexado             | Falso                                                                                                                                                                          |
+| En el catálogo global      | Falso                                                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                   |
 | Range-Lower            | 36                                                                                                                                                                             |
 | Range-Upper            | 36                                                                                                                                                                             |
 | Search-Flags           | 0x00000000                                                                                                                                                                     |
 | System-Flags           | 0x00000010                                                                                                                                                                     |
-| Clases usadas en        | [**Registro de clases**](c-classregistration.md)<br/> [**Paquete-registro**](c-packageregistration.md)<br/> [**Biblioteca de tipos**](c-typelibrary.md)<br/> |
+| Clases usadas en        | [**Registro de clases**](c-classregistration.md)<br/> [**Registro de paquetes**](c-packageregistration.md)<br/> [**Biblioteca de tipos**](c-typelibrary.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Este atributo almacena la lista de interfaces que se implementan en este paquete
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                             |
+| Id. de vínculo                | \-                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                             |
-| System-Only            | False                                                                                                                                                                          |
-| Tiene un único valor       | False                                                                                                                                                                          |
-| Está indexado             | False                                                                                                                                                                          |
-| En el catálogo global      | False                                                                                                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                   |
+| System-Only            | Falso                                                                                                                                                                          |
+| Es de un solo valor       | Falso                                                                                                                                                                          |
+| Está indexado             | Falso                                                                                                                                                                          |
+| En el catálogo global      | Falso                                                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                   |
 | Range-Lower            | 36                                                                                                                                                                             |
 | Range-Upper            | 36                                                                                                                                                                             |
 | Search-Flags           | 0x00000000                                                                                                                                                                     |
 | System-Flags           | 0x00000010                                                                                                                                                                     |
-| Clases usadas en        | [**Registro de clases**](c-classregistration.md)<br/> [**Paquete-registro**](c-packageregistration.md)<br/> [**Biblioteca de tipos**](c-typelibrary.md)<br/> |
+| Clases usadas en        | [**Registro de clases**](c-classregistration.md)<br/> [**Registro de paquetes**](c-packageregistration.md)<br/> [**Biblioteca de tipos**](c-typelibrary.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Este atributo almacena la lista de interfaces que se implementan en este paquete
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                             |
+| Id. de vínculo                | \-                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                             |
-| System-Only            | False                                                                                                                                                                          |
-| Tiene un único valor       | False                                                                                                                                                                          |
-| Está indexado             | False                                                                                                                                                                          |
-| En el catálogo global      | False                                                                                                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                   |
+| System-Only            | Falso                                                                                                                                                                          |
+| Es de un solo valor       | Falso                                                                                                                                                                          |
+| Está indexado             | Falso                                                                                                                                                                          |
+| En el catálogo global      | Falso                                                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                   |
 | Range-Lower            | 36                                                                                                                                                                             |
 | Range-Upper            | 36                                                                                                                                                                             |
 | Search-Flags           | 0x00000000                                                                                                                                                                     |
 | System-Flags           | 0x00000010                                                                                                                                                                     |
-| Clases usadas en        | [**Registro de clases**](c-classregistration.md)<br/> [**Paquete-registro**](c-packageregistration.md)<br/> [**Biblioteca de tipos**](c-typelibrary.md)<br/> |
+| Clases usadas en        | [**Registro de clases**](c-classregistration.md)<br/> [**Registro de paquetes**](c-packageregistration.md)<br/> [**Biblioteca de tipos**](c-typelibrary.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Este atributo almacena la lista de interfaces que se implementan en este paquete
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                             |
+| Id. de vínculo                | \-                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                             |
-| System-Only            | False                                                                                                                                                                          |
-| Tiene un único valor       | False                                                                                                                                                                          |
-| Está indexado             | False                                                                                                                                                                          |
-| En el catálogo global      | False                                                                                                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                   |
+| System-Only            | Falso                                                                                                                                                                          |
+| Es de un solo valor       | Falso                                                                                                                                                                          |
+| Está indexado             | Falso                                                                                                                                                                          |
+| En el catálogo global      | Falso                                                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                   |
 | Range-Lower            | 36                                                                                                                                                                             |
 | Range-Upper            | 36                                                                                                                                                                             |
 | Search-Flags           | 0x00000000                                                                                                                                                                     |
 | System-Flags           | 0x00000010                                                                                                                                                                     |
-| Clases usadas en        | [**Registro de clases**](c-classregistration.md)<br/> [**Paquete-registro**](c-packageregistration.md)<br/> [**Biblioteca de tipos**](c-typelibrary.md)<br/> |
+| Clases usadas en        | [**Registro de clases**](c-classregistration.md)<br/> [**Registro de paquetes**](c-packageregistration.md)<br/> [**Biblioteca de tipos**](c-typelibrary.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Este atributo almacena la lista de interfaces que se implementan en este paquete
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                             |
+| Id. de vínculo                | \-                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                             |
-| System-Only            | False                                                                                                                                                                          |
-| Tiene un único valor       | False                                                                                                                                                                          |
-| Está indexado             | False                                                                                                                                                                          |
-| En el catálogo global      | False                                                                                                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                   |
+| System-Only            | Falso                                                                                                                                                                          |
+| Es de un solo valor       | Falso                                                                                                                                                                          |
+| Está indexado             | Falso                                                                                                                                                                          |
+| En el catálogo global      | Falso                                                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                   |
 | Range-Lower            | 36                                                                                                                                                                             |
 | Range-Upper            | 36                                                                                                                                                                             |
 | Search-Flags           | 0x00000000                                                                                                                                                                     |
 | System-Flags           | 0x00000010                                                                                                                                                                     |
-| Clases usadas en        | [**Registro de clases**](c-classregistration.md)<br/> [**Paquete-registro**](c-packageregistration.md)<br/> [**Biblioteca de tipos**](c-typelibrary.md)<br/> |
+| Clases usadas en        | [**Registro de clases**](c-classregistration.md)<br/> [**Registro de paquetes**](c-packageregistration.md)<br/> [**Biblioteca de tipos**](c-typelibrary.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Este atributo almacena la lista de interfaces que se implementan en este paquete
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                             |
+| Id. de vínculo                | \-                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                             |
-| System-Only            | False                                                                                                                                                                          |
-| Tiene un único valor       | False                                                                                                                                                                          |
-| Está indexado             | False                                                                                                                                                                          |
-| En el catálogo global      | False                                                                                                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                   |
+| System-Only            | Falso                                                                                                                                                                          |
+| Es de un solo valor       | Falso                                                                                                                                                                          |
+| Está indexado             | Falso                                                                                                                                                                          |
+| En el catálogo global      | Falso                                                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                   |
 | Range-Lower            | 36                                                                                                                                                                             |
 | Range-Upper            | 36                                                                                                                                                                             |
 | Search-Flags           | 0x00000000                                                                                                                                                                     |
 | System-Flags           | 0x00000010                                                                                                                                                                     |
-| Clases usadas en        | [**Registro de clases**](c-classregistration.md)<br/> [**Paquete-registro**](c-packageregistration.md)<br/> [**Biblioteca de tipos**](c-typelibrary.md)<br/> |
+| Clases usadas en        | [**Registro de clases**](c-classregistration.md)<br/> [**Registro de paquetes**](c-packageregistration.md)<br/> [**Biblioteca de tipos**](c-typelibrary.md)<br/> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: El nombre de dominio del proveedor de red doméstica del dispositivo, que identifica al operador de la red.
+description: Nombre de dominio del proveedor de red principal del dispositivo, que identifica el operador de la red.
 ms.assetid: 7676e1d8-a414-401f-989c-9f60068b92d8
 title: Elemento DomainName (Hotspot2)
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 670fc91771ee0a47cd7f16f617d052df2e567b2d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 216d29e578b3e6f86942df4eaac33112de27759984b384a5fd548221513e00f2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677426"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119684245"
 ---
 # <a name="domainname-hotspot2-element"></a>Elemento DomainName (Hotspot2)
 
-El nombre de dominio del proveedor de red doméstica del dispositivo, que identifica al operador de la red.
+Nombre de dominio del proveedor de red principal del dispositivo, que identifica el operador de la red.
 
 ``` syntax
 <xs:element name="DomainName"
@@ -42,7 +42,7 @@ El nombre de dominio del proveedor de red doméstica del dispositivo, que identi
 </xs:element>
 ```
 
-El elemento se define mediante el elemento [**Hotspot2**](wlan-profileschema-hotspot2-element.md) .
+El elemento se define mediante el [**elemento Hotspot2.**](wlan-profileschema-hotspot2-element.md)
 
  
 

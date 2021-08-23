@@ -1,30 +1,30 @@
 ---
-description: WMI proporciona varios calificadores adicionales para refinar aún más el aprovisionamiento de las instancias de clase y las operaciones.
+description: WMI proporciona una serie de calificadores adicionales para refinar aún más el aprovisionamiento de instancias y operaciones de clase.
 ms.assetid: 8e3f82b0-f05d-481a-8be1-648a91da5463
 ms.tgt_platform: multiple
-title: Calificadores WMI-Specific
+title: WMI-Specific calificadores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 13848f8ca9a5e889c73890439e2cdcd33381c539
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8b90a32d5bd13f9dbda9125a6752891752505215e156d65e999ca7cf372a109d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105659979"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119639515"
 ---
-# <a name="wmi-specific-qualifiers"></a>Calificadores WMI-Specific
+# <a name="wmi-specific-qualifiers"></a>WMI-Specific calificadores
 
-Además de los calificadores CIM, WMI proporciona varios calificadores adicionales para refinar aún más el aprovisionamiento de las instancias de clase y las operaciones.
+Además de los calificadores CIM, WMI proporciona una serie de calificadores adicionales para refinar aún más el aprovisionamiento de instancias y operaciones de clase.
 
-A continuación se muestra una lista de calificadores adicionales que WMI proporciona:
+A continuación se muestra una lista de calificadores adicionales que proporciona WMI:
 
 -   [Calificadores WMI estándar](standard-wmi-qualifiers.md)
 -   [Calificadores específicos del proveedor SNMP](qualifiers-specific-to-the-snmp-provider.md)
 -   [Calificadores específicos del proveedor de vistas](qualifiers-specific-to-the-view-provider.md)
 -   [Calificadores específicos del proveedor de WDM](qualifiers-specific-to-the-wdm-provider.md)
--   [Calificadores específicos de las clases de rendimiento de WMI](qualifiers-specific-to-wmi-performance-classes.md)
+-   [Calificadores específicos de las clases de rendimiento wmi](qualifiers-specific-to-wmi-performance-classes.md)
 
-Además de los calificadores, los tipos que describen el comportamiento de los calificadores se pueden aplicar a los diversos calificadores. Para obtener más información, vea [tipos de calificador](qualifier-flavors.md).
+Además de los calificadores, los tipos que describen el comportamiento de los calificadores se pueden aplicar a los distintos calificadores. Para obtener más información, vea [Qualifier Flavors](qualifier-flavors.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -33,7 +33,7 @@ Además de los calificadores, los tipos que describen el comportamiento de los c
 [Calificadores WMI](wmi-qualifiers.md)
 </dt> <dt>
 
-[Adición de un calificador](adding-a-qualifier.md)
+[Agregar un calificador](adding-a-qualifier.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Obtiene la influencia mínima del hueso. Los valores de influencia más pequeños se omiten.
+description: Obtiene la influencia mínima del pórmo. Los valores de influencia menores que se omiten.
 ms.assetid: fd546583-62c8-448c-b4e6-2f70f2ab38e6
-title: 'ID3DXSkinInfo:: GetMinBoneInfluence (método) (D3DX9Mesh. h)'
+title: Método ID3DXSkinInfo::GetMinIonalInfluence (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 21f8487a11bc4c74e4538f2030786abd7d56eb54
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6dbb0f7d9eb2bc84a2aa5423aceddb0bb204c5cf674320df5cbbdf9a5b3ae7c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103820930"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119492235"
 ---
-# <a name="id3dxskininfogetminboneinfluence-method"></a>ID3DXSkinInfo:: GetMinBoneInfluence (método)
+# <a name="id3dxskininfogetminboneinfluence-method"></a>Método ID3DXSkinInfo::GetMinIonalInfluence
 
-Obtiene la influencia mínima del hueso. Los valores de influencia más pequeños se omiten.
+Obtiene la influencia mínima del pórmo. Los valores de influencia menores que se omiten.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,9 +40,9 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Devuelve el valor de influencia del hueso mínimo.
+Devuelve el valor mínimo de influencia del pórmo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve el valor de influencia del hueso mínimo.
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -62,7 +62,7 @@ Devuelve el valor de influencia del hueso mínimo.
 [ID3DXSkinInfo](id3dxskininfo.md)
 </dt> <dt>
 
-[**ID3DXSkinInfo::SetMinBoneInfluence**](id3dxskininfo--setminboneinfluence.md)
+[**ID3DXSkinInfo::SetMinIonalInfluence**](id3dxskininfo--setminboneinfluence.md)
 </dt> </dl>
 
  

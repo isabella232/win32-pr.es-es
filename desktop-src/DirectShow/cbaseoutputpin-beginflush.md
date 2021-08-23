@@ -1,7 +1,7 @@
 ---
-description: 'El método BeginFlush inicia una operación de vaciado. Implementa el método IPin:: BeginFlush.'
+description: El método BeginFlush comienza una operación de vaciado. Implementa el método IPin::BeginFlush.
 ms.assetid: f16c8337-5b7f-47e8-810d-00ffb3b5a1b4
-title: Método CBaseOutputPin. BeginFlush (Amfilter. h)
+title: Método CBaseOutputPin.BeginFlush (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0216f74094d0c024d9b354dc594ff8d65315efbe
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5dd12216fb040601d73eb566d47ec5c8c3ceeec685bd8f7abc6877756f94c6a6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671110"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119640015"
 ---
-# <a name="cbaseoutputpinbeginflush-method"></a>CBaseOutputPin. BeginFlush, método
+# <a name="cbaseoutputpinbeginflush-method"></a>CBaseOutputPin.BeginFlush (método)
 
-El `BeginFlush` método inicia una operación de vaciado. Implementa el método [**IPin:: BeginFlush**](/windows/desktop/api/Strmif/nf-strmif-ipin-beginflush) .
+El `BeginFlush` método comienza una operación de vaciado. Implementa el [**método IPin::BeginFlush.**](/windows/desktop/api/Strmif/nf-strmif-ipin-beginflush)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve E \_ inesperado.
+Devuelve E \_ UNEXPECTED.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Solo se debe llamar a este método en los pin de entrada, por lo que la implementación de **CBaseOutputPin** devuelve E \_ inesperada.
+Solo se debe llamar a este método en los pines de entrada, por lo que la implementación **de CBaseOutputPin** devuelve E \_ UNEXPECTED.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Solo se debe llamar a este método en los pin de entrada, por lo que la implemen
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Solo se debe llamar a este método en los pin de entrada, por lo que la implemen
 
 <dl> <dt>
 
-[**Clase CBaseOutputPin**](cbaseoutputpin.md)
+[**CBaseOutputPin (clase)**](cbaseoutputpin.md)
 </dt> </dl>
 
  

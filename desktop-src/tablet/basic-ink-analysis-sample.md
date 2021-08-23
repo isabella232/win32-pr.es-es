@@ -1,42 +1,42 @@
 ---
-description: En el ejemplo de análisis de tinta básico se muestra cómo la clase InkAnalyzer divide la tinta en varios segmentos de palabras y de dibujo. Este ejemplo es una versión actualizada del ejemplo de divisor de tinta.
+description: En el ejemplo Análisis básico de entrada de lápiz se muestra cómo la clase InkAnalyzer divide la entrada de lápiz en varios segmentos de palabra y dibujo. Este ejemplo es una versión actualizada del ejemplo de divisor de lápiz.
 ms.assetid: cb9a28d9-f8c6-478e-ae43-2d30106edc7b
-title: Ejemplo básico de análisis de tinta
+title: Ejemplo básico de análisis de entrada de lápiz
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e94ac73ca9049169c6e406059665a66e8eaa6f3b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ab307deac8ac58a741b0c7f332986b09074f4f5c6a8afa53f0156a94916bf16
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105720306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119660835"
 ---
-# <a name="basic-ink-analysis-sample"></a>Ejemplo básico de análisis de tinta
+# <a name="basic-ink-analysis-sample"></a>Ejemplo básico de análisis de entrada de lápiz
 
-En el ejemplo de análisis de tinta básico se muestra cómo la clase [InkAnalyzer](/previous-versions/ms583671(v=vs.100)) divide la tinta en varios segmentos de palabras y de dibujo.
+En el ejemplo Análisis básico de entrada de lápiz se muestra cómo [la clase InkAnalyzer](/previous-versions/ms583671(v=vs.100)) divide la entrada de lápiz en varios segmentos de palabra y dibujo.
 
-Este ejemplo es una versión actualizada del [ejemplo de divisor de tinta](ink-divider-sample.md). Mientras que el ejemplo de divisor de tinta utiliza la clase [divisor](/previous-versions/ms839398(v=msdn.10)) , en este ejemplo se usa la API InkAnalysis más reciente y preferida. La API InkAnalysis combina el [RecognizerContext](/previous-versions/ms828542(v=msdn.10)) y el divisor en una API y expande la funcionalidad de ambos.
+Este ejemplo es una versión actualizada del ejemplo [de divisor de lápiz.](ink-divider-sample.md) Mientras que el ejemplo de divisor de entrada de lápiz usa la [clase Divider,](/previous-versions/ms839398(v=msdn.10)) en este ejemplo se usa la API InkAnalysis más reciente y preferida. InkAnalysis API combina [RecognizerContext](/previous-versions/ms828542(v=msdn.10)) y Divider en una API y amplía la funcionalidad de ambos.
 
-Al actualizar el formulario, el ejemplo dibuja un rectángulo alrededor de cada unidad analizada: palabras, líneas, párrafos, regiones de escritura, dibujos y viñetas. El formulario usa colores diferentes para las distintas unidades. Los rectángulos también se amplían en diferentes cantidades para asegurarse de que ningún rectángulo esté oculto por otros.
+Al actualizar el formulario, el ejemplo dibuja un rectángulo alrededor de cada unidad analizada: palabras, líneas, párrafos, regiones de escritura, dibujos y viñetas. El formulario usa colores diferentes para las distintas unidades. Los rectángulos también se amplían en diferentes cantidades para asegurarse de que ningún otro rectángulo esté oculto por ningún otro.
 
-En la tabla siguiente se especifica el color y la ampliación de cada unidad analizada.
+En la tabla siguiente se especifica el color y la temperatura de cada unidad analizada.
 
 
 
-| Unidad analizada             | Color del rectángulo | Ampliación de rectángulo (píxeles) |
+| Unidad analizada             | Color del rectángulo | Rectángulo de rectángulo (píxeles) |
 |---------------------------|--------------------|--------------------------------|
 | Word<br/>           | Verde<br/>   | 1<br/>                   |
 | Línea<br/>           | Fucsia<br/> | 3<br/>                   |
 | Paragraph<br/>      | Azul<br/>    | 5<br/>                   |
 | Región de escritura<br/> | Amarillo<br/>  | 7<br/>                   |
 | Dibujo<br/>        | Rojo<br/>     | 1<br/>                   |
-| Viñeta<br/>         | Naranja<br/>  | 1<br/>                   |
+| Bala<br/>         | Naranja<br/>  | 1<br/>                   |
 
 
 
  
 
-Puede borrar trazos en el formulario. En la aplicación de ejemplo, puede alternar entre el modo de lápiz y de borrado para cambiar la función del lápiz.
+Puede borrar trazos en el formulario. En la aplicación de ejemplo, puede alternar entre el modo de entrada manuscrita y el modo de borrado para cambiar la función del lápiz.
 
 
 ```C++
@@ -69,7 +69,7 @@ Puede borrar trazos en el formulario. En la aplicación de ejemplo, puede altern
 
 
 
-Cuando se agregan o eliminan trazos, los ejemplos actualizan el [InkAnalyzer](/previous-versions/ms583671(v=vs.100)).
+Al agregar o eliminar trazos, los ejemplos actualiza [InkAnalyzer](/previous-versions/ms583671(v=vs.100)).
 
 
 ```C++
@@ -106,16 +106,16 @@ Cuando se agregan o eliminan trazos, los ejemplos actualizan el [InkAnalyzer](/p
 
 
 
-Tenga en cuenta que en el menú modo, el análisis de diseño automático está activado de forma predeterminada. Con esta opción seleccionada, los controladores de eventos [Stroke](/previous-versions/ms835344(v=msdn.10)) y [StrokesDeleting](/previous-versions/ms835360(v=msdn.10)) del objeto [InkOverlay](/previous-versions/ms833057(v=msdn.10)) llaman al método [BackgroundAnalyze](/previous-versions/ms568972(v=vs.100)) cada vez que se crea o se elimina un trazo.
+Tenga en cuenta que, en el menú Modo, Análisis de diseño automático está seleccionado de forma predeterminada. Con esta opción seleccionada, los controladores de eventos [Stroke](/previous-versions/ms835344(v=msdn.10)) y [StrokesDeleting](/previous-versions/ms835360(v=msdn.10)) del objeto [InkOverlay](/previous-versions/ms833057(v=msdn.10)) llaman al método [BackgroundAnalyze](/previous-versions/ms568972(v=vs.100)) cada vez que se crea o elimina un trazo.
 
 > [!Note]  
-> Si se llama al método [Analyze](/previous-versions/ms568971(v=vs.100)) del objeto [InkAnalyzer](/previous-versions/ms583671(v=vs.100)) con más de unos pocos trazos, se crea un retraso perceptible en una aplicación. Esto se debe a que ANALYZE es una operación sincrónica de análisis de tinta. En la práctica, llame al método Analyze solo cuando necesite el resultado. De lo contrario, use el método [BackgroundAnalyze](/previous-versions/ms568972(v=vs.100)) asincrónico, como se muestra en el ejemplo.
+> Llamar al método Analyze del [](/previous-versions/ms568971(v=vs.100)) objeto [InkAnalyzer](/previous-versions/ms583671(v=vs.100)) con más de unos cuantos trazos presentes crea un retraso apreciable en una aplicación. Esto se debe a que Analizar es una operación de análisis de entrada de lápiz sincrónica. En la práctica, llame al método Analyze solo cuando necesite el resultado. De lo contrario, use [el método BackgroundAnalyze asincrónico,](/previous-versions/ms568972(v=vs.100)) como se muestra en el ejemplo.
 
  
 
-## <a name="handling-the-analysis-results"></a>Controlar los resultados del análisis
+## <a name="handling-the-analysis-results"></a>Control de los resultados del análisis
 
-En el ejemplo se crean dos matrices para contener los distintos rectángulos, ya sea horizontal o girado. Use un cuadro de límite girado para obtener el ángulo en el que se escribe una línea de palabras. En el ejemplo se muestran las propiedades devueltas por [InkAnalyzer](/previous-versions/ms583671(v=vs.100)) y se muestra el cuadro de límite o el cuadro de límite girado (dependiendo de la selección del menú).
+El ejemplo crea dos matrices para contener los distintos rectángulos, ya sea horizontal o girado. Use un rectángulo de selección girado para obtener el ángulo en el que se escribe una línea de palabras. En el ejemplo se muestran las propiedades devueltas por [InkAnalyzer](/previous-versions/ms583671(v=vs.100)) y se muestra el rectángulo de selección o el rectángulo de selección girado (en función de la selección del menú).
 
 
 ```C++
@@ -274,23 +274,23 @@ En el ejemplo se crean dos matrices para contener los distintos rectángulos, ya
 
 
 
-El analizador calcula [GetRotatedBoundingBox](/previous-versions/ms569544(v=vs.100)) durante el análisis. Puede tener acceso a la información de los cuadros de límite girados en la aplicación por una serie de motivos útiles:
+El analizador calcula [GetRotatedBoundingBox durante](/previous-versions/ms569544(v=vs.100)) el análisis. Puede acceder a la información desde los rectángulos de selección girados en la aplicación por una serie de motivos útiles:
 
--   Detectar o dibujar los límites de una sola línea, párrafo u otra unidad.
--   Determine el ángulo en el que se escribe una línea o un párrafo.
--   Implementar características como la selección de una línea, un párrafo u otra unidad.
+-   Detecte o dibuje los límites de una sola línea, párrafo u otra unidad.
+-   Determine el ángulo en el que se escribe una línea o párrafo.
+-   Implemente características como la selección de una línea, párrafo u otra unidad.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Reconocimiento básico y análisis de tinta](basic-recognition-and-ink-analysis.md)
+[Reconocimiento básico y análisis de entrada de lápiz](basic-recognition-and-ink-analysis.md)
 </dt> <dt>
 
 [Ejemplo de formulario de papel digitalizado](scanned-paper-form-sample.md)
 </dt> <dt>
 
-[Ejemplo de divisor de tinta](ink-divider-sample.md)
+[Ejemplo de divisor de entrada manuscrita](ink-divider-sample.md)
 </dt> </dl>
 
  

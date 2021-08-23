@@ -1,7 +1,7 @@
 ---
-description: Envía un paquete de finalización de e/s a un puerto de finalización de e/s.
+description: Envía un paquete de finalización de E/S a un puerto de finalización de E/S.
 ms.assetid: 69a9b1e5-2d40-42de-a14a-f7b6f29bf571
-title: Función PostQueuedCompletionStatus (IoAPI. h)
+title: Función PostQueuedCompletionStatus (IoAPI.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,16 +18,16 @@ api_location:
 - MinKernelBase.dll
 - API-MS-Win-Core-io-l1-1-1.dll
 - api-ms-win-downlevel-kernel32-l1-1-0.dll
-ms.openlocfilehash: f12de10032df7fec32dd9a577353dd20c0f4eaa5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e56bad8b9de85f22836f9446b67340d22e71fe83552da6796e7864d3baddae4b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119683365"
 ---
-# <a name="postqueuedcompletionstatus-function"></a>PostQueuedCompletionStatus función)
+# <a name="postqueuedcompletionstatus-function"></a>Función PostQueuedCompletionStatus
 
-Envía un paquete de finalización de e/s a un puerto de finalización de e/s.
+Envía un paquete de finalización de E/S a un puerto de finalización de E/S.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,31 +47,31 @@ BOOL WINAPI PostQueuedCompletionStatus(
 
 <dl> <dt>
 
-*CompletionPort* \[ de\]
+*CompletionPort* \[ En\]
 </dt> <dd>
 
-Identificador de un puerto de finalización de e/s en el que se va a publicar el paquete de finalización de e/s.
+Identificador de un puerto de finalización de E/S en el que se va a publicar el paquete de finalización de E/S.
 
 </dd> <dt>
 
-*dwNumberOfBytesTransferred* \[ de\]
+*dwNumberOfBytesTransferred* \[ En\]
 </dt> <dd>
 
-Valor que se va a devolver mediante el parámetro *lpNumberOfBytesTransferred* de la función [**GetQueuedCompletionStatus**](/windows/win32/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus) .
+Valor que se va a devolver a través del *parámetro lpNumberOfBytesTransferred* de la [**función GetQueuedCompletionStatus.**](/windows/win32/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus)
 
 </dd> <dt>
 
-*dwCompletionKey* \[ de\]
+*dwCompletionKey* \[ En\]
 </dt> <dd>
 
-Valor que se va a devolver mediante el parámetro *lpCompletionKey* de la función [**GetQueuedCompletionStatus**](/windows/win32/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus) .
+Valor que se va a devolver a través *del parámetro lpCompletionKey* de la [**función GetQueuedCompletionStatus.**](/windows/win32/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus)
 
 </dd> <dt>
 
 *lpOverlapped* \[ en, opcional\]
 </dt> <dd>
 
-Valor que se va a devolver mediante el parámetro *lpOverlapped* de la función [**GetQueuedCompletionStatus**](/windows/win32/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus) .
+Valor que se va a devolver a través *del parámetro lpOverlapped* de la [**función GetQueuedCompletionStatus.**](/windows/win32/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus)
 
 </dd> </dl>
 
@@ -79,39 +79,39 @@ Valor que se va a devolver mediante el parámetro *lpOverlapped* de la función 
 
 Si la función se realiza correctamente, el valor devuelto es distinto de cero.
 
-Si la función no se realiza correctamente, el valor devuelto es cero. Para obtener información de error extendida, llame a [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) .
+Si la función no se realiza correctamente, el valor devuelto es cero. Para obtener información de error extendida, llame [**a GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) .
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El paquete de finalización de e/s satisfará una llamada pendiente a la función [**GetQueuedCompletionStatus**](/windows/win32/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus) . Esta función devuelve con los tres valores pasados como el segundo, tercer y cuarto parámetro de la llamada a **PostQueuedCompletionStatus**. El sistema no usa ni valida estos valores. En concreto, el parámetro *lpOverlapped* no debe apuntar a una estructura [**superpuesta**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) .
+El paquete de finalización de E/S cumplirá una llamada pendiente a la [**función GetQueuedCompletionStatus.**](/windows/win32/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus) Esta función devuelve con los tres valores pasados como segundo, tercero y cuarto parámetros de la llamada a **PostQueuedCompletionStatus**. El sistema no usa ni valida estos valores. En concreto, el *parámetro lpOverlapped* no necesita apuntar a una [**estructura OVERLAPPED.**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped)
 
 En Windows 8 y Windows Server 2012, esta función es compatible con las siguientes tecnologías.
 
 
 
-| Technology                                           | Compatible      |
+| Tecnología                                           | Compatible      |
 |------------------------------------------------------|----------------|
-| Protocolo bloque de mensajes del servidor (SMB) 3,0<br/>   | Sí<br/> |
-| Conmutación por error transparente SMB 3,0 (TFO)<br/>        | Sí<br/> |
-| SMB 3,0 con recursos compartidos de archivos de escalabilidad horizontal (por lo tanto)<br/>   | Sí<br/> |
-| Sistema de archivos Volumen compartido de clúster (CsvFS)<br/> | Sí<br/> |
+| Protocolo Bloque de mensajes del servidor (SMB) 3.0<br/>   | Sí<br/> |
+| Conmutación por error transparente (TFO) de SMB 3.0<br/>        | Sí<br/> |
+| SMB 3.0 con recursos compartidos de archivos de escalabilidad horizontal (SO)<br/>   | Sí<br/> |
+| Volumen compartido de clúster file system (CsvFS)<br/> | Sí<br/> |
 | Sistema de archivos resistente a errores (ReFS)<br/>              | Sí<br/> |
 
 
 
  
 
-CsvFs realizará la e/s redirigida para archivos comprimidos.
+CsvFs realizará la E/S redirigida para los archivos comprimidos.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows XP \|\]<br/>                                                                                                                                                                                                                                                       |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2003 \|\]<br/>                                                                                                                                                                                                                                              |
-| Encabezado<br/>                   | <dl> <dt>IoAPI. h (incluye Windows. h); </dt> <dt>Winbase. h en Windows server 2008 R2, Windows 7, Windows server 2008, Windows Vista, Windows Server 2003 y Windows XP (incluido Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Aplicaciones \[ de escritorio XP para aplicaciones para \| UWP\]<br/>                                                                                                                                                                                                                                                       |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2003 \[ \| aplicaciones para UWP\]<br/>                                                                                                                                                                                                                                              |
+| Header<br/>                   | <dl> <dt>IoAPI.h (incluir Windows.h);</dt> <dt>WinBase.h en Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista, Windows Server 2003 y Windows XP (Windows.h)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Kernel32.lib</dt> </dl>                                                                                                                                                                                                                  |
 | Archivo DLL<br/>                      | <dl> <dt>Kernel32.dll</dt> </dl>                                                                                                                                                                                                                  |
 
@@ -130,7 +130,7 @@ CsvFs realizará la e/s redirigida para archivos comprimidos.
 [**GetQueuedCompletionStatus**](/windows/win32/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus)
 </dt> <dt>
 
-[**SUPERPUESTA**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped)
+[**Comprometidos**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped)
 </dt> </dl>
 
  

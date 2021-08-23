@@ -1,11 +1,11 @@
 ---
-title: Atributo default-Class-Store
-description: El almacén de clases predeterminado para un usuario determinado.
+title: Atributo Default-Class-Store
+description: Almacén de clases predeterminado para un usuario determinado.
 ms.assetid: 9aaeb401-4c2c-4c3b-83d2-0c6044be7643
 ms.tgt_platform: multiple
 keywords:
-- Default-Class-Store atributo AD Schema
-- defaultClassStore esquema de AD de atributos
+- Esquema de AD del atributo Default-Class-Store
+- Esquema de AD del atributo defaultClassStore
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c5aa4e9bddcc1e9dcb0aa7de962b9c6816555482
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 73ad55b7a8498940f94ab824712d387e50b9d4fa0768bcd8c71dfafe86d4a66f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151440"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509175"
 ---
-# <a name="default-class-store-attribute"></a>Atributo default-Class-Store
+# <a name="default-class-store-attribute"></a>Atributo Default-Class-Store
 
-El almacén de clases predeterminado para un usuario determinado.
+Almacén de clases predeterminado para un usuario determinado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | Almacén de clase predeterminada                     |
-| Nombre para mostrar de LDAP | defaultClassStore                       |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | Default-Class-Store                     |
+| Ldap-Display-Name | defaultClassStore                       |
+| Size              | \-                                      |
+| Actualizar privilegios  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.213                  |
-| System-ID-GUID    | bf967948-0de6-11d0-a285-00aa003049e2    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | bf967948-0de6-11d0-a285-00aa003049e2    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -55,18 +55,18 @@ El almacén de clases predeterminado para un usuario determinado.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                            |
+| Id. de vínculo                | \-                                                                            |
 | MAPI-Id                | \-                                                                            |
-| System-Only            | False                                                                         |
-| Tiene un único valor       | False                                                                         |
-| Está indexado             | False                                                                         |
-| En el catálogo global      | False                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                  |
+| System-Only            | Falso                                                                         |
+| Es de un solo valor       | Falso                                                                         |
+| Está indexado             | Falso                                                                         |
+| En el catálogo global      | Falso                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                  |
 | Range-Lower            | \-                                                                            |
 | Range-Upper            | \-                                                                            |
 | Search-Flags           | 0x00000000                                                                    |
 | System-Flags           | 0x00000010                                                                    |
-| Clases usadas en        | [**Contenedor**](c-container.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Contenedor**](c-container.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ El almacén de clases predeterminado para un usuario determinado.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                            |
+| Id. de vínculo                | \-                                                                            |
 | MAPI-Id                | \-                                                                            |
-| System-Only            | False                                                                         |
-| Tiene un único valor       | False                                                                         |
-| Está indexado             | False                                                                         |
-| En el catálogo global      | False                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                  |
+| System-Only            | Falso                                                                         |
+| Es de un solo valor       | Falso                                                                         |
+| Está indexado             | Falso                                                                         |
+| En el catálogo global      | Falso                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                  |
 | Range-Lower            | \-                                                                            |
 | Range-Upper            | \-                                                                            |
 | Search-Flags           | 0x00000000                                                                    |
 | System-Flags           | 0x00000010                                                                    |
-| Clases usadas en        | [**Contenedor**](c-container.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Contenedor**](c-container.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ El almacén de clases predeterminado para un usuario determinado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                            |
+| Id. de vínculo                | \-                                                                            |
 | MAPI-Id                | \-                                                                            |
-| System-Only            | False                                                                         |
-| Tiene un único valor       | False                                                                         |
-| Está indexado             | False                                                                         |
-| En el catálogo global      | False                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                  |
+| System-Only            | Falso                                                                         |
+| Es de un solo valor       | Falso                                                                         |
+| Está indexado             | Falso                                                                         |
+| En el catálogo global      | Falso                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                  |
 | Range-Lower            | \-                                                                            |
 | Range-Upper            | \-                                                                            |
 | Search-Flags           | 0x00000000                                                                    |
 | System-Flags           | 0x00000010                                                                    |
-| Clases usadas en        | [**Contenedor**](c-container.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Contenedor**](c-container.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ El almacén de clases predeterminado para un usuario determinado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                            |
+| Id. de vínculo                | \-                                                                            |
 | MAPI-Id                | \-                                                                            |
-| System-Only            | False                                                                         |
-| Tiene un único valor       | False                                                                         |
-| Está indexado             | False                                                                         |
-| En el catálogo global      | False                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                  |
+| System-Only            | Falso                                                                         |
+| Es de un solo valor       | Falso                                                                         |
+| Está indexado             | Falso                                                                         |
+| En el catálogo global      | Falso                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                  |
 | Range-Lower            | \-                                                                            |
 | Range-Upper            | \-                                                                            |
 | Search-Flags           | 0x00000000                                                                    |
 | System-Flags           | 0x00000010                                                                    |
-| Clases usadas en        | [**Contenedor**](c-container.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Contenedor**](c-container.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ El almacén de clases predeterminado para un usuario determinado.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                            |
+| Id. de vínculo                | \-                                                                            |
 | MAPI-Id                | \-                                                                            |
-| System-Only            | False                                                                         |
-| Tiene un único valor       | False                                                                         |
-| Está indexado             | False                                                                         |
-| En el catálogo global      | False                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                  |
+| System-Only            | Falso                                                                         |
+| Es de un solo valor       | Falso                                                                         |
+| Está indexado             | Falso                                                                         |
+| En el catálogo global      | Falso                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                  |
 | Range-Lower            | \-                                                                            |
 | Range-Upper            | \-                                                                            |
 | Search-Flags           | 0x00000000                                                                    |
 | System-Flags           | 0x00000010                                                                    |
-| Clases usadas en        | [**Contenedor**](c-container.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Contenedor**](c-container.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -160,13 +160,13 @@ El almacén de clases predeterminado para un usuario determinado.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                            |
+| Id. de vínculo                | \-                                                                            |
 | MAPI-Id                | \-                                                                            |
-| System-Only            | False                                                                         |
-| Tiene un único valor       | False                                                                         |
-| Está indexado             | False                                                                         |
-| En el catálogo global      | False                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                  |
+| System-Only            | Falso                                                                         |
+| Es de un solo valor       | Falso                                                                         |
+| Está indexado             | Falso                                                                         |
+| En el catálogo global      | Falso                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                  |
 | Range-Lower            | \-                                                                            |
 | Range-Upper            | \-                                                                            |
 | Search-Flags           | 0x00000000                                                                    |
