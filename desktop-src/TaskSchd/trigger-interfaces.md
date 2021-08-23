@@ -1,37 +1,37 @@
 ---
 title: Interfaces de desencadenador
-description: Las API que se usan para administrar los desencadenadores varían en función de la versión de la Programador de tareas. Sin embargo, en ambos casos estas API le permiten crear nuevos desencadenadores, recuperar y actualizar los desencadenadores existentes, y eliminar los desencadenadores que ya no son necesarios.
+description: Las API que se usan para administrar desencadenadores varían en función de la versión del Programador de tareas. Sin embargo, en ambos casos estas API permiten crear nuevos desencadenadores, recuperar y actualizar desencadenadores existentes y eliminar desencadenadores que ya no son necesarios.
 ms.assetid: 94c11f11-72e2-404f-b396-ab7b1be71942
 keywords:
-- desencadenadores Programador de tareas, interfaces
-- desencadenadores Programador de tareas, interfaces, descripción
+- desencadenadores Programador de tareas , interfaces
+- desencadenadores Programador de tareas , interfaces, descritas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5357bb745b43c51707d9571c7582a44c9225a7fe
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: f5515f2b1e2f5b4a7694dec28bb8831c690da0d303cda53338714c1b0e03ddaa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104359534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119002196"
 ---
 # <a name="trigger-interfaces"></a>Interfaces de desencadenador
 
-Las API que se usan para administrar los desencadenadores varían en función de la versión de la Programador de tareas. Sin embargo, en ambos casos estas API le permiten crear nuevos desencadenadores, recuperar y actualizar los desencadenadores existentes, y eliminar los desencadenadores que ya no son necesarios.
+Las API que se usan para administrar desencadenadores varían en función de la versión del Programador de tareas. Sin embargo, en ambos casos estas API permiten crear nuevos desencadenadores, recuperar y actualizar desencadenadores existentes y eliminar desencadenadores que ya no son necesarios.
 
 
-Las aplicaciones desarrolladas con Programador de tareas 2,0 pueden utilizar objetos e interfaces para crear, recuperar, modificar y eliminar los desencadenadores de una tarea.
+Las aplicaciones que se desarrollan mediante Programador de tareas 2.0 pueden usar objetos e interfaces para crear, recuperar, modificar y eliminar los desencadenadores de una tarea.
 
-En la ilustración siguiente, una tarea especifica una colección de desencadenadores mediante su propiedad Triggers. Esta colección contiene una o varias API de desencadenador individual con cada API que especifica un tipo de desencadenador específico. Por ejemplo, en la ilustración siguiente, la colección de desencadenadores contiene un desencadenador de arranque, un desencadenador de inicio de sesión y un desencadenador diario.
+En la ilustración siguiente, una tarea especifica una colección de desencadenadores mediante su propiedad Triggers. Esta colección contiene una o varias API de desencadenador individuales con cada API que especifica un tipo de desencadenador específico. Por ejemplo, en la ilustración siguiente, la colección de desencadenadores contiene un desencadenador de arranque, un desencadenador de inicio de sesión y un desencadenador diario.
 
-![interfaces de desencadenador del programador de tareas 2,0](images/tsktri4.png)
+![Interfaces de desencadenador del programador de tareas 2.0](images/tsktri4.png)
 
 ### <a name="object-apis-for-scripting-development"></a>API de objetos para el desarrollo de scripting
 
-Para obtener más información sobre los métodos y las propiedades de los objetos que se usan para especificar los desencadenadores, vea:
+Para obtener más información sobre los métodos y propiedades de los objetos que se usan para especificar desencadenadores, vea:
 
 -   [**TaskDefinition**](taskdefinition.md)
 -   [**TriggerCollection**](triggercollection.md)
--   [**Activado**](trigger.md)
+-   [**detonante**](trigger.md)
 -   [**BootTrigger**](boottrigger.md)
 -   [**DailyTrigger**](dailytrigger.md)
 -   [**EventTrigger**](eventtrigger.md)
@@ -43,9 +43,9 @@ Para obtener más información sobre los métodos y las propiedades de los objet
 -   [**TimeTrigger**](timetrigger.md)
 -   [**WeeklyTrigger**](weeklytrigger.md)
 
-### <a name="interfaces-apis-for-c-development"></a>Interfaces API para el desarrollo en C++
+### <a name="interfaces-apis-for-c-development"></a>INTERFACES API para el desarrollo de C++
 
-Para obtener más información sobre los métodos y las propiedades de las interfaces que se usan para especificar los desencadenadores, vea:
+Para obtener más información sobre los métodos y propiedades de las interfaces que se usan para especificar desencadenadores, vea:
 
 -   [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition)
 -   [**ITriggerCollection**](/windows/desktop/api/taskschd/nn-taskschd-itriggercollection)
@@ -61,17 +61,17 @@ Para obtener más información sobre los métodos y las propiedades de las inter
 -   [**ITimeTrigger**](/windows/desktop/api/taskschd/nn-taskschd-itimetrigger)
 -   [**IWeeklyTrigger**](/windows/desktop/api/taskschd/nn-taskschd-iweeklytrigger)
 
-## <a name="task-scheduler-10-trigger-interfaces"></a>Interfaces de desencadenador de Programador de tareas 1,0
+## <a name="task-scheduler-10-trigger-interfaces"></a>Programador de tareas interfaces de desencadenador 1.0
 
-Las aplicaciones existentes desarrolladas con Programador de tareas 1,0 pueden usar los métodos que están disponibles en las interfaces de Programador de tareas 1,0 para crear, recuperar, modificar y eliminar los desencadenadores de un [*elemento de trabajo*](w.md). Sin embargo, tenga en cuenta que todas las interfaces Programador de tareas 1,0, enumeraciones y estructuras están obsoletas y no deben usarse para el desarrollo de nuevas aplicaciones.
+Las aplicaciones existentes que se desarrollan mediante Programador de tareas 1.0 pueden usar los métodos que están disponibles en las interfaces de Programador de tareas 1.0 para crear, recuperar, modificar y eliminar los desencadenadores de un elemento de trabajo [*.*](w.md) Sin embargo, tenga en cuenta que Programador de tareas interfaces, enumeraciones y estructuras de 1.0 están obsoletas y no deben usarse para el desarrollo de nuevas aplicaciones.
 
-En la ilustración siguiente se muestran las dos interfaces que se usan para hacerlo. La interfaz [**IScheduledWorkItem**](/windows/desktop/api/Mstask/nn-mstask-ischeduledworkitem) se usa para administrar todos los desencadenadores asociados a un elemento de trabajo (tal administración incluye la creación de un nuevo desencadenador para el elemento de trabajo). La interfaz [**ITaskTrigger**](/windows/desktop/api/Mstask/nn-mstask-itasktrigger) se usa para administrar un desencadenador específico.
+Las dos interfaces que se usan para ello se muestran en la ilustración siguiente. La [**interfaz IScheduledWorkItem**](/windows/desktop/api/Mstask/nn-mstask-ischeduledworkitem) se usa para administrar todos los desencadenadores asociados a un elemento de trabajo (esta administración incluye la creación de un nuevo desencadenador para el elemento de trabajo). La [**interfaz ITaskTrigger**](/windows/desktop/api/Mstask/nn-mstask-itasktrigger) se usa para administrar un desencadenador específico.
 
-![interfaces de desencadenador del programador de tareas 1,0](images/tsktri2.png)
+![Interfaces de desencadenador del programador de tareas 1.0](images/tsktri2.png)
 
-La interfaz [**IScheduledWorkItem**](/windows/desktop/api/Mstask/nn-mstask-ischeduledworkitem) proporciona métodos para crear un nuevo desencadenador para un elemento de trabajo, recuperar el número de desencadenadores asociados a un elemento de trabajo, recuperar las [*estructuras de desencadenador*](t.md) asociadas al elemento de trabajo, recuperar cadenas de [*desencadenador*](t.md) asociadas al elemento de trabajo y eliminar desencadenadores.
+La interfaz [**IScheduledWorkItem**](/windows/desktop/api/Mstask/nn-mstask-ischeduledworkitem) proporciona métodos para crear un nuevo desencadenador para un elemento de trabajo, [](t.md) recuperar el número de desencadenadores asociados a un elemento de trabajo, recuperar las estructuras de desencadenador asociadas al elemento de trabajo, recuperar cadenas de desencadenador [*asociadas*](t.md) al elemento de trabajo y eliminar desencadenadores.
 
-Una vez que el objeto de desencadenador está disponible, puede usar la interfaz [**ITaskTrigger**](/windows/desktop/api/Mstask/nn-mstask-itasktrigger) para recuperar la estructura del desencadenador y la cadena del desencadenador y para establecer los criterios que se utilizan para activar el desencadenador. Esta interfaz solo se usa cuando se trabaja con un [*objeto de desencadenador de tarea*](t.md).
+Una vez que el objeto desencadenador esté disponible, puede usar la interfaz [**ITaskTrigger**](/windows/desktop/api/Mstask/nn-mstask-itasktrigger) para recuperar la estructura del desencadenador y la cadena del desencadenador, y para establecer los criterios que se usan para activar el desencadenador. Esta interfaz solo se usa cuando se trabaja con un objeto [*de desencadenador de tareas*](t.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 

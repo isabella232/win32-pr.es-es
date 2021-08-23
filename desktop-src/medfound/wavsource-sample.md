@@ -18,7 +18,7 @@ Muestra cómo crear un origen multimedia personalizado en Microsoft Media Founda
 Este ejemplo es un ejemplo relativamente sencillo de un origen multimedia:
 
 -   Solo hay una secuencia, por lo que no hay código para implementar la selección de secuencias.
--   El origen multimedia no implementa el control de velocidad (es decir, una reproducción hacia delante o hacia atrás rápida).
+-   El origen multimedia no implementa el control de velocidad (es decir, avance rápido o reproducción inversa).
 -   Todos los métodos de origen y flujo se implementan como métodos sincrónicos.
 -   Dado que la parte de datos de un archivo .wav es un único bloque de audio PCM sin comprimir, el origen multimedia no necesita leer encabezados de paquetes ni analizar la secuencia durante la reproducción, aparte de leer el encabezado [**WAVEFORMAT inicial.**](/windows/win32/api/mmreg/ns-mmreg-waveformat)
 
@@ -26,7 +26,7 @@ Para obtener un ejemplo más avanzado de un origen multimedia, vea [el ejemplo M
 
 ## <a name="apis-demonstrated"></a>API demostradas
 
-En este ejemplo se muestran las siguientes Media Foundation interfaces:
+En este ejemplo se muestran las Media Foundation siguientes:
 
 -   [**IMFByteStreamHandler**](/windows/desktop/api/mfidl/nn-mfidl-imfbytestreamhandler)
 -   [**IMFMediaSource**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasource)
@@ -34,9 +34,9 @@ En este ejemplo se muestran las siguientes Media Foundation interfaces:
 
 ## <a name="usage"></a>Uso
 
-El ejemplo WavSource compila un archivo DLL que es un servidor COM para el origen de medios y el controlador de flujo de bytes del origen de medios. Antes de usar el origen de medios, debe registrar el archivo DLL.
+El ejemplo WavSource compila un archivo DLL que es un servidor COM tanto para el origen multimedia como para el controlador de flujo de bytes del origen de medios. Antes de usar el origen de medios, debe registrar el archivo DLL.
 
-Para usar el origen multimedia, puede ejecutar [BasicPlayback](/previous-versions//bb970475(v=vs.85)). La resolución de origen cargará automáticamente el origen multimedia si selecciona un archivo .wav para la reproducción. (Si se produce un error, asegúrese de que ha registrado correctamente el archivo DLL de WavSource).
+Para usar el origen de medios, puede ejecutar [BasicPlayback](/previous-versions//bb970475(v=vs.85)). La resolución de origen cargará automáticamente el origen multimedia si selecciona un archivo .wav para la reproducción. (Si se produce un error, asegúrese de que ha registrado correctamente el archivo DLL de WavSource).
 
 También puede usar la herramienta TopoEdit para crear una topología de reproducción que contenga el origen multimedia. Para obtener más información sobre TopoEdit, vea [TopoEdit](topoedit.md).
 
@@ -69,7 +69,7 @@ Este ejemplo está disponible en el repositorio [de github Windows ejemplos clá
 [Ejemplo MPEG1Source](mpeg1source-sample.md)
 </dt> <dt>
 
-[Controladores de esquema y Byte-Stream de esquema](scheme-handlers-and-byte-stream-handlers.md)
+[Controladores de esquema y Byte-Stream controladores de esquema](scheme-handlers-and-byte-stream-handlers.md)
 </dt> <dt>
 
 [Escribir un origen multimedia personalizado](writing-a-custom-media-source.md)

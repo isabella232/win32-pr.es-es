@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 95321d377ad5af29075764e2c2d9386abf5b1441
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 67cdde2ba057f41d8a1929e6f641b22d05919b698fee61fd8351deb64b27f5ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990685"
 ---
 # <a name="d3dxvec2transformcoord-function-d3dx10mathh"></a>Función D3DXVec2TransformCoord (D3DX10Math.h)
 
@@ -92,7 +92,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el parámetro
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -4,28 +4,28 @@ description: Editar notificaciones de control
 ms.assetid: 04ec89f4-a061-4c3f-99de-fdb42596ecca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f595252a51ae8eaaf6249244d1ebad3a08d73f60
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 69e217fa881cf451846a0cf84758b192e9b7f0eb487fb5b3fb69fe49b4d91bd4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019964"
 ---
 # <a name="edit-control-notifications"></a>Editar notificaciones de control
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [EN \_ alinear a la \_ izquierda \_](en-align-ltr-ec.md)
--   [EN \_ align \_ RTL \_ EC](en-align-rtl-ec.md)
--   [EN \_ cambio](en-change.md)
+-   [EN \_ ALIGN \_ LTR \_ EC](en-align-ltr-ec.md)
+-   [EN \_ ALIGN \_ RTL \_ EC](en-align-rtl-ec.md)
+-   [CAMBIO \_ DE EN](en-change.md)
 -   [EN \_ ERRSPACE](en-errspace.md)
 -   [EN \_ HSCROLL](en-hscroll.md)
 -   [EN \_ KILLFOCUS](en-killfocus.md)
 -   [EN \_ MAXTEXT](en-maxtext.md)
 -   [EN \_ SETFOCUS](en-setfocus.md)
--   [EN \_ actualización](en-update.md)
+-   [EN \_ UPDATE](en-update.md)
 -   [EN \_ VSCROLL](en-vscroll.md)
--   [**CTLCOLOREDIT de WM \_**](wm-ctlcoloredit.md)
+-   [**WM \_ CTLCOLOREDIT**](wm-ctlcoloredit.md)
 
  
 

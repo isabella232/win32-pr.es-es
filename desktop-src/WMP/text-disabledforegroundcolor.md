@@ -1,9 +1,9 @@
 ---
-title: TEXT. disabledForegroundColor
-description: El atributo disabledForegroundColor especifica o recupera el color de texto usado para el control de texto cuando está deshabilitado.
+title: TEXT.disabledForegroundColor
+description: El atributo disabledForegroundColor especifica o recupera el color de texto utilizado para el control Text cuando está deshabilitado.
 ms.assetid: 0ac2dc0c-817f-4902-b03b-072dbda45c3d
 keywords:
-- Media Player de Windows TEXT. disabledForegroundColor
+- TEXT.disabledForegroundColor Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1af45ae7338ee9084e5345a480006a861a7cc4c0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7c5ffca8060c496526c3b5cc9f9229310489bdd5bbfef9467c3e2bb91992ded4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105719031"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134618"
 ---
-# <a name="textdisabledforegroundcolor"></a>TEXT. disabledForegroundColor
+# <a name="textdisabledforegroundcolor"></a>TEXT.disabledForegroundColor
 
-El atributo **disabledForegroundColor** especifica o recupera el color de texto usado para el control de texto cuando está deshabilitado.
+El **atributo disabledForegroundColor** especifica o recupera el color de texto utilizado para el control Text cuando está deshabilitado.
 
 ``` syntax
         elementID.disabledForegroundColor
@@ -29,13 +29,13 @@ El atributo **disabledForegroundColor** especifica o recupera el color de texto 
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura que contiene cualquier valor de color de Microsoft Internet Explorer.
+Este atributo es una cadena de **lectura** y escritura que contiene cualquier valor de color Internet Explorer microsoft.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si no se especifica **disabledForegroundColor** , se usa **foregroundColor** .
+Si **no se especifica disabledForegroundColor,** se usa **foregroundColor.**
 
-Vea el atributo [Value](text-value.md) para ver un ejemplo que muestra cómo se utilizan los atributos del elemento de **texto** .
+Vea el [atributo value](text-value.md) para obtener un ejemplo que ilustra cómo se usan los atributos del **elemento TEXT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,7 +43,7 @@ Vea el atributo [Value](text-value.md) para ver un ejemplo que muestra cómo se 
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -57,7 +57,7 @@ Vea el atributo [Value](text-value.md) para ver un ejemplo que muestra cómo se 
 [**Elemento TEXT**](text-element.md)
 </dt> <dt>
 
-[**TEXT. foregroundColor**](text-foregroundcolor.md)
+[**TEXT.foregroundColor**](text-foregroundcolor.md)
 </dt> </dl>
 
  

@@ -72,7 +72,7 @@ En el ejemplo siguiente se muestra el uso de la **instrucción FONT:**
 FONT 12, "MS Shell Dlg"
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

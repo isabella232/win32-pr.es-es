@@ -1,9 +1,9 @@
 ---
-title: MDM_Update (clase)
-description: La \_ clase de actualización de MDM se utiliza para administrar y controlar el lanzamiento de nuevas actualizaciones.
+title: MDM_Update clase
+description: La clase \_ MDM Update se usa para administrar y controlar el lanzamiento de nuevas actualizaciones.
 ms.assetid: 503884fd-190c-482d-b600-1a15363891f3
 keywords:
-- MDM_Update (clase)
+- MDM_Update clase
 - MDM_Update clase, descrita
 topic_type:
 - apiref
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f2735b5eaaef4abc468586cb7608be7969a1eab3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c8c3b2c03d9ffcea84b21c1d135388141c26b24bbe2fdcc6973ae33fa74d71fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905164"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119077039"
 ---
-# <a name="mdm_update-class"></a>\_Clase de actualización MDM
+# <a name="mdm_update-class"></a>Mdm \_ Update (clase)
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-La clase de **\_ actualización de MDM** se utiliza para administrar y controlar el lanzamiento de nuevas actualizaciones.
+La **clase \_ MDM Update** se usa para administrar y controlar el lanzamiento de nuevas actualizaciones.
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -47,13 +47,13 @@ class MDM_Update
 
 ## <a name="members"></a>Miembros
 
-La clase de **\_ actualización MDM** tiene estos tipos de miembros:
+La **clase \_ MDM Update** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase de **\_ actualización MDM** tiene estas propiedades.
+La **clase \_ MDM Update** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -63,7 +63,7 @@ La clase de **\_ actualización MDM** tiene estas propiedades.
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -87,10 +87,10 @@ Identifica el nombre del nodo primario. Para esta clase, la cadena es "Update".
 [LastSuccessfulScanTime](/windows/client-management/mdm/update-csp#lastsuccessfulscantime)
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -107,7 +107,7 @@ Tipo de acceso: solo lectura
 Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/".
+Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/"
 
 </dd> </dl>
 
@@ -115,13 +115,13 @@ Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                          |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                            |
-| Espacio de nombres<br/>                | Dmmap de MDM raíz de \\ cimv2 \\ \\<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl>      |
-| Archivo DLL<br/>                      | <dl> <dt>\\DMWmiBridgeProv.dllMOF</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ cimv2 \\ mdm \\ dmmap<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1.mof</dt> </dl>      |
+| Archivo DLL<br/>                      | <dl> <dt>Mofs \\DMWmiBridgeProv.dll</dt> </dl> |
 
 
 

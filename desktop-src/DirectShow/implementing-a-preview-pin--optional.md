@@ -1,23 +1,23 @@
 ---
-description: En este tema se describe cómo implementar un PIN de vista previa en un filtro de captura de DirectShow.
+description: En este tema se describe cómo implementar un pin de vista previa en un filtro DirectShow captura de datos.
 ms.assetid: 60306702-97d4-4627-8fbe-e7c8750f3902
-title: Implementación de un PIN de versión preliminar (opcional)
+title: Implementar un pin de vista previa (opcional)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d1e09d070be2aa154428cb8684ff1c405fac959
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 7de47b86df70500c83c794fe1074dc927622d571e78ef6175b944702277da492
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104423008"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119015563"
 ---
-# <a name="implementing-a-preview-pin-optional"></a>Implementación de un PIN de versión preliminar (opcional)
+# <a name="implementing-a-preview-pin-optional"></a>Implementar un pin de vista previa (opcional)
 
-En este tema se describe cómo implementar un PIN de vista previa en un filtro de captura de DirectShow.
+En este tema se describe cómo implementar un pin de vista previa en un filtro DirectShow captura de datos.
 
-Si el filtro tiene un PIN de vista previa, el PIN de vista previa debe enviar una copia de los datos entregados por el PIN de captura. Enviar solo los datos del PIN de vista previa al hacerlo no hará que el PIN de captura Coloque los fotogramas. El PIN de captura siempre tiene prioridad sobre el PIN de vista previa.
+Si el filtro tiene un pin de vista previa, el pin de vista previa debe enviar una copia de los datos entregados por el pin de captura. Enviar solo datos desde el pin de vista previa al hacerlo no hará que el pin de captura coloque fotogramas. El pin de captura siempre tiene prioridad sobre el pin de vista previa.
 
-El PIN de captura y el PIN de vista previa deben enviar datos con el mismo formato. Por lo tanto, deben conectarse con tipos de medios idénticos. Si el PIN de captura se conecta primero, el PIN de vista previa debe ofrecer el mismo tipo de medio y rechazar los demás tipos. Si el PIN de vista previa se conecta primero y el PIN de captura se conecta a un tipo de medio diferente, el PIN de vista previa se debe volver a conectar con el nuevo tipo de medio. Si el filtro de nivel inferior del PIN de vista previa rechaza el nuevo tipo, el PIN de captura también debe rechazar el tipo. Use el método [**IPin:: QueryAccept**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryaccept) para consultar el filtro de nivel inferior del PIN de vista previa y use el método [**IFilterGraph:: reconnect**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph-reconnect) para volver a conectar el PIN. Estas reglas también se aplican si el administrador de gráficos de filtro vuelve a conectar el PIN de captura.
+El pin de captura y el pin de vista previa deben enviar datos con el mismo formato. Por lo tanto, deben conectarse mediante tipos de medios idénticos. Si el pin de captura se conecta primero, el pin de vista previa debe ofrecer el mismo tipo de medio y rechazar cualquier otro tipo. Si el pin de vista previa se conecta primero y el pin de captura se conecta con un tipo de medio diferente, el pin de vista previa debe volver a conectarse con el nuevo tipo de medio. Si el filtro de nivel inferior del pin de vista previa rechaza el nuevo tipo, el pin de captura también debe rechazar el tipo. Use el [**método IPin::QueryAccept**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryaccept) para consultar el filtro de bajada desde el pin de vista previa y use el método [**IFilterGraph::Reconnect**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph-reconnect) para volver a conectar el pin. Estas reglas también se aplican si filter Graph Manager vuelve a conectar el pin de captura.
 
 En el ejemplo siguiente se muestra un esquema de este proceso:
 
@@ -88,7 +88,7 @@ CPreviewPin::CheckMediaType(CMediaType *pmt)
 
 <dl> <dt>
 
-[Cómo se conectan los filtros](how-filters-connect.md)
+[Cómo se Conectar](how-filters-connect.md)
 </dt> <dt>
 
 [Escribir filtros de captura](writing-capture-filters.md)

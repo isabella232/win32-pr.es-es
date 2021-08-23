@@ -1,7 +1,7 @@
 ---
-description: El método PossiblyEatMessage permite a una clase derivada reenviar mensajes a otra ventana.
+description: El método PossiblyEatMessage permite que una clase derivada reenvía mensajes a otra ventana.
 ms.assetid: d8775182-44ed-4df2-b4b8-1fdf289e2c1a
-title: Método CBaseWindow. PossiblyEatMessage (Winutil. h)
+title: Método CBaseWindow.PossiblyEatMessage (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f218b62ac5464da27b8596992c34ce7ae5efde46
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 851f46d14f949a49c9422256f9b2bda1ba314e5789773121387e89c011f7a424
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016463"
 ---
-# <a name="cbasewindowpossiblyeatmessage-method"></a>CBaseWindow. PossiblyEatMessage, método
+# <a name="cbasewindowpossiblyeatmessage-method"></a>CBaseWindow.PossiblyEatMessage (método)
 
-El `PossiblyEatMessage` método permite a una clase derivada reenviar mensajes a otra ventana.
+El `PossiblyEatMessage` método permite que una clase derivada reenvía mensajes a otra ventana.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ virtual BOOL PossiblyEatMessage(
 *uMsg* 
 </dt> <dd>
 
-Identificador de mensaje.
+Identificador del mensaje.
 
 </dd> <dt>
 
@@ -61,17 +61,17 @@ Primer parámetro de mensaje.
 *lParam* 
 </dt> <dd>
 
-Segundo parámetro del mensaje.
+Segundo parámetro de mensaje.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si el mensaje se reenvió o **false** en caso contrario. La clase base devuelve **false**.
+Devuelve **TRUE si** se reenvía el mensaje o FALSE en **caso** contrario. La clase base devuelve **FALSE.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Antes de que el método [**CBaseWindow:: OnReceiveMessage**](cbasewindow-onreceivemessage.md) controle un mensaje, llama a `PossiblyEatMessage` . Si `PossiblyEatMessage` devuelve **true**, **OnReceiveMessage** omite el mensaje. Una clase derivada puede invalidar `PossiblyEatMessage` para que reenvíe algunos mensajes a una ventana propietaria. Por ejemplo, la clase [**CBaseControlWindow**](cbasecontrolwindow.md) , que se deriva de **CBaseWindow**, reenvía los mensajes de teclado y del mouse.
+Antes de [**que el método CBaseWindow::OnReceiveMessage**](cbasewindow-onreceivemessage.md) controle un mensaje, llama a `PossiblyEatMessage` . Si `PossiblyEatMessage` devuelve **TRUE**, **OnReceiveMessage** omite el mensaje. Una clase derivada puede invalidar `PossiblyEatMessage` para que reenvía algunos mensajes a una ventana de propietario. Por ejemplo, la [**clase CBaseControlWindow,**](cbasecontrolwindow.md) que deriva de **CBaseWindow,** reenvía los mensajes del teclado y del mouse.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,8 +79,8 @@ Antes de que el método [**CBaseWindow:: OnReceiveMessage**](cbasewindow-onrecei
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -88,7 +88,7 @@ Antes de que el método [**CBaseWindow:: OnReceiveMessage**](cbasewindow-onrecei
 
 <dl> <dt>
 
-[**Clase CBaseWindow**](cbasewindow.md)
+[**CBaseWindow (clase)**](cbasewindow.md)
 </dt> </dl>
 
  

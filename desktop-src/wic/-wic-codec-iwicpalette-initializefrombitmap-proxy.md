@@ -1,7 +1,7 @@
 ---
 description: Función de proxy para el método InitializeFromBitmap.
 ms.assetid: 9559a56d-7201-4b39-a3cd-9c0e4eac611a
-title: IWICPalette_InitializeFromBitmap_Proxy función)
+title: IWICPalette_InitializeFromBitmap_Proxy función
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: cf5e119acf1efca948281a02f61d8954f4e08818
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5c807e95b980a564096216727315f4a1534e8cd011cc78aa7322f670fff0876c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119088187"
 ---
-# <a name="iwicpalette_initializefrombitmap_proxy-function"></a>IWICPalette \_ InitializeFromBitmap \_ función proxy
+# <a name="iwicpalette_initializefrombitmap_proxy-function"></a>Función IWICPalette \_ InitializeFromBitmap \_ Proxy
 
-Función de proxy para el método [**InitializeFromBitmap**](/windows/desktop/api/Wincodec/nf-wincodec-iwicpalette-initializefrombitmap) .
+Función de proxy para [**el método InitializeFromBitmap.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicpalette-initializefrombitmap)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,37 +43,37 @@ HRESULT IWICPalette_InitializeFromBitmap_Proxy(
 
 <dl> <dt>
 
-*Este \_ PTR* \[ en\]
+*THIS \_ PTR* \[ en\]
 </dt> <dd>
 
-Tipo: **[**IWICPalette**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette) \** _
+Tipo: **[ **IWICPalette**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette)\***
 
-Puntero a este objeto [_ *IWICPalette* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette) .
+Puntero a este [**objeto IWICPalette.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette)
 
 </dd> <dt>
 
-*pISurface* \[ de\]
+*pISurface* \[ En\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) \** _
+Tipo: **[ **IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource)\***
 
 Puntero al mapa de bits de origen.
 
 </dd> <dt>
 
-_colorCount * \[ en\]
+*colorCount* \[ En\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
-El número de colores con los que inicializar la paleta.
+Número de colores con los que inicializar la paleta.
 
 </dd> <dt>
 
-*fAddTransparentColor* \[ de\]
+*fAddTransparentColor* \[ En\]
 </dt> <dd>
 
-Tipo: **bool**
+Tipo: **BOOL**
 
 Valor que indica si se va a agregar un color transparente.
 
@@ -83,7 +83,7 @@ Valor que indica si se va a agregar un color transparente.
 
 Tipo: **HRESULT**
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
@@ -91,11 +91,11 @@ Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo con
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP con SP2, \[ solo aplicaciones de escritorio de Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                                                                             |
-| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP con SP2, solo Windows de \[ escritorio de Vista\]<br/>                                                                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                                                                             |
+| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

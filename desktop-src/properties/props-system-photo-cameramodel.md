@@ -1,19 +1,19 @@
 ---
-description: El nombre del modelo de la cámara que capta la foto, en forma de cadena.
+description: Nombre del modelo de la cámara que rodó la foto, en forma de cadena.
 ms.assetid: d5975d37-fc77-4b9b-9e7d-8c75c6054c7c
-title: System. Photo. CameraModel
+title: System.Photo.CameraModel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b86a4bafd11a69276de6d49a20a6ee4c2e31ff01
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4ea36d5873bc3b8e7338c39d2df87678e8204056dde444eacc9f56819b703402
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082572"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119096007"
 ---
-# <a name="systemphotocameramodel"></a>System. Photo. CameraModel
+# <a name="systemphotocameramodel"></a>System.Photo.CameraModel
 
-El nombre del modelo de la cámara que capta la foto, en forma de cadena.
+Nombre del modelo de la cámara que rodó la foto, en forma de cadena.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -30,9 +30,9 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

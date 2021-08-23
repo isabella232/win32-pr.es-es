@@ -1,19 +1,19 @@
 ---
-description: Si la propiedad EnableUserControl se establece en 1, el instalador puede pasar todas las propiedades públicas al servidor durante una instalación administrada con privilegios elevados.
+description: Si la propiedad EnableUserControl está establecida en 1, el instalador puede pasar todas las propiedades públicas al lado servidor durante una instalación administrada mediante privilegios elevados.
 ms.assetid: 29f76c2e-1556-4d0d-a83c-24a33528156f
-title: Propiedad EnableUserControl
+title: EnableUserControl, propiedad
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a3f1a00ed6a3dae3d5614ec427166c58464e56f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 98cc5e1b5f43718c67a059295d3bf79e1cfab08ab34e5e88d3390fe3ce22662d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653310"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013353"
 ---
-# <a name="enableusercontrol-property"></a>Propiedad EnableUserControl
+# <a name="enableusercontrol-property"></a>EnableUserControl, propiedad
 
-Si la propiedad **EnableUserControl** se establece en 1, el instalador puede pasar todas [las propiedades públicas](public-properties.md) al servidor durante una instalación administrada con privilegios elevados. Establecer esta propiedad tiene el mismo efecto que establecer la [](enableusercontrol.md) [Directiva del sistema](system-policy.md)EnableUserControl.
+Si la **propiedad EnableUserControl** está establecida en 1, el instalador puede pasar todas las propiedades públicas al lado servidor durante una instalación administrada mediante privilegios elevados. [](public-properties.md) Establecer esta propiedad tiene el mismo efecto que establecer la directiva del [sistema](system-policy.md) [EnableUserControl](enableusercontrol.md) .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -21,7 +21,7 @@ Si la propiedad **EnableUserControl** se establece en 1, el instalador puede pas
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003, Windows XP y Windows 2000. Consulte los [requisitos de Run-Time de Windows Installer](windows-installer-portal.md) para obtener información sobre la Service Pack mínima de Windows que requiere una versión Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003, Windows XP y Windows 2000. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una versión Windows Installer.<br/> |
 
 
 
@@ -35,7 +35,7 @@ Si la propiedad **EnableUserControl** se establece en 1, el instalador puede pas
 [Propiedades públicas restringidas](restricted-public-properties.md)
 </dt> <dt>
 
-[Directiva del sistema](system-policy.md)
+[directiva del sistema](system-policy.md)
 </dt> </dl>
 
  

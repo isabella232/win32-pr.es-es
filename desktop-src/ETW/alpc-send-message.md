@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos de envío de mensajes ALPC. La siguiente sintaxis se simplifica desde el código MOF.
+description: Esta clase es la clase de tipo de evento para los eventos de envío de mensajes de ALPC. La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: 7f12259b-f737-4bef-9dea-2ffe3517e0da
-title: ALPC_Send_Message (clase)
+title: ALPC_Send_Message clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: c9437626341f0ac57136645d40a8389436e8af1a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8a3e53e514f80f89f1b1e97c1edde9b86add0db7a29de9443c5a1b48085a40fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119070335"
 ---
-# <a name="alpc_send_message-class"></a>ALPC \_ send \_ Message (clase)
+# <a name="alpc_send_message-class"></a>ALPC \_ Send \_ Message (clase)
 
-Esta clase es la clase de tipo de evento para los eventos de envío de mensajes ALPC.
+Esta clase es la clase de tipo de evento para los eventos de envío de mensajes de ALPC.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,26 +38,26 @@ class ALPC_Send_Message : ALPC
 
 ## <a name="members"></a>Miembros
 
-La clase de **\_ \_ mensaje ALPC Send** tiene estos tipos de miembros:
+La **clase ALPC \_ Send \_ Message** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase de **\_ \_ mensaje ALPC Send** tiene estas propiedades.
+La **clase ALPC \_ Send \_ Message** tiene estas propiedades.
 
 <dl> <dt>
 
-**Identificador**
+**MessageID**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Identificador de mensaje.
+Identificador del mensaje.
 
 </dd> </dl>
 
@@ -65,10 +65,10 @@ Identificador de mensaje.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

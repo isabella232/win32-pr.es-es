@@ -1,7 +1,7 @@
 ---
-description: Sección crítica que bloquea el subproceso para que no tenga acceso a otros subprocesos.
+description: Sección crítica que bloquea el acceso al subproceso por parte de otros subprocesos.
 ms.assetid: 9bc360be-52d6-4db1-b384-8bc9e25c0914
-title: 'Miembro CAMThread:: m_AccessLock (Wxutil. h)'
+title: Miembro M_ACCESSLOCK (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6edb4b58b630cfdcfd6eefc43b908cf6aeb0f084
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 72e5823b7acadd3c1c0f3752606825d1b2981aac4a64903c5944e3df82252aaa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017603"
 ---
-# <a name="camthreadm_accesslock-member"></a>Miembro AccessLock CAMThread:: m \_
+# <a name="camthreadm_accesslock-member"></a>Miembro DE ACCESSLock DE CAMThread::m \_
 
-Sección crítica que bloquea el subproceso para que no tenga acceso a otros subprocesos.
+Sección crítica que bloquea el acceso al subproceso por parte de otros subprocesos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,9 +36,9 @@ CCritSec m_AccessLock;
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los métodos [**CAMThread:: Create**](camthread-create.md) y [**CAMThread:: CallWorker**](camthread-callworker.md) incluyen este bloqueo para serializar las operaciones en el subproceso.
+Los [**métodos CAMThread::Create**](camthread-create.md) y [**CAMThread::CallWorker**](camthread-callworker.md) mantienen este bloqueo para serializar las operaciones en el subproceso.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,8 +46,8 @@ Los métodos [**CAMThread:: Create**](camthread-create.md) y [**CAMThread:: Call
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxutil. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxutil.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ Los métodos [**CAMThread:: Create**](camthread-create.md) y [**CAMThread:: Call
 
 <dl> <dt>
 
-[**Clase CAMThread**](camthread.md)
+[**CLASE CAMThread**](camthread.md)
 </dt> </dl>
 
  

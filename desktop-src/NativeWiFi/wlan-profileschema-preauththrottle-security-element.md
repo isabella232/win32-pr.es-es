@@ -1,7 +1,7 @@
 ---
-description: Especifica el número de intentos de autenticación previa para intentar en los AP vecinos.
+description: Especifica el número de intentos previos a la autenticación para probar en los AP vecinos.
 ms.assetid: 7e89e962-7544-4efb-9e3c-c108bee22aea
-title: Elemento preAuthThrottle (Security)
+title: preAuthThrottle (security) (Elemento)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 499401affb264238a065c0861f1230f23936206e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8bc310d19126a0e4bc9a7e6abf2a6ae1d0eb917cb5f425796d10bee66ea6ebed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104541030"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119064605"
 ---
-# <a name="preauththrottle-security-element"></a>Elemento preAuthThrottle (Security)
+# <a name="preauththrottle-security-element"></a>preAuthThrottle (security) (Elemento)
 
-El elemento preAuthThrottle (Security) especifica el número de intentos de autenticación previa para probar en APs vecinos. Este elemento solo es válido para redes definidas por WPA2 con [**PMKCacheMode**](wlan-profileschema-pmkcachemode-security-element.md) establecido en "habilitado". Si **PMKCacheMode** está habilitado y este elemento no está presente, el número de intentos predeterminado es 3.
+El elemento preAuthThrottle (seguridad) especifica el número de intentos de autenticación previa para probar en los AP vecinos. Este elemento solo es válido para redes definidas por WPA2 con [**PMKCacheMode**](wlan-profileschema-pmkcachemode-security-element.md) establecido en "enabled". Si **PMKCacheMode** está habilitado y este elemento no está presente, el número de intentos tiene como valor predeterminado 3.
 
-**Windows XP con SP3 y API de LAN inalámbrica para Windows XP con SP2:** Este elemento no se admite.
+Windows XP con SP3 y LAN API inalámbrica **para Windows XP con SP2:** No se admite este elemento.
 
 ``` syntax
 <xs:element name="preAuthThrottle"
@@ -44,27 +44,27 @@ El elemento preAuthThrottle (Security) especifica el número de intentos de aute
 </xs:element>
 ```
 
-El elemento se define mediante el elemento de [**seguridad**](wlan-profileschema-security-msm-element.md) .
+El elemento de seguridad define [**el**](wlan-profileschema-security-msm-element.md) elemento .
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 **Contexto de definición del elemento en el esquema**
 </dt> <dt>
 
-[**bursátil**](wlan-profileschema-security-msm-element.md)
+[**Seguridad**](wlan-profileschema-security-msm-element.md)
 </dt> <dt>
 
 **Posible elemento primario inmediato en la instancia de esquema**

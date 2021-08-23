@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TTM_SETWINDOWTHEME (commctrl. h)
-description: Establece el estilo visual de un control ToolTip.
+title: TTM_SETWINDOWTHEME mensaje (Commctrl.h)
+description: Establece el estilo visual de un control de información sobre herramientas.
 ms.assetid: eeddb91e-8eb8-4480-9ab2-5efa9e3ef48a
 keywords:
-- TTM_SETWINDOWTHEME controles de mensajes de Windows
+- TTM_SETWINDOWTHEME controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d9c3f25b62bf0fe38a679234183cd5046f60784f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a3eb53b9ccd56f789fef6d7a95a5e3b77010787400aa553758e04c6674813f88
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119018743"
 ---
-# <a name="ttm_setwindowtheme-message"></a>TTM \_ SETWINDOWTHEME
+# <a name="ttm_setwindowtheme-message"></a>Mensaje \_ SETWINDOWTHEME de TTM
 
-Establece el estilo visual de un control ToolTip.
+Establece el estilo visual de un control de información sobre herramientas.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -35,18 +35,18 @@ Establece el estilo visual de un control ToolTip.
 *lParam* 
 </dt> <dd>
 
-Puntero a una cadena Unicode que contiene el estilo visual de información sobre herramientas que se va a establecer.
+Puntero a una cadena Unicode que contiene el estilo visual de información sobre herramientas que se establecerá.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-No se utiliza el valor devuelto.
+No se usa el valor devuelto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> Para usar este mensaje, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6,0. Para obtener más información sobre los manifiestos, vea [habilitar estilos visuales](cookbook-overview.md).
+> Para usar este mensaje, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6.0. Para obtener más información sobre los manifiestos, vea [Habilitar estilos visuales.](cookbook-overview.md)
 
  
 
@@ -56,9 +56,9 @@ No se utiliza el valor devuelto.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

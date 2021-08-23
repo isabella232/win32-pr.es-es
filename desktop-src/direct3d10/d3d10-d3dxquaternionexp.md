@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 7c022b9df4302683a184b4fc8329561b22d341d5
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 61035976610cac4bb428687d9742b3a493e0ba458c8a050f4ad77891f01c26b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991135"
 ---
 # <a name="d3dxquaternionexp-function-d3dx10mathh"></a>Función D3DXQuaternionExp (D3DX10Math.h)
 
@@ -82,7 +82,7 @@ exp(Q) = (cos(theta), sin(theta) * v)
 
 donde v es la parte vectorial de un cuaternión.
 
-El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXQuaternionExp se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la función D3DXQuaternionExp se puede usar como parámetro para otra función.
 
 El [**método D3DXQuaternionSquadSetup**](d3d10-d3dxquaternionsquadsetup.md) también se puede usar para configurar los puntos de control de un cuaternión.
 
@@ -99,7 +99,7 @@ Use [**D3DXQuaternionNormalize para cualquier**](d3d10-d3dxquaternionnormalize.m
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

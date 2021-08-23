@@ -1,6 +1,6 @@
 ---
-title: Métodos IDCompositionArithmeticCompositeEffect setcoefficient1 (Dcomp. h)
-description: Establece el primer coeficiente para la ecuación que se usa para componer las dos imágenes de entrada.
+title: Métodos IDCompositionArithmeticCompositeEffect setcoefficient1 (Dcomp.h)
+description: Establece el primer coeficiente de la ecuación utilizada para componer las dos imágenes de entrada.
 ms.assetid: 74b18201-5710-1213-51f8-2f97ba86c9a4
 keywords:
 - Métodos SetCoefficient1 DirectComposition
@@ -12,16 +12,16 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: d4ad803a2f419056845327a0bf57142b83b38cdd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a7ef34a35ae5ef08f091a9d90233cbcf61933d2442440f4ce2844763a18e3675
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718664"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119119049"
 ---
-# <a name="idcompositionarithmeticcompositeeffectsetcoefficient1-methods"></a>IDCompositionArithmeticCompositeEffect:: setcoefficient1 (métodos)
+# <a name="idcompositionarithmeticcompositeeffectsetcoefficient1-methods"></a>Métodos IDCompositionArithmeticCompositeEffect::setcoefficient1
 
-Establece el primer coeficiente para la ecuación que se usa para componer las dos imágenes de entrada.
+Establece el primer coeficiente de la ecuación utilizada para componer las dos imágenes de entrada.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,8 +29,8 @@ Establece el primer coeficiente para la ecuación que se usa para componer las d
 
 | Método                                                                                                          | Descripción                                                                                    |
 |:----------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------|
-| [**SetCoefficient1**](/windows/win32/api/dcomp/nf-dcomp-idcompositionarithmeticcompositeeffect-setcoefficient1(float))                               | Establece el primer coeficiente para la ecuación que se usa para componer las dos imágenes de entrada.<br/> |
-| [**SetCoefficient1 (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionarithmeticcompositeeffect-setcoefficient1(idcompositionanimation)) | Establece el primer coeficiente para la ecuación que se usa para componer las dos imágenes de entrada.<br/> |
+| [**SetCoefficient1**](/windows/win32/api/dcomp/nf-dcomp-idcompositionarithmeticcompositeeffect-setcoefficient1(float))                               | Establece el primer coeficiente de la ecuación utilizada para componer las dos imágenes de entrada.<br/> |
+| [**SetCoefficient1 (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionarithmeticcompositeeffect-setcoefficient1(idcompositionanimation)) | Establece el primer coeficiente de la ecuación utilizada para componer las dos imágenes de entrada.<br/> |
 
 
 
@@ -40,7 +40,7 @@ Establece el primer coeficiente para la ecuación que se usa para componer las d
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dcomp. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dcomp.h</dt> </dl> |
 
 
 

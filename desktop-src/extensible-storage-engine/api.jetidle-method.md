@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: API. JetIdle (método)'
-title: Método API. JetIdle
+description: Más información sobre el método Api.JetIdle
+title: Método Api.JetIdle
 TOCTitle: 'JetIdle method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetIdle(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.IdleGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetidle(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e524a23d5e8fb20b1b6db1fb7e82fbb07bf3df0f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 98ae40ecc25fabb4fa6054417f30e6e358fc962bb05b192e03d1ea416d255211
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104003006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119117575"
 ---
-# <a name="apijetidle-method"></a>Método API. JetIdle
+# <a name="apijetidle-method"></a>Método Api.JetIdle
 
-Realiza tareas de limpieza inactiva o comprueba el estado del almacén de versiones en ESE.
+Realiza tareas de limpieza inactivas o comprueba el estado del almacén de versiones en ESE.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -65,28 +65,28 @@ public static JET_wrn JetIdle(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión que se va a usar.
+    Sesión que se usará.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. IdleGrbit](./idlegrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.IdleGrbit](./idlegrbit-enumeration.md)  
     
-    Combinación de marcas de JetIdleGrbit.
+    Combinación de marcas JetIdleGrbit.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
-Un código de error si se produce un error en la operación.  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
+Código de error si se produce un error en la operación.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Clase de API](./api-class.md)
+[Api (clase)](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

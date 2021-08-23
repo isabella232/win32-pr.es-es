@@ -1,55 +1,55 @@
 ---
-title: Valores del registro del método de autenticación de EAP
-description: Obtenga información sobre los valores del registro del método de autenticación de EAP. Estos valores de registro específicos son necesarios para los métodos de autenticación de EAP.
+title: Valores del Registro Authenticator eap
+description: Obtenga información sobre los valores Authenticator del registro de métodos de EAP. Estos valores específicos del Registro son necesarios para los métodos autenticadores eap.
 ms.assetid: 9374f9f7-b088-4e3a-ac96-8ccbeda87bb7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a710ca6f09914c8d111c42a8323a9c39c51f898
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: c1db88a910a40519533ffddae40c1e1cc04d36b62f3d3ad6543ddd4a2999373e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103995641"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984315"
 ---
-# <a name="eap-authenticator-method-registry-values"></a>Valores del registro del método de autenticación de EAP
+# <a name="eap-authenticator-method-registry-values"></a>Valores del Registro Authenticator eap
 
-Los métodos de autenticación de EAP requieren valores de registro específicos.
+Se requieren valores específicos del Registro para los métodos autenticadores eap.
 
-## <a name="eap-authenticator-method-dll-paths"></a>Rutas de acceso DLL del método de autenticador EAP
+## <a name="eap-authenticator-method-dll-paths"></a>Rutas de acceso Authenticator DLL del método EAP
 
-La ruta de acceso siguiente especifica la ubicación del registro para los archivos dll normales del método de autenticación de EAP.
+La ruta de acceso siguiente especifica la ubicación del Registro para los archivos DLL normales del método autenticador EAP.
 
-**HKLM \\ System \\ CCS \\ Services \\ EAPHost \\ Methods \\ *&lt; AuthorId &gt;* \\ * &lt; EapTypeId&gt;***
+**Métodos eaphost de \\ HKLM System \\ CCS \\ Services \\ \\ \\ *&lt; AuthorId &gt;* \\ * &lt; EapTypeId&gt;***
 
-Por ejemplo, una ruta de acceso de registro de instalación del método de autenticación de EAP dada una **AuthorId** de "311" (que indica que "Microsoft" es el autor) y un **EapTypeId** de "40", aparece de la manera siguiente.
+Por ejemplo, una ruta de acceso de registro de instalación del método autenticador eap dado un **AuthorId** de "311" (que indica que "Microsoft" es el autor) y un **EapTypeId** de "40", aparece como sigue.
 
-**HKLM \\ System \\ CCS \\ Services \\ Eaphost \\ Methods \\ 311 \\ 40**
+**HkLM \\ System \\ CCS Services \\ \\ Eaphost Methods \\ \\ 311 \\ 40**
 
-La ruta de acceso siguiente especifica la ubicación del registro para los archivos DLL del método de autenticador EAP extendido.
+La ruta de acceso siguiente especifica la ubicación del Registro para los archivos DLL extendidos del método autenticador EAP.
 
-**HKLM \\ System \\ CCS \\ Services \\ EAPHost \\ Methods \\ *&lt; AuthorId &gt;* \\ 254 \\ *&lt; VendorId &gt;* \\ * &lt; VendorType&gt;***
+**Métodos eaphost de \\ HKLM System \\ CCS \\ Services \\ \\ \\ *&lt; AuthorId &gt;* \\ 254 \\ *&lt; &gt; VendorId* \\ * &lt; VendorType&gt;***
 
-Por ejemplo, una ruta de acceso de registro de instalación del método de autenticador de EAP dado un valor de **AuthorId** de "311" (que indica que "Microsoft" es el autor), un **VendorId** de "311" y un valor de **EapTypeId** de "40", aparece de la manera siguiente.
+Por ejemplo, una ruta de acceso de registro de instalación del método autenticador eap dado un **AuthorId** de "311" (que indica que "Microsoft" es el autor), un **VendorId** de "311" y **un EapTypeId** de "40", aparece como sigue.
 
-**HKLM \\ System \\ CCS \\ Services \\ Eaphost \\ methods \\ 311 \\ 254 \\ 311 \\ 40**
+**HkLM \\ System \\ CCS Services \\ \\ Eaphost Methods \\ \\ 311 \\ 254 \\ 311 \\ 40**
 
 > [!Note]  
-> Para obtener más información sobre la asignación de tipos de método EAP, consulte la sección 6,2 de [RFC 3748](https://go.microsoft.com/fwlink/p/?linkid=84016).
+> Para obtener más información sobre la asignación de tipos de método EAP, vea la sección 6.2 de [RFC 3748](https://go.microsoft.com/fwlink/p/?linkid=84016).
 
- 
+ 
 
-## <a name="registry-values"></a>Valores del registro
+## <a name="registry-values"></a>Valores del Registro
 
-Se requieren los siguientes valores del registro del método de autenticación.
+Se requieren los siguientes valores del Registro del método autenticador.
 
 -   [AuthenticatorDllPath](#authenticatordllpath)
 -   [AuthenticatorFriendlyName](#authenticatorfriendlyname)
 
-Además de los valores del registro anteriores, se recomienda el siguiente valor del registro del método de autenticación.
+Además de los valores del Registro anteriores, se recomienda el siguiente valor del Registro del método autenticador.
 
 -   [Propiedades](#properties)
 
-Los valores restantes del registro del método de autenticación son opcionales.
+Los valores restantes del Registro del método autenticador son opcionales.
 
 -   [ConfigCLSID](#configclsid)
 -   [StandaloneSupported](#standalonesupported)
@@ -60,12 +60,12 @@ Los valores restantes del registro del método de autenticación son opcionales.
 
 | Valor constante | AuthenticatorDllPath                                                                                          |
 |----------------|---------------------------------------------------------------------------------------------------------------|
-| Tipo           | REG \_ expandir \_ SZ                                                                                               |
-| Descripción    | La ruta de acceso al archivo DLL del método de autenticación EAP. Por ejemplo,% SystemRoot% \\ system32 \\ &lt; nombre \_ de \_ dll &gt; . dll. |
+| Tipo           | REG \_ EXPAND \_ SZ                                                                                               |
+| Descripción    | Ruta de acceso al archivo DLL del método autenticador EAP. Por ejemplo, %SystemRoot% \\ system32 \\ &lt; name of DLL \_ \_ &gt;.dll. |
 
 
 
- 
+ 
 
 ## <a name="authenticatorfriendlyname"></a>AuthenticatorFriendlyName
 
@@ -73,12 +73,12 @@ Los valores restantes del registro del método de autenticación son opcionales.
 
 | Valor constante | AuthenticatorFriendlyName                                                          |
 |----------------|------------------------------------------------------------------------------------|
-| Tipo           | Registro \_ SZ                                                                            |
-| Descripción    | Cadena que contiene el nombre descriptivo (para mostrar) del método de autenticación de EAP. |
+| Tipo           | REG \_ SZ                                                                            |
+| Descripción    | Cadena que contiene el nombre descriptivo (para mostrar) del método autenticador EAP. |
 
 
 
- 
+ 
 
 ## <a name="configclsid"></a>ConfigCLSID
 
@@ -86,12 +86,12 @@ Los valores restantes del registro del método de autenticación son opcionales.
 
 | Valor constante | ConfigCLSID                                                                                                                           |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| Tipo           | Registro \_ SZ                                                                                                                               |
-| Descripción    | Cadena que contiene el GUID de la clase de configuración para este método de autenticación, con el formato {XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX} |
+| Tipo           | REG \_ SZ                                                                                                                               |
+| Descripción    | Cadena que contiene el GUID de la clase de configuración para este método autenticador, con el formato {XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX} |
 
 
 
- 
+ 
 
 ## <a name="properties"></a>Propiedades
 
@@ -99,12 +99,12 @@ Los valores restantes del registro del método de autenticación son opcionales.
 
 | Valor constante | Propiedades                                                                                                                                                  |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tipo           | \_valor DWORD reg                                                                                                                                                  |
-| Descripción    | Los bits de la DWORD se establecen para indicar la compatibilidad con la propiedad. Para obtener una lista de valores admitidos, consulte [**propiedades del método EAP**](eap-method-properties.md). |
+| Tipo           | REG \_ DWORD                                                                                                                                                  |
+| Descripción    | Los bits de DWORD se establecen para indicar la compatibilidad con la propiedad . Para obtener una lista de los valores admitidos, vea [**Propiedades del método EAP**](eap-method-properties.md). |
 
 
 
- 
+ 
 
 ## <a name="standalonesupported"></a>StandaloneSupported
 
@@ -112,21 +112,21 @@ Los valores restantes del registro del método de autenticación son opcionales.
 
 | Valor constante | StandaloneSupported                                             |
 |----------------|-----------------------------------------------------------------|
-| Tipo           | \_valor DWORD reg                                                      |
-| Descripción    | 0 si se trata de un método de autenticación independiente; 1 si no lo está. |
+| Tipo           | REG \_ DWORD                                                      |
+| Descripción    | 0 si se trata de un método autenticador independiente; 1 si no es así. |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Claves del registro del método EAP del mismo nivel](eap-peer-method-registry-keys.md)
+[Claves del Registro del método del mismo nivel de EAP](eap-peer-method-registry-keys.md)
 </dt> <dt>
 
-[Configuración del registro para tipos de EAP expandidos](registry-keys-for-eap-methods.md)
+[Configuración del Registro para tipos de EAP expandido](registry-keys-for-eap-methods.md)
 </dt> <dt>
 
 [Uso de EAPHost](using-eap-host.md)
@@ -135,9 +135,9 @@ Los valores restantes del registro del método de autenticación son opcionales.
 [RFC 3748](https://go.microsoft.com/fwlink/p/?linkid=84016)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

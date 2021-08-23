@@ -1,7 +1,7 @@
 ---
 description: Función de proxy para el método GetStride.
 ms.assetid: 243439f3-2267-4632-b312-75c5ae5eddaa
-title: IWICBitmapLock_GetStride_Proxy función)
+title: IWICBitmapLock_GetStride_Proxy función
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 70e42e233235b8616cf9191189ecc9e9ff01e85f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3d2635e58c8cce37a6744fe4101626c99556f5ad40fe98a88fc46fea06740edb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706953"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119088397"
 ---
-# <a name="iwicbitmaplock_getstride_proxy-function"></a>IWICBitmapLock \_ GetStride \_ función proxy
+# <a name="iwicbitmaplock_getstride_proxy-function"></a>Función IWICBitmapLock \_ GetStride \_ Proxy
 
-Función de proxy para el método [**GetStride**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmaplock-getstride) .
+Función de proxy para el [**método GetStride.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmaplock-getstride)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,29 +41,29 @@ HRESULT IWICBitmapLock_GetStride_Proxy(
 
 <dl> <dt>
 
-*Este \_ PTR* \[ en\]
+*THIS \_ PTR* \[ en\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapLock**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmaplock) \** _
+Tipo: **[ **IWICBitmapLock**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmaplock)\***
 
-Puntero a este objeto [_ *IWICBitmapLock* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmaplock) .
+Puntero a este [**objeto IWICBitmapLock.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmaplock)
 
 </dd> <dt>
 
-*pcbStride* \[ enuncia\]
+*yerbaStride* \[ out\]
 </dt> <dd>
 
-Tipo: **uint \** _
+Tipo: **UINT \***
 
-El intervalo del mapa de bits.
+El paso de mapa de bits.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
@@ -71,11 +71,11 @@ Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo con
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP con SP2, \[ solo aplicaciones de escritorio de Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                                                                             |
-| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP con SP2, solo Windows \[ aplicaciones de escritorio de Vista\]<br/>                                                                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                                                                             |
+| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

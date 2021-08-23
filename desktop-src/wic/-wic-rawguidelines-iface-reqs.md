@@ -4,28 +4,28 @@ ms.assetid: 8c2afeb3-3e0b-4f8a-a2f4-df7c9ce4b098
 title: Requisitos del método de interfaz
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c9cabe02900fa789773f4104cf282ab326bd4930
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8525f7b04fe82247ecd64a38f5f1acc298be5d3ace56303072268fed6a4a3cfd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105648569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119086928"
 ---
 # <a name="interface-method-requirements"></a>Requisitos del método de interfaz
 
-No todos los métodos de cada interfaz deben tener una implementación de. Por ejemplo, algunos códecs tienen metadatos globales, miniaturas o contextos de color, mientras que otros códecs los proporcionan únicamente en cada fotograma. Si los autores de códecs proporcionan estos solo en cada fotograma, solo necesitan [**implementar el**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getthumbnail) / [**SetThumbnail**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-setthumbnail) o ColorContexts, o bien implementar los métodos [**GetMetadataQueryReader**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframedecode-getmetadataqueryreader) o [**GetMetadataQueryWriter**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-getmetadataquerywriter) en [**IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode) y [**IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) en lugar de en [**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) y [**IWICBitmapEncoder**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapencoder). Del mismo modo, algunos códecs no usan formatos indexados, por lo que no son necesarios para implementar los métodos [**CopyPalette**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-copypalette) y [**SetPalette**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-setpalette) . Por lo tanto, estos métodos son opcionales y se dejan a la discreción del creador del códec. La mayoría de los demás métodos son necesarios.
+No todos los métodos de cada interfaz deben tener una implementación. Por ejemplo, algunos códecs tienen metadatos globales, miniaturas o contextos de color, mientras que otros códecs solo los proporcionan por fotograma. Si los autores de códecs solo los proporcionan por fotograma, solo necesitan implementar [**Get**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getthumbnail) / [**SetThumbnail**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-setthumbnail) o ColorContexts, o bien implementar los métodos [**GetMetadataQueryReader**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframedecode-getmetadataqueryreader) o [**GetMetadataQueryWriter**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-getmetadataquerywriter) en [**IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode) e [**IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) en lugar de en [**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) e [**IWICBitmapEncoder.**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapencoder) Del mismo modo, algunos códecs no usan formatos indexados, por lo que no son necesarios para implementar los [**métodos CopyPalette**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-copypalette) [**y SetPalette.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-setpalette) Por lo tanto, estos métodos son opcionales y quedan a discreción del creador del códec. La mayoría de los demás métodos son necesarios.
 
-Para Windows 7 [](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getpreview), / se necesitan Get [**SetPreview**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-setpreview) y [**Get**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getthumbnail) / [**SetThumbnail**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-setthumbnail) y se deben implementar en las clases de nivel de contenido o en las clases de nivel de marco. Si el formato de archivo de imagen no admite vistas previas ni vistas en miniatura en ninguna de estas ubicaciones, debe revisar el formato del archivo de imagen para proporcionar dicha compatibilidad.
+Para Windows 7 Se requieren [**Get**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getpreview) / [**SetPreview**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-setpreview) y [**Get**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getthumbnail) / [**SetThumbnail**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-setthumbnail) y deben implementarse en las clases de nivel de contenido o en las clases de nivel de marco. Si el formato de archivo de imagen no admite vistas previas o miniaturas en ninguna de estas ubicaciones, debe revisar el formato del archivo de imagen para proporcionar dicha compatibilidad.
 
-Cuando no se implementa un método, es importante devolver un error adecuado para que el autor de la llamada pueda determinar que la característica solicitada no se admite. Por ejemplo, si los autores de códecs no admiten miniaturas de nivel de contenedor, deben devolver [WINCODEC \_ Err \_ CODECNOTHUMBNAIL](-wic-codec-error-codes.md) cuando una aplicación llama a [**GetThumbnail**](-wic-codec-iwicbitmapdecoder-getthumbnail-proxy.md)y, si no tienen una paleta, deben devolver [WINCODEC \_ Err \_ PALETTEUNAVAILABLE](-wic-codec-error-codes.md). Si no existe ningún código de [ \_ error WINCODEC](-wic-codec-error-codes.md) adecuado, el códec debe devolver E \_ NOTIMPL para los métodos no implementados.
+Cuando no se implementa un método, es importante devolver un error adecuado para que el autor de la llamada pueda determinar que no se admite la característica solicitada. Por ejemplo, si los autores de códecs no admiten miniaturas de nivel de contenedor, deben devolver EL CÓDEC DE ERR DE [WINCODECNOTHUMBNAIL \_ \_](-wic-codec-error-codes.md) cuando una aplicación llama a [**GetThumbnail**](-wic-codec-iwicbitmapdecoder-getthumbnail-proxy.md)y, si no tienen una paleta, deben devolver [WINCODEC \_ ERR \_ PALETTEUNAVAILABLE](-wic-codec-error-codes.md). Si no existe ningún [código DE ERROR \_ DE WINCODEC](-wic-codec-error-codes.md) adecuado, el códec debe devolver E \_ NOTIMPL para los métodos sin implementar.
 
-En las tablas siguientes se enumeran los métodos obligatorios y opcionales para cada interfaz de Windows Imaging Component (WIC).
+En las tablas siguientes se muestran los métodos obligatorios y opcionales para Windows interfaces del componente de creación de imágenes (WIC).
 
 [**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder)
 
 
 
-Obligatorio
+Requerido
 
 [**QueryCapability**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-querycapability)
 
@@ -43,7 +43,7 @@ Opcionales
 
 [**GetPreview**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getpreview)¹
 
-[**GetThumbnail**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getthumbnail)²
+[**GetThumbnail**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getthumbnail)miento
 
 [**GetColorContexts**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getcolorcontexts)
 
@@ -55,21 +55,21 @@ Opcionales
 
  
 
-¹ se requiere si el formato de archivo de imagen admite las vistas previas de nivel de contenedor. Si no es así, le recomendamos encarecidamente que revise el formato del archivo de imagen para que sea compatible. Si se implementa aquí, se requiere un [**SetPreview**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-setpreview) correspondiente en la clase de codificación de nivel de contenedor.
+Se le pregunta si el formato de archivo de imagen admite vistas previas de nivel de contenedor. Si este no es el caso, se recomienda encarecidamente revisar el formato del archivo de imagen para admitirlo. Si se implementa aquí, se requiere [**una clase SetPreview**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-setpreview) correspondiente en la clase de codificación de nivel de contenedor.
 
-² se requiere aquí o en la clase de descodificación en el nivel de marco, en función del lugar en el que el formato de archivo de imagen almacena las miniaturas. Si se implementa aquí, se requiere un [**SetThumbnail**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-setthumbnail) correspondiente en la clase de codificación de nivel de contenedor.
+Se le pide aquí o en la clase de descodificación de nivel de marco, en función de dónde se almacenan las miniaturas en el formato de archivo de imagen. Si se implementa aquí, se requiere [**un setThumbnail correspondiente**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-setthumbnail) en la clase de codificación de nivel de contenedor.
 
 [**IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode)
 
 
 
-Obligatorio
+Requerido
 
 [**GetColorContexts**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframedecode-getcolorcontexts)
 
 [**GetMetadataQueryReader**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframedecode-getmetadataqueryreader)
 
-[**GetSize (**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-getsize)
+[**GetSize**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-getsize)
 
 [**GetPixelFormat**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-getpixelformat)
 
@@ -87,13 +87,13 @@ Opcionales
 
  
 
-¹ se requiere aquí o en la clase de descodificación de nivel de contenedor, en función del lugar en el que el formato de archivo de imagen almacena las miniaturas. Si se implementa aquí, se requiere un [**SetThumbnail**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-setthumbnail) correspondiente en la clase de codificador de nivel de marco.
+¹Required ya sea aquí o en la clase de descodificación de nivel de contenedor, en función de dónde almacena el formato de archivo de imagen miniaturas. Si se implementa aquí, se requiere [**un SetThumbnail**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-setthumbnail) correspondiente en la clase de codificador de nivel de fotograma.
 
 [**IWICMetadataBlockReader**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatablockreader)
 
 
 
-Obligatorio
+Requerido
 
 [**GetContainerFormat**](/windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwicmetadatablockreader-getcontainerformat)
 
@@ -101,7 +101,7 @@ Obligatorio
 
 [**GetReaderByIndex**](/windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwicmetadatablockreader-getreaderbyindex)
 
-[**GetEnumerator**](/windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwicmetadatablockreader-getenumerator)
+[**Getenumerator**](/windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwicmetadatablockreader-getenumerator)
 
 
 
@@ -111,7 +111,7 @@ Obligatorio
 
 
 
-Obligatorio
+Requerido
 
 [**DoesSupportTransform**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsourcetransform-doessupporttransform)
 
@@ -129,13 +129,13 @@ Opcionales
 
 [**IWICDevelopRaw**](/windows/desktop/api/Wincodec/nn-wincodec-iwicdevelopraw)
 
-Consulte [compatibilidad con IWICDevelopRaw](./-wic-rawguidelines-iwicdevelopraw.md), más adelante en este documento.
+Consulte [Compatibilidad con IWICDevelopRaw,](./-wic-rawguidelines-iwicdevelopraw.md)más adelante en este documento.
 
 [**IWICBitmapEncoder**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapencoder)
 
 
 
-Obligatorio
+Requerido
 
 [**Inicialización**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-initialize)
 
@@ -145,13 +145,13 @@ Obligatorio
 
 [**CreateNewFrame**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-createnewframe)
 
-[**Promete**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-commit)
+[**Confirmar**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-commit)
 
 Opcionales
 
 [**SetPreview**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-setpreview)¹
 
-[**SetThumbnail**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-setthumbnail)²
+[**SetThumbnail**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-setthumbnail)miento
 
 [**SetColorContexts**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-setcolorcontexts)
 
@@ -163,15 +163,15 @@ Opcionales
 
  
 
-¹ se requiere si el formato de archivo de imagen admite vistas previas de nivel de marco.
+Se le pregunta si el formato de archivo de imagen admite vistas previas de nivel de fotograma.
 
-² se requiere aquí o bien, en la clase de codificación en el nivel de marco, en función del lugar en el que el formato de archivo de imagen almacena las miniaturas. Si se implementa aquí, se requiere un [**GetThumbnail**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getthumbnail) correspondiente en la clase de descodificación de nivel de contenedor.
+Se le pide aquí o en la clase de codificación de nivel de marco, en función de dónde se almacenan las miniaturas en el formato de archivo de imagen. Si se implementa aquí, se requiere una [**clase GetThumbnail**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getthumbnail) correspondiente en la clase de descodificación de nivel de contenedor.
 
 [**IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode)
 
 
 
-Obligatorio
+Requerido
 
 [**Inicialización**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-initialize)
 
@@ -189,7 +189,7 @@ Obligatorio
 
 [**WriteSource**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-writesource)
 
-[**Promete**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-commit)
+[**Confirmar**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-commit)
 
 Opcionales
 
@@ -201,13 +201,13 @@ Opcionales
 
  
 
-¹ se requiere aquí o en la clase de codificación de nivel de contenedor, en función del lugar en el que el formato de archivo de imagen almacena las miniaturas. Si se implementa aquí, se requiere un [**GetThumbnail**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframedecode-getthumbnail) correspondiente en la clase de descodificación en el nivel de marco.
+¹Required aquí o en la clase de codificación de nivel de contenedor, en función de dónde se almacenan las miniaturas en el formato de archivo de imagen. Si se implementa aquí, se requiere una [**clase GetThumbnail**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframedecode-getthumbnail) correspondiente en la clase de descodificación de nivel de fotograma.
 
 [**IWICMetadataBlockReader**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatablockreader)
 
 
 
-Obligatorio
+Requerido
 
 [**InitializeFromBlockReader**](/windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwicmetadatablockwriter-initializefromblockreader)
 
@@ -227,13 +227,13 @@ Obligatorio
 
 <dl> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
-[Información general sobre componentes de Windows Imaging](-wic-about-windows-imaging-codec.md)
+[Windows Información general sobre los componentes de creación de imágenes](-wic-about-windows-imaging-codec.md)
 </dt> <dt>
 
-[Instrucciones de WIC para formatos de imagen RAW de cámara](-wic-rawguidelines.md)
+[Directrices de WIC para formatos de imagen raw de cámara](-wic-rawguidelines.md)
 </dt> <dt>
 
 [Cómo escribir un códec de WIC-Enabled](-wic-howtowriteacodec.md)

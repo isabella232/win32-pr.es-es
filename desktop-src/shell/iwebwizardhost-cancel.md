@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shldisp.h
 ms.assetid: ea53c8ad-d6dd-4ff7-92e4-681d807a3d98
-ms.openlocfilehash: a75ecc508f6e901d5003f9e5ecd23497aa8de919
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: d19b99dc4b75916411593b64de09fa0862ff4576b2d72be5c93a12c9b3b7a345
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119092632"
 ---
 # <a name="webwizardhostcancel-method"></a>Método WebWizardHost.Cancel
 
@@ -37,7 +37,7 @@ iRetVal = WebWizardHost.Cancel()
 
 Este método no tiene parámetros.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El cliente es responsable de responder a este método con el comportamiento esperado cerrando el asistente.
 
@@ -47,8 +47,8 @@ El cliente es responsable de responder a este método con el comportamiento espe
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
 | Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>   |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl> |
 

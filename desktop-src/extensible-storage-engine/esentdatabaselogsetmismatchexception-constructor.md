@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentDatabaseLogSetMismatchException'
-title: Constructor de EsentDatabaseLogSetMismatchException
+description: 'Más información sobre: Constructor EsentDatabaseLogSetMismatchException'
+title: Constructor EsentDatabaseLogSetMismatchException
 TOCTitle: 'EsentDatabaseLogSetMismatchException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentDatabaseLogSetMismatchException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentdatabaselogsetmismatchexception.esentdatabaselogsetmismatchexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e6e29303c380551f003ca855bd061481c57740f2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ffaa035d50495b51bf70d3596afd5ba02dd3d04413777544f977ee0b9d9874e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715693"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119041393"
 ---
-# <a name="esentdatabaselogsetmismatchexception-constructor"></a>Constructor de EsentDatabaseLogSetMismatchException
+# <a name="esentdatabaselogsetmismatchexception-constructor"></a>Constructor EsentDatabaseLogSetMismatchException
 
 Inicializa una nueva instancia de la clase EsentDatabaseLogSetMismatchException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentDatabaseLogSetMismatchException()
 public EsentDatabaseLogSetMismatchException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentDatabaseLogSetMismatchException()
 
 [Miembros de EsentDatabaseLogSetMismatchException](./esentdatabaselogsetmismatchexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

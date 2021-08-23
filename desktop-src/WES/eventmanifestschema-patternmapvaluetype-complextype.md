@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de PatternMapValueType
-description: No se utiliza. Define las expresiones regulares que se usan para buscar una cadena coincidente en la cadena de mensaje y modificarla.
+title: Tipo complejo PatternMapValueType
+description: No se usa. Define las expresiones regulares utilizadas para buscar una cadena correspondiente en la cadena del mensaje y modificarla.
 ms.assetid: 2ae8a268-64c0-45d1-8339-988b13d884a3
 keywords:
-- PatternMapValueType tipo complejo EventLog
+- EventLog de tipo complejo PatternMapValueType
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 55b57b63f3e5c9e5a5c4cd15974c89f6d28439f5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dc36564aefd4d2f3d19f3b216d785faad888612621386037ae0e5539ce511169
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103800949"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136169"
 ---
-# <a name="patternmapvaluetype-complex-type"></a>Tipo complejo de PatternMapValueType
+# <a name="patternmapvaluetype-complex-type"></a>Tipo complejo PatternMapValueType
 
-No se utiliza. Define las expresiones regulares que se usan para buscar una cadena coincidente en la cadena de mensaje y modificarla.
+No se usa. Define las expresiones regulares utilizadas para buscar una cadena correspondiente en la cadena del mensaje y modificarla.
 
 ``` syntax
 <xs:complexType name="PatternMapValueType">
@@ -49,8 +49,8 @@ No se utiliza. Define las expresiones regulares que se usan para buscar una cade
 
 | Nombre  | Tipo   | Descripción                                                                                               |
 |-------|--------|-----------------------------------------------------------------------------------------------------------|
-| name  | string | Expresión regular utilizada para buscar una cadena coincidente en la cadena de mensaje.<br/>                   |
-| value | string | Expresión regular que se usa para modificar la cadena coincidente que se encontró en la cadena de mensaje.<br/> |
+| name  | string | Expresión regular que se usa para buscar una cadena que coincida en la cadena del mensaje.<br/>                   |
+| value | string | Expresión regular usada para modificar la cadena de coincidencia que se encontró en la cadena del mensaje.<br/> |
 
 
 
@@ -60,8 +60,8 @@ No se utiliza. Define las expresiones regulares que se usan para buscar una cade
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

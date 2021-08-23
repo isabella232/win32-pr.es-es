@@ -1,7 +1,7 @@
 ---
 description: Indica si el elemento es un acceso directo.
 ms.assetid: f3400f0b-5c7f-4d41-a162-1c35014082ac
-title: Propiedad carpeta. IsLink (Shldisp. h)
+title: Propiedad FolderItem.IsLink (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: bd4357485dce3f3d236f31797d8b2df7028f3d65
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eb12c2273bb22af2df9f76c6606cad69223fa04292e0d556a65d4898bc968c75
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907560"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119093129"
 ---
-# <a name="folderitemislink-property"></a>Propiedad carpeta. IsLink
+# <a name="folderitemislink-property"></a>Propiedad FolderItem.IsLink
 
 Indica si el elemento es un acceso directo.
 
@@ -37,13 +37,13 @@ bIsLink = FolderItem.IsLink
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Un **valor booleano** que recibe **true** si el elemento es un método abreviado o **false** en caso contrario.
+Valor **booleano** que recibe **true** si el elemento es un acceso directo o **false** si no es así.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **IsLink** para determinar si un objeto determinado es un vínculo. En este caso, el objeto es un acceso directo a Internet Explorer y, por tanto, debe devolver **true**. Se muestra el uso correcto de JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa IsLink** para determinar si un objeto determinado es un vínculo. En este caso, el objeto es un acceso directo para Internet Explorer, por lo que debe devolver **true**. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -73,7 +73,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -146,13 +146,13 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

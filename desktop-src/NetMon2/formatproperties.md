@@ -1,7 +1,7 @@
 ---
-description: La función de exportación FormatProperties da formato a los datos que se muestran en el panel de detalles de la interfaz de usuario de Monitor de red. Si desea mostrar los datos en el panel de detalles, debe implementar la función de exportación FormatProperties en todos los archivos dll de analizador.
+description: La función de exportación FormatProperties da formato a los datos que se muestran en el panel de detalles de la interfaz Monitor de red usuario. Si desea mostrar datos en el panel de detalles, debe implementar la función de exportación FormatProperties en todos los archivos DLL del analizador.
 ms.assetid: 78e0b4b9-f19e-41cb-8504-635f3f9ac1ee
-title: Función de devolución de llamada FormatProperties (Netmon. h)
+title: Función de devolución de llamada FormatProperties (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - UserDefined
 api_location:
 - Netmon.h
-ms.openlocfilehash: 61707b49fa88490e1aa22ac89f33dfd97ec20cbd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6bb0bc74a52569edbb922aa93edd27b53106073ffdafa3a6cacc5808aab71eef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666287"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119012253"
 ---
 # <a name="formatproperties-callback-function"></a>Función de devolución de llamada FormatProperties
 
-La función de exportación **FormatProperties** da formato a los datos que se muestran en el panel de detalles de la interfaz de usuario de monitor de red. Si desea mostrar los datos en el panel de detalles, debe implementar la función de exportación **FormatProperties** en todos los archivos dll de analizador.
+La función de exportación **FormatProperties** da formato a los datos que se muestran en el panel de detalles de la interfaz Monitor de red usuario. Si desea mostrar datos en el panel de detalles, debe implementar la función de exportación **FormatProperties** en todos los archivos DLL del analizador.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,61 +43,61 @@ DWORD FormatProperties(
 
 <dl> <dt>
 
-*hFrame* \[ de\]
+*hFrame* \[ En\]
 </dt> <dd>
 
-Identificador del marco que se está analizando.
+Controle el marco que se está analizando.
 
 </dd> <dt>
 
-*lpFrame* \[ de\]
+*lpFrame* \[ En\]
 </dt> <dd>
 
 Puntero al primer byte de un marco.
 
 </dd> <dt>
 
-*lpProtocol* \[ de\]
+*lpProtocol* \[ En\]
 </dt> <dd>
 
-Puntero al principio de los datos de protocolo en un marco.
+Puntero al principio de los datos del protocolo en un marco.
 
 </dd> <dt>
 
-*nPropertyInsts* \[ de\]
+*nPropertyInsts* \[ En\]
 </dt> <dd>
 
-Número de estructuras [PROPERTYINST](propertyinst.md) proporcionadas por *lpPropInst*.
+Número de [estructuras PROPERTYINST](propertyinst.md) proporcionadas por *lpPropInst.*
 
 </dd> <dt>
 
-*lpPropInst* \[ de\]
+*lpPropInst* \[ En\]
 </dt> <dd>
 
-Puntero a una matriz de estructuras [PROPERTYINST](propertyinst.md) .
+Puntero a una matriz de [estructuras PROPERTYINST.](propertyinst.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente, el valor devuelto es **true**.
+Si la función se realiza correctamente, el valor devuelto es **TRUE.**
 
-Si la función no se realiza correctamente, el valor devuelto es **false**.
+Si la función no se realiza correctamente, el valor devuelto es **FALSE.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Monitor de red llama a la función **FormatProperties** para mostrar los datos en el panel de detalles de la interfaz de usuario de monitor de red. Normalmente, se llama a **FormatProperties** para dar formato a la línea de Resumen de un protocolo y, a continuación, para dar formato a todas las instancias de propiedad del protocolo dentro de un marco. Sin embargo, Monitor de red no garantiza el número de veces que llama a **FormatProperties** para un analizador específico.
+Monitor de red llama a la **función FormatProperties** para mostrar datos en el panel de detalles de la interfaz Monitor de red usuario. Normalmente, se llama a **FormatProperties** para dar formato a la línea de resumen de un protocolo y, a continuación, para dar formato a todas las instancias de propiedad del protocolo dentro de un marco. Sin embargo, Monitor de red no garantiza el número de veces que llama a **FormatProperties** para un analizador específico.
 
-Durante la implementación de la función **FormatProperties** , el analizador llama indirectamente a la función [FormatPropertyInstance](formatpropertyinstance.md) para usar el formateador genérico que proporciona monitor de red, o puede llamar a un procedimiento de formateador personalizado definido por el analizador. Se debe llamar a uno de los formateadores para cada estructura [PROPERTYINST](propertyinst.md) pasada a la dll del analizador en el parámetro *lpPropInst* .
+Durante la implementación de la función **FormatProperties,** el analizador llama indirectamente a la función [FormatPropertyInstance](formatpropertyinstance.md) para usar el formateador genérico que proporciona Monitor de red o puede llamar a un procedimiento de formateador personalizado definido por el analizador. Se debe llamar a uno de los formateadores para cada estructura [PROPERTYINST](propertyinst.md) pasada al archivo DLL del analizador en el *parámetro lpPropInst.*
 
 
 
 | Para obtener información sobre                                          | Vea                                                                |
 |-------------------------------------------------------------|--------------------------------------------------------------------|
 | Qué son los analizadores y cómo funcionan con Monitor de red.   | [Analizadores](parsers.md)                                             |
-| Qué puntos de entrada se incluyen en el archivo DLL del analizador.          | [Arquitectura de DLL de analizador](parser-dll-architecture.md)             |
-| Cómo implementar **FormatProperties**  incluye un ejemplo. | [Implementación de FormatProperties](implementing-formatproperties.md) |
-| Cómo el formateador genérico da formato a distintos tipos de datos.  | [Salida del formateador genérico](generic-formatter-output.md)           |
+| Qué puntos de entrada se incluyen en el archivo DLL del analizador.          | [Arquitectura dll del analizador](parser-dll-architecture.md)             |
+| La implementación de **FormatProperties**  incluye un ejemplo. | [Implementación de FormatProperties](implementing-formatproperties.md) |
+| Cómo el formateador genérico da formato a diferentes tipos de datos.  | [Salida de formateador genérico](generic-formatter-output.md)           |
 
 
 
@@ -111,7 +111,7 @@ Durante la implementación de la función **FormatProperties** , el analizador l
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 
@@ -122,7 +122,7 @@ Durante la implementación de la función **FormatProperties** , el analizador l
 [FormatPropertyInstance](formatpropertyinstance.md)
 </dt> <dt>
 
-[PROPERTYINFO](propertyinfo.md)
+[Propertyinfo](propertyinfo.md)
 </dt> <dt>
 
 [PROPERTYINST](propertyinst.md)

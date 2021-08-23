@@ -1,17 +1,17 @@
 ---
 description: Denominador de PKEY \_ GPS \_ DestDistance.
 ms.assetid: ecf92ef7-1c6e-49e7-9f2a-eddd6d493abe
-title: System. GPS. DestDistanceDenominator
+title: System.GPS.DestDistanceDenominator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e6b2b8516a531fa088f142d96c909ef583d7aceb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 87f151ef0cda6c4f00a42e43ae6ae61453cb8581d964aabb95c05870a79ba2e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119033553"
 ---
-# <a name="systemgpsdestdistancedenominator"></a>System. GPS. DestDistanceDenominator
+# <a name="systemgpsdestdistancedenominator"></a>System.GPS.DestDistanceDenominator
 
 Denominador de PKEY \_ GPS \_ DestDistance.
 
@@ -30,9 +30,9 @@ propertyDescription
       type = UInt32
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

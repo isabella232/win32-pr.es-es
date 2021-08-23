@@ -1,5 +1,5 @@
 ---
-title: Enumeración CB_ADDRESS_TYPE (Cbclient. h)
+title: CB_ADDRESS_TYPE enumeración (Cbclient.h)
 description: Especifica el tipo de dirección.
 ms.assetid: 1F6ECFA6-8876-4C9B-A883-BD630D54B8E2
 ms.tgt_platform: multiple
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ecf17cea6ffc19743868b266236738839f9f917
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 50903baa9fe85685ef3390ee3d545dd7defff5288d0960d6a2d7ec6ebe2276ed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801591"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001703"
 ---
-# <a name="cb_address_type-enumeration"></a>\_Enumeración de tipo de dirección CB \_
+# <a name="cb_address_type-enumeration"></a>Enumeración \_ CB ADDRESS \_ TYPE
 
 Especifica el tipo de dirección.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -43,21 +43,21 @@ typedef enum _CB_ADDRESS_TYPE {
 
 <dl> <dt>
 
-<span id="CB_ADDR_UNDEFINED"></span><span id="cb_addr_undefined"></span>**Dirección CB no \_ \_ definida**
+<span id="CB_ADDR_UNDEFINED"></span><span id="cb_addr_undefined"></span>**CB \_ ADDR \_ UNDEFINED**
 </dt> <dd>
 
-El tipo de dirección es indefinido.
+El tipo de dirección no está definido.
 
 </dd> <dt>
 
-<span id="CB_ADDR_IPv4"></span><span id="cb_addr_ipv4"></span><span id="CB_ADDR_IPV4"></span>**CB \_ dir \_ IPv4**
+<span id="CB_ADDR_IPv4"></span><span id="cb_addr_ipv4"></span><span id="CB_ADDR_IPV4"></span>**CB \_ ADDR \_ IPv4**
 </dt> <dd>
 
 La dirección es una dirección IPv4.
 
 </dd> <dt>
 
-<span id="CB_ADDR_IPv6"></span><span id="cb_addr_ipv6"></span><span id="CB_ADDR_IPV6"></span>**CB \_ dir \_ IPv6**
+<span id="CB_ADDR_IPv6"></span><span id="cb_addr_ipv6"></span><span id="CB_ADDR_IPV6"></span>**CB \_ ADDR \_ IPv6**
 </dt> <dd>
 
 La dirección es una dirección IPv6.
@@ -72,7 +72,7 @@ La dirección es una dirección IPv6.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                        |
-| Encabezado<br/>                   | <dl> <dt>Cbclient. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Cbclient.h</dt> </dl> |
 
 
 

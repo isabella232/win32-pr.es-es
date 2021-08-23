@@ -1,8 +1,8 @@
 ---
-description: Win32 \_ PageFileSetting&\# 8194; La clase WMI representa la configuración de un archivo de paginación.
+description: El archivo \_ PageFileSetting de Win32&\# 8194; La clase WMI representa la configuración de un archivo de página.
 ms.assetid: 22190ede-1db6-4d69-ae74-63d10977cc78
 ms.tgt_platform: multiple
-title: Win32_PageFileSetting (clase)
+title: Win32_PageFileSetting clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,18 +20,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b3ec2fa36e31cf9075f218f31d3063e3a298b8ec
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b860e5b9677b4d4774e0a3a01fb1cc27b336e7c1a02ebcfc40351f5eda21eb8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659696"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119020193"
 ---
-# <a name="win32_pagefilesetting-class"></a>\_Clase Win32 PageFileSetting
+# <a name="win32_pagefilesetting-class"></a>Clase \_ PageFileSetting de Win32
 
-La  [clase WMI](../wmisdk/retrieving-a-class.md) **\_ PageFileSetting de Win32** representa la configuración de un archivo de paginación. La información contenida en los objetos de los que se ha creado una instancia de esta clase especifica los parámetros del archivo de paginación que se usan cuando se crea el archivo al iniciar el sistema. Las propiedades de esta clase se pueden modificar y diferir hasta el inicio. Esta configuración es diferente del estado de tiempo de ejecución de un archivo de paginación expresado a través de la clase asociada [**Win32 \_ PageFileUsage**](win32-pagefileusage.md).
+La clase  [WMI](../wmisdk/retrieving-a-class.md) **\_ PageFileSetting de Win32** representa la configuración de un archivo de página. La información contenida en los objetos a los que se creó una instancia de esta clase especifica los parámetros de archivo de página utilizados cuando el archivo se crea al iniciar el sistema. Las propiedades de esta clase se pueden modificar y aplazar hasta el inicio. Esta configuración es diferente del estado en tiempo de ejecución de un archivo de página expresado a través de la clase [**asociada Win32 \_ PageFileUsage**](win32-pagefileusage.md).
 
-Para crear una instancia de esta clase, habilite el privilegio **SeCreatePagefilePrivilege** . Para obtener más información, vea [**constantes de privilegios**](../wmisdk/privilege-constants.md) y [ejecutar operaciones con privilegios](../wmisdk/executing-privileged-operations.md).
+Para crear una instancia de esta clase, habilite el **privilegio SeCreatePagefilePrivilege.** Para obtener más información, vea [**Constantes de privilegios**](../wmisdk/privilege-constants.md) y [Ejecución de operaciones con privilegios.](../wmisdk/executing-privileged-operations.md)
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
 
@@ -76,7 +76,7 @@ Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64)
 
 Breve descripción textual del objeto actual.
 
-Esta propiedad se hereda de [**la \_ configuración de CIM**](cim-setting.md).
+Esta propiedad se hereda de la [**configuración de CIM \_**](cim-setting.md).
 
 </dd> <dt>
 
@@ -91,41 +91,41 @@ Tipo de acceso: solo lectura
 
 Descripción textual del objeto actual.
 
-Esta propiedad se hereda de [**la \_ configuración de CIM**](cim-setting.md).
+Esta propiedad se hereda de la [**configuración de CIM \_**](cim-setting.md).
 
 </dd> <dt>
 
 **InitialSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ control \\ \\ Session Manager \\ \\ Administración \| de memoria PagingFiles"), [**unidades**](../wmisdk/standard-qualifiers.md) ("megabytes")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control Session Manager Memory \\ \\ \\ \\ Management \| PagingFiles"), [**Units**](../wmisdk/standard-qualifiers.md) ("megabytes")
 </dt> </dl>
 
-Tamaño inicial del archivo de paginación.
+Tamaño inicial del archivo de página.
 
 Ejemplo: 139
 
 </dd> <dt>
 
-**Tamañomáximo**
+**MaximumSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ control \\ \\ Session Manager \\ \\ Administración \| de memoria PagingFiles"), [**unidades**](../wmisdk/standard-qualifiers.md) ("megabytes")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control Session Manager Memory \\ \\ \\ \\ Management \| PagingFiles"), [**Units**](../wmisdk/standard-qualifiers.md) ("megabytes")
 </dt> </dl>
 
-Tamaño máximo del archivo de paginación.
+Tamaño máximo del archivo de página.
 
 Ejemplo: 178
 
@@ -137,13 +137,13 @@ Ejemplo: 178
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**key**](../wmisdk/key-qualifier.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
+Calificadores: [**Key**](../wmisdk/key-qualifier.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
-Ruta de acceso y nombre de archivo del archivo de paginación.
+Ruta de acceso y nombre de archivo del archivo de página.
 
 Ejemplo: "C: \\PAGEFILE.SYS"
 
@@ -163,13 +163,13 @@ Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 
 Identificador por el que se conoce el objeto actual.
 
-Esta propiedad se hereda de [**la \_ configuración de CIM**](cim-setting.md).
+Esta propiedad se hereda de la [**configuración de CIM \_**](cim-setting.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La **clase \_ PageFileSetting de Win32** se deriva de la [**\_ configuración de CIM**](cim-setting.md).
+La **clase \_ PageFileSetting de Win32** se deriva de [**cim \_ setting**](cim-setting.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -179,8 +179,8 @@ La **clase \_ PageFileSetting de Win32** se deriva de la [**\_ configuración de
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

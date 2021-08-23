@@ -1,11 +1,11 @@
 ---
-title: Método ID3DX11EffectVectorVariable GetFloatVector (D3dx11effect. h)
+title: Método ID3DX11EffectVectorVariable GetFloatVector (D3dx11effect.h)
 description: Obtiene un vector de cuatro componentes que contiene datos de punto flotante.
 ms.assetid: 980c85db-0d40-49e0-99d0-5049fdf62540
 keywords:
 - Método GetFloatVector Direct3D 11
-- Método GetFloatVector Direct3D 11, interfaz ID3DX11EffectVectorVariable
-- Interfaz ID3DX11EffectVectorVariable Direct3D 11, método GetFloatVector
+- Método GetFloatVector Direct3D 11 , interfaz ID3DX11EffectVectorVariable
+- Interfaz ID3DX11EffectVectorVariable direct3D 11 , método GetFloatVector
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eb0ce1ea07a2cbbb2826101e80d013b7f6bd02ed
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 861121c89bbeda277610c0c3e42d4d6e41795b5cd82b48ae8ba42a1783ee5eff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104003915"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118989675"
 ---
-# <a name="id3dx11effectvectorvariablegetfloatvector-method"></a>ID3DX11EffectVectorVariable:: GetFloatVector (método)
+# <a name="id3dx11effectvectorvariablegetfloatvector-method"></a>Método ID3DX11EffectVectorVariable::GetFloatVector
 
 Obtiene un vector de cuatro componentes que contiene datos de punto flotante.
 
@@ -46,7 +46,7 @@ HRESULT GetFloatVector(
 *pData* 
 </dt> <dd>
 
-Tipo: **float \***
+Tipo: **\* float**
 
 Puntero al primer componente.
 
@@ -56,12 +56,12 @@ Puntero al primer componente.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -71,8 +71,8 @@ Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphi
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 

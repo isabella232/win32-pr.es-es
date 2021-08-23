@@ -1,21 +1,21 @@
 ---
-description: La Directiva de metadatos de la fotografía para la propiedad System. GPS. DOP.
+description: Directiva de metadatos de fotos para la propiedad System.GPS.DOP.
 ms.assetid: 62efd1cc-a2ae-4e53-a0f2-4822b8c91c42
-title: Directiva de metadatos de foto de System. GPS. DOP
+title: Directiva de metadatos de fotos System.GPS.DOP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c33f3bfc6b958593748396124a8cfd1a7de73fd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c7c414b7cb8648210175953e4c7b5f51a66f026cb45a06fd4d62918f2f8ac369
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002874"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119087793"
 ---
-# <a name="systemgpsdop-photo-metadata-policy"></a>Directiva de metadatos de foto de System. GPS. DOP
+# <a name="systemgpsdop-photo-metadata-policy"></a>Directiva de metadatos de fotos System.GPS.DOP
 
-La Directiva de metadatos de la fotografía para la propiedad [System. GPS. DOP](../properties/props-system-gps-dop.md) .
+Directiva de metadatos de fotos para [la propiedad System.GPS.DOP.](../properties/props-system-gps-dop.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
 PKEY \_ GPS \_ DOP
 
@@ -27,39 +27,39 @@ JPEG, TIFF
 
 Sí
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
 VT \_ R8
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Este valor se puede escribir escribiendo en System. GPS. DOPNumerator y System. GPS. DOPDenominator. No se puede escribir directamente. Se reconcilian los valores de los distintos esquemas.
+Este valor se puede escribir en System.GPS.DOPNumerator y System.GPS.DOPDenominator. No se puede escribir directamente. Los valores de esquemas diferentes se concilian.
 
 ### <a name="precedence-of-paths-jpeg"></a>Prioridad de las rutas de acceso (JPEG)
 
-Si el archivo está en formato JPEG, el controlador leerá, escribirá y quitará los datos en el siguiente orden:
+Si el archivo está en formato JPEG, el controlador leerá, escribirá y quitará los datos en el orden siguiente:
 
 
 
-| Pedido | Ruta                          | Formato de disco   | Obligatorio |
+| Pedido | Ruta de acceso                          | Formato de disco   | Requerido |
 |-------|-------------------------------|---------------|----------|
-| 1     | /xmp/exif:GPSDOP              | XMP Rational  | Sí      |
-| 2     | /app1/IFD/GPS/ \\ {ushort = 11 \\ } | Racional EXIF | No       |
+| 1     | /xmp/exif:GPSDOP              | XMP rational  | Sí      |
+| 2     | /app1/ifd/gps/ \\ {ushort=11 \\ } | Exif rational | No       |
 
 
 
  
 
-### <a name="precedence-of-paths-tiff"></a>Prioridad de las rutas de acceso (TIFF)
+### <a name="precedence-of-paths-tiff"></a>Precedencia de rutas de acceso (TIFF)
 
-Si el archivo está en formato TIFF, el controlador leerá, escribirá y quitará los datos en el siguiente orden:
+Si el archivo está en formato TIFF, el controlador leerá, escribirá y quitará los datos en el orden siguiente:
 
 
 
-| Pedido | Ruta                     | Formato de disco   | Obligatorio |
+| Pedido | Ruta de acceso                     | Formato de disco   | Requerido |
 |-------|--------------------------|---------------|----------|
-| 1     | /ifd/xmp/exif:GPSDop     | XMP Rational  | Sí      |
-| 2     | /IFD/GPS/ \\ {ushort = 11 \\ } | Racional EXIF | No       |
+| 1     | /ifd/xmp/exif:GPSDop     | XMP rational  | Sí      |
+| 2     | /ifd/gps/ \\ {ushort=11 \\ } | Exif rational | No       |
 
 
 
@@ -71,7 +71,7 @@ Si el archivo está en formato TIFF, el controlador leerá, escribirá y quitar�
 
 <dl> <dt>
 
-[System. GPS. DOP](../properties/props-system-gps-dop.md)
+[System.GPS.DOP](../properties/props-system-gps-dop.md)
 </dt> </dl>
 
  

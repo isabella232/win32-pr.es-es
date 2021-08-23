@@ -1,6 +1,6 @@
 ---
-title: 'RWTexture2D:: Operator (función)'
-description: 'Devuelve una variable de recurso. | RWTexture2D:: Operator (función)'
+title: RWTexture2D::Operator (Función)
+description: Devuelve una variable de recurso. | RWTexture2D::Operator (Función)
 ms.assetid: 339dba7d-b0c6-4112-ae40-555661577a3e
 keywords:
 - Función de operador HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8c1ff25cdf4a0f33d041500f6a81220261f216c4
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 4da16a89eb704e924931b8d3b4e5144d7154eed50f298aa0606b9b0fb5a45f46
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986478"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986005"
 ---
-# <a name="rwtexture2doperator--function"></a>RWTexture2D:: Operator (función)
+# <a name="rwtexture2doperator--function"></a>RWTexture2D::Operator (Función)
 
 Devuelve una variable de recurso.
 
@@ -36,12 +36,12 @@ R Operator[](
 
 <dl> <dt>
 
-*PDV* \[ de de\]
+*pos* \[ En\]
 </dt> <dd>
 
 Tipo: **uint2**
 
-Posición de índice. Contiene las coordenadas (x, y).
+Posición del índice. Contiene las coordenadas (x, y).
 
 </dd> </dl>
 
@@ -51,13 +51,13 @@ Tipo: **R**
 
 Variable de recurso.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 

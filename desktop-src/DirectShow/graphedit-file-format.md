@@ -4,18 +4,18 @@ ms.assetid: 84c2de05-6c8f-45f1-b789-04a24cfa3ea1
 title: Formato de archivo GraphEdit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a75421ff75c9bb26901eddf423448bbd9e4f478
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: dbce90247e710772b75ad31593ce72a1fd4c8f9bd9fabf1be786b1e7bdc5e74d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103806872"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119015603"
 ---
 # <a name="graphedit-file-format"></a>Formato de archivo GraphEdit
 
-Cuando la utilidad GraphEdit guarda un gráfico de filtros de DirectShow, crea un archivo de almacenamiento con la extensión. GRF. El archivo de almacenamiento contiene una única secuencia denominada ActiveMovieGraph. Esta secuencia contiene información sobre todos los filtros, nombres de filtros, nombres de archivo, conexiones, etc.
+Cuando la utilidad GraphEdit guarda un DirectShow de filtro, crea un archivo de almacenamiento con una extensión .grf. El archivo de almacenamiento contiene una única secuencia denominada ActiveMovieGraph. Esta secuencia contiene información sobre todos los filtros, nombres de filtro, nombres de archivo, conexiones, etc.
 
-La siguiente gramática describe la sintaxis del gráfico dentro de la secuencia, con una sintaxis de BNF (formato Backus-Naur) modificada:
+En la gramática siguiente se describe la sintaxis del gráfico dentro de la secuencia, mediante una sintaxis BNF (Backus-Naur Form) modificada:
 
 
 ```C++
@@ -87,9 +87,9 @@ CLOCK <b><required><b><clockid>
 
 
 
-En la salida, habrá una nueva línea (" \\ r \\ n") por filtro, una por conexión y otra para cada una de las palabras clave filtros y conexiones. Cada uno de los demás casos de <b> será un solo espacio. Las palabras clave FILTERs, CONNECTIONs y END no son localizables. Tenga en cuenta también que los datos del filtro y los datos de formato son binarios, por lo que pueden contener saltos de línea incorrectos, valores NULL, etc. La secuencia utiliza caracteres anchos.
+En la salida, habrá una nueva línea ("r n") por filtro, una por conexión y otra para cada una de las \\ palabras clave FILTERS y \\ CONNECTIONS. El otro caso de <b> será un solo espacio. Las palabras clave FILTERS, CONNECTIONS y END no son localizables. Tenga en cuenta también que los datos de filtro y los datos de formato son binarios, por lo que pueden contener saltos de línea incorrectos, valores NULL, entre otros. La secuencia usa caracteres anchos.
 
-A continuación se muestra un gráfico típico. (Las líneas de conexión se han interrumpido para mayor claridad y los datos binarios se han omitido).
+A continuación se muestra un gráfico típico. (Las líneas de conexión se han roto para mayor claridad y se han omitido los datos binarios).
 
 
 ```C++
@@ -122,7 +122,7 @@ END
 
 <dl> <dt>
 
-[Simular la compilación de gráficos con GraphEdit](simulating-graph-building-with-graphedit.md)
+[Simulación de Graph building con GraphEdit](simulating-graph-building-with-graphedit.md)
 </dt> </dl>
 
  

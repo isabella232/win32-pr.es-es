@@ -1,19 +1,19 @@
 ---
-description: Alias para UInt16 \_ t empaquetado con un número de punto flotante de 16 bits que consta de un bit de signo, un exponente sesgado de 5 bits y una mantisa de 10 bits.
+description: Alias para uint16 t empaquetado con un número de punto flotante de 16 bits que consta de un bit de signo, un exponente sesgado de 5 bits y una \_ mantisa de 10 bits.
 ms.assetid: E84E0EBA-5C34-41AA-84DB-7A65EBDCAD15
-title: MEDIO de tipo de datos (DirectXPackedVector. h)
+title: Tipo de datos HALF (DirectXPackedVector.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9651b84675be68bd433fdeaaae588cb01dc745ee
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a59b7288324ae5935a23e67a35f402ab6041da55073915d812b39096cab30733
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718875"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985045"
 ---
-# <a name="half-data-type"></a>MEDIO, tipo de datos
+# <a name="half-data-type"></a>HALF Data Type
 
-Alias para **UInt16 \_ t** empaquetado con un número de punto flotante de 16 bits que consta de un bit de signo, un exponente sesgado de 5 bits y una mantisa de 10 bits.
+Alias para **uint16 \_ t** empaquetado con un número de punto flotante de 16 bits que consta de un bit de signo, un exponente sesgado de 5 bits y una mantisa de 10 bits.
 
 
 ```C++
@@ -22,21 +22,21 @@ typedef uint16_t HALF;
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El tipo de datos medio es equivalente al formato binary16 de IEEE 754.
+El tipo de datos HALF es equivalente al formato binary16 IEEE 754.
 
-MEDIO \_ mín = 6.10352 e-5F
+HALF \_ MIN = 6,10352e-5f
 
-MEDIO \_ máx. = 65504. f
+HALF \_ MAX = 65504.f
 
-Para obtener más información sobre el tipo de datos medio, consulte [formato de punto flotante de precisión media](https://en.wikipedia.org/wiki/Half_precision_floating-point_format).
+Para obtener más información sobre el tipo de datos HALF, vea [Formato de punto flotante de precisión media.](https://en.wikipedia.org/wiki/Half_precision_floating-point_format)
 
-**Espacio de nombres**: usar DirectX::P ackedvector
+**Espacio** de nombres: Use DirectX::P ackedVector
 
 ### <a name="platform-requirements"></a>Requisitos de la plataforma
 
-Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el Windows SDK para Windows 8. Se admite para aplicaciones de escritorio de Win32, aplicaciones de la tienda Windows y Windows Phone 8 aplicaciones.
+Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el SDK Windows para Windows 8. Compatible con aplicaciones de escritorio Win32, Windows store y Windows Phone 8 aplicaciones.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -44,7 +44,7 @@ Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el Windows SDK p
 
 | Requisito | Value |
 |-------------------|--------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>DirectXPackedVector. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>DirectXPackedVector.h</dt> </dl> |
 
 
 

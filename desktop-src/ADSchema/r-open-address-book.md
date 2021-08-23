@@ -1,10 +1,10 @@
 ---
-title: Abrir-Address-Book Extended Right
-description: Marcado de la derecha extendida al abrir el objeto de libreta de direcciones para las vistas de libreta de direcciones.
+title: Derecho extendido open-address-book
+description: Se ha activado la derecha extendida al abrir el objeto de la libreta de direcciones para las vistas de la libreta de direcciones.
 ms.assetid: b5b30fc2-6bf1-4ba8-81c1-86db9413ef24
 ms.tgt_platform: multiple
 keywords:
-- 'Libreta de direcciones abiertas: esquema de AD derecho extendido'
+- Open-Address-Book extended right AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,22 +13,22 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cb628760997484051eb219c0b4bcec90a6be7117
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: af918007992a9debe2bdef1d02fd559be4b0cdc6cd65d2900293cafdb5fc5382
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104079796"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119021613"
 ---
-# <a name="open-address-book-extended-right"></a>Abrir-Address-Book Extended Right
+# <a name="open-address-book-extended-right"></a>Derecho extendido open-address-book
 
-Marcado de la derecha extendida al abrir el objeto de libreta de direcciones para las vistas de libreta de direcciones.
+Se ha activado la derecha extendida al abrir el objeto de la libreta de direcciones para las vistas de la libreta de direcciones.
 
 
 
 | Entrada | Value |
 |--------------|--------------------------------------|
-| CN           | Libreta de direcciones abiertas                    |
+| CN           | Open-Address-Book                    |
 | Display-Name | Abrir lista de direcciones                    |
 | Rights-GUID  | a1990816-4298-11d1-ade2-00c04fd8d5cd |
 
@@ -50,7 +50,7 @@ Marcado de la derecha extendida al abrir el objeto de libreta de direcciones par
 | Entrada | Value |
 |-------------------------|---------------------------------------------------------------------|
 | Applies-To              | [**Address-Book-Container**](c-addressbookcontainer.md)<br/> |
-| Localización: ID. de presentación | 21                                                                  |
+| Localization-Display-ID | 21                                                                  |
 
 
 
@@ -61,7 +61,7 @@ Marcado de la derecha extendida al abrir el objeto de libreta de direcciones par
 | Entrada | Value |
 |-------------------------|---------------------------------------------------------------------|
 | Applies-To              | [**Address-Book-Container**](c-addressbookcontainer.md)<br/> |
-| Localización: ID. de presentación | 21                                                                  |
+| Localization-Display-ID | 21                                                                  |
 
 
 
@@ -72,7 +72,7 @@ Marcado de la derecha extendida al abrir el objeto de libreta de direcciones par
 | Entrada | Value |
 |-------------------------|---------------------------------------------------------------------|
 | Applies-To              | [**Address-Book-Container**](c-addressbookcontainer.md)<br/> |
-| Localización: ID. de presentación | 21                                                                  |
+| Localization-Display-ID | 21                                                                  |
 
 
 
@@ -83,7 +83,7 @@ Marcado de la derecha extendida al abrir el objeto de libreta de direcciones par
 | Entrada | Value |
 |-------------------------|---------------------------------------------------------------------|
 | Applies-To              | [**Address-Book-Container**](c-addressbookcontainer.md)<br/> |
-| Localización: ID. de presentación | 21                                                                  |
+| Localization-Display-ID | 21                                                                  |
 
 
 
@@ -94,7 +94,7 @@ Marcado de la derecha extendida al abrir el objeto de libreta de direcciones par
 | Entrada | Value |
 |-------------------------|---------------------------------------------------------------------|
 | Applies-To              | [**Address-Book-Container**](c-addressbookcontainer.md)<br/> |
-| Localización: ID. de presentación | 21                                                                  |
+| Localization-Display-ID | 21                                                                  |
 
 
 
@@ -105,7 +105,7 @@ Marcado de la derecha extendida al abrir el objeto de libreta de direcciones par
 | Entrada | Value |
 |-------------------------|---------------------------------------------------------------------|
 | Applies-To              | [**Address-Book-Container**](c-addressbookcontainer.md)<br/> |
-| Localización: ID. de presentación | 21                                                                  |
+| Localization-Display-ID | 21                                                                  |
 
 
 

@@ -3,7 +3,7 @@ title: Métodos IDWriteFontSet GetMatchingFonts
 description: Devuelve un subconjunto de fuentes que coinciden con los criterios especificados.
 ms.assetid: 9f80478e-ed45-58c7-723f-8fe9bd05097b
 keywords:
-- Métodos GetMatchingFonts de escritura directa
+- GetMatchingFonts methods Direct Write
 topic_type:
 - apiref
 api_type:
@@ -12,14 +12,14 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 5b19917ebdd2c169b3a3877f03e2b81fe481f717
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 205a5debda8e53bd5bf9fb14ebb8c46917f6cf8fd54f3b3680a8bdd1d0b58ed2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105685784"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119071679"
 ---
-# <a name="idwritefontsetgetmatchingfonts-methods"></a>IDWriteFontSet:: GetMatchingFonts (métodos)
+# <a name="idwritefontsetgetmatchingfonts-methods"></a>Métodos IDWriteFontSet::GetMatchingFonts
 
 Devuelve un subconjunto de fuentes que coinciden con los criterios especificados.
 
@@ -29,8 +29,8 @@ Devuelve un subconjunto de fuentes que coinciden con los criterios especificados
 
 | Método                                                                                                                                                             | Descripción                                                                                 |
 |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------|
-| [**GetMatchingFonts (const WCHAR \* , DWRITE \_ Font \_ weight, DWRITE \_ Font \_ Stretch, DWRITE \_ Font \_ Style, IDWriteFontSet \* \* )**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefontset-getmatchingfonts(wcharconst_dwrite_font_weight_dwrite_font_stretch_dwrite_font_style_idwritefontset)) | Devuelve una lista de fuentes dentro de la familia de WWS dada con prioridad por distancia WWS.<br/> |
-| [**GetMatchingFonts ( \_ propiedad de fuente const DWRITE \_ \* , UINT32, IDWriteFontSet \* \* )**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefontset-getmatchingfonts(dwrite_font_propertyconst_uint32_idwritefontset))                                          | Devuelve un subconjunto de fuentes filtradas por las propiedades especificadas.<br/>                      |
+| [**GetMatchingFonts(const \* WCHAR, DWRITE \_ FONT \_ WEIGHT, DWRITE \_ FONT \_ STRETCH, DWRITE \_ FONT \_ STYLE, IDWriteFontSet \* \* )**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefontset-getmatchingfonts(wcharconst_dwrite_font_weight_dwrite_font_stretch_dwrite_font_style_idwritefontset)) | Devuelve una lista de fuentes dentro de la familia WWS dada priorizado por distancia de WWS.<br/> |
+| [**GetMatchingFonts(const DWRITE \_ FONT \_ PROPERTY , \* UINT32, IDWriteFontSet \* \* )**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefontset-getmatchingfonts(dwrite_font_propertyconst_uint32_idwritefontset))                                          | Devuelve un subconjunto de fuentes filtradas por las propiedades dadas.<br/>                      |
 
 
 

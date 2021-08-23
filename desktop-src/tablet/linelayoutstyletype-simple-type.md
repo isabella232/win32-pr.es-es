@@ -1,7 +1,7 @@
 ---
-description: Define los valores válidos para el atributo de estilo del elemento LineLayout.
+description: Define los valores válidos para el atributo Style del elemento LineLayout.
 ms.assetid: b257f0da-1bee-4d1b-9829-70f91cdcabe0
-title: Tipo simple de LineLayoutStyleType
+title: Tipo simple LineLayoutStyleType
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 67b07d9de51e16148905768d7a6f268038bb1afa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d2aa0a42ca2f295cdcccad05931ba651d4018ba377d8d10f09f85b82dcaaea8b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697756"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119031843"
 ---
-# <a name="linelayoutstyletype-simple-type"></a>Tipo simple de LineLayoutStyleType
+# <a name="linelayoutstyletype-simple-type"></a>Tipo simple LineLayoutStyleType
 
-Define los valores válidos para el atributo de **estilo** del [elemento LineLayout](linelayout-element.md).
+Define los valores válidos para el **atributo Style** del [elemento LineLayout](linelayout-element.md).
 
 ``` syntax
 <xs:simpleType name="LineLayoutStyleType">
@@ -37,15 +37,15 @@ Define los valores válidos para el atributo de **estilo** del [elemento LineLay
 
 ## <a name="patterns"></a>Patrones
 
-El tipo simple **LineLayoutStyleType** es una cadena restringida por el siguiente patrón:
+El **tipo simple LineLayoutStyleType** es una cadena restringida por el siguiente patrón:
 
 -   `None|Solid|Dash|Dot|DashDot|DashDotDot|Double`
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores válidos para el atributo de **estilo** del [elemento LineLayout](linelayout-element.md) son:
+Los valores válidos **para el atributo Style** del elemento [LineLayout](linelayout-element.md) son:
 
--   None
+-   Ninguno
 -   Sólido
 -   Guión
 -   Punto
@@ -57,9 +57,9 @@ Los valores válidos para el atributo de **estilo** del [elemento LineLayout](li
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                     |
 
 

@@ -1,6 +1,6 @@
 ---
-title: Referencia del sombreador de ASM
-description: Los sombreadores controlan la canalización programable de gráficos.
+title: Referencia de sombreador de Asm
+description: Los sombreadores impulsan la canalización de gráficos programables.
 ms.assetid: 2c58815c-83b5-4ae8-a192-ba865b485bd6
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 2941f4c32d03187ce08266bf1382cd1d94301ce0
-ms.sourcegitcommit: 477b1efe7d9c2f91d5f2ac588a20edf348b1c734
+ms.openlocfilehash: 9dbeb680b7131581b3891e59bb6bd2db0d6e5c19eb6279c47b83d22f01b5000e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "104983931"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119119549"
 ---
-# <a name="asm-shader-reference"></a>Referencia del sombreador de ASM
+# <a name="asm-shader-reference"></a>Referencia de sombreador de Asm
 
-Los sombreadores controlan la canalización programable de gráficos.
+Los sombreadores impulsan la canalización de gráficos programables.
 
 ## <a name="vertex-shader-reference"></a>Referencia del sombreador de vértices
 
@@ -27,31 +27,31 @@ Los sombreadores controlan la canalización programable de gráficos.
 -   [vs \_ 2 \_ x](dx9-graphics-reference-asm-vs-2-x.md)
 -   [vs \_ 3 \_ 0](dx9-graphics-reference-asm-vs-3-0.md)
 
-Las [diferencias del sombreador de vértices](dx9-graphics-reference-asm-vs-differences.md) resumen las diferencias entre las versiones del sombreador de vértices.
+[Diferencias del sombreador de](dx9-graphics-reference-asm-vs-differences.md) vértices resume las diferencias entre las versiones del sombreador de vértices.
 
 ## <a name="pixel-shader-reference"></a>Referencia del sombreador de píxeles
 
--   [PS \_ 1 \_ , PS \_ 1 \_ 2, PS 1 \_ \_ 3, PS \_ 1 \_ 4](dx9-graphics-reference-asm-ps-1-x.md)
--   [PS \_ 2 \_ 0](dx9-graphics-reference-asm-ps-2-0.md)
--   [PS \_ 2 \_ x](dx9-graphics-reference-asm-ps-2-x.md)
--   [PS \_ 3 \_ 0](dx9-graphics-reference-asm-ps-3-0.md)
+-   [ps \_ 1 \_ 1, ps \_ 1 \_ 2, ps \_ 1 \_ 3, ps \_ 1 \_ 4](dx9-graphics-reference-asm-ps-1-x.md)
+-   [ps \_ 2 \_ 0](dx9-graphics-reference-asm-ps-2-0.md)
+-   [ps \_ 2 \_ x](dx9-graphics-reference-asm-ps-2-x.md)
+-   [ps \_ 3 \_ 0](dx9-graphics-reference-asm-ps-3-0.md)
 
-Las [diferencias del sombreador de píxeles](dx9-graphics-reference-asm-ps-differences.md) resumen las diferencias entre las versiones del sombreador de píxeles.
+[Diferencias del sombreador de](dx9-graphics-reference-asm-ps-differences.md) píxeles resume las diferencias entre las versiones del sombreador de píxeles.
 
 ## <a name="shader-model-4-and-5-reference"></a>Referencia del modelo de sombreador 4 y 5
 
-Las secciones del ensamblado del modelo de [sombreador 4](dx-graphics-hlsl-sm4-asm.md) y del [modelo de sombreador modelo 5](shader-model-5-assembly--directx-hlsl-.md) describen las instrucciones que admiten el modelo de sombreador 4 y 5.
+Las secciones Ensamblado del modelo de sombreador [4](dx-graphics-hlsl-sm4-asm.md) y Ensamblado del modelo de sombreador [5](shader-model-5-assembly--directx-hlsl-.md) describen las instrucciones que admiten los modelos de sombreador 4 y 5.
 
-## <a name="behavior-of-constant-registers-in-assembly-shaders"></a>Comportamiento de registros constantes en sombreadores de ensamblados
+## <a name="behavior-of-constant-registers-in-assembly-shaders"></a>Comportamiento de los registros constantes en sombreadores de ensamblados
 
-Hay dos maneras de establecer registros constantes en un sombreador de ensamblado:
+Hay dos maneras de establecer registros constantes en un sombreador de ensamblados:
 
--   Declare una constante de sombreador en el código de ensamblado mediante una de las instrucciones de Def \* .
--   Use uno de los métodos set de la \* \* \* API de ShaderConstant \* .
+-   Declare una constante de sombreador en el código de ensamblado mediante una de las instrucciones \* def.
+-   Use uno de los métodos set \* \* \* ShaderConstant \* API.
 
 ### <a name="direct3d-9-shader-constants"></a>Constantes de sombreador de Direct3D 9
 
-En Direct3D 9, la duración de las constantes definidas en un sombreador determinado se limita solo a la ejecución de ese sombreador (y no es reemplazable). Las constantes definidas en Direct3D 9 no tienen efectos secundarios fuera del sombreador.
+En Direct3D 9, la duración de las constantes definidas en un sombreador determinado se limita solo a la ejecución de ese sombreador (y no se puede invalidar). Las constantes definidas en Direct3D 9 no tienen efectos secundarios fuera del sombreador.
 
 Este es un ejemplo de uso de Direct3D 9:
 
@@ -82,11 +82,11 @@ Scenario 2:
 
 
 
-En Direct3D 9, al llamar a get \* \* \* ShaderConstant \* solo se recuperarán los valores constantes establecidos mediante set \* \* \* ShaderConstant \* .
+En Direct3D 9, al llamar a Get ShaderConstant solo se recuperarán los valores constantes establecidos \* \* \* mediante \* Set \* \* \* ShaderConstant \* .
 
 ### <a name="direct3d-8-shader-constants"></a>Constantes de sombreador de Direct3D 8
 
-Este comportamiento es diferente en Direct3D 8. x.
+Este comportamiento es diferente en Direct3D 8.x.
 
 
 ```
@@ -102,7 +102,7 @@ Scenario 1 (repeated with Direct3D 8):
 
 
 
-En Direct3D 8. x Set \* \* \* ShaderConstant surte efecto inmediatamente. Considere el escenario siguiente:
+En Direct3D 8.x, Establecer \* \* \* sombreadorConstant entra en vigor inmediatamente. Considere el escenario siguiente:
 
 
 ```
@@ -127,21 +127,21 @@ Scenario 4 :
 
 
 
-El resultado no deseado es que el orden en el que se establecen los sombreadores podría afectar al comportamiento observado de los sombreadores individuales.
+El resultado no deseado es que el orden en el que se establecen los sombreadores podría afectar al comportamiento observado de sombreadores individuales.
 
-## <a name="shader-driver-model-requirements"></a>Requisitos del modelo del controlador del sombreador
+## <a name="shader-driver-model-requirements"></a>Requisitos del modelo de controlador de sombreador
 
-Las interfaces de Direct3D 9 están restringidas a los controladores de la interfaz de controlador de dispositivo (DDI) que son DirectX 7 y versiones posteriores. Para comprobar el nivel de DDI, ejecute la [herramienta de diagnóstico de DirectX](https://msdn.microsoft.com/library/Ee416792(v=VS.85).aspx) y examine el archivo de texto guardado.
+Las interfaces de Direct3D 9 están restringidas a los controladores de la interfaz de controlador de dispositivo (DDI) que son de nivel 7 de DirectX y superiores. Para comprobar el nivel de DDI, ejecute la herramienta [de diagnóstico de DirectX](https://msdn.microsoft.com/library/Ee416792(v=VS.85).aspx) y examine el archivo de texto guardado.
 
-Como referencia, las interfaces de Direct3D 8 solo funcionan en los controladores DDI que son DirectX de nivel 6 y versiones posteriores.
+Como referencia, las interfaces de Direct3D 8 solo funcionan en controladores DDI de nivel 6 y superiores de DirectX.
 
 ## <a name="shader-binary-format"></a>Formato binario del sombreador
 
-El diseño bit a bit de la secuencia de instrucciones del sombreador se define en D3d9types. h. Si quiere diseñar sus propias herramientas de construcción o compilador de sombreador y desea obtener más información sobre el flujo de tokens del sombreador, consulte el kit de desarrollo de controladores (DDK) de Direct3D 9.
+El diseño bit a bit del flujo de instrucciones del sombreador se define en D3d9types.h. Si desea diseñar su propio compilador de sombreador o herramientas de construcción y desea obtener más información sobre el flujo de tokens de sombreador, consulte el Kit de desarrollo de controladores (DDK) de Direct3D 9.
 
 ## <a name="c-like-shader-language"></a>Lenguaje de sombreador de tipo C
 
-Consulte [referencia de HLSL](dx-graphics-hlsl-reference.md) para experimentar un lenguaje de sombreador similar a C.
+Consulte [Referencia de HLSL para](dx-graphics-hlsl-reference.md) experimentar un lenguaje de sombreador de tipo C.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -150,9 +150,9 @@ Consulte [referencia de HLSL](dx-graphics-hlsl-reference.md) para experimentar u
 [Referencia de HLSL](dx-graphics-hlsl-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

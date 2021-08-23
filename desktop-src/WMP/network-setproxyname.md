@@ -1,11 +1,11 @@
 ---
-title: Network. setProxyName (método)
-description: El método setProxyName especifica el nombre del servidor proxy que se va a usar. | Network. setProxyName (método)
+title: Método Network.setProxyName
+description: El método setProxyName especifica el nombre del servidor proxy que se usará. | Método Network.setProxyName
 ms.assetid: dbcb2a00-4387-42af-8055-61d78d021ec7
 keywords:
-- método setProxyName de Windows Media Player
-- método setProxyName Windows Media Player, clase de red
-- Clase de red Windows Media Player, método setProxyName
+- Método setProxyName Reproductor de Windows Media
+- Método setProxyName Reproductor de Windows Media , clase Network
+- Clase de red Reproductor de Windows Media , método setProxyName
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a34546a395d48e939c71a806d8125150fca0ff4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9831b25e37fd6e19b70c1ee2589736394560c97f841b5d18c3a128a82997cc6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699813"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134928"
 ---
-# <a name="networksetproxyname-method"></a>Network. setProxyName (método)
+# <a name="networksetproxyname-method"></a>Método Network.setProxyName
 
-El método **setProxyName** especifica el nombre del servidor proxy que se va a usar.
+El **método setProxyName** especifica el nombre del servidor proxy que se usará.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,17 +43,17 @@ Network.setProxyName(
 
 <dl> <dt>
 
-*Protocolo* \[ de de\]
+*protocolo* \[ En\]
 </dt> <dd>
 
-**Cadena** que especifica el nombre del protocolo. Para obtener una lista de protocolos admitidos, consulte [protocolos y tipos de archivo admitidos](supported-protocols-and-file-types.md).
+**Cadena** que especifica el nombre del protocolo. Para obtener una lista de los protocolos admitidos, vea [Protocolos y tipos de archivo admitidos.](supported-protocols-and-file-types.md)
 
 </dd> <dt>
 
-*nombre* \[ de de\]
+*name* \[ En\]
 </dt> <dd>
 
-**Cadena** que especifica el nombre del servidor proxy que se va a usar.
+**Cadena** que especifica el nombre del servidor proxy que se usará.
 
 </dd> </dl>
 
@@ -61,17 +61,17 @@ Network.setProxyName(
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método no tiene ningún efecto a menos que **getProxySettings** devuelva un valor de 2 (use la configuración manual).
+Este método no tiene ningún efecto a menos **que getProxySettings** devuelva un valor de 2 (use la configuración manual).
 
-Este método produce un error a menos que la aplicación que realiza la llamada se ejecute en el equipo local o en la intranet.
+Este método produce un error a menos que la aplicación que realiza la llamada se ejecute en el equipo local o intranet.
 
-**Windows Media Player 10 Mobile:** Este método no se admite.
+**Reproductor de Windows Media 10 Mobile:** No se admite este método.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de JScript se usa *Network*. **setProxyName** para especificar el nombre del servidor proxy de Windows Media Player para el protocolo MMS. El nuevo nombre se recupera de un elemento de texto HTML con ID = "NAME". El objeto **Player** se creó con ID = "Player".
+En el ejemplo JScript siguiente se usa *Network*. **setProxyName** para especificar el nombre del servidor Reproductor de Windows Media proxy para el protocolo MMS. El nuevo nombre se recupera de un elemento HTML TEXT con id. = "NAME". El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -100,7 +100,7 @@ alert("Proxy settings must be manual!");
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

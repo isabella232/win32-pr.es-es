@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MM_JOY1ZMOVE (mmsystem. h)
-description: El \_ mensaje mm JOY1ZMOVE notifica a la ventana que ha capturado el joystick JOYSTICKID1 que ha cambiado la posición del joystick en el eje z.
+title: MM_JOY1ZMOVE mensaje (Mmsystem.h)
+description: El mensaje MMMUT1ZMOVE notifica a la ventana que ha capturado el valor de LAWID1 que la posición del eje \_ Z ha cambiado.
 ms.assetid: 25d98963-03e6-4276-a132-256e8bbfa73b
 keywords:
-- Mensaje de MM_JOY1ZMOVE de Windows multimedia
+- MM_JOY1ZMOVE mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d7d4db3db8c1817f0502ce14cc5328ad666b32c9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b6b0efe11870ac822f7fe8aa0f7aa1deb4856bd8f1394bd1533362d78a3aee00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104493276"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065545"
 ---
-# <a name="mm_joy1zmove-message"></a>\_Mensaje JOY1ZMOVE mm
+# <a name="mm_joy1zmove-message"></a>Mensaje \_ MMIJO1ZMOVE
 
-El mensaje **mm \_ JOY1ZMOVE** notifica a la ventana que ha capturado el joystick JOYSTICKID1 que ha cambiado la posición del joystick en el eje z.
+El **mensaje \_ MMMUT1ZMOVE** notifica a la ventana que ha capturado el valor de LAWID1 que la posición del eje Z ha cambiado.
 
 
 ```C++
@@ -45,12 +45,12 @@ Identifica los botones que se presionan. Puede ser uno o varios de los siguiente
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------|------------------------------------|
-| JOY \_ button1 | Se presionó el primer botón del joystick.  |
-| JOY \_ BUTTON2 | Se presionó el botón segundo joystick. |
-| JOY \_ BUTTON3 | Se presionó el tercer botón del joystick.  |
-| JOY \_ BUTTON4 | Se presionó el cuarto botón del joystick. |
+| BOTÓN \_ BUTTON1 DE BUTTON1 DE BUTTON1 | Se presiona el primer botón button button (Botón button).  |
+| BUTTON2 \_ DE BUTTON2 PARA BUTTON2 | Se presiona el segundo botón button button (Segundo botón button). |
+| BUTTON3 \_ DE BUTTON3 DE BUTTON3 | Se presiona el tercer botón button button (Tercer botón button).  |
+| BUTTON4 \_ DE BUTTON4 DE BUTTON4 | Se presiona el cuarto botón button button (Cuarto botón button). |
 
 
 
@@ -61,7 +61,7 @@ Identifica los botones que se presionan. Puede ser uno o varios de los siguiente
 <span id="zPos"></span><span id="zpos"></span><span id="ZPOS"></span>*zPos*
 </dt> <dd>
 
-Coordenada z del joystick.
+Coordenada z del eje.
 
 </dd> </dl>
 
@@ -69,11 +69,11 @@ Coordenada z del joystick.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -84,7 +84,7 @@ Coordenada z del joystick.
 [Joysticks](joysticks.md)
 </dt> <dt>
 
-[Mensajes de joystick multimedia](multimedia-joystick-messages.md)
+[Mensajes multimedia multimedia](multimedia-joystick-messages.md)
 </dt> </dl>
 
  

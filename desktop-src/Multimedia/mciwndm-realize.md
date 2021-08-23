@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MCIWNDM_REALIZE (VFW. h)
-description: El mensaje de MCIWNDM de la \_ MCIWnd de la ventana de la ventana de una ventana de. Esta macro se define con el mensaje de MCIWNDM \_ . Puede enviar este mensaje explícitamente o mediante la macro MCIWndRealize.
+title: MCIWNDM_REALIZE mensaje (Vfw.h)
+description: El mensaje MCIWNDM REALIZE se da cuenta de la paleta que usa actualmente el \_ dispositivo MCI en una ventana de MCIWnd. Esta macro se define con el mensaje MCIWNDM \_ REALIZE. Puede enviar este mensaje explícitamente o mediante la macro MCIWndRealize.
 ms.assetid: fe8803b5-3500-44b4-97f7-784bedf0b362
 keywords:
-- Mensaje de MCIWNDM_REALIZE de Windows multimedia
+- MCIWNDM_REALIZE mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ef3a803791a4f8dfe94d128d42ea06a7b28e739
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1d3fdbee3757e1fd3aada5292b86cc37577ccb718315c5b81140ceb14278c37c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103995997"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119012623"
 ---
-# <a name="mciwndm_realize-message"></a>Mensaje de MCIWNDM \_
+# <a name="mciwndm_realize-message"></a>Mensaje DE MCIWNDM \_ REALIZE
 
-El **mensaje \_ de MCIWNDM** de la MCIWnd de la ventana de la ventana de una ventana de. Esta macro se define con el **mensaje \_ de MCIWNDM** . Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndRealize**](/windows/desktop/api/Vfw/nf-vfw-mciwndrealize) .
+El **mensaje MCIWNDM \_ REALIZE** se da cuenta de la paleta que usa actualmente el dispositivo MCI en una ventana de MCIWnd. Esta macro se define con el **mensaje MCIWNDM \_ REALIZE.** Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndRealize.**](/windows/desktop/api/Vfw/nf-vfw-mciwndrealize)
 
 
 ```C++
@@ -38,20 +38,20 @@ lParam = 0;
 
 <dl> <dt>
 
-<span id="fBkgnd"></span><span id="fbkgnd"></span><span id="FBKGND"></span>*fBkgnd*
+<span id="fBkgnd"></span><span id="fbkgnd"></span><span id="FBKGND"></span>*fBnd*
 </dt> <dd>
 
-Marca de fondo. Especifique **true** para este parámetro si la ventana es una aplicación en segundo plano.
+Marca de fondo. Especifique **TRUE** para este parámetro si la ventana es una aplicación en segundo plano.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**MCIWNDM \_ En el uso se** usa la paleta del dispositivo MCI y se llama a la función [**RealizePalette**](/windows/desktop/api/wingdi/nf-wingdi-realizepalette) . Si la aplicación controla explícitamente los mensajes de [**WM \_ PALETTECHANGED**](/windows/desktop/gdi/wm-palettechanged) y [**WM \_ QUERYNEWPALETTE**](/windows/desktop/gdi/wm-querynewpalette) , debe usar este mensaje en la aplicación en lugar de usar **RealizePalette**. Si el cuerpo de uno de estos controladores de mensajes contiene solo **RealizePalette**, reenvíe el mensaje a la ventana de MCIWnd, que obtendrá automáticamente la paleta.
+**MCIWNDM \_ REALIZE** usa la paleta del dispositivo MCI y llama a la [**función RealizePalette.**](/windows/desktop/api/wingdi/nf-wingdi-realizepalette) Si la aplicación controla explícitamente los mensajes [**WM \_ PALETTECHANGED**](/windows/desktop/gdi/wm-palettechanged) y [**WM \_ QUERYNEWPALETTE,**](/windows/desktop/gdi/wm-querynewpalette) debe usar este mensaje en la aplicación en lugar de **usar RealizePalette**. Si el cuerpo de uno de estos controladores de mensajes solo contiene **RealizePalette,** reenvía el mensaje a la ventana MCIWnd, que se dará cuenta automáticamente de la paleta.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,7 +61,7 @@ Devuelve cero si es correcto o un error en caso contrario.
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 
@@ -75,10 +75,10 @@ Devuelve cero si es correcto o un error en caso contrario.
 [**RealizePalette**](/windows/desktop/api/wingdi/nf-wingdi-realizepalette)
 </dt> <dt>
 
-[**PALETTECHANGED de WM \_**](/windows/desktop/gdi/wm-palettechanged)
+[**PALETA \_ WMCHANGED**](/windows/desktop/gdi/wm-palettechanged)
 </dt> <dt>
 
-[**QUERYNEWPALETTE de WM \_**](/windows/desktop/gdi/wm-querynewpalette)
+[**WM \_ QUERYNEWPALETTE**](/windows/desktop/gdi/wm-querynewpalette)
 </dt> </dl>
 
  

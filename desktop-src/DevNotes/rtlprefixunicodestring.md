@@ -1,7 +1,7 @@
 ---
-description: Compara dos cadenas Unicode para determinar si una cadena es un prefijo del otro.
+description: Compara dos cadenas Unicode para determinar si una cadena es un prefijo de la otra.
 ms.assetid: 7D859C0A-2F72-49A4-8B49-130DCA103F37
-title: Función RtlPrefixUnicodeString (Ntddk. h)
+title: Función RtlPrefixUnicodeString (Ntddk.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ntdll.dll
-ms.openlocfilehash: 47382daab1bac5e71098f79a601d89255f1cf0e9
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 28997f3bc85dedb9a18139cec13b9a76a8dd975e4ff57f1380053178bfaab328
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104496103"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119076009"
 ---
-# <a name="rtlprefixunicodestring-function"></a>RtlPrefixUnicodeString función)
+# <a name="rtlprefixunicodestring-function"></a>Función RtlPrefixUnicodeString
 
-Compara dos cadenas Unicode para determinar si una cadena es un prefijo del otro.
+Compara dos cadenas Unicode para determinar si una cadena es un prefijo de la otra.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,30 +41,30 @@ BOOLEAN RtlPrefixUnicodeString(
 
 <dl> <dt>
 
-*Cadena1* \[ de\]
+*String1* \[ En\]
 </dt> <dd>
 
-Puntero a la primera cadena, que puede ser un prefijo de la cadena Unicode almacenada en el búfer en *cadena2*.
+Puntero a la primera cadena, que podría ser un prefijo de la cadena Unicode en búfer en *String2*.
 
 </dd> <dt>
 
-*Cadena2* \[ de\]
+*String2* \[ En\]
 </dt> <dd>
 
 Puntero a la segunda cadena.
 
 </dd> <dt>
 
-*CaseInSensitive* \[ de\]
+*CaseInSensitive* \[ En\]
 </dt> <dd>
 
-Si **es true**, se debe pasar por alto la distinción de mayúsculas y minúsculas al realizar la comparación.
+Si **es TRUE,** se debe omitir el uso de mayúsculas y minúsculas al realizar la comparación.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-**True** si *string1* es un prefijo de *cadena2*.
+**TRUE** si *String1* es un prefijo de *String2.*
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,9 +74,9 @@ Si **es true**, se debe pasar por alto la distinción de mayúsculas y minúscul
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                                                    |
-| Plataforma de destino<br/>          | <dl> <dt>[Mundo](https://msdn.microsoft.com/Library/Windows/Hardware/EB2264A4-BAE8-446B-B9A5-19893936DDCA)</dt> </dl> |
-| Encabezado<br/>                   | <dl> <dt>Ntddk. h (incluye Ntddk. h)</dt> </dl>                                    |
-| Biblioteca<br/>                  | <dl> <dt>Ntdll. lib</dt> </dl>                                                    |
+| Plataforma de destino<br/>          | <dl> <dt>[Universal](https://msdn.microsoft.com/Library/Windows/Hardware/EB2264A4-BAE8-446B-B9A5-19893936DDCA)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Ntddk.h (incluir Ntddk.h)</dt> </dl>                                    |
+| Biblioteca<br/>                  | <dl> <dt>Ntdll.lib</dt> </dl>                                                    |
 | Archivo DLL<br/>                      | <dl> <dt>Ntdll.dll</dt> </dl>                                                    |
 
 

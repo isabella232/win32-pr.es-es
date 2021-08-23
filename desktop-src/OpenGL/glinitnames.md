@@ -1,9 +1,9 @@
 ---
-title: función glInitNames (GL. h)
+title: Función glInitNames (Gl.h)
 description: La función glInitNames inicializa la pila de nombres.
 ms.assetid: 26c134f5-c17c-4637-93b6-5293f316dd6c
 keywords:
-- glInitNames (función) OpenGL
+- Función glInitNames OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c9ebdb9d19f6c88340fd53162febe694e3566408
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0a567242431fc90be3b60d8ae08875b585ff6a81794899a6c9eb69e7a0a03daa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104149925"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119012123"
 ---
-# <a name="glinitnames-function"></a>glInitNames función)
+# <a name="glinitnames-function"></a>Función glInitNames
 
-La función **glInitNames** inicializa la pila de nombres.
+La **función glInitNames** inicializa la pila de nombres.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,27 +44,27 @@ Esta función no devuelve ningún valor.
 
 ## <a name="error-codes"></a>Códigos de error
 
-La función [**glGetError**](glgeterror.md) puede recuperar el siguiente código de error.
+La función [**glGetError**](glgeterror.md) puede recuperar el código de error siguiente.
 
 
 
 | Nombre                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **glInitNames** hace que la pila de nombres se inicialice en su estado vacío predeterminado. La pila de nombres se usa durante el modo de selección para permitir que los conjuntos de comandos de representación se identifiquen de forma única. Consta de un conjunto ordenado de enteros sin signo.
+La **función glInitNames** hace que la pila de nombres se inicialice en su estado vacío predeterminado. La pila de nombres se usa durante el modo de selección para permitir que los conjuntos de comandos de representación se identifiquen de forma única. Consta de un conjunto ordenado de enteros sin signo.
 
-La pila de nombres está siempre vacía mientras que el modo de representación no es de selección de libro \_ . Se omiten las llamadas a **glInitNames** mientras el modo de representación no sea Select de GL \_ .
+La pila de nombres siempre está vacía, mientras que el modo de representación no es GL \_ SELECT. Se **omiten las llamadas a glInitNames** mientras el modo de representación no es GL \_ SELECT.
 
-Las siguientes funciones recuperan información relacionada con **glInitNames**:
+Las siguientes funciones recuperan información relacionada **con glInitNames**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento de profundidad de la pila de nombre del libro \_ \_ \_
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ NAME STACK \_ \_ DEPTH
 
-**glGet** con el argumento LM \_ Max \_ name \_ stack \_ Depth
+**glGet con** el argumento GL \_ MAX NAME STACK \_ \_ \_ DEPTH
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,8 +74,8 @@ Las siguientes funciones recuperan información relacionada con **glInitNames**:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

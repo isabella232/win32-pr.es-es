@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_GETSELTEXT (RichEdit. h)
-description: Recupera el texto seleccionado actualmente en un control Rich Edit.
+title: EM_GETSELTEXT mensaje (Richedit.h)
+description: Recupera el texto seleccionado actualmente en un control de edición enriquecido.
 ms.assetid: 56af77c3-f2d7-4b5d-895f-a67c141459e3
 keywords:
-- EM_GETSELTEXT controles de mensajes de Windows
+- EM_GETSELTEXT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: acde2c0677fa04ff6d7991bca56bad0c08a6f5ff
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 540567f1b52c936ad085acac8e0374fdb0a912bae06480632263f9676f2948e7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905201"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019503"
 ---
-# <a name="em_getseltext-message"></a>\_Mensaje GETSELTEXT em
+# <a name="em_getseltext-message"></a>Mensaje \_ EM GETSELTEXT
 
-Recupera el texto seleccionado actualmente en un control Rich Edit.
+Recupera el texto seleccionado actualmente en un control de edición enriquecido.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,7 +32,7 @@ Recupera el texto seleccionado actualmente en un control Rich Edit.
 *wParam* 
 </dt> <dd>
 
-Este parámetro no se usa; debe ser cero.
+Este parámetro no se utiliza; debe ser cero.
 
 </dd> <dt>
 
@@ -53,9 +53,9 @@ Este mensaje devuelve el número de caracteres copiados, sin incluir el carácte
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

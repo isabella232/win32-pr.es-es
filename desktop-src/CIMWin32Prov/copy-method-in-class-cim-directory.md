@@ -1,5 +1,5 @@
 ---
-description: 'Método copy de la clase CIM_Directory: el método Copy copia el archivo lógico (o directorio) especificado en la ruta de acceso del objeto a la ubicación especificada por el parámetro de entrada.'
+description: 'Método copy de la clase CIM_Directory : el método Copy copia el archivo lógico (o directorio) especificado en la ruta de acceso del objeto a la ubicación especificada por el parámetro de entrada.'
 ms.assetid: 71481cc8-9052-4c62-9c26-6887ea646ee1
 ms.tgt_platform: multiple
 title: Método Copy de la CIM_Directory clase
@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 6aff8ce62cf0358f494d5b3d83872b831e07ec4b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: fb80c13ad25bac8a50764cd6e34127217e4476336af4690a519ba7adfc46948f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108089743"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119020683"
 ---
 # <a name="copy-method-of-the-cim_directory-class"></a>Método copy de la clase \_ Cim Directory
 
@@ -30,7 +30,7 @@ El **método Copy** copia el archivo lógico (o directorio) especificado en la r
 
  
 
-En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -72,7 +72,7 @@ Correcto.
 **2**
 </dt> <dd>
 
-Acceso denegado.
+Acceso denegado:
 
 </dd> <dt>
 
@@ -100,7 +100,7 @@ El objeto ya existe.
 **11**
 </dt> <dd>
 
-El sistema de archivos no es NTFS.
+Sistema de archivos no NTFS.
 
 </dd> <dt>
 
@@ -142,7 +142,7 @@ Archivo de inicio no válido.
 **17**
 </dt> <dd>
 
-Privilegio no mantenido.
+Privilegios no mantenidos.
 
 </dd> <dt>
 
@@ -157,13 +157,13 @@ Parámetro no válido.
 
 Wmi no implementa actualmente este método. Para usar este método, debe implementarlo en su propio proveedor.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -173,7 +173,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
-description: El método ShouldDrawSampleNow determina cómo se programa un ejemplo para su representación.
+description: El método ShouldDrawSampleNow determina cómo se programa una muestra para su representación.
 ms.assetid: 92994f1f-53d5-42d4-90a2-2984b693e4c0
-title: Método CBaseRenderer. ShouldDrawSampleNow (Renbase. h)
+title: Método CBaseRenderer.ShouldDrawSampleNow (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 27fbf603fd670cac2a39831114a7f141b17ffd2e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 818a7682fed504028ebee1c3a5ff5d35a268e1daad8756b110bcfcb2ca8d9f80
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016873"
 ---
-# <a name="cbaserenderershoulddrawsamplenow-method"></a>CBaseRenderer. ShouldDrawSampleNow, método
+# <a name="cbaserenderershoulddrawsamplenow-method"></a>Método CBaseRenderer.ShouldDrawSampleNow
 
-El `ShouldDrawSampleNow` método determina cómo se programa un ejemplo para su representación.
+El `ShouldDrawSampleNow` método determina cómo se programa una muestra para su representación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ virtual HRESULT ShouldDrawSampleNow(
 *pMediaSample* 
 </dt> <dd>
 
-Puntero a la interfaz [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) del ejemplo.
+Puntero a la interfaz [**IMediaSample del**](/windows/desktop/api/Strmif/nn-strmif-imediasample) ejemplo.
 
 </dd> <dt>
 
@@ -67,23 +67,23 @@ Puntero a una variable que contiene la hora de finalización del ejemplo.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ false. Si la clase derivada reemplaza este método, devuelva uno de los valores que se muestran en la tabla siguiente.
+Devuelve S \_ FALSE. Si la clase derivada invalida este método, devuelva uno de los valores que se muestran en la tabla siguiente.
 
 
 
 | Código devuelto                                                                               | Descripción                                                                        |
 |-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>      | El ejemplo se debe representar inmediatamente.<br/>                              |
-| <dl> <dt>**S \_ false**</dt> </dl>   | El ejemplo debe programarse para la representación, en función de las marcas de tiempo.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>      | El ejemplo debe representarse inmediatamente.<br/>                              |
+| <dl> <dt>**S \_ FALSE**</dt> </dl>   | El ejemplo debe programarse para su representación, en función de las marcas de tiempo.<br/> |
 | <dl> <dt>**Código de error**</dt> </dl> | No represente este ejemplo.<br/>                                              |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**CBaseRenderer:: GetSampleTimes**](cbaserenderer-getsampletimes.md) llama a este método. De forma predeterminada, los ejemplos siempre están programados para su representación en función de sus marcas de tiempo. La clase derivada puede invalidar este método. por ejemplo, para implementar el control de calidad.
+El [**método CBaseRenderer::GetSampleTimes**](cbaserenderer-getsampletimes.md) llama a este método. De forma predeterminada, los ejemplos siempre están programados para su representación en función de sus marcas de tiempo. La clase derivada puede invalidar este método; por ejemplo, para implementar el control de calidad.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -91,8 +91,8 @@ El método [**CBaseRenderer:: GetSampleTimes**](cbaserenderer-getsampletimes.md)
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -100,7 +100,7 @@ El método [**CBaseRenderer:: GetSampleTimes**](cbaserenderer-getsampletimes.md)
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  

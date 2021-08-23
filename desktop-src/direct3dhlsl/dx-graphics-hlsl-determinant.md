@@ -1,5 +1,5 @@
 ---
-title: determinante
+title: Determinante
 description: Devuelve el determinante de la matriz cuadrada de punto flotante especificada.
 ms.assetid: 9062b6f1-8518-4ee4-8d57-5aa9e2176d05
 keywords:
@@ -13,20 +13,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: eb010a0c0d0868afcb3dff488daf7926ec6c5e03
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 75b17982560d70cf00cfb13832de9605b910f169d1461692f4c6a97274709e52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104984018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119120316"
 ---
-# <a name="determinant"></a>determinante
+# <a name="determinant"></a>Determinante
 
 Devuelve el determinante de la matriz cuadrada de punto flotante especificada.
 
 
 
-| determinante *RET* (*m*) |
+| *ret* determinant(*m*) |
 |------------------------|
 
 
@@ -39,7 +39,7 @@ Devuelve el determinante de la matriz cuadrada de punto flotante especificada.
 
 | Elemento                                                   | Descripción                            |
 |--------------------------------------------------------|----------------------------------------|
-| <span id="m"></span><span id="M"></span>*f*<br/> | \[en \] el valor especificado.<br/> |
+| <span id="m"></span><span id="M"></span>*M*<br/> | \[en \] El valor especificado.<br/> |
 
 
 
@@ -47,22 +47,22 @@ Devuelve el determinante de la matriz cuadrada de punto flotante especificada.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Valor escalar y de punto flotante que representa el factor determinante del parámetro *m* .
+Valor escalar de punto flotante que representa el determinante del *parámetro m.*
 
 ## <a name="type-description"></a>Descripción del tipo
 
 
 
-| Nombre  | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                       | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Tamaño                                     |
+| Nombre  | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                       | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Size                                     |
 |-------|-------------------------------------------------------------------------------------|----------------------------------------------------------------|------------------------------------------|
-| *m*   | [**matrices**](dx-graphics-hlsl-intrinsic-functions.md) | [**flot**](/windows/desktop/WinProg/windows-data-types)                        | any (número de filas = número de columnas) |
-| *direcc* | [**escalar**](dx-graphics-hlsl-intrinsic-functions.md) | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | 1                                        |
+| *m*   | [**Matriz**](dx-graphics-hlsl-intrinsic-functions.md) | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | any (número de filas = número de columnas) |
+| *Ret* | [**Escalar**](dx-graphics-hlsl-intrinsic-functions.md) | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | 1                                        |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -70,8 +70,8 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                       | Compatible             |
 |------------------------------------------------------------------------------------|-----------------------|
-| Modelador [modelo 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) y modelos de sombreador más altos | sí                   |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | vs \_ 1 \_ 1 y PS \_ 1 \_ 4 |
+| [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) y modelos de sombreador superiores | Sí                   |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | vs \_ 1 \_ 1 y ps \_ 1 \_ 4 |
 
 
 
@@ -81,7 +81,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[**Funciones intrínsecas (DirectX HLSL)**](dx-graphics-hlsl-intrinsic-functions.md)
+[**Funciones intrínsecas (HLSL de DirectX)**](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> </dl>
 
  

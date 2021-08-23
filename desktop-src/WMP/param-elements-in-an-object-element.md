@@ -1,32 +1,32 @@
 ---
-title: Elementos PARAM de un elemento OBJECT
-description: Elementos PARAM de un elemento OBJECT
+title: Elementos PARAM en un elemento OBJECT
+description: Elementos PARAM en un elemento OBJECT
 ms.assetid: f9229d92-3a7e-4ba4-a84c-20e60f2482dc
 keywords:
-- Windows Media Player, elementos PARAM en el elemento OBJECT
-- Modelo de objetos de Windows Media Player, elementos PARAM en el elemento OBJECT
-- modelo de objetos, elementos PARAM en el elemento OBJECT
-- Windows Media Player Mobile, elementos PARAM en el elemento OBJECT
-- Control ActiveX de Windows Media Player, elementos PARAM en el elemento OBJECT
-- Control ActiveX móvil de Windows Media Player, elementos PARAM en el elemento OBJECT
-- Control ActiveX, elementos PARAM en el elemento OBJECT
-- incrustación, páginas web
-- Incrustación de páginas web, elementos PARAM en el elemento OBJECT
-- Elementos PARAM en el elemento OBJECT
+- Reproductor de Windows Media,PARAM en el elemento OBJECT
+- Reproductor de Windows Media modelo de objetos, elementos PARAM en el elemento OBJECT
+- object model,PARAM elements in OBJECT element
+- Reproductor de Windows Media Elementos Mobile,PARAM en el elemento OBJECT
+- Reproductor de Windows Media ActiveX control, elementos PARAM en el elemento OBJECT
+- Reproductor de Windows Media Control ActiveX móvil, elementos PARAM en el elemento OBJECT
+- ActiveX control, elementos PARAM en el elemento OBJECT
+- embedding,Web pages
+- Inserción de páginas web, elementos PARAM en el elemento OBJECT
+- Elementos PARAM del elemento OBJECT
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f0fc5b9f64fa462386ec037eba34ed4e0659bb1
-ms.sourcegitcommit: e22adfb0dd3bb989e59455baedb4d905a877a240
+ms.openlocfilehash: 7da684a39739703038793abb2f4fdd32b924f35cdffc0c0f9d796fb7dbb5532b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "103903925"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054433"
 ---
-# <a name="param-elements-in-an-object-element"></a>Elementos PARAM de un elemento OBJECT
+# <a name="param-elements-in-an-object-element"></a>Elementos PARAM en un elemento OBJECT
 
-Windows Media Player usa el elemento PARAM para definir condiciones de inicio específicas para el control. El elemento PARAM se incrusta dentro del elemento OBJECT.
+Reproductor de Windows Media el elemento PARAM para definir condiciones de inicio específicas para el control. El elemento PARAM se incrusta dentro del elemento OBJECT.
 
-Por ejemplo, si desea definir si la propiedad **autoStart** es true, debe incrustar el elemento Param dentro del elemento de objeto.
+Por ejemplo, si desea definir si la propiedad **autoStart** es True, insertaría el elemento PARAM dentro del elemento OBJECT.
 
 
 ```HTML
@@ -38,60 +38,60 @@ Por ejemplo, si desea definir si la propiedad **autoStart** es true, debe incrus
 
 
 
-Puede tener tantos elementos de parámetro en un elemento de objeto como desee. PARAM tiene dos atributos, Name y Value. Ambos atributos se deben establecer.
+Puede tener tantos elementos PARAM en un elemento OBJECT como desee. PARAM tiene dos atributos, nombre y valor. Ambos atributos deben establecerse.
 
-Los atributos de parámetro admitidos varían ligeramente entre los exploradores y los tipos MIME. En la tabla siguiente se muestran los atributos que admiten los exploradores de Internet Explorer y Firefox. El tipo MIME preferido para el explorador Firefox es application/x-MS-WMP; sin embargo, hay otros tipos MIME que puede usar para insertar el control Player en una página web hospedada por el explorador Firefox. La cuarta columna de la tabla muestra los atributos que se admiten cuando se usa un tipo MIME distinto de application/x-MS-wmp.
+Los atributos de PARAM admitidos varían ligeramente entre exploradores y tipos MIME. En la tabla siguiente se muestran los atributos admitidos por los exploradores Internet Explorer y Firefox. El tipo mime preferido para el explorador Firefox es application/x-ms-wmp; sin embargo, hay otros tipos mime que puede usar para insertar el control Player en una página web hospedada por el explorador Firefox. La cuarta columna de la tabla muestra los atributos que se admiten cuando se usa un tipo mime distinto de application/x-ms-wmp.
 
 
 
-| Nombre de parámetro                                            | Internet Explorer | Firefox con aplicación de tipo MIME/x-MS-WMP | Firefox con cualquier otro tipo MIME |
+| Nombre de PARAM                                            | Internet Explorer | Firefox con tipo mime application/x-ms-wmp | Firefox con cualquier otro tipo mime |
 |-------------------------------------------------------|-------------------|---------------------------------------------|----------------------------------|
-| [Automáticamente](settings-autostart.md)                   | sí               | sí                                         | sí                              |
-| [balancea](settings-balance.md)                       | sí               | sí                                         | sí                              |
-| [baseURL](settings-baseurl.md)                       | sí               | sí                                         | sí                              |
-| [captioningID](closedcaption-captioningid.md)        | sí               | sí                                         | sí                              |
-| [currentMarker](controls-currentmarker.md)           | sí               | sí                                         | sí                              |
-| [currentPosition](controls-currentposition.md)       | sí               | sí                                         | sí                              |
-| [defaultFrame](settings-defaultframe.md)             | sí               | no                                          | no                               |
-| [enableContextMenu](player-enablecontextmenu.md)     | sí               | sí                                         | sí                              |
-| [enabled](player-enabled.md)                         | sí               | sí                                         | sí                              |
-| [enableErrorDialogs](settings-enableerrordialogs.md) | sí               | sí                                         | no                               |
-| **fileName**                                          | no                | sí                                         | sí                              |
-| [Completa](player-fullscreen.md)                   | sí               | no                                          | no                               |
-| [invokeURLs](settings-invokeurls.md)                 | sí               | no                                          | no                               |
-| [silenciar](settings-mute.md)                             | sí               | sí                                         | sí                              |
-| [playCount](settings-playcount.md)                   | sí               | sí                                         | no                               |
-| [Rate](settings-rate.md)                             | sí               | sí                                         | sí                              |
-| [SAMIFileName](closedcaption-samifilename.md)        | sí               | sí                                         | sí                              |
-| [SAMILang](closedcaption-samilang.md)                | sí               | sí                                         | sí                              |
-| [SAMIStyle](closedcaption-samistyle.md)              | sí               | sí                                         | sí                              |
-| **DIEZ**                                               | no                | sí                                         | sí                              |
-| [stretchToFit](player-stretchtofit.md)               | sí               | sí                                         | no                               |
-| [URL](player-url.md)                                 | sí               | sí                                         | sí                              |
-| [volume](settings-volume.md)                         | sí               | sí                                         | sí                              |
-| [windowlessVideo](player-windowlessvideo.md)         | sí               | sí                                         | sí                              |
+| [Autostart](settings-autostart.md)                   | Sí               | Sí                                         | Sí                              |
+| [equilibrar](settings-balance.md)                       | Sí               | Sí                                         | Sí                              |
+| [Baseurl](settings-baseurl.md)                       | Sí               | Sí                                         | Sí                              |
+| [captioningID](closedcaption-captioningid.md)        | Sí               | Sí                                         | Sí                              |
+| [currentMarker](controls-currentmarker.md)           | Sí               | Sí                                         | Sí                              |
+| [currentPosition](controls-currentposition.md)       | Sí               | Sí                                         | Sí                              |
+| [defaultFrame](settings-defaultframe.md)             | Sí               | No                                          | No                               |
+| [enableContextMenu](player-enablecontextmenu.md)     | Sí               | Sí                                         | Sí                              |
+| [enabled](player-enabled.md)                         | Sí               | Sí                                         | Sí                              |
+| [enableErrorDialogs](settings-enableerrordialogs.md) | Sí               | Sí                                         | No                               |
+| **fileName**                                          | No                | sí                                         | Sí                              |
+| [Fullscreen](player-fullscreen.md)                   | Sí               | No                                          | No                               |
+| [invokeURLs](settings-invokeurls.md)                 | Sí               | No                                          | No                               |
+| [Mudo](settings-mute.md)                             | Sí               | Sí                                         | Sí                              |
+| [playCount](settings-playcount.md)                   | Sí               | Sí                                         | No                               |
+| [Tasa](settings-rate.md)                             | Sí               | Sí                                         | Sí                              |
+| [SAMIFileName](closedcaption-samifilename.md)        | Sí               | Sí                                         | Sí                              |
+| [SAMILang](closedcaption-samilang.md)                | Sí               | Sí                                         | Sí                              |
+| [SAMIStyle](closedcaption-samistyle.md)              | Sí               | Sí                                         | Sí                              |
+| **Fuente**                                               | No                | sí                                         | Sí                              |
+| [stretchToFit](player-stretchtofit.md)               | Sí               | Sí                                         | No                               |
+| [URL](player-url.md)                                 | Sí               | Sí                                         | Sí                              |
+| [volume](settings-volume.md)                         | Sí               | Sí                                         | Sí                              |
+| [windowlessVideo](player-windowlessvideo.md)         | Sí               | Sí                                         | Sí                              |
 
 
 
- 
+ 
 
 > [!Note]  
-> Los elementos de parámetro **filename** y **src** son compatibles con el complemento de Firefox, pero no con Internet Explorer. Ambos realizan la misma función que el elemento de parámetro de **dirección URL** .
+> Los **elementos fileName** y **SRC** PARAM son compatibles con el complemento Firefox, pero no con Internet Explorer. Ambos realizan la misma función que el elemento **URL** PARAM.
 
- 
+ 
 
-Vea la [Referencia del modelo de objetos para scripting](object-model-reference-for-scripting.md) para obtener más detalles sobre los valores de cada atributo de nombre.
+Consulte referencia [del modelo de objetos para scripting](object-model-reference-for-scripting.md) para obtener más detalles sobre los valores de cada atributo de nombre.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Usar el control Media Player de Windows en una página web**](using-the-windows-media-player-control-in-a-web-page.md)
+[**Usar el control Reproductor de Windows Media en una página web**](using-the-windows-media-player-control-in-a-web-page.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

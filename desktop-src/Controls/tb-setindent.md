@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TB_SETINDENT (commctrl. h)
-description: Establece la sangría del primer botón en un control de barra de herramientas.
+title: TB_SETINDENT mensaje (Commctrl.h)
+description: Establece la sangría del primer botón de un control de barra de herramientas.
 ms.assetid: 2d57cd1f-2bfa-4c6e-9581-9e8ab4b8196d
 keywords:
-- TB_SETINDENT controles de mensajes de Windows
+- TB_SETINDENT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 05dfaf8a87737e4087b11f5c5acb8e822ed7f802
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d3e800e9c61af3a22f8622fa7dc6d0ae3286f22e7403ebfc387b6a773d4d4c88
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801082"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078219"
 ---
-# <a name="tb_setindent-message"></a>\_Mensaje SETINDENT TB
+# <a name="tb_setindent-message"></a>Mensaje \_ TB SETINDENT
 
-Establece la sangría del primer botón en un control de barra de herramientas.
+Establece la sangría del primer botón de un control de barra de herramientas.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -41,17 +41,17 @@ Valor que especifica la sangría, en píxeles.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor distinto de cero si es correcto o cero de lo contrario.
+Devuelve un valor distinto de cero si se realiza correctamente o cero en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fee207d7a17f12cc81036fbd4f82ec49a99f4a31
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e31829829a99dc613cfeeeda7ad8a9871c1a3ec4fee99220b804b171bbdcdc29
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096043"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074789"
 ---
 # <a name="cbasepincompleteconnect-method"></a>Método CBasePin.CompleteConnect
 
@@ -55,7 +55,7 @@ Devuelve S \_ OK.
 
 ## <a name="remarks"></a>Comentarios
 
-Se llama a este método en ambos pines al final del proceso de conexión. El pin de conexión lo llama desde el método [**CBasePin::Connect**](cbasepin-connect.md) y el pin receptor lo llama desde el método [**CBasePin::ReceiveConnection.**](cbasepin-receiveconnection.md)
+Se llama a este método en ambos pines al final del proceso de conexión. El pin de conexión lo llama desde el método [**CBasePin::Conectar**](cbasepin-connect.md) y el pin receptor lo llama desde el método [**CBasePin::ReceiveConnection.**](cbasepin-receiveconnection.md)
 
 En la clase base, este método simplemente devuelve S \_ OK. Si una clase derivada tiene algún requisito para completar una conexión, debe invalidar este método. Por ejemplo, la [**clase CBaseOutputPin**](cbaseoutputpin.md) usa este método para decidir el asignador de memoria.
 
@@ -67,12 +67,12 @@ Si se produce un error en este método, también se produce un error en el inten
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
 description: El método Type recupera el tipo principal.
 ms.assetid: 9c3badb2-2d9f-44d8-a376-0918104ee431
-title: Método CMediaType. Type (mtype. h)
+title: Método CMediaType.Type (Mtype.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9931047ac6e95faa5696da4600439da00881cf6b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5653cffd9228fda2e9d7c4768d73cea8a76c9974d87c36b4436e726c0e5ada23
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680923"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073959"
 ---
-# <a name="cmediatypetype-method"></a>CMediaType. Type (método)
+# <a name="cmediatypetype-method"></a>Método CMediaType.Type
 
 El `Type` método recupera el tipo principal.
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un puntero al miembro **majortype** .
+Devuelve un puntero al **miembro majortype.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve un puntero al miembro **majortype** .
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Mtype. h (incluir streams. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Mtype.h (incluir Secuencias.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve un puntero al miembro **majortype** .
 
 <dl> <dt>
 
-[**Clase CMediaType**](cmediatype.md)
+[**CMediaType (clase)**](cmediatype.md)
 </dt> </dl>
 
  

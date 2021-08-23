@@ -1,15 +1,15 @@
 ---
 description: 'Evento InkOverlay.SelectionMoved: se produce cuando la posición de la selección actual ha cambiado, por ejemplo, mediante modificaciones en la interfaz de usuario, los procedimientos de cortar y pegar o la propiedad Selection.'
 ms.assetid: 78b5ab11-01c0-4bdb-ae1f-ec55774abdce
-title: Evento InkOverlay.SelectionMoved (Msyecciónut.h)
+title: Evento InkOverlay.SelectionMoved (Msmutut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e27bf1600683b5258bf899692b692c8cdcabb359
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 141e1c9501a9670ebfa89cdcf30fac7a1044450cef932e7c7abb522a5199fd47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116873"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032073"
 ---
 # <a name="inkoverlayselectionmoved-event"></a>Evento InkOverlay.SelectionMoved
 
@@ -58,14 +58,14 @@ Para obtener el nuevo rectángulo delimitador de la colección de trazos que se 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC \[ Edition\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Encabezado<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
