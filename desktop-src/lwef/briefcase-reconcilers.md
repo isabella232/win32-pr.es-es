@@ -1,129 +1,129 @@
 ---
-title: Creación de reconciliadores de maletín
-description: Un reconciliador de maletín da a mi maletín los medios para conciliar diferentes versiones de un documento.
+title: Creación de conciliadores de minúsculas
+description: Un conciliador de minúsculas proporciona a Briefcase los medios para conciliar las distintas versiones de un documento.
 ms.assetid: 86d66291-96ae-40ea-98ef-ef263f25aa82
 keywords:
-- reconciliadores de maletín
+- conciliadores de minúsculas
 - conciliación
 - IReconcilableObject
 - IReconcileInitiator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b925e7055e15f6c7a49408aa28d147fb2eef5a7e
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: dc4161796999172e6ee9bc7c403e723f9f8bafe7e876b544888fa5e7105b724f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104420557"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119556945"
 ---
-# <a name="creating-briefcase-reconcilers"></a>Creación de reconciliadores de maletín
+# <a name="creating-briefcase-reconcilers"></a>Creación de conciliadores de minúsculas
 
-Un reconciliador de maletín da a mi maletín los medios para conciliar diferentes versiones de un documento.
+Un conciliador de minúsculas proporciona a Briefcase los medios para conciliar las distintas versiones de un documento.
 
--   [Acerca de los reconciliadores de maletín](#about-briefcase-reconcilers)
-    -   [Conciliación](#reconciliation)
-    -   [Creación de un reconciliador de maletín](#creating-a-briefcase-reconciler)
+-   [Acerca de los conciliadores de minúsculas](#about-briefcase-reconcilers)
+    -   [Reconciliación](#reconciliation)
+    -   [Creación de un conciliador de minúsculas](#creating-a-briefcase-reconciler)
     -   [Interacción del usuario en la conciliación](#user-interaction-in-reconciliation)
-    -   [Reconciliar objetos incrustados](#reconciling-embedded-objects)
+    -   [Conciliación de objetos incrustados](#reconciling-embedded-objects)
     -   [Residuos](#residues)
--   [Referencia de reconciliador de maletín](#briefcase-reconciler-reference)
-    -   [Interfaces y métodos del reconciliador de maletín](#briefcase-reconciler-interfaces-and-methods)
+-   [Referencia del conciliador de minúsculas](#briefcase-reconciler-reference)
+    -   [Interfaces y métodos de conciliador de minúsculas](#briefcase-reconciler-interfaces-and-methods)
 
-## <a name="about-briefcase-reconcilers"></a>Acerca de los reconciliadores de maletín
+## <a name="about-briefcase-reconcilers"></a>Acerca de los conciliadores de minúsculas
 
-Un reconciliador de maletín combina diferentes versiones de entrada de un documento para generar una única versión de salida nueva del documento. Es posible que tenga que crear un reconciliador de maletín para admitir el tipo de documento. En esta información general se describen los reconciliadores de maletín y se explica cómo crearlos.
+Un conciliador de minúsculas combina distintas versiones de entrada de un documento para generar una versión de salida única y nueva del documento. Es posible que tenga que crear un conciliador de minúsculas para admitir el tipo de documento. En esta introducción se describen los conciliadores de minúsculas y se explica cómo crearlos.
 
 Se tratan los temas siguientes:
 
--   [Conciliación](#reconciliation)
--   [Creación de un reconciliador de maletín](#creating-a-briefcase-reconciler)
+-   [Reconciliación](#reconciliation)
+-   [Creación de un conciliador de minúsculas](#creating-a-briefcase-reconciler)
 -   [Interacción del usuario en la conciliación](#user-interaction-in-reconciliation)
--   [Reconciliar objetos incrustados](#reconciling-embedded-objects)
+-   [Conciliación de objetos incrustados](#reconciling-embedded-objects)
 -   [Residuos](#residues)
 
-### <a name="reconciliation"></a>Conciliación
+### <a name="reconciliation"></a>Reconciliación
 
-Un documento es una colección de información que se puede copiar y cambiar. Un documento tiene versiones diferentes si el contenido de al menos dos copias del documento son diferentes. La reconciliación genera una versión única de un documento a partir de dos o más versiones iniciales. Normalmente, la versión reconciliada es una combinación de información de las versiones iniciales con la información más reciente o más útil conservada.
+Un documento es una colección de información que se puede copiar y cambiar. Un documento tiene versiones diferentes si el contenido de al menos dos copias del documento es diferente. La conciliación genera una única versión de un documento a partir de dos o más versiones iniciales. Normalmente, la versión conciliada es una combinación de información de las versiones iniciales con la información más reciente o más útil conservada.
 
-El maletín inicia la conciliación cuando determina que dos o más copias del mismo documento son diferentes. Maletín, que actúa como iniciador en este contexto, localiza e inicia el reconciliador del maletín asociado con el tipo de documento especificado. El reconciliador compara los documentos y determina qué partes de los documentos se deben conservar. Algunos reconciliadores pueden requerir la interacción del usuario para completar la conciliación. Otros pueden completar la reconciliación sin la interacción del usuario. El reconciliador puede estar incluido en una aplicación o ser una extensión implementada como un archivo DLL.
+La conciliación se inicia mediante Briefcase cuando determina que dos o más copias del mismo documento son diferentes. El mal caso, que actúa como iniciador en este contexto, busca e inicia el conciliador de mal estado asociado al tipo de documento especificado. El conciliador compara los documentos y determina qué partes de los documentos se conservarán. Algunos conciliadores pueden requerir la interacción del usuario para completar la conciliación. Otros podrían completar la conciliación sin la interacción del usuario. El conciliador puede estar contenido dentro de una aplicación o ser una extensión implementada como un archivo DLL.
 
-Algunos reconciliadores de Maletin podrían crear residuos. Un residuo es un documento, que normalmente tiene el mismo tipo de archivo que el documento inicial, que contiene información no guardada en la versión combinada. Los residuos se suelen usar para proporcionar a los autores una manera rápida de determinar qué información de su documento original no está en la última versión combinada. Si un reconciliador admite residuos, crea un residuo para cada una de las versiones originales del documento. Los residuos no se crean a menos que el iniciador los solicite.
+Algunos conciliadores de minúsculas pueden crear insensores. Un residuo es un documento, que normalmente tiene el mismo tipo de archivo que el documento inicial, que contiene información no guardada en la versión combinada. Normalmente, los artículos se usan para proporcionar a los autores una manera rápida de determinar qué información de su documento original no está en la versión combinada final. Si un conciliador admite los desechos, crea un elemento para cada una de las versiones originales del documento. Los residuos no se crean a menos que el iniciador los solicite.
 
-Algunos reconciliadores de maletín funcionan con el maletín para permitir que el usuario finalice la conciliación. Se trata de una característica importante para un usuario que podría decidir que la reconciliación no debería continuar. Un reconciliador normalmente proporciona un objeto de terminación cuando la reconciliación requiere la interacción del usuario y puede ser prolongada. En algunos entornos, un reconciliador podría permitir la reconciliación parcial, lo que permite a un usuario suspender temporalmente una conciliación y reanudarla más adelante. Sin embargo, el maletín no admite actualmente la conciliación parcial.
+Algunos conciliadores de minúsculas funcionan con El mal estado para permitir que el usuario finalice la conciliación. Se trata de una característica importante para un usuario que podría decidir que la conciliación no debe continuar. Normalmente, un conciliador proporciona un objeto de terminación cuando la conciliación requiere la interacción del usuario y puede ser larga. En algunos entornos, un conciliador podría permitir la conciliación parcial, lo que permite a un usuario suspender temporalmente una conciliación y reanudarla más adelante. Sin embargo, el mal minúscula no admite actualmente la conciliación parcial.
 
-### <a name="creating-a-briefcase-reconciler"></a>Creación de un reconciliador de maletín
+### <a name="creating-a-briefcase-reconciler"></a>Creación de un conciliador de minúsculas
 
-Puede crear un reconciliador de maletín implementando las interfaces de conciliación. Como mínimo, un reconciliador implementa la interfaz [**IReconcilableObject**](/windows/win32/api/reconcil/nn-reconcil-ireconcilableobject) y la interfaz [IPersistStorage](/windows/win32/api/objidl/nn-objidl-ipersiststorage) o [IPersistFile](/windows/win32/api/objidl/nn-objidl-ipersistfile) . Como iniciador, el maletín determina cuándo se necesita la conciliación y llama al método [**IReconcilableObject:: Reconciliate**](/windows/win32/api/reconcil/nf-reconcil-ireconcilableobject-reconcile) para iniciar la conciliación.
+Para crear un conciliador de minúsculas, implemente las interfaces de conciliación. Como mínimo, un conciliador implementa la interfaz [**IReconcilableObject**](/windows/win32/api/reconcil/nn-reconcil-ireconcilableobject) y la [interfaz IPersistStorage](/windows/win32/api/objidl/nn-objidl-ipersiststorage) [o IPersistFile.](/windows/win32/api/objidl/nn-objidl-ipersistfile) Como iniciador, Briefcase determina cuándo se necesita la conciliación y llama al método [**IReconcilableObject::Reconcile**](/windows/win32/api/reconcil/nf-reconcil-ireconcilableobject-reconcile) para iniciar la conciliación.
 
-Aunque [**IReconcilableObject:: Reconciliate**](/windows/win32/api/reconcil/nf-reconcil-ireconcilableobject-reconcile) proporciona un amplio conjunto de capacidades de conciliación, un reconciliador de maletín solo realiza una conciliación mínima en la mayoría de los casos. En concreto, el maletín no requiere que el reconciliador admita la generación de residuos o que admita el objeto de terminación. Además, el reconciliador realiza una única conciliación de arriba a abajo y no debe devolver el valor de REC \_ E \_ NOTCOMPLETE; es decir, no debe intentar la reconciliación parcial.
+Aunque [**IReconcilableObject::Reconcile**](/windows/win32/api/reconcil/nf-reconcil-ireconcilableobject-reconcile) proporciona un amplio conjunto de funcionalidades de conciliación, un conciliador de mal estado solo lleva a cabo una conciliación mínima en la mayoría de los casos. En concreto, La caja minúscula no requiere que el conciliador admita la generación de residuos ni que admita el objeto de terminación. Además, el conciliador lleva a cabo una única conciliación de arriba a abajo y no debe devolver el valor REC E NOTCOMPLETE; es decir, no debe intentar la conciliación \_ \_ parcial.
 
-El maletín proporciona la interfaz [**IReconcileInitiator**](ireconcileinitiator.md) . El reconciliador del maletín puede usar el método [**IReconcileInitiator:: SetAbortCallback**](/windows/win32/api/reconcil/nf-reconcil-ireconcileinitiator-setabortcallback) para establecer el objeto de finalización. El maletín no utiliza identificadores de versión y, por tanto, no puede proporcionar versiones anteriores de un documento si un reconciliador los solicita usando los métodos correspondientes en **IReconcileInitiator**.
+Briefcase proporciona la [**interfaz IReconcileInitiator.**](ireconcileinitiator.md) El conciliador de minúsculas puede usar el método [**IReconcileInitiator::SetAbortCallback**](/windows/win32/api/reconcil/nf-reconcil-ireconcileinitiator-setabortcallback) para establecer el objeto de terminación. El mal mal estado no usa identificadores de versión y, por tanto, no puede proporcionar versiones anteriores de un documento si un conciliador los solicita mediante los métodos correspondientes de **IReconcileInitiator.**
 
-El maletín pasa a [**IReconcilableObject:: reconciliar**](/windows/win32/api/reconcil/nf-reconcil-ireconcilableobject-reconcile) monikers de archivo que representan las versiones del documento que se va a conciliar. El reconciliador del maletín obtiene acceso a las versiones mediante el método [IMoniker:: BindToObject](/windows/win32/api/objidl/nf-objidl-imoniker-bindtoobject) o [IMoniker:: BindToStorage](/windows/win32/api/objidl/nf-objidl-imoniker-bindtostorage) . Esta última suele ser más rápida y se recomienda. El reconciliador debe liberar cualquier objeto o almacenamiento al que se enlaza.
+El caso pasa a los monikers de archivo [**IReconcilableObject::Reconcile**](/windows/win32/api/reconcil/nf-reconcil-ireconcilableobject-reconcile) que representan las versiones del documento que se deben conciliar. El conciliador de minúsculas obtiene acceso a las versiones mediante el método [IMoniker::BindToObject](/windows/win32/api/objidl/nf-objidl-imoniker-bindtoobject) o [IMoniker::BindToStorage.](/windows/win32/api/objidl/nf-objidl-imoniker-bindtostorage) Este último suele ser más rápido y se recomienda. El conciliador debe liberar los objetos o el almacenamiento al que se enlaza.
 
-Cuando el reconciliador del maletín usa [IMoniker:: BindToStorage](/windows/win32/api/objidl/nf-objidl-imoniker-bindtostorage), se enlaza al almacenamiento que es almacenamiento plano (un flujo) o almacenamiento estructurado definido por OLE. Si el reconciliador espera almacenamiento plano, debe usar IMoniker:: BindToStorage para solicitar la interfaz [IStream](/windows/win32/api/objidl/nn-objidl-istream) . Si el reconciliador espera almacenamiento estructurado, debe solicitar la interfaz [IStorage](/windows/win32/api/objidl/nn-objidl-istorage) . En ambos casos, debe solicitar acceso directo de solo lectura (no transactd) al almacenamiento. es posible que el acceso de lectura y escritura no esté disponible.
+Cuando el conciliador de minúsculas usa [IMoniker::BindToStorage](/windows/win32/api/objidl/nf-objidl-imoniker-bindtostorage), se enlaza al almacenamiento que es un almacenamiento plano (una secuencia) o un almacenamiento estructurado definido por OLE. Si el conciliador espera almacenamiento plano, debe usar IMoniker::BindToStorage para solicitar la [interfaz IStream.](/windows/win32/api/objidl/nn-objidl-istream) Si el conciliador espera almacenamiento estructurado, debe solicitar la [interfaz IStorage.](/windows/win32/api/objidl/nn-objidl-istorage) En ambos casos, debe solicitar acceso directo (no transaccionado) de solo lectura al almacenamiento; Es posible que el acceso de lectura y escritura no esté disponible.
 
-Normalmente, un reconciliador de maletín mínimo busca directamente en el almacenamiento de las otras versiones y trata los objetos incrustados de una manera muy primitiva, como la combinación de dos versiones del objeto incluyendo ambas versiones en la versión de salida.
+Normalmente, un conciliador de minúsculas mínimo examina directamente el almacenamiento de las otras versiones y trata los objetos incrustados de una manera muy primitiva, como combinar dos versiones del objeto mediante la inclusión de ambas versiones en la versión de salida.
 
-El iniciador ubica el reconciliador del maletín adecuado mediante un subconjunto de la lógica implementada por la función [GetClassFile](/windows/win32/api/objbase/nf-objbase-getclassfile) para determinar el tipo de un archivo determinado y, a continuación, busca en el registro la clase de reconciliador asociada al tipo de archivo especificado. El maletín, al igual que otros componentes de Shell, determina el tipo de un archivo únicamente por la extensión de nombre de archivo. La extensión de un archivo debe tener un tipo de archivo registrado para que el maletín invoque un reconciliador para el archivo. Debe establecer una entrada del registro con el siguiente formato al instalar el reconciliador.
+El iniciador busca el conciliador de minúsculas adecuado mediante un subconjunto de la lógica implementada por la función [GetClassFile](/windows/win32/api/objbase/nf-objbase-getclassfile) para determinar el tipo de un archivo determinado y, a continuación, busca en el Registro la clase conciliadora asociada al tipo de archivo especificado. El mal estado, al igual que otros componentes de Shell, determina el tipo de un archivo únicamente mediante la extensión de nombre de archivo. La extensión de un archivo debe tener un tipo de archivo registrado para que Briefcase invoque un conciliador para el archivo. Debe establecer una entrada del Registro del formulario siguiente al instalar el conciliador.
 
 ```
 CLSID
-   {the file CLSID}
-      Roles
-         Reconciler
-            (Default) = {the reconciler-classid}
+   {the file CLSID}
+      Roles
+         Reconciler
+            (Default) = {the reconciler-classid}
 ```
 
-La clase debe ser de carga rápida, debe designarse \_ como MULTIPLEUSE y, a menos que se proporcionen serializadores para la interfaz de conciliación, debe ser un servidor de tipo en curso (contenido en una DLL) en lugar de un servidor local (implementado en un archivo. exe).
+La clase debe ser de carga rápida, debe designarse como MULTIPLEUSE y, a menos que se proporcionan serializadores para la interfaz de conciliación, debe ser un servidor en proceso (incluido en un archivo DLL) en lugar de un servidor local (implementado en un archivo \_ .exe).
 
 ### <a name="user-interaction-in-reconciliation"></a>Interacción del usuario en la conciliación
 
-Un reconciliador de maletín debería intentar realizar la reconciliación sin la interacción del usuario. Cuanto más automatizada sea la conciliación, mejor será la percepción del proceso por el usuario.
+Un conciliador de mal estado debe intentar llevar a cabo la conciliación sin la interacción del usuario. Entre más automatizada sea la conciliación, mejor será la percepción del usuario sobre el proceso.
 
-En algunos casos, la intervención del usuario puede ser valiosa. Por ejemplo, un sistema de documentos podría requerir que un usuario Revise los cambios antes de aceptar la versión combinada de un documento o podría requerir comentarios del usuario en el que se explican los cambios realizados. En estos casos, el iniciador, no el reconciliador del maletín, es responsable de consultar al usuario y llevar a cabo las instrucciones del usuario.
+En algunos casos, la intervención del usuario puede ser valiosa. Por ejemplo, un sistema de documentos puede requerir que un usuario revise los cambios antes de aceptar la versión combinada de un documento o puede requerir comentarios del usuario que expliquen los cambios realizados. En estos casos, el iniciador, no el conciliador de mal estado, es responsable de consultar al usuario y llevar a cabo las instrucciones del usuario.
 
-En otros casos, puede ser necesaria la intervención del usuario, por ejemplo, cuando se han editado dos versiones de forma no compatible. En tales casos, el iniciador o el reconciliador del maletín deben consultar al usuario para obtener instrucciones sobre cómo resolver el conflicto. En general, ningún iniciador puede confiar en completar una conciliación sin esperar alguna interacción del usuario. Los reconciliadores, por otro lado, tienen la opción de interactuar con el usuario para resolver conflictos o requerir que el iniciador lo haga.
+En otros casos, podría ser necesaria la intervención del usuario, por ejemplo, cuando dos versiones se han editado de maneras incompatibles. En tales casos, el iniciador o el conciliador de minúsculas deben consultar al usuario para obtener instrucciones sobre cómo resolver el conflicto. En general, ningún iniciador puede confiar en completar una conciliación sin esperar alguna interacción del usuario. Por otro lado, los conciliadores tienen la opción de interactuar con el usuario para resolver conflictos o requerir que el iniciador lo haga.
 
-### <a name="reconciling-embedded-objects"></a>Reconciliar objetos incrustados
+### <a name="reconciling-embedded-objects"></a>Conciliación de objetos incrustados
 
-Al reconciliar un documento, el propio reconciliador del maletín puede convertirse en iniciador si detecta un objeto incrustado de un tipo que no se puede conciliar. En este caso, el reconciliador necesita reconciliar de forma recursiva cada uno de los objetos incrustados y asumir todas las responsabilidades de un iniciador.
+Al conciliar un documento, el propio conciliador de mal estado puede convertirse en un iniciador si detecta un objeto incrustado de un tipo que no puede conciliar. En este caso, el conciliador debe conciliar de forma recursiva cada uno de los objetos incrustados y asumir todas las responsabilidades de un iniciador.
 
-Para llevar a cabo la recursividad, el reconciliador del maletín carga el objeto y las consultas para la interfaz adecuada. El controlador del objeto debe admitir la interfaz. Si algún método de la interfaz devuelve el \_ valor OLE E \_ NOTRUNNING, el reconciliador debe ejecutar el objeto para llevar a cabo la operación. Dado que el código para los objetos incrustados no siempre está disponible, un reconciliador debe proporcionar una solución para esta condición. Por ejemplo, el reconciliador podría incluir versiones antiguas y nuevas del objeto incrustado en la versión reconciliada. El reconciliador no debe intentar conciliar los vínculos.
+Para llevar a cabo la recursión, el conciliador de minúsculas carga el objeto y las consultas para la interfaz adecuada. El controlador del objeto debe admitir la interfaz . Si algún método de la interfaz devuelve el valor OLE \_ E NOTRUNNING, el conciliador debe ejecutar el objeto para llevar a \_ cabo la operación. Dado que el código de los objetos incrustados no siempre está disponible, un conciliador debe proporcionar una solución para esta condición. Por ejemplo, el conciliador podría incluir versiones antiguas y nuevas del objeto incrustado en la versión conciliada. El conciliador no debe intentar conciliar entre vínculos.
 
-El iniciador almacena las versiones del documento que se están combinando. En muchos casos, el iniciador tiene acceso al almacenamiento de cada versión y guarda el resultado de la reconciliación con almacenamiento similar. Sin embargo, a veces, el iniciador puede tener un objeto en memoria para el que no hay ninguna versión persistente disponible. Esta situación puede producirse cuando se debe conciliar un documento que contenga objetos incrustados abiertos antes de guardarlo. En tales casos, el iniciador guarda el resultado de la reconciliación en la versión encontrada en la memoria.
+El iniciador almacena las versiones del documento que se combinan. En muchos casos, el iniciador tiene acceso al almacenamiento de cada versión y guarda el resultado de la conciliación mediante almacenamiento similar. Sin embargo, en ocasiones, el iniciador podría tener un objeto en memoria para el que no hay disponible ninguna versión persistente. Esta situación puede producirse cuando se debe conciliar un documento que contiene objetos incrustados abiertos antes de guardarse. En tales casos, el iniciador guarda el resultado de la conciliación en la versión encontrada en la memoria.
 
-El iniciador utiliza la interfaz [IPersistStorage](/windows/win32/api/objidl/nn-objidl-ipersiststorage) para enlazar (cargar) la versión combinada. El iniciador usa el método [IPersistStorage:: Load](/windows/win32/api/objidl/nf-objidl-ipersiststorage-load) si ya se ha creado una versión inicial y usa el método [IPersistStorage:: InitNew](/windows/win32/api/objidl/nf-objidl-ipersiststorage-initnew) para la versión inicial. Cuando se carga la versión combinada, el iniciador usa [QueryInterface](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) para recuperar la dirección de la interfaz [**IReconcilableObject**](/windows/win32/api/reconcil/nn-reconcil-ireconcilableobject) . Esta interfaz proporciona al iniciador acceso al almacenamiento de los residuos existentes y le proporciona una manera de crear almacenamiento para los nuevos residuos. A continuación, el iniciador dirige la interfaz para llevar a cabo la conciliación. En realidad, el iniciador consulta la interfaz [IPersistFile](/windows/win32/api/objidl/nn-objidl-ipersistfile) antes de IPersistStorage. Si el reconciliador admite IPersistFile, el iniciador manipula la réplica a través de IPersistFile en lugar de los métodos de IPersistStorage. Esto permite la reconciliación de archivos que no se almacenan como documentos compuestos.
+El iniciador usa la [interfaz IPersistStorage](/windows/win32/api/objidl/nn-objidl-ipersiststorage) para enlazar (cargar) la versión combinada. El iniciador usa el método [IPersistStorage::Load](/windows/win32/api/objidl/nf-objidl-ipersiststorage-load) si ya se ha creado una versión inicial y usa el método [IPersistStorage::InitNew](/windows/win32/api/objidl/nf-objidl-ipersiststorage-initnew) para la versión inicial. Cuando se carga la versión combinada, el iniciador usa [QueryInterface](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) para recuperar la dirección de la [**interfaz IReconcilableObject.**](/windows/win32/api/reconcil/nn-reconcil-ireconcilableobject) Esta interfaz proporciona al iniciador acceso al almacenamiento de los residuos existentes y le proporciona una manera de crear almacenamiento para los nuevos residuos. A continuación, el iniciador dirige a la interfaz para llevar a cabo la conciliación. El iniciador consulta realmente la interfaz [IPersistFile](/windows/win32/api/objidl/nn-objidl-ipersistfile) antes de IPersistStorage. Si el conciliador admite IPersistFile, el iniciador manipula la réplica a través de IPersistFile en lugar de los métodos IPersistStorage. Esto permite la conciliación de archivos que no se almacenan como documentos compuestos.
 
-Una vez completada la conciliación, el iniciador puede guardar la versión combinada mediante la interfaz [IPersistStorage](/windows/win32/api/objidl/nn-objidl-ipersiststorage) o [IPersistFile](/windows/win32/api/objidl/nn-objidl-ipersistfile) . Durante la conciliación, el reconciliador del maletín crea los residuos según sea necesario y escribe sus bits persistentes en el almacenamiento. Si la versión combinada es una secuencia, la interfaz [IStorage](/windows/win32/api/objidl/nn-objidl-istorage) pasada a [IPersistStorage:: Load](/windows/win32/api/objidl/nf-objidl-ipersiststorage-load) contiene una secuencia denominada "contents" con su estado de almacenamiento establecido en STATEBITS \_ Flat. (Puede establecer los bits de estado mediante el método [IStorage:: Stat](/windows/win32/api/objidl/nf-objidl-istorage-stat) ). Después de la combinación, el iniciador guarda la versión combinada escribiendo los datos de una manera adecuada. Debe asegurarse de que STATEBITS \_ Flat esté establecido según sea adecuado para el almacenamiento.
+Una vez completada la conciliación, el iniciador puede guardar la versión combinada mediante la [interfaz IPersistStorage](/windows/win32/api/objidl/nn-objidl-ipersiststorage) [o IPersistFile.](/windows/win32/api/objidl/nn-objidl-ipersistfile) Durante la conciliación, el conciliador de mal estado crea los restos según sea necesario y escribe sus bits persistentes en el almacenamiento. Si la versión combinada es una secuencia, la interfaz [IStorage](/windows/win32/api/objidl/nn-objidl-istorage) pasada a [IPersistStorage::Load](/windows/win32/api/objidl/nf-objidl-ipersiststorage-load) contiene una secuencia denominada "Contents" con su estado de almacenamiento establecido en STATEBITS \_ FLAT. (Puede establecer los bits de estado mediante el [método IStorage::Stat).](/windows/win32/api/objidl/nf-objidl-istorage-stat) Después de la combinación, el iniciador guarda la versión combinada escribiendo los datos de la manera adecuada. Debe asegurarse de que STATEBITS \_ FLAT está establecido según corresponda para el almacenamiento.
 
 ### <a name="residues"></a>Residuos
 
-El iniciador indica si quiere residuos estableciendo el parámetro *pstgNewResidues* en una dirección válida al llamar al método [**IReconcilableObject:: reconciliate**](/windows/win32/api/reconcil/nf-reconcil-ireconcilableobject-reconcile) . Si el reconciliador no admite la creación de residuos, debe devolver inmediatamente el valor de REC \_ E \_ noresiduos, a menos que el parámetro *dwFlags* especifique el valor de **\_ NORESIDUESOK de RECONCILEF** .
+El iniciador indica si desea que se desconvoque estableciendo el parámetro *pstgNewResidues* en una dirección válida al llamar al método [**IReconcilableObject::Reconcile.**](/windows/win32/api/reconcil/nf-reconcil-ireconcilableobject-reconcile) Si el conciliador no admite la creación de residuos, debe devolver inmediatamente el valor REC E NORESIDUES, a menos que el parámetro dwFlags especifique el valor \_ \_ **RECONCILEF \_ NORESIDUESOK.** 
 
-El reconciliador del maletín devuelve los residuos al iniciador mediante la creación de nuevos elementos de almacenamiento y su copia en la matriz a la que señala *pstgNewResidues*. En el caso de los residuos de almacenamiento estructurado, el reconciliador copia una interfaz [IStorage](/windows/win32/api/objidl/nn-objidl-istorage) y, en el caso de los residuos de almacenamiento plano, copia una interfaz [IStream](/windows/win32/api/objidl/nn-objidl-istream) o IStorage con la \_ marca plana STATEBITS establecida. El reconciliador utiliza IStorage para crear el almacenamiento necesario, mediante [IStorage:: CreateStream (](/windows/win32/api/objidl/nf-objidl-istorage-createstream) para crear almacenamiento plano para un residuo que es una secuencia y [IStorage:: CreateStorage](/windows/win32/api/objidl/nf-objidl-istorage-createstorage) para crear almacenamiento estructurado.
+El conciliador de minúsculas devuelve los restos al iniciador mediante la creación de nuevos elementos de almacenamiento y su copia en la matriz a la que *apunta pstgNewResidues*. En el caso de los depósitos de almacenamiento estructurado, el conciliador copia una interfaz [IStorage](/windows/win32/api/objidl/nn-objidl-istorage) y, en el caso de los residuos de almacenamiento plano, copia una [interfaz IStream](/windows/win32/api/objidl/nn-objidl-istream) o IStorage con la marca FLAT de STATEBITS \_ establecida. El conciliador usa IStorage para crear el almacenamiento necesario, mediante [IStorage::CreateStream](/windows/win32/api/objidl/nf-objidl-istorage-createstream) para crear almacenamiento plano para un residuo que es una secuencia e [IStorage::CreateStorage](/windows/win32/api/objidl/nf-objidl-istorage-createstorage) para crear almacenamiento estructurado.
 
-El iniciador prepara *pstgNewResidues* para que no contenga ningún elemento en la parte no reservada del espacio de nombres [IStorage](/windows/win32/api/objidl/nn-objidl-istorage) . El reconciliador del maletín coloca cada residuo en un elemento cuyo nombre corresponde al orden de su versión inicial. Por ejemplo, el primer residuo está contenido en "1", el segundo en "2", etc. Si el propio objeto reconciliado produce un residuo, se encuentra en el elemento denominado "0".
+El iniciador prepara *pstgNewResidues para* que no contenga elementos en la parte no conservada del espacio [de nombres IStorage.](/windows/win32/api/objidl/nn-objidl-istorage) El conciliador de minúsculas coloca cada residuo en un elemento cuyo nombre corresponde al orden de su versión inicial. Por ejemplo, el primer residuo se encuentra en "1", el segundo en "2", y así sucesivamente. Si el propio objeto conciliado genera un residuo, se encuentra en el elemento denominado "0".
 
-El reconciliador del maletín confirma individualmente cada uno de los elementos recién creados, asegurándose de que el iniciador tenga acceso a la información. Sin embargo, el reconciliador no confirma *pstgNewResidues* . El iniciador es responsable de confirmar esto o de eliminarlo de otro modo.
+El conciliador de mal estado confirma individualmente cada uno de los elementos recién creados, lo que garantiza que el iniciador tenga acceso a la información. Sin embargo, el conciliador no confirma *pstgNewResidues.* El iniciador es responsable de confirmarlo o de desecharlo de otro modo.
 
-## <a name="briefcase-reconciler-reference"></a>Referencia de reconciliador de maletín
+## <a name="briefcase-reconciler-reference"></a>Referencia del conciliador de minúsculas
 
-Esta sección contiene información sobre las interfaces de conciliación. Al controlar los errores, un método solo puede devolver los valores de error que se definen explícitamente como posibles valores devueltos. Además, el método debe establecer todas las variables cuyas direcciones se pasan como parámetros a **null** antes de devolver el error.
+Esta sección contiene información sobre las interfaces de conciliación. Al controlar errores, un método solo puede devolver los valores de error que se definen explícitamente como valores devueltos posibles. Además, el método debe establecer todas las variables cuyas direcciones se pasan como parámetros en **NULL** antes de volver del error.
 
-### <a name="briefcase-reconciler-interfaces-and-methods"></a>Interfaces y métodos del reconciliador de maletín
+### <a name="briefcase-reconciler-interfaces-and-methods"></a>Interfaces y métodos de conciliador de minúsculas
 
--   [**IReconcilableObject**](/windows/win32/api/reconcil/nn-reconcil-ireconcilableobject) 
+-   [**IReconcilableObject**](/windows/win32/api/reconcil/nn-reconcil-ireconcilableobject) 
     -   -   [**IReconcilableObject::GetProgressFeedbackMaxEstimate**](/windows/win32/api/reconcil/nf-reconcil-ireconcilableobject-getprogressfeedbackmaxestimate)
-        -   [**IReconcilableObject:: reconcile**](/windows/win32/api/reconcil/nf-reconcil-ireconcilableobject-reconcile)
+        -   [**IReconcilableObject::Reconcile**](/windows/win32/api/reconcil/nf-reconcil-ireconcilableobject-reconcile)
 
--   [**IReconcileInitiator**](ireconcileinitiator.md) 
+-   [**IReconcileInitiator**](ireconcileinitiator.md) 
     -   -   [**IReconcileInitiator::SetAbortCallback**](/windows/win32/api/reconcil/nf-reconcil-ireconcileinitiator-setabortcallback)
         -   [**IReconcileInitiator::SetProgressFeedback**](/windows/win32/api/reconcil/nf-reconcil-ireconcileinitiator-setprogressfeedback)
 
--   [**INotifyReplica**](/windows/desktop/api/reconcil/nn-reconcil-inotifyreplica) 
+-   [**INotifyReplica**](/windows/desktop/api/reconcil/nn-reconcil-inotifyreplica) 
     -   -   [**INotifyReplica::YouAreAReplica**](/windows/desktop/api/reconcil/nf-reconcil-inotifyreplica-youareareplica)
 
- 
+ 
 
- 
+ 

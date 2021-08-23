@@ -1,7 +1,7 @@
 ---
-description: Elimina el \_ objeto CIM CollectionOfMSEs determinado.
+description: Elimina el objeto \_ CollectionOfMSEs de CIM especificado.
 ms.assetid: 2c79e281-44c3-4a91-98d5-fdf973d149c3
-title: Método DestroyCollection de la clase Msvm_CollectionManagementService
+title: Método DestroyCollection de la Msvm_CollectionManagementService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 69b35bfac3601bd92bc7b1fea967de404b716773
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5d85e566d1d33b17e7873a6da225f3c199bf49425cf081646aba251f87cf7ca6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688722"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119427055"
 ---
-# <a name="destroycollection-method-of-the-msvm_collectionmanagementservice-class"></a>Método DestroyCollection de la \_ clase CollectionManagementService de MSVM
+# <a name="destroycollection-method-of-the-msvm_collectionmanagementservice-class"></a>Método DestroyCollection de la clase \_ CollectionManagementService de Msvm
 
-Elimina el objeto [**CIM \_ CollectionOfMSEs**](cim-collectionofmses.md) determinado.
+Elimina el objeto [**\_ CollectionOfMSEs de CIM**](cim-collectionofmses.md) especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,23 +40,23 @@ uint32 DestroyCollection(
 
 <dl> <dt>
 
-*Colección* \[ de de\]
+*Colección* \[ En\]
 </dt> <dd>
 
-Colección que se va a destruir.
+Colección que se destruirá.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Referencia al trabajo (puede ser null si se ha completado la tarea).
+Referencia al trabajo (puede ser NULL si se completa la tarea).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se realiza correctamente, o 4096 si se inició el trabajo; de lo contrario, devuelve un error.
+Devuelve 0 si se realiza correctamente o 4096 si el trabajo se inició; de lo contrario, devuelve un error.
 
 <dl> <dt>
 
@@ -75,16 +75,16 @@ Devuelve 0 si se realiza correctamente, o 4096 si se inició el trabajo; de lo c
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**El sistema está en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -93,34 +93,34 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está disponible** (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> <dt>
 
-**No se encontró el archivo** (32779)
+**Archivo no encontrado** (32779)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**MSVM \_ CollectionManagementService**](msvm-collectionmanagementservice.md)
+[**CollectionManagementService de Msvm \_**](msvm-collectionmanagementservice.md)
 </dt> </dl>
 
  

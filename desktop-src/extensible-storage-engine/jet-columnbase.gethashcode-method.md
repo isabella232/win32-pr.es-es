@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_COLUMNBASE. GetHashCode (método)'
-title: JET_COLUMNBASE. GetHashCode (método)
+description: 'Más información sobre: JET_COLUMNBASE. Método GetHashCode'
+title: JET_COLUMNBASE. Método GetHashCode
 TOCTitle: 'GetHashCode method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_COLUMNBASE.GetHashCode
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_columnbase.gethashcode(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3f0be7ebc25140e1b92807ece95347b3933784e5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 15a3d65fc3d1742db47a35b2ceb9603fb5a5e6ba8a5b16222111ff94ba842561
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361595"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119360035"
 ---
-# <a name="jet_columnbasegethashcode-method"></a>JET_COLUMNBASE. GetHashCode (método)
+# <a name="jet_columnbasegethashcode-method"></a>JET_COLUMNBASE. Método GetHashCode
 
 Devuelve el código hash de esta instancia.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,15 +56,15 @@ public override int GetHashCode()
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 Código hash de esta instancia.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[JET_COLUMNBASE (clase)](./jet-columnbase-class.md)
+[JET_COLUMNBASE clase](./jet-columnbase-class.md)
 
-[Miembros de JET_COLUMNBASE](./jet-columnbase-members.md)
+[JET_COLUMNBASE miembros](./jet-columnbase-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

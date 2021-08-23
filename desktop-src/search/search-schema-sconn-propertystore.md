@@ -1,21 +1,21 @@
 ---
-description: El <propertyStore> elemento opcional especifica la ubicación de un IPropertyStore basado en XML para almacenar los metadatos abiertos para este conector de búsqueda. Este elemento no tiene atributos y solo un elemento secundario.
+description: El elemento opcional especifica la ubicación de un IPropertyStore basado en XML para <propertyStore> almacenar los metadatos abiertos para este conector de búsqueda. Este elemento no tiene atributos y solo un elemento secundario.
 ms.assetid: 5720c69f-af87-432b-857c-dbd66ba74e80
-title: Elemento propertyStore (esquema del conector de búsqueda)
+title: elemento propertyStore (esquema del conector de búsqueda)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11f8cda6457de764b00519a81a1134e7eecc8638
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0de5a9e801163bd85635b82c1915394f24c39d3dfdafcb64c81fcff0bf84a219
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103808899"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119351855"
 ---
-# <a name="propertystore-element-search-connector-schema"></a>Elemento propertyStore (esquema del conector de búsqueda)
+# <a name="propertystore-element-search-connector-schema"></a>elemento propertyStore (esquema del conector de búsqueda)
 
-El <propertyStore> elemento opcional especifica la ubicación de un IPropertyStore basado en XML para almacenar los metadatos abiertos para este conector de búsqueda. Este elemento no tiene atributos y solo un elemento secundario.
+El elemento opcional especifica la ubicación de un IPropertyStore basado en XML para <propertyStore> almacenar los metadatos abiertos para este conector de búsqueda. Este elemento no tiene atributos y solo un elemento secundario.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```
@@ -41,7 +41,7 @@ El <propertyStore> elemento opcional especifica la ubicación de un IPropertySto
 
 | Elemento primario                                                                                                   | Elementos secundarios                                                                                            |
 |------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| [Elemento searchConnectorDescriptionType (esquema del conector de búsqueda)](search-schema-searchconnectordescription.md) | [Elemento Property de propertyStore (esquema del conector de búsqueda)](search-schema-sconn-propstore-property.md) |
+| [Elemento searchConnectorDescriptionType (esquema del conector de búsqueda)](search-schema-searchconnectordescription.md) | [elemento property de propertyStore (esquema del conector de búsqueda)](search-schema-sconn-propstore-property.md) |
 
 
 
@@ -49,7 +49,7 @@ El <propertyStore> elemento opcional especifica la ubicación de un IPropertySto
 
 ## <a name="example"></a>Ejemplo
 
-En el ejemplo siguiente se muestra un <propertyStore> elemento con dos <property> elementos.
+En el ejemplo siguiente se muestra <propertyStore> un elemento con dos elementos <property> .
 
 
 ```

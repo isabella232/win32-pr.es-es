@@ -1,23 +1,23 @@
 ---
-description: Los contextos de activación son objetos con recuento de referencias. La aplicación debe tener una referencia en un contexto de activación para poder usarlo.
+description: Los contextos de activación son objetos con recuento de referencias. La aplicación debe tener una referencia en un contexto de activación para poder usarla.
 ms.assetid: 2dc8ffc5-0a65-4227-b93a-30c3cf0d3c2d
-title: Recuento de referencias contextos de activación
+title: Contextos de activación de recuento de referencias
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ff00afa0dd3a347e14ff9723c06d54af4520ce4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a62f7806a452dc8b98f824069be0cd584c39f45ad9807a97a11f6f3d7c4929f9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105649194"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119141938"
 ---
-# <a name="reference-counting-activation-contexts"></a>Recuento de referencias contextos de activación
+# <a name="reference-counting-activation-contexts"></a>Contextos de activación de recuento de referencias
 
-Los contextos de activación son objetos con recuento de referencias. La aplicación debe tener una referencia en un contexto de activación para poder usarlo. Las funciones de la API de contexto de activación que toman un contexto de activación pueden realizar su propio recuento de referencias. Por ejemplo, [**ActivateActCtx**](/windows/desktop/api/Winbase/nf-winbase-activateactctx) aumenta y [**DeactivateActCtx**](/windows/desktop/api/Winbase/nf-winbase-deactivateactctx) disminuye el recuento de referencias. Sin embargo, si la aplicación pasa un contexto de activación sin usar estas funciones, la aplicación debe proporcionar su propio método de recuento de referencias.
+Los contextos de activación son objetos con recuento de referencias. La aplicación debe tener una referencia en un contexto de activación para poder usarla. Las funciones de activation Context API que toman un contexto de activación pueden realizar su propio recuento de referencias. Por ejemplo, [**ActivateActCtx**](/windows/desktop/api/Winbase/nf-winbase-activateactctx) aumenta y [**DeactivateActCtx**](/windows/desktop/api/Winbase/nf-winbase-deactivateactctx) reduce el recuento de referencias. Sin embargo, si la aplicación pasa un contexto de activación sin usar estas funciones, la aplicación debe proporcionar su propio método de recuento de referencias.
 
-Cuando una aplicación llama a [**CreateActCtx**](/windows/desktop/api/Winbase/nf-winbase-createactctxa), el identificador devuelto tendrá un recuento de referencias de uno. Una vez que la aplicación finaliza con el contexto de activación, se debe liberar el identificador y reducir el recuento de referencias mediante una llamada a [**ReleaseActCtx**](/windows/desktop/api/Winbase/nf-winbase-releaseactctx). No intente usar [**LocalFree**](/windows/desktop/api/winbase/nf-winbase-localfree), [**HeapFree**](/windows/desktop/api/heapapi/nf-heapapi-heapfree)ni otras funciones de administración de memoria en el identificador del contexto de activación.
+Cuando una aplicación llama a [**CreateActCtx,**](/windows/desktop/api/Winbase/nf-winbase-createactctxa)el identificador devuelto tendrá un recuento de referencias de uno. Una vez que la aplicación finaliza con el contexto de activación, se debe liberar el identificador y reducir el recuento de referencias mediante una llamada [**a ReleaseActCtx**](/windows/desktop/api/Winbase/nf-winbase-releaseactctx). No intente usar [**LocalFree**](/windows/desktop/api/winbase/nf-winbase-localfree), [**HeapFree**](/windows/desktop/api/heapapi/nf-heapapi-heapfree)ni ninguna otra función de administración de memoria en el identificador de contexto de activación.
 
-En el ejemplo siguiente se muestra un método para controlar el recuento de referencias a lo largo de la duración de un contexto de activación. La función FUNC crea un contexto de activación, que luego pasa al destino del objeto, que incrementa el recuento de referencias a 2. De hecho, el vuelve a liberar su referencia en el contexto de activación y reduce el recuento de referencias de nuevo a 1. A continuación, el destino posee su propia referencia cuando se llama de nuevo a SetActCtx o cuando se destruye el objeto.
+En el ejemplo siguiente se muestra un método para controlar el recuento de referencias a lo largo de la duración de un contexto de activación. La función Funct crea un contexto de activación, que luego pasa al objeto Target, que incrementa el recuento de referencias a 2. A continuación, Funct libera su referencia en el contexto de activación y reduce el recuento de referencias a 1. Después, el destino posee la liberación de su propia referencia cuando se vuelve a llamar a SetActCtx o cuando se destruye el objeto.
 
 
 ```C++

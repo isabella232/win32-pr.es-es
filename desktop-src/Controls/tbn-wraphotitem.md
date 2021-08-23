@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de TBN_WRAPHOTITEM (commctrl. h)
-description: Notifica a una aplicación con dos o más barras de herramientas que el elemento activo va a cambiar. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: TBN_WRAPHOTITEM de notificación (Commctrl.h)
+description: Notifica a una aplicación con dos o más barras de herramientas que el elemento de acceso rápido está a punto de cambiar. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 169309ec-68dd-4cbb-8963-f842cf75b4fc
 keywords:
-- TBN_WRAPHOTITEM controles de código de notificación de Windows
+- TBN_WRAPHOTITEM código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58eb513780da464ead40f8a4fb1264f6268d4370
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 33c6bd1f2e750a2fd71dc053d31ca452fa581891037db73d356e5405476b28de
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119293374"
 ---
-# <a name="tbn_wraphotitem-notification-code"></a>Código de notificación de WRAPHOTITEM de TBN \_
+# <a name="tbn_wraphotitem-notification-code"></a>Código de notificación \_ WRAPHOTITEM de TBN
 
-Notifica a una aplicación con dos o más barras de herramientas que el elemento activo va a cambiar. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Notifica a una aplicación con dos o más barras de herramientas que el elemento de acceso rápido está a punto de cambiar. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,17 +41,17 @@ TBN_WRAPHOTITEM
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura que contiene el elemento activo anterior (**iStart**) y si el nuevo elemento activo está delante de él (**iDir** =-1) o después de él (**iDir** = 1), así como un motivo por el que el elemento activo está cambiando.
+Puntero a una estructura que contiene el elemento de acceso rápido antiguo (**iStart**) y si el nuevo elemento de acceso rápido está delante de él (**iDir** = -1) o después de él (**iDir** = 1), así como un motivo por el que cambia el elemento de acceso rápido.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-**True** si la aplicación controla el propio cambio de elemento activo. en caso contrario, **false**.
+**TRUE** si la aplicación está controlando el propio cambio de elemento de acceso. en caso **contrario, FALSE**.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La estructura **NMTBWRAPHOTITEM** debe definirse mediante la aplicación de la siguiente manera:
+La aplicación debe definir la estructura **NMTBWRAPHOTITEM** de la siguiente manera:
 
 ``` syntax
 typedef struct tagNMTBWRAPHOTITEM {
@@ -66,11 +66,11 @@ typedef struct tagNMTBWRAPHOTITEM {
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

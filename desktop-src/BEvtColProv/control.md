@@ -14,12 +14,12 @@ api_type:
 - DllExport
 api_location:
 - BEvtCol.exe
-ms.openlocfilehash: 2681af7425fd5cacf88375e11e4658e5d4b1a2c3
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5eeccd31f3d9ab1f0b0ec05ebf80ea9f880a73fed21b21fe67fe63257af28871
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104538337"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119589025"
 ---
 # <a name="control-class"></a>Control (clase)
 
@@ -38,32 +38,32 @@ class Control
 
 ## <a name="members"></a>Miembros
 
-La clase de **control** tiene estos tipos de miembros:
+La **clase Control** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La clase **control** tiene estos métodos.
+La **clase Control** tiene estos métodos.
 
 
 
 | Método                                                         | Descripción                                                                                                                                                                                                                                                                                                                                                               |
 |:---------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Punto de control**](control-checkpoint.md)                       | Si la configuración actual es el resultado de la operación de deshacer/rehacer/restaurar, la marca como si se hubiera establecido explícitamente, de modo que el historial conservará la hora en que se estableció y se creará un archivo de copia de seguridad en el siguiente cambio de configuración. Si la configuración actual ya estaba establecida explícitamente, no tiene ningún efecto. Devuelve 1 si se realiza correctamente, 0 en caso de error.<br/> |
-| [**DumpDiagnostics**](control-dumpdiagnostics.md)             | Vuelca la información de diagnóstico en el registro.<br/>                                                                                                                                                                                                                                                                                                                  |
+| [**Punto de control**](control-checkpoint.md)                       | Si la configuración actual es el resultado de deshacer, rehacer o restaurar, la marca como si se hubiera establecido explícitamente, de modo que el historial conservará la hora en que se estableció y se creará un archivo de copia de seguridad para él en el siguiente cambio de configuración. Si la configuración actual ya se estableció explícitamente, no tiene ningún efecto. Devuelve 1 si se ejecuta correctamente, 0 en caso de error.<br/> |
+| [**DumpDiagnostics**](control-dumpdiagnostics.md)             | Vuelque la información de diagnóstico en el registro.<br/>                                                                                                                                                                                                                                                                                                                  |
 | [**FastShutdown**](control-fastshutdown.md)                   | Detenga el recopilador rápidamente, descartando todos los datos en cola.<br/>                                                                                                                                                                                                                                                                                                    |
 | [**Vaciar**](control-flush.md)                                 | Vacíe los búferes del reenviador.<br/>                                                                                                                                                                                                                                                                                                                                   |
 | [**GetConfiguration**](control-getconfiguration.md)           | Lea la configuración activa del recopilador.<br/>                                                                                                                                                                                                                                                                                                                |
-| [**IsConfigurationEqual**](control-isconfigurationequal.md)   | Compare el argumento con la configuración activa del recopilador. Devuelve 1 si coinciden; 0 si no lo hacen.<br/>                                                                                                                                                                                                                                                 |
+| [**IsConfigurationEqual**](control-isconfigurationequal.md)   | Compare el argumento con la configuración activa del recopilador. Devuelve 1 si coinciden, 0 si no lo hacen.<br/>                                                                                                                                                                                                                                                 |
 | [**ListBackups**](control-listbackups.md)                     | Devuelve la lista de los archivos de configuración de copia de seguridad guardados que se pueden restaurar.<br/>                                                                                                                                                                                                                                                                                  |
-| [**Rehacer**](control-redo.md)                                   | Restablezca la configuración activa del recopilador del archivo de copia de seguridad posterior (determinado por el avance desde la marca de tiempo original actual). Si se ha deshecho la configuración, significa que se rehace el cambio deshecho. Devuelve 1 si se realiza correctamente, 0 en caso de error.<br/>                                                                                                    |
-| [**RestoreFile**](control-restorefile.md)                     | Restaure la configuración activa del recopilador a partir de un archivo de copia de seguridad. Devuelve 1 si se realiza correctamente, 0 en caso de error.<br/>                                                                                                                                                                                                                                                        |
-| [**RestoreFromTime**](control-restorefromtime.md)             | Restaure la configuración activa del recopilador a partir de un archivo de copia de seguridad, seleccionado por una marca de tiempo. Devuelve 1 si se realiza correctamente, 0 en caso de error.<br/>                                                                                                                                                                                                                               |
-| [**SetConfiguration**](control-setconfiguration.md)           | Establezca la nueva configuración activa del recopilador. Devuelve 1 si se realiza correctamente, 0 en caso de error.<br/>                                                                                                                                                                                                                                                                           |
-| [**Apagado**](control-shutdown.md)                           | Detenga el recopilador. Si el recopilador se ejecuta como un servicio, el mejor enfoque es detener el servicio.<br/>                                                                                                                                                                                                                                                     |
-| [**Deshacer**](control-undo.md)                                   | Restaure la configuración activa del recopilador a partir del archivo de copia de seguridad anterior (determinado mediante el regreso de la marca de tiempo original actual). Si se ha establecido la configuración, significa deshacer ese cambio. Las llamadas consecutivas desharán a las configuraciones anteriores y anteriores. Devuelve 1 si se realiza correctamente, 0 en caso de error.<br/>                           |
-| [**ValidateConfiguration**](control-validateconfiguration.md) | Validar un texto de configuración para comprobar su exactitud sin establecerlo activo. Devuelve 1 si se realiza correctamente, 0 en caso de error.<br/>                                                                                                                                                                                                                                                     |
+| [**Rehacer**](control-redo.md)                                   | Restablezca la configuración activa del recopilador desde el archivo de copia de seguridad posterior (determinado a partir de la marca de tiempo original actual). Si la configuración se ha deshace, significa volver a hacer el cambio deshacer. Devuelve 1 si se ejecuta correctamente, 0 en caso de error.<br/>                                                                                                    |
+| [**RestoreFile**](control-restorefile.md)                     | Restaure la configuración activa del recopilador a partir de un archivo de copia de seguridad. Devuelve 1 si se ejecuta correctamente, 0 en caso de error.<br/>                                                                                                                                                                                                                                                        |
+| [**RestoreFromTime**](control-restorefromtime.md)             | Restaure la configuración activa del recopilador a partir de un archivo de copia de seguridad, seleccionado por una marca de tiempo. Devuelve 1 si se ejecuta correctamente, 0 en caso de error.<br/>                                                                                                                                                                                                                               |
+| [**SetConfiguration**](control-setconfiguration.md)           | Establezca la nueva configuración activa del recopilador. Devuelve 1 si se ejecuta correctamente, 0 en caso de error.<br/>                                                                                                                                                                                                                                                                           |
+| [**Apagado**](control-shutdown.md)                           | Detenga el recopilador. Si el recopilador se ejecuta como un servicio, detener el servicio es el mejor enfoque.<br/>                                                                                                                                                                                                                                                     |
+| [**Deshacer**](control-undo.md)                                   | Restaure la configuración activa del recopilador a partir del archivo de copia de seguridad anterior (determinado por volver de la marca de tiempo original actual). Si la configuración se acaba de establecer, significa deshacer ese cambio. Las llamadas consecutivas se deshacerán en las configuraciones anteriores y anteriores. Devuelve 1 si se ejecuta correctamente, 0 en caso de error.<br/>                           |
+| [**ValidateConfiguration**](control-validateconfiguration.md) | Valide la corrección de un texto de configuración sin establecerlo en activo. Devuelve 1 si se ejecuta correctamente, 0 en caso de error.<br/>                                                                                                                                                                                                                                                     |
 
 
 
@@ -75,10 +75,10 @@ La clase **control** tiene estos métodos.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                          |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                          |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                       |
-| Espacio de nombres<br/>                | Raíz de \\ Microsoft \\ Windows \\ BootEventCollector<br/>                                              |
-| MOF<br/>                      | <dl> <dt>BootEventCollectorWMI. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Raíz \\ de Microsoft Windows \\ \\ BootEventCollector<br/>                                              |
+| MOF<br/>                      | <dl> <dt>BootEventCollectorWMI.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>BEvtCol.exe</dt> </dl>               |
 
 

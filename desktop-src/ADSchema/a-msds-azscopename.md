@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-AZ-Scope-Name
+title: Atributo ms-DS-Az-Scope-Name
 description: Cadena que identifica de forma única un objeto de ámbito.
 ms.assetid: f5a15040-c4d0-4eab-bf3f-34585768c5a3
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-AZ-Scope-Name
-- Esquema de AD de atributo msDS-AzScopeName
+- Esquema de AD del atributo ms-DS-Az-Scope-Name
+- Esquema de AD del atributo msDS-AzScopeName
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 80b59e2989a5054253159d9f8991ef25c72688b2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b70338100fe55d8aeb0dc7bb8c5d380995e0914692fe4037c0a20c7ec9305136
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104536286"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119296775"
 ---
-# <a name="ms-ds-az-scope-name-attribute"></a>atributo MS-DS-AZ-Scope-Name
+# <a name="ms-ds-az-scope-name-attribute"></a>Atributo ms-DS-Az-Scope-Name
 
 Cadena que identifica de forma única un objeto de ámbito.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-DS-AZ-Scope-Name                         |
-| Nombre para mostrar de LDAP | msDS-AzScopeName                            |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | Administrador de AzRoles                               |
+| CN                | ms-DS-Az-Scope-Name                         |
+| Ldap-Display-Name | msDS-AzScopeName                            |
+| Size              | \-                                          |
+| Privilegio actualizar  | Administrador de AzRoles                               |
 | Frecuencia de actualización  | Durante la inicialización o el cambio de directiva.     |
 | Attribute-Id      | 1.2.840.113556.1.4.1799                     |
-| System-ID-GUID    | 515a6b06-2617-4173-8099-d5605df043c6        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 515a6b06-2617-4173-8099-d5605df043c6        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -54,18 +54,18 @@ Cadena que identifica de forma única un objeto de ámbito.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | True                                                |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | True                                                |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | 0                                                   |
 | Range-Upper            | 65536                                               |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**MS-DS-AZ-Scope**](c-msds-azscope.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Scope**](c-msds-azscope.md)<br/> |
 
 
 
@@ -75,18 +75,18 @@ Cadena que identifica de forma única un objeto de ámbito.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | True                                                |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Verdadero                                                |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | 0                                                   |
 | Range-Upper            | 65536                                               |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**MS-DS-AZ-Scope**](c-msds-azscope.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Scope**](c-msds-azscope.md)<br/> |
 
 
 
@@ -94,20 +94,20 @@ Cadena que identifica de forma única un objeto de ámbito.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | True                                                |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | True                                                |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | 0                                                   |
 | Range-Upper            | 65536                                               |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**MS-DS-AZ-Scope**](c-msds-azscope.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Scope**](c-msds-azscope.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ Cadena que identifica de forma única un objeto de ámbito.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | True                                                |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | True                                                |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | 0                                                   |
 | Range-Upper            | 65536                                               |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**MS-DS-AZ-Scope**](c-msds-azscope.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Scope**](c-msds-azscope.md)<br/> |
 
 
 
@@ -138,18 +138,18 @@ Cadena que identifica de forma única un objeto de ámbito.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | True                                                |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | True                                                |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | 0                                                   |
 | Range-Upper            | 65536                                               |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**MS-DS-AZ-Scope**](c-msds-azscope.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Scope**](c-msds-azscope.md)<br/> |
 
 
 

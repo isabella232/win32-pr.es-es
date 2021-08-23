@@ -1,7 +1,7 @@
 ---
-description: El método InitialThreadProc llama al procedimiento de subproceso principal.
+description: El método InitialThreadProc llama al procedimiento del subproceso principal.
 ms.assetid: 1546c214-7ea9-4484-974b-dbd4b2b3e296
-title: CAMThread.Inimétodo tialThreadProc (Wxutil. h)
+title: CAMThread.Inimétodo tialThreadProc (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: cd7fd0aa12d0659776db7e39fb223095762fc209
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d12e8d41ac0c6e1fd2af06c21accbb5c62e4eb25f2fc3f6c36988101a9b64d89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119540305"
 ---
 # <a name="camthreadinitialthreadproc-method"></a>CAMThread.Inimétodo tialThreadProc
 
-El `InitialThreadProc` método llama al procedimiento de subproceso principal.
+El `InitialThreadProc` método llama al procedimiento del subproceso principal.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,22 +42,22 @@ DWORD InitialThreadProc(
 
 <dl> <dt>
 
-*FV* 
+*Pv* 
 </dt> <dd>
 
-`this` puntero.
+`this` Puntero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el **DWORD** devuelto por [**CAMThread:: ThreadProc**](camthread-threadproc.md). La clase derivada define este valor.
+Devuelve el **DWORD** devuelto por [**CAMThread::ThreadProc**](camthread-threadproc.md). La clase derivada define este valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**CAMThread:: Create**](camthread-create.md) usa este método para el procedimiento de subproceso al crear el subproceso. Utiliza el `this` puntero como argumento de subproceso.
+El [**método CAMThread::Create**](camthread-create.md) usa este método para el procedimiento de subproceso cuando crea el subproceso. Usa el puntero `this` como argumento del subproceso.
 
-Este método llama al método [**CAMThread:: CoInitializeHelper**](camthread-coinitializehelper.md) y después a ThreadProc.
+Este método llama al [**método CAMThread::CoInitializeHelper**](camthread-coinitializehelper.md) y, después, a ThreadProc.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ Este método llama al método [**CAMThread:: CoInitializeHelper**](camthread-coi
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxutil. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxutil.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -74,7 +74,7 @@ Este método llama al método [**CAMThread:: CoInitializeHelper**](camthread-coi
 
 <dl> <dt>
 
-[**Clase CAMThread**](camthread.md)
+[**CLASE CAMThread**](camthread.md)
 </dt> </dl>
 
  

@@ -1,37 +1,37 @@
 ---
-description: En esta sección se describe cómo planear, desarrollar y probar páginas de referencia de eventos (O ERP e) y cómo implementarlas en un experto o en un monitor. Para obtener información sobre O ERP e y cómo usarlos con Monitor de red, consulte la página de referencia de eventos.
+description: En esta sección se describe cómo planear, desarrollar y probar páginas de referencia de eventos (ERP) y cómo implementarlas en un experto o monitor. Para obtener información sobre los ERP y cómo usarlos con Monitor de red, vea Página de referencia de eventos.
 ms.assetid: 78d6e8cf-785e-4d5f-a78d-9ef9da9bc3e0
-title: Creación de páginas de referencia de eventos Expert y monitor
+title: Crear páginas de referencia de eventos expertos y de supervisión
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 33c84610c7a1088e994fc852c64a7893f73f7909
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5826ab0aaa71461f6b4e56b9330e00c5af6aae26952d84af88c380da6dfe41fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105652659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144238"
 ---
-# <a name="creating-expert-and-monitor-event-reference-pages"></a>Creación de páginas de referencia de eventos Expert y monitor
+# <a name="creating-expert-and-monitor-event-reference-pages"></a>Crear páginas de referencia de eventos expertos y de supervisión
 
-En esta sección se describe cómo planear, desarrollar y probar páginas de referencia de eventos (O ERP e) y cómo implementarlas en un experto o en un monitor. Para obtener información sobre O ERP e y cómo usarlos con Monitor de red, consulte la [Página de referencia de eventos](event-reference-page.md).
+En esta sección se describe cómo planear, desarrollar y probar páginas de referencia de eventos (ERP) y cómo implementarlas en un experto o monitor. Para obtener información sobre los ERP y cómo usarlos con Monitor de red, vea [Página de referencia de eventos](event-reference-page.md).
 
-Para desarrollar un nuevo ERP, el primer paso consiste en determinar los eventos que requieren O ERP e individuales para el [experto](experts.md) o el [monitor](monitors.md)personalizado. Debe crear O ERP e independientes para cada evento que desee mostrar en el Visor de eventos de Monitor de red. Por ejemplo, supongamos que:
+Para desarrollar un nuevo ERP, el primer paso consiste en [](experts.md) determinar los eventos que requieren ERP individuales para el experto o [monitor personalizado.](monitors.md) Debe crear ERP independientes para cada evento que desee mostrar en el Monitor de red Visor de eventos. Por ejemplo, supongamos que:
 
--   Desarrolla un monitor denominado monitor de juegos y supervisor de existencias.
+-   Desarrollará un monitor denominado Game Monitor y Stock Watcher.
 -   El monitor se encuentra en un archivo denominado Gamemon.dll.
--   El monitor genera dos eventos, juegos en ejecución y mis acciones de Internet.
--   Planea desarrollar dos O ERP e, Gamemon1.htm y Gamemon2.htm.
+-   El monitor genera dos eventos, Game Running y My Internet Stock Soars.
+-   Tiene previsto desarrollar dos ERP, Gamemon1.htm y Gamemon2.htm.
 
 > [!Note]  
-> No es necesario tener una correspondencia uno a uno de O ERP e para supervisar o realizar eventos expertos.
+> No es necesario tener una correspondencia uno a uno de los ERP para supervisar o eventos expertos.
 
  
 
-Una vez que haya establecido una lista de O ERP e únicos, siga estos pasos para crear cada ERP.
+Después de haber establecido una lista de ERP únicos, siga estos pasos para crear cada ERP.
 
 -   [Escriba el documento de origen HTML](writing-an-event-reference-page.md).
--   Guarde el archivo de código fuente HTML [y asígnele un nombre](naming-an-event-reference-page.md) como archivo. htm.
--   [Pruebe el ERP](testing-an-event-reference-page.md) con el experto o el monitor completado.
+-   [Guarde y asigne un](naming-an-event-reference-page.md) nombre al archivo de código fuente HTML .htm archivo.
+-   [Pruebe erp con](testing-an-event-reference-page.md) el experto o monitor completado.
 
  
 

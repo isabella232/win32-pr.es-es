@@ -1,9 +1,9 @@
 ---
-title: Task (SystemPropertiesType), elemento
-description: Tarea definida en el evento.
+title: Elemento Task (SystemPropertiesType)
+description: Tarea definida en el evento .
 ms.assetid: fc42fb0e-715a-48d4-a85f-ea412b53ed9a
 keywords:
-- Elemento de tarea EventLog
+- Elemento Task EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f639849a9dc8a80f614436c630e43bd093dc47f7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 823f6ad270debfa03a998cc0a1741d547629b48511e71a7301f952570351e68c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492028"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119470935"
 ---
-# <a name="task-systempropertiestype-element"></a>Task (SystemPropertiesType), elemento
+# <a name="task-systempropertiestype-element"></a>Elemento Task (SystemPropertiesType)
 
-Tarea definida en el evento.
+Tarea definida en el evento .
 
 ``` syntax
 <xs:element name="Task"
@@ -30,7 +30,7 @@ Tarea definida en el evento.
  />
 ```
 
-El elemento **Task** se define mediante el tipo complejo [**SystemPropertiesType**](eventschema-systempropertiestype-complextype.md) .
+El **tipo complejo SystemPropertiesType** define el elemento [**Task.**](eventschema-systempropertiestype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento **Task** se define mediante el tipo complejo [**SystemPropertiesType
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ El elemento **Task** se define mediante el tipo complejo [**SystemPropertiesType
 **Elemento primario**
 </dt> <dt>
 
-[**Sistema (EventType)**](eventschema-system-eventtype-element.md)
+[**System (EventType)**](eventschema-system-eventtype-element.md)
 </dt> </dl>
 
  

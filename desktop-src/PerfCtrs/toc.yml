@@ -1,24 +1,24 @@
 - name: Contadores de rendimiento
   href: performance-counters-portal.md
   items:
-    - name: Novedades
+    - name: What's New
       href: performance-counters-what-s-new.md
     - name: Acerca de los contadores de rendimiento
       href: about-performance-counters.md
       items:
         - name: Compatibilidad con 64 bits
           href: 64-bit-support.md
-        - name: Compatibilidad con acceso de usuario limitado
+        - name: Compatibilidad limitada con el acceso de usuario
           href: limited-user-access-support.md
-        - name: Acceso a datos de contador remotos
+        - name: Acceso a datos de contadores remotos
           href: accessing-remote-counter-data.md
     - name: Uso de contadores de rendimiento
       href: using-performance-counters.md
       items:
-        - name: Consumir datos de contador
+        - name: Consumo de datos de contador
           href: consuming-counter-data.md
           items:
-            - name: Usar las funciones de PDH para consumir datos de contador
+            - name: Uso de las funciones PDH para consumir datos de contador
               href: using-the-pdh-functions-to-consume-counter-data.md
               items:
                 - name: Crear una consulta
@@ -26,7 +26,7 @@
                   items:
                     - name: Specifying a Counter Path (Especificar una ruta de acceso de contador)
                       href: specifying-a-counter-path.md
-                    - name: Obtener elementos de ruta de acceso de contador de una ruta de contador
+                    - name: Obtener elementos de ruta de acceso de contador a partir de una ruta de acceso de contador
                       href: obtaining-counter-path-elements-from-a-counter-path.md
                     - name: Examinar contadores
                       href: browsing-counters.md
@@ -41,11 +41,11 @@
                   items:
                     - name: Establecer un intervalo de tiempo para una consulta
                       href: setting-a-time-range-for-a-query.md
-                    - name: Obtención del tamaño de un archivo de registro
+                    - name: Obtener el tamaño de un archivo de registro
                       href: getting-the-size-of-a-log-file.md
-                - name: Comprobar los valores devueltos de la interfaz PDH
+                - name: Comprobación de valores devueltos de la interfaz PDH
                   href: checking-pdh-interface-return-values.md
-                - name: Obtención de información de contador
+                - name: Obtener información de contador
                   href: getting-counter-information.md
                 - name: Ejemplos de PDH
                   href: examples.md
@@ -58,20 +58,20 @@
                       href: writing-performance-data-to-a-log-file.md
                     - name: Leer datos de rendimiento de un archivo de registro
                       href: reading-performance-data-from-a-log-file.md
-                    - name: Convertir datos de un archivo de registro de formato binario en un archivo de registro de formato CSV
+                    - name: Convertir datos de un archivo de registro de formato binario en un archivo de registro con formato CSV
                       href: transferring-data-from-a-perfmon-format-log-file-to-a-csv-format-log-file.md
-            - name: Usar las funciones del registro para consumir datos de contador
+            - name: Uso de las funciones del Registro para consumir datos de contador
               href: using-the-registry-functions-to-consume-counter-data.md
               items:
                 - name: Recuperar nombres de contadores y texto de ayuda
                   href: retrieving-counter-names-and-help-text.md
-                - name: 'Mostrar los nombres de objeto, instancia y contador'
+                - name: 'Mostrar nombres de objeto, instancia y contador'
                   href: displaying-object-instance-and-counter-names.md
-                - name: Recuperar datos de contadores
+                - name: Recuperación de datos de contador
                   href: retrieving-counter-data.md
                 - name: Cálculo de valores de contadores
                   href: calculating-counter-values.md
-                - name: Administrar nombres de instancia duplicados
+                - name: Control de nombres de instancia duplicados
                   href: handling-duplicate-instance-names.md
                 - name: Formato de datos de rendimiento
                   href: performance-data-format.md
@@ -80,9 +80,9 @@
         - name: Proporcionar datos de contador
           href: providing-counter-data.md
           items:
-            - name: 'Proporcionar datos de contadores con la versión 2,0'
+            - name: Proporcionar datos de contador mediante la versión 2.0
               href: providing-counter-data-using-version-2-0.md
-            - name: Proporcionar datos de contadores mediante un archivo DLL de rendimiento
+            - name: Proporcionar datos de contador mediante un archivo DLL de rendimiento
               href: providing-counter-data-using-a-performance-dll.md
               items:
                 - name: Agregar contadores de rendimiento
@@ -92,14 +92,14 @@
                       href: object-and-counter-design.md
                     - name: Adición de nombres y descripciones de contadores al registro
                       href: adding-counter-names-and-descriptions-to-the-registry.md
-                    - name: Crear la clave de rendimiento de la aplicación
+                    - name: Creación de la clave de rendimiento de la aplicación
                       href: creating-the-applications-performance-key.md
-                    - name: Crear otras entradas del registro
+                    - name: Crear otras entradas del Registro
                       href: creating-other-registry-entries.md
                 - name: Eliminar contadores de rendimiento
                   href: deleting-performance-counters.md
                   items:
-                    - name: Quitar nombres y descripciones de contadores del registro
+                    - name: Quitar nombres y descripciones de contadores del Registro
                       href: removing-counter-names-and-descriptions-from-the-registry.md
                 - name: Crear un archivo DLL de extensión de rendimiento
                   href: creating-a-performance-extension-dll.md
@@ -112,7 +112,7 @@
                       href: communicating-with-your-application.md
                     - name: Control de errores en el archivo DLL
                       href: error-handling-in-the-dll.md
-                    - name: Restringir el acceso a los archivos dll de extensión de rendimiento
+                    - name: Restringir el acceso a los archivos DLL de la extensión de rendimiento
                       href: restricting-access-to-performance-extension--dlls.md
                     - name: Ejemplos de DLL de rendimiento
                       href: performance-dll-samples.md
@@ -136,7 +136,7 @@
               href: pdhvbgetlogfilesize.md
             - name: PdhVbGetOneCounterPath
               href: pdhvbgetonecounterpath.md
-            - name: PdhVbIsGoodStatus
+            - name: PdhVbIsStatus
               href: pdhvbisgoodstatus.md
             - name: PdhVbOpenLog
               href: pdhvbopenlog.md
@@ -150,51 +150,51 @@
             - name: Elementos de contadores de rendimiento
               href: performance-counters-elements.md
               items:
-                - name: Elemento Counter (counterSet)
+                - name: counter (counterSet) (Elemento)
                   href: performance-counters-counter--counterset--element.md
-                - name: Atributo contraattribute (atributo)
+                - name: elemento counterAttribute (counterAttributes)
                   href: performance-counters-counterattribute--counterattributes--element.md
-                - name: Atributo contraattributes (Counter)
+                - name: elemento counterAttributes (counter)
                   href: performance-counters-counterattributes--counter--element.md
-                - name: counters (elemento)
+                - name: counters (Elemento)
                   href: performance-counters-counters-element.md
-                - name: counterSet (proveedor) (elemento)
+                - name: counterSet (provider) (Elemento)
                   href: performance-counters-counterset--provider--element.md
-                - name: Elemento Provider (counters)
+                - name: provider (counters) (Elemento)
                   href: performance-counters-provider--counters--element.md
-                - name: struct (Structs) (elemento)
+                - name: Elemento struct (structs)
                   href: performance-counters-struct--structs--element.md
-                - name: Elemento Structs (counterSet)
+                - name: Elemento structs (counterSet)
                   href: performance-counters-structs--counterset--element.md
             - name: Tipos simples de contadores de rendimiento
               href: performance-counters-simple-types.md
               items:
-                - name: Tipo simple de CSymbolType
+                - name: Tipo simple CSymbolType
                   href: performance-counters-csymboltype-simple-type.md
-                - name: Tipo simple de GUIDType
+                - name: Tipo simple GUIDType
                   href: performance-counters-guidtype-simple-type.md
-                - name: Tipo simple de HexInt32Type
+                - name: Tipo simple HexInt32Type
                   href: performance-counters-hexint32type-simple-type.md
-                - name: Tipo simple de UInt32Type
+                - name: Tipo simple UInt32Type
                   href: performance-counters-uint32type-simple-type.md
             - name: Tipos complejos de contadores de rendimiento
               href: performance-counters-complex-types.md
               items:
-                - name: Counter (tipo complejo)
+                - name: counter Complex Type
                   href: performance-counters-counter-complex-type.md
-                - name: Tipo complejo de contraatributo
+                - name: tipo complejo counterAttribute
                   href: performance-counters-counterattribute-complex-type.md
-                - name: Atributo de tipo complejo
+                - name: tipo complejo counterAttributes
                   href: performance-counters-counterattributes-complex-type.md
-                - name: Tipo complejo de contadores
+                - name: counters Complex Type (Tipo complejo de contadores)
                   href: performance-counters-counters-complex-type.md
-                - name: Tipo complejo de counterSet
+                - name: counterSet Complex Type
                   href: performance-counters-counterset-complex-type.md
-                - name: Tipo complejo de proveedor
+                - name: provider Complex Type
                   href: performance-counters-provider-complex-type.md
-                - name: struct (tipo complejo)
+                - name: Tipo complejo de struct
                   href: performance-counters-struct-complex-type.md
-                - name: Structs (tipo complejo)
+                - name: structs Complex Type
                   href: performance-counters-structs-complex-type.md
         - name: Enumeraciones de contadores de rendimiento
           href: performance-counter-enumerations.md
@@ -281,12 +281,12 @@
           href: performance-counters-types.md
         - name: Códigos de error de la aplicación auxiliar de datos de rendimiento
           href: pdh-error-codes.md
-        - name: Esquema del archivo de registro de SQL
+        - name: SQL Esquema de archivo de registro
           href: sql-log-file-schema.md
           items:
-            - name: Datos
+            - name: CounterData
               href: counterdata.md
-            - name: Detalles
+            - name: CounterDetails
               href: counterdetails.md
             - name: DisplayToID
               href: displaytoid.md
@@ -303,9 +303,9 @@
               href: /windows/desktop/api/winperf/nc-winperf-pm_collect_proc
             - name: PERFLIBREQUEST
               href: /windows/desktop/api/Perflib/nc-perflib-perflibrequest
-            - name: Limpieza
+            - name: CounterCleanup
               href: countercleanup.md
-            - name: Contrainicializar
+            - name: CounterInitialize
               href: counterinitialize.md
             - name: CounterPathCallBack
               href: /windows/desktop/api/Pdh/nc-pdh-counterpathcallback

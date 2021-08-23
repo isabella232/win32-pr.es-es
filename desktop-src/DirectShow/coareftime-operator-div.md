@@ -1,7 +1,7 @@
 ---
-description: Este operador divide una hora de referencia por un valor.
+description: Este operador divide un tiempo de referencia por un valor.
 ms.assetid: fb2e2a4b-dc0b-42e3-86c7-8aa2c60daedc
-title: COARefTime. Operator/Method (Ctlutil. h)
+title: Método COARefTime.operator/ (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6e1e4d7b7adb881ac11988a2d2c46946ff6cddcc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d6ff5f23691a3c4c44fdb9b93006834913648391ed473cf84906dff3eb8afb21
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671228"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119566025"
 ---
-# <a name="coareftimeoperator-method"></a>COARefTime. Operator/(método)
+# <a name="coareftimeoperator-method"></a>Método COARefTime.operator/
 
-Este operador divide una hora de referencia por un valor.
+Este operador divide un tiempo de referencia por un valor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,7 +51,7 @@ Divisor.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un nuevo objeto **COARefTime** igual al cociente de este objeto y **l**.
+Devuelve un nuevo **objeto COARefTime** igual al cociente de este objeto y **l**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Devuelve un nuevo objeto **COARefTime** igual al cociente de este objeto y **l**
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Devuelve un nuevo objeto **COARefTime** igual al cociente de este objeto y **l**
 
 <dl> <dt>
 
-[**Clase COARefTime**](coareftime.md)
+[**COARefTime (clase)**](coareftime.md)
 </dt> </dl>
 
  

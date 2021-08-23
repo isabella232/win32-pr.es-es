@@ -1,23 +1,23 @@
 ---
 title: Redirector del sistema de archivos
-description: El directorio System32 windir \\ está reservado para aplicaciones de 64 bits en Windows de 64 bits.
+description: El directorio System32 windir está reservado para aplicaciones de 64 bits en aplicaciones de \\ 64 Windows.
 ms.assetid: b4d36fe8-8bbb-469b-8ad1-650d559a4c75
 keywords:
-- Programación de Windows de redirector de sistema de archivos de 64 bits
-- Guía de programación de Windows de 64 bits programación de Windows de 64 bits, redirector del sistema de archivos
-- WOW64 Programación de Windows de 64 bits, redirector del sistema de archivos
+- sistema de archivos redirector de 64 bits Windows programación
+- Guía de programación de 64 Windows de programación de 64 Windows programación, redirector del sistema de archivos
+- WOW64 64 bits de programación Windows , redirector del sistema de archivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 568ddde85d18f90b951051251774c3509081dfdd
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 318a04d85309ca6c97c87ae2d6a580a85f1a4ee224e162a008034e731a1ff557
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443636"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119569975"
 ---
 # <a name="file-system-redirector"></a>Redirector del sistema de archivos
 
-El directorio %windir% System32 está reservado para aplicaciones de \\ 64 bits en Windows de 64 bits. La mayoría de los nombres de archivo DLL no se cambiaron cuando se crearon versiones de 64 bits de los archivos DLL, por lo que las versiones de 32 bits de los archivos DLL se almacenan en un directorio diferente. WOW64 oculta esta diferencia mediante un *redirector del sistema de archivos*.
+El directorio %windir% System32 está reservado para aplicaciones de 64 bits en aplicaciones de \\ 64 Windows. La mayoría de los nombres de archivo DLL no se cambiaron cuando se crearon versiones de 64 bits de los archivos DLL, por lo que las versiones de 32 bits de los archivos DLL se almacenan en un directorio diferente. WOW64 oculta esta diferencia mediante un *redirector del sistema de archivos*.
 
 En la mayoría de los casos, cada vez que una aplicación de 32 bits intenta acceder a %windir% \\ System32, %windir% \\ lastgood \\ system32 o %windir%regedit.exe, el acceso se redirige a una ruta de acceso específica de la \\ arquitectura.
 

@@ -1,15 +1,15 @@
 ---
-description: Genera una declaración hacia delante para la constante C para los metadatos del fabricante especificados en el elemento thisModelMetadata.
+description: Genera una declaración de reenvío para la constante de C para los metadatos del fabricante especificados en el elemento thisModelMetadata.
 ms.assetid: 589cddb2-29a6-4ad7-9102-56c17fcc16e3
 title: elemento thisModelMetadataDeclaration
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e7620f61d33318df2ccd187cb51e1ec7e598e471
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 263349b49f5aaf807f25db32046b9fcbccd1a7173650983046d3e41543ab44ec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107995332"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119568145"
 ---
 # <a name="thismodelmetadatadeclaration-element"></a>elemento thisModelMetadataDeclaration
 
@@ -43,7 +43,7 @@ No hay elementos secundarios.
 
 
 
-| Etiqueta | Value |
+| Etiqueta | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

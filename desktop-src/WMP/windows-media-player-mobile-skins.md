@@ -1,48 +1,48 @@
 ---
-title: Máscaras móviles de Windows Media Player
-description: Máscaras móviles de Windows Media Player
+title: Reproductor de Windows Media Máscaras móviles
+description: Reproductor de Windows Media Máscaras móviles
 ms.assetid: bcab41ed-db48-4070-b462-879f56bb6606
 keywords:
-- Windows Media Player Mobile, máscaras
-- Aspectos móviles de Windows Media Player, acerca de
-- máscaras, Windows Media Player Mobile
+- Reproductor de Windows Media Mobile,skins
+- Reproductor de Windows Media Máscaras móviles, acerca de
+- skins,Reproductor de Windows Media Mobile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 920a672000e7e7c3a5f470cac9e05ecb38985311
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 87196eb39fdbe0977f4d5baf5d298f339bb84f77d22f9e2e5579549c779a6b5d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357021"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119246885"
 ---
-# <a name="windows-media-player-mobile-skins"></a>Máscaras móviles de Windows Media Player
+# <a name="windows-media-player-mobile-skins"></a>Reproductor de Windows Media Máscaras móviles
 
-El software móvil de Windows Media Player incluye una máscara predeterminada que consta de varios botones y controles deslizantes que se pueden usar para reproducir, rebobinar o detener medios digitales. Una máscara es una interfaz de usuario personalizable que proporciona una apariencia y funcionalidad únicas para Windows Media Player Mobile.
+Reproductor de Windows Media El software móvil incluye una máscara predeterminada que consta de varios botones y controles deslizantes que puede usar para reproducir, rebobinar o detener medios digitales. Una máscara es una interfaz de usuario personalizable que proporciona una apariencia y funcionalidad únicas para Reproductor de Windows Media Mobile.
 
-En las secciones siguientes se describe cómo crear máscaras para Windows Media Player Mobile.
+En las secciones siguientes se describe cómo crear máscaras para Reproductor de Windows Media Mobile.
 
 
 
 | Sección                               | Descripción                                                                                                   |
 |---------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| [Acerca de las máscaras](about-skins-mobile.md) | Describe los conceptos necesarios para entender la arquitectura de la máscara y las reglas que debe seguir para crear una máscara. |
+| [Acerca de las máscaras](about-skins-mobile.md) | Describe los conceptos necesarios para comprender la arquitectura de la máscara y las reglas que debe seguir para crear una máscara. |
 | [Guía de máscara](skin-guide.md)          | Muestra cómo crear una máscara simple.                                                                            |
 | [Referencia de máscara](skin-reference.md)  | Contiene referencias detalladas para todas las partes de una máscara.                                                     |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Máscaras de Windows Media Player**](windows-media-player-skins.md)
+[**Reproductor de Windows Media Pieles**](windows-media-player-skins.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

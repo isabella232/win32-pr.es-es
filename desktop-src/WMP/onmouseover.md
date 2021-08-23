@@ -1,9 +1,9 @@
 ---
-title: onmouseover
+title: Onmouseover
 description: El controlador de eventos onmouseover controla un evento que se produce cuando el usuario coloca por primera vez el puntero sobre el elemento.
 ms.assetid: b62da27e-0bdf-46b5-b956-cb20c29df1c2
 keywords:
-- Media Player de Windows onmouseover
+- onmouseover Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,40 +13,40 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 82163d74f060d9f57be2decb78c517844c1f5b3f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6d59809a7b0d1a5530359f6e8d288e21d0c13e67ac7ee9dc9b2537eb43183a7f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119468035"
 ---
-# <a name="onmouseover"></a>onmouseover
+# <a name="onmouseover"></a>Onmouseover
 
-El controlador de eventos **onMouseOver** controla un evento que se produce cuando el usuario coloca por primera vez el puntero sobre el elemento.
+El **controlador de eventos onmouseover** controla un evento que se produce cuando el usuario coloca por primera vez el puntero sobre el elemento.
 
 ``` syntax
 onmouseover
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este controlador de eventos no es aplicable al elemento de **lista de reproducción** .
+Este controlador de eventos no es aplicable al elemento **PLAYLIST.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|-----------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 70 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 70 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Controladores de eventos de ambiente**](ambient-event-handlers.md)
+[**Controladores de eventos ambiente**](ambient-event-handlers.md)
 </dt> </dl>
 
  

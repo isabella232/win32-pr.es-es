@@ -1,19 +1,19 @@
 ---
-title: Ejemplo de código de C/C++ recuperar una página de tareas
-description: En este ejemplo se recupera y se muestra la página de tareas de una tarea conocida. Tenga en cuenta que en este ejemplo, se liberan todas las interfaces cuando ya no se necesitan.
+title: Ejemplo de código de C/C++ recuperación de una página de tareas
+description: En este ejemplo se recupera y muestra la página Tarea de una tarea conocida. Tenga en cuenta que en este ejemplo, todas las interfaces se liberan cuando ya no son necesarias.
 ms.assetid: f234f5b3-d668-44c3-8d03-c333cfe3acde
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a1db7bd6b472df53ff47629dbc1fcb9ecf13fb73
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 894ea88289203ea35e85005b4aa30f22bad7a2cd07150ac5a5ee83f1c9f8a22c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994144"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139678"
 ---
-# <a name="cc-code-example-retrieving-a-task-page"></a>Ejemplo de código de C/C++: recuperar una página de tareas
+# <a name="cc-code-example-retrieving-a-task-page"></a>Ejemplo de código de C/C++: Recuperar una página de tareas
 
-En este ejemplo se recupera y se muestra la página de tareas de una tarea conocida. Tenga en cuenta que en este ejemplo, se liberan todas las interfaces cuando ya no se necesitan.
+En este ejemplo se recupera y muestra la página Tarea de una tarea conocida. Tenga en cuenta que en este ejemplo, todas las interfaces se liberan cuando ya no son necesarias.
 
 
 ```C++
@@ -143,12 +143,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Ejemplos de Programador de tareas 1,0](task-scheduler-1-0-examples.md)
+[Programador de tareas ejemplos de 1.0](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

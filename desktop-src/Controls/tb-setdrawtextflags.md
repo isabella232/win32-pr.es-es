@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TB_SETDRAWTEXTFLAGS (commctrl. h)
+title: TB_SETDRAWTEXTFLAGS mensaje (Commctrl.h)
 description: Establece las marcas de dibujo de texto de la barra de herramientas.
 ms.assetid: b088af32-ea8a-4304-89f1-a7cec5497f85
 keywords:
-- TB_SETDRAWTEXTFLAGS controles de mensajes de Windows
+- TB_SETDRAWTEXTFLAGS controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 890a24239ff2257ffaccff6613b3765711b2ef7b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 849bbb0e661c9e8afe246894d2d2f59d99d15a3f096ad2295a7018cf3df26ca4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996801"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119543885"
 ---
-# <a name="tb_setdrawtextflags-message"></a>\_Mensaje SETDRAWTEXTFLAGS TB
+# <a name="tb_setdrawtextflags-message"></a>Mensaje \_ SETDRAWTEXTFLAGS de TB
 
 Establece las marcas de dibujo de texto de la barra de herramientas.
 
@@ -32,14 +32,14 @@ Establece las marcas de dibujo de texto de la barra de herramientas.
 *wParam* 
 </dt> <dd>
 
-Una o varias de las \_ marcas DT, especificadas en [**DrawText**](/windows/desktop/api/winuser/nf-winuser-drawtext), que indican qué bits de *lParam* se utilizarán al dibujar el texto.
+Una o varias marcas DT, especificadas en DrawText , que indican qué bits de \_ *lParam* se usarán al dibujar el [](/windows/desktop/api/winuser/nf-winuser-drawtext)texto.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Una o varias de las \_ marcas DT, especificadas en [**DrawText**](/windows/desktop/api/winuser/nf-winuser-drawtext), que indican cómo se dibujará el texto del botón. Este valor se pasará a la función **DrawText** cuando se dibuje el texto del botón.
+Una o varias marcas \_ DT, especificadas en [**DrawText**](/windows/desktop/api/winuser/nf-winuser-drawtext), que indican cómo se dibujará el texto del botón. Este valor se pasará a la **función DrawText** cuando se dibuje el texto del botón.
 
 </dd> </dl>
 
@@ -47,19 +47,19 @@ Una o varias de las \_ marcas DT, especificadas en [**DrawText**](/windows/deskt
 
 Devuelve las marcas de dibujo de texto anteriores.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El parámetro *wParam* le permite especificar qué marcas se utilizarán al dibujar el texto, aunque estas marcas estén desactivadas. Por ejemplo, si no desea que se use la \_ marca DT Center al dibujar texto, debe agregar la marca DT \_ Center a *wParam* y no especificar la marca DT \_ Center en *lParam*. Esto evita que el control pase la \_ marca DT Center a la función [**DrawText**](/windows/desktop/api/winuser/nf-winuser-drawtext) .
+El *parámetro wParam* permite especificar qué marcas se usarán al dibujar el texto, incluso si estas marcas están desactivadas. Por ejemplo, si no desea que se utilice la marca DT CENTER al dibujar texto, agregaría la marca DT CENTER a wParam y no especificaría la marca DT CENTER en \_ \_  \_ *lParam*. Esto impide que el control pase la marca DT \_ CENTER a la función [**DrawText.**](/windows/desktop/api/winuser/nf-winuser-drawtext)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

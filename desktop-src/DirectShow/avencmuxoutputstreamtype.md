@@ -1,15 +1,15 @@
 ---
 description: Especifica el tipo de flujo de salida generado por un multiplexor.
 ms.assetid: c3ee20b9-cae9-4a84-b173-3a4919202b3d
-title: Propiedad AVEncMuxOutputStreamType (Codecapi. h)
+title: Propiedad AVEncMuxOutputStreamType (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fecb5b8c169c8bcd8c3a5caa975c37e7f15a9bfb
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: e4eaf82ad054cb086a35ff4bd207786ceadd24a5f7acb8db528bb5cee6faef8b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104359996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119540895"
 ---
 # <a name="avencmuxoutputstreamtype-property"></a>Propiedad AVEncMuxOutputStreamType
 
@@ -25,17 +25,17 @@ Especifica el tipo de flujo de salida generado por un multiplexor.
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El valor de esta propiedad es un miembro de la enumeración [**eAVEncMuxOutput**](/windows/win32/api/codecapi/ne-codecapi-eavencmuxoutput) .
+El valor de esta propiedad es un miembro de la [**enumeración eAVEncMuxOutput.**](/windows/win32/api/codecapi/ne-codecapi-eavencmuxoutput)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -46,7 +46,7 @@ El valor de esta propiedad es un miembro de la enumeración [**eAVEncMuxOutput**
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Realiza una operación en un archivo especificado.
 ms.assetid: ce652565-40b6-4f69-bd2a-9e05e3f360ac
-title: WOWShellExecute función)
+title: Función WOWShellExecute
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - Shell32.dll
-ms.openlocfilehash: ae50ad570211303cdfb7aa8e86908593ab48537d
-ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
+ms.openlocfilehash: 4389c348a06b7c54dc899da8114eee09e740681f043084bb0c32ab9f7163772e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106187806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119591835"
 ---
-# <a name="wowshellexecute-function"></a>WOWShellExecute función)
+# <a name="wowshellexecute-function"></a>Función WOWShellExecute
 
-\[Esta función está disponible a través de Windows XP con Service Pack 2 (SP2) y Windows Server 2003. Podría modificarse o no estar disponible en versiones posteriores de Windows.\]
+\[Esta función está disponible a través Windows XP con Service Pack 2 (SP2) y Windows Server 2003. Podría modificarse o no estar disponible en versiones posteriores de Windows.\]
 
-Realiza una operación en un archivo especificado. **WOWShellExecute** solo existe para su uso con la máquina virtual dos de Microsoft Windows NT (Ntvdm.exe), que permite que el sistema operativo de disco (dos) y el software de 16 bits se ejecuten en un sistema de Windows y no debe usarlos nadie más. En su lugar, use [**ShellExecute**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecutea) .
+Realiza una operación en un archivo especificado. **WOWShellExecute** solo existe para su uso con la máquina virtual dos de Microsoft Windows NT (Ntvdm.exe), que permite que el sistema operativo de disco (DOS) y el software de 16 bits se ejecuten en un sistema Windows y que nadie más pueda usar. Use [**ShellExecute en**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecutea) su lugar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,27 +47,27 @@ HINSTANCE WOWShellExecute(
 
 <dl> <dt>
 
-*hWnd* \[ de\]
+*hwnd* \[ En\]
 </dt> <dd>
 
-Tipo: **hWnd**
+Tipo: **HWND**
 
-Identificador de la ventana propietaria que se usa para mostrar una interfaz de usuario o mensajes de error. Este valor puede ser **null** si la operación no está asociada a una ventana.
+Identificador de la ventana de propietario que se usa para mostrar una interfaz de usuario o mensajes de error. Este valor puede ser **NULL** si la operación no está asociada a una ventana.
 
 </dd> <dt>
 
-*lpOperation* \[ de\]
+*lpOperation* \[ En\]
 </dt> <dd>
 
 Tipo: **LPCTSTR**
 
-Puntero a una cadena terminada en **null**, a la que se hace referencia en este caso como *verbo*, que especifica la acción que se va a realizar. El conjunto de verbos disponibles depende del archivo o la carpeta determinados. Por lo general, las acciones disponibles en el menú contextual de un objeto son verbos disponibles. Para obtener más información sobre los verbos y su disponibilidad, vea la sección *verbos de objetos* de [Launching Applications](launch.md). Vea [extender menús contextuales](context.md) para obtener más información sobre los menús contextuales. Normalmente se utilizan los siguientes verbos.
+Puntero a una cadena terminada en **NULL,** a la que se hace referencia en este caso como verbo *,* que especifica la acción que se va a realizar. El conjunto de verbos disponibles depende del archivo o carpeta en particular. Por lo general, las acciones disponibles en el menú contextual de un objeto son verbos disponibles. Para obtener más información sobre los verbos y su disponibilidad, vea la sección *Verbos de objeto* de [Iniciar aplicaciones](launch.md). Consulte [Extensión de menús contextuales para](context.md) obtener más información sobre los menús contextuales. Normalmente se usan los verbos siguientes.
 
 <dt>
 
 <span id="edit"></span><span id="EDIT"></span>
 
-<span id="edit"></span><span id="EDIT"></span>**editar**
+<span id="edit"></span><span id="EDIT"></span>**Editar**
 
 
 </dt> <dd>
@@ -78,7 +78,7 @@ Inicia un editor y abre el documento para su edición. Si *lpFile* no es un arch
 
 <span id="explore"></span><span id="EXPLORE"></span>
 
-<span id="explore"></span><span id="EXPLORE"></span>**visite**
+<span id="explore"></span><span id="EXPLORE"></span>**Explorar**
 
 
 </dt> <dd>
@@ -89,7 +89,7 @@ Explora la carpeta especificada por *lpFile*.
 
 <span id="find"></span><span id="FIND"></span>
 
-<span id="find"></span><span id="FIND"></span>**localización**
+<span id="find"></span><span id="FIND"></span>**Encontrar**
 
 
 </dt> <dd>
@@ -100,18 +100,18 @@ Inicia una búsqueda a partir del directorio especificado.
 
 <span id="open"></span><span id="OPEN"></span>
 
-<span id="open"></span><span id="OPEN"></span>**Ábra**
+<span id="open"></span><span id="OPEN"></span>**Abierto**
 
 
 </dt> <dd>
 
-Abre el archivo especificado por el parámetro *lpFile* . El archivo puede ser un archivo ejecutable, un archivo de documento o una carpeta.
+Abre el archivo especificado por el *parámetro lpFile.* El archivo puede ser un archivo ejecutable, un archivo de documento o una carpeta.
 
 </dd> <dt>
 
 <span id="print"></span><span id="PRINT"></span>
 
-<span id="print"></span><span id="PRINT"></span>**imprime**
+<span id="print"></span><span id="PRINT"></span>**Impresión**
 
 
 </dt> <dd>
@@ -122,104 +122,104 @@ Imprime el archivo de documento especificado por *lpFile*. Si *lpFile* no es un 
 
 <span id="NULL"></span><span id="null"></span>
 
-<span id="NULL"></span><span id="null"></span>**ACEPTA**
+<span id="NULL"></span><span id="null"></span>**Null**
 
 
 </dt> <dd>
 
-En sistemas anteriores a Windows 2000, se utiliza el verbo predeterminado si es válido y está disponible en el registro. Si no es así, se utiliza el verbo "abrir".
+Para los sistemas anteriores a Windows 2000, se usa el verbo predeterminado si es válido y está disponible en el Registro. Si no es así, se usa el verbo "abrir".
 
-En el caso de los sistemas Windows 2000 y versiones posteriores, se utiliza el verbo predeterminado si está disponible. Si no es así, se utiliza el verbo "abrir". Si no hay ningún verbo disponible, el sistema utiliza el primer verbo enumerado en el registro.
+Para Windows sistemas 2000 y posteriores, se usa el verbo predeterminado si está disponible. Si no es así, se usa el verbo "abrir". Si ninguno de los verbos está disponible, el sistema usa el primer verbo enumerado en el registro.
 
 </dd> </dl> </dd> <dt>
 
-*lpFile* \[ de\]
+*lpFile* \[ En\]
 </dt> <dd>
 
 Tipo: **LPCTSTR**
 
-Puntero a una cadena terminada en **null** que especifica el archivo o el objeto en el que se va a ejecutar el verbo especificado. Para especificar un objeto de espacio de nombres de Shell, pase el nombre de análisis completo. Tenga en cuenta que no todos los verbos se admiten en todos los objetos. Por ejemplo, no todos los tipos de documentos admiten el verbo "Imprimir".
+Puntero a una **cadena terminada** en NULL que especifica el archivo u objeto en el que se va a ejecutar el verbo especificado. Para especificar un objeto de espacio de nombres de Shell, pase el nombre completo del análisis. Tenga en cuenta que no todos los verbos se admiten en todos los objetos. Por ejemplo, no todos los tipos de documento admiten el verbo "print".
 
 </dd> <dt>
 
-*lpParameters* \[ de\]
+*lpParameters* \[ En\]
 </dt> <dd>
 
 Tipo: **LPCTSTR**
 
-Si el parámetro *lpFile* especifica un archivo ejecutable, *lpParameters* es un puntero a una cadena terminada en **null** que especifica los parámetros que se van a pasar a la aplicación. El formato de esta cadena viene determinado por el verbo que se va a invocar. Si *lpFile* especifica un archivo de documento, *LpParameters* debe ser **null**.
+Si el *parámetro lpFile* especifica un archivo ejecutable, *lpParameters* es un puntero a una cadena terminada en **NULL** que especifica los parámetros que se pasarán a la aplicación. El formato de esta cadena viene determinado por el verbo que se va a invocar. Si *lpFile* especifica un archivo de documento, *lpParameters* debe ser **NULL.**
 
 </dd> <dt>
 
-*lpDirectory* \[ de\]
+*lpDirectory* \[ En\]
 </dt> <dd>
 
 Tipo: **LPCTSTR**
 
-Puntero a una cadena terminada en **null** que especifica el directorio predeterminado.
+Puntero a una **cadena terminada** en NULL que especifica el directorio predeterminado.
 
 </dd> <dt>
 
-*nShowCmd* \[ de\]
+*nShowCmd* \[ En\]
 </dt> <dd>
 
-Tipo: **int**
+Tipo: **INT**
 
-Marcas que especifican cómo se va a mostrar una aplicación cuando se abre. Si *lpFile* especifica un archivo de documento, la marca simplemente se pasa a la aplicación asociada. Depende de la aplicación decidir cómo controlarla. Puede ser cualquiera de los valores que se pueden especificar en el parámetro *nCmdShow* para la función [ShowWindow](/windows/desktop/api/winuser/nf-winuser-showwindow) .
+Marcas que especifican cómo se mostrará una aplicación cuando se abra. Si *lpFile* especifica un archivo de documento, la marca simplemente se pasa a la aplicación asociada. Es decisión de la aplicación decidir cómo controlarla. Puede ser cualquiera de los valores que se pueden especificar en el parámetro *nCmdShow* para la [función ShowWindow.](/windows/desktop/api/winuser/nf-winuser-showwindow)
 
 </dd> <dt>
 
 *lpfnCBWinExec* 
 </dt> <dd>
 
-Tipo: **void \***
+Tipo: **\* void**
 
-Función de devolución de llamada que se usa para llamar a [**CreateProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa) en el kernel de 16 bits.
+Función de devolución de llamada que se [**usa para llamar a CreateProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa) en el kernel de 16 bits.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **hInstance**
+Tipo: **HINSTANCE**
 
-Devuelve un valor mayor que 32 si es correcto, o un valor de error menor o igual que 32 en caso contrario. En la tabla siguiente se enumeran los valores de error. El valor devuelto se convierte en un HINSTANCE para la compatibilidad con versiones anteriores de aplicaciones Windows de 16 bits. Sin embargo, no es un HINSTANCE verdadero. Lo único que se puede hacer con el HINSTANCE devuelto es convertirlo en un **int** y compararlo con el valor 32 o con uno de los códigos de error siguientes.
+Devuelve un valor mayor que 32 si se realiza correctamente o un valor de error menor o igual que 32 en caso contrario. En la tabla siguiente se enumeran los valores de error. El valor devuelto se convierte como HINSTANCE para la compatibilidad con versiones anteriores con aplicaciones de Windows de 16 bits. Sin embargo, no es un HINSTANCE verdadero. Lo único que se puede hacer con la instancia HINSTANCE devuelta es convertirla a un **valor int** y compararlo con el valor 32 o uno de los códigos de error siguientes.
 
 
 
 | Código devuelto                                                                                             | Descripción                                                                                                                                                              |
 |---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**0**</dt> </dl>                        | El sistema operativo no tiene memoria o recursos.<br/>                                                                                                           |
-| <dl> <dt>**\_ \_ no \_ se encontró el archivo de error**</dt> </dl>  | No se encontró el archivo especificado.<br/>                                                                                                                             |
-| <dl> <dt>**\_ \_ no \_ se encontró la ruta de error**</dt> </dl>  | No se encontró la ruta de acceso especificada.<br/>                                                                                                                             |
-| <dl> <dt>**ERROR \_ de \_ formato incorrecto**</dt> </dl>       | El archivo. exe no es válido (no es Win32. exe o error en la imagen. exe).<br/>                                                                                             |
-| <dl> <dt>**\_error de \_ ACCESSDENIED**</dt> </dl>    | El sistema operativo denegó el acceso al archivo especificado.<br/>                                                                                                     |
-| <dl> <dt>**\_error de \_ ASSOCINCOMPLETE**</dt> </dl> | La Asociación de nombre de archivo está incompleta o no es válida.<br/>                                                                                                           |
-| <dl> <dt>**\_error de \_ DDEBUSY**</dt> </dl>         | No se pudo completar la transacción DDE porque se estaban procesando otras transacciones DDE.<br/>                                                               |
-| <dl> <dt>**\_error de \_ DDEFAIL**</dt> </dl>         | Error en la transacción DDE.<br/>                                                                                                                                   |
-| <dl> <dt>**\_error de \_ DDETIMEOUT**</dt> </dl>      | No se pudo completar la transacción DDE porque se agotó el tiempo de espera de la solicitud.<br/>                                                                                     |
-| <dl> <dt>**\_error de \_ DLLNOTFOUND**</dt> </dl>     | No se encontró la DLL especificada.<br/>                                                                                                                              |
-| <dl> <dt>**\_error de \_ FNF**</dt> </dl>             | No se encontró el archivo especificado.<br/>                                                                                                                             |
-| <dl> <dt>**SE ha $ \_ \_ Assoc**</dt> </dl>         | No hay ninguna aplicación asociada a la extensión de nombre de archivo especificada. También se devolverá este error si intenta imprimir un archivo que no se puede imprimir.<br/> |
-| <dl> <dt>**\_error de \_ OOM**</dt> </dl>             | No había memoria suficiente para completar la operación.<br/>                                                                                                        |
-| <dl> <dt>**SE \_ Err error \_ PNF**</dt> </dl>             | No se encontró la ruta de acceso especificada.<br/>                                                                                                                             |
-| <dl> <dt>**\_recurso compartido de error se \_**</dt> </dl>           | Se ha producido una infracción de uso compartido.<br/>                                                                                                                                 |
+| <dl> <dt>**0**</dt> </dl>                        | El sistema operativo está sin memoria o recursos.<br/>                                                                                                           |
+| <dl> <dt>**ARCHIVO \_ DE ERROR NO \_ \_ ENCONTRADO**</dt> </dl>  | No se encontró el archivo especificado.<br/>                                                                                                                             |
+| <dl> <dt>**RUTA DE \_ ACCESO DE ERROR NO \_ \_ ENCONTRADA**</dt> </dl>  | No se encontró la ruta de acceso especificada.<br/>                                                                                                                             |
+| <dl> <dt>**FORMATO \_ DE ERROR NO \_ CORRECTO**</dt> </dl>       | El .exe no es válido (no es .exe win32 o error en .exe imagen).<br/>                                                                                             |
+| <dl> <dt>**\_SE ACCESO \_ DE ERRORDENIED**</dt> </dl>    | El sistema operativo denegó el acceso al archivo especificado.<br/>                                                                                                     |
+| <dl> <dt>**\_SE ERR \_ ASSOCINCOMPLETE**</dt> </dl> | La asociación de nombre de archivo está incompleta o no es válida.<br/>                                                                                                           |
+| <dl> <dt>**\_SE ERR \_ DDEBUSY**</dt> </dl>         | No se pudo completar la transacción DDE porque se estaban procesando otras transacciones DDE.<br/>                                                               |
+| <dl> <dt>**\_SE ERR \_ DDEFAIL**</dt> </dl>         | Error en la transacción DDE.<br/>                                                                                                                                   |
+| <dl> <dt>**\_SE ERR \_ DDETIMEOUT**</dt> </dl>      | No se pudo completar la transacción DDE porque la solicitud ha finalizado el tiempo de espera.<br/>                                                                                     |
+| <dl> <dt>**\_SE ERR \_ DLLNOTFOUND**</dt> </dl>     | No se encontró el archivo DLL especificado.<br/>                                                                                                                              |
+| <dl> <dt>**\_SE ERR \_ FNF**</dt> </dl>             | No se encontró el archivo especificado.<br/>                                                                                                                             |
+| <dl> <dt>**\_SE ERR \_ NOASSOC**</dt> </dl>         | No hay ninguna aplicación asociada a la extensión de nombre de archivo dada. Este error también se devolverá si intenta imprimir un archivo que no es imprimible.<br/> |
+| <dl> <dt>**\_SE ERR \_ OOM**</dt> </dl>             | No había suficiente memoria para completar la operación.<br/>                                                                                                        |
+| <dl> <dt>**\_SE ERR \_ PNF**</dt> </dl>             | No se encontró la ruta de acceso especificada.<br/>                                                                                                                             |
+| <dl> <dt>**\_SE RECURSO \_ COMPARTIDO DE ERR**</dt> </dl>           | Se ha producido una infracción de uso compartido.<br/>                                                                                                                                 |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**WOWShellExecute** no se incluye en un archivo de encabezado o. lib. Se exporta desde Shell32.dll por nombre.
+**WOWShellExecute** no se incluye en un archivo de encabezado o .lib. Se exporta desde Shell32.dll por nombre.
 
-Este método permite ejecutar cualquier comando en el menú contextual de una carpeta o almacenarlo en el registro.
+Este método permite ejecutar cualquier comando en el menú contextual de una carpeta o almacenarse en el Registro.
 
-Si *lpOperation* es **null**, la función abre el archivo especificado por *lpFile*. Si *lpOperation* es "Open" o "Explore", la función intenta abrir o explorar la carpeta.
+Si *lpOperation* es **NULL,** la función abre el archivo especificado por *lpFile*. Si *lpOperation* es "open" o "explore", la función intenta abrir o explorar la carpeta.
 
-Para obtener información sobre la aplicación que se inicia como resultado de llamar a **WOWShellExecute**, use [**ShellExecuteEx**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa).
+Para obtener información sobre la aplicación que se inicia como resultado de llamar a **WOWShellExecute,** use [**ShellExecuteEx**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa).
 
 > [!Note]  
-> Las **ventanas de la carpeta de inicio en una configuración de proceso independiente** en opciones de carpeta afectan a **WOWShellExecute**. Si esa opción está deshabilitada (la configuración predeterminada), **WOWShellExecute** usa una ventana de explorador abierta en lugar de iniciar una nueva. Si no hay ninguna ventana del explorador abierta, **WOWShellExecute** inicia una nueva.
+> La **opción Iniciar ventanas de carpeta en un proceso** independiente en Opciones de carpeta afecta a **WOWShellExecute.** Si esa opción está deshabilitada (la configuración predeterminada), **WOWShellExecute** usa una ventana del Explorador abierta en lugar de iniciar una nueva. Si no hay ninguna ventana del Explorador abierta, **WOWShellExecute** inicia una nueva.
 
  
 
@@ -235,7 +235,7 @@ Para obtener información sobre la aplicación que se inicia como resultado de l
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

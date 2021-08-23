@@ -5,12 +5,12 @@ ms.assetid: eaeb6cfd-de62-46f1-972d-a11e0ccc11d9
 ms.topic: article
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: 979281fb7fa6e034894bffaecbd6246fe8a9aa94
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 0c2258938020593014b5b6f5ea77516e7770f8589601cf4139971b3532b22fff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104488026"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119569355"
 ---
 # <a name="how-to-clip-to-a-geometric-mask"></a>Cómo recortar a una máscara geométrica
 
@@ -18,17 +18,17 @@ En este tema se describe cómo usar una máscara geométrica para recortar una r
 
 **Para recortar una región con una máscara geométrica**
 
-1.  Cree el [**ID2D1Geometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometry) que se usará para recortar la región.
-2.  Llame a [**ID2D1RenderTarget:: CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)) para crear una capa.
-3.  Llame a [**ID2D1RenderTarget::P ushlayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushlayer(constd2d1_layer_parameters__id2d1layer)) y pase la máscara geométrica que definió en el paso 1.
-4.  Dibuje el contenido en clip.
-5.  Llame a [**ID2D1RenderTarget::P OPlayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer) para quitar la capa del destino de representación.
+1.  Cree el [**id2D1Geometry que**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometry) se usará para recortar la región.
+2.  Llame a [**ID2D1RenderTarget::CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)) para crear una capa.
+3.  Llame [**a ID2D1RenderTarget::P ushLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushlayer(constd2d1_layer_parameters__id2d1layer)) y pase la máscara geométrica que definió en el paso 1.
+4.  Dibuje el contenido que se recortará.
+5.  Llame [**a ID2D1RenderTarget::P opLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer) para quitar la capa del destino de representación.
 
-En el ejemplo siguiente se usa una máscara geométrica para recortar una imagen y varios rectángulos. En la ilustración siguiente se muestra el mapa de bits original de la izquierda y el mapa de bits recortado a la máscara geométrica de la derecha.
+En el ejemplo siguiente se usa una máscara geométrica para recortar una imagen y varios rectángulos. En la ilustración siguiente se muestra el mapa de bits original a la izquierda y el mapa de bits recortado a la máscara geométrica de la derecha.
 
-![Ilustración de un mapa de bits de pez antes y después de que el mapa de bits se recorte a una máscara en forma de estrella](images/cliparegion-layers.png)
+![ilustración de un mapa de bits goldfish antes y después de recortar el mapa de bits a una máscara en forma de estrella](images/cliparegion-layers.png)
 
-Para recortar el dibujo como se muestra en la ilustración anterior, cree un [**ID2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) y úselo para definir una estrella. El código siguiente muestra cómo hacerlo.
+Para recortar el dibujo como se muestra en la ilustración anterior, cree un [**id2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) y úselo para definir una estrella. El código siguiente muestra cómo hacerlo.
 
 
 ```C++
@@ -61,14 +61,14 @@ SafeRelease(&pSink);
 
 
 
-Llame a [**CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)) para crear una capa.
+Llame [**a CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)) para crear una capa.
 
 > [!Note]  
-> A partir de Windows 8, no es necesario llamar a [**CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)). En la mayoría de los casos, el rendimiento es mejor si no se llama a este método y Direct2D administra los recursos de la capa.
+> A partir Windows 8, no es necesario llamar a [**CreateLayer.**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)) En la mayoría de las situaciones, el rendimiento es mejor si no se llama a este método y Direct2D administra los recursos de capa.
 
- 
+ 
 
-Llame a [**PushLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushlayer(constd2d1_layer_parameters__id2d1layer)) con la máscara de geometría para extender la capa. Dibuje el contenido en clip y, a continuación, llame a [**PopLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer) para extraer la capa. Esto produce el dibujo en forma de estrella. El código siguiente muestra cómo hacerlo.
+Llame [**a PushLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushlayer(constd2d1_layer_parameters__id2d1layer)) con la máscara de geometría para insertar la capa. Dibuje el contenido que se recortará y, a continuación, [**llame a PopLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer) para extraer la capa. Esto genera el dibujo en forma de estrella. El código siguiente muestra cómo hacerlo.
 
 
 ```C++
@@ -121,6 +121,6 @@ HRESULT DemoApp::RenderWithLayer(ID2D1RenderTarget *pRT)
 [Referencia de Direct2D](reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

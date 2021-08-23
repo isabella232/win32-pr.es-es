@@ -1,19 +1,19 @@
 ---
-description: Especifica el número de hora de inicio en el encabezado grupo de imágenes (GOP).
+description: Especifica el número de hora de inicio en el encabezado de grupo de imágenes (GOP).
 ms.assetid: 94830520-910a-4254-933c-6d95a3f0b6a4
-title: Propiedad AVEncVideoHeaderHours (Codecapi. h)
+title: Propiedad AVEncVideoHeaderHours (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d5f5e3e423943a918fe73773c887942ad03a4e26
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: bc53495ba0b09a6081f781505309d44e3f795c61e596d8591eec1b405d09e25f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104536532"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119342445"
 ---
-# <a name="avencvideoheaderhours-property"></a>Propiedad AVEncVideoHeaderHours
+# <a name="avencvideoheaderhours-property"></a>AvEncVideoHeaderHours, propiedad
 
-Especifica el número de hora de inicio en el encabezado grupo de imágenes (GOP).
+Especifica el número de hora de inicio en el encabezado de grupo de imágenes (GOP).
 
 Esta propiedad es de lectura y escritura.
 
@@ -27,7 +27,7 @@ Esta propiedad es de lectura y escritura.
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El intervalo válido de esta propiedad es de 0 a 23, ambos inclusive.
+El intervalo válido de esta propiedad es de 0 a 23, ambos incluidos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,9 +35,9 @@ El intervalo válido de esta propiedad es de 0 a 23, ambos inclusive.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -48,7 +48,7 @@ El intervalo válido de esta propiedad es de 0 a 23, ambos inclusive.
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

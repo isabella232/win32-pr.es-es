@@ -1,7 +1,7 @@
 ---
-description: El objeto Microsoft. Windows. ActCtx hace referencia a los manifiestos y proporciona una manera de que los motores de scripting tengan acceso a los ensamblados en paralelo. El objeto Microsoft. Windows. ActCtx se puede usar para crear una instancia de un ensamblado en paralelo con componentes COM.
+description: The Microsoft. Windows. El objeto ActCtx hace referencia a manifiestos y proporciona una manera de que los motores de scripting accedan a ensamblados en paralelo. The Microsoft. Windows. El objeto ActCtx se puede usar para crear una instancia de un ensamblado en paralelo con componentes COM.
 ms.assetid: 818e175e-2c58-4c44-87ce-4e97352fc3f3
-title: Objeto Microsoft. Windows. ActCtx
+title: Microsoft. Windows. Objeto ActCtx
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,36 +12,36 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 58290ec9d36d8e8428000422d0e1014335870149
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e84eadbc7489ddd91c34c0c9494515e89205849829625e850ad31dce3e92fc1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908830"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119142008"
 ---
-# <a name="microsoftwindowsactctx-object"></a>Objeto Microsoft. Windows. ActCtx
+# <a name="microsoftwindowsactctx-object"></a>Microsoft. Windows. Objeto ActCtx
 
-El objeto **Microsoft. Windows. ActCtx** hace referencia a los manifiestos y proporciona una manera de que los motores de scripting tengan acceso a los ensamblados en paralelo. El objeto **Microsoft. Windows. ActCtx** se puede usar para crear una instancia de un ensamblado en paralelo con componentes com.
+**Microsoft.Windows. El objeto ActCtx** hace referencia a manifiestos y proporciona una manera de que los motores de scripting accedan a ensamblados en paralelo. **Microsoft.Windows. El objeto ActCtx** se puede usar para crear una instancia de un ensamblado en paralelo con componentes COM.
 
-El objeto **Microsoft. Windows. ActCtx** se incluye como un ensamblado en Windows Server 2003. También puede instalarse mediante aplicaciones que usan el Windows Installer para la configuración e incluirla como módulo de combinación en su paquete de instalación.
+**Microsoft.Windows. El objeto ActCtx** se incluye como un ensamblado en Windows Server 2003. También se puede instalar mediante aplicaciones que usan el instalador de Windows para la instalación e incluirlo como un módulo de combinación en su paquete de instalación.
 
 ## <a name="members"></a>Miembros
 
-El objeto **Microsoft. Windows. ActCtx** tiene estos tipos de miembros:
+**Microsoft.Windows. El objeto ActCtx** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-El objeto **Microsoft. Windows. ActCtx** tiene estos métodos.
+**Microsoft.Windows. El objeto ActCtx** tiene estos métodos.
 
 
 
 | Método                               | Descripción                                                                     |
 |:-------------------------------------|:--------------------------------------------------------------------------------|
-| [**DataSpace**](createobject.md) | Crea un objeto en el contexto del manifiesto actual.<br/>            |
-| [**GetObject**](getobject.md)       | Obtiene una instancia de un objeto **Microsoft. Windows. ActCtx** existente.<br/> |
+| [**Createobject**](createobject.md) | Crea un objeto en el contexto del manifiesto actual.<br/>            |
+| [**Getobject**](getobject.md)       | Obtiene una instancia de un archivo **Microsoft.Windows. Objeto ActCtx.**<br/> |
 
 
 
@@ -49,7 +49,7 @@ El objeto **Microsoft. Windows. ActCtx** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-El objeto **Microsoft. Windows. ActCtx** tiene estas propiedades.
+**Microsoft.Windows. El objeto ActCtx** tiene estas propiedades.
 
 
 
@@ -67,8 +67,8 @@ El objeto **Microsoft. Windows. ActCtx** tiene estas propiedades.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 
 
 

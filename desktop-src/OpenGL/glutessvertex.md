@@ -1,9 +1,9 @@
 ---
-title: función gluTessVertex (GLU. h)
+title: Función gluTessVertex (Glu.h)
 description: La función gluTessVertex especifica un vértice en un polígono.
 ms.assetid: 9c555b32-5257-4eeb-9323-ccad59591097
 keywords:
-- gluTessVertex (función) OpenGL
+- Función GluTessVertex OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 546bbad2be1205f62c7889fbb18f23d5b0e38b8a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 51b3b1dd666fd965e7b6536a20a794481c534ed3e42594017093ee161a067e15
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535242"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119488425"
 ---
-# <a name="glutessvertex-function"></a>gluTessVertex función)
+# <a name="glutessvertex-function"></a>Función gluTessVertex
 
-La función **gluTessVertex** especifica un vértice en un polígono.
+La **función gluTessVertex** especifica un vértice en un polígono.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,14 +42,14 @@ void WINAPI gluTessVertex(
 
 <dl> <dt>
 
-*tess* 
+*Tess* 
 </dt> <dd>
 
-Objeto de teselación (creado con [**gluNewTess**](glunewtess.md)).
+Objeto de teselación (creado [**con gluNewTess).**](glunewtess.md)
 
 </dd> <dt>
 
-*coords* 
+*Coordenadas* 
 </dt> <dd>
 
 Ubicación del vértice.
@@ -59,7 +59,7 @@ Ubicación del vértice.
 *data* 
 </dt> <dd>
 
-Un puntero devuelto al programa con la devolución de llamada del vértice (tal y como se especifica en [*gluTessCallback*](glutess.md)).
+Puntero que se pasa de nuevo al programa con la devolución de llamada de vértice (como se especifica [*en gluTessCallback*](glutess.md)).
 
 </dd> </dl>
 
@@ -67,22 +67,22 @@ Un puntero devuelto al programa con la devolución de llamada del vértice (tal 
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **gluTessVertex** describe un vértice de un polígono que el usuario está definiendo. Las llamadas sucesivas a **gluTessVertex** describen un contorno cerrado. Por ejemplo, para describir un cuadrangular, llame a **gluTessVertex** cuatro veces. Solo se puede llamar a **gluTessVertex** entre [**gluTessBeginContour**](glutessbegincontour.md) y [**gluTessEndContour**](glutessendcontour.md).
+La **función gluTessVertex** describe un vértice en un polígono que el usuario está definiendo. Las **sucesivas llamadas a gluTessVertex** describen un contorno cerrado. Por ejemplo, para describir un cuadrítero, llame a **gluTessVertex cuatro** veces. Solo puede llamar a **gluTessVertex** entre [**gluTessBeginContour**](glutessbegincontour.md) y [**gluTessEndContour.**](glutessendcontour.md)
 
-Normalmente, el parámetro *Data* apunta a una estructura que contiene la ubicación del vértice, así como a otros atributos por vértice como color y normal. Este puntero se devuelve al programa a través de la devolución de llamada del vértice de GLU después de la \_ teselación (vea [*gluTessCallback*](glutess.md)).
+*Normalmente,* el parámetro de datos apunta a una estructura que contiene la ubicación del vértice, así como a otros atributos por vértice, como color y normal. Este puntero se pasa de nuevo al programa a través de la devolución de llamada VERTEX de GLU después de la teselación \_ (vea [*gluTessCallback*](glutess.md)).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Glu. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 

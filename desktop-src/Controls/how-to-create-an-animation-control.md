@@ -1,37 +1,37 @@
 ---
-title: Cómo crear un control Animation
+title: Cómo crear un control de animación
 description: En este tema se muestra cómo crear un control de animación.
 ms.assetid: 5852B636-F3D0-47A4-82F6-8BE570013E1B
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d4ff190617996e42e6580b82311fb51f4248000
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8117d7c9393a828786532bd3d3fbfcf4f4eaaf6bb1bfdccdc5a2f97fa1c5cb38
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119435825"
 ---
-# <a name="how-to-create-an-animation-control"></a>Cómo crear un control Animation
+# <a name="how-to-create-an-animation-control"></a>Cómo crear un control de animación
 
-En este tema se muestra cómo crear un control de animación. El ejemplo de código de C++ que lo acompaña crea un control de animación en un cuadro de diálogo. Coloca el control Animation debajo de un control especificado y establece las dimensiones del control Animation basándose en las dimensiones de un marco en el Audio-Video clip intercalado (AVI).
+En este tema se muestra cómo crear un control de animación. El ejemplo de código de C++ que lo acompaña crea un control de animación en un cuadro de diálogo. Coloca el control de animación debajo de un control especificado y establece las dimensiones del control de animación en función de las dimensiones de un marco en el clip Audio-Video intercalado (AVI).
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 -   Archivos AVI
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="step-1-create-an-instance-of-the-animation-control"></a>Paso 1: crear una instancia del control Animation.
+### <a name="step-1-create-an-instance-of-the-animation-control"></a>Paso 1: Crear una instancia del control de animación.
 
-Utilice [**Animate \_ Create**](/windows/desktop/api/Commctrl/nf-commctrl-animate_create) macro para crear una instancia del control Animation.
+Use la [**macro Animar \_ crear**](/windows/desktop/api/Commctrl/nf-commctrl-animate_create) para crear una instancia del control de animación.
 
 
 ```C++
@@ -44,7 +44,7 @@ hwndAnim = Animate_Create(hwndDlg, IDC_ANIMATE,
 
 
 
-### <a name="step-2-position-the-animation-control"></a>Paso 2: colocar el control de animación.
+### <a name="step-2-position-the-animation-control"></a>Paso 2: Colocar el control de animación.
 
 Obtiene las coordenadas de pantalla del botón de control especificado.
 
@@ -56,7 +56,7 @@ GetWindowRect(GetDlgItem(hwndDlg, nIDCtl), &rc);
 
 
 
-Convierte las coordenadas de la esquina inferior izquierda en coordenadas de cliente.
+Convierta las coordenadas de la esquina inferior izquierda en coordenadas de cliente.
 
 
 ```C++
@@ -82,7 +82,7 @@ SetWindowPos(hwndAnim, 0, pt.x, pt.y + 20,
 
 ### <a name="step-3-open-the-avi-clip"></a>Paso 3: Abra el clip AVI.
 
-Llame a la macro [**animada \_ Open**](/windows/desktop/api/Commctrl/nf-commctrl-animate_open) para abrir el clip AVI y mostrar el primer fotograma en el control Animation. Llame a la función **ShowWindow** para que el control de animación sea visible.
+Llame a la macro [**Animar \_ abrir**](/windows/desktop/api/Commctrl/nf-commctrl-animate_open) para abrir el clip AVI y mostrar el primer fotograma en el control de animación. Llame a **la función ShowWindow** para que el control de animación sea visible.
 
 
 ```C++
@@ -154,7 +154,7 @@ HWND CreateAnimationCtrl(HWND hwndDlg, int nIDCtl)
 [Acerca de los controles de animación](animation-control-overview.md)
 </dt> <dt>
 
-[Referencia de control de animación](bumper-animation-animation-control-reference.md)
+[Referencia de controles de animación](bumper-animation-animation-control-reference.md)
 </dt> <dt>
 
 [Usar controles de animación](using-animation-control.md)
@@ -163,9 +163,9 @@ HWND CreateAnimationCtrl(HWND hwndDlg, int nIDCtl)
 [Animación](animation-control-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

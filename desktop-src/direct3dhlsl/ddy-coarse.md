@@ -1,9 +1,9 @@
 ---
-title: ddy_coarse función)
-description: Calcula un derivado parcial de precisión baja con respecto a la coordenada y del espacio de pantalla.
+title: ddy_coarse función
+description: Calcula un derivado parcial de precisión baja con respecto a la coordenada Y del espacio de pantalla.
 ms.assetid: f6103cd3-f7ee-41c2-b3cf-9e72ca84b25e
 keywords:
-- ddy_coarse de la función HLSL
+- ddy_coarse función HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,22 +13,22 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b6fef330e919a31e39306742bb03280454d47626
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 997b17d486d5e0a396e420bdc7b36da9d7ef83366a0d5c290110cf1cf2098c25
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104076882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119490645"
 ---
-# <a name="ddy_coarse-function"></a>DDY \_ función gruesa
+# <a name="ddy_coarse-function"></a>ddy \_ coarse (función)
 
-Calcula un derivado parcial de precisión baja con respecto a la coordenada y del espacio de pantalla.
+Calcula un derivado parcial de precisión baja con respecto a la coordenada Y del espacio de pantalla.
 
 ## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 float ddy_coarse(
-  in float value
+  in float value
 );
 ```
 
@@ -36,7 +36,7 @@ float ddy_coarse(
 
 <dl> <dt>
 
-*valor* \[ de de\]
+*value* \[ En\]
 </dt> <dd>
 
 Tipo: **float**
@@ -49,9 +49,9 @@ Valor de entrada.
 
 Tipo: **float**
 
-Derivado parcial de precisión baja de *Value*.
+Derivado parcial de precisión baja del *valor*.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 También están disponibles las siguientes versiones sobrecargadas:
 
@@ -61,7 +61,7 @@ float3 ddy_coarse(float3 value);
 float4 ddy_coarse(float4 value);
 ```
 
-### <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+### <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -69,23 +69,23 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                | Compatible |
 |-----------------------------------------------------------------------------|-----------|
-| Modelos de sombreador [modelo 5](d3d11-graphics-reference-sm5.md) y versiones posteriores | sí       |
+| [Modelos de sombreador 5](d3d11-graphics-reference-sm5.md) y superiores | Sí       |
 
 
 
- 
+ 
 
 Esta función se admite en los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     |         |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vea también
 
@@ -94,12 +94,12 @@ Esta función se admite en los siguientes tipos de sombreadores:
 [Funciones intrínsecas](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

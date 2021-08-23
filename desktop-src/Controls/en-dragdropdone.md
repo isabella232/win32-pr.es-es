@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de EN_DRAGDROPDONE (RichEdit. h)
-description: Notifica a la ventana primaria de un control Rich Edit que se ha completado la operación de arrastrar y colocar. Un control Rich Edit envía este código de notificación en forma de mensaje de \_ notificación de WM.
+title: EN_DRAGDROPDONE de notificación (Richedit.h)
+description: Notifica a la ventana primaria de un control de edición enriquecido que se ha completado la operación de arrastrar y colocar. Un control de edición enriquecido envía este código de notificación en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 3c8b95cc-86ef-4aec-b551-11dca50ea5c5
 keywords:
-- EN_DRAGDROPDONE controles de código de notificación de Windows
+- EN_DRAGDROPDONE código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a10b6718122791bcc862866fbaf17ed43e8bfd0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fb498361de04184823ab0d0652cc32adc9cbb1978bd6f303b7b215417f99f552
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103995979"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119436875"
 ---
-# <a name="en_dragdropdone-notification-code"></a>\_Código de notificación en DRAGDROPDONE
+# <a name="en_dragdropdone-notification-code"></a>Código de notificación EN \_ DRAGDROPDONE
 
-Notifica a la ventana primaria de un control Rich Edit que se ha completado la operación de arrastrar y colocar. Un control Rich Edit envía este código de notificación en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Notifica a la ventana primaria de un control de edición enriquecido que se ha completado la operación de arrastrar y colocar. Un control de edición enriquecido envía este código de notificación en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ EN_DRAGDROPDONE
 *lParam* 
 </dt> <dd>
 
-Una estructura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) .
+Estructura [**NMHDR.**](/windows/desktop/api/richedit/ns-richedit-nmhdr)
 
 </dd> </dl>
 
@@ -49,9 +49,9 @@ Una estructura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) .
 
 Este código de notificación no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para recibir un \_ código de notificación en DRAGDROPDONE, especifique la marca [**\_ DRAGDROPDONE de ENM**](rich-edit-control-event-mask-flags.md) en la máscara enviada con el mensaje [**em \_ SETEVENTMASK**](em-seteventmask.md) .
+Para recibir un código de notificación EN DRAGDROPDONE, especifique la marca \_ [**ENM \_ DRAGDROPDONE**](rich-edit-control-event-mask-flags.md) en la máscara enviada con el [**mensaje EM \_ SETEVENTMASK.**](em-seteventmask.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ Para recibir un \_ código de notificación en DRAGDROPDONE, especifique la marc
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Para recibir un \_ código de notificación en DRAGDROPDONE, especifique la marc
 **Referencia**
 </dt> <dt>
 
-[**una \_ SETEVENTMASK**](em-seteventmask.md)
+[**EM \_ SETEVENTMASK**](em-seteventmask.md)
 </dt> </dl>
 
  

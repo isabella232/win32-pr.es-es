@@ -1,10 +1,10 @@
 ---
-title: Enumeración DRM_HTTP_STATUS (Drmexternals. h)
-description: El \_ \_ tipo de enumeración de estado http de DRM define un intervalo de Estados para una solicitud DRM.
+title: DRM_HTTP_STATUS enumeración (Drmexternals.h)
+description: El tipo de \_ enumeración DRM HTTP \_ STATUS define un intervalo de estados para una solicitud DRM.
 ms.assetid: 9e0fb060-3fbf-45d0-872b-4d666ea9a88d
 keywords:
-- DRM_HTTP_STATUS enumeración formato de Windows Media
-- enumeración Windows Media Format
+- DRM_HTTP_STATUS enumeración windows Media Format
+- enumeración windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 93d61803cab6cb80932402e429e77228a1611fd9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e222cbf24e6333c7105e8564a5ad255693340749aeea32d98bd013bcb40995d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676865"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119586305"
 ---
-# <a name="drm_http_status-enumeration-drmexternalsh"></a>Enumeración DRM_HTTP_STATUS (Drmexternals. h)
+# <a name="drm_http_status-enumeration-drmexternalsh"></a>DRM_HTTP_STATUS enumeración (Drmexternals.h)
 
-El tipo de enumeración de **\_ \_ Estado http de DRM** define un intervalo de Estados para una solicitud [*DRM*](wmformat-glossary.md) .
+El **tipo de \_ \_ enumeración DRM HTTP STATUS** define un intervalo de estados para una solicitud [*DRM.*](wmformat-glossary.md)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -45,44 +45,44 @@ typedef enum DRM_HTTP_STATUS {
 
 <dl> <dt>
 
-<span id="HTTP_NOTINITIATED"></span><span id="http_notinitiated"></span>**\_NOTINITIATED http**
+<span id="HTTP_NOTINITIATED"></span><span id="http_notinitiated"></span>**HTTP \_ NOTINITIATED**
 </dt> <dd>
 
-No se han iniciado las operaciones HTTP.
+Las operaciones HTTP no se han iniciado.
 
 </dd> <dt>
 
-<span id="HTTP_CONNECTING"></span><span id="http_connecting"></span>**\_Conexión http**
+<span id="HTTP_CONNECTING"></span><span id="http_connecting"></span>**CONEXIÓN \_ HTTP**
 </dt> <dd>
 
-Se está estableciendo la conexión.
+Se establece la conexión.
 
 </dd> <dt>
 
-<span id="HTTP_REQUESTING"></span><span id="http_requesting"></span>**\_solicitud http**
+<span id="HTTP_REQUESTING"></span><span id="http_requesting"></span>**SOLICITUD \_ HTTP**
 </dt> <dd>
 
-Se están solicitando los datos.
+Se solicitan datos.
 
 </dd> <dt>
 
-<span id="HTTP_RECEIVING"></span><span id="http_receiving"></span>**\_recepción http**
+<span id="HTTP_RECEIVING"></span><span id="http_receiving"></span>**RECEPCIÓN \_ HTTP**
 </dt> <dd>
 
-Se están recibiendo los datos.
+Se reciben datos.
 
 </dd> <dt>
 
-<span id="HTTP_COMPLETED"></span><span id="http_completed"></span>**HTTP \_ completado**
+<span id="HTTP_COMPLETED"></span><span id="http_completed"></span>**HTTP \_ COMPLETADO**
 </dt> <dd>
 
 Las operaciones HTTP se han completado.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta enumeración se usa en la estructura de [**\_ \_ Estado**](wm-individualize-status.md) de la función de WM.
+La estructura WM [**\_ INDIVIDUALIZE \_ STATUS**](wm-individualize-status.md) utiliza esta enumeración.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -92,8 +92,8 @@ Esta enumeración se usa en la estructura de [**\_ \_ Estado**](wm-individualize
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                      |
-| Versión<br/>                  | SDK de Windows Media Format 7 o versiones posteriores del SDK<br/>                       |
-| Encabezado<br/>                   | <dl> <dt>Drmexternals. h</dt> </dl> |
+| Versión<br/>                  | Windows SDK de formato multimedia 7 o versiones posteriores del SDK<br/>                       |
+| Header<br/>                   | <dl> <dt>Drmexternals.h</dt> </dl> |
 
 
 
@@ -101,7 +101,7 @@ Esta enumeración se usa en la estructura de [**\_ \_ Estado**](wm-individualize
 
 <dl> <dt>
 
-[**\_Estado de individualización de DRM \_**](drm-individualization-status.md)
+[**ESTADO \_ DE INDIVIDUALIZACIÓN DE DRM \_**](drm-individualization-status.md)
 </dt> <dt>
 
 [**Tipos de enumeración**](enumeration-types.md)

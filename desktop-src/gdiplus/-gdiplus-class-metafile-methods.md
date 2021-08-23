@@ -1,21 +1,21 @@
 ---
-description: En este tema se enumeran los métodos de la clase Metafile. Para obtener una lista de clases completa, vea Metafile (clase).
+description: En este tema se enumeran los métodos de la clase Metafile. Para obtener una lista de clases completa, vea Metafile Class.
 ms.assetid: 80a57b90-fa62-4cce-a658-f12dcbfd9d24
-title: Metarchivo (métodos)
+title: Métodos de metarchivo
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f6607f1fe1af698abd802e56fa3f362753237fc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ce3af0b3c854378a93ddcd0a755eb79cbaa019e76c3a4e90cb2e78d6eab1a80
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104997553"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119557445"
 ---
-# <a name="metafile-methods"></a>Metarchivo (métodos)
+# <a name="metafile-methods"></a>Métodos de metarchivo
 
-En este tema se enumeran los métodos de la clase [**Metafile**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-metafile) . Para obtener una lista de clases completa, vea **Metafile (clase**).
+En este tema se enumeran los métodos de la [**clase Metafile.**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-metafile) Para obtener una lista de clases completa, vea **Metafile Class**.
 
--   [**Clonar**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-clone)
+-   [**Clon**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-clone)
 -   [**ConvertToEmfPlus**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-converttoemfplus(inconstgraphics_inoutint_inemftype_inconstwchar))
 -   [**ConvertToEmfPlus**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-converttoemfplus(inconstgraphics_inistream_inoutint_inemftype_inconstwchar))
 -   [**ConvertToEmfPlus**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-converttoemfplus(inconstgraphics_inconstwchar_inoutint_inemftype_inconstwchar))
@@ -38,11 +38,11 @@ En este tema se enumeran los métodos de la clase [**Metafile**](/windows/deskto
 -   [**GetHorizontalResolution**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-gethorizontalresolution)
 -   [**GetItemData**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getitemdata)
 -   [**GetLastStatus**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getlaststatus)
--   [**GetMetafileHeader (WCHAR \* , MetafileHeader \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-getmetafileheader(inconstwchar_outmetafileheader))
--   [**GetMetafileHeader (HENHMETAFILE \* , MetafileHeader \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-getmetafileheader(inhenhmetafile_outmetafileheader))
--   [**GetMetafileHeader (HMETAFILE, WmfPlaceableFileHeader \* , MetafileHeader \* )**](/previous-versions//ms535278(v=vs.85))
--   [**GetMetafileHeader (MetafileHeader \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-getmetafileheader(outmetafileheader))
--   [**GetMetafileHeader (IStream \* , MetafileHeader \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-getmetafileheader(inistream_outmetafileheader))
+-   [**GetMetafileHeader(WCHAR \* , MetafileHeader \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-getmetafileheader(inconstwchar_outmetafileheader))
+-   [**GetMetafileHeader(HEHEADERMETAFILE \* ,MetafileHeader \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-getmetafileheader(inhenhmetafile_outmetafileheader))
+-   [**GetMetafileHeader(HMETAFILE,WmfPlaceableFileHeader \* ,MetafileHeader \* )**](/previous-versions//ms535278(v=vs.85))
+-   [**GetMetafileHeader(MetafileHeader \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-getmetafileheader(outmetafileheader))
+-   [**GetMetafileHeader(IStream \* ,MetafileHeader \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-getmetafileheader(inistream_outmetafileheader))
 -   [**GetPalette**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getpalette)
 -   [**GetPaletteSize**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getpalettesize)
 -   [**GetPhysicalDimension**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getphysicaldimension)
@@ -54,18 +54,18 @@ En este tema se enumeran los métodos de la clase [**Metafile**](/windows/deskto
 -   [**GetPropertySize**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getpropertysize)
 -   [**GetRawFormat**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getrawformat)
 -   [**GetThumbnailImage**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getthumbnailimage)
--   [**GetType**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-gettype)
+-   [**Gettype**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-gettype)
 -   [**GetVerticalResolution**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getverticalresolution)
 -   [**GetWidth**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getwidth)
 -   [**PlayRecord**](/windows/desktop/api/gdiplusheaders/nf-gdiplusheaders-metafile-playrecord)
 -   [**RemovePropertyItem**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-removepropertyitem)
 -   [**RotateFlip**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-rotateflip)
--   [**Guardar (IStream \* , CLSID \* , EncoderParameters \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-save(inistream_inconstclsid_inconstencoderparameters))
--   [**Guardar (WCHAR \* , CLSID \* , EncoderParameters \* )**](/previous-versions//ms535407(v=vs.85))
--   [**SaveAdd (EncoderParameters \* )**](/previous-versions//ms535408(v=vs.85))
--   [**SaveAdd (imagen \* , EncoderParameters \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-saveadd(inimage_inconstencoderparameters))
+-   [**Save(IStream \* , CLSID \* , EncoderParameters \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-save(inistream_inconstclsid_inconstencoderparameters))
+-   [**Save(WCHAR \* , CLSID \* , EncoderParameters \* )**](/previous-versions//ms535407(v=vs.85))
+-   [**SaveAdd(EncoderParameters \* )**](/previous-versions//ms535408(v=vs.85))
+-   [**SaveAdd(Image \* ,EncoderParameters \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-saveadd(inimage_inconstencoderparameters))
 -   [**SelectActiveFrame**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-selectactiveframe)
--   [**Tabor**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-setabort)
+-   [**SetAbort**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-setabort)
 -   [**SetDownLevelRasterizationLimit**](/windows/desktop/api/gdiplusheaders/nf-gdiplusheaders-metafile-setdownlevelrasterizationlimit)
 -   [**SetPalette**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-setpalette)
 -   [**SetPropertyItem**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-setpropertyitem)

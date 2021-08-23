@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-Phonetic-Department
-description: Contiene el nombre del Departamento fonético en el que trabaja la persona.
+title: Atributo ms-DS-Phonetic-Department
+description: Contiene el nombre del departamento fonético donde trabaja la persona.
 ms.assetid: a5e2820b-462c-4e39-a3dc-64c733141afe
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-Phonetic-Department
-- Esquema de AD de atributo msDS-PhoneticDepartment
+- Esquema de AD del atributo ms-DS-Phonetic-Department
+- Esquema de AD del atributo msDS-PhoneticDepartment
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 61a69abf69bd0fcf69767b3bb4590c2b995d5aa4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 432ffc8d2f1bd04c0faf2b3e6767c9e87e8e0d9d7e7b8f10f249a3ead5df5e68
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804675"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119294475"
 ---
-# <a name="ms-ds-phonetic-department-attribute"></a>atributo MS-DS-Phonetic-Department
+# <a name="ms-ds-phonetic-department-attribute"></a>Atributo ms-DS-Phonetic-Department
 
-Contiene el nombre del Departamento fonético en el que trabaja la persona.
+Contiene el nombre del departamento fonético donde trabaja la persona.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-DS-Phonetic-Departamento                   |
-| Nombre para mostrar de LDAP | msDS-PhoneticDepartment                     |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | ms-DS-Phonetic-Department                   |
+| Ldap-Display-Name | msDS-PhoneticDepartment                     |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1944                     |
-| System-ID-GUID    | 6cd53daf-003e-49e7-a702-6fa896e7a6ef        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 6cd53daf-003e-49e7-a702-6fa896e7a6ef        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -52,13 +52,13 @@ Contiene el nombre del Departamento fonético en el que trabaja la persona.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x8C90                                                             |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | True                                                               |
-| En el catálogo global      | True                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Verdadero                                                               |
+| En el catálogo global      | Verdadero                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000005                                                         |
@@ -73,13 +73,13 @@ Contiene el nombre del Departamento fonético en el que trabaja la persona.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x8C90                                                             |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | True                                                               |
-| En el catálogo global      | True                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Verdadero                                                               |
+| En el catálogo global      | Verdadero                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000005                                                         |
@@ -94,13 +94,13 @@ Contiene el nombre del Departamento fonético en el que trabaja la persona.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x8C90                                                             |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | True                                                               |
-| En el catálogo global      | True                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Verdadero                                                               |
+| En el catálogo global      | Verdadero                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000005                                                         |

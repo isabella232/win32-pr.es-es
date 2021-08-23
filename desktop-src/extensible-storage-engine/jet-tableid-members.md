@@ -1,27 +1,27 @@
 ---
-description: 'Más información acerca de: JET_TABLEID miembros'
-title: Miembros de JET_TABLEID
+description: 'Más información sobre: JET_TABLEID miembros'
+title: JET_TABLEID miembros
 TOCTitle: JET_TABLEID members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.JET_TABLEID
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_tableid_members(v=EXCHG.10)
 ms:contentKeyID: 39515388
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 36375e4ef8bfe243e851a07f9383d9af05ea4f14
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9740718a6d5b91cd8bc10bc1d04ce38fc5a29ffe7cc7bbe1dc207efecb839ba2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104565939"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119472775"
 ---
-# <a name="jet_tableid-members"></a>Miembros de JET_TABLEID
+# <a name="jet_tableid-members"></a>JET_TABLEID miembros
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Un JET_TABLEID contiene un identificador para el cursor de base de datos que se va a usar para una llamada a la API de JET. Un cursor solo se puede usar con la sesión que se usó para abrir ese cursor.
+Un JET_TABLEID contiene un identificador para el cursor de base de datos que se usará para una llamada a la API jet. Un cursor solo se puede usar con la sesión que se usó para abrir ese cursor.
 
-El tipo de [JET_TABLEID](./jet-tableid-structure.md) expone los siguientes miembros.
+El [JET_TABLEID](./jet-tableid-structure.md) expone los miembros siguientes.
 
 ## <a name="properties"></a>Propiedades
 
@@ -36,8 +36,8 @@ El tipo de [JET_TABLEID](./jet-tableid-structure.md) expone los siguientes miemb
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
-<td><a href="hh558295(v=exchg.10).md">Nulo</a></td>
-<td>Obtiene un JET_TABLEID nulo.</td>
+<td><a href="hh558295(v=exchg.10).md">Nula</a></td>
+<td>Obtiene un valor null JET_TABLEID.</td>
 </tr>
 </tbody>
 </table>
@@ -58,27 +58,27 @@ Superior
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="hh564469(v=exchg.10).md">Equals (Object)</a></td>
-<td>Devuelve un valor que indica si esta instancia es igual a otra instancia de. (Invalida <a href="/dotnet/api/system.valuetype.equals#System_ValueType_Equals_System_Object_">ValueType. Equals (Object)</a>).</td>
+<td><a href="hh564469(v=exchg.10).md">Equals(Object)</a></td>
+<td>Devuelve un valor que indica si esta instancia es igual a otra instancia. (Invalida <a href="/dotnet/api/system.valuetype.equals#System_ValueType_Equals_System_Object_">ValueType.Equals(Object)</a>).</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="hh565781(v=exchg.10).md">Es igual a (JET_TABLEID)</a></td>
-<td>Devuelve un valor que indica si esta instancia es igual a otra instancia de.</td>
+<td><a href="hh565781(v=exchg.10).md">Equals(JET_TABLEID)</a></td>
+<td>Devuelve un valor que indica si esta instancia es igual a otra instancia.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizar</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="hh557515(v=exchg.10).md">GetHashCode</a></td>
-<td>Devuelve el código hash de esta instancia. (Invalida <a href="/dotnet/api/system.valuetype.gethashcode#System_ValueType_GetHashCode">ValueType. GetHashCode ()</a>).</td>
+<td>Devuelve el código hash de esta instancia. (Invalida <a href="/dotnet/api/system.valuetype.gethashcode#System_ValueType_GetHashCode">ValueType.GetHashCode()</a>).</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">Gettype</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="even">
@@ -89,11 +89,11 @@ Superior
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="hh596766(v=exchg.10).md">ToString()</a></td>
-<td>Generar una representación de cadena de la estructura. (Invalida <a href="/dotnet/api/system.valuetype.tostring#System_ValueType_ToString">ValueType. ToString ()</a>).</td>
+<td>Genere una representación de cadena de la estructura . (Invalida <a href="/dotnet/api/system.valuetype.tostring#System_ValueType_ToString">ValueType.ToString()</a>).</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="hh557544(v=exchg.10).md">ToString (String, IFormatProvider)</a></td>
+<td><a href="hh557544(v=exchg.10).md">ToString(String, IFormatProvider)</a></td>
 <td>Da formato al valor de la instancia actual usando el formato especificado.</td>
 </tr>
 </tbody>
@@ -133,6 +133,6 @@ Superior
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_TABLEID](./jet-tableid-structure.md)
+[JET_TABLEID estructura](./jet-tableid-structure.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

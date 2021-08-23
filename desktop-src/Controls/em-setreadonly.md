@@ -1,9 +1,9 @@
 ---
-title: Mensaje de EM_SETREADONLY (Winuser. h)
-description: Establece o quita el estilo de solo lectura (ES \_ ReadOnly) de un control de edición. Puede enviar este mensaje a un control de edición o a un control Rich Edit.
+title: EM_SETREADONLY mensaje (Winuser.h)
+description: Establece o quita el estilo de solo lectura (ES \_ READONLY) de un control de edición. Puede enviar este mensaje a un control de edición o a un control de edición enriquecido.
 ms.assetid: a10b3f57-0e67-4a0f-89f3-9c8ebd1514f8
 keywords:
-- EM_SETREADONLY controles de mensajes de Windows
+- EM_SETREADONLY controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a0b224e11212077703ab62ab6a180875672c879e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d46726c1247f7ef93c00e495ca77ad3d337253705bd3018a0480fc9588c22f8d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150230"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119437515"
 ---
-# <a name="em_setreadonly-message"></a>\_Mensaje SETREADONLY em
+# <a name="em_setreadonly-message"></a>Mensaje \_ EM SETREADONLY
 
-Establece o quita el estilo de solo lectura ([**es \_ ReadOnly**](edit-control-styles.md)) de un control de edición. Puede enviar este mensaje a un control de edición o a un control Rich Edit.
+Establece o quita el estilo de solo lectura [**(ES \_ READONLY)**](edit-control-styles.md)de un control de edición. Puede enviar este mensaje a un control de edición o a un control de edición enriquecido.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,7 +32,7 @@ Establece o quita el estilo de solo lectura ([**es \_ ReadOnly**](edit-control-s
 *wParam* 
 </dt> <dd>
 
-Especifica si se debe establecer o quitar el estilo [**es de \_ solo lectura**](edit-control-styles.md) . Un valor de **true** establece el estilo **es de \_ solo lectura** ; un valor de **false** quita el estilo **es de \_ solo lectura** .
+Especifica si se debe establecer o quitar el [**estilo ES \_ READONLY.**](edit-control-styles.md) Un valor **true establece** el estilo ES **\_ READONLY;** un valor de **FALSE** quita el estilo **ES \_ READONLY.**
 
 </dd> <dt>
 
@@ -51,11 +51,11 @@ Si se produce un error en la operación, el valor devuelto es cero.
 
 ## <a name="remarks"></a>Observaciones
 
-Cuando un control de edición tiene el estilo [**es de \_ solo lectura**](edit-control-styles.md) , el usuario no puede cambiar el texto dentro del control de edición.
+Cuando un control de edición tiene [**el estilo ES \_ READONLY,**](edit-control-styles.md) el usuario no puede cambiar el texto dentro del control de edición.
 
-Para determinar si un control de edición tiene el estilo [**es de \_ solo lectura**](edit-control-styles.md) , use la función [**GetWindowLong**](/windows/desktop/api/winuser/nf-winuser-getwindowlonga) con la \_ marca de estilo GWL.
+Para determinar si un control de edición tiene el estilo [**ES \_ READONLY,**](edit-control-styles.md) use la [**función GetWindowLong**](/windows/desktop/api/winuser/nf-winuser-getwindowlonga) con la marca GWL \_ STYLE.
 
-**Edición enriquecida:** Compatible con Microsoft Rich Edit 1,0 y versiones posteriores. Para obtener información sobre la compatibilidad de las versiones de edición enriquecidas con las distintas versiones del sistema, vea acerca de los [controles Rich Edit](about-rich-edit-controls.md).
+**Edición enriquecte:** Compatible con Microsoft Rich Edit 1.0 y versiones posteriores. Para obtener información sobre la compatibilidad de las versiones de edición enriquecciones con las distintas versiones del sistema, vea [About Rich Edit Controls](about-rich-edit-controls.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,9 +63,9 @@ Para determinar si un control de edición tiene el estilo [**es de \_ solo lectu
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

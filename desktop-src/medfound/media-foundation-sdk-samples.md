@@ -1,15 +1,15 @@
 ---
-description: En esta sección se describen las aplicaciones de ejemplo que muestran cómo usar Media Foundation. Encoding SamplesPlayback SamplesPlug-InsSource Reader SamplesVideo CaptureMiscellaneous SamplesDeprecated u obsoleto SamplesRelated temas
+description: En esta sección se describen las aplicaciones de ejemplo que muestran cómo usar Media Foundation.Encoding SamplesPlayback SamplesPlug-InsSource Reader SamplesVideo CaptureDecellaneous SamplesDeprecated or Obsolete SamplesRelated topics
 ms.assetid: 9d460107-ec12-4df5-a7a9-d19943685599
 title: Muestras de SDK de Media Foundation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f335b5ba744b098efdb7570aa861ad36fc9216cf
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: aa7d07d4136e613b4c6b553aa089834f58ccf65b6b87043ec5148d8db4ee6547
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "103820247"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119465151"
 ---
 # <a name="media-foundation-sdk-samples"></a>Muestras de SDK de Media Foundation
 
@@ -17,11 +17,11 @@ En esta sección se describen las aplicaciones de ejemplo que muestran cómo usa
 
 -   [Ejemplos de codificación](#encoding-samples)
 -   [Ejemplos de reproducción](#playback-samples)
--   [Complementos de](#plug-ins)
--   [Ejemplos de lector de código fuente](#source-reader-samples)
+-   [Complementos](#plug-ins)
+-   [Ejemplos de lector de origen](#source-reader-samples)
 -   [Captura de vídeo](#video-capture)
--   [Varios ejemplos](#miscellaneous-samples)
--   [Ejemplos desusados u obsoletos](#deprecated-or-obsolete-samples)
+-   [Ejemplos varios](#miscellaneous-samples)
+-   [Ejemplos obsoletos o en desuso](#deprecated-or-obsolete-samples)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="encoding-samples"></a>Ejemplos de codificación
@@ -30,7 +30,7 @@ En esta sección se describen las aplicaciones de ejemplo que muestran cómo usa
 
 | Muestra                            | Descripción                                                 |
 |-----------------------------------|-------------------------------------------------------------|
-| [Transcodificar](transcode-sample.md) | Muestra cómo recodificar un archivo multimedia en el formato de Windows Media. |
+| [Transcodificación](transcode-sample.md) | Muestra cómo volver a codificar un archivo multimedia para Windows formato multimedia. |
 
 
 
@@ -42,9 +42,9 @@ En esta sección se describen las aplicaciones de ejemplo que muestran cómo usa
 
 | Muestra                                            | Descripción                                                                                                                                                                                                     |
 |---------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [BasicPlayback](/previous-versions//bb970475(v=vs.85))          | Reproduce archivos de audio y vídeo mediante la [sesión multimedia](media-session.md). Este ejemplo muestra cómo crear topologías de reproducción, controlar la sesión multimedia y recibir eventos de sesión durante la reproducción. |
-| [MFPlayer](/previous-versions//bb970516(v=vs.85))                    | Muestra algunas funciones de reproducción que no se incluyen en el ejemplo [BasicPlayback](/previous-versions//bb970475(v=vs.85)) .                                                                                              |
-| [ProtectedPlayback](protectedplayback-sample.md) | Reproduce archivos de audio y vídeo protegidos. En este ejemplo se muestra cómo usar la sesión de la ruta de acceso a medios protegidos (PMP) y cómo usar objetos de habilitador de contenido.                                                              |
+| [BasicPlayback](/previous-versions//bb970475(v=vs.85))          | Reproduce archivos de audio y vídeo mediante la [sesión multimedia](media-session.md). En este ejemplo se muestra cómo crear topologías de reproducción, controlar la sesión multimedia y recibir eventos de sesión durante la reproducción. |
+| [MFPlayer](/previous-versions//bb970516(v=vs.85))                    | Muestra algunas funciones de reproducción que no se incluyen en el [ejemplo BasicPlayback.](/previous-versions//bb970475(v=vs.85))                                                                                              |
+| [ProtectedPlayback](protectedplayback-sample.md) | Reproduce archivos de audio y vídeo protegidos. En este ejemplo se muestra cómo usar la sesión de ruta de acceso multimedia protegida (PMP) y cómo usar objetos habilitador de contenido.                                                              |
 
 
 
@@ -56,26 +56,26 @@ En esta sección se describen las aplicaciones de ejemplo que muestran cómo usa
 
 | Muestra                                       | Sub-Area                         | Descripción                                                                                            |
 |----------------------------------------------|----------------------------------|--------------------------------------------------------------------------------------------------------|
-| [Descodificador](decoder-sample.md)                | Media Foundation Transform (MFT) | Descodificador de vídeo.                                                                                         |
-| [EVRPresenter](evrpresenter-sample.md)      | Varios                    | Presentador personalizado para el [representador de vídeo mejorado](enhanced-video-renderer.md) (EVR).                 |
-| [AudioDelay de MFT \_](mft-audiodelay-sample.md) | MAESTRA                              | Transformación de efecto de audio. Muestra cómo escribir una MFT básica para el procesamiento de audio.                           |
-| [\_Escala de grises de MFT](mft-grayscale-sample.md)   | MAESTRA                              | Efecto de vídeo de escala de grises. Muestra cómo escribir una MFT básica para el procesamiento de vídeo.                           |
-| [MPEG1Source](mpeg1source-sample.md)        | Origen de medios                     | Analiza los flujos de capas de sistemas MPEG-1. Muestra cómo escribir un origen multimedia personalizado y un controlador de flujo de bytes. |
-| [WavSink](wavsink-sample.md)                | Receptor de medios                       | Un receptor de archivo que escribe archivos. wav. Muestra cómo escribir un receptor de multimedia personalizado.                        |
-| [WavSource](wavsource-sample.md)            | Origen de medios                     | Analiza los archivos. wav. Muestra cómo escribir un origen multimedia personalizado y un controlador de flujo de bytes.                   |
+| [Descodificador](decoder-sample.md)                | Media Foundation transformación (MFT) | Descodificador de vídeo.                                                                                         |
+| [EVRPresenter](evrpresenter-sample.md)      | Varios                    | Presentador personalizado para [el representador de vídeo mejorado](enhanced-video-renderer.md) (EVR).                 |
+| [AudioDelay de MFT \_](mft-audiodelay-sample.md) | Mft                              | Transformación de efecto de audio. Muestra cómo escribir un MFT básico para el procesamiento de audio.                           |
+| [Escala de grises de MFT \_](mft-grayscale-sample.md)   | Mft                              | Efecto de vídeo de escala de grises. Muestra cómo escribir un MFT básico para el procesamiento de vídeo.                           |
+| [MPEG1Source](mpeg1source-sample.md)        | Origen multimedia                     | Analiza secuencias de capa de sistemas MPEG-1. Muestra cómo escribir un origen multimedia personalizado y un controlador de flujo de bytes. |
+| [WavSink](wavsink-sample.md)                | Receptor multimedia                       | Receptor de archivo que escribe archivos .wav. Muestra cómo escribir un receptor multimedia personalizado.                        |
+| [WavSource](wavsource-sample.md)            | Origen multimedia                     | Analiza archivos .wav. Muestra cómo escribir un origen multimedia personalizado y un controlador de flujo de bytes.                   |
 
 
 
  
 
-## <a name="source-reader-samples"></a>Ejemplos de lector de código fuente
+## <a name="source-reader-samples"></a>Ejemplos de lector de origen
 
 
 
 | Muestra                                      | Descripción                                                                         |
 |---------------------------------------------|-------------------------------------------------------------------------------------|
-| [Clip de audio](audio-clip-sample.md)         | Utiliza el [lector de origen](source-reader.md) para descodificar el audio de un archivo multimedia.      |
-| [Videominiatura](videothumbnail-sample.md) | Utiliza el [lector de origen](source-reader.md) para obtener fotogramas individuales de un archivo de vídeo. |
+| [Audio Clip](audio-clip-sample.md)         | Usa el [Lector de origen](source-reader.md) para descodificar el audio de un archivo multimedia.      |
+| [VideoThumbnail](videothumbnail-sample.md) | Usa el [Lector de origen](source-reader.md) para obtener fotogramas únicos de un archivo de vídeo. |
 
 
 
@@ -87,28 +87,28 @@ En esta sección se describen las aplicaciones de ejemplo que muestran cómo usa
 
 | Muestra                                        | Descripción                                                                                 |
 |-----------------------------------------------|---------------------------------------------------------------------------------------------|
-| [MFCaptureD3D](mfcaptured3d-sample.md)       | Muestra cómo obtener una vista previa de vídeo desde un dispositivo de captura de vídeo, usando Direct3D para representar el vídeo. |
-| [MFCaptureToFile](mfcapturetofile-sample.md) | Muestra cómo capturar vídeo de una cámara de vídeo a un archivo.                                   |
+| [MFCaptureD3D](mfcaptured3d-sample.md)       | Muestra cómo obtener una vista previa del vídeo desde un dispositivo de captura de vídeo mediante Direct3D para representar el vídeo. |
+| [MFCaptureToFile](mfcapturetofile-sample.md) | Muestra cómo capturar vídeo desde una cámara de vídeo a un archivo.                                   |
 
 
 
  
 
-## <a name="miscellaneous-samples"></a>Varios ejemplos
+## <a name="miscellaneous-samples"></a>Ejemplos varios
 
 
 
 | Muestra                                         | Descripción                                                                                                                                           |
 |------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ASFParser](asfparser-sample.md)              | Muestra cómo analizar los datos de un archivo de formato de sistema avanzado (ASF).                                                                                   |
-| [DXVA-HD](dxva-hd-sample.md)                  | Muestra cómo usar Microsoft DirectX video Acceleration High Definition (DXVA-HD).                                                                      |
-| [Videoproc DXVA2 \_](dxva2-videoproc-sample.md) | Usa la aceleración de vídeo de DirectX (DXVA) 2,0 para crear un flujo de vídeo 4:2:2 YUV. En este ejemplo se muestra cómo usar las características de procesamiento de vídeo de DXVA. |
+| [ASFParser](asfparser-sample.md)              | Muestra cómo analizar datos de un archivo de formato de sistemas avanzados (ASF).                                                                                   |
+| [DXVA-HD](dxva-hd-sample.md)                  | Muestra cómo usar alta definición de aceleración de vídeo de Microsoft DirectX (DXVA-HD).                                                                      |
+| [DXVA2 \_ VideoProc](dxva2-videoproc-sample.md) | Usa DirectX Video Acceleration (DXVA) 2.0 para crear una secuencia de vídeo YUV de 4:2:2. En este ejemplo se muestra cómo usar las características de procesamiento de vídeo de DXVA. |
 
 
 
  
 
-## <a name="deprecated-or-obsolete-samples"></a>Ejemplos desusados u obsoletos
+## <a name="deprecated-or-obsolete-samples"></a>Ejemplos obsoletos o en desuso
 
 
 
@@ -126,14 +126,14 @@ En esta sección se describen las aplicaciones de ejemplo que muestran cómo usa
 <tbody>
 <tr class="odd">
 <td><a href="mfplayer2-sample.md">MFPlayer2</a></td>
-<td>Muestra algunas características de reproducción avanzada de la API de <a href="using-mfplay-for-audio-video-playback.md">MFPlay</a> .</td>
+<td>Muestra algunas características avanzadas de reproducción de la API <a href="using-mfplay-for-audio-video-playback.md">MFPlay.</a></td>
 </tr>
 <tr class="even">
 <td><a href="/previous-versions//bb970336(v=vs.85)">PlaybackFX</a></td>
-<td>Aplica un efecto de escala de grises a un vídeo. Muestra cómo insertar MFTs en una topología de reproducción.<br/>
+<td>Aplica un efecto de escala de grises al vídeo. Muestra cómo insertar mfts en una topología de reproducción.<br/>
 <blockquote>
 [!Note]<br />
-Este ejemplo ya no se incluye en el SDK de.
+Este ejemplo ya no se incluye en el SDK.
 </blockquote>
 <br/></td>
 </tr>
@@ -142,17 +142,17 @@ Este ejemplo ya no se incluye en el SDK de.
 <td>Reproduce una secuencia de archivos de audio mediante el origen del secuenciador.<br/>
 <blockquote>
 [!Note]<br />
-Este ejemplo ya no se incluye en el SDK de.
+Este ejemplo ya no se incluye en el SDK.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="even">
 <td><a href="simplecapture-sample.md">SimpleCapture</a></td>
-<td>Muestra cómo obtener una vista previa de vídeo desde un dispositivo de captura de vídeo mediante la API de MFPlay.</td>
+<td>Muestra cómo obtener una vista previa del vídeo desde un dispositivo de captura de vídeo mediante la API MFPlay.</td>
 </tr>
 <tr class="odd">
 <td><a href="simpleplay-sample.md">SimplePlay</a></td>
-<td>Muestra cómo reproducir un archivo multimedia mediante la API de MFPlay.</td>
+<td>Muestra cómo reproducir un archivo multimedia mediante la API MFPlay.</td>
 </tr>
 </tbody>
 </table>

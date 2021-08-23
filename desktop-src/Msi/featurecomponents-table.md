@@ -1,25 +1,25 @@
 ---
-description: La tabla FeatureComponents define la relación entre las características y los componentes de. Para cada característica, en esta tabla se enumeran todos los componentes que componen esa característica.
+description: La tabla FeatureComponents define la relación entre características y componentes. Para cada característica, en esta tabla se enumeran todos los componentes que la conste.
 ms.assetid: aff16483-a9ed-4675-8e87-8adf695605ee
 title: Tabla FeatureComponents
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6c93a7c020f179843916b063b48e2e4d19f7bf2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7635a43784ee7e8fbb71c7161bb07d39ffe5238177ea2a7cdaabdeb18dc41e20
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103811821"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119430875"
 ---
 # <a name="featurecomponents-table"></a>Tabla FeatureComponents
 
-La tabla FeatureComponents define la relación entre las características y los componentes de. Para cada característica, en esta tabla se enumeran todos los componentes que componen esa característica.
+La tabla FeatureComponents define la relación entre características y componentes. Para cada característica, en esta tabla se enumeran todos los componentes que la conste.
 
-La tabla FeatureComponents tiene las columnas siguientes.
+La tabla FeatureComponents tiene las siguientes columnas.
 
 
 
-| Columna      | Tipo                         | Clave | Nullable |
+| Columna      | Tipo                         | Key | Nullable |
 |-------------|------------------------------|-----|----------|
 | Característica\_   | [Identificador](identifier.md) | Y   | N        |
 | Componente\_ | [Identificador](identifier.md) | Y   | N        |
@@ -32,27 +32,27 @@ La tabla FeatureComponents tiene las columnas siguientes.
 
 <dl> <dt>
 
-<span id="Feature_"></span><span id="feature_"></span><span id="FEATURE_"></span>Ofrecen\_
+<span id="Feature_"></span><span id="feature_"></span><span id="FEATURE_"></span>Característica\_
 </dt> <dd>
 
-Una clave externa en la primera columna de la [tabla](feature-table.md)de características.
+Clave externa en la primera columna de la tabla [Feature](feature-table.md).
 
 </dd> <dt>
 
-<span id="Component_"></span><span id="component_"></span><span id="COMPONENT_"></span>Pone\_
+<span id="Component_"></span><span id="component_"></span><span id="COMPONENT_"></span>Componente\_
 </dt> <dd>
 
-Una clave externa en la primera columna de la [tabla de componentes](component-table.md).
+Clave externa en la primera columna de la [tabla Component](component-table.md).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-Existe un límite máximo de 1600 componentes por característica.
+Hay un límite máximo de 1600 componentes por característica.
 
-Dos o más características pueden compartir los componentes, es decir, se puede hacer referencia al mismo componente a través de más de una característica.
+Los componentes se pueden compartir entre dos o más características, es decir, más de una característica puede hacer referencia al mismo componente.
 
-Se hace referencia a esta tabla cuando se ejecuta la acción [PublishFeatures](publishfeatures-action.md) o la [acción UnpublishFeatures](unpublishfeatures-action.md) .
+Se hace referencia a esta tabla cuando se ejecuta la [acción PublishFeatures](publishfeatures-action.md) o la acción [UnpublishFeatures.](unpublishfeatures-action.md)
 
 ## <a name="validation"></a>Validación
 

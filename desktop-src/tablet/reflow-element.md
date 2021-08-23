@@ -1,19 +1,19 @@
 ---
-description: Indica que se ha refluido el grupo.
+description: Indica que el grupo se ha refluido.
 ms.assetid: bf4b9916-737c-4efe-8e93-da85df5f0567
 title: Elemento Reflow
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c16a6754182d82d92bfc77a8107cc25aecc8c9c
-ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
+ms.openlocfilehash: eceb00bcf01b4052ee17a50637fcfdc5979e66ac42cfc7cf9b1bb35b58f9d337
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111432117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119335415"
 ---
 # <a name="reflow-element"></a>Elemento Reflow
 
-Indica que se ha refluido el grupo.
+Indica que el grupo se ha refluido.
 
 ## <a name="definition"></a>Definición
 

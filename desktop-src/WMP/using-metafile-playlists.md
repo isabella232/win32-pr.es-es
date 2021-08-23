@@ -1,11 +1,11 @@
 ---
-title: Usar listas de reproducción de metarchivo
-description: Usar listas de reproducción de metarchivo
+title: Uso de listas de reproducción de metarchivo
+description: Uso de listas de reproducción de metarchivo
 ms.assetid: f5711a7f-7674-4b92-8262-cee8bac4aa77
 keywords:
-- Listas de reproducción de metarchivos de Windows Media, acerca de
+- Windows Listas de reproducción de metarchivo multimedia, acerca de
 - listas de reproducción, acerca de
-- listas de reproducción de metarchivos, acerca de
+- listas de reproducción de metarchivo, acerca de
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -13,53 +13,53 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 71f245d1fc1610174f842347a15dfcfaa13286e0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ec4cd47584aaba961d9faa3ba2058ab45145839787f702755ccb7a00fffbe827
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903239"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119465865"
 ---
-# <a name="using-metafile-playlists"></a>Usar listas de reproducción de metarchivo
+# <a name="using-metafile-playlists"></a>Uso de listas de reproducción de metarchivo
 
-Las listas de reproducción especifican cómo se reproducirán los archivos multimedia o multimedia de streaming y qué metadatos Media Player mostrarán.
+Las listas de reproducción especifican cómo se reproducirán los archivos multimedia o multimedia de streaming y qué metadatos Reproductor de Windows Media se mostrarán.
 
-En esta sección se explican varias formas de usar listas de reproducción. La sección se divide en los temas siguientes.
+En esta sección se explican varias maneras de usar listas de reproducción. La sección se divide en los temas siguientes.
 
 
 
 | Tema                                                                                              | Descripción                                                                                                                                                    |
 |----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Modificar la presentación](modifying-the-display.md)                                                 | Agregar texto, vínculos e imágenes.                                                                                                                                |
-| [Redireccionamiento](redirection.md)                                                                     | Usar listas de reproducción para redirigir el explorador a Windows Media Player y especificar la dirección URL de una secuencia o archivo multimedia que se va a reproducir.                                      |
-| [Obtener acceso a medios](accessing-media.md)                                                             | Usar elementos de metarchivo y sus elementos secundarios para especificar el contenido al que se va a obtener acceso y el orden y la duración de la reproducción.                               |
-| [Usar el cambio de secuencia de eventos en directo](using-live-event-stream-switching.md)                         | Usar el elemento **Event** para especificar una secuencia de medios a la que obtener acceso y, a continuación, reanudar la reproducción de la secuencia original. Se usa para la inserción de anuncios.                            |
-| [Usar metaarchivos para la conmutación de flujos sin problemas](using-metafiles-for-seamless-stream-switching.md) | Usar el elemento **Event** para cargar previamente el siguiente flujo multimedia al que obtener acceso para evitar brechas en la presentación.                                                      |
-| [Usar anuncios](using-announcements.md)                                                     | Uso de un metarchivo para proporcionar información sobre la dirección URL de una secuencia multimedia, incluida la dirección IP de multidifusión, el puerto, el formato de secuencia y otras configuraciones de la estación. |
-| [Usar URL y sustitución de servidor](using-url-and-server-rollover.md)                                 | Usar listas de reproducción de metarchivos para proporcionar un medio de propagación automática a orígenes de contenido alternativo cuando no se puede tener acceso a una secuencia o reproducirla.             |
-| [Usar parámetros y comandos personalizados](using-custom-parameters-and-commands.md)                   | Usar el elemento **param** para definir elementos personalizados para proporcionar metadatos adicionales.                                                                          |
-| [Personalización de la entrega de contenido multimedia](personalizing-media-delivery.md)                                   | Usar las preferencias de usuario para determinar el contenido de difusión.                                                                                                         |
+| [Modificar la pantalla](modifying-the-display.md)                                                 | Agregar texto, vínculos e imágenes.                                                                                                                                |
+| [Redireccionamiento](redirection.md)                                                                     | Usar listas de reproducción para redirigir el explorador Reproductor de Windows Media y especificar la dirección URL de una secuencia o un archivo multimedia que se reproducirá.                                      |
+| [Acceso a medios](accessing-media.md)                                                             | Usar elementos de metarchivo y sus elementos secundarios para especificar el contenido al que se debe acceder, así como el orden y la duración de su reproducción.                               |
+| [Uso de la conmutación de streaming de eventos en directo](using-live-event-stream-switching.md)                         | Uso del **elemento EVENT** para especificar una secuencia multimedia a la que acceder y, a continuación, reanudar la reproducción de la secuencia original. Se usa para la inserción de anuncios.                            |
+| [Uso de metarchivos para la conmutación de secuencias sin problemas](using-metafiles-for-seamless-stream-switching.md) | Usar el **elemento EVENT** para cargar previamente el siguiente flujo multimedia para acceder a fin de evitar espacios en la presentación.                                                      |
+| [Uso de anuncios](using-announcements.md)                                                     | Usar un metarchivo para proporcionar información sobre la dirección URL de un flujo multimedia, incluida la dirección IP de multidifusión, el puerto, el formato de secuencia y otras configuraciones de estación. |
+| [Uso de url y suversión de servidor](using-url-and-server-rollover.md)                                 | Usar listas de reproducción de metarchivo para proporcionar un medio de revertir automáticamente a orígenes de contenido alternativos cuando no se puede acceder a una secuencia ni reproducirla.             |
+| [Uso de parámetros y comandos personalizados](using-custom-parameters-and-commands.md)                   | Usar el **elemento PARAM** para definir elementos personalizados para proporcionar metadatos adicionales.                                                                          |
+| [Personalización de la entrega multimedia](personalizing-media-delivery.md)                                   | Usar las preferencias del usuario para determinar el contenido de difusión.                                                                                                         |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Listas de reproducción de metarchivos**](metafile-playlists.md)
+[**Listas de reproducción de metarchivo**](metafile-playlists.md)
 </dt> <dt>
 
-[**Referencia de elementos de metarchivo de Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Referencia de elementos de metarchivo multimedia**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Guía de metarchivo de Windows Media**](windows-media-metafile-guide.md)
+[**Windows Guía de metarchivo multimedia**](windows-media-metafile-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

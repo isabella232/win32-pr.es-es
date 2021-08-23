@@ -4,34 +4,34 @@ description: En esta sección se muestra cómo procesar las notificaciones del s
 ms.assetid: DBF624F0-89E0-435B-BE96-60B7A4CEDA61
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ffa1214ebd671b4ae222990bde4b44586e6d7b11
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: 81846d22f3c946d1bfdf661823429fd092b78647cf0ebcb0d683d2600ddcaf17
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110424185"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119540485"
 ---
 # <a name="how-to-process-date-and-time-picker-notifications"></a>Cómo procesar notificaciones de selector de fecha y hora
 
 En esta sección se muestra cómo procesar las notificaciones del selector de fecha y hora.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
--   Programación Interfaz de usuario Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
 
 Un control selector de fecha y hora (DTP) envía mensajes de notificación a la ventana primaria cuando se producen eventos, normalmente desencadenados por la entrada del usuario, en el control . La aplicación debe incluir código para determinar el tipo de mensaje de notificación y responder correctamente.
 
-Si tiene previsto usar campos de devolución de llamada con los controles DTP de la aplicación, debe estar preparado para controlar los códigos de [notificación \_ DTN FORMATQUERY,](dtn-formatquery.md) [DTN \_ FORMAT](dtn-format.md)y [ \_ DTN WMKEYDOWN.](dtn-wmkeydown.md) Para obtener información adicional sobre los campos de devolución de llamada, vea [Campos de devolución de llamada](date-and-time-picker-controls.md).
+Si tiene previsto usar campos de devolución de llamada con los controles DTP de la aplicación, debe estar preparado para controlar los códigos de [notificación DTN \_ FORMATQUERY,](dtn-formatquery.md) [DTN \_ FORMAT](dtn-format.md)y [ \_ DTN WMKEYDOWN.](dtn-wmkeydown.md) Para obtener información adicional sobre los campos de devolución de llamada, vea [Campos de devolución de llamada](date-and-time-picker-controls.md).
 
 El siguiente ejemplo de código de C++ identifica el mensaje de notificación enviado por un control DTP y llama a la función adecuada definida por la aplicación. Consulte los temas siguientes para obtener ejemplos de código que ilustran cómo procesar las notificaciones que aparecen en este ejemplo.
 

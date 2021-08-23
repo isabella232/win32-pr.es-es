@@ -1,32 +1,32 @@
 ---
-description: Motor NDR de RPC
+description: Motor RPC RPC
 ms.assetid: FD6365A9-6EC2-407D-B397-09A91BF02379
-title: Motor NDR de RPC (notas para desarrolladores)
+title: Motor RPC RPC (notas del desarrollador)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c39eeb38d99e01dd8ab5683cf0289b3e7e09d45f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 915ea5a367210461bebd2c02de2f0df4b95191bf75b6225054dee36e141ed75a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666185"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119538355"
 ---
-# <a name="rpc-ndr-engine-developer-notes"></a>Motor NDR de RPC (notas para desarrolladores)
+# <a name="rpc-ndr-engine-developer-notes"></a>Motor RPC RPC (notas del desarrollador)
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**NdrComplexArrayBufferSize**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrcomplexarraybuffersize)
--   [**NdrComplexArrayMarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrcomplexarraymarshall)
--   [**NdrComplexArrayUnmarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrcomplexarrayunmarshall)
--   [**NdrComplexStructBufferSize**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrcomplexstructbuffersize)
--   [**NdrComplexStructMarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrcomplexstructmarshall)
--   [**NdrComplexStructUnmarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrcomplexstructunmarshall)
--   [**NdrComformantArrayBufferSize**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrconformantarraybuffersize)
--   [**NdrComformantArrayMarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrconformantarraymarshall)
--   [**NdrSimpleStructBufferSize**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrsimplestructbuffersize)
--   [**NdrSimpleStructMarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrsimplestructmarshall)
--   [**NdrSimpleStructUnmarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrsimplestructunmarshall)
--   [**NdrUserMarshalUnmarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrusermarshalunmarshall)
+-   [**PlexComplexArrayBufferSize**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrcomplexarraybuffersize)
+-   [**PlexComplexArrayMarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrcomplexarraymarshall)
+-   [**PlexComplexArrayUnmarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrcomplexarrayunmarshall)
+-   [**PlexComplexStructBufferSize**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrcomplexstructbuffersize)
+-   [**PlexComplexStructMarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrcomplexstructmarshall)
+-   [**PlexComplexStructUnmarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrcomplexstructunmarshall)
+-   [**ComposiciónComformantArrayBufferSize**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrconformantarraybuffersize)
+-   [**ComposiciónComformantArrayMarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrconformantarraymarshall)
+-   [**SimpleStructBufferSize**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrsimplestructbuffersize)
+-   [**SimpleStructMarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrsimplestructmarshall)
+-   [**SimpleSimpleStructUnmarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrsimplestructunmarshall)
+-   [**UserUserMarshalUnmarshall**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrusermarshalunmarshall)
 
  
 

@@ -1,16 +1,16 @@
 ---
-title: Propiedad AuthenticationType IMsRdpClientAdvancedSettings6
-description: Especifica el tipo de autenticación utilizado para esta conexión.
+title: IMsRdpClientAdvancedSettings6 AuthenticationType, propiedad
+description: Especifica el tipo de autenticación utilizada para esta conexión.
 ms.assetid: A6DAAE0A-5045-4C2C-B065-AB5BFB39F955
 ms.tgt_platform: multiple
 keywords:
 - Propiedad AuthenticationType Servicios de Escritorio remoto
-- Propiedad AuthenticationType Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad AuthenticationType
-- Propiedad AuthenticationType Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad AuthenticationType
-- Propiedad AuthenticationType Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad AuthenticationType
+- Propiedad AuthenticationType Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad AuthenticationType
+- Propiedad AuthenticationType Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad AuthenticationType
+- Propiedad AuthenticationType Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad AuthenticationType
 topic_type:
 - apiref
 api_name:
@@ -26,16 +26,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 08c59239570538b690866e499ee942b6635055c9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f35fe580ce780a51c3a203ff22b4043bbbe423dc4e821de1aaa2ba378485e719
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150289"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138848"
 ---
-# <a name="imsrdpclientadvancedsettings6authenticationtype-property"></a>IMsRdpClientAdvancedSettings6:: AuthenticationType (propiedad)
+# <a name="imsrdpclientadvancedsettings6authenticationtype-property"></a>IMsRdpClientAdvancedSettings6::AuthenticationType, propiedad
 
-Especifica el tipo de autenticación utilizado para esta conexión.
+Especifica el tipo de autenticación utilizada para esta conexión.
 
 Esta propiedad es de solo lectura.
 
@@ -52,7 +52,7 @@ HRESULT get_AuthenticationType(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Recibe un valor que especifica el tipo de autenticación utilizado para esta conexión. Puede ser uno de los valores siguientes.
+Recibe un valor que especifica el tipo de autenticación utilizado para esta conexión. Puede ser uno de los siguientes valores.
 
 <dt>
 
@@ -80,7 +80,7 @@ Se usa la autenticación Kerberos.
 3
 </dt> <dd>
 
-Se usan la autenticación de certificados y Kerberos.
+Se usan tanto el certificado como la autenticación Kerberos.
 
 </dd> </dl>
 

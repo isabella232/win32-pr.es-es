@@ -1,53 +1,53 @@
 ---
 title: Canonización XML
-description: La canonización XML resuelve el problema de convertir un conjunto de nodos XML en bytes de tal forma que los cambios triviales en el XML (como cambiar el orden de los atributos de un elemento) no cambian el formato de bytes resultante.
+description: La canonización XML resuelve el problema de convertir un conjunto de nodos XML en bytes de forma que los cambios triviales en el XML (como cambiar el orden de los atributos de un elemento) no cambien el formato de bytes resultante.
 ms.assetid: a64303a1-efc4-4c91-ab8d-3e389a655b3e
 keywords:
-- Servicios Web de canonización XML para Windows
+- Servicios web de canonización XML para Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bab8b1aa00b99b604276a479f1a47aacb5bd8b1e
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 8db77e449c4e3d6ee5f6e2cb474c84a6b1161a4fee87c35d01d278882b178cc7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103904908"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119082989"
 ---
 # <a name="xml-canonicalization"></a>Canonización XML
 
-La canonización XML resuelve el problema de convertir un conjunto de nodos XML en bytes de tal forma que los cambios triviales en el XML (como cambiar el orden de los atributos de un elemento) no cambian el formato de bytes resultante. Los bytes obtenidos de la canonización se suelen usar para generar una firma criptográfica sobre el contenido XML.
+La canonización XML resuelve el problema de convertir un conjunto de nodos XML en bytes de forma que los cambios triviales en el XML (como cambiar el orden de los atributos de un elemento) no cambien el formato de bytes resultante. Los bytes obtenidos de la canonización se usan normalmente para generar una firma criptográfica sobre contenido XML.
 
 
-Los algoritmos de canonización XML usados comúnmente normalizan los aspectos siguientes:
+Los algoritmos de canonización XML usados habitualmente estandarizan los siguientes aspectos:
 
 -   Codificación de caracteres (UTF-8 sin preámbulo)
--   Avance de alimentación y otros formatos de caracteres
--   Orden de los atributos en un elemento
+-   Linefeed y otros formularios de caracteres
+-   Orden de atributo en un elemento
 -   Formulario de elemento vacío
--   Representar declaraciones de espacios de nombres
+-   Representación de declaraciones de espacio de nombres
 
-Las API [**WsStartReaderCanonicalization**](/windows/desktop/api/WebServices/nf-webservices-wsstartreadercanonicalization) y [**WsEndReaderCanonicalization**](/windows/desktop/api/WebServices/nf-webservices-wsendreadercanonicalization) proporcionan la funcionalidad de canonización XML al leer un documento.
+Las API [**WsStartReaderÓniconicalization**](/windows/desktop/api/WebServices/nf-webservices-wsstartreadercanonicalization) y [**WsEndReaderNtenicalization**](/windows/desktop/api/WebServices/nf-webservices-wsendreadercanonicalization) proporcionan la funcionalidad de canonización XML al leer un documento.
 
-Las API [**WsStartWriterCanonicalization**](/windows/desktop/api/WebServices/nf-webservices-wsstartwritercanonicalization) y [**WsEndWriterCanonicalization**](/windows/desktop/api/WebServices/nf-webservices-wsendwritercanonicalization) proporcionan la funcionalidad de canonización XML mientras se escribe un documento.
+Las API [**WsStartWriterÓniconicalization**](/windows/desktop/api/WebServices/nf-webservices-wsstartwritercanonicalization) y [**WsEndWriterNtenicalization**](/windows/desktop/api/WebServices/nf-webservices-wsendwritercanonicalization) proporcionan la funcionalidad de canonización XML al escribir un documento.
 
-Las enumeraciones siguientes se usan con la canonización:
+Las enumeraciones siguientes se usan con canonización:
 
--   [**\_algoritmo de \_ canonización de WS XML \_**](/windows/desktop/api/WebServices/ne-webservices-ws_xml_canonicalization_algorithm)
--   [**identificador de la \_ \_ propiedad de canonización de WS XML \_ \_**](/windows/desktop/api/WebServices/ne-webservices-ws_xml_canonicalization_property_id)
+-   [**ALGORITMO DE CANONIZACIÓN DE WS \_ \_ \_ XML**](/windows/desktop/api/WebServices/ne-webservices-ws_xml_canonicalization_algorithm)
+-   [**WS \_ XML \_ CANONICALIZATION \_ PROPERTY \_ ID**](/windows/desktop/api/WebServices/ne-webservices-ws_xml_canonicalization_property_id)
 
-Las siguientes funciones se usan con la canonización:
+Las funciones siguientes se usan con canonización:
 
--   [**WsEndReaderCanonicalization**](/windows/desktop/api/WebServices/nf-webservices-wsendreadercanonicalization)
--   [**WsEndWriterCanonicalization**](/windows/desktop/api/WebServices/nf-webservices-wsendwritercanonicalization)
--   [**WsStartReaderCanonicalization**](/windows/desktop/api/WebServices/nf-webservices-wsstartreadercanonicalization)
--   [**WsStartWriterCanonicalization**](/windows/desktop/api/WebServices/nf-webservices-wsstartwritercanonicalization)
+-   [**WsEndReaderNtenicalization**](/windows/desktop/api/WebServices/nf-webservices-wsendreadercanonicalization)
+-   [**WsEndWriterNtenicalization**](/windows/desktop/api/WebServices/nf-webservices-wsendwritercanonicalization)
+-   [**WsStartReaderÓniconicalization**](/windows/desktop/api/WebServices/nf-webservices-wsstartreadercanonicalization)
+-   [**WsStartWriterNtenicalization**](/windows/desktop/api/WebServices/nf-webservices-wsstartwritercanonicalization)
 
-Las siguientes estructuras se usan con la canonización:
+Las estructuras siguientes se usan con canonización:
 
--   [**\_ \_ \_ prefijos inclusivos de canonización de WS XML \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_canonicalization_inclusive_prefixes)
--   [**\_propiedad de \_ canonización de XML de WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_canonicalization_property)
+-   [**PREFIJOS \_ INCLUSIVOS \_ DE CANONIZACIÓN \_ XML \_ DE WS**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_canonicalization_inclusive_prefixes)
+-   [**WS \_ XML \_ \_ CANONICALIZATION, PROPIEDAD**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_canonicalization_property)
 
  
 

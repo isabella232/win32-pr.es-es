@@ -1,7 +1,7 @@
 ---
-description: Crea una malla de N revisiones a partir de una malla triangular.
+description: Crea una malla de N revisiones a partir de una malla de triángulo.
 ms.assetid: f565ed0b-72fc-4184-b423-f68b0acfafb0
-title: Función D3DXCreateNPatchMesh (D3DX9Mesh. h)
+title: Función D3DXCreateNPatchMesh (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 0ab73d1254700808bbd56b7b46f7781b27b188b7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: fb23022bfa79ba9bc429bc76a5c42892403b783b4ed634e9b7887b74db126b87
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698402"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119241375"
 ---
-# <a name="d3dxcreatenpatchmesh-function"></a>D3DXCreateNPatchMesh función)
+# <a name="d3dxcreatenpatchmesh-function"></a>Función D3DXCreateNPatchMesh
 
-Crea una malla de N revisiones a partir de una malla triangular.
+Crea una malla de N revisiones a partir de una malla de triángulo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,12 +41,12 @@ HRESULT D3DXCreateNPatchMesh(
 
 <dl> <dt>
 
-*pMeshSysMem* \[ de\]
+*pMeshSysMem* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)**
 
-Dirección de un puntero a una interfaz [**ID3DXMesh**](id3dxmesh.md) que representa el objeto de malla de triángulo.
+Dirección de un puntero a una [**interfaz ID3DXMesh**](id3dxmesh.md) que representa el objeto de malla de triángulo.
 
 </dd> <dt>
 
@@ -55,7 +55,7 @@ Dirección de un puntero a una interfaz [**ID3DXMesh**](id3dxmesh.md) que repres
 
 Tipo: **[ **LPD3DXPATCHMESH**](id3dxpatchmesh.md)\***
 
-Dirección de un puntero a una interfaz [**ID3DXPatchMesh**](id3dxpatchmesh.md) que representa el objeto de malla de revisión creado.
+Dirección de un puntero a una [**interfaz ID3DXPatchMesh**](id3dxpatchmesh.md) que representa el objeto de malla de revisión creado.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Dirección de un puntero a una interfaz [**ID3DXPatchMesh**](id3dxpatchmesh.md) 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

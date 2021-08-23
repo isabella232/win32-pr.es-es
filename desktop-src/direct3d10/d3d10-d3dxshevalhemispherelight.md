@@ -1,7 +1,7 @@
 ---
-description: 'Función D3DXSHEvalCoreisphereLight (D3DX10.h): evalúa una luz que es una interpolación lineal entre dos colores sobre la esfera.'
+description: 'Función D3DXSHEvalPxisphereLight (D3DX10.h): evalúa una luz que es una interpolación lineal entre dos colores sobre la esfera.'
 ms.assetid: 7523ff42-c81d-4857-a50d-7efa213214b8
-title: Función D3DXSHEvalPxisphereLight (D3DX10.h)
+title: Función D3DXSHEvalGraisphereLight (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 355dae7b843d5acfbb842b7bd08c329bdaed4306
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e32221167e2a736e46b847c88300221c3bd8b1675973604703600bb8e36549a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119497915"
 ---
-# <a name="d3dxshevalhemispherelight-function-d3dx10h"></a>Función D3DXSHEvalPxisphereLight (D3DX10.h)
+# <a name="d3dxshevalhemispherelight-function-d3dx10h"></a>Función D3DXSHEvalGraisphereLight (D3DX10.h)
 
 Evalúa una luz que es una interpolación lineal entre dos colores sobre la esfera.
 
@@ -51,7 +51,7 @@ HRESULT D3DXSHEvalHemisphereLight(
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Orden de la evaluación del armónico esférico (SH). Debe estar en el intervalo de D3DXSH \_ MINORDER a D3DXSH \_ MAXORDER, ambos inclusive. La evaluación genera coeficientes order-to-order. El grado de la evaluación es Order - 1.
+Orden de la evaluación armónica esférica (SH). Debe estar en el intervalo de D3DXSH \_ MINORDER a D3DXSH \_ MAXORDER, ambos inclusive. La evaluación genera coeficientes order-to-order. El grado de la evaluación es Order - 1.
 
 </dd> <dt>
 
@@ -60,11 +60,11 @@ Orden de la evaluación del armónico esférico (SH). Debe estar en el intervalo
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntero al vector de dirección del eje (x, y, z) en el que se evaluarán las funciones de base sh. Vea la sección Comentarios.
+Puntero al vector de dirección del eje del hemisferio (x, y, z) en el que se evalúan las funciones de base sh. Vea la sección Comentarios.
 
 </dd> <dt>
 
-*Top* \[ En\]
+*Parte superior* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **D3DXCOLOR**](../direct3d9/d3dxcolor.md)**
@@ -138,7 +138,7 @@ Las ecuaciones siguientes muestran la relación entre las coordenadas cartesiana
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

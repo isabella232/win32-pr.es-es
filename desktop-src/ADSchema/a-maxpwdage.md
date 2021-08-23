@@ -1,11 +1,11 @@
 ---
-title: Atributo Max-pwd-Age
-description: La cantidad máxima de tiempo, en intervalos de 100 segundos, una contraseña es válida.
+title: Atributo Max-Pwd-Age
+description: La cantidad máxima de tiempo, en intervalos de 100 nanosegundos, una contraseña es válida.
 ms.assetid: b4b48207-6481-42a1-b848-6baf37a367ce
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo Max-pwd-Age
-- maxPwdAge esquema de AD de atributos
+- Esquema de AD del atributo Max-Pwd-Age
+- MaxPwdAge attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc754b7cab86dc205eb14d58db73aab64685d07a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 93c647d05d0ddca2947878b908d3a7f7f5b293e308c6e799fb6e1d85db7e97ff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997463"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301045"
 ---
-# <a name="max-pwd-age-attribute"></a>Atributo Max-pwd-Age
+# <a name="max-pwd-age-attribute"></a>Atributo Max-Pwd-Age
 
-La cantidad máxima de tiempo, en intervalos de 100 segundos, una contraseña es válida. Este valor se almacena como un entero grande que representa el número de intervalos de 100 nanosegundos desde el momento en que se estableció la contraseña antes de que expire la contraseña.
+La cantidad máxima de tiempo, en intervalos de 100 nanosegundos, una contraseña es válida. Este valor se almacena como un entero grande que representa el número de intervalos de 100 nanosegundos desde el momento en que se estableció la contraseña antes de que expire la contraseña.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | Max-pwd-Age                          |
-| Nombre para mostrar de LDAP | maxPwdAge                            |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | Administrador de dominio                 |
+| CN                | Max-Pwd-Age                          |
+| Ldap-Display-Name | maxPwdAge                            |
+| Size              | \-                                   |
+| Actualizar privilegios  | Administrador de dominio                 |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.74                |
-| System-ID-GUID    | bf9679bb-0de6-11d0-a285-00aa003049e2 |
-| Sintaxis            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | bf9679bb-0de6-11d0-a285-00aa003049e2 |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 
@@ -55,18 +55,18 @@ La cantidad máxima de tiempo, en intervalos de 100 segundos, una contraseña es
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                    |
+| Id. de vínculo                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
-| System-Only            | False                                                                                                                                                 |
-| Tiene un único valor       | True                                                                                                                                                  |
-| Está indexado             | False                                                                                                                                                 |
-| En el catálogo global      | False                                                                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                          |
+| System-Only            | Falso                                                                                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                                                                                  |
+| Está indexado             | Falso                                                                                                                                                 |
+| En el catálogo global      | Falso                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ La cantidad máxima de tiempo, en intervalos de 100 segundos, una contraseña es
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                    |
+| Id. de vínculo                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
-| System-Only            | False                                                                                                                                                 |
-| Tiene un único valor       | True                                                                                                                                                  |
-| Está indexado             | False                                                                                                                                                 |
-| En el catálogo global      | False                                                                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                          |
+| System-Only            | Falso                                                                                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                                                                                  |
+| Está indexado             | Falso                                                                                                                                                 |
+| En el catálogo global      | Falso                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ La cantidad máxima de tiempo, en intervalos de 100 segundos, una contraseña es
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                    |
+| Id. de vínculo                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
-| System-Only            | False                                                                                                                                                 |
-| Tiene un único valor       | True                                                                                                                                                  |
-| Está indexado             | False                                                                                                                                                 |
-| En el catálogo global      | False                                                                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                          |
+| System-Only            | Falso                                                                                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                                                                                  |
+| Está indexado             | Falso                                                                                                                                                 |
+| En el catálogo global      | Falso                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ La cantidad máxima de tiempo, en intervalos de 100 segundos, una contraseña es
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                    |
+| Id. de vínculo                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
-| System-Only            | False                                                                                                                                                 |
-| Tiene un único valor       | True                                                                                                                                                  |
-| Está indexado             | False                                                                                                                                                 |
-| En el catálogo global      | False                                                                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                          |
+| System-Only            | Falso                                                                                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                                                                                  |
+| Está indexado             | Falso                                                                                                                                                 |
+| En el catálogo global      | Falso                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ La cantidad máxima de tiempo, en intervalos de 100 segundos, una contraseña es
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                    |
+| Id. de vínculo                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
-| System-Only            | False                                                                                                                                                 |
-| Tiene un único valor       | True                                                                                                                                                  |
-| Está indexado             | False                                                                                                                                                 |
-| En el catálogo global      | False                                                                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                          |
+| System-Only            | Falso                                                                                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                                                                                  |
+| Está indexado             | Falso                                                                                                                                                 |
+| En el catálogo global      | Falso                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ La cantidad máxima de tiempo, en intervalos de 100 segundos, una contraseña es
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                    |
+| Id. de vínculo                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
-| System-Only            | False                                                                                                                                                 |
-| Tiene un único valor       | True                                                                                                                                                  |
-| Está indexado             | False                                                                                                                                                 |
-| En el catálogo global      | False                                                                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                          |
+| System-Only            | Falso                                                                                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                                                                                  |
+| Está indexado             | Falso                                                                                                                                                 |
+| En el catálogo global      | Falso                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
