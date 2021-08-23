@@ -1,7 +1,7 @@
 ---
 description: El método Remove quita el objeto CDeferredCommand de la cola.
 ms.assetid: b3cff57d-9625-40db-b815-9529ac706f45
-title: Método CCmdQueue. Remove (Winutil. h)
+title: Método CCmdQueue.Remove (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ef9f45c8176645c5937b5ad74045130ff8cd8c06
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6d0b0a4b416c5adb97b1a9efba1fbd5f6142b0e0fb761c6d4c0b277ac0cda7e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661247"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954584"
 ---
-# <a name="ccmdqueueremove-method"></a>CCmdQueue. Remove (método)
+# <a name="ccmdqueueremove-method"></a>Método CCmdQueue.Remove
 
 El `Remove` método quita el objeto [**CDeferredCommand**](cdeferredcommand.md) de la cola.
 
@@ -45,13 +45,13 @@ virtual HRESULT Remove(
 *pCmd* 
 </dt> <dd>
 
-Puntero al objeto **CDeferredCommand** que se va a quitar de la cola.
+Puntero al objeto **CDeferredCommand** que se quitará de la cola.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve VFW \_ E \_ no \_ encontrado si el objeto no se encuentra en la cola. De lo contrario, devuelve S \_ OK.
+Devuelve VFW \_ E NOT FOUND si el objeto no se encuentra en la \_ \_ cola. De lo contrario, devuelve S \_ OK.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Devuelve VFW \_ E \_ no \_ encontrado si el objeto no se encuentra en la cola. D
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Devuelve VFW \_ E \_ no \_ encontrado si el objeto no se encuentra en la cola. D
 
 <dl> <dt>
 
-[**Clase CCmdQueue**](ccmdqueue.md)
+[**CCmdQueue (clase)**](ccmdqueue.md)
 </dt> </dl>
 
  

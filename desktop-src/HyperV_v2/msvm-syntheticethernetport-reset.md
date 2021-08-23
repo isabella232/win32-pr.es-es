@@ -1,5 +1,5 @@
 ---
-description: 'Método reset de la Msvm_SyntheticEthernetPort clase : solicita un restablecimiento.'
+description: 'Método reset de la Msvm_SyntheticEthernetPort : solicita un restablecimiento.'
 ms.assetid: ebe8e9f6-4110-4c69-8924-49e346be93a4
 title: Método Reset de la Msvm_SyntheticEthernetPort clase
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 75ea464e5c62e47939e79f081f6a25f8adb3de51
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 29cfd22e1d30aa875dee451b88adbe52856a681bdc60e328acda9c492a8ef02b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109563"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118949864"
 ---
 # <a name="reset-method-of-the-msvm_syntheticethernetport-class"></a>Método Reset de la clase Msvm \_ SyntheticEthernetPort
 
@@ -53,7 +53,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -63,7 +63,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

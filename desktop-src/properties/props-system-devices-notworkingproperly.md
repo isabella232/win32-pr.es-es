@@ -1,19 +1,19 @@
 ---
-description: Si VARIANT es \_ true, el dispositivo no funciona correctamente.
+description: Si VARIANT \_ TRUE, el dispositivo no funciona correctamente.
 ms.assetid: 9a87ed78-902c-4c6b-a1e6-88fce53ce42f
-title: System. Devices. NotWorkingProperly
+title: System.Devices.NotWorkingProperly
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 531e79c5c9d69f2dd37f254bfce47e09503542fa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7f6633f7ba6306540f1edc23f49322e97d5fd8cce70b8e928b5b7ea3354e914a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104546771"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119097514"
 ---
-# <a name="systemdevicesnotworkingproperly"></a>System. Devices. NotWorkingProperly
+# <a name="systemdevicesnotworkingproperly"></a>System.Devices.NotWorkingProperly
 
-Si VARIANT es \_ true, el dispositivo no funciona correctamente.
+Si VARIANT \_ TRUE, el dispositivo no funciona correctamente.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8
 
@@ -38,7 +38,7 @@ propertyDescription
             defineToken = ISNOTWORKINGPROPERLY_NOTWORKINGPROPERLY
 ```
 
-## <a name="windows-7"></a>Windows 7
+## <a name="windows-7"></a>Windows 7
 
 ```
 propertyDescription
@@ -61,9 +61,9 @@ propertyDescription
             defineToken = ISNOTWORKINGPROPERLY_NOTWORKINGPROPERLY
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -90,7 +90,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -108,7 +108,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

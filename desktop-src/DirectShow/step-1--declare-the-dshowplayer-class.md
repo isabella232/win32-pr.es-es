@@ -1,21 +1,21 @@
 ---
-description: En este tema se trata el paso 1 del tutorial reproducción de audio y vídeo en DirectShow.
+description: Este tema es el paso 1 del tutorial Reproducción de audio y vídeo en DirectShow.
 ms.assetid: 3ccd201d-e60d-40bf-a602-6d42df03b36b
-title: 'Paso 1: declarar la clase DShowPlayer'
+title: 'Paso 1: Declarar la clase DShowPlayer'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 22ff36a76be8017f7b468815cf572514900f8d11
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 02cbf35e9c71df9d71ab3df7cdbb3edf5d3f25bb5e77a01734f7d842fc3097f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951894"
 ---
-# <a name="step-1-declare-the-dshowplayer-class"></a>Paso 1: declarar la clase DShowPlayer
+# <a name="step-1-declare-the-dshowplayer-class"></a>Paso 1: Declarar la clase DShowPlayer
 
-En este tema se trata el paso 1 del tutorial [reproducción de audio y vídeo en DirectShow](audio-video-playback-in-directshow.md). El código completo se muestra en el tema [ejemplo de reproducción de DirectShow](directshow-playback-example.md).
+Este tema es el paso 1 del tutorial [Reproducción de audio](audio-video-playback-in-directshow.md)y vídeo en DirectShow . El código completo se muestra en el tema DirectShow [ejemplo de reproducción.](directshow-playback-example.md)
 
-En este tutorial, la `DShowPlayer` clase administra toda la funcionalidad de DirectShow. Esta clase se declara como folows.
+En este tutorial, la `DShowPlayer` clase administra todas las DirectShow funcionalidad. Esta clase se declara como folows.
 
 
 ```C++
@@ -80,13 +80,13 @@ private:
 
 Notas:
 
--   La `PlaybackState` enumeración describe el estado actual del `DShowPlayer` objeto.
--   El evento de gráfico de WM constante \_ \_ define un mensaje de ventana privada. Este mensaje se utiliza para notificar a la aplicación sobre los eventos de gráficos de filtros. Vea [paso 6: controlar eventos de gráfico](step-6--handle-graph-events.md).
--   `GraphEventFN` es un puntero a una función de devolución de llamada para controlar los eventos de gráfico de filtro. La aplicación implementa esta función de devolución de llamada.
--   La variable miembro *m \_ pVideo* proporciona un contenedor para los distintos representadores de vídeo de DirectShow. Vea [Step 2: declare CVideoRenderer and derived classes](step-2--declare-cvideorenderer-and-derived-classes.md).
--   En este tutorial, la función [SafeRelease](../medfound/saferelease.md) se usa para liberar punteros de interfaz com.
+-   La `PlaybackState` enumeración describe el estado actual del `DShowPlayer` objeto .
+-   La constante WM \_ GRAPH EVENT define un mensaje de ventana \_ privada. Este mensaje se usa para notificar a la aplicación sobre eventos de gráfico de filtro. Vea [Paso 6: Controlar Graph eventos](step-6--handle-graph-events.md).
+-   `GraphEventFN` es un puntero a una función de devolución de llamada para controlar eventos de gráfico de filtro. La aplicación implementa esta función de devolución de llamada.
+-   La *variable miembro m \_ pVideo* proporciona un contenedor para los distintos DirectShow de vídeo. Vea [Paso 2: Declarar CVideoRenderer y clases derivadas](step-2--declare-cvideorenderer-and-derived-classes.md).
+-   A lo largo de este tutorial, se usa la función [SafeRelease](../medfound/saferelease.md) para liberar punteros de interfaz COM.
 
-Siguiente: [paso 2: declarar CVideoRenderer y las clases derivadas](step-2--declare-cvideorenderer-and-derived-classes.md).
+Siguiente: [Paso 2: Declarar CVideoRenderer y clases derivadas](step-2--declare-cvideorenderer-and-derived-classes.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 

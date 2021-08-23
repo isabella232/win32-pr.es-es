@@ -1,9 +1,9 @@
 ---
-title: Control deslizante. en mosaico
-description: El atributo en mosaico especifica o recupera un valor que indica si se va a colocar en mosaico la imagen del control deslizante.
+title: SLIDER.tiled
+description: El atributo en mosaico especifica o recupera un valor que indica si la imagen del control deslizante se va a mosaico.
 ms.assetid: 159a2972-a0eb-4e43-a083-e124e56782f5
 keywords:
-- Control deslizante. ventanas en mosaico Media Player
+- Slider.tiled Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b1448f496ee45d6c8b01356499b9628c745d69f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0a97be7ee857574b24585ffd7ffd9b63acdfad0a37762445699daa3a06f94e97
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660615"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118832541"
 ---
-# <a name="slidertiled"></a>Control deslizante. en mosaico
+# <a name="slidertiled"></a>SLIDER.tiled
 
-El atributo en **mosaico** especifica o recupera un valor que indica si se va a colocar en mosaico la imagen del control deslizante.
+El **atributo en** mosaico especifica o recupera un valor que indica si la imagen del control deslizante se va a mosaico.
 
 ``` syntax
         elementID.tiled
@@ -29,49 +29,49 @@ El atributo en **mosaico** especifica o recupera un valor que indica si se va a 
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **valor booleano** de lectura/escritura.
+Este atributo es un booleano de lectura **y escritura.**
 
 
 
-| Value | Descripción                                                                                 |
+| Valor | Descripción                                                                                 |
 |-------|---------------------------------------------------------------------------------------------|
 | true  | Predeterminada. El mapa de bits de la imagen se repetirá hasta que rellene toda la región del control. |
-| false | La imagen no se mostrará en mosaico.                                                                |
+| false | La imagen no se pondrá en mosaico.                                                                |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo solo se aplica si usa imágenes de primer plano y de fondo para definir un control deslizante. Si las imágenes son más pequeñas que el área definida del control deslizante y el atributo en **mosaico** está establecido en true, las imágenes se repetirán hasta que rellenen toda la longitud del control.
+Este atributo solo se aplica si usa imágenes de primer plano y de fondo para definir un control deslizante. Si las imágenes son más pequeñas que el área definida del control deslizante y el atributo **en** mosaico se establece en true, las imágenes se repetirán hasta que rellenen toda la longitud del control.
 
-Puede que desee utilizar este atributo junto con el atributo de **borde** . El atributo **borde** le permite definir un borde que no se repite durante el mosaico.
+Es posible que desee usar este atributo junto con el **atributo borderSize.** El **atributo borderSize** permite definir un borde que no se repite durante el tiling.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Elemento SLIDEr**](slider-element.md)
+[**Elemento SLIDER**](slider-element.md)
 </dt> <dt>
 
-[**Control deslizante. backgroundImage**](slider-backgroundimage.md)
+[**SLIDER.backgroundImage**](slider-backgroundimage.md)
 </dt> <dt>
 
-[**SLIDEr. Border**](slider-bordersize.md)
+[**SLIDER.borderSize**](slider-bordersize.md)
 </dt> <dt>
 
-[**SLIDEr. foregroundImage**](slider-foregroundimage.md)
+[**SLIDER.foregroundImage**](slider-foregroundimage.md)
 </dt> </dl>
 
  

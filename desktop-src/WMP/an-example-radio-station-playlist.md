@@ -1,28 +1,28 @@
 ---
-title: Lista de reproducción de la estación de radio de ejemplo
-description: Lista de reproducción de la estación de radio de ejemplo
+title: Lista de reproducción de una estación de radio de ejemplo
+description: Lista de reproducción de una estación de radio de ejemplo
 ms.assetid: 99b33036-6391-446c-816c-8d5d76107d37
 keywords:
-- Listas de reproducción de metarchivos de Windows Media, ejemplos de listas de reproducción
+- Windows Listas de reproducción de metarchivo multimedia, ejemplos de listas de reproducción
 - listas de reproducción, ejemplos de listas de reproducción
-- listas de reproducción de metarchivos, ejemplos de listas de reproducción
-- Listas de reproducción de metarchivos de Windows Media, listas de reproducción de ejemplo
+- listas de reproducción de metarchivo, ejemplos de listas de reproducción
+- Windows Listas de reproducción de metarchivo multimedia, listas de reproducción de ejemplo
 - listas de reproducción, listas de reproducción de ejemplo
-- listas de reproducción de metarchivos, listas de reproducción de ejemplo
-- Listas de reproducción de metarchivos de Windows Media, listas de reproducción de ejemplo
+- listas de reproducción de metarchivo, listas de reproducción de ejemplo
+- Windows Listas de reproducción de metarchivo multimedia, listas de reproducción de ejemplo
 - listas de reproducción, listas de reproducción de ejemplo
-- listas de reproducción de metarchivos, listas de reproducción de ejemplo
-- Listas de reproducción de metarchivos de Windows Media, ejemplo de código
+- listas de reproducción de metarchivo, listas de reproducción de ejemplo
+- Windows Listas de reproducción de metarchivo multimedia, ejemplo de código
 - listas de reproducción, ejemplo de código
-- listas de reproducción de metarchivos, ejemplo de código
-- Listas de reproducción de metarchivo de Windows Media, ejemplo de lista de reproducción de la estación de radio
-- listas de reproducción, ejemplo de lista de reproducción de la estación de radio
-- listas de reproducción de metarchivo, ejemplo de lista de reproducción de la estación de radio
-- Media Player de Windows, ejemplos de lista de reproducción
-- Windows Media Player, listas de reproducción de ejemplo
-- Windows Media Player, listas de reproducción de ejemplo
-- Ejemplo de Windows Media Player, lista de reproducción de la estación de radio
-- ejemplos de listas de reproducción
+- listas de reproducción de metarchivo, ejemplo de código
+- Windows Lista de reproducción de metarchivo multimedia, ejemplo de lista de reproducción de estación de radio
+- lista de reproducción, ejemplo de lista de reproducción de estación de radio
+- ejemplo de listas de reproducción de metarchivo, lista de reproducción de estación de radio
+- Reproductor de Windows Media,ejemplos de lista de reproducción
+- Reproductor de Windows Media,listas de reproducción de ejemplo
+- Reproductor de Windows Media,listas de reproducción de ejemplo
+- Reproductor de Windows Media,ejemplo de lista de reproducción de estación de radio
+- ejemplos de lista de reproducción
 - listas de reproducción de ejemplo
 - listas de reproducción de ejemplo
 ms.topic: article
@@ -32,20 +32,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: da797937ee461ccb3afbfb000e7704486d6896e4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6db52d8eb9f109df870e65f79906761cfadee4a7871f4776fae3122dd93c8605
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055033"
 ---
-# <a name="an-example-radio-station-playlist"></a>Lista de reproducción de la estación de radio de ejemplo
+# <a name="an-example-radio-station-playlist"></a>Lista de reproducción de una estación de radio de ejemplo
 
-En el ejemplo de código siguiente se muestra cómo crear una lista de reproducción para examinar tres emisoras de radio de rock. La marca de radio de Adventure Works de la empresa ficticia está en la lista de reproducción y en todas las secuencias individuales de la lista de reproducción. Al escribir el código, cambie todas las direcciones URL y los nombres de archivo a nombres de archivo válidos a los que pueda tener acceso su Media Player de Windows.
+En el código de ejemplo siguiente se muestra cómo crear una lista de reproducción para examinar tres estaciones de radio de roca. La empresa ficticia Adventure Works Radio está en la lista de reproducción y en todas las secuencias individuales dentro de la lista de reproducción. Al escribir el código, cambie todas las direcciones URL y nombres de archivo por nombres de archivo válidos que sean accesibles para su Reproductor de Windows Media.
 
-Se crea una lista de reproducción para cada una de las estaciones. Una cuarta lista de reproducción examina los tres primeros. Las listas de reproducción se crean para hacer referencia a anuncios generados dinámicamente y tienen una marca de radio de Adventure Works.
+Se crea una lista de reproducción para cada una de las estaciones. Una cuarta lista de reproducción examina las tres primeras. Las listas de reproducción se crean para hacer referencia a anuncios generados dinámicamente y tienen personal de marca de Adventure Works Radio.
 
-Una de las listas de reproducción que representan una emisora de radio podría tener este aspecto.
+Una de las listas de reproducción que representa una estación de radio podría tener este aspecto.
 
 
 ```XML
@@ -69,7 +69,7 @@ Una de las listas de reproducción que representan una emisora de radio podría 
 
 
 
-A continuación, la lista de reproducción se puede crear a partir de referencias a las listas de reproducción individuales.
+La lista de reproducción se puede construir a partir de referencias a las listas de reproducción individuales.
 
 Código de ejemplo
 
@@ -95,7 +95,7 @@ Código de ejemplo
 
 
 
-En este ejemplo se reproduce un anuncio seguido de 30 segundos de cada una de las tres estaciones a las que se hace referencia, una tras otra. Este ciclo se repite indefinidamente porque no se define el atributo **Count** del elemento **REPEAT** .
+En este ejemplo se reproduciría un anuncio seguido de 30 segundos de cada una de las tres estaciones a las que se hace referencia, una después de la otra. Este ciclo se repetirá indefinidamente porque no se ha definido el atributo **COUNT** del elemento **REPEAT.**
 
 -   Las empresas, las organizaciones, los productos, las personas y los eventos usados en los ejemplos son ficticios. No se entenderá o deducirá ninguna asociación con ninguna empresa, organización, producto, persona o acontecimiento reales.
 
@@ -103,24 +103,24 @@ En este ejemplo se reproduce un anuncio seguido de 30 segundos de cada una de la
 
 <dl> <dt>
 
-[**Crear listas de reproducción de metarchivo**](creating-metafile-playlists.md)
+[**Creación de listas de reproducción de metarchivo**](creating-metafile-playlists.md)
 </dt> <dt>
 
 [**Listas de reproducción de ejemplo**](example-playlists.md)
 </dt> <dt>
 
-[**Listas de reproducción de metarchivos**](metafile-playlists.md)
+[**Listas de reproducción de metarchivo**](metafile-playlists.md)
 </dt> <dt>
 
-[**Referencia de elementos de metarchivo de Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Referencia de elementos de metarchivo multimedia**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Guía de metarchivo de Windows Media**](windows-media-metafile-guide.md)
+[**Windows Guía de metarchivo multimedia**](windows-media-metafile-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

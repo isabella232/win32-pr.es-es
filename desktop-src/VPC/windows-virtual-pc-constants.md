@@ -1,23 +1,23 @@
 ---
-title: Constantes de Windows Virtual PC
-description: Constantes de Windows Virtual PC
+title: Windows Constantes de PC virtual
+description: Windows Constantes de PC virtual
 ms.assetid: 4bc841c8-f031-4b88-97e8-e536e6ecf1c2
 keywords:
 - Windows Virtual PC Virtual PC, constantes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ad98ade3f0737ae0148e943adbff1eb10c086cb
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: b6c2ba8ef4fd8c17393c70e143c95000d415fb6b3f7d2cf835bc4f75829559ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104078084"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118998305"
 ---
-# <a name="windows-virtual-pc-constants"></a>Constantes de Windows Virtual PC
+# <a name="windows-virtual-pc-constants"></a>Windows Constantes de PC virtual
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
-Las constantes de Windows Virtual PC se clasifican según el uso de la manera siguiente:
+Windows Las constantes de PC virtual se clasifican según el uso como se muestra a continuación:
 
 -   [**Códigos HRESULT específicos de Windows Virtual PC**](hresult-codes-specific-to-windows-virtual-pc.md)
 
@@ -25,9 +25,9 @@ Las constantes de Windows Virtual PC se clasifican según el uso de la manera si
 
 <dl> <dt>
 
-[Referencia de Windows Virtual PC](virtual-pc-reference.md)
+[Windows Referencia de PC virtual](virtual-pc-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

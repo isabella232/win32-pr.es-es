@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 0109481beaea282a785564c081e498fe4c7571b6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6cacb0c8ccff72506c82f0145955cb2a95d4c1084f3e9e6c508682d2761189e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044902"
 ---
 # <a name="d3dxmatrixinverse-function-d3dx9mathh"></a>Función D3DXMatrixInverse (D3dx9math.h)
 
@@ -88,7 +88,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el *parámetr
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

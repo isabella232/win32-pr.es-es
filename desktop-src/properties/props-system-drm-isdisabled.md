@@ -1,17 +1,17 @@
 ---
 description: Indica si DRM ha deshabilitado el archivo multimedia.
 ms.assetid: e914eb0e-fef6-44e9-9d4c-06989027eec4
-title: System. DRM. IsDisabled
+title: System.DRM.IsDisabled
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 42c6f43db38e3d3d6856e4b9b8176acaf9cfbfa2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 43d1664fea9a2ca5edeb6f2fc45407585487a5c1d2eda75afa82ff3a1ac0328f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119096964"
 ---
-# <a name="systemdrmisdisabled"></a>System. DRM. IsDisabled
+# <a name="systemdrmisdisabled"></a>System.DRM.IsDisabled
 
 Indica si DRM ha deshabilitado el archivo multimedia.
 
@@ -30,9 +30,9 @@ propertyDescription
       type = Boolean
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

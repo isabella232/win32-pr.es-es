@@ -4,24 +4,24 @@ ms.assetid: f6eaea8a-0cc2-4fb6-bec5-7fb12b20c075
 title: Recuperar y cambiar atributos de archivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c980ddd6390f016b2057392f42f6bf645859307
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0d2609030d1657b78c266ed6b10841159e0df4d40a2e3b07b0fce42e98b45d54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119015143"
 ---
 # <a name="retrieving-and-changing-file-attributes"></a>Recuperar y cambiar atributos de archivo
 
-Una aplicación puede recuperar los atributos de archivo mediante la función [**GetFileAttributes**](/windows/desktop/api/FileAPI/nf-fileapi-getfileattributesa) o [**GetFileAttributesEx**](/windows/desktop/api/FileAPI/nf-fileapi-getfileattributesexa) . Las funciones [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) y [**SetFileAttributes**](/windows/desktop/api/FileAPI/nf-fileapi-setfileattributesa) pueden establecer muchos de los atributos. Sin embargo, las aplicaciones no pueden establecer todos los atributos.
+Una aplicación puede recuperar los atributos de archivo mediante la [**función GetFileAttributes**](/windows/desktop/api/FileAPI/nf-fileapi-getfileattributesa) o [**GetFileAttributesEx.**](/windows/desktop/api/FileAPI/nf-fileapi-getfileattributesexa) Las [**funciones CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) y [**SetFileAttributes**](/windows/desktop/api/FileAPI/nf-fileapi-setfileattributesa) pueden establecer muchos de los atributos. Sin embargo, las aplicaciones no pueden establecer todos los atributos.
 
-En el ejemplo de código de este tema se usa la función [**CopyFile**](/windows/desktop/api/WinBase/nf-winbase-copyfile) para copiar todos los archivos de texto (. txt) del directorio actual en un nuevo directorio de archivos de solo lectura. Los archivos del nuevo directorio se cambian a solo lectura, si es necesario.
+En el ejemplo de código de este tema se usa la función [**CopyFile**](/windows/desktop/api/WinBase/nf-winbase-copyfile) para copiar todos los archivos de texto (.txt) del directorio actual en un nuevo directorio de archivos de solo lectura. Los archivos del nuevo directorio se cambian para que sean de solo lectura, si es necesario.
 
-La aplicación crea el directorio especificado como un parámetro mediante la función [**CreateDirectory**](/windows/desktop/api/FileAPI/nf-fileapi-createdirectorya) . El directorio no debe existir ya.
+La aplicación crea el directorio especificado como parámetro mediante la [**función CreateDirectory.**](/windows/desktop/api/FileAPI/nf-fileapi-createdirectorya) El directorio no debe existir todavía.
 
-La aplicación busca en el directorio actual todos los archivos de texto mediante las funciones [**FindFirstFile**](/windows/desktop/api/FileAPI/nf-fileapi-findfirstfilea) y [**FindNextFile**](/windows/desktop/api/FileAPI/nf-fileapi-findnextfilea) . Cada archivo de texto se copia en el \\ directorio TextRO Una vez copiado un archivo, la función [**GetFileAttributes**](/windows/desktop/api/FileAPI/nf-fileapi-getfileattributesa) determina si un archivo es de solo lectura. Si el archivo no es de solo lectura, la aplicación cambia los directorios a \\ TextRO y convierte el archivo copiado en solo lectura mediante la función [**SetFileAttributes**](/windows/desktop/api/FileAPI/nf-fileapi-setfileattributesa) .
+La aplicación busca en el directorio actual todos los archivos de texto mediante las funciones [**FindFirstFile**](/windows/desktop/api/FileAPI/nf-fileapi-findfirstfilea) y [**FindNextFile.**](/windows/desktop/api/FileAPI/nf-fileapi-findnextfilea) Cada archivo de texto se copia en el \\ directorio TextRO. Después de copiar un archivo, la [**función GetFileAttributes**](/windows/desktop/api/FileAPI/nf-fileapi-getfileattributesa) determina si un archivo es de solo lectura o no. Si el archivo no es de solo lectura, la aplicación cambia los directorios a TextRO y convierte el archivo copiado en solo lectura mediante la \\ [**función SetFileAttributes.**](/windows/desktop/api/FileAPI/nf-fileapi-setfileattributesa)
 
-Una vez copiados todos los archivos de texto del directorio actual, la aplicación cierra el identificador de búsqueda mediante la función [**FindClose**](/windows/desktop/api/FileAPI/nf-fileapi-findclose) .
+Una vez copiados todos los archivos de texto del directorio actual, la aplicación cierra el identificador de búsqueda mediante la [**función FindClose.**](/windows/desktop/api/FileAPI/nf-fileapi-findclose)
 
 
 ```C++

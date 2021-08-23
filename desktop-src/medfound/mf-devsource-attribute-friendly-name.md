@@ -1,38 +1,38 @@
 ---
 description: Especifica el nombre para mostrar de un dispositivo.
 ms.assetid: 3f6c7faf-2ecd-4510-adc2-252c3619d70f
-title: MF_DEVSOURCE_ATTRIBUTE_FRIENDLY_NAME atributo (Mfidl. h)
+title: MF_DEVSOURCE_ATTRIBUTE_FRIENDLY_NAME atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ab0d2bb3c0e75d547e1249a83261b7c804743ac
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e90e019b37b251ad8ec00efbd3bd0395659b96c6dd2e3a1cad247ea17ace3ece
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696600"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973834"
 ---
-# <a name="mf_devsource_attribute_friendly_name-attribute"></a>\_Atributo de \_ \_ nombre descriptivo de atributo MF DEVSOURCE \_
+# <a name="mf_devsource_attribute_friendly_name-attribute"></a>Atributo MF \_ DEVSOURCE \_ ATTRIBUTE \_ FRIENDLY \_ NAME
 
-Especifica el nombre para mostrar de un dispositivo. El *nombre para mostrar* es una cadena legible que se puede mostrar en una interfaz de usuario.
+Especifica el nombre para mostrar de un dispositivo. El *nombre para mostrar* es una cadena legible, adecuada para mostrarse en una interfaz de usuario.
 
 ## <a name="data-type"></a>Tipo de datos
 
-**WCHAR \** _
+**Wchar\***
 
 ## <a name="getset"></a>Obtener o establecer
 
-Para obtener este atributo, llame a [_ *IMFAttributes:: GetString* *](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring).
+Para obtener este atributo, llame [**a IMFAttributes::GetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring).
 
-Para establecer este atributo, llame a [**IMFAttributes:: setString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring).
+Para establecer este atributo, llame [**a IMFAttributes::SetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este atributo se establece en los objetos de activación devueltos por las siguientes funciones:
 
 -   [**MFCreateDeviceSourceActivate**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatedevicesourceactivate)
 -   [**MFEnumDeviceSources**](/windows/desktop/api/mfidl/nf-mfidl-mfenumdevicesources)
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -40,9 +40,9 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                            |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                            |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -50,7 +50,7 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Captura de audio y vídeo](audio-video-capture.md)

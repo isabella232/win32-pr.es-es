@@ -1,9 +1,9 @@
 ---
-title: COLUMN. columnWidth
-description: El atributo columnWidth especifica o recupera un ancho de columna en el control de lista de reproducción.
+title: COLUMN.columnWidth
+description: El atributo columnWidth especifica o recupera un ancho de columna en el control PLAYLIST.
 ms.assetid: 4c6fabf9-fca0-433a-87bd-17f5d74a0a74
 keywords:
-- COLUMNA. columnWidth Windows Media Player
+- COLUMN.columnWidth Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c12a9037c47fb051dbd0eff909b861390b38794f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e6dd9278cd495007825d109ccb13857f3c4e258d373c1830a4b7545f5bf718f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699668"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118997675"
 ---
-# <a name="columncolumnwidth"></a>COLUMN. columnWidth
+# <a name="columncolumnwidth"></a>COLUMN.columnWidth
 
-El atributo **ColumnWidth** especifica o recupera un ancho de columna en el control de **lista de reproducción** .
+El **atributo columnWidth** especifica o recupera un ancho de columna en el control **PLAYLIST.**
 
 ``` syntax
         elementID.columnWidth
@@ -29,11 +29,11 @@ El atributo **ColumnWidth** especifica o recupera un ancho de columna en el cont
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **número** de lectura y escritura (**Long**) que representa el ancho de la columna en píxeles.
+Este atributo es un número de lectura y **escritura** (**long**) que representa el ancho de la columna en píxeles.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La propiedad **columnResizeMode** debe establecerse en "Fixed" para que funcione esta propiedad.
+La **propiedad columnResizeMode** debe establecerse en "fixed" para que esta propiedad funcione.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,7 +41,7 @@ La propiedad **columnResizeMode** debe establecerse en "Fixed" para que funcione
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
@@ -49,7 +49,7 @@ La propiedad **columnResizeMode** debe establecerse en "Fixed" para que funcione
 
 <dl> <dt>
 
-[**COLUMN, elemento**](column-element.md)
+[**Elemento COLUMN**](column-element.md)
 </dt> </dl>
 
  

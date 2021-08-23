@@ -1,36 +1,36 @@
 ---
-title: Control header (referencia de elementos de interfaz de usuario de MSAA)
-description: Un control de encabezado muestra los encabezados en la parte superior de las columnas de información y permite que el usuario ordene la información haciendo clic en los encabezados. El explorador de Windows utiliza un control de encabezado cuando se selecciona la vista de detalles.
+title: Control De encabezado (Referencia del elemento de la interfaz de usuario de MSAA)
+description: Un control de encabezado muestra los encabezados en la parte superior de las columnas de información y permite al usuario ordenar la información haciendo clic en los encabezados. Windows El Explorador usa un control de encabezado cuando se selecciona la vista Detalles.
 ms.assetid: 669d6bb8-7bc4-4e6f-bf4f-207887f44b83
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e6d069770b14ad3ba58022af28ad07fc78cb8c5b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f0c378bb0244e94f4cb95c8b2ba90512d2b17542bdef7428197ee58479dbfde1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357463"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118994185"
 ---
-# <a name="header-control-msaa-ui-element-reference"></a>Control header (referencia de elementos de interfaz de usuario de MSAA)
+# <a name="header-control-msaa-ui-element-reference"></a>Control De encabezado (Referencia del elemento de la interfaz de usuario de MSAA)
 
 > [!Note]  
-> En este tema se describen los objetos de **control de encabezado** para la referencia de elementos de interfaz de usuario de MSAA. Cómo crear objetos de **control de encabezado** en varios marcos de interfaz de usuario no se describe aquí. Consulte la documentación de referencia de la API del marco de interfaz de usuario que está usando.
+> En este tema se describen **los objetos de control** de encabezado para fines de referencia de elementos de la interfaz de usuario de MSAA. Aquí no se describe **cómo crear objetos de control** de encabezado en varios marcos de interfaz de usuario. Consulte la documentación de referencia de API para el marco de interfaz de usuario que está usando.
 
- 
+ 
 
-Un control de encabezado muestra los encabezados en la parte superior de las columnas de información y permite que el usuario ordene la información haciendo clic en los encabezados. El explorador de Windows utiliza un control de encabezado cuando se selecciona la vista de detalles.
+Un control de encabezado muestra los encabezados en la parte superior de las columnas de información y permite al usuario ordenar la información haciendo clic en los encabezados. Windows El Explorador usa un control de encabezado cuando se selecciona la vista Detalles.
 
-El nombre de clase de ventana de un control de encabezado es WC \_ header, que se define como "SysHeader32" en commctrl. h.
+El nombre de clase de ventana para un control de encabezado es WC HEADER, que se define como \_ "SysHeader32" en Commctrl.h.
 
 ## <a name="iaccessible-methods"></a>Métodos IAccessible
 
-Un control de encabezado admite los siguientes métodos [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) :
+Un control de encabezado admite los siguientes [**métodos IAccessible:**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible)
 
 
 
 | Método                                                                    | Comentarios                                                        |
 |---------------------------------------------------------------------------|-----------------------------------------------------------------|
-| [**accDoDefaultAction**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-accdodefaultaction) | Este método realiza la acción predeterminada haciendo clic en el encabezado. |
+| [**accDoDefaultAction**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-accdodefaultaction) | Este método realiza la acción predeterminada haciendo clic en el encabezado . |
 | [**accHitTest**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-acchittest)                 |                                                                 |
 | [**accLocation**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-acclocation)               |                                                                 |
 | [**accNavigate**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-accnavigate)               |                                                                 |
@@ -38,38 +38,38 @@ Un control de encabezado admite los siguientes métodos [**IAccessible**](/windo
 
 
 
- 
+ 
 
-## <a name="iaccessible-properties"></a>Propiedades de IAccessible
+## <a name="iaccessible-properties"></a>Propiedades IAccessible
 
-Un control de encabezado admite las siguientes propiedades [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) :
+Un control de encabezado admite las siguientes [**propiedades IAccessible:**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible)
 
 
 
 | Propiedad                                                                       | Comentarios                                                                                                                                                                                                                               |
 |--------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**obtener \_ accChildCount**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accchildcount)       | La propiedad **ChildCount** es cero.                                                                                                                                                                                                   |
-| [**obtener \_ accDefaultAction**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accdefaultaction) | La propiedad **DEFAULTACTION** es "click".                                                                                                                                                                                             |
-| [**obtener \_ accFocus**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accfocus)                 |                                                                                                                                                                                                                                        |
-| [**obtener \_ accName**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accname)                   | La propiedad **Name** es igual que el nombre del encabezado de columna.                                                                                                                                                                    |
-| [**obtener \_ accParent**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accparent)               | La propiedad **primaria** es una ventana ( [**\_ \_ lista de sistema de roles**](object-roles.md) ) que rodea el control y tiene el mismo nombre de clase de ventana que el control.                                                      |
-| [**obtener \_ accRole**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accrole)                   | La propiedad **role** es el [**sistema de rol \_ \_ COLUMNHEADER**](object-roles.md).                                                                                                                                  |
-| [**obtener \_ accState**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accstate)                 | El valor de la propiedad **State** es siempre [**el \_ estado \_ ReadOnly del sistema**](object-state-constants.md) y también puede incluir el [**sistema de estado \_ \_ invisible**](object-state-constants.md). |
+| [**get \_ accChildCount**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accchildcount)       | La **propiedad ChildCount** es cero.                                                                                                                                                                                                   |
+| [**get \_ accDefaultAction**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accdefaultaction) | La **propiedad DefaultAction** es "Click".                                                                                                                                                                                             |
+| [**get \_ accFocus**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accfocus)                 |                                                                                                                                                                                                                                        |
+| [**get \_ accName**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accname)                   | La **propiedad Name** es la misma que el nombre del encabezado de columna.                                                                                                                                                                    |
+| [**get \_ accParent**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accparent)               | La **propiedad Parent** es una ventana [**(ROLE SYSTEM \_ \_ LIST)**](object-roles.md) que rodea el control y tiene el mismo nombre de clase de ventana que el control.                                                      |
+| [**get \_ accRole**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accrole)                   | La **propiedad Role** es ROLE SYSTEM [**\_ \_ COLUMNHEADER.**](object-roles.md)                                                                                                                                  |
+| [**get \_ accState**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accstate)                 | El valor de la **propiedad State** siempre es STATE [**SYSTEM \_ \_ READONLY**](object-state-constants.md) y también puede incluir [**STATE SYSTEM \_ \_ INVISIBLE.**](object-state-constants.md) |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[IAccessible (interfaz)](/windows/desktop/api/oleacc/nn-oleacc-iaccessible)
+[IAccessible (Interfaz)](/windows/desktop/api/oleacc/nn-oleacc-iaccessible)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

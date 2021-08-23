@@ -1,11 +1,11 @@
 ---
-title: Propiedad de Puerto IVMUSBDevice (VPCCOMInterfaces. h)
+title: Propiedad IVMUSBDevice Port (VPCCOMInterfaces.h)
 description: Recupera el identificador del puerto en el que está conectado el dispositivo.
 ms.assetid: 612c0eba-aa80-4539-a883-f05d32d13b41
 keywords:
-- Propiedad de puerto virtual PC
-- Propiedad de puerto virtual PC, interfaz IVMUSBDevice
-- Interfaz IVMUSBDevice Virtual PC, propiedad de Puerto
+- Propiedad de puerto Virtual PC
+- Propiedad de puerto Virtual PC, interfaz IVMUSBDevice
+- INTERFAZ IVMUSBDispositivo Pc virtual, propiedad Puerto
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bb821921d10b23fdb17256372708650d060e253b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d5b564f1e8c75ecbf5bb140d17218df83bc5b23f5de219c819dc5c4f31f7be14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803578"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118998715"
 ---
-# <a name="ivmusbdeviceport-property"></a>IVMUSBDevice::P propiedad ordenar
+# <a name="ivmusbdeviceport-property"></a>IVMUSBDevice::P ort
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Recupera el identificador del puerto en el que está conectado el dispositivo.
 
@@ -45,7 +45,7 @@ HRESULT get_Port(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Identificador de puerto. Este valor se asigna mediante el controlador del conector USB.
+Identificador de puerto. El controlador del conector USB asigna este valor.
 
 ## <a name="error-codes"></a>Códigos de error
 
@@ -53,8 +53,8 @@ Identificador de puerto. Este valor se asigna mediante el controlador del conect
 
 | Nombre o valor                                                                                                                                            | Significado                                       |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| <dl> <dt>S \_ Aceptar</dt> <dt>0</dt> </dl>               | El método se completó correctamente.<br/> |
-| <dl> <dt>E \_ PUNTERO</dt> <dt>0x80004003</dt> </dl> | El parámetro es **null**.<br/>         |
+| <dl> <dt>S \_ Ok</dt> <dt>0</dt> </dl>               | El método se completó correctamente.<br/> |
+| <dl> <dt>E \_ Puntero</dt> <dt>0x80004003</dt> </dl> | El parámetro es **NULL.**<br/>         |
 
 
 
@@ -64,12 +64,12 @@ Identificador de puerto. Este valor se asigna mediante el controlador del conect
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMUSBDevice se define como 63C1258C-5721-4070-B86B-A6CE2AFEC0B3<br/>               |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMUSBDevice se define como \_ 63C1258C-5721-4070-B86B-A6CE2AFEC0B3<br/>               |
 
 
 

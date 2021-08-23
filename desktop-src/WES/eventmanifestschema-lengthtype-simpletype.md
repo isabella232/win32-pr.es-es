@@ -1,9 +1,9 @@
 ---
-title: Tipo simple de LengthType
+title: Tipo simple LengthType
 description: Define un tipo de longitud que se usa para especificar el número de bytes o caracteres de un elemento de datos de longitud variable, como datos binarios o una cadena ANSI o Unicode.
 ms.assetid: a15e4241-cce3-4f62-bc1c-f70fb1ea5d38
 keywords:
-- LengthType de tipo simple de registro
+- Tipo simple LengthType EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: dbb0720c2e26fa73056ccffdd17392e93e491c11
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b9ded861e3e46cd5e4fc6c069d95bba9f0ab3457559bf319aef41cdf906e193b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359839"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118997865"
 ---
-# <a name="lengthtype-simple-type"></a>Tipo simple de LengthType
+# <a name="lengthtype-simple-type"></a>Tipo simple LengthType
 
-Define un tipo de longitud que se usa para especificar el número de bytes o caracteres de un elemento de datos de longitud variable, como datos binarios o una cadena ANSI o Unicode. El valor se puede especificar como un valor XS: unsignedShort o como una cadena que hace referencia al nombre del nodo elemento de datos que contiene el valor Short sin signo.
+Define un tipo de longitud que se usa para especificar el número de bytes o caracteres de un elemento de datos de longitud variable, como datos binarios o una cadena ANSI o Unicode. El valor se puede especificar como un valor xs:unsignedShort o como una cadena que hace referencia al nombre del nodo de elemento de datos que contiene el valor corto sin signo.
 
 ``` syntax
 <xs:simpleType name="LengthType">
@@ -38,8 +38,8 @@ Define un tipo de longitud que se usa para especificar el número de bytes o car
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

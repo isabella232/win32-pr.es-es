@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: fb9110da7fae4ebbf4609d361124dbbcdedfe59b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 842ccd74ef7236af7a943a43c0c2701140eb897dff535023a78311dd049f06b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093943"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044683"
 ---
 # <a name="d3dxquaternionslerp-function-d3dx9mathh"></a>Función D3DXQuaternionSlerp (D3dx9math.h)
 
@@ -70,7 +70,7 @@ Puntero a una estructura [**D3DXQUATERNION de**](d3dxquaternion.md) origen.
 
 </dd> <dt>
 
-*t* \[ in\]
+*t* \[ en\]
 </dt> <dd>
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
@@ -87,7 +87,7 @@ Puntero a una [**estructura D3DXQUATERNION**](d3dxquaternion.md) que es el resul
 
 ## <a name="remarks"></a>Comentarios
 
-El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De este modo, la **función D3DXQuaternionSlerp** se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXQuaternionSlerp** se puede usar como parámetro para otra función.
 
 Use [**D3DXQuaternionNormalize para cualquier**](d3dxquaternionnormalize.md) entrada de cuaternión que aún no esté normalizada.
 
@@ -102,7 +102,7 @@ Use [**D3DXQuaternionNormalize para cualquier**](d3dxquaternionnormalize.md) ent
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

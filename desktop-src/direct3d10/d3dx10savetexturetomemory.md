@@ -1,7 +1,7 @@
 ---
-description: Guardar una textura en la memoria.
+description: Guarde una textura en la memoria.
 ms.assetid: be541b99-6d07-480e-8f28-b7fc44566e7d
-title: Función D3DX10SaveTextureToMemory (D3DX10Tex. h)
+title: Función D3DX10SaveTextureToMemory (D3DX10Tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: f20278f9fc590e72f93051d5fdd4cfbd918098df
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3736b2de21df3e77f5b06d34f2b0b64a7592f2212a71ffd4a37b70454667427a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698270"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119047063"
 ---
-# <a name="d3dx10savetexturetomemory-function"></a>D3DX10SaveTextureToMemory función)
+# <a name="d3dx10savetexturetomemory-function"></a>Función D3DX10SaveTextureToMemory
 
-Guardar una textura en la memoria.
+Guarde una textura en la memoria.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,37 +43,37 @@ HRESULT D3DX10SaveTextureToMemory(
 
 <dl> <dt>
 
-*pSrcTexture* \[ de\]
+*pSrcTexture* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Resource**](/windows/desktop/api/D3D10/nn-d3d10-id3d10resource)\***
 
-Puntero a la textura que se va a guardar. Consulte la [**interfaz ID3D10Resource**](/windows/desktop/api/D3D10/nn-d3d10-id3d10resource).
+Puntero a la textura que se va a guardar. Vea [**ID3D10Resource (Interfaz).**](/windows/desktop/api/D3D10/nn-d3d10-id3d10resource)
 
 </dd> <dt>
 
-*DestFormat* \[ de\]
+*DestFormat* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **\_ formato de \_ archivo \_ de imagen D3DX10**](d3dx10-image-file-format.md)**
+Tipo: FORMATO DE ARCHIVO DE **[ **\_ IMAGEN \_ \_ D3DX10**](d3dx10-image-file-format.md)**
 
-Formato en el que se guardará la textura. Consulte [**\_ formato de \_ archivo \_ de imagen D3DX10**](d3dx10-image-file-format.md).
+Formato con el que se guardará la textura. Vea [**FORMATO DE ARCHIVO DE IMAGEN \_ \_ \_ D3DX10.**](d3dx10-image-file-format.md)
 
 </dd> <dt>
 
-*ppDestBuf* \[ enuncia\]
+*ppDestBuf* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3D10BLOB**](/windows/desktop/api/D3DCommon/nn-d3dcommon-id3d10blob)\***
 
-Dirección de un puntero a la memoria que contiene la textura guardada. Consulte la [**interfaz ID3D10Blob**](/windows/desktop/api/D3DCommon/nn-d3dcommon-id3d10blob).
+Dirección de un puntero a la memoria que contiene la textura guardada. Vea [**ID3D10Blob (Interfaz).**](/windows/desktop/api/D3DCommon/nn-d3dcommon-id3d10blob)
 
 </dd> <dt>
 
-*Flags* \[in\]
+*Marcas* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Opcional.
 
@@ -83,7 +83,7 @@ Opcional.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que aparecen en los [códigos de retorno de Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -91,8 +91,8 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10Tex. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>  |
+| Encabezado<br/>  | <dl> <dt>D3DX10Tex.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>  |
 
 
 
@@ -103,7 +103,7 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 [Funciones de textura en D3DX 10](d3d10-graphics-reference-d3dx10-functions-texturing.md)
 </dt> <dt>
 
-[Funciones de De uso general](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
+[De uso general Functions](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
 </dt> </dl>
 
  

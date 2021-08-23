@@ -1,8 +1,8 @@
 ---
-description: 'WMI tiene constantes de seguridad usadas para la comprobación de acceso del espacio de nombres de \_ \_ SystemSecurity:: GetCallerAccessRights.'
+description: WMI tiene constantes de seguridad que \_ SystemSecurity::GetCallerAccessRights usa para comprobar el acceso al espacio de \_ nombres.
 ms.assetid: 2e905078-d510-4417-8acb-a6ff535d9d0b
 ms.tgt_platform: multiple
-title: Constantes de derechos de acceso de espacio de nombres (Wbemcli. h)
+title: Constantes de derechos de acceso de espacio de nombres (Wbemcli.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,20 +19,20 @@ api_type:
 - HeaderDef
 api_location:
 - Wbemcli.h
-ms.openlocfilehash: 469e036b7cd385fa2ac2bae23e0da081288b536b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6c23bcde9d085a6668fd5c57ee0ff51a7db61784de44d79080e2b2d2d1ee051f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104081976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118992755"
 ---
 # <a name="namespace-access-rights-constants"></a>Constantes de derechos de acceso de espacio de nombres
 
-WMI tiene constantes de seguridad usadas para la comprobación de acceso del espacio de nombres de [**\_ \_ SystemSecurity:: GetCallerAccessRights**](--systemsecurity-getcalleraccessrights.md). Para obtener información de seguridad acerca de las listas de control de acceso (ACL, DACL o SACL), consulte [listas de Access Control (ACL)](/windows/desktop/SecAuthZ/access-control-lists) y [**derechos de acceso estándar**](/windows/desktop/SecAuthZ/standard-access-rights). Estas constantes se definen en la enumeración de **\_ \_ marcas de seguridad WBEM** .
+WMI tiene constantes de seguridad que [**\_ \_ SystemSecurity::GetCallerAccessRights**](--systemsecurity-getcalleraccessrights.md)usa para comprobar el acceso al espacio de nombres. Para obtener información de seguridad sobre las listas de control de acceso (ACL, DACL o SACL), vea Listas de Access Control [(ACL)](/windows/desktop/SecAuthZ/access-control-lists) y [**Derechos de acceso estándar.**](/windows/desktop/SecAuthZ/standard-access-rights) Estas constantes se definen en la **enumeración WBEM \_ SECURITY \_ FLAGS.**
 
 <dl> <dt>
 
-<span id="WBEM_ENABLE"></span><span id="wbem_enable"></span>**\_Habilitar WBEM**
+<span id="WBEM_ENABLE"></span><span id="wbem_enable"></span>**WBEM \_ ENABLE**
 </dt> <dd> <dl> <dt>
 
 1 (0x1)
@@ -40,25 +40,25 @@ WMI tiene constantes de seguridad usadas para la comprobación de acceso del esp
 
 
 
-Habilita la cuenta y concede al usuario permisos de lectura. Este es un derecho de acceso predeterminado para todos los usuarios y corresponde al permiso habilitar cuenta en la pestaña seguridad del [*control WMI*](gloss-w.md). Para obtener más información, vea [establecer la seguridad del espacio de nombres con el control WMI](setting-namespace-security-with-the-wmi-control.md).
+Habilita la cuenta y concede al usuario permisos de lectura. Se trata de un derecho de acceso predeterminado para todos los usuarios y corresponde al permiso Habilitar cuenta en la ficha Seguridad del [*control WMI*](gloss-w.md). Para obtener más información, vea [Establecer la seguridad del espacio de nombres con el control WMI](setting-namespace-security-with-the-wmi-control.md).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_METHOD_EXECUTE"></span><span id="wbem_method_execute"></span>**\_ejecución del método WBEM \_**
+<span id="WBEM_METHOD_EXECUTE"></span><span id="wbem_method_execute"></span>**WBEM \_ METHOD \_ EXECUTE**
 </dt> <dd> <dl> <dt>
 
-2 (0X2)
+2 (0x2)
 </dt> <dt>
 
 
 
-Permite la ejecución de métodos. Los proveedores pueden realizar comprobaciones de acceso adicionales. Este es un derecho de acceso predeterminado para todos los usuarios y corresponde al permiso ejecutar métodos en la pestaña seguridad del control WMI.
+Permite la ejecución de métodos. Los proveedores pueden realizar comprobaciones de acceso adicionales. Se trata de un derecho de acceso predeterminado para todos los usuarios y corresponde al permiso Ejecutar métodos en la ficha Seguridad del control WMI.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_FULL_WRITE_REP"></span><span id="wbem_full_write_rep"></span>**\_rellenado completo de WBEM \_ \_**
+<span id="WBEM_FULL_WRITE_REP"></span><span id="wbem_full_write_rep"></span>**WBEM \_ FULL \_ WRITE \_ REP**
 </dt> <dd> <dl> <dt>
 
 4 (0x4)
@@ -66,12 +66,12 @@ Permite la ejecución de métodos. Los proveedores pueden realizar comprobacione
 
 
 
-Permite que una cuenta de usuario escriba en las clases del repositorio WMI, así como en las instancias. Un usuario no puede escribir en las clases del sistema. Solo los miembros del grupo administradores tienen este permiso. **WBEM \_ El \_ \_ representante de escritura completo** corresponde al permiso de escritura completo en la pestaña seguridad del control WMI.
+Permite que una cuenta de usuario escriba en clases del repositorio WMI, así como en instancias de . Un usuario no puede escribir en clases del sistema. Solo los miembros del grupo Administradores tienen este permiso. **WBEM \_ FULL \_ WRITE \_ REP** corresponde al permiso De escritura completa en el ficha Seguridad del control WMI.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_PARTIAL_WRITE_REP"></span><span id="wbem_partial_write_rep"></span>**\_representación parcial de la \_ escritura de WBEM \_**
+<span id="WBEM_PARTIAL_WRITE_REP"></span><span id="wbem_partial_write_rep"></span>**WBEM \_ PARTIAL \_ WRITE \_ REP**
 </dt> <dd> <dl> <dt>
 
 8 (0x8)
@@ -79,12 +79,12 @@ Permite que una cuenta de usuario escriba en las clases del repositorio WMI, as�
 
 
 
-Permite escribir datos solo en instancias, no en clases. Un usuario no puede escribir clases en el [*repositorio WMI*](gloss-w.md). Solo los miembros del grupo administradores tienen este derecho. **WBEM \_ La \_ \_ representación de escritura parcial** corresponde al permiso de escritura parcial en la pestaña seguridad del control WMI.
+Permite escribir datos solo en instancias, no en clases. Un usuario no puede escribir clases en el [*repositorio WMI*](gloss-w.md). Solo los miembros del grupo Administradores tienen este derecho. **WBEM \_ PARTIAL \_ WRITE \_ REP corresponde** al permiso De escritura parcial en la ficha Seguridad del control WMI.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_WRITE_PROVIDER"></span><span id="wbem_write_provider"></span>**\_proveedor de escritura WBEM \_**
+<span id="WBEM_WRITE_PROVIDER"></span><span id="wbem_write_provider"></span>**WBEM \_ WRITE \_ PROVIDER**
 </dt> <dd> <dl> <dt>
 
 16 (0x10)
@@ -92,12 +92,12 @@ Permite escribir datos solo en instancias, no en clases. Un usuario no puede esc
 
 
 
-Permite escribir clases e instancias en los proveedores. Tenga en cuenta que los proveedores pueden realizar comprobaciones de acceso adicionales al suplantar a un usuario. Este es un derecho de acceso predeterminado para todos los usuarios y corresponde al permiso de escritura de proveedor en la pestaña seguridad del control WMI.
+Permite escribir clases e instancias en proveedores. Tenga en cuenta que los proveedores pueden realizar comprobaciones de acceso adicionales al suplantar a un usuario. Se trata de un derecho de acceso predeterminado para todos los usuarios y corresponde al permiso De escritura del proveedor en ficha Seguridad del control WMI.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_REMOTE_ACCESS"></span><span id="wbem_remote_access"></span>**\_acceso remoto de WBEM \_**
+<span id="WBEM_REMOTE_ACCESS"></span><span id="wbem_remote_access"></span>**WBEM \_ REMOTE \_ ACCESS**
 </dt> <dd> <dl> <dt>
 
 32 (0x20)
@@ -105,7 +105,7 @@ Permite escribir clases e instancias en los proveedores. Tenga en cuenta que los
 
 
 
-Permite que una cuenta de usuario realice de forma remota las operaciones permitidas por los permisos descritos anteriormente. Solo los miembros del grupo administradores tienen este derecho. **WBEM \_ El \_ acceso remoto** corresponde al permiso Remote enable en la pestaña seguridad del control WMI.
+Permite que una cuenta de usuario realice de forma remota las operaciones permitidas por los permisos descritos anteriormente. Solo los miembros del grupo Administradores tienen este derecho. **WBEM \_ REMOTE \_ ACCESS** corresponde al permiso Remote Enable en el ficha Seguridad del control WMI.
 
 
 </dt> </dl> </dd> </dl>
@@ -114,25 +114,25 @@ Permite que una cuenta de usuario realice de forma remota las operaciones permit
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                       |
-| Encabezado<br/>                   | <dl> <dt>Wbemcli. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Wbemcli.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Constantes de seguridad de WMI](wmi-security-constants.md)
+[Constantes de seguridad WMI](wmi-security-constants.md)
 </dt> <dt>
 
-[Proteger los espacios de nombres de WMI](securing-wmi-namespaces.md)
+[Protección de espacios de nombres WMI](securing-wmi-namespaces.md)
 </dt> <dt>
 
-[Acceso a los espacios de nombres WMI](access-to-wmi-namespaces.md)
+[Acceso a espacios de nombres WMI](access-to-wmi-namespaces.md)
 </dt> <dt>
 
 [Objetos de descriptor de seguridad WMI](wmi-security-descriptor-objects.md)

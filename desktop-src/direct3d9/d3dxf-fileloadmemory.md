@@ -1,7 +1,7 @@
 ---
 description: Identifica los datos de memoria.
 ms.assetid: 0ec0597f-d83a-4c1e-b993-30f0bbd64e6b
-title: D3DXF_FILELOADMEMORY estructura (D3dx9xof. h)
+title: D3DXF_FILELOADMEMORY estructura (D3dx9xof.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9xof.h
-ms.openlocfilehash: a7ad988d9906101db57af6f8f5042766c3e32ccc
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b3709e6eeb99026b76d066edfccbae578b5c851d6e73936ffe06d10fbf69dcb5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104003818"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119045063"
 ---
-# <a name="d3dxf_fileloadmemory-structure"></a>D3DXF \_ estructura FILELOADMEMORY
+# <a name="d3dxf_fileloadmemory-structure"></a>Estructura FILELOADMEMORY de D3DXF \_
 
 Identifica los datos de memoria.
 
@@ -54,7 +54,7 @@ Puntero a un bloque de memoria que se va a cargar.
 **dSize**
 </dt> <dd>
 
-Tipo: **[ **tamaño \_ T**](../winprog/windows-data-types.md)**
+Tipo: **[ **SIZE \_ T**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -62,9 +62,9 @@ Tamaño del bloque de memoria que se va a cargar, en bytes.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta estructura identifica los datos que se van a cargar desde la memoria cuando una aplicación usa el método [**CreateEnumObject**](id3dxfile--createenumobject.md) y especifica la \_ marca D3DXF FILELOAD \_ FROMMEMORY.
+Esta estructura identifica los datos que se cargarán desde la memoria cuando una aplicación use el [**método CreateEnumObject**](id3dxfile--createenumobject.md) y especifica la marca D3DXF \_ FILELOAD \_ FROMMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,7 +72,7 @@ Esta estructura identifica los datos que se van a cargar desde la memoria cuando
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9xof. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9xof.h</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ Esta estructura identifica los datos que se van a cargar desde la memoria cuando
 
 <dl> <dt>
 
-[Estructuras de archivos de D3DX X](dx9-graphics-reference-d3dx-x-file-structures.md)
+[Estructuras de archivo D3DX X](dx9-graphics-reference-d3dx-x-file-structures.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: Atributo de raíz DNS superior
-description: Este es un atributo del sistema que se usa para la generación de referencias.
+title: Atributo Superior-DNS-Root
+description: Se trata de un atributo del sistema que se usa para la generación de referencias.
 ms.assetid: 421f8315-26e2-457d-ae76-868b7fc6551a
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo raíz superior-DNS
-- superiorDNSRoot esquema de AD de atributos
+- Esquema de AD del atributo Superior-DNS-Root
+- Esquema de AD del atributo superiorDNSRoot
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6561839cf5137968adbac628ad6046b8b86dab85
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2b4dcb26b12ba36003a82ba093d0049a050f4945ec2f277e4ea9a503a08a9b7e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658971"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118959925"
 ---
-# <a name="superior-dns-root-attribute"></a>Atributo de raíz DNS superior
+# <a name="superior-dns-root-attribute"></a>Atributo Superior-DNS-Root
 
-Este es un atributo del sistema que se usa para la generación de referencias.
+Se trata de un atributo del sistema que se usa para la generación de referencias.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Raíz DNS superior                           |
-| Nombre para mostrar de LDAP | superiorDNSRoot                             |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | El sistema establece este valor.            |
+| CN                | Superior-DNS-Root                           |
+| Ldap-Display-Name | superiorDNSRoot                             |
+| Size              | \-                                          |
+| Privilegio actualizar  | El sistema establece este valor.            |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.532                      |
-| System-ID-GUID    | 5245801d-ca6a-11d0-afff-0000f80367c1        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 5245801d-ca6a-11d0-afff-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -44,7 +44,7 @@ Este es un atributo del sistema que se usa para la generación de referencias.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -54,15 +54,15 @@ Este es un atributo del sistema que se usa para la generación de referencias.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | \-                                         |
+| Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Tiene un único valor       | True                                       |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Verdadero                                       |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
@@ -75,15 +75,15 @@ Este es un atributo del sistema que se usa para la generación de referencias.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | \-                                         |
+| Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Tiene un único valor       | True                                       |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Verdadero                                       |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
@@ -92,19 +92,19 @@ Este es un atributo del sistema que se usa para la generación de referencias.
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | \-                                         |
+| Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Tiene un único valor       | True                                       |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Verdadero                                       |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
@@ -117,15 +117,15 @@ Este es un atributo del sistema que se usa para la generación de referencias.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | \-                                         |
+| Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Tiene un único valor       | True                                       |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Verdadero                                       |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
@@ -138,15 +138,15 @@ Este es un atributo del sistema que se usa para la generación de referencias.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | \-                                         |
+| Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Tiene un único valor       | True                                       |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Verdadero                                       |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
@@ -159,15 +159,15 @@ Este es un atributo del sistema que se usa para la generación de referencias.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | \-                                         |
+| Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Tiene un único valor       | True                                       |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Verdadero                                       |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
@@ -180,15 +180,15 @@ Este es un atributo del sistema que se usa para la generación de referencias.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | \-                                         |
+| Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Tiene un único valor       | True                                       |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Verdadero                                       |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |

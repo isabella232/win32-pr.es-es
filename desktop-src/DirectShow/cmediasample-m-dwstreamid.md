@@ -1,7 +1,7 @@
 ---
-description: Identificador de flujo. Para obtener más información, vea AM \_ SAMPLE2 \_ Properties.
+description: Identificador de secuencia. Para obtener más información, vea PROPIEDADES \_ DE AM \_ SAMPLE2.
 ms.assetid: 3e890c2b-0bc5-45b3-84d1-f9535ba15334
-title: 'Miembro CMediaSample:: m_dwStreamId (Amfilter. h)'
+title: Miembro CMediaSample::m_dwStreamId (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c7fef304481672514ce1eb30aa865b5967b6a9e4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7e8f0d33fbd56ab8da6ea986a019c2631089de70f43a3736d16cdb9c896bee4e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954544"
 ---
-# <a name="cmediasamplem_dwstreamid-member"></a>Miembro dwStreamId CMediaSample:: m \_
+# <a name="cmediasamplem_dwstreamid-member"></a>Miembro CMediaSample::m \_ dwStreamId
 
-Identificador de flujo. Para obtener más información, vea [**AM \_ SAMPLE2 \_ Properties**](/windows/win32/api/strmif/ns-strmif-am_sample2_properties).
+Identificador de secuencia. Para obtener más información, [**vea PROPIEDADES DE AM \_ SAMPLE2 \_**](/windows/win32/api/strmif/ns-strmif-am_sample2_properties).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ DWORD m_dwStreamId;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ DWORD m_dwStreamId;
 
 <dl> <dt>
 
-[**Clase CMediaSample**](cmediasample.md)
+[**CMediaSample (clase)**](cmediasample.md)
 </dt> </dl>
 
  

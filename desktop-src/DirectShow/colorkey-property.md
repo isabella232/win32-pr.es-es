@@ -1,15 +1,15 @@
 ---
-description: La propiedad ColorKey establece o recupera la clave de color utilizada en los subtítulos (CC).
+description: La propiedad ColorKey establece o recupera la clave de color usada en los subtítulos.
 ms.assetid: 4d4b38e6-bd29-4e16-8f82-a5da9312d272
 title: Propiedad ColorKey
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 75620be88a861e02915c27324978382feefc5835
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: abca1dabbdb67f4380dbe32acbf2948862695b7c424dfd08629ec16237bb88c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104494638"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073748"
 ---
 # <a name="colorkey-property"></a>Propiedad ColorKey
 
@@ -18,7 +18,7 @@ ms.locfileid: "104494638"
 
  
 
-La `ColorKey` propiedad establece o recupera la clave de color utilizada en los subtítulos (CC).
+La `ColorKey` propiedad establece o recupera la clave de color utilizada en los subtítulos.
 
 ``` syntax
 [ iColorKey = ] MSWebDVD.ColorKey
@@ -26,11 +26,11 @@ La `ColorKey` propiedad establece o recupera la clave de color utilizada en los 
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor entero que representa el color que se va a usar como fondo transparente para el texto con título cerrado. El valor predeterminado en 256 colores es magenta y está fuera de negro en cualquier otra profundidad de color.
+Devuelve un valor entero que representa el color que se usará como fondo transparente para el texto con subtítulos. El valor predeterminado en 256 colores es el color rojo y el negro en cualquier otra profundidad de color.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad es de lectura y escritura. Esta propiedad solo se aplica a los subtítulos (CC), si existen, no a la secuencia de la subimagen.
+Esta propiedad es de lectura y escritura. Esta propiedad solo se aplica a los subtítulos, si existen, no a la secuencia de subimagen.
 
  
 

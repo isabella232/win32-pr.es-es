@@ -1,29 +1,29 @@
 ---
 title: HttpClientWithKerberosOverSslExample
-description: En este ejemplo se muestra un cliente HTTP que envía mensajes de solicitud-respuesta, con seguridad de modo mixto de Kerberos a través de SSL.
+description: En este ejemplo se muestra un cliente HTTP que envía mensajes de solicitud-respuesta, con kerberos sobre la seguridad en modo mixto de SSL.
 ms.assetid: 48b20c9b-38e7-472c-9606-b454850e14c1
 keywords:
 - HttpClientWithKerberosOverSslExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d07c56af901c6842167753e788d005ee897e9041
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3d5ff1aade781ae83b03ffb69ab8f544c79904cb58371f5f6fdcd7683691c919
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104076386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963354"
 ---
 # <a name="httpclientwithkerberosoversslexample"></a>HttpClientWithKerberosOverSslExample
 
-En este ejemplo se muestra un cliente HTTP que envía mensajes de solicitud-respuesta, con seguridad de modo mixto de Kerberos a través de SSL. En esta configuración, la conexión de transporte está protegida (firmada, cifrada) por SSL, que también proporciona autenticación de servidor. La autenticación del cliente se proporciona mediante un vale APREQ de Kerberos en un encabezado WS-Security del mensaje.
+En este ejemplo se muestra un cliente HTTP que envía mensajes de solicitud-respuesta, con kerberos sobre la seguridad en modo mixto de SSL. En esta configuración, la conexión de transporte está protegida (firmada, cifrada) por SSL, que también proporciona autenticación de servidor. La autenticación de cliente se proporciona mediante un vale de APREQ de Kerberos en un WS-Security encabezado del mensaje.
 
--   [HttpClientWithKerberosOverSsl. cpp](#httpclientwithkerberosoversslcpp)
--   [PurchaseOrder. wsdl](#purchaseorderwsdl)
+-   [HttpClientWithKerberosOverSsl.cpp](#httpclientwithkerberosoversslcpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Archivo Make](#makefile)
 
-## <a name="httpclientwithkerberosoversslcpp"></a>HttpClientWithKerberosOverSsl. cpp
+## <a name="httpclientwithkerberosoversslcpp"></a>HttpClientWithKerberosOverSsl.cpp
 
 
 ```C++
@@ -462,7 +462,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. wsdl
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -606,9 +606,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

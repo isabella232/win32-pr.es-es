@@ -1,42 +1,42 @@
 ---
-description: Datos de formato adicionales para una secuencia binaria en un archivo de formato de sistema avanzado (ASF).
+description: Datos de formato adicionales para una secuencia binaria en un archivo de formato de sistemas avanzados (ASF).
 ms.assetid: fc5b9890-1508-498e-b2ce-ed4fa2052f9c
-title: MF_MT_ARBITRARY_FORMAT atributo (mfapi. h)
+title: MF_MT_ARBITRARY_FORMAT atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6cf98da23fbc4631ca67462dfc58f870abe73885
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aa7629e92eea07059f562d553985628f2099df1da03bd371617f0eed5183dd69
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716355"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973614"
 ---
-# <a name="mf_mt_arbitrary_format-attribute"></a>Atributo de formato de MF \_ MT \_ arbitrario \_
+# <a name="mf_mt_arbitrary_format-attribute"></a>Atributo \_ MF MT \_ ARBITRARY \_ FORMAT
 
-Datos de formato adicionales para una secuencia binaria en un archivo de formato de sistema avanzado (ASF).
+Datos de formato adicionales para una secuencia binaria en un archivo de formato de sistemas avanzados (ASF).
 
 ## <a name="data-type"></a>Tipo de datos
 
-**BYTES\[\]**
+**Byte\[\]**
 
 ## <a name="getset"></a>Obtener o establecer
 
-Para obtener este atributo, llame a [**IMFAttributes:: GetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getblob).
+Para obtener este atributo, llame [**aATTRIBUTEAttributes::GetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getblob).
 
-Para establecer este atributo, llame a [**IMFAttributes:: SetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setblob).
+Para establecer este atributo, llame [**aATTRIBUTEAttributes::SetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setblob).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las aplicaciones pueden usar secuencias binarias para contener tipos de datos personalizados. El origen de medios ASF trata el valor de este atributo como un BLOB opaco. El miembro **formatType** de la estructura de [**\_ \_ encabezado arbitraria de MT**](/windows/desktop/api/mfapi/ns-mfapi-mt_arbitrary_header) define el diseño de los datos de formato.
+Las aplicaciones pueden usar flujos binarios para contener tipos de datos personalizados. El origen multimedia de ASF trata el valor de este atributo como un blob opaco. El **miembro formattype** de la [**estructura MT \_ ARBITRARY \_ HEADER**](/windows/desktop/api/mfapi/ns-mfapi-mt_arbitrary_header) define el diseño de los datos de formato.
 
-Esta estructura corresponde al campo de datos de formato de los datos específicos del tipo en el objeto de propiedades de la secuencia, en archivos donde el tipo de secuencia es un **\_ \_ medio binario ASF**. Para obtener más información, consulte la especificación ASF.
+Esta estructura corresponde al campo Datos de formato de los datos específicos del tipo en el objeto Propiedades de secuencia, en archivos donde el tipo de secuencia es Medios **\_ binarios \_ de ASF.** Para más información, consulte la especificación de ASF.
 
 > [!Note]  
-> En el SDK de Windows Media Format, las secuencias binarias se denominan *flujos arbitrarios* o *flujos de datos arbitrarios*.
+> En el SDK Windows formato multimedia, los flujos binarios se denominan *secuencias arbitrarias* o *flujos de datos arbitrarios.*
 
  
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -44,9 +44,9 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                            |
-| Encabezado<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                            |
+| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -54,13 +54,13 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Atributos de tipo de medio](media-type-attributes.md)
+[Atributos de tipo multimedia](media-type-attributes.md)
 </dt> <dt>
 
-[\_ \_ encabezado arbitrario MF \_ MT](mf-mt-arbitrary-header.md)
+[ENCABEZADO \_ ARBITRARIO MF MT \_ \_](mf-mt-arbitrary-header.md)
 </dt> </dl>
 
  

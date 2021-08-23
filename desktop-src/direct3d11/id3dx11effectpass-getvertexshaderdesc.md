@@ -1,5 +1,5 @@
 ---
-title: Método ID3DX11EffectPass GetVertexShaderDesc (D3dx11effect. h)
+title: Método ID3DX11EffectPass GetVertexShaderDesc (D3dx11effect.h)
 description: Obtiene una descripción del sombreador de vértices.
 ms.assetid: 7e02a438-2ff4-4e32-bc16-d112aafa57cb
 keywords:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef8c69bab360fa3d12ccfc1a701926183dad7bbe
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7942fc1f8202065ac904223693c70b4dc8ea70bf3421158a08bad253acc67567
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104003926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119045979"
 ---
-# <a name="id3dx11effectpassgetvertexshaderdesc-method"></a>ID3DX11EffectPass:: GetVertexShaderDesc (método)
+# <a name="id3dx11effectpassgetvertexshaderdesc-method"></a>Método ID3DX11EffectPass::GetVertexShaderDesc
 
 Obtiene una descripción del sombreador de vértices.
 
@@ -46,9 +46,9 @@ HRESULT GetVertexShaderDesc(
 *pDesc* 
 </dt> <dd>
 
-Tipo: **[ **D3DX11 \_ Pass \_ Shader \_ DESC**](d3dx11-pass-shader-desc.md)\***
+Tipo: **[ **D3DX11 \_ PASS \_ SHADER \_ DESC**](d3dx11-pass-shader-desc.md)\***
 
-Un puntero a una descripción del sombreador de vértices (vea [**D3DX11 \_ Pass \_ Shader \_ DESC**](d3dx11-pass-shader-desc.md)).
+Puntero a una descripción del sombreador de vértices (vea [**D3DX11 \_ PASS \_ SHADER \_ DESC).**](d3dx11-pass-shader-desc.md)
 
 </dd> </dl>
 
@@ -56,14 +56,14 @@ Un puntero a una descripción del sombreador de vértices (vea [**D3DX11 \_ Pass
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Un paso de efecto puede contener asignaciones de estado de representación y asignaciones de objetos de sombreador.
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -73,8 +73,8 @@ Un paso de efecto puede contener asignaciones de estado de representación y asi
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de efectos 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: IOrpcDebugNotify ServerNotify, método
-description: Informa al servidor de una solicitud de depurador entrante del cliente.
+title: IOrpcDebugNotify ServerNotify (método)
+description: Informa al servidor de una solicitud entrante del depurador del cliente.
 ms.assetid: 6c868b9e-f25b-4d27-80ff-697d0c005b8d
 keywords:
-- Método ServerNotify COM
-- Método ServerNotify COM, interfaz IOrpcDebugNotify
-- Interfaz IOrpcDebugNotify COM, método ServerNotify
+- Método COM serverNotify
+- Método ServerNotify COM , IOrpcDebugNotify (interfaz)
+- IOrpcDebugNotify (interfaz COM), Método ServerNotify
 topic_type:
 - apiref
 api_name:
@@ -16,19 +16,19 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d6dab7cf68b305e83212045851a88e1cdecdde9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cff0faac4ee4e5fa691088afa9de8871a8bf9382ce3da629b3fc14dd9d932ab8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103997073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119048103"
 ---
-# <a name="iorpcdebugnotifyservernotify-method"></a>IOrpcDebugNotify:: ServerNotify (método)
+# <a name="iorpcdebugnotifyservernotify-method"></a>IOrpcDebugNotify::ServerNotify (Método)
 
-Informa al servidor de una solicitud de depurador entrante del cliente.
+Informa al servidor de una solicitud entrante del depurador del cliente.
 
 > [!Note]  
-> En el kit de desarrollo de software (SDK) de Microsoft Windows no se incluye una biblioteca de importación que contiene la función **ServerNotify** . Una aplicación puede usar las funciones [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) y [**GetModuleHandle**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea) para recuperar un puntero de función a [**DllDebugObjectRPCHook**](dlldebugobjectrpchook.md) desde oleaut.dll y proporcionar esta función a través de la interfaz [**IOrpcDebugNotify**](iorpcdebugnotify.md) .
+> Una biblioteca de importación que contiene la **función ServerNotify** no se incluye en el Kit de desarrollo de software (SDK) de Microsoft Windows. Una aplicación puede usar las funciones [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) y [**GetModuleHandle**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea) para recuperar un puntero de función a [**DllDebugObjectRPCHook**](dlldebugobjectrpchook.md) de oleaut.dll y proporcionar esta función a través de la interfaz [**IOrpcDebugNotify.**](iorpcdebugnotify.md)
 
  
 
@@ -50,7 +50,7 @@ void ServerNotify(
 *lpOrpcDebugAll* 
 </dt> <dd>
 
-Un puntero a una estructura [**ORPC \_ dbg \_ All**](orpc-dbg-all.md) que contiene información específica de la notificación que el sistema RPC de com pasa al depurador.
+Puntero a una estructura [**ORPC \_ DBG \_ ALL**](orpc-dbg-all.md) que contiene información específica de notificación que el sistema RPC COM pasa al depurador.
 
 </dd> </dl>
 
@@ -67,7 +67,7 @@ Este método no devuelve ningún valor.
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                     |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                           |
 | Encabezado<br/>                   | <dl> <dt>N/D</dt> </dl> |
-| IDL<br/>                      | <dl> <dt>N/D</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>N/D</dt> </dl> |
 
 
 
@@ -75,7 +75,7 @@ Este método no devuelve ningún valor.
 
 <dl> <dt>
 
-[**ORPC \_ init \_ args**](orpc-init-args.md)
+[**ARGUMENTOS \_ DE ORPC INIT \_**](orpc-init-args.md)
 </dt> <dt>
 
 [**DllDebugObjectRPCHook**](dlldebugobjectrpchook.md)

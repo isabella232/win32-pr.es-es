@@ -1,7 +1,7 @@
 - name: API de ampliación
   href: ./entry-magapi-sdk.md
   items:
-    - name: Introducción a la API de ampliación
+    - name: Información general sobre la API de ampliación
       href: ./magapi-intro.md
     - name: Referencia
       href: ./entry-magapi-ref.md
@@ -9,7 +9,7 @@
         - name: Constantes
           href: ./entry-magapi-constants.md
           items:
-            - name: Estilos del ampliador
+            - name: Estilos de lupa
               href: ./magapi-magnifier-styles.md
         - name: Functions
           href: ./entry-magapi-functions.md

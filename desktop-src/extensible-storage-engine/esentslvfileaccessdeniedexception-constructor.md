@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentSLVFileAccessDeniedException'
-title: Constructor de EsentSLVFileAccessDeniedException
+description: 'Más información sobre: Constructor EsentSLVFileAccessDeniedException'
+title: Constructor EsentSLVFileAccessDeniedException
 TOCTitle: 'EsentSLVFileAccessDeniedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentSLVFileAccessDeniedException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentslvfileaccessdeniedexception.esentslvfileaccessdeniedexception(v=EXCHG.10)
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 76ff9cadd936277b6fafc9cc27427c7cd0fb0889
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 35d4b40a4fa285ee5516573290374f97636308d0622bc5ed5a27a1a6e6e1e954
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913334"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118981415"
 ---
-# <a name="esentslvfileaccessdeniedexception-constructor"></a>Constructor de EsentSLVFileAccessDeniedException
+# <a name="esentslvfileaccessdeniedexception-constructor"></a>Constructor EsentSLVFileAccessDeniedException
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,7 +50,7 @@ Dim instance As New EsentSLVFileAccessDeniedException()
 public EsentSLVFileAccessDeniedException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -58,4 +58,4 @@ public EsentSLVFileAccessDeniedException()
 
 [Miembros de EsentSLVFileAccessDeniedException](./esentslvfileaccessdeniedexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

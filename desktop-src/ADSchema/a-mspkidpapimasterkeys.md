@@ -1,11 +1,11 @@
 ---
-title: atributo MS-PKI-DPAPIMasterKeys
-description: Almacenamiento de claves maestras de DPAPI cifradas para el usuario.
+title: Atributo ms-PKI-DPAPIMasterKeys
+description: Storage claves maestras de DPAPI cifradas para el usuario.
 ms.assetid: 91e29a4b-0ff4-49a3-ba7f-18531188b9c0
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-PKI-DPAPIMasterKeys
-- msPKIDPAPIMasterKeys esquema de AD de atributos
+- Esquema de AD del atributo ms-PKI-DPAPIMasterKeys
+- Esquema de AD del atributo msPKIDPAPIMasterKeys
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c79d9c801243e0ed099b88268e801c633b676679
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 376a4fbd54928ccf4ab20e67b118d91cd0e3712fc24230b5dde654df9c278c6e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960334"
 ---
-# <a name="ms-pki-dpapimasterkeys-attribute"></a>atributo MS-PKI-DPAPIMasterKeys
+# <a name="ms-pki-dpapimasterkeys-attribute"></a>Atributo ms-PKI-DPAPIMasterKeys
 
-Almacenamiento de claves maestras de DPAPI cifradas para el usuario.
+Storage claves maestras de DPAPI cifradas para el usuario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------|
-| CN                | MS-PKI-DPAPIMasterKeys                          |
-| Nombre para mostrar de LDAP | msPKIDPAPIMasterKeys                            |
-| Tamaño              | \-                                              |
-| Actualizar privilegio  | \-                                              |
+| CN                | ms-PKI-DPAPIMasterKeys                          |
+| Ldap-Display-Name | msPKIDPAPIMasterKeys                            |
+| Size              | \-                                              |
+| Privilegio actualizar  | \-                                              |
 | Frecuencia de actualización  | \-                                              |
 | Attribute-Id      | 1.2.840.113556.1.4.1893                         |
-| System-ID-GUID    | b3f93023-9239-4f7c-b99c-6745d87adbc2            |
-| Sintaxis            | [**Object(DN-Binary)**](s-object-dn-binary.md) |
+| System-Id-Guid    | b3f93023-9239-4f7c-b99c-6745d87adbc2            |
+| Syntax            | [**Object(DN-Binary)**](s-object-dn-binary.md) |
 
 
 
@@ -50,20 +50,20 @@ Almacenamiento de claves maestras de DPAPI cifradas para el usuario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | 2046                              |
+| Id. de vínculo                | 2046                              |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | False                             |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Falso                             |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000280                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -71,20 +71,20 @@ Almacenamiento de claves maestras de DPAPI cifradas para el usuario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | 2046                              |
+| Id. de vínculo                | 2046                              |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | False                             |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Falso                             |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000280                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -92,15 +92,15 @@ Almacenamiento de claves maestras de DPAPI cifradas para el usuario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | 2046                              |
+| Id. de vínculo                | 2046                              |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | False                             |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Falso                             |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000280                        |

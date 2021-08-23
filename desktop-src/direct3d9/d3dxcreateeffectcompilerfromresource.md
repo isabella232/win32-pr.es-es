@@ -1,7 +1,7 @@
 ---
-description: Crea un ID3DXEffectCompiler a partir de una descripción de efectos ASCII.
+description: Crea un id3DXEffectCompiler a partir de una descripción de efecto ASCII.
 ms.assetid: 041e0a3f-3dc6-4cc3-8380-d4a79a3f647a
-title: Función D3DXCreateEffectCompilerFromResource (D3DX9Effect. h)
+title: Función D3DXCreateEffectCompilerFromResource (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 1a3dabe0a2690c84e125af6d321397cbe3765f83
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8f781137e6da118392f8b4e17addd92123b75ecd994191a86ab74d46f3dde6f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119045173"
 ---
-# <a name="d3dxcreateeffectcompilerfromresource-function"></a>D3DXCreateEffectCompilerFromResource función)
+# <a name="d3dxcreateeffectcompilerfromresource-function"></a>Función D3DXCreateEffectCompilerFromResource
 
-Crea un [**ID3DXEffectCompiler**](id3dxeffectcompiler.md) a partir de una descripción de efectos ASCII.
+Crea un [**id3DXEffectCompiler a partir**](id3dxeffectcompiler.md) de una descripción de efecto ASCII.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,16 +46,16 @@ HRESULT D3DXCreateEffectCompilerFromResource(
 
 <dl> <dt>
 
-*hSrcModule* \[ de\]
+*hSrcModule* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **HMODULE**](../winprog/windows-data-types.md)**
 
-Identificador de un módulo que contiene la descripción del efecto. Si este parámetro es **null**, se usará el módulo actual.
+Identificador de un módulo que contiene la descripción del efecto. Si este parámetro es **NULL,** se usará el módulo actual.
 
 </dd> <dt>
 
-*pSrcResource* \[ de\]
+*pSrcResource* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCTSTR**](../winprog/windows-data-types.md)**
@@ -64,48 +64,48 @@ Puntero al recurso. Este parámetro admite cadenas Unicode y ANSI. Vea la secci�
 
 </dd> <dt>
 
-*pDefines* \[ de\]
+*pDefines* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMACRO**](d3dxmacro.md) \***
 
-Una matriz opcional terminada en **null** de estructuras [**D3DXMACRO**](d3dxmacro.md) que describen las definiciones del preprocesador. Este valor puede ser **null**.
+Matriz **opcional terminada** en NULL de estructuras [**D3DXMACRO**](d3dxmacro.md) que describen definiciones de preprocesador. Este valor puede ser **NULL.**
 
 </dd> <dt>
 
-*pInclude* \[ de\]
+*pInclude* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXINCLUDE**](id3dxinclude.md)**
 
-Puntero de interfaz opcional, [**ID3DXInclude**](id3dxinclude.md), que se va a usar para controlar las \# directivas Include. Si este valor es **null**, se \# respetarán las inclusiones al compilar desde un archivo o se producirá un error al compilarse a partir de un recurso o de una memoria.
+Puntero de interfaz opcional, [**ID3DXInclude**](id3dxinclude.md), que se usará para controlar \# las directivas include. Si este valor es **NULL,** se respetará includes al compilar desde un archivo o se producirá un error cuando se compile desde un recurso \# o memoria.
 
 </dd> <dt>
 
-*Flags* \[in\]
+*Marcas* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Opciones de compilación identificadas por varias marcas (consulte [marcas D3DXSHADER](d3dxshader-flags.md)). El compilador de HLSL de Direct3D 10 es ahora el valor predeterminado. Consulte [herramienta de compilador de efectos](../direct3dtools/fxc.md) para más información.
+Opciones de compilación identificadas por varias marcas (vea [D3DXSHADER Flags](d3dxshader-flags.md)). El compilador HLSL de Direct3D 10 es ahora el valor predeterminado. Vea [Effect-Compiler Tool para](../direct3dtools/fxc.md) obtener más información.
 
 </dd> <dt>
 
-*ppEffectCompiler* \[ enuncia\]
+*ppEffectCompiler* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXEFFECTCOMPILER**](id3dxeffectcompiler.md)\***
 
-Dirección de un puntero a una interfaz [**ID3DXEffectCompiler**](id3dxeffectcompiler.md) que contiene el compilador de efectos.
+Dirección de un puntero a una [**interfaz ID3DXEffectCompiler,**](id3dxeffectcompiler.md) que contiene el compilador de efectos.
 
 </dd> <dt>
 
-*ppParseErrors* \[ enuncia\]
+*ppParseErrors* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Dirección de un puntero a una interfaz [**ID3DXBuffer**](id3dxbuffer.md) , que contiene los mensajes de error que se produjeron durante la compilación. Este parámetro se puede establecer en **null** para omitir los mensajes de error.
+Dirección de un puntero a una [**interfaz ID3DXBuffer,**](id3dxbuffer.md) que contiene los mensajes de error que se produjeron durante la compilación. Este parámetro se puede establecer en **NULL para** omitir los mensajes de error.
 
 </dd> </dl>
 
@@ -113,13 +113,13 @@ Dirección de un puntero a una interfaz [**ID3DXBuffer**](id3dxbuffer.md) , que 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve como LPCWSTR. De lo contrario, el tipo de datos LPCTSTR se resuelve como LPCSTR.
+Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve en LPCWSTR. De lo contrario, el tipo de datos LPCTSTR se resuelve en LPCSTR.
 
-La configuración del compilador también determina la versión de la función. Si se define Unicode, la llamada de función se resuelve como D3DXCreateEffectCompilerFromResourceW. De lo contrario, la llamada de función se resuelve como D3DXCreateEffectCompilerFromResourceA porque se usan cadenas ANSI.
+La configuración del compilador también determina la versión de la función. Si se define Unicode, la llamada de función se resuelve en D3DXCreateEffectCompilerFromResourceW. De lo contrario, la llamada de función se resuelve en D3DXCreateEffectCompilerFromResourceA porque se usan cadenas ANSI.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -127,8 +127,8 @@ La configuración del compilador también determina la versión de la función. 
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

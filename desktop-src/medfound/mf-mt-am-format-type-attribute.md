@@ -1,33 +1,33 @@
 ---
-description: Contiene un GUID de formato de DirectShow para un tipo de medio.
+description: Contiene un GUID DirectShow para un tipo de medio.
 ms.assetid: dc532791-39e1-4acb-9e62-21d8f25be870
-title: MF_MT_AM_FORMAT_TYPE atributo (mfapi. h)
+title: MF_MT_AM_FORMAT_TYPE atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 18a8faf88128075e5c5b51c1b5ace39329d4e1fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eff59e148f7532cc07e47acf033de91b5eaeb8969f0c39376850738fd54e758e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360513"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973634"
 ---
-# <a name="mf_mt_am_format_type-attribute"></a>MF \_ MT \_ AM \_ \_ atributo de tipo Format
+# <a name="mf_mt_am_format_type-attribute"></a>Atributo MF \_ MT \_ AM FORMAT \_ \_ TYPE
 
-Contiene un GUID de formato de DirectShow para un tipo de medio.
+Contiene un GUID DirectShow para un tipo de medio.
 
 ## <a name="data-type"></a>Tipo de datos
 
 **GUID**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo se puede establecer cuando un tipo de medio de DirectShow se convierte en un tipo de medio Media Foundation. El atributo indica el tipo de formato de DirectShow original. El valor corresponde al miembro FormatType de la estructura [**de \_ \_ tipo de medio am**](/windows/win32/api/strmif/ns-strmif-am_media_type) .
+Este atributo se puede establecer cuando un tipo DirectShow medio se convierte en un tipo Media Foundation medio. El atributo indica el tipo de formato DirectShow original. El valor corresponde al miembro formattype de la [**estructura \_ AM MEDIA \_ TYPE.**](/windows/win32/api/strmif/ns-strmif-am_media_type)
 
-En el caso de un formato de audio, el atributo de [**\_ datos de \_ usuario \_ MF MT**](mf-mt-user-data-attribute.md) podría contener el bloque de formato original, si no se reconoció el tipo de formato DirectShow.
+En el caso de un formato de audio, el atributo [**MF \_ MT USER \_ \_ DATA**](mf-mt-user-data-attribute.md) puede contener el bloque de formato original, si no DirectShow el tipo de formato.
 
-No establezca este atributo en un tipo de medio a menos que esté convirtiendo una estructura de formato de DirectShow.
+No establezca este atributo en un tipo de medio a menos que esté convirtiendo una estructura DirectShow formato.
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,9 +35,9 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -45,7 +45,7 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Atributos de tipo de medio](media-type-attributes.md)
@@ -57,10 +57,10 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 [Tipos de medios](media-types.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getguid)
+[**ATTRIBUTEAttributes::GetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getguid)
 </dt> <dt>
 
-[**IMFAttributes:: SetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setguid)
+[**ATTRIBUTEAttributes::SetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setguid)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)

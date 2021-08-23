@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor DateTimeColumnValue'
-title: Constructor de DateTimeColumnValue
+description: 'Más información sobre: Constructor DateTimeColumnValue'
+title: Constructor DateTimeColumnValue
 TOCTitle: 'DateTimeColumnValue constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.DateTimeColumnValue.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.datetimecolumnvalue.datetimecolumnvalue(v=EXCHG.10)
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c7293d9241b69d90669df5bbd8a94c75d8b3a607
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ba024ecc69b17739bbcb7fdd9d2cbda13f635cf3441e44e2f3d248b455f5d237
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908267"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119042263"
 ---
-# <a name="datetimecolumnvalue-constructor"></a>Constructor de DateTimeColumnValue
+# <a name="datetimecolumnvalue-constructor"></a>Constructor DateTimeColumnValue
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,12 +50,12 @@ Dim instance As New DateTimeColumnValue()
 public DateTimeColumnValue()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase DateTimeColumnValue](./datetimecolumnvalue-class.md)
+[DateTimeColumnValue (clase)](./datetimecolumnvalue-class.md)
 
-[Miembros de DateTimeColumnValue](./datetimecolumnvalue-members.md)
+[Miembros DateTimeColumnValue](./datetimecolumnvalue-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

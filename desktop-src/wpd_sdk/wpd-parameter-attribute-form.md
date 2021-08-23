@@ -1,7 +1,7 @@
 ---
 description: Describe cómo un parámetro (método o evento) almacena su valor.
 ms.assetid: 066196af-7805-4823-8ab7-cb95c17bba2a
-title: Enumeración WpdParameterAttributeForm (PortableDevice. h)
+title: Enumeración WpdParameterAttributeForm (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 528008edbb74d5eda626b9868814ad621e676fa9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f50665768d62d8155bd0ac9001f4ae5029766d7d5b27a942941f8f41b9492e10
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649603"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119026753"
 ---
-# <a name="wpdparameterattributeform-enumeration"></a>Enumeración WpdParameterAttributeForm
+# <a name="wpdparameterattributeform-enumeration"></a>WpdParameterAttributeForm (enumeración)
 
-El tipo de enumeración [**WpdParameterAttributeForm**](/previous-versions/windows/hardware/drivers/ff597895(v=vs.85)) describe cómo un parámetro (método o evento) almacena su valor.
+El [**tipo de enumeración WpdParameterAttributeForm**](/previous-versions/windows/hardware/drivers/ff597895(v=vs.85)) describe cómo un parámetro (método o evento) almacena su valor.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -43,35 +43,35 @@ typedef enum tagWpdParameterAttributeForm {
 
 <dl> <dt>
 
-<span id="WPD_PARAMETER_ATTRIBUTE_FORM_UNSPECIFIED"></span><span id="wpd_parameter_attribute_form_unspecified"></span>**formulario de atributo de parámetro WPD no \_ \_ \_ \_ especificado**
+<span id="WPD_PARAMETER_ATTRIBUTE_FORM_UNSPECIFIED"></span><span id="wpd_parameter_attribute_form_unspecified"></span>**FORMULARIO DE \_ ATRIBUTO \_ DE PARÁMETRO \_ WPD SIN \_ ESPECIFICAR**
 </dt> <dd>
 
-No se ha especificado el formato del parámetro.
+No se especifica el formato del parámetro.
 
 </dd> <dt>
 
-<span id="WPD_PARAMETER_ATTRIBUTE_FORM_RANGE"></span><span id="wpd_parameter_attribute_form_range"></span>**\_rango de \_ formulario de atributo de parámetro WPD \_ \_**
+<span id="WPD_PARAMETER_ATTRIBUTE_FORM_RANGE"></span><span id="wpd_parameter_attribute_form_range"></span>**INTERVALO DE FORMULARIO \_ DEL ATRIBUTO DE PARÁMETRO \_ \_ \_ WPD**
 </dt> <dd>
 
 El parámetro especifica un intervalo.
 
 </dd> <dt>
 
-<span id="WPD_PARAMETER_ATTRIBUTE_FORM_ENUMERATION"></span><span id="wpd_parameter_attribute_form_enumeration"></span>**\_ \_ \_ enumeración de formulario de atributo de parámetro WPD \_**
+<span id="WPD_PARAMETER_ATTRIBUTE_FORM_ENUMERATION"></span><span id="wpd_parameter_attribute_form_enumeration"></span>**ENUMERACIÓN DE FORMULARIO \_ DE ATRIBUTO DE PARÁMETRO \_ \_ \_ WPD**
 </dt> <dd>
 
 El parámetro es una enumeración.
 
 </dd> <dt>
 
-<span id="WPD_PARAMETER_ATTRIBUTE_FORM_REGULAR_EXPRESSION"></span><span id="wpd_parameter_attribute_form_regular_expression"></span>**\_ \_ \_ expresión regular del formulario de atributo \_ de parámetro WPD \_**
+<span id="WPD_PARAMETER_ATTRIBUTE_FORM_REGULAR_EXPRESSION"></span><span id="wpd_parameter_attribute_form_regular_expression"></span>**EXPRESIÓN REGULAR \_ DEL ATRIBUTO DE PARÁMETRO \_ \_ \_ WPD \_**
 </dt> <dd>
 
 El parámetro es una expresión regular.
 
 </dd> <dt>
 
-<span id="WPD_PARAMETER_ATTRIBUTE_OBJECT_IDENTIFIER"></span><span id="wpd_parameter_attribute_object_identifier"></span>**\_identificador de \_ objeto de atributo de parámetro WPD \_ \_**
+<span id="WPD_PARAMETER_ATTRIBUTE_OBJECT_IDENTIFIER"></span><span id="wpd_parameter_attribute_object_identifier"></span>**IDENTIFICADOR DE OBJETO \_ DE ATRIBUTO DE PARÁMETRO \_ \_ \_ WPD**
 </dt> <dd>
 
 El parámetro es un identificador de objeto.
@@ -84,7 +84,7 @@ El parámetro es un identificador de objeto.
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 

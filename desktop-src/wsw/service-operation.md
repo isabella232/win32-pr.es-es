@@ -3,24 +3,24 @@ title: Operación de servicio
 description: La operación de servicio es el código y los metadatos asociados a una operación específica de un servicio.
 ms.assetid: 788940a0-b1d9-45d7-a4b5-6f0926026c7d
 keywords:
-- Servicios Web de operaciones de servicio para Windows
+- Servicios web de operación de servicio para Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 59e7883c0988189db3d977a78615c024dc92df36
-ms.sourcegitcommit: 5b98bf8c68922f8f03c14f793fbe17504900559c
+ms.openlocfilehash: 5acde0c2151dea483a3e82f45c7031fa201614076f7a5ea624926fbe08e7588b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "104003300"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119026273"
 ---
 # <a name="service-operation"></a>Operación de servicio
 
 La operación de servicio es el código y los metadatos asociados a una operación específica de un servicio.
 
 
-En términos de WSDL, cada operación WSDL: Operation definida en el documento WSDL para un portType determinado es una operación de servicio.
+En términos de WSDL, cada wsdl:operation definido en el documento WSDL para un portType determinado es una operación de servicio.
 
 ``` syntax
 <wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" 
@@ -43,11 +43,11 @@ xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
 </wsdl:definitions>
 ```
 
-Cada operación de servicio en el modelo de servicio se proporciona como una [**\_ \_ Descripción**](/windows/desktop/api/WebServices/ns-webservices-ws_operation_description)de la operación de WS. La \_ Descripción de la operación WS \_ se genera mediante [wsutil.exe](web-service-compiler-tool.md).
+Cada operación de servicio dentro del modelo de servicio se proporciona como [**WS \_ OPERATION \_ DESCRIPTION**](/windows/desktop/api/WebServices/ns-webservices-ws_operation_description). WS \_ OPERATION DESCRIPTION se genera mediante \_ [wsutil.exe](web-service-compiler-tool.md).
 
-Para cada WSDL: Operation, la herramienta genera una [**\_ \_ Descripción de operación WS**](/windows/desktop/api/WebServices/ns-webservices-ws_operation_description)independiente.
+Para cada wsdl:operation, la herramienta genera una descripción [**independiente de la operación de WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_operation_description).
 
-![Diagrama que muestra cómo wsutil.exe genera un WS_CONTRACT_DESCRIPTION.](images/porttypetocontract.png)
+![Diagrama que muestra wsutil.exe genera una WS_CONTRACT_DESCRIPTION.](images/porttypetocontract.png)
 
 ``` syntax
 static WS_OPERATION_DESCRIPTION serviceOperationsICalculator[] =
@@ -62,28 +62,28 @@ static WS_OPERATION_DESCRIPTION serviceOperationsICalculator[] =
 };
 ```
 
-En términos de código, cada operación de servicio tiene una función asociada. La definición de esta función es diferente para los clientes y servidores.
+En términos de código, cada operación de servicio tiene una función asociada. La definición de esta función es diferente para el cliente y los servidores.
 
 Las operaciones de servicio se clasifican en,
 
 -   [Operaciones de servicio del lado cliente](client-side-service-operations.md)
 -   [Operaciones de servicio del lado servidor](server-side-service-operations.md)
 
-Esta clasificación se basa principalmente en el diseño de la firma del servidor y las implementaciones del lado cliente de las operaciones del servicio.
+Esta clasificación se basa principalmente en el diseño de firma del servidor y las implementaciones del lado cliente de las operaciones de servicio.
 
-Vea también la [sección compatibilidad con WSDL](wsdl-support.md).
+Consulte también la [sección compatibilidad con WSDL](wsdl-support.md).
 
-Las enumeraciones siguientes se utilizan con operaciones de servicio:
+Las enumeraciones siguientes se usan con operaciones de servicio:
 
--   [**\_tipo de parámetro de WS \_**](/windows/desktop/api/WebServices/ne-webservices-ws_parameter_type)
--   [**\_motivo de \_ cancelación del servicio WS \_**](/windows/desktop/api/WebServices/ne-webservices-ws_service_cancel_reason)
--   [**\_opción de \_ mensaje de operación de servicio WS \_ \_**](/windows/win32/api/webservices/ne-webservices-ws_charset)
+-   [**WS \_ PARAMETER \_ TYPE**](/windows/desktop/api/WebServices/ne-webservices-ws_parameter_type)
+-   [**MOTIVO DE \_ CANCELACIÓN \_ DEL SERVICIO WS \_**](/windows/desktop/api/WebServices/ne-webservices-ws_service_cancel_reason)
+-   [**WS \_ SERVICE \_ OPERATION \_ MESSAGE \_ OPTION**](/windows/win32/api/webservices/ne-webservices-ws_charset)
 
-Las siguientes estructuras se utilizan con operaciones de servicio:
+Las estructuras siguientes se usan con operaciones de servicio:
 
--   [**\_Descripción del mensaje de WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_message_description)
--   [**Descripción de la \_ operación WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_operation_description)
--   [**\_Descripción del parámetro WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_parameter_description)
+-   [**DESCRIPCIÓN DEL MENSAJE DE WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_message_description)
+-   [**DESCRIPCIÓN DE LA \_ OPERACIÓN WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_operation_description)
+-   [**DESCRIPCIÓN DEL PARÁMETRO WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_parameter_description)
 
  
 

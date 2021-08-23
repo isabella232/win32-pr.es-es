@@ -1,28 +1,28 @@
 ---
-description: En esta sección se explica cómo realizar las siguientes tareas asociadas a las propiedades de la ventana.
+description: En esta sección se explica cómo realizar las siguientes tareas asociadas a las propiedades de ventana.
 ms.assetid: cdf196ec-300c-4c7b-8a4f-68088c4a2507
-title: Usar las propiedades de la ventana
+title: Usar propiedades de ventana
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 736682eb34191a061aa9753ef9d5e8c7e366fbe3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b59fcb4cb0346554ee2df5c1b2fc92df7675cd61d11799b891156b13f26fb213
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716068"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119028273"
 ---
-# <a name="using-window-properties"></a>Usar las propiedades de la ventana
+# <a name="using-window-properties"></a>Usar propiedades de ventana
 
-En esta sección se explica cómo realizar las siguientes tareas asociadas a las propiedades de la ventana.
+En esta sección se explica cómo realizar las siguientes tareas asociadas a las propiedades de ventana.
 
 -   [Agregar una propiedad de ventana](#adding-a-window-property)
--   [Recuperación de una propiedad de ventana](#retrieving-a-window-property)
--   [Enumerar las propiedades de la ventana de una ventana determinada](#listing-window-properties-for-a-given-window)
+-   [Recuperar una propiedad de ventana](#retrieving-a-window-property)
+-   [Enumerar propiedades de ventana para una ventana determinada](#listing-window-properties-for-a-given-window)
 -   [Eliminar una propiedad de ventana](#deleting-a-window-property)
 
 ## <a name="adding-a-window-property"></a>Agregar una propiedad de ventana
 
-En el ejemplo siguiente se carga un icono y después un cursor y se asigna memoria para un búfer. A continuación, en el ejemplo se usa la función [**SetProp**](/windows/win32/api/winuser/nf-winuser-setpropa) para asignar el icono, el cursor y los identificadores de memoria resultantes como propiedades de ventana para la ventana identificada por la variable hwndSubclass definida por la aplicación. Las propiedades se identifican mediante el icono PROP de las cadenas \_ , el \_ cursor de propiedades y el búfer de propiedades \_ .
+En el ejemplo siguiente se carga un icono y, a continuación, un cursor y se asigna memoria para un búfer. A continuación, en el ejemplo se usa la función [**SetProp**](/windows/win32/api/winuser/nf-winuser-setpropa) para asignar el icono, el cursor y los identificadores de memoria resultantes como propiedades de ventana para la ventana identificada por la variable hwndSubclass definida por la aplicación. Las propiedades se identifican mediante las cadenas PROP \_ ICON, PROP \_ CURSOR y PROP \_ BUFFER.
 
 
 ```
@@ -65,9 +65,9 @@ SetProp(hwndSubclass, "PROP_BUFFER", hMem);
 
 
 
-## <a name="retrieving-a-window-property"></a>Recuperación de una propiedad de ventana
+## <a name="retrieving-a-window-property"></a>Recuperar una propiedad de ventana
 
-Una ventana puede crear identificadores para sus datos de propiedades de ventana y usar los datos para cualquier propósito. En el ejemplo siguiente se usa [**GetProp**](/windows/win32/api/winuser/nf-winuser-getpropa) para obtener los identificadores de las propiedades de ventana identificadas por el icono de prop \_ , el cursor de propiedades y el búfer de \_ propiedades \_ . A continuación, en el ejemplo se muestra el contenido del búfer de memoria, el cursor y el icono recién obtenidos en el área cliente de la ventana.
+Una ventana puede crear identificadores para sus datos de propiedades de ventana y usar los datos para cualquier propósito. En el ejemplo siguiente se [**usa GetProp para**](/windows/win32/api/winuser/nf-winuser-getpropa) obtener identificadores de las propiedades de ventana identificadas por PROP \_ ICON, PROP CURSOR y PROP \_ \_ BUFFER. A continuación, en el ejemplo se muestra el contenido del búfer de memoria, el cursor y el icono recién obtenidos en el área cliente de la ventana.
 
 
 ```
@@ -110,9 +110,9 @@ TextOut(hdc, 10, 10, tchBuffer, *nSize);
 
 
 
-## <a name="listing-window-properties-for-a-given-window"></a>Enumerar las propiedades de la ventana de una ventana determinada
+## <a name="listing-window-properties-for-a-given-window"></a>Enumerar propiedades de ventana para una ventana determinada
 
-En el ejemplo siguiente, la función [**EnumPropsEx**](/windows/win32/api/winuser/nf-winuser-enumpropsexa) enumera los identificadores de cadena de las propiedades de ventana de la ventana identificada por la variable hwndSubclass definida por la aplicación. Esta función se basa en la función de devolución de llamada definida por la aplicación WinPropProc para mostrar las cadenas en el área cliente de la ventana.
+En el ejemplo siguiente, la función [**EnumPropsEx**](/windows/win32/api/winuser/nf-winuser-enumpropsexa) enumera los identificadores de cadena de las propiedades de ventana de la ventana identificadas por la variable hwndSubclass definida por la aplicación. Esta función se basa en la función de devolución de llamada winPropProc definida por la aplicación para mostrar las cadenas en el área cliente de la ventana.
 
 
 ```
@@ -157,7 +157,7 @@ BOOL CALLBACK WinPropProc(
 
 ## <a name="deleting-a-window-property"></a>Eliminar una propiedad de ventana
 
-Cuando se destruye una ventana, debe destruir las propiedades de ventana que establezca. En el ejemplo siguiente se usa la función [**EnumPropsEx**](/windows/win32/api/winuser/nf-winuser-enumpropsexa) y la función de devolución de llamada definida por la aplicación DelPropProc para destruir las propiedades asociadas a la ventana identificada por la variable hwndSubclass definida por la aplicación. También se muestra la función de devolución de llamada, que utiliza la función [**RemoveProp**](/windows/win32/api/winuser/nf-winuser-removepropa) .
+Cuando se destruye una ventana, debe destruir las propiedades de ventana que establezca. En el ejemplo siguiente se usan la función [**EnumPropsEx**](/windows/win32/api/winuser/nf-winuser-enumpropsexa) y la función de devolución de llamada Definida por la aplicación DelPropProc para destruir las propiedades asociadas a la ventana identificadas por la variable hwndSubclass definida por la aplicación. También se muestra la función de devolución de llamada, que usa la función [**RemoveProp.**](/windows/win32/api/winuser/nf-winuser-removepropa)
 
 
 ```

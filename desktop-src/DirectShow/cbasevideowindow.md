@@ -1,7 +1,7 @@
 ---
-description: La clase CBaseVideoWindow implementa los métodos IDispatch de la interfaz IVideoWindow. Los métodos IVideoWindow restantes se dejan como métodos virtuales puros y se deben implementar mediante una clase derivada.
+description: La clase CBaseVideoWindow implementa los métodos IDispatch de la interfaz IVideoWindow. Los métodos IVideoWindow restantes se quedan como métodos virtuales puros y deben implementarse mediante una clase derivada.
 ms.assetid: b6acec98-cff7-46ee-abd7-77f0b7ac3b9d
-title: Clase CBaseVideoWindow (Ctlutil. h)
+title: CBaseVideoWindow (clase, Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,20 +16,20 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a807b1386dbb53522a0f8190aff2a47bf0d16368
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ba320000701020df65f6db2eaa7a71e309a6c6709b236ac0ce6edf7dbe40ffb8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660237"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074669"
 ---
-# <a name="cbasevideowindow-class"></a>Clase CBaseVideoWindow
+# <a name="cbasevideowindow-class"></a>CBaseVideoWindow (clase)
 
-![jerarquía de clases cbasevideowindow](images/wctrl01.png)
+![Jerarquía de clases de cbasevideowindow](images/wctrl01.png)
 
-La `CBaseVideoWindow` clase implementa los métodos **IDispatch** de la interfaz [**IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) . Los métodos **IVideoWindow** restantes se dejan como métodos virtuales puros y se deben implementar mediante una clase derivada.
+La `CBaseVideoWindow` clase implementa los métodos **IDispatch** de la [**interfaz IVideoWindow.**](/windows/desktop/api/Control/nn-control-ivideowindow) Los métodos **IVideoWindow** restantes se quedan como métodos virtuales puros y deben implementarse mediante una clase derivada.
 
-Los métodos **IDispatch** de esta clase son implementaciones estándar y no se describen aquí en detalle.
+Los **métodos IDispatch** de esta clase son implementaciones estándar y no se describen en detalle aquí.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,8 +37,8 @@ Los métodos **IDispatch** de esta clase son implementaciones estándar y no se 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -46,10 +46,10 @@ Los métodos **IDispatch** de esta clase son implementaciones estándar y no se 
 
 <dl> <dt>
 
-[**Clase CBaseControlWindow**](cbasecontrolwindow.md)
+[**CBaseControlWindow (clase)**](cbasecontrolwindow.md)
 </dt> <dt>
 
-[**Clase CBaseDispatch**](cbasedispatch.md)
+[**CBaseDispatch (clase)**](cbasedispatch.md)
 </dt> </dl>
 
  
