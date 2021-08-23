@@ -1,11 +1,11 @@
 ---
 title: Atributo CA-Certificate-DN
-description: Nombre distintivo completo del certificado de entidad de certificación.
+description: Nombre completo distintivo del certificado de entidad de certificación.
 ms.assetid: 51d1a9f8-d3d7-4ac9-b029-fa66b6799820
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo CA-Certificate-DN
-- cACertificateDN esquema de AD de atributos
+- Esquema de AD del atributo CA-Certificate-DN
+- Esquema de AD del atributo cACertificateDN
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 08f6dcdf7faf3bcb93bcb029a373e19faed68e91
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 02a3e77e19ebc8cb0f9277e529a2d249bb53f60260e121823082524d9bed1b46
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104079810"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022673"
 ---
 # <a name="ca-certificate-dn-attribute"></a>Atributo CA-Certificate-DN
 
-Nombre distintivo completo del certificado de entidad de certificación.
+Nombre completo distintivo del certificado de entidad de certificación.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
 | CN                | CA-Certificate-DN                           |
-| Nombre para mostrar de LDAP | cACertificateDN                             |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | cACertificateDN                             |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.697                      |
-| System-ID-GUID    | 963d2740-48be-11d1-a9c3-0000f80367c1        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 963d2740-48be-11d1-a9c3-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,13 +55,13 @@ Nombre distintivo completo del certificado de entidad de certificación.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
-| System-Only            | False                                                                                                                                      |
-| Tiene un único valor       | True                                                                                                                                       |
-| Está indexado             | False                                                                                                                                      |
-| En el catálogo global      | True                                                                                                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                               |
+| System-Only            | Falso                                                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                                                       |
+| Está indexado             | Falso                                                                                                                                      |
+| En el catálogo global      | Verdadero                                                                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
@@ -76,13 +76,13 @@ Nombre distintivo completo del certificado de entidad de certificación.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
-| System-Only            | False                                                                                                                                      |
-| Tiene un único valor       | True                                                                                                                                       |
-| Está indexado             | False                                                                                                                                      |
-| En el catálogo global      | True                                                                                                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                               |
+| System-Only            | Falso                                                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                                                       |
+| Está indexado             | Falso                                                                                                                                      |
+| En el catálogo global      | Verdadero                                                                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
@@ -97,13 +97,13 @@ Nombre distintivo completo del certificado de entidad de certificación.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
-| System-Only            | False                                                                                                                                      |
-| Tiene un único valor       | True                                                                                                                                       |
-| Está indexado             | False                                                                                                                                      |
-| En el catálogo global      | True                                                                                                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                               |
+| System-Only            | Falso                                                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                                                       |
+| Está indexado             | Falso                                                                                                                                      |
+| En el catálogo global      | Verdadero                                                                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
@@ -118,13 +118,13 @@ Nombre distintivo completo del certificado de entidad de certificación.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
-| System-Only            | False                                                                                                                                      |
-| Tiene un único valor       | True                                                                                                                                       |
-| Está indexado             | False                                                                                                                                      |
-| En el catálogo global      | True                                                                                                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                               |
+| System-Only            | Falso                                                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                                                       |
+| Está indexado             | Falso                                                                                                                                      |
+| En el catálogo global      | Verdadero                                                                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
@@ -139,13 +139,13 @@ Nombre distintivo completo del certificado de entidad de certificación.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
-| System-Only            | False                                                                                                                                      |
-| Tiene un único valor       | True                                                                                                                                       |
-| Está indexado             | False                                                                                                                                      |
-| En el catálogo global      | True                                                                                                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                               |
+| System-Only            | Falso                                                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                                                       |
+| Está indexado             | Falso                                                                                                                                      |
+| En el catálogo global      | Verdadero                                                                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
@@ -160,13 +160,13 @@ Nombre distintivo completo del certificado de entidad de certificación.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
-| System-Only            | False                                                                                                                                      |
-| Tiene un único valor       | True                                                                                                                                       |
-| Está indexado             | False                                                                                                                                      |
-| En el catálogo global      | True                                                                                                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                               |
+| System-Only            | Falso                                                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                                                       |
+| Está indexado             | Falso                                                                                                                                      |
+| En el catálogo global      | Verdadero                                                                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |

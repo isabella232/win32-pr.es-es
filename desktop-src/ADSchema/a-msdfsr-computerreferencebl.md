@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DFSR-ComputerReferenceBL
-description: Contiene el vínculo hacia atrás para el atributo MS-DFSR-ComputerReference.
+title: Atributo ms-DFSR-ComputerReferenceBL
+description: Contiene el vínculo hacia atrás para el atributo ms-DFSR-ComputerReference.
 ms.assetid: 586b5d6a-86ff-4dac-905d-59928674a505
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DFSR-ComputerReferenceBL
-- msDFSR-ComputerReferenceBL atributo AD Schema
+- Esquema de AD del atributo ms-DFSR-ComputerReferenceBL
+- Esquema de AD del atributo msDFSR-ComputerReferenceBL
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b4aed9748f74e08ae621d6391185b41f97aa702e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f0e3a5b4ae4f01e0c5af0a46e13238237dde5e006e8a83a5a7082dc97c121f05
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659168"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960964"
 ---
-# <a name="ms-dfsr-computerreferencebl-attribute"></a>atributo MS-DFSR-ComputerReferenceBL
+# <a name="ms-dfsr-computerreferencebl-attribute"></a>Atributo ms-DFSR-ComputerReferenceBL
 
-Contiene el vínculo hacia atrás para el atributo [**MS-DFSR-ComputerReference**](a-msdfsr-computerreference.md) .
+Contiene el vínculo hacia atrás para el [**atributo ms-DFSR-ComputerReference.**](a-msdfsr-computerreference.md)
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | MS-DFSR-ComputerReferenceBL             |
-| Nombre para mostrar de LDAP | msDFSR-ComputerReferenceBL              |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | ms-DFSR-ComputerReferenceBL             |
+| Ldap-Display-Name | msDFSR-ComputerReferenceBL              |
+| Size              | \-                                      |
+| Privilegio actualizar  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.6.13.3.103             |
-| System-ID-GUID    | 5eb526d7-d71b-44ae-8cc6-95460052e6ac    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 5eb526d7-d71b-44ae-8cc6-95460052e6ac    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -53,13 +53,13 @@ Contiene el vínculo hacia atrás para el atributo [**MS-DFSR-ComputerReference*
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2051                            |
+| Id. de vínculo                | 2051                            |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -74,13 +74,13 @@ Contiene el vínculo hacia atrás para el atributo [**MS-DFSR-ComputerReference*
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2051                            |
+| Id. de vínculo                | 2051                            |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -95,13 +95,13 @@ Contiene el vínculo hacia atrás para el atributo [**MS-DFSR-ComputerReference*
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2051                            |
+| Id. de vínculo                | 2051                            |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -114,15 +114,15 @@ Contiene el vínculo hacia atrás para el atributo [**MS-DFSR-ComputerReference*
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2051                            |
+| Id. de vínculo                | 2051                            |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -131,9 +131,9 @@ Contiene el vínculo hacia atrás para el atributo [**MS-DFSR-ComputerReference*
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El atributo **MS-DFSR-ComputerReferenceBL** forma parte de la compatibilidad con el servicio de replicación sistema de archivos distribuido (DFS).
+El **atributo ms-DFSR-ComputerReferenceBL** forma parte de la compatibilidad del servicio de replicación Sistema de archivos distribuido (DFS).
 
  
 

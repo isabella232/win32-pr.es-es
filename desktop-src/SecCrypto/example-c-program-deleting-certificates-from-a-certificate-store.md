@@ -1,33 +1,33 @@
 ---
-description: En el ejemplo siguiente se enumeran los certificados de un almacén de certificados del sistema, que muestra el nombre del sujeto de cada certificado y permite al usuario elegir eliminar los certificados del almacén.
+description: En el ejemplo siguiente se enumeran los certificados de un almacén de certificados del sistema, que muestran el nombre del firmantes de cada certificado y permiten al usuario elegir eliminar los certificados del almacén.
 ms.assetid: 52a0287b-7d2a-483e-8bbc-43621c4b7103
-title: 'Programa C de ejemplo: eliminar certificados de un almacén de certificados'
+title: 'Programa C de ejemplo: Eliminación de certificados de un almacén de certificados'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f29f55d27bf2a85d82e4ab96e51fe5368c9de935
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 065a7e0e46f3072d69014e294610ec7ae546d05c98816f809b9b2de92949db62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007863"
 ---
-# <a name="example-c-program-deleting-certificates-from-a-certificate-store"></a>Programa C de ejemplo: eliminar certificados de un almacén de certificados
+# <a name="example-c-program-deleting-certificates-from-a-certificate-store"></a>Programa C de ejemplo: Eliminación de certificados de un almacén de certificados
 
-En el ejemplo siguiente se enumeran los certificados de un [*almacén de certificados*](../secgloss/c-gly.md)del sistema, que muestra el nombre del sujeto de cada certificado y permite al usuario elegir eliminar los certificados del almacén. En el ejemplo se obtiene el nombre del almacén de certificados del usuario y, por tanto, se puede usar para mantener el contenido de cualquier almacén de certificados del sistema.
+En el ejemplo siguiente se enumeran los certificados de un almacén de certificados del [*sistema,*](../secgloss/c-gly.md)que muestra el nombre del firmantes de cada certificado y permite al usuario elegir eliminar los certificados del almacén. En el ejemplo se obtiene el nombre del almacén de certificados del usuario y, por tanto, se puede usar para mantener el contenido de cualquier almacén de certificados del sistema.
 
-En este ejemplo se muestran las siguientes tareas y funciones de [*CryptoAPI*](../secgloss/c-gly.md) :
+En este ejemplo se muestran las siguientes tareas y [*funciones cryptoAPI:*](../secgloss/c-gly.md)
 
--   Apertura de un almacén de certificados del sistema mediante [**CertOpenSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopensystemstorea).
--   Enumerar los certificados de un almacén de certificados mediante [**CertEnumCertificatesInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certenumcertificatesinstore).
--   Obtener el nombre del firmante de un certificado mediante [**CertGetNameString**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa).
--   Comparar el nombre del sujeto del certificado con el nombre del emisor del certificado mediante [**CertCompareCertificateName**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcomparecertificatename).
--   Comprobando para determinar si la clave pública del certificado actual coincide con la clave pública de un certificado anterior mediante [**CertComparePublicKeyInfo**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcomparepublickeyinfo).
--   Duplicar un puntero en un [*contexto de certificado*](../secgloss/c-gly.md) mediante [**CertDuplicateCertificateContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-certduplicatecertificatecontext).
--   Comparación de los miembros de [**\_ información de certificado**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_info) de cada certificado mediante [**CertCompareCertificate**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcomparecertificate).
+-   Abrir un almacén de certificados del sistema [**mediante CertOpenSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopensystemstorea).
+-   Enumerar los certificados de un almacén de certificados [**mediante CertEnumCertificatesInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certenumcertificatesinstore).
+-   Obtener el nombre del sujeto de un certificado mediante [**CertGetNameString.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa)
+-   Comparar el nombre del firmante del certificado con el nombre del emisor del certificado mediante [**CertCompareCertificateName**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcomparecertificatename).
+-   Comprobación para determinar si la clave pública del certificado actual coincide con la clave pública de un certificado anterior mediante [**CertComparePublicKeyInfo**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcomparepublickeyinfo).
+-   Duplicar un puntero a un [*contexto de certificado*](../secgloss/c-gly.md) mediante [**CertDuplicateCertificateContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-certduplicatecertificatecontext).
+-   Comparar los [**miembros \_ de CERT INFO**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_info) de cada certificado mediante [**CertCompareCertificate**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcomparecertificate).
 -   Eliminar un certificado de un almacén mediante [**CertDeleteCertificateFromStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certdeletecertificatefromstore).
--   Cerrar un almacén de certificados mediante [**CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore).
+-   Cierre de un almacén de certificados [**mediante CertCloseStore.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore)
 
-En este ejemplo se obtiene el nombre de un almacén de certificados del sistema del usuario, se abre el almacén y se recorren los certificados de ese almacén. Para cada certificado, se muestra el nombre del sujeto del certificado y se proporciona al usuario una opción para eliminar ese certificado.
+Este ejemplo obtiene el nombre de un almacén de certificados del sistema del usuario, abre ese almacén y pasa por los certificados de ese almacén. Para cada certificado, se muestra el nombre del asunto del certificado y el usuario tiene una opción para eliminar ese certificado.
 
 
 ```C++

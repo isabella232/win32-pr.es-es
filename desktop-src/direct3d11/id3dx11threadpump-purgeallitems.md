@@ -1,6 +1,6 @@
 ---
-title: Método ID3DX11ThreadPump PurgeAllItems (D3DX11core. h)
-description: Tenga en cuenta que la biblioteca de utilidades de D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de la tienda Windows. Borra todos los elementos de trabajo del bombeo de subprocesos.
+title: Método ID3DX11ThreadPump PurgeAllItems (D3DX11core.h)
+description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Borra todos los elementos de trabajo del bombeo de subprocesos.
 ms.assetid: 41a102af-bb9e-4a5a-a351-de0725e592c4
 keywords:
 - Método PurgeAllItems Direct3D 11
@@ -17,17 +17,17 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea889f8dd919235adbd9c31fbfb9b269f89ed888
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a0291df395994bfb4ae955670caf11dfd8abb179127d3e75351198139c31cb73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104998454"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119045803"
 ---
-# <a name="id3dx11threadpumppurgeallitems-method"></a>ID3DX11ThreadPump::P método urgeAllItems
+# <a name="id3dx11threadpumppurgeallitems-method"></a>Id3DX11ThreadPump::P procesoAllItems
 
 > [!Note]  
-> La biblioteca de utilidades de D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para aplicaciones de la tienda Windows.
+> La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
 
  
 
@@ -50,7 +50,7 @@ Este método no tiene parámetros.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que se muestran en [códigos de retorno de Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno [de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,8 +58,8 @@ El valor devuelto es uno de los valores que se muestran en [códigos de retorno 
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX11core. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX11. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX11core.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX11.lib</dt> </dl>   |
 
 
 
@@ -70,7 +70,7 @@ El valor devuelto es uno de los valores que se muestran en [códigos de retorno 
 [ID3DX11ThreadPump](id3dx11threadpump.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d11-graphics-reference-d3dx11-interfaces.md)
+[D3DX Interfaces](d3d11-graphics-reference-d3dx11-interfaces.md)
 </dt> </dl>
 
  

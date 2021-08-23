@@ -1,5 +1,5 @@
 ---
-description: Identifica el APN o la cadena de marcado que se va a utilizar para establecer una conexión de datos.
+description: Identifica el APN o la cadena de marcado que se va a usar para establecer una conexión de datos.
 ms.assetid: e791ffa1-b417-480c-adb8-b1dda7547d89
 title: Elemento AccessString (contextType)
 ms.topic: reference
@@ -11,16 +11,16 @@ api_name:
 - AccessString
 api_type:
 - Schema
-ms.openlocfilehash: 8cf0d37b8a1870011ae6ae3ea6febf22a98cdeb6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 603c4aa04bb3e86891ec121233474fa96ffd792cbcb6880bad9e76599003d979
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686838"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975284"
 ---
 # <a name="accessstring-contexttype-element"></a>Elemento AccessString (contextType)
 
-El elemento **AccessString (contextType)** identifica el APN o la cadena de marcado que se utilizará para establecer una conexión de datos.
+El **elemento AccessString (contextType)** identifica el APN o la cadena de marcado que se va a usar para establecer una conexión de datos.
 
 Este elemento puede tener una longitud máxima de 100 caracteres.
 
@@ -43,7 +43,7 @@ Este elemento es opcional.
 </xs:element>
 ```
 
-El elemento **AccessString** se define mediante el tipo complejo de [**contextType**](schema-contexttype-complextype.md) .
+El **elemento AccessString** se define mediante el [**tipo complejo contextType.**](schema-contexttype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,7 +51,7 @@ El elemento **AccessString** se define mediante el tipo complejo de [**contextTy
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 7 \|\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio para \| UWP\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                         |
 
 

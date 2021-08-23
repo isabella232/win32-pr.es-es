@@ -1,6 +1,6 @@
 ---
-title: Elemento PerformServerValidation (PeapExtensionsType) (esquema V1)
-description: Obtenga información sobre el elemento PerformServerValidation (PeapExtensionsType). Este elemento indica si se realiza la validación del servidor. | Elemento PerformServerValidation (PeapExtensionsType) (esquema V1)
+title: Elemento PerformServerValidation (PeapExtensionsType) (esquema v1)
+description: Obtenga información sobre el elemento PerformServerValidation (PeapExtensionsType). Este elemento indica si se realiza la validación del servidor. | Elemento PerformServerValidation (PeapExtensionsType) (esquema v1)
 ms.assetid: b0483ed0-a02f-4f60-b1ae-7c5e6be8e196
 keywords:
 - elemento EAPHost
@@ -12,16 +12,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 256d942d68c30788180f2d8080f963c1d79b401a
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 74be4614d1a08baf27b08cee7ffa46d36f658c36176e39f80714387981d45f13
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105717464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119042833"
 ---
-# <a name="performservervalidation-peapextensionstype-element-v1-schema"></a>Elemento PerformServerValidation (PeapExtensionsType) (esquema V1)
+# <a name="performservervalidation-peapextensionstype-element-v1-schema"></a>Elemento PerformServerValidation (PeapExtensionsType) (esquema v1)
 
-El elemento **PerformServerValidation (PeapExtensionsType)** indica si se realiza la validación del servidor.
+El **elemento PerformServerValidation (PeapExtensionsType)** indica si se realiza la validación del servidor.
 
 ``` syntax
 <xs:element
@@ -30,20 +30,20 @@ El elemento **PerformServerValidation (PeapExtensionsType)** indica si se realiz
  />
 ```
 
-El elemento se define mediante el elemento [**PeapExtensionsType**](mspeapconnectionpropertiesv1schema-peapextensionstype-complextype.md) .
+El elemento se define mediante el [**elemento PeapExtensionsType.**](mspeapconnectionpropertiesv1schema-peapextensionstype-complextype.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El elemento **PerformServerValidation** es opcional.
+El **elemento PerformServerValidation** es opcional.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Role | Versión mínima admitida del sistema operativo |
+| Rol | Versión mínima del sistema operativo admitida |
 |------|------------------------------|
-| Remoto<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Servidor<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
@@ -69,7 +69,7 @@ El elemento **PerformServerValidation** es opcional.
 [EAPHost y esquema heredado](eaphost-schemas.md)
 </dt> <dt>
 
-[Esquema mspeapconnectionpropertiesv1](mspeapconnectionpropertiesv1schema-schema.md)
+[Mspeapconnectionpropertiesv1 Schema](mspeapconnectionpropertiesv1schema-schema.md)
 </dt> <dt>
 
 [Elementos de esquema mspeapconnectionpropertiesv1](mspeapconnectionpropertiesv1schema-elements.md)

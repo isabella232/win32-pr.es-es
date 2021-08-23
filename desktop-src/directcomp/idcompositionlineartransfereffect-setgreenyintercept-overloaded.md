@@ -1,5 +1,5 @@
 ---
-title: Métodos IDCompositionLinearTransferEffect setgreenyintercept (Dcomp. h)
+title: Métodos setgreenyintercept de IDCompositionLinearTransferEffect (Dcomp.h)
 description: Establece la intersección Y de la función lineal para el canal verde.
 ms.assetid: 1aa4c933-ee49-2772-9a7e-b120b5bdd331
 keywords:
@@ -12,14 +12,14 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: d74c5580ee5960c710d37d780e33c51fae6d091d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 053becac87899b8bd70145aef2597d97523212c7a30353fb8a08b80d93ef2108
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700050"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119043243"
 ---
-# <a name="idcompositionlineartransfereffectsetgreenyintercept-methods"></a>IDCompositionLinearTransferEffect:: setgreenyintercept (métodos)
+# <a name="idcompositionlineartransfereffectsetgreenyintercept-methods"></a>Métodos IDCompositionLinearTransferEffect::setgreenyintercept
 
 Establece la intersección Y de la función lineal para el canal verde.
 
@@ -40,7 +40,7 @@ Establece la intersección Y de la función lineal para el canal verde.
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dcomp. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dcomp.h</dt> </dl> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Propiedad WebViewFolderContents. script (Shldisp. h)
+title: Propiedad WebViewFolderContents.Script (Shldisp.h)
 description: Obtiene el objeto de scripting para la vista.
 ms.assetid: f65246c5-3cd6-43bd-b267-ad27bdd0b41e
 keywords:
-- Características del entorno de Windows heredado de propiedades de script
-- Propiedad de script características de entorno heredado de Windows, objeto WebViewFolderContents
-- Objeto WebViewFolderContents características de entorno de Windows heredadas, propiedad de script
+- Características heredadas del entorno de Windows script
+- Propiedad de script Legacy Windows Environment Features , Objeto WebViewFolderContents
+- Objeto WebViewFolderContents Heredado Windows Environment Features , Propiedad Script
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 92133278d73851fa43353c116a2385da9b0fd3da
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d214719e2e40eaa680786188cf4815623d915c1e1e70e36f94eb80b6c4a6c25b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105696006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975455"
 ---
-# <a name="webviewfoldercontentsscript-property"></a>Propiedad WebViewFolderContents. script
+# <a name="webviewfoldercontentsscript-property"></a>Propiedad WebViewFolderContents.Script
 
 Obtiene el objeto de scripting para la vista.
 
@@ -40,11 +40,11 @@ objScript = WebViewFolderContents.Script
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Variable de tipo [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) que recibe el objeto de scripting.
+Variable de tipo [IDispatch que](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) recibe el objeto de scripting.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso correcto de esta propiedad en JScript incrustado en HTML.
+En el ejemplo siguiente se muestra el uso adecuado de esta propiedad en JScript incrustada en HTML.
 
 
 ```HTML
@@ -84,11 +84,11 @@ En el ejemplo siguiente se muestra el uso correcto de esta propiedad en JScript 
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de \[ escritorio XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

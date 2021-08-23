@@ -1,11 +1,11 @@
 ---
-title: GPC-WQL-Filter (atributo)
-description: Se utiliza para almacenar una cadena que contiene un GUID para el filtro y una ruta de acceso del espacio de nombres WMI.
+title: Atributo GPC-WQL-Filter
+description: Se usa para almacenar una cadena que contiene un GUID para el filtro y una ruta de acceso del espacio de nombres WMI.
 ms.assetid: ea76239b-79e2-49b2-a848-a924450d332a
 ms.tgt_platform: multiple
 keywords:
-- GPC-WQL-esquema de AD de atributos de filtro
-- gPCWQLFilter esquema de AD de atributos
+- Esquema de AD del atributo GPC-WQL-Filter
+- Esquema de AD del atributo gPCWQLFilter
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c9a6b8d3715c1692e93579d3c94cdfa44f4192e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6da17b1edd25952668e838bd06ed4ce30bd667e24161d84c5d953c4433f75b7b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906081"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961344"
 ---
-# <a name="gpc-wql-filter-attribute"></a>GPC-WQL-Filter (atributo)
+# <a name="gpc-wql-filter-attribute"></a>Atributo GPC-WQL-Filter
 
-Se utiliza para almacenar una cadena que contiene un GUID para el filtro y una ruta de acceso del espacio de nombres WMI.
+Se usa para almacenar una cadena que contiene un GUID para el filtro y una ruta de acceso del espacio de nombres WMI.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------------------------------------------|
-| CN                | GPC-WQL-filtro                                                                  |
-| Nombre para mostrar de LDAP | gPCWQLFilter                                                                    |
-| Tamaño              | \-                                                                              |
-| Actualizar privilegio  | Administrador de dominio                                                            |
-| Frecuencia de actualización  | Solo cuando el administrador cambia la propiedad de filtro en la interfaz de usuario de directiva de grupo. |
+| CN                | GPC-WQL-Filter                                                                  |
+| Ldap-Display-Name | gPCWQLFilter                                                                    |
+| Size              | \-                                                                              |
+| Actualizar privilegios  | Administrador de dominio                                                            |
+| Frecuencia de actualización  | Solo cuando el administrador cambia la propiedad de filtro en la interfaz directiva de grupo usuario. |
 | Attribute-Id      | 1.2.840.113556.1.4.1694                                                         |
-| System-ID-GUID    | 7bd4c7a6-1add-4436-8c04-3999a880154c                                            |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                                     |
+| System-Id-Guid    | 7bd4c7a6-1add-4436-8c04-3999a880154c                                            |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                     |
 
 
 
@@ -52,20 +52,20 @@ Se utiliza para almacenar una cadena que contiene un GUID para el filtro y una r
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Clases usadas en        | [**Contenedor de directivas de grupo**](c-grouppolicycontainer.md)<br/> |
+| Clases usadas en        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -73,20 +73,20 @@ Se utiliza para almacenar una cadena que contiene un GUID para el filtro y una r
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Clases usadas en        | [**Contenedor de directivas de grupo**](c-grouppolicycontainer.md)<br/> |
+| Clases usadas en        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -94,20 +94,20 @@ Se utiliza para almacenar una cadena que contiene un GUID para el filtro y una r
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Clases usadas en        | [**Contenedor de directivas de grupo**](c-grouppolicycontainer.md)<br/> |
+| Clases usadas en        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ Se utiliza para almacenar una cadena que contiene un GUID para el filtro y una r
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Clases usadas en        | [**Contenedor de directivas de grupo**](c-grouppolicycontainer.md)<br/> |
+| Clases usadas en        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -136,20 +136,20 @@ Se utiliza para almacenar una cadena que contiene un GUID para el filtro y una r
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Clases usadas en        | [**Contenedor de directivas de grupo**](c-grouppolicycontainer.md)<br/> |
+| Clases usadas en        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 

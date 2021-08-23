@@ -1,31 +1,31 @@
 ---
-title: Creación de usuarios con el proveedor LDAP de ADSI
-description: Con el proveedor LDAP de ADSI, solo puede crear una cuenta de usuario global.
+title: Creación de usuarios con el proveedor LDAP ADSI
+description: Con el proveedor LDAP ADSI, solo puede crear una cuenta de usuario global.
 ms.assetid: f99f85a8-9ced-4006-b95b-bd5671ba4c60
 ms.tgt_platform: multiple
 keywords:
-- ADSI Provider de LDAP, objeto de usuario, creación de usuarios
+- PROVEEDOR LDAP ADSI, objeto de usuario, creación de usuarios
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 843bb5bc9d0696c3af7c5f06ce8c76123ae93c3a
-ms.sourcegitcommit: 6515eef99ca0d1bbe3e27d4575e9986f5255f277
+ms.openlocfilehash: d32d076805b9480ed0344712f7b023efab4ef0a025f367cc9c5ebb0bb7dfc0e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "104083694"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119023073"
 ---
-# <a name="user-creation-with-the-adsi-ldap-provider"></a>Creación de usuarios con el proveedor LDAP de ADSI
+# <a name="user-creation-with-the-adsi-ldap-provider"></a>Creación de usuarios con el proveedor LDAP ADSI
 
-Con el proveedor LDAP de ADSI, solo puede crear una cuenta de usuario global. Las cuentas locales residen en la base de datos SAM y deben crearse con el proveedor de Winnt. Para obtener más información sobre cómo crear un objeto de usuario con el proveedor de WinNT, vea el [objeto de usuario WinNT](winnt-user-object.md).
+Con el proveedor LDAP ADSI, solo puede crear una cuenta de usuario global. Las cuentas locales residen en la base de datos SAM y deben crearse mediante el proveedor WinNT. Para obtener más información sobre cómo crear un objeto de usuario con el proveedor de WinNT, vea [Objeto de usuario de WinNT](winnt-user-object.md).
 
 **Para crear un objeto de usuario**
 
-1.  Enlace al contenedor donde residirá el objeto de usuario y obtenga la interfaz [**IADsContainer**](/windows/desktop/api/Iads/nn-iads-iadscontainer) o [**IDirectoryObject**](/windows/desktop/api/Iads/nn-iads-idirectoryobject) para el contenedor.
-2.  Use el método [**IADsContainer. Create**](/windows/desktop/api/Iads/nf-iads-iadscontainer-create) o [**IDirectoryObject:: CreateDSObject**](/windows/desktop/api/Iads/nf-iads-idirectoryobject-createdsobject) para crear el objeto de usuario.
-3.  Los atributos mínimos necesarios para crear un objeto de usuario dependerán del servicio de directorio que se use. Para obtener más información acerca de cómo crear un usuario Active Directory, consulte [crear un usuario](/windows/desktop/AD/creating-a-user).
-4.  Si se utiliza la interfaz [**IADsContainer**](/windows/desktop/api/Iads/nn-iads-iadscontainer) , el nuevo objeto no se crea realmente hasta que se llama al método [**IADs. SetInfo**](/windows/desktop/api/Iads/nf-iads-iads-setinfo) .
+1.  Enlace al contenedor donde residirá el objeto de usuario y obtenga la [**interfaz IADsContainer**](/windows/desktop/api/Iads/nn-iads-iadscontainer) o [**IDirectoryObject**](/windows/desktop/api/Iads/nn-iads-idirectoryobject) del contenedor.
+2.  Use el [**método IADsContainer.Create o**](/windows/desktop/api/Iads/nf-iads-iadscontainer-create) [**IDirectoryObject::CreateDSObject**](/windows/desktop/api/Iads/nf-iads-idirectoryobject-createdsobject) para crear el objeto de usuario.
+3.  Los atributos mínimos necesarios para crear un objeto de usuario dependerán del servicio de directorio usado. Para obtener más información sobre cómo crear Active Directory usuario, vea [Creating a User](/windows/desktop/AD/creating-a-user).
+4.  Si se usa la interfaz [**IADsContainer,**](/windows/desktop/api/Iads/nn-iads-iadscontainer) el nuevo objeto no se crea realmente hasta que se llama al método [**IADs.SetInfo.**](/windows/desktop/api/Iads/nf-iads-iads-setinfo)
 
-    Si se usa la interfaz [**IDirectoryObject**](/windows/desktop/api/Iads/nn-iads-idirectoryobject) , se crea el nuevo objeto cuando se llama al método [**CreateDSObject**](/windows/desktop/api/Iads/nf-iads-idirectoryobject-createdsobject) . Los atributos mínimos, incluido [**objectClass**](/windows/desktop/ADSchema/a-objectclass), deben especificarse en la matriz [**de \_ \_ información**](/windows/desktop/api/Iads/ns-iads-ads_attr_info) de atributos de ADS pasada al método **CreateDSObject** .
+    Si se usa la interfaz [**IDirectoryObject,**](/windows/desktop/api/Iads/nn-iads-idirectoryobject) el nuevo objeto se crea cuando se llama al [**método CreateDSObject.**](/windows/desktop/api/Iads/nf-iads-idirectoryobject-createdsobject) Los atributos mínimos, incluido [**objectClass**](/windows/desktop/ADSchema/a-objectclass), deben especificarse en la matriz [**\_ ADS ATTR \_ INFO**](/windows/desktop/api/Iads/ns-iads-ads_attr_info) pasada al **método CreateDSObject.**
 
 ## <a name="example-1"></a>Ejemplo 1
 
@@ -55,7 +55,7 @@ Cleanup:
 
 ## <a name="example-2"></a>Ejemplo 2
 
-En el ejemplo de código siguiente se crea una cuenta de usuario con los atributos predeterminados. Por motivos de brevedad, se omite la comprobación de errores.
+En el ejemplo de código siguiente se crea una cuenta de usuario con los atributos predeterminados. Por brevedad, se omite la comprobación de errores.
 
 
 ```C++

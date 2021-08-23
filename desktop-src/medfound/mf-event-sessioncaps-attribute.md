@@ -1,31 +1,31 @@
 ---
-description: Contiene marcas que definen las funciones de la sesión multimedia, basándose en la presentación actual.
+description: Contiene marcas que definen las funciones de la sesión multimedia, en función de la presentación actual.
 ms.assetid: a78a3f3f-4ba1-41f3-b808-43f1e4975bb9
-title: MF_EVENT_SESSIONCAPS atributo (mfapi. h)
+title: MF_EVENT_SESSIONCAPS atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af38d61f07bf038d1906d6f11e46fea63e800efc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 175c81d1cc231204060a63a90ffe9e2432b73bdec35c7885dea203416995ea92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659855"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973794"
 ---
-# <a name="mf_event_sessioncaps-attribute"></a>\_Atributo SESSIONCAPS de evento MF \_
+# <a name="mf_event_sessioncaps-attribute"></a>Atributo \_ MF EVENT \_ SESSIONCAPS
 
-Contiene marcas que definen las funciones de la sesión multimedia, basándose en la presentación actual.
+Contiene marcas que definen las funciones de la sesión multimedia, en función de la presentación actual.
 
 ## <a name="data-type"></a>Tipo de datos
 
 **UINT32**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo contiene un or **bit a** bit de cero o más marcadores. Para obtener una lista de posibles marcas, vea [**IMFMediaSession:: GetSessionCapabilities**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-getsessioncapabilities).
+Este atributo contiene un OR bit **a** bit de cero o más marcas. Para obtener una lista de las marcas posibles, vea [**IMFMediaSession::GetSessionCapabilities**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-getsessioncapabilities).
 
-Este atributo se usa con el evento [MESessionCapabilitiesChanged](mesessioncapabilitieschanged.md) .
+Este atributo se usa con el [evento MESessionCapabilitiesChanged.](mesessioncapabilitieschanged.md)
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -33,9 +33,9 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -43,16 +43,16 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Atributos de eventos](event-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**ATTRIBUTEAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**ATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> </dl>
 
  

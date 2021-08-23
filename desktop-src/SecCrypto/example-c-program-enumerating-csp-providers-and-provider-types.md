@@ -1,28 +1,28 @@
 ---
 description: Enumera los CSP disponibles en un equipo mediante CryptoAPI.
 ms.assetid: 10a5210d-7992-4832-9435-67ac2b851a97
-title: 'Programa C de ejemplo: enumeración de proveedores y tipos de proveedor de CSP'
+title: 'Programa C de ejemplo: enumeración de proveedores de CSP y tipos de proveedor'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a109aab8bbf3788bd539d078f00f7a28926f98de
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 372ea5f228008856d2a7701a7f11dbff462d239f8e0d39486a2c1634379ddec4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105648315"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007653"
 ---
-# <a name="example-c-program-enumerating-csp-providers-and-provider-types"></a>Programa C de ejemplo: enumeración de proveedores y tipos de proveedor de CSP
+# <a name="example-c-program-enumerating-csp-providers-and-provider-types"></a>Programa C de ejemplo: enumeración de proveedores de CSP y tipos de proveedor
 
-En el ejemplo siguiente se enumeran los CSP disponibles en un equipo y se usan las siguientes funciones de [*CryptoAPI*](../secgloss/c-gly.md) :
+En el ejemplo siguiente se enumeran los CSP disponibles en un equipo y se usan las siguientes [*funciones cryptoAPI:*](../secgloss/c-gly.md)
 
 -   [**CryptEnumProviderTypes**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptenumprovidertypesa)
 -   [**CryptEnumProviders**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptenumprovidersa)
 -   [**CryptGetDefaultProvider**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetdefaultprovidera)
 -   [**CryptGetProvParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetprovparam)
 
-En este ejemplo se usa la función [**MyHandleError**](myhandleerror.md). El código de esta función se incluye en este ejemplo. El código de esta y otras funciones auxiliares también se enumeran en [funciones de de uso general](general-purpose-functions.md).
+En este ejemplo se usa la [**función MyHandleError**](myhandleerror.md). El código de esta función se incluye en este ejemplo. El código para esta y otras funciones auxiliares también se muestra en [De uso general Functions](general-purpose-functions.md).
 
-En el ejemplo siguiente se muestra la enumeración de CSP y los tipos de proveedor.
+En el ejemplo siguiente se muestra la enumeración de LOSP y los tipos de proveedor.
 
 
 ```C++
