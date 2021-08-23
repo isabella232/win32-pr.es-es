@@ -20,10 +20,10 @@ Puede buscar dispositivos de tres maneras: por tipo, por UDN y por búsqueda asi
 **Para detectar dispositivos**
 
 1.  Seleccione el tipo de búsqueda que desea usar: **Buscar por tipo,** **Buscar por UDN** o **Búsqueda asincrónica.**
-2.  Seleccione el tipo de dispositivo o el UDN que desea buscar en la lista (para búsquedas por tipo o por UDN). El contenido de la lista se basa en el contenido de los archivos udn.txt y devtype.txt que editó anteriormente.
+2.  Seleccione el tipo de dispositivo o la UDN que desea buscar en la lista (para búsquedas por tipo o por UDN). El contenido de la lista se basa en el contenido de los archivos udn.txt y devtype.txt que editó anteriormente.
 3.  Haga clic en **Iniciar detección**. Se inicia la búsqueda. Los resultados se muestran en la **lista Dispositivos encontrados.** Si no se encuentra ningún dispositivo, se muestra un mensaje que indica esta condición. El estado del progreso de la búsqueda se muestra en el **campo** Estado.
 
-Cuando se usa la búsqueda asincrónica, los nuevos  dispositivos que se encuentran se muestran en la lista Dispositivos encontrados y en la **barra Estado.** Una vez finalizada la búsqueda asincrónica, la **barra estado** muestra un mensaje que indica esto. Sin embargo, dado que una búsqueda asincrónica se ejecuta  hasta que se  detiene manualmente, aparecen nuevos dispositivos en la lista Dispositivos encontrados y en la barra Estado a medida que los dispositivos aparecen en la red.
+Cuando se usa la búsqueda asincrónica, los nuevos  dispositivos que se encuentran se muestran en la lista Dispositivos encontrados y en la **barra Estado.** Una vez finalizada la búsqueda asincrónica, la **barra Estado** muestra un mensaje que indica esto. Sin embargo, dado que una búsqueda asincrónica se ejecuta  hasta que se  detiene manualmente, aparecen nuevos dispositivos en la lista Dispositivos encontrados y en la barra estado a medida que los dispositivos aparecen en la red.
 
 Una vez que haya detectado dispositivos, puede [controlarlos.](controlling-a-device.md)
 

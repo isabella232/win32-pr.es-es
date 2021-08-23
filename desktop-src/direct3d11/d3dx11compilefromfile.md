@@ -1,6 +1,6 @@
 ---
-title: Función D3DX11CompileFromFile (D3DX11async. h)
-description: Tenga en cuenta que la biblioteca de utilidades de D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de la tienda Windows. Tenga en cuenta que, en lugar de usar esta función, se recomienda compilar sin conexión mediante el compilador de línea de comandos de Fxc.exe o usar una de las API de compilación de HLSL, como la API D3DCompileFromFile. Compilar un sombreador o un efecto desde un archivo.
+title: Función D3DX11CompileFromFile (D3DX11async.h)
+description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Nota En lugar de usar esta función, se recomienda compilar sin conexión mediante el compilador de línea de comandos de Fxc.exe o usar una de las API de compilación HLSL, como la API D3DCompileFromFile. Compile un sombreador o un efecto a partir de un archivo.
 ms.assetid: 91a1a339-50da-4f86-9b55-6af246a60482
 keywords:
 - Función D3DX11CompileFromFile Direct3D 11
@@ -15,26 +15,26 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 89c9194eb54652304c220e5a4de0ee12a26ea1a3
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 53a62a5a3d60dc62317fdd6f08e99faea025a172f77af7f10fd48e6752fb1b8e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104157220"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118989875"
 ---
-# <a name="d3dx11compilefromfile-function"></a>D3DX11CompileFromFile función)
+# <a name="d3dx11compilefromfile-function"></a>Función D3DX11CompileFromFile
 
 > [!Note]  
-> La biblioteca de utilidades de D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para aplicaciones de la tienda Windows.
+> La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
 
  
 
 > [!Note]  
-> En lugar de usar esta función, se recomienda compilar sin conexión mediante el compilador de línea de comandos de Fxc.exe o usar una de las API de compilación de HLSL, como la API [**D3DCompileFromFile**](/windows/desktop/direct3dhlsl/d3dcompilefromfile) .
+> En lugar de usar esta función, se recomienda compilar sin conexión mediante el compilador de línea de comandos de Fxc.exe o usar una de las API de compilación HLSL, como [**D3DCompileFromFile**](/windows/desktop/direct3dhlsl/d3dcompilefromfile) API.
 
  
 
-Compilar un sombreador o un efecto desde un archivo.
+Compile un sombreador o un efecto a partir de un archivo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,7 +61,7 @@ HRESULT D3DX11CompileFromFile(
 
 <dl> <dt>
 
-*pSrcFile* \[ de\]
+*pSrcFile* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCTSTR**](/windows/desktop/WinProg/windows-data-types)**
@@ -70,93 +70,93 @@ Nombre del archivo que contiene el código del sombreador. Si la configuración 
 
 </dd> <dt>
 
-*pDefines* \[ de\]
+*pDefines* \[ En\]
 </dt> <dd>
 
-Tipo: **[**D3D10 de \_ sombreador \_ const**](/windows/desktop/api/d3dcommon/ns-d3dcommon-d3d_shader_macro) \***
+Tipo: **const [**D3D10 \_ SHADER \_ MACRO**](/windows/desktop/api/d3dcommon/ns-d3dcommon-d3d_shader_macro) \***
 
-Opcional. Puntero a una matriz de definiciones de macro (vea [**D3D10 \_ Shader \_ macro**](/windows/desktop/api/d3dcommon/ns-d3dcommon-d3d_shader_macro)). La última estructura de la matriz actúa como terminador y debe tener todos los miembros establecidos en 0. Si no se usa, establezca *pDefines* en **null**.
+Opcional. Puntero a una matriz de definiciones de macro (vea [**D3D10 \_ SHADER \_ MACRO**](/windows/desktop/api/d3dcommon/ns-d3dcommon-d3d_shader_macro)). La última estructura de la matriz actúa como terminador y debe tener todos los miembros establecidos en 0. Si no se usa, establezca *pDefines* en **NULL.**
 
 </dd> <dt>
 
-*pInclude* \[ de\]
+*pInclude* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3D10INCLUDE**](/previous-versions/windows/desktop/legacy/bb173775(v=vs.85))**
 
-Opcional. Puntero a una interfaz para controlar archivos de inclusión. Si se establece en **null** , se producirá un error de compilación si un sombreador contiene un \# include.
+Opcional. Puntero a una interfaz para controlar archivos de incluyen. Si se establece en **NULL,** se producirá un error de compilación si un sombreador contiene una \# include.
 
 </dd> <dt>
 
-*pFunctionName* \[ de\]
+*pFunctionName* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](/windows/desktop/WinProg/windows-data-types)**
 
-Nombre de la función del punto de entrada del sombreador en el que comienza la ejecución del sombreador. Al compilar un efecto, **D3DX11CompileFromFile** omite *pFunctionName*; se recomienda establecer *pFunctionName* en **null** porque es una buena práctica de programación establecer un parámetro de puntero en **null** si la función llamada no lo va a usar.
+Nombre de la función de punto de entrada del sombreador donde comienza la ejecución del sombreador. Al compilar un efecto, **D3DX11CompileFromFile** omite *pFunctionName*; Se recomienda establecer *pFunctionName* en **NULL** porque es una buena práctica de programación establecer un parámetro de puntero en **NULL** si la función llamada no lo usará.
 
 </dd> <dt>
 
-*pProfile* \[ de\]
+*pProfile* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](/windows/desktop/WinProg/windows-data-types)**
 
-Cadena que especifica el modelo de sombreador; puede ser cualquier perfil del modelo de sombreador 2, el modelo de sombreador 3, el modelo de sombreador 4 o el modelo de sombreador 5. El perfil también puede ser para el tipo de efecto (por ejemplo, FX \_ 4 \_ 1).
+Cadena que especifica el modelo de sombreador; puede ser cualquier perfil en el modelo de sombreador 2, el modelo de sombreador 3, el modelo de sombreador 4 o el modelo de sombreador 5. El perfil también puede ser para el tipo de efecto (por ejemplo, fx \_ 4 \_ 1).
 
 </dd> <dt>
 
-*Flags1* \[ de\]
+*Flags1* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Marcas de [**compilación**](/windows/desktop/direct3dhlsl/d3dcompile-constants)del sombreador.
+Marcas [**de compilación de sombreador**](/windows/desktop/direct3dhlsl/d3dcompile-constants).
 
 </dd> <dt>
 
-*Flags2* \[ de\]
+*Marcas2* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-[**Marcas de compilación**](/windows/desktop/direct3dhlsl/d3dcompile-effect-constants)de efectos. Al compilar un sombreador y no un archivo de efectos, **D3DX11CompileFromFile** omite *Flags2*; se recomienda establecer *Flags2* en cero porque es una buena práctica de programación establecer un parámetro que no es de puntero en cero si la función llamada no lo va a usar.
+Marcas [**de compilación de efecto**](/windows/desktop/direct3dhlsl/d3dcompile-effect-constants). Al compilar un sombreador y no un archivo de efecto, **D3DX11CompileFromFile** omite *Flags2*; Se recomienda establecer *Flags2* en cero porque es una buena práctica de programación establecer un parámetro que no sea de punto de referencia en cero si la función llamada no lo usará.
 
 </dd> <dt>
 
-*pPump* \[ de\]
+*pPump* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX11ThreadPump**](id3dx11threadpump.md)\***
 
-Un puntero a una interfaz de bombeo de subprocesos (consulte la [**interfaz ID3DX11ThreadPump**](id3dx11threadpump.md)). Use **null** para especificar que esta función no debe devolver hasta que se complete.
+Puntero a una interfaz de bombeo de subprocesos (vea [**ID3DX11ThreadPump Interface**](id3dx11threadpump.md)). Use **NULL** para especificar que esta función no debe devolverse hasta que se complete.
 
 </dd> <dt>
 
-*ppShader* \[ enuncia\]
+*ppShader* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Blob**](/windows/desktop/api/d3dcommon/nn-d3dcommon-id3d10blob)\*\***
 
-Puntero a la memoria que contiene el sombreador compilado, así como cualquier información de depuración incrustada y de tabla de símbolos.
+Puntero a la memoria que contiene el sombreador compilado, así como cualquier información incrustada de depuración y tabla de símbolos.
 
 </dd> <dt>
 
-*ppErrorMsgs* \[ enuncia\]
+*ppErrorMsgs* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Blob**](/windows/desktop/api/d3dcommon/nn-d3dcommon-id3d10blob)\*\***
 
-Puntero a la memoria que contiene una lista de errores y advertencias que se produjeron durante la compilación. Estos errores y advertencias son idénticos a los resultados de depuración de un depurador.
+Puntero a la memoria que contiene una lista de errores y advertencias que se produjeron durante la compilación. Estos errores y advertencias son idénticos a la salida de depuración de un depurador.
 
 </dd> <dt>
 
-*pHResult* \[ enuncia\]
+*pHResult* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)\***
 
-Puntero al valor devuelto. Puede ser **null**. Si *pPump* no es **null**, *pHResult* debe ser una ubicación de memoria válida hasta que se complete la ejecución asincrónica.
+Puntero al valor devuelto. Puede ser **NULL.** Si *pPump* no es **NULL,** *pHResult* debe ser una ubicación de memoria válida hasta que se complete la ejecución asincrónica.
 
 </dd> </dl>
 
@@ -164,15 +164,15 @@ Puntero al valor devuelto. Puede ser **null**. Si *pPump* no es **null**, *pHRes
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que se muestran en [códigos de retorno de Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno [de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-**D3DX11CompileFromFile** devuelve E \_ INVALIDARG si proporciona un valor distinto de **null** al parámetro *pHResult* cuando se proporciona **null** al parámetro *pPump* . Para obtener más información sobre esta situación, consulte la sección Comentarios.
+**D3DX11CompileFromFile** devuelve E INVALIDARG si proporciona un valor distinto de NULL al parámetro pHResult al proporcionar NULL al \_ parámetro *pPump.*    Para obtener más información sobre esta situación, vea Comentarios.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener más información sobre **D3DX11CompileFromFile**, consulte [**D3DCompile**](/windows/desktop/direct3dhlsl/d3dcompile).
+Para obtener más información **sobre D3DX11CompileFromFile**, vea [**D3DCompile**](/windows/desktop/direct3dhlsl/d3dcompile).
 
-Debe proporcionar un **valor null** al parámetro *pHResult* si también proporciona **null** al parámetro *pPump* . De lo contrario, no se puede crear un sombreador mediante el código del sombreador compilado que **D3DX11CompileFromFile** devuelve en la memoria a la que apunta el parámetro *ppShader* . Para crear un sombreador a partir del código de sombreador compatible, llame a uno de los siguientes métodos de interfaz [**ID3D11Device**](/windows/desktop/api/D3D11/nn-d3d11-id3d11device) :
+Debe proporcionar **NULL al** parámetro *pHResult* si también proporciona **NULL** al *parámetro pPump.* De lo contrario, no se puede crear un sombreador mediante el código de sombreador compilado que **D3DX11CompileFromFile** devuelve en la memoria a la que apunta el *parámetro ppShader.* Para crear un sombreador a partir de código de sombreador compatible, llame a uno de los métodos de interfaz [**ID3D11Device**](/windows/desktop/api/D3D11/nn-d3d11-id3d11device) siguientes:
 
 -   [**CreateComputeShader**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createcomputeshader)
 -   [**CreateDomainShader**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createdomainshader)
@@ -182,7 +182,7 @@ Debe proporcionar un **valor null** al parámetro *pHResult* si también proporc
 -   [**CreatePixelShader**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createpixelshader)
 -   [**CreateVertexShader**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createvertexshader)
 
-Además, si se proporciona un valor distinto de **null** a *pHResult* cuando se proporciona **null** a *pPump*, **D3DX11CompileFromFile** devuelve el código de \_ error E INVALIDARG.
+Además, si proporciona un valor distinto de **NULL** a *pHResult* al proporcionar **NULL** a *pPump,* **D3DX11CompileFromFile** devuelve el código de error E \_ INVALIDARG.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -190,8 +190,8 @@ Además, si se proporciona un valor distinto de **null** a *pHResult* cuando se 
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX11async. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX11. lib</dt> </dl>    |
+| Encabezado<br/>  | <dl> <dt>D3DX11async.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX11.lib</dt> </dl>    |
 
 
 
@@ -199,7 +199,7 @@ Además, si se proporciona un valor distinto de **null** a *pHResult* cuando se 
 
 <dl> <dt>
 
-[Funciones de D3DX](d3d11-graphics-reference-d3dx11-functions.md)
+[Funciones D3DX](d3d11-graphics-reference-d3dx11-functions.md)
 </dt> </dl>
 
  

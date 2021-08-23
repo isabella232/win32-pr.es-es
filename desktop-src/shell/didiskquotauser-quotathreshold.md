@@ -1,7 +1,7 @@
 ---
 description: Establece u obtiene el umbral de advertencia del usuario, en bytes.
 ms.assetid: 5289d472-d591-4604-91f9-252dd4a1b62b
-title: Propiedad DIDiskQuotaUser. QuotaThreshold
+title: Propiedad DIDiskQuotaUser.QuotaThreshold
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,20 +13,20 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 7ce336c84d086c4e4be369278a77e40e59474bc5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 38caa5ef5ded6ed40708314c6063fba13a74cbbe506465aed55e8504898a9307
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907723"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032793"
 ---
-# <a name="didiskquotauserquotathreshold-property"></a>Propiedad DIDiskQuotaUser. QuotaThreshold
+# <a name="didiskquotauserquotathreshold-property"></a>Propiedad DIDiskQuotaUser.QuotaThreshold
 
 Establece u obtiene el umbral de advertencia del usuario, en bytes.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```JScript
@@ -38,17 +38,17 @@ DIDiskQuotaUser.QuotaThreshold = iQuotaThreshold
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Valor **entero** que especifica o recibe el umbral de advertencia del usuario. Si el uso de disco de un usuario supera este valor y la propiedad [**LogQuotaThreshold**](diskquotacontrol-logquotathreshold.md) se establece en **true**, el sistema genera una entrada en el registro de eventos.
+Valor **entero** que especifica o recibe el umbral de advertencia del usuario. Si el uso de disco de un usuario supera este valor y la propiedad [**LogQuotaThreshold**](diskquotacontrol-logquotathreshold.md) se establece en **TRUE,** el sistema genera una entrada del registro de eventos.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                    |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                          |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 

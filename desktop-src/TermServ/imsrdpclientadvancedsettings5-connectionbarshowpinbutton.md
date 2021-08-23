@@ -1,18 +1,18 @@
 ---
-title: Propiedad ConnectionBarShowPinButton de IMsRdpClientAdvancedSettings5
-description: Establece o recupera la configuración del botón anclar en la barra de conexión.
+title: Propiedad IMsRdpClientAdvancedSettings5 ConnectionBarShowPinButton
+description: Establece o recupera la configuración del botón anclar de la barra de conexión.
 ms.assetid: fbb2c19b-88a7-435b-86ef-4856e194b383
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad ConnectionBarShowPinButton
-- Propiedad ConnectionBarShowPinButton Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad ConnectionBarShowPinButton
-- Propiedad ConnectionBarShowPinButton Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad ConnectionBarShowPinButton
-- Propiedad ConnectionBarShowPinButton Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad ConnectionBarShowPinButton
-- Propiedad ConnectionBarShowPinButton Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad ConnectionBarShowPinButton
+- Propiedad ConnectionBarShowPinButton Servicios de Escritorio remoto
+- Propiedad ConnectionBarShowPinButton Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad ConnectionBarShowPinButton
+- Propiedad ConnectionBarShowPinButton Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad ConnectionBarShowPinButton
+- Propiedad ConnectionBarShowPinButton Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad ConnectionBarShowPinButton
+- Propiedad ConnectionBarShowPinButton Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad ConnectionBarShowPinButton
 topic_type:
 - apiref
 api_name:
@@ -34,20 +34,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a766bc01bc5bf773fa03e788c3089441e6c3f6f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2a978f6d1b6a26fe84f5ad590cfc41ab384d6ba49f1e265eecc0ea408b67b59c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105685928"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001393"
 ---
-# <a name="imsrdpclientadvancedsettings5connectionbarshowpinbutton-property"></a>IMsRdpClientAdvancedSettings5:: ConnectionBarShowPinButton (propiedad)
+# <a name="imsrdpclientadvancedsettings5connectionbarshowpinbutton-property"></a>IMsRdpClientAdvancedSettings5::ConnectionBarShowPinButton, propiedad
 
-Establece o recupera la configuración del botón anclar en la barra de conexión.
+Establece o recupera la configuración del botón anclar de la barra de conexión.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -64,7 +64,7 @@ HRESULT get_ConnectionBarShowPinButton(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Un valor booleano de **true** o **false**. Un valor de **true** muestra el botón anclar en la barra de conexión. Un valor de **false** oculta el botón de anclaje en la barra de conexión.
+Valor booleano de **TRUE** o **FALSE.** El valor **TRUE muestra** el botón anclar en la barra de conexión. El valor **FALSE oculta** el botón anclar en la barra de conexión.
 
 ## <a name="requirements"></a>Requisitos
 

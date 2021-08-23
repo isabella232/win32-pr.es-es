@@ -1,6 +1,6 @@
 ---
-title: Elemento patternMap (PatternMapListType)
-description: Define una asignación entre dos expresiones regulares. Una expresión se utiliza para buscar una cadena coincidente en la cadena de mensaje y la otra se usa para modificar la cadena antes de que el servicio la vuelva a colocar en la cadena de mensaje.
+title: elemento patternMap (PatternMapListType)
+description: Define una asignación entre dos expresiones regulares. Una expresión se usa para buscar una cadena correspondiente en la cadena del mensaje y la otra se usa para modificar la cadena antes de que el servicio la vuelva a coloca en la cadena del mensaje.
 ms.assetid: 5cf28d38-4cc3-4a7b-a64b-3ad1cb42ebef
 keywords:
 - elemento patternMap EventLog
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3ae29d60e39515a7c4b4db334f947abc44df5ddc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b9206726bb960762d482c5a966fce6fb5a89b094249f247c2617c051d76d7e7c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104078800"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055973"
 ---
-# <a name="patternmap-patternmaplisttype-element"></a>Elemento patternMap (PatternMapListType)
+# <a name="patternmap-patternmaplisttype-element"></a>elemento patternMap (PatternMapListType)
 
-Define una asignación entre dos expresiones regulares. Una expresión se utiliza para buscar una cadena coincidente en la cadena de mensaje y la otra se usa para modificar la cadena antes de que el servicio la vuelva a colocar en la cadena de mensaje.
+Define una asignación entre dos expresiones regulares. Una expresión se usa para buscar una cadena correspondiente en la cadena del mensaje y la otra se usa para modificar la cadena antes de que el servicio la vuelva a coloca en la cadena del mensaje.
 
 ``` syntax
 <xs:element name="patternMap"
@@ -30,16 +30,16 @@ Define una asignación entre dos expresiones regulares. Una expresión se utiliz
  />
 ```
 
-El elemento **patternMap** se define mediante el tipo complejo de [**PatternMapListType**](eventmanifestschema-patternmaplisttype-complextype.md) .
+El tipo complejo [**PatternMapListType**](eventmanifestschema-patternmaplisttype-complextype.md) define el elemento **patternMap.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

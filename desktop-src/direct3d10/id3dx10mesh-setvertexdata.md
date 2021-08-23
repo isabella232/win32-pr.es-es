@@ -1,7 +1,7 @@
 ---
-description: Establezca los datos de vértices en uno de los búferes de vértices de la malla.
+description: Establezca los datos de vértice en uno de los búferes de vértice de la malla.
 ms.assetid: 930cbc49-4202-431f-ac72-386c31acd87e
-title: 'ID3DX10Mesh:: SetVertexData (método) (D3DX10. h)'
+title: Método ID3DX10Mesh::SetVertexData (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 68d54c6868e44517d42e0b53159f7a23ef45a05a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 59dc5292d5d5dfc269f97f2a8d19ce9a19ea95ceefda47eaf89ac77f81838f92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990335"
 ---
-# <a name="id3dx10meshsetvertexdata-method"></a>ID3DX10Mesh:: SetVertexData (método)
+# <a name="id3dx10meshsetvertexdata-method"></a>Método ID3DX10Mesh::SetVertexData
 
-Establezca los datos de vértices en uno de los búferes de vértices de la malla.
+Establezca los datos de vértice en uno de los búferes de vértice de la malla.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,21 +41,21 @@ HRESULT SetVertexData(
 
 <dl> <dt>
 
-*iBuffer* \[ de\]
+*iBuffer* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Búfer de vértices que se va a rellenar con pData.
 
 </dd> <dt>
 
-*pdata* \[ de\]
+*pData* \[ En\]
 </dt> <dd>
 
-Tipo: **const void \***
+Tipo: **const \* void**
 
-Datos de vértices que se van a establecer.
+Datos de vértice que se establecerán.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Datos de vértices que se van a establecer.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que aparecen en los [códigos de retorno de Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 [ID3DX10Mesh](id3dx10mesh.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

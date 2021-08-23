@@ -1,44 +1,44 @@
 ---
-title: Diferencias entre efectos 10 y efectos 11
-description: En este tema se muestran las diferencias entre los efectos 10 y 11.
+title: Diferencias entre los efectos 10 y 11
+description: En este tema se muestran las diferencias entre Efectos 10 y Efectos 11.
 ms.assetid: c3e5e6bc-c544-49ee-b6d9-021ce87f9b12
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 29af1b9e7aec72f96a62e0f62668b81a6eec8367
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 9b488015deae8cc93b9bc692c49d66ff1510bcc5639047fe253265be5b382a85
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103792322"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990125"
 ---
-# <a name="differences-between-effects-10-and-effects-11"></a>Diferencias entre efectos 10 y efectos 11
+# <a name="differences-between-effects-10-and-effects-11"></a>Diferencias entre los efectos 10 y 11
 
-En este tema se muestran las diferencias entre los efectos 10 y 11.
+En este tema se muestran las diferencias entre Efectos 10 y Efectos 11.
 
-## <a name="device-contexts-threading-and-cloning"></a>Contextos de dispositivo, subprocesos y clonación
+## <a name="device-contexts-threading-and-cloning"></a>Contextos de dispositivo, subprocesamiento y clonación
 
-La interfaz ID3D10Device se ha dividido en dos interfaces en Direct3D 11: ID3D11Device y ID3D11DeviceContext. Puede crear varios ID3D11DeviceContexts para facilitar la ejecución simultánea en varios subprocesos. Effects 11 extiende este concepto al marco de trabajo de efectos.
+La interfaz ID3D10Device se ha dividido en dos interfaces en Direct3D 11: ID3D11Device e ID3D11DeviceContext. Puede crear varios ID3D11DeviceContexts para facilitar la ejecución simultánea en varios subprocesos. Efectos 11 amplía este concepto al marco De efectos.
 
-Los efectos 11 en tiempo de ejecución son de un solo subproceso. Por esta razón, no debe utilizar una única instancia de ID3DX11Effect con varios subprocesos simultáneamente.
+El tiempo de ejecución de Effects 11 es de un solo subproceso. Por esta razón, no debe usar una única instancia id3DX11Effect con varios subprocesos simultáneamente.
 
-Para usar el tiempo de ejecución de Effects 11 en varias instancias, debe crear instancias de ID3DX11Effect independientes. Dado que ID3D11DeviceContext también es de subproceso único, debe pasar instancias de ID3D11DeviceContext diferentes a cada instancia de Effect en Apply. Puede usar estos contextos de dispositivo independientes para crear listas de comandos de forma que el subproceso de representación pueda aplicarlos en el contexto de dispositivo inmediato.
+Para usar el entorno de ejecución De efectos 11 en varias instancias, debe crear instancias independientes de ID3DX11Effect. Dado que ID3D11DeviceContext también es de un solo subproceso, debe pasar instancias de ID3D11DeviceContext diferentes a cada instancia de efecto en Aplicar. Puede usar estos contextos de dispositivo independientes para crear listas de comandos para que el subproceso de representación pueda aplicarlos en el contexto inmediato del dispositivo.
 
-La forma más fácil de crear varios efectos que encapsulan la misma funcionalidad, para su uso en varios subprocesos, es crear un efecto y luego hacer copias clonadas. La clonación presenta las siguientes ventajas en comparación con la creación de varias copias desde cero:
+La manera más fácil de crear varios efectos que encapsulan la misma funcionalidad, para su uso en varios subprocesos, es crear un efecto y, a continuación, realizar copias clonadas. La clonación tiene las siguientes ventajas con respecto a la creación de varias copias desde cero:
 
 1.  La rutina de clonación es más rápida que la rutina de creación.
-2.  Los efectos clonados comparten los sombreadores creados, los bloques de estado y las instancias de clase (por lo que no es necesario volver a crearlos).
-3.  Los efectos clonados pueden compartir búferes de constantes.
-4.  Los efectos clonados comienzan con el estado que coincide con el efecto actual (valores de variable, tanto si se ha optimizado como si no).
+2.  Los efectos clonados comparten sombreadores creados, bloques de estado e instancias de clase (por lo que no tienen que volver a crearse).
+3.  Los efectos clonados pueden compartir búferes constantes.
+4.  Los efectos clonados comienzan por el estado que coincide con el efecto actual (valores de variable, tanto si se ha optimizado como si no).
 
-Consulte [clonar un efecto](d3d11-graphics-programming-guide-effects-cloning.md) para obtener más información.
+Consulte [Clonación de un efecto](d3d11-graphics-programming-guide-effects-cloning.md) para obtener más información.
 
-## <a name="effect-pools-and-groups"></a>Grupos de efectos y grupos
+## <a name="effect-pools-and-groups"></a>Grupos y grupos de efectos
 
-Con diferencia el uso más frecuente de los grupos de efectos en Direct3D 10 era para agrupar materiales. Los grupos de efectos se han quitado de los efectos 11 y se han agregado grupos, que es un método más eficaz de agrupación de materiales.
+Con diferencia, el uso más frecuente de los grupos de efectos en Direct3D 10 era para agrupar materiales. Los grupos de efectos se han quitado de Efectos 11 y se han agregado grupos, que es un método más eficaz de agrupación de materiales.
 
 Un grupo de efectos es simplemente un conjunto de técnicas. Consulte [Sintaxis de grupo de efectos (Direct3D 11)](d3d11-effect-group-syntax.md) para obtener más información.
 
-Considere la siguiente jerarquía de efectos con cuatro efectos secundarios y un grupo de efectos:
+Tenga en cuenta la siguiente jerarquía de efectos con cuatro efectos secundarios y un grupo de efectos:
 
 
 ```
@@ -66,7 +66,7 @@ technique10 WaterMaterialHighSpec { ... }
 
 
 
-Puede lograr la misma funcionalidad en Effects 11 mediante el uso de grupos:
+Puede lograr la misma funcionalidad en Efectos 11 mediante grupos:
 
 
 ```
@@ -89,17 +89,17 @@ fxgroup WaterMaterial
 
 
 
-## <a name="new-shader-stages"></a>Nuevas etapas del sombreador
+## <a name="new-shader-stages"></a>Nuevas fases del sombreador
 
-Hay tres nuevas fases del sombreador en Direct3D 11: el sombreador de casco, el sombreador de dominios y el sombreador de proceso. Los efectos 11 lo controlan de manera similar a los sombreadores de vértices, los sombreadores de geometría y los sombreadores de píxeles.
+Hay tres nuevas fases de sombreador en Direct3D 11: el sombreador de casco, el sombreador de dominio y el sombreador de proceso. Los efectos 11 los controla de forma similar a los sombreadores de vértices, los sombreadores de geometría y los sombreadores de píxeles.
 
-Se han agregado tres nuevos tipos de variables a Effects 11:
+Se han agregado tres nuevos tipos de variables a Efectos 11:
 
 -   HullShader
 -   DomainShader
 -   ComputeShader
 
-Si usa estos sombreadores en una técnica, debe etiquetar esa técnica "technique11" y no "technique10". El sombreador de cálculo no se puede establecer en el mismo paso que cualquier otro estado de gráficos (otros sombreadores, bloques de estado o destinos de representación).
+Si usa estos sombreadores en una técnica, debe etiquetar esa técnica como "technique11" y no "technique10". El sombreador de proceso no se puede establecer en el mismo paso que cualquier otro estado gráfico (otros sombreadores, bloques de estado o destinos de representación).
 
 ## <a name="new-texture-types"></a>Nuevos tipos de textura
 
@@ -110,11 +110,11 @@ Direct3D 11 admite los siguientes tipos de textura:
 -   [ConsumeStructuredBuffer](/windows/desktop/direct3dhlsl/sm5-object-consumestructuredbuffer)
 -   [StructuredBuffer](/windows/desktop/direct3dhlsl/sm5-object-structuredbuffer)
 
-## <a name="unordered-access-views"></a>Vistas de acceso desordenado
+## <a name="unordered-access-views"></a>Vistas de acceso desordenadas
 
-Effects 11 permite obtener y establecer los nuevos tipos de vistas de acceso desordenado. Esto funciona de forma similar a las texturas.
+Efectos 11 admite la obtención y configuración de los nuevos tipos de vista de acceso no ordenados. Esto funciona de forma similar a las texturas.
 
-Considere este ejemplo de efectos HLSL:
+Considere este ejemplo de HLSL de efectos:
 
 
 ```
@@ -137,7 +137,7 @@ pUAVVar->SetUnorderedAccessView( pUAVTexture1D );
 
 
 
-Direct3D 11 admite los siguientes tipos de vistas de acceso desordenado:
+Direct3D 11 admite los siguientes tipos de vistas de acceso no ordenado:
 
 -   RWBuffer
 -   RWByteAddressBuffer
@@ -150,30 +150,30 @@ Direct3D 11 admite los siguientes tipos de vistas de acceso desordenado:
 
 ## <a name="interfaces-and-class-instances"></a>Interfaces e instancias de clase
 
-Para ver la sintaxis de la interfaz y la clase, consulte [interfaces y clases](/windows/desktop/direct3dhlsl/overviews-direct3d-11-hlsl-dynamic-linking-class).
+Para obtener la sintaxis de interfaz y clase, [vea Interfaces y clases](/windows/desktop/direct3dhlsl/overviews-direct3d-11-hlsl-dynamic-linking-class).
 
-Para usar interfaces y clases en efectos, vea [interfaces y clases en efectos](d3d11-graphics-programming-guide-effects-interfaces-and-classes.md).
+Para usar interfaces y clases en efectos, vea [Interfaces and Classes in Effects](d3d11-graphics-programming-guide-effects-interfaces-and-classes.md).
 
-## <a name="addressable-stream-out"></a>Transmisión por secuencias direccionable
+## <a name="addressable-stream-out"></a>Secuencias direccionables
 
-En Direct3D 10, los sombreadores de geometría pueden generar un flujo de datos a la unidad de salida de la secuencia y la unidad de rasterizador. En Direct3D 11, los sombreadores de geometría pueden generar hasta cuatro flujos de datos en la unidad de salida de flujo y, como máximo, uno de esos flujos en la unidad de rasterizador. El intrínseco **ConstructGSWithSO** se ha actualizado para reflejar esta nueva funcionalidad.
+En Direct3D 10, los sombreadores de geometría podrían generar un flujo de datos a la unidad de salida de flujo y a la unidad rasterizadora. En Direct3D11, los sombreadores de geometría pueden generar hasta cuatro flujos de datos a la unidad de salida del flujo y, como máximo, uno de esos flujos a la unidad de rasterizador. El **intrínseco ConstructGSWithSO** se ha actualizado para reflejar esta nueva funcionalidad.
 
-Consulte [Sintaxis de Stream out](d3d11-graphics-reference-effect-streamout.md) para obtener más información.
+Consulte [Sintaxis de stream out](d3d11-graphics-reference-effect-streamout.md) para obtener más información.
 
-## <a name="setting-and-unsetting-device-state"></a>Establecer y desconfigurar el estado del dispositivo
+## <a name="setting-and-unsetting-device-state"></a>Configuración y desajuste del estado del dispositivo
 
-En los efectos 10, podría crear búferes de constantes y búferes de texturas administrados por el usuario mediante las funciones [**ID3D10EffectConstantBuffer:: SetConstantBuffer**](/windows/desktop/api/d3d10effect/nf-d3d10effect-id3d10effectconstantbuffer-setconstantbuffer) y [**SetTextureBuffer**](id3dx11effectconstantbuffer-settexturebuffer.md) . Después de llamar a estas funciones, el tiempo de ejecución de los efectos 10 deja de administrar el búfer de constantes o el búfer de textura y el usuario debe rellenar los datos mediante la interfaz ID3D10Device.
+En Efectos 10, podría crear búferes constantes y búferes de textura administrados por el usuario mediante las funciones [**ID3D10EffectConstantBuffer::SetConstantBuffer**](/windows/desktop/api/d3d10effect/nf-d3d10effect-id3d10effectconstantbuffer-setconstantbuffer) y [**SetTextureBuffer.**](id3dx11effectconstantbuffer-settexturebuffer.md) Después de llamar a estas funciones, el runtime de Efectos 10 ya no administra el búfer constante o el búfer de textura y el usuario debe rellenar los datos mediante la interfaz ID3D10Device.
 
-En Effects 11, también puede hacer que los bloques de estado (estado de Blend, estado de rasterizador, estado de estarcido de profundidad y estado de muestra) se administren mediante el uso de las siguientes llamadas:
+En Efectos 11, también puede administrar los bloques de estado (estado de mezcla, estado de rasterizador, estado de galería de símbolos de profundidad y estado del muestreador) mediante las siguientes llamadas:
 
 -   [**ID3DX11EffectBlendVariable::SetBlendState**](id3dx11effectblendvariable-setblendstate.md)
 -   [**ID3DX11EffectRasterizerVariable::SetRasterizerState**](id3dx11effectrasterizervariable-setrasterizerstate.md)
 -   [**ID3DX11EffectDepthStencilVariable::SetDepthStencilState**](id3dx11effectdepthstencilvariable-setdepthstencilstate.md)
 -   [**ID3DX11EffectSamplerVariable::SetSampler**](id3dx11effectsamplervariable-setsampler.md)
 
-Después de llamar a estas funciones, el tiempo de ejecución de Effects 11 ya no administra las variables de bloque de estado y los valores permanecerán sin cambios. Tenga en cuenta que, dado que los bloques de estado son inmutables, el usuario debe establecer un nuevo bloque de estado para cambiar los valores.
+Después de llamar a estas funciones, el runtime de Efectos 11 ya no administra las variables de bloque de estado y los valores permanecerán sin cambios. Tenga en cuenta que, dado que los bloques de estado son inmutables, el usuario debe establecer un nuevo bloque de estado para cambiar los valores.
 
-También puede revertir los búferes de constantes, los búferes de textura y los bloques de estado al estado no administrado por el usuario. Si no establece estas variables, el tiempo de ejecución de Effects 11 continuará actualizarlas cuando sea necesario. Puede utilizar las siguientes llamadas para no establecer las variables administradas por el usuario:
+También puede revertir los búferes constantes, los búferes de textura y los bloques de estado al estado administrado que no es del usuario. Si desasoye estas variables, el tiempo de ejecución de Efectos 11 las seguirá actualizando cuando sea necesario. Puede usar las siguientes llamadas para no establecer variables administradas por el usuario:
 
 -   [**ID3DX11EffectConstantBuffer::UndoSetConstantBuffer**](id3dx11effectconstantbuffer-undosetconstantbuffer.md)
 -   [**ID3DX11EffectConstantBuffer::UndoSetTextureBuffer**](id3dx11effectconstantbuffer-undosettexturebuffer.md)
@@ -182,31 +182,31 @@ También puede revertir los búferes de constantes, los búferes de textura y lo
 -   [**ID3DX11EffectDepthStencilVariable::UndoSetDepthStencilState**](id3dx11effectdepthstencilvariable-undosetdepthstencilstate.md)
 -   [**ID3DX11EffectSamplerVariable::UndoSetSampler**](id3dx11effectsamplervariable-undosetsampler.md)
 
-## <a name="effects-virtual-machine"></a>Efectos de la máquina virtual
+## <a name="effects-virtual-machine"></a>Máquina virtual de efectos
 
 Se ha quitado la máquina virtual de efectos, que evaluó expresiones complejas fuera de las funciones.
 
 No se admiten los siguientes ejemplos de expresiones complejas:
 
-1.  SetPixelShader (myPSArray (i \* 3 + j));
-2.  SetPixelShader (myPSArray ((float) i);
-3.  FILTRO = i + 2;
+1.  SetPixelShader( myPSArray( i \* 3 + j ) );
+2.  SetPixelShader( myPSArray( (float)i );
+3.  FILTER = i + 2;
 
 Se admiten los siguientes ejemplos de expresiones no complejas:
 
 1.  SetPixelShader( myPS );
-2.  SetPixelShader (myPS \[ i \] );
-3.  SetPixelShader (myPS \[ uIndex \] );//uIndex es una variable uint
-4.  FILTRO = i;
-5.  FILTER = ANISOTRÓPICO;
+2.  SetPixelShader( myPS \[ i \] );
+3.  SetPixelShader( myPS \[ uIndex \] ); // uIndex es una variable uint
+4.  FILTER = i;
+5.  FILTER = ANISOTROPIC;
 
-Estas expresiones pueden aparecer en expresiones de bloque de estado (como FILTER) y expresiones Pass (como SetPixelShader).
+Estas expresiones podrían aparecer en expresiones de bloque de estado (como FILTER) y expresiones de paso (como SetPixelShader).
 
 ## <a name="source-availability-and-location"></a>Disponibilidad y ubicación de origen
 
-Los efectos 10 se distribuyeron en D3D10.dll. Effects 11 se distribuye como Source, con las soluciones de Visual Studio correspondientes para compilarlo. Al crear aplicaciones de tipo Effects, se recomienda incluir directamente los efectos 11 en esas aplicaciones.
+Los efectos 10 se distribuyeron en D3D10.dll. Los efectos 11 se distribuyen como origen, con las Visual Studio correspondientes para compilarlo. Al crear aplicaciones de tipo efectos, se recomienda incluir el origen Effects 11 directamente en esas aplicaciones.
 
-Puede obtener los efectos 11 de [Effects para la actualización de Direct3D 11](https://github.com/Microsoft/FX11).
+Puede obtener Effects 11 en [Effects for Direct3D 11 Update (Efectos para direct3D 11 Update).](https://github.com/Microsoft/FX11)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -215,6 +215,6 @@ Puede obtener los efectos 11 de [Effects para la actualización de Direct3D 11](
 [Efectos (Direct3D 11)](d3d11-graphics-programming-guide-effects.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

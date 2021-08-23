@@ -1,7 +1,7 @@
 ---
-description: Obtiene el número de huesos en ID3DX10SkinInfo.
+description: Obtenga el número de esqueletos en ID3DX10SkinInfo.
 ms.assetid: 373c8b42-a745-4c68-a93e-381602ca6e0d
-title: 'ID3DX10SkinInfo:: GetNumBones (método) (D3DX10. h)'
+title: Método ID3DX10SkinInfo::GetNumPxs (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 1cbc39dd0f1a99ff65935c66e22a79a3d1836a7a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d1e4c761652bff649e9cf1ab8950202430e54d940cec96b7dc62eb8a060b4534
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104083730"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990325"
 ---
-# <a name="id3dx10skininfogetnumbones-method"></a>ID3DX10SkinInfo:: GetNumBones (método)
+# <a name="id3dx10skininfogetnumbones-method"></a>Método ID3DX10SkinInfo::GetNumPxs
 
-Obtiene el número de huesos en ID3DX10SkinInfo.
+Obtenga el número de esqueletos en ID3DX10SkinInfo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,9 +40,9 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-El número de huesos en ID3DX10SkinInfo.
+Número de esqueletos en ID3DX10SkinInfo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ El número de huesos en ID3DX10SkinInfo.
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -62,7 +62,7 @@ El número de huesos en ID3DX10SkinInfo.
 [ID3DX10SkinInfo](id3dx10skininfo.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

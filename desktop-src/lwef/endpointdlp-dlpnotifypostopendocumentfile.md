@@ -12,12 +12,12 @@ api_type:
 - DllExport
 api_location:
 - EndpointDlp.dll
-ms.openlocfilehash: 0aed30cc0eca066b569ad1299392430c4d1adeff
-ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
+ms.openlocfilehash: 2957b09282fe64e41805f09a1761ca75aa3551ca70e9d4aa5b52517374fd9ca2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107495879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118976605"
 ---
 # <a name="dlpnotifypostopendocumentfile-function"></a>Función DlpNotifyPostOpenDocumentFile
 
@@ -37,7 +37,7 @@ void WINAPI DlpNotifyPostOpenDocumentFile(_In_ const PDLP_DOCUMENT_INFO Document
 *DocumentInfo* \[ En\]
 </dt> <dd>
 
-Puntero a [un](endpointdlp-dlp_document_info.md) PDLP_DOCUMENT_INFO estructura que contiene información sobre el documento que se abrió.
+Puntero a una [estructura PDLP_DOCUMENT_INFO](endpointdlp-dlp_document_info.md) que contiene información sobre el documento que se abrió.
 
 </dd> </dl>
 
@@ -46,7 +46,7 @@ Puntero a [un](endpointdlp-dlp_document_info.md) PDLP_DOCUMENT_INFO estructura q
 *OpStatus* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura [DLP_POSTOP_STATUS](enpointdlp-dlp_postop_status.md) que contiene información de estado sobre la operación de abrir documento.
+Puntero a una estructura [DLP_POSTOP_STATUS](enpointdlp-dlp_postop_status.md) que contiene información de estado sobre la operación de documento abierto.
 
 </dd> </dl>
 

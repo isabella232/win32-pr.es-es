@@ -1,5 +1,5 @@
 ---
-description: Almacena información de contexto de Tablet PC.
+description: Almacena información de contexto de tableta.
 ms.assetid: a9eadc83-c3dc-42ba-bd4c-24a4a95563ff
 title: Interfaz ITabletContext
 ms.topic: reference
@@ -14,24 +14,24 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: 14c1b34058ebda76f5fd21c6a5d686aa25ae41f2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3642100b0b974d952dbf9c01d7362ee19f85d48923233e3356ed6e1ec7b58064
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104546742"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119031903"
 ---
 # <a name="itabletcontext-interface"></a>Interfaz ITabletContext
 
-Almacena información de contexto de Tablet PC.
+Almacena información de contexto de tableta.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **ITabletContext** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) , pero no tiene miembros adicionales.
+La **interfaz ITabletContext** hereda de la [**interfaz IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En el código siguiente se define la interfaz **ITabletContext** .
+El código siguiente define la **interfaz ITabletContext.**
 
 ``` syntax
 [
@@ -157,9 +157,9 @@ interface ITabletContext : IUnknown
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                          |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 

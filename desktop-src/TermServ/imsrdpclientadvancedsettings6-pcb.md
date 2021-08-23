@@ -1,16 +1,16 @@
 ---
-title: IMsRdpClientAdvancedSettings6 (propiedad de PCB)
-description: Especifica la configuración del BLOB de preconexión (PCB) que se va a usar antes de la conexión para la transmisión al servidor. | IMsRdpClientAdvancedSettings6 (propiedad de PCB)
+title: Propiedad IMsRdpClientAdvancedSettings6 de OEM
+description: Especifica la configuración de BLOB de preconexión (LDAP) que se usará antes de conectarse para la transmisión al servidor. | Propiedad IMsRdpClientAdvancedSettings6 de OEM
 ms.assetid: 3f3e6f09-2c26-44ab-9bcc-2636b71b57e2
 ms.tgt_platform: multiple
 keywords:
-- Propiedad PCB Servicios de Escritorio remoto
-- Propiedad PCB Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad PCB
-- Propiedad PCB Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad PCB
-- Propiedad PCB Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad PCB
+- Propiedad DE LA SERVICIOS DE ESCRITORIO REMOTO
+- Propiedad DE SERVICIOS DE ESCRITORIO REMOTO , interfaz IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad OEM
+- Propiedad DE SERVICIOS DE ESCRITORIO REMOTO , interfaz IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad OEM
+- Propiedad DE SERVICIOS DE ESCRITORIO REMOTO , interfaz IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad OEM
 topic_type:
 - apiref
 api_name:
@@ -29,20 +29,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7da9cfa12ec944ea8f745ec3399c2a53f6b7c6b5
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: a68b34a04f99d830b525cadf6e35bc4816d7a52948916dc9a3d54664752dac38
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105678676"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001363"
 ---
-# <a name="imsrdpclientadvancedsettings6pcb-property"></a>IMsRdpClientAdvancedSettings6::P propiedad CB
+# <a name="imsrdpclientadvancedsettings6pcb-property"></a>IMsRdpClientAdvancedSettings6::P CB
 
-Especifica la configuración del BLOB de preconexión (PCB) que se va a usar antes de la conexión para la transmisión al servidor.
+Especifica la configuración de BLOB de preconexión (LDAP) que se usará antes de conectarse para la transmisión al servidor.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -59,13 +59,13 @@ HRESULT get_PCB(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Especifica la configuración de BLOB que se va a usar antes de la conexión.
+Especifica la configuración de BLOB que se usará antes de conectarse.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad solo es compatible con clientes Conexión a Escritorio remoto 6,1 y 7,0.
+Esta propiedad solo es compatible con Conexión a Escritorio remoto 6.1 y 7.0.
 
-El servidor usa la configuración de BLOB para identificar el proceso de destino de la conexión.
+El servidor usa la configuración BLOB para identificar el proceso de destino de la conexión.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,7 +73,7 @@ El servidor usa la configuración de BLOB para identificar el proceso de destino
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                             |
+| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                                |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>           |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>           |

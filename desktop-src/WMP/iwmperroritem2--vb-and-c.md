@@ -1,10 +1,10 @@
 ---
-title: Interfaz IWMPErrorItem2 (VB y C) (WMP. h)
+title: Interfaz IWMPErrorItem2 (VB y C) (Wmp.h)
 description: Proporciona una propiedad para obtener un código de condición de error.
 ms.assetid: 0393cebd-88c0-4bfd-8890-4c456ec19b57
 keywords:
-- IWMPErrorItem2 (VB y C) interfaz de Windows Media Player
-- IWMPErrorItem2 (VB y C) interfaz de Windows Media Player, se describe
+- Interfaz IWMPErrorItem2 (VB y C) Reproductor de Windows Media
+- Interfaz IWMPErrorItem2 (VB y C) Reproductor de Windows Media , descrito
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b103e8eee1cce9fe9265a73bb1e8d590d52db2d8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a223d3d1ed2f5551e69b20a927681e9e4c08bbdf23d6fcc876e03d6ef2d49e92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690687"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054843"
 ---
 # <a name="iwmperroritem2-vb-and-c-interface"></a>Interfaz IWMPErrorItem2 (VB y C#)
 
 Proporciona una propiedad para obtener un código de condición de error.
 
-Además de las propiedades heredadas de **IWMPErrorItem**, la interfaz **IWMPErrorItem2** expone la propiedad siguiente.
+Además de las propiedades heredadas de **IWMPErrorItem,** la **interfaz IWMPErrorItem2** expone la propiedad siguiente.
 
 
 
@@ -38,11 +38,11 @@ Además de las propiedades heredadas de **IWMPErrorItem**, la interfaz **IWMPErr
 
  
 
-Obtenga una interfaz **IWMPErrorItem2** convirtiendo el valor devuelto por la propiedad **Item** (en C#, **el \_ método get Item**) de la interfaz **IWMPErrorItem** .
+Obtenga una **interfaz IWMPErrorItem2** mediante la conversión del valor devuelto por la propiedad **Item** (en C#, el método **get \_ Item**) de la **interfaz IWMPErrorItem.**
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IWMPErrorItem2 (VB y C#)** no define ningún miembro.
+La **interfaz IWMPErrorItem2 (VB y C#)** no define ningún miembro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,7 +50,7 @@ La interfaz **IWMPErrorItem2 (VB y C#)** no define ningún miembro.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>WMP. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmp.h</dt> </dl> |
 
 
 

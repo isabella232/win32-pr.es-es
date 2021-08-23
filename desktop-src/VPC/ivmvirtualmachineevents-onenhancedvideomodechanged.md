@@ -4,8 +4,8 @@ description: Recibe la notificación de que ha cambiado la compatibilidad de una
 ms.assetid: be22a859-4687-4647-9f53-f79ae8ad52a5
 keywords:
 - Método Virtual PC OnEnhancedVideoModeChanged
-- Método Virtual PC OnEnhancedVideoModeChanged, interfaz IVMVirtualMachineEvents
-- IVMVirtualMachineEvents interface Virtual PC , OnEnhancedVideoModeChanged method
+- Método OnEnhancedVideoModeChanged virtual PC , interfaz IVMVirtualMachineEvents
+- IVMVirtualMachineEvents interface Virtual PC , Método OnEnhancedVideoModeChanged
 topic_type:
 - apiref
 api_name:
@@ -59,7 +59,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
@@ -70,7 +70,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

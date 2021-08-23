@@ -1,7 +1,7 @@
 ---
-description: FolderItemVerbs. Parent (propiedad)
+description: Propiedad FolderItemVerbs.Parent
 ms.assetid: ff45fd2c-5ec1-42b9-9791-437432160dfa
-title: FolderItemVerbs. Parent (propiedad)
+title: Propiedad FolderItemVerbs.Parent
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: eeb041dcf5c1906370cb7266bd72761f1d9b0e04
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c57b2f76758f39ebf002e3e85a4dc2736807eb56320ee22b9a3e4ee1e93421eb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104545430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032573"
 ---
-# <a name="folderitemverbsparent-property"></a>FolderItemVerbs. Parent (propiedad)
+# <a name="folderitemverbsparent-property"></a>Propiedad FolderItemVerbs.Parent
 
 Esta propiedad no está implementada.
 

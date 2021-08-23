@@ -1,11 +1,11 @@
 ---
-title: Propiedad nombre de IResultVerb (WdsSharedIDL. h)
-description: Esta propiedad devuelve un puntero al nombre de cononical para el verbo, como imprimir, abrir, etc.
+title: Propiedad IResultVerb Name (WdsSharedIDL.h)
+description: Esta propiedad devuelve un puntero al nombre cononical del verbo, como print, open, etc.
 ms.assetid: e911ef1c-0ac9-4b70-a3af-c05e42bd1f0f
 keywords:
-- Propiedad nombre características heredadas del entorno de Windows
-- Propiedad nombre características de entorno heredado de Windows, interfaz IResultVerb
-- Interfaz IResultVerb características del entorno heredado de Windows, propiedad Name
+- Nombre de la propiedad Legacy Windows Environment Features
+- Name property Legacy Windows Environment Features , IResultVerb interface
+- IResultVerb interface Legacy Windows Environment Features , Name property
 topic_type:
 - apiref
 api_name:
@@ -17,19 +17,19 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2c831ea0dad36f733995062d8a76fc27d4cc837
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3e58377a9286a6e3fe4abb8d0a1d4ebf9e10bd3072295484ca32fb56d465a6f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103995987"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118976975"
 ---
-# <a name="iresultverbname-property"></a>IResultVerb:: Name (propiedad)
+# <a name="iresultverbname-property"></a>IResultVerb::Name, propiedad
 
 > [!NOTE]
-> Windows Desktop Search 2. x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use la [API de búsqueda de Windows](../search/-search-reference-entry-page.md) en su lugar. 
+> Windows Desktop Search 2.x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use la [API Windows Search en](../search/-search-reference-entry-page.md) su lugar. 
 
-Esta propiedad devuelve un puntero al nombre de cononical para el verbo, como imprimir, abrir, etc.
+Esta propiedad devuelve un puntero al nombre cononical del verbo, como print, open, etc.
 
 Esta propiedad es de solo lectura.
 
@@ -46,7 +46,7 @@ HRESULT get_Name(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Name es un puntero al nombre de cononical para el verbo.
+name es un puntero al nombre cononical del verbo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,10 +54,10 @@ Name es un puntero al nombre de cononical para el verbo.
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP con SP2 \[\]<br/>                                      |
-| Servidor mínimo compatible<br/> | Windows Server 2003 con \[ solo aplicaciones de escritorio de SP1\]<br/>                             |
-| Redistribuible<br/>          | Windows Desktop Search (WDS) 2.6.5<br/>                                             |
-| Encabezado<br/>                   | <dl> <dt>WdsSharedIDL. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de escritorio de SP2 \[\]<br/>                                      |
+| Servidor mínimo compatible<br/> | Windows Server 2003 solo con aplicaciones de escritorio de SP1 \[\]<br/>                             |
+| Redistribuible<br/>          | Windows Búsqueda de escritorio (WDS) 2.6.5<br/>                                             |
+| Header<br/>                   | <dl> <dt>WdsSharedIDL.h</dt> </dl> |
 
 
 

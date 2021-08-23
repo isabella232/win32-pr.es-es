@@ -1,7 +1,7 @@
 ---
-description: Guarda una malla en un archivo. x.
+description: Guarda una malla en un archivo .x.
 ms.assetid: 6d9cbca8-3847-4e15-95d4-9df3f8269665
-title: Función D3DXSaveMeshToX (D3DX9Mesh. h)
+title: Función D3DXSaveMeshToX (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 504e7ad69b83c67dad52ebbf0f6d1eef8639a9fd
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 668131237def6078d775d0002f624b035ad29e21b9a49399b673933dc63e5b5d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988445"
 ---
-# <a name="d3dxsavemeshtox-function"></a>D3DXSaveMeshToX función)
+# <a name="d3dxsavemeshtox-function"></a>Función D3DXSaveMeshToX
 
-Guarda una malla en un archivo. x.
+Guarda una malla en un archivo .x.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,66 +46,66 @@ HRESULT D3DXSaveMeshToX(
 
 <dl> <dt>
 
-*pFilename* \[ de\]
+*pFilename* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCTSTR**](../winprog/windows-data-types.md)**
 
-Puntero a una cadena que especifica el nombre de archivo. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve como LPCWSTR. De lo contrario, el tipo de datos de cadena se resuelve como LPCSTR. Vea la sección Comentarios.
+Puntero a una cadena que especifica el nombre de archivo. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve en LPCWSTR. De lo contrario, el tipo de datos de cadena se resuelve en LPCSTR. Vea la sección Comentarios.
 
 </dd> <dt>
 
-*pmesh* \[ de\]
+*pMesh* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)**
 
-Puntero a una interfaz [**ID3DXMesh**](id3dxmesh.md) que representa la malla que se va a guardar en un archivo. x.
+Puntero a una [**interfaz ID3DXMesh,**](id3dxmesh.md) que representa la malla que se guardará en un archivo .x.
 
 </dd> <dt>
 
-*pAdjacency* \[ de\]
+*pAdjacency* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md) \***
 
-Puntero a una matriz de tres DWORD por cada tipo que especifica los tres vecinos para cada una de las caras de la malla. Este parámetro puede ser **null**.
+Puntero a una matriz de tres DWORD por cara que especifican los tres vecinos de cada cara de la malla. Este parámetro puede ser **NULL.**
 
 </dd> <dt>
 
-*pMaterials* \[ de\]
+*pMaterials* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATERIAL**](d3dxmaterial.md) \***
 
-Puntero a una matriz de estructuras [**D3DXMATERIAL**](d3dxmaterial.md) que contiene información sobre el material que se va a guardar en el archivo. x.
+Puntero a una matriz de [**estructuras D3DXMATERIAL,**](d3dxmaterial.md) que contiene información de material que se va a guardar en el archivo .x.
 
 </dd> <dt>
 
-*pEffectInstances* \[ de\]
+*pEffectInstances* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXEFFECTINSTANCE**](d3dxeffectinstance.md) \***
 
-Puntero a una matriz de instancias de efecto, una por cada grupo de atributos de la malla. Este parámetro puede ser **null**. Una instancia de efecto es una instancia concreta de la información de estado que se usa para inicializar un efecto. Para obtener más información, vea [**D3DXEFFECTINSTANCE**](d3dxeffectinstance.md).
+Puntero a una matriz de instancias de efecto, una por grupo de atributos en la malla. Este parámetro puede ser **NULL.** Una instancia de efecto es una instancia determinada de información de estado que se usa para inicializar un efecto. Para obtener más información, [**vea D3DXEFFECTINSTANCE**](d3dxeffectinstance.md).
 
 </dd> <dt>
 
-*NumMaterials* \[ de\]
+*NumMaterials* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Número de estructuras [**D3DXMATERIAL**](d3dxmaterial.md) en la matriz *pMaterials* .
+Número de [**estructuras D3DXMATERIAL**](d3dxmaterial.md) en la *matriz pMaterials.*
 
 </dd> <dt>
 
-*Formato* \[ de\]
+*Formato* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinación de opciones de formato de archivo y guardado al guardar un archivo. x. Consulte [constantes de archivo de D3DX X](dx9-graphics-reference-d3dx-x-file-constants.md).
+Combinación de formato de archivo y opciones de guardado al guardar un archivo .x. Vea [D3DX X File Constants (Constantes de archivo D3DX X).](dx9-graphics-reference-d3dx-x-file-constants.md)
 
 </dd> </dl>
 
@@ -113,15 +113,15 @@ Combinación de opciones de formato de archivo y guardado al guardar un archivo.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL.
+Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La configuración del compilador también determina la versión de la función. Si se define Unicode, la llamada de función se resuelve como D3DXSaveMeshToXW. De lo contrario, la llamada de función se resuelve como D3DXSaveMeshToXA porque se usan cadenas ANSI.
+La configuración del compilador también determina la versión de la función. Si se define Unicode, la llamada a la función se resuelve en D3DXSaveMeshToXW. De lo contrario, la llamada de función se resuelve en D3DXSaveMeshToXA porque se usan cadenas ANSI.
 
-El formato de archivo predeterminado es binario; sin embargo, si se especifica un archivo como archivo binario y de texto, se guardará como un archivo de texto. Independientemente del formato de archivo, también puede usar el formato comprimido para reducir el tamaño del archivo.
+El formato de archivo predeterminado es binario; sin embargo, si se especifica un archivo como un archivo binario y un archivo de texto, se guardará como un archivo de texto. Independientemente del formato de archivo, también puede usar el formato comprimido para reducir el tamaño del archivo.
 
-El siguiente es un ejemplo de código típico de cómo usar esta función.
+A continuación se muestra un ejemplo de código típico de cómo usar esta función.
 
 
 ```
@@ -155,8 +155,8 @@ D3DXSaveMeshToX(
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

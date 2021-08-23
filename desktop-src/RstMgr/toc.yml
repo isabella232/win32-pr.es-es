@@ -1,7 +1,7 @@
 - name: Administrador de reinicio
   href: restart-manager-portal.md
   items:
-    - name: Acerca del administrador de reinicio
+    - name: Acerca del Administrador de reinicio
       href: about-restart-manager.md
       items:
         - name: Directrices para aplicaciones y servicios
@@ -13,26 +13,26 @@
               href: guidelines-for-services.md
             - name: Servicios críticos del sistema
               href: critical-system-services.md
-    - name: Uso del administrador de reinicio
+    - name: Uso del Administrador de reinicio
       href: using-restart-manager.md
       items:
-        - name: Uso del administrador de reinicio con un instalador principal
+        - name: Usar el Administrador de reinicio con un instalador principal
           href: using-restart-manager-with-a-primary-installer.md
-        - name: Uso del administrador de reinicio con un instalador secundario
+        - name: Usar el Administrador de reinicio con un instalador secundario
           href: using-restart-manager-with-a-secondary-installer.md
-        - name: Obtención del estado de una operación del administrador de reinicio
+        - name: Obtener el estado de una operación del Administrador de reinicio
           href: getting-the-status-of-a-restart-manager-operation.md
-        - name: Cancelando la operación del administrador de reinicio actual
+        - name: Cancelación de la operación del administrador de reinicio actual
           href: canceling-the-current-restart-manager-operation.md
-    - name: Referencia del administrador de reinicio
+    - name: Referencia del Administrador de reinicio
       href: restart-manager-reference.md
       items:
-        - name: Funciones de devolución de llamada del administrador de reinicio
+        - name: Funciones de devolución de llamada del Administrador de reinicio
           href: callback-functions.md
           items:
             - name: RM_WRITE_STATUS_CALLBACK
               href: /windows/desktop/api/restartmanager/nc-restartmanager-rm_write_status_callback
-        - name: Enumeraciones del administrador de reinicio
+        - name: Enumeraciones del Administrador de reinicio
           href: enumerations.md
           items:
             - name: RM_APP_STATUS
@@ -47,7 +47,7 @@
               href: /windows/win32/api/RestartManager/ne-restartmanager-rm_reboot_reason
             - name: RM_SHUTDOWN_TYPE
               href: /windows/win32/api/RestartManager/ne-restartmanager-rm_shutdown_type
-        - name: Funciones del administrador de reinicio
+        - name: Funciones del Administrador de reinicio
           href: functions.md
           items:
             - name: RmAddFilter
@@ -72,7 +72,7 @@
               href: /windows/desktop/api/RestartManager/nf-restartmanager-rmshutdown
             - name: RmStartSession
               href: /windows/desktop/api/RestartManager/nf-restartmanager-rmstartsession
-        - name: Reinicio de las estructuras de administrador
+        - name: Reiniciar estructuras del administrador
           href: structures.md
           items:
             - name: RM_FILTER_INFO

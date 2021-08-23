@@ -1,12 +1,12 @@
 ---
-title: Método GetVirtualDesktopState de la clase Win32_RDMSVirtualDesktop
+title: Método GetVirtualDesktopState de la Win32_RDMSVirtualDesktop clase
 description: Recupera el estado del escritorio virtual.
 ms.assetid: 176096ba-2b5f-428c-9216-02e3e97be64e
 ms.tgt_platform: multiple
 keywords:
 - Método GetVirtualDesktopState Servicios de Escritorio remoto
-- Método GetVirtualDesktopState Servicios de Escritorio remoto, clase Win32_RDMSVirtualDesktop
-- Win32_RDMSVirtualDesktop de clase Servicios de Escritorio remoto, método GetVirtualDesktopState
+- Método GetVirtualDesktopState Servicios de Escritorio remoto , Win32_RDMSVirtualDesktop clase
+- Win32_RDMSVirtualDesktop clase Servicios de Escritorio remoto , método GetVirtualDesktopState
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 674e9646f0f41166fbfdc9e4ad35df697023329a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bb59cf90f436d3d44c20daa2a7f8146f688d012310253bafcf0185fe804b89fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105685935"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059473"
 ---
-# <a name="getvirtualdesktopstate-method-of-the-win32_rdmsvirtualdesktop-class"></a>Método GetVirtualDesktopState de la \_ clase RDMSVirtualDesktop de Win32
+# <a name="getvirtualdesktopstate-method-of-the-win32_rdmsvirtualdesktop-class"></a>Método GetVirtualDesktopState de la clase \_ RDMSVirtualDesktop de Win32
 
 Recupera el estado del escritorio virtual.
 
@@ -43,12 +43,12 @@ uint32 GetVirtualDesktopState(
 
 <dl> <dt>
 
-*VMState* \[ enuncia\]
+*VMState* \[ out\]
 </dt> <dd>
 
 Recibe un valor que indica el estado de la máquina virtual.
 
-Este parámetro puede ser probable que se establezca en uno de los siguientes valores:
+Este parámetro puede establecerse en uno de los siguientes valores:
 
 <dt>
 
@@ -87,7 +87,7 @@ La máquina virtual está desactivada.
 
 <span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>
 
-<span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>En **pausa** (32768)
+<span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>**En pausa** (32768)
 
 
 </dt> <dd>
@@ -109,7 +109,7 @@ La máquina virtual está en un estado guardado.
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-<span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>**Inicio** (32770)
+<span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>**A partir** de (32770)
 
 
 </dt> <dd>
@@ -136,7 +136,7 @@ La máquina virtual está guardando su estado.
 
 </dt> <dd>
 
-Se está apagando la máquina virtual.
+La máquina virtual se está apagando.
 
 </dd> <dt>
 
@@ -147,24 +147,24 @@ Se está apagando la máquina virtual.
 
 </dt> <dd>
 
-La máquina virtual se está pausando.
+La máquina virtual está en pausa.
 
 </dd> <dt>
 
 <span id="Resuming"></span><span id="resuming"></span><span id="RESUMING"></span>
 
-<span id="Resuming"></span><span id="resuming"></span><span id="RESUMING"></span>**Reanudar** (32777)
+<span id="Resuming"></span><span id="resuming"></span><span id="RESUMING"></span>**Reanudación** (32777)
 
 
 </dt> <dd>
 
-La máquina virtual se está reanudando de un estado pausado.
+La máquina virtual se reanuda desde un estado en pausa.
 
 </dd> </dl> </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error de WMI.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error wmi.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -174,8 +174,8 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                              |
-| Espacio de nombres<br/>                | RDMs raíz de \\ CIMv2 \\<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Rdms \\ de CIMv2 \\ raíz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -184,7 +184,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 
 <dl> <dt>
 
-[**Win32 \_ RDMSVirtualDesktop**](win32-rdmsvirtualdesktop.md)
+[**RDMSVirtualDesktop de Win32 \_**](win32-rdmsvirtualdesktop.md)
 </dt> </dl>
 
  

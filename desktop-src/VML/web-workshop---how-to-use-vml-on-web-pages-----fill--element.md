@@ -1,13 +1,13 @@
 ---
 title: Uso del elemento de relleno
-description: En este artículo se describe el uso del elemento Fill de VML, una característica que está en desuso a partir de Windows Internet Explorer 9.
+description: En este artículo se describe el uso del elemento Fill de VML, una característica que está en desuso a partir Windows Internet Explorer 9.
 ms.assetid: ed36601d-2e90-412e-ac3f-58324fac300d
 keywords:
 - Taller web, elemento fill
 - diseñar páginas web, elemento fill
 - Lenguaje de marcado de vectores (VML),elemento fill
 - VML (Lenguaje de marcado de vectores),elemento fill
-- gráficos vectoriales, elemento fill
+- vector graphics,fill element
 - elemento fill
 - Elementos VML, fill
 - Formas de VML, elemento fill
@@ -17,7 +17,7 @@ keywords:
 - Formas de VML, relleno de degradado
 - formas rellenas de degradado
 - Lenguaje de marcado de vectores (VML), relleno de patrón
-- VML (Lenguaje de marcado de vectores), relleno de patrón
+- VML (Lenguaje de marcado de vectores), relleno de patrones
 - gráficos vectoriales, relleno de patrón
 - Formas de VML, relleno de patrón
 - formas rellenas de patrones
@@ -28,23 +28,23 @@ keywords:
 - formas rellenas de imágenes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ecb243e4896443fd36a1b22c2ac3a0ab0bedfb2b
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 54f6b3e0c92989e037ebf9b95b7bd726134b9099dd5d3755ff4588f7e970586c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407798"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119057305"
 ---
 # <a name="using-the-fill-element"></a>Uso del elemento de relleno
 
-En este tema se describe VML, una característica que está en desuso a partir de Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
 > A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
  
 
-Como ha aprendido, puede usar el atributo de propiedad **fillcolor** de un elemento de forma predefinido( como , , , , , , ) para especificar el color que se usa para rellenar la `<oval>` `<line>` `<polyline>` `<curve>` `<rect>` `<roundrect>` `<arc>` forma. En este tema, se ilustrará cómo dibujar una forma que se rellena con efectos más avanzados.
+Como ha aprendido, puede usar el atributo de propiedad **fillcolor** de un elemento de forma predefinido, como , , , , , , , para especificar el color que se usa para rellenar la `<oval>` `<line>` `<polyline>` `<curve>` `<rect>` `<roundrect>` `<arc>` forma. En este tema, se ilustrará cómo dibujar una forma que se rellena con efectos más avanzados.
 
 Puede colocar el sub element dentro de , o , o cualquier elemento de forma predefinido para `<fill>` describir cómo rellenar la `<shape>` `<shapetype>` forma. A continuación, puede usar los atributos de propiedad del sub elemento para personalizar el efecto de relleno, como relleno de `<fill>` [degradado,](#gradient-fill)relleno [de](#pattern-fill)patrón, relleno [de imagen.](#picture-fill)
 
@@ -56,7 +56,7 @@ En este tema:
 
 ## <a name="gradient-fill"></a>Relleno de degradado
 
-Para dibujar una forma rellena de  degradado, puede establecer el atributo de propiedad de tipo del sub elemento en "gradient" o "gradientRadial" y, a continuación, especificar otros atributos de propiedad del sub elemento, como el método `<fill>` `<fill>` , **color2**, **el foco** y el **ángulo**.
+Para dibujar una forma rellena de  degradado, puede establecer el atributo de propiedad type del sub element en "gradient" o "gradientRadial" y, a continuación, especificar otros atributos de propiedad del sub element, como el método `<fill>` `<fill>` , **color2**,  **focus** y **angle**.
 
 **Ejemplos:**
 
@@ -109,7 +109,7 @@ type="gradient" />
 
 
 
-Para crear una forma rellena de degradado desde la  diagonal hacia arriba, puede establecer el atributo de propiedad de ángulo en angle="-135", como se muestra en la siguiente representación de VML:
+Para crear una forma que se rellena con degradado  desde la diagonal hacia arriba, puede establecer el atributo de propiedad de ángulo en angle="-135", como se muestra en la siguiente representación de VML:
 
 ![dialgonalup1.gif (5816 bytes)](images/dialgonalup1.gif)
 
@@ -177,7 +177,7 @@ Para crear una forma que se rellena con  una imagen de patrón, puede especifica
 
 
 
-Si señala el atributo **de propiedad src** a un archivo de patrón diferente, puede crear una forma que se rellena con un patrón diferente. Además, puede cambiar el color especificando un valor diferente para el atributo de propiedad **fillcolor** o **color2,** como se muestra en la siguiente representación de VML:
+Si apunta el atributo **de propiedad src** a un archivo de patrón diferente, puede crear una forma que se rellena con un patrón diferente. Además, puede cambiar el color especificando un valor diferente para el atributo de propiedad **fillcolor** o **color2,** como se muestra en la siguiente representación de VML:
 
 ![pattern2.gif (831 bytes)](images/pattern2.gif)
 
@@ -196,7 +196,7 @@ color2="blue" />
 
 ## <a name="picture-fill"></a>Relleno de imagen
 
-Para dibujar una forma rellena de  imagen, puede establecer el atributo de propiedad type del sub elemento en "frame" y, a continuación, especificar otros atributos de propiedad del sub elemento, como `<fill>` `<fill>` **src** y **color2.**
+Para dibujar una forma rellena de  imagen, puede establecer el atributo de propiedad type del sub elemento en "frame" y, a continuación, especificar otros atributos de propiedad del sub element, como `<fill>` `<fill>` **src** y **color2.**
 
 **Ejemplos:**
 
@@ -217,7 +217,7 @@ strokeweight="2.5pt">
 
 Puede crear fácilmente una forma que se rellena con una imagen diferente señalando el atributo de propiedad **src** a otro archivo.
 
-Para obtener más información sobre este elemento, vea la [especificación de VML](https://www.w3.org/TR/NOTE-VML#-toc416858394) .
+Para obtener más información sobre este elemento, consulte la [especificación de VML](https://www.w3.org/TR/NOTE-VML#-toc416858394) .
 
  
 

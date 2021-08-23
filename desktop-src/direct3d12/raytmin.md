@@ -1,5 +1,5 @@
 ---
-description: Un valor de tipo float que representa el punto inicial paramétrico actual del rayo.
+description: Un valor float que representa el punto inicial paramétrico actual para el rayo.
 ms.assetid: ''
 title: RayTMin
 ms.localizationpriority: low
@@ -12,16 +12,16 @@ api_name:
 - RayTMin
 api_type:
 - NA
-ms.openlocfilehash: 00db0eb46e8c011e5b31f773679e19ca6dd4a7a0
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5429574480cfda071dfec93cea771211bab578bdaecb4513c76f43c4d820b22b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705339"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118989485"
 ---
 # <a name="raytmin"></a>RayTMin
 
-Un valor de tipo float que representa el punto inicial paramétrico actual del rayo. 
+Un valor float que representa el punto inicial paramétrico actual para el rayo. 
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -30,16 +30,16 @@ float RayTMin();
 
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**RayTMin** define el punto inicial del rayo según la fórmula siguiente: Origin + (Direction * RayTMin).  El *origen* y la *Dirección* pueden estar en el espacio de objeto o en el mundo, lo que da como resultado un punto de partida de un mundo o un espacio de objeto.
+**RayTMin define** el punto inicial del rayo según la fórmula siguiente: Origin + (Direction * RayTMin).  *El* origen *y la* dirección pueden estar en el espacio del mundo o del objeto, lo que da como resultado un mundo o un punto de partida del espacio de objetos.
 
-**RayTMin** se especifica en la llamada a [**TraceRay**](traceray-function.md)y es constante mientras dure la llamada.
-
-
+**RayTMin se** especifica en la llamada a [**TraceRay**](traceray-function.md)y es constante mientras dura esa llamada.
 
 
-Se puede llamar a esta función desde los siguientes tipos de sombreador raytracing:
+
+
+Se puede llamar a esta función desde los siguientes tipos de sombreador de raytracción:
 
 * [**Sombreador de cualquier acierto**](any-hit-shader.md)
 * [**Sombreador del acierto más cercano**](closest-hit-shader.md)

@@ -4,7 +4,7 @@ description: Transponer y establecer una matriz de matrices de punto flotante.
 ms.assetid: 08223022-5e77-4a84-9b68-b9b0c9a02270
 keywords:
 - Método SetMatrixTransposeArray Direct3D 11
-- Método SetMatrixTransposeArray Direct3D 11, interfaz ID3DX11EffectMatrixVariable
+- Método SetMatrixTransposeArray Direct3D 11 , interfaz ID3DX11EffectMatrixVariable
 - Interfaz ID3DX11EffectMatrixVariable Direct3D 11, método SetMatrixTransposeArray
 topic_type:
 - apiref
@@ -78,12 +78,12 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La creación de una matriz reorganizará el orden de los datos del orden de las columnas de fila al orden de las filas de columna (o viceversa).
+Al cambiar una matriz, se reorganizará el orden de los datos del orden de las columnas de fila al orden de las filas de columna (o viceversa).
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -94,7 +94,7 @@ La creación de una matriz reorganizará el orden de los datos del orden de las 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de efectos 11 está disponible en línea como origen compartido).</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 

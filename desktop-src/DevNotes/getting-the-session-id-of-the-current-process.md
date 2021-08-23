@@ -13,7 +13,7 @@ ms.locfileid: "118955984"
 ---
 # <a name="getting-the-session-id-of-the-current-process"></a>Obtención del identificador de sesión del proceso actual
 
-\[Las direcciones de memoria especificadas por este código de ejemplo pueden cambiar en futuras versiones de Windows. Para asegurarse de que la aplicación seguirá funcionando correctamente en el futuro, la aplicación debe llamar a [**GetCurrentProcessId**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getcurrentprocessid) y, a continuación, [**a ProcessIdToSessionId**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-processidtosessionid) en lugar del siguiente código de ejemplo.\]
+\[Las direcciones de memoria especificadas por este código de ejemplo pueden cambiar en futuras versiones de Windows. Para asegurarse de que la aplicación seguirá funcionando correctamente en el futuro, la aplicación debe llamar a [**GetCurrentProcessId**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getcurrentprocessid) y luego a [**ProcessIdToSessionId**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-processidtosessionid) en lugar del código de ejemplo siguiente.\]
 
 El código de ensamblado x86 de ejemplo siguiente obtiene el identificador de sesión de Terminal Services asociado al proceso actual.
 

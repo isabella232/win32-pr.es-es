@@ -1,11 +1,11 @@
 ---
-title: Objeto TriggerCollection (Windows. UI. Xaml. h)
-description: Objeto de scripting que se utiliza para agregar, quitar y recuperar los desencadenadores de una tarea.
+title: Objeto TriggerCollection (Windows.ui.xaml.h)
+description: Objeto de scripting que se usa para agregar, quitar y recuperar los desencadenadores de una tarea.
 ms.assetid: 25d89451-48b6-4ed9-9abd-19d7e8bc1fea
 keywords:
-- desencadenadores Programador de tareas, objeto de colección de desencadenador
-- Objeto TriggerCollection Programador de tareas
-- Programador de tareas de objeto TriggerCollection, descrito
+- desencadenadores Programador de tareas , desencadenar objeto de colección
+- Desencadenador de objetos TriggerCollection Programador de tareas
+- Objeto TriggerCollection Programador de tareas , descrito
 topic_type:
 - apiref
 api_name:
@@ -16,35 +16,35 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 29f7288d8db0b56fc9cc8b3de7ace8c10c13959a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c7fd103918bc3898e56a3041221c9c70c9ede9aea5df4843cd984f2502279014
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150090"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001943"
 ---
 # <a name="triggercollection-object"></a>Objeto TriggerCollection
 
-Objeto de scripting que se utiliza para agregar, quitar y recuperar los desencadenadores de una tarea.
+Objeto de scripting que se usa para agregar, quitar y recuperar los desencadenadores de una tarea.
 
 ## <a name="members"></a>Miembros
 
-El objeto **TriggerCollection** tiene estos tipos de miembros:
+El **objeto TriggerCollection** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-El objeto **TriggerCollection** tiene estos métodos.
+El **objeto TriggerCollection** tiene estos métodos.
 
 
 
 | Método                                     | Descripción                                                                                |
 |:-------------------------------------------|:-------------------------------------------------------------------------------------------|
-| [**Claridad**](triggercollection-clear.md)   | Borra todos los desencadenadores de la colección.<br/>                                        |
-| [**A**](triggercollection-create.md) | Crea un nuevo desencadenador para la tarea.<br/>                                             |
-| [**Retirar**](triggercollection-remove.md) | Quita el desencadenador especificado de la colección de desencadenadores utilizada por la tarea.<br/> |
+| [**Borrar**](triggercollection-clear.md)   | Borra todos los desencadenadores de la colección.<br/>                                        |
+| [**Crear**](triggercollection-create.md) | Crea un nuevo desencadenador para la tarea.<br/>                                             |
+| [**Quitar**](triggercollection-remove.md) | Quita el desencadenador especificado de la colección de desencadenadores usados por la tarea.<br/> |
 
 
 
@@ -52,28 +52,28 @@ El objeto **TriggerCollection** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-El objeto **TriggerCollection** tiene estas propiedades.
+El **objeto TriggerCollection** tiene estas propiedades.
 
 
 
 | Propiedad                                            | Tipo de acceso          | Descripción                                                |
 |:----------------------------------------------------|:---------------------|:-----------------------------------------------------------|
-| [**Contabiliza**](triggercollection-count.md)<br/> | Solo lectura<br/> | Obtiene el número de desencadenadores de la colección.<br/>  |
+| [**Count**](triggercollection-count.md)<br/> | Solo lectura<br/> | Obtiene el número de desencadenadores de la colección.<br/>  |
 | [**Elemento**](triggercollection-item.md)<br/>   | Solo lectura<br/> | Obtiene el desencadenador especificado de la colección.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Al leer o escribir XML para una tarea, los desencadenadores de la tarea se especifican en el elemento [**triggers**](taskschedulerschema-triggers-tasktype-element.md) del esquema de programador de tareas.
+Al leer o escribir XML para una tarea, los desencadenadores de la tarea se especifican en el elemento [**Triggers**](taskschedulerschema-triggers-tasktype-element.md) del Programador de tareas esquema.
 
-Para obtener información acerca de cada tipo de desencadenador, consulte [tipos de desencadenador](trigger-types.md).
+Para obtener información sobre cada tipo de desencadenador, vea [Tipos de desencadenador.](trigger-types.md)
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener más información y código de ejemplo de este objeto de scripting, vea [ejemplo de desencadenador de tiempo (scripting)](time-trigger-example--scripting-.md).
+Para obtener más información y código de ejemplo para este objeto de scripting, vea [Ejemplo de desencadenador de tiempo (scripting).](time-trigger-example--scripting-.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,10 +81,10 @@ Para obtener más información y código de ejemplo de este objeto de scripting,
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                               |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                         |
-| Encabezado<br/>                   | <dl> <dt>Windows. UI. Xaml. h</dt> </dl> |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl>      |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                               |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                         |
+| Header<br/>                   | <dl> <dt>Windows.ui.xaml.h</dt> </dl> |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl>      |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl>      |
 
 
@@ -93,7 +93,7 @@ Para obtener más información y código de ejemplo de este objeto de scripting,
 
 <dl> <dt>
 
-[**Activado**](trigger.md)
+[**detonante**](trigger.md)
 </dt> </dl>
 
  

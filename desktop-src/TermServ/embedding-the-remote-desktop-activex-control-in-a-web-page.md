@@ -1,20 +1,20 @@
 ---
-title: Incrustar el control ActiveX Escritorio remoto en una página web
-description: Ejemplo que muestra el uso de las interfaces que admiten scripts.
+title: Inserción del control Escritorio remoto ActiveX en una página web
+description: Ejemplo que muestra el uso de las interfaces que pueden incluirse en scripts.
 ms.assetid: fad0f81f-bb04-4900-aeb8-0be503efa591
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d180c6ed95bc0f75f2f10305f00dc1d63be25e80
-ms.sourcegitcommit: 3e70ae762629e244028b437420ed50b5850db4e3
+ms.openlocfilehash: c8cb5fffe6bed04d99fcfac7d48f28300c3714affa3ea1df25bda27334988752
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "103789028"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001573"
 ---
-# <a name="embedding-the-remote-desktop-activex-control-in-a-webpage"></a>Incrustar el control ActiveX Escritorio remoto en una página web
+# <a name="embedding-the-remote-desktop-activex-control-in-a-webpage"></a>Inserción del control Escritorio remoto ActiveX en una página web
 
-Puede incrustar el Escritorio remoto control ActiveX en una página web mediante código similar al siguiente.
+Puede insertar el control Escritorio remoto ActiveX en una página web mediante código similar al siguiente.
 
 
 ```HTML
@@ -466,18 +466,18 @@ end sub
 
 
 
-El CLSID es para el control ActiveX que se hospeda en Conexión a Escritorio remoto (RDP) 6,0. Este control ActiveX implementa [**IMsRdpClient**](imsrdpclient-interface.md).
+EL CLSID es para el control ActiveX que hospeda Conexión a Escritorio remoto (RDP) 6.0. Este ActiveX implementa [**IMsRdpClient**](imsrdpclient-interface.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Usar el control ActiveX Escritorio remoto](using-remote-desktop-web-connection.md)
+[Uso del control Escritorio remoto ActiveX control](using-remote-desktop-web-connection.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

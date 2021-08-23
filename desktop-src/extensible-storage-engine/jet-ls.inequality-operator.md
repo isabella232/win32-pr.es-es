@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_LS. Operador de desigualdad'
+description: 'Más información sobre: JET_LS. Operador de desigualdad'
 title: JET_LS. Operador de desigualdad
 TOCTitle: 'Inequality operator '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_LS.op_Inequality(Microsoft.Isam.Esent.Interop.JET_LS,Microsoft.Isam.Esent.Interop.JET_LS)
@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: da167f0deda8254d279e7d81c7219b6e9920673f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d299034b167059fb5dda11dd64a3d193b18dc80749ea4ed1bd26853ab152ef6a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083053"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118979841"
 ---
 # <a name="jet_lsinequality-operator"></a>JET_LS. Operador de desigualdad
 
 Determina si dos instancias especificadas de JET_LS no son iguales.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,29 +64,29 @@ public static bool operator !=(
 
 #### <a name="parameters"></a>Parámetros
 
-  - LHS  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_LS](./jet-ls-structure.md)  
+  - Lhs  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_LS](./jet-ls-structure.md)  
     
     Primera instancia que se va a comparar.
 
 <!-- end list -->
 
   - rhs  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_LS](./jet-ls-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_LS](./jet-ls-structure.md)  
     
     Segunda instancia que se va a comparar.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
-True si las dos instancias de no son iguales.  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
+True si las dos instancias no son iguales.  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_LS](./jet-ls-structure.md)
+[JET_LS estructura](./jet-ls-structure.md)
 
-[Miembros de JET_LS](./jet-ls-members.md)
+[JET_LS miembros](./jet-ls-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

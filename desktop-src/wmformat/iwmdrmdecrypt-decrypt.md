@@ -1,11 +1,11 @@
 ---
-title: Método de descifrado IWMDRMDecrypt (wmdrmsdk. h)
-description: El método de descifrado descifra un búfer de datos en contexto.
+title: Método IWMDRMDecrypt Decrypt (Wmdrmsdk.h)
+description: El método Decrypt descifra un búfer de datos en su lugar.
 ms.assetid: ca0a5b2f-d25f-423e-8956-fca264399083
 keywords:
-- Método de descifrado formato de Windows Media
-- Método de descifrado formato de Windows Media, interfaz IWMDRMDecrypt
-- Interfaz IWMDRMDecrypt formato de Windows Media, descifrar método
+- Descifrar formato multimedia de windows del método
+- Descifrar el método windows Media Format , IWMDRMDecrypt (interfaz)
+- IWMDRMDecrypt interfaz windows Media Format , Decrypt (método)
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6eb3c1437bc4b4d2f442c61e54f238f176adf66b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7be82ec976da39103698b93a09b3d5235c8c8ee712783ca8284dc7b18c6a8a27
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718612"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119027758"
 ---
-# <a name="iwmdrmdecryptdecrypt-method"></a>IWMDRMDecrypt::D método ECRYPT
+# <a name="iwmdrmdecryptdecrypt-method"></a>IWMDRMDecrypt::D ecrypt (método)
 
-El método de **descifrado** descifra un búfer de datos en contexto.
+El **método Decrypt** descifra un búfer de datos en su lugar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,33 +47,33 @@ HRESULT Decrypt(
 *pbData* \[ in, out\]
 </dt> <dd>
 
-Datos que se van a descifrar. Si el método se ejecuta correctamente, estos datos se descifran en la devolución.
+Datos que se descifrarán. Si el método se realiza correctamente, estos datos se descifran en la devolución.
 
 </dd> <dt>
 
-*cbData* \[ de\]
+*cbData* \[ En\]
 </dt> <dd>
 
 Tamaño de los datos en bytes.
 
 </dd> <dt>
 
-*pWMCryptoData* \[ de\]
+*pWMCryptoData* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura [**WMDRMCryptoData**](wmdrmcryptodata.md) que contiene parámetros adicionales. Puede ser **null** si el contenido se cifró con los parámetros predeterminados.
+Puntero a una [**estructura WMDRMCryptoData**](wmdrmcryptodata.md) que contiene parámetros adicionales. Puede ser **NULL** si el contenido se ha cifrado con los parámetros predeterminados.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 
@@ -89,7 +89,7 @@ Ninguno.
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 
@@ -97,7 +97,7 @@ Ninguno.
 
 <dl> <dt>
 
-[**Interfaz IWMDRMDecrypt**](iwmdrmdecrypt.md)
+[**IWMDRMDecrypt (Interfaz)**](iwmdrmdecrypt.md)
 </dt> <dt>
 
 [**WMDRMCryptoData**](wmdrmcryptodata.md)

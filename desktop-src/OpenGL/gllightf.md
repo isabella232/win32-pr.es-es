@@ -1,9 +1,9 @@
 ---
-title: función glLightf (GL. h)
-description: La función glLightf devuelve los valores de los parámetros de origen de la luz.
+title: Función glLightf (Gl.h)
+description: La función glLightf devuelve valores de parámetros de origen claro.
 ms.assetid: d9f93fd9-6674-486f-a3fc-c10255dd37e7
 keywords:
-- glLightf (función) OpenGL
+- Función glLightf OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 099490461f5fbf6feb009e98c0228165938326d3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cde2bbee996183ad39067aed3b98a64dd5abb40f87c6746d7dda305bdb0e7438
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119012113"
 ---
-# <a name="gllightf-function"></a>glLightf función)
+# <a name="gllightf-function"></a>función glLightf
 
-La función **glLightf** devuelve los valores de los parámetros de origen de la luz.
+La **función glLightf** devuelve valores de parámetros de origen claro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,22 +45,22 @@ void WINAPI glLightf(
 *light* 
 </dt> <dd>
 
-Identificador de una luz. El número de posibles luces depende de la implementación, pero se admiten al menos ocho luces. Se identifican por nombres simbólicos con el formato GL \_ Light *i* , donde *i* es un valor: 0 a las \_ \_ luces Max de GL-1.
+Identificador de una luz. El número de luces posibles depende de la implementación, pero se admiten al menos ocho luces. Se identifican mediante nombres simbólicos de la forma GL \_ LIGHT *i,* donde *i* es un valor: 0 a GL \_ MAX LIGHTS - \_ 1.
 
 </dd> <dt>
 
-*PName* 
+*pname* 
 </dt> <dd>
 
-Parámetro de origen de la luz de un solo valor para *Light*. Se aceptan los siguientes nombres simbólicos.
+Parámetro de origen de luz de un solo valor para *la luz*. Se aceptan los siguientes nombres simbólicos.
 
 
 
 | Value                                                                                                                                                                                                                                                                                                                                               | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="GL_SPOT_EXPONENT"></span><span id="gl_spot_exponent"></span><dl> <dt>**exponente de la zona de contabilidad \_ \_**</dt> </dl>                                                                                                                                                                             | El parámetro *param* es un valor de punto flotante único que especifica la distribución de la intensidad de la luz. Los valores de punto flotante se asignan directamente. Solo se aceptan los valores del intervalo comprendido entre \[ 0 y 128 \] . <br/> La intensidad de la luz efectiva se atenúa por el coseno del ángulo entre la dirección de la luz y la dirección de la luz hasta el vértice que se ilumina, elevado a la potencia del exponente del punto. Por lo tanto, los exponentes más altos producen una fuente de luz más enfocada, independientemente del ángulo de corte puntual. El exponente de color predeterminado es 0, lo que da lugar a una distribución ligera uniforme.<br/> |
-| <span id="GL_SPOT_CUTOFF"></span><span id="gl_spot_cutoff"></span><dl> <dt>**límite de la zona de contabilidad \_ \_**</dt> </dl>                                                                                                                                                                                   | El parámetro *param* es un valor de punto flotante único que especifica el ángulo de propagación máximo de una fuente de luz. Los valores de punto flotante se asignan directamente. Solo se aceptan los valores del intervalo \[ 0, 90 \] y el valor especial 180. <br/> Si el ángulo entre la dirección de la luz y la dirección desde la luz hasta el vértice que se ilumina es mayor que el ángulo límite de la zona, la luz se enmascara completamente. De lo contrario, su intensidad se controla mediante el exponente puntual y los factores de atenuación. El límite de la luz predeterminada es 180, lo que da lugar a una distribución ligera uniforme.<br/>       |
-| <span id="GL_CONSTANT_ATTENUATION__GL_LINEAR_ATTENUATION__GL_QUADRATIC_ATTENUATION"></span><span id="gl_constant_attenuation__gl_linear_attenuation__gl_quadratic_attenuation"></span><dl> <dt>**\_ \_ atenuación de constantes de contabilidad \_ , \_ atenuación lineal de contabilidad, \_ atenuación cuadrática de GL \_**</dt> </dl> | El parámetro *param* es un valor de punto flotante único que especifica uno de los tres factores de atenuación de luz. Los valores de punto flotante se asignan directamente. Solo se aceptan valores no negativos. <br/> Si la luz es posicional, en lugar de direccional, su intensidad se atenúa por el recíproco de la suma de: el factor constante, el factor lineal multiplicado por la distancia entre la luz y el vértice que se está iluminando, y el factor cuadrático multiplicado por el cuadrado de la misma distancia. Los factores de atenuación predeterminados son (1, 0, 0), lo que da lugar a no atenuación.<br/>                   |
+| <span id="GL_SPOT_EXPONENT"></span><span id="gl_spot_exponent"></span><dl> <dt>**GL \_ SPOT \_ EXPONENT**</dt> </dl>                                                                                                                                                                             | El *parámetro param* es un valor de punto flotante único que especifica la distribución de intensidad de la luz. Los valores de punto flotante se asignan directamente. Solo se aceptan los valores \[ del intervalo 0, 128. \] <br/> La intensidad de la luz efectiva se atenua mediante el coseno del ángulo entre la dirección de la luz y la dirección desde la luz hasta el vértice que se enciende, elevado a la potencia del exponente de spot. Por lo tanto, los exponentes de punto más altos tienen como resultado una fuente de luz más centrada, independientemente del ángulo de límite de spot. El exponente de spot predeterminado es 0, lo que da lugar a una distribución de luz uniforme.<br/> |
+| <span id="GL_SPOT_CUTOFF"></span><span id="gl_spot_cutoff"></span><dl> <dt>**GL \_ SPOT \_ CUTOFF**</dt> </dl>                                                                                                                                                                                   | El *parámetro param* es un valor de punto flotante único que especifica el ángulo de propagación máximo de una fuente de luz. Los valores de punto flotante se asignan directamente. Solo se aceptan los valores \[ del intervalo 0, 90 y \] el valor especial 180. <br/> Si el ángulo entre la dirección de la luz y la dirección desde la luz hasta el vértice que se va a encender es mayor que el ángulo de corte de spot, la luz se enmascara completamente. De lo contrario, su intensidad se controla mediante el exponente de spot y los factores de atenuación. El límite de spot predeterminado es 180, lo que da lugar a una distribución de luz uniforme.<br/>       |
+| <span id="GL_CONSTANT_ATTENUATION__GL_LINEAR_ATTENUATION__GL_QUADRATIC_ATTENUATION"></span><span id="gl_constant_attenuation__gl_linear_attenuation__gl_quadratic_attenuation"></span><dl> <dt>**ATENUACIÓN \_ \_ CONSTANTE DE GL, \_ ATENUACIÓN LINEAL DE \_ GL, \_ ATENUACIÓN \_ CUADRÁTICA DE GL**</dt> </dl> | El *parámetro param* es un valor de punto flotante único que especifica uno de los tres factores de atenuación de luz. Los valores de punto flotante se asignan directamente. Solo se aceptan valores negativos. <br/> Si la luz es posicional, en lugar de direccional, su intensidad se atenua por el recíproco de la suma de: el factor constante, el factor lineal multiplicado por la distancia entre la luz y el vértice que se va a encender, y el factor cuadrático multiplicado por el cuadrado de la misma distancia. Los factores de atenuación predeterminados son (1,0,0), lo que no produce atenuación.<br/>                   |
 
 
 
@@ -71,7 +71,7 @@ Parámetro de origen de la luz de un solo valor para *Light*. Se aceptan los sig
 *param* 
 </dt> <dd>
 
-Especifica el valor en el que se establecerá el parámetro *PName* de *luz* de origen de luz.
+Especifica el valor en el que  se *establecerá el parámetro pname* de la luz de origen de luz.
 
 </dd> </dl>
 
@@ -87,27 +87,27 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                                  | Significado                                                                                                                                                                                                                   |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_enumeración GL no válida \_**</dt> </dl>      | *Light* o *PName* no era un valor aceptado.<br/>                                                                                                                                                                  |
-| <dl> <dt>**\_valor no válido de GL \_**</dt> </dl>     | Se especificó un valor de exponente puntual fuera del intervalo \[ 0, 128 \] o el límite de la zona se especificó fuera del intervalo comprendido entre \[ 0 y 90 \] (excepto el valor especial 180), o bien se especificó un factor de atenuación negativo.<br/> |
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md).<br/>                                                                                     |
+| <dl> <dt>**ENUMERACIÓN \_ \_ NO VÁLIDA DE GL**</dt> </dl>      | *light* o *pname* no era un valor aceptado.<br/>                                                                                                                                                                  |
+| <dl> <dt>**VALOR \_ NO VÁLIDO DE \_ GL**</dt> </dl>     | Se especificó un valor de exponente de spot fuera del intervalo 0, 128 o se especificó un límite de spot fuera del intervalo 0, 90 (excepto para el valor especial \[ \] \[ 180) o se especificó un factor de atenuación \] negativo.<br/> |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/>                                                                                     |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **glLightf** establece el valor o los valores de los parámetros individuales de origen de la luz. El parámetro de *luz* asigna un nombre a la luz y es un nombre simbólico con el formato GL \_ Light *i*, donde 0 = *i* < las luces de contab \_ \_ .
+La **función glLightf** establece el valor o los valores de los parámetros de origen de luz individuales. El *parámetro light* nombra la luz y es un nombre simbólico de la forma GL LIGHT i , donde \_ 0 = i *<* GL MAX \_ \_ LIGHTS.
 
-El parámetro *PName* especifica uno de los parámetros de origen de la luz, de nuevo por nombre simbólico. El parámetro *param* es un valor único o un puntero a una matriz que contiene los nuevos valores.
+El *parámetro pname* especifica uno de los parámetros de origen claro, de nuevo por nombre simbólico. El *parámetro param* es un valor único o un puntero a una matriz que contiene los nuevos valores.
 
-El cálculo de iluminación está habilitado y deshabilitado mediante [**glEnable**](glenable.md) y [**glDisable**](gldisable.md) con iluminación de contabilidad de argumentos \_ . Cuando está habilitada la iluminación, las fuentes de luz que están habilitadas contribuyen al cálculo de iluminación. La fuente de luz *i* está habilitada y deshabilitada mediante **glEnable** y **glDisable** con el argumento GL \_ Light *i*.
+El cálculo de iluminación está habilitado y deshabilitado mediante [**glEnable**](glenable.md) y [**glDisable**](gldisable.md) con el argumento GL \_ LIGHTING. Cuando la iluminación está habilitada, las fuentes de luz habilitadas contribuyen al cálculo de la iluminación. La fuente *de luz i* está habilitada y deshabilitada mediante **glEnable** y **glDisable** con el argumento GL \_ LIGHT *i*.
 
-Siempre es el caso de GL \_ Light *i* = GL \_ LIGHT0 + *i*.
+Siempre es el caso de GL \_ LIGHT *i* = GL \_ LIGHT0 + *i*.
 
-Las siguientes funciones recuperan información relacionada con la función **glLightf** :
+Las siguientes funciones recuperan información relacionada con **la función glLightf:**
 
 [**glGetLight**](glgetlight.md)
 
-[**glIsEnabled**](glisenabled.md) con iluminación de GL de argumento \_
+[**glIsEnabled con**](glisenabled.md) el argumento GL \_ LIGHTING
 
 ## <a name="requirements"></a>Requisitos
 
@@ -117,8 +117,8 @@ Las siguientes funciones recuperan información relacionada con la función **gl
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

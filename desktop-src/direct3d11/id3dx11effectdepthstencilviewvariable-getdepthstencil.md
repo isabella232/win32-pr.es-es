@@ -1,11 +1,11 @@
 ---
-title: Método ID3DX11EffectDepthStencilViewVariable GetDepthStencil (D3dx11effect. h)
-description: Obtener un recurso de vista de estarcido de profundidad.
+title: Método ID3DX11EffectDepthStencilViewVariable GetDepthStencil (D3dx11effect.h)
+description: Obtenga un recurso depth-stencil-view.
 ms.assetid: 7d94d98b-7070-41ee-9a9d-fe848f8914f2
 keywords:
 - Método GetDepthStencil Direct3D 11
-- Método GetDepthStencil Direct3D 11, interfaz ID3DX11EffectDepthStencilViewVariable
-- Interfaz ID3DX11EffectDepthStencilViewVariable Direct3D 11, método GetDepthStencil
+- Método GetDepthStencil Direct3D 11 , interfaz ID3DX11EffectDepthStencilViewVariable
+- ID3DX11EffectDepthStencilViewVariable interface Direct3D 11 , GetDepthStencil method
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 49206f051922982ac77265e68fa3d7b7397d1348
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5d31b5a947afc9a1b92349b20bc5d075599a16d12abae0ac7d375e8bc0a0de89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104987121"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118989745"
 ---
-# <a name="id3dx11effectdepthstencilviewvariablegetdepthstencil-method"></a>ID3DX11EffectDepthStencilViewVariable:: GetDepthStencil (método)
+# <a name="id3dx11effectdepthstencilviewvariablegetdepthstencil-method"></a>Método ID3DX11EffectDepthStencilViewVariable::GetDepthStencil
 
-Obtener un recurso de vista de estarcido de profundidad.
+Obtenga un recurso depth-stencil-view.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,12 +56,12 @@ Dirección de un puntero a una interfaz de vista de galería de símbolos de pro
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -71,8 +71,8 @@ Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphi
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 
