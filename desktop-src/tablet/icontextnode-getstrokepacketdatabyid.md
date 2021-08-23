@@ -1,7 +1,7 @@
 ---
 description: Recupera una matriz que contiene los datos de propiedad del paquete para el trazo especificado.
 ms.assetid: 02db48b3-edc3-4ecb-8103-79312194937a
-title: 'IContextNode:: GetStrokePacketDataById (método) (IACom. h)'
+title: Método IContextNode::GetStrokePacketDataById (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: be2e9326e2ecb20afc652776c006c8ae989c7396
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f80ad2e4acc88f24a14e21f604eb17dbab51a5bdeca0fc90ffc3ca9beb99f1de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118967384"
 ---
-# <a name="icontextnodegetstrokepacketdatabyid-method"></a>IContextNode:: GetStrokePacketDataById (método)
+# <a name="icontextnodegetstrokepacketdatabyid-method"></a>IContextNode::GetStrokePacketDataById (método)
 
 Recupera una matriz que contiene los datos de propiedad del paquete para el trazo especificado.
 
@@ -41,7 +41,7 @@ HRESULT GetStrokePacketDataById(
 
 <dl> <dt>
 
-*strokeId* \[ de\]
+*strokeId* \[ En\]
 </dt> <dd>
 
 Identificador del trazo.
@@ -51,29 +51,29 @@ Identificador del trazo.
 *pStrokePacketDataCount* \[ in, out\]
 </dt> <dd>
 
-La longitud de la matriz de datos de paquetes.
+Longitud de la matriz de datos de paquetes.
 
 </dd> <dt>
 
-*pplStrokePacketData* \[ enuncia\]
+*pplStrokePacketData* \[ out\]
 </dt> <dd>
 
-Puntero a los datos del paquete del trazo.
+Puntero a los datos del paquete para el trazo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Caution]  
 > Para evitar una pérdida de memoria, use [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) para liberar la memoria de \* *pplStrokePacketData* cuando ya no necesite la información.
 
  
 
-*plStrokePacketData* contiene datos de paquetes para todos los puntos del trazo. Para obtener los tipos de datos de paquete incluidos para cada punto del trazo, use [**IContextNode:: GetStrokePacketDescriptionById**](icontextnode-getstrokepacketdescriptionbyid.md).
+*plStrokePacketData contiene* datos de paquetes para todos los puntos del trazo. Para obtener los tipos de datos de paquete incluidos para cada punto del trazo, use [**IContextNode::GetStrokePacketDescriptionById**](icontextnode-getstrokepacketdescriptionbyid.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,9 +81,9 @@ Para obtener una descripción de los valores devueltos, vea [clases e interfaces
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -98,7 +98,7 @@ Para obtener una descripción de los valores devueltos, vea [clases e interfaces
 [**IContextNode::GetStrokePacketDescriptionById**](icontextnode-getstrokepacketdescriptionbyid.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

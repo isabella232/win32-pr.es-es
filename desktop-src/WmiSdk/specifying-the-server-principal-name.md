@@ -1,28 +1,28 @@
 ---
-description: El servicio de autenticación Kerberos especifica el nombre de la entidad de seguridad del servidor para garantizar la identidad del equipo al que se está conectando.
+description: El servicio de autenticación Kerberos especifica el nombre principal del servidor para garantizar la identidad del equipo al que se conecta.
 ms.assetid: 3d58db28-2e69-4e27-9f27-61529abbf750
 ms.tgt_platform: multiple
-title: Especificar el nombre de la entidad de seguridad del servidor
+title: Especificar el nombre principal del servidor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a2f5aa4053b5ae7452e5f5e9c0ddcac15630ae5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dc8b3d05d6933653a7d2a1737d36f00f6ca65c39bd7739e5f2e9f4232eb507f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155849"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118816428"
 ---
-# <a name="specifying-the-server-principal-name"></a>Especificar el nombre de la entidad de seguridad del servidor
+# <a name="specifying-the-server-principal-name"></a>Especificar el nombre principal del servidor
 
-El servicio de autenticación Kerberos especifica el nombre de la entidad de seguridad del servidor para garantizar la identidad del equipo al que se está conectando. Especifique el nombre de la entidad de seguridad del servidor en la llamada al método de scripting [**SWbemLocator. ConnectServer**](swbemlocator-connectserver.md) proporcionando el nombre del equipo remoto. En C++, especifique el nombre de la entidad de seguridad del servidor en el parámetro *pServerPrincName* al llamar a [**CoSetProxyBlanket**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket) para el proxy. Para obtener más información, consulte [Conexión a WMI en un equipo remoto](connecting-to-wmi-on-a-remote-computer.md) (puede estar en inglés).
+El servicio de autenticación Kerberos especifica el nombre principal del servidor para garantizar la identidad del equipo al que se conecta. Especifique el nombre principal del servidor en la llamada al método de scripting [**SWbemLocator.ConnectServer,**](swbemlocator-connectserver.md) para lo que debe dar el nombre del equipo remoto. En C++, especifique el nombre principal del servidor en el *parámetro pServerPrincName* al llamar a [**CoSetProxyBlanket**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket) para el proxy. Para obtener más información, consulte [Conexión a WMI en un equipo remoto](connecting-to-wmi-on-a-remote-computer.md) (puede estar en inglés).
 
-Este parámetro es necesario para que Kerberos admita la autenticación mutua. Sin embargo, el uso del nombre de entidad de seguridad de servidor predeterminado no permite la autenticación mutua. Los clientes para los que la autenticación mutua es crítica, deben especificar un nombre de entidad de seguridad de servidor que coincida con la identidad del servidor que usa el servicio WMI. Para obtener más información sobre la configuración de la seguridad de proxy y un ejemplo de C++ que muestra cómo establecer el nombre principal del servidor, vea [establecer la seguridad en IWbemServices y en otros servidores proxy](setting-the-security-on-iwbemservices-and-other-proxies.md).
+Este parámetro es necesario para que Kerberos admita la autenticación mutua. Sin embargo, el uso del nombre principal del servidor predeterminado no permite la autenticación mutua. Los clientes para los que la autenticación mutua es crítica deben especificar un nombre principal de servidor que coincida con la identidad del servidor que usa el servicio WMI. Para obtener más información sobre cómo establecer la seguridad de proxy y un ejemplo de C++ que muestra cómo establecer el nombre principal del servidor, vea Establecer la seguridad en [IWbemServices y otros servidores proxy.](setting-the-security-on-iwbemservices-and-other-proxies.md)
 
-Para obtener más información acerca de cómo establecer el nombre de la entidad de seguridad de servidor en script y Visual Basic, vea [**SWbemLocator. ConnectServer**](swbemlocator-connectserver.md) y [conectarse a WMI en un equipo remoto](connecting-to-wmi-on-a-remote-computer.md).
+Para obtener más información sobre cómo establecer el nombre principal del servidor en el script y Visual Basic, vea [**SWbemLocator.ConnectServer**](swbemlocator-connectserver.md) y [Conectarse a WMI](connecting-to-wmi-on-a-remote-computer.md)en un equipo remoto.
 
-A diferencia de la mayoría de los protocolos de seguridad de Instrumental de administración de Windows (WMI) y del modelo de objetos componentes (COM), no se puede establecer la entidad de seguridad de servidor en una llamada a [**CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity). Sin embargo, puede establecer la entidad de seguridad de servidor con el parámetro *bstrAuthority* para [**IWbemLocator:: ConnectServer**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver)o el parámetro *pServerPrincName* para [**CoSetProxyBlanket**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket).
+A diferencia de la mayoría de los protocolos de seguridad para Windows Management Instrumentation (WMI) y Component Object Model (COM), no se puede establecer la entidad de seguridad del servidor en una llamada a [**CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity). Sin embargo, puede establecer la entidad de seguridad del servidor con el parámetro *bstrAuthority* para [**IWbemLocator::ConnectServer**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver)o el parámetro *pServerPrincName* para [**CoSetProxyBlanket**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket).
 
-El ejemplo de código de este tema requiere la siguiente \# instrucción include para compilar correctamente.
+El ejemplo de código de este tema requiere que la \# siguiente instrucción include se compile correctamente.
 
 
 ```C++
@@ -31,7 +31,7 @@ El ejemplo de código de este tema requiere la siguiente \# instrucción include
 
 
 
-En el ejemplo de código siguiente se muestra cómo establecer el nombre de la entidad de seguridad del servidor con [**ConnectServer**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver).
+En el ejemplo de código siguiente se muestra cómo establecer el nombre principal del servidor con [**ConnectServer**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver).
 
 
 ```C++
@@ -73,13 +73,13 @@ IWbemLocator* pWbemLocator = 0;
 
 <dl> <dt>
 
-[Establecer el servicio de autenticación mediante VBScript](setting-the-authentication-service-using-vbscript.md)
+[Establecimiento del servicio de autenticación mediante VBScript](setting-the-authentication-service-using-vbscript.md)
 </dt> <dt>
 
-[Establecer la autenticación con C++](setting-authentication-using-c-.md)
+[Establecer la autenticación mediante C++](setting-authentication-using-c-.md)
 </dt> <dt>
 
-[Establecer la seguridad en IWbemServices y en otros servidores proxy](setting-the-security-on-iwbemservices-and-other-proxies.md)
+[Establecer la seguridad en IWbemServices y otros servidores proxy](setting-the-security-on-iwbemservices-and-other-proxies.md)
 </dt> </dl>
 
  

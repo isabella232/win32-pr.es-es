@@ -1,19 +1,19 @@
 ---
-description: Especifica si el DSP de la captura de voz realiza el relleno de ruido.
+description: Especifica si el DSP de captura de voz realiza el relleno de ruido.
 ms.assetid: 8bb64686-8f02-4e0d-a664-aeee1744fc8e
-title: Propiedad MFPKEY_WMAAECMA_FEATR_NOISE_FILL (Wmcodecdsp. h)
+title: MFPKEY_WMAAECMA_FEATR_NOISE_FILL (Propiedad, Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea0c0af2b47767a7798d9b583ac55ad5112ddf1f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ec3f2f6780157da97263bd6e68ac5f38c9448a5633fafe6481b082ed033331dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705908"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119035123"
 ---
-# <a name="mfpkey_wmaaecma_featr_noise_fill-property"></a>\_Propiedad de \_ relleno de \_ ruido \_ de MFPKEY WMAAECMA
+# <a name="mfpkey_wmaaecma_featr_noise_fill-property"></a>Propiedad MFPKEY \_ WMAAECMA \_ FEATR \_ NOISE \_ FILL
 
-Especifica si el DSP de la captura de voz realiza el relleno de ruido.
+Especifica si el DSP de captura de voz realiza el relleno de ruido.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
@@ -21,34 +21,34 @@ Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/n
 
 ## <a name="data-type"></a>Tipo de datos
 
-VT \_ bool
+VT \_ BOOL
 
 ## <a name="default-value"></a>Valor predeterminado
 
-VARIANTE \_ true
+VARIANT \_ TRUE
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [DSP de captura de voz](voicecapturedmo.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El relleno de ruido agrega una pequeña cantidad de ruido a partes de la señal en las que el recorte del centro ha quitado los ecos residuales. Esto da como resultado una mejor experiencia para el usuario que la salida de brechas silenciosas en la señal.
+El relleno de ruido agrega una pequeña cantidad de ruido a partes de la señal donde el recorte central ha quitado los ecos residuales. Esto da como resultado una mejor experiencia para el usuario que dejar espacios silenciosos en la señal.
 
-Esta propiedad puede tener los valores siguientes.
+Esta propiedad puede tener los siguientes valores.
 
 
 
 | Value          | Descripción            |
 |----------------|------------------------|
-| VARIANTE \_ true  | Habilitar el relleno de ruido.  |
-| VARIANTE \_ false | Deshabilitar el relleno de ruido. |
+| VARIANT \_ TRUE  | Habilite el relleno de ruido.  |
+| VARIANT \_ FALSE | Deshabilite el relleno de ruido. |
 
 
 
  
 
-El valor predeterminado de esta propiedad es VARIANT \_ true (Enabled). Antes de establecer esta propiedad, debe establecer la propiedad de [ \_ modo de \_ característica \_ MFPKEY WMAAECMA](mfpkey-wmaaecma-feature-modeproperty.md) en Variant \_ true.
+El valor predeterminado de esta propiedad es VARIANT \_ TRUE (habilitado). Antes de establecer esta propiedad, debe establecer la propiedad [MFPKEY \_ WMAAECMA \_ FEATURE \_ MODE](mfpkey-wmaaecma-feature-modeproperty.md) en VARIANT \_ TRUE.
 
 El DSP usa esta propiedad solo cuando el procesamiento de AEC está habilitado.
 
@@ -56,11 +56,11 @@ El DSP usa esta propiedad solo cuando el procesamiento de AEC está habilitado.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ El DSP usa esta propiedad solo cuando el procesamiento de AEC está habilitado.
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> <dt>
 
 [DSP de captura de voz](voicecapturedmo.md)

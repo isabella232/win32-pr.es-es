@@ -1,23 +1,23 @@
 ---
-title: atomic_umax (SM5-ASM)
-description: Entero atómico sin signo máximo en la memoria.
+title: atomic_umax (sm5 - asm)
+description: Número entero sin signo atómico máximo en memoria.
 ms.assetid: 7255B67A-37BE-443A-BDF2-A1D4A56C5E11
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 578a96379ad8904459cbfd47ef87ba4256e5fd8d
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 3e6984a2ef2ea8ba186976670ec3b0f03446bf188de9c619301917610f4c3ecc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103904305"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118794863"
 ---
-# <a name="atomic_umax-sm5---asm"></a>\_Umax atómico (SM5-ASM)
+# <a name="atomic_umax-sm5---asm"></a>atomic \_ umax (sm5 - asm)
 
-Entero atómico sin signo máximo en la memoria.
+Número entero sin signo atómico máximo en memoria.
 
 
 
-| Atomic \_ Umax DST, dstAddress \[ . swizzle \] , src0 \[ . Select ( \_ componente)\] |
+| atomic \_ umax dst, dstAddress \[ .swzzle, \] src0 \[ .select \_ component\] |
 |----------------------------------------------------------------------|
 
 
@@ -28,37 +28,37 @@ Entero atómico sin signo máximo en la memoria.
 
 | Elemento                                                                                                           | Descripción                                                                                                                                                                             |
 |----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="dst"></span><span id="DST"></span>*DST*<br/>                                                   | \[en \] los componentes que se van a comparar con *src0*. Este valor debe ser una vista de acceso desordenado (UAV) (u \# ). En el sombreador de cálculo, también puede ser memoria compartida de grupo de subprocesos (g \# ). <br/> |
-| <span id="dstAddress"></span><span id="dstaddress"></span><span id="DSTADDRESS"></span>*dstAddress*<br/> | \[en \] la dirección de memoria.<br/>                                                                                                                                                   |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/>                                                | \[en \] los componentes que se van a comparar con *DST*.<br/>                                                                                                                                   |
+| <span id="dst"></span><span id="DST"></span>*Dst*<br/>                                                   | \[en \] Los componentes que se comparan con *src0.* Este valor debe ser una vista de acceso no ordenado (UAV) (u \# ). En el sombreador de proceso también puede ser memoria compartida de grupo de subprocesos (g \# ). <br/> |
+| <span id="dstAddress"></span><span id="dstaddress"></span><span id="DSTADDRESS"></span>*dstAddress*<br/> | \[en \] La dirección de memoria.<br/>                                                                                                                                                   |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/>                                                | \[en \] Los componentes que se comparan con *dst*.<br/>                                                                                                                                   |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta instrucción realiza un único componente de 32 bits sin signo como máximo de operando *src0* en *DST* a 32 bits por cada dirección de componente *dstAddress*, realizada de forma atómica.
+Esta instrucción realiza un único componente de 32 bits sin signo máximo de *src0* de operando en *dst* a 32 bits por dirección de componente *dstAddress,* realizado de forma atómica.
 
-El número de componentes tomado de la dirección viene determinado por la dimensionalidad del DST u \# o g \# .
+El número de componentes tomados de la dirección viene determinado por la dimensionalidad de dst u \# o g \# .
 
-Si el *DST* es una u \# , se puede declarar como sin formato, con tipo o estructurada. Si tiene un tipo, debe declararse como UINT/SINT con el formato de recurso enlazado R32 \_ uint/ \_ Sint.
+Si *dst* es un u \# , se puede declarar como sin formato, con tipo o estructurado. Si se escribe, se debe declarar como UINT/SINT con el formato de recurso enlazado R32 \_ \_ UINT/SINT.
 
-Si *DST* es g \# , debe declararse como RAW o Structured.
+Si *dst* es g \# , debe declararse como sin formato o estructurado.
 
 No se devuelve nada al sombreador.
 
-Si la invocación del sombreador está inactiva, por ejemplo, si el píxel se ha descartado anteriormente en su ejecución, o si solo existe una invocación de píxel/ejemplo para servir como ayudante a un píxel o ejemplo real para los derivados, esta instrucción no modifica la memoria de *DST* en absoluto (de forma silenciosa).
+Si la invocación del sombreador está inactiva, por ejemplo, si el píxel se ha descartado anteriormente en su ejecución o si solo existe una invocación de píxel o muestra para servir como asistente de un píxel o muestra real para derivados, esta instrucción no modifica la memoria *dst* en absoluto (silenciosamente).
 
-Fuera del límite el direccionamiento en u \# hace que no se escriba nada en la memoria, excepto si la u \# está estructurada y el desplazamiento de bytes en el struct (componente de segundo de la dirección) está provocando el acceso fuera de los límites, todo el contenido de UAV se vuelve sin definir.
+El direccionamiento fuera de los límites en u hace que no se escriba nada en la memoria, excepto si la u está estructurada y el desplazamiento de bytes en la estructura (segundo componente de la dirección) está causando el acceso fuera de límites, todo el contenido del UAV se queda \# \# sin definir.
 
-Fuera de los límites que se dirigen a g \# (los límites de esa g concreta \# , en contraposición a toda la memoria compartida), hace que todo el contenido de toda la memoria compartida quede sin definir.
+Fuera de los límites que se direcciona en g (los límites de ese g concreto, en lugar de toda la memoria compartida) hace que todo el contenido de toda la memoria compartida se \# \# vuelva indefinido.
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | X     | X       |
 
@@ -66,11 +66,11 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-Dado que UAVs están disponibles en todas las fases del sombreador para Direct3D 11,1, esta instrucción se aplica a todas las fases del sombreador para el tiempo de ejecución de Direct3D 11,1, que está disponible a partir de Windows 8.
+Dado que los UAV están disponibles en todas las fases del sombreador para Direct3D 11.1, esta instrucción se aplica a todas las fases del sombreador para el entorno de ejecución de Direct3D 11.1, que está disponible a partir de Windows 8.
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -78,20 +78,20 @@ Dado que UAVs están disponibles en todas las fases del sombreador para Direct3D
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
-Esta instrucción es compatible con los siguientes modelos de sombreador:
+Esta instrucción se admite en los siguientes modelos de sombreador:
 
 
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | no        |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | no        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | No        |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | No        |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
@@ -101,7 +101,7 @@ Esta instrucción es compatible con los siguientes modelos de sombreador:
 
 <dl> <dt>
 
-[Ensamblador modelo de sombreador 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Ensamblado del modelo de sombreador 5 (HLSL de DirectX)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

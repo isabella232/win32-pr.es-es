@@ -1,7 +1,7 @@
 ---
-description: El método GetMemoryHDC recupera un identificador para el contexto de dispositivo de memoria (DC).
+description: El método GetMemoryHDC recupera un identificador en el contexto del dispositivo de memoria (DC).
 ms.assetid: 2c22015f-5948-4e1a-92c7-36f232816175
-title: Método CBaseWindow. GetMemoryHDC (Winutil. h)
+title: Método CBaseWindow.GetMemoryHDC (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c255ac8734f364597c09fc15b4aa543b1ec0a0da
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 36874817d2e1dd13c00577a91cff7f059c1f2441701012af202c4765cb23088a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679567"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016663"
 ---
-# <a name="cbasewindowgetmemoryhdc-method"></a>CBaseWindow. GetMemoryHDC, método
+# <a name="cbasewindowgetmemoryhdc-method"></a>Método CBaseWindow.GetMemoryHDC
 
-El `GetMemoryHDC` método recupera un identificador para el contexto de dispositivo de memoria (DC).
+El `GetMemoryHDC` método recupera un identificador para el contexto del dispositivo de memoria (DC).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un identificador para el controlador de dominio de memoria.
+Devuelve un identificador al controlador de dominio de memoria.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve un identificador para el controlador de dominio de memoria.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve un identificador para el controlador de dominio de memoria.
 
 <dl> <dt>
 
-[**Clase CBaseWindow**](cbasewindow.md)
+[**CBaseWindow (clase)**](cbasewindow.md)
 </dt> </dl>
 
  

@@ -1,54 +1,54 @@
 ---
-title: Proveedor de servicios de administración de Escritorio remoto
-description: El proveedor de servicios de administración de Escritorio remoto (RDMS) administra los entornos de infraestructura de escritorio virtual (VDI).
+title: Escritorio remoto Management Services Provider
+description: El Escritorio remoto Management Services (RDMS) administra entornos de infraestructura de escritorio virtual (VDI).
 ms.assetid: BC1DD9B7-FC4C-4DC1-A0B2-4B0640CC38F0
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eccc1982aee62b7c1e214d3b29b383f458555402
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3d584f52ef7214bb0c4097758b8c2e57f89d3307bb7aed72971b742817fd47e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103777952"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119000505"
 ---
-# <a name="remote-desktop-management-services-provider"></a>Proveedor de servicios de administración de Escritorio remoto
+# <a name="remote-desktop-management-services-provider"></a>Escritorio remoto Management Services Provider
 
-El proveedor de servicios de administración de Escritorio remoto (RDMS) administra los entornos de infraestructura de escritorio virtual (VDI).
+El Escritorio remoto Management Services (RDMS) administra entornos de infraestructura de escritorio virtual (VDI).
 
 ## <a name="in-this-section"></a>En esta sección
 
 <dl> <dt>
 
-[**Win32 \_ RDMSCollectionProperties**](win32-rdmscollectionproperties.md)
+[**RdMSCollectionProperties de Win32 \_**](win32-rdmscollectionproperties.md)
 </dt> <dd>
 
 Administra las propiedades de una colección de escritorios virtuales.
 
 </dd> <dt>
 
-[**Win32 \_ RDMSDeploymentSettings**](win32-rdmsdeploymentsettings.md)
+[**RDMSDeploymentSettings de Win32 \_**](win32-rdmsdeploymentsettings.md)
 </dt> <dd>
 
 Administra la configuración de implementación de una colección de escritorios virtuales.
 
 </dd> <dt>
 
-[**Win32 \_ RDMSDesktopAssignment**](win32-rdmsdesktopassignment.md)
+[**\_RDMSDesktopAssignment de Win32**](win32-rdmsdesktopassignment.md)
 </dt> <dd>
 
-Describe la asignación de escritorio de usuario de la colección de RD.
+Describe la asignación de escritorio de usuario de la colección de Escritorio remoto.
 
 </dd> <dt>
 
-[**Win32 \_ RDMSEnvironment**](win32-rdmsenvironment.md)
+[**\_RDMSEnvironment de Win32**](win32-rdmsenvironment.md)
 </dt> <dd>
 
-Administra un entorno de Escritorio remoto Management Services (RDMS).
+Administra un entorno Escritorio remoto Management Services (RDMS).
 
 </dd> <dt>
 
-[**Win32 \_ RDMSFileTypeAssociation**](win32-rdmsfiletypeassociation.md)
+[**\_RdMSFileTypeAssociation de Win32**](win32-rdmsfiletypeassociation.md)
 </dt> <dd>
 
 Administra una asociación de tipo de archivo para una aplicación publicada.
@@ -62,14 +62,14 @@ Representa un nodo de servidor administrado por Escritorio remoto Management Ser
 
 </dd> <dt>
 
-[**Win32 \_ RDMSManagementData**](win32-rdmsmanagementdata.md)
+[**RdMSManagementData de Win32 \_**](win32-rdmsmanagementdata.md)
 </dt> <dd>
 
 Sincroniza los datos de publicación para Escritorio remoto Management Services (RDMS).
 
 </dd> <dt>
 
-[**Win32 \_ RDMSPublishedApplication**](win32-rdmspublishedapplication.md)
+[**RDMSPublishedApplication de Win32 \_**](win32-rdmspublishedapplication.md)
 </dt> <dd>
 
 Administra una aplicación publicada.
@@ -83,24 +83,24 @@ Representa un escritorio virtual.
 
 </dd> <dt>
 
-[**Win32 \_ RDMSVirtualDesktopCollection**](win32-rdmsvirtualdesktopcollection.md)
+[**RDMSVirtualDesktopCollection de Win32 \_**](win32-rdmsvirtualdesktopcollection.md)
 </dt> <dd>
 
 Crea y administra una colección de escritorios virtuales.
 
 </dd> <dt>
 
-[**Win32 \_ RDSHCollection**](win32-rdshcollection.md)
+[**RdsHCollection de Win32 \_**](win32-rdshcollection.md)
 </dt> <dd>
 
-Administra una colección de hosts de sesión Escritorio remoto.
+Administra una colección de hosts Escritorio remoto sesión.
 
 </dd> <dt>
 
-[**Win32 \_ RDSHServer**](win32-rdshserver.md)
+[**RdsHServer de Win32 \_**](win32-rdshserver.md)
 </dt> <dd>
 
-Administra un servidor de host de sesión Escritorio remoto (RDSH).
+Administra un servidor Escritorio remoto de sesión (RDSH).
 
 </dd> <dt>
 
@@ -118,9 +118,9 @@ Administra una sesión de escritorio virtual.
 [Servicios de Escritorio remoto](terminal-services-portal.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

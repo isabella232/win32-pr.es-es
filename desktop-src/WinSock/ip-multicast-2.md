@@ -1,41 +1,41 @@
 ---
-description: La multidifusión IP se encuentra en la categoría de plano de datos no raíz y plano de control no raíz.
+description: La multidifusión IP se incluye en la categoría de plano de datos no raíz y plano de control no raíz.
 ms.assetid: 474a1c7f-0ece-4192-a2d9-6e2f3df2ac02
 title: Multidifusión IP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3bf9469822ae974b7c616b7904f9dc7120682acb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 39b80441826f490fedc3dac3dba405ddd0d9f09d57bfd0243a66cae320c76b0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705607"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119051503"
 ---
 # <a name="ip-multicast"></a>Multidifusión IP
 
-La multidifusión IP se encuentra en la categoría de plano de datos no raíz y plano de control no raíz. Todas las aplicaciones desempeñan un rol hoja. Actualmente, la mayoría de las implementaciones de multidifusión IP usan un conjunto de opciones de socket propuesto por Steve Deering a Internet Engineering Task Force (IETF). Por lo tanto, hay cinco operaciones disponibles:
+La multidifusión IP se incluye en la categoría de plano de datos no raíz y plano de control no raíz. Todas las aplicaciones desempeñan un rol hoja. Actualmente, la mayoría de las implementaciones de multidifusión IP usan un conjunto de opciones de socket propuestas por Steve Deering al Grupo de tareas de ingeniería de Internet (IETF). Por lo tanto, hay cinco operaciones disponibles:
 
--   \_TTL de multidifusión IP \_ : establece el período de vida y controla el ámbito de una sesión de multidifusión.
--   IP \_ Multicast \_ If: determina la interfaz que se va a utilizar para la multidifusión.
--   IP \_ Add \_ MEMBERSHI: combina una sesión de multidifusión especificada.
--   \_Pertenencia \_ al grupo de direcciones IP: quita una sesión de multidifusión.
--   \_Bucle de multidifusión IP \_ : controla el bucle invertido de tráfico de multidifusión.
+-   TTL de MULTIDIFUSIÓN IP: establece el ámbito de los controles de período de vida \_ de una sesión de \_ multidifusión.
+-   IP \_ MULTICAST \_ IF: determina la interfaz que se usará para la multidifusión.
+-   IP \_ ADD \_ MEMBERSHI : une una sesión de multidifusión especificada.
+-   DROP \_ \_ MEMBERSHIP de IP: sale de una sesión de multidifusión.
+-   BUCLE \_ DE \_ MULTIDIFUSIÓN IP: controla el bucle atrás del tráfico de multidifusión.
 
-Establecer el período de vida de un socket de multidifusión IP se asigna directamente a mediante el \_ \_ código de comando de ámbito de multidifusión de SiO para [**WSAIoctl**](/windows/desktop/api/Winsock2/nf-winsock2-wsaioctl).
+El establecimiento del período de vida de un socket de multidifusión IP se asigna directamente al uso del código de comando DE ÁMBITO DE MULTIDIFUSIÓN DE SIO \_ \_ para [**WSAIoctl**](/windows/desktop/api/Winsock2/nf-winsock2-wsaioctl).
 
-El método para determinar la interfaz IP que se va a utilizar para la multidifusión es a través de una opción de socket específica de TCP/IP, tal y como se describe en el anexo de Windows Sockets 2 Protocol-Specific. Las tres operaciones restantes se describen bien con la semántica de Windows Sockets 2 que se describe aquí.
+El método para determinar la interfaz IP que se va a usar para la multidifusión es a través de una opción de socket específica de TCP/IP, como se describe en el anexo de Windows Sockets 2 Protocol-Specific. Las tres operaciones restantes se tratan bien con la semántica Windows Sockets 2 descrita aquí.
 
-La aplicación abriría sockets con \_ marcas hoja c/d \_ en [**WSASocket**](/windows/desktop/api/Winsock2/nf-winsock2-wsasocketa). Usaría [**WSAJoinLeaf**](/windows/desktop/api/Winsock2/nf-winsock2-wsajoinleaf) para agregarse a un grupo de multidifusión en la interfaz predeterminada designada para las operaciones de multidifusión. Si la marca de **WSAJoinLeaf** indica que este socket solo es un remitente, la operación de Unión es esencialmente una no operativa y no es necesario enviar mensajes IGMP. De lo contrario, se envía un paquete IGMP al enrutador para indicar intereses en la recepción de paquetes enviados a la dirección de multidifusión especificada. Dado que la aplicación creó \_ sockets de hoja de c hoja/d especiales \_ que solo se usan para realizar la multidifusión, se utilizaría la función [**closesocket**](/windows/desktop/api/winsock/nf-winsock-closesocket) estándar para quitar de la sesión de multidifusión. El \_ \_ código de comando de intercalación de Multipoint de SiO para [**WSAIoctl**](/windows/desktop/api/Winsock2/nf-winsock2-wsaioctl) proporciona un mecanismo de control genérico para determinar si los datos enviados en un \_ socket de hoja d de un esquema Multipoint no raíz también se pueden recibir en el mismo Socket.
+La aplicación abriría sockets con marcas \_ hoja/d de c \_ en [**WSASocket.**](/windows/desktop/api/Winsock2/nf-winsock2-wsasocketa) Usaría [**WSAJoinLeaf para**](/windows/desktop/api/Winsock2/nf-winsock2-wsajoinleaf) agregarse a un grupo de multidifusión en la interfaz predeterminada designada para las operaciones de multidifusión. Si la marca de **WSAJoinLeaf** indica que este socket es solo un remitente, la operación de combinación es básicamente una operación no operativa y no es necesario enviar ningún mensaje IGMP. De lo contrario, se envía un paquete IGMP al enrutador para indicar interés en recibir paquetes enviados a la dirección de multidifusión especificada. Puesto que la aplicación creó sockets hoja/d hoja especiales usados solo para realizar multidifusión, la función closesocket estándar se usaría para salir de la \_ \_ sesión de multidifusión. [](/windows/desktop/api/winsock/nf-winsock-closesocket) El código de comando \_ SIO MULTIPOINT LOOPBACK para \_ [**WSAIoctl**](/windows/desktop/api/Winsock2/nf-winsock2-wsaioctl) proporciona un mecanismo de control genérico para determinar si los datos enviados en un socket hoja d en un esquema multipunto no raíz también se pueden recibir en el mismo \_ socket.
 
 > [!Note]  
-> La versión de Winsock de la \_ opción de bucle de multidifusión IP \_ es semánticamente diferente de la versión de UNIX de la \_ opción de bucle de multidifusión IP \_ :
+> La versión winsock de la opción BUCLE DE MULTIDIFUSIÓN IP es semánticamente diferente de la versión UNIX de \_ la opción BUCLE DE \_ \_ \_ MULTIDIFUSIÓN IP:
 
  
 
--   En Winsock, la \_ opción de bucle de multidifusión IP \_ solo se aplica a la ruta de acceso de recepción.
--   En la versión de UNIX, la \_ opción de bucle de multidifusión IP \_ se aplica a la ruta de acceso de envío.
+-   En Winsock, la opción BUCLE \_ DE \_ MULTIDIFUSIÓN DE IP solo se aplica a la ruta de acceso de recepción.
+-   En la UNIX, la opción BUCLE \_ DE MULTIDIFUSIÓN IP se aplica a la ruta de acceso de \_ envío.
 
-Por ejemplo, las aplicaciones que se activan y desactivan (que son más fáciles de supervisar que X e y) se unen al mismo grupo en la misma interfaz; la aplicación en establece la \_ \_ opción de bucle de multidifusión IP en, la aplicación desactivada establece la \_ opción de bucle de multidifusión IP \_ desactivada. Si ON y OFF son aplicaciones Winsock, OFF puede enviar a ON, pero ON no se puede enviar a OFF. Por el contrario, si ON y OFF son aplicaciones UNIX, ON puede enviar a OFF, pero OFF no puede enviar a ON.
+Por ejemplo, las aplicaciones ON y OFF (que son más fáciles de realizar que X e Y) se unen al mismo grupo en la misma interfaz; application ON establece la opción IP MULTICAST LOOP (BUCLE DE MULTIDIFUSIÓN DE IP) \_ en , application OFF establece la opción IP MULTICAST LOOP \_ \_ \_ (BUCLE DE MULTIDIFUSIÓN DE IP) desactivada. Si ON y OFF son aplicaciones Winsock, OFF puede enviarse a ON, pero ON no se puede enviar a OFF. Por el contrario, si ON y OFF UNIX aplicaciones, ON puede enviarse a OFF, pero OFF no puede enviarse a ON.
 
  
 

@@ -1,15 +1,15 @@
 ---
-description: La propiedad DVDAdm. DefaultAudioLCID establece o recupera la configuración del registro para el LCID predeterminado especificado por el usuario para la secuencia de audio.
+description: La propiedad DVDAdm.DefaultAudioLCID establece o recupera la configuración del Registro para el LCID predeterminado especificado por el usuario para la secuencia de audio.
 ms.assetid: ed347a5e-d4cc-42f1-8b75-0a0a2ca40476
 title: Propiedad DefaultAudioLCID
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe302adaa555d59b2c1dcd50d749e9afdc2de740
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 4c7ebcd864f8ac3bff8cfd8556703dd091985a72c0dfea4f0eefb9f974213165
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105677175"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953014"
 ---
 # <a name="defaultaudiolcid-property"></a>Propiedad DefaultAudioLCID
 
@@ -18,7 +18,7 @@ ms.locfileid: "105677175"
 
  
 
-La `DVDAdm.DefaultAudioLCID` propiedad establece o recupera la configuración del registro para el LCID predeterminado especificado por el usuario para la secuencia de audio.
+La propiedad establece o recupera la configuración del Registro para el LCID predeterminado especificado por el `DVDAdm.DefaultAudioLCID` usuario para la secuencia de audio.
 
 ``` syntax
 [ iAudioLCID = ] DVD.DVDAdm.DefaultAudioLCID
@@ -26,11 +26,11 @@ La `DVDAdm.DefaultAudioLCID` propiedad establece o recupera la configuración de
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor entero que representa el LCID de audio predeterminado especificado por el usuario, tal como se almacena en la configuración del registro de la aplicación de DVD. Este valor no es necesariamente el mismo que el flujo de audio predeterminado que se creó en el DVD.
+Devuelve un valor Entero que representa el LCID de audio predeterminado especificado por el usuario tal como se almacena en la configuración del Registro para la aplicación de DVD. Este valor no es necesariamente el mismo que el flujo de audio predeterminado que se ha escrito en el DVD.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad es de lectura/escritura y no tiene ningún valor predeterminado. Si no se especifica ningún LCID de audio predeterminado, el objeto MSDVDAdm reproducirá la secuencia de audio marcada como la secuencia predeterminada en el disco.
+Esta propiedad es de lectura y escritura sin ningún valor predeterminado. Si no se especifica ningún LCID de audio predeterminado, el objeto MSDVDAdm reproducirá la secuencia de audio marcada como la secuencia predeterminada en el disco.
 
 ## <a name="see-also"></a>Vea también
 

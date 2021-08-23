@@ -27,16 +27,16 @@ Tabla para mostrar de una entrada de dirección.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | Address-Entry-Display-Table                           |
 | Ldap-Display-Name | addressEntryDisplayTable                              |
 | Size              | \-                                                    |
-| Privilegio actualizar  | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.2.324                                |
 | System-Id-Guid    | 5fd42461-1262-11d0-a060-00aa006c33ed                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -53,14 +53,14 @@ Tabla para mostrar de una entrada de dirección.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
 | Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8017                                                   |
-| System-Only            | False                                                    |
-| Es de un solo valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32 768                                                    |
@@ -74,14 +74,14 @@ Tabla para mostrar de una entrada de dirección.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
 | Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8017                                                   |
-| System-Only            | False                                                    |
-| Es de un solo valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32 768                                                    |
@@ -95,14 +95,14 @@ Tabla para mostrar de una entrada de dirección.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
 | Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8017                                                   |
-| System-Only            | False                                                    |
-| Es de un solo valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32 768                                                    |
@@ -116,14 +116,14 @@ Tabla para mostrar de una entrada de dirección.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
 | Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8017                                                   |
-| System-Only            | False                                                    |
-| Es de un solo valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32 768                                                    |
@@ -137,14 +137,14 @@ Tabla para mostrar de una entrada de dirección.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
 | Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8017                                                   |
-| System-Only            | False                                                    |
-| Es de un solo valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32 768                                                    |
@@ -158,14 +158,14 @@ Tabla para mostrar de una entrada de dirección.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
 | Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8017                                                   |
-| System-Only            | False                                                    |
-| Es de un solo valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32 768                                                    |

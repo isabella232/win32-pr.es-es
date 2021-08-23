@@ -1,21 +1,21 @@
 ---
 title: Identificadores de serialización
-description: Una aplicación utiliza los procedimientos de serialización o las rutinas de compatibilidad de serialización generadas por el compilador de MIDL junto con un conjunto de funciones de biblioteca para manipular un identificador de serialización.
+description: Una aplicación usa los procedimientos de serialización o las rutinas de compatibilidad de serialización generadas por el compilador midl junto con un conjunto de funciones de biblioteca para manipular un identificador de serialización.
 ms.assetid: 39859846-5b94-447a-a71b-a08b8eb2c4c1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5585fc3f34b6cc826c1f8157bd59a144070ea081
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 12995144e44fa6b4b91f021d544b53c03d732df22d46489ccc2cefe8d34c0fa1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104076168"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118925488"
 ---
 # <a name="serialization-handles"></a>Identificadores de serialización
 
-Una aplicación utiliza los procedimientos de serialización o las rutinas de compatibilidad de serialización generadas por el compilador de MIDL junto con un conjunto de funciones de biblioteca para manipular un identificador de serialización. Juntas, estas funciones proporcionan un mecanismo para personalizar la manera en que una aplicación serializa los datos.
+Una aplicación usa los procedimientos de serialización o las rutinas de compatibilidad de serialización generadas por el compilador midl junto con un conjunto de funciones de biblioteca para manipular un identificador de serialización. Juntas, estas funciones proporcionan un mecanismo para personalizar la forma en que una aplicación serializa los datos.
 
-Se requiere un identificador de serialización para cualquier operación de serialización y todos los identificadores de serialización deben administrarse explícitamente por el usuario. Para ello, primero debe crear un identificador válido mediante una llamada a una de las siguientes rutinas:
+Se requiere un identificador de serialización para cualquier operación de serialización y el usuario debe administrar explícitamente todos los identificadores de serialización. Para ello, primero debe crear un identificador válido llamando a una de las rutinas siguientes:
 
 -   [**MesDecodeBufferHandleCreate**](/windows/desktop/api/Midles/nf-midles-mesdecodebufferhandlecreate)
 -   [**MesDecodeIncrementalHandleCreate**](/windows/desktop/api/Midles/nf-midles-mesdecodeincrementalhandlecreate)
@@ -23,17 +23,17 @@ Se requiere un identificador de serialización para cualquier operación de seri
 -   [**MesEncodeFixedBufferHandleCreate**](/windows/desktop/api/Midles/nf-midles-mesencodefixedbufferhandlecreate)
 -   [**MesEncodeIncrementalHandleCreate**](/windows/desktop/api/Midles/nf-midles-mesencodeincrementalhandlecreate)
 
-Libera el identificador con una llamada a [**MesHandleFree**](/windows/desktop/api/Midles/nf-midles-meshandlefree). Una vez que se ha creado o reinicializado el identificador, representa un contexto de serialización válido y se puede usar para codificar o descodificar, dependiendo del tipo de identificador.
+El identificador se libera con una llamada a [**MesHandleFree.**](/windows/desktop/api/Midles/nf-midles-meshandlefree) Una vez creado o reinicializado el identificador, representa un contexto de serialización válido y se puede usar para codificar o descodificar, dependiendo del tipo del identificador.
 
 En esta sección se describen los identificadores de serialización y cómo usarlos en los temas siguientes:
 
--   [Identificadores implícitos e explícitos](implicit-versus-explicit-handles.md)
+-   [Identificadores implícitos frente a explícitos](implicit-versus-explicit-handles.md)
 -   [Estilos de serialización](serialization-styles.md)
 -   [Obtener una identidad de codificación](obtaining-an-encoding-identity.md)
 
- 
+ 
 
- 
+ 
 
 
 

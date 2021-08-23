@@ -1,33 +1,33 @@
 ---
-description: Recuperar recopilaciones en el catálogo de COM+
+description: Recuperar colecciones en el catálogo de COM+
 ms.assetid: 7cd5c491-6c85-410f-845b-c2f7b4f2a560
-title: Recuperar recopilaciones en el catálogo de COM+
+title: Recuperar colecciones en el catálogo de COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 27cbf81bfedd4ba37b74b36e5ad9a8ad320e9c39
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: cf70f6fe6a7ab25ebed0338e56db1abfc0b869134725d52108b83473b9182d5d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103807172"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118812589"
 ---
-# <a name="retrieving-collections-on-the-com-catalog"></a>Recuperar recopilaciones en el catálogo de COM+
+# <a name="retrieving-collections-on-the-com-catalog"></a>Recuperar colecciones en el catálogo de COM+
 
-Los datos del catálogo de COM+ se almacenan en una jerarquía de colecciones. En la herramienta administrativa Servicios de componentes, muchas de estas colecciones aparecen como carpetas en el árbol de consola. Solo se puede tener acceso a las colecciones que no aparecen como carpetas mediante programación. Las colecciones sirven como contenedores para los elementos. Los elementos de una colección determinada son de un tipo coherente; es decir, todos representan el mismo tipo de elemento y puede haber un número arbitrario de elementos en una colección. Por ejemplo, la colección de [**aplicaciones**](applications.md) contiene un elemento para cada aplicación com+ instalada en la máquina. Esta colección aparece en la herramienta administrativa como la carpeta **aplicaciones com+** .
+Los datos del catálogo com+ se almacenan dentro de una jerarquía de colecciones. En la herramienta administrativa Servicios de componentes, muchas de estas colecciones aparecen como carpetas en el árbol de consola. Solo se puede acceder mediante programación a las colecciones que no aparecen como carpetas. Las colecciones sirven como contenedores para los elementos. Los elementos de una colección determinada son todos de un tipo coherente; Es decir, todos representan el mismo tipo de elemento y puede haber un número arbitrario de elementos en una colección. Por ejemplo, la [**colección Aplicaciones**](applications.md) contiene un elemento para cada aplicación COM+ instalada en la máquina. Esta colección aparece en la herramienta administrativa como la **carpeta Aplicaciones COM+.**
 
-Las colecciones se producen en una estructura jerárquica porque los elementos que contienen siguen un orden INNATE de inclusión. Por ejemplo, dado que los componentes se instalan en una aplicación COM+, la colección de [**componentes**](components.md) se encuentra lógicamente en la colección de [**aplicaciones**](applications.md) . En particular, para contener los componentes instalados en esa aplicación concreta, existe una colección de **componentes** distintos para cada elemento de la colección de **aplicaciones** .
+Las colecciones se producen en una estructura jerárquica porque los elementos que contienen siguen un orden innate de inclusión. Por ejemplo, dado que los componentes se instalan en una aplicación COM+, la colección [**Components**](components.md) se subsume lógicamente en la [**colección Aplicaciones.**](applications.md) Más concretamente, para contener los componentes instalados en esa aplicación determinada, hay una colección **de componentes** distintos para cada elemento de la **colección Aplicaciones.**
 
-Debe obtener una colección en el catálogo siempre que desee recuperar un elemento y establecer sus propiedades. En el caso general, debe recorrer varias colecciones para llegar al elemento que desee. Para ver el procedimiento para hacerlo, consulte [navegación por la jerarquía de la colección de com+](navigating-the-com--collection-hierarchy.md).
+Debe obtener una colección en el catálogo siempre que desee recuperar un elemento y establecer propiedades en él. En el caso general, debe pasar por varias colecciones para llegar al elemento que desee. Para obtener el procedimiento para hacerlo, vea [Navegar por la jerarquía de colecciones de COM+.](navigating-the-com--collection-hierarchy.md)
 
-Una vez que haya recuperado una colección y antes de poder trabajar directamente con los elementos que contiene, debe rellenar la colección, que captura los datos para el contenido de la colección desde el catálogo de COM+. Para obtener más información, vea [rellenar colecciones de com+](populating-com--collections.md).
+Después de recuperar una colección y antes de poder trabajar directamente con los elementos que contiene, debe rellenar la colección, que captura los datos del contenido de la colección del catálogo de COM+. Para obtener más información, [vea Rellenar colecciones de COM+.](populating-com--collections.md)
 
-Además, existe una utilidad que permite realizar consultas de forma dinámica para ver qué colecciones relacionadas están disponibles en una colección determinada que se está conteniendo. Para obtener más información, consulte [consultar las colecciones relacionadas disponibles](querying-for-available-related-collections.md).
+Además, hay una instalación que puede usar que le permite consultar dinámicamente para ver qué colecciones relacionadas están disponibles en una colección determinada que está manteniendo. Para obtener más información, [vea Consulta de colecciones relacionadas disponibles.](querying-for-available-related-collections.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Operaciones de administración de COM+ en transacciones](com--administration-operations-within-transactions.md)
+[Operaciones de administración de COM+ dentro de transacciones](com--administration-operations-within-transactions.md)
 </dt> <dt>
 
 [Control de errores de administración de COM+](handling-com--administration-errors.md)
@@ -39,7 +39,7 @@ Además, existe una utilidad que permite realizar consultas de forma dinámica p
 [Información general de los objetos COMAdmin](overview-of-the-comadmin-objects.md)
 </dt> <dt>
 
-[Establecer propiedades y guardar cambios en el catálogo de COM+](setting-properties-and-saving-changes-to-the-com--catalog.md)
+[Establecimiento de propiedades y guardado de cambios en el catálogo de COM+](setting-properties-and-saving-changes-to-the-com--catalog.md)
 </dt> </dl>
 
  

@@ -1,26 +1,26 @@
 ---
 title: Aplicación DXCore mínima
-description: La lista de código fuente completa para una aplicación DXCore mínima.
+description: Lista de código fuente completo para una aplicación DXCore mínima.
 ms.custom: 19H1
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 06/21/2019
-ms.openlocfilehash: 6a1094f3fcc450fc8e5af471d79be3e3c3064fbf
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 9f9d8687fa9871152504f80a917a083ce9acbd14b9bf9159bc7559865b6a7a89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105720164"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985215"
 ---
 # <a name="minimal-dxcore-application"></a>Aplicación DXCore mínima
 
-En este tema se presenta la lista de código fuente completa para una aplicación DXCore mínima (escrita en [C++/WinRT](/windows/uwp/cpp-and-winrt-apis)). La mayor parte del código que se muestra a continuación se explica en el tema [uso de DXCore para enumerar los adaptadores](dxcore-enum-adapters.md).
+En este tema se presenta la lista de código fuente completo de una aplicación DXCore mínima (escrita [en C++/WinRT).](/windows/uwp/cpp-and-winrt-apis) La mayor parte del código que se muestra a continuación se explica en el tema Uso de [DXCore para enumerar los adaptadores](dxcore-enum-adapters.md).
 
-## <a name="full-source-code-listing-of-a-minimal-dxcore-application"></a>Lista completa de código fuente de una aplicación DXCore mínima
+## <a name="full-source-code-listing-of-a-minimal-dxcore-application"></a>Lista de código fuente completo de una aplicación DXCore mínima
 
-Si desea compilar y ejecutar este ejemplo de código fuente, en primer lugar, en Visual Studio, cree un nuevo proyecto de **aplicación de consola de Windows (C++/WinRT)** . A continuación, edite `pch.h` y `main.cpp` para que se parezca a las siguientes listas.
+Si quieres compilar y ejecutar este ejemplo de código fuente, primero, en Visual Studio, crea un nuevo proyecto de aplicación de consola Windows **(C++/WinRT).** A `pch.h` continuación, `main.cpp` edite y para que se parezca a las listas siguientes.
 
-En el ejemplo de código siguiente se usa [C++/WinRT](/windows/uwp/cpp-and-winrt-apis). Sin embargo, para mantener el uso de las API es transparente, no utiliza la [función winrt:: com_ptr:: Capture](/uwp/cpp-ref-for-winrt/com-ptr#com_ptrcapture-function).
+En el ejemplo de código siguiente se [usa C++/WinRT.](/windows/uwp/cpp-and-winrt-apis) Sin embargo, para mantener el uso de las API es transparente, no usa la función [winrt::com_ptr::capture](/uwp/cpp-ref-for-winrt/com-ptr#com_ptrcapture-function).
 
 ```cppwinrt
 // pch.h

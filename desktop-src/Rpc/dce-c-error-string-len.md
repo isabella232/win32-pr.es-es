@@ -1,25 +1,25 @@
 ---
 title: DCE_C_ERROR_STRING_LEN
-description: La \_ longitud de la cadena de error de DCE C \_ \_ \_ define el número máximo de caracteres que contiene una cadena de mensaje de error.
+description: La constante DCE \_ C \_ ERROR STRING \_ \_ LEN define el número máximo de caracteres que contiene una cadena de mensaje de error.
 ms.assetid: 9ba0b7cd-cd99-4efc-8a53-bce09af90fbc
 keywords:
 - DCE_C_ERROR_STRING_LEN
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4087117fb36983f41e59a248b256184e8a3373c5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: abb7fbfec5a7931a6ed46f1ba6a6c8f4b941e101e4292325c093a00bdfbe20a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075408"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118931144"
 ---
-# <a name="dce_c_error_string_len"></a>\_longitud de \_ cadena de error \_ \_ de DCE C
+# <a name="dce_c_error_string_len"></a>DCE \_ C \_ ERROR \_ STRING \_ LEN
 
-La longitud de la **cadena de error de DCE \_ \_ \_ \_ C** define el número máximo de caracteres que contiene una cadena de mensaje de error.
+La constante **DCE \_ C ERROR \_ STRING \_ \_ LEN** define el número máximo de caracteres que contiene una cadena de mensaje de error.
 
- 
+ 
 
- 
+ 
 
 
 

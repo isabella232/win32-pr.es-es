@@ -1,11 +1,11 @@
 ---
-title: Network. getProxyBypassForLocal (método)
+title: Método Network.getProxyBypassForLocal
 description: El método getProxyBypassForLocal recupera un valor que indica si se omite el servidor proxy si el servidor de origen está en una red local.
 ms.assetid: e5217d56-da22-4424-94b0-400369410b47
 keywords:
-- método getProxyBypassForLocal de Windows Media Player
-- método getProxyBypassForLocal Windows Media Player, clase de red
-- Clase de red Windows Media Player, método getProxyBypassForLocal
+- Método getProxyBypassForLocal Reproductor de Windows Media
+- Método getProxyBypassForLocal Reproductor de Windows Media , clase Network
+- Clase de red Reproductor de Windows Media método getProxyBypassForLocal
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c60b9248cd5a893496c2de88c5a5370dfb7bf82
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 51f22eb6187938318d95b9dd7a473b58e216315210d4af41c29b352b2654cbf3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054565"
 ---
-# <a name="networkgetproxybypassforlocal-method"></a>Network. getProxyBypassForLocal (método)
+# <a name="networkgetproxybypassforlocal-method"></a>Método Network.getProxyBypassForLocal
 
-El método **getProxyBypassForLocal** recupera un valor que indica si se omite el servidor proxy si el servidor de origen está en una red local.
+El **método getProxyBypassForLocal** recupera un valor que indica si se omite el servidor proxy si el servidor de origen está en una red local.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,10 +42,10 @@ bRetVal = Network.getProxyBypassForLocal(
 
 <dl> <dt>
 
-*Protocolo* \[ de de\]
+*protocolo* \[ En\]
 </dt> <dd>
 
-**Cadena** que especifica el nombre del protocolo. Para obtener una lista de protocolos admitidos, consulte [protocolos y tipos de archivo admitidos](supported-protocols-and-file-types.md).
+**Cadena** que especifica el nombre del protocolo. Para obtener una lista de los protocolos admitidos, vea [Protocolos y tipos de archivo admitidos.](supported-protocols-and-file-types.md)
 
 </dd> </dl>
 
@@ -53,15 +53,15 @@ bRetVal = Network.getProxyBypassForLocal(
 
 Este método devuelve un **valor booleano** que indica si se omite el servidor proxy. El valor devuelto solo es significativo cuando **getProxySettings** devuelve un valor de dos (use la configuración manual).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método produce un error a menos que la aplicación que realiza la llamada se ejecute en el equipo local o en la intranet.
+Se produce un error en este método a menos que la aplicación que realiza la llamada se ejecute en el equipo local o intranet.
 
-**Windows Media Player 10 Mobile:** Este método no se admite.
+**Reproductor de Windows Media 10 Mobile:** No se admite este método.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de JScript se usa *Network*. **getProxyBypassForLocal** para mostrar si Windows Media Player está configurado para omitir el servidor proxy para las direcciones locales. El objeto **Player** se creó con ID = "Player".
+En el ejemplo JScript siguiente se usa *Network*. **getProxyBypassForLocal** para mostrar si Reproductor de Windows Media está establecido para omitir el servidor proxy para las direcciones locales. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -91,9 +91,9 @@ document.write("The current MMS proxy bypass for local value: " + proxyBypassFor
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -105,7 +105,7 @@ document.write("The current MMS proxy bypass for local value: " + proxyBypassFor
 [**Objeto de red**](network-object.md)
 </dt> <dt>
 
-[**Network. getProxySettings**](network-getproxysettings.md)
+[**Network.getProxySettings**](network-getproxysettings.md)
 </dt> </dl>
 
  

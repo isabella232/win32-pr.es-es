@@ -1,19 +1,19 @@
 ---
-description: La tabla ODBCAttribute contiene información sobre los atributos de los controladores y traductores ODBC (Conectividad abierta de bases de datos).
+description: La tabla ODBCAttribute contiene información sobre los atributos de los controladores y traductores de Conectividad abierta de bases de datos (ODBC).
 ms.assetid: 82fd83d4-22dd-4641-807b-d2b263918e4c
 title: Tabla ODBCAttribute
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a7e76a52dd63bdc8eb969324f7891e7359be7caf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8e31e67cde1625812d1c5b8af7dc3bd24347891d3a769e24deeb02db7cc44396
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155132"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118943183"
 ---
 # <a name="odbcattribute-table"></a>Tabla ODBCAttribute
 
-La tabla ODBCAttribute contiene información sobre los atributos de los controladores y traductores ODBC (Conectividad abierta de bases de datos).
+La tabla ODBCAttribute contiene información sobre los atributos de los controladores y traductores de Conectividad abierta de bases de datos (ODBC).
 
 La tabla ODBCAttribute tiene las columnas siguientes.
 
@@ -23,7 +23,7 @@ La tabla ODBCAttribute tiene las columnas siguientes.
 |-----------|------------------------------|-----|----------|
 | Controlador\_  | [Identificador](identifier.md) | Y   | N        |
 | Atributo | [Texto](text.md)             | Y   | N        |
-| Value     | [Formatea](formatted.md)   | N   | Y        |
+| Value     | [Formato](formatted.md)   | N   | Y        |
 
 
 
@@ -33,14 +33,14 @@ La tabla ODBCAttribute tiene las columnas siguientes.
 
 <dl> <dt>
 
-<span id="Driver_"></span><span id="driver_"></span><span id="DRIVER_"></span>Dispositivo\_
+<span id="Driver_"></span><span id="driver_"></span><span id="DRIVER_"></span>Conductor\_
 </dt> <dd>
 
-Nombre del token interno para un controlador. Clave principal de la tabla. Una clave externa en la [tabla ODBCDriver](odbcdriver-table.md).
+Nombre del token interno de un controlador. Clave principal de la tabla. Clave externa en la [tabla ODBCDriver](odbcdriver-table.md).
 
 </dd> <dt>
 
-<span id="Attribute"></span><span id="attribute"></span><span id="ATTRIBUTE"></span>Atribui
+<span id="Attribute"></span><span id="attribute"></span><span id="ATTRIBUTE"></span>Atributo
 </dt> <dd>
 
 Nombre del atributo de controlador. Clave principal de la tabla.
@@ -50,13 +50,13 @@ Nombre del atributo de controlador. Clave principal de la tabla.
 <span id="Value"></span><span id="value"></span><span id="VALUE"></span>Valor
 </dt> <dd>
 
-Valor de cadena localizable para el atributo.
+Valor de cadena localizable para el atributo .
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las acciones [InstallODBC](installodbc-action.md) y [RemoveODBC](removeodbc-action.md) de [*las tablas de secuencia*](s-gly.md) procesan la información de esta tabla. Para obtener información sobre el uso de *tablas de secuencia*, vea [usar una tabla de secuencia](using-a-sequence-table.md).
+Las [acciones InstallODBC](installodbc-action.md) [y RemoveODBC](removeodbc-action.md) de las tablas [*de secuencia*](s-gly.md) procesan la información de esta tabla. Para obtener información sobre el *uso de tablas de secuencia,* vea Usar una tabla de [secuencia.](using-a-sequence-table.md)
 
 ## <a name="validation"></a>Validación
 

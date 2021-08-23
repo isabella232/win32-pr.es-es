@@ -1,7 +1,7 @@
 ---
-description: Recupera un valor que indica si se ha establecido en este IContextNode el ConfirmationType pasado a este método.
+description: Recupera un valor que indica si el confirmationType pasado a este método se ha establecido en este IContextNode.
 ms.assetid: 4a96bc46-b627-4784-ad1d-1079f49592e5
-title: 'IContextNode:: IsConfirmed (método) (IACom. h)'
+title: Método IContextNode::IsConfirmed (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 300e0126b4a1ff55d372ff31deebde0eab686645
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2e378aaf344e177514115c82b1179f8d1ebe25faefa0d5d840d5a0af62ff1c07
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104542051"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118967364"
 ---
-# <a name="icontextnodeisconfirmed-method"></a>IContextNode:: IsConfirmed (método)
+# <a name="icontextnodeisconfirmed-method"></a>IContextNode::IsConfirmed (método)
 
-Recupera un valor que indica si se ha establecido en este IContextNode el ConfirmationType pasado a este método.
+Recupera un valor que indica si el confirmationType pasado a este método se ha establecido en este IContextNode.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,27 +40,27 @@ HRESULT IsConfirmed(
 
 <dl> <dt>
 
-*confirmedType* \[ de\]
+*confirmedType* \[ En\]
 </dt> <dd>
 
-El tipo de confirmación que se está probando.
+Tipo de confirmación que se está probando.
 
 </dd> <dt>
 
-*pfTypeConfirmed* \[ enuncia\]
+*pfTypeConfirmed* \[ out\]
 </dt> <dd>
 
-**Variante \_ TRUE** si el tipo pasado en confirmedType se ha establecido en este objeto [**IContextNode**](icontextnode.md) ; de lo contrario, **Variant \_ false**.
+**VARIANT \_ TRUE** si el tipo pasado en confirmedType se ha establecido en este [**objeto IContextNode;**](icontextnode.md) en caso contrario, **VARIANT \_ FALSE**.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este valor se establece mediante el método [**IContextNode:: CONFIRM**](icontextnode-confirm.md) .
+El método [**IContextNode::Confirm**](icontextnode-confirm.md) establece este valor.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,9 +68,9 @@ Este valor se establece mediante el método [**IContextNode:: CONFIRM**](icontex
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -82,10 +82,10 @@ Este valor se establece mediante el método [**IContextNode:: CONFIRM**](icontex
 [**IContextNode**](icontextnode.md)
 </dt> <dt>
 
-[**IContextNode:: CONFIRM**](icontextnode-confirm.md)
+[**IContextNode::Confirm**](icontextnode-confirm.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

@@ -1,17 +1,17 @@
 ---
 description: Se produce antes de que el control InkPicture se vuelva a dibujar.
 ms.assetid: 97d017ce-fdab-49e5-9ea6-0bcc5d7b14fb
-title: Evento InkPicture. Painting (Msinkaut. h)
+title: Evento InkPicture.Painting (Msyecciónut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3dc76bbf3079d61c84ac14d1b22690d645a7cce4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0129e5f74ee8097794112b70fb709ab9b9a3b8fadc9f3e5a2fd7d874c65c0d22
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118966980"
 ---
-# <a name="inkpicturepainting-event"></a>Evento InkPicture. Painting
+# <a name="inkpicturepainting-event"></a>Evento InkPicture.Painting
 
 Se produce antes de que el control [InkPicture](inkpicture-control-reference.md) se vuelva a dibujar.
 
@@ -32,24 +32,24 @@ void Painting(
 
 <dl> <dt>
 
-*HDC* \[ de\]
+*hDC* \[ En\]
 </dt> <dd>
 
-Contexto de dispositivo en el que se producirá el dibujo.
+Contexto del dispositivo en el que se realizará la pintura.
 
 </dd> <dt>
 
-*Rectángulo* \[ de\]
+*Rect* \[ En\]
 </dt> <dd>
 
-Rectángulo de entrada manuscrita que se va a volver a dibujar.
+Rectángulo de entrada de lápiz que se va a volver a dibujar.
 
 </dd> <dt>
 
 *Permitir* \[ in, out\]
 </dt> <dd>
 
-Indica si se debe volver a dibujar.
+Si se va a volver a dibujar.
 
 </dd> </dl>
 
@@ -57,9 +57,9 @@ Indica si se debe volver a dibujar.
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método de evento se define en las interfaces de solo envío **\_ IInkOverlayEvents** y **\_ IInkPictureEvents** (dispinterfaces) con un identificador de DISPID \_ IOEPainting.
+Este método de evento se define en las interfaces de solo envío (dispinterfaces) de **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** con un identificador de DISPID \_ IOEPainting.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,9 +67,9 @@ Este método de evento se define en las interfaces de solo envío **\_ IInkOverl
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Encabezado<br/>                   | <dl> <dt>Msinkaut. h (también requiere Msinkaut \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Msgniut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 

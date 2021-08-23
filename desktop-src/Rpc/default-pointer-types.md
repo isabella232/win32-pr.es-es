@@ -1,26 +1,26 @@
 ---
 title: Tipos de puntero predeterminados
-description: No es necesario que los punteros tengan una descripción de atributo explícita. Cuando no se proporciona un atributo explícito, el compilador MIDL usa un atributo de puntero predeterminado.
+description: No es necesario que los punteros tengan una descripción de atributo explícita. Cuando no se proporciona un atributo explícito, el compilador de MIDL usa un atributo de puntero predeterminado.
 ms.assetid: b90619c3-70b4-44f0-ba37-293595281031
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c565fe8019567fd1fe319d7b34287d9729bbe1d3
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 3020f17af6e24778c0fa5090009650f3c0832df528ba148e0a6a91928dd1dc14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104078067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118930982"
 ---
 # <a name="default-pointer-types"></a>Tipos de puntero predeterminados
 
-No es necesario que los punteros tengan una descripción de atributo explícita. Cuando no se proporciona un atributo explícito, el compilador MIDL usa un atributo de puntero predeterminado.
+No es necesario que los punteros tengan una descripción de atributo explícita. Cuando no se proporciona un atributo explícito, el compilador de MIDL usa un atributo de puntero predeterminado.
 
-Los casos predeterminados para los punteros sin atributos son los siguientes:
+Los casos predeterminados de punteros sin atributos son los siguientes:
 
--   Los punteros de nivel superior que aparecen en las listas de parámetros tienen como valor predeterminado \[ [](/windows/desktop/Midl/ref) \] punteros Ref.
--   El resto de punteros tiene como valor predeterminado el tipo especificado por el \[ atributo [**\_ default del puntero**](/windows/desktop/Midl/pointer-default) \] . Cuando no \[ se proporciona ningún atributo **\_ predeterminado de puntero** \] , estos punteros tienen como valor predeterminado el \[ [](/windows/desktop/Midl/unique) \] atributo único cuando el compilador MIDL está en modo de [extensiones de Microsoft](microsoft-rpc-binding-handle-extensions.md) o en el \[ atributo [**ptr**](/windows/desktop/Midl/ptr) \] cuando el compilador MIDL está en modo compatible con DCE.
+-   Los punteros de nivel superior que aparecen en las listas de parámetros tienen como valor predeterminado \[ [**punteros ref.**](/windows/desktop/Midl/ref) \]
+-   Todos los demás punteros tienen como valor predeterminado el tipo especificado por el \[ [**atributo predeterminado \_ del**](/windows/desktop/Midl/pointer-default) \] puntero. Cuando no se proporciona ningún atributo predeterminado de puntero, estos punteros tienen como valor predeterminado el atributo único cuando el compilador MIDL está en modo De extensiones de Microsoft o el atributo ptr cuando el compilador midL está en modo compatible con \[ **\_** \] \[ [](/windows/desktop/Midl/unique) \] [](microsoft-rpc-binding-handle-extensions.md) \[ [](/windows/desktop/Midl/ptr) \] DCE.
 
-Cuando un procedimiento remoto devuelve un puntero, el valor devuelto debe ser un \[ puntero [**único**](/windows/desktop/Midl/unique) \] o completo ( \[ [**ptr**](/windows/desktop/Midl/ptr) \] ).
+Cuando un procedimiento remoto devuelve un puntero, el valor devuelto debe ser un puntero único o \[ [](/windows/desktop/Midl/unique) \] completo \[ [**(ptr).**](/windows/desktop/Midl/ptr) \]
 
 ``` syntax
 /* IDL file compiled without /osf */
@@ -63,12 +63,12 @@ interface MyInterface2
 }
 ```
 
-### <a name="remarks"></a>Observaciones
+### <a name="remarks"></a>Comentarios
 
-Para garantizar un comportamiento de atributo de puntero inequívoco, use siempre atributos de puntero explícitos al definir un puntero.
+Para garantizar un comportamiento de atributo de puntero no ambiguo, use siempre atributos de puntero explícitos al definir un puntero.
 
-Se recomienda **\[** **\]** usar PTR solo cuando se requiere el alias de puntero.
+Se recomienda usar ptr solo cuando se requiere **\[** **\]** el alias de puntero.
 
- 
+ 
 
- 
+ 

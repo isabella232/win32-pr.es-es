@@ -1,6 +1,6 @@
 ---
 title: Sintaxis del lenguaje
-description: Los sombreadores HLSL se hacen de variables y funciones, que a su vez se convierten en instrucciones .
+description: Los sombreadores HLSL están hechos de variables y funciones, que a su vez se hacen de instrucciones.
 ms.assetid: a0058fe5-7692-4c4d-b09a-9698104478f5
 ms.topic: article
 ms.date: 05/31/2018
@@ -18,7 +18,7 @@ ms.locfileid: "118514143"
 ---
 # <a name="language-syntax"></a>Sintaxis del lenguaje
 
-Los sombreadores HLSL se hacen de variables y funciones, que a su vez se convierten en instrucciones . La sintaxis del lenguaje documenta cómo definir y declarar variables, agregar control de flujo para que los sombreadores puedan tomar decisiones en tiempo de ejecución basadas en variables y escribir funciones personalizadas.
+Los sombreadores HLSL están hechos de variables y funciones, que a su vez se hacen de instrucciones. La sintaxis del lenguaje documenta cómo definir y declarar variables, agregar control de flujo para que los sombreadores puedan tomar decisiones en tiempo de ejecución basadas en variables y escribir funciones personalizadas.
 
 -   [Variables](dx-graphics-hlsl-variables.md)
 -   [Flow Control](dx-graphics-hlsl-flow-control.md)

@@ -1,13 +1,13 @@
 - name: Configuración elevada de ppp
   href: high-dpi-desktop-application-development-on-windows.md
   items:
-    - name: Establecer el reconocimiento de PPP predeterminado para un proceso
+    - name: Establecimiento del reconocimiento de PPP predeterminado para un proceso
       href: setting-the-default-dpi-awareness-for-a-process.md
-    - name: Mixed-Mode de escala de PPP y las API que reconocen PPP
+    - name: Mixed-Mode DE ESCALADO DE PPP y API con reconocimiento de PPP
       href: high-dpi-improvements-for-desktop-applications.md
     - name: Desarrollo de una aplicación WPF con reconocimiento de PPP por monitor
       href: declaring-managed-apps-dpi-aware.md
-    - name: Referencia de PPP alta
+    - name: Referencia de valores altos de PPP
       href: high-dpi-reference.md
       items:
         - name: AdjustWindowRectExForDpi

@@ -1,6 +1,6 @@
 ---
 title: atributoCertificateAttribute
-description: Una identidad firmada digitalmente o certificada y un conjunto de atributos. Se usa para enlazar información de autorización a una identidad.
+description: Una identidad firmada o certificada digitalmente y un conjunto de atributos. Se usa para enlazar información de autorización a una identidad.
 ms.assetid: 46519f26-01db-4f8e-936d-9255c72cd30c
 ms.tgt_platform: multiple
 keywords:
@@ -22,20 +22,20 @@ ms.locfileid: "118688112"
 ---
 # <a name="attributecertificateattribute-attribute"></a>atributoCertificateAttribute
 
-Una identidad firmada digitalmente o certificada y un conjunto de atributos. Se usa para enlazar información de autorización a una identidad.
+Una identidad firmada o certificada digitalmente y un conjunto de atributos. Se usa para enlazar información de autorización a una identidad.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | attributeCertificateAttribute                         |
 | Ldap-Display-Name | attributeCertificateAttribute                         |
 | Size              | \-                                                    |
-| Privilegio actualizar  | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 2.5.4.58                                              |
 | System-Id-Guid    | fa4693bb-7bc2-4cb9-81a8-c99c43b7905e                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -51,14 +51,14 @@ Una identidad firmada digitalmente o certificada y un conjunto de atributos. Se 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------|
 | Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Es de un solo valor       | False                                 |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Falso                                 |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
@@ -72,14 +72,14 @@ Una identidad firmada digitalmente o certificada y un conjunto de atributos. Se 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------|
 | Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Es de un solo valor       | False                                 |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Falso                                 |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
@@ -93,14 +93,14 @@ Una identidad firmada digitalmente o certificada y un conjunto de atributos. Se 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------|
 | Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Es de un solo valor       | False                                 |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Falso                                 |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
@@ -114,14 +114,14 @@ Una identidad firmada digitalmente o certificada y un conjunto de atributos. Se 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------|
 | Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Es de un solo valor       | False                                 |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Falso                                 |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
@@ -135,14 +135,14 @@ Una identidad firmada digitalmente o certificada y un conjunto de atributos. Se 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------|
 | Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Es de un solo valor       | False                                 |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Falso                                 |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |

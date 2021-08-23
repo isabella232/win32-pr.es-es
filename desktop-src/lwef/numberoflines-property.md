@@ -31,7 +31,7 @@ Devuelve el número de líneas admitidas para el globo de palabras para el cará
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La **propiedad NumberOfLines** devuelve el número de líneas de texto como un valor entero long.
 

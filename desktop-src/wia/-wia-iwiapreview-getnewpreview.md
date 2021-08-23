@@ -1,7 +1,7 @@
 ---
-description: Almacena en caché internamente la imagen sin filtrar devuelta por el controlador.
+description: Almacena en caché internamente la imagen sin filtrar devuelta desde el controlador.
 ms.assetid: 09cb242d-d1d6-4130-8b49-0770940471d8
-title: 'IWiaPreview:: GetNewPreview (método) (WIA. h)'
+title: Método IWiaPreview::GetNewPreview (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: c3f1251e7ec1b98d43e616c1ff6f2b3b2aacd8b4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2200452fe586a4755a4560f0f68094e5f107e9e7d69a823bafac4d33bc1c6ce8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965564"
 ---
-# <a name="iwiapreviewgetnewpreview-method"></a>IWiaPreview:: GetNewPreview (método)
+# <a name="iwiapreviewgetnewpreview-method"></a>IWiaPreview::GetNewPreview (método)
 
-Almacena en caché internamente la imagen sin filtrar devuelta por el controlador.
+Almacena en caché internamente la imagen sin filtrar devuelta desde el controlador.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,30 +41,30 @@ HRESULT GetNewPreview(
 
 <dl> <dt>
 
-*pWiaItem2* \[ de\]
+*pWiaItem2* \[ En\]
 </dt> <dd>
 
-Tipo: **[**IWiaItem2**](-wia-iwiaitem2.md) \** _
+Tipo: **[ **IWiaItem2**](-wia-iwiaitem2.md)\***
 
-Especifica un puntero al elemento [_ *IWiaItem2* *](-wia-iwiaitem2.md) para la imagen.
+Especifica un puntero al elemento [**IWiaItem2**](-wia-iwiaitem2.md) de la imagen.
 
 </dd> <dt>
 
-*lFlags* \[ de\]
+*lFlags* \[ En\]
 </dt> <dd>
 
-Tipo: **Long**
+Tipo: **LONG**
 
 Actualmente no se usa. Debe establecerse como cero.
 
 </dd> <dt>
 
-*pWiaTransferCallback* \[ de\]
+*pWiaTransferCallback* \[ En\]
 </dt> <dd>
 
-Tipo: **[**IWiaTransferCallback**](-wia-iwiatransfercallback.md) \** _
+Tipo: **[ **IWiaTransferCallback**](-wia-iwiatransfercallback.md)\***
 
-Especifica un puntero a la interfaz [_ *IWiaTransferCallback* *](-wia-iwiatransfercallback.md) de la aplicación que realiza la llamada.
+Especifica un puntero a la interfaz [**IWiaTransferCallback**](-wia-iwiatransfercallback.md) de la aplicación que realiza la llamada.
 
 </dd> </dl>
 
@@ -72,21 +72,21 @@ Especifica un puntero a la interfaz [_ *IWiaTransferCallback* *](-wia-iwiatransf
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una aplicación debe llamar a **IWiaPreview:: GetNewPreview** antes de llamar a [**IWiaPreview::D etectregions**](-wia-iwiapreview-detectregions.md).
+Una aplicación debe llamar a **IWiaPreview::GetNewPreview** antes de llamar a [**IWiaPreview::D etectRegions**](-wia-iwiapreview-detectregions.md).
 
-**IWiaPreview:: GetNewPreview** establece la propiedad de [**\_ \_ vista previa de DPS de WIA**](-wia-wiaitempropscannerdevice.md) (y lo restablece antes de que se devuelva, a menos que se haya establecido antes). Esto permite que el controlador y el hardware, así como el filtro de procesamiento de imágenes, sepan que el elemento es un examen de vista previa.
+**IWiaPreview::GetNewPreview** establece la propiedad [**WIA \_ DPS \_ PREVIEW**](-wia-wiaitempropscannerdevice.md) (y la restablece antes de que vuelva, a menos que se haya establecido antes). Esto permite que el controlador y el hardware, así como el filtro de procesamiento de imágenes, sepan que el elemento es un examen de vista previa.
 
-Internamente, el componente de vista previa de Windows Image Acquisition (WIA) 2,0 crea una instancia del filtro de procesamiento de imágenes del controlador mediante una llamada a [**getExtension**](-wia-iwiaitem2-getextension.md) en *pWiaItem2*. El componente de vista previa de WIA 2,0 lo hace cuando la aplicación llama a **IWiaPreview:: GetNewPreview**. El componente de vista previa de WIA 2,0 también inicializa el filtro en **IWiaPreview:: GetNewPreview**. El componente de vista previa de WIA 2,0 utiliza la misma instancia de filtro durante una llamada a [**IWiaPreview:: UpdatePreview**](-wia-iwiapreview-updatepreview.md).
+Internamente, el componente de versión preliminar Windows Image Acquisition (WIA) 2.0 crea una instancia del filtro de procesamiento de imágenes del controlador llamando a [**GetExtension**](-wia-iwiaitem2-getextension.md) en *pWiaItem2.* El componente de versión preliminar de WIA 2.0 hace esto cuando la aplicación llama a **IWiaPreview::GetNewPreview**. El componente de versión preliminar de WIA 2.0 también inicializa el filtro en **IWiaPreview::GetNewPreview**. El componente de vista previa de WIA 2.0 usa la misma instancia de filtro durante una llamada a [**IWiaPreview::UpdatePreview**](-wia-iwiapreview-updatepreview.md).
 
-Antes de llamar al componente de vista previa de WIA 2,0, una aplicación debe llamar a [**checkExtension**](-wia-iwiaitem2-checkextension.md) para asegurarse de que el controlador incluye un filtro de procesamiento de imágenes. Debe llamar a **checkExtension** en el elemento que se pasaría a **IWiaPreview:: GetNewPreview**. No es útil proporcionar vistas previas activas sin un filtro de procesamiento de imágenes. Si una aplicación llama a **IWiaPreview:: GetNewPreview** para un controlador sin un filtro de procesamiento de imágenes, se producirá un error en la llamada.
+Antes de llamar al componente de versión preliminar de WIA 2.0, una aplicación debe llamar a [**CheckExtension**](-wia-iwiaitem2-checkextension.md) para asegurarse de que el controlador incluye un filtro de procesamiento de imágenes. Debe llamar a **CheckExtension** en el elemento que pasaría a **IWiaPreview::GetNewPreview**. No es útil proporcionar vistas previas dinámicas sin un filtro de procesamiento de imágenes. Si una aplicación llama a **IWiaPreview::GetNewPreview** para un controlador sin un filtro de procesamiento de imágenes, se producirá un error en la llamada.
 
 ## <a name="examples"></a>Ejemplos
 
-CheckImgFilter comprueba si el controlador tiene un filtro de procesamiento de imágenes. Antes de llamar al componente de vista previa, una aplicación debe asegurarse de que el controlador tiene un filtro de procesamiento de imágenes.
+CheckImgFilter comprueba si el controlador tiene un filtro de procesamiento de imágenes. Antes de llamar al componente de versión preliminar, una aplicación debe asegurarse de que el controlador tiene un filtro de procesamiento de imágenes.
 
 
 ```C++
@@ -134,9 +134,9 @@ CheckImgFilter(
 
 
 
-DownloadPreviewImage descarga los datos de imagen del escáner llamando al método **IWiaPreview:: GetNewPreview** del componente de vista previa. A continuación, llama a DetectSubregions si el usuario de la aplicación desea invocar el filtro de segmentación, que crea un elemento secundario en pWiaItem2 para cada región que detecta. Consulte [**DetectRegions**](-wia-iwiasegmentationfilter-detectregions.md) para el método DetectSubregions que se usa en este ejemplo.
+DownloadPreviewImage descarga los datos de imagen del analizador llamando al método **IWiaPreview::GetNewPreview del** componente de vista previa. A continuación, llama a DetectSubregions si el usuario de la aplicación desea invocar el filtro de segmentación, que crea un elemento secundario en pWiaItem2 para cada región que detecta. Consulte [**DetectRegions para**](-wia-iwiasegmentationfilter-detectregions.md) el método DetectSubregions usado en este ejemplo.
 
-En este ejemplo, el usuario de la aplicación establece `m_bUseSegmentationFilter` una casilla. Si la aplicación lo admite, primero debe comprobar que el controlador tiene un filtro de segmentación mediante una llamada a [**checkExtension**](-wia-iwiaitem2-checkextension.md). Vea **IWiaPreview:: GetNewPreview** para obtener el ejemplo del método CheckImgFilter que muestra cómo se puede hacer esto.
+En este ejemplo, el usuario de la aplicación `m_bUseSegmentationFilter` establece haciendo clic en una casilla. Si la aplicación lo admite, primero debe comprobar que el controlador tiene un filtro de segmentación llamando a [**CheckExtension**](-wia-iwiaitem2-checkextension.md). Vea **IWiaPreview::GetNewPreview para** ver el ejemplo del método CheckImgFilter que muestra cómo se puede hacer esto.
 
 
 ```C++
@@ -220,10 +220,10 @@ DownloadPreviewImage(
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
 
 
 

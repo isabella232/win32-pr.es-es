@@ -1,21 +1,21 @@
 ---
-description: Depurar en DirectShow
+description: Depuración en DirectShow
 ms.assetid: 5ee5865a-ab2a-41f4-ae91-a998fa1df7af
-title: Depurar en DirectShow
+title: Depuración en DirectShow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 73c1d243e7fd757bd965c4c5b61224cec2fcef03
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 8da3921410f800c6c86962c5149b3496afd7aa923da191c4f56104548f2f79c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103906843"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953224"
 ---
-# <a name="debugging-in-directshow"></a>Depurar en DirectShow
+# <a name="debugging-in-directshow"></a>Depuración en DirectShow
 
-Este tema contiene información sobre la depuración de aplicaciones y filtros de DirectShow.
+Este tema contiene información sobre la depuración de DirectShow aplicaciones y filtros.
 
--   [Depurar filtros de DirectShow](debugging-directshow-filters.md)
+-   [Depuración de DirectShow filtros](debugging-directshow-filters.md)
 -   [Sugerencias para la solución de problemas](troubleshooting-tips.md)
 -   [Seguimiento de eventos en DirectShow](event-tracing-in-directshow.md)
 
@@ -23,7 +23,7 @@ Este tema contiene información sobre la depuración de aplicaciones y filtros d
 
 <dl> <dt>
 
-[Tareas básicas de DirectShow](basic-directshow-tasks.md)
+[Tareas DirectShow básicas](basic-directshow-tasks.md)
 </dt> </dl>
 
  

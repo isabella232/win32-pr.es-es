@@ -52,7 +52,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El método libera toda la memoria asignada para los elementos de la colección.
 
@@ -67,7 +67,7 @@ El método libera toda la memoria asignada para los elementos de la colección.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,6 +1,6 @@
 ---
 title: Atributo Move-Tree-State
-description: Este atributo contiene información de estado para un árbol de directorios que se va a mover.
+description: Este atributo contiene información de estado para un árbol de directorios que se está trasladando.
 ms.assetid: 13ec6d05-ed17-4a38-b2ae-7ad175f17b52
 ms.tgt_platform: multiple
 keywords:
@@ -23,20 +23,20 @@ ms.locfileid: "118686996"
 ---
 # <a name="move-tree-state-attribute"></a>Atributo Move-Tree-State
 
-Este atributo contiene información de estado para un árbol de directorios que se va a mover.
+Este atributo contiene información de estado para un árbol de directorios que se está trasladando.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | Move-Tree-State                                       |
 | Ldap-Display-Name | moveTreeState                                         |
 | Size              | \-                                                    |
-| Privilegio actualizar  | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1305                               |
 | System-Id-Guid    | 1f2ac2c8-3b71-11d2-90cc-00c04fd91ab1                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -54,14 +54,14 @@ Este atributo contiene información de estado para un árbol de directorios que 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------|
 | Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Es de un solo valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
@@ -75,14 +75,14 @@ Este atributo contiene información de estado para un árbol de directorios que 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------|
 | Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Es de un solo valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
@@ -96,14 +96,14 @@ Este atributo contiene información de estado para un árbol de directorios que 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------|
 | Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Es de un solo valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
@@ -117,14 +117,14 @@ Este atributo contiene información de estado para un árbol de directorios que 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------|
 | Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Es de un solo valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
@@ -138,14 +138,14 @@ Este atributo contiene información de estado para un árbol de directorios que 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------|
 | Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Es de un solo valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
@@ -159,14 +159,14 @@ Este atributo contiene información de estado para un árbol de directorios que 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------|
 | Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Es de un solo valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
@@ -180,14 +180,14 @@ Este atributo contiene información de estado para un árbol de directorios que 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------|
 | Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Es de un solo valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |

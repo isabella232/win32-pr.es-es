@@ -20,7 +20,7 @@ ms.locfileid: "118793471"
 
 Declare un registro de entrada del sombreador de píxeles.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 dcl \[ \_ pp \] dest \[ .mask\]
 
@@ -32,9 +32,9 @@ Donde:
 
 -   \[\_pp \] es una precisión parcial opcional. Vea [Precisión parcial.](dx9-graphics-reference-asm-ps-instructions-modifiers-ps-2-0.md)
 -   dest es un registro de destino. Debe ser un registro de [color de entrada](dx9-graphics-reference-asm-ps-registers-input-color.md) (vn) o un registro de coordenadas de [textura](dx9-graphics-reference-asm-ps-registers-texture-coordinate.md) (tn).
--   \[.mask \] es una máscara de escritura opcional que controla en qué componentes del registro de destino se puede escribir. Vea [Máscara de escritura del registro de destino.](dx9-graphics-reference-asm-ps-registers-modifiers-write-mask.md)
+-   \[.mask \] es una máscara de escritura opcional que controla en qué componentes del registro de destino se puede escribir. Vea Destination Register Write Mask ( [Máscara de escritura de registro de destino).](dx9-graphics-reference-asm-ps-registers-modifiers-write-mask.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 

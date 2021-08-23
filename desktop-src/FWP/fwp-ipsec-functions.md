@@ -3,29 +3,29 @@ title: Funciones de IPsec
 description: Funciones de IPsec
 ms.assetid: db656c58-7776-44c4-a7ce-c38e59b37c74
 keywords:
-- Funciones IPsec de la API de la plataforma de filtrado de Windows
+- Windows Filtrado de funciones IPsec de la API de plataforma
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 261e767888b4581587ee550bf240c929f6db4531
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 70ccd557011547a06ce0ad232fa84341f56a1b7f7ebdf4281e04bcf715f19922
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105665823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069225"
 ---
 # <a name="ipsec-functions"></a>Funciones de IPsec
 
-Las funciones de la plataforma de filtrado de Windows (WFP) que interactúan con el protocolo de seguridad de Internet (IPsec) son las siguientes.
+Las Windows de plataforma de filtrado de datos (WFP) que interactúan con la seguridad del protocolo de Internet (IPsec) son las siguientes.
 
--   FwpmIPsecTunnelAdd:
+-   FwpmIPsecTunnelAgregue:
     -   [**FwpmIPsecTunnelAdd0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmipsectunneladd0) (Windows Vista)
     -   [**FwpmIPsecTunnelAdd1**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmipsectunneladd1) (Windows 7)
     -   [**FwpmIPsecTunnelAdd2**](/windows/desktop/api/fwpmu/nf-fwpmu-fwpmipsectunneladd2) (Windows 8)
 -   [**FwpmIPsecTunnelDeleteByKey0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmipsectunneldeletebykey0)
--   [**\_Dictado de clave del administrador de claves IPSec \_ \_ \_ \_ CHECK0**](/windows/desktop/api/Fwpmu/nc-fwpmu-ipsec_key_manager_key_dictation_check0)
--   [**El \_ Administrador de claves IPSec \_ \_ dicta \_ KEY0**](/windows/desktop/api/Fwpmu/nc-fwpmu-ipsec_key_manager_dictate_key0)
--   [**\_Administrador de claves IPSec \_ \_ notificar a \_ KEY0**](/windows/desktop/api/fwpmu/nc-fwpmu-ipsec_key_manager_notify_key0)
--   [**Contexto de SA de IPSEC \_ \_ \_ CALLBACK0**](/windows/win32/api/fwpmu/nc-fwpmu-ipsec_sa_context_callback0)
+-   [**COMPROBACIÓN DE \_ DICTADO DE CLAVES DEL ADMINISTRADOR DE CLAVES \_ \_ \_ \_ IPSEC0**](/windows/desktop/api/Fwpmu/nc-fwpmu-ipsec_key_manager_key_dictation_check0)
+-   [**IPSEC \_ KEY \_ MANAGER \_ DICTATE \_ KEY0**](/windows/desktop/api/Fwpmu/nc-fwpmu-ipsec_key_manager_dictate_key0)
+-   [**IPSEC \_ KEY \_ MANAGER \_ NOTIFY \_ KEY0**](/windows/desktop/api/fwpmu/nc-fwpmu-ipsec_key_manager_notify_key0)
+-   [**IPSEC \_ SA \_ CONTEXT \_ CALLBACK0**](/windows/win32/api/fwpmu/nc-fwpmu-ipsec_sa_context_callback0)
 -   [**IPsecDospGetSecurityInfo0**](/windows/desktop/api/Fwpmu/nf-fwpmu-ipsecdospgetsecurityinfo0)
 -   [**IPsecDospGetStatistics0**](/windows/desktop/api/Fwpmu/nf-fwpmu-ipsecdospgetstatistics0)
 -   [**IPsecDospSetSecurityInfo0**](/windows/desktop/api/Fwpmu/nf-fwpmu-ipsecdospsetsecurityinfo0)
@@ -75,6 +75,6 @@ Las funciones de la plataforma de filtrado de Windows (WFP) que interactúan con
     -   [**IPsecSaEnum0**](/windows/desktop/api/Fwpmu/nf-fwpmu-ipsecsaenum0) (Windows Vista)
     -   [**IPsecSaEnum1**](/windows/desktop/api/Fwpmu/nf-fwpmu-ipsecsaenum1) (Windows 7 y versiones posteriores)
 
- 
+ 
 
- 
+ 

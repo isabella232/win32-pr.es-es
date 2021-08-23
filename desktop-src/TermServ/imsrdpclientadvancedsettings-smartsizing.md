@@ -1,26 +1,26 @@
 ---
-title: Propiedad SmartSizing de IMsRdpClientAdvancedSettings
-description: Especifica si la presentación se debe escalar para ajustarse al área cliente del control. Tenga en cuenta que las barras de desplazamiento no aparecen cuando la propiedad SmartSizing está habilitada.
+title: IMsRdpClientAdvancedSettings SmartSizing, propiedad
+description: Especifica si la pantalla se debe escalar para ajustarse al área de cliente del control. Tenga en cuenta que las barras de desplazamiento no aparecen cuando la propiedad SmartSizing está habilitada.
 ms.assetid: d0b93129-5f84-49c5-bf8c-048075ac1481
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad SmartSizing
-- Propiedad SmartSizing Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings, propiedad SmartSizing
-- Propiedad SmartSizing Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings2, propiedad SmartSizing
-- Propiedad SmartSizing Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings3, propiedad SmartSizing
-- Propiedad SmartSizing Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings4, propiedad SmartSizing
-- Propiedad SmartSizing Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad SmartSizing
-- Propiedad SmartSizing Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad SmartSizing
-- Propiedad SmartSizing Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad SmartSizing
-- Propiedad SmartSizing Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad SmartSizing
+- Propiedad SmartSizing Servicios de Escritorio remoto
+- Propiedad SmartSizing Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad SmartSizing
+- Propiedad SmartSizing Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad SmartSizing
+- Propiedad SmartSizing Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad SmartSizing
+- Propiedad SmartSizing Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad SmartSizing
+- Propiedad SmartSizing Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad SmartSizing
+- Propiedad SmartSizing Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad SmartSizing
+- Propiedad SmartSizing Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad SmartSizing
+- Propiedad SmartSizing Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad SmartSizing
 topic_type:
 - apiref
 api_name:
@@ -54,22 +54,22 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 49ec2a825725e01d876b9e8658f215de6595f32f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b944dcb5d03e579817b2789e2bbefd5a3da8e20dd86c5a85ca7394201f6d36b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104421929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118855361"
 ---
-# <a name="imsrdpclientadvancedsettingssmartsizing-property"></a>IMsRdpClientAdvancedSettings:: SmartSizing (propiedad)
+# <a name="imsrdpclientadvancedsettingssmartsizing-property"></a>IMsRdpClientAdvancedSettings::SmartSizing, propiedad
 
-Especifica si la presentación se debe escalar para ajustarse al área cliente del control. Tenga en cuenta que las barras de desplazamiento no aparecen cuando la propiedad **SmartSizing** está habilitada.
+Especifica si la pantalla se debe escalar para ajustarse al área de cliente del control. Tenga en cuenta que las barras de desplazamiento no aparecen cuando la **propiedad SmartSizing** está habilitada.
 
 A diferencia de la mayoría de las demás propiedades, esta propiedad se puede establecer cuando el control está conectado.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -86,21 +86,21 @@ HRESULT get_SmartSizing(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Establezca este parámetro en **Variant \_ false** para deshabilitar la característica o la **variante \_ true** para habilitar la característica.
+Establezca este parámetro en **VARIANT \_ FALSE para** deshabilitar la característica o VARIANT **\_ TRUE** para habilitar la característica.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                        |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                  |

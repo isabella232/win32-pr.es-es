@@ -41,7 +41,7 @@ Tipo Texture2D ([tal como existe en El modelo de sombreador 4)](dx-graphics-hlsl
 | [**GetDimensions**](sm5-object-texture2d-getdimensions.md)             | Obtiene las dimensiones de recursos.                                                                                                                       |
 | [**Cargar**](texture2d-load.md)                                          | Lee los datos de textura.                                                                                                                                 |
 | [**Mips. Operador\[\]\[\]**](sm5-object-texture2d-mipsoperatorindex.md) | Obtiene una variable de recurso de solo lectura.                                                                                                                 |
-| [**Operator\[\]**](sm5-object-texture2d-operatorindex.md)              | Obtiene una variable de recurso de solo lectura.                                                                                                                 |
+| [**Operador\[\]**](sm5-object-texture2d-operatorindex.md)              | Obtiene una variable de recurso de solo lectura.                                                                                                                 |
 | [**Muestra**](texture-sample-overload.md)                               | Muestrea una textura.                                                                                                                                  |
 | [**SampleBias**](texture2d-samplebias.md)                              | Muestrea una textura después de aplicar el valor de sesgo al nivel de mapa mip.                                                                               |
 | [**SampleCmp**](texture2d-samplecmp.md)                                | Muestrea una textura mediante un valor de comparación para rechazar muestras.                                                                                      |
@@ -61,7 +61,7 @@ Este objeto se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                | Compatible |
 |-----------------------------------------------------------------------------|-----------|
-| [Modelos de sombreador 5](d3d11-graphics-reference-sm5.md) y superiores | sí       |
+| [Modelos de sombreador 5](d3d11-graphics-reference-sm5.md) y superiores | Sí       |
 
 
 
@@ -79,7 +79,7 @@ Este objeto es compatible con los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

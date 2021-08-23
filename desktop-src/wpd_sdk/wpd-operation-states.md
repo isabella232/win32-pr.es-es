@@ -20,11 +20,11 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118696488"
 ---
-# <a name="wpd_operation_states-enumeration"></a>Enumeración \_ WPD OPERATION \_ STATES
+# <a name="wpd_operation_states-enumeration"></a>Enumeración WPD \_ OPERATION \_ STATES
 
 Los **valores de \_ enumeración WPD OPERATION \_ STATES** describen el estado actual de una operación en curso.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -94,7 +94,7 @@ Se anula la operación.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Estos valores se reciben en la devolución de llamada definida por la aplicación ([**IPortableDeviceEventCallback**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledeviceeventcallback)).
 
@@ -108,7 +108,7 @@ Estos valores se reciben en la devolución de llamada definida por la aplicació
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

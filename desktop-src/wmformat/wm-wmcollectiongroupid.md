@@ -3,7 +3,7 @@ title: WM/WMCollectionGroupID
 description: El atributo WM/WMCollectionGroupID contiene un GUID que identifica el grupo de recopilación.
 ms.assetid: 5cfa1747-ce3b-4e8d-bcce-84fb719123e8
 keywords:
-- Formato multimedia de Windows WM/WMCollectionGroupID
+- Formato multimedia de windows WM/WMCollectionGroupID
 topic_type:
 - apiref
 api_name:
@@ -31,11 +31,11 @@ g \_ wszWMWMCollectionGroupID
 
 **GUID DE \_ TIPO \_ WMT**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El contenido se identifica mediante Windows media mediante tres valores: **WM/WMCollectionGroupID**, **WM/WMCollectionID** y **WM/WMContentID**. Estos valores identifican el contenido, la colección a la que pertenece y el grupo al que pertenece la colección. Los tres valores se rellenan mediante Reproductor de Windows Media cuando se recuperan los metadatos del contenido. Puede hacer que la aplicación registre estos valores y usarlos para identificar el contenido, pero no debe cambiarlos si están presentes.
+El contenido se identifica mediante Windows Media mediante tres valores: **WM/WMCollectionGroupID**, **WM/WMCollectionID y** **WM/WMContentID**. Estos valores identifican el contenido, la colección a la que pertenece y el grupo al que pertenece la colección. Los tres valores se rellenan mediante Reproductor de Windows Media cuando se recuperan los metadatos del contenido. Puede hacer que la aplicación registre estos valores y usarlos para identificar el contenido, pero no debe cambiarlos si están presentes.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

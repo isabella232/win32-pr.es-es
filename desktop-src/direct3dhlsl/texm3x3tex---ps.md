@@ -20,7 +20,7 @@ ms.locfileid: "118787564"
 
 Realiza una multiplicación de matriz 3x3 y usa el resultado para realizar una búsqueda de textura. texm3x3tex debe usarse con dos [instrucciones de texm3x3pad: ps.](texm3x3pad---ps.md)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
@@ -36,7 +36,7 @@ where
 -   dst es el registro de destino.
 -   src es un registro de origen.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Método INapSoHConstructor AppendAttribute (NapProtocol. h)
-description: Agrega un TLV al final del búfer de SoH.
+title: Método AppendAttribute de INapSoHConstructor (NapProtocol.h)
+description: Agrega un TLV al final del búfer soH.
 ms.assetid: 5706ceaa-757f-49d2-90e0-011415853875
 keywords:
 - Método AppendAttribute NAP
 - Método AppendAttribute NAP, interfaz INapSoHConstructor
-- Interfaz INapSoHConstructor NAP, método AppendAttribute
+- INapSoHConstructor interface NAP , AppendAttribute (método)
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc10fad9c775d324822700b77afed4e65a798db6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8d7d7ca4636d0eaeea35054dc5330b17f1360dffec5231922ad0acc357231c3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118939592"
 ---
-# <a name="inapsohconstructorappendattribute-method"></a>INapSoHConstructor:: AppendAttribute (método)
+# <a name="inapsohconstructorappendattribute-method"></a>INapSoHConstructor::AppendAttribute (método)
 
 > [!Note]  
 > La plataforma de protección de acceso a redes no está disponible a partir de Windows 10
 
  
 
-El método **INapSoHConstructor:: AppendAttribute** agrega un TLV al final del búfer de SOH.
+El **método INapSoHConstructor::AppendAttribute** agrega un TLV al final del búfer de SoH.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,17 +48,17 @@ HRESULT AppendAttribute(
 
 <dl> <dt>
 
-*tipo* \[ de de\]
+*type* \[ En\]
 </dt> <dd>
 
-Una enumeración [**SoHAttributeType**](sohattributetype-enum.md) que indica el tipo de atributo del nuevo TLV.
+Enumeración [**SoHAttributeType**](sohattributetype-enum.md) que indica el tipo de atributo del nuevo TLV.
 
 </dd> <dt>
 
-*valor* \[ de de\]
+*value* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura [**SoHAttributeValue**](sohattributevalue-union.md) que contiene el valor para el nuevo TLV.
+Puntero a una [**estructura SoHAttributeValue**](sohattributevalue-union.md) que contiene el valor del nuevo TLV.
 
 </dd> </dl>
 
@@ -70,19 +70,19 @@ También se pueden devolver otros códigos de error específicos de COM.
 
 | Código devuelto                                                                                     | Descripción                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <dl> <dt>**S \_ Aceptar**</dt> </dl>           | Operación realizada correctamente.<br/>                                    |
+| <dl> <dt>**S \_ Ok (Aceptar)**</dt> </dl>           | Operación realizada correctamente.<br/>                                    |
 | <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Error de permisos, acceso denegado.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Límite de recursos del sistema, no se pudo realizar la operación.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | El límite de recursos del sistema no pudo realizar la operación.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El TLV [**sohAttributeTypeSystemHealthId**](sohattributetype-enum.md) no debe agregarse mediante esta función. Se agrega como primer TLV de [**INapSoHConstructor:: Initialize**](inapsohconstructor-initialize-method.md) a paquetes SOH recién construidos.
+El [**TLV sohAttributeTypeSystemHealthId**](sohattributetype-enum.md) no debe agregarse mediante esta función. [**INapSoHConstructor::Initialize**](inapsohconstructor-initialize-method.md) agrega como el primer TLV a los paquetes SOH recién construidos.
 
-Al anexar un atributo que utilizará el sistema NAP, no debe cifrarse ni modificarse de ninguna manera. Si el HealthEntity requiere la comprobación de la integridad y el cifrado (MACs) de la información privada, solo debe incluirse en el atributo [**sohAttributeTypeVendorSpecific**](sohattributetype-enum.md) .
+Al anexar un atributo que el sistema Nap consumirá, no debe cifrarse ni modificarse de ninguna manera. Si HealthEntity requiere la comprobación de cifrado o integridad (MAC) de información privada, solo debe incluirse en el atributo [**sohAttributeTypeVendorSpecific.**](sohattributetype-enum.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -90,10 +90,10 @@ Al anexar un atributo que utilizará el sistema NAP, no debe cifrarse ni modific
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                       |
-| Encabezado<br/>                   | <dl> <dt>NapProtocol. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapProtocol. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                       |
+| Header<br/>                   | <dl> <dt>NapProtocol.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapProtocol.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qutil.dll</dt> </dl>       |
 
 

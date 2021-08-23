@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TTM_RELAYEVENT (commctrl. h)
-description: Pasa un mensaje del mouse a un control ToolTip para su procesamiento.
+title: TTM_RELAYEVENT mensaje (Commctrl.h)
+description: Pasa un mensaje del mouse a un control de información sobre herramientas para su procesamiento.
 ms.assetid: 76d6d0ed-f357-479e-83d8-03d2e988cbd3
 keywords:
-- TTM_RELAYEVENT controles de mensajes de Windows
+- TTM_RELAYEVENT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8648303a318f1f71eb16e8070235910ecfb8760
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 051a0b7ab8ecd93b15ceb9187eefd6f566b55d653b751889cd29acec58366716
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118166368"
 ---
-# <a name="ttm_relayevent-message"></a>TTM \_ RELAYEVENT
+# <a name="ttm_relayevent-message"></a>Mensaje \_ RELAYEVENT de TTM
 
-Pasa un mensaje del mouse a un control ToolTip para su procesamiento.
+Pasa un mensaje del mouse a un control de información sobre herramientas para su procesamiento.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,14 +32,14 @@ Pasa un mensaje del mouse a un control ToolTip para su procesamiento.
 *wParam* 
 </dt> <dd>
 
-Debe ser cero. **Windows 7 y versiones posteriores:** Si la posición de la información sobre herramientas se desplaza desde la posición del cursor (para que no esté obstruida por un dedo o un dispositivo señalador), este parámetro puede contener información adicional tomada del mensaje de [**\_ MOUSEMOVE de WM**](/windows/desktop/inputdev/wm-mousemove) . Recupere esta información adicional con [**GetMessageExtraInfo**](/windows/desktop/api/winuser/nf-winuser-getmessageextrainfo).
+Debe ser cero. **Windows 7 y versiones posteriores:** Si la posición de la información sobre herramientas se desplaza desde la posición del cursor (con el fin de que un dedo o un dispositivo que señala no se obstruya), este parámetro puede contener información adicional tomada del mensaje [**\_ MOUSEMOVE**](/windows/desktop/inputdev/wm-mousemove) de WM. Recupere esta información adicional [**con GetMessageExtraInfo.**](/windows/desktop/api/winuser/nf-winuser-getmessageextrainfo)
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**MSG**](/windows/win32/api/winuser/ns-winuser-msg) que contiene el mensaje que se va a retransmitir.
+Puntero a una [**estructura MSG**](/windows/win32/api/winuser/ns-winuser-msg) que contiene el mensaje que se retransmite.
 
 </dd> </dl>
 
@@ -47,30 +47,30 @@ Puntero a una estructura [**MSG**](/windows/win32/api/winuser/ns-winuser-msg) qu
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un control ToolTip solo procesa los mensajes siguientes que le pasa el mensaje **\_ RELAYEVENT de TTM** :
+Un control de información sobre herramientas procesa solo los siguientes mensajes pasados por el **mensaje \_ RELAYEVENT de TTM:**
 
--   LBUTTONDOWN de WM \_
--   LBUTTONUP de WM \_
--   MBUTTONDOWN de WM \_
--   MBUTTONUP de WM \_
--   MOUSEMOVE de WM \_
--   NCMOUSEMOVE de WM \_
--   RBUTTONDOWN de WM \_
--   RBUTTONUP de WM \_
+-   WM \_ LBUTTONDOWN
+-   WM \_ LBUTTONUP
+-   WM \_ MBUTTONDOWN
+-   WM \_ MBUTTONUP
+-   WM \_ MOUSEMOVE
+-   WM \_ NCMOUSEMOVE
+-   WM \_ RBUTTONDOWN
+-   WM \_ RBUTTONUP
 
-El resto de los mensajes se omiten.
+Todos los demás mensajes se omiten.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

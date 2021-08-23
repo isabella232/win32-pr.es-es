@@ -1,7 +1,7 @@
 ---
 description: La función FindPropertyInstance busca la primera instancia de la propiedad especificada por el parámetro hProperty.
 ms.assetid: e994503d-2f32-4fa2-bba9-ff66c9d558dc
-title: Función FindPropertyInstance (Netmon. h)
+title: Función FindPropertyInstance (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 21f94a3e4a1eb9619b39cff534a778235980a278
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ac8b7d34b33bb76bfffc26b3ae6fc455857fafb65a9a2aef7e91fd0c2763adc2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666289"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118938586"
 ---
-# <a name="findpropertyinstance-function"></a>FindPropertyInstance función)
+# <a name="findpropertyinstance-function"></a>Función FindPropertyInstance
 
-La función **FindPropertyInstance** busca la primera instancia de la propiedad especificada por el parámetro *hProperty* .
+La **función FindPropertyInstance** busca la primera instancia de la propiedad especificada por el *parámetro hProperty.*
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,17 +40,17 @@ LPPROPERTYINST WINAPI FindPropertyInstance(
 
 <dl> <dt>
 
-*hFrame* \[ de\]
+*hFrame* \[ En\]
 </dt> <dd>
 
-Identificador del marco. El identificador del marco se puede recuperar mediante una llamada a la función [GetFrame](getframe.md) .
+Identificador del marco. El identificador de marco se puede recuperar mediante una llamada a la [función GetFrame.](getframe.md)
 
 </dd> <dt>
 
-*hProperty* \[ de\]
+*hProperty* \[ En\]
 </dt> <dd>
 
-Identificador de la propiedad que se desea buscar. El identificador de propiedad se puede recuperar mediante una llamada a la función [GetProperty](getproperty.md) .
+Identificador de la propiedad que desea buscar. El identificador de propiedad se puede recuperar mediante una llamada a la [función GetProperty.](getproperty.md)
 
 </dd> </dl>
 
@@ -58,13 +58,13 @@ Identificador de la propiedad que se desea buscar. El identificador de propiedad
 
 Si la función es correcta (es decir, si se encuentra la propiedad), el valor devuelto es un puntero a la primera instancia de la propiedad.
 
-Si la función no se realiza correctamente, el valor devuelto es **null**.
+Si la función no se realiza correctamente, el valor devuelto es **NULL.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para recuperar la siguiente instancia de la propiedad, llame a [FindPropertyInstanceRestart](findpropertyinstancerestart.md).
+Para recuperar la siguiente instancia de la propiedad , llame a [FindPropertyInstanceRestart](findpropertyinstancerestart.md).
 
-Los [*expertos*](e.md) y [*analizadores*](p.md)pueden llamar a la función **FindPropertyInstance** .
+[*Los*](e.md) expertos [*y analizadores pueden*](p.md)llamar a **la función FindPropertyInstance.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,8 +74,8 @@ Los [*expertos*](e.md) y [*analizadores*](p.md)pueden llamar a la función **Fin
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Biblioteca<br/>                  | <dl> <dt>Nmapi. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Biblioteca<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 

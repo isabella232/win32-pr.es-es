@@ -1,7 +1,7 @@
 ---
-description: Restablece el recuento interno de interfaces recuperadas en la enumeración.
+description: Restablece el recuento interno de interfaces recuperadas en la enumeración .
 ms.assetid: fd79b4be-cc0c-49b3-9874-384858e21ecf
-title: 'IEnumUserIdentity:: RESET (método) (Msident. h)'
+title: Método IEnumUserIdentity::Reset (Msident.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Msident.dll
-ms.openlocfilehash: 05b3c5d38575fa1b2957c28070d642ad15f846ba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: df70048760af47b380308eddab4ef5c044c8f6881374c83002944d6d76836ed5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276740"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118969424"
 ---
-# <a name="ienumuseridentityreset-method"></a>IEnumUserIdentity:: RESET (método)
+# <a name="ienumuseridentityreset-method"></a>IEnumUserIdentity::Reset (Método)
 
-\[**IEnumUserIdentity:: RESET** no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, use [cuentas de usuario con cambio rápido de usuario y escritorio remoto](fastuserswitching.md).\]
+\[**IEnumUserIdentity::Reset** no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, use [cuentas de usuario con cambio rápido de usuario y Escritorio remoto](fastuserswitching.md).\]
 
-Restablece el recuento interno de interfaces recuperadas en la enumeración.
+Restablece el recuento interno de interfaces recuperadas en la enumeración .
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,11 +43,11 @@ Este método no tiene parámetros.
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-[**IEnumUserIdentity**](ienumuseridentity.md) mantiene un recuento interno que especifica la interfaz que se va a recuperar. Al llamar a este método, se restablecerá el valor de este recuento.
+[**IEnumUserIdentity mantiene**](ienumuseridentity.md) un recuento interno que especifica qué interfaz se va a recuperar. Al llamar a este método se restablecerá el valor de este recuento.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,12 +55,12 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                  |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                         |
-| Encabezado<br/>                   | <dl> <dt>Msident. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Msident. idl</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msident.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Msident.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Msident.dll</dt> </dl> |
 
 
@@ -72,13 +72,13 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 [**IEnumUserIdentity**](ienumuseridentity.md)
 </dt> <dt>
 
-[**IEnumUserIdentity:: Skip**](ienumuseridentity-skip.md)
+[**IEnumUserIdentity::Skip**](ienumuseridentity-skip.md)
 </dt> <dt>
 
-[**IEnumUserIdentity:: GetCount**](ienumuseridentity-getcount.md)
+[**IEnumUserIdentity::GetCount**](ienumuseridentity-getcount.md)
 </dt> <dt>
 
-[**IEnumUserIdentity:: Next**](ienumuseridentity-next.md)
+[**IEnumUserIdentity::Next**](ienumuseridentity-next.md)
 </dt> </dl>
 
  

@@ -1,22 +1,22 @@
 ---
-description: Las funciones de fecha y hora recuperan y establecen la fecha y la hora del sistema y de los archivos individuales. En esta información general se describe cómo usar estas funciones para examinar y modificar fechas y horas.
+description: Las funciones de fecha y hora recuperan y establecen la fecha y hora de los archivos individuales y del sistema. En esta introducción se describe cómo usar estas funciones para examinar y modificar fechas y horas.
 ms.assetid: ffa71fb2-e343-455b-a853-324cc66a40c6
 title: Time
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 061447a5d703fe6575fa0e3a54194116cc8aa4ae
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 34633b0ff087760b99cd9fb000775145a98423766264dad10f050eadf5da4178
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666938"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118884506"
 ---
 # <a name="time"></a>Time
 
-Las funciones de fecha y hora recuperan y establecen la fecha y la hora del sistema y de los archivos individuales. En esta información general se describe cómo usar estas funciones para examinar y modificar fechas y horas.
+Las funciones de fecha y hora recuperan y establecen la fecha y hora de los archivos individuales y del sistema. En esta introducción se describe cómo usar estas funciones para examinar y modificar fechas y horas.
 
--   [Acerca del tiempo](about-time.md)
--   [Con tiempo](using-time.md)
+-   [Ya era hora](about-time.md)
+-   [Uso del tiempo](using-time.md)
 -   [Referencia de tiempo](time-reference.md)
 
  

@@ -1,8 +1,8 @@
 ---
-description: Valor booleano que indica si el componente de año del valor DateTime de CIM contiene un intervalo o un valor de carácter comodín.
+description: Valor booleano que indica si el componente year del valor datetime de CIM contiene un intervalo o un valor comodín.
 ms.assetid: afac0a08-7bd0-42f1-b5a7-8664f9db8615
 ms.tgt_platform: multiple
-title: Propiedad SWbemDateTime. YearSpecified (Wbemdisp. h)
+title: Propiedad SWbemDateTime.YearSpecified (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,22 +17,22 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 3ad6ae5b120c2b38d7b6170951ef30b3b19f5295
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2cb8a3733d6aaf5679c47d0cf61ca05b2154b57edfd64e5152c0da1f8c822dd5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105706067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118815968"
 ---
-# <a name="swbemdatetimeyearspecified-property"></a>Propiedad SWbemDateTime. YearSpecified
+# <a name="swbemdatetimeyearspecified-property"></a>SWbemDateTime.YearSpecified, propiedad
 
-La propiedad **YearSpecified** del objeto [**SWbemDateTime**](swbemdatetime.md) es un valor booleano que indica si el componente de año del valor DateTime de CIM contiene un intervalo o un valor de carácter comodín. Si **YearSpecified** es **true** y [**IsInterval**](swbemdatetime-isinterval.md) es **false**, [**SWbemDateTime. Year**](swbemdatetime-year.md) contiene un valor DateTime. Un valor DateTime que contiene un intervalo no se puede convertir en el formato de **\_ fecha VT** o en el formato **FILETIME** . Si **YearSpecified** es **false** y **IsInterval** es **true**, **SWbemDateTime. Year** contiene un intervalo.
+La **propiedad YearSpecified** del objeto [**SWbemDateTime**](swbemdatetime.md) es un valor booleano que indica si el componente year del valor datetime de CIM contiene un intervalo o un valor comodín. Si **YearSpecified** es **TRUE e** [**IsInterval**](swbemdatetime-isinterval.md) es **FALSE,** [**SWbemDateTime.Year**](swbemdatetime-year.md) contiene un valor datetime. Un valor datetime que contiene un intervalo no se puede convertir al formato **\_ VT DATE** o **FILETIME.** Si **YearSpecified** es **FALSE e** **IsInterval** es **TRUE,** **SWbemDateTime.Year** contiene un intervalo.
 
-Para obtener una explicación de esta sintaxis, vea [convenciones de documentos para la API de scripting](document-conventions-for-the-scripting-api.md).
+Para obtener una explicación de esta sintaxis, vea [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -45,7 +45,7 @@ SWbemDateTime.YearSpecified As Boolean
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener ejemplos del uso del objeto [**SWbemDateTime**](swbemdatetime.md) para convertir valores de fecha y [**hora**](datetime.md) de CIM en el formato **FILETIME** o en el formato de **\_ fecha de VT** , vea [tareas de WMI: fechas y horas](wmi-tasks--dates-and-times.md). Para obtener una descripción del formato de fecha y hora **de CIM,** consulte [formato de fecha y hora](date-and-time-format.md).
+Para obtener ejemplos de cómo usar el objeto [**SWbemDateTime**](swbemdatetime.md) para convertir valores [**DATETIME**](datetime.md) de CIM a y desde el formato **FILETIME** o el formato **VT \_ DATE,** vea [Wmi Tasks: Dates and Times](wmi-tasks--dates-and-times.md). Para obtener una descripción del formato **DATETIME de** CIM, vea [Formato de fecha y hora](date-and-time-format.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,11 +55,11 @@ Para obtener ejemplos del uso del objeto [**SWbemDateTime**](swbemdatetime.md) p
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemDateTime<br/>                                                         |
-| IID<br/>                      | \_ISWBEMDATETIME IID<br/>                                                          |
+| IID<br/>                      | IID \_ ISWbemDateTime<br/>                                                          |
 
 
 
@@ -67,13 +67,13 @@ Para obtener ejemplos del uso del objeto [**SWbemDateTime**](swbemdatetime.md) p
 
 <dl> <dt>
 
-[**SWbemDateTime. Year**](swbemdatetime-year.md)
+[**SWbemDateTime.Year**](swbemdatetime-year.md)
 </dt> <dt>
 
 [**SWbemDateTime**](swbemdatetime.md)
 </dt> <dt>
 
-[DATETIME](datetime.md)
+[Datetime](datetime.md)
 </dt> </dl>
 
  

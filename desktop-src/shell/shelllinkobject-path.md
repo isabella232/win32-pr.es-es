@@ -1,7 +1,7 @@
 ---
 description: Obtiene o establece la ruta de acceso al objeto de vínculo.
 ms.assetid: ddb5be91-7c21-46c8-949e-bdd973e11b6c
-title: Propiedad ShellLinkObject. Path (Shldisp. h)
+title: Propiedad ShellLinkObject.Path (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,20 +13,20 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: ac6b6f1168724f3808462088dc7e5907ec0cec58
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d3eb2418478445dbae9b3f9a0f9e5ba3dde7013854ab3bef8b8f41188d4000e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279512"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968394"
 ---
-# <a name="shelllinkobjectpath-property"></a>ShellLinkObject. Path (propiedad)
+# <a name="shelllinkobjectpath-property"></a>Propiedad ShellLinkObject.Path
 
 Obtiene o establece la ruta de acceso al objeto de vínculo.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```JScript
@@ -38,13 +38,13 @@ ShellLinkObject.Path(sPath) = strPath
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Ruta de acceso completa del objeto de vínculo.
+la ruta de acceso completa del objeto de vínculo.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso correcto de esta propiedad en JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se muestra el uso adecuado de esta propiedad en JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -85,7 +85,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -174,11 +174,11 @@ End Sub
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo para aplicaciones de escritorio de Windows 2000 Professional con SP3 \[\]<br/>                                           |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional solo con aplicaciones de escritorio sp3 \[\]<br/>                                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 

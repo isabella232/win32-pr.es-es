@@ -20,7 +20,7 @@ ms.locfileid: "118794470"
 
 Salga del bucle actual en el [endloop](endloop---ps.md) más cercano: ps o [endrep - ps](endrep---ps.md), en función de una comparación por componente.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
@@ -35,7 +35,7 @@ Donde:
 
 -   \_comp es una comparación escalar (o única) entre los dos registros de origen. Puede tener uno de los valores siguientes: 
 
-    | Sintaxis | De comparación            |
+    | Syntax | De comparación            |
     |--------|-----------------------|
     | \_Gt   | Mayor que          |
     | \_Lt   | Menor que             |
@@ -51,7 +51,7 @@ Donde:
 -   src0 es un registro de origen. Es necesario replicar swzzle si se selecciona un único componente.
 -   src1 es un registro de origen. Es necesario replicar swzzle si se selecciona un único componente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta instrucción se admite en las versiones siguientes.
 

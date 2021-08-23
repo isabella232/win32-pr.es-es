@@ -1,9 +1,9 @@
 ---
-title: 'Texture2DArray:: GatherCmpBlue (S, Float, Float, int) (función)'
-description: 'En el caso de cuatro valores de textura que se utilizarían en una operación de filtrado bilineal, devuelve una comparación de su componente azul con respecto a un valor de comparación. | Texture2DArray:: GatherCmpBlue (S, Float, Float, int) (función)'
+title: Función Texture2DArray::GatherCmpBlue(S,float,float,int)
+description: Para cuatro valores de texel que se usarían en una operación de filtrado bi lineal, devuelve una comparación de su componente azul con un valor de comparación. | Función Texture2DArray::GatherCmpBlue(S,float,float,int)
 ms.assetid: 5fa23e27-368a-4c55-b6d6-33506c932a43
 keywords:
-- GatherCmpBlue de función HLSL
+- Función GatherCmpBlue HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 42c645333cc45c6de55a609439445936f65b85f4
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 8b8783bf9c8fcb628d6d67a2e099877d67de7c84229d8f8f8e48769386b12e6e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103820634"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985898"
 ---
-# <a name="texture2darraygathercmpbluesfloatfloatint-function"></a>Texture2DArray:: GatherCmpBlue (S, Float, Float, int) (función)
+# <a name="texture2darraygathercmpbluesfloatfloatint-function"></a>Función Texture2DArray::GatherCmpBlue(S,float,float,int)
 
-En el caso de cuatro valores de textura que se utilizarían en una operación de filtrado bilineal, devuelve una comparación de su componente azul con respecto a un valor de comparación.
+Para cuatro valores de texel que se usarían en una operación de filtrado bi lineal, devuelve una comparación de su componente azul con un valor de comparación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,16 +44,16 @@ float4 GatherCmpBlue(
 
 Tipo: **SamplerComparisonState**
 
-Índice de muestra de base cero.
+Índice de sampler de base cero.
 
 </dd> <dt>
 
-*Ubicación* \[ de de\]
+*ubicación* \[ En\]
 </dt> <dd>
 
 Tipo: **float3**
 
-Coordenadas de ejemplo (u, v).
+Coordenadas de ejemplo (u,v).
 
 </dd> <dt>
 
@@ -62,14 +62,14 @@ Coordenadas de ejemplo (u, v).
 
 Tipo: **float**
 
-Valor que se va a comparar cada uno con cada valor muestreado.
+Valor que se compara con cada valor muestreado.
 
 </dd> <dt>
 
-*desplazamiento* \[ de\]
+*desplazamiento* \[ En\]
 </dt> <dd>
 
-Tipo: **INT2**
+Tipo: **int2**
 
 Desplazamiento que se aplica a la coordenada de textura antes del muestreo.
 
@@ -77,19 +77,19 @@ Desplazamiento que se aplica a la coordenada de textura antes del muestreo.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **FLOAT4**
+Tipo: **float4**
 
 Un valor de cuatro componentes, cada componente es el resultado de una comparación por componente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los ejemplos de textura se pueden usar para la interpolación bilineal.
+Las muestras de textura se pueden usar para la interpolación bilineal.
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -101,10 +101,10 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
 <dl> <dt>
 
-[Métodos GatherCmpBlue](texture2darray-gathercmpblue.md)
+[Métodos de GatherCmpBlue](texture2darray-gathercmpblue.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

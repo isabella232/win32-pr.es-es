@@ -1,7 +1,7 @@
 ---
 description: Recupera el objeto IContextNode que es el destino de este IContextLink.
 ms.assetid: 7e185e69-821b-409b-bc58-d89a4aefeb23
-title: 'IContextLink:: GetDestinationNode (método) (IACom. h)'
+title: Método IContextLink::GetDestinationNode (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 86d34bfcca39f7df9d9010e8dae32747ca8f1d27
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1a11d9021d4299a1823fee57ed9a80237b4896459b0396a8ba4b140bd377bb80
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118967461"
 ---
-# <a name="icontextlinkgetdestinationnode-method"></a>IContextLink:: GetDestinationNode (método)
+# <a name="icontextlinkgetdestinationnode-method"></a>IContextLink::GetDestinationNode (método)
 
-Recupera el objeto [**IContextNode**](icontextnode.md) que es el destino de este [**IContextLink**](icontextlink.md).
+Recupera el objeto [**IContextNode**](icontextnode.md) que es el destino de [**este objeto IContextLink.**](icontextlink.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,27 +39,27 @@ HRESULT GetDestinationNode(
 
 <dl> <dt>
 
-*ppDstContextNodeId* \[ enuncia\]
+*ppDstContextNodeId* \[ out\]
 </dt> <dd>
 
-Un puntero al objeto [**IContextNode**](icontextnode.md) que es el destino de este [**IContextLink**](icontextlink.md).
+Puntero al objeto [**IContextNode**](icontextnode.md) que es el destino de [**este objeto IContextLink.**](icontextlink.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Caution]  
-> Para evitar una pérdida de memoria, llame a [**IUnknown:: Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) en \* *ppDstContextNodeId* cuando ya no necesite usar el nodo de destino.
+> Para evitar una pérdida de memoria, llame a [**IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) en \* *ppDstContextNodeId* cuando ya no necesite usar el nodo de destino.
 
  
 
-Si el objeto [**IContextLink**](icontextlink.md) se vincula entre un nodo que contiene escritura y un nodo que contiene dibujos, el nodo de destino es generalmente el nodo que contiene la escritura.
+Si el [**objeto IContextLink**](icontextlink.md) se vincula entre un nodo que contiene escritura y un nodo que contiene dibujo, el nodo de destino suele ser el nodo que contiene escritura.
 
-Si el objeto [**IContextLink**](icontextlink.md) tiene un tipo de vínculo de encloses (vea [**IContextLink:: GetContextLinkDirection**](icontextlink-getcontextlinkdirection.md)), el nodo de destino es el objeto [**IContextNode**](icontextnode.md) que se incluye.
+Si el [**objeto IContextLink**](icontextlink.md) tiene un tipo de vínculo Encloses (vea [**IContextLink::GetContextLinkDirection),**](icontextlink-getcontextlinkdirection.md)el nodo de destino es el objeto [**IContextNode**](icontextnode.md) que se incluye.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,9 +67,9 @@ Si el objeto [**IContextLink**](icontextlink.md) tiene un tipo de vínculo de en
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -87,7 +87,7 @@ Si el objeto [**IContextLink**](icontextlink.md) tiene un tipo de vínculo de en
 [**ContextLinkDirection**](contextlinkdirection.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

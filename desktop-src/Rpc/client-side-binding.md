@@ -1,23 +1,23 @@
 ---
 title: Enlace del lado cliente
-description: Los identificadores de enlace se componen de una secuencia de protocolo, el nombre o la dirección de un equipo host de programa de servidor y un punto de conexión de programa de servidor. Por lo tanto, el programa cliente debe obtener o proporcionar esta información para crear un enlace.
+description: Los identificadores de enlace se componen de una secuencia de protocolo, el nombre o la dirección de un equipo host del programa de servidor y un punto de conexión de programa de servidor. Por lo tanto, el programa cliente debe obtener o proporcionar esta información para crear un enlace.
 ms.assetid: 0a3bed37-95c7-4f4a-9ed3-9d57f69db523
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f42ed5d2af21eff1091e0ba48718426bf17501e3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fc566d408b27884cacefe07a181f26971352e1f29f9f47dfd41b3d56a8276515
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105676223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118931728"
 ---
 # <a name="client-side-binding"></a>Enlace del lado cliente
 
-Los identificadores de enlace se componen de una secuencia de protocolo, el nombre o la dirección de un equipo host de programa de servidor y un punto de conexión de programa de servidor. Por lo tanto, el programa cliente debe obtener o proporcionar esta información para crear un enlace.
+Los identificadores de enlace se componen de una secuencia de protocolo, el nombre o la dirección de un equipo host del programa de servidor y un punto de conexión de programa de servidor. Por lo tanto, el programa cliente debe obtener o proporcionar esta información para crear un enlace.
 
-Si el programa cliente utiliza identificadores de enlace automáticos, no es necesario escribir código fuente especial para crear o administrar el enlace. El código auxiliar de cliente llama a las funciones RPC necesarias para establecer y mantener el enlace. Lo único que tiene que hacer es especificar que el cliente use los identificadores de enlace automáticos en el archivo de configuración de la aplicación (ACF) y diseñar la interfaz en consecuencia. Para obtener más información, vea [identificadores de enlace automáticos](automatic-binding-handles.md).
+Si el programa cliente usa identificadores de enlace automáticos, no es necesario escribir código fuente especial para crear o administrar el enlace. El código auxiliar de cliente llama a las funciones RPC necesarias para establecer y mantener el enlace. Todo lo que tiene que hacer es especificar que el cliente usa identificadores de enlace automático en el archivo de configuración de la aplicación (ACF) y diseñar la interfaz en consecuencia. Para obtener más información, vea [Identificadores de enlace automáticos.](automatic-binding-handles.md)
 
-Suponga, por ejemplo, que estaba desarrollando un programa cliente que llamó a funciones de marca de tiempo remotas. Aquí, el código auxiliar realiza todo el trabajo y el cliente solo necesita incluir el archivo de encabezado generado auto. h para obtener los prototipos de función para los procedimientos remotos. Las llamadas de la aplicación cliente a los procedimientos remotos aparecen como si fueran llamadas a procedimientos locales, como se muestra en el ejemplo siguiente:
+Supongamos, por ejemplo, que estaba desarrollando un programa cliente que llamaba funciones de marca de tiempo remotas. En este caso, los códigos auxiliares hacen todo el trabajo y el cliente solo necesita incluir el archivo de encabezado generado Auto.h para obtener los prototipos de función para los procedimientos remotos. Las llamadas de la aplicación cliente a los procedimientos remotos aparecen como si fueran llamadas a procedimientos locales, como se muestra en el ejemplo siguiente:
 
 
 ```C++
@@ -51,23 +51,23 @@ void main(int argc, char **argv)
 
 
 
-Como puede ver en el ejemplo anterior, la aplicación cliente no tiene que realizar ninguna llamada explícita a las funciones de la biblioteca en tiempo de ejecución de RPC. El código auxiliar del cliente los administra.
+Como puede ver en el ejemplo anterior, la aplicación cliente no tiene que realizar ninguna llamada explícita a las funciones de biblioteca en tiempo de ejecución rpc. El código auxiliar del cliente los administra.
 
-Si la aplicación utiliza identificadores de enlace implícitos o explícitos, el cliente debe obtener la información de enlace y llamar a las funciones RPC para crear los identificadores. La ubicación en la que el cliente obtiene la información de enlace depende de los requisitos de la aplicación. El programa de instalación que instala la aplicación cliente puede almacenar información de enlace en las variables de entorno que crea. También puede guardar la información de enlace en un archivo de configuración específico de la aplicación. Dado que la información de enlace en las variables de entorno o los archivos de configuración normalmente se almacena como cadenas, la aplicación cliente deberá convertir la cadena en un enlace. En entornos Windows XP/2000, la información de enlace se puede recuperar de Active Directory. Para obtener más información, vea [usar enlaces de cadena](finding-server-host-systems.md).
+Si la aplicación usa identificadores de enlace implícitos o explícitos, el cliente debe obtener la información de enlace y llamar a las funciones RPC para crear los identificadores. La obtención por parte del cliente de la información de enlace depende de los requisitos de la aplicación. El programa de instalación que instala la aplicación cliente puede almacenar información de enlace en las variables de entorno que crea. También puede guardar información de enlace en un archivo de configuración específico de la aplicación. Puesto que la información de enlace en variables de entorno o archivos de configuración normalmente se almacena como cadenas, la aplicación cliente tendrá que convertir la cadena en un enlace. En Windows xp/2000, la información de enlace se puede recuperar de Active Directory. Para obtener más información, [vea Usar enlaces de cadena.](finding-server-host-systems.md)
 
-La mayoría de las redes tienen un servicio de nombres. Los programas de servidor se pueden anunciar en la base de datos del servicio de nombres. Cuando un cliente inicia la ejecución, puede obtener su información de enlace de la base de datos del servicio de nombres. Para obtener más información, consulte [Importar desde bases de datos del servicio de nombres](finding-server-host-systems.md).
+La mayoría de las redes tienen un servicio de nombres. Los programas de servidor pueden anunciarse en la base de datos del servicio de nombres. Cuando un cliente comienza la ejecución, puede obtener su información de enlace de la base de datos del servicio de nombres. Para obtener más información, vea [Importar desde bases de datos de servicio de nombres](finding-server-host-systems.md).
 
-En los temas siguientes se explican los pasos necesarios para el enlace con identificadores implícitos y explícitos:
+Los pasos necesarios para enlazar con identificadores implícitos y explícitos se tratan en los temas siguientes:
 
--   [Seleccionar una secuencia de protocolo](selecting-a-protocol-sequence.md)
+-   [Selección de una secuencia de protocolo](selecting-a-protocol-sequence.md)
 -   [Búsqueda de sistemas host de servidor](finding-server-host-systems.md)
 -   [Búsqueda de puntos de conexión](finding-endpoints.md)
 
-Para obtener una breve descripción de estos temas, consulte [conectar el cliente y el servidor](connecting-the-client-and-the-server.md).
+Para obtener una breve introducción a estos temas, vea [Conexión del cliente y el servidor](connecting-the-client-and-the-server.md).
 
- 
+ 
 
- 
+ 
 
 
 

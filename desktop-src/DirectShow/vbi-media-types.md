@@ -1,28 +1,28 @@
 ---
-description: Los siguientes subtipos se definen para MEDIATYPE \_ VBI.
+description: Los subtipos siguientes se definen para MEDIATYPE \_ VBI.
 ms.assetid: 31ea89c5-fb09-48ae-878f-724a2cbd4772
-title: Tipos de medios VBI (UUID. h)
+title: Tipos de medios VBI (Uuids.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b5b1abcca90b51fde508dcd3d1d0bc9011fc64a2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 10fb7ba1f7a02d387e9abc5460bc98abe81da5d8da78be6a16106a5fb630a109
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105689976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119072019"
 ---
-# <a name="vbi-media-types"></a>Tipos de medios VBI
+# <a name="vbi-media-types"></a>Tipos de medios de VBI
 
-Los siguientes subtipos se definen para **MEDIATYPE \_ VBI**.
+Los subtipos siguientes se definen para **MEDIATYPE \_ VBI.**
 
 
 
 | GUID                                                                                                                                                                                               | Descripción                                     |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------|
-| <span id="KSDATAFORMAT_SUBTYPE_RAW8"></span><span id="ksdataformat_subtype_raw8"></span><dl> <dt>**KSDATAFORMAT \_ SubType \_ RAW8**</dt> </dl> | Datos de VBI sin procesar.<br/>                        |
-| <span id="MEDIASUBTYPE_TELETEXT"></span><span id="mediasubtype_teletext"></span><dl> <dt>**teletexto de MEDIASUBTYPE \_**</dt> </dl>              | Datos de teletexto.<br/>                       |
-| <span id="MEDIASUBTYPE_VPS"></span><span id="mediasubtype_vps"></span><dl> <dt>**MEDIASUBTYPE \_ VPS**</dt> </dl>                             | Datos del sistema de programación de vídeo (VPS).<br/> |
-| <span id="MEDIASUBTYPE_WSS"></span><span id="mediasubtype_wss"></span><dl> <dt>**MEDIASUBTYPE \_ WSS**</dt> </dl>                             | Datos de señalización de pantalla ancha (WSS).<br/>    |
+| <span id="KSDATAFORMAT_SUBTYPE_RAW8"></span><span id="ksdataformat_subtype_raw8"></span><dl> <dt>**SUBTIPO DE KSDATAFORMAT \_ \_ RAW8**</dt> </dl> | Datos de VBI sin procesar.<br/>                        |
+| <span id="MEDIASUBTYPE_TELETEXT"></span><span id="mediasubtype_teletext"></span><dl> <dt>**MEDIASUBTYPE \_ TELETEXT**</dt> </dl>              | Datos de teletexto.<br/>                       |
+| <span id="MEDIASUBTYPE_VPS"></span><span id="mediasubtype_vps"></span><dl> <dt>**MEDIASUBTYPE \_ VPS**</dt> </dl>                             | Datos del Sistema de programación de vídeo (VPS).<br/> |
+| <span id="MEDIASUBTYPE_WSS"></span><span id="mediasubtype_wss"></span><dl> <dt>**MediaSUBTYPE \_ WSS**</dt> </dl>                             | Datos de señalización de pantalla WSS).<br/>    |
 
 
 
@@ -32,7 +32,7 @@ Los siguientes subtipos se definen para **MEDIATYPE \_ VBI**.
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>UUID. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Uuids.h</dt> </dl> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: Muestra los intervalos de frecuencia que admite el monitor.
+description: Enumera los intervalos de frecuencia admitidos por el monitor.
 ms.assetid: e4713650-5f8c-4808-8b4f-1d29c54ab4e3
 title: Clase WmiMonitorListedFrequencyRanges
 ms.topic: reference
@@ -17,16 +17,16 @@ api_type:
 - DllExport
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: e13828f6d5e844147fc0b041617c8452c503ceef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 41b49c293d5661d523138b01c093fce627e5bedf3d1e783dccb8248edf88546c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716376"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119051143"
 ---
 # <a name="wmimonitorlistedfrequencyranges-class"></a>Clase WmiMonitorListedFrequencyRanges
 
-La clase WMI **WmiMonitorListedFrequencyRanges** muestra los intervalos de frecuencia que admite el monitor. Estos intervalos se encuentran en la definición de entrada de vídeo del bloque de datos de identificación mejorada de la presentación extendida de vídeo (VESA) o en el archivo INF de Windows que contiene los datos del controlador de dispositivo.
+La clase WMI **WmiMonitorListedFrequencyRanges** enumera los intervalos de frecuencia admitidos por el monitor. Estos intervalos se encuentran en el bloque Definición de entrada de vídeo de Video Electronics Standard Association (VESA) Enhanced Extended Display Identification Data (E-EDID) o en el archivo INF de Windows que contiene los datos del controlador de dispositivo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,13 +42,13 @@ class WmiMonitorListedFrequencyRanges : MSMonitorClass
 
 ## <a name="members"></a>Miembros
 
-La clase **WmiMonitorListedFrequencyRanges** tiene estos tipos de miembros:
+La **clase WmiMonitorListedFrequencyRanges** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **WmiMonitorListedFrequencyRanges** tiene estas propiedades.
+La **clase WmiMonitorListedFrequencyRanges** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -74,7 +74,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
 Nombre de la instancia de monitor específica.
@@ -84,26 +84,26 @@ Nombre de la instancia de monitor específica.
 **MonitorFreqRanges**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **FrequencyRangeDescriptor**
+Tipo de datos: **matriz FrequencyRangeDescriptor**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Lista de intervalos de frecuencia de monitor representados por instancias de la clase [**FrequencyRangeDescriptor**](frequencyrangedescriptor.md) .
+Lista de intervalos de frecuencia de supervisión representados por instancias de la [**clase FrequencyRangeDescriptor.**](frequencyrangedescriptor.md)
 
 </dd> <dt>
 
 **NumOfMonitorFreqRanges**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número de intervalos de frecuencia de monitor compatibles.
+Número de intervalos de frecuencia de supervisión admitidos enumerados.
 
 </dd> </dl>
 
@@ -111,12 +111,12 @@ Número de intervalos de frecuencia de monitor compatibles.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
-| Espacio de nombres<br/>                | \\WMI raíz<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>WmiCore. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Wmi \\ raíz<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>WmiCore.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>WmiProv.dll</dt> </dl> |
 
 

@@ -1,52 +1,52 @@
 ---
-title: Control de barra de progreso (referencia de elementos de interfaz de usuario de MSAA)
-description: Los controles de barra de progreso indican el progreso de una operación larga, como la descarga de un archivo de Internet. Normalmente, el progreso se expresa como un porcentaje de cero (0) a 100 (100).
+title: Control barra de progreso (referencia de elemento de la interfaz de usuario de MSAA)
+description: Los controles de barra de progreso indican el progreso de una operación larga, como descargar un archivo de Internet. Normalmente, el progreso se expresa como un porcentaje de cero (0) a cien (100).
 ms.assetid: 9165d00e-b3f3-41cd-812c-cd39313460fa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d9bbd9a648ee1c4d4f112577c8e41a5983f69038
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 29a96b692de7b4c3992bab82eaa2461ce2826e5117498c24be7d8e40913d8a74
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104269144"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119052563"
 ---
-# <a name="progress-bar-control-msaa-ui-element-reference"></a>Control de barra de progreso (referencia de elementos de interfaz de usuario de MSAA)
+# <a name="progress-bar-control-msaa-ui-element-reference"></a>Control barra de progreso (referencia de elemento de la interfaz de usuario de MSAA)
 
 > [!Note]  
-> En este tema se describen los objetos de **control de barra de progreso** para la referencia de elementos de interfaz de usuario de MSAA. La forma de crear objetos de **control de barra de progreso** en varios marcos de interfaz de usuario no se describe aquí. Consulte la documentación de referencia de la API del marco de interfaz de usuario que está usando.
+> En este tema se describen **los objetos de control de barra** de progreso para fines de referencia de elementos de la interfaz de usuario de MSAA. Cómo crear objetos **de control de barra** de progreso en varios marcos de interfaz de usuario no se describe aquí. Consulte la documentación de referencia de API para el marco de interfaz de usuario que está usando.
 
  
 
-Los controles de barra de progreso indican el progreso de una operación larga, como la descarga de un archivo de Internet. Normalmente, el progreso se expresa como un porcentaje de cero (0) a 100 (100).
+Los controles de barra de progreso indican el progreso de una operación larga, como descargar un archivo de Internet. Normalmente, el progreso se expresa como un porcentaje de cero (0) a cien (100).
 
-El nombre de clase de ventana de un control de barra de progreso es clase de progreso \_ , que se define como "msctls \_ Progress" en commctrl. h.
+El nombre de clase de ventana de un control de barra de progreso es PROGRESS CLASS, que se define como \_ "msctls \_ progress" en Commctrl.h.
 
 ## <a name="iaccessible-methods"></a>Métodos IAccessible
 
-Los controles de barra de progreso admiten los siguientes métodos [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) :
+Los controles de la barra de progreso admiten los [**métodos IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) siguientes:
 
 -   [**accHitTest**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-acchittest)
 -   [**accLocation**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-acclocation)
 -   [**accNavigate**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-accnavigate)
 -   [**accSelect**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-accselect)
 
-## <a name="iaccessible-properties"></a>Propiedades de IAccessible
+## <a name="iaccessible-properties"></a>Propiedades IAccessible
 
-Los controles de barra de progreso admiten las siguientes propiedades [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) :
+Los controles de barra de progreso admiten las [**siguientes propiedades IAccessible:**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible)
 
 
 
 | Propiedad                                                                             | Comentarios                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**obtener \_ accChildCount**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accchildcount)             | La propiedad **ChildCount** es cero.                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| [**obtener \_ accFocus**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accfocus)                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| [**obtener \_ accKeyboardShortcut**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_acckeyboardshortcut) | La propiedad **KeyboardShortcut** es la tecla de acceso de la barra de progreso, que es un carácter subrayado en el texto de la etiqueta de la barra de progreso. La cadena devuelta contiene el carácter de tecla de acceso anexado a la cadena "Alt +".                                                                                                                                                                                                                                 |
-| [**obtener \_ accName**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accname)                         | La propiedad **nombre** es el texto de un control de texto estático que etiqueta la barra de progreso.                                                                                                                                                                                                                                                                                                                                                                               |
-| [**obtener \_ accParent**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accparent)                     | La propiedad **primaria** es una ventana ( [**\_ \_ ventana del sistema de roles**](object-roles.md) ) que rodea el control y tiene la misma propiedad de **nombre** y el mismo nombre de clase de ventana que el control.                                                                                                                                                                                                                                                              |
-| [**obtener \_ accRole**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accrole)                         | La propiedad **role** es [**\_ \_ PROGRESSBAR del sistema de funciones**](object-roles.md).                                                                                                                                                                                                                                                                                                                                                                      |
-| [**obtener \_ accState**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accstate)                       | La propiedad **Estado** es una combinación de uno o varios de los siguientes [valores](object-state-constants.md):[**sistema de estado \_ \_ invisible**](object-state-constants.md) \| [**estado \_ \_ no disponible**](object-state-constants.md) del sistema de estado \| [**\_ \_ centrado**](object-state-constants.md) en \| [**\_ \_**](object-state-constants.md) sistema enfocable<br/> |
-| [**obtener \_ accValue**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accvalue)                       | La propiedad **Value** es una cadena de "0%" a "100%" que describe el progreso.                                                                                                                                                                                                                                                                                                                                                                                      |
+| [**get \_ accChildCount**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accchildcount)             | La **propiedad ChildCount** es cero.                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| [**get \_ accFocus**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accfocus)                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| [**get \_ accKeyboardShortcut**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_acckeyboardshortcut) | La **propiedad KeyboardShortcut** es la clave de acceso de la barra de progreso, que es un carácter subrayado en el texto de la etiqueta de la barra de progreso. La cadena devuelta contiene el carácter de clave de acceso anexado a la cadena "Alt+".                                                                                                                                                                                                                                 |
+| [**get \_ accName**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accname)                         | La **propiedad Name** es el texto de un control de texto estático que etiqueta la barra de progreso.                                                                                                                                                                                                                                                                                                                                                                               |
+| [**get \_ accParent**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accparent)                     | La **propiedad** Parent es una ventana [**(ROLE SYSTEM \_ \_ WINDOW)**](object-roles.md) que rodea el control y tiene la misma propiedad **Name** y el mismo nombre de clase de ventana que el control.                                                                                                                                                                                                                                                              |
+| [**get \_ accRole**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accrole)                         | La **propiedad Role** es ROLE SYSTEM [**\_ \_ PROGRESSBAR.**](object-roles.md)                                                                                                                                                                                                                                                                                                                                                                      |
+| [**get \_ accState**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accstate)                       | La **propiedad State** es una combinación de uno o varios de los valores siguientes: STATE SYSTEM [**\_ \_ INVISIBLE**](object-state-constants.md) STATE SYSTEM [](object-state-constants.md) \| [**\_ \_ UNAVAILABLE**](object-state-constants.md) STATE SYSTEM \| [**\_ \_ FOCUSED**](object-state-constants.md) STATE SYSTEM \| [**\_ \_ FOCUSABLE**](object-state-constants.md)<br/> |
+| [**get \_ accValue**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accvalue)                       | La **propiedad Value** es una cadena de "0%" a "100%" que describe el progreso.                                                                                                                                                                                                                                                                                                                                                                                      |
 
 
 
@@ -56,7 +56,7 @@ Los controles de barra de progreso admiten las siguientes propiedades [**IAccess
 
 <dl> <dt>
 
-[IAccessible (interfaz)](/windows/desktop/api/oleacc/nn-oleacc-iaccessible)
+[Interfaz IAccessible](/windows/desktop/api/oleacc/nn-oleacc-iaccessible)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: El método GetDueHandle recupera el identificador de evento que se va a señalar.
 ms.assetid: 495ea76d-8b94-48a9-8025-06ab18b66693
-title: Método CCmdQueue. GetDueHandle (Winutil. h)
+title: Método CCmdQueue.GetDueHandle (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4cb7c8c965c72abe6343a8a75863e0e6969dc5c6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 62fbe0e38e24891add93e63e0c03d521289ed345078e8e567a376e9bd639d997
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105678959"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016423"
 ---
-# <a name="ccmdqueuegetduehandle-method"></a>CCmdQueue. GetDueHandle, método
+# <a name="ccmdqueuegetduehandle-method"></a>Método CCmdQueue.GetDueHandle
 
 El `GetDueHandle` método recupera el identificador de evento que se va a señalar.
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el identificador del evento.
+Devuelve el identificador de eventos.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Devuelva el identificador de evento siempre que haya comandos diferidos que deban ejecutarse (cuando [**CCmdQueue:: GetDueCommand**](ccmdqueue-getduecommand.md) no se bloquee).
+Devuelve el identificador de eventos cada vez que haya comandos diferidos que deben ejecutarse (cuando [**CCmdQueue::GetDueCommand**](ccmdqueue-getduecommand.md) no se bloqueará).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Devuelva el identificador de evento siempre que haya comandos diferidos que deba
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Devuelva el identificador de evento siempre que haya comandos diferidos que deba
 
 <dl> <dt>
 
-[**Clase CCmdQueue**](ccmdqueue.md)
+[**CCmdQueue (clase)**](ccmdqueue.md)
 </dt> </dl>
 
  

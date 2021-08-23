@@ -19,7 +19,7 @@ ms.locfileid: "118783581"
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [tipo EsentCannotBeTaggedException](./esentcannotbetaggedexception-class.md) expone los miembros siguientes.
+El [tipo EsentCannotBeTaggedException](./esentcannotbetaggedexception-class.md) expone los siguientes miembros.
 
 ## <a name="properties"></a>Propiedades
 
@@ -34,7 +34,7 @@ El [tipo EsentCannotBeTaggedException](./esentcannotbetaggedexception-class.md) 
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
@@ -83,7 +83,7 @@ El [tipo EsentCannotBeTaggedException](./esentcannotbetaggedexception-class.md) 
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

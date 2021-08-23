@@ -1,6 +1,6 @@
 ---
-title: RwStructuredBuffer::GetDimensions (Función)
-description: Obtiene las dimensiones de recursos. | RwStructuredBuffer::GetDimensions (Función)
+title: RWStructuredBuffer::GetDimensions (Función)
+description: Obtiene las dimensiones de recursos. | RWStructuredBuffer::GetDimensions (Función)
 ms.assetid: 842b3d21-2e2b-4906-93ee-0252b2e8cf85
 keywords:
 - Función GetDimensions HLSL
@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118789931"
 ---
-# <a name="rwstructuredbuffergetdimensions-function"></a>RwStructuredBuffer::GetDimensions (Función)
+# <a name="rwstructuredbuffergetdimensions-function"></a>RWStructuredBuffer::GetDimensions (Función)
 
 Obtiene las dimensiones de recursos.
 
@@ -59,7 +59,7 @@ El paso, en bytes, de cada elemento de estructura.
 
 Nada
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta función es compatible con los siguientes tipos de sombreadores:
 
@@ -73,14 +73,14 @@ Esta función es compatible con los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [RWStructuredBuffer](sm5-object-rwstructuredbuffer.md)
 </dt> <dt>
 
-[Shader Model 5](d3d11-graphics-reference-sm5.md)
+[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

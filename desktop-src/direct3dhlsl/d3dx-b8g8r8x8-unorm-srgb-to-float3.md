@@ -1,9 +1,9 @@
 ---
 title: D3DX_B8G8R8X8_UNORM_SRGB_to_FLOAT3 función
-description: Desempaqueta los datos del sombreador DXGI \_ FORMAT \_ B8G8R8X8 \_ UNORM \_ SRGB en XMFLOAT3. | D3DX_B8G8R8X8_UNORM_SRGB_to_FLOAT3 función
+description: Desempaqueta los datos del sombreador SRGB DXGI \_ FORMAT \_ B8G8R8X8 UNORM en \_ \_ XMFLOAT3. | D3DX_B8G8R8X8_UNORM_SRGB_to_FLOAT3 función
 ms.assetid: 9b3c511c-95c2-454c-95b9-ff6ab0920466
 keywords:
-- D3DX_B8G8R8X8_UNORM_SRGB_to_FLOAT3 función HLSL
+- D3DX_B8G8R8X8_UNORM_SRGB_to_FLOAT3 function HLSL
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.locfileid: "118793861"
 ---
 # <a name="d3dx_b8g8r8x8_unorm_srgb_to_float3-function"></a>Función D3DX \_ B8G8R8X8 \_ UNORM \_ SRGB \_ to \_ FLOAT3
 
-Desempaqueta los datos del sombreador DXGI \_ FORMAT \_ B8G8R8X8 \_ UNORM \_ SRGB en XMFLOAT3.
+Desempaqueta los datos del sombreador SRGB DXGI \_ FORMAT \_ B8G8R8X8 UNORM en \_ \_ XMFLOAT3.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,7 +46,7 @@ Datos empaquetados del sombreador.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Datos del sombreador desempaquetar.
+Datos del sombreador desempaquetados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,7 +65,7 @@ Datos del sombreador desempaquetar.
 [Funciones](format-conversion-functions.md)
 </dt> <dt>
 
-[Desempaquetar y empaquetar DXGI \_ FORMAT In-Place edición de imágenes](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Desempaquetar y empaquetar DXGI \_ FORMAT para la edición In-Place imágenes](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
 title: Atributo ms-DS-Az-Biz-Rule
-description: Texto del script que implementa la regla de negocios.
+description: Texto del script que implementa la regla de negocio.
 ms.assetid: 884513ae-9600-49b0-a371-6f77b84b54f9
 ms.tgt_platform: multiple
 keywords:
@@ -23,20 +23,20 @@ ms.locfileid: "118685375"
 ---
 # <a name="ms-ds-az-biz-rule-attribute"></a>Atributo ms-DS-Az-Biz-Rule
 
-Texto del script que implementa la regla de negocios.
+Texto del script que implementa la regla de negocio.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | ms-DS-Az-Biz-Rule                           |
 | Ldap-Display-Name | msDS-AzBizRule                              |
 | Size              | 128 caracteres                              |
-| Privilegio actualizar  | Administrador de AzRoles                               |
+| Actualizar privilegios  | Administrador de AzRoles                               |
 | Frecuencia de actualización  | Durante la inicialización o el cambio de directiva.     |
 | Attribute-Id      | 1.2.840.113556.1.4.1801                     |
 | System-Id-Guid    | 33d41ea8-c0c9-4c92-9494-f104878413fd        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -52,14 +52,14 @@ Texto del script que implementa la regla de negocios.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------|
 | Id. de vínculo                | \-                                                |
 | MAPI-Id                | \-                                                |
-| System-Only            | False                                             |
-| Es de un solo valor       | True                                              |
-| Está indexado             | False                                             |
-| En el catálogo global      | False                                             |
+| System-Only            | Falso                                             |
+| Es de un solo valor       | Verdadero                                              |
+| Está indexado             | Falso                                             |
+| En el catálogo global      | Falso                                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | 0                                                 |
 | Range-Upper            | 65536                                             |
@@ -73,14 +73,14 @@ Texto del script que implementa la regla de negocios.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------|
 | Id. de vínculo                | \-                                                |
 | MAPI-Id                | \-                                                |
-| System-Only            | False                                             |
-| Es de un solo valor       | True                                              |
-| Está indexado             | False                                             |
-| En el catálogo global      | False                                             |
+| System-Only            | Falso                                             |
+| Es de un solo valor       | Verdadero                                              |
+| Está indexado             | Falso                                             |
+| En el catálogo global      | Falso                                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | 0                                                 |
 | Range-Upper            | 65536                                             |
@@ -94,14 +94,14 @@ Texto del script que implementa la regla de negocios.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
-| System-Only            | False                                                                                 |
-| Es de un solo valor       | True                                                                                  |
-| Está indexado             | False                                                                                 |
-| En el catálogo global      | False                                                                                 |
+| System-Only            | Falso                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                  |
+| Está indexado             | Falso                                                                                 |
+| En el catálogo global      | Falso                                                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | 0                                                                                     |
 | Range-Upper            | 65536                                                                                 |
@@ -115,14 +115,14 @@ Texto del script que implementa la regla de negocios.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
-| System-Only            | False                                                                                 |
-| Es de un solo valor       | True                                                                                  |
-| Está indexado             | False                                                                                 |
-| En el catálogo global      | False                                                                                 |
+| System-Only            | Falso                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                  |
+| Está indexado             | Falso                                                                                 |
+| En el catálogo global      | Falso                                                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | 0                                                                                     |
 | Range-Upper            | 65536                                                                                 |
@@ -136,14 +136,14 @@ Texto del script que implementa la regla de negocios.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
-| System-Only            | False                                                                                 |
-| Es de un solo valor       | True                                                                                  |
-| Está indexado             | False                                                                                 |
-| En el catálogo global      | False                                                                                 |
+| System-Only            | Falso                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                  |
+| Está indexado             | Falso                                                                                 |
+| En el catálogo global      | Falso                                                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | 0                                                                                     |
 | Range-Upper            | 65536                                                                                 |

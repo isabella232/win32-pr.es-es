@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: 8c71684bf66d8d14df60c9ff09083f507b114024
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 900138c611198114397caa94894a3802475e2bebe5138629c0f2b9bd2c58c220
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110583"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118891531"
 ---
 # <a name="protectkeywithcertificatethumbprint-method-of-the-win32_encryptablevolume-class"></a>Método ProtectKeyWithCertificateThumbprint de la clase EncryptableVolume de Win32 \_
 
@@ -41,12 +41,12 @@ uint32 ProtectKeyWithCertificateThumbprint(
 
 <dl> <dt>
 
-*FriendlyName* \[ en, opcional\]
+*FriendlyName* \[ in, opcional\]
 </dt> <dd>
 
 Tipo: **cadena**
 
-Cadena que especifica un identificador de cadena asignado por el usuario para este protector de clave. Si no se especifica este parámetro, el *parámetro FriendlyName* se crea mediante el nombre del sujeto en el certificado.
+Cadena que especifica un identificador de cadena asignado por el usuario para este protector de clave. Si no se especifica este parámetro, el parámetro *FriendlyName* se crea mediante el nombre de sujeto en el certificado.
 
 </dd> <dt>
 
@@ -82,10 +82,10 @@ Este método devuelve uno de los códigos siguientes u otro código de error si 
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ Ok**</dt> <dt>0 (0x0)</dt> </dl>                                                           | Método realizado correctamente.<br/>                                                                                                                                                                                                                                                          |
 | <dl> <dt>**ERROR \_ DATOS \_ NO VÁLIDOS**</dt> <dt>13 (0xD)</dt> </dl>                                           | Los datos no son válidos.<br/>                                                                                                                                                                                                                                                              |
-| <dl> <dt>**FVE \_ E \_ NON \_ BITLOCKER \_ OID**</dt> <dt>2150695022 (0x8031006E)</dt> </dl>                     | El atributo EKU del certificado especificado no permite que se utilice para Cifrado de unidad BitLocker. BitLocker no requiere que un certificado tenga un atributo EKU, pero si se configura uno, debe establecerse en un OID que coincida con el OID configurado para BitLocker.<br/> |
-| <dl> <dt>**FVE \_ E \_ POLICY USER CERTIFICATE NOT \_ \_ \_ \_ ALLOWED**</dt> <dt>2150695026 (0X80310072)</dt> </dl> | directiva de grupo no permite que los certificados de usuario, como las tarjetas inteligentes, se utilicen con BitLocker.<br/>                                                                                                                                                                                     |
+| <dl> <dt>**FVE \_ E \_ \_ \_ OID non BITLOCKER**</dt> <dt>2150695022 (0x8031006E)</dt> </dl>                     | El atributo EKU del certificado especificado no permite que se utilice para Cifrado de unidad BitLocker. BitLocker no requiere que un certificado tenga un atributo EKU, pero si se configura uno, debe establecerse en un OID que coincida con el OID configurado para BitLocker.<br/> |
+| <dl> <dt>**FVE \_ E \_ POLICY USER CERTIFICATE NOT \_ \_ \_ \_ ALLOWED**</dt> <dt>2150695026 (0x80310072)</dt> </dl> | directiva de grupo no permite que los certificados de usuario, como las tarjetas inteligentes, se utilicen con BitLocker.<br/>                                                                                                                                                                                     |
 | <dl> <dt>**FVE \_ E \_ POLICY USER CERT DEBE SER \_ \_ \_ \_ \_ HW**</dt> <dt>2150695028 (0x80310074)</dt> </dl>        | directiva de grupo requiere que proporcione una tarjeta inteligente para usar BitLocker.<br/>                                                                                                                                                                                                                |
-| <dl> <dt>**FVE \_ E \_ POLICY PROHÍBE LA FIRMA \_ \_ PROPIA**</dt> <dt>2150695046 (0x80310086)</dt> </dl>           | directiva de grupo no permite el uso de certificados autofirmados.<br/>                                                                                                                                                                                                                   |
+| <dl> <dt>**FVE \_ E \_ POLICY PROHÍBE LOS \_ \_ 2150695046**</dt> <dt>AUTOSIGNADOS (0x80310086)</dt> </dl>           | directiva de grupo no permite el uso de certificados autofirmados.<br/>                                                                                                                                                                                                                   |
 
 
 
@@ -93,7 +93,7 @@ Este método devuelve uno de los códigos siguientes u otro código de error si 
 
 ## <a name="remarks"></a>Comentarios
 
-Si el OID no coincide con el asociado al controlador de servicio en el Registro, se produce un error en este método. Esto evita que el usuario ajuste los protectores del agente de recuperación de datos (DRA) manualmente en el volumen. Los DRA solo los establecerá el servicio.
+Si el OID no coincide con el asociado al controlador de servicio en el Registro, se produce un error en este método. Esto impide que el usuario ajuste los protectores del agente de recuperación de datos (DRA) manualmente en el volumen. Los DRA solo los establecerá el servicio.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -101,8 +101,8 @@ Si el OID no coincide con el asociado al controlador de servicio en el Registro,
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 Enterprise, Windows 7 \[ Ultimate\]<br/>                               |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[ R2\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows 7 Enterprise, Windows 7 aplicaciones de \[ escritorio Ultimate\]<br/>                               |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                 |
 | Espacio de nombres<br/>                | Root \\ CIMV2 \\ Security \\ MicrosoftVolumeEncryption<br/>                                             |
 | MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume.mof</dt> </dl> |
 

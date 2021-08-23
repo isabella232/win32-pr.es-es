@@ -1,21 +1,21 @@
 ---
-description: El \_ método get participantes crea una colección de participantes asociados a la Conferencia actual.
+description: El método \_ get Participants crea una colección de participantes asociados a la conferencia actual.
 ms.assetid: 643acc3f-3df1-4f3a-a8fe-5d46864f8cf7
-title: 'Método ITParticipantControl:: get_Participants (Confpriv. h)'
+title: ItParticipantControl::get_Participants (Confpriv.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e4a99e0efe7702a3358684b00af5e8faa96461c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4d61d12de18e30bd86d42fd1aa75aed2048c42e487e019eabe3da6d65e70a9f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690307"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118864716"
 ---
-# <a name="itparticipantcontrolget_participants-method"></a>ITParticipantControl:: get ( \_ método)
+# <a name="itparticipantcontrolget_participants-method"></a>ITParticipantControl::get \_ Participants (método)
 
-\[**obtener \_ Los participantes** no están disponibles para su uso en Windows Vista, Windows Server 2008 y las versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[**get \_ Los participantes** no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-El método **Get \_ participantes** crea una colección de participantes asociados a la Conferencia actual. Este método se proporciona para las aplicaciones cliente de automatización, como las escritas en Visual Basic. Las aplicaciones de C y C++ deben usar el método [**EnumerateParticipants**](itparticipantcontrol-enumerateparticipants.md) .
+El **método \_ get Participants** crea una colección de participantes asociados a la conferencia actual. Este método se proporciona para aplicaciones cliente de Automation, como las escritas en Visual Basic. Las aplicaciones de C y C++ deben usar [**el método EnumerateParticipants.**](itparticipantcontrol-enumerateparticipants.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,10 +32,10 @@ HRESULT get_Participants(
 
 <dl> <dt>
 
-*pVariant* \[ enuncia\]
+*pVariant* \[ out\]
 </dt> <dd>
 
-Puntero a **Variant** que contiene un [**ITCollection**](/windows/desktop/api/tapi3if/nn-tapi3if-itcollection) de punteros de la interfaz [**ITParticipant**](itparticipant.md) .
+Puntero a **VARIANT que** contiene una [**ITCollection**](/windows/desktop/api/tapi3if/nn-tapi3if-itcollection) de punteros de interfaz [**ITParticipant.**](itparticipant.md)
 
 </dd> </dl>
 
@@ -45,29 +45,29 @@ Este método puede devolver uno de estos valores.
 
 
 
-| Value                                                                                         | Significado                                                         |
+| Valor                                                                                         | Significado                                                         |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>          | El método se realizó correctamente.<br/>                                    |
-| <dl> <dt>**\_puntero E**</dt> </dl>     | El parámetro *pVariant* no es un puntero válido.<br/>     |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No hay memoria suficiente para realizar la operación.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | El método se realizó correctamente.<br/>                                    |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>     | El *parámetro pVariant* no es un puntero válido.<br/>     |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No existe memoria suficiente para realizar la operación.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-TAPI llama al método **AddRef** en la interfaz [**ITParticipant**](itparticipant.md) devuelta por **ITParticipantControl:: get \_ participantes**. La aplicación debe llamar a **Release** en la interfaz **ITParticipant** para liberar recursos asociados a ella.
+TAPI llama al **método AddRef** en la [**interfaz ITParticipant devuelta**](itparticipant.md) por **ITParticipantControl::get \_ Participants**. La aplicación debe llamar a **Release** en la **interfaz ITParticipant** para liberar recursos asociados a ella.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,0 o posterior<br/>                                                 |
-| Encabezado<br/>       | <dl> <dt>Confpriv. h</dt> </dl> |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
+| Header<br/>       | <dl> <dt>Confpriv.h</dt> </dl> |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl>  |
 
 

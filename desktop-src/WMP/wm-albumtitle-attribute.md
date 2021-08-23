@@ -1,9 +1,9 @@
 ---
-title: Atributo WM/álbum
-description: El atributo WM/álbum es el título del álbum en el que se liberó originalmente el contenido.
+title: Atributo WM/AlbumTitle
+description: El atributo WM/AlbumTitle es el título del álbum en el que se publicó originalmente el contenido.
 ms.assetid: 8c9609c7-3953-4c5b-8cfd-4766e37a2046
 keywords:
-- Media Player de Windows de atributos de WM/álbum
+- Atributo WM/AlbumTitle Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,32 +12,32 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e6e66d9c2598e897655ea4712b624852a14c2fa0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5c42cf1e6a51aac56b5bd610b9dfe10d448ada66f9dc4fbfdbb6bb6b1d32a351
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708742"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053883"
 ---
-# <a name="wmalbumtitle-attribute"></a>Atributo WM/álbum
+# <a name="wmalbumtitle-attribute"></a>Atributo WM/AlbumTitle
 
-El atributo **WM/álbum** es el título del álbum en el que se liberó originalmente el contenido.
+El **atributo WM/AlbumTitle** es el título del álbum en el que se publicó originalmente el contenido.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo se almacena en la biblioteca (o caché) y en el archivo multimedia digital.
+Este atributo se almacena tanto en la biblioteca (o caché) como en el archivo multimedia digital.
 
 **Album** es un alias para este atributo.
 
-La constante del SDK de Windows Media Format para este atributo es g \_ wszWMAlbumTitle.
+La Windows SDK de formato multimedia para este atributo es g \_ wszWMAlbumTitle.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
@@ -45,7 +45,7 @@ La constante del SDK de Windows Media Format para este atributo es g \_ wszWMAlb
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> <dt>
 
 [Elementos de audio](audio-item-attributes.md)
@@ -57,7 +57,7 @@ La constante del SDK de Windows Media Format para este atributo es g \_ wszWMAlb
 [Pistas de CD](cd-track-attributes.md)
 </dt> <dt>
 
-[Atributos de archivo de Windows Media de uso frecuente](commonly-used-windows-media-file-attributes.md)
+[Atributos de archivo multimedia Windows uso frecuente](commonly-used-windows-media-file-attributes.md)
 </dt> </dl>
 
  

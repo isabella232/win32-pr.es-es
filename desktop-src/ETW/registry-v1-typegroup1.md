@@ -17,14 +17,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: ab0326f92d1b084f471f3dc1b57322f69aa645fd
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 80b6bfbac1afbe3797bd76dfa49dee6666a339eb46c336d3e6c68f6b236c0848
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106163"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069775"
 ---
-# <a name="registry_v1_typegroup1-class"></a>Clase \_ TypeGroup1 del Registro \_ V1
+# <a name="registry_v1_typegroup1-class"></a>Clase \_ \_ TypeGroup1 del Registro V1
 
 Esta clase es la clase de tipo de evento para los eventos del Registro.
 
@@ -52,7 +52,7 @@ La **clase \_ \_ TypeGroup1 del** Registro V1 tiene estos tipos de miembros:
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ \_ TypeGroup1 de Registry V1** tiene estas propiedades.
+La **clase \_ \_ TypeGroup1 del** Registro V1 tiene estas propiedades.
 
 <dl> <dt>
 
@@ -120,7 +120,7 @@ Nombre de la clave del Registro.
 
 </dd> <dt>
 
-Status
+Estado
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **uint32**
@@ -140,14 +140,14 @@ Valor NTSTATUS de la operación del Registro.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
