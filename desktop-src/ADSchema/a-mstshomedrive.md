@@ -1,11 +1,11 @@
 ---
-title: atributo MS-TS-Home-Drive
-description: Terminal Services unidad principal especifica una unidad de inicio para el usuario.
+title: Atributo ms-TS-Home-Drive
+description: Unidad principal de Terminal Services especifica una unidad principal para el usuario.
 ms.assetid: c295c387-fc7a-4c07-85e6-62b88243c3fc
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-TS-Home-Drive
-- msTSHomeDrive esquema de AD de atributos
+- Esquema de AD del atributo ms-TS-Home-Drive
+- Esquema de AD del atributo msTSHomeDrive
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ebde2e210c570a9be214e4952d6410e281761e8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 030820dc017eb82644d524ed1044d71773a34b91dc9fcb923b9af62b7cd7adb0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804915"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119508285"
 ---
-# <a name="ms-ts-home-drive-attribute"></a>atributo MS-TS-Home-Drive
+# <a name="ms-ts-home-drive-attribute"></a>Atributo ms-TS-Home-Drive
 
-Terminal Services unidad principal especifica una unidad de inicio para el usuario.
+Unidad principal de Terminal Services especifica una unidad principal para el usuario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-TS-Home-Drive                            |
-| Nombre para mostrar de LDAP | msTSHomeDrive                               |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | ms-TS-Home-Drive                            |
+| Ldap-Display-Name | msTSHomeDrive                               |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1978                     |
-| System-ID-GUID    | 5f0a24d9-dffa-4cd9-acbf-a0680c03731e        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 5f0a24d9-dffa-4cd9-acbf-a0680c03731e        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -52,18 +52,18 @@ Terminal Services unidad principal especifica una unidad de inicio para el usuar
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 32767                             |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -73,18 +73,18 @@ Terminal Services unidad principal especifica una unidad de inicio para el usuar
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 32767                             |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -94,13 +94,13 @@ Terminal Services unidad principal especifica una unidad de inicio para el usuar
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 32767                             |
 | Search-Flags           | 0x00000000                        |

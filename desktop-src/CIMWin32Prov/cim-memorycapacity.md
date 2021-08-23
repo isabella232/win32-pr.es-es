@@ -1,8 +1,8 @@
 ---
-description: La \_ clase CIM MemoryCapacity representa la memoria que se puede instalar en un elemento físico y sus configuraciones mínima y máxima.
+description: La clase MemoryCapacity de CIM representa la memoria \_ que se puede instalar en un elemento físico y sus configuraciones mínima y máxima.
 ms.assetid: a962ee38-9281-4a7a-b9d7-b321edb5670d
 ms.tgt_platform: multiple
-title: CIM_MemoryCapacity (clase)
+title: CIM_MemoryCapacity clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,19 +20,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: aa63d06187c76c5add433502d012cdb63905795a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c7e15d5ff6e381b2e87aaa1b15ade624ac598a0880b1ff736a6f46ba6aa66bb6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104274871"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119506875"
 ---
-# <a name="cim_memorycapacity-class"></a>\_Clase MemoryCapacity de CIM
+# <a name="cim_memorycapacity-class"></a>Cim \_ MemoryCapacity (clase)
 
-La clase **CIM \_ MemoryCapacity** representa la memoria que se puede instalar en un elemento físico y sus configuraciones mínima y máxima. La información sobre la memoria que está instalada actualmente y los requisitos mínimos y máximos de un elemento se encuentra en las instancias de la clase [**\_ PhysicalMemory de CIM**](cim-physicalmemory.md) .
+La **clase \_ MemoryCapacity de CIM** representa la memoria que se puede instalar en un elemento físico y sus configuraciones mínima y máxima. La información sobre la memoria instalada actualmente y los requisitos mínimos y máximos de un elemento se encuentran en instancias de la [**clase \_ PhysicalMemory de CIM.**](cim-physicalmemory.md)
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -55,13 +55,13 @@ class CIM_MemoryCapacity : CIM_PhysicalCapacity
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ MemoryCapacity** tiene estos tipos de miembros:
+La **clase \_ MemoryCapacity de CIM** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ MemoryCapacity** tiene estas propiedades.
+La **clase \_ MemoryCapacity de CIM** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -79,7 +79,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 
 Breve descripción textual del objeto.
 
-Esta propiedad se hereda de [**\_ PhysicalCapacity CIM**](cim-physicalcapacity.md).
+Esta propiedad se hereda de [**\_ CIM PhysicalCapacity.**](cim-physicalcapacity.md)
 
 </dd> <dt>
 
@@ -94,14 +94,14 @@ Tipo de acceso: solo lectura
 
 Descripción textual del objeto.
 
-Esta propiedad se hereda de [**\_ PhysicalCapacity CIM**](cim-physicalcapacity.md).
+Esta propiedad se hereda de [**\_ CIM PhysicalCapacity.**](cim-physicalcapacity.md)
 
 </dd> <dt>
 
 **MaximumMemoryCapacity**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -110,25 +110,25 @@ Tipo de acceso: solo lectura
 Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("kilobytes")
 </dt> </dl>
 
-Cantidad máxima de memoria, en kilobytes, que puede admitir el elemento físico asociado.
+Cantidad máxima de memoria, en kilobytes, que puede ser compatible con el elemento físico asociado.
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> <dt>
 
 **MemoryType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ PhysicalMemory**](cim-physicalmemory.md).**MemoryType**")
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ PhysicalMemory**](cim-physicalmemory.md).**MemoryType**")
 </dt> </dl>
 
-Tipo de memoria, que forma parte de la clave de objeto. Los valores corresponden a la lista de posibles tipos de memoria de la clase [**CIM \_ PhysicalMemory**](cim-physicalmemory.md) .
+Tipo de memoria, que forma parte de la clave de objeto. Los valores corresponden a la lista de posibles tipos de memoria de la [**clase \_ PhysicalMemory de CIM.**](cim-physicalmemory.md)
 
 <dt>
 
@@ -141,7 +141,7 @@ Tipo de memoria, que forma parte de la clave de objeto. Los valores corresponden
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -169,7 +169,7 @@ Tipo de memoria, que forma parte de la clave de objeto. Los valores corresponden
 
 <span id="EDO"></span><span id="edo"></span>
 
-**Edo** (5)
+**EDO** (5)
 
 
 </dt> <dd></dd> <dt>
@@ -225,7 +225,7 @@ Tipo de memoria, que forma parte de la clave de objeto. Los valores corresponden
 
 <span id="FEPROM"></span><span id="feprom"></span>
 
-**Feprom** (13)
+**FEPROM** (13)
 
 
 </dt> <dd></dd> <dt>
@@ -291,7 +291,7 @@ Tipo de memoria, que forma parte de la clave de objeto. Los valores corresponden
 **MinimumMemoryCapacity**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -300,9 +300,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("kilobytes")
 </dt> </dl>
 
-Cantidad mínima de memoria, en kilobytes, que se necesita para que el elemento físico asociado funcione correctamente.
+Cantidad mínima de memoria, en kilobytes, necesaria para que el elemento físico asociado funcione correctamente.
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> <dt>
 
@@ -315,18 +315,18 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("nombre"), [**clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name"), [**Key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Nombre del objeto; sirve como parte de la clave de objeto.
+Nombre del objeto; actúa como parte de la clave de objeto.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -336,8 +336,8 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -346,7 +346,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[**\_PHYSICALCAPACITY CIM**](cim-physicalcapacity.md)
+[**CIM \_ PhysicalCapacity**](cim-physicalcapacity.md)
 </dt> </dl>
 
  

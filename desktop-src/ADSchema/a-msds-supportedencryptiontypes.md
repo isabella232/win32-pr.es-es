@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-Supported-Encryption-Types
-description: Los algoritmos de cifrado compatibles con cuentas de usuario, equipo o confianza. Tenga en cuenta que el KDC usa esta información durante la generación de un vale de servicio para esta cuenta.
+title: Atributo ms-DS-Supported-Encryption-Types
+description: Algoritmos de cifrado admitidos por cuentas de usuario, equipo o confianza. Nota El KDC usa esta información al generar un vale de servicio para esta cuenta.
 ms.assetid: 6f9055a9-531e-4f4b-8703-aca5531a3bcb
 ms.tgt_platform: multiple
 keywords:
-- MS-DS-Supported-Encryption-Types atributo AD Schema
-- Esquema de AD de atributo msDS-SupportedEncryptionTypes
+- Esquema de AD del atributo ms-DS-Supported-Encryption-Types
+- Esquema de AD del atributo msDS-SupportedEncryptionTypes
 topic_type:
 - apiref
 api_name:
@@ -14,34 +14,34 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f7ab16959d1f1cd4405cb661a6026f3734a134f8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c1d092061dfebcea8e9a0e4f4a060010e16102108d1e2e74f05e6df2db706141
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659104"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544345"
 ---
-# <a name="ms-ds-supported-encryption-types-attribute"></a>atributo MS-DS-Supported-Encryption-Types
+# <a name="ms-ds-supported-encryption-types-attribute"></a>Atributo ms-DS-Supported-Encryption-Types
 
-Los algoritmos de cifrado compatibles con cuentas de usuario, equipo o confianza.
+Algoritmos de cifrado admitidos por cuentas de usuario, equipo o confianza.
 
 > [!Note]  
-> El KDC usa esta información durante la generación de un vale de servicio para esta cuenta. Los servicios y equipos pueden actualizar automáticamente este atributo en sus cuentas respectivas en Active Directory y, por tanto, necesitan tener acceso de escritura a este atributo.
+> El KDC usa esta información al generar un vale de servicio para esta cuenta. Los servicios y equipos pueden actualizar automáticamente este atributo en sus respectivas cuentas de Active Directory y, por tanto, necesitan acceso de escritura a este atributo.
 
  
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-DS-compatible-tipos de cifrado     |
-| Nombre para mostrar de LDAP | msDS-SupportedEncryptionTypes        |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-DS-Supported-Encryption-Types     |
+| Ldap-Display-Name | msDS-SupportedEncryptionTypes        |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1963              |
-| System-ID-GUID    | 20119867-1d04-4ab7-9371-cfc3d5df0afd |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | 20119867-1d04-4ab7-9371-cfc3d5df0afd |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -57,18 +57,18 @@ Los algoritmos de cifrado compatibles con cuentas de usuario, equipo o confianza
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                     |
+| Id. de vínculo                | \-                                                                                     |
 | MAPI-Id                | \-                                                                                     |
-| System-Only            | False                                                                                  |
-| Tiene un único valor       | True                                                                                   |
-| Está indexado             | False                                                                                  |
-| En el catálogo global      | False                                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                           |
+| System-Only            | Falso                                                                                  |
+| Es de un solo valor       | Verdadero                                                                                   |
+| Está indexado             | Falso                                                                                  |
+| En el catálogo global      | Falso                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                           |
 | Range-Lower            | \-                                                                                     |
 | Range-Upper            | \-                                                                                     |
 | Search-Flags           | 0x00000000                                                                             |
 | System-Flags           | 0x00000010                                                                             |
-| Clases usadas en        | [**Dominio de confianza**](c-trusteddomain.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Dominio de confianza**](c-trusteddomain.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -78,18 +78,18 @@ Los algoritmos de cifrado compatibles con cuentas de usuario, equipo o confianza
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                     |
+| Id. de vínculo                | \-                                                                                     |
 | MAPI-Id                | \-                                                                                     |
-| System-Only            | False                                                                                  |
-| Tiene un único valor       | True                                                                                   |
-| Está indexado             | False                                                                                  |
-| En el catálogo global      | False                                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                           |
+| System-Only            | Falso                                                                                  |
+| Es de un solo valor       | Verdadero                                                                                   |
+| Está indexado             | Falso                                                                                  |
+| En el catálogo global      | Falso                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                           |
 | Range-Lower            | \-                                                                                     |
 | Range-Upper            | \-                                                                                     |
 | Search-Flags           | 0x00000000                                                                             |
 | System-Flags           | 0x00000010                                                                             |
-| Clases usadas en        | [**Dominio de confianza**](c-trusteddomain.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Dominio de confianza**](c-trusteddomain.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Los algoritmos de cifrado compatibles con cuentas de usuario, equipo o confianza
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                     |
+| Id. de vínculo                | \-                                                                                     |
 | MAPI-Id                | \-                                                                                     |
-| System-Only            | False                                                                                  |
-| Tiene un único valor       | True                                                                                   |
-| Está indexado             | False                                                                                  |
-| En el catálogo global      | False                                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                           |
+| System-Only            | Falso                                                                                  |
+| Es de un solo valor       | Verdadero                                                                                   |
+| Está indexado             | Falso                                                                                  |
+| En el catálogo global      | Falso                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                           |
 | Range-Lower            | \-                                                                                     |
 | Range-Upper            | \-                                                                                     |
 | Search-Flags           | 0x00000000                                                                             |

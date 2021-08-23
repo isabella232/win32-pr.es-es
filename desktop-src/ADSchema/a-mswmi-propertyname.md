@@ -1,11 +1,11 @@
 ---
-title: atributo MS-WMI-PropertyName
+title: Atributo ms-WMI-PropertyName
 description: Nombre del objeto de directiva de destino para un objeto de parámetro.
 ms.assetid: d4044656-545e-4aac-84f1-540c88858090
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-WMI-PropertyName
-- msWMI-PropertyName atributo AD Schema
+- Esquema de AD del atributo ms-WMI-PropertyName
+- Esquema de AD del atributo msWMI-PropertyName
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 152fc413e9f24c63ece5e9d78ea94d635610f54c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 730e72b067b0f0a678b92e61be6e73d2becacee93157c85260ea549b2271a8e7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658799"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119507615"
 ---
-# <a name="ms-wmi-propertyname-attribute"></a>atributo MS-WMI-PropertyName
+# <a name="ms-wmi-propertyname-attribute"></a>Atributo ms-WMI-PropertyName
 
 Nombre del objeto de directiva de destino para un objeto de parámetro.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-WMI-PropertyName                         |
-| Nombre para mostrar de LDAP | msWMI-PropertyName                          |
-| Tamaño              | Menos de veinte caracteres.                |
-| Actualizar privilegio  | Administrador de directiva de grupo                  |
+| CN                | ms-WMI-PropertyName                         |
+| Ldap-Display-Name | msWMI-PropertyName                          |
+| Size              | Menos de veinte caracteres.                |
+| Actualizar privilegios  | directiva de grupo administrador                  |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1641                     |
-| System-ID-GUID    | ab920883-e7f8-4d72-b4a0-c0449897509d        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | ab920883-e7f8-4d72-b4a0-c0449897509d        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -54,18 +54,18 @@ Nombre del objeto de directiva de destino para un objeto de parámetro.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | True                                                       |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Verdadero                                                       |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Clases usadas en        | [**MS-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
+| Clases usadas en        | [**ms-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
 
 
 
@@ -75,18 +75,18 @@ Nombre del objeto de directiva de destino para un objeto de parámetro.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | True                                                       |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Verdadero                                                       |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Clases usadas en        | [**MS-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
+| Clases usadas en        | [**ms-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
 
 
 
@@ -96,18 +96,18 @@ Nombre del objeto de directiva de destino para un objeto de parámetro.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | True                                                       |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Verdadero                                                       |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Clases usadas en        | [**MS-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
+| Clases usadas en        | [**ms-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ Nombre del objeto de directiva de destino para un objeto de parámetro.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | True                                                       |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Verdadero                                                       |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Clases usadas en        | [**MS-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
+| Clases usadas en        | [**ms-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
 
 
 
@@ -138,18 +138,18 @@ Nombre del objeto de directiva de destino para un objeto de parámetro.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | True                                                       |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Verdadero                                                       |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Clases usadas en        | [**MS-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
+| Clases usadas en        | [**ms-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
 
 
 

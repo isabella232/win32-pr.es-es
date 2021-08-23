@@ -1,7 +1,7 @@
 ---
-description: Puntero al objeto que recibe los mensajes de control de calidad.
+description: Puntero al objeto que recibe mensajes de control de calidad.
 ms.assetid: bf4fd84c-9522-4686-9fb1-17a2ce3e5a16
-title: 'Miembro CBaseRenderer:: m_pQSink (Renbase. h)'
+title: CBaseRenderer::m_pQSink miembro (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 331504ffaeb74d84382b65d1332f6dbe7c9556dd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bb365c0af23868f05c624144de239828ce7c1d6cabacd3bf774c59d566348ff5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671286"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119502725"
 ---
-# <a name="cbaserendererm_pqsink-member"></a>Miembro pQSink CBaseRenderer:: m \_
+# <a name="cbaserendererm_pqsink-member"></a>Miembro CBaseRenderer::m \_ pQSink
 
-Puntero al objeto que recibe los mensajes de control de calidad.
+Puntero al objeto que recibe mensajes de control de calidad.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,9 +36,9 @@ IQualityControl *m_pQSink;
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase base no implementa el control de calidad. Esta variable miembro tiene como valor predeterminado **null**.
+La clase base no implementa el control de calidad. El valor predeterminado de esta variable miembro **es NULL.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,8 +46,8 @@ La clase base no implementa el control de calidad. Esta variable miembro tiene c
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ La clase base no implementa el control de calidad. Esta variable miembro tiene c
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  

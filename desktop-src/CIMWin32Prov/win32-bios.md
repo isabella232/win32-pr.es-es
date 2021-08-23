@@ -1,8 +1,8 @@
 ---
-description: Representa los atributos de los servicios básicos de entrada y salida (BIOS) del sistema del equipo que están instalados en un equipo.
+description: Representa los atributos de los servicios básicos de entrada y salida (BIOS) del sistema informático que están instalados en un equipo.
 ms.assetid: e4a5aaf0-0432-4517-97b7-ac05ffd10b5b
 ms.tgt_platform: multiple
-title: Win32_BIOS (clase)
+title: Win32_BIOS clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -45,16 +45,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 53c1e953c9c1348a133cf4755ab04f6024c42034
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: bda0a1a07de4411b9a8c683fb2c7e84156b658361df4f2eaf3aa5709c6d11a95
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104539237"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119504295"
 ---
-# <a name="win32_bios-class"></a>\_Clase de BIOS Win32
+# <a name="win32_bios-class"></a>Win32 \_ BIOS (clase)
 
-La [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) de **\_ BIOS de Win32** representa los atributos de los servicios básicos de entrada y salida (BIOS) del sistema del equipo que están instalados en un equipo.
+La clase WMI de **\_ BIOS Win32** representa los atributos de los servicios básicos de entrada y salida (BIOS) del sistema informático que están instalados en un equipo. [](/windows/desktop/WmiSdk/retrieving-a-class)
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -100,31 +100,31 @@ class Win32_BIOS : CIM_BIOSElement
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ BIOS de Win32** tiene estos tipos de miembros:
+La **clase \_ BIOS Win32** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ BIOS de Win32** tiene estas propiedades.
+La **clase \_ BIOS Win32** tiene estas propiedades.
 
 <dl> <dt>
 
 **BiosCharacteristics**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" \| \| características del BIOS del tipo de SMBIOS 0")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Características del BIOS de tipo SMBIOS \| \| 0")
 </dt> </dl>
 
-Matriz de características del BIOS admitidas por el sistema tal y como se define en la especificación de referencia de BIOS de administración del sistema.
+Matriz de características de BIOS admitidas por el sistema tal y como se define en la Especificación de referencia del BIOS de administración del sistema.
 
-Este valor procede del miembro **características del BIOS** de la estructura de **información del BIOS** en la información de SMBIOS.
+Este valor procede del miembro **Características del BIOS** de la estructura información del **BIOS** en la información de SMBIOS.
 
 Los valores posibles son.
 
@@ -153,14 +153,14 @@ Los valores posibles son.
 
 <span id="BIOS_Characteristics_Not_Supported"></span><span id="bios_characteristics_not_supported"></span><span id="BIOS_CHARACTERISTICS_NOT_SUPPORTED"></span>
 
-<span id="BIOS_Characteristics_Not_Supported"></span><span id="bios_characteristics_not_supported"></span><span id="BIOS_CHARACTERISTICS_NOT_SUPPORTED"></span>**Características del BIOS no admitidas** (3)
+<span id="BIOS_Characteristics_Not_Supported"></span><span id="bios_characteristics_not_supported"></span><span id="BIOS_CHARACTERISTICS_NOT_SUPPORTED"></span>**Características de BIOS no admitidas** (3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ISA_is_supported"></span><span id="isa_is_supported"></span><span id="ISA_IS_SUPPORTED"></span>
 
-<span id="ISA_is_supported"></span><span id="isa_is_supported"></span><span id="ISA_IS_SUPPORTED"></span>**ISA compatible** (4)
+<span id="ISA_is_supported"></span><span id="isa_is_supported"></span><span id="ISA_IS_SUPPORTED"></span>**ISA es compatible** (4)
 
 
 </dt> <dd></dd> <dt>
@@ -188,14 +188,14 @@ Los valores posibles son.
 
 <span id="PC_Card__PCMCIA__is_supported"></span><span id="pc_card__pcmcia__is_supported"></span><span id="PC_CARD__PCMCIA__IS_SUPPORTED"></span>
 
-<span id="PC_Card__PCMCIA__is_supported"></span><span id="pc_card__pcmcia__is_supported"></span><span id="PC_CARD__PCMCIA__IS_SUPPORTED"></span>**Se admite la tarjeta PC (PCMCIA)** (8)
+<span id="PC_Card__PCMCIA__is_supported"></span><span id="pc_card__pcmcia__is_supported"></span><span id="PC_CARD__PCMCIA__IS_SUPPORTED"></span>**PC Card (PCMCIA) es compatible** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Plug_and_Play_is_supported"></span><span id="plug_and_play_is_supported"></span><span id="PLUG_AND_PLAY_IS_SUPPORTED"></span>
 
-<span id="Plug_and_Play_is_supported"></span><span id="plug_and_play_is_supported"></span><span id="PLUG_AND_PLAY_IS_SUPPORTED"></span>**Se admite plug and Play** (9)
+<span id="Plug_and_Play_is_supported"></span><span id="plug_and_play_is_supported"></span><span id="PLUG_AND_PLAY_IS_SUPPORTED"></span>**Plug and Play se admite** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -214,34 +214,34 @@ Los valores posibles son.
 
 </dt> <dd>
 
-BIOS actualizable (Flash)
+BIOS es actualizable (Flash)
 
 </dd> <dt>
 
 <span id="BIOS_shadowing_is_allowed"></span><span id="bios_shadowing_is_allowed"></span><span id="BIOS_SHADOWING_IS_ALLOWED"></span>
 
-<span id="BIOS_shadowing_is_allowed"></span><span id="bios_shadowing_is_allowed"></span><span id="BIOS_SHADOWING_IS_ALLOWED"></span>**Se permite la sombra del BIOS** (12)
+<span id="BIOS_shadowing_is_allowed"></span><span id="bios_shadowing_is_allowed"></span><span id="BIOS_SHADOWING_IS_ALLOWED"></span>**Se permite el sombreado de BIOS** (12)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="VL-VESA_is_supported"></span><span id="vl-vesa_is_supported"></span><span id="VL-VESA_IS_SUPPORTED"></span>
 
-<span id="VL-VESA_is_supported"></span><span id="vl-vesa_is_supported"></span><span id="VL-VESA_IS_SUPPORTED"></span>**VL-VESA es compatible** (13)
+<span id="VL-VESA_is_supported"></span><span id="vl-vesa_is_supported"></span><span id="VL-VESA_IS_SUPPORTED"></span>**Se admite VL-VESA** (13)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ESCD_support_is_available"></span><span id="escd_support_is_available"></span><span id="ESCD_SUPPORT_IS_AVAILABLE"></span>
 
-<span id="ESCD_support_is_available"></span><span id="escd_support_is_available"></span><span id="ESCD_SUPPORT_IS_AVAILABLE"></span>La **compatibilidad con ESCD está disponible** (14)
+<span id="ESCD_support_is_available"></span><span id="escd_support_is_available"></span><span id="ESCD_SUPPORT_IS_AVAILABLE"></span>**La compatibilidad con ESCD está disponible** (14)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Boot_from_CD_is_supported"></span><span id="boot_from_cd_is_supported"></span><span id="BOOT_FROM_CD_IS_SUPPORTED"></span>
 
-<span id="Boot_from_CD_is_supported"></span><span id="boot_from_cd_is_supported"></span><span id="BOOT_FROM_CD_IS_SUPPORTED"></span>**Se admite el arranque desde el CD** (15)
+<span id="Boot_from_CD_is_supported"></span><span id="boot_from_cd_is_supported"></span><span id="BOOT_FROM_CD_IS_SUPPORTED"></span>**Se admite el arranque desde CD** (15)
 
 
 </dt> <dd></dd> <dt>
@@ -255,14 +255,14 @@ BIOS actualizable (Flash)
 
 <span id="BIOS_ROM_is_socketed"></span><span id="bios_rom_is_socketed"></span><span id="BIOS_ROM_IS_SOCKETED"></span>
 
-<span id="BIOS_ROM_is_socketed"></span><span id="bios_rom_is_socketed"></span><span id="BIOS_ROM_IS_SOCKETED"></span>La **ROM del BIOS está socket** (17)
+<span id="BIOS_ROM_is_socketed"></span><span id="bios_rom_is_socketed"></span><span id="BIOS_ROM_IS_SOCKETED"></span>**BIOS ROM está socketado** (17)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Boot_From_PC_Card__PCMCIA__is_supported"></span><span id="boot_from_pc_card__pcmcia__is_supported"></span><span id="BOOT_FROM_PC_CARD__PCMCIA__IS_SUPPORTED"></span>
 
-<span id="Boot_From_PC_Card__PCMCIA__is_supported"></span><span id="boot_from_pc_card__pcmcia__is_supported"></span><span id="BOOT_FROM_PC_CARD__PCMCIA__IS_SUPPORTED"></span>**Se admite el arranque desde PC Card (PCMCIA)** (18)
+<span id="Boot_From_PC_Card__PCMCIA__is_supported"></span><span id="boot_from_pc_card__pcmcia__is_supported"></span><span id="BOOT_FROM_PC_CARD__PCMCIA__IS_SUPPORTED"></span>**Arranque desde PC Card (PCMCIA) es compatible** (18)
 
 
 </dt> <dd></dd> <dt>
@@ -276,101 +276,101 @@ BIOS actualizable (Flash)
 
 <span id="Int_13h_-_Japanese_Floppy_for_NEC_9800_1.2mb__3.5____1k_Bytes_Sector__360_RPM__is_supported"></span><span id="int_13h_-_japanese_floppy_for_nec_9800_1.2mb__3.5____1k_bytes_sector__360_rpm__is_supported"></span><span id="INT_13H_-_JAPANESE_FLOPPY_FOR_NEC_9800_1.2MB__3.5____1K_BYTES_SECTOR__360_RPM__IS_SUPPORTED"></span>
 
-<span id="Int_13h_-_Japanese_Floppy_for_NEC_9800_1.2mb__3.5____1k_Bytes_Sector__360_RPM__is_supported"></span><span id="int_13h_-_japanese_floppy_for_nec_9800_1.2mb__3.5____1k_bytes_sector__360_rpm__is_supported"></span><span id="INT_13H_-_JAPANESE_FLOPPY_FOR_NEC_9800_1.2MB__3.5____1K_BYTES_SECTOR__360_RPM__IS_SUPPORTED"></span>**Int 13h: se admite el disquete japonés para NEC 9800 1.2 MB (3,5 \\ ", 1 k bytes/Sector, 360 rpm)** (20)
+<span id="Int_13h_-_Japanese_Floppy_for_NEC_9800_1.2mb__3.5____1k_Bytes_Sector__360_RPM__is_supported"></span><span id="int_13h_-_japanese_floppy_for_nec_9800_1.2mb__3.5____1k_bytes_sector__360_rpm__is_supported"></span><span id="INT_13H_-_JAPANESE_FLOPPY_FOR_NEC_9800_1.2MB__3.5____1K_BYTES_SECTOR__360_RPM__IS_SUPPORTED"></span>**Int 13h - Japanese Floppy for NEC 9800 1.2mb (3.5 ", 1k Bytes/Sector, 360 RPM) is supported (20) (Int 13h - Japanese Floppy for NEC 9800 1.2mb (3.5 \\ ", 1k Bytes/Sector, 360 RPM) is supported (20) (Int 13h - Japanese Floppy for NEC 9800 1.2mb (3.5 ", 1k Bytes/Sector, 360 RPM) is supported** (20)
 
 
 </dt> <dd>
 
-Int 13h: se admite el disquete japonés para NEC 9800 1.2 MB (3,5, 1 k bytes/sector, 360 RPM)
+Int 13h - Japanese Floppy for NEC 9800 1.2mb (3.5, 1k Bytes/Sector, 360 RPM) is supported
 
 </dd> <dt>
 
 <span id="Int_13h_-_Japanese_Floppy_for_Toshiba_1.2mb__3.5____360_RPM__is_supported"></span><span id="int_13h_-_japanese_floppy_for_toshiba_1.2mb__3.5____360_rpm__is_supported"></span><span id="INT_13H_-_JAPANESE_FLOPPY_FOR_TOSHIBA_1.2MB__3.5____360_RPM__IS_SUPPORTED"></span>
 
-<span id="Int_13h_-_Japanese_Floppy_for_Toshiba_1.2mb__3.5____360_RPM__is_supported"></span><span id="int_13h_-_japanese_floppy_for_toshiba_1.2mb__3.5____360_rpm__is_supported"></span><span id="INT_13H_-_JAPANESE_FLOPPY_FOR_TOSHIBA_1.2MB__3.5____360_RPM__IS_SUPPORTED"></span>**Int 13h: se admite el disquete japonés para Toshiba 1.2 MB (3,5 \\ ", 360 rpm)** (21)
+<span id="Int_13h_-_Japanese_Floppy_for_Toshiba_1.2mb__3.5____360_RPM__is_supported"></span><span id="int_13h_-_japanese_floppy_for_toshiba_1.2mb__3.5____360_rpm__is_supported"></span><span id="INT_13H_-_JAPANESE_FLOPPY_FOR_TOSHIBA_1.2MB__3.5____360_RPM__IS_SUPPORTED"></span>Int 13h : se admite el disquete japonés para **Toshiba de 1,2 mb (3,5 \\ ", 360 RPM)** (21)
 
 
 </dt> <dd>
 
-Int 13h: se admite el disquete japonés para Toshiba 1.2 MB (3,5, 360 RPM)
+Int 13h : se admite el disquete japonés para Toshiba de 1,2 mb (3,5, 360 RPM)
 
 </dd> <dt>
 
 <span id="Int_13h_-_5.25_____360_KB_Floppy_Services_are_supported"></span><span id="int_13h_-_5.25_____360_kb_floppy_services_are_supported"></span><span id="INT_13H_-_5.25_____360_KB_FLOPPY_SERVICES_ARE_SUPPORTED"></span>
 
-<span id="Int_13h_-_5.25_____360_KB_Floppy_Services_are_supported"></span><span id="int_13h_-_5.25_____360_kb_floppy_services_are_supported"></span><span id="INT_13H_-_5.25_____360_KB_FLOPPY_SERVICES_ARE_SUPPORTED"></span>**Int 13h-5,25 \\ "/360 KB se admiten los servicios de disquete** (22)
+<span id="Int_13h_-_5.25_____360_KB_Floppy_Services_are_supported"></span><span id="int_13h_-_5.25_____360_kb_floppy_services_are_supported"></span><span id="INT_13H_-_5.25_____360_KB_FLOPPY_SERVICES_ARE_SUPPORTED"></span>**Int 13h - 5,25 " /360 KB Floppy Services are supported (22) (Int 13h - 5,25 \\ " /360 KB Floppy Services are supported** (22)
 
 
 </dt> <dd>
 
-Int 13h-5,25/360 se admiten los servicios de disquete de KB
+Int 13h - 5.25 / 360 KB Floppy Services are supported
 
 </dd> <dt>
 
 <span id="Int_13h_-_5.25____1.2MB_Floppy_Services_are_supported"></span><span id="int_13h_-_5.25____1.2mb_floppy_services_are_supported"></span><span id="INT_13H_-_5.25____1.2MB_FLOPPY_SERVICES_ARE_SUPPORTED"></span>
 
-<span id="Int_13h_-_5.25____1.2MB_Floppy_Services_are_supported"></span><span id="int_13h_-_5.25____1.2mb_floppy_services_are_supported"></span><span id="INT_13H_-_5.25____1.2MB_FLOPPY_SERVICES_ARE_SUPPORTED"></span>**Int 13h-5,25 \\ "se admiten los servicios de disquete/1.2Mb** (23)
+<span id="Int_13h_-_5.25____1.2MB_Floppy_Services_are_supported"></span><span id="int_13h_-_5.25____1.2mb_floppy_services_are_supported"></span><span id="INT_13H_-_5.25____1.2MB_FLOPPY_SERVICES_ARE_SUPPORTED"></span>**Int 13h - 5.25 " /1.2MB Floppy Services are supported (23) (Int 13h - 5.25 \\ " /1.2MB Floppy Services are supported** (23)
 
 
 </dt> <dd>
 
-Int 13h-5,25/1.2MB se admiten los servicios de disquete
+Int 13h - 5.25 /1.2MB Floppy Services are supported
 
 </dd> <dt>
 
 <span id="Int_13h_-_3.5_____720_KB_Floppy_Services_are__supported"></span><span id="int_13h_-_3.5_____720_kb_floppy_services_are__supported"></span><span id="INT_13H_-_3.5_____720_KB_FLOPPY_SERVICES_ARE__SUPPORTED"></span>
 
-<span id="Int_13h_-_3.5_____720_KB_Floppy_Services_are__supported"></span><span id="int_13h_-_3.5_____720_kb_floppy_services_are__supported"></span><span id="INT_13H_-_3.5_____720_KB_FLOPPY_SERVICES_ARE__SUPPORTED"></span>**Int 13h-3,5 \\ "/720 KB se admiten los servicios de disquete** (24)
+<span id="Int_13h_-_3.5_____720_KB_Floppy_Services_are__supported"></span><span id="int_13h_-_3.5_____720_kb_floppy_services_are__supported"></span><span id="INT_13H_-_3.5_____720_KB_FLOPPY_SERVICES_ARE__SUPPORTED"></span>**Int 13h - 3,5 " / 720 KB Floppy Services are supported (24) (Int 13h - 3.5 \\ " /720 KB Floppy Services are supported** (24)
 
 
 </dt> <dd>
 
-Int 13h-3,5/720 se admiten los servicios de disquete de KB
+Int 13h - 3.5 / 720 KB Floppy Services are supported
 
 </dd> <dt>
 
 <span id="Int_13h_-_3.5_____2.88_MB_Floppy_Services_are_supported"></span><span id="int_13h_-_3.5_____2.88_mb_floppy_services_are_supported"></span><span id="INT_13H_-_3.5_____2.88_MB_FLOPPY_SERVICES_ARE_SUPPORTED"></span>
 
-<span id="Int_13h_-_3.5_____2.88_MB_Floppy_Services_are_supported"></span><span id="int_13h_-_3.5_____2.88_mb_floppy_services_are_supported"></span><span id="INT_13H_-_3.5_____2.88_MB_FLOPPY_SERVICES_ARE_SUPPORTED"></span>**Int 13h-3,5 \\ "/2,88 MB se admiten los servicios de disquete** (25)
+<span id="Int_13h_-_3.5_____2.88_MB_Floppy_Services_are_supported"></span><span id="int_13h_-_3.5_____2.88_mb_floppy_services_are_supported"></span><span id="INT_13H_-_3.5_____2.88_MB_FLOPPY_SERVICES_ARE_SUPPORTED"></span>**Int 13h - 3.5 " / 2.88 MB Floppy Services are supported (25) (Int 13h - 3.5 " /2.88 MB Floppy Services are supported (25) (Int 13h - 3.5 \\ " /2.88 MB Floppy Services are supported** (25)
 
 
 </dt> <dd>
 
-Se admiten los servicios de disquete int 13h-3,5/2,88 MB
+Int 13h - 3.5 / 2.88 MB Floppy Services are supported
 
 </dd> <dt>
 
 <span id="Int_5h__Print_Screen_Service_is_supported"></span><span id="int_5h__print_screen_service_is_supported"></span><span id="INT_5H__PRINT_SCREEN_SERVICE_IS_SUPPORTED"></span>
 
-<span id="Int_5h__Print_Screen_Service_is_supported"></span><span id="int_5h__print_screen_service_is_supported"></span><span id="INT_5H__PRINT_SCREEN_SERVICE_IS_SUPPORTED"></span>**Int 5h, se admite el servicio de pantalla de impresión** (26)
+<span id="Int_5h__Print_Screen_Service_is_supported"></span><span id="int_5h__print_screen_service_is_supported"></span><span id="INT_5H__PRINT_SCREEN_SERVICE_IS_SUPPORTED"></span>**Int 5h, se admite Print Screen Service** (26)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Int_9h__8042_Keyboard_services_are_supported"></span><span id="int_9h__8042_keyboard_services_are_supported"></span><span id="INT_9H__8042_KEYBOARD_SERVICES_ARE_SUPPORTED"></span>
 
-<span id="Int_9h__8042_Keyboard_services_are_supported"></span><span id="int_9h__8042_keyboard_services_are_supported"></span><span id="INT_9H__8042_KEYBOARD_SERVICES_ARE_SUPPORTED"></span>**Int 9h, se admiten los servicios de teclado 8042** (27)
+<span id="Int_9h__8042_Keyboard_services_are_supported"></span><span id="int_9h__8042_keyboard_services_are_supported"></span><span id="INT_9H__8042_KEYBOARD_SERVICES_ARE_SUPPORTED"></span>Se admiten servicios de teclado **Int 9h, 8042** (27)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Int_14h__Serial_Services_are_supported"></span><span id="int_14h__serial_services_are_supported"></span><span id="INT_14H__SERIAL_SERVICES_ARE_SUPPORTED"></span>
 
-<span id="Int_14h__Serial_Services_are_supported"></span><span id="int_14h__serial_services_are_supported"></span><span id="INT_14H__SERIAL_SERVICES_ARE_SUPPORTED"></span>**Int 14h, se admiten los servicios en serie** (28)
+<span id="Int_14h__Serial_Services_are_supported"></span><span id="int_14h__serial_services_are_supported"></span><span id="INT_14H__SERIAL_SERVICES_ARE_SUPPORTED"></span>**Int 14h, se admiten los servicios serie** (28)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Int_17h__printer_services_are_supported"></span><span id="int_17h__printer_services_are_supported"></span><span id="INT_17H__PRINTER_SERVICES_ARE_SUPPORTED"></span>
 
-<span id="Int_17h__printer_services_are_supported"></span><span id="int_17h__printer_services_are_supported"></span><span id="INT_17H__PRINTER_SERVICES_ARE_SUPPORTED"></span>**Int 17h, se admiten los servicios de impresora** (29)
+<span id="Int_17h__printer_services_are_supported"></span><span id="int_17h__printer_services_are_supported"></span><span id="INT_17H__PRINTER_SERVICES_ARE_SUPPORTED"></span>**Int 17h, se admiten servicios de impresora** (29)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Int_10h__CGA_Mono_Video_Services_are_supported"></span><span id="int_10h__cga_mono_video_services_are_supported"></span><span id="INT_10H__CGA_MONO_VIDEO_SERVICES_ARE_SUPPORTED"></span>
 
-<span id="Int_10h__CGA_Mono_Video_Services_are_supported"></span><span id="int_10h__cga_mono_video_services_are_supported"></span><span id="INT_10H__CGA_MONO_VIDEO_SERVICES_ARE_SUPPORTED"></span>**Int 10h, se admiten los servicios de vídeo CGA/mono** (30)
+<span id="Int_10h__CGA_Mono_Video_Services_are_supported"></span><span id="int_10h__cga_mono_video_services_are_supported"></span><span id="INT_10H__CGA_MONO_VIDEO_SERVICES_ARE_SUPPORTED"></span>**Int 10h, CGA/Mono Video Services son compatibles** (30)
 
 
 </dt> <dd></dd> <dt>
@@ -395,7 +395,7 @@ Se admite ACPI
 
 <span id="USB_Legacy_is_supported"></span><span id="usb_legacy_is_supported"></span><span id="USB_LEGACY_IS_SUPPORTED"></span>
 
-<span id="USB_Legacy_is_supported"></span><span id="usb_legacy_is_supported"></span><span id="USB_LEGACY_IS_SUPPORTED"></span>**Se admite USB Legacy** (33)
+<span id="USB_Legacy_is_supported"></span><span id="usb_legacy_is_supported"></span><span id="USB_LEGACY_IS_SUPPORTED"></span>**Usb heredado es compatible** (33)
 
 
 </dt> <dd></dd> <dt>
@@ -409,40 +409,40 @@ Se admite ACPI
 
 <span id="I2O_boot_is_supported"></span><span id="i2o_boot_is_supported"></span><span id="I2O_BOOT_IS_SUPPORTED"></span>
 
-<span id="I2O_boot_is_supported"></span><span id="i2o_boot_is_supported"></span><span id="I2O_BOOT_IS_SUPPORTED"></span>**Se admite el arranque de I2O** (35)
+<span id="I2O_boot_is_supported"></span><span id="i2o_boot_is_supported"></span><span id="I2O_BOOT_IS_SUPPORTED"></span>**Se admite el arranque I2O** (35)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="LS-120_boot_is_supported"></span><span id="ls-120_boot_is_supported"></span><span id="LS-120_BOOT_IS_SUPPORTED"></span>
 
-<span id="LS-120_boot_is_supported"></span><span id="ls-120_boot_is_supported"></span><span id="LS-120_BOOT_IS_SUPPORTED"></span>**LS-120 se admite el arranque** (36)
+<span id="LS-120_boot_is_supported"></span><span id="ls-120_boot_is_supported"></span><span id="LS-120_BOOT_IS_SUPPORTED"></span>**Se admite el arranque LS-120** (36)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ATAPI_ZIP_Drive_boot_is_supported"></span><span id="atapi_zip_drive_boot_is_supported"></span><span id="ATAPI_ZIP_DRIVE_BOOT_IS_SUPPORTED"></span>
 
-<span id="ATAPI_ZIP_Drive_boot_is_supported"></span><span id="atapi_zip_drive_boot_is_supported"></span><span id="ATAPI_ZIP_DRIVE_BOOT_IS_SUPPORTED"></span>**Se admite el arranque de unidad Zip ATAPI** (37)
+<span id="ATAPI_ZIP_Drive_boot_is_supported"></span><span id="atapi_zip_drive_boot_is_supported"></span><span id="ATAPI_ZIP_DRIVE_BOOT_IS_SUPPORTED"></span>**Se admite el arranque de la** unidad ZIP de ATAPI (37)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="1394_boot_is_supported"></span><span id="1394_BOOT_IS_SUPPORTED"></span>
 
-<span id="1394_boot_is_supported"></span><span id="1394_BOOT_IS_SUPPORTED"></span>**se admite el arranque 1394** (38)
+<span id="1394_boot_is_supported"></span><span id="1394_BOOT_IS_SUPPORTED"></span>**Se admite el arranque 1394** (38)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Smart_Battery_supported"></span><span id="smart_battery_supported"></span><span id="SMART_BATTERY_SUPPORTED"></span>
 
-<span id="Smart_Battery_supported"></span><span id="smart_battery_supported"></span><span id="SMART_BATTERY_SUPPORTED"></span>**Compatibilidad con batería inteligente** (39)
+<span id="Smart_Battery_supported"></span><span id="smart_battery_supported"></span><span id="SMART_BATTERY_SUPPORTED"></span>**Batería inteligente compatible** (39)
 
 
 </dt> <dd>
 
-Se admite la batería inteligente
+Se admite smart battery
 
 </dd> <dt>
 
@@ -465,13 +465,13 @@ Reservado para el proveedor del sistema
 **BIOSVersion**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Matriz de la información completa del BIOS del sistema. En muchos equipos puede haber varias cadenas de versión que se almacenan en el registro y que representan la información del BIOS del sistema.
+Matriz de la información completa del BIOS del sistema. En muchos equipos puede haber varias cadenas de versión que se almacenan en el registro y representan la información del BIOS del sistema.
 
 </dd> <dt>
 
@@ -484,12 +484,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Información del componente de software de DMTF \| 002,4 ")
+Calificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Software Component Information \| 002.4")
 </dt> </dl>
 
 Identificador interno de esta compilación de este elemento de software.
 
-Esta propiedad se hereda de [**\_ SoftwareElement CIM**](cim-softwareelement.md).
+Esta propiedad se hereda de [**CIM \_ SoftwareElement**](cim-softwareelement.md).
 
 </dd> <dt>
 
@@ -502,16 +502,16 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
+Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
 </dt> </dl>
 
 Breve descripción del objeto de una cadena de una línea.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
-**Dese**
+**CodeSet**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -525,7 +525,7 @@ Calificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 
 Conjunto de código utilizado por este elemento de software.
 
-Esta propiedad se hereda de [**\_ SoftwareElement CIM**](cim-softwareelement.md).
+Esta propiedad se hereda de [**CIM \_ SoftwareElement**](cim-softwareelement.md).
 
 </dd> <dt>
 
@@ -538,10 +538,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| tipo 13 \| idioma actual")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| Type 13 \| Current Language")
 </dt> </dl>
 
-Nombre del idioma actual del BIOS.
+Nombre del idioma del BIOS actual.
 
 </dd> <dt>
 
@@ -554,56 +554,56 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Descripción")
+Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Description")
 </dt> </dl>
 
 Descripción del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **EmbeddedControllerMajorVersion**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" \| \| versión principal de firmware del controlador incrustado de tipo SMBIOS 0")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| Type 0 Embedded Controller Firmware Major \| Release")
 </dt> </dl>
 
-La versión principal del firmware del controlador insertado.
+La versión principal del firmware del controlador incrustado.
 
-Este valor procede del miembro de la **versión principal del firmware del controlador insertado** de la estructura de **información del BIOS** en la información de SMBIOS.
+Este valor procede del miembro **Embedded Controller Firmware Major Release** de la estructura información de **BIOS** en la información de SMBIOS.
 
-**Windows server 2012 R2, Windows 8.1, Windows server 2012, Windows 8, Windows server 2008 R2, Windows 7, Windows server 2008 y Windows Vista:** Esta propiedad no se admite antes de Windows 10 y Windows Server 2016.
+**Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 y Windows Vista:** Esta propiedad no se admite antes de Windows 10 y Windows Server 2016.
 
 </dd> <dt>
 
 **EmbeddedControllerMinorVersion**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" \| \| versión secundaria del firmware del controlador incrustado de tipo SMBIOS 0")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SmBIOS \| type 0 Embedded Controller Firmware Minor \| Release")
 </dt> </dl>
 
-Versión secundaria del firmware del controlador insertado.
+La versión secundaria del firmware del controlador incrustado.
 
-Este valor procede del miembro de **versión secundaria del firmware del controlador incrustado** de la estructura de **información del BIOS** en la información de SMBIOS.
+Este valor procede del miembro **Embedded Controller Firmware Minor Release** de la estructura información de **BIOS** en la información de SMBIOS.
 
-**Windows server 2012 R2, Windows 8.1, Windows server 2012, Windows 8, Windows server 2008 R2, Windows 7, Windows server 2008 y Windows Vista:** Esta propiedad no se admite antes de Windows 10 y Windows Server 2016.
+**Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 y Windows Vista:** Esta propiedad no se admite antes de Windows 10 y Windows Server 2016.
 
 </dd> <dt>
 
-**IdentificationCode**
+**Código de identificación**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -612,25 +612,25 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Información del componente de software de DMTF \| 002,7 ")
+Calificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Software Component Information \| 002.7")
 </dt> </dl>
 
-Identificador del fabricante para este elemento de software. A menudo, se trata de una referencia de almacén (SKU) o un número de pieza.
+Identificador del fabricante para este elemento de software. A menudo, esto será una unidad de almacén (SKU) o un número de pieza.
 
-Esta propiedad se hereda de [**\_ SoftwareElement CIM**](cim-softwareelement.md).
+Esta propiedad se hereda de [**CIM \_ SoftwareElement**](cim-softwareelement.md).
 
 </dd> <dt>
 
 **InstallableLanguages**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) de tipo ("SMBIOS \| Type 13 \| idiomas instalables")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("lenguajes instalables de tipo SMBIOS \| 13") \|
 </dt> </dl>
 
 Número de idiomas disponibles para la instalación en este sistema. El lenguaje puede determinar propiedades como la necesidad de texto Unicode y bidireccional.
@@ -640,18 +640,18 @@ Número de idiomas disponibles para la instalación en este sistema. El lenguaje
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 "), [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" instalación de fecha ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Fecha de instalación")
 </dt> </dl>
 
 Fecha y hora en que se instaló el objeto. Esta propiedad no necesita un valor para indicar que el objeto está instalado.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -664,32 +664,32 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (32), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Información del componente de software de DMTF \| 002,6 ")
+Calificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (32), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Software Component Information \| 002.6")
 </dt> </dl>
 
 Edición de idioma de este elemento de software. Se deben usar los códigos de idioma definidos en ISO 639. Cuando el elemento de software representa una versión multilingüe o internacional de un producto, se debe usar la cadena "multilingüe".
 
-Esta propiedad se hereda de [**\_ SoftwareElement CIM**](cim-softwareelement.md).
+Esta propiedad se hereda de [**CIM \_ SoftwareElement**](cim-softwareelement.md).
 
 </dd> <dt>
 
 **ListOfLanguages**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **Matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" \| cadenas de lenguaje de tipo SMBIOS 13 \| ")
+Calificadores: [**MappingStrings ("cadenas**](/windows/desktop/WmiSdk/standard-qualifiers) de lenguaje de tipo SMBIOS \| 13") \|
 </dt> </dl>
 
-Matriz de nombres de los idiomas disponibles para instalar BIOS.
+Matriz de nombres de idiomas disponibles instalables por BIOS.
 
 </dd> <dt>
 
-**Le**
+**Fabricante**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -698,14 +698,14 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|BIOS del sistema DMTF \| 001,2 ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System BIOS \| 001.2")
 </dt> </dl>
 
 Fabricante de este elemento de software.
 
-Este valor procede del miembro del **proveedor** de la estructura de **información del BIOS** en la información de SMBIOS.
+Este valor procede del miembro **Vendor de** la estructura de información **del BIOS** en la información de SMBIOS.
 
-Esta propiedad se hereda de [**\_ SoftwareElement CIM**](cim-softwareelement.md).
+Esta propiedad se hereda de [**CIM \_ SoftwareElement**](cim-softwareelement.md).
 
 </dd> <dt>
 
@@ -718,12 +718,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Nombre usado para identificar este elemento de software.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -739,9 +739,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ OperatingSystem**](cim-operatingsystem.md).**OtherTypeDescription**")
 </dt> </dl>
 
-Registra el fabricante y el tipo de sistema operativo para un elemento de software cuando la propiedad **TargetOperatingSystem** tiene un valor de 1 (otro). Cuando **TargetOperatingSystem** tiene un valor de 1, **OtherTargetOS** debe tener un valor que no sea NULL. Para todos los demás valores de **TargetOperatingSystem**, **OtherTargetOS** es **null**.
+Registra el fabricante y el tipo de sistema operativo de un elemento de software cuando la **propiedad TargetOperatingSystem** tiene un valor de 1 (Other). Cuando **TargetOperatingSystem** tiene un valor de 1, **OtherTargetOS** debe tener un valor distinto de null. Para todos los demás valores **de TargetOperatingSystem**, **OtherTargetOS** es **NULL.**
 
-Esta propiedad se hereda de [**\_ SoftwareElement CIM**](cim-softwareelement.md).
+Esta propiedad se hereda de [**CIM \_ SoftwareElement**](cim-softwareelement.md).
 
 </dd> <dt>
 
@@ -754,27 +754,27 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|BIOS del sistema DMTF \| 001,9 ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System BIOS \| 001.9")
 </dt> </dl>
 
-Si es **true**, se trata del BIOS principal del equipo.
+Si **es TRUE,** este es el BIOS principal del sistema del equipo.
 
-Esta propiedad se hereda de [**\_ BIOSElement CIM**](cim-bioselement.md).
+Esta propiedad se hereda de [**CIM \_ BIOSElement**](cim-bioselement.md).
 
 </dd> <dt>
 
 **ReleaseDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Fecha de lanzamiento del BIOS de Windows con el formato de hora universal coordinada (UTC) de AAAAMMDDHHMMSS. MMMMMM (+-) OOO.
+Fecha de lanzamiento de Windows BIOS en el formato de hora universal coordinada (UTC) de AAAAMMDDHHMMSS. MMMMMM(+-)OOO.
 
-Este valor procede del miembro de **fecha de lanzamiento de BIOS** de la estructura de información de **BIOS** en la información de SMBIOS.
+Este valor procede del miembro **Bios Release Date** de la estructura información del **BIOS** en la información de SMBIOS.
 
 </dd> <dt>
 
@@ -787,12 +787,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,4 ")
+Calificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.4")
 </dt> </dl>
 
 Número de serie asignado del elemento de software.
 
-Esta propiedad se hereda de [**\_ SoftwareElement CIM**](cim-softwareelement.md).
+Esta propiedad se hereda de [**CIM \_ SoftwareElement**](cim-softwareelement.md).
 
 </dd> <dt>
 
@@ -805,19 +805,19 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("tipo de SMBIOS \| 0 \| BIOS versión")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| Type 0 BIOS \| Version")
 </dt> </dl>
 
-Versión del BIOS tal como la ha indicado el SMBIOS.
+Versión del BIOS notificada por SMBIOS.
 
-Este valor procede del miembro **versión del BIOS** de la estructura de **información del BIOS** en la información de SMBIOS.
+Este valor procede del miembro **Versión del BIOS** de la estructura información del **BIOS** en la información de SMBIOS.
 
 </dd> <dt>
 
 **SMBIOSMajorVersion**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -826,14 +826,14 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| CSMBios \| GetVersion")
 </dt> </dl>
 
-Número de versión principal de SMBIOS. Esta propiedad es **null** si no se encuentra SMBIOS.
+Número de versión principal de SMBIOS. Esta propiedad es **NULL si** no se encuentra SMBIOS.
 
 </dd> <dt>
 
 **SMBIOSMinorVersion**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -842,7 +842,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| CSMBios \| GetVersion")
 </dt> </dl>
 
-Número de versión secundaria de SMBIOS. Esta propiedad es **null** si no se encuentra SMBIOS.
+Número de versión de SMBIOS secundaria. Esta propiedad es **NULL si** no se encuentra SMBIOS.
 
 </dd> <dt>
 
@@ -855,10 +855,10 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| CSMBios \| init")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| CSMBios \| Init")
 </dt> </dl>
 
-Si es **true**, el SMBIOS está disponible en este equipo.
+Si **es true**, smbios está disponible en este sistema de equipo.
 
 </dd> <dt>
 
@@ -871,30 +871,30 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identificador de este elemento de software; diseñado para usarse junto con otras claves para crear una representación única de esta instancia.
 
-Esta propiedad se hereda de [**\_ SoftwareElement CIM**](cim-softwareelement.md).
+Esta propiedad se hereda de [**CIM \_ SoftwareElement**](cim-softwareelement.md).
 
 </dd> <dt>
 
 **SoftwareElementState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Estado de un elemento de software.
 
-Esta propiedad se hereda de [**\_ SoftwareElement CIM**](cim-softwareelement.md).
+Esta propiedad se hereda de [**CIM \_ SoftwareElement**](cim-softwareelement.md).
 
 Los valores posibles son.
 
@@ -902,7 +902,7 @@ Los valores posibles son.
 
 <span id="Deployable"></span><span id="deployable"></span><span id="DEPLOYABLE"></span>
 
-Se pueden **implementar** (0)
+**Implementable** (0)
 
 
 </dt> <dd></dd> <dt>
@@ -916,14 +916,14 @@ Se pueden **implementar** (0)
 
 <span id="Executable"></span><span id="executable"></span><span id="EXECUTABLE"></span>
 
-**Archivo ejecutable** (2)
+**Ejecutable** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Running"></span><span id="running"></span><span id="RUNNING"></span>
 
-En **ejecución** (3)
+**En** ejecución (3)
 
 
 </dt> <dd></dd> </dl>
@@ -939,12 +939,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("status")
+Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Status")
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios Estados operativos y no operativos. Los Estados operativos incluyen: "correcto", "degradado" y "Pred FAIL" (un elemento, como una unidad de disco duro habilitada para SMART, puede estar funcionando correctamente pero prediciendo un error en un futuro próximo). Los Estados no operativos incluyen: "error", "iniciando", "deteniendo" y "servicio". El último, "servicio", se puede aplicar durante la resilverización del reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo el trabajo está en línea, pero el elemento administrado no es "OK" ni está en uno de los otros Estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Los estados no de operación incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Los valores posibles son.
 
@@ -952,84 +952,84 @@ Los valores posibles son.
 
 <span id="OK"></span><span id="ok"></span>
 
-**Aceptar** ("Aceptar")
+**Ok** ("OK")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Error** ("error")
+**Error** ("Error")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradado** ("degradado")
+**Degradado** ("Degradado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Pred FAIL** ("Pred FAIL")
+**Error de pred** ("error previo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Iniciando** ("iniciando")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("detener")
+**Detención** ("Detención")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servicio** ("servicio")
+**Servicio** ("Servicio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-Con **estrés** ("acentuado")
+**Estresado** ("estresado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Recover** ("Recover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Sin contacto** ("sin contacto")
+**Sin contacto** ("Sin contacto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicación perdida** ("pérdida de comunicación")
+**Comm perdido** ("Comm perdido")
 
 
 </dt> <dd></dd> </dl>
@@ -1039,58 +1039,58 @@ Con **estrés** ("acentuado")
 **SystemBiosMajorVersion**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| Type 0 \| System BIOS major release")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| Type 0 System BIOS Major \| Release")
 </dt> </dl>
 
-Versión principal del BIOS del sistema.
+La versión principal del BIOS del sistema.
 
-Este valor procede del miembro de la **versión principal del BIOS del sistema** de la estructura de **información del BIOS** en la información de SMBIOS.
+Este valor procede del miembro **de la versión principal del BIOS del** sistema de la estructura información de **BIOS** en la información de SMBIOS.
 
-**Windows server 2012 R2, Windows 8.1, Windows server 2012, Windows 8, Windows server 2008 R2, Windows 7, Windows server 2008 y Windows Vista:** Esta propiedad no se admite antes de Windows 10 y Windows Server 2016.
+**Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 y Windows Vista:** Esta propiedad no se admite antes de Windows 10 y Windows Server 2016.
 
 </dd> <dt>
 
 **SystemBiosMinorVersion**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| Type 0 \| System BIOS Minor release")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| Type 0 System BIOS Minor \| Release")
 </dt> </dl>
 
-Versión secundaria del BIOS del sistema.
+La versión secundaria del BIOS del sistema.
 
-Este valor procede del miembro de **versión secundaria BIOS del sistema** de la estructura de **información del BIOS** en la información de SMBIOS.
+Este valor procede del miembro **versión secundaria del BIOS del** sistema de la estructura información de **BIOS** en la información de SMBIOS.
 
-**Windows server 2012 R2, Windows 8.1, Windows server 2012, Windows 8, Windows server 2008 R2, Windows 7, Windows server 2008 y Windows Vista:** Esta propiedad no se admite antes de Windows 10 y Windows Server 2016.
+**Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 y Windows Vista:** Esta propiedad no se admite antes de Windows 10 y Windows Server 2016.
 
 </dd> <dt>
 
 **TargetOperatingSystem**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Información \| del componente de software de DMTF 002,5 "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ OperatingSystem**](cim-operatingsystem.md).**OSType**")
+Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Software Component Information \| 002.5"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ OperatingSystem**](cim-operatingsystem.md).**OSType**")
 </dt> </dl>
 
 Sistema operativo de destino del elemento de software propietario.
 
-Esta propiedad se hereda de [**\_ SoftwareElement CIM**](cim-softwareelement.md).
+Esta propiedad se hereda de [**CIM \_ SoftwareElement**](cim-softwareelement.md).
 
 Los valores posibles son.
 
@@ -1105,14 +1105,14 @@ Los valores posibles son.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="MACOS"></span><span id="macos"></span>
 
-**MacOS** (2)
+**MACOS** (2)
 
 
 </dt> <dd></dd> <dt>
@@ -1140,7 +1140,7 @@ Los valores posibles son.
 
 <span id="Digital_Unix"></span><span id="digital_unix"></span><span id="DIGITAL_UNIX"></span>
 
-**UNIX digital** (6)
+**Unix digital** (6)
 
 
 </dt> <dd></dd> <dt>
@@ -1161,7 +1161,7 @@ Los valores posibles son.
 
 <span id="AIX"></span><span id="aix"></span>
 
-**Aix** (9)
+**AIX** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -1182,7 +1182,7 @@ Los valores posibles son.
 
 <span id="OS_2"></span><span id="os_2"></span>
 
-**Os/2** (12)
+**SO/2** (12)
 
 
 </dt> <dd></dd> <dt>
@@ -1196,7 +1196,7 @@ Los valores posibles son.
 
 <span id="MSDOS"></span><span id="msdos"></span>
 
-**Msdos** (14)
+**MSDOS** (14)
 
 
 </dt> <dd></dd> <dt>
@@ -1210,28 +1210,28 @@ Los valores posibles son.
 
 <span id="WIN95"></span><span id="win95"></span>
 
-**Win95** (16)
+**WIN95** (16)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="WIN98"></span><span id="win98"></span>
 
-**Win98** (17)
+**WIN98** (17)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="WINNT"></span><span id="winnt"></span>
 
-**WinNT** (18)
+**WINNT** (18)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="WINCE"></span><span id="wince"></span>
 
-**WinCE** (19)
+**WINCE** (19)
 
 
 </dt> <dd></dd> <dt>
@@ -1259,14 +1259,14 @@ Los valores posibles son.
 
 <span id="DC_OS"></span><span id="dc_os"></span>
 
-**DC/os** (23)
+**DC/OS** (23)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>
 
-**UNIX que depende** de (24)
+**Reliant UNIX** (24)
 
 
 </dt> <dd></dd> <dt>
@@ -1294,7 +1294,7 @@ Los valores posibles son.
 
 <span id="IRIX"></span><span id="irix"></span>
 
-**IRIX** (28)
+**IIONES** (28)
 
 
 </dt> <dd></dd> <dt>
@@ -1350,35 +1350,35 @@ Los valores posibles son.
 
 <span id="LINUX"></span><span id="linux"></span>
 
-**Linux** (36)
+**LINUX** (36)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>
 
-**Lynx** (37)
+**Estorba** (37)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="XENIX"></span><span id="xenix"></span>
 
-**Xenix** (38)
+**XENIX** (38)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="VM_ESA"></span><span id="vm_esa"></span>
 
-**VM/sec** (39)
+**VM/ESA** (39)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>
 
-**UNIX interactivo** (40)
+**Interactive UNIX** (40)
 
 
 </dt> <dd></dd> <dt>
@@ -1420,7 +1420,7 @@ Los valores posibles son.
 
 <span id="MACH_Kernel"></span><span id="mach_kernel"></span><span id="MACH_KERNEL"></span>
 
-**Kernel de Mach** (46)
+**Kernel de MACH** (46)
 
 
 </dt> <dd></dd> <dt>
@@ -1462,7 +1462,7 @@ Los valores posibles son.
 
 <span id="MiNT"></span><span id="mint"></span><span id="MINT"></span>
 
-**Menta** (52)
+**MiNT** (52)
 
 
 </dt> <dd></dd> <dt>
@@ -1541,28 +1541,28 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("version"), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| hardware \\ \\ Description \\ \\ System \| SystemBiosVersion")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Version"), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HARDWARE Description \\ \\ \\ \\ \| SystemBiosVersion")
 </dt> </dl>
 
-Versión del BIOS. Esta cadena la crea el fabricante del BIOS.
+Versión del BIOS. El fabricante del BIOS crea esta cadena.
 
-Esta propiedad se hereda de [**\_ SoftwareElement CIM**](cim-softwareelement.md).
+Esta propiedad se hereda de [**CIM \_ SoftwareElement**](cim-softwareelement.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La **clase \_ BIOS de Win32** se deriva [**del \_ BIOSElement CIM**](cim-bioselement.md).
+La **clase \_ BIOS Win32** se deriva de [**CIM \_ BIOSElement**](cim-bioselement.md).
 
-Las propiedades de la **clase \_ BIOS de Win32** pueden cambiar para un sistema de equipo específico con el mismo BIOS, por ejemplo, el arranque a través de un modo BIOS heredado y el arranque a través del modo de BIOS UEFI. Sin embargo, las propiedades recuperadas de las estructuras de SMBIOS deben ser las mismas.
+Las propiedades de la clase **\_ BIOS Win32** pueden cambiar para un sistema informático específico con el mismo BIOS, por ejemplo, el arranque a través de un modo BIOS heredado frente al arranque a través del modo BIOS UEFI. Sin embargo, las propiedades recuperadas de las estructuras SMBIOS deben seguir siendo las mismas.
 
 ## <a name="examples"></a>Ejemplos
 
-El ejemplo de PowerShell [Get-ComputerInfo-Query Computer info from local/Remote Computers-(WMI)](https://Gallery.TechNet.Microsoft.Com/Get-ComputerInfo-Query-23dd6042) de PowerShell en la galería de TechNet utiliza varias llamadas a hardware y software, incluido **\_ BIOS de Win32**, para mostrar información acerca de un sistema local o remoto.
+El ejemplo de PowerShell [Get-ComputerInfo - Query Computer Info From Local/Remote Computers - (WMI)](https://Gallery.TechNet.Microsoft.Com/Get-ComputerInfo-Query-23dd6042) en la Galería de TechNet usa una serie de llamadas a hardware y software, incluido **el \_ BIOS win32,** para mostrar información sobre un sistema local o remoto.
 
-El ejemplo [generar información del sistema como jerarquía XML](https://Gallery.TechNet.Microsoft.Com/Generate-system-information-3f40629f) de VBScript en la galería de TechNet utiliza varias llamadas a hardware y software, incluido **\_ BIOS Win32**, para generar una representación XML de un sistema mediante una salida XML manual.
+El ejemplo de VBScript Generar información del sistema como jerarquía [XML](https://Gallery.TechNet.Microsoft.Com/Generate-system-information-3f40629f) en la Galería de TechNet usa una serie de llamadas al hardware y software, incluido el **BIOS win32, \_** para generar una representación XML de un sistema mediante una salida XML manual.
 
-El siguiente ejemplo de código de PowerShell usa el **\_ BIOS Win32** para devolver características del BIOS
+En el siguiente ejemplo de código de PowerShell se **usa \_ el BIOS Win32** para devolver características del BIOS.
 
 
 ```PowerShell
@@ -1726,12 +1726,12 @@ Version               :  DELL   - 27d60a0d
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -1740,10 +1740,10 @@ Version               :  DELL   - 27d60a0d
 
 <dl> <dt>
 
-[**\_BIOSELEMENT CIM**](cim-bioselement.md)
+[**CIM \_ BIOSElement**](cim-bioselement.md)
 </dt> <dt>
 
-[Clases de hardware de sistema del equipo](computer-system-hardware-classes.md)
+[Clases de hardware del sistema de equipo](computer-system-hardware-classes.md)
 </dt> </dl>
 
  

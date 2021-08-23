@@ -1,7 +1,7 @@
 ---
-description: Mensaje privado que observa la paleta.
+description: Mensaje privado que realiza la paleta.
 ms.assetid: 1a8c9b31-031f-48c4-8f97-58b824d38e06
-title: 'Miembro CBaseWindow:: m_RealizePalette (Winutil. h)'
+title: CBaseWindow::m_RealizePalette miembro (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ad05b499432747bde52651bcabe576fe9f356b28
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dd1e51a48b4e359f8000b3be5e40b3bbfa725507bdb956d637ea8ded98eaad6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679188"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119567435"
 ---
-# <a name="cbasewindowm_realizepalette-member"></a>Miembro RealizePalette CBaseWindow:: m \_
+# <a name="cbasewindowm_realizepalette-member"></a>Miembro CBaseWindow::m \_ RealizePalette
 
-Mensaje privado que observa la paleta.
+Mensaje privado que realiza la paleta.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,9 +36,9 @@ UINT m_RealizePalette;
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**CBaseWindow:: SetPalette**](cbasewindow-setpalette.md) envía este mensaje.
+El [**método CBaseWindow::SetPalette**](cbasewindow-setpalette.md) envía este mensaje.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,8 +46,8 @@ El método [**CBaseWindow:: SetPalette**](cbasewindow-setpalette.md) envía este
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ El método [**CBaseWindow:: SetPalette**](cbasewindow-setpalette.md) envía este
 
 <dl> <dt>
 
-[**Clase CBaseWindow**](cbasewindow.md)
+[**CBaseWindow (clase)**](cbasewindow.md)
 </dt> </dl>
 
  

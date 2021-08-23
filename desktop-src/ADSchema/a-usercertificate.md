@@ -1,11 +1,11 @@
 ---
-title: X509-Cert atributo)
-description: Contiene los certificados X. 509v3 codificados en DER emitidos para el usuario. Tenga en cuenta que esta propiedad contiene los certificados de clave pública emitidos para este usuario por el servicio de certificados de Microsoft.
+title: X509-Cert atributo
+description: Contiene los certificados X.509v3 codificados con DER emitidos al usuario. Tenga en cuenta que esta propiedad contiene los certificados de clave pública emitidos a este usuario por Microsoft Certificate Service.
 ms.assetid: bdd6b9a4-c402-462c-be2c-8e7e582a899a
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de X509-Cert
-- atributo userCertificate esquema de AD
+- X509-Cert esquema de AD de atributo
+- UserCertificate attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: faa6f0dfb5acc25890361a124e52b8b24958915f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d0d6d95ab05047c19ba978a02957dca3870c2f93cf26b323bd6aa55c2f35472a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104493906"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119644595"
 ---
-# <a name="x509-cert-attribute"></a>X509-Cert atributo)
+# <a name="x509-cert-attribute"></a>X509-Cert atributo
 
-Contiene los certificados X. 509v3 codificados en DER emitidos para el usuario. Tenga en cuenta que esta propiedad contiene los certificados de clave pública emitidos para este usuario por el servicio de certificados de Microsoft.
+Contiene los certificados X.509v3 codificados con DER emitidos al usuario. Tenga en cuenta que esta propiedad contiene los certificados de clave pública emitidos a este usuario por Microsoft Certificate Service.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------------------------------------------------------------------------|
 | CN                | X509-Cert                                                                                                               |
-| Nombre para mostrar de LDAP | userCertificate                                                                                                         |
-| Tamaño              | Este atributo requerirá aproximadamente 4 KB para cada certificado de agente de recuperación de claves emitido por la entidad de certificación mediante la instancia de KRA. |
-| Actualizar privilegio  | Administrador de dominio                                                                                                    |
+| Ldap-Display-Name | userCertificate                                                                                                         |
+| Size              | Este atributo requerirá aproximadamente 4 KB para cada certificado del agente de recuperación de claves emitido por la entidad de certificación mediante la instancia DERON. |
+| Actualizar privilegios  | Administrador de dominio                                                                                                    |
 | Frecuencia de actualización  | Cada vez que se emite un certificado.                                                                                      |
 | Attribute-Id      | 2.5.4.36                                                                                                                |
-| System-ID-GUID    | bf967a7f-0de6-11d0-a285-00aa003049e2                                                                                    |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md)                                                                   |
+| System-Id-Guid    | bf967a7f-0de6-11d0-a285-00aa003049e2                                                                                    |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md)                                                                   |
 
 
 
@@ -55,18 +55,18 @@ Contiene los certificados X. 509v3 codificados en DER emitidos para el usuario. 
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                     |
+| Id. de vínculo                | \-                                                                                     |
 | MAPI-Id                | 0x8C6A                                                                                 |
-| System-Only            | False                                                                                  |
-| Tiene un único valor       | False                                                                                  |
-| Está indexado             | False                                                                                  |
-| En el catálogo global      | True                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                           |
+| System-Only            | Falso                                                                                  |
+| Es de un solo valor       | Falso                                                                                  |
+| Está indexado             | Falso                                                                                  |
+| En el catálogo global      | Verdadero                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                           |
 | Range-Lower            | \-                                                                                     |
 | Range-Upper            | \-                                                                                     |
 | Search-Flags           | 0x00000000                                                                             |
 | System-Flags           | 0x00000010                                                                             |
-| Clases usadas en        | [**Destinatario de correo**](c-mailrecipient.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Destinatario de correo**](c-mailrecipient.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Contiene los certificados X. 509v3 codificados en DER emitidos para el usuario. 
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                 |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                 |
 | MAPI-Id                | 0x8C6A                                                                                                                                                                                                                             |
-| System-Only            | False                                                                                                                                                                                                                              |
-| Tiene un único valor       | False                                                                                                                                                                                                                              |
-| Está indexado             | False                                                                                                                                                                                                                              |
-| En el catálogo global      | True                                                                                                                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                       |
+| System-Only            | Falso                                                                                                                                                                                                                              |
+| Es de un solo valor       | Falso                                                                                                                                                                                                                              |
+| Está indexado             | Falso                                                                                                                                                                                                                              |
+| En el catálogo global      | Verdadero                                                                                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                       |
 | Range-Lower            | \-                                                                                                                                                                                                                                 |
 | Range-Upper            | \-                                                                                                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                         |
-| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Destinatario de correo**](c-mailrecipient.md)<br/> [**MS-PKI-Private-Key-Recovery-Agent**](c-mspki-privatekeyrecoveryagent.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Destinatario de correo**](c-mailrecipient.md)<br/> [**ms-PKI-Private-Key-Recovery-Agent**](c-mspki-privatekeyrecoveryagent.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Contiene los certificados X. 509v3 codificados en DER emitidos para el usuario. 
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                 |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                 |
 | MAPI-Id                | 0x8C6A                                                                                                                                                                                                                             |
-| System-Only            | False                                                                                                                                                                                                                              |
-| Tiene un único valor       | False                                                                                                                                                                                                                              |
-| Está indexado             | False                                                                                                                                                                                                                              |
-| En el catálogo global      | True                                                                                                                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                       |
+| System-Only            | Falso                                                                                                                                                                                                                              |
+| Es de un solo valor       | Falso                                                                                                                                                                                                                              |
+| Está indexado             | Falso                                                                                                                                                                                                                              |
+| En el catálogo global      | Verdadero                                                                                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                       |
 | Range-Lower            | \-                                                                                                                                                                                                                                 |
 | Range-Upper            | \-                                                                                                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                         |
-| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Destinatario de correo**](c-mailrecipient.md)<br/> [**MS-PKI-Private-Key-Recovery-Agent**](c-mspki-privatekeyrecoveryagent.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Destinatario de correo**](c-mailrecipient.md)<br/> [**ms-PKI-Private-Key-Recovery-Agent**](c-mspki-privatekeyrecoveryagent.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Contiene los certificados X. 509v3 codificados en DER emitidos para el usuario. 
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                 |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                 |
 | MAPI-Id                | 0x8C6A                                                                                                                                                                                                                             |
-| System-Only            | False                                                                                                                                                                                                                              |
-| Tiene un único valor       | False                                                                                                                                                                                                                              |
-| Está indexado             | False                                                                                                                                                                                                                              |
-| En el catálogo global      | True                                                                                                                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                       |
+| System-Only            | Falso                                                                                                                                                                                                                              |
+| Es de un solo valor       | Falso                                                                                                                                                                                                                              |
+| Está indexado             | Falso                                                                                                                                                                                                                              |
+| En el catálogo global      | Verdadero                                                                                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                       |
 | Range-Lower            | \-                                                                                                                                                                                                                                 |
 | Range-Upper            | \-                                                                                                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                         |
-| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Destinatario de correo**](c-mailrecipient.md)<br/> [**MS-PKI-Private-Key-Recovery-Agent**](c-mspki-privatekeyrecoveryagent.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Destinatario de correo**](c-mailrecipient.md)<br/> [**ms-PKI-Private-Key-Recovery-Agent**](c-mspki-privatekeyrecoveryagent.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ Contiene los certificados X. 509v3 codificados en DER emitidos para el usuario. 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                 |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                 |
 | MAPI-Id                | 0x8C6A                                                                                                                                                                                                                             |
-| System-Only            | False                                                                                                                                                                                                                              |
-| Tiene un único valor       | False                                                                                                                                                                                                                              |
-| Está indexado             | False                                                                                                                                                                                                                              |
-| En el catálogo global      | True                                                                                                                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                       |
+| System-Only            | Falso                                                                                                                                                                                                                              |
+| Es de un solo valor       | Falso                                                                                                                                                                                                                              |
+| Está indexado             | Falso                                                                                                                                                                                                                              |
+| En el catálogo global      | Verdadero                                                                                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                       |
 | Range-Lower            | \-                                                                                                                                                                                                                                 |
 | Range-Upper            | \-                                                                                                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                         |
-| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Destinatario de correo**](c-mailrecipient.md)<br/> [**MS-PKI-Private-Key-Recovery-Agent**](c-mspki-privatekeyrecoveryagent.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Destinatario de correo**](c-mailrecipient.md)<br/> [**ms-PKI-Private-Key-Recovery-Agent**](c-mspki-privatekeyrecoveryagent.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Contiene los certificados X. 509v3 codificados en DER emitidos para el usuario. 
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                 |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                 |
 | MAPI-Id                | 0x8C6A                                                                                                                                                                                                                             |
-| System-Only            | False                                                                                                                                                                                                                              |
-| Tiene un único valor       | False                                                                                                                                                                                                                              |
-| Está indexado             | False                                                                                                                                                                                                                              |
-| En el catálogo global      | True                                                                                                                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                       |
+| System-Only            | Falso                                                                                                                                                                                                                              |
+| Es de un solo valor       | Falso                                                                                                                                                                                                                              |
+| Está indexado             | Falso                                                                                                                                                                                                                              |
+| En el catálogo global      | Verdadero                                                                                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                       |
 | Range-Lower            | \-                                                                                                                                                                                                                                 |
 | Range-Upper            | \-                                                                                                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                         |
-| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Destinatario de correo**](c-mailrecipient.md)<br/> [**MS-PKI-Private-Key-Recovery-Agent**](c-mspki-privatekeyrecoveryagent.md)<br/> [**Usuario**](c-user.md)<br/> |
+| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Destinatario de correo**](c-mailrecipient.md)<br/> [**ms-PKI-Private-Key-Recovery-Agent**](c-mspki-privatekeyrecoveryagent.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 

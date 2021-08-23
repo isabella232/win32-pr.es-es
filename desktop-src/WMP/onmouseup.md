@@ -1,9 +1,9 @@
 ---
-title: OnMouseUp
-description: El controlador de eventos OnMouseUp controla un evento que se produce cuando el usuario suelta un botón del mouse mientras el puntero está sobre el elemento.
+title: onmouseup
+description: El controlador de eventos onmouseup controla un evento que se produce cuando el usuario suelta un botón del mouse mientras el puntero está sobre el elemento.
 ms.assetid: d6c9c028-cb12-4767-a5de-b2312681ea13
 keywords:
-- OnMouseUp Windows Media Player
+- onmouseup Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,32 +13,32 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: baa1713b828fc2d2c3dea885ec9a642c53710260
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 08059a66646834aac55c03c65ad9c80f6e1a60309a15c1867ef616c48036036d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699470"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119572205"
 ---
-# <a name="onmouseup"></a>OnMouseUp
+# <a name="onmouseup"></a>onmouseup
 
-El controlador de eventos **OnMouseUp** controla un evento que se produce cuando el usuario suelta un botón del mouse mientras el puntero está sobre el elemento.
+El **controlador de eventos onmouseup** controla un evento que se produce cuando el usuario suelta un botón del mouse mientras el puntero está sobre el elemento.
 
 ``` syntax
 onmouseup
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este controlador de eventos no es aplicable al elemento de **lista de reproducción** .
+Este controlador de eventos no es aplicable al elemento **PLAYLIST.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|-----------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 70 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 70 o posterior<br/> |
 
 
 
@@ -46,7 +46,7 @@ Este controlador de eventos no es aplicable al elemento de **lista de reproducci
 
 <dl> <dt>
 
-[**Controladores de eventos de ambiente**](ambient-event-handlers.md)
+[**Controladores de eventos ambiente**](ambient-event-handlers.md)
 </dt> </dl>
 
  

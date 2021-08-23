@@ -1,11 +1,11 @@
 ---
-title: 'Compatible: atributo de contexto de aplicación'
-description: Especifica los identificadores de objeto de los contextos de aplicación que admite una aplicación OSI.
+title: Atributo Supported-Application-Context
+description: Especifica los identificadores de objeto de contextos de aplicación que admite una aplicación OSI.
 ms.assetid: 803d68bc-4537-4a45-bd86-b0558076e4df
 ms.tgt_platform: multiple
 keywords:
-- 'Compatible: esquema de AD de atributo de contexto de aplicación'
-- supportedApplicationContext esquema de AD de atributos
+- Esquema de AD del atributo Supported-Application-Context
+- SupportedApplicationContext attribute AD Schema (Esquema de AD del atributo supportedApplicationContext)
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 29512a4d9588a8097ca531acd477c08b0e316876
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: abeb9f3a7b7a0956798fb20a3fcbbe77040efa8dcd6b6909a0115bf68957ebc6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104536129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119645494"
 ---
-# <a name="supported-application-context-attribute"></a>Compatible: atributo de contexto de aplicación
+# <a name="supported-application-context-attribute"></a>Atributo Supported-Application-Context
 
-Especifica los identificadores de objeto de los contextos de aplicación que admite una aplicación OSI.
+Especifica los identificadores de objeto de contextos de aplicación que admite una aplicación OSI.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | Compatible: contexto de aplicación                         |
-| Nombre para mostrar de LDAP | supportedApplicationContext                           |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| CN                | Supported-Application-Context                         |
+| Ldap-Display-Name | supportedApplicationContext                           |
+| Size              | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 2.5.4.30                                              |
-| System-ID-GUID    | 1677588f-47f3-11d1-a9c3-0000f80367c1                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 1677588f-47f3-11d1-a9c3-0000f80367c1                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -55,13 +55,13 @@ Especifica los identificadores de objeto de los contextos de aplicación que adm
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                  |
+| Id. de vínculo                | \-                                                                                                                                  |
 | MAPI-Id                | 0x813D                                                                                                                              |
-| System-Only            | False                                                                                                                               |
-| Tiene un único valor       | False                                                                                                                               |
-| Está indexado             | False                                                                                                                               |
-| En el catálogo global      | False                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                        |
+| System-Only            | Falso                                                                                                                               |
+| Es de un solo valor       | Falso                                                                                                                               |
+| Está indexado             | Falso                                                                                                                               |
+| En el catálogo global      | Falso                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                          |
@@ -76,13 +76,13 @@ Especifica los identificadores de objeto de los contextos de aplicación que adm
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                  |
+| Id. de vínculo                | \-                                                                                                                                  |
 | MAPI-Id                | 0x813D                                                                                                                              |
-| System-Only            | False                                                                                                                               |
-| Tiene un único valor       | False                                                                                                                               |
-| Está indexado             | False                                                                                                                               |
-| En el catálogo global      | False                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                        |
+| System-Only            | Falso                                                                                                                               |
+| Es de un solo valor       | Falso                                                                                                                               |
+| Está indexado             | Falso                                                                                                                               |
+| En el catálogo global      | Falso                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                          |
@@ -95,15 +95,15 @@ Especifica los identificadores de objeto de los contextos de aplicación que adm
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                  |
+| Id. de vínculo                | \-                                                                                                                                  |
 | MAPI-Id                | 0x813D                                                                                                                              |
-| System-Only            | False                                                                                                                               |
-| Tiene un único valor       | False                                                                                                                               |
-| Está indexado             | False                                                                                                                               |
-| En el catálogo global      | False                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                        |
+| System-Only            | Falso                                                                                                                               |
+| Es de un solo valor       | Falso                                                                                                                               |
+| Está indexado             | Falso                                                                                                                               |
+| En el catálogo global      | Falso                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                          |
@@ -116,15 +116,15 @@ Especifica los identificadores de objeto de los contextos de aplicación que adm
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                  |
+| Id. de vínculo                | \-                                                                                                                                  |
 | MAPI-Id                | 0x813D                                                                                                                              |
-| System-Only            | False                                                                                                                               |
-| Tiene un único valor       | False                                                                                                                               |
-| Está indexado             | False                                                                                                                               |
-| En el catálogo global      | False                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                        |
+| System-Only            | Falso                                                                                                                               |
+| Es de un solo valor       | Falso                                                                                                                               |
+| Está indexado             | Falso                                                                                                                               |
+| En el catálogo global      | Falso                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                          |
@@ -139,13 +139,13 @@ Especifica los identificadores de objeto de los contextos de aplicación que adm
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                  |
+| Id. de vínculo                | \-                                                                                                                                  |
 | MAPI-Id                | 0x813D                                                                                                                              |
-| System-Only            | False                                                                                                                               |
-| Tiene un único valor       | False                                                                                                                               |
-| Está indexado             | False                                                                                                                               |
-| En el catálogo global      | False                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                        |
+| System-Only            | Falso                                                                                                                               |
+| Es de un solo valor       | Falso                                                                                                                               |
+| Está indexado             | Falso                                                                                                                               |
+| En el catálogo global      | Falso                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                          |
@@ -160,13 +160,13 @@ Especifica los identificadores de objeto de los contextos de aplicación que adm
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                  |
+| Id. de vínculo                | \-                                                                                                                                  |
 | MAPI-Id                | 0x813D                                                                                                                              |
-| System-Only            | False                                                                                                                               |
-| Tiene un único valor       | False                                                                                                                               |
-| Está indexado             | False                                                                                                                               |
-| En el catálogo global      | False                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                        |
+| System-Only            | Falso                                                                                                                               |
+| Es de un solo valor       | Falso                                                                                                                               |
+| Está indexado             | Falso                                                                                                                               |
+| En el catálogo global      | Falso                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                          |

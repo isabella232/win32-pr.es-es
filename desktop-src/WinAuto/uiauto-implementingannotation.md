@@ -1,67 +1,67 @@
 ---
 title: Patrón de control Annotation
-description: Describe las directrices y convenciones para implementar IAnnotationProvider, incluida información sobre propiedades y métodos. El patrón de control Annotation se usa para exponer las propiedades de una anotación en un documento.
+description: Describe directrices y convenciones para implementar IAnnotationProvider, incluida información sobre propiedades y métodos. El patrón de control Annotation se usa para exponer las propiedades de una anotación en un documento.
 ms.assetid: 5A334991-66AF-4A82-9A09-09D5BDAAA771
 keywords:
-- Automatización de la interfaz de usuario, implementar el patrón de control Annotation
-- Automatización de la interfaz de usuario, patrón de control Annotation
-- Automatización de la interfaz de usuario, IAnnotationProvider
+- Automatización de la interfaz de usuario, implementación del patrón de control de anotación
+- Automatización de la interfaz de usuario,patrón de control annotation
+- Automatización de la interfaz de usuario,IAnnotationProvider
 - IAnnotationProvider
-- implementar el patrón de control Annotation de UI Automation
-- patrón de control Annotation
-- patrones de control, IAnnotationProvider
-- patrones de control, implementar la anotación de automatización de la interfaz de usuario
+- implementación de un Automatización de la interfaz de usuario de control de anotación
+- patrón de control de anotación
+- patrones de control,IAnnotationProvider
+- patrones de control, implementar Automatización de la interfaz de usuario anotación
 - patrones de control, anotación
-- interfaces, IAnnotationProvider
+- interfaces,IAnnotationProvider
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c1a0441816e548faaa9076b3a9717c0aa76f08a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 2cdc5c37c61878513b5d01812ab73c086f87d182d4b2c955efaf8706d52e4bcb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105714407"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119505265"
 ---
 # <a name="annotation-control-pattern"></a>Patrón de control Annotation
 
-Describe las directrices y convenciones para implementar [**IAnnotationProvider**](/windows/desktop/api/uiautomationcore/nn-uiautomationcore-iannotationprovider), incluida información sobre propiedades y métodos. El patrón de control **Annotation** se usa para exponer las propiedades de una anotación en un documento.
+Describe directrices y convenciones para implementar [**IAnnotationProvider,**](/windows/desktop/api/uiautomationcore/nn-uiautomationcore-iannotationprovider)incluida información sobre propiedades y métodos. El **patrón de** control Annotation se usa para exponer las propiedades de una anotación en un documento.
 
-Un ejemplo es un globo de comentarios que se encuentra en el margen de un documento y está conectado a algún texto del documento o a una celda de la hoja de cálculo.
+Un ejemplo es un globo de comentarios que está en el margen de un documento y está conectado a algún texto del documento o a una celda de hoja de cálculo.
 
-En la ilustración siguiente se muestra un ejemplo de una anotación. Para obtener ejemplos de controles que implementan este patrón de control, vea [tipos de control y sus patrones de control admitidos](uiauto-controlpatternmapping.md).
+En la ilustración siguiente se muestra un ejemplo de una anotación. Para obtener ejemplos de controles que implementan este patrón de control, vea [Tipos de control y sus patrones de control admitidos.](uiauto-controlpatternmapping.md)
 
-![captura de pantalla que muestra un comentario BALOON en un documento](images/annotation.png)
+![captura de pantalla que muestra un comentario en un documento](images/annotation.png)
 
 En este tema se incluyen las siguientes secciones.
 
 -   [Directrices y convenciones de implementación](#implementation-guidelines-and-conventions)
--   [Miembros requeridos para **IAnnotationProvider**](#required-members-for-iannotationprovider)
+-   [Miembros necesarios para **IAnnotationProvider**](#required-members-for-iannotationprovider)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="implementation-guidelines-and-conventions"></a>Directrices y convenciones de implementación
 
-Al implementar el patrón de control **Annotation** , tenga en cuenta las siguientes directrices y convenciones:
+Al implementar el patrón de control **Annotation,** tenga en cuenta las siguientes directrices y convenciones:
 
--   Hay muchos tipos diferentes de anotaciones. El archivo de encabezado UIAutomationClient. h define un conjunto de valores constantes con nombre que identifican los tipos de anotaciones que admite la automatización de la interfaz de usuario de Microsoft. Para obtener más información, vea [**identificadores de tipo de anotación**](uiauto-annotation-type-identifiers.md).
--   Si usa [**AnnotationType \_ Unknown**](uiauto-annotation-type-identifiers.md), debe implementar la propiedad [**IAnnotationProvider:: AnnotationTypeName**](/windows/desktop/api/uiautomationcore/nf-uiautomationcore-iannotationprovider-get_annotationtypename) para permitir que los clientes detecten el nombre del tipo de anotación. No es necesario implementar **AnnotationTypeName** para un tipo de anotación estándar, ya que la automatización de la interfaz de usuario proporciona un nombre predeterminado, pero se puede implementar si es necesario reemplazar el nombre predeterminado.
--   La propiedad [**IAnnotationProvider:: Author**](/windows/desktop/api/uiautomationcore/nf-uiautomationcore-iannotationprovider-get_author) es opcional.
--   La propiedad [**IAnnotationProvider::D atetime**](/windows/desktop/api/uiautomationcore/nf-uiautomationcore-iannotationprovider-get_datetime) es opcional.
--   La propiedad [**IAnnotationProvider:: target**](/windows/desktop/api/uiautomationcore/nf-uiautomationcore-iannotationprovider-get_target) es necesaria porque vincula una anotación a un elemento de la interfaz de usuario, lo que permite a un cliente navegar desde la anotación hasta el elemento de la interfaz de usuario al que hace referencia la anotación.
--   Dado que las anotaciones pueden adoptar muchas formas diferentes, la interfaz [**IAnnotationProvider**](/windows/desktop/api/uiautomationcore/nn-uiautomationcore-iannotationprovider) no define una propiedad para almacenar el valor o el texto de una anotación. Una anotación simple debe exponer la interfaz [**IValueProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-ivalueprovider) y la propiedad [**IValueProvider:: Value**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ivalueprovider-get_value) debe devolver un valor de solo lectura que especifique el texto de la anotación. Una anotación más enriquecida debe exponer la interfaz [**ITextProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itextprovider) para proporcionar texto más completo a los clientes.
--   Desplazarse de un elemento de la interfaz de usuario a una anotación en el elemento depende del tipo de elemento que se va a anotar, como se indica a continuación:
-    -   En las celdas de la hoja de cálculo, implemente el método [**ISpreadsheetItemProvider:: GetAnnotationObjects**](/windows/desktop/api/uiautomationcore/nf-uiautomationcore-ispreadsheetitemprovider-getannotationobjects) para hacer referencia a la anotación.
-    -   En el caso de contenido textual, implemente el atributo de texto [**AnnotationObjects**](uiauto-textattribute-ids.md) en la interfaz [**ITextRangeProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itextrangeprovider) para hacer referencia a la anotación.
--   Algunos tipos de anotaciones no requieren una implementación completa de la interfaz [**IAnnotationProvider**](/windows/desktop/api/uiautomationcore/nn-uiautomationcore-iannotationprovider) . Por ejemplo, un indicador de error ortográfico simple podría representarse al tener la interfaz [**ITextRangeProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itextrangeprovider) que devuelve un atributo de texto [**AnnotationTypes**](uiauto-textattribute-ids.md) de [**AnnotationType \_ SpellingError**](uiauto-annotation-type-identifiers.md)y un valor null para el atributo de texto [**AnnotationObjects**](uiauto-textattribute-ids.md) .
--   Puede ser útil implementar la interfaz [**IAnnotationProvider**](/windows/desktop/api/uiautomationcore/nn-uiautomationcore-iannotationprovider) en un elemento de la interfaz de usuario que no está visible. Por ejemplo, podría crear un elemento de automatización de la interfaz de usuario no visible que implementa **IAnnotationProvider** para proporcionar información extendida sobre un error gramatical.
--   Las anotaciones de un control basado en texto pueden ser complejas si el control contiene comentarios que se superponen. Utilice las siguientes directrices para administrar anotaciones complejas:
-    -   Un intervalo de texto sin anotaciones debe devolver una matriz vacía para el atributo de texto [**AnnotationTypes**](uiauto-textattribute-ids.md) y una matriz vacía para el atributo de texto [**AnnotationObjects**](uiauto-textattribute-ids.md) .
-    -   Un intervalo de texto con una anotación debe devolver una matriz de un valor entero para el atributo de texto [**AnnotationTypes**](uiauto-textattribute-ids.md) y una matriz de una interfaz [**IRawElementProviderSimple**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple) para el atributo de texto [**AnnotationObjects**](uiauto-textattribute-ids.md) .
-    -   Un intervalo de texto con varias anotaciones debe devolver una matriz de varios valores enteros para el atributo de texto [**AnnotationTypes**](uiauto-textattribute-ids.md) y una matriz de un número coincidente de interfaces [**IRawElementProviderSimple**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple) para el atributo de texto [**AnnotationObjects**](uiauto-textattribute-ids.md) .
-    -   Un intervalo de texto con anotaciones variables, como un intervalo con texto anotado y sin anotar, debe devolver la propiedad [**ReservedMixedAttributeValue**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uiagetreservedmixedattributevalue) para [**AnnotationTypes**](uiauto-textattribute-ids.md) y [**AnnotationObjects**](uiauto-textattribute-ids.md). Un cliente que recibe esta respuesta puede subdividir el intervalo de texto para encontrar dónde comienzan y finalizan las anotaciones.
+-   Hay muchos tipos diferentes de anotaciones. El archivo de encabezado UIAutomationClient.h define un conjunto de valores constantes con nombre que identifican los tipos de anotaciones que admite Microsoft Automatización de la interfaz de usuario. Para obtener más información, vea [**Annotation Type Identifiers**](uiauto-annotation-type-identifiers.md).
+-   Si usa [**AnnotationType \_ Unknown**](uiauto-annotation-type-identifiers.md), debe implementar la propiedad [**IAnnotationProvider::AnnotationTypeName**](/windows/desktop/api/uiautomationcore/nf-uiautomationcore-iannotationprovider-get_annotationtypename) para permitir que los clientes detecten el nombre del tipo de anotación. No es necesario implementar **AnnotationTypeName** para un tipo de anotación estándar porque Automatización de la interfaz de usuario proporciona un nombre predeterminado, pero puede implementarlo si necesita invalidar el nombre predeterminado.
+-   La [**propiedad IAnnotationProvider::Author**](/windows/desktop/api/uiautomationcore/nf-uiautomationcore-iannotationprovider-get_author) es opcional.
+-   La [**propiedad IAnnotationProvider::D ateTime**](/windows/desktop/api/uiautomationcore/nf-uiautomationcore-iannotationprovider-get_datetime) es opcional.
+-   La [**propiedad IAnnotationProvider::Target**](/windows/desktop/api/uiautomationcore/nf-uiautomationcore-iannotationprovider-get_target) es necesaria porque vincula una anotación a un elemento de la interfaz de usuario, lo que permite a un cliente navegar desde la anotación hasta el elemento de interfaz de usuario al que hace referencia la anotación.
+-   Dado que las anotaciones pueden tomar muchas formas diferentes, la [**interfaz IAnnotationProvider**](/windows/desktop/api/uiautomationcore/nn-uiautomationcore-iannotationprovider) no define una propiedad para almacenar el valor o el texto de una anotación. Una anotación simple debe exponer la interfaz [**IValueProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-ivalueprovider) y la propiedad [**IValueProvider::Value**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ivalueprovider-get_value) debe devolver un valor de solo lectura que especifique el texto de la anotación. Una anotación más enriquección debe exponer [**la interfaz ITextProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itextprovider) para proporcionar texto más enriquecido a los clientes.
+-   La navegación desde un elemento de interfaz de usuario a una anotación en el elemento depende del tipo de elemento anotado, como se indica a continuación:
+    -   Para las celdas de hoja de cálculo, implemente el método [**ISpreadsheetItemProvider::GetAnnotationObjects**](/windows/desktop/api/uiautomationcore/nf-uiautomationcore-ispreadsheetitemprovider-getannotationobjects) para hacer referencia a la anotación.
+    -   Para el contenido textual, implemente el atributo de texto [**AnnotationObjects**](uiauto-textattribute-ids.md) en la [**interfaz ITextRangeProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itextrangeprovider) para hacer referencia a la anotación.
+-   Algunos tipos de anotaciones no requieren una implementación completa de la [**interfaz IAnnotationProvider.**](/windows/desktop/api/uiautomationcore/nn-uiautomationcore-iannotationprovider) Por ejemplo, un indicador de error ortográfico simple podría representarse haciendo que la interfaz [**ITextRangeProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itextrangeprovider) devuelva un atributo de texto [**AnnotationTypes**](uiauto-textattribute-ids.md) [**de AnnotationType \_ SpellingError**](uiauto-annotation-type-identifiers.md)y un valor NULL para el atributo de texto [**AnnotationObjects.**](uiauto-textattribute-ids.md)
+-   Puede ser útil implementar la interfaz [**IAnnotationProvider**](/windows/desktop/api/uiautomationcore/nn-uiautomationcore-iannotationprovider) en un elemento de interfaz de usuario que no está visible. Por ejemplo, podría crear un elemento Automatización de la interfaz de usuario no visible que implemente **IAnnotationProvider** para proporcionar información extendida sobre un error de gramática.
+-   Las anotaciones de un control basado en texto pueden ser complejas si el control contiene comentarios superpuestos. Use las siguientes directrices para controlar anotaciones complejas:
+    -   Un intervalo de texto sin anotaciones debe devolver una matriz vacía para el atributo de texto [**AnnotationTypes**](uiauto-textattribute-ids.md) y una matriz vacía para el atributo de texto [**AnnotationObjects.**](uiauto-textattribute-ids.md)
+    -   Un intervalo de texto con una anotación debe devolver una matriz de un valor entero para el atributo de texto [**AnnotationTypes**](uiauto-textattribute-ids.md) y una matriz de una interfaz [**IRawElementProviderSimple**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple) para el atributo de texto [**AnnotationObjects.**](uiauto-textattribute-ids.md)
+    -   Un intervalo de texto con varias anotaciones debe devolver una matriz de varios valores enteros para el atributo de texto [**AnnotationTypes**](uiauto-textattribute-ids.md) y una matriz de un número correspondiente de interfaces [**IRawElementProviderSimple**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple) para el atributo de texto [**AnnotationObjects.**](uiauto-textattribute-ids.md)
+    -   Un intervalo de texto con anotaciones variables, como un intervalo con texto anotado y no anotado, debe devolver la propiedad [**ReservedMixedAttributeValue**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uiagetreservedmixedattributevalue) para [**AnnotationTypes**](uiauto-textattribute-ids.md) y [**AnnotationObjects**](uiauto-textattribute-ids.md). Un cliente que recibe esta respuesta puede subdividir el intervalo de texto para encontrar dónde comienzan y terminan las anotaciones.
 
-## <a name="required-members-for-iannotationprovider"></a>Miembros requeridos para **IAnnotationProvider**
+## <a name="required-members-for-iannotationprovider"></a>Miembros necesarios para **IAnnotationProvider**
 
-Las siguientes propiedades son necesarias para implementar la interfaz [**IAnnotationProvider**](/windows/desktop/api/uiautomationcore/nn-uiautomationcore-iannotationprovider) .
+Las siguientes propiedades son necesarias para implementar la [**interfaz IAnnotationProvider.**](/windows/desktop/api/uiautomationcore/nn-uiautomationcore-iannotationprovider)
 
 
 
@@ -75,7 +75,7 @@ Las siguientes propiedades son necesarias para implementar la interfaz [**IAnnot
 
 
 
- 
+ 
 
 Este patrón de control no tiene eventos asociados.
 
@@ -92,6 +92,6 @@ Este patrón de control no tiene eventos asociados.
 [Información general sobre el árbol de la UI Automation](uiauto-treeoverview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
