@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: clase de instancia'
+description: 'Más información sobre: Clase de instancia'
 title: Clase de instancia
 TOCTitle: Instance class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Instance
@@ -24,29 +24,29 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7b717286a9d07b7eb17b87354cbe0896cf182f5a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: be11bc87b1a7969b1c0ddca6640979be0aadae3715a4c2e825ca470ee7932ed8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103811137"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119731755"
 ---
 # <a name="instance-class"></a>Clase de instancia
 
-Una clase que encapsula una [JET_INSTANCE](./jet-instance-structure.md) en un objeto descartable. La instancia debe cerrarse en último lugar y el cierre de la instancia libera todos los demás recursos de la instancia.
+Clase que encapsula un [JET_INSTANCE](./jet-instance-structure.md) en un objeto descartable. La instancia debe cerrarse en último lugar y cerrar la instancia libera todos los demás recursos de la instancia.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Runtime. ConstrainedExecution. CriticalFinalizerObject](/dotnet/api/system.runtime.constrainedexecution.criticalfinalizerobject)  
+  [System.Runtime.ConstrainedExecution.CriticalFinalizerObject](/dotnet/api/system.runtime.constrainedexecution.criticalfinalizerobject)  
     [System.Runtime.InteropServices.SafeHandle](/dotnet/api/system.runtime.interopservices.safehandle)  
-      [Microsoft. Win32. SafeHandle. SafeHandleZeroOrMinusOneIsInvalid](/dotnet/api/microsoft.win32.safehandles.safehandlezeroorminusoneisinvalid)  
-        Microsoft. ISAM. esent. Interop. Instance  
+      [Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid](/dotnet/api/microsoft.win32.safehandles.safehandlezeroorminusoneisinvalid)  
+        Microsoft.Isam.Esent.Interop.Instance  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -70,4 +70,4 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 [Miembros de instancia](./instance-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

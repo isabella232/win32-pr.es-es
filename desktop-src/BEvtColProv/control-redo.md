@@ -1,8 +1,8 @@
 ---
-description: Restablezca la configuración activa del recopilador del archivo de copia de seguridad posterior (determinado por el avance desde la marca de tiempo original actual). Si se ha deshecho la configuración, significa que se rehace el cambio deshecho.
+description: Restablezca la configuración activa del recopilador desde el archivo de copia de seguridad posterior (determinado a partir de la marca de tiempo original actual). Si la configuración se ha deshace, significa volver a hacer el cambio deshacer.
 ms.assetid: bd153ea3-9148-4e65-a44e-3f9fa1855f2f
 ms.tgt_platform: multiple
-title: Método redo de la clase control
+title: Método Redo de la clase Control
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - BEvtCol.exe
-ms.openlocfilehash: 5ed77aac62dca0bf81ed13474e8acebb0235ea71
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 45f8d2c8ae34ae3f045a579cbb588f1a67e635077951c10916655788b48f7795
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104152774"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119579515"
 ---
-# <a name="redo-method-of-the-control-class"></a>Método redo de la clase control
+# <a name="redo-method-of-the-control-class"></a>Método Redo de la clase Control
 
-Restablezca la configuración activa del recopilador del archivo de copia de seguridad posterior (determinado por el avance desde la marca de tiempo original actual). Si se ha deshecho la configuración, significa que se rehace el cambio deshecho.
+Restablezca la configuración activa del recopilador desde el archivo de copia de seguridad posterior (determinado a partir de la marca de tiempo original actual). Si la configuración se ha deshace, significa volver a hacer el cambio deshacer.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,73 +49,73 @@ Uint32 Redo(
 
 <dl> <dt>
 
-*OldTimestampLow* \[ de\]
+*OldTimestampLow* \[ En\]
 </dt> <dd>
 
-Marca de tiempo de cuando se estableció la configuración anterior. Si no es 0, habilita la comprobación de atomicidad: la nueva configuración solo se aplicará si la marca de tiempo de la configuración anterior coincide (es decir, la configuración no se ha cambiado entre). Esta es la parte baja de [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime).
+Marca de tiempo de cuando se estableció la configuración anterior. Si no es 0, habilita la comprobación de atomicidad: la nueva configuración solo se aplicará si la marca de tiempo de la configuración anterior coincide (es decir, la configuración no se cambió entre sí). Esta es la parte baja de [**FILETIME.**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)
 
 </dd> <dt>
 
-*OldTimestampHigh* \[ de\]
+*OldTimestampHigh* \[ En\]
 </dt> <dd>
 
-Marca de tiempo de cuando se estableció la configuración anterior. Si no es 0, habilita la comprobación de atomicidad: la nueva configuración solo se aplicará si la marca de tiempo de la configuración anterior coincide (es decir, la configuración no se ha cambiado entre). Esta es la parte alta de [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime).
+Marca de tiempo de cuando se estableció la configuración anterior. Si no es 0, habilita la comprobación de atomicidad: la nueva configuración solo se aplicará si la marca de tiempo de la configuración anterior coincide (es decir, la configuración no se cambió entre sí). Esta es la parte alta de [**FILETIME.**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)
 
 </dd> <dt>
 
-*NewTimestampLow* \[ enuncia\]
+*NewTimestampLow* \[ out\]
 </dt> <dd>
 
-Marca de tiempo de cuando se estableció la nueva configuración, si la llamada se realiza correctamente. Esta es la parte baja de [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime).
+Marca de tiempo de cuándo se estableció la nueva configuración, si la llamada se realiza correctamente. Esta es la parte baja de [**FILETIME.**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)
 
 </dd> <dt>
 
-*NewTimestampHigh* \[ enuncia\]
+*NewTimestampHigh* \[ out\]
 </dt> <dd>
 
-Marca de tiempo de cuando se estableció la nueva configuración, si la llamada se realiza correctamente. Esta es la parte alta de [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime).
+Marca de tiempo de cuándo se estableció la nueva configuración, si la llamada se realiza correctamente. Esta es la parte alta de [**FILETIME.**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)
 
 </dd> <dt>
 
-*OriginalTimestampLow* \[ enuncia\]
+*OriginalTimestampLow* \[ out\]
 </dt> <dd>
 
-Marca de tiempo original de la primera vez que se estableció la configuración restaurada. Esta es la parte baja de [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime).
+Marca de tiempo original de cuando se estableció la configuración restaurada por primera vez. Esta es la parte baja de [**FILETIME.**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)
 
 </dd> <dt>
 
-*OriginalTimestampHigh* \[ enuncia\]
+*OriginalTimestampHigh* \[ out\]
 </dt> <dd>
 
-Marca de tiempo original de la primera vez que se estableció la configuración restaurada. Esta es la parte alta de [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime).
+Marca de tiempo original de cuando se estableció la configuración restaurada por primera vez. Esta es la parte alta de [**FILETIME.**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)
 
 </dd> <dt>
 
-*ErrorString* \[ enuncia\]
+*ErrorString* \[ out\]
 </dt> <dd>
 
-Cadena de texto con la explicación del error.
+Cadena de texto con una explicación del error.
 
 </dd> <dt>
 
-*WarningString* \[ enuncia\]
+*WarningString* \[ out\]
 </dt> <dd>
 
 Cadena de texto con advertencias.
 
 </dd> <dt>
 
-*InfoString* \[ enuncia\]
+*InfoString* \[ out\]
 </dt> <dd>
 
 Cadena de texto con información sobre la configuración.
 
 </dd> <dt>
 
-*ErrorType* \[ enuncia\]
+*ErrorType* \[ out\]
 </dt> <dd>
 
-Tipo del error. Tenga en cuenta que 0 o falta indican que el proceso se ha realizado correctamente.
+Tipo del error. Tenga en cuenta que 0 o absent indica que se ha hecho correctamente.
 
 <dt>
 
@@ -129,7 +129,7 @@ Correcto.
 1
 </dt> <dd>
 
-formato de argumento incorrecto
+formato de argumento no válido
 
 </dd> <dt>
 
@@ -143,21 +143,21 @@ valor de argumento no válido
 3
 </dt> <dd>
 
-error de recurso abierto de recursos (socket)
+error de apertura del recurso (socket)
 
 </dd> <dt>
 
 4
 </dt> <dd>
 
-error de persistencia (escritura de archivo)
+error de persistencia (escritura de archivos)
 
 </dd> <dt>
 
 5
 </dt> <dd>
 
-error de atomicidad (la marca de tiempo anterior no coincidía)
+error de atomicidad (la marca de tiempo anterior no coincide)
 
 </dd> </dl> </dd> </dl>
 
@@ -187,12 +187,12 @@ Correcto
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                          |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                          |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                       |
-| Espacio de nombres<br/>                | Raíz de \\ Microsoft \\ Windows \\ BootEventCollector<br/>                                              |
-| MOF<br/>                      | <dl> <dt>BootEventCollectorWMI. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Raíz \\ de Microsoft Windows \\ \\ BootEventCollector<br/>                                              |
+| MOF<br/>                      | <dl> <dt>BootEventCollectorWMI.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>BEvtCol.exe</dt> </dl>               |
 
 

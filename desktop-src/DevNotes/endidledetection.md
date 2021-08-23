@@ -1,7 +1,7 @@
 ---
-description: Finaliza la supervisión de inactividad.
+description: Finaliza la supervisión de la inactividad.
 ms.assetid: 26e52341-77cd-46cd-8b32-e786dfac870e
-title: EndIdleDetection función)
+title: Función EndIdleDetection
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - Msidle.dll
-ms.openlocfilehash: e50679c53123ad140324f7d159ef938367c02af0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a2ba6732b9221d4d4d43e670d0d42d39363d50dffc0d2d4b0daf378b10dd292e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649857"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119691415"
 ---
-# <a name="endidledetection-function"></a>EndIdleDetection función)
+# <a name="endidledetection-function"></a>Función EndIdleDetection
 
-\[Esta función no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, use la función **GetLastInputInfo** .\]
+\[Esta función no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, use **la función GetLastInputInfo.**\]
 
-Finaliza la supervisión de inactividad.
+Finaliza la supervisión de la inactividad.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,17 +50,17 @@ Este parámetro debe establecerse en cero.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si la función se ejecuta correctamente; de lo contrario, devuelve **false**.
+Devuelve **TRUE** si la función se realiza correctamente; de lo contrario, devuelve **FALSE**.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función no tiene asociado ningún archivo de encabezado o biblioteca de importación. debe llamarlo mediante las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) . Esta función no se exporta por nombre; Especifique el ordinal 4 al llamar a **GetProcAddress**.
+Esta función no tiene asociada la biblioteca de importación ni el archivo de encabezado; debe llamarlo mediante las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**y GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) Esta función no se exporta por nombre; especifique el ordinal 4 al llamar **a GetProcAddress**.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------|---------------------------------------------------------------------------------------|
 | Archivo DLL<br/> | <dl> <dt>Msidle.dll</dt> </dl> |
 

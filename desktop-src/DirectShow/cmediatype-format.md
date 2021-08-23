@@ -1,7 +1,7 @@
 ---
 description: El método Format recupera un puntero al bloque de formato.
 ms.assetid: 368055cd-4592-4144-aef9-d7e830fc4de1
-title: CMediaType. Format (método, mtype. h)
+title: Método CMediaType.Format (Mtype.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: bbfa7508ac8bb7e95134231c3567a9b6d4701224
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d68b84f5c27798022dbf5c54544793a0fb053dd24c3b2e1a10edd29705420b70
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105678886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119526465"
 ---
-# <a name="cmediatypeformat-method"></a>CMediaType. Format (método)
+# <a name="cmediatypeformat-method"></a>Método CMediaType.Format
 
 El `Format` método recupera un puntero al bloque de formato.
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el miembro **pbFormat** .
+Devuelve el **miembro pbFormat.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve el miembro **pbFormat** .
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Mtype. h (incluir streams. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Mtype.h (incluir Secuencias.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve el miembro **pbFormat** .
 
 <dl> <dt>
 
-[**Clase CMediaType**](cmediatype.md)
+[**CMediaType (clase)**](cmediatype.md)
 </dt> </dl>
 
  

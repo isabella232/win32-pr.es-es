@@ -1,19 +1,19 @@
 ---
-description: Especifica cómo se utiliza la información de color en las operaciones de búsqueda de movimiento.
+description: Especifica cómo se usa la información de color en las operaciones de búsqueda de movimiento.
 ms.assetid: a625b103-0a55-4268-a01a-6a464a56fec2
-title: Propiedad MFPKEY_MOTIONSEARCHLEVEL (Wmcodecdsp. h)
+title: MFPKEY_MOTIONSEARCHLEVEL propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 231c2c0ae70466d41f4bf348ec47ee0a74cb135b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b53c6bf8f94b2b9817249d96cffbfa0da251dbbcb0545c141230de90f80485af
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082472"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119555424"
 ---
-# <a name="mfpkey_motionsearchlevel-property"></a>\_Propiedad MOTIONSEARCHLEVEL de MFPKEY
+# <a name="mfpkey_motionsearchlevel-property"></a>Propiedad MFPKEY \_ MOTIONSEARCHLEVEL
 
-Especifica cómo se utiliza la información de color en las operaciones de búsqueda de movimiento.
+Especifica cómo se usa la información de color en las operaciones de búsqueda de movimiento.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
@@ -27,35 +27,35 @@ VT \_ I4
 
 0
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad se puede establecer en uno de los valores siguientes.
+Esta propiedad puede establecerse en uno de los valores siguientes.
 
 
 
 | Value | Información de vídeo usada                           |
 |-------|--------------------------------------------------|
 | 0     | Solo luminancia.                                       |
-| 1     | Luminancia con intensidad de croma entero más próximo.                |
+| 1     | Luma con entero más próximo.                |
 | 2     | Luminancia con intensidad de color verdadero.                           |
-| -1    | Adaptativo macrobloque: adaptable con intensidad de croma real.            |
-| -2    | Adaptativo macrobloque: adaptable con el cromado de entero más próximo. |
+| -1    | Macroblock-adaptive with true crom.            |
+| -2    | Macroblock-adaptive con integer integer más cercano. |
 
 
 
  
 
-De forma predeterminada, el códec realiza la búsqueda de movimiento solo en el canal de luminancia. La inclusión de información de croma en la estimación de movimiento puede mejorar significativamente la calidad del vídeo codificado. La búsqueda de movimiento con luminancia y intensidad de croma real producirá la mejor calidad de vídeo, pero con el mayor costo de rendimiento. Los dos modos dinámicos (-1 y-2) y la luminancia con el modo de croma de entero más próximo proporcionarán un riesgo razonable entre calidad y rendimiento.
+De forma predeterminada, el códec realiza la búsqueda de movimiento solo en el canal luma. La inclusión de la información de los colores en la estimación del movimiento puede mejorar significativamente la calidad del vídeo codificado. La búsqueda de movimiento con luma y true detector dará la mejor calidad de vídeo, pero con el mayor costo de rendimiento. Los dos modos dinámicos (-1 y -2) y el luma con el modo de estrella de entero más cercano proporcionarán compromisos razonables entre la calidad y el rendimiento.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ De forma predeterminada, el códec realiza la búsqueda de movimiento solo en el
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

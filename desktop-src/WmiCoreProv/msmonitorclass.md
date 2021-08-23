@@ -1,5 +1,5 @@
 ---
-description: Es una clase base abstracta de WMI. Las clases que describen monitores de pantalla de vídeo heredan de este MSMonitorClass.
+description: Es una clase base WMI abstracta. Las clases que describen los monitores de visualización de vídeo heredan de esta clase MSMonitorClass.
 ms.assetid: d9a0ce80-0323-4d84-a7d2-aefa99355f9e
 title: Clase MSMonitorClass
 ms.topic: reference
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: 3eeea966a539d02acaeba24e06bcbfa8af58b7b6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f19e981d9feecab6d9fb83fbd6502cd145b57d22ec4a8f4be585f6ea63083607
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716771"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119732985"
 ---
 # <a name="msmonitorclass-class"></a>Clase MSMonitorClass
 
-**MSMonitorClass** es una clase base abstracta de WMI. Las clases que describen monitores de pantalla de vídeo heredan de este **MSMonitorClass**.
+**MSMonitorClass es** una clase base WMI abstracta. Las clases que describen los monitores de visualización de vídeo heredan de **este objeto MSMonitorClass.**
 
-Las clases de monitor de pantalla de vídeo que heredan de **MSMonitorClass** incluyen:
+Las clases de monitor de visualización de vídeo que heredan **de MSMonitorClass** incluyen:
 
 -   [**WmiMonitorAnalogVideoInputParams**](wmimonitoranalogvideoinputparams.md)
 -   [**WmiMonitorBasicDisplayParams**](wmimonitorbasicdisplayparams.md)
@@ -50,7 +50,7 @@ class MSMonitorClass
 
 ## <a name="members"></a>Miembros
 
-La clase **MSMonitorClass** no define ningún miembro.
+La **clase MSMonitorClass** no define ningún miembro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,8 +60,8 @@ La clase **MSMonitorClass** no define ningún miembro.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
-| Espacio de nombres<br/>                | \\WMI raíz<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>WmiCore. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Wmi \\ raíz<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>WmiCore.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>WmiProv.dll</dt> </dl> |
 
 

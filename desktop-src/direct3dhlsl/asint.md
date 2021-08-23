@@ -1,9 +1,9 @@
 ---
-title: asint (función)
-description: Interpreta el patrón de bits de un valor de entrada como un entero. Para obtener más información sobre la función intrínseca asint, consulte asint (DirectX HLSL).
+title: Función asint
+description: Interpreta el patrón de bits de un valor de entrada como un entero. Para obtener más información sobre la función intrínseca asint, vea asint (DirectX HLSL).
 ms.assetid: 28ba1a51-ce41-4bb0-8381-d91871b8236f
 keywords:
-- función de asint HLSL
+- Función asint HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,22 +13,22 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: cb892389cc2428c3b12843ae24fc0370076023f1
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: f189501216c7c60d024303bdb2c47b032cec73c6c22dc6a93bff24ce596f3169
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104532763"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119626615"
 ---
-# <a name="asint-function"></a>asint (función)
+# <a name="asint-function"></a>Función asint
 
-Interpreta el patrón de bits de un valor de entrada como un entero. Para obtener más información sobre la función intrínseca **asint** , consulte [**Asint (DirectX HLSL)**](dx-graphics-hlsl-asint.md).
+Interpreta el patrón de bits de un valor de entrada como un entero. Para obtener más información sobre la **función intrínseca asint,** [**vea asint (DirectX HLSL).**](dx-graphics-hlsl-asint.md)
 
 ## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 int asint(
-  in  value
+  in  value
 );
 ```
 
@@ -36,7 +36,7 @@ int asint(
 
 <dl> <dt>
 
-*valor* \[ de de\]
+*value* \[ En\]
 </dt> <dd>
 
 Valor de entrada.
@@ -47,18 +47,18 @@ Valor de entrada.
 
 Tipo: **int**
 
-La entrada se interpreta como un entero.
+Entrada interpretada como un entero.
 
 ## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**Funciones intrínsecas (DirectX HLSL)**](dx-graphics-hlsl-intrinsic-functions.md)
+[**Funciones intrínsecas (HLSL de DirectX)**](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

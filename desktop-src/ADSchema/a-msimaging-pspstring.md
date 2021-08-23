@@ -1,11 +1,11 @@
 ---
-title: atributo MS-Imaging-PSP-String
-description: Atributo de esquema que contiene la secuencia XML para este proceso de examen posterior.
+title: Atributo ms-Imaging-PSP-String
+description: Atributo de esquema que contiene la secuencia XML para este proceso posterior al examen.
 ms.assetid: 702adafa-d332-4315-ae36-86e997bf8d74
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de cadena MS-Imaging-PSP
-- msImaging-PSPString atributo AD Schema
+- Esquema de AD del atributo ms-Imaging-PSP-String
+- Esquema de AD del atributo msImaging-PSPString
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d46f8ab0d065d80ae2d59aae4ba5639abf442bcb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d9471b158b8b5453dc667f156525ccbcd30be8962fa00ca4574e591aed0dd16f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906015"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119551225"
 ---
-# <a name="ms-imaging-psp-string-attribute"></a>atributo MS-Imaging-PSP-String
+# <a name="ms-imaging-psp-string-attribute"></a>Atributo ms-Imaging-PSP-String
 
-Atributo de esquema que contiene la secuencia XML para este proceso de examen posterior.
+Atributo de esquema que contiene la secuencia XML para este proceso posterior al examen.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | MS-Imaging-PSP-cadena                       |
-| Nombre para mostrar de LDAP | msImaging-PSPString                         |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | ms-Imaging-PSP-String                       |
+| Ldap-Display-Name | msImaging-PSPString                         |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2054                     |
-| System-ID-GUID    | 7b6760ae-d6ed-44a6-b6be-9de62c09ec67        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 7b6760ae-d6ed-44a6-b6be-9de62c09ec67        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -51,18 +51,18 @@ Atributo de esquema que contiene la secuencia XML para este proceso de examen po
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                           |
+| Id. de vínculo                | \-                                                                           |
 | MAPI-Id                | \-                                                                           |
-| System-Only            | False                                                                        |
-| Tiene un único valor       | True                                                                         |
-| Está indexado             | False                                                                        |
-| En el catálogo global      | False                                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                 |
+| System-Only            | Falso                                                                        |
+| Es de un solo valor       | Verdadero                                                                         |
+| Está indexado             | Falso                                                                        |
+| En el catálogo global      | Falso                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                 |
 | Range-Lower            | \-                                                                           |
 | Range-Upper            | \-                                                                           |
 | Search-Flags           | 0x00000000                                                                   |
 | System-Flags           | 0x00000010                                                                   |
-| Clases usadas en        | [**MS-Imaging-PostScanProcess**](c-msimaging-postscanprocess.md)<br/> |
+| Clases usadas en        | [**ms-Imaging-PostScanProcess**](c-msimaging-postscanprocess.md)<br/> |
 
 
 
@@ -72,18 +72,18 @@ Atributo de esquema que contiene la secuencia XML para este proceso de examen po
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                           |
+| Id. de vínculo                | \-                                                                           |
 | MAPI-Id                | \-                                                                           |
-| System-Only            | False                                                                        |
-| Tiene un único valor       | True                                                                         |
-| Está indexado             | False                                                                        |
-| En el catálogo global      | False                                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                 |
+| System-Only            | Falso                                                                        |
+| Es de un solo valor       | Verdadero                                                                         |
+| Está indexado             | Falso                                                                        |
+| En el catálogo global      | Falso                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                 |
 | Range-Lower            | \-                                                                           |
 | Range-Upper            | \-                                                                           |
 | Search-Flags           | 0x00000000                                                                   |
 | System-Flags           | 0x00000010                                                                   |
-| Clases usadas en        | [**MS-Imaging-PostScanProcess**](c-msimaging-postscanprocess.md)<br/> |
+| Clases usadas en        | [**ms-Imaging-PostScanProcess**](c-msimaging-postscanprocess.md)<br/> |
 
 
 

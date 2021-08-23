@@ -1,29 +1,29 @@
 ---
 title: HttpCalculatorWithUserNameOverSslServiceExample
-description: En este ejemplo se muestra cómo usar el host de servicio para hospedar un servicio de calculadora a través de HTTP, con el nombre de usuario sobre la seguridad de modo mixto de SSL.
+description: En este ejemplo se muestra cómo usar el host de servicio para hospedar un servicio de calculadora a través de HTTP, con el nombre de usuario sobre la seguridad en modo mixto de SSL.
 ms.assetid: 92dfec48-2314-4e83-8fe9-9d25aa100043
 keywords:
 - HttpCalculatorWithUserNameOverSslServiceExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a281172b097c4b00a2a589c6a6bf528d79ce427
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d1f6eedd02e54590c991928576bebc7600be07f9f16c029f873f4d4fb4415de6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119590045"
 ---
 # <a name="httpcalculatorwithusernameoversslserviceexample"></a>HttpCalculatorWithUserNameOverSslServiceExample
 
-En este ejemplo se muestra cómo usar el host de servicio para hospedar un servicio de calculadora a través de HTTP, con el nombre de usuario sobre la seguridad de modo mixto de SSL. En esta configuración, la conexión de transporte está protegida (firmada, cifrada) por SSL, que también proporciona autenticación de servidor. La autenticación del cliente se proporciona mediante un par de nombre de usuario y contraseña en un encabezado de WS-Security en el mensaje.
+En este ejemplo se muestra cómo usar el host de servicio para hospedar un servicio de calculadora a través de HTTP, con el nombre de usuario sobre la seguridad en modo mixto de SSL. En esta configuración, la conexión de transporte está protegida (firmada, cifrada) por SSL, que también proporciona autenticación de servidor. La autenticación de cliente se proporciona mediante un par de nombre de usuario y contraseña en WS-Security encabezado del mensaje.
 
--   [CalculatorServiceUserNameOverSsl. cpp](#calculatorserviceusernameoversslcpp)
--   [CalculatorService. wsdl](#calculatorservicewsdl)
+-   [CalculatorServiceUserNameOverSsl.cpp](#calculatorserviceusernameoversslcpp)
+-   [CalculatorService.wsdl](#calculatorservicewsdl)
 -   [Archivo Make](#makefile)
 
-## <a name="calculatorserviceusernameoversslcpp"></a>CalculatorServiceUserNameOverSsl. cpp
+## <a name="calculatorserviceusernameoversslcpp"></a>CalculatorServiceUserNameOverSsl.cpp
 
 
 ```C++
@@ -355,7 +355,7 @@ Exit:
 
 
 
-## <a name="calculatorservicewsdl"></a>CalculatorService. wsdl
+## <a name="calculatorservicewsdl"></a>CalculatorService.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -480,9 +480,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

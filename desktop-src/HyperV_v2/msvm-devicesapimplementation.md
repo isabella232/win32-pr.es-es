@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 6fbe3c9b85e0a8c9f0c6a07d1db03784c4ac15e6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9f5a8ccd02926d781f46ef86b26873c5dad86565ac90df47a5835cdf2ca4823a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112103"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119525415"
 ---
 # <a name="msvm_devicesapimplementation-class"></a>Clase Msvm \_ DeviceSAPImplementation
 
-Asociación entre un punto de acceso de servicio (SAP) y cómo se implementa. La cardinalidad de esta asociación es de varios a varios. Un SAP se puede proporcionar mediante más de un dispositivo lógico, que funciona conjuntamente. Cualquier dispositivo puede proporcionar más de un SAP. Cuando muchos dispositivos lógicos están asociados a un único SAP, se supone que estos elementos funcionan juntos para proporcionar el punto de acceso. Si existen implementaciones diferentes de un SAP, cada una de estas implementaciones daría como resultado instancias individuales del objeto de SAP. Estas instancias individuales tendrían entonces asociaciones con las implementaciones únicas.
+Asociación entre un punto de acceso de servicio (SAP) y cómo se implementa. La cardinalidad de esta asociación es de varios a varios. Un SAP se puede proporcionar mediante más de un dispositivo lógico, que funciona conjuntamente. Cualquier dispositivo puede proporcionar más de un SAP. Cuando muchos dispositivos lógicos están asociados a un único SAP, se supone que estos elementos funcionan juntos para proporcionar el punto de acceso. Si existen implementaciones diferentes de un SAP, cada una de estas implementaciones daría lugar a instancias individuales del objeto de SAP. Estas instancias individuales tendrían asociaciones con las implementaciones únicas.
 
-La sintaxis siguiente se simplifica Managed Object Format (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se Managed Object Format código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -54,7 +54,7 @@ La **clase Msvm \_ DeviceSAPImplementation** tiene estas propiedades.
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **[ **\_ Cim LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)**
+Tipo de datos: **[ **CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -67,7 +67,7 @@ El dispositivo lógico. Esta propiedad se hereda de [**CIM \_ DeviceSAPImplement
 **Dependiente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **[ **Cim \_ ServiceAccessPoint**](/windows/desktop/CIMWin32Prov/cim-serviceaccesspoint)**
+Tipo de datos: **[ **CIM \_ ServiceAccessPoint**](/windows/desktop/CIMWin32Prov/cim-serviceaccesspoint)**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -91,15 +91,15 @@ Consulte [Consulta de objetos de red.](querying-networking-objects.md)
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 8 solo \[ aplicaciones de escritorio\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
 | Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

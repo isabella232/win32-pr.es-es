@@ -42,7 +42,7 @@ La **\_ \_ clase EventGenerator** no define ningún miembro.
 
 ## <a name="remarks"></a>Comentarios
 
-La **\_ \_ clase EventGenerator** se deriva de [**\_ \_ IndicationRelated ,**](--indicationrelated.md)que no tiene propiedades.
+La **\_ \_ clase EventGenerator** se deriva de [**\_ \_ IndicationRelated**](--indicationrelated.md), que no tiene ninguna propiedad.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,7 +56,7 @@ La **\_ \_ clase EventGenerator** se deriva de [**\_ \_ IndicationRelated ,**](-
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

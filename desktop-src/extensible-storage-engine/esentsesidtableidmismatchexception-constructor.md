@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentSesidTableIdMismatchException'
-title: Constructor de EsentSesidTableIdMismatchException
+description: 'Más información sobre: Constructor EsentSesidTableIdMismatchException'
+title: Constructor EsentSesidTableIdMismatchException
 TOCTitle: 'EsentSesidTableIdMismatchException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentSesidTableIdMismatchException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentsesidtableidmismatchexception.esentsesidtableidmismatchexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 95ed9b9bb72d3d0c11248944515663913118db02
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 960c9dbb462397798f0e4bdf4a2469c2f31c08a756c41ad92460ff5b08abb704
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105720756"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119732725"
 ---
-# <a name="esentsesidtableidmismatchexception-constructor"></a>Constructor de EsentSesidTableIdMismatchException
+# <a name="esentsesidtableidmismatchexception-constructor"></a>Constructor EsentSesidTableIdMismatchException
 
 Inicializa una nueva instancia de la clase EsentSesidTableIdMismatchException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentSesidTableIdMismatchException()
 public EsentSesidTableIdMismatchException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentSesidTableIdMismatchException()
 
 [Miembros de EsentSesidTableIdMismatchException](./esentsesidtableidmismatchexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

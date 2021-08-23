@@ -1,11 +1,11 @@
 ---
-title: External. addToBasket (método)
-description: Tenga en cuenta que en este tema se describe la funcionalidad diseñada para su uso en tiendas en línea. | External. addToBasket (método)
+title: Método External.addToBasket
+description: Nota En este tema se describe la funcionalidad diseñada para su uso por las tiendas en línea. | Método External.addToBasket
 ms.assetid: c0dc8cd7-b924-47b8-b36c-caff8f1f892f
 keywords:
-- método addToBasket de Windows Media Player
-- método addToBasket de Windows Media Player, clase externa
-- Clase externa Windows Media Player, método addToBasket
+- Método addToBasket Reproductor de Windows Media
+- Método addToBasket Reproductor de Windows Media , clase External
+- Clase externa Reproductor de Windows Media , método addToBasket
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d2e2fab549dec9e24b0c5bbe61f5511e375c4c04
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 17f51cfc3df641b02a5aa3a0869e810f318357dd70ba67acb3ec2310f8a5a355
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699873"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119650015"
 ---
-# <a name="externaladdtobasket-method"></a>External. addToBasket (método)
+# <a name="externaladdtobasket-method"></a>Método External.addToBasket
 
 > [!Note]  
-> En este tema se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
+> En este tema se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
 
  
 
-El método **addToBasket** agrega elementos multimedia al panel lista (también denominado cesta) en Windows Media Player.
+El **método addToBasket** agrega elementos multimedia al panel de lista (también denominado cesta) en Reproductor de Windows Media.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,10 +48,10 @@ External.addToBasket(
 
 <dl> <dt>
 
-*ViewType* \[ de\]
+*ViewType* \[ En\]
 </dt> <dd>
 
-**Cadena** que especifica el tipo de elemento que se va a agregar al panel lista. El autor de la llamada debe establecer este parámetro en una de las siguientes [constantes de ubicación de biblioteca](library-location-constants.md):
+**Cadena** que especifica el tipo de elemento que se va a agregar al panel de lista. El autor de la llamada debe establecer este parámetro en una de las siguientes constantes [de ubicación de biblioteca:](library-location-constants.md)
 
 CPListID
 
@@ -69,10 +69,10 @@ CPRadioID
 
 </dd> <dt>
 
-*Viewid controles* \[ de\]
+*ViewIDs* \[ En\]
 </dt> <dd>
 
-**Cadena** que contiene los identificadores, delimitados por punto y coma, de los elementos que se van a agregar al panel lista.
+**Cadena** que contiene los identificadores, delimitados por punto y coma, de los elementos que se van a agregar al panel de lista.
 
 </dd> </dl>
 
@@ -86,7 +86,7 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 11.<br/>                                                |
+| Versión<br/> | Reproductor de Windows Media 11.<br/>                                                |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -95,10 +95,10 @@ Este método no devuelve ningún valor.
 
 <dl> <dt>
 
-[**ExternalObject para las tiendas en línea de tipo 1**](external-object-for-type-1-online-stores.md)
+[**ExternalObject para almacenes en línea de tipo 1**](external-object-for-type-1-online-stores.md)
 </dt> <dt>
 
-[**External. basketTitle**](external-baskettitle.md)
+[**External.basketTitle**](external-baskettitle.md)
 </dt> </dl>
 
  

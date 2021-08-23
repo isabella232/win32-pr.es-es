@@ -1,7 +1,7 @@
 ---
-description: Marca que indica si se ha alcanzado el final de la secuencia.
+description: Marca que indica si se alcanzó el final de la secuencia.
 ms.assetid: bd919aac-1e37-4693-85ab-f747bfce8994
-title: 'Miembro CBaseRenderer:: m_bEOS (Renbase. h)'
+title: CBaseRenderer::m_bEOS miembro (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0bc311d919509b040a3176d1059225f84c90ab8d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c8b73d641d0d2f0628fb36b12e36d04906847ee05dfbbd1dcb7d058c644efef9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660890"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119526555"
 ---
-# <a name="cbaserendererm_beos-member"></a>Miembro bEOS CBaseRenderer:: m \_
+# <a name="cbaserendererm_beos-member"></a>Miembro CBaseRenderer::m \_ bEOS
 
-Marca que indica si se ha alcanzado el final de la secuencia.
+Marca que indica si se alcanzó el final de la secuencia.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ BOOL m_bEOS;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ BOOL m_bEOS;
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  

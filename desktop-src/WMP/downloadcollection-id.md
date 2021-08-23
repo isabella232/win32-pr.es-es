@@ -1,9 +1,9 @@
 ---
 title: DownloadCollection.id
-description: Tenga en cuenta que en esta sección se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea. La propiedad ID recupera el identificador de la colección de descargas.
+description: Nota En esta sección se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea. La propiedad id recupera el identificador de la colección de descarga.
 ms.assetid: b5b17f22-913c-4055-8958-e3efac819b2b
 keywords:
-- DownloadCollection.id Windows Media Player
+- DownloadCollection.id Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,23 +14,23 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9edcca4f56c485951ca907ae228dfec7a958b308
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 97e505db2e643286f84b61bfa8604b9edc8ef36fa39cdd040bd9cc49bb98f82d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119651275"
 ---
 # <a name="downloadcollectionid"></a>DownloadCollection.id
 
 > [!Note]  
-> En esta sección se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
+> En esta sección se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
 
  
 
-La propiedad **ID** recupera el identificador de la colección de descargas.
+La **propiedad id** recupera el identificador de la colección de descarga.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 DownloadManager.getDownloadCollection(
@@ -41,21 +41,21 @@ DownloadManager.getDownloadCollection(
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es un **número** de solo lectura (**Long**).
+Esta propiedad es un número de solo **lectura** (**long**).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando el administrador de descargas crea una nueva colección de descargas, asigna un número de identificador a la colección. Los números de ID. se conservan entre las sesiones de Windows Media Player y las sesiones del sistema operativo.
+Cuando el Administrador de descarga crea una nueva recopilación de descarga, asigna a la colección un número de identificador. Los números de identificador persisten entre Reproductor de Windows Media y las sesiones del sistema operativo.
 
-Los números de ID. no son únicos. Sin embargo, hay suficientes números de identificador disponibles en el valor de 32 bits, por lo que es muy poco probable que un número de ID. existente se sobrescriba en uno nuevo.
+Los números de identificador no son únicos. Sin embargo, hay suficientes números de identificador disponibles en el valor de 32 bits que es muy poco probable que uno nuevo sobrescriba un número de identificador existente.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/>                                  |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/>                                  |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -64,7 +64,7 @@ Los números de ID. no son únicos. Sin embargo, hay suficientes números de ide
 
 <dl> <dt>
 
-[**Objeto DownloadCollection**](downloadcollection-object.md)
+[**DownloadCollection (objeto)**](downloadcollection-object.md)
 </dt> </dl>
 
  

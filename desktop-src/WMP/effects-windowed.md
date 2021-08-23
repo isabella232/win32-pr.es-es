@@ -1,9 +1,9 @@
 ---
-title: EFFECTs. windowed
-description: El atributo windowed especifica o recupera un valor que indica si la visualización se va a mostrar o no en ventanas, es decir, si todo el rectángulo del control será visible en todo momento o si se puede recortar.
+title: EFFECTS.windowed
+description: El atributo windowed especifica o recupera un valor que indica si la visualización se va a usar en ventanas o sin ventanas, es decir, si todo el rectángulo del control estará visible en todo momento o si se puede recortar.
 ms.assetid: bc535274-8bc3-43bb-aab0-11899134d71e
 keywords:
-- EFECTOS. ventanas de Windows Media Player
+- EFFECTS.windowed Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b3e30ae511c3e80e5e560f864baa8d797903fe2a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 32fcd144d26de8f96c039d8199af8e6e4c1c14e60b2c5e2bf0c7dcc5a7f3cbf5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119651005"
 ---
-# <a name="effectswindowed"></a>EFFECTs. windowed
+# <a name="effectswindowed"></a>EFFECTS.windowed
 
-El atributo **windowed** especifica o recupera un valor que indica si la visualización se va a mostrar o no en ventanas, es decir, si todo el rectángulo del control será visible en todo momento o si se puede recortar. Este atributo solo se puede establecer en tiempo de diseño.
+El atributo **windowed** especifica o recupera un valor que indica si la visualización se va a usar en ventanas o sin ventanas, es decir, si todo el rectángulo del control estará visible en todo momento o si se puede recortar. Este atributo solo se puede establecer en tiempo de diseño.
 
 ``` syntax
         elementID.windowed
@@ -29,24 +29,24 @@ El atributo **windowed** especifica o recupera un valor que indica si la visuali
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **valor booleano** especificado en tiempo de diseño y de solo lectura después.
+Este atributo es un **valor booleano** especificado en tiempo de diseño y de solo lectura a partir de entonces.
 
 
 
-| Value | Descripción                              |
+| Valor | Descripción                              |
 |-------|------------------------------------------|
-| true  | El control se mostrará en la ventana.            |
+| true  | El control se abrirá en ventanas.            |
 | false | Predeterminada. El control no tendrá ventanas. |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si se desea una ventana de visualización no rectangular, o si una imagen incluye alguna parte de la ventana, este atributo debe establecerse en false. Esto sacrifica algún rendimiento para realizar el recorte necesario.
+Si se desea una ventana de visualización no rectangular o si alguna parte de la ventana está cubierta por una imagen, este atributo debe establecerse en false. Esto sacrifique cierto rendimiento para realizar el recorte necesario.
 
-Si **windowed** está establecido en true, se omite cualquier imagen que abarque la ventana de visualización y la ventana de visualización tiene el orden z de nivel superior.
+Si **windowed** se establece en true, se omite cualquier imagen que cubre la ventana de visualización y la ventana de visualización tiene el orden Z de nivel superior.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Si **windowed** está establecido en true, se omite cualquier imagen que abarque
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -62,7 +62,7 @@ Si **windowed** está establecido en true, se omite cualquier imagen que abarque
 
 <dl> <dt>
 
-[**EFFECTs, elemento**](effects-element.md)
+[**ELEMENTO EFFECTS**](effects-element.md)
 </dt> </dl>
 
  

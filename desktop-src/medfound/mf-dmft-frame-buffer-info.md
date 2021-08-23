@@ -1,21 +1,21 @@
 ---
-description: Contiene información acerca de los búferes de marcos asignados por el sistema que se envían al controlador de dispositivo.
+description: Contiene información sobre los búferes de fotogramas asignados por el sistema enviados al controlador de dispositivo.
 ms.assetid: 78485F2A-A512-4FAC-8845-D2B7D7D8DCDE
-title: MF_DMFT_FRAME_BUFFER_INFO atributo (Mftransform. h)
+title: MF_DMFT_FRAME_BUFFER_INFO atributo (Mftransform.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a97bd9ceefc8aa3064b88a526cc2609ec3585bb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e11f6df3819742f61aa5f55622d100262ac80a664cbc4e87b69c3bc14390a37d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649925"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119664685"
 ---
-# <a name="mf_dmft_frame_buffer_info-attribute"></a>\_Atributo de \_ información de búfer de marco MF DMFT \_ \_
+# <a name="mf_dmft_frame_buffer_info-attribute"></a>Atributo \_ MF DMFT \_ FRAME BUFFER \_ \_ INFO
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-Contiene información acerca de los búferes de marcos asignados por el sistema que se envían al controlador de dispositivo.
+Contiene información sobre los búferes de fotogramas asignados por el sistema enviados al controlador de dispositivo.
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -25,7 +25,7 @@ Contiene información acerca de los búferes de marcos asignados por el sistema 
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Mftransform. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Mftransform.h</dt> </dl> |
 
 
 

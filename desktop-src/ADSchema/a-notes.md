@@ -1,11 +1,11 @@
 ---
-title: Additional-Information atributo)
-description: Texto libre para notas sobre el objeto.
+title: Additional-Information atributo
+description: Texto libre para las notas del objeto.
 ms.assetid: 5a6db370-ad58-4c00-bbb0-96607f267f7c
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Additional-Information
-- atributo de Notes esquema de AD
+- Additional-Information esquema de AD del atributo
+- Esquema de AD del atributo notes
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c918a304a65efbce5a2d664466a76dbae1d41f54
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 48b9ae50cb5f23bb85ef5f7c1da4ca4b3bdab8c253cbf8e78af4eae4e9d7f08a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659016"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648305"
 ---
-# <a name="additional-information-attribute"></a>Additional-Information atributo)
+# <a name="additional-information-attribute"></a>Additional-Information atributo
 
-Texto libre para notas sobre el objeto.
+Texto libre para las notas del objeto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | Additional-Information                      |
-| Nombre para mostrar de LDAP | HDInsight                                       |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | HDInsight                                       |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.265                      |
-| System-ID-GUID    | 6d05fb41-246b-11d0-a9c8-00aa006c33ed        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 6d05fb41-246b-11d0-a9c8-00aa006c33ed        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,13 +55,13 @@ Texto libre para notas sobre el objeto.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Tiene un único valor       | True                                    |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Verdadero                                    |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -76,13 +76,13 @@ Texto libre para notas sobre el objeto.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Tiene un único valor       | True                                    |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Verdadero                                    |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -97,13 +97,13 @@ Texto libre para notas sobre el objeto.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Tiene un único valor       | True                                    |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Verdadero                                    |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -118,13 +118,13 @@ Texto libre para notas sobre el objeto.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Tiene un único valor       | True                                    |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Verdadero                                    |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -139,13 +139,13 @@ Texto libre para notas sobre el objeto.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Tiene un único valor       | True                                    |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Verdadero                                    |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -160,13 +160,13 @@ Texto libre para notas sobre el objeto.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Tiene un único valor       | True                                    |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Verdadero                                    |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |

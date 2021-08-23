@@ -1,12 +1,12 @@
 ---
-title: Método Import de la clase Win32_TSGatewayServer
-description: Importa una configuración determinada en el servidor de puerta de enlace de Escritorio remoto (puerta de enlace de escritorio remoto).
+title: Método import de la Win32_TSGatewayServer clase
+description: Importa una configuración determinada al servidor Escritorio remoto Gateway (puerta de enlace de Escritorio remoto).
 ms.assetid: d849afb9-f6cb-41e6-aab5-e47b30a5581f
 ms.tgt_platform: multiple
 keywords:
-- Método de importación Servicios de Escritorio remoto
-- Método de importación Servicios de Escritorio remoto, clase Win32_TSGatewayServer
-- Servicios de Escritorio remoto de clase Win32_TSGatewayServer, método Import
+- Importación de métodos Servicios de Escritorio remoto
+- Método import Servicios de Escritorio remoto , Win32_TSGatewayServer clase
+- Win32_TSGatewayServer clase Servicios de Escritorio remoto , Método Import
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b35395342be7c13f2a96f73f914eda103e1ef4c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2629e8e44acd0f617e86a846cc127ab77250673c8612f2d2f53ab8c0238d9f0f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996602"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119574575"
 ---
-# <a name="import-method-of-the-win32_tsgatewayserver-class"></a>Método Import de la \_ clase Win32 TSGatewayServer
+# <a name="import-method-of-the-win32_tsgatewayserver-class"></a>Método import de la clase TSGatewayServer de Win32 \_
 
-Importa una configuración determinada en el servidor de puerta de enlace de Escritorio remoto (puerta de enlace de escritorio remoto).
+Importa una configuración determinada al servidor Escritorio remoto Gateway (puerta de enlace de Escritorio remoto).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,49 +46,49 @@ uint32 Import(
 
 <dl> <dt>
 
-*ImportType* \[ de\]
+*ImportType* \[ En\]
 </dt> <dd>
 
-Contenido que se va a importar. Establezca el tipo de importación mediante el establecimiento de los bits correspondientes en el parámetro *ImportType* . Puede establecer varios tipos de importación. Por ejemplo, si se establece el bit 0, se importarán Servicios de Escritorio remoto las directivas de autorización de conexión (Cap de RD). Si se establece el 0 y el segundo bit, se importarán tanto las Cap de RD como las directivas de autorización de recursos de Servicios de Escritorio remoto (RAP de RD).
+Contenido que se importará. Establezca el tipo de importación estableciendo los bits correspondientes en *el parámetro ImportType.* Puede establecer varios tipos de importación. Por ejemplo, si se establece el bit 0, Servicios de Escritorio remoto directivas de autorización de conexión (CAP de Escritorio remoto) se importarán. Si se establecen los dos bits 0 y 2, se importarán las CAP de Escritorio remoto y Servicios de Escritorio remoto de autorización de recursos (RAP de Escritorio remoto).
 
 <dt>
 
 <span id="Import_all_CAPs"></span><span id="import_all_caps"></span><span id="IMPORT_ALL_CAPS"></span>
 
-<span id="Import_all_CAPs"></span><span id="import_all_caps"></span><span id="IMPORT_ALL_CAPS"></span>**Importar todos los Cap** (1)
+<span id="Import_all_CAPs"></span><span id="import_all_caps"></span><span id="IMPORT_ALL_CAPS"></span>**Importar todas las CAP** (1)
 
 
 </dt> <dd>
 
-Importe todas las Cap de RD.
+Importe todas las CAP de Escritorio remoto.
 
 </dd> <dt>
 
 <span id="Import_all_Radius_Servers"></span><span id="import_all_radius_servers"></span><span id="IMPORT_ALL_RADIUS_SERVERS"></span>
 
-<span id="Import_all_Radius_Servers"></span><span id="import_all_radius_servers"></span><span id="IMPORT_ALL_RADIUS_SERVERS"></span>**Importar todos los servidores RADIUS** (2)
+<span id="Import_all_Radius_Servers"></span><span id="import_all_radius_servers"></span><span id="IMPORT_ALL_RADIUS_SERVERS"></span>**Importar todos los servidores Radius** (2)
 
 
 </dt> <dd>
 
-Importe una lista de todos los servidores NPS (servidor de directivas de redes).
+Importe una lista de todos los servidores de Servidor de directivas de red (NPS).
 
 </dd> <dt>
 
 <span id="Import_all_RAPs"></span><span id="import_all_raps"></span><span id="IMPORT_ALL_RAPS"></span>
 
-<span id="Import_all_RAPs"></span><span id="import_all_raps"></span><span id="IMPORT_ALL_RAPS"></span>**Importar todas las rap** (4)
+<span id="Import_all_RAPs"></span><span id="import_all_raps"></span><span id="IMPORT_ALL_RAPS"></span>**Importar todas las RAP** (4)
 
 
 </dt> <dd>
 
-Importe todas las rap de RD.
+Importe todos los RAP de Escritorio remoto.
 
 </dd> <dt>
 
 <span id="Import_all_RGs"></span><span id="import_all_rgs"></span><span id="IMPORT_ALL_RGS"></span>
 
-<span id="Import_all_RGs"></span><span id="import_all_rgs"></span><span id="IMPORT_ALL_RGS"></span>**Importar todos los RGs** (8)
+<span id="Import_all_RGs"></span><span id="import_all_rgs"></span><span id="IMPORT_ALL_RGS"></span>**Importar todos los RG** (8)
 
 
 </dt> <dd>
@@ -99,7 +99,7 @@ Importe todos los grupos de recursos.
 
 <span id="Import_all_LoadBalancing_Servers"></span><span id="import_all_loadbalancing_servers"></span><span id="IMPORT_ALL_LOADBALANCING_SERVERS"></span>
 
-<span id="Import_all_LoadBalancing_Servers"></span><span id="import_all_loadbalancing_servers"></span><span id="IMPORT_ALL_LOADBALANCING_SERVERS"></span>**Importar todos los servidores de equilibrio** (16)
+<span id="Import_all_LoadBalancing_Servers"></span><span id="import_all_loadbalancing_servers"></span><span id="IMPORT_ALL_LOADBALANCING_SERVERS"></span>**Importar todos los servidores de equilibrio de** carga (16)
 
 
 </dt> <dd>
@@ -110,12 +110,12 @@ Importe una lista de todos los servidores de equilibrio de carga.
 
 <span id="Import_all_Server_Settings"></span><span id="import_all_server_settings"></span><span id="IMPORT_ALL_SERVER_SETTINGS"></span>
 
-<span id="Import_all_Server_Settings"></span><span id="import_all_server_settings"></span><span id="IMPORT_ALL_SERVER_SETTINGS"></span>**Importar la configuración de todos los servidores** (32)
+<span id="Import_all_Server_Settings"></span><span id="import_all_server_settings"></span><span id="IMPORT_ALL_SERVER_SETTINGS"></span>**Importar todos los servidores Configuración** (32)
 
 
 </dt> <dd>
 
-Importe la configuración de todos los servidores relacionados con la puerta de enlace de escritorio remoto.
+Importe toda la configuración del servidor relacionada con la puerta de enlace de Escritorio remoto.
 
 </dd> <dt>
 
@@ -128,54 +128,54 @@ Importe la configuración de todos los servidores relacionados con la puerta de 
 
 Importe todas las directivas de mantenimiento.
 
-* * Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 y Windows Server 2008: * *
+**Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 y Windows Server 2008: **
 
 Este valor no se admite antes de Windows Server 2016.
 
 </dd> </dl> </dd> <dt>
 
-*XmlString* \[ de\]
+*XmlString* \[ En\]
 </dt> <dd>
 
 La configuración como una cadena XML.
 
 </dd> <dt>
 
-*MergeOrReplace* \[ de\]
+*MergeOrReplace* \[ En\]
 </dt> <dd>
 
-Indica si se deben combinar o reemplazar los datos cuando se produce un conflicto.
+Indica si se deben combinar o reemplazar datos cuando se produce un conflicto.
 
 > [!Note]  
-> La fusión mediante combinación no se ha implementado todavía. Por lo tanto, se omite este valor de parámetro.
+> La combinación aún no se ha implementado. Por lo tanto, este valor de parámetro se omite.
 
  
 
 </dd> <dt>
 
-*LogString* \[ enuncia\]
+*LogString* \[ out\]
 </dt> <dd>
 
-La información de registro que se genera durante la operación de importación.
+Información de registro que se genera durante la operación de importación.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para llamar a este método, debe ser miembro del grupo administradores.
+Debe ser miembro del grupo Administradores para llamar a este método.
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TSGateway. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
@@ -184,7 +184,7 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 
 <dl> <dt>
 
-[**Win32 \_ TSGatewayServer**](win32-tsgatewayserver.md)
+[**TSGatewayServer de Win32 \_**](win32-tsgatewayserver.md)
 </dt> </dl>
 
  
