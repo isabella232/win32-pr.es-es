@@ -1,11 +1,11 @@
 ---
-title: Método IVMKeyboard ReleaseKey (VPCCOMInterfaces. h)
+title: Método IVMKeyboard ReleaseKey (VPCCOMInterfaces.h)
 description: Simula una clave que se va a liberar.
 ms.assetid: 112bf11d-d768-4487-ab41-e915aa4e6a24
 keywords:
-- Método ReleaseKey Virtual PC
-- Método ReleaseKey Virtual PC, interfaz IVMKeyboard
-- Interfaz IVMKeyboard Virtual PC, método ReleaseKey
+- Método ReleaseKey de Virtual PC
+- Método ReleaseKey Virtual PC , interfaz IVMKeyboard
+- IVMKeyboard interface Virtual PC , método ReleaseKey
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d8585f592ae1cad65157536f841500c42bb06bfd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d6610cf6aad2a6838a1437f9be33cbf93847a64a9266e07c424b4209bccd5a87
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996584"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136678"
 ---
-# <a name="ivmkeyboardreleasekey-method"></a>IVMKeyboard:: ReleaseKey (método)
+# <a name="ivmkeyboardreleasekey-method"></a>IVMKeyboard::ReleaseKey (Método)
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Simula una clave que se va a liberar.
 
@@ -44,10 +44,10 @@ HRESULT ReleaseKey(
 
 <dl> <dt>
 
-*clave* \[ de de\]
+*key* \[ En\]
 </dt> <dd>
 
-Código clave para la clave que se va a liberar.
+Código de clave para la clave que se va a liberar.
 
 </dd> </dl>
 
@@ -59,10 +59,10 @@ Este método puede devolver uno de estos valores.
 
 | Código o valor devuelto                                                                                                                                                 | Descripción                                                                |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| <dl> <dt>**S \_ Aceptar**</dt> <dt>0</dt> </dl>                       | La operación se realizó correctamente.<br/>                                   |
-| <dl> <dt>**E \_ PUNTERO**</dt> <dt>0x80004003</dt> </dl>         | El parámetro es **null**.<br/>                                      |
-| <dl> <dt>**E \_ INVALIDARG**</dt> <dt>0x80000003</dt> </dl>      | La cadena especificada está vacía o contiene un código de clave no válido.<br/> |
-| <dl> <dt>**DISP \_ . E \_ excepción**</dt> <dt>0x80020009</dt> </dl> | Se produjo un error inesperado.<br/>                               |
+| <dl> <dt>**S \_ Ok**</dt> <dt>0</dt> </dl>                       | La operación se realizó correctamente.<br/>                                   |
+| <dl> <dt>**E \_ Puntero**</dt> <dt>0x80004003</dt> </dl>         | El parámetro es **NULL.**<br/>                                      |
+| <dl> <dt>**E \_ InvalidarG**</dt> <dt>0x80000003</dt> </dl>      | La cadena especificada está vacía o contiene un código de clave no válido.<br/> |
+| <dl> <dt>**DISP \_ E \_ EXCEPTION**</dt> <dt>0x80020009</dt> </dl> | Se produjo un error inesperado.<br/>                               |
 
 
 
@@ -74,12 +74,12 @@ Este método puede devolver uno de estos valores.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMKeyboard se define como 00695f2e-c5ad-4d6e-b1ab-336ed121f8c4<br/>                |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMKeyboard se define como \_ 00695f2e-c5ad-4d6e-b1ab-336ed121f8c4<br/>                |
 
 
 

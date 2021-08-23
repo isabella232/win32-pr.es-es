@@ -1,129 +1,129 @@
 ---
-description: El SDK de Windows Installer contiene las descripciones más completas y actuales de la interfaz de programación de aplicaciones (API) y los elementos de la base de datos del instalador. Es el origen principal del material de referencia del desarrollador para el Windows Installer.
+description: El SDK Windows Installer contiene las descripciones más completas y actuales de la interfaz de programación de aplicaciones (API) y los elementos de la base de datos installer. Es el origen principal del material de referencia para desarrolladores para Windows Installer.
 ms.assetid: 30b1600c-60b0-4442-a9a4-1d597fcf9264
-title: Otros orígenes de información de Windows Installer
+title: Otros orígenes de información Windows instalador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f319bccc2a4bd51ef49c87faa50a4b6bd2801bb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3fdcc4b34ca9c5f9b28ee6a318550d3e279892e2b74c7efa9e62c2e1e9bb4819
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119145518"
 ---
-# <a name="other-sources-of-windows-installer-information"></a>Otros orígenes de información de Windows Installer
+# <a name="other-sources-of-windows-installer-information"></a>Otros orígenes de información Windows instalador
 
-El SDK de Windows Installer contiene las descripciones más completas y actuales de la interfaz de programación de aplicaciones (API) y los elementos de la base de datos del instalador. Es el origen principal del material de referencia del desarrollador para el Windows Installer.
+El SDK Windows Installer contiene las descripciones más completas y actuales de la interfaz de programación de aplicaciones (API) y los elementos de la base de datos installer. Es el origen principal del material de referencia para desarrolladores para Windows Installer.
 
-Los siguientes orígenes de información complementario también pueden ser útiles para los desarrolladores de software y los profesionales de ti que usan el Windows Installer.
+Los siguientes orígenes de información complementarios también pueden ser útiles para los desarrolladores de software y los profesionales de TI que usan Windows Installer.
 
 ## <a name="windows-developer-center"></a>Centro para desarrolladores de Windows
 
-Puede consultar el centro para desarrolladores de Windows para obtener información sobre el uso de Windows Installer al compilar aplicaciones para Windows.
+Puede consultar el Centro Windows desarrolladores para obtener información sobre cómo usar Windows Installer al compilar aplicaciones para Windows.
 
 -   [Centro para desarrolladores de Windows](https://msdn.microsoft.com/windows/default.aspx)
 
-## <a name="windows-installer-newsgroups"></a>Grupos de noticias Windows Installer
+## <a name="windows-installer-newsgroups"></a>Windows Grupos de noticias del instalador
 
-Puede leer y publicar en un grupo de noticias que describe el Windows Installer. Se pueden buscar los mensajes de grupos de noticias anteriores.
+Puede leer y publicar en un grupo de noticias que describe Windows Installer. Se pueden buscar mensajes de grupos de noticias anteriores.
 
-Las comunidades técnicas de Microsoft proporcionan acceso a los grupos de noticias públicos sobre Windows Installer:
+Microsoft Technical Communities proporciona acceso a grupos de noticias públicos sobre Windows Installer:
 
 -   [Grupos de noticias públicos de Microsoft](https://support.microsoft.com/newsgroups/default.aspx?newsgroup=microsoft.public.windows.msi)
 
-    Puede buscar en los grupos de noticias públicos disponibles las discusiones para desarrolladores de Windows acerca de los Windows SDK y MSI.
+    Puede buscar en los grupos de noticias públicos disponibles Windows discusión para desarrolladores sobre Windows SDK y MSI.
 
-## <a name="windows-installer-team-blog"></a>Blog del equipo de Windows Installer
+## <a name="windows-installer-team-blog"></a>Windows Blog del equipo del instalador
 
-Puede leer comentarios de Microsoft bloggers en el sitio de [blog de MSDN](/archive/blogs/).
+Puede leer comentarios de Microsoft Blogs en el sitio [de blog de MSDN](/archive/blogs/).
 
-Lea los blogs de los desarrolladores sobre el Windows Installer.
+Lea los blogs de los desarrolladores sobre Windows Installer.
 
--   [Blog del equipo de Windows Installer](https://blogs.msdn.com/windows_installer_team/default.aspx)
+-   [Windows Blog del equipo del instalador](https://blogs.msdn.com/windows_installer_team/default.aspx)
 
-## <a name="windows-installer-technical-chats"></a>Windows Installer chats técnicos
+## <a name="windows-installer-technical-chats"></a>Windows Chats técnicos del instalador
 
-Puede participar en sesiones de chat técnico en directo de MSDN sobre el Windows Installer:
+Puede participar en sesiones de chat técnico de MSDN en directo sobre Windows Installer:
 
 -   [Chats técnicos](https://msdn.microsoft.com/chats/default.aspx)
 
-    Los expertos del equipo de Windows Installer en Microsoft responden a preguntas sobre Windows Installer.
+    Los expertos del equipo Windows Installer de Microsoft responden a las preguntas que haga sobre Windows Installer.
 
 <!-- -->
 
--   [Archivo de chats de MSDN Windows Installer](/previous-versions/msdn10/aa497439(v=msdn.10))
+-   [Archivo de chats del instalador Windows MSDN](/previous-versions/msdn10/aa497439(v=msdn.10))
 
-    Las transcripciones de chats anteriores sobre el Windows Installer se archivan para que los lea en cualquier momento.
+    Las transcripciones de chats anteriores sobre Windows Installer se archivan para que las lea en cualquier momento.
 
 ## <a name="technet-articles-and-newsgroups"></a>Artículos y grupos de noticias de TechNet
 
-Puede buscar en TechNet artículos y grupos de noticias sobre el Windows Installer:
+Puede buscar en Technet artículos y grupos de noticias sobre Windows Installer:
 
 -   [Buscar en el sitio de TechNet](https://www.microsoft.com/technet/sitemap.mspx)
 
 ## <a name="knowledge-base-articles"></a>Artículos de Knowledge Base
 
-Puede buscar artículos sobre la Windows Installer en Knowledge base (KB):
+Puede buscar en Knowledge Base (KB) artículos sobre Windows Installer:
 
--   [Buscar en la base de conocimiento](https://support.microsoft.com/search)
+-   [Buscar en el Knowledge Base](https://support.microsoft.com/search)
 
-    Busque Windows Installer y MSI.
+    Busque el instalador Windows y MSI.
 
 ## <a name="white-papers"></a>Notas del producto
 
-Puede leer notas del producto que describen el Windows Installer:
+Puede leer las white papers que describen Windows Installer:
 
--   [Windows Installer: ventajas e implementación para los administradores del sistema](https://www.microsoft.com/technet/prodtechnol/windows2000serv/maintain/featusability/winmsi.mspx)
--   [Nuevas características y cambios de diseño en Windows Installer 2,0](/previous-versions/windows/it-pro/windows-xp/bb457094(v=technet.10))
--   [Uso de directivas de restricción de software para proteger contra software no autorizado](/previous-versions/windows/it-pro/windows-xp/bb457006(v=technet.10))
--   [Secuencia de revisiones en Windows Installer versión 3,0](https://www.microsoft.com/downloads/details.aspx?FamilyID=ad7ac91e-2493-4549-ae6f-bf5e007c12a3)
+-   [Windows Instalador: Ventajas e implementación para administradores del sistema](https://www.microsoft.com/technet/prodtechnol/windows2000serv/maintain/featusability/winmsi.mspx)
+-   [Nuevas características y cambios de diseño en Windows Installer 2.0](/previous-versions/windows/it-pro/windows-xp/bb457094(v=technet.10))
+-   [Uso de directivas de restricción de software para protegerse frente a software no autorizado](/previous-versions/windows/it-pro/windows-xp/bb457006(v=technet.10))
+-   [Secuenciación de revisiones en Windows Installer versión 3.0](https://www.microsoft.com/downloads/details.aspx?FamilyID=ad7ac91e-2493-4549-ae6f-bf5e007c12a3)
 -   [Instalación y mantenimiento de software](https://www.microsoft.com/technet/prodtechnol/windows2000serv/maintain/featusability/inmnwp.mspx)
--   [Guía paso a paso para crear paquetes de Windows Installer y volver a empaquetar el software para la Windows Installer](https://www.microsoft.com/technet/prodtechnol/windows2000serv/howto/winstall.mspx)
--   [Estandarización de la experiencia de revisión](https://www.microsoft.com/technet/security/topics/patchmanagement/stdpatex.mspx)
--   [Interfaz de programación de aplicaciones de compresión Delta](https://msdn.microsoft.com/library/ms811406.aspx)
+-   [Guía paso a paso para crear paquetes Windows instalador y volver a empaquetar software para el Windows instalador](https://www.microsoft.com/technet/prodtechnol/windows2000serv/howto/winstall.mspx)
+-   [Normalización de la experiencia de revisión](https://www.microsoft.com/technet/security/topics/patchmanagement/stdpatex.mspx)
+-   [Interfaz de programación de aplicaciones de compresión diferencial](https://msdn.microsoft.com/library/ms811406.aspx)
 
-## <a name="online-windows-installer-sdk"></a>SDK de Windows Installer en línea
+## <a name="online-windows-installer-sdk"></a>SDK del instalador Windows en línea
 
 Puede leer acerca de Windows Installer en línea:
 
--   [SDK de Windows Installer](./windows-installer-portal.md)
+-   [Windows SDK del instalador](./windows-installer-portal.md)
     > [!Note]  
-    > Debe descargar e instalar el kit de [desarrollo de software (SDK) de Microsoft Windows](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) para obtener las herramientas de desarrollo que se describen en la sección [herramientas de desarrollo de Windows Installer](windows-installer-development-tools.md) de la documentación de.
+    > Debe descargar e instalar el Kit de desarrollo de [software (SDK)](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) de Microsoft Windows para obtener las herramientas de desarrollo descritas en la sección herramientas de desarrollo de [Windows Installer](windows-installer-development-tools.md) de la documentación.
 
      
 
 ## <a name="orca-documentation"></a>Documentación de Orca
 
-[Orca](orca-exe.md) es un editor de archivos GUI. msi que se proporciona con el SDK de Windows Installer. Proporciona acceso completo a las tablas de base de datos de Windows Installer.
+[Orca](orca-exe.md) es una gui .msi editor de archivos que se proporciona con el SDK Windows Installer. Proporciona acceso completo a las tablas de base de datos Windows Installer.
 
-Se proporciona un conjunto de archivos de ayuda con orca. Para obtener la documentación de orca.exe y orca, debe descargar e instalar el SDK de Windows Installer, que se proporciona como un archivo de Orca.msi. Después de instalar el [Kit de desarrollo de software (SDK) de Microsoft Windows](https://developer.microsoft.com/windows/downloads/windows-10-sdk/), haga doble clic en el archivo de Orca.msi para instalar orca.
+Se proporciona un conjunto de archivos de Ayuda con Orca. Para obtener la documentación orca.exe y Orca, debe descargar e instalar el SDK del instalador de Windows, que se proporciona como un Orca.msi archivo. Después de instalar el Kit [de desarrollo de software (SDK)](https://developer.microsoft.com/windows/downloads/windows-10-sdk/)de Microsoft Windows, haga doble clic en Orca.msi archivo para instalar Orca.
 
 > [!Note]  
 > No es posible descargar Orca por separado.
 
  
 
-Aunque Orca proporciona acceso a todas las características del Windows Installer, no pretende reemplazar un entorno de creación de paquetes completo. En muchos casos, es más fácil crear una instalación de Windows Installer para una aplicación mediante el uso de una de las herramientas de creación de paquetes comerciales disponibles en proveedores de software independientes.
+Aunque Orca proporciona acceso a todas las características del instalador de Windows, no está pensado para reemplazar un entorno de creación de paquetes completo. En muchos casos, es más fácil crear una instalación de Windows Installer para una aplicación mediante una de las herramientas de creación de paquetes comerciales disponibles de proveedores de software independientes.
 
-## <a name="windows-installer-software-vendors"></a>Windows Installer proveedores de software
+## <a name="windows-installer-software-vendors"></a>Windows Instalador de proveedores de software
 
-Puede ponerse en contacto con un proveedor de software independiente sobre las herramientas para crear un paquete de Windows Installer para una aplicación. Estas herramientas pueden proporcionar un entorno de creación de paquetes que puede ser más fácil de usar que las herramientas proporcionadas en el SDK de Windows Installer.
+Puede ponerse en contacto con un proveedor de software independiente sobre las herramientas para crear un paquete Windows Installer para una aplicación. Estas herramientas pueden proporcionar un entorno de creación de paquetes que puede ser más fácil de usar que las herramientas proporcionadas en el SDK Windows Installer.
 
-## <a name="helpful-windows-installer-sites-on-the-web"></a>Sitios Windows Installer útiles en la web
+## <a name="helpful-windows-installer-sites-on-the-web"></a>Sitios Windows instalador de aplicaciones útiles en la Web
 
-Puede visitar sitios web que no sean de Microsoft y que proporcionen información útil sobre el Windows Installer. En la siguiente lista se identifican algunos de estos sitios:
+Puede visitar sitios web que no son de Microsoft que proporcionan información útil sobre Windows Installer. En la lista siguiente se identifican algunos de esos sitios:
 
 -   [InstallSite](http://www.installsite.org/)
 
-    Windows Installer información para los desarrolladores.
+    Windows Información del instalador para desarrolladores.
 
--   Cajón y [AppDeploy.com](https://www.itninja.com) [de correo no deseado del ingeniero de escritorio](https://cloudywindows.io)
+-   [Cajón de chatarra del](https://cloudywindows.io) [ingeniero de escritorio y AppDeploy.com](https://www.itninja.com)
 
-    Windows Installer información para profesionales de ti.
+    Windows Información del instalador para profesionales de TI.
 
 -   [Sourceforge.net](https://sourceforge.net/projects/wix)
 
-    Proyecto de Windows Installer XML (WiX) en Sourceforge.net.
+    Windows Proyecto XML del instalador (WiX) en Sourceforge.net.
 
  
 

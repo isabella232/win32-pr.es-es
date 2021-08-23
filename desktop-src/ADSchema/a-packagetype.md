@@ -1,11 +1,11 @@
 ---
-title: Package-Type atributo)
-description: Este atributo describe el tipo de instalación necesario para un paquete de aplicación, por ejemplo, MSI, EXE, CAB.
+title: Package-Type atributo
+description: Este atributo describe el tipo de instalación necesaria para un paquete de aplicación, por ejemplo, MSI, EXE, CAB.
 ms.assetid: 76505575-a2c9-4113-84ac-1d0689d9e0e4
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Package-Type
-- packageType esquema de AD de atributos
+- Package-Type esquema de AD de atributo
+- Esquema de AD del atributo packageType
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 325bb00484a3ee44cd23b98931c40fb440cdb3b1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: af751efa64072c098fa1bf34174f4cf14a71454d0cfc3a6c716b31d31881a9ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151738"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081509"
 ---
-# <a name="package-type-attribute"></a>Package-Type atributo)
+# <a name="package-type-attribute"></a>Package-Type atributo
 
-Este atributo describe el tipo de instalación necesario para un paquete de aplicación, por ejemplo, MSI, EXE, CAB.
+Este atributo describe el tipo de instalación necesaria para un paquete de aplicación, por ejemplo, MSI, EXE, CAB.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | Package-Type                         |
-| Nombre para mostrar de LDAP | packageType                          |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | packageType                          |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.324               |
-| System-ID-GUID    | 7d6c0e96-7e20-11d0-afd6-00c04fd930c9 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | 7d6c0e96-7e20-11d0-afd6-00c04fd930c9 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -55,18 +55,18 @@ Este atributo describe el tipo de instalación necesario para un paquete de apli
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
-| System-Only            | False                                                            |
-| Tiene un único valor       | True                                                             |
-| Está indexado             | False                                                            |
-| En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| System-Only            | Falso                                                            |
+| Es de un solo valor       | Verdadero                                                             |
+| Está indexado             | Falso                                                            |
+| En el catálogo global      | Falso                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ Este atributo describe el tipo de instalación necesario para un paquete de apli
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
-| System-Only            | False                                                            |
-| Tiene un único valor       | True                                                             |
-| Está indexado             | False                                                            |
-| En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| System-Only            | Falso                                                            |
+| Es de un solo valor       | Verdadero                                                             |
+| Está indexado             | Falso                                                            |
+| En el catálogo global      | Falso                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Este atributo describe el tipo de instalación necesario para un paquete de apli
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
-| System-Only            | False                                                            |
-| Tiene un único valor       | True                                                             |
-| Está indexado             | False                                                            |
-| En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| System-Only            | Falso                                                            |
+| Es de un solo valor       | Verdadero                                                             |
+| Está indexado             | Falso                                                            |
+| En el catálogo global      | Falso                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Este atributo describe el tipo de instalación necesario para un paquete de apli
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
-| System-Only            | False                                                            |
-| Tiene un único valor       | True                                                             |
-| Está indexado             | False                                                            |
-| En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| System-Only            | Falso                                                            |
+| Es de un solo valor       | Verdadero                                                             |
+| Está indexado             | Falso                                                            |
+| En el catálogo global      | Falso                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Este atributo describe el tipo de instalación necesario para un paquete de apli
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
-| System-Only            | False                                                            |
-| Tiene un único valor       | True                                                             |
-| Está indexado             | False                                                            |
-| En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| System-Only            | Falso                                                            |
+| Es de un solo valor       | Verdadero                                                             |
+| Está indexado             | Falso                                                            |
+| En el catálogo global      | Falso                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Este atributo describe el tipo de instalación necesario para un paquete de apli
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
-| System-Only            | False                                                            |
-| Tiene un único valor       | True                                                             |
-| Está indexado             | False                                                            |
-| En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| System-Only            | Falso                                                            |
+| Es de un solo valor       | Verdadero                                                             |
+| Está indexado             | Falso                                                            |
+| En el catálogo global      | Falso                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 

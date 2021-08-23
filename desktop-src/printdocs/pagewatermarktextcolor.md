@@ -4,18 +4,18 @@ ms.assetid: edbdd2c7-da04-49fb-a0f8-31a7df88f8ef
 title: PageWatermarkTextColor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db7cb7b893ec9a2ecf774173cf2a9f2410549087
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: 6055a1b1cbea289b8cbb1b27aa174b9d6ec4f539c85b5fbb0edd6835e9f131c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112396020"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119034083"
 ---
 # <a name="pagewatermarktextcolor"></a>PageWatermarkTextColor
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Define el color de sRGB para el texto de marca de agua. El formato es ARGB: \# AARRGGBB.
+Define el color de sRGB para el texto de la marca de agua. El formato es ARGB: \# AARRGGBB.
 
 -   [Información de elemento](#element-information)
 -   [Contenido de la estructura](#structure-content)
@@ -68,7 +68,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 
 
-| Propiedad                | xsi:type           | Valor                      |
+| Propiedad                | xsi:type           | Value                      |
 |-------------------------|--------------------|----------------------------|
 | DataType<br/>     | string<br/>  | xs:string<br/>       |
 | DefaultValue<br/> | integer<br/> | no definido<br/>       |

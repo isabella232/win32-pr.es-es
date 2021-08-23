@@ -1,19 +1,19 @@
 ---
-description: 'Las constantes siguientes identifican el formato de datos subyacente de un IMFTimedTextTrack. Obtiene el formato de una pista de texto con hora llamando a IMFTimedTextTrack:: GetDataFormat.'
+description: Las constantes siguientes identifican el formato de datos subyacente de UN ELEMENTO IMFTimedTextTrack. Obtenga el formato de una pista de texto con tiempo llamando a IMFTimedTextTrack::GetDataFormat.
 ms.assetid: 1E6C72AF-7247-406E-8E46-099E122FCA8A
-title: GUID de formato de datos de IMFTimedTextTrack (mfapi. h)
+title: GUID de formato de datos DE LUGARTimedTextTrack (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe36cf54c2670586ecba3752ada4f31253bf0ca8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e21150da901499d8eceb33bc19d5e49d9ef485e758ee53abe594bfb1924f9e0b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119229175"
 ---
-# <a name="imftimedtexttrack-data-format-guids"></a>GUID de formato de datos IMFTimedTextTrack
+# <a name="imftimedtexttrack-data-format-guids"></a>GUID de formato de datos DE LUGARTimedTextTrack
 
-Las constantes siguientes identifican el formato de datos subyacente de un [**IMFTimedTextTrack**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imftimedtexttrack). Obtiene el formato de una pista de texto con hora llamando a [**IMFTimedTextTrack:: GetDataFormat**](/windows/desktop/api/mfmediaengine/nf-mfmediaengine-imftimedtexttrack-getdataformat).
+Las constantes siguientes identifican el formato de datos subyacente de [**un elemento IMFTimedTextTrack**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imftimedtexttrack). Obtenga el formato de una pista de texto con tiempo llamando a [**IMFTimedTextTrack::GetDataFormat**](/windows/desktop/api/mfmediaengine/nf-mfmediaengine-imftimedtexttrack-getdataformat).
 
 <dl> <dt>
 
@@ -22,7 +22,7 @@ Las constantes siguientes identifican el formato de datos subyacente de un [**IM
 
 
 
-La pista usa el formato de lenguaje de marcado de texto (TTML).
+La pista usa el formato de lenguaje de marcado de texto con tiempo (TTML).
 
 
 </dt> </dl> </dd> <dt>
@@ -32,7 +32,7 @@ La pista usa el formato de lenguaje de marcado de texto (TTML).
 
 
 
-La pista usa el formato del Comité de sistemas de televisión avanzado (ATSC).
+La pista usa el formato de Comité de sistemas de televisión avanzados (ATSC).
 
 
 </dt> </dl> </dd> <dt>
@@ -42,7 +42,7 @@ La pista usa el formato del Comité de sistemas de televisión avanzado (ATSC).
 
 
 
-La pista usa el formato de seguimiento de texto de vídeo web (WebVTT).
+La pista usa el formato Web Video Text Tracks (WebVTT).
 
 
 </dt> </dl> </dd> </dl>
@@ -53,7 +53,7 @@ La pista usa el formato de seguimiento de texto de vídeo web (WebVTT).
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Mfapi. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -61,7 +61,7 @@ La pista usa el formato de seguimiento de texto de vídeo web (WebVTT).
 
 <dl> <dt>
 
-[Constantes de Media Foundation](media-foundation-constants.md)
+[Media Foundation constantes](media-foundation-constants.md)
 </dt> </dl>
 
  

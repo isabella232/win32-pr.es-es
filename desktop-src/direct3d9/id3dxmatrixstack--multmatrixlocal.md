@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 509aff4dd21f62033dc1e4672d29aad57445f9ee
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b08a50f6477be6106ce6eaf82c0111f805ed00472259283429e1f638579c91a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093523"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119120819"
 ---
 # <a name="id3dxmatrixstackmultmatrixlocal-method-d3dx9mathh"></a>Método ID3DXMATRIXStack::MultMatrixLocal (D3dx9math.h)
 
@@ -45,7 +45,7 @@ HRESULT MultMatrixLocal(
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Puntero a la [**estructura D3DXMATRIX**](d3dxmatrix.md) que se va a multiplicar con la matriz actual.
+Puntero a la [**estructura D3DXMATRIX**](d3dxmatrix.md) que se va a multiplicar por la matriz actual.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Puntero a la [**estructura D3DXMATRIX**](d3dxmatrix.md) que se va a multiplicar 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Comentarios
 
@@ -79,7 +79,7 @@ Este método no agrega un elemento a la pila, reemplaza la matriz actual por el 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

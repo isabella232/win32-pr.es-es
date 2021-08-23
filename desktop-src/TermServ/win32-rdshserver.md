@@ -1,11 +1,11 @@
 ---
-title: Win32_RDSHServer (clase)
-description: Administra un servidor de host de sesión Escritorio remoto (RDSH).
+title: Win32_RDSHServer clase
+description: Administra un servidor Escritorio remoto de sesión local (RDSH).
 ms.assetid: 2c2840d2-16aa-484a-979b-6dbb1a08bbcf
 ms.tgt_platform: multiple
 keywords:
 - Win32_RDSHServer clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_RDSHServer de clase, se describe
+- Win32_RDSHServer clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -20,16 +20,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6434a4dfe6bc1a79fdaf4576a89ef552cebd5e1c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 066cea4044330ab79122e9346f6f32999202f854245e5508448e40aea3521fe0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359742"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119422605"
 ---
-# <a name="win32_rdshserver-class"></a>\_Clase Win32 RDSHServer
+# <a name="win32_rdshserver-class"></a>Clase RDSHServer de Win32 \_
 
-Administra un servidor de host de sesión Escritorio remoto (RDSH).
+Administra un servidor Escritorio remoto de sesión local (RDSH).
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -55,18 +55,18 @@ La **clase \_ RDSHServer de Win32** tiene estos tipos de miembros:
 
 ### <a name="methods"></a>Métodos
 
-La clase **Win32 \_ RDSHServer** tiene estos métodos.
+La **clase \_ RDSHServer de Win32** tiene estos métodos.
 
 
 
 | Método                                                                          | Descripción                                                                                                                                                                       |
 |:--------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**GetInt32Property**](getint32property-win32-rdshserver.md)                   | Recupera un valor de propiedad de entero de un **objeto \_ RDSHServer de Win32** .<br/>                                                                                                 |
+| [**GetInt32Property**](getint32property-win32-rdshserver.md)                   | Recupera un valor de propiedad entero de un **objeto \_ RDSHServer de Win32.**<br/>                                                                                                 |
 | [**GetPendingStartServerList**](win32-rdshserver-getpendingstartserverlist.md) | Recupera una lista de servidores en espera de inicio.<br/>                                                                                                                           |
-| [**GetStringProperty**](getstringproperty-win32-rdshserver.md)                 | Recupera un valor de propiedad de cadena de un objeto **\_ RDSHServer de Win32** .<br/>                                                                                                   |
-| [**SetInt32Property**](setint32property-win32-rdshserver.md)                   | Actualiza un valor de propiedad de entero de un objeto **\_ RDSHServer de Win32** .<br/>                                                                                                   |
-| [**SetStringProperty**](setstringproperty-win32-rdshserver.md)                 | Actualiza un valor de propiedad de cadena de un objeto **\_ RDSHServer de Win32** .<br/>                                                                                                     |
-| [**TestAndSetState**](win32-rdshserver-testandsetstate.md)                     | Compara el estado actual con el especificado. Si los dos coinciden, el estado se establece en un nuevo valor. Independientemente de la coincidencia, también se devuelve el estado actual.<br/> |
+| [**GetStringProperty**](getstringproperty-win32-rdshserver.md)                 | Recupera un valor de propiedad de cadena de **un objeto \_ RDSHServer de Win32.**<br/>                                                                                                   |
+| [**SetInt32Property**](setint32property-win32-rdshserver.md)                   | Actualiza un valor de propiedad entero de **un objeto \_ RDSHServer de Win32.**<br/>                                                                                                   |
+| [**SetStringProperty**](setstringproperty-win32-rdshserver.md)                 | Actualiza un valor de propiedad de cadena de **un objeto \_ RDSHServer de Win32.**<br/>                                                                                                     |
+| [**TestAndSetState**](win32-rdshserver-testandsetstate.md)                     | Compara el estado actual con el comparador especificado; si los dos coinciden, el estado se establece en un nuevo valor. Independientemente de la coincidencia, también se devuelve el estado actual.<br/> |
 
 
 
@@ -84,13 +84,13 @@ La **clase \_ RDSHServer de Win32** tiene estas propiedades.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [ **opcional**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Obtiene y establece el alias de la colección RDSH a la que se asigna el servidor RDSH.
+Obtiene y establece el alias en la colección RDSH a la que está asignado el servidor RDSH.
 
 </dd> <dt>
 
@@ -100,10 +100,10 @@ Obtiene y establece el alias de la colección RDSH a la que se asigna el servido
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Obtiene y establece el nombre del agente de Conexión a Escritorio remoto (RDCB) que administra el acceso del usuario al servidor RDSH.
+Obtiene y establece el nombre de Conexión a Escritorio remoto Broker (RDCB) que administra el acceso de usuario al servidor RDSH.
 
 </dd> <dt>
 
@@ -113,10 +113,10 @@ Obtiene y establece el nombre del agente de Conexión a Escritorio remoto (RDCB)
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Obtiene y establece el nombre del servidor RDSH.
@@ -126,7 +126,7 @@ Obtiene y establece el nombre del servidor RDSH.
 **ServerState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -135,7 +135,7 @@ Tipo de acceso: solo lectura
 Calificadores: [ **opcional**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Describe el estado del servidor. Cualquier valor distinto del **destino \_ que se ejecuta** (3) está reservado y debe tener en cuenta un estado no válido.
+Describe el estado del servidor. Cualquier valor distinto de **TARGET \_ RUNNING** (3) está reservado y debe considerarse un estado no válido.
 
 Los valores posibles son.
 
@@ -143,40 +143,40 @@ Los valores posibles son.
 
 <span id="TARGET_UNKNOWN"></span><span id="target_unknown"></span>
 
-**Destino \_ de DESCONOCIDO** (1)
+**TARGET \_ UNKNOWN** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="TARGET_RUNNING"></span><span id="target_running"></span>
 
-**Destino \_ de En ejecución** (3)
+**TARGET \_ RUNNING** (3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="TARGET_INVALID"></span><span id="target_invalid"></span>
 
-**Destino \_ de NO válido** (8)
+**TARGET \_ INVALID** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="TARGET_STARTING"></span><span id="target_starting"></span>
 
-**Destino \_ de Inicio** (9)
+**TARGET \_ STARTING** (9)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="TARGET_STOPPING"></span><span id="target_stopping"></span>
 
-**Destino \_ de DETENCIÓN** (10)
+**TARGET \_ STOPPING** (10)
 
 
 </dt> <dd></dd> </dl>
 
-**Windows server 2012 R2 y Windows server 2012:** Esta propiedad no está disponible antes de Windows Server 2016.
+**Windows Server 2012 R2 y Windows Server 2012:** Esta propiedad no está disponible antes de Windows Server 2016.
 
 </dd> </dl>
 
@@ -188,8 +188,8 @@ Los valores posibles son.
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                              |
-| Espacio de nombres<br/>                | RDMs raíz de \\ cimv2 \\<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Rdms \\ cimv2 \\ raíz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -198,7 +198,7 @@ Los valores posibles son.
 
 <dl> <dt>
 
-[Proveedor de servicios de administración de Escritorio remoto](rdms-api-reference.md)
+[Escritorio remoto management Services Provider](rdms-api-reference.md)
 </dt> </dl>
 
  

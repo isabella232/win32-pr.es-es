@@ -1,26 +1,26 @@
 ---
-title: Propiedad HotKeyAltShiftTab de IMsRdpClientAdvancedSettings
-description: Especifica el código de tecla virtual que se va a agregar a ALT para determinar el reemplazo de la tecla de cambio de teclas ALT + MAYÚS + TAB.
+title: Propiedad IMsRdpClientAdvancedSettings HotKeyAltShiftTab
+description: Especifica el código de clave virtual que se agregará a ALT para determinar el reemplazo de la tecla de acceso rápido para ALT+MAYÚS+TAB.
 ms.assetid: da52f2fb-15cc-4d55-b26e-cf5465290889
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad HotKeyAltShiftTab
-- Propiedad HotKeyAltShiftTab Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings, propiedad HotKeyAltShiftTab
-- Propiedad HotKeyAltShiftTab Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings2, propiedad HotKeyAltShiftTab
-- Propiedad HotKeyAltShiftTab Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings3, propiedad HotKeyAltShiftTab
-- Propiedad HotKeyAltShiftTab Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings4, propiedad HotKeyAltShiftTab
-- Propiedad HotKeyAltShiftTab Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad HotKeyAltShiftTab
-- Propiedad HotKeyAltShiftTab Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad HotKeyAltShiftTab
-- Propiedad HotKeyAltShiftTab Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad HotKeyAltShiftTab
-- Propiedad HotKeyAltShiftTab Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad HotKeyAltShiftTab
+- Propiedad HotKeyAltShiftTab Servicios de Escritorio remoto
+- Propiedad HotKeyAltShiftTab Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad HotKeyAltShiftTab
+- Propiedad HotKeyAltShiftTab Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad HotKeyAltShiftTab
+- Propiedad HotKeyAltShiftTab Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad HotKeyAltShiftTab
+- Propiedad HotKeyAltShiftTab Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad HotKeyAltShiftTab
+- Propiedad HotKeyAltShiftTab Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad HotKeyAltShiftTab
+- Propiedad HotKeyAltShiftTab Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad HotKeyAltShiftTab
+- Propiedad HotKeyAltShiftTab Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad HotKeyAltShiftTab
+- Propiedad HotKeyAltShiftTab Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad HotKeyAltShiftTab
 topic_type:
 - apiref
 api_name:
@@ -54,22 +54,22 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9819ddcba3f9cb10450525467eb8accce958c2f0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 80f5c7bee8ce7c805fae1ed0de82b191fb04f253718d8287b5cf9864da7e4567
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119515275"
 ---
-# <a name="imsrdpclientadvancedsettingshotkeyaltshifttab-property"></a>IMsRdpClientAdvancedSettings:: HotKeyAltShiftTab (propiedad)
+# <a name="imsrdpclientadvancedsettingshotkeyaltshifttab-property"></a>Propiedad IMsRdpClientAdvancedSettings::HotKeyAltShiftTab
 
-Especifica el código de tecla virtual que se va a agregar a ALT para determinar el reemplazo de la tecla de cambio de teclas ALT + MAYÚS + TAB.
+Especifica el código de clave virtual que se agregará a ALT para determinar el reemplazo de la tecla de acceso rápido para ALT+MAYÚS+TAB.
 
-Esta propiedad solo es válida cuando la propiedad [**KeyboardHookMode**](imsrdpclientsecuredsettings-keyboardhookmode.md) no está habilitada.
+Esta propiedad solo es válida cuando la [**propiedad KeyboardHookMode**](imsrdpclientsecuredsettings-keyboardhookmode.md) no está habilitada.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -86,21 +86,21 @@ HRESULT get_HotKeyAltShiftTab(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El nuevo código de tecla virtual. **VK \_ NEXT** es el valor predeterminado, con Alt + Av Pág como la secuencia resultante.
+Nuevo código de clave virtual. **VK \_ NEXT** es el valor predeterminado, con ALT+PAGE DOWN como secuencia resultante.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                        |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                  |

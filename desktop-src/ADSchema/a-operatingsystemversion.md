@@ -1,11 +1,11 @@
 ---
-title: Atributo de versión del sistema operativo
-description: La cadena de versión del sistema operativo, por ejemplo, 4,0.
+title: Atributo Operating-System-Version
+description: La cadena de versión del sistema operativo, por ejemplo, 4.0.
 ms.assetid: 54ad009e-4cf9-4aa7-b1a7-3823d96f7b0e
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo de versión del sistema operativo
-- operatingSystemVersion esquema de AD de atributos
+- Esquema de AD del atributo Operating-System-Version
+- Esquema de AD del atributo operatingSystemVersion
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a13aa131a482cad2c36345ddb742e82620d24cd8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d8782bb25fe073e6591e7d9edcac44a80c7255a359c5f6a8a16017325a49f11d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151741"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119442165"
 ---
-# <a name="operating-system-version-attribute"></a>Atributo de versión del sistema operativo
+# <a name="operating-system-version-attribute"></a>Atributo Operating-System-Version
 
-La cadena de versión del sistema operativo, por ejemplo, 4,0.
+La cadena de versión del sistema operativo, por ejemplo, 4.0.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
 | CN                | Versión del sistema operativo                    |
-| Nombre para mostrar de LDAP | operatingSystemVersion                      |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | operatingSystemVersion                      |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.364                      |
-| System-ID-GUID    | 3e978926-8c01-11d0-afda-00c04fd930c9        |
+| System-Id-Guid    | 3e978926-8c01-11d0-afda-00c04fd930c9        |
 | Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -55,13 +55,13 @@ La cadena de versión del sistema operativo, por ejemplo, 4,0.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                       |
+| Id. de vínculo                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
 | System-Only            | False                                                                                    |
-| Tiene un único valor       | True                                                                                     |
+| Es de un solo valor       | True                                                                                     |
 | Está indexado             | False                                                                                    |
 | En el catálogo global      | False                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |
@@ -76,13 +76,13 @@ La cadena de versión del sistema operativo, por ejemplo, 4,0.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                       |
+| Id. de vínculo                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
 | System-Only            | False                                                                                    |
-| Tiene un único valor       | True                                                                                     |
+| Es de un solo valor       | True                                                                                     |
 | Está indexado             | False                                                                                    |
 | En el catálogo global      | False                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |
@@ -97,13 +97,13 @@ La cadena de versión del sistema operativo, por ejemplo, 4,0.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                       |
+| Id. de vínculo                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
 | System-Only            | False                                                                                    |
-| Tiene un único valor       | True                                                                                     |
+| Es de un solo valor       | True                                                                                     |
 | Está indexado             | False                                                                                    |
 | En el catálogo global      | False                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |
@@ -118,13 +118,13 @@ La cadena de versión del sistema operativo, por ejemplo, 4,0.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                       |
+| Id. de vínculo                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
 | System-Only            | False                                                                                    |
-| Tiene un único valor       | True                                                                                     |
+| Es de un solo valor       | True                                                                                     |
 | Está indexado             | False                                                                                    |
 | En el catálogo global      | False                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |
@@ -139,13 +139,13 @@ La cadena de versión del sistema operativo, por ejemplo, 4,0.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                       |
+| Id. de vínculo                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
 | System-Only            | False                                                                                    |
-| Tiene un único valor       | True                                                                                     |
+| Es de un solo valor       | True                                                                                     |
 | Está indexado             | False                                                                                    |
 | En el catálogo global      | False                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |
@@ -160,13 +160,13 @@ La cadena de versión del sistema operativo, por ejemplo, 4,0.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                       |
+| Id. de vínculo                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
 | System-Only            | False                                                                                    |
-| Tiene un único valor       | True                                                                                     |
+| Es de un solo valor       | True                                                                                     |
 | Está indexado             | False                                                                                    |
 | En el catálogo global      | False                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |

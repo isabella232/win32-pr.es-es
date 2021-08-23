@@ -1,180 +1,180 @@
 ---
 title: Diseño de la experiencia de usuario para aplicaciones de escritorio
-description: Una gran aplicación de escritorio es eficaz y, al mismo tiempo, es sencilla. A través de la presentación y presentación de características equilibrada cuidadosamente, puede lograr la eficacia y la simplicidad.
+description: Una excelente aplicación de escritorio es eficaz y, al mismo tiempo, sencilla. Gracias a la selección y presentación de características cuidadosamente equilibradas, puede lograr eficacia y simplicidad.
 ms.assetid: 0039a3ee-95bc-457f-a1a8-6a036ce22fd2
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 74433514f61b37ba1c9941c8134767be5458ebc8
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: a9c191a92ccf6147d37deca191a861220c4a925035bf39c92e7e7d062fa14184
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104361812"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119221744"
 ---
-# <a name="how-to-design-a-great-user-experience-for-desktop-applications"></a>Cómo diseñar una excelente experiencia de usuario para aplicaciones de escritorio
+# <a name="how-to-design-a-great-user-experience-for-desktop-applications"></a>Cómo diseñar una experiencia de usuario excelente para aplicaciones de escritorio
 
 > [!NOTE]
-> Esta guía de diseño se ha creado para Windows 7 y no se ha actualizado para las versiones más recientes de Windows. Gran parte de la guía se sigue aplicando en principio, pero la presentación y los ejemplos no reflejan nuestra [Guía de diseño actual](/windows/uwp/design/).
+> Esta guía de diseño se creó para Windows 7 y no se ha actualizado para las versiones más recientes de Windows. Gran parte de las instrucciones se siguen aplicando en principio, pero la presentación y los ejemplos no reflejan nuestra [guía de diseño actual.](/windows/uwp/design/)
 
-Una gran aplicación de escritorio es eficaz y, al mismo tiempo, es sencilla. A través de la presentación y presentación de características equilibrada cuidadosamente, puede lograr la eficacia y la simplicidad.
+Una excelente aplicación de escritorio es eficaz y, al mismo tiempo, sencilla. Gracias a la selección y presentación de características cuidadosamente equilibradas, puede lograr eficacia y simplicidad.
 
-**Eficaz**
+**Poderoso:**
 
-![captura de pantalla del cuadro de diálogo Ortografía y gramática ](images/powerful-simple-image1.png)
+![captura de pantalla del cuadro de diálogo de ortografía y gramática ](images/powerful-simple-image1.png)
 
 **Eficaz y simple:**
 
 ![captura de pantalla de la lista de posibles revisiones ortográficas ](images/powerful-simple-image2.png)
 
-La aplicación ideal basada en Windows es muy eficaz y sencilla. Por supuesto, ¿quiere que la aplicación sea eficaz y, por supuesto, desea que sea sencilla, pero puede lograr ambos? Existe una tensión natural entre estos objetivos, pero esa tensión está lejos del inconciliador. Puede conseguir potencia y simplicidad mediante una selección y presentación equilibrada de características.
+La aplicación Windows basada en aplicaciones es eficaz y sencilla. Por supuesto, quiere que la aplicación sea eficaz y, por supuesto, quiere que sea sencilla, pero ¿puede lograr ambas cosas? Hay una tensión natural entre estos objetivos, pero esa tensión está lejos de ser irreconciable. Puede lograr eficacia y simplicidad a través de la selección y presentación de características cuidadosamente equilibradas.
 
 ## <a name="what-makes-an-application-powerful"></a>¿Qué hace que una aplicación sea eficaz?
 
-¿Qué significa "potencia" realmente en términos de software? Una aplicación puede considerarse eficaz si está repleto de características, con una gran variedad de funciones en un intento de ser todo lo que todos los usuarios tienen. Un diseño de este tipo no es probable que se realice correctamente porque no es probable que un conjunto de características sin destino cumpla las necesidades de nadie. Este no es el tipo de potencia que estamos después.
+¿Qué significa realmente "power" en términos de software? Una aplicación podría considerarse eficaz si está llena de características, con una gran gama de funcionalidades en un intento de ser todo para todos los usuarios. Es probable que este diseño no sea correcto porque es poco probable que un conjunto de características no objetivo satisfaga las necesidades de cualquiera. Este no es el tipo de potencia que buscamos.
 
 Una aplicación es eficaz cuando tiene la combinación correcta de estas características:
 
--   **Habilitar.** La aplicación satisface las necesidades de los usuarios de destino, lo que les permite realizar tareas que, de otro modo, no podían realizar y alcanzar sus objetivos de manera eficaz.
--   **Eficaz.** La aplicación permite a los usuarios realizar tareas con un nivel de productividad y escalado que no era posible antes.
--   **Versátil.** La aplicación permite a los usuarios realizar una amplia variedad de tareas de forma eficaz en diversas circunstancias.
--   **Directo.** La aplicación parece que está ayudando directamente a los usuarios a lograr sus objetivos, en lugar de tener que hacerlo o requerir pasos innecesarios. Características como accesos directos, acceso al teclado y macros mejoran el sentido de la dirección.
--   **Sobrescriba.** La aplicación permite a los usuarios tener un control completo sobre su trabajo.
--   **Integración.** La aplicación está bien integrada en Microsoft Windows, lo que le permite compartir datos con otras aplicaciones.
--   **Avanzado.** La aplicación tiene características extraordinarias, innovadoras y de última generación que no se encuentran en las soluciones de la competencia.
+-   **Permitiendo.** La aplicación satisface las necesidades de sus usuarios de destino, lo que les permite realizar tareas que de otro modo no podrían realizar y lograr sus objetivos de forma eficaz.
+-   **Eficaz.** La aplicación permite a los usuarios realizar tareas con un nivel de productividad y escala que no era posible antes.
+-   **Versátil.** La aplicación permite a los usuarios realizar una amplia gama de tareas de forma eficaz en una variedad de circunstancias.
+-   **Directa.** La aplicación parece que ayuda directamente a los usuarios a lograr sus objetivos, en lugar de inponerse en el camino o requerir pasos innecesarios. Características como los accesos directos, el acceso al teclado y las macros mejoran la sensación de directness.
+-   **Flexible.** La aplicación permite a los usuarios un control completo y preciso sobre su trabajo.
+-   **Integrado.** La aplicación está bien integrada con Microsoft Windows, lo que le permite compartir datos con otras aplicaciones.
+-   **Avanzado.** La aplicación tiene características excepcionales, innovadoras y de última generación que no se encuentran en soluciones de la competencia.
 
-Algunas de estas características dependen de la percepción del usuario y son relativas a las capacidades actuales de los usuarios. Lo que se considera eficaz puede cambiar con el tiempo, por lo que la característica de búsqueda avanzada de hoy puede ser habitual mañana.
+Algunas de estas características dependen de la percepción del usuario y son relativas a las capacidades actuales de los usuarios. Lo que se considera eficaz puede cambiar con el tiempo, por lo que la característica de búsqueda avanzada de hoy podría ser habitual mañana.
 
 Todas estas características se pueden combinar en nuestra definición de potencia:
 
-**Una aplicación es eficaz cuando permite que los usuarios de destino obtengan todo el potencial de manera eficaz.**
+**Una aplicación es eficaz cuando permite que sus usuarios de destino se den cuenta de todo su potencial de forma eficaz.**
 
-Por lo tanto, la medida más avanzada de potencia es la productividad, no el número de características.
+Por lo tanto, la medida final de la potencia es la productividad, no el número de características.
 
-Los distintos usuarios necesitan ayuda para lograr todo su potencial de maneras diferentes. Lo que está habilitando a algunos usuarios podría perjudicar la versatilidad, la dirección y el control para otras personas. El software bien diseñado debe equilibrar estas características de manera adecuada. Por ejemplo, un sistema de publicación de escritorio diseñado para no profesionales podría usar asistentes para guiar a los usuarios a través de tareas complejas. Estos asistentes permiten a los usuarios de destino realizar tareas que, de otro modo, no podrían llevar a cabo. Por el contrario, un sistema de publicación de escritorio para profesionales puede centrarse en la dirección, la eficacia y el control completo. Para los usuarios de una aplicación de este tipo, los asistentes pueden estar restringidos y frustrados.
+Los distintos usuarios necesitan ayuda para lograr todo su potencial de maneras diferentes. Lo que permite a algunos usuarios dañar la versatilidad, la directez y el control de otros usuarios. El software bien diseñado debe equilibrar estas características correctamente. Por ejemplo, un sistema de publicación de escritorio diseñado para no profesionales podría usar asistentes para recorrer las tareas complejas de los usuarios. Estos asistentes permiten a los usuarios de destino realizar tareas que, de lo contrario, no podrían realizar. Por el contrario, un sistema de publicación de escritorio para profesionales podría centrarse en la directez, la eficacia y el control completo. Para los usuarios de este tipo de aplicación, los asistentes pueden ser limitadores y frustrantes.
 
-**Si solo hace algo...**
+**Si solo hace una cosa...**
 
-Comprenda los objetivos de los usuarios de destino y cree un conjunto de características que les permita conseguir los objetivos de manera productiva.
+Comprender los objetivos de los usuarios de destino y crear un conjunto de características que les permita lograr esos objetivos de forma productiva.
 
-## <a name="what-makes-a-user-experience-simple"></a>¿Qué simplifica la experiencia del usuario?
+## <a name="what-makes-a-user-experience-simple"></a>¿Qué hace que una experiencia de usuario sea sencilla?
 
-Definimos simplicidad de la manera siguiente:
+Definimos la simplicidad de la siguiente manera:
 
-**La simplicidad es la reducción o eliminación de un atributo de un diseño que los usuarios de destino conocen y consideran no esenciales.**
+**La simplicidad es la reducción o eliminación de un atributo de un diseño que los usuarios de destino conocen y consideran no esencial.**
 
-En la práctica, la simplicidad se consigue seleccionando el conjunto de características correcto y presentando las características de la forma correcta. Esto reduce las cosas no esenciales, tanto reales como percibidas.
+En la práctica, la simplicidad se logra mediante la selección del conjunto de características correcto y la presentación de las características de la manera correcta. Esto reduce el valor no esencial, real y percibido.
 
-La simplicidad depende de la percepción de los usuarios. Tenga en cuenta que el efecto de una transmisión automática depende de la perspectiva de un usuario:
+La simplicidad depende de la percepción de los usuarios. Tenga en cuenta cómo el efecto de una transmisión automática depende de la perspectiva de un usuario:
 
--   En el caso del controlador típico (el usuario de destino), una transmisión automática elimina la necesidad de un cambio de engranaje manual y un embrague, por lo que es mucho más fácil impulsar un automóvil. Un cambio de engranaje manual y el embrague no son esenciales para la tarea de conducción, por lo que se eliminan para lograr una simplicidad.
--   En el caso de los controladores de coches de carreras profesionales, el control directo sobre la transmisión es esencial para ser competitivo. Una transmisión automática afecta negativamente al rendimiento del automóvil, por lo que no se considera que resulte más sencilla.
--   Para un mecánico, una transmisión automática es un mecanismo más complejo y, por lo tanto, no es más fácil de reparar o mantener que una transmisión manual. A diferencia del mecánico, el usuario de destino es completamente inconsciente de esta complejidad interna.
+-   Para el controlador típico (el usuario de destino), una transmisión automática elimina la necesidad de un cambio de engranaje manual y un desplazamiento, lo que facilita mucho la conducción de un automóvil. Un cambio de marcha manual y una conducción no son esenciales para la tarea de conducción, por lo que se quitan para lograr simplicidad.
+-   Para un piloto de carreras profesional, tener control directo sobre la transmisión es esencial para ser competitivo. Una transmisión automática afecta negativamente al rendimiento del automóvil, por lo que no se considera que da lugar a simplicidad.
+-   Para una mecánica, una transmisión automática es un mecanismo más complejo y, por tanto, no es más fácil de reparar o mantener que una transmisión manual. A diferencia de la mecánica, el usuario de destino no es consciente de esta complejidad interna.
 
-Aunque los distintos usuarios tienen en cuenta la transmisión automática de manera diferente, se realiza correctamente porque elimina la necesidad de conocimiento, aptitud y esfuerzo inesenciales de sus usuarios de destino. En el caso del controlador típico, la transmisión automática es una excelente característica porque solo funciona.
+Aunque distintos usuarios consideran la transmisión automática de manera diferente, es correcta porque elimina la necesidad de conocimientos, aptitudes y esfuerzos no esenciales de sus usuarios de destino. Para el controlador típico, la transmisión automática es una gran característica porque simplemente funciona.
 
 ### <a name="simplicity-vs-ease-of-use"></a>Simplicidad frente a facilidad de uso
 
-La simplicidad, cuando se aplica correctamente, da lugar a una facilidad de uso. Pero la simplicidad y la facilidad de uso no son los mismos conceptos. La facilidad de uso se consigue cuando los usuarios pueden realizar una tarea correctamente por su cuenta sin dificultad o confusión dentro de un período de tiempo adecuado. Hay muchas maneras de conseguir facilidad de uso y la simplicidad, la reducción de la no esencial, es solo una de ellas.
+La simplicidad, cuando se aplica correctamente, da lugar a facilidad de uso. Pero la simplicidad y la facilidad de uso no son los mismos conceptos. La facilidad de uso se logra cuando los usuarios pueden realizar una tarea correctamente por sí mismos sin dificultades ni confusión en un período de tiempo adecuado. Hay muchas maneras de lograr facilidad de uso y la simplicidad (la reducción de lo no esencial) es solo una de ellas.
 
-Todos los usuarios, con independencia de lo sofisticado, quieren realizar su trabajo con una cantidad mínima de esfuerzos innecesarios. Todos los usuarios, incluso los usuarios avanzados, están especialmente motivados para realizar su trabajo, no para obtener información sobre los equipos o la aplicación.
+Todos los usuarios, independientemente de lo sofisticados que sean, quieren realizar su trabajo con una cantidad mínima de esfuerzo innecesario. Todos los usuarios, incluso los usuarios avanzados, están principalmente motivados para realizar su trabajo, no para obtener información sobre los equipos o la aplicación.
 
-La simplicidad es la forma más eficaz de lograr facilidad de uso y la facilidad de uso es igual que el uso. Las características complejas y difíciles de usar simplemente no se usan. Por el contrario, los diseños simples y elegantes que realizan su funcionamiento correctamente son un placer de usar. Invocan una respuesta emocional positiva.
+La simplicidad es la manera más eficaz de lograr la facilidad de uso y la facilidad de uso es igual a su uso. Las características complejas y difíciles de usar simplemente no se usan. Por el contrario, los diseños sencillos y elegantes que realizan bien su función son una buena opción para su uso. Invocan una respuesta positiva y emocional.
 
-Por ejemplo, considere la compatibilidad con redes inalámbricas en Microsoft Windows XP. Microsoft podría haber agregado un asistente para guiar a los usuarios a través del proceso de configuración. Este enfoque habría dado lugar a una facilidad de uso, pero no a la simplicidad, porque se habría agregado una característica no esencial (el asistente). En su lugar, Microsoft diseñó redes inalámbricas para configurar automáticamente. En última instancia, los usuarios no tienen que preocuparse por los detalles de configuración, siempre y cuando funcionen de forma confiable y segura. Esta combinación de potencia y simplicidad en la tecnología de redes inalámbricas ha llevado a su popularidad y a su adopción rápida.
+Por ejemplo, considere la compatibilidad con redes inalámbricas en Microsoft Windows XP. Microsoft podría haber agregado un asistente para llevar a los usuarios a través del proceso de configuración. Este enfoque habría dado lugar a facilidad de uso, pero no simplicidad, porque se habría agregado una característica no esencial (el asistente). En su lugar, Microsoft diseñó redes inalámbricas para configurarse automáticamente. En última instancia, a los usuarios no les importan los detalles de configuración, siempre que "funcionen" de forma confiable y segura. Esta combinación de potencia y simplicidad en la tecnología de red inalámbrica ha llevado a su popularidad y adopción rápida.
 
-**Si solo hace algo...**
+**Si solo hace una cosa...**
 
-Inicie el proceso de diseño con los diseños más sencillos que hacen el trabajo correctamente.
+Inicie el proceso de diseño con los diseños más sencillos que hacen bien el trabajo.
 
-Si no está satisfecho con el diseño actual, empiece por quitar todos los elementos no esenciales. Observará que lo que queda es normalmente bastante bueno.
+Si no está satisfecho con el diseño actual, empiece por quitar todos los elementos no esenciales. Verá que lo que queda suele ser bastante bueno.
 
-## <a name="obtaining-simplicity-while-maintaining-power"></a>Obtener simplicidad mientras se mantiene la energía
+## <a name="obtaining-simplicity-while-maintaining-power"></a>Obtención de simplicidad al mismo tiempo que se mantiene la eficacia
 
 ### <a name="design-principles"></a>Principios de diseño
 
-Para obtener simplicidad, diseñe siempre lo más probable, no es posible.
+Para obtener simplicidad, diseñe siempre para lo probable, no para lo posible.
 
-El posible
+Lo posible
 
-Las decisiones de diseño basadas en lo que se puede dar a las interfaces de usuario complejas, como el editor del registro, donde el diseño supone que todas las acciones son igualmente posibles y, como resultado, requieren el mismo esfuerzo. Dado que todo es posible, los objetivos del usuario no se tienen en cuenta en las decisiones de diseño.
+Las decisiones de diseño basadas en lo posible conducen a interfaces de usuario complejas como el Editor del Registro, donde el diseño supone que todas las acciones son igualmente posibles y, como resultado, requieren el mismo esfuerzo. Dado que todo es posible, los objetivos del usuario no se tienen en cuenta en las decisiones de diseño.
 
-Lo más probable
+El probable
 
-Las decisiones de diseño se basan en el posible liderazgo en soluciones simplificadas basadas en tareas y de objetivos, donde los escenarios probables reciben el foco y requieren un esfuerzo mínimo.
+Diseñe decisiones basadas en el posible resultado de soluciones simplificadas, basadas en objetivos y tareas, donde los escenarios probables reciben el foco y requieren un esfuerzo mínimo para realizar.
 
-El principio de diseño de simplicidad
+Principio de diseño de simplicidad
 
-**Para obtener simplicidad, céntrese en lo que es probable; reduzca, oculte o quite lo que es improbable; y elimine lo que es imposible.**
+**Para obtener simplicidad, céntrate en lo que es probable; reducir, ocultar o quitar lo que es poco probable; y eliminar lo que es imposible.**
 
-Lo que hacen los usuarios es mucho más relevante para el diseño que lo que podrían hacer.
+Lo que harán los usuarios es mucho más importante para el diseño que lo que podrían hacer.
 
 ### <a name="design-techniques"></a>Técnicas de diseño
 
-Para obtener simplicidad mientras se mantiene la energía, elija el **conjunto correcto de características**, busque las características **en los lugares correctos** y **reduzca el esfuerzo** para usarlas. En esta sección se proporcionan algunas técnicas comunes para lograr estos objetivos.
+Para obtener simplicidad mientras se mantiene la potencia, elija el conjunto adecuado de características **,** busque las características en los lugares adecuados y **reduzca** el esfuerzo para usarlas. En esta sección se den algunas técnicas comunes para lograr estos objetivos.
 
-Elección del conjunto de características correcto
+Elección del conjunto de características adecuado
 
-"Se consigue la perfección, no cuando no hay nada más que agregar,
+"Se logra la insondez, no cuando no hay nada más que agregar,
 
-sin embargo, cuando no queda nada en salir ". : Antoine de Saint-Exupery
+pero cuando no queda nada que quitar". —Loba de Saint-Exupery
 
-Las siguientes técnicas de diseño proporcionan a los usuarios las características que necesitan a la vez que logran simplicidad a través de la reducción o eliminación reales:
+Las siguientes técnicas de diseño dan a los usuarios las características que necesitan a la vez que logran la simplicidad mediante la reducción o eliminación reales:
 
--   **Determinar las características que necesitan los usuarios.** Comprenda las necesidades de los usuarios a través del objetivo, el escenario y el análisis de tareas. Determine un conjunto de características que se den cuenta de estos objetivos.
--   **Quite los elementos innecesarios.** Quitar los elementos que no es probable que se usen o que tengan alternativas preferibles.
--   **Quite la redundancia innecesaria.** Puede haber varias maneras eficaces de realizar una tarea. Para lograr simplicidad, tome la decisión difícil y elija la que mejor se adapte a los usuarios de destino en lugar de proporcionar todos ellos y elegir una opción.
--   **Haga que "simplemente funcione" automáticamente.** El elemento es necesario, pero no se requiere ninguna interacción del usuario para que funcione, ya que hay un comportamiento o una configuración predeterminados aceptables. Para conseguir una simplicidad, haga que funcione automáticamente y que lo oculte del usuario por completo, o reduzca la exposición de forma significativa.
+-   **Determine las características que necesitan los usuarios.** Comprenda las necesidades de los usuarios mediante el análisis de objetivos, escenarios y tareas. Determine un conjunto de características que se ajusten a estos objetivos.
+-   **Quitar elementos innecesarios.** Quite los elementos que no es probable que se utilicen o que tengan alternativas preferibles.
+-   **Quite la redundancia innecesaria.** Puede haber varias maneras eficaces de realizar una tarea. Para lograr la simplicidad, tome la decisión más difícil y elija la mejor para los usuarios de destino en lugar de proporcionarlas todas y hacer que la elección sea una opción.
+-   **Haga que "funcione" automáticamente.** El elemento es necesario, pero cualquier interacción del usuario para que funcione no se debe a que hay un comportamiento o una configuración predeterminados aceptables. Para lograr la simplicidad, haga que funcione automáticamente y oculte al usuario por completo o reduzca significativamente su exposición.
 
-Optimizar la presentación
+Secuenciación de la presentación
 
-"La capacidad de simplificar los medios para eliminar los innecesarios
+"La capacidad de simplificar significa eliminar lo innecesario
 
-para que el necesario pueda hablar ". — Hans Hofmann
+para que lo necesario pueda hablar". —HansMann
 
-Utilice las siguientes técnicas de diseño para conservar la energía, a la vez que consigue simplicidad a través de la percepción de reducción o eliminación:
+Use las siguientes técnicas de diseño para conservar la potencia, a la vez que logra la simplicidad a través de la percepción de reducción o eliminación:
 
--   **Combine lo que se debe combinar.** Coloque las características esenciales que admiten una tarea conjuntamente para que una tarea pueda realizarse en un solo lugar. Los pasos de la tarea deben tener un flujo unificado y optimizado. Divida las tareas complejas en un conjunto de pasos sencillos y claros para que el lugar "uno" pueda constar de varias superficies de la interfaz de usuario, como un asistente.
--   **Separe lo que se debe separar.** No todo se puede presentar en un solo lugar, por lo que siempre hay límites claros y elegidos. Haga que las características que admiten los escenarios principales sean esenciales y obvios, y oculten la funcionalidad opcional o conviertan en periféricos. Separe las tareas individuales y proporcione vínculos a las tareas relacionadas. Por ejemplo, las tareas relacionadas con la manipulación de fotografías deben estar claramente separadas de las tareas relacionadas con la administración de colecciones de fotografías, pero deben ser accesibles fácilmente entre sí.
--   **Elimine lo que se puede eliminar.** Realice una copia impresa del diseño y resalte los elementos que se usan para realizar las tareas más importantes. Incluso resaltar las palabras individuales en el texto de la interfaz de usuario que comunican información útil. Ahora, revise lo que no está resaltado y considere la posibilidad de quitarlo del diseño. Si quita el elemento, ¿ocurrirá algo mal? Si no es así, quítelo.
--   La coherencia, la capacidad de configurabilidad y la generalización suelen ser cualidades deseables, pero pueden dar lugar a una complejidad innecesaria. Revise el diseño para ver los esfuerzos incoherentes en cuanto a coherencia (como el uso de texto redundante), la generalización (por ejemplo, tener un número indeterminado de zonas horarias cuando dos es suficiente) y la capacidad de configurar (por ejemplo, las opciones que los usuarios no pueden cambiar) y eliminar lo que se puede eliminar.
--   **Coloque los elementos en el lugar correcto.** Dentro de una ventana, la ubicación de un elemento debe seguir su utilidad. Los controles, las instrucciones y las explicaciones esenciales deben estar en contexto en orden lógico. Si se necesitan más opciones, se deben exponer en contexto haciendo clic en un botón de contenido adicional o mecanismo similar. Si se necesita más información, muestre un recuadro informativo al mantener el mouse. Coloque tareas, opciones y información de ayuda menos importantes fuera del flujo principal en una ventana o página independiente. La técnica de mostrar detalles adicionales según sea necesario se denomina divulgación progresiva.
--   **Use combinaciones de alto nivel significativas.** A menudo es más sencillo y más escalable seleccionar y manipular los grupos de elementos relacionados que los elementos individuales. Entre los ejemplos de combinaciones de alto nivel se incluyen carpetas, temas, estilos y grupos de usuarios. Estas combinaciones a menudo se asignan a un objetivo de usuario o a una intención que no es aparente de los elementos individuales. Por ejemplo, la intención del esquema de color negro contraste alto es mucho más aparente que el de un fondo de ventana negro.
--   **Seleccione los controles adecuados.** Los elementos de diseño los incluyen los controles que se usan para representarlos, de modo que la selección del control correcto es crucial para una presentación eficaz. Por ejemplo, el cuadro de selección de fuente utilizado por Microsoft Word muestra una vista previa de la fuente, así como las fuentes usadas más recientemente. Del mismo modo, la forma en que Word muestra posibles errores ortográficos y gramaticales en contexto es mucho más sencilla que la alternativa del cuadro de diálogo, como se muestra al principio de este artículo.
+-   **Combine lo que se debe combinar.** Coloque las características esenciales que admiten una tarea conjuntamente para que se pueda realizar una tarea en un solo lugar. Los pasos de la tarea deben tener un flujo unificado y optimizado. Dividir tareas complejas en un conjunto de pasos sencillos y claros, para que "uno" pueda constar de varias superficies de interfaz de usuario, como un asistente.
+-   **Separe lo que se debe separar.** No todo se puede presentar en un solo lugar, por lo que siempre hay límites claros y bien elegidos. Haga que las características que admiten escenarios principales son centrales y obvias, y ocultan la funcionalidad opcional o la convierten en periférico. Separe las tareas individuales y proporcione vínculos a tareas relacionadas. Por ejemplo, las tareas relacionadas con la manipulación de fotos deben estar claramente separadas de las tareas relacionadas con la administración de colecciones de fotos, pero deben ser fácilmente accesibles entre sí.
+-   **Elimine lo que se puede eliminar.** Realice una impresión del diseño y resalte los elementos usados para realizar las tareas más importantes. Incluso resalte las palabras individuales en el texto de la interfaz de usuario que comunican información útil. Ahora revise lo que no está resaltado y considere la posibilidad de quitarlo del diseño. Si quita el elemento, ¿ocurriría algo malo? Si no es así, quítelo.
+-   La coherencia, la configuración y la generalización suelen ser calidades deseables, pero pueden dar lugar a una complejidad innecesaria. Revise el diseño de los esfuerzos equivocados en coherencia (por ejemplo, tener texto redundante), generalización (por ejemplo, tener cualquier número de zonas horarias cuando dos son suficientes) y capacidad de configuración (por ejemplo, opciones que los usuarios no es probable que cambien) y eliminar lo que se puede eliminar.
+-   **Coloque los elementos en el lugar correcto.** Dentro de una ventana, la ubicación de un elemento debe seguir su utilidad. Los controles, instrucciones y explicaciones esenciales deben estar en contexto en orden lógico. Si se necesitan más opciones, expongalas en contexto haciendo clic en un botón de contenido adicional o un mecanismo similar. Si se necesita más información, muestre una información sobre cómo mantener el mouse sobre el mouse. Coloque tareas, opciones e información de Ayuda menos importantes fuera del flujo principal en una ventana o página independientes. La técnica de mostrar detalles adicionales según sea necesario se denomina divulgación progresiva.
+-   **Usar combinaciones significativas de alto nivel.** A menudo es más sencillo y escalable seleccionar y manipular grupos de elementos relacionados que elementos individuales. Entre los ejemplos de combinaciones de alto nivel se incluyen carpetas, temas, estilos y grupos de usuarios. Estas combinaciones a menudo se asignan a un objetivo o intención del usuario que no es evidente a partir de los elementos individuales. Por ejemplo, la intención detrás del contraste alto de color negro es mucho más evidente que la de un fondo de ventana negra.
+-   **Seleccione los controles correctos.** Los elementos de diseño se representan mediante los controles que se usan para representarlos, por lo que la selección del control correcto es fundamental para una presentación eficaz. Por ejemplo, el cuadro de selección de fuentes usado por Microsoft Word muestra una vista previa de la fuente, así como las fuentes usadas más recientemente. De forma similar, la forma en que Word muestra posibles errores ortográficos y gramaticales en su lugar es mucho más sencilla que la alternativa del cuadro de diálogo, como se muestra al principio de este artículo.
 
-Reducción del trabajo
+Reducción del esfuerzo
 
-"Las cosas simples deben ser simples.
+"Las cosas simples deben ser sencillas.
 
-Deberían ser posibles cosas complejas ". — Alan Kay
+Deben ser posibles cosas complejas". —Alan Kay
 
-Las siguientes técnicas de diseño provocan un esfuerzo reducido para los usuarios:
+Las siguientes técnicas de diseño reducen el esfuerzo de los usuarios:
 
--   **Hacer que las tareas sean detectables y visibles.** Todas las tareas, pero especialmente las frecuentes, se deben poder detectar fácilmente dentro de la interfaz de usuario. Los pasos necesarios para realizar tareas deben ser visibles y no deben depender de memorización.
--   **Presente tareas en el dominio del usuario.** El software complejo requiere que los usuarios asignen sus problemas a la tecnología. Un software sencillo realiza esa asignación para ellos presentando lo que es natural. Por ejemplo, una característica de reducción de ojos rojos se asigna directamente al espacio de problemas y no requiere que los usuarios piensen en términos de detalles como tonos y degradados.
--   **Coloque el conocimiento del dominio en el programa.** No es necesario que los usuarios tengan acceso a información externa para usar la aplicación correctamente. El conocimiento del dominio puede abarcar desde complejos datos y algoritmos para que no se limite a borrar qué tipo de entrada es válido.
--   **Usar texto que los usuarios entienden.** El texto bien diseñado es crucial para la comunicación eficaz con los usuarios. Use los conceptos y los términos que conozcan los usuarios. Explique completamente lo que se pregunta en lenguaje sencillo para que los usuarios puedan tomar decisiones inteligentes y fundamentadas.
--   **Use los valores predeterminados seguros, seguros y probables.** Si un valor de configuración tiene un valor que se aplica a la mayoría de los usuarios en la mayoría de los casos, y esa configuración es segura y segura, úsela como valor predeterminado. Haga que los usuarios especifiquen valores solo cuando sea necesario.
--   **Usar restricciones.** Si hay muchas maneras de realizar una tarea, pero solo algunas son correctas, restrinja la tarea a los métodos correctos. No se debe permitir que los usuarios puedan evitar errores de forma fácil.
+-   **Hacer que las tareas sean reconocibles y visibles.** Todas las tareas, pero especialmente las tareas frecuentes, deben poder detectarse fácilmente dentro de la interfaz de usuario. Los pasos necesarios para realizar tareas deben ser visibles y no deben basarse en la memoria.
+-   **Presentar tareas en el dominio del usuario.** El software complejo requiere que los usuarios asignen sus problemas a la tecnología. El software simple hace esa asignación para ellos mediante la presentación de lo que es natural. Por ejemplo, una característica de reducción de ojos rojos se asigna directamente al espacio con problemas y no requiere que los usuarios piensen en términos de detalles como matiz y degradados.
+-   **Coloque el conocimiento del dominio en el programa.** No es necesario que los usuarios accedan a información externa para usar la aplicación correctamente. El conocimiento del dominio puede abarcar desde algoritmos y datos complejos hasta simplemente dejar claro qué tipo de entrada es válido.
+-   **Use el texto que los usuarios entiendan.** El texto bien diseñado es fundamental para una comunicación eficaz con los usuarios. Use conceptos y términos familiares para los usuarios. Explique completamente lo que se pide en lenguaje sin formato para que los usuarios puedan tomar decisiones inteligentes e informadas.
+-   **Use valores predeterminados seguros, seguros y probables.** Si una configuración tiene un valor que se aplica a la mayoría de los usuarios en la mayoría de las circunstancias y esa configuración es segura y segura, úsela como valor predeterminado. Haga que los usuarios especifiquen valores solo cuando sea necesario.
+-   **Use restricciones.** Si hay muchas maneras de realizar una tarea, pero solo algunas son correctas, restrinja la tarea a esas maneras correctas. No se debe permitir que los usuarios realicen errores fácilmente prevenibles.
 
 ### <a name="simplicity-does-not-mean-simplistic"></a>La simplicidad no significa simplista
 
-"Todo lo que se debe hacer es lo más sencillo posible,
+"Todo debe ser lo más sencillo posible,
 
-pero no más simple ". — Albert Einstein
+pero no es más sencillo". —Ya sea Asíns
 
-Creemos que la simplicidad es fundamental para una experiencia de usuario eficaz y conveniente, pero siempre es posible tomar una buena cosa demasiado lejos. La esencia de simplicidad es la reducción o eliminación de la innecesaria. La eliminación de la esencial solo genera un diseño deficiente. Si su "simplificación" da lugar a que los usuarios se sienten frustrados, se confunden, desconfíen o no puedan completar las tareas correctamente, ha quitado demasiado.
+Creemos que la simplicidad es fundamental para una experiencia de usuario eficaz y deseable, pero siempre es posible llevar algo bueno demasiado lejos. La esencia de la simplicidad es la reducción o eliminación de lo no esencial. La eliminación de lo esencial simplemente produce un diseño deficiente. Si la "simplificación" provoca que los usuarios se sientan frustrados, confusos, desconfiados o no puedan completar las tareas correctamente, ha quitado demasiado.
 
 ### <a name="simplicity-does-mean-more-effort-for-you"></a>La simplicidad implica más esfuerzo
 
-"Solo he hecho que esta carta sea más larga porque tengo
+"Solo he hecho esta letra más tiempo porque
 
-no es el tiempo para que sea más corto. " — Blaise Pascal
+no es el momento de que sea más corto". —Blaise Pascal
 
-Obtener simplicidad a la vez que se conserva la energía a menudo requiere una importante complejidad interna. Normalmente, es más fácil diseñar software que exponga todo el establecimiento de tecnología que el diseño de uno que lo oculte; esto último requiere una excelente comprensión de los usuarios de destino y sus objetivos. Quitar una característica requiere disciplina, al igual que la decisión de agregar esa característica interesante que realmente no es práctica. La simplicidad requiere que se realicen elecciones de diseño duro en lugar de que todo sea configurable. El software complejo suele ser el resultado de una idea equivocada sobre los usuarios: que contengan características no utilizadas o características demasiado complejas que no puedan comprender.
+La obtención de simplicidad a la vez que se conserva la potencia a menudo requiere una complejidad interna considerable. Normalmente es más fácil diseñar software que expone toda la tecnología que diseñar uno que lo oculte; este último requiere una excelente comprensión de los usuarios de destino y sus objetivos. La eliminación de una característica requiere disciplina, al igual que decidir no agregar esa característica interesante que realmente no es práctica. La simplicidad requiere la toma de decisiones de diseño duro en lugar de hacer que todo sea configurable. El software complejo suele ser el resultado de una idea errónea sobre los usuarios: que valoran las características no utilizadas o las características demasiado complejas que no pueden entender.
 
-## <a name="powerful-and-simple"></a>Eficaz y simple
+## <a name="powerful-and-simple"></a>Eficaz y sencillo
 
-La potencia es la posibilidad de habilitar a los usuarios y hacerlo productivos. La simplicidad consiste en quitar las características no esenciales y presentarlas de la manera correcta. Al comprender los usuarios de destino y lograr el equilibrio adecuado entre características y presentación, puede diseñar aplicaciones basadas en Windows que hagan ambas cosas.
+La capacidad es permitir a los usuarios y hacer que sean productivos. La simplicidad se centra en quitar las características no esenciales y presentar las correctamente. Al comprender a los usuarios de destino y lograr el equilibrio adecuado de características y presentación, puede diseñar aplicaciones basadas en Windows que hacen ambas cosas.
 
  
 

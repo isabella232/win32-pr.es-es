@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TB_GETIMAGELISTCOUNT (commctrl. h)
+title: TB_GETIMAGELISTCOUNT mensaje (Commctrl.h)
 description: Obtiene el número de listas de imágenes asociadas a la barra de herramientas.
 ms.assetid: ecabbecf-dfd1-4a34-b03b-d6137e852021
 keywords:
-- TB_GETIMAGELISTCOUNT controles de mensajes de Windows
+- TB_GETIMAGELISTCOUNT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ebdd520c2eba063b85be860a77791bb364650eab
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6fa28b951d5a886529cef8c263ddba34043f624974109264d279cd1264b76df0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104421977"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078359"
 ---
-# <a name="tb_getimagelistcount-message"></a>\_Mensaje GETIMAGELISTCOUNT TB
+# <a name="tb_getimagelistcount-message"></a>Mensaje \_ GETIMAGELISTCOUNT de TB
 
 Obtiene el número de listas de imágenes asociadas a la barra de herramientas.
 
@@ -43,11 +43,11 @@ Devuelve el número de listas de imágenes.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

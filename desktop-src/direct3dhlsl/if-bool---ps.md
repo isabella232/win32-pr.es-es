@@ -1,5 +1,5 @@
 ---
-title: Si es bool-PS
+title: if bool - ps
 description: Inicio de un bloque if.
 ms.assetid: cff53072-1c73-4cf8-9ecd-11032a9c4bbb
 ms.topic: reference
@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 92c3158a09aeb871ef367133c07278b0f3b87390
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 611ec04a5c3a53bbb8c6c35380bd0d9f824dc697a7d27a3656b262d885fb4eac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103784889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119457515"
 ---
-# <a name="if-bool---ps"></a>Si es bool-PS
+# <a name="if-bool---ps"></a>if bool - ps
 
 Inicio de un bloque if.
 
@@ -24,40 +24,40 @@ Inicio de un bloque if.
 
 
 
-| Si es bool |
+| if bool |
 |---------|
 
 
 
- 
+ 
 
 Donde:
 
--   bool es un número de registro booleano (booleano). Vea [registro booleano constante](dx9-graphics-reference-asm-ps-registers-constant-boolean.md).
+-   bool es un número de registro bool (booleano). Vea [Registro booleano constante.](dx9-graphics-reference-asm-ps-registers-constant-boolean.md)
 
 ## <a name="remarks"></a>Observaciones
 
 
 
-| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
-| Si es bool               |      |      |      |      |      | x    | x     | x    | x     |
+| if bool               |      |      |      |      |      | x    | x     | x    | x     |
 
 
 
- 
+ 
 
-Si el registro de valor booleano de origen en la instrucción if es true, se ejecuta el código incluido entre la instrucción if y el [endif-PS](endif---ps.md) correspondiente, o bien el [PS](else---ps.md) . De lo contrario, el código incluido en el bloque else-PS... se ejecutan las instrucciones endif-PS. Esta instrucción usa una ranura de instrucción.
+Si el registro booleano de origen en la instrucción if es true, se ejecuta el código incluido en la instrucción if y la instrucción [endif](endif---ps.md) correspondiente - ps u otra cosa [- ps.](else---ps.md) De lo contrario, el código incluido por el otro : ps... endif: se ejecutan las instrucciones ps. Esta instrucción consume una ranura de instrucciones.
 
 Un bloque if se puede anidar.
 
-Un bloque If no puede ocupar un bloque de bucle.
+Un bloque if no puede bloquear un bloque de bucle.
 
-Un bloque if puede ir seguido de un bloque de instrucciones y/o una instrucción [else-PS](else---ps.md) , y/o una instrucción [endif-PS](endif---ps.md) .
+Un bloque if puede ir seguido de un bloque de instrucciones o de otra instrucción [ps](else---ps.md) o [una instrucción endif - ps.](endif---ps.md)
 
 ## <a name="example"></a>Ejemplo
 
-Esta instrucción proporciona el control de flujo estático condicional.
+Esta instrucción proporciona control de flujo estático condicional.
 
 
 ```
@@ -79,15 +79,15 @@ endif
 [Instrucciones del sombreador de píxeles](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> <dt>
 
-[Else-PS](else---ps.md)
+[else: ps](else---ps.md)
 </dt> <dt>
 
-[endif-PS](endif---ps.md)
+[endif: ps](endif---ps.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

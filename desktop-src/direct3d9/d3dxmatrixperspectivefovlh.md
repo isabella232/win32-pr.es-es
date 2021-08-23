@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: eec478fec30567fbf301054ddfa60f1689bfee8e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: cc530d4e0d977bac7df89f040d63552a4f0ca852c4e04ba0724f408daef10829
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119122895"
 ---
 # <a name="d3dxmatrixperspectivefovlh-function-d3dx9mathh"></a>Función D3DXMatrixPerspectiveFovLH (D3dx9math.h)
 
@@ -93,11 +93,11 @@ Valor Z del plano de vista lejana.
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntero a una [**estructura D3DXMATRIX**](d3dxmatrix.md) que es una matriz de proyección de perspectiva con la mano izquierda.
+Puntero a una [**estructura D3DXMATRIX**](d3dxmatrix.md) que es una matriz de proyección de perspectiva a la izquierda.
 
 ## <a name="remarks"></a>Comentarios
 
-El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De este modo, la función **D3DXMatrixPerspectiveFovLH** se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la función **D3DXMatrixPerspectiveFovLH** se puede usar como parámetro para otra función.
 
 Para cambiar el eje de relación de aspecto, use la fórmula de cálculo: fovy = 2 * math.atan(math.tan(fovy * 0.5) / aspect). Como alternativa, agregue variables de relación de aspecto X e Y en la estructura para escalar el espacio de vista vertical: fovy = 2 * math.atan(math.tan(fovy * 0.5) / aspectY), aspect = aspectX * aspect Y.
 
@@ -128,7 +128,7 @@ xScale = yScale / aspect ratio
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,11 +1,11 @@
 ---
-title: Método Modify de la clase MicrosoftDNS_WINSRType
-description: El método Modify actualiza un registro de recursos de búsqueda inversa de WINS (WINSr).
+title: Método Modify de la MicrosoftDNS_WINSRType clase
+description: El método Modify actualiza un registro de recursos wins reverse look up (WINSR).
 ms.assetid: 28be0045-5b0d-4434-a2a9-b56191f1e213
 keywords:
-- Modificar DNS de método
-- Modificar el método DNS, MicrosoftDNS_WINSRType clase
-- MicrosoftDNS_WINSRType de clase DNS, Modify (método)
+- Modificación del dns del método
+- Modificar método DNS , MicrosoftDNS_WINSRType clase
+- MicrosoftDNS_WINSRType clase DNS , Método Modify
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e02d89c3cd191262136035f9006853e2f1a7f7dc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9db7865110b0e79642dc91671094c06dfbd10e07cd89684dab58623a9456cca9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151037"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119076669"
 ---
-# <a name="modify-method-of-the-microsoftdns_winsrtype-class"></a>Método Modify de la \_ clase MicrosoftDNS WINSRType
+# <a name="modify-method-of-the-microsoftdns_winsrtype-class"></a>Método Modify de la clase WINSRType de MicrosoftDNS \_
 
-El método **Modify** actualiza un registro de recursos de búsqueda inversa de WINS (WINSR).
+El **método Modify** actualiza un registro de recursos WINS Reverse Look up (WINSR).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ void Modify(
 
 <dl> <dt>
 
-*TTL* \[ de en, opcional\]
+*TTL* \[ en, opcional\]
 </dt> <dd>
 
 Tiempo, en segundos, que un solucionador DNS puede almacenar en caché el RR.
@@ -57,35 +57,35 @@ Tiempo, en segundos, que un solucionador DNS puede almacenar en caché el RR.
 *MappingFlag* \[ en, opcional\]
 </dt> <dd>
 
-Marca de asignación de WINSr que especifica si el registro debe incluirse en la replicación de zona. Puede tener solo dos valores: 0x80000000 y 0x00010000 correspondientes a las marcas de replicación y no replicación (registro local), respectivamente.
+Marca de asignación WINSR que especifica si el registro debe incluirse en la replicación de zona. Puede tener solo dos valores: 0x80000000 y 0x00010000 correspondientes a las marcas de replicación y sin replicación (registro local), respectivamente.
 
 </dd> <dt>
 
-*Tiempodeesperadebúsqueda* \[ en, opcional\]
+*LookupTimeout* \[ en, opcional\]
 </dt> <dd>
 
-Tiempo de espera, en segundos, para un servidor DNS que usa la búsqueda inversa de WINS.
+Tiempo de espera, en segundos, para un servidor DNS que usa WINS Reverse Look up.
 
 </dd> <dt>
 
 *CacheTimeout* \[ en, opcional\]
 </dt> <dd>
 
-Tiempo, en segundos, que un servidor DNS que usa la búsqueda WINS puede almacenar en caché la respuesta del servidor WINS.
+El tiempo, en segundos, un servidor DNS que usa WINS Look up puede almacenar en caché la respuesta del servidor WINS.
 
 </dd> <dt>
 
 *ResultDomain* \[ en, opcional\]
 </dt> <dd>
 
-Nombre de dominio que se va a anexar a los nombres NetBIOS devueltos.
+Nombre de dominio que se anexará a los nombres NetBIOS devueltos.
 
 </dd> <dt>
 
-*RR* \[ out, Ref\]
+*RR* \[ out, ref\]
 </dt> <dd>
 
-Referencia al nuevo objeto.
+Referencia al nuevo objeto .
 
 </dd> </dl>
 
@@ -93,20 +93,20 @@ Referencia al nuevo objeto.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los parámetros no especificados se dejan sin cambios en el registro modificado.
+Cualquier parámetro no especificado se deja sin modificar en el registro modificado.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Espacio de nombres<br/>                | \\MicrosoftDNS raíz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -117,10 +117,10 @@ Los parámetros no especificados se dejan sin cambios en el registro modificado.
 [**MicrosoftDNS \_ WINSRType**](microsoftdns-winsrtype.md)
 </dt> <dt>
 
-[**Método CreateInstanceFromPropertyData de la \_ clase MicrosoftDNS WINSRType**](microsoftdns-winsrtype-createinstancefrompropertydata.md)
+[**Método CreateInstanceFromPropertyData de la clase \_ WINSRType de MicrosoftDNS**](microsoftdns-winsrtype-createinstancefrompropertydata.md)
 </dt> <dt>
 
-[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
+[**ResourceRecord de MicrosoftDNS \_**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

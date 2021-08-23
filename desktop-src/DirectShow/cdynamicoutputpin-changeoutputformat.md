@@ -1,7 +1,7 @@
 ---
-description: El método ChangeOutputFormat cambia dinámicamente el tipo de medio para la conexión y proporciona información de nuevo segmento.
+description: El método ChangeOutputFormat cambia dinámicamente el tipo de medio para la conexión y proporciona información de segmento nuevo.
 ms.assetid: d1204ca0-a489-48a0-8fe5-3ade04f51c93
-title: Método CDynamicOutputPin. ChangeOutputFormat (Amfilter. h)
+title: Método CDynamicOutputPin.ChangeOutputFormat (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 57421b2fd9624d9798037151a5656343e386a497
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 534d588bc1633770c35b0e0edbc2079ed8f7ab5035d3a8d2ff181042d26fdb3f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671756"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074279"
 ---
-# <a name="cdynamicoutputpinchangeoutputformat-method"></a>CDynamicOutputPin. ChangeOutputFormat, método
+# <a name="cdynamicoutputpinchangeoutputformat-method"></a>Método CDynamicOutputPin.ChangeOutputFormat
 
-El `ChangeOutputFormat` método cambia dinámicamente el tipo de medio para la conexión y proporciona información de nuevo segmento. El cambio puede producirse mientras se ejecuta el gráfico de filtros. Una vez que se llama a este método, no se pueden entregar los ejemplos con el tipo de medio anterior. El llamador debe asegurarse de que no haya ejemplos antiguos pendientes.
+El `ChangeOutputFormat` método cambia dinámicamente el tipo de medio para la conexión y proporciona información de segmento nuevo. El cambio puede producirse mientras se ejecuta el gráfico de filtros. Una vez que se llama a este método, no se pueden entregar ejemplos con el tipo de medio anterior. El autor de la llamada debe asegurarse de que no hay ninguna muestra antigua pendiente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,10 +45,10 @@ HRESULT ChangeOutputFormat(
 
 <dl> <dt>
 
-*p.p.* 
+*Pmt* 
 </dt> <dd>
 
-Puntero a una estructura de [**\_ \_ tipo de medio am**](/windows/win32/api/strmif/ns-strmif-am_media_type) que especifica el tipo de medio.
+Puntero a una [**estructura \_ AM MEDIA \_ TYPE**](/windows/win32/api/strmif/ns-strmif-am_media_type) que especifica el tipo de medio.
 
 </dd> <dt>
 
@@ -62,7 +62,7 @@ Hora de inicio del segmento.
 *tSegmentStop* 
 </dt> <dd>
 
-Hora de detención del segmento.
+Hora de detenerse del segmento.
 
 </dd> <dt>
 
@@ -75,25 +75,25 @@ Velocidad de segmento.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Entre los valores posibles se incluyen los que se muestran en la tabla siguiente.
+Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran en la tabla siguiente.
 
 
 
 | Código devuelto                                                                                           | Descripción                                                                                                                              |
 |-------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>                  | Correcto.<br/>                                                                                                                      |
-| <dl> <dt>**E \_ FAIL**</dt> </dl>                | Error. Es posible que el filtro propietario no llamara a [**CDynamicOutputPin:: SetConfigInfo**](cdynamicoutputpin-setconfiginfo.md).<br/> |
-| <dl> <dt>**VFW \_ E \_ no \_ conectada**</dt> </dl> | El PIN no está conectado.<br/>                                                                                                     |
+| <dl> <dt>**S \_ OK**</dt> </dl>                  | Correcto.<br/>                                                                                                                      |
+| <dl> <dt>**E \_ FAIL**</dt> </dl>                | Error. Posiblemente, el filtro propietario no llamó [**a CDynamicOutputPin::SetConfigInfo**](cdynamicoutputpin-setconfiginfo.md).<br/> |
+| <dl> <dt>**VFW \_ E \_ NO \_ CONECTADO**</dt> </dl> | El pin no está conectado.<br/>                                                                                                     |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método cambia el tipo de formato mientras se está ejecutando el filtro. Si el PIN de bajada acepta el nuevo formato, no es necesario volver a conectar. De lo contrario, el método intenta volver a conectar el código PIN. Si el método cambia el formato correctamente, entrega la nueva información del segmento. Este método llama al método [**CDynamicOutputPin:: ChangeMediaType**](cdynamicoutputpin-changemediatype.md) para realizar el cambio de formato.
+Este método cambia el tipo de formato mientras se ejecuta el filtro. Si la marca de nivel inferior acepta el nuevo formato, no es necesaria ninguna reconexión. De lo contrario, el método intenta volver a conectar el pin. Si el método cambia correctamente el formato, proporciona la nueva información de segmento. Este método llama al [**método CDynamicOutputPin::ChangeMediaType**](cdynamicoutputpin-changemediatype.md) para realizar el cambio de formato.
 
-Debe llamar al método [**CDynamicOutputPin:: StartUsingOutputPin**](cdynamicoutputpin-startusingoutputpin.md) antes de llamar a este método.
+Debe llamar al método [**CDynamicOutputPin::StartUsingOutputPin**](cdynamicoutputpin-startusingoutputpin.md) antes de llamar a este método.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -101,8 +101,8 @@ Debe llamar al método [**CDynamicOutputPin:: StartUsingOutputPin**](cdynamicout
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -110,7 +110,7 @@ Debe llamar al método [**CDynamicOutputPin:: StartUsingOutputPin**](cdynamicout
 
 <dl> <dt>
 
-[**Clase CDynamicOutputPin**](cdynamicoutputpin.md)
+[**CDynamicOutputPin (clase)**](cdynamicoutputpin.md)
 </dt> </dl>
 
  

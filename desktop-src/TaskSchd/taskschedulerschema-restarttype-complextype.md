@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de restartType
+title: restartType Complex Type
 description: Define los elementos secundarios y la información de secuencia para el elemento RestartOnFailure.
 ms.assetid: 3a192955-8a33-42b9-a974-faa9a3789f58
 keywords:
-- tipo complejo de restartType Programador de tareas
+- tipo complejo restartType Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7f83dcac376fcdd8d2059649350502111f5a732f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 996debc2c8e3d7d00ca7b42facde582f918d72736426ed326691461d800f8562
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119516485"
 ---
-# <a name="restarttype-complex-type"></a>Tipo complejo de restartType
+# <a name="restarttype-complex-type"></a>restartType Complex Type
 
-Define los elementos secundarios y la información de secuencia para el elemento [RestartOnFailure](taskschedulerschema-restartonfailure-settingstype-element.md) .
+Define los elementos secundarios y la información de secuencia [para el elemento RestartOnFailure.](taskschedulerschema-restartonfailure-settingstype-element.md)
 
 ``` syntax
 <xs:complexType name="restartType">
@@ -62,8 +62,8 @@ Define los elementos secundarios y la información de secuencia para el elemento
 
 | Elemento                                                              | Tipo | Descripción                                        |
 |----------------------------------------------------------------------|------|----------------------------------------------------|
-| [**Contabiliza**](taskschedulerschema-count-restarttype-element.md)       |      | Número de intentos de reinicio de la tarea.<br/> |
-| [**Interval**](taskschedulerschema-interval-restarttype-element.md) |      | Cuánto tiempo se intentará iniciar la tarea.<br/>      |
+| [**Count**](taskschedulerschema-count-restarttype-element.md)       |      | Número de intentos para reiniciar la tarea.<br/> |
+| [**Intervalo**](taskschedulerschema-interval-restarttype-element.md) |      | Cuánto tiempo se debe intentar iniciar la tarea.<br/>      |
 
 
 
@@ -71,10 +71,10 @@ Define los elementos secundarios y la información de secuencia para el elemento
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -82,7 +82,7 @@ Define los elementos secundarios y la información de secuencia para el elemento
 
 <dl> <dt>
 
-[Tipos complejos de esquema Programador de tareas](task-scheduler-schema-complex-types.md)
+[Programador de tareas tipos complejos de esquema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

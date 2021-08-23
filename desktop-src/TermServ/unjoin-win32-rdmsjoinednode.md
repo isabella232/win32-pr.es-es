@@ -1,12 +1,12 @@
 ---
-title: Método unjoin de la clase Win32_RDMSJoinedNode
-description: Quita un nodo de los servicios de administración de Escritorio remoto (RDMS).
+title: Método Unjoin de la Win32_RDMSJoinedNode clase
+description: Quita un nodo de Escritorio remoto Management Services (RDMS).
 ms.assetid: 37c462f4-a19d-4b85-8fac-2735deb7c04f
 ms.tgt_platform: multiple
 keywords:
-- Unjoin (método) Servicios de Escritorio remoto
-- Método unjoin Servicios de Escritorio remoto, clase Win32_RDMSJoinedNode
-- Win32_RDMSJoinedNode de clase Servicios de Escritorio remoto, unjoin (método)
+- Unjoin method Servicios de Escritorio remoto
+- Método Unjoin Servicios de Escritorio remoto , Win32_RDMSJoinedNode clase
+- Win32_RDMSJoinedNode clase Servicios de Escritorio remoto método , Unjoin
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 234f7cc3ad8a797fff51661528f4545ed9fea3a5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f5d2fae16ecb31326ae16bc08efd1fbc56ae2585140d63ce360783226101d4a1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105685998"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119424105"
 ---
-# <a name="unjoin-method-of-the-win32_rdmsjoinednode-class"></a>Método unjoin de la \_ clase Win32 RDMSJoinedNode
+# <a name="unjoin-method-of-the-win32_rdmsjoinednode-class"></a>Método Unjoin de la clase \_ RDMSJoinedNode de Win32
 
-Quita un nodo de los servicios de administración de Escritorio remoto (RDMS).
+Quita un nodo de Escritorio remoto Management Services (RDMS).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,27 +43,27 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error de WMI.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error WMI.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                              |
-| Espacio de nombres<br/>                | RDMs raíz de \\ CIMv2 \\<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Rdms \\ de CIMv2 \\ raíz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Win32 \_ RDMSJoinedNode**](win32-rdmsjoinednode.md)
+[**RdMSJoinedNode de Win32 \_**](win32-rdmsjoinednode.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXMatrixPerspectiveLH (D3dx9math.h): crea una matriz de proyección de perspectiva a la izquierda'
+description: 'Función D3DXMatrixPerspectiveLH (D3dx9math.h): crea una matriz de proyección de perspectiva izquierda'
 ms.assetid: 07bbbca8-ad1e-4177-97d4-601b33179b47
 title: Función D3DXMatrixPerspectiveLH (D3dx9math.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d898a7d40cd1c9f7b46100c19d86573806ccb1b5
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a8b379265be4bac399d746a2421d9aeb34a1559c5b18ab4f439e57d586af6d62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118313"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119122875"
 ---
 # <a name="d3dxmatrixperspectivelh-function-d3dx9mathh"></a>Función D3DXMatrixPerspectiveLH (D3dx9math.h)
 
@@ -85,7 +85,7 @@ Valor Z del plano de vista cercano.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor Z del plano de vista lejano.
+Valor Z del plano de vista lejana.
 
 </dd> </dl>
 
@@ -93,7 +93,7 @@ Valor Z del plano de vista lejano.
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntero a una [**estructura D3DXMATRIX**](d3dxmatrix.md) que es una matriz de proyección de perspectiva con la mano izquierda.
+Puntero a una [**estructura D3DXMATRIX**](d3dxmatrix.md) que es una matriz de proyección de perspectiva a la izquierda.
 
 ## <a name="remarks"></a>Comentarios
 
@@ -124,7 +124,7 @@ Esta función usa la fórmula siguiente para calcular la matriz devuelta.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

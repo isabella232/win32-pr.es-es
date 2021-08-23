@@ -1,37 +1,37 @@
 ---
-title: Generar gráficos de filtro en aplicaciones de DRM-Enabled
-description: Generar gráficos de filtro en aplicaciones de DRM-Enabled
+title: Creación de gráficos de filtro en DRM-Enabled aplicaciones
+description: Creación de gráficos de filtro en DRM-Enabled aplicaciones
 ms.assetid: 447bec2a-0982-4a05-87bb-aed6db684b36
 keywords:
-- SDK de Windows Media Format, crear gráficos de filtros
-- Windows Media Format SDK, DirectShow
-- SDK de Windows Media Format, aplicaciones habilitadas para DRM
-- Advanced Systems Format (ASF), generar gráficos de filtros
-- ASF (formato de sistemas avanzados), crear gráficos de filtros
-- Advanced Systems Format (ASF), DirectShow
-- ASF (formato de sistemas avanzados), DirectShow
-- Advanced Systems Format (ASF), aplicaciones habilitadas para DRM
+- Windows SDK de formato multimedia, creación de gráficos de filtro
+- Windows SDK de formato multimedia, DirectShow
+- Windows SDK de formato multimedia, aplicaciones habilitadas para DRM
+- Formato de sistemas avanzados (ASF), creación de gráficos de filtro
+- ASF (formato de sistemas avanzados), creación de gráficos de filtro
+- Formato de sistemas avanzados (ASF),DirectShow
+- ASF (formato de sistemas avanzados),DirectShow
+- Formato de sistemas avanzados (ASF), aplicaciones habilitadas para DRM
 - ASF (formato de sistemas avanzados), aplicaciones habilitadas para DRM
-- DirectShow, crear gráficos de filtros
-- DirectShow, aplicaciones habilitadas para DRM
-- Administración de derechos digitales (DRM), DirectShow
-- DRM (administración de derechos digitales), DirectShow
-- Administración de derechos digitales (DRM), crear gráficos de filtros
-- DRM (administración de derechos digitales), crear gráficos de filtros
+- DirectShow, crear gráficos de filtro
+- DirectShow aplicaciones habilitadas para DRM
+- administración de derechos digitales (DRM),DirectShow
+- DRM (administración de derechos digitales),DirectShow
+- administración de derechos digitales (DRM), creación de gráficos de filtro
+- DRM (administración de derechos digitales), creación de gráficos de filtro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 944037a00c208e1427d3d19aa6c9dc0a352ec5fc
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 19e7f411a52c0ce7c42410c7a901787c7f6d9d7089921019639cb3f5e708dff6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104358705"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119447955"
 ---
-# <a name="building-filter-graphs-in-drm-enabled-applications"></a>Generar gráficos de filtro en aplicaciones de DRM-Enabled
+# <a name="building-filter-graphs-in-drm-enabled-applications"></a>Creación de gráficos de filtro en DRM-Enabled aplicaciones
 
-Si la aplicación de DirectShow admite la reproducción de archivos protegidos con DRM, por lo general no debe usar **RenderFile** para crear el gráfico de filtros porque no hay ninguna manera de especificar qué derechos de DRM solicita antes de que se abra el archivo. De forma predeterminada, el lector ASF de WM solicita únicamente los derechos de reproducción. El filtro no se agrega al gráfico y, por lo tanto, no lo pueden detectar las aplicaciones hasta que un archivo se abre correctamente.
+Si la aplicación DirectShow admite la reproducción de archivos protegidos con DRM, por lo general no debe usar **RenderFile** para crear el gráfico de filtros porque no hay ninguna manera de especificar qué derechos DRM está solicitando antes de abrir el archivo. De forma predeterminada, el lector de ASF de WM solo solicita derechos de reproducción. El filtro no se agrega al gráfico y, por lo tanto, las aplicaciones no pueden detectarlo hasta que un archivo se abre correctamente.
 
-Para compilar un gráfico de reproducción habilitado con DRM mediante el [lector ASF de WM](wm-asf-reader-filter.md), debe crear una instancia del filtro mediante **CoCreateInstance**, agregarlo al gráfico de filtros mediante **IGraphBuilder:: addFilter**, configurarlo y, a continuación, representar sus clavijas de salida. Esta técnica se muestra en el ejemplo PlayWndASF. Al compilar el gráfico de esta manera, ya tiene el puntero **IBaseFilter** que se puede usar para llamar a **QueryService** para obtener **IWMDRMWriter**. Sin embargo, esta interfaz no está disponible hasta que el lector ASF de WM crea internamente el objeto lector del SDK de Windows Media Format. La primera oportunidad que tiene la aplicación para establecer derechos DRM es en su \_ controlador de eventos WMT no \_ Rights \_ ex, tal como se muestra en este fragmento de código:
+Para crear un gráfico de reproducción habilitado para DRM mediante el lector [DE ASF](wm-asf-reader-filter.md)de WM, debe crear una instancia del filtro mediante **CoCreateInstance,** agregarlo al gráfico de filtros mediante **IGraphBuilder::AddFilter,** configurarlo y, a continuación, representar sus pines de salida. Esta técnica se muestra en el ejemplo PlayWndASF. Al compilar el gráfico de esta manera, ya tiene el puntero **IBaseFilter** que se puede usar para llamar a **QueryService** para obtener **IWMDRMWriter**. Sin embargo, esta interfaz no está disponible hasta que el lector de ASF de WM crea internamente Windows objeto de lector del SDK de formato multimedia. La primera oportunidad que tiene la aplicación para establecer derechos DRM es en su controlador de eventos WMT NO RIGHTS EX, como se \_ muestra en este fragmento de \_ \_ código:
 
 
 ```C++
@@ -75,16 +75,16 @@ case WMT_NO_RIGHTS_EX:
 
 <dl> <dt>
 
-[**Características de Rights Management digital**](digital-rights-management-features.md)
+[**Características de Rights Management digitales**](digital-rights-management-features.md)
 </dt> <dt>
 
-[**Lista de atributos de DRM**](drm-attribute-list.md)
+[**Lista de atributos DRM**](drm-attribute-list.md)
 </dt> <dt>
 
 [**Propiedades de DRM**](drm-properties.md)
 </dt> <dt>
 
-[**Habilitar la compatibilidad con DRM**](enabling-drm-support.md)
+[**Habilitación de la compatibilidad con DRM**](enabling-drm-support.md)
 </dt> <dt>
 
 [**IWMDRMReader**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmdrmreader)
@@ -93,9 +93,9 @@ case WMT_NO_RIGHTS_EX:
 [**IWMDRMWriter**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmdrmwriter)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

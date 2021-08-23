@@ -1,9 +1,9 @@
 ---
 title: Evento DomainChange del objeto AxWindowsMediaPlayer
-description: El evento DomainChange se produce cuando cambia el dominio del DVD. | Evento DomainChange del objeto AxWindowsMediaPlayer
+description: El evento DomainChange tiene lugar cuando cambia el dominio de DVD. | Evento DomainChange del objeto AxWindowsMediaPlayer
 ms.assetid: a080082e-1ba4-4080-b39c-b84292ecacb0
 keywords:
-- Evento DomainChange del objeto AxWindowsMediaPlayer Media Player de Windows
+- Evento DomainChange del objeto AxWindowsMediaPlayer Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 342ac559f75c3bb7d65b442bfbdced5e5ed3f690
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a37f10679225fb893fad8bcf6fc6687021256e305e8c5a08e6ebe96d16b74e81
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700060"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136128"
 ---
 # <a name="domainchange-event-of-the-axwindowsmediaplayer-object"></a>Evento DomainChange del objeto AxWindowsMediaPlayer
 
-El evento DomainChange se produce cuando cambia el dominio del DVD.
+El evento DomainChange tiene lugar cuando cambia el dominio de DVD.
 
 ``` syntax
 [C#]
@@ -47,25 +47,25 @@ El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 | Propiedad  | Descripción                                                                                     |
 |-----------|-------------------------------------------------------------------------------------------------|
-| strDomain | System. StringIndicates el nuevo dominio. Para los valores posibles, vea la sección Comentarios.<br/> |
+| strDomain | System.StringIndica el nuevo dominio. Para los valores posibles, vea la sección Comentarios.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En la tabla siguiente se muestran los posibles valores para la propiedad strDomain.
+En la tabla siguiente se muestran los valores posibles para la propiedad strDomain.
 
 
 
 | String            | Descripción                                                          |
 |-------------------|----------------------------------------------------------------------|
-| firstPlay         | Realizar la inicialización predeterminada de un disco DVD.                     |
-| videoManagerMenu  | Mostrando menús para todo el disco. También se conoce como menú o menú raíz. |
+| firstPlay         | Realizar la inicialización predeterminada de un disco de DVD.                     |
+| videoManagerMenu  | Mostrar menús para todo el disco. También se conoce como menú raíz o topMenu. |
 | videoTitleSetMenu | Mostrar menús para el conjunto de títulos actual. También se conoce como titleMenu.     |
 | title             | Mostrar el título actual.                                        |
-| stop              | El navegador de DVD está en el dominio de detención de DVD.                         |
+| stop              | El navegador de DVD está en el dominio DE DEtenerse de DVD.                         |
 
 
 
@@ -75,15 +75,15 @@ En la tabla siguiente se muestran los posibles valores para la propiedad strDoma
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                          |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Ensamblado<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
-description: Indica si el lápiz está en la parte inferior.
+description: Indica si el lápiz óptico está al revés.
 ms.assetid: 04b05287-000d-455f-88e5-821c7fdb8119
-title: 'ITabletCursor:: IsInverted (método)'
+title: ITabletCursor::IsInverted (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: 041b81c38f3370421c96a4c0d66201254a715e62
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 81bbb5f4f93026e0d6910cb7f23d0a7d2ddeea5595e87f816faa016d22986d0e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105659919"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119223075"
 ---
-# <a name="itabletcursorisinverted-method"></a>ITabletCursor:: IsInverted (método)
+# <a name="itabletcursorisinverted-method"></a>ITabletCursor::IsInverted (método)
 
-Indica si el lápiz está en la parte inferior.
+Indica si el lápiz óptico está al revés.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,8 +46,8 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                             | Descripción                               |
 |-----------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>    | Se invierte el lápiz óptico.<br/>        |
-| <dl> <dt>**S \_ false**</dt> </dl> | No se invierte el lápiz.<br/>    |
+| <dl> <dt>**S \_ OK**</dt> </dl>    | El lápiz óptico se invierte.<br/>        |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | El lápiz óptico no se invierte.<br/>    |
 | <dl> <dt>**E \_ FAIL**</dt> </dl>  | Se ha producido un error no especificado.<br/> |
 
 
@@ -60,7 +60,7 @@ Este método puede devolver uno de estos valores.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                          |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 
@@ -73,7 +73,7 @@ Este método puede devolver uno de estos valores.
 [**ITabletCursor**](itabletcursor.md)
 </dt> <dt>
 
-[**Interfaz ITabletCursorButton**](itabletcursorbutton.md)
+[**ITabletCursorButton (Interfaz)**](itabletcursorbutton.md)
 </dt> </dl>
 
  

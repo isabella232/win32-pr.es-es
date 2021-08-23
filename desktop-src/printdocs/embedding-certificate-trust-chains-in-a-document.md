@@ -1,23 +1,23 @@
 ---
-description: En este tema se describe cómo insertar los certificados que componen una cadena de certificados en un documento XPS.
+description: En este tema se describe cómo insertar los certificados que integran una cadena de certificados en un documento XPS.
 ms.assetid: c6aae8ff-2e1e-43de-9105-171e4187d193
-title: Insertar cadenas de certificado en un documento
+title: Insertar cadenas de certificados en un documento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ee6476e0c187cf1a62915f0a3ab2b7949586baa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e23e47b4cd0d140d7200fb8aa01642ea5fbb731e49dcc289f596a054b0accbf3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105697130"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119447585"
 ---
-# <a name="embed-certificate-chains-in-a-document"></a>Insertar cadenas de certificado en un documento
+# <a name="embed-certificate-chains-in-a-document"></a>Insertar cadenas de certificados en un documento
 
-En este tema se describe cómo insertar los certificados que componen una cadena de certificados en un documento XPS. Una cadena de certificados consta de todos los certificados, excepto el certificado raíz, que son necesarios para certificar el sujeto identificado por el certificado final.
+En este tema se describe cómo insertar los certificados que integran una cadena de certificados en un documento XPS. Una cadena de certificados consta de todos los certificados, excepto el certificado raíz, que son necesarios para certificar el sujeto identificado por el certificado final.
 
-Para insertar una cadena de certificados en un documento XPS, primero debe crear la cadena de certificados como se muestra en el ejemplo de código siguiente.
+Para insertar una cadena de certificados en un documento XPS, primero cree la cadena de certificados como se muestra en el ejemplo de código siguiente.
 
-El método **CreateCertificateChain** en el ejemplo de código acepta *certificateStore* como parámetro, que es un valor **HCERTSTORE** . Si este valor es **null**, los certificados se recuperarán del servidor de certificados del equipo cliente. Si el valor es el identificador de un almacén de certificados, los certificados se recuperarán de ese almacén al que hacen referencia *certificateStore* y del servidor de certificados del equipo cliente.
+El **método CreateCertificateChain** del ejemplo de código acepta *certificateStore* como parámetro, que es un **valor HCERTSTORE.** Si este valor es **NULL,** los certificados se recuperarán del servidor de certificados del equipo cliente. Si el valor es el identificador de un almacén de certificados, los certificados se recuperarán de ese almacén al que hace referencia *certificateStore,* así como del servidor de certificados del equipo cliente.
 
 
 ```C++
@@ -61,7 +61,7 @@ CreateCertificateChain (
 
 
 
-En el ejemplo de código siguiente se crea una cadena de certificados a partir de certificados y, a continuación, se agregan estos certificados a un documento XPS. Tenga en cuenta que [**CertGetCertificateChain**](/windows/desktop/api/wincrypt/nf-wincrypt-certgetcertificatechain) crea la cadena de certificados en la que el certificado de firma es el primero y el certificado raíz es el último. El certificado de firma y el certificado raíz no se agregan en este ejemplo. Los certificados de firma se agregarán con una llamada al método [**IXpsSignatureManager:: Sign**](/windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignaturemanager-sign) , que debe ser el último método de firma llamado en el documento. El certificado raíz no se agrega cuando el documento está firmado, porque debe ser proporcionado por el servidor de certificados del equipo cliente cuando se valida la firma.
+En el ejemplo de código siguiente se crea una cadena de certificados a partir de certificados y, a continuación, se agregan estos certificados a un documento XPS. Tenga en [**cuenta que CertGetCertificateChain crea**](/windows/desktop/api/wincrypt/nf-wincrypt-certgetcertificatechain) la cadena de certificados en la que el certificado de firma es primero y el certificado raíz es el último. El certificado de firma y el certificado raíz no se agregan en este ejemplo. Los certificados de firma se agregarán con una llamada al método [**IXpsSignatureManager::Sign,**](/windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignaturemanager-sign) que debe ser el último método de firma llamado en el documento. El certificado raíz no se agrega cuando se firma el documento, porque debe proporcionarlo el servidor de certificados del equipo cliente cuando se valida la firma.
 
 
 ```C++
@@ -165,22 +165,22 @@ EmbedCertificateChainInXpsPackage (
 [Cargar un certificado desde un archivo](load-a-certificate-from-a-file.md)
 </dt> <dt>
 
-[Comprobar que un certificado admite un método de firma](verify-a-certificate-supports-a-signature-method.md)
+[Comprobar que un certificado admite un método signature](verify-a-certificate-supports-a-signature-method.md)
 </dt> <dt>
 
-[Comprobar que el sistema admite un método de síntesis](verify-a-certificate-supports-a-digest-method.md)
+[Comprobar que el sistema admite un método de resumen](verify-a-certificate-supports-a-digest-method.md)
 </dt> <dt>
 
 **Se usa en este ejemplo**
 </dt> <dt>
 
-[**contexto de certificado \_**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_context)
+[**CONTEXTO \_ DE CERT**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_context)
 </dt> <dt>
 
 [**CertGetCertificateChain**](/windows/desktop/api/wincrypt/nf-wincrypt-certgetcertificatechain)
 </dt> <dt>
 
-[**CIFRAr \_ información de OID \_**](/windows/desktop/api/wincrypt/ns-wincrypt-crypt_oid_info)
+[**INFORMACIÓN DE \_ CRYPT OID \_**](/windows/desktop/api/wincrypt/ns-wincrypt-crypt_oid_info)
 </dt> <dt>
 
 [**IOpcCertificateSet**](/previous-versions/windows/desktop/api/msopc/nn-msopc-iopccertificateset)
@@ -192,7 +192,7 @@ EmbedCertificateChainInXpsPackage (
 **Para obtener más información**
 </dt> <dt>
 
-[API de criptografía](/windows/desktop/SecCrypto/cryptography-portal)
+[Cryptography API](/windows/desktop/SecCrypto/cryptography-portal)
 </dt> <dt>
 
 [Funciones de criptografía](/windows/desktop/SecCrypto/cryptography-functions)
@@ -204,13 +204,13 @@ EmbedCertificateChainInXpsPackage (
 [Cadenas de certificados](/windows/desktop/SecCrypto/certificate-chains)
 </dt> <dt>
 
-[Comprobación de certificados de confianza](/windows/desktop/SecCrypto/certificate-trust-verification)
+[Comprobación de confianza de certificados](/windows/desktop/SecCrypto/certificate-trust-verification)
 </dt> <dt>
 
-[Errores de la API de firma digital XPS](xps-digital-signatures-errors.md)
+[Errores de API de firma digital XPS](xps-digital-signatures-errors.md)
 </dt> <dt>
 
-[Errores de documento XPS](xps-document-errors.md)
+[Errores del documento XPS](xps-document-errors.md)
 </dt> <dt>
 
 [XML Paper Specification](https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf)

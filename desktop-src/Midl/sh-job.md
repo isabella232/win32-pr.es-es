@@ -1,8 +1,8 @@
 ---
 title: Palabra clave sh_job
-description: La \_ palabra clave \ SH Job \ especifica que el objeto del sistema es un identificador de un trabajo.
+description: La palabra clave \ sh \_ job\ especifica que el objeto del sistema es un identificador de un trabajo.
 keywords:
-- palabra clave sh_job MIDL
+- sh_job clave MIDL
 topic_type:
 - apiref
 api_name:
@@ -11,16 +11,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 02/05/2021
-ms.openlocfilehash: db24f9dc84f2bb56f57327090485b406ad1a437f
-ms.sourcegitcommit: af9983bab40fe0b042f177ce7ca79f2eb0f9d0e8
+ms.openlocfilehash: dd71db0310b450db1d9c87879e8ac10ad998d1d21e48a60eb9d816c0a0718b42
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "104003275"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119146288"
 ---
-# <a name="sh_job-keyword"></a>\_palabra clave de trabajo SH
+# <a name="sh_job-keyword"></a>Sh \_ job (palabra clave)
 
-La palabra clave de **\_ trabajo SH** especifica que un `system_handle` contiene un identificador de un trabajo.
+La **palabra clave sh \_ job** especifica que `system_handle` un contiene un identificador para un trabajo.
 
 ``` syntax
 [system_handle(sh_job)]
@@ -32,11 +32,11 @@ La palabra clave de **\_ trabajo SH** especifica que un `system_handle` contiene
 
 Esta palabra clave es un parámetro para [**system_handle**](system-handle.md).
 
-La documentación [**system_handle**](system-handle.md) contiene también detalles sobre el uso opcional del parámetro *Access-Rights* . El comportamiento predeterminado es `DUPLICATE_SAME_ACCESS` por especificaciones de la [función **DuplicateHandle**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle) .
+La [**system_handle**](system-handle.md) documentación también contiene detalles sobre el uso opcional del *parámetro access-rights.* El comportamiento predeterminado es según `DUPLICATE_SAME_ACCESS` las [ **especificaciones de la función DuplicateHandle.**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para usar esta palabra clave con el `system_handle` atributo, la `-target` marca debe establecerse en `NT100` (o superior) al ejecutarse midl.exe.
+Para usar esta palabra clave con el atributo , la marca debe establecerse en `system_handle` `-target` (o superior) al ejecutar `NT100` midl.exe.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -53,7 +53,7 @@ interface MyInterface : IUnknown
 
 | &nbsp; | &nbsp; |
 |-|-|
-| Cliente mínimo compatible | Actualización de aniversario de Windows 10 (versión 1607, compilación 14393) |
+| Cliente mínimo compatible | Windows 10 Actualización de aniversario (versión 1607, compilación 14393) |
 | Servidor mínimo compatible | Windows Server 2016 (compilación 14393) |
 
 ## <a name="see-also"></a>Vea también
@@ -69,5 +69,5 @@ interface MyInterface : IUnknown
 [Derechos de acceso y seguridad de objetos de trabajo](../procthread/job-object-security-and-access-rights.md)
 </dt> <dt>
 
-[**CreateJobObject** función)](/windows/win32/api/winbase/nf-winbase-createjobobjecta)
+[**Función CreateJobObject**](/windows/win32/api/winbase/nf-winbase-createjobobjecta)
 </dt> </dl>

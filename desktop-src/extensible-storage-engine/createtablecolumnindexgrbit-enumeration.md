@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: enumeración CreateTableColumnIndexGrbit'
-title: Enumeración CreateTableColumnIndexGrbit
+description: 'Más información sobre: Enumeración CreateTableColumnIndexGrbit'
+title: CreateTableColumnIndexGrbit (enumeración)
 TOCTitle: CreateTableColumnIndexGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.CreateTableColumnIndexGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.createtablecolumnindexgrbit(v=EXCHG.10)
@@ -32,21 +32,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 72f91c5d41b8262e3b2804159914b0a9ccaaaa7d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7aa142dfd642f8b339ee1fa2033e0763764d0834fd4da409a7a7c37b6e91b0d3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119238035"
 ---
-# <a name="createtablecolumnindexgrbit-enumeration"></a>Enumeración CreateTableColumnIndexGrbit
+# <a name="createtablecolumnindexgrbit-enumeration"></a>CreateTableColumnIndexGrbit (enumeración)
 
 Opciones de JetCreateTableColumnIndex.
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -76,7 +76,7 @@ public enum CreateTableColumnIndexGrbit
 <tbody>
 <tr class="odd">
 <td></td>
-<td>None</td>
+<td>Ninguno</td>
 <td>Opciones predeterminadas.</td>
 </tr>
 <tr class="even">
@@ -102,4 +102,4 @@ public enum CreateTableColumnIndexGrbit
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

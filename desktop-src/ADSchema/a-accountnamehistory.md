@@ -1,11 +1,11 @@
 ---
-title: Nombre de cuenta-atributo de historial
-description: La cantidad de tiempo que la cuenta ha estado activa.
+title: Atributo Account-Name-History
+description: El período de tiempo durante el que la cuenta ha estado activa.
 ms.assetid: 6db0a72e-ba76-4f96-96b6-75f3a4aee572
 ms.tgt_platform: multiple
 keywords:
-- 'Nombre de cuenta: esquema de AD de atributos de historial'
-- accountNameHistory esquema de AD de atributos
+- Esquema de AD del atributo Account-Name-History
+- accountNameHistory attribute AD Schema (Esquema de AD del atributo accountNameHistory)
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a8578700ef6ddc108efc989d27f7b63e024d6807
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: bac6e63507554bec752e67f9cc749e21607ed912a845d17e7486ed9437e05094
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119082129"
 ---
-# <a name="account-name-history-attribute"></a>Nombre de cuenta-atributo de historial
+# <a name="account-name-history-attribute"></a>Atributo Account-Name-History
 
-La cantidad de tiempo que la cuenta ha estado activa.
+El período de tiempo durante el que la cuenta ha estado activa.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Nombre de cuenta-historial                        |
-| Nombre para mostrar de LDAP | accountNameHistory                          |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | Administrador de dominio                        |
+| CN                | Account-Name-History                        |
+| Ldap-Display-Name | accountNameHistory                          |
+| Size              | \-                                          |
+| Actualizar privilegios  | Administrador de dominio                        |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1307                     |
-| System-ID-GUID    | 031952ec-3b72-11d2-90cc-00c04fd91ab1        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 031952ec-3b72-11d2-90cc-00c04fd91ab1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,13 +55,13 @@ La cantidad de tiempo que la cuenta ha estado activa.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | False                                                        |
-| Está indexado             | False                                                        |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Falso                                                        |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
@@ -76,13 +76,13 @@ La cantidad de tiempo que la cuenta ha estado activa.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | False                                                        |
-| Está indexado             | False                                                        |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Falso                                                        |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
@@ -95,15 +95,15 @@ La cantidad de tiempo que la cuenta ha estado activa.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | False                                                        |
-| Está indexado             | False                                                        |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Falso                                                        |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
@@ -116,15 +116,15 @@ La cantidad de tiempo que la cuenta ha estado activa.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | False                                                        |
-| Está indexado             | False                                                        |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Falso                                                        |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
@@ -139,13 +139,13 @@ La cantidad de tiempo que la cuenta ha estado activa.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | False                                                        |
-| Está indexado             | False                                                        |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Falso                                                        |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
@@ -160,13 +160,13 @@ La cantidad de tiempo que la cuenta ha estado activa.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | False                                                        |
-| Está indexado             | False                                                        |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Falso                                                        |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |

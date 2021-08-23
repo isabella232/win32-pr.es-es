@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 541e181425782662c6d40affc22c829b4ba343ab
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 954fee40015b558b10ba83ef12b1555d06896413c6396ca12ed6e4374131caeb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118003"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988444"
 ---
 # <a name="d3dxquaternionrotationyawpitchroll-function-d3dx9mathh"></a>Función D3DXQuaternionRotationYawPitchRoll (D3dx9math.h)
 
-Crea un cuaternión con el guión, el lanzamiento y el lanzamiento dados.
+Crea un cuaternión con el yaw, el lanzamiento y el lanzamiento dados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,7 +57,7 @@ Puntero a la [**estructura D3DXQUATERNION**](d3dxquaternion.md) que es el result
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Eje Y alrededor del eje Y, en radianes.
+Moverse alrededor del eje Y, en radianes.
 
 </dd> <dt>
 
@@ -83,11 +83,11 @@ Revierte el eje Z, en radianes.
 
 Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)\***
 
-Puntero a una [**estructura D3DXQUATERNION**](d3dxquaternion.md) con el guión, el paso y el lanzamiento especificados.
+Puntero a una [**estructura D3DXQUATERNION**](d3dxquaternion.md) con el yaw, pitch y roll especificados.
 
 ## <a name="remarks"></a>Comentarios
 
-El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De este modo, la función **D3DXQuaternionRotationYawPitchRoll** se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la función **D3DXQuaternionRotationYawPitchRoll** se puede usar como parámetro para otra función.
 
 Use [**D3DXQuaternionNormalize para cualquier**](d3dxquaternionnormalize.md) entrada de cuaternión que aún no esté normalizada.
 
@@ -102,7 +102,7 @@ Use [**D3DXQuaternionNormalize para cualquier**](d3dxquaternionnormalize.md) ent
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,9 +1,9 @@
 ---
-title: cortar (comando)
-description: El comando CUT quita los datos del área de trabajo y los copia en el portapapeles. Los dispositivos de vídeo digital reconocen este comando.
+title: Comando cut
+description: El comando cortar quita los datos del área de trabajo y los copia en el Portapapeles. Los dispositivos de vídeo digital reconocen este comando.
 ms.assetid: f42c7364-49cb-41be-b601-bda6e97d1e76
 keywords:
-- cortar comando de Windows multimedia
+- Comando cut Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 33571309e1dd249f20e577c97b8c6e1b950eda09
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d5a39010ad7dd07ccff38291441bb0aa05a54ee65da1b865d7ac82ed77fbfdd6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996899"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144568"
 ---
-# <a name="cut-command"></a>cortar (comando)
+# <a name="cut-command"></a>Comando cut
 
-El comando CUT quita los datos del área de trabajo y los copia en el portapapeles. Los dispositivos de vídeo digital reconocen este comando.
+El comando cortar quita los datos del área de trabajo y los copia en el Portapapeles. Los dispositivos de vídeo digital reconocen este comando.
 
-Para enviar este comando, llame a la función [**mciSendString**](/previous-versions//dd757161(v=vs.85)) con el parámetro *lpszCommand* establecido como se indica a continuación.
+Para enviar este comando, llame a la [**función mciSendString**](/previous-versions//dd757161(v=vs.85)) con el *parámetro lpszCommand* establecido como se muestra a continuación.
 
 ``` syntax
 _stprintf_s(
@@ -49,17 +49,17 @@ Identificador de un dispositivo MCI. Este identificador o alias se asigna cuando
 <span id="lpszItem"></span><span id="lpszitem"></span><span id="LPSZITEM"></span>*lpszItem*
 </dt> <dd>
 
-Una de las marcas siguientes que identifican el elemento que se va a cortar.
+Una de las marcas siguientes identifica el elemento que se debe cortar.
 
 
 
 | Value                 | Significado                                                                                                                                                                                                                               |
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| en el *rectángulo*        | Especifica la parte de cada corte del marco. Si se omite, el valor predeterminado es todo el marco. Cuando se especifica este elemento, no se eliminan los marcos. En su lugar, el área dentro del rectángulo se vuelve negra.                                       |
-| *secuencia* de flujo de audio | Especifica la secuencia de audio en el área de trabajo afectada por el comando. Si usa esta marca y también desea cortar vídeo, también debe usar la marca "secuencia de vídeo". (Si no se especifica ninguna marca, se cortan todas las secuencias de audio y vídeo). |
-| desde la *posición*       | Especifica el inicio del corte del intervalo. Si se omite, el valor predeterminado es la posición actual.                                                                                                                                                |
-| para *colocar*         | Especifica el final del corte del intervalo. El corte de datos de audio y vídeo es exclusivo de esta posición. Si se omite, el valor predeterminado es el final del área de trabajo.                                                                                  |
-| *secuencia* de flujo de vídeo | Especifica la secuencia de vídeo en el área de trabajo afectada por el comando. Si usa esta marca y también desea cortar audio, también debe usar la marca de "secuencia de audio". (Si no se especifica ninguna marca, se cortan todas las secuencias de audio y vídeo). |
+| en *rectángulo*        | Especifica la parte de cada corte de marco. Si se omite, el valor predeterminado es todo el marco. Cuando se especifica este elemento, no se eliminan los fotogramas. En su lugar, el área dentro del rectángulo se vuelve negra.                                       |
+| secuencia *de* audio | Especifica la secuencia de audio en el área de trabajo afectada por el comando . Si usa esta marca y también quiere cortar vídeo, también debe usar la marca "secuencia de vídeo". (Si no se especifica ninguna marca, se cortan todas las secuencias de audio y vídeo). |
+| desde *la posición*       | Especifica el inicio del corte de intervalo. Si se omite, el valor predeterminado es la posición actual.                                                                                                                                                |
+| para *colocar*         | Especifica el final del corte de intervalo. El corte de datos de audio y vídeo es exclusivo de esta posición. Si se omite, el valor predeterminado es el final del área de trabajo.                                                                                  |
+| secuencia de *vídeo* | Especifica la secuencia de vídeo en el área de trabajo afectada por el comando . Si usa esta marca y también desea cortar audio, también debe usar la marca "secuencia de audio". (Si no se especifica ninguna marca, se cortan todas las secuencias de audio y vídeo). |
 
 
 
@@ -70,17 +70,17 @@ Una de las marcas siguientes que identifican el elemento que se va a cortar.
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Puede ser "Wait", "Notify", "Test" o una combinación de estos. Para obtener más información acerca de estas marcas, vea [las marcas wait, Notify y test](the-wait-notify-and-test-flags.md).
+Puede ser "wait", "notify", "test" o una combinación de estos. Para obtener más información sobre estas marcas, vea [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El cambio solo se convierte en permanente cuando se guardan los datos explícitamente; sin embargo, la reproducción actúa como si se hubieran quitado los datos.
+El cambio se convierte en permanente solo cuando los datos se guardan explícitamente; sin embargo, la reproducción actúa como si se hubieran quitado los datos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -97,10 +97,10 @@ El cambio solo se convierte en permanente cuando se guardan los datos explícita
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
-[Cadenas de comandos MCI](mci-command-strings.md)
+[Cadenas de comandos de MCI](mci-command-strings.md)
 </dt> </dl>
 
  

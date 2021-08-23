@@ -6,7 +6,7 @@
     - name: Acerca del asistente de IP
       href: about-ip-helper.md
       items:
-        - name: Recuperación de información sobre la configuración de red
+        - name: Recuperar información sobre la configuración de red
           href: retrieving-information-about-network-configuration.md
         - name: Administración de adaptadores de red
           href: managing-network-adapters.md
@@ -42,13 +42,13 @@
               href: managing-ip-addresses-using-getipaddrtable.md
             - name: 'Administración de concesiones DHCP con IpReleaseAddress, IpRenewAddress'
               href: managing-dhcp-leases-using-ipreleaseaddress-and-iprenewaddress.md
-            - name: 'Administración de direcciones IP con AddIPAddress, DeleteIPAddress'
+            - name: Administración de direcciones IP con AddIPAddress y DeleteIPAddress
               href: managing-ip-addresses-using-addipaddress-and-deleteipaddress.md
-            - name: Recuperación de información mediante GetIpStatistics
+            - name: Recuperar información mediante GetIpStatistics
               href: retrieving-information-using-getipstatistics.md
             - name: Recuperar información mediante GetTcpStatistics
               href: retrieving-information-using-gettcpstatistics.md
-            - name: Completar el código fuente de la aplicación del asistente de IP
+            - name: Código fuente completo de la aplicación auxiliar de IP
               href: complete-ip-helper-application-source-code.md
             - name: Marca de tiempo de paquetes
               href: packet-timestamping.md

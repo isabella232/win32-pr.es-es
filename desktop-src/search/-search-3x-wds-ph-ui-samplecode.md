@@ -1,27 +1,27 @@
 ---
-description: En el código de ejemplo siguiente se muestra cómo crear extensiones de Shell para un controlador de protocolo personalizado.
+description: El código de ejemplo siguiente muestra cómo crear extensiones de Shell para un controlador de protocolo personalizado.
 ms.assetid: 4b65ced8-8dc9-43f6-bfe1-3703aea3459f
-title: 'Código de ejemplo: extensiones de Shell para controladores de protocolo'
+title: 'Ejemplo de código: Extensiones de shell para controladores de protocolo'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e436f1d7ad746181be8cb3c43375abe3656c544b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d1f2a29fb75ee6838b207648e2b58d634e19eb977f6d0abedb01ba450968756e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119033113"
 ---
-# <a name="code-sample-shell-extensions-for-protocol-handlers"></a>Código de ejemplo: extensiones de Shell para controladores de protocolo
+# <a name="code-sample-shell-extensions-for-protocol-handlers"></a>Ejemplo de código: Extensiones de shell para controladores de protocolo
 
-En el código de ejemplo siguiente se muestra cómo crear extensiones de Shell para un controlador de protocolo personalizado.
+El código de ejemplo siguiente muestra cómo crear extensiones de Shell para un controlador de protocolo personalizado.
 
 ## <a name="sample-code"></a>Código de ejemplo
 
 > [!Note]
 >
-> **ESTE CÓDIGO E INFORMACIÓN SE PROPORCIONA "TAL CUAL" SIN GARANTÍA DE NINGÚN TIPO, YA SEA EXPRESA O IMPLÍCITA, INCLUIDAS, ENTRE OTRAS, LAS GARANTÍAS IMPLÍCITAS DE COMERCIABILIDAD O IDONEIDAD PARA UN PROPÓSITO DETERMINADO.**
+> **ESTE CÓDIGO E INFORMACIÓN SE PROPORCIONAN "TAL Y COMO ESTÁN" SIN GARANTÍA DE NINGÚN TIPO, YA SEA EXPRESA O IMPLÍCITA, INCLUIDAS, ENTRE OTRAS, LAS GARANTÍAS IMPLÍCITAS DE COMERCIABILIDAD O IDONEIDAD PARA UN PROPÓSITO DETERMINADO.**
 >
-> Copyright (c) Microsoft Corporation. Todos los derechos reservados.
+> Copyright (c)Microsoft Corporation. All rights reserved.
 
  
 
@@ -499,35 +499,35 @@ STDMETHODIMP CSampleShellFolder::SetNameOf(
 
 ## <a name="additional-resources"></a>Recursos adicionales
 
--   Para ver ejemplos de código de búsqueda, consulte [ejemplos del SDK de Windows Search](https://www.microsoft.com/downloads/details.aspx?FamilyID=645300AE-5E7A-4CE7-95F0-49793F8F76E8).
--   Para ver ejemplos de código de Shell, consulte [ejemplos del SDK de Shell](/previous-versions/windows/desktop/legacy/dd940376(v=vs.85)).
+-   Para obtener ejemplos de código de búsqueda, [consulte Windows ejemplos del SDK de Search.](https://www.microsoft.com/downloads/details.aspx?FamilyID=645300AE-5E7A-4CE7-95F0-49793F8F76E8)
+-   Para obtener ejemplos de código de Shell, consulte [Ejemplos del SDK de Shell.](/previous-versions/windows/desktop/legacy/dd940376(v=vs.85))
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
-[Desarrollar controladores de protocolo](-search-3x-wds-phaddins.md)
+[Desarrollo de controladores de protocolo](-search-3x-wds-phaddins.md)
 </dt> <dt>
 
 [Descripción de los controladores de protocolo](-search-3x-wds-extidx-prot-implementing.md)
 </dt> <dt>
 
-[Notificar el índice de cambios](-search-3x-wds-notifyingofchanges.md)
+[Notificación al índice de cambios](-search-3x-wds-notifyingofchanges.md)
 </dt> <dt>
 
 [Agregar iconos y menús contextuales](-search-3x-wds-ph-ui-extensions.md)
 </dt> <dt>
 
-[Instalar y registrar controladores de protocolo](-search-3x-wds-ph-install-registration.md)
+[Instalación y registro de controladores de protocolo](-search-3x-wds-ph-install-registration.md)
 </dt> <dt>
 
 [Crear un conector de búsqueda para un controlador de protocolo](-search-3x-wds-ph-search-connector.md)
 </dt> <dt>
 
-[Controladores de protocolo de depuración](-search-ws-protocolhandlertesting.md)
+[Depuración de controladores de protocolo](-search-ws-protocolhandlertesting.md)
 </dt> </dl>
 
  

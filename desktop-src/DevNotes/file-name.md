@@ -1,7 +1,7 @@
 ---
-description: Representa un atributo de nombre de archivo. Un archivo tiene un atributo de nombre de archivo para cada directorio en el que se escribe.
+description: Representa un atributo de nombre de archivo. Un archivo tiene un atributo de nombre de archivo para cada directorio en el que se especifica.
 ms.assetid: 54458eee-b786-446c-80bd-213c13bdeb4a
-title: Estructura de FILE_NAME
+title: FILE_NAME estructura
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 609725c21f0c0811a4222cd9dfd662b3e25673f3
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9b09b9c58228c9028a5ac9d26d834bdc21a5c02201338767af84dc713bc3aa60
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104080093"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119076149"
 ---
-# <a name="file_name-structure"></a>Estructura de nombre de archivo \_
+# <a name="file_name-structure"></a>FILE \_ NAME (estructura)
 
 \[Esta estructura solo es válida para la versión 3 de los volúmenes NTFS; se puede modificar en versiones futuras.\]
 
-Representa un atributo de nombre de archivo. Un archivo tiene un atributo de nombre de archivo para cada directorio en el que se escribe.
+Representa un atributo de nombre de archivo. Un archivo tiene un atributo de nombre de archivo para cada directorio en el que se especifica.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ typedef struct _FILE_NAME {
 **ParentDirectory**
 </dt> <dd>
 
-Referencia de archivo al directorio que indexa este nombre. Consulte [**\_ \_ referencia de segmento de MFT**](mft-segment-reference.md).
+Referencia de archivo al directorio que indexa con este nombre. Vea MFT SEGMENT REFERENCE ( [**REFERENCIA DE SEGMENTO DE \_ \_ MFT).**](mft-segment-reference.md)
 
 </dd> <dt>
 
@@ -61,7 +61,7 @@ Reservado.
 **FileNameLength**
 </dt> <dd>
 
-La longitud del nombre de archivo, en caracteres Unicode.
+Longitud del nombre de archivo, en caracteres Unicode.
 
 </dd> <dt>
 
@@ -72,10 +72,10 @@ Marcas de nombre de archivo.
 
 <dl> <dt>
 
-<span id="FILE_NAME_NTFS"></span><span id="file_name_ntfs"></span>**Archivo \_ de NOMBRE \_ NTFS** (0x01)
+<span id="FILE_NAME_NTFS"></span><span id="file_name_ntfs"></span>**FILE \_ NAME \_ NTFS** (0x01)
 </dt> <dt>
 
-<span id="FILE_NAME_DOS"></span><span id="file_name_dos"></span>**Archivo \_ de NAME \_ dos** (0x02)
+<span id="FILE_NAME_DOS"></span><span id="file_name_dos"></span>**FILE \_ NAME \_ DOS** (0x02)
 </dt> </dl> </dd> <dt>
 
 **FileName**
@@ -85,11 +85,11 @@ Primer carácter del nombre de archivo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Tenga en cuenta que no hay ningún archivo de encabezado asociado para esta estructura.
 
-Esta definición de estructura solo es válida para la versión 3 principal y la secundaria 0 o 1, tal y como lo ha indicado el [**FSCTL \_ obtener \_ \_ \_ datos del volumen NTFS**](/windows/win32/api/winioctl/ni-winioctl-fsctl_get_ntfs_volume_data).
+Esta definición de estructura solo es válida para la versión principal 3 y la versión secundaria 0 o 1, como notifica [**FSCTL \_ GET NTFS VOLUME \_ \_ \_ DATA**](/windows/win32/api/winioctl/ni-winioctl-fsctl_get_ntfs_volume_data).
 
 ## <a name="see-also"></a>Vea también
 

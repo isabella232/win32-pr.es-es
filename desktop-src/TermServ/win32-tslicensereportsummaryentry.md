@@ -1,11 +1,11 @@
 ---
-title: Win32_TSLicenseReportSummaryEntry (clase)
-description: Proporciona un resumen de las licencias de acceso de cliente de los Servicios de Escritorio remoto instalados y emitidos por usuario (RDS \ 160; Cal por usuario).
+title: Win32_TSLicenseReportSummaryEntry clase
+description: Proporciona un resumen de las licencias de acceso de cliente Servicios de Escritorio remoto por usuario (RDS \ 160; CAL por usuario).
 ms.assetid: 0FD3BFFE-58B9-4037-969F-8C2323136C9D
 ms.tgt_platform: multiple
 keywords:
 - Win32_TSLicenseReportSummaryEntry clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_TSLicenseReportSummaryEntry de clase, se describe
+- Win32_TSLicenseReportSummaryEntry clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -22,16 +22,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f34482e9c6199ef6586024d43d586421a54071ca
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 58efc2c70019037219d8eca986fa8afd81e4dc2d06cd638ee24fc59947e3bf3e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676579"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119137808"
 ---
-# <a name="win32_tslicensereportsummaryentry-class"></a>\_Clase Win32 TSLicenseReportSummaryEntry
+# <a name="win32_tslicensereportsummaryentry-class"></a>Clase \_ TSLicenseReportSummaryEntry de Win32
 
-Proporciona un resumen de las licencias de acceso de cliente de los Servicios de Escritorio remoto instalados y emitidos por usuario (cal por usuario de RDS).
+Proporciona un resumen de las licencias de acceso de cliente Servicios de Escritorio remoto por usuario (CAL de rds por usuario).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -63,26 +63,26 @@ La **clase \_ TSLicenseReportSummaryEntry de Win32** tiene estas propiedades.
 **InstalledLicenses**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número de cal por usuario de RDS instaladas.
+Número de CAL de RDS por usuario que están instaladas.
 
 </dd> <dt>
 
 **IssuedLicenses**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número de cal por usuario de RDS que se emiten.
+Número de CAL de RDS por usuario que se emiten.
 
 </dd> <dt>
 
@@ -102,21 +102,21 @@ Versión de Servicios de Escritorio remoto para la que se emitió la CAL por usu
 "Windows Server 2012"
 </dt> <dd>
 
-En esta licencia solo se admiten servidores que ejecuten Windows Server 2012, Windows Server 2008 R2 o Windows Server 2008.
+Solo los servidores que Windows Server 2012, Windows Server 2008 R2 o Windows Server 2008 son compatibles con esta licencia.
 
 </dd> <dt>
 
 "Windows Server 7"
 </dt> <dd>
 
-Con esta licencia solo se admiten servidores que ejecuten Windows Server 2008 R2 o Windows Server 2008.
+Solo los servidores que Windows Server 2008 R2 o Windows Server 2008 son compatibles con esta licencia.
 
 </dd> <dt>
 
 "Windows Server 2008"
 </dt> <dd>
 
-Con esta licencia solo se admiten servidores que ejecuten Windows Server 2008.
+Solo los servidores que Windows Server 2008 son compatibles con esta licencia.
 
 </dd> </dl>
 
@@ -125,13 +125,13 @@ Con esta licencia solo se admiten servidores que ejecuten Windows Server 2008.
 **ProductVersionID**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Identificador de la versión del producto para el paquete de claves de licencia de Servicios de Escritorio remoto.
+Identificador de versión del producto para el Servicios de Escritorio remoto de claves de licencia.
 
 <dt>
 
@@ -159,14 +159,14 @@ Windows Server 2008
 1
 </dt> <dd>
 
-No se admite.
+No compatible.
 
 </dd> <dt>
 
 0
 </dt> <dd>
 
-No se admite.
+No compatible.
 
 </dd> </dl>
 
@@ -181,35 +181,35 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La disponibilidad de las cal por usuario de RDS. Será uno de los valores siguientes.
+Disponibilidad de las CAL de RDS por usuario. Este será uno de los siguientes valores.
 
 <dt>
 
-Disponible
+"Disponible"
 </dt> <dd>
 
-Las cal por usuario de RDS están disponibles.
+Las CAL de RDS por usuario están disponibles.
 
 </dd> <dt>
 
-Separados
+"Limitado"
 </dt> <dd>
 
-La disponibilidad de las cal por usuario de RDS es limitada.
+La disponibilidad de las CAL de RDS por usuario es limitada.
 
 </dd> <dt>
 
 "None"
 </dt> <dd>
 
-Las cal por usuario de RDS no están disponibles.
+Las CAL de RDS por usuario no están disponibles.
 
 </dd> <dt>
 
-"No tracking"
+"Not Tracking"
 </dt> <dd>
 
-No se está realizando el seguimiento de la disponibilidad de las cal por usuario de RDS.
+No se realiza el seguimiento de la disponibilidad de las CAL de RDS por usuario.
 
 </dd> </dl>
 
@@ -224,28 +224,28 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Tipo de cal por usuario de RDS. Será uno de los valores siguientes.
+El tipo de CAL de RDS por usuario. Este será uno de los siguientes valores.
 
 <dt>
 
 "Por dispositivo"
 </dt> <dd>
 
-Las cal por usuario de RDS se emiten por dispositivo.
+Las CAL de RDS por usuario se emiten por dispositivo.
 
 </dd> <dt>
 
 "Por usuario"
 </dt> <dd>
 
-Las cal por usuario de RDS se emiten por usuario.
+Las CAL de RDS por usuario se emiten por usuario.
 
 </dd> <dt>
 
-Unknown
+"Desconocido"
 </dt> <dd>
 
-Se desconoce el tipo de cal por usuario de RDS.
+Se desconoce el tipo de CAL de RDS por usuario.
 
 </dd> </dl>
 
@@ -260,7 +260,7 @@ Se desconoce el tipo de cal por usuario de RDS.
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                            |
 | Espacio de nombres<br/>                | Root\\CIMv2<br/>                                                                    |
-| MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TlsWmiProv.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 
 

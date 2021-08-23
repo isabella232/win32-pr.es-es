@@ -1,11 +1,11 @@
 ---
-title: Atributo Version-number-HI
-description: Un número de versión principal de uso general.
+title: Atributo Version-Number-Hi
+description: Número de versión principal de uso general.
 ms.assetid: e5758f30-9508-4af7-a983-f6072707bf1d
 ms.tgt_platform: multiple
 keywords:
-- 'Versión: atributo número-HI esquema AD de AD'
-- versionNumberHi esquema de AD de atributos
+- Esquema de AD del atributo Version-Number-Hi
+- VersionNumberHi attribute AD Schema (Esquema de AD del atributo versionNumberHi)
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 352e4e659a08d7ab9885969d3dd14d9cd03ad47e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7fa755fafdd63a2e366edfa8fc03a80d97bf029f9a3d5f5141578f2c80d2acb4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905900"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081279"
 ---
-# <a name="version-number-hi-attribute"></a>Atributo Version-number-HI
+# <a name="version-number-hi-attribute"></a>Atributo Version-Number-Hi
 
-Un número de versión principal de uso general.
+Número de versión principal de uso general.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | Versión: número-HI                    |
-| Nombre para mostrar de LDAP | versionNumberHi                      |
-| Tamaño              | 4 bytes                              |
-| Actualizar privilegio  | \-                                   |
+| CN                | Version-Number-Hi                    |
+| Ldap-Display-Name | versionNumberHi                      |
+| Size              | 4 bytes                              |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.328               |
-| System-ID-GUID    | 7d6c0e9a-7e20-11d0-afd6-00c04fd930c9 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | 7d6c0e9a-7e20-11d0-afd6-00c04fd930c9 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -55,18 +55,18 @@ Un número de versión principal de uso general.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
-| System-Only            | False                                                            |
-| Tiene un único valor       | True                                                             |
-| Está indexado             | False                                                            |
-| En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| System-Only            | Falso                                                            |
+| Es de un solo valor       | Verdadero                                                             |
+| Está indexado             | Falso                                                            |
+| En el catálogo global      | Falso                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Un número de versión principal de uso general.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                                                                      |
-| System-Only            | False                                                                                                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                                                                                                    |
-| Está indexado             | False                                                                                                                                                                                                   |
-| En el catálogo global      | False                                                                                                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                            |
+| System-Only            | Falso                                                                                                                                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                                    |
+| Está indexado             | Falso                                                                                                                                                                                                   |
+| En el catálogo global      | Falso                                                                                                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                                                                              |
-| Clases usadas en        | [**Versión de la aplicación**](c-applicationversion.md)<br/> [**Paquete-registro**](c-packageregistration.md)<br/> [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/> |
+| Clases usadas en        | [**Versión de la aplicación**](c-applicationversion.md)<br/> [**Registro de paquetes**](c-packageregistration.md)<br/> [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Un número de versión principal de uso general.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                                                                      |
-| System-Only            | False                                                                                                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                                                                                                    |
-| Está indexado             | False                                                                                                                                                                                                   |
-| En el catálogo global      | False                                                                                                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                            |
+| System-Only            | Falso                                                                                                                                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                                    |
+| Está indexado             | Falso                                                                                                                                                                                                   |
+| En el catálogo global      | Falso                                                                                                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                                                                              |
-| Clases usadas en        | [**Versión de la aplicación**](c-applicationversion.md)<br/> [**Paquete-registro**](c-packageregistration.md)<br/> [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/> |
+| Clases usadas en        | [**Versión de la aplicación**](c-applicationversion.md)<br/> [**Registro de paquetes**](c-packageregistration.md)<br/> [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Un número de versión principal de uso general.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                                                                      |
-| System-Only            | False                                                                                                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                                                                                                    |
-| Está indexado             | False                                                                                                                                                                                                   |
-| En el catálogo global      | False                                                                                                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                            |
+| System-Only            | Falso                                                                                                                                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                                    |
+| Está indexado             | Falso                                                                                                                                                                                                   |
+| En el catálogo global      | Falso                                                                                                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                                                                              |
-| Clases usadas en        | [**Versión de la aplicación**](c-applicationversion.md)<br/> [**Paquete-registro**](c-packageregistration.md)<br/> [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/> |
+| Clases usadas en        | [**Versión de la aplicación**](c-applicationversion.md)<br/> [**Registro de paquetes**](c-packageregistration.md)<br/> [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Un número de versión principal de uso general.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                                                                      |
-| System-Only            | False                                                                                                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                                                                                                    |
-| Está indexado             | False                                                                                                                                                                                                   |
-| En el catálogo global      | False                                                                                                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                            |
+| System-Only            | Falso                                                                                                                                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                                    |
+| Está indexado             | Falso                                                                                                                                                                                                   |
+| En el catálogo global      | Falso                                                                                                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                                                                              |
-| Clases usadas en        | [**Versión de la aplicación**](c-applicationversion.md)<br/> [**Paquete-registro**](c-packageregistration.md)<br/> [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/> |
+| Clases usadas en        | [**Versión de la aplicación**](c-applicationversion.md)<br/> [**Registro de paquetes**](c-packageregistration.md)<br/> [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Un número de versión principal de uso general.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                                                                      |
-| System-Only            | False                                                                                                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                                                                                                    |
-| Está indexado             | False                                                                                                                                                                                                   |
-| En el catálogo global      | False                                                                                                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                            |
+| System-Only            | Falso                                                                                                                                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                                    |
+| Está indexado             | Falso                                                                                                                                                                                                   |
+| En el catálogo global      | Falso                                                                                                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                                                                              |
-| Clases usadas en        | [**Versión de la aplicación**](c-applicationversion.md)<br/> [**Paquete-registro**](c-packageregistration.md)<br/> [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/> |
+| Clases usadas en        | [**Versión de la aplicación**](c-applicationversion.md)<br/> [**Registro de paquetes**](c-packageregistration.md)<br/> [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/> |
 
 
 

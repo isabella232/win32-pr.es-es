@@ -25,18 +25,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 4fba27ec5c12e0c3cb18b8a6dfd4a863e59cad62
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 28bb10bc8d450cc1460d8315d056afff72236470ace4c32de28621b5531a3a02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108111513"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119148198"
 ---
 # <a name="msvm_resourcepoolsettingdata-class"></a>Clase \_ ResourcePoolSettingData de Msvm
 
-Representa la configuración de una instancia [**de \_ ResourcePool de Msvm**](msvm-resourcepool.md) que no está relacionada con la asignación.
+Representa la configuración de una [**instancia de \_ ResourcePool de Msvm**](msvm-resourcepool.md) que no está relacionada con la asignación.
 
-La sintaxis siguiente se simplifica Managed Object Format (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se Managed Object Format código (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -201,7 +201,7 @@ Tipo de datos: **matriz de** cadenas
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica el orden en el que se seleccionarán los recursos de host disponibles a través de este grupo al intentar satisfacer una solicitud de asignación, y el recurso host solicitado no está disponible o no se especifica ningún recurso host. Esta propiedad se hereda de [**Msvm \_ AbstractResourcePoolSettingData.**](msvm-abstractresourcepoolsettingdata.md)
+Especifica el orden en el que se seleccionarán los recursos de host disponibles a través de este grupo al intentar satisfacer una solicitud de asignación, y el recurso host solicitado no está disponible o no se especifica ningún recurso de host. Esta propiedad se hereda de [**Msvm \_ AbstractResourcePoolSettingData**](msvm-abstractresourcepoolsettingdata.md).
 
 </dd> <dt>
 
@@ -214,7 +214,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El usuario final proporcionó notas relacionadas con este grupo de recursos. Esta propiedad se hereda de [**Msvm \_ AbstractResourcePoolSettingData.**](msvm-abstractresourcepoolsettingdata.md)
+Notas proporcionadas por el usuario final relacionadas con este grupo de recursos. Esta propiedad se hereda de [**Msvm \_ AbstractResourcePoolSettingData**](msvm-abstractresourcepoolsettingdata.md).
 
 </dd> <dt>
 
@@ -227,7 +227,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cadena que describe el tipo de recurso cuando un valor bien definido no está disponible y **ResourceType** se establece en 0 (Otros). Esta propiedad se hereda de [**Msvm \_ AbstractResourcePoolSettingData.**](msvm-abstractresourcepoolsettingdata.md)
+Cadena que describe el tipo de recurso cuando un valor bien definido no está disponible y **ResourceType** se establece en 0 (Otros). Esta propiedad se hereda de [**Msvm \_ AbstractResourcePoolSettingData**](msvm-abstractresourcepoolsettingdata.md).
 
 </dd> <dt>
 
@@ -240,7 +240,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Identificador del grupo. Esta propiedad se usa para proporcionar correlación entre guardar y restaurar datos de configuración en el almacenamiento persistente subyacente. Esta propiedad se hereda de [**Msvm \_ AbstractResourcePoolSettingData.**](msvm-abstractresourcepoolsettingdata.md)
+Identificador del grupo. Esta propiedad se usa para proporcionar correlación entre guardar y restaurar datos de configuración en el almacenamiento persistente subyacente. Esta propiedad se hereda de [**Msvm \_ AbstractResourcePoolSettingData**](msvm-abstractresourcepoolsettingdata.md).
 
 </dd> <dt>
 
@@ -253,7 +253,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cadena que describe un subtipo específico de implementación para este grupo. Por ejemplo, esto se puede usar para distinguir distintos modelos del mismo tipo de recurso. Esta propiedad se hereda de [**Msvm \_ AbstractResourcePoolSettingData.**](msvm-abstractresourcepoolsettingdata.md)
+Cadena que describe un subtipo específico de la implementación para este grupo. Por ejemplo, esto se puede usar para distinguir diferentes modelos del mismo tipo de recurso. Esta propiedad se hereda de [**Msvm \_ AbstractResourcePoolSettingData**](msvm-abstractresourcepoolsettingdata.md).
 
 </dd> <dt>
 
@@ -321,10 +321,10 @@ Tipo de recurso que este grupo de recursos puede asignar. Esta propiedad se here
 <span id="Disk_Drive"></span><span id="disk_drive"></span><span id="DISK_DRIVE"></span>**Unidad de disco** (17)
 </dt> <dt>
 
-<span id="Tape_Drive"></span><span id="tape_drive"></span><span id="TAPE_DRIVE"></span>**Unidad de** cinta (18)
+<span id="Tape_Drive"></span><span id="tape_drive"></span><span id="TAPE_DRIVE"></span>**Unidad de cinta** (18)
 </dt> <dt>
 
-<span id="Storage_Extent"></span><span id="storage_extent"></span><span id="STORAGE_EXTENT"></span>**Extensión de** almacenamiento (19)
+<span id="Storage_Extent"></span><span id="storage_extent"></span><span id="STORAGE_EXTENT"></span>**Storage extensión** (19)
 </dt> <dt>
 
 <span id="Other_storage_device"></span><span id="other_storage_device"></span><span id="OTHER_STORAGE_DEVICE"></span>**Otro dispositivo de almacenamiento** (20)
@@ -351,7 +351,7 @@ Tipo de recurso que este grupo de recursos puede asignar. Esta propiedad se here
 <span id="Base_Partitionable_Unit"></span><span id="base_partitionable_unit"></span><span id="BASE_PARTITIONABLE_UNIT"></span>**Unidad base particionable** (27)
 </dt> <dt>
 
-<span id="Power"></span><span id="power"></span><span id="POWER"></span>**Potencia** (28)
+<span id="Power"></span><span id="power"></span><span id="POWER"></span>**Energía** (28)
 </dt> <dt>
 
 <span id="Cooling_Capacity"></span><span id="cooling_capacity"></span><span id="COOLING_CAPACITY"></span>**Capacidad de refrigeración** (29)
@@ -363,7 +363,7 @@ Tipo de recurso que este grupo de recursos puede asignar. Esta propiedad se here
 <span id="Logical_Disk"></span><span id="logical_disk"></span><span id="LOGICAL_DISK"></span>**Disco lógico** (31)
 </dt> <dt>
 
-<span id="Storage_Volume"></span><span id="storage_volume"></span><span id="STORAGE_VOLUME"></span>**Volumen de almacenamiento** (32)
+<span id="Storage_Volume"></span><span id="storage_volume"></span><span id="STORAGE_VOLUME"></span>**Storage volumen** (32)
 </dt> <dt>
 
 <span id="Ethernet_Connection"></span><span id="ethernet_connection"></span><span id="ETHERNET_CONNECTION"></span>**Conexión Ethernet** (33)
@@ -381,10 +381,10 @@ Tipo de recurso que este grupo de recursos puede asignar. Esta propiedad se here
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 8 solo \[ aplicaciones de escritorio\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
 | Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

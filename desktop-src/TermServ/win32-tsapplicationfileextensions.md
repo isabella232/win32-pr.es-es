@@ -1,11 +1,11 @@
 ---
-title: Win32_TSApplicationFileExtensions (clase)
-description: Las extensiones de nombre de archivo que se administran mediante una aplicación en un servidor host de sesión de Escritorio remoto (host de sesión de escritorio remoto).
+title: Win32_TSApplicationFileExtensions clase
+description: Las extensiones de nombre de archivo que administra una aplicación en un servidor Escritorio remoto host de sesión de Escritorio remoto.
 ms.assetid: beefc266-5ad6-49ee-b761-98764e2905d6
 ms.tgt_platform: multiple
 keywords:
 - Win32_TSApplicationFileExtensions clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_TSApplicationFileExtensions de clase, se describe
+- Win32_TSApplicationFileExtensions clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -21,16 +21,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e28f84ff122b77abf1474b5686edab627177424b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 47538c589143d234ceebec5f907d67aff3f702034cd7f76e0fb95ea3dd4e0cdb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119421696"
 ---
-# <a name="win32_tsapplicationfileextensions-class"></a>\_Clase Win32 TSApplicationFileExtensions
+# <a name="win32_tsapplicationfileextensions-class"></a>Clase \_ TSApplicationFileExtensions de Win32
 
-Describe las extensiones de nombre de archivo que se administran mediante una aplicación en un servidor host de sesión de Escritorio remoto (host de sesión de escritorio remoto).
+Describe las extensiones de nombre de archivo que administra una aplicación en un Escritorio remoto host de sesión de escritorio remoto.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -54,14 +54,14 @@ La **clase \_ TSApplicationFileExtensions de Win32** tiene estos tipos de miembr
 
 ### <a name="methods"></a>Métodos
 
-La clase **Win32 \_ TSApplicationFileExtensions** tiene estos métodos.
+La **clase \_ TSApplicationFileExtensions de Win32** tiene estos métodos.
 
 
 
 | Método                                                                         | Descripción                                                                                |
 |:-------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------|
-| [**FileAssociations**](fileassociations-win32-tsapplicationfileextensions.md) | Examina el registro para obtener las asociaciones de archivo actuales para una aplicación.<br/>     |
-| [**FileExtensions**](fileextensions-win32-tsapplicationfileextensions.md)     | Proporciona una lista de las extensiones de nombre de archivo controladas por una aplicación.<br/> |
+| [**FileAssociations**](fileassociations-win32-tsapplicationfileextensions.md) | Examina el Registro para obtener las asociaciones de archivo actuales de una aplicación.<br/>     |
+| [**FileExtensions**](fileextensions-win32-tsapplicationfileextensions.md)     | Proporciona una lista de las extensiones de nombre de archivo que administra una aplicación.<br/> |
 
 
 
@@ -87,7 +87,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 
 Descripción breve (cadena de una línea) del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -102,25 +102,25 @@ Tipo de acceso: solo lectura
 
 Descripción del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 ")
+Calificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5")
 </dt> </dl>
 
 Fecha en que se instaló el objeto. La falta de un valor no indica que el objeto no está instalado.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -135,7 +135,7 @@ Tipo de acceso: solo lectura
 
 El nombre del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -151,15 +151,15 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios Estados operativos y no operativos. Los Estados operativos incluyen: "correcto", "degradado" y "Pred FAIL" (un elemento, como una unidad de disco duro habilitada para SMART, puede estar funcionando correctamente pero prediciendo un error en un futuro próximo). Los Estados no operativos incluyen: "error", "iniciando", "deteniendo" y "servicio". El último, "servicio", se puede aplicar durante la resilverización del reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo el trabajo está en línea, pero el elemento administrado no es "OK" ni está en uno de los otros Estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Los estados no operativo incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 <dt>
 
 
 
- ("Correcto")
+ ("Ok")
 
 
 </dt> <dd></dd> <dt>
@@ -187,21 +187,21 @@ Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsys
 
 
 
- ("Pred FAIL")
+ ("Error previo")
 
 
 </dt> <dd></dd> <dt>
 
 
 
- ("Iniciando")
+ ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 
 
- ("Deteniéndose")
+ ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -217,9 +217,9 @@ Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsys
 
 ## <a name="remarks"></a>Observaciones
 
-Para conectarse al \\ espacio de \\ nombres TerminalServices de cimv2 raíz \\ , el nivel de autenticación debe incluir privacidad de paquetes. En el caso de las llamadas de C/C++, se trata de un nivel de autenticación de **\_ \_ \_ \_ \_ privacidad de nivel** de autenticación de RPC C, que se puede establecer mediante la función com [**CoSetProxyBlanket**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket) . En el caso de las llamadas de Visual Basic y scripting, se trata de un nivel de autenticación de **WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de 6.
+Para conectarse al espacio \\ de nombres raíz de \\ TerminalServices cimv2, el nivel de \\ autenticación debe incluir privacidad de paquetes. Para las llamadas de C/C++, se trata de un nivel de autenticación de **RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY**, que se puede establecer mediante la función COM [**CoSetProxyBlanket.**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket) Para Visual Basic y llamadas de scripting, se trata de un nivel de autenticación de **WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de 6.
 
-En el siguiente ejemplo de Visual Basic Scripting Edition (VBScript) se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
+En el ejemplo Visual Basic Scripting Edition (VBScript) siguiente se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
 
 
 ```VB
@@ -230,7 +230,7 @@ Set objServices = GetObject( _
 
 
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -240,8 +240,8 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>Tsallow. mof</dt> </dl>  |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
+| MOF<br/>                      | <dl> <dt>Tsallow.mof</dt> </dl>  |
 | Archivo DLL<br/>                      | <dl> <dt>TsPubWmi.dll</dt> </dl> |
 
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d28837ed2abbab5846c8a5609ab7ff59ac0d49c4
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d6fcdeec5a15a817a30c900c2e8ed3ae0cd5b46154b352dafd7ed5774f5bf79f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093703"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987385"
 ---
 # <a name="id3dxkeyframedanimationsetgetsourcetickspersecond-method"></a>Método ID3DXKeyframedAnimationSet::GetSourceTicksPerSecond
 
@@ -55,7 +55,7 @@ Número de tics de fotograma clave de animación que se producen por segundo.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

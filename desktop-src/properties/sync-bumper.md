@@ -4,12 +4,12 @@ ms.assetid: c69e4deb-2e18-4637-88ca-6d72ae41f95f
 title: Sync
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f4e66ac593282badb9c86770cdb5157ca86a329
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 928b1e6832a4fe1d583083be7caee6aee6fadb5cce7c9195edc787d9d0d44fb4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113803"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119095322"
 ---
 # <a name="sync"></a>Sync
 
@@ -30,7 +30,7 @@ ms.locfileid: "108113803"
 | [System.Sync.HandlerTypeLabel](./props-system-sync-handlertypelabel.md)<br/>             |                                                                                         |
 | [System.Sync.ItemID](./props-system-sync-itemid.md)<br/>                                 |                                                                                         |
 | [System.Sync.ItemName](./props-system-sync-itemname.md)<br/>                             |                                                                                         |
-| [System.Sync.ProgressPercentage](./props-system-sync-progresspercentage.md)<br/>         | Valor entero comprendido entre 0 y 100 que representa el porcentaje completado.<br/> |
+| [System.Sync.ProgressPercentage](./props-system-sync-progresspercentage.md)<br/>         | Valor entero entre 0 y 100 que representa el porcentaje completado.<br/> |
 | [System.Sync.State](./props-system-sync-state.md)<br/>                                   | Estado de la sincronización del sistema.<br/>                                                   |
 | [System.Sync.Status](./props-system-sync-status.md)<br/>                                 | Estado de la sincronización del sistema.<br/>                                                  |
 

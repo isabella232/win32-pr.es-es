@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MCM_GETCALENDARBORDER (commctrl. h)
+title: MCM_GETCALENDARBORDER mensaje (Commctrl.h)
 description: Obtiene el tamaño del borde, en píxeles. Puede enviar este mensaje explícitamente o mediante la macro MonthCal \_ GetCurrentView.
 ms.assetid: 68366ee1-7511-46a5-aab0-a42fb80c265f
 keywords:
-- MCM_GETCALENDARBORDER controles de mensajes de Windows
+- MCM_GETCALENDARBORDER controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 581eeb5c060f725d3f884f4c19d7d3da3023c63a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c9c0755a516334b0e01827c37c6e26ebcfe270bedb2b2b089bb19ea8517aafca
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534678"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119319805"
 ---
-# <a name="mcm_getcalendarborder-message"></a>Mensaje de MCM \_ GETCALENDARBORDER
+# <a name="mcm_getcalendarborder-message"></a>Mensaje \_ GETCALENDARBORDER de MCM
 
-Obtiene el tamaño del borde, en píxeles. Puede enviar este mensaje explícitamente o mediante la macro [**MonthCal \_ GetCurrentView**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_getcurrentview) .
+Obtiene el tamaño del borde, en píxeles. Puede enviar este mensaje explícitamente o mediante la macro [**MonthCal \_ GetCurrentView.**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_getcurrentview)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -51,11 +51,11 @@ Tamaño del borde, en píxeles.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,10 +1,10 @@
 ---
-title: atributo msNPAllowDialin
-description: Indica si la cuenta tiene permiso para conectarse al servidor RAS.
+title: Atributo msNPAllowDialin
+description: Indica si la cuenta tiene permiso para acceder al servidor RAS.
 ms.assetid: 8e0d98b4-93b1-4a76-a8b7-d6017028b48a
 ms.tgt_platform: multiple
 keywords:
-- msNPAllowDialin esquema de AD de atributos
+- Esquema de AD del atributo msNPAllowDialin
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e56f9fe3817053e3e1e49611fb76934acbbcba9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8e06078c64ebe8717d6f8de3be4268db2686fb80779e64425ac39c4471d5859b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151784"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081709"
 ---
-# <a name="msnpallowdialin-attribute"></a>atributo msNPAllowDialin
+# <a name="msnpallowdialin-attribute"></a>Atributo msNPAllowDialin
 
-Indica si la cuenta tiene permiso para conectarse al servidor RAS. No modifique este valor directamente. Utilice la [función de administración ras](/windows/desktop/RRAS/ras-administration-functions) adecuada para modificar este valor.
+Indica si la cuenta tiene permiso para acceder al servidor RAS. No modifique este valor directamente. Use la función de [administración de RAS adecuada](/windows/desktop/RRAS/ras-administration-functions) para modificar este valor.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | msNPAllowDialin                      |
-| Nombre para mostrar de LDAP | msNPAllowDialin                      |
-| Tamaño              | 4 bytes                              |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | msNPAllowDialin                      |
+| Size              | 4 bytes                              |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1119              |
-| System-ID-GUID    | db0c9085-c1f2-11d1-bbc5-0080c76670c0 |
-| Sintaxis            | [**Booleano**](s-boolean.md)         |
+| System-Id-Guid    | db0c9085-c1f2-11d1-él5-0080c76670c0 |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 
@@ -54,18 +54,18 @@ Indica si la cuenta tiene permiso para conectarse al servidor RAS. No modifique 
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -75,18 +75,18 @@ Indica si la cuenta tiene permiso para conectarse al servidor RAS. No modifique 
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -94,20 +94,20 @@ Indica si la cuenta tiene permiso para conectarse al servidor RAS. No modifique 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ Indica si la cuenta tiene permiso para conectarse al servidor RAS. No modifique 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -138,18 +138,18 @@ Indica si la cuenta tiene permiso para conectarse al servidor RAS. No modifique 
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -159,18 +159,18 @@ Indica si la cuenta tiene permiso para conectarse al servidor RAS. No modifique 
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 

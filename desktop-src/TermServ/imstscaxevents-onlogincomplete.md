@@ -1,12 +1,12 @@
 ---
-title: IMsTscAxEvents OnLoginComplete, método
-description: Se llama cuando el control de cliente ha iniciado sesión correctamente en un servidor de host de sesión de Escritorio remoto (host de sesión de escritorio remoto), siguiendo la presentación del cuadro de diálogo de inicio de sesión de Windows.
+title: Método IMsTscAxEvents OnLoginComplete
+description: Se llama cuando el control de cliente ha iniciado sesión correctamente en un servidor de host de sesión de Escritorio remoto (host de sesión de Escritorio remoto), después de la presentación del cuadro de diálogo Windows inicio de sesión.
 ms.assetid: acb345a6-3153-4b8f-ac51-fe0c19fa750a
 ms.tgt_platform: multiple
 keywords:
 - Método OnLoginComplete Servicios de Escritorio remoto
-- Método OnLoginComplete Servicios de Escritorio remoto, interfaz IMsTscAxEvents
-- Interfaz IMsTscAxEvents Servicios de Escritorio remoto, método OnLoginComplete
+- Método OnLoginComplete Servicios de Escritorio remoto , interfaz IMsTscAxEvents
+- Interfaz IMsTscAxEvents Servicios de Escritorio remoto método , OnLoginComplete
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 74d6b63f74ed99c8af939bafdc8a55a41e33b404
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d6c89b494a250652e054e245eb0de3267a860bec1a193c7dc953f93fd0800c2a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534443"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138438"
 ---
-# <a name="imstscaxeventsonlogincomplete-method"></a>IMsTscAxEvents:: OnLoginComplete (método)
+# <a name="imstscaxeventsonlogincomplete-method"></a>IMsTscAxEvents::OnLoginComplete (método)
 
-Se llama cuando el control de cliente ha iniciado sesión correctamente en un servidor de host de sesión de Escritorio remoto (host de sesión de escritorio remoto), siguiendo la presentación del cuadro de diálogo de inicio de sesión de Windows.
+Se llama cuando el control de cliente ha iniciado sesión correctamente en un servidor de host de sesión de Escritorio remoto (host de sesión de Escritorio remoto), después de la presentación del cuadro de diálogo Windows inicio de sesión.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,15 +45,15 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Implemente este método en el receptor de eventos para recibir la notificación de que el control ha completado el inicio de sesión.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra cómo controlar este evento utilizando Visual Basic código de scripting. La suposición en este ejemplo es que el objeto de control se denomina "MsRdpClient".
+En el ejemplo siguiente se muestra cómo controlar este evento mediante Visual Basic código de scripting. La suposición en este ejemplo es que el objeto de control se denomina "MsRdpClient".
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 
 ```VB

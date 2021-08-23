@@ -1,12 +1,12 @@
 ---
-title: IMsTscAxEvents OnNetworkStatusChanged, método
-description: Se llama cuando el estado de la red ha cambiado. | IMsTscAxEvents OnNetworkStatusChanged, método
+title: Método IMsTscAxEvents OnNetworkStatusChanged
+description: Se llama cuando el estado de la red ha cambiado. | Método IMsTscAxEvents OnNetworkStatusChanged
 ms.assetid: 177A410E-2449-4FC7-8DE5-21F83A6DD028
 ms.tgt_platform: multiple
 keywords:
 - Método OnNetworkStatusChanged Servicios de Escritorio remoto
-- Método OnNetworkStatusChanged Servicios de Escritorio remoto, interfaz IMsTscAxEvents
-- Interfaz IMsTscAxEvents Servicios de Escritorio remoto, método OnNetworkStatusChanged
+- Método OnNetworkStatusChanged Servicios de Escritorio remoto , interfaz IMsTscAxEvents
+- Interfaz IMsTscAxEvents Servicios de Escritorio remoto método , OnNetworkStatusChanged
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2b9bdcd7774493fcc54e1390ad199a6a56a7c51
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 8c139dc314453d6ad921471857410285813afc9c9b48691bcc9c82bf33c8b517
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105678675"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138408"
 ---
-# <a name="imstscaxeventsonnetworkstatuschanged-method"></a>IMsTscAxEvents:: OnNetworkStatusChanged (método)
+# <a name="imstscaxeventsonnetworkstatuschanged-method"></a>Método IMsTscAxEvents::OnNetworkStatusChanged
 
 Se llama cuando el estado de la red ha cambiado.
 
@@ -45,10 +45,10 @@ void OnNetworkStatusChanged(
 
 <dl> <dt>
 
-*qualityLevel* \[ de\]
+*qualityLevel* \[ En\]
 </dt> <dd>
 
-Especifica la nueva velocidad de conexión. Será uno de los valores siguientes.
+Especifica la nueva velocidad de conexión. Este será uno de los siguientes valores.
 
 <dt>
 
@@ -62,32 +62,32 @@ Menos de 512 kilobytes por segundo (KBps).
 2
 </dt> <dd>
 
-de 512 a 1.999 KBps.
+De 512 a 1999 KBps.
 
 </dd> <dt>
 
 3
 </dt> <dd>
 
-de 2.000 a 9.999 KBps.
+De 2000 a 9999 KBps.
 
 </dd> <dt>
 
 4
 </dt> <dd>
 
-Mayor o igual que 10.000 KBps.
+Mayor o igual que 10 000 KBps.
 
 </dd> </dl> </dd> <dt>
 
-*ancho de banda* \[ de\]
+*ancho de banda* \[ En\]
 </dt> <dd>
 
 Especifica el ancho de banda de conexión.
 
 </dd> <dt>
 
-*RTT* \[ de\]
+*rtt* \[ En\]
 </dt> <dd>
 
 Especifica la latencia de conexión.

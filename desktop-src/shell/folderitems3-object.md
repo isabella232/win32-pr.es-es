@@ -13,18 +13,18 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: e8ffe325-e6ae-4fa0-9824-22721c2d97c8
-ms.openlocfilehash: f9495516ebd6f6a149d50f8ec02997b043661a64
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 4cfee6d0f26d1e21c5ba6615e208e758c9cd7641db16c57dcecf0e31e52dceef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109840666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119093079"
 ---
 # <a name="folderitems3-object"></a>Objeto FolderItems3
 
 Extiende el [**objeto FolderItems2.**](folderitems2-object.md) Este objeto admite un método y una propiedad adicionales.
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
 El **objeto FolderItems3** tiene estos tipos de miembros:
 
@@ -39,7 +39,7 @@ El **objeto FolderItems3** tiene estos métodos.
 
 | Método                                | Descripción                                                       |
 |:--------------------------------------|:------------------------------------------------------------------|
-| [**Filter**](folderitems3-filter.md) | Establece un filtro de caracteres comodín que se aplicará a los elementos devueltos.<br/> |
+| [**Filtro**](folderitems3-filter.md) | Establece un filtro comodín que se aplicará a los elementos devueltos.<br/> |
 
 
 
@@ -63,7 +63,7 @@ El **objeto FolderItems3** tiene estas propiedades.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                    |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                          |

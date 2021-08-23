@@ -1,7 +1,7 @@
 ---
-description: Obtiene el identificador de una función buscando su nombre.
+description: Obtiene el identificador de una función mediante la búsqueda de su nombre.
 ms.assetid: 1e2e2dae-5084-47f3-9812-3dbf609bd70b
-title: 'ID3DXBaseEffect:: GetFunctionByName (método) (D3DX9Effect. h)'
+title: Método ID3DXBaseEffect::GetFunctionByName (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: e1cd9ec56ff5df3bff293ade0669b4cd7c8dad5d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: bcc16fa8136332e2a5d1a87956e1d4cc6a2a562b7e4e3531efbcc09f1314978b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362781"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119121978"
 ---
-# <a name="id3dxbaseeffectgetfunctionbyname-method"></a>ID3DXBaseEffect:: GetFunctionByName (método)
+# <a name="id3dxbaseeffectgetfunctionbyname-method"></a>Método ID3DXBaseEffect::GetFunctionByName
 
-Obtiene el identificador de una función buscando su nombre.
+Obtiene el identificador de una función mediante la búsqueda de su nombre.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,7 +40,7 @@ D3DXHANDLE GetFunctionByName(
 
 <dl> <dt>
 
-*pName* \[ de\]
+*pName* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
@@ -53,7 +53,7 @@ Cadena que contiene el nombre de la función.
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Devuelve el identificador de la función especificada, o **null** si no se encuentra el nombre. Vea [identificadores (Direct3D 9)](handles.md).
+Devuelve el identificador de la función especificada o **NULL** si no se encontró el nombre. Vea [Identificadores (Direct3D 9).](handles.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Devuelve el identificador de la función especificada, o **null** si no se encue
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Representa el servicio de migración del sistema virtual. Se usa para migrar un sistema virtual o para migrar el almacenamiento de un sistema virtual de una plataforma de virtualización a otra.
 ms.assetid: af25e405-4498-40a8-ba8e-4b3873c56097
-title: Msvm_VirtualSystemMigrationService (clase)
+title: Msvm_VirtualSystemMigrationService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -44,18 +44,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 1e80cb12e6e6767b49670a1aff68c9791f224068
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 87fa9fe2b15c7ed013e5e8cb8687c4d3ccb02193b48ee037c55273a50a7f84e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103808767"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147968"
 ---
-# <a name="msvm_virtualsystemmigrationservice-class"></a>MSVM \_ VirtualSystemMigrationService (clase)
+# <a name="msvm_virtualsystemmigrationservice-class"></a>Clase Msvm \_ VirtualSystemMigrationService
 
 Representa el servicio de migración del sistema virtual. Se usa para migrar un sistema virtual o para migrar el almacenamiento de un sistema virtual de una plataforma de virtualización a otra.
 
-La siguiente sintaxis es código simplificado de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se Managed Object Format código (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -99,29 +99,29 @@ class Msvm_VirtualSystemMigrationService : CIM_VirtualSystemMigrationService
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ VirtualSystemMigrationService** tiene estos tipos de miembros:
+La **clase Msvm \_ VirtualSystemMigrationService** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La clase **MSVM \_ VirtualSystemMigrationService** tiene estos métodos.
+La **clase Msvm \_ VirtualSystemMigrationService** tiene estos métodos.
 
 
 
 | Método                                                                                                                  | Descripción                                                                                                                                                                  |
 |:------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**AddNetworkSettings**](addnetworksettings-msvm-virtualsystemmigrationservice.md)                                     | Agrega subredes de red de migración para el servicio de migración del sistema virtual.<br/>                                                                                          |
-| [**CheckSystemCompatibilityInfo**](checksystemcompatibilityinfo-msvm-virtualsystemmigrationservice.md)                 | Comprueba la información de compatibilidad para la compatibilidad con el sistema del equipo host.<br/>                                                                          |
+| [**CheckSystemCompatibilityInfo**](checksystemcompatibilityinfo-msvm-virtualsystemmigrationservice.md)                 | Comprueba la compatibilidad de la información de compatibilidad con el sistema del equipo host.<br/>                                                                          |
 | [**CheckVirtualSystemIsMigratable**](checkvirtualsystemismigratable-msvm-virtualsystemmigrationservice.md)             | Método para migrar un sistema virtual o el almacenamiento de un sistema virtual a un host de destino especificado por un nombre de host.<br/>                                              |
 | [**CheckVirtualSystemIsMigratableToHost**](checkvirtualsystemismigratabletohost-msvm-virtualsystemmigrationservice.md) | Determina si el sistema virtual especificado se puede migrar a un host de destino especificado por un nombre de red o una dirección IP.<br/>                                       |
-| [**GetSystemCompatibilityInfo**](getsystemcompatibilityinfo-msvm-virtualsystemmigrationservice.md)                     | Genera un BLOB opaco de datos que contiene información de compatibilidad del sistema especificado.<br/>                                                                |
+| [**GetSystemCompatibilityInfo**](getsystemcompatibilityinfo-msvm-virtualsystemmigrationservice.md)                     | Genera un blob opaco de datos que contiene información de compatibilidad para el sistema especificado.<br/>                                                                |
 | [**GetSystemCompatibilityVectors**](getsystemcompatibilityvectors-msvm-virtualsystemmigrationservice.md)               | Obtiene vectores de compatibilidad para una máquina virtual o un host.<br/> **Windows 8.1:** Este valor no se admite hasta Windows 8.1 y Windows Server 2012 R2.<br/> |
 | [**MigrateVirtualSystemToHost**](migratevirtualsystemtohost-msvm-virtualsystemmigrationservice.md)                     | Migra un sistema virtual o el almacenamiento de un sistema virtual a un host de destino especificado por un nombre de host.<br/>                                                       |
 | [**MigrateVirtualSystemToSystem**](migratevirtualsystemtosystem-msvm-virtualsystemmigrationservice.md)                 | Mueve, migra o reubica un sistema virtual en un sistema de destino.<br/>                                                                                                |
-| [**ModifyNetworkSettings**](modifynetworksettings-msvm-virtualsystemmigrationservice.md)                               | Modifica las subredes de la red de migración del servicio de migración del sistema virtual.<br/>                                                                                       |
-| [**ModifyServiceSettings**](modifyservicesettings-msvm-virtualsystemmigrationservice.md)                               | Modifica los datos de configuración para el servicio de migración.<br/>                                                                                                              |
+| [**ModifyNetworkSettings**](modifynetworksettings-msvm-virtualsystemmigrationservice.md)                               | Modifica las subredes de red de migración del servicio de migración del sistema virtual.<br/>                                                                                       |
+| [**ModifyServiceSettings**](modifyservicesettings-msvm-virtualsystemmigrationservice.md)                               | Modifica los datos de configuración del servicio de migración.<br/>                                                                                                              |
 | [**RemoveNetworkSettings**](removenetworksettings-msvm-virtualsystemmigrationservice.md)                               | Quita las subredes de la red de migración del servicio de migración del sistema virtual.<br/>                                                                                      |
 | [**RequestStateChange**](msvm-virtualsystemmigrationservice-requeststatechange.md)                                     | Solicita un cambio de estado<br/>                                                                                                                                           |
 | [**StartService**](msvm-virtualsystemmigrationservice-startservice.md)                                                 | inicia el servicio.<br/>                                                                                                                                               |
@@ -133,46 +133,46 @@ La clase **MSVM \_ VirtualSystemMigrationService** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ VirtualSystemMigrationService** tiene estas propiedades.
+La **clase Msvm \_ VirtualSystemMigrationService** tiene estas propiedades.
 
 <dl> <dt>
 
 **ActiveStorageMigrationCount**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El número de migraciones de almacenamiento actuales en curso.
+Número de migraciones de almacenamiento actuales en curso.
 
 </dd> <dt>
 
 **ActiveVirtualSystemMigrationCount**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El número de migraciones actuales del sistema virtual en curso.
+Número de migraciones actuales del sistema virtual en curso.
 
 </dd> <dt>
 
 **AvailableRequestedStates**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica los valores posibles para el parámetro *RequestedState* del método **RequestStateChange** . Esta propiedad se hereda de [**\_ EnabledLogicalElement CIM**](/previous-versions//cc136818(v=vs.85)).
+Indica los valores posibles para el *parámetro RequestedState* del **método RequestStateChange.** Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85))
 
 </dd> <dt>
 
@@ -185,20 +185,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Breve descripción del objeto. Esta propiedad se hereda de [**la \_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre está establecida en "servicio de migración de Hyper-V".
+Breve descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "Servicio de migración de Hyper-V".
 
 </dd> <dt>
 
 **CommunicationStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica la capacidad de la instrumentación de comunicarse con el elemento administrado subyacente. Un valor **null** indica que esta propiedad no está implementada. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Indica la capacidad de la instrumentación para comunicarse con el elemento administrado subyacente. Un **valor** NULL indica que esta propiedad no está implementada. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
@@ -211,7 +211,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre de la clase o subclase utilizada en la creación de una instancia de. Esta propiedad se hereda del [**\_ servicio CIM**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en "MSVM \_ VirtualSystemMigrationService".
+Nombre de la clase o subclase utilizada en la creación de una instancia de . Esta propiedad se hereda del servicio [**\_ CIM**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en "Msvm \_ VirtualSystemMigrationService".
 
 </dd> <dt>
 
@@ -224,20 +224,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Descripción del objeto. Esta propiedad se hereda de [**la \_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre está establecida en "servicio de migración de Hyper-V".
+Descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "Servicio de migración de Hyper-V".
 
 </dd> <dt>
 
 **DetailedStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Complementa la propiedad **PrimaryStatus** con detalles de estado adicionales. Un valor **null** indica que esta propiedad no está implementada. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Complementa la propiedad **PrimaryStatus con** detalles de estado adicionales. Un **valor** NULL indica que esta propiedad no está implementada. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
@@ -250,20 +250,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre para mostrar del objeto. Esta propiedad se hereda de [**la \_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre está establecida en "servicio de migración de Hyper-V".
+Nombre para mostrar del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "Servicio de migración de Hyper-V".
 
 </dd> <dt>
 
 **EnabledDefault**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Configuración predeterminada o de inicio de un administrador para el estado habilitado de un elemento. Esta propiedad se hereda de [**\_ EnabledLogicalElement CIM**](/previous-versions//cc136818(v=vs.85))y siempre está establecida en 2 (habilitada).
+Configuración predeterminada o de inicio de un administrador para el estado habilitado de un elemento. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))y siempre se establece en 2 (habilitado).
 
 </dd> <dt>
 
@@ -276,33 +276,33 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Estados habilitado y deshabilitado de un elemento. Esta propiedad también puede indicar las transiciones entre estos Estados solicitados. Esta propiedad se hereda de [**\_ EnabledLogicalElement CIM**](/previous-versions//cc136818(v=vs.85))y siempre está establecida en 2 (habilitada).
+Estados habilitados y deshabilitados de un elemento. Esta propiedad también puede indicar las transiciones entre estos estados solicitados. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))y siempre se establece en 2 (Habilitado).
 
 </dd> <dt>
 
 **HealthState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Estado actual del elemento. Este atributo expresa el estado de este elemento, pero no necesariamente el de sus subcomponentes. Los valores posibles son de 0 a 30, donde 5 significa que el elemento es completamente correcto y 30 significa que el elemento no es totalmente funcional. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)y siempre está establecida en 5 (Aceptar).
+Estado actual del elemento. Este atributo expresa el estado de este elemento, pero no necesariamente el de sus subcomponentes. Los valores posibles son de 0 a 30, donde 5 significa que el elemento es completamente correcto y 30 significa que el elemento es completamente no funcional. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)y siempre se establece en 5 (correcto).
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Fecha y hora en que se creó la configuración de la máquina virtual. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Fecha y hora en que se creó la configuración de la máquina virtual. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
@@ -315,23 +315,23 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
-Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en **null**.
+Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en **Null.**
 
 </dd> <dt>
 
 **MigrationServiceListenerIPAddressList**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La lista de direcciones IP de host que se pueden usar para la migración del sistema virtual.
+Lista de direcciones IP de host que se pueden usar para la migración del sistema virtual.
 
 </dd> <dt>
 
@@ -344,33 +344,33 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Etiqueta por la que se conoce el objeto. Esta propiedad se hereda del [**\_ servicio CIM**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en "migrationwmi".
+Etiqueta por la que se conoce el objeto. Esta propiedad se hereda del servicio [**CIM \_**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en "migrationwmi".
 
 </dd> <dt>
 
 **OperatingStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Proporciona información sobre el estado actual de la condición operativa del elemento y se puede usar para proporcionar más detalles con respecto al valor de la propiedad **EnabledState** . Un valor **null** indica que esta propiedad no está implementada. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Proporciona información de estado actual para la condición operativa del elemento y se puede usar para proporcionar más detalles con respecto al valor de la **propiedad EnabledState.** Un **valor** NULL indica que esta propiedad no está implementada. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **OperationalStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Estados actuales del objeto. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)y cada elemento de la matriz siempre se establece en 2 (correcto).
+Estados actuales del objeto. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)y cada elemento de matriz siempre se establece en 2 (correcto).
 
 </dd> <dt>
 
@@ -383,7 +383,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cadena que describe el estado habilitado o deshabilitado del elemento cuando la propiedad **EnabledState** está establecida en 1 (otro). Esta propiedad debe establecerse en **null** cuando **EnabledState** es cualquier valor distinto de 1. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))y siempre está establecida en **null**.
+Cadena que describe el estado habilitado o deshabilitado del elemento cuando la **propiedad EnabledState** está establecida en 1 (Other). Esta propiedad debe establecerse en **Null cuando** **EnabledState** es cualquier valor distinto de 1. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))y siempre se establece en **Null.**
 
 </dd> <dt>
 
@@ -396,7 +396,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Valor que proporciona información sobre cómo se puede alcanzar el propietario principal del servicio (por ejemplo, el número de teléfono, la dirección de correo electrónico, etc.). Esta propiedad se hereda del [**\_ servicio CIM**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en **null**.
+Valor que proporciona información sobre cómo se puede acceder al propietario principal del servicio (por ejemplo, el número de teléfono, la dirección de correo electrónico, entre otros). Esta propiedad se hereda del [**servicio \_ CIM**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en **Null.**
 
 </dd> <dt>
 
@@ -409,37 +409,37 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre del propietario principal del servicio, si se ha definido uno. El propietario principal es el contacto de soporte inicial para el servicio. Esta propiedad se hereda del [**\_ servicio CIM**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en **null**.
+Nombre del propietario principal del servicio, si se define uno. El propietario principal es el contacto inicial de soporte técnico para el servicio. Esta propiedad se hereda del [**servicio \_ CIM**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en **Null.**
 
 </dd> <dt>
 
 **PrimaryStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Proporciona información de estado de alto nivel. Esta propiedad debe utilizarse junto con la propiedad **DetailedStatus** para proporcionar el estado de mantenimiento detallado y de alto nivel del elemento y sus subcomponentes. Un valor **null** indica que esta propiedad no está implementada. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Proporciona información de estado de alto nivel. Esta propiedad debe usarse junto con la propiedad **DetailedStatus** para proporcionar un estado de mantenimiento detallado y de alto nivel del elemento y sus subcomponentes. Un **valor** NULL indica que esta propiedad no está implementada. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **RequestedState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Último estado solicitado o deseado del elemento. El estado real del elemento se representa mediante **EnabledState**. Esta propiedad se proporciona para comparar los Estados actual y habilitado o deshabilitado en último lugar. Una instancia concreta de [**\_ EnabledLogicalElement de CIM**](/previous-versions//cc136818(v=vs.85)) podría no admitir el método **RequestStateChange** . Si esto ocurre, se usa el valor 12 (no aplicable). Esta propiedad se hereda de **\_ EnabledLogicalElement CIM** y siempre está establecida en 12 (no aplicable).
+Último estado solicitado o deseado para el elemento. El estado real del elemento se representa mediante **EnabledState**. Esta propiedad se proporciona para comparar los últimos estados solicitados y los estados habilitados o deshabilitados actuales. Es posible que una instancia [**determinada de CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)) no admita el **método RequestStateChange.** Si esto ocurre, se usa el valor 12 (no aplicable). Esta propiedad se hereda de **CIM \_ EnabledLogicalElement** y siempre se establece en 12 (no aplicable).
 
 </dd> <dt>
 
-**Iniciado**
+**Comenzó**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
@@ -448,7 +448,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si el servicio se está ejecutando actualmente. Esta propiedad se hereda del [**\_ servicio CIM**](/windows/desktop/CIMWin32Prov/cim-service).
+Indica si el servicio se está ejecutando actualmente. Esta propiedad se hereda del [**servicio CIM. \_**](/windows/desktop/CIMWin32Prov/cim-service)
 
 </dd> <dt>
 
@@ -461,7 +461,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Un valor de cadena que indica si el servicio se inicia automáticamente por un sistema, un sistema operativo o se inicia solo después de la solicitud. Esta propiedad se hereda del [**\_ servicio CIM**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en **null**.
+Valor de cadena que indica si un sistema, un sistema operativo o un sistema operativo inician automáticamente el servicio solo a petición. Esta propiedad se hereda del [**servicio \_ CIM**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en **Null.**
 
 </dd> <dt>
 
@@ -474,20 +474,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)y siempre está establecida en "OK".
+Esta propiedad se hereda de [**Cim \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)y siempre se establece en "Ok".
 
 </dd> <dt>
 
 **StatusDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cadenas que describen los distintos valores de la matriz **OperationalStatus** . Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)y las cadenas siempre se establecen en "OK".
+Cadenas que describen los distintos **valores de la matriz OperationalStatus.** Esta propiedad se hereda de [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)y las cadenas siempre se establecen en "Ok".
 
 </dd> <dt>
 
@@ -500,7 +500,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre de la clase de creación del sistema de ámbito. Esta propiedad se hereda del [**\_ servicio CIM**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en "MSVM \_ ComputerSystem".
+Nombre de clase de creación del sistema de ámbito. Esta propiedad se hereda del servicio [**CIM \_**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en "Msvm \_ ComputerSystem".
 
 </dd> <dt>
 
@@ -513,33 +513,33 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre del sistema del equipo host. Esta propiedad se hereda del [**\_ servicio CIM**](/windows/desktop/CIMWin32Prov/cim-service).
+Nombre del sistema del equipo host. Esta propiedad se hereda del [**servicio CIM. \_**](/windows/desktop/CIMWin32Prov/cim-service)
 
 </dd> <dt>
 
 **TimeOfLastStateChange**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Fecha u hora en que se cambió por última vez el estado habilitado del elemento. Esta propiedad se hereda de [**\_ EnabledLogicalElement CIM**](/previous-versions//cc136818(v=vs.85)).
+Fecha u hora en que cambió por última vez el estado habilitado del elemento. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85))
 
 </dd> <dt>
 
 **TransitioningToState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica el estado de destino al que la instancia está cambiando. Esta propiedad se hereda de [**\_ EnabledLogicalElement CIM**](/previous-versions//cc136818(v=vs.85)).
+Indica el estado de destino al que se está transfiriendo la instancia. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85))
 
 </dd> </dl>
 
@@ -547,12 +547,12 @@ Indica el estado de destino al que la instancia está cambiando. Esta propiedad 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
