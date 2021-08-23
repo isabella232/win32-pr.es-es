@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-Other-Settings
-description: Este atributo con varios valores se utiliza para almacenar cualquier valor configurable para el DS almacenado en el formato de valor de nombre.
+title: Atributo ms-DS-Other-Configuración
+description: Este atributo de varios valores se usa para almacenar cualquier configuración configurable para el DS almacenado en el formato NAME VALUE.
 ms.assetid: e7d17c8e-6264-43d1-9010-9d589f93a086
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-Other-Settings
-- atributo msDS-Other-Settings esquema de AD
+- ms-DS-Other-Configuración esquema de AD
+- msDS-Other-Configuración esquema de AD
 topic_type:
 - apiref
 api_name:
@@ -14,36 +14,36 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e3699ac7983f33730cb73bb0f1eab0c13e72cbce
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d6a4e7a62313d905f5f26281bdc967631658d12eadd17ffbd4f4f3c1100db6ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906031"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119551985"
 ---
-# <a name="ms-ds-other-settings-attribute"></a>atributo MS-DS-Other-Settings
+# <a name="ms-ds-other-settings-attribute"></a>Atributo ms-DS-Other-Configuración
 
-Este atributo con varios valores se usa para almacenar cualquier valor configurable para el DS almacenado en el formato nombre = valor.
+Este atributo de varios valores se usa para almacenar cualquier configuración configurable para el DS almacenado en el formato NAME=VALUE.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-DS-Other-Settings                        |
-| Nombre para mostrar de LDAP | msDS-Other-Settings                         |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | ms-DS-Other-Configuración                        |
+| Ldap-Display-Name | msDS-Other-Configuración                         |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1621                     |
-| System-ID-GUID    | 79d2f34c-9d7d-42bb-838f-866b3e4400e2        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 79d2f34c-9d7d-42bb-838f-866b3e4400e2        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
 ## <a name="implementations"></a>Implementaciones
 
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -55,39 +55,39 @@ Este atributo con varios valores se usa para almacenar cualquier valor configura
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | False                                            |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Falso                                            |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Clases usadas en        | [**NTDS-servicio**](c-ntdsservice.md)<br/> |
+| Clases usadas en        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | False                                            |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Falso                                            |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Clases usadas en        | [**NTDS-servicio**](c-ntdsservice.md)<br/> |
+| Clases usadas en        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Este atributo con varios valores se usa para almacenar cualquier valor configura
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | False                                            |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Falso                                            |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Clases usadas en        | [**NTDS-servicio**](c-ntdsservice.md)<br/> |
+| Clases usadas en        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Este atributo con varios valores se usa para almacenar cualquier valor configura
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | False                                            |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Falso                                            |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Clases usadas en        | [**NTDS-servicio**](c-ntdsservice.md)<br/> |
+| Clases usadas en        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Este atributo con varios valores se usa para almacenar cualquier valor configura
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | False                                            |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Falso                                            |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Clases usadas en        | [**NTDS-servicio**](c-ntdsservice.md)<br/> |
+| Clases usadas en        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Este atributo con varios valores se usa para almacenar cualquier valor configura
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | False                                            |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Falso                                            |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Clases usadas en        | [**NTDS-servicio**](c-ntdsservice.md)<br/> |
+| Clases usadas en        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 

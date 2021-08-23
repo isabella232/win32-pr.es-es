@@ -1,11 +1,11 @@
 ---
-title: Prior-Value atributo)
-description: Valor anterior para un secreto.
+title: Prior-Value atributo
+description: Valor anterior de un secreto.
 ms.assetid: 65440276-6337-443c-9ce3-0c18648fac20
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Prior-Value
-- priorValue esquema de AD de atributos
+- Prior-Value esquema de AD de atributo
+- Esquema de AD del atributo priorValue
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4fa186896a346b580a056f2a4936585d1ef116a6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9fd5f166009e31f1452968513fe1842a90e7e5542a134a0bcf73194338e1aef6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906125"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647035"
 ---
-# <a name="prior-value-attribute"></a>Prior-Value atributo)
+# <a name="prior-value-attribute"></a>Prior-Value atributo
 
-Valor anterior para un secreto.
+Valor anterior de un secreto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | Prior-Value                                           |
-| Nombre para mostrar de LDAP | priorValue                                            |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| Ldap-Display-Name | priorValue                                            |
+| Size              | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.100                                |
-| System-ID-GUID    | bf967a02-0de6-11d0-a285-00aa003049e2                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | bf967a02-0de6-11d0-a285-00aa003049e2                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -55,13 +55,13 @@ Valor anterior para un secreto.
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -76,13 +76,13 @@ Valor anterior para un secreto.
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -97,13 +97,13 @@ Valor anterior para un secreto.
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -118,13 +118,13 @@ Valor anterior para un secreto.
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -139,13 +139,13 @@ Valor anterior para un secreto.
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -160,13 +160,13 @@ Valor anterior para un secreto.
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |

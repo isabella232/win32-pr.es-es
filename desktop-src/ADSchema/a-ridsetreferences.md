@@ -1,11 +1,11 @@
 ---
 title: Atributo RID-Set-References
-description: Lista de referencias a objetos de RID-Set que administran la asignación de identificadores relativos (RID).
+description: Lista de referencias a objetos RID-Set que administran la asignación de identificador relativo (RID).
 ms.assetid: 9bd02a20-97a3-455f-ab77-f84add844974
 ms.tgt_platform: multiple
 keywords:
-- Atributo RID-Set-References esquema de AD
-- rIDSetReferences esquema de AD de atributos
+- Esquema de AD del atributo RID-Set-References
+- Esquema de AD del atributo rIDSetReferences
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a4115d013a19e7dc8f100f35b57ee3658855e3b6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 08f5a6f7a885f161a60a1e184a691deb163e6a8a3198c36e776d3b793d109615
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658985"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119646645"
 ---
 # <a name="rid-set-references-attribute"></a>Atributo RID-Set-References
 
-Lista de referencias a objetos de RID-Set que administran la asignación de identificadores relativos (RID).
+Lista de referencias a objetos RID-Set que administran la asignación de identificador relativo (RID).
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | RID-Set-referencias                      |
-| Nombre para mostrar de LDAP | rIDSetReferences                        |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | Rid-Set-References                      |
+| Ldap-Display-Name | rIDSetReferences                        |
+| Size              | \-                                      |
+| Actualizar privilegios  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.669                  |
-| System-ID-GUID    | 7bfdcb7b-4807-11d1-a9c3-0000f80367c1    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 7bfdcb7b-4807-11d1-a9c3-0000f80367c1    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -55,13 +55,13 @@ Lista de referencias a objetos de RID-Set que administran la asignación de iden
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | True                                      |
-| Tiene un único valor       | False                                     |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Verdadero                                      |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
@@ -76,13 +76,13 @@ Lista de referencias a objetos de RID-Set que administran la asignación de iden
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | True                                      |
-| Tiene un único valor       | False                                     |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Verdadero                                      |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
@@ -97,13 +97,13 @@ Lista de referencias a objetos de RID-Set que administran la asignación de iden
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | True                                      |
-| Tiene un único valor       | False                                     |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Verdadero                                      |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
@@ -118,13 +118,13 @@ Lista de referencias a objetos de RID-Set que administran la asignación de iden
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | True                                      |
-| Tiene un único valor       | False                                     |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Verdadero                                      |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
@@ -139,13 +139,13 @@ Lista de referencias a objetos de RID-Set que administran la asignación de iden
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | True                                      |
-| Tiene un único valor       | False                                     |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Verdadero                                      |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
@@ -160,13 +160,13 @@ Lista de referencias a objetos de RID-Set que administran la asignación de iden
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | True                                      |
-| Tiene un único valor       | False                                     |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Verdadero                                      |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |

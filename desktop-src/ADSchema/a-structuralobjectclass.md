@@ -1,11 +1,11 @@
 ---
-title: Atributo de clase de objeto estructural
+title: Atributo Structural-Object-Class
 description: Este atributo construido almacena una lista de clases contenidas en una jerarquía de clases, incluidas las clases abstractas. Esta lista contiene clases auxiliares vinculadas dinámicamente.
 ms.assetid: f7311cb9-4816-4caa-9cae-cbcd61b93d27
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de clase de objeto estructural
-- structuralObjectClass esquema de AD de atributos
+- Esquema de AD del atributo Structural-Object-Class
+- Esquema de AD del atributo structuralObjectClass
 topic_type:
 - apiref
 api_name:
@@ -14,36 +14,36 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cdcc236c0c65aa365400894dd6ccfb845af04b55
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 12e6eb52e59ebb2c7a840235bf7a2529b567c4909f0338670738901fea91f183
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658972"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119645505"
 ---
-# <a name="structural-object-class-attribute"></a>Atributo de clase de objeto estructural
+# <a name="structural-object-class-attribute"></a>Atributo Structural-Object-Class
 
 Este atributo construido almacena una lista de clases contenidas en una jerarquía de clases, incluidas las clases abstractas. Esta lista contiene clases auxiliares vinculadas dinámicamente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------------------------------|
-| CN                | Clase de objeto estructural                                         |
-| Nombre para mostrar de LDAP | structuralObjectClass                                           |
-| Tamaño              | \-                                                              |
-| Actualizar privilegio  | El sistema establece este valor.                                |
-| Frecuencia de actualización  | Al crear la clase.                                              |
+| CN                | Structural-Object-Class                                         |
+| Ldap-Display-Name | structuralObjectClass                                           |
+| Size              | \-                                                              |
+| Privilegio actualizar  | El sistema establece este valor.                                |
+| Frecuencia de actualización  | En la creación de clases.                                              |
 | Attribute-Id      | 2.5.21.9                                                        |
-| System-ID-GUID    | 3860949f-f6a8-4b38-9950-81ecb6bc2982                            |
-| Sintaxis            | [**String(Object-Identifier)**](s-string-object-identifier.md) |
+| System-Id-Guid    | 3860949f-f6a8-4b38-9950-81ecb6bc2982                            |
+| Syntax            | [**String(Object-Identifier)**](s-string-object-identifier.md) |
 
 
 
 ## <a name="implementations"></a>Implementaciones
 
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -55,13 +55,13 @@ Este atributo construido almacena una lista de clases contenidas en una jerarqu�
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -70,19 +70,19 @@ Este atributo construido almacena una lista de clases contenidas en una jerarqu�
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -97,13 +97,13 @@ Este atributo construido almacena una lista de clases contenidas en una jerarqu�
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -116,15 +116,15 @@ Este atributo construido almacena una lista de clases contenidas en una jerarqu�
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -139,13 +139,13 @@ Este atributo construido almacena una lista de clases contenidas en una jerarqu�
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -160,13 +160,13 @@ Este atributo construido almacena una lista de clases contenidas en una jerarqu�
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

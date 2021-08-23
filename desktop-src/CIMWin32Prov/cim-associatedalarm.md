@@ -1,8 +1,8 @@
 ---
-description: La \_ dependencia AssociatedAlarm de CIM asocia una alarma a un dispositivo lógico.
+description: La dependencia \_ AssociatedAlarm de CIM asocia una alarma a un dispositivo lógico.
 ms.assetid: ed0ccc81-6d1b-45b0-abf0-7a2bd9a50193
 ms.tgt_platform: multiple
-title: CIM_AssociatedAlarm (clase)
+title: CIM_AssociatedAlarm clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: fe6a637482526feecc7528eadc70dc695dafca9b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1ee89533b6084999d6972da253276f1ee225dd1e517727761c893e9424f01f65
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103807681"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119439485"
 ---
-# <a name="cim_associatedalarm-class"></a>\_Clase AssociatedAlarm de CIM
+# <a name="cim_associatedalarm-class"></a>Cim \_ AssociatedAlarm (clase)
 
 La **dependencia \_ AssociatedAlarm de CIM** asocia una alarma a un dispositivo lógico.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. ACTUALMENTE, WMI solo admite los [esquemas de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -47,13 +47,13 @@ class CIM_AssociatedAlarm : CIM_Dependency
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ AssociatedAlarm** tiene estos tipos de miembros:
+La **clase \_ AssociatedAlarm de CIM** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ AssociatedAlarm** tiene estas propiedades.
+La **clase \_ AssociatedAlarm de CIM** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -66,36 +66,36 @@ Tipo de datos: **CIM \_ AlarmDevice**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente")
 </dt> </dl>
 
-Un [**\_ AlarmDevice de CIM**](cim-alarmdevice.md) que contiene el dispositivo de alarma.
+AlarmDevice [**\_ cim que**](cim-alarmdevice.md) contiene el dispositivo de alarma.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ LogicalDevice de CIM**
+Tipo de datos: **CIM \_ LogicalDevice**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependiente")
+Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
 </dt> </dl>
 
-Un [**\_ LogicalDevice de CIM**](cim-logicaldevice.md) que contiene el dispositivo lógico en el que se pone en alarma.
+Un [**dispositivo \_ lógico CIM**](cim-logicaldevice.md) que contiene el dispositivo lógico que está alarmado.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-La clase **CIM \_ AssociatedAlarm** se deriva de [**la \_ dependencia CIM**](cim-dependency.md).
+La **clase \_ AssociatedAlarm de CIM** se deriva de la dependencia [**\_ CIM**](cim-dependency.md).
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -105,8 +105,8 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -115,7 +115,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[**Dependencia de CIM \_**](cim-dependency.md)
+[**Dependencia \_ cim**](cim-dependency.md)
 </dt> </dl>
 
  

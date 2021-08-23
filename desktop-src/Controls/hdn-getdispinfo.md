@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de HDN_GETDISPINFO (commctrl. h)
-description: Se envía al propietario de un control de encabezado cuando el control necesita información sobre un elemento de encabezado de devolución de llamada. Este código de notificación se envía como un mensaje de notificación de WM \_ .
+title: HDN_GETDISPINFO de notificación (Commctrl.h)
+description: Se envía al propietario de un control de encabezado cuando el control necesita información sobre un elemento de encabezado de devolución de llamada. Este código de notificación se envía como un mensaje \_ WM NOTIFY.
 ms.assetid: 51522df0-83ae-4d9a-a8fc-31083e24242a
 keywords:
-- HDN_GETDISPINFO controles de código de notificación de Windows
+- HDN_GETDISPINFO código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c45fe753b610fae69956b89caadade394566d0dd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fc6e6cbc9559cda3312ecdca341aa7c7ad2b44dc5cc29e50690ddf10b2729a39
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104078945"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119435455"
 ---
-# <a name="hdn_getdispinfo-notification-code"></a>Código de notificación de GETDISPINFO de HDN \_
+# <a name="hdn_getdispinfo-notification-code"></a>Código de notificación \_ GETDISPINFO de HDN
 
-Se envía al propietario de un control de encabezado cuando el control necesita información sobre un elemento de encabezado de devolución de llamada. Este código de notificación se envía como un mensaje de notificación de [**WM \_**](wm-notify.md) .
+Se envía al propietario de un control de encabezado cuando el control necesita información sobre un elemento de encabezado de devolución de llamada. Este código de notificación se envía como un [**mensaje \_ WM NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -43,17 +43,17 @@ HDN_GETDISPINFO
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMHDDISPINFO**](/windows/win32/api/commctrl/ns-commctrl-nmhddispinfoa) . En la entrada, los campos de la estructura especifican qué información se requiere y el elemento de interés.
+Puntero a una [**estructura NMHDDISPINFO.**](/windows/win32/api/commctrl/ns-commctrl-nmhddispinfoa) En la entrada, los campos de la estructura especifican qué información es necesaria y el elemento de interés.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un LRESULT.
+Devuelve un valor LRESULT.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Rellene los miembros adecuados de la estructura para devolver la información solicitada al control de encabezado. Si el controlador de mensajes establece el miembro de **máscara** de la estructura [**NMHDDISPINFO**](/windows/win32/api/commctrl/ns-commctrl-nmhddispinfoa) en HDI \_ di \_ SETITEM, el control de encabezado almacena la información y no la volverá a solicitar.
+Rellene los miembros adecuados de la estructura para devolver la información solicitada al control de encabezado. Si el controlador de mensajes establece el miembro **mask** de la estructura [**NMHDDISPINFO**](/windows/win32/api/commctrl/ns-commctrl-nmhddispinfoa) en HDI DI SETITEM, el control de encabezado almacena la información y no la \_ \_ volverá a solicitar.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,9 +61,9 @@ Rellene los miembros adecuados de la estructura para devolver la información so
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **HDN \_ GETDISPINFOW** (Unicode) y **HDN \_ GETDISPINFOA** (ANSI)<br/>           |
 
 

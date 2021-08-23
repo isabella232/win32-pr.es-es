@@ -1,7 +1,7 @@
 ---
 description: Usa la función SetThreadPriority de Microsoft Win32 para establecer la prioridad del subproceso en un nuevo valor.
 ms.assetid: 5b8ad024-e651-47e5-b32a-c44d56c086cd
-title: Método CMsgThread. SetThreadPriority (Msgthrd. h)
+title: Método CMsgThread.SetThreadPriority (Msgthrd.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0cfa3cd81907a251d2acf7129405e187286df3c4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ce293f32f765a89451ecf07b4532afc5fc4a7a132287d5b09b54962f93135215
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671726"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119585675"
 ---
-# <a name="cmsgthreadsetthreadpriority-method"></a>CMsgThread. SetThreadPriority, método
+# <a name="cmsgthreadsetthreadpriority-method"></a>Método CMsgThread.SetThreadPriority
 
 Usa la función **SetThreadPriority** de Microsoft Win32 para establecer la prioridad del subproceso en un nuevo valor.
 
@@ -57,14 +57,14 @@ Devuelve uno de los valores siguientes.
 
 | Código devuelto                                                                              | Descripción                               |
 |------------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>TRUE * * * *</dt> </dl>  | La prioridad se estableció correctamente.<br/> |
-| <dl> <dt>FALSE * * * *</dt> </dl> | No se estableció la prioridad.<br/>          |
+| <dl> <dt>TRUE**</dt> </dl>  | La prioridad se estableció correctamente.<br/> |
+| <dl> <dt>FALSE**</dt> </dl> | No se estableció la prioridad.<br/>          |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El cliente y el subproceso de trabajo pueden llamar a esta función miembro.
 
@@ -74,8 +74,8 @@ El cliente y el subproceso de trabajo pueden llamar a esta función miembro.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Msgthrd. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Msgthrd.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ El cliente y el subproceso de trabajo pueden llamar a esta función miembro.
 
 <dl> <dt>
 
-[**Clase CMsgThread**](cmsgthread.md)
+[**CMsgThread (clase)**](cmsgthread.md)
 </dt> </dl>
 
  

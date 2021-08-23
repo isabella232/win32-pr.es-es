@@ -1,4 +1,4 @@
-- name: Synchronization
+- name: Sincronización
   href: synchronization.md
   items:
     - name: Novedades de la sincronización
@@ -479,7 +479,7 @@
               href: /windows/desktop/api/synchapi/nf-synchapi-releasesrwlockshared
             - name: ResetEvent
               href: /windows/desktop/api/synchapi/nf-synchapi-resetevent
-            - name: RtlFirstEntrySList
+            - name: RtlFirstEntrysList
               href: /windows/desktop/api/WinNT/nf-winnt-rtlfirstentryslist
             - name: RtlInitializeSListHead
               href: /windows/desktop/api/Winnt/nf-winnt-rtlinitializeslisthead

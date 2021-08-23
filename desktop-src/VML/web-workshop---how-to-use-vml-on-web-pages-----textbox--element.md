@@ -1,38 +1,38 @@
 ---
-title: Usar el elemento TextBox
-description: Usar el elemento TextBox
+title: Usar el elemento Textbox
+description: Usar el elemento Textbox
 ms.assetid: e0022722-a504-47da-aa3f-62aa7fb4ac4d
 keywords:
-- Web Workshop, elemento TextBox
-- diseñar páginas web, elemento TextBox
-- Lenguaje de marcado de vectores (VML), elemento TextBox
-- VML (Lenguaje de marcado de vectores), elemento TextBox
-- gráficos vectoriales, elemento TextBox
-- Elemento TextBox
-- Elementos VML, TextBox
-- Formas VML, elemento TextBox
+- Taller web, elemento de cuadro de texto
+- diseñar páginas web, elemento de cuadro de texto
+- Lenguaje de marcado de vectores (VML),elemento textbox
+- VML (Lenguaje de marcado de vectores),elemento de cuadro de texto
+- vector graphics,textbox element
+- elemento textbox
+- Elementos VML, cuadro de texto
+- Formas de VML, elemento de cuadro de texto
 - Lenguaje de marcado de vectores (VML), adjuntar texto
 - VML (Lenguaje de marcado de vectores), adjuntar texto
 - gráficos vectoriales, adjuntar texto
-- Formas VML, adjuntar texto
-- Adjuntar texto
+- Formas de VML, adjuntar texto
+- adjuntar texto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5388a359ca8cf4e320f95d708b4cf7055287d424
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 29a9b4cb0b9096777a017dafd7df1c738621a4d5681ac3228741b3fd30386ed4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104488223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119512635"
 ---
-# <a name="using-the-textbox-element"></a>Usar el elemento TextBox
+# <a name="using-the-textbox-element"></a>Usar el elemento Textbox
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 ## <a name="examples"></a>Ejemplos:
 
@@ -53,7 +53,7 @@ I'm attaching some text to this shape!!!
 
 
 
-Para adjuntar un hipervínculo a un rectángulo redondeado con relleno degradado, puede escribir las líneas siguientes en la `<BODY>` región de la página web:
+Para adjuntar un hipervínculo a un rectángulo redondeado con relleno de degradado, puede escribir las líneas siguientes en la `<BODY>` región de la página web:
 
 ![textbox2.gif (1147 bytes)](images/textbox2.gif)
 
@@ -73,8 +73,8 @@ Para adjuntar un hipervínculo a un rectángulo redondeado con relleno degradado
 
 
 
-Para obtener más información sobre este elemento, vea la [especificación de VML](https://www.w3.org/TR/NOTE-VML#-toc416858397) .
+Para obtener más información sobre este elemento, consulte la [especificación de VML](https://www.w3.org/TR/NOTE-VML#-toc416858397) .
 
- 
+ 
 
- 
+ 

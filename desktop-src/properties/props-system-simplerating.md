@@ -1,19 +1,19 @@
 ---
-description: Sistema de clasificación que utiliza un intervalo de valores enteros entre 0 y 5.
+description: Sistema de clasificación que usa un intervalo de valores enteros entre 0 y 5.
 ms.assetid: 50353ba9-86dd-4172-91b4-1898c8fc5522
-title: System. SimpleRating
+title: System.SimpleRating
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b4741edd076b6027bc5f8dfbe3b2ff2a31374a7b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 74e13d7f65fb335aea6362509c20845bd1324b6e99d48f14cd9746f0237661f4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716920"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119598145"
 ---
-# <a name="systemsimplerating"></a>System. SimpleRating
+# <a name="systemsimplerating"></a>System.SimpleRating
 
-Sistema de clasificación que utiliza un intervalo de valores enteros entre 0 y 5.
+Sistema de clasificación que usa un intervalo de valores enteros entre 0 y 5.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -31,17 +31,17 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
-Por compatibilidad con el sistema de clasificación del shell de Windows Vista, el controlador de propiedades también debe rellenar la propiedad [System. Rating](./props-system-rating.md) con la asignación tal y como se describe en esa propiedad.
+Por compatibilidad con el Windows de clasificación de Shell de Vista, el controlador de propiedades también debe rellenar la propiedad [System.Rating](./props-system-rating.md) con la asignación tal y como se describe para esa propiedad.
 
-Use la tabla siguiente para convertir de [System. Rating](./props-system-rating.md) a [System. SimpleRating]().
+Use la tabla siguiente para convertir de [System.Rating](./props-system-rating.md) a [System.SimpleRating]().
 
 
 
-| System. Rating | System. SimpleRating |
+| System.Rating | System.SimpleRating |
 |---------------|---------------------|
 | 0             | 0                   |
 | 1-12          | 1                   |
@@ -67,7 +67,7 @@ Use la tabla siguiente para convertir de [System. Rating](./props-system-rating.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -79,7 +79,7 @@ Use la tabla siguiente para convertir de [System. Rating](./props-system-rating.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -97,7 +97,7 @@ Use la tabla siguiente para convertir de [System. Rating](./props-system-rating.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: Logon-Hours atributo)
-description: Las horas en las que el usuario puede iniciar sesión en el dominio.
+title: Logon-Hours atributo
+description: Horas en las que el usuario puede iniciar sesión en el dominio.
 ms.assetid: b97cc8b0-7f26-45c1-b1c9-bae6467bdfb6
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Logon-Hours
-- logonHours esquema de AD de atributos
+- Logon-Hours esquema de AD del atributo
+- Esquema de AD del atributo logonHours
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f764192ac57efdb1f14d55f691183240f0eddfc
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f389556d3b6e3905229d99261b8132ebf8e2424d04b33c65174902991c366110
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104493577"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705685"
 ---
-# <a name="logon-hours-attribute"></a>Logon-Hours atributo)
+# <a name="logon-hours-attribute"></a>Logon-Hours atributo
 
-Las horas en las que el usuario puede iniciar sesión en el dominio.
+Horas en las que el usuario puede iniciar sesión en el dominio.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | Logon-Hours                                           |
-| Nombre para mostrar de LDAP | logonHours                                            |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | Administrador de dominio                                  |
+| Ldap-Display-Name | logonHours                                            |
+| Size              | \-                                                    |
+| Privilegio actualizar  | Administrador de dominio                                  |
 | Frecuencia de actualización  | Siempre que sea necesario cambiar las horas de inicio de sesión de la cuenta.   |
 | Attribute-Id      | 1.2.840.113556.1.4.64                                 |
-| System-ID-GUID    | bf9679ab-0de6-11d0-a285-00aa003049e2                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | bf9679ab-0de6-11d0-a285-00aa003049e2                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -55,18 +55,18 @@ Las horas en las que el usuario puede iniciar sesión en el dominio.
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Las horas en las que el usuario puede iniciar sesión en el dominio.
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ Las horas en las que el usuario puede iniciar sesión en el dominio.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Las horas en las que el usuario puede iniciar sesión en el dominio.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Las horas en las que el usuario puede iniciar sesión en el dominio.
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -160,13 +160,13 @@ Las horas en las que el usuario puede iniciar sesión en el dominio.
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |

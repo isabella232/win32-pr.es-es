@@ -1,33 +1,33 @@
 ---
-title: Autotreatas
-description: Establece automáticamente el CLSID para la clave treatAs en el valor especificado.
+title: AutoTreatAs
+description: Establece automáticamente el CLSID de la clave TreatAs en el valor especificado.
 ms.assetid: 5adf7bc5-a4d6-444d-bd56-0c4e6eee5111
 keywords:
-- COM de clave del registro autotreatl
+- Com de clave del Registro AutoTreatAs
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fa9ff717e17f08e5d37885f3994d03671bddaa9c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 196e389780d75c0e33a20775df6e087b130e11453d5335130003bc2f0611f726
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119731635"
 ---
-# <a name="autotreatas"></a>Autotreatas
+# <a name="autotreatas"></a>AutoTreatAs
 
-Establece automáticamente el CLSID para la clave [**treatAs**](treatas.md) en el valor especificado.
+Establece automáticamente el CLSID de la clave [**TreatAs**](treatas.md) en el valor especificado.
 
 ## <a name="registry-entry"></a>Entrada del Registro
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
-   {CLSID}
-      AutoTreatAs = value
+   {CLSID}
+      AutoTreatAs = value
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se trata de un valor de **reg \_ SZ** que especifica el identificador de clase.
+Se trata de **un valor \_ SZ reg** que especifica el identificador de clase.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -36,9 +36,9 @@ Se trata de un valor de **reg \_ SZ** que especifica el identificador de clase.
 [**CoTreatAsClass**](/windows/desktop/api/Objbase/nf-objbase-cotreatasclass)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

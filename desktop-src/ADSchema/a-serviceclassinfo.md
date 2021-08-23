@@ -1,11 +1,11 @@
 ---
-title: Atributo Service-Class-info
-description: Información general de la clase de servicio.
+title: Atributo Service-Class-Info
+description: Información de la clase de servicio general.
 ms.assetid: 7efa94d4-b8f9-4eb4-a61b-1532e722c0bd
 ms.tgt_platform: multiple
 keywords:
-- Service-Class-info atributo AD Schema
-- serviceClassInfo esquema de AD de atributos
+- Esquema de AD del atributo Service-Class-Info
+- Esquema de AD del atributo serviceClassInfo
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b3f16270f7fa6da25264a7472432a6d1020261d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4df3d4442dfe465b1252892bf9377505bf95f531bc9919027f52404bd5669371
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906109"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119645995"
 ---
-# <a name="service-class-info-attribute"></a>Atributo Service-Class-info
+# <a name="service-class-info-attribute"></a>Atributo Service-Class-Info
 
-Información general de la clase de servicio.
+Información de la clase de servicio general.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | Service-Class-info                                    |
-| Nombre para mostrar de LDAP | serviceClassInfo                                      |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| CN                | Información de clase de servicio                                    |
+| Ldap-Display-Name | serviceClassInfo                                      |
+| Size              | \-                                                    |
+| Privilegio actualizar  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.123                                |
-| System-ID-GUID    | bf967a36-0de6-11d0-a285-00aa003049e2                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | bf967a36-0de6-11d0-a285-00aa003049e2                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -55,13 +55,13 @@ Información general de la clase de servicio.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Tiene un único valor       | False                                              |
-| Está indexado             | False                                              |
-| En el catálogo global      | True                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Falso                                              |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Verdadero                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -76,13 +76,13 @@ Información general de la clase de servicio.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Tiene un único valor       | False                                              |
-| Está indexado             | False                                              |
-| En el catálogo global      | True                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Falso                                              |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Verdadero                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -97,13 +97,13 @@ Información general de la clase de servicio.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Tiene un único valor       | False                                              |
-| Está indexado             | False                                              |
-| En el catálogo global      | True                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Falso                                              |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Verdadero                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -116,15 +116,15 @@ Información general de la clase de servicio.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Tiene un único valor       | False                                              |
-| Está indexado             | False                                              |
-| En el catálogo global      | True                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Falso                                              |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Verdadero                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -139,13 +139,13 @@ Información general de la clase de servicio.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Tiene un único valor       | False                                              |
-| Está indexado             | False                                              |
-| En el catálogo global      | True                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Falso                                              |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Verdadero                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -160,13 +160,13 @@ Información general de la clase de servicio.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Tiene un único valor       | False                                              |
-| Está indexado             | False                                              |
-| En el catálogo global      | True                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Falso                                              |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Verdadero                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |

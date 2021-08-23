@@ -4,12 +4,12 @@ ms.assetid: 29a40295-be98-4897-8d39-0fe14af0a1d2
 title: System.Contact.HomeAddress2Region
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d53da81030bedbd24f64ae1682c5a848452988f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3bc17c5fdef88e743d3ce565d9d8d23aae85f7495d1e61f55750e6f70d691684
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108102193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119662205"
 ---
 # <a name="systemcontacthomeaddress2region"></a>System.Contact.HomeAddress2Region
 

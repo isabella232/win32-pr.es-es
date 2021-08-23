@@ -1,9 +1,9 @@
 ---
-title: Lunes (daysOfWeekType) (elemento)
+title: Elemento Monday (daysOfWeekType)
 description: Especifica que la tarea se ejecuta el lunes.
 ms.assetid: 2b7ce0c1-c635-47d0-b482-5c93c0028c92
 keywords:
-- Lunes Programador de tareas de elemento
+- Elemento Monday Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3967db32a6ccd536e2e389e84de4eec05b333634
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 22bd1028a36efa6e2fe96a300b221073dbf87f14e77621d8b1591f85c7f6fd6c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492058"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119513945"
 ---
-# <a name="monday-daysofweektype-element"></a>Lunes (daysOfWeekType) (elemento)
+# <a name="monday-daysofweektype-element"></a>Elemento Monday (daysOfWeekType)
 
 Especifica que la tarea se ejecuta el lunes.
 
@@ -30,7 +30,7 @@ Especifica que la tarea se ejecuta el lunes.
 </xs:element>
 ```
 
-El elemento de **lunes** se define mediante el tipo complejo de [**weeklyScheduleType**](taskschedulerschema-weeklyscheduletype-complextype.md) .
+El tipo complejo [**weeklyScheduleType**](taskschedulerschema-weeklyscheduletype-complextype.md) define el elemento **Monday.**
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -38,14 +38,14 @@ El elemento de **lunes** se define mediante el tipo complejo de [**weeklySchedul
 
 | Elemento                                                                                                                  | Derivado de                                                             | Descripción                                                                                          |
 |--------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| [**DaysOfWeek (monthlyDayOfWeekScheduleType)**](taskschedulerschema-daysofweek-monthlydayofweekscheduletype-element.md) | [**daysOfWeekType**](taskschedulerschema-daysofweektype-complextype.md) | Especifica los días de la semana en los que se ejecuta la tarea para una programación mensual de día de la semana.<br/> |
+| [**DaysOfWeek (monthlyDayOfWeekScheduleType)**](taskschedulerschema-daysofweek-monthlydayofweekscheduletype-element.md) | [**daysOfWeekType**](taskschedulerschema-daysofweektype-complextype.md) | Especifica los días de la semana en los que se ejecuta la tarea para una programación mensual del día de la semana.<br/> |
 | [**DaysOfWeek (weeklyScheduleType)**](taskschedulerschema-daysofweek-weeklyscheduletype-element.md)                     | [**daysOfWeekType**](taskschedulerschema-daysofweektype-complextype.md) | Especifica los días de la semana en los que se ejecuta la tarea para una programación semanal.<br/>              |
 
 
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente código XML define un calendario de día de la semana que inicia una tarea el lunes.
+El código XML siguiente define un calendario de día de la semana que inicia una tarea el lunes.
 
 
 ```XML
@@ -60,10 +60,10 @@ El siguiente código XML define un calendario de día de la semana que inicia un
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -71,7 +71,7 @@ El siguiente código XML define un calendario de día de la semana que inicia un
 
 <dl> <dt>
 
-[Programador de tareas elementos de esquema](task-scheduler-schema-elements.md)
+[Programador de tareas de esquema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

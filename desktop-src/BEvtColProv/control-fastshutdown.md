@@ -2,7 +2,7 @@
 description: Detenga el recopilador rápidamente, descartando todos los datos en cola.
 ms.assetid: 9d96a94b-21ae-40bd-9c7f-b466ca38dce3
 ms.tgt_platform: multiple
-title: Método FastShutdown de la clase control
+title: Método FastShutdown de la clase Control
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 - COM
 api_location:
 - BEvtCol.exe
-ms.openlocfilehash: 444fe9c94e9fd247e5976fd67a43b0a5eee8b591
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: f524cc1ce57ccedf519bf80695a11f75d77eac792088d5f39d3dcf1e29187669
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659341"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119579815"
 ---
-# <a name="fastshutdown-method-of-the-control-class"></a>Método FastShutdown de la clase control
+# <a name="fastshutdown-method-of-the-control-class"></a>Método FastShutdown de la clase Control
 
 Detenga el recopilador rápidamente, descartando todos los datos en cola.
 
@@ -48,10 +48,10 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                          |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                          |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                       |
-| Espacio de nombres<br/>                | Raíz de \\ Microsoft \\ Windows \\ BootEventCollector<br/>                                              |
-| MOF<br/>                      | <dl> <dt>BootEventCollectorWMI. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Raíz \\ de Microsoft Windows \\ \\ BootEventCollector<br/>                                              |
+| MOF<br/>                      | <dl> <dt>BootEventCollectorWMI.Mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>BEvtCol.exe</dt> </dl>               |
 
 

@@ -1,11 +1,11 @@
 ---
-title: Attribute-display-names (atributo)
+title: Atributo Attribute-Display-Names
 description: Nombre que se va a mostrar para este objeto.
 ms.assetid: f9ee8b99-f902-40b5-a590-14f4bfbdb8cf
 ms.tgt_platform: multiple
 keywords:
-- Attribute-display-names atributo AD Schema
-- Esquema de AD del atributo attributeDisplayNames
+- Esquema de AD del atributo Attribute-Display-Names
+- AttributeDisplayNames attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6aa686b1b095aea53f5a8050218f5f9edd4409d5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c77186e3937e753def21e622ede015a8213d3359639fe3cbe06a3fd755f510bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119443115"
 ---
-# <a name="attribute-display-names-attribute"></a>Attribute-display-names (atributo)
+# <a name="attribute-display-names-attribute"></a>Atributo Attribute-Display-Names
 
 Nombre que se va a mostrar para este objeto.
 
@@ -29,13 +29,13 @@ Nombre que se va a mostrar para este objeto.
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | Attribute-display-names                     |
-| Nombre para mostrar de LDAP | attributeDisplayNames                       |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | Attribute-Display-Names                     |
+| Ldap-Display-Name | attributeDisplayNames                       |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.748                      |
-| System-ID-GUID    | cb843f80-48d9-11d1-a9c3-0000f80367c1        |
+| System-Id-Guid    | cb843f80-48d9-11d1-a9c3-0000f80367c1        |
 | Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -55,13 +55,13 @@ Nombre que se va a mostrar para este objeto.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | False                                                      |
-| Tiene un único valor       | False                                                      |
+| Es de un solo valor       | False                                                      |
 | Está indexado             | False                                                      |
 | En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -76,13 +76,13 @@ Nombre que se va a mostrar para este objeto.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | False                                                      |
-| Tiene un único valor       | False                                                      |
+| Es de un solo valor       | False                                                      |
 | Está indexado             | False                                                      |
 | En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -97,13 +97,13 @@ Nombre que se va a mostrar para este objeto.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | False                                                      |
-| Tiene un único valor       | False                                                      |
+| Es de un solo valor       | False                                                      |
 | Está indexado             | False                                                      |
 | En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -118,13 +118,13 @@ Nombre que se va a mostrar para este objeto.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | False                                                      |
-| Tiene un único valor       | False                                                      |
+| Es de un solo valor       | False                                                      |
 | Está indexado             | False                                                      |
 | En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -139,13 +139,13 @@ Nombre que se va a mostrar para este objeto.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | False                                                      |
-| Tiene un único valor       | False                                                      |
+| Es de un solo valor       | False                                                      |
 | Está indexado             | False                                                      |
 | En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -160,13 +160,13 @@ Nombre que se va a mostrar para este objeto.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | False                                                      |
-| Tiene un único valor       | False                                                      |
+| Es de un solo valor       | False                                                      |
 | Está indexado             | False                                                      |
 | En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |

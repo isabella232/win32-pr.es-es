@@ -1,11 +1,11 @@
 ---
 title: Atributo Parent-CA-Certificate-Chain
-description: Certificado X. 509v3 codificado en DER para la entidad de certificación principal.
+description: Certificado X.509v3 codificado con DER para la entidad de certificación primaria.
 ms.assetid: 37e04c7b-5350-4e48-b3fd-22f97959d26a
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo primario-CA-Certificate-Chain
-- parentCACertificateChain esquema de AD de atributos
+- Esquema de AD del atributo Parent-CA-Certificate-Chain
+- Esquema de AD del atributo parentCACertificateChain
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 62f27bacb77fb7ab3f1ae712920dace7cb525efc
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 0e70d168bc9a16bffe1a0675c04d335c27ffeff89f53937b1507b01ce41486f5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104493732"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647825"
 ---
 # <a name="parent-ca-certificate-chain-attribute"></a>Atributo Parent-CA-Certificate-Chain
 
-Certificado X. 509v3 codificado en DER para la entidad de certificación principal.
+Certificado X.509v3 codificado con DER para la entidad de certificación primaria.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | Cadena de certificados de entidad de certificación primaria                           |
-| Nombre para mostrar de LDAP | parentCACertificateChain                              |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| Ldap-Display-Name | parentCACertificateChain                              |
+| Size              | \-                                                    |
+| Privilegio actualizar  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.685                                |
-| System-ID-GUID    | 963d2733-48be-11d1-a9c3-0000f80367c1                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 963d2733-48be-11d1-a9c3-0000f80367c1                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -55,13 +55,13 @@ Certificado X. 509v3 codificado en DER para la entidad de certificación princip
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                     |
+| Id. de vínculo                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
-| System-Only            | False                                                                  |
-| Tiene un único valor       | True                                                                   |
-| Está indexado             | False                                                                  |
-| En el catálogo global      | False                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                           |
+| System-Only            | Falso                                                                  |
+| Es de un solo valor       | Verdadero                                                                   |
+| Está indexado             | Falso                                                                  |
+| En el catálogo global      | Falso                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
@@ -76,13 +76,13 @@ Certificado X. 509v3 codificado en DER para la entidad de certificación princip
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                     |
+| Id. de vínculo                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
-| System-Only            | False                                                                  |
-| Tiene un único valor       | True                                                                   |
-| Está indexado             | False                                                                  |
-| En el catálogo global      | False                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                           |
+| System-Only            | Falso                                                                  |
+| Es de un solo valor       | Verdadero                                                                   |
+| Está indexado             | Falso                                                                  |
+| En el catálogo global      | Falso                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
@@ -97,13 +97,13 @@ Certificado X. 509v3 codificado en DER para la entidad de certificación princip
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                     |
+| Id. de vínculo                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
-| System-Only            | False                                                                  |
-| Tiene un único valor       | True                                                                   |
-| Está indexado             | False                                                                  |
-| En el catálogo global      | False                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                           |
+| System-Only            | Falso                                                                  |
+| Es de un solo valor       | Verdadero                                                                   |
+| Está indexado             | Falso                                                                  |
+| En el catálogo global      | Falso                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
@@ -116,15 +116,15 @@ Certificado X. 509v3 codificado en DER para la entidad de certificación princip
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                     |
+| Id. de vínculo                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
-| System-Only            | False                                                                  |
-| Tiene un único valor       | True                                                                   |
-| Está indexado             | False                                                                  |
-| En el catálogo global      | False                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                           |
+| System-Only            | Falso                                                                  |
+| Es de un solo valor       | Verdadero                                                                   |
+| Está indexado             | Falso                                                                  |
+| En el catálogo global      | Falso                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
@@ -139,13 +139,13 @@ Certificado X. 509v3 codificado en DER para la entidad de certificación princip
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                     |
+| Id. de vínculo                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
-| System-Only            | False                                                                  |
-| Tiene un único valor       | True                                                                   |
-| Está indexado             | False                                                                  |
-| En el catálogo global      | False                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                           |
+| System-Only            | Falso                                                                  |
+| Es de un solo valor       | Verdadero                                                                   |
+| Está indexado             | Falso                                                                  |
+| En el catálogo global      | Falso                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
@@ -160,13 +160,13 @@ Certificado X. 509v3 codificado en DER para la entidad de certificación princip
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                     |
+| Id. de vínculo                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
-| System-Only            | False                                                                  |
-| Tiene un único valor       | True                                                                   |
-| Está indexado             | False                                                                  |
-| En el catálogo global      | False                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                           |
+| System-Only            | Falso                                                                  |
+| Es de un solo valor       | Verdadero                                                                   |
+| Está indexado             | Falso                                                                  |
+| En el catálogo global      | Falso                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |

@@ -1,7 +1,7 @@
 ---
-description: El método CMediaType. set (mtype. h) establece el tipo de medio desde otro tipo de medio. El método usa el parámetro ' cmtype '.
+description: El método CMediaType.Set (Mtype.h) establece el tipo de medio de otro tipo de medio. El método usa el parámetro "cmtype".
 ms.assetid: 71c19d0f-93b6-41db-8659-c64411b83e7c
-title: Método CMediaType. set (mtype. h)-cmtype [Ref] parámetro
+title: 'Método CMediaType.Set (Mtype.h): parámetro cmtype [ref]'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f9bf14132660045afbd171173a38d3ea320ba1aa
-ms.sourcegitcommit: 11f52354f570aacaf1ba2a266b2e507abd73352a
+ms.openlocfilehash: 0a317b23b4870ad6e68032ed23f846a81019be358974ebbe75e2a5859db71303
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "105670277"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119585885"
 ---
-# <a name="cmediatypeset-method-mtypeh---cmtype-ref-parameter"></a>Método CMediaType. set (mtype. h)-cmtype [Ref] parámetro
+# <a name="cmediatypeset-method-mtypeh---cmtype-ref-parameter"></a>Método CMediaType.Set (Mtype.h): parámetro cmtype [ref]
 
-El `Set` método establece el tipo de medio desde otro tipo de medio.
+El `Set` método establece el tipo de medio de otro tipo de medio.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,10 +42,10 @@ HRESULT Set(
 
 <dl> <dt>
 
-*cmtype* \[ CLI\]
+*cmtype* \[ Ref\]
 </dt> <dd>
 
-Referencia a un objeto [**CMediaType**](cmediatype.md) .
+Referencia a un [**objeto CMediaType.**](cmediatype.md)
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Referencia a un objeto [**CMediaType**](cmediatype.md) .
 
 Devuelve S \_ OK o E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este método copia todo el tipo de medio de *cmtype*.
 
@@ -61,14 +61,14 @@ Este método copia todo el tipo de medio de *cmtype*.
 
 | Requisito                   | Value                                                                                                                                                                                           |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado  | Mtype. h (incluir streams. h)                                                                                     |
-| Biblioteca | Strmbase. lib (compilaciones comerciales); Strmbasd. lib (compilaciones de depuración) |
+| Encabezado  | Mtype.h (incluir Secuencias.h)                                                                                     |
+| Biblioteca | Strmbase.lib (compilaciones comerciales); Strmbasd.lib (compilaciones de depuración) |
 
 ## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**Clase CMediaType**](cmediatype.md)
+[**CMediaType (clase)**](cmediatype.md)
 </dt> </dl>
 
  

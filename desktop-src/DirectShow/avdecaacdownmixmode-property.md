@@ -1,21 +1,21 @@
 ---
-description: Especifica si un descodificador AAC usa ecuaciones downmix de estéreo estándar MPEG-2/MPEG-4, o usa un downmix no estándar.
+description: Especifica si un descodificador de AAC usa ecuaciones estándar mpeg-2/MPEG-4 de reducción estéreo, o bien una reducción no estándar.
 ms.assetid: a384d24e-07e2-45e7-84b8-e791feb64a83
-title: Propiedad AVDecAACDownmixMode (Codecapi. h)
+title: Propiedad AVDecAACDownmixMode (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 388d1437dfe396d5072ef09082c4ad17ddb75953
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: ad3fde61acdd5d29574f316e269d5b04a0a94649827777504fe31c33bbf79bd2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105686382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119641285"
 ---
 # <a name="avdecaacdownmixmode-property"></a>Propiedad AVDecAACDownmixMode
 
-Especifica si un descodificador AAC usa ecuaciones downmix de estéreo estándar MPEG-2/MPEG-4, o usa un downmix no estándar.
+Especifica si un descodificador de AAC usa ecuaciones estándar mpeg-2/MPEG-4 de reducción estéreo, o bien una reducción no estándar.
 
-Un ejemplo de downmix no estándar es el que se define en el documento ARIB STD-B21, versión 4,4.
+Un ejemplo de una mezcla anterior no estándar es la definida por el documento STD-B21 de ARIB, versión 4.4.
 
 Esta propiedad es de lectura y escritura.
 
@@ -29,17 +29,17 @@ Esta propiedad es de lectura y escritura.
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El valor de esta propiedad es un miembro de la enumeración [**eAVDecAACDownmixMode**](/windows/win32/api/codecapi/ne-codecapi-eavdecaacdownmixmode) .
+El valor de esta propiedad es un miembro de la [**enumeración eAVDecAACDownmixMode.**](/windows/win32/api/codecapi/ne-codecapi-eavdecaacdownmixmode)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -50,7 +50,7 @@ El valor de esta propiedad es un miembro de la enumeración [**eAVDecAACDownmixM
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

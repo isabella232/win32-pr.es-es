@@ -1,11 +1,11 @@
 ---
-title: Atributo MS-SQL-version
+title: Atributo MS-SQL-Version
 description: Versión de la instancia actual de SQL Server.
 ms.assetid: 0003892c-906d-429b-bc98-bbc441b2d58b
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de versión de MS-SQL-
-- Esquema de AD de atributo de versión de mS-SQL-
+- Esquema de AD del atributo MS-SQL-Version
+- Esquema de AD del atributo mS-SQL-Version
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 446a436a30311f5696d8ed63334b0cf796eb2767
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b5c79b760ab72feffc455fc2c40de807b38a15ed3a0a709fcfcb8d0ce79c20c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119583235"
 ---
-# <a name="ms-sql-version-attribute"></a>Atributo MS-SQL-version
+# <a name="ms-sql-version-attribute"></a>Atributo MS-SQL-Version
 
 Versión de la instancia actual de SQL Server.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-SQL-versión                              |
-| Nombre para mostrar de LDAP | mS-SQL-versión                              |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | El sistema establece este valor.            |
-| Frecuencia de actualización  | En el programa de instalación del sistema.                            |
+| CN                | MS-SQL-Version                              |
+| Ldap-Display-Name | mS-SQL-Version                              |
+| Size              | \-                                          |
+| Actualizar privilegios  | El sistema establece este valor.            |
+| Frecuencia de actualización  | En la configuración del sistema.                            |
 | Attribute-Id      | 1.2.840.113556.1.4.1388                     |
-| System-ID-GUID    | c07cc1d0-ccee-11d2-9993-0000f87a57d4        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | c07cc1d0-ccee-11d2-9993-0000f87a57d4        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,13 +55,13 @@ Versión de la instancia actual de SQL Server.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
-| System-Only            | False                                                                                                                         |
-| Tiene un único valor       | True                                                                                                                          |
-| Está indexado             | True                                                                                                                          |
-| En el catálogo global      | True                                                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                  |
+| System-Only            | Falso                                                                                                                         |
+| Es de un solo valor       | Verdadero                                                                                                                          |
+| Está indexado             | Verdadero                                                                                                                          |
+| En el catálogo global      | Verdadero                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000001                                                                                                                    |
@@ -76,13 +76,13 @@ Versión de la instancia actual de SQL Server.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
-| System-Only            | False                                                                                                                         |
-| Tiene un único valor       | True                                                                                                                          |
-| Está indexado             | True                                                                                                                          |
-| En el catálogo global      | True                                                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                  |
+| System-Only            | Falso                                                                                                                         |
+| Es de un solo valor       | Verdadero                                                                                                                          |
+| Está indexado             | Verdadero                                                                                                                          |
+| En el catálogo global      | Verdadero                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000001                                                                                                                    |
@@ -97,13 +97,13 @@ Versión de la instancia actual de SQL Server.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
-| System-Only            | False                                                                                                                         |
-| Tiene un único valor       | True                                                                                                                          |
-| Está indexado             | True                                                                                                                          |
-| En el catálogo global      | True                                                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                  |
+| System-Only            | Falso                                                                                                                         |
+| Es de un solo valor       | Verdadero                                                                                                                          |
+| Está indexado             | Verdadero                                                                                                                          |
+| En el catálogo global      | Verdadero                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000001                                                                                                                    |
@@ -116,15 +116,15 @@ Versión de la instancia actual de SQL Server.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
-| System-Only            | False                                                                                                                         |
-| Tiene un único valor       | True                                                                                                                          |
-| Está indexado             | True                                                                                                                          |
-| En el catálogo global      | True                                                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                  |
+| System-Only            | Falso                                                                                                                         |
+| Es de un solo valor       | Verdadero                                                                                                                          |
+| Está indexado             | Verdadero                                                                                                                          |
+| En el catálogo global      | Verdadero                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000001                                                                                                                    |
@@ -139,13 +139,13 @@ Versión de la instancia actual de SQL Server.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
-| System-Only            | False                                                                                                                         |
-| Tiene un único valor       | True                                                                                                                          |
-| Está indexado             | True                                                                                                                          |
-| En el catálogo global      | True                                                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                  |
+| System-Only            | Falso                                                                                                                         |
+| Es de un solo valor       | Verdadero                                                                                                                          |
+| Está indexado             | Verdadero                                                                                                                          |
+| En el catálogo global      | Verdadero                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000001                                                                                                                    |
@@ -160,13 +160,13 @@ Versión de la instancia actual de SQL Server.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
-| System-Only            | False                                                                                                                         |
-| Tiene un único valor       | True                                                                                                                          |
-| Está indexado             | True                                                                                                                          |
-| En el catálogo global      | True                                                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                  |
+| System-Only            | Falso                                                                                                                         |
+| Es de un solo valor       | Verdadero                                                                                                                          |
+| Está indexado             | Verdadero                                                                                                                          |
+| En el catálogo global      | Verdadero                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000001                                                                                                                    |

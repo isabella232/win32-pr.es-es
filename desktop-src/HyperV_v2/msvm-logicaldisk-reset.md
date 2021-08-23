@@ -1,5 +1,5 @@
 ---
-description: 'Método reset de la Msvm_LogicalDisk : solicita un restablecimiento.'
+description: 'Método reset de la Msvm_LogicalDisk clase : solicita un restablecimiento.'
 ms.assetid: 544bd327-572d-4f0e-bc73-a68113222af0
 title: Método Reset de la Msvm_LogicalDisk clase
 ms.topic: reference
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 32a4c2897e63da323a7c698509512bfd1d9a6eec
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 148fe50877fd3add3b2005edce4c96ac519c2e1677a9e0895272538d703a74f2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108111673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119521805"
 ---
-# <a name="reset-method-of-the-msvm_logicaldisk-class"></a>Método Reset de la clase \_ Msvm LogicalDisk
+# <a name="reset-method-of-the-msvm_logicaldisk-class"></a>Método Reset de la clase LogicalDisk de \_ Msvm
 
 Solicita un restablecimiento.
 
@@ -53,7 +53,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -63,11 +63,11 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**Msvm \_ LogicalDisk**](msvm-logicaldisk.md)
+[**Disco lógico de Msvm \_**](msvm-logicaldisk.md)
 </dt> </dl>
 
  

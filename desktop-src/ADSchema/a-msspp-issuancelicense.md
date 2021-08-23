@@ -1,11 +1,11 @@
 ---
-title: atributo MS-SPP-emisión-License
-description: Licencia de emisión usada durante la activación en línea o telefónica del bosque de Active Directory
+title: Atributo ms-SPP-Issuance-License
+description: Licencia de emisión usada durante la activación en línea o por teléfono del Active Directory de emisión
 ms.assetid: 926a04b6-0af7-42be-aedb-7a278bcb47fb
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-SPP-emisión-licencia
-- msSPP-IssuanceLicense atributo AD Schema
+- Esquema de AD del atributo ms-SPP-Issuance-License
+- Esquema de AD del atributo msSPP-IssuanceLicense
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0355cf0d798c179e089a6a85b81047a8d2afccef
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d26bc310f5a5ffc495612f408b5f2c39a6443ec46d23cf0a80c2c96aa189937d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659050"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119581875"
 ---
-# <a name="ms-spp-issuance-license-attribute"></a>atributo MS-SPP-emisión-License
+# <a name="ms-spp-issuance-license-attribute"></a>Atributo ms-SPP-Issuance-License
 
-Licencia de emisión usada durante la activación en línea o telefónica del bosque de Active Directory
+Licencia de emisión usada durante la activación en línea o por teléfono del Active Directory de emisión
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | MS-SPP-emisión-licencia                               |
-| Nombre para mostrar de LDAP | msSPP-IssuanceLicense                                 |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| CN                | ms-SPP-Issuance-License                               |
+| Ldap-Display-Name | msSPP-IssuanceLicense                                 |
+| Size              | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.2088                               |
-| System-ID-GUID    | 1075b3a1-bbaf-49d2-ae8d-c4f25c823303                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 1075b3a1-bbaf-49d2-ae8d-c4f25c823303                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -50,18 +50,18 @@ Licencia de emisión usada durante la activación en línea o telefónica del bo
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | True                                                                    |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Verdadero                                                                    |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**MS-SPP-Activation-Object**](c-msspp-activationobject.md)<br/> |
+| Clases usadas en        | [**ms-SPP-Activation-Object**](c-msspp-activationobject.md)<br/> |
 
 
 

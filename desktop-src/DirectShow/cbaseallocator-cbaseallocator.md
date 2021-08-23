@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: dfda2b03d1ddb3f4a8ad5f4446dbee997da4e790
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 21da9f5dda7f60fd4a88e85eb28f2197bdc9847d0b56d413bd6b49cb5abfe658
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096372"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119641005"
 ---
 # <a name="cbaseallocatorcbaseallocator-constructor"></a>Constructor CBaseAllocator.CBaseAllocator
 
@@ -70,7 +70,7 @@ Puntero a un **valor HRESULT.** Establezca el valor en S \_ OK antes de crear el
 *bEvent* 
 </dt> <dd>
 
-Valor booleano que indica si se va a crear un semáforo. Si **es TRUE,** el asignador crea un semáforo ([**CBaseAllocator::m \_ hSem**](cbaseallocator-m-hsem.md)), que se señala cada vez que hay disponible un ejemplo. Establezca el valor en **FALSE** si va a implementar una clase derivada que no requiere un semáforo.
+Valor booleano que indica si se debe crear un semáforo. Si **es TRUE,** el asignador crea un semáforo ([**CBaseAllocator::m \_ hSem**](cbaseallocator-m-hsem.md)), que se señala cada vez que hay disponible un ejemplo. Establezca el valor en **FALSE** si va a implementar una clase derivada que no requiere un semáforo.
 
 </dd> <dt>
 
@@ -87,12 +87,12 @@ Valor booleano que indica si el mecanismo de devolución de llamada de versión 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

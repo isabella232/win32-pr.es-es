@@ -1,7 +1,7 @@
 ---
-description: Realice la piel de software en una matriz de vértices.
+description: Realice el desnasado de software en una matriz de vértices.
 ms.assetid: 6c1a713f-4ae7-4ee2-afa6-079dd8354fe7
-title: ID3DX10SkinInfo::D método oSoftwareSkinning (D3DX10. h)
+title: Método ID3DX10SkinInfo::D oSoftwareSkinning (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 54dfe909e36be0273e0679a824ff0674b0e3b38c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 20f68f51d6886d53d74cd31691e52c362c60d2bf9be2beb0656564cb20fcb80a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698264"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119729815"
 ---
-# <a name="id3dx10skininfodosoftwareskinning-method"></a>ID3DX10SkinInfo::D método oSoftwareSkinning
+# <a name="id3dx10skininfodosoftwareskinning-method"></a>Método ID3DX10SkinInfo::D oSoftwareSkinning
 
-Realice la piel de software en una matriz de vértices.
+Realice el desnasado de software en una matriz de vértices.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,37 +49,37 @@ HRESULT DoSoftwareSkinning(
 
 <dl> <dt>
 
-*StartVertex* \[ de\]
+*StartVertex* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Índice de base cero en pSrcVertices.
+Índice basado en 0 en pSrcVertices.
 
 </dd> <dt>
 
-*VertexCount* \[ de\]
+*VertexCount* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número de vértices que se van a transformar.
+Número de vértices que se transformarán.
 
 </dd> <dt>
 
-*pSrcVertices* \[ de\]
+*pSrcVertices* \[ En\]
 </dt> <dd>
 
-Tipo: **void \***
+Tipo: **\* void**
 
-Puntero a una matriz de vértices que se van a transformar.
+Puntero a una matriz de vértices que se transformarán.
 
 </dd> <dt>
 
-*SrcStride* \[ de\]
+*SrcStride* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Tamaño, en bytes, de un vértice en pSrcVertices.
 
@@ -88,54 +88,54 @@ Tamaño, en bytes, de un vértice en pSrcVertices.
 *pDestVertices* \[ in, out\]
 </dt> <dd>
 
-Tipo: **void \***
+Tipo: **\* void**
 
-Puntero a una matriz de vértices, que se rellenará con los vértices transformados.
+Puntero a una matriz de vértices, que se rellenarán con los vértices transformados.
 
 </dd> <dt>
 
-*DestStride* \[ de\]
+*DestStride* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Tamaño, en bytes, de un vértice en pDestVertices.
 
 </dd> <dt>
 
-*pBoneMatrices* \[ de\]
+*pIqueMatrices* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Matriz de matrices que se usará para transformar los puntos asignados a cada hueso, de modo que los vértices asignados al hueso se \[ \] transformarán por pBoneMatrices \[ i \] . Esta matriz se usará para transformar las matrices solo si el valor Isnormal (de pChannelDescs se establece en **false**; de lo contrario, se usará pInverseTransposeBoneMatrices.
+Matriz de matrices que se usará para transformar los puntos asignados a cada ternón, de tal forma que los vértices asignados a la matriz i se transformarán \[ \] mediante pMutMmatrizs \[ i \] . Esta matriz se usará para transformar las matrices solo si el valor IsNormal de pChannelDescs está establecido en **FALSE;** de lo contrario, se usará pInverseTransposeDivers.
 
 </dd> <dt>
 
-*pInverseTransposeBoneMatrices* \[ de\]
+*pInverseTransposeDivmatrices* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Si este valor es **null**, se establecerá en pBoneMatrices. Esta matriz de matrices se usará para transformar los vértices solo si el valor Isnormal (de pChannelDescs se establece en **true**; de lo contrario, se usará pBoneMatrices.
+Si este valor es **NULL,** se establecerá igual a pIonalMatrices. Esta matriz de matrices se usará para transformar los vértices solo si el valor IsNormal de pChannelDescs está establecido en **TRUE;** de lo contrario, se usará pMutmatrices.
 
 </dd> <dt>
 
-*pChannelDescs* \[ de\]
+*pChannelDescs* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **\_ \_ canal de D3DX10** de la piel](d3dx10-skinning-channel.md)\***
+Tipo: **[ **CANAL DE \_ SKINNING \_ D3DX10**](d3dx10-skinning-channel.md)\***
 
-Puntero a una estructura de canal de D3DX10 de la \_ piel \_ , que determina el miembro del vértice decl en el que se realizará la piel del software.
+Puntero a una estructura D3DX10 SKINNING CHANNEL, que determina el miembro del vértice en el que se desclá la aplicación de \_ \_ software.
 
 </dd> <dt>
 
-*NumChannels* \[ de\]
+*NumChannels* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-El número de estructuras de canal de D3DX10 \_ \_ en pChannelDescs.
+Número de estructuras de canal de SKINNING de D3DX10 \_ \_ en pChannelDescs.
 
 </dd> </dl>
 
@@ -143,11 +143,11 @@ El número de estructuras de canal de D3DX10 \_ \_ en pChannelDescs.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser: E \_ INVALIDARG.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser: E \_ INVALIDARG.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-A continuación se muestra un ejemplo de cómo usar la piel de software:
+Este es un ejemplo de cómo usar el desnasado de software:
 
 
 ```
@@ -203,8 +203,8 @@ pSkinInfo->DoSoftwareSkinning(0, numVertices,
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -215,7 +215,7 @@ pSkinInfo->DoSoftwareSkinning(0, numVertices,
 [ID3DX10SkinInfo](id3dx10skininfo.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

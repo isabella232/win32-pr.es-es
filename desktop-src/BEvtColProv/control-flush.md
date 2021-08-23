@@ -2,7 +2,7 @@
 description: Borra los búferes de reenvío de la secuencia y escribe los datos almacenados en búfer en el archivo de configuración.
 ms.assetid: 7f179237-95e5-470d-b613-c1deaa09c05f
 ms.tgt_platform: multiple
-title: Método flush de la clase control
+title: Método Flush de la clase Control
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 - COM
 api_location:
 - BEvtCol.exe
-ms.openlocfilehash: 14af77fcef729bff392c211d05fa342fac448bc8
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 50b3ca42c9cb65b86efbed40acad367191ac589bb5a3a93e5bbcb84d5f92b1ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103998173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119579775"
 ---
-# <a name="flush-method-of-the-control-class"></a>Método flush de la clase control
+# <a name="flush-method-of-the-control-class"></a>Método Flush de la clase Control
 
 Borra los búferes de reenvío de la secuencia y escribe los datos almacenados en búfer en el archivo de configuración.
 
@@ -48,10 +48,10 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                          |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                          |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                       |
-| Espacio de nombres<br/>                | Raíz de \\ Microsoft \\ Windows \\ BootEventCollector<br/>                                              |
-| MOF<br/>                      | <dl> <dt>BootEventCollectorWMI. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Raíz \\ de Microsoft Windows \\ \\ BootEventCollector<br/>                                              |
+| MOF<br/>                      | <dl> <dt>BootEventCollectorWMI.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>BEvtCol.exe</dt> </dl>               |
 
 

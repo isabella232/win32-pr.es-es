@@ -1,12 +1,12 @@
 ---
-title: Método EnumAuthorizationPlugins de la clase Win32_TSGatewayServerSettings
+title: Método EnumAuthorizationPlugins de la Win32_TSGatewayServerSettings clase
 description: Enumera todos los complementos de autorización registrados.
 ms.assetid: 525b4001-b89c-43cc-986a-00db47dd5518
 ms.tgt_platform: multiple
 keywords:
 - Método EnumAuthorizationPlugins Servicios de Escritorio remoto
-- Método EnumAuthorizationPlugins Servicios de Escritorio remoto, clase Win32_TSGatewayServerSettings
-- Win32_TSGatewayServerSettings de clase Servicios de Escritorio remoto, método EnumAuthorizationPlugins
+- Método EnumAuthorizationPlugins Servicios de Escritorio remoto , Win32_TSGatewayServerSettings clase
+- Win32_TSGatewayServerSettings clase Servicios de Escritorio remoto método , EnumAuthorizationPlugins
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d955c08f5e4f91547751b0f177681ad2abd57c8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 40447b6befd3042c766b4bd312619563617119b114c329867bfc3ca0b3e7bfce
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905647"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119574635"
 ---
-# <a name="enumauthorizationplugins-method-of-the-win32_tsgatewayserversettings-class"></a>Método EnumAuthorizationPlugins de la \_ clase TSGatewayServerSettings de Win32
+# <a name="enumauthorizationplugins-method-of-the-win32_tsgatewayserversettings-class"></a>Método EnumAuthorizationPlugins de la clase \_ TSGatewayServerSettings de Win32
 
 Enumera todos los complementos de autorización registrados.
 
@@ -45,55 +45,55 @@ uint32 EnumAuthorizationPlugins(
 
 <dl> <dt>
 
-*PluginNames* \[ enuncia\]
+*PluginNames* \[ out\]
 </dt> <dd>
 
-Tipo: **String \[ \]**
+Tipo: **\[ \] cadena**
 
-Una matriz de **cadena** que recibe los nombres de los complementos de autorización registrados.
+Matriz **de** cadenas que recibe los nombres de los complementos de autorización registrados.
 
 </dd> <dt>
 
-*CLSID* \[ enuncia\]
+*CLSID* \[ out\]
 </dt> <dd>
 
-Tipo: **String \[ \]**
+Tipo: **\[ \] cadena**
 
-Matriz de **cadenas** que recibe los CLSID de los complementos de autorización registrados.
+Matriz **de** cadenas que recibe los CLID de los complementos de autorización registrados.
 
 </dd> <dt>
 
-*Descripciones* \[ enuncia\]
+*Descripciones* \[ out\]
 </dt> <dd>
 
-Tipo: **String \[ \]**
+Tipo: **\[ \] cadena**
 
-Una matriz de **cadena** que recibe las descripciones de los complementos de autorización registrados.
+Matriz **de** cadenas que recibe las descripciones de los complementos de autorización registrados.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Si el método se ejecuta correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, vea [servicios de escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
+Si el método se realiza correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para llamar a este método, debe ser miembro del grupo administradores.
+Debe ser miembro del grupo Administradores para llamar a este método.
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                        |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TSGateway. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
@@ -102,7 +102,7 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 
 <dl> <dt>
 
-[**Win32 \_ TSGatewayServerSettings**](win32-tsgatewayserversettings.md)
+[**TSGatewayServerSettings de Win32 \_**](win32-tsgatewayserversettings.md)
 </dt> </dl>
 
  

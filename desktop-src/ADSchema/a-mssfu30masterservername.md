@@ -1,11 +1,11 @@
 ---
-title: msSFU-30-Master-Server-Name (atributo)
-description: Contiene el valor que se devuelve cuando el servidor NIS procesa una \_ llamada a la API maestra de es.
+title: Atributo msSFU-30-Master-Server-Name
+description: Contiene el valor que se devuelve cuando el servidor NIS procesa una llamada API maestra \_ yp.
 ms.assetid: 2f68491a-7e0d-4d58-aaff-05503e296b53
 ms.tgt_platform: multiple
 keywords:
-- msSFU-30-Master-Server-Name atributo AD Schema
-- msSFU30MasterServerName esquema de AD de atributos
+- Esquema de AD del atributo msSFU-30-Master-Server-Name
+- Esquema de AD del atributo msSFU30MasterServerName
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8aa6935f9998667bee270961f7eaf081be8a0d19
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 875dc20e6836f0829644a09243a51dfd1e997c819e4fb466f5b936e8ee434d9a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905982"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119551195"
 ---
-# <a name="mssfu-30-master-server-name-attribute"></a>msSFU-30-Master-Server-Name (atributo)
+# <a name="mssfu-30-master-server-name-attribute"></a>Atributo msSFU-30-Master-Server-Name
 
-Contiene el valor que se devuelve cuando el servidor NIS procesa una llamada a la API **\_ maestra de es** .
+Contiene el valor que se devuelve cuando el servidor NIS procesa una llamada API **maestra yp. \_**
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | msSFU-30-Master-Server-Name                 |
-| Nombre para mostrar de LDAP | msSFU30MasterServerName                     |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | msSFU30MasterServerName                     |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.6.18.1.307                 |
-| System-ID-GUID    | 4cc908a2-9e18-410e-8459-f17cc422020a        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 4cc908a2-9e18-410e-8459-f17cc422020a        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -53,18 +53,18 @@ Contiene el valor que se devuelve cuando el servidor NIS procesa una llamada a l
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | True                                                           |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Verdadero                                                           |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Clases usadas en        | [**msSFU-30-Domain-info**](c-mssfu30domaininfo.md)<br/> |
+| Clases usadas en        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 
@@ -74,18 +74,18 @@ Contiene el valor que se devuelve cuando el servidor NIS procesa una llamada a l
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | True                                                           |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Verdadero                                                           |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Clases usadas en        | [**msSFU-30-Domain-info**](c-mssfu30domaininfo.md)<br/> |
+| Clases usadas en        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 
@@ -95,18 +95,18 @@ Contiene el valor que se devuelve cuando el servidor NIS procesa una llamada a l
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | True                                                           |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Verdadero                                                           |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Clases usadas en        | [**msSFU-30-Domain-info**](c-mssfu30domaininfo.md)<br/> |
+| Clases usadas en        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 
@@ -116,18 +116,18 @@ Contiene el valor que se devuelve cuando el servidor NIS procesa una llamada a l
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | True                                                           |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Verdadero                                                           |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Clases usadas en        | [**msSFU-30-Domain-info**](c-mssfu30domaininfo.md)<br/> |
+| Clases usadas en        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 

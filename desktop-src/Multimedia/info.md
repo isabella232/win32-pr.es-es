@@ -74,21 +74,21 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el **p
 | Valor           | Significado                                                                                                                                                                                            |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | algoritmo de audio | Devuelve el nombre del algoritmo de compresión de audio actual.                                                                                                                                       |
-| calidad del audio   | Devuelve el nombre del descriptor de calidad de audio actual. Esto podría devolver "desconocido" si la aplicación ha establecido parámetros en valores específicos que no corresponden a calidades definidas.       |
+| calidad del audio   | Devuelve el nombre del descriptor de calidad de audio actual. Esto podría devolver "desconocido" si la aplicación ha establecido parámetros en valores específicos que no se corresponden con calidades definidas.       |
 | copyright       | Recupera el aviso de copyright del archivo MIDI del meta evento de copyright.                                                                                                                            |
 | archivo            | Recupera el nombre del archivo utilizado por el dispositivo compuesto. Si el dispositivo se abre sin un archivo y no se ha usado el comando [load,](load.md) se devuelve una cadena null.                  |
 | identidad de información   | Genera un identificador único para el CD de audio cargado actualmente en el reproductor que se está consultando.                                                                                                        |
-| info upc        | Genera el código de producto universal (UPC) que se codifica en un CD de audio. El UPC es una cadena de dígitos. Es posible que no esté disponible para todos los CD.                                                    |
+| upc de información        | Genera el código de producto universal (UPC) que se codifica en un CD de audio. El UPC es una cadena de dígitos. Es posible que no esté disponible para todos los CD.                                                    |
 | input           | Recupera la descripción del dispositivo de entrada actual. Devuelve "none" si no se establece un dispositivo de entrada.                                                                                               |
-| name            | Recupera el nombre de secuencia del meta evento de meta de nombre de secuencia o pista.                                                                                                                               |
+| name            | Recupera el nombre de secuencia del meta evento de nombre de secuencia o pista.                                                                                                                               |
 | output          | Recupera la descripción del dispositivo de salida actual. Devuelve "none" si no se establece un dispositivo de salida.                                                                                             |
 | product         | Recupera una descripción del dispositivo. Esta información a menudo incluye el nombre y el modelo del producto. La longitud de la cadena será de 31 caracteres o menos.                                               |
 | algoritmo still | Devuelve el nombre del algoritmo de compresión de imágenes fijas actual.                                                                                                                                 |
-| calidad de todavía   | Devuelve el nombre del descriptor de calidad de imagen fija actual. Esto podría devolver "desconocido" si la aplicación ha establecido parámetros en valores específicos que no corresponden a calidades definidas. |
+| calidad de todavía   | Devuelve el nombre del descriptor de calidad de imagen fija actual. Esto podría devolver "desconocido" si la aplicación ha establecido parámetros en valores específicos que no se corresponden con calidades definidas. |
 | usage           | Devuelve una cadena que describe las restricciones de uso que podría imponer el propietario de los datos visuales o de audio del área de trabajo.                                                                    |
 | version         | Devuelve el nivel de versión del controlador de dispositivo y el hardware.                                                                                                                                       |
 | algoritmo de vídeo | Devuelve el nombre del algoritmo de compresión de vídeo actual.                                                                                                                                       |
-| calidad de vídeo   | Devuelve el nombre del descriptor de calidad de vídeo actual. Esto podría devolver "desconocido" si la aplicación ha establecido parámetros en valores específicos que no corresponden a calidades definidas.       |
+| calidad de vídeo   | Devuelve el nombre del descriptor de calidad de vídeo actual. Esto podría devolver "desconocido" si la aplicación ha establecido parámetros en valores específicos que no se corresponden con calidades definidas.       |
 | texto de la ventana     | Recupera el título de la ventana que usa el dispositivo.                                                                                                                                            |
 
 
@@ -127,7 +127,7 @@ info mysound product
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

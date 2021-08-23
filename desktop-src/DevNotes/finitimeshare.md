@@ -1,7 +1,7 @@
 ---
 description: Inicializa el recurso compartido de IME.
 ms.assetid: 7f58564e-d660-4936-b74c-af4eb93e2442
-title: FInitIMEShare función)
+title: Función FInitIMEShare
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - Imeshare.dll
-ms.openlocfilehash: 0724bb6cb9e44dc86699a66da37616050ce54e18
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 178b39c67d12473663eb93bc300651341a9c459c19680218fa2c6f7a939c688c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660893"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119691385"
 ---
-# <a name="finitimeshare-function"></a>FInitIMEShare función)
+# <a name="finitimeshare-function"></a>Función FInitIMEShare
 
 Inicializa el recurso compartido de IME.
 
@@ -39,11 +39,11 @@ Esta función no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función devuelve **true** si se realiza correctamente o **false** en caso contrario.
+La función devuelve **TRUE si se** ejecuta correctamente o **FALSE** de lo contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función no tiene asociado ningún archivo de encabezado o biblioteca de importación. debe llamarlo mediante las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Esta función no tiene asociada la biblioteca de importación ni el archivo de encabezado; Debe llamarlo mediante las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**y GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 Se debe llamar a esta función antes de llamar a cualquier otra función de recurso compartido de IME.
 
@@ -51,7 +51,7 @@ Se debe llamar a esta función antes de llamar a cualquier otra función de recu
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------|-----------------------------------------------------------------------------------------|
 | Archivo DLL<br/> | <dl> <dt>Imeshare.dll</dt> </dl> |
 

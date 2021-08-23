@@ -1,32 +1,32 @@
 ---
-title: Código de ejemplo para la configuración de redistribución
-description: Código de ejemplo para la configuración de redistribución
+title: Ejemplo de código para la instalación de redistribución
+description: Ejemplo de código para la instalación de redistribución
 ms.assetid: 480f0da7-68c1-4144-a623-47578ae54acb
 keywords:
-- SDK de Windows Media Format, redistribución de software
-- Advanced Systems Format (ASF), redistribución de software
+- Windows SDK de formato multimedia, redistribución de software
+- Formato de sistemas avanzados (ASF), redistribución de software
 - ASF (formato de sistemas avanzados), redistribución de software
-- SDK de Windows Media Format, redistribución
-- Advanced Systems Format (ASF), redistribución
+- Windows SDK de formato multimedia, redistribución
+- Formato de sistemas avanzados (ASF), redistribución
 - ASF (formato de sistemas avanzados), redistribución
 - redistribución de software, código de ejemplo
 - redistribución de software, ejemplos de código
-- redistribución, código de ejemplo
+- redistribution,example code
 - redistribución, ejemplos de código
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d9990b617ed9c3492c0565b794798412f8e8373
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6a845f6c4ec66f2858756071a3e0260cb812c665a2b5b4effa063369bc894abc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119586075"
 ---
-# <a name="example-code-for-redistribution-setup"></a>Código de ejemplo para la configuración de redistribución
+# <a name="example-code-for-redistribution-setup"></a>Ejemplo de código para la instalación de redistribución
 
-Al incluir el paquete de redistribución en la aplicación, puede usar la marca/Q: A al invocar el paquete de redistribución en la rutina de instalación. Esto suprime la interfaz de usuario (UI).
+Al incluir el paquete de redistribución en la aplicación, puede usar la marca /Q:A al invocar el paquete de redistribución en la rutina de instalación. Esto suprime la interfaz de usuario (UI).
 
-El código de ejemplo siguiente se puede usar en la rutina de instalación para ejecutar los paquetes de redistribución en modo silencioso y notificar a la rutina de configuración que se debe reiniciar el equipo.
+El código de ejemplo siguiente se puede usar en la rutina de instalación para ejecutar los paquetes de redistribución en modo silencioso y notificar a la rutina de instalación cuándo se debe reiniciar el equipo.
 
 
 ```C++
@@ -214,9 +214,9 @@ BOOL SystemNeedsReboot( void )
 [**Redistribución de software**](software-redistribution.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

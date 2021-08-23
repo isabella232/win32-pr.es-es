@@ -2,7 +2,7 @@
 description: Compare el argumento con la configuración activa del recopilador.
 ms.assetid: 8decb674-c905-4eb6-9f78-7bc7b99db908
 ms.tgt_platform: multiple
-title: Método IsConfigurationEqual de la clase control
+title: Método IsConfigurationEqual de la clase Control
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 - COM
 api_location:
 - BEvtCol.exe
-ms.openlocfilehash: fb471f144a39519f1f724db458b57b624db2846d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6facd4f885eb1eb992f95bf4432e32704f7472d8125cb1022f7a6baf5cf591d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103806991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119579675"
 ---
-# <a name="isconfigurationequal-method-of-the-control-class"></a>Método IsConfigurationEqual de la clase control
+# <a name="isconfigurationequal-method-of-the-control-class"></a>Método IsConfigurationEqual de la clase Control
 
 Compare el argumento con la configuración activa del recopilador.
 
@@ -40,10 +40,10 @@ Uint32 IsConfigurationEqual(
 
 <dl> <dt>
 
-*Configuración* \[ de de\]
+*Configuración* \[ En\]
 </dt> <dd>
 
-Configuración que se va a comparar con la configuración activa.
+Configuración que se comparará con la configuración activa.
 
 </dd> </dl>
 
@@ -73,12 +73,12 @@ Correcto
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                          |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                          |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                       |
-| Espacio de nombres<br/>                | Raíz de \\ Microsoft \\ Windows \\ BootEventCollector<br/>                                              |
-| MOF<br/>                      | <dl> <dt>BootEventCollectorWMI. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Raíz \\ de Microsoft Windows \\ \\ BootEventCollector<br/>                                              |
+| MOF<br/>                      | <dl> <dt>BootEventCollectorWMI.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>BEvtCol.exe</dt> </dl>               |
 
 

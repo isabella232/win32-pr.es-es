@@ -1,11 +1,11 @@
 ---
-title: Atributo-CA-Certificates anterior
+title: Atributo Previous-CA-Certificates
 description: Último certificado expirado para esta entidad de certificación.
 ms.assetid: 8d8d8e2f-90ae-4977-9094-e84139bbfe36
 ms.tgt_platform: multiple
 keywords:
 - Esquema de AD del atributo Previous-CA-Certificates
-- previousCACertificates esquema de AD de atributos
+- Esquema de AD del atributo previousCACertificates
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f1f7bbae9905be49bf9893440c5beaa604358089
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 71aa41571e444d94ea043902a792e246e838496adac4846ce3a0e869ea060865
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119550955"
 ---
-# <a name="previous-ca-certificates-attribute"></a>Atributo-CA-Certificates anterior
+# <a name="previous-ca-certificates-attribute"></a>Atributo Previous-CA-Certificates
 
 Último certificado expirado para esta entidad de certificación.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | Certificados de CA anteriores                              |
-| Nombre para mostrar de LDAP | previousCACertificates                                |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| CN                | Certificados de entidad de certificación anteriores                              |
+| Ldap-Display-Name | previousCACertificates                                |
+| Size              | \-                                                    |
+| Privilegio actualizar  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.692                                |
-| System-ID-GUID    | 963d2739-48be-11d1-a9c3-0000f80367c1                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 963d2739-48be-11d1-a9c3-0000f80367c1                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -55,13 +55,13 @@ ms.locfileid: "104151597"
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                     |
+| Id. de vínculo                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
-| System-Only            | False                                                                  |
-| Tiene un único valor       | True                                                                   |
-| Está indexado             | False                                                                  |
-| En el catálogo global      | False                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                           |
+| System-Only            | Falso                                                                  |
+| Es de un solo valor       | Verdadero                                                                   |
+| Está indexado             | Falso                                                                  |
+| En el catálogo global      | Falso                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
@@ -76,13 +76,13 @@ ms.locfileid: "104151597"
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                     |
+| Id. de vínculo                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
-| System-Only            | False                                                                  |
-| Tiene un único valor       | True                                                                   |
-| Está indexado             | False                                                                  |
-| En el catálogo global      | False                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                           |
+| System-Only            | Falso                                                                  |
+| Es de un solo valor       | Verdadero                                                                   |
+| Está indexado             | Falso                                                                  |
+| En el catálogo global      | Falso                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
@@ -97,13 +97,13 @@ ms.locfileid: "104151597"
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                     |
+| Id. de vínculo                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
-| System-Only            | False                                                                  |
-| Tiene un único valor       | True                                                                   |
-| Está indexado             | False                                                                  |
-| En el catálogo global      | False                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                           |
+| System-Only            | Falso                                                                  |
+| Es de un solo valor       | Verdadero                                                                   |
+| Está indexado             | Falso                                                                  |
+| En el catálogo global      | Falso                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
@@ -116,15 +116,15 @@ ms.locfileid: "104151597"
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                     |
+| Id. de vínculo                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
-| System-Only            | False                                                                  |
-| Tiene un único valor       | True                                                                   |
-| Está indexado             | False                                                                  |
-| En el catálogo global      | False                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                           |
+| System-Only            | Falso                                                                  |
+| Es de un solo valor       | Verdadero                                                                   |
+| Está indexado             | Falso                                                                  |
+| En el catálogo global      | Falso                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
@@ -139,13 +139,13 @@ ms.locfileid: "104151597"
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                     |
+| Id. de vínculo                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
-| System-Only            | False                                                                  |
-| Tiene un único valor       | True                                                                   |
-| Está indexado             | False                                                                  |
-| En el catálogo global      | False                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                           |
+| System-Only            | Falso                                                                  |
+| Es de un solo valor       | Verdadero                                                                   |
+| Está indexado             | Falso                                                                  |
+| En el catálogo global      | Falso                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
@@ -160,13 +160,13 @@ ms.locfileid: "104151597"
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                     |
+| Id. de vínculo                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
-| System-Only            | False                                                                  |
-| Tiene un único valor       | True                                                                   |
-| Está indexado             | False                                                                  |
-| En el catálogo global      | False                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                           |
+| System-Only            | Falso                                                                  |
+| Es de un solo valor       | Verdadero                                                                   |
+| Está indexado             | Falso                                                                  |
+| En el catálogo global      | Falso                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |

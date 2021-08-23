@@ -1,11 +1,11 @@
 ---
 title: Atributo MS-TSLS-Property02
-description: Marcador de posición de la propiedad de Terminal Server 02.
+description: Propiedad 02 del servidor terminal de marcador de posición.
 ms.assetid: b16e38d0-b21c-4293-b3c2-f4d3bc17d9d8
 ms.tgt_platform: multiple
 keywords:
 - Esquema de AD del atributo MS-TSLS-Property02
-- msTSLSProperty02 esquema de AD de atributos
+- Esquema de AD del atributo msTSLSProperty02
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fc364c268dcba4f23cc04470c75795db7623802e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e870e2b357aa77e951812a780032f977e4cf11a4dc363cc28a35781e03bfe9cd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905972"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119508305"
 ---
 # <a name="ms-tsls-property02-attribute"></a>Atributo MS-TSLS-Property02
 
-Marcador de posición de la propiedad de Terminal Server 02.
+Propiedad 02 del servidor terminal de marcador de posición.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | MS-TSLS-Property02                          |
-| Nombre para mostrar de LDAP | msTSLSProperty02                            |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | msTSLSProperty02                            |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2010                     |
-| System-ID-GUID    | 47c77bb0-316e-4e2f-97f1-0d4c48fca9dd        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 47c77bb0-316e-4e2f-97f1-0d4c48fca9dd        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -52,18 +52,18 @@ Marcador de posición de la propiedad de Terminal Server 02.
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | False                             |
-| Está indexado             | True                              |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Falso                             |
+| Está indexado             | Verdadero                              |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 32767                             |
 | Search-Flags           | 0x00000001                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -73,18 +73,18 @@ Marcador de posición de la propiedad de Terminal Server 02.
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | False                             |
-| Está indexado             | True                              |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Falso                             |
+| Está indexado             | Verdadero                              |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 32767                             |
 | Search-Flags           | 0x00000001                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -94,13 +94,13 @@ Marcador de posición de la propiedad de Terminal Server 02.
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | False                             |
-| Está indexado             | True                              |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Falso                             |
+| Está indexado             | Verdadero                              |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 32767                             |
 | Search-Flags           | 0x00000001                        |

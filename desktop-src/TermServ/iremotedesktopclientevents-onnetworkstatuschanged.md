@@ -1,12 +1,12 @@
 ---
-title: IRemoteDesktopClientEvents OnNetworkStatusChanged, método
-description: Se llama cuando el estado de la red ha cambiado. | IRemoteDesktopClientEvents OnNetworkStatusChanged, método
+title: Método IRemoteDesktopClientEvents OnNetworkStatusChanged
+description: Se llama cuando el estado de la red ha cambiado. | Método IRemoteDesktopClientEvents OnNetworkStatusChanged
 ms.assetid: B68D1AA0-6403-40CA-95C5-BBBF39CEFFD8
 ms.tgt_platform: multiple
 keywords:
 - Método OnNetworkStatusChanged Servicios de Escritorio remoto
-- Método OnNetworkStatusChanged Servicios de Escritorio remoto, interfaz IRemoteDesktopClientEvents
-- Interfaz IRemoteDesktopClientEvents Servicios de Escritorio remoto, método OnNetworkStatusChanged
+- Método OnNetworkStatusChanged Servicios de Escritorio remoto , interfaz IRemoteDesktopClientEvents
+- Interfaz IRemoteDesktopClientEvents Servicios de Escritorio remoto método , OnNetworkStatusChanged
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: de64d8b16ea9acf9defc976d4baa91afd64f8fa7
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 96d14519f5da78a0d42b5bd7e52abf790c21406bfe20848235d2639beed2e215
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104547574"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119515115"
 ---
-# <a name="iremotedesktopclienteventsonnetworkstatuschanged-method"></a>IRemoteDesktopClientEvents:: OnNetworkStatusChanged (método)
+# <a name="iremotedesktopclienteventsonnetworkstatuschanged-method"></a>IRemoteDesktopClientEvents::OnNetworkStatusChanged (método)
 
 Se llama cuando el estado de la red ha cambiado.
 
@@ -45,10 +45,10 @@ void OnNetworkStatusChanged(
 
 <dl> <dt>
 
-*qualityLevel* \[ de\]
+*qualityLevel* \[ En\]
 </dt> <dd>
 
-Nuevo nivel de calidad de la conexión. El nivel de calidad se determina a partir de los valores de ancho de banda y de tiempo de ida y vuelta (RTT).
+Nuevo nivel de calidad de la conexión. El nivel de calidad se determina a partir de los valores de ancho de banda y tiempo de ida y vuelta (rtt).
 
 Uno de los siguientes valores.
 
@@ -58,7 +58,7 @@ Uno de los siguientes valores.
 |------------------------------------------------------------------------------|-------------------------------------------------------------|
 | <dl> <dt>0</dt> </dl> | No se pudo determinar el nivel de calidad.<br/>       |
 | <dl> <dt>1</dt> </dl> | La calidad de la conexión es deficiente (una barra).<br/>        |
-| <dl> <dt>2</dt> </dl> | La calidad de la conexión es justa (dos barras).<br/>       |
+| <dl> <dt>2</dt> </dl> | La calidad de la conexión es equitativa (dos barras).<br/>       |
 | <dl> <dt>3</dt> </dl> | La calidad de la conexión es buena (tres barras).<br/>     |
 | <dl> <dt>4</dt> </dl> | La calidad de la conexión es excelente (cuatro barras).<br/> |
 
@@ -68,14 +68,14 @@ Uno de los siguientes valores.
 
 </dd> <dt>
 
-*ancho de banda* \[ de\]
+*ancho de banda* \[ En\]
 </dt> <dd>
 
-Especifica el nuevo ancho de banda de conexión, en kilobits por segundo (kbps).
+Especifica el nuevo ancho de banda de conexión, en kilobits por segundo (Kbps).
 
 </dd> <dt>
 
-*RTT* \[ de\]
+*rtt* \[ En\]
 </dt> <dd>
 
 Especifica el nuevo tiempo de ida y vuelta (latencia) de la conexión, en milisegundos.
@@ -90,7 +90,7 @@ Este método no devuelve ningún valor.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                           |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                 |

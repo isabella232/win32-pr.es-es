@@ -1,23 +1,23 @@
 ---
-title: Método InkDraw
-description: CGuiPaper también mantiene una \_ marca m bInking. InkStart lo establece en TRUE para indicar que una secuencia de dibujo está en curso. Por ejemplo, el método InkDraw usa esta marca para determinar si debe pintar y guardar los datos de tinta.
+title: InkDraw (método)
+description: CGuiPaper también mantiene una marca \_ m bInking. InkStart lo establece en TRUE para indicar que una secuencia de dibujo está en proceso. Por ejemplo, el método InkDraw usa esta marca para determinar si debe pintar y guardar datos de entrada de lápiz.
 ms.assetid: 0fe9d029-1522-4caf-8efb-0a4eb2b59958
 keywords:
 - InkDraw
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 41973d3f8560f25a81ac1deb782bada51b015239
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6e146093d23fd16d122da1ea81d1c99bdf06ed926d5cb4dba2f1d77b747b2058
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418978"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119662765"
 ---
-# <a name="inkdraw-method"></a>Método InkDraw
+# <a name="inkdraw-method"></a>InkDraw (método)
 
-CGuiPaper también mantiene una \_ marca m bInking. [InkStart](inkstart-method.md) lo establece en **true** para indicar que una secuencia de dibujo está en curso. Por ejemplo, el método InkDraw usa esta marca para determinar si debe pintar y guardar los datos de tinta.
+CGuiPaper también mantiene una marca \_ m bInking. [InkStart lo](inkstart-method.md) establece en **TRUE para** indicar que una secuencia de dibujo está en proceso. Por ejemplo, el método InkDraw usa esta marca para determinar si debe pintar y guardar datos de entrada de lápiz.
 
-El siguiente es el método InkDraw de GUIPAPER. CPP.
+A continuación se muestra el método InkDraw de GUIPAPER. Cpp.
 
 
 ```C++
@@ -44,13 +44,13 @@ HRESULT CGuiPaper::InkDraw(
 
 
 
-Este método no hace nada si m \_ bInking es **false**. Esta es la condición cuando el usuario simplemente mueve el mouse sobre la ventana del cliente sin presionar el botón primario del mouse.
+Este método no hace nada si m \_ bInking es **FALSE.** Esta es la condición cuando el usuario simplemente mueve el mouse sobre la ventana del cliente sin presionar el botón izquierdo del mouse.
 
-InkDraw es claramente una responsabilidad doble. Las llamadas a MoveToEx y lineTo de Win32 se realizan para dibujar imágenes de línea en la pantalla de la interfaz gráfica de usuario (mediante el controlador de contexto de dispositivo mantenido en m \_ HDC). Los datos de tinta también se pasan al objeto de copaper para grabar con el método InkDraw de la interfaz [IPaper](ipaper-methods.md) . Cuando m \_ bInkSaving es **false**, InkDraw pinta la imagen de línea, pero no almacena los datos en el copaper. Esta condición se usa durante la repintado.
+InkDraw claramente tiene una doble responsabilidad. Las llamadas a MoveToEx y LineTo de Win32 se realizan para dibujar imágenes de línea en la pantalla de la GUI (mediante el identificador de contexto del dispositivo que se mantiene en m \_ hDC). Los datos de entrada de lápiz también se pasan al objeto COPaper para su grabación mediante el método InkDraw de la interfaz [IPaper.](ipaper-methods.md) Cuando m \_ bInkSaving es **FALSE,** InkDraw pinta la imagen de línea, pero no almacena los datos en COPaper. Esta condición se usa durante el repintado.
 
- 
+ 
 
- 
+ 
 
 
 

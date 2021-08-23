@@ -1,9 +1,9 @@
 ---
-title: Comando MCI_REALIZE (mmsystem. h)
-description: El \_ comando MCI Observate hace que un dispositivo gráfico obtenga su paleta en un contexto de dispositivo (DC). Los dispositivos de vídeo digital reconocen este comando.
+title: MCI_REALIZE comando (Mmsystem.h)
+description: El comando MCI REALIZE hace que un dispositivo gráfico se dé cuenta de \_ su paleta en un contexto de dispositivo (DC). Los dispositivos de vídeo digital reconocen este comando.
 ms.assetid: cbc9e6ef-a372-4ddb-b7f3-ea99ac14ec95
 keywords:
-- Comando de MCI_REALIZE de Windows multimedia
+- MCI_REALIZE comando Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 35f2e59bfe9bbe1443f55ae0fbcf8819b932bb1c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e81204fe679d543438a0d0dcc7ec333462cb6a3d0c30212706969dc22a143df1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105651394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119689836"
 ---
-# <a name="mci_realize-command"></a>Comando de MCI \_
+# <a name="mci_realize-command"></a>Comando MCI \_ REALIZE
 
-El \_ comando MCI Observate hace que un dispositivo gráfico obtenga su paleta en un contexto de dispositivo (DC). Los dispositivos de vídeo digital reconocen este comando.
+El comando MCI REALIZE hace que un dispositivo gráfico se dé cuenta de \_ su paleta en un contexto de dispositivo (DC). Los dispositivos de vídeo digital reconocen este comando.
 
-Para enviar este comando, llame a la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
+Para enviar este comando, llame a la [**función mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
 
 
 ```C++
@@ -50,57 +50,57 @@ Identificador de dispositivo del dispositivo MCI que va a recibir el mensaje de 
 
 </dd> <dt>
 
-<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*dwFlags*
+<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*Dwflags*
 </dt> <dd>
 
-**MCI \_ NOTIFICAr**, **\_ espera de MCI** o, para dispositivos de vídeo digital **, \_ prueba de MCI**. Para obtener información acerca de estas marcas, vea [las marcas wait, Notify y test](the-wait-notify-and-test-flags.md).
+**MCI \_ NOTIFY**, **MCI \_ WAIT** o, para dispositivos de vídeo digital, **MCI \_ TEST**. Para obtener información sobre estas marcas, vea [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).
 
 </dd> <dt>
 
 <span id="lpRealize"></span><span id="lprealize"></span><span id="LPREALIZE"></span>*lpRealize*
 </dt> <dd>
 
-Puntero a una [**estructura \_ \_ parms genérica de MCI**](mci-generic-parms.md) . (Los dispositivos con conjuntos de comandos extendidos podrían reemplazar esta estructura con una estructura específica del dispositivo).
+Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (Los dispositivos con conjuntos de comandos extendidos pueden reemplazar esta estructura por una estructura específica del dispositivo).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Debe usar este comando cuando la aplicación reciba el mensaje [**de \_ QUERYNEWPALETTE de WM**](/windows/desktop/gdi/wm-querynewpalette) .
+Debe usar este comando cuando la aplicación reciba el mensaje [**\_ WM QUERYNEWPALETTE.**](/windows/desktop/gdi/wm-querynewpalette)
 
-Se usan las siguientes marcas adicionales con el tipo de dispositivo "DigitalVideo":
+Las siguientes marcas adicionales se usan con el tipo de dispositivo "digitalvideo":
 
 <dl> <dt>
 
-<span id="MCI_DGV_REALIZE_BKGD"></span><span id="mci_dgv_realize_bkgd"></span>MCI \_ DGV \_ obtener \_ BKGD
+<span id="MCI_DGV_REALIZE_BKGD"></span><span id="mci_dgv_realize_bkgd"></span>MCI \_ DGV \_ REALIZE B \_ PROFIL
 </dt> <dd>
 
-Obtiene la paleta como una paleta de fondo.
+Realiza la paleta como una paleta de fondo.
 
 </dd> <dt>
 
-<span id="MCI_DGV_REALIZE_NORM"></span><span id="mci_dgv_realize_norm"></span>\_norma de DGV de MCI \_ \_
+<span id="MCI_DGV_REALIZE_NORM"></span><span id="mci_dgv_realize_norm"></span>MCI \_ DGV \_ REALIZE \_ NORM
 </dt> <dd>
 
-Obtiene la paleta normalmente. Este es el valor predeterminado.
+Realiza la paleta con normalidad. Este es el valor predeterminado.
 
 </dd> </dl>
 
-En el caso de los dispositivos de vídeo digital, el parámetro *lpRealize* apunta a una estructura de **MCI \_ \_ parms** . Para obtener más información, consulte comentarios en la estructura [**\_ \_ parms genérica de MCI**](mci-generic-parms.md) .
+En el caso de los dispositivos de vídeo digital, el *parámetro lpRealize* apunta a una **estructura \_ MCI REALIZE \_ PARMS.** Para obtener más información, vea comentarios en la estructura [**\_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -108,10 +108,10 @@ En el caso de los dispositivos de vídeo digital, el parámetro *lpRealize* apun
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
-[Comandos MCI](mci-commands.md)
+[Comandos de MCI](mci-commands.md)
 </dt> </dl>
 
  

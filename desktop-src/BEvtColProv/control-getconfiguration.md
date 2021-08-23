@@ -2,7 +2,7 @@
 description: Lea la configuración activa del recopilador.
 ms.assetid: ea26142d-5dcd-466d-b9df-5349f58a190f
 ms.tgt_platform: multiple
-title: Método GetConfiguration de la clase control
+title: Método GetConfiguration de la clase Control
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 - COM
 api_location:
 - BEvtCol.exe
-ms.openlocfilehash: 5adfedb833043ffc56da09c7bdab95c1c4698587
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a877b4ae061b6568b877d9b8ee65b8d9b0380a012d7fdba28408ad4bfcae7030
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103998084"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119579725"
 ---
-# <a name="getconfiguration-method-of-the-control-class"></a>Método GetConfiguration de la clase control
+# <a name="getconfiguration-method-of-the-control-class"></a>Método GetConfiguration de la clase Control
 
 Lea la configuración activa del recopilador.
 
@@ -41,17 +41,17 @@ Uint32 GetConfiguration(
 
 <dl> <dt>
 
-*TimestampLow* \[ enuncia\]
+*TimestampLow* \[ out\]
 </dt> <dd>
 
-Cuando este método finaliza, este parámetro contiene los bits de orden inferior de una marca de tiempo que indica cuándo se estableció la configuración.
+Cuando este método devuelve un resultado, este parámetro contiene los bits de orden inferior de una marca de tiempo que indica cuándo se estableció la configuración.
 
 </dd> <dt>
 
-*TimestampHigh* \[ enuncia\]
+*TimestampHigh* \[ out\]
 </dt> <dd>
 
-Cuando este método finaliza, este parámetro contiene los bits de orden superior de una marca de tiempo que indica cuándo se estableció la configuración.
+Cuando este método devuelve un resultado, este parámetro contiene los bits de orden superior de una marca de tiempo que indica cuándo se estableció la configuración.
 
 </dd> </dl>
 
@@ -81,12 +81,12 @@ Correcto
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                          |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                          |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                       |
-| Espacio de nombres<br/>                | Raíz de \\ Microsoft \\ Windows \\ BootEventCollector<br/>                                              |
-| MOF<br/>                      | <dl> <dt>BootEventCollectorWMI. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Raíz \\ de Microsoft Windows \\ \\ BootEventCollector<br/>                                              |
+| MOF<br/>                      | <dl> <dt>BootEventCollectorWMI.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>BEvtCol.exe</dt> </dl>               |
 
 

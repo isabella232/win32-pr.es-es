@@ -4,18 +4,18 @@ ms.assetid: 86577c09-919b-4f07-9388-47879c656f32
 title: Ejemplo de documento PrintCapabilities
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f3e2bf839e3e88e43a295912966f5b1906ef8f35
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 5f9729a3f4ce4799aa4df30b1e8c6393d3c8c7a228015b469985d39714708ce2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407108"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119600685"
 ---
 # <a name="printcapabilities-document-example"></a>Ejemplo de documento PrintCapabilities
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Notas: El espacio de nombres predeterminado no se aplica a los atributos XML. Deben tener explícitamente el prefijo completo. Los nombres de instancia usados en el ejemplo siguiente son solo ilustrativos, aunque generalmente se ajustan a los nombres de instancia definidos en las palabras clave de esquema de impresión.
+Notas: El espacio de nombres predeterminado no se aplica a los atributos XML. Deben estar explícitamente calificados con prefijo. Los nombres de instancia usados en el ejemplo siguiente son solo ilustrativos, aunque generalmente se ajustan a los nombres de instancia definidos en las palabras clave de esquema de impresión.
 
 ``` syntax
 <psf:PrintCapabilities xmlns:psf="http://schemas.microsoft.com/windows/2003/08/printing/printschemaframework" 
@@ -510,7 +510,7 @@ Notas: El espacio de nombres predeterminado no se aplica a los atributos XML. De
 
 <dl> <dt>
 
-[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

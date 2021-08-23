@@ -1,5 +1,5 @@
 ---
-description: 'Método IShellDispatch.ShutdownWindows: muestra el cuadro de diálogo Apagar Windows. Esto es lo mismo que hacer clic en el menú Inicio y seleccionar Apagar.'
+description: 'Método IShellDispatch.ShutdownWindows: muestra el cuadro de diálogo Windows apagado. Esto es lo mismo que hacer clic en menú Inicio y seleccionar Apagar.'
 ms.assetid: 3C4F6579-6398-4af4-8911-FE22555B0ABC
 title: Método IShellDispatch.ShutdownWindows (Shldisp.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 5146e17d17ba0f082ad2d80f91ae05c176cf44ed
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2ba63602dd2603ea2bf4ff2b14346d640800a74082cd89e154ee98a0a0431bd3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108100473"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119661215"
 ---
 # <a name="ishelldispatchshutdownwindows-method"></a>Método IShellDispatch.ShutdownWindows
 
-Muestra el **cuadro de diálogo Apagar Windows.** Esto es lo mismo que hacer clic en **el menú** Inicio y seleccionar **Apagar.**
+Muestra el **cuadro de diálogo Windows** cierre. Esto es lo mismo que hacer clic en **el menú** Inicio y seleccionar **Apagar.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -63,7 +63,7 @@ Este método se implementa y se accede a través del [**método Shell.ShutdownWi
 
 En el ejemplo siguiente se muestra el uso **de ShutdownWindows** en JScript, VBScript y Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -119,7 +119,7 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de \[ escritorio XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

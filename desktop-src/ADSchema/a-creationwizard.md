@@ -1,11 +1,11 @@
 ---
-title: Creation-Wizard atributo)
-description: Asistente que se va a activar al crear objetos de esta clase.
+title: Creation-Wizard atributo
+description: Asistente para activar al crear objetos de esta clase.
 ms.assetid: f18a8ec5-1004-4a19-80b6-4c207539f359
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Creation-Wizard
-- creationWizard esquema de AD de atributos
+- Creation-Wizard esquema de AD del atributo
+- Esquema de AD del atributo creationWizard
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f188e7e8caa7106b22fab0f9b0be61034ded0bd
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d3352c95cf2cc130506846f2a7241a57bbfe9392166d48750eb673e52f5d9c1e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151476"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119706805"
 ---
-# <a name="creation-wizard-attribute"></a>Creation-Wizard atributo)
+# <a name="creation-wizard-attribute"></a>Creation-Wizard atributo
 
-Asistente que se va a activar al crear objetos de esta clase.
+Asistente para activar al crear objetos de esta clase.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | Creation-Wizard                             |
-| Nombre para mostrar de LDAP | creationWizard                              |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | creationWizard                              |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.498                      |
-| System-ID-GUID    | 4d8601ed-ac85-11d0-afe3-00c04fd930c9        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 4d8601ed-ac85-11d0-afe3-00c04fd930c9        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,13 +55,13 @@ Asistente que se va a activar al crear objetos de esta clase.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | True                                                       |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Verdadero                                                       |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -76,13 +76,13 @@ Asistente que se va a activar al crear objetos de esta clase.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | True                                                       |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Verdadero                                                       |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -97,13 +97,13 @@ Asistente que se va a activar al crear objetos de esta clase.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | True                                                       |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Verdadero                                                       |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -118,13 +118,13 @@ Asistente que se va a activar al crear objetos de esta clase.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | True                                                       |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Verdadero                                                       |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -139,13 +139,13 @@ Asistente que se va a activar al crear objetos de esta clase.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | True                                                       |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Verdadero                                                       |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -160,13 +160,13 @@ Asistente que se va a activar al crear objetos de esta clase.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | True                                                       |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Verdadero                                                       |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |

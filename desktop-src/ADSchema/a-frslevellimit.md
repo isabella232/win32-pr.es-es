@@ -1,11 +1,11 @@
 ---
-title: Atributo FRS-Level-limit
-description: Limitar la profundidad del árbol de directorios que se va a replicar para la replicación de archivos.
+title: Atributo FRS-Level-Limit
+description: Limitar la profundidad del árbol de directorios para replicar para la replicación de archivos.
 ms.assetid: e2916cbd-1ce7-4ff7-82a2-5fbdae3c6a1b
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de límite de nivel de FRS
-- fRSLevelLimit esquema de AD de atributos
+- Esquema de AD del atributo FRS-Level-Limit
+- Esquema de AD del atributo fRSLevelLimit
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c587565eb10014ef638a2320dd9229d8409ba06
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 02534511f5ff6d5e5e39676c088884d98f6610c0755e27a51c247893372bc666
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658532"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119706035"
 ---
-# <a name="frs-level-limit-attribute"></a>Atributo FRS-Level-limit
+# <a name="frs-level-limit-attribute"></a>Atributo FRS-Level-Limit
 
-Limitar la profundidad del árbol de directorios que se va a replicar para la replicación de archivos.
+Limitar la profundidad del árbol de directorios para replicar para la replicación de archivos.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
 | CN                | Límite de nivel de FRS                      |
-| Nombre para mostrar de LDAP | fRSLevelLimit                        |
-| Tamaño              | 4 bytes                              |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | fRSLevelLimit                        |
+| Size              | 4 bytes                              |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.534               |
-| System-ID-GUID    | 5245801e-ca6a-11d0-afff-0000f80367c1 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | 5245801e-ca6a-11d0-afff-0000f80367c1 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -55,18 +55,18 @@ Limitar la profundidad del árbol de directorios que se va a replicar para la re
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Clases usadas en        | [**NTFRS-Replica-set**](c-ntfrsreplicaset.md)<br/> |
+| Clases usadas en        | [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Limitar la profundidad del árbol de directorios que se va a replicar para la re
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Clases usadas en        | [**NTFRS-Replica-set**](c-ntfrsreplicaset.md)<br/> |
+| Clases usadas en        | [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Limitar la profundidad del árbol de directorios que se va a replicar para la re
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Clases usadas en        | [**NTFRS-Replica-set**](c-ntfrsreplicaset.md)<br/> |
+| Clases usadas en        | [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Limitar la profundidad del árbol de directorios que se va a replicar para la re
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Clases usadas en        | [**NTFRS-Replica-set**](c-ntfrsreplicaset.md)<br/> |
+| Clases usadas en        | [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Limitar la profundidad del árbol de directorios que se va a replicar para la re
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Clases usadas en        | [**NTFRS-Replica-set**](c-ntfrsreplicaset.md)<br/> |
+| Clases usadas en        | [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Limitar la profundidad del árbol de directorios que se va a replicar para la re
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Clases usadas en        | [**NTFRS-Replica-set**](c-ntfrsreplicaset.md)<br/> |
+| Clases usadas en        | [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> |
 
 
 

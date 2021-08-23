@@ -1,9 +1,9 @@
 ---
 title: RETURNBUTTON
-description: Se trata de un botón predefinido con los siguientes valores predeterminados. | RETURNBUTTON
+description: Se trata de un button predefinido con los siguientes valores predeterminados. | RETURNBUTTON
 ms.assetid: c2c3886e-9089-4ec0-9e02-94b9a22f35ad
 keywords:
-- RETURNBUTTON Windows Media Player
+- ReturnBUTTON Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,25 +13,25 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 75a1ddad5e3844c32e2b46d03badc4b00af4c773
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e54cb405e9bed39bb893ca4bdba2b3da45060cf84e7cbb61a2e634c645ef7daf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119646815"
 ---
 # <a name="returnbutton"></a>RETURNBUTTON
 
-Se trata de un **botón** predefinido con los siguientes valores predeterminados.
+Se trata de un **button** predefinido con los siguientes valores predeterminados.
 
 ``` syntax
 onclick="jscript:view.returnToMediaCenter();"
 upToolTip="Return to Full Mode"
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esto crea un control de **botón** que devuelve el reproductor a Media Center. La información sobre herramientas está localizada. Todas las propiedades de este **botón** se pueden invalidar si se especifican explícitamente.
+Esto crea un control **BUTTON** que devuelve el Reproductor al centro multimedia. La información sobre herramientas se localiza. Todas las propiedades de **este BOTÓN** se pueden invalidar especificándolos explícitamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,7 +39,7 @@ Esto crea un control de **botón** que devuelve el reproductor a Media Center. L
 
 | Requisito | Value |
 |--------------------|----------------------------------------------|
-| Versión<br/> | Windows Media Player 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media 7.0 o posterior<br/> |
 
 
 

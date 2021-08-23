@@ -1,11 +1,11 @@
 ---
-title: Método ID3DX11EffectVariable AsDepthStencil (D3dx11effect. h)
-description: Obtiene una variable de estarcido de profundidad.
+title: Método ID3DX11EffectVariable AsDepthStencil (D3dx11effect.h)
+description: Obtiene una variable de galería de símbolos de profundidad.
 ms.assetid: 3526812b-6c43-492e-b529-12f61ecd20e3
 keywords:
 - Método AsDepthStencil Direct3D 11
-- Método AsDepthStencil Direct3D 11, interfaz ID3DX11EffectVariable
-- Interfaz ID3DX11EffectVariable Direct3D 11, método AsDepthStencil
+- Método AsDepthStencil Direct3D 11 , interfaz ID3DX11EffectVariable
+- Interfaz ID3DX11EffectVariable Direct3D 11 , método AsDepthStencil
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 980bd43f51d187252fab1872ba75d04f82820ef8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 771f22b6b757b9144fca7e2637a3a702232b3d2a4a837938454b2acd5237cfae
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104003864"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119729135"
 ---
-# <a name="id3dx11effectvariableasdepthstencil-method"></a>ID3DX11EffectVariable:: AsDepthStencil (método)
+# <a name="id3dx11effectvariableasdepthstencil-method"></a>Método ID3DX11EffectVariable::AsDepthStencil
 
-Obtiene una variable de estarcido de profundidad.
+Obtiene una variable de galería de símbolos de profundidad.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,16 +45,16 @@ Este método no tiene parámetros.
 
 Tipo: **[ **ID3DX11EffectDepthStencilVariable**](id3dx11effectdepthstencilvariable.md)\***
 
-Puntero a una variable de estarcido de profundidad. Vea [**ID3DX11EffectDepthStencilVariable**](id3dx11effectdepthstencilvariable.md).
+Puntero a una variable de galería de símbolos de profundidad. Vea [**ID3DX11EffectDepthStencilVariable**](id3dx11effectdepthstencilvariable.md).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-AsDepthStencil devuelve una versión de la variable de efecto que se ha especializado en una variable de estarcido de profundidad. De forma similar a una conversión, esta especialización devolverá un objeto no válido si la variable de efecto no contiene datos de la galería de símbolos de profundidad.
+AsDepthStencil devuelve una versión de la variable de efecto que se ha especializado en una variable de galería de símbolos de profundidad. De forma similar a una conversión, esta especialización devolverá un objeto no válido si la variable de efecto no contiene datos de galería de símbolos de profundidad.
 
-Las aplicaciones pueden probar la validez del objeto devuelto mediante una llamada a [**IsValid**](id3dx11effectvariable-isvalid.md).
+Las aplicaciones pueden probar la validez del objeto devuelto llamando a [**IsValid**](id3dx11effectvariable-isvalid.md).
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -64,8 +64,8 @@ Las aplicaciones pueden probar la validez del objeto devuelto mediante una llama
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 

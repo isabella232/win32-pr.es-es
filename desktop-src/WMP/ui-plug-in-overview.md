@@ -1,53 +1,53 @@
 ---
-title: Información general del complemento de la interfaz de usuario
-description: Información general del complemento de la interfaz de usuario
+title: Información general sobre el complemento de interfaz de usuario
+description: Información general sobre el complemento de interfaz de usuario
 ms.assetid: 8c4feb56-31c0-4f69-98dd-3c203941bb4c
 keywords:
-- Media Player de Windows, Complementos
-- Media Player de Windows, Complementos de la interfaz de usuario
-- Complementos de Windows Media Player, interfaz de usuario
+- Reproductor de Windows Media,complementos
+- Reproductor de Windows Media,complementos de interfaz de usuario
+- Reproductor de Windows Media complementos,interfaz de usuario
 - complementos, interfaz de usuario
-- Complementos de la interfaz de usuario, acerca de
-- Complementos de la interfaz de usuario, acerca de
-- Complementos de la interfaz de usuario, tipos
-- Complementos de la interfaz de usuario, tipos
+- complementos de interfaz de usuario, acerca de
+- Complementos de interfaz de usuario, acerca de
+- complementos de interfaz de usuario, tipos
+- Complementos de interfaz de usuario, tipos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5228c9ab7ff97c9f0d03b1b8d1320d303b178e56
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4843d02ec003017f9bb1bc6eeb6a942bca87a8e55af095f0c626ffb0d861cdc1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104356850"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119571711"
 ---
-# <a name="ui-plug-in-overview"></a>Información general del complemento de la interfaz de usuario
+# <a name="ui-plug-in-overview"></a>Información general sobre el complemento de interfaz de usuario
 
-Los complementos de la interfaz de usuario se pueden instalar, desinstalar y configurar mediante la pestaña complementos del cuadro de diálogo Opciones de Windows Media Player.
+Los complementos de interfaz de usuario se pueden instalar, desinstalar y configurar mediante la pestaña Complementos del cuadro de diálogo Opciones Reproductor de Windows Media.
 
-Hay cinco tipos de complementos de interfaz de usuario compatibles con Windows Media Player. Tres de estos tipos se corresponden con distintas áreas del panel **reproducción en curso** del modo completo del reproductor. Los otros dos tipos son para los complementos que se muestran en una ventana independiente y para los complementos que no tienen ninguna pantalla (excepto una página de propiedades).
+Hay cinco tipos de complementos de interfaz de usuario admitidos por Reproductor de Windows Media. Tres de estos tipos corresponden a diferentes áreas del panel **Reproducción** ahora del modo completo del jugador. Los otros dos tipos son para complementos que se muestran en una ventana independiente y para complementos que no tienen pantalla (excepto quizás una página de propiedades).
 
-Los complementos de la interfaz de usuario se descargan cuando están cerrados o deshabilitados. Los complementos de la interfaz de usuario que aparecen en el panel **reproducción en curso** también se descargan cuando el usuario elige otro complemento del mismo tipo o sale del panel **reproducción en curso** . Cuando el usuario cambia al modo de máscara, todos los complementos permanecen cargados, pero no se muestran. Si se ejecutan complementos de fondo o de ventana independientes cuando se cierra Windows Media Player, se volverán a cargar automáticamente la próxima vez que se inicie el reproductor.
+Los complementos de interfaz de usuario se descargan cuando se cierran o deshabilitan. Los complementos de interfaz de  usuario que aparecen en el panel Ahora reproduciendo también se descargan cuando el usuario elige otro complemento del mismo tipo o sale del panel **Reproducción** ahora. Cuando el usuario cambia al modo de máscara, todos los complementos permanecen cargados, pero no se muestran. Si se ejecutan complementos de ventana o fondo independientes Reproductor de Windows Media cierre, se volverán a cargar automáticamente la próxima vez que se inicie el reproductor.
 
-En las secciones siguientes se proporciona información general sobre los complementos de la interfaz de usuario de Windows Media Player:
+En las secciones siguientes se proporciona información general sobre los Reproductor de Windows Media de interfaz de usuario:
 
--   [Complementos de área de presentación (desusado)](display-area-plug-ins--deprecated.md)
--   [Complementos de área de configuración](settings-area-plug-ins.md)
--   [Complementos de área de metadatos (desusado)](metadata-area-plug-ins--deprecated.md)
+-   [Complementos de área de visualización (en desuso)](display-area-plug-ins--deprecated.md)
+-   [Configuración Complementos de área](settings-area-plug-ins.md)
+-   [Complementos de área de metadatos (en desuso)](metadata-area-plug-ins--deprecated.md)
 -   [Complementos de ventana independientes](separate-window-plug-ins.md)
--   [Complementos de fondo](background-plug-ins.md)
--   [Opciones del complemento de la interfaz de usuario](ui-plug-in-options.md)
+-   [Complementos en segundo plano](background-plug-ins.md)
+-   [Opciones del complemento de interfaz de usuario](ui-plug-in-options.md)
 -   [Mostrar interfaces de usuario modales](displaying-modal-user-interfaces.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Acerca de los complementos de la interfaz de usuario**](about-user-interface-plug-ins.md)
+[**Acerca Interfaz de usuario complementos**](about-user-interface-plug-ins.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

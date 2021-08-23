@@ -1,6 +1,6 @@
 ---
-title: Marcas de mensajes de puntero
-description: Valores que se usan en varias macros de puntero (vea macros).
+title: Marcas de mensaje de puntero
+description: Valores que se usan en varias macros de puntero (vea Macros).
 ms.assetid: C3AF232C-A68E-48DA-A8D3-4ECE6F19317A
 topic_type:
 - apiref
@@ -22,16 +22,16 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 853566dc6db7cfafed6a73b9a1ba3032001f02cb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 70d329c6a48eb92f6f50ff49d5543c2aaf5cfc3ce9ef23b48290c7aa029eecf7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105720224"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119602358"
 ---
-# <a name="pointer-message-flags"></a>Marcas de mensajes de puntero
+# <a name="pointer-message-flags"></a>Marcas de mensaje de puntero
 
-Valores que se usan en varias macros de puntero (vea [macros](macros.md)).
+Valores que se usan en varias macros de puntero (vea [Macros](macros.md)).
 
 <dl> <dt>
 
@@ -56,9 +56,9 @@ Indica la llegada de un nuevo puntero.
 
 
 
-Indica que este puntero sigue existiendo. Cuando no se establece esta marca, indica que el puntero tiene el intervalo de detección izquierdo.
+Indica que este puntero sigue existiendo. Cuando no se establece esta marca, indica que el puntero tiene un intervalo de detección izquierdo.
 
-Normalmente, esta marca no se establece solo cuando un puntero de desplazamiento deja el intervalo de detección (se establece **POINTER_FLAG_UPDATE** ) o cuando un puntero en contacto con una superficie de la ventana deja el intervalo de detección (se establece **POINTER_FLAG_UP** ).
+Normalmente, esta marca no se establece solo cuando un puntero que mantiene el puntero deja el intervalo de detección (se establece **POINTER_FLAG_UPDATE)** o cuando un puntero en contacto con una superficie de ventana deja el intervalo de **detección (POINTER_FLAG_UP** está establecido).
 
 
 </dt> </dl> </dd> <dt>
@@ -71,7 +71,7 @@ Normalmente, esta marca no se establece solo cuando un puntero de desplazamiento
 
 
 
-Indica que este puntero está en contacto con la superficie del digitalizador. Cuando no se establece esta marca, indica un puntero que mantiene el mouse.
+Indica que este puntero está en contacto con la superficie del digitalizador. Cuando no se establece esta marca, indica un puntero que mantiene el puntero.
 
 
 </dt> </dl> </dd> <dt>
@@ -84,13 +84,13 @@ Indica que este puntero está en contacto con la superficie del digitalizador. C
 
 
 
-Indica una acción principal, análoga a un botón primario del mouse.
+Indica una acción principal, análoga a un botón izquierdo del mouse hacia abajo.
 
 Un puntero táctil tiene esta marca establecida cuando está en contacto con la superficie del digitalizador.
 
-Un puntero de pluma tiene esta marca establecida cuando está en contacto con la superficie del digitalizador sin presionar ningún botón.
+Un puntero de lápiz tiene esta marca establecida cuando está en contacto con la superficie del digitalizador sin botones presionados.
 
-Un puntero del mouse tiene esta marca establecida cuando el botón primario del mouse está presionado.
+Un puntero del mouse tiene esta marca establecida cuando el botón izquierdo del mouse está apagado.
 
 
 </dt> </dl> </dd> <dt>
@@ -103,13 +103,13 @@ Un puntero del mouse tiene esta marca establecida cuando el botón primario del 
 
 
 
-Indica una acción secundaria, análoga a un botón secundario del mouse hacia abajo.
+Indica una acción secundaria, análoga a un botón derecho del mouse hacia abajo.
 
 Un puntero táctil no usa esta marca.
 
-Un puntero de lápiz tiene esta marca establecida cuando está en contacto con la superficie del digitalizador con el botón de barril del lápiz presionado.
+Un puntero de lápiz tiene esta marca establecida cuando está en contacto con la superficie del digitalizador con el botón de lápiz presionado.
 
-Un puntero del mouse tiene esta marca establecida cuando el botón secundario del mouse está presionado.
+Un puntero del mouse tiene esta marca establecida cuando el botón derecho del mouse está apagado.
 
 
 </dt> </dl> </dd> <dt>
@@ -128,7 +128,7 @@ Un puntero táctil no usa esta marca.
 
 Un puntero de lápiz no usa esta marca.
 
-Un puntero del mouse tiene esta marca establecida cuando el botón de la rueda del mouse está presionado.
+Un puntero del mouse tiene esta marca establecida cuando el botón de rueda del mouse está apagado.
 
 
 </dt> </dl> </dd> <dt>
@@ -141,13 +141,13 @@ Un puntero del mouse tiene esta marca establecida cuando el botón de la rueda d
 
 
 
-Análogo a un botón de la primera tecla del mouse extendido (XButton1).
+Análogo a un primer botón extendido del mouse (XButton1) hacia abajo.
 
 Un puntero táctil no usa esta marca.
 
 Un puntero de lápiz no usa esta marca.
 
-Un puntero del mouse tiene esta marca establecida cuando el botón del primer Mouse extendido (XBUTTON1) está inactivo.
+Un puntero del mouse tiene esta marca establecida cuando el primer botón extendido del mouse (XBUTTON1) está apagado.
 
 
 </dt> </dl> </dd> <dt>
@@ -160,13 +160,13 @@ Un puntero del mouse tiene esta marca establecida cuando el botón del primer Mo
 
 
 
-Análogo a un segundo botón de mouse extendido (XButton2).
+Similar a un segundo botón extendido del mouse (XButton2) hacia abajo.
 
 Un puntero táctil no usa esta marca.
 
 Un puntero de lápiz no usa esta marca.
 
-Un puntero del mouse tiene esta marca establecida cuando el botón del segundo Mouse extendido (XBUTTON2) está inactivo.
+Un puntero del mouse tiene esta marca establecida cuando el segundo botón extendido del mouse (XBUTTON2) está apagado.
 
 
 </dt> </dl> </dd> <dt>
@@ -179,9 +179,9 @@ Un puntero del mouse tiene esta marca establecida cuando el botón del segundo M
 
 
 
-Indica que este puntero se ha designado como puntero primario. Un puntero primario es un puntero único que puede realizar acciones más allá de las que están disponibles para los punteros no principales. Por ejemplo, cuando un puntero primario establece contacto con la superficie de una ventana, puede proporcionar a la ventana una oportunidad de activar mediante el envío de un mensaje de WM_POINTERACTIVATE.
+Indica que este puntero se ha designado como puntero principal. Un puntero principal es un puntero único que puede realizar acciones más allá de las disponibles para los punteros que no son primarios. Por ejemplo, cuando un puntero principal se pone en contacto con la superficie de una ventana, puede proporcionar a la ventana una oportunidad de activarla WM_POINTERACTIVATE mensaje.
 
-El puntero principal se identifica a partir de todas las interacciones del usuario actual en el sistema (mouse, táctil, lápiz, etc.). Por lo tanto, es posible que el puntero principal no esté asociado a la aplicación. El primer contacto en una interacción multitáctil se establece como el puntero principal. Una vez que se identifica un puntero principal, todos los contactos deben levantarse antes de que se pueda identificar un nuevo contacto como puntero principal. En el caso de las aplicaciones que no procesan la entrada de puntero, solo los eventos del puntero primario se promueven a los eventos del mouse.
+El puntero principal se identifica a partir de todas las interacciones del usuario actuales en el sistema (mouse, táctil, lápiz, entre otras). Por lo tanto, es posible que el puntero principal no esté asociado a la aplicación. El primer contacto de una interacción multitáccte se establece como puntero principal. Una vez identificado un puntero principal, todos los contactos deben elevarse antes de que un nuevo contacto se pueda identificar como puntero principal. En el caso de las aplicaciones que no procesan la entrada de puntero, solo los eventos del puntero principal se promueven a eventos del mouse.
 
 
 </dt> </dl> </dd> <dt>
@@ -194,7 +194,7 @@ El puntero principal se identifica a partir de todas las interacciones del usuar
 
 
 
-La confianza es una sugerencia del dispositivo de origen sobre si el puntero representa una interacción intencionada o intencional, que es especialmente relevante para los punteros de PT_TOUCH en los que una interacción accidental (como con la palma de la mano) puede desencadenar la entrada. La presencia de esta marca indica que el dispositivo de origen tiene una alta confianza de que esta entrada forma parte de una interacción prevista.
+La confianza es una sugerencia del dispositivo de origen sobre si el puntero representa una interacción intencionada o accidental, que es especialmente relevante para los punteros PT_TOUCH donde una interacción accidental (como con la mano) puede desencadenar la entrada. La presencia de esta marca indica que el dispositivo de origen tiene una gran confianza en que esta entrada forma parte de una interacción prevista.
 
 
 </dt> </dl> </dd> <dt>
@@ -207,14 +207,14 @@ La confianza es una sugerencia del dispositivo de origen sobre si el puntero rep
 
 
 
-Indica que el puntero se está desasociando de una manera anómala, como cuando el sistema recibe una entrada no válida para el puntero o cuando un dispositivo con punteros activos se parte repentinamente. Si la aplicación que recibe la entrada está en una posición para hacerlo, debe tratar la interacción como no completada e invertir los efectos del puntero en cuestión.
+Indica que el puntero sale de forma anómala, como cuando el sistema recibe una entrada no válida para el puntero o cuando un dispositivo con punteros activos sale repentinamente. Si la aplicación que recibe la entrada está en posición de hacerlo, debe tratar la interacción como no completada e invertir los efectos del puntero en cuestión.
 
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-XBUTTON1 y XBUTTON2 son botones adicionales que se usan en muchos dispositivos de mouse. Devuelven los mismos datos que los botones estándar del mouse.
+XBUTTON1 y XBUTTON2 son botones adicionales que se usan en muchos dispositivos del mouse. Devuelven los mismos datos que los botones estándar del mouse.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -222,9 +222,9 @@ XBUTTON1 y XBUTTON2 son botones adicionales que se usan en muchos dispositivos d
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                           |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                 |
+| Header<br/>                   | <dl> <dt>Winuser.h</dt> </dl> |
 
 
 

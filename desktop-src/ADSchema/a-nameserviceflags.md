@@ -1,11 +1,11 @@
 ---
 title: Atributo Name-Service-Flags
-description: Marcas de configuración para el servicio de nombres de RPC.
+description: Marcas de configuración para el servicio de nombres RPC.
 ms.assetid: f32cd2fb-4a0a-4a1b-873b-3e4d893f80cd
 ms.tgt_platform: multiple
 keywords:
-- Name-Service-Flags atributo AD Schema
-- nameServiceFlags esquema de AD de atributos
+- Esquema de AD del atributo Name-Service-Flags
+- Esquema de AD del atributo nameServiceFlags
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 98e0b8bec096a8dce43df7bb71658c90bbfd98a4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: cdd2ec0a986a1408ba3631634c6cc85ca8007b9588224a7be65b499766f83558
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997388"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119442675"
 ---
 # <a name="name-service-flags-attribute"></a>Atributo Name-Service-Flags
 
-Marcas de configuración para el servicio de nombres de RPC.
+Marcas de configuración para el servicio de nombres RPC.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | Marcas de servicio de nombre                   |
-| Nombre para mostrar de LDAP | nameServiceFlags                     |
-| Tamaño              | 4 bytes                              |
-| Actualizar privilegio  | \-                                   |
+| CN                | Name-Service-Flags                   |
+| Ldap-Display-Name | nameServiceFlags                     |
+| Size              | 4 bytes                              |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.753               |
-| System-ID-GUID    | 80212840-4bdc-11d1-a9c4-0000f80367c1 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | 80212840-4bdc-11d1-a9c4-0000f80367c1 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -55,18 +55,18 @@ Marcas de configuración para el servicio de nombres de RPC.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Tiene un único valor       | True                                               |
-| Está indexado             | False                                              |
-| En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Verdadero                                               |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Falso                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Clases usadas en        | [**Contenedor RPC**](c-rpccontainer.md)<br/> |
+| Clases usadas en        | [**Rpc-Container**](c-rpccontainer.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Marcas de configuración para el servicio de nombres de RPC.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Tiene un único valor       | True                                               |
-| Está indexado             | False                                              |
-| En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Verdadero                                               |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Falso                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Clases usadas en        | [**Contenedor RPC**](c-rpccontainer.md)<br/> |
+| Clases usadas en        | [**Rpc-Container**](c-rpccontainer.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Marcas de configuración para el servicio de nombres de RPC.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Tiene un único valor       | True                                               |
-| Está indexado             | False                                              |
-| En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Verdadero                                               |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Falso                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Clases usadas en        | [**Contenedor RPC**](c-rpccontainer.md)<br/> |
+| Clases usadas en        | [**Rpc-Container**](c-rpccontainer.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Marcas de configuración para el servicio de nombres de RPC.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Tiene un único valor       | True                                               |
-| Está indexado             | False                                              |
-| En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Verdadero                                               |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Falso                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Clases usadas en        | [**Contenedor RPC**](c-rpccontainer.md)<br/> |
+| Clases usadas en        | [**Rpc-Container**](c-rpccontainer.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Marcas de configuración para el servicio de nombres de RPC.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Tiene un único valor       | True                                               |
-| Está indexado             | False                                              |
-| En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Verdadero                                               |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Falso                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Clases usadas en        | [**Contenedor RPC**](c-rpccontainer.md)<br/> |
+| Clases usadas en        | [**Rpc-Container**](c-rpccontainer.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Marcas de configuración para el servicio de nombres de RPC.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Tiene un único valor       | True                                               |
-| Está indexado             | False                                              |
-| En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Verdadero                                               |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Falso                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Clases usadas en        | [**Contenedor RPC**](c-rpccontainer.md)<br/> |
+| Clases usadas en        | [**Rpc-Container**](c-rpccontainer.md)<br/> |
 
 
 

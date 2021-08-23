@@ -1,12 +1,12 @@
 ---
-title: IRemoteDesktopClientEvents método de conexión
+title: Método OnConnecting de IRemoteDesktopClientEvents
 description: Se llama cuando el control de cliente intenta establecer una conexión a una sesión remota.
 ms.assetid: E27118B2-C1AE-4F10-AB3E-3DBF978CC2AF
 ms.tgt_platform: multiple
 keywords:
-- Método biconnect Servicios de Escritorio remoto
-- Método biconnect Servicios de Escritorio remoto, interfaz IRemoteDesktopClientEvents
-- Interfaz IRemoteDesktopClientEvents Servicios de Escritorio remoto, método biconnect
+- Método OnConnecting Servicios de Escritorio remoto
+- Método OnConnecting Servicios de Escritorio remoto , interfaz IRemoteDesktopClientEvents
+- Interfaz IRemoteDesktopClientEvents Servicios de Escritorio remoto método , OnConnecting
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6211be67110200b1cd419b99fe76b5ce98d5408d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5a2f0d2ab00c1a5422912c9fa37abe88585e5352fd7003da4fbcf918c511b293
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686017"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119511668"
 ---
-# <a name="iremotedesktopclienteventsonconnecting-method"></a>IRemoteDesktopClientEvents:: alconnect (método)
+# <a name="iremotedesktopclienteventsonconnecting-method"></a>IRemoteDesktopClientEvents::OnConnecting (método)
 
 Se llama cuando el control de cliente intenta establecer una conexión a una sesión remota.
 

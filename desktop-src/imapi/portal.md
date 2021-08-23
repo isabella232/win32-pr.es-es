@@ -4,18 +4,18 @@ description: Image Mastering API
 ms.assetid: 4902d3fb-3195-4909-ab64-28f8a77ba14c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c7fabf41d1c82420709b39bb5db03c2ac3e851d2
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: e28f98422a1845234ec9eda7054978797c876a41a905484a95a505bdf4e133c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119689"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119611795"
 ---
 # <a name="image-mastering-api"></a>Image Mastering API
 
 ## <a name="purpose"></a>Propósito
 
-La API de mastering de imágenes de Microsoft Windows permite a las aplicaciones almacenar y grabar imágenes en medios de almacenamiento óptico de CD, DVD y Dv-ray. Otros medios parecidos a discos que menten imágenes de la misma manera también pueden usar esta API.
+Microsoft Windows API de mastering de imágenes permite a las aplicaciones almacenar y grabar imágenes en medios de almacenamiento óptico de CD, DVD y Dv-ray. Otros medios de tipo disco que menten imágenes de la misma manera también pueden usar esta API.
 
 ## <a name="developer-audience"></a>Audiencia de desarrolladores
 
@@ -28,7 +28,7 @@ Se recomienda conocer las tecnologías de CD, DVD y Dv-ray y los sistemas de arc
 IMAPI 2.0 se admite de forma nativa a partir de Windows Vista y Windows Server 2008. La habilitación de la funcionalidad IMAPI 2.0 para Windows XP y Windows Server 2003 requiere la instalación del paquete de actualización [KB932716.](https://support.microsoft.com/kb/932716) Si este paquete no está instalado, Windows XP sigue siendo compatible de forma nativa con [IMAPI 1.0.](imapiv1.md)
 
 > [!Note]  
-> Windows Feature Pack para Storage está disponible para el público a través del Centro [de descarga de Microsoft](https://www.microsoft.com/downloads/details.aspx?FamilyID=63ab51ea-99c9-45c0-980a-c556746fcf05). Puede encontrar información adicional sobre los cambios específicos de la API en la sección [Novedades.](what-s-new.md)
+> El Windows feature pack para Storage está disponible para el público a través del Centro [de descarga de Microsoft](https://www.microsoft.com/downloads/details.aspx?FamilyID=63ab51ea-99c9-45c0-980a-c556746fcf05). Puede encontrar información adicional sobre los cambios específicos de la API en la sección [Novedades.](what-s-new.md)
 
  
 
@@ -55,10 +55,10 @@ Puede encontrar más información sobre IMAPI y otros temas relacionados en las 
 
 | Tema                                                                                                 | Descripción                                                                                                                                                                                                                                                                                                                                                                   |
 |--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Microsoft Optical Storage Blog](/archive/blogs/opticalstorage/)                | Resalta los temas que se centran en la implementación de Image Mastering API en escenarios de desarrollo del mundo real.                                                                                                                                                                                                                                                 |
-| [Foro de discusión de plataformas ópticas](https://social.msdn.microsoft.com/forums/windowsopticalplatform/threads/)              | Analice CDROM.SYS, IMAPIv2 y Live File System. Este foro se centra en temas de nivel de sistema y está pensado para desarrolladores de aplicaciones en lugar de usuarios finales.                                                                                                                                                                                                 |
+| [Blog de microsoft optical Storage](/archive/blogs/opticalstorage/)                | Resalta los temas que se centran en la implementación de Image Mastering API en escenarios de desarrollo del mundo real.                                                                                                                                                                                                                                                 |
+| [Foro de discusión sobre la plataforma óptica](https://social.msdn.microsoft.com/forums/windowsopticalplatform/threads/)              | Analice CDROM.SYS, IMAPIv2 y Live File System. Este foro se centra en temas de nivel de sistema y está pensado para desarrolladores de aplicaciones en lugar de usuarios finales.                                                                                                                                                                                                 |
 | [T10 Technical Committee](https://www.t10.org/)                       | Un comité técnico del Comité Inter internationalista de estándares de tecnologías de la información (INCITS) pronunciaba "conclusiones". INCITS está reconocido por y funciona según las reglas aprobadas por, el American National Standards Institute (ANSI). Estas reglas están diseñadas para garantizar que los estándares voluntarias se desarrollan mediante el consenso de los grupos del sector. |
-| [Asociación de tecnología de almacenamiento óptico ( TECHNOLOGY)](http://www.osta.org/) | Trabaja para dar forma al futuro del sector a través de reuniones periódicas de aplicaciones comerciales de almacenamiento óptico (COSA), compatibilidad de DVD, marketing, MPV (MusicPhotoVideo), comités de UDF y un nuevo comité de blue. Se invita a empresas interesadas de todo el mundo a unirse a la organización y participar en sus comités y programas.               |
+| [Asociación Storage tecnología óptica ( TECHNOLOGY)](http://www.osta.org/) | Trabaja para dar forma al futuro del sector a través de reuniones periódicas de aplicaciones de Storage ópticos comerciales (COSA), compatibilidad de DVD, marketing, MPV (MusicPhotoVideo), comités de UDF y un nuevo comité addhoc Blue Uv. Las empresas interesadas de todo el mundo están invitadas a unirse a la organización y participar en sus comités y programas.               |
 
 
 

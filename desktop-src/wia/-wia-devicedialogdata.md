@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Wiadefd.h
-ms.openlocfilehash: ad7b08f5396a7a6e9b1f74df3dd409303b2d548d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e20b8689e71031024c46451d3079450061e8112acf1052c12129b89ed9e0a23c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108104273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119451205"
 ---
 # <a name="devicedialogdata-structure"></a>Estructura DEVICEDIALOGDATA
 
@@ -89,11 +89,11 @@ Especifica un conjunto de marcas que controlan la operación del cuadro de diál
 
 
 
-| Marcar                                 | Significado                                                                                                                                                                                     |
+| Marca                                 | Significado                                                                                                                                                                                     |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0                                    | Comportamiento predeterminado.                                                                                                                                                                           |
 | IMAGEN ÚNICA \_ DEL CUADRO DE DIÁLOGO DE DISPOSITIVO \_ \_ \_ WIA   | Restrinja la selección de imágenes a una sola imagen en el cuadro de diálogo de adquisición de imágenes del dispositivo.                                                                                                      |
-| CUADRO DE DIÁLOGO \_ DE DISPOSITIVO WIA \_ USO DE LA INTERFAZ DE USUARIO \_ \_ \_ COMÚN | Use la interfaz de usuario del sistema, si está disponible, en lugar de la interfaz de usuario proporcionada por el proveedor. Si la interfaz de usuario del sistema no está disponible, se usa la interfaz de usuario del proveedor. Si ninguna interfaz de usuario está disponible, la función devuelve E \_ NOTIMPL. |
+| CUADRO DE DIÁLOGO \_ DE DISPOSITIVO WIA \_ USO DE LA INTERFAZ DE USUARIO \_ \_ \_ COMÚN | Use la interfaz de usuario del sistema, si está disponible, en lugar de la interfaz de usuario proporcionada por el proveedor. Si la interfaz de usuario del sistema no está disponible, se usa la interfaz de usuario del proveedor. Si no hay ninguna interfaz de usuario disponible, la función devuelve E \_ NOTIMPL. |
 
 
 
@@ -108,7 +108,7 @@ Tipo: **LONG**
 
 </dd> <dd>
 
-Especifica el tipo de datos que la imagen pretende representar. Para obtener una lista de valores de intención de imagen, vea [**Constantes de intención de imagen.**](-wia-imageintentconstants.md)
+Especifica el tipo de datos que la imagen pretende representar. Para obtener una lista de valores de intención de imagen, vea [**Constantes de intención de imagen**](-wia-imageintentconstants.md).
 
 </dd> <dt>
 
@@ -138,11 +138,11 @@ Recibe la dirección de una matriz de punteros a [**interfaces IWiaItem.**](/win
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Wiadefd.h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                 |
+| Header<br/>                   | <dl> <dt>Wiadefd.h</dt> </dl> |
 
 
 

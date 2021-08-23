@@ -1,19 +1,19 @@
 ---
-description: La arquitectura de adquisición de imágenes de Windows (WIA) se basa en la base establecida por la arquitectura de imágenes fijas (STI).
+description: La Windows adquisición de imágenes (WIA) se basa en la base establecida por still image architecture (GATES).
 ms.assetid: 4ce9c1e4-02e1-4584-9cc1-37f691102cc2
-title: Compatibilidad de STI
+title: Compatibilidad con ASS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d2246ba3f74d1ff7bcc59ecaf06ccf0c085b2e4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 00d456f827bcac1b32d71318b1e6b5a9bc3e92a0ee802ce4658f951dc1e51528
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705688"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119549615"
 ---
-# <a name="sti-compatibility"></a>Compatibilidad de STI
+# <a name="sti-compatibility"></a>Compatibilidad con ASS
 
-La arquitectura de adquisición de imágenes de Windows (WIA) se basa en la base establecida por la arquitectura de imágenes fijas (STI). Los controladores de dispositivos WIA serán compatibles con el modelo de controlador de modo de usuario (USD) de STI. Aunque el objetivo de USD original es admitir orígenes de datos TWAIN y otras API, los controladores WIA admiten la nueva interfaz de aplicación WIA.
+La Windows adquisición de imágenes (WIA) se basa en la base establecida por still image architecture (GATES). Los controladores de dispositivo WIA serán compatibles con el modelo de controlador de modo de usuario (USD) de HIPAA. Aunque el propósito del USD original es admitir orígenes de datos T ODBC y otras API, los controladores WIA admiten la nueva interfaz de aplicación WIA.
 
  
 

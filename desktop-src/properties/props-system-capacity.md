@@ -1,19 +1,19 @@
 ---
-description: Cantidad total de espacio de almacenamiento, expresada en bytes.
+description: Cantidad de espacio de almacenamiento total, expresado en bytes.
 ms.assetid: 14cd6b5d-0534-4527-8439-e7ba8cdef8da
-title: System. Capacity
+title: System.Capacity
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d62e117b11f0f689a5fbbbd301714aef87e217bd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7ccb62ac5ff6c55ece4e243773b21e699eb10c8eef4cfa5a0433555115388731
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119662305"
 ---
-# <a name="systemcapacity"></a>System. Capacity
+# <a name="systemcapacity"></a>System.Capacity
 
-Cantidad total de espacio de almacenamiento, expresada en bytes. Esta propiedad se usa principalmente para indicar la capacidad de medios de almacenamiento, como unidades de disco duro.
+Cantidad de espacio de almacenamiento total, expresado en bytes. Esta propiedad se usa principalmente para indicar la capacidad de los medios de almacenamiento, como las unidades de disco duro.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -135,9 +135,9 @@ propertyDescription
             mnemonics = gigantic
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -152,7 +152,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -164,7 +164,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -182,7 +182,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

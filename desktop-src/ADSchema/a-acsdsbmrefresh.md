@@ -1,11 +1,11 @@
 ---
-title: Atributo ACS-DSBM-Refresh
-description: Este atributo contiene el valor de temporizador de intervalo que determina si el administrador de ancho de banda de subred designado (DSBM) envía un mensaje de actualización (soy \_ \_ DSBM) a todos los administradores de ancho de banda de subred de un dominio.
+title: Atributo ACS-ESTAM-Refresh
+description: Este atributo contiene el valor del temporizador de intervalo que determina cuándo el Administrador de ancho de banda de subred designado (LOMM) envía un mensaje de actualización (I AM TIMERM) a todos los administradores de ancho de banda de subred de un \_ \_ dominio.
 ms.assetid: 018fd748-ca2e-41e1-a920-224a32e13e21
 ms.tgt_platform: multiple
 keywords:
-- Esquema AD de atributo ACS-DSBM-Refresh
-- aCSDSBMRefresh esquema de AD de atributos
+- Esquema de AD del atributo ACS-ESTAM-Refresh
+- Esquema de AD del atributo aCSDSBMRefresh
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d662b886a8c97f3d155d3c1b40efcef67f7f1f0
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: dabca0b181614040891b78855b4134f321693175f66ed350ed8e6f011a9fb093
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997320"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119545375"
 ---
-# <a name="acs-dsbm-refresh-attribute"></a>Atributo ACS-DSBM-Refresh
+# <a name="acs-dsbm-refresh-attribute"></a>Atributo ACS-ESTAM-Refresh
 
-Este atributo contiene el valor de temporizador de intervalo que determina si el administrador de ancho de banda de subred designado (DSBM) envía un mensaje de actualización (soy \_ \_ DSBM) a todos los administradores de ancho de banda de subred de un dominio.
+Este atributo contiene el valor del temporizador de intervalo que determina cuándo el Administrador de ancho de banda de subred designado (LOMM) envía un mensaje de actualización (I AM TIMERM) a todos los administradores de ancho de banda de subred de un \_ \_ dominio.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | ACS-DSBM-actualizar                     |
-| Nombre para mostrar de LDAP | aCSDSBMRefresh                       |
-| Tamaño              | 4 bytes                              |
-| Actualizar privilegio  | \-                                   |
+| CN                | ACS-LOM-Refresh                     |
+| Ldap-Display-Name | aCSDSBMRefresh                       |
+| Size              | 4 bytes                              |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.777               |
-| System-ID-GUID    | 1cb3559f-56d0-11d1-a9c6-0000f80367c1 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | 1cb3559f-56d0-11d1-a9c6-0000f80367c1 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -55,18 +55,18 @@ Este atributo contiene el valor de temporizador de intervalo que determina si el
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Este atributo contiene el valor de temporizador de intervalo que determina si el
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Este atributo contiene el valor de temporizador de intervalo que determina si el
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Este atributo contiene el valor de temporizador de intervalo que determina si el
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Este atributo contiene el valor de temporizador de intervalo que determina si el
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Este atributo contiene el valor de temporizador de intervalo que determina si el
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 

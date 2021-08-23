@@ -1,5 +1,5 @@
 ---
-description: 'Método StopService de la Msvm_ImageManagementService : detiene el servicio.'
+description: 'Método StopService de la Msvm_ImageManagementService clase : detiene el servicio.'
 ms.assetid: 96f49c9c-7f1c-497e-9630-5fd9b355b75d
 title: Método StopService de la Msvm_ImageManagementService clase
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: e9dde7af6f6d62395f27cbd3ec44daf45d7375f8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 72b5ce1774a4aa7e304b7119febf81cf064e79efa654cc7a2ea35847df344cea
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118934"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119522474"
 ---
 # <a name="stopservice-method-of-the-msvm_imagemanagementservice-class"></a>Método StopService de la clase \_ Msvm ImageManagementService
 
@@ -53,7 +53,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -63,7 +63,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

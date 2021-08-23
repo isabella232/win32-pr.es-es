@@ -1,8 +1,8 @@
 ---
-description: La \_ clase CIM LocalFileSystem representa el almacén de archivos controlado por un sistema informático a través de medios locales (por ejemplo, acceso directo al controlador de dispositivo).
+description: La clase CIM LocalFileSystem representa el almacén de archivos controlado por un sistema informático a través de medios \_ locales (por ejemplo, acceso directo al controlador de dispositivo).
 ms.assetid: eab52a25-ca24-4a69-b030-091603d3582c
 ms.tgt_platform: multiple
-title: CIM_LocalFileSystem (clase)
+title: CIM_LocalFileSystem clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -33,19 +33,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 6a4a45541a651c92b45baba70828ba99c911d59a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 64e876fb69e4ff0fd696c5d64a4a89be2805b50bbd1db6c2419e6dcfdf4d6035
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907284"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119438445"
 ---
-# <a name="cim_localfilesystem-class"></a>\_Clase LocalFileSystem de CIM
+# <a name="cim_localfilesystem-class"></a>Cim \_ LocalFileSystem (clase)
 
-La clase **CIM \_ LocalFileSystem** representa el almacén de archivos controlado por un sistema informático a través de medios locales (por ejemplo, acceso directo al controlador de dispositivo). El almacén de archivos se puede administrar directamente mediante el sistema del equipo, sin necesidad de que otro equipo actúe como servidor de archivos. Sin embargo, para un sistema de archivos en clúster, el sistema de archivos es local y, por lo tanto, se pospone al clúster.
+La **clase CIM \_ LocalFileSystem representa** el almacén de archivos controlado por un sistema informático a través de medios locales (por ejemplo, acceso directo al controlador de dispositivo). El sistema de equipos puede administrar el almacén de archivos directamente, sin necesidad de que otro equipo actúe como servidor de archivos. Sin embargo, para un sistema de archivos en clúster, el sistema de archivos es local y, por tanto, se aplaza al clúster.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -81,40 +81,40 @@ class CIM_LocalFileSystem : CIM_FileSystem
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ LocalFileSystem** tiene estos tipos de miembros:
+La **clase CIM \_ LocalFileSystem** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ LocalFileSystem** tiene estas propiedades.
+La **clase CIM \_ LocalFileSystem** tiene estas propiedades.
 
 <dl> <dt>
 
 **AvailableSpace**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Partición DMTF \| 002,4 "), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) (" bytes ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Partition \| 002.4"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("bytes")
 </dt> </dl>
 
-Cantidad de espacio disponible, en bytes, para el sistema de archivos. Si es desconocido, escriba 0.
+Cantidad de espacio libre, en bytes, para el sistema de archivos. Si es desconocido, escriba 0.
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
-Esta propiedad se hereda del [**\_ sistema de archivos CIM**](cim-filesystem.md).
+Esta propiedad se hereda de [**CIM \_ FileSystem**](cim-filesystem.md).
 
 </dd> <dt>
 
-**BlockSize**
+**Blocksize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -125,9 +125,9 @@ Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("byt
 
 Tamaño de bloque del sistema de archivos para el almacenamiento y la recuperación de datos.
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
-Esta propiedad se hereda del [**\_ sistema de archivos CIM**](cim-filesystem.md).
+Esta propiedad se hereda de [**CIM \_ FileSystem**](cim-filesystem.md).
 
 </dd> <dt>
 
@@ -140,12 +140,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
+Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
 </dt> </dl>
 
 Breve descripción textual del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -158,9 +158,9 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es true**, se conserva el caso de los nombres de archivo.
+Si **es TRUE,** se conserva el caso de los nombres de archivo.
 
-Esta propiedad se hereda del [**\_ sistema de archivos CIM**](cim-filesystem.md).
+Esta propiedad se hereda de [**CIM \_ FileSystem**](cim-filesystem.md).
 
 </dd> <dt>
 
@@ -173,16 +173,16 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es true**, se admiten los nombres de archivo que distinguen mayúsculas de minúsculas.
+Si **es TRUE,** se admiten nombres de archivo que distinguen mayúsculas de minúsculas.
 
-Esta propiedad se hereda del [**\_ sistema de archivos CIM**](cim-filesystem.md).
+Esta propiedad se hereda de [**CIM \_ FileSystem**](cim-filesystem.md).
 
 </dd> <dt>
 
-**Dese**
+**CodeSet**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -190,7 +190,7 @@ Tipo de acceso: solo lectura
 
 Matriz que define los juegos de caracteres o la codificación admitidos por el sistema de archivos.
 
-Esta propiedad se hereda del [**\_ sistema de archivos CIM**](cim-filesystem.md).
+Esta propiedad se hereda de [**CIM \_ FileSystem**](cim-filesystem.md).
 
 <dt>
 
@@ -203,7 +203,7 @@ Esta propiedad se hereda del [**\_ sistema de archivos CIM**](cim-filesystem.md)
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -224,7 +224,7 @@ Esta propiedad se hereda del [**\_ sistema de archivos CIM**](cim-filesystem.md)
 
 <span id="ISO2022"></span><span id="iso2022"></span>
 
-**Iso2022** (4)
+**ISO2022** (4)
 
 
 </dt> <dd></dd> <dt>
@@ -268,12 +268,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Partición DMTF \| 002,7 ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Partición DMTF \| \| 002.7")
 </dt> </dl>
 
-Cadena de forma libre que indica el algoritmo o la herramienta que se usa para comprimir el archivo lógico. Si el esquema de compresión es desconocido o no se ha descrito, use "Unknown". Si el archivo lógico está comprimido, pero el esquema de compresión es desconocido o no se ha descrito, use "comprimido". Si el archivo lógico no está comprimido, use "no comprimido".
+Cadena de forma libre que indica el algoritmo o la herramienta que se usa para comprimir el archivo lógico. Si el esquema de compresión es desconocido o no se describe, use "Unknown". Si el archivo lógico está comprimido, pero el esquema de compresión es desconocido o no se describe, use "Compressed". Si el archivo lógico no está comprimido, use "No comprimido".
 
-Esta propiedad se hereda del [**\_ sistema de archivos CIM**](cim-filesystem.md).
+Esta propiedad se hereda de [**CIM \_ FileSystem**](cim-filesystem.md).
 
 </dd> <dt>
 
@@ -286,12 +286,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nombre de la clase o subclase utilizada en la creación de una instancia de. Cuando se usa con otras propiedades de clave de la clase, esta propiedad permite que todas las instancias de la clase y sus subclases se identifiquen de forma única.
+Nombre de la clase o subclase usada en la creación de una instancia de . Cuando se usa con otras propiedades clave de la clase , esta propiedad permite identificar de forma única todas las instancias de la clase y sus subclases.
 
-Esta propiedad se hereda del [**\_ sistema de archivos CIM**](cim-filesystem.md).
+Esta propiedad se hereda de [**CIM \_ FileSystem**](cim-filesystem.md).
 
 </dd> <dt>
 
@@ -304,12 +304,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**CreationClassName**")
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**CreationClassName**")
 </dt> </dl>
 
-Ámbito del nombre de la clase de creación del sistema del equipo.
+Ámbito del nombre de clase de creación del sistema de equipo.
 
-Esta propiedad se hereda del [**\_ sistema de archivos CIM**](cim-filesystem.md).
+Esta propiedad se hereda de [**CIM \_ FileSystem**](cim-filesystem.md).
 
 </dd> <dt>
 
@@ -322,12 +322,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**Nombre**")
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**Name**")
 </dt> </dl>
 
 Ámbito del nombre del sistema del equipo.
 
-Esta propiedad se hereda del [**\_ sistema de archivos CIM**](cim-filesystem.md).
+Esta propiedad se hereda de [**CIM \_ FileSystem**](cim-filesystem.md).
 
 </dd> <dt>
 
@@ -340,12 +340,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Descripción")
+Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Description")
 </dt> </dl>
 
-Una descripción textual del objeto.
+Descripción textual del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -358,19 +358,19 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Partición DMTF \| 002,8 ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Partición DMTF \| \| 002.8")
 </dt> </dl>
 
-Cadena de forma libre que identifica el algoritmo o la herramienta que se usa para cifrar un archivo lógico. Si el esquema de cifrado no es indulged (por motivos de seguridad, por ejemplo), use "Unknown". Si el archivo está cifrado, pero el esquema de cifrado es desconocido o no se ha divulgado, use "cifrado". Si el archivo lógico no está cifrado, use "no cifrado".
+Cadena de forma libre que identifica el algoritmo o la herramienta que se usa para cifrar un archivo lógico. Si el esquema de cifrado no está en proceso (por motivos de seguridad, por ejemplo), use "Unknown". Si el archivo está cifrado, pero su esquema de cifrado es desconocido o no se ha divulgado, use "Encrypted". Si el archivo lógico no está cifrado, use "No cifrado".
 
-Esta propiedad se hereda del [**\_ sistema de archivos CIM**](cim-filesystem.md).
+Esta propiedad se hereda de [**CIM \_ FileSystem**](cim-filesystem.md).
 
 </dd> <dt>
 
 **FileSystemSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -381,42 +381,42 @@ Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("byt
 
 Tamaño del sistema de archivos, en bytes. Si es desconocido, escriba 0 (cero).
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
-Esta propiedad se hereda del [**\_ sistema de archivos CIM**](cim-filesystem.md).
+Esta propiedad se hereda de [**CIM \_ FileSystem**](cim-filesystem.md).
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 "), [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" instalación de fecha ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Fecha de instalación")
 </dt> </dl>
 
 Indica cuándo se instaló el objeto. La falta de un valor no indica que el objeto no está instalado.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **MaxFileNameLength**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Longitud máxima de un nombre de archivo en el sistema de archivos. Un valor de 0 (cero) indica que no hay límite para la longitud del nombre de archivo.
+Longitud máxima de un nombre de archivo dentro del sistema de archivos. Un valor de 0 (cero) indica que no hay ningún límite en la longitud del nombre de archivo.
 
-Esta propiedad se hereda del [**\_ sistema de archivos CIM**](cim-filesystem.md).
+Esta propiedad se hereda de [**CIM \_ FileSystem**](cim-filesystem.md).
 
 </dd> <dt>
 
@@ -429,12 +429,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
+Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre")
 </dt> </dl>
 
-Etiqueta por la que se conoce el objeto. Cuando se subclasen, esta propiedad se puede invalidar para ser una propiedad de clave.
+Etiqueta por la que se conoce el objeto. Cuando se encuentra en subclases, esta propiedad se puede invalidar para que sea una propiedad de clave.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -447,16 +447,16 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| host-REsources-MIB. hrFSAccess ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| HOST-RESOURCES-MIB.hrFSAccess")
 </dt> </dl>
 
-Si es **true**, el sistema de archivos se designa como de solo lectura.
+Si **es TRUE,** el sistema de archivos se designa como de solo lectura.
 
-Esta propiedad se hereda del [**\_ sistema de archivos CIM**](cim-filesystem.md).
+Esta propiedad se hereda de [**CIM \_ FileSystem**](cim-filesystem.md).
 
 </dd> <dt>
 
-**Raíces**
+**Raíz**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -465,12 +465,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| host-REsources-MIB. hrFSMountPoint ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| HOST-RESOURCES-MIB.hrFSMountPoint")
 </dt> </dl>
 
 Nombre de ruta de acceso u otra información que define la raíz del sistema de archivos.
 
-Esta propiedad se hereda del [**\_ sistema de archivos CIM**](cim-filesystem.md).
+Esta propiedad se hereda de [**CIM \_ FileSystem**](cim-filesystem.md).
 
 </dd> <dt>
 
@@ -483,14 +483,14 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("status")
+Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Status")
 </dt> </dl>
 
-Cadena que indica el estado actual del objeto. Se puede definir un estado operativo y no operativo. El estado operativo puede ser "correcto", "degradado" y "Pred FAIL". "Pred FAIL" indica que un elemento funciona correctamente, pero está prediciendo un error (por ejemplo, una unidad de disco duro habilitada para SMART).
+Cadena que indica el estado actual del objeto. Se puede definir el estado operativo y no operativo. El estado operativo puede incluir "Ok", "Degraded" y "Pred Fail". "Error previo" indica que un elemento funciona correctamente, pero predice un error (por ejemplo, una unidad de disco duro habilitada para SMART).
 
-El estado no operativo puede incluir "error", "iniciando", "deteniendo" y "servicio". "Servicio" puede aplicarse durante el reflejo del disco: Resilvering, recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo el trabajo está en línea, pero el elemento administrado no es "OK" ni en ninguno de los otros Estados.
+El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". El "servicio" se puede aplicar durante la resilvering del reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Los valores son los siguientes:
 
@@ -498,84 +498,84 @@ Los valores son los siguientes:
 
 <span id="OK"></span><span id="ok"></span>
 
-**Aceptar** ("Aceptar")
+**Ok** ("OK")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Error** ("error")
+**Error** ("Error")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradado** ("degradado")
+**Degradado** ("Degradado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("desconocido")
+**Desconocido** ("Desconocido")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Pred FAIL** ("Pred FAIL")
+**Error de pred** ("error previo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Iniciando** ("iniciando")
+**A partir** de ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("detener")
+**Detener** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servicio** ("servicio")
+**Servicio** ("Servicio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-Con **estrés** ("acentuado")
+**Estresado** ("estresado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Recover** ("Recover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Sin contacto** ("sin contacto")
+**Sin contacto** ("Sin contacto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicación perdida** ("pérdida de comunicación")
+**Comm perdido** ("Comm perdido")
 
 
 </dt> <dd></dd> </dl>
@@ -584,11 +584,11 @@ Con **estrés** ("acentuado")
 
 ## <a name="remarks"></a>Observaciones
 
-La clase **CIM \_ LocalFileSystem** se deriva del [**sistema de \_ archivos CIM**](cim-filesystem.md).
+La **clase \_ CIM LocalFileSystem** se deriva de [**CIM \_ FileSystem**](cim-filesystem.md).
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -598,8 +598,8 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -608,7 +608,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[**\_Sistema de archivos CIM**](cim-filesystem.md)
+[**Sistema de archivos CIM \_**](cim-filesystem.md)
 </dt> </dl>
 
  

@@ -28,12 +28,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 1d7ca8dc3f632e88c250715292a27e18ff36e3af
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c24ce209c51e0ac2d6167ae76d3f8289d73aa0fffa9ce607e51c8566cbb37c36
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582235"
 ---
 # <a name="systemconfig_logdisk-class"></a>Clase SystemConfig \_ LogDisk
 
@@ -198,11 +198,11 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (7)
 </dt> </dl>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
-**Pad2**
+**Panel2**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **uint32**
@@ -214,11 +214,11 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (11)
 </dt> </dl>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
-**Pad3**
+**Panel3**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **uint32**
@@ -230,7 +230,7 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (16)
 </dt> </dl>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
@@ -352,12 +352,12 @@ Reservado.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ Vista\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

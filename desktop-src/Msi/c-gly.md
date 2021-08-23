@@ -1,26 +1,26 @@
 ---
-description: Obtenga información sobre Windows Installer conceptos que comienzan por la letra C, como el archivo de archivado y la suma de comprobación.
+description: Obtenga información sobre Windows installer que comienzan por la letra C, como el archivo y la suma de comprobación del archivador.
 ms.assetid: f98d19c5-5187-4718-b241-3ec69454c2d6
-title: C (Windows Installer)
+title: C (Windows instalador)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 47e7af99ad32d8dff7f4e8509976b0004045477b
-ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
+ms.openlocfilehash: 2fb0e9a1f14a3b2a7f47722d8db3e3d9cb8356df500e54dbf581bd919afb5765
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "112010928"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119581785"
 ---
-# <a name="c-windows-installer"></a>C (Windows Installer)
+# <a name="c-windows-installer"></a>C (Windows instalador)
 
-[A](a-gly.md) [B](b-gly.md) C [D](d-gly.md) [E](e-gly.md) [F](f-gly.md) [G](g-gly.md) H [I](i-gly.md) J K L [M N](m-gly.md) [O](o-gly.md) [P](p-gly.md) [Q](q-gly.md) [R](r-gly.md) [S](s-gly.md) [T](t-gly.md) [U](u-gly.md) [V](v-gly.md) W X Y Z
+[A](a-gly.md) [B](b-gly.md) C [D](d-gly.md) [E](e-gly.md) [F](f-gly.md) G [H](g-gly.md) [I](i-gly.md) J K L M [N](m-gly.md) [O](o-gly.md) P [P](p-gly.md) [Q](q-gly.md) [R](r-gly.md) [S](s-gly.md) [T](t-gly.md) [U](u-gly.md) [V](v-gly.md) W X Y Z
 
 <dl> <dt>
 
-<span id="_msi_cabinet_file_using_windows_installer_gly"></span><span id="_MSI_CABINET_FILE_USING_WINDOWS_INSTALLER_GLY"></span>**archivo de archivador**
+<span id="_msi_cabinet_file_using_windows_installer_gly"></span><span id="_MSI_CABINET_FILE_USING_WINDOWS_INSTALLER_GLY"></span>**archivo de gabinete**
 </dt> <dd>
 
-Un solo archivo, normalmente con una .cab, que almacena archivos comprimidos en una biblioteca de archivos. El formato de archivador es una manera eficaz de empaquetar varios archivos porque la compresión se realiza a través de los límites de los archivos, lo que mejora significativamente la relación de compresión. Para obtener información sobre cómo crear gabinetes, vea [Archivos de gabinete](cabinet-files.md).
+Archivo único, normalmente con una .cab, que almacena archivos comprimidos en una biblioteca de archivos. El formato de gabinete es una manera eficaz de empaquetar varios archivos porque la compresión se realiza a través de los límites de los archivos, lo que mejora significativamente la relación de compresión. Para obtener información sobre cómo crear gabinetes, vea [Archivos de gabinete](cabinet-files.md).
 
 </dd> <dt>
 
@@ -34,7 +34,7 @@ Valor calculado que depende del contenido de un archivo. Se almacena con datos p
 <span id="_msi_component_using_windows_installer_gly"></span><span id="_MSI_COMPONENT_USING_WINDOWS_INSTALLER_GLY"></span>**Componente**
 </dt> <dd>
 
-Parte más pequeña de una instalación que controla el instalador, también un bloque de creación de una aplicación o característica desde la perspectiva del programador. Algunos ejemplos de componentes son un grupo de archivos relacionados, un objeto COM o una biblioteca. Para obtener más información, vea [Componentes y características.](components-and-features.md)
+Parte más pequeña de una instalación que controla el instalador, también un bloque de creación de una aplicación o característica desde la perspectiva del programador. Algunos ejemplos de componentes son un grupo de archivos relacionados, un objeto COM o una biblioteca. Para obtener más información, [vea Componentes y características](components-and-features.md).
 
 </dd> <dt>
 
@@ -48,7 +48,7 @@ Cambios acumulados realizados en una base de datos. Los cambios no se reflejan e
 <span id="_msi_controlevent_gly"></span><span id="_MSI_CONTROLEVENT_GLY"></span>**ControlEvent**
 </dt> <dd>
 
-Aspecto de la funcionalidad de la interfaz de usuario del instalador. Un control ControlEvent típico desencadena alguna acción del instalador tras la activación de un control de cuadro de diálogo u otro evento. Para obtener más información, vea [Información general de ControlEvent.](controlevent-overview.md)
+Aspecto de la funcionalidad de la interfaz de usuario del instalador. Un control ControlEvent típico desencadena alguna acción por parte del instalador tras la activación de un control de cuadro de diálogo u otro evento. Para obtener más información, vea [Información general de ControlEvent.](controlevent-overview.md)
 
 </dd> <dt>
 
