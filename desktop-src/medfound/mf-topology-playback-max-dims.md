@@ -1,17 +1,17 @@
 ---
 description: Especifica el tamaño de la ventana de destino para la reproducción de vídeo.
 ms.assetid: 46af4c11-042c-4580-ba9d-3aee6172de56
-title: MF_TOPOLOGY_PLAYBACK_MAX_DIMS atributo (Mfidl. h)
+title: MF_TOPOLOGY_PLAYBACK_MAX_DIMS atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d1fc6a57c5e031bc6f35f36e688bd44986f541b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e98575a32b1d68414cb4d94a547273aa4986e03dc707023d5c40f9860b77b5a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275942"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119604785"
 ---
-# <a name="mf_topology_playback_max_dims-attribute"></a>Atributo de reproducción de la \_ topología MF \_ \_ Max \_ DiMS
+# <a name="mf_topology_playback_max_dims-attribute"></a>Atributo DIMS MAX DE REPRODUCCIÓN DE TOPOLOGÍA \_ \_ \_ \_ MF
 
 Especifica el tamaño de la ventana de destino para la reproducción de vídeo.
 
@@ -21,7 +21,7 @@ Especifica el tamaño de la ventana de destino para la reproducción de vídeo.
 
 ## <a name="getset"></a>Obtener o establecer
 
-Para obtener este atributo, llame a [**MFGetAttributeSize**](/windows/desktop/api/mfapi/nf-mfapi-mfgetattributesize).
+Para obtener este atributo, llame [**a MFGetAttributeSize.**](/windows/desktop/api/mfapi/nf-mfapi-mfgetattributesize)
 
 Para establecer este atributo, llame a [**MFSetAttributeSize**](/windows/desktop/api/mfapi/nf-mfapi-mfsetattributesize).
 
@@ -29,23 +29,23 @@ Para establecer este atributo, llame a [**MFSetAttributeSize**](/windows/desktop
 
 [**IMFTopology**](/windows/desktop/api/mfidl/nn-mfidl-imftopology)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El cargador de topología utiliza este atributo para optimizar la canalización antes de que se inicie la reproducción. Si establece este atributo, establezca también el atributo [de \_ \_ \_ \_ optimizaciones de reproducción estática de la topología MF](mf-topology-static-playback-optimizations.md) en **true**.
+El cargador de topologías usa este atributo para optimizar la canalización antes de que se inicie la reproducción. Si establece este atributo, establezca también el atributo [ \_ MF TOPOLOGY STATIC PLAYBACK \_ \_ \_ OPTIMIZATIONS](mf-topology-static-playback-optimizations.md) en **TRUE.**
 
-Los 32 superiores del valor del atributo contienen el ancho y los bits inferiores 32 contienen el alto, ambos en píxeles.
+Los 32 bits superiores del valor del atributo contienen el ancho y los 32 bits inferiores contienen el alto, ambos en píxeles.
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                            |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                            |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -53,7 +53,7 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Atributos de topología](topology-attributes.md)

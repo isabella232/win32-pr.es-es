@@ -1,6 +1,6 @@
 ---
 description: Especifica información de estado sobre una operación DLP de punto de conexión.
-title: DLP_POSTOP_STATUS estructura (endpointdlp.h)
+title: Estructura DLP_POSTOP_STATUS (endpointdlp.h)
 ms.topic: reference
 ms.date: 03/18/2021
 topic_type:
@@ -12,12 +12,12 @@ api_type:
 - COM
 api_location:
 - endpointdlp.h
-ms.openlocfilehash: c0221926700fc8960de5ef4d25c36136c3fc9737
-ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
+ms.openlocfilehash: 6b8922bee5fb93ee4412833418a63c19dd311c8809cf64132a0f28fbe91d11bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107495824"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119610235"
 ---
 # <a name="dlp_postop_status-structure"></a>DLP_POSTOP_STATUS estructura
 
@@ -43,7 +43,7 @@ typedef struct _DLP_POSTOP_STATUS {
 *Versión* \[ En\]
 </dt> <dd>
 
-DWORD que especifica la versión de LA API. Este valor siempre se debe **DLP_POSTOP_STATUS_V_LATEST**. Esta constante se define en la lista de archivos de encabezado de ejemplo endpointdlp.h del artículo Prevención de [pérdida de datos de punto de conexión](endpointdlp-endpoint-data-loss-prevention.md)
+DWORD que especifica la versión de la API. Este valor siempre se debe **DLP_POSTOP_STATUS_V_LATEST**. Esta constante se define en la lista de archivos de encabezado de ejemplo endpointdlp.h del artículo Prevención de [pérdida de datos de punto de conexión](endpointdlp-endpoint-data-loss-prevention.md)
 
 </dd> </dl>
 

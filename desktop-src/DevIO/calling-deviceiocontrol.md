@@ -1,21 +1,21 @@
 ---
-description: Llamar a DeviceIoControl
+description: Llamada a DeviceIoControl
 ms.assetid: b4dbda89-effb-43f7-b3cc-774db57862a9
-title: Llamar a DeviceIoControl
+title: Llamada a DeviceIoControl
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf032182b4c461f13ebc046d30bc445abbfc9a1b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1372adc551d7816c047823b70a7541fa50318632ff7ea593f70896ceffc4f80c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104538896"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119642095"
 ---
-# <a name="calling-deviceiocontrol"></a>Llamar a DeviceIoControl
+# <a name="calling-deviceiocontrol"></a>Llamada a DeviceIoControl
 
-Una aplicación puede usar la función [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) para realizar operaciones de entrada y salida directas en, o recuperar información acerca de una unidad de disquete, una unidad de disco duro, una unidad de cinta o una unidad de CD-ROM. Para obtener una lista de los códigos de control estándar que se incluyen en la documentación del SDK, consulte la sección Comentarios de **DeviceIoControl**.
+Una aplicación puede usar la función [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) para realizar operaciones directas de entrada y salida en una unidad de disquete, unidad de disco duro, unidad de cinta o unidad de CD-ROM. Para obtener una lista de los códigos de control estándar incluidos en la documentación del SDK, consulte la sección Comentarios de **DeviceIoControl**.
 
-En el ejemplo siguiente se muestra cómo recuperar información sobre la primera unidad física del sistema. Usa la función [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) para recuperar el identificador del dispositivo en la primera unidad física y, a continuación, usa [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) con el código de control de [geometría del disco de ioctl \_ \_ Get \_ Drive \_](/windows/desktop/api/winioctl/ni-winioctl-ioctl_disk_get_drive_geometry) para rellenar una estructura de [**\_ geometría del disco**](/windows/desktop/api/winioctl/ns-winioctl-disk_geometry) con información sobre la unidad.
+En el ejemplo siguiente se muestra cómo recuperar información sobre la primera unidad física del sistema. Usa la función [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) para recuperar el identificador del dispositivo en la primera unidad física y, a continuación, usa [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) con el código de control GEOMETRY DE [IOCTL \_ DISK GET \_ \_ DRIVE \_](/windows/desktop/api/winioctl/ni-winioctl-ioctl_disk_get_drive_geometry) para rellenar una estructura [**GEOMETRY \_**](/windows/desktop/api/winioctl/ns-winioctl-disk_geometry) de DISCO con información sobre la unidad.
 
 
 ```C++

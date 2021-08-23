@@ -1,7 +1,7 @@
 ---
-description: Indica una entrada de información de MCA, corrección de máquina corregida (CMC) o error de plataforma corregida (CPE). Esta clase solo está disponible en sistemas Windows de 64 bits.
+description: Indica una entrada de información de MCA, comprobación de máquina corregida (CMC) o error de plataforma corregido (CPE). Esta clase solo está disponible en sistemas de 64 Windows bits.
 ms.assetid: 4edbca20-2525-4e35-ab79-8cf421343144
-title: MSMCAInfo_Entry (clase)
+title: MSMCAInfo_Entry clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - Wmiprov.dll
-ms.openlocfilehash: cda6abba06dc4d4f3fec3a4763391eee1fa81274
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8f6146d629678c1ee209738095fea901f0edb865bccb9aff2d4eeab02d18e773
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716707"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119640914"
 ---
-# <a name="msmcainfo_entry-class"></a>\_Clase de entrada MSMCAInfo
+# <a name="msmcainfo_entry-class"></a>Clase Entry de MSMCAInfo \_
 
-La clase de **\_ entrada MSMCAInfo** indica una entrada de información de MCA, corrección de máquina corregida (CMC) o error de plataforma corregida (CPE). Esta clase solo está disponible en sistemas Windows de 64 bits.
+La clase Entry de **MSMCAInfo \_** indica una entrada de información de MCA, comprobación de máquina corregida (CMC) o error de plataforma corregido (CPE). Esta clase solo está disponible en sistemas de 64 Windows bits.
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,33 +40,33 @@ class MSMCAInfo_Entry : MSMCAInfo
 
 ## <a name="members"></a>Miembros
 
-La clase de **\_ entrada MSMCAInfo** tiene estos tipos de miembros:
+La **clase Entry \_ de MSMCAInfo** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase de **\_ entrada MSMCAInfo** tiene estas propiedades.
+La **clase \_ Entry de MSMCAInfo** tiene estas propiedades.
 
 <dl> <dt>
 
-**Data**
+**Datos**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8** array
+Tipo de datos: **matriz uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Matriz de enteros que contiene un registro de errores de MCA completo según lo indicado por la capa de abstracción del sistema (SAL). SAL es código grabado en la ROM que el sistema operativo llama para realizar operaciones dependientes de la plataforma. Es similar al BIOS en una plataforma x86.
+Matriz de enteros que contiene un registro de error MCA completo según lo notificado por la capa de abstracción del sistema (SAL). La SAL está codificada en la ROM a la que llama el sistema operativo para realizar operaciones dependientes de la plataforma. Es similar al BIOS en una plataforma x86.
 
 </dd> <dt>
 
 **Duración**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -76,20 +76,20 @@ Número de bytes en el registro de errores.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase de **\_ entrada MSMCAInfo** se deriva de [**MSMCAInfo**](msmcainfo.md).
+La **clase \_ Entry de MSMCAInfo** se deriva de [**MSMCAInfo**](msmcainfo.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP<br/>                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2003<br/>                                                         |
-| Espacio de nombres<br/>                | \\WMI raíz<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>Wmicore. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Wmi \\ raíz<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>Wmicore.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wmiprov.dll</dt> </dl> |
 
 

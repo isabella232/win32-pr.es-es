@@ -4,12 +4,12 @@ ms.assetid: 81d0a30b-8f15-4518-b833-de57e0dae978
 title: elemento importHint
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c874879ee0a608c100f32a0520a85efe76080cc2
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 8bff41d5f58e8e3041873d6283afc032409855a53013e721efad6c5986c6c6ff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107998762"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119732245"
 ---
 # <a name="importhint-element"></a>elemento importHint
 
@@ -33,7 +33,7 @@ No hay atributos.
 
 | Elemento                                   | Descripción                                                                                                                       |
 |-------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| [**ubicación**](location.md)<br/>   | Ubicación del archivo que se importará. La ubicación puede ser una ruta de acceso relativa, una ruta de acceso absoluta o una dirección URL HTTP.<br/> <br/> |
+| [**Ubicación**](location.md)<br/>   | Ubicación del archivo que se importará. La ubicación puede ser una ruta de acceso relativa, una ruta de acceso absoluta o una dirección URL HTTP.<br/> <br/> |
 | [**Nombres**](namespace.md)<br/> | Espacio de nombres que se va a importar. Debe coincidir con el espacio de nombres especificado en el \<wsdl:import> elemento .<br/> <br/>     |
 
 

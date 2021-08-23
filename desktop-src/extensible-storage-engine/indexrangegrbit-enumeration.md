@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: enumeración IndexRangeGrbit'
-title: Enumeración IndexRangeGrbit
+description: 'Más información sobre: Enumeración IndexRangeGrbit'
+title: IndexRangeGrbit (enumeración)
 TOCTitle: IndexRangeGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.IndexRangeGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.indexrangegrbit(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3202241ad4a3b7195fe82f494eadf4b5838b91ea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a36a3905e6deb204ef90f7bdbd76ef700af63f0e95e5360416ed503172f6d866
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104543395"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119732194"
 ---
-# <a name="indexrangegrbit-enumeration"></a>Enumeración IndexRangeGrbit
+# <a name="indexrangegrbit-enumeration"></a>IndexRangeGrbit (enumeración)
 
-Opciones para el objeto JET_INDEXRANGE.
+Opciones para el JET_INDEXRANGE objeto .
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -81,4 +81,4 @@ public enum IndexRangeGrbit
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

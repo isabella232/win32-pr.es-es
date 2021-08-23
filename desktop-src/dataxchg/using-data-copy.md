@@ -1,26 +1,26 @@
 ---
-title: Uso de la copia de datos
+title: Uso de copia de datos
 description: En este tema se proporciona un ejemplo que muestra cómo enviar información entre dos aplicaciones.
 ms.assetid: 5b37aa75-1208-435b-bf81-3e75f48f27f3
 keywords:
-- Interfaz de usuario de Windows, copia de datos
+- Windows Interfaz de usuario,copia de datos
 - copia de datos, ejemplos
-- copia de datos, mensaje de WM_COPYDATA
-- Mensaje WM_COPYDATA
+- copia de datos, WM_COPYDATA mensaje
+- WM_COPYDATA mensaje
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e1e44c4abb9aba68d4db1544f5c7d52220cdc681
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: b231a03a30c578590dabf04d740f917a791a86d0e868d3587ff0b63bf283866f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105704971"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119730565"
 ---
-# <a name="using-data-copy"></a>Uso de la copia de datos
+# <a name="using-data-copy"></a>Uso de copia de datos
 
-En el ejemplo siguiente se muestra cómo enviar información entre dos aplicaciones mediante el mensaje de [**\_ COPYDATA de WM**](wm-copydata.md) .
+En el ejemplo siguiente se muestra cómo enviar información entre dos aplicaciones mediante el [**mensaje \_ COPYDATA de WM.**](wm-copydata.md)
 
-La aplicación de envío muestra al usuario un cuadro de diálogo que solicita cierta información. La aplicación empaqueta la información en una estructura de datos privada, incluye un puntero a la estructura en la estructura [**COPYDATASTRUCT**](/windows/win32/api/winuser/ns-winuser-copydatastruct) y envía la información a la aplicación receptora mediante el mensaje [**\_ COPYDATA de WM**](wm-copydata.md) . La aplicación receptora tiene una ventana oculta con el nombre de clase Disp32Class.
+La aplicación de envío muestra un cuadro de diálogo al usuario que solicita cierta información. La aplicación empaqueta la información en una estructura de datos privada, incluye un puntero a la estructura en la [**estructura COPYDATASTRUCT**](/windows/win32/api/winuser/ns-winuser-copydatastruct) y envía la información a la aplicación receptora mediante el mensaje [**\_ COPYDATA de WM.**](wm-copydata.md) La aplicación receptora tiene una ventana oculta con el nombre de clase Disp32Class.
 
 
 ```C++
@@ -115,6 +115,6 @@ case WM_COPYDATA:
 [**FindWindow**](/windows/desktop/api/winuser/nf-winuser-findwindowa)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

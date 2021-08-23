@@ -1,7 +1,7 @@
 ---
-description: El \_ método get MaskName recupera el nombre de un archivo JPEG que se usará como máscara de borrado.
+description: El método get MaskName recupera el nombre de un archivo JPEG que \_ se usará como máscara de borrado.
 ms.assetid: b21913c0-4269-41f9-b2f0-ae69be9c0871
-title: 'Método IDxtJpeg:: get_MaskName (QEDIT. h)'
+title: Método IDxtAsynceg::get_MaskName (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,17 +14,17 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: a00c8104ee19cac33a00ff9062006338a19e283b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d984f426289b9017ca316567b474beaa41b39a35f0ab012ea94ffdd8db33a36b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679212"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119584753"
 ---
-# <a name="idxtjpegget_maskname-method"></a>IDxtJpeg:: get \_ MaskName (método)
+# <a name="idxtjpegget_maskname-method"></a>IDxt Maskeg::get \_ MaskName (método)
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
@@ -45,7 +45,7 @@ HRESULT get_MaskName(
 
 <dl> <dt>
 
-*pval* \[ out, retval\]
+*pVal* \[ out, retval\]
 </dt> <dd>
 
 Recibe el nombre de archivo.
@@ -54,21 +54,21 @@ Recibe el nombre de archivo.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si la transición de borrado usa uno de los borradores de SMPTE integrados que admite, el valor de esta propiedad es una cadena vacía.
+Si la transición de borrado usa uno de los borrados SMPTE integrados que admite, el valor de esta propiedad es una cadena vacía.
 
-El autor de la llamada debe liberar la cadena devuelta mediante la función **SysFreeString** .
+El autor de la llamada debe liberar la cadena devuelta mediante la **función SysFreeString.**
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -78,8 +78,8 @@ El autor de la llamada debe liberar la cadena devuelta mediante la función **Sy
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -87,10 +87,10 @@ El autor de la llamada debe liberar la cadena devuelta mediante la función **Sy
 
 <dl> <dt>
 
-[**Interfaz IDxtJpeg**](idxtjpeg.md)
+[**IDxtEnceeg (interfaz)**](idxtjpeg.md)
 </dt> <dt>
 
-[**IDxtJpeg:: get \_ MaskNum**](idxtjpeg-get-masknum.md)
+[**IDxt Maskeg::get \_ MaskNum**](idxtjpeg-get-masknum.md)
 </dt> </dl>
 
  

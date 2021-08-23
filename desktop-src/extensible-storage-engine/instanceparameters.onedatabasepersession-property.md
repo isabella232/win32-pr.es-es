@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: InstanceParameters. OneDatabasePerSession (propiedad)'
-title: Propiedad InstanceParameters. OneDatabasePerSession
+description: 'Más información sobre: Propiedad InstanceParameters.OneDatabasePerSession'
+title: Propiedad InstanceParameters.OneDatabasePerSession
 TOCTitle: 'OneDatabasePerSession property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.InstanceParameters.OneDatabasePerSession
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instanceparameters.onedatabasepersession(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c130a00b8fcbcbcf6a8fc7bbdbbad6a4e36f218e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e3707f6e1cf960888f5f403f433ede3d3b82828e300ef59190bf5734e0e4c13b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105717248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119618045"
 ---
-# <a name="instanceparametersonedatabasepersession-property"></a>Propiedad InstanceParameters. OneDatabasePerSession
+# <a name="instanceparametersonedatabasepersession-property"></a>Propiedad InstanceParameters.OneDatabasePerSession
 
-Obtiene o establece un valor que indica si solo se permite abrir una base de datos mediante JetOpenDatabase por una sesión determinada al mismo tiempo. La base de datos temporal se excluye de esta restricción.
+Obtiene o establece un valor que indica si solo una sesión determinada puede abrir una base de datos mediante JetOpenDatabase a la vez. La base de datos temporal se excluye de esta restricción.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,7 +62,7 @@ public bool OneDatabasePerSession { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 
 ## <a name="see-also"></a>Vea también
 
@@ -70,6 +70,6 @@ Tipo: [System. Boolean](/dotnet/api/system.boolean)
 
 [Clase InstanceParameters](./instanceparameters-class.md)
 
-[Miembros de InstanceParameters](./instanceparameters-members.md)
+[Miembros instanceParameters](./instanceparameters-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

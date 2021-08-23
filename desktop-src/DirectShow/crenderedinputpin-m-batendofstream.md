@@ -1,7 +1,7 @@
 ---
-description: La \_ variable miembro m bAtEndOfStream es una marca booleana que indica si se ha alcanzado el final de la secuencia.
+description: La variable miembro m \_ bAtEndOfStream es una marca booleana que indica si se ha alcanzado el final de la secuencia.
 ms.assetid: 96cad18e-6a3e-409a-9949-5e050683e384
-title: 'Miembro CRenderedInputPin:: m_bAtEndOfStream (Amextra. h)'
+title: CRenderedInputPin::m_bAtEndOfStream miembro (Arendertra.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: dfd0f3a02865f7945cbe875ca2dab7df339cf8ec
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b1f4d5ccf336daaa62c4df8f73086dc61d30e8b981813790f195234a41eb2aab
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660745"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119652065"
 ---
-# <a name="crenderedinputpinm_batendofstream-member"></a>Miembro bAtEndOfStream CRenderedInputPin:: m \_
+# <a name="crenderedinputpinm_batendofstream-member"></a>Miembro CRenderedInputPin::m \_ bAtEndOfStream
 
-La \_ variable miembro m bAtEndOfStream es una marca booleana que indica si se ha alcanzado el final de la secuencia.
+La variable miembro m \_ bAtEndOfStream es una marca booleana que indica si se ha alcanzado el final de la secuencia.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ BOOL m_bAtEndOfStream;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amextra. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Anicetra.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ BOOL m_bAtEndOfStream;
 
 <dl> <dt>
 
-[**Clase CRenderedInputPin**](crenderedinputpin.md)
+[**CRenderedInputPin (clase)**](crenderedinputpin.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT estructura (D3dx12. h)
-description: Estructura de aplicación auxiliar con plantilla utilizada para encapsular los pares de datos de tipo de subobjeto y subobjeto como un solo objeto adecuado para una descripción de flujo.
+title: CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT estructura (D3dx12.h)
+description: Estructura auxiliar con plantilla que se usa para encapsular pares de datos de subobjeto y subobjeto como un único objeto adecuado para una descripción de secuencia.
 ms.assetid: 4C59D483-6ED8-49BD-B91B-2A912AFE2409
 keywords:
-- Estructura de CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT
+- CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT estructura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 11353581dddc2bd0d438b955d1292b667fba39ad
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5d945296ae4ee09710b74b9fdf2259251632d25fb309ede2983858c0c59be72d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718502"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119729485"
 ---
-# <a name="cd3dx12_pipeline_state_stream_subobject-structure"></a>\_Estructura de \_ \_ subobjeto de flujo de estado de canalización CD3DX12 \_
+# <a name="cd3dx12_pipeline_state_stream_subobject-structure"></a>Estructura SUBOBJETO CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_
 
-Estructura de aplicación auxiliar con plantilla utilizada para encapsular los pares de datos de tipo de subobjeto y subobjeto como un solo objeto adecuado para una descripción de flujo.
+Estructura auxiliar con plantilla que se usa para encapsular pares de datos de subobjeto y subobjeto como un único objeto adecuado para una descripción de secuencia.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,37 +44,37 @@ struct CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT {
 
 <dl> <dt>
 
-**Subobjeto de \_ flujo de estado de canalización CD3DX12 \_ \_ \_**
+**SUBOBJETO CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_**
 </dt> <dd>
 
-Crea una nueva instancia no inicializada de un subobjeto de \_ flujo de estado de la canalización CD3DX12 \_ \_ \_ .
+Crea una nueva instancia sin inicializar de un SUBOBJETO CD3DX12 \_ PIPELINE \_ STATE \_ \_ STREAM.
 
 </dd> <dt>
 
-**CD3DX12 \_ Subobjeto de flujo de estado de CANALización \_ \_ \_ (** InnerStructType * * const &i) * *
+**CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_ SUBOBJECT(** InnerStructType** const &i)**
 </dt> <dd>
 
-Crea una nueva \_ \_ \_ \_ instancia de plantilla de subobjeto de flujo de estado de canalización CD3DX12, inicializada con un tipo de subobjeto de [**\_ \_ \_ \_ tipo de subobjeto de estado de canalización D3D12**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type) y datos de subobjeto copiados de *i*. Tanto el tipo de subobjeto como el tipo de datos del subobjeto se proporcionan como parámetros de plantilla, **Type** y **InnerStructType**, respectivamente. Para obtener más información, vea la sección Comentarios a continuación.
+Crea una nueva instancia de plantilla CD3DX12 PIPELINE STATE STREAM SUBOBJECT, inicializada con un \_ \_ tipo de subobjeto \_ \_ [**D3D12 \_ PIPELINE STATE \_ \_ SUBOBJECT \_ TYPE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type) y datos de subobjeto copiados de i . Tanto el tipo de subobjeto como el tipo de datos de subobjeto se dan como parámetros de plantilla, **Type** y **InnerStructType,** respectivamente. Para obtener más información, vea Comentarios a continuación.
 
 </dd> <dt>
 
-**Operator = (** InnerStructType * * const& i) * *
+**operator=(** InnerStructType** const& i)**
 </dt> <dd>
 
 Operador de asignación de copia.
 
 </dd> <dt>
 
-**operador **InnerStructType**() Const**
+**operator **InnerStructType**() const**
 </dt> <dd>
 
-Conversión implícita al tipo de datos de subobjeto proporcionado por el parámetro de plantilla **InnerStructType** .
+Conversión implícita al tipo de datos de subobjeto especificado por **el parámetro de plantilla InnerStructType.**
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-\_ \_ \_ El subobjeto de flujo de estado de canalización CD3DX12 \_ es una plantilla definida como sigue:
+CD3DX12 \_ PIPELINE STATE STREAM \_ \_ \_ SUBOBJECT es una plantilla definida de la siguiente manera:
 
 
 ```C++
@@ -95,34 +95,34 @@ public:
 
 
 
-El parámetro de plantilla **InnerStructType** especifica el tipo de datos del subobjeto; es decir, los detalles del subobjeto que se van a codificar en un flujo. El **tipo** de parámetro de plantilla especifica el tipo de subobjeto; es decir, el tipo de la estructura especificada por el parámetro de plantilla **InnerStructType**. El parámetro de plantilla **defaultarg (** especifica un valor opcional en el que se inicializarán los datos del subobjeto cuando una instancia de la creación de instancias de plantilla correspondiente esté construida de forma predeterminada; por ejemplo, para construir el valor predeterminado de una [**CD3DX12 de \_ canalización de estado de canalización \_ \_ \_ \_ DESC**](cd3dx12-pipeline-state-stream-blend-desc.md) inicializada con los valores predeterminados de estado de combinación comunes mediante [**CD3DX12 \_ predeterminado**](cd3dx12-default.md).
+El parámetro de **plantilla InnerStructType** especifica el tipo de datos del subobjeto; es decir, los detalles del subobjeto que se codificarán en una secuencia. El parámetro de **plantilla Type** especifica el tipo de subobjeto; es decir, el tipo de la estructura especificada por el parámetro de plantilla **InnerStructType**. El parámetro de plantilla **DefaultArg** especifica un valor opcional en el que se inicializarán los datos del subobjeto cuando se crea de forma predeterminada una instancia de la creación de instancias de plantilla correspondiente; Por ejemplo, para construir de forma predeterminada un [**CD3DX12 \_ PIPELINE STATE STREAM BLEND \_ \_ \_ \_ DESC**](cd3dx12-pipeline-state-stream-blend-desc.md) inicializado con valores predeterminados comunes de estado de mezcla [**mediante CD3DX12 \_ DEFAULT**](cd3dx12-default.md).
 
-Estas son las instancias de plantilla definidas:
+Estas son las instancias de plantilla que se definen:
 
--   [**\_Marcas de \_ flujo de estado de CANALización CD3DX12 \_ \_**](cd3dx12-pipeline-state-stream-flags.md)
--   [**CD3DX12 \_ \_ máscara de \_ nodo de flujo de estado de \_ canalización \_**](cd3dx12-pipeline-state-stream-node-mask.md)
--   [**\_ \_ \_ \_ Firma raíz de la secuencia de estado de canalización CD3DX12 \_**](cd3dx12-pipeline-state-stream-root-signature.md)
--   [**\_Diseño de \_ \_ entrada de flujo de estado de canalización CD3DX12 \_ \_**](cd3dx12-pipeline-state-stream-input-layout.md)
--   [**Flujo de estado de canalización de CD3DX12 de \_ Estado de canalización \_ \_ \_ IB \_ \_ \_**](cd3dx12-pipeline-state-stream-ib-strip-cut-value.md)
--   [**\_ \_ \_ Topología primitiva de flujo de estado \_ de canalización de CD3DX12 \_**](cd3dx12-pipeline-state-stream-primitive-topology.md)
--   [**\_Flujo de estado de canalización de CD3DX12 \_ \_ \_ frente a**](cd3dx12-pipeline-state-stream-vs.md)
--   [**\_Flujo de estado de canalización \_ \_ \_ GS de CD3DX12**](cd3dx12-pipeline-state-stream-gs.md)
--   [**\_Salida de \_ \_ flujo de flujo de estado de canalización CD3DX12 \_ \_**](cd3dx12-pipeline-state-stream-stream-output.md)
--   [**Secuencia de estado de la \_ canalización CD3DX12 \_ \_ \_ hs**](cd3dx12-pipeline-state-stream-hs.md)
--   [**\_Secuencia de estado de canalización CD3DX12 \_ \_ \_ DS**](cd3dx12-pipeline-state-stream-ds.md)
--   [**\_Flujo de estado de canalización CD3DX12 \_ \_ \_ PS**](cd3dx12-pipeline-state-stream-ps.md)
--   [**\_Secuencia de estado de canalización CD3DX12 \_ \_ \_ CS**](cd3dx12-pipeline-state-stream-cs.md)
--   [**CD3DX12 de \_ canalización de estado de canalización \_ \_ \_ \_ DESC**](cd3dx12-pipeline-state-stream-blend-desc.md)
--   [**\_Galería de \_ \_ símbolos de profundidad de flujo de estado de \_ canalización CD3DX12 \_**](cd3dx12-pipeline-state-stream-depth-stencil.md)
--   [**\_Profundidad de flujo de estado de canalización de CD3DX12 \_ \_ \_ \_ STENCIL1**](cd3dx12-pipeline-state-stream-depth-stencil1.md)
--   [**\_Formato de \_ \_ estarcido de profundidad de flujo de estado de \_ \_ canalización CD3DX12 \_**](cd3dx12-pipeline-state-stream-depth-stencil-format.md)
--   [**\_ \_ \_ Rasterizador de flujo de estado de CANALización de CD3DX12 \_**](cd3dx12-pipeline-state-stream-rasterizer.md)
--   [**\_Formatos de \_ \_ destino de representación de secuencia de estado de \_ \_ canalización CD3DX12 \_**](cd3dx12-pipeline-state-stream-render-target-formats.md)
--   [**\_Ejemplo de flujo de estado de canalización CD3DX12 \_ \_ \_ \_ DESC**](cd3dx12-pipeline-state-stream-sample-desc.md)
--   [**\_Máscara de \_ \_ ejemplo de flujo de estado de canalización CD3DX12 \_ \_**](cd3dx12-pipeline-state-stream-sample-mask.md)
--   [**\_Flujo de estado de canalización de CD3DX12 \_ \_ \_ en caché \_ PSO**](cd3dx12-pipeline-state-stream-cached-pso.md)
+-   [**MARCAS DE FLUJO DE ESTADO DE CANALIZACIÓN \_ CD3DX12 \_ \_ \_**](cd3dx12-pipeline-state-stream-flags.md)
+-   [**MÁSCARA DE NODO DE FLUJO DE ESTADO DE CANALIZACIÓN \_ \_ \_ CD3DX12 \_ \_**](cd3dx12-pipeline-state-stream-node-mask.md)
+-   [**FIRMA RAÍZ DE LA SECUENCIA DE ESTADO DE CANALIZACIÓN CD3DX12 \_ \_ \_ \_ \_**](cd3dx12-pipeline-state-stream-root-signature.md)
+-   [**DISEÑO DE ENTRADA DE FLUJO DE ESTADO DE CANALIZACIÓN CD3DX12 \_ \_ \_ \_ \_**](cd3dx12-pipeline-state-stream-input-layout.md)
+-   [**CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_ IB \_ STRIP \_ CUT \_ VALUE**](cd3dx12-pipeline-state-stream-ib-strip-cut-value.md)
+-   [**TOPOLOGÍA PRIMITIVA DE FLUJO DE ESTADO DE CANALIZACIÓN CD3DX12 \_ \_ \_ \_ \_**](cd3dx12-pipeline-state-stream-primitive-topology.md)
+-   [**CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_ VS**](cd3dx12-pipeline-state-stream-vs.md)
+-   [**CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_ GS**](cd3dx12-pipeline-state-stream-gs.md)
+-   [**SALIDA DE FLUJO DE FLUJO DE ESTADO DE CANALIZACIÓN CD3DX12 \_ \_ \_ \_ \_**](cd3dx12-pipeline-state-stream-stream-output.md)
+-   [**CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_ HS**](cd3dx12-pipeline-state-stream-hs.md)
+-   [**CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_ DS**](cd3dx12-pipeline-state-stream-ds.md)
+-   [**CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_ PS**](cd3dx12-pipeline-state-stream-ps.md)
+-   [**CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_ CS**](cd3dx12-pipeline-state-stream-cs.md)
+-   [**CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_ BLEND \_ DESC**](cd3dx12-pipeline-state-stream-blend-desc.md)
+-   [**GALERÍA DE SÍMBOLOS DE PROFUNDIDAD DE FLUJO \_ DE ESTADO DE CANALIZACIÓN \_ \_ \_ CD3DX12 \_**](cd3dx12-pipeline-state-stream-depth-stencil.md)
+-   [**STENCIL1 DE PROFUNDIDAD DEL FLUJO \_ DE ESTADO DE CANALIZACIÓN \_ \_ \_ CD3DX12 \_**](cd3dx12-pipeline-state-stream-depth-stencil1.md)
+-   [**FORMATO DE GALERÍA DE SÍMBOLOS DE PROFUNDIDAD DE \_ FLUJO DE ESTADO DE CANALIZACIÓN \_ \_ \_ \_ CD3DX12 \_**](cd3dx12-pipeline-state-stream-depth-stencil-format.md)
+-   [**RASTERIZADOR DE FLUJO DE ESTADO DE \_ \_ CANALIZACIÓN \_ CD3DX12 \_**](cd3dx12-pipeline-state-stream-rasterizer.md)
+-   [**FORMATOS DE DESTINO DE REPRESENTACIÓN DE FLUJO DE \_ \_ ESTADO DE \_ CANALIZACIÓN \_ \_ \_ CD3DX12**](cd3dx12-pipeline-state-stream-render-target-formats.md)
+-   [**CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_ SAMPLE \_ DESC**](cd3dx12-pipeline-state-stream-sample-desc.md)
+-   [**MÁSCARA DE EJEMPLO DE FLUJO DE ESTADO DE CANALIZACIÓN CD3DX12 \_ \_ \_ \_ \_**](cd3dx12-pipeline-state-stream-sample-mask.md)
+-   [**CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_ CACHED \_ PSO**](cd3dx12-pipeline-state-stream-cached-pso.md)
 
-Las estructuras de flujo de estado de canalización de CD3DX12 de la secuencia de estado de canalización de CD3DX12, la de profundidad de flujo de estado de canalización de CD3DX12 y de canalización de flujo se definen para inicializar sus datos de subobjeto con valores predeterminados comunes mediante el [**\_ valor predeterminado de CD3DX12**](cd3dx12-default.md). [**\_ \_ \_ \_ \_**](cd3dx12-pipeline-state-stream-blend-desc.md) [**\_ \_ \_ \_ \_**](cd3dx12-pipeline-state-stream-depth-stencil.md) [**\_ \_ \_ \_ \_**](cd3dx12-pipeline-state-stream-depth-stencil1.md) [**\_ \_ \_ \_**](cd3dx12-pipeline-state-stream-rasterizer.md)
+Las estructuras [**CD3DX12 \_ PIPELINE STATE STREAM BLEND \_ \_ \_ \_ DESC,**](cd3dx12-pipeline-state-stream-blend-desc.md) [**CD3DX12 \_ PIPELINE STATE STREAM DEPTH \_ \_ \_ \_ STENCIL,**](cd3dx12-pipeline-state-stream-depth-stencil.md) [**CD3DX12 \_ PIPELINE STATE STREAM DEPTH \_ \_ \_ \_ STENCIL1**](cd3dx12-pipeline-state-stream-depth-stencil1.md)y [**CD3DX12 \_ PIPELINE STATE STREAM \_ \_ \_ RASTERIZER**](cd3dx12-pipeline-state-stream-rasterizer.md) se definen para inicializar sus datos de subobjeto con valores predeterminados comunes [**mediante CD3DX12 \_ DEFAULT.**](cd3dx12-default.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -130,7 +130,7 @@ Las estructuras de flujo de estado de canalización de CD3DX12 de la secuencia d
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -141,7 +141,7 @@ Las estructuras de flujo de estado de canalización de CD3DX12 de la secuencia d
 [Estructuras auxiliares de D3D12](helper-structures-for-d3d12.md)
 </dt> <dt>
 
-[**\_Tipo de \_ subobjeto de estado de CANALización D3D12 \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)
+[**TIPO DE \_ SUBOBJETO DE ESTADO \_ DE CANALIZACIÓN \_ D3D12 \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)
 </dt> </dl>
 
  

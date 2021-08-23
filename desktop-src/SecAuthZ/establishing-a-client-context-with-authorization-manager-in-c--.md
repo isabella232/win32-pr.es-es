@@ -1,25 +1,25 @@
 ---
-description: Para establecer un contexto de cliente en C++, una aplicación puede crear un contexto de cliente con un identificador para un token, un dominio y un nombre de usuario, o una representación de cadena del identificador de seguridad del cliente.
+description: Para establecer un contexto de cliente en C++, una aplicación puede crear un contexto de cliente con un identificador para un token, un nombre de dominio y de usuario, o una representación de cadena del identificador de seguridad del cliente.
 ms.assetid: 765cd702-a1a8-4ff6-bea5-54de9fb62c0b
-title: Establecer un contexto de cliente con administrador de autorización en C++
+title: Establecer un contexto de cliente con el Administrador de autorización en C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 79afa31db547b28d129c5b8e90dcf3e4ba1e91c4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ef1b74cab7d6c113f5120a682250f85dca772e1764acf432317049da27ec091d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104545875"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119672125"
 ---
-# <a name="establishing-a-client-context-with-authorization-manager-in-c"></a>Establecer un contexto de cliente con administrador de autorización en C++
+# <a name="establishing-a-client-context-with-authorization-manager-in-c"></a>Establecer un contexto de cliente con el Administrador de autorización en C++
 
-En el administrador de autorización, una aplicación determina si se concede acceso a un cliente a una operación llamando al método [**AccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-accesscheck) de un objeto [**IAzClientContext**](/windows/desktop/api/Azroles/nn-azroles-iazclientcontext) , que representa un contexto de cliente.
+En el Administrador de autorización, una aplicación determina si un cliente tiene acceso a una operación llamando al método [**AccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-accesscheck) de un objeto [**IAzClientContext,**](/windows/desktop/api/Azroles/nn-azroles-iazclientcontext) que representa un contexto de cliente.
 
-Una aplicación puede crear un contexto de cliente con un identificador para un token, un dominio y un nombre de usuario, o una representación de cadena del [*identificador de seguridad*](/windows/desktop/SecGloss/s-gly) (SID) del cliente.
+Una aplicación puede crear un contexto de cliente con un identificador para un [](/windows/desktop/SecGloss/s-gly) token, un dominio y un nombre de usuario, o una representación de cadena del identificador de seguridad (SID) del cliente.
 
-Use los métodos [**InitializeClientContextFromToken**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-initializeclientcontextfromtoken), [**InitializeClientContextFromName**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-initializeclientcontextfromname)y [**InitializeClientContextFromStringSid**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-initializeclientcontextfromstringsid) de la interfaz [**IAzApplication**](/windows/desktop/api/Azroles/nn-azroles-iazapplication) para crear un contexto de cliente.
+Use los [**métodos InitializeClientContextFromToken**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-initializeclientcontextfromtoken), [**InitializeClientContextFromName**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-initializeclientcontextfromname)y [**InitializeClientContextFromStringSid**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-initializeclientcontextfromstringsid) de la [**interfaz IAzApplication**](/windows/desktop/api/Azroles/nn-azroles-iazapplication) para crear un contexto de cliente.
 
-En el ejemplo siguiente se muestra cómo crear un objeto [**IAzClientContext**](/windows/desktop/api/Azroles/nn-azroles-iazclientcontext) a partir de un token de cliente. En el ejemplo se da por supuesto que hay un almacén de directivas XML denominado MyStore.xml en el directorio raíz de la unidad C, que este almacén contiene una aplicación denominada///Expense y que la variable hToken contiene un token de cliente válido.
+En el ejemplo siguiente se muestra cómo crear un [**objeto IAzClientContext**](/windows/desktop/api/Azroles/nn-azroles-iazclientcontext) a partir de un token de cliente. En el ejemplo se supone que hay un almacén de directivas XML existente denominado MyStore.xml en el directorio raíz de la unidad C, que este almacén contiene una aplicación denominada Expense y que la variable hToken contiene un token de cliente válido.
 
 
 ```C++

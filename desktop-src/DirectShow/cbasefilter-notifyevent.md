@@ -1,7 +1,7 @@
 ---
 description: El método NotifyEvent envía una notificación de eventos al administrador de gráficos de filtro.
 ms.assetid: 79587b72-4152-4443-9fde-c2746bf06191
-title: Método CBaseFilter. NotifyEvent (Amfilter. h)
+title: Método CBaseFilter.NotifyEvent (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 49fa689262d8f9b584c93a4b0485bbeaaacbf9a4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e21ab1275aba05331055b7a38631f8c98ae65476aacf8f17073ed1dc45c90bf4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661170"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119640315"
 ---
-# <a name="cbasefilternotifyevent-method"></a>CBaseFilter. NotifyEvent, método
+# <a name="cbasefilternotifyevent-method"></a>Método CBaseFilter.NotifyEvent
 
 El `NotifyEvent` método envía una notificación de eventos al administrador de gráficos de filtro.
 
@@ -67,25 +67,25 @@ Segundo parámetro del evento.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Entre los valores posibles se incluyen los de la tabla siguiente.
+Devuelve un **valor HRESULT.** Los valores posibles incluyen los de la tabla siguiente.
 
 
 
 | Código devuelto                                                                               | Descripción                                                                                            |
 |-------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ false**</dt> </dl>   | El administrador de gráficos de filtro no acepta notificaciones de eventos.<br/>                              |
-| <dl> <dt>**S \_ correcto**</dt> </dl>      | Correcto.<br/>                                                                                    |
-| <dl> <dt>**E \_ NOTIMPL**</dt> </dl> | Filter no tiene un puntero a la interfaz [**IMediaEventSink**](/windows/desktop/api/Strmif/nn-strmif-imediaeventsink) .<br/> |
+| <dl> <dt>**S \_ FALSE**</dt> </dl>   | El administrador de gráficos de filtros no acepta notificaciones de eventos.<br/>                              |
+| <dl> <dt>**S \_ OK**</dt> </dl>      | Correcto.<br/>                                                                                    |
+| <dl> <dt>**E \_ NOTIMPL**</dt> </dl> | El filtro no tiene un puntero a la [**interfaz IMediaEventSink.**](/windows/desktop/api/Strmif/nn-strmif-imediaeventsink)<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener una lista de códigos de notificación y valores de parámetros, vea [códigos de notificación de eventos](event-notification-codes.md).
+Para obtener una lista de códigos de notificación y valores de parámetros, vea [Códigos de notificación de eventos](event-notification-codes.md).
 
-En la clase base, si el código de evento es EC \_ completo, el método establece el parámetro *EventParam2* en un puntero a la interfaz [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter) del filtro.
+En la clase base, si el código de evento es EC COMPLETE, el método establece el parámetro EventParam2 en un puntero a la interfaz \_ [**IBaseFilter del**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter) filtro. 
 
 ## <a name="requirements"></a>Requisitos
 
@@ -93,8 +93,8 @@ En la clase base, si el código de evento es EC \_ completo, el método establec
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -102,7 +102,7 @@ En la clase base, si el código de evento es EC \_ completo, el método establec
 
 <dl> <dt>
 
-[**Clase CBaseFilter**](cbasefilter.md)
+[**CBaseFilter (clase)**](cbasefilter.md)
 </dt> </dl>
 
  

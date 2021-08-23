@@ -4,46 +4,46 @@ description: Un conjunto de propiedades se identifica con un identificador de fo
 ms.assetid: 5f8eba37-c589-413e-9971-7ecb01dc6734
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6cef9417f2f5fad7fd17dcc3d431f1d3565a3843
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e17b1125f642d3f24e24fa6040bc5e55ca3d48b2384aac551680b84c1496900f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104532494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119662385"
 ---
 # <a name="names-in-istorage"></a>Nombres en IStorage
 
-Un conjunto de propiedades se identifica con un identificador de formato (FMTID) en la interfaz [**IPropertySetStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertysetstorage) . En la interfaz [**IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage) , se asigna un nombre a un conjunto de propiedades con una cadena Unicode terminada en NULL con una longitud máxima de 32 caracteres. Para habilitar la interoperabilidad, se debe establecer una asignación entre un FMTID y una cadena Unicode terminada en NULL correspondiente.
+Un conjunto de propiedades se identifica con un identificador de formato (FMTID) en la [**interfaz IPropertySetStorage.**](/windows/desktop/api/Propidl/nn-propidl-ipropertysetstorage) En la [**interfaz IStorage,**](/windows/desktop/api/Objidl/nn-objidl-istorage) un conjunto de propiedades se denomina con una cadena Unicode terminada en NULL con una longitud máxima de 32 caracteres. Para habilitar la interoperabilidad, se debe establecer una asignación entre fmtid y una cadena Unicode terminada en null correspondiente.
 
 ## <a name="converting-a-property-set-from-a-fmtid-to-a-string-name"></a>Convertir un conjunto de propiedades de FMTID en un nombre de cadena
 
-Al convertir de una FMTID a un nombre de cadena Unicode correspondiente, compruebe primero que FMTID es un valor conocido, que se muestra en la tabla siguiente. Si es así, use el nombre de cadena conocido correspondiente.
+Al convertir un FMTID en un nombre de cadena Unicode correspondiente, compruebe primero que FMTID es un valor conocido, que se muestra en la tabla siguiente. Si es así, use el nombre de cadena conocido correspondiente.
 
 | FMTID                                                                                | Nombre de la cadena                       | Semántica                                                         |
 |--------------------------------------------------------------------------------------|-----------------------------------|------------------------------------------------------------------|
-| F29F85E0-4FF9-1068-AB91-08002B27B3D9                                                 | " \\ 005SummaryInformation"         | Información de Resumen de COM2                                         |
-| D5CDD502-2E9C-101B-9397-08002B2CF9AE D5CDD505-2E9C-101B-9397-08002B2CF9AE<br/> | " \\ 005DocumentSummaryInformation" | Información de resumen del documento de Office y propiedades definidas por el usuario. |
+| F29F85E0-4FF9-1068-AB91-08002B27B3D9                                                 | " \\ 005SummaryInformation"         | Información de resumen de COM2                                         |
+| D5CDD502-2E9C-101B-9397-08002B2CF9AE D5CDD505-2E9C-101B-9397-08002B2CF9AE<br/> | " \\ 005DocumentSummaryInformation" | Office información de resumen del documento y propiedades definidas por el usuario. |
 
 
 
  
 
 > [!Note]  
-> El conjunto de propiedades **DocumentSummaryInformation** y **UserDefined** es único en que contiene dos secciones. No se permiten varias secciones en ningún otro conjunto de propiedades. Para obtener más información, vea [formato del conjunto de propiedades serializado de almacenamiento estructurado](structured-storage-serialized-property-set-format.md)y [los conjuntos de propiedades DocumentSummaryInformation y UserDefined](the-documentsummaryinformation-and-userdefined-property-sets.md). La primera sección se definió como parte de COM; la segunda se definió mediante Microsoft Office.
+> El **conjunto de propiedades DocumentSummaryInformation** y **UserDefined** es único en que contiene dos secciones. No se permiten varias secciones en ningún otro conjunto de propiedades. Para obtener más información, vea [Structured Storage Serialized Property Set Format](structured-storage-serialized-property-set-format.md)y [DocumentSummaryInformation y UserDefined Property Sets](the-documentsummaryinformation-and-userdefined-property-sets.md). La primera sección se definió como parte de COM; el segundo se definió mediante Microsoft Office.
 
  
 
-Si FMTID no es un valor conocido, use el procedimiento siguiente para formar un nombre de cadena de forma algorítmica.
+Si FMTID no es un valor conocido, use el siguiente procedimiento para formar un nombre de cadena de forma algorítmica.
 
 **Para formar un nombre de cadena de forma algorítmica**
 
-1.  Convierta FMTID en un orden de bytes Little-endian, si es necesario.
-2.  Tome los 128 bits de FMTID y considérelos como una cadena de bit largo mediante la concatenación de cada uno de los bytes juntos. El primer bit del valor de bit 128 es el bit menos significativo del primer byte de la memoria de FMTID; el último bit del valor de 128 bits es el bit más significativo del último byte de la memoria de FMTID. Extienda estos 128 bits a 130 bits agregando dos bits cero al final.
-3.  Divida los bits 130 en grupos de cinco bits; habrá 26 grupos de este tipo. Considere cada grupo como un entero con precedencia de bits inverso. Por ejemplo, el primero de los bits 128 es el bit menos significativo del primer grupo de cinco bits; la quinta parte de los 128 bits es el bit más significativo del primer grupo.
-4.  Asigne cada uno de estos enteros como un índice en la matriz de 32 caracteres: ABCDEFGHIJKLMNOPQRSTUVWXYZ012345. Esto produce una secuencia de 26 caracteres Unicode que solo usa caracteres en mayúsculas y números. No se aplican consideraciones que distinguen mayúsculas de minúsculas y no distinguen mayúsculas de minúsculas, lo que hace que cada carácter sea único en cualquier configuración regional.
-5.  Cree la cadena final mediante la concatenación de la cadena " \\ 005" en la parte delantera de estos 26 caracteres, con una longitud total de 27 caracteres.
+1.  Convierta fmtid en orden de bytes little-endian, si es necesario.
+2.  Tome los 128 bits del FMTID y considélelos como una cadena de bits largos mediante la concatenación de cada uno de los bytes. El primer bit del valor de 128 bits es el bit menos significativo del primer byte en memoria del FMTID; el último bit del valor de 128 bits es el bit más significativo del último byte en memoria del FMTID. Extienda estos 128 bits a 130 bits agregando dos bits cero al final.
+3.  Divida los 130 bits en grupos de cinco bits; habrá 26 grupos de este tipo. Considere cada grupo como un entero con prioridad de bits invertido. Por ejemplo, el primero de los 128 bits es el bit menos significativo del primer grupo de cinco bits; el quinto de los 128 bits es el bit más significativo del primer grupo.
+4.  Asigne cada uno de estos enteros como un índice a la matriz de treinta y dos caracteres: ABCDEFJKLMNOPQRSTUVWXYZ012345. Esto produce una secuencia de 26 caracteres Unicode que usa solo caracteres en mayúsculas y números. No se aplican consideraciones que distinguen mayúsculas de minúsculas y que no distinguen mayúsculas de minúsculas, lo que hace que cada carácter sea único en cualquier configuración regional.
+5.  Cree la cadena final concatenando la cadena "005" en la parte delantera de estos 26 caracteres, con una longitud total de \\ 27 caracteres.
 
-En el ejemplo de código siguiente se muestra cómo asignar un FMTID a una cadena de propiedad.
+En el código de ejemplo siguiente se muestra cómo asignar desde un FMTID a una cadena de propiedad.
 
 
 ```C++
@@ -95,11 +95,11 @@ VOID GuidToPropertyStringName(GUID *pguid, WCHAR awcname[]) {
 
 
 
-## <a name="converting-a-property-set-from-a-string-name-to-a-fmtid"></a>Convertir un conjunto de propiedades de un nombre de cadena en un FMTID
+## <a name="converting-a-property-set-from-a-string-name-to-a-fmtid"></a>Conversión de un conjunto de propiedades de un nombre de cadena a FMTID
 
-Los convertidores de nombres de cadena de propiedad en GUID deben aceptar letras minúsculas como sinónimos de sus homólogos en mayúsculas.
+Los convertidores de nombres de cadena de propiedad a GUID deben aceptar letras minúsculas como sinónimos de sus homólogos en mayúsculas.
 
-En el ejemplo de código siguiente se muestra cómo asignar desde una cadena de propiedad a un FMTID.
+En el código de ejemplo siguiente se muestra cómo asignar desde una cadena de propiedad a un FMTID.
 
 
 ```C++
@@ -218,9 +218,9 @@ fail:
 
 
 
-Al intentar abrir un conjunto de propiedades existente, en [IPropertySetStorage:: Open](/windows/desktop/api/Propidl/nf-propidl-ipropertysetstorage-open), el FMTID (raíz) se convierte en una cadena, tal y como se ha descrito anteriormente. Si existe un elemento con el [**IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage) de ese nombre, se utiliza. De lo contrario, se produce un error en Open.
+Al intentar abrir un conjunto de propiedades existente, en [IPropertySetStorage::Open](/windows/desktop/api/Propidl/nf-propidl-ipropertysetstorage-open), fmtid (raíz) se convierte en una cadena como se describió anteriormente. Si existe un elemento [**de IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage) de ese nombre, se usa. De lo contrario, se produce un error en la apertura.
 
-Al crear un nuevo conjunto de propiedades, la asignación anterior determina el nombre de la cadena que se usa.
+Al crear un nuevo conjunto de propiedades, la asignación anterior determina el nombre de cadena utilizado.
 
  
 

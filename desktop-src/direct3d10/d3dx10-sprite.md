@@ -1,7 +1,7 @@
 ---
-description: Define la información de posición, textura y color sobre un objeto Sprite.
+description: Define información de posición, textura y color sobre un sprite.
 ms.assetid: 4b8d1ed1-75d5-418c-b809-410c6a44d425
-title: D3DX10_SPRITE estructura (D3DX10. h)
+title: D3DX10_SPRITE estructura (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10.h
-ms.openlocfilehash: b896b8158e84caa841addbac7abae8c972c06acd
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ec8b220d55d3ac55d2a8b68fa3b95398a395611da150235d03314114055214e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105721512"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119753515"
 ---
-# <a name="d3dx10_sprite-structure"></a>D3DX10 ( \_ estructura de Sprite)
+# <a name="d3dx10_sprite-structure"></a>Estructura sprite D3DX10 \_
 
-Define la información de posición, textura y color sobre un objeto Sprite.
+Define información de posición, textura y color sobre un sprite.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,7 +51,7 @@ Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)**
 
 </dd> <dd>
 
-La transformación modelo-mundo del objeto Sprite. Esto define la posición y la orientación del Sprite en el espacio universal.
+Transformación del mundo del modelo del sprite. Esto define la posición y la orientación del sprite en el espacio mundial.
 
 </dd> <dt>
 
@@ -62,7 +62,7 @@ Tipo: **[ **D3DXVECTOR2**](../direct3d9/d3dxvector2.md)**
 
 </dd> <dd>
 
-Desplazamiento desde la esquina superior izquierda de la textura que indica dónde debe comenzar la imagen de Sprite en la textura. **TexCoord** está en coordenadas de textura.
+Desplazamiento desde la esquina superior izquierda de la textura que indica dónde debe comenzar la imagen de sprite en la textura. **TexCoord está** en coordenadas de textura.
 
 </dd> <dt>
 
@@ -73,7 +73,7 @@ Tipo: **[ **D3DXVECTOR2**](../direct3d9/d3dxvector2.md)**
 
 </dd> <dd>
 
-Vector que contiene el ancho y el alto del Sprite en coordenadas de textura.
+Vector que contiene el ancho y alto del sprite en coordenadas de textura.
 
 </dd> <dt>
 
@@ -95,14 +95,14 @@ Tipo: **[ **ID3D10ShaderResourceView**](/windows/desktop/api/d3d10/nn-d3d10-id3d
 
 </dd> <dd>
 
-Puntero a una vista de recursos del sombreador que representa la textura del Sprite. Consulte la [**interfaz ID3D10ShaderResourceView**](/windows/desktop/api/d3d10/nn-d3d10-id3d10shaderresourceview).
+Puntero a una vista de sombreador y recurso que representa la textura del sprite. Vea [**ID3D10ShaderResourceView (Interfaz).**](/windows/desktop/api/d3d10/nn-d3d10-id3d10shaderresourceview)
 
 </dd> <dt>
 
 **TextureIndex**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -116,7 +116,7 @@ Tipo: **[ **uint**](../winprog/windows-data-types.md)**
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3DX10. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3DX10.h</dt> </dl> |
 
 
 
@@ -124,7 +124,7 @@ Tipo: **[ **uint**](../winprog/windows-data-types.md)**
 
 <dl> <dt>
 
-[Estructuras de D3DX](d3d10-graphics-reference-d3dx10-structures.md)
+[Estructuras D3DX](d3d10-graphics-reference-d3dx10-structures.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: Network. setProxyExceptionList (método)
-description: El método setProxyExceptionList especifica la lista de excepciones de proxy. | Network. setProxyExceptionList (método)
+title: Método Network.setProxyExceptionList
+description: El método setProxyExceptionList especifica la lista de excepciones de proxy. | Método Network.setProxyExceptionList
 ms.assetid: c9eeb058-5ffb-4405-9bf2-776f120e2db4
 keywords:
-- método setProxyExceptionList de Windows Media Player
-- método setProxyExceptionList Windows Media Player, clase de red
-- Clase de red Windows Media Player, método setProxyExceptionList
+- Método setProxyExceptionList Reproductor de Windows Media
+- Método setProxyExceptionList Reproductor de Windows Media , clase Network
+- Clase de red Reproductor de Windows Media método , setProxyExceptionList
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d1e48aa91ec4857181de5c607a586da42d6f2cb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cf72d9c35778e965021ec31671e4e345ec2d8e281d18f9fcb16c8f2ff04d4722
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698540"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647305"
 ---
-# <a name="networksetproxyexceptionlist-method"></a>Network. setProxyExceptionList (método)
+# <a name="networksetproxyexceptionlist-method"></a>Método Network.setProxyExceptionList
 
-El método **setProxyExceptionList** especifica la lista de excepciones de proxy.
+El **método setProxyExceptionList** especifica la lista de excepciones de proxy.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,17 +43,17 @@ Network.setProxyExceptionList(
 
 <dl> <dt>
 
-*Protocolo* \[ de de\]
+*protocolo* \[ En\]
 </dt> <dd>
 
-**Cadena** que especifica el nombre del protocolo. Para obtener una lista de protocolos admitidos, consulte [protocolos y tipos de archivo admitidos](supported-protocols-and-file-types.md).
+**Cadena** que especifica el nombre del protocolo. Para obtener una lista de los protocolos admitidos, vea [Protocolos y tipos de archivo admitidos.](supported-protocols-and-file-types.md)
 
 </dd> <dt>
 
-*lista* \[ de de\]
+*list* \[ En\]
 </dt> <dd>
 
-**Cadena** que especifica una lista delimitada por signos de punto y coma de hosts para los que se omite el servidor proxy.
+**Cadena** que especifica una lista delimitada por punto y coma de hosts para los que se omite el servidor proxy.
 
 </dd> </dl>
 
@@ -61,21 +61,21 @@ Network.setProxyExceptionList(
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta es una lista de equipos, dominios y/o direcciones que omitirán el servidor proxy cuando la parte del host de la dirección URL de destino coincida con una entrada de la lista.
+Se trata de una lista de equipos, dominios o direcciones que omitirán el servidor proxy cuando la parte del host de la dirección URL de destino coincida con una entrada de la lista.
 
-El \* carácter se puede usar como comodín para enumerar entradas. Por ejemplo, \* . com coincidiría con todos los hosts del dominio com, mientras \* que 67. coincidiría con todos los hosts de la clase 67 A la subred.
+El \* carácter se puede usar como carácter comodín para enumerar las entradas. Por ejemplo, .com coincidiría con todos los hosts del dominio com, mientras que 67. coincidiría con todos los hosts de la \* subred de la clase A \* 67.
 
-Este método no tiene ningún efecto a menos que **getProxySettings** devuelva un valor de 2 (use la configuración manual).
+Este método no tiene ningún efecto a menos **que getProxySettings** devuelva un valor de 2 (use la configuración manual).
 
-Este método produce un error a menos que la aplicación que realiza la llamada se ejecute en el equipo local o en la intranet.
+Este método produce un error a menos que la aplicación que realiza la llamada se ejecute en el equipo local o intranet.
 
-**Windows Media Player 10 Mobile:** Este método no se admite.
+**Reproductor de Windows Media 10 Mobile:** No se admite este método.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de JScript se usa *Network*. **setProxyExceptionList** para especificar una lista de hosts para los que se omite el servidor proxy cuando se usa el protocolo MMS. La nueva lista se recupera de un elemento de texto HTML con ID = "XLIST". El objeto **Player** se creó con ID = "Player".
+En el ejemplo JScript siguiente se usa *Network*. **setProxyExceptionList** para especificar una lista de hosts para los que se omite el servidor proxy cuando se usa el protocolo MMS. La nueva lista se recupera de un elemento HTML TEXT con id. = "XLIST". El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -102,9 +102,9 @@ alert("Proxy settings must be manual!");
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

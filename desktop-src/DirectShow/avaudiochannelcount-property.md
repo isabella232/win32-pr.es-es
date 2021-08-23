@@ -1,19 +1,19 @@
 ---
-description: Obtiene el número de canales en el flujo de bits de audio.
+description: Obtiene el número de canales de la secuencia de bits de audio.
 ms.assetid: e395ce9c-3f11-41e9-8c8c-48c17b217ebc
-title: Propiedad AVAudioChannelCount (Codecapi. h)
+title: Propiedad AVAudioChannelCount (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e9a952fd812433c49f7fa8f2ead7bfb7c83679bf
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 0c698eb4d802dd3e41fcd53434ab2649f447fb1981a4aada0a977fd2ccab7039
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104152242"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119641385"
 ---
 # <a name="avaudiochannelcount-property"></a>Propiedad AVAudioChannelCount
 
-Obtiene el número de canales en el flujo de bits de audio.
+Obtiene el número de canales de la secuencia de bits de audio.
 
 Esta propiedad es de solo lectura.
 
@@ -25,7 +25,7 @@ Esta propiedad es de solo lectura.
 
 **CODECAPI \_ AVAudioChannelCount**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El número de canales incluye el canal de efecto de baja frecuencia (LFE), si está presente.
 
@@ -35,9 +35,9 @@ El número de canales incluye el canal de efecto de baja frecuencia (LFE), si es
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -48,7 +48,7 @@ El número de canales incluye el canal de efecto de baja frecuencia (LFE), si es
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

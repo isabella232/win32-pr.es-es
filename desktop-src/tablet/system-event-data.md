@@ -1,7 +1,7 @@
 ---
-description: Contiene información acerca de un evento de Tablet PC.
+description: Contiene información sobre un evento del sistema de tabletas.
 ms.assetid: 725f4b43-0bcb-4452-a87f-b24a85de0049
-title: Estructura de SYSTEM_EVENT_DATA
+title: SYSTEM_EVENT_DATA estructura
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 5d77c78a78a6cecae0368e8d9192a0dc0efc10e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 58e153da2695990f74d1268aa3e861bb9011b108ebdd1ea2d5128ff6f8e40a20
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279379"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119708215"
 ---
-# <a name="system_event_data-structure"></a>Estructura de datos de \_ eventos del sistema \_
+# <a name="system_event_data-structure"></a>Estructura DE \_ DATOS DE EVENTOS DEL \_ SISTEMA
 
-Contiene información acerca de un evento de Tablet PC.
+Contiene información sobre un evento del sistema de tabletas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,14 +46,14 @@ typedef struct tagSYSTEM_EVENT_DATA {
 **bModifier**
 </dt> <dd>
 
-Valores de bit para los modificadores. Vea la sección Comentarios para obtener más información.
+Valores de bits para los modificadores. Consulte la sección de comentarios para obtener más información.
 
 </dd> <dt>
 
 **wKey**
 </dt> <dd>
 
-Digitalice el código para el carácter del teclado.
+Examinar código para el carácter de teclado.
 
 </dd> <dt>
 
@@ -74,7 +74,7 @@ Posición Y del evento.
 **bCursorMode**
 </dt> <dd>
 
-El tipo de cursor que causó el evento. Vea la sección Comentarios para obtener más información.
+Tipo de cursor que produjo el evento. Consulte la sección de comentarios para obtener más información.
 
 </dd> <dt>
 
@@ -85,30 +85,30 @@ Estado de los botones en el momento del evento del sistema.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los siguientes eventos del sistema se definen para su uso en el miembro **bModifier** .
+Los siguientes eventos del sistema se definen para su uso en el **miembro bModifier.**
 
 
 
 | Value               | Descripción                  |
 |---------------------|------------------------------|
-| SE \_ modificador se \_ Ctrl  | Se presionó la tecla control. |
-| \_modificador se \_ Alt Alt   | Se presionó la tecla Alt.     |
-| \_desplazamiento del modificador se \_ | Se presionó la tecla Mayús.   |
+| \_SE MODIFICADOR \_ CTRL  | Se presionó la tecla Control. |
+| \_SE MODIFICADOR \_ ALT   | Se presionó la tecla Alt.     |
+| \_SE MODIFICADOR \_ MAYÚS | Se presionó la tecla Mayús.   |
 
 
 
  
 
-Los siguientes eventos del sistema se definen para su uso en el miembro **bCursorMode** .
+Los siguientes eventos del sistema se definen para su uso en el **miembro bCursorMode.**
 
 
 
 | Value              | Descripción               |
 |--------------------|---------------------------|
-| \_cursor normal de se \_ | Indica la punta del lápiz.    |
-| \_cursor de borrador de se \_ | Indica el borrador del lápiz. |
+| \_SE NORMAL \_ CURSOR | Indica la punta del lápiz.    |
+| \_SE CURSOR \_ DE BORRADOR | Indica el borrador del lápiz. |
 
 
 
@@ -120,7 +120,7 @@ Los siguientes eventos del sistema se definen para su uso en el miembro **bCurso
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                     |
 
 
@@ -129,10 +129,10 @@ Los siguientes eventos del sistema se definen para su uso en el miembro **bCurso
 
 <dl> <dt>
 
-[**IStylusPlugin:: SystemEvent (método)**](/windows/desktop/api/RTSCom/nf-rtscom-istylusplugin-systemevent)
+[**IStylusPlugin::SystemEvent (Método)**](/windows/desktop/api/RTSCom/nf-rtscom-istylusplugin-systemevent)
 </dt> <dt>
 
-[**ITabletEventSink:: SystemEvent (método)**](itableteventsink-systemevent.md)
+[**ITabletEventSink::SystemEvent (Método)**](itableteventsink-systemevent.md)
 </dt> </dl>
 
  

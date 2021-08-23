@@ -1,17 +1,17 @@
 ---
 description: Especifica si una transformación de Media Foundation (MFT) copia los atributos de los ejemplos de entrada a los ejemplos de salida.
 ms.assetid: 039ecb35-9aa9-4e8a-bbbc-042b9c4c874c
-title: Propiedad MFPKEY_EXATTRIBUTE_SUPPORTED (Mftransform. h)
+title: MFPKEY_EXATTRIBUTE_SUPPORTED propiedad (Mftransform.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 33017111eba95f54e88671cbcf026b3f40812a08
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 248609828df3ef977112058ffe0d169104e68c181fa455ef27f2adcea0220aaa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908778"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119663514"
 ---
-# <a name="mfpkey_exattribute_supported-property"></a>\_Propiedad compatible con el MFPKEY EXattribute \_
+# <a name="mfpkey_exattribute_supported-property"></a>Propiedad MFPKEY \_ EXATTRIBUTE \_ SUPPORTED
 
 Especifica si una transformación de Media Foundation (MFT) copia los atributos de los ejemplos de entrada a los ejemplos de salida.
 
@@ -19,45 +19,45 @@ Especifica si una transformación de Media Foundation (MFT) copia los atributos 
 
 Tipo de datos
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 Miembro de PROPVARIANT
 
-**VARIANTE \_ bool**
+**VARIANT \_ BOOL**
 
-VT \_ bool
+VT \_ BOOL
 
 **boolVal**
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo puede tener los valores siguientes.
+Este atributo puede tener los siguientes valores.
 
 
 
-| Value              | Descripción                                                                                                                                             |
+| Valor              | Descripción                                                                                                                                             |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **VARIANTE \_ true**  | MFT copia los atributos de los ejemplos de entrada a los ejemplos de salida.                                                                                 |
-| **VARIANTE \_ false** | La sesión multimedia copia los atributos de los ejemplos de entrada a los ejemplos de salida. No sobrescribe ningún atributo que el MFT establezca en los ejemplos de salida. |
+| **VARIANT \_ TRUE**  | MFT copia los atributos de los ejemplos de entrada a los ejemplos de salida.                                                                                 |
+| **VARIANT \_ FALSE** | La sesión multimedia copia los atributos de los ejemplos de entrada a los ejemplos de salida. No sobrescribe ningún atributo que MFT establece en los ejemplos de salida. |
 
 
 
  
 
-Para obtener este atributo, llame a **QueryInterface** en la MFT para la interfaz **IPropertyStore** .
+Para obtener este atributo, llame **a QueryInterface** en MFT para la **interfaz IPropertyStore.**
 
-El valor predeterminado es **Variant \_ false**. Si MFT no expone la interfaz **IPropertyStore** o si no se establece esta propiedad, trate el valor como **variante \_ false**.
+El valor predeterminado es **VARIANT \_ FALSE.** Si MFT no expone la interfaz **IPropertyStore** o si no se establece esta propiedad, trate el valor **como VARIANT \_ FALSE.**
 
 Esta propiedad es de solo lectura.
 
 > [!NOTE] 
-> Este atributo no se aplica a MFTs asincrónicos. Los atributos no se copiarán de los ejemplos de entrada a los ejemplos de salida de MFTs asincrónicos, independientemente del valor de este atributo.
+> Este atributo no se aplica a las MTA asincrónicas. Los atributos no se copiarán de los ejemplos de entrada a los ejemplos de salida para MTA asincrónicos, independientemente del valor de este atributo.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se devuelve VARIANT \_ true si una MFT copia los atributos de ejemplo.
+En el ejemplo siguiente se devuelve VARIANT \_ TRUE si un MFT copia atributos de ejemplo.
 
 
 ```C++
@@ -93,11 +93,11 @@ BOOL TransformCopiesSampleAttributes(IMFTransform *pMFT)
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>Mftransform.h</dt> </dl> |
 
 
 
@@ -105,7 +105,7 @@ BOOL TransformCopiesSampleAttributes(IMFTransform *pMFT)
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> <dt>
 
 [Atributos de ejemplo](sample-attributes.md)

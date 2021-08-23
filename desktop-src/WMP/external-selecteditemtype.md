@@ -1,9 +1,9 @@
 ---
-title: External. selectedItemType
-description: Tenga en cuenta que en este tema se describe la funcionalidad diseñada para su uso en tiendas en línea. | External. selectedItemType
+title: External.selectedItemType
+description: Nota En este tema se describe la funcionalidad diseñada para su uso por las tiendas en línea. | External.selectedItemType
 ms.assetid: f566e41e-127b-4596-99e6-bb07fc97249e
 keywords:
-- Media Player de Windows externa. selectedItemType
+- External.selectedItemType Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,43 +14,43 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9755f66dd00947f295bdd40ea6ab79e69d655d49
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: eb58b13f1486bb30a79cd20e2f43f715df694f661c7b56e5eadd29f0c5c06c80
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698577"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648425"
 ---
-# <a name="externalselecteditemtype"></a>External. selectedItemType
+# <a name="externalselecteditemtype"></a>External.selectedItemType
 
 > [!Note]  
-> En este tema se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
+> En este tema se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
 
  
 
-La propiedad **selectedItemType** recupera el tipo del elemento multimedia seleccionado actualmente en Windows Media Player.
+La **propiedad selectedItemType** recupera el tipo del elemento multimedia que está seleccionado actualmente en Reproductor de Windows Media.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
-Window. external. selectedItemType ()
+window.external.selectedItemType()
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es una **cadena** de solo lectura que contiene una de las [constantes de ubicación](library-location-constants.md)de la biblioteca.
+Esta propiedad es una cadena de solo **lectura** que contiene una de las constantes de ubicación [de la biblioteca](library-location-constants.md).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad se usa en combinación con la propiedad **external. selectedItemID** . Por ejemplo, si **selectedItemType** es igual a CPTrackID, **SELECTEDITEMID** es el identificador de la pista seleccionada. Para obtener más información acerca de cómo Windows Media Player caracteriza las vistas del contenido de la tienda en línea, consulte [Ubicación y elemento seleccionado](location-and-selected-item.md).
+Esta propiedad se usa en combinación con la **propiedad External.selectedItemID.** Por ejemplo, si **selectedItemType es** igual a CPTrackID, **selectedItemID** es el identificador de la pista seleccionada. Para obtener más información sobre cómo Reproductor de Windows Media las vistas del contenido de la tienda en línea, vea [Ubicación y elemento seleccionado.](location-and-selected-item.md)
 
-Algunas vistas de Windows Media Player tienen un elemento multimedia determinado que está seleccionado. Por ejemplo, supongamos que la vista actual representa un álbum. Un álbum es un contenedor de pistas, por lo que **selectedItemType** es igual a CPTrackID y **SELECTEDITEMID** es el identificador de la pista seleccionada. Otras vistas no tienen un elemento multimedia seleccionado. Por ejemplo, si el usuario hace clic en el nodo raíz de la tienda en línea en el control de vista de árbol, Windows Media Player muestra una página de detección proporcionada por la tienda en línea. El reproductor no muestra ningún contenedor de elementos multimedia en la interfaz de usuario del reproductor. En ese caso, **selectedItemType** es igual a UnknownLocation y **selectedItemID** es igual a la cadena vacía.
+Algunas vistas de Reproductor de Windows Media tienen un elemento multimedia determinado que está seleccionado. Por ejemplo, suponga que la vista actual representa un álbum. Un álbum es un contenedor de pistas, por lo que **selectedItemType** es igual a CPTrackID y **selectedItemID** es el identificador de la pista seleccionada. Otras vistas no tienen un elemento multimedia seleccionado. Por ejemplo, si el usuario hace clic en el nodo raíz de la tienda en línea en el control de vista de árbol, Reproductor de Windows Media muestra una página de detección proporcionada por el almacén en línea. El reproductor no muestra ningún contenedor de elementos multimedia en la interfaz de usuario del reproductor. En ese caso, **selectedItemType es** igual a UnknownLocation y **selectedItemID** es igual a la cadena vacía.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 11.<br/>                                                |
+| Versión<br/> | Reproductor de Windows Media 11.<br/>                                                |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -59,10 +59,10 @@ Algunas vistas de Windows Media Player tienen un elemento multimedia determinado
 
 <dl> <dt>
 
-[**Objeto externo para las tiendas en línea de tipo 1**](external-object-for-type-1-online-stores.md)
+[**Objeto externo para almacenes en línea de tipo 1**](external-object-for-type-1-online-stores.md)
 </dt> <dt>
 
-[**External. selectedItemID**](external-selecteditemid.md)
+[**External.selectedItemID**](external-selecteditemid.md)
 </dt> <dt>
 
 [**Ubicación y elemento seleccionado**](location-and-selected-item.md)

@@ -1,25 +1,25 @@
 ---
-description: 'Más información sobre: métodos JET_SPACEHINTS'
-title: Métodos JET_SPACEHINTS
+description: 'Más información acerca de: JET_SPACEHINTS métodos'
+title: JET_SPACEHINTS métodos
 TOCTitle: JET_SPACEHINTS methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.JET_SPACEHINTS
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_spacehints_methods(v=EXCHG.10)
 ms:contentKeyID: 55103959
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: afb16d37da4bc2a7aff33630fab1af250e80a0c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a6459ac4e186ad9d000126243ad74e882a365ec7354f1a630d5ec062cfbaca6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104496949"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119729535"
 ---
-# <a name="jet_spacehints-methods"></a>Métodos JET_SPACEHINTS
+# <a name="jet_spacehints-methods"></a>JET_SPACEHINTS métodos
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El tipo de [JET_SPACEHINTS](./jet-spacehints-class.md) expone los siguientes miembros.
+El [JET_SPACEHINTS](./jet-spacehints-class.md) tipo expone los miembros siguientes.
 
 ## <a name="methods"></a>Métodos
 
@@ -35,12 +35,12 @@ El tipo de [JET_SPACEHINTS](./jet-spacehints-class.md) expone los siguientes mie
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn351097(v=exchg.10).md">ContentEquals</a></td>
-<td>Devuelve un valor que indica si esta instancia es igual a otra instancia de.</td>
+<td>Devuelve un valor que indica si esta instancia es igual a otra instancia.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn351100(v=exchg.10).md">DeepClone</a></td>
-<td>Devuelve una copia en profundidad del objeto.</td>
+<td>Devuelve una copia en profundidad del objeto .</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
@@ -49,7 +49,7 @@ El tipo de [JET_SPACEHINTS](./jet-spacehints-class.md) expone los siguientes mie
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizar</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
@@ -59,7 +59,7 @@ El tipo de [JET_SPACEHINTS](./jet-spacehints-class.md) expone los siguientes mie
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">Gettype</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
@@ -70,7 +70,7 @@ El tipo de [JET_SPACEHINTS](./jet-spacehints-class.md) expone los siguientes mie
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn351066(v=exchg.10).md">ToString</a></td>
-<td>Generar una representación de cadena de la instancia. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object. ToString ()</a>).</td>
+<td>Genere una representación de cadena de la instancia. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -82,6 +82,6 @@ Superior
 
 #### <a name="reference"></a>Referencia
 
-[JET_SPACEHINTS (clase)](./jet-spacehints-class.md)
+[JET_SPACEHINTS clase](./jet-spacehints-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

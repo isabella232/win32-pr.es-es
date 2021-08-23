@@ -6,7 +6,7 @@
       items:
         - name: Introducción a XAudio2
           href: xaudio2-introduction.md
-        - name: Conceptos de audio comunes
+        - name: Conceptos comunes de audio
           href: common-audio-concepts.md
           items:
             - name: Coordenadas del espacio 3D
@@ -40,20 +40,20 @@
               href: xaudio2-voices.md
             - name: 'Cómo: usar voces de submezcla'
               href: how-to--use-submix-voices.md
-            - name: Conversiones de velocidad de muestra de XAudio2
+            - name: Conversiones de frecuencia de muestreo de XAudio2
               href: xaudio2-sample-rate-conversions.md
             - name: Asignación de canales predeterminada de XAudio2
               href: xaudio2-default-channel-mapping.md
-            - name: Control de volumen y de paso
+            - name: Control de volumen y tono
               href: volume-and-pitch-control.md
               items:
-                - name: Volumen y control de paso de XAudio2
+                - name: Control de volumen y tono de XAudio2
                   href: xaudio2-volume-and-pitch-control.md
-                - name: 'Cómo: cambiar el tono de la voz'
+                - name: 'Cómo: Cambiar el tono de voz'
                   href: how-to--change-voice-pitch.md
-                - name: 'Cómo: cambiar el volumen de la voz'
+                - name: 'Cómo: Cambiar volumen de voz'
                   href: how-to--change-voice-volume.md
-                - name: 'Cómo: desplazar un sonido'
+                - name: 'Cómo: Desplazar un sonido'
                   href: how-to--pan-a-sound.md
         - name: Devoluciones de llamada
           href: callbacks.md
@@ -67,7 +67,7 @@
         - name: Gráficos de audio
           href: audio-graphs.md
           items:
-            - name: Gráfico de audio de XAudio2
+            - name: XAudio2 Audio Graph
               href: xaudio2-audio-graph.md
             - name: 'Cómo: crear un gráfico de procesamiento de audio básico'
               href: how-to--build-a-basic-audio-processing-graph.md
@@ -92,7 +92,7 @@
               href: xapofx-overview.md
             - name: 'Cómo: usar XAPOFX en XAudio2'
               href: how-to--use-xapofx-in-xaudio2.md
-        - name: Transmisión de datos de audio
+        - name: Streaming de datos de audio
           href: streaming-audio-data.md
           items:
             - name: Datos de audio de streaming de XAudio2
@@ -102,21 +102,21 @@
         - name: X3DAudio
           href: x3daudio.md
           items:
-            - name: Información general de X3DAudio
+            - name: Información general sobre X3DAudio
               href: x3daudio-overview.md
             - name: 'Cómo: integrar X3DAudio con XAudio2'
               href: how-to--integrate-x3daudio-with-xaudio2.md
         - name: Conjuntos de operaciones
           href: operation-sets.md
           items:
-            - name: Conjuntos de operaciones de XAudio2
+            - name: Conjuntos de operaciones XAudio2
               href: xaudio2-operation-sets.md
             - name: 'Cómo: agrupar métodos de audio como un conjunto de operaciones'
               href: how-to--group-audio-methods-as-an-operation-set.md
-        - name: Funciones de depuración
+        - name: Instalaciones de depuración
           href: debugging-facilities.md
           items:
-            - name: Funciones de depuración de XAudio2
+            - name: Instalaciones de depuración de XAudio2
               href: xaudio2-debugging-facilities.md
             - name: Depurar problemas de audio en XAudio2
               href: debugging-audio-glitches-in-xaudio2.md
@@ -148,7 +148,7 @@
             - name: CXAPOParametersBase
               href: /windows/desktop/api/XAPOBase/nl-xapobase-cxapoparametersbase
               items:
-                - name: Miembros de CXAPOParametersBase
+                - name: CXAPOParametersBase Members
                   href: cxapoparametersbase-members.md
                 - name: Método CXAPOParametersBase
                   href: /windows/desktop/api/xapobase/nf-xapobase-cxapoparametersbase-cxapoparametersbase
@@ -163,15 +163,15 @@
         - name: Constantes
           href: constants.md
           items:
-            - name: Constantes de FXECHO
+            - name: Constantes FXECHO
               href: fxecho-constants.md
-            - name: Constantes de FXEQ
+            - name: Constantes FXEQ
               href: fxeq-constants.md
-            - name: Constantes de FXMASTERINGLIMIT
+            - name: Constantes FXMASTERINGLIMIT
               href: fxmasteringlimit-constants.md
-            - name: Constantes de FXREVERB
+            - name: Constantes FXREVERB
               href: fxreverb-constants.md
-            - name: Marcas y valores de límite de XAudio2
+            - name: Valores y marcas de límite de XAudio2
               href: xaudio2-boundary-values-and-flags.md
             - name: Códigos de error de XAudio2
               href: xaudio2-error-codes.md
@@ -198,7 +198,7 @@
               href: /windows/desktop/api/xaudio2/ne-xaudio2-xaudio2_filter_type
             - name: XAPO_BUFFER_FLAGS
               href: /windows/desktop/api/xapo/ne-xapo-xapo_buffer_flags
-        - name: Functions
+        - name: Funciones
           href: functions.md
           items:
             - name: CreateFX
@@ -219,17 +219,17 @@
               href: /windows/desktop/api/xaudio2fx/nf-xaudio2fx-xaudio2createreverb
             - name: XAudio2CreateVolumeMeter
               href: /windows/desktop/api/xaudio2fx/nf-xaudio2fx-xaudio2createvolumemeter
-            - name: XAudio2CutoffFrequencyToOnePoleCoefficient
+            - name: XAudio2CutoffFrequencyToOneOneCoefficient
               href: /windows/desktop/api/xaudio2/nf-xaudio2-xaudio2cutofffrequencytoonepolecoefficient
             - name: XAudio2CutoffFrequencyToRadians
               href: /windows/desktop/api/xaudio2/nf-xaudio2-xaudio2cutofffrequencytoradians
             - name: XAudio2DecibelsToAmplitudeRatio
               href: /windows/desktop/api/xaudio2/nf-xaudio2-xaudio2decibelstoamplituderatio
-            - name: XAudio2FrequencyRatioToSemitones
+            - name: XAudio2FrequencyRatioToSemitio
               href: /windows/desktop/api/xaudio2/nf-xaudio2-xaudio2frequencyratiotosemitones
             - name: XAudio2RadiansToCutoffFrequency
               href: /windows/desktop/api/xaudio2/nf-xaudio2-xaudio2radianstocutofffrequency
-            - name: XAudio2SemitonesToFrequencyRatio
+            - name: XAudio2SemidoresToFrequencyRatio
               href: /windows/desktop/api/xaudio2/nf-xaudio2-xaudio2semitonestofrequencyratio
         - name: Interfaces
           href: interfaces.md
@@ -239,7 +239,7 @@
               items:
                 - name: AddRef (método)
                   href: /windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2-addref
-                - name: CommitChanges (método)
+                - name: Método CommitChanges
                   href: /windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2-commitchanges
                 - name: Método CreateMasteringVoice
                   href: /windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2-createmasteringvoice
@@ -307,7 +307,7 @@
             - name: IXAudio2SourceVoice
               href: /windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2sourcevoice
               items:
-                - name: Discontinuidad (método)
+                - name: Método de discontinuidad
                   href: /windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2sourcevoice-discontinuity
                 - name: Método ExitLoop
                   href: /windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2sourcevoice-exitloop
@@ -377,7 +377,7 @@
                   href: /windows/desktop/api/xapo/nf-xapo-ixapo-isoutputformatsupported
                 - name: Método LockForProcess
                   href: /windows/desktop/api/xapo/nf-xapo-ixapo-lockforprocess
-                - name: Process (método)
+                - name: Método de proceso
                   href: /windows/desktop/api/xapo/nf-xapo-ixapo-process
                 - name: Reset (método)
                   href: /windows/desktop/api/xapo/nf-xapo-ixapo-reset
@@ -386,7 +386,7 @@
             - name: IXAPOParameters
               href: /windows/desktop/api/XAPO/nn-xapo-ixapoparameters
               items:
-                - name: GetParameters (método)
+                - name: Método GetParameters
                   href: /windows/desktop/api/xapo/nf-xapo-ixapoparameters-getparameters
                 - name: Método SetParameters
                   href: /windows/desktop/api/xapo/nf-xapo-ixapoparameters-setparameters

@@ -1,6 +1,6 @@
 ---
-title: setp_comp-vs
-description: Establezca el registro del predicado. | setp_comp-vs
+title: 'setp_comp : frente a'
+description: 'Establezca el registro del predicado. | setp_comp : vs'
 ms.assetid: bfead3f8-f7fe-4fc1-939f-8e5fbc3e0adf
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,22 +9,22 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 77d9e5f46e9fb8bbcfb96e56d13cd6f7cebfecc2
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 892acf44000e178e7ed6774a3841760db32e3ced4d8348a7f9e9c22969bf9024
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104424247"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119671775"
 ---
-# <a name="setp_comp---vs"></a>\_COMP SETP-vs
+# <a name="setp_comp---vs"></a>setp \_ comp - vs
 
 Establezca el registro del predicado.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| SETP \_ COMP DST, src0, SRC1 |
+| setp \_ comp dst, src0, src1 |
 |----------------------------|
 
 
@@ -33,32 +33,32 @@ Establezca el registro del predicado.
 
 Donde:
 
--   \_Comp es una comparación por canal entre los dos registros de origen. Puede tener uno de los valores siguientes: 
+-   \_comp es una comparación por canal entre los dos registros de origen. Puede tener uno de los valores siguientes: 
 
-    | Sintaxis | De comparación            |
+    | Syntax | De comparación            |
     |--------|-----------------------|
-    | \_bruto   | Mayor que          |
-    | \_plazo   | Menor que             |
-    | \_GE   | Mayor o igual que |
-    | \_cuarto   | Menor o igual que    |
-    | \_ajustes   | Igual a              |
-    | \_&   | No es igual a          |
+    | \_Gt   | Mayor que          |
+    | \_Lt   | Menor que             |
+    | \_Ge   | Mayor o igual que |
+    | \_le   | Menor o igual que    |
+    | \_Eq   | Igual a              |
+    | \_Ne   | No es igual a          |
 
     
 
      
 
--   DST es el registro de [predicado](dx9-graphics-reference-asm-vs-registers-predicate.md) Register, P0.
+-   dst es el [registro de registro de](dx9-graphics-reference-asm-vs-registers-predicate.md) predicado, p0.
 -   src0 es un registro de origen.
--   SRC1 es un registro de origen.
+-   src1 es un registro de origen.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
-| comp. SETP \_             |      |      | x    | x     | x    | x     |
+| setp \_ comp             |      |      | x    | x     | x    | x     |
 
 
 
@@ -76,17 +76,17 @@ per channel in destination write mask
 
 
 
-Para cada canal que se puede escribir en función de la máscara de escritura de destino, guarde el resultado booleano de la operación de comparación entre los canales correspondientes de src0 y SRC1 (después de que se haya resuelto el modificador de origen swizzles).
+Para cada canal que se pueda escribir según la máscara de escritura de destino, guarde el resultado booleano de la operación de comparación entre los canales correspondientes de src0 y src1 (después de que se haya resuelto el modificador de origen swlinos).
 
-Los registros de origen permiten especificar swizzles de componentes arbitrarios.
+Los registros de origen permiten especificar componentes arbitrarios.
 
 El registro de destino permite máscaras de escritura arbitrarias.
 
-El registro de destino debe ser el registro de predicado.
+El registro dest debe ser el registro de predicado.
 
-## <a name="applying-the-predicate-register"></a>Aplicar el registro de predicado
+## <a name="applying-the-predicate-register"></a>Aplicación del registro de predicado
 
-Una vez que se ha inicializado el registro de predicado con SETP, se puede usar para controlar una instrucción por componente. Esta es la sintaxis:
+Una vez que el registro de predicado se ha inicializado con setp, se puede usar para controlar una instrucción por componente. Esta es la sintaxis:
 
 
 ```
@@ -97,11 +97,11 @@ Una vez que se ha inicializado el registro de predicado con SETP, se puede usar 
 
 Donde:
 
--   \[!\] es un booleano opcional que no es
--   P0 es el registro del predicado
--   \[. swizzle \] es un swizzle opcional que se aplica al contenido del predicado Register antes de usarlo para enmascarar la instrucción. Los swizzles disponibles son:. xyzw (valor predeterminado cuando no se especifica ninguno) o cualquier swizzle de replicación:. x/. r,. y/. g,. z/. b o. a/. w.
--   Instruction es cualquier Aritmetic o instrucción de textura. No puede ser una instrucción de control de flujo estático o dinámico.
--   Dest, srcReg,... son los registros requeridos por la instrucción
+-   \[!\] es un valor booleano opcional NOT
+-   p0 es el registro de predicado
+-   \[.swzzle es un swlino opcional que se aplica al contenido del registro de predicado antes de usarlo \] para enmascarar la instrucción. Los swiques disponibles son: .xyzw (valor predeterminado cuando no se especifica ninguno) o cualquier swzzle de replicación: .x/.r, .y/.g, .z/.b o .a/.w.
+-   instruction es cualquier instrucción aritmética o de textura. No puede ser una instrucción de control de flujo estático o dinámico.
+-   dest, srcReg, ... son los registros requeridos por la instrucción
 
 Suponiendo que el registro de predicado se ha configurado con valores de componente (true, true, false, false), se puede aplicar a esta instrucción:
 
@@ -115,7 +115,7 @@ setp_le p0, r0, r1
 
 
 
-para realizar una adición de dos componentes.
+para realizar una adición de 2 componentes.
 
 
 ```
@@ -125,11 +125,11 @@ r2.y = r3.y + r4.y
 
 
 
-Los componentes x e y de R2 no se escribirán, ya que el registro de predicado contenía false en los componentes z y w.
+Los componentes x e y de r2 no se escribirán porque el registro de predicado contenía false en los componentes z y w.
 
-La aplicación del registro de predicado a una instrucción aritmética o de textura aumenta el número de ranuras de la instrucción en 1.
+La aplicación del registro de predicado a una instrucción aritmética o de textura aumenta su recuento de ranuras de instrucciones en 1.
 
-El registro de predicado también se puede aplicar a si se preparan las instrucciones [Pred-vs](if-pred---vs.md), [callnz Pred-vs](callnz-pred---vs.md) y [breakp-vs](breakp---vs.md) . Estas instrucciones de control de flujo no tienen ningún aumento en el recuento de ranuras de instrucciones cuando se usa el registro de predicado.
+El registro de predicado también se puede aplicar a si [pred - vs](if-pred---vs.md), [callnz pred - vs](callnz-pred---vs.md) y [breakp - vs](breakp---vs.md) instructions. Estas instrucciones de control de flujo no tienen ningún aumento en el recuento de ranuras de instrucciones cuando se usa el registro de predicado.
 
 ## <a name="related-topics"></a>Temas relacionados
 

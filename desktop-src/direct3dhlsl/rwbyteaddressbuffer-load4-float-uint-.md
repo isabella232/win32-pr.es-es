@@ -1,9 +1,9 @@
 ---
-title: 'RWByteAddressBuffer:: Load4 (uint, uint) (función)'
+title: Función RWByteAddressBuffer::Load4(uint,uint)
 description: Obtiene cuatro valores y devuelve el estado de la operación.
 ms.assetid: 10C21836-3CE4-4AE9-82F4-C8BBDE19CA69
 keywords:
-- Load4 de función HLSL
+- Función Load4 HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 14cb5354c21935c22833ea6f4b54b20fedc696f0
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 0f64fe84f17ee4cc1fed25b870b2142b474e753fa41e82cd0d385c9ef185ee9c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103793743"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119672115"
 ---
-# <a name="load4uintuint-function"></a>Load4 (uint, uint) (función)
+# <a name="load4uintuint-function"></a>Función Load4(uint,uint)
 
 Obtiene cuatro valores y devuelve el estado de la operación.
 
@@ -29,8 +29,8 @@ Obtiene cuatro valores y devuelve el estado de la operación.
 
 ``` syntax
 uint4 Load4(
-  in  uint Location,
-  out uint Status
+  in  uint Location,
+  out uint Status
 );
 ```
 
@@ -40,7 +40,7 @@ uint4 Load4(
 
 <dl> <dt>
 
-*Ubicación* \[ de de\]
+*Ubicación* \[ En\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -49,12 +49,12 @@ Ubicación del búfer.
 
 </dd> <dt>
 
-*Estado* \[ de enuncia\]
+*Estado* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Estado de la operación. No se puede tener acceso directamente al estado. en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped**](checkaccessfullymapped.md) . **CheckAccessFullyMapped** devuelve **true** si todos los valores de la operación de **ejemplo**, **recopilación** o **carga** correspondiente han tenido acceso a los mosaicos asignados en un [recurso en mosaico](/windows/desktop/direct3d11/direct3d-11-2-features). Si se tomó algún valor de un mosaico sin asignar, **CheckAccessFullyMapped** devuelve **false**.
+Estado de la operación. No se puede acceder al estado directamente; en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** devuelve **TRUE** si todos los valores de la operación Sample **,** **Gather** o **Load** correspondientes accedieron a iconos asignados en un recurso [en mosaico.](/windows/desktop/direct3d11/direct3d-11-2-features) Si se tomaron valores de un icono no asociado, **CheckAccessFullyMapped** devuelve **FALSE.**
 
 </dd> </dl>
 
@@ -64,19 +64,19 @@ Tipo: **uint4**
 
 Cuatro valores.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vea también
 
@@ -85,6 +85,6 @@ Esta función se admite para los siguientes tipos de sombreadores:
 [Métodos Load4](rwbyteaddressbuffer-load4.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

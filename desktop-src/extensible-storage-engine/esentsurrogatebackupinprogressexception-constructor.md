@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentSurrogateBackupInProgressException'
-title: Constructor de EsentSurrogateBackupInProgressException
+description: 'Más información sobre: Constructor EsentSurrogateBackupInProgressException'
+title: Constructor EsentSurrogateBackupInProgressException
 TOCTitle: 'EsentSurrogateBackupInProgressException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentSurrogateBackupInProgressException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentsurrogatebackupinprogressexception.esentsurrogatebackupinprogressexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 07704796d7c416f9215a22bd3b91147fbc5d2130
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4bbac122f8e5d9b4e73439e64d9b731eed0bfb9b5ecfe9c2ce177ca8cd464a23
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103910526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119732325"
 ---
-# <a name="esentsurrogatebackupinprogressexception-constructor"></a>Constructor de EsentSurrogateBackupInProgressException
+# <a name="esentsurrogatebackupinprogressexception-constructor"></a>Constructor EsentSurrogateBackupInProgressException
 
 Inicializa una nueva instancia de la clase EsentSurrogateBackupInProgressException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentSurrogateBackupInProgressException()
 public EsentSurrogateBackupInProgressException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentSurrogateBackupInProgressException()
 
 [Miembros de EsentSurrogateBackupInProgressException](./esentsurrogatebackupinprogressexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,10 +1,10 @@
 ---
-title: MicrosoftDNS_ServerDomainContainment (clase)
-description: Cada instancia de la \_ clase WMI de la Asociación de servidor microsoftdns puede contener varias instancias de la clase de dominio microsoftdns \_ .
+title: MicrosoftDNS_ServerDomainContainment clase
+description: Cada instancia de la clase WMI de asociación de servidor MicrosoftDNS puede contener \_ varias instancias de la clase de dominio MicrosoftDNS. \_
 ms.assetid: a16a11fb-65fc-4f12-903c-b3a61f6a4720
 keywords:
-- DNS de la clase MicrosoftDNS_ServerDomainContainment
-- MicrosoftDNS_ServerDomainContainment de la clase DNS, descrito
+- MicrosoftDNS_ServerDomainContainment dns de clase
+- MicrosoftDNS_ServerDomainContainment clase DNS , descrita
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 55d160176b51fc518ff2d00ef87bf08a812ee4d7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bdc747cae72ac4733ad9bec7288858731b6250312d43476a000d2f99a989267d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801351"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119527255"
 ---
-# <a name="microsoftdns_serverdomaincontainment-class"></a>MicrosoftDNS ( \_ clase ServerDomainContainment)
+# <a name="microsoftdns_serverdomaincontainment-class"></a>Clase MicrosoftDNS \_ ServerDomainContainment
 
-Cada instancia de la clase WMI de la Asociación de [**\_ servidor microsoftdns**](microsoftdns-server.md) puede contener varias instancias de la clase de [**\_ dominio microsoftdns**](microsoftdns-domain.md) . Cada instancia de la clase de **\_ dominio microsoftdns** pertenece a una única instancia de la clase de **\_ servidor microsoftdns** y se define como débil para ese servidor.
+Cada instancia de la clase WMI de asociación de servidor [**MicrosoftDNS \_**](microsoftdns-server.md) puede contener varias instancias de la [**clase de dominio MicrosoftDNS. \_**](microsoftdns-domain.md) Cada instancia de la **clase de dominio MicrosoftDNS \_** pertenece a una única instancia de la clase de servidor **\_ MicrosoftDNS** y se define como débil para ese servidor.
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -42,64 +42,64 @@ class MicrosoftDNS_ServerDomainContainment : CIM_Component
 
 ## <a name="members"></a>Miembros
 
-La clase **MicrosoftDNS \_ ServerDomainContainment** tiene estos tipos de miembros:
+La **clase \_ ServerDomainContainment de MicrosoftDNS** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MicrosoftDNS \_ ServerDomainContainment** tiene estas propiedades.
+La **clase \_ ServerDomainContainment de MicrosoftDNS** tiene estas propiedades.
 
 <dl> <dt>
 
 **GroupComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ servidor MicrosoftDNS**
+Tipo de datos: **MicrosoftDNS \_ Server**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Calificadores: clave, invalidación ("GroupComponent"), mín. (1), máx. (1)
+Calificadores: Key, Override ("GroupComponent"), Min (1), Max (1)
 
 Descripción: el servidor DNS.
 
-Heredado **del \_ componente CIM**.
+Se hereda del **componente \_ CIM**.
 
 </dd> <dt>
 
 **PartComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ dominio MicrosoftDNS**
+Tipo de datos: **Dominio MicrosoftDNS \_**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Calificadores: clave, invalidación ("PartComponent")
+Calificadores: Key, Override("PartComponent")
 
-Descripción: dominio, zona, caché o RootHints administrado por el servidor DNS.
+Descripción: dominio, zona, caché o roothints administrados por el servidor DNS.
 
-Heredado **del \_ componente CIM**.
+Se hereda del **componente \_ CIM**.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase **MicrosoftDNS \_ ServerDomainContainment** se deriva de la clase del **\_ componente CIM** .
+La **clase \_ ServerDomainContainment de MicrosoftDNS** se deriva de la **clase Cim \_ Component.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Espacio de nombres<br/>                | \\MicrosoftDNS raíz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -107,13 +107,13 @@ La clase **MicrosoftDNS \_ ServerDomainContainment** se deriva de la clase del *
 
 <dl> <dt>
 
-[**MicrosoftDNS \_ DomainDomainContainment**](microsoftdns-domaindomaincontainment.md)
+[**Dominio de \_ MicrosoftDNSDomainContainment**](microsoftdns-domaindomaincontainment.md)
 </dt> <dt>
 
 [**MicrosoftDNS \_ DomainResourceRecordContainment**](microsoftdns-domainresourcerecordcontainment.md)
 </dt> <dt>
 
-[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
+[**ResourceRecord de MicrosoftDNS \_**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

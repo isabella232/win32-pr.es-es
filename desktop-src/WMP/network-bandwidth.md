@@ -1,9 +1,9 @@
 ---
-title: Red. ancho de banda
-description: La propiedad de ancho de banda recupera el ancho de banda actual del clip.
+title: Network.bandWidth
+description: La propiedad bandWidth recupera el ancho de banda actual del clip.
 ms.assetid: 2ef86f2a-98e9-4544-a740-c2237f06c135
 keywords:
-- Red. ancho de banda Media Player Windows
+- Network.bandWidth Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,32 +14,32 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4783d86160070fc61202f97b4cf3882f2cebcfb2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 40bd97ae2efe7513bc69d308a29356cfc7b141ecc84b816bdc7fad68d79aa785
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708641"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119616882"
 ---
-# <a name="networkbandwidth"></a>Red. ancho de banda
+# <a name="networkbandwidth"></a>Network.bandWidth
 
-La propiedad de **ancho** de banda recupera el ancho de banda actual del clip.
+La **propiedad bandWidth** recupera el ancho de banda actual del clip.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
-*reproductor*. *red*. **ancho de banda**
+*player*. *network*. **bandWidth**
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es un **número** de solo lectura (**Long**).
+Esta propiedad es un número de solo **lectura** (**long**).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad devuelve cero si el *reproductor*. La propiedad de **dirección URL** no está establecida. Esta propiedad solo es válida para streaming multimedia.
+Esta propiedad devuelve cero si *player*. **La propiedad URL** no está establecida. Esta propiedad solo es válida para los medios de streaming.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de Microsoft JScript se usa *Network*. **ancho de banda** para mostrar el ancho de banda multimedia actual. La información se muestra en un DIV HTML creado con ID = "BW". El objeto **Player** se creó con ID = "Player".
+En el siguiente ejemplo JScript de Microsoft se usa *Network*. **bandWidth para** mostrar el ancho de banda de medios actual. La información se muestra en una DIV HTML creada con id. = "BW". El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -72,9 +72,9 @@ En el siguiente ejemplo de Microsoft JScript se usa *Network*. **ancho de banda*
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -86,7 +86,7 @@ En el siguiente ejemplo de Microsoft JScript se usa *Network*. **ancho de banda*
 [**Objeto de red**](network-object.md)
 </dt> <dt>
 
-[**Player. URL**](player-url.md)
+[**Player.URL**](player-url.md)
 </dt> </dl>
 
  

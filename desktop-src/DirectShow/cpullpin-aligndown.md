@@ -1,7 +1,7 @@
 ---
-description: El método AlignDown trunca un valor en un límite de alineación especificado.
+description: El método AlignDown trunca un valor a un límite de alineación especificado.
 ms.assetid: f0efdedb-67ec-49d6-92a8-54485aa04e15
-title: Método CPullPin. AlignDown (Pullpin. h)
+title: Método CPullPin.AlignDown (Pullpin.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1383517f4931fa153fd141878475cc8775a61045
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7cdf16f3759bb7637fa243ce98bc4886b65e31d25bf62f5e9f581064d3741ea1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680278"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119585355"
 ---
-# <a name="cpullpinaligndown-method"></a>CPullPin. AlignDown, método
+# <a name="cpullpinaligndown-method"></a>CPullPin.AlignDown (método)
 
-El `AlignDown` método trunca un valor en un límite de alineación especificado.
+El `AlignDown` método trunca un valor a un límite de alineación especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,10 +43,10 @@ LONGLONG AlignDown(
 
 <dl> <dt>
 
-*ll* 
+*Ll* 
 </dt> <dd>
 
-Especifica el número que se va a alinear.
+Especifica el número que se debe alinear.
 
 </dd> <dt>
 
@@ -67,8 +67,8 @@ Devuelve el resultado alineado.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Pullpin. h</dt> </dl>                                                                                                       |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Pullpin.h</dt> </dl>                                                                                                       |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -76,7 +76,7 @@ Devuelve el resultado alineado.
 
 <dl> <dt>
 
-[**Clase CPullPin**](cpullpin.md)
+[**CPullPin (clase)**](cpullpin.md)
 </dt> </dl>
 
  

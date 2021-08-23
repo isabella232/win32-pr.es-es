@@ -1,5 +1,5 @@
 ---
-title: Métodos IDCompositionLinearTransferEffect SetAlphaYIntercept (Dcomp. h)
+title: Métodos IDCompositionLinearTransferEffect SetAlphaYIntercept (Dcomp.h)
 description: Establece la intersección Y de la función lineal para el canal alfa.
 ms.assetid: 7d0fa3a9-367b-4cb7-b6d2-db2f603f38bd
 keywords:
@@ -12,14 +12,14 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 34f6f0db5dbbed154f33a3eeca891048315cfbb6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a3e53d2b3d85a9a8dcf828f13206feb71f72ad0ab9e53f9356aede157936eb26
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718997"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119670865"
 ---
-# <a name="idcompositionlineartransfereffectsetalphayintercept-methods"></a>IDCompositionLinearTransferEffect:: SetAlphaYIntercept (métodos)
+# <a name="idcompositionlineartransfereffectsetalphayintercept-methods"></a>Métodos IDCompositionLinearTransferEffect::SetAlphaYIntercept
 
 Establece la intersección Y de la función lineal para el canal alfa.
 
@@ -40,7 +40,7 @@ Establece la intersección Y de la función lineal para el canal alfa.
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dcomp. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dcomp.h</dt> </dl> |
 
 
 

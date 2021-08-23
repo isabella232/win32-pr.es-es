@@ -1,7 +1,7 @@
 ---
 description: Número de subprocesos de streaming con este pin.
 ms.assetid: f8650a17-edab-4d69-91da-78107c3c60b9
-title: 'Miembro CDynamicOutputPin:: m_dwNumOutstandingOutputPinUsers (Amfilter. h)'
+title: CDynamicOutputPin::m_dwNumOutstandingOutputPinUsers miembro (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2ba214a2c1c6d3d056147db54c936cb61b73dcfc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 29fc593065af4252f58ce4bb08dd41fac82926dc11490377f6a8af614794b22a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119688715"
 ---
-# <a name="cdynamicoutputpinm_dwnumoutstandingoutputpinusers-member"></a>Miembro dwNumOutstandingOutputPinUsers CDynamicOutputPin:: m \_
+# <a name="cdynamicoutputpinm_dwnumoutstandingoutputpinusers-member"></a>Miembro CDynamicOutputPin::m \_ dwNumOutstandingOutputPinUsers
 
 Número de subprocesos de streaming con este pin.
 
@@ -36,11 +36,11 @@ DWORD m_dwNumOutstandingOutputPinUsers;
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**CDynamicOutputPin:: StartUsingOutputPin**](cdynamicoutputpin-startusingoutputpin.md) incrementa esta variable y el método [**CDynamicOutputPin:: StopUsingOutputPin**](cdynamicoutputpin-stopusingoutputpin.md) la reduce. Cuando el valor es mayor que cero, algún subproceso está usando este pin para transmitir datos o cambiar el tipo de conexión. No se puede bloquear el PIN mientras este sea el caso.
+El [**método CDynamicOutputPin::StartUsingOutputPin**](cdynamicoutputpin-startusingoutputpin.md) incrementa esta variable y el método [**CDynamicOutputPin::StopUsingOutputPin**](cdynamicoutputpin-stopusingoutputpin.md) la disminuye. Cuando el valor es mayor que cero, algún subproceso usa esta marca para transmitir datos o para cambiar el tipo de conexión. El pin no se puede bloquear mientras este es el caso.
 
-Antes de tener acceso a esta variable, conserve la sección crítica [**CDynamicOutputPin:: m \_ BlockStateLock**](cdynamicoutputpin-m-blockstatelock.md) .
+Antes de acceder a esta variable, mantenga presionada la sección [**crítica CDynamicOutputPin::m \_ BlockStateLock.**](cdynamicoutputpin-m-blockstatelock.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -48,8 +48,8 @@ Antes de tener acceso a esta variable, conserve la sección crítica [**CDynamic
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -57,7 +57,7 @@ Antes de tener acceso a esta variable, conserve la sección crítica [**CDynamic
 
 <dl> <dt>
 
-[**Clase CDynamicOutputPin**](cdynamicoutputpin.md)
+[**CDynamicOutputPin (clase)**](cdynamicoutputpin.md)
 </dt> <dt>
 
 [**CDynamicOutputPin::StreamingThreadUsingOutputPin**](cdynamicoutputpin-streamingthreadusingoutputpin.md)

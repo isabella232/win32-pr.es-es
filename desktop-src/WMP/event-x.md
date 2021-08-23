@@ -1,9 +1,9 @@
 ---
-title: evento. x
+title: event.x
 description: El atributo x recupera la coordenada x del puntero del mouse con respecto a la ventana de la aplicación.
 ms.assetid: aaf3bd56-4617-4e38-9460-834baa27bcc2
 keywords:
-- evento. x Windows Media Player
+- event.x Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd2a00c0b898eaedbcd12827d5407f4783a845a8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a5e5ad77f05deff7d119c4dd4fe5409d53dba9deee51dd6eff05b73bce3c4c50
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700186"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119650345"
 ---
-# <a name="eventx"></a>evento. x
+# <a name="eventx"></a>event.x
 
-El atributo **x** recupera la coordenada x del puntero del mouse con respecto a la ventana de la aplicación.
+El **atributo x** recupera la coordenada x del puntero del mouse con respecto a la ventana de la aplicación.
 
 ``` syntax
 event.x
@@ -29,15 +29,15 @@ event.x
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **número** de solo lectura (**Long**).
+Este atributo es un número de solo **lectura** (**long**).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -45,10 +45,10 @@ Este atributo es un **número** de solo lectura (**Long**).
 
 <dl> <dt>
 
-[**Atributos de evento de ambiente**](ambient-event-attributes.md)
+[**Atributos de evento ambiente**](ambient-event-attributes.md)
 </dt> <dt>
 
-[**evento. y**](event-y.md)
+[**event.y**](event-y.md)
 </dt> </dl>
 
  

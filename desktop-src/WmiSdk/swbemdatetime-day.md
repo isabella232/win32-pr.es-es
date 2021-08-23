@@ -1,8 +1,8 @@
 ---
-description: Obtiene o establece un valor que representa el componente de día del valor de fecha y hora.
+description: Obtiene o establece un valor que representa el componente de día del valor datetime.
 ms.assetid: 60da99bc-560c-45bc-b787-f4bef8e5a509
 ms.tgt_platform: multiple
-title: Propiedad SWbemDateTime. Day (Wbemdisp. h)
+title: Propiedad SWbemDateTime.Day (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,24 +17,24 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 1de77a8e5d616284c3dc13a19bce2526db371c20
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d2483e52d9b40978a28f96bb5352df4f9abf4f89becf52550b82fd931580d7e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002825"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119640505"
 ---
-# <a name="swbemdatetimeday-property"></a>SWbemDateTime. Day (propiedad)
+# <a name="swbemdatetimeday-property"></a>SWbemDateTime.Day, propiedad
 
-La propiedad **Day** del objeto [**SWbemDateTime**](swbemdatetime.md) obtiene o establece un valor que representa el componente de día del valor DateTime. El valor debe estar en el intervalo comprendido entre 1 y 31 si [**IsInterval**](swbemdatetime-isinterval.md) es **false**. Sin embargo, la comprobación de errores no es sensible al valor del mes. Por lo tanto, el valor en el intervalo de 31 no devolverá un error en los casos en los que el valor de [**SWbemDateTime. month**](swbemdatetime-month.md) sea para un mes de menos de 31 días (febrero, abril, junio, septiembre, noviembre).
+La **propiedad Day** del objeto [**SWbemDateTime**](swbemdatetime.md) obtiene o establece un valor que representa el componente day del valor datetime. El valor debe estar en el intervalo de 1 a 31 si [**IsInterval**](swbemdatetime-isinterval.md) es **FALSE.** Sin embargo, la comprobación de errores no es sensible al valor de mes. Por lo tanto, el valor dentro del intervalo de 31 no devolverá un error en los casos en los que el valor [**SWbemDateTime.Month**](swbemdatetime-month.md) es para un mes de menos de 31 días (febrero, abril, junio, septiembre, noviembre).
 
-El valor predeterminado para **Day** es 01.
+El valor predeterminado de **Day** es 01.
 
-Para obtener una explicación de esta sintaxis, vea [convenciones de documentos para la API de scripting](document-conventions-for-the-scripting-api.md).
+Para obtener una explicación de esta sintaxis, vea [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -47,34 +47,34 @@ SWbemDateTime.Day As Long
 
 ## <a name="error-codes"></a>Códigos de error
 
-Después de obtener o establecer la propiedad **Day** , el objeto [Err](/previous-versions//sbf5ze0e(v=vs.85)) puede contener el código de error siguiente.
+Después de obtener o establecer la **propiedad Day,** el [objeto Err](/previous-versions//sbf5ze0e(v=vs.85)) puede contener el código de error siguiente.
 
 <dl> <dt>
 
-**wbemErrValueOutOfRange** -2147749931 (0x8004102B)
+**wbemErrValueOutOfRange:** 2147749931 (0x8004102B)
 </dt> <dd>
 
-Si [**IsInterval**](swbemdatetime-isinterval.md) es **true** y el intervalo de valores correctos supera de 0 a 99999999.
+Si [**IsInterval es**](swbemdatetime-isinterval.md) **TRUE y** el intervalo de valores correctos supera de 0 a 99999999.
 
 </dd> </dl>
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener ejemplos del uso del objeto [**SWbemDateTime**](swbemdatetime.md) para convertir valores de fecha y [**hora**](datetime.md) de CIM en el formato **FILETIME** o en el formato de **\_ fecha de VT** , vea [tareas de WMI: fechas y horas](wmi-tasks--dates-and-times.md). Para obtener una descripción del formato de fecha y hora **de CIM,** consulte [formato de fecha y hora](date-and-time-format.md).
+Para obtener ejemplos de cómo usar el objeto [**SWbemDateTime**](swbemdatetime.md) para convertir valores [**DATETIME**](datetime.md) de CIM a y desde el formato **FILETIME** o el formato **VT \_ DATE,** vea [Wmi Tasks: Dates and Times](wmi-tasks--dates-and-times.md). Para obtener una descripción del formato **DATETIME de** CIM, vea [Formato de fecha y hora](date-and-time-format.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemDateTime<br/>                                                         |
-| IID<br/>                      | \_ISWBEMDATETIME IID<br/>                                                          |
+| IID<br/>                      | IID \_ ISWbemDateTime<br/>                                                          |
 
 
 
@@ -88,7 +88,7 @@ Para obtener ejemplos del uso del objeto [**SWbemDateTime**](swbemdatetime.md) p
 [**SWbemDateTime**](swbemdatetime.md)
 </dt> <dt>
 
-[DATETIME](datetime.md)
+[Datetime](datetime.md)
 </dt> </dl>
 
  

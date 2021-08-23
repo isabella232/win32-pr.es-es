@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10.h
-ms.openlocfilehash: 520abae0409dd4214106363d7ffde0cfb5c81ff1
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b2611bb343801bbe2bd6572f250a7f0eb6d9df7b9980445f1045ee89bee23203
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094363"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119753575"
 ---
 # <a name="d3dx10_err-enumeration"></a>Enumeración ERR D3DX10 \_
 
@@ -47,7 +47,7 @@ typedef enum D3DX10_ERR {
 
 <dl> <dt>
 
-<span id="D3DX10_ERR_CANNOT_MODIFY_INDEX_BUFFER"></span><span id="d3dx10_err_cannot_modify_index_buffer"></span>**ERROR DE D3DX10 \_ NO SE PUEDE MODIFICAR EL BÚFER DE \_ \_ \_ \_ ÍNDICE**
+<span id="D3DX10_ERR_CANNOT_MODIFY_INDEX_BUFFER"></span><span id="d3dx10_err_cannot_modify_index_buffer"></span>**D3DX10 \_ ERR NO PUEDE MODIFICAR EL BÚFER DE \_ \_ \_ \_ ÍNDICE**
 </dt> <dd>
 
 No se puede modificar el búfer de índice.
@@ -64,7 +64,7 @@ La malla no es válida.
 <span id="D3DX10_ERR_CANNOT_ATTR_SORT"></span><span id="d3dx10_err_cannot_attr_sort"></span>**ERROR D3DX10 \_ NO SE PUEDE ORDENAR \_ \_ ATTR \_**
 </dt> <dd>
 
-La ordenación de atributos (D3DXMESHOPT \_ ATTRSORT) no se admite como una técnica de optimización.
+La ordenación de atributos (D3DXMESHOPT \_ ATTRSORT) no se admite como técnica de optimización.
 
 </dd> <dt>
 
@@ -89,7 +89,7 @@ Los datos no son válidos.
 
 </dd> <dt>
 
-<span id="D3DX10_ERR_LOADED_MESH_HAS_NO_DATA"></span><span id="d3dx10_err_loaded_mesh_has_no_data"></span>**D3DX10 \_ ERR LOADED MESH NO TIENE \_ \_ \_ \_ \_ DATOS**
+<span id="D3DX10_ERR_LOADED_MESH_HAS_NO_DATA"></span><span id="d3dx10_err_loaded_mesh_has_no_data"></span>**LA MALLA CARGADA DE ERRORES D3DX10 \_ \_ NO TIENE \_ \_ \_ \_ DATOS**
 </dt> <dd>
 
 La malla no tiene datos.
@@ -137,7 +137,7 @@ enum _D3DXERR {
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,9 +1,9 @@
 ---
-title: VER. restaurar
-description: El método restore restaura la vista.
+title: VIEW.restore
+description: El método de restauración restaura view.
 ms.assetid: 8005c14e-771b-4f20-8039-fc09869dc726
 keywords:
-- VER. restaurar Windows Media Player
+- View.restore Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: db92fc5e796acc55fe9c4faf93417d648652415e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a4bb4948c9c21b87ede4c88c85d2fc7681335a2bf6adb32bfa5c51638b773e74
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718793"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119615375"
 ---
-# <a name="viewrestore"></a>VER. restaurar
+# <a name="viewrestore"></a>VIEW.restore
 
-El método **restore** restaura la **vista**.
+El **método de** restauración restaura **view**.
 
 ``` syntax
         elementID.restore()
@@ -57,7 +57,7 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -65,7 +65,7 @@ Este método no devuelve ningún valor.
 
 <dl> <dt>
 
-[**Elemento de vista**](view-element.md)
+[**ELEMENTO VIEW**](view-element.md)
 </dt> </dl>
 
  

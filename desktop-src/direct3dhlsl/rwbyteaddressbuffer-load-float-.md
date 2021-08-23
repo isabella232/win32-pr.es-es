@@ -1,6 +1,6 @@
 ---
-title: 'RWByteAddressBuffer:: Load (int) (función)'
-description: 'Obtiene un valor. | RWByteAddressBuffer:: Load (int) (función)'
+title: Función RWByteAddressBuffer::Load(int)
+description: Obtiene un valor. | Función RWByteAddressBuffer::Load(int)
 ms.assetid: C95C865E-E44D-46DC-A076-BD2903758432
 keywords:
 - Carga de la función HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6efff2363f844e6940b489dd2dda48cbdc0c6b75
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 4885a94041201eed790768cd6b75d07f8bd5ccd24b9d37ce56df734adced15ef
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986323"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119672165"
 ---
-# <a name="rwbyteaddressbufferloadint-function"></a>RWByteAddressBuffer:: Load (int) (función)
+# <a name="rwbyteaddressbufferloadint-function"></a>Función RWByteAddressBuffer::Load(int)
 
 Obtiene un valor.
 
@@ -39,7 +39,7 @@ uint Load(
 
 <dl> <dt>
 
-*Ubicación* \[ de de\]
+*Ubicación* \[ En\]
 </dt> <dd>
 
 Tipo: **int**
@@ -54,13 +54,13 @@ Tipo: **uint**
 
 Un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -72,7 +72,7 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
 <dl> <dt>
 
-[Cargar métodos](rwbyteaddressbuffer-load.md)
+[Métodos de carga](rwbyteaddressbuffer-load.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: Control de un dispositivo externo
+description: Controlar un dispositivo externo
 ms.assetid: 5347cd55-a27e-40b9-857c-09e3665a1817
-title: Control de un dispositivo externo
+title: Controlar un dispositivo externo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 84cb82de59877f2527c92da9123d8a9d5a59d41e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 92f530bb48f35a6e35a0ab75d0559cc3c6770c4d0d1dfb2948f871982f70eb0b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104536694"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119652135"
 ---
-# <a name="controlling-an-external-device"></a>Control de un dispositivo externo
+# <a name="controlling-an-external-device"></a>Controlar un dispositivo externo
 
-Para controlar un dispositivo de grabadora de cintas de vídeo (VTR), use el método [**IAMExtTransport::p UT \_ mode**](/windows/desktop/api/Strmif/nf-strmif-iamexttransport-put_mode) . Especifique el nuevo estado mediante una de las constantes que aparecen en el [Estado de transporte del dispositivo](device-transport-state.md). Por ejemplo, para detener el dispositivo, use lo siguiente:
+Para controlar un dispositivo de grabadora de cinta de vídeo (VTR), use el [**método IAMExtTransport::p ut \_ Mode.**](/windows/desktop/api/Strmif/nf-strmif-iamexttransport-put_mode) Especifique el nuevo estado mediante una de las constantes enumeradas en [Estado de transporte de dispositivos](device-transport-state.md). Por ejemplo, para detener el dispositivo, use lo siguiente:
 
 
 ```C++
@@ -22,15 +22,15 @@ pTransport->put_Mode(ED_MODE_STOP);
 
 
 
-Dado que el VTR es un dispositivo físico, normalmente se produce un retraso entre la emisión del comando y la finalización del comando. La aplicación debe crear un segundo subproceso de trabajo que espera a que finalice el comando. Cuando el comando finaliza, el subproceso puede actualizar la interfaz de usuario. Use una sección crítica para serializar el cambio de estado.
+Dado que VTR es un dispositivo físico, normalmente hay un retraso entre la emisión del comando y el momento en que se completa el comando. La aplicación debe crear un segundo subproceso de trabajo que espere a que finalice el comando. Cuando finaliza el comando, el subproceso puede actualizar la interfaz de usuario. Use una sección crítica para serializar el cambio de estado.
 
-Algunos VTRs pueden notificar a la aplicación cuando el estado de transporte del dispositivo ha cambiado. Si el dispositivo es compatible con esta característica, el subproceso de trabajo puede esperar la notificación. Sin embargo, según la "Especificación de subunidad de grabadora de cintas AV/C" de la asociación comercial de 1394, el comando de notificación de estado de transporte es opcional, lo que significa que no es necesario que los dispositivos lo admitan. Si un dispositivo no admite notificaciones, debe sondear el dispositivo a intervalos periódicos para su estado actual.
+Algunas VTR pueden notificar a la aplicación cuándo ha cambiado el estado de transporte del dispositivo. Si el dispositivo admite esta característica, el subproceso de trabajo puede esperar la notificación. Sin embargo, según la especificación "Av/C Tape Recorder/Player Subunit Specification" de la asociación comercial 1394, el comando de notificación de estado de transporte es opcional, lo que significa que los dispositivos no son necesarios para admitirlo. Si un dispositivo no admite notificaciones, debe sondear el dispositivo a intervalos periódicos para su estado actual.
 
-En esta sección se describe primero el mecanismo de notificación y, a continuación, se describe el sondeo del dispositivo.
+En esta sección se describe primero el mecanismo de notificación y, a continuación, se describe el sondeo de dispositivos.
 
 Uso de la notificación de estado de transporte
 
-La notificación de estado de transporte funciona haciendo que el controlador señale un evento cuando el transporte cambia a un nuevo estado. En la aplicación, declare una sección crítica, un evento y un identificador de subproceso. La sección crítica se usa para sincronizar el estado del dispositivo. El evento se usa para detener el subproceso de trabajo cuando se cierra la aplicación:
+La notificación de estado de transporte funciona haciendo que el controlador señale un evento cuando el transporte cambia a un estado nuevo. En la aplicación, declare una sección crítica, un evento y un identificador de subproceso. La sección crítica se usa para sincronizar el estado del dispositivo. El evento se usa para detener el subproceso de trabajo cuando se cierra la aplicación:
 
 
 ```C++
@@ -56,7 +56,7 @@ hThread = CreateThread(NULL, 0, ThreadProc, 0, 0, &ThreadId);
 
 
 
-En el subproceso de trabajo, empiece por llamar al método [**IAMExtTransport:: getStatus**](/windows/desktop/api/Strmif/nf-strmif-iamexttransport-getstatus) con el valor Ed \_ Notify \_ HEVENT \_ get. Esta llamada devuelve un identificador a un evento que se señalará cuando se complete una operación:
+En el subproceso de trabajo, empiece por llamar al [**método IAMExtTransport::GetStatus**](/windows/desktop/api/Strmif/nf-strmif-iamexttransport-getstatus) con el valor ED \_ NOTIFY \_ HESTATUS \_ GET. Esta llamada devuelve un identificador a un evento que se señalará cuando se complete una operación:
 
 
 ```C++
@@ -67,7 +67,7 @@ hr = pTransport->GetStatus(ED_NOTIFY_HEVENT_GET, (long*)&hNotify);
 
 
 
-A continuación, vuelva a llamar a **GetState** y pase el valor de la notificación de cambio de modo de Ed \_ \_ \_ :
+A continuación, vuelva a llamar a **GetState** y pase el valor ED \_ MODE CHANGE \_ \_ NOTIFY:
 
 
 ```C++
@@ -77,9 +77,9 @@ hr = pTransport->GetStatus(ED_MODE_CHANGE_NOTIFY, &State);
 
 
 
-Si el dispositivo admite la notificación, el método devuelve el valor E \_ pendiente. (De lo contrario, debe sondear el dispositivo, como se describe en la sección siguiente). Suponiendo que el dispositivo admite la notificación, el evento se señalará cada vez que cambie el estado del transporte del VTR. En este momento, puede actualizar la interfaz de usuario para que refleje el nuevo estado. Para obtener la notificación siguiente, restablezca el identificador de evento y **llame de nuevo a la** notificación de cambio de modo de la actualización del modo Ed \_ \_ \_ .
+Si el dispositivo admite notificaciones, el método devuelve el valor E \_ PENDING. (De lo contrario, debe sondear el dispositivo, como se describe en la sección siguiente). Suponiendo que el dispositivo admita la notificación, el evento se señalará cada vez que cambie el estado del transporte de VTR. En este momento, puede actualizar la interfaz de usuario para reflejar el nuevo estado. Para obtener la siguiente notificación, restablezca el identificador de eventos y vuelva a llamar a **GetStatus** con ED \_ MODE CHANGE \_ \_ NOTIFY.
 
-Antes de que se cierre el subproceso de trabajo, libere el identificador de evento llamando a **getStatus** con la marca Ed \_ Notify \_ HEVENT \_ release y la dirección del identificador:
+Antes de que se cierre el subproceso de trabajo, libere el identificador de eventos mediante una llamada a **GetStatus** con la marca ED NOTIFY HESTATUS RELEASE y \_ la dirección del \_ \_ identificador:
 
 
 ```C++
@@ -88,7 +88,7 @@ hr = pTransport->GetStatus(ED_NOTIFY_HEVENT_RELEASE, (long*)&hNotify)
 
 
 
-En el código siguiente se muestra el procedimiento de subproceso completo. Se supone que la función UpdateTransportState es una función de aplicación que actualiza la interfaz de usuario. Tenga en cuenta que el subproceso espera dos eventos: el evento de notificación (*hNotify*) y el evento de terminación del subproceso (*hThreadEnd*). Tenga en cuenta también dónde se usa la sección crítica para proteger la variable de estado del dispositivo.
+El código siguiente muestra el procedimiento de subproceso completo. Se supone que la función UpdateTransportState es una función de aplicación que actualiza la interfaz de usuario. Tenga en cuenta que el subproceso espera dos eventos: el evento de notificación (*hNotify*) y el evento de terminación del subproceso (*hThreadEnd*). Tenga en cuenta también dónde se usa la sección crítica para proteger la variable de estado del dispositivo.
 
 
 ```C++
@@ -144,7 +144,7 @@ DWORD WINAPI ThreadProc(void *pParam)
 
 
 
-Use también la sección crítica cuando emita comandos para el dispositivo, como se indica a continuación:
+Use también la sección crítica cuando emita comandos al dispositivo, como se muestra a continuación:
 
 
 ```C++
@@ -159,7 +159,7 @@ LeaveCriticalSection(&csIssueCmd);
 
 
 
-Antes de que se cierre la aplicación, detenga el subproceso secundario estableciendo el evento de fin de subproceso:
+Antes de que se cierre la aplicación, detenga el subproceso secundario estableciendo el evento thread-end:
 
 
 ```C++
@@ -180,7 +180,7 @@ CloseHandle(hThread);
 
 Sondear el estado de transporte
 
-Si llama a **IAMExtTransport:: getStatus** con la \_ marca de notificación de cambio de modo Ed \_ \_ y el valor devuelto no es E \_ pendiente, significa que el dispositivo no admite la notificación. En ese caso, debe sondear el dispositivo para determinar su estado. El *sondeo* simplemente significa llamar al **\_ modo Get** a intervalos regulares para comprobar el estado de transporte. Todavía debería usar un subproceso secundario y una sección crítica, como se describió anteriormente. El subproceso consulta el estado del dispositivo en un intervalo normal. En el ejemplo siguiente se muestra una manera de implementar el subproceso:
+Si llama a **IAMExtTransport::GetStatus** con la marca ED MODE CHANGE NOTIFY y el valor devuelto no es E PENDING, significa que el dispositivo no \_ admite la \_ \_ \_ notificación. En ese caso, debe sondear el dispositivo para determinar su estado. *Sondear* simplemente significa llamar **al \_ modo get** a intervalos regulares para comprobar el estado de transporte. Debe seguir utilizando un subproceso secundario y una sección crítica, como se describió anteriormente. El subproceso consulta el estado del dispositivo en un intervalo regular. En el ejemplo siguiente se muestra una manera de implementar el subproceso:
 
 
 ```C++
@@ -216,7 +216,7 @@ DWORD WINAPI ThreadProc(void *pParam)
 
 <dl> <dt>
 
-[Control de una videocámara DV](controlling-a-dv-camcorder.md)
+[Control de una cámara dv](controlling-a-dv-camcorder.md)
 </dt> </dl>
 
  

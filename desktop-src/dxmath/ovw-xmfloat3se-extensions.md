@@ -1,22 +1,22 @@
 ---
-description: Vector 3D de tres componentes de punto flotante con mantisa de 9 bits, cada uno de los cuales comparte el mismo exponente de 5 bits.
+description: Vector 3D de tres componentes de punto flotante con mantisas de 9 bits, cada uno de los que comparten el mismo exponente de 5 bits.
 ms.assetid: 07dc8e7c-8fd8-4ba5-bbdf-1ca420e38f53
-title: Extensiones de XMFLOAT3SE
+title: Extensiones XMFLOAT3SE
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d4fa8a959673a782e81d3bf401be68e6ced8362e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c3a495da8c71b867be08d8ad96554235bdc4e870bce6d9c674aa0631a7f53a3b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082330"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119605945"
 ---
-# <a name="xmfloat3se-extensions"></a>Extensiones de XMFLOAT3SE
+# <a name="xmfloat3se-extensions"></a>Extensiones XMFLOAT3SE
 
-Vector 3D de tres componentes de punto flotante con mantisa de 9 bits, cada uno de los cuales comparte el mismo exponente de 5 bits.
+Vector 3D de tres componentes de punto flotante con mantisas de 9 bits, cada uno de los que comparten el mismo exponente de 5 bits.
 
 > [!Note]  
-> Las características que se enumeran aquí solo están disponibles cuando se desarrollan con C++.
+> Las características enumeradas aquí solo están disponibles al desarrollar con C++.
 
  
 

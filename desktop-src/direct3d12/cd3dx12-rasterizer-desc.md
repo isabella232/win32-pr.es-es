@@ -1,9 +1,9 @@
 ---
-title: CD3DX12_RASTERIZER_DESC estructura (D3dx12. h)
-description: Una estructura de aplicación auxiliar para habilitar la inicialización sencilla de una \_ estructura DESC de rasterizador D3D12 \_ .
+title: CD3DX12_RASTERIZER_DESC estructura (D3dx12.h)
+description: Una estructura auxiliar para permitir la inicialización sencilla de una estructura \_ DESC de RASTERIZER \_ D3D12.
 ms.assetid: 28AA8256-1CAF-484F-B219-0F0461BA947C
 keywords:
-- Estructura de CD3DX12_RASTERIZER_DESC
+- CD3DX12_RASTERIZER_DESC estructura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 078b9e92d25cb5309b4cd97d35586192a37eed90
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: faa95dde87aea8e3c61d0d1fb6de6845f33717f6a46db4df7996a23afd7590b9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717610"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119729435"
 ---
-# <a name="cd3dx12_rasterizer_desc-structure"></a>CD3DX12 ( \_ estructura de Descripción del rasterizador) \_
+# <a name="cd3dx12_rasterizer_desc-structure"></a>Estructura \_ DESC de RASTERIZER CD3DX12 \_
 
-Una estructura de aplicación auxiliar para habilitar la inicialización sencilla de una estructura [**\_ \_ DESC de rasterizador D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_rasterizer_desc) .
+Estructura auxiliar para permitir la inicialización sencilla de una [**estructura \_ \_ DESC de RASTERIZER D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_rasterizer_desc)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,24 +46,24 @@ struct CD3DX12_RASTERIZER_DESC  : public D3D12_RASTERIZER_DESC{
 
 <dl> <dt>
 
-**CD3DX12 \_ rasterizador \_ DESC ()**
+**CD3DX12 \_ RASTERIZER \_ DESC()**
 </dt> <dd>
 
-Crea una nueva instancia no inicializada de una \_ Descripción de rasterizador CD3DX12 \_ .
+Crea una nueva instancia de UNSC RASTERIZER CD3DX12 \_ \_ sin inicializar.
 
 </dd> <dt>
 
-**CD3DX12 de \_ rasterizador explícito \_ (const D3D12 de \_ rasterización de la \_&)**
+**EXPLICIT CD3DX12 \_ RASTERIZER \_ DESC(const D3D12 \_ RASTERIZER \_ DESC& o)**
 </dt> <dd>
 
-Crea una nueva instancia de una descripción de CD3DX12 de \_ rasterizador \_ , que se inicializa con el contenido de otra estructura de [**\_ \_ DESC del rasterizador de D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_rasterizer_desc) .
+Crea una nueva instancia de un DESC RASTERIZER CD3DX12, inicializado con el contenido de otra estructura \_ \_ [**\_ \_ DESC de RASTERIZER D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_rasterizer_desc)
 
 </dd> <dt>
 
-**CD3DX12 de \_ rasterizador explícito \_ ( \_ valor predeterminado de CD3DX12)**
+**EXPLICIT CD3DX12 \_ RASTERIZER \_ DESC(CD3DX12 \_ DEFAULT)**
 </dt> <dd>
 
-Crea una nueva instancia de una descripción de CD3DX12 de \_ rasterizador \_ , inicializada con los parámetros predeterminados.
+Crea una nueva instancia de UN \_ DESC RASTERIZER CD3DX12, \_ inicializado con parámetros predeterminados.
 
 ``` syntax
         FillMode = D3D12_FILL_MODE_SOLID;  
@@ -81,20 +81,20 @@ Crea una nueva instancia de una descripción de CD3DX12 de \_ rasterizador \_ , 
 
 </dd> <dt>
 
-**CD3DX12 de \_ rasterización Explicit \_ ( \_ \_ modo de relleno D3D12 fillMode, \_ D3D12 \_ modo de reselección CullMode, bool FrontCounterClockwise, int DepthBias, Float DepthBiasClamp, Float SlopeScaledDepthBias, BOOL DepthClipEnable, bool MultisampleEnable, bool antialiasedLineEnable, uint forcedSampleCount, D3D12 el \_ modo de \_ rasterización conservador \_ conservativeRaster)**
+**EXPLICIT CD3DX12 \_ RASTERIZER \_ DESC(D3D12 \_ FILL MODE \_ fillMode, D3D12 \_ CULL MODE \_ cullMode, BOOL frontCounterClockwise, INT depthBias, FLOAT depthBiasClamp, FLOAT slopeScaledDepthBias, BOOL depthClipEnable, BOOL multisampleEnable, BOOL antialiasedLineEnable, UINT forcedSampleCount, D3D12 \_ CONSERVATIVE \_ RASTERIZATION MODE \_ conservativeRaster)**
 </dt> <dd>
 
-Crea una nueva instancia de una descripción de CD3DX12 de \_ rasterizador \_ , inicializando los siguientes parámetros:
+Crea una nueva instancia de CD3DX12 \_ RASTERIZER \_ DESC, inicializando los parámetros siguientes:
 
-[**D3D12 \_ \_Modo de relleno**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_fill_mode) fillMode
+[**D3D12 \_ FILL \_ MODE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_fill_mode) fillMode
 
-[**D3D12 \_ \_Modo de selección**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_cull_mode) cullMode
+[**D3D12 \_ CULL \_ MODE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_cull_mode) cullMode
 
 BOOL frontCounterClockwise
 
 INT depthBias
 
-FLOAT depthBiasClamp
+Float depthBiasClamp
 
 FLOAT slopeScaledDepthBias
 
@@ -106,21 +106,21 @@ BOOL antialiasedLineEnable
 
 UINT forcedSampleCount
 
-[**D3D12 \_ \_ \_ Modo de rasterización conservador**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_conservative_rasterization_mode) conservativeRaster
+[**D3D12 \_ CONSERVATIVE \_ RASTERIZATION \_ MODE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_conservative_rasterization_mode) conservativeRaster
 
 </dd> <dt>
 
-**~ CD3DX12 \_ rasterizador \_ DESC ()**
+**~CD3DX12 \_ RASTERIZER \_ DESC()**
 </dt> <dd>
 
-Destruye una instancia de una descripción de CD3DX12 de \_ rasterizador \_ .
+Destruye una instancia de un \_ DESC RASTERIZER CD3DX12. \_
 
 </dd> <dt>
 
-**Operator const D3D12 \_ rasterizador \_ DESC& () Const**
+**operator const D3D12 \_ RASTERIZER \_ DESC&() const**
 </dt> <dd>
 
-Define el & operador de paso por referencia para el tipo de estructura primaria.
+Define el & de paso por referencia para el tipo de estructura primaria.
 
 </dd> </dl>
 
@@ -130,7 +130,7 @@ Define el & operador de paso por referencia para el tipo de estructura primaria.
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -138,7 +138,7 @@ Define el & operador de paso por referencia para el tipo de estructura primaria.
 
 <dl> <dt>
 
-[**Descripción de D3D12 \_ rasterizador \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_rasterizer_desc)
+[**D3D12 \_ RASTERIZER \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_rasterizer_desc)
 </dt> <dt>
 
 [Estructuras auxiliares de D3D12](helper-structures-for-d3d12.md)

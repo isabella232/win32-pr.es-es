@@ -1,9 +1,9 @@
 ---
 title: onblur
-description: El controlador de eventos onblur controla un evento que se produce cuando el elemento pierde el foco de teclado.
+description: El controlador de eventos onblur controla un evento que se produce cuando el elemento pierde el foco del teclado.
 ms.assetid: 38bbf373-3050-4247-b2c9-3215bc63c6eb
 keywords:
-- Desenfocar Windows Media Player
+- onblur Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,32 +13,32 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 490dc249a042487f348937b5ee00804578293381
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9db8cd6755d0fe2e1199cca16350451273c2bd7618f35b597687b5fbc35c70fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699812"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647225"
 ---
 # <a name="onblur"></a>onblur
 
-El controlador de eventos **onblur** controla un evento que se produce cuando el elemento pierde el foco de teclado.
+El **controlador de eventos onblur** controla un evento que se produce cuando el elemento pierde el foco del teclado.
 
 ``` syntax
 onblur
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El controlador de eventos **onblur** no es aplicable al elemento **Effects** o al elemento **popup** .
+El **controlador de eventos onblur** no es aplicable al elemento **EFFECTS** ni al **elemento POPUP.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|-----------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 70 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 70 o posterior<br/> |
 
 
 
@@ -46,7 +46,7 @@ El controlador de eventos **onblur** no es aplicable al elemento **Effects** o a
 
 <dl> <dt>
 
-[**Controladores de eventos de ambiente**](ambient-event-handlers.md)
+[**Controladores de eventos ambiente**](ambient-event-handlers.md)
 </dt> </dl>
 
  

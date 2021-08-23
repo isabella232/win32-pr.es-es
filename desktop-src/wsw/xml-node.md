@@ -1,23 +1,23 @@
 ---
 title: Nodo XML
-description: Un nodo XML representa un único fragmento de XML, por ejemplo, un elemento de inicio y sus atributos, un elemento final, texto o \ 0034; escrito \ 0034; contenido de texto como un entero o una matriz de bytes. Los datos de un nodo varían según el tipo de \_ nodo XML de WS \_ \_ .
+description: Un nodo XML representa un único fragmento de XML, por ejemplo, un elemento start y sus atributos, un elemento final, texto o \ 0034;typed \ 0034; contenido de texto, como una matriz de enteros o bytes. Los datos de un nodo varían según el tipo de nodo \_ XML de WS. \_ \_
 ms.assetid: c514c542-029b-46d1-a796-1f132a41b2ad
 keywords:
-- Servicios Web de nodo XML para Windows
+- Servicios web de nodo XML para Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ac212205fac02db0ee87d8acbe0b123ffcead921
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: a2b851ad0ab0a6a333fedea13036eebf11e8c727a04603c07d8f7e68e66de5ae
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "105714496"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119545655"
 ---
 # <a name="xml-node"></a>Nodo XML
 
-Un nodo XML representa un único fragmento de XML, por ejemplo, un elemento de inicio y sus atributos, un elemento final, texto o contenido de texto "con tipo", como un entero o una matriz de bytes. Los datos de un nodo varían según el [**tipo de \_ \_ nodo XML \_ de WS**](/windows/desktop/api/WebServices/ne-webservices-ws_xml_node_type).
+Un nodo XML representa una sola parte de XML, por ejemplo, un elemento de inicio y sus atributos, un elemento final, texto o contenido de texto "con tipo", como un entero o una matriz de bytes. Los datos de un nodo varían según el tipo de [**nodo \_ XML \_ de \_ WS**](/windows/desktop/api/WebServices/ne-webservices-ws_xml_node_type).
 
 
 A continuación se muestra un ejemplo de un documento XML específico de codificación representado con estructuras independientes de codificación.
@@ -95,11 +95,11 @@ WS_XML_NODE* nodes[3] =
 };
 ```
 
-Las enumeraciones siguientes se utilizan con nodos XML:
+Las enumeraciones siguientes se usan con nodos XML:
 
--   [**\_tipo de valor WS \_**](/windows/desktop/api/WebServices/ne-webservices-ws_value_type)
--   [**\_tipo de \_ nodo \_ XML de WS**](/windows/desktop/api/WebServices/ne-webservices-ws_xml_node_type)
--   [**\_tipo de \_ texto \_ XML de WS**](/windows/desktop/api/WebServices/ne-webservices-ws_xml_text_type)
+-   [**WS \_ VALUE \_ TYPE**](/windows/desktop/api/WebServices/ne-webservices-ws_value_type)
+-   [**WS \_ XML \_ NODE \_ TYPE**](/windows/desktop/api/WebServices/ne-webservices-ws_xml_node_type)
+-   [**WS \_ XML \_ TEXT \_ TYPE**](/windows/desktop/api/WebServices/ne-webservices-ws_xml_text_type)
 
 Las siguientes funciones se usan con nodos XML:
 
@@ -107,39 +107,39 @@ Las siguientes funciones se usan con nodos XML:
 -   [**WsVerifyXmlNCName**](/windows/desktop/api/WebServices/nf-webservices-wsverifyxmlncname)
 -   [**WsXmlStringEquals**](/windows/desktop/api/WebServices/nf-webservices-wsxmlstringequals)
 
-Las macros siguientes se utilizan con nodos XML:
+Las macros siguientes se usan con nodos XML:
 
--   [**\_valor del \_ Diccionario de cadenas XML \_ de WS \_**](/windows/desktop/api/WebServices/nf-webservices-ws_xml_string_dictionary_value)
--   [**\_ \_ cadena \_ null de WS XML**](/previous-versions/windows/desktop/legacy/dd323562(v=vs.85))
--   [**\_valor de \_ cadena \_ XML de WS**](/windows/desktop/api/WebServices/nf-webservices-ws_xml_string_value)
+-   [**VALOR DEL \_ DICCIONARIO \_ DE CADENAS XML \_ WS \_**](/windows/desktop/api/WebServices/nf-webservices-ws_xml_string_dictionary_value)
+-   [**WS \_ XML \_ STRING \_ NULL**](/previous-versions/windows/desktop/legacy/dd323562(v=vs.85))
+-   [**WS \_ XML \_ STRING \_ VALUE**](/windows/desktop/api/WebServices/nf-webservices-ws_xml_string_value)
 
-Las siguientes estructuras se utilizan con nodos XML:
+Las estructuras siguientes se usan con nodos XML:
 
--   [**\_atributo XML de WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_attribute)
--   [**Texto de WS \_ XML \_ Base64 \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_base64_text)
--   [**\_ \_ texto BOOLEANO de WS XML \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_bool_text)
--   [**nodo de comentario de WS \_ XML \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_comment_node)
--   [**\_texto de \_ fecha y hora XML de WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_datetime_text)
--   [**\_ \_ texto decimal de WS XML \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_decimal_text)
--   [**Diccionario de WS \_ XML \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_dictionary)
--   [**\_ \_ texto Double de WS XML \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_double_text)
--   [**\_nodo de \_ elemento \_ XML de WS**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_element_node)
--   [**\_ \_ texto flotante de WS XML \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_float_text)
--   [**texto del GUID de WS \_ XML \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_guid_text)
--   [**\_Texto XML \_ INT32 de WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_int32_text)
--   [**\_ \_ Texto INT64 XML de WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_int64_text)
--   [**\_texto de \_ lista \_ XML de WS**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_list_text)
--   [**\_nodo XML de WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_node)
--   [**\_QNAME XML de WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_qname)
--   [**\_ \_ texto QNAME XML de WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_qname_text)
--   [**\_cadena XML de WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_string)
--   [**\_texto XML de WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_text)
--   [**\_nodo de \_ texto \_ XML de WS**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_text_node)
--   [**\_texto de \_ TIMESPAN \_ XML de WS**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_timespan_text)
--   [**\_ \_ Texto UINT64 XML de WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_uint64_text)
--   [**\_texto de \_ \_ identificador único \_ de WS XML**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_unique_id_text)
--   [**\_ \_ Texto UTF16 XML de WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_utf16_text)
--   [**\_ \_ Texto UTF8 de WS XML \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_utf8_text)
+-   [**ATRIBUTO XML de WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_attribute)
+-   [**WS \_ XML \_ BASE64 \_ TEXT**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_base64_text)
+-   [**WS \_ XML \_ BOOL \_ TEXT**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_bool_text)
+-   [**NODO DE COMENTARIO DE WS \_ XML \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_comment_node)
+-   [**TEXTO DATETIME DE WS \_ \_ \_ XML**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_datetime_text)
+-   [**TEXTO \_ DECIMAL XML WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_decimal_text)
+-   [**DICCIONARIO XML de WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_dictionary)
+-   [**WS \_ XML \_ DOUBLE \_ TEXT**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_double_text)
+-   [**NODO DE \_ ELEMENTO XML \_ DE WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_element_node)
+-   [**TEXTO FLOTANTE DE WS \_ XML \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_float_text)
+-   [**TEXTO GUID \_ DE WS XML \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_guid_text)
+-   [**WS \_ XML \_ INT32 \_ TEXT**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_int32_text)
+-   [**WS \_ XML \_ INT64 \_ TEXT**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_int64_text)
+-   [**WS \_ XML \_ LIST \_ TEXT**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_list_text)
+-   [**NODO XML de WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_node)
+-   [**WS \_ XML \_ QNAME**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_qname)
+-   [**WS \_ XML \_ QNAME \_ TEXT**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_qname_text)
+-   [**WS \_ XML \_ STRING**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_string)
+-   [**WS \_ XML \_ TEXT**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_text)
+-   [**NODO DE \_ TEXTO XML \_ DE WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_text_node)
+-   [**WS \_ XML \_ TIMESPAN \_ TEXT**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_timespan_text)
+-   [**WS \_ XML \_ UINT64 \_ TEXT**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_uint64_text)
+-   [**TEXTO DE IDENTIFICADOR ÚNICO DE WS \_ XML \_ \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_unique_id_text)
+-   [**TEXTO \_ UTF16 DE WS \_ \_ XML**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_utf16_text)
+-   [**TEXTO \_ \_ UTF8 DE WS XML \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_utf8_text)
 
  
 

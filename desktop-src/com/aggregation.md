@@ -1,35 +1,35 @@
 ---
 title: Agregación
-description: La agregación es el mecanismo de reutilización de objetos en el que el objeto externo expone interfaces del objeto interno como si se hubieran implementado en el propio objeto externo.
+description: Agregación es el mecanismo de reutilización de objetos en el que el objeto externo expone interfaces del objeto interno como si se hubieran implementado en el propio objeto externo.
 ms.assetid: 6845b114-8f43-47ad-acdf-b63d6008d221
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a4f11f69f5d7b14047a8138cba93bd503b645a3
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 4855b1fa3a614d190b8f192aeee2e7cf3d3d53bbdce589a1363e0398f70430c7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104359440"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119731725"
 ---
 # <a name="aggregation"></a>Agregación
 
-La agregación es el mecanismo de reutilización de objetos en el que el objeto externo expone interfaces del objeto interno como si se hubieran implementado en el propio objeto externo. Esto resulta útil cuando el objeto externo delega cada llamada a una de sus interfaces a la misma interfaz en el objeto interno. La agregación está disponible por comodidad para evitar la sobrecarga de implementación adicional en el objeto externo en este caso. En realidad, la agregación es un caso especializado de [contención o delegación](containment-delegation.md).
+Agregación es el mecanismo de reutilización de objetos en el que el objeto externo expone interfaces del objeto interno como si se hubieran implementado en el propio objeto externo. Esto resulta útil cuando el objeto externo delega cada llamada a una de sus interfaces en la misma interfaz del objeto interno. La agregación está disponible por comodidad para evitar sobrecargas de implementación adicionales en el objeto externo en este caso. La agregación es realmente un caso especializado [de contención o delegación.](containment-delegation.md)
 
-La agregación es casi tan sencilla de implementar como contención es, excepto para las tres funciones [**IUnknown**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown) : [**QueryInterface**](/windows/desktop/api/Unknwn/nf-unknwn-iunknown-queryinterface(q)), [**AddRef**](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref)y [**Release**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release). La instrucción Catch es que, desde la perspectiva del cliente, cualquier función **IUnknown** en el objeto externo debe afectar al objeto externo. Es decir, **AddRef** y **Release** afectan al objeto externo y **QueryInterface** expone todas las interfaces disponibles en el objeto externo. Sin embargo, si el objeto externo simplemente expone la interfaz de un objeto interno por su cuenta, los miembros **IUnknown** del objeto interno a los que se llama a través de esa interfaz se comportarán de forma diferente a los miembros **IUnknown** de las interfaces del objeto externo, una infracción absoluta de las reglas y propiedades que rigen **IUnknown**.
+La agregación es casi tan sencilla de implementar como la contención, excepto para las tres funciones [**IUnknown:**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown) [**QueryInterface**](/windows/desktop/api/Unknwn/nf-unknwn-iunknown-queryinterface(q)), [**AddRef**](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref)y [**Release.**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) La captura es que, desde la perspectiva del cliente, cualquier **función IUnknown** del objeto externo debe afectar al objeto externo. Es decir, **AddRef** y **Release afectan** al objeto externo y **QueryInterface** expone todas las interfaces disponibles en el objeto externo. Sin embargo, si el objeto externo simplemente expone la interfaz de un objeto interno como propia, los miembros **IUnknown** de ese objeto interno a los que se llama a través de esa interfaz se comportarán de forma diferente a los miembros **IUnknown** en las interfaces del objeto externo, una infracción absoluta de las reglas y propiedades que rigen **IUnknown**.
 
 La solución es que la agregación requiere una implementación explícita de [**IUnknown**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown) en el objeto interno y la delegación de los métodos **IUnknown** de cualquier otra interfaz a los métodos **IUnknown** del objeto externo.
 
-## <a name="creating-aggregable-objects"></a>Crear objetos Aggregable
+## <a name="creating-aggregable-objects"></a>Crear objetos aggregable
 
-La creación de objetos que se pueden agregar es opcional; sin embargo, es fácil de hacer y proporciona importantes ventajas. Las siguientes reglas se aplican a la creación de un objeto aggregable:
+La creación de objetos que se pueden agregar es opcional; sin embargo, es fácil de hacer y proporciona ventajas significativas. Las reglas siguientes se aplican a la creación de un objeto aggregable:
 
--   La implementación del objeto aggregable (o interno) de [**QueryInterface**](/windows/desktop/api/Unknwn/nf-unknwn-iunknown-queryinterface(q)), [**AddRef**](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref)y [**Release**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) para su interfaz [**IUnknown**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown) controla el recuento de referencias del objeto interno, y esta implementación no debe delegar en el desconocido del objeto externo (control **IUnknown**).
--   La implementación del objeto aggregable (o interno) de [**QueryInterface**](/windows/desktop/api/Unknwn/nf-unknwn-iunknown-queryinterface(q)), [**AddRef**](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref)y [**Release**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) para sus otras interfaces debe delegar al [**IUnknown**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown) de control y no debe afectar directamente al recuento de referencias del objeto interno.
--   [**IUnknown**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown) interno debe implementar [**QueryInterface**](/windows/desktop/api/Unknwn/nf-unknwn-iunknown-queryinterface(q)) solo para el objeto interno.
--   El objeto aggregable no debe llamar a [**AddRef**](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref) cuando contiene una referencia al puntero de control [**IUnknown**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown) .
--   Cuando se crea el objeto, si se solicita una interfaz que no sea [**IUnknown**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown) , se debe producir un error en la creación con E \_ nointerface.
+-   La implementación del objeto aggregable (o interno) de [**QueryInterface**](/windows/desktop/api/Unknwn/nf-unknwn-iunknown-queryinterface(q)), [**AddRef**](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref)y [**Release**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) para su [**interfaz IUnknown**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown) controla el recuento de referencias del objeto interno, y esta implementación no debe delegar en el desconocido del objeto externo (el **IUnknown de control).**
+-   La implementación del objeto aggregable (o interno) de [**QueryInterface**](/windows/desktop/api/Unknwn/nf-unknwn-iunknown-queryinterface(q)), [**AddRef**](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref)y [**Release**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) para sus otras interfaces debe delegar en el [**IUnknown**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown) de control y no debe afectar directamente al recuento de referencias del objeto interno.
+-   El [**IUnknown interno**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown) debe implementar [**QueryInterface**](/windows/desktop/api/Unknwn/nf-unknwn-iunknown-queryinterface(q)) solo para el objeto interno.
+-   El objeto aggregable no debe llamar a [**AddRef**](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref) cuando se mantiene una referencia al [**puntero IUnknown de**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown) control.
+-   Cuando se crea el objeto , si se solicita cualquier interfaz que no sea [**IUnknown,**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown) la creación debe producir un error con E \_ NOINTERFACE.
 
-En el fragmento de código siguiente se muestra una implementación correcta de un objeto aggregable mediante el método de clase anidada de implementación de interfaces:
+El fragmento de código siguiente muestra una implementación correcta de un objeto aggregable mediante el método de clase anidada de implementar interfaces:
 
 
 ```C++
@@ -133,11 +133,11 @@ class CSomeObject : public IUnknown
 
 ## <a name="aggregating-objects"></a>Agregar objetos
 
-Al desarrollar un objeto aggregable, se aplican las siguientes reglas:
+Al desarrollar un objeto aggregable, se aplican las reglas siguientes:
 
 -   Al crear el objeto interno, el objeto externo debe solicitar explícitamente su [**IUnknown**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown).
--   El objeto externo debe proteger su implementación de [**Release**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) de la reentrada con un recuento de referencias artificial en torno a su código de destrucción.
--   El objeto externo debe llamar al método de  [**liberación**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) de control **IUnknown** si consulta un puntero a cualquiera de las interfaces del objeto interno. Para liberar este puntero, el objeto externo llama al método de control **IUnknown** [**AddRef**](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref) , seguido de **Release** en el puntero del objeto interno.
+-   El objeto externo debe proteger su implementación de [**Release**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) de la reenencia con un recuento de referencias artificial alrededor de su código de destrucción.
+-   El objeto externo debe llamar a su método **IUnknown** [**Release**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) de control si consulta un puntero a cualquiera de las interfaces del objeto interno. Para liberar este puntero, el objeto externo llama a su método **IUnknown** [**AddRef**](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref) de control, seguido de **Release en** el puntero del objeto interno.
     ```C++
     // Obtaining inner object interface pointer 
     pUnkInner->QueryInterface(IID_ISomeInterface, &pISomeInterface); 
@@ -151,15 +151,15 @@ Al desarrollar un objeto aggregable, se aplican las siguientes reglas:
 
     
 
--   El objeto externo no debe delegar ciegamente una consulta para ninguna interfaz no reconocida en el objeto interno, a menos que ese comportamiento sea específicamente el objetivo del objeto externo.
+-   El objeto externo no debe delegar a la vista una consulta para ninguna interfaz no reconocida en el objeto interno, a menos que ese comportamiento sea específicamente la intención del objeto externo.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Contención/delegación](containment-delegation.md)
+[Contención y delegación](containment-delegation.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

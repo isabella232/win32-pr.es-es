@@ -1,9 +1,9 @@
 ---
 title: NSC_Name
-description: El \_ atributo NSC Name contiene el nombre de la estación de multidifusión.
+description: El atributo NSC \_ Name contiene el nombre de la estación de multidifusión.
 ms.assetid: e6b3e126-73a0-4471-92d0-ca66510c12d3
 keywords:
-- NSC_Name formato de Windows Media
+- NSC_Name windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d9eb82af4cd9f4eb5618c8986b323d390c81296c
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: a26bc68992e7a05e59ed8030fa72f0984a47a23a3b0d79fb0454c5e321f594ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105676323"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119707505"
 ---
-# <a name="nsc_name"></a>\_Nombre NSC
+# <a name="nsc_name"></a>Nombre de \_ NSC
 
-El atributo **NSC \_ Name** contiene el nombre de la estación de multidifusión.
+El **atributo NSC \_ Name** contiene el nombre de la estación de multidifusión.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,7 +29,7 @@ g \_ wszWMNSCName
 
 ## <a name="data-type"></a>Tipo de datos
 
-**\_cadena de tipo WMT \_**
+**CADENA DE TIPO WMT \_ \_**
 
 ## <a name="see-also"></a>Vea también
 
@@ -38,12 +38,12 @@ g \_ wszWMNSCName
 [**Lista de atributos**](attribute-list.md)
 </dt> <dt>
 
-[**Atributos de la estación de multidifusión**](multicast-station-attributes.md)
+[**Atributos de estación de multidifusión**](multicast-station-attributes.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,16 +4,16 @@ ms.assetid: A83974B8-2F82-4214-B4E6-0F417FE7EC27
 title: Propiedades de IAzApplicationGroup
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2e5b2008e5b2c62d7425cbcd7b68fb56ca9d984
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e8998be1a76e260da83fee240806935eef5063eb60dbeba809a7bae129e48542
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103816203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119671925"
 ---
 # <a name="iazapplicationgroup-properties"></a>Propiedades de IAzApplicationGroup
 
-La interfaz [**IAzApplicationGroup**](/windows/desktop/api/Azroles/nn-azroles-iazapplicationgroup) expone las siguientes propiedades.
+La [**interfaz IAzApplicationGroup**](/windows/desktop/api/Azroles/nn-azroles-iazapplicationgroup) expone las siguientes propiedades.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -21,12 +21,12 @@ La interfaz [**IAzApplicationGroup**](/windows/desktop/api/Azroles/nn-azroles-ia
 -   [**Propiedad AppNonMembers**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_appnonmembers)
 -   [**Description (propiedad)**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_description)
 -   [**Propiedad LdapQuery**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_ldapquery)
--   [**Propiedad members**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_members)
+-   [**Propiedad Members**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_members)
 -   [**Propiedad MembersName**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_membersname)
 -   [**Propiedad Name**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_name)
--   [**Propiedad nonmembers**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_nonmembers)
+-   [**Propiedad NonMembers**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_nonmembers)
 -   [**Propiedad NonMembersName**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_nonmembersname)
--   [**Type (propiedad)**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_type)
+-   [**Propiedad Type**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_type)
 -   [**Propiedad grabable**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_writable)
 
  

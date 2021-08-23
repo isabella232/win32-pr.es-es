@@ -1,9 +1,9 @@
 ---
-title: Frequency (atributo)
-description: El atributo Frequency es la frecuencia de la estación de radio o \ 0034; solo net \ 0034;.
+title: Atributo Frequency
+description: El atributo Frequency es la frecuencia de la estación de radio o \ 0034;Net only \ 0034;.
 ms.assetid: af9d348a-35f5-4cd6-ac1e-523e310860dd
 keywords:
-- Atributo Frequency Media Player de Windows
+- Frecuencia de atributo Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,34 +12,34 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bbc3ca8dde29c5729446c54e36b3d10b9c9825f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 81d75a542963a8587ad25ead39090ec77fb7d10f72119804c3c43280fd588a54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699917"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648215"
 ---
-# <a name="frequency-attribute"></a>Frequency (atributo)
+# <a name="frequency-attribute"></a>Atributo Frequency
 
-El atributo **Frequency** es la frecuencia de la estación de radio o "net Only".
+El **atributo Frequency** es la frecuencia de la estación de radio o "Net only".
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [Elementos de radio](radio-item-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este atributo solo se almacena en la biblioteca.
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|-----------------------------------------------|
-| Versión<br/> | Solo Windows Media Player 9 series<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 solo<br/> |
 
 
 
@@ -47,7 +47,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  
