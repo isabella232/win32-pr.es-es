@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: constantes del motor de almacenamiento extensible'
-title: Constantes del motor de almacenamiento extensible
+description: 'Más información sobre: Constantes extensibles Storage engine'
+title: Constantes extensibles Storage motor de datos
 TOCTitle: Extensible Storage Engine Constants
 ms:assetid: 9a361b83-491d-442d-971d-6696f88ad42e
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269351(v=EXCHG.10)
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ab478b7972206f462cd0bd0031f74865d850dbee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 563efe09c011830ef17001c13a6f3d4564b26567940245aee3fcb272f562aa69
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103814451"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118980815"
 ---
-# <a name="extensible-storage-engine-constants"></a>Constantes del motor de almacenamiento extensible
+# <a name="extensible-storage-engine-constants"></a>Constantes extensibles Storage motor de datos
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
-## <a name="extensible-storage-engine-constants"></a>Constantes del motor de almacenamiento extensible
+## <a name="extensible-storage-engine-constants"></a>Constantes extensibles Storage motor de datos
 
-La sección constantes del motor de almacenamiento extensible contiene las siguientes secciones:
+La sección Extensible Storage Engine Constants contiene las secciones siguientes:
 
   - [JET_CBTYP](./jet-cbtyp.md)
 
@@ -45,10 +45,10 @@ La sección constantes del motor de almacenamiento extensible contiene las sigui
 
   - [Constantes de registro de eventos](./event-logging-constants.md)
 
-  - [Parámetros del sistema del motor de almacenamiento extensible](./extensible-storage-engine-system-parameters.md)
+  - [Parámetros extensibles Storage del sistema del motor de datos](./extensible-storage-engine-system-parameters.md)
 
   - [Constantes de identificador no válidas](./invalid-handle-constants.md)
 
-  - [Constantes de configuración máxima](./maximum-settings-constants.md)
+  - [Número máximo Configuración constantes](./maximum-settings-constants.md)
 
   - [Constantes obsoletas](./obsolete-constants.md)

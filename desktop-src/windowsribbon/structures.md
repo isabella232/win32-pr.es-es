@@ -1,19 +1,19 @@
 ---
-title: Estructuras (marco de cinta)
-description: En los temas de esta sección se proporcionan las especificaciones de referencia para las estructuras de marcos de cinta de Windows.
+title: Estructuras (marco de la cinta de opciones)
+description: Los temas de esta sección proporcionan las especificaciones de referencia para las Windows marco de la cinta de opciones.
 ms.assetid: 8A109C67-BF05-4BA4-8F12-473F2C773B90
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 928b1c0dcf404c054072dc57c1064dca3b39b096
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: adae6c190acb59ca0916d958266eff0d678fe75554a94aa5bdab14f2724afb14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "105705081"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964404"
 ---
-# <a name="structures-ribbon-framework"></a>Estructuras (marco de cinta)
+# <a name="structures-ribbon-framework"></a>Estructuras (marco de la cinta de opciones)
 
-En los temas de esta sección se proporcionan las especificaciones de referencia para las estructuras de [marcos de cinta de Windows](-uiplat-windowsribbon-entry.md) .
+Los temas de esta sección proporcionan las especificaciones de referencia para [las Windows marco de la cinta de](-uiplat-windowsribbon-entry.md) opciones.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -21,8 +21,8 @@ En los temas de esta sección se proporcionan las especificaciones de referencia
 
 | Tema                                                                  | Descripción                                                                                                       |
 |------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| [**UI \_ EVENTPARAMS**](/windows/desktop/api/Uiribbon/ns-uiribbon-ui_eventparams)<br/>                   | Contiene información sobre un evento de [**la cinta**](windowsribbon-element-ribbon.md) de opciones.<br/>                     |
-| [**\_comando EVENTPARAMS de la interfaz de usuario \_**](/windows/desktop/api/Uiribbon/ns-uiribbon-ui_eventparams_command)<br/> | Contiene información acerca de un [**comando**](windowsribbon-element-command.md) asociado a un evento.<br/> |
+| [**UI \_ EVENTPARAMS**](/windows/desktop/api/Uiribbon/ns-uiribbon-ui_eventparams)<br/>                   | Contiene información sobre un evento [**de cinta de**](windowsribbon-element-ribbon.md) opciones.<br/>                     |
+| [**COMANDO \_ EVENTPARAMS DE LA \_ INTERFAZ DE USUARIO**](/windows/desktop/api/Uiribbon/ns-uiribbon-ui_eventparams_command)<br/> | Contiene información sobre un [**comando**](windowsribbon-element-command.md) asociado a un evento.<br/> |
 
 
 
@@ -32,7 +32,7 @@ En los temas de esta sección se proporcionan las especificaciones de referencia
 
 <dl> <dt>
 
-[Referencia de marco de cinta de Windows](windowsribbon-reference-entry.md)
+[Windows Referencia del marco de opciones](windowsribbon-reference-entry.md)
 </dt> </dl>
 
  

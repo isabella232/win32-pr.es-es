@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: clase EsentBadCheckpointSignatureException'
+description: 'Más información sobre: Clase EsentBadCheckpointSignatureException'
 title: Clase EsentBadCheckpointSignatureException
 TOCTitle: EsentBadCheckpointSignatureException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentBadCheckpointSignatureException
@@ -24,31 +24,31 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 96ddfa89c1fdf6a4b7727a00f736bbcc1c1c925e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b91644d3a48c0fb83a3d84bba3baebdc8648d931db1939aff2054ef16aeac9ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678337"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119042113"
 ---
 # <a name="esentbadcheckpointsignatureexception-class"></a>Clase EsentBadCheckpointSignatureException
 
-Clase base para JET_err. Excepciones BadCheckpointSignature.
+Clase base para JET_err. Excepciones badCheckpointSignature.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
   [System.Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. esent. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. esent. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. esent. Interop. EsentDataException](./esentdataexception-class.md)  
-          [Microsoft. ISAM. esent. Interop. EsentInconsistentException](./esentinconsistentexception-class.md)  
-            Microsoft. ISAM. esent. Interop. EsentBadCheckpointSignatureException  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentDataException](./esentdataexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentInconsistentException](./esentinconsistentexception-class.md)  
+            Microsoft.Isam.Esent.Interop.EsentBadCheckpointSignatureException  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -74,4 +74,4 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 [Miembros de EsentBadCheckpointSignatureException](./esentbadcheckpointsignatureexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

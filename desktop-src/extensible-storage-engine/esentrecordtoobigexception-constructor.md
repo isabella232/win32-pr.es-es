@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentRecordTooBigException'
-title: Constructor de EsentRecordTooBigException
+description: 'Más información sobre: Constructor EsentRecordTooBigException'
+title: Constructor EsentRecordTooBigException
 TOCTitle: 'EsentRecordTooBigException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentRecordTooBigException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentrecordtoobigexception.esentrecordtoobigexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bb58235584b6b4d408efb0e9240e2f4412c756ec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 48e72f35e9d0e1a17a1fab174042259259018dca96680e1cd18539dfa1039bba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119040068"
 ---
-# <a name="esentrecordtoobigexception-constructor"></a>Constructor de EsentRecordTooBigException
+# <a name="esentrecordtoobigexception-constructor"></a>Constructor EsentRecordTooBigException
 
 Inicializa una nueva instancia de la clase EsentRecordTooBigException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentRecordTooBigException()
 public EsentRecordTooBigException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentRecordTooBigException()
 
 [Miembros de EsentRecordTooBigException](./esentrecordtoobigexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

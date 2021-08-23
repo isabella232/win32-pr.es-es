@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 9abaaa231e424e55e496b7901882e9da17c59786
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ec225648d5024951ca51e0533098fee897a66d6770d0c937c0d251842613a9b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103213"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991125"
 ---
 # <a name="d3dxquaternionln-function-d3dx10mathh"></a>Función D3DXQuaternionLn (D3DX10Math.h)
 
@@ -93,7 +93,7 @@ Use [**D3DXQuaternionNormalize para cualquier**](d3d10-d3dxquaternionnormalize.m
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

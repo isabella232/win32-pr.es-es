@@ -1,11 +1,11 @@
 ---
-title: Propiedad RunningTask.Name
-description: En el caso de scripting, obtiene el nombre de la tarea.
+title: RunningTask.Name propiedad
+description: Para el scripting, obtiene el nombre de la tarea.
 ms.assetid: 6c21f845-a33f-4625-97e0-d6fc739527a3
 keywords:
-- Propiedad nombre Programador de tareas
-- Propiedad Name Programador de tareas, objeto RunningTask
-- Programador de tareas de objeto RunningTask, propiedad Name
+- Nombre de propiedad Programador de tareas
+- Propiedad Name Programador de tareas , objeto RunningTask
+- Objeto RunningTask Programador de tareas , propiedad Name
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 039c8f5f1b2ac39cf331050a9e2cc0cd186e4537
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 56d0a1a9be1c0572ef7fd7e39e26d2a091ad398719d8f8b7cff0430403ff3ffb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150805"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119002333"
 ---
-# <a name="runningtaskname-property"></a>Propiedad RunningTask.Name
+# <a name="runningtaskname-property"></a>RunningTask.Name propiedad
 
-En el caso de scripting, obtiene el nombre de la tarea.
+Para el scripting, obtiene el nombre de la tarea.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -46,9 +46,9 @@ Nombre de la tarea.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

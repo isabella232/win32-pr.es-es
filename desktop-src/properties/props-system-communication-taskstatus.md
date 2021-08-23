@@ -1,17 +1,17 @@
 ---
 description: Indica el estado actual de la tarea.
 ms.assetid: 76bb9bb7-3383-4e5a-ae75-a11c40f318e2
-title: System. Communication. TaskStatus
+title: System.Communication.TaskStatus
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bd74f25400093d9719607a718b4d1fc727ff36de
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 982f0b1be8b4cd284f50d0132d9fda02fc434a226fba61fc8cc83ca046cd7f99
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715764"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970734"
 ---
-# <a name="systemcommunicationtaskstatus"></a>System. Communication. TaskStatus
+# <a name="systemcommunicationtaskstatus"></a>System.Communication.TaskStatus
 
 Indica el estado actual de la tarea.
 
@@ -94,9 +94,9 @@ propertyDescription
             defineName = TASKSTATUS_DEFERRED
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -111,7 +111,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -123,7 +123,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -141,7 +141,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

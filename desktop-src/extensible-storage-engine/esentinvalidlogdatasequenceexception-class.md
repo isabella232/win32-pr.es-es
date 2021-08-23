@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: clase EsentInvalidLogDataSequenceException'
+description: 'Más información sobre: Clase EsentInvalidLogDataSequenceException'
 title: Clase EsentInvalidLogDataSequenceException
 TOCTitle: EsentInvalidLogDataSequenceException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentInvalidLogDataSequenceException
@@ -24,31 +24,31 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2b18f1197949df9fa305ad7ec51e6e14e522aeb9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a37553555f5c89b191257fa84a7a751b11ad11ffae37ea0bc21ba06f249f5ee2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716111"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118982267"
 ---
 # <a name="esentinvalidlogdatasequenceexception-class"></a>Clase EsentInvalidLogDataSequenceException
 
-Clase base para JET_err. Excepciones InvalidLogDataSequence.
+Clase base para JET_err. Excepciones invalidLogDataSequence.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
   [System.Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. esent. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. esent. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. esent. Interop. EsentApiException](./esentapiexception-class.md)  
-          [Microsoft. ISAM. esent. Interop. EsentStateException](./esentstateexception-class.md)  
-            Microsoft. ISAM. esent. Interop. EsentInvalidLogDataSequenceException  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentApiException](./esentapiexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentStateException](./esentstateexception-class.md)  
+            Microsoft.Isam.Esent.Interop.EsentInvalidLogDataSequenceException  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -74,4 +74,4 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 [Miembros de EsentInvalidLogDataSequenceException](./esentinvalidlogdatasequenceexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

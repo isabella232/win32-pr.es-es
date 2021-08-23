@@ -1,7 +1,7 @@
 ---
 description: Obtiene el identificador de un paso buscando su nombre.
 ms.assetid: 24d043a2-5c87-4a59-80d4-0c81bd7a0b3e
-title: 'ID3DXBaseEffect:: GetPassByName (método) (D3DX9Effect. h)'
+title: Método ID3DXBaseEffect::GetPassByName (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 2cd96a9d91f0e822b3e869bd8f0c965f0f951f44
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5837d2b69c793f788c4c89f648402e7924bc2f3af9a92bbbe596c133efe10d1e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718513"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987765"
 ---
-# <a name="id3dxbaseeffectgetpassbyname-method"></a>ID3DXBaseEffect:: GetPassByName (método)
+# <a name="id3dxbaseeffectgetpassbyname-method"></a>Método ID3DXBaseEffect::GetPassByName
 
 Obtiene el identificador de un paso buscando su nombre.
 
@@ -41,21 +41,21 @@ D3DXHANDLE GetPassByName(
 
 <dl> <dt>
 
-*hTechnique* \[ de\]
+*hTechnique* \[ En\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador de la técnica primaria. Vea [identificadores (Direct3D 9)](handles.md).
+Identificador de la técnica primaria. Vea [Identificadores (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
-*pName* \[ de\]
+*pName* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Cadena que contiene el nombre del paso.
+Cadena que contiene el nombre de paso.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Cadena que contiene el nombre del paso.
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Devuelve el identificador del primer paso dentro de la técnica especificada que tiene el nombre especificado, o **null** si no se encuentra el nombre. Vea [identificadores (Direct3D 9)](handles.md).
+Devuelve el identificador del primer paso dentro de la técnica especificada que tiene el nombre especificado o **NULL** si no se encontró el nombre. Vea [Identificadores (Direct3D 9).](handles.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Devuelve el identificador del primer paso dentro de la técnica especificada que
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

@@ -1,30 +1,30 @@
 ---
-title: Agregar la propiedad de combinación húmeda
-description: Agregar la propiedad de combinación húmeda
+title: Agregar la propiedad Mezcla mezclada
+description: Agregar la propiedad Mezcla mezclada
 ms.assetid: 4605d893-8ac0-42fd-a1ac-51430561f174
 keywords:
-- Complementos de Media Player de Windows, propiedades de ejemplo de eco
+- Reproductor de Windows Media complementos, propiedades de ejemplo de eco
 - complementos, propiedades de ejemplo de eco
-- Complementos de procesamiento de señal digital, eco de propiedades de ejemplo
-- Complementos DSP, propiedades de ejemplo de eco
+- complementos de procesamiento de señales digitales, propiedades de ejemplo de eco
+- Complementos DE DSP, propiedades de ejemplo de eco
 - Ejemplo de complemento DSP de eco, propiedades
-- Ejemplo de complemento de DSP de eco, propiedad de combinación húmeda
+- Ejemplo de complemento DSP de eco, propiedad de combinación con efectos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad6af8e7b4857ccbf6b725044575d1b8524aaf50
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f743cc25ce25aed1e7ff5695c022d65e30c1680eee4121eb3952698d6f0da94f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357127"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055423"
 ---
-# <a name="adding-the-wet-mix-property"></a>Agregar la propiedad de combinación húmeda
+# <a name="adding-the-wet-mix-property"></a>Agregar la propiedad Mezcla mezclada
 
 Debe agregar el código para proporcionar la propiedad adicional para el nivel de efecto.
 
-En la sección [Agregar propiedades al complemento DSP de audio de ejemplo se](adding-properties-to-the-sample-audio-dsp-plug-in.md) proporcionan detalles sobre cómo agregar una nueva propiedad mediante Visual C++. En esta sección se muestra cómo agregar el código manualmente. Esto implica agregar código en los mismos tres lugares en los que se modificó el código para la propiedad tiempo de retraso.
+En la sección [Adding Properties to the Sample Audio DSP Plug-in](adding-properties-to-the-sample-audio-dsp-plug-in.md) (Agregar propiedades al complemento DSP de audio de ejemplo) se proporcionan detalles sobre cómo agregar una nueva propiedad mediante Visual C++. En esta sección se muestra cómo agregar el código manualmente. Esto implica agregar código en los mismos tres lugares donde se modificó el código para la propiedad delay time.
 
-Agregue los prototipos para los \_ métodos Get WETMIX y put \_ WETMIX inmediatamente después de los otros prototipos de método de propiedad en echo. h. Use la sintaxis siguiente:
+Agregue los prototipos para get wetmix y coloque los métodos demezclado inmediatamente después de los otros prototipos de método \_ \_ de propiedad en Echo.h. Use la sintaxis siguiente:
 
 
 ```C++
@@ -35,7 +35,7 @@ STDMETHOD(put_wetmix)(double newVal);
 
 
 
-Ahora, agregue la implementación de cada método inmediatamente después de las otras implementaciones de propiedades en echo. cpp. En el ejemplo siguiente se muestra el código de ambos métodos:
+Ahora, agregue la implementación para cada método inmediatamente después de las otras implementaciones de propiedad en Echo.cpp. En el ejemplo siguiente se muestra el código para ambos métodos:
 
 
 ```C++
@@ -67,9 +67,9 @@ STDMETHODIMP CEcho::put_wetmix(double newVal)
 
 
 
-Observe que la implementación de put \_ WETMIX incluye el código para calcular el valor correcto para m \_ fDryMix. Cada vez que se especifica un nuevo valor para m \_ fWetMix, se requiere este cálculo.
+Observe que la implementación de put \_ wetmix incluye el código para calcular el valor correcto para m \_ fDryMix. Cada vez que se especifica un nuevo valor para m \_ fWetMix, se requiere este cálculo.
 
-Agregue el código siguiente en la definición de interfaz justo después del código para los métodos de retraso en echo. idl:
+Agregue el código siguiente en la definición de interfaz justo después del código para los métodos de retraso en Echo.idl:
 
 
 ```C++
@@ -84,12 +84,12 @@ HRESULT put_wetmix([in] double newVal);
 
 <dl> <dt>
 
-[**Eco de propiedades de ejemplo**](echo-sample-properties.md)
+[**Propiedades de ejemplo de eco**](echo-sample-properties.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

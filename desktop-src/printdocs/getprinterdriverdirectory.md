@@ -1,7 +1,7 @@
 ---
-description: La función GetPrinterDriverDirectory recupera la ruta de acceso del directorio del controlador de impresora.
+description: La función GetPrinterDriverDirectory recupera la ruta de acceso del directorio printer-driver.
 ms.assetid: 69c9cc87-d7e3-496a-b631-b3ae30cdb3fd
-title: Función GetPrinterDriverDirectory (winspool. h)
+title: Función GetPrinterDriverDirectory (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,16 +18,16 @@ api_location:
 - Ext-MS-Win-printer-Winspool-l1-1-1.dll
 - Ext-MS-Win-Printer-WinSpool-l1-1-2.dll
 - Ext-MS-Win-Printer-WinSpool-L1-1-3.dll
-ms.openlocfilehash: 7acc68f99f9791ba4231bcfea2b1788cfb37011c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4822f2478313dc902062ff907df5af3f0f7a515f19e414d2bc1534cc991b1ac8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707230"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118971364"
 ---
-# <a name="getprinterdriverdirectory-function"></a>GetPrinterDriverDirectory función)
+# <a name="getprinterdriverdirectory-function"></a>Función GetPrinterDriverDirectory
 
-La función **GetPrinterDriverDirectory** recupera la ruta de acceso del directorio del controlador de impresora.
+La **función GetPrinterDriverDirectory** recupera la ruta de acceso del directorio printer-driver.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,58 +49,58 @@ BOOL GetPrinterDriverDirectory(
 
 <dl> <dt>
 
-*pName* \[ de\]
+*pName* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica el nombre del servidor en el que reside el controlador de impresora. Si este parámetro es **null**, se recupera la ruta de acceso del directorio local del controlador.
+Puntero a una cadena terminada en NULL que especifica el nombre del servidor en el que reside el controlador de impresora. Si este parámetro es **NULL,** se recupera la ruta de acceso del directorio del controlador local.
 
 </dd> <dt>
 
-*pEnvironment* \[ de\]
+*pEnvironment* \[ En\]
 </dt> <dd>
 
-Un puntero a una cadena terminada en null que especifica el entorno (por ejemplo, Windows x86, Windows IA64 o Windows x64). Si este parámetro es **null**, se utiliza el entorno actual de la aplicación que realiza la llamada y el equipo cliente (no la aplicación de destino y el servidor de impresión).
+Puntero a una cadena terminada en NULL que especifica el entorno (por ejemplo, Windows x86, Windows IA64 o Windows x64). Si este parámetro es **NULL,** se usa el entorno actual de la aplicación que realiza la llamada y la máquina cliente (no de la aplicación de destino ni del servidor de impresión).
 
 </dd> <dt>
 
-*Nivel* \[ de de\]
+*Nivel* \[ En\]
 </dt> <dd>
 
 Nivel de estructura. Este valor debe ser 1.
 
 </dd> <dt>
 
-*pDriverDirectory* \[ enuncia\]
+*pDriverDirectory* \[ out\]
 </dt> <dd>
 
-Un puntero a un búfer que recibe la ruta de acceso.
+Puntero a un búfer que recibe la ruta de acceso.
 
 </dd> <dt>
 
-*cbBuf* \[ de\]
+*cbBuf* \[ En\]
 </dt> <dd>
 
-Tamaño del búfer al que apunta *pDriverDirectory* .
+Tamaño del búfer al que *apunta pDriverDirectory.*
 
 </dd> <dt>
 
-*pcbNeeded* \[ enuncia\]
+*pwNeeded* \[ out\]
 </dt> <dd>
 
-Un puntero a un valor que especifica el número de bytes copiados si la función se ejecuta correctamente, o el número de bytes necesarios si *cbBuf* es demasiado pequeño.
+Puntero a un valor que especifica el número de bytes copiados si la función se realiza correctamente o el número de bytes necesarios si *cbBuf* es demasiado pequeño.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto es un valor distinto de cero.
+Si la función se realiza correctamente, el valor devuelto es un valor distinto de cero.
 
 Si la función no se realiza correctamente, el valor devuelto es cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> Se trata de una función de bloqueo o sincrónica y podría no volver inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que parezca que la aplicación no responde.
+> Se trata de una función de bloqueo o sincrónica y es posible que no se devuelva inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que la aplicación parezca no responder.
 
  
 
@@ -112,9 +112,9 @@ Si la función no se realiza correctamente, el valor devuelto es cero.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
-| Archivo DLL<br/>                      | <dl> <dt>Winspool. drv</dt> </dl>                   |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
+| Archivo DLL<br/>                      | <dl> <dt>Winspool.drv</dt> </dl>                   |
 | Nombres Unicode y ANSI<br/>   | **GetPrinterDriverDirectoryW** (Unicode) y **GetPrinterDriverDirectoryA** (ANSI)<br/>             |
 
 

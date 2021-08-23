@@ -3,7 +3,7 @@ title: Atributo ReleaseDateMonth
 description: El atributo ReleaseDateMonth es la parte del mes de la fecha de la versión original del elemento.
 ms.assetid: e2ec439e-9d0e-4f9a-aba8-5fbd0e959d84
 keywords:
-- ReleaseDateMonth Media Player de Windows
+- Atributo ReleaseDateMonth Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b2c1e4e1ac12651857b6b62fabd4a05a81f9742c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cb3fae9bb43478c808728b153a591fd2f7890a2585641a146c490d6a0d39ede3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105650148"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995585"
 ---
 # <a name="releasedatemonth-attribute"></a>Atributo ReleaseDateMonth
 
-El atributo **ReleaseDateMonth** es la parte del mes de la fecha de la versión original del elemento.
+El **atributo ReleaseDateMonth** es la parte del mes de la fecha de la versión original del elemento.
 
 ## <a name="applies-to"></a>Se aplica a
 
@@ -29,11 +29,11 @@ El atributo **ReleaseDateMonth** es la parte del mes de la fecha de la versión 
 -   [Pistas de CD](cd-track-attributes.md)
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo solo se almacena en la base de datos (o caché) de la biblioteca.
+Este atributo solo se almacena en la base de datos de biblioteca (o caché).
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,7 +49,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: El método IsUsingDefaultSource determina si el representador usa la ventana de código fuente predeterminada.
+description: El método IsUsingDefaultSource determina si el representador usa la ventana de origen predeterminada.
 ms.assetid: f68d47e7-6602-4321-8e9e-373d354077a1
-title: Método CBaseControlVideo. IsUsingDefaultSource (Ctlutil. h)
+title: Método CBaseControlVideo.IsUsingDefaultSource (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 94768cb098183654b7a0fa9464221989b407d880
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dce06ffa85b3736eca17f1ecb8303a41afb142fcc8b0d369e1f264a0cf47b2d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661371"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955214"
 ---
-# <a name="cbasecontrolvideoisusingdefaultsource-method"></a>CBaseControlVideo. IsUsingDefaultSource, método
+# <a name="cbasecontrolvideoisusingdefaultsource-method"></a>Método CBaseControlVideo.IsUsingDefaultSource
 
-El `IsUsingDefaultSource` método determina si el representador usa la ventana de código fuente predeterminada.
+El `IsUsingDefaultSource` método determina si el representador usa la ventana de origen predeterminada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ OK si el representador usa el origen predeterminado; de lo contrario, devuelve s \_ false.
+Devuelve S \_ OK si el representador usa el origen predeterminado; de lo contrario, devuelve S \_ FALSE.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve S \_ OK si el representador usa el origen predeterminado; de lo contrar
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve S \_ OK si el representador usa el origen predeterminado; de lo contrar
 
 <dl> <dt>
 
-[**Clase CBaseControlVideo**](cbasecontrolvideo.md)
+[**CBaseControlVideo (clase)**](cbasecontrolvideo.md)
 </dt> </dl>
 
  

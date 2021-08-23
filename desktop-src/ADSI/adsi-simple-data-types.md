@@ -1,6 +1,6 @@
 ---
-title: Tipos de datos simples de ADSI (iAds. h)
-description: Active Directory interfaces de servicio (ADSI) define y usa los siguientes tipos de datos simples.
+title: Tipos de datos simples adsi (Iads.h)
+description: Active Directory Interfaces de servicio (ADSI) define y usa los siguientes tipos de datos simples.
 ms.assetid: 0bd34f13-269f-4f5d-8a18-74577522e402
 ms.tgt_platform: multiple
 keywords:
@@ -17,16 +17,16 @@ keywords:
 - ADS_UTC_TIME
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5530fda2ca1f4fe967eaf376b668a0bedc29c4b6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 422fc0e20195e576f3ade8b39948992d61a376b58fd22f399ca1009db79cbdb0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079010"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119023703"
 ---
-# <a name="adsi-simple-data-types"></a>Tipos de datos simples de ADSI
+# <a name="adsi-simple-data-types"></a>Tipos de datos simples adsi
 
-Active Directory interfaces de servicio (ADSI) define y usa los siguientes tipos de datos simples.
+Active Directory Interfaces de servicio (ADSI) define y usa los siguientes tipos de datos simples.
 
 
 ```C++
@@ -47,86 +47,86 @@ typedef SYSTEMTIME ADS_UTC_TIME, *PADS_UTC_TIME;
 
 <dl> <dt>
 
-**ADS \_ booleano**
+**ADS \_ BOOLEAN**
 </dt> <dd>
 
 DWORD
 
 </dd> <dt>
 
-**\_ \_ cadena exacta de caso de ADS \_**
+**CADENA \_ EXACTA DE \_ MAYÚSCULAS Y \_ MINÚSCULAS DE ANUNCIOS**
 </dt> <dd>
 
 LPWSTR
 
 </dd> <dt>
 
-**caso de ADS \_ \_ omitir \_ cadena**
+**CADENA DE \_ OMITIR \_ MAYÚSCULAS Y MINÚSCULAS DE \_ ADS**
 </dt> <dd>
 
 LPWSTR
 
 </dd> <dt>
 
-**\_cadena DN de ADS \_**
+**ADS \_ DN \_ STRING**
 </dt> <dd>
 
 LPWSTR
 
 </dd> <dt>
 
-**entero de ADS \_**
+**ADS \_ INTEGER**
 </dt> <dd>
 
 DWORD
 
 </dd> <dt>
 
-**\_entero grande de ADS \_**
+**ADS \_ LARGE \_ INTEGER**
 </dt> <dd>
 
-[**\_entero grande**](/windows/win32/api/winnt/ns-winnt-large_integer-r1)
+[**ENTERO \_ GRANDE**](/windows/win32/api/winnt/ns-winnt-large_integer-r1)
 
 </dd> <dt>
 
-**\_cadena numérica de ADS \_**
-</dt> <dd>
-
-LPWSTR
-
-</dd> <dt>
-
-**\_clase de objeto ADS \_**
+**CADENA \_ NUMÉRICA DE \_ ADS**
 </dt> <dd>
 
 LPWSTR
 
 </dd> <dt>
 
-**\_cadena imprimible de ADS \_**
+**ADS \_ (CLASE DE \_ OBJETO)**
 </dt> <dd>
 
 LPWSTR
 
 </dd> <dt>
 
-**\_identificador de búsqueda de ADS \_**
+**CADENA \_ IMPRIMIBLE DE \_ ANUNCIOS**
+</dt> <dd>
+
+LPWSTR
+
+</dd> <dt>
+
+**IDENTIFICADOR DE \_ BÚSQUEDA DE \_ ADS**
 </dt> <dd>
 
 HANDLE
 
 </dd> <dt>
 
-**\_hora UTC de ADS \_**
+**HORA \_ UTC de \_ ADS**
 </dt> <dd>
 
 [**SYSTEMTIME**](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando ADSI Lee un atributo que se ha definido como un **entero** en el esquema LDAP, siempre controlará el entero como un valor de 32 bits y puede truncar los datos. Esto solo es un problema para los servidores LDAP que permiten valores enteros de tamaño arbitrario. Si el atributo es un atributo personalizado que se define extendiendo el esquema, este problema se puede evitar definiendo el atributo personalizado como una cadena.
+Cuando ADSI lee un atributo que se ha definido como **INTEGER** en el esquema LDAP, siempre controlará el entero como un valor de 32 bits y puede truncar los datos. Esto solo es un problema para los servidores LDAP que permiten valores enteros de tamaño arbitrario. Si el atributo es un atributo personalizado definido mediante la extensión del esquema, este problema se puede evitar definiendo el atributo personalizado como una cadena.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -136,7 +136,7 @@ Cuando ADSI Lee un atributo que se ha definido como un **entero** en el esquema 
 |-------------------------------------|-----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                          |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                    |
-| Encabezado<br/>                   | <dl> <dt>IAds. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Iads.h</dt> </dl> |
 
 
 

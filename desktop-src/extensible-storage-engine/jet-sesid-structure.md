@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: estructura de JET_SESID'
-title: Estructura de JET_SESID
+description: 'Más información sobre: JET_SESID estructura'
+title: JET_SESID estructura
 TOCTitle: JET_SESID structure
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_SESID
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_sesid(v=EXCHG.10)
@@ -24,21 +24,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f547425f40b4336213ef69abe4bba07ee1baa513
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 704d4dc763bb886d2c09e0aa6e6c942f0c171dcf03041e3b35db5ac781863d68
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686629"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118979425"
 ---
-# <a name="jet_sesid-structure"></a>Estructura de JET_SESID
+# <a name="jet_sesid-structure"></a>JET_SESID estructura
 
-Un JET_SESID contiene un identificador de la sesión que se va a usar para las llamadas a JET API-.
+Un JET_SESID contiene un identificador para la sesión que se usará para las llamadas a JET APIr-.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -57,10 +57,10 @@ public struct JET_SESID : IEquatable<JET_SESID>,
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de JET_SESID](./jet-sesid-members.md)
+[JET_SESID miembros](./jet-sesid-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

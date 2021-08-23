@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXSHEvalDirectionalLight (D3DX10.h): evalúa una luz direccional y devuelve datos esféricos esféricos (SH).'
+description: 'Función D3DXSHEvalDirectionalLight (D3DX10.h): evalúa una luz direccional y devuelve datos esféricos armónicos esféricos (SH).'
 ms.assetid: b5c657f5-d291-4e53-908c-670b29a1888a
 title: Función D3DXSHEvalDirectionalLight (D3DX10.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 551dad8081af2b0138be4758682d5a660f621141
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7fb50ac274455c67da00d73f91319c0fa17ae85c46f74f4ef605af33e0085ddd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108603"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990895"
 ---
 # <a name="d3dxshevaldirectionallight-function-d3dx10h"></a>Función D3DXSHEvalDirectionalLight (D3DX10.h)
 
-Evalúa una luz direccional y devuelve datos esféricos esféricos (SH).
+Evalúa una luz direccional y devuelve datos esféricos armónicos esféricos (SH).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ HRESULT D3DXSHEvalDirectionalLight(
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Orden de la evaluación de SH. Debe estar en el intervalo de D3DXSH \_ MINORDER a D3DXSH \_ MAXORDER, ambos inclusive. La evaluación genera coeficientes order-to-order. El grado de la evaluación es Order - 1.
+Orden de la evaluación de SH. Debe estar en el intervalo de D3DXSH \_ MINORDER a D3DXSH \_ MAXORDER, ambos incluidos. La evaluación genera coeficientes order-to-order. El grado de la evaluación es Order - 1.
 
 </dd> <dt>
 
@@ -61,7 +61,7 @@ Orden de la evaluación de SH. Debe estar en el intervalo de D3DXSH \_ MINORDER 
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntero al vector de dirección del eje del hemisferio (x, y, z) en el que se evalúan las funciones de base sh. Vea la sección Comentarios.
+Puntero al vector de dirección del eje (x, y, z) en el que se evaluarán las funciones de base SH. Vea la sección Comentarios.
 
 </dd> <dt>
 
@@ -148,7 +148,7 @@ Las ecuaciones siguientes muestran la relación entre las coordenadas cartesiana
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

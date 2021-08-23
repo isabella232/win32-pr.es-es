@@ -1,17 +1,17 @@
 ---
-title: Modelo de sombreador HLSL 6.0
+title: Modelo de sombreador HLSL 6.0
 description: Describe los intrínsecos de la operación de onda agregados al modelo de sombreador HLSL 6.0.
 ms.assetid: BF968CD3-AC67-48DB-B93F-EF54B680106F
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c7e55661e3f91125597c8c7842a1be16129cefe0
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 10f0f06050c4c387b8e50c1c0cfb39dc5689d45d0e31bd7df5a81f45c63815a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107995472"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986545"
 ---
-# <a name="hlsl-shader-model-60"></a>Modelo de sombreador HLSL 6.0
+# <a name="hlsl-shader-model-60"></a>Modelo de sombreador HLSL 6.0
 
 Describe los intrínsecos de la operación de onda agregados al modelo de sombreador HLSL 6.0.
 
@@ -27,13 +27,13 @@ Describe los intrínsecos de la operación de onda agregados al modelo de sombre
 - [Funcionalidad de hardware](#hardware-capability)
 - [Temas relacionados](#related-topics)
 
-## <a name="shader-model-60"></a>Shader Model 6.0
+## <a name="shader-model-60"></a>Modelo de sombreador 6.0
 
-Para los modelos de sombreador anteriores, la programación HLSL expone solo un único subproceso de ejecución. Se proporcionan nuevas operaciones de nivel de onda, a partir del modelo 6.0, para aprovechar explícitamente el paralelismo de las GPU actuales: muchos subprocesos pueden ejecutarse en el mismo núcleo simultáneamente. Por ejemplo, los intrínsecos del modelo 6.0 permiten la eliminación de construcciones de barrera cuando el ámbito de sincronización está dentro del ancho del procesador SIMD o algún otro conjunto de subprocesos que se sabe que son atómicos entre sí.
+Para los modelos de sombreador anteriores, la programación HLSL solo expone un único subproceso de ejecución. Se proporcionan nuevas operaciones de nivel de onda, a partir del modelo 6.0, para aprovechar explícitamente el paralelismo de las GPU actuales: muchos subprocesos se pueden ejecutar en lockstep en el mismo núcleo simultáneamente. Por ejemplo, los intrínsecos del modelo 6.0 permiten la eliminación de construcciones de barrera cuando el ámbito de sincronización está dentro del ancho del procesador SIMD o algún otro conjunto de subprocesos que se sabe que son atómicos entre sí.
 
-Entre los posibles casos de uso se incluyen: compactación de flujos, reducciones, transponer bloques, ordenación bitónica o transformaciones rápidas de Fourier (FFT), binning, desduplicación de flujos y escenarios similares.
+Entre los posibles casos de uso se incluyen: compactación de flujos, reducciones, transponer bloques, ordenación bitónica o transformaciones rápidas de Fourier (FFT), binning, desduplicación de secuencias y escenarios similares.
 
-La mayoría de los intrínsecos aparecen en sombreadores de píxeles y sombreadores de proceso, aunque hay algunas excepciones (anotadas para cada función). Las funciones se han agregado a los requisitos de Nivel de característica 12.0 de DirectX, en el nivel de API 12.
+La mayoría de los intrínsecos aparecen en sombreadores de píxeles y sombreadores de proceso, aunque hay algunas excepciones (anotadas para cada función). Las funciones se han agregado a los requisitos del nivel de característica 12.0 de DirectX, en el nivel de API 12.
 
 El parámetro y el valor devuelto de estas funciones implican el tipo de la expresión; los tipos admitidos son los de la lista siguiente que también están presentes en el modelo de sombreador de destino para *<type>* la aplicación: 
 
@@ -52,12 +52,12 @@ Algunas operaciones (como los operadores bit a bit) solo admiten los tipos enter
 
 | **Término** | **Definición** |
 |-|-|
-| Carril | Un único subproceso de ejecución. Los modelos de sombreador anteriores a la versión 6.0 exponen solo uno de ellos en el nivel de lenguaje, dejando la expansión al procesamiento SIMD paralelo completamente hasta la implementación. |
-| Wave | Conjunto de pistas (subprocesos) ejecutadas simultáneamente en el procesador. No se requiere ninguna barrera explícita para garantizar que se ejecuten en paralelo. Entre los conceptos similares se incluyen "warp" y "wavefront". |
-| Inactive Lane | Un camino que no se ejecuta, por ejemplo, debido al flujo de control, o trabajo insuficiente para rellenar el tamaño mínimo de la onda. |
-| Active Lane | Un camino para el que se está realizando la ejecución. En los sombreadores de píxeles, puede incluir cualquier calle de píxel del asistente. |
-| cuádruple | Un conjunto de 4 calles adyacentes correspondientes a píxeles organizados en un cuadrado de 2x2. Se usan para calcular degradados mediante la diferenciación en x o y. Una onda puede estar formada por varios cuadrántiplo. Todos los píxeles de un quad activo se ejecutan (y pueden ser "Active Lanes"), pero los que no producen resultados visibles se denominan "Helper Lanes". |
-| Helper Lane | Un camino que se ejecuta únicamente con el fin de degradados en los quads del sombreador de píxeles. La salida de este tipo de ruta se descartará y, por tanto, no se representará en la superficie de destino. |
+| Carril | Un único subproceso de ejecución. Los modelos de sombreador anteriores a la versión 6.0 exponen solo uno de ellos en el nivel de lenguaje, lo que deja la expansión al procesamiento SIMD paralelo completamente hasta la implementación. |
+| Wave | Conjunto de pistas (subprocesos) ejecutadas simultáneamente en el procesador. No se requieren barreras explícitas para garantizar que se ejecutan en paralelo. Entre los conceptos similares se incluyen "warp" y "wavefront". |
+| Inactive Lane | Un camino que no se ejecuta, por ejemplo, debido al flujo de control o al trabajo insuficiente para rellenar el tamaño mínimo de la onda. |
+| Active Lane | Un camino para el que se está realizando la ejecución. En los sombreadores de píxeles, puede incluir cualquier calle de píxeles auxiliar. |
+| cuádruple | Conjunto de 4 calles adyacentes correspondientes a píxeles organizados en un cuadrado de 2x2. Se usan para calcular degradados mediante la diferenciación en x o y. Una onda puede estar formada por varios cuadrántipos. Todos los píxeles de un cuadránxel activo se ejecutan (y pueden ser "Active Lanes"), pero los que no producen resultados visibles se denominan "Helper Lanes". |
+| Helper Lane | Un camino que se ejecuta únicamente con el fin de degradados en los cuatro cuadrados del sombreador de píxeles. La salida de este tipo de calle se descartará y, por tanto, no se representará en la superficie de destino. |
 
 ## <a name="shading-language-intrinsics"></a>Funciones intrínsecas del lenguaje de sombreado
 
@@ -69,13 +69,13 @@ Intrínsecos para consultar una sola onda.
 
 | **Intrinsic** | **Descripción** | **Sombreador de píxeles** | **Sombreador de proceso** |
 |-|-|-|-|
-| [**WaveGetLaneCount**](wavegetlanecount.md) | Devuelve el número de pistas en la onda actual. | \* | \* |
-| [**WaveGetLaneIndex**](wavegetlaneindex.md) | Devuelve el índice del carril actual dentro de la onda actual. | \* | \* |
-| [**WaveIsFirstLane**](waveisfirstlane.md) | Devuelve true solo para el carril activo en la onda actual con el índice más pequeño. | \* | \* |
+| [**WaveGetLaneCount**](wavegetlanecount.md) | Devuelve el número de vías de la onda actual. | \* | \* |
+| [**WaveGetLaneIndex**](wavegetlaneindex.md) | Devuelve el índice del camino actual dentro de la onda actual. | \* | \* |
+| [**WaveIsFirstLane**](waveisfirstlane.md) | Devuelve true solo para el camino activo en la onda actual con el índice más pequeño. | \* | \* |
 
 ### <a name="wave-vote"></a>Wave Vote
 
-Este conjunto de intrínsecos compara los valores de los subprocesos actualmente activos desde la onda actual.
+Este conjunto de intrínsecos compara valores entre subprocesos actualmente activos desde la onda actual.
 
 | **Intrinsic** | **Descripción** | **Sombreador de píxeles** | **Sombreador de proceso** |
 |-|-|-|-|
@@ -101,8 +101,8 @@ Estos intrínsecos calculan la operación especificada en todos los calles activ
 | [**WaveActiveAllEqual**](waveactiveallequal.md) | Devuelve true si la expresión es la misma para todos los carriles activos de la ola actual (y, por tanto, uniforme en ella). | \* | \* |
 | [**WaveActiveBitAnd**](waveallbitand.md) | Devuelve el and bit a bit de todos los valores de la expresión en todos los carriles activos de la onda actual y replica el resultado en todos los carriles de la onda. | \* | \* |
 | [**WaveActiveBitOr**](waveallbitor.md) | Devuelve el OR bit a bit de todos los valores de la expresión en todos los carriles activos de la onda actual y replica el resultado en todos los carriles de la onda. | \* | \* |
-| [**WaveActiveBitXor**](waveallbitxor.md) | Devuelve el OR exclusivo bit a bit de todos los valores de la expresión en todos los carriles activos de la ola actual y replica el resultado en todos los carriles de la ola. | \* | \* |
-| [**WaveActiveCountBits**](waveactivecountbits.md) | Cuenta el número de variables booleanas que se evalúan como true en todos los carriles activos de la ola actual y replica el resultado en todos los carriles de la ola. | \* | \* |
+| [**WaveActiveBitXor**](waveallbitxor.md) | Devuelve el OR exclusivo bit a bit de todos los valores de la expresión en todos los carriles activos de la ola actual y replica el resultado en todos los carriles de la onda. | \* | \* |
+| [**WaveActiveCountBits**](waveactivecountbits.md) | Cuenta el número de variables booleanas que se evalúan como true en todos los carriles activos de la ola actual y replica el resultado en todos los carriles de la onda. | \* | \* |
 | [**WaveActiveMax**](waveallmax.md) | Calcula el valor máximo de la expresión en todos los carriles activos de la ola actual y replica el resultado en todos los carriles de la ola. | \* | \* |
 | [**WaveActiveMin**](waveallmin.md) | Calcula el valor mínimo de la expresión en todos los carriles activos de la onda actual y replica el resultado en todos los carriles de la onda. | \* | \* |
 | [**WaveActiveProduct**](waveallproduct.md) | Multiplica los valores de la expresión entre todos los carriles activos de la ola actual y replica el resultado en todos los carriles de la ola. | \* | \* |
@@ -114,13 +114,13 @@ Estos intrínsecos aplican la operación a cada calle y dejan cada resultado par
 
 | **Intrinsic** | **Descripción** | **Sombreador de píxeles** | **Sombreador de proceso** |
 |-|-|-|-|
-| [**WavePrefixCountBits**](waveprefixcountbytes.md) | Devuelve la suma de todas las variables booleanas especificadas establecidas en true en todos los canales activos con índices menores que el actual. | \* | \* |
-| [**WavePrefixSum**](waveprefixsum.md) | Devuelve la suma de todos los valores de los canales activos con índices más pequeños que este. | \* | \* |
-| [**WavePrefixProduct**](waveprefixproduct.md) | Devuelve el producto de todos los valores de los calles anteriores a esta de la onda especificada. | \* | \* |
+| [**WavePrefixCountBits**](waveprefixcountbytes.md) | Devuelve la suma de todas las variables booleanas especificadas establecidas en true en todos los carriles activos con índices menores que el actual. | \* | \* |
+| [**WavePrefixSum**](waveprefixsum.md) | Devuelve la suma de todos los valores de los carriles activos con índices más pequeños que este. | \* | \* |
+| [**WavePrefixProduct**](waveprefixproduct.md) | Devuelve el producto de todos los valores de los carriles anteriores a esta de la ola especificada. | \* | \* |
 
 ### <a name="quad-wide-shuffle-operations"></a>Operaciones de orden aleatorio de cuatro anchos
 
-Estos intrínsecos realizan operaciones de intercambio en los valores de una onda que se sabe que contienen cuadrándidos de sombreador de píxeles, tal y como se define aquí. Los índices de los píxeles del cuadrándice se definen en línea de examen o en orden de lectura, donde las coordenadas dentro de un cuadrándido son:
+Estos intrínsecos realizan operaciones de intercambio en los valores de una ola que se sabe que contienen cuádros del sombreador de píxeles, tal como se define aquí. Los índices de los píxeles en el cuadrándice se definen en línea de examen o en orden de lectura, donde las coordenadas dentro de un quad son:
 
 +---------> X 
 
@@ -133,11 +133,11 @@ v
 Y 
 
 
-Estas rutinas funcionan en sombreadores de proceso o sombreadores de píxeles. En los sombreadores de proceso funcionan en cuadrándulas definidas como grupos divididos uniformemente de 4 dentro de una onda SIMD. En los sombreadores de píxeles se deben usar en las ondas capturadas por WaveQuadLanes; de lo contrario, los resultados son indefinidos.
+Estas rutinas funcionan en sombreadores de proceso o sombreadores de píxeles. En los sombreadores de proceso funcionan en quads definidos como grupos divididos uniformemente de 4 dentro de una onda SIMD. En los sombreadores de píxeles se deben usar en las ondas capturadas por WaveQuadLanes; de lo contrario, los resultados no están definidos.
 
 | **Intrinsic** | **Descripción** | **Sombreador de píxeles** | **Sombreador de proceso** |
 |-|-|-|-|
-| [**QuadReadLaneAt**](quadreadlaneat.md) | Devuelve el valor de origen especificado leído desde el lado del cuadrándido actual identificado por quadLaneID \[ 0...3, que debe \] ser uniforme en el cuadrántico. | \* | |
+| [**QuadReadLaneAt**](quadreadlaneat.md) | Devuelve el valor de origen especificado leído del lado del cuadrándido actual identificado por quadLaneID \[ 0..3, que debe \] ser uniforme en el cuadrándido. | \* | |
 | [**QuadReadAcrossDiagonal**](quadreadacrossdiagonal.md) | Devuelve el valor local especificado que se lee desde el carril diagonalmente opuesto de este cuadrándido. | \* | |
 | [**QuadReadAcrossX**](quadswapx.md) | Devuelve el valor de origen especificado leído desde el otro carril de este quad en la dirección X. | \* | |
 | [**QuadReadAcrossY**](quadswapy.md) | Devuelve el valor de origen especificado leído desde el otro carril de este quad en la dirección Y. | \* | |

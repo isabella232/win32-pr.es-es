@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_SETELLIPSISMODE (RichEdit. h)
+title: EM_SETELLIPSISMODE mensaje (Richedit.h)
 description: Este mensaje establece el modo de puntos suspensivos actual.
 ms.assetid: C77263E8-424B-4EDE-ACBF-BA85248FC31F
 keywords:
-- EM_SETELLIPSISMODE controles de mensajes de Windows
+- EM_SETELLIPSISMODE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 81ae3b51dc80ed11d71f4af9c292657b2cf16728
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3445172ea0a4ed4ef49e9a131db8d4357faaa5f7fef553169b7a8e1e795fd01c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079662"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019483"
 ---
-# <a name="em_setellipsismode-message"></a>\_Mensaje SETELLIPSISMODE em
+# <a name="em_setellipsismode-message"></a>Mensaje \_ EM SETELLIPSISMODE
 
-Este mensaje establece el modo de puntos suspensivos actual. Cuando está habilitada, se muestra un botón de puntos suspensivos () para el texto que no cabe en la ventana de presentación. Los puntos suspensivos solo se usan cuando el control no está activo. Cuando está activo, las barras de desplazamiento se utilizan para mostrar el texto que no cabe en la ventana de presentación.
+Este mensaje establece el modo de puntos suspensivos actual. Cuando se habilita, se muestran los puntos suspensivos ( ) para el texto que no cabe en la ventana de presentación. Los puntos suspensivos solo se usan cuando el control no está activo. Cuando está activa, las barras de desplazamiento se usan para mostrar texto que no cabe en la ventana de presentación.
 
 
 ```C++
@@ -39,34 +39,34 @@ Este mensaje establece el modo de puntos suspensivos actual. Cuando está habili
 *wParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-DWORD que recibe uno de los valores siguientes.
+DWORD que recibe uno de los siguientes valores.
 
 
 
 | Value                                                                                                                                                         | Significado                                        |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| <span id="ELLIPSIS_NONE"></span><span id="ellipsis_none"></span><dl> <dt>**puntos suspensivos \_ ninguno**</dt> </dl> | No se usa ningún botón de puntos suspensivos.<br/>                |
-| <span id="ELLIPSIS_END"></span><span id="ellipsis_end"></span><dl> <dt>**fin de los puntos suspensivos \_**</dt> </dl>    | Puntos suspensivos al final (interrupción forzada).<br/> |
-| <span id="ELLIPSIS_WORD"></span><span id="ellipsis_word"></span><dl> <dt>**Palabra de puntos suspensivos \_**</dt> </dl> | Puntos suspensivos al final (salto de palabra).<br/>   |
+| <span id="ELLIPSIS_NONE"></span><span id="ellipsis_none"></span><dl> <dt>**PUNTOS \_ SUSPENSIVOS NINGUNO**</dt> </dl> | No se usan puntos suspensivos.<br/>                |
+| <span id="ELLIPSIS_END"></span><span id="ellipsis_end"></span><dl> <dt>**FIN DE PUNTOS \_ SUSPENSIVOS**</dt> </dl>    | Puntos suspensivos al final (interrupción forzada).<br/> |
+| <span id="ELLIPSIS_WORD"></span><span id="ellipsis_word"></span><dl> <dt>**PALABRA DE PUNTOS \_ SUSPENSIVOS**</dt> </dl> | Puntos suspensivos al final (salto de palabra).<br/>   |
 
 
 
  
 
-Los bits de estos valores caben en la **\_ máscara de puntos suspensivos**.
+Todos los bits de estos valores caben en **ELLIPSIS \_ MASK**.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si wParam es 0 y lParam es uno de los valores de la tabla anterior, el valor devuelto es igual a TRUE. de lo contrario, el valor devuelto es igual a FALSE.
+Si wparam es 0 y lparam es uno de los valores de la tabla anterior, el valor devuelto es TRUE; De lo contrario, el valor devuelto es FALSE.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,9 +74,9 @@ Si wParam es 0 y lParam es uno de los valores de la tabla anterior, el valor dev
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -84,10 +84,10 @@ Si wParam es 0 y lParam es uno de los valores de la tabla anterior, el valor dev
 
 <dl> <dt>
 
-[**\_GETELLIPSISMODE em**](em-getellipsismode.md)
+[**EM \_ GETPSIPSISMODE**](em-getellipsismode.md)
 </dt> <dt>
 
-[**\_GETELLIPSISSTATE em**](em-getellipsisstate.md)
+[**EM \_ GETVELOPSISSTATE**](em-getellipsisstate.md)
 </dt> </dl>
 
  

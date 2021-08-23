@@ -1,7 +1,7 @@
 ---
-description: Recupera el estilo de color del texto del estilo especificado.
+description: Recupera el estilo de color de texto del estilo especificado.
 ms.assetid: 242c37af-5b39-4b18-9c8f-4e692f41c497
-title: PColorStyleTextFromIMEStyle función)
+title: Función PColorStyleTextFromIMEStyle
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Imeshare.dll
-ms.openlocfilehash: 791fdaca4a93b0a44099306b8ae14ae4d5cb11cc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 58fb2c2830f016080ac27c48b188bbd1948406a6cb7516b3279c411c87d9c155
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649960"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955724"
 ---
-# <a name="pcolorstyletextfromimestyle-function"></a>PColorStyleTextFromIMEStyle función)
+# <a name="pcolorstyletextfromimestyle-function"></a>Función PColorStyleTextFromIMEStyle
 
-Recupera el estilo de color del texto del estilo especificado.
+Recupera el estilo de color de texto del estilo especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,22 +39,22 @@ const IMECOLORSTY* __cdecl PColorStyleTextFromIMEStyle(
 
 <dl> <dt>
 
-*pimestyle* \[ de\]
+*pimestyle* \[ En\]
 </dt> <dd>
 
-Una estructura **IMESTYLE** devuelta por la función [**PIMEStyleFromAttr**](pimestylefromattr.md) .
+Estructura **IMESTYLE** devuelta desde [**la función PIMEStyleFromAttr.**](pimestylefromattr.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Puntero a una estructura **IMECOLORSTY** que representa el estilo de color del texto.
+Puntero a una **estructura IMECOLORSTY** que representa el estilo de color del texto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función no tiene asociado ningún archivo de encabezado o biblioteca de importación. debe llamarlo mediante las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Esta función no tiene asociada la biblioteca de importación ni el archivo de encabezado; Debe llamarlo mediante las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**y GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
-La estructura **IMECOLORSTY** se define de la siguiente manera:
+La **estructura IMECOLORSTY** se define de la siguiente manera:
 
 ``` syntax
 typedef struct {

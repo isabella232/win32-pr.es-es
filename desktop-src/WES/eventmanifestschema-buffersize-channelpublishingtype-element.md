@@ -1,9 +1,9 @@
 ---
-title: bufferSize (elemento ChannelPublishingType)
-description: Contiene la cantidad de memoria, en kilobytes, asignada para los búferes de la sesión.
+title: elemento bufferSize (ChannelPublishingType)
+description: Contiene la cantidad de memoria, en kilobytes, asignada para los búferes de sesión.
 ms.assetid: 05f38251-648a-48a2-a0f6-bac5ace7f02b
 keywords:
-- elemento bufferSize EventLog
+- Elemento bufferSize EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: af609db6fb81417e81b2981ed351dc8b2954371f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 42f28b81d0e5fb2e9dc79938f26d7e2e22f3b577d7aa9ed4b231c593de7c809e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119056033"
 ---
-# <a name="buffersize-channelpublishingtype-element"></a>bufferSize (elemento ChannelPublishingType)
+# <a name="buffersize-channelpublishingtype-element"></a>elemento bufferSize (ChannelPublishingType)
 
-Contiene la cantidad de memoria, en kilobytes, asignada para los búferes de la sesión.
+Contiene la cantidad de memoria, en kilobytes, asignada para los búferes de sesión.
 
 ``` syntax
 <xs:element name="bufferSize"
@@ -30,16 +30,16 @@ Contiene la cantidad de memoria, en kilobytes, asignada para los búferes de la 
  />
 ```
 
-El elemento **buffersize** se define mediante el tipo complejo [**ChannelPublishingType**](eventmanifestschema-channelpublishingtype-complextype.md) .
+El tipo complejo [**ChannelPublishingType**](eventmanifestschema-channelpublishingtype-complextype.md) define el elemento **bufferSize.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

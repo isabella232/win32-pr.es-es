@@ -1,5 +1,5 @@
 ---
-title: Método ID3DX11EffectPass GetHullShaderDesc (D3dx11effect. h)
+title: Método ID3DX11EffectPass GetHullShaderDesc (D3dx11effect.h)
 description: Obtiene la descripción del sombreador de casco.
 ms.assetid: 1a683e61-da9a-4d78-8073-a6104625852b
 keywords:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2fb35ddd251b6f25163b5ee4ac15ed448dc7884
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 609a41a71dad2918665b28bd600b89fa699b05a712aa776ea91fb438333c4f7e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103821327"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119046013"
 ---
-# <a name="id3dx11effectpassgethullshaderdesc-method"></a>ID3DX11EffectPass:: GetHullShaderDesc (método)
+# <a name="id3dx11effectpassgethullshaderdesc-method"></a>Método ID3DX11EffectPass::GetHullShaderDesc
 
 Obtiene la descripción del sombreador de casco.
 
@@ -46,9 +46,9 @@ HRESULT GetHullShaderDesc(
 *pDesc* 
 </dt> <dd>
 
-Tipo: **[ **D3DX11 \_ Pass \_ Shader \_ DESC**](d3dx11-pass-shader-desc.md)\***
+Tipo: **[ **D3DX11 \_ PASS \_ SHADER \_ DESC**](d3dx11-pass-shader-desc.md)\***
 
-Un puntero a una descripción del sombreador de casco (vea [**D3DX11 \_ Pass \_ Shader \_ DESC**](d3dx11-pass-shader-desc.md)).
+Puntero a una descripción del sombreador de casco (vea [**D3DX11 \_ PASS \_ SHADER \_ DESC).**](d3dx11-pass-shader-desc.md)
 
 </dd> </dl>
 
@@ -56,12 +56,12 @@ Un puntero a una descripción del sombreador de casco (vea [**D3DX11 \_ Pass \_ 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -71,8 +71,8 @@ Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphi
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de efectos 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 

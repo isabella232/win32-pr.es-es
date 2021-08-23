@@ -4,12 +4,12 @@ ms.assetid: 78ff4433-f0b5-4bbb-b2c0-bd389fbc31ce
 title: D3DENUM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 829d03bf596c24bfb6b3443ace859629f723a664
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: 28f186b0d8f8d507192aa0ef6446a31dc5008dff917252ee301343152fe58f84
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343268"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988935"
 ---
 # <a name="d3denum"></a>D3DENUM
 
@@ -26,13 +26,13 @@ Marca de funcionalidad del controlador.
 <tbody>
 <tr class="odd">
 <td>#Definir</td>
-<td>Valor</td>
+<td>Value</td>
 <td>Descripción</td>
 </tr>
 <tr class="even">
 <td>D3DENUM_WHQL_LEVEL</td>
 <td>0x00000002L</td>
-<td>Pruebas Laboratorios de calidad de hardware de Windows (WHQL) controladores de Microsoft Laboratorios de calidad de hardware de Windows (WHQL) (WHQL). Se trata de una prueba que consume mucho tiempo y que requiere una penalización de tiempo de un segundo o dos segundos. El miembro WHQLLevel de usa esta <a href="d3dadapter-identifier9.md"><strong>constante D3DADAPTER_IDENTIFIER9</strong></a>.<br/> 
+<td>Pruebas Windows controladores de Microsoft Windows Hardware Quality Labs (WHQL). Se trata de una prueba lenta que requiere una penalización de tiempo de un segundo o dos segundos. El miembro WHQLLevel de usa esta <a href="d3dadapter-identifier9.md"><strong>constante D3DADAPTER_IDENTIFIER9</strong></a>.<br/> 
 <table>
 <tbody>
 <tr class="odd">

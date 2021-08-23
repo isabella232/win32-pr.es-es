@@ -4,20 +4,20 @@ description: Control de errores desconocidos
 ms.assetid: d6a4cc60-8320-4b67-9f2e-7c4bea6c37fb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d8c3d9e70b89a9a78be62d2940ad8a69ac34c8f7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 38fb0e8aaaef8fc3ff4ae9bb76f76a845c325c4b5a5dc4d409dbd0ab35734ce4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104076285"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119048263"
 ---
 # <a name="handling-unknown-errors"></a>Control de errores desconocidos
 
-Es válido devolver un código de estado solo desde la implementación de un método de interfaz autorizada como devuelto legalmente. Si no se observa esta regla, se invita a la posibilidad de que se produzca un conflicto entre los valores devueltos del código de error y los autorizados por la aplicación. Preste especial atención a este posible problema al propagar los códigos de error de las funciones a las que se llama internamente.
+Es legal devolver un código de estado solo desde la implementación de un método de interfaz autorizado como legalmente recuperable. Si no se observa esta regla, se invita a la posibilidad de conflicto entre los valores de código de error devueltos y los autorizados por la aplicación. Preste especial atención a este posible problema al propagar códigos de error de funciones a las que se llama internamente.
 
-Las aplicaciones que llaman a interfaces deben tratar cualquier código de error devuelto desconocido (en lugar de un código correcto) como sinónimo de E \_ inesperado. La práctica de controlar códigos de error desconocidos es necesaria para los clientes de las interfaces y funciones definidas por COM. Dado que la práctica típica de programación consiste en controlar algunos códigos de error específicos en detalle y tratar el resto de forma genérica, se cumple fácilmente este requisito de administrar los códigos de error inesperados o desconocidos.
+Las aplicaciones que llaman a interfaces deben tratar cualquier código de error devuelto desconocido (en lugar de un código correcto) como sinónimo de E \_ UNEXPECTED. Esta práctica de control de códigos de error desconocidos es necesaria para los clientes de las interfaces y funciones definidas por COM. Dado que la práctica de programación típica es controlar algunos códigos de error específicos en detalle y tratar el resto de forma genérica, este requisito de control de códigos de error inesperados o desconocidos se cumple fácilmente.
 
-Es importante controlar todos los posibles errores al llamar a un método de interfaz. Si no lo hace, la aplicación se bloqueará, se dañarán los datos o se hará vulnerable a las vulnerabilidades de seguridad. En el ejemplo de código siguiente se muestra la forma recomendada de controlar los errores desconocidos:
+Es importante controlar todos los errores posibles al llamar a un método de interfaz. Si no lo hace, la aplicación podría bloquearse, dañar los datos o ser vulnerable a vulnerabilidades de seguridad. En el ejemplo de código siguiente se muestra la manera recomendada de controlar errores desconocidos:
 
 
 ```C++
@@ -48,7 +48,7 @@ switch (GetScode(hr))
 
 
 
-La siguiente comprobación de errores suele usarse con esas rutinas que no devuelven nada especial (que no sea \_ correcto o algún error inesperado):
+La siguiente comprobación de errores se usa a menudo con las rutinas que no devuelven nada especial (aparte de S \_ OK o algún error inesperado):
 
 
 ```C++
@@ -71,9 +71,9 @@ else
 [Control de errores en COM](error-handling-in-com.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

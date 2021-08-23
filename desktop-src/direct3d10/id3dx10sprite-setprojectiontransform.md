@@ -1,7 +1,7 @@
 ---
 description: Establezca la matriz de proyección para todos los sprites.
 ms.assetid: cb4c5546-1a31-40d9-a943-af4fbddcee01
-title: 'ID3DX10Sprite:: SetProjectionTransform (método) (D3DX10. h)'
+title: Método ID3DX10Sprite::SetProjectionTransform (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: c49fb570f87c8c86313e1f4adcf1560fee909433
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 478fb55b500ca8e4bdc3df796ffd60ef3d9ee649e21ec1dd72b19c87a14420c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104548142"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119046883"
 ---
-# <a name="id3dx10spritesetprojectiontransform-method"></a>ID3DX10Sprite:: SetProjectionTransform (método)
+# <a name="id3dx10spritesetprojectiontransform-method"></a>Método ID3DX10Sprite::SetProjectionTransform
 
 Establezca la matriz de proyección para todos los sprites.
 
@@ -40,7 +40,7 @@ HRESULT SetProjectionTransform(
 
 <dl> <dt>
 
-*pProjectionTransform* \[ de\]
+*pProjectionTransform* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
@@ -53,7 +53,7 @@ Matriz de proyección que se va a usar en todos los sprites.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que aparecen en los [códigos de retorno de Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -73,7 +73,7 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 [ID3DX10Sprite](id3dx10sprite.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

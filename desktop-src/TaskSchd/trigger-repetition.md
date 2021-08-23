@@ -1,11 +1,11 @@
 ---
-title: Trigger. repite (propiedad)
-description: Para scripting, obtiene o establece un valor que indica la frecuencia con la que se ejecuta la tarea y cuánto tiempo se repite el patrón de repetición una vez iniciada la tarea.
+title: Propiedad Trigger.Repetition
+description: Para el scripting, obtiene o establece un valor que indica la frecuencia con la que se ejecuta la tarea y cuánto tiempo se repite el patrón de repetición después de iniciar la tarea.
 ms.assetid: f90b935c-8b69-4c82-ac4b-6b049e7b9703
 keywords:
-- Programador de tareas de propiedad de repetición
-- Propiedad repite Programador de tareas, objeto desencadenador
-- Objeto desencadenador Programador de tareas, propiedad repite
+- Propiedad De repetición Programador de tareas
+- Propiedad De repetición Programador de tareas , Desencadenador de objeto
+- Desencadenador de objetos Programador de tareas , propiedad De repetición
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 611c7e42a14de06a8777333a6dc640781943ba06
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 46e14b8dc23b329d9646647fdcc1c5bcb3166c5bf885886a5308c329e186dc51
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119002113"
 ---
-# <a name="triggerrepetition-property"></a>Trigger. repite (propiedad)
+# <a name="triggerrepetition-property"></a>Propiedad Trigger.Repetition
 
-Para scripting, obtiene o establece un valor que indica la frecuencia con la que se ejecuta la tarea y cuánto tiempo se repite el patrón de repetición una vez iniciada la tarea.
+Para el scripting, obtiene o establece un valor que indica la frecuencia con la que se ejecuta la tarea y cuánto tiempo se repite el patrón de repetición después de iniciar la tarea.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -38,11 +38,11 @@ Trigger.Repetition As RepetitionPattern
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Un objeto [**RepetitionPattern**](repetitionpattern.md) que define la frecuencia con que se ejecuta la tarea y cuánto tiempo se repite el patrón de repetición una vez iniciada la tarea.
+Objeto [**RepetitionPattern que**](repetitionpattern.md) define la frecuencia con la que se ejecuta la tarea y cuánto tiempo se repite el patrón de repetición después de iniciar la tarea.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Al leer o escribir su propio XML para una tarea, el patrón de repetición de un desencadenador se especifica en el elemento [**repite**](taskschedulerschema-repetition-triggerbasetype-element.md) del esquema de programador de tareas.
+Al leer o escribir su propio XML para una tarea, el patrón de repetición de un desencadenador se especifica en el elemento [**Repetition**](taskschedulerschema-repetition-triggerbasetype-element.md) del esquema Programador de tareas datos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,9 +50,9 @@ Al leer o escribir su propio XML para una tarea, el patrón de repetición de un
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

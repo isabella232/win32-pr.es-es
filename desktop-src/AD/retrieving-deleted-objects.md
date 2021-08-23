@@ -1,28 +1,28 @@
 ---
-title: Recuperando objetos eliminados
-description: Los objetos eliminados se almacenan en el contenedor de objetos eliminados.
+title: Recuperar objetos eliminados
+description: Los objetos eliminados se almacenan en el contenedor Objetos eliminados.
 ms.assetid: dc9a6466-204b-4a78-b0f3-9c03c13a374b
 ms.tgt_platform: multiple
 keywords:
-- Recuperando objetos eliminados AD
-- objeto AD, recuperar objetos eliminados
-- Active Directory, usar, recuperar objetos eliminados
+- Recuperación de objetos eliminados de AD
+- object AD , recuperando objetos eliminados
+- Active Directory, mediante, recuperar objetos eliminados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 62b2062c747e38bc0b3a9b1b793a102006c11512
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 5b033a992599fecfc372bf578c1bade54867fd8332c3e114103a69264f736b48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104487410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119025093"
 ---
-# <a name="retrieving-deleted-objects"></a>Recuperando objetos eliminados
+# <a name="retrieving-deleted-objects"></a>Recuperar objetos eliminados
 
-Los objetos eliminados se almacenan en el contenedor de objetos eliminados. Normalmente, el contenedor de objetos eliminados no es visible, pero el contenedor de objetos eliminados se puede enlazar a un miembro del grupo de administradores. Se puede enumerar el contenido del contenedor de objetos eliminados y se pueden obtener atributos de objeto eliminados individuales mediante la interfaz [**IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) con la preferencia de búsqueda de **marcadores de \_ \_ exclusión de SEARCHPREF de ADS** .
+Los objetos eliminados se almacenan en el contenedor Objetos eliminados. Normalmente, el contenedor Objetos eliminados no es visible, pero un miembro del grupo de administradores puede enlazar el contenedor Objetos eliminados. Se puede enumerar el contenido del contenedor Objetos eliminados y se pueden obtener atributos de objeto eliminados individuales mediante la interfaz [**IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) con la preferencia de búsqueda **\_ SEARCHPREF \_ TOMBSTONE de ADS.**
 
-El contenedor de objetos eliminados se puede obtener enlazando al **\_ \_ \_ contenedor de objetos eliminados GUID** de GUID conocido definido en ntdsapi. h. Para obtener más información sobre el enlace a GUID conocidos, vea [enlazar a objetos de Well-Known mediante WKGUID](binding-to-well-known-objects-using-wkguid.md).
+El contenedor Objetos eliminados se puede obtener enlazando al GUID conocido **GUID \_ DELETED OBJECTS \_ \_ CONTAINER** definido en Ntdsapi.h. Para obtener más información sobre el enlace a GUID conocidos, vea Enlace a [objetos Well-Known mediante WKGUID.](binding-to-well-known-objects-using-wkguid.md)
 
-Especifique la opción de **\_ \_ enlace rápido de ADS** al enlazar con el contenedor de objetos eliminados. Esto significa que las interfaces ADSI utilizadas para trabajar con un objeto en Active Directory Domain Services, como [**IADs**](/windows/desktop/api/iads/nn-iads-iads) y [**IADsPropertyList**](/windows/desktop/api/iads/nn-iads-iadspropertylist), no se pueden usar en el contenedor de objetos eliminados. Para obtener más información y un ejemplo de código que muestra cómo enlazar con el contenedor de objetos eliminados, consulte la siguiente función de ejemplo de GetDeletedObjectsContainer.
+Especifique la **opción BIND \_ FAST \_ ADS** al enlazar al contenedor Objetos eliminados. Esto significa que las interfaces ADSI usadas para trabajar con un objeto en Active Directory Domain Services, como [**IADs**](/windows/desktop/api/iads/nn-iads-iads) e [**IADsPropertyList,**](/windows/desktop/api/iads/nn-iads-iadspropertylist)no se pueden usar en el contenedor Objetos eliminados. Para obtener más información y un ejemplo de código que muestra cómo enlazar al contenedor Objetos eliminados, vea la función de ejemplo GetDeletedObjectsContainer a continuación.
 
 -   [Enumerar objetos eliminados](#enumerating-deleted-objects)
 -   [Buscar un objeto eliminado específico](#finding-a-specific-deleted-object)
@@ -32,29 +32,29 @@ Especifique la opción de **\_ \_ enlace rápido de ADS** al enlazar con el cont
 
 ## <a name="enumerating-deleted-objects"></a>Enumerar objetos eliminados
 
-La interfaz [**IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) se utiliza para buscar objetos eliminados.
+La [**interfaz IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) se usa para buscar objetos eliminados.
 
 **Para enumerar los objetos eliminados**
 
-1.  Obtenga la interfaz [**IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) para el contenedor de objetos eliminados. Esto se logra enlazando al contenedor de objetos eliminados y solicitando la interfaz **IDirectorySearch** . Para obtener más información y un ejemplo de código que muestra cómo enlazar con el contenedor de objetos eliminados, vea el siguiente ejemplo de la función **GetDeletedObjectsContainer** .
-2.  Establezca la preferencia de búsqueda del **\_ ámbito de \_ búsqueda \_ de ADS SEARCHPREF** en el **ámbito de ADS \_ \_** con el método [**IDirectorySearch:: SetSearchPreference**](/windows/desktop/api/iads/nf-iads-idirectorysearch-setsearchpreference) . También se puede usar la preferencia de **\_ \_ subárbol de ámbito de ADS** , pero el contenedor de objetos eliminados solo es un nivel, por lo que el uso de **\_ \_ subárbol de ámbito de ADS** es redundante.
-3.  Establezca la preferencia de búsqueda de **registros de marcadores de exclusión de ADS \_ \_ SEARCHPREF** en **true**. Esto hace que la búsqueda incluya objetos eliminados.
-4.  Establezca la preferencia de búsqueda **\_ SEARCHPREF de \_ las páginas de anuncios** en un valor menor o igual que 1000. Esto es opcional, pero si no se hace, no se pueden recuperar más de 1000 objetos eliminados.
-5.  Establezca el filtro de búsqueda en la llamada [**IDirectorySearch:: ExecuteSearch**](/windows/desktop/api/iads/nf-iads-idirectorysearch-executesearch) a "(IsDeleted =**true**)". Esto hace que la búsqueda solo recupere objetos con el atributo **IsDeleted** establecido en **true**.
+1.  Obtenga la [**interfaz IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) para el contenedor Objetos eliminados. Esto se logra enlazando al contenedor Objetos eliminados y solicitando la **interfaz IDirectorySearch.** Para obtener más información y un ejemplo de código que muestra cómo enlazar al contenedor Objetos eliminados, vea el siguiente ejemplo de función **GetDeletedObjectsContainer.**
+2.  Establezca la **preferencia \_ de búsqueda SEARCHPREF \_ SEARCH SCOPE \_ de ADS** en ADS SCOPE **\_ \_ ONELEVEL** mediante el [**método IDirectorySearch::SetSearchPreference.**](/windows/desktop/api/iads/nf-iads-idirectorysearch-setsearchpreference) También se puede usar la preferencia **\_ ADS SCOPE \_ SUBTREE,** pero el contenedor Objetos eliminados es solo un nivel, por lo que el uso de **ADS SCOPE \_ \_ SUBTREE** es redundante.
+3.  Establezca la **preferencia \_ de búsqueda SEARCHPREF \_ TOMBSTONE de ADS** en **TRUE.** Esto hace que la búsqueda incluya objetos eliminados.
+4.  Establezca la **preferencia de búsqueda ADS \_ SEARCHPREF \_ PAGESIZE** en un valor menor o igual que 1000. Esto es opcional, pero si no se hace, no se pueden recuperar más de 1000 objetos eliminados.
+5.  Establezca el filtro de búsqueda en la [**llamada a IDirectorySearch::ExecuteSearch**](/windows/desktop/api/iads/nf-iads-idirectorysearch-executesearch) en "(isDeleted=**TRUE**)". Esto hace que la búsqueda solo recupere objetos con el **atributo isDeleted** establecido en **TRUE.**
 
-Para ver un código de ejemplo de código que muestra cómo enumerar los objetos eliminados, vea el siguiente ejemplo de la función **EnumDeletedObjects** .
+Para obtener un código de ejemplo de código que muestra cómo enumerar objetos eliminados, vea el siguiente ejemplo de función **EnumDeletedObjects.**
 
-La búsqueda se puede afinar más agregando al filtro de búsqueda tal y como se muestra en el [dialecto LDAP](/windows/desktop/ADSI/ldap-dialect). Por ejemplo, para buscar todos los objetos eliminados con un nombre que comience por "Juan", el filtro de búsqueda se establecería en "(& (isDeleted =**true**) (CN = Juan \* ))".
+La búsqueda se puede refinar aún más agregando al filtro de búsqueda como se muestra en [dialecto LDAP.](/windows/desktop/ADSI/ldap-dialect) Por ejemplo, para buscar todos los objetos eliminados con un nombre que comience por "Jeff", el filtro de búsqueda se establecería en "(&(isDeleted=**TRUE**)(cn=Jeff \* ))".
 
-Dado que los objetos eliminados tienen la mayoría de sus atributos quitados cuando se eliminan, no es posible enlazar directamente a un objeto eliminado. Se debe especificar la opción de **\_ \_ enlace rápido de ADS** al enlazar con un objeto eliminado. Esto significa que las interfaces ADSI utilizadas para trabajar con un objeto Active Directory Domain Services, como [**IADs**](/windows/desktop/api/iads/nn-iads-iads) y [**IADsPropertyList**](/windows/desktop/api/iads/nn-iads-iadspropertylist), no se pueden usar en un contenedor de objetos eliminado.
+Dado que los objetos eliminados quitan la mayoría de sus atributos cuando se eliminan, no es posible enlazar directamente a un objeto eliminado. La **opción BIND FAST \_ \_ ADS** debe especificarse al enlazar a un objeto eliminado. Esto significa que las interfaces ADSI usadas para trabajar con un objeto Active Directory Domain Services, como [**IADs**](/windows/desktop/api/iads/nn-iads-iads) e [**IADsPropertyList,**](/windows/desktop/api/iads/nn-iads-iadspropertylist)no se pueden usar en un contenedor de objetos eliminados.
 
 ## <a name="finding-a-specific-deleted-object"></a>Buscar un objeto eliminado específico
 
-También es posible encontrar un objeto eliminado específico. Si se conoce el **objectGUID** del objeto, se puede usar para buscar el objeto con ese **objectGUID** específico. Para obtener más información y un ejemplo de código que muestra cómo buscar un objeto eliminado específico, vea **FindDeletedObjectByGUID** a continuación.
+También es posible encontrar un objeto eliminado específico. Si se **conoce el objectGUID** del objeto , se puede usar para buscar el objeto con ese **objeto específicoGUID.** Para obtener más información y un ejemplo de código que muestra cómo buscar un objeto eliminado específico, vea **FindDeletedObjectByGUID** a continuación.
 
 ### <a name="getdeletedobjectscontainer"></a>GetDeletedObjectsContainer
 
-En el ejemplo de código de C++ siguiente se muestra cómo enlazar con el contenedor de objetos eliminados.
+En el siguiente ejemplo de código de C++ se muestra cómo enlazar al contenedor Objetos eliminados.
 
 
 ```C++
@@ -134,7 +134,7 @@ HRESULT GetDeletedObjectsContainer(IADsContainer **ppContainer)
 
 ### <a name="enumdeletedobjects"></a>EnumDeletedObjects
 
-En el ejemplo de código de C++ siguiente se muestra cómo enumerar los objetos del contenedor objetos eliminados.
+En el siguiente ejemplo de código de C++ se muestra cómo enumerar los objetos en el contenedor Objetos eliminados.
 
 
 ```C++
@@ -266,7 +266,7 @@ cleanup:
 
 ### <a name="finddeletedobjectbyguid"></a>FindDeletedObjectByGUID
 
-En el ejemplo de código de C++ siguiente se muestra cómo buscar un objeto eliminado específico de la propiedad **objectGUID** del objeto.
+En el siguiente ejemplo de código de C++ se muestra cómo buscar un objeto eliminado específico de la **propiedad objectGUID del** objeto.
 
 
 ```C++
@@ -435,6 +435,6 @@ cleanup:
 
 
 
- 
+ 
 
- 
+ 

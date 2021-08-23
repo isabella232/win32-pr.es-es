@@ -1,7 +1,7 @@
 ---
-description: 'Restaura el estado del dispositivo al modo en que se encontraba cuando se llamó a ID3DXLine:: Begin.'
+description: Restaura el estado del dispositivo a la forma en que estaba cuando se llamó a ID3DXLine::Begin.
 ms.assetid: 06243c30-2d1d-4101-a373-46fd9a0d88d3
-title: 'ID3DXLine:: end (método) (D3dx9core. h)'
+title: Método ID3DXLine::End (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 69d8324ab54f37af3f45a5475f08894e278c32e0
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 371463bfc24cbdba63ac51c9b729c267b9d020dd260d6d1b6c6a378bb38c3524
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698376"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987235"
 ---
-# <a name="id3dxlineend-method"></a>ID3DXLine:: end (método)
+# <a name="id3dxlineend-method"></a>Método ID3DXLine::End
 
-Restaura el estado del dispositivo al modo en que se encontraba cuando se llamó a [**ID3DXLine:: Begin**](id3dxline--begin.md) .
+Restaura el estado del dispositivo a la forma en que estaba cuando se llamó a [**ID3DXLine::Begin.**](id3dxline--begin.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**ID3DXLine:: end** no se puede usar como sustituto de [**IDirect3DDevice9:: EndScene**](/windows/desktop/api) o [**ID3DXRenderToSurface:: EndScene**](id3dxrendertosurface--endscene.md).
+**ID3DXLine::End** no se puede usar como sustituto de [**IDirect3DDevice9::EndScene**](/windows/desktop/api) o [**ID3DXRenderToSurface::EndScene**](id3dxrendertosurface--endscene.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -66,7 +66,7 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 [ID3DXLine](id3dxline.md)
 </dt> <dt>
 
-[**ID3DXLine:: Begin**](id3dxline--begin.md)
+[**ID3DXLine::Begin**](id3dxline--begin.md)
 </dt> </dl>
 
  

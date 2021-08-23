@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentInvalidDatabaseIdException'
-title: Constructor de EsentInvalidDatabaseIdException
+description: 'Más información sobre: Constructor EsentInvalidDatabaseIdException'
+title: Constructor EsentInvalidDatabaseIdException
 TOCTitle: 'EsentInvalidDatabaseIdException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentInvalidDatabaseIdException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentinvaliddatabaseidexception.esentinvaliddatabaseidexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 62e33f7f370d810ef388f2e8907dd2325312fba4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cf7785ece045a5a3a59e57b0e77f43ec21f23ea3f80795c176122f5b3da7017f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105717278"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118982395"
 ---
-# <a name="esentinvaliddatabaseidexception-constructor"></a>Constructor de EsentInvalidDatabaseIdException
+# <a name="esentinvaliddatabaseidexception-constructor"></a>Constructor EsentInvalidDatabaseIdException
 
 Inicializa una nueva instancia de la clase EsentInvalidDatabaseIdException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentInvalidDatabaseIdException()
 public EsentInvalidDatabaseIdException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentInvalidDatabaseIdException()
 
 [Miembros de EsentInvalidDatabaseIdException](./esentinvaliddatabaseidexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

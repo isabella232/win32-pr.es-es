@@ -1,7 +1,7 @@
 ---
-description: Marca que especifica si la ventana envía o envía su mensaje de destrucción.
+description: Marca que especifica si la ventana publica o envía su mensaje de destrucción.
 ms.assetid: 553a372e-1abe-4661-bfa5-b8a63be63c72
-title: 'Miembro CBaseWindow:: m_bDoPostToDestroy (Winutil. h)'
+title: CBaseWindow::m_bDoPostToDestroy miembro (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 804d0910760ddac5ea4d74979293f43e5b189225
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 070b94cc75fa3fb2d9b5983901abc2406b2e601ec3370323854905708ee681f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660972"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954614"
 ---
-# <a name="cbasewindowm_bdoposttodestroy-member"></a>Miembro bDoPostToDestroy CBaseWindow:: m \_
+# <a name="cbasewindowm_bdoposttodestroy-member"></a>Miembro CBaseWindow::m \_ bDoPostToDestroy
 
-Marca que especifica si la ventana envía o envía su mensaje de destrucción. Si **es true**, el método [**CBaseWindow::D onewithwindow**](cbasewindow-donewithwindow.md) usa la función **PostMessage** para enviarse a sí mismo un mensaje de destrucción privado. Si **es false**, **DoneWithWindow** usa la función **SendMessage** para enviar el mensaje. De forma predeterminada, el valor es **false**.
+Marca que especifica si la ventana publica o envía su mensaje de destrucción. Si **es TRUE,** [**el método CBaseWindow::D oneWithWindow**](cbasewindow-donewithwindow.md) usa la **función PostMessage** para enviarse a sí mismo un mensaje de destrucción privado. Si **es FALSE,** **DoneWithWindow** usa la **función SendMessage** para enviar el mensaje. De forma predeterminada, el valor es **FALSE.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ BOOL m_bDoPostToDestroy;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ BOOL m_bDoPostToDestroy;
 
 <dl> <dt>
 
-[**Clase CBaseWindow**](cbasewindow.md)
+[**CBaseWindow (clase)**](cbasewindow.md)
 </dt> </dl>
 
  

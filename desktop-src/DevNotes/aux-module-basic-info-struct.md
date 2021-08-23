@@ -1,7 +1,7 @@
 ---
 description: Contiene información básica del módulo.
 ms.assetid: 5cdb0b11-8bd3-46d2-b214-85cdb2f274a7
-title: AUX_MODULE_BASIC_INFO estructura (AUX \_ klib. h)
+title: AUX_MODULE_BASIC_INFO estructura (Auxiliar \_ klib.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - Aux_klib.h
-ms.openlocfilehash: 1ee7300ec2c2d84e1ddadc4149135dab53d2336b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e1a25af780016c226acf46348573def8505669e16f1f645fcfce1c9324bb086d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649967"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956154"
 ---
-# <a name="aux_module_basic_info-structure"></a>\_Estructura de \_ información básica del módulo AUX \_
+# <a name="aux_module_basic_info-structure"></a>ESTRUCTURA DE \_ INFORMACIÓN \_ BÁSICA DEL \_ MÓDULO AUXILIAR
 
 Contiene información básica del módulo.
 
@@ -42,13 +42,13 @@ typedef struct _AUX_MODULE_BASIC_INFO {
 **ImageBase**
 </dt> <dd>
 
-La dirección base del módulo dentro del espacio de direcciones del kernel.
+Dirección base del módulo dentro del espacio de direcciones del kernel.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La biblioteca de objetos que implementa esta API se puede descargar desde [aquí](https://www.microsoft.com/?ref=go).
+La biblioteca de objetos que implementa esta API se puede descargar desde [aquí.](https://www.microsoft.com/?ref=go)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,8 +56,8 @@ La biblioteca de objetos que implementa esta API se puede descargar desde [aquí
 
 | Requisito | Value |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Redistribuible<br/> | Biblioteca de API auxiliar de Windows versión 1,0 o posterior<br/>                          |
-| Encabezado<br/>          | <dl> <dt>AUX \_ klib. h</dt> </dl> |
+| Redistribuible<br/> | Windows Biblioteca de API auxiliar versión 1.0 o posterior<br/>                          |
+| Header<br/>          | <dl> <dt>Auxiliar \_ klib.h</dt> </dl> |
 
 
 

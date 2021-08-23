@@ -1,27 +1,27 @@
 ---
-title: Leer el objectGUID de un objeto y crear una representación de cadena del GUID
-description: Use el \_ método GUID get de iAds para recuperar el formato de cadena enlazable del objectGUID de un objeto de directorio.
+title: Leer el objeto de un objetoGUID y crear una representación de cadena del GUID
+description: Use el método GET GUID de identificadores para recuperar el formato de cadena enlazable de objectGUID de un \_ objeto de directorio.
 ms.assetid: 4f7f0e9d-3e06-47c9-83ce-cabed8692c15
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 77bf9c346585e8604968c3f708dfdc62ee8d248f
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 9872f16ddeee2e7a01e05be0d3c98aed5e66a9e6bce310565c001f831bd46e02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103789490"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119025333"
 ---
-# <a name="reading-an-objects-objectguid-and-creating-a-string-representation-of-the-guid"></a>Leer el objectGUID de un objeto y crear una representación de cadena del GUID
+# <a name="reading-an-objects-objectguid-and-creating-a-string-representation-of-the-guid"></a>Leer el objeto de un objetoGUID y crear una representación de cadena del GUID
 
-La propiedad **objectGUID** de cada objeto en Active Directory Domain Services se almacena en el directorio como una cadena de octetos. Una cadena de octetos es una matriz de caracteres de un byte. Use el método [**IADs:: get \_ GUID**](/windows/desktop/ADSI/iads-property-methods) para recuperar el formato de cadena enlazable del **objectGUID** de un objeto de directorio.
+La **propiedad objectGUID** de cada objeto de Active Directory Domain Services se almacena en el directorio como una cadena de octeto. Una cadena de octeto es una matriz de caracteres de un byte. Use el [**método \_ GUID IADs::get**](/windows/desktop/ADSI/iads-property-methods) para recuperar el formato de cadena enlazable de **objectGUID** de un objeto de directorio.
 
-En los ejemplos de código siguientes se muestra una función que lee el atributo **objectGUID** y devuelve una representación de cadena del GUID que se usa para enlazar con el objeto.
+En los ejemplos de código siguientes se muestra una función que lee el atributo **objectGUID** y devuelve una representación de cadena del GUID utilizado para enlazar al objeto.
 
--   [Ejemplo de Visual Basic](#visual-basic-example)
+-   [Visual Basic Ejemplo](#visual-basic-example)
 -   [Ejemplo de C++](#c-example)
 
-## <a name="visual-basic-example"></a>Ejemplo de Visual Basic
+## <a name="visual-basic-example"></a>Visual Basic Ejemplo
 
 
 ```VB
@@ -178,6 +178,6 @@ void wmain(int argc, wchar_t *argv[])
 
 
 
- 
+ 
 
- 
+ 
