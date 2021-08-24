@@ -1,6 +1,6 @@
 ---
 title: EM_SETBKGNDCOLOR mensaje (Richedit.h)
-description: El mensaje EM \_ SETBNDCOLOR establece el color de fondo para un control de edición enriquecido.
+description: El mensaje EM \_ SETBCONTROLNDCOLOR establece el color de fondo de un control de edición enriquecido.
 ms.assetid: 0ad191cd-6370-493e-bfe2-5aa8d81ed999
 keywords:
 - EM_SETBKGNDCOLOR controles de Windows mensaje
@@ -21,9 +21,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118412659"
 ---
-# <a name="em_setbkgndcolor-message"></a>Mensaje \_ EM SETBANDERNDCOLOR
+# <a name="em_setbkgndcolor-message"></a>Mensaje \_ EM SETBNDCOLOR
 
-El **mensaje EM \_ SETBNDCOLOR** establece el color de fondo para un control de edición enriquecido.
+El **mensaje EM \_ SETBCONTROLNDCOLOR** establece el color de fondo de un control de edición enriquecido.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -39,7 +39,7 @@ Especifica si se debe usar el color del sistema. Si este parámetro es un valor 
 *lParam* 
 </dt> <dd>
 
-Estructura [**COLORREF**](/windows/desktop/gdi/colorref) que especifica el color si *wParam* es cero. Para generar un **COLORREF**, use la [**macro RGB.**](/windows/desktop/api/wingdi/nf-wingdi-rgb)
+Estructura [**COLORREF**](/windows/desktop/gdi/colorref) que especifica el color si *wParam* es cero. Para generar un **COLORREF,** use la [**macro RGB.**](/windows/desktop/api/wingdi/nf-wingdi-rgb)
 
 </dd> </dl>
 

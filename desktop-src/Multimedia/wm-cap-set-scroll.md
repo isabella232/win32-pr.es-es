@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_CAP_SET_SCROLL (VFW. h)
-description: El \_ \_ mensaje de desplazamiento del conjunto de Cap de WM \_ define la parte del fotograma de vídeo que se va a mostrar en la ventana de captura.
+title: WM_CAP_SET_SCROLL mensaje (Vfw.h)
+description: El mensaje \_ WM CAP SET SCROLL define la parte del fotograma de vídeo que se mostrará en la ventana \_ de \_ captura.
 ms.assetid: 545605e4-6b1f-403a-a3ab-0fd6750ae776
 keywords:
-- Mensaje de WM_CAP_SET_SCROLL de Windows multimedia
+- WM_CAP_SET_SCROLL mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 812b76bdcad166b9f766957032f232293d4083c0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 352d65c2ad8e80622f7ff50cca0a8f7d6e523d53ae002a2325327a634b97c931
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492946"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118134989"
 ---
-# <a name="wm_cap_set_scroll-message"></a>\_Mensaje de \_ desplazamiento de conjunto de Cap de WM \_
+# <a name="wm_cap_set_scroll-message"></a>Mensaje DE DESPLAZAMIENTO de WM \_ CAP \_ SET \_
 
-El mensaje de desplazamiento del conjunto de Cap de WM define la parte del fotograma de vídeo que se va a mostrar en la ventana de captura. **\_ \_ \_** Este mensaje establece la esquina superior izquierda del área de cliente de la ventana de captura en las coordenadas de un píxel especificado dentro del fotograma de vídeo. Puede enviar este mensaje explícitamente o mediante la macro [**capSetScrollPos**](/windows/desktop/api/Vfw/nf-vfw-capsetscrollpos) .
+El **mensaje WM CAP SET \_ \_ \_ SCROLL** define la parte del fotograma de vídeo que se mostrará en la ventana de captura. Este mensaje establece la esquina superior izquierda del área cliente de la ventana de captura en las coordenadas de un píxel especificado dentro del fotograma de vídeo. Puede enviar este mensaje explícitamente o mediante la macro [**capSetScrollPos.**](/windows/desktop/api/Vfw/nf-vfw-capsetscrollpos)
 
 
 ```C++
@@ -38,20 +38,20 @@ lParam = (LPARAM) (LPPOINT) (lpP);
 
 <dl> <dt>
 
-<span id="lpP"></span><span id="lpp"></span><span id="LPP"></span>*lpP*
+<span id="lpP"></span><span id="lpp"></span><span id="LPP"></span>*Lpp*
 </dt> <dd>
 
-Dirección que va a contener la posición de desplazamiento deseada.
+Dirección que contiene la posición de desplazamiento deseada.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto o **false** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o FALSE **de** lo contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La posición de desplazamiento afecta a la imagen en los modos de vista previa y de superposición.
+La posición de desplazamiento afecta a la imagen en los modos de vista previa y superposición.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,7 +61,7 @@ La posición de desplazamiento afecta a la imagen en los modos de vista previa y
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

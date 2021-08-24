@@ -36,7 +36,7 @@ La presencia de versiones anteriores de componentes de servicios UDDI en el sist
 
 ## <a name="mitigation-of-impact"></a>Mitigación del impacto
 
-Los usuarios que han implementado un sitio de servicios UDDI desde Windows Server 2003 o Windows Server 2008 pueden optar por no actualizar los servidores que ejecutan los servicios UDDI a Windows Server 2008 R2. También pueden mover los servicios UDDI a cuadros dedicados de Windows Server 2003 o Windows Server 2008 si tienen que actualizar los cuadros de servicios UDDI actuales.
+Los usuarios que han implementado un sitio de servicios UDDI desde Windows Server 2003 o Windows Server 2008 pueden optar por no actualizar los servidores que ejecutan los servicios UDDI a Windows Server 2008 R2. También pueden mover los servicios UDDI a los cuadros dedicados Windows Server 2003 o Windows Server 2008 si tienen que actualizar los cuadros de servicios UDDI actuales.
 
 ## <a name="solution"></a>Solución
 

@@ -3,7 +3,7 @@ title: Elemento URI (registrationInfoType)
 description: Especifica el URI de la tarea.
 ms.assetid: 5b438e00-ed8a-4ec8-854f-e8eda48d1cfc
 keywords:
-- Identificador de elemento URI Programador de tareas
+- Elemento URI Programador de tareas
 topic_type:
 - apiref
 api_name:

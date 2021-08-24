@@ -1,10 +1,10 @@
 ---
-title: MicrosoftDNS_SOAType (clase)
-description: La subclase de MicrosoftDNS \_ ResourceRecord que representa un registro de inicio de autoridad (SOA).
+title: MicrosoftDNS_SOAType clase
+description: Subclase de ResourceRecord de MicrosoftDNS que representa un registro de inicio de autoridad \_ (SOA).
 ms.assetid: a5e6b6d3-7f5d-42e2-b3ed-2786f7aafb14
 keywords:
-- DNS de la clase MicrosoftDNS_SOAType
-- MicrosoftDNS_SOAType de la clase DNS, descrito
+- MicrosoftDNS_SOAType DNS de clase
+- MicrosoftDNS_SOAType clase DNS , descrita
 topic_type:
 - apiref
 api_name:
@@ -23,18 +23,18 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a3e7cb617514e2ed7c8692a866cc80dfc639391
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ad2a9b0317c6e842558f771dcd10ec7707602e17510ffc20c3a9684fc94bf7d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104078990"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118163149"
 ---
-# <a name="microsoftdns_soatype-class"></a>MicrosoftDNS ( \_ clase SOAType)
+# <a name="microsoftdns_soatype-class"></a>Clase SOAType de MicrosoftDNS \_
 
-La subclase de [**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md) que representa un registro de inicio de autoridad (SOA).
+Subclase [**de \_ ResourceRecord de MicrosoftDNS**](microsoftdns-resourcerecord.md) que representa un registro de inicio de autoridad (SOA).
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,20 +53,20 @@ class MicrosoftDNS_SOAType : MicrosoftDNS_ResourceRecord
 
 ## <a name="members"></a>Miembros
 
-La clase **MicrosoftDNS \_ SOAType** tiene estos tipos de miembros:
+La **clase \_ SOAType de MicrosoftDNS** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La clase **MicrosoftDNS \_ SOAType** tiene estos métodos.
+La **clase \_ SOAType de MicrosoftDNS** tiene estos métodos.
 
 
 
 | Método     | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |:-----------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Modify** | Actualiza el TTL, el número de serie de SOA, el servidor principal, la entidad responsable, el intervalo de actualización, el retraso de reintentos, el límite de expiración y el TTL mínimo (para la zona) a los valores especificados como parámetros de entrada de este método. Si no se especifica un nuevo valor para un parámetro, no se cambia el valor actual del parámetro. El método devuelve una referencia al objeto modificado como parámetro de salida. <br/> Calificadores: implementados<br/> |
+| **Modificar** | Actualiza el TTL, el número de serie soa, el servidor principal, la entidad responsable, el intervalo de actualización, el retraso de reintento, el límite de expiración y el TTL mínimo (para la zona) a los valores especificados como parámetros de entrada de este método. Si no se especifica un nuevo valor para un parámetro, no se cambia el valor actual del parámetro. El método devuelve una referencia al objeto modificado como parámetro de salida. <br/> Calificadores: Implementado<br/> |
 
 
 
@@ -74,27 +74,27 @@ La clase **MicrosoftDNS \_ SOAType** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MicrosoftDNS \_ SOAType** tiene estas propiedades.
+La **clase \_ SOAType de MicrosoftDNS** tiene estas propiedades.
 
 <dl> <dt>
 
 **ExpireLimit**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Tiempo, en segundos, antes de que una zona que no responde deje de ser autoritativa.
+Tiempo, en segundos, antes de que una zona que no responde ya no sea autoritativa.
 
 </dd> <dt>
 
 **MinimumTTL**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -120,7 +120,7 @@ Servidor DNS autoritativo para la zona a la que pertenece el registro.
 **RefreshInterval**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -139,27 +139,27 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre de la entidad responsable de la zona a la que pertenece el registro.
+Nombre de la parte responsable de la zona a la que pertenece el registro.
 
 </dd> <dt>
 
 **RetryDelay**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Tiempo, en segundos, antes de volver a intentar una actualización con errores de la zona a la que pertenece este registro.
+Tiempo, en segundos, antes de reintentar una actualización con error de la zona a la que pertenece este registro.
 
 </dd> <dt>
 
 **SerialNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -178,7 +178,7 @@ Número de serie del registro SOA.
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Espacio de nombres<br/>                | \\MicrosoftDNS raíz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -186,10 +186,10 @@ Número de serie del registro SOA.
 
 <dl> <dt>
 
-[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
+[**ResourceRecord de MicrosoftDNS \_**](microsoftdns-resourcerecord.md)
 </dt> <dt>
 
-[**Método Modify de la \_ clase MicrosoftDNS SOAType**](microsoftdns-soatype-modify.md)
+[**Método Modify de la clase SOAType de MicrosoftDNS \_**](microsoftdns-soatype-modify.md)
 </dt> </dl>
 
  

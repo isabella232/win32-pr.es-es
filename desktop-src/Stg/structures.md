@@ -1,26 +1,26 @@
 ---
-title: Estructuras (almacenamiento estructurado)
-description: Las estructuras son principalmente colecciones de elementos de datos o miembros que facilitan un esquema organizativo para interpretar los datos o realizar operaciones en él.
+title: Estructuras (estructura Storage)
+description: Las estructuras son principalmente colecciones de elementos de datos o miembros que facilitan un esquema organizativo para interpretar datos o realizar operaciones en ellos.
 ms.assetid: 5931fbf9-2219-47e3-abd0-c6d6d0389e73
 keywords:
-- Almacenamiento estructurado Strctd STG, referencia, estructuras
+- Structured Storage Strctd Stg , reference, structures
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b592c0331197192c59d11f8d7f57978e7980eb1
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 284cb8a9d80fc3b07efcc85e73653cb9767b9967f081b21dc3385ade65216b7d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104533621"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117959647"
 ---
-# <a name="structures-structured-storage"></a>Estructuras (almacenamiento estructurado)
+# <a name="structures-structured-storage"></a>Estructuras (estructura Storage)
 
-Las estructuras son principalmente colecciones de elementos de datos o miembros que facilitan un esquema organizativo para interpretar los datos o realizar operaciones en él. Las estructuras de almacenamiento estructurado se describen en las siguientes secciones:
+Las estructuras son principalmente colecciones de elementos de datos o miembros que facilitan un esquema organizativo para interpretar datos o realizar operaciones en ellos. Las estructuras Storage estructuradas se describen en las secciones siguientes:
 
 -   [**PROPSPEC**](/windows/win32/api/propidlbase/ns-propidlbase-propspec)
 -   [**PROPVARIANT**](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)
 -   [**RemSNB**](/windows/win32/api/objidl/ns-objidl-remsnb)
--   [**SNB**](snb.md)
+-   [**Snb**](snb.md)
 -   [**STATPROPSETSTG**](/windows/win32/api/propidlbase/nn-propidlbase-ienumstatpropsetstg)
 -   [**STATPROPSTG**](/windows/win32/api/propidlbase/nn-propidlbase-ienumstatpropstg)
 -   [**STATSTG**](/windows/win32/api/objidl/ns-objidl-statstg)

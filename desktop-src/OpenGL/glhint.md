@@ -21,7 +21,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118359651"
 ---
-# <a name="glhint-function"></a>función glHint
+# <a name="glhint-function"></a>Función glHint
 
 La **función glHint** especifica sugerencias específicas de la implementación.
 
@@ -50,11 +50,11 @@ Constante simbólica que indica el comportamiento que se va a controlar. Se acep
 
 | Valor                                                                                                                                                                                                              | Significado                                                                                                                                                                                                                                                                                                           |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="GL_FOG_HINT"></span><span id="gl_fog_hint"></span><dl> <dt>**SUGERENCIA \_ GL GL \_ HINT**</dt> </dl>                                                           | Indica la precisión del cálculo de la marcha. Si el cálculo de píxeles por píxel no es compatible de forma eficaz con la implementación de OpenGL, las indicaciones de GL DONT CARE o GL FASTEST pueden dar lugar a un cálculo por vértice de efectos \_ \_ de \_ efecto.<br/>                                                                          |
-| <span id="GL_LINE_SMOOTH_HINT"></span><span id="gl_line_smooth_hint"></span><dl> <dt>**SUGERENCIA SUAVE \_ \_ DE LÍNEA \_ GL**</dt> </dl>                                  | Indica la calidad de muestreo de las líneas suavizadas. La sugerencia GL NICEST puede dar lugar a que se generen más fragmentos de píxeles durante la rasterización, si se aplica una función \_ de filtro mayor.<br/>                                                                                                               |
-| <span id="GL_PERSPECTIVE_CORRECTION_HINT"></span><span id="gl_perspective_correction_hint"></span><dl> <dt>**SUGERENCIA DE \_ \_ CORRECCIÓN DE PERSPECTIVA \_ DE GL**</dt> </dl> | Indica la calidad de la interpolación de las coordenadas de color y textura. Si la implementación de OpenGL no admite eficazmente la interpolación de parámetros con corrección de perspectiva, la sugerencia GL DONT CARE o GL FASTEST puede dar lugar a una interpolación lineal simple de colores o coordenadas de \_ \_ \_ textura.<br/> |
-| <span id="GL_POINT_SMOOTH_HINT"></span><span id="gl_point_smooth_hint"></span><dl> <dt>**SUGERENCIA SUAVE \_ \_ DE PUNTO DE \_ GL**</dt> </dl>                               | Indica la calidad de muestreo de los puntos suavizados. La sugerencia GL NICEST puede dar lugar a que se generen más fragmentos de píxeles durante la rasterización, si se aplica una función \_ de filtro mayor.<br/>                                                                                                              |
-| <span id="GL_POLYGON_SMOOTH_HINT"></span><span id="gl_polygon_smooth_hint"></span><dl> <dt>**SUGERENCIA SUAVE \_ DE \_ POLÍGONO \_ GL**</dt> </dl>                         | Indica la calidad de muestreo de los polígonos suavizados. La sugerencia GL NICEST puede dar lugar a que se generen más fragmentos de píxeles durante la rasterización, si se aplica una función \_ de filtro mayor.<br/>                                                                                                            |
+| <span id="GL_FOG_HINT"></span><span id="gl_fog_hint"></span><dl> <dt>**SUGERENCIA \_ GL GL \_ GL**</dt> </dl>                                                           | Indica la precisión del cálculo de los cálculos. Si el cálculo de píxeles por píxel no es compatible de forma eficaz con la implementación de OpenGL, las sugerencias GL DONT CARE o GL FASTEST pueden dar lugar a un cálculo por vértice de efectos \_ de efecto en el \_ \_ vértice.<br/>                                                                          |
+| <span id="GL_LINE_SMOOTH_HINT"></span><span id="gl_line_smooth_hint"></span><dl> <dt>**GL \_ LINE \_ SMOOTH \_ HINT**</dt> </dl>                                  | Indica la calidad de muestreo de las líneas suavizadas. Las sugerencias DE GL NICEST pueden dar lugar a que se generen más fragmentos de píxeles durante la rasterización, si se aplica una función \_ de filtro mayor.<br/>                                                                                                               |
+| <span id="GL_PERSPECTIVE_CORRECTION_HINT"></span><span id="gl_perspective_correction_hint"></span><dl> <dt>**SUGERENCIA DE \_ \_ CORRECCIÓN DE PERSPECTIVA \_ DE GL**</dt> </dl> | Indica la calidad de la interpolación de coordenadas de color y textura. Si la implementación de OpenGL no admite eficazmente la interpolación de parámetros con corrección de perspectiva, las sugerencias DE GL DONT CARE o GL FASTEST pueden dar lugar a una interpolación lineal simple de colores o coordenadas de \_ \_ \_ textura.<br/> |
+| <span id="GL_POINT_SMOOTH_HINT"></span><span id="gl_point_smooth_hint"></span><dl> <dt>**GL \_ POINT \_ SMOOTH \_ HINT**</dt> </dl>                               | Indica la calidad de muestreo de los puntos suavizados. Las sugerencias DE GL NICEST pueden dar lugar a que se generen más fragmentos de píxeles durante la rasterización, si se aplica una función \_ de filtro mayor.<br/>                                                                                                              |
+| <span id="GL_POLYGON_SMOOTH_HINT"></span><span id="gl_polygon_smooth_hint"></span><dl> <dt>**GL \_ POLYGON \_ SMOOTH \_ HINT**</dt> </dl>                         | Indica la calidad de muestreo de los polígonos suavizados. Las sugerencias DE GL NICEST pueden dar lugar a que se generen más fragmentos de píxeles durante la rasterización, si se aplica una función \_ de filtro mayor.<br/>                                                                                                            |
 
 
 
@@ -73,7 +73,7 @@ Constante simbólica que indica el comportamiento deseado. Se aceptan las siguie
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
 | <span id="GL_FASTEST"></span><span id="gl_fastest"></span><dl> <dt>**GL \_ FASTEST**</dt> </dl>        | Se debe elegir la opción más eficaz.<br/>                    |
 | <span id="GL_NICEST"></span><span id="gl_nicest"></span><dl> <dt>**GL \_ NICEST**</dt> </dl>           | Se debe elegir la opción más correcta o de mayor calidad.<br/> |
-| <span id="GL_DONT_CARE"></span><span id="gl_dont_care"></span><dl> <dt>**GL \_ DONT \_ CARE**</dt> </dl> | El cliente no tiene ninguna preferencia.<br/>                          |
+| <span id="GL_DONT_CARE"></span><span id="gl_dont_care"></span><dl> <dt>**GL \_ DONT \_ CARE**</dt> </dl> | El cliente no tiene preferencias.<br/>                          |
 
 
 
@@ -100,9 +100,9 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 ## <a name="remarks"></a>Comentarios
 
-Cuando hay espacio para la interpretación, puede controlar determinados aspectos del comportamiento de OpenGL con sugerencias. Especifique una sugerencia con dos argumentos. El *parámetro* de destino es una constante simbólica que indica el comportamiento que se va a controlar y *el* modo es otra constante simbólica que indica el comportamiento deseado.
+Cuando hay espacio para la interpretación, puede controlar ciertos aspectos del comportamiento de OpenGL con sugerencias. Especifique una sugerencia con dos argumentos. El *parámetro* de destino es una constante simbólica que indica el comportamiento que se va a controlar y *el* modo es otra constante simbólica que indica el comportamiento deseado.
 
-Aunque los aspectos de implementación que se pueden sugerenciar están bien definidos, la interpretación de las sugerencias depende de la implementación.
+Aunque los aspectos de implementación que se pueden dar están bien definidos, la interpretación de las sugerencias depende de la implementación.
 
 La **función glHint** se puede omitir.
 

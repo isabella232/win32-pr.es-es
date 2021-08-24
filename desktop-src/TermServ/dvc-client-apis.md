@@ -1,5 +1,5 @@
 ---
-title: API de cliente de DVC
+title: API de cliente DVC
 description: Las API de cliente de canal virtual dinámico (DVC) se implementan específicamente para el cliente Conexión a Escritorio remoto (RDC) de la conexión.
 ms.assetid: 976a6cc2-7bbe-4ecc-91b4-b7c659eca5ba
 ms.tgt_platform: multiple
@@ -12,7 +12,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118130821"
 ---
-# <a name="dvc-client-apis"></a>API de cliente de DVC
+# <a name="dvc-client-apis"></a>API de cliente DVC
 
 Las API de cliente de canal virtual dinámico (DVC) se implementan específicamente para el cliente Conexión a Escritorio remoto (RDC) de la conexión. Algunas de las API se implementan mediante el marco DVC y otras las implementa el desarrollador del complemento. Algunas de las API se usan para admitir el complemento de cliente Conexión a Escritorio remoto (RDC) y no están directamente relacionadas con el transporte de datos.
 
@@ -23,21 +23,21 @@ Las API de cliente de canal virtual dinámico (DVC) se implementan específicame
 [**IWTSPlugin**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtsplugin)
 </dt> <dd>
 
-Permite que el Conexión a Escritorio remoto de cliente de Conexión a Escritorio remoto (RDC) que el cliente de Conexión a Escritorio remoto (RDC) cargue.
+Permite que el Conexión a Escritorio remoto cliente de Conexión a Escritorio remoto (RDC) que el cliente de Conexión a Escritorio remoto (RDC) cargue.
 
 </dd> <dt>
 
 [**IWTSListener**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtslistener)
 </dt> <dd>
 
-Administra los valores de configuración de cada agente de escucha para la conexión dinámica del canal virtual (DVC).
+Administra los valores de configuración de cada agente de escucha para la conexión del canal virtual dinámico (DVC).
 
 </dd> <dt>
 
 [**IWTSListenerCallback**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtslistenercallback)
 </dt> <dd>
 
-Se usa para notificar al Conexión a Escritorio remoto cliente de Conexión a Escritorio remoto (RDC) las solicitudes entrantes en un agente de escucha determinado.
+Se usa para notificar al Conexión a Escritorio remoto cliente de Conexión a Escritorio remoto (RDC) acerca de las solicitudes entrantes en un agente de escucha determinado.
 
 </dd> <dt>
 

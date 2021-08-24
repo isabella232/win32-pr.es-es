@@ -26,7 +26,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118351963"
 ---
-# <a name="imsrdpdriveredirectionstate-property"></a>Propiedad IMsRdpDrive::RedirectionState
+# <a name="imsrdpdriveredirectionstate-property"></a>IMsRdpDrive::RedirectionState, propiedad
 
 Indica el estado de redireccionamiento de la unidad.
 
@@ -49,7 +49,7 @@ HRESULT get_RedirectionState(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Establezca este parámetro en **VARIANT \_ FALSE.** para deshabilitar el redireccionamiento o **VARIANT \_ TRUE.** para habilitar el redireccionamiento.
+Establezca este parámetro en **VARIANT \_ FALSE.** para deshabilitar el redireccionamiento o **VARIANT \_ TRUE**. para habilitar el redireccionamiento.
 
 ## <a name="error-codes"></a>Códigos de error
 
@@ -69,7 +69,7 @@ Si el método se realiza correctamente, **se devuelve S \_ OK.** Cualquier otro 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

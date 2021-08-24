@@ -1,29 +1,29 @@
 ---
 title: Módulo SHV
-description: 'Nota: la plataforma de protección de acceso a redes no está disponible a partir de Windows 10 configura un módulo de validador de mantenimiento del sistema (SHV), incluido el registro y la anulación del registro con el sistema NAP.'
+description: Nota La plataforma de protección de acceso a redes no está disponible a partir de Windows 10 Configura un módulo de validador de estado del sistema (SHV), incluido el registro y la anulación del registro con el sistema NAP.
 ms.assetid: 0f2edd23-d44a-4a01-ae33-f7eef0e4b27f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b95784d05f4bf377f356a91fe5b0c1811fb9671d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 344b3a6d74acee0e06e3d2a9fedd4784b1c9d76ac8ba84c68ed4b7ef8ceebc56
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103775331"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118133440"
 ---
 # <a name="shv-module"></a>Módulo SHV
 
 > [!Note]  
 > La plataforma de protección de acceso a redes no está disponible a partir de Windows 10
 
- 
+ 
 
-Configura un módulo de validador de mantenimiento del sistema (SHV), incluido el registro y la anulación del registro con el sistema NAP.
+Configura un módulo de validador de estado del sistema (SHV), incluido el registro y la anulación del registro con el sistema NAP.
 
 > [!Note]  
-> El SDK de NAP también contiene un conjunto completo de código de ejemplo que se puede encontrar en la.. \\ . Ejemplos \\ NetDS \\ NAP... directorio de la instalación del SDK. Este conjunto de ejemplo incluye un agente de mantenimiento del sistema (SHA), SHV y un cliente de cumplimiento (EC). Tiene escenarios completos de NAP en funcionamiento con la configuración de la comunicación entre SHA-SHV y SHA-EC.
+> El SDK de NAP también contiene un conjunto completo de código de ejemplo que se puede encontrar en ... \\ Ejemplos \\ de NAP de NetDS... \\ directorio de la instalación del SDK. Este conjunto de ejemplo incluye un agente de mantenimiento del sistema (SHA), SHV y un cliente de cumplimiento (EC). Tiene escenarios NAP completos en funcionamiento que configura la comunicación entre SHA-SHV y SHA-EC.
 
- 
+ 
 
 
 ```C++
@@ -104,9 +104,9 @@ void FreeComponentRegistration(NapComponentRegistrationInfo *shvInfo)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

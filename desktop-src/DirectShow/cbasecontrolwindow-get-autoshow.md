@@ -1,7 +1,7 @@
 ---
-description: El \_ método get Autoshow recupera la marca de estado de Automostrar actual.
+description: El método get AutoShow recupera la marca de estado \_ actual de AutoShow.
 ms.assetid: b27651d1-3ac5-4a52-9549-b63bacda5dc8
-title: Método CBaseControlWindow.get_AutoShow (Ctlutil. h)
+title: CBaseControlWindow.get_AutoShow método (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f45679b9d036f1c5386cd2c1d18a31fa3d6bd64f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7a5c16e0b460d07255cae113194f672ca3dace6f46827ac613c9559370284beb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670542"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118158798"
 ---
-# <a name="cbasecontrolwindowget_autoshow-method"></a>CBaseControlWindow. get ( \_ método de Autoshow)
+# <a name="cbasecontrolwindowget_autoshow-method"></a>CBaseControlWindow.get \_ AutoShow (método)
 
-El `get_AutoShow` método recupera la marca de estado de Automostrar actual.
+El `get_AutoShow` método recupera la marca de estado AutoShow actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,22 +42,22 @@ HRESULT get_AutoShow(
 
 <dl> <dt>
 
-*Automostrar* 
+*Autoshow* 
 </dt> <dd>
 
-Puntero a una marca booleana de Automation (0 es OFF, 1 es ON).
+Puntero a una marca booleana de Automation (0 está desactivado, 1 está en).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función miembro implementa el método [**IVideoWindow:: get \_ Autoshow**](/windows/desktop/api/Control/nf-control-ivideowindow-get_autoshow) . Esta propiedad simplifica el acceso de visualización de la ventana para las aplicaciones. Si se establece en 1 (activado), la ventana, que normalmente se oculta después de la conexión del filtro, se mostrará automáticamente cuando el filtro se ejecute en pausa o se ejecute. No obstante, no se debe ocultar la ventana cuando el filtro se detenga. Si este parámetro se establece en 0 (desactivado), la ventana solo se hace visible cuando la aplicación llama a [**CBaseControlWindow::p UT \_ visible**](cbasecontrolwindow-put-visible.md) o [**CBaseControlWindow::p UT \_ WindowState**](cbasecontrolwindow-put-windowstate.md) con los parámetros adecuados.
+Esta función miembro implementa el [**método IVideoWindow::get \_ AutoShow.**](/windows/desktop/api/Control/nf-control-ivideowindow-get_autoshow) Esta propiedad simplifica el acceso de visualización de ventana para las aplicaciones. Si se establece en 1 (en), la ventana, que normalmente se oculta después de la conexión del filtro, se mostrará automáticamente cuando el filtro se detenga o se ejecute. Sin embargo, la ventana no debe estar oculta cuando se detiene el filtro. Si este parámetro se establece en 0 (desactivado), la ventana se hace visible solo cuando la aplicación llama [**a CBaseControlWindow::p ut \_ Visible**](cbasecontrolwindow-put-visible.md) o [**CBaseControlWindow::p ut \_ WindowState**](cbasecontrolwindow-put-windowstate.md) con los parámetros adecuados.
 
-Esta función miembro está pensada para que la llamen los objetos externos a través de la interfaz [**IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) y, por tanto, bloquea la sección crítica para sincronizar con el filtro asociado. Llame a la función miembro [**CBaseControlWindow:: IsAutoShowEnabled**](cbasecontrolwindow-isautoshowenabled.md) para recuperar esta propiedad si no está llamando a desde un objeto externo.
+Esta función miembro está pensada para ser llamada por objetos externos a través de la interfaz [**IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) y, por tanto, bloquea la sección crítica para sincronizarse con el filtro asociado. Llame a la función miembro [**CBaseControlWindow::IsAutoShowEnabled**](cbasecontrolwindow-isautoshowenabled.md) para recuperar esta propiedad si no llama a desde un objeto externo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ Esta función miembro está pensada para que la llamen los objetos externos a tr
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -74,7 +74,7 @@ Esta función miembro está pensada para que la llamen los objetos externos a tr
 
 <dl> <dt>
 
-[**Clase CBaseControlWindow**](cbasecontrolwindow.md)
+[**CBaseControlWindow (clase)**](cbasecontrolwindow.md)
 </dt> </dl>
 
  

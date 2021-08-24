@@ -1,27 +1,27 @@
 ---
-description: La propiedad de Resumen CodePage es el valor numérico de la página de códigos ANSI que se usa para las cadenas que se almacenan en la información de resumen.
+description: La propiedad Resumen de página de códigos es el valor numérico de la página de códigos ANSI que se usa para las cadenas almacenadas en la información de resumen.
 ms.assetid: eea6cb12-7ec9-4ea4-b2b2-9c812dc4b4d9
-title: Propiedad de Resumen CodePage
+title: Propiedad Resumen de la página de códigos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 08b83b60bb6aaabadb2ee0dcd201000ea32eccef
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 01f9f33a0ba1a6423fc91a8cf5ae1ec7988ec537b5b20071ddb7534ad0655cc9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653651"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118145594"
 ---
-# <a name="codepage-summary-property"></a>Propiedad de Resumen CodePage
+# <a name="codepage-summary-property"></a>Propiedad Resumen de la página de códigos
 
-La propiedad de **Resumen CodePage** es el valor numérico de la página de códigos ANSI que se usa para las cadenas que se almacenan en la información de resumen. Tenga en cuenta que esta no es la misma página de códigos para cadenas en la base de datos de instalación. La propiedad de Resumen de la **Página de códigos** se usa para convertir las cadenas de la información de resumen en Unicode cuando se llama a las funciones de la API de Unicode. La propiedad de **Resumen CodePage** debe establecerse antes de que se establezcan las propiedades de cadena en la información de resumen.
+La **propiedad Resumen de página de** códigos es el valor numérico de la página de códigos ANSI que se usa para las cadenas que se almacenan en la información de resumen. Tenga en cuenta que esta no es la misma página de códigos para las cadenas de la base de datos de instalación. La **propiedad Resumen de página** de códigos se usa para traducir las cadenas de la información de resumen a Unicode al llamar a las funciones de la API Unicode. La **propiedad Codepage Summary debe** establecerse antes de establecer las propiedades de cadena en la información de resumen.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 
 
 
@@ -29,7 +29,7 @@ La propiedad de **Resumen CodePage** es el valor numérico de la página de cód
 
 <dl> <dt>
 
-[Descripciones de propiedades de Resumen](summary-property-descriptions.md)
+[Resumen de descripciones de propiedades](summary-property-descriptions.md)
 </dt> </dl>
 
  

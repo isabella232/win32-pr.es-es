@@ -24,7 +24,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118394247"
 ---
-# <a name="registry_typegroup1-class"></a>Clase \_ TypeGroup1 del Registro
+# <a name="registry_typegroup1-class"></a>Clase \_ Registry TypeGroup1
 
 Esta clase es la clase de tipo de evento para los eventos del Registro.
 

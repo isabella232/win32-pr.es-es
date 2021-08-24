@@ -1,27 +1,27 @@
 ---
-description: Para reproducir el paquete de revisión de ejemplo, necesita una herramienta de software capaz de crear y editar un paquete de revisión de Windows Installer.
+description: Para reproducir el paquete de revisión de ejemplo, necesita una herramienta de software capaz de crear y editar un Windows de revisión del instalador.
 ms.assetid: 0653d8f6-89b0-4c56-ae51-3c7cb7df2909
 title: Crear un archivo de propiedades de creación de revisiones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2775f8521731b43264df315ae05a874e37dd3ffc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 50873fd508aa9f31435bd401284d38d13310991e150b28f4e24e5ec27f505dc8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118379410"
 ---
 # <a name="creating-a-patch-creation-properties-file"></a>Crear un archivo de propiedades de creación de revisiones
 
-Para reproducir el paquete de revisión de ejemplo, necesita una herramienta de software capaz de crear y editar un paquete de revisión de Windows Installer. Hay disponibles varias herramientas de creación de paquetes de revisiones de fabricantes de software independientes. En el ejemplo que se describe en las secciones siguientes se usa un editor de base de datos de Windows Installer denominado orca para crear un archivo de propiedades de creación de revisiones (extensión. PCP). El archivo. PCP se puede usar con las utilidades [Msimsp.exe](msimsp-exe.md) y [Patchwiz.dll](patchwiz-dll.md) para generar un paquete de revisión de Windows Installer (extensión. msp). Orca, Msimsp.exe y Patchwiz.dll se proporcionan en los [componentes Windows SDK para los programadores de Windows Installer](platform-sdk-components-for-windows-installer-developers.md).
+Para reproducir el paquete de revisión de ejemplo, necesita una herramienta de software capaz de crear y editar un Windows de revisión del instalador. Hay varias herramientas de creación de paquetes de revisión disponibles de proveedores de software independientes. En el ejemplo que se describe en las secciones siguientes se usa un editor de base de datos Windows Installer llamado Orca para crear un archivo de propiedades de creación de revisiones (extensión .csv). El archivo .msp se puede usar con las utilidades [Msimsp.exe](msimsp-exe.md) y [Patchwiz.dll](patchwiz-dll.md) para generar un paquete de revisión Windows Installer (extensión .msp). Orca, Msimsp.exe y Patchwiz.dll se proporcionan en los componentes del SDK de Windows para Windows [Installer .](platform-sdk-components-for-windows-installer-developers.md)
 
-También se proporciona un archivo de propiedades de creación de revisiones en blanco, template. PCP, con el SDK. Haga una copia de template. PCP y cambie el nombre de esta copia MNP2000. PCP. Use Orca u otro editor de bases de datos para especificar los datos siguientes en la tabla de propiedades de MNP2000. PCP. La tabla de propiedades contiene la configuración global del paquete de revisión.
+También se proporciona un archivo de propiedades de creación de revisiones en blanco, template.asín. Realice una copia de template.fax y cambie el nombre de esta copia MNP2000.copie. Use Orca u otro editor de bases de datos para escribir los datos siguientes en la tabla Properties de MNP2000.oracle. La tabla Propiedades contiene la configuración global del paquete de revisión.
 
 [Propiedades de tabla](properties-table-patchwiz-dll-.md)
 
 
 
-| Nombre                               | Value                                  |
+| Nombre                               | Valor                                  |
 |------------------------------------|----------------------------------------|
 | AllowProductCodeMismatches         | 1                                      |
 | AllowProductVersionMajorMismatches | 1                                      |
@@ -31,14 +31,14 @@ También se proporciona un archivo de propiedades de creación de revisiones en 
 | ListOfPatchGUIDsToReplace          |                                        |
 | ListOfTargetProductCodes           | \*                                     |
 | PatchGUID                          | {5406B219-A1AC-4BC4-8695-72292C8195AC} |
-| PatchOutputPath                    | c: \\ salida. MSP                         |
+| PatchOutputPath                    | c: \\ output.msp                         |
 | PatchSourceList                    | PatchSourceList                        |
 
 
 
  
 
-Use el editor de base de datos para escribir los siguientes datos en la tabla ImageFamilies de MNP2000. PCP. La tabla ImageFamilies contiene información que se va a agregar a la [tabla de medios](media-table.md) durante la revisión.
+Use el editor de bases de datos para escribir los datos siguientes en la tabla ImageFamilies de MNP2000.oracle. La tabla ImageFamilies contiene información que se va a agregar a la [tabla Media durante](media-table.md) la aplicación de revisiones.
 
 [Tabla ImageFamilies](imagefamilies-table-patchwiz-dll-.md)
 
@@ -52,41 +52,41 @@ Use el editor de base de datos para escribir los siguientes datos en la tabla Im
 
  
 
-Escriba los datos siguientes en la tabla UpgradedImages de MNP2000. PCP. La tabla UpgradedImages contiene información sobre la imagen actualizada que ha creado en la sección [planeación de una pequeña revisión de actualización](planning-a-small-update-patch.md).
+Escriba los datos siguientes en la tabla UpgradedImages de MNP2000.uu. La tabla UpgradedImages contiene información sobre la imagen actualizada que creó en [Planning a Small Update Patch](planning-a-small-update-patch.md).
 
 [Tabla UpgradedImages](upgradedimages-table-patchwiz-dll-.md)
 
 
 
-| Upgraded   | Rutamsi                                           | PatchMsiPath | SymbolPaths | Familia  |
+| Upgraded   | MsiPath                                           | PatchMsiPath | SymbolPaths | Familia  |
 |------------|---------------------------------------------------|--------------|-------------|---------|
-| MNP \_ fijo | C: \\ Nota \_ revisión del instalador \\ \\ actualizada \\MNP2000.msi |              |             | MNPapps |
+| MNP \_ corregido | C: Nota \\ Actualización \_ de la \\ revisión del instalador \\ \\MNP2000.msi |              |             | MNPapps |
 
 
 
  
 
-Escriba los datos siguientes en la tabla TargetImages de MNP2000. PCP. La tabla TargetImages contiene información sobre la imagen de destino.
+Escriba los datos siguientes en la tabla TargetImages de MNP2000. La tabla TargetImages contiene información sobre la imagen de destino.
 
 [Tabla TargetImages](targetimages-table-patchwiz-dll-.md)
 
 
 
-| Destino     | Rutamsi                                         | SymbolPaths | Upgraded   | Pedido | ProductValidateFlags | IgnoreMissingSrcFiles |
+| Destino     | MsiPath                                         | SymbolPaths | Upgraded   | Pedido | ProductValidateFlags | IgnoreMissingSrcFiles |
 |------------|-------------------------------------------------|-------------|------------|-------|----------------------|-----------------------|
-| Error de MNP \_ | C: \\ tenga en cuenta el \_ destino de revisión del instalador \\ \\ \\MNP2000.msi |             | MNP \_ fijo | 1     |                      | 0                     |
+| Error \_ de MNP | C: Nota \\ Destino \_ de \\ revisión del instalador \\ \\MNP2000.msi |             | MNP \_ corregido | 1     |                      | 0                     |
 
 
 
  
 
-En el paquete de revisión de ejemplo, deje en blanco las siguientes tablas en MNP2000. PCP.
+Para el paquete de revisión de ejemplo, deje en blanco las tablas siguientes en MNP2000.blank.
 
-[\_Tabla OptionalData UpgradedFiles](upgradedfiles-optionaldata-table-patchwiz-dll-.md)
+[Tabla UpgradedFiles \_ OptionalData](upgradedfiles-optionaldata-table-patchwiz-dll-.md)
 
 [Tabla FamilyFileRanges](familyfileranges-table-patchwiz-dll-.md)
 
-[\_Tabla OptionalData TargetFiles](targetfiles-optionaldata-table-patchwiz-dll-.md)
+[TargetFiles \_ OptionalData Table](targetfiles-optionaldata-table-patchwiz-dll-.md)
 
 [Tabla ExternalFiles](externalfiles-table-patchwiz-dll-.md)
 

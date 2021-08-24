@@ -4,12 +4,12 @@ description: Ejemplo customAccServer
 ms.assetid: 8c3636ef-0993-4ded-a3c0-05cf2de777bb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f7f8ee7d82361177af07aa7ad53a6137c39bc38
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 71ebf1ecde2821208d788b20b5cb0fc1a00403c1607fb4604eb92845daf49d41
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108088013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118325994"
 ---
 # <a name="customaccserver-sample"></a>Ejemplo customAccServer
 
@@ -28,11 +28,11 @@ En este ejemplo se muestra cómo implementar un servidor Microsoft Active Access
 
 ## <a name="download-information"></a>Descargar información
 
-El ejemplo CustomAccServer se instala como parte de [Microsoft Kit de desarrollo de software de Windows (SDK)](https://msdn.microsoft.com/windowsvista/bb980924.aspx) y está disponible en la siguiente ubicación.
+El ejemplo CustomAccServer se instala como parte del Kit de desarrollo de [software (SDK)](https://msdn.microsoft.com/windowsvista/bb980924.aspx) de Microsoft Windows y está disponible en la siguiente ubicación.
 
 
 
-| Location    | Ruta de acceso o dirección URL                                                                           |
+| Ubicación    | Ruta de acceso o dirección URL                                                                           |
 |-------------|------------------------------------------------------------------------------------|
 | Windows SDK | %Program Files% \\ Microsoft SDKs \\ Windows version number Samples \\ \[ \] \\ \\ winui \\ msaa |
 
@@ -47,7 +47,7 @@ El ejemplo CustomAccServer se instala como parte de [Microsoft Kit de desarrollo
 | Producto          | Versión                         |
 |------------------|---------------------------------|
 | Sistema operativo | Windows XP, Windows Server 2003 |
-| Windows SDK      | 7.0                             |
+| Windows SDK      | 7,0                             |
 | Visual Studio    | 2008                            |
 
 
@@ -58,19 +58,19 @@ El ejemplo CustomAccServer se instala como parte de [Microsoft Kit de desarrollo
 
 Para compilar el ejemplo mediante Visual Studio 2008:
 
-1.  Ejecute la herramienta de configuración de Microsoft Kit de desarrollo de software de Windows (SDK) proporcionada con el SDK para agregar directorios de incluyen del SDK a Visual Studio.
-2.  Abra Explorador de Windows y vaya al directorio del proyecto.
+1.  Ejecute la herramienta de configuración del Kit de desarrollo de software (SDK) de Microsoft Windows que se proporciona con el SDK para agregar directorios de incluyen del SDK a Visual Studio.
+2.  Abra Windows Explorador de proyectos y vaya al directorio del proyecto.
 3.  Haga doble clic en el icono del archivo .sln (solución) para abrir el proyecto en Visual Studio.
 4.  En el **menú Compilar,** seleccione **Compilar solución** para compilar la solución. La aplicación se compilará en el directorio \\ debug o \\ release predeterminado.
 
-Para compilar el ejemplo desde la línea de comandos, vea Compilar ejemplos en las notas de la versión de Windows SDK en la siguiente ubicación: %Archivos de programa% Sdk \\ de Microsoft para Windows \\ \\ v7.0 \\ReleaseNotes.htm
+Para compilar el ejemplo desde la línea de comandos, consulte Compilar ejemplos en las notas de la versión del SDK de Windows en la siguiente ubicación: %Archivos de programa% SDK de \\ Microsoft \\ Windows \\ v7.0 \\ReleaseNotes.htm
 
 ## <a name="running-the-sample"></a>Ejecutar el ejemplo
 
 Para ejecutar el ejemplo:
 
-1.  Vaya al directorio que contiene el nuevo ejecutable mediante el símbolo del sistema o Explorador de Windows.
-2.  Escriba AccServer.exe en la línea de comandos o haga doble clic en el icono AccServer.exe para iniciarlo desde Explorador de Windows.
+1.  Vaya al directorio que contiene el nuevo ejecutable mediante el símbolo del sistema o Windows Explorador.
+2.  Escriba AccServer.exe en la línea de comandos o haga doble clic en el icono de AccServer.exe para iniciarlo desde Windows Explorador.
 
 Para ejecutar desde Visual Studio, presione F5 o haga clic **en Iniciar depuración** en el **menú** Depurar.
 

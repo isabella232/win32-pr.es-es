@@ -1,6 +1,6 @@
 ---
 title: XTYP_ADVREQ transacción (Ddeml.h)
-description: La transacción AD ESTAQ de XTYP informa al servidor de que hay una transacción de aviso pendiente en el par de nombre de tema y nombre de elemento especificado y que los datos correspondientes al nombre del tema y al par de nombres de elemento han \_ cambiado.
+description: La transacción XTYP AD FTPQ informa al servidor de que hay una transacción de aviso pendiente en el par de nombre de tema y nombre de elemento especificado y que los datos correspondientes al nombre del tema y al par de nombres de elemento han \_ cambiado.
 ms.assetid: 9bd43e61-cbd6-4d53-bab3-90e85819b16b
 keywords:
 - XTYP_ADVREQ datos de transacción Exchange
@@ -21,9 +21,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118544890"
 ---
-# <a name="xtyp_advreq-transaction"></a>Transacción \_ adjetición de XTYP
+# <a name="xtyp_advreq-transaction"></a>Transacción \_ de XTYP AD ESTAQ
 
-La transacción **\_ AD ESTAQ de XTYP** informa al servidor de que hay una transacción de aviso pendiente en el par de nombre de tema y nombre de elemento especificado y que los datos correspondientes al nombre del tema y al par de nombres de elemento han cambiado. El sistema envía esta transacción a la función de datos dinámicos Exchange (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), después de que el servidor llame a la función [**DdePostAdvise.**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise)
+La transacción **\_ XTYP AD FTPQ** informa al servidor de que hay una transacción de aviso pendiente en el par de nombre de tema y nombre de elemento especificado y que los datos correspondientes al nombre del tema y al par de nombres de elemento han cambiado. El sistema envía esta transacción a la función de devolución de llamada datos dinámicos Exchange (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), después de que el servidor llame a la función [**DdePostAdvise.**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise)
 
 
 ```C++
@@ -83,9 +83,9 @@ No se usa.
 *dwData1* 
 </dt> <dd>
 
-El recuento, en la palabra de orden bajo, de las transacciones **\_ de AD LAMBDAQ de XTYP** que permanecen para procesarse en el mismo tema, elemento y nombre de formato establecido en el contexto de la llamada actual a la función [**DdePostAdvise.**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise) El recuento es cero si la transacción actual de AD FAQ de **XTYP \_** es la última. Un servidor puede usar este recuento para determinar si se debe crear un identificador de **datos \_ APPOWNED** de HDATA para los datos de asesoramiento.
+El recuento, en la palabra de orden bajo, de las transacciones **\_ adjetivo XTYP** que permanecen para procesarse en el mismo tema, elemento y nombre de formato establecidos en el contexto de la llamada actual a la función [**DdePostAdvise.**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise) El recuento es cero si la transacción **\_ adverso de XTYP** actual es la última. Un servidor puede usar este recuento para determinar si se va a crear un identificador de datos **\_ APPOWNED** de HDATA para los datos de asesoramiento.
 
-La palabra de orden bajo se establece en **CADV \_ LATEACK** si la DDEML emitió la transacción **AD \_ AAAA de XTYP** debido a un mensaje DDE ACK de llegada tardía de un cliente que está fuera de ejecución por el \_ servidor.
+La palabra de orden bajo se establece en **CADV \_ LATEACK** si la DDEML emitió la transacción **\_ ADBIZQ de XTYP** debido a un mensaje DDE ACK de llegada tardía de un cliente que el servidor ha \_ sobrepasado.
 
 No se usa la palabra de orden superior.
 
@@ -102,7 +102,7 @@ No se usa.
 
 El servidor debe llamar primero a la función [**DdeCreateDataHandle**](/windows/desktop/api/Ddeml/nf-ddeml-ddecreatedatahandle) para crear un identificador de datos que identifique los datos modificados y, a continuación, devolver el identificador. El servidor debe devolver **NULL** si no puede completar la transacción.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Un servidor no puede bloquear este tipo de transacción; Se omite el código de retorno **\_ CBR BLOCK.**
 
@@ -110,7 +110,7 @@ Un servidor no puede bloquear este tipo de transacción; Se omite el código de 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                   |
@@ -118,7 +118,7 @@ Un servidor no puede bloquear este tipo de transacción; Se omite el código de 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

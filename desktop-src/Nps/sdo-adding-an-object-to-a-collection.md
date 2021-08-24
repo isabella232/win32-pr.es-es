@@ -5,16 +5,16 @@ ms.assetid: fc62698d-0bb9-478c-91cf-9f8fec36dba4
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b1990829e88d54838dbce2658c914ceff602d8e8
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a0f359df40b864c6dcbc1e251e35661b137990ebb9473a177423fbf18acb43e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105685766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118362267"
 ---
 # <a name="adding-an-object-to-a-collection"></a>Agregar un objeto a una colección
 
-El código siguiente agrega una nueva Directiva a la colección de directivas de IAS. La variable pClientsCollection apunta a una interfaz [**ISdoCollection**](/windows/desktop/api/sdoias/nn-sdoias-isdocollection) para la colección. Consulte [recuperar una colección](/windows/desktop/Nps/sdo-retrieving-a-collection) para obtener información sobre cómo recuperar el objeto de colección.
+El código siguiente agrega una nueva directiva a la colección de directivas IAS. La variable pClientsCollection apunta a una [**interfaz ISdoCollection**](/windows/desktop/api/sdoias/nn-sdoias-isdocollection) para la colección. Vea [Recuperar una colección para](/windows/desktop/Nps/sdo-retrieving-a-collection) obtener información sobre cómo recuperar el objeto de colección.
 
 
 ```C++
@@ -111,21 +111,21 @@ El código siguiente agrega una nueva Directiva a la colección de directivas de
 
 <dl> <dt>
 
-[\_BSTR \_ t](/previous-versions/visualstudio/visual-studio-6.0/aa278286(v=vs.60))
+[\_bstr \_ t](/previous-versions/visualstudio/visual-studio-6.0/aa278286(v=vs.60))
 </dt> <dt>
 
-[**ISdoCollection:: Add**](/windows/desktop/api/sdoias/nf-sdoias-isdocollection-add)
+[**ISdoCollection::Add**](/windows/desktop/api/sdoias/nf-sdoias-isdocollection-add)
 </dt> <dt>
 
 [**ISdoCollection::IsNameUnique**](/windows/desktop/api/sdoias/nf-sdoias-isdocollection-isnameunique)
 </dt> <dt>
 
-[Recuperación de una colección](/windows/desktop/Nps/sdo-retrieving-a-collection)
+[Recuperar una colección](/windows/desktop/Nps/sdo-retrieving-a-collection)
 </dt> <dt>
 
-[**VARIANTE**](/windows/win32/api/oaidl/ns-oaidl-variant)
+[**Variante**](/windows/win32/api/oaidl/ns-oaidl-variant)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

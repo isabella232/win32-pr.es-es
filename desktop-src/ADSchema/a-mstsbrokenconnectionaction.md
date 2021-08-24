@@ -36,7 +36,7 @@ Acción de conexión rota de la sesión de Terminal Services especifica la acci�
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1985              |
 | System-Id-Guid    | 1cf41bba-5604-463e-94d6-1a1287b72ca3 |
-| Syntax            | [**Booleana**](s-boolean.md)         |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 
@@ -50,7 +50,7 @@ Acción de conexión rota de la sesión de Terminal Services especifica la acci�
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------|
 | Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |

@@ -13,7 +13,7 @@ ms.locfileid: "118220808"
 ---
 # <a name="ink-on-the-web"></a>Ink on the Web
 
-El kit de desarrollo de software de Windows Vista y el kit de desarrollo de Windows XP Tablet PC Edition permiten crear aplicaciones web habilitadas para lápiz para los usuarios de Tablet PC que deben acceder a aplicaciones remotas. Hay dos técnicas básicas para lograrlo: una es la implementación sin toque, que permite implementar aplicaciones .NET desde un servidor web o de archivos, y la otra es crear páginas web habilitadas para entrada de lápiz con controles de Windows Forms. En ambos casos, la entrada de lápiz se controla en el cliente, en lugar del servidor. Tenga en cuenta que la API COM no es compatible con la Web.
+El kit de desarrollo de software de Windows Vista y el kit de desarrollo de Windows XP Tablet PC Edition permiten crear aplicaciones web habilitadas para lápiz para los usuarios de Tablet PC que deben acceder a aplicaciones remotas. Hay dos técnicas básicas para lograrlo: una es la implementación sin toque, que permite implementar aplicaciones .NET desde un servidor web o de archivos, y la otra es crear páginas web habilitadas para lápiz con controles Windows Forms. En ambos casos, la entrada de lápiz se controla en el cliente, en lugar del servidor. Tenga en cuenta que la API COM no es compatible con la Web.
 
 Para usar el procesamiento del lado cliente a través de web, debe comprender el modelo de seguridad de .NET y cómo el funcionamiento bajo confianza parcial afecta a la aplicación. Por esta razón, también se analiza la seguridad y la confianza para las aplicaciones de Tablet PC.
 

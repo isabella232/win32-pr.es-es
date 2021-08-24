@@ -19,9 +19,9 @@ ms.locfileid: "118554250"
 ---
 # <a name="registering-for-system-registry-events"></a>Registro de eventos del Registro del sistema
 
-Para recibir notificaciones del proveedor del [Registro del](/previous-versions/windows/desktop/regprov/system-registry-provider) sistema, una aplicación de administración debe registrarse como consumidor de eventos temporal. La mayoría de los requisitos para registrarse para el proveedor del Registro del sistema son los mismos que cualquier otro registro de eventos, excepto que también debe realizar el procedimiento siguiente.
+Para recibir notificaciones del proveedor [del Registro del](/previous-versions/windows/desktop/regprov/system-registry-provider) sistema, una aplicación de administración debe registrarse como consumidor de eventos temporal. La mayoría de los requisitos para registrarse para el proveedor del Registro del sistema son los mismos que cualquier otro registro de eventos, excepto que también debe realizar el procedimiento siguiente.
 
-El proveedor del Registro proporciona clases de eventos para los eventos del registro del sistema. Para obtener más información sobre el registro de eventos generales, vea [Recepción de un evento WMI](receiving-a-wmi-event.md).
+El proveedor del Registro proporciona clases de eventos para eventos en el registro del sistema. Para obtener más información sobre el registro de eventos general, vea [Recibir un evento WMI](receiving-a-wmi-event.md).
 
 En el procedimiento siguiente se describe cómo registrarse para eventos del registro del sistema.
 
@@ -48,7 +48,7 @@ En el procedimiento siguiente se describe cómo registrarse para eventos del reg
 
      
 
-    Estas clases tienen una propiedad denominada **Hive** que identifica la jerarquía de claves que se va a supervisar para el cambio, como **HKEY \_ LOCAL \_ MACHINE.**
+    Estas clases tienen una propiedad denominada **Hive** que identifica la jerarquía de claves que se va a supervisar para el cambio, como **HKEY \_ LOCAL \_ MACHINE**.
 
     Los cambios en los subárboles **HKEY \_ CLASSES \_ ROOT** y **HKEY \_ CURRENT \_ USER** no son compatibles con [**RegistryEvent**](/previous-versions/windows/desktop/regprov/registryevent) ni con las clases derivadas de él, como [**RegistryTreeChangeEvent.**](/previous-versions/windows/desktop/regprov/registrytreechangeevent)
 
@@ -56,11 +56,11 @@ En el procedimiento siguiente se describe cómo registrarse para eventos del reg
 
     El proveedor del Registro del sistema tiene reglas específicas para las cláusulas WHERE. Para obtener más información, vea [Creating a Proper WHERE Clause for the Registry Provider](creating-a-proper-where-clause-for-the-registry-provider.md). Para obtener más información general sobre cómo crear una cláusula WHERE, vea [Consulta con WQL.](querying-with-wql.md)
 
-4.  Determine si el consumidor recibe eventos.
+4.  Determine si el consumidor está recibiendo eventos.
 
     El proveedor del Registro del sistema no garantiza que se entreguen todos los eventos enviados. Para obtener más información, vea [Recepción de eventos del Registro.](receiving-registry-events.md)
 
-En el ejemplo de código de VBScript siguiente se muestra cómo detectar un cambio del Registro en el subárbol o subárbol de Microsoft **HKEY \_ LOCAL \_ MACHINE** \\ **SOFTWARE.** \\  Se trata de un script de supervisión que, con fines de demostración, se ejecuta en un proceso denominado Wscript.exe hasta que finaliza en **Administrador de tareas**, WMI se detiene o se reinicia el sistema operativo. El script usa una [*llamada semisincronosa*](gloss-s.md) [**paraSWbemServices.ExecNotificationQuery**](swbemservices-execnotificationquery.md). Para obtener más información sobre las llamadas semisincronosas, vea Realizar una llamada [semisincronosa con VBScript.](making-a-semisynchronous-call-with-vbscript.md)
+En el ejemplo de código de VBScript siguiente se muestra cómo detectar un cambio del Registro en el subárbol o subárbol de Microsoft **HKEY \_ LOCAL \_ MACHINE** \\ **SOFTWARE.** \\  Se trata de un script de supervisión que, con fines de demostración, se ejecuta en un proceso denominado Wscript.exe hasta que finaliza en **Administrador de tareas**, WMI se detiene o se reinicia el sistema operativo. El script usa una [*llamada semisincronosa*](gloss-s.md) [**aSWbemServices.ExecNotificationQuery**](swbemservices-execnotificationquery.md). Para obtener más información sobre las llamadas semisincronosas, vea Realizar una llamada [semisincronosa con VBScript.](making-a-semisynchronous-call-with-vbscript.md)
 
 
 ```VB
@@ -83,7 +83,7 @@ Wend
 
 En el ejemplo de código de VBScript siguiente se muestra cómo supervisar el cambio en los valores de una clave mediante el registro para el tipo de evento del proveedor del Registro [**RegistryKeyChangeEvent**](/previous-versions/windows/desktop/regprov/registrykeychangeevent). El script llama a un método asincrónico, [**SWbemServices.ExecNotificationQueryAsync**](swbemservices-execnotificationqueryasync.md). Para obtener más información sobre las llamadas asincrónicas y la seguridad, vea [Realizar una llamada asincrónica con VBScript.](making-an-asynchronous-call-with-vbscript.md)
 
-El siguiente script se ejecuta indefinidamente hasta que se reinicia el equipo, wmi se detiene o se detiene el script. Para detener el script manualmente, use Administrador de tareas para detener el proceso. Para detenerla mediante programación, use el [**método Terminate**](/windows/desktop/CIMWin32Prov/terminate-method-in-class-win32-process) en la clase Win32 \_ Process.
+El siguiente script se ejecuta indefinidamente hasta que se reinicia el equipo, se detiene WMI o se detiene el script. Para detener el script manualmente, use Administrador de tareas para detener el proceso. Para detenerla mediante programación, use el [**método Terminate**](/windows/desktop/CIMWin32Prov/terminate-method-in-class-win32-process) en la clase Process de Win32. \_
 
 
 ```VB

@@ -1,9 +1,9 @@
 ---
-title: NM_KILLFOCUS (vista de árbol) código de notificación (Commctrl.h)
+title: NM_KILLFOCUS de notificación (vista de árbol) (Commctrl.h)
 description: Notifica a la ventana primaria de un control de vista de árbol que el control ha perdido el foco de entrada. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: f6646a39-6480-4417-9c1c-ffd2417ca7dd
 keywords:
-- NM_KILLFOCUS (vista de árbol) código de notificación Windows controles
+- NM_KILLFOCUS código de notificación (vista de árbol) Windows controles
 topic_type:
 - apiref
 api_name:

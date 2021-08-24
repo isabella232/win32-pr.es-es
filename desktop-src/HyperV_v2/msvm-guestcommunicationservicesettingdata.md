@@ -1,7 +1,7 @@
 ---
-description: Representa la configuración del servicio de comunicación invitado.
+description: Representa la configuración del servicio de comunicación de invitado.
 ms.assetid: c36d3002-d43e-4284-b765-2795c941f023
-title: Msvm_GuestCommunicationServiceSettingData (clase)
+title: Msvm_GuestCommunicationServiceSettingData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: c5506689f5b266c428a790774c1fb98a1b0413b2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 67026a1dd7e605effb923305c45d329e7a2a502fe0324f00d2ddcf346c899778
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118148054"
 ---
-# <a name="msvm_guestcommunicationservicesettingdata-class"></a>MSVM \_ GuestCommunicationServiceSettingData (clase)
+# <a name="msvm_guestcommunicationservicesettingdata-class"></a>Clase \_ GuestCommunicationServiceSettingData de Msvm
 
-Representa la configuración del servicio de comunicación invitado.
+Representa la configuración del servicio de comunicación de invitado.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -41,26 +41,26 @@ class Msvm_GuestCommunicationServiceSettingData : CIM_SettingData
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ GuestCommunicationServiceSettingData** tiene estos tipos de miembros:
+La **clase \_ GuestCommunicationServiceSettingData de Msvm** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ GuestCommunicationServiceSettingData** tiene estas propiedades.
+La **clase \_ GuestCommunicationServiceSettingData de Msvm** tiene estas propiedades.
 
 <dl> <dt>
 
 **EnabledStatePolicy**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-EnabledStatePolicy es una enumeración de enteros que indica el estado habilitado, deshabilitado o predeterminado de **MSVM \_ GuestCommunicationServiceSettingData**.
+EnabledStatePolicy es una enumeración de enteros que indica el estado habilitado, deshabilitado o predeterminado de **Msvm \_ GuestCommunicationServiceSettingData**.
 
 <dt>
 
@@ -82,18 +82,18 @@ El servicio de comunicación se establece en el estado habilitado.
 
 </dt> <dd>
 
-El servicio de comunicación se establece en el Estado deshabilitado.
+El servicio de comunicación se establece en el estado deshabilitado.
 
 </dd> <dt>
 
 <span id="Deferred"></span><span id="deferred"></span><span id="DEFERRED"></span>
 
-<span id="Deferred"></span><span id="deferred"></span><span id="DEFERRED"></span>**Diferida** (8)
+<span id="Deferred"></span><span id="deferred"></span><span id="DEFERRED"></span>**Aplazado** (8)
 
 
 </dt> <dd>
 
-El estado del servicio de comunicación depende de **DefaultEnabledStatePolicy** en **MSVM \_ GuestCommunicationServiceSettingData**.
+El estado del servicio de comunicación depende **de DefaultEnabledStatePolicy** en **Msvm \_ GuestCommunicationServiceSettingData**.
 
 </dd> </dl>
 
@@ -116,12 +116,12 @@ GUID del servicio.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -130,7 +130,7 @@ GUID del servicio.
 
 <dl> <dt>
 
-[**SettingData de CIM \_**](cim-settingdata.md)
+[**CIM \_ SettingData**](cim-settingdata.md)
 </dt> </dl>
 
  

@@ -12,17 +12,17 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 113b128ce9b372d077056692c0956f86e1412f9e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 7009c44cb91d9b0e7db6510884d56ad4a8421a1e8382eb378eb67b8cf81f95d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105677118"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118399155"
 ---
 # <a name="ifindcompressorcb-interface"></a>Interfaz IFindCompressorCB
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
@@ -30,13 +30,13 @@ La interfaz `IFindCompressorCB` no se admite.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IFindCompressorCB** hereda de la interfaz [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) , pero no tiene miembros adicionales.
+La **interfaz IFindCompressorCB** hereda de la [**interfaz IUnknown,**](/windows/win32/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Referencia de C++ de los servicios de edición de DirectShow](directshow-editing-services-c---reference.md)
+[DirectShow Referencia de C++ de Servicios de edición](directshow-editing-services-c---reference.md)
 </dt> </dl>
 
  

@@ -1,31 +1,31 @@
 ---
-title: 'Ejemplos del proveedor WMI de DNS: administración de registros de recursos DNS'
-description: 'Ejemplos del proveedor WMI de DNS: administración de registros de recursos DNS'
+title: 'Ejemplos de proveedores WMI de DNS: administración de registros de recursos DNS'
+description: 'Ejemplos de proveedores WMI de DNS: administración de registros de recursos DNS'
 ms.assetid: 4b038c74-eec8-459c-9e3f-3be2a244d313
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c6b6494168ef6a5ee4aa035879468e2c1a92d4e6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 089cf567452666db54ad0e0d784b2bf3b2566e0e986ba94a9e9d498a387468c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994156"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118163844"
 ---
-# <a name="dns-wmi-provider-samplesmanaging-dns-resource-records"></a>Ejemplos del proveedor WMI de DNS: administración de registros de recursos DNS
+# <a name="dns-wmi-provider-samplesmanaging-dns-resource-records"></a>Ejemplos de proveedores WMI de DNS: administración de registros de recursos DNS
 
-En esta sección se muestran las tareas de scripting asociadas a la administración de registros de recursos DNS. Los vínculos siguientes saltan a las subrutinas del archivo de script.
+En esta sección se muestran las tareas de scripting asociadas a la administración de registros de recursos DNS. Los vínculos siguientes saltan a subrutinas en el archivo de script.
 
--   [Enumerar registros de recursos](#list-resource-records)
--   [Agregar un registro de recursos](#add-a-resource-record)
--   [Eliminar un registro de recursos](#delete-a-resource-record)
--   [Modificar un registro de recursos](#modify-a-resource-record)
--   [Conectar con el proveedor WMI de DNS](#connect-to-the-dns-wmi-provider)
+-   [Enumeración de registros de recursos](#list-resource-records)
+-   [Adición de un registro de recursos](#add-a-resource-record)
+-   [Eliminación de un registro de recursos](#delete-a-resource-record)
+-   [Modificación de un registro de recursos](#modify-a-resource-record)
+-   [Conectar al proveedor WMI de DNS](#connect-to-the-dns-wmi-provider)
 
 La implementación general del script es la siguiente:
 
 1.  Se crea una clase para cada tipo de registro de recursos.
-2.  Los datos de registro de recursos se proporcionan a través de entradas de línea de comandos del usuario e información del proveedor WMI de DNS para cada clase de tipo de registro.
-3.  Se crean funciones comunes, como List, delete y Modify, y se pueden usar en clases de tipo de registro de recursos individuales.
+2.  Los datos del registro de recursos se proporcionan a través de entradas de la línea de comandos del usuario e información del proveedor WMI de DNS para cada clase de tipo de registro.
+3.  Se crean funciones comunes como list, delete y modify y se pueden usar en clases de tipo de registro de recursos individuales.
 
 En este ejemplo de código se muestran las tareas asociadas a la administración de registros de recursos DNS.
 
@@ -4192,9 +4192,9 @@ End Class
 
 
 
-## <a name="list-resource-records"></a>Enumerar registros de recursos
+## <a name="list-resource-records"></a>Enumeración de registros de recursos
 
-En este ejemplo de código se muestran las tareas asociadas con la enumeración de registros de recursos.
+En este ejemplo de código se muestran las tareas asociadas a la enumeración de registros de recursos.
 
 
 ```VB
@@ -4318,7 +4318,7 @@ End Sub
 
 ## <a name="add-a-resource-record"></a>Agregar un registro de recursos
 
-En este ejemplo de código se muestran las tareas asociadas con la adición de registros de recursos.
+En este ejemplo de código se muestran las tareas asociadas a la adición de registros de recursos.
 
 
 ```VB
@@ -4406,7 +4406,7 @@ End Sub
 
 
 
-## <a name="delete-a-resource-record"></a>Eliminar un registro de recursos
+## <a name="delete-a-resource-record"></a>Eliminación de un registro de recursos
 
 En este ejemplo de código se muestran las tareas asociadas a la eliminación de registros de recursos.
 
@@ -4492,7 +4492,7 @@ End Sub
 
 ## <a name="modify-a-resource-record"></a>Modificar un registro de recursos
 
-En este ejemplo de código se muestran las tareas asociadas al cambio de registros de recursos.
+En este ejemplo de código se muestran las tareas asociadas con el cambio de registros de recursos.
 
 
 ```VB
@@ -5183,7 +5183,7 @@ End Function
 
 
 
-## <a name="connect-to-the-dns-wmi-provider"></a>Conectar con el proveedor WMI de DNS
+## <a name="connect-to-the-dns-wmi-provider"></a>Conectar al proveedor WMI de DNS
 
 En este ejemplo de código se muestran las tareas asociadas a la conexión a un proveedor WMI de DNS.
 
@@ -5417,9 +5417,9 @@ End Function
 
 
 
- 
+ 
 
- 
+ 
 
 
 

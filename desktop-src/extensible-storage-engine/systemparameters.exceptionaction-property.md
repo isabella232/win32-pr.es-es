@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: SystemParameters. ExceptionAction (propiedad)'
-title: Propiedad SystemParameters. ExceptionAction
+description: 'Más información sobre: Propiedad SystemParameters.ExceptionAction'
+title: Propiedad SystemParameters.ExceptionAction
 TOCTitle: 'ExceptionAction property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.SystemParameters.ExceptionAction
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.systemparameters.exceptionaction(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 900a29f9304f869712cd72fd51926fd15a030dca
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 217942d9827a715858c76a704092259a5c3df25f98bf4eac7d5835450f502e3f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105649303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118484901"
 ---
-# <a name="systemparametersexceptionaction-property"></a>Propiedad SystemParameters. ExceptionAction
+# <a name="systemparametersexceptionaction-property"></a>Propiedad SystemParameters.ExceptionAction
 
-Obtiene o establece la codificación de valores que se debe hacer con las excepciones generadas en JET.
+Obtiene o establece el valor que codifica qué hacer con las excepciones generadas en JET.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -61,14 +61,14 @@ public static JET_ExceptionAction ExceptionAction { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_ExceptionAction](./jet-exceptionaction-enumeration.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_ExceptionAction](./jet-exceptionaction-enumeration.md)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
 [SystemParameters (clase)](./systemparameters-class.md)
 
-[Miembros de SystemParameters](./systemparameters-members.md)
+[Miembros SystemParameters](./systemparameters-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

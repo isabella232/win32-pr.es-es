@@ -1,5 +1,5 @@
 ---
-description: Esta clase es la clase de tipo de evento para eventos de rutina completa de controlador. La siguiente sintaxis se simplifica desde el código MOF.
+description: Esta clase es la clase de tipo de evento para los eventos de rutina completos del controlador. La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: deb4f0b2-d73f-4ccf-b39b-6e92b32489fb
 title: Clase DriverCompletionRoutine
 ms.topic: reference
@@ -15,18 +15,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 2b43862169cbe8f192f8fb9db561c2e101f377b3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ac1329c60f38ebfb4597b85ec251e074babd2c1fde7e58fee2423b6a11be92f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907709"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117814893"
 ---
 # <a name="drivercompletionroutine-class"></a>Clase DriverCompletionRoutine
 
-Esta clase es la clase de tipo de evento para eventos de rutina completa de controlador.
+Esta clase es la clase de tipo de evento para los eventos de rutina completos del controlador.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,61 +42,61 @@ class DriverCompletionRoutine : DiskIo
 
 ## <a name="members"></a>Miembros
 
-La clase **DriverCompletionRoutine** tiene estos tipos de miembros:
+La **clase DriverCompletionRoutine** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **DriverCompletionRoutine** tiene estas propiedades.
+La **clase DriverCompletionRoutine** tiene estas propiedades.
 
 <dl> <dt>
 
-**IRP**
+**Irp**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (2), puntero
+Calificadores: WmiDataId(2), Pointer
 </dt> </dl>
 
-Paquete de solicitud de e/s.
+Paquete de solicitud de E/S.
 
 </dd> <dt>
 
 **Rutina**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1), puntero
+Calificadores: WmiDataId(1), Pointer
 </dt> </dl>
 
-Dirección de la función de controlador que se va a llamar.
+Dirección de la función de controlador a la que se llama.
 
 </dd> <dt>
 
 **UniqMatchId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (3)
+Calificadores: WmiDataId(3)
 </dt> </dl>
 
-Identificador que identifica de forma única la solicitud. Use este identificador para correlacionar con los otros eventos del controlador, por ejemplo, el evento [**DriverCompleteRequest**](drivercompleterequest.md) .
+Identificador que identifica de forma única la solicitud. Use este identificador para correlacionar con los demás eventos de controlador, por ejemplo, [**el evento DriverCompleteRequest.**](drivercompleterequest.md)
 
 </dd> </dl>
 
@@ -106,8 +106,8 @@ Identificador que identifica de forma única la solicitud. Use este identificado
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -115,7 +115,7 @@ Identificador que identifica de forma única la solicitud. Use este identificado
 
 <dl> <dt>
 
-[**Desmontaje**](diskio.md)
+[**DiskIo**](diskio.md)
 </dt> </dl>
 
  

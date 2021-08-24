@@ -1,9 +1,9 @@
 ---
-title: Mensaje de ICM_COMPRESS_BEGIN (VFW. h)
-description: El mensaje de inicio de compress de ICM \_ notifica a \_ un controlador de compresión de vídeo que debe prepararse para comprimir los datos. Puede enviar este mensaje explícitamente o mediante la macro ICCompressBegin.
+title: ICM_COMPRESS_BEGIN mensaje (Vfw.h)
+description: El ICM \_ COMPRESS \_ BEGIN notifica a un controlador de compresión de vídeo que se prepare para comprimir los datos. Puede enviar este mensaje explícitamente o mediante la macro ICCompressBegin.
 ms.assetid: dd1d3a66-c625-4f55-b65a-8545c1c16301
 keywords:
-- Mensaje de ICM_COMPRESS_BEGIN de Windows multimedia
+- ICM_COMPRESS_BEGIN mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e358aa3ab589af0be1e4e490c141ed41baeb5874
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 33a6ee9c080e2dfc7a779abd4ae2a788bbe136ddcab1ef529714639065553ad0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079752"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118140953"
 ---
-# <a name="icm_compress_begin-message"></a>Mensaje de inicio de \_ compresión ICM \_
+# <a name="icm_compress_begin-message"></a>\_ICM Mensaje \_ COMPRESS BEGIN
 
-El mensaje de **\_ \_ Inicio de compress de ICM** notifica a un controlador de compresión de vídeo que debe prepararse para comprimir los datos. Puede enviar este mensaje explícitamente o mediante la macro [**ICCompressBegin**](/windows/desktop/api/Vfw/nf-vfw-iccompressbegin) .
+El **ICM \_ COMPRESS \_ BEGIN** notifica a un controlador de compresión de vídeo que se prepare para comprimir los datos. Puede enviar este mensaje explícitamente o mediante la macro [**ICCompressBegin.**](/windows/desktop/api/Vfw/nf-vfw-iccompressbegin)
 
 
 ```C++
@@ -41,26 +41,26 @@ lParam = (DWORD_PTR) (LPVOID) lpbiOutput;
 <span id="lpbiInput"></span><span id="lpbiinput"></span><span id="LPBIINPUT"></span>*lpbiInput*
 </dt> <dd>
 
-Puntero a una estructura [**bitmapinfo (**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) que contiene el formato de entrada.
+Puntero a una [**estructura BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) que contiene el formato de entrada.
 
 </dd> <dt>
 
 <span id="lpbiOutput"></span><span id="lpbioutput"></span><span id="LPBIOUTPUT"></span>*lpbiOutput*
 </dt> <dd>
 
-Puntero a una estructura [**bitmapinfo (**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) que contiene el formato de salida.
+Puntero a una [**estructura BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) que contiene el formato de salida.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve ICERR \_ OK si el controlador admite la compresión especificada o \_ BADFORMAT ICERR si no se admite el formato de entrada o salida.
+Devuelve ICERR OK si el controlador admite la compresión especificada o ICERR BADFORMAT si no se admite el formato de entrada \_ \_ o salida.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El controlador debe asignar e inicializar las tablas o la memoria que necesita para comprimir los formatos de datos cuando recibe el mensaje [**de \_ compresión ICM**](icm-compress.md) .
+El controlador debe asignar e inicializar las tablas o memoria que necesite para comprimir los formatos de datos cuando recibe el [**ICM \_ COMPRESS.**](icm-compress.md)
 
-VCM guarda la configuración del mensaje de **Inicio de \_ compresión \_ ICM** más reciente. Los mensajes end **\_ compress \_ Begin** y [**ICM \_ compress \_**](icm-compress-end.md) no se anidan. Si el controlador recibe la compresión de **ICM \_ \_ comienza** antes de que se detenga la compresión con el **\_ \_ fin de comprimir ICM**, debe reiniciar la compresión con nuevos parámetros.
+VCM guarda la configuración de la versión más **reciente ICM el mensaje COMPRESS \_ \_ BEGIN.** Los **ICM BEGIN y COMPRESS \_ \_ BEGIN** [**ICM los mensajes COMPRESS \_ \_ END**](icm-compress-end.md) no anidan. Si el controlador recibe ICM **\_ COMPRESS \_ BEGIN** antes de detener la compresión con **ICM COMPRESS \_ \_ END,** debe reiniciar la compresión con nuevos parámetros.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,7 +70,7 @@ VCM guarda la configuración del mensaje de **Inicio de \_ compresión \_ ICM** 
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

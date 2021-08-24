@@ -32,17 +32,17 @@ Especifica el borde superior del rectángulo que contiene la forma en relación 
 
 **Sintaxis de script**
 
-*element* .margin-top="*expression*"
+*Element* .margin-top="*expression*"
 
 *expresión* = *elemento*.margin-top
 
 **Comentarios:**
 
-El **atributo Margin-Top** es similar al atributo estándar **margin-top** HTML que se usa con las hojas de estilos.
+El **atributo Margin-Top** es similar al atributo estándar **margin-top** html que se usa con las hojas de estilos.
 
-Tenga en cuenta **que se usa margintop** en lugar **de margin-top** para scripting. Tenga en cuenta también que si **la posición** es **absoluta,** el margen no parecerá cambiar.
+Tenga en cuenta **que se usa margintop** en lugar **de margin-top** para el scripting. Tenga en cuenta también que **si la posición** es **absoluta,** el margen no parecerá cambiar.
 
-Esta propiedad se usa en lugar de **Top** para las formas Microsoft Word y Microsoft Excel que están flotantes en una posición relativa a un punto de anclaje.
+Esta propiedad se usa en lugar de **Top** para las formas de Microsoft Word y Microsoft Excel que están flotantes en una posición relativa a un punto delimitador.
 
 Estos valores incluyen:
 
@@ -51,8 +51,8 @@ Estos valores incluyen:
 | Valor      | Descripción                                                                                                                                                                                       |
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Auto       | Posición predeterminada de un elemento en el flujo de la página.                                                                                                                                           |
-| units      | Predeterminada. Número con un designador de unidades absolutas (cm, mm, in, pt, pc o px) o un designador de unidades relativas (em o ex). Si no se da ninguna unidad, se suponen píxeles (px). El valor predeterminado es 0. |
-| percentage | Valor expresado como porcentaje del alto del objeto primario.                                                                                                                                    |
+| units      | Predeterminada. Número con un designador de unidades absolutas (cm, mm, in, pt, pc o px) o un designador de unidades relativas (em o ex). Si no se dan unidades, se asumen píxeles (px). El valor predeterminado es 0. |
+| percentage | Valor expresado como un porcentaje del alto del objeto primario.                                                                                                                                    |
 
 
 

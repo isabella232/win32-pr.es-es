@@ -1,9 +1,9 @@
 ---
 title: DRM_ActionAllowed_Copy
-description: El \_ atributo de copia ActionAllowed de DRM \_ indica si se permite copiar el contenido en un dispositivo, como un reproductor portátil.
+description: El atributo ActionAllowed Copy de DRM indica si se permite copiar el contenido en un dispositivo, como \_ \_ un reproductor portátil.
 ms.assetid: 3a391a14-ccbb-43c6-b362-0db53d93ab79
 keywords:
-- DRM_ActionAllowed_Copy formato de Windows Media
+- DRM_ActionAllowed_Copy windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -12,41 +12,41 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea4a890ae03d3adf3b28bb2dce03e2eac5578abe
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 437dba087a336322fe1574112dce0b6b5805d05778613924f577c16343d33604
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "105704900"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118704786"
 ---
-# <a name="drm_actionallowed_copy"></a>\_Copia de ActionAllowed de DRM \_
+# <a name="drm_actionallowed_copy"></a>Acción \_ de DRMAllowed \_ Copy
 
-El atributo de **\_ \_ copia ActionAllowed de DRM** indica si se permite copiar el contenido en un dispositivo, como un reproductor portátil.
+El **atributo \_ ActionAllowed \_ Copy** de DRM indica si se permite copiar el contenido en un dispositivo, como un reproductor portátil.
 
 ## <a name="global-constant"></a>Constante global
 
-g \_ wszWMDRM \_ ActionAllowed \_
+g \_ wszWMDRM \_ ActionAllowed \_ Copy
 
 ## <a name="data-type"></a>Tipo de datos
 
-**tipo de WMT \_ \_ bool**
+**WMT \_ TYPE \_ BOOL**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En Windows Media DRM 10, todas las operaciones de copia están restringidas mediante la acción de copia.
+En Windows DRM 10 de multimedia, todas las operaciones de copia están restringidas mediante la acción Copiar.
 
-Se trata de una propiedad de solo lectura que se recupera mediante [**IWMDRMReader:: GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-getdrmproperty).
+Se trata de una propiedad de solo lectura que se recupera mediante [**IWMDRMReader::GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-getdrmproperty).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Propiedades de DRM**](drm-properties.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

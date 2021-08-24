@@ -33,7 +33,7 @@ ms.locfileid: "118488159"
 ---
 # <a name="esenttoomanysortsexception-class"></a>Clase EsentTooManySortsException
 
-Clase base para JET_err. Excepciones de TooManySorts.
+Clase base para JET_err. TooManySorts exceptions.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
@@ -69,7 +69,7 @@ public sealed class EsentTooManySortsException : EsentMemoryException
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

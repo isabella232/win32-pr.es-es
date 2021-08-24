@@ -32,7 +32,7 @@ Terminal Services administra el servidor de licencias.
 | CN                | MS-TS-ManagingLS                            |
 | Ldap-Display-Name | msTSManagingLS                              |
 | Size              | \-                                          |
-| Actualizar privilegios  | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1995                     |
 | System-Id-Guid    | f3bcc547-85b0-432c-9ac0-304506bf2c83        |
@@ -50,7 +50,7 @@ Terminal Services administra el servidor de licencias.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------|
 | Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
@@ -71,7 +71,7 @@ Terminal Services administra el servidor de licencias.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------|
 | Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
@@ -92,7 +92,7 @@ Terminal Services administra el servidor de licencias.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------|
 | Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |

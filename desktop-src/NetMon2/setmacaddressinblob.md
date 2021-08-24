@@ -1,7 +1,7 @@
 ---
 description: La función SetMacAddressInBlob establece la dirección MAC solicitada de un BLOB.
 ms.assetid: f44d0cec-ced7-4d2a-a58e-aeb476bfe800
-title: Función SetMacAddressInBlob (Netmon. h)
+title: Función SetMacAddressInBlob (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 2183f5635dcdb15362a86a77ae2b3c109c71dbd5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 20ed4a0358bc0aecada66858f9814bce94252ff9d705c971be947ca5af788ab3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911317"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118364063"
 ---
-# <a name="setmacaddressinblob-function"></a>SetMacAddressInBlob función)
+# <a name="setmacaddressinblob-function"></a>Función SetMacAddressInBlob
 
-La función **SetMacAddressInBlob** establece la dirección Mac solicitada de un BLOB.
+La **función SetMacAddressInBlob** establece la dirección MAC solicitada de un BLOB.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,35 +43,35 @@ DWORD SetMacAddressInBlob(
 
 <dl> <dt>
 
-*hBlob* \[ de\]
+*hBlob* \[ En\]
 </dt> <dd>
 
-Identificador del BLOB que se va a establecer.
+Controle el BLOB que se va a establecer.
 
 </dd> <dt>
 
-*pOwnerName* \[ de\]
+*pOwnerName* \[ En\]
 </dt> <dd>
 
-Puntero al nombre del **propietario** del BLOB que se va a establecer.
+Puntero al nombre del **propietario de** BLOB que se va a establecer.
 
 </dd> <dt>
 
-*pCategoryName* \[ de\]
+*pCategoryName* \[ En\]
 </dt> <dd>
 
-Puntero al nombre de la **categoría** de BLOB que se va a establecer.
+Puntero al nombre de **la categoría** BLOB que se va a establecer.
 
 </dd> <dt>
 
-*pTagName* \[ de\]
+*pTagName* \[ En\]
 </dt> <dd>
 
-Puntero al nombre de la **etiqueta** de BLOB que se va a establecer.
+Puntero al nombre de **la etiqueta** BLOB que se va a establecer.
 
 </dd> <dt>
 
-*pMacAddress* \[ de\]
+*pMacAddress* \[ En\]
 </dt> <dd>
 
 Puntero a la dirección MAC del BLOB que se va a establecer.
@@ -80,25 +80,25 @@ Puntero a la dirección MAC del BLOB que se va a establecer.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente, el valor devuelto es NMERR \_ Success.
+Si la función se realiza correctamente, el valor devuelto es NMERR \_ SUCCESS.
 
-Si la función no es correcta, el valor devuelto es un valor de NMERR que indica el error.
+Si la función no se realiza correctamente, el valor devuelto es un valor NMERR que indica el error.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

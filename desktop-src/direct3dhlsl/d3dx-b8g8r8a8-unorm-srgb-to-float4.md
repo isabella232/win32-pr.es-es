@@ -46,7 +46,7 @@ Datos empaquetados del sombreador.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Datos del sombreador desempaquetar.
+Datos del sombreador desempaquetados.
 
 ## <a name="requirements"></a>Requisitos
 

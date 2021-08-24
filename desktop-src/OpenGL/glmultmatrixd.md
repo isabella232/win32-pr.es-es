@@ -77,7 +77,7 @@ Las siguientes funciones recuperan información relacionada **con glMultMatrix**
 
 [**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ MATRIX \_ MODE
 
-**glGet con** el argumento GL \_ MODELVIEW \_ MATRIX
+**glGet** con el argumento GL \_ MODELVIEW \_ MATRIX
 
 **glGet con** el argumento GL \_ PROJECTION \_ MATRIX
 

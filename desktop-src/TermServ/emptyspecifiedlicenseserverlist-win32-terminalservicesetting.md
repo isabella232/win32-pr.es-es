@@ -6,7 +6,7 @@ ms.tgt_platform: multiple
 keywords:
 - Método EmptySpecifiedLicenseServerList Servicios de Escritorio remoto
 - Método EmptySpecifiedLicenseServerList Servicios de Escritorio remoto , Win32_TerminalServiceSetting clase
-- Win32_TerminalServiceSetting clase Servicios de Escritorio remoto método , EmptySpecifiedLicenseServerList
+- Win32_TerminalServiceSetting clase Servicios de Escritorio remoto , método EmptySpecifiedLicenseServerList
 topic_type:
 - apiref
 api_name:
@@ -49,17 +49,17 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                       |
-| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                |
 | MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

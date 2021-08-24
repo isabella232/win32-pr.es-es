@@ -4,12 +4,12 @@ description: Funciones de entrada sin formato
 ms.assetid: 264d5576-9bc4-4c8c-9ffc-ed856877fae8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e8279a7200854b483307498eca00ea8e4a7bdbd8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d770b18a791d2825b156f1192bbf9a0ad7830428dd0a67a1ed253750e8a98714
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108087793"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118482771"
 ---
 # <a name="raw-input-functions"></a>Funciones de entrada sin formato
 

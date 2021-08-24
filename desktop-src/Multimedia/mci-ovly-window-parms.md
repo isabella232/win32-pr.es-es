@@ -1,9 +1,9 @@
 ---
-title: MCI_OVLY_WINDOW_PARMS estructura (Mciapi. h)
-description: La \_ estructura parms de la ventana de OVLY MCI \_ \_ contiene información de visualización de ventana para el comando de la \_ ventana MCI para dispositivos de superposición de vídeo.
+title: MCI_OVLY_WINDOW_PARMS estructura (Mciapi.h)
+description: La estructura MCI OVLY WINDOW PARMS contiene información de visualización de ventana para el comando MCI WINDOW para dispositivos \_ \_ de \_ \_ superposición de vídeo.
 ms.assetid: 1189f31e-6e54-4279-a23d-b4e21c6cd276
 keywords:
-- Estructura de MCI_OVLY_WINDOW_PARMS de Windows multimedia
+- MCI_OVLY_WINDOW_PARMS estructura Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a554c9ed4e4869eab333b93736a0400ef93053cc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bd19580dacdc819f35bc36ed8f0070a5fc1b9fc4b745c78711c4fc312611e3c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103995914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118138290"
 ---
-# <a name="mci_ovly_window_parms-structure"></a>\_Estructura parms de la ventana de OVLY MCI \_ \_
+# <a name="mci_ovly_window_parms-structure"></a>Estructura MCI \_ OVLY \_ WINDOW \_ PARMS
 
-La estructura parms de la **\_ ventana de OVLY \_ \_ MCI** contiene información de visualización de ventana para el comando de la [**\_ ventana MCI**](mci-window.md) para dispositivos de superposición de vídeo.
+La **estructura MCI \_ OVLY \_ WINDOW \_ PARMS** contiene información de visualización de ventana para el [**comando MCI \_ WINDOW**](mci-window.md) para dispositivos de superposición de vídeo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,21 +46,21 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La palabra de orden inferior especifica un identificador de ventana que se usa para la marca de notificación de MCI \_ .
+La palabra de orden bajo especifica un identificador de ventana que se usa para la marca \_ MCI NOTIFY.
 
 </dd> <dt>
 
 **hWnd**
 </dt> <dd>
 
-Identificador de la ventana de presentación.
+Identificador para mostrar la ventana.
 
 </dd> <dt>
 
 **nCmdShow**
 </dt> <dd>
 
-Comando de visualización de ventana.
+Comando Window-display.
 
 </dd> <dt>
 
@@ -71,7 +71,7 @@ Título de la ventana.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Al asignar datos a los miembros de esta estructura, establezca las marcas correspondientes en el parámetro *fdwCommand* de la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar los miembros.
 
@@ -83,7 +83,7 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -91,13 +91,13 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)
 </dt> <dt>
 
-[**\_ventana MCI**](mci-window.md)
+[**VENTANA \_ MCI**](mci-window.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

@@ -1,7 +1,7 @@
 ---
-description: Al hacer clic con el botón derecho en un objeto, normalmente se muestra un menú contextual. Este menú contiene una lista de comandos que el usuario puede seleccionar para realizar varias acciones en el objeto. Esta sección es una introducción a los menús contextuales de los objetos del sistema de archivos.
+description: Al hacer clic con el botón derecho en un objeto, normalmente se muestra un menú contextual. Este menú contiene una lista de comandos que el usuario puede seleccionar para realizar varias acciones en el objeto. Esta sección es una introducción a los menús contextuales para objetos del sistema de archivos.
 ms.assetid: d951d1e8-0f88-49c4-8373-e6db0e18cd72
-title: Extensión de menús contextuales
+title: Extender menús contextuales
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: d046805ebc787f5cad2bfaa40538c51b826c3f0541f3ec1afad508202a4a25fc
@@ -11,9 +11,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118460652"
 ---
-# <a name="extending-shortcut-menus"></a>Extensión de menús contextuales
+# <a name="extending-shortcut-menus"></a>Extender menús contextuales
 
-Al hacer clic con el botón derecho en un objeto, normalmente se muestra un *menú contextual.* Este menú contiene una lista de comandos que el usuario puede seleccionar para realizar varias acciones en el objeto. Esta sección es una introducción a los menús contextuales de los objetos del sistema de archivos.
+Al hacer clic con el botón derecho en un objeto, normalmente se muestra un *menú contextual.* Este menú contiene una lista de comandos que el usuario puede seleccionar para realizar varias acciones en el objeto. Esta sección es una introducción a los menús contextuales para objetos del sistema de archivos.
 
 -   [Menús contextuales para objetos del sistema de archivos](#shortcut-menus-for-file-system-objects)
 -   [Verbos del menú contextual](#shortcut-menu-verbs)
@@ -22,7 +22,7 @@ Al hacer clic con el botón derecho en un objeto, normalmente se muestra un *men
 -   [Extender el menú contextual para un tipo de archivo](#extending-the-shortcut-menu-for-a-file-type)
 -   [Extender el menú contextual para objetos de shell predefinidos](#extending-the-shortcut-menu-for-predefined-shell-objects)
 -   [Registro de una aplicación para controlar tipos de archivo arbitrarios](#registering-an-application-to-handle-arbitrary-file-types)
--   [Extensión del nuevo submenú](#extending-the-new-submenu)
+-   [Extender el nuevo submenú](#extending-the-new-submenu)
 
 Puede encontrar información adicional aquí:
 
@@ -31,25 +31,25 @@ Puede encontrar información adicional aquí:
 
 ## <a name="shortcut-menus-for-file-system-objects"></a>Menús contextuales para objetos del sistema de archivos
 
-Cuando un usuario hace clic con el botón derecho en un objeto, como un archivo, que se muestra en Windows Explorer o en el escritorio, aparece un menú contextual con una lista de comandos. A continuación, el usuario puede realizar una acción en el archivo, como abrirlo o eliminarlo, seleccionando el comando adecuado.
+Cuando un usuario hace clic con el botón derecho en un objeto, como un archivo, que se muestra en el Explorador de Windows o en el escritorio, aparece un menú contextual con una lista de comandos. A continuación, el usuario puede realizar una acción en el archivo, como abrirlo o eliminarlo, seleccionando el comando adecuado.
 
-Dado que los menús contextuales se usan a menudo para la administración de archivos, el Shell proporciona un conjunto de comandos predeterminados, como Cortar y Copiar, que aparecen en el menú contextual de cualquier archivo. Tenga en cuenta que aunque Abrir con es un comando predeterminado, no se muestra para algunos tipos de archivo estándar, como .wav. En la ilustración siguiente del directorio Mis documentos ejemplo, que también se usó como ejemplo en Personalización de iconos [,](icon.md)se muestra un menú contextual predeterminado que se muestra haciendo clic con el botón derecho en MyDocs4.xyz.
+Dado que los menús contextuales se usan a menudo para la administración de archivos, el Shell proporciona un conjunto de comandos predeterminados, como Cortar y Copiar, que aparecen en el menú contextual de cualquier archivo. Tenga en cuenta que aunque Abrir con es un comando predeterminado, no se muestra para algunos tipos de archivo estándar, como .wav. En la siguiente ilustración del directorio Mis documentos ejemplo, que también se usó como ejemplo en Personalización de iconos [,](icon.md)se muestra un menú contextual predeterminado que se muestra haciendo clic con el botón derecho MyDocs4.xyz.
 
 ![captura de pantalla del menú contextual predeterminado para objetos del sistema de archivos](images/context1.jpg)
 
-La razón por MyDocs4.xyz muestra un menú contextual predeterminado es que no es miembro de un tipo de [archivo registrado.](fa-file-types.md) Por otro lado, .txt es un tipo de archivo registrado. Si hace clic con el botón derecho en uno de los archivos .txt, verá en su lugar un menú contextual con dos comandos adicionales en su sección **superior:** Abrir e **Imprimir**.
+La razón MyDocs4.xyz muestra un menú contextual predeterminado es que no es miembro de un tipo de [archivo registrado.](fa-file-types.md) Por otro lado, .txt es un tipo de archivo registrado. Si hace clic con el botón derecho en uno de los .txt, verá en su lugar un menú contextual con dos comandos adicionales en su sección **superior:** Abrir **e imprimir**.
 
 ![captura de pantalla del menú contextual personalizado para objetos del sistema de archivos](images/context2.jpg)
 
-Una vez registrado un tipo de archivo, puede ampliar su menú contextual con comandos adicionales. Se muestran encima de los comandos predeterminados cuando se hace clic con el botón derecho en cualquier archivo de ese tipo. Aunque la mayoría de los comandos agregados de esta  manera son comunes, como Imprimir o **Abrir,** puede agregar cualquier comando que un usuario pueda resultarle útil.
+Una vez registrado un tipo de archivo, puede ampliar su menú contextual con comandos adicionales. Se muestran encima de los comandos predeterminados cuando se hace clic con el botón derecho en cualquier archivo de ese tipo. Aunque la mayoría de los comandos agregados de esta  manera son comunes, como Imprimir o Abrir **,** puede agregar cualquier comando que un usuario pueda encontrar útil.
 
-Todo lo que se necesita para extender el menú contextual de un tipo de archivo es crear una entrada del Registro para cada comando. Un enfoque más sofisticado es implementar un controlador de menús contextuales, que permite ampliar el menú contextual de un tipo de archivo archivo a archivo. Para obtener más información, vea [Crear controladores de menú contextual.](context-menu-handlers.md)
+Todo lo que se necesita para ampliar el menú contextual de un tipo de archivo es crear una entrada del Registro para cada comando. Un enfoque más sofisticado es implementar un controlador de menús contextuales, que permite ampliar el menú contextual de un tipo de archivo archivo a archivo. Para obtener más información, vea [Crear controladores de menú contextual](context-menu-handlers.md).
 
 ## <a name="shortcut-menu-verbs"></a>Verbos del menú contextual
 
 Cada comando del menú contextual se identifica en el Registro por su *verbo*. Estos verbos son los mismos que los que usa [**ShellExecuteEx**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa) al iniciar aplicaciones mediante programación. Para obtener más información sobre el uso de **ShellExecuteEx**, vea la explicación en [Inicio de aplicaciones](launch.md).
 
-Un verbo es una cadena de texto simple que usa el Shell para identificar el comando asociado. Cada verbo corresponde a la cadena *de comandos* utilizada para iniciar el comando en una ventana de consola o un archivo por lotes (.bat). Por ejemplo, el **verbo abierto** normalmente inicia un programa para abrir un archivo. Normalmente, su cadena de comandos tiene un aspecto similar al siguiente:
+Un verbo es una cadena de texto simple que el Shell usa para identificar el comando asociado. Cada verbo corresponde a la cadena *de comando* utilizada para iniciar el comando en una ventana de consola o un archivo por lotes (.bat). Por ejemplo, el **verbo abierto** normalmente inicia un programa para abrir un archivo. Normalmente, su cadena de comandos tiene un aspecto similar al siguiente:
 
 ``` syntax
 "My Program.exe" "%1"
@@ -58,27 +58,27 @@ Un verbo es una cadena de texto simple que usa el Shell para identificar el coma
 "%1" es el marcador de posición estándar para un parámetro de línea de comandos proporcionado con el nombre de archivo. Por ejemplo, puede especificar una página determinada para mostrarla en una vista con pestañas.
 
 > [!Note]  
-> Si algún elemento de la cadena de comando contiene o puede contener espacios, debe incluirse entre comillas. De lo contrario, si el elemento contiene un espacio, no se analizará correctamente. Por ejemplo, "Mi Program.exe" iniciará la aplicación correctamente. Si usa My Program.exe, el sistema intentará iniciar "My" con "Program.exe" como primer argumento de línea de comandos. Siempre debe usar comillas con argumentos como "%1" que el Shell expande a cadenas, ya que no puede estar seguro de que la cadena no contendrá un espacio.
+> Si algún elemento de la cadena de comando contiene o puede contener espacios, debe incluirse entre comillas. De lo contrario, si el elemento contiene un espacio, no se analizará correctamente. Por ejemplo, "My Program.exe" iniciará la aplicación correctamente. Si usa My Program.exe, el sistema intentará iniciar "My" con "Program.exe" como primer argumento de línea de comandos. Siempre debe usar comillas con argumentos como "%1" que el Shell expande a cadenas, ya que no puede estar seguro de que la cadena no contendrá un espacio.
 
  
 
-Los verbos también pueden tener una *cadena de* presentación asociada, que se muestra en el menú contextual en lugar de la propia cadena de verbo. Por ejemplo, la cadena para mostrar **de openas** es Open With. Al igual que las cadenas de menú normales, incluida una yand (&) en la cadena de presentación, permite seleccionar el teclado del comando.
+Los verbos también pueden tener una *cadena de* presentación asociada a ellos, que se muestra en el menú contextual en lugar de en la propia cadena de verbo. Por ejemplo, la cadena para mostrar **de openas** es Open With. Al igual que las cadenas de menú normales, incluida una yerba (&) en la cadena de presentación permite la selección del teclado del comando.
 
 ### <a name="canonical-verbs"></a>Verbos canónicos
 
-En general, las aplicaciones son responsables de proporcionar cadenas de visualización localizadas para los verbos que definen. Sin embargo, para proporcionar un grado de independencia del lenguaje, el sistema define un conjunto estándar de verbos de uso común denominados *verbos canónicos*. Un verbo canónico se puede usar con cualquier idioma y el sistema genera automáticamente una cadena de presentación localizada correctamente. Por ejemplo, la **cadena de** presentación del verbo abierto se establecerá en Abrir en un sistema en inglés y en Öffnen en un sistema alemán.
+En general, las aplicaciones son responsables de proporcionar cadenas de presentación localizadas para los verbos que definen. Sin embargo, para proporcionar un grado de independencia del lenguaje, el sistema define un conjunto estándar de verbos de uso común denominados *verbos canónicos*. Un verbo canónico se puede usar con cualquier idioma y el sistema genera automáticamente una cadena de presentación localizada correctamente. Por ejemplo, la **cadena de** presentación del verbo abierto se establecerá en Abrir en un sistema en inglés y en Öffnen en un sistema alemán.
 
 Los verbos canónicos incluyen:
 
 
 
-| Value      | Descripción                                                                                 |
+| Valor      | Descripción                                                                                 |
 |------------|---------------------------------------------------------------------------------------------|
 | abierto       | Abre el archivo o la carpeta.                                                                   |
 | opennew    | Abre el archivo o la carpeta en una nueva ventana.                                                   |
 | imprimir      | Imprime el archivo.                                                                            |
 | explore    | Abre Windows Explorer con la carpeta seleccionada.                                            |
-| find       | Abre el **cuadro Windows de diálogo** Buscar con la carpeta establecida como ubicación de búsqueda predeterminada. |
+| find       | Abre el **cuadro Windows de diálogo Buscar** con la carpeta establecida como ubicación de búsqueda predeterminada. |
 | openas     | Abre el **cuadro de diálogo Abrir** con .                                                         |
 | properties | Abre la hoja de propiedades del objeto.                                                          |
 
@@ -90,17 +90,17 @@ El verbo printto también es canónico, pero nunca se muestra. Permite al usuari
 
 ### <a name="extended-verbs"></a>Verbos extendidos
 
-Cuando el usuario hace clic con el botón derecho en un objeto, el menú contextual contiene todos los verbos normales. Sin embargo, puede haber comandos que quiera admitir, pero que no se muestren en todos los menús contextuales. Por ejemplo, podría tener comandos que no se usan normalmente o que están destinados a usuarios experimentados. Por esta razón, también puede definir uno o varios *verbos extendidos*. Estos verbos también son cadenas de caracteres y son similares a los verbos normales. Se distinguen de los verbos normales por la forma en que se registran. Para tener acceso a los comandos asociados a verbos extendidos, el usuario debe hacer clic con el botón derecho en un objeto mientras presiona la tecla MAYÚS. Los verbos extendidos se mostrarán junto con los verbos normales.
+Cuando el usuario hace clic con el botón derecho en un objeto, el menú contextual contiene todos los verbos normales. Sin embargo, podría haber comandos que quiera admitir, pero que no se han mostrado en todos los menús contextuales. Por ejemplo, podría tener comandos que no se usan normalmente o que están pensados para usuarios experimentados. Por esta razón, también puede definir uno o varios *verbos extendidos.* Estos verbos también son cadenas de caracteres y son similares a los verbos normales. Se distinguen de los verbos normales por la forma en que se registran. Para tener acceso a los comandos asociados con verbos extendidos, el usuario debe hacer clic con el botón derecho en un objeto mientras presiona la tecla MAYÚS. Los verbos extendidos se mostrarán junto con los verbos normales.
 
 ## <a name="extending-the-shortcut-menu-for-a-file-type"></a>Extender el menú contextual para un tipo de archivo
 
-La manera más sencilla de ampliar el menú contextual de un tipo de archivo es con el Registro. Para ello, agregue una **subclave shell** debajo de la clave para el ProgID de la aplicación asociada al [tipo de archivo](fa-file-types.md). Opcionalmente, puede definir un verbo *predeterminado* para el tipo de archivo si lo hace el valor predeterminado de la **subclave Shell.**
+La manera más sencilla de ampliar el menú contextual de un tipo de archivo es con el Registro. Para ello, agregue una **subclave shell** debajo de la clave para el ProgID de la aplicación asociada al [tipo de archivo](fa-file-types.md). Opcionalmente, puede definir un *verbo predeterminado* para el tipo de archivo si lo hace el valor predeterminado de la **subclave shell.**
 
-El verbo predeterminado se muestra primero en el menú contextual. Su propósito es proporcionar al Shell un verbo que puede usar cuando se llama a [**ShellExecuteEx,**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa) pero no se especifica ningún verbo. El Shell no selecciona necesariamente el verbo predeterminado cuando **se usa ShellExecuteEx** de este modo. Para las versiones [5.0](versions.md) y posteriores de Shell, que se encuentran en Windows 2000 y sistemas posteriores, el Shell usa el primer verbo disponible de la lista siguiente. Si no hay ninguno disponible, se produce un error en la operación.
+El verbo predeterminado se muestra primero en el menú contextual. Su propósito es proporcionar al Shell un verbo que puede usar cuando se llama a [**ShellExecuteEx,**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa) pero no se especifica ningún verbo. El shell no selecciona necesariamente el verbo predeterminado cuando se usa **ShellExecuteEx** de esta manera. Para las versiones [5.0](versions.md) y posteriores de Shell, que se encuentran en Windows 2000 y sistemas posteriores, shell usa el primer verbo disponible de la lista siguiente. Si no hay ninguna disponible, se produce un error en la operación.
 
 -   Verbo abierto
 -   Verbo predeterminado
--   Primer verbo del Registro
+-   Primer verbo del registro
 -   Verbo openwith
 
 Para las versiones de Shell anteriores a [la versión 5.0,](versions.md)omita el tercer elemento.
@@ -181,10 +181,10 @@ Asigne uno o varios valores de datos a la subclave **ShellNew** para especificar
 
 
 
-| Value    | Descripción                                                                                                                                                   |
+| Valor    | Descripción                                                                                                                                                   |
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Comando  | Ejecuta una aplicación. Se trata de **un valor \_ REG SZ** que especifica la ruta de acceso de la aplicación que se va a ejecutar. Por ejemplo, podría establecerlo para iniciar un asistente. |
-| data     | Crea un archivo que contiene los datos especificados. Data es un **valor REG \_ BINARY** con los datos del archivo. Los datos se omiten si se especifica NullFile o FileName.  |
+| Datos     | Crea un archivo que contiene los datos especificados. Data es un **valor REG \_ BINARY** con los datos del archivo. Los datos se omiten si se especifica NullFile o FileName.  |
 | FileName | Crea un archivo que es una copia de un archivo especificado. FileName es un **valor \_ REG SZ,** establecido en la ruta de acceso completa del archivo que se va a copiar.                 |
 | NullFile | Crea un archivo vacío. No se asigna un valor a NullFile. Si se especifica NullFile, se omiten los valores Data y FileName.                                  |
 
@@ -192,7 +192,7 @@ Asigne uno o varios valores de datos a la subclave **ShellNew** para especificar
 
  
 
-En la ilustración siguiente se **muestra el** submenú Nuevo [](fa-file-types.md) para el tipo de archivo .myp usado como ejemplo en Tipos de archivo e [Iconos de personalización](icon.md). Ahora tiene un comando, **MyProgram Application**. Cuando un usuario selecciona **MyProgram Application** en el **submenú** New (Nuevo), shell crea un archivo denominado "New MyProgram Application.myp" (Nueva aplicación MyPrograma.myp) y lo pasa a MyProgram.exe.
+En la ilustración siguiente se muestra el submenú **Nuevo** [](fa-file-types.md) para el tipo de archivo .myp usado como ejemplo en Tipos de archivo e [Iconos de personalización](icon.md). Ahora tiene un comando, **MyProgram Application**. Cuando un usuario selecciona **MyProgram Application** en el **submenú** New (Nuevo), shell crea un archivo denominado "New MyProgram Application.myp" (Nueva aplicación MyPrograma.myp) y lo pasa a MyProgram.exe.
 
 ![captura de pantalla del nuevo menú personalizado](images/context5.png)
 

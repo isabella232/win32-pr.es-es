@@ -43,7 +43,7 @@ TVN_ENDLABELEDIT
 *lParam* 
 </dt> <dd>
 
-Puntero a una [**estructura NMTVDISPINFO.**](/windows/win32/api/commctrl/ns-commctrl-nmtvdispinfoa) El **miembro** de elemento de esta estructura es una estructura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) cuyos **miembros hItem**, **lParam** y **pszText** contienen información válida sobre el elemento que se editó. Si se canceló la edición de etiquetas, el **miembro pszText** de la **estructura TVITEM** es **NULL**; De lo contrario, **pszText** es la dirección del texto editado.
+Puntero a una [**estructura NMTVDISPINFO.**](/windows/win32/api/commctrl/ns-commctrl-nmtvdispinfoa) El **miembro** de elemento de esta estructura es una estructura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) cuyos **miembros hItem**, **lParam** y **pszText** contienen información válida sobre el elemento que se editó. Si se canceló la edición de etiquetas, el **miembro pszText** de la **estructura TVITEM** es **NULL**; de lo contrario, **pszText** es la dirección del texto editado.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Si el **miembro pszText** no es **NULL,** devuelve **TRUE** para establecer la e
 
 ## <a name="remarks"></a>Comentarios
 
-Si el **miembro pszText** es **NULL,** se omite el valor devuelto.
+Si el **miembro pszText** **es NULL,** se omite el valor devuelto.
 
 Si especificó el valor LPSTR TEXTCALLBACK para este elemento y el miembro pszText no es NULL, el controlador ENDLABELEDIT de TVN debe copiar el texto de \_   \_ **pszText** en el almacenamiento local.
 

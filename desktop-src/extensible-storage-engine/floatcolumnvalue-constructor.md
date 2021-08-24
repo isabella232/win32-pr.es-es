@@ -50,7 +50,7 @@ Dim instance As New FloatColumnValue()
 public FloatColumnValue()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

@@ -44,7 +44,7 @@ Si es True, la propiedad indica que el Programador de tareas ejecutará la tarea
 
 ## <a name="remarks"></a>Comentarios
 
-Al leer o escribir XML para una tarea, esta configuración se especifica en el [**elemento RunOnlyIfNetworkAvailable**](taskschedulerschema-runonlyifnetworkavailable-settingstype-element.md) del esquema Programador de tareas datos.
+Al leer o escribir XML para una tarea, esta configuración se especifica en el [**elemento RunOnlyIfNetworkAvailable**](taskschedulerschema-runonlyifnetworkavailable-settingstype-element.md) del Programador de tareas esquema.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -1,19 +1,19 @@
 ---
-description: Especifica el número de muestras de audio que se van a codificar.
+description: Especifica el número de muestras de audio que se codifican.
 ms.assetid: 2ef2241b-5ec4-4694-a0c9-7db395321471
-title: Propiedad AVEncAudioIntervalToEncode (Codecapi. h)
+title: Propiedad AVEncAudioIntervalToEncode (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7847f203c73846c8c8ef0415d91cd09677f53d21
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: aeaf8b65469ba5d0df93b92fb7ef8b0b10d7fd783dfa3b481ddab2d4cf6a0548
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103906796"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118403991"
 ---
 # <a name="avencaudiointervaltoencode-property"></a>Propiedad AVEncAudioIntervalToEncode
 
-Especifica el número de muestras de audio que se van a codificar.
+Especifica el número de muestras de audio que se codifican.
 
 Esta propiedad es de lectura y escritura.
 
@@ -29,22 +29,22 @@ Esta propiedad es de lectura y escritura.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

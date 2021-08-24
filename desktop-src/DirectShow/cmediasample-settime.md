@@ -1,7 +1,7 @@
 ---
-description: 'El método SetTime establece los tiempos de flujo en los que este ejemplo debe comenzar y finalizar. Este método implementa el método IMediaSample:: SetTime.'
+description: El método SetTime establece los tiempos de secuencia en los que debe comenzar y finalizar este ejemplo. Este método implementa el método IMediaSample::SetTime.
 ms.assetid: cab4907f-eb6f-4444-9b41-1f95a6ecffed
-title: Método CMediaSample. SetTime (Amfilter. h)
+title: Método CMediaSample.SetTime (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 935c4f3aa565b291e459d36e067805944b4fd6b2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: be9028db35cb6d74623bde77fac21e32793de436ea2f80d2f513687c15d1b64c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105678888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118156517"
 ---
-# <a name="cmediasamplesettime-method"></a>CMediaSample. SetTime, método
+# <a name="cmediasamplesettime-method"></a>Método CMediaSample.SetTime
 
-El `SetTime` método establece los tiempos de flujo en los que este ejemplo debe comenzar y finalizar. Este método implementa el método [**IMediaSample:: setTime**](/windows/desktop/api/Strmif/nf-strmif-imediasample-settime) .
+El `SetTime` método establece las horas de transmisión en las que debe comenzar y finalizar este ejemplo. Este método implementa el [**método IMediaSample::SetTime.**](/windows/desktop/api/Strmif/nf-strmif-imediasample-settime)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,26 +46,26 @@ HRESULT SetTime(
 *pTimeStart* 
 </dt> <dd>
 
-Puntero a la hora de flujo en la que comienza el ejemplo, en unidades de 100-nanosegundos o **null**.
+Puntero al tiempo de secuencia en el que comienza el ejemplo, en unidades de 100 nanosegundos o **NULL.**
 
 </dd> <dt>
 
 *pTimeEnd* 
 </dt> <dd>
 
-Puntero a la hora de flujo en la que finaliza el ejemplo, en unidades 100-nanosegundos, o **null**.
+Puntero al tiempo de secuencia en el que finaliza el ejemplo, en unidades de 100 nanosegundos, o **NULL.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método establece las variables de miembro de [**Inicio CMediaSample:: m \_ Start**](cmediasample-m-start.md) y [**CMediaSample:: m \_ End**](cmediasample-m-end.md) , que especifican las marcas de tiempo. También actualiza la variable miembro [**CMediaSample:: m \_ dwFlags**](cmediasample-m-dwflags.md) , que especifica si las marcas de tiempo son válidas.
+Este método establece las variables [**miembro CMediaSample::m \_ Start**](cmediasample-m-start.md) y [**CMediaSample::m \_ End,**](cmediasample-m-end.md) que especifican las marcas de tiempo. También actualiza la variable [**miembro CMediaSample::m \_ dwFlags,**](cmediasample-m-dwflags.md) que especifica si las marcas de tiempo son válidas.
 
-Para obtener información acerca de las marcas de tiempo, consulte [hora y relojes en DirectShow](time-and-clocks-in-directshow.md).
+Para obtener información sobre las marcas de tiempo, vea [Time and Clocks in DirectShow](time-and-clocks-in-directshow.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,8 +73,8 @@ Para obtener información acerca de las marcas de tiempo, consulte [hora y reloj
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -82,7 +82,7 @@ Para obtener información acerca de las marcas de tiempo, consulte [hora y reloj
 
 <dl> <dt>
 
-[**Clase CMediaSample**](cmediasample.md)
+[**CMediaSample (clase)**](cmediasample.md)
 </dt> </dl>
 
  

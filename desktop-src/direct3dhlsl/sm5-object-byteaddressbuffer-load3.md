@@ -1,9 +1,9 @@
 ---
-title: 'ByteAddressBuffer:: Load3 (uint) (función)'
-description: 'Obtiene tres valores. | ByteAddressBuffer:: Load3 (uint) (función)'
+title: Función ByteAddressBuffer::Load3(uint)
+description: Obtiene tres valores. | Función ByteAddressBuffer::Load3(uint)
 ms.assetid: 79afeb36-e0e7-44a2-b252-8e3577f4c1a5
 keywords:
-- Load3 de función HLSL
+- Función Load3 HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8e3975d454fcbb8c5dfa8cdef8d7f5718143546f
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: bd36958eb2c16d45e6228c9919cb22bb772c8861131c26710fff032276bce6e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986626"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118510015"
 ---
-# <a name="byteaddressbufferload3uint-function"></a>ByteAddressBuffer:: Load3 (uint) (función)
+# <a name="byteaddressbufferload3uint-function"></a>Función ByteAddressBuffer::Load3(uint)
 
 Obtiene tres valores.
 
@@ -36,7 +36,7 @@ uint3 Load3(
 
 <dl> <dt>
 
-*Dirección* \[ de de\]
+*address* \[ En\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -47,17 +47,17 @@ Dirección de entrada en bytes, que debe ser un múltiplo de 4.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **UInt3**
+Tipo: **uint3**
 
 Tres valores.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -72,7 +72,7 @@ Esta función se admite para los siguientes tipos de sombreadores:
 [Métodos Load3](byteaddressbuffer-load3.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

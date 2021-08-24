@@ -92,7 +92,7 @@ Este método devuelve S_OK correcto o uno de los valores HRESULT estándar en ca
 
 ## <a name="requirements"></a>Requisitos
 
-| Requisito | Value |
+| Requisito | Valor |
 |---------------------------|---------------------------------------------------------------------------------|
 | Cliente mínimo compatible  | Windows 10, solo aplicaciones de escritorio de la versión 1803 \[\]                                  |
 | Servidor mínimo compatible  | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]                              |
@@ -102,6 +102,6 @@ Este método devuelve S_OK correcto o uno de los valores HRESULT estándar en ca
 | Archivo DLL                       | Dosvc.dll                                                                       |
 | IID                       | IID_IDeliveryOptimizationJob se define como EE2584CF-A69C-4848-B633-2649962B3EF7 |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [**IDeliveryOptimizationJob2**](ideliveryoptimizationjob2.md)

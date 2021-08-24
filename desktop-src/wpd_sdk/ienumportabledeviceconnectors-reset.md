@@ -56,7 +56,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                                                                                             |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                                                                              |

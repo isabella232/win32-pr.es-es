@@ -1,6 +1,6 @@
 ---
 title: Win32_TSDeploymentSettings clase
-description: Define la configuración predeterminada que el Administrador de RemoteApp usa al crear archivos Protocolo de escritorio remoto (RDP).
+description: Define la configuración predeterminada que el Administrador de RemoteApp usa al crear Protocolo de escritorio remoto (RDP).
 ms.assetid: b3eeef86-e6cb-40ea-99f8-200c5993f31e
 ms.tgt_platform: multiple
 keywords:
@@ -46,9 +46,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118349313"
 ---
-# <a name="win32_tsdeploymentsettings-class"></a>Clase TSDeploymentSettings de Win32 \_
+# <a name="win32_tsdeploymentsettings-class"></a>Clase \_ TSDeploymentSettings de Win32
 
-Define la configuración predeterminada que el Administrador de RemoteApp usa al crear archivos Protocolo de escritorio remoto (RDP). Esta configuración no afecta a las aplicaciones o escritorios publicados.
+Define la configuración predeterminada que el Administrador de RemoteApp usa al crear Protocolo de escritorio remoto (RDP). Esta configuración no afecta a las aplicaciones o escritorios publicados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -133,7 +133,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Fecha en la que expira el certificado. Este valor se almacena como un formato [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) de 64 bits.
+Fecha en que expira el certificado. Este valor se almacena como un formato [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) de 64 bits.
 
 </dd> <dt>
 
@@ -198,7 +198,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Contenido del archivo RDP que se corresponde con el protocolo RDP personalizado Configuración en Administrador de RemoteApp.
+El contenido del archivo RDP que se corresponde con el rdp personalizado Configuración en Administrador de RemoteApp.
 
 </dd> <dt>
 
@@ -252,7 +252,7 @@ Tipo de datos: **sint32**
 Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-El método de autenticación de puerta de enlace de Escritorio remoto. Los valores siguientes son posibles.
+El método de autenticación de puerta de enlace de Escritorio remoto. Los siguientes valores son posibles.
 
 <dt>
 
@@ -301,7 +301,7 @@ Tipo de datos: **sint32**
 Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Indica si se debe usar un servidor de puerta de enlace de Escritorio remoto para conectarse al servidor host de sesión de Escritorio remoto de destino a través de un firewall. Los valores siguientes son posibles.
+Indica si se debe usar un servidor de puerta de enlace de Escritorio remoto para conectarse al servidor host de sesión de Escritorio remoto de destino a través de un firewall. Los siguientes valores son posibles.
 
 <dt>
 
@@ -416,7 +416,7 @@ Tipo de datos: **sint32**
 Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Especifica las opciones de redireccionamiento de dispositivos y recursos para las conexiones de RemoteApp. Se pueden combinar **marcas para RedirectionOptions.** Los siguientes valores son posibles.
+Especifica las opciones de redireccionamiento de dispositivos y recursos para las conexiones de RemoteApp. Se pueden combinar **marcas para RedirectionOptions.** Los valores siguientes son posibles.
 
 <dt>
 
@@ -503,7 +503,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los otros estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los otros estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -589,7 +589,7 @@ Si **RequireServerAuth está** establecido en **TRUE,** tenga en cuenta lo sigui
 -   Si el programa RemoteApp es para uso de intranet y todos los equipos cliente ejecutan Windows Server 2008 o Windows Vista, no es necesario configurar el servidor host de sesión de Escritorio remoto para que use un certificado SSL. En este caso, se usa la Autenticación a nivel de red.
 -   Debe especificar el FQDN del servidor o la granja de servidores para el valor de la **propiedad FarmName.**
 
-Para conectarse al espacio de nombres "CIMV2 \\ TerminalServices", el nivel de autenticación debe incluir privacidad de paquetes. Para las llamadas de C/C++, se trata de un nivel de autenticación de **RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY**, que se puede establecer mediante la función COM [**CoSetProxyBlanket.**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket) Para Visual Basic y llamadas de scripting, se trata de un nivel de autenticación de **WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de 6. En el ejemplo Visual Basic Scripting Edition (VBScript) siguiente se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
+Para conectarse al espacio de nombres "CIMV2 \\ TerminalServices", el nivel de autenticación debe incluir privacidad de paquetes. Para las llamadas de C/C++, se trata de un nivel de autenticación de **RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY**, que se puede establecer mediante la función COM [**CoSetProxyBlanket.**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket) Para Visual Basic y llamadas de scripting, se trata de un nivel de autenticación **de WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de 6. En el ejemplo Visual Basic Scripting Edition (VBScript) siguiente se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
 
 
 ```VB

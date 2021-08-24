@@ -1,5 +1,5 @@
 ---
-description: 'Método RequestStateChange de la Msvm_SyntheticKeyboard: solicita un cambio de estado.'
+description: 'Método RequestStateChange de la clase Msvm_SyntheticKeyboard: solicita un cambio de estado.'
 ms.assetid: 984e8a68-bc95-4a8b-99d6-ac248e96c45e
 title: Método RequestStateChange de la Msvm_SyntheticKeyboard clase
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: eb8714dfc652cd1ba1a581b99cf5a4066159fb1e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3a16710adafaf3c9a4d04658f556592c485fd3ce1fa5b88c198b8913dadda543
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109553"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118146738"
 ---
 # <a name="requeststatechange-method-of-the-msvm_synthetickeyboard-class"></a>Método RequestStateChange de la clase \_ Msvm SyntheticKeyboard
 
@@ -106,7 +106,7 @@ Estado solicitado para el elemento. Esta información se colocará en la propied
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-**Restablecimiento** (11)
+**Restablecer** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -128,16 +128,16 @@ Estado solicitado para el elemento. Esta información se colocará en la propied
 *Trabajo* \[ out\]
 </dt> <dd>
 
-Puede contener una referencia al [**\_ elemento ConcreteJob de CIM**](cim-concretejob.md) creado para realizar un seguimiento de la transición de estado iniciada por la invocación del método.
+Puede contener una referencia a cim [**\_ concretejob creado**](cim-concretejob.md) para realizar un seguimiento de la transición de estado iniciada por la invocación del método.
 
 </dd> <dt>
 
 *TimeoutPeriod* \[ En\]
 </dt> <dd>
 
-Período de tiempo de espera que especifica la cantidad máxima de tiempo que el cliente espera que se lleve la transición al nuevo estado. El formato de intervalo debe usarse para especificar timeoutPeriod. Un valor de 0 o un parámetro null indica que el cliente no tiene ningún requisito de tiempo para la transición.
+Período de tiempo de espera que especifica la cantidad máxima de tiempo que el cliente espera que se lleve la transición al nuevo estado. El formato de intervalo debe usarse para especificar timeoutPeriod. Un valor de 0 o un parámetro NULL indica que el cliente no tiene requisitos de tiempo para la transición.
 
-Si esta propiedad no contiene 0 o NULL y la implementación no admite este parámetro, se devolverá un código de retorno "Use Of Timeout Parameter Not Supported" (No se admite el parámetro de tiempo de espera).
+Si esta propiedad no contiene 0 o NULL y la implementación no admite este parámetro, se devolverá un código de retorno de "No se admite el uso del parámetro de tiempo de espera".
 
 </dd> </dl>
 
@@ -157,9 +157,9 @@ Si se ejecuta correctamente, devuelve 0; de lo contrario, devuelve un error.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 10 solo \[ aplicaciones de escritorio\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
 | Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
@@ -167,7 +167,7 @@ Si se ejecuta correctamente, devuelve 0; de lo contrario, devuelve un error.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,23 +1,23 @@
 ---
-description: Europa oriental
+description: Europa del Este
 ms.assetid: 0e2e81b3-52dc-451b-9734-464052128efe
-title: Europa oriental
+title: Europa del Este
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cb2c2b73b5d91728e0bfe3aca19431b586b18888
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 0713d4089494e8c81aeb2f0e3c6d0cc4cb61590d9d58a353430c7d1630250212
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103806146"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117820579"
 ---
-# <a name="eastern-europe"></a>Europa oriental
+# <a name="eastern-europe"></a>Europa del Este
 
-Para obtener una explicación de las tablas siguientes, vea [tablas y asignaciones](tables-and-assignments.md).
+Para obtener una explicación de las tablas siguientes, vea [Tablas y asignaciones.](tables-and-assignments.md)
 
-Los índices de frecuencia de las tablas de Europa oriental no son adecuados para su uso como números de canal.
+Los índices de frecuencia de las tablas de Europa del Este no son adecuados para su uso como números de canal.
 
-### <a name="eastern-europe-broadcast-assignments"></a>Asignaciones de difusión de Europa oriental
+### <a name="eastern-europe-broadcast-assignments"></a>Asignaciones de difusión de Europa del Este
 
 
 ```C++
@@ -99,7 +99,7 @@ Los índices de frecuencia de las tablas de Europa oriental no son adecuados par
 
 
 
-### <a name="eastern-europe-cable-assignments"></a>Asignaciones de cable de Europa oriental
+### <a name="eastern-europe-cable-assignments"></a>Asignaciones de cable de Europa del Este
 
 
 ```C++
@@ -172,7 +172,7 @@ Los índices de frecuencia de las tablas de Europa oriental no son adecuados par
 
 <dl> <dt>
 
-[Ajuste de TV analógica internacional](international-analog-tv-tuning.md)
+[Ajuste internacional de televisión análoga](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

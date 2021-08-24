@@ -13,7 +13,7 @@ ms.locfileid: "118390419"
 ---
 # <a name="pseudo-locales"></a>Pseudo-Locales
 
-**Windows Vista y versiones posteriores:** NLS define varias pseudo-configuraciones regionales para su uso, además de las configuraciones regionales Windows existentes. Use estas pseudo-configuraciones regionales para probar la localización de las aplicaciones. Para obtener más información sobre la implementación, [vea Using Pseudo-Locales for Localization Testing](using-pseudo-locales-for-localization-testing.md).
+**Windows Vista y versiones posteriores:** NLS define varias pseudo-configuraciones regionales para su uso además de las configuraciones regionales Windows existentes. Use estas pseudo-configuraciones regionales para probar la localización de las aplicaciones. Para obtener detalles de implementación, [vea Using Pseudo-Locales for Localization Testing](using-pseudo-locales-for-localization-testing.md).
 
 ## <a name="supported-pseudo-locales"></a>Compatible Pseudo-Locales
 
@@ -26,8 +26,8 @@ Las pseudo-configuraciones regionales admitidas por NLS son:
 Elija la pseudo-configuración regional concreta que se usará en función de sus asignaciones de página de códigos y las cadenas para la localización, por ejemplo, nombres de mes o nombres de día. Los datos de cada pseudo-configuración regional incluyen no solo páginas de códigos relevantes y cadenas de día y mes para la localización, sino también datos para otros casos de prueba para NLS. Los casos de prueba examinan los siguientes tipos de datos:
 
 -   Identificadores de configuración [regional de](locale-identifiers.md)9 bits . Las pseudo-configuraciones regionales proporcionan una buena oportunidad para probar el funcionamiento de los identificadores de configuración regional de 9 bits.
--   Cadenas de idiomas que deben usar fuentes pequeñas. Debido a las limitaciones de la interfaz de dispositivo gráfico (GDI), la fuente de la interfaz de usuario para algunos lenguajes es menor que óptima. Las pseudo-configuraciones regionales incluyen varias cadenas de estos idiomas, combinadas con cadenas de idiomas con un control de fuentes más estándar. Puede usar estas cadenas en las pruebas para determinar cómo se representa una fuente limitada por GDI.
--   Longitudes de cadena inusuales. Algunas constantes de información de configuración regional, por ejemplo, [LOCALE \_ SLIST](locale-slist.md) y [LOCALE \_ ICURRENCY](locale-icurrency.md), tienen límites convencionales en el tamaño de cadena. Las pseudo-configuraciones regionales admiten el examen de diversas longitudes de cadena.
+-   Cadenas de idiomas que deben usar fuentes pequeñas. Debido a las limitaciones de la interfaz de dispositivo gráfico (GDI), la fuente de la interfaz de usuario para algunos lenguajes es menor que la óptima. Las pseudo-configuraciones regionales incluyen varias cadenas de estos idiomas, combinadas con cadenas de idiomas con un control de fuentes más estándar. Puede usar estas cadenas en las pruebas para determinar cómo se representa una fuente limitada por GDI.
+-   Longitudes de cadena inusuales. Algunas constantes de información de configuración regional, por ejemplo, [LOCALE \_ SLIST](locale-slist.md) y [LOCALE \_ ICURRENCY](locale-icurrency.md), tienen límites convencionales en el tamaño de cadena. Las pseudo-configuraciones regionales admiten el examen de longitudes de cadenas variadas.
 -   Ordenaciones alternativas. Las pseudo-configuraciones regionales se pueden [](sort-order-identifiers.md) usar para probar la funcionalidad de ordenación alternativa cuando el identificador de criterio de ordenación alternativo difiere del identificador de criterio de ordenación base que normalmente está asociado a la configuración regional.
 
 ## <a name="pseudo-locale-names-and-identifiers"></a>Nombres e identificadores de pseudo-configuración regional
@@ -40,7 +40,7 @@ Las pseudo-configuraciones regionales tienen nombres de configuración regional 
 |---------------------|-------------|-------------------|
 | Base                | qps-ploc    | 0501              |
 | Reflejado            | qps-quécm   | 09ff              |
-| Idioma de Este de Asia | qps-loca   | 05fe              |
+| Idioma asiático oriental | qps-quéca   | 05fe              |
 
 
 
@@ -50,7 +50,7 @@ Las pseudo-configuraciones regionales tienen nombres de configuración regional 
 
 En el ejemplo siguiente se muestra el texto que se muestra para una pseudo-configuración regional base:
 
-\[Шěđлеśđαỳ !!! , \] 8 \[ Μäŕςћ ! \] " 2006
+\[Шěđлеśđαỳ !!! , \] 8 \[ Μäŕςћ ! \] öf 2006
 
 ## <a name="related-topics"></a>Temas relacionados
 

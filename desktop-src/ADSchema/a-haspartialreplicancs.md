@@ -1,11 +1,11 @@
 ---
-title: Atributo tiene-Partial-replicas-NC
-description: El elemento relacionado con tiene-Master-NC. Tiene-Partial-Replica-NC refleja el nombre distintivo de todos los demás NC del dominio que se han replicado en un catálogo global.
+title: Atributo Has-Partial-Replica-NCs
+description: Relacionado con Has-Master-NCs. Has-Partial-Replica-NCs refleja el nombre distintivo de todos los demás NCs de dominio que se han replicado en un catálogo global.
 ms.assetid: 2501bbb3-74b5-4604-b0c0-8653fc092e1c
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo tiene-Partial-replicas-NC
-- hasPartialReplicaNCs esquema de AD de atributos
+- Esquema de AD del atributo Has-Partial-Replica-NCs
+- Esquema de AD del atributo hasPartialReplicaNCs
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f284df094c909b01b88a4853ed7c4a41dee9f31a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5a65e339ccf097d1699e12119a900e2ae695e8ef821469e0f6bc7660cb4304b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804315"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118176792"
 ---
-# <a name="has-partial-replica-ncs-attribute"></a>Atributo tiene-Partial-replicas-NC
+# <a name="has-partial-replica-ncs-attribute"></a>Atributo Has-Partial-Replica-NCs
 
-El elemento relacionado con tiene-Master-NC. Tiene-Partial-Replica-NC refleja el nombre distintivo de todos los demás NC del dominio que se han replicado en un catálogo global.
+Relacionado con Has-Master-NCs. Has-Partial-Replica-NCs refleja el nombre distintivo de todos los demás NCs de dominio que se han replicado en un catálogo global.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | Tiene-parcial-réplica-NC                 |
-| Nombre para mostrar de LDAP | hasPartialReplicaNCs                    |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | Has-Partial-Replica-NCs                 |
+| Ldap-Display-Name | hasPartialReplicaNCs                    |
+| Size              | \-                                      |
+| Privilegio actualizar  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.2.15                   |
-| System-ID-GUID    | bf967981-0de6-11d0-a285-00aa003049e2    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | bf967981-0de6-11d0-a285-00aa003049e2    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -44,7 +44,7 @@ El elemento relacionado con tiene-Master-NC. Tiene-Partial-Replica-NC refleja el
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,13 +56,13 @@ El elemento relacionado con tiene-Master-NC. Tiene-Partial-Replica-NC refleja el
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | 74                                       |
+| Id. de vínculo                | 74                                       |
 | MAPI-Id                | 0x80B5                                   |
 | System-Only            | True                                     |
-| Tiene un único valor       | False                                    |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| Es de un solo valor       | Falso                                    |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -77,13 +77,13 @@ El elemento relacionado con tiene-Master-NC. Tiene-Partial-Replica-NC refleja el
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | 74                                       |
+| Id. de vínculo                | 74                                       |
 | MAPI-Id                | 0x80B5                                   |
 | System-Only            | True                                     |
-| Tiene un único valor       | False                                    |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| Es de un solo valor       | Falso                                    |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -92,19 +92,19 @@ El elemento relacionado con tiene-Master-NC. Tiene-Partial-Replica-NC refleja el
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | 74                                       |
+| Id. de vínculo                | 74                                       |
 | MAPI-Id                | 0x80B5                                   |
-| System-Only            | True                                     |
-| Tiene un único valor       | False                                    |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Verdadero                                     |
+| Es de un solo valor       | Falso                                    |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -117,15 +117,15 @@ El elemento relacionado con tiene-Master-NC. Tiene-Partial-Replica-NC refleja el
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | 74                                       |
+| Id. de vínculo                | 74                                       |
 | MAPI-Id                | 0x80B5                                   |
-| System-Only            | True                                     |
-| Tiene un único valor       | False                                    |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Verdadero                                     |
+| Es de un solo valor       | Falso                                    |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -140,13 +140,13 @@ El elemento relacionado con tiene-Master-NC. Tiene-Partial-Replica-NC refleja el
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | 74                                       |
+| Id. de vínculo                | 74                                       |
 | MAPI-Id                | 0x80B5                                   |
-| System-Only            | True                                     |
-| Tiene un único valor       | False                                    |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Verdadero                                     |
+| Es de un solo valor       | Falso                                    |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -161,13 +161,13 @@ El elemento relacionado con tiene-Master-NC. Tiene-Partial-Replica-NC refleja el
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | 74                                       |
+| Id. de vínculo                | 74                                       |
 | MAPI-Id                | 0x80B5                                   |
 | System-Only            | True                                     |
-| Tiene un único valor       | False                                    |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| Es de un solo valor       | Falso                                    |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -180,15 +180,15 @@ El elemento relacionado con tiene-Master-NC. Tiene-Partial-Replica-NC refleja el
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | 74                                       |
+| Id. de vínculo                | 74                                       |
 | MAPI-Id                | 0x80B5                                   |
-| System-Only            | True                                     |
-| Tiene un único valor       | False                                    |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Verdadero                                     |
+| Es de un solo valor       | Falso                                    |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |

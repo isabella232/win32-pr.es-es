@@ -15,7 +15,7 @@ ms.locfileid: "118398023"
 
 ## <a name="description"></a>Descripción
 
-El filtro InfTee proporciona una implementación de ejemplo del DirectShow tee de [pin infinito.](infinite-pin-tee-filter.md) El filtro tiene un pin de entrada y un número dinámico de pines de salida. Todos los ejemplos de medios enviados al filtro se entregan simultáneamente desde todos los pines de salida.
+El filtro InfTee proporciona una implementación de ejemplo del DirectShow [tee de pin infinito.](infinite-pin-tee-filter.md) El filtro tiene un pin de entrada y un número dinámico de pines de salida. Todos los ejemplos de medios enviados al filtro se entregan simultáneamente desde todos los pines de salida.
 
 Este filtro aparece en GraphEdit con el nombre "Sample Infinite Pin Tee", para distinguirlo del filtro tee de pin infinito estándar que se proporciona en DirectShow.
 
@@ -23,7 +23,7 @@ Este filtro aparece en GraphEdit con el nombre "Sample Infinite Pin Tee", para d
 
 Dado que este filtro no cambia los datos que recibe, todos los pines deben aceptar el mismo tipo de medio. Durante el proceso de conexión, el filtro podría volver a conectar algunos pines para que los tipos de medios coincidan.
 
-Los datos que llegan al pin de entrada no se copian antes de enviarse a los pins de salida. El filtro también garantiza que los datos se entregan a los filtros de nivel inferior, para garantizar que ambas salidas reciben el servicio a tiempo. En concreto, si una de las salidas puede bloquearse en la función miembro [**COutputQueue::Receive,**](coutputqueue-receive.md) la tee gira un subproceso para entregar el ejemplo. Si no hubiera ningún subproceso para entregar la muestra, el subproceso que entrega la muestra al pin de entrada de tee podría pasar los datos a un filtro de nivel inferior. en ese momento, podría bloquearse, manteniendo los datos del otro filtro de bajada durante largos períodos de tiempo.
+Los datos que llegan al pin de entrada no se copian antes de enviarse a los pins de salida. El filtro también garantiza que los datos se entregan a los filtros de nivel inferior, para garantizar que ambas salidas reciben el servicio a tiempo. En concreto, si una de las salidas puede bloquearse en la función miembro [**COutputQueue::Receive,**](coutputqueue-receive.md) la tee gira un subproceso para entregar el ejemplo. Si no hubiera ningún subproceso para entregar la muestra, el subproceso que entrega la muestra al pin de entrada de tee podría pasar los datos a un filtro de bajada; en ese momento, podría bloquearse, manteniendo los datos del otro filtro de bajada durante largos períodos de tiempo.
 
 ## <a name="downloading-the-sample"></a>Descargar el ejemplo
 

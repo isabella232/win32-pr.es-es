@@ -16,7 +16,7 @@ ms.locfileid: "118458205"
 Cuando tiene un proveedor de almacenamiento en la nube, hay un par de pasos que debe seguir para proporcionar una experiencia coherente y preferida para el usuario. Estos dos elementos se registran como proveedor raíz de sincronización e integran la aplicación en el nivel raíz del panel de navegación.
 
 > [!IMPORTANT]
-> La integración del proveedor de almacenamiento en la nube solo se admite a partir Windows 10.
+> La integración del proveedor de almacenamiento en la nube solo se admite a partir de Windows 10.
 
  
 
@@ -30,11 +30,11 @@ Para registrarse como proveedor raíz de sincronización, deberá crear varias e
 
 Estos marcadores de posición se combinan para formar el identificador raíz de sincronización. Debe colocar un **.** carácter entre cada uno de los marcadores de posición al formar el identificador raíz de sincronización. Estos son los pares clave-valor que deben crearse.
 
--   **HKLM \\ Software Microsoft Windows Id. del proveedor de almacenamiento \\ \\ \\ \\ \\ SyncRootManager \\**_\[ del Explorador \]_ de CurrentVersion ** _\[ Windows SID \]_*_!_* _\[ Id. \] de_*_\\ cuenta DisplayNameResource:_* apunta al recurso donde Windows Shell u otras aplicaciones pueden obtener un nombre descriptivo para la raíz de sincronización.
--   **HKLM \\ Software Microsoft Windows Id. del proveedor de almacenamiento \\ \\ \\ \\ \\ SyncRootManager \\**_\[ del Explorador \]_ de CurrentVersion ** _\[ Windows SID \]_*_!_* _\[ Icono \] de id._*_\\ de cuentaResource:_* apunta al recurso donde Windows Shell u otras aplicaciones pueden obtener un icono para la raíz de sincronización.
--   **HKLM \\ Software Microsoft Windows Id. del proveedor de almacenamiento \\ \\ \\ \\ \\ SyncRootManager \\**_\[ del Explorador \]_ de CurrentVersion ** _\[ Windows SID \]_*_!_* _\[ Id. \] de_*_\\ cuenta \\ UserSyncRoots_*_\[ Windows SID: \]_ la ubicación en el disco donde se encuentra la raíz de sincronización.
+-   **HKLM \\ Software \\ Microsoft Windows El explorador de \\ \\ \\ \\ currentVersion SyncRootManager \\** identificador del proveedor de _\[ almacenamiento \]_*_!_* _\[ Windows SID \]_*_!_* _\[ Id. \] de_*_\\ cuenta DisplayNameResource:_* apunta al recurso donde Windows Shell u otras aplicaciones pueden obtener un nombre descriptivo para la raíz de sincronización.
+-   **HKLM \\ Software \\ Microsoft Windows El explorador de \\ \\ \\ \\ currentVersion SyncRootManager \\** identificador del proveedor de _\[ almacenamiento \]_*_!_* _\[ Windows SID \]_*_!_* _\[ Icono \] de id._*_\\ de cuentaResource:_* apunta al recurso donde Windows Shell u otras aplicaciones pueden obtener un icono para la raíz de sincronización.
+-   **HKLM \\ Software \\ Microsoft Windows El explorador de \\ \\ \\ \\ currentVersion SyncRootManager \\** identificador del proveedor de _\[ almacenamiento \]_*_!_* _\[ Windows SID \]_*_!_* _\[ Id. \] de_*_\\ cuenta \\ UserSyncRoots_*_\[ Windows SID: \]_ la ubicación en el disco donde se encuentra la raíz de sincronización.
 
-Además de registrarse como proveedor raíz de sincronización, también quiere que los usuarios tengan un acceso sencillo a los datos que proporcione. El Explorador de archivos de nombres está diseñado para proporcionar un método para ese acceso sencillo. La creación de una extensión de espacio de nombres para el proveedor y su incorporación a la ventana Explorador de archivos permitirá a los usuarios interactuar con el nivel raíz de los servicios tal y como están acostumbrados con otros elementos Explorador de archivos. En este tema se explica cómo extender el espacio Explorador de archivos de nombres para que el proveedor aparezca en el nivel raíz en el panel de navegación.
+Además de registrarse como proveedor raíz de sincronización, también quiere que los usuarios tengan un acceso sencillo a los datos que proporcione. El Explorador de archivos de nombres está diseñado para proporcionar un método para ese acceso sencillo. La creación de una extensión de espacio de nombres para el proveedor y su incorporación a la ventana de Explorador de archivos permitirá a los usuarios interactuar con el nivel raíz de los servicios tal como están acostumbrados a hacerlo con otros Explorador de archivos elementos. En este tema se explica cómo extender el espacio Explorador de archivos de nombres para que el proveedor aparezca en el nivel raíz en el panel de navegación.
 
 El panel de navegación de Explorador de archivos ventana es la parte de la ventana que se muestra en el lado izquierdo. En la imagen siguiente, puede ver la estructura del espacio de nombres para este usuario. El nivel raíz del panel de navegación incluye los **objetos para OneDrive**, Este **equipo** y **Red.** Si sigue estos pasos, agregará la extensión al mismo nivel.
 
@@ -82,7 +82,7 @@ Proporcione la ruta de acceso al icono que debe mostrarse en el panel de navegac
 
  
 
-**reg add HKCU \\ Software \\ Classes \\ CLSID \\ {0672A6D1-A6E0-40FE-AB16-F25BADC6D9E3} \\ DefaultIcon /ve /t REG \_ EXPAND SZ \_ /d %SystemRoot%% \\ system32 \\imageres.dll,-1043 /f**
+**reg add HKCU \\ Software \\ Classes \\ CLSID \\ {0672A6D1-A6E0-40FE-AB16-F25BADC6D9E3} \\ DefaultIcon /ve /t REG \_ EXPAND SZ \_ /d %SystemRoot%% \\ \\ system32imageres.dll,-1043 /f**
 
 ### <a name="step-3-add-your-extension-to-the-navigation-pane-and-make-it-visible"></a>Paso 3: Agregar la extensión al panel de navegación y hacer que sea visible
 

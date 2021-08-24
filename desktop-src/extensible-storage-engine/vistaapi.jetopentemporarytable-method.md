@@ -33,7 +33,7 @@ ms.locfileid: "118484290"
 ---
 # <a name="vistaapijetopentemporarytable-method"></a>Método VistaApi.JetOpenTemporaryTable
 
-Crea una tabla temporal con un único índice. Una tabla temporal almacena y recupera registros igual que una tabla normal creada mediante JetCreateTableColumnIndex. Sin embargo, las tablas temporales son mucho más rápidas que las tablas normales debido a su naturaleza volátil. También se pueden usar para ordenar y realizar la eliminación de duplicados rápidamente en conjuntos de registros cuando se accede a ellos de una manera puramente secuencial. Vea también [JetOpenTempTable(JET_SESID, \[ \] , Int32, TempTableGrbit, JET_TABLEID, \[ \] )](./api.jetopentemptable-method.md), [JetOpenTempTable3(JET_SESID, \[ \] , Int32, JET_UNICODEINDEX, TempTableGrbit, JET_TABLEID, \[ \] ).](./api.jetopentemptable3-method.md)
+Crea una tabla temporal con un único índice. Una tabla temporal almacena y recupera registros como una tabla normal creada mediante JetCreateTableColumnIndex. Sin embargo, las tablas temporales son mucho más rápidas que las tablas normales debido a su naturaleza volátil. También se pueden usar para ordenar y realizar la eliminación de duplicados rápidamente en conjuntos de registros cuando se accede a ellos de una manera puramente secuencial. Vea también [JetOpenTempTable(JET_SESID, \[ \] , Int32, TempTableGrbit, JET_TABLEID, \[ \] )](./api.jetopentemptable-method.md), [JetOpenTempTable3(JET_SESID, \[ \] , Int32, JET_UNICODEINDEX, TempTableGrbit, JET_TABLEID, \[ \] )](./api.jetopentemptable3-method.md).
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
@@ -71,7 +71,7 @@ public static void JetOpenTemporaryTable(
   - temporarytable  
     Tipo: [Microsoft.Isam.Esent.Interop.Vista.JET_OPENTEMPORARYTABLE](./jet-opentemporarytable-class.md)  
     
-    Descripción de la tabla temporal que se creará en la entrada. Después de una llamada correcta, la estructura contiene el identificador de la tabla temporal y las identificaciones de columna. Use [JetCloseTable(JET_SESID, JET_TABLEID) para](./api.jetclosetable-method.md) liberar la tabla temporal cuando termine.
+    Descripción de la tabla temporal que se creará en la entrada. Después de una llamada correcta, la estructura contiene el identificador de la tabla temporal y las identificaciones de columna. Use [JetCloseTable(JET_SESID, JET_TABLEID) para](./api.jetclosetable-method.md) liberar la tabla temporal cuando haya terminado.
 
 ## <a name="remarks"></a>Comentarios
 

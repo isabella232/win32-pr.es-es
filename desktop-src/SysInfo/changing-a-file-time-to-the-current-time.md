@@ -1,23 +1,23 @@
 ---
-description: En el ejemplo siguiente se establece la hora de la última escritura para un archivo en la hora actual del sistema mediante la función SetFileTime.
+description: En el ejemplo siguiente se establece la hora de última escritura de un archivo en la hora actual del sistema mediante la función SetFileTime.
 ms.assetid: b4a70c01-d5ce-47e8-9918-9c9176894240
 title: Cambiar una hora de archivo a la hora actual
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b3d4b6189514196c5f8a332c259da9f8f8d7417
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f7bbc2d9edef02d703542cea8372602724d76857c26099fe67f811d6c3b004e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104003209"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117958648"
 ---
 # <a name="changing-a-file-time-to-the-current-time"></a>Cambiar una hora de archivo a la hora actual
 
-En el ejemplo siguiente se establece la hora de la última escritura para un archivo en la hora actual del sistema mediante la función [**SetFileTime**](/windows/desktop/api/FileAPI/nf-fileapi-setfiletime) .
+En el ejemplo siguiente se establece la hora de última escritura de un archivo en la hora actual del sistema mediante la [**función SetFileTime.**](/windows/desktop/api/FileAPI/nf-fileapi-setfiletime)
 
-El sistema de archivos NTFS almacena los valores de hora en formato UTC, por lo que no se ven afectados por los cambios en la zona horaria o el horario de verano. El sistema de archivos FAT almacena valores de hora basados en la hora local del equipo.
+El sistema de archivos NTFS almacena los valores de hora en formato UTC, por lo que no se ven afectados por los cambios en la zona horaria o el horario de verano. El sistema de archivos FAT almacena valores de hora en función de la hora local del equipo.
 
-El archivo se debe abrir con la función [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) mediante el \_ \_ acceso a los atributos de escritura de archivo.
+El archivo debe abrirse con la [**función CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) mediante el acceso FILE \_ WRITE \_ ATTRIBUTES.
 
 
 ```C++

@@ -29,7 +29,7 @@ Una nueva aplicación, Grabación de acciones de usuario (PSR.exe), se está env
 
 Actualmente, un desarrollador Informe de errores de Windows servicio debe solicitar la habilitación de PSR para una aplicación; Las organizaciones de soporte técnico de Microsoft también usan esta herramienta al solucionar problemas con los usuarios finales. Hay planes para que PSR esté disponible en Windows Quality Online Services (Winqual) después del lanzamiento de Windows 7.
 
-**Nota:** Con PSR habilitado para una aplicación, es posible que la aplicación vea alguna degradación del rendimiento.
+**Nota:** Con PSR habilitado para una aplicación, es posible que la aplicación vea una degradación del rendimiento.
 
 ## <a name="links-to-other-resources"></a>Vínculos a otros recursos
 

@@ -1,9 +1,9 @@
 ---
-title: MCI_VCR_LIST_PARMS estructura (VCR. h)
-description: La estructura parms de la lista de VCR de MCI \_ \_ \_ contiene parámetros para el \_ comando MCI list para los grabadores de casete de vídeo.
+title: MCI_VCR_LIST_PARMS estructura (Vcr.h)
+description: La estructura MCI VCR LIST PARMS contiene parámetros para el \_ \_ comando \_ MCI LIST para las \_ grabadoras de vídeo.
 ms.assetid: 88725599-8057-4787-96e6-49b4a651c894
 keywords:
-- Estructura de MCI_VCR_LIST_PARMS de Windows multimedia
+- MCI_VCR_LIST_PARMS estructura Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d3e7a2eae67ebc7148b7ff424361f16554a435c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d8eeb74aeee254ab050d394dbf250c037d00d10d51fe872052dd5d36164b2c3a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118137986"
 ---
-# <a name="mci_vcr_list_parms-structure"></a>\_Estructura parms de la lista de VCR de MCI \_ \_
+# <a name="mci_vcr_list_parms-structure"></a>Estructura MCI \_ VCR \_ LIST \_ PARMS
 
-La **estructura \_ \_ \_ parms** de la lista de VCR de MCI contiene parámetros para el comando [**MCI \_ List**](mci-list.md) para los grabadores de casete de vídeo.
+La **estructura MCI \_ VCR LIST \_ \_ PARMS** contiene parámetros para el [**comando MCI \_ LIST**](mci-list.md) para las grabadoras de vídeo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ typedef struct tagMCI_VCR_LIST_PARMS {
 **dwCallback**
 </dt> <dd>
 
-La palabra de orden inferior especifica un identificador de ventana que se usa para la marca de notificación de MCI \_ .
+La palabra de orden bajo especifica un identificador de ventana que se usa para la marca \_ MCI NOTIFY.
 
 </dd> <dt>
 
@@ -59,11 +59,11 @@ Búfer para la información devuelta.
 **dwNumber**
 </dt> <dd>
 
-Número de entradas de vídeo o audio de VCR.
+Número de entradas de audio o vídeo de VCR.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Al asignar datos a los miembros de esta estructura, establezca las marcas correspondientes en el parámetro *fdwCommand* de la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar los miembros.
 
@@ -71,11 +71,11 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VCR. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vcr.h</dt> </dl> |
 
 
 
@@ -83,13 +83,13 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)
 </dt> <dt>
 
-[**lista de MCI \_**](mci-list.md)
+[**LISTA \_ de MCI**](mci-list.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

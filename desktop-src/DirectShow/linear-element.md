@@ -18,7 +18,7 @@ ms.locfileid: "118397149"
 
  
 
-El elemento lineal define el valor de un elemento [**param**](param-element.md) en un momento determinado, en relación con el inicio de la transición o el efecto que contiene el **elemento param.** El `linear` elemento hace que el parámetro realice una transición sin problemas de su valor anterior al nuevo valor. Para un salto instantáneo a un nuevo valor, use el [**elemento at**](at-element.md) .
+El elemento lineal define el valor de un [**elemento param**](param-element.md) en un momento determinado, en relación con el inicio de la transición o el efecto que contiene el **elemento param.** El `linear` elemento hace que el parámetro realice una transición sin problemas de su valor anterior al nuevo valor. Para un salto instantáneo a un nuevo valor, use el [**elemento at**](at-element.md) .
 
 ## <a name="attributes"></a>Atributos
 

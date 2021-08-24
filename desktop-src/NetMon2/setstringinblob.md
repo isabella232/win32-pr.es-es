@@ -1,7 +1,7 @@
 ---
 description: Establece una cadena en una ubicación determinada dentro de un BLOB.
 ms.assetid: 645e6b8b-aaaf-429f-ad2f-bf4364ef4e80
-title: Función SetStringInBlob (Netmon. h)
+title: Función SetStringInBlob (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 37278b9111818957e6d5fb3032f1bf33ad3a6ec3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 293aabf86769a8cfa678df79a04b5158b9c1d19c80d660b144c4a33cbf32c56f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275548"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118363684"
 ---
-# <a name="setstringinblob-function"></a>SetStringInBlob función)
+# <a name="setstringinblob-function"></a>Función SetStringInBlob
 
-La función **SetStringInBlob** establece una cadena en una ubicación determinada dentro de un BLOB.
+La **función SetStringInBlob** establece una cadena en una ubicación determinada dentro de un BLOB.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,64 +43,64 @@ DWORD SetStringInBlob(
 
 <dl> <dt>
 
-*hBlob* \[ de\]
+*hBlob* \[ En\]
 </dt> <dd>
 
 Identificador del BLOB.
 
 </dd> <dt>
 
-*pOwnerName* \[ de\]
+*pOwnerName* \[ En\]
 </dt> <dd>
 
-Un puntero a la sección de **propietario** del BLOB, donde se establece la cadena.
+Puntero a la **sección Propietario** del BLOB, donde se establece la cadena.
 
 </dd> <dt>
 
-*pCategoryName* \[ de\]
+*pCategoryName* \[ En\]
 </dt> <dd>
 
-Un puntero a la sección de **categoría** del BLOB, donde se establece la cadena.
+Puntero a la **sección Category** del BLOB, donde se establece la cadena.
 
 </dd> <dt>
 
-*pTagName* \[ de\]
+*pTagName* \[ En\]
 </dt> <dd>
 
-Puntero a la **etiqueta** de la cadena solicitada.
+Puntero a la **etiqueta de** la cadena solicitada.
 
 </dd> <dt>
 
-*pString* \[ de\]
+*pString* \[ En\]
 </dt> <dd>
 
-Puntero a la variable en la que se devolverá un puntero a la cadena.
+Puntero a la variable donde se devolverá un puntero a la cadena.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente, el valor devuelto es NMERR \_ Success.
+Si la función se realiza correctamente, el valor devuelto es NMERR \_ SUCCESS.
 
-Si la función no es correcta, el valor devuelto es un valor de NMERR que indica el problema.
+Si la función no se realiza correctamente, el valor devuelto es un valor NMERR que indica el problema.
 
-Si la información de **propietario**, **categoría** o **etiqueta** especificada no existe, el valor devuelto es NMERR la entrada de \_ BLOB no \_ \_ \_ \_ existe.
+Si la información **de propietario,** **categoría** o etiqueta especificada no existe, el valor devuelto es NMERR BLOB ENTRY DOES NOT  \_ \_ \_ \_ \_ EXIST.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -6,7 +6,7 @@ ms.tgt_platform: multiple
 keywords:
 - Método DeleteAllServers Servicios de Escritorio remoto
 - Método DeleteAllServers Servicios de Escritorio remoto , Win32_TSGatewayLoadBalancer clase
-- Win32_TSGatewayLoadBalancer clase Servicios de Escritorio remoto , método DeleteAllServers
+- Win32_TSGatewayLoadBalancer clase Servicios de Escritorio remoto método , DeleteAllServers
 topic_type:
 - apiref
 api_name:
@@ -43,7 +43,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se realiza correctamente, devuelve cero. Si el método no es correcto, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
+Si el método se realiza correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI.](terminal-services-wmi-provider-error-codes.md)
 
 ## <a name="remarks"></a>Comentarios
 
@@ -59,13 +59,13 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
-| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                 |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                 |
 | MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

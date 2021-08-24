@@ -1,11 +1,11 @@
 ---
 title: Método TaskVariables.GetInput
-description: Para el scripting, obtiene las variables de entrada para una tarea.
+description: Para el scripting, obtiene las variables de entrada de una tarea.
 ms.assetid: 6e4cb7a2-5bd9-4384-8b9e-931b70018544
 keywords:
 - Método GetInput Programador de tareas
 - Método GetInput Programador de tareas , objeto TaskVariables
-- Objeto TaskVariables Programador de tareas método , GetInput
+- Objeto TaskVariables Programador de tareas , método GetInput
 topic_type:
 - apiref
 api_name:
@@ -25,7 +25,7 @@ ms.locfileid: "118354741"
 ---
 # <a name="taskvariablesgetinput-method"></a>Método TaskVariables.GetInput
 
-Para el scripting, obtiene las variables de entrada para una tarea. Este método no se implementa.
+Para el scripting, obtiene las variables de entrada de una tarea. Este método no se implementa.
 
 ## <a name="syntax"></a>Sintaxis
 

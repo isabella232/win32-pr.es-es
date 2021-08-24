@@ -74,7 +74,7 @@ Los métodos de propiedad [**de la interfaz IADsClass**](/windows/desktop/api/Ia
 
 <dl> <dt>
 
-**Abstracto**
+**Descripción breve**
 </dt> <dd> <dl>
 
 Valor booleano que indica si esta clase es abstracta o no abstracta. Cuando **es TRUE**, esta clase es una clase abstracta y no se pueden crear instancias directas en el servicio de directorio. Las clases abstractas solo se pueden usar como super clases.
@@ -582,7 +582,7 @@ Cleanup:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

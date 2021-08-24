@@ -1,7 +1,7 @@
 ---
-description: 'El método QueryInternalConnections recupera los PIN que están conectados internamente a este pin (dentro del filtro). Este método implementa el método IPin:: QueryInternalConnections.'
+description: El método QueryInternalConnections recupera los pines que están conectados internamente a este pin (dentro del filtro). Este método implementa el método IPin::QueryInternalConnections.
 ms.assetid: 08344fc5-38b2-4dbe-8ef9-30d2fcd64187
-title: Método CBasePin. QueryInternalConnections (Amfilter. h)
+title: Método CBasePin.QueryInternalConnections (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 99a636295fc87347a1735ab028b6de342e887d55
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 923081ed14b64b4e1c42b2b9e45f8733ad569c58face6dd7c1ea8dfec461eaa9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660617"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118001013"
 ---
-# <a name="cbasepinqueryinternalconnections-method"></a>CBasePin. QueryInternalConnections, método
+# <a name="cbasepinqueryinternalconnections-method"></a>Método CBasePin.QueryInternalConnections
 
-El `QueryInternalConnections` método recupera los PIN que están conectados internamente a este pin (dentro del filtro). Este método implementa el método [**IPin:: QueryInternalConnections**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryinternalconnections) .
+El `QueryInternalConnections` método recupera los pines que están conectados internamente a este pin (dentro del filtro). Este método implementa el [**método IPin::QueryInternalConnections.**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryinternalconnections)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,30 +43,30 @@ HRESULT QueryInternalConnections(
 
 <dl> <dt>
 
-*iníciela* 
+*apPin* 
 </dt> <dd>
 
-Dirección de una matriz de punteros [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) .
+Dirección de una matriz de [**punteros IPin.**](/windows/desktop/api/Strmif/nn-strmif-ipin)
 
 </dd> <dt>
 
 *nPin* 
 </dt> <dd>
 
-En la entrada, especifica el tamaño de la matriz. Cuando el método devuelve, el valor se establece en el número de punteros devueltos en la matriz.
+En la entrada, especifica el tamaño de la matriz. Cuando el método vuelve, el valor se establece en el número de punteros devueltos en la matriz.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores **HRESULT** que se muestran en la tabla siguiente.
+Devuelve uno de los **valores HRESULT** que se muestran en la tabla siguiente.
 
 
 
 | Código devuelto                                                                               | Descripción                         |
 |-------------------------------------------------------------------------------------------|-------------------------------------|
-| <dl> <dt>**S \_ false**</dt> </dl>   | Tamaño de matriz insuficiente.<br/> |
-| <dl> <dt>**S \_ correcto**</dt> </dl>      | Correcto.<br/>                 |
+| <dl> <dt>**S \_ FALSE**</dt> </dl>   | Tamaño de matriz insuficiente.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>      | Correcto.<br/>                 |
 | <dl> <dt>**E \_ FAIL**</dt> </dl>    | Error.<br/>                 |
 | <dl> <dt>**E \_ NOTIMPL**</dt> </dl> | Sin implementar.<br/>         |
 
@@ -74,9 +74,9 @@ Devuelve uno de los valores **HRESULT** que se muestran en la tabla siguiente.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En algunos filtros, los pin de entrada se corresponden con clavijas de salida particulares. Para cada pin, este método rellena una matriz con punteros a los pin correspondientes. Si cada pin de entrada proporciona datos para cada pin de salida, devuelva E \_ NOTIMPL.
+En algunos filtros, los pines de entrada corresponden a pins de salida concretos. Para cada pin, este método rellena una matriz con punteros a los pines correspondientes. Si cada pin de entrada proporciona datos para cada pin de salida, devuelva E \_ NOTIMPL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -84,8 +84,8 @@ En algunos filtros, los pin de entrada se corresponden con clavijas de salida pa
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -93,7 +93,7 @@ En algunos filtros, los pin de entrada se corresponden con clavijas de salida pa
 
 <dl> <dt>
 
-[**Clase CBasePin**](cbasepin.md)
+[**CBasePin (clase)**](cbasepin.md)
 </dt> </dl>
 
  

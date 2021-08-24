@@ -1,9 +1,9 @@
 ---
-title: MCI_SEQ_SET_PARMS estructura (Mciapi. h)
-description: La \_ estructura MCI SEQ \_ set \_ parms contiene información para el comando MCI \_ set para dispositivos MIDI Sequencer.
+title: MCI_SEQ_SET_PARMS estructura (Mciapi.h)
+description: La estructura MCI \_ SEQ \_ SET \_ PARMS contiene información para el comando MCI \_ SET para dispositivos de secuenciador MIDI.
 ms.assetid: 71638a92-c1d6-474b-bc97-ea63ca586aaa
 keywords:
-- Estructura de MCI_SEQ_SET_PARMS de Windows multimedia
+- MCI_SEQ_SET_PARMS estructura Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 879dd575918a33676e3ba73bd2a8f6212e3dc412
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ffb96cfd2f652bf989673bad68c95c6765034d2105fa554efee057faf099a9c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996048"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118374973"
 ---
-# <a name="mci_seq_set_parms-structure"></a>MCI \_ Seq \_ set \_ parms estructura
+# <a name="mci_seq_set_parms-structure"></a>Estructura MCI \_ SEQ \_ SET \_ PARMS
 
-La estructura **MCI \_ Seq \_ set \_ parms** contiene información para el comando [**MCI \_ set**](mci-set.md) para dispositivos MIDI Sequencer.
+La **estructura MCI \_ SEQ SET \_ \_ PARMS** contiene información para el [**comando MCI \_ SET**](mci-set.md) para dispositivos de secuenciador MIDI.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,7 +50,7 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La palabra de orden inferior especifica un identificador de ventana que se usa para la marca de notificación de MCI \_ .
+La palabra de orden bajo especifica un identificador de ventana usado para la marca \_ MCI NOTIFY.
 
 </dd> <dt>
 
@@ -71,7 +71,7 @@ Canal de salida de audio.
 **dwTempo**
 </dt> <dd>
 
-Ritmo.
+Tempo.
 
 </dd> <dt>
 
@@ -82,17 +82,17 @@ Puerto
 
 </dd> <dt>
 
-**dwSlave**
+**dw DwE**
 </dt> <dd>
 
-Tipo de sincronización utilizada por el secuenciador para la operación subordinada.
+Tipo de sincronización utilizado por el secuenciador para la operación subordinada.
 
 </dd> <dt>
 
 **dwMaster**
 </dt> <dd>
 
-Tipo de sincronización utilizada por el secuenciador para la operación maestra.
+Tipo de sincronización utilizado por el secuenciador para la operación maestra.
 
 </dd> <dt>
 
@@ -103,7 +103,7 @@ Desplazamiento de datos.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Al asignar datos a los miembros de esta estructura, establezca las marcas correspondientes en el parámetro *fdwCommand* de la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar los miembros.
 
@@ -111,25 +111,25 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)
 </dt> <dt>
 
-[**MCI \_ set**](mci-set.md)
+[**MCI \_ SET**](mci-set.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

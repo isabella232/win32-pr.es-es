@@ -48,7 +48,7 @@ La numeración de punteros de interfaz comienza en 0 para la primera declaració
 
 La segunda de una declaración de interfaz es el número de sitios de llamada, que deben coincidir con el número de cuerpos de cada tabla a la que se \[ \] hace referencia en la declaración.
 
-No hay límites para el número de opciones de tabla de función (ft) que se \# pueden enumerar en una declaración de interfaz.
+No hay límites para el número de opciones de tabla de funciones (ft) que se \# pueden enumerar en una declaración de interfaz.
 
 Una tabla de funciones determinada (ft \# ) puede aparecer más de una vez en una o varias declaraciones de interfaz.
 
@@ -73,7 +73,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 

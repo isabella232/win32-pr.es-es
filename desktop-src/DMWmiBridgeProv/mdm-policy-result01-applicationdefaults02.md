@@ -1,9 +1,9 @@
 ---
-title: MDM_Policy_Result01_ApplicationDefaults02 (clase)
-description: La \_ clase Result01 de ApplicationDefaults02 de directivas MDM \_ \_ representa las directivas de valores predeterminados de aplicación disponibles.
+title: MDM_Policy_Result01_ApplicationDefaults02 clase
+description: La clase Mdm \_ Policy \_ Result01 \_ ApplicationDefaults02 representa las directivas predeterminadas de aplicación disponibles.
 ms.assetid: bf7df9a1-7af1-49a6-9456-3e6ec48234e2
 keywords:
-- MDM_Policy_Result01_ApplicationDefaults02 (clase)
+- MDM_Policy_Result01_ApplicationDefaults02 clase
 - MDM_Policy_Result01_ApplicationDefaults02 clase, descrita
 topic_type:
 - apiref
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 10592ceb4e4f401ce9f64c24ef207a4e2e033e9c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 842a80517234ba0aa2bdfbca5330c9b4b22cd98024651bdd650b2e43d847cae6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150354"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118164815"
 ---
-# <a name="mdm_policy_result01_applicationdefaults02-class"></a>\_ \_ Clase ApplicationDefaults02 de Result01 de directivas MDM \_
+# <a name="mdm_policy_result01_applicationdefaults02-class"></a>Mdm \_ Policy \_ Result01 \_ ApplicationDefaults02 (clase)
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-La \_ clase Result01 de ApplicationDefaults02 de directivas MDM \_ \_ representa las directivas de valores predeterminados de aplicación disponibles.
+La clase Mdm \_ Policy \_ Result01 \_ ApplicationDefaults02 representa las directivas predeterminadas de aplicación disponibles.
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -46,13 +46,13 @@ class MDM_Policy_Result01_ApplicationDefaults02
 
 ## <a name="members"></a>Miembros
 
-La clase Result01 de la **\_ Directiva MDM \_ \_ ApplicationDefaults02** tiene estos tipos de miembros:
+La **clase \_ \_ \_ ApplicationDefaults02 de MDM Policy Result01** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ \_ Result01 de \_ ApplicationDefaults02 de directivas MDM** tiene estas propiedades.
+La **clase \_ \_ \_ ApplicationDefaults02 de MDM Policy Result01** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -62,7 +62,7 @@ La **clase \_ \_ Result01 de \_ ApplicationDefaults02 de directivas MDM** tiene 
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -76,7 +76,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> <dt>
@@ -90,7 +90,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> </dl>
@@ -99,12 +99,12 @@ Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                      |
-| Espacio de nombres<br/>                | Dmmap de MDM raíz de \\ cimv2 \\ \\<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ cimv2 \\ mdm \\ dmmap<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

@@ -15,7 +15,7 @@ ms.locfileid: "118391541"
 
 Caracteres para el separador de fecha. El número máximo de caracteres permitido para esta cadena es cuatro, incluido un carácter nulo de terminación.
 
-**Windows Vista y versiones posteriores:** Esta constante está en desuso. Use [LOCALE \_ SSHORTDATE en](locale-sshortdate.md) su lugar. Es posible que una configuración regional personalizada no tenga un único carácter separador uniforme. Por ejemplo, un formato como "12/31, 2006" es válido.
+**Windows Vista y versiones posteriores:** Esta constante está en desuso. Use [LOCALE \_ SSHORTDATE en](locale-sshortdate.md) su lugar. Es posible que una configuración regional personalizada no tenga un solo carácter separador uniforme. Por ejemplo, un formato como "12/31, 2006" es válido.
 
  
 

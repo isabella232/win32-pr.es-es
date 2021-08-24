@@ -1,7 +1,7 @@
 ---
 description: La propiedad Attributes devuelve el valor de la columna Attributes de la tabla ModuleConfiguration.
 ms.assetid: fb7336b7-28af-48c8-80b2-80c03948660a
-title: Propiedad ConfigurableItem. Attributes (Mergemod. h)
+title: Propiedad ConfigurableItem.Attributes (Mergemod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: c381ce3d1bf07c03ff4bdcb687cca239ec715b17
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ba591ab8565390514e8fe6f8f7d5182184d1372b824d5262f87bd9ad4b412035
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671667"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118144193"
 ---
-# <a name="configurableitemattributes-property"></a>Propiedad ConfigurableItem. Attributes
+# <a name="configurableitemattributes-property"></a>ConfigurableItem.Attributes, propiedad
 
-La propiedad **attributes** devuelve el valor de la columna Attributes de la [tabla ModuleConfiguration](moduleconfiguration-table.md).
+La **propiedad Attributes** devuelve el valor de la columna Attributes de la tabla [ModuleConfiguration](moduleconfiguration-table.md).
 
 Esta propiedad es de solo lectura.
 
@@ -40,16 +40,16 @@ propVal = ConfigurableItem.Attributes
 
 ## <a name="c"></a>C++
 
-Vea la función [**Get \_ attributes**](/windows/desktop/api/Mergemod/nf-mergemod-imsmconfigurableitem-get_attributes) .
+Consulte [**la función get \_ Attributes.**](/windows/desktop/api/Mergemod/nf-mergemod-imsmconfigurableitem-get_attributes)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versión<br/> | Mergemod.dll 2,0 o posterior<br/>                                                    |
-| Encabezado<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Versión<br/> | Mergemod.dll 2.0 o posterior<br/>                                                    |
+| Header<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | Archivo DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

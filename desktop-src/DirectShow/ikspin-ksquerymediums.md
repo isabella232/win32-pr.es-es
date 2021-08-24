@@ -43,7 +43,7 @@ HRESULT KsQueryMediums(
 *ppmi* \[ out\]
 </dt> <dd>
 
-Dirección de un puntero a una [**estructura ITEM de KSMULTIPLE. \_**](ksmultiple-item.md)
+Dirección de un puntero a una [**estructura KSMULTIPLE \_ ITEM.**](ksmultiple-item.md)
 
 </dd> </dl>
 
@@ -53,11 +53,11 @@ Si el método se realiza correctamente, devuelve S \_ OK. Si se produce un error
 
 ## <a name="remarks"></a>Comentarios
 
-Este método devuelve una estructura [**KSMULTIPLE \_ ITEM**](ksmultiple-item.md) asignada por tareas, seguida de cero o más estructuras [**REGPINMEDIUM.**](/windows/desktop/api/strmif/ns-strmif-regpinmedium) El **miembro Count** de la estructura **\_ ITEM de KSMULTIPLE** especifica el número de estructuras **REGPINMEDIUM.** Cada **estructura REGPINMEDIUM** define un medio admitido por el pin.
+Este método devuelve una estructura [**KSMULTIPLE \_ ITEM**](ksmultiple-item.md) asignada por tareas, seguida de cero o más estructuras [**REGPINMEDIUM.**](/windows/desktop/api/strmif/ns-strmif-regpinmedium) El **miembro Count** de la estructura **KSMULTIPLE \_ ITEM** especifica el número de **estructuras REGPINMEDIUM.** Cada **estructura REGPINMEDIUM** define un medio admitido por el pin.
 
-El autor de la llamada debe liberar las estructuras devueltas mediante **la función CoTaskMemFree.**
+El autor de la llamada debe liberar las estructuras devueltas mediante la **función CoTaskMemFree.**
 
-Debe incluir Ks.h antes que Ksproxy.h.
+Debe incluir Ks.h antes de Ksproxy.h.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -120,10 +120,10 @@ HRESULT FindMatchingMedium(
 
 <dl> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> <dt>
 
-[**IKsPin (interfaz)**](ikspin.md)
+[**Interfaz IKsPin**](ikspin.md)
 </dt> <dt>
 
 [Filtros de controlador de clase WDM](wdm-class-driver-filters.md)
