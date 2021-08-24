@@ -3,7 +3,7 @@ title: Atributo WM/AlbumArtist
 description: El atributo WM/AlbumArtist es el nombre del intérprete principal del álbum.
 ms.assetid: 9da02a85-d0cf-41e3-ad5b-08b908315993
 keywords:
-- Media Player de Windows de atributos de WM/AlbumArtist
+- Atributo WM/AlbumArtist Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,41 +12,41 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e61c7f50c377468dd7cb58a2be8a63fd3df6a201
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 550805894ed3744400afe0e118834b437908f173447139b2c3ebad15391288a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708747"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119761445"
 ---
 # <a name="wmalbumartist-attribute"></a>Atributo WM/AlbumArtist
 
-El atributo **WM/AlbumArtist** es el nombre del intérprete principal del álbum.
+El **atributo WM/AlbumArtist** es el nombre del intérprete principal del álbum.
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [Elementos de audio](audio-item-attributes.md)
 -   [Listas de reproducción de CD](cd-playlist-attributes.md)
 -   [Pistas de CD](cd-track-attributes.md)
--   [Atributos de archivo de Windows Media de uso frecuente](commonly-used-windows-media-file-attributes.md)
+-   [Atributos de archivo multimedia Windows uso frecuente](commonly-used-windows-media-file-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo se almacena en la biblioteca (o caché) y en el archivo multimedia digital.
+Este atributo se almacena tanto en la biblioteca (o caché) como en el archivo multimedia digital.
 
 **AlbumArtist** es un alias para este atributo.
 
-La constante del SDK de Windows Media Format para este atributo es g \_ wszWMAlbumArtist.
+La Windows SDK de formato multimedia para este atributo es g \_ wszWMAlbumArtist.
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
@@ -54,7 +54,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

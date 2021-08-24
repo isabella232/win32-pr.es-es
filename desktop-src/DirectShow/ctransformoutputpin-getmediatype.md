@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1dd0bf38f2fa3be0e077f2509001680bbfc84e15
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ddd064934eea6ef2c88a4304466b15811910e8e352041e7242c75650dd54b2a7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119812785"
 ---
 # <a name="ctransformoutputpingetmediatype-method"></a>Método CTransformOutputPin.GetMediaType
 
@@ -65,7 +65,7 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran
 
 | Código devuelto                                                                                            | Descripción                   |
 |--------------------------------------------------------------------------------------------------------|-------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>                   | Correcto<br/>            |
+| <dl> <dt>**S \_ OK**</dt> </dl>                   | Success<br/>            |
 | <dl> <dt>**VFW \_ S \_ NO \_ MORE \_ ITEMS**</dt> </dl> | Índice fuera del intervalo<br/> |
 
 
@@ -82,7 +82,7 @@ Este método invalida el [**método CBasePin::GetMediaType.**](cbasepin-getmedia
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 

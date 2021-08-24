@@ -1,19 +1,19 @@
 ---
-description: El tipo de datos de hora de referencia \_ define las unidades de los tiempos de referencia en DirectShow. Cada unidad de tiempo de referencia es de 100 nanosegundos.
+description: El tipo de datos REFERENCE \_ TIME define las unidades para los tiempos de referencia en DirectShow. Cada unidad de tiempo de referencia es de 100 nanosegundos.
 ms.assetid: 862c95bc-2e0a-42c0-b907-45f64f27bd41
-title: REFERENCE_TIME (Strmif. h)
+title: REFERENCE_TIME (Strmif.h)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ab88576f611674f5b208c5c39d328c77dcf57aec
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 08f1600e820ac59c53144743933701a61e4a7b753f814dde06c5c663a760938d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119747325"
 ---
-# <a name="reference_time"></a>tiempo de referencia \_
+# <a name="reference_time"></a>TIEMPO DE \_ REFERENCIA
 
-El tipo de datos de **\_ hora de referencia** define las unidades de los tiempos de referencia en DirectShow. Cada unidad de tiempo de referencia es de 100 nanosegundos.
+El **tipo de datos REFERENCE \_ TIME** define las unidades para los tiempos de referencia en DirectShow. Cada unidad de tiempo de referencia es de 100 nanosegundos.
 
 
 ```C++
@@ -22,16 +22,16 @@ typedef LONGLONG REFERENCE_TIME;
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El tipo de datos de **\_ hora de referencia** es un entero de 64 bits.
+El **tipo de datos REFERENCE \_ TIME** es un entero de 64 bits.
 
-Los tiempos de referencia se miden normalmente a partir de una de las siguientes líneas base:
+Normalmente, los tiempos de referencia se miden a partir de una de las líneas base siguientes:
 
--   Una hora de reloj absoluta. En este caso, la línea base dependerá de la implementación del reloj. Para obtener más información, consulte [relojes de referencia](reference-clocks.md).
--   Relativa al inicio de la reproducción.
+-   Una hora de reloj absoluta. En este caso, la línea base dependerá de la implementación del reloj. Para obtener más información, vea [Relojes de referencia.](reference-clocks.md)
+-   En relación con el inicio de la reproducción.
 
-Para obtener más información acerca de los tiempos de referencia, consulte [hora y relojes en DirectShow](time-and-clocks-in-directshow.md).
+Para obtener más información sobre las horas de referencia, vea [Time and Clocks in DirectShow](time-and-clocks-in-directshow.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,7 +39,7 @@ Para obtener más información acerca de los tiempos de referencia, consulte [ho
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Strmif. h (incluir DShow. h)</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Strmif.h (incluir Dshow.h)</dt> </dl> |
 
 
 
@@ -47,7 +47,7 @@ Para obtener más información acerca de los tiempos de referencia, consulte [ho
 
 <dl> <dt>
 
-[Tipos de datos de DirectShow](directshow-data-types.md)
+[DirectShow Tipos de datos](directshow-data-types.md)
 </dt> </dl>
 
  

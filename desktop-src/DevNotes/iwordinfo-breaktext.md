@@ -1,7 +1,7 @@
 ---
-description: Analiza el texto para identificar palabras y proporciona los resultados al objeto WordSink.
+description: Analiza texto para identificar palabras y proporciona los resultados al objeto WordSink.
 ms.assetid: 42bfc961-c095-4380-9b55-b58a0d9f2c00
-title: 'IWordInfo:: BreakText (método)'
+title: IWordInfo::BreakText (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Msir3jp.dll
-ms.openlocfilehash: f6f71e92137490d56c93d9443506c2d7ffa2688a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4cb4e4b27b52a4fb22a65f382a20c51a43ca5c77feb14828a7ea252e75c3b0f1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104080111"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119749745"
 ---
-# <a name="iwordinfobreaktext-method"></a>IWordInfo:: BreakText (método)
+# <a name="iwordinfobreaktext-method"></a>IWordInfo::BreakText (método)
 
 \[Este método está obsoleto y no se admite en Windows Vista.\]
 
-Analiza el texto para identificar palabras y proporciona los resultados al objeto [WordSink](/previous-versions//ms691570(v=vs.85)) .
+Analiza texto para identificar palabras y proporciona los resultados al [objeto WordSink.](/previous-versions//ms691570(v=vs.85))
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,21 +43,21 @@ HRESULT BreakText(
 
 <dl> <dt>
 
-*pTextSource* \[ de\]
+*pTextSource* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura [de \_ origen de texto](/previous-versions//ms690919(v=vs.85)) que contiene el texto Unicode.
+Puntero a una [estructura TEXT \_ SOURCE](/previous-versions//ms690919(v=vs.85)) que contiene el texto Unicode.
 
 </dd> <dt>
 
-*pWordSink* \[ de\]
+*pWordSink* \[ En\]
 </dt> <dd>
 
-Un puntero al objeto [WordSink](/previous-versions//ms691570(v=vs.85)) que recibe y controla las palabras generadas por este método. Si este parámetro es **null**, el método no divide la cadena en palabras.
+Puntero al objeto [WordSink](/previous-versions//ms691570(v=vs.85)) que recibe y controla las palabras generadas por este método. Si este parámetro es **NULL,** el método no divide la cadena en palabras.
 
 </dd> <dt>
 
-*fBreakMode* \[ de\]
+*fBreakMode* \[ En\]
 </dt> <dd>
 
 Modo de interrupción. Este parámetro puede ser uno de los valores siguientes.
@@ -66,8 +66,8 @@ Modo de interrupción. Este parámetro puede ser uno de los valores siguientes.
 
 | Valor                                                                                                                                                                                                                                                                                   | Significado                                                                                                     |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| <span id="IWORDINFO_BREAKTEXTMODE_DICTFORM"></span><span id="iwordinfo_breaktextmode_dictform"></span><dl> <dt>**IWORDINFO \_ BREAKTEXTMODE \_ DICTFORM**</dt> <dt>0x00000002</dt> </dl> | Word divide la cadena de texto y pasa el formato del Diccionario de las palabras al objeto **WordSink** .<br/> |
-| <span id="IWORDINFO_BREAKTEXTMODE_SMARTSEL"></span><span id="iwordinfo_breaktextmode_smartsel"></span><dl> <dt>**IWORDINFO \_ BREAKTEXTMODE \_ SMARTSEL**</dt> <dt>0x00000001</dt> </dl> | Word divide la cadena de texto y pasa las palabras al objeto **WordSink** .<br/>                        |
+| <span id="IWORDINFO_BREAKTEXTMODE_DICTFORM"></span><span id="iwordinfo_breaktextmode_dictform"></span><dl> <dt>**IWORDINFO \_ BREAKTEXTMODE \_ DICTFORM**</dt> <dt>0x00000002</dt> </dl> | Word break the text string and pass the dictionary form of the words to the **WordSink** object.<br/> |
+| <span id="IWORDINFO_BREAKTEXTMODE_SMARTSEL"></span><span id="iwordinfo_breaktextmode_smartsel"></span><dl> <dt>**IWORDINFO \_ BREAKTEXTMODE \_ SMARTSEL**</dt> <dt>0x00000001</dt> </dl> | Word separa la cadena de texto y pasa las palabras al **objeto WordSink.**<br/>                        |
 
 
 
@@ -83,16 +83,16 @@ Este método devuelve uno de los valores siguientes.
 
 | Código devuelto                                                                            | Descripción                                                                                             |
 |----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>   | La operación se realizó correctamente. No hay más texto disponible para rellenar el búfer de *pTextSource* .<br/> |
-| <dl> <dt>**E \_ FAIL**</dt> </dl> | El parámetro *pTextSource* es **null**.<br/>                                                     |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | La operación se realizó correctamente. No hay más texto disponible para rellenar el *búfer pTextSource.*<br/> |
+| <dl> <dt>**E \_ FAIL**</dt> </dl> | El *parámetro pTextSource* es **NULL.**<br/>                                                     |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use el miembro **pfnFillTextBuffer** de la estructura de **\_ origen de texto** para reabastecer el texto de origen. Este método debe controlar todos los valores devueltos de la función de devolución de llamada **pfnFillTextBuffer** . Si se produce un error, finalice el procesamiento del texto en el búfer antes de controlar el error.
+Use el **miembro pfnFillTextBuffer de** la **estructura TEXT \_ SOURCE** para reponer el texto de origen. Este método debe controlar todos los valores devueltos de la función de devolución de llamada **pfnFillTextBuffer.** Si se produce un error, finalice el procesamiento del texto en el búfer antes de controlar el error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -100,8 +100,8 @@ Use el miembro **pfnFillTextBuffer** de la estructura de **\_ origen de texto** 
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                  |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                         |
 | Archivo DLL<br/>                      | <dl> <dt>Msir3jp.dll</dt> </dl> |
@@ -115,7 +115,7 @@ Use el miembro **pfnFillTextBuffer** de la estructura de **\_ origen de texto** 
 [**IWordInfo**](iwordinfo.md)
 </dt> <dt>
 
-[origen de texto \_](/previous-versions//ms690919(v=vs.85))
+[ORIGEN DE \_ TEXTO](/previous-versions//ms690919(v=vs.85))
 </dt> <dt>
 
 [**WordInfo**](wordinfo-coclass.md)

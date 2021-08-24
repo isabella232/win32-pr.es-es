@@ -1,22 +1,22 @@
 ---
 description: XMFLOAT4 describe una estructura que contiene un vector 4D que consta de cuatro valores de punto flotante de precisión sencilla.
 ms.assetid: 79c3abc5-1896-4c51-b6a9-a97031961e8e
-title: Extensiones de XMFLOAT4
+title: Extensiones XMFLOAT4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: db2b1d958c3ced24f791a6f6f9a02381ed218807
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 739d47395e7b181fb559bb26b8b28cf9bbe482ce3c17151197024dacbfbd7b2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155477"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119740635"
 ---
-# <a name="xmfloat4-extensions"></a>Extensiones de XMFLOAT4
+# <a name="xmfloat4-extensions"></a>Extensiones XMFLOAT4
 
 [**XMFLOAT4**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4) describe una estructura que contiene un vector 4D que consta de cuatro valores de punto flotante de precisión sencilla.
 
 > [!Note]  
-> Las características que se enumeran aquí solo están disponibles cuando se desarrollan con C++.
+> Las características enumeradas aquí solo están disponibles al desarrollar con C++.
 
  
 

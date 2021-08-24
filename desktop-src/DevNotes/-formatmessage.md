@@ -1,7 +1,7 @@
 ---
 description: Da formato a una cadena de mensaje.
 ms.assetid: e5513b0d-5f93-4bcd-a011-eb4a6fab91e1
-title: _FormatMessage función)
+title: _FormatMessage función
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 api_location:
 - Msmdun80.dll
 - Sqlunirl.dll
-ms.openlocfilehash: 27cbcfb0d69d0b4dec72834bfc8f69a9f97048ae
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b9faa30fa69268ce3c729ce6f738e9ee0fea9831773bb736559d201bf8d09ccc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649817"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119833435"
 ---
-# <a name="_formatmessage-function"></a>\_FormatMessage (función)
+# <a name="_formatmessage-function"></a>\_Función FormatMessage
 
-\[Esta función es un contenedor de la función **FormatMessage** . Esta función puede modificarse o no estar disponible en el futuro. Las aplicaciones deben llamar a **FormatMessage** directamente.\]
+\[Esta función es un contenedor sobre la **función FormatMessage.** Esta función puede modificarse o no estar disponible en el futuro. Las aplicaciones deben llamar **directamente a FormatMessage.**\]
 
-Da formato a una cadena de mensaje. Consulte [**FormatMessage**](/windows/win32/api/winbase/nf-winbase-formatmessage).
+Da formato a una cadena de mensaje. Vea [**FormatMessage**](/windows/win32/api/winbase/nf-winbase-formatmessage).
 
 ## <a name="syntax"></a>Sintaxis
 

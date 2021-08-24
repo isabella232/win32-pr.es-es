@@ -1,11 +1,11 @@
 ---
-title: atributo de anotación de RPC-NS
-description: Una cadena que describe un elemento de perfil RPC determinado.
+title: Atributo rpc-Ns-Annotation
+description: Cadena que describe un elemento de perfil RPC determinado.
 ms.assetid: c4f148ec-c3c0-4ff8-9982-e941939ed823
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de anotación de RPC-NS
-- rpcNsAnnotation esquema de AD de atributos
+- Rpc-Ns-Annotation attribute AD Schema
+- Esquema de AD del atributo rpcNsAnnotation
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3234177476db1006f63ca1d58c36e31ddeaf570c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6b33889f998b78b7900770ad98c25b2b57783be131eedb9e7846f088e7c94694
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906115"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704175"
 ---
-# <a name="rpc-ns-annotation-attribute"></a>atributo de anotación de RPC-NS
+# <a name="rpc-ns-annotation-attribute"></a>Atributo rpc-Ns-Annotation
 
-Una cadena que describe un elemento de perfil RPC determinado.
+Cadena que describe un elemento de perfil RPC determinado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | anotación de RPC-NS                           |
-| Nombre para mostrar de LDAP | rpcNsAnnotation                             |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | rpc-Ns-Annotation                           |
+| Ldap-Display-Name | rpcNsAnnotation                             |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.366                      |
-| System-ID-GUID    | 88611bde-8cf4-11d0-afda-00c04fd930c9        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 88611bde-8cf4-11d0-afda-00c04fd930c9        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,18 +55,18 @@ Una cadena que describe un elemento de perfil RPC determinado.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                            |
+| Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | False                                                         |
-| Tiene un único valor       | True                                                          |
-| Está indexado             | False                                                         |
-| En el catálogo global      | False                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                  |
+| System-Only            | Falso                                                         |
+| Es de un solo valor       | Verdadero                                                          |
+| Está indexado             | Falso                                                         |
+| En el catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Clases usadas en        | [**Elemento de Perfil de RPC**](c-rpcprofileelement.md)<br/> |
+| Clases usadas en        | [**rpc-Profile-Element**](c-rpcprofileelement.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Una cadena que describe un elemento de perfil RPC determinado.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                            |
+| Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | False                                                         |
-| Tiene un único valor       | True                                                          |
-| Está indexado             | False                                                         |
-| En el catálogo global      | False                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                  |
+| System-Only            | Falso                                                         |
+| Es de un solo valor       | Verdadero                                                          |
+| Está indexado             | Falso                                                         |
+| En el catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Clases usadas en        | [**Elemento de Perfil de RPC**](c-rpcprofileelement.md)<br/> |
+| Clases usadas en        | [**rpc-Profile-Element**](c-rpcprofileelement.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Una cadena que describe un elemento de perfil RPC determinado.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                            |
+| Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | False                                                         |
-| Tiene un único valor       | True                                                          |
-| Está indexado             | False                                                         |
-| En el catálogo global      | False                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                  |
+| System-Only            | Falso                                                         |
+| Es de un solo valor       | Verdadero                                                          |
+| Está indexado             | Falso                                                         |
+| En el catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Clases usadas en        | [**Elemento de Perfil de RPC**](c-rpcprofileelement.md)<br/> |
+| Clases usadas en        | [**rpc-Profile-Element**](c-rpcprofileelement.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Una cadena que describe un elemento de perfil RPC determinado.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                            |
+| Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | False                                                         |
-| Tiene un único valor       | True                                                          |
-| Está indexado             | False                                                         |
-| En el catálogo global      | False                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                  |
+| System-Only            | Falso                                                         |
+| Es de un solo valor       | Verdadero                                                          |
+| Está indexado             | Falso                                                         |
+| En el catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Clases usadas en        | [**Elemento de Perfil de RPC**](c-rpcprofileelement.md)<br/> |
+| Clases usadas en        | [**rpc-Profile-Element**](c-rpcprofileelement.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Una cadena que describe un elemento de perfil RPC determinado.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                            |
+| Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | False                                                         |
-| Tiene un único valor       | True                                                          |
-| Está indexado             | False                                                         |
-| En el catálogo global      | False                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                  |
+| System-Only            | Falso                                                         |
+| Es de un solo valor       | Verdadero                                                          |
+| Está indexado             | Falso                                                         |
+| En el catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Clases usadas en        | [**Elemento de Perfil de RPC**](c-rpcprofileelement.md)<br/> |
+| Clases usadas en        | [**rpc-Profile-Element**](c-rpcprofileelement.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Una cadena que describe un elemento de perfil RPC determinado.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                            |
+| Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | False                                                         |
-| Tiene un único valor       | True                                                          |
-| Está indexado             | False                                                         |
-| En el catálogo global      | False                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                  |
+| System-Only            | Falso                                                         |
+| Es de un solo valor       | Verdadero                                                          |
+| Está indexado             | Falso                                                         |
+| En el catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Clases usadas en        | [**Elemento de Perfil de RPC**](c-rpcprofileelement.md)<br/> |
+| Clases usadas en        | [**rpc-Profile-Element**](c-rpcprofileelement.md)<br/> |
 
 
 

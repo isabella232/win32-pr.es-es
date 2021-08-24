@@ -1,9 +1,9 @@
 ---
-title: VÍDEO. maintainAspectRatio
-description: El atributo maintainAspectRatio especifica o recupera un valor que indica si el vídeo mantendrá su relación de aspecto cuando se intente ajustar el ancho y el alto definidos para el control.
+title: VIDEO.maintainAspectRatio
+description: El atributo maintainAspectRatio especifica o recupera un valor que indica si el vídeo mantendrá su relación de aspecto al intentar ajustarse al ancho y alto definidos para el control.
 ms.assetid: 42ac2196-b747-48d5-868d-7f7e5eb8dabb
 keywords:
-- Media Player de Windows VIDEO. maintainAspectRatio
+- VIDEO.maintainAspectRatio Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dfaca31ff46d20374a5336484e8f67a5bcd9d353
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e435dd64cac30bd2fc1f70e9b3f6b2731ab8fe99bfb2b75021b2576a9b0174b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709254"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119761785"
 ---
-# <a name="videomaintainaspectratio"></a>VÍDEO. maintainAspectRatio
+# <a name="videomaintainaspectratio"></a>VIDEO.maintainAspectRatio
 
-El atributo **maintainAspectRatio** especifica o recupera un valor que indica si el vídeo mantendrá su relación de aspecto cuando se intente ajustar el ancho y el alto definidos para el control.
+El **atributo maintainAspectRatio** especifica o recupera un valor que indica si el vídeo mantendrá su relación de aspecto al intentar ajustarse al ancho y alto definidos para el control.
 
 ``` syntax
         elementID.maintainAspectRatio
@@ -29,14 +29,14 @@ El atributo **maintainAspectRatio** especifica o recupera un valor que indica si
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **valor booleano** de lectura/escritura.
+Este atributo es un booleano de lectura **y escritura.**
 
 
 
 | Value | Descripción                                              |
 |-------|----------------------------------------------------------|
-| true  | Predeterminada. El vídeo mantiene su relación de aspecto al cambiar el tamaño. |
-| false | El vídeo no mantiene su relación de aspecto al cambiar el tamaño.  |
+| true  | Predeterminada. El vídeo mantiene su relación de aspecto al volver a tamaño. |
+| false | El vídeo no mantiene su relación de aspecto al volver a tamaño.  |
 
 
 
@@ -48,7 +48,7 @@ Este atributo es un **valor booleano** de lectura/escritura.
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -56,7 +56,7 @@ Este atributo es un **valor booleano** de lectura/escritura.
 
 <dl> <dt>
 
-[**Elemento de vídeo**](video-element.md)
+[**Elemento VIDEO**](video-element.md)
 </dt> </dl>
 
  

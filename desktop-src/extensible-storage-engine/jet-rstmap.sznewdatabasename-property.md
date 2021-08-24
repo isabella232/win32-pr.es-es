@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_RSTMAP. szNewDatabaseName'
-title: Propiedad JET_RSTMAP. szNewDatabaseName
+description: 'Más información sobre: JET_RSTMAP.szNewDatabaseName'
+title: JET_RSTMAP.szNewDatabaseName, propiedad
 TOCTitle: 'szNewDatabaseName property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_RSTMAP.szNewDatabaseName
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_rstmap.sznewdatabasename(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 245125d8139df1e1ec2cc78e0be05d99ee98774d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 84a4e51129458479be28d9d1f04740bf211259945ca80a5c8648320b9c71cc96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275588"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119833515"
 ---
-# <a name="jet_rstmapsznewdatabasename-property"></a>Propiedad JET_RSTMAP. szNewDatabaseName
+# <a name="jet_rstmapsznewdatabasename-property"></a>JET_RSTMAP.szNewDatabaseName, propiedad
 
-Obtiene o establece la ruta de acceso o el nombre actual de la base de datos. No debe ser null.
+Obtiene o establece el nombre o la ruta de acceso actuales de la base de datos. No debe ser null.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public string szNewDatabaseName { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. String](/dotnet/api/system.string)  
+Tipo: [System.String](/dotnet/api/system.string)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_RSTMAP (clase)](./jet-rstmap-class.md)
+[JET_RSTMAP clase](./jet-rstmap-class.md)
 
-[Miembros de JET_RSTMAP](./jet-rstmap-members.md)
+[JET_RSTMAP miembros](./jet-rstmap-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

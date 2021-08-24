@@ -1,11 +1,11 @@
 ---
-title: IWMPControls fastReverse, método
+title: Método fastReverse de IWMPControls
 description: El método fastReverse inicia la reproducción rápida del elemento multimedia en la dirección inversa.
 ms.assetid: 5c872e8d-2ffc-425f-a4dd-938ddd1426e0
 keywords:
-- método fastReverse de Windows Media Player
-- método fastReverse Windows Media Player, interfaz IWMPControls
-- Interfaz IWMPControls Windows Media Player, método fastReverse
+- Método fastReverse Reproductor de Windows Media
+- Método fastReverse Reproductor de Windows Media , interfaz IWMPControls
+- Interfaz IWMPControls Reproductor de Windows Media , método fastReverse
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7061481aea13b0ed83c3a3d0eb47ca24b940358b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 88bbc1442ca223765b498560d078879c9a7033011117b7f663d4d40ff26bdd93
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690884"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119761085"
 ---
-# <a name="iwmpcontrolsfastreverse-method"></a>IWMPControls:: fastReverse (método)
+# <a name="iwmpcontrolsfastreverse-method"></a>IWMPControls::fastReverse (método)
 
-El método **fastReverse** inicia la reproducción rápida del elemento multimedia en la dirección inversa.
+El **método fastReverse** inicia la reproducción rápida del elemento multimedia en la dirección inversa.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,19 +53,19 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método **fastReverse** recorre el clip en orden inverso cinco veces la velocidad normal, mostrando solo los fotogramas clave si se trata de un archivo de vídeo. Llamar a **fastReverse** es equivalente a especificar-5,0 para la tasa estableciendo la propiedad **IWMPSettings. rate** . Si posteriormente se cambia la frecuencia, o si se llama a **IWMPControls. Play** o **IWMPControls. stop** , Windows Media Player dejará de ser inversa rápido.
+El **método fastReverse** examina el clip en orden inverso a una velocidad cinco veces mayor que la velocidad normal, mostrando solo los fotogramas clave si es un archivo de vídeo. Llamar **a fastReverse** equivale a especificar -5,0 para la velocidad estableciendo la **propiedad IWMPSettings.rate.** Si posteriormente se cambia la velocidad, o si se llama a **IWMPControls.play** o **IWMPControls.stop,** Reproductor de Windows Media dejará de invertirse rápidamente.
 
-Si el elemento forma parte de una lista de reproducción, **fastReverse** se detiene al principio de la pista actual. Por ejemplo, si el seguimiento 3 está en **fastReverse**, cuando se alcanza el comienzo de la pista 3, Windows Media Player no irá al seguimiento 2. El recuento de reproducción no se incrementa al llamar a **fastReverse**.
+Si el elemento forma parte de una lista de reproducción, **fastReverse** se detiene al principio de la pista actual. Por ejemplo, si la pista 3 está en **fastReverse**, cuando se alcanza el principio de la pista 3, Reproductor de Windows Media no irá a la pista 2. El recuento de reproducción no se incrementa al llamar **a fastReverse**.
 
-Si llama a **IWMPControls. fastForward** mientras **fastReverse** se está ejecutando, se detendrá **fastReverse** y **IWMPControls. fastForward** comenzará.
+Si llama a **IWMPControls.fastForward** mientras se ejecuta **fastReverse,** **fastReverse** se detendrán y **comenzará IWMPControls.fastForward.**
 
-Este método no funciona para las difusiones en vivo y determinados tipos de medios digitales. Para determinar si puede usar Fast inverso en un clip, pase el valor **System. String** "FastReverse" a la propiedad **IWMPControls. isavailable** (el método **IWMPControls. Get \_ isavailable** en C#).
+Este método no funciona para difusión en vivo y determinados tipos de medios digitales. Para determinar si puede usar la inversa rápida en un clip, pase el valor **System.String** "FastReverse" a la propiedad **IWMPControls.isAvailable** (el método **IWMPControls.get \_ isAvailable** en C#).
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **fastReverse** para invertir el elemento multimedia actual en respuesta al evento click de un botón. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo siguiente se **usa fastReverse** para invertir el elemento multimedia actual en respuesta al evento Click de un botón. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -112,7 +112,7 @@ End Sub
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -125,19 +125,19 @@ End Sub
 [**Interfaz IWMPControls (VB y C#)**](iwmpcontrols--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPControls. fastForward (VB y C#)**](wmplibiwmpcontrols-iwmpcontrols-fastforward--vb-and-c.md)
+[**IWMPControls.fastForward (VB y C#)**](wmplibiwmpcontrols-iwmpcontrols-fastforward--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPControls. isAvailable (VB y C#)**](iwmpcontrols-isavailable--vb-and-c.md)
+[**IWMPControls.isAvailable (VB y C#)**](iwmpcontrols-isavailable--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPControls. Play (VB y C#)**](wmplibiwmpcontrols-iwmpcontrols-play--vb-and-c.md)
+[**IWMPControls.play (VB y C#)**](wmplibiwmpcontrols-iwmpcontrols-play--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPControls. STOP (VB y C#)**](wmplibiwmpcontrols-iwmpcontrols-stop--vb-and-c.md)
+[**IWMPControls.stop (VB y C#)**](wmplibiwmpcontrols-iwmpcontrols-stop--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings. Rate (VB y C#)**](wmplibiwmpsettings-iwmpsettings-rate--vb-and-c.md)
+[**IWMPSettings.rate (VB y C#)**](wmplibiwmpsettings-iwmpsettings-rate--vb-and-c.md)
 </dt> </dl>
 
  

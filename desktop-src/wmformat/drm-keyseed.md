@@ -1,9 +1,9 @@
 ---
 title: DRM_KeySeed
-description: La \_ propiedad KeySeed de DRM contiene la inicialización de clave que se utilizará junto con el ID. de clave para crear la clave.
+description: La propiedad KeySeed de DRM contiene el valor de ed. de clave que se usará junto con \_ keyID para crear la clave.
 ms.assetid: 38613d50-89c2-4422-9265-5e89de030ae9
 keywords:
-- DRM_KeySeed formato de Windows Media
+- DRM_KeySeed windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 698db5fe5a1123af0a7b4623d304bf0569bbf253
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 46766dc5754bde33c00af250f03a54caf3c12c607ec14da858ac638a70f79baf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "105676345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119658976"
 ---
-# <a name="drm_keyseed"></a>\_KEYSEED DRM
+# <a name="drm_keyseed"></a>DRM \_ KeySeed
 
-La **propiedad \_ KeySeed de DRM** contiene la inicialización de clave que se utilizará junto con el ID. de clave para crear la clave.
+La **propiedad \_ KeySeed de DRM** contiene el valor de ed. de clave que se usará junto con keyID para crear la clave.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,17 +29,17 @@ g \_ wszWMDRM \_ KeySeed
 
 ## <a name="data-type"></a>Tipo de datos
 
-**\_cadena de tipo WMT \_**
+**CADENA DE TIPO WMT \_ \_**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad se puede establecer mediante [**IWMDRMWriter:: SetDRMAttribute**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmwriter-setdrmattribute). No es accesible para el objeto lector.
+Esta propiedad se puede establecer mediante [**IWMDRMWriter::SetDRMAttribute**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmwriter-setdrmattribute). El objeto lector no puede acceder a él.
 
-Una inicialización de clave se usa normalmente para proteger varios archivos o conjuntos de archivos, por ejemplo, todos los archivos emitidos por un servidor de licencias, o quizás todos los archivos de un intérprete determinado. Sin embargo, el ID. de la archivo es único para cada archivo.
+Normalmente, un valor de ed.clave se usa para proteger varios archivos o conjuntos de archivos, por ejemplo, todos los archivos emitidos por un servidor de licencias o quizás todos los archivos de un intérprete determinado. Sin embargo, KeyID es único para cada archivo.
 
-La inicialización de clave debe ser un secreto que solo se comparta entre el creador de contenido y el distribuidor de licencias. Este valor no se almacena en el encabezado DRM y no es necesario ni está accesible para las aplicaciones de reproductor DRM.
+El valor de ed. de clave debe seguir siendo un secreto que solo se comparte entre el creador del contenido y el distribuidor de licencias. Este valor no se almacena en el encabezado DRM y ni es necesario ni es accesible para las aplicaciones del reproductor DRM.
 
-Se puede generar un nuevo inicialización de clave mediante el método [**IWMDRMWriter:: GenerateKeySeed**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmwriter-generatekeyseed) o cualquier otro medio adecuado.
+Se puede generar un nuevo valor de ed. de clave mediante el método [**IWMDRMWriter::GenerateKeySeed**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmwriter-generatekeyseed) o cualquier otro medio adecuado.
 
 ## <a name="see-also"></a>Vea también
 
@@ -48,9 +48,9 @@ Se puede generar un nuevo inicialización de clave mediante el método [**IWMDRM
 [**Propiedades de DRM**](drm-properties.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Comprueba que el proceso de llamada tiene acceso de lectura a una cadena. Si no es así, la macro llama a la macro DbgBreak.
 ms.assetid: 749a8c22-7a4a-49c2-a214-fc64dc5a0202
-title: Macro ValidateStringPtr (Wxdebug. h)
+title: Macro ValidateStringPtr (Wxdebug.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,19 +13,19 @@ api_type:
 - HeaderDef
 api_location:
 - Wxdebug.h
-ms.openlocfilehash: 19bf0b9e43ecbbbdea0e11284cd1cb4a058e22cc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e6b04b83f3bd3b938f7cc6cc488a931e34bcca6207770b44cbd3c77c01dc9624
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105691035"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119755695"
 ---
 # <a name="validatestringptr-macro"></a>ValidateStringPtr (macro)
 
-Comprueba que el proceso de llamada tiene acceso de lectura a una cadena. Si no es así, la macro llama a la macro [**DbgBreak**](dbgbreak.md) .
+Comprueba que el proceso de llamada tiene acceso de lectura a una cadena. Si no es así, la macro llama a la macro [**DbgBreak.**](dbgbreak.md)
 
 > [!Note]  
-> Esta macro está en desuso. En el Windows SDK para Windows Vista (y versiones posteriores), esta macro no hace nada.
+> Esta macro está en desuso. En el SDK Windows para Windows Vista (y versiones posteriores) esta macro no hace nada.
 
  
 
@@ -44,20 +44,20 @@ void ValidateReadPtr(
 
 <dl> <dt>
 
-*m* 
+*p* 
 </dt> <dd>
 
-Puntero a una cadena de **TCHAR** terminada en NULL.
+Puntero a una cadena **TCHAR terminada en** NULL.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Esta macro no devuelve ningún valor.
+Esta macro no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta macro se omite a menos que se defina DEBUG, \_ Debug o VFWROBUST cuando se incluye el archivo de encabezado de clase base de DirectShow. Esta macro puede tener un costo de rendimiento considerable.
+Esta macro se omite a menos que se defina DEBUG, DEBUG o VFWROBUST cuando se DirectShow archivo de encabezado \_ de clase base. Esta macro puede tener un costo de rendimiento significativo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,7 +65,7 @@ Esta macro se omite a menos que se defina DEBUG, \_ Debug o VFWROBUST cuando se 
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wxdebug. h (incluir streams. h)</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wxdebug.h (incluir Secuencias.h)</dt> </dl> |
 
 
 

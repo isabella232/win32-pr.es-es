@@ -1,9 +1,9 @@
 ---
-title: Configuración del códec DMOs
-description: Para obtener la documentación actual sobre los códecs de Windows Media y los procesadores de señal digital, consulte Windows Media Audio y vídeo códec y API de DSP. | Configuración del códec DMOs
+title: Configuración de las DDO de códec
+description: Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP APIs (Api de códecs de audio y vídeo multimedia y DSP). | Configuración de las DDO de códec
 ms.assetid: f4967de1-cb2e-4839-b59a-49e8bdb0e3d9
 keywords:
-- Configuración del códec DMOs Windows Media Format
+- Configuración del formato multimedia de Windows de las DDO de códecs
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a56f3af56a3bacb8971192067c7346c47e88ca6e
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 7f195ac64088d030efb0c35c39b14df714f6d83cc602fb64f5121317c9bdfdff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104424272"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119809795"
 ---
-# <a name="configuring-the-codec-dmos"></a>Configuración del códec DMOs
+# <a name="configuring-the-codec-dmos"></a>Configuración de las DDO de códec
 
-Para obtener la documentación actual sobre los códecs de Windows Media y los procesadores de señal digital, consulte [Windows Media Audio y vídeo códec y API de DSP.](/previous-versions//dd464626(v=vs.85))
+Para obtener la documentación actual Windows códecs multimedia y procesadores de señales digitales, vea Windows [Media Audio and Video Codec and DSP APIs (Api](/previous-versions//dd464626(v=vs.85)) de códecs de audio y vídeo multimedia y DSP).
 
  
 

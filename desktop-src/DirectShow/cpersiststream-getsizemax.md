@@ -1,7 +1,7 @@
 ---
 description: Recupera el tamaño máximo de bytes necesario para la secuencia actual, incluido el número de versión.
 ms.assetid: 55ea4568-5ca4-4139-8def-bef20071835d
-title: Método CPersistStream. GetSizeMax (pStream. h)
+title: Método CPersistStream.GetSizeMax (Pstream.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4ef9fcd176463aa8b0bc69fabbd74d78d4ca17cb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 746fb01102642f2d3e6b254ac741c284143aaecfd401fc220bf7a9d97d93e64e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671001"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119813375"
 ---
-# <a name="cpersiststreamgetsizemax-method"></a>CPersistStream. GetSizeMax, método
+# <a name="cpersiststreamgetsizemax-method"></a>Método CPersistStream.GetSizeMax
 
 Recupera el tamaño máximo de bytes necesario para la secuencia actual, incluido el número de versión.
 
@@ -42,20 +42,20 @@ HRESULT GetSizeMax(
 
 <dl> <dt>
 
-*PCB* 
+*sizesize* 
 </dt> <dd>
 
-Puntero al tamaño en bytes necesario para guardar este flujo, incluido el número de versión.
+Puntero al tamaño en bytes necesario para guardar esta secuencia, incluido el número de versión.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función miembro implementa el método **IPersistStream:: GetSizeMax** .
+Esta función miembro implementa el **método IPersistStream::GetSizeMax.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Esta función miembro implementa el método **IPersistStream:: GetSizeMax** .
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>PStream. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Pstream.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Esta función miembro implementa el método **IPersistStream:: GetSizeMax** .
 
 <dl> <dt>
 
-[**Clase CPersistStream**](cpersiststream.md)
+[**CPersistStream (clase)**](cpersiststream.md)
 </dt> </dl>
 
  

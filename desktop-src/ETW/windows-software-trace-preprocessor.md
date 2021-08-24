@@ -1,21 +1,21 @@
 ---
-description: El procesador de seguimiento de software (WPP) de Windows proporciona un mecanismo eficaz para registrar los eventos que se producen durante la ejecución de una aplicación o un controlador. WPP usa la API ETW.
+description: El Windows de seguimiento de software (WPP) proporciona un mecanismo eficaz para registrar los eventos que se producen durante la ejecución de una aplicación o controlador. WPP usa la API de ETW.
 ms.assetid: 3a6f441a-ae36-4cce-aa83-78a4e53c9b1a
-title: Escribir eventos WPP
+title: Escribir eventos de WPP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c0f0d4deb580a3f81f3c6c87f6ca5ca4518f735e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: de2b750285db171662ff0fb4f4408be77ad9d78e281e77347715e02bc1a52ee7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984547"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119811695"
 ---
-# <a name="writing-wpp-events"></a>Escribir eventos WPP
+# <a name="writing-wpp-events"></a>Escribir eventos de WPP
 
-El procesador de seguimiento de software (WPP) de Windows proporciona un mecanismo eficaz para registrar los eventos que se producen durante la ejecución de una aplicación o un controlador. WPP usa la API ETW.
+El Windows de seguimiento de software (WPP) proporciona un mecanismo eficaz para registrar los eventos que se producen durante la ejecución de una aplicación o controlador. WPP usa la API de ETW.
 
-Para obtener más información sobre el uso de WPP para registrar eventos, consulte el artículo de [preguntas más frecuentes](/windows-hardware/drivers/devtest/software-tracing-faq) sobre el seguimiento de [software WPP](/windows-hardware/drivers/devtest/wpp-software-tracing) y el seguimiento de software en el kit de desarrollo de controladores (DDK) de Microsoft Windows.
+Para obtener más información sobre el uso de WPP para registrar eventos, consulte Preguntas más frecuentes sobre seguimiento de software y seguimiento de [software](/windows-hardware/drivers/devtest/software-tracing-faq) de [WPP](/windows-hardware/drivers/devtest/wpp-software-tracing) en microsoft Windows Driver Development Kit (DDK).
 
  
 

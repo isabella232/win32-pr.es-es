@@ -1,11 +1,11 @@
 ---
-title: USN-Intersite atributo)
-description: El número de secuencia de actualización (USN) para la replicación entre sitios.
+title: USN-Intersite atributo
+description: Número de secuencia de actualización (USN) para la replicación entre sitios.
 ms.assetid: c4a4640b-2890-46ea-9eb9-8acb9e749499
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de USN-Intersite
-- USNIntersite esquema de AD de atributos
+- USN-Intersite esquema de AD de atributo
+- Esquema de AD del atributo USNIntersite
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d101d854650a689679b95282734865ac19f6ced1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 280a8e1e801afd3b27589a1aa35f7d2006556781a6620cdaa9e3a3a2d3878703
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104493666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119703965"
 ---
-# <a name="usn-intersite-attribute"></a>USN-Intersite atributo)
+# <a name="usn-intersite-attribute"></a>USN-Intersite atributo
 
-El número de secuencia de actualización (USN) para la replicación entre sitios.
+Número de secuencia de actualización (USN) para la replicación entre sitios.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | USN-Intersite                        |
-| Nombre para mostrar de LDAP | USNIntersite                         |
-| Tamaño              | 4 bytes                              |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | USNIntersite                         |
+| Size              | 4 bytes                              |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.2.469               |
-| System-ID-GUID    | a8df7498-c5ea-11d1-bbcb-0080c76670c0 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | a8df7498-c5ea-11d1-menteb-0080c76670c0 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -44,7 +44,7 @@ El número de secuencia de actualización (USN) para la replicación entre sitio
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,13 +56,13 @@ El número de secuencia de actualización (USN) para la replicación entre sitio
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x817A                          |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | True                            |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000001                      |
@@ -77,13 +77,13 @@ El número de secuencia de actualización (USN) para la replicación entre sitio
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x817A                          |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | True                            |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000001                      |
@@ -92,19 +92,19 @@ El número de secuencia de actualización (USN) para la replicación entre sitio
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x817A                          |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | True                            |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000001                      |
@@ -117,15 +117,15 @@ El número de secuencia de actualización (USN) para la replicación entre sitio
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x817A                          |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | True                            |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000001                      |
@@ -140,13 +140,13 @@ El número de secuencia de actualización (USN) para la replicación entre sitio
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x817A                          |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | True                            |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000001                      |
@@ -161,13 +161,13 @@ El número de secuencia de actualización (USN) para la replicación entre sitio
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x817A                          |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | True                            |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000001                      |
@@ -180,15 +180,15 @@ El número de secuencia de actualización (USN) para la replicación entre sitio
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x817A                          |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | True                            |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000001                      |

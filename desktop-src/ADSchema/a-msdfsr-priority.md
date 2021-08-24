@@ -1,11 +1,11 @@
 ---
-title: atributo de prioridad MS-DFSR
+title: Atributo ms-DFSR-Priority
 description: Nivel de prioridad.
 ms.assetid: 64992cb5-1167-469d-a3bd-a524652475a1
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de prioridad de MS-DFSR
-- msDFSR-Priority Attribute AD Schema
+- Esquema de AD del atributo ms-DFSR-Priority
+- Esquema de AD del atributo msDFSR-Priority
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a0b80f1ac05f05691c03fa9d62bb29444dbac1a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: bace8fd682a00b3d0f4f2252ad792e9c0cf1110975b1e90264c7842e3f1661cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906213"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704955"
 ---
-# <a name="ms-dfsr-priority-attribute"></a>atributo de prioridad MS-DFSR
+# <a name="ms-dfsr-priority-attribute"></a>Atributo ms-DFSR-Priority
 
 Nivel de prioridad.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-DFSR-prioridad                     |
-| Nombre para mostrar de LDAP | msDFSR-prioridad                      |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-DFSR-Priority                     |
+| Ldap-Display-Name | msDFSR-Priority                      |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.6.13.3.25           |
-| System-ID-GUID    | eb20e7d6-32ad-42de-b141-16ad2631b01b |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | eb20e7d6-32ad-42de-b141-16ad2631b01b |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -52,18 +52,18 @@ Nivel de prioridad.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                        |
+| Id. de vínculo                | \-                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                        |
-| System-Only            | False                                                                                                                     |
-| Tiene un único valor       | True                                                                                                                      |
-| Está indexado             | False                                                                                                                     |
-| En el catálogo global      | False                                                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                              |
+| System-Only            | Falso                                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                                      |
+| Está indexado             | Falso                                                                                                                     |
+| En el catálogo global      | Falso                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                              |
 | Range-Lower            | \-                                                                                                                        |
 | Range-Upper            | \-                                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                                |
 | System-Flags           | 0x00000000                                                                                                                |
-| Clases usadas en        | [**MS-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> [**Conexión MS-DFSR**](c-msdfsr-connection.md)<br/> |
+| Clases usadas en        | [**ms-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> [**ms-DFSR-Connection**](c-msdfsr-connection.md)<br/> |
 
 
 
@@ -73,18 +73,18 @@ Nivel de prioridad.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                        |
+| Id. de vínculo                | \-                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                        |
-| System-Only            | False                                                                                                                     |
-| Tiene un único valor       | True                                                                                                                      |
-| Está indexado             | False                                                                                                                     |
-| En el catálogo global      | False                                                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                              |
+| System-Only            | Falso                                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                                      |
+| Está indexado             | Falso                                                                                                                     |
+| En el catálogo global      | Falso                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                              |
 | Range-Lower            | \-                                                                                                                        |
 | Range-Upper            | \-                                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                                |
 | System-Flags           | 0x00000000                                                                                                                |
-| Clases usadas en        | [**MS-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> [**Conexión MS-DFSR**](c-msdfsr-connection.md)<br/> |
+| Clases usadas en        | [**ms-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> [**ms-DFSR-Connection**](c-msdfsr-connection.md)<br/> |
 
 
 
@@ -94,18 +94,18 @@ Nivel de prioridad.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                        |
+| Id. de vínculo                | \-                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                        |
-| System-Only            | False                                                                                                                     |
-| Tiene un único valor       | True                                                                                                                      |
-| Está indexado             | False                                                                                                                     |
-| En el catálogo global      | False                                                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                              |
+| System-Only            | Falso                                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                                      |
+| Está indexado             | Falso                                                                                                                     |
+| En el catálogo global      | Falso                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                              |
 | Range-Lower            | \-                                                                                                                        |
 | Range-Upper            | \-                                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                                |
 | System-Flags           | 0x00000000                                                                                                                |
-| Clases usadas en        | [**MS-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> [**Conexión MS-DFSR**](c-msdfsr-connection.md)<br/> |
+| Clases usadas en        | [**ms-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> [**ms-DFSR-Connection**](c-msdfsr-connection.md)<br/> |
 
 
 

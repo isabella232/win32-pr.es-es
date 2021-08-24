@@ -1,7 +1,7 @@
 ---
 description: Especifica si el color especificado es un color especial.
 ms.assetid: fda856c4-37b9-444f-9c54-d9eb848a4b05
-title: FSpecialIMEColorStyle función)
+title: Función FSpecialIMEColorStyle
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - Imeshare.dll
-ms.openlocfilehash: af6edf14f4c2167a4609cd8cbb671e85e297368d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7922f60d347a91b461031d1a56cc51b9630389e99fbef778a8f75007b17f1558
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649664"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119795175"
 ---
-# <a name="fspecialimecolorstyle-function"></a>FSpecialIMEColorStyle función)
+# <a name="fspecialimecolorstyle-function"></a>Función FSpecialIMEColorStyle
 
 Especifica si el color especificado es un color especial.
 
@@ -39,20 +39,20 @@ BOOL __cdecl FSpecialIMEColorStyle(
 
 <dl> <dt>
 
-*pcolorstyle* \[ de\]
+*pcolorstyle* \[ En\]
 </dt> <dd>
 
-Una estructura **IMECOLORSTY** devuelta por una función [**PColorStyleBackFromIMEStyle**](pcolorstylebackfromimestyle.md) o [**PColorStyleTextFromIMEStyle**](pcolorstyletextfromimestyle.md) .
+Estructura **IMECOLORSTY** devuelta desde una [**función PColorStyleBackFromIMEStyle**](pcolorstylebackfromimestyle.md) o [**PColorStyleTextFromIMEStyle.**](pcolorstyletextfromimestyle.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **verdadero** cuando el color es un color especial.
+Devuelve **TRUE** cuando el color es un color especial.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función no tiene asociado ningún archivo de encabezado o biblioteca de importación. debe llamarlo mediante las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Esta función no tiene asociada la biblioteca de importación ni el archivo de encabezado; Debe llamarlo mediante las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**y GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 

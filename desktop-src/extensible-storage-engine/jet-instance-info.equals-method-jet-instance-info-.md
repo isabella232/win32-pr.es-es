@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_INSTANCE_INFO. Equals (método JET_INSTANCE_INFO)'
-title: JET_INSTANCE_INFO. Equals (método JET_INSTANCE_INFO)
+description: 'Más información sobre: JET_INSTANCE_INFO. Método Equals (JET_INSTANCE_INFO)'
+title: JET_INSTANCE_INFO. Método Equals (JET_INSTANCE_INFO)
 TOCTitle: Equals method (JET_INSTANCE_INFO)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_INSTANCE_INFO.Equals(Microsoft.Isam.Esent.Interop.JET_INSTANCE_INFO)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_instance_info.equals(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b601e018b51e6e95162478ff6c5fe12e77f7b469
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9ad8e1780667e4009ec91e8deaa0ce9b8e0ae8805689c81c522b471c4b233135
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002115"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119720345"
 ---
-# <a name="jet_instance_infoequals-method-jet_instance_info"></a>JET_INSTANCE_INFO. Equals (método JET_INSTANCE_INFO)
+# <a name="jet_instance_infoequals-method-jet_instance_info"></a>JET_INSTANCE_INFO. Método Equals (JET_INSTANCE_INFO)
 
-Devuelve un valor que indica si esta instancia es igual a otra instancia de.
+Devuelve un valor que indica si esta instancia es igual a otra instancia.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,27 +58,27 @@ public bool Equals(
 #### <a name="parameters"></a>Parámetros
 
   - Otros  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_INSTANCE_INFO](./jet-instance-info-class.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_INSTANCE_INFO](./jet-instance-info-class.md)  
     
     Instancia de que se va a comparar con esta instancia.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True si las dos instancias son iguales.  
 
 #### <a name="implements"></a>Implementaciones
 
-[IEquatable \<T\> . Es igual a (T)](/dotnet/api/system.iequatable-1.equals#System_IEquatable_1_Equals__0_)  
+[IEquatable \<T\> . Equals(T)](/dotnet/api/system.iequatable-1.equals#System_IEquatable_1_Equals__0_)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_INSTANCE_INFO (clase)](./jet-instance-info-class.md)
+[JET_INSTANCE_INFO clase](./jet-instance-info-class.md)
 
-[Miembros de JET_INSTANCE_INFO](./jet-instance-info-members.md)
+[JET_INSTANCE_INFO miembros](./jet-instance-info-members.md)
 
-[Equals (sobrecarga)](./jet-instance-info.equals-method.md)
+[Sobrecarga igual a](./jet-instance-info.equals-method.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

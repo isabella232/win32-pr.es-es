@@ -1,11 +1,11 @@
 ---
-title: Object-Guid atributo)
-description: Identificador único de un objeto.
+title: Object-Guid atributo
+description: Identificador único de un objeto .
 ms.assetid: fc2d65a3-7472-41ef-9780-d1a7ec965804
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Object-Guid
-- atributo objectGUID esquema de AD
+- Object-Guid esquema de AD de atributo
+- ObjectGUID attribute AD Schema (Esquema de AD del atributo objectGUID)
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 07e3715c38b629869296e6f8df5dbebd9a515d1b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e2cf264ef8e48cf8515da32a09768ff3db2f544461f27e849fafdfca8998fab0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906145"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704585"
 ---
-# <a name="object-guid-attribute"></a>Object-Guid atributo)
+# <a name="object-guid-attribute"></a>Object-Guid atributo
 
-Identificador único de un objeto.
+Identificador único de un objeto .
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------------------------------|
 | CN                | Object-Guid                                                         |
-| Nombre para mostrar de LDAP | objectGUID                                                          |
-| Tamaño              | 16 bytes                                                            |
-| Actualizar privilegio  | El sistema establece este valor.                                    |
+| Ldap-Display-Name | objectGUID                                                          |
+| Size              | 16 bytes                                                            |
+| Actualizar privilegios  | El sistema establece este valor.                                    |
 | Frecuencia de actualización  | Este valor se establece cuando se crea el objeto y no se puede cambiar. |
 | Attribute-Id      | 1.2.840.113556.1.4.2                                                |
-| System-ID-GUID    | bf9679e7-0de6-11d0-a285-00aa003049e2                                |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md)               |
+| System-Id-Guid    | bf9679e7-0de6-11d0-a285-00aa003049e2                                |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md)               |
 
 
 
@@ -44,7 +44,7 @@ Identificador único de un objeto.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,13 +56,13 @@ Identificador único de un objeto.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8C6D                          |
-| System-Only            | True                            |
-| Tiene un único valor       | True                            |
-| Está indexado             | True                            |
-| En el catálogo global      | True                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Verdadero                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 16                              |
 | Range-Upper            | 16                              |
 | Search-Flags           | 0x00000009                      |
@@ -77,13 +77,13 @@ Identificador único de un objeto.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8C6D                          |
-| System-Only            | True                            |
-| Tiene un único valor       | True                            |
-| Está indexado             | True                            |
-| En el catálogo global      | True                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Verdadero                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 16                              |
 | Range-Upper            | 16                              |
 | Search-Flags           | 0x00000009                      |
@@ -92,19 +92,19 @@ Identificador único de un objeto.
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8C6D                          |
-| System-Only            | True                            |
-| Tiene un único valor       | True                            |
-| Está indexado             | True                            |
-| En el catálogo global      | True                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Verdadero                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 16                              |
 | Range-Upper            | 16                              |
 | Search-Flags           | 0x00000009                      |
@@ -119,13 +119,13 @@ Identificador único de un objeto.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8C6D                          |
-| System-Only            | True                            |
-| Tiene un único valor       | True                            |
-| Está indexado             | True                            |
-| En el catálogo global      | True                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Verdadero                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 16                              |
 | Range-Upper            | 16                              |
 | Search-Flags           | 0x00000009                      |
@@ -140,13 +140,13 @@ Identificador único de un objeto.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8C6D                          |
-| System-Only            | True                            |
-| Tiene un único valor       | True                            |
-| Está indexado             | True                            |
-| En el catálogo global      | True                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Verdadero                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 16                              |
 | Range-Upper            | 16                              |
 | Search-Flags           | 0x00000009                      |
@@ -161,13 +161,13 @@ Identificador único de un objeto.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8C6D                          |
-| System-Only            | True                            |
-| Tiene un único valor       | True                            |
-| Está indexado             | True                            |
-| En el catálogo global      | True                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Verdadero                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 16                              |
 | Range-Upper            | 16                              |
 | Search-Flags           | 0x00000009                      |
@@ -182,13 +182,13 @@ Identificador único de un objeto.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8C6D                          |
-| System-Only            | True                            |
-| Tiene un único valor       | True                            |
-| Está indexado             | True                            |
-| En el catálogo global      | True                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Verdadero                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 16                              |
 | Range-Upper            | 16                              |
 | Search-Flags           | 0x00000009                      |

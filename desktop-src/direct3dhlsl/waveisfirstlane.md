@@ -1,9 +1,9 @@
 ---
-title: WaveIsFirstLane función)
-description: Devuelve true solo para el carril activo en la ola actual con el índice más pequeño.
+title: Función WaveIsFirstLane
+description: Devuelve true solo para el carril activo de la onda actual con el índice más pequeño.
 ms.assetid: 5D90F713-08C7-4BD4-867B-2E7CA3A85E87
 keywords:
-- WaveIsFirstLane de función HLSL
+- Función WaveIsFirstLane HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 49e875463d8281ff7e7699694c02d087df1a372f
-ms.sourcegitcommit: f01bc6744cea55ad1aeeace7981a30b567e6fe60
+ms.openlocfilehash: d909d4269db61980325c48b5858d910955512f701fb09adbcb91f5e078fa3b33
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104359521"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119852715"
 ---
-# <a name="waveisfirstlane-function"></a>WaveIsFirstLane función)
+# <a name="waveisfirstlane-function"></a>Función WaveIsFirstLane
 
-Devuelve true solo para el carril activo en la ola actual con el índice más pequeño.
+Devuelve true solo para el carril activo de la onda actual con el índice más pequeño.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,13 +39,13 @@ Esta función no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-True solo para el carril activo en la ola actual con el índice más pequeño.
+True solo para el carril activo en la onda actual con el índice más pequeño.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se puede utilizar para identificar las operaciones que se van a ejecutar solo una vez por cada onda.
+Esta función se puede usar para identificar las operaciones que se van a ejecutar solo una vez por onda.
 
-Esta función se admite desde el modelo de sombreador 6,0 en todas las fases del sombreador. 
+Esta función se admite desde el modelo de sombreador 6.0 en todas las fases del sombreador. 
 
 
 
@@ -64,10 +64,10 @@ Esta función se admite desde el modelo de sombreador 6,0 en todas las fases del
 
 <dl> <dt>
 
-[Información general sobre el modelo de sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
+[Información general del modelo de sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
 </dt> <dt>
 
-[Modelo de sombreador 6](shader-model-6-0.md)
+[Shader Model 6](shader-model-6-0.md)
 </dt> </dl>
 
  

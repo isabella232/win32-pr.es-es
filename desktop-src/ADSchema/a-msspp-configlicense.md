@@ -1,11 +1,11 @@
 ---
-title: atributo MS-SPP-config-License
-description: Licencia de configuración de clave de producto usada durante la activación en línea o telefónica del bosque de Active Directory.
+title: Atributo ms-SPP-Config-License
+description: Licencia de configuración de clave de producto que se usa durante la activación en línea o por teléfono del Active Directory cliente.
 ms.assetid: deb313c2-6309-4268-8ff1-28d89cd469ca
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-SPP-config-License
-- msSPP-ConfigLicense atributo AD Schema
+- Esquema de AD del atributo ms-SPP-Config-License
+- Esquema de AD del atributo msSPP-ConfigLicense
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 75d0fb22161218bd718a09f95dadf6aca6c9e12c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e8a7cda331191428648daa333a2efe296374d7206e44565a1728afea6bc2d47f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104493972"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704835"
 ---
-# <a name="ms-spp-config-license-attribute"></a>atributo MS-SPP-config-License
+# <a name="ms-spp-config-license-attribute"></a>Atributo ms-SPP-Config-License
 
-Licencia de configuración de clave de producto usada durante la activación en línea o telefónica del bosque de Active Directory.
+Licencia de configuración de clave de producto que se usa durante la activación en línea o por teléfono del Active Directory cliente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | MS-SPP-config-License                                 |
-| Nombre para mostrar de LDAP | msSPP-ConfigLicense                                   |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| CN                | ms-SPP-Config-License                                 |
+| Ldap-Display-Name | msSPP-ConfigLicense                                   |
+| Size              | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.2087                               |
-| System-ID-GUID    | 0353c4b5-d199-40b0-b3c5-deb32fd9ec06                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 0353c4b5-d199-40b0-b3c5-deb32fd9ec06                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -50,18 +50,18 @@ Licencia de configuración de clave de producto usada durante la activación en 
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | True                                                                    |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Verdadero                                                                    |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**MS-SPP-Activation-Object**](c-msspp-activationobject.md)<br/> |
+| Clases usadas en        | [**ms-SPP-Activation-Object**](c-msspp-activationobject.md)<br/> |
 
 
 

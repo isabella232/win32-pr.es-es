@@ -6,19 +6,19 @@ keywords:
 - efecto de sombra
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c42fd8755078dd79f2b01b623b1839785beb3c3e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e5d88924140caac22b688a0ccb6948ee74312411c770bff99360847ef2cd1b4c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359680"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119833060"
 ---
 # <a name="shadow-effect"></a>Efecto de sombra
 
-Use el efecto de sombra para generar una sombra a partir del canal alfa de una imagen. La sombra es más opaca para los valores alfa más altos y más transparente para los valores alfa más bajos. Puede establecer la cantidad de desenfoque y el color de la sombra.
+Use el efecto de sombra para generar una sombra a partir del canal alfa de una imagen. La sombra es más opaca para los valores alfa más altos y más transparente para los valores alfa inferiores. Puede establecer la cantidad de desenfoque y el color de la sombra.
 
 -   [Imagen de ejemplo](#example-image)
--   [Propiedades del efecto](#effect-properties)
+-   [Propiedades de efecto](#effect-properties)
 -   [Modos de optimización](#optimization-modes)
 -   [Mapa de bits de salida](#output-bitmap)
 -   [Requisitos](#requirements)
@@ -28,13 +28,13 @@ El CLSID para este efecto es CLSID \_ D2D1Shadow.
 
 ## <a name="example-image"></a>Imagen de ejemplo
 
-En el ejemplo siguiente se muestra la salida del efecto de sombra que se traslada hacia abajo y hacia la derecha con la imagen de origen compuesta en la ubicación original. El efecto de sombra solo produce la sombra.
+En el ejemplo siguiente se muestra la salida del efecto de sombra traducido hacia abajo y a la derecha con la imagen de origen compuesta sobre él en la ubicación original. El efecto de sombra solo genera la sombra.
 
 
 
 | Antes                                                  |
 |---------------------------------------------------------|
-| ![imagen anterior al efecto.](images/8-crop.png)      |
+| ![la imagen antes del efecto.](images/8-crop.png)      |
 | Después                                                   |
 | ![la imagen después de la transformación.](images/25-shadow.png) |
 
@@ -78,15 +78,15 @@ m_d2dContext->EndDraw();
 
 
 
-## <a name="effect-properties"></a>Propiedades del efecto
+## <a name="effect-properties"></a>Propiedades de efecto
 
 
 
-| Enumeración de índice y nombre para mostrar                                                        | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Enumeración de nombre para mostrar e índice                                                        | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| BlurStandardDeviation<br/> \_ \_ \_ Desviación estándar de desenfoque de \_ la instantánea D2D1 \_<br/> | Cantidad de desenfoque que se va a aplicar al canal alfa de la imagen. Puede calcular el radio de desenfoque del kernel multiplicando la desviación estándar por 3. Las unidades de la desviación estándar y el radio de desenfoque son DIP.<br/> Esta propiedad es igual que la propiedad [desenfoque gausiano](gaussian-blur.md) desviación estándar. <br/> El tipo es FLOAT.<br/> El valor predeterminado es 3.0 f.<br/> |
-| Color<br/> COLOR de la instantánea de D2D1 \_ \_ \_<br/>                                     | Color de la sombra paralela. Esta propiedad es un D2D1 \_ Vector \_ 4F definido como: (R, G, B, a). Debe especificar este color en alfa recto.<br/> El tipo es D2D1 \_ Vector \_ 4F.<br/> El valor predeterminado es {0.0 f, 0.0 f, 0.0 f, 1.0 f.<br/>                                                                                                                                                                     |
-| Optimization<br/> Optimización de D2D1 \_ Shadow \_ prop \_<br/>                       | Nivel de optimización del rendimiento.<br/> El tipo es D2D1 \_ Shadow \_ Optimization.<br/> El valor predeterminado es D2D1 \_ Shadow \_ Optimization \_ .<br/>                                                                                                                                                                                                                                                   |
+| BlurStandardDeviation<br/> DESVIACIÓN ESTÁNDAR DE DESENFOQUE \_ \_ DE PROP DE \_ \_ SOMBRA \_ D2D1<br/> | Cantidad de desenfoque que se va a aplicar al canal alfa de la imagen. Puede calcular el radio de desenfoque del kernel multiplicando la desviación estándar por 3. Las unidades de la desviación estándar y el radio de desenfoque son DIP.<br/> Esta propiedad es la misma que la propiedad [Desenfoque gausiano](gaussian-blur.md) propiedad de desviación estándar. <br/> El tipo es FLOAT.<br/> El valor predeterminado es 3,0f.<br/> |
+| Color<br/> COLOR DE PROP DE SOMBRA D2D1 \_ \_ \_<br/>                                     | Color de la sombra paralela. Esta propiedad es una D2D1 \_ VECTOR \_ 4F definida como: (R, G, B, A). Debe especificar este color en alfa recta.<br/> El tipo es D2D1 \_ VECTOR \_ 4F.<br/> El valor predeterminado es {0.0f, 0.0f, 0.0f, 1.0f}.<br/>                                                                                                                                                                     |
+| Optimization<br/> OPTIMIZACIÓN DE LA \_ PROPIEDAD SHADOW \_ DE D2D1 \_<br/>                       | Nivel de optimización del rendimiento.<br/> El tipo es D2D1 \_ SHADOW \_ OPTIMIZATION.<br/> El valor predeterminado es D2D1 \_ SHADOW \_ OPTIMIZATION \_ BALANCED.<br/>                                                                                                                                                                                                                                                   |
 
 
 
@@ -98,9 +98,9 @@ m_d2dContext->EndDraw();
 
 | Nombre                                          | Descripción                                                                                                                           |
 |-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| Velocidad de optimización de D2D1 \_ DIRECTIONALBLUR \_ \_    | Aplica las optimizaciones internas, como el escalado previo en radios relativamente pequeños. Utiliza el filtrado lineal.                                  |
-| Optimización de D2D1 \_ DIRECTIONALBLUR \_ \_ equilibrada | Usa los mismos umbrales de optimización que el modo de velocidad, pero utiliza el filtrado trilineal.                                                    |
-| Calidad de optimización de D2D1 \_ DIRECTIONALBLUR \_ \_  | Solo usa optimizaciones internas con radios de desenfoque grandes, donde es menos probable que las aproximaciones sean visibles. Utiliza el filtrado trilineal. |
+| VELOCIDAD DE OPTIMIZACIÓN \_ DIRECCIONAL DE D2D1BLUR \_ \_    | Aplica optimizaciones internas, como el escalado previo en radios relativamente pequeños. Usa el filtrado lineal.                                  |
+| D2D1 \_ DIRECTIONALBLUR \_ OPTIMIZATION \_ BALANCED | Usa los mismos umbrales de optimización que el modo de velocidad, pero usa el filtrado trilineal.                                                    |
+| D2D1 \_ DIRECTIONALBLUR \_ OPTIMIZATION \_ QUALITY  | Solo usa optimizaciones internas con radii de desenfoque grandes, donde es menos probable que las aproximaciones sean visibles. Usa el filtrado trilineal. |
 
 
 
@@ -108,13 +108,13 @@ m_d2dContext->EndDraw();
 
 ## <a name="output-bitmap"></a>Mapa de bits de salida
 
-El tamaño del mapa de bits de salida es el tamaño de la salida de desenfoque. La cantidad de crecimiento del mapa de bits de salida en relación con el mapa de bits original se puede calcular mediante la siguiente ecuación:
+El tamaño del mapa de bits de salida es el tamaño de la salida de desenfoque. La cantidad de crecimiento del mapa de bits de salida con respecto al mapa de bits original se puede calcular mediante la siguiente ecuación:
 
-Crecimiento del mapa de bits de salida (X e y) = BlurStandardDeviation (píxeles independientes del dispositivo (DIP)) \* 6 \* (PPP del usuario)/96
+Crecimiento del mapa de bits de salida (X e Y) = BlurStandardDeviation (píxeles independientes del dispositivo)) \* 6 (PPP de \* usuario)/96
 
-El resultado aumenta igualmente en todas las direcciones, por lo que, por ejemplo, si el tamaño aumenta en 10 píxeles en cada dirección, la esquina superior izquierda del mapa de bits se encuentra en (-5,-5) y la parte inferior derecha estará en (105, 105), tal y como se muestra en el diagrama aquí.
+La salida aumenta igual en todas las direcciones, por lo que, por ejemplo, si el tamaño aumenta en 10 píxeles en cada dirección, la esquina superior izquierda del mapa de bits se encuentra en (-5, -5) y la parte inferior derecha estará en (105, 105) como se muestra en el diagrama aquí.
 
-![diagrama de crecimiento del tamaño de salida de efecto de sombra.](images/drop-shadow-output-growth.png)
+![diagrama de crecimiento del tamaño de salida del efecto de sombra.](images/drop-shadow-output-growth.png)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -122,10 +122,10 @@ El resultado aumenta igualmente en todas las direcciones, por lo que, por ejempl
 
 | Requisito | Value |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible | Windows 8 y actualización de la plataforma para aplicaciones de escritorio de Windows 7 aplicaciones de la \[ \| tienda Windows\] |
-| Servidor mínimo compatible | Windows 8 y actualización de la plataforma para aplicaciones de escritorio de Windows 7 aplicaciones de la \[ \| tienda Windows\] |
-| Encabezado                   | d2d1effects. h                                                                      |
-| Biblioteca                  | d2d1. lib, dxguid. lib                                                               |
+| Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
+| Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
+| Header                   | d2d1effects.h                                                                      |
+| Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Implementa la interfaz IInkD2DRenderer.
 ms.assetid: d1bd910d-ce64-4424-a0e1-4f55110b0265
-title: Clase InkD2DRenderer
+title: InkD2DRenderer (clase)
 ms.topic: language-reference
 ms.date: 02/03/2020
 topic_type:
@@ -13,36 +13,36 @@ api_type:
 - COM
 api_location:
 - Inkrenderer.idl
-ms.openlocfilehash: 1649d52c2e9098513c115daaf295c4005e890b8e
-ms.sourcegitcommit: 5b98bf8c68922f8f03c14f793fbe17504900559c
+ms.openlocfilehash: 51383770b8eb0c5dca5efbb5f1756bee81ece506c0e92337e9df9a60eb0a8aee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "104279761"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119726735"
 ---
-# <a name="inkd2drenderer-class"></a>Clase InkD2DRenderer
+# <a name="inkd2drenderer-class"></a>InkD2DRenderer (clase)
 
-Implementa la interfaz [**IInkD2DRenderer**](/windows/win32/api/inkrenderer/nn-inkrenderer-iinkd2drenderer) .
+Implementa la [**interfaz IInkD2DRenderer.**](/windows/win32/api/inkrenderer/nn-inkrenderer-iinkd2drenderer)
 
-Un objeto [**IInkD2DRenderer**](/windows/win32/api/inkrenderer/nn-inkrenderer-iinkd2drenderer) habilita la representación de trazos de entrada de lápiz en el contexto de dispositivo de Direct2D designado de una aplicación universal de Windows, en lugar del control [**InkCanvas**](/uwp/api/Windows.UI.Xaml.Controls.InkCanvas) predeterminado.
+Un [**objeto IInkD2DRenderer**](/windows/win32/api/inkrenderer/nn-inkrenderer-iinkd2drenderer) permite la representación de trazos de lápiz en el contexto de dispositivo Direct2D designado de una aplicación universal Windows, en lugar del control [**InkCanvas predeterminado.**](/uwp/api/Windows.UI.Xaml.Controls.InkCanvas)
 
 ## <a name="members"></a>Miembros
 
-La clase **InkD2DRenderer** hereda de la interfaz [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **InkD2DRenderer** también tiene estos tipos de miembros:
+La **clase InkD2DRenderer** hereda de la [**interfaz IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **InkD2DRenderer** también tiene estos tipos de miembros:
 
 - [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La clase **InkD2DRenderer** tiene estos métodos.
+La **clase InkD2DRenderer** tiene estos métodos.
 
 | Método                              | Descripción                                                                             |
 |:------------------------------------|:----------------------------------------------------------------------------------------|
-| [**Dibujar**](/windows/win32/api/inkrenderer/nf-inkrenderer-iinkd2drenderer-draw) | Representa el trazo de tinta en el contexto de dispositivo de Direct2D designado de la aplicación.<br/> |
+| [**Dibujar**](/windows/win32/api/inkrenderer/nf-inkrenderer-iinkd2drenderer-draw) | Representa el trazo de entrada de lápiz en el contexto de dispositivo Direct2D designado de la aplicación.<br/> |
 
-## <a name="creationaccess-functions"></a>Funciones de acceso de creación \\
+## <a name="creationaccess-functions"></a>Creación de \\ funciones de acceso
 
-Llame a [<strong>CoCreateInstance</strong>](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) con el identificador de clase <strong>InkD2DRenderer</strong> para recuperar una referencia al objeto.
+Llame [<strong>a CoCreateInstance</strong>](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) con el identificador de clase <strong>InkD2DRenderer</strong> para recuperar una referencia al objeto .
 
 ``` C++
 CoCreateInstance(__uuidof(InkD2DRenderer),
@@ -53,14 +53,14 @@ CoCreateInstance(__uuidof(InkD2DRenderer),
 
 ## <a name="examples"></a>Ejemplos
 
-Este fragmento de código del archivo "SceneComposer. cpp" del [ejemplo de entrada de lápiz compleja](/samples/microsoft/windows-universal-samples/complexink/) muestra la representación de una colección de trazos de tinta en un contexto de dispositivo de Direct2D.
+Este fragmento de código del archivo "SceneComposer.cpp" del ejemplo de entrada manuscrita compleja muestra la representación de una colección de trazos de entrada de lápiz en un contexto de dispositivo Direct2D. [](/samples/microsoft/windows-universal-samples/complexink/)
 
 ```C++
 _inkRenderer->Render(strokes, _deviceResources->GetD2DDeviceContext());
 strokes->Clear();
 ```
 
-Este fragmento de código del archivo "InkRenderer. cpp" del [ejemplo de entrada de lápiz compleja](/samples/microsoft/windows-universal-samples/complexink/) muestra el método Render (llamado en el fragmento de código anterior) que llama al método [**Draw**](/windows/win32/api/inkrenderer/nf-inkrenderer-iinkd2drenderer-draw) para representar los trazos.
+Este fragmento de código del archivo "InkRenderer.cpp" del ejemplo de entrada manuscrita compleja muestra el método Render (llamado en el fragmento de código anterior) que llama al método [**Draw**](/windows/win32/api/inkrenderer/nf-inkrenderer-iinkd2drenderer-draw) para representar los trazos. [](/samples/microsoft/windows-universal-samples/complexink/)
 
 ```C++
 void InkRenderer::Render(
@@ -90,12 +90,12 @@ void InkRenderer::Render(
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                  |
-| Encabezado<br/>                   | <dl> <dt>Inkrenderer. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Inkrenderer. idl</dt> </dl> |
-| IID<br/>                      | IID \_ IInkD2DRenderer se define como 4044e60c-7b01-4671-a97c-04e0210a07a5<br/>         |
+| Header<br/>                   | <dl> <dt>Inkrenderer.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Inkrenderer.idl</dt> </dl> |
+| IID<br/>                      | IID IInkD2DRenderer se define como \_ 4044e60c-7b01-4671-a97c-04e0210a07a5<br/>         |
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Representador de tinta](ink-renderer.md), [interacciones de lápiz y lápiz óptico](/windows/uwp/design/input/pen-and-stylus-interactions), [ejemplo de análisis de tinta](/samples/microsoft/windows-universal-samples/inkanalysis/), ejemplo de tinta [simple](/samples/microsoft/windows-universal-samples/simpleink/), [ejemplo de tinta compleja](/samples/microsoft/windows-universal-samples/complexink/)
+[Representador de entrada](ink-renderer.md)de lápiz, [interacciones de lápiz y](/windows/uwp/design/input/pen-and-stylus-interactions)lápiz, ejemplo de análisis de entrada de lápiz, ejemplo de entrada manuscrita [simple,](/samples/microsoft/windows-universal-samples/simpleink/) [ejemplo de entrada manuscrita compleja](/samples/microsoft/windows-universal-samples/complexink/) [](/samples/microsoft/windows-universal-samples/inkanalysis/)

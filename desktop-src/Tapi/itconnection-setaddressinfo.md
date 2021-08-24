@@ -1,21 +1,21 @@
 ---
 description: El método SetAddressInfo establece la información de dirección.
 ms.assetid: 100b96af-e6ba-4496-9978-4df133e1c2b5
-title: 'ITConnection:: SetAddressInfo (método) (Sdpblb. h)'
+title: Método ITConnection::SetAddressInfo (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae181911527c22639c8c2da3038c0377734fd1da
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3d90fd6e92e115966df709626b7b58c739d292fedca4fb855999bc3fd8cd853b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690200"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119774935"
 ---
-# <a name="itconnectionsetaddressinfo-method"></a>ITConnection:: SetAddressInfo (método)
+# <a name="itconnectionsetaddressinfo-method"></a>ItConnection::SetAddressInfo (método)
 
-\[ Las interfaces y controles de conferencias de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y las versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[Las interfaces y los controles de conferencia de telefonía IP de Rendezvous no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-El método **SetAddressInfo** establece la información de dirección.
+El **método SetAddressInfo** establece la información de dirección.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -34,24 +34,24 @@ HRESULT SetAddressInfo(
 
 <dl> <dt>
 
-*pStartAddress* \[ de\]
+*pStartAddress* \[ En\]
 </dt> <dd>
 
 Puntero a un **BSTR** que contiene la dirección de inicio.
 
 </dd> <dt>
 
-*NumAddresses* \[ de\]
+*NumAddresses* \[ En\]
 </dt> <dd>
 
 Número de direcciones que se usarán para la sesión.
 
 </dd> <dt>
 
-*TTL* \[ de de\]
+*Ttl* \[ En\]
 </dt> <dd>
 
-ámbito del [*período*](t-tapgloss.md) de vida (TTL) para las transmisiones en las direcciones.
+[*ámbito de período de*](t-tapgloss.md) vida (TTL) para las transmisiones en las direcciones.
 
 </dd> </dl>
 
@@ -63,9 +63,9 @@ Este método puede devolver uno de estos valores.
 
 | Value                                                                                         | Significado                                                                          |
 |-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>          | El método se realizó correctamente.<br/>                                                     |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | El parámetro *pStartAddress*, *NumAddresses* o *TTL* no es válido.<br/> |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No hay memoria suficiente para realizar la operación.<br/>                  |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | El método se realizó correctamente.<br/>                                                     |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | El *parámetro pStartAddress,* *NumAddresses* o *Ttl* no es válido.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No existe memoria suficiente para realizar la operación.<br/>                  |
 | <dl> <dt>**E \_ FAIL**</dt> </dl>        | Error no especificado.<br/>                                                    |
 | <dl> <dt>**E \_ NOTIMPL**</dt> </dl>     | Este método aún no se ha implementado.<br/>                                   |
 
@@ -73,9 +73,9 @@ Este método puede devolver uno de estos valores.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La aplicación debe usar [**SysAllocString**](/windows/win32/api/oleauto/nf-oleauto-sysallocstring) para asignar memoria para el parámetro *PStartAddress* y usar [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) para liberar memoria cuando la variable ya no se necesite.
+La aplicación debe usar [**SysAllocString para**](/windows/win32/api/oleauto/nf-oleauto-sysallocstring) asignar memoria para el parámetro *pStartAddress* y usar [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) para liberar la memoria cuando la variable ya no sea necesaria.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,9 +83,9 @@ La aplicación debe usar [**SysAllocString**](/windows/win32/api/oleauto/nf-olea
 
 | Requisito | Value |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,0 o posterior<br/>                                                 |
-| Encabezado<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
+| Header<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 

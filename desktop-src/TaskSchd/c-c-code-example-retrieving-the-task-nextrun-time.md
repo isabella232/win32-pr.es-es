@@ -1,22 +1,22 @@
 ---
-title: Ejemplo de código de C/C++ que recupera la hora de NextRun de la tarea
-description: Este ejemplo recupera la próxima vez que la tarea está programada para ejecutarse y muestra esa hora en la pantalla. En este ejemplo se da por supuesto que la tarea y la tarea de prueba ya existen en el equipo local.
+title: Ejemplo de código de C/C++ para recuperar la tarea NextRun Time
+description: En este ejemplo se recupera la próxima vez que se programa la ejecución de la tarea y se muestra esa hora en la pantalla. En este ejemplo se supone que la tarea y la tarea de prueba ya existen en el equipo local.
 ms.assetid: 2134a188-2fd4-4b55-bd9e-3363772080c0
 keywords:
-- recuperando Programador de tareas de tiempo de ejecución de la tarea siguiente
-- recuperar propiedades de elementos de trabajo Programador de tareas, tiempo de ejecución de la tarea siguiente
+- recuperación de la siguiente tarea en tiempo de ejecución Programador de tareas
+- recuperar propiedades de elemento de trabajo Programador de tareas , tarea siguiente tiempo de ejecución
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d57341db57debb0270668c1236e5b353c7f703a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0472f867aea83457bbb4cb77a5a092b8c302f793b0df052e4addb0422adedb5d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418804"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119738505"
 ---
-# <a name="cc-code-example-retrieving-the-task-nextrun-time"></a>Ejemplo de código de C/C++: recuperar la hora de NextRun de la tarea
+# <a name="cc-code-example-retrieving-the-task-nextrun-time"></a>Ejemplo de código de C/C++: Recuperar la tarea NextRun Time
 
-Este ejemplo recupera la próxima vez que la tarea está programada para ejecutarse y muestra esa hora en la pantalla. En este ejemplo se da por supuesto que la tarea y la tarea de prueba ya existen en el equipo local.
+En este ejemplo se recupera la próxima vez que se programa la ejecución de la tarea y se muestra esa hora en la pantalla. En este ejemplo se supone que la tarea y la tarea de prueba ya existen en el equipo local.
 
 
 ```C++
@@ -120,12 +120,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Ejemplos de Programador de tareas 1,0](task-scheduler-1-0-examples.md)
+[Programador de tareas ejemplos de 1.0](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

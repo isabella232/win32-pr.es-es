@@ -1,7 +1,7 @@
 ---
 description: Selecciona una NIC de registro.
 ms.assetid: 27814a40-6933-498b-a0d2-535698b1e402
-title: Función GetNPPBlobFromUI (Netmon. h)
+title: Función GetNPPBlobFromUI (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 4ff3887f10d35ec3b66d8eaaf1443140c768ca55
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d3b88c369145d53d32d23773072f878d9834110e705cd8ff623a3726cbb98b88
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002237"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119743885"
 ---
-# <a name="getnppblobfromui-function"></a>GetNPPBlobFromUI función)
+# <a name="getnppblobfromui-function"></a>Función GetNPPBlobFromUI
 
-La función **GetNPPBlobFromUI** selecciona una NIC de registro.
+La **función GetNPPBlobFromUI** selecciona una NIC de registro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,21 +41,21 @@ DWORD GetNPPBlobFromUI(
 
 <dl> <dt>
 
-*hWnd* \[ de\]
+*hwnd* \[ En\]
 </dt> <dd>
 
-Identificador de una ventana que muestra el cuadro de diálogo **seleccionar una red** .
+Identificador de una ventana que muestra el **cuadro de diálogo Seleccionar** una red.
 
 </dd> <dt>
 
-*hFilterBlob* \[ de\]
+*hFilterBlob* \[ En\]
 </dt> <dd>
 
-Identificador de un [*BLOB de filtro*](f.md) que se usa para limitar las NIC que se muestran.
+Identificador de un [*blob de filtro*](f.md) que se usa para limitar qué NIC se muestran.
 
 </dd> <dt>
 
-*phBlob* \[ enuncia\]
+*phBlob* \[ out\]
 </dt> <dd>
 
 Puntero al identificador del BLOB que representa la NIC seleccionada.
@@ -64,26 +64,26 @@ Puntero al identificador del BLOB que representa la NIC seleccionada.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente (el usuario selecciona una NIC), el valor devuelto es NMERR \_ Success y se rellena el BLOB al que apunta *phBlob* .
+Si la función se realiza correctamente (el usuario selecciona una NIC), el valor devuelto es NMERR SUCCESS y el BLOB al que \_ *apunta phBlob* se rellena.
 
-Si el usuario no selecciona una NIC, el valor devuelto es **NMERR \_ no \_ se \_ selecciona NPP**.
+Si el usuario no selecciona una NIC, el valor devuelto es **NMERR \_ NO \_ NPP \_ SELECTED**.
 
-Si la función no es correcta, el valor devuelto es otro valor de NMERR.
+Si la función no se realiza correctamente, el valor devuelto es otro valor NMERR.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando se llama, Monitor de red muestra el cuadro de diálogo **seleccionar una red** , que puede usar para seleccionar una NIC. El BLOB NPP que representa la NIC se devuelve a la aplicación que realiza la llamada.
+Cuando se le llama, Monitor de red el **cuadro de** diálogo Seleccionar una red, que puede usar para seleccionar una NIC. El blob NPP que representa la NIC se devuelve a la aplicación que realiza la llamada.
 
-Si el BLOB llamado por *hFilterBlob* es un [*BLOB especial*](s.md), el buscador intentará procesarlo. Un ejemplo sería una llamada que anteriormente devolvía un BLOB especial del NPP remoto. La aplicación insertó la etiqueta necesaria, el nombre de la máquina \_ . En esta situación, el buscador pasaría este BLOB al NPP remoto, que luego devolvería una tabla de blobs NPP que representa el equipo solicitado. Estos blobs NPP remotos aparecerán en el cuadro de diálogo.
+Si el BLOB denominado por *hFilterBlob* es un [*BLOB especial,*](s.md)el buscador intentará procesarlo. Un ejemplo sería una llamada que previamente había devuelto un BLOB especial desde el NPP remoto. La aplicación insertó la etiqueta necesaria, MACHINE \_ NAME. En esta situación, el buscador pasaría este BLOB al NPP remoto, que devolvería una tabla de blobs de NPP que representa la máquina solicitada. Estos blobs de NPP remotos aparecerán en el cuadro de diálogo.
 
-El llamador debe llamar a la función [DestroyBlob](destroyblob.md) , que destruye el BLOB devuelto cuando ya no es necesario.
+El autor de la llamada debe llamar [a la función DestroyBlob,](destroyblob.md) que destruye el BLOB devuelto cuando ya no es necesario.
 
 
 
 | Para más información sobre | Vea                                                                          |
 |----------------------------|------------------------------------------------------------------------------|
-| Tres formas de seleccionar NIC  | [Seleccionar una tarjeta de interfaz de red](selecting-a-network-interface-card.md) |
-| Especificación de un BLOB en filtro   | [Especificación de un BLOB en filtro](specifying-a-filter-blob.md)                     |
+| Tres maneras de seleccionar NIC  | [Selección de una tarjeta de interfaz de red](selecting-a-network-interface-card.md) |
+| Especificar un blob de filtro   | [Especificar un blob de filtro](specifying-a-filter-blob.md)                     |
 
 
 
@@ -97,8 +97,8 @@ El llamador debe llamar a la función [DestroyBlob](destroyblob.md) , que destru
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 
@@ -110,7 +110,7 @@ El llamador debe llamar a la función [DestroyBlob](destroyblob.md) , que destru
 [GetNPPBlobTable](getnppblobtable.md)
 </dt> <dt>
 
-[SelectNPPBlobFromTable](selectnppblobfromtable.md)
+[SeleccioneNPPBlobFromTable](selectnppblobfromtable.md)
 </dt> </dl>
 
  

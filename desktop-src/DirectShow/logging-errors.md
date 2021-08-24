@@ -4,39 +4,39 @@ ms.assetid: 690ea91b-5bc0-45f0-8354-ec625709f7bd
 title: Errores de registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 76cded9d4cfaedd93e846fec52b07bf5d4eef9a5
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 7402ade284f0d9a71b032f233276277dfdcd8c5e2844c85f03782caed101d095
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103805629"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119685155"
 ---
 # <a name="logging-errors"></a>Errores de registro
 
 \[Esta API no se admite y puede modificarse o no estar disponible en el futuro.\]
 
-Los [servicios de edición de DirectShow](directshow-editing-services.md) (des) proporcionan un mecanismo integrado para registrar los errores que se producen al cargar, construir o representar un proyecto des. En este artículo se presenta una aplicación de consola de ejemplo que carga un archivo de proyecto XML e intenta representarlo. Si se produce un error, la aplicación imprime un mensaje de error en la ventana de la consola. El código de ejemplo que se presenta en este artículo se basa en el ejemplo que se proporciona en [cargar y obtener una vista previa de un proyecto](loading-and-previewing-a-project.md).
+[DirectShow Editing Services](directshow-editing-services.md) (DES) proporciona un mecanismo integrado para registrar los errores que se producen al cargar, construir o representar un proyecto DES. En este artículo se presenta una aplicación de consola de ejemplo que carga un archivo de proyecto XML e intenta representarlo. Si se produce un error, la aplicación imprime un mensaje de error en la ventana de la consola. El código de ejemplo presentado en este artículo se basa en el ejemplo que se proporciona en Carga y vista [previa de un Project](loading-and-previewing-a-project.md).
 
 > [!Note]  
-> No es necesario que la aplicación implemente el registro de errores. DES no registra los errores a menos que lo solicite explícitamente.
+> La aplicación no es necesaria para implementar el registro de errores. DES no registra errores a menos que lo solicite explícitamente.
 
  
 
-En este artículo se supone que entiende la programación del cliente COM y el modelo de la escala de tiempo DES. Además, debe comprender los aspectos básicos de la programación de objetos COM. Para obtener información acerca de las escalas de tiempo en DES, vea [el modelo Timeline](the-timeline-model.md).
+En este artículo se da por supuesto que comprende la programación de cliente COM y el modelo de escala de tiempo de DES. Además, debe comprender los conceptos básicos de la programación de objetos COM. Para obtener información sobre las escalas de tiempo en DES, vea [El modelo de escala de tiempo](the-timeline-model.md).
 
 Este artículo contiene las secciones siguientes.
 
 -   [Información general sobre el registro de errores](overview-of-error-logging.md)
 -   [Crear una clase de registro de errores](creating-an-error-logging-class.md)
 -   [Implementación de IAMErrorLog](implementing-iamerrorlog.md)
--   [Configuración del registro de errores](setting-the-error-log.md)
+-   [Establecimiento del registro de errores](setting-the-error-log.md)
 -   [Registro de errores DES: código de ejemplo](des-error-logging--example-code.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Usar servicios de edición de DirectShow](using-directshow-editing-services.md)
+[Uso de DirectShow Editing Services](using-directshow-editing-services.md)
 </dt> </dl>
 
  

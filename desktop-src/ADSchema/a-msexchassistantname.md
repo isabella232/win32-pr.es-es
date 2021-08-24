@@ -1,11 +1,11 @@
 ---
-title: atributo MS-Exch-Assistant-Name
-description: Contiene el nombre del ayudante para una cuenta.
+title: Atributo ms-Exch-Assistant-Name
+description: Contiene el nombre del asistente de una cuenta.
 ms.assetid: 8799d5de-2c73-41b3-b707-b6f8bf5edb6a
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-Exch-Assistant-Name
-- msExchAssistantName esquema de AD de atributos
+- ms-Exch-Assistant-Name attribute AD Schema
+- Esquema de AD del atributo msExchAssistantName
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5eb81eceaed3c22c70fc75ae39b7eccb113013f7
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e8638597e234100e6775618472788761af341bc1138c3fed613173038a26dbc9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804657"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119763145"
 ---
-# <a name="ms-exch-assistant-name-attribute"></a>atributo MS-Exch-Assistant-Name
+# <a name="ms-exch-assistant-name-attribute"></a>Atributo ms-Exch-Assistant-Name
 
-Contiene el nombre del ayudante para una cuenta.
+Contiene el nombre del asistente de una cuenta.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | Nombre MS-Exch-Assistant                      |
-| Nombre para mostrar de LDAP | msExchAssistantName                         |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | ms-Exch-Assistant-Name                      |
+| Ldap-Display-Name | msExchAssistantName                         |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.2.444                      |
-| System-ID-GUID    | a8df7394-c5ea-11d1-bbcb-0080c76670c0        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | a8df7394-c5ea-11d1-menteb-0080c76670c0        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -54,13 +54,13 @@ Contiene el nombre del ayudante para una cuenta.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | 0x896                                                |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 256                                                  |
 | Search-Flags           | 0x00000000                                           |
@@ -75,13 +75,13 @@ Contiene el nombre del ayudante para una cuenta.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | 0x896                                                |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 256                                                  |
 | Search-Flags           | 0x00000000                                           |
@@ -96,18 +96,18 @@ Contiene el nombre del ayudante para una cuenta.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | 0x896                                                |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 256                                                  |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000000                                           |
-| Clases usadas en        | [**Destinatario de correo**](c-mailrecipient.md)<br/> |
+| Clases usadas en        | [**Destinatario del correo**](c-mailrecipient.md)<br/> |
 
 
 
@@ -117,18 +117,18 @@ Contiene el nombre del ayudante para una cuenta.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | 0x896                                                |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 256                                                  |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000000                                           |
-| Clases usadas en        | [**Destinatario de correo**](c-mailrecipient.md)<br/> |
+| Clases usadas en        | [**Destinatario del correo**](c-mailrecipient.md)<br/> |
 
 
 
@@ -138,18 +138,18 @@ Contiene el nombre del ayudante para una cuenta.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | 0x896                                                |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 256                                                  |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000000                                           |
-| Clases usadas en        | [**Destinatario de correo**](c-mailrecipient.md)<br/> |
+| Clases usadas en        | [**Destinatario del correo**](c-mailrecipient.md)<br/> |
 
 
 

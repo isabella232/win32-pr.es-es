@@ -1,9 +1,9 @@
 ---
-title: MDM_Policy_Result01_WindowsInkWorkspace02 (clase)
-description: La \_ clase MDM Policy \_ Result01 \_ WindowsInkWorkspace02 representa las directivas de área de trabajo de tinta disponibles.
+title: MDM_Policy_Result01_WindowsInkWorkspace02 clase
+description: La clase MDM \_ Policy \_ Result01 WindowsInkWorkspace02 representa las directivas de área de \_ trabajo de ink disponibles.
 ms.assetid: a3bb85e5-554f-4f41-8e65-e221f8adc947
 keywords:
-- MDM_Policy_Result01_WindowsInkWorkspace02 (clase)
+- MDM_Policy_Result01_WindowsInkWorkspace02 clase
 - MDM_Policy_Result01_WindowsInkWorkspace02 clase, descrita
 topic_type:
 - apiref
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d64100ec0566b7cd996840d012d018b8dbc75aa
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 24a07a4a648ec95258f51fde2bdf61946444ed824938d64015f5ffe25c97d585
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119833825"
 ---
-# <a name="mdm_policy_result01_windowsinkworkspace02-class"></a>\_ \_ Clase WindowsInkWorkspace02 de Result01 de directivas MDM \_
+# <a name="mdm_policy_result01_windowsinkworkspace02-class"></a>Mdm \_ Policy \_ Result01 \_ Clase WindowsInkWorkspace02
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-La clase [**MDM \_ Policy \_ Result01 \_ WindowsInkWorkspace02**](mdm-policy-config01-windowsinkworkspace02.md) representa las directivas de área de trabajo de tinta disponibles.
+La [**clase MDM Policy \_ \_ Result01 \_ WindowsInkWorkspace02**](mdm-policy-config01-windowsinkworkspace02.md) representa las directivas de área de trabajo de ink disponibles.
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -47,13 +47,13 @@ class MDM_Policy_Result01_WindowsInkWorkspace02
 
 ## <a name="members"></a>Miembros
 
-La clase Result01 de la **\_ Directiva MDM \_ \_ WindowsInkWorkspace02** tiene estos tipos de miembros:
+La **clase Mdm Policy \_ \_ Result01 \_ WindowsInkWorkspace02** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ \_ Result01 de \_ WindowsInkWorkspace02 de directivas MDM** tiene estas propiedades.
+La **clase Mdm Policy \_ \_ Result01 \_ WindowsInkWorkspace02** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -63,7 +63,7 @@ La **clase \_ \_ Result01 de \_ WindowsInkWorkspace02 de directivas MDM** tiene 
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -74,7 +74,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -88,7 +88,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Identifica el nombre del nodo primario. Para esta clase, la cadena es "WindowsInkWorkspace".
@@ -104,10 +104,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/Policy/Result".
+Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/Policy/Result"
 
 </dd> </dl>
 
@@ -115,13 +115,13 @@ Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                          |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                            |
-| Espacio de nombres<br/>                | Dmmap de MDM raíz de \\ cimv2 \\ \\<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl>       |
-| Archivo DLL<br/>                      | <dl> <dt>\\DMWmiBridgeProv.dllMOF</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ cimv2 \\ mdm \\ dmmap<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl>       |
+| Archivo DLL<br/>                      | <dl> <dt>Mofs \\DMWmiBridgeProv.dll</dt> </dl> |
 
 
 

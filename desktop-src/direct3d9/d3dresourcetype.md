@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: ecb6b0c84f884df6441f3272a585ee3e09928661
-ms.sourcegitcommit: bfab92e16614d4fa54b044917358261232bda81a
+ms.openlocfilehash: 672fc09f8b35c22711517950e2589bb0ea68232d8243a370c8aae4165724b5a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "113489689"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119750715"
 ---
 # <a name="d3dresourcetype-enumeration"></a>D3DRESOURCETYPE (enumeración)
 
@@ -98,7 +98,7 @@ Recurso de búfer de índice.
 <span id="D3DRTYPE_FORCE_DWORD"></span><span id="d3drtype_force_dword"></span>**D3DRTYPE \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilase a un tamaño distinto de 32 bits. Este valor no se utiliza.
+Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara con un tamaño distinto de 32 bits. Este valor no se utiliza.
 
 </dd> </dl>
 
@@ -112,7 +112,7 @@ Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, al
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: InstanceParameters. EnableDbScanInRecovery (propiedad)'
-title: Propiedad InstanceParameters. EnableDbScanInRecovery
+description: 'Más información sobre: Propiedad InstanceParameters.EnableDbScanInRecovery'
+title: Propiedad InstanceParameters.EnableDbScanInRecovery
 TOCTitle: 'EnableDbScanInRecovery property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.InstanceParameters.EnableDbScanInRecovery
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instanceparameters.enabledbscaninrecovery(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c6d492b2c101305b3038c300c77467d14dc480e2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eeb1fc7b9e9cab89f25f5b17d72b36c95bb73bf7ae2f15a11bee64ece8fbb4cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119834395"
 ---
-# <a name="instanceparametersenabledbscaninrecovery-property"></a>Propiedad InstanceParameters. EnableDbScanInRecovery
+# <a name="instanceparametersenabledbscaninrecovery-property"></a>Propiedad InstanceParameters.EnableDbScanInRecovery
 
-Obtiene o establece un valor que indica si el mantenimiento de la base de datos se debe ejecutar durante la recuperación.
+Obtiene o establece un valor que indica si el mantenimiento de base de datos debe ejecutarse durante la recuperación.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,7 +62,7 @@ public int EnableDbScanInRecovery { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vea también
 
@@ -70,6 +70,6 @@ Tipo: [System. Int32](/dotnet/api/system.int32)
 
 [Clase InstanceParameters](./instanceparameters-class.md)
 
-[Miembros de InstanceParameters](./instanceparameters-members.md)
+[Miembros InstanceParameters](./instanceparameters-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

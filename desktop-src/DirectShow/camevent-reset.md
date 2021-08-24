@@ -1,7 +1,7 @@
 ---
-description: El método Reset establece el estado del evento en no señalado.
+description: El método Reset establece el estado del evento en nonsignaled.
 ms.assetid: de7f2c33-118a-4531-a9f7-9b43f89e6fc0
-title: Método CAMEvent. Reset (Wxutil. h)
+title: Método CAMEvent.Reset (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 31fdc564ad50c161f16e7054c6d0ec7d753bd0f4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a41af8aebde27d8452453616dabfe0d84f8f5f0681e6257bd29774d9eca91d68
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661054"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119794305"
 ---
-# <a name="cameventreset-method"></a>CAMEvent. Reset (método)
+# <a name="cameventreset-method"></a>Método CAMEvent.Reset
 
-El `Reset` método establece el estado del evento en no señalado.
+El `Reset` método establece el estado del evento en nonsignaled.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,8 +50,8 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxutil. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxutil.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Este método no devuelve ningún valor.
 
 <dl> <dt>
 
-[**Clase CAMEvent**](camevent.md)
+[**CLASE CAMEvent**](camevent.md)
 </dt> </dl>
 
  

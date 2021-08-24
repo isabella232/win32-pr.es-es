@@ -1,29 +1,29 @@
 ---
-title: Macros de control ComboBox
-description: Macros de control ComboBox
+title: ComboBox Control Macros
+description: ComboBox Control Macros
 ms.assetid: e147234e-0536-4719-b879-1ab5aa77d109
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 091c56dae1ea73af516efed20ed86adc80efa517
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 918ff733382073c89540fdc4e1c8b36514e5bce086bf0f1bc0165bbfb52c2edd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105653195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119699885"
 ---
-# <a name="combobox-control-macros"></a>Macros de control ComboBox
+# <a name="combobox-control-macros"></a>ComboBox Control Macros
 
 ## <a name="in-this-section"></a>En esta sección
 
 -   [**ComboBox \_ AddItemData**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_additemdata)
--   [**ComboBox \_ de ComboBox**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_addstring)
+-   [**ComboBox \_ AddString**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_addstring)
 -   [**ComboBox \_ DeleteString**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_deletestring)
--   [**Dir. ComboBox \_**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_dir)
--   [**ComboBox ( \_ Habilitar)**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_enable)
+-   [**ComboBox \_ Dir**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_dir)
+-   [**ComboBox \_ Enable**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_enable)
 -   [**ComboBox \_ FindItemData**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_finditemdata)
 -   [**ComboBox \_ FindString**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_findstring)
--   [**ComboBox \_ FindExactString con**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_findstringexact)
--   [**ComboBox ( \_ getCount)**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_getcount)
+-   [**ComboBox \_ FindStringExact**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_findstringexact)
+-   [**ComboBox \_ GetCount**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_getcount)
 -   [**ComboBox \_ GetCueBannerText**](/windows/desktop/api/Commctrl/nf-commctrl-combobox_getcuebannertext)
 -   [**ComboBox \_ GetCurSel**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_getcursel)
 -   [**ComboBox \_ GetDroppedControlRect**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_getdroppedcontrolrect)
@@ -34,7 +34,7 @@ ms.locfileid: "105653195"
 -   [**ComboBox \_ GetLBText**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_getlbtext)
 -   [**ComboBox \_ GetLBTextLen**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_getlbtextlen)
 -   [**ComboBox \_ GetMinVisible**](/windows/desktop/api/Commctrl/nf-commctrl-combobox_getminvisible)
--   [**ComboBox ( \_ gettext)**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_gettext)
+-   [**ComboBox \_ GetText**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_gettext)
 -   [**ComboBox \_ GetTextLength**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_gettextlength)
 -   [**ComboBox \_ InsertItemData**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_insertitemdata)
 -   [**ComboBox \_ InsertString**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_insertstring)
@@ -48,7 +48,7 @@ ms.locfileid: "105653195"
 -   [**ComboBox \_ SetItemData**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_setitemdata)
 -   [**ComboBox \_ SetItemHeight**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_setitemheight)
 -   [**ComboBox \_ SetMinVisible**](/windows/desktop/api/Commctrl/nf-commctrl-combobox_setminvisible)
--   [**Cuadro combinado de \_ setText**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_settext)
+-   [**ComboBox \_ SetText**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_settext)
 -   [**ComboBox \_ ShowDropdown**](/windows/desktop/api/Windowsx/nf-windowsx-combobox_showdropdown)
 
  

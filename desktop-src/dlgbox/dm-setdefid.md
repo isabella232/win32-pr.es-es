@@ -1,9 +1,9 @@
 ---
-title: Mensaje de DM_SETDEFID (Winuser. h)
-description: Cambia el identificador del botón de opción predeterminado para un cuadro de diálogo.
+title: DM_SETDEFID mensaje (Winuser.h)
+description: Cambia el identificador del botón de inserción predeterminado de un cuadro de diálogo.
 ms.assetid: 30720fa1-48cb-42d4-8370-87bdbaa34600
 keywords:
-- DM_SETDEFID cuadros de diálogo de mensaje
+- DM_SETDEFID cuadros de diálogo del mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 73ceda9ac9e8fd399604e9c55431b8fcd74646f1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 92749cc7eca569b57d239a36bb6559e59a6a7ebc31c63787a93d0720b334d1ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535265"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119741755"
 ---
-# <a name="dm_setdefid-message"></a>\_Mensaje SETDEFID de DM
+# <a name="dm_setdefid-message"></a>Mensaje \_ SETDEFID de DM
 
-Cambia el identificador del botón de opción predeterminado para un cuadro de diálogo.
+Cambia el identificador del botón de inserción predeterminado de un cuadro de diálogo.
 
 
 ```C++
@@ -40,7 +40,7 @@ Cambia el identificador del botón de opción predeterminado para un cuadro de d
 *wParam* 
 </dt> <dd>
 
-Identificador de un control de botón de control que se convertirá en el valor predeterminado.
+Identificador de un control de botón de inserción que se convertirá en el valor predeterminado.
 
 </dd> <dt>
 
@@ -53,13 +53,13 @@ Este parámetro no se utiliza.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto siempre es **true**.
+El valor devuelto siempre es **TRUE.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este mensaje lo procesa la función [**DefDlgProc**](/windows/desktop/api/Winuser/nf-winuser-defdlgprocw) . Para establecer el botón de opción predeterminado, la función puede enviar mensajes [**WM \_ GETDLGCODE**](wm-getdlgcode.md) y [**BM \_ SETSTYLE**](../controls/bm-setstyle.md) al control especificado y al botón de opción predeterminado actual.
+La función [**DefDlgProc**](/windows/desktop/api/Winuser/nf-winuser-defdlgprocw) procesa este mensaje. Para establecer el botón de inserción predeterminado, la función puede enviar mensajes [**\_ WM GETDLGCODE**](wm-getdlgcode.md) y [**BM \_ SETSTYLE**](../controls/bm-setstyle.md) al control especificado y al botón de inserción predeterminado actual.
 
-El uso del mensaje **DM \_ SETDEFID** puede dar lugar a que aparezca más de un botón para que tenga el estado del botón de envío predeterminado. Cuando el sistema abre un cuadro de diálogo, dibuja el primer botón de opción de la plantilla de cuadro de diálogo con el borde de estado predeterminado. El envío de un mensaje **DM \_ SETDEFID** para cambiar el botón predeterminado no quitará siempre el borde de estado predeterminado del primer botón de la tecla de opción. En estos casos, la aplicación debe enviar un mensaje de [**BM \_ SETSTYLE**](../controls/bm-setstyle.md) para cambiar el primer estilo de borde del botón de la tecla.
+El uso **del \_ mensaje SETDEFID de DM** puede dar lugar a que más de un botón parezca tener el estado de botón de inserción predeterminado. Cuando el sistema abre un cuadro de diálogo, dibuja el primer botón de inserción de la plantilla de diálogo con el borde de estado predeterminado. El envío **de un \_ mensaje SETDEFID de DM** para cambiar el botón predeterminado no siempre quitará el borde de estado predeterminado del primer botón de inserción. En estos casos, la aplicación debe enviar un [**mensaje \_ BM SETSTYLE**](../controls/bm-setstyle.md) para cambiar el primer estilo de borde del botón de inserción.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -69,7 +69,7 @@ El uso del mensaje **DM \_ SETDEFID** puede dar lugar a que aparezca más de un 
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -86,10 +86,10 @@ El uso del mensaje **DM \_ SETDEFID** puede dar lugar a que aparezca más de un 
 [**DM \_ GETDEFID**](dm-getdefid.md)
 </dt> <dt>
 
-[**GETDLGCODE de WM \_**](wm-getdlgcode.md)
+[**WM \_ GETDLGCODE**](wm-getdlgcode.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Cuadros de diálogo](dialog-boxes.md)
@@ -101,7 +101,7 @@ El uso del mensaje **DM \_ SETDEFID** puede dar lugar a que aparezca más de un 
 [**BM \_ SETSTYLE**](../controls/bm-setstyle.md)
 </dt> <dt>
 
-[**\_SETLIMITTEXT em**](../controls/em-setlimittext.md)
+[**EM \_ SETLIMITTEXT**](../controls/em-setlimittext.md)
 </dt> </dl>
 
  

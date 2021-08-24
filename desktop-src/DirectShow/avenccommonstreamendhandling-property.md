@@ -1,15 +1,15 @@
 ---
 description: Especifica si el codificador descarta grupos parciales de imágenes (GOP) al final de la secuencia.
 ms.assetid: 93cf1299-a8ba-4a14-ad4c-09dd931e18fc
-title: Propiedad AVEncCommonStreamEndHandling (Codecapi. h)
+title: Propiedad AVEncCommonStreamEndHandling (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 53d453f1629622b12571064fe6511ec60f42d67b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: ccfa6e9eae8e4b554c549ca84553260059e9dbe435df7dcf0c2d52ced16d48a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103806577"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119794655"
 ---
 # <a name="avenccommonstreamendhandling-property"></a>Propiedad AVEncCommonStreamEndHandling
 
@@ -27,7 +27,7 @@ Esta propiedad es de lectura y escritura.
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El valor de esta propiedad es un miembro de la enumeración [**eAVEncCommonStreamEndHandling**](/windows/win32/api/codecapi/ne-codecapi-eavenccommonstreamendhandling) .
+El valor de esta propiedad es miembro de la [**enumeración eAVEncCommonStreamEndHandling.**](/windows/win32/api/codecapi/ne-codecapi-eavenccommonstreamendhandling)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,9 +35,9 @@ El valor de esta propiedad es un miembro de la enumeración [**eAVEncCommonStrea
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional \[ aplicaciones de escritorio para \| UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -48,7 +48,7 @@ El valor de esta propiedad es un miembro de la enumeración [**eAVEncCommonStrea
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

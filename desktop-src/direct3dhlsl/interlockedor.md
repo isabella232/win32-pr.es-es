@@ -1,9 +1,9 @@
 ---
-title: Interbloqueo (función, referencia de HLSL)
-description: Realiza una atómica o atómica garantizada.
+title: Función InterlockedOr (referencia HLSL)
+description: Realiza un atómico garantizado o .
 ms.assetid: ecbe6b2f-8eff-41d7-9ca3-4487c9ffeaf6
 keywords:
-- HLSL de la función interbloquet
+- Función HLSL de InterlockedOr
 topic_type:
 - apiref
 api_name:
@@ -13,24 +13,24 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 36ab900416d6d04e0e47a843aa345c1a01318c50
-ms.sourcegitcommit: 12e9b14501d51641b690ee0cf764e2b91eb9a140
+ms.openlocfilehash: c426237ec112a08fb7d422181a0efcd9ec0277d0628eda780492dae568ffaf38
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "104997032"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119854255"
 ---
-# <a name="interlockedor-function-hlsl-reference"></a>Interbloqueo (función, referencia de HLSL)
+# <a name="interlockedor-function-hlsl-reference"></a>Función InterlockedOr (referencia HLSL)
 
-Realiza una atómica o atómica garantizada.
+Realiza un atómico garantizado o .
 
 ## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 void InterlockedOr(
-  in  R dest,
-  in  T value,
-  out T original_value
+  in  R dest,
+  in  T value,
+  out T original_value
 );
 ```
 
@@ -38,7 +38,7 @@ void InterlockedOr(
 
 <dl> <dt>
 
-*dest* \[ de\]
+*dest* \[ En\]
 </dt> <dd>
 
 Tipo: **R**
@@ -47,7 +47,7 @@ Dirección de destino.
 
 </dd> <dt>
 
-*valor* \[ de de\]
+*value* \[ En\]
 </dt> <dd>
 
 Tipo: **T**
@@ -56,7 +56,7 @@ Valor de entrada.
 
 </dd> <dt>
 
-*\_ valor original* \[ fuera\]
+*valor \_ original de* \[ salida\]
 </dt> <dd>
 
 Tipo: **T**
@@ -69,11 +69,11 @@ Opcional. Valor de entrada original.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta operación solo se puede realizar en recursos con tipo int o uint y variables de memoria compartida. Hay dos usos posibles para esta función. El primero es cuando R es un tipo de variable de memoria compartida. En este caso, la función realiza una atomicidad o de valor en el registro de memoria compartida al que hace referencia dest. El segundo escenario es cuando R es un tipo de variable de recurso. En este escenario, la función realiza una atómica o de valor en la ubicación del recurso al que hace referencia dest. La función sobrecargada tiene una variable de salida adicional que se establecerá en el valor original de dest. Esta operación sobrecargada solo está disponible cuando R es legible y grabable.
+Esta operación solo se puede realizar en recursos con tipo int o uint y variables de memoria compartida. Hay dos usos posibles para esta función. La primera es cuando R es un tipo de variable de memoria compartida. En este caso, la función realiza una operación atómica o de valor en el registro de memoria compartida al que hace referencia dest. El segundo escenario es cuando R es un tipo de variable de recurso. En este escenario, la función realiza una operación atómica o de valor en la ubicación del recurso a la que hace referencia dest. La función sobrecargada tiene una variable de salida adicional que se establecerá en el valor original de dest. Esta operación sobrecargada solo está disponible cuando R es legible y grabable.
 
-### <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+### <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -81,23 +81,23 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                | Compatible |
 |-----------------------------------------------------------------------------|-----------|
-| Modelos de sombreador [modelo 5](d3d11-graphics-reference-sm5.md) y versiones posteriores | sí       |
+| [Modelos de sombreador 5](d3d11-graphics-reference-sm5.md) y superiores | Sí       |
 
 
 
- 
+ 
 
 Esta función se admite en los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 | x      |  x   |  x     |  x       | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vea también
 
@@ -106,12 +106,12 @@ Esta función se admite en los siguientes tipos de sombreadores:
 [Funciones intrínsecas](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

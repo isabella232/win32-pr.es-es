@@ -1,7 +1,7 @@
 ---
-description: Solicita que se retrase la operación de suspensión de la aplicación.
+description: Solicita que la operación de suspensión de la aplicación se retrase.
 ms.assetid: 5AB84652-165D-4173-A047-541B05848871
-title: 'Método ISuspendingOperation:: GetDeferral (Windows. ApplicationModel. h)'
+title: Método ISuspendingOperation::GetDeferral (Windows. ApplicationModel.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Windows.ApplicationModel.h
-ms.openlocfilehash: 6874eb31e73fa1c20399f68850fc69204d0e0f6d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4a64ed4449c2e11ebeec9194adb7fd69ecc7227efa9df36a6900f4139e44ec4b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907971"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119794995"
 ---
-# <a name="isuspendingoperationgetdeferral-method"></a>ISuspendingOperation:: GetDeferral (método)
+# <a name="isuspendingoperationgetdeferral-method"></a>Método ISuspendingOperation::GetDeferral
 
-Solicita que se retrase la operación de suspensión de la aplicación.
+Solicita que la operación de suspensión de la aplicación se retrase.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,7 +39,7 @@ HRESULT GetDeferral(
 
 <dl> <dt>
 
-*aplazamiento* \[ de out, retval\]
+*aplazamiento* \[ out, retval\]
 </dt> <dd>
 
 La suspensión de aplazamiento.
@@ -48,7 +48,7 @@ La suspensión de aplazamiento.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,8 +58,8 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
-| Encabezado<br/>                   | <dl> <dt>Windows. ApplicationModel. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Windows. ApplicationModel. idl</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Windows. ApplicationModel.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Windows. ApplicationModel.idl</dt> </dl> |
 
 
 

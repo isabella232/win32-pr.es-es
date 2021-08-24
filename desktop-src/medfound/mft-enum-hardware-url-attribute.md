@@ -1,49 +1,49 @@
 ---
 description: Contiene el vínculo simbólico para una transformación de Media Foundation basada en hardware (MFT).
 ms.assetid: 7e153051-a167-4ff7-8178-b290d8a1345e
-title: MFT_ENUM_HARDWARE_URL_Attribute atributo (Mftransform. h)
+title: MFT_ENUM_HARDWARE_URL_Attribute atributo (Mftransform.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 539aa1ecbf8bf322e7397a50bb16175dbcca806f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7119ea4bde7900087f706cb6fbc77c845721debab54dfa05b48f5c0094b1e29e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119722593"
 ---
-# <a name="mft_enum_hardware_url_attribute-attribute"></a>\_Atributo de \_ \_ atributo de dirección URL de hardware enum de MFT \_
+# <a name="mft_enum_hardware_url_attribute-attribute"></a>Atributo MFT \_ ENUM \_ HARDWARE URL \_ \_ Attribute
 
 Contiene el vínculo simbólico para una transformación de Media Foundation basada en hardware (MFT).
 
 ## <a name="data-type"></a>Tipo de datos
 
-**WCHAR \** _
+**Wchar\***
 
 ## <a name="getset"></a>Obtener o establecer
 
-Para obtener este atributo, llame a [_ *IMFAttributes:: GetString* *](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring).
+Para obtener este atributo, llame [**a IMFAttributes::GetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring).
 
-Para establecer este atributo, llame a [**IMFAttributes:: setString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring).
+Para establecer este atributo, llame [**a IMFAttributes::SetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo es compatible con MFTs basados en hardware. El valor del atributo es el vínculo simbólico del controlador de dispositivo. Este atributo también se establece en los punteros [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) asignados por la función [**MFTEnumEx**](/windows/desktop/api/mfapi/nf-mfapi-mftenumex) , cuando esos punteros representan MFTs basados en hardware.
+Este atributo es compatible con las MTA basadas en hardware. El valor del atributo es el vínculo simbólico para el controlador de dispositivo. Este atributo también se establece en los punteros [**MFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) asignados por la función [**MFTEnumEx,**](/windows/desktop/api/mfapi/nf-mfapi-mftenumex) cuando esos punteros representan MFT basados en hardware.
 
-El vínculo simbólico debe considerarse una cadena opaca. Para obtener el nombre para mostrar de un dispositivo, consulte el atributo [ \_ \_ nombre descriptivo de MFT](mft-friendly-name-attribute.md) .
+El vínculo simbólico debe considerarse una cadena opaca. Para obtener el nombre para mostrar de un dispositivo, consulte el [atributo MFT \_ FRIENDLY \_ NAME.](mft-friendly-name-attribute.md)
 
-El software MFTs no debe tener establecido este atributo.
+Los MTA de software no deben tener este atributo establecido.
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 7 \|\]<br/>                                        |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2008 R2 \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio \| para UWP\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio para \[ UWP de Server 2008 R2 \|\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Mftransform.h</dt> </dl> |
 
 
 
@@ -51,13 +51,13 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[MFTs de hardware](hardware-mfts.md)
+[MTA de hardware](hardware-mfts.md)
 </dt> <dt>
 
-[Atributos de transformación](transform-attributes.md)
+[Transformar atributos](transform-attributes.md)
 </dt> </dl>
 
  

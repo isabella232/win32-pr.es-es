@@ -1,9 +1,9 @@
 ---
-title: MDM_Update_ApprovedUpdates01_01 (clase)
-description: La \_ \_ \_ clase de actualización APPROVEDUPDATES01 01 de MDM se utiliza para administrar y controlar el lanzamiento de las actualizaciones aprobadas.
+title: MDM_Update_ApprovedUpdates01_01 clase
+description: La clase \_ MDM Update \_ ApprovedUpdates01 01 se usa para administrar y controlar el \_ lanzamiento de actualizaciones aprobadas.
 ms.assetid: 3903dbc1-c745-4e9a-a7f7-455338b77563
 keywords:
-- MDM_Update_ApprovedUpdates01_01 (clase)
+- MDM_Update_ApprovedUpdates01_01 clase
 - MDM_Update_ApprovedUpdates01_01 clase, descrita
 topic_type:
 - apiref
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e6e12700b04f6e48fdf746cb27953da5849169d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fe73cf90346b6287c609b1b5f4d905041672c1c94727d24cd53c761aed4a52de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103995960"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119795965"
 ---
-# <a name="mdm_update_approvedupdates01_01-class"></a>\_ \_ Clase ApprovedUpdates01 01 de actualización \_ de MDM
+# <a name="mdm_update_approvedupdates01_01-class"></a>Actualización de MDM \_ \_ ApprovedUpdates01 \_ 01 (clase)
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-La clase de **\_ actualización \_ ApprovedUpdates01 \_ 01 de MDM** se utiliza para administrar y controlar el lanzamiento de las actualizaciones aprobadas.
+La **clase MDM Update \_ \_ ApprovedUpdates01 \_ 01** se usa para administrar y controlar el lanzamiento de actualizaciones aprobadas.
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -46,23 +46,23 @@ class MDM_Update_ApprovedUpdates01_01
 
 ## <a name="members"></a>Miembros
 
-La clase de **\_ actualización \_ ApprovedUpdates01 \_ 01 de MDM** tiene estos tipos de miembros:
+La **clase MDM Update \_ \_ ApprovedUpdates01 \_ 01** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase de **\_ actualización \_ ApprovedUpdates01 \_ 01 de MDM** tiene estas propiedades.
+La **clase MDM Update \_ \_ ApprovedUpdates01 \_ 01** tiene estas propiedades.
 
 <dl> <dt>
 
 [ApprovedTime](/windows/client-management/mdm/update-csp#approvedupdates-approved-update-guid-approvedtime)
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -95,7 +95,7 @@ Tipo de acceso: solo lectura
 Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/Update/ApprovedUpdates".
+Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/Update/ApprovedUpdates"
 
 </dd> </dl>
 
@@ -103,13 +103,13 @@ Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                          |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                            |
-| Espacio de nombres<br/>                | Dmmap de MDM raíz de \\ cimv2 \\ \\<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl>      |
-| Archivo DLL<br/>                      | <dl> <dt>\\DMWmiBridgeProv.dllMOF</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ cimv2 \\ mdm \\ dmmap<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1.mof</dt> </dl>      |
+| Archivo DLL<br/>                      | <dl> <dt>Mofs \\DMWmiBridgeProv.dll</dt> </dl> |
 
 
 

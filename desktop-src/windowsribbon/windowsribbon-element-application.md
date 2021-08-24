@@ -1,9 +1,9 @@
 ---
 title: Elemento Application
-description: Representa el elemento de nivel superior en la especificación de marcado del marco de la cinta de Windows.
+description: Representa el elemento de nivel superior de la especificación de marcado Windows marco de la cinta de opciones.
 ms.assetid: 05396d8b-fbd1-40bb-8d0f-8ac11506e7db
 keywords:
-- Cinta de opciones de Windows, elemento de aplicación
+- Cinta de opciones del Windows aplicación
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9b116879a918ca0437c7f2bdd201ef4ffd6d3c61
-ms.sourcegitcommit: 3d718d8f69d3f86eaecf94c5705d761c5a9ef4a1
+ms.openlocfilehash: 4055e271ecf3313596b73aa36a5cbea37250416d9b517fb4512b89fbc203293a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "103797187"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119810815"
 ---
 # <a name="application-element"></a>Elemento Application
 
-Representa el elemento de nivel superior en la especificación de marcado del marco de la cinta de Windows.
+Representa el elemento de nivel superior de la especificación de marcado Windows marco de la cinta de opciones.
 
 ## <a name="usage"></a>Uso
 
@@ -39,7 +39,7 @@ Representa el elemento de nivel superior en la especificación de marcado del ma
 
 | Atributo            | Tipo                 | Obligatorio       | Descripción                                                                                                                                                                                                       |
 |----------------------|----------------------|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **xmlns**<br/> | xs:string<br/> | Sí<br/> | <dt>`http://schemas.microsoft.com/windows/2009/Ribbon`<br/> </dt> <dd> El URI para el enlace del espacio de nombres de marcado de la cinta. <br/> </dd> </dl> |
+| **xmlns**<br/> | xs:string<br/> | Sí<br/> | <dt>`http://schemas.microsoft.com/windows/2009/Ribbon`<br/> </dt> <dd> URI del enlace de espacio de nombres de marcado de la cinta de opciones. <br/> </dd> </dl> |
 
 
 
@@ -49,8 +49,8 @@ Representa el elemento de nivel superior en la especificación de marcado del ma
 
 | Elemento                                                                               | Descripción                                    |
 |---------------------------------------------------------------------------------------|------------------------------------------------|
-| [**Application. Commands**](windowsribbon-element-application-commands.md)<br/> | Puede aparecer como máximo una vez<br/> <br/>  |
-| [**Application. views**](windowsribbon-element-application-views.md)<br/>       | Debe aparecer exactamente una vez<br/> <br/> |
+| [**Application.Commands**](windowsribbon-element-application-commands.md)<br/> | Puede producirse como máximo una vez<br/> <br/>  |
+| [**Application.Views**](windowsribbon-element-application-views.md)<br/>       | Debe producirse exactamente una vez<br/> <br/> |
 
 
 
@@ -58,20 +58,20 @@ Representa el elemento de nivel superior en la especificación de marcado del ma
 
 No hay elementos primarios.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Obligatorio.
 
-Debe aparecer exactamente una vez como contenedor para todo el marcado de la cinta de opciones.
+Debe producirse exactamente una vez como contenedor para todo el marcado de la cinta de opciones.
 
-Los elementos secundarios del elemento **Application** deben aparecer en el orden especificado:
+Los elementos secundarios del **elemento Application** deben producirse en el orden especificado:
 
-1.  [**Application. Commands**](windowsribbon-element-application-commands.md)
-2.  [**Application. views**](windowsribbon-element-application-views.md)
+1.  [**Application.Commands**](windowsribbon-element-application-commands.md)
+2.  [**Application.Views**](windowsribbon-element-application-views.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra una declaración de elemento de **aplicación** .
+En el ejemplo siguiente se muestra una **declaración de elemento** Application.
 
 
 ```XML
@@ -88,7 +88,7 @@ En el ejemplo siguiente se muestra una declaración de elemento de **aplicación
 
 |                                     |           |
 |-------------------------------------|-----------|
-| Sistema mínimo compatible<br/> | Windows 7 |
+| Sistema mínimo compatible<br/> | Windows 7 |
 | Puede estar vacío                        | No        |
 
 
@@ -97,7 +97,7 @@ En el ejemplo siguiente se muestra una declaración de elemento de **aplicación
 
 <dl> <dt>
 
-[Declarar comandos y controles con el marcado de la cinta de opciones](windowsribbon-schema.md)
+[Declarar comandos y controles con marcado de cinta](windowsribbon-schema.md)
 </dt> </dl>
 
  

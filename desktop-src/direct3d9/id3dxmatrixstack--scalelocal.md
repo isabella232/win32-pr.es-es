@@ -1,5 +1,5 @@
 ---
-description: 'Método ID3DXMATRIXStack::ScaleLocal (D3dx9math.h): escala la matriz actual sobre el origen del objeto.'
+description: 'Método ID3DXMATRIXStack::ScaleLocal (D3dx9math.h): escale la matriz actual sobre el origen del objeto.'
 ms.assetid: fe71da67-c8c9-4c78-9055-9bc3cadc0780
 title: Método ID3DXMATRIXStack::ScaleLocal (D3dx9math.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5bd9f47b6c38b5ec72bcd25ecb5981859a87038b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 193026cee7e8b483afd0159da87cd356bd479987f776c5e82f7ea3543df77c0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093333"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119748065"
 ---
 # <a name="id3dxmatrixstackscalelocal-method-d3dx9mathh"></a>Método ID3DXMATRIXStack::ScaleLocal (D3dx9math.h)
 
@@ -56,7 +56,7 @@ Componente de escalado en la dirección X.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Componente de escalado en la dirección Y.
+Componente de escalado en la dirección y.
 
 </dd> <dt>
 
@@ -65,7 +65,7 @@ Componente de escalado en la dirección Y.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Componente de escalado en dirección z.
+Componente de escalado en la dirección Z.
 
 </dd> </dl>
 
@@ -77,7 +77,7 @@ Si el método se realiza correctamente, el valor devuelto es D3D \_ OK.
 
 ## <a name="remarks"></a>Comentarios
 
-Este método multiplica a la izquierda la matriz actual con la matriz de escala calculada. La transformación trata sobre el origen local del objeto.
+Este método multiplica a la izquierda la matriz actual con la matriz de escala calculada. La transformación trata sobre el origen local del objeto .
 
 
 ```
@@ -99,7 +99,7 @@ m_stack[m_currentPos] = tmp * m_stack[m_currentPos];
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,27 +1,27 @@
 ---
-description: Puede usar un objeto mutex para proteger un recurso compartido de un acceso simultáneo de varios subprocesos o procesos.
+description: Puede usar un objeto mutex para proteger un recurso compartido del acceso simultáneo por parte de varios subprocesos o procesos.
 ms.assetid: 0f69ba50-69ce-467a-b068-8fd8f07c6c78
 title: Usar objetos mutex
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fbd68f41319125613e8569e7b343c0b1601a7735
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c629d90e1cd811c62f62e1151cee4c3e2af77b84133e142fcfe7f93a35b2e5bb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105667502"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119739265"
 ---
 # <a name="using-mutex-objects"></a>Usar objetos mutex
 
-Puede usar un [objeto mutex](mutex-objects.md) para proteger un recurso compartido de un acceso simultáneo de varios subprocesos o procesos. Cada subproceso debe esperar a la propiedad de la exclusión mutua para poder ejecutar el código que tiene acceso al recurso compartido. Por ejemplo, si varios subprocesos comparten el acceso a una base de datos, los subprocesos pueden utilizar un objeto mutex para permitir que solo un subproceso cada vez escriba en la base de datos.
+Puede usar un objeto [mutex para](mutex-objects.md) proteger un recurso compartido del acceso simultáneo por parte de varios subprocesos o procesos. Cada subproceso debe esperar la propiedad de la exclusión mutua para poder ejecutar el código que accede al recurso compartido. Por ejemplo, si varios subprocesos comparten acceso a una base de datos, los subprocesos pueden usar un objeto mutex para permitir que solo un subproceso a la vez escriba en la base de datos.
 
-En el ejemplo siguiente se usa la función [**CreateMutex**](/windows/win32/api/synchapi/nf-synchapi-createmutexa) para crear un objeto mutex y la función [**CreateThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) para crear subprocesos de trabajo.
+En el ejemplo siguiente se usa [**la función CreateMutex**](/windows/win32/api/synchapi/nf-synchapi-createmutexa) para crear un objeto mutex y la [**función CreateThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) para crear subprocesos de trabajo.
 
-Cuando un subproceso de este proceso escribe en la base de datos, primero solicita la propiedad de la exclusión mutua mediante la función [**WaitForSingleObject**](/windows/win32/api/winbase/nf-winbase-registerwaitforsingleobject) . Si el subproceso obtiene la propiedad de la exclusión mutua, escribe en la base de datos y, a continuación, libera su propiedad de la exclusión mutua mediante la función [**ReleaseMutex**](/windows/win32/api/synchapi/nf-synchapi-releasemutex) .
+Cuando un subproceso de este proceso escribe en la base de datos, primero solicita la propiedad de la exclusión mutua mediante la [**función WaitForSingleObject.**](/windows/win32/api/winbase/nf-winbase-registerwaitforsingleobject) Si el subproceso obtiene la propiedad de la exclusión mutua, escribe en la base de datos y, a continuación, libera su propiedad de la exclusión mutua mediante la [**función ReleaseMutex.**](/windows/win32/api/synchapi/nf-synchapi-releasemutex)
 
-En este ejemplo se usa el control de excepciones estructurado para asegurarse de que el subproceso libera correctamente el objeto mutex. El bloque de código **\_ \_ Finally** se ejecuta independientemente de cómo finalice el bloque **\_ \_ try** (a menos que el bloque **\_ \_ try** incluya una llamada a la función [**TerminateThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-terminatethread) ). Esto evita que el objeto mutex se abandone accidentalmente.
+En este ejemplo se usa el control estructurado de excepciones para asegurarse de que el subproceso libera correctamente el objeto mutex. El **\_ \_ bloque finally** de código se ejecuta independientemente de cómo finalice el bloque **\_ \_ try** (a menos que el bloque **\_ \_ try** incluya una llamada a la función [**TerminateThread).**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-terminatethread) Esto evita que el objeto de exclusión mutua se abandone accidentalmente.
 
-Si se abandona una exclusión mutua, el subproceso que poseía la exclusión mutua no la liberaba correctamente antes de finalizar. En este caso, el estado del recurso compartido es indeterminado y seguir usando la exclusión mutua puede ocultar un error potencialmente grave. Es posible que algunas aplicaciones intenten restaurar el recurso a un estado coherente. en este ejemplo se devuelve simplemente un error y se detiene el uso de la exclusión mutua. Para obtener más información, vea [objetos mutex](mutex-objects.md).
+Si se abandona una exclusión mutua, el subproceso que posee la exclusión mutua no la ha liberado correctamente antes de finalizar. En este caso, el estado del recurso compartido es indeterminado y seguir utilizando la exclusión mutua puede ocultar un error potencialmente grave. Algunas aplicaciones pueden intentar restaurar el recurso a un estado coherente. Este ejemplo simplemente devuelve un error y deja de usar la exclusión mutua. Para obtener más información, vea [Mutex Objects](mutex-objects.md).
 
 
 ```C++

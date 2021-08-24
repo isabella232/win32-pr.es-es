@@ -4,18 +4,18 @@ ms.assetid: 2f6c51a3-003c-4d68-9e4d-9be5d325a477
 title: Conexión de PrintCapabilities con el esquema de impresión
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 661a8eb93c6f788381713c0c6620e8a09a53648f
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 65b82efc36798cc39439ff1dcf30d10c02b33aaa7ca4b0e92be5ce3e305875dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409648"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119720155"
 ---
 # <a name="connecting-printcapabilities-with-the-print-schema"></a>Conexión de PrintCapabilities con el esquema de impresión
 
 Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-El esquema printCapabilities general cubre la estructura, el propósito y el uso de los distintos tipos de elementos. Especifica el atributo name que se usa para definir instancias específicas de cada tipo de elemento. Especifica que los autores de PrintCapabilities pueden usar instancias de elementos definidos por las palabras clave de esquema de impresión, o pueden introducir sus propias instancias definidas de forma privada, siempre y cuando estas instancias definidas de forma privada se definan en un espacio de nombres que se identifique claramente como suyo. (Los autores de PrintCapabilities también pueden usar instancias definidas previamente en otro espacio de nombres privado).
+El esquema printCapabilities general cubre la estructura, el propósito y el uso de los distintos tipos de elementos. Especifica el atributo name que se usa para definir instancias específicas de cada tipo de elemento. Especifica que los autores de PrintCapabilities pueden usar instancias de elementos definidos por las palabras clave de esquema de impresión, o bien pueden introducir sus propias instancias definidas de forma privada, siempre y cuando estas instancias definidas de forma privada se definan en un espacio de nombres que se identifique claramente como suyo. (Los autores de PrintCapabilities también pueden usar instancias definidas previamente en otro espacio de nombres privado).
 
 El documento Palabras clave de esquema de impresión define las instancias específicas de cada tipo de elemento disponibles para su uso en documentos PrintCapabilities y en PrintTickets. También documenta su propósito y uso. El documento Palabras clave de esquema de impresión también define instancias de varios tipos de elementos, como se indica a continuación:
 
@@ -47,7 +47,7 @@ El documento Palabras clave de esquema de impresión define las instancias espec
 
 -   Instancias de ParameterDef
 
-    -   Una instancia de ParameterDef proporcionada por palabras clave de esquema de impresión también define un valor para cada propiedad contenida en ella. El proveedor PrintCapabilities es libre de modificar las instancias value de las instancias de propiedad que se pueden cambiar. Para obtener información sobre qué instancias de propiedad se pueden cambiar y cuáles no se pueden cambiar (son inmutables), vea [Elementos ParameterDef y ParameterInit](parameterdef-and-parameterinit-elements.md).
+    -   Una instancia de ParameterDef proporcionada por palabras clave de esquema de impresión también define un valor para cada propiedad contenida en ella. El proveedor PrintCapabilities tiene la libertad de modificar las instancias value de las instancias de propiedad que se pueden cambiar. Para obtener información sobre qué instancias de propiedad se pueden cambiar y cuáles no se pueden cambiar (son inmutables), vea [Elementos ParameterDef y ParameterInit](parameterdef-and-parameterinit-elements.md).
 
 Es importante tener en cuenta que el esquema PrintCapabilities no asigna un nombre a ninguna instancia de Option. Las instancias de opción se caracterizan únicamente por sus instancias scoredProperty tomadas como un todo. Una idea errónea común es que el uso del atributo "name" para definir una opción identifica instancias de Option, pero esto es incorrecto. No es necesario que los elementos option sean únicos para las instancias de Option del mismo nivel, ni que se use el atributo 'name' para definir una opción necesaria.
 
@@ -61,7 +61,7 @@ El documento Palabras clave de esquema de impresión designa algunas instancias 
 
 <dl> <dt>
 
-[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: El método QuerySupported determina si un objeto admite un conjunto de propiedades especificado.
 ms.assetid: eda0325c-dba4-4d9f-81e2-7fd67d5b9873
-title: 'Método IKsPropertySet:: QuerySupported (KS. h)'
+title: Método IKsPropertySet::QuerySupported (Ks.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - Strmiids.lib
 - Strmiids.dll
-ms.openlocfilehash: a13c8523d45278ad403ee08d0822fb853b301520
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 7c79e81171349e2c481535eeab212717de072b17778b052dac3fc377cea0e094
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104274709"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119792325"
 ---
-# <a name="ikspropertysetquerysupported-method"></a>IKsPropertySet:: QuerySupported (método)
+# <a name="ikspropertysetquerysupported-method"></a>Método IKsPropertySet::QuerySupported
 
 El `QuerySupported` método determina si un objeto admite un conjunto de propiedades especificado.
 
@@ -42,31 +42,31 @@ HRESULT QuerySupported(
 
 <dl> <dt>
 
-*guidPropSet* \[ de\]
+*guidPropSet* \[ En\]
 </dt> <dd>
 
 GUID del conjunto de propiedades.
 
 </dd> <dt>
 
-*dwPropID* \[ de\]
+*dwPropID* \[ En\]
 </dt> <dd>
 
 Identificador de la propiedad dentro del conjunto de propiedades.
 
 </dd> <dt>
 
-*pTypeSupport* \[ enuncia\]
+*pTypeSupport* \[ out\]
 </dt> <dd>
 
-Puntero a un valor en el que se van a almacenar marcas que indican la compatibilidad proporcionada por el controlador. Entre las marcas admitidas se incluyen las siguientes.
+Puntero a un valor en el que se almacenan las marcas que indican la compatibilidad proporcionada por el controlador. Entre las marcas admitidas se incluyen las siguientes.
 
 
 
 | Value                    | Descripción                                                                                            |
 |--------------------------|--------------------------------------------------------------------------------------------------------|
-| \_obtención de soporte técnico de KSPROPERTY \_ | Puede recuperar la propiedad llamando al método [**IKsPropertySet:: get**](ikspropertyset-get.md) . |
-| \_conjunto de soporte de KSPROPERTY \_ | Puede cambiar la propiedad llamando a [**IKsPropertySet:: set**](ikspropertyset-set.md).              |
+| KSPROPERTY \_ SUPPORT \_ GET | Puede recuperar la propiedad llamando al [**método IKsPropertySet::Get.**](ikspropertyset-get.md) |
+| CONJUNTO DE COMPATIBILIDAD CON KSPROPERTY \_ \_ | Puede cambiar la propiedad llamando a [**IKsPropertySet::Set**](ikspropertyset-set.md).              |
 
 
 
@@ -76,29 +76,29 @@ Puntero a un valor en el que se van a almacenar marcas que indican la compatibil
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Estos son algunos de los valores posibles.
+Devuelve un **valor HRESULT.** Estos son algunos de los valores posibles.
 
 
 
 | Código devuelto                                                                                              | Descripción                                                                     |
 |----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>                     | Se admiten el conjunto de propiedades especificado y la combinación de ID. de propiedad.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                     | Se admite la combinación de identificadores de propiedad y conjunto de propiedades especificados.<br/> |
 | <dl> <dt>**E \_ NOTIMPL**</dt> </dl>                | No se admite el conjunto de propiedades.<br/>                                       |
-| <dl> <dt>**E \_ \_ ID. de prop \_ no compatible**</dt> </dl>  | No se admite el identificador de propiedad para el conjunto de propiedades especificado.<br/>         |
-| <dl> <dt>**E \_ prop \_ set \_ no compatible**</dt> </dl> | No se admite el conjunto de propiedades.<br/>                                       |
+| <dl> <dt>**E \_ PROP \_ ID \_ UNSUPPORTED**</dt> </dl>  | No se admite el identificador de propiedad para el conjunto de propiedades especificado.<br/>         |
+| <dl> <dt>**E \_ PROP \_ SET \_ UNSUPPORTED**</dt> </dl> | No se admite el conjunto de propiedades.<br/>                                       |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> Existe otra interfaz con este nombre en el archivo de encabezado dsound. h. Las dos interfaces no son compatibles. La interfaz **IKsControl** , documentada en el DDK de DirectShow, es ahora la interfaz recomendada para pasar conjuntos de propiedades entre controladores WDM y componentes de modo de usuario.
+> Existe otra interfaz por este nombre en el archivo de encabezado d sound.h. Las dos interfaces no son compatibles. La **interfaz IKsControl,** documentada en el DDK de DirectShow, es ahora la interfaz recomendada para pasar conjuntos de propiedades entre los controladores WDM y los componentes del modo de usuario.
 
  
 
-Debe incluir KS. h antes de ksproxy. h.
+Debe incluir Ks.h antes que Ksproxy.h.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -108,8 +108,8 @@ Debe incluir KS. h antes de ksproxy. h.
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                                                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                                                             |
-| Encabezado<br/>                   | <dl> <dt>KS. h; </dt> <dt>Ksproxy. h</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Strmiids. lib</dt> </dl>                                                          |
+| Encabezado<br/>                   | <dl> <dt>Ks.h; </dt> <dt>Ksproxy.h</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Strmiids.lib</dt> </dl>                                                          |
 
 
 
@@ -120,7 +120,7 @@ Debe incluir KS. h antes de ksproxy. h.
 [Códigos de error y de éxito](error-and-success-codes.md)
 </dt> <dt>
 
-[**Interfaz IKsPropertySet**](ikspropertyset.md)
+[**IKsPropertySet (Interfaz)**](ikspropertyset.md)
 </dt> <dt>
 
 [Conjuntos de propiedades](property-sets.md)

@@ -68,7 +68,7 @@ Puntero al valor devuelto com general. Este valor solo se cambia si se produce u
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

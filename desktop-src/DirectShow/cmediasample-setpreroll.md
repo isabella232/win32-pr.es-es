@@ -1,7 +1,7 @@
 ---
-description: 'El método SetPreroll especifica si este ejemplo es un ejemplo de relanzamiento. No se debe mostrar un ejemplo de prelanzamiento. Este método implementa el método IMediaSample:: SetPreroll.'
+description: El método SetPreroll especifica si este ejemplo es un ejemplo de preinselección. No se debe mostrar un ejemplo de inscripción previa. Este método implementa el método IMediaSample::SetPreroll.
 ms.assetid: 2887e627-5999-407a-88d3-811c803c9a43
-title: Método CMediaSample. SetPreroll (Amfilter. h)
+title: Método CMediaSample.SetPreroll (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 594f26ebb738a986c85a14b88f8896b122b58f47
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 410031ccf60e830c51615d267d3324167169c5de7960f79dc05b8c9e267463bf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679072"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119832105"
 ---
-# <a name="cmediasamplesetpreroll-method"></a>CMediaSample. SetPreroll, método
+# <a name="cmediasamplesetpreroll-method"></a>Método CMediaSample.SetPreroll
 
-El `SetPreroll` método especifica si este ejemplo es un ejemplo de relanzamiento. No se debe mostrar un ejemplo de prelanzamiento. Este método implementa el método [**IMediaSample:: SetPreroll**](/windows/desktop/api/Strmif/nf-strmif-imediasample-setpreroll) .
+El `SetPreroll` método especifica si este ejemplo es un ejemplo de inscripción previa. No se debe mostrar un ejemplo de inscripción previa. Este método implementa el [**método IMediaSample::SetPreroll.**](/windows/desktop/api/Strmif/nf-strmif-imediasample-setpreroll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,17 +45,17 @@ HRESULT SetPreroll(
 *bIsPreroll* 
 </dt> <dd>
 
-Valor booleano que especifica si se trata de un ejemplo de relanzamiento. Si es **true**, se trata de un ejemplo de relanzamiento.
+Valor booleano que especifica si se trata de un ejemplo de inscripción previa. Si **es TRUE,** se trata de un ejemplo de inscripción previa.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método actualiza la variable miembro [**CMediaSample:: m \_ dwFlags**](cmediasample-m-dwflags.md) , que especifica la propiedad preroll.
+Este método actualiza la variable [**miembro CMediaSample::m \_ dwFlags,**](cmediasample-m-dwflags.md) que especifica la propiedad preroll.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Este método actualiza la variable miembro [**CMediaSample:: m \_ dwFlags**](cme
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Este método actualiza la variable miembro [**CMediaSample:: m \_ dwFlags**](cme
 
 <dl> <dt>
 
-[**Clase CMediaSample**](cmediasample.md)
+[**CMediaSample (clase)**](cmediasample.md)
 </dt> </dl>
 
  

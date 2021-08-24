@@ -1,22 +1,22 @@
 ---
-title: Ejemplo de código de C/C++ recuperar la prioridad de la tarea
-description: En este ejemplo se recupera el nivel de prioridad de una tarea y se muestra la ruta de acceso al directorio de trabajo en la pantalla. En este ejemplo se da por supuesto que la tarea y la tarea de prueba ya existen en el equipo local.
+title: Ejemplo de código de C/C++ recuperación de la prioridad de tarea
+description: En este ejemplo se recupera el nivel de prioridad de una tarea y se muestra la ruta de acceso al directorio de trabajo en la pantalla. En este ejemplo se supone que la tarea y la tarea de prueba ya existen en el equipo local.
 ms.assetid: 6e7eccce-406a-4827-8fe2-abe93251668a
 keywords:
-- recuperación de la prioridad de la tarea Programador de tareas
-- recuperación de las propiedades de la tarea Programador de tareas, prioridad
+- recuperación de la prioridad de Programador de tareas
+- recuperar propiedades de tarea Programador de tareas , prioridad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed9b32b5b4a6e66539ce1a65ab41488f96418d29
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 24b9a746f956131954b7e048b416f6e1c348aff8893417d0bd872f6750c43ce7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105676155"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119738665"
 ---
-# <a name="cc-code-example-retrieving-task-priority"></a>Ejemplo de código de C/C++: recuperar la prioridad de la tarea
+# <a name="cc-code-example-retrieving-task-priority"></a>Ejemplo de código de C/C++: Recuperar prioridad de tarea
 
-En este ejemplo se recupera el nivel de prioridad de una tarea y se muestra la ruta de acceso al directorio de trabajo en la pantalla. En este ejemplo se da por supuesto que la tarea y la tarea de prueba ya existen en el equipo local.
+En este ejemplo se recupera el nivel de prioridad de una tarea y se muestra la ruta de acceso al directorio de trabajo en la pantalla. En este ejemplo se supone que la tarea y la tarea de prueba ya existen en el equipo local.
 
 
 ```C++
@@ -113,12 +113,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Ejemplos de Programador de tareas 1,0](task-scheduler-1-0-examples.md)
+[Programador de tareas ejemplos de 1.0](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
