@@ -1,11 +1,11 @@
 ---
-title: Win32_TSRemoteDesktop (clase)
-description: Describe una conexión a escritorio remoto que está disponible a través de Escritorio remoto acceso web (acceso web de escritorio remoto).
+title: Win32_TSRemoteDesktop clase
+description: Describe una conexión a Escritorio remoto que está disponible a través Escritorio remoto Web Access (Acceso web de Escritorio remoto).
 ms.assetid: 40c7d8f1-cc45-4f0a-8c07-8215342ca02e
 ms.tgt_platform: multiple
 keywords:
 - Win32_TSRemoteDesktop clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_TSRemoteDesktop de clase, se describe
+- Win32_TSRemoteDesktop clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -30,16 +30,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b3a23e63d5c79313933b7ce6951265a85740bc8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cd6bae5e03bd9cb1a73917cfb0e6b121d3b2d57dd30cc2d37bb7e51abf086061
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104149956"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119769415"
 ---
-# <a name="win32_tsremotedesktop-class"></a>\_Clase Win32 TSRemoteDesktop
+# <a name="win32_tsremotedesktop-class"></a>Clase TSRemoteDesktop de Win32 \_
 
-Describe una conexión a escritorio remoto que está disponible a través de Escritorio remoto acceso web (acceso web de escritorio remoto).
+Describe una conexión a Escritorio remoto que está disponible a través Escritorio remoto Web Access (Acceso web de Escritorio remoto).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -81,13 +81,13 @@ La **clase \_ TSRemoteDesktop de Win32** tiene estas propiedades.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
-El alias de la conexión a escritorio remoto.
+Alias de la conexión a Escritorio remoto.
 
 </dd> <dt>
 
@@ -105,7 +105,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 
 Descripción breve (cadena de una línea) del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -120,20 +120,20 @@ Tipo de acceso: solo lectura
 
 Descripción del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
-**IconContents**
+**IconoContents**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8** array
+Tipo de datos: **matriz uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El contenido de bytes del icono que corresponde a la conexión a escritorio remoto.
+Contenido de bytes del icono que corresponde a la conexión a Escritorio remoto.
 
 </dd> <dt>
 
@@ -143,10 +143,10 @@ El contenido de bytes del icono que corresponde a la conexión a escritorio remo
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Índice o identificador del icono de la conexión a escritorio remoto.
+Índice o identificador del icono de la conexión a Escritorio remoto.
 
 </dd> <dt>
 
@@ -156,28 +156,28 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Ruta de acceso del icono de la conexión a escritorio remoto.
+Ruta de acceso del icono de la conexión a Escritorio remoto.
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 ")
+Calificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5")
 </dt> </dl>
 
 Fecha en que se instaló el objeto. La falta de un valor no indica que el objeto no está instalado.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -187,10 +187,10 @@ Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsys
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Indica si esta conexión a escritorio remoto forma parte de una granja de máquinas virtuales.
+Indica si esta conexión a Escritorio remoto forma parte de una granja de máquinas virtuales.
 
 </dd> <dt>
 
@@ -205,7 +205,7 @@ Tipo de acceso: solo lectura
 
 El nombre del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -215,10 +215,10 @@ Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsys
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Contenido del archivo RDP que corresponde a la conexión a escritorio remoto.
+Contenido del archivo RDP que corresponde a la conexión a Escritorio remoto.
 
 </dd> <dt>
 
@@ -228,10 +228,10 @@ Contenido del archivo RDP que corresponde a la conexión a escritorio remoto.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Un descriptor de seguridad que controla el acceso a la conexión a escritorio remoto, en formato SDDL. Una cadena vacía implica permitir todo acceso. Este descriptor de seguridad no admite ACE de denegación ni ACE que hagan referencia a usuarios o grupos que no son de dominio.
+Descriptor de seguridad que controla el acceso a la conexión a Escritorio remoto, en formato SDDL. Una cadena vacía implica permitir todo el acceso. Este descriptor de seguridad no admite LAS ACE DENY ni las AEE que hacen referencia a usuarios o grupos que no son de dominio.
 
 </dd> <dt>
 
@@ -241,10 +241,10 @@ Un descriptor de seguridad que controla el acceso a la conexión a escritorio re
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Indica si se debe mostrar la conexión a escritorio remoto en acceso web de escritorio remoto.
+Indica si la conexión a Escritorio remoto debe mostrarse en Acceso web de Escritorio remoto.
 
 </dd> <dt>
 
@@ -260,15 +260,15 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios Estados operativos y no operativos. Los Estados operativos incluyen: "correcto", "degradado" y "Pred FAIL" (un elemento, como una unidad de disco duro habilitada para SMART, puede estar funcionando correctamente pero prediciendo un error en un futuro próximo). Los Estados no operativos incluyen: "error", "iniciando", "deteniendo" y "servicio". El último, "servicio", se puede aplicar durante la resilverización del reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo el trabajo está en línea, pero el elemento administrado no es "OK" ni está en uno de los otros Estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Los estados no de operación incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los otros estados.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 <dt>
 
 
 
- ("Correcto")
+ ("Ok")
 
 
 </dt> <dd></dd> <dt>
@@ -296,21 +296,21 @@ Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsys
 
 
 
- ("Pred FAIL")
+ ("Error previo")
 
 
 </dt> <dd></dd> <dt>
 
 
 
- ("Iniciando")
+ ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 
 
- ("Deteniéndose")
+ ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -330,18 +330,18 @@ Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsys
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Configuración de la granja de máquinas virtuales para la conexión a escritorio remoto.
+Configuración de la granja de máquinas virtuales para la conexión a Escritorio remoto.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Debe ser miembro del grupo administradores para establecer las propiedades utilizando esta clase.
+Debe ser miembro del grupo Administradores para establecer propiedades mediante esta clase.
 
-Para conectarse al \\ espacio de \\ nombres TerminalServices de cimv2 raíz \\ , el nivel de autenticación debe incluir privacidad de paquetes. En el caso de las llamadas de C/C++, se trata de un nivel de autenticación de **\_ \_ \_ \_ \_ privacidad de nivel** de autenticación de RPC C, que se puede establecer mediante la función com [**CoSetProxyBlanket**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket) . En el caso de las llamadas de Visual Basic y scripting, se trata de un nivel de autenticación de **WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de 6. En el siguiente ejemplo de Visual Basic Scripting Edition (VBScript) se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
+Para conectarse al espacio \\ de nombres Raíz de \\ TerminalServices CIMV2, el nivel de \\ autenticación debe incluir privacidad de paquetes. Para las llamadas de C/C++, se trata de un nivel de autenticación de **RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY**, que se puede establecer mediante la función COM [**CoSetProxyBlanket.**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket) Para Visual Basic y llamadas de scripting, se trata de un nivel de autenticación **de WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de 6. En el Visual Basic ejemplo de Scripting Edition (VBScript) se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
 
 
 ```VB
@@ -352,18 +352,18 @@ Set objServices = GetObject( _
 
 
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>Tsallow. mof</dt> </dl>  |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
+| MOF<br/>                      | <dl> <dt>Tsallow.mof</dt> </dl>  |
 | Archivo DLL<br/>                      | <dl> <dt>TsPubWmi.dll</dt> </dl> |
 
 

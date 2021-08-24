@@ -1,9 +1,9 @@
 ---
-title: CD3DX12_PACKED_MIP_INFO estructura (D3dx12. h)
-description: Una estructura auxiliar para habilitar la inicialización sencilla de una \_ estructura de información de MIP empaquetada D3D12 \_ \_ .
+title: CD3DX12_PACKED_MIP_INFO estructura (D3dx12.h)
+description: Estructura auxiliar para permitir la inicialización sencilla de una estructura DE INFORMACIÓN DE MIP EMPAQUETADA de D3D12. \_ \_ \_
 ms.assetid: B3549D78-C354-48FC-A012-1F835DBD585E
 keywords:
-- Estructura de CD3DX12_PACKED_MIP_INFO
+- CD3DX12_PACKED_MIP_INFO estructura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f4565bbac6189cffc5358213437463b4abc0322
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b32a4b0516560ac553b3ce6acb6972def5d0e3f84a2eb84026a0635f779a2c8b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707771"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119752165"
 ---
-# <a name="cd3dx12_packed_mip_info-structure"></a>CD3DX12 \_ \_ estructura de información de MIP empaquetada \_
+# <a name="cd3dx12_packed_mip_info-structure"></a>Estructura DE INFORMACIÓN \_ \_ DE MIP EMPAQUETADA DE \_ CD3DX12
 
-Una estructura auxiliar para habilitar la inicialización sencilla de una estructura de [**\_ \_ \_ información de MIP empaquetada D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_packed_mip_info) .
+Estructura auxiliar para permitir la inicialización sencilla de una estructura DE INFORMACIÓN [**\_ DE \_ MIP EMPAQUETADA \_ D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_packed_mip_info)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,24 +44,24 @@ struct CD3DX12_PACKED_MIP_INFO  : public D3D12_PACKED_MIP_INFO{
 
 <dl> <dt>
 
-**CD3DX12 \_ información de MIP empaquetada \_ \_ ()**
+**CD3DX12 \_ PACKED \_ MIP \_ INFO()**
 </dt> <dd>
 
-Crea una nueva instancia no inicializada de una \_ información de MIP empaquetada de CD3DX12 \_ \_ .
+Crea una nueva instancia sin inicializar de una INFORMACIÓN DE MIP EMPAQUETADA \_ \_ CD3DX12. \_
 
 </dd> <dt>
 
-**información de \_ MIP empaquetada CD3DX12 explícita \_ \_ (const D3D12 \_ empaquetada de \_ información de MIP \_ &o)**
+**explicit CD3DX12 \_ PACKED \_ MIP \_ INFO(const D3D12 \_ PACKED \_ MIP \_ INFO &o)**
 </dt> <dd>
 
-Crea una nueva instancia de una \_ información de MIP empaquetada CD3DX12 \_ \_ , inicializada con el contenido de otra estructura de [**\_ \_ \_ información de MIP empaquetada de D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_packed_mip_info) .
+Crea una nueva instancia de una información DE MIP EMPAQUETADA CD3DX12, inicializada con el contenido de otra estructura DE INFORMACIÓN DE MIP EMPAQUETADA \_ \_ \_ [**\_ \_ \_ D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_packed_mip_info)
 
 </dd> <dt>
 
-**CD3DX12 \_ \_ información de MIP empaquetada \_ (UINT8 NumStandardMips, UINT8 NumPackedMips, UINT NumTilesForPackedMips, uint startTileIndexInOverallResource)**
+**CD3DX12 \_ PACKED \_ MIP \_ INFO(UINT8 numStandardMips, UINT8 numPackedMips, UINT numTilesForPackedMips, UINT startTileIndexInOverallResource)**
 </dt> <dd>
 
-Crea una nueva instancia de una \_ información de MIP empaquetada CD3DX12 \_ \_ , inicializando los siguientes parámetros:
+Crea una nueva instancia de una información de MIP EMPAQUETADA CD3DX12, \_ \_ \_ inicializando los parámetros siguientes:
 
 UINT8 numStandardMips
 
@@ -73,10 +73,10 @@ UINT startTileIndexInOverallResource
 
 </dd> <dt>
 
-**operador const D3D12 \_ empaquetado de la \_ información de MIP \_& () Const**
+**operator const D3D12 \_ PACKED \_ MIP \_ INFO&() const**
 </dt> <dd>
 
-Define el & operador de paso por referencia para el tipo de estructura primaria.
+Define el & de paso por referencia para el tipo de estructura primaria.
 
 </dd> </dl>
 
@@ -86,7 +86,7 @@ Define el & operador de paso por referencia para el tipo de estructura primaria.
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -94,7 +94,7 @@ Define el & operador de paso por referencia para el tipo de estructura primaria.
 
 <dl> <dt>
 
-[**D3D12 \_ \_ información de MIP empaquetada \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_packed_mip_info)
+[**INFORMACIÓN DE \_ MIP EMPAQUETADA DE D3D12 \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_packed_mip_info)
 </dt> <dt>
 
 [Estructuras auxiliares de D3D12](helper-structures-for-d3d12.md)

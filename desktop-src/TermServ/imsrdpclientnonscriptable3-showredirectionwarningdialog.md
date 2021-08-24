@@ -1,26 +1,26 @@
 ---
 title: Propiedad ShowRedirectionWarningDialog de IMsRdpClientNonScriptable3
-description: Especifica o recupera si se debe mostrar el cuadro de diálogo de advertencia de redirección.
+description: Especifica o recupera si se debe mostrar el cuadro de diálogo de advertencia de redireccionamiento.
 ms.assetid: 7ed37288-77c3-4551-a553-1ca679e1047a
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad ShowRedirectionWarningDialog
-- Propiedad ShowRedirectionWarningDialog Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable3, propiedad ShowRedirectionWarningDialog
-- Propiedad ShowRedirectionWarningDialog Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable4, propiedad ShowRedirectionWarningDialog
-- Propiedad ShowRedirectionWarningDialog Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable5, propiedad ShowRedirectionWarningDialog
-- Servicios de Escritorio remoto de la propiedad ShowRedirectionWarningDialog, objeto MsRdpClient5
-- Servicios de Escritorio remoto de objeto MsRdpClient5, propiedad ShowRedirectionWarningDialog
-- Servicios de Escritorio remoto de la propiedad ShowRedirectionWarningDialog, objeto MsRdpClient6
-- Servicios de Escritorio remoto de objeto MsRdpClient6, propiedad ShowRedirectionWarningDialog
-- Servicios de Escritorio remoto de la propiedad ShowRedirectionWarningDialog, objeto MsRdpClient7
-- Servicios de Escritorio remoto de objeto MsRdpClient7, propiedad ShowRedirectionWarningDialog
-- Servicios de Escritorio remoto de la propiedad ShowRedirectionWarningDialog, objeto MsRdpClient8
-- Servicios de Escritorio remoto de objeto MsRdpClient8, propiedad ShowRedirectionWarningDialog
-- Servicios de Escritorio remoto de la propiedad ShowRedirectionWarningDialog, objeto MsRdpClient9
-- Servicios de Escritorio remoto de objeto MsRdpClient9, propiedad ShowRedirectionWarningDialog
+- Propiedad ShowRedirectionWarningDialog Servicios de Escritorio remoto
+- Propiedad ShowRedirectionWarningDialog Servicios de Escritorio remoto interfaz , IMsRdpClientNonScriptable3
+- Interfaz IMsRdpClientNonScriptable3 Servicios de Escritorio remoto , propiedad ShowRedirectionWarningDialog
+- Propiedad ShowRedirectionWarningDialog Servicios de Escritorio remoto interfaz , IMsRdpClientNonScriptable4
+- Interfaz IMsRdpClientNonScriptable4 Servicios de Escritorio remoto , propiedad ShowRedirectionWarningDialog
+- Propiedad ShowRedirectionWarningDialog Servicios de Escritorio remoto interfaz , IMsRdpClientNonScriptable5
+- Interfaz IMsRdpClientNonScriptable5 Servicios de Escritorio remoto propiedad , ShowRedirectionWarningDialog
+- Propiedad ShowRedirectionWarningDialog Servicios de Escritorio remoto , objeto MsRdpClient5
+- Objeto MsRdpClient5 Servicios de Escritorio remoto , propiedad ShowRedirectionWarningDialog
+- Propiedad ShowRedirectionWarningDialog Servicios de Escritorio remoto , objeto MsRdpClient6
+- Objeto MsRdpClient6 Servicios de Escritorio remoto , propiedad ShowRedirectionWarningDialog
+- Propiedad ShowRedirectionWarningDialog Servicios de Escritorio remoto , objeto MsRdpClient7
+- Objeto MsRdpClient7 Servicios de Escritorio remoto , propiedad ShowRedirectionWarningDialog
+- Propiedad ShowRedirectionWarningDialog Servicios de Escritorio remoto , objeto MsRdpClient8
+- Objeto MsRdpClient8 Servicios de Escritorio remoto , propiedad ShowRedirectionWarningDialog
+- Propiedad ShowRedirectionWarningDialog Servicios de Escritorio remoto , objeto MsRdpClient9
+- Objeto MsRdpClient9 Servicios de Escritorio remoto , propiedad ShowRedirectionWarningDialog
 topic_type:
 - apiref
 api_name:
@@ -44,20 +44,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 468e1721de3395067ca570c2051f3906df626071
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b1f8145712a4e29c0ef16ca4f3da6e2ba3870389896434669aa5134e7b037da9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119771485"
 ---
-# <a name="imsrdpclientnonscriptable3showredirectionwarningdialog-property"></a>IMsRdpClientNonScriptable3:: ShowRedirectionWarningDialog (propiedad)
+# <a name="imsrdpclientnonscriptable3showredirectionwarningdialog-property"></a>IMsRdpClientNonScriptable3::ShowRedirectionWarningDialog, propiedad
 
-Especifica o recupera si se debe mostrar el cuadro de diálogo de advertencia de redirección.
+Especifica o recupera si se debe mostrar el cuadro de diálogo de advertencia de redireccionamiento.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -74,7 +74,7 @@ HRESULT get_ShowRedirectionWarningDialog(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Especifica si se debe mostrar el cuadro de diálogo de advertencia de redirección.
+Especifica si se debe mostrar el cuadro de diálogo de advertencia de redireccionamiento.
 
 ## <a name="requirements"></a>Requisitos
 

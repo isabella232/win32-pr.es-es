@@ -4,18 +4,18 @@ ms.assetid: 39260882-dc02-4f08-9d9b-f170c1e391df
 title: Agregar usuarios a un archivo cifrado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e211b0b2052e9f170d1392773d65091a0625815
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f697fbbc16c9f05516229120f8ed41c7e732b519ddfdeeab0ce192cd28a41cf8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666758"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119766295"
 ---
 # <a name="adding-users-to-an-encrypted-file"></a>Agregar usuarios a un archivo cifrado
 
-En el ejemplo de código de este tema se agrega un nuevo usuario a un archivo cifrado existente mediante la función [**AddUsersToEncryptedFile**](/windows/desktop/api/Winefs/nf-winefs-adduserstoencryptedfile) . Requiere que el certificado de Sistema de cifrado de archivos (EFS) del usuario (de la Active Directory) exista en el almacén de certificados del usuario de usuarios de confianza.
+El ejemplo de código de este tema agrega un nuevo usuario a un archivo cifrado existente mediante la [**función AddUsersToEncryptedFile.**](/windows/desktop/api/Winefs/nf-winefs-adduserstoencryptedfile) Requiere que el certificado de Sistema de cifrado de archivos (EFS) del usuario (del Active Directory) exista en el almacén de certificados de usuario personas de confianza.
 
-En este ejemplo se agrega un nuevo campo de recuperación de datos al archivo cifrado. Como resultado, el usuario recién agregado puede descifrar el archivo cifrado. El autor de la llamada ya debe tener acceso al archivo cifrado, ya sea como propietario original, agente de recuperación de datos o como usuario que se agregó anteriormente al archivo cifrado.
+En este ejemplo se agrega un nuevo campo de recuperación de datos al archivo cifrado. Como resultado, el usuario recién agregado puede descifrar el archivo cifrado. El autor de la llamada ya debe tener acceso al archivo cifrado, ya sea como propietario original, como agente de recuperación de datos o como usuario que se agregó previamente al archivo cifrado.
 
 
 ```C++

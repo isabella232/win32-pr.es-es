@@ -1,23 +1,23 @@
 ---
-description: El proxy de propiedad de la Directiva de metadatos de la foto System. Photo. Brightness.
+description: Proxy de propiedad para la directiva de metadatos de fotos System.Photo.Brightness.
 ms.assetid: a20f5b0a-9b99-4ebe-827b-6223788050f6
-title: Proxy System. Photo. Brightness
+title: System.Photo.Brightness Proxy
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 62447f8b152eb31ee6769ac4585d942384aa4a55
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f0396657efa09c2c3ddbe83faab67701cc36e4629ced5319e6b634fb8d3e3285
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361567"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119882085"
 ---
-# <a name="systemphotobrightness-proxy"></a>Proxy System. Photo. Brightness
+# <a name="systemphotobrightness-proxy"></a>System.Photo.Brightness Proxy
 
-El proxy de propiedad de la Directiva de metadatos de la foto System. Photo. Brightness.
+Proxy de propiedad para la directiva de metadatos de fotos System.Photo.Brightness.
 
 ### <a name="description"></a>Descripción
 
-El proxy de propiedad devuelve un par racional a a través del miembro uhVal de [PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) .
+El proxy de propiedad devuelve un par racionalizado a través del [miembro PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) uhVal.
 
 ### <a name="containers"></a>Contenedores
 
@@ -27,23 +27,23 @@ JPEG, TIFF
 
 Sí
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
 VT \_ UI8
 
 ### <a name="denominator"></a>Denominador
 
-HighPart de uhVal.
+HighPart de la clase uhVal.
 
-### <a name="numerator"></a>Numera
+### <a name="numerator"></a>Numerador
 
-LowPart de uhVal.
+LowPart de la clase uhVal.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[System. Photo. Brightness](../properties/props-system-photo-aperture.md)
+[System.Photo.Brightness](../properties/props-system-photo-aperture.md)
 </dt> </dl>
 
  

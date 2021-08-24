@@ -1,7 +1,7 @@
 ---
-description: Obtiene los valores de escala, rotación y traslación del conjunto de animaciones.
+description: Obtiene los valores de escala, rotación y traducción del conjunto de animaciones.
 ms.assetid: 84fc56f3-15bf-4e27-ad06-57fab94f3a33
-title: 'ID3DXAnimationSet:: GetSRT (método) (D3dx9anim. h)'
+title: Método ID3DXAnimationSet::GetSRT (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: b70243dd9aa2f304d80eaff2e2cc7695dad43379
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: baa1b882972a91626b19194f83655ea1839877943f7463be8991167eb72d17fa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718521"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119791075"
 ---
-# <a name="id3dxanimationsetgetsrt-method"></a>ID3DXAnimationSet:: GetSRT (método)
+# <a name="id3dxanimationsetgetsrt-method"></a>Método ID3DXAnimationSet::GetSRT
 
-Obtiene los valores de escala, rotación y traslación del conjunto de animaciones.
+Obtiene los valores de escala, rotación y traducción del conjunto de animaciones.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,25 +44,25 @@ HRESULT GetSRT(
 
 <dl> <dt>
 
-*PeriodicPosition* \[ de\]
+*PeriodicPosition* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **Double**](../winprog/windows-data-types.md)**
+Tipo: **[ **DOUBLE**](../winprog/windows-data-types.md)**
 
-Posición del conjunto de animaciones. La posición se puede obtener llamando a [**ID3DXAnimationSet:: GetPeriodicPosition**](id3dxanimationset--getperiodicposition.md).
+Posición del conjunto de animación. La posición se puede obtener llamando a [**ID3DXAnimationSet::GetPeriodicPosition**](id3dxanimationset--getperiodicposition.md).
 
 </dd> <dt>
 
-*Animación* \[ de de\]
+*Animación* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Índice de animación.
 
 </dd> <dt>
 
-*pScale* \[ enuncia\]
+*pScale* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
@@ -71,21 +71,21 @@ Puntero al vector [**D3DXVECTOR3**](d3dxvector3.md) que describe la escala del c
 
 </dd> <dt>
 
-*Prot.* \[ enuncia\]
+*pRotation* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)\***
 
-Puntero al cuaternión [**D3DXQUATERNION**](d3dxquaternion.md) que describe el giro del conjunto de animaciones.
+Puntero al [**cuaternión D3DXQUATERNION**](d3dxquaternion.md) que describe la rotación del conjunto de animaciones.
 
 </dd> <dt>
 
-*pTranslation* \[ enuncia\]
+*pTranslation* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Puntero al vector [**D3DXVECTOR3**](d3dxvector3.md) que describe la traslación del conjunto de animaciones.
+Puntero al vector [**D3DXVECTOR3**](d3dxvector3.md) que describe la traducción del conjunto de animación.
 
 </dd> </dl>
 
@@ -93,7 +93,7 @@ Puntero al vector [**D3DXVECTOR3**](d3dxvector3.md) que describe la traslación 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Un programador de aplicaciones implementa los valores devueltos de este método. En general, si no se produce ningún error, programe el método para devolver D3D \_ OK. En caso contrario, programe el método para que devuelva un mensaje de error adecuado de [D3DERR](d3derr.md) o [**D3DXERR**](./d3dxerr.md).
+Los valores devueltos de este método los implementa un programador de aplicaciones. En general, si no se produce ningún error, programe el método para devolver D3D \_ OK. De lo contrario, programe el método para devolver un mensaje de error adecuado de [D3DERR](d3derr.md) o [**D3DXERR.**](./d3dxerr.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -101,8 +101,8 @@ Un programador de aplicaciones implementa los valores devueltos de este método.
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

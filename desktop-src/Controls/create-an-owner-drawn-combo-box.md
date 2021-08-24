@@ -1,40 +1,40 @@
 ---
-title: Cómo crear un Owner-Drawn cuadro combinado
+title: Cómo crear un cuadro combinado Owner-Drawn base de datos
 description: En este tema se muestra cómo usar un cuadro combinado dibujado por el propietario.
 ms.assetid: D866DE82-9734-4E8A-A366-5870C25B7C7B
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5355dd33fe0067165308e9e6e5885b76edbe7ceb
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: e90d82192e485e4f833157a1c3ab75e8e39446e1e80f7f9cc27baf5444b4e0bc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104078403"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119826475"
 ---
-# <a name="how-to-create-an-owner-drawn-combo-box"></a>Cómo crear un Owner-Drawn cuadro combinado
+# <a name="how-to-create-an-owner-drawn-combo-box"></a>Cómo crear un cuadro combinado Owner-Drawn base de datos
 
-En este tema se muestra cómo usar un cuadro combinado dibujado por el propietario. En el ejemplo de código de C++ se usa un cuadro de lista desplegable dibujado por el propietario para mostrar los cuatro grupos de alimentos, cada uno representado por un mapa de bits y un nombre. Al seleccionar un grupo de alimentos, los alimentos de ese grupo aparecen en una lista.
+En este tema se muestra cómo usar un cuadro combinado dibujado por el propietario. En el ejemplo de código de C++ se usa un cuadro de lista desplegable dibujado por el propietario para mostrar los cuatro grupos de alimentos, cada uno representado por un mapa de bits y un nombre. La selección de un grupo de alimentos hace que los alimentos de ese grupo aparezcan en una lista.
 
 ![captura de pantalla que muestra un cuadro de diálogo con un cuadro de lista y un cuadro de lista desplegable expandido que muestra un icono y una etiqueta para cada elemento](images/cscbx-01.png)
 
-El cuadro de diálogo también contiene un cuadro de lista (IDLIST) y dos botones: **Aceptar** (IDOK) y **Cancelar** (IDCANCEL). Los archivos de encabezado del SDK definen las constantes IDOK y IDCANCEL. La constante IDLIST se define en el archivo de encabezado de la aplicación, como es el identificador de control, IDCOMBO. Para obtener más información acerca de los cuadros de diálogo, vea [cuadros de diálogo](/windows/desktop/dlgbox/dialog-boxes).
+El cuadro de diálogo también contiene un cuadro de lista (IDLIST) y dos botones: **Aceptar** (IDOK) y **Cancelar** (IDCANCEL). Las constantes IDOK e IDCANCEL se definen mediante los archivos de encabezado del SDK. La constante IDLIST se define en el archivo de encabezado de la aplicación, al igual que el identificador de control, IDCOMBO. Para obtener más información sobre los cuadros de diálogo, vea [Cuadros de diálogo](/windows/desktop/dlgbox/dialog-boxes).
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="step-1-create-the-owner-drawn-dialog-box"></a>Paso 1: crear el cuadro de diálogo Owner-Drawn
+### <a name="step-1-create-the-owner-drawn-dialog-box"></a>Paso 1: Crear el cuadro de Owner-Drawn diálogo
 
-En el ejemplo de código se usa la función [**DialogBox**](/windows/desktop/api/winuser/nf-winuser-dialogboxa) para crear un cuadro de diálogo modal. La plantilla de cuadro de diálogo, IDD \_ SQMEAL, define los estilos de ventana, los botones y los identificadores de control para el cuadro combinado. El cuadro combinado de este ejemplo usa los [**estilos \_ CBS DROPDOWNLIST**](combo-box-styles.md), [**CBS \_ OWNERDRAWFIXED**](combo-box-styles.md), [**CBS \_ Sort**](combo-box-styles.md), [**CBS \_ HASSTRINGS**](combo-box-styles.md), [**WS \_ VSCROLL**](/windows/desktop/winmsg/window-styles)y [**WS \_ TABSTOP**](/windows/desktop/winmsg/window-styles) .
+En el ejemplo de código se usa [**la función DialogBox**](/windows/desktop/api/winuser/nf-winuser-dialogboxa) para crear un cuadro de diálogo modal. La plantilla de cuadro de diálogo IDD SQMEAL define los estilos de ventana, los botones y los identificadores de \_ control del cuadro combinado. El cuadro combinado de este ejemplo usa los estilos [**\_ CBS DROPDOWNLIST**](combo-box-styles.md), [**CBS \_ OWNERDRAWFIXED,**](combo-box-styles.md) [**CBS \_ SORT,**](combo-box-styles.md) [**CBS \_ HASSTRINGS,**](combo-box-styles.md) [**WS \_ VSCROLL**](/windows/desktop/winmsg/window-styles)y [**WS \_ TABSTOP.**](/windows/desktop/winmsg/window-styles)
 
 
 ```C++
@@ -44,13 +44,13 @@ DialogBox(hInst, MAKEINTRESOURCE(IDD_SQMEAL),
 
 
 
-### <a name="step-2-process-the-wm_initdialog-and-wm_destroy-messages-in-a-dialog-box"></a>Paso 2: procesar los \_ mensajes de WM INITDIALOG y WM \_ Destroy en un cuadro de diálogo.
+### <a name="step-2-process-the-wm_initdialog-and-wm_destroy-messages-in-a-dialog-box"></a>Paso 2: Procesar los mensajes WM \_ INITDIALOG y WM \_ DESTROY en un cuadro de diálogo.
 
-Cuando se usa un cuadro combinado en un cuadro de diálogo, normalmente se responde a un mensaje de [**\_ INITDIALOG de WM**](/windows/desktop/dlgbox/wm-initdialog) inicializando el cuadro combinado. La aplicación carga los mapas de bits utilizados para el cuadro combinado dibujado por el propietario y, a continuación, llama a la función definida por la aplicación `InitGroupList` para inicializar el cuadro combinado. También selecciona el primer elemento de la lista en el cuadro combinado y, a continuación, llama a la función definida por la aplicación `InitFoodList` para inicializar el cuadro de lista.
+Cuando se usa un cuadro combinado en un cuadro de diálogo, normalmente se responde a un mensaje [**WM \_ INITDIALOG**](/windows/desktop/dlgbox/wm-initdialog) inicializando el cuadro combinado. La aplicación carga los mapas de bits usados para el cuadro combinado dibujado por el propietario y, a continuación, llama a la función definida por la aplicación `InitGroupList` para inicializar el cuadro combinado. También selecciona el primer elemento de lista del cuadro combinado y, a continuación, llama a la función definida por la aplicación `InitFoodList` para inicializar el cuadro de lista.
 
-En el ejemplo, el cuadro combinado dibujado por el propietario es un cuadro de lista desplegable que contiene los nombres de cada uno de los cuatro grupos de alimentos. `InitGroupList` agrega el nombre de cada grupo de alimentos y usa el mensaje [**CB \_ SETITEMDATA**](cb-setitemdata.md) para asociar un identificador de mapa de bits a cada elemento de la lista que identifica un grupo de alimentos.
+En el ejemplo, el cuadro combinado dibujado por el propietario es un cuadro de lista desplegable que contiene los nombres de cada uno de los cuatro grupos de alimentos. `InitGroupList` agrega el nombre de cada grupo de alimentos y usa el mensaje [**\_ CB SETITEMDATA**](cb-setitemdata.md) para asociar un identificador de mapa de bits a cada elemento de lista que identifica un grupo de alimentos.
 
-El cuadro de lista del ejemplo contiene los nombres de los alimentos del grupo de alimentos seleccionado. **InitFoodList** restablece el contenido del cuadro de lista y, a continuación, agrega los nombres de la selección de alimentos actual en el cuadro de lista desplegable grupo de alimentos actual.
+El cuadro de lista del ejemplo contiene los nombres de los alimentos del grupo de alimentos seleccionado. **InitFoodList** restablece el contenido del cuadro de lista y, a continuación, agrega los nombres de la selección de alimentos actual en el cuadro de lista desplegable del grupo de alimentos actual.
 
 
 ```C++
@@ -76,7 +76,7 @@ case WM_INITDIALOG:
 
 
 
-Cuando recibe el mensaje [**de \_ destrucción de WM**](/windows/desktop/winmsg/wm-destroy) , la aplicación elimina los mapas de bits en el cuadro combinado dibujado por el propietario.
+Cuando recibe el mensaje [**WM \_ DESTROY,**](/windows/desktop/winmsg/wm-destroy) la aplicación elimina los mapas de bits del cuadro combinado dibujado por el propietario.
 
 
 ```C++
@@ -89,11 +89,11 @@ case WM_DESTROY:
 
 
 
-### <a name="step-3-process-the-wm_measureitem-message"></a>Paso 3: procesar el mensaje de MEASUREITEM de WM \_ .
+### <a name="step-3-process-the-wm_measureitem-message"></a>Paso 3: Procesar el mensaje \_ MEASUREITEM de WM.
 
-Un cuadro combinado dibujado por el propietario envía el mensaje de [**\_ MEASUREITEM de WM**](wm-measureitem.md) a su ventana primaria o procedimiento de cuadro de diálogo para que la aplicación pueda establecer las dimensiones de cada elemento de la lista. Dado que el cuadro combinado de ejemplo tiene el estilo de la [**INE de CBS \_**](combo-box-styles.md) , el sistema envía el mensaje de **WM \_ MEASUREITEM** una sola vez. Los cuadros combinados con el estilo [**CBS \_ OWNERDRAWVARIABLE**](combo-box-styles.md) envían un mensaje de **WM \_ MEASUREITEM** para cada elemento de lista.
+Un cuadro combinado dibujado por el propietario envía el mensaje [**\_ MEASUREITEM de WM**](wm-measureitem.md) a su ventana primaria o procedimiento de cuadro de diálogo para que la aplicación pueda establecer las dimensiones de cada elemento de lista. Dado que el cuadro combinado de ejemplo tiene el estilo [**\_ CBS OWNERDRAWFIXED,**](combo-box-styles.md) el sistema envía el **mensaje WM \_ MEASUREITEM** una sola vez. Los cuadros combinados con [**el \_ estilo CBS OWNERDRAWVARIABLE**](combo-box-styles.md) envían un **mensaje WM \_ MEASUREITEM** para cada elemento de lista.
 
-El parámetro *lParam* es un puntero a una estructura [**measureitemstruct (**](/windows/win32/api/winuser/ns-winuser-measureitemstruct) que identifica el control y el elemento de lista. También contiene las dimensiones predeterminadas del elemento de lista. En el ejemplo se modifica el miembro de la estructura **ItemHeight** para asegurarse de que los elementos de lista son lo suficientemente altos como para dar cabida a los mapas de bits del grupo de alimentos.
+El *parámetro lParam* es un puntero a una [**estructura MEASUREITEMSTRUCT**](/windows/win32/api/winuser/ns-winuser-measureitemstruct) que identifica el control y el elemento de lista. También contiene las dimensiones predeterminadas del elemento de lista. En el ejemplo se modifica el miembro de estructura **itemHeight** para asegurarse de que los elementos de lista son lo suficientemente altos como para alojar los mapas de bits del grupo de alimentos.
 
 
 ```C++
@@ -111,13 +111,13 @@ case WM_MEASUREITEM:
 
 
 
-### <a name="step-4-process-the-wm_drawitem-message"></a>Paso 4: procesar el mensaje de la DRAWITEM de WM \_ .
+### <a name="step-4-process-the-wm_drawitem-message"></a>Paso 4: Procesar el mensaje \_ DRAWITEM de WM.
 
-Un cuadro combinado dibujado por el propietario envía el mensaje de la aplicación de [**WM \_**](wm-drawitem.md) a su ventana primaria o al procedimiento del cuadro de diálogo cada vez que la aplicación debe volver a dibujar un elemento de lista. El parámetro *lParam* es un puntero a una estructura [**drawitemstruct (**](/windows/win32/api/winuser/ns-winuser-drawitemstruct) que identifica el control y el elemento de lista. También contiene información necesaria para pintar el elemento.
+Un cuadro combinado dibujado por el propietario envía el mensaje [**\_ DRAWITEM de WM**](wm-drawitem.md) a su ventana primaria o procedimiento de cuadro de diálogo cada vez que la aplicación debe volver a dibujar un elemento de lista. El *parámetro lParam* es un puntero a una [**estructura DRAWITEMSTRUCT**](/windows/win32/api/winuser/ns-winuser-drawitemstruct) que identifica el control y el elemento de lista. También contiene la información necesaria para pintar el elemento.
 
-En la aplicación de ejemplo se muestra el texto del elemento de lista y el mapa de bits asociado al grupo de alimentos. Si el elemento tiene el foco, también dibuja un rectángulo de foco. Antes de mostrar el texto, el ejemplo establece los colores de primer plano y de fondo, en función del elemento seleccionado. Dado que el cuadro combinado tiene el estilo [**CBS \_ HASSTRINGS**](combo-box-styles.md) , el cuadro combinado mantiene el texto de cada elemento de lista que se puede recuperar mediante el mensaje [**CB \_ GETLBTEXT**](cb-getlbtext.md) .
+La aplicación de ejemplo muestra el texto del elemento de lista y el mapa de bits asociado al grupo de alimentos. Si el elemento tiene el foco, también dibuja un rectángulo de foco. Antes de mostrar el texto, el ejemplo establece los colores de primer plano y de fondo, en función del elemento seleccionado. Dado que el cuadro combinado tiene el estilo [**\_ HASSTRINGS de CBS,**](combo-box-styles.md) el cuadro combinado mantiene el texto de cada elemento de lista que se puede recuperar mediante el mensaje [**\_ GETLBTEXT de CB.**](cb-getlbtext.md)
 
-Los mapas de bits utilizados para el elemento de lista dependen del grupo de alimentos. `InitGroupList` usa el mensaje [**CB \_ SETITEMDATA**](cb-setitemdata.md) para asociar un identificador de mapa de bits a cada elemento de la lista. El procedimiento de ventana recupera el identificador de mapa de bits del miembro **itemData** de la estructura [**drawitemstruct (**](/windows/win32/api/winuser/ns-winuser-drawitemstruct) . El sistema utiliza dos mapas de bits para cada símbolo de grupo de alimentos: un mapa de bits monocromo con la operación de SRCAND Raster para borrar la región irregular detrás de la imagen y un mapa de bits de color con la operación de SRCPAINT Raster para pintar la imagen.
+Los mapas de bits usados para el elemento de lista dependen del grupo de alimentos. `InitGroupList` usa el [**mensaje CB \_ SETITEMDATA para**](cb-setitemdata.md) asociar un identificador de mapa de bits a cada elemento de lista. El procedimiento de ventana recupera el identificador de mapa de bits del **miembro itemData** de la [**estructura DRAWITEMSTRUCT.**](/windows/win32/api/winuser/ns-winuser-drawitemstruct) El sistema usa dos mapas de bits para cada símbolo de grupo de alimentos: un mapa de bits monocromo con la operación de trama SRCAND para borrar la región irregular detrás de la imagen y un mapa de bits de color con la operación de trama SRCPAINT para pintar la imagen.
 
 
 ```C++
@@ -196,17 +196,17 @@ case WM_DRAWITEM:
 
 
 
-### <a name="step-5-process-the-wm_command-message"></a>Paso 5: procesar el mensaje del comando de WM \_ .
+### <a name="step-5-process-the-wm_command-message"></a>Paso 5: Procesar el mensaje \_ WM COMMAND.
 
-Cuando se produce un evento en un control de cuadro de diálogo, el control notifica el procedimiento de cuadro de diálogo por medio de un mensaje de [**\_ comando de WM**](/windows/desktop/menurc/wm-command) . En el ejemplo se procesan los mensajes de notificación desde el cuadro combinado, el cuadro de lista y el botón **Aceptar** . El identificador de control está en la palabra de orden inferior de *wParam* y el código de notificación está en la palabra de orden superior de *wParam*.
+Cuando se produce un evento en un control de cuadro de diálogo, el control notifica al procedimiento del cuadro de diálogo mediante un [**mensaje \_ WM COMMAND.**](/windows/desktop/menurc/wm-command) En el ejemplo se procesa los mensajes de notificación desde el cuadro combinado, el cuadro de lista y el **botón** Aceptar. El identificador de control está en la palabra de orden bajo *de wParam* y el código de notificación está en la palabra de orden superior *de wParam*.
 
-Si el identificador del control es IDCOMBO, se ha producido un evento en el cuadro combinado. En respuesta, el procedimiento de cuadro de diálogo omite todos los demás eventos de cuadro combinado excepto [**CBN \_ SELENDOK**](cbn-selendok.md), que indica que se ha realizado una selección, el cuadro de lista desplegable se ha cerrado y se deben aceptar los cambios realizados. El procedimiento de cuadro de diálogo llama `InitFoodList` a para restablecer el contenido del cuadro de lista y para agregar los nombres de las selecciones actuales en el cuadro de lista desplegable.
+Si el identificador de control es IDCOMBO, se ha producido un evento en el cuadro combinado. En respuesta, el procedimiento del cuadro de diálogo omite todos los demás eventos de cuadro combinado excepto [**CBN \_ SELENDOK,**](cbn-selendok.md)lo que indica que se realizó una selección, que se cerró el cuadro de lista desplegable y que se deben aceptar los cambios realizados. El procedimiento del cuadro de diálogo llama a para restablecer el contenido del cuadro de lista y para agregar los nombres de las selecciones actuales en el `InitFoodList` cuadro de lista desplegable.
 
-Si el identificador del control es IDLIST, se ha producido un evento en el cuadro de lista. Esto hace que el procedimiento de cuadro de diálogo omita todos los eventos de cuadro de lista excepto [**LBN \_ DBLCLK**](lbn-dblclk.md), lo que indica que el usuario ha haga doble clic en un elemento de lista. Este evento se procesa de la misma manera que si se hubiese elegido un botón **Aceptar** .
+Si el identificador de control es IDLIST, se ha producido un evento en el cuadro de lista. Esto hace que el procedimiento del cuadro de diálogo ignore todos los eventos de cuadro de lista excepto [**LBN \_ DBLCLK**](lbn-dblclk.md), lo que indica que el usuario ha hecho doble clic en un elemento de lista. Este evento se procesa de la  misma manera que si se hubiera elegido un botón Aceptar.
 
-Si el identificador del control es IDOK, el usuario ha elegido el botón **Aceptar** . En respuesta, el procedimiento de cuadro de diálogo inserta el nombre del alimento seleccionado en el control de edición multilínea de la aplicación y, a continuación, llama a la función [**EndDialog**](/windows/desktop/api/winuser/nf-winuser-enddialog) para cerrar el cuadro de diálogo.
+Si el identificador de control es IDOK, el usuario ha elegido el **botón** Aceptar. En respuesta, el procedimiento del cuadro de diálogo inserta el nombre de la comida seleccionada en el control de edición de varias líneas de la aplicación y, a continuación, llama a la [**función EndDialog**](/windows/desktop/api/winuser/nf-winuser-enddialog) para cerrar el cuadro de diálogo.
 
-Si el identificador del control es IDCANCEL, el usuario hizo clic en el botón **Cancelar** . En respuesta, el procedimiento de cuadro de diálogo llama a [**EndDialog**](/windows/desktop/api/winuser/nf-winuser-enddialog) para cerrar el cuadro de diálogo.
+Si el identificador de control es IDCANCEL, el usuario ha hecho clic en el **botón** Cancelar. En respuesta, el procedimiento del cuadro de diálogo llama [**a EndDialog**](/windows/desktop/api/winuser/nf-winuser-enddialog) para cerrar el cuadro de diálogo.
 
 
 ```C++
@@ -256,7 +256,7 @@ case WM_COMMAND:
 
 ## <a name="complete-example"></a>Ejemplo completo
 
-A continuación, se indican el procedimiento de cuadro de diálogo y las funciones auxiliares para el cuadro de diálogo **comida cuadrada** .
+A continuación se muestra el procedimiento del cuadro de diálogo y las funciones de apoyo para el **cuadro de diálogo Menú** cuadrado.
 
 
 ```C++
@@ -589,6 +589,6 @@ void DeleteIconBitmaps(void)
 [Usar cuadros combinados](using-combo-boxes.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

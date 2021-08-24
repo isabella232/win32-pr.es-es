@@ -1,30 +1,30 @@
 ---
-title: Propiedad SecuredSettingsEnabled de IMsTscAx
-description: Indica si la interfaz IMsTscSecuredSettings está disponible. Es decir, si la página web que contiene el control está actualmente en una de las zonas de seguridad de direcciones URL permitidas de Internet Explorer.
+title: Propiedad IMsTscAx SecuredSettingsEnabled
+description: Indica si la interfaz IMsTscSecuredSettings está disponible. Es decir, si la página web que contiene el control se encuentra actualmente en una de las zonas de seguridad Internet Explorer URL permitidas.
 ms.assetid: 0747eab0-9d62-4c10-b02d-fc65ca2f752e
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad SecuredSettingsEnabled
-- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto, interfaz IMsTscAx
-- Servicios de Escritorio remoto de la interfaz IMsTscAx, propiedad SecuredSettingsEnabled
-- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto, interfaz IMsRdpClient
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient, propiedad SecuredSettingsEnabled
-- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto, interfaz IMsRdpClient2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient2, propiedad SecuredSettingsEnabled
-- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto, interfaz IMsRdpClient3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient3, propiedad SecuredSettingsEnabled
-- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto, interfaz IMsRdpClient4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient4, propiedad SecuredSettingsEnabled
-- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto, interfaz IMsRdpClient5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient5, propiedad SecuredSettingsEnabled
-- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto, interfaz IMsRdpClient6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient6, propiedad SecuredSettingsEnabled
-- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto, interfaz IMsRdpClient7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient7, propiedad SecuredSettingsEnabled
-- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto, interfaz IMsRdpClient8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient8, propiedad SecuredSettingsEnabled
-- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto, interfaz IMsRdpClient9
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient9, propiedad SecuredSettingsEnabled
+- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto
+- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto interfaz , IMsTscAx
+- Interfaz IMsTscAx Servicios de Escritorio remoto propiedad , SecuredSettingsEnabled
+- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto interfaz , IMsRdpClient
+- Interfaz IMsRdpClient Servicios de Escritorio remoto , propiedad SecuredSettingsEnabled
+- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto interfaz , IMsRdpClient2
+- Interfaz IMsRdpClient2 Servicios de Escritorio remoto , propiedad SecuredSettingsEnabled
+- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto interfaz , IMsRdpClient3
+- Interfaz IMsRdpClient3 Servicios de Escritorio remoto propiedad , SecuredSettingsEnabled
+- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto interfaz , IMsRdpClient4
+- Interfaz IMsRdpClient4 Servicios de Escritorio remoto propiedad , SecuredSettingsEnabled
+- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto interfaz , IMsRdpClient5
+- Interfaz IMsRdpClient5 Servicios de Escritorio remoto propiedad , SecuredSettingsEnabled
+- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto interfaz , IMsRdpClient6
+- Interfaz IMsRdpClient6 Servicios de Escritorio remoto propiedad , SecuredSettingsEnabled
+- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto interfaz , IMsRdpClient7
+- Interfaz IMsRdpClient7 Servicios de Escritorio remoto propiedad , SecuredSettingsEnabled
+- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto interfaz , IMsRdpClient8
+- Interfaz IMsRdpClient8 Servicios de Escritorio remoto , propiedad SecuredSettingsEnabled
+- Propiedad SecuredSettingsEnabled Servicios de Escritorio remoto interfaz , IMsRdpClient9
+- Interfaz IMsRdpClient9 Servicios de Escritorio remoto propiedad , SecuredSettingsEnabled
 topic_type:
 - apiref
 api_name:
@@ -54,16 +54,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: de0601ac64ab0ca55f3d92ec460861a4347f70b7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dc03fb9cff3a99d77006989b7adade40a15ad4bb4d63e6f940092b765b1e250f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676928"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119771065"
 ---
-# <a name="imstscaxsecuredsettingsenabled-property"></a>IMsTscAx:: SecuredSettingsEnabled (propiedad)
+# <a name="imstscaxsecuredsettingsenabled-property"></a>Propiedad IMsTscAx::SecuredSettingsEnabled
 
-Indica si la interfaz [**IMsTscSecuredSettings**](imstscsecuredsettings-interface.md) está disponible. Es decir, si la página web que contiene el control está actualmente en una de las zonas de seguridad de direcciones URL permitidas de Internet Explorer.
+Indica si la [**interfaz IMsTscSecuredSettings**](imstscsecuredsettings-interface.md) está disponible. Es decir, si la página web que contiene el control se encuentra actualmente en una de las zonas de seguridad Internet Explorer URL permitidas.
 
 Esta propiedad es de solo lectura.
 
@@ -80,25 +80,25 @@ HRESULT get_SecuredSettingsEnabled(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El valor de este parámetro es **true** si la interfaz está disponible y **false** en caso contrario.
+El valor de este parámetro es **TRUE si** la interfaz está disponible y **FALSE** en caso contrario.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Utilice este método para consultar si la interfaz [**IMsTscSecuredSettings**](imstscsecuredsettings-interface.md) está disponible antes de recuperar la propiedad [**SecuredSettings**](imstscax-securedsettings.md) .
+Use este método para consultar si la [**interfaz IMsTscSecuredSettings**](imstscsecuredsettings-interface.md) está disponible antes de recuperar la [**propiedad SecuredSettings.**](imstscax-securedsettings.md)
 
-Consulte [proporcionar seguridad de cliente RDP](providing-for-rdp-client-security.md) para obtener una lista de zonas de seguridad de direcciones URL restringidas.
+Consulte Proporcionar [seguridad de cliente RDP](providing-for-rdp-client-security.md) para obtener una lista de zonas de seguridad de direcciones URL restringidas.
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |

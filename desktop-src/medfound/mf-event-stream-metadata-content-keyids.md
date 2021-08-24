@@ -1,23 +1,23 @@
 ---
-description: Especifica los identificadores de clave de contenido.
+description: Especifica los IDs de clave de contenido.
 ms.assetid: 886127A1-7612-40FE-8BE7-EA90708E41DA
-title: MF_EVENT_STREAM_METADATA_CONTENT_KEYIDS atributo (mfapi. h)
+title: MF_EVENT_STREAM_METADATA_CONTENT_KEYIDS atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc59a0f864da884e668df69d4fb29d71bc2eb134
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0391bc56261dbfd66133b02b224001639669aede3822be9734abb136a8b8acb6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119826645"
 ---
-# <a name="mf_event_stream_metadata_content_keyids-attribute"></a>\_ \_ \_ \_ KEYIDS atributo de contenido de metadatos de flujo de eventos MF \_
+# <a name="mf_event_stream_metadata_content_keyids-attribute"></a>Atributo \_ \_ \_ KEYIDS DE CONTENT \_ DE \_ METADATOS DE MF EVENT STREAM
 
-Especifica los identificadores de clave de contenido.
+Especifica los IDs de clave de contenido.
 
 ## <a name="data-type"></a>Tipo de datos
 
-**BLOB**
+**Blob**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -25,9 +25,9 @@ Especifica los identificadores de clave de contenido.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Aplicaciones \[ para UWP de Windows 8.1 Desktop apps \|\]<br/>                                |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2012 R2 \|\]<br/>                     |
-| Encabezado<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Aplicaciones de \[ escritorio R2 \| aplicaciones para UWP\]<br/>                     |
+| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -35,7 +35,7 @@ Especifica los identificadores de clave de contenido.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

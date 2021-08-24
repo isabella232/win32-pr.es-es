@@ -9,18 +9,18 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: c6d94906fa8c0debfa1ee49d95f5acd47aea2526
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8d35f09a10cc88ae3873a507b6fa7000812503890240ce0b808ffecc84f23fd8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984590"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119883955"
 ---
 # <a name="foldertype-element-library-schema"></a>Elemento folderType (esquema de biblioteca)
 
 El <folderType> elemento especifica un GUID para el tipo de carpeta. Este elemento es necesario si el <templateInfo> elemento existe; de lo contrario, es opcional. Este elemento no tiene atributos ni elementos secundarios.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```
@@ -48,9 +48,9 @@ El <folderType> elemento especifica un GUID para el tipo de carpeta. Este elemen
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La configuración de un tipo de carpeta determina las columnas y los detalles que aparecen en el explorador de Windows de forma predeterminada. Los identificadores de tipo de carpeta ([**FOLDERTYPEID**](foldertypeid.md)) son GUID definidos en Shlguid. h. En la tabla siguiente se enumeran los GUID de tipos de carpetas comunes.
+Establecer un tipo de carpeta determina las columnas y los detalles que aparecen en Windows Explorer de forma predeterminada. Los identificadores de tipo de carpeta [**(FOLDERTYPEID)**](foldertypeid.md)son GUID definidos en Shlguid.h. En la tabla siguiente se enumeran los GUID de los tipos de carpeta comunes.
 
 
 
@@ -58,11 +58,11 @@ La configuración de un tipo de carpeta determina las columnas y los detalles qu
 |------------------|----------------------------------------|
 | Biblioteca genérica  | {5f4eab9a-6833-4f61-899d-31cf46979d49} |
 | Bibliotecas de usuarios  | {C4D98F09-6124-4fe0-9942-826416082DA9} |
-| Carpeta documentos | {7D49D726-3C21-4F05-99AA-FDC2C9474656} |
-| Carpeta imágenes  | {B3690E58-E961-423B-B687-386EBFD83239} |
-| Carpeta de vídeos    | {5fa96407-7e77-483c-ac93-691d05850de8} |
+| Carpeta Documentos | {7D49D726-3C21-4F05-99AA-FDC2C9474656} |
+| Carpeta Imágenes  | {B3690E58-E961-423B-B687-386EBFD83239} |
+| Carpeta Vídeos    | {5fa96407-7e77-483c-ac93-691d05850de8} |
 | Carpeta Juegos     | {b689b0d0-76d3-4cbb-87f7-585d0e0ce070} |
-| Carpeta música     | {94d6ddcc-4a68-4175-a374-bd584a510b78} |
+| Música Carpeta     | {94d6ddcc-4a68-4175-a374-bd584a510b78} |
 | Contactos         | {DE2B70EC-9BF7-4A93-BD3D-243F7881D492} |
 
 
@@ -82,25 +82,25 @@ La configuración de un tipo de carpeta determina las columnas y los detalles qu
 [Elemento libraryDescription (esquema de biblioteca)](schema-librarydescription.md)
 </dt> <dt>
 
-[Name (elemento, esquema de biblioteca)](schema-library-name.md)
+[elemento name (Esquema de biblioteca)](schema-library-name.md)
 </dt> <dt>
 
-[Elemento ownerSID (esquema de biblioteca)](schema-library-ownersid.md)
+[elemento ownerSID (esquema de biblioteca)](schema-library-ownersid.md)
 </dt> <dt>
 
-[Elemento propertyStore (esquema de biblioteca)](schema-library-propertystore.md)
+[elemento propertyStore (esquema de biblioteca)](schema-library-propertystore.md)
 </dt> <dt>
 
-[Elemento searchConnectorDescription (esquema de biblioteca)](schema-library-searchconnectordescription.md)
+[elemento searchConnectorDescription (esquema de biblioteca)](schema-library-searchconnectordescription.md)
 </dt> <dt>
 
-[Elemento searchConnectorDescriptionList (esquema de biblioteca)](schema-library-searchconnectordescriptionlist.md)
+[elemento searchConnectorDescriptionList (esquema de biblioteca)](schema-library-searchconnectordescriptionlist.md)
 </dt> <dt>
 
 [Elemento templateInfo (esquema de biblioteca)](schema-library-templateinfo.md)
 </dt> <dt>
 
-[version (elemento, esquema de biblioteca)](schema-library-version.md)
+[elemento version (esquema de biblioteca)](schema-library-version.md)
 </dt> </dl>
 
  

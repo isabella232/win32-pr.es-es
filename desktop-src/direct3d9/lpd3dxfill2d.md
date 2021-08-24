@@ -4,12 +4,12 @@ ms.assetid: faa2d610-cf85-42d0-833c-a46fb7fe3dbf
 title: LPD3DXFILL2D
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c341ccfcbcc566d65e7139813c676e2286e25cf
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: 3b6d1407d5b6ebad18f748d5e4ba78953ad6ca543aa6df7b798aa242658a0512
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110342850"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119846495"
 ---
 # <a name="lpd3dxfill2d"></a>LPD3DXFILL2D
 
@@ -35,9 +35,9 @@ pOut: puntero a un vector, que la función usa para devolver su resultado. X, Y,
 
 pTexCoord: puntero a un vector que contiene las coordenadas del texel que se está evaluando actualmente. Los componentes de coordenadas de textura para texturas y texturas de volumen oscilan entre 0 y 1. Los componentes de coordenadas de textura para texturas de cubo oscilan entre -1 y 1.
 
-pTexelSize: puntero a un vector que contiene las dimensiones del texel actual.
+pTexelSize: puntero a un vector que contiene las dimensiones del elemento de textura actual.
 
-pData: puntero a los datos de usuario.
+pData: puntero a los datos del usuario.
 
 ## <a name="return-value"></a>Valor devuelto
 
@@ -45,7 +45,7 @@ No de devuelve ningún valor.
 
 ## <a name="remarks"></a>Comentarios
 
-Asegúrese de especificar la convención de llamada tipos de datos de [**Windows**](../winprog/windows-data-types.md) al declarar la función de devolución de llamada. De lo contrario, pueden producirse desbordamientos de pila.
+Asegúrese de especificar la convención de llamada [**Windows de llamada de tipos**](../winprog/windows-data-types.md) de datos al declarar la función de devolución de llamada. De lo contrario, pueden producirse desbordamientos de pila.
 
 
 

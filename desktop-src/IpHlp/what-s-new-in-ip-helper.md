@@ -1,50 +1,50 @@
 ---
-description: Novedades de la aplicación auxiliar de IP
+description: Novedades del asistente de IP
 ms.assetid: fa9d72d0-2f9c-433d-b05a-8423664b2e3e
-title: Novedades de la aplicación auxiliar de IP
+title: Novedades del asistente de IP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c2c1a6eebb3e9e785e8988b822df0b2a80ae6eba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3141797e96442f34a94c2d2afc37585ce6dbc944e7fb35cf9b4602afa042c95a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361402"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119897625"
 ---
-# <a name="whats-new-in-ip-helper"></a>Novedades de la aplicación auxiliar de IP
+# <a name="whats-new-in-ip-helper"></a>Novedades del asistente de IP
 
 ## <a name="windows-8-and-windows-server-2012"></a>Windows 8 y Windows Server 2012
 
-Se han agregado las siguientes características a las API auxiliares de IP en Windows 8 y Windows Server 2012.
+Se han agregado las siguientes características a las API del asistente de IP en Windows 8 y Windows Server 2012.
 
-Función que recupera las estimaciones históricas de ancho de banda para una conexión de red. Para más información, consulte:
+Función que recupera las estimaciones de ancho de banda históricas para una conexión de red. Para más información, consulte:
 
 -   [**GetIpNetworkConnectionBandwidthEstimates**](/windows/desktop/api/Netioapi/nf-netioapi-getipnetworkconnectionbandwidthestimates)
 
-Estructura que contiene información sobre las estimaciones de ancho de banda disponibles y la desviación asociada según lo determinado por la pila TCP/IP. Para más información, consulte:
+Estructura que contiene información sobre las estimaciones de ancho de banda disponibles y la varianza asociada determinada por la pila TCP/IP. Para más información, consulte:
 
--   [**\_información de ancho de banda nl \_**](/windows/desktop/api/Nldef/ns-nldef-nl_bandwidth_information)
+-   [**INFORMACIÓN DE \_ ANCHO DE BANDA DE \_ NL**](/windows/desktop/api/Nldef/ns-nldef-nl_bandwidth_information)
 
 ## <a name="windows-7-and-windows-server-2008-r2"></a>Windows 7 y Windows Server 2008 R2
 
-Se han agregado las siguientes características a las API auxiliares de IP en Windows 7 y Windows Server 2008 R2.
+Se han agregado las siguientes características a las API del asistente de IP en Windows 7 y Windows Server 2008 R2.
 
-Funciones que convierten una dirección Ethernet entre un formato binario y el formato de cadena de la dirección MAC de Ethernet. Para más información, consulte:
+Funciones que convierten una dirección Ethernet entre un formato binario y un formato de cadena para la dirección MAC Ethernet. Para más información, consulte:
 
 -   [**RtlEthernetAddressToString**](/windows/desktop/api/ip2string/nf-ip2string-rtlethernetaddresstostringa)
 -   [**RtlEthernetStringToAddress**](/windows/desktop/api/ip2string/nf-ip2string-rtlethernetstringtoaddressa)
 
 ## <a name="windows-server-2008-and-windows-vista-sp1"></a>Windows Server 2008 y Windows Vista SP1
 
-Se han agregado las siguientes funciones a las API auxiliares de IP en Windows Server 2008 y Windows Vista con Service Pack 1 (SP1).
+Se han agregado las siguientes funciones a las API del asistente de IP en Windows Server 2008 y Windows Vista con Service Pack 1 (SP1).
 
-Función que funciona con IPv4 y el protocolo de mensajes de control de Internet (ICMP). Para más información, consulte:
+Función que funciona con IPv4 y el Protocolo de mensajes de control de Internet (ICMP). Para más información, consulte:
 
 -   [**IcmpSendEcho2Ex**](/windows/desktop/api/Icmpapi/nf-icmpapi-icmpsendecho2ex)
 
 ## <a name="windows-vista"></a>Windows Vista
 
-Los siguientes grupos de funciones se han agregado a las API auxiliares de IP en Windows Vista y versiones posteriores.
+Los siguientes grupos de funciones se han agregado a las API del asistente de IP en Windows Vista y versiones posteriores.
 
 Funciones que funcionan con IPv6 e IPv4 para la conversión de interfaz. Para más información, consulte:
 
@@ -57,8 +57,8 @@ Funciones que funcionan con IPv6 e IPv4 para la conversión de interfaz. Para m�
 -   [**ConvertInterfaceLuidToNameW**](/windows/desktop/api/Netioapi/nf-netioapi-convertinterfaceluidtonamew)
 -   [**ConvertInterfaceNameToLuidA**](/windows/desktop/api/Netioapi/nf-netioapi-convertinterfacenametoluida)
 -   [**ConvertInterfaceNameToLuidW**](/windows/desktop/api/Netioapi/nf-netioapi-convertinterfacenametoluidw)
--   [**Si \_ indextoname**](/windows/desktop/api/Netioapi/nf-netioapi-if_indextoname)
--   [**Si \_ nametoindex**](/windows/desktop/api/Netioapi/nf-netioapi-if_nametoindex)
+-   [**if \_ indextoname**](/windows/desktop/api/Netioapi/nf-netioapi-if_indextoname)
+-   [**if \_ nametoindex**](/windows/desktop/api/Netioapi/nf-netioapi-if_nametoindex)
 
 Funciones que funcionan con IPv6 e IPv4 para la administración de interfaces. Para más información, consulte:
 
@@ -88,11 +88,11 @@ Funciones que funcionan con IPv6 e IPv4 para la administración de direcciones I
 -   [**NotifyStableUnicastIpAddressTable**](/windows/desktop/api/Netioapi/nf-netioapi-notifystableunicastipaddresstable)
 -   [**SetUnicastIpAddressEntry**](/windows/desktop/api/Netioapi/nf-netioapi-setunicastipaddressentry)
 
-Función que funciona con IPv6 e IPv4 para la administración de memoria de tablas IP. Para más información, consulte:
+Función que funciona con IPv6 e IPv4 para la administración de memoria de tabla IP. Para más información, consulte:
 
 -   [**FreeMibTable**](/windows/desktop/api/Netioapi/nf-netioapi-freemibtable)
 
-Funciones que funcionan con IPv6 e IPv4 para la administración de direcciones de vecino IP. Para más información, consulte:
+Funciones que funcionan con IPv6 e IPv4 para la administración de direcciones ip de vecino. Para más información, consulte:
 
 -   [**CreateIpNetEntry2**](/windows/desktop/api/Netioapi/nf-netioapi-createipnetentry2)
 -   [**DeleteIpNetEntry2**](/windows/desktop/api/Netioapi/nf-netioapi-deleteipnetentry2)
@@ -134,27 +134,27 @@ Funciones de utilidad que funcionan con direcciones IP. Para más información, 
 -   [**CreateSortedAddressPairs**](/windows/desktop/api/Netioapi/nf-netioapi-createsortedaddresspairs)
 -   [**ParseNetworkString**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-parsenetworkstring)
 
-Funciones que funcionan con el protocolo de control de transmisión (TCP) y el protocolo de datagramas de usuario (UDP) para recuperar la tabla de conexión TCP IPv6 o IPv4 o la tabla de escucha de UDP. Para más información, consulte:
+Funciones que funcionan con el Protocolo de control de transmisión (TCP) y el Protocolo de datagramas de usuario (UDP) para recuperar la tabla de conexión TCP IPv6 o IPv4 o la tabla de escucha UDP. Para más información, consulte:
 
 -   [**GetTcp6Table**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-gettcp6table)
 -   [**GetTcp6Table2**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-gettcp6table2)
 -   [**GetTcpTable2**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-gettcptable2)
 -   [**GetUdp6Table**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getudp6table)
 
-Funciones que funcionan con el protocolo de control de transmisión (TCP) para recuperar estadísticas TCP extendidas en una conexión. Para más información, consulte:
+Funciones que funcionan con el Protocolo de control de transmisión (TCP) para recuperar estadísticas TCP extendidas en una conexión. Para más información, consulte:
 
 -   [**GetPerTcp6ConnectionEStats**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getpertcp6connectionestats)
 -   [**GetPerTcpConnectionEStats**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getpertcpconnectionestats)
 -   [**SetPerTcp6ConnectionEStats**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-setpertcp6connectionestats)
 -   [**SetPerTcpConnectionEStats**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-setpertcpconnectionestats)
 
-Nuevas funciones que funcionan para la administración de clientes IPv6 Teredo. Para más información, consulte:
+Nuevas funciones que funcionan para la administración de cliente IPv6 de Teredo. Para más información, consulte:
 
 -   [**GetTeredoPort**](/windows/desktop/api/Netioapi/nf-netioapi-getteredoport)
 -   [**NotifyTeredoPortChange**](/windows/desktop/api/Netioapi/nf-netioapi-notifyteredoportchange)
 -   [**NotifyStableUnicastIpAddressTable**](/windows/desktop/api/Netioapi/nf-netioapi-notifystableunicastipaddresstable)
 
-Funciones de utilidad que proporcionan conversiones entre las direcciones IP y las representaciones de cadena de direcciones IP. Para más información, consulte:
+Funciones de utilidad que proporcionan conversiones entre direcciones IP y representaciones de cadena de direcciones IP. Para más información, consulte:
 
 -   [**RtlIpv4AddressToString**](/windows/desktop/api/ip2string/nf-ip2string-rtlipv4addresstostringa)
 -   [**RtlIpv4AddressToStringEx**](/windows/desktop/api/ip2string/nf-ip2string-rtlipv4addresstostringexw)
@@ -176,14 +176,14 @@ Funciones que proporcionan reservas persistentes para un bloque consecutivo de p
 
 ## <a name="windows-server-2003"></a>Windows Server 2003
 
-Se han agregado las siguientes funciones a las API auxiliares de IP en Windows Server 2003 y versiones posteriores:
+Se han agregado las siguientes funciones a las API del asistente de IP en Windows Server 2003 y versiones posteriores:
 
 -   [**CancelSecurityHealthChangeNotify**](/previous-versions/windows/desktop/legacy/bb442512(v=vs.85))
 -   [**NotifySecurityHealthChange**](/previous-versions/windows/desktop/legacy/bb451761(v=vs.85))
 
 ## <a name="windows-xp-sp2"></a>Windows XP SP2
 
-Las siguientes funciones se han agregado a las API auxiliares de IP en Windows XP con Service Pack 2 (SP2) y versiones posteriores:
+Se han agregado las siguientes funciones a las API del asistente de IP en Windows XP con Service Pack 2 (SP2) y versiones posteriores:
 
 -   [**GetOwnerModuleFromTcpEntry**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getownermodulefromtcpentry)
 -   [**GetOwnerModuleFromTcp6Entry**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getownermodulefromtcp6entry)

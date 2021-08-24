@@ -1,7 +1,7 @@
 ---
-description: Establece un puntero a una función de devolución de llamada opcional que calcula el porcentaje de cálculos armónicos esférico (SH) completado y proporciona al llamador la opción de anular el simulador.
+description: Establece un puntero a una función de devolución de llamada opcional que calcula el porcentaje de cálculos armónicos esféricos (SH) completados y ofrece al autor de la llamada la opción de anular el simulador.
 ms.assetid: 0a47610d-fa4e-4094-9adb-4fd9306b8a12
-title: 'ID3DXPRTEngine:: SetCallBack (método) (D3DX9Mesh. h)'
+title: Método ID3DXPRTEngine::SetCallBack (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e9c2cfe710bc41ff71267e381fa0bf576688f9df
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e1ed2570c45380ce4faa0be42ddb9231d6420940dd9a6d669d6f2540154dc644
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707953"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119847365"
 ---
-# <a name="id3dxprtenginesetcallback-method"></a>ID3DXPRTEngine:: SetCallBack (método)
+# <a name="id3dxprtenginesetcallback-method"></a>Método ID3DXPRTEngine::SetCallBack
 
-Establece un puntero a una función de devolución de llamada opcional que calcula el porcentaje de cálculos armónicos esférico (SH) completado y proporciona al llamador la opción de anular el simulador.
+Establece un puntero a una función de devolución de llamada opcional que calcula el porcentaje de cálculos armónicos esféricos (SH) completados y ofrece al autor de la llamada la opción de anular el simulador.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,30 +42,30 @@ HRESULT SetCallBack(
 
 <dl> <dt>
 
-*pCB* \[ de\]
+*pCB* \[ En\]
 </dt> <dd>
 
 Tipo: **[LPD3DXSHPRTSIMCB](lpd3dxshprtsimcb.md)**
 
-Puntero a la función de devolución de llamada [LPD3DXSHPRTSIMCB](lpd3dxshprtsimcb.md) que calcula el porcentaje de los cálculos de SH completados. La función de devolución de llamada se debe implementar para que se devuelvan \_ los elementos correctos para seguir ejecutando el simulador. Cualquier otro valor anulará el simulador.
+Puntero a la [función de devolución de llamada LPD3DXSHPRTSIMCB](lpd3dxshprtsimcb.md) que calcula el porcentaje de cálculos SH completados. La función de devolución de llamada debe implementarse para devolver S \_ OK para seguir ejecutando el simulador. Cualquier otro valor anulará el simulador.
 
 </dd> <dt>
 
-*Frecuencia* \[ de\]
+*Frecuencia* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Frecuencia de llamadas de devolución de llamada. El inverso de Frequency es aproximadamente el número de veces que se llamará a la función de devolución de llamada.
 
 </dd> <dt>
 
-*lpUserContext* \[ de\]
+*lpUserContext* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPVOID**](../winprog/windows-data-types.md)**
 
-Puntero a un valor definido por el usuario que se pasa a la función de devolución de llamada. Lo suele usar una aplicación para pasar un puntero a una estructura de datos que proporciona información de contexto para la función de devolución de llamada.
+Puntero a un valor definido por el usuario que se pasa a la función de devolución de llamada. Normalmente lo usa una aplicación para pasar un puntero a una estructura de datos que proporciona información de contexto para la función de devolución de llamada.
 
 </dd> </dl>
 
@@ -81,8 +81,8 @@ El valor devuelto es S \_ OK.
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -1,49 +1,49 @@
 ---
-title: Referencia de API de redirección de medios RemoteFX
-description: Los terceros usan la API de redirección de medios RemoteFX para implementar los requisitos del servidor para admitir un canal virtual de RemoteFX.
+title: RemoteFX Referencia de la API de redireccionamiento multimedia
+description: La REMOTEFX media redirection API es utilizada por terceros para implementar los requisitos del lado servidor para admitir un RemoteFX virtual.
 ms.assetid: 927b3c17-4ac3-4640-8042-648a283abe64
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b23612d0ca417783837bdf95e3d22f34052ff6a6
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 13c89f89f10b88b9b92ab2f561ce8771c2d8148d3a13d08265257cdedd06c008
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105685648"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119865755"
 ---
-# <a name="remotefx-media-redirection-api-reference"></a>Referencia de API de redirección de medios RemoteFX
+# <a name="remotefx-media-redirection-api-reference"></a>RemoteFX Referencia de la API de redireccionamiento multimedia
 
-Los terceros usan la API de redirección de medios RemoteFX para implementar los requisitos del servidor para admitir un canal virtual de RemoteFX. Para obtener más información, vea los temas siguientes:
+La REMOTEFX media redirection API es utilizada por terceros para implementar los requisitos del lado servidor para admitir un RemoteFX virtual. Para obtener más información, vea los temas siguientes:
 
 ## <a name="in-this-section"></a>En esta sección
 
 <dl> <dt>
 
-[Funciones de la API de redirección de medios RemoteFX](remotefx-media-redirection-api-functions.md)
+[RemoteFX Funciones de la API de redireccionamiento multimedia](remotefx-media-redirection-api-functions.md)
 </dt> <dd>
 
-La API de redirección de medios RemoteFX admite las siguientes funciones.
+La API RemoteFX redireccionamiento multimedia admite las siguientes funciones.
 
 </dd> <dt>
 
-[Interfaces de API de redirección de medios RemoteFX](remotefx-media-redirection-api-interfaces.md)
+[RemoteFX Interfaces de la API de redireccionamiento multimedia](remotefx-media-redirection-api-interfaces.md)
 </dt> <dd>
 
-La API de redirección de medios RemoteFX admite las siguientes interfaces.
+La API RemoteFX redireccionamiento multimedia admite las interfaces siguientes.
 
 </dd> <dt>
 
-[Estructuras de API de redirección de medios RemoteFX](remotefx-media-redirection-api-structures.md)
+[RemoteFX Estructuras de la API de redireccionamiento multimedia](remotefx-media-redirection-api-structures.md)
 </dt> <dd>
 
-La API de redirección de medios RemoteFX define las siguientes estructuras.
+La API RemoteFX redireccionamiento multimedia define las estructuras siguientes.
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

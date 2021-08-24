@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 663559db0746b9d689066e537c1473f467341cbc
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 046267b11f1a2aa977eda7f5fe461e5c44a2cf59e1f50ae291cf714f063088c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093563"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119847745"
 ---
 # <a name="id3dxmatrixstackloadidentity-method-d3dx9mathh"></a>Método ID3DXMATRIXStack::LoadIdentity (D3dx9math.h)
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Comentarios
 
@@ -59,7 +59,7 @@ La matriz de identidad es una matriz en la que todos los coeficientes son 0,0 ex
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

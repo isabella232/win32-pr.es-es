@@ -1,7 +1,7 @@
 ---
 description: Asocia un BIOS a un sistema informático.
 ms.assetid: a06af789-75c8-4d58-8a25-572dcf1091e2
-title: CIM_SystemBIOS (clase)
+title: CIM_SystemBIOS clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,14 +15,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: faa3130544fdb97bdf216fa266bc9e8cfe1815bf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4a4dae1a4ff028cfc675b2f1a9526b523540398b13cd8b33e0914c12d8df08b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082465"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119899465"
 ---
-# <a name="cim_systembios-class"></a>\_Clase SystemBIOS de CIM
+# <a name="cim_systembios-class"></a>Cim \_ SystemBIOS (clase)
 
 Asocia un BIOS a un sistema informático.
 
@@ -39,13 +39,13 @@ class CIM_SystemBIOS : CIM_SystemComponent
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ SystemBIOS** tiene estos tipos de miembros:
+La **clase \_ SystemBIOS de CIM** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ SystemBIOS** tiene estas propiedades.
+La **clase \_ SystemBIOS de CIM** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -58,10 +58,10 @@ Tipo de datos: **CIM \_ ComputerSystem**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Calificadores: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
-El equipo que arranca desde el BIOS.
+El sistema informático que arranca desde el BIOS.
 
 </dd> <dt>
 
@@ -74,10 +74,10 @@ Tipo de datos: **CIM \_ BIOSElement**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
 </dt> </dl>
 
-BIOS.
+The BIOS.
 
 </dd> </dl>
 
@@ -85,12 +85,12 @@ BIOS.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,7 +99,7 @@ BIOS.
 
 <dl> <dt>
 
-[**\_SYSTEMCOMPONENT CIM**](cim-systemcomponent.md)
+[**CIM \_ SystemComponent**](cim-systemcomponent.md)
 </dt> </dl>
 
  

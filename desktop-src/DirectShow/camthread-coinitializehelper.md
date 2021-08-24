@@ -1,7 +1,7 @@
 ---
-description: El método CoInitializeHelper llama a la función CoInitializeEx al inicio del subproceso.
+description: El método CoInitializeHelper llama a la función CoInitializeEx al principio del subproceso.
 ms.assetid: 1a981e1e-c059-4e51-81d8-33bcb39ee580
-title: Método CAMThread. CoInitializeHelper (Wxutil. h)
+title: Método CAMThread.CoInitializeHelper (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a6c3eb7fbcb9e4abada43098339a29d208ded0d4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 41a763a4b9151f22615aa0af3dae57af8281751209a016dc3135f3572e9d8ef3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660437"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119768295"
 ---
-# <a name="camthreadcoinitializehelper-method"></a>CAMThread. CoInitializeHelper, método
+# <a name="camthreadcoinitializehelper-method"></a>Método CAMThread.CoInitializeHelper
 
-El `CoInitializeHelper` método llama a la función CoInitializeEx al inicio del subproceso.
+El `CoInitializeHelper` método llama a la función CoInitializeEx al principio del subproceso.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,23 +42,23 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Los valores posibles son los siguientes.
+Devuelve un **valor HRESULT.** A continuación se den los valores posibles.
 
 
 
 | Código devuelto                                                                             | Descripción                                              |
 |-----------------------------------------------------------------------------------------|----------------------------------------------------------|
-| <dl> <dt>**S \_ false**</dt> </dl> | La función CoInitializeEx no está disponible.<br/> |
-| <dl> <dt>**S \_ correcto**</dt> </dl>    | Correcto.<br/>                                      |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | La función CoInitializeEx no está disponible.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>    | Correcto.<br/>                                      |
 | <dl> <dt>**E \_ FAIL**</dt> </dl>  | Error.<br/>                                      |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**CAMThread:: InitialThreadProc**](camthread-initialthreadproc.md) llama a este método auxiliar, que llama a la función CoInitializeEx. Usa la marca coinit \_ Disable \_ OLE1DDE para deshabilitar intercambio dinámico de datos (DDE). Para obtener más información, vea el SDK de la plataforma.
+El [**método CAMThread::InitialThreadProc**](camthread-initialthreadproc.md) llama a este método auxiliar, que llama a la función CoInitializeEx. Usa la marca COINIT DISABLE OLE1DDE para deshabilitar datos dinámicos Exchange \_ \_ (DDE). Para más información, consulte el SDK de plataforma.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,8 +66,8 @@ El método [**CAMThread:: InitialThreadProc**](camthread-initialthreadproc.md) l
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxutil. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxutil.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -75,7 +75,7 @@ El método [**CAMThread:: InitialThreadProc**](camthread-initialthreadproc.md) l
 
 <dl> <dt>
 
-[**Clase CAMThread**](camthread.md)
+[**CLASE CAMThread**](camthread.md)
 </dt> </dl>
 
  

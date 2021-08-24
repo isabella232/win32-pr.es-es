@@ -1,17 +1,17 @@
 ---
 description: Tipo de lector de tarjeta inteligente.
 ms.assetid: 380599cb-da28-4f64-8c72-13b79a18d0e0
-title: System. Devices. SmartCards. ReaderKind
+title: System.Devices.SmartCards.ReaderKind
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 519f9ad2ae61bd9c6fc046f24881e03e7484caac
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e6450f909a5fb815928dffa2a5aacbd7b4e429e24e4f2ed9e710cb2023b57167
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001812"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119845361"
 ---
-# <a name="systemdevicessmartcardsreaderkind"></a>System. Devices. SmartCards. ReaderKind
+# <a name="systemdevicessmartcardsreaderkind"></a>System.Devices.SmartCards.ReaderKind
 
 Tipo de lector de tarjeta inteligente.
 
@@ -106,9 +106,9 @@ propertyDescription
             defineToken = SMARTCARDREADERKIND_UICC
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -123,7 +123,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -135,7 +135,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -153,7 +153,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

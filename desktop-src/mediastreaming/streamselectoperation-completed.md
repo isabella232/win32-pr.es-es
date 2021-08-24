@@ -1,11 +1,11 @@
 ---
-title: Propiedad StreamSelectOperation. Completed
+title: Propiedad StreamSelectOperation.Completed
 description: Obtiene o establece un controlador de eventos que se invoca cuando se completa la operación asincrónica iniciada por SelectBestStreamAsync.
 ms.assetid: 693CC002-2D91-4656-954D-8A556480155C
 keywords:
-- Propiedad completada API de streaming de multimedia
-- Propiedad completada API de streaming multimedia, interfaz StreamSelectOperation
-- Interfaz StreamSelectOperation API de streaming de multimedia, propiedad Completed
+- Propiedad completada Media Streaming API
+- Propiedad completada Media Streaming API, interfaz StreamSelectOperation
+- Interfaz StreamSelectOperation Media Streaming API, propiedad Completed
 topic_type:
 - apiref
 api_name:
@@ -15,29 +15,29 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 74cfdf1a3db4f6843a5f12522b688e889e156f33
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 554874c19054f4b2ee46fbfe29fb4dfb8149e476ff96d040ffdbdd9b39de4612
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105714364"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119847585"
 ---
-# <a name="streamselectoperationcompleted-property"></a>Propiedad StreamSelectOperation. Completed
+# <a name="streamselectoperationcompleted-property"></a>Propiedad StreamSelectOperation.Completed
 
-Obtiene o establece un controlador de eventos que se invoca cuando se completa la operación asincrónica iniciada por [**SelectBestStreamAsync**](/previous-versions/windows/desktop/legacy/hh829002(v=vs.85)) .
+Obtiene o establece un controlador de eventos que se invoca cuando se completa la operación asincrónica iniciada por [**SelectBestStreamAsync.**](/previous-versions/windows/desktop/legacy/hh829002(v=vs.85))
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
 HRESULT put_Completed(
-  [in]  IStreamSelectCompletedHandler *value
+  [in]  IStreamSelectCompletedHandler *value
 );
 
 HRESULT get_Completed(
-  [out] IStreamSelectCompletedHandler **value
+  [out] IStreamSelectCompletedHandler **value
 );
 ```
 
@@ -54,6 +54,6 @@ Controlador de eventos.
 [**StreamSelectOperation**](streamselectoperation.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

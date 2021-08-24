@@ -4,12 +4,12 @@ ms.assetid: 0c71a4ad-3c09-4134-b0e7-82f29e8913ed
 title: Evento InkPicture.CursorOutOfRange (Msplaceut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d80584eafb7f1e5222316507f08bd73efb12fae
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0a4645ce06e25b9145af5efaca193bf7c3dc21931095887a1a24116c2e0ad635
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119883985"
 ---
 # <a name="inkpicturecursoroutofrange-event"></a>Evento InkPicture.CursorOutOfRange
 
@@ -51,16 +51,16 @@ El **evento CursorOutOfRange** se desencadena incluso cuando está en modo de se
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC \[ Edition\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Encabezado<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

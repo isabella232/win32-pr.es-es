@@ -1,7 +1,7 @@
 ---
-description: Representa una asociación en la que un servicio de puente es un componente de un servicio de conmutador.
+description: Representa una asociación en la que un servicio de puente es un componente de un servicio switch.
 ms.assetid: 737d5ba1-0759-40cf-bc46-a059d19902c8
-title: CIM_SwitchServiceTransparentBridging (clase)
+title: CIM_SwitchServiceTransparentBridging clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 04bce4bf673dc029b7b3a2d2b837670b01300c73
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2e3f56f565286358f5d55ee47ccb102a4ecbf35e89fcd207c67518fc1fb42627
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666912"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119899485"
 ---
-# <a name="cim_switchservicetransparentbridging-class"></a>\_Clase SwitchServiceTransparentBridging de CIM
+# <a name="cim_switchservicetransparentbridging-class"></a>Cim \_ SwitchServiceTransparentBridging (clase)
 
-Representa una asociación en la que un servicio de puente es un componente de un servicio de conmutador.
+Representa una asociación en la que un servicio de puente es un componente de un servicio switch.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,13 +39,13 @@ class CIM_SwitchServiceTransparentBridging : CIM_ServiceComponent
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ SwitchServiceTransparentBridging** tiene estos tipos de miembros:
+La **clase \_ CIM SwitchServiceTransparentBridging** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ SwitchServiceTransparentBridging** tiene estas propiedades.
+La **clase CIM \_ SwitchServiceTransparentBridging** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -58,10 +58,10 @@ Tipo de datos: **CIM \_ SwitchService**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Calificadores: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
-Una [**referencia \_ SwitchService de CIM**](cim-switchservice.md) al servicio del conmutador.
+Referencia [**de Cim \_ SwitchService**](cim-switchservice.md) al servicio switch.
 
 </dd> <dt>
 
@@ -74,10 +74,10 @@ Tipo de datos: **CIM \_ TransparentBridgingService**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
 </dt> </dl>
 
-Una [**referencia \_ TransparentBridgingService de CIM**](cim-transparentbridgingservice.md) al servicio de puente de componentes.
+Referencia [**de \_ TransparentBridgingService**](cim-transparentbridgingservice.md) de CIM al servicio de puente de componentes.
 
 </dd> </dl>
 
@@ -85,12 +85,12 @@ Una [**referencia \_ TransparentBridgingService de CIM**](cim-transparentbridgin
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
-| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,7 +99,7 @@ Una [**referencia \_ TransparentBridgingService de CIM**](cim-transparentbridgin
 
 <dl> <dt>
 
-[**\_SERVICECOMPONENT CIM**](cim-servicecomponent.md)
+[**CIM \_ ServiceComponent**](cim-servicecomponent.md)
 </dt> </dl>
 
  

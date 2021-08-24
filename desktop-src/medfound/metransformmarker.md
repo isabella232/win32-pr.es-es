@@ -1,29 +1,29 @@
 ---
-description: Enviado por una transformación de Media Foundation asincrónica (MFT) en respuesta a un \_ mensaje de marcador de comando de mensaje MFT \_ \_ .
+description: Enviado por una transformación de Media Foundation (MFT) asincrónica en respuesta a un mensaje de MARCADOR DE COMANDOS DE MENSAJES \_ de MFT. \_ \_
 ms.assetid: d0c0d62d-9133-4d4b-8606-c2ae1d4c9f0a
-title: Evento METransformMarker (Mfobjects. h)
+title: Evento METransformMarker (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ab79c47e2ddb26f2366aff075548f7905807df1e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7029119b30314e56531c0afb29accadb67e1efb343a906c2558af2157c0b1f82
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677593"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119827045"
 ---
 # <a name="metransformmarker-event"></a>Evento METransformMarker
 
-Enviado por una transformación de Media Foundation asincrónica (MFT) en respuesta a un mensaje de **\_ marcador de \_ comando \_ de mensaje MFT** .
+Enviado por una transformación de Media Foundation asincrónica (MFT) en respuesta a un **mensaje MFT \_ MESSAGE COMMAND \_ \_ MARKER.**
 
 ## <a name="event-values"></a>Valores de evento
 
-Los valores posibles recuperados de [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) son los siguientes.
+Los valores posibles recuperados [**de IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) incluyen lo siguiente.
 
 
 
 | VARTYPE              | Descripción               |
 |----------------------|---------------------------|
-| VT \_ vacío<br/> | Sin datos del evento.<br/> |
+| VT \_ EMPTY<br/> | Sin datos del evento.<br/> |
 
 
 
@@ -35,17 +35,17 @@ Para este evento, se definen los atributos siguientes.
 
 | Atributo                                                      | Descripción                                                                                                                |
 |----------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| [\_ \_ contexto MFT del evento MF \_](mf-event-mft-context.md)<br/> | El valor del parámetro *ulParam* del mensaje del **\_ marcador de \_ comando \_ del mensaje de MFT** .<br/>*Desee*<br/> |
+| [CONTEXTO \_ \_ MFT DEL EVENTO \_ MF](mf-event-mft-context.md)<br/> | Valor del parámetro *ulParam* del **mensaje \_ MFT MESSAGE \_ COMMAND \_ MARKER.**<br/>*(Obligatorio)*<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los MFTs asincrónicos envían este evento a través de la interfaz [**IMFMediaEventGenerator**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator) . Los MFTs sincrónicos nunca envían este evento.
+Las MTA asincrónicas envían este evento [**a través de la interfaz DESEDMEDIAEventGenerator.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator) Las MTA sincrónicas nunca envían este evento.
 
-El cliente de un MFT asincrónico puede colocar un marcador en la secuencia mediante una llamada a [**IMFTransform::P rocessmessage**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processmessage) con el mensaje del marcador de comando del mensaje de **MFT \_ \_ \_** . El parámetro *ulParam* contiene datos definidos por la aplicación.
+El cliente de un MFT asincrónico puede colocar un marcador en la secuencia mediante una llamada a [**IMFTransform::P rocessMessage con**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processmessage) el mensaje **MFT \_ MESSAGE COMMAND \_ \_ MARKER.** El *parámetro ulParam* contiene datos definidos por la aplicación.
 
-Cuando el MFT finaliza el procesamiento de todos los datos de entrada que estaban disponibles en el momento de la llamada a [**ProcessMessage**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processmessage) , el MFT pone en cola un evento METransformMarker. El atributo de [ \_ \_ \_ contexto MFT del evento MF](mf-event-mft-context.md) del evento contiene el valor del parámetro *ulParam* . Para obtener más información, consulte [MFTs asincrónico](asynchronous-mfts.md).
+Cuando MFT termina de procesar todos los datos de entrada disponibles en el momento de la llamada a [**ProcessMessage,**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processmessage) MFT pone en cola un evento METransformMarker. El [atributo MF EVENT \_ \_ MFT \_ CONTEXT](mf-event-mft-context.md) del evento contiene el valor del *parámetro ulParam.* Para obtener más información, vea [MFT asincrónicas.](asynchronous-mfts.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ Cuando el MFT finaliza el procesamiento de todos los datos de entrada que estaba
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                               |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                                  |
-| Encabezado<br/>                   | <dl> <dt>Mfobjects. h (incluye Mfidl. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                               |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                  |
+| Header<br/>                   | <dl> <dt>Mfobjects.h (incluir Mfidl.h)</dt> </dl> |
 
 
 
@@ -63,10 +63,10 @@ Cuando el MFT finaliza el procesamiento de todos los datos de entrada que estaba
 
 <dl> <dt>
 
-[Eventos de Media Foundation](media-foundation-events.md)
+[Media Foundation eventos](media-foundation-events.md)
 </dt> <dt>
 
-[MFTs asincrónico](asynchronous-mfts.md)
+[MFT asincrónicas](asynchronous-mfts.md)
 </dt> </dl>
 
  

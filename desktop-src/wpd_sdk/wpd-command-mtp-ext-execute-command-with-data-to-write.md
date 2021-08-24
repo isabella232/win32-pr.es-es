@@ -1,23 +1,23 @@
 ---
-description: El comando WPD comando \_ \_ \_ ext \_ Execute comando \_ \_ con \_ datos \_ para \_ escribir envía un bloque de comandos MTP, que va seguido de una fase de datos. Los datos se envían desde el host al dispositivo.
+description: El comando WPD COMMAND MTP EXT EXECUTE COMMAND WITH DATA TO WRITE envía un bloque de comandos \_ \_ \_ \_ \_ \_ \_ \_ \_ MTP, que va seguido de una fase de datos. Los datos se envían desde el host al dispositivo.
 ms.assetid: b675fc3c-4d50-429d-9e00-42160d409a2b
-title: Comando WPD_COMMAND_MTP_EXT_EXECUTE_COMMAND_WITH_DATA_TO_WRITE (WpdMtpExtensions. h)
+title: WPD_COMMAND_MTP_EXT_EXECUTE_COMMAND_WITH_DATA_TO_WRITE (WpdMtpExtensions.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c6f7c65cad838ded52471b5e0dd8dfad325fb1ea
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b2ae0e50ad2fad9967252d9a21c1e864d056338a3e3a2b82f4c29d951a722953
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709034"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119806315"
 ---
-# <a name="wpd_command_mtp_ext_execute_command_with_data_to_write-command"></a>Comando de WPD comando \_ \_ \_ ext \_ Execute comando \_ \_ con \_ datos \_ para \_ escribir
+# <a name="wpd_command_mtp_ext_execute_command_with_data_to_write-command"></a>COMANDO WPD \_ \_ MTP EXT EXECUTE COMMAND WITH DATA TO WRITE (COMANDO MTP \_ EXT EXECUTE CON DATOS PARA \_ \_ \_ \_ \_ \_ ESCRIBIR)
 
-El comando **WPD comando \_ \_ \_ ext \_ Execute comando \_ \_ con \_ datos \_ para \_ escribir** envía un bloque de comandos MTP, que va seguido de una fase de datos. Los datos se envían desde el host al dispositivo.
+El **comando WPD \_ COMMAND \_ MTP EXT EXECUTE COMMAND \_ WITH DATA TO \_ \_ \_ \_ \_ \_ WRITE** envía un bloque de comandos MTP, que va seguido de una fase de datos. Los datos se envían desde el host al dispositivo.
 
 ## <a name="command-category"></a>Categoría de comando
 
-**Categoría de WPD de \_ \_ \_ operaciones de proveedor ext MTP \_ \_**
+**OPERACIONES DE PROVEEDOR \_ \_ EXT DE MTP \_ \_ DE CATEGORÍA WPD \_**
 
 ## <a name="parameters"></a>Parámetros
 
@@ -27,9 +27,9 @@ El controlador espera los parámetros siguientes.
 
 | Parámetro                                                | VarType | Descripción                                                                                                                             |
 |----------------------------------------------------------|---------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| **\_código de \_ \_ operación ext \_ de MTP de propiedad de \_ WPD**             | VT \_ UI4 | Obligatorio. Identifica un código de operación MTP extendido por un proveedor.                                                                              |
-| **\_parámetros de \_ \_ operación ext \_ de MTP de propiedad de \_ WPD**           | VT \_ UI4 | Obligatorio. Una colección **IPortableDevicePropVariantCollection** que identifica los parámetros necesarios para el código de operación del proveedor. |
-| **propiedad de WPD \_ \_ extensión de \_ \_ \_ datos totales de transferencia ext \_ MTP \_** | VT \_ UI8 | Requerido. especifica el tamaño total de los datos, en bytes, excluyendo cualquier sobrecarga que se envíe al dispositivo.                                         |
+| **CÓDIGO DE OPERACIÓN \_ \_ EXT DE MTP DE LA \_ \_ PROPIEDAD \_ WPD**             | VT \_ UI4 | Obligatorio. Identifica un código de operación MTP extendido por el proveedor.                                                                              |
+| **MTP \_ \_ EXT \_ \_ OPERATION \_ PARAMS DE LA PROPIEDAD WPD**           | VT \_ UI4 | Obligatorio. Colección **IPortableDevicePropVariantCollection** que identifica los parámetros necesarios para el código de operación del proveedor. |
+| **TAMAÑO TOTAL DE DATOS DE TRANSFERENCIA EXT DE LA PROPIEDAD \_ \_ WPD MTP \_ \_ \_ \_ \_** | VT \_ UI8 | Required.Especifica el tamaño total de los datos, en bytes, sin incluir la sobrecarga, que se va a enviar al dispositivo.                                         |
 
 
 
@@ -37,14 +37,14 @@ El controlador espera los parámetros siguientes.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El controlador devuelve los resultados siguientes.
+El controlador devuelve los siguientes resultados.
 
 
 
 | Resultado                                                       | VarType    | Descripción                                                                        |
 |--------------------------------------------------------------|------------|------------------------------------------------------------------------------------|
-| **propiedad de WPD \_ \_ tamaño de \_ \_ \_ búfer de transferencia óptimo \_ ext de \_ MTP** | VT \_ UI4    | Obligatorio. Especifica el tamaño óptimo del búfer de transferencia.                       |
-| **propiedad de WPD \_ \_ \_ contexto de transferencia ext de MTP \_ \_**               | VT \_ LPWStr | Opcional. Identificador de contexto que utiliza el controlador para las transferencias de datos posteriores. |
+| **TAMAÑO ÓPTIMO DEL BÚFER DE TRANSFERENCIA DE LA PROPIEDAD \_ \_ WPD MTP \_ EXT \_ \_ \_ \_** | VT \_ UI4    | Obligatorio. Especifica el tamaño óptimo del búfer de transferencia.                       |
+| **CONTEXTO DE TRANSFERENCIA \_ \_ EXT DE MTP DE LA \_ \_ PROPIEDAD \_ WPD**               | VT \_ LPWSTR | Opcional. Identificador de contexto que el controlador usa para las transferencias de datos posteriores. |
 
 
 
@@ -52,7 +52,7 @@ El controlador devuelve los resultados siguientes.
 
 ## <a name="calling-methods"></a>Llamar a métodos
 
-Solo se puede llamar directamente mediante [**IPortableDevice:: SendCommand**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-sendcommand).
+Solo se puede llamar directamente mediante [**IPortableDevice::SendCommand**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-sendcommand).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,7 +60,7 @@ Solo se puede llamar directamente mediante [**IPortableDevice:: SendCommand**](/
 
 | Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>WpdMtpExtensions. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>WpdMtpExtensions.h</dt> </dl> |
 
 
 

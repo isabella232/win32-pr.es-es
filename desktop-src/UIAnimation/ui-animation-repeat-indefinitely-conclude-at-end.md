@@ -1,6 +1,6 @@
 ---
-title: UI_ANIMATION_REPEAT_INDEFINITELY_CONCLUDE_AT_END (UIAnimation. h)
-description: Indica que el intervalo entre dos fotogramas clave de un guión gráfico debe repetirse indefinidamente hasta que el bucle de fotogramas clave finalice en el fotograma clave final cuando se llame al método IUIAnimationStoryboard concluir.
+title: UI_ANIMATION_REPEAT_INDEFINITELY_CONCLUDE_AT_END (UIAnimation.h)
+description: Indica que el intervalo entre dos fotogramas clave de un guión gráfico debe repetirse indefinidamente hasta que el bucle de fotogramas clave finalice en el fotograma clave final cuando se llame al método IUIAnimationStoryboard Conclude.
 ms.assetid: DB333A87-C969-4B47-AAE3-898B052F00F3
 topic_type:
 - apiref
@@ -12,22 +12,22 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6452305342fcebf802183c5de2d1992aa0bfbcde
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f0354710d5857d8250419fe9c8f0f4b0154051f62dc31b1e2649ce800350c8a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359816"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119768705"
 ---
-# <a name="ui_animation_repeat_indefinitely_conclude_at_end"></a>la \_ animación de la interfaz de usuario se \_ repite \_ indefinidamente \_ \_ al \_ final
+# <a name="ui_animation_repeat_indefinitely_conclude_at_end"></a>LA \_ ANIMACIÓN DE LA INTERFAZ DE USUARIO SE REPITE \_ \_ INDEFINIDAMENTE Y CONCLUYE AL \_ \_ \_ FINAL
 
-Indica que el intervalo entre dos fotogramas clave de un guión gráfico debe repetirse indefinidamente hasta que el bucle de fotogramas clave finaliza en el fotograma clave final cuando se llama al método [**IUIAnimationStoryboard:: concluir**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-conclude) .
+Indica que el intervalo entre dos fotogramas clave de un guión gráfico debe repetirse indefinidamente hasta que el bucle de fotogramas clave finalice en el fotograma clave final cuando se llame al método [**IUIAnimationStoryboard::Conclude.**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-conclude)
 
 
 
 | Constante o valor                                                                                                                                                                                                                                                                                                                      | Descripción      |
 |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------|
-| <span id="UI_ANIMATION_REPEAT_INDEFINITELY_CONCLUDE_AT_END"></span><span id="ui_animation_repeat_indefinitely_conclude_at_end"></span><dl> <dt>**Interfaz de usuario \_ La animación se \_ repite \_ indefinidamente \_ \_ al \_ final**</dt> <dt>-1</dt> </dl> | INT32<br/> |
+| <span id="UI_ANIMATION_REPEAT_INDEFINITELY_CONCLUDE_AT_END"></span><span id="ui_animation_repeat_indefinitely_conclude_at_end"></span><dl> <dt>**Interfaz de usuario \_ LA \_ REPETICIÓN DE ANIMACIÓN FINALIZA \_ INDEFINIDAMENTE AL \_ \_ \_ FINAL**</dt> <dt>-1</dt> </dl> | INT32<br/> |
 
 
 
@@ -37,10 +37,10 @@ Indica que el intervalo entre dos fotogramas clave de un guión gráfico debe re
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 8, Windows 7 y actualización de plataforma solo para aplicaciones de escritorio de Windows 7 \[\]<br/>    |
+| Cliente mínimo compatible<br/> | Windows 8, Windows 7 y Actualización de plataforma solo para Windows 7 \[ aplicaciones de escritorio\]<br/>    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                  |
-| Encabezado<br/>                   | <dl> <dt>UIAnimation. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>UIAnimation. idl</dt> </dl> |
+| Header<br/>                   | <dl> <dt>UIAnimation.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>UIAnimation.idl</dt> </dl> |
 
 
 

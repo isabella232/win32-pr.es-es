@@ -1,8 +1,8 @@
 ---
-description: Detiene el servicio representado por el objeto derivado de BaseService de Win32 \_ .
+description: Detiene el servicio representado por el objeto derivado de BaseService de \_ Win32.
 ms.assetid: 5d6427a6-d233-4db4-9235-c6187b36da5f
 ms.tgt_platform: multiple
-title: Método StopService de la clase Win32_BaseService (Sdoias. h)
+title: Método StopService de la Win32_BaseService (Sdoias.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b5b31b854255c6b20253875233bf2e5a44207a5a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b436e5ad798ed10e90223d3eb954cf1e0cbe83c6d9fc8f998eb36ced3be7ae7d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659566"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119751905"
 ---
-# <a name="stopservice-method-of-the-win32_baseservice-class"></a>Método StopService de la \_ clase BaseService de Win32
+# <a name="stopservice-method-of-the-win32_baseservice-class"></a>Método StopService de la clase BaseService de Win32 \_
 
-El método de [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **StopService** detiene el servicio representado por el objeto derivado de [**Win32 \_ BaseService**](win32-baseservice.md).
+El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **StopService** detiene el servicio representado por el objeto derivado de [**\_ BaseService de Win32.**](win32-baseservice.md)
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -96,7 +96,7 @@ El código de control solicitado no es válido o no es aceptable para el servici
 
 5
 
-El código de control solicitado no se puede enviar al servicio porque el estado del servicio (propiedad de [**Estado**](win32-baseservice.md) [**\_ BaseService de Win32**](win32-baseservice.md)) es igual a 0, 1 o 2.
+El código de control solicitado no se puede enviar al servicio porque el estado del servicio (propiedad [**Estado de \_ BaseService de Win32)**](win32-baseservice.md)es igual a 0, 1 o 2.[](win32-baseservice.md)
 
 </dd> <dt>
 
@@ -132,11 +132,11 @@ Proceso interactivo.
 
 9
 
-No se encontró la ruta de acceso al directorio del archivo ejecutable del servicio.
+No se encontró la ruta de acceso del directorio al archivo ejecutable del servicio.
 
 </dd> <dt>
 
-**El servicio ya se está ejecutando**
+**Servicio ya en ejecución**
 </dt> <dd>
 
 10
@@ -168,7 +168,7 @@ Una dependencia en la que se basaba este servicio se ha quitado del sistema.
 
 13
 
-El servicio no pudo encontrar el servicio necesario de un servicio dependiente.
+El servicio no pudo encontrar el servicio requerido de un servicio dependiente.
 
 </dd> <dt>
 
@@ -208,7 +208,7 @@ No hay ningún subproceso de ejecución para el servicio.
 
 </dd> <dt>
 
-**Estado dependencia circular**
+**Dependencia circular de estado**
 </dt> <dd>
 
 18
@@ -217,7 +217,7 @@ Hay dependencias circulares al iniciarse el servicio.
 
 </dd> <dt>
 
-**Estado nombre duplicado**
+**Nombre duplicado de estado**
 </dt> <dd>
 
 19
@@ -226,7 +226,7 @@ Hay un servicio que se ejecuta con el mismo nombre.
 
 </dd> <dt>
 
-**Estado nombre no válido**
+**Nombre de estado no válido**
 </dt> <dd>
 
 20
@@ -235,7 +235,7 @@ Hay caracteres no válidos en el nombre del servicio.
 
 </dd> <dt>
 
-**Estado parámetro no válido**
+**Parámetro Status Invalid**
 </dt> <dd>
 
 21
@@ -244,12 +244,12 @@ Se han pasado parámetros no válidos al servicio.
 
 </dd> <dt>
 
-**Estado cuenta de servicio no válida**
+**Cuenta de servicio de estado no válida**
 </dt> <dd>
 
 22
 
-La cuenta con la que se va a ejecutar este servicio no es válida o carece de los permisos para ejecutar el servicio.
+La cuenta en la que se va a ejecutar este servicio no es válida o carece de los permisos para ejecutar el servicio.
 
 </dd> <dt>
 
@@ -262,7 +262,7 @@ El servicio existe en la base de datos de servicios disponibles del sistema.
 
 </dd> <dt>
 
-**Servicio ya pausado**
+**Servicio ya en pausa**
 </dt> <dd>
 
 24
@@ -286,9 +286,9 @@ El servicio se encuentra en pausa actualmente en el sistema.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| Encabezado<br/>                   | <dl> <dt>Sdoias. h</dt> </dl>     |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| Header<br/>                   | <dl> <dt>Sdoias.h</dt> </dl>     |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -300,7 +300,7 @@ El servicio se encuentra en pausa actualmente en el sistema.
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**Win32 \_ BaseService**](win32-baseservice.md)
+[**BaseService de Win32 \_**](win32-baseservice.md)
 </dt> </dl>
 
  

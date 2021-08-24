@@ -97,7 +97,7 @@ Un **elemento smartPlaylist** normalmente contiene un **elemento querySet** y ta
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
@@ -113,7 +113,7 @@ Un **elemento smartPlaylist** normalmente contiene un **elemento querySet** y ta
 [**elemento querySet**](queryset-element.md)
 </dt> <dt>
 
-[**seq (Elemento)**](seq-element.md)
+[**elemento seq**](seq-element.md)
 </dt> <dt>
 
 [**Windows Referencia de elementos de lista de reproducción multimedia**](windows-media-playlist-elements-reference.md)

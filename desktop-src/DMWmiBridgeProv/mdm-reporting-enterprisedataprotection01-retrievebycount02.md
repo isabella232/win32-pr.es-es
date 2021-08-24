@@ -1,9 +1,9 @@
 ---
-title: MDM_Reporting_EnterpriseDataProtection01_RetrieveByCount02 (clase)
-description: La \_ \_ \_ clase RetrieveByCount02 de informes de MDM EnterpriseDataProtection01 se usa para recuperar un número especificado de registros del startTime.
+title: MDM_Reporting_EnterpriseDataProtection01_RetrieveByCount02 clase
+description: La clase Mdm \_ Reporting \_ EnterpriseDataProtection01 RetrieveByCount02 se usa para recuperar un número especificado de registros \_ de StartTime.
 ms.assetid: 0a581d5a-129b-48c3-a7a1-3947cc1e2ee9
 keywords:
-- MDM_Reporting_EnterpriseDataProtection01_RetrieveByCount02 (clase)
+- MDM_Reporting_EnterpriseDataProtection01_RetrieveByCount02 clase
 - MDM_Reporting_EnterpriseDataProtection01_RetrieveByCount02 clase, descrita
 topic_type:
 - apiref
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 80fcc6e7ed3ccb630b500179d7273bdd09a21477
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 509ab80a8f7b33d3ac7f9d40157152ce5aa693376e4e61edc4581f8d375f1c77
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489167"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119825485"
 ---
-# <a name="mdm_reporting_enterprisedataprotection01_retrievebycount02-class"></a>\_Clase RetrieveByCount02 de informes de MDM \_ EnterpriseDataProtection01 \_
+# <a name="mdm_reporting_enterprisedataprotection01_retrievebycount02-class"></a>Clase Mdm \_ Reporting \_ EnterpriseDataProtection01 \_ RetrieveByCount02
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-La **clase \_ RetrieveByCount02 de informes de MDM \_ EnterpriseDataProtection01 \_** se usa para recuperar un número especificado de registros del startTime. StartTime se expresa en formato ISO 8601. Puede establecer el número de registros necesarios si establece LogCount y StartTime. Devuelve el número especificado de registro o menos si el número total de registros es menor que LogCount.
+La **clase MDM \_ Reporting \_ EnterpriseDataProtection01 \_ RetrieveByCount02** se usa para recuperar un número especificado de registros de StartTime. StartTime se expresa en formato ISO 8601. Puede establecer el número de registros necesarios estableciendo LogCount y StartTime. Devuelve el número especificado de registro o menos, si el número total de registros es menor que LogCount.
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -49,13 +49,13 @@ class MDM_Reporting_EnterpriseDataProtection01_RetrieveByCount02
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ RetrieveByCount02 de informes de MDM \_ EnterpriseDataProtection01 \_** tiene estos tipos de miembros:
+La **clase Mdm \_ Reporting \_ EnterpriseDataProtection01 \_ RetrieveByCount02** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ RetrieveByCount02 de informes de MDM \_ EnterpriseDataProtection01 \_** tiene estas propiedades.
+La **clase Mdm \_ Reporting \_ EnterpriseDataProtection01 \_ RetrieveByCount02** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -81,7 +81,7 @@ Identifica el nombre del nodo primario. Para esta clase, la cadena es "RetrieveB
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -92,7 +92,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -119,7 +119,7 @@ Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -130,7 +130,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> </dl>
@@ -141,11 +141,11 @@ Tipo de acceso: lectura/escritura
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                          |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                            |
-| Espacio de nombres<br/>                | Dmmap de MDM raíz de \\ cimv2 \\ \\<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl>      |
-| Archivo DLL<br/>                      | <dl> <dt>\\DMWmiBridgeProv.dllMOF</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ cimv2 \\ mdm \\ dmmap<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1.mof</dt> </dl>      |
+| Archivo DLL<br/>                      | <dl> <dt>Mofs \\DMWmiBridgeProv.dll</dt> </dl> |
 
 
 

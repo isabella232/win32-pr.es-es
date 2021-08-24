@@ -1,7 +1,7 @@
 ---
 description: Obtiene el identificador de una anotación buscando su nombre.
 ms.assetid: da4e2805-5f06-4a9b-836f-85a8c154c502
-title: 'ID3DXBaseEffect:: GetAnnotationByName (método) (D3DX9Effect. h)'
+title: Método ID3DXBaseEffect::GetAnnotationByName (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 00698030488b8f4ae788367f87b8d569476292ca
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a4a8943248ef2280bdb58c864a44c67a44a12c6f641fc05b74bb0fb28e2e9ba1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698416"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119791065"
 ---
-# <a name="id3dxbaseeffectgetannotationbyname-method"></a>ID3DXBaseEffect:: GetAnnotationByName (método)
+# <a name="id3dxbaseeffectgetannotationbyname-method"></a>Método ID3DXBaseEffect::GetAnnotationByName
 
 Obtiene el identificador de una anotación buscando su nombre.
 
@@ -41,16 +41,16 @@ D3DXHANDLE GetAnnotationByName(
 
 <dl> <dt>
 
-*hObject* \[ de\]
+*hObject* \[ En\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador de una técnica, un paso o un parámetro de nivel superior. Vea [identificadores (Direct3D 9)](handles.md).
+Identificador de una técnica, paso o parámetro de nivel superior. Vea [Identificadores (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
-*pName* \[ de\]
+*pName* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
@@ -63,7 +63,7 @@ Cadena que contiene el nombre de la anotación.
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Devuelve el identificador de la anotación especificada o **null** si no se encuentra el nombre. Vea [identificadores (Direct3D 9)](handles.md).
+Devuelve el identificador de la anotación especificada o **NULL** si no se encontró el nombre. Vea [Identificadores (Direct3D 9).](handles.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Devuelve el identificador de la anotación especificada o **null** si no se encu
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

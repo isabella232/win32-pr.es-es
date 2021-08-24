@@ -1,25 +1,25 @@
 ---
-description: Implementar NTFS transaccional (TxF) y el registro transaccional (TxR). TxF permite operaciones del sistema de archivos transaccionales en NTFS. TxR permite operaciones del registro transaccionales. Coordine el sistema de archivos y las operaciones del registro con una transacción.
+description: Implementar NTFS transaccional (TxF) y Registro transaccional (TxR). TxF permite operaciones del sistema de archivos con transacciones dentro de NTFS. TxR permite operaciones de registro con transacciones. Coordine las operaciones del registro y del sistema de archivos con una transacción.
 ms.assetid: 2f601994-db1e-4aac-8db1-9a36c702664b
 title: Administrador de transacciones de kernel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 281050461163d5fd0cde64af79e70569d613888e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8c446931fff4f119217a5f6e5f1b7ae8cf351cf94966a9da5abc4e4d2e88d787
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105652999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119897535"
 ---
 # <a name="kernel-transaction-manager"></a>Administrador de transacciones de kernel
 
 ## <a name="purpose"></a>Propósito
 
-El administrador de transacciones de kernel (KTM) permite el desarrollo de aplicaciones que utilizan transacciones. El propio motor de transacciones se encuentra dentro del kernel, pero las transacciones se pueden desarrollar para transacciones de modo de usuario o de kernel, y dentro de un solo host o entre hosts distribuidos.
+Kernel Transaction Manager (KTM) permite el desarrollo de aplicaciones que usan transacciones. El propio motor de transacciones está dentro del kernel, pero las transacciones se pueden desarrollar para transacciones en modo kernel o de usuario, y dentro de un único host o entre hosts distribuidos.
 
-El KTM se usa para implementar NTFS transaccional (TxF) y el registro transaccional (TxR). TxF permite operaciones del sistema de archivos transaccionales dentro del sistema de archivos NTFS. TxR permite operaciones del registro transaccionales. KTM permite a las aplicaciones cliente coordinar las operaciones del registro y del sistema de archivos con una transacción.
+KTM se usa para implementar NTFS transaccional (TxF) y Registro transaccional (TxR). TxF permite operaciones del sistema de archivos con transacciones dentro del sistema de archivos NTFS. TxR permite operaciones de registro con transacciones. KTM permite que las aplicaciones cliente coordinen las operaciones del registro y del sistema de archivos con una transacción.
 
-Para desarrollar una aplicación que coordine las transacciones con recursos distintos de TxF o TxR, primero debe desarrollar un servicio compatible con transacciones de Win32, también denominado administrador de recursos.
+Para desarrollar una aplicación que coordina las transacciones con recursos distintos de TxF o TxR, primero debe desarrollar un servicio para transacciones win32, también denominado administrador de recursos.
 
 Las aplicaciones administradas y COM+ deben usar sus administradores de transacciones nativos.
 
@@ -29,7 +29,7 @@ KTM se puede usar con aplicaciones y administradores de recursos hospedados en W
 
 ## <a name="developer-audience"></a>Audiencia de desarrolladores
 
-La API de KTM está diseñada para que la usen los programadores de C y C++.
+La API de KTM está diseñada para su uso por parte de programadores de C y C++.
 
 ## <a name="run-time-requirements"></a>Requisitos de tiempo de ejecución
 
@@ -41,8 +41,8 @@ KTM se admite a partir de Windows Vista.
 
 | Tema                                     | Descripción                                                                                                       |
 |-------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| [Acerca de](about-ktm.md)<br/>         | Información general sobre las transacciones y las funciones proporcionadas por KTM.<br/>                           |
-| [Referencia](ktm-reference.md)<br/> | Documentación para las funciones, estructuras de datos, enumeraciones y otros elementos de programación de KTM.<br/> |
+| [Acerca de](about-ktm.md)<br/>         | Información general sobre las transacciones y las funcionalidades proporcionadas por KTM.<br/>                           |
+| [Referencia](ktm-reference.md)<br/> | Documentación de las funciones, estructuras de datos, enumeraciones y otros elementos de programación de KTM.<br/> |
 
 
 

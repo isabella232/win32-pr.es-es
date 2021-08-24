@@ -1,10 +1,10 @@
 ---
 title: ms-DS-TDO-Egress-BL
-description: Vínculo hacia atrás al vínculo de reglas Egress TDO en el objeto.
+description: Vínculo hacia atrás al vínculo de reglas Egress TDO en el objeto .
 ms.assetid: 3bf7a566-4e9b-45b4-b408-329f21b914db
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo ms-DS-TDO-Egress-BL
+- ms-DS-TDO-Egress-BL attribute AD Schema
 - Esquema de AD del atributo msDS-TDOEgressBL
 topic_type:
 - apiref
@@ -23,7 +23,7 @@ ms.locfileid: "119763395"
 ---
 # <a name="ms-ds-tdo-egress-bl-attribute"></a>ms-DS-TDO-Egress-BL
 
-Vínculo hacia atrás al vínculo de reglas Egress TDO en el objeto.
+Vínculo hacia atrás al vínculo de reglas Egress TDO en el objeto .
 
 
 
@@ -32,7 +32,7 @@ Vínculo hacia atrás al vínculo de reglas Egress TDO en el objeto.
 | CN                | ms-DS-TDO-Egress-BL                     |
 | Ldap-Display-Name | msDS-TDOEgressBL                        |
 | Size              | \-                                      |
-| Privilegio actualizar  | \-                                      |
+| Actualizar privilegios  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.2194                 |
 | System-Id-Guid    | d5006229-9913-2242-8b17-83761d1e0e5b    |
@@ -48,7 +48,7 @@ Vínculo hacia atrás al vínculo de reglas Egress TDO en el objeto.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | 2193                            |
 | MAPI-Id                | \-                              |

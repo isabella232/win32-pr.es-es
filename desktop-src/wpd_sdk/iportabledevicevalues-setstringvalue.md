@@ -1,7 +1,7 @@
 ---
-description: El método SetStringValue agrega un nuevo valor de cadena (Type VT \_ LPWStr) o sobrescribe uno existente.
+description: El método SetStringValue agrega un nuevo valor de cadena (tipo \_ VT LPWSTR) o sobrescribe uno existente.
 ms.assetid: a6eba2b9-de18-431e-874e-af68695e8d3f
-title: 'IPortableDeviceValues:: SetStringValue (método) (PortableDeviceTypes. h)'
+title: Método IPortableDeviceValues::SetStringValue (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 163b5cd81ce8da64fc6d9f4304de5783b248522f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0c00195823d71a59e706af1c0a627670f583776140772c3b8634ac10d7d95919
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708684"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119806865"
 ---
-# <a name="iportabledevicevaluessetstringvalue-method"></a>IPortableDeviceValues:: SetStringValue (método)
+# <a name="iportabledevicevaluessetstringvalue-method"></a>IPortableDeviceValues::SetStringValue (método)
 
-El método **SetStringValue** agrega un nuevo valor de cadena (Type VT \_ LPWStr) o sobrescribe uno existente.
+El **método SetStringValue** agrega un nuevo valor de cadena (tipo \_ VT LPWSTR) o sobrescribe uno existente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,41 +41,41 @@ HRESULT SetStringValue(
 
 <dl> <dt>
 
-*clave* \[ de de\]
+*key* \[ En\]
 </dt> <dd>
 
-**REFPROPERTYKEY** que especifica el elemento que se va a crear o sobrescribir.
+**REFPROPERTYKEY que** especifica el elemento que se creará o sobrescribirá.
 
 </dd> <dt>
 
-*Valor* \[ de de\]
+*Valor* \[ En\]
 </dt> <dd>
 
-**LPCWSTR** que especifica el nuevo valor. Se copia la cadena, por lo que el llamador puede liberar la memoria asignada para este valor después de llamar a este método.
+**LPCWSTR** que especifica el nuevo valor. La cadena se copia, por lo que el autor de la llamada puede liberar la memoria asignada para este valor después de llamar a este método.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cualquier memoria de clave existente se liberará adecuadamente.
+Cualquier memoria de clave existente se liberará correctamente.
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener un ejemplo de cómo usar este método, vea [especificar la información del cliente](specifying-client-information.md).
+Para obtener un ejemplo de cómo usar este método, vea [Especificar información de cliente](specifying-client-information.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,8 +83,8 @@ Para obtener un ejemplo de cómo usar este método, vea [especificar la informac
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 
@@ -95,22 +95,22 @@ Para obtener un ejemplo de cómo usar este método, vea [especificar la informac
 [Agregar un recurso a un objeto](adding-a-resource-to-an-object.md)
 </dt> <dt>
 
-[**Interfaz IPortableDeviceValues**](iportabledevicevalues.md)
+[**IPortableDeviceValues (Interfaz)**](iportabledevicevalues.md)
 </dt> <dt>
 
-[**IPortableDeviceValues:: GetStringValue**](iportabledevicevalues-getstringvalue.md)
+[**IPortableDeviceValues::GetStringValue**](iportabledevicevalues-getstringvalue.md)
 </dt> <dt>
 
-[Establecer propiedades para un solo objeto](setting-properties-for-a-single-object.md)
+[Establecer propiedades para un único objeto](setting-properties-for-a-single-object.md)
 </dt> <dt>
 
-[Establecer las propiedades de varios objetos](setting-properties-for-multiple-objects.md)
+[Establecer propiedades para varios objetos](setting-properties-for-multiple-objects.md)
 </dt> <dt>
 
 [Especificar información de cliente](specifying-client-information.md)
 </dt> <dt>
 
-[Escritura de propiedades de objetos de contenido](writing-content-object-properties.md)
+[Escribir propiedades content-object](writing-content-object-properties.md)
 </dt> </dl>
 
  

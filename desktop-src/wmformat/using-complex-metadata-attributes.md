@@ -1,27 +1,27 @@
 ---
-title: Usar atributos de metadatos complejos
-description: Usar atributos de metadatos complejos
+title: Uso de atributos de metadatos complejos
+description: Uso de atributos de metadatos complejos
 ms.assetid: 8269efe4-331f-4b4b-b888-66b45c638153
 keywords:
-- SDK de Windows Media Format, atributos de metadatos complejos
-- Advanced Systems Format (ASF), atributos de metadatos complejos
+- Windows SDK de formato multimedia, atributos de metadatos complejos
+- Formato de sistemas avanzados (ASF), atributos de metadatos complejos
 - ASF (formato de sistemas avanzados), atributos de metadatos complejos
 - metadatos, atributos complejos
 - atributos de metadatos complejos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0cd03c656a8cba5342d21e41932365455daa8bfa
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 8245d2fbc07878a73e304cfc573e05e93b605185ece93655dae7a8bdeff0d9d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104358688"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119807255"
 ---
-# <a name="using-complex-metadata-attributes"></a>Usar atributos de metadatos complejos
+# <a name="using-complex-metadata-attributes"></a>Uso de atributos de metadatos complejos
 
-El SDK de Windows Media Format admite atributos de metadatos complejos, que son atributos que tienen valores representados por una estructura. Dado que todos los atributos deben tener un tipo de datos definido en la enumeración de [**\_ \_ tipos**](/previous-versions/windows/desktop/api/Wmsdkidl/ne-wmsdkidl-wmt_attr_datatype) de datos de atributo WMT, todos los atributos de metadatos complejos se tratan como archivos **\_ \_ binarios de tipo WMT**. Al escribir un atributo complejo, convierta el puntero a la estructura como un puntero de byte. Al recuperar un atributo complejo, convierta la matriz de bytes establecida por [**IWMHeaderInfo3:: GetAttributeByIndexEx**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmheaderinfo3-getattributebyindexex) como la estructura adecuada.
+El SDK Windows media format admite atributos de metadatos complejos, que son atributos que tienen valores representados por una estructura . Dado que todos los atributos deben tener un tipo de datos definido en la enumeración [**\_ \_ DATATYPE DE WMT ATTR,**](/previous-versions/windows/desktop/api/Wmsdkidl/ne-wmsdkidl-wmt_attr_datatype) todos los atributos de metadatos complejos se tratan como **WMT TYPE \_ \_ BINARY.** Al escribir un atributo complejo, convierte el puntero a la estructura como un puntero de bytes. Al recuperar un atributo complejo, convierte la matriz de bytes establecida por [**IWMHeaderInfo3::GetAttributeByIndexEx**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmheaderinfo3-getattributebyindexex) como la estructura adecuada.
 
-Los ejemplos de código siguientes muestran cómo establecer y recuperar un atributo de metadatos complejo. La primera función agrega un atributo de texto de usuario, la segunda función recupera uno. Para obtener más información sobre cómo usar estos ejemplos, vea [usar los ejemplos de código](using-the-code-examples.md).
+En los ejemplos de código siguientes se muestra cómo establecer y recuperar un atributo de metadatos complejo. La primera función agrega un atributo de texto de usuario y la segunda recupera uno. Para obtener más información sobre cómo usar estos ejemplos, vea [Usar los ejemplos de código](using-the-code-examples.md).
 
 
 ```C++
@@ -136,9 +136,9 @@ Exit:
 [**Trabajar con metadatos**](working-with-metadata.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

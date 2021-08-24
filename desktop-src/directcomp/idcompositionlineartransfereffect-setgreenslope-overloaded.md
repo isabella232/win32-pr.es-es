@@ -1,9 +1,9 @@
 ---
-title: Métodos IDCompositionLinearTransferEffect SetGreenSlope (Dcomp. h)
+title: Métodos IDCompositionLinearTransferEffect SetGreenSlope (Dcomp.h)
 description: Establece la pendiente de la función lineal para el canal verde.
 ms.assetid: e7e92544-dbc5-91ce-b818-056b7b572a7c
 keywords:
-- métodos setgreenslope DirectComposition
+- Métodos setgreenslope DirectComposition
 topic_type:
 - apiref
 api_location:
@@ -12,14 +12,14 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 913944ab7d15e1f0d54edf49bb2587b7905ef7a1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 42a1c7636d115d8c187173a9d0998cd9b6d9108ea25c91f8f60dcfb5d42c218d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718795"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119787765"
 ---
-# <a name="idcompositionlineartransfereffectsetgreenslope-methods"></a>IDCompositionLinearTransferEffect:: SetGreenSlope (métodos)
+# <a name="idcompositionlineartransfereffectsetgreenslope-methods"></a>Métodos IDCompositionLinearTransferEffect::SetGreenSlope
 
 Establece la pendiente de la función lineal para el canal verde.
 
@@ -40,7 +40,7 @@ Establece la pendiente de la función lineal para el canal verde.
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dcomp. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dcomp.h</dt> </dl> |
 
 
 
