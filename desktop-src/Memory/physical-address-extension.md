@@ -13,19 +13,19 @@ ms.locfileid: "119979725"
 ---
 # <a name="physical-address-extension"></a>Extensión de dirección física
 
-La extensión de dirección física (PAE) es una característica de procesador que permite que los procesadores x86 accedan a más de 4 GB de memoria física en versiones compatibles de Windows. Algunas versiones de 32 bits de Windows Server que se ejecutan en sistemas basados en x86 pueden usar PAE para acceder a hasta 64 GB o 128 GB de memoria física, en función del tamaño de la dirección física del procesador. Para obtener más información, vea [Límites de memoria Windows versiones](memory-limits-for-windows-releases.md)de .
+La extensión de dirección física (PAE) es una característica de procesador que permite que los procesadores x86 accedan a más de 4 GB de memoria física en versiones compatibles de Windows. Algunas versiones de 32 bits de Windows Server que se ejecutan en sistemas basados en x86 pueden usar PAE para acceder a hasta 64 GB o 128 GB de memoria física, según el tamaño de la dirección física del procesador. Para obtener más información, [vea Límites de memoria Windows versiones](memory-limits-for-windows-releases.md)de .
 
 Las arquitecturas de procesador Intel Itanium y x64 pueden acceder a más de 4 GB de memoria física de forma nativa y, por tanto, no proporcionan el equivalente de PAE. PAE solo se usa en versiones de 32 bits de Windows que se ejecutan en sistemas basados en x86.
 
 Con PAE, el sistema operativo pasa de la traducción de direcciones lineales de dos niveles a la traducción de direcciones de tres niveles. En lugar de dividir una dirección lineal en tres campos independientes para la indexación en tablas de memoria, se divide en cuatro campos independientes: un campo de bits de 2 bits, dos campos de bits de 9 bits y un campo de bits de 12 bits que corresponde al tamaño de página implementado por la arquitectura intel (4 KB). El tamaño de las entradas de tabla de página (PTE) y las entradas de directorio de página (PSE) en modo PAE aumenta de 32 a 64 bits. Los bits adicionales permiten que un PTE o PDE del sistema operativo haga referencia a la memoria física por encima de 4 GB.
 
-En las Windows de 32 bits que se ejecutan en sistemas basados en x64, [](data-execution-prevention.md) PAE también habilita varias características avanzadas del sistema y del procesador, como la prevención de ejecución de datos (DEP) habilitada para hardware, el acceso no uniforme a memoria [(NUMA)](../procthread/numa-support.md)y la capacidad de agregar memoria a un sistema mientras se ejecuta (agregar memoria activa).
+En los Windows de 32 bits que se ejecutan en sistemas basados en x64, [](data-execution-prevention.md) PAE también habilita varias características avanzadas del sistema y del procesador, como la prevención de ejecución de datos (DEP) habilitada para hardware, el acceso no uniforme a memoria [(NUMA)](../procthread/numa-support.md)y la capacidad de agregar memoria a un sistema mientras se ejecuta (agregar memoria activa).
 
 PAE no cambia la cantidad de espacio de direcciones virtuales disponible para un proceso. Cada proceso que se ejecuta en un Windows de 32 bits todavía se limita a un espacio de direcciones virtuales de 4 GB.
 
 ## <a name="system-support-for-pae"></a>Compatibilidad del sistema con PAE
 
-PAE solo se admite en las siguientes versiones de 32 bits Windows en sistemas basados en x86:
+PAE solo se admite en las siguientes versiones de 32 bits de Windows que se ejecutan en sistemas basados en x86:
 
 -   Windows 7 (solo 32 bits)
 -   Windows Server 2008 (solo 32 bits)
@@ -42,7 +42,7 @@ Para habilitar explícitamente PAE, use el siguiente comando [**BCDEdit /set**](
  **bcdedit /set \[ {ID} \] pae ForceEnable**  
 
 
-SI DEP está habilitado, la PAE no se puede deshabilitar. Use los siguientes [**comandos BCDEdit /set**](/windows-hardware/drivers/devtest/bcdedit--set) para deshabilitar DEP y PAE:
+Si DEP está habilitado, no se puede deshabilitar pae. Use los siguientes [**comandos BCDEdit /set**](/windows-hardware/drivers/devtest/bcdedit--set) para deshabilitar DEP y PAE:
 
  **bcdedit /set \[ {ID} \] nx AlwaysOff**  
 **bcdedit /set \[ {ID} \] pae ForceDisable**  
@@ -60,7 +60,7 @@ Pae, [ajuste de 4 gigabytes](4-gigabyte-tuning.md) (4GT) y extensiones de ventan
 
 Cuando no se usan 4GT ni AWE, la cantidad de memoria física que puede usar un único proceso de 32 bits está limitada por el tamaño de su espacio de direcciones (2 GB). En este caso, un sistema habilitado para PAE puede seguir utilizando más de 4 GB de RAM para ejecutar varios procesos al mismo tiempo o para almacenar en caché los datos de archivo en memoria.
 
-4GT se puede usar con o sin PAE. Sin embargo, algunas versiones Windows limitar la cantidad máxima de memoria física que se puede admite cuando se usa 4GT. En estos sistemas, el arranque con 4GT habilitado hace que el sistema operativo ignore cualquier memoria que supere el límite.
+4GT se puede usar con o sin PAE. Sin embargo, algunas versiones de Windows limitar la cantidad máxima de memoria física que se puede admite cuando se usa 4GT. En estos sistemas, el arranque con 4GT habilitado hace que el sistema operativo ignore cualquier memoria que supere el límite.
 
 AWE no requiere PAE ni 4GT, pero a menudo se usa junto con PAE para asignar más de 4 GB de memoria física desde un único proceso de 32 bits.
 

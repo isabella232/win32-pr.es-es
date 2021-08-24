@@ -1,21 +1,21 @@
 ---
-description: Novedades de Windows 7. Identifica una propiedad que está relacionada con la propiedad definida en el archivo de descripción de la propiedad.
+description: Novedad de Windows 7. Identifica una propiedad relacionada con la propiedad definida en el archivo de descripción de propiedad.
 ms.assetid: 30167942-141A-4f37-B019-0811BA654124
 title: relatedProperty
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cabde093a47a25834598659d3ad38e0847c1351d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4285c0f8b0731ba790cd57105f907cd4df85b6faa41c3f649588aca7ef457418
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360559"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119938685"
 ---
 # <a name="relatedproperty"></a>relatedProperty
 
-Novedades de Windows 7. Identifica una propiedad que está relacionada con la propiedad definida en el archivo de descripción de la propiedad. Puede haber tantos elementos [relatedProperty]() dentro de un [relatedPropertyInfo](./propdesc-schema-relatedpropertyinfo.md) como sea necesario.
+Novedad de Windows 7. Identifica una propiedad relacionada con la propiedad definida en el archivo de descripción de propiedad. Puede haber tantos [elementos relatedProperty]() dentro de [relatedPropertyInfo](./propdesc-schema-relatedpropertyinfo.md) como sea necesario.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```
@@ -36,7 +36,7 @@ Novedades de Windows 7. Identifica una propiedad que está relacionada con la pr
 
 | Elemento primario                                                   | Elementos secundarios |
 |------------------------------------------------------------------|----------------|
-| [relatedPropertyInfo](./propdesc-schema-relatedpropertyinfo.md) | None           |
+| [relatedPropertyInfo](./propdesc-schema-relatedpropertyinfo.md) | Ninguno           |
 
 
 
@@ -55,9 +55,9 @@ Novedades de Windows 7. Identifica una propiedad que está relacionada con la pr
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este elemento le permite asignar una propiedad a otra. Por ejemplo, puede asignar el texto de su propiedad personalizada, fabrikam. StorageCapacity, a System. Capacity:
+Este elemento permite asignar una propiedad a otra. Por ejemplo, puede asignar el texto de la propiedad personalizada Fabrikam.StorageCapacity a System.Capacity:
 
 
 ```

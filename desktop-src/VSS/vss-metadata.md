@@ -21,7 +21,7 @@ Los metadatos se representan en formato XML mediante un esquema propietario. Los
 
 **Precaución:** Los detalles específicos del formato y el esquema son solo para uso del sistema. Los desarrolladores no deben intentar modificar ni usar directamente la representación XML de los metadatos.
 
-A los escritores y solicitantes se les proporciona una variedad de métodos de consulta y establecimiento para acceder y modificar los documentos componentes de copia de seguridad y metadatos del escritor:
+Los escritores y solicitantes se proporcionan con una variedad de consultas y establecen métodos para acceder a los documentos Componentes de copia de seguridad y Metadatos del escritor y modificarlos:
 
 -   [Trabajar con el documento de metadatos del escritor](working-with-the-writer-metadata-document.md)
 -   [Trabajar con el documento componentes de copia de seguridad](working-with-the-backup-components-document.md)

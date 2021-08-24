@@ -553,14 +553,14 @@ Tipo de familia de procesadores.
 
 <span id="AMD_Turion_TM__II_Ultra_Dual-Core_Mobile_M_Processor_Family"></span><span id="amd_turion_tm__ii_ultra_dual-core_mobile_m_processor_family"></span><span id="AMD_TURION_TM__II_ULTRA_DUAL-CORE_MOBILE_M_PROCESSOR_FAMILY"></span>
 
-**AMDVulion(TM) II Ultra Dual-Core mobile M Processor Family** (56)
+**AMD Serie (TM) II Ultra Dual-Core procesador M móvil** (56)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="AMD_Turion_TM__II_Dual-Core_Mobile_M_Processor_Family"></span><span id="amd_turion_tm__ii_dual-core_mobile_m_processor_family"></span><span id="AMD_TURION_TM__II_DUAL-CORE_MOBILE_M_PROCESSOR_FAMILY"></span>
 
-**AMDVulion(TM) II Dual-Core mobile M Processor Family** (57)
+**AMD Serie(TM) II Dual-Core procesador M móvil** (57)
 
 
 </dt> <dd></dd> <dt>
@@ -735,28 +735,28 @@ Tipo de familia de procesadores.
 
 <span id="Hobbit_Family"></span><span id="hobbit_family"></span><span id="HOBBIT_FAMILY"></span>
 
-**FamiliaBit** (112)
+**Familia Debit** (112)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Crusoe_TM__TM5000_Family"></span><span id="crusoe_tm__tm5000_family"></span><span id="CRUSOE_TM__TM5000_FAMILY"></span>
 
-**Familia CRUSOE(TM) TM5000** (120)
+**Familia Crusoe(TM) TM5000** (120)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Crusoe_TM__TM3000_Family"></span><span id="crusoe_tm__tm3000_family"></span><span id="CRUSOE_TM__TM3000_FAMILY"></span>
 
-**Familia CRUSOE(TM) TM3000** (121)
+**Familia Crusoe(TM) TM3000** (121)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Efficeon_TM__TM8000_Family"></span><span id="efficeon_tm__tm8000_family"></span><span id="EFFICEON_TM__TM8000_FAMILY"></span>
 
-**Familia Tm8000 de Aliceon(TM)** (122)
+**Familia Tm8000 de Siiceon(TM)** (122)
 
 
 </dt> <dd></dd> <dt>
@@ -798,7 +798,7 @@ Tipo de familia de procesadores.
 
 <span id="AMD_Turion_TM__64_Mobile_Technology"></span><span id="amd_turion_tm__64_mobile_technology"></span><span id="AMD_TURION_TM__64_MOBILE_TECHNOLOGY"></span>
 
-**TECNOLOGÍA móvil AMD Uno(TM) 64** (134)
+**AMD AmdIon(TM) 64 Mobile Technology** (134)
 
 
 </dt> <dd></dd> <dt>
@@ -812,7 +812,7 @@ Tipo de familia de procesadores.
 
 <span id="AMD_Athlon_TM__64_X2_Dual-Core_Processor_Family"></span><span id="amd_athlon_tm__64_x2_dual-core_processor_family"></span><span id="AMD_ATHLON_TM__64_X2_DUAL-CORE_PROCESSOR_FAMILY"></span>
 
-**Amd Athlon(TM) 64 X2 Dual-Core procesador** (136)
+**AMD Athlon(TM) 64 X2 Dual-Core procesadores** (136)
 
 
 </dt> <dd></dd> <dt>
@@ -826,42 +826,42 @@ Tipo de familia de procesadores.
 
 <span id="Quad-Core_AMD_Opteron_TM__Processor_Family"></span><span id="quad-core_amd_opteron_tm__processor_family"></span><span id="QUAD-CORE_AMD_OPTERON_TM__PROCESSOR_FAMILY"></span>
 
-**Familia de procesadores AMD Opteron(TM)** de cuatro núcleos (138)
+**Familia de procesadores Amd Opteron(TM)** de cuatro núcleos (138)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Third-Generation_AMD_Opteron_TM__Processor_Family"></span><span id="third-generation_amd_opteron_tm__processor_family"></span><span id="THIRD-GENERATION_AMD_OPTERON_TM__PROCESSOR_FAMILY"></span>
 
-**Familia de procesadores AMD Opteron(TM) de** tercera generación (139)
+**Familia de procesadores AMD Opteron(TM)** de tercera generación (139)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="AMD_Phenom_TM__FX_Quad-Core_Processor_Family"></span><span id="amd_phenom_tm__fx_quad-core_processor_family"></span><span id="AMD_PHENOM_TM__FX_QUAD-CORE_PROCESSOR_FAMILY"></span>
 
-**Familia de procesadores AMD Fxom(TM) Quad-Core** (140)
+**FAMILIA DE PROCESADORES AMDOm(TM) FX Quad-Core procesador** (140)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="AMD_Phenom_TM__X4_Quad-Core_Processor_Family"></span><span id="amd_phenom_tm__x4_quad-core_processor_family"></span><span id="AMD_PHENOM_TM__X4_QUAD-CORE_PROCESSOR_FAMILY"></span>
 
-**Familia de procesadores amd Quad-Core Amd ™om(TM) X4** (141)
+**Familia de procesadores de Quad-Core AMDOm(TM) X4** (141)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="AMD_Phenom_TM__X2_Dual-Core_Processor_Family"></span><span id="amd_phenom_tm__x2_dual-core_processor_family"></span><span id="AMD_PHENOM_TM__X2_DUAL-CORE_PROCESSOR_FAMILY"></span>
 
-**Familia de procesadores de Dual-Core AMD Amd ™om(TM) X2** (142)
+**Familia de procesadores Dual-Core AMDOm(TM) X2** (142)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="AMD_Athlon_TM__X2_Dual-Core_Processor_Family"></span><span id="amd_athlon_tm__x2_dual-core_processor_family"></span><span id="AMD_ATHLON_TM__X2_DUAL-CORE_PROCESSOR_FAMILY"></span>
 
-**Amd Athlon(TM) X2 Dual-Core procesador** (143)
+**Amd Athlon(TM) X2 Dual-Core processor family** (143)
 
 
 </dt> <dd></dd> <dt>
@@ -924,28 +924,28 @@ Tipo de familia de procesadores.
 
 <span id="Quad-Core_Intel_R__Xeon_R__processor_3200_Series"></span><span id="quad-core_intel_r__xeon_r__processor_3200_series"></span><span id="QUAD-CORE_INTEL_R__XEON_R__PROCESSOR_3200_SERIES"></span>
 
-**Procesador Intel(R) Xeon(R) serie 3200** de cuatro núcleos (161)
+**Procesador Intel(R) Xeon(R)** de cuatro núcleos serie 3200 (161)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Dual-Core_Intel_R__Xeon_R__processor_3000_Series"></span><span id="dual-core_intel_r__xeon_r__processor_3000_series"></span><span id="DUAL-CORE_INTEL_R__XEON_R__PROCESSOR_3000_SERIES"></span>
 
-**Procesador Intel(R) Xeon(R) serie 3000** de doble núcleo (162)
+**Procesador Intel(R) Xeon(R) de doble núcleo serie 3000** (162)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Quad-Core_Intel_R__Xeon_R__processor_5300_Series"></span><span id="quad-core_intel_r__xeon_r__processor_5300_series"></span><span id="QUAD-CORE_INTEL_R__XEON_R__PROCESSOR_5300_SERIES"></span>
 
-**Procesador Intel(R) Xeon(R) de cuatro núcleos serie 5300** (163)
+**Procesador Intel(R) Xeon(R)** de cuatro núcleos serie 5300 (163)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Dual-Core_Intel_R__Xeon_R__processor_5100_Series"></span><span id="dual-core_intel_r__xeon_r__processor_5100_series"></span><span id="DUAL-CORE_INTEL_R__XEON_R__PROCESSOR_5100_SERIES"></span>
 
-**Procesador Intel(R) Xeon(R) de doble núcleo serie 5100** (164)
+**Procesador Intel(R) Xeon(R)** de doble núcleo serie 5100 (164)
 
 
 </dt> <dd></dd> <dt>
@@ -959,28 +959,28 @@ Tipo de familia de procesadores.
 
 <span id="Dual-Core_Intel_R__Xeon_R__processor_LV"></span><span id="dual-core_intel_r__xeon_r__processor_lv"></span><span id="DUAL-CORE_INTEL_R__XEON_R__PROCESSOR_LV"></span>
 
-**Lv del procesador Intel(R) Xeon(R) de doble núcleo** (166)
+**Procesador Intel(R) Xeon(R) de doble núcleo LV** (166)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Dual-Core_Intel_R__Xeon_R__processor_ULV"></span><span id="dual-core_intel_r__xeon_r__processor_ulv"></span><span id="DUAL-CORE_INTEL_R__XEON_R__PROCESSOR_ULV"></span>
 
-**Procesador Intel(R) Xeon(R) de doble** núcleo ULV (167)
+**Procesador Intel(R) Xeon(R) de doble núcleo ULV** (167)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Dual-Core_Intel_R__Xeon_R__processor_7100_Series"></span><span id="dual-core_intel_r__xeon_r__processor_7100_series"></span><span id="DUAL-CORE_INTEL_R__XEON_R__PROCESSOR_7100_SERIES"></span>
 
-**Procesador Intel(R) Xeon(R) de doble núcleo serie 7100** (168)
+**Procesador Intel(R) Xeon(R)** de doble núcleo serie 7100 (168)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Quad-Core_Intel_R__Xeon_R__processor_5400_Series"></span><span id="quad-core_intel_r__xeon_r__processor_5400_series"></span><span id="QUAD-CORE_INTEL_R__XEON_R__PROCESSOR_5400_SERIES"></span>
 
-**Procesador Intel(R) Xeon(R) serie 5400** de cuatro núcleos (169)
+**Procesador Intel(R) Xeon(R) de cuatro núcleos serie 5400** (169)
 
 
 </dt> <dd></dd> <dt>
@@ -994,14 +994,14 @@ Tipo de familia de procesadores.
 
 <span id="Dual-Core_Intel_R__Xeon_R__processor_5200_Series"></span><span id="dual-core_intel_r__xeon_r__processor_5200_series"></span><span id="DUAL-CORE_INTEL_R__XEON_R__PROCESSOR_5200_SERIES"></span>
 
-**Procesador Intel(R) Xeon(R) de doble núcleo serie 5200** (171)
+**Procesador Intel(R) Xeon(R)** de doble núcleo serie 5200 (171)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Dual-Core_Intel_R__Xeon_R__processor_7200_Series"></span><span id="dual-core_intel_r__xeon_r__processor_7200_series"></span><span id="DUAL-CORE_INTEL_R__XEON_R__PROCESSOR_7200_SERIES"></span>
 
-**Procesador Intel(R) Xeon(R) de doble núcleo serie 7200** (172)
+**Procesador Intel(R) Xeon(R)** de doble núcleo serie 7200 (172)
 
 
 </dt> <dd></dd> <dt>
@@ -1022,7 +1022,7 @@ Tipo de familia de procesadores.
 
 <span id="Multi-Core_Intel_R__Xeon_R__processor_7400_Series"></span><span id="multi-core_intel_r__xeon_r__processor_7400_series"></span><span id="MULTI-CORE_INTEL_R__XEON_R__PROCESSOR_7400_SERIES"></span>
 
-**Procesador Intel(R) Xeon(R) serie 7400** de varios núcleos (175)
+**Procesador Intel(R) Xeon(R)** de varios núcleos serie 7400 (175)
 
 
 </dt> <dd></dd> <dt>
@@ -1113,7 +1113,7 @@ Tipo de familia de procesadores.
 
 <span id="Intel_R__Pentium_R__Processor_Extreme_Edition"></span><span id="intel_r__pentium_r__processor_extreme_edition"></span><span id="INTEL_R__PENTIUM_R__PROCESSOR_EXTREME_EDITION"></span>
 
-**Procesador Intel(R) Pentium(R) Extreme Edition** (188)
+**Intel(R) Pentium(R) Processor Extreme Edition** (188)
 
 
 </dt> <dd></dd> <dt>
@@ -1246,21 +1246,21 @@ Tipo de familia de procesadores.
 
 <span id="VIA_C7_TM_-M_Processor_Family"></span><span id="via_c7_tm_-m_processor_family"></span><span id="VIA_C7_TM_-M_PROCESSOR_FAMILY"></span>
 
-**Via C7(TM)-M Processor Family** (210)
+**VIA C7(TM)-M Processor Family** (210)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="VIA_C7_TM_-D_Processor_Family"></span><span id="via_c7_tm_-d_processor_family"></span><span id="VIA_C7_TM_-D_PROCESSOR_FAMILY"></span>
 
-**Via C7(TM)-D Processor Family** (211)
+**VIA C7(TM)-D Processor Family** (211)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="VIA_C7_TM__Processor_Family"></span><span id="via_c7_tm__processor_family"></span><span id="VIA_C7_TM__PROCESSOR_FAMILY"></span>
 
-**Familia de procesadores VIA C7(TM)** (212)
+**VIA C7(TM) Processor Family** (212)
 
 
 </dt> <dd></dd> <dt>
@@ -1281,7 +1281,7 @@ Tipo de familia de procesadores.
 
 <span id="Dual-Core_Intel_R__Xeon_R__processor_3xxx_Series"></span><span id="dual-core_intel_r__xeon_r__processor_3xxx_series"></span><span id="DUAL-CORE_INTEL_R__XEON_R__PROCESSOR_3XXX_SERIES"></span>
 
-**Procesador Intel(R) Xeon(R) de doble** núcleo serie 3xxx (215)
+**Procesador Intel(R) Xeon(R) de doble núcleo serie 3xxx** (215)
 
 
 </dt> <dd></dd> <dt>
@@ -1351,7 +1351,7 @@ Tipo de familia de procesadores.
 
 <span id="AMD_Phenom_TM__Triple-Core_Processor_Family"></span><span id="amd_phenom_tm__triple-core_processor_family"></span><span id="AMD_PHENOM_TM__TRIPLE-CORE_PROCESSOR_FAMILY"></span>
 
-**Familia de procesadores de Triple-Core amd Amd Triple-Core** (231)
+**Familia de procesadores de Triple-Core AMD Amd Triple-Core** (231)
 
 
 </dt> <dd></dd> <dt>
@@ -1365,7 +1365,7 @@ Tipo de familia de procesadores.
 
 <span id="AMD_Turion_TM__Dual-Core_Mobile_Processor_Family"></span><span id="amd_turion_tm__dual-core_mobile_processor_family"></span><span id="AMD_TURION_TM__DUAL-CORE_MOBILE_PROCESSOR_FAMILY"></span>
 
-**AMD Uno de los procesadores Dual-Core móvil** (233)
+**AMD Serie (TM) Dual-Core procesador móvil** (233)
 
 
 </dt> <dd></dd> <dt>
@@ -1862,7 +1862,7 @@ Información del socket de CPU que incluye datos sobre cómo se puede actualizar
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
@@ -1872,7 +1872,7 @@ Información del socket de CPU que incluye datos sobre cómo se puede actualizar
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

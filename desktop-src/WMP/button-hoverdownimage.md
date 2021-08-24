@@ -1,9 +1,9 @@
 ---
-title: BUTTON. hoverDownImage
-description: El atributo hoverDownImage especifica o recupera la imagen que se muestra cuando el botón está inactivo y el usuario mantiene el puntero del mouse sobre ella.
+title: BUTTON.hoverDownImage
+description: El atributo hoverDownImage especifica o recupera la imagen que se muestra cuando button está en estado de bajada y el usuario mantiene el mouse sobre ella con el puntero del mouse.
 ms.assetid: 06645307-50f1-400d-aa73-c48d0fba3ee1
 keywords:
-- BUTTON. hoverDownImage Windows Media Player
+- BUTTON.hoverDownImage Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0bc8221875656c38a35eb6539dce25f58133984f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bcdb23f9806e36cebd2f5da6a46a8307c268861d73f68361e07f56e9ce09dcc5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699330"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119902405"
 ---
-# <a name="buttonhoverdownimage"></a>BUTTON. hoverDownImage
+# <a name="buttonhoverdownimage"></a>BUTTON.hoverDownImage
 
-El atributo **hoverDownImage** especifica o recupera la imagen que se muestra cuando el **botón** está inactivo y el usuario mantiene el puntero del mouse sobre ella.
+El **atributo hoverDownImage** especifica o recupera la imagen que se muestra cuando **button** está en estado de bajada y el usuario mantiene el mouse sobre ella con el puntero del mouse.
 
 ``` syntax
         elementID.hoverDownImage
@@ -29,17 +29,17 @@ El atributo **hoverDownImage** especifica o recupera la imagen que se muestra cu
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura que contiene el nombre del archivo de imagen.
+Este atributo es una cadena de **lectura** y escritura que contiene el nombre del archivo de imagen.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los formatos de imagen admitidos son BMP, JPG, PNG y GIF.
 
 La imagen predeterminada es la especificada en el atributo **downImage** o su valor predeterminado.
 
-Si la imagen de mantener el mouse es mayor que la región definida en el atributo ambiente, se recortará la imagen desplegable.
+Si la imagen con el mouse hacia abajo es mayor que la región definida en el atributo ambient, se recortará la imagen con el mouse hacia abajo.
 
-Si no se puede recuperar la imagen, se muestra una imagen predeterminada (la imagen roja x).
+Si no se puede recuperar la imagen, se muestra una imagen predeterminada (la imagen red-x).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,7 +47,7 @@ Si no se puede recuperar la imagen, se muestra una imagen predeterminada (la ima
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -58,7 +58,7 @@ Si no se puede recuperar la imagen, se muestra una imagen predeterminada (la ima
 [**Elemento BUTTON**](button-element.md)
 </dt> <dt>
 
-[**BUTTON. downImage**](button-downimage.md)
+[**BUTTON.downImage**](button-downimage.md)
 </dt> </dl>
 
  

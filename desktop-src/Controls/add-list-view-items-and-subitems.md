@@ -1,37 +1,37 @@
 ---
-title: Cómo agregar elementos de List-View y subelementos
+title: Cómo agregar elementos List-View y subelementos
 description: En este tema se muestra cómo agregar elementos y subelementos a un control de vista de lista.
 ms.assetid: B7E204DC-FD08-4639-985D-1459A1AC0ED6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f2b3d20008edc10fda810261427507c77e9cfe34
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 6365e077c65da33424c5dadd32a0ab98ed6ab7c82eb83e1ecb5a3a007b0f27f5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104149736"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922045"
 ---
-# <a name="how-to-add-list-view-items-and-subitems"></a>Cómo agregar elementos de List-View y subelementos
+# <a name="how-to-add-list-view-items-and-subitems"></a>Cómo agregar elementos List-View y subelementos
 
 En este tema se muestra cómo agregar elementos y subelementos a un control de vista de lista.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
 
-Para agregar un elemento a un control de vista de lista, una aplicación debe definir primero una estructura [**LVITEM**](/windows/win32/api/commctrl/ns-commctrl-lvitema) y, a continuación, enviar un mensaje [**\_ INSERTITEM de LVM**](lvm-insertitem.md) , especificando la dirección de la estructura **LVITEM** . Si una aplicación usa la vista de informe, se debe proporcionar el texto del subelemento.
+Para agregar un elemento a un control de vista de lista, una aplicación debe definir primero una estructura [**LVITEM**](/windows/win32/api/commctrl/ns-commctrl-lvitema) y, a continuación, enviar un mensaje [**\_ LVM INSERTITEM,**](lvm-insertitem.md) especificando la dirección de la **estructura LVITEM.** Si una aplicación usa la vista de informe, se debe proporcionar texto de subelemento.
 
-En el siguiente ejemplo de código de C++ se rellena una estructura [**LVITEM**](/windows/win32/api/commctrl/ns-commctrl-lvitema) y se agregan los elementos de vista de lista mediante el mensaje [**\_ INSERTITEM de LVM**](lvm-insertitem.md) o la macro [**ListView \_ InsertItem**](/windows/desktop/api/Commctrl/nf-commctrl-listview_insertitem)correspondiente. Dado que la aplicación guarda su propio texto, especifica el \_ valor de LPSTR TEXTCALLBACK para el miembro **miembros pszText** de la estructura **LVITEM** . Especificar el valor de LPSTR \_ TEXTCALLBACK hace que el control envíe un código de notificación de [**LVN \_ GETDISPINFO**](lvn-getdispinfo.md) a su ventana propietaria siempre que necesite mostrar un elemento.
+En el siguiente ejemplo de código de C++ se rellena una estructura [**LVITEM**](/windows/win32/api/commctrl/ns-commctrl-lvitema) y se agregan los elementos de vista de lista mediante el mensaje [**\_ LVM INSERTITEM**](lvm-insertitem.md) o la macro [**correspondiente ListView \_ InsertItem**](/windows/desktop/api/Commctrl/nf-commctrl-listview_insertitem). Dado que la aplicación guarda su propio texto, especifica el valor LPSTR TEXTCALLBACK para el \_ **miembro pszText** de la **estructura LVITEM.** La especificación del valor LPSTR TEXTCALLBACK hace que el control envíe un código de notificación \_ [**LVN \_ GETDISPINFO**](lvn-getdispinfo.md) a su ventana de propietario siempre que necesite mostrar un elemento.
 
 
 ```C++
@@ -134,13 +134,13 @@ void HandleWM_NOTIFY(LPARAM lParam)
 
 <dl> <dt>
 
-[Referencia de control de vista de lista](bumper-list-view-list-view-control-reference.md)
+[Referencia del control List-View](bumper-list-view-list-view-control-reference.md)
 </dt> <dt>
 
-[Acerca de los controles List-View](list-view-controls-overview.md)
+[Acerca de List-View controles](list-view-controls-overview.md)
 </dt> <dt>
 
-[Usar controles List-View](using-list-view-controls.md)
+[Usar List-View controles](using-list-view-controls.md)
 </dt> </dl>
 
  

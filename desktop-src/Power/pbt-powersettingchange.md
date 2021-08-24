@@ -1,5 +1,5 @@
 ---
-description: Evento de cambio de configuración de energía enviado con un mensaje de ventana WM POWERBROADCAST o en una devolución de llamada de notificación \_ HandlerEx para servicios.
+description: Evento de cambio de configuración de energía enviado con un mensaje de ventana WM POWERBROADCAST o en una devolución de llamada de \_ notificación HandlerEx para servicios.
 ms.assetid: 0bcadb85-47c5-48a9-b3f9-f0a1ca60b503
 title: PBT_POWERSETTINGCHANGE evento (WinUser.h)
 ms.topic: reference
@@ -34,11 +34,11 @@ WindowProc( HWND hwnd,      // handle to window
 *Hwnd* 
 </dt> <dd>
 
-Identificador a ventana.
+Identificador de la ventana.
 
 </dd> <dt>*uMsg*</dt> <dd> 
 
-| Valor                                                                                                                                                                                                                                                                   | Significado                        |
+| Value                                                                                                                                                                                                                                                                   | Significado                        |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
 | <span id="WM_POWERBROADCAST"></span><span id="wm_powerbroadcast"></span><dl> <dt>**[**WM \_ POWERBROADCAST**](wm-powerbroadcast.md)**</dt> <dt>536 (0x218)</dt> </dl> | Identificador del mensaje.<br/> |
 
@@ -48,7 +48,7 @@ Identificador a ventana.
 
 </dd> <dt>*wParam*</dt> <dd> 
 
-| Valor                                                                                                                                                                                                                                                        | Significado                      |
+| Value                                                                                                                                                                                                                                                        | Significado                      |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|
 | <span id="PBT_POWERSETTINGCHANGE"></span><span id="pbt_powersettingchange"></span><dl> <dt>**PBT \_ POWERSETTINGCHANGE**</dt> <dt>32787 (0x8013)</dt> </dl> | Identificador de evento.<br/> |
 
@@ -61,7 +61,7 @@ Identificador a ventana.
 *lParam* 
 </dt> <dd>
 
-Puntero a una [**estructura \_ DE CONFIGURACIÓN DE POWERBROADCAST.**](/windows/desktop/api/WinUser/ns-winuser-powerbroadcast_setting)
+Puntero a una [**estructura \_ SETTING de POWERBROADCAST.**](/windows/desktop/api/WinUser/ns-winuser-powerbroadcast_setting)
 
 </dd> </dl>
 
@@ -73,7 +73,7 @@ No de devuelve ningún valor.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                     |
@@ -81,7 +81,7 @@ No de devuelve ningún valor.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

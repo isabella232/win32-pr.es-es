@@ -29,7 +29,7 @@ Invertir un número de 32 bits.
 | Elemento                                                            | Descripción                                                  |
 |-----------------------------------------------------------------|--------------------------------------------------------------|
 | <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[en \] La dirección de *src0* con bits invertidos.<br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] Número de 32 bits que se invertirá.<br/>              |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] El número de 32 bits que se invertirá.<br/>              |
 
 
 
@@ -59,9 +59,9 @@ Esta instrucción se admite en los siguientes modelos de sombreador:
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
 | [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | No        |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | No        |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | No        |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
 | [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |

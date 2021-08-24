@@ -1,33 +1,33 @@
 ---
-description: El atributo stretchmode especifica cómo ajustar una imagen que no coincide con las dimensiones de salida.
+description: El atributo stretchmode especifica cómo extender una imagen que no coincide con las dimensiones de salida.
 ms.assetid: 9a26bb8b-2b1c-424a-ae30-e175c60c76a1
 title: Atributo stretchmode
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 48a629a34dc1875a7f1d3669e32c53d0e8d3d29c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ed398fbe193ef262bdfc9a28cf66bef3a5b11f759d90c460cc99342ec7cd66b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911702"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119903875"
 ---
 # <a name="stretchmode-attribute"></a>Atributo stretchmode
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El `stretchmode` atributo especifica cómo ajustar una imagen que no coincide con las dimensiones de salida.
+El `stretchmode` atributo especifica cómo extender una imagen que no coincide con las dimensiones de salida.
 
 ## <a name="possible-values"></a>Valores posibles
 
-Debe tener uno de los valores siguientes.
+Debe tener uno de los siguientes valores.
 
 -   "stretch": la imagen se ajusta para ajustarse al tamaño del marco de salida sin conservar la relación de aspecto. (Es el valor predeterminado).
--   "recortar": la imagen se recorta para ajustarse al tamaño del marco de salida.
--   "PreserveAspectRatio": se conserva la relación de aspecto original, con una panorámica negra a lo largo de la dimensión más corta.
--   "preserveaspectrationoletterbox": la imagen cambia de tamaño para rellenar todo el marco de destino conservando la relación de aspecto.
+-   "crop": la imagen se recorta para ajustarse al tamaño del marco de salida.
+-   "preserveaspectratio": se conserva la relación de aspecto original, con un cuadro de letras negro a lo largo de la dimensión más corta.
+-   "preserveaspectrationoletterbox": se cambia el tamaño de la imagen para rellenar todo el marco de destino a la vez que se conserva la relación de aspecto.
 
 ## <a name="applies-to"></a>Se aplica a
 

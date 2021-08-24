@@ -1,81 +1,81 @@
 ---
-title: Clases, elementos y Estados de estilo de Aero
-description: En este tema se describen las clases, los elementos y los Estados admitidos por el tema de Aero, que define los estilos visuales que Microsoft vista utiliza de forma predeterminada.
+title: Clases de estilo, partes y estados de Aero
+description: En este tema se describen las clases, las partes y los estados admitidos por el tema Aero, que define los estilos visuales que Usa Microsoft Vista de forma predeterminada.
 ms.assetid: 6ec340a8-8ad1-406e-9fe1-9da9710ee27e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a484e11d04c7e935083ee85fadd9466b8f57dd4f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 437ef4a4b032e4f1b5824d94f0ba924ca82745d0b7ea413044b87267ea1f891b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103773770"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119921925"
 ---
-# <a name="aero-style-classes-parts-and-states"></a>Clases, elementos y Estados de estilo de Aero
+# <a name="aero-style-classes-parts-and-states"></a>Clases de estilo, partes y estados de Aero
 
-En este tema se describen las clases, los elementos y los Estados admitidos por el tema de Aero, que define los estilos visuales que Microsoft vista utiliza de forma predeterminada.
+En este tema se describen las clases, las partes y los estados admitidos por el tema Aero, que define los estilos visuales que Usa Microsoft Vista de forma predeterminada.
 
 
 
 | Clase          | Parte                        | States                                                                                     |
 |----------------|-----------------------------|--------------------------------------------------------------------------------------------|
-| AeroWizard     | \_botón AW                  |                                                                                            |
-|                | AW \_ COMMANDAREA             |                                                                                            |
-|                | AW \_ CONTENTAREA             | CONTENTAREA de AW \_ S \_ \_                                                               |
-|                | AW \_ HEADERAREA              | HEADERAREA de AW \_ S \_ \_                                                                |
-|                | \_TITLEBAR AW                | el \_ \_ título de la TITLEBAR de AW s está \_ activo \_ \_ \_ .                                         |
-| Botón         | \_casilla BP                |                                                                                            |
-|                | GROUPBOX de BP \_                |                                                                                            |
-|                | \_pulsador BP              |                                                                                            |
-|                | botón de \_ opción BP             |                                                                                            |
+| AviónWizard     | BOTÓN \_ AW                  |                                                                                            |
+|                | COMMANDAREA de AW \_             |                                                                                            |
+|                | AW \_ CONTENTAREA             | AW \_ S \_ CONTENTAREA \_ NOMARGIN                                                               |
+|                | AW \_ HEADERAREA              | AW \_ S \_ HEADERAREA \_ NOMARGIN                                                                |
+|                | AW \_ TITLEBAR                | AW \_ S \_ TITLEBAR \_ ACTIVE, AW \_ S \_ TITLEBAR \_ INACTIVE                                         |
+| Botón         | CASILLA \_ BP                |                                                                                            |
+|                | BP \_ GROUPBOX                |                                                                                            |
+|                | BP \_ PUSHBUTTON              |                                                                                            |
+|                | BP \_ RADIOBUTTON             |                                                                                            |
 | ComboboxStyle  | CP \_ DROPDOWNBUTTON          |                                                                                            |
 |                | CP \_ DROPDOWNBUTTONLEFT      |                                                                                            |
 |                | CP \_ DROPDOWNBUTTONRIGHT     |                                                                                            |
-|                | CP de \_ solo lectura                |                                                                                            |
-| Comunicaciones | \_pestaña CSST                   | CSTB \_ activo, CSTB \_ normal, CSTB \_ seleccionado                                                    |
-| ControlPanel   | CPANEL \_ BANNERAREA          |                                                                                            |
-|                | CPANEL \_ BODYTEXT            |                                                                                            |
+|                | CP \_ READONLY                |                                                                                            |
+| Comunicaciones | PESTAÑA \_ CSST                   | CSTB \_ HOT, CSTB \_ NORMAL, CSTB \_ SELECCIONADO                                                    |
+| Controlpanel   | BANNERAREA DE CPANEL \_          |                                                                                            |
+|                | TEXTO DE \_ CUERPO DE CPANEL            |                                                                                            |
 |                | CPANEL \_ BODYTITLE           |                                                                                            |
-|                | \_botón cPanel              |                                                                                            |
-|                | CPANEL \_ CONTENTLINK         | CPCL \_ Disabled, CPCL \_ Hot, CPCL \_ normal, CPCL \_ pressed                                     |
-|                | CPANEL \_ CONTENTPANE         |                                                                                            |
+|                | BOTÓN \_ CPANEL              |                                                                                            |
+|                | CPANEL \_ CONTENTLINK         | CTRLL \_ DISABLED, CTRLL \_ HOT, CTRLL \_ NORMAL, CTRLL \_ PRESSED                                     |
+|                | CONTENTPANE DE CPANEL \_         |                                                                                            |
 |                | CPANEL \_ CONTENTPANELABEL    |                                                                                            |
 |                | CPANEL \_ GROUPTEXT           |                                                                                            |
-|                | CPANEL \_ HELPLINK            | CPHL \_ Disabled, CPHL \_ Hot, CPHL \_ normal, CPHL \_ pressed                                     |
+|                | VÍNCULO DE \_ AYUDA DE CPANEL            | CPHL \_ DISABLED, CPHL \_ HOT, CPHL \_ NORMAL, CPHL \_ PRESSED                                     |
 |                | CPANEL \_ LARGECOMMANDAREA    |                                                                                            |
-|                | CPANEL \_ MESSAGETEXT         |                                                                                            |
-|                | CPANEL \_ NAVIGATIONPANE      |                                                                                            |
+|                | TEXTO \_ DE MENSAJE DE CPANEL         |                                                                                            |
+|                | PANEL DE NAVEGACIÓN DE CPANEL \_      |                                                                                            |
 |                | CPANEL \_ NAVIGATIONPANELABEL |                                                                                            |
-|                | CPANEL \_ SECTIONTITLELINK    | CPSTL en \_ caliente, CPSTL \_ normal                                                                  |
+|                | SECCIÓN DE \_ CPANELTITLELINK    | CPSTL \_ HOT, CPSTL \_ NORMAL                                                                  |
 |                | CPANEL \_ SMALLCOMMANDAREA    |                                                                                            |
-|                | CPANEL \_ TASKLINK            | CPTL \_ Disabled, CPTL \_ Hot, CPTL \_ normal, CPTL \_ Page, CPTL \_ pressed                         |
-|                | título de CPANEL \_               |                                                                                            |
-| DatePicker     | \_SHOWCALENDARBUTTONRIGHT DP |                                                                                            |
-| Colocar       | copia de DD \_                    |                                                                                            |
-|                | DD \_ CREATELINK              |                                                                                            |
-|                | movimiento de DD \_                    |                                                                                            |
-|                | DD \_ ninguno                    |                                                                                            |
+|                | CPANEL \_ TASKLINK            | CPTL \_ DISABLED, CPTL \_ HOT, CPTL \_ NORMAL, CPTL \_ PAGE, CPTL \_ PRESSED                         |
+|                | CPANEL \_ TITLE               |                                                                                            |
+| DatePicker     | DP \_ SHOWCALENDARBUTTONRIGHT |                                                                                            |
+| DragDrop       | DD \_ COPY                    |                                                                                            |
+|                | CREATELINK de DD \_              |                                                                                            |
+|                | DD \_ MOVE                    |                                                                                            |
+|                | DD \_ NONE                    |                                                                                            |
 |                | DD \_ UPDATEMETADATA          |                                                                                            |
-|                | ADVERTENCIA de DD \_                 |                                                                                            |
+|                | ADVERTENCIA \_ DE DD                 |                                                                                            |
 | ExplorerBar    | EBP \_ HEADERBACKGROUND       |                                                                                            |
-| Control flotante         | \_cuerpo del control flotante                | FBS \_ resaltado, FBS \_ normal                                                               |
-|                | encabezado de control flotante \_              |                                                                                            |
-|                | etiqueta de control flotante \_               | FLS \_ deshabilitado, FLS \_ resaltado, FLS \_ normal, FLS \_ seleccionado                                 |
-|                | vínculo de control flotante \_                | \_desplazar FLYOUTLINK, FLYOUTLINK \_ normal                                                      |
-|                | LINKAREA del control flotante \_            |                                                                                            |
-|                | LINKHEADER de control flotante \_          | \_desplazar FLH, FLH \_ normal                                                                    |
-|                | \_ventana flotante              |                                                                                            |
-| Encabezado         | HP \_ HEADERDROPDOWN          |                                                                                            |
+| Control flotante         | CUERPO DEL \_ FLYOUT                | FBS \_ RESALTADO, FBS \_ NORMAL                                                               |
+|                | ENCABEZADO \_ FLYOUT              |                                                                                            |
+|                | ETIQUETA DE CONTROL \_ FLYOUT               | FLS \_ DISABLED, FLS \_ EMPHASIZED, FLS \_ NORMAL, FLS \_ SELECTED                                 |
+|                | VÍNCULO DE \_ FLYOUT                | FLYOUTLINK \_ HOVER, FLYOUTLINK \_ NORMAL                                                      |
+|                | FLYOUT \_ LINKAREA            |                                                                                            |
+|                | FLYOUT \_ LINKHEADER          | FLH \_ HOVER, FLH \_ NORMAL                                                                    |
+|                | VENTANA DE \_ FLYOUT              |                                                                                            |
+| Header         | HP \_ HEADERDROPDOWN          |                                                                                            |
 |                | HP \_ HEADERDROPDOWNFILTER    |                                                                                            |
 |                | HP \_ HEADERITEM              |                                                                                            |
-| ListView       | LVP \_ encabezadodelgrupo            |                                                                                            |
-| Menú           | MENÚ \_ BARBACKGROUND         |                                                                                            |
+| ListView       | LVP \_ GROUPHEADER            |                                                                                            |
+| Menú           | BARRA \_ DE MENÚSBACKGROUND         |                                                                                            |
 |                | MENÚ \_ POPUPBACKGROUND       |                                                                                            |
 |                | MENÚ \_ POPUPGUTTER           |                                                                                            |
-| Progreso       | \_relleno PP                    | \_error PBFS, PBFS \_ parcial, PBFS \_ pausado                                                   |
-|                | TRANSPARENTBAR de PP \_          | PBBS \_ normal, PBBS \_ parcial                                                                |
-| Rebar          | cheurón de RP \_                 |                                                                                            |
-|                | \_agarrador de RP                 |                                                                                            |
+| Progreso       | PP \_ FILL                    | ERROR DE \_ PBFS, PBFS \_ PARCIAL, PBFS \_ EN PAUSA                                                   |
+|                | PP \_ TRANSPARENTBAR          | PBBS \_ NORMAL, PBBS \_ PARTIAL                                                                |
+| Rebar          | RP \_ CHEVRON                 |                                                                                            |
+|                | RP \_ GRIPPER                 |                                                                                            |
 | Barra de desplazamiento      | SBP \_ ARROWBTN               |                                                                                            |
 |                | SBP \_ LOWERTRACKHORZ         |                                                                                            |
 |                | SBP \_ LOWERTRACKVERT         |                                                                                            |
@@ -84,47 +84,47 @@ En este tema se describen las clases, los elementos y los Estados admitidos por 
 |                | SBP \_ THUMBBTNVERT           |                                                                                            |
 |                | SBP \_ UPPERTRACKHORZ         |                                                                                            |
 |                | SBP \_ UPPERTRACKVERT         |                                                                                            |
-| Girar           | SPNP \_ abajo                  |                                                                                            |
+| Girar           | SPNP \_ DOWN                  |                                                                                            |
 |                | SPNP \_ DOWNHORZ              |                                                                                            |
-|                | SPNP \_                    |                                                                                            |
+|                | SPNP \_ UP                    |                                                                                            |
 |                | SPNP \_ UPHORZ                |                                                                                            |
-| Status         | \_agarrador de SP                 |                                                                                            |
-|                | \_Panel SP                    |                                                                                            |
+| Estado         | SP \_ GRIPPER                 |                                                                                            |
+|                | PANEL \_ SP                    |                                                                                            |
 | Pestaña            | TABP \_ AEROWIZARDBODY        |                                                                                            |
-|                | \_Panel TABP                  |                                                                                            |
+|                | PANEL \_ TABP                  |                                                                                            |
 |                | TABP \_ TABITEM               |                                                                                            |
 | TaskDialog     | TDLG \_ BUTTONSECTION         |                                                                                            |
-|                | TDLG \_ CONTENTPANE           |                                                                                            |
+|                | CONTENTPANE de TDLG \_           |                                                                                            |
 |                | TDLG \_ EXPANDEDCONTENT       |                                                                                            |
 |                | TDLG \_ EXPANDEDFOOTERAREA    |                                                                                            |
 |                | TDLG \_ EXPANDOTEXT           |                                                                                            |
 |                | TDLG \_ FOOTNOTEPANE          |                                                                                            |
-|                | TDLG \_ MAININSTRUCTIONPANE   |                                                                                            |
-|                | TDLG \_ RADIOBUTTONPANE       |                                                                                            |
+|                | MAININSTRUCTIONPANE de TDLG \_   |                                                                                            |
+|                | RADIOBUTTONPANE de TDLG \_       |                                                                                            |
 |                | TDLG \_ VERIFICATIONTEXT      |                                                                                            |
-| Texto           | BODYTITLE de texto \_             |                                                                                            |
-|                | BODYTEXT de texto \_              |                                                                                            |
-|                | CONTROLLABEL de texto \_          | CONTROLLABEL de TS \_ \_ deshabilitado                                                                 |
-|                | TEXTO \_ expandido              |                                                                                            |
-|                | HYPERLINKTEXT de texto \_         | hipervínculo \_ \_ de TS deshabilitado, \_ hipervínculo de TS \_ activo, \_ hipervínculo de TS \_ normal, \_ hipervínculo de TS \_ presionado |
-|                | instrucción de texto \_           |                                                                                            |
-|                | etiqueta de texto \_                 |                                                                                            |
-|                | MAININSTRUCTION de texto \_       |                                                                                            |
-|                | SECONDARYTEXT de texto \_         |                                                                                            |
-| Barra de herramientas        | \_botón TP                  |                                                                                            |
-|                | TP \_ DROPDOWNBUTTON          |                                                                                            |
-|                | separador de TP \_               |                                                                                            |
+| Texto           | TEXT \_ BODYTITLE             |                                                                                            |
+|                | TEXT \_ BODYTEXT              |                                                                                            |
+|                | TEXT \_ CONTROLLABEL          | TS \_ CONTROLLABEL \_ DESHABILITADO                                                                 |
+|                | TEXTO \_ EXPANDIDO              |                                                                                            |
+|                | TEXT \_ HYPERLINKTEXT         | HIPERVÍNCULO DE TS \_ \_ DESHABILITADO, TS \_ HYPERLINK \_ HOT, TS \_ HYPERLINK \_ NORMAL, TS \_ HYPERLINK \_ PRESSED |
+|                | TEXT \_ INSTRUCTION           |                                                                                            |
+|                | ETIQUETA DE \_ TEXTO                 |                                                                                            |
+|                | \_MAININSTRUCTION DE TEXTO       |                                                                                            |
+|                | TEXTO \_ SECUNDARIO DE TEXTO         |                                                                                            |
+| Barra de herramientas        | BOTÓN \_ TP                  |                                                                                            |
+|                | BOTÓN \_ DESPLEGABLE TP          |                                                                                            |
+|                | SEPARADOR \_ DE TP               |                                                                                            |
 |                | TP \_ SPLITBUTTON             |                                                                                            |
 |                | TP \_ SPLITBUTTONDROPDOWN     |                                                                                            |
-| Información sobre herramientas        | globo de TTP \_                |                                                                                            |
-|                | BALLOONTITLE de TTP \_           |                                                                                            |
-|                | TTP \_ Standard               |                                                                                            |
-|                | STANDARDTITLE de TTP \_          |                                                                                            |
-| TrackBar       | \_Thumb TKP                  |                                                                                            |
-|                | pista de TKP \_                  |                                                                                            |
-| TreeView       | Glifo de TVP \_                  |                                                                                            |
-| Periodo         | Título del WP \_                 |                                                                                            |
-|                | CLOSEBUTTON de WP \_             |                                                                                            |
+| Información sobre herramientas        | GLOBO DE \_ TTP                |                                                                                            |
+|                | TTP \_ BALLOONTITLE           |                                                                                            |
+|                | TTP \_ STANDARD               |                                                                                            |
+|                | TTP \_ STANDARDTITLE          |                                                                                            |
+| Barra de seguimiento       | THUMB DE \_ TKP                  |                                                                                            |
+|                | PISTA DE \_ TKP                  |                                                                                            |
+| TreeView       | GLIFO \_ DE TVP                  |                                                                                            |
+| Periodo         | WP \_ CAPTION                 |                                                                                            |
+|                | WP \_ CLOSEBUTTON             |                                                                                            |
 |                | WP \_ HELPBUTTON              |                                                                                            |
 |                | WP \_ MAXBUTTON               |                                                                                            |
 |                | WP \_ MAXCAPTION              |                                                                                            |
@@ -136,11 +136,11 @@ En este tema se describen las clases, los elementos y los Estados admitidos por 
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

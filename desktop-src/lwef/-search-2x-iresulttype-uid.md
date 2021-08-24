@@ -1,11 +1,11 @@
 ---
-title: Propiedad UID de IResultType (WdsSharedIDL. h)
-description: Esta propiedad contiene el identificador único para el tipo.
+title: Propiedad IResultType UID (WdsSharedIDL.h)
+description: Esta propiedad contiene el identificador único del tipo.
 ms.assetid: 31c2ef7d-f5a7-441e-80ea-fd7e46fded07
 keywords:
-- Propiedad UID características de entorno heredado de Windows
-- Propiedad UID características de entorno heredado de Windows, interfaz IResultType
-- Interfaz IResultType características del entorno heredado de Windows, propiedad UID
+- Características heredadas del entorno de Windows UID
+- Interfaz IResultType de la propiedad UID Windows environment Features , IResultType
+- IResultType interface Legacy Windows Environment Features , UID property
 topic_type:
 - apiref
 api_name:
@@ -17,19 +17,19 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8dbdd5a9b17da9cde04ac0b371a885b07415d0e8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 89a67561d10d07a69ed7990f7491f12cb479060829ede212bc565230c2895c93
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151160"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120014575"
 ---
-# <a name="iresulttypeuid-property"></a>IResultType:: UID (propiedad)
+# <a name="iresulttypeuid-property"></a>Propiedad IResultType::UID
 
 > [!NOTE]
-> Windows Desktop Search 2. x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use la [API de búsqueda de Windows](../search/-search-reference-entry-page.md) en su lugar. 
+> Windows Desktop Search 2.x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use la API [Windows Search en](../search/-search-reference-entry-page.md) su lugar. 
 
-Esta propiedad contiene el identificador único para el tipo.
+Esta propiedad contiene el identificador único del tipo.
 
 Esta propiedad es de solo lectura.
 
@@ -46,7 +46,7 @@ HRESULT get_UID(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Dirección de la ubicación que contiene el UID.
+la dirección de la ubicación que contiene el uid.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,10 +54,10 @@ Dirección de la ubicación que contiene el UID.
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP con SP2 \[\]<br/>                                      |
-| Servidor mínimo compatible<br/> | Windows Server 2003 con \[ solo aplicaciones de escritorio de SP1\]<br/>                             |
-| Redistribuible<br/>          | Windows Desktop Search (WDS) 2.6.5<br/>                                             |
-| Encabezado<br/>                   | <dl> <dt>WdsSharedIDL. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de \[ escritorio sp2\]<br/>                                      |
+| Servidor mínimo compatible<br/> | Windows Server 2003 solo con aplicaciones de escritorio sp1 \[\]<br/>                             |
+| Redistribuible<br/>          | Windows Búsqueda de escritorio (WDS) 2.6.5<br/>                                             |
+| Header<br/>                   | <dl> <dt>WdsSharedIDL.h</dt> </dl> |
 
 
 

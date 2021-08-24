@@ -1,9 +1,9 @@
 ---
-title: Settings. defaultAudioLanguage
-description: La propiedad defaultAudioLanguage recupera el LCID del idioma de audio predeterminado especificado en Windows Media Player.
+title: Configuración.defaultAudioLanguage
+description: La propiedad defaultAudioLanguage recupera el LCID del idioma de audio predeterminado especificado en Reproductor de Windows Media.
 ms.assetid: 5f3c8d9e-2741-435d-a566-98b12d04bd75
 keywords:
-- Settings. defaultAudioLanguage Windows Media Player
+- Configuración.defaultAudioLanguage Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 06bbc0a8ae39ce33e9a872cd398830c374d9aadf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a64db73766493d720b650b299121096d07aada383cc6465e326d002d6819e3ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649554"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002455"
 ---
-# <a name="settingsdefaultaudiolanguage"></a>Settings. defaultAudioLanguage
+# <a name="settingsdefaultaudiolanguage"></a>Configuración.defaultAudioLanguage
 
-La propiedad **defaultAudioLanguage** recupera el LCID del idioma de audio predeterminado especificado en Windows Media Player.
+La **propiedad defaultAudioLanguage** recupera el LCID del idioma de audio predeterminado especificado en Reproductor de Windows Media.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
-Player. Settings. defaultAudioLanguage
+player.settings.defaultAudioLanguage
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es un **número** de solo lectura (**Long**).
+Esta propiedad es un número de solo **lectura** (**long**).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un LCID identifica de forma única un dialecto de lenguaje determinado, denominado configuración regional.
+Un LCID identifica de forma única un dialecto de idioma determinado, denominado configuración regional.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,7 +43,7 @@ Un LCID identifica de forma única un dialecto de lenguaje determinado, denomina
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior.<br/>                                 |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior.<br/>                                 |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -52,10 +52,10 @@ Un LCID identifica de forma única un dialecto de lenguaje determinado, denomina
 
 <dl> <dt>
 
-[**Controls. currentAudioLanguage**](controls-currentaudiolanguage.md)
+[**Controls.currentAudioLanguage**](controls-currentaudiolanguage.md)
 </dt> <dt>
 
-[**Objeto de configuración**](settings-object.md)
+[**Configuración Objeto**](settings-object.md)
 </dt> </dl>
 
  

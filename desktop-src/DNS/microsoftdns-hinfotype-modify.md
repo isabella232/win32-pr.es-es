@@ -3,8 +3,8 @@ title: Método Modify de la MicrosoftDNS_HINFOType clase
 description: El método Modify actualiza un registro de recursos de información de host (HINFO).
 ms.assetid: 8f8148f3-804f-4f99-8e79-606cd3cea660
 keywords:
-- Modificación del DNS del método
-- Modify method DNS , MicrosoftDNS_HINFOType class
+- Modificación del dns del método
+- Modificar el método DNS , MicrosoftDNS_HINFOType clase
 - MicrosoftDNS_HINFOType clase DNS , Método Modify
 topic_type:
 - apiref
@@ -45,21 +45,21 @@ void Modify(
 
 <dl> <dt>
 
-*TTL* \[ in, opcional\]
+*TTL* \[ en, opcional\]
 </dt> <dd>
 
 Tiempo, en segundos, que un solucionador DNS puede almacenar en caché el RR.
 
 </dd> <dt>
 
-*CPU* \[ in, opcional\]
+*CPU* \[ en, opcional\]
 </dt> <dd>
 
 Tipo de CPU del propietario del registro.
 
 </dd> <dt>
 
-*SISTEMA OPERATIVO* \[ in, opcional\]
+*Sistema operativo* \[ en, opcional\]
 </dt> <dd>
 
 Sistema operativo del propietario del registro.
@@ -79,13 +79,13 @@ Este método no devuelve ningún valor.
 
 ## <a name="remarks"></a>Comentarios
 
-Cualquier parámetro no especificado se deja sin cambios en el registro modificado.
+Cualquier parámetro no especificado se deja sin modificar en el registro modificado.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
@@ -94,7 +94,7 @@ Cualquier parámetro no especificado se deja sin cambios en el registro modifica
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,19 +1,19 @@
 ---
-description: Evento por usuario generado por un cliente de mensajería instantánea cuando se usan características definidas en controles parentales.
+description: Evento por usuario generado por un cliente de mensajería instantánea cuando se usan características definidas en los controles parentales.
 ms.assetid: 45e80314-90b1-4fcf-9c8f-c9840ae1775b
-title: Evento WPCEVENT_IM_FEATURE (Wpcevent. h)
+title: WPCEVENT_IM_FEATURE evento (Wpcevent.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ee28f004560ed287bc3cb94cbee1bda876355834
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8046e755540a2282e84ea25c5278cf0c0b113264e78a3db31b6bd8a42de599cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001842"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119951454"
 ---
-# <a name="wpcevent_im_feature-event"></a>Evento de característica de WPCEVENT \_ im \_
+# <a name="wpcevent_im_feature-event"></a>Evento WPCEVENT \_ IM \_ FEATURE
 
-Evento por usuario generado por un cliente de mensajería instantánea cuando se usan características definidas en controles parentales.
+Evento por usuario generado por un cliente de mensajería instantánea cuando se usan características definidas en los controles parentales.
 
 
 ```C++
@@ -29,14 +29,14 @@ const EVENT_DESCRIPTOR WPCEVENT_IM_FEATURE = {0xb, 0x0, 0x10, 0x4, 0x16, 0xb, 0x
 *AppName* 
 </dt> <dd>
 
-El nombre de la aplicación de mensajería instantánea.
+Nombre de la aplicación de mensajería instantánea.
 
 </dd> <dt>
 
-*Versiónaplicación* 
+*AppVersion* 
 </dt> <dd>
 
-La cadena de versión de la aplicación.
+Cadena de versión de la aplicación.
 
 </dd> <dt>
 
@@ -50,42 +50,42 @@ Nombre de la cuenta de mensajería instantánea de este usuario.
 *ConvID* 
 </dt> <dd>
 
-IDENTIFICADOR de esta conversación.
+Identificador de esta conversación.
 
 </dd> <dt>
 
 *MediaType* 
 </dt> <dd>
 
-Un valor de la enumeración de [**\_ \_ características de WPCFLAG im**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_im_feature) que indica información sobre las características a las que se tiene acceso durante una interacción de mensajería instantánea.
+Valor de la enumeración [**WPCFLAG \_ IM \_ FEATURE**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_im_feature) que indica información sobre las características a las que se accede durante una interacción de mensajería instantánea.
 
 </dd> <dt>
 
 *Motivo* 
 </dt> <dd>
 
-Un valor de la enumeración [**WPCFLAG \_ ISBLOCKED**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_isblocked) que indica información sobre qué eventos están bloqueados y qué controles hay en su lugar.
+Valor de la enumeración [**\_ WPCFLAG ISBLOCKED**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_isblocked) que indica información sobre qué eventos están bloqueados para su uso y qué controles están en su lugar.
 
 </dd> <dt>
 
 *RecipCount* 
 </dt> <dd>
 
-El recuento de usuarios de mensajería instantánea que reciben la característica y que tienen identidades definidas en el campo de destinatario.
+Recuento de usuarios de mensajería instantánea que reciben la característica y que tienen identidades definidas en el campo destinatario.
 
 </dd> <dt>
 
 *Recipient* 
 </dt> <dd>
 
-Una cadena delimitada que contiene las identidades de la cuenta de mensajería instantánea de todos los usuarios que reciben la característica.
+Cadena delimitada que contiene identidades de cuenta de mensajería instantánea de todos los usuarios que reciben la característica.
 
 </dd> <dt>
 
 *Sender* 
 </dt> <dd>
 
-El nombre de la cuenta de mensajería instantánea para el usuario que ha originado la característica.
+Nombre de la cuenta de mensajería instantánea para el usuario que está aprovisionamiento de la característica.
 
 </dd> <dt>
 
@@ -96,10 +96,10 @@ Dirección IP del equipo del remitente.
 
 </dd> <dt>
 
-*Data* 
+*Datos* 
 </dt> <dd>
 
-La descripción de los datos de la característica.
+Descripción de los datos de la característica.
 
 </dd> </dl>
 
@@ -109,9 +109,9 @@ La descripción de los datos de la característica.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                             |
-| Encabezado<br/>                   | <dl> <dt>Wpcevent. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Wpcevent.h</dt> </dl> |
 
 
 
@@ -119,10 +119,10 @@ La descripción de los datos de la característica.
 
 <dl> <dt>
 
-[Uso de las API de registro para controles parentales](using-logging-apis-for-parental-controls.md)
+[Uso de las API de registro para los controles parentales](using-logging-apis-for-parental-controls.md)
 </dt> <dt>
 
-[**WPC \_ args \_ CONVERSATIONINITEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationinitevent)
+[**WPC \_ ARGS \_ CONVERSATIONINITEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationinitevent)
 </dt> </dl>
 
  

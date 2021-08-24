@@ -3,44 +3,44 @@ title: radio.csv
 description: radio.csv
 ms.assetid: 8b0a1852-b6c9-4598-b1ab-c679362794b3
 keywords:
-- Windows Media Player tiendas en línea, radio.csv
+- Reproductor de Windows Media en línea, radio.csv
 - tiendas en línea, radio.csv
-- Escriba 1 tiendas en línea, radio.csv
+- tiendas en línea de tipo 1, radio.csv
 - radio.csv
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5271f3a87b32d27996f61e444723f537a09cb827
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b473bfaa960dd499fae7eb309d02ccbd693b70061d0975c58357bd72e9dcc410
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357437"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002945"
 ---
 # <a name="radiocsv"></a>radio.csv
 
-Este archivo contiene entradas para cada fuente de radio incluida en el catálogo. Cada entrada es una fila compuesta por los campos delimitados por tabuladores que se describen en la tabla siguiente. Los campos deben aparecer en el orden mostrado.
+Este archivo contiene entradas para cada fuente de radio incluida en el catálogo. Cada entrada es una fila formada por los campos delimitados por tabulaciones que se describen en la tabla siguiente. Los campos deben aparecer en el orden indicado.
 
-En la columna formato de la tabla siguiente se describe la forma en que se da formato a cada campo de texto Unicode. No hace referencia al tipo de datos del contenido. Por ejemplo, si se indica Integer en la columna Format, significa que el campo contiene una cadena Unicode que representa un valor entero, en lugar de un entero real.
+La columna Formato de la tabla siguiente describe la forma en que se formatea cada campo de texto Unicode. No hace referencia al tipo de datos del contenido. Por ejemplo, si integer se indica en la columna Formato, significa que el campo contiene una cadena Unicode que representa un valor entero, en lugar de un entero real.
 
 
 
-| Campo              | Obligatorio | Formato                                                                                                               | Descripción                                                                                                                        |
+| Campo              | Requerido | Formato                                                                                                               | Descripción                                                                                                                        |
 |--------------------|----------|----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| RadioID            | Sí      | Entero no negativo.                                                                                                | IDENTIFICADOR de la fuente de radio que es única dentro de radio.csv.                                                                             |
-| Radiotítulo         | Sí      | Cadena Unicode. Ejemplo: aciertos esenciales<br/>                                                                    | Título de la fuente de radio.                                                                                                                  |
-| Radiosubtítulos      | No       | Cadena Unicode. Ejemplo: Top 40.                                                                                     | Subtítulo de la fuente de radio. Suele ser un género o un nombre de subgénero.                                                                               |
-| Programmer's         | Sí      | Cadena Unicode. Ejemplo: Terri Lee Duffy                                                                             | Nombre del programador de fuentes de radio. Se recomienda que este campo no supere los 32 caracteres.                                     |
-| PrimaryGenre       | Sí      | Entero no negativo.                                                                                                | IDENTIFICADOR del género principal. Solo se permite un valor.                                                                            |
-| Ánimo               | Sí      | Cadena Unicode. Ejemplo: divertido; amiable; condiciona sofisticación exuberant<br/>                                       | Serie de adjetivos que describen la música. No hay un punto y coma final después del último adjetivo.                                    |
+| RadioID            | Sí      | Entero no negativo.                                                                                                | Identificador de la fuente de radio que es única dentro radio.csv.                                                                             |
+| RadioTitle         | Sí      | Cadena Unicode. Ejemplo: Aciertos esenciales<br/>                                                                    | Título de la fuente de radio.                                                                                                                  |
+| RadioSubtitle      | No       | Cadena Unicode. Ejemplo: Top 40.                                                                                     | Subtítulo de fuente de radio. A menudo es un nombre de género o subgéneo.                                                                               |
+| Programador         | Sí      | Cadena Unicode. Ejemplo: Terri Lee Duffy                                                                             | Nombre del programador de la fuente de radio. Se recomienda que este campo no supere los 32 caracteres.                                     |
+| PrimaryGenre       | Sí      | Entero no negativo.                                                                                                | Identificador del género principal. Solo se permite un valor.                                                                            |
+| Humor               | Sí      | Cadena Unicode. Ejemplo: Divertido; que se puede; y, por tanto, y, por tanto, Exuberante<br/>                                       | Una serie de adjetivos que describen la música. Sin punto y coma final después del último adjetivo.                                    |
 | Category           | Sí      | Cadena de Unicode                                                                                                       | No se usa en esta versión. Debe estar vacío.                                                                                         |
-| Descripción        | No       | Cadena Unicode. Ejemplo: realice una mejora en la música de los intérpretes probados y verdaderos que no disappoint.<br/> | Descripción detallada para la presentación en páginas de propiedades. Se recomienda que este campo no supere los 256 caracteres.                   |
-| Popularidad         | Sí      | Entero no negativo o valor decimal. Ejemplo: 31<br/>                                                         | Clasificación de popularidad entre fuentes de radio. Puede ser 0.                                                                                    |
-| StarRating         | No       | Float. ejemplo: 3,21<br/>                                                                                       | Opcional. El valor, normalmente entre 0 y 5, se redondea al 1/4 más próximo para su presentación en la interfaz de usuario.                   |
+| Descripción        | No       | Cadena Unicode. Ejemplo: música animada y fácil de usar de los intérpretes que se han probado y verdaderos, que no se van a desaperar.<br/> | Descripción fácil de mostrar en las páginas de propiedades. Se recomienda que este campo no supere los 256 caracteres.                   |
+| Popularidad         | Sí      | Valor entero o decimal no negativo. Ejemplo: 31<br/>                                                         | Clasificación de popularidad entre las fuentes de radio. Puede ser 0.                                                                                    |
+| StarRating         | No       | Float.Example: 3.21<br/>                                                                                       | Opcional. El valor, normalmente entre 0 y 5, se redondea al 1/4 más cercano para mostrarse en la interfaz de usuario.                   |
 | IsSubscriptionOnly | Sí      | booleano. Puede ser 0 o 1.                                                                                              | Indica si la fuente solo está disponible por suscripción.                                                                      |
 | IsRecentlyAdded    | Sí      | booleano. Puede ser 0 o 1.                                                                                              | Indica si esta fuente se ha agregado recientemente.                                                                                    |
-| IsFeatured         | Sí      | booleano. Puede ser 0 o 1.                                                                                              | Indica si la fuente está destacada.                                                                                            |
+| IsFeatured         | Sí      | booleano. Puede ser 0 o 1.                                                                                              | Indica si la fuente tiene características.                                                                                            |
 | EditorialGlyph     | Sí      | Entero no negativo. Debe ser 0.                                                                                   | No se usa en esta versión. Debe ser 0.                                                                                             |
-| SortOrderRank      | Sí      | Entero no negativo.                                                                                                | Se puede usar para determinar el criterio de ordenación cuando todas las estaciones se enumeran en la interfaz de usuario. Debe ser 0 si no se utiliza este campo. |
+| SortOrderRank      | Sí      | Entero no negativo.                                                                                                | Se puede usar para determinar el criterio de ordenación cuando todas las estaciones aparecen en la interfaz de usuario. Debe ser 0 si no se usa este campo. |
 
 
 

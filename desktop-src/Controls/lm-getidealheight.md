@@ -3,7 +3,7 @@ title: LM_GETIDEALHEIGHT mensaje (Commctrl.h)
 description: 'LM_GETIDEALHEIGHT mensaje: recupera el alto preferido de un vínculo para el ancho actual del control.'
 ms.assetid: bf6ef3c1-89bc-4c56-9384-085fd00234e1
 keywords:
-- LM_GETIDEALHEIGHT de mensajes controles de Windows
+- LM_GETIDEALHEIGHT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d6e82f259124e6da285ed2357d48ca07d5f8c08
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7b0cd4b56da08baefe36d9ce1d669c4dbc4939883005c1cd45e59760566b468b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112403"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119920445"
 ---
 # <a name="lm_getidealheight-message"></a>Mensaje \_ GETIDEALHEIGHT de LM
 
@@ -50,11 +50,11 @@ Entero que representa el alto preferido del texto del vínculo, en píxeles.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

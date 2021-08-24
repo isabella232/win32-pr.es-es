@@ -37,13 +37,13 @@ Obtiene los estilos extendidos que están actualmente en uso para un control de 
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un **DWORD que** representa los estilos actualmente en uso para un control de vista de lista determinado. Este valor puede ser una combinación de [estilos de List-View extendidos.](extended-list-view-styles.md)
+Devuelve un **DWORD que** representa los estilos actualmente en uso para un control de vista de lista determinado. Este valor puede ser una combinación de [estilos List-View extendidos.](extended-list-view-styles.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |

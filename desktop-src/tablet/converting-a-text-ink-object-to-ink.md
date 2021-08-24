@@ -1,29 +1,29 @@
 ---
-description: Implementación de conversión de un objeto de entrada manuscrita de texto (tInk) en la entrada de lápiz.
+description: Implementación de la conversión de un objeto de entrada manuscrita de texto (tInk) a ink.
 ms.assetid: 9365da4c-3667-49f0-838f-f099d28dab44
-title: Convertir un objeto de entrada de lápiz de texto en tinta
+title: Convertir un objeto de entrada de lápiz de texto en lápiz
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b8c7fe4a7847834fffda2df9c4ab94293756cee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eef543fda3ed53123e99ee042aed67af9cedfef3533ae47bc40d8dd284a73675
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275106"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119941165"
 ---
-# <a name="converting-a-text-ink-object-to-ink"></a>Convertir un objeto de entrada de lápiz de texto en tinta
+# <a name="converting-a-text-ink-object-to-ink"></a>Convertir un objeto de entrada de lápiz de texto en lápiz
 
-Implementación de conversión de un objeto de entrada manuscrita de texto (tInk) en la entrada de lápiz.
+Implementación de la conversión de un objeto de entrada manuscrita de texto (tInk) a ink.
 
-## <a name="to-convert-from-a-text-ink-object-to-ink"></a>Para convertir un objeto de entrada de lápiz de texto en entrada de lápiz
+## <a name="to-convert-from-a-text-ink-object-to-ink"></a>Para convertir un objeto de entrada de lápiz de texto en lápiz
 
-1.  Use la interfaz [IPersistStream](/windows/win32/api/objidl/nn-objidl-ipersiststream) para escribir el contenido del objeto de entrada de lápiz de texto en una secuencia. El objeto de entrada manuscrita de texto usa el formato serializado de tinta para escribir en la secuencia.
-2.  Lea el contenido de la secuencia en una matriz de BYTEs.
-3.  Use el método [**Load**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdisp-load) del objeto [**InkDisp**](inkdisp-class.md) para cargar el contenido de la secuencia en el objeto **InkDisp** .
+1.  Use la [interfaz IPersistStream](/windows/win32/api/objidl/nn-objidl-ipersiststream) para escribir el contenido del objeto de entrada manuscrita de texto en una secuencia. El objeto de entrada de lápiz de texto usa el formato serializado de entrada de lápiz para escribir en el secuenciador.
+2.  Lea el contenido de la secuencia en una matriz BYTE.
+3.  Use el método Load del [**objeto**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdisp-load) [**InkDisp**](inkdisp-class.md) para cargar el contenido de la secuencia en el **objeto InkDisp.**
 
-## <a name="text-ink-object-to-ink-object-example"></a>Ejemplo de objeto de entrada de lápiz de texto en objeto de entrada manuscrita
+## <a name="text-ink-object-to-ink-object-example"></a>Ejemplo de objeto de entrada manuscrita a objeto ink
 
-En el siguiente fragmento de código se convierte un objeto de entrada manuscrita en tinta.
+El fragmento de código siguiente convierte un objeto de entrada de lápiz de texto en lápiz.
 
 En primer lugar, el código obtiene un objeto de entrada manuscrita de texto.
 
@@ -37,7 +37,7 @@ CComPtr<IInkObject *> spITextInk;
 
 
 
-A continuación, el código crea un puntero para la secuencia que contiene el contenido del objeto de entrada manuscrita.
+A continuación, el código crea un puntero para la secuencia que contiene el contenido del objeto de entrada manuscrita de texto.
 
 
 ```C++
@@ -47,7 +47,7 @@ CComPtr<IStream *> spStream = NULL;
 
 
 
-A continuación, el código obtiene la interfaz [IPersistStream](/windows/win32/api/objidl/nn-objidl-ipersiststream) del objeto de entrada de texto.
+A continuación, el código obtiene la [interfaz IPersistStream](/windows/win32/api/objidl/nn-objidl-ipersiststream) del objeto de entrada de lápiz de texto.
 
 
 ```C++
@@ -60,7 +60,7 @@ ASSERT(SUCCEEDED(hr) && spIPersistStream);
 
 
 
-A continuación, el código usa la interfaz [IPersistStream](/windows/win32/api/objidl/nn-objidl-ipersiststream) para guardar el contenido del objeto de entrada de lápiz en la secuencia.
+A continuación, el código usa [la interfaz IPersistStream](/windows/win32/api/objidl/nn-objidl-ipersiststream) para guardar el contenido del objeto de entrada manuscrita de texto en la secuencia.
 
 
 ```C++
@@ -77,7 +77,7 @@ if( SUCCEEDED(hr) && pIPersistStream )
 
 
 
-A continuación, el código crea un objeto [**InkCollector**](inkcollector-class.md) , crea un objeto [**InkDisp**](inkdisp-class.md) para **InkCollector**, adjunta **InkCollector** a la ventana de la aplicación y habilita la colección de entradas de lápiz en **InkCollector**.
+A continuación, el código crea un objeto [**InkCollector,**](inkcollector-class.md) crea un objeto [**InkDisp**](inkdisp-class.md) para **InkCollector,** adjunta **inkCollector** a la ventana de la aplicación y habilita la colección ink **en InkCollector.**
 
 
 ```C++
@@ -113,7 +113,7 @@ if( SUCCEEDED(hr) && spStream)
 
 
 
-Después, el código recupera el tamaño de la secuencia y crea una matriz segura para almacenar el contenido de la secuencia.
+A continuación, el código recupera el tamaño de la secuencia y crea una matriz segura para contener el contenido de la secuencia.
 
 
 ```C++
@@ -144,7 +144,7 @@ Después, el código recupera el tamaño de la secuencia y crea una matriz segur
 
 
 
-Por último, el código tiene acceso a la matriz segura y usa el método [**Load**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdisp-load) del objeto [**InkDisp**](inkdisp-class.md) para cargar la tinta de la matriz.
+Por último, el código accede a la matriz segura y usa el método [**Load**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdisp-load) del objeto [**InkDisp**](inkdisp-class.md) para cargar la entrada de lápiz desde la matriz.
 
 
 ```C++

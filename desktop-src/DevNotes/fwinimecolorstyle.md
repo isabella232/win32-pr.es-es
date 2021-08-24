@@ -1,7 +1,7 @@
 ---
-description: Especifica si el color especificado es un color de Windows.
+description: Especifica si el color especificado es un color Windows especificado.
 ms.assetid: 0d2b2039-938c-4f9d-8ddc-9eb711f55009
-title: FWinIMEColorStyle función)
+title: Función FWinIMEColorStyle
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Imeshare.dll
-ms.openlocfilehash: 28731672f5f1aff385f9051ba8b641b7cdcdf83c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 723c74ca5017d7908423a9934c002b67ffbc755623da175cc7f1e361f40b42e3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649652"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002315"
 ---
-# <a name="fwinimecolorstyle-function"></a>FWinIMEColorStyle función)
+# <a name="fwinimecolorstyle-function"></a>Función FWinIMEColorStyle
 
-Especifica si el color especificado es un color de Windows.
+Especifica si el color especificado es un color Windows especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,20 +39,20 @@ BOOL __cdecl FWinIMEColorStyle(
 
 <dl> <dt>
 
-*pcolorstyle* \[ de\]
+*pcolorstyle* \[ En\]
 </dt> <dd>
 
-Una estructura **IMECOLORSTY** devuelta por una función [**PColorStyleBackFromIMEStyle**](pcolorstylebackfromimestyle.md) o [**PColorStyleTextFromIMEStyle**](pcolorstyletextfromimestyle.md) .
+Estructura **IMECOLORSTY** devuelta desde una [**función PColorStyleBackFromIMEStyle**](pcolorstylebackfromimestyle.md) o [**PColorStyleTextFromIMEStyle.**](pcolorstyletextfromimestyle.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **verdadero** cuando el color es un color de Windows.
+Devuelve **TRUE** cuando el color es Windows color.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función no tiene asociado ningún archivo de encabezado o biblioteca de importación. debe llamarlo mediante las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Esta función no tiene asociada la biblioteca de importación ni el archivo de encabezado; Debe llamarlo mediante las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**y GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 

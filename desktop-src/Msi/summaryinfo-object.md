@@ -1,7 +1,7 @@
 ---
-description: El objeto SummaryInfo se usa para leer, crear y actualizar propiedades de documento desde la secuencia de información de Resumen de un objeto de almacenamiento.
+description: El objeto SummaryInfo se usa para leer, crear y actualizar las propiedades del documento desde el flujo de información de resumen de un objeto de almacenamiento.
 ms.assetid: 296e90d2-84b8-4c9e-8716-be90f94294ee
-title: SummaryInfo (objeto)
+title: Objeto SummaryInfo
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,33 +13,33 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 816a0ec4e307390edcb16d8e7096a7a4ef20c412
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3efdc009f40f0bce67559d185afb4cba1289c00fc1d7771a43d392601220dbae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653731"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120039595"
 ---
-# <a name="summaryinfo-object"></a>SummaryInfo (objeto)
+# <a name="summaryinfo-object"></a>Objeto SummaryInfo
 
-El objeto **SummaryInfo** se usa para leer, crear y actualizar propiedades de documento desde la [secuencia de información de Resumen](summary-information-stream.md) de un objeto de almacenamiento.
+El **objeto SummaryInfo** se usa para leer, crear y actualizar las propiedades del documento desde el flujo de información [de resumen](summary-information-stream.md) de un objeto de almacenamiento.
 
 ## <a name="members"></a>Miembros
 
-El objeto **SummaryInfo** tiene estos tipos de miembros:
+El **objeto SummaryInfo** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-El objeto **SummaryInfo** tiene estos métodos.
+El **objeto SummaryInfo** tiene estos métodos.
 
 
 
 | Método                                 | Descripción                                                                                                                                    |
 |:---------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Persist**](summaryinfo-persist.md) | Da formato y escribe las propiedades previamente almacenadas en la [secuencia de información de Resumen](summary-information-stream.md)estándar.<br/> |
+| [**Persist**](summaryinfo-persist.md) | Da formato y escribe las propiedades almacenadas previamente en el flujo de información [de resumen estándar.](summary-information-stream.md)<br/> |
 
 
 
@@ -47,13 +47,13 @@ El objeto **SummaryInfo** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-El objeto **SummaryInfo** tiene estas propiedades.
+El **objeto SummaryInfo** tiene estas propiedades.
 
 
 
 | Propiedad                                                                             | Descripción                                                                                     |
 |:-------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------|
-| [**Propiedad Property (objeto SummaryInfo)**](summaryinfo-summaryinfo.md)<br/> | Obtiene o establece el valor de la propiedad especificada en la secuencia de información de resumen.<br/> |
+| [**Propiedad Property (objeto SummaryInfo)**](summaryinfo-summaryinfo.md)<br/> | Obtiene o establece el valor de la propiedad especificada en el flujo de información de resumen.<br/> |
 | [**PropertyCount**](summaryinfo-propertycount.md)<br/>                        | Indica el número actual de valores de propiedad en el objeto de información de resumen.<br/>   |
 
 
@@ -66,9 +66,9 @@ El objeto **SummaryInfo** tiene estas propiedades.
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ ISummaryInfo se define como 000C109B-0000-0000-C000-000000000046<br/>                                                                                                                                                                         |
+| IID<br/>     | IID ISummaryInfo se define como \_ 000C109B-0000-0000-C000-000000000046<br/>                                                                                                                                                                         |
 
 
 
@@ -76,13 +76,13 @@ El objeto **SummaryInfo** tiene estas propiedades.
 
 <dl> <dt>
 
-[**Propiedad SummaryInformation (objeto Database)**](database-summaryinformation.md)
+[**SummaryInformation (propiedad, objeto Database)**](database-summaryinformation.md)
 </dt> <dt>
 
 [**Propiedad SummaryInformation (objeto Installer)**](installer-summaryinformation.md)
 </dt> <dt>
 
-[Ejemplos de scripting Windows Installer](windows-installer-scripting-examples.md)
+[Windows Ejemplos de scripting del instalador](windows-installer-scripting-examples.md)
 </dt> </dl>
 
  

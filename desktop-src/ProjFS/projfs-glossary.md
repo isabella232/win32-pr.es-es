@@ -1,25 +1,25 @@
 ---
-title: Glosario del sistema de archivos previsto de Windows
+title: Windows Glosario del sistema de archivos proyectado
 description: Términos especiales usados en ProjFS.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: <GUID-GOES-HERE>
 ms.date: 01/17/2020
 ms.topic: article
-ms.openlocfilehash: c6eac8faa83e2c898e4b1a3ada5c24ef81151b22
-ms.sourcegitcommit: a48b68a75323edfb902eb04fbe6d0ecba6988c21
+ms.openlocfilehash: 12b6e90d98fce3882aa5dc8d552f88e9cd9f389d24673fdc5caf175e180082f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "105720135"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120030994"
 ---
-# <a name="windows-projected-file-system-glossary"></a>Glosario del sistema de archivos previsto de Windows
+# <a name="windows-projected-file-system-glossary"></a>Windows Glosario del sistema de archivos proyectado
 
 Términos especiales usados en ProjFS.
 
 <dl>
 <dt>
 
-<span id="projfs.glossary_backing_store"></span><span id="PROJFS.GLOSSARY_BACKING_STORE"></span>**memoria auxiliar**
+<span id="projfs.glossary_backing_store"></span><span id="PROJFS.GLOSSARY_BACKING_STORE"></span>**almacén de respaldo**
 </dt>
 <dd>
 
@@ -28,20 +28,20 @@ Datos jerárquicos mantenidos por el proveedor que se proyectan en el sistema de
 
 <dt>
 
-<span id="projfs.glossary_dirty_placeholder"></span><span id="PROJFS.GLOSSARY_DIRTY_PLACEHOLDER"></span>**marcador de posición modificado**
+<span id="projfs.glossary_dirty_placeholder"></span><span id="PROJFS.GLOSSARY_DIRTY_PLACEHOLDER"></span>**marcador de posición dirty**
 </dt>
 <dd>
 
-Archivo o directorio que se ha modificado localmente y que ya no es una caché de su estado en el almacén del proveedor.  Consulte [Estado de la caché en la raíz de virtualización](cache-state.md).
+Un archivo o directorio que se ha modificado localmente y ya no es una memoria caché de su estado en el almacén del proveedor.  Consulte [Estado de caché en la raíz de virtualización.](cache-state.md)
 </dd>
 
 <dt>
 
-<span id="projfs.glossary_full_file_directory"></span><span id="PROJFS.GLOSSARY_FULL_FILE_DIRECTORY"></span>**archivo/directorio completo**
+<span id="projfs.glossary_full_file_directory"></span><span id="PROJFS.GLOSSARY_FULL_FILE_DIRECTORY"></span>**archivo o directorio completos**
 </dt>
 <dd>
 
-Un archivo o directorio creado en el sistema de archivos local, o un archivo que se ha modificado, de modo que ya no es una caché de su estado en la memoria auxiliar.  Consulte [Estado de la caché en la raíz de virtualización](cache-state.md).
+Un archivo o directorio que se creó en el sistema de archivos local o un archivo que se ha modificado, lo que hace que ya no sea una memoria caché de su estado en el almacén de respaldo.  Consulte [Estado de caché en la raíz de virtualización.](cache-state.md)
 </dd>
 
 <dt>
@@ -50,34 +50,34 @@ Un archivo o directorio creado en el sistema de archivos local, o un archivo que
 </dt>
 <dd>
 
-Archivo cuyo contenido y sus metadatos se han almacenado en memoria caché en el disco.  Consulte [Estado de la caché en la raíz de virtualización](cache-state.md).
+Archivo cuyo contenido y metadatos se han almacenado en caché en el disco.  Consulte [Estado de caché en la raíz de virtualización.](cache-state.md)
 </dd>
 
 <dt>
 
-<span id="projfs.glossary_placeholder"></span><span id="PROJFS.GLOSSARY_PLACEHOLDER"></span>**falso**
+<span id="projfs.glossary_placeholder"></span><span id="PROJFS.GLOSSARY_PLACEHOLDER"></span>**Marcador**
 </dt>
 <dd>
 
-Archivo o directorio que no está totalmente presente en el disco.  Consulte [Estado de la caché en la raíz de virtualización](cache-state.md).
+Un archivo o directorio que no está totalmente presente en el disco.  Consulte [Estado de caché en la raíz de virtualización.](cache-state.md)
 </dd>
 
 <dt>
 
-<span id="projfs.glossary_tombstone"></span><span id="PROJFS.GLOSSARY_TOMBSTONE"></span>**exclusión**
+<span id="projfs.glossary_tombstone"></span><span id="PROJFS.GLOSSARY_TOMBSTONE"></span>**Lápida**
 </dt>
 <dd>
 
-Marcador de posición oculto especial que representa un elemento que se ha eliminado del sistema de archivos local.  Consulte [Estado de la caché en la raíz de virtualización](cache-state.md).
+Marcador de posición oculto especial que representa un elemento que se ha eliminado del sistema de archivos local.  Consulte [Estado de caché en la raíz de virtualización.](cache-state.md)
 </dd>
 
 <dt>
 
-<span id="projfs.glossary_virtual_file_directory"></span><span id="PROJFS.GLOSSARY_virtual_file_directory"></span>**directorio/archivo virtual**
+<span id="projfs.glossary_virtual_file_directory"></span><span id="PROJFS.GLOSSARY_virtual_file_directory"></span>**archivo o directorio virtual**
 </dt>
 <dd>
 
-Archivo o directorio que no existe físicamente en el disco, sino que se proyecta en los resultados de la enumeración.  Consulte [Estado de la caché en la raíz de virtualización](cache-state.md).
+Un archivo o directorio que no existe físicamente en el disco, pero que se proyecta en resultados de enumeración.  Consulte [Estado de caché en la raíz de virtualización.](cache-state.md)
 </dd>
 
 <dt>
@@ -86,7 +86,7 @@ Archivo o directorio que no existe físicamente en el disco, sino que se proyect
 </dt>
 <dd>
 
-Objeto en memoria que administra la comunicación entre el proveedor y ProjFS para el conjunto de archivos y directorios ubicados en una raíz de virtualización determinada.
+Objeto en memoria que administra la comunicación entre el proveedor y ProjFS para el conjunto de archivos y directorios ubicados bajo una raíz de virtualización determinada.
 </dd>
 
 <dt>

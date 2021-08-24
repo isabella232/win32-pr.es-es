@@ -1,5 +1,5 @@
 ---
-description: En este tema se enumeran los métodos AddString de la clase GraphicsPath. Para obtener una lista completa de los métodos de la clase GraphicsPath, vea GraphicsPath.
+description: En este tema se enumeran los métodos AddString de la clase GraphicsPath. Para obtener una lista completa de los métodos para la clase GraphicsPath, vea GraphicsPath.
 ms.assetid: 048d67c9-1f57-4b05-b262-7d04ede69267
 title: Métodos GraphicsPath.AddString
 ms.date: 07/02/2019
@@ -13,7 +13,7 @@ ms.locfileid: "119964495"
 ---
 # <a name="graphicspathaddstring-methods"></a>Métodos GraphicsPath.AddString
 
-En este tema se enumeran los métodos AddString de la [**clase GraphicsPath.**](/windows/win32/api/gdipluspath/nl-gdipluspath-graphicspath) Para obtener una lista completa de métodos para la **clase GraphicsPath,** vea [**GraphicsPath**](/windows/win32/api/gdipluspath/nl-gdipluspath-graphicspath).
+En este tema se enumeran los métodos AddString de [**la clase GraphicsPath.**](/windows/win32/api/gdipluspath/nl-gdipluspath-graphicspath) Para obtener una lista completa de los métodos para la **clase GraphicsPath,** vea [**GraphicsPath**](/windows/win32/api/gdipluspath/nl-gdipluspath-graphicspath).
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 

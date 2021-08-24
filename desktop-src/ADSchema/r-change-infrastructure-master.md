@@ -1,10 +1,10 @@
 ---
-title: Change-Infrastructure-Master Extended Right
-description: Derecho extendido necesario para cambiar el propietario del rol FSMO de infraestructura.
+title: Derecho extendido de Change-Infrastructure-Master
+description: Derecho extendido necesario para cambiar el propietario del rol FSMO de la infraestructura.
 ms.assetid: f91eb790-1a05-4fbb-b269-fd80e3499bdb
 ms.tgt_platform: multiple
 keywords:
-- Cambiar el esquema de AD de la derecha extendida de cambio de infraestructura
+- Change-Infrastructure-Master extended right AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bee4abf74860ba6564af65b9b94f44d08e4177d5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e2de28ff2be401a84a48eb17b3982cb8ae41cbf79200d23538068f596f31ff75
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906258"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922415"
 ---
-# <a name="change-infrastructure-master-extended-right"></a>Change-Infrastructure-Master Extended Right
+# <a name="change-infrastructure-master-extended-right"></a>Derecho extendido de Change-Infrastructure-Master
 
-Derecho extendido necesario para cambiar el propietario del rol FSMO de infraestructura.
+Derecho extendido necesario para cambiar el propietario del rol FSMO de la infraestructura.
 
 
 
@@ -49,8 +49,8 @@ Derecho extendido necesario para cambiar el propietario del rol FSMO de infraest
 
 | Entrada | Value |
 |-------------------------|--------------------------------------------------------------------|
-| Applies-To              | [**Infraestructura: actualizar**](c-infrastructureupdate.md)<br/> |
-| Localización: ID. de presentación | 50                                                                 |
+| Applies-To              | [**Actualización de infraestructura**](c-infrastructureupdate.md)<br/> |
+| Localization-Display-ID | 50                                                                 |
 
 
 
@@ -60,8 +60,8 @@ Derecho extendido necesario para cambiar el propietario del rol FSMO de infraest
 
 | Entrada | Value |
 |-------------------------|--------------------------------------------------------------------|
-| Applies-To              | [**Infraestructura: actualizar**](c-infrastructureupdate.md)<br/> |
-| Localización: ID. de presentación | 50                                                                 |
+| Applies-To              | [**Actualización de infraestructura**](c-infrastructureupdate.md)<br/> |
+| Localization-Display-ID | 50                                                                 |
 
 
 
@@ -71,8 +71,8 @@ Derecho extendido necesario para cambiar el propietario del rol FSMO de infraest
 
 | Entrada | Value |
 |-------------------------|--------------------------------------------------------------------|
-| Applies-To              | [**Infraestructura: actualizar**](c-infrastructureupdate.md)<br/> |
-| Localización: ID. de presentación | 50                                                                 |
+| Applies-To              | [**Actualización de infraestructura**](c-infrastructureupdate.md)<br/> |
+| Localization-Display-ID | 50                                                                 |
 
 
 
@@ -82,8 +82,8 @@ Derecho extendido necesario para cambiar el propietario del rol FSMO de infraest
 
 | Entrada | Value |
 |-------------------------|--------------------------------------------------------------------|
-| Applies-To              | [**Infraestructura: actualizar**](c-infrastructureupdate.md)<br/> |
-| Localización: ID. de presentación | 50                                                                 |
+| Applies-To              | [**Actualización de infraestructura**](c-infrastructureupdate.md)<br/> |
+| Localization-Display-ID | 50                                                                 |
 
 
 
@@ -93,8 +93,8 @@ Derecho extendido necesario para cambiar el propietario del rol FSMO de infraest
 
 | Entrada | Value |
 |-------------------------|--------------------------------------------------------------------|
-| Applies-To              | [**Infraestructura: actualizar**](c-infrastructureupdate.md)<br/> |
-| Localización: ID. de presentación | 50                                                                 |
+| Applies-To              | [**Actualización de infraestructura**](c-infrastructureupdate.md)<br/> |
+| Localization-Display-ID | 50                                                                 |
 
 
 
@@ -104,8 +104,8 @@ Derecho extendido necesario para cambiar el propietario del rol FSMO de infraest
 
 | Entrada | Value |
 |-------------------------|--------------------------------------------------------------------|
-| Applies-To              | [**Infraestructura: actualizar**](c-infrastructureupdate.md)<br/> |
-| Localización: ID. de presentación | 50                                                                 |
+| Applies-To              | [**Actualización de infraestructura**](c-infrastructureupdate.md)<br/> |
+| Localization-Display-ID | 50                                                                 |
 
 
 

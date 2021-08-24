@@ -1,5 +1,5 @@
 ---
-description: Enviado por una transformación Media Foundation datos asincrónicos (MFT) para solicitar un nuevo ejemplo de entrada.
+description: Enviado por una transformación de Media Foundation asincrónica (MFT) para solicitar un nuevo ejemplo de entrada.
 ms.assetid: 5d5c50d9-fe4e-47ff-ae09-980911ebfb22
 title: Evento METransformNeedInput (Mfobjects.h)
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "120013505"
 ---
 # <a name="metransformneedinput-event"></a>Evento METransformNeedInput
 
-Enviado por una transformación Media Foundation datos asincrónicos (MFT) para solicitar un nuevo ejemplo de entrada.
+Enviado por una transformación de Media Foundation asincrónica (MFT) para solicitar un nuevo ejemplo de entrada.
 
 ## <a name="event-values"></a>Valores de evento
 
@@ -57,7 +57,7 @@ Cuando el cliente de MFT recibe este evento, debe llamar a [**ASETransform::P ro
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

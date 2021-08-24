@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 3009d2dc88e9987a3559da91eed1aa5aa1b248f9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9e827b1297a2bdd3bac39a22efa7f80e0d4723ded689e691423c6945a88bb729
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119897495"
 ---
 # <a name="swbemservicesexecquery-method"></a>SWbemServices.Exemétodo cQuery
 
@@ -52,7 +52,7 @@ objWbemObjectSet = .ExecQuery( _
 *strQuery* 
 </dt> <dd>
 
-Necesario. Cadena que contiene el texto de la consulta. Este parámetro no puede estar en blanco. Para obtener más información sobre la creación de cadenas de consulta WMI, vea Consulta con [WQL](querying-with-wql.md) y la referencia [de WQL.](wql-sql-for-wmi.md)
+Obligatorio. Cadena que contiene el texto de la consulta. Este parámetro no puede estar en blanco. Para obtener más información sobre la creación de cadenas de consulta WMI, vea Consulta con [WQL](querying-with-wql.md) y la referencia [de WQL.](wql-sql-for-wmi.md)
 
 </dd> <dt>
 
@@ -88,7 +88,7 @@ Hace que se devuelva un enumerador de solo avance. Los enumeradores de solo avan
 
 </dt> <dd>
 
-Hace que WMI conserve punteros a objetos de la enumeración hasta que el cliente libera el enumerador.
+Hace que WMI conserve punteros a objetos de la enumeración hasta que el cliente libere el enumerador.
 
 </dd> <dt>
 
@@ -121,7 +121,7 @@ Hace que esta llamada se bloquee hasta que se complete la consulta. Esta marca l
 
 </dt> <dd>
 
-Se usa para la creación de prototipos. Esta marca impide que la consulta se haga y devuelve un objeto que parece un objeto de resultado típico.
+Se usa para la creación de prototipos. Esta marca impide que se haga la consulta y devuelve un objeto que parece un objeto de resultado típico.
 
 </dd> <dt>
 
@@ -132,14 +132,14 @@ Se usa para la creación de prototipos. Esta marca impide que la consulta se hag
 
 </dt> <dd>
 
-Hace que WMI devuelva datos de modificación de clase con la definición de clase base. Para obtener más información, vea [Localización de información de clase WMI](localizing-wmi-class-information.md).
+Hace que WMI devuelva datos de modificación de clases con la definición de clase base. Para obtener más información, vea [Localizing WMI Class Information](localizing-wmi-class-information.md).
 
 </dd> </dl> </dd> <dt>
 
 *objWbemNamedValueSet* \[ Opcional\]
 </dt> <dd>
 
-Normalmente, esto no está definido. De lo contrario, se trata de un objeto [**SWbemNamedValueSet**](swbemnamedvalueset.md) cuyos elementos representan la información de contexto que puede usar el proveedor que está atendiendo la solicitud. Un proveedor que admita o requiera dicha información debe documentar los nombres de valor reconocidos, el tipo de datos del valor, los valores permitidos y la semántica.
+Normalmente, esto es indefinido. De lo contrario, se trata de un objeto [**SWbemNamedValueSet**](swbemnamedvalueset.md) cuyos elementos representan la información de contexto que puede usar el proveedor que está atendiendo la solicitud. Un proveedor que admita o requiera dicha información debe documentar los nombres de valor reconocidos, el tipo de datos del valor, los valores permitidos y la semántica.
 
 </dd> </dl>
 
@@ -181,14 +181,14 @@ La sintaxis de consulta no es válida.
 
 </dd> <dt>
 
-**wbemErrInvalidQueryType** - 2147749912 (0x80041018)
+**wbemErrInvalidQueryType:** 2147749912 (0x80041018)
 </dt> <dd>
 
 No se admite el lenguaje de consulta solicitado.
 
 </dd> <dt>
 
-**wbemErrOutOfMemory-** 2147749894 (0x80041006)
+**wbemErrOutOfMemory:** 2147749894 (0x80041006)
 </dt> <dd>
 
 No hay suficiente memoria para completar la operación.
@@ -197,7 +197,7 @@ No hay suficiente memoria para completar la operación.
 
 ## <a name="remarks"></a>Comentarios
 
-**ExecQuery** es una de las llamadas que se usan con más frecuencia para recuperar información de WMI. Una llamada estándar a **ExecQuery** tiene un aspecto similar al siguiente:
+**ExecQuery** es una de las llamadas más usadas para recuperar información de WMI. Una llamada estándar a **ExecQuery** tiene un aspecto similar al siguiente:
 
 
 ```VB
@@ -234,15 +234,15 @@ Next
 
 
 
-Otros [**métodos SWbemServices**](swbemservices.md) que devuelven [**SWbemObjectSet**](swbemobjectset.md) incluyen [**AssociatorsOf**](swbemservices-associatorsof.md), [**ReferencesTo**](swbemservices-referencesto.md)y [**SubclassesOf.**](swbemservices-subclassesof.md)
+Otros [**métodos SWbemServices**](swbemservices.md) que devuelven [**un SWbemObjectSet**](swbemobjectset.md) incluyen [**AssociatorsOf**](swbemservices-associatorsof.md), [**ReferencesTo**](swbemservices-referencesto.md)y [**SubclassesOf**](swbemservices-subclassesof.md).
 
 No es un error que la consulta devuelva un conjunto de resultados vacío. El **método ExecQuery** devuelve propiedades de clave independientemente de si se solicita o no la propiedad de clave en el *argumento strQuery.* Si se produce un error al ejecutar este método y no se usa la marca **wbemFlagReturnImmediately,** el objeto [Err](/previous-versions//sbf5ze0e(v=vs.85)) no se establece hasta que se intenta acceder al conjunto de objetos devuelto. Sin embargo, si usa la marca **wbemFlagReturnWhenComplete,** el objeto Err se establece cuando se llama al método **ExecQuery.**
 
-Hay límites en el número de palabras clave **AND** **y OR** que se pueden usar en consultas WQL. Un gran número de palabras clave WQL que se usan en una consulta compleja puede hacer que WMI devuelva el código de error **WBEM \_ E QUOTA \_ \_ VIOLATION** como **un valor HRESULT.** El límite de palabras clave WQL depende de lo compleja que sea la consulta.
+Hay límites en el número de palabras clave **AND** y **OR** que se pueden usar en consultas WQL. Un gran número de palabras clave WQL que se usan en una consulta compleja puede hacer que WMI devuelva el código de error **WBEM \_ E QUOTA \_ \_ VIOLATION** como **un valor HRESULT.** El límite de palabras clave de WQL depende de lo compleja que sea la consulta.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código de VBScript siguiente se localizan todas las unidades de disco del equipo local y se muestra el identificador de dispositivo y el tipo de la unidad de disco.
+En el ejemplo de código de VBScript siguiente se localizan todas las unidades de disco en el equipo local y se muestra el identificador de dispositivo y el tipo de la unidad de disco.
 
 
 ```VB
@@ -275,11 +275,11 @@ Next
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemServices<br/>                                                         |
@@ -287,7 +287,7 @@ Next
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

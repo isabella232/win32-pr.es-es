@@ -1,5 +1,5 @@
 ---
-description: 'Destructor CBaseStreamControl.~CBaseStreamControl: método Destructor.'
+description: 'Destructor CBaseStreamControl.~CBaseStreamControl: método destructor.'
 ms.assetid: 292b4e33-02e2-4325-9784-bd41893e1ff4
 title: Destructor CBaseStreamControl.~CBaseStreamControl (Strmctl.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ab25629d546dbbee656e5420fe0d94ca38fa227c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 440e3379b77bfbd39319d431cce115d60650ee930ad29fb172cb8c59210a89bb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119999665"
 ---
 # <a name="cbasestreamcontrolcbasestreamcontrol-destructor"></a>Destructor CBaseStreamControl.~CBaseStreamControl
 
@@ -42,12 +42,12 @@ Método destructor.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Strmctl.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Encabezado<br/>  | <dl> <dt>Strmctl.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

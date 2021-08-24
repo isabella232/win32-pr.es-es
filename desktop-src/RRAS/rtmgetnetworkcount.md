@@ -1,9 +1,9 @@
 ---
-title: Función RtmGetNetworkCount (RTM. h)
-description: La función RtmGetNetworkCount recupera el número de redes a las que el administrador de tabla de enrutamiento tiene rutas.
+title: Función RtmGetNetworkCount (Rtm.h)
+description: La función RtmGetNetworkCount recupera el número de redes a las que el administrador de tablas de enrutamiento tiene rutas.
 ms.assetid: d0c04b8d-a6c4-44bf-a3f2-de822d635131
 keywords:
-- RtmGetNetworkCount función RAS
+- Función RAS de RtmGetNetworkCount
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eab4babd1e9d98071b2fbe6ab30c9b92d4a23f0b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c721605988f15661030ddbeaadf4140fb716a089c87cc46fc2a8316bc2de9e42
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802209"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120035675"
 ---
-# <a name="rtmgetnetworkcount-function"></a>RtmGetNetworkCount función)
+# <a name="rtmgetnetworkcount-function"></a>Función RtmGetNetworkCount
 
-\[Esta API se ha sustituido por la API del [Administrador de tablas de enrutamiento versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API del administrador de tabla de enrutamiento versión 2.\]
+\[Esta API se ha reemplazado por la API [de Routing Table Manager versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API de Routing Table Manager versión 2.\]
 
-La función **RtmGetNetworkCount** recupera el número de redes a las que el administrador de tabla de enrutamiento tiene rutas.
+La **función RtmGetNetworkCount** recupera el número de redes a las que el administrador de tablas de enrutamiento tiene rutas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ ULONG RtmGetNetworkCount(
 
 <dl> <dt>
 
-*ProtocolFamily* \[ de\]
+*ProtocolFamily* \[ En\]
 </dt> <dd>
 
 Especifica para qué tipo de red se va a obtener información de ruta, por ejemplo, IP o IPX.
@@ -51,16 +51,16 @@ Especifica para qué tipo de red se va a obtener información de ruta, por ejemp
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto es el recuento de redes, el número de redes conocidas para los protocolos de enrutamiento de la familia de protocolos especificada.
+Si la función se realiza correctamente, el valor devuelto es el recuento de red, el número de redes conocidas por los protocolos de enrutamiento de la familia de protocolos especificada.
 
-Si el valor devuelto es cero, no hay ninguna ruta disponible o se produjo un error en la operación. Llame a [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) para obtener más información.
+Si el valor devuelto es cero, no hay rutas disponibles o no se pudo hacer la operación. Llame [**a GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) para obtener más información.
 
 
 
 | Value                                                                                                    | Descripción                                                                                                  |
 |----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**SIN \_ errores**</dt> </dl>                 | La operación se realizó correctamente, pero no hay ninguna ruta disponible.<br/>                                             |
-| <dl> <dt>**ERROR \_ de \_ parámetro no válido**</dt> </dl> | El valor del parámetro *ProtocolFamily* no se corresponde con ninguna familia de protocolos instalada.<br/> |
+| <dl> <dt>**NO \_ HAY NINGÚN ERROR**</dt> </dl>                 | La operación se ha hecho correctamente, pero no hay rutas disponibles.<br/>                                             |
+| <dl> <dt>**ERROR \_ PARÁMETRO NO \_ VÁLIDO**</dt> </dl> | El valor del *parámetro ProtocolFamily* no corresponde a ninguna familia de protocolos instalada.<br/> |
 
 
 
@@ -75,8 +75,8 @@ Si el valor devuelto es cero, no hay ninguna ruta disponible o se produjo un err
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>RTM. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>RTM. lib</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Rtm.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Rtm.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Rtm.dll</dt> </dl> |
 
 
@@ -85,16 +85,16 @@ Si el valor devuelto es cero, no hay ninguna ruta disponible o se produjo un err
 
 <dl> <dt>
 
-[Referencia de la versión 1 del administrador de tablas de enrutamiento](routing-table-manager-version-1-reference.md)
+[Referencia de la versión 1 de Routing Table Manager](routing-table-manager-version-1-reference.md)
 </dt> <dt>
 
-[Funciones de la versión 1 del administrador de tablas de enrutamiento](routing-table-manager-version-1-functions.md)
+[Funciones de Routing Table Manager versión 1](routing-table-manager-version-1-functions.md)
 </dt> <dt>
 
 [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)
 </dt> <dt>
 
-[Identificadores de la familia del protocolo RTMv1](routing-table-manager-version-1-protocol-family-identifiers.md)
+[Identificadores de familia de protocolo RTMv1](routing-table-manager-version-1-protocol-family-identifiers.md)
 </dt> </dl>
 
  

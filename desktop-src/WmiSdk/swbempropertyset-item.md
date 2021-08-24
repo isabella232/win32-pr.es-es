@@ -1,8 +1,8 @@
 ---
-description: El método Item del objeto SWbemPropertySet obtiene un SWbemProperty con nombre de la colección. Este es el método predeterminado para este objeto.
+description: El método Item del objeto SWbemPropertySet obtiene un objeto SWbemProperty con nombre de la colección. Este es el método predeterminado para este objeto.
 ms.assetid: 72025676-01dd-4fd7-b000-de6b09ecc6dc
 ms.tgt_platform: multiple
-title: Método SWbemPropertySet. Item (Wbemdisp. h)
+title: Método SWbemPropertySet.Item (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: b4d4dcbbbcb8b5225af038bf71e67c3a14260942
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: afd0aede44effb14005f111429e365e6831df0d2cae8d1d0685539620c696723
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119897965"
 ---
-# <a name="swbempropertysetitem-method"></a>SWbemPropertySet. Item (método)
+# <a name="swbempropertysetitem-method"></a>Método SWbemPropertySet.Item
 
-El método **Item** del objeto [**SWbemPropertySet**](swbempropertyset.md) obtiene un [**SWbemProperty**](swbemproperty.md) con nombre de la colección. Este es el método predeterminado para este objeto.
+El **método Item** del objeto [**SWbemPropertySet**](swbempropertyset.md) obtiene un objeto [**SWbemProperty con**](swbemproperty.md) nombre de la colección. Este es el método predeterminado para este objeto.
 
-Para obtener una explicación de esta sintaxis, vea [convenciones de documentos para la API de scripting](document-conventions-for-the-scripting-api.md).
+Para obtener una explicación de esta sintaxis, vea [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,10 +45,10 @@ objProperty = .Item( _
 
 <dl> <dt>
 
-*strName* \[ de\]
+*strName* \[ En\]
 </dt> <dd>
 
-Obligatorio. Nombre de la propiedad que se va a recuperar.
+Obligatorio. Nombre de la propiedad que se recuperará.
 
 </dd> <dt>
 
@@ -65,28 +65,28 @@ Si se realiza correctamente, se devuelve el objeto [**SWbemProperty**](swbemprop
 
 ## <a name="error-codes"></a>Códigos de error
 
-Después de completar el método **Item** , el objeto **Err** puede contener uno de los códigos de error de la lista siguiente.
+Después de completar el **método Item,** el **objeto Err** puede contener uno de los códigos de error de la lista siguiente.
 
 <dl> <dt>
 
-**wbemErrFailed** -2147749889 (0x80041001)
+**wbemErrFailed:** 2147749889 (0x80041001)
 </dt> <dd>
 
 Error no especificado.
 
 </dd> <dt>
 
-**wbemErrInvalidParameter** -2147749896 (0x80041008)
+**wbemErrInvalidParameter:** 2147749896 (0x80041008)
 </dt> <dd>
 
 Se especificó un parámetro no válido.
 
 </dd> <dt>
 
-**wbemErrOutOfMemory** -2147749896
+**wbemErrOutOfMemory:** 2147749896
 </dt> <dd>
 
-Memoria insuficiente para que se ejecute este método.
+No hay suficiente memoria para que se ejecute este método.
 
 </dd> </dl>
 
@@ -98,11 +98,11 @@ Memoria insuficiente para que se ejecute este método.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemPropertySet<br/>                                                      |
-| IID<br/>                      | \_ISWBEMPROPERTYSET IID<br/>                                                       |
+| IID<br/>                      | IID \_ ISWbemPropertySet<br/>                                                       |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Cierra un elemento de datos especificado de un almacenamiento protegido.
+description: Cierra un elemento de datos especificado del almacenamiento protegido.
 ms.assetid: 74919354-5e31-4ab5-9326-9f9aae206bd7
-title: 'IPStore:: CloseItem (método) (pstore. h)'
+title: Método IPStore::CloseItem (Pstore.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Pstorec.dll
-ms.openlocfilehash: e5f550df0ffa4dd2f35a91e768d70bb0359b9a4d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 54ebcc20686a09344990af5dc742d018f4e2a19d9ca8669b6a90bd4563014173
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670813"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120001635"
 ---
-# <a name="ipstorecloseitem-method"></a>IPStore:: CloseItem (método)
+# <a name="ipstorecloseitem-method"></a>Método IPStore::CloseItem
 
-\[El almacenamiento protegido (pstore) está disponible para su uso en Windows Server 2003 y Windows XP. Solo está disponible para las operaciones de solo lectura en Windows Server 2008 y Windows Vista, pero puede no estar disponible en las versiones posteriores. Pstore usa una implementación anterior de la protección de datos. Se recomienda encarecidamente a los desarrolladores que aprovechen la protección de datos más segura proporcionada por las funciones [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) y [**CryptUnprotectData**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata) .\]
+\[La Storage protegida (Pstore) está disponible para su uso en Windows Server 2003 y Windows XP. Solo está disponible para operaciones de solo lectura en Windows Server 2008 y Windows Vista, pero puede no estar disponible en versiones posteriores. Pstore usa una implementación anterior de la protección de datos. Se recomienda encarecidamente a los desarrolladores que aprovechen la protección de datos más segura que proporcionan las funciones [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) y [**CryptUnprotectData.**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata)\]
 
-Cierra un elemento de datos especificado de un almacenamiento protegido.
+Cierra un elemento de datos especificado del almacenamiento protegido.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,17 +45,17 @@ HRESULT CloseItem(
 
 <dl> <dt>
 
-*Clave* \[ de de\]
+*Clave* \[ En\]
 </dt> <dd>
 
-Especifica si el tipo es local en el equipo o solo está asociado con el usuario que crea.
+Especifica si el tipo es local en el equipo o solo está asociado al usuario que lo crea.
 
 
 
 | Value                                                                                                                                                                                                                                                   | Significado                                                                            |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| <span id="PST_KEY_CURRENT_USER"></span><span id="pst_key_current_user"></span><dl> <dt>**Archivo pst \_ \_ \_ Usuario actual clave**</dt> <dt>0x00000000</dt> </dl>    | El almacenamiento se mantiene en la sección usuario actual del registro.<br/>  |
-| <span id="PST_KEY_LOCAL_MACHINE"></span><span id="pst_key_local_machine"></span><dl> <dt>**Archivo pst \_ \_ \_ Máquina local de claves**</dt> <dt>0x00000001</dt> </dl> | El almacenamiento se mantiene en la sección del equipo local del registro.<br/> |
+| <span id="PST_KEY_CURRENT_USER"></span><span id="pst_key_current_user"></span><dl> <dt>**PST \_ Clave \_ actual \_ del usuario**</dt> <dt>0x00000000</dt> </dl>    | El almacenamiento se mantiene en la sección de usuario actual del Registro.<br/>  |
+| <span id="PST_KEY_LOCAL_MACHINE"></span><span id="pst_key_local_machine"></span><dl> <dt>**PST \_ Clave \_ de \_ máquina local**</dt> <dt>0x00000001</dt> </dl> | El almacenamiento se mantiene en la sección del equipo local del registro.<br/> |
 
 
 
@@ -63,37 +63,37 @@ Especifica si el tipo es local en el equipo o solo está asociado con el usuario
 
 </dd> <dt>
 
-*pItemType* \[ de\]
+*pItemType* \[ En\]
 </dt> <dd>
 
-Un puntero a un **GUID** que identifica el tipo de datos del elemento que se va a cerrar.
+Puntero a un **GUID que** identifica el tipo de datos del elemento que se cerrará.
 
 </dd> <dt>
 
-*pItemSubtype* \[ de\]
+*pItemSubtype* \[ En\]
 </dt> <dd>
 
-Un puntero a un **GUID** que indica el subtipo de elemento que se va a cerrar.
+Puntero a un **GUID que** indica el subtipo de elemento que se cerrará.
 
 </dd> <dt>
 
-*szItemName* \[ de\]
+*szItemName* \[ En\]
 </dt> <dd>
 
-Cadena que contiene el nombre del elemento que se va a cerrar.
+Cadena que contiene el nombre del elemento que se cerrará.
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
-Reserved: debe establecerse en cero.
+Reservado: debe establecerse en cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es un valor **HRESULT** . Un valor de **PST \_ E \_ OK** indica que la función se realizó correctamente.
+El valor devuelto es **un valor HRESULT.** Un valor de **PST \_ E OK \_ indica** que la función se ha realizado correctamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -101,7 +101,7 @@ El valor devuelto es un valor **HRESULT** . Un valor de **PST \_ E \_ OK** indic
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Pstore. h</dt> </dl>    |
+| Encabezado<br/> | <dl> <dt>Pstore.h</dt> </dl>    |
 | Archivo DLL<br/>    | <dl> <dt>Pstorec.dll</dt> </dl> |
 
 

@@ -1,19 +1,19 @@
 ---
-description: Evento por usuario generado por una aplicación de mensajería instantánea cuando una entidad intenta unirse a una conversación en curso en el control parental.
+description: Evento por usuario generado por una aplicación de mensajería instantánea cuando una entidad intenta unirse a una conversación en curso en Controles parentales.
 ms.assetid: 5251234b-0280-4d5d-80f5-295d720a89d1
-title: Evento WPCEVENT_IM_JOIN (Wpcevent. h)
+title: WPCEVENT_IM_JOIN evento (Wpcevent.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b020eb3d4204f946002f59f472e5c95b715f88f1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 181bc849cf89e8a78a7a5aaad97463baf0c611d99ca0dc05caf9bfaf879eb804
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119951295"
 ---
-# <a name="wpcevent_im_join-event"></a>\_Evento WPCEVENT im \_ join
+# <a name="wpcevent_im_join-event"></a>Evento WPCEVENT \_ IM \_ JOIN
 
-Evento por usuario generado por una aplicación de mensajería instantánea cuando una entidad intenta unirse a una conversación en curso en el control parental.
+Evento por usuario generado por una aplicación de mensajería instantánea cuando una entidad intenta unirse a una conversación en curso en Controles parentales.
 
 
 ```C++
@@ -29,14 +29,14 @@ const EVENT_DESCRIPTOR WPCEVENT_IM_JOIN = {0x8, 0x0, 0x10, 0x4, 0x16, 0x8, 0x800
 *AppName* 
 </dt> <dd>
 
-El nombre de la aplicación que está generando el evento.
+Nombre de la aplicación que genera el evento.
 
 </dd> <dt>
 
-*Versiónaplicación* 
+*AppVersion* 
 </dt> <dd>
 
-La cadena de versión de la aplicación que está generando el evento.
+Cadena de versión de la aplicación que genera el evento.
 
 </dd> <dt>
 
@@ -64,35 +64,35 @@ Cadena que contiene la dirección IP del equipo que se une a esta conversación.
 *JoiningUser* 
 </dt> <dd>
 
-Cadena de identidad de la cuenta de mensajería instantánea para el usuario que se va a combinar.
+Cadena de identidad de la cuenta de mensajería instantánea para el usuario que se va a unir.
 
 </dd> <dt>
 
 *Motivo* 
 </dt> <dd>
 
-Un valor de la enumeración [**WPCFLAG \_ ISBLOCKED**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_isblocked) que indica información sobre qué eventos están bloqueados y qué controles hay en su lugar.
+Valor de la enumeración [**\_ WPCFLAG ISBLOCKED**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_isblocked) que indica información sobre qué eventos están bloqueados para su uso y qué controles están en su lugar.
 
 </dd> <dt>
 
 *MemberCount* 
 </dt> <dd>
 
-El recuento de participantes que se encuentran en la conversación y que tienen identidades definidas en el campo de miembro.
+Recuento de participantes que están en la conversación y que tienen identidades definidas en el campo de miembro.
 
 </dd> <dt>
 
-*Member* 
+*Miembro* 
 </dt> <dd>
 
-Una cadena delimitada que contiene cadenas de identidad de la cuenta de mensajería instantánea para todos los miembros actuales de esta conversación.
+Cadena delimitada que contiene cadenas de identidad de cuenta de mensajería instantánea para todos los miembros actuales de esta conversación.
 
 </dd> <dt>
 
 *Sender* 
 </dt> <dd>
 
-Cadena de identidad de la cuenta de mensajería instantánea para el usuario que está realizando la solicitud para unirse a la conversación.
+Cadena de identidad de la cuenta de mensajería instantánea para el usuario que realiza la solicitud para unirse a la conversación.
 
 </dd> </dl>
 
@@ -102,9 +102,9 @@ Cadena de identidad de la cuenta de mensajería instantánea para el usuario que
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                             |
-| Encabezado<br/>                   | <dl> <dt>Wpcevent. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Wpcevent.h</dt> </dl> |
 
 
 
@@ -112,10 +112,10 @@ Cadena de identidad de la cuenta de mensajería instantánea para el usuario que
 
 <dl> <dt>
 
-[Uso de las API de registro para controles parentales](using-logging-apis-for-parental-controls.md)
+[Uso de las API de registro para los controles parentales](using-logging-apis-for-parental-controls.md)
 </dt> <dt>
 
-[**WPC \_ args \_ CONVERSATIONINITEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationinitevent)
+[**WPC \_ ARGS \_ CONVERSATIONINITEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationinitevent)
 </dt> </dl>
 
  

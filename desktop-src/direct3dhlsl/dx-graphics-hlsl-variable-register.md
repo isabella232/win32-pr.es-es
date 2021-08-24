@@ -66,7 +66,7 @@ Registre la declaración de tipo, número y subcomponente.
     | t    | Búfer de textura y textura |
     | c    | Desplazamiento del búfer              |
     | s    | Muestra                    |
-    | u    | Vista de acceso sin ordenar      |
+    | u    | Vista de acceso desordenado      |
 
     
 
@@ -110,7 +110,7 @@ sampler myVar : register( ps, s[2] )
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

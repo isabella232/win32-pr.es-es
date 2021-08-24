@@ -1,6 +1,6 @@
 ---
 UID: ''
-title: GuardCheckLongJumpTarget función)
+title: Función GuardCheckLongJumpTarget
 description: Intenta comprobar si el destino de un longjmp es válido.
 old-location: ''
 ms.assetid: na
@@ -35,24 +35,24 @@ api_name:
 targetos: Windows
 req.typenames: ''
 req.redist: ''
-ms.openlocfilehash: 02f659f77ab2bace129c9b9d9011b4c93e59b2f4
-ms.sourcegitcommit: 61bde60d4c3bc09defc3dcdb64c0ddadf52b214e
+ms.openlocfilehash: bcc8565401e09e8a4a3e0dfb221f240255b00bd0e91b9c2611b21db3ee1c0201
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "105656323"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002265"
 ---
-# <a name="guardchecklongjumptarget-function"></a>GuardCheckLongJumpTarget función)
+# <a name="guardchecklongjumptarget-function"></a>Función GuardCheckLongJumpTarget
 
 ## <a name="description"></a>Descripción
 
-Intenta comprobar si el destino de un [longjmp](/cpp/c-runtime-library/reference/longjmp) es válido para un proceso que tiene habilitada la [protección de flujo de control (cfg)](../secbp/control-flow-guard.md) .
+Intenta comprobar si el destino de [un longjmp](/cpp/c-runtime-library/reference/longjmp) es válido para un proceso que tiene [habilitado Control Flow Guard (CFG).](../secbp/control-flow-guard.md)
 
-Si la dirección de destino corresponde a una asignación de imagen, se extraen los destinos válidos para el archivo binario.
-La función utiliza esos destinos para validar el destino.
-Si el binario no tiene metadatos que describan el conjunto de destinos *longjmp* válidos, la función devuelve **true**.
+Si la dirección de destino corresponde a una asignación de imagen, se extraen los destinos válidos para el binario.
+La función usa esos destinos para validar el destino.
+Si el archivo binario no tiene metadatos que describan el conjunto de destinos *longjmp* válidos, la función devuelve **TRUE.**
 
-Si la dirección de destino corresponde a una asignación que no es de imagen, como en el código JIT, se consulta una directiva global de solo lectura para determinar si se permite el salto.
+Si la dirección de destino corresponde a una asignación que no es de imagen, como en el código JIT, se consulta una directiva de solo lectura global para determinar si se permite el salto.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -67,8 +67,8 @@ Si especifica **GUARD_CHECK_LONGJUMP_NON_FATAL** (0x1), esta función no finaliz
 
 ## <a name="returns"></a>Devoluciones
 
-**True** si el destino es válido; en caso contrario, **false**.
+**TRUE** si el destino es válido; de lo **contrario, FALSE.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ## <a name="see-also"></a>Vea también

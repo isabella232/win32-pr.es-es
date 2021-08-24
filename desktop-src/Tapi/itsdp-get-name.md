@@ -1,21 +1,21 @@
 ---
-description: El \_ método get Name obtiene el nombre de la sesión.
+description: El método get \_ Name obtiene el nombre de la sesión.
 ms.assetid: 97b44a01-585b-434c-ad59-51c35e8a1ceb
-title: 'Método ITSdp:: get_Name (Sdpblb. h)'
+title: Método ITSdp::get_Name (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b41d431a76f3d0bb2122847e8ee5c3a4dde3c1b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 930aaa1edcfb93f6a02a4ebe97acbbfcc1cfd42e8187d0ea14cf661c7ad7f66c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120012895"
 ---
-# <a name="itsdpget_name-method"></a>ITSdp:: get \_ Name (método)
+# <a name="itsdpget_name-method"></a>ITSdp::get \_ Name (método)
 
-\[ Las interfaces y controles de conferencias de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y las versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[Los controles e interfaces de conferencias de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-El método **Get \_ Name** obtiene el nombre de la sesión. Debe ser una cadena que se pueda convertir en ASCII si el juego de caracteres es ASCII. (De lo contrario, puede ser cualquier cadena **BSTR** ).
+El **método get \_ Name** obtiene el nombre de la sesión. Debe ser una cadena convertible ASCII si el juego de caracteres es ASCII. (De lo contrario, puede ser cualquier **cadena BSTR).**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,10 +32,10 @@ HRESULT get_Name(
 
 <dl> <dt>
 
-*ppName* \[ enuncia\]
+*ppName* \[ out\]
 </dt> <dd>
 
-Puntero a un **BSTR** que contiene el nombre de la sesión.
+Puntero a un **BSTR** que contiene el nombre de sesión.
 
 </dd> </dl>
 
@@ -47,9 +47,9 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                                   | Descripción                                                     |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>          | El método se realizó correctamente.<br/>                                    |
-| <dl> <dt>**\_puntero E**</dt> </dl>     | El parámetro *ppName* no es un puntero válido.<br/>       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No hay memoria suficiente para realizar la operación.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | El método se realizó correctamente.<br/>                                    |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>     | El *parámetro ppName* no es un puntero válido.<br/>       |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No existe memoria suficiente para realizar la operación.<br/> |
 | <dl> <dt>**E \_ FAIL**</dt> </dl>        | Error no especificado.<br/>                                   |
 | <dl> <dt>**E \_ NOTIMPL**</dt> </dl>     | Este método aún no se ha implementado.<br/>                  |
 
@@ -57,19 +57,19 @@ Este método puede devolver uno de estos valores.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La aplicación debe usar [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) para liberar la memoria asignada para el parámetro *ppName* .
+La aplicación debe usar [**SysFreeString para**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) liberar la memoria asignada para el *parámetro ppName.*
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,0 o posterior<br/>                                                 |
-| Encabezado<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
+| Header<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 
@@ -81,7 +81,7 @@ La aplicación debe usar [**SysFreeString**](/windows/win32/api/oleauto/nf-oleau
 [**ITSdp**](itsdp.md)
 </dt> <dt>
 
-[**ITSdp::p nombre de UT \_**](itsdp-put-name.md)
+[**ITSdp::put \_ Name**](itsdp-put-name.md)
 </dt> </dl>
 
  

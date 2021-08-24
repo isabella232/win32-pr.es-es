@@ -35,7 +35,7 @@ Si este atributo es **TRUE,** el motor de captura no selecciona ni usa un dispos
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,31 +1,31 @@
 ---
-description: La sesión del registrador del kernel de NT es una sesión de seguimiento de eventos que registra un conjunto predefinido de eventos de kernel.
+description: La sesión del registrador de kernel nt es una sesión de seguimiento de eventos que registra un conjunto predefinido de eventos de kernel.
 ms.assetid: 3c4258d8-8073-4cc5-a29d-ce485a3fdc14
-title: Configuración e inicio de la sesión del registrador del kernel de NT
+title: Configuración e inicio de la sesión del registrador de kernel de NT
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d13cb0d429bc4b0e01e02c33e2686040f0b7454b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a41398c9caac3ecd090af68a18bfb148095632d96b8c75eaaee7f04a551360fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104986134"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119901225"
 ---
-# <a name="configuring-and-starting-the-nt-kernel-logger-session"></a>Configuración e inicio de la sesión del registrador del kernel de NT
+# <a name="configuring-and-starting-the-nt-kernel-logger-session"></a>Configuración e inicio de la sesión del registrador de kernel de NT
 
-La sesión del registrador del kernel de NT es una sesión de seguimiento de eventos que registra un conjunto predefinido de eventos de kernel. No se llama a la función [**EnableTrace**](/windows/win32/api/evntrace/nf-evntrace-enabletrace) para habilitar los proveedores de kernel. En su lugar, se usa el miembro **EnableFlags** de la estructura de [**propiedades de \_ seguimiento \_ de eventos**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) para especificar los eventos de kernel que se desean recibir. La función [**StartTrace**](/windows/win32/api/evntrace/nf-evntrace-starttracea) usa las marcas de habilitación que se especifican para habilitar los proveedores de kernel.
+La sesión del registrador de kernel nt es una sesión de seguimiento de eventos que registra un conjunto predefinido de eventos de kernel. No se llama a la [**función EnableTrace**](/windows/win32/api/evntrace/nf-evntrace-enabletrace) para habilitar los proveedores de kernel. En su lugar, use el **miembro EnableFlags** de la estructura [**EVENT TRACE \_ \_ PROPERTIES**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) para especificar los eventos de kernel que desea recibir. La [**función StartTrace**](/windows/win32/api/evntrace/nf-evntrace-starttracea) usa las marcas de habilitación que especifique para habilitar los proveedores de kernel.
 
-Solo hay una sesión del registrador del kernel de NT. Si la sesión ya está en uso, la función [**StartTrace**](/windows/win32/api/evntrace/nf-evntrace-starttracea) devuelve el error \_ ya \_ existe.
+Solo hay una sesión de registrador de kernel de NT. Si la sesión ya está en uso, la [**función StartTrace**](/windows/win32/api/evntrace/nf-evntrace-starttracea) devuelve ERROR \_ ALREADY \_ EXISTS.
 
-Para obtener más información sobre cómo iniciar una sesión de seguimiento de eventos, vea [configurar e iniciar una sesión de seguimiento de eventos](configuring-and-starting-an-event-tracing-session.md).
+Para obtener más información sobre cómo iniciar una sesión de seguimiento de eventos, vea [Configuring and Starting an Event Tracing Session](configuring-and-starting-an-event-tracing-session.md).
 
-Para obtener información detallada sobre cómo iniciar una sesión de registrador privada, vea [configurar e iniciar una sesión de registrador privado](configuring-and-starting-a-private-logger-session.md).
+Para obtener más información sobre cómo iniciar una sesión de registrador privado, vea [Configuring and Starting a Private Logger Session](configuring-and-starting-a-private-logger-session.md).
 
-Para obtener más información sobre cómo iniciar una sesión del registrador global, vea [configurar e iniciar la sesión del registrador global](configuring-and-starting-the-global-logger-session.md).
+Para obtener más información sobre cómo iniciar una sesión de Registrador global, vea [Configuring and Starting the Global Logger Session](configuring-and-starting-the-global-logger-session.md).
 
-Para obtener más información sobre cómo iniciar una sesión del registrador automático, vea [configurar e iniciar una sesión de registrador automático](configuring-and-starting-an-autologger-session.md).
+Para obtener más información sobre cómo iniciar una sesión de AutoLogger, vea [Configuring and Starting an AutoLogger Session](configuring-and-starting-an-autologger-session.md).
 
-En el ejemplo siguiente se muestra cómo configurar e iniciar una sesión del registrador del kernel de NT que recopila eventos de kernel TCP/IP de red y los escribe en un archivo circular de 5 MB.
+En el ejemplo siguiente se muestra cómo configurar e iniciar una sesión de registrador de kernel NT que recopila eventos de kernel TCP/IP de red y los escribe en un archivo circular de 5 MB.
 
 
 ```C++
@@ -119,16 +119,16 @@ cleanup:
 
 <dl> <dt>
 
-[Configurar e iniciar una sesión de registrador privado](configuring-and-starting-a-private-logger-session.md)
+[Configuración e inicio de una sesión de registrador privado](configuring-and-starting-a-private-logger-session.md)
 </dt> <dt>
 
-[Configurar e iniciar una sesión de SystemTraceProvider](configuring-and-starting-a-systemtraceprovider-session.md)
+[Configuración e inicio de una sesión de SystemTraceProvider](configuring-and-starting-a-systemtraceprovider-session.md)
 </dt> <dt>
 
-[Configurar e iniciar una sesión de registrador automático](configuring-and-starting-an-autologger-session.md)
+[Configuración e inicio de una sesión de Registrador automático](configuring-and-starting-an-autologger-session.md)
 </dt> <dt>
 
-[Configurar e iniciar una sesión de seguimiento de eventos](configuring-and-starting-an-event-tracing-session.md)
+[Configuración e inicio de una sesión de seguimiento de eventos](configuring-and-starting-an-event-tracing-session.md)
 </dt> <dt>
 
 [Actualizar una sesión de seguimiento de eventos](updating-an-event-tracing-session.md)

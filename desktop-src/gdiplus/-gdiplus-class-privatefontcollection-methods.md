@@ -1,19 +1,19 @@
 ---
-description: En este tema se enumeran los métodos de la clase PrivateFontCollection. Para obtener una lista completa de clases, vea PrivateFontCollection (clase).
+description: En este tema se enumeran los métodos de la clase PrivateFontCollection. Para obtener una lista de clases completa, vea PrivateFontCollection (Clase).
 ms.assetid: e7c0ab5c-aefa-4f22-9313-a375ec7ec8c1
 title: Métodos PrivateFontCollection
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 879e37b5125db251a089bdf01c4351f45a1f0499
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ddcd3dd7d6a002a0ac40dd99a74d7d441e45c5574664516b0ceac4a760f49398
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104985246"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119831185"
 ---
 # <a name="privatefontcollection-methods"></a>Métodos PrivateFontCollection
 
-En este tema se enumeran los métodos de la clase [**PrivateFontCollection**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-privatefontcollection) . Para obtener una lista completa de clases, vea **PrivateFontCollection (clase**).
+En este tema se enumeran los métodos [**de la clase PrivateFontCollection.**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-privatefontcollection) Para obtener una lista de clases completa, **vea Clase PrivateFontCollection**.
 
 -   [**AddFontFile**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-privatefontcollection-addfontfile)
 -   [**AddMemoryFont**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-privatefontcollection-addmemoryfont)

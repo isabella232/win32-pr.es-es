@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_DISPLAYBAND (RichEdit. h)
-description: Muestra una parte del contenido de un control Rich Edit, como se formateó anteriormente para un dispositivo mediante el \_ mensaje em FORMATRANGE.
+title: EM_DISPLAYBAND mensaje (Richedit.h)
+description: Muestra una parte del contenido de un control de edición enriquecido, como se ha formatado previamente para un dispositivo mediante el mensaje EM \_ FORMATRANGE.
 ms.assetid: 845513d0-f32b-418c-8255-a5caf2d56215
 keywords:
-- EM_DISPLAYBAND controles de mensajes de Windows
+- EM_DISPLAYBAND controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f51896a9ba5603e799609ab52989681ecf7bcac4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e67fc951940d76dced2851a01b7049b053f3e3c2b45f6eee95eb27bef633f59c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996651"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915945"
 ---
-# <a name="em_displayband-message"></a>\_Mensaje DISPLAYBAND em
+# <a name="em_displayband-message"></a>Mensaje \_ DE EM DISPLAYBAND
 
-Muestra una parte del contenido de un control Rich Edit, como se formateó anteriormente para un dispositivo mediante el mensaje [**em \_ FORMATRANGE**](em-formatrange.md) .
+Muestra una parte del contenido de un control de edición enriquecido, como se ha formatado previamente para un dispositivo mediante el [**mensaje EM \_ FORMATRANGE.**](em-formatrange.md)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,28 +32,28 @@ Muestra una parte del contenido de un control Rich Edit, como se formateó anter
 *wParam* 
 </dt> <dd>
 
-Este parámetro no se usa; debe ser cero.
+Este parámetro no se utiliza; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Una estructura [**Rect**](/previous-versions//dd162897(v=vs.85)) que especifica el área de presentación del dispositivo.
+Estructura [**RECT**](/previous-versions//dd162897(v=vs.85)) que especifica el área de presentación del dispositivo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la operación se realiza correctamente, el valor devuelto es **true**.
+Si la operación se realiza correctamente, el valor devuelto es **TRUE.**
 
-Si se produce un error en la operación, el valor devuelto es **false**.
+Si se produce un error en la operación, el valor devuelto es **FALSE.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El rectángulo recorta el texto y los objetos del modelo de objetos componentes (COM). No es necesario que la aplicación establezca la región de recorte.
+Los objetos Text y Component Object Model (COM) se recortan mediante el rectángulo. La aplicación no necesita establecer la región de recorte.
 
-El uso de bandas es el proceso por el que se genera una sola página de salida mediante uno o varios rectángulos o bandas independientes. Cuando todas las bandas se colocan en la página, se obtiene una imagen completa. Este enfoque suele usarse en impresoras de tramas que no tienen suficiente memoria o capacidad de imagen de una página completa al mismo tiempo. Los dispositivos de bandas incluyen la mayoría de las impresoras matriciales, así como algunas impresoras láser.
+La banda es el proceso por el que se genera una sola página de salida mediante uno o varios rectángulos o bandas independientes. Cuando todas las bandas se colocan en la página, se produce una imagen completa. Este enfoque lo suelen usar las impresoras de trama que no tienen suficiente memoria o capacidad para crear imágenes de una página completa a la vez. Los dispositivos de banda incluyen la mayoría de las impresoras de matriz de puntos, así como algunas impresoras de rayos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,9 +61,9 @@ El uso de bandas es el proceso por el que se genera una sola página de salida m
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -71,7 +71,7 @@ El uso de bandas es el proceso por el que se genera una sola página de salida m
 
 <dl> <dt>
 
-[Imprimir controles Rich Edit](printing-rich-edit-controls.md)
+[Imprimir controles rich edit](printing-rich-edit-controls.md)
 </dt> </dl>
 
  
