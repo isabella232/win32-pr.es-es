@@ -1,15 +1,15 @@
 ---
-description: Obtenga información sobre el elemento PageMediaType configurable por el usuario. Este tema no está al día. Para obtener la información más reciente, vea Especificación de esquema de impresión.
+description: Obtenga información sobre el elemento PageMediaType configurable por el usuario. Este tema no es actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
 ms.assetid: 29d7ae65-9dd3-4a29-8e5e-79708638a3bb
 title: PageMediaType
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d3ca2299d9358e606648263ea5861f46c9be6419
-ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
+ms.openlocfilehash: 50e7da5d4cdad5b17324e5e628b5b9e8d0cac1c0ebfaded11379c836d5245a0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113549085"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119098849"
 ---
 # <a name="pagemediatype"></a>PageMediaType
 
@@ -82,15 +82,15 @@ En la tabla siguiente se describen las características de las variables definid
 
 | Nombre                               | Tipo de datos          | Unidad                              | Valores admitidos                                                                                                                                                                      | Resumen                                                                      |
 |------------------------------------|--------------------|-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| \_OptionName\_<br/>          | string<br/>  | caracteres<br/>             | Nombre completo válido tal y como se define en [Espacios de nombres en XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre de la opción.<br/>                                           |
+| \_OptionName\_<br/>          | string<br/>  | caracteres<br/>             | Nombre completo válido tal y como lo definen los [espacios de nombres en XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre de la opción.<br/>                                           |
 | \_IdentityOptionValue\_<br/> | string<br/>  | N/D<br/>                    | True, False.<br/>                                                                                                                                                               | Define una opción que, cuando se selecciona, deshabilitaría esta característica.<br/> |
-| \_BackCoatingValue\_<br/>    | string<br/>  | N/D<br/>                    | Glossy, HighGloss,Mate, None, None, SemiGloss.<br/>                                                                                                                          | Especifica el revestimiento del lado posterior del medio.<br/>              |
-| \_FrontCoatingValue\_<br/>   | string<br/>  | N/D<br/>                    | Glossy, HighGloss,Mate, None, None, SemiGloss.<br/>                                                                                                                          | Especifica el revestimiento del lado frontal del medio.<br/>             |
-| \_MaterialValue\_<br/>       | string<br/>  | N/D<br/>                    | Desenlaz, Display, Dry Paper, Paper,Truy, Transparency, Wet Paper.<br/>                                                                                                       | Especifica el material del que se ha hecho el medio.<br/>                  |
+| \_BackCoatingValue\_<br/>    | string<br/>  | N/D<br/>                    | Glossy, HighGloss,Mate, None, None, SemiGloss.<br/>                                                                                                                          | Especifica el resto del lado posterior del medio.<br/>              |
+| \_Front -Indesvalor\_<br/>   | string<br/>  | N/D<br/>                    | Glossy, HighGloss,Mate, None, None, SemiGloss.<br/>                                                                                                                          | Especifica el resto del lado frontal del medio.<br/>             |
+| \_MaterialValue\_<br/>       | string<br/>  | N/D<br/>                    | Desencapso, pantalla, dry Paper, paper, desenlaz, transparency, wet Paper.<br/>                                                                                                       | Especifica el material del que se ha hecho el medio.<br/>                  |
 | \_PrePrintedValue\_<br/>     | string<br/>  | N/D<br/>                    | None, PrePrinted, Letterhead.<br/>                                                                                                                                              | Especifica las características preimpresas de los medios.<br/>                       |
 | \_PrePunchedValue\_<br/>     | string<br/>  | N/D<br/>                    | Ninguno, iniciado previamente.<br/>                                                                                                                                                          | Especifica las características de preparación de medios.<br/>                       |
-| \_RecycledValue\_<br/>       | string<br/>  | N/D<br/>                    | Ninguno, Estándar.<br/>                                                                                                                                                            | Especifica las características recicladas de medios.<br/>                         |
-| \_WeightValue\_<br/>         | integer<br/> | gramas por metro cuadrado<br/> | Mayor que 0.<br/>                                                                                                                                                            | Especifica las características del peso de los medios.<br/>                           |
+| \_RecycledValue\_<br/>       | string<br/>  | N/D<br/>                    | Ninguno, Estándar.<br/>                                                                                                                                                            | Especifica las características recicladas de los medios.<br/>                         |
+| \_WeightValue\_<br/>         | integer<br/> | gramas por metro cuadrado<br/> | Mayor que 0.<br/>                                                                                                                                                            | Especifica las características de peso de los medios.<br/>                           |
 
 
 
@@ -98,7 +98,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 ## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
 
-Las palabras clave del esquema de impresión público se definen en el espacio de `https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords` nombres . El contenido lenguaje de marcado extensible público (XML) para esta palabra clave se define a continuación:
+Las palabras clave de esquema de impresión públicas se definen en el espacio de `https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords` nombres . El contenido lenguaje de marcado extensible público (XML) de esta palabra clave se define a continuación:
 
 ``` syntax
 <psf:Feature name="psk:PageMediaType">
@@ -786,5 +786,5 @@ Las palabras clave del esquema de impresión público se definen en el espacio d
 
 <dl> <dt>
 
-[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>

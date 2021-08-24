@@ -1,9 +1,9 @@
 ---
-title: /Help (/) (modificador)
-description: El modificador/Help (/) indica al compilador que muestre un mensaje de uso que detalla todos los modificadores y opciones de línea de comandos de MIDL disponibles.
+title: Modificador /help (/ )
+description: El modificador /help (/ ) indica al compilador que muestre un mensaje de uso que detalla todas las opciones y modificadores de línea de comandos de MIDL disponibles.
 ms.assetid: 387e1346-bb43-409d-bd4c-9e10e708ec4f
 keywords:
-- /Help (/) modificador MIDL
+- /help (/ ) switch MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,47 +12,47 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d78d28604b339f0472567026ac44af32b8e0c23
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: e1cd6beab4bad3cf02c8211b32bc5dd598d598f5c7be23687efff923df2e6b9b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103904181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119529625"
 ---
-# <a name="help--switch"></a>modificador/Help (/?)
+# <a name="help--switch"></a>Modificador /help (/?)
 
-El modificador **/Help** (**/?**) indica al compilador que muestre un mensaje de uso que detalla todos los modificadores y opciones de línea de comandos de MIDL disponibles.
+El **modificador /help** (**/?**) indica al compilador que muestre un mensaje de uso que detalla todas las opciones y modificadores de línea de comandos de MIDL disponibles.
 
-El modificador [**/CONFIRM**](-confirm.md) muestra la configuración del modificador del compilador MIDL seleccionada por el usuario.
+El [**modificador /confirm**](-confirm.md) muestra la configuración del conmutador del compilador MIDL seleccionada por el usuario.
 
 ``` syntax
 midl /help
 midl /?
 ```
 
-## <a name="switch-options"></a>Opciones de conmutador
+## <a name="switch-options"></a>Opciones de cambio
 
 Este modificador no tiene parámetros.
 
 ## <a name="examples"></a>Ejemplos
 
-**MIDL/Help**
+**midl /help**
 
-**MIDL/?**
+**midl /?**
 
 ## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Sintaxis de línea de comandos de MIDL general](general-midl-command-line-syntax.md)
+[Sintaxis general de la línea de comandos de MIDL](general-midl-command-line-syntax.md)
 </dt> <dt>
 
 [**/confirm**](-confirm.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

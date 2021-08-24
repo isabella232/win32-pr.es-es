@@ -1,7 +1,7 @@
 ---
-description: Define el tipo que contiene un conjunto de contenido agrupado en una nota de Journal.
+description: Define el tipo que contiene un conjunto de contenido agrupado en una nota de diario.
 ms.assetid: 823ed820-0cdb-4ca6-af8d-494db8f7fe8b
-title: Tipo complejo de GroupNodeType
+title: Tipo complejo GroupNodeType
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 816d093512f7fcba1b694e63d99ef054a3c10fc1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b486a5e0fc336ca766e33b6e50f2abd9e32197786f7e10ed9627d7613a512ea3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275491"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119266384"
 ---
-# <a name="groupnodetype-complex-type"></a>Tipo complejo de GroupNodeType
+# <a name="groupnodetype-complex-type"></a>Tipo complejo GroupNodeType
 
-Define el tipo que contiene un conjunto de contenido agrupado en una nota de Journal.
+Define el tipo que contiene un conjunto de contenido agrupado en una nota de diario.
 
 ``` syntax
 <xs:complexType name="GroupNodeType" />
@@ -33,7 +33,7 @@ Define el tipo que contiene un conjunto de contenido agrupado en una nota de Jou
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                     |
 
 

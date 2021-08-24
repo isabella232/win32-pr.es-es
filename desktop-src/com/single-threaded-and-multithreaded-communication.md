@@ -1,52 +1,52 @@
 ---
-title: Single-Threaded y comunicación multiproceso
-description: Single-Threaded y comunicación multiproceso
+title: Single-Threaded multiproceso y comunicación multiproceso
+description: Single-Threaded multiproceso y comunicación multiproceso
 ms.assetid: 8d3a855c-b52d-48bb-9fdf-efbf8005c374
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b6470ac398e6ae1c8a645fb076fbbf509d58b579
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c1096ff2cd5916bf16b00a746c2e6de6ce22008258c6e200c2858c0430cb3f96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104356929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119129837"
 ---
-# <a name="single-threaded-and-multithreaded-communication"></a>Single-Threaded y comunicación multiproceso
+# <a name="single-threaded-and-multithreaded-communication"></a>Single-Threaded multiproceso y comunicación multiproceso
 
-Un cliente o servidor que admita apartamentos de un solo subproceso y multiproceso tendrá un apartamento multiproceso, que contiene todos los subprocesos inicializados como de subprocesamiento libre y uno o más apartamentos de un solo subproceso. Se deben calcular las referencias de los punteros de interfaz entre apartamentos, pero se pueden usar sin serialización dentro de un contenedor. COM sincronizará las llamadas a los objetos de un contenedor uniproceso. COM no sincronizará las llamadas a los objetos del apartamento multiproceso.
+Un cliente o servidor que admita los departamentos de un solo subproceso y multiproceso tendrá un apartamento multiproceso, que contiene todos los subprocesos inicializados como subprocesos libres y uno o varios departamentos de un solo subproceso. Los punteros de interfaz se deben serializar entre los departamentos, pero se pueden usar sin serializar dentro de un apartamento. COM sincronizará las llamadas a objetos de un solo subproceso. COM no sincronizará las llamadas a los objetos del apartamento multiproceso.
 
-Toda la información sobre apartamentos de un solo subproceso se aplica a los subprocesos marcados como modelo de apartamento y toda la información sobre apartamentos multiproceso se aplica a todos los subprocesos marcados como de subproceso libre. Las reglas de subprocesos de apartamento se aplican a la comunicación entre apartamentos, que requiere que se calculen las referencias de los punteros de interfaz entre apartamentos con llamadas a [**CoMarshalInterThreadInterfaceInStream**](/windows/desktop/api/combaseapi/nf-combaseapi-comarshalinterthreadinterfaceinstream) y [**CoGetInterfaceAndReleaseStream**](/windows/desktop/api/combaseapi/nf-combaseapi-cogetinterfaceandreleasestream), tal y como se describe en [apartamentos de un solo subproceso](single-threaded-apartments.md).
+Toda la información sobre los departamentos de un solo subproceso se aplica a los subprocesos marcados como modelo de apartamento, y toda la información sobre los departamentos multiproceso se aplica a todos los subprocesos marcados como de subproceso libre. Las reglas de subprocesos de apartamento se aplican a la comunicación entre departamentos, lo que requiere que los punteros de interfaz se serializan entre los departamentos con llamadas a [**CoMarshalInterThreadInterfaceInStream**](/windows/desktop/api/combaseapi/nf-combaseapi-comarshalinterthreadinterfaceinstream) y [**CoGetInterfaceAndReleaseStream**](/windows/desktop/api/combaseapi/nf-combaseapi-cogetinterfaceandreleasestream), tal y como se describe en [Single-Threaded Apartment](single-threaded-apartments.md).
 
 > [!Note]  
-> Se aplican algunas consideraciones especiales cuando se trabaja con servidores en proceso. Para obtener más información, vea [problemas de subprocesos de servidor en proceso](in-process-server-threading-issues.md).
+> Se aplican algunas consideraciones especiales al tratar con servidores en proceso. Para obtener más información, vea [In-Process Server Threading Issues](in-process-server-threading-issues.md).
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Acceso a interfaces entre apartamentos](accessing-interfaces-across-apartments.md)
+[Acceso a interfaces entre departamentos](accessing-interfaces-across-apartments.md)
 </dt> <dt>
 
-[Elegir el modelo de subprocesos](choosing-the-threading-model.md)
+[Elección del modelo de subprocesos](choosing-the-threading-model.md)
 </dt> <dt>
 
-[Apartamentos multiproceso](multithreaded-apartments.md)
+[Departamentos multiproceso](multithreaded-apartments.md)
 </dt> <dt>
 
-[Problemas de subprocesos de servidor en proceso](in-process-server-threading-issues.md)
+[Problemas de subprocesos del servidor en proceso](in-process-server-threading-issues.md)
 </dt> <dt>
 
-[Procesos, subprocesos y apartamentos](processes--threads--and-apartments.md)
+[Procesos, subprocesos y departamentos](processes--threads--and-apartments.md)
 </dt> <dt>
 
-[Apartamentos de un solo subproceso](single-threaded-apartments.md)
+[Departamentos de un solo subproceso](single-threaded-apartments.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

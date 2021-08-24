@@ -1,7 +1,7 @@
 ---
 description: Registra un servicio que proporciona objetos globales relacionados con el grupo de recursos.
 ms.assetid: B602F6E1-2889-43CF-AAF1-40F339231DB4
-title: Msvm_ResourcePoolRegistration (clase)
+title: Msvm_ResourcePoolRegistration clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 6eecfefc8c542eeb3a06c509533060f8036d447e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bbcb0f2e3d5b0dfad884572c90f889d28e47fcffaf328b39d78f02d4c2baa3a6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104156685"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119535484"
 ---
-# <a name="msvm_resourcepoolregistration-class"></a>MSVM \_ ResourcePoolRegistration (clase)
+# <a name="msvm_resourcepoolregistration-class"></a>Clase \_ ResourcePoolRegistration de Msvm
 
 Registra un servicio que proporciona objetos globales relacionados con el grupo de recursos.
 
-La siguiente sintaxis es código simplificado de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se Managed Object Format código (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,20 +40,20 @@ class Msvm_ResourcePoolRegistration : Msvm_VirtualizationComponentRegistration
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ ResourcePoolRegistration** tiene estos tipos de miembros:
+La **clase \_ ResourcePoolRegistration de Msvm** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ ResourcePoolRegistration** tiene estas propiedades.
+La **clase \_ ResourcePoolRegistration de Msvm** tiene estas propiedades.
 
 <dl> <dt>
 
 **Componente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **[ **MSVM \_ ResourcePoolComponent**](msvm-resourcepoolcomponent.md)**
+Tipo de datos: **[ **Msvm \_ ResourcePoolComponent**](msvm-resourcepoolcomponent.md)**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -66,32 +66,32 @@ Referencia a una instancia de que describe el objeto COM que implementa esta cla
 **ResourceType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **[ **MSVM \_ ResourceTypeDefinition**](msvm-resourcetypedefinition.md)**
+Tipo de datos: **[ **Msvm \_ ResourceTypeDefinition**](msvm-resourcetypedefinition.md)**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Referencia a una instancia de que describe un tipo de recurso admitido por el servicio. Esta propiedad se hereda de [**MSVM \_ VirtualizationComponentRegistration**](msvm-virtualizationcomponentregistration.md).
+Referencia a una instancia de que describe un tipo de recurso admitido por el servicio. Esta propiedad se hereda de [**Msvm \_ VirtualizationComponentRegistration.**](msvm-virtualizationcomponentregistration.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El acceso a la clase **MSVM \_ ResourcePoolRegistration** puede estar restringido por el filtrado de UAC. Para obtener más información, vea [control de cuentas de usuario y WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+El acceso a **la clase \_ ResourcePoolRegistration de Msvm** puede estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows 8.1<br/>                                                                                  |
-| Fin de compatibilidad de servidor<br/>    | Windows Server 2012 R2<br/>                                                                       |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Fin de compatibilidad de servidor<br/>    | Windows Server 2012 R2<br/>                                                                       |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -100,10 +100,10 @@ El acceso a la clase **MSVM \_ ResourcePoolRegistration** puede estar restringid
 
 <dl> <dt>
 
-[**MSVM \_ VirtualizationComponentRegistration**](/windows/desktop/HyperV_v2/msvm-virtualizationcomponentregistration)
+[**Virtualización de \_ MsvmComponentRegistration**](/windows/desktop/HyperV_v2/msvm-virtualizationcomponentregistration)
 </dt> <dt>
 
-[**MSVM \_ VirtualizationComponentRegistration**](msvm-virtualizationcomponentregistration.md)
+[**Virtualización de \_ MsvmComponentRegistration**](msvm-virtualizationcomponentregistration.md)
 </dt> </dl>
 
  

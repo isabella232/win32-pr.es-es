@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TB_INDETERMINATE (commctrl. h)
+title: TB_INDETERMINATE mensaje (Commctrl.h)
 description: Establece o borra el estado indeterminado del botón especificado en una barra de herramientas.
 ms.assetid: 6a0f2b82-8241-4c2e-b349-606975ba1a24
 keywords:
-- TB_INDETERMINATE controles de mensajes de Windows
+- TB_INDETERMINATE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f7f1de35f9621de4f51d371bb50dbda637d720cb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 90845f269d0af1e690d5ddeb02f2a8ec2a2f63ff4f698f1dd0f3e2729d98b72c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079197"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078269"
 ---
-# <a name="tb_indeterminate-message"></a>TB de \_ mensaje indeterminado
+# <a name="tb_indeterminate-message"></a>Mensaje \_ INDETERMINADO DE TB
 
 Establece o borra el estado indeterminado del botón especificado en una barra de herramientas.
 
@@ -39,25 +39,25 @@ Identificador de comando del botón cuyo estado indeterminado se va a establecer
 *lParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) es un valor **booleano** que indica si se debe establecer o borrar el estado indeterminado. Si es **true**, se establece el estado indeterminado. Si es **false**, el estado es desactivado.
+[**LOWORD es**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) un **BOOL** que indica si se debe establecer o borrar el estado indeterminado. Si **es TRUE,** se establece el estado indeterminado. Si **es FALSE,** el estado se borra.
 
-El valor de [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) debe ser cero.
+HIWORD [**debe**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto, o **false** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** de lo contrario.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

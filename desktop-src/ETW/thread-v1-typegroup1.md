@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos de inicio del subproceso. La siguiente sintaxis se simplifica desde el código MOF.
+description: Esta clase es la clase de tipo de evento para los eventos de inicio de subprocesos. La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: 412de56f-4f54-46e8-ab60-d47371247e79
-title: Thread_V1_TypeGroup1 (clase)
+title: Thread_V1_TypeGroup1 clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,18 +21,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 13c419b417b614eb9022d1cb7c09a84ca705b3dc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 90d8f4afe9d78cc774dea3159a728ccc6d4db52314e692594d026f7e4fe2161c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069445"
 ---
-# <a name="thread_v1_typegroup1-class"></a>\_ \_ Clase TypeGroup1 de Thread v1
+# <a name="thread_v1_typegroup1-class"></a>Clase \_ \_ TypeGroup1 del subproceso V1
 
-Esta clase es la clase de tipo de evento para los eventos de inicio del subproceso.
+Esta clase es la clase de tipo de evento para los eventos de inicio de subprocesos.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -54,44 +54,44 @@ class Thread_V1_TypeGroup1 : Thread_V1
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ \_ TypeGroup1 del subproceso v1** tiene estos tipos de miembros:
+La **clase \_ \_ TypeGroup1 de Thread V1** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ \_ TypeGroup1 del subproceso v1** tiene estas propiedades.
+La **clase Thread \_ V1 \_ TypeGroup1** tiene estas propiedades.
 
 <dl> <dt>
 
 ProcessId
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1)
+Calificadores: WmiDataId(1)
 </dt> </dl>
 
 Identificador de proceso del subproceso implicado en el evento.
 
-**Windows Server 2003:** Contiene el calificador de formato ("x").
+**Windows Server 2003:** Contiene el calificador Format("x").
 
 </dd> <dt>
 
 StackBase
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (3), puntero
+Calificadores: WmiDataId(3), Pointer
 </dt> </dl>
 
 Dirección base de la pila del subproceso.
@@ -101,29 +101,29 @@ Dirección base de la pila del subproceso.
 StackLimit
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (4), puntero
+Calificadores: WmiDataId(4), Pointer
 </dt> </dl>
 
 Límite de la pila del subproceso.
 
 </dd> <dt>
 
-StartAddr
+Dirinicial
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (7), puntero
+Calificadores: WmiDataId(7), Pointer
 </dt> </dl>
 
 Dirección de memoria en la que se inicia el seguimiento.
@@ -133,31 +133,31 @@ Dirección de memoria en la que se inicia el seguimiento.
 TThreadId
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (2)
+Calificadores: WmiDataId(2)
 </dt> </dl>
 
 Identificador de subproceso del subproceso implicado en el evento.
 
-**Windows Server 2003:** Contiene el calificador de formato ("x").
+**Windows Server 2003:** Contiene el calificador Format("x").
 
 </dd> <dt>
 
 UserStackBase
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (5), puntero
+Calificadores: WmiDataId(5), Pointer
 </dt> </dl>
 
 Dirección base de la pila de modo de usuario del subproceso.
@@ -167,13 +167,13 @@ Dirección base de la pila de modo de usuario del subproceso.
 UserStackLimit
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (6), puntero
+Calificadores: WmiDataId(6), Pointer
 </dt> </dl>
 
 Límite de la pila de modo de usuario del subproceso.
@@ -189,26 +189,26 @@ Tipo de datos: **sint8**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (9), formato ("c")
+Calificadores: WmiDataId(9), Format("c")
 </dt> </dl>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
 Win32StartAddr
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (8), puntero
+Calificadores: WmiDataId(8), Pointer
 </dt> </dl>
 
-Dirección de inicio de la función que va a ejecutar este subproceso.
+Dirección inicial de la función que va a ejecutar este subproceso.
 
 </dd> </dl>
 
@@ -216,7 +216,7 @@ Dirección de inicio de la función que va a ejecutar este subproceso.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
@@ -227,7 +227,7 @@ Dirección de inicio de la función que va a ejecutar este subproceso.
 
 <dl> <dt>
 
-[**Subproceso \_ v1**](thread-v1.md)
+[**Subproceso \_ V1**](thread-v1.md)
 </dt> </dl>
 
  

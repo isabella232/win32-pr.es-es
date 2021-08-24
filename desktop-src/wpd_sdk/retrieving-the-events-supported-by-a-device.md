@@ -1,19 +1,19 @@
 ---
-description: Recuperación de los eventos admitidos por un dispositivo
+description: Recuperar los eventos admitidos por un dispositivo
 ms.assetid: 951b300f-03de-4a3d-9356-e3a7b5b17fdb
-title: Recuperación de los eventos admitidos por un dispositivo
+title: Recuperar los eventos admitidos por un dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a542a34d0938c7e2ff86118818714f18b1224f7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a4e0e24b5a4424d03c916ca73fd0192f9b6de0a80b6a2e2e67a129deb832f7bd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104547027"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119263125"
 ---
-# <a name="retrieving-the-events-supported-by-a-device"></a>Recuperación de los eventos admitidos por un dispositivo
+# <a name="retrieving-the-events-supported-by-a-device"></a>Recuperar los eventos admitidos por un dispositivo
 
-Algunos controladores de WPD admiten la notificación de eventos. Esto significa que una aplicación puede registrarse con el controlador para recibir una notificación cuando se produce una acción específica. Por ejemplo, una aplicación puede registrarse para recibir una notificación cuando se agrega o se quita un objeto.
+Algunos controladores de WPD admiten la notificación de eventos. Esto significa que una aplicación puede registrarse con el controlador para recibir una notificación cuando se produce una acción específica. Por ejemplo, una aplicación puede registrarse para recibir una notificación cuando se agrega o quita un objeto.
 
 Hay diez eventos predefinidos que una aplicación puede supervisar. Se describen en la tabla siguiente.
 
@@ -21,22 +21,22 @@ Hay diez eventos predefinidos que una aplicación puede supervisar. Se describen
 
 | Evento                       | Descripción                                                                                                                            |
 |-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| Funcionalidades de dispositivo actualizadas | Se produce cuando han cambiado las capacidades del dispositivo.                                                                                      |
+| Funcionalidades de dispositivo actualizadas | Se produce cuando las funcionalidades del dispositivo han cambiado.                                                                                      |
 | Dispositivo quitado              | Se produce cuando el dispositivo está desconectado.                                                                                                   |
 | Restablecimiento del dispositivo                | Se produce cuando se ha restablecido el dispositivo.                                                                                                 |
 | Objeto agregado                | Se produce después de que un nuevo objeto esté disponible en el dispositivo.                                                                             |
 | Objeto quitado              | Se produce después de quitar un objeto del dispositivo.                                                                               |
-| Transferencia de objeto solicitada   | Indica que se ha realizado una solicitud para transferir un objeto.                                                                          |
-| Objeto actualizado              | Se produce después de la actualización de un objeto o de sus elementos secundarios. (Los clientes conectados deben actualizar la vista del objeto dado). |
-| Formato de almacenamiento en curso  | Se produce cuando se está formateando el almacenamiento del dispositivo.                                                                                     |
+| Transferencia de objetos solicitada   | Indica que se ha realizado una solicitud para transferir un objeto.                                                                          |
+| Objeto actualizado              | Se produce después de actualizar un objeto o sus secundarios. (A continuación, los clientes conectados deben actualizar su vista del objeto especificado). |
+| Storage en curso  | Se produce cuando se está formatendo el almacenamiento del dispositivo.                                                                                     |
 
 
 
  
 
-Para obtener una lista de las constantes asociadas a estos eventos, vea el tema [constantes de evento](event-constants.md) .
+Para obtener una lista de las constantes asociadas a estos eventos, vea el tema [Constantes de](event-constants.md) evento.
 
-La función ListSupportedEvents del módulo DeviceCapabilities. cpp muestra la recuperación de eventos admitidos por un dispositivo determinado.
+La función ListSupportedEvents del módulo DeviceCapabilities.cpp muestra la recuperación de eventos compatibles con un dispositivo determinado.
 
 La aplicación puede recuperar los identificadores de los eventos admitidos por un dispositivo mediante las interfaces descritas en la tabla siguiente.
 
@@ -44,14 +44,14 @@ La aplicación puede recuperar los identificadores de los eventos admitidos por 
 
 | Interfaz                                                                                      | Descripción                                               |
 |------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| [**Interfaz IPortableDeviceCapabilities**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecapabilities)                   | Proporciona acceso a los métodos de recuperación de eventos admitidos. |
-| [**Interfaz IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) | Se utiliza para enumerar y almacenar datos de categoría funcional.     |
+| [**IPortableDeviceCapabilities (Interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecapabilities)                   | Proporciona acceso a los métodos de recuperación de eventos admitidos. |
+| [**IPortableDevicePropVariantCollection (Interfaz)**](iportabledevicepropvariantcollection.md) | Se usa para enumerar y almacenar datos de categoría funcional.     |
 
 
 
  
 
-La primera tarea que se lleva a cabo mediante la aplicación de ejemplo es la recuperación de un objeto [**IPortableDeviceCapabilities**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecapabilities) , que se usa para recuperar los eventos admitidos por el dispositivo especificado.
+La primera tarea que realiza la aplicación de ejemplo es la recuperación de un objeto [**IPortableDeviceCapabilities,**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecapabilities) que se usa para recuperar los eventos admitidos por el dispositivo determinado.
 
 
 ```C++
@@ -78,7 +78,7 @@ if (FAILED(hr))
 
 
 
-Los eventos admitidos se recuperan llamando al método [**IPortableDeviceCapabilities:: GetSupportedEvents**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecapabilities-getsupportedevents) . Este método recupera una colección de identificadores de eventos para el dispositivo determinado y los almacena en un objeto [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) al que apunta el argumento pEvents.
+Los eventos admitidos se recuperan llamando al [**método IPortableDeviceCapabilities::GetSupportedEvents.**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecapabilities-getsupportedevents) Este método recupera una colección de identificadores de eventos para el dispositivo determinado y los almacena en un objeto [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) al que apunta el argumento pEvents.
 
 
 ```C++
@@ -94,7 +94,7 @@ if (SUCCEEDED(hr))
 
 
 
-El siguiente paso consiste en recuperar el recuento de eventos admitidos para que la aplicación pueda recorrer en iteración el objeto [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) y recuperar el identificador de cada uno de ellos.
+El siguiente paso consiste en recuperar el recuento de eventos admitidos para que la aplicación pueda recorrer en iteración el objeto [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) y recuperar el identificador de cada uno.
 
 
 ```C++
@@ -147,13 +147,13 @@ if (SUCCEEDED(hr))
 [**Constantes de evento**](event-constants.md)
 </dt> <dt>
 
-[**Interfaz IPortableDevice**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)
+[**IPortableDevice (interfaz)**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)
 </dt> <dt>
 
-[**Interfaz IPortableDeviceCapabilities**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecapabilities)
+[**IPortableDeviceCapabilities (Interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecapabilities)
 </dt> <dt>
 
-[**Interfaz IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md)
+[**IPortableDevicePropVariantCollection (Interfaz)**](iportabledevicepropvariantcollection.md)
 </dt> <dt>
 
 [**Guía de programación**](programming-guide.md)

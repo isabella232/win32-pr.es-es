@@ -1,24 +1,24 @@
 ---
-title: booleano (WMI)
-description: Es un \_ parámetro de VT bool que toma el valor de Variant \_ TRUE (&\# 8211; 1) o Variant \_ false (0).
+title: boolean (WMI)
+description: Es un parámetro VT BOOL que toma el valor de \_ VARIANT \_ TRUE (&\# 8211;1) o VARIANT \_ FALSE (0).
 ms.assetid: 3928ff39-ed17-4a61-bb72-a3c9be16ae45
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 569f7ce633bfb70fdba5e7055a80ad73ebd0fb6c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 50422990a45dd59c2bedc3ac90bddcf06f7796cd3308daf03a11db0dca38f0b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706933"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119051063"
 ---
-# <a name="boolean-wmi"></a>booleano (WMI)
+# <a name="boolean-wmi"></a>boolean (WMI)
 
-El tipo de datos Boolean es un \_ parámetro VT bool que toma el valor de Variant \_ true (– 1) o Variant \_ false (0). En la tabla siguiente se muestra la diferencia entre las representaciones mediante programación de **true** lógico en C/C++ y el tipo de automatización.
+El tipo de datos booleano es un parámetro VT BOOL que toma el valor \_ de VARIANT \_ TRUE (–1) o VARIANT \_ FALSE (0). En la tabla siguiente se muestra la diferencia entre las representaciones mediante programación de **TRUE** lógico en C/C++ y el tipo automation.
 
-| Idioma   | Value         | Valor numérico |
+| Lenguaje   | Valor         | Valor numérico |
 |------------|---------------|-----------------|
 | C/C++      | **TRUE**      | 1               |
-| Automatización | VARIANTE \_ true | –1              |
+| Automation | VARIANT \_ TRUE | –1              |
 
-Ambos tipos son distintos de cero y, por lo tanto, no son **false**, pero tienen representaciones diferentes para **true**.
+Ambos tipos son distintos de cero y, por tanto, **no FALSE,** pero tienen representaciones diferentes para **TRUE.**

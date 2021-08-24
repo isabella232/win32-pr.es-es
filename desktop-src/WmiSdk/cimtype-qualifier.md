@@ -13,25 +13,25 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 522f7b3e7f5691e9552dce15b958fdb635fcae06
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 86fad829bf1b2391a9bc97d5c6281a67cadae7d03672e8a6eb8093b7ff6152b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104156829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119131677"
 ---
 # <a name="cimtype-qualifier"></a>Calificador CIMType
 
-El calificador **CIMType** contiene texto que describe el tipo de una propiedad.
+El **calificador CIMType** contiene texto que describe el tipo de una propiedad.
 
-Este texto puede ser el tipo MOF, como "String" y "sint32", o el tipo CIM, como "CIM \_ String" y "CIM \_ sint32". Hay una correspondencia uno a uno entre el calificador **CIMType** y el tipo de la propiedad que se usa en el parámetro *PvtType* del método [**IWbemClassObject:: get**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-get) .
+Este texto puede ser el tipo MOF como "string" y "sint32" o el tipo CIM, como "CIM STRING" y \_ "CIM \_ SINT32". Hay una correspondencia uno a uno entre el calificador **CIMType** y el tipo de la propiedad usada en el parámetro *pvtType* del [**método IWbemClassObject::Get.**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-get)
 
 Las dos excepciones son:
 
--   [*Propiedades de referencia*](gloss-r.md), que tienen el tipo de **\_ referencia CIM**, que contiene el valor "Ref: className". El valor className describe el tipo de clase de la propiedad Reference.
--   Propiedades de objeto incrustado, que tienen el tipo de **\_ objeto CIM** .
+-   [*Propiedades de*](gloss-r.md)referencia , que tienen el tipo **CIM \_ REFERENCE**, que contiene el valor "REF:classname". El valor classname describe el tipo de clase de la propiedad de referencia.
+-   Propiedades de objeto incrustadas, que tienen el **tipo \_ CIM OBJECT.**
 
-Sin embargo, tenga en cuenta que el calificador **CIMType** puede y debe usarse para escribir una propiedad de referencia más exactamente. Por ejemplo, si la propiedad siempre hace referencia a las instancias de la clase [**Win32 \_ LogicalDisk**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) , su calificador **CIMType** debe establecerse en:
+Tenga en cuenta, sin embargo, que el **calificador CIMType** puede y debe usarse para escribir una propiedad de referencia con más exactitud. Por ejemplo, si la propiedad siempre hace referencia a instancias de la clase [**\_ LogicalDisk de Win32,**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) su **calificador CIMType** debe establecerse en:
 
 
 ```mof
@@ -40,9 +40,9 @@ Sin embargo, tenga en cuenta que el calificador **CIMType** puede y debe usarse 
 
 
 
-De forma predeterminada, el calificador **CIMType** de una propiedad de referencia tiene el tipo **ref**.
+De forma predeterminada, el **calificador CIMType** de una propiedad de referencia tiene el tipo **ref**.
 
-Al igual que con las propiedades de referencia, el calificador **CIMType** debe usarse para escribir una propiedad de objeto incrustado más exactamente con la sintaxis siguiente:
+Al igual que con las propiedades de referencia, el **calificador CIMType** debe usarse para escribir una propiedad de objeto incrustado más exactamente con la sintaxis siguiente:
 
 
 ```mof
@@ -51,7 +51,7 @@ Al igual que con las propiedades de referencia, el calificador **CIMType** debe 
 
 
 
-Dado que WMI permite más tipos de los que se pueden expresar mediante constantes estándar con el \_ prefijo VT, el calificador **CIMType** puede ayudar a interpretar los valores de tipo. El calificador **CIMType** se agrega automáticamente. Para obtener más información, vea [tipos de datos MOF](mof-data-types.md).
+Dado que WMI permite expresar más tipos de los que se pueden expresar mediante constantes estándar con el prefijo VT, el calificador \_ **CIMType** puede ayudar a interpretar los valores de tipo. El **calificador CIMType** se agrega automáticamente. Para obtener más información, vea [Tipos de datos MOF](mof-data-types.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,7 +74,7 @@ Dado que WMI permite más tipos de los que se pueden expresar mediante constante
 [Calificadores WMI](wmi-qualifiers.md)
 </dt> <dt>
 
-[Adición de un calificador](adding-a-qualifier.md)
+[Agregar un calificador](adding-a-qualifier.md)
 </dt> </dl>
 
  

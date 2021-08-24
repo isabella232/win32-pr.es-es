@@ -4,12 +4,12 @@ ms.assetid: 60cced55-9fcc-4fce-a462-7abf3f4466f0
 title: Cargar un certificado desde un archivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c708fb042ccdf4acd43986de1404f9ccb266148
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e73161b133fec74478643baa8453421130b3f3ad18ff4e75429d79b3312919b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688577"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119099099"
 ---
 # <a name="load-a-certificate-from-a-file"></a>Cargar un certificado desde un archivo
 
@@ -17,7 +17,7 @@ En este tema se describe cómo cargar un certificado desde un archivo de certifi
 
 Para cargar un certificado desde un archivo de certificado
 
-1.  Abra el archivo de certificado para obtener acceso de lectura.
+1.  Abra el archivo de certificado para el acceso de lectura.
 2.  Lea el contenido del archivo de certificado en el búfer de certificado.
 3.  Cree un certificado con el contenido del búfer.
 
@@ -98,16 +98,16 @@ if (NULL != certFileHandle) CloseHandle(certFileHandle);
 **Pasos siguientes**
 </dt> <dt>
 
-[Comprobar que el sistema admite un método de síntesis](verify-a-certificate-supports-a-digest-method.md)
+[Comprobar que el sistema admite un método digest](verify-a-certificate-supports-a-digest-method.md)
 </dt> <dt>
 
 [Comprobar que un certificado admite un método de firma](verify-a-certificate-supports-a-signature-method.md)
 </dt> <dt>
 
-[Insertar cadenas de certificado en un documento](embedding-certificate-trust-chains-in-a-document.md)
+[Insertar cadenas de certificados en un documento](embedding-certificate-trust-chains-in-a-document.md)
 </dt> <dt>
 
-**Se usa en este ejemplo**
+**Usado en este ejemplo**
 </dt> <dt>
 
 [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea)
@@ -122,16 +122,16 @@ if (NULL != certFileHandle) CloseHandle(certFileHandle);
 **Para obtener más información**
 </dt> <dt>
 
-[API de criptografía](/windows/desktop/SecCrypto/cryptography-portal)
+[Api de criptografía](/windows/desktop/SecCrypto/cryptography-portal)
 </dt> <dt>
 
 [Funciones de criptografía](/windows/desktop/SecCrypto/cryptography-functions)
 </dt> <dt>
 
-[Errores de la API de firma digital XPS](xps-digital-signatures-errors.md)
+[Errores de API de firma digital XPS](xps-digital-signatures-errors.md)
 </dt> <dt>
 
-[Errores de documento XPS](xps-document-errors.md)
+[Errores del documento XPS](xps-document-errors.md)
 </dt> <dt>
 
 [XML Paper Specification](https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf)

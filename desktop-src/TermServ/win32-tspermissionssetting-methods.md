@@ -1,18 +1,18 @@
 ---
-title: Métodos Win32_TSPermissionsSetting
-description: La \_ clase TSPermissionsSetting de Win32 expone los métodos siguientes.
+title: Win32_TSPermissionsSetting métodos
+description: La clase \_ TSPermissionsSetting de Win32 expone los métodos siguientes.
 ms.assetid: 7F136EB8-2866-47BC-8F1E-04DAFDB4D4D1
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7817ee817c692a9a5677d8fffe131a0a1cb60cbc
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 43ab9fcf1451d0a227777046e523267fcb9392a576b0d6ed5f71e6d2f17b065b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104268790"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119137758"
 ---
-# <a name="win32_tspermissionssetting-methods"></a>\_Métodos TSPermissionsSetting de Win32
+# <a name="win32_tspermissionssetting-methods"></a>Métodos \_ TSPermissionsSetting de Win32
 
 La [**clase \_ TSPermissionsSetting de Win32**](win32-tspermissionssetting.md) expone los métodos siguientes.
 
@@ -21,9 +21,9 @@ La [**clase \_ TSPermissionsSetting de Win32**](win32-tspermissionssetting.md) e
 -   [**Método AddAccount**](win32-tspermissionssetting-addaccount.md)
 -   [**Método RestoreDefaults**](win32-tspermissionssetting-restoredefaults.md)
 
- 
+ 
 
- 
+ 
 
 
 

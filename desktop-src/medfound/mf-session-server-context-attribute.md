@@ -1,56 +1,56 @@
 ---
-description: Permite que dos instancias de la sesión multimedia compartan el mismo proceso de la ruta de acceso a medios protegidos (PMP).
+description: Permite que dos instancias de la sesión de medios compartan el mismo proceso de ruta de acceso multimedia protegida (PMP).
 ms.assetid: a922c79b-d6c1-447d-b6fa-993970169a3f
-title: MF_SESSION_SERVER_CONTEXT atributo (Mfidl. h)
+title: MF_SESSION_SERVER_CONTEXT atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b1ce68d1dcd4318f68c4547845e6ce12d2f3aaca
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fc9674a2e25a7cdfd0a88ebcc43c18d6fd636bf22116f76a24255b55f857a677
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104156804"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119102341"
 ---
-# <a name="mf_session_server_context-attribute"></a>\_Atributo de \_ contexto de servidor de sesión MF \_
+# <a name="mf_session_server_context-attribute"></a>Atributo \_ CONTEXT DE MF SESSION \_ SERVER \_
 
-Permite que dos instancias de la sesión multimedia compartan el mismo proceso de la ruta de acceso a medios protegidos (PMP).
+Permite que dos instancias de la sesión de medios compartan el mismo proceso de ruta de acceso multimedia protegida (PMP).
 
 ## <a name="data-type"></a>Tipo de datos
 
-**IUnknown \** _
+**IUnknown\***
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Utilice este atributo si desea crear la sesión de medios de PMP en un proceso de PMP existente. El valor del atributo es un puntero a la interfaz [_ *IMFPMPServer* *](/windows/desktop/api/mfidl/nn-mfidl-imfpmpserver) .
+Use este atributo si desea crear la sesión multimedia de PMP en un proceso de PMP existente. El valor del atributo es un puntero a la [**interfaz IMFPMPServer.**](/windows/desktop/api/mfidl/nn-mfidl-imfpmpserver)
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes::GetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getunknown)
+[**ATTRIBUTEAttributes::GetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getunknown)
 </dt> <dt>
 
-[**IMFAttributes:: Setunknown (**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setunknown)
+[**ATTRIBUTEAttributes::SetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setunknown)
 </dt> <dt>
 
-[Atributos de la sesión multimedia](media-session-attributes.md)
+[Atributos de sesión multimedia](media-session-attributes.md)
 </dt> </dl>
 
  

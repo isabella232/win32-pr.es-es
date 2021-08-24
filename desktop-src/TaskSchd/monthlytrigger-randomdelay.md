@@ -1,10 +1,10 @@
 ---
 title: MonthlyTrigger.RandomDelay, propiedad
-description: Para el scripting, obtiene o establece un tiempo de retraso que se agrega aleatoriamente a la hora de inicio del desencadenador. | MonthlyTrigger.RandomDelay, propiedad
+description: Para el scripting, obtiene o establece una hora de retraso que se agrega aleatoriamente a la hora de inicio del desencadenador. | MonthlyTrigger.RandomDelay, propiedad
 ms.assetid: 5334356f-fef1-4d0e-9879-6ec996b75dff
 keywords:
 - Propiedad RandomDelay Programador de tareas
-- Propiedad RandomDelay Programador de tareas objeto , MonthlyTrigger
+- Propiedad RandomDelay Programador de tareas , objeto MonthlyTrigger
 - Objeto MonthlyTrigger Programador de tareas , propiedad RandomDelay
 topic_type:
 - apiref
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aa7f5c3a1831681cca2b3dc006ffb7a7d44a7a6a
-ms.sourcegitcommit: b3a9abea47dea7374eac0f9a95a652ac6977fb2e
+ms.openlocfilehash: d751b31f31cdba9233ea2932976fc69f6880ab8e4c3b81c8743e6c381bdc9a5c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "107734120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119253775"
 ---
 # <a name="monthlytriggerrandomdelay-property"></a>MonthlyTrigger.RandomDelay, propiedad
 
-Para el scripting, obtiene o establece un tiempo de retraso que se agrega aleatoriamente a la hora de inicio del desencadenador.
+Para el scripting, obtiene o establece una hora de retraso que se agrega aleatoriamente a la hora de inicio del desencadenador.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,16 +44,16 @@ Tiempo de retraso que se agrega aleatoriamente a la hora de inicio del desencade
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
 | Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -4,24 +4,24 @@ ms.assetid: b2f9ec6a-4b5b-e618-759b-d7dbc0d97ac4
 title: 'Cómo: agregar o quitar voces de un gráfico de audio dinámicamente'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fdb26150b5614ec53e4cc4de5af74e9a14ee2a94
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b1a49cfc88e89884b63484b7bd58f7f5d96020cd21f8d1147794b840f00258fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119082939"
 ---
 # <a name="how-to-dynamically-add-or-remove-voices-from-an-audio-graph"></a>Cómo: agregar o quitar voces de un gráfico de audio dinámicamente
 
-Puede cambiar los gráficos de audio en cualquier momento para agregar o quitar voces o subgráficos completos. En este tema se muestra cómo agregar o quitar voces de submezcla de un grafo creado siguiendo los pasos descritos en [Cómo: compilar un gráfico básico de procesamiento de audio](how-to--build-a-basic-audio-processing-graph.md). Una sola voz puede enviar su salida a varias voces o a una cadena larga de voces. Quitar o agregar una sola voz puede tener un gran efecto en un gráfico de audio.
+Puede cambiar los gráficos de audio en cualquier momento para agregar o quitar voces o subgráficos completos. En este tema se muestra cómo agregar o quitar voces de submezcla de un gráfico que se ha creado siguiendo los pasos descritos en [Cómo:](how-to--build-a-basic-audio-processing-graph.md)Compilar un procesamiento de audio básico Graph . Una sola voz puede enviar su salida a varias voces o a una cadena larga de voces. Quitar o agregar una sola voz puede tener un gran efecto en un gráfico de audio.
 
 ## <a name="to-dynamically-change-an-audio-graph"></a>Para cambiar dinámicamente un gráfico de audio
 
-Agregar y quitar voces de un gráfico de audio es muy similar a agregar o quitar nodos de un gráfico o una lista de un solo vínculo.
+Agregar y quitar voces de un gráfico de audio es muy similar a agregar o quitar nodos de una lista o gráfico vinculado único.
 
 -   Para agregar una voz o un subgráfico a un gráfico de audio
 
-    Establezca el resultado de una voz en el gráfico, la voz primaria, en la voz que se va a agregar con la función [**SetOutputVoices**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-setoutputvoices) . Establezca el resultado de la nueva voz en el elemento secundario original de la voz primaria.
+    Establezca la salida de una voz en el gráfico, la voz primaria, en la voz que se va a agregar mediante la [**función SetOutputVoices.**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-setoutputvoices) Establezca la salida de la nueva voz en el elemento secundario original de la voz primaria.
 
     ```
     XAUDIO2_SEND_DESCRIPTOR send = {0, pNewVoice};
@@ -35,7 +35,7 @@ Agregar y quitar voces de un gráfico de audio es muy similar a agregar o quitar
 
 -   Para quitar una voz o un subgráfico de un gráfico de audio
 
-    Establezca la voz de salida del elemento primario de la voz que se va a quitar en el elemento secundario de la voz que se va a quitar. Si la voz que se va a quitar está al final del gráfico, la voz primaria debe cambiarse para que apunte a la voz maestra.
+    Establezca la voz de salida del elemento primario de la voz que se va a quitar en el elemento secundario de la voz que se va a quitar. Si la voz que se quita está al final del gráfico, la voz primaria debe cambiarse para que apunte a la voz maestra.
 
     ```
     XAUDIO2_SEND_DESCRIPTOR send = {0, pChildVoice};
@@ -45,7 +45,7 @@ Agregar y quitar voces de un gráfico de audio es muy similar a agregar o quitar
 
     
 
-Tenga en cuenta que, para mayor claridad, cada elemento primario solo tiene un elemento secundario en estos ejemplos. Si un nodo primario tiene varios elementos secundarios, su sendlist contendrá una matriz de voces en lugar de un puntero a una sola voz.
+Tenga en cuenta que, para mayor claridad, cada elemento primario solo tiene un elemento secundario en estos ejemplos. Si un nodo primario tiene varios elementos secundarios, su lista de envío contendrá una matriz de voces en lugar de un puntero a una sola voz.
 
 ## <a name="related-topics"></a>Temas relacionados
 

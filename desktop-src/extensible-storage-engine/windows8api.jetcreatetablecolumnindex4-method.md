@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: Windows8Api. JetCreateTableColumnIndex4 (método)'
-title: Método Windows8Api. JetCreateTableColumnIndex4 (Microsoft. ISAM. esent. Interop. Windows8)
+description: Más información sobre el método Windows8Api.JetCreateTableColumnIndex4
+title: Método Windows8Api.JetCreateTableColumnIndex4 (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: 'JetCreateTableColumnIndex4 method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Windows8.Windows8Api.JetCreateTableColumnIndex4(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_DBID,Microsoft.Isam.Esent.Interop.JET_TABLECREATE)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.windows8api.jetcreatetablecolumnindex4(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1551c3e243ef45b7f261fd01a6b1c7926478437d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c13b269318d62d4c264bc5b8d9503a4d011c2727b79030f64bb5a6545ba0df70
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103811377"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119038533"
 ---
-# <a name="windows8apijetcreatetablecolumnindex4-method"></a>Windows8Api. JetCreateTableColumnIndex4, método
+# <a name="windows8apijetcreatetablecolumnindex4-method"></a>Método Windows8Api.JetCreateTableColumnIndex4
 
-Crea una tabla, agrega columnas e índices en esa tabla. [JetCreateTableColumnIndex3 (JET_SESID, JET_DBID, JET_TABLECREATE)](./api.jetcreatetablecolumnindex3-method.md)
+Crea una tabla, agrega columnas e índices en esa tabla. [JetCreateTableColumnIndex3(JET_SESID, JET_DBID, JET_TABLECREATE)](./api.jetcreatetablecolumnindex3-method.md)
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -65,23 +65,23 @@ public static void JetCreateTableColumnIndex4(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión que se va a usar.
+    Sesión que se usará.
 
 <!-- end list -->
 
   - dbid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_DBID](./jet-dbid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_DBID](./jet-dbid-structure.md)  
     
-    La base de datos a la que se va a agregar la nueva tabla.
+    Base de datos a la que se va a agregar la nueva tabla.
 
 <!-- end list -->
 
   - tablecreate  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLECREATE](./jet-tablecreate-class.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLECREATE](./jet-tablecreate-class.md)  
     
-    Objeto que describe la tabla que se va a crear.
+    Objeto que describe la tabla que se creará.
 
 ## <a name="see-also"></a>Vea también
 
@@ -91,4 +91,4 @@ public static void JetCreateTableColumnIndex4(
 
 [Miembros de Windows8Api](./windows8api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

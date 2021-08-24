@@ -1,9 +1,9 @@
 ---
-title: notificar atributo
-description: El atributo \ Notify \ indica al compilador de MIDL que genere una llamada a un procedimiento \ Notify \ en el lado servidor de la aplicación.
+title: atributo notify
+description: El atributo \notify\ indica al compilador midL que genere una llamada a un procedimiento \notify\ en el lado servidor de la aplicación.
 ms.assetid: 24f9887b-04b7-491a-ab6e-7c078b967fbc
 keywords:
-- notificar al atributo MIDL
+- notify attribute MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 334223979298f54acb546bd0b9ec913afd92e286
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 9cf1bb1c4f522cecb5fe81a317267e2cffff2da638e3a8c09a412ae8d94a149d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104532596"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119066865"
 ---
-# <a name="notify-attribute"></a>notificar atributo
+# <a name="notify-attribute"></a>atributo notify
 
-El atributo **\[ Notify \]** indica al compilador de MIDL que genere una llamada a un procedimiento **\[ Notify \]** en el lado del servidor de la aplicación.
+El **\[ atributo notify \]** indica al compilador MIDL que genere una llamada a un procedimiento **\[ de \]** notificación en el lado servidor de la aplicación.
 
 ``` syntax
 [notify] procedure-name();
@@ -31,32 +31,32 @@ El atributo **\[ Notify \]** indica al compilador de MIDL que genere una llamada
 
 <dl> <dt>
 
-*procedimiento: nombre* 
+*procedure-name* 
 </dt> <dd>
 
-Nombre del procedimiento remoto con el que se asociará el procedimiento de notificación.
+Nombre del procedimiento remoto al que se asociará el procedimiento de notificación.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El procedimiento **\[ Notify \]** llamado como resultado del atributo **\[ Notify \]** está asociado a un procedimiento remoto determinado en el servidor. Es similar en concepto a una función de devolución de llamada. El código auxiliar llama al procedimiento **\[ Notify \]** una vez que se han calculado las referencias de todos los argumentos de salida del procedimiento remoto al que está asociado, y se libera cualquier memoria asociada a los parámetros. Se llama a la rutina **\[ Notify \]** si se produce un error en una llamada antes de que se ejecute la rutina de servidor. Por ejemplo, si se produce un error en un servidor durante la desserialización debido a la recepción de datos incorrectos del cliente, \[ \] se llama a la rutina Notify.
+El **\[ procedimiento de \]** notificación llamado como resultado del atributo **\[ notify \]** está asociado a un procedimiento remoto determinado en el servidor. Es similar en concepto a una función de devolución de llamada. El código **\[ \]** auxiliar llama al procedimiento de notificación después de que se hayan serializado todos los argumentos de salida del procedimiento remoto al que está asociado y se libera cualquier memoria asociada a los parámetros. Se **\[ llama a la \]** rutina notify si se produce un error en una llamada antes de que se ejecute la rutina de servidor. Por ejemplo, si se produce un error en un servidor durante la desmarque debido a la recepción de datos no recibidos del cliente, se llama a la rutina de \[ \] notificación.
 
-El atributo **\[ Notify \]** es útil para desarrollar aplicaciones que adquieran recursos en procedimientos remotos. Estos recursos se liberan después en el procedimiento **\[ Notify \]** después de que se calculen las referencias de los parámetros de salida del procedimiento remoto.
+El **\[ atributo notify \]** es útil para desarrollar aplicaciones que adquieren recursos en procedimientos remotos. Después, estos recursos se liberan en el procedimiento **\[ de \]** notificación una vez que se serializan completamente los parámetros de salida del procedimiento remoto.
 
-El nombre del procedimiento de **\[ notificación \]** es el nombre del procedimiento remoto con el sufijo de **\_ notificaciones**. El procedimiento **\_ Notify** no requiere ningún parámetro y no devuelve un resultado. También se genera un prototipo de este procedimiento en el archivo de encabezado. Por ejemplo, si el archivo IDL contiene lo siguiente:
+El **\[ nombre \]** del procedimiento de notificación es el nombre del procedimiento remoto con el sufijo **\_ notify**. El **\_ procedimiento de** notificación no requiere ningún parámetro y no devuelve un resultado. También se genera un prototipo de este procedimiento en el archivo de encabezado. Por ejemplo, si el archivo IDL contiene lo siguiente:
 
 ``` syntax
 MyProcedure([in] short S);
 ```
 
-Especifique lo siguiente en ACF para MIDL a fin de generar la llamada a **\_ Notify** :
+Especifique lo siguiente en ACF for MIDL para generar la **\_ llamada de** notificación:
 
 ``` syntax
 [notify] MyProcedure();
 ```
 
-El compilador MIDL generará código auxiliar de servidor que contiene la siguiente llamada al procedimiento **\_ Notify** :
+El compilador MIDL generará código auxiliar de servidor que contiene la siguiente llamada al **\_ procedimiento de** notificación:
 
 ``` syntax
 MyProcedure_notify();
@@ -81,9 +81,9 @@ void MyProcedure_notify(void);
 [Archivo de configuración de la aplicación (ACF)](application-configuration-file-acf-.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

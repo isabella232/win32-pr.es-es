@@ -1,9 +1,9 @@
 ---
-title: Enumeración VMLogoffType (VPCCOMInterfaces. h)
+title: Enumeración VMLogoffType (VPCCOMInterfaces.h)
 description: Especifica cómo apagar una máquina virtual.
 ms.assetid: 3a2965e3-2637-4677-b487-98d2b508672c
 keywords:
-- Enumeración de VMLogoffType Virtual PC
+- VMLogoffType (enumeración) Virtual PC
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c2311736115390d807058bbfc54c24e7f9e9654
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e19d2b2785af4ffdedb2f2956658b678d16dd09c89132a230bab36feef30de30
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079328"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136396"
 ---
 # <a name="vmlogofftype-enumeration"></a>Enumeración VMLogoffType
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Especifica cómo apagar una máquina virtual (VM).
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -44,24 +44,24 @@ typedef enum  {
 
 <dl> <dt>
 
-<span id="vmLogoff_Normal"></span><span id="vmlogoff_normal"></span><span id="VMLOGOFF_NORMAL"></span>**vmLogoff \_ normal**
+<span id="vmLogoff_Normal"></span><span id="vmlogoff_normal"></span><span id="VMLOGOFF_NORMAL"></span>**vmLogoff \_ Normal**
 </dt> <dd>
 
 El cierre de sesión en la máquina virtual invitada era normal.
 
 </dd> <dt>
 
-<span id="vmLogoff_Forced"></span><span id="vmlogoff_forced"></span><span id="VMLOGOFF_FORCED"></span>**vmLogoff \_ forzada**
+<span id="vmLogoff_Forced"></span><span id="vmlogoff_forced"></span><span id="VMLOGOFF_FORCED"></span>**vmLogoff \_ Forced**
 </dt> <dd>
 
-Se forzó el cierre de sesión en la máquina virtual invitada.
+Se ha forzado el cierre de sesión en la máquina virtual invitada.
 
 </dd> <dt>
 
-<span id="vmLogoff_External"></span><span id="vmlogoff_external"></span><span id="VMLOGOFF_EXTERNAL"></span>**vmLogoff \_ externo**
+<span id="vmLogoff_External"></span><span id="vmlogoff_external"></span><span id="VMLOGOFF_EXTERNAL"></span>**vmLogoff \_ External**
 </dt> <dd>
 
-El cierre de sesión en la máquina virtual invitada se realizó con el método [**IVMGuestOS:: Logoff**](ivmguestos-logoff.md) .
+El cierre de sesión en la máquina virtual invitada se ha realizado mediante el [**método IVMGuestOS::Logoff.**](ivmguestos-logoff.md)
 
 </dd> </dl>
 
@@ -71,11 +71,11 @@ El cierre de sesión en la máquina virtual invitada se realizó con el método 
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_COLUMNDEF. Método DeepClone'
+description: 'Más información sobre: JET_COLUMNDEF. Método DeepClone'
 title: JET_COLUMNDEF. Método DeepClone
 TOCTitle: 'DeepClone method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_COLUMNDEF.DeepClone
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0f23a4cd375eb959c0e5cf3860818040a561ece3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 60a0e8589dc45b3173107be9719816a8ee112071b2d4cb23d090542da1f836b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104543331"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119112394"
 ---
 # <a name="jet_columndefdeepclone-method"></a>JET_COLUMNDEF. Método DeepClone
 
-Devuelve una copia en profundidad del objeto.
+Devuelve una copia en profundidad del objeto .
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,19 +56,19 @@ public JET_COLUMNDEF DeepClone()
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_COLUMNDEF](./jet-columndef-class.md)  
-Una copia en profundidad del objeto.  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNDEF](./jet-columndef-class.md)  
+Copia en profundidad del objeto.  
 
 #### <a name="implements"></a>Implementaciones
 
 [IDeepCloneable \<T\> . DeepClone()](./ideepcloneable-t-.deepclone-method.md)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[JET_COLUMNDEF (clase)](./jet-columndef-class.md)
+[JET_COLUMNDEF clase](./jet-columndef-class.md)
 
-[Miembros de JET_COLUMNDEF](./jet-columndef-members.md)
+[JET_COLUMNDEF miembros](./jet-columndef-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

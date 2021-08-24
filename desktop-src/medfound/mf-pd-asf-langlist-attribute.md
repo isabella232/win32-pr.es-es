@@ -1,49 +1,49 @@
 ---
-description: Especifica una lista de identificadores de idioma que especifica los idiomas contenidos en un archivo de formato de sistema avanzado (ASF). Este atributo corresponde al objeto de lista de idiomas, definido en la especificación ASF.
+description: Especifica una lista de identificadores de idioma que especifica los idiomas contenidos en un archivo de formato de sistemas avanzados (ASF). Este atributo corresponde al objeto language list, definido en la especificación de ASF.
 ms.assetid: 07b8a991-b392-47c1-a6d7-a1f5dcc82e5c
-title: MF_PD_ASF_LANGLIST atributo (Wmcontainer. h)
+title: MF_PD_ASF_LANGLIST atributo (Wmcontainer.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ecac5eac178c7fb315e0ca4cfdbd540a27eeac28
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ba22004001df2ba6be8fb7a173a3ea9bed1b0a73863ae111e61d36efa853e079
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687970"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119103707"
 ---
-# <a name="mf_pd_asf_langlist-attribute"></a>MF \_ PD \_ ASF \_ atributo LANGLIST
+# <a name="mf_pd_asf_langlist-attribute"></a>Atributo \_ DE \_ ASF LANGLIST de MF PD \_
 
-Especifica una lista de identificadores de idioma que especifica los idiomas contenidos en un archivo de formato de sistema avanzado (ASF). Este atributo corresponde al objeto de lista de idiomas, definido en la especificación ASF.
+Especifica una lista de identificadores de idioma que especifica los idiomas contenidos en un archivo de formato de sistemas avanzados (ASF). Este atributo corresponde al objeto language list, definido en la especificación de ASF.
 
 ## <a name="data-type"></a>Tipo de datos
 
 Byte array
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo se aplica a los descriptores de presentación para el contenido ASF.
+Este atributo se aplica a los descriptores de presentación para el contenido de ASF.
 
-El método [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generatepresentationdescriptor) crea el descriptor de presentación y genera este atributo a partir del encabezado de objeto de lista de idiomas. En la tabla siguiente se muestra el formato del BLOB:
+El [**método IMFASFContentInfo::GeneratePresentationDescriptor**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generatepresentationdescriptor) crea el descriptor de presentación y genera este atributo a partir del encabezado Language List Object. En la tabla siguiente se muestra el formato del blob:
 
 
 
-| Campo de objeto de lista de idiomas | Tipo de datos    | Tamaño    | Descripción                            |
+| Campo Objeto de lista de idioma | Tipo de datos    | Size    | Descripción                            |
 |----------------------------|--------------|---------|----------------------------------------|
-| Recuento de registros de ID. de idioma  | **DWORD**    | 4 bytes | Número de idiomas                    |
-| Registros de ID. de idioma        | **BYTES**\[\] | Varía  | Matriz de cadenas de lenguaje (vea más abajo). |
+| Recuento de registros de identificador de idioma  | **DWORD**    | 4 bytes | Número de idiomas                    |
+| Registros de identificador de idioma        | **Byte**\[\] | Varía  | Matriz de cadenas de lenguaje (consulte a continuación). |
 
 
 
  
 
-El primer **valor DWORD** es el número de idiomas seguido de una matriz de cadenas de identificador de idioma. Cada cadena tiene el formato siguiente:
+El primer **DWORD es** el número de idiomas, seguido de una matriz de cadenas de identificador de idioma. Cada cadena tiene el formato siguiente:
 
 
 
-| Campo de objeto de lista de idiomas | Tipo de datos     | Tamaño    | Descripción                                                                               |
+| Campo Objeto de lista de idioma | Tipo de datos     | Size    | Descripción                                                                               |
 |----------------------------|---------------|---------|-------------------------------------------------------------------------------------------|
-| Longitud del identificador de idioma         | **DWORD**     | 4 bytes | Longitud de la cadena en bytes, incluido el tamaño del carácter **nulo** final. |
-| Id. de idioma                | **WCHAR**\[\] | Varía  | Una cadena terminada en null que contiene el nombre del idioma RFC 1766.                           |
+| Longitud del identificador de idioma         | **DWORD**     | 4 bytes | Longitud de la cadena en bytes, incluido el tamaño del carácter **NULL** final. |
+| Id. de idioma                | **Wchar**\[\] | Varía  | Cadena terminada en NULL que contiene el nombre de idioma RFC 1766.                           |
 
 
 
@@ -51,7 +51,7 @@ El primer **valor DWORD** es el número de idiomas seguido de una matriz de cade
 
 Cada cadena es una etiqueta de lenguaje compatible con RFC 1766.
 
-Para obtener la etiqueta de idioma de una secuencia determinada en el archivo ASF, consulte en el descriptor de flujo el atributo [**MF \_ SD \_ ASF \_ EXTSTRMPROP \_ Language \_ ID \_ index**](mf-sd-asf-extstrmprop-language-id-index-attribute.md) .
+Para obtener la etiqueta de idioma de una secuencia determinada en el archivo ASF, consulte el descriptor de secuencia para el atributo [**MF \_ SD \_ ASF \_ EXTSTRMPROP \_ LANGUAGE ID \_ \_ INDEX.**](mf-sd-asf-extstrmprop-language-id-index-attribute.md)
 
 ## <a name="examples"></a>Ejemplos
 
@@ -201,31 +201,31 @@ private:
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>Wmcontainer. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getblob)
+[**ATTRIBUTEAttributes::GetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getblob)
 </dt> <dt>
 
-[**IMFAttributes:: SetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setblob)
+[**ATTRIBUTEAttributes::SetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setblob)
 </dt> <dt>
 
 [**IMFPresentationDescriptor**](/windows/desktop/api/mfidl/nn-mfidl-imfpresentationdescriptor)
 </dt> <dt>
 
-[Atributos de descriptor de presentación](presentation-descriptor-attributes.md)
+[Atributos del descriptor de presentación](presentation-descriptor-attributes.md)
 </dt> <dt>
 
 [Objeto de encabezado ASF](asf-file-structure.md)

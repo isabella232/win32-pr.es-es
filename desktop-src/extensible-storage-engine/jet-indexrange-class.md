@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: JET_INDEXRANGE (clase)'
-title: JET_INDEXRANGE (clase)
+description: 'Más información sobre: JET_INDEXRANGE clase'
+title: JET_INDEXRANGE clase
 TOCTitle: JET_INDEXRANGE class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_INDEXRANGE
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_indexrange(v=EXCHG.10)
@@ -24,14 +24,14 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f5739af16222619ab4b18615e2746a6e61dc69bc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c6e8808cfc4970962dbbff4bb523c3a1e06f4cad86824b639caa7b4ffe04e510
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083061"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119109351"
 ---
-# <a name="jet_indexrange-class"></a>JET_INDEXRANGE (clase)
+# <a name="jet_indexrange-class"></a>JET_INDEXRANGE clase
 
 Identifica un intervalo de índice cuando se usa con la función JetIntersectIndexes.
 
@@ -40,10 +40,10 @@ Identifica un intervalo de índice cuando se usa con la función JetIntersectInd
 [System.Object](/dotnet/api/system.object)  
   Microsoft.Isam.Esent.Interop.JET_INDEXRANGE  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,10 +62,10 @@ public class JET_INDEXRANGE : IContentEquatable<JET_INDEXRANGE>,
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de JET_INDEXRANGE](./jet-indexrange-members.md)
+[JET_INDEXRANGE miembros](./jet-indexrange-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

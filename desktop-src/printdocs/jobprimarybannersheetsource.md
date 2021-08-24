@@ -1,19 +1,19 @@
 ---
-description: Obtenga información sobre el elemento JobPrimaryBannerSheetSource, que especifica el origen de una hoja de banners personalizada principal para el trabajo.
+description: Obtenga información sobre el elemento JobPrimaryBannerSheetSource, que especifica el origen de una hoja de banner personalizada principal para el trabajo.
 ms.assetid: ad33b2cd-8409-4782-8eb9-5f12aca8405b
 title: JobPrimaryBannerSheetSource
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 366266576fca98762fd7d3dcb7e491a6cc94f529
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: ee9ff7caa2bb25bb9a22bc556c666545b26befdf134f35a2f9f7e0016499b41b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408718"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119099617"
 ---
 # <a name="jobprimarybannersheetsource"></a>JobPrimaryBannerSheetSource
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Especifica el origen de una hoja de banners personalizada principal para el trabajo.
 

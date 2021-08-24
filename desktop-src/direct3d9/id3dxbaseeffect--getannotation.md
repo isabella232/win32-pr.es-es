@@ -1,7 +1,7 @@
 ---
 description: Obtiene el identificador de una anotación.
 ms.assetid: 433d73b7-9371-4d76-8b34-a64c608eb1a3
-title: 'ID3DXBaseEffect:: GetAnnotation (método) (D3DX9Effect. h)'
+title: Método ID3DXBaseEffect::GetAnnotation (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: aad446e436478c8c7673a1919879983437fd9602
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c35deeb04e7cf21be429976c102fdf7c3126b1691b3f63725fc994ef79f7ad42
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718520"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119279015"
 ---
-# <a name="id3dxbaseeffectgetannotation-method"></a>ID3DXBaseEffect:: GetAnnotation (método)
+# <a name="id3dxbaseeffectgetannotation-method"></a>Método ID3DXBaseEffect::GetAnnotation
 
 Obtiene el identificador de una anotación.
 
@@ -41,19 +41,19 @@ D3DXHANDLE GetAnnotation(
 
 <dl> <dt>
 
-*hObject* \[ de\]
+*hObject* \[ En\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador de una técnica, un paso o un parámetro de nivel superior. Vea [identificadores (Direct3D 9)](handles.md).
+Identificador de una técnica, paso o parámetro de nivel superior. Vea [Identificadores (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
-*Índice* \[ de de\]
+*Índice* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Índice de anotación.
 
@@ -63,11 +63,11 @@ Tipo: **[ **uint**](../winprog/windows-data-types.md)**
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Devuelve el identificador de la anotación especificada o **null** si el índice no era válido. Vea [identificadores (Direct3D 9)](handles.md).
+Devuelve el identificador de la anotación especificada o **NULL** si el índice no era válido. Vea [Identificadores (Direct3D 9).](handles.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las anotaciones son datos específicos del usuario que se pueden adjuntar a cualquier técnica, paso o parámetro. Vea [identificadores (Direct3D 9)](handles.md).
+Las anotaciones son datos específicos del usuario que se pueden adjuntar a cualquier técnica, paso o parámetro. Vea [Identificadores (Direct3D 9).](handles.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,12 +75,12 @@ Las anotaciones son datos específicos del usuario que se pueden adjuntar a cual
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

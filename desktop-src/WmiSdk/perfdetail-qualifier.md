@@ -1,8 +1,8 @@
 ---
-description: No se utiliza el calificador PerfDetail en \_ clases PerfRawData de Win32. Siempre contiene 100.
+description: No se usa el calificador PerfDetail de las clases \_ PerfRawData de Win32. Siempre contiene 100.
 ms.assetid: 020a78cc-7f6c-4940-a528-b159f1f34dd3
 ms.tgt_platform: multiple
-title: Calificador PerfDetail
+title: Calificador perfDetail
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,22 +13,22 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 905683bdaa6e143f4280e72593982715012d7d8f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6e9622955a0a01a813638f14364fdc774beb46c0d755a3b232d47fe698316b33
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275787"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119050553"
 ---
-# <a name="perfdetail-qualifier"></a>Calificador PerfDetail
+# <a name="perfdetail-qualifier"></a>Calificador perfDetail
 
-No se utiliza el calificador **PerfDetail** en clases [**\_ PerfRawData de Win32**](/windows/desktop/CIMWin32Prov/win32-perfrawdata) . Siempre contiene 100.
+No se usa el calificador **PerfDetail** de las clases [**\_ PerfRawData de Win32.**](/windows/desktop/CIMWin32Prov/win32-perfrawdata) Siempre contiene 100.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>       |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/> |
@@ -39,7 +39,7 @@ No se utiliza el calificador **PerfDetail** en clases [**\_ PerfRawData de Win32
 
 <dl> <dt>
 
-[Calificadores específicos de las clases de rendimiento de WMI](qualifiers-specific-to-wmi-performance-classes.md)
+[Calificadores específicos de las clases de rendimiento wmi](qualifiers-specific-to-wmi-performance-classes.md)
 </dt> </dl>
 
  

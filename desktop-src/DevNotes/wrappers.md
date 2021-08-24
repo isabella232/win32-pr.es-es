@@ -4,12 +4,12 @@ ms.assetid: 0AADEF94-9C6F-4FE9-B272-579423FCB46E
 title: Controladores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1fca1503699f8d03b21a426fa8281588d7aba9b0
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: 8fd47f3935adf16c25776e61d84340e033f61a9665bbc7e1fbc1b19645d61b35
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "104279894"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119537995"
 ---
 # <a name="wrappers"></a>Controladores
 
@@ -23,14 +23,14 @@ ms.locfileid: "104279894"
 -   [**\_GetComputerName**](-getcomputername.md)
 -   [**\_GetDiskFreeSpaceEx**](-getdiskfreespaceex.md)
 -   [**\_GetModuleFileName**](-getmodulefilename.md)
--   [**\_GetObject**](-getobject.md)
+-   [**\_Getobject**](-getobject.md)
 -   [**\_GetProcAddress\_**](-getprocaddress-.md)
 -   [**\_GetUserName**](-getusername.md)
 -   [**\_GetVersionEx**](-getversionex.md)
 -   [**\_GetWindowText**](-getwindowtext.md)
 -   [**\_LoadCursor**](-loadcursor.md)
 -   [**\_LoadLibrary**](-loadlibrary.md)
--   [**\_Fall**](-loadstring.md)
+-   [**\_LoadString**](-loadstring.md)
 -   [**\_Cuadro de mensajes**](-messagebox.md)
 -   [**\_MoveFile**](-movefile.md)
 -   [**\_PeekMessage**](-peekmessage.md)

@@ -1,7 +1,7 @@
 ---
 description: La \_ variable miembro m pRenderer es un puntero al filtro.
 ms.assetid: 1375baa2-554e-4027-a060-8959db491f83
-title: 'Miembro CRendererInputPin:: m_pRenderer (Renbase. h)'
+title: CRendererInputPin::m_pRenderer miembro (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1d708d4a342fc551e5e746cc2980133ff2e492e1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: db7e7886c4bb247c200c9d64819910af62dec40d6bf9890fd399a9656b1ddb43
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671702"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119213945"
 ---
-# <a name="crendererinputpinm_prenderer-member"></a>Miembro pRenderer CRendererInputPin:: m \_
+# <a name="crendererinputpinm_prenderer-member"></a>Miembro CRendererInputPin::m \_ pRenderer
 
 La `m_pRenderer` variable miembro es un puntero al filtro.
 
@@ -42,8 +42,8 @@ CBaseRenderer *m_pRenderer;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ CBaseRenderer *m_pRenderer;
 
 <dl> <dt>
 
-[**Clase CRendererInputPin**](crendererinputpin.md)
+[**CRendererInputPin (clase)**](crendererinputpin.md)
 </dt> </dl>
 
  

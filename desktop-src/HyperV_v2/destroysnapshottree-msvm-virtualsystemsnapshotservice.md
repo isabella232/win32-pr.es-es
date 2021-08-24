@@ -1,7 +1,7 @@
 ---
-description: Quita una instantánea existente, y todos sus elementos secundarios, de una máquina virtual.
+description: Quita una instantánea existente y todos sus elementos secundarios de una máquina virtual.
 ms.assetid: d7a6442a-41a5-4e82-8ec8-dbc8e14d9a89
-title: Método DestroySnapshotTree de la clase Msvm_VirtualSystemSnapshotService
+title: Método DestroySnapshotTree de la Msvm_VirtualSystemSnapshotService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: e5658e954766531765c47f8bef80d5509f2ad27c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eaa589b7f6c228624f14edbf5254e5b3f5c0cf7d5b6f19c696397d0b70d6e14e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119254245"
 ---
-# <a name="destroysnapshottree-method-of-the-msvm_virtualsystemsnapshotservice-class"></a>Método DestroySnapshotTree de la \_ clase VirtualSystemSnapshotService de MSVM
+# <a name="destroysnapshottree-method-of-the-msvm_virtualsystemsnapshotservice-class"></a>Método DestroySnapshotTree de la clase Msvm \_ VirtualSystemSnapshotService
 
-Quita una instantánea existente, y todos sus elementos secundarios, de una máquina virtual.
+Quita una instantánea existente y todos sus elementos secundarios de una máquina virtual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,17 +40,17 @@ uint32 DestroySnapshotTree(
 
 <dl> <dt>
 
-*SnapshotSettingData* \[ de\]
+*SnapshotSettingData* \[ En\]
 </dt> <dd>
 
-Referencia [**de \_ VirtualSystemSettingData de CIM**](/previous-versions//cc136954(v=vs.85)) que representa el árbol de instantáneas de la máquina virtual que se va a destruir.
+Referencia [**a CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)) que representa el árbol de instantáneas de máquina virtual que se destruirá.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ ConcreteJob CIM**](/previous-versions//cc136808(v=vs.85)).
+Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Este método devuelve uno de los valores siguientes.
 **Completado sin error** (0)
 </dt> <dt>
 
-**Parámetros de método comprobados: trabajo iniciado** (4096)
+**Parámetros de método activados: trabajo iniciado** (4096)
 </dt> <dt>
 
 **Error** (32768)
@@ -75,16 +75,16 @@ Este método devuelve uno de los valores siguientes.
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**El sistema está en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -93,10 +93,10 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está** disponible (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -105,10 +105,10 @@ El **sistema no está disponible** (32777)
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -117,7 +117,7 @@ El **sistema no está disponible** (32777)
 
 <dl> <dt>
 
-[**MSVM \_ VirtualSystemSnapshotService**](msvm-virtualsystemsnapshotservice.md)
+[**Msvm \_ VirtualSystemSnapshotService**](msvm-virtualsystemsnapshotservice.md)
 </dt> <dt>
 
 [**RemoveVirtualSystemSnapshotTree (V1)**](/previous-versions/windows/desktop/virtual/removevirtualsystemsnapshottree-msvm-virtualsystemmanagementservice)

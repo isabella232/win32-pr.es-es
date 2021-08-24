@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_INDEXCREATE. szIndexName'
-title: Propiedad JET_INDEXCREATE. szIndexName
+description: 'Más información sobre: JET_INDEXCREATE.szIndexName'
+title: JET_INDEXCREATE.szIndexName, propiedad
 TOCTitle: 'szIndexName property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_INDEXCREATE.szIndexName
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_indexcreate.szindexname(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cacddb3cc19051dc4cf74e5ba6aa7f049ac09ea4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dee418c5932551c1877dae65adf0aa678554d98373e5c2e0cd04f8153d687ca9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697462"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119110050"
 ---
-# <a name="jet_indexcreateszindexname-property"></a>Propiedad JET_INDEXCREATE. szIndexName
+# <a name="jet_indexcreateszindexname-property"></a>JET_INDEXCREATE.szIndexName, propiedad
 
 Obtiene o establece el nombre del índice que se va a crear.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public string szIndexName { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. String](/dotnet/api/system.string)  
+Tipo: [System.String](/dotnet/api/system.string)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[JET_INDEXCREATE (clase)](./jet-indexcreate-class.md)
+[JET_INDEXCREATE clase](./jet-indexcreate-class.md)
 
-[Miembros de JET_INDEXCREATE](./jet-indexcreate-members.md)
+[JET_INDEXCREATE miembros](./jet-indexcreate-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,11 +1,11 @@
 ---
-title: Win32_TSVmMetadataAssociation (clase)
-description: Representa una asociación entre un Escritorio remoto máquina virtual y sus propiedades de metadatos.
+title: Win32_TSVmMetadataAssociation clase
+description: Representa una asociación entre una Escritorio remoto virtual y sus propiedades de metadatos.
 ms.assetid: 374b1a29-78de-45fd-97b3-c5a5b724e66b
 ms.tgt_platform: multiple
 keywords:
 - Win32_TSVmMetadataAssociation clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_TSVmMetadataAssociation de clase, se describe
+- Win32_TSVmMetadataAssociation clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -18,16 +18,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: db3a68c20553eaf52903471d19df9df169ecde21
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ebe3389bb03c9e3f33a2cc3e33450318b68171f7ac35fffeaaa3976cb5ae3a33
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676574"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119420005"
 ---
-# <a name="win32_tsvmmetadataassociation-class"></a>\_Clase Win32 TSVmMetadataAssociation
+# <a name="win32_tsvmmetadataassociation-class"></a>Clase \_ TSVmMetadataAssociation de Win32
 
-Representa una asociación entre un Escritorio remoto máquina virtual y sus propiedades de metadatos.
+Representa una asociación entre una Escritorio remoto virtual y sus propiedades de metadatos.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -63,7 +63,7 @@ Tipo de datos: **[ **Win32 \_ TSVmMetadataItem**](win32-tsvmmetadataitem.md)**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Instancia de la clase [**Win32 \_ TSVmMetadataItem**](win32-tsvmmetadataitem.md) que representa los metadatos de la máquina virtual.
+Instancia de la clase [**\_ TSVmMetadataItem de Win32**](win32-tsvmmetadataitem.md) que representa los metadatos de la máquina virtual.
 
 </dd> <dt>
 
@@ -79,7 +79,7 @@ Tipo de acceso: solo lectura
 Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Instancia de la clase [**Win32 \_ TSVm**](win32-tsvm.md) que representa la máquina virtual.
+Instancia de la [**clase \_ TSVm Win32**](win32-tsvm.md) que representa la máquina virtual.
 
 </dd> </dl>
 
@@ -91,8 +91,8 @@ Instancia de la clase [**Win32 \_ TSVm**](win32-tsvm.md) que representa la máqu
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                             |
-| Espacio de nombres<br/>                | Raíz de \\ cimv2 \\ TerminalServices<br/>                                                   |
-| MOF<br/>                      | <dl> <dt>TSVmHost. mof</dt> </dl>    |
+| Espacio de nombres<br/>                | \\TerminalServices cimv2 \\ raíz<br/>                                                   |
+| MOF<br/>                      | <dl> <dt>TSVmHost.mof</dt> </dl>    |
 | Archivo DLL<br/>                      | <dl> <dt>TSVmHostWmi.dll</dt> </dl> |
 
 

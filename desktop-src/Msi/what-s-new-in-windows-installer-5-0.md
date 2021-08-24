@@ -1,29 +1,29 @@
 ---
-description: La información de este tema identifica las adiciones y los cambios que están disponibles en Windows Installer&\# 160; 5.0.
+description: La información de este tema identifica las adiciones y los cambios que están disponibles en Windows Installer&\# 160;5.0.
 ms.assetid: c088c15b-0eef-4a92-bb65-e7fe871afbfe
-title: Novedades de Windows Installer 5,0
+title: Novedades de Windows Installer 5.0
 ms.topic: article
 ms.date: 11/08/2019
-ms.openlocfilehash: ae7986cec60341127ab00ad08a3032aad80209bc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 82c6ae3bf5c6781ba84d18b366998c74deedd4ca0fa4c61ac452b1d0ec409850
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907611"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119145228"
 ---
-# <a name="whats-new-in-windows-installer-50"></a>Novedades de Windows Installer 5,0
+# <a name="whats-new-in-windows-installer-50"></a>Novedades de Windows Installer 5.0
 
-La información de este tema identifica las adiciones y los cambios que están disponibles en Windows Installer 5,0.
+La información de este tema identifica las adiciones y los cambios que están disponibles en Windows Installer 5.0.
 
-Windows Installer 5,0 se incluye con las siguientes versiones de Windows:
+Windows El instalador 5.0 se incluye con las siguientes versiones de Windows:
 
 * Cliente: Windows 7 y todas las versiones posteriores.
 * Servidor: Windows Server 2008 R2 y todas las versiones posteriores.
 
 > [!NOTE]
-> No hay ningún redistribuible para Windows Installer 5,0. Para obtener una lista de los redistribuibles disponibles para las versiones anteriores de Windows Installer, vea [Windows Installer redistribuibles](windows-installer-redistributables.md). Para obtener una lista completa de las versiones de Windows Installer, consulte [versiones publicadas de Windows Installer](released-versions-of-windows-installer.md).
+> No hay ningún redistribuible para Windows Installer 5.0. Para obtener una lista de redistribuibles disponibles para versiones anteriores de Windows Installer, [vea Windows Installer Redistributables](windows-installer-redistributables.md). Para obtener una lista completa de las Windows instalador, vea [Versiones publicadas de Windows Installer](released-versions-of-windows-installer.md).
 
-Esta página se proporciona como guía para la documentación de. Debe consultar la sección de requisitos de las páginas de referencia principales para determinar los requisitos de sistema operativo reales. Las partes de la Windows Installer a las que no se ha vinculado desde esta página pueden estar disponibles en otra versión de la Windows Installer. Para obtener información sobre otras versiones de Windows Installer, consulte [novedades de Windows Installer](what-s-new-in-windows-installer.md).
+Esta página se proporciona como guía de la documentación. Debe consultar la sección Requisitos de las páginas de referencia principales para determinar los requisitos reales del sistema operativo. Las partes del Windows que no están vinculadas a desde esta página pueden estar disponibles en otra versión del instalador Windows. Para obtener información sobre otras Windows installer, vea [Novedades de Windows Installer](what-s-new-in-windows-installer.md).
 
 [Acciones estándar](standard-actions.md)
 
@@ -44,9 +44,9 @@ Esta página se proporciona como guía para la documentación de. Debe consultar
 -   [**MSIFASTINSTALL**](msifastinstall.md)
 -   [**MSIINSTALLPERUSER**](msiinstallperuser.md)
 
-[Propiedades de información de Resumen](summary-information-stream-reference.md)
+[Propiedades de información de resumen](summary-information-stream-reference.md)
 
--   El [**Resumen**](template-summary.md) de la plantilla tiene valores nuevos para indicar que la base de datos es compatible con Windows RT o la plataforma Arm64.
+-   El [**resumen de plantilla**](template-summary.md) tiene nuevos valores para indicar que la base de datos es compatible Windows RT o la plataforma Arm64.
 
 [Tablas de base de datos](database-tables.md)
 
@@ -57,14 +57,14 @@ Esta página se proporciona como guía para la documentación de. Debe consultar
 
 [ControlEvents](control-events.md)
 
--   [MsiPrint ControlEvent,](msiprint-controlevent.md)
--   [MsiLaunchApp ControlEvent,](msilaunchapp-controlevent.md)
+-   [MsiPrint ControlEvent](msiprint-controlevent.md)
+-   [MsiLaunchApp ControlEvent](msilaunchapp-controlevent.md)
 
 [Controles](controls.md)
 
--   [Control de hipervínculo](hyperlink-control.md)
+-   [Hyperlink (Control)](hyperlink-control.md)
 
-[Evaluadores de coherencia interna-CIEM](internal-consistency-evaluators-ices.md)
+[Evaluadores de coherencia internos: TIC](internal-consistency-evaluators-ices.md)
 
 -   [ICE101](ice-101.md)
 -   [ICE102](ice-102.md)
@@ -72,45 +72,45 @@ Esta página se proporciona como guía para la documentación de. Debe consultar
 -   [ICE104](ice-104.md)
 -   [ICE105](ice-105.md)
 
-[Interfaz de automatización](automation-interface.md)
+[Interfaz de Automation](automation-interface.md)
 
--   Propiedades del [ **objeto Installer**](installer-object.md)
+-   Propiedades del objeto [ **Installer**](installer-object.md)
 
-    -   [**Instalador. ClientsEx**](installer-clientsex.md)
-    -   [**Instalador. ComponentsEx**](installer-componentsex.md)
-    -   [**Instalador. ComponentPathEx**](installer-componentpathex.md)
+    -   [**Installer.ClientsEx**](installer-clientsex.md)
+    -   [**Installer.ComponentsEx**](installer-componentsex.md)
+    -   [**Installer.ComponentPathEx**](installer-componentpathex.md)
 
--   Propiedades del [ **objeto Components**](components.md)
+-   Propiedades del objeto [ **Components**](components.md)
 
-    -   [**Components. ComponentCode**](component-componentcode.md)
-    -   [**Components. UserSID**](component-usersid.md)
-    -   [**Components. Context**](component-context.md)
+    -   [**Components.ComponentCode**](component-componentcode.md)
+    -   [**Components.UserSID**](component-usersid.md)
+    -   [**Components.Context**](component-context.md)
 
--   Propiedades del [ **objeto de cliente**](client.md)
+-   Propiedades del [ **objeto cliente**](client.md)
 
-    -   [**Client. ProductCode**](client-productcode.md)
-    -   [**Client. ComponentCode**](client-componentcode.md)
-    -   [**Client. UserSID**](client-usersid.md)
-    -   [**Client. Context**](client-context.md)
+    -   [**Client.ProductCode**](client-productcode.md)
+    -   [**Client.ComponentCode**](client-componentcode.md)
+    -   [**Client.UserSID**](client-usersid.md)
+    -   [**Client.Context**](client-context.md)
 
--   Propiedades del objeto [**ComponentInfo**](componentinfo.md)
+-   Propiedades del [**objeto ComponentInfo**](componentinfo.md)
 
     -   [**ComponentInfo.ComponentCode**](componentinfo-componentcode.md)
-    -   [**ComponentInfo. Path**](componentinfo-path.md)
-    -   [**ComponentInfo. State**](componentinfo-state.md)
+    -   [**ComponentInfo.Path**](componentinfo-path.md)
+    -   [**ComponentInfo.State**](componentinfo-state.md)
 
 ## <a name="notes"></a>Notas
 
-Los desarrolladores de configuración pueden usar Windows Installer 5,0 para crear un paquete de instalación único capaz de instalación por equipo o de instalación por usuario de la aplicación. Para obtener más información, vea [creación de un solo paquete](single-package-authoring.md). El evaluador de coherencia interno [ICE105](ice-105.md) comprueba que se ha creado el paquete para instalarlo en un contexto por usuario. Una aplicación capaz de instalarse, actualizarse, ejecutarse y quitarse por un usuario estándar sin elevación se denomina Per-User aplicación (PUA). Un PUA puede proporcionar una mejor experiencia de usuario, minimizar los efectos en el sistema y otros usuarios del equipo, y reserva la solicitud de UAC en situaciones que realmente requieren la elevación de los privilegios del usuario. Las características de creación de paquetes únicas de Windows Installer 5,0 pueden facilitar el desarrollo de aplicaciones de Per-User.
+Los desarrolladores de instalación pueden Windows Installer 5.0 para crear un único paquete de instalación capaz de instalar la aplicación por máquina o por usuario. Para obtener más información, vea [Single Package Authoring](single-package-authoring.md). El evaluador de coherencia [interno ICE105](ice-105.md) comprueba que el paquete se ha escrito para instalarse en un contexto por usuario. Una aplicación capaz de ser instalada, actualizada, ejecutada y quitada por un usuario estándar sin elevación se denomina Per-User aplicación (PUA). Una PUA puede proporcionar una mejor experiencia de usuario, minimizar los efectos en el sistema y otros usuarios del equipo, y reserva la solicitud de UAC a situaciones que realmente requieren la elevación de los privilegios del usuario. Las características de creación de paquete único de Windows Installer 5.0 pueden facilitar el desarrollo de Per-User aplicaciones.
 
-Las opciones de configuración de servicios habilitan un paquete de Windows Installer para personalizar los [servicios](../services/services.md) de un equipo. Para obtener más información, consulte uso de la [configuración de servicios](using-services-configuration.md).
+Las opciones de configuración de servicios permiten que Windows instalador personalizado para personalizar [los servicios](../services/services.md) en un equipo. Para obtener más información, vea [Using Services Configuration](using-services-configuration.md).
 
-A partir de Windows Installer 5,0, un paquete de Windows Installer es capaz de proteger nuevas cuentas, [servicios](../services/services.md)de Windows, archivos, carpetas y claves del registro. La tabla [MsiLockPermissionsEx](msilockpermissionsex-table.md) puede especificar un descriptor de seguridad que deniegue permisos, especifica la herencia de permisos de un recurso primario o especifica los permisos de una nueva cuenta. Para obtener más información, consulte [protección de recursos](securing-resources-.md).
+A partir de Windows Installer 5.0, un paquete del instalador de Windows es capaz de proteger nuevas cuentas, servicios de [Windows,](../services/services.md)archivos, carpetas y claves del Registro. La [tabla MsiLockPermissionsEx](msilockpermissionsex-table.md) puede especificar un descriptor de seguridad que deniegue permisos, especifique la herencia de permisos de un recurso primario o especifique los permisos de una nueva cuenta. Para obtener información, vea [Securing Resources](securing-resources-.md).
 
-Windows Installer 5,0 puede enumerar todos los componentes instalados en el equipo y obtener la ruta de acceso de la clave del componente. Para obtener más información, vea [enumerar componentes](enumerating-components-.md).
+Windows El instalador 5.0 puede enumerar todos los componentes instalados en el equipo y obtener la ruta de acceso de la clave para el componente. Para obtener más información, [vea Enumerar componentes](enumerating-components-.md).
 
-Windows Installer 5,0 que se ejecuta en Windows Server 2012 o Windows 8 admite la instalación de aplicaciones aprobadas en Windows RT. No se puede instalar en Windows RT un paquete de Windows Installer, revisión o transformación que no haya firmado Microsoft. La propiedad de Resumen de la [**plantilla**](template-summary.md) indica la plataforma que es compatible con la base de datos de instalación y debe incluir el valor de Windows RT.
+Windows El instalador 5.0 que se ejecuta en Windows Server 2012 o Windows 8 admite la instalación de aplicaciones aprobadas en Windows RT. No Windows instalar un paquete, revisión o transformación del instalador de aplicaciones que no haya sido firmado por Microsoft en Windows RT. La [**propiedad Resumen de plantilla**](template-summary.md) indica la plataforma que es compatible con la base de datos de instalación y debe incluir el valor para Windows RT.
 
-Windows Installer 5,0 que se ejecuta en Windows 10 en procesadores Arm64 admite la instalación de aplicaciones compiladas específicamente para la plataforma Arm64.  La propiedad de Resumen de la [**plantilla**](template-summary.md) de estos paquetes debe incluir el valor Arm64. 
+Windows El instalador 5.0 que se ejecuta Windows 10 en procesadores Arm64 admite la instalación de aplicaciones compiladas específicamente para la plataforma Arm64.  La [**propiedad Resumen de**](template-summary.md) plantilla de estos paquetes debe incluir el valor Arm64. 
 
  

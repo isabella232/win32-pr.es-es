@@ -1,11 +1,11 @@
 ---
-title: Atributo Bad-pwd-Count
-description: El número de veces que el usuario intentó iniciar sesión en la cuenta con una contraseña incorrecta.
+title: Atributo Bad-Pwd-Count
+description: Número de veces que el usuario intentó iniciar sesión en la cuenta con una contraseña incorrecta.
 ms.assetid: 1161b0c1-1b28-4349-ad43-82ce68428c44
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo incorrecto-pwd-Count
-- badPwdCount esquema de AD de atributos
+- Esquema de AD del atributo Bad-Pwd-Count
+- Esquema de AD del atributo badPwdCount
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e3a406058737773781874a81e9968786e1523d8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 608e587627bd8b470582e247bc8586e7e1576a2ff865a64bd9bd6fb60bd07c0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151487"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081929"
 ---
-# <a name="bad-pwd-count-attribute"></a>Atributo Bad-pwd-Count
+# <a name="bad-pwd-count-attribute"></a>Atributo Bad-Pwd-Count
 
-El número de veces que el usuario intentó iniciar sesión en la cuenta con una contraseña incorrecta. Un valor de 0 indica que el valor es desconocido.
+Número de veces que el usuario intentó iniciar sesión en la cuenta con una contraseña incorrecta. Un valor de 0 indica que el valor es desconocido.
 
 
 
 | Entrada | Value |
 |-------------------|-------------------------------------------|
-| CN                | Incorrecto: PWD-Count                             |
-| Nombre para mostrar de LDAP | badPwdCount                               |
-| Tamaño              | 4 bytes                                   |
-| Actualizar privilegio  | El sistema establece este valor.          |
+| CN                | Bad-Pwd-Count                             |
+| Ldap-Display-Name | badPwdCount                               |
+| Size              | 4 bytes                                   |
+| Privilegio actualizar  | El sistema establece este valor.          |
 | Frecuencia de actualización  | Cada vez que el usuario escribe una contraseña incorrecta. |
 | Attribute-Id      | 1.2.840.113556.1.4.12                     |
-| System-ID-GUID    | bf96792e-0de6-11d0-a285-00aa003049e2      |
-| Sintaxis            | [**Enumeración**](s-enumeration.md)      |
+| System-Id-Guid    | bf96792e-0de6-11d0-a285-00aa003049e2      |
+| Syntax            | [**Enumeración**](s-enumeration.md)      |
 
 
 
@@ -44,7 +44,7 @@ El número de veces que el usuario intentó iniciar sesión en la cuenta con una
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,18 +56,18 @@ El número de veces que el usuario intentó iniciar sesión en la cuenta con una
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000011                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -77,39 +77,39 @@ El número de veces que el usuario intentó iniciar sesión en la cuenta con una
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000011                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                |
+| Id. de vínculo                | \-                                                                |
 | MAPI-Id                | \-                                                                |
-| System-Only            | True                                                              |
-| Tiene un único valor       | True                                                              |
-| Está indexado             | False                                                             |
-| En el catálogo global      | False                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                      |
+| System-Only            | Verdadero                                                              |
+| Es de un solo valor       | Verdadero                                                              |
+| Está indexado             | Falso                                                             |
+| En el catálogo global      | Falso                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000011                                                        |
-| Clases usadas en        | [**Objeto MS-DS-Bindable**](c-msds-bindableobject.md)<br/> |
+| Clases usadas en        | [**ms-DS-Bindable-Object**](c-msds-bindableobject.md)<br/> |
 
 
 
@@ -119,18 +119,18 @@ El número de veces que el usuario intentó iniciar sesión en la cuenta con una
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000011                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -140,18 +140,18 @@ El número de veces que el usuario intentó iniciar sesión en la cuenta con una
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000011                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -161,18 +161,18 @@ El número de veces que el usuario intentó iniciar sesión en la cuenta con una
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000011                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -182,22 +182,22 @@ El número de veces que el usuario intentó iniciar sesión en la cuenta con una
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000011                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este atributo no se replica y se mantiene por separado en cada controlador de dominio del dominio.
 

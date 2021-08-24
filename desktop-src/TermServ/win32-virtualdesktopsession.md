@@ -1,11 +1,11 @@
 ---
-title: Win32_VirtualDesktopSession (clase)
+title: Win32_VirtualDesktopSession clase
 description: Administra una sesión de escritorio virtual.
 ms.assetid: a5a0d2a4-6e19-42ac-988c-2d3787946325
 ms.tgt_platform: multiple
 keywords:
 - Win32_VirtualDesktopSession clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_VirtualDesktopSession de clase, se describe
+- Win32_VirtualDesktopSession clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -24,14 +24,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f343c1dc022dcb4759f813de956ade27e1aff213
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 01e039df658ded4534e3e2582f08ba4e5f5a04530d810349fff5633730a84332
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489341"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119137428"
 ---
-# <a name="win32_virtualdesktopsession-class"></a>\_Clase Win32 VirtualDesktopSession
+# <a name="win32_virtualdesktopsession-class"></a>Clase VirtualDesktopSession de Win32 \_
 
 Administra una sesión de escritorio virtual.
 
@@ -63,14 +63,14 @@ La **clase \_ VirtualDesktopSession de Win32** tiene estos tipos de miembros:
 
 ### <a name="methods"></a>Métodos
 
-La clase **Win32 \_ VirtualDesktopSession** tiene estos métodos.
+La **clase \_ VirtualDesktopSession de Win32** tiene estos métodos.
 
 
 
 | Método                                                         | Descripción                                                                |
 |:---------------------------------------------------------------|:---------------------------------------------------------------------------|
 | [**Desconectar**](disconnect-win32-virtualdesktopsession.md)   | Desconecta la sesión de escritorio virtual.<br/>                        |
-| [**Forzado**](logoff-win32-virtualdesktopsession.md)           | Cierra la sesión del usuario desde la sesión de escritorio virtual.<br/>             |
+| [**Cerrar sesión**](logoff-win32-virtualdesktopsession.md)           | Cierra la sesión del usuario de escritorio virtual.<br/>             |
 | [**SendMessage**](sendmessage-win32-virtualdesktopsession.md) | Envíe un mensaje al usuario a través de la sesión de escritorio virtual.<br/> |
 
 
@@ -96,7 +96,7 @@ Obtiene el nombre del equipo cliente que está conectado a la sesión.
 
 </dd> <dt>
 
-**Recopilación**
+**CollectionId**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -112,7 +112,7 @@ Obtiene el nombre de la colección de escritorios virtuales que hospeda la máqu
 **ConnectState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -138,7 +138,7 @@ Obtiene el nombre de dominio del usuario.
 **SessionId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -160,7 +160,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Obtiene el nombre de la cuenta de usuario que está asignada a la sesión.
+Obtiene el nombre de la cuenta de usuario asignada a la sesión.
 
 </dd> <dt>
 
@@ -176,7 +176,7 @@ Tipo de acceso: solo lectura
 Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Obtiene el nombre del servidor host de virtualización Escritorio remoto que hospeda la máquina virtual.
+Obtiene el nombre del servidor host Escritorio remoto virtualización que hospeda la máquina virtual.
 
 </dd> <dt>
 
@@ -201,8 +201,8 @@ Obtiene el nombre de la máquina virtual que está asignada a la sesión.
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                              |
-| Espacio de nombres<br/>                | RDMs raíz de \\ cimv2 \\<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Rdms \\ cimv2 \\ raíz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -211,7 +211,7 @@ Obtiene el nombre de la máquina virtual que está asignada a la sesión.
 
 <dl> <dt>
 
-[Proveedor de servicios de administración de Escritorio remoto](rdms-api-reference.md)
+[Escritorio remoto Management Services Provider](rdms-api-reference.md)
 </dt> </dl>
 
  

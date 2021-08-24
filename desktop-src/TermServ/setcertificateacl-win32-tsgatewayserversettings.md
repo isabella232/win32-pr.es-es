@@ -1,12 +1,12 @@
 ---
-title: Método SetCertificateACL de la clase Win32_TSGatewayServerSettings
-description: Establece el certificado necesario para tener acceso al servidor de puerta de enlace de Escritorio remoto (puerta de enlace de escritorio remoto).
+title: Método SetCertificateACL de la Win32_TSGatewayServerSettings clase
+description: Establece el certificado necesario para acceder al servidor Escritorio remoto Gateway (puerta de enlace de Escritorio remoto).
 ms.assetid: 274c24bf-4e44-42ea-a109-99d0249c2f78
 ms.tgt_platform: multiple
 keywords:
 - Método SetCertificateACL Servicios de Escritorio remoto
-- Método SetCertificateACL Servicios de Escritorio remoto, clase Win32_TSGatewayServerSettings
-- Win32_TSGatewayServerSettings de clase Servicios de Escritorio remoto, método SetCertificateACL
+- Método SetCertificateACL Servicios de Escritorio remoto , Win32_TSGatewayServerSettings clase
+- Win32_TSGatewayServerSettings clase Servicios de Escritorio remoto , método SetCertificateACL
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f7a43e737b39b9bea18ee3925b5c3f55440d2a6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cc18dd0bf72ac63216e71e1a7db6a133d6a97f79d3a62876f8a9c9458007e25d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079735"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138038"
 ---
-# <a name="setcertificateacl-method-of-the-win32_tsgatewayserversettings-class"></a>Método SetCertificateACL de la \_ clase TSGatewayServerSettings de Win32
+# <a name="setcertificateacl-method-of-the-win32_tsgatewayserversettings-class"></a>Método SetCertificateACL de la clase \_ TSGatewayServerSettings de Win32
 
-Establece el certificado necesario para tener acceso al servidor de puerta de enlace de Escritorio remoto (puerta de enlace de escritorio remoto).
+Establece el certificado necesario para acceder al servidor Escritorio remoto Gateway (puerta de enlace de Escritorio remoto).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,22 +43,22 @@ uint32 SetCertificateACL(
 
 <dl> <dt>
 
-*CertHash* \[ de\]
+*CertHash* \[ En\]
 </dt> <dd>
 
-Hash del certificado utilizado por el servidor de puerta de enlace de escritorio remoto.
+Hash del certificado que usa el servidor de puerta de enlace de Escritorio remoto.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, vea [servicios de escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
+Si el método se realiza correctamente, devuelve cero. Si el método no es correcto, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para llamar a este método, debe ser miembro del grupo administradores.
+Debe ser miembro del grupo Administradores para llamar a este método.
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del Kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,8 +68,8 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TSGateway. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 

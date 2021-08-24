@@ -1,19 +1,19 @@
 ---
-description: Enviado por el filtro del escritor ASF de WM cuando completa el procesamiento previo para la codificación Multipass.
+description: Enviado por el filtro WM ASF Writer cuando completa el procesamiento previo para la codificación multipass.
 ms.assetid: 2029afc4-419c-494a-ae52-1f84b08bcb35
-title: EC_PREPROCESS_COMPLETE (DShow. h)
+title: EC_PREPROCESS_COMPLETE (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ba13938ac848ef37f1a2a2826372d97ff5a5d716
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: df07444c501ea89ec0d19f3f727e8325953e3c06f740562f7ec058eafa987fee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105678914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119537005"
 ---
-# <a name="ec_preprocess_complete"></a>preprocesamiento de EC \_ \_ completado
+# <a name="ec_preprocess_complete"></a>EC \_ PREPROCESS \_ COMPLETE
 
-Enviado por el filtro del [escritor ASF de WM](wm-asf-writer-filter.md) cuando completa el procesamiento previo para la codificación Multipass.
+Enviado por el [filtro WM ASF Writer](wm-asf-writer-filter.md) cuando completa el procesamiento previo para la codificación multipass.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -29,7 +29,7 @@ Cero.
 <span id="lParam2"></span><span id="lparam2"></span><span id="LPARAM2"></span>*lParam2*
 </dt> <dd>
 
-(**IUnknown** \* ) Puntero a la interfaz [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter) del filtro.
+(**IUnknown** \* ) Puntero a la [**interfaz IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter) del filtro.
 
 </dd> </dl>
 
@@ -43,7 +43,7 @@ Ninguno.
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>DShow. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

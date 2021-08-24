@@ -1,9 +1,9 @@
 ---
-title: Mensaje de LVM_GETTEXTCOLOR (commctrl. h)
-description: Recupera el color del texto de un control de vista de lista. Puede enviar este mensaje explícitamente o mediante la \_ macro GetTextColor de ListView.
+title: LVM_GETTEXTCOLOR mensaje (Commctrl.h)
+description: Recupera el color de texto de un control de vista de lista. Puede enviar este mensaje explícitamente o mediante la macro \_ ListView GetTextColor.
 ms.assetid: 51685e61-dd0a-4c21-8c66-31cf72c2b3e4
 keywords:
-- LVM_GETTEXTCOLOR controles de mensajes de Windows
+- LVM_GETTEXTCOLOR controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7686e8f06f49dbfc14899f47ba52017daaf23c07
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f4ea7d295d87b8db5d0fa43403ccd01a8b41790447fd7ed6b7bae5d08150c934
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105658336"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119079049"
 ---
-# <a name="lvm_gettextcolor-message"></a>\_Mensaje GETTEXTCOLOR LVM
+# <a name="lvm_gettextcolor-message"></a>Mensaje \_ GETTEXTCOLOR de LVM
 
-Recupera el color del texto de un control de vista de lista. Puede enviar este mensaje explícitamente o mediante la macro [**\_ GetTextColor de ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_gettextcolor) .
+Recupera el color de texto de un control de vista de lista. Puede enviar este mensaje explícitamente o mediante la macro [**\_ ListView GetTextColor.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_gettextcolor)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -43,11 +43,11 @@ Devuelve el color del texto.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,33 +1,33 @@
 ---
 title: ServiceParameters
-description: Especifica los parámetros de línea de comandos que se van a pasar a un objeto instalado para que lo use COM mediante el valor del registro LocalService.
+description: Especifica los parámetros de línea de comandos que se pasarán a un objeto instalado para su uso por COM a través del valor del Registro LocalService.
 ms.assetid: da11e422-c0f2-4e44-9728-740ea6b61421
 keywords:
-- Valor del registro ServiceParameters COM
+- Valor com del Registro ServiceParameters
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 235de1052df72e88e2093647928ed68ab67451cd
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 103b55269b700beaf5c85e3408e3597e63fb9140e4dc79fe4bb895ff6767bfc9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357144"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119129967"
 ---
 # <a name="serviceparameters"></a>ServiceParameters
 
-Especifica los parámetros de línea de comandos que se van a pasar a un objeto instalado para que lo use COM mediante el valor del registro [**LocalService**](localservice.md) .
+Especifica los parámetros de línea de comandos que se pasarán a un objeto instalado para su uso por COM a través del valor del Registro [**LocalService.**](localservice.md)
 
 ## <a name="registry-entry"></a>Entrada del Registro
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID
-   {AppID_GUID}
-      ServiceParameters = parameter
+   {AppID_GUID}
+      ServiceParameters = parameter
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este es un valor de **reg \_ SZ** . Esta cadena se pasa al servicio como un argumento de línea de comandos cuando se inicia.
+Se trata de **un valor \_ REG SZ.** Esta cadena se pasa al servicio como un argumento de línea de comandos mientras se inicia.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -36,12 +36,12 @@ Este es un valor de **reg \_ SZ** . Esta cadena se pasa al servicio como un argu
 [**LocalService (Servicio local)**](localservice.md)
 </dt> <dt>
 
-[Registrar servidores COM](registering-com-servers.md)
+[Registro de servidores COM](registering-com-servers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

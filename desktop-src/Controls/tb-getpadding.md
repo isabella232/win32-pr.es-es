@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TB_GETPADDING (commctrl. h)
+title: TB_GETPADDING mensaje (Commctrl.h)
 description: Recupera el relleno de un control de barra de herramientas.
 ms.assetid: dde0f44d-5d22-4cab-a7f8-48d84b8995d3
 keywords:
-- TB_GETPADDING controles de mensajes de Windows
+- TB_GETPADDING controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b15babf2fd5d97377991d1827ea8947e9d794600
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f342e3322c0db60f46b0de353c2bbd2f6abe28717aa8ee23db8a3a9f26473113
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079714"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078329"
 ---
-# <a name="tb_getpadding-message"></a>\_Mensaje GETPADDING TB
+# <a name="tb_getpadding-message"></a>Mensaje \_ GETPADDING de TB
 
 Recupera el relleno de un control de barra de herramientas.
 
@@ -37,17 +37,17 @@ Recupera el relleno de un control de barra de herramientas.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **DWORD** que contiene el relleno horizontal de la palabra baja y el relleno vertical de la palabra alta, en píxeles.
+Devuelve un **valor DWORD** que contiene el relleno horizontal en la palabra baja y el relleno vertical en la palabra alta, en píxeles.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

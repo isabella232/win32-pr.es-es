@@ -1,6 +1,6 @@
 ---
-title: Filtrar los identificadores de subcapa (Fwpmu. h)
-description: Constantes de identificador de subcapa de filtrado de API de WFP.
+title: Filtrar identificadores de subcapa (Fwpmu.h)
+description: Constantes de identificador de subcapa de filtrado de WFP API Management.
 ms.assetid: 4c8dbe35-e84b-4490-bf7a-7ff8b94e2022
 topic_type:
 - apiref
@@ -22,52 +22,52 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e015d590c19395987bbd47d1c3c4b918296ab5f3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d597fa1b75f6c965da9cf8d71bcc3e729d0b0b2f4f4220c984a1be8c94c09d39
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068885"
 ---
-# <a name="filtering-sublayer-identifiers"></a>Filtrado de identificadores de subnivel
+# <a name="filtering-sublayer-identifiers"></a>Filtrado de identificadores de subcapa
 
-Los identificadores de subnivel de la plataforma de filtrado de Windows (WFP) se representan mediante un GUID.
+Cada Windows identificadores de subcapa de la plataforma de filtrado de filtros (WFP) se representan mediante un GUID.
 
-Estos identificadores se definen como se indica a continuación.
+Estos identificadores se definen de la manera siguiente.
 
 <dl> <dt>
 
-<span id="FWPM_SUBLAYER_EDGE_TRAVERSAL________________________FWPM_SUBLAYER_TEREDO"></span><span id="fwpm_sublayer_edge_traversal________________________fwpm_sublayer_teredo"></span>**FWPM de subcapas de \_ \_ \_ cruce transversal/FWPM del perímetro de \_ subcapas \_**
+<span id="FWPM_SUBLAYER_EDGE_TRAVERSAL________________________FWPM_SUBLAYER_TEREDO"></span><span id="fwpm_sublayer_edge_traversal________________________fwpm_sublayer_teredo"></span>**FWPM \_ SUBLAYER \_ EDGE \_ TRAVERSAL /FWPM \_ SUBLAYER \_ TEREDO**
 </dt> <dd> <dl> <dt>
 
 
 
-Los filtros de cruce seguro del perímetro se agregan a esta subcapa.
+Los filtros transversales perimetrales se agregan a esta subcapa.
 
 > [!Note]  
-> En Windows 7 y versiones posteriores, use el **\_ \_ \_ cruce seguro del perímetro de subcapas de FWPM**.
+> Para Windows 7 y versiones posteriores, use **FWPM \_ SUBLAYER \_ EDGE \_ TRAVERSAL**.
 
  
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_SUBLAYER_INSPECTION"></span><span id="fwpm_sublayer_inspection"></span>**\_inspección de SUBcapas de FWPM \_**
+<span id="FWPM_SUBLAYER_INSPECTION"></span><span id="fwpm_sublayer_inspection"></span>**INSPECCIÓN DE \_ SUBCAPAS FWPM \_**
 </dt> <dd> <dl> <dt>
 
 
 
-Esta es la subcapa ponderada más baja. Solo se usa para los filtros de inspección.
+Se trata de la subcapa ponderada más baja. Solo se usa para los filtros de inspección.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_SUBLAYER_IPSEC_DOSP"></span><span id="fwpm_sublayer_ipsec_dosp"></span>**\_DOSP de IPSec de subcapa FWPM \_ \_**
+<span id="FWPM_SUBLAYER_IPSEC_DOSP"></span><span id="fwpm_sublayer_ipsec_dosp"></span>**DOSP \_ DE IPSEC DE \_ SUBCAPA FWPM \_**
 </dt> <dd> <dl> <dt>
 
 
 
-Los filtros de protección DoS de IPsec se agregan a esta subcapa.
+Los filtros de IPsec DoS Protection se agregan a esta subcapa.
 
 > [!Note]  
 > Solo está disponible en Windows Vista con SP1, Windows Server 2008 y versiones posteriores.
@@ -77,22 +77,22 @@ Los filtros de protección DoS de IPsec se agregan a esta subcapa.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_SUBLAYER_IPSEC_FORWARD_OUTBOUND_TUNNEL"></span><span id="fwpm_sublayer_ipsec_forward_outbound_tunnel"></span>**\_túnel de salida de \_ \_ reenvío IPSec de \_ subcapa FWPM \_**
+<span id="FWPM_SUBLAYER_IPSEC_FORWARD_OUTBOUND_TUNNEL"></span><span id="fwpm_sublayer_ipsec_forward_outbound_tunnel"></span>**TÚNEL DE SALIDA \_ DE REENVÍO DE IPSEC DE \_ SUBCAPA \_ \_ FWPM \_**
 </dt> <dd> <dl> <dt>
 
 
 
-Los filtros de túnel de salida de reenvío IPsec se agregan a esta subcapa.
+Los filtros de túnel de salida hacia delante de IPsec se agregan a esta subcapa.
 
 > [!Note]  
-> Solo está disponible en Windows 7, Windows Server 2008 R2 y versiones posteriores.
+> Disponible solo en Windows 7, Windows Server 2008 R2 y versiones posteriores.
 
  
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_SUBLAYER_IPSEC_TUNNEL"></span><span id="fwpm_sublayer_ipsec_tunnel"></span>**\_túnel IPSec de subcapa FWPM \_ \_**
+<span id="FWPM_SUBLAYER_IPSEC_TUNNEL"></span><span id="fwpm_sublayer_ipsec_tunnel"></span>**TÚNEL \_ IPSEC DE \_ SUBCAPA \_ FWPM**
 </dt> <dd> <dl> <dt>
 
 
@@ -102,7 +102,7 @@ Los filtros de túnel IPsec se agregan a esta subcapa.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_SUBLAYER_LIPS"></span><span id="fwpm_sublayer_lips"></span>**\_Lip de SUBcapa de FWPM \_**
+<span id="FWPM_SUBLAYER_LIPS"></span><span id="fwpm_sublayer_lips"></span>**FWPM \_ \_ SUBLAYERLAYERLAYERLAYER (SUBCAPA FWPM)**
 </dt> <dd> <dl> <dt>
 
 
@@ -112,17 +112,17 @@ Los filtros IPsec heredados se agregan a esta subcapa.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_SUBLAYER_RPC_AUDIT"></span><span id="fwpm_sublayer_rpc_audit"></span>**\_Auditoría de RPC de subcapa FWPM \_ \_**
+<span id="FWPM_SUBLAYER_RPC_AUDIT"></span><span id="fwpm_sublayer_rpc_audit"></span>**FWPM \_ SUBLAYER \_ RPC \_ AUDIT**
 </dt> <dd> <dl> <dt>
 
 
 
-Los filtros de auditoría de RPC se agregan a esta subcapa. Estos filtros auditan las llamadas entrantes de RPC como parte del cumplimiento de criterios de C2 y común.
+Los filtros de auditoría RPC se agregan a esta subcapa. Estos filtros auditan las llamadas entrantes RPC como parte de C2 y el cumplimiento de criterios comunes.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_SUBLAYER_SECURE_SOCKET"></span><span id="fwpm_sublayer_secure_socket"></span>**\_socket seguro de subcapa FWPM \_ \_**
+<span id="FWPM_SUBLAYER_SECURE_SOCKET"></span><span id="fwpm_sublayer_secure_socket"></span>**SOCKET SEGURO \_ DE SUBCAPA FWPM \_ \_**
 </dt> <dd> <dl> <dt>
 
 
@@ -132,17 +132,17 @@ Los filtros de sockets seguros se agregan a esta subcapa.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_SUBLAYER_TCP_CHIMNEY_OFFLOAD"></span><span id="fwpm_sublayer_tcp_chimney_offload"></span>**\_ \_ descarga de TCP \_ CHIMNEY \_ de subcapa FWPM**
+<span id="FWPM_SUBLAYER_TCP_CHIMNEY_OFFLOAD"></span><span id="fwpm_sublayer_tcp_chimney_offload"></span>**DESCARGA DE LA CAMPANA \_ TCP DE \_ SUBCAPA FWPM \_ \_**
 </dt> <dd> <dl> <dt>
 
 
 
-Los filtros de descarga TCP Chimney se agregan a esta subcapa.
+Los filtros de descarga de TCP Chimney se agregan a esta subcapa.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_SUBLAYER_TCP_TEMPLATES______________________"></span><span id="fwpm_sublayer_tcp_templates______________________"></span>**\_plantillas TCP de subcapa FWPM \_ \_** 
+<span id="FWPM_SUBLAYER_TCP_TEMPLATES______________________"></span><span id="fwpm_sublayer_tcp_templates______________________"></span>**PLANTILLAS \_ TCP DE SUBCAPA \_ FWPM \_** 
 </dt> <dd> <dl> <dt>
 
 
@@ -157,12 +157,12 @@ Los filtros de plantilla TCP se agregan a esta subcapa.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_SUBLAYER_UNIVERSAL"></span><span id="fwpm_sublayer_universal"></span>**FWPM de \_ subnivel \_ universal**
+<span id="FWPM_SUBLAYER_UNIVERSAL"></span><span id="fwpm_sublayer_universal"></span>**FWPM \_ SUBLAYER \_ UNIVERSAL**
 </dt> <dd> <dl> <dt>
 
 
 
-Este subnivel hospeda todos los filtros que no están asignados a ninguno de los demás subnivels.
+Esta subcapa hospeda todos los filtros que no están asignados a ninguna de las otras subcapas.
 
 
 </dt> </dl> </dd> </dl>
@@ -171,11 +171,11 @@ Este subnivel hospeda todos los filtros que no están asignados a ninguno de los
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Fwpmu. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Fwpmu.h</dt> </dl> |
 
 
 

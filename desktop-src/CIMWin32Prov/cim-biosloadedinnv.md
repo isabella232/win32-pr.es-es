@@ -1,8 +1,8 @@
 ---
-description: La \_ clase CIM BIOSLoadedInNV asocia un elemento BIOS y el almacenamiento no volátil en el que se carga.
+description: La clase CIM BIOSLoadedInNV asocia un elemento BIOS y el almacenamiento no volátil en \_ el que se carga.
 ms.assetid: 11641616-e11d-49ff-bfe4-f95fe27f00b8
 ms.tgt_platform: multiple
-title: CIM_BIOSLoadedInNV (clase)
+title: CIM_BIOSLoadedInNV clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,19 +18,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 0de07e1d4b886ad14f6a7fd8dbb96c1c0f2d2079
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b38e05be817a388a8edf7a8407a0ada90999cc4e779a5270d0d2271af169aaf9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119284585"
 ---
-# <a name="cim_biosloadedinnv-class"></a>\_Clase BIOSLoadedInNV de CIM
+# <a name="cim_biosloadedinnv-class"></a>CIM \_ BIOSLoadedInNV (clase)
 
-La clase **CIM \_ BIOSLoadedInNV** asocia un elemento BIOS y el almacenamiento no volátil en el que se carga.
+La **clase \_ CIM BIOSLoadedInNV** asocia un elemento BIOS y el almacenamiento no volátil en el que se carga.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -51,13 +51,13 @@ class CIM_BIOSLoadedInNV : CIM_Dependency
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ BIOSLoadedInNV** tiene estos tipos de miembros:
+La **clase \_ CIM BIOSLoadedInNV** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ BIOSLoadedInNV** tiene estas propiedades.
+La **clase \_ CIM BIOSLoadedInNV** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -70,14 +70,14 @@ Tipo de datos: **CIM \_ NonVolatileStorage**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente")
 </dt> </dl>
 
-Un [**\_ NonVolatileStorage de CIM**](cim-nonvolatilestorage.md) que describe el almacenamiento no volátil.
+Cim [**\_ NonVolatileStorage**](cim-nonvolatilestorage.md) que describe el almacenamiento no volátil.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **CIM \_ BIOSElement**
@@ -86,61 +86,61 @@ Tipo de datos: **CIM \_ BIOSElement**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependiente")
+Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
 </dt> </dl>
 
-Un [**\_ BIOSElement de CIM**](cim-bioselement.md) que describe el BIOS almacenado en la extensión no volátil.
+Un [**ELEMENTO \_ BIOSElement de CIM**](cim-bioselement.md) que describe el BIOS almacenado en la extensión no volátil.
 
 </dd> <dt>
 
 **EndingAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Dirección final en la que se encuentra el BIOS en el almacenamiento no volátil.
+Dirección final donde el BIOS se encuentra en un almacenamiento no volátil.
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 </dd> <dt>
 
 **StartingAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Dirección inicial en la que se encuentra el BIOS en el almacenamiento no volátil.
+Dirección inicial donde el BIOS se encuentra en un almacenamiento no volátil.
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase **CIM \_ BIOSLoadedInNV** se deriva de [**la \_ dependencia CIM**](cim-dependency.md).
+La **clase \_ CIM BIOSLoadedInNV** se deriva de [**la dependencia \_ CIM**](cim-dependency.md).
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -149,7 +149,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[**Dependencia de CIM \_**](cim-dependency.md)
+[**Dependencia \_ cim**](cim-dependency.md)
 </dt> </dl>
 
  

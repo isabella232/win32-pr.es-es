@@ -1,6 +1,6 @@
 ---
-title: namedQueries (ProviderType) (elemento)
-description: No se utiliza. Define una lista de consultas con nombre que consultan la cadena de mensaje de evento de un valor y realizan una acción especificada si se encuentran. | namedQueries (ProviderType) (elemento)
+title: elemento namedQueries (ProviderType)
+description: No se usa. Define una lista de consultas con nombre que consultan un valor en la cadena del mensaje de evento y realizan una acción especificada si se encuentran. | elemento namedQueries (ProviderType)
 ms.assetid: 9b45838e-aad0-4ebe-99d1-7864af07f35c
 keywords:
 - elemento namedQueries EventLog
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f4bad822cc427e9e59b15474fa893cde0a6323ce
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 5b1abc232d8efd3943bae59959d9f9aca22252e044c31afc0c46580f22c03f6b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362247"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136308"
 ---
-# <a name="namedqueries-providertype-element"></a>namedQueries (ProviderType) (elemento)
+# <a name="namedqueries-providertype-element"></a>elemento namedQueries (ProviderType)
 
-No se utiliza. Define una lista de consultas con nombre que consultan la cadena de mensaje de evento de un valor y realizan una acción especificada si se encuentran.
+No se usa. Define una lista de consultas con nombre que consultan un valor en la cadena del mensaje de evento y realizan una acción especificada si se encuentran.
 
 ``` syntax
 <xs:element name="namedQueries"
@@ -30,7 +30,7 @@ No se utiliza. Define una lista de consultas con nombre que consultan la cadena 
  />
 ```
 
-El elemento **namedQueries** se define mediante el tipo complejo de [**ProviderType**](eventmanifestschema-providertype-complextype.md) .
+El tipo complejo [**ProviderType**](eventmanifestschema-providertype-complextype.md) define el elemento **namedQueries.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento **namedQueries** se define mediante el tipo complejo de [**ProviderT
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ El elemento **namedQueries** se define mediante el tipo complejo de [**ProviderT
 **Elemento primario**
 </dt> <dt>
 
-[**proveedor (EventsType)**](eventmanifestschema-provider-eventstype-element.md)
+[**provider (EventsType)**](eventmanifestschema-provider-eventstype-element.md)
 </dt> </dl>
 
  
