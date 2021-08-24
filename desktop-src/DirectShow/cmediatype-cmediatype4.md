@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: dd91252920c74d45e4218be3c3d03249a116bfcf
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2f686d1338073c65ce3e5bc3871ae8f4a5b9102e78d7678d5bcf6f77a565397d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108095423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119792955"
 ---
 # <a name="cmediatypecmediatype-constructor-mtypeh"></a>Constructor CMediaType.CMediaType (Mtype.h)
 
@@ -46,7 +46,7 @@ CMediaType(
 *cmtype* \[ Ref\]
 </dt> <dd>
 
-Referencia a un `CMediaType` objeto . El constructor copia el tipo de medio en el nuevo objeto, incluido el bloque de formato, si lo hubiera.
+Referencia a un `CMediaType` objeto . El constructor copia el tipo de medio en el nuevo objeto, incluido el bloque de formato, si lo hay.
 
 </dd> <dt>
 
@@ -59,7 +59,7 @@ Puntero a una variable que recibe un valor HRESULT. Este parámetro puede ser un
 
 ## <a name="remarks"></a>Comentarios
 
-El constructor llama al [**método CMediaType::InitMediaType**](cmediatype-initmediatype.md) para inicializar el tipo de medio.
+El constructor llama al [**método CMediaType::InitMediaType para**](cmediatype-initmediatype.md) inicializar el tipo de medio.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,12 +67,12 @@ El constructor llama al [**método CMediaType::InitMediaType**](cmediatype-initm
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Mtype.h (incluir Streams.h)</dt> </dl>                                                                                     |
+| Encabezado<br/>  | <dl> <dt>Mtype.h (incluir Secuencias.h)</dt> </dl>                                                                                     |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

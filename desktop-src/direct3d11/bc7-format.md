@@ -4,75 +4,75 @@ description: El formato BC7 es un formato de compresión de textura que se usa p
 ms.assetid: DF333106-293E-4B3E-A1EB-B0BF0ADBAC72
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b9b64c3d4a8b5e960077a9f33de82ff08cd4bbc
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 0bd48826cc0c02be6d15a837c272442c0931e9660f507a90cb491acf4d5820ff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104421211"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119858225"
 ---
 # <a name="bc7-format"></a>Formato BC7
 
 El formato BC7 es un formato de compresión de textura que se usa para la compresión de alta calidad de datos RGB y RGBA.
 
--   [Acerca del formato BC7/DXGI \_ \_ BC7](/windows)
+-   [Acerca del FORMATO BC7/DXGI \_ \_ BC7](/windows)
 -   [Implementación de BC7](#bc7-implementation)
--   [Descodificar el formato BC7](#decoding-the-bc7-format)
+-   [Decoding the BC7 Format](#decoding-the-bc7-format)
 -   [Temas relacionados](#related-topics)
 
-Para obtener información sobre los modos de bloqueo del formato BC7, consulte [Referencia del modo de formato BC7](bc7-format-mode-reference.md).
+Para obtener información sobre los modos de bloque del formato BC7, vea [Referencia del modo de formato BC7.](bc7-format-mode-reference.md)
 
-## <a name="about-bc7dxgi_format_bc7"></a>Acerca del formato BC7/DXGI \_ \_ BC7
+## <a name="about-bc7dxgi_format_bc7"></a>Acerca del FORMATO BC7/DXGI \_ \_ BC7
 
-BC7 se especifica mediante los siguientes \_ valores de enumeración de formato de DXGI:
+BC7 se especifica mediante los siguientes valores de enumeración \_ DXGI FORMAT:
 
--   **DXGI \_ DAR formato a \_ BC7 \_ sin tipo**.
--   **DXGI \_ DAR formato a \_ BC7 \_ UNORM**.
--   **DXGI \_ FORMATO \_ BC7 \_ UNORM \_ sRGB**.
+-   **DXGI \_ FORMAT \_ BC7 \_ SIN TIPO.**
+-   **DXGI \_ FORMAT \_ BC7 \_ UNORM**.
+-   **DXGI \_ FORMAT \_ BC7 \_ UNORM \_ SRGB**.
 
-El formato BC7 se puede usar para los recursos de textura [Texture2D](/windows/desktop/direct3d10/d3d10-graphics-reference-resource-structures) (incluidas las matrices), Texture3D o TextureCube (incluidas las matrices). Del mismo modo, este formato se aplica a las superficies de mapa MIP asociadas a estos recursos.
+El formato BC7 se puede usar para los recursos de textura [Texture2D](/windows/desktop/direct3d10/d3d10-graphics-reference-resource-structures) (incluidas las matrices), Texture3D o TextureCube (incluidas las matrices). De forma similar, este formato se aplica a las superficies de mapa de MIP asociadas a estos recursos.
 
-BC7 usa un tamaño de bloque fijo de 16 bytes (128 bits) y un tamaño de mosaico fijo de textura 4x4. Al igual que con los formatos BC anteriores, las imágenes de textura mayores que el tamaño de mosaico compatible (4x4) se comprimen mediante varios bloques. Esta identidad de direccionamiento también se aplica a imágenes de tres dimensiones y matrices de mapas MIP, cubemaps y Texture. Todos los mosaicos de imagen deben tener el mismo formato.
+BC7 usa un tamaño de bloque fijo de 16 bytes (128 bits) y un tamaño de mosaico fijo de 4 x 4 elementos de textura. Al igual que con los formatos BC anteriores, las imágenes de textura mayores que el tamaño de mosaico admitido (4x4) se comprimen mediante el uso de varios bloques. Esta identidad de direccionamiento también se aplica a imágenes tridimensionales y mapas MIP, mapas de cubos y matrices de textura. Todos los iconos de imagen deben tener el mismo formato.
 
-BC7 comprime las imágenes de datos de punto fijo de tres canales (RGB) y de cuatro canales (RGBA). Normalmente, los datos de origen son de 8 bits por componente de color (canal), aunque el formato es capaz de codificar los datos de origen con más bits por componente de color. Todos los mosaicos de imagen deben tener el mismo formato.
+BC7 comprime imágenes de datos de punto fijo de tres canales (RGB) y de cuatro canales (RGBA). Normalmente, los datos de origen son de 8 bits por componente de color (canal), aunque el formato es capaz de codificar los datos de origen con bits más altos por componente de color. Todos los iconos de imagen deben tener el mismo formato.
 
-El descodificador de BC7 realiza la descompresión antes de aplicar el filtrado de textura.
+El descodificador BC7 realiza la descompresión antes de aplicar el filtrado de textura.
 
-El hardware de descompresión de BC7 debe ser preciso. es decir, el hardware debe devolver resultados idénticos a los resultados devueltos por el descodificador descrito en este documento.
+El hardware de descompresión bc7 debe ser bit preciso; Es decir, el hardware debe devolver resultados idénticos a los resultados devueltos por el descodificador descrito en este documento.
 
 ## <a name="bc7-implementation"></a>Implementación de BC7
 
-Una implementación de BC7 puede especificar uno de los ocho modos, con el modo especificado en el bit menos significativo del bloque de 16 bytes (128 bits). El modo está codificado por cero o más bits con un valor de 0 seguido de 1.
+Una implementación bc7 puede especificar uno de los 8 modos, con el modo especificado en el bit menos significativo del bloque de 16 bytes (128 bits). El modo se codifica mediante cero o más bits con un valor de 0 seguido de 1.
 
-Un bloque BC7 puede contener varios pares de extremos. Para los fines de esta documentación, el conjunto de índices que corresponden a un par de puntos de conexión se puede denominar "subconjunto". Además, en algunos modos de bloqueo, la representación del punto de conexión se codifica en un formulario que, para los fines de esta documentación, se denominará "RBGP", donde el bit "P" representa un bit menos significativo compartido para los componentes de color del punto de conexión. Por ejemplo, si la representación del punto de conexión para el formato es "RGB 5.5.5.1", el punto de conexión se interpreta como un valor de 6.6.6 RGB, en el que el estado del bit P define el bit menos significativo de cada componente. De forma similar, para los datos de origen con un canal alfa, si la representación para el formato es "RGBAP 5.5.5.5.1", el punto de conexión es interepreted como RGBA 6.6.6.6. Dependiendo del modo de bloqueo, puede especificar el bit menos significativo compartido para ambos extremos de un subconjunto individualmente (2 P bits por subconjunto) o compartirlos entre los puntos de conexión de un subconjunto (1 P bits por subconjunto).
+Un bloque BC7 puede contener varios pares de punto de conexión. Para los fines de esta documentación, el conjunto de índices que corresponden a un par de puntos de conexión se puede denominar "subconjunto". Además, en algunos modos de bloque, la representación del punto de conexión se codifica en un formato que, de nuevo, para los fines de esta documentación, se denominará "RBGP", donde el bit "P" representa un bit menos significativo compartido para los componentes de color del punto de conexión. Por ejemplo, si la representación del punto de conexión para el formato es "RGB 5.5.5.1", el punto de conexión se interpreta como un valor RGB 6.6.6, donde el estado del bit P define el bit menos significativo de cada componente. Del mismo modo, para los datos de origen con un canal alfa, si la representación para el formato es "RGBAP 5.5.5.5.1", el punto de conexión se intercala como RGBA 6.6.6.6. En función del modo de bloque, puede especificar el bit menos significativo compartido para ambos puntos de conexión de un subconjunto individualmente (2 bits P por subconjunto) o compartido entre los puntos de conexión de un subconjunto (1 bit P por subconjunto).
 
-En el caso de los bloques BC7 que no codifican explícitamente el componente alfa, un bloque BC7 está formado por bits de modo, bits de partición, puntos de conexión comprimidos, índices comprimidos y un bit P opcional. En estos bloques, los puntos de conexión tienen una representación solo de RGB y el componente alfa se descodifica como 1,0 para todos los textura de datos de origen.
+Para los bloques BC7 que no codifican explícitamente el componente alfa, un bloque BC7 consta de bits de modo, bits de partición, puntos de conexión comprimidos, índices comprimidos y un bit P opcional. En estos bloques, los puntos de conexión tienen una representación solo RGB y el componente alfa se descodifica como 1.0 para todos los elementos de textura de los datos de origen.
 
-En el caso de los bloques BC7 que tienen componentes de color y alfa combinados, un bloque consta de bits de modo, puntos de conexión comprimidos, índices comprimidos y bits de partición opcionales y un bit P. En estos bloques, los colores del punto de conexión se expresan en formato RGBA y los valores de los componentes alfa se interpolan junto con los valores del componente de color.
+Para los bloques BC7 que tienen componentes de color y alfa combinados, un bloque consta de bits de modo, puntos de conexión comprimidos, índices comprimidos y bits de partición opcionales y un bit P. En estos bloques, los colores del punto de conexión se expresan en formato RGBA y los valores de componente alfa se interpolan junto con los valores de los componentes de color.
 
-En el caso de los bloques BC7 que tienen componentes de color y alfa independientes, un bloque consta de bits de modo, bits de rotación, puntos de conexión comprimidos, índices comprimidos y un bit de selector de índice opcional. Estos bloques tienen un vector RGB efectivo \[ R, G, B \] y un canal alfa escalar \[ a una \] codificación separada.
+Para los bloques BC7 que tienen componentes alfa y de color independientes, un bloque consta de bits de modo, bits de rotación, puntos de conexión comprimidos, índices comprimidos y un bit de selector de índice opcional. Estos bloques tienen un vector RGB \[ efectivo R, G, B y un canal alfa escalar A \] codificado por \[ \] separado.
 
 En la tabla siguiente se enumeran los componentes de cada tipo de bloque.
 
 
 
-| El bloque BC7 contiene...     | bits de modo | bits de rotación | bit de selector de índice | bits de partición | puntos de conexión comprimidos | Bit P    | índices comprimidos |
+| El bloque BC7 contiene...     | bits de modo | bits de rotación | bit del selector de índice | bits de partición | puntos de conexión comprimidos | Bit P    | índices comprimidos |
 |---------------------------|-----------|---------------|--------------------|----------------|----------------------|----------|--------------------|
 | solo componentes de color     | requerido  | N/D           | N/D                | requerido       | requerido             | opcional | requerido           |
 | color + alfa combinado    | requerido  | N/D           | N/D                | opcional       | requerido             | opcional | requerido           |
-| color y con separación alfa | requerido  | requerido      | opcional           | N/D            | requerido             | N/D      | requerido           |
+| color y alfa separados | requerido  | requerido      | opcional           | N/D            | requerido             | N/D      | requerido           |
 
 
 
- 
+ 
 
-BC7 define una paleta de colores en una línea aproximada entre dos extremos. El valor de modo determina el número de pares de puntos de conexión de interpolación por bloque. BC7 almacena un índice de paleta por textura.
+BC7 define una paleta de colores en una línea aproximada entre dos puntos de conexión. El valor de modo determina el número de pares de punto de conexión de interpolación por bloque. BC7 almacena un índice de paleta por elemento de textura.
 
-Para cada subconjunto de índices que corresponde a un par de puntos de conexión, el codificador corrige el estado de un bit de los datos de índice comprimidos para ese subconjunto. Para ello, elige un orden de punto de conexión que permita que el índice del índice designado "Fix-up" establezca el bit más significativo en 0 y que se pueda descartar, lo que ahorra un bit por subconjunto. En el caso de los modos de bloqueo con un solo subconjunto, el índice de corrección siempre es el índice 0.
+Para cada subconjunto de índices que corresponde a un par de puntos de conexión, el codificador corrige el estado de un bit de los datos de índice comprimidos para ese subconjunto. Para ello, elige un orden de punto de conexión que permite que el índice para el índice de "corrección" designado establezca su bit más significativo en 0 y, a continuación, se puede descartar, lo que ahorra un bit por subconjunto. Para los modos de bloque con un solo subconjunto, el índice de corrección siempre es el índice 0.
 
-## <a name="decoding-the-bc7-format"></a>Descodificar el formato BC7
+## <a name="decoding-the-bc7-format"></a>Decoding the BC7 Format
 
-En el siguiente pseudocódigo se describen los pasos para descomprimir el píxel en (x, y) dado el bloque BC7 de 16 bytes.
+El pseudocódigo siguiente describe los pasos para descomprimir el píxel en (x,y) dado el bloque BC7 de 16 bytes.
 
 ``` syntax
 decompress_bc7(x, y, block)
@@ -125,7 +125,7 @@ decompress_bc7(x, y, block)
 }
 ```
 
-El pseudocódigo al describe los pasos para descodificar completamente los componentes alfa y de color del punto de conexión para cada subconjunto dado un bloque BC7 de 16 bytes.
+El pseudocódigo siguiente describe los pasos para descodificar completamente el color del punto de conexión y los componentes alfa para cada subconjunto dado un bloque BC7 de 16 bytes.
 
 ``` syntax
 fully_decode_endpoints(endpoint_array, mode, block)
@@ -185,7 +185,7 @@ fully_decode_endpoints(endpoint_array, mode, block)
 }
 ```
 
-Para generar cada componente interpolado para cada subconjunto, use el siguiente algoritmo: permita que "c" sea el componente que se va a generar. permita que "E0" sea el componente del punto de conexión 0 del subconjunto; y permiten que "E1" sea el componente del punto de conexión 1 del subconjunto.
+Para generar cada componente interpolado para cada subconjunto, use el siguiente algoritmo: permita que "c" sea el componente que se va a generar; permita que "e0" sea ese componente del punto de conexión 0 del subconjunto; y permiten que "e1" sea ese componente del punto de conexión 1 del subconjunto.
 
 ``` syntax
 UINT16 aWeight2[] = {0, 21, 43, 64};
@@ -203,7 +203,7 @@ UINT8 interpolate(UINT8 e0, UINT8 e1, UINT8 index, UINT8 indexprecision)
 }
 ```
 
-En el siguiente pseudocódigo se muestra cómo extraer índices y recuentos de bits para los componentes de color y alfa. Los bloques con color y alfa independientes también tienen dos conjuntos de datos de índice: uno para el canal vectorial y otro para el canal escalar. En el modo 4, estos índices son de distintos anchos (2 o 3 bits) y hay un selector de un bit que especifica si los datos de vectores o escalares usan los índices de 3 bits. (La extracción del recuento de bits alfa es similar a la extracción del recuento de bits de color, pero con un comportamiento inverso basado en el bit **idxMode** ).
+El pseudocódigo siguiente muestra cómo extraer índices y recuentos de bits para componentes alfa y de color. Los bloques con color independiente y alfa también tienen dos conjuntos de datos de índice: uno para el canal vectorial y otro para el canal escalar. En el modo 4, estos índices tienen anchos diferentes (2 o 3 bits) y hay un selector de un bit que especifica si el vector o los datos escalares usan los índices de 3 bits. (Extraer el recuento de bits alfa es similar a extraer el recuento de bits de color, pero con un comportamiento inverso basado en el bit **idxMode).**
 
 ``` syntax
 bitcount get_color_bitcount(block, mode)
@@ -230,9 +230,9 @@ bitcount get_color_bitcount(block, mode)
 
 <dl> <dt>
 
-[Compresión de bloque de textura en Direct3D 11](texture-block-compression-in-direct3d-11.md)
+[Compresión de bloques de textura en Direct3D 11](texture-block-compression-in-direct3d-11.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

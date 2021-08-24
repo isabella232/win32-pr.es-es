@@ -47,7 +47,7 @@
           href: appendix-c-handling-errors.md
         - name: Administración de cookies
           href: managing-cookies.md
-        - name: Recuperar encabezados HTTP
+        - name: Recuperación de encabezados HTTP
           href: retrieving-http-headers.md
         - name: Configuración y recuperación de opciones de Internet
           href: setting-and-retrieving-internet-options.md
@@ -72,7 +72,7 @@
               href: cache-group-constants.md
             - name: mensajes de error
               href: wininet-errors.md
-            - name: Valores de tipo gopher
+            - name: Valores de tipo Gopher
               href: gopher-type-values.md
             - name: Códigos de estado HTTP
               href: http-status-codes.md

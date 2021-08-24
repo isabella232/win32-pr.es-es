@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 0380207124e4a446b6303dbb377d116b8ae058ad
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: af7faf7e3a0538d8b021cc5be353bd6918b7539570457e3a2486d1b8ead11404
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103453"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119895633"
 ---
 # <a name="d3dxmatrixlookatrh-function-d3dx10mathh"></a>Función D3DXMatrixLookAtRH (D3DX10Math.h)
 
-Crea una matriz de mirada derecha.
+Crea una matriz de mirada a la derecha.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,7 +57,7 @@ Puntero a la [**estructura D3DXMATRIX**](d3d10-d3dxmatrix.md) que es el resultad
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntero al [**D3DXVECTOR3**](d3d10-d3dxvector3.md) que define el punto de los ojos. Este valor se usa en la traducción.
+Puntero al [**D3DXVECTOR3**](d3d10-d3dxvector3.md) que define el punto ocular. Este valor se usa en la traducción.
 
 </dd> <dt>
 
@@ -116,7 +116,7 @@ dot(xaxis, eye)  -dot(yaxis, eye)  -dot(zaxis, eye)  1
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

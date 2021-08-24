@@ -1,11 +1,11 @@
 ---
-title: RunningTaskCollection. Count (propiedad)
-description: En el caso de scripting, obtiene el número de tareas en ejecución en la colección.
+title: Propiedad RunningTaskCollection.Count
+description: Para el scripting, obtiene el número de tareas en ejecución de la colección.
 ms.assetid: 819aa1f8-f8de-4976-8cd7-b2f63e727172
 keywords:
-- Propiedad Count Programador de tareas
-- Propiedad Count Programador de tareas, objeto RunningTaskCollection
-- Programador de tareas de objeto RunningTaskCollection, propiedad Count
+- Recuento de propiedades Programador de tareas
+- Propiedad Count Programador de tareas , objeto RunningTaskCollection
+- Objeto RunningTaskCollection Programador de tareas , propiedad Count
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 29af8701a86a32b27d05fd126f36e5b690d33259
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b06645a96f9f9be6d6a94f27795109b716aa561b7b4b546fcbe0dcf1eb190a4e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686082"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119866795"
 ---
-# <a name="runningtaskcollectioncount-property"></a>RunningTaskCollection. Count (propiedad)
+# <a name="runningtaskcollectioncount-property"></a>Propiedad RunningTaskCollection.Count
 
-En el caso de scripting, obtiene el número de tareas en ejecución en la colección.
+Para el scripting, obtiene el número de tareas en ejecución de la colección.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -38,7 +38,7 @@ RunningTaskCollection.Count As long
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El número de tareas en ejecución en la colección.
+Número de tareas en ejecución de la colección.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,9 +46,9 @@ El número de tareas en ejecución en la colección.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

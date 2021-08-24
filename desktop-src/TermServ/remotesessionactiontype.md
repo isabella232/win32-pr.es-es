@@ -1,10 +1,10 @@
 ---
-title: Enumeración RemoteSessionActionType
-description: Se utiliza para especificar el tipo de acción remota.
+title: RemoteSessionActionType (enumeración)
+description: Se usa para especificar el tipo de acción remota.
 ms.assetid: C0DA0FA2-6FE0-4B40-B169-4592A1BE2AD6
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto enumeración RemoteSessionActionType
+- Enumeración RemoteSessionActionType Servicios de Escritorio remoto
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 291bb9fdd2cadfef3881bc27a47f9fc1bb1bce68
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a107ee44f058d776a906fef37b2e384ed6d8970224c44a6846b257c5f336c515
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105685922"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119865715"
 ---
-# <a name="remotesessionactiontype-enumeration"></a>Enumeración RemoteSessionActionType
+# <a name="remotesessionactiontype-enumeration"></a>RemoteSessionActionType (enumeración)
 
-Se utiliza para especificar el tipo de acción remota.
+Se usa para especificar el tipo de acción remota.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -70,23 +70,23 @@ Acopla la aplicación en la sesión remota. Esta opción está en desuso y no de
 <span id="RemoteSessionActionStartScreen"></span><span id="remotesessionactionstartscreen"></span><span id="REMOTESESSIONACTIONSTARTSCREEN"></span>**RemoteSessionActionStartScreen**
 </dt> <dd>
 
-Hace que la pantalla Inicio se muestre en la sesión remota.
+Hace que la pantalla de inicio se muestre en la sesión remota.
 
 </dd> <dt>
 
 <span id="RemoteSessionActionAppSwitch"></span><span id="remotesessionactionappswitch"></span><span id="REMOTESESSIONACTIONAPPSWITCH"></span>**RemoteSessionActionAppSwitch**
 </dt> <dd>
 
-Hace que la ventana de conmutador de la aplicación se muestre en la sesión remota. Es el mismo que el usuario que presiona Alt + Tab.
+Hace que la ventana del conmutador de aplicación se muestre en la sesión remota. Esto es lo mismo que cuando el usuario presiona Alt+Tab.
 
 </dd> <dt>
 
 <span id="RemoteSessionActionActionCenter"></span><span id="remotesessionactionactioncenter"></span><span id="REMOTESESSIONACTIONACTIONCENTER"></span>**RemoteSessionActionActionCenter**
 </dt> <dd>
 
-Hace que el centro de actividades se muestre en la sesión remota. Esto es lo mismo que el usuario que presiona Win + A.
+Hace que el Centro de acciones se muestre en la sesión remota. Esto es lo mismo que el usuario que presiona Win+A.
 
-**Windows server 2012 R2, Windows 8.1, Windows server 2012 y Windows 8:** Este valor no se admite antes de Windows Server 2016 y Windows 10.
+**Windows Server 2012 R2, Windows 8.1, Windows Server 2012 y Windows 8:** Este valor no se admite antes de Windows Server 2016 y Windows 10.
 
 </dd> </dl>
 

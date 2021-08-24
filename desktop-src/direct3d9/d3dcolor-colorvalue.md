@@ -1,7 +1,7 @@
 ---
 description: Inicializa un color con los valores de punto flotante rojo, verde, azul y alfa proporcionados.
 ms.assetid: 61825e33-4150-47cd-97f2-2144434a45e2
-title: Macro D3DCOLOR_COLORVALUE (D3d9types. h)
+title: D3DCOLOR_COLORVALUE macro (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3d9types.h
-ms.openlocfilehash: 3d5bb780a5999d8931335da1e9f49ad8af88dc12
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f4ee10003e0f4fdeae937d8ac786b4d389a91ec0326c2d6288d10af2a63e2286
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103820962"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119751235"
 ---
-# <a name="d3dcolor_colorvalue-macro"></a>D3DCOLOR \_ COLORVALUE (macro)
+# <a name="d3dcolor_colorvalue-macro"></a>Macro D3DCOLOR \_ COLORVALUE
 
 Inicializa un color con los valores de punto flotante rojo, verde, azul y alfa proporcionados.
 
@@ -63,7 +63,7 @@ Componente azul del color. Este valor debe ser un valor de punto flotante en el 
 
 </dd> <dt>
 
-*un* 
+*Un* 
 </dt> <dd>
 
 Componente alfa del color. Este valor debe ser un valor de punto flotante en el intervalo de 0,0 a 1,0.
@@ -72,7 +72,7 @@ Componente alfa del color. Este valor debe ser un valor de punto flotante en el 
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el valor de [**D3DCOLOR**](d3dcolor.md) que corresponde a los valores RGBA proporcionados.
+Devuelve el [**valor D3DCOLOR**](d3dcolor.md) que corresponde a los valores RGBA proporcionados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,7 +80,7 @@ Devuelve el valor de [**D3DCOLOR**](d3dcolor.md) que corresponde a los valores R
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3d9types. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 

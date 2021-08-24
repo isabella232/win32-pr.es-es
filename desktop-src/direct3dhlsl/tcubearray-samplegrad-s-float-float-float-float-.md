@@ -1,9 +1,9 @@
 ---
-title: 'Función SampleGrad:: SampleGrad (S, Float, Float, Float, float) para TextureCubeArray'
-description: Obtenga información sobre cómo esta función muestra una textura mediante un degradado para influir en la forma en que se calcula la ubicación de ejemplo. Para TextureCubeArray.
+title: Función SampleGrad::SampleGrad(S,float,float,float,float) para TextureCubeArray
+description: Obtenga información sobre cómo esta función muestrea una textura mediante un degradado para influir en la forma en que se calcula la ubicación de la muestra. Para TextureCubeArray.
 ms.assetid: 0C7DC9AA-3F0A-47E4-852F-7AE25CF67EA3
 keywords:
-- SampleGrad de función HLSL
+- Función HLSL de SampleGrad
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5320f47a5ae4db5bd96232dfa0a1d55b54f29c25
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: f49ca0673d0796fc960b9a955381ad359cb291171be2106ec11fe690cabecb52
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103821559"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119892585"
 ---
-# <a name="samplegradsamplegradsfloatfloatfloatfloat-function-for-texturecubearray"></a>Función SampleGrad:: SampleGrad (S, Float, Float, Float, float) para TextureCubeArray
+# <a name="samplegradsamplegradsfloatfloatfloatfloat-function-for-texturecubearray"></a>Función SampleGrad::SampleGrad(S,float,float,float,float) para TextureCubeArray
 
-Muestrea una textura, utilizando un degradado para influir en la forma en que se calcula la ubicación de ejemplo, con un valor opcional para Clamp valores de nivel de detalle (LOD) de ejemplo.
+Muestrea una textura mediante un degradado para influir en la forma en que se calcula la ubicación de la muestra, con un valor opcional para fijar los valores de nivel de detalle (LOD) de la muestra.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,20 +48,20 @@ DXGI_FORMAT SampleGrad(
 
 Tipo: **SamplerState**
 
-Un [Estado de muestra](dx-graphics-hlsl-sampler.md). Se trata de un objeto declarado en un archivo de efectos que contiene las asignaciones de estado.
+Un [estado sampler](dx-graphics-hlsl-sampler.md). Se trata de un objeto declarado en un archivo de efecto que contiene asignaciones de estado.
 
 </dd> <dt>
 
-*Ubicación* \[ de de\]
+*Ubicación* \[ En\]
 </dt> <dd>
 
 Tipo: **float**
 
-Las coordenadas de textura. El tipo de argumento depende del tipo de objeto de textura.
+Las coordenadas de textura. El tipo de argumento depende del tipo texture-object.
 
 
 
-| Tipo de Texture-Object                    | Tipo de parámetro |
+| Texture-Object de datos                    | Tipo de parámetro |
 |----------------------------------------|----------------|
 | Texture1D                              | FLOAT          |
 | Texture1DArray, Texture2D              | float2         |
@@ -79,11 +79,11 @@ Las coordenadas de textura. El tipo de argumento depende del tipo de objeto de t
 
 Tipo: **float**
 
-La tasa de cambio de la geometría de la superficie en la dirección x. El tipo de argumento depende del tipo de objeto de textura.
+Velocidad de cambio de la geometría de la superficie en la dirección x. El tipo de argumento depende del tipo texture-object.
 
 
 
-| Tipo de Texture-Object                      | Tipo de parámetro |
+| Texture-Object de datos                      | Tipo de parámetro |
 |------------------------------------------|----------------|
 | Texture1D, Texture1DArray                | FLOAT          |
 | Texture2D, Texture2DArray                | float2         |
@@ -96,16 +96,16 @@ La tasa de cambio de la geometría de la superficie en la dirección x. El tipo 
 
 </dd> <dt>
 
-*DDY* \[ de\]
+*DDY* \[ En\]
 </dt> <dd>
 
 Tipo: **float**
 
-La tasa de cambio de la geometría de la superficie en la dirección y. El tipo de argumento depende del tipo de objeto de textura.
+Velocidad de cambio de la geometría de la superficie en la dirección y. El tipo de argumento depende del tipo texture-object.
 
 
 
-| Tipo de Texture-Object                      | Tipo de parámetro |
+| Texture-Object de datos                      | Tipo de parámetro |
 |------------------------------------------|----------------|
 | Texture1D, Texture1DArray                | FLOAT          |
 | Texture2D, Texture2DArray                | float2         |
@@ -118,20 +118,20 @@ La tasa de cambio de la geometría de la superficie en la dirección y. El tipo 
 
 </dd> <dt>
 
-*Abrazadera* \[ de\]
+*Fijación* \[ En\]
 </dt> <dd>
 
 Tipo: **float**
 
-Un valor opcional en el que se van a fijar los valores LOD de ejemplo. Por ejemplo, si se pasa 2.0 f para el valor Clamp, se asegura de que ningún ejemplo individual tenga acceso a un nivel de MIP inferior a 2.0 f.
+Valor opcional al que se fijan los valores de LOD de ejemplo. Por ejemplo, si pasa 2,0f para el valor de la fijación, asegúrese de que ninguna muestra individual tiene acceso a un nivel de mip inferior a 2,0f.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **\_ formato de DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
+Tipo: **[ **DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
 
-Formato de textura, que es uno de los valores con tipo que aparecen [**en \_ formato de DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
+El formato de textura, que es uno de los valores con tipo enumerados [**en DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
 
 ## <a name="see-also"></a>Vea también
 

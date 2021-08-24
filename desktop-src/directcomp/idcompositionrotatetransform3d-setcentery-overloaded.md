@@ -1,5 +1,5 @@
 ---
-title: Métodos IDCompositionRotateTransform3D SetCenterY (Dcomp. h)
+title: Métodos IdCompositionRotateTransform3D SetCenterY (Dcomp.h)
 description: Cambia o anima el valor de la propiedad CenterY de una transformación de rotación 3D. La propiedad CenterY especifica la coordenada y del punto sobre el que se realiza la rotación. El valor predeterminado es cero.
 ms.assetid: 19B3B065-BE8C-4CBD-8A94-54934CA0B421
 keywords:
@@ -12,14 +12,14 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: c492e926ebb2dc6355ce1a3acfa68090dfd560f3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3ea3ff52abd6b90e79b270b4e5d2e447a672380b79f4427ef74e755e3e2c5bed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119844397"
 ---
-# <a name="idcompositionrotatetransform3dsetcentery-methods"></a>IDCompositionRotateTransform3D:: SetCenterY (métodos)
+# <a name="idcompositionrotatetransform3dsetcentery-methods"></a>Métodos IDCompositionRotateTransform3D::SetCenterY
 
 Cambia o anima el valor de la propiedad CenterY de una transformación de rotación 3D. La propiedad CenterY especifica la coordenada y del punto sobre el que se realiza la rotación. El valor predeterminado es cero.
 
@@ -29,8 +29,8 @@ Cambia o anima el valor de la propiedad CenterY de una transformación de rotaci
 
 | Método                                                                                                           | Descripción                                            |
 |:-----------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------|
-| [**SetCenterY (float)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionrotatetransform3d-setcentery(float))                                     | Cambia el valor de la propiedad CenterY.<br/>  |
-| [**SetCenterX (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionrotatetransform3d-setcentery(idcompositionanimation)) | Anima el valor de la propiedad CenterY.<br/> |
+| [**SetCenterY(float)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionrotatetransform3d-setcentery(float))                                     | Cambia el valor de la propiedad CenterY.<br/>  |
+| [**SetCenterX(IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionrotatetransform3d-setcentery(idcompositionanimation)) | Anima el valor de la propiedad CenterY.<br/> |
 
 
 
@@ -40,10 +40,10 @@ Cambia o anima el valor de la propiedad CenterY de una transformación de rotaci
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Dcomp. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>Dcomp. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows solo 8 \[ aplicaciones de escritorio\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2012 \[\]<br/>                                 |
+| Header<br/>                   | <dl> <dt>Dcomp.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Dcomp.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Dcomp.dll</dt> </dl> |
 
 

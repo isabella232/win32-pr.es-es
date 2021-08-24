@@ -1,11 +1,11 @@
 ---
-title: Propiedad de equilibrio de IWMPSettings
-description: La propiedad saldo obtiene o establece el equilibrio estéreo actual.
+title: Propiedad de saldo IWMPSettings
+description: La propiedad balance obtiene o establece el saldo estéreo actual.
 ms.assetid: 6b9b6305-3bab-418d-a172-d47ca4dbaba5
 keywords:
-- equilibrar las ventanas de propiedades Media Player
-- propiedad saldo de Windows Media Player, interfaz IWMPSettings
-- Interfaz IWMPSettings Windows Media Player, propiedad balance
+- balance property Reproductor de Windows Media
+- balance property Reproductor de Windows Media , IWMPSettings (interfaz)
+- Interfaz IWMPSettings Reproductor de Windows Media , propiedad balance
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2085f4074d0cd09f475fc031213e3a583747a86b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 76d519d656be6b4974e2b4dd2707aafb2bb153f6b26bafe75de948d5e50c67b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119861094"
 ---
-# <a name="iwmpsettingsbalance-property"></a>IWMPSettings:: balance (propiedad)
+# <a name="iwmpsettingsbalance-property"></a>Propiedad IWMPSettings::balance
 
-La propiedad **saldo** obtiene o establece el equilibrio estéreo actual.
+La **propiedad balance** obtiene o establece el saldo estéreo actual.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp
@@ -46,9 +46,9 @@ Public Property balance As System.Int32
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**System. Int32** que es el valor de equilibrio. Este valor puede oscilar entre 100 y 100. El valor predeterminado es cero.
+**System.Int32 que** es el valor de saldo. Este valor puede oscilar entre 100 y 100. El valor predeterminado es cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El valor cero indica que el audio se reproduce en el mismo volumen en los canales izquierdo y derecho. Un valor de 100 indica que el audio se reproduce solo en el canal izquierdo. Un valor de 100 indica que el audio se reproduce solo en el canal derecho.
 
@@ -58,7 +58,7 @@ El valor cero indica que el audio se reproduce en el mismo volumen en los canale
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior.<br/>                                                                     |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior.<br/>                                                                     |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

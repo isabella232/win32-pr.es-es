@@ -4,16 +4,16 @@ description: Determina si este objeto de adaptador DXCore sigue siendo válido.
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 06/20/2019
-ms.openlocfilehash: f58d8607b75253efda2e111eb358f576d36b65f0
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 6b8a0ccadb46f20db9c5f2a23ac8709b391254ee453f05424dadee309f33fc40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104078130"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119842545"
 ---
-# <a name="idxcoreadapterisvalid-method"></a>IDXCoreAdapter:: IsValid (método)
+# <a name="idxcoreadapterisvalid-method"></a>IDXCoreAdapter::IsValid (método)
 
-Determina si este objeto de adaptador DXCore sigue siendo válido. Para obtener instrucciones de programación y ejemplos de código, vea [uso de DXCore para enumerar los adaptadores](../dxcore-enum-adapters.md).
+Determina si este objeto de adaptador DXCore sigue siendo válido. Para obtener instrucciones de programación y ejemplos de código, [vea Uso de DXCore para enumerar adaptadores.](../dxcore-enum-adapters.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -25,8 +25,8 @@ virtual bool STDMETHODCALLTYPE IsValid() = 0;
 
 Tipo: **bool**
 
-Devuelve  `true`   si este objeto de adaptador de DXCore sigue siendo válido. De lo contrario, devuelve  `false` .
+Devuelve `true` si este objeto de adaptador DXCore sigue siendo válido. De lo contrario, devuelve `false`.
 
 ## <a name="see-also"></a>Vea también
 
-[IDXCoreAdapter](./nn-dxcore_interface-idxcoreadapter.md), [DXCore Reference](../dxcore-reference.md), [using DXCore to Enumerate Adapters](../dxcore-enum-adapters.md)
+[IDXCoreAdapter,](./nn-dxcore_interface-idxcoreadapter.md) [referencia de DXCore,](../dxcore-reference.md) [uso de DXCore para enumerar adaptadores](../dxcore-enum-adapters.md)

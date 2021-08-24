@@ -1,10 +1,10 @@
 ---
-title: Enumeración WINBIO_CREDENTIAL_STATE (Winbio \_ Types. h)
-description: Define valores que especifican si una credencial se ha asociado con los datos biométricos de un usuario final.
+title: WINBIO_CREDENTIAL_STATE enumeración (Winbio \_ types.h)
+description: Define valores que especifican si una credencial se ha asociado a los datos biométricos de un usuario final.
 ms.assetid: c24f1771-7a1f-403e-8100-dfb3f4cd77a1
 keywords:
-- WINBIO_CREDENTIAL_STATE enumeración Plataforma de biometría de Windows API
-- PWINBIO_CREDENTIAL_STATE de puntero de enumeración Plataforma de biometría de Windows API
+- WINBIO_CREDENTIAL_STATE enumeración Windows Biometric Framework API
+- PWINBIO_CREDENTIAL_STATE puntero de enumeración Windows Biometric Framework API
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f8b8292cbbaefeeda0f6bf349f55e8f825f1756
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ce0e176479a68d39b017e852e17a73691b8349d7c6faa6be62130007a09dcef0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359683"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119868065"
 ---
-# <a name="winbio_credential_state-enumeration"></a>\_Enumeración de estado de credenciales de WINBIO \_
+# <a name="winbio_credential_state-enumeration"></a>Enumeración \_ CREDENTIAL STATE de WINBIO \_
 
-Define valores que especifican si una credencial se ha asociado con los datos biométricos de un usuario final. Esta enumeración la usa la función [**WinBioGetCredentialState**](/windows/desktop/api/Winbio/nf-winbio-winbiogetcredentialstate) .
+Define valores que especifican si una credencial se ha asociado a los datos biométricos de un usuario final. La función [**WinBioGetCredentialState**](/windows/desktop/api/Winbio/nf-winbio-winbiogetcredentialstate) usa esta enumeración.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -42,17 +42,17 @@ typedef enum _WINBIO_CREDENTIAL_STATE {
 
 <dl> <dt>
 
-<span id="WINBIO_CREDENTIAL_NOT_SET"></span><span id="winbio_credential_not_set"></span>**\_credencial WINBIO \_ no \_ establecida**
+<span id="WINBIO_CREDENTIAL_NOT_SET"></span><span id="winbio_credential_not_set"></span>**CREDENCIALES DE WINBIO \_ \_ NO \_ ESTABLECIDAS**
 </dt> <dd>
 
-Se ha asociado una credencial con el usuario final.
+Se ha asociado una credencial al usuario final.
 
 </dd> <dt>
 
-<span id="WINBIO_CREDENTIAL_SET"></span><span id="winbio_credential_set"></span>**\_conjunto de credenciales de WINBIO \_**
+<span id="WINBIO_CREDENTIAL_SET"></span><span id="winbio_credential_set"></span>**CONJUNTO DE CREDENCIALES DE WINBIO \_ \_**
 </dt> <dd>
 
-No se ha asociado ninguna credencial con el usuario final.
+No se ha asociado una credencial al usuario final.
 
 </dd> </dl>
 
@@ -62,9 +62,9 @@ No se ha asociado ninguna credencial con el usuario final.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                                    |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                                       |
-| Encabezado<br/>                   | <dl> <dt>Winbio \_ Types. h (incluye Winbio. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                                    |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                       |
+| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ No se ha asociado ninguna credencial con el usuario final.
 
 <dl> <dt>
 
-[Enumeraciones de aplicación cliente](client-application-enumerations.md)
+[Enumeraciones de aplicaciones cliente](client-application-enumerations.md)
 </dt> <dt>
 
 [**WinBioGetCredentialState**](/windows/desktop/api/Winbio/nf-winbio-winbiogetcredentialstate)

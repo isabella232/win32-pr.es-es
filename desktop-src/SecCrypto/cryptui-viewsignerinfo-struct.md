@@ -1,7 +1,7 @@
 ---
-description: Contiene información de la función CryptUIDlgViewSignerInfo.
+description: Contiene información para la función CryptUIDlgViewSignerInfo.
 ms.assetid: 2b76de4f-4b35-477e-a67e-435434e066c6
-title: Estructura de CRYPTUI_VIEWSIGNERINFO_STRUCT
+title: CRYPTUI_VIEWSIGNERINFO_STRUCT estructura
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: da150da6b5115e20a78a4edca64a5c9a97f66132
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bf35b4475047548e1744174717c238e99c6a744c17ef2fa76ce48217a4fc72aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082642"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119875865"
 ---
-# <a name="cryptui_viewsignerinfo_struct-structure"></a>\_VIEWSIGNERINFO \_ estructura de estructura CRYPTUI
+# <a name="cryptui_viewsignerinfo_struct-structure"></a>Estructura CRYPTUI \_ VIEWSIGNERINFO \_
 
-\[La estructura de **\_ \_ struct de CRYPTUI VIEWSIGNERINFO** está disponible para su uso en los sistemas operativos especificados en la sección de requisitos. En versiones posteriores podría modificarse o no estar disponible.\]
+\[La **estructura \_ \_ STRUCT VIEWSIGNERINFO de CRYPTUI** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. En versiones posteriores podría modificarse o no estar disponible.\]
 
-La estructura de estructura **CRYPTUI \_ \_ VIEWSIGNERINFO** contiene información para la función [**CryptUIDlgViewSignerInfo**](cryptuidlgviewsignerinfo.md) .
+La **estructura \_ \_ STRUCT VIEWSIGNERINFO de CRYPTUI** contiene información para la [**función CryptUIDlgViewSignerInfo.**](cryptuidlgviewsignerinfo.md)
 
 > [!Note]  
-> Esta estructura no se declara en un archivo de encabezado publicado. Para usar esta estructura, declárela en el formato exacto que se muestra.
+> Esta estructura no se declara en un archivo de encabezado publicado. Para usar esta estructura, declare en el formato exacto que se muestra.
 
  
 
@@ -68,28 +68,28 @@ Tamaño, en bytes, de esta estructura.
 **hwndParent**
 </dt> <dd>
 
-Identificador de la ventana que va a ser el elemento primario del cuadro de diálogo. Este miembro puede ser **null** si el cuadro de diálogo no debe tener ningún elemento primario.
+Identificador de la ventana que va a ser el elemento primario del cuadro de diálogo. Este miembro puede ser **NULL si** el cuadro de diálogo no debe tener ningún elemento primario.
 
 </dd> <dt>
 
 **dwFlags**
 </dt> <dd>
 
-Un conjunto de marcas que modifica el comportamiento de la función [**CryptUIDlgViewSignerInfo**](cryptuidlgviewsignerinfo.md) . No hay marcas definidas actualmente, por lo que este miembro debe ser cero.
+Conjunto de marcas que modifica el comportamiento de la [**función CryptUIDlgViewSignerInfo.**](cryptuidlgviewsignerinfo.md) No hay marcas definidas actualmente, por lo que este miembro debe ser cero.
 
 </dd> <dt>
 
 **szTitle**
 </dt> <dd>
 
-Puntero a una cadena terminada en null que contiene el título que se va a mostrar en el cuadro de diálogo. Si este miembro es **null**, se utiliza un título predeterminado.
+Puntero a una cadena terminada en NULL que contiene el título que se va a mostrar en el cuadro de diálogo. Si este miembro es **NULL,** se usa un título predeterminado.
 
 </dd> <dt>
 
 **pSignerInfo**
 </dt> <dd>
 
-Un puntero a una estructura de [**\_ \_ información del firmante CMSG**](/windows/desktop/api/Wincrypt/ns-wincrypt-cmsg_signer_info) que contiene la información del firmante que se va a mostrar.
+Puntero a una estructura [**CMSG \_ SIGNER \_ INFO**](/windows/desktop/api/Wincrypt/ns-wincrypt-cmsg_signer_info) que contiene la información del firmante que se mostrará.
 
 </dd> <dt>
 
@@ -103,42 +103,42 @@ Identificador del mensaje del que se extrajo la información del firmante.
 **pszOID**
 </dt> <dd>
 
-Puntero a una cadena ANSI terminada en null que contiene la representación de cadena del [*identificador de objeto*](../secgloss/o-gly.md) (OID) que indica el certificado para el que se debe validar la firma. Por ejemplo, si se llama a este método para ver la firma de una [*lista de certificados de confianza*](../secgloss/c-gly.md) (CTL), se debe pasar la cadena de OID de **firma de uso de szOID \_ PK \_ CTL \_ \_** . Si este miembro es **null**, el certificado no se valida para los usos.
+Puntero a una cadena ANSI terminada en NULL [](../secgloss/o-gly.md) que contiene la representación de cadena del identificador de objeto (OID) que indica para qué debe validarse el certificado para el que se hizo la firma. Por ejemplo, si se llama [*a*](../secgloss/c-gly.md) esto para ver la firma de una lista de certificados de confianza (CTL), se debe pasar la cadena **OID szOID \_ KP \_ CTL \_ USAGE \_ SIGNING.** Si este miembro es **NULL,** el certificado no se valida para los usos.
 
 </dd> <dt>
 
 **dwReserved**
 </dt> <dd>
 
-Este parámetro no se usa actualmente. Este miembro debe ser **null**.
+Este parámetro no se usa actualmente. Este miembro debe ser **NULL.**
 
 </dd> <dt>
 
 **cStores**
 </dt> <dd>
 
-Número de elementos de la matriz **rghStores** .
+Número de elementos de la matriz **rghStores.**
 
 </dd> <dt>
 
 **rghStores**
 </dt> <dd>
 
-Matriz de valores **HCERTSTORE** que representan los otros almacenes de certificados en los que se va a buscar el certificado que firmó el mensaje. Si este miembro es **null**, no se busca ningún almacén adicional. El miembro **cStores** contiene el número de elementos de esta matriz.
+Matriz de **valores HCERTSTORE** que representan los demás almacenes de certificados para buscar el certificado que firmó el mensaje. Si este miembro es **NULL,** no se buscan almacenes adicionales. El **miembro cStores** contiene el número de elementos de esta matriz.
 
 </dd> <dt>
 
 **cPropSheetPages**
 </dt> <dd>
 
-Número de elementos de la matriz **rgPropSheetPages** .
+Número de elementos de la **matriz rgPropSheetPages.**
 
 </dd> <dt>
 
 **rgPropSheetPages**
 </dt> <dd>
 
-Matriz de punteros de estructura [**PROPSHEETPAGE**](/windows/win32/api/prsht/ns-prsht-propsheetpagea_v2) que definen las páginas adicionales que se van a mostrar en el cuadro de diálogo estándar. Si este miembro es **null**, no se mostrará ninguna página adicional. El miembro **cPropSheetPages** contiene el número de elementos de esta matriz.
+Matriz de punteros [**de estructura PROPSHEETPAGE**](/windows/win32/api/prsht/ns-prsht-propsheetpagea_v2) que definen las páginas adicionales que se mostrarán en el cuadro de diálogo estándar. Si este miembro es **NULL,** no se mostrará ninguna página adicional. El **miembro cPropSheetPages** contiene el número de elementos de esta matriz.
 
 </dd> </dl>
 
@@ -148,9 +148,9 @@ Matriz de punteros de estructura [**PROPSHEETPAGE**](/windows/win32/api/prsht/ns
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                                               |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                      |
-| Nombres Unicode y ANSI<br/>   | **CRYPTUI \_ VIEWSIGNERINFO \_ STRUCTW** (Unicode) y **CRYPTUI \_ VIEWSIGNERINFO \_ Structa** (ANSI)<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                                               |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                      |
+| Nombres Unicode y ANSI<br/>   | **CRYPTUI \_ VIEWSIGNERINFO \_ STRUCTW** (Unicode) y **CRYPTUI \_ VIEWSIGNERINFO \_ STRUCTA** (ANSI)<br/> |
 
 
 

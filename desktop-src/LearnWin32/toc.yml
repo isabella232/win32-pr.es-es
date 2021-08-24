@@ -7,7 +7,7 @@
           href: introduction-to-windows-programming-in-c--.md
         - name: Preparación del entorno de desarrollo
           href: prepare-your-development-environment.md
-        - name: Convenciones de codificación de Windows
+        - name: Windows Convenciones de codificación
           href: windows-coding-conventions.md
         - name: Trabajo con cadenas
           href: working-with-strings.md
@@ -15,7 +15,7 @@
           href: what-is-a-window-.md
         - name: 'WinMain: el punto de entrada de la aplicación'
           href: winmain--the-application-entry-point.md
-    - name: Módulo 1. Su primer programa de Windows
+    - name: Módulo 1. Su primer Windows programa
       items:
         - name: Información general
           href: your-first-windows-program.md
@@ -31,19 +31,19 @@
           href: closing-the-window.md
         - name: Administración del estado de la aplicación
           href: managing-application-state-.md
-    - name: Módulo 2. Usar COM en el programa de Windows
+    - name: Módulo 2. Uso de COM en el Windows programa
       items:
         - name: Información general
           href: module-2--using-com-in-your-windows-program.md
         - name: ¿Qué es una interfaz COM?
           href: what-is-a-com-interface-.md
-        - name: Inicializar la biblioteca COM
+        - name: Inicialización de la biblioteca COM
           href: initializing-the-com-library.md
         - name: Códigos de error en COM
           href: error-codes-in-com.md
         - name: Crear un objeto en COM
           href: creating-an-object-in-com.md
-        - name: 'Ejemplo: el cuadro de diálogo abrir'
+        - name: 'Ejemplo: Cuadro de diálogo Abrir'
           href: example--the-open-dialog-box.md
         - name: Administrar la duración de un objeto
           href: managing-the-lifetime-of-an-object.md
@@ -55,11 +55,11 @@
           href: com-coding-practices.md
         - name: Control de errores en COM
           href: error-handling-in-com.md
-    - name: Módulo 3. Gráficos de Windows
+    - name: Módulo 3. Windows Gráficos
       items:
         - name: Información general
           href: module-3---windows-graphics.md
-        - name: Información general de la arquitectura de gráficos de Windows
+        - name: Introducción a la arquitectura Windows gráficos
           href: overview-of-the-windows-graphics-architecture.md
         - name: El Administrador de ventanas de escritorio
           href: the-desktop-window-manager.md
@@ -73,11 +73,11 @@
           href: drawing-with-direct2d.md
         - name: PPP y Device-Independent píxeles
           href: dpi-and-device-independent-pixels.md
-        - name: Usar el color en Direct2D
+        - name: Uso de color en Direct2D
           href: using-color-in-direct2d.md
         - name: Aplicación de transformaciones en Direct2D
           href: applying-transforms-in-direct2d.md
-        - name: 'Apéndice: transformaciones de matriz'
+        - name: 'Apéndice: Transformaciones de matriz'
           href: appendix--matrix-transforms.md
     - name: Módulo 4. Entrada del usuario
       items:
@@ -85,35 +85,35 @@
           href: module-4--user-input.md
         - name: Entrada del mouse
           href: mouse-input.md
-        - name: Responder a clics del mouse
+        - name: Respuesta a los clics del mouse
           href: mouse-clicks.md
         - name: Movimiento del mouse
           href: mouse-movement.md
-        - name: Operaciones de mouse misceláneas
+        - name: Varias operaciones del mouse
           href: other-mouse-operations.md
         - name: Entrada de teclado
           href: keyboard-input.md
         - name: Tablas de aceleradores
           href: accelerator-tables.md
-        - name: Establecer la imagen del cursor
+        - name: Establecimiento de la imagen de cursor
           href: setting-the-cursor-image.md
-        - name: 'Entrada de usuario: ejemplo extendido'
+        - name: 'Entrada del usuario: ejemplo extendido'
           href: user-input--extended-example.md
-    - name: 'Introducción a Win32: código de ejemplo'
+    - name: 'Introducción con Win32: código de ejemplo'
       items:
         - name: Información general
           href: learn-to-program-for-windows--sample-code.md
-        - name: Ejemplo de Hola mundo de Windows
+        - name: Windows Hello Ejemplo mundial
           href: windows-hello-world-sample.md
-        - name: Ejemplo de BaseWindow
+        - name: Ejemplo baseWindow
           href: basewindow-sample.md
-        - name: Abrir el ejemplo de cuadro de diálogo
+        - name: Abrir ejemplo de cuadro de diálogo
           href: open-dialog-box-sample.md
         - name: Ejemplo de círculo de Direct2D
           href: direct2d-circle-sample.md
         - name: Ejemplo de reloj de Direct2D
           href: direct2d-clock-sample.md
-        - name: Dibujar ejemplo de círculo
+        - name: Ejemplo de dibujo de círculo
           href: draw-circle-sample.md
         - name: Ejemplo de dibujo simple
           href: simple-drawing-sample.md

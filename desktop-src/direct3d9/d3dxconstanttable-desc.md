@@ -1,7 +1,7 @@
 ---
-description: Una descripción de la tabla de constantes.
+description: Descripción de la tabla constante.
 ms.assetid: 848b328a-95a4-4fd0-a7d4-4fb0e5d14f64
-title: D3DXCONSTANTTABLE_DESC estructura (D3dx9shader. h)
+title: D3DXCONSTANTTABLE_DESC estructura (D3dx9shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9shader.h
-ms.openlocfilehash: 7c53023952518182f68cf4a671ec47c6056a92a6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9fb881ce0871165d9df394bf8a76326b4f5d644692217b1bb901438b90cf7cef
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103821151"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894065"
 ---
 # <a name="d3dxconstanttable_desc-structure"></a>D3DXCONSTANTTABLE \_ DESC (estructura)
 
-Una descripción de la tabla de constantes.
+Descripción de la tabla constante.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,7 +48,7 @@ Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Nombre del creador de la tabla de constantes.
+Nombre del creador de la tabla constante.
 
 </dd> <dt>
 
@@ -66,11 +66,11 @@ Versión del sombreador.
 **Constantes**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Número de constantes en la tabla de constantes.
+Número de constantes de la tabla constante.
 
 </dd> </dl>
 
@@ -80,7 +80,7 @@ Número de constantes en la tabla de constantes.
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9shader. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9shader.h</dt> </dl> |
 
 
 
@@ -88,7 +88,7 @@ Número de constantes en la tabla de constantes.
 
 <dl> <dt>
 
-[Estructuras de D3DX](dx9-graphics-reference-d3dx-structures.md)
+[Estructuras D3DX](dx9-graphics-reference-d3dx-structures.md)
 </dt> <dt>
 
 [**D3DXCONSTANT \_ DESC**](d3dxconstant-desc.md)

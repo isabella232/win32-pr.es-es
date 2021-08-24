@@ -1,12 +1,12 @@
 ---
-title: IMsTscAxEvents OnRequestGoFullScreen, método
-description: Se llama cuando el cliente solicita cambiar al modo de pantalla completa y \_ se llama al método IMsTscAdvancedSettings Put ContainerHandledFullScreen para establecer la propiedad ContainerHandledFullScreen en un valor distinto de cero.
+title: Método IMsTscAxEvents OnRequestGoFullScreen
+description: Se llama cuando el cliente solicita cambiar al modo de pantalla completa y se llama al método IMsTscAdvancedSettings put ContainerHandledFullScreen para establecer la propiedad ContainerHandledFullScreen en un valor distinto de \_ cero.
 ms.assetid: f61520dc-a72a-4205-8761-92aaf08b5f90
 ms.tgt_platform: multiple
 keywords:
 - Método OnRequestGoFullScreen Servicios de Escritorio remoto
-- Método OnRequestGoFullScreen Servicios de Escritorio remoto, interfaz IMsTscAxEvents
-- Interfaz IMsTscAxEvents Servicios de Escritorio remoto, método OnRequestGoFullScreen
+- Método OnRequestGoFullScreen Servicios de Escritorio remoto , interfaz IMsTscAxEvents
+- Interfaz IMsTscAxEvents Servicios de Escritorio remoto , método OnRequestGoFullScreen
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c865cd27b447743f781b8563956e7fb2d7f5d703
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e6d689469f635694357890c620866fff5783680f8e9e8d11a1a05c78f6e1e322
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422422"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119770685"
 ---
-# <a name="imstscaxeventsonrequestgofullscreen-method"></a>IMsTscAxEvents:: OnRequestGoFullScreen (método)
+# <a name="imstscaxeventsonrequestgofullscreen-method"></a>Método IMsTscAxEvents::OnRequestGoFullScreen
 
-Se llama cuando el cliente solicita cambiar al modo de pantalla completa y se llama al método [**IMsTscAdvancedSettings::p UT \_ ContainerHandledFullScreen**](imstscadvancedsettings-containerhandledfullscreen.md) para establecer la propiedad **ContainerHandledFullScreen** en un valor distinto de cero.
+Se llama cuando el cliente solicita cambiar al modo de pantalla completa y se llama al método [**IMsTscAdvancedSettings::p ut \_ ContainerHandledFullScreen**](imstscadvancedsettings-containerhandledfullscreen.md) para establecer la propiedad **ContainerHandledFullScreen** en un valor distinto de cero.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,11 +45,11 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En el modo de pantalla completa controlado por contenedores, el contenedor debe entrar en el modo de pantalla completa estándar en respuesta a este evento.
+En el modo de pantalla completa con control de contenedor, el contenedor debe entrar en el modo de pantalla completa estándar en respuesta a este evento.
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 

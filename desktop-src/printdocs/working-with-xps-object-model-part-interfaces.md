@@ -1,27 +1,27 @@
 ---
-description: En este tema se describe cómo usar las interfaces que proporcionan acceso a los elementos de documento XPS en un OM XPS.
+description: En este tema se describe cómo usar las interfaces que proporcionan acceso a las partes del documento XPS en un OM xps.
 ms.assetid: c52f7044-890d-47d1-83f8-bae1f8d83139
-title: Interfaces de elementos de XPS OM
+title: Interfaces de elemento DE OM XPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d81cbf17c26e4ba6c80199ee787b1ee11b28d260
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cc93023f251d96f557dfc351949b58f7b9a0b67d308903d83b182de8f710e110
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001836"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119823905"
 ---
-# <a name="xps-om-part-interfaces"></a>Interfaces de elementos de XPS OM
+# <a name="xps-om-part-interfaces"></a>Interfaces de elemento DE OM XPS
 
-En este tema se describe cómo usar las interfaces que proporcionan acceso a los elementos de documento XPS en un OM XPS.
+En este tema se describe cómo usar las interfaces que proporcionan acceso a las partes del documento XPS en un OM xps.
 
 
 
 | Nombre de interfaz                                                                                                    | Interfaces secundarias lógicas                                                                                                                                                                                                                                                                                     | Descripción                                                                                                  |
 |-------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| [**IXpsOMPart**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompart)<br/>                                                                       | [**IXpsOMDocumentSequence**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomdocumentsequence)<br/> [**IXpsOMDocument**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomdocument)<br/> [**IXpsOMPageReference**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompagereference)<br/> [**IXpsOMCoreProperties**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomcoreproperties)<br/> [**IXpsOMResource**](/windows/win32/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomresource)<br/>    | Componentes de documento que componen la estructura del documento.<br/>                                          |
-| [**IXpsOMResource**](/windows/win32/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomresource)<br/> [**IXpsOMPartResources**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompartresources)<br/> | IXpsOMFontResource<br/> IXpsOMImageResource<br/> IXpsOMColorProfileResource<br/> IXpsOMPrintTicketResource<br/> IXpsOMRemoteDictionaryResource<br/> IXpsOMDocumentStructureResource<br/> IXpsOMStoryFragmentsResource<br/> IXpsOMSignatureBlockResource<br/> | Componentes de documento que contienen elementos que se usan en una página o un documento o a los que se hace referencia en ella.<br/> |
-| [**IXpsOMPartUriCollection**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomparturicollection)<br/>                                             | None<br/>                                                                                                                                                                                                                                                                                              | Colección de identificadores URI de partes.<br/>                                                                        |
+| [**IXpsOMPart**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompart)<br/>                                                                       | [**IXpsOMDocumentSequence**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomdocumentsequence)<br/> [**IXpsOMDocument**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomdocument)<br/> [**IXpsOMPageReference**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompagereference)<br/> [**IXpsOMCoreProperties**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomcoreproperties)<br/> [**IXpsOMResource**](/windows/win32/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomresource)<br/>    | Componentes de documento que son la estructura del documento.<br/>                                          |
+| [**IXpsOMResource**](/windows/win32/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomresource)<br/> [**IXpsOMPartResources**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompartresources)<br/> | IXpsOMFontResource<br/> IXpsOMImageResource<br/> IXpsOMColorProfileResource<br/> IXpsOMPrintTicketResource<br/> IXpsOMRemoteDictionaryResource<br/> IXpsOMDocumentStructureResource<br/> IXpsOMStoryFragmentsResource<br/> IXpsOMSignatureBlockResource<br/> | Componentes de documento que contienen elementos que se usan en una página o un documento o a los que hace referencia.<br/> |
+| [**IXpsOMPartUriCollection**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomparturicollection)<br/>                                             | Ninguno<br/>                                                                                                                                                                                                                                                                                              | Colección de URI de partes.<br/>                                                                        |
 
 
 
@@ -29,11 +29,11 @@ En este tema se describe cómo usar las interfaces que proporcionan acceso a los
 
 ## <a name="code-examples"></a>Ejemplos de código
 
-En los ejemplos de código siguientes se muestran dos ejemplos de cómo usar las interfaces de elementos para tener acceso al contenido XPS OM.
+Los ejemplos de código siguientes muestran dos ejemplos de cómo usar las interfaces de elemento para acceder al contenido de XPS OM.
 
 ### <a name="get-the-name-of-a-document-part"></a>Obtener el nombre de un elemento de documento
 
-En el ejemplo de código siguiente se navega a una parte del documento y se obtiene el nombre del elemento.
+En el ejemplo de código siguiente se navega a un elemento de documento y se obtiene el nombre de la parte.
 
 
 ```C++
@@ -107,9 +107,9 @@ En el ejemplo de código siguiente se navega a una parte del documento y se obti
 
 
 
-### <a name="get-the-part-resources-that-are-associated-with-this-page"></a>Obtener los recursos del elemento que están asociados a esta página
+### <a name="get-the-part-resources-that-are-associated-with-this-page"></a>Obtener los recursos de elemento asociados a esta página
 
-En el ejemplo de código siguiente se obtienen las listas de los distintos recursos utilizados por esta página.
+En el ejemplo de código siguiente se obtienen las listas de los distintos recursos que usa esta página.
 
 
 ```C++

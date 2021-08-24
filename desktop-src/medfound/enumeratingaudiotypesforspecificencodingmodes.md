@@ -1,29 +1,29 @@
 ---
-description: Enumeración de los tipos de audio para los modos de codificación específicos
+description: Enumeración de tipos de audio para modos de codificación específicos
 ms.assetid: d44960eb-da5e-4379-ba9d-cb804559dc53
-title: Enumeración de los tipos de audio para los modos de codificación específicos (Microsoft Media Foundation)
+title: Enumerar tipos de audio para modos de codificación específicos (Microsoft Media Foundation)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a16a8b97afdd48cb1d7828f80778aa9fcf8dc1ab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9ec311c9ac4d879f8834d50353913e7fad1b6e50a9292a44444bc45376247636
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104423536"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119828245"
 ---
-# <a name="enumerating-audio-types-for-specific-encoding-modes-microsoft-media-foundation"></a>Enumeración de los tipos de audio para los modos de codificación específicos (Microsoft Media Foundation)
+# <a name="enumerating-audio-types-for-specific-encoding-modes-microsoft-media-foundation"></a>Enumerar tipos de audio para modos de codificación específicos (Microsoft Media Foundation)
 
-Los tipos de medios de entrada y salida aceptados por el codificador de audio están muy estructurados. Debe obtener los tipos de salida admitidos mediante una llamada al método **IMediaObject:: GetOutputType** o **IMFTransform:: GetOutputType**. Después de obtener un tipo de salida, no debe modificarlo.
+Los tipos de medios de entrada y salida aceptados por el codificador de audio están muy estructurados. Debe obtener los tipos de salida admitidos llamando **al método IMediaObject::GetOutputType** o **a IMFTransform::GetOutputType**. Después de obtener un tipo de salida, no debe modificarlo.
 
-Si desea utilizar un modo de codificación que no sea un CBR de un paso, debe establecer el modo y, a continuación, enumerar los tipos de salida para ese modo. el codificador cambia los tipos de salida admitidos en función del conjunto de modos. Las propiedades que controlan el modo de codificación son [**MFPKEY \_ VBRENABLED**](mfpkey-vbrenabledproperty.md) y [**MFPKEY \_ PASSESUSED**](mfpkey-passesusedproperty.md). Cuando el modo se establece en el codificador, debe enumerar y seleccionar un tipo de salida, y usarlo sin alteración, al igual que con CBR.
+Si desea usar un modo de codificación distinto del CBR de un paso, debe establecer el modo y, a continuación, enumerar los tipos de salida para ese modo. el codificador cambia los tipos de salida admitidos en función del modo establecido. Las propiedades que controlan el modo de codificación [**son MFPKEY \_ VBRENABLED**](mfpkey-vbrenabledproperty.md) y [**MFPKEY \_ PASSESUSED.**](mfpkey-passesusedproperty.md) Cuando el modo se establece en el codificador, debe enumerar y seleccionar un tipo de salida, con él sin modificaciones, igual que con CBR.
 
-## <a name="identifying-quality-based-vbr-types"></a>Identificar tipos VBR basados en calidad
+## <a name="identifying-quality-based-vbr-types"></a>Identificar tipos de VBR basados en calidad
 
-El procedimiento para identificar tipos VBR basados en la calidad depende de si el codificador actúa como un objeto multimedia de DirectX (DMO) o actúa como una transformación de Media Foundation (MFT). Para obtener información sobre cuándo un codificador actúa como DMO o MFT, consulte las páginas de referencia de códecs individuales en [objetos de códec](codecobjects.md).
+El procedimiento para identificar tipos de VBR basados en la calidad depende de si el codificador actúa como un objeto multimedia DirectX (DMO) o actúa como una transformación de Media Foundation (MFT). Para obtener información sobre cuándo un codificador actúa como un DMO o un MFT, vea las páginas de referencia de códecs individuales en [Objetos de códec](codecobjects.md).
 
-Cuando un codificador de audio actúa como DMO y configura el codificador para usar VBR de un paso, enumera todos los tipos de salida admitidos. Sin embargo, normalmente querrá seleccionar un tipo VBR de una sola fase basándose en el parámetro Quality. El codificador coloca el valor de calidad de los tipos de salida VBR de una sola fase en el miembro **nAvgBytesPerSec** de la estructura **WAVEFORMATEX** señalada por el **tipo de \_ medio DMO \_ . pbFormat**.
+Cuando un codificador de audio actúa como un DMO y configura el codificador para que use VBR de un paso, enumera todos los tipos de salida admitidos. Sin embargo, normalmente querrá seleccionar un tipo DE VBR de un solo paso basado en el parámetro de calidad. El codificador coloca el valor de calidad para los tipos de salida VBR de un paso en el **miembro nAvgBytesPerSec** de la estructura **DESACTEATEX** a la que apunta **DMO MEDIA \_ \_ TYPE.pbFormat**.
 
-Este valor se almacena en el siguiente formato: 0x7FFFFFXX, donde XX es el valor de calidad (de 0 a 100). Por ejemplo, el valor **nAvgBytesPerSec** de 0x7FFFFF62 especifica el nivel de calidad 98 (0x62 = 98).
+Este valor se almacena en el formato siguiente: 0x7FFFFFXX, donde XX es el valor de calidad (de 0 a 100). Por ejemplo, el **valor nAvgBytesPerSec** de 0x7FFFFF62 especifica el nivel de calidad 98 (0x62 = 98).
 
 En el ejemplo siguiente se muestra cómo comprobar el nivel de calidad de un formato cuando el codificador actúa como DMO.
 
@@ -46,11 +46,11 @@ void ShowQuality(WAVEFORMATEX* pWave)
 
 
 
-Cuando el codificador actúa como MFT y enumera un tipo de salida en una llamada a **GetAvailableOutputType**, puede consultar la MFT para la propiedad **\_ \_ \_ \_ VBRQUALITY enumerada más recientemente MFPKEY** . El valor devuelto indica la calidad VBR del tipo de medio de salida devuelto más recientemente. Después, puede usar ese valor para establecer la [**propiedad \_ \_ VBRQUALITY deseada de MFPKEY**](mfpkey-desired-vbrqualityproperty.md) del codificador.
+Cuando el codificador actúa como MFT y enumera un tipo de salida en una llamada a **GetAvailableOutputType,** puede consultar el MFT para la propiedad **MFPKEY \_ MOST RECENTLY \_ \_ ENUMERATED \_ VBRQUALITY.** El valor devuelto indica la calidad de VBR del tipo de medio de salida devuelto más recientemente. A continuación, puede usar ese valor para establecer la propiedad [**\_ MFPKEY DESIRED \_ VBRQUALITY**](mfpkey-desired-vbrqualityproperty.md) del codificador.
 
-## <a name="setting-peak-constraints"></a>Establecer restricciones de pico
+## <a name="setting-peak-constraints"></a>Establecer restricciones máximas
 
-En el caso de VBR basada en la calidad (un paso) y una VBR de dos pasos sin restricciones, no se requiere ninguna configuración adicional después de recuperar el tipo de salida. Para usar VBR máxima restringida, recupere un tipo de salida con VBR habilitada y dos pasos establecidos. Este tipo, sin modificación, describe la configuración de VBR no restringida. Para establecer las restricciones de pico, establezca las propiedades [MFPKEY \_ RMAX](mfpkey-rmaxproperty.md) y [MFPKEY \_ Bmax](mfpkey-bmaxproperty.md) .
+Para VBR basado en calidad (un paso) y VBR de dos pases sin restricciones, no se requiere ninguna configuración adicional después de recuperar el tipo de salida. Para usar VBR con restricciones máximas, recupere un tipo de salida con VBR habilitado y dos pases establecidos. Este tipo, sin modificación, describe la configuración de VBR sin restricciones. Para establecer restricciones máximas, establezca las [propiedades \_ MFPKEY RMAX](mfpkey-rmaxproperty.md) y [MFPKEY \_ BMAX.](mfpkey-bmaxproperty.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -62,10 +62,10 @@ En el caso de VBR basada en la calidad (un paso) y una VBR de dos pasos sin rest
 [Búsqueda de tipos de salida del codificador de audio](findingaudioencoderoutputtypes.md)
 </dt> <dt>
 
-[Uso de la codificación de Two-Pass](usingtwoencodingpasses.md)
+[Uso de Two-Pass codificación](usingtwoencodingpasses.md)
 </dt> <dt>
 
-[Usar la codificación VBR](usingvbrencoding.md)
+[Uso de la codificación VBR](usingvbrencoding.md)
 </dt> </dl>
 
  

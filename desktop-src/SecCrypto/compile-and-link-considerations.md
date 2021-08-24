@@ -1,22 +1,22 @@
 ---
-description: Enumera los requisitos de compilación y vinculación para los programas de ejemplo de criptografía.
+description: Enumera los requisitos de compilación y vínculo para los programas de ejemplo de criptografía.
 ms.assetid: 27e92c9f-27ab-4910-9d5e-7a46980f345e
 title: Consideraciones de compilación y vinculación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 21dce794db9d36470adfa9ac44e85dfcab3a6c8f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f896faf630bd6b8f58d0427fda6057fd281013891a7e6abda5d6c5864ed604b7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119876785"
 ---
 # <a name="compile-and-link-considerations"></a>Consideraciones de compilación y vinculación
 
-Para compilar y vincular los programas de ejemplo de esta sección se deben tener en cuenta las siguientes áreas:
+La compilación y vinculación de los programas de ejemplo de esta sección implica tener en cuenta las siguientes áreas:
 
 -   [Bibliotecas necesarias](required-libraries.md)
--   [Tipos de codificación de mensajes y certificados](certificate-and-message-encoding-types.md)
+-   [Tipos de codificación de certificados y mensajes](certificate-and-message-encoding-types.md)
 -   [\#incluye y \# define](-includes-and--defines.md)
 -   [Tratamiento de errores](error-handling.md)
 

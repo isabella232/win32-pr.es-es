@@ -1,11 +1,11 @@
 ---
-title: Other-Mailbox atributo)
-description: Contiene otras direcciones de correo adicionales en forma de CCMAIL BruceKeever.
+title: Other-Mailbox atributo
+description: Contiene otras direcciones de correo electrónico adicionales en un formulario como CCMAIL GmailKeever.
 ms.assetid: c7e49fbc-fb3a-487e-835b-ad2c1481425a
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Other-Mailbox
-- otherMailbox esquema de AD de atributos
+- Other-Mailbox esquema de AD del atributo
+- Esquema de AD del atributo otherMailbox
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d02bb4031da8938fc38bf25562918204089db08
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 99e3ce258d9adde1083d288d3668dce97dc43c3787a58606499636fa05702e92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659008"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704445"
 ---
-# <a name="other-mailbox-attribute"></a>Other-Mailbox atributo)
+# <a name="other-mailbox-attribute"></a>Other-Mailbox atributo
 
-Contiene otras direcciones de correo adicionales en un formulario como CCMAIL: BruceKeever.
+Contiene otras direcciones de correo en un formulario como CCMAIL:JuntoKeever.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|----------------------------------------------------------|
 | CN                | Other-Mailbox                                            |
-| Nombre para mostrar de LDAP | otherMailbox                                             |
-| Tamaño              | \-                                                       |
-| Actualizar privilegio  | Administrador de dominio                                     |
-| Frecuencia de actualización  | Cada vez que se emite una dirección de correo adicional al usuario. |
+| Ldap-Display-Name | otherMailbox                                             |
+| Size              | \-                                                       |
+| Privilegio actualizar  | Administrador de dominio                                     |
+| Frecuencia de actualización  | Cada vez que se emite al usuario una dirección de correo adicional. |
 | Attribute-Id      | 1.2.840.113556.1.4.651                                   |
-| System-ID-GUID    | 0296c123-40da-11d1-a9c0-0000f80367c1                     |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)              |
+| System-Id-Guid    | 0296c123-40da-11d1-a9c0-0000f80367c1                     |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)              |
 
 
 
@@ -55,13 +55,13 @@ Contiene otras direcciones de correo adicionales en un formulario como CCMAIL: B
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -76,13 +76,13 @@ Contiene otras direcciones de correo adicionales en un formulario como CCMAIL: B
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -95,15 +95,15 @@ Contiene otras direcciones de correo adicionales en un formulario como CCMAIL: B
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -116,15 +116,15 @@ Contiene otras direcciones de correo adicionales en un formulario como CCMAIL: B
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -139,13 +139,13 @@ Contiene otras direcciones de correo adicionales en un formulario como CCMAIL: B
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -160,13 +160,13 @@ Contiene otras direcciones de correo adicionales en un formulario como CCMAIL: B
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |

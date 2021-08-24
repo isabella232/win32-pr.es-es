@@ -1,5 +1,5 @@
 ---
-description: 'Método RequestStateChange de la Msvm_EthernetSwitchPort: solicita un cambio de estado.'
+description: 'Método RequestStateChange de la Msvm_EthernetSwitchPort clase : solicita un cambio de estado.'
 ms.assetid: 967c1256-d44e-476f-a24e-edcca2b083d2
 title: Método RequestStateChange de la Msvm_EthernetSwitchPort clase
 ms.topic: reference
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: f83cf73af26e4118a342cce4059dab0a58b4f4c6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7538d24218d2cb4a9abc5087b47cae588e02bd40729565a180a13dd1e19edac0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119789975"
 ---
-# <a name="requeststatechange-method-of-the-msvm_ethernetswitchport-class"></a>Método RequestStateChange de la clase \_ EthernetSwitchPort de Msvm
+# <a name="requeststatechange-method-of-the-msvm_ethernetswitchport-class"></a>Método RequestStateChange de la clase \_ Msvm EthernetSwitchPort
 
 Solicita un cambio de estado.
 
@@ -44,7 +44,7 @@ uint32 RequestStateChange(
 *RequestedState* \[ En\]
 </dt> <dd>
 
-El nuevo estado. La información se coloca en la **propiedad RequestedState** de la instancia si el código de retorno del **método RequestStateChange** es 0 o 4096. Para obtener más información, vea la descripción de las propiedades **EnabledState** y **RequestedState** del elemento. Debe ser uno de los siguientes valores.
+El nuevo estado. La información se coloca en la **propiedad RequestedState** de la instancia si el código de retorno del método **RequestStateChange** es 0 o 4096. Para obtener más información, vea la descripción de las propiedades **EnabledState** y **RequestedState** del elemento. Debe ser uno de los siguientes valores.
 
 <dt>
 
@@ -155,7 +155,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -165,7 +165,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

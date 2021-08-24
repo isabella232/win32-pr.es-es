@@ -1,8 +1,8 @@
 ---
-description: El método References \_ del objeto SWbemObject devuelve una colección de todas las clases o instancias de asociación que hacen referencia al objeto actual.
+description: El método References del objeto SWbemObject devuelve una colección de todas las clases o instancias de asociación que \_ hacen referencia al objeto actual.
 ms.assetid: ba02da47-0bb2-40e1-af50-1c42b4be2abd
 ms.tgt_platform: multiple
-title: Método SWbemObject.References_ (Wbemdisp. h)
+title: SWbemObject.References_ método (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,20 +16,20 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 3349ff104a5f0730ee99735a230d265fffd1333f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 527d49854f57937cfbcff8fd033381472f81cb15dc7ec1f4122a185fff33aa09
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913205"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119860215"
 ---
-# <a name="swbemobjectreferences_-method"></a>SWbemObject. References ( \_ método)
+# <a name="swbemobjectreferences_-method"></a>Método SWbemObject.References \_
 
-El **método \_ References** del objeto [**SWbemObject**](swbemobject.md) devuelve una colección de todas las clases o instancias de asociación que hacen referencia al objeto actual.
+El **\_ método References** del [**objeto SWbemObject**](swbemobject.md) devuelve una colección de todas las clases o instancias de asociación que hacen referencia al objeto actual.
 
-Este método realiza la misma función que las [referencias de](references-of-statement.md) la consulta WQL.
+Este método realiza la misma función que la [consulta REFERENCES OF](references-of-statement.md) WQL.
 
-Para obtener una explicación de esta sintaxis, vea [convenciones de documentos para la API de scripting](document-conventions-for-the-scripting-api.md).
+Para obtener una explicación de esta sintaxis, vea [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,28 +55,28 @@ objWbemObjectSet = .References_( _
 *strResultClass* \[ en, opcional\]
 </dt> <dd>
 
-Cadena que contiene un nombre de clase. Si se especifica, este parámetro indica que los objetos de asociación devueltos deben pertenecer a la clase especificada en este parámetro o derivarse de ella.
+Cadena que contiene un nombre de clase. Si se especifica, este parámetro indica que los objetos de asociación devueltos deben pertenecer a o derivarse de la clase especificada en este parámetro.
 
 </dd> <dt>
 
 *strRole* \[ en, opcional\]
 </dt> <dd>
 
-Cadena que contiene un nombre de propiedad. Si se especifica, este parámetro indica que los objetos de asociación devueltos se deben limitar a aquellos en los que el objeto de origen desempeña un rol específico. El rol se define mediante el nombre de una propiedad especificada (que debe ser una propiedad de referencia) de una asociación.
+Cadena que contiene un nombre de propiedad. Si se especifica, este parámetro indica que los objetos de asociación devueltos deben limitarse a aquellos en los que el objeto de origen desempeña un rol específico. El rol se define mediante el nombre de una propiedad especificada (que debe ser una propiedad de referencia) de una asociación.
 
 </dd> <dt>
 
 *bClassesOnly* \[ en, opcional\]
 </dt> <dd>
 
-Valor booleano que indica si se debe devolver o no una lista de nombres de clase en lugar de instancias reales de las clases. Estas son las clases a las que pertenecen los objetos de asociación. El valor predeterminado de este parámetro es **false**.
+Valor booleano que indica si se debe devolver o no una lista de nombres de clase en lugar de instancias reales de las clases. Estas son las clases a las que pertenecen los objetos de asociación. El valor predeterminado de este parámetro es **FALSE.**
 
 </dd> <dt>
 
 *bSchemaOnly* \[ en, opcional\]
 </dt> <dd>
 
-Valor booleano que indica si la consulta se aplica o no al esquema en lugar de a los datos. El valor predeterminado de este parámetro es **false**. Solo se puede establecer en **true** si el objeto en el que se invoca este método es una clase. Cuando se establece en **true**, el conjunto de extremos devueltos representa las clases que están asociadas adecuadamente a la clase de origen en el esquema.
+Valor booleano que indica si la consulta se aplica o no al esquema en lugar de a los datos. El valor predeterminado de este parámetro es **FALSE.** Solo se puede establecer en **TRUE** si el objeto en el que se invoca este método es una clase. Cuando se establece en **TRUE,** el conjunto de puntos de conexión devueltos representa clases que están asociadas adecuadamente a la clase de origen en el esquema.
 
 </dd> <dt>
 
@@ -90,35 +90,35 @@ Cadena que contiene un nombre de calificador. Si se especifica, este parámetro 
 *iFlags* \[ en, opcional\]
 </dt> <dd>
 
-Entero que especifica marcas adicionales para la operación. El valor predeterminado para este parámetro es **wbemFlagReturnImmediately**, que dirige la llamada para que se devuelva inmediatamente en lugar de esperar hasta que se complete la consulta. Este parámetro puede aceptar los valores siguientes.
+Entero que especifica marcas adicionales a la operación. El valor predeterminado de este parámetro es **wbemFlagReturnImmediately**, que dirige a la llamada a que devuelva inmediatamente en lugar de esperar hasta que se haya completado la consulta. Este parámetro puede aceptar los valores siguientes.
 
 <dt>
 
 <span id="wbemFlagForwardOnly"></span><span id="wbemflagforwardonly"></span><span id="WBEMFLAGFORWARDONLY"></span>
 
-<span id="wbemFlagForwardOnly"></span><span id="wbemflagforwardonly"></span><span id="WBEMFLAGFORWARDONLY"></span>wbemFlagForwardOnly * * * * (32 (0x20))
+<span id="wbemFlagForwardOnly"></span><span id="wbemflagforwardonly"></span><span id="WBEMFLAGFORWARDONLY"></span>wbemFlagForwardOnly** (32 (0x20))
 
 
 </dt> <dd>
 
-Hace que se devuelva un enumerador de solo avance. Los enumeradores de solo avance suelen ser mucho más rápidos y usan menos memoria que los enumeradores convencionales, pero no permiten llamadas a [**SWbemObject. \_ Clone**](swbemobject-clone-.md).
+Hace que se devuelva un enumerador de solo avance. Los enumeradores de solo avance suelen ser mucho más rápidos y usan menos memoria que los enumeradores convencionales, pero no permiten llamadas a [**SWbemObject.Clone. \_**](swbemobject-clone-.md)
 
 </dd> <dt>
 
 <span id="wbemFlagBidirectional"></span><span id="wbemflagbidirectional"></span><span id="WBEMFLAGBIDIRECTIONAL"></span>
 
-<span id="wbemFlagBidirectional"></span><span id="wbemflagbidirectional"></span><span id="WBEMFLAGBIDIRECTIONAL"></span>wbemFlagBidirectional * * * * (0 (0X0))
+<span id="wbemFlagBidirectional"></span><span id="wbemflagbidirectional"></span><span id="WBEMFLAGBIDIRECTIONAL"></span>wbemFlagBidirectional** (0 (0x0))
 
 
 </dt> <dd>
 
-Hace que Instrumental de administración de Windows (WMI) Conserve punteros a objetos de la enumeración hasta que el cliente libere el enumerador.
+Hace que Windows Management Instrumentation (WMI) conserve punteros a objetos de la enumeración hasta que el cliente libere el enumerador.
 
 </dd> <dt>
 
 <span id="wbemFlagReturnImmediately"></span><span id="wbemflagreturnimmediately"></span><span id="WBEMFLAGRETURNIMMEDIATELY"></span>
 
-<span id="wbemFlagReturnImmediately"></span><span id="wbemflagreturnimmediately"></span><span id="WBEMFLAGRETURNIMMEDIATELY"></span>wbemFlagReturnImmediately * * * * (16 (0x10))
+<span id="wbemFlagReturnImmediately"></span><span id="wbemflagreturnimmediately"></span><span id="WBEMFLAGRETURNIMMEDIATELY"></span>wbemFlagReturnImmediately** (16 (0x10))
 
 
 </dt> <dd>
@@ -129,74 +129,74 @@ Hace que la llamada se devuelva inmediatamente.
 
 <span id="wbemFlagReturnWhenComplete"></span><span id="wbemflagreturnwhencomplete"></span><span id="WBEMFLAGRETURNWHENCOMPLETE"></span>
 
-<span id="wbemFlagReturnWhenComplete"></span><span id="wbemflagreturnwhencomplete"></span><span id="WBEMFLAGRETURNWHENCOMPLETE"></span>wbemFlagReturnWhenComplete * * * * (0 (0X0))
+<span id="wbemFlagReturnWhenComplete"></span><span id="wbemflagreturnwhencomplete"></span><span id="WBEMFLAGRETURNWHENCOMPLETE"></span>wbemFlagReturnWhenComplete** (0 (0x0))
 
 
 </dt> <dd>
 
-Hace que esta llamada se bloquee hasta que se complete la consulta.
+Hace que esta llamada se bloquee hasta que se haya completado la consulta.
 
 </dd> <dt>
 
 <span id="wbemFlagUseAmendedQualifiers"></span><span id="wbemflaguseamendedqualifiers"></span><span id="WBEMFLAGUSEAMENDEDQUALIFIERS"></span>
 
-<span id="wbemFlagUseAmendedQualifiers"></span><span id="wbemflaguseamendedqualifiers"></span><span id="WBEMFLAGUSEAMENDEDQUALIFIERS"></span>wbemFlagUseAmendedQualifiers * * * * (131072 (0x20000))
+<span id="wbemFlagUseAmendedQualifiers"></span><span id="wbemflaguseamendedqualifiers"></span><span id="WBEMFLAGUSEAMENDEDQUALIFIERS"></span>wbemFlagUseAmendedQualifiers** (131072 (0x20000))
 
 
 </dt> <dd>
 
-Hace que WMI devuelva datos de modificación de clase con la definición de clase base. Para obtener más información acerca de los calificadores modificados, consulte [localizar información de clase WMI](localizing-wmi-class-information.md).
+Hace que WMI devuelva datos de modificación de clase con la definición de clase base. Para obtener más información sobre los calificadores modificados, vea [Localizing WMI Class Information](localizing-wmi-class-information.md).
 
 </dd> </dl> </dd> <dt>
 
 *objwbemNamedValueSet* \[ en, opcional\]
 </dt> <dd>
 
-Normalmente, esto no está definido. De lo contrario, se trata de un objeto [**SWbemNamedValueSet**](swbemnamedvalueset.md) cuyos elementos representan la información de contexto que puede usar el proveedor que atiende la solicitud. Un proveedor que admite o requiere tal información debe documentar los nombres de valor reconocidos, el tipo de datos del valor, los valores permitidos y la semántica.
+Normalmente, esto es indefinido. De lo contrario, se trata de un objeto [**SWbemNamedValueSet**](swbemnamedvalueset.md) cuyos elementos representan la información de contexto que puede usar el proveedor que está atendiendo la solicitud. Un proveedor que admita o requiera dicha información debe documentar los nombres de valor reconocidos, el tipo de datos del valor, los valores permitidos y la semántica.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la llamada se realiza correctamente, se devuelve un objeto [**SWbemObjectSet**](swbemobjectset.md) .
+Si la llamada se realiza correctamente, se devuelve un objeto [**SWbemObjectSet.**](swbemobjectset.md)
 
 ## <a name="error-codes"></a>Códigos de error
 
-Después de completar el método **References \_** , el objeto **Err** puede contener uno de los códigos de error de la lista siguiente.
+Después de completar el método **\_ References,** el **objeto Err** puede contener uno de los códigos de error de la lista siguiente.
 
 <dl> <dt>
 
-**wbemErrAccessDenied** -2147749891 (0x80041003)
+**wbemErrAccessDenied:** 2147749891 (0x80041003)
 </dt> <dd>
 
 El usuario actual no tiene permiso para ver una o varias de las clases devueltas por la llamada.
 
 </dd> <dt>
 
-**wbemErrFailed** -2147749889 (0x80041001)
+**wbemErrFailed:** 2147749889 (0x80041001)
 </dt> <dd>
 
 Error no especificado.
 
 </dd> <dt>
 
-**wbemErrInvalidParameter** -2147749896 (0x80041008)
+**wbemErrInvalidParameter:** 2147749896 (0x80041008)
 </dt> <dd>
 
 Se especificó un parámetro no válido.
 
 </dd> <dt>
 
-**wbemErrOutOfMemory** -2147749894 (0x80041006)
+**wbemErrOutOfMemory:** 2147749894 (0x80041006)
 </dt> <dd>
 
-Memoria insuficiente para completar la operación.
+No hay suficiente memoria para completar la operación.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener más información sobre las referencias de la consulta WQL asociada, las instancias de origen y los objetos de asociación, vea [ASSOCIATORS OF Statement](associators-of-statement.md).
+Para obtener más información sobre la consulta WQL asociada REFERENCES OF, las instancias de origen y los objetos de asociación, vea [ASSOCIATORS OF (Instrucción](associators-of-statement.md)).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -206,11 +206,11 @@ Para obtener más información sobre las referencias de la consulta WQL asociada
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemObject<br/>                                                           |
-| IID<br/>                      | \_ISWBEMOBJECT IID<br/>                                                            |
+| IID<br/>                      | IID \_ ISWbemObject<br/>                                                            |
 
 
 
@@ -221,13 +221,13 @@ Para obtener más información sobre las referencias de la consulta WQL asociada
 [**SWbemObject**](swbemobject.md)
 </dt> <dt>
 
-[**SWbemObject. ASSOCIATORS\_**](swbemobject-associators-.md)
+[**SWbemObject.Associators\_**](swbemobject-associators-.md)
 </dt> <dt>
 
-[**SWbemServices. AssociatorsOf**](swbemservices-associatorsof.md)
+[**SWbemServices.AssociatorsOf**](swbemservices-associatorsof.md)
 </dt> <dt>
 
-[**SWbemServices. References**](swbemservices-referencesto.md)
+[**SWbemServices.ReferencesTo**](swbemservices-referencesto.md)
 </dt> </dl>
 
  

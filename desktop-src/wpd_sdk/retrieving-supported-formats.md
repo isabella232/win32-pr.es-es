@@ -4,12 +4,12 @@ ms.assetid: b54dfeda-c2a3-42ec-895f-9abbbd4dd2ec
 title: Recuperación de formatos de servicio admitidos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 73618f3450255ad470545ac472ad9f71238621e3
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: ccbaa5678d12e4393f377bb0ae0a399634b247ceb9bd54e1d815d4e9f7e5a763
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110423816"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119806675"
 ---
 # <a name="retrieving-supported-service-formats"></a>Recuperación de formatos de servicio admitidos
 
@@ -40,7 +40,7 @@ Dos métodos del módulo ServiceCapabilities.cpp admiten la recuperación de for
 
 El **método ListSupportedFormats** invoca el método [**IPortableDeviceService::Capabilities**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservice-capabilities) para recuperar una [**interfaz IPortableDeviceServiceCapabilities.**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicecapabilities) Con esta interfaz, recupera los formatos admitidos llamando al método [**IPortableDeviceServiceCapabilities::GetSupportedFormats.**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getsupportedformats) El **método GetSupportedFormats** recupera el GUID para cada formato admitido por el servicio y copia ese GUID en un [**objeto IPortableDevicePropVariantCollection.**](iportabledevicepropvariantcollection.md)
 
-El código siguiente usa el **método ListSupportedFormats.**
+En el código siguiente se usa **el método ListSupportedFormats.**
 
 
 ```C++
@@ -117,9 +117,9 @@ void ListSupportedFormats(
 
 
 
-Una vez que el método **ListSupportedFormats** recupera el GUID para cada formato admitido por el servicio dado, invoca al método **DisplayFormat** para mostrar el nombre descriptivo del script para cada formato; por ejemplo, "VCard2".
+Una vez que el método **ListSupportedFormats** recupera el GUID para cada formato admitido por el servicio dado, invoca el método **DisplayFormat** para mostrar el nombre descriptivo del script para cada formato. por ejemplo, "VCard2".
 
-El **método DisplayFormat** invoca el método [**IPortableDeviceServiceCapabilities::GetFormatAttributes**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getformatattributes) para recuperar una colección de atributos para el GUID de formato especificado. A continuación, llama al método [**IPortableDeviceValues::GetStringValue**](iportabledevicevalues-getstringvalue.md) y solicita que el controlador devuelva un nombre descriptivo de script para el formato especificado.
+El **método DisplayFormat** invoca el método [**IPortableDeviceServiceCapabilities::GetFormatAttributes**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getformatattributes) para recuperar una colección de atributos para el GUID de formato especificado. A continuación, llama al método [**IPortableDeviceValues::GetStringValue**](iportabledevicevalues-getstringvalue.md) y solicita al controlador que devuelva un nombre descriptivo de script para el formato especificado.
 
 En el código siguiente se usa **el método DisplayFormat.**
 

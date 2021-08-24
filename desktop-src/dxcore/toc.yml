@@ -44,7 +44,7 @@
               items:
                 - name: GetFactory
                   href: ./dxcore_interface/nf-dxcore_interface-idxcoreadapter-getfactory.md
-                - name: GetProperty
+                - name: Getproperty
                   href: ./dxcore_interface/nf-dxcore_interface-idxcoreadapter-getproperty.md
                 - name: GetPropertySize
                   href: ./dxcore_interface/nf-dxcore_interface-idxcoreadapter-getpropertysize.md

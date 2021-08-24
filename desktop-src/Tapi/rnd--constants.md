@@ -1,25 +1,25 @@
 ---
-description: Las constantes siguientes pueden devolverse como errores.
+description: Las siguientes constantes se pueden devolver como errores.
 ms.assetid: 185bd906-c276-4075-9c23-eb112da2a7ca
-title: Constantes de RND_ (Rnderr. h)
+title: RND_ constantes (Rnderr.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 54a89b6747fb9fef775bbf40fac472081567ff1a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b2ed1b55b0ed18215fb17e27504c309c67b0cea3351acea6cffadc4b3ff31c9f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119773375"
 ---
-# <a name="rnd_-constants"></a>RND ( \_ constantes)
+# <a name="rnd_-constants"></a>Constantes \_ de RND
 
-\[ Las interfaces y controles de conferencias de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y las versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[Las interfaces y los controles de conferencia de telefonía IP de Rendezvous no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-Las constantes siguientes pueden devolverse como errores.
+Las siguientes constantes se pueden devolver como errores.
 
 <dl> <dt>
 
-<span id="RND_INVALID_TIME"></span><span id="rnd_invalid_time"></span>**RND \_ hora no válida \_**
+<span id="RND_INVALID_TIME"></span><span id="rnd_invalid_time"></span>**HORA DE \_ RND NO \_ VÁLIDA**
 </dt> <dd> <dl> <dt>
 
  0xe0000200
@@ -32,7 +32,7 @@ El valor de hora especificado no es válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RND_NULL_SERVER_NAME"></span><span id="rnd_null_server_name"></span>**RND \_ \_ nombre de servidor null \_**
+<span id="RND_NULL_SERVER_NAME"></span><span id="rnd_null_server_name"></span>**NOMBRE DE \_ SERVIDOR NULL \_ DE \_ RND**
 </dt> <dd> <dl> <dt>
 
  0xe0000201
@@ -40,12 +40,12 @@ El valor de hora especificado no es válido.
 
 
 
-El nombre del servidor es **null**, probablemente porque [**ITConferenceBlob:: init**](itconferenceblob-init.md) no se ha ejecutado o no se ha realizado correctamente.
+El nombre del servidor **es NULL,** probablemente porque [**ITConferenceBlob::Init**](itconferenceblob-init.md) no se ha ejecutado o no se ha ejecutado correctamente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RND_ALREADY_CONNECTED"></span><span id="rnd_already_connected"></span>**RND \_ ya está \_ conectado**
+<span id="RND_ALREADY_CONNECTED"></span><span id="rnd_already_connected"></span>**RND \_ YA \_ CONECTADO**
 </dt> <dd> <dl> <dt>
 
  0xe0000202
@@ -53,12 +53,12 @@ El nombre del servidor es **null**, probablemente porque [**ITConferenceBlob:: i
 
 
 
-Se llamó al método [**ITDirectory:: Connect**](/windows/desktop/api/Rend/nf-rend-itdirectory-connect) , pero ya existe una conexión.
+Se [**llamó al método ITDirectory::Conectar,**](/windows/desktop/api/Rend/nf-rend-itdirectory-connect) pero ya existe una conexión.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RND_NOT_CONNECTED"></span><span id="rnd_not_connected"></span>**RND \_ no \_ conectado**
+<span id="RND_NOT_CONNECTED"></span><span id="rnd_not_connected"></span>**RND \_ NO \_ CONECTADO**
 </dt> <dd> <dl> <dt>
 
  0xe0000203
@@ -66,7 +66,7 @@ Se llamó al método [**ITDirectory:: Connect**](/windows/desktop/api/Rend/nf-re
 
 
 
-No se ha llamado al método [**ITDirectory:: Connect**](/windows/desktop/api/Rend/nf-rend-itdirectory-connect) o se produjo un error.
+El [**método ITDirectory::Conectar**](/windows/desktop/api/Rend/nf-rend-itdirectory-connect) no se ha llamado o no se ha podido.
 
 
 </dt> </dl> </dd> </dl>
@@ -77,8 +77,8 @@ No se ha llamado al método [**ITDirectory:: Connect**](/windows/desktop/api/Ren
 
 | Requisito | Value |
 |-------------------------|-------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,0 o posterior<br/>                                               |
-| Encabezado<br/>       | <dl> <dt>Rnderr. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                               |
+| Header<br/>       | <dl> <dt>Rnderr.h</dt> </dl> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Método Modify de la clase MicrosoftDNS_SOAType
-description: El método Modify actualiza un registro de recursos de inicio de autoridad (SOA).
+title: Método Modify de la MicrosoftDNS_SOAType clase
+description: El método Modify actualiza un registro de recursos de Inicio de autoridad (SOA).
 ms.assetid: 531b770d-9ac9-43da-8595-fbc175b51b23
 keywords:
-- Modificar DNS de método
-- Modificar el método DNS, MicrosoftDNS_SOAType clase
-- MicrosoftDNS_SOAType de clase DNS, Modify (método)
+- Modificación del DNS del método
+- Modify method DNS , MicrosoftDNS_SOAType class
+- MicrosoftDNS_SOAType clase DNS , Método Modify
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ff40abc7f4e93b7122a1c48889c17f9efc4f625
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 74785804ebed8266443f0dd708a5d122e350a6cf88b91f228d2ce266481dffaa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104078991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119825085"
 ---
-# <a name="modify-method-of-the-microsoftdns_soatype-class"></a>Método Modify de la \_ clase MicrosoftDNS SOAType
+# <a name="modify-method-of-the-microsoftdns_soatype-class"></a>Método Modify de la clase SOAType de MicrosoftDNS \_
 
-El método **Modify** actualiza un registro de recursos de inicio de autoridad (SOA).
+El **método Modify** actualiza un registro de recursos de Inicio de autoridad (SOA).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,63 +50,63 @@ void Modify(
 
 <dl> <dt>
 
-*TTL* \[ de en, opcional\]
+*TTL* \[ in, opcional\]
 </dt> <dd>
 
 Tiempo, en segundos, que un solucionador DNS puede almacenar en caché el RR.
 
 </dd> <dt>
 
-*SerialNumber* \[ en, opcional\]
+*SerialNumber* \[ in, opcional\]
 </dt> <dd>
 
-Número de serie SOA que representa el número de veces que se ha actualizado la zona, utilizada por [*los servidores secundarios*](s-gly.md) para determinar si es necesaria la transferencia de zona.
+Número de serie SOA que representa el número [](s-gly.md) de veces que se ha actualizado la zona, que usan los servidores secundarios para determinar si es necesaria la transferencia de zona.
 
 </dd> <dt>
 
-*PrimaryServer* \[ en, opcional\]
+*PrimaryServer* \[ in, opcional\]
 </dt> <dd>
 
 Nombre del servidor principal.
 
 </dd> <dt>
 
-*ResponsibleParty* \[ en, opcional\]
+*ResponsibleParty* \[ in, opcional\]
 </dt> <dd>
 
-Dirección de buzón del usuario responsable, en forma de alias. Domain, como xyz.microsoft.com. Observe el uso de un punto en lugar de un símbolo de arroba (@).
+Dirección de buzón de la parte responsable, en forma de alias.domain, como xyz.microsoft.com. Tenga en cuenta el uso de un punto en lugar de un símbolo at (@).
 
 </dd> <dt>
 
-*RefreshInterval* \[ en, opcional\]
+*RefreshInterval* \[ in, opcional\]
 </dt> <dd>
 
 Tiempo, en segundos, antes de que se actualice la zona que contiene este registro.
 
 </dd> <dt>
 
-*RetryDelay* \[ en, opcional\]
+*RetryDelay* \[ in, opcional\]
 </dt> <dd>
 
-Tiempo, en segundos, que el servidor DNS debe retrasarse entre los intentos de resolución de nombres.
+Tiempo, en segundos, el servidor DNS debe retrasarse entre los intentos de resolución de nombres.
 
 </dd> <dt>
 
-*ExpireLimit* \[ en, opcional\]
+*ExpireLimit* \[ in, opcional\]
 </dt> <dd>
 
-Tiempo, en segundos, que los servidores secundarios deben esperar una respuesta del servidor principal antes de descartar las copias del archivo de zona como no válidas.
+Tiempo, en segundos, que los servidores secundarios deben esperar una respuesta del servidor principal antes de descartar sus copias del archivo de zona como no válidas.
 
 </dd> <dt>
 
-*MinimumTTL* \[ en, opcional\]
+*MinimumTTL* \[ in, opcional\]
 </dt> <dd>
 
 Tiempo de TTL, en segundos, aplicado a los registros de recursos de la zona que no especifican su propio TTL.
 
 </dd> <dt>
 
-*RR* \[ out, Ref\]
+*RR* \[ out, ref\]
 </dt> <dd>
 
 Referencia al objeto modificado
@@ -117,9 +117,9 @@ Referencia al objeto modificado
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los parámetros no especificados se dejan sin cambios en el registro modificado.
+Cualquier parámetro no especificado se deja sin cambios en el registro modificado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -130,7 +130,7 @@ Los parámetros no especificados se dejan sin cambios en el registro modificado.
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Espacio de nombres<br/>                | \\MicrosoftDNS raíz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -141,7 +141,7 @@ Los parámetros no especificados se dejan sin cambios en el registro modificado.
 [**MicrosoftDNS \_ SOAType**](microsoftdns-soatype.md)
 </dt> <dt>
 
-[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
+[**ResourceRecord de MicrosoftDNS \_**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

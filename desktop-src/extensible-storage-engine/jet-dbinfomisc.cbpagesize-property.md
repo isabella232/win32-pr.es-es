@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_DBINFOMISC. cbPageSize'
-title: Propiedad JET_DBINFOMISC. cbPageSize
+description: 'Más información sobre: JET_DBINFOMISC.cbPageSize'
+title: JET_DBINFOMISC.cbPageSize, propiedad
 TOCTitle: 'cbPageSize property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_DBINFOMISC.cbPageSize
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_dbinfomisc.cbpagesize(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ae2f718c066c1b0cef347141f08e1ed1254e6bcc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1a4b72ff96337637c90aaeaa48bfbb344f0d36e9658536cb6efa9c5399741063
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696354"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119891425"
 ---
-# <a name="jet_dbinfomisccbpagesize-property"></a>Propiedad JET_DBINFOMISC. cbPageSize
+# <a name="jet_dbinfomisccbpagesize-property"></a>JET_DBINFOMISC.cbPageSize, propiedad
 
-Obtiene el tamaño de página de la base de datos. Un valor de 0 significa 4 KB.
+Obtiene el tamaño de página de la base de datos. Un valor de 0 significa páginas de 4 Kb.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -60,14 +60,14 @@ public int cbPageSize { get; internal set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_DBINFOMISC (clase)](./jet-dbinfomisc-class.md)
+[JET_DBINFOMISC clase](./jet-dbinfomisc-class.md)
 
-[Miembros de JET_DBINFOMISC](./jet-dbinfomisc-members.md)
+[JET_DBINFOMISC miembros](./jet-dbinfomisc-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
