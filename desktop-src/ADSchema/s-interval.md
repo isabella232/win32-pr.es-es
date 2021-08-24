@@ -1,5 +1,5 @@
 ---
-title: Sintaxis de Interval
+title: Sintaxis de intervalo
 description: Representa un valor de intervalo de tiempo.
 ms.assetid: e41b71da-cd05-4a4a-8b97-9210dbe314de
 ms.tgt_platform: multiple
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 59b92961deecde7faa879dbbda6bfd24560ad705
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4e088c8347ff12172cb87c521e049e2646a0711e1eaedf805887b6988af1e284
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104422643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119580295"
 ---
-# <a name="interval-syntax"></a>Sintaxis de Interval
+# <a name="interval-syntax"></a>Sintaxis de intervalo
 
-Representa un valor de intervalo de tiempo. Las unidades de tiempo reales dependen del atributo que usa esta sintaxis. Esta sintaxis es idéntica a la sintaxis de [**LargeInteger**](s-largeinteger.md) , excepto que los valores altos y bajos son enteros sin signo.
+Representa un valor de intervalo de tiempo. Las unidades de tiempo reales dependen del atributo que usa esta sintaxis. Esta sintaxis es idéntica a la [**sintaxis LargeInteger,**](s-largeinteger.md) salvo que los valores altos y bajos son enteros sin signo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|------------------------------------------------------------------------------------|
 | Nombre         | Intervalo                                                                           |
-| IDENTIFICADOR de sintaxis    | 2.5.5.16                                                                           |
-| IDENTIFICADOR DE OM        | 65                                                                                 |
-| Tipo MAPI    | \-                                                                                 |
-| Tipo ADS     | \_entero grande de ADSTYPE \_                                                            |
-| Tipo Variant | distribución de VT \_                                                                       |
-| Tipo de SDS     | Objeto COM que se puede convertir en un [**IADsLargeInteger**](/windows/desktop/api/iads/nn-iads-iadslargeinteger). |
+| Identificador de sintaxis    | 2.5.5.16                                                                           |
+| Id. de OM        | 65                                                                                 |
+| Tipo DE MAPI    | \-                                                                                 |
+| ADS Type     | ADSTYPE \_ LARGE \_ INTEGER                                                            |
+| Tipo de variante | VT \_ DISPATCH                                                                       |
+| Tipo sds     | Objeto COM que se puede convertir en [**un IADsLargeInteger**](/windows/desktop/api/iads/nn-iads-iadslargeinteger). |
 
 
 

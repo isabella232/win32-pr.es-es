@@ -14,14 +14,14 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: fc8d6181cf9fe9313755fd52d54319f266f4cae6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: da6f77db1b1a776783145a7c710de3d34a799c9f9c5e9f97708601113c490b9d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086413"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119592575"
 ---
-# <a name="iwicbitmap_setpalette_proxy-function"></a>Función \_ SetPalette Proxy de IWICBitmap \_
+# <a name="iwicbitmap_setpalette_proxy-function"></a>Función \_ setPalette Proxy de IWICBitmap \_
 
 Función de proxy para el [**método SetPalette.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmap-setpalette)
 
@@ -73,8 +73,8 @@ Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP con SP2, solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                                                                             |
+| Cliente mínimo compatible<br/> | Windows XP con SP2, solo Windows aplicaciones \[ de escritorio de Vista\]<br/>                                                                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                                                                             |
 | Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 

@@ -1,11 +1,11 @@
 ---
-title: atributo de MS-DS-PSO aplicado
+title: Atributo ms-DS-PSO-Applied
 description: Objeto de configuración de contraseña que se aplica a este objeto.
 ms.assetid: 547e90c7-21b6-4598-a048-d7615ce8ece6
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos aplicados por MS-DS-PSO
-- Esquema de AD de atributo msDS-PSOApplied
+- Esquema de AD de atributo ms-DS-PSO-Applied
+- Esquema de AD del atributo msDS-PSOApplied
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b9c07d2b70488ac02d3fb3d91531d9b45aefcfe5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7a5ee3fecf675ec9091b0637bde91e65ee31c090c39d31b27b8594dd6d7294e0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151655"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119294185"
 ---
-# <a name="ms-ds-pso-applied-attribute"></a>atributo de MS-DS-PSO aplicado
+# <a name="ms-ds-pso-applied-attribute"></a>Atributo ms-DS-PSO-Applied
 
 Objeto de configuración de contraseña que se aplica a este objeto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | MS-DS-PSO: aplicado                       |
-| Nombre para mostrar de LDAP | msDS-PSOApplied                         |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | ms-DS-PSO-Applied                       |
+| Ldap-Display-Name | msDS-PSOApplied                         |
+| Size              | \-                                      |
+| Actualizar privilegios  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.2021                 |
-| System-ID-GUID    | 5e6cf031-bda8-43c8-aca4-8fee4127005b    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 5e6cf031-bda8-43c8-aca4-8fee4127005b    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -52,13 +52,13 @@ Objeto de configuración de contraseña que se aplica a este objeto.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2119                            |
+| Id. de vínculo                | 2119                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -73,13 +73,13 @@ Objeto de configuración de contraseña que se aplica a este objeto.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2119                            |
+| Id. de vínculo                | 2119                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -92,15 +92,15 @@ Objeto de configuración de contraseña que se aplica a este objeto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2119                            |
+| Id. de vínculo                | 2119                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

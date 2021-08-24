@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: SystemParameters. HungIOThreshold (propiedad)'
-title: Propiedad SystemParameters. HungIOThreshold
+description: 'Más información sobre: Propiedad SystemParameters.HungIOThreshold'
+title: Propiedad SystemParameters.HungIOThreshold
 TOCTitle: 'HungIOThreshold property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.SystemParameters.HungIOThreshold
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.systemparameters.hungiothreshold(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6118cfb171966798ade924ccf55f0a42af443f6f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 587893371aabb6d47e4560c0a8d113ae8e337d5f395b00edbcf32268635d1238
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103817790"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119603590"
 ---
-# <a name="systemparametershungiothreshold-property"></a>Propiedad SystemParameters. HungIOThreshold
+# <a name="systemparametershungiothreshold-property"></a>Propiedad SystemParameters.HungIOThreshold
 
-Obtiene o establece el umbral de lo que se considera una e/s bloqueada en la que se debe actuar.
+Obtiene o establece el umbral para lo que se considera una E/S desahora sobre la que se debe actuar.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -61,7 +61,7 @@ public static int HungIOThreshold { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vea también
 
@@ -69,6 +69,6 @@ Tipo: [System. Int32](/dotnet/api/system.int32)
 
 [SystemParameters (clase)](./systemparameters-class.md)
 
-[Miembros de SystemParameters](./systemparameters-members.md)
+[Miembros SystemParameters](./systemparameters-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

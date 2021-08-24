@@ -1,37 +1,37 @@
 ---
-description: Los efectos de niebla pueden dar mayor realismo a una escena 3D.
+description: Los efectos de efecto de efecto pueden dar mayor realismo a una escena 3D.
 ms.assetid: 26fe4f7c-7bb3-4a52-b539-5de2b11256e9
-title: Estado de niebla (Direct3D 9)
+title: Estado de la infusión (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 61d3103cbbd3dfb220e2ddd75078040702fd7557
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 84004b8f261f9a6dc4c9b800ba5baa1f9a3c3e528db2b94e86286c3752414729
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104422732"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119564245"
 ---
-# <a name="fog-state-direct3d-9"></a>Estado de niebla (Direct3D 9)
+# <a name="fog-state-direct3d-9"></a>Estado de la infusión (Direct3D 9)
 
-Los efectos de niebla pueden dar mayor realismo a una escena 3D. Puede usar efectos de niebla para más que simular la niebla. También pueden reducir la claridad de una escena con distancia. Esto refleja lo que sucede en el mundo real; a medida que los objetos van más alejados del usuario, sus detalles son menos distintos.
+Los efectos de efecto de efecto pueden dar mayor realismo a una escena 3D. Puede usar efectos de efecto para algo más que simular el sonido. También pueden reducir la claridad de una escena con distancia. Esto refleja lo que sucede en el mundo real. A medida que los objetos se distancian más del usuario, sus detalles son menos distintos.
 
-Para obtener más información sobre el uso de la niebla en la aplicación, vea [niebla (Direct3D 9)](fog.md).
+Para obtener más información sobre el uso de la nube en la aplicación, vea [Decir (Direct3D 9).](fog.md)
 
-Una aplicación de C++ controla la niebla a través de los Estados de representación de dispositivos. El tipo enumerado [**D3DRENDERSTATETYPE**](./d3drenderstatetype.md) incluye los Estados para controlar si se usa la niebla de píxel (tabla) o de vértices, el color que tiene, la fórmula de niebla que aplica el sistema y los parámetros de la fórmula.
+Una aplicación de C++ controla los estados de representación de dispositivos. El tipo enumerado [**D3DRENDERSTATETYPE**](./d3drenderstatetype.md) incluye estados para controlar si se usan píxeles (tabla) o vértices, de qué color es, de qué color se aplica el sistema y de los parámetros de la fórmula.
 
-Para habilitar la niebla, establezca el \_ Estado de representación de FOGENABLE de D3DRS en **true**. El color de niebla se puede establecer en cualquier valor de color mediante el \_ Estado de representación de D3DRS FOGCOLOR; se omite el componente alfa del color de niebla.
+Para habilitar el estado de representación de \_ D3DRSEVEENABLE, debe establecerse en **TRUE.** El color de color de color se puede establecer en cualquier valor de color mediante el estado de representación D3DRSCOLORCOLOR; se omite el componente alfa \_ del color de color.
 
-Los \_ Estados de representación D3DRS FOGTABLEMODE y D3DRS \_ FOGVERTEXMODE controlan la fórmula de niebla aplicada para los cálculos de niebla y controlan indirectamente qué tipo de niebla se aplica. Ambos Estados de representación se pueden establecer en un miembro del tipo enumerado [**D3DFOGMODE**](./d3dfogmode.md) . Al establecer el estado de representación en D3DFOG \_ None, se deshabilita la niebla de píxel o de vértices, respectivamente. Si ambos Estados de representación están establecidos en modos válidos, el sistema aplica solo los efectos de niebla de píxeles.
+Los estados de representación D3DRS \_ KANBANTABLEMODE y D3DRS KANBANVERTEXMODE controlan la fórmula de matriz aplicada para los cálculos de cálculo, y controlan indirectamente qué tipo de vertía se \_ aplica. Ambos estados de representación se pueden establecer en un miembro del tipo [**enumerado D3DFOGMODE.**](./d3dfogmode.md) Al establecer el estado de representación en D3DFOG NONE, se deshabilitan los \_ píxeles o vértices, respectivamente. Si ambos estados de representación están establecidos en modos válidos, el sistema solo aplica efectos de píxeles de píxel.
 
-Los \_ \_ parámetros de la fórmula de niebla de control D3DRS FOGSTART y D3DRS FOGEND para el \_ modo lineal D3DFOG. El estado de representación de D3DRS \_ FOGDENSITY controla la densidad de niebla en los modos de niebla exponencial.
+Los parámetros de fórmula de control de estados de representación \_ D3DRSSTART y D3DRS DAXSTART para el modo \_ LINEAR D3DFOG. \_ El estado de representación DE D3DRSRDDENSITY controla la densidad de densidad de densidad en \_ los modos de curva exponencial.
 
-Para obtener más información, vea [parámetros de niebla (Direct3D 9)](fog-parameters.md).
+Para obtener más información, vea [Parámetros de Parámetros de parámetros de parámetros de Parámetros de parámetros (Direct3D 9)](fog-parameters.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Estados de representación](render-states.md)
+[Representar estados](render-states.md)
 </dt> </dl>
 
  

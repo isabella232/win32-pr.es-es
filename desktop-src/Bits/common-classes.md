@@ -1,19 +1,19 @@
 ---
 title: Clases comunes de ejemplo
-description: Puede usar los ejemplos de código de este tema como punto de partida para muchas aplicaciones Servicio de transferencia inteligente en segundo plano (BITS) que realizan la inicialización COM, necesitan el control de errores y reciben notificaciones de devolución de llamada.
+description: Puede usar los ejemplos de código de este tema como punto de partida para muchas aplicaciones de Servicio de transferencia inteligente en segundo plano (BITS) que realizan la inicialización COM, necesitan control de errores y reciben notificaciones de devolución de llamada.
 ms.assetid: 8fe722a3-fbab-4843-b298-1ea11f54d7a5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 864fe4aa8d7af5bb6a248364b0e2c636e1c250a6
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: e3948bbfd783691a170ea2b55c267384371691d61cb3fc86ee56737a89a56395
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103797284"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119579385"
 ---
-# <a name="example-common-classes"></a>Ejemplo: clases comunes
+# <a name="example-common-classes"></a>Ejemplo: Clases comunes
 
-Puede usar los ejemplos de código de este tema como punto de partida para muchas aplicaciones Servicio de transferencia inteligente en segundo plano (BITS) que realizan la inicialización COM, necesitan el control de errores y reciben notificaciones de devolución de llamada.
+Puede usar los ejemplos de código de este tema como punto de partida para muchas aplicaciones de Servicio de transferencia inteligente en segundo plano (BITS) que realizan la inicialización COM, necesitan control de errores y reciben notificaciones de devolución de llamada.
 
 
 En el ejemplo de código siguiente se define una clase de excepción para controlar los errores.
@@ -34,10 +34,10 @@ public:
 
 
 
-La clase de excepción es una clase de excepción genérica que acepta un código HRESULT y una cadena de error.
+La clase MyException es una clase de excepción genérica que acepta un código HRESULT y una cadena de error.
 
 
-En el ejemplo de código siguiente se define una clase auxiliar de adquisición de recursos para la función [CoInitializeEx](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) .
+En el ejemplo de código siguiente se define una clase auxiliar de adquisición de recursos para la [función CoInitializeEx.](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex)
 
 
 ```C++
@@ -62,10 +62,10 @@ public:
 
 
 
-La clase CCoInitializer trata la asignación y desasignación de recursos para la inicialización COM. Esta clase permite llamar al destructor cuando la clase sale del ámbito. Esta clase elimina la necesidad de llamar al método [CoUninitialize](/windows/win32/api/combaseapi/nf-combaseapi-couninitialize) después de cada bloque de excepción.
+La clase CCoInitializer se ocupa de la asignación de recursos y la desasignación para la inicialización com. Esta clase permite llamar al destructor cuando la clase sale del ámbito. Esta clase elimina la necesidad de llamar al [método CoUninitialize](/windows/win32/api/combaseapi/nf-combaseapi-couninitialize) después de cada bloque de excepciones.
 
 
-El siguiente ejemplo de código es la declaración de la interfaz de devolución de llamada CNotifyInterface.
+El ejemplo de código siguiente es la declaración de la interfaz de devolución de llamada CNotifyInterface.
 
 
 ```C++
@@ -100,14 +100,14 @@ private:
 
 
 
-La clase CNotifyInterface derivada de la interfaz [**IBackgroundCopyCallback**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopycallback) . La clase CNotifyInterface implementa la interfaz IUnknown. Para obtener más información, vea [IUnknown]( /windows/win32/api/unknwn/nn-unknwn-iunknown).
+La clase CNotifyInterface derivada de la [**interfaz IBackgroundCopyCallback.**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopycallback) La clase CNotifyInterface implementa la interfaz IUnknown. Para obtener más información, [vea IUnknown]( /windows/win32/api/unknwn/nn-unknwn-iunknown).
 
-CNotifyInterface usa los métodos siguientes para recibir la notificación de que un trabajo se ha completado, se ha modificado o está en un estado de error: [**JobTransferred**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopycallback-jobtransferred), [**JobModification**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopycallback-jobmodification)y [**JobError**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopycallback-joberror). Todos estos métodos toman un objeto de trabajo [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) .
+CNotifyInterface usa los métodos siguientes para recibir una notificación de que un trabajo se ha completado, se ha modificado o está en un estado de error: [**JobTransferred**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopycallback-jobtransferred), [**JobModification**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopycallback-jobmodification)y [**JobError**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopycallback-joberror). Todos estos métodos toman un [**objeto de trabajo IBackgroundCopyJob.**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob)
 
-En este ejemplo se usa el [CoTaskMemFree](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) para liberar recursos de memoria.
+En este ejemplo se usa [CoTaskMemFree para](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) liberar recursos de memoria.
 
 
-El ejemplo de código siguiente es la implementación de la interfaz de devolución de llamada [**IBackgroundCopyCallback**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopycallback) .
+El ejemplo de código siguiente es la implementación de la interfaz de devolución de [**llamada IBackgroundCopyCallback.**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopycallback)
 
 
 ```C++
@@ -212,7 +212,7 @@ HRESULT CNotifyInterface::JobError(IBackgroundCopyJob* pJob, IBackgroundCopyErro
 
 
 
-El siguiente archivo de encabezado se utiliza para las clases de código comunes. Estas clases se usan en los ejemplos de código anteriores.
+El siguiente archivo de encabezado se usa para las clases de código comunes. Estas clases se usan en los ejemplos de código anteriores.
 
 
 ```C++
@@ -413,10 +413,10 @@ HRESULT CNotifyInterface::JobError(IBackgroundCopyJob* pJob, IBackgroundCopyErro
 [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob)
 </dt> <dt>
 
-[Fall](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex)
+[CoInitializeEx](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex)
 </dt> <dt>
 
-[Ilegal](/windows/win32/api/combaseapi/nf-combaseapi-couninitialize)
+[CoUninitialize](/windows/win32/api/combaseapi/nf-combaseapi-couninitialize)
 </dt> </dl>
 
  

@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 201469933da10b0d68a4d3a50e63c42f8d01d2dd
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 922cbd2110149ac27041be41ccd24a601e87b5355351e0774a80eb636461c21f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108083663"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119590355"
 ---
 # <a name="iinkanalyzersearchwithlanguageid-method"></a>IInkAnalyzer::SearchWithLanguageId (método)
 
-Proporciona una búsqueda aproximada basada en frases sin mayúsculas de minúsculas para trazos de escritura analizados y trazos de dibujo analizados que tienen tipos reconocidos.
+Proporciona una búsqueda aproximada y sin mayúsculas de minúsculas basada en frases para trazos de escritura analizados y trazos de dibujo analizados que tienen tipos reconocidos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,14 +47,14 @@ HRESULT SearchWithLanguageId(
 *bstrPhraseToMatch* \[ En\]
 </dt> <dd>
 
-Frase que se encontrará en las alternativas de los trazos analizados actualmente.
+Frase que se encontrará en las alternativas para los trazos analizados actualmente.
 
 </dd> <dt>
 
 *lSearchStringLanguageId* \[ En\]
 </dt> <dd>
 
-LCID asociado a la cadena que se pasa. Se usa para convertir el caso internamente para admitir comparaciones que no tienen en cuenta mayúsculas de minúsculas.
+LCID asociado a la cadena que se pasa. Se usa para convertir el caso internamente para admitir comparaciones que no tienen en cuenta las mayúsculas y minúsculas.
 
 </dd> <dt>
 
@@ -75,14 +75,14 @@ Puntero a una matriz del número de trazos en cada resultado de búsqueda.
 *pulStrokeIdsCount* \[ in, out\]
 </dt> <dd>
 
-Número de id. de trazo en *ppulStrokeIds.*
+Número de id. de trazo en *ppulStrokeIds*.
 
 </dd> <dt>
 
 *ppulStrokeIds* \[ out\]
 </dt> <dd>
 
-Puntero a una matriz de los IDs de trazo que representan un conjunto de conjuntos de trazos.
+Puntero a una matriz de los ID de trazo que representan un conjunto de conjuntos de trazos.
 
 </dd> </dl>
 
@@ -110,14 +110,14 @@ La búsqueda no genera eventos PopulateContextNode. Solo se buscarán los trazos
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC \[ Edition\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

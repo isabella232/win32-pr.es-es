@@ -1,27 +1,27 @@
 ---
-title: Funciones de glVertex
+title: funciones glVertex
 description: Estas funciones especifican un vértice.
 ms.assetid: 20253760-f9ec-4053-bcde-748178f3b359
 keywords:
-- Funciones OpenGL, glVertex
-- Referencia de OpenGL, funciones de glVertex
-- referencia de las funciones OpenGL, glVertex
+- Funciones OpenGL,glVertex
+- Referencia de OpenGL, funciones glVertex
+- referencia de las funciones OpenGL,glVertex
 - OpenGL, funciones de vértice
 - Referencia de OpenGL, funciones de vértice
-- referencia de las funciones de OpenGL, Vertex
-- funciones de glVertexl
+- referencia de OpenGL, funciones de vértice
+- Funciones glVertexl
 - vértices, funciones
 - funciones de vértice
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fd062df9a830abd283232a9e431a65ac7af57967
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3913ba44fe4ffd1659a0a4b5ab9cfcfcdb9bc5c82a13efb6e4700398d08f352b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105665720"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119488355"
 ---
-# <a name="glvertex-functions"></a>Funciones de glVertex
+# <a name="glvertex-functions"></a>funciones glVertex
 
 Estas funciones especifican un vértice:
 
@@ -50,9 +50,9 @@ Estas funciones especifican un vértice:
 -   [**glVertex4iv**](glvertex4iv.md)
 -   [**glVertex4sv**](glvertex4sv.md)
 
- 
+ 
 
- 
+ 
 
 
 

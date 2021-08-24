@@ -1,30 +1,30 @@
 ---
-title: Propiedad AdvancedSettings de IMsTscAx
-description: Recupera un puntero de la interfaz IMsTscAdvancedSettings.
+title: Propiedad IMsTscAx AdvancedSettings
+description: Recupera un puntero de interfaz IMsTscAdvancedSettings.
 ms.assetid: 1c0e2216-0c65-48ad-b0f6-3a766c8fa44e
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad AdvancedSettings
-- Propiedad AdvancedSettings Servicios de Escritorio remoto, interfaz IMsTscAx
-- Servicios de Escritorio remoto de la interfaz IMsTscAx, propiedad AdvancedSettings
-- Propiedad AdvancedSettings Servicios de Escritorio remoto, interfaz IMsRdpClient
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient, propiedad AdvancedSettings
-- Propiedad AdvancedSettings Servicios de Escritorio remoto, interfaz IMsRdpClient2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient2, propiedad AdvancedSettings
-- Propiedad AdvancedSettings Servicios de Escritorio remoto, interfaz IMsRdpClient3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient3, propiedad AdvancedSettings
-- Propiedad AdvancedSettings Servicios de Escritorio remoto, interfaz IMsRdpClient4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient4, propiedad AdvancedSettings
-- Propiedad AdvancedSettings Servicios de Escritorio remoto, interfaz IMsRdpClient5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient5, propiedad AdvancedSettings
-- Propiedad AdvancedSettings Servicios de Escritorio remoto, interfaz IMsRdpClient6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient6, propiedad AdvancedSettings
-- Propiedad AdvancedSettings Servicios de Escritorio remoto, interfaz IMsRdpClient7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient7, propiedad AdvancedSettings
-- Propiedad AdvancedSettings Servicios de Escritorio remoto, interfaz IMsRdpClient8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient8, propiedad AdvancedSettings
-- Propiedad AdvancedSettings Servicios de Escritorio remoto, interfaz IMsRdpClient9
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient9, propiedad AdvancedSettings
+- Propiedad AdvancedSettings Servicios de Escritorio remoto
+- Propiedad AdvancedSettings Servicios de Escritorio remoto interfaz , IMsTscAx
+- Interfaz IMsTscAx Servicios de Escritorio remoto , propiedad AdvancedSettings
+- Propiedad AdvancedSettings Servicios de Escritorio remoto interfaz , IMsRdpClient
+- Interfaz IMsRdpClient Servicios de Escritorio remoto , propiedad AdvancedSettings
+- Propiedad AdvancedSettings Servicios de Escritorio remoto interfaz , IMsRdpClient2
+- Interfaz IMsRdpClient2 Servicios de Escritorio remoto , propiedad AdvancedSettings
+- Propiedad AdvancedSettings Servicios de Escritorio remoto interfaz , IMsRdpClient3
+- Interfaz IMsRdpClient3 Servicios de Escritorio remoto , propiedad AdvancedSettings
+- Propiedad AdvancedSettings Servicios de Escritorio remoto interfaz , IMsRdpClient4
+- Interfaz IMsRdpClient4 Servicios de Escritorio remoto , propiedad AdvancedSettings
+- Propiedad AdvancedSettings Servicios de Escritorio remoto interfaz , IMsRdpClient5
+- Interfaz IMsRdpClient5 Servicios de Escritorio remoto , propiedad AdvancedSettings
+- Propiedad AdvancedSettings Servicios de Escritorio remoto interfaz , IMsRdpClient6
+- Interfaz IMsRdpClient6 Servicios de Escritorio remoto , propiedad AdvancedSettings
+- Propiedad AdvancedSettings Servicios de Escritorio remoto interfaz , IMsRdpClient7
+- Interfaz IMsRdpClient7 Servicios de Escritorio remoto , propiedad AdvancedSettings
+- Propiedad AdvancedSettings Servicios de Escritorio remoto interfaz , IMsRdpClient8
+- Interfaz IMsRdpClient8 Servicios de Escritorio remoto , propiedad AdvancedSettings
+- Propiedad AdvancedSettings Servicios de Escritorio remoto interfaz , IMsRdpClient9
+- Interfaz IMsRdpClient9 Servicios de Escritorio remoto , propiedad AdvancedSettings
 topic_type:
 - apiref
 api_name:
@@ -54,16 +54,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 98bb6b1d581704a0638a47310004777f020ce9bc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 46fa39bd56c33d35b96cf98b1756e13e0de1796bff12ad3cc32f99a341068e29
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996384"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119657295"
 ---
-# <a name="imstscaxadvancedsettings-property"></a>IMsTscAx:: AdvancedSettings (propiedad)
+# <a name="imstscaxadvancedsettings-property"></a>Propiedad IMsTscAx::AdvancedSettings
 
-Recupera un puntero de la interfaz [**IMsTscAdvancedSettings**](imstscadvancedsettings-interface.md) .
+Recupera un puntero [**de interfaz IMsTscAdvancedSettings.**](imstscadvancedsettings-interface.md)
 
 Esta propiedad es de solo lectura.
 
@@ -80,21 +80,21 @@ HRESULT get_AdvancedSettings(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Puntero a la interfaz [**IMsTscAdvancedSettings**](imstscadvancedsettings-interface.md) .
+Puntero [**de interfaz IMsTscAdvancedSettings.**](imstscadvancedsettings-interface.md)
 
 ## <a name="error-codes"></a>Códigos de error
 
-Vuelva **a \_ Aceptar si es** correcto.
+Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |

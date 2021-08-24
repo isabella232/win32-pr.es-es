@@ -1,23 +1,23 @@
 ---
-title: Cómo diseñar un sombreador de dominios
-description: En este tema se muestra cómo diseñar un sombreador de dominios.
+title: Cómo diseñar un sombreador de dominio
+description: En estos temas se muestra cómo diseñar un sombreador de dominio.
 ms.assetid: 329d4eb9-8886-401d-8fb4-39e06886998f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a01d6b006c5ffe3afa355abe5e662cb96aa1391
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 46733bc9147f67cf33a127d8254f16c5813d8ebc2f0cb96c2071ae15589e34bd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104149422"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119566185"
 ---
-# <a name="how-to-design-a-domain-shader"></a>Cómo: diseñar un sombreador de dominios
+# <a name="how-to-design-a-domain-shader"></a>Cómo: Diseñar un sombreador de dominio
 
-Un sombreador de dominios es el tercero de tres fases que funcionan conjuntamente para implementar la [teselación](direct3d-11-advanced-stages-tessellation.md). El sombreador de dominios genera la geometría de la superficie a partir de los puntos de control transformados de un sombreador de casco y las coordenadas UV. En este tema se muestra cómo diseñar un sombreador de dominios.
+Un sombreador de dominio es la tercera de las tres fases que funcionan conjuntamente para implementar [la teselación](direct3d-11-advanced-stages-tessellation.md). El sombreador de dominio genera la geometría de la superficie a partir de los puntos de control transformados a partir de un sombreador de casco y las coordenadas UV. En estos temas se muestra cómo diseñar un sombreador de dominio.
 
-Un sombreador de dominio se invoca una vez para cada punto generado por la función Fixed del teselador. Las entradas son las \[ coordenadas UV \] del punto de la revisión, así como todos los datos de salida del sombreador de casco, incluidos los puntos de control y las constantes de revisión. El resultado es un vértice definido de la forma que se desee. Si el resultado se envía al sombreador de píxeles, la salida debe incluir una posición (indicada con una semántica de posición de la VP \_ ).
+Un sombreador de dominio se invoca una vez para cada punto generado por el teselador de función fija. Las entradas son las coordenadas UV W del punto de la revisión, así como todos los datos de salida del sombreador de casco, incluidos los puntos de control y las constantes \[ \] de revisión. La salida es un vértice definido de la manera deseada. Si la salida se envía al sombreador de píxeles, la salida debe incluir una posición (que se indica con una semántica de \_ posición SV).
 
-**Para diseñar un sombreador de dominios**
+**Para diseñar un sombreador de dominio**
 
 1.  Defina el atributo de dominio.
 
@@ -27,15 +27,15 @@ Un sombreador de dominio se invoca una vez para cada punto generado por la funci
 
     
 
-    El dominio se define para una revisión cuádruple.
+    El dominio se define para una revisión de cuatro.
 
-2.  Declare la ubicación en el casco con el valor del sistema de [Ubicación del dominio](/windows/desktop/direct3dhlsl/sv-domainlocation) .
+2.  Declare la ubicación en el casco con el valor [del sistema de ubicación](/windows/desktop/direct3dhlsl/sv-domainlocation) de dominio.
 
-    -   Para una revisión cuádruple, use un float2.
-    -   En el caso de una triple revisión, use float3 (para las coordenadas Barycentric).
-    -   Para una isolínea, use un float2.
+    -   Para una revisión de cuatro, use float2.
+    -   Para una revisión tri, use float3 (para coordenadas centradas en barras)
+    -   Para una isolínea, use float2.
 
-    Por lo tanto, la ubicación de dominio para una revisión cuádruple tiene el siguiente aspecto:
+    Por lo tanto, la ubicación del dominio para una revisión de cuatro es similar a la siguiente:
 
     ```
     float2 UV : SV_DomainLocation
@@ -45,9 +45,9 @@ Un sombreador de dominio se invoca una vez para cada punto generado por la funci
 
 3.  Defina las demás entradas.
 
-    Las demás entradas proceden del sombreador de casco y están definidas por el usuario. Esto incluye los puntos de control de entrada para la revisión, de los cuales puede estar entre 1 y 32 puntos, y datos constantes de la revisión de entrada.
+    Las demás entradas proceden del sombreador de casco y están definidas por el usuario. Esto incluye los puntos de control de entrada para la revisión, de los que puede haber entre 1 y 32 puntos, y los datos constantes de revisión de entrada.
 
-    Los puntos de control están definidos por el usuario, normalmente con una estructura como esta (definida en [Cómo: diseñar un sombreador de casco](direct3d-11-advanced-stages-hull-shader-design.md)):
+    Los puntos de control están definidos por el usuario, normalmente con una estructura como esta (definida en [Cómo: Diseñar un sombreador de casco):](direct3d-11-advanced-stages-hull-shader-design.md)
 
     ```
     const OutputPatch<BEZIER_CONTROL_POINT, 16> bezpatch
@@ -55,7 +55,7 @@ Un sombreador de dominio se invoca una vez para cada punto generado por la funci
 
     
 
-    Los datos constantes de revisión también están definidos por el usuario y podrían parecerse a este (definido en [Cómo: diseñar un sombreador de casco](direct3d-11-advanced-stages-hull-shader-design.md)):
+    Los datos de la constante de revisión también están definidos por el usuario y podrían ser parecidos a este (definido en Cómo: Diseñar [un sombreador de casco):](direct3d-11-advanced-stages-hull-shader-design.md)
 
     ```
     HS_CONSTANT_DATA_OUTPUT input
@@ -63,9 +63,9 @@ Un sombreador de dominio se invoca una vez para cada punto generado por la funci
 
     
 
-4.  Agregue código definido por el usuario para calcular las salidas; crea el cuerpo del sombreador de dominios.
+4.  Agregue código definido por el usuario para calcular las salidas; esto forma el cuerpo del sombreador de dominio.
 
-    Esta estructura contiene las salidas del sombreador de dominios definidas por el usuario.
+    Esta estructura contiene salidas del sombreador de dominio definidas por el usuario.
 
     ```
     struct DS_OUTPUT
@@ -81,7 +81,7 @@ Un sombreador de dominio se invoca una vez para cada punto generado por la funci
 
     
 
-    La función toma cada UV de entrada (desde el del teselador) y evalúa el parche de Bézier en esta posición.
+    La función toma cada UV de entrada (del teselador) y evalúa la revisión de Bézier en esta posición.
 
     ```
     [domain("quad")]
@@ -99,22 +99,22 @@ Un sombreador de dominio se invoca una vez para cada punto generado por la funci
 
     
 
-    La función se invoca una vez para cada punto generado por la función Fixed del teselador. Dado que en este ejemplo se usa un cuádruple parche, la ubicación del dominio de entrada ([VP \_ DomainLocation](/windows/desktop/direct3dhlsl/sv-domainlocation)) es un float2 (UV); un tri patch tendría una ubicación de entrada FLOAT3 (coordenadas UVW Barycentric) y una isolínea tendría una ubicación de dominio de entrada float2.
+    La función se invoca una vez para cada punto generado por el teselador de función fija. Dado que en este ejemplo se usa una revisión de cuatro elementos, la ubicación del dominio de entrada[(SV \_ DomainLocation)](/windows/desktop/direct3dhlsl/sv-domainlocation)es float2 (UV); una revisión tri tendría una ubicación de entrada float3 (coordenadas barimétricas UVW) y una isolínea tendría una ubicación de dominio de entrada float2.
 
-    Las demás entradas de la función proceden directamente del sombreador de casco. En este ejemplo, es 16 puntos de control cada uno de los cuales es un **\_ \_ punto de control Bézier**, así como datos constantes de revisión (**\_ \_ \_ salida de datos constante HS**). El resultado es un vértice que contiene los datos de **\_ salida de DS** deseado en este ejemplo.
+    Las demás entradas de la función proceden directamente del sombreador de casco. En este ejemplo, son 16 puntos de control cada uno de los que son un PUNTO **\_ DE CONTROL \_ BEZIER,** así como datos constantes de revisión (**HS \_ CONSTANT DATA \_ \_ OUTPUT**). La salida es un vértice que contiene los datos deseados: **DS \_ OUTPUT** en este ejemplo.
 
-Después de diseñar un sombreador de dominios, consulte [Cómo: crear un sombreador de dominios](direct3d-11-advanced-stages-domain-shader-create.md).
+Después de diseñar un sombreador de dominio, [vea Cómo: Crear un sombreador de dominio.](direct3d-11-advanced-stages-domain-shader-create.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Cómo usar Direct3D 11](how-to-use-direct3d-11.md)
+[Uso de Direct3D 11](how-to-use-direct3d-11.md)
 </dt> <dt>
 
-[Información general sobre teselación](direct3d-11-advanced-stages-tessellation.md)
+[Introducción a la teselación](direct3d-11-advanced-stages-tessellation.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

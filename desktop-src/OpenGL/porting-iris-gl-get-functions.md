@@ -1,24 +1,24 @@
 ---
-title: Portabilidad de funciones Get de GL de IRIS
-description: 'IRIS GL \ 0034; Get \ 0034; las funciones tienen el formato siguiente:'
+title: Porting IRIS GL Get Functions
+description: IRIS GL \ 0034;get \ 0034; las funciones toman la forma siguiente
 ms.assetid: 5bd6aa13-b41d-4f89-91dc-cc47481ac7b7
 keywords:
-- Migración de la contabilidad de IRIS, funciones Get
-- portabilidad de IRIS GL, funciones Get
-- trasladar a OpenGL desde IRIS GL, obtener funciones
-- Exportación de OpenGL desde IRIS GL, obtener funciones
+- Porte de IRIS GL, obtener funciones
+- porting from IRIS GL,get functions
+- porting to OpenGL from IRIS GL,get functions
+- Porte de OpenGL desde IRIS GL, obtener funciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 594b12bb1738846b98d33137dd8b623f0405ec40
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fdfe9159e0207198fa94959729bd0c95439bb91b5dd55a8a1f9adf3b048d7bb1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105665696"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119485565"
 ---
-# <a name="porting-iris-gl-get-functions"></a>Portabilidad de funciones Get de GL de IRIS
+# <a name="porting-iris-gl-get-functions"></a>Porting IRIS GL Get Functions
 
-Las funciones de "obtener" de la contabilidad de IRIS tienen el formato siguiente:
+Las funciones "get" de IRIS GL toman la forma siguiente:
 
 ``` syntax
 int getthing();
@@ -30,7 +30,7 @@ y
 int getthings( int *a, int *b);
 ```
 
-Probablemente, el código de la contabilidad de IRIS incluye llamadas a funciones Get que tienen un aspecto similar al siguiente:
+El código GL de IRIS probablemente incluya llamadas de función get que tienen un aspecto parecido al siguiente:
 
 ``` syntax
 thing = getthing(); 
@@ -38,24 +38,24 @@ if (getthing() == THING) { /* some stuff here */ }
 getthings (&a, &b);
 ```
 
-En OpenGL, se usa uno de los cuatro tipos siguientes de funciones de [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) en lugar de funciones equivalentes Get GL de iris:
+En OpenGL se usa uno de los cuatro tipos siguientes de [**funciones glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) en lugar de funciones get de IRIS GL equivalentes:
 
 -   **glGetBooleanv**
 -   **glGetIntegerv**
 -   **glGetFloatv**
 -   **glGetDoublev**
 
-Las funciones tienen la siguiente sintaxis:
+Las funciones tienen la sintaxis siguiente:
 
 ``` syntax
 glGet<Datatype>v( value, *data );
 ```
 
-donde *valor* es de tipo **GLenum** y los datos son de tipo **GLdatatype**. Cuando se llama a **glGet** y devuelve un tipo diferente del tipo esperado, el tipo se convierte adecuadamente. Para obtener una lista completa de los parámetros de **glGet** , consulte [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md).
+donde *value* es de tipo **GLenum** y data es de tipo **GLdatatype**. Cuando se llama **a glGet** y devuelve un tipo diferente del tipo esperado, el tipo se convierte correctamente. Para obtener una lista completa de **los parámetros glGet,** [**consulte glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md).
 
- 
+ 
 
- 
+ 
 
 
 

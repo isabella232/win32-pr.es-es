@@ -1,7 +1,7 @@
 ---
-description: El método GetConnected recupera el PIN conectado a este pin.
+description: El método GetConnected recupera el pin conectado a este pin.
 ms.assetid: 7b47aa8e-55a9-45f8-aa32-902fee037c72
-title: Método CBasePin. GetConnected (Amfilter. h)
+title: Método CBasePin.GetConnected (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e5c583b06a9c25126a611736002c455a2c93ed90
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8bac5bc971f67c7678d2160cadb452995165638db4bb44d2ed1c89b3ab08f882
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660699"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119526845"
 ---
-# <a name="cbasepingetconnected-method"></a>CBasePin. GetConnected, método
+# <a name="cbasepingetconnected-method"></a>Método CBasePin.GetConnected
 
-El `GetConnected` método recupera el PIN conectado a este pin.
+El `GetConnected` método recupera el pin conectado a este pin.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,17 +42,17 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un puntero a la interfaz [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) de otro PIN.
+Devuelve un puntero a la interfaz [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del otro pin.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el PIN no está conectado, este método devuelve **null**. Llame al método [**CBasePin:: IsConnected**](cbasepin-isconnected.md) para determinar si el PIN está conectado.
+Si el pin no está conectado, este método devuelve **NULL.** Llame al [**método CBasePin::IsConnected**](cbasepin-isconnected.md) para determinar si el pin está conectado.
 
-El método no llama a **AddRef** en la interfaz **IPin** , por lo que el llamador no debe liberar la interfaz.
+El método no llama a **AddRef en** la **interfaz IPin,** por lo que el autor de la llamada no debe liberar la interfaz.
 
 ## <a name="examples"></a>Ejemplos
 
-Dado que el recuento de referencias no se incrementa en el puntero devuelto, puede encadenar las llamadas de método juntas:
+Dado que el recuento de referencias no se incrementa en el puntero devuelto, puede encadenar llamadas a métodos:
 
 
 ```C++
@@ -64,7 +64,7 @@ if (m_MyPin->IsConnected())
 
 
 
-Este modelo de codificación es muy práctico. pero como se muestra en el ejemplo, debe tener cuidado de no desreferenciar un puntero **nulo** cuando el PIN esté desconectado.
+Este patrón de codificación es muy práctico; pero, como se muestra en el ejemplo, debe tener cuidado de no desreferenciar un puntero **NULL** cuando la marca no está conectada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,8 +72,8 @@ Este modelo de codificación es muy práctico. pero como se muestra en el ejempl
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -81,7 +81,7 @@ Este modelo de codificación es muy práctico. pero como se muestra en el ejempl
 
 <dl> <dt>
 
-[**Clase CBasePin**](cbasepin.md)
+[**CBasePin (clase)**](cbasepin.md)
 </dt> </dl>
 
  

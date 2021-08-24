@@ -1,11 +1,11 @@
 ---
-title: Clase principal
-description: La clase de nivel superior de la que se derivan todas las clases.
+title: Top (clase)
+description: Clase de nivel superior de la que se derivan todas las clases.
 ms.assetid: 025aff6c-1804-4141-accf-d50cfd50e90e
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de clase principal
-- Esquema de AD de clase principal
+- Esquema de AD de primera clase
+- Esquema de AD de clase superior
 topic_type:
 - apiref
 api_name:
@@ -14,26 +14,26 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 01cd6a72dfba6a80687081d503864c88fd1c5122
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 248726d9fac9c0d39fae5759df08d4ea10f4f012ba1a1ce0cc2f4dbe55d76a6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119580595"
 ---
-# <a name="top-class"></a>Clase principal
+# <a name="top-class"></a>Top (clase)
 
-La clase de nivel superior de la que se derivan todas las clases.
+Clase de nivel superior de la que se derivan todas las clases.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | Superior                                  |
-| Nombre para mostrar de LDAP | top                                  |
-| Actualizar privilegio  | Administrador de esquema                 |
+| Ldap-Display-Name | top                                  |
+| Actualizar privilegios  | Administrador de esquemas                 |
 | Frecuencia de actualización  | \-                                   |
-| Identificador de esquema-GUID    | bf967ab7-0de6-11d0-a285-00aa003049e2 |
+| Schema-Id-Guid    | bf967ab7-0de6-11d0-a285-00aa003049e2 |
 
 
 
@@ -41,7 +41,7 @@ La clase de nivel superior de la que se derivan todas las clases.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam-attributes)
+-   [**Adán**](#adam-attributes)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -55,102 +55,102 @@ La clase de nivel superior de la que se derivan todas las clases.
 
 | Entrada | Value |
 |-----------------------------|----------------------------------------------------------------------------------------------|
-| System-Only                 | True                                                                                         |
+| System-Only                 | Verdadero                                                                                         |
 | Object-Category             | 2                                                                                            |
 | Default-Object-Category     | \-                                                                                           |
 | Governs-Id                  | 2.5.6.0                                                                                      |
-| Valor de ocultación predeterminada        | 1                                                                                            |
-| RDN-ATT-ID                  | [**Nombre común**](a-cn.md)<br/>                                                       |
+| Valor predeterminado de ocultación        | 1                                                                                            |
+| Rdn-Att-Id                  | [**Common-Name**](a-cn.md)<br/>                                                       |
 | Subclase de                 | **Top** (Principales)<br/>                                                                           |
-| Posibles superiores          | [**Perdidos y encontrados**](c-lostandfound.md)                                                     |
+| Posibles superiores          | [**Perdido y encontrado**](c-lostandfound.md)                                                     |
 | Clases auxiliares           | \-                                                                                           |
-| Descriptor de NT-Security-      | O:BAG: BAD: S:                                                                                 |
-| Descriptor de seguridad predeterminado | D: (A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A) (A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY) (A;; RPLCLORC;;; ESTÉ |
+| NT-Security-Descriptor      | O:BAG:BAD:S:                                                                                 |
+| Descriptor de seguridad predeterminado | D:(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A)(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY)(A;; RPLCLORC;;; AU) |
 | System-Flags                | 0x00000010                                                                                   |
 
 
 
-## <a name="windows-2000-server-attributes"></a>Atributos de servidor de Windows 2000
+## <a name="windows-2000-server-attributes"></a>Windows de servidor 2000
 
-Esta clase contiene los siguientes atributos para el servidor de Windows 2000:
+Esta clase contiene los siguientes atributos para Windows 2000 Server:
 
 
 
 | Atributo                                                                 | Mandatory | Derivado de |
 |---------------------------------------------------------------------------|-----------|--------------|
-| [**Admin: Descripción**](a-admindescription.md)                           | False     | **Top** (Principales)      |
-| [**Admin-Display-Name**](a-admindisplayname.md)                          | False     | **Top** (Principales)      |
-| [**Permitido: atributos**](a-allowedattributes.md)                         | False     | **Top** (Principales)      |
-| [**Permitido: atributos: efectivos**](a-allowedattributeseffective.md)      | False     | **Top** (Principales)      |
-| [**Permitido: clases secundarias**](a-allowedchildclasses.md)                    | False     | **Top** (Principales)      |
-| [**Permitido-clases secundarias-eficaces**](a-allowedchildclasseseffective.md) | False     | **Top** (Principales)      |
-| [**Cabeza de puente-servidor-lista-BL**](a-bridgeheadserverlistbl.md)             | False     | **Top** (Principales)      |
-| [**Nombre canónico**](a-canonicalname.md)                                 | False     | **Top** (Principales)      |
-| [**Nombre común**](a-cn.md)                                               | False     | **Top** (Principales)      |
-| [**Creación: marca de tiempo**](a-createtimestamp.md)                            | False     | **Top** (Principales)      |
-| [**Descripción**](a-description.md)                                      | False     | **Top** (Principales)      |
-| [**Nombre para mostrar**](a-displayname.md)                                     | False     | **Top** (Principales)      |
-| [**Display-Name-printable**](a-displaynameprintable.md)                  | False     | **Top** (Principales)      |
-| [**DSA-firma**](a-dsasignature.md)                                   | False     | **Top** (Principales)      |
-| [**DS-Core-propagación-datos**](a-dscorepropagationdata.md)               | False     | **Top** (Principales)      |
-| [**Nombre de extensión**](a-extensionname.md)                                 | False     | **Top** (Principales)      |
-| [**Marcas**](a-flags.md)                                                  | False     | **Top** (Principales)      |
-| [**De entrada**](a-fromentry.md)                                         | False     | **Top** (Principales)      |
-| [**FRS-Computer-Reference-BL**](a-frscomputerreferencebl.md)             | False     | **Top** (Principales)      |
-| [**FRS-Member-Reference-BL**](a-frsmemberreferencebl.md)                 | False     | **Top** (Principales)      |
-| [**FSMO: rol-Propietario**](a-fsmoroleowner.md)                                | False     | **Top** (Principales)      |
-| [**Tipo de instancia**](a-instancetype.md)                                   | True      | **Top** (Principales)      |
-| [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)             | False     | **Top** (Principales)      |
-| [**Se elimina**](a-isdeleted.md)                                         | False     | **Top** (Principales)      |
-| [**Is-member-of-DL**](a-memberof.md)                                     | False     | **Top** (Principales)      |
-| [**Es-titular de privilegios**](a-isprivilegeholder.md)                        | False     | **Top** (Principales)      |
-| [**Último conocido-primario**](a-lastknownparent.md)                            | False     | **Top** (Principales)      |
-| [**Objetos administrados**](a-managedobjects.md)                               | False     | **Top** (Principales)      |
-| [**Maestro por**](a-masteredby.md)                                       | False     | **Top** (Principales)      |
-| [**Modificar: marca de tiempo**](a-modifytimestamp.md)                            | False     | **Top** (Principales)      |
-| [**MS-DS-Consistency-Child-Count**](a-ms-ds-consistencychildcount.md)    | False     | **Top** (Principales)      |
-| [**MS-DS-Consistency-Guid**](a-ms-ds-consistencyguid.md)                 | False     | **Top** (Principales)      |
-| [**netboot-SCP-BL**](a-netbootscpbl.md)                                  | False     | **Top** (Principales)      |
-| [**Miembro no de seguridad-BL**](a-nonsecuritymemberbl.md)                   | False     | **Top** (Principales)      |
-| [**Descriptor de NT-Security-**](a-ntsecuritydescriptor.md)                  | True      | **Top** (Principales)      |
-| [**Obj-Dist-nombre**](a-distinguishedname.md)                              | False     | **Top** (Principales)      |
-| [**Objeto-categoría**](a-objectcategory.md)                               | True      | **Top** (Principales)      |
-| [**Clase de objeto**](a-objectclass.md)                                     | True      | **Top** (Principales)      |
-| [**Object-GUID**](a-objectguid.md)                                       | False     | **Top** (Principales)      |
-| [**Versión del objeto**](a-objectversion.md)                                 | False     | **Top** (Principales)      |
-| [**Otros objetos conocidos**](a-otherwellknownobjects.md)               | False     | **Top** (Principales)      |
-| [**Lista de atributos parciales eliminados**](a-partialattributedeletionlist.md) | False     | **Top** (Principales)      |
-| [**Conjunto de atributos parciales**](a-partialattributeset.md)                    | False     | **Top** (Principales)      |
-| [**Posibles: inferiores**](a-possibleinferiors.md)                         | False     | **Top** (Principales)      |
-| [**Nombre-objeto-proxy**](a-proxiedobjectname.md)                        | False     | **Top** (Principales)      |
-| [**Direcciones proxy**](a-proxyaddresses.md)                               | False     | **Top** (Principales)      |
-| [**Query: Directiva-BL**](a-querypolicybl.md)                                | False     | **Top** (Principales)      |
-| [**RDN**](a-name.md)                                                     | False     | **Top** (Principales)      |
-| [**REPL-Property-meta-data**](a-replpropertymetadata.md)                 | False     | **Top** (Principales)      |
-| [**REPL-UpToDate-Vector**](a-repluptodatevector.md)                      | False     | **Top** (Principales)      |
-| [**Informes**](a-directreports.md)                                        | False     | **Top** (Principales)      |
-| [**Representantes: desde**](a-repsfrom.md)                                           | False     | **Top** (Principales)      |
-| [**Representantes-a**](a-repsto.md)                                               | False     | **Top** (Principales)      |
-| [**Revisión**](a-revision.md)                                            | False     | **Top** (Principales)      |
-| [**SD-derechos-efectivos**](a-sdrightseffective.md)                        | False     | **Top** (Principales)      |
-| [**Servidor-referencia-BL**](a-serverreferencebl.md)                        | False     | **Top** (Principales)      |
-| [**Mostrar en la vista avanzada**](a-showinadvancedviewonly.md)            | False     | **Top** (Principales)      |
-| [**Sitio-objeto-BL**](a-siteobjectbl.md)                                  | False     | **Top** (Principales)      |
-| [**Referencias secundarias**](a-subrefs.md)                                             | False     | **Top** (Principales)      |
-| [**SubSchemaSubEntry**](a-subschemasubentry.md)                          | False     | **Top** (Principales)      |
-| [**Marcas de sistema**](a-systemflags.md)                                     | False     | **Top** (Principales)      |
-| [**USN: cambiado**](a-usnchanged.md)                                       | False     | **Top** (Principales)      |
-| [**USN: creado**](a-usncreated.md)                                       | False     | **Top** (Principales)      |
-| [**USN-DSA-Last-obj-quitado**](a-usndsalastobjremoved.md)                | False     | **Top** (Principales)      |
-| [**USN: entre sitios**](a-usnintersite.md)                                   | False     | **Top** (Principales)      |
-| [**USN-Last-obj-REM**](a-usnlastobjrem.md)                               | False     | **Top** (Principales)      |
-| [**USN: origen**](a-usnsource.md)                                         | False     | **Top** (Principales)      |
-| [**WBEM: ruta de acceso**](a-wbempath.md)                                           | False     | **Top** (Principales)      |
-| [**Well-Known-Objects**](a-wellknownobjects.md)                          | False     | **Top** (Principales)      |
-| [**Cuando se cambia**](a-whenchanged.md)                                     | False     | **Top** (Principales)      |
-| [**Cuándo se crea**](a-whencreated.md)                                     | False     | **Top** (Principales)      |
-| [**WWW-Página principal**](a-wwwhomepage.md)                                    | False     | **Top** (Principales)      |
-| [**WWW-página-otro**](a-url.md)                                           | False     | **Top** (Principales)      |
+| [**Admin-Description**](a-admindescription.md)                           | Falso     | **Top** (Principales)      |
+| [**Admin-Display-Name**](a-admindisplayname.md)                          | Falso     | **Top** (Principales)      |
+| [**Atributos permitidos**](a-allowedattributes.md)                         | Falso     | **Top** (Principales)      |
+| [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)      | Falso     | **Top** (Principales)      |
+| [**Allowed-Child-Classes**](a-allowedchildclasses.md)                    | Falso     | **Top** (Principales)      |
+| [**Allowed-Child-Classes-Effective**](a-allowedchildclasseseffective.md) | Falso     | **Top** (Principales)      |
+| [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)             | Falso     | **Top** (Principales)      |
+| [**Canonical-Name**](a-canonicalname.md)                                 | Falso     | **Top** (Principales)      |
+| [**Common-Name**](a-cn.md)                                               | Falso     | **Top** (Principales)      |
+| [**Create-Time-Stamp**](a-createtimestamp.md)                            | Falso     | **Top** (Principales)      |
+| [**Descripción**](a-description.md)                                      | Falso     | **Top** (Principales)      |
+| [**Nombre para mostrar**](a-displayname.md)                                     | Falso     | **Top** (Principales)      |
+| [**Display-Name-Printable**](a-displaynameprintable.md)                  | Falso     | **Top** (Principales)      |
+| [**Firma DSA**](a-dsasignature.md)                                   | Falso     | **Top** (Principales)      |
+| [**DS-Core-Propagation-Data**](a-dscorepropagationdata.md)               | Falso     | **Top** (Principales)      |
+| [**Nombre de extensión**](a-extensionname.md)                                 | Falso     | **Top** (Principales)      |
+| [**Banderas**](a-flags.md)                                                  | Falso     | **Top** (Principales)      |
+| [**Desde entrada**](a-fromentry.md)                                         | Falso     | **Top** (Principales)      |
+| [**Frs-Computer-Reference-BL**](a-frscomputerreferencebl.md)             | Falso     | **Top** (Principales)      |
+| [**FRS-Member-Reference-BL**](a-frsmemberreferencebl.md)                 | Falso     | **Top** (Principales)      |
+| [**FSMO-Role-Owner**](a-fsmoroleowner.md)                                | Falso     | **Top** (Principales)      |
+| [**Tipo de instancia**](a-instancetype.md)                                   | Verdadero      | **Top** (Principales)      |
+| [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)             | Falso     | **Top** (Principales)      |
+| [**Se elimina**](a-isdeleted.md)                                         | Falso     | **Top** (Principales)      |
+| [**Is-Member-Of-DL**](a-memberof.md)                                     | Falso     | **Top** (Principales)      |
+| [**Is-Privilege-Holder**](a-isprivilegeholder.md)                        | Falso     | **Top** (Principales)      |
+| [**Último elemento primario conocido**](a-lastknownparent.md)                            | Falso     | **Top** (Principales)      |
+| [**Objetos administrados**](a-managedobjects.md)                               | Falso     | **Top** (Principales)      |
+| [**Mastered-By**](a-masteredby.md)                                       | Falso     | **Top** (Principales)      |
+| [**Modificación de marca de tiempo**](a-modifytimestamp.md)                            | Falso     | **Top** (Principales)      |
+| [**MS-DS-Consistency-Child-Count**](a-ms-ds-consistencychildcount.md)    | Falso     | **Top** (Principales)      |
+| [**MS-DS-Consistency-Guid**](a-ms-ds-consistencyguid.md)                 | Falso     | **Top** (Principales)      |
+| [**netboot-SCP-BL**](a-netbootscpbl.md)                                  | Falso     | **Top** (Principales)      |
+| [**Miembro no de seguridad-BL**](a-nonsecuritymemberbl.md)                   | Falso     | **Top** (Principales)      |
+| [**NT-Security-Descriptor**](a-ntsecuritydescriptor.md)                  | Verdadero      | **Top** (Principales)      |
+| [**Obj-Dist-Name**](a-distinguishedname.md)                              | Falso     | **Top** (Principales)      |
+| [**Object-Category**](a-objectcategory.md)                               | Verdadero      | **Top** (Principales)      |
+| [**Object-Class**](a-objectclass.md)                                     | Verdadero      | **Top** (Principales)      |
+| [**Guid de objeto**](a-objectguid.md)                                       | Falso     | **Top** (Principales)      |
+| [**Object-Version**](a-objectversion.md)                                 | Falso     | **Top** (Principales)      |
+| [**Otros objetos well-known-objects**](a-otherwellknownobjects.md)               | Falso     | **Top** (Principales)      |
+| [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md) | Falso     | **Top** (Principales)      |
+| [**Partial-Attribute-Set**](a-partialattributeset.md)                    | Falso     | **Top** (Principales)      |
+| [**Posibles inferiores**](a-possibleinferiors.md)                         | Falso     | **Top** (Principales)      |
+| [**Proxied-Object-Name**](a-proxiedobjectname.md)                        | Falso     | **Top** (Principales)      |
+| [**Direcciones de proxy**](a-proxyaddresses.md)                               | Falso     | **Top** (Principales)      |
+| [**Query-Policy-BL**](a-querypolicybl.md)                                | Falso     | **Top** (Principales)      |
+| [**Rdn**](a-name.md)                                                     | Falso     | **Top** (Principales)      |
+| [**Repl-Property-Meta-Data**](a-replpropertymetadata.md)                 | Falso     | **Top** (Principales)      |
+| [**Repl-UpToDate-Vector**](a-repluptodatevector.md)                      | Falso     | **Top** (Principales)      |
+| [**Informes**](a-directreports.md)                                        | Falso     | **Top** (Principales)      |
+| [**Reps-From**](a-repsfrom.md)                                           | Falso     | **Top** (Principales)      |
+| [**Reps-To**](a-repsto.md)                                               | Falso     | **Top** (Principales)      |
+| [**Revisión**](a-revision.md)                                            | Falso     | **Top** (Principales)      |
+| [**SD-Rights-Effective**](a-sdrightseffective.md)                        | Falso     | **Top** (Principales)      |
+| [**Server-Reference-BL**](a-serverreferencebl.md)                        | Falso     | **Top** (Principales)      |
+| [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)            | Falso     | **Top** (Principales)      |
+| [**Site-Object-BL**](a-siteobjectbl.md)                                  | Falso     | **Top** (Principales)      |
+| [**Sub refs**](a-subrefs.md)                                             | Falso     | **Top** (Principales)      |
+| [**SubSchemaSubEntry**](a-subschemasubentry.md)                          | Falso     | **Top** (Principales)      |
+| [**Marcas del sistema**](a-systemflags.md)                                     | Falso     | **Top** (Principales)      |
+| [**USN cambiado**](a-usnchanged.md)                                       | Falso     | **Top** (Principales)      |
+| [**Creado por USN**](a-usncreated.md)                                       | Falso     | **Top** (Principales)      |
+| [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                | Falso     | **Top** (Principales)      |
+| [**USN-Intersite**](a-usnintersite.md)                                   | Falso     | **Top** (Principales)      |
+| [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                               | Falso     | **Top** (Principales)      |
+| [**USN-Source**](a-usnsource.md)                                         | Falso     | **Top** (Principales)      |
+| [**Wbem-Path**](a-wbempath.md)                                           | Falso     | **Top** (Principales)      |
+| [**Objetos conocidos**](a-wellknownobjects.md)                          | Falso     | **Top** (Principales)      |
+| [**Cuándo se ha cambiado**](a-whenchanged.md)                                     | Falso     | **Top** (Principales)      |
+| [**Cuando se crea**](a-whencreated.md)                                     | Falso     | **Top** (Principales)      |
+| [**WWW-Página principal**](a-wwwhomepage.md)                                    | Falso     | **Top** (Principales)      |
+| [**WWW-Page-Other**](a-url.md)                                           | Falso     | **Top** (Principales)      |
 
 
 
@@ -162,228 +162,228 @@ Esta clase contiene los siguientes atributos para el servidor de Windows 2000:
 
 | Entrada | Value |
 |-----------------------------|----------------------------------------------------------------------------------------------|
-| System-Only                 | True                                                                                         |
+| System-Only                 | Verdadero                                                                                         |
 | Object-Category             | 2                                                                                            |
 | Default-Object-Category     | \-                                                                                           |
 | Governs-Id                  | 2.5.6.0                                                                                      |
-| Valor de ocultación predeterminada        | 1                                                                                            |
-| RDN-ATT-ID                  | [**Nombre común**](a-cn.md)<br/>                                                       |
+| Valor predeterminado de ocultación        | 1                                                                                            |
+| Rdn-Att-Id                  | [**Common-Name**](a-cn.md)<br/>                                                       |
 | Subclase de                 | **Top** (Principales)<br/>                                                                           |
-| Posibles superiores          | [**Perdidos y encontrados**](c-lostandfound.md)                                                     |
+| Posibles superiores          | [**Perdido y encontrado**](c-lostandfound.md)                                                     |
 | Clases auxiliares           | \-                                                                                           |
-| Descriptor de NT-Security-      | O:BAG: BAD: S:                                                                                 |
-| Descriptor de seguridad predeterminado | D: (A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A) (A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY) (A;; RPLCLORC;;; ESTÉ |
+| NT-Security-Descriptor      | O:BAG:BAD:S:                                                                                 |
+| Descriptor de seguridad predeterminado | D:(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A)(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY)(A;; RPLCLORC;;; AU) |
 | System-Flags                | 0x00000010                                                                                   |
 
 
 
-## <a name="windows-server-2003-attributes"></a>Atributos de Windows Server 2003
+## <a name="windows-server-2003-attributes"></a>Windows Atributos de Server 2003
 
-Esta clase contiene los siguientes atributos para Windows Server 2003:
+Esta clase contiene los atributos siguientes para Windows Server 2003:
 
 
 
 | Atributo                                                                   | Mandatory | Derivado de |
 |-----------------------------------------------------------------------------|-----------|--------------|
-| [**Admin: Descripción**](a-admindescription.md)                             | False     | **Top** (Principales)      |
-| [**Admin-Display-Name**](a-admindisplayname.md)                            | False     | **Top** (Principales)      |
-| [**Permitido: atributos**](a-allowedattributes.md)                           | False     | **Top** (Principales)      |
-| [**Permitido: atributos: efectivos**](a-allowedattributeseffective.md)        | False     | **Top** (Principales)      |
-| [**Permitido: clases secundarias**](a-allowedchildclasses.md)                      | False     | **Top** (Principales)      |
-| [**Permitido-clases secundarias-eficaces**](a-allowedchildclasseseffective.md)   | False     | **Top** (Principales)      |
-| [**Cabeza de puente-servidor-lista-BL**](a-bridgeheadserverlistbl.md)               | False     | **Top** (Principales)      |
-| [**Nombre canónico**](a-canonicalname.md)                                   | False     | **Top** (Principales)      |
-| [**Nombre común**](a-cn.md)                                                 | False     | **Top** (Principales)      |
-| [**Creación: marca de tiempo**](a-createtimestamp.md)                              | False     | **Top** (Principales)      |
-| [**Descripción**](a-description.md)                                        | False     | **Top** (Principales)      |
-| [**Nombre para mostrar**](a-displayname.md)                                       | False     | **Top** (Principales)      |
-| [**Display-Name-printable**](a-displaynameprintable.md)                    | False     | **Top** (Principales)      |
-| [**DSA-firma**](a-dsasignature.md)                                     | False     | **Top** (Principales)      |
-| [**DS-Core-propagación-datos**](a-dscorepropagationdata.md)                 | False     | **Top** (Principales)      |
-| [**Nombre de extensión**](a-extensionname.md)                                   | False     | **Top** (Principales)      |
-| [**Marcas**](a-flags.md)                                                    | False     | **Top** (Principales)      |
-| [**De entrada**](a-fromentry.md)                                           | False     | **Top** (Principales)      |
-| [**FRS-Computer-Reference-BL**](a-frscomputerreferencebl.md)               | False     | **Top** (Principales)      |
-| [**FRS-Member-Reference-BL**](a-frsmemberreferencebl.md)                   | False     | **Top** (Principales)      |
-| [**FSMO: rol-Propietario**](a-fsmoroleowner.md)                                  | False     | **Top** (Principales)      |
-| [**Tipo de instancia**](a-instancetype.md)                                     | True      | **Top** (Principales)      |
-| [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)               | False     | **Top** (Principales)      |
-| [**Se elimina**](a-isdeleted.md)                                           | False     | **Top** (Principales)      |
-| [**Is-member-of-DL**](a-memberof.md)                                       | False     | **Top** (Principales)      |
-| [**Es-titular de privilegios**](a-isprivilegeholder.md)                          | False     | **Top** (Principales)      |
-| [**Último conocido-primario**](a-lastknownparent.md)                              | False     | **Top** (Principales)      |
-| [**Objetos administrados**](a-managedobjects.md)                                 | False     | **Top** (Principales)      |
-| [**Maestro por**](a-masteredby.md)                                         | False     | **Top** (Principales)      |
-| [**Modificar: marca de tiempo**](a-modifytimestamp.md)                              | False     | **Top** (Principales)      |
-| [**MS-COM-PartitionSetLink**](a-mscom-partitionsetlink.md)                 | False     | **Top** (Principales)      |
-| [**MS-COM-UserLink**](a-mscom-userlink.md)                                 | False     | **Top** (Principales)      |
-| [**MS-DS-aprox-immed-subordinados**](a-msds-approx-immed-subordinates.md) | False     | **Top** (Principales)      |
-| [**MS-DS-Consistency-Child-Count**](a-ms-ds-consistencychildcount.md)      | False     | **Top** (Principales)      |
-| [**MS-DS-Consistency-Guid**](a-ms-ds-consistencyguid.md)                   | False     | **Top** (Principales)      |
-| [**MS-DS-MASTERD-by**](a-msds-masteredby.md)                              | False     | **Top** (Principales)      |
-| [**MS-DS-Members-for-AZ-role-BL**](a-msds-membersforazrolebl.md)           | False     | **Top** (Principales)      |
-| [**MS-DS-NC-REPL-cursores**](a-msds-ncreplcursors.md)                       | False     | **Top** (Principales)      |
-| [**MS-DS-NC-REPL-entrada-vecinos**](a-msds-ncreplinboundneighbors.md)    | False     | **Top** (Principales)      |
-| [**MS-DS-NC-REPL-Outbound-Neighbors**](a-msds-ncreploutboundneighbors.md)  | False     | **Top** (Principales)      |
-| [**MS-DS-non-Members-BL**](a-msds-nonmembersbl.md)                         | False     | **Top** (Principales)      |
-| [**MS-DS-Object-Reference-BL**](a-msds-objectreferencebl.md)               | False     | **Top** (Principales)      |
-| [**MS-DS-Operations-for-AZ-role-BL**](a-msds-operationsforazrolebl.md)     | False     | **Top** (Principales)      |
-| [**MS-DS-Operations-for-AZ-Task-BL**](a-msds-operationsforaztaskbl.md)     | False     | **Top** (Principales)      |
-| [**MS-DS-REPL-Attribute-meta-data**](a-msds-replattributemetadata.md)      | False     | **Top** (Principales)      |
-| [**MS-DS-REPL-Value-meta-data**](a-msds-replvaluemetadata.md)              | False     | **Top** (Principales)      |
-| [**MS-DS-Tasks-for-AZ-role-BL**](a-msds-tasksforazrolebl.md)               | False     | **Top** (Principales)      |
-| [**MS-DS-Tasks-for-AZ-Task-BL**](a-msds-tasksforaztaskbl.md)               | False     | **Top** (Principales)      |
-| [**MS-Exch-Owner-BL**](a-ownerbl.md)                                       | False     | **Top** (Principales)      |
-| [**netboot-SCP-BL**](a-netbootscpbl.md)                                    | False     | **Top** (Principales)      |
-| [**Miembro no de seguridad-BL**](a-nonsecuritymemberbl.md)                     | False     | **Top** (Principales)      |
-| [**Descriptor de NT-Security-**](a-ntsecuritydescriptor.md)                    | True      | **Top** (Principales)      |
-| [**Obj-Dist-nombre**](a-distinguishedname.md)                                | False     | **Top** (Principales)      |
-| [**Objeto-categoría**](a-objectcategory.md)                                 | True      | **Top** (Principales)      |
-| [**Clase de objeto**](a-objectclass.md)                                       | True      | **Top** (Principales)      |
-| [**Object-GUID**](a-objectguid.md)                                         | False     | **Top** (Principales)      |
-| [**Versión del objeto**](a-objectversion.md)                                   | False     | **Top** (Principales)      |
-| [**Otros objetos conocidos**](a-otherwellknownobjects.md)                 | False     | **Top** (Principales)      |
-| [**Lista de atributos parciales eliminados**](a-partialattributedeletionlist.md)   | False     | **Top** (Principales)      |
-| [**Conjunto de atributos parciales**](a-partialattributeset.md)                      | False     | **Top** (Principales)      |
-| [**Posibles: inferiores**](a-possibleinferiors.md)                           | False     | **Top** (Principales)      |
-| [**Nombre-objeto-proxy**](a-proxiedobjectname.md)                          | False     | **Top** (Principales)      |
-| [**Direcciones proxy**](a-proxyaddresses.md)                                 | False     | **Top** (Principales)      |
-| [**Query: Directiva-BL**](a-querypolicybl.md)                                  | False     | **Top** (Principales)      |
-| [**RDN**](a-name.md)                                                       | False     | **Top** (Principales)      |
-| [**REPL-Property-meta-data**](a-replpropertymetadata.md)                   | False     | **Top** (Principales)      |
-| [**REPL-UpToDate-Vector**](a-repluptodatevector.md)                        | False     | **Top** (Principales)      |
-| [**Informes**](a-directreports.md)                                          | False     | **Top** (Principales)      |
-| [**Representantes: desde**](a-repsfrom.md)                                             | False     | **Top** (Principales)      |
-| [**Representantes-a**](a-repsto.md)                                                 | False     | **Top** (Principales)      |
-| [**Revisión**](a-revision.md)                                              | False     | **Top** (Principales)      |
-| [**SD-derechos-efectivos**](a-sdrightseffective.md)                          | False     | **Top** (Principales)      |
-| [**Servidor-referencia-BL**](a-serverreferencebl.md)                          | False     | **Top** (Principales)      |
-| [**Mostrar en la vista avanzada**](a-showinadvancedviewonly.md)              | False     | **Top** (Principales)      |
-| [**Sitio-objeto-BL**](a-siteobjectbl.md)                                    | False     | **Top** (Principales)      |
-| [**Clase de objeto estructural**](a-structuralobjectclass.md)                  | False     | **Top** (Principales)      |
-| [**Referencias secundarias**](a-subrefs.md)                                               | False     | **Top** (Principales)      |
-| [**SubSchemaSubEntry**](a-subschemasubentry.md)                            | False     | **Top** (Principales)      |
-| [**Marcas de sistema**](a-systemflags.md)                                       | False     | **Top** (Principales)      |
-| [**USN: cambiado**](a-usnchanged.md)                                         | False     | **Top** (Principales)      |
-| [**USN: creado**](a-usncreated.md)                                         | False     | **Top** (Principales)      |
-| [**USN-DSA-Last-obj-quitado**](a-usndsalastobjremoved.md)                  | False     | **Top** (Principales)      |
-| [**USN: entre sitios**](a-usnintersite.md)                                     | False     | **Top** (Principales)      |
-| [**USN-Last-obj-REM**](a-usnlastobjrem.md)                                 | False     | **Top** (Principales)      |
-| [**USN: origen**](a-usnsource.md)                                           | False     | **Top** (Principales)      |
-| [**WBEM: ruta de acceso**](a-wbempath.md)                                             | False     | **Top** (Principales)      |
-| [**Well-Known-Objects**](a-wellknownobjects.md)                            | False     | **Top** (Principales)      |
-| [**Cuando se cambia**](a-whenchanged.md)                                       | False     | **Top** (Principales)      |
-| [**Cuándo se crea**](a-whencreated.md)                                       | False     | **Top** (Principales)      |
-| [**WWW-Página principal**](a-wwwhomepage.md)                                      | False     | **Top** (Principales)      |
-| [**WWW-página-otro**](a-url.md)                                             | False     | **Top** (Principales)      |
+| [**Admin-Description**](a-admindescription.md)                             | Falso     | **Top** (Principales)      |
+| [**Admin-Display-Name**](a-admindisplayname.md)                            | Falso     | **Top** (Principales)      |
+| [**Atributos permitidos**](a-allowedattributes.md)                           | Falso     | **Top** (Principales)      |
+| [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)        | Falso     | **Top** (Principales)      |
+| [**Allowed-Child-Classes**](a-allowedchildclasses.md)                      | Falso     | **Top** (Principales)      |
+| [**Allowed-Child-Classes-Effective**](a-allowedchildclasseseffective.md)   | Falso     | **Top** (Principales)      |
+| [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)               | Falso     | **Top** (Principales)      |
+| [**Canonical-Name**](a-canonicalname.md)                                   | Falso     | **Top** (Principales)      |
+| [**Common-Name**](a-cn.md)                                                 | Falso     | **Top** (Principales)      |
+| [**Create-Time-Stamp**](a-createtimestamp.md)                              | Falso     | **Top** (Principales)      |
+| [**Descripción**](a-description.md)                                        | Falso     | **Top** (Principales)      |
+| [**Nombre para mostrar**](a-displayname.md)                                       | Falso     | **Top** (Principales)      |
+| [**Display-Name-Printable**](a-displaynameprintable.md)                    | Falso     | **Top** (Principales)      |
+| [**Firma DSA**](a-dsasignature.md)                                     | Falso     | **Top** (Principales)      |
+| [**DS-Core-Propagation-Data**](a-dscorepropagationdata.md)                 | Falso     | **Top** (Principales)      |
+| [**Nombre de extensión**](a-extensionname.md)                                   | Falso     | **Top** (Principales)      |
+| [**Banderas**](a-flags.md)                                                    | Falso     | **Top** (Principales)      |
+| [**Desde entrada**](a-fromentry.md)                                           | Falso     | **Top** (Principales)      |
+| [**Frs-Computer-Reference-BL**](a-frscomputerreferencebl.md)               | Falso     | **Top** (Principales)      |
+| [**FRS-Member-Reference-BL**](a-frsmemberreferencebl.md)                   | Falso     | **Top** (Principales)      |
+| [**FSMO-Role-Owner**](a-fsmoroleowner.md)                                  | Falso     | **Top** (Principales)      |
+| [**Tipo de instancia**](a-instancetype.md)                                     | Verdadero      | **Top** (Principales)      |
+| [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)               | Falso     | **Top** (Principales)      |
+| [**Se elimina**](a-isdeleted.md)                                           | Falso     | **Top** (Principales)      |
+| [**Is-Member-Of-DL**](a-memberof.md)                                       | Falso     | **Top** (Principales)      |
+| [**Is-Privilege-Holder**](a-isprivilegeholder.md)                          | Falso     | **Top** (Principales)      |
+| [**Último elemento primario conocido**](a-lastknownparent.md)                              | Falso     | **Top** (Principales)      |
+| [**Objetos administrados**](a-managedobjects.md)                                 | Falso     | **Top** (Principales)      |
+| [**Mastered-By**](a-masteredby.md)                                         | Falso     | **Top** (Principales)      |
+| [**Modify-Time-Stamp**](a-modifytimestamp.md)                              | Falso     | **Top** (Principales)      |
+| [**ms-COM-PartitionSetLink**](a-mscom-partitionsetlink.md)                 | Falso     | **Top** (Principales)      |
+| [**ms-COM-UserLink**](a-mscom-userlink.md)                                 | Falso     | **Top** (Principales)      |
+| [**ms-DS-Approx-Immed-Subordinates**](a-msds-approx-immed-subordinates.md) | Falso     | **Top** (Principales)      |
+| [**MS-DS-Consistency-Child-Count**](a-ms-ds-consistencychildcount.md)      | Falso     | **Top** (Principales)      |
+| [**MS-DS-Consistency-Guid**](a-ms-ds-consistencyguid.md)                   | Falso     | **Top** (Principales)      |
+| [**ms-DS-Mastered-By**](a-msds-masteredby.md)                              | Falso     | **Top** (Principales)      |
+| [**ms-DS-Members-For-Az-Role-BL**](a-msds-membersforazrolebl.md)           | Falso     | **Top** (Principales)      |
+| [**ms-DS-NC-Repl-Cursors**](a-msds-ncreplcursors.md)                       | Falso     | **Top** (Principales)      |
+| [**ms-DS-NC-Repl-Inbound-Neighbors**](a-msds-ncreplinboundneighbors.md)    | Falso     | **Top** (Principales)      |
+| [**ms-DS-NC-Repl-Outbound-Neighbors**](a-msds-ncreploutboundneighbors.md)  | Falso     | **Top** (Principales)      |
+| [**ms-DS-Non-Members-BL**](a-msds-nonmembersbl.md)                         | Falso     | **Top** (Principales)      |
+| [**ms-DS-Object-Reference-BL**](a-msds-objectreferencebl.md)               | Falso     | **Top** (Principales)      |
+| [**ms-DS-Operations-For-Az-Role-BL**](a-msds-operationsforazrolebl.md)     | Falso     | **Top** (Principales)      |
+| [**ms-DS-Operations-For-Az-Task-BL**](a-msds-operationsforaztaskbl.md)     | Falso     | **Top** (Principales)      |
+| [**ms-DS-Repl-Attribute-Meta-Data**](a-msds-replattributemetadata.md)      | Falso     | **Top** (Principales)      |
+| [**ms-DS-Repl-Value-Meta-Data**](a-msds-replvaluemetadata.md)              | Falso     | **Top** (Principales)      |
+| [**ms-DS-Tasks-For-Az-Role-BL**](a-msds-tasksforazrolebl.md)               | Falso     | **Top** (Principales)      |
+| [**ms-DS-Tasks-For-Az-Task-BL**](a-msds-tasksforaztaskbl.md)               | Falso     | **Top** (Principales)      |
+| [**ms-Exch-Owner-BL**](a-ownerbl.md)                                       | Falso     | **Top** (Principales)      |
+| [**netboot-SCP-BL**](a-netbootscpbl.md)                                    | Falso     | **Top** (Principales)      |
+| [**Miembro no de seguridad-BL**](a-nonsecuritymemberbl.md)                     | Falso     | **Top** (Principales)      |
+| [**NT-Security-Descriptor**](a-ntsecuritydescriptor.md)                    | Verdadero      | **Top** (Principales)      |
+| [**Obj-Dist-Name**](a-distinguishedname.md)                                | Falso     | **Top** (Principales)      |
+| [**Object-Category**](a-objectcategory.md)                                 | Verdadero      | **Top** (Principales)      |
+| [**Object-Class**](a-objectclass.md)                                       | Verdadero      | **Top** (Principales)      |
+| [**Guid de objeto**](a-objectguid.md)                                         | Falso     | **Top** (Principales)      |
+| [**Object-Version**](a-objectversion.md)                                   | Falso     | **Top** (Principales)      |
+| [**Otros objetos conocidos**](a-otherwellknownobjects.md)                 | Falso     | **Top** (Principales)      |
+| [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)   | Falso     | **Top** (Principales)      |
+| [**Partial-Attribute-Set**](a-partialattributeset.md)                      | Falso     | **Top** (Principales)      |
+| [**Posibles inferiores**](a-possibleinferiors.md)                           | Falso     | **Top** (Principales)      |
+| [**Proxied-Object-Name**](a-proxiedobjectname.md)                          | Falso     | **Top** (Principales)      |
+| [**Direcciones proxy**](a-proxyaddresses.md)                                 | Falso     | **Top** (Principales)      |
+| [**Query-Policy-BL**](a-querypolicybl.md)                                  | Falso     | **Top** (Principales)      |
+| [**Rdn**](a-name.md)                                                       | Falso     | **Top** (Principales)      |
+| [**Repl-Property-Meta-Data**](a-replpropertymetadata.md)                   | Falso     | **Top** (Principales)      |
+| [**Repl-UpToDate-Vector**](a-repluptodatevector.md)                        | Falso     | **Top** (Principales)      |
+| [**Informes**](a-directreports.md)                                          | Falso     | **Top** (Principales)      |
+| [**Reps-From**](a-repsfrom.md)                                             | Falso     | **Top** (Principales)      |
+| [**Reps-To**](a-repsto.md)                                                 | Falso     | **Top** (Principales)      |
+| [**Revisión**](a-revision.md)                                              | Falso     | **Top** (Principales)      |
+| [**SD-Rights-Effective**](a-sdrightseffective.md)                          | Falso     | **Top** (Principales)      |
+| [**Server-Reference-BL**](a-serverreferencebl.md)                          | Falso     | **Top** (Principales)      |
+| [**Mostrar solo en vista avanzada**](a-showinadvancedviewonly.md)              | Falso     | **Top** (Principales)      |
+| [**Site-Object-BL**](a-siteobjectbl.md)                                    | Falso     | **Top** (Principales)      |
+| [**Structural-Object-Class**](a-structuralobjectclass.md)                  | Falso     | **Top** (Principales)      |
+| [**Sub refs**](a-subrefs.md)                                               | Falso     | **Top** (Principales)      |
+| [**SubSchemaSubEntry**](a-subschemasubentry.md)                            | Falso     | **Top** (Principales)      |
+| [**Marcas del sistema**](a-systemflags.md)                                       | Falso     | **Top** (Principales)      |
+| [**USN cambiado**](a-usnchanged.md)                                         | Falso     | **Top** (Principales)      |
+| [**UsN creado**](a-usncreated.md)                                         | Falso     | **Top** (Principales)      |
+| [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                  | Falso     | **Top** (Principales)      |
+| [**USN-Intersite**](a-usnintersite.md)                                     | Falso     | **Top** (Principales)      |
+| [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                 | Falso     | **Top** (Principales)      |
+| [**USN-Source**](a-usnsource.md)                                           | Falso     | **Top** (Principales)      |
+| [**Wbem-Path**](a-wbempath.md)                                             | Falso     | **Top** (Principales)      |
+| [**Well-Known-Objects**](a-wellknownobjects.md)                            | Falso     | **Top** (Principales)      |
+| [**Cuándo se ha cambiado**](a-whenchanged.md)                                       | Falso     | **Top** (Principales)      |
+| [**Cuando se crea**](a-whencreated.md)                                       | Falso     | **Top** (Principales)      |
+| [**PÁGINA PRINCIPAL DE WWW**](a-wwwhomepage.md)                                      | Falso     | **Top** (Principales)      |
+| [**WWW-Page-Other**](a-url.md)                                             | Falso     | **Top** (Principales)      |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 -   [Atributos](#adam-attributes)
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-----------------------------|------------------------------------------|
-| System-Only                 | True                                     |
+| System-Only                 | Verdadero                                     |
 | Object-Category             | 2                                        |
 | Default-Object-Category     | \-                                       |
 | Governs-Id                  | 2.5.6.0                                  |
-| Valor de ocultación predeterminada        | 1                                        |
-| RDN-ATT-ID                  | [**Nombre común**](a-cn.md)<br/>   |
+| Valor predeterminado de ocultación        | 1                                        |
+| Rdn-Att-Id                  | [**Nombre común**](a-cn.md)<br/>   |
 | Subclase de                 | **Top** (Principales)<br/>                       |
-| Posibles superiores          | [**Perdidos y encontrados**](c-lostandfound.md) |
+| Posibles superiores          | [**Perdido y encontrado**](c-lostandfound.md) |
 | Clases auxiliares           | \-                                       |
-| Descriptor de NT-Security-      | O:BAG: BAD: S:                             |
+| NT-Security-Descriptor      | O:BAG:BAD:S:                             |
 | Descriptor de seguridad predeterminado | D:S:                                     |
 | System-Flags                | 0x00000010                               |
 
 
 
-## <a name="adam-attributes"></a>Atributos de ADAM
+## <a name="adam-attributes"></a>Atributos ADAM
 
-Esta clase contiene los siguientes atributos para ADAM:
+Esta clase contiene los atributos siguientes para ADAM:
 
 
 
 | Atributo                                                                   | Mandatory | Derivado de |
 |-----------------------------------------------------------------------------|-----------|--------------|
-| [**Admin: Descripción**](a-admindescription.md)                             | False     | **Top** (Principales)      |
-| [**Admin-Display-Name**](a-admindisplayname.md)                            | False     | **Top** (Principales)      |
-| [**Permitido: atributos**](a-allowedattributes.md)                           | False     | **Top** (Principales)      |
-| [**Permitido: atributos: efectivos**](a-allowedattributeseffective.md)        | False     | **Top** (Principales)      |
-| [**Permitido: clases secundarias**](a-allowedchildclasses.md)                      | False     | **Top** (Principales)      |
-| [**Permitido-clases secundarias-eficaces**](a-allowedchildclasseseffective.md)   | False     | **Top** (Principales)      |
-| [**Cabeza de puente-servidor-lista-BL**](a-bridgeheadserverlistbl.md)               | False     | **Top** (Principales)      |
-| [**Nombre canónico**](a-canonicalname.md)                                   | False     | **Top** (Principales)      |
-| [**Nombre común**](a-cn.md)                                                 | False     | **Top** (Principales)      |
-| [**Creación: marca de tiempo**](a-createtimestamp.md)                              | False     | **Top** (Principales)      |
-| [**Descripción**](a-description.md)                                        | False     | **Top** (Principales)      |
-| [**Nombre para mostrar**](a-displayname.md)                                       | False     | **Top** (Principales)      |
-| [**DSA-firma**](a-dsasignature.md)                                     | False     | **Top** (Principales)      |
-| [**DS-Core-propagación-datos**](a-dscorepropagationdata.md)                 | False     | **Top** (Principales)      |
-| [**De entrada**](a-fromentry.md)                                           | False     | **Top** (Principales)      |
-| [**FSMO: rol-Propietario**](a-fsmoroleowner.md)                                  | False     | **Top** (Principales)      |
-| [**Tipo de instancia**](a-instancetype.md)                                     | True      | **Top** (Principales)      |
-| [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)               | False     | **Top** (Principales)      |
-| [**Se elimina**](a-isdeleted.md)                                           | False     | **Top** (Principales)      |
-| [**Is-member-of-DL**](a-memberof.md)                                       | False     | **Top** (Principales)      |
-| [**Último conocido-primario**](a-lastknownparent.md)                              | False     | **Top** (Principales)      |
-| [**Objetos administrados**](a-managedobjects.md)                                 | False     | **Top** (Principales)      |
-| [**Maestro por**](a-masteredby.md)                                         | False     | **Top** (Principales)      |
-| [**Modificar: marca de tiempo**](a-modifytimestamp.md)                              | False     | **Top** (Principales)      |
-| [**MS-DS-aprox-immed-subordinados**](a-msds-approx-immed-subordinates.md) | False     | **Top** (Principales)      |
-| [**MS-DS-Consistency-Child-Count**](a-ms-ds-consistencychildcount.md)      | False     | **Top** (Principales)      |
-| [**MS-DS-Consistency-Guid**](a-ms-ds-consistencyguid.md)                   | False     | **Top** (Principales)      |
-| [**MS-DS-Disable-for-instances-BL**](a-msds-disableforinstancesbl.md)      | False     | **Top** (Principales)      |
-| [**MS-DS-MASTERD-by**](a-msds-masteredby.md)                              | False     | **Top** (Principales)      |
-| [**MS-DS-NC-REPL-cursores**](a-msds-ncreplcursors.md)                       | False     | **Top** (Principales)      |
-| [**MS-DS-NC-REPL-entrada-vecinos**](a-msds-ncreplinboundneighbors.md)    | False     | **Top** (Principales)      |
-| [**MS-DS-NC-REPL-Outbound-Neighbors**](a-msds-ncreploutboundneighbors.md)  | False     | **Top** (Principales)      |
-| [**MS-DS-REPL-Attribute-meta-data**](a-msds-replattributemetadata.md)      | False     | **Top** (Principales)      |
-| [**MS-DS-REPL-Value-meta-data**](a-msds-replvaluemetadata.md)              | False     | **Top** (Principales)      |
-| [**MS-DS-Service-Account-BL**](a-msds-serviceaccountbl.md)                 | False     | **Top** (Principales)      |
-| [**Descriptor de NT-Security-**](a-ntsecuritydescriptor.md)                    | True      | **Top** (Principales)      |
-| [**Obj-Dist-nombre**](a-distinguishedname.md)                                | False     | **Top** (Principales)      |
-| [**Objeto-categoría**](a-objectcategory.md)                                 | True      | **Top** (Principales)      |
-| [**Clase de objeto**](a-objectclass.md)                                       | True      | **Top** (Principales)      |
-| [**Object-GUID**](a-objectguid.md)                                         | False     | **Top** (Principales)      |
-| [**Versión del objeto**](a-objectversion.md)                                   | False     | **Top** (Principales)      |
-| [**Otros objetos conocidos**](a-otherwellknownobjects.md)                 | False     | **Top** (Principales)      |
-| [**Lista de atributos parciales eliminados**](a-partialattributedeletionlist.md)   | False     | **Top** (Principales)      |
-| [**Conjunto de atributos parciales**](a-partialattributeset.md)                      | False     | **Top** (Principales)      |
-| [**Posibles: inferiores**](a-possibleinferiors.md)                           | False     | **Top** (Principales)      |
-| [**Nombre-objeto-proxy**](a-proxiedobjectname.md)                          | False     | **Top** (Principales)      |
-| [**Direcciones proxy**](a-proxyaddresses.md)                                 | False     | **Top** (Principales)      |
-| [**Query: Directiva-BL**](a-querypolicybl.md)                                  | False     | **Top** (Principales)      |
-| [**RDN**](a-name.md)                                                       | False     | **Top** (Principales)      |
-| [**REPL-Property-meta-data**](a-replpropertymetadata.md)                   | False     | **Top** (Principales)      |
-| [**REPL-UpToDate-Vector**](a-repluptodatevector.md)                        | False     | **Top** (Principales)      |
-| [**Representantes: desde**](a-repsfrom.md)                                             | False     | **Top** (Principales)      |
-| [**Representantes-a**](a-repsto.md)                                                 | False     | **Top** (Principales)      |
-| [**Revisión**](a-revision.md)                                              | False     | **Top** (Principales)      |
-| [**SD-derechos-efectivos**](a-sdrightseffective.md)                          | False     | **Top** (Principales)      |
-| [**Servidor-referencia-BL**](a-serverreferencebl.md)                          | False     | **Top** (Principales)      |
-| [**Mostrar en la vista avanzada**](a-showinadvancedviewonly.md)              | False     | **Top** (Principales)      |
-| [**Sitio-objeto-BL**](a-siteobjectbl.md)                                    | False     | **Top** (Principales)      |
-| [**Clase de objeto estructural**](a-structuralobjectclass.md)                  | False     | **Top** (Principales)      |
-| [**Referencias secundarias**](a-subrefs.md)                                               | False     | **Top** (Principales)      |
-| [**SubSchemaSubEntry**](a-subschemasubentry.md)                            | False     | **Top** (Principales)      |
-| [**Marcas de sistema**](a-systemflags.md)                                       | False     | **Top** (Principales)      |
-| [**USN: cambiado**](a-usnchanged.md)                                         | False     | **Top** (Principales)      |
-| [**USN: creado**](a-usncreated.md)                                         | False     | **Top** (Principales)      |
-| [**USN-DSA-Last-obj-quitado**](a-usndsalastobjremoved.md)                  | False     | **Top** (Principales)      |
-| [**USN: entre sitios**](a-usnintersite.md)                                     | False     | **Top** (Principales)      |
-| [**USN-Last-obj-REM**](a-usnlastobjrem.md)                                 | False     | **Top** (Principales)      |
-| [**USN: origen**](a-usnsource.md)                                           | False     | **Top** (Principales)      |
-| [**WBEM: ruta de acceso**](a-wbempath.md)                                             | False     | **Top** (Principales)      |
-| [**Well-Known-Objects**](a-wellknownobjects.md)                            | False     | **Top** (Principales)      |
-| [**Cuando se cambia**](a-whenchanged.md)                                       | False     | **Top** (Principales)      |
-| [**Cuándo se crea**](a-whencreated.md)                                       | False     | **Top** (Principales)      |
-| [**WWW-Página principal**](a-wwwhomepage.md)                                      | False     | **Top** (Principales)      |
-| [**WWW-página-otro**](a-url.md)                                             | False     | **Top** (Principales)      |
+| [**Descripción del administrador**](a-admindescription.md)                             | Falso     | **Top** (Principales)      |
+| [**Admin-Display-Name**](a-admindisplayname.md)                            | Falso     | **Top** (Principales)      |
+| [**Atributos permitidos**](a-allowedattributes.md)                           | Falso     | **Top** (Principales)      |
+| [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)        | Falso     | **Top** (Principales)      |
+| [**Allowed-Child-Classes**](a-allowedchildclasses.md)                      | Falso     | **Top** (Principales)      |
+| [**Allowed-Child-Classes-Effective**](a-allowedchildclasseseffective.md)   | Falso     | **Top** (Principales)      |
+| [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)               | Falso     | **Top** (Principales)      |
+| [**Canonical-Name**](a-canonicalname.md)                                   | Falso     | **Top** (Principales)      |
+| [**Nombre común**](a-cn.md)                                                 | Falso     | **Top** (Principales)      |
+| [**Crear marca de tiempo**](a-createtimestamp.md)                              | Falso     | **Top** (Principales)      |
+| [**Descripción**](a-description.md)                                        | Falso     | **Top** (Principales)      |
+| [**Nombre para mostrar**](a-displayname.md)                                       | Falso     | **Top** (Principales)      |
+| [**Firma DSA**](a-dsasignature.md)                                     | Falso     | **Top** (Principales)      |
+| [**DS-Core-Propagation-Data**](a-dscorepropagationdata.md)                 | Falso     | **Top** (Principales)      |
+| [**Desde entrada**](a-fromentry.md)                                           | Falso     | **Top** (Principales)      |
+| [**FSMO-Role-Owner**](a-fsmoroleowner.md)                                  | Falso     | **Top** (Principales)      |
+| [**Tipo de instancia**](a-instancetype.md)                                     | Verdadero      | **Top** (Principales)      |
+| [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)               | Falso     | **Top** (Principales)      |
+| [**Se elimina**](a-isdeleted.md)                                           | Falso     | **Top** (Principales)      |
+| [**Is-Member-Of-DL**](a-memberof.md)                                       | Falso     | **Top** (Principales)      |
+| [**Último elemento primario conocido**](a-lastknownparent.md)                              | Falso     | **Top** (Principales)      |
+| [**Objetos administrados**](a-managedobjects.md)                                 | Falso     | **Top** (Principales)      |
+| [**Mastered-By**](a-masteredby.md)                                         | Falso     | **Top** (Principales)      |
+| [**Modificación de marca de tiempo**](a-modifytimestamp.md)                              | Falso     | **Top** (Principales)      |
+| [**ms-DS-Approx-Immed-Subordinates**](a-msds-approx-immed-subordinates.md) | Falso     | **Top** (Principales)      |
+| [**MS-DS-Consistency-Child-Count**](a-ms-ds-consistencychildcount.md)      | Falso     | **Top** (Principales)      |
+| [**MS-DS-Consistency-Guid**](a-ms-ds-consistencyguid.md)                   | Falso     | **Top** (Principales)      |
+| [**ms-DS-Disable-For-Instances-BL**](a-msds-disableforinstancesbl.md)      | Falso     | **Top** (Principales)      |
+| [**ms-DS-Mastered-By**](a-msds-masteredby.md)                              | Falso     | **Top** (Principales)      |
+| [**ms-DS-NC-Repl-Cursors**](a-msds-ncreplcursors.md)                       | Falso     | **Top** (Principales)      |
+| [**ms-DS-NC-Repl-Inbound-Neighbors**](a-msds-ncreplinboundneighbors.md)    | Falso     | **Top** (Principales)      |
+| [**ms-DS-NC-Repl-Outbound-Neighbors**](a-msds-ncreploutboundneighbors.md)  | Falso     | **Top** (Principales)      |
+| [**ms-DS-Repl-Attribute-Meta-Data**](a-msds-replattributemetadata.md)      | Falso     | **Top** (Principales)      |
+| [**ms-DS-Repl-Value-Meta-Data**](a-msds-replvaluemetadata.md)              | Falso     | **Top** (Principales)      |
+| [**ms-DS-Service-Account-BL**](a-msds-serviceaccountbl.md)                 | Falso     | **Top** (Principales)      |
+| [**NT-Security-Descriptor**](a-ntsecuritydescriptor.md)                    | Verdadero      | **Top** (Principales)      |
+| [**Obj-Dist-Name**](a-distinguishedname.md)                                | Falso     | **Top** (Principales)      |
+| [**Object-Category**](a-objectcategory.md)                                 | Verdadero      | **Top** (Principales)      |
+| [**Object-Class**](a-objectclass.md)                                       | Verdadero      | **Top** (Principales)      |
+| [**Guid de objeto**](a-objectguid.md)                                         | Falso     | **Top** (Principales)      |
+| [**Object-Version**](a-objectversion.md)                                   | Falso     | **Top** (Principales)      |
+| [**Otros objetos conocidos**](a-otherwellknownobjects.md)                 | Falso     | **Top** (Principales)      |
+| [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)   | Falso     | **Top** (Principales)      |
+| [**Partial-Attribute-Set**](a-partialattributeset.md)                      | Falso     | **Top** (Principales)      |
+| [**Posibles inferiores**](a-possibleinferiors.md)                           | Falso     | **Top** (Principales)      |
+| [**Proxied-Object-Name**](a-proxiedobjectname.md)                          | Falso     | **Top** (Principales)      |
+| [**Direcciones proxy**](a-proxyaddresses.md)                                 | Falso     | **Top** (Principales)      |
+| [**Query-Policy-BL**](a-querypolicybl.md)                                  | Falso     | **Top** (Principales)      |
+| [**Rdn**](a-name.md)                                                       | Falso     | **Top** (Principales)      |
+| [**Repl-Property-Meta-Data**](a-replpropertymetadata.md)                   | Falso     | **Top** (Principales)      |
+| [**Repl-UpToDate-Vector**](a-repluptodatevector.md)                        | Falso     | **Top** (Principales)      |
+| [**Reps-From**](a-repsfrom.md)                                             | Falso     | **Top** (Principales)      |
+| [**Reps-To**](a-repsto.md)                                                 | Falso     | **Top** (Principales)      |
+| [**Revisión**](a-revision.md)                                              | Falso     | **Top** (Principales)      |
+| [**SD-Rights-Effective**](a-sdrightseffective.md)                          | Falso     | **Top** (Principales)      |
+| [**Server-Reference-BL**](a-serverreferencebl.md)                          | Falso     | **Top** (Principales)      |
+| [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)              | Falso     | **Top** (Principales)      |
+| [**Site-Object-BL**](a-siteobjectbl.md)                                    | Falso     | **Top** (Principales)      |
+| [**Structural-Object-Class**](a-structuralobjectclass.md)                  | Falso     | **Top** (Principales)      |
+| [**Sub refs**](a-subrefs.md)                                               | Falso     | **Top** (Principales)      |
+| [**SubSchemaSubEntry**](a-subschemasubentry.md)                            | Falso     | **Top** (Principales)      |
+| [**Marcas del sistema**](a-systemflags.md)                                       | Falso     | **Top** (Principales)      |
+| [**USN cambiado**](a-usnchanged.md)                                         | Falso     | **Top** (Principales)      |
+| [**Creado por USN**](a-usncreated.md)                                         | Falso     | **Top** (Principales)      |
+| [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                  | Falso     | **Top** (Principales)      |
+| [**USN-Intersite**](a-usnintersite.md)                                     | Falso     | **Top** (Principales)      |
+| [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                 | Falso     | **Top** (Principales)      |
+| [**USN-Source**](a-usnsource.md)                                           | Falso     | **Top** (Principales)      |
+| [**Wbem-Path**](a-wbempath.md)                                             | Falso     | **Top** (Principales)      |
+| [**Well-Known-Objects**](a-wellknownobjects.md)                            | Falso     | **Top** (Principales)      |
+| [**Cuándo se ha cambiado**](a-whenchanged.md)                                       | Falso     | **Top** (Principales)      |
+| [**Cuando se crea**](a-whencreated.md)                                       | Falso     | **Top** (Principales)      |
+| [**PÁGINA PRINCIPAL DE WWW**](a-wwwhomepage.md)                                      | Falso     | **Top** (Principales)      |
+| [**WWW-Page-Other**](a-url.md)                                             | Falso     | **Top** (Principales)      |
 
 
 
@@ -395,22 +395,22 @@ Esta clase contiene los siguientes atributos para ADAM:
 
 | Entrada | Value |
 |-----------------------------|----------------------------------------------------------------------------------------------|
-| System-Only                 | True                                                                                         |
+| System-Only                 | Verdadero                                                                                         |
 | Object-Category             | 2                                                                                            |
 | Default-Object-Category     | \-                                                                                           |
 | Governs-Id                  | 2.5.6.0                                                                                      |
-| Valor de ocultación predeterminada        | 1                                                                                            |
-| RDN-ATT-ID                  | [**Nombre común**](a-cn.md)<br/>                                                       |
+| Valor predeterminado de ocultación        | 1                                                                                            |
+| Rdn-Att-Id                  | [**Common-Name**](a-cn.md)<br/>                                                       |
 | Subclase de                 | **Top** (Principales)<br/>                                                                           |
-| Posibles superiores          | [**Perdidos y encontrados**](c-lostandfound.md)                                                     |
+| Posibles superiores          | [**Perdido y encontrado**](c-lostandfound.md)                                                     |
 | Clases auxiliares           | \-                                                                                           |
-| Descriptor de NT-Security-      | O:BAG: BAD: S:                                                                                 |
-| Descriptor de seguridad predeterminado | D: (A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A) (A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY) (A;; RPLCLORC;;; ESTÉ |
+| NT-Security-Descriptor      | O:BAG:BAD:S:                                                                                 |
+| Descriptor de seguridad predeterminado | D:(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A)(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY)(A;; RPLCLORC;;; AU) |
 | System-Flags                | 0x00000010                                                                                   |
 
 
 
-## <a name="windows-server-2003-r2-attributes"></a>Atributos de Windows Server 2003 R2
+## <a name="windows-server-2003-r2-attributes"></a>Windows Atributos de Server 2003 R2
 
 Esta clase contiene los siguientes atributos para Windows Server 2003 R2:
 
@@ -418,100 +418,100 @@ Esta clase contiene los siguientes atributos para Windows Server 2003 R2:
 
 | Atributo                                                                   | Mandatory | Derivado de |
 |-----------------------------------------------------------------------------|-----------|--------------|
-| [**Admin: Descripción**](a-admindescription.md)                             | False     | **Top** (Principales)      |
-| [**Admin-Display-Name**](a-admindisplayname.md)                            | False     | **Top** (Principales)      |
-| [**Permitido: atributos**](a-allowedattributes.md)                           | False     | **Top** (Principales)      |
-| [**Permitido: atributos: efectivos**](a-allowedattributeseffective.md)        | False     | **Top** (Principales)      |
-| [**Permitido: clases secundarias**](a-allowedchildclasses.md)                      | False     | **Top** (Principales)      |
-| [**Permitido-clases secundarias-eficaces**](a-allowedchildclasseseffective.md)   | False     | **Top** (Principales)      |
-| [**Cabeza de puente-servidor-lista-BL**](a-bridgeheadserverlistbl.md)               | False     | **Top** (Principales)      |
-| [**Nombre canónico**](a-canonicalname.md)                                   | False     | **Top** (Principales)      |
-| [**Nombre común**](a-cn.md)                                                 | False     | **Top** (Principales)      |
-| [**Creación: marca de tiempo**](a-createtimestamp.md)                              | False     | **Top** (Principales)      |
-| [**Descripción**](a-description.md)                                        | False     | **Top** (Principales)      |
-| [**Nombre para mostrar**](a-displayname.md)                                       | False     | **Top** (Principales)      |
-| [**Display-Name-printable**](a-displaynameprintable.md)                    | False     | **Top** (Principales)      |
-| [**DSA-firma**](a-dsasignature.md)                                     | False     | **Top** (Principales)      |
-| [**DS-Core-propagación-datos**](a-dscorepropagationdata.md)                 | False     | **Top** (Principales)      |
-| [**Nombre de extensión**](a-extensionname.md)                                   | False     | **Top** (Principales)      |
-| [**Marcas**](a-flags.md)                                                    | False     | **Top** (Principales)      |
-| [**De entrada**](a-fromentry.md)                                           | False     | **Top** (Principales)      |
-| [**FRS-Computer-Reference-BL**](a-frscomputerreferencebl.md)               | False     | **Top** (Principales)      |
-| [**FRS-Member-Reference-BL**](a-frsmemberreferencebl.md)                   | False     | **Top** (Principales)      |
-| [**FSMO: rol-Propietario**](a-fsmoroleowner.md)                                  | False     | **Top** (Principales)      |
-| [**Tipo de instancia**](a-instancetype.md)                                     | True      | **Top** (Principales)      |
-| [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)               | False     | **Top** (Principales)      |
-| [**Se elimina**](a-isdeleted.md)                                           | False     | **Top** (Principales)      |
-| [**Is-member-of-DL**](a-memberof.md)                                       | False     | **Top** (Principales)      |
-| [**Es-titular de privilegios**](a-isprivilegeholder.md)                          | False     | **Top** (Principales)      |
-| [**Último conocido-primario**](a-lastknownparent.md)                              | False     | **Top** (Principales)      |
-| [**Objetos administrados**](a-managedobjects.md)                                 | False     | **Top** (Principales)      |
-| [**Maestro por**](a-masteredby.md)                                         | False     | **Top** (Principales)      |
-| [**Modificar: marca de tiempo**](a-modifytimestamp.md)                              | False     | **Top** (Principales)      |
-| [**MS-COM-PartitionSetLink**](a-mscom-partitionsetlink.md)                 | False     | **Top** (Principales)      |
-| [**MS-COM-UserLink**](a-mscom-userlink.md)                                 | False     | **Top** (Principales)      |
-| [**MS-DFSR-ComputerReferenceBL**](a-msdfsr-computerreferencebl.md)         | False     | **Top** (Principales)      |
-| [**MS-DFSR-MemberReferenceBL**](a-msdfsr-memberreferencebl.md)             | False     | **Top** (Principales)      |
-| [**MS-DS-aprox-immed-subordinados**](a-msds-approx-immed-subordinates.md) | False     | **Top** (Principales)      |
-| [**MS-DS-Consistency-Child-Count**](a-ms-ds-consistencychildcount.md)      | False     | **Top** (Principales)      |
-| [**MS-DS-Consistency-Guid**](a-ms-ds-consistencyguid.md)                   | False     | **Top** (Principales)      |
-| [**MS-DS-MASTERD-by**](a-msds-masteredby.md)                              | False     | **Top** (Principales)      |
-| [**MS-DS-Members-for-AZ-role-BL**](a-msds-membersforazrolebl.md)           | False     | **Top** (Principales)      |
-| [**MS-DS-NC-REPL-cursores**](a-msds-ncreplcursors.md)                       | False     | **Top** (Principales)      |
-| [**MS-DS-NC-REPL-entrada-vecinos**](a-msds-ncreplinboundneighbors.md)    | False     | **Top** (Principales)      |
-| [**MS-DS-NC-REPL-Outbound-Neighbors**](a-msds-ncreploutboundneighbors.md)  | False     | **Top** (Principales)      |
-| [**MS-DS-non-Members-BL**](a-msds-nonmembersbl.md)                         | False     | **Top** (Principales)      |
-| [**MS-DS-Object-Reference-BL**](a-msds-objectreferencebl.md)               | False     | **Top** (Principales)      |
-| [**MS-DS-Operations-for-AZ-role-BL**](a-msds-operationsforazrolebl.md)     | False     | **Top** (Principales)      |
-| [**MS-DS-Operations-for-AZ-Task-BL**](a-msds-operationsforaztaskbl.md)     | False     | **Top** (Principales)      |
-| [**MS-DS-REPL-Attribute-meta-data**](a-msds-replattributemetadata.md)      | False     | **Top** (Principales)      |
-| [**MS-DS-REPL-Value-meta-data**](a-msds-replvaluemetadata.md)              | False     | **Top** (Principales)      |
-| [**MS-DS-Tasks-for-AZ-role-BL**](a-msds-tasksforazrolebl.md)               | False     | **Top** (Principales)      |
-| [**MS-DS-Tasks-for-AZ-Task-BL**](a-msds-tasksforaztaskbl.md)               | False     | **Top** (Principales)      |
-| [**MS-Exch-Owner-BL**](a-ownerbl.md)                                       | False     | **Top** (Principales)      |
-| [**msSFU-30-POSIX-member-of**](a-mssfu30posixmemberof.md)                  | False     | **Top** (Principales)      |
-| [**netboot-SCP-BL**](a-netbootscpbl.md)                                    | False     | **Top** (Principales)      |
-| [**Miembro no de seguridad-BL**](a-nonsecuritymemberbl.md)                     | False     | **Top** (Principales)      |
-| [**Descriptor de NT-Security-**](a-ntsecuritydescriptor.md)                    | True      | **Top** (Principales)      |
-| [**Obj-Dist-nombre**](a-distinguishedname.md)                                | False     | **Top** (Principales)      |
-| [**Objeto-categoría**](a-objectcategory.md)                                 | True      | **Top** (Principales)      |
-| [**Clase de objeto**](a-objectclass.md)                                       | True      | **Top** (Principales)      |
-| [**Object-GUID**](a-objectguid.md)                                         | False     | **Top** (Principales)      |
-| [**Versión del objeto**](a-objectversion.md)                                   | False     | **Top** (Principales)      |
-| [**Otros objetos conocidos**](a-otherwellknownobjects.md)                 | False     | **Top** (Principales)      |
-| [**Lista de atributos parciales eliminados**](a-partialattributedeletionlist.md)   | False     | **Top** (Principales)      |
-| [**Conjunto de atributos parciales**](a-partialattributeset.md)                      | False     | **Top** (Principales)      |
-| [**Posibles: inferiores**](a-possibleinferiors.md)                           | False     | **Top** (Principales)      |
-| [**Nombre-objeto-proxy**](a-proxiedobjectname.md)                          | False     | **Top** (Principales)      |
-| [**Direcciones proxy**](a-proxyaddresses.md)                                 | False     | **Top** (Principales)      |
-| [**Query: Directiva-BL**](a-querypolicybl.md)                                  | False     | **Top** (Principales)      |
-| [**RDN**](a-name.md)                                                       | False     | **Top** (Principales)      |
-| [**REPL-Property-meta-data**](a-replpropertymetadata.md)                   | False     | **Top** (Principales)      |
-| [**REPL-UpToDate-Vector**](a-repluptodatevector.md)                        | False     | **Top** (Principales)      |
-| [**Informes**](a-directreports.md)                                          | False     | **Top** (Principales)      |
-| [**Representantes: desde**](a-repsfrom.md)                                             | False     | **Top** (Principales)      |
-| [**Representantes-a**](a-repsto.md)                                                 | False     | **Top** (Principales)      |
-| [**Revisión**](a-revision.md)                                              | False     | **Top** (Principales)      |
-| [**SD-derechos-efectivos**](a-sdrightseffective.md)                          | False     | **Top** (Principales)      |
-| [**Servidor-referencia-BL**](a-serverreferencebl.md)                          | False     | **Top** (Principales)      |
-| [**Mostrar en la vista avanzada**](a-showinadvancedviewonly.md)              | False     | **Top** (Principales)      |
-| [**Sitio-objeto-BL**](a-siteobjectbl.md)                                    | False     | **Top** (Principales)      |
-| [**Clase de objeto estructural**](a-structuralobjectclass.md)                  | False     | **Top** (Principales)      |
-| [**Referencias secundarias**](a-subrefs.md)                                               | False     | **Top** (Principales)      |
-| [**SubSchemaSubEntry**](a-subschemasubentry.md)                            | False     | **Top** (Principales)      |
-| [**Marcas de sistema**](a-systemflags.md)                                       | False     | **Top** (Principales)      |
-| [**USN: cambiado**](a-usnchanged.md)                                         | False     | **Top** (Principales)      |
-| [**USN: creado**](a-usncreated.md)                                         | False     | **Top** (Principales)      |
-| [**USN-DSA-Last-obj-quitado**](a-usndsalastobjremoved.md)                  | False     | **Top** (Principales)      |
-| [**USN: entre sitios**](a-usnintersite.md)                                     | False     | **Top** (Principales)      |
-| [**USN-Last-obj-REM**](a-usnlastobjrem.md)                                 | False     | **Top** (Principales)      |
-| [**USN: origen**](a-usnsource.md)                                           | False     | **Top** (Principales)      |
-| [**WBEM: ruta de acceso**](a-wbempath.md)                                             | False     | **Top** (Principales)      |
-| [**Well-Known-Objects**](a-wellknownobjects.md)                            | False     | **Top** (Principales)      |
-| [**Cuando se cambia**](a-whenchanged.md)                                       | False     | **Top** (Principales)      |
-| [**Cuándo se crea**](a-whencreated.md)                                       | False     | **Top** (Principales)      |
-| [**WWW-Página principal**](a-wwwhomepage.md)                                      | False     | **Top** (Principales)      |
-| [**WWW-página-otro**](a-url.md)                                             | False     | **Top** (Principales)      |
+| [**Descripción del administrador**](a-admindescription.md)                             | Falso     | **Top** (Principales)      |
+| [**Admin-Display-Name**](a-admindisplayname.md)                            | Falso     | **Top** (Principales)      |
+| [**Atributos permitidos**](a-allowedattributes.md)                           | Falso     | **Top** (Principales)      |
+| [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)        | Falso     | **Top** (Principales)      |
+| [**Allowed-Child-Classes**](a-allowedchildclasses.md)                      | Falso     | **Top** (Principales)      |
+| [**Allowed-Child-Classes-Effective**](a-allowedchildclasseseffective.md)   | Falso     | **Top** (Principales)      |
+| [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)               | Falso     | **Top** (Principales)      |
+| [**Canonical-Name**](a-canonicalname.md)                                   | Falso     | **Top** (Principales)      |
+| [**Common-Name**](a-cn.md)                                                 | Falso     | **Top** (Principales)      |
+| [**Marca de tiempo de creación**](a-createtimestamp.md)                              | Falso     | **Top** (Principales)      |
+| [**Descripción**](a-description.md)                                        | Falso     | **Top** (Principales)      |
+| [**Nombre para mostrar**](a-displayname.md)                                       | Falso     | **Top** (Principales)      |
+| [**Nombre para mostrar imprimible**](a-displaynameprintable.md)                    | Falso     | **Top** (Principales)      |
+| [**Firma DSA**](a-dsasignature.md)                                     | Falso     | **Top** (Principales)      |
+| [**DS-Core-Propagation-Data**](a-dscorepropagationdata.md)                 | Falso     | **Top** (Principales)      |
+| [**Nombre de extensión**](a-extensionname.md)                                   | Falso     | **Top** (Principales)      |
+| [**Banderas**](a-flags.md)                                                    | Falso     | **Top** (Principales)      |
+| [**Desde entrada**](a-fromentry.md)                                           | Falso     | **Top** (Principales)      |
+| [**Frs-Computer-Reference-BL**](a-frscomputerreferencebl.md)               | Falso     | **Top** (Principales)      |
+| [**FRS-Member-Reference-BL**](a-frsmemberreferencebl.md)                   | Falso     | **Top** (Principales)      |
+| [**FSMO-Role-Owner**](a-fsmoroleowner.md)                                  | Falso     | **Top** (Principales)      |
+| [**Tipo de instancia**](a-instancetype.md)                                     | Verdadero      | **Top** (Principales)      |
+| [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)               | Falso     | **Top** (Principales)      |
+| [**Se elimina**](a-isdeleted.md)                                           | Falso     | **Top** (Principales)      |
+| [**Is-Member-Of-DL**](a-memberof.md)                                       | Falso     | **Top** (Principales)      |
+| [**Is-Privilege-Holder**](a-isprivilegeholder.md)                          | Falso     | **Top** (Principales)      |
+| [**Último elemento primario conocido**](a-lastknownparent.md)                              | Falso     | **Top** (Principales)      |
+| [**Objetos administrados**](a-managedobjects.md)                                 | Falso     | **Top** (Principales)      |
+| [**Mastered-By**](a-masteredby.md)                                         | Falso     | **Top** (Principales)      |
+| [**Modify-Time-Stamp**](a-modifytimestamp.md)                              | Falso     | **Top** (Principales)      |
+| [**ms-COM-PartitionSetLink**](a-mscom-partitionsetlink.md)                 | Falso     | **Top** (Principales)      |
+| [**ms-COM-UserLink**](a-mscom-userlink.md)                                 | Falso     | **Top** (Principales)      |
+| [**ms-DFSR-ComputerReferenceBL**](a-msdfsr-computerreferencebl.md)         | Falso     | **Top** (Principales)      |
+| [**ms-DFSR-MemberReferenceBL**](a-msdfsr-memberreferencebl.md)             | Falso     | **Top** (Principales)      |
+| [**ms-DS-Approx-Immed-Subordinates**](a-msds-approx-immed-subordinates.md) | Falso     | **Top** (Principales)      |
+| [**MS-DS-Consistency-Child-Count**](a-ms-ds-consistencychildcount.md)      | Falso     | **Top** (Principales)      |
+| [**MS-DS-Consistency-Guid**](a-ms-ds-consistencyguid.md)                   | Falso     | **Top** (Principales)      |
+| [**ms-DS-Mastered-By**](a-msds-masteredby.md)                              | Falso     | **Top** (Principales)      |
+| [**ms-DS-Members-For-Az-Role-BL**](a-msds-membersforazrolebl.md)           | Falso     | **Top** (Principales)      |
+| [**ms-DS-NC-Repl-Cursors**](a-msds-ncreplcursors.md)                       | Falso     | **Top** (Principales)      |
+| [**ms-DS-NC-Repl-Inbound-Neighbors**](a-msds-ncreplinboundneighbors.md)    | Falso     | **Top** (Principales)      |
+| [**ms-DS-NC-Repl-Outbound-Neighbors**](a-msds-ncreploutboundneighbors.md)  | Falso     | **Top** (Principales)      |
+| [**ms-DS-Non-Members-BL**](a-msds-nonmembersbl.md)                         | Falso     | **Top** (Principales)      |
+| [**ms-DS-Object-Reference-BL**](a-msds-objectreferencebl.md)               | Falso     | **Top** (Principales)      |
+| [**ms-DS-Operations-For-Az-Role-BL**](a-msds-operationsforazrolebl.md)     | Falso     | **Top** (Principales)      |
+| [**ms-DS-Operations-For-Az-Task-BL**](a-msds-operationsforaztaskbl.md)     | Falso     | **Top** (Principales)      |
+| [**ms-DS-Repl-Attribute-Meta-Data**](a-msds-replattributemetadata.md)      | Falso     | **Top** (Principales)      |
+| [**ms-DS-Repl-Value-Meta-Data**](a-msds-replvaluemetadata.md)              | Falso     | **Top** (Principales)      |
+| [**ms-DS-Tasks-For-Az-Role-BL**](a-msds-tasksforazrolebl.md)               | Falso     | **Top** (Principales)      |
+| [**ms-DS-Tasks-For-Az-Task-BL**](a-msds-tasksforaztaskbl.md)               | Falso     | **Top** (Principales)      |
+| [**ms-Exch-Owner-BL**](a-ownerbl.md)                                       | Falso     | **Top** (Principales)      |
+| [**msSFU-30-Posix-Member-Of**](a-mssfu30posixmemberof.md)                  | Falso     | **Top** (Principales)      |
+| [**netboot-SCP-BL**](a-netbootscpbl.md)                                    | Falso     | **Top** (Principales)      |
+| [**Miembro no de seguridad-BL**](a-nonsecuritymemberbl.md)                     | Falso     | **Top** (Principales)      |
+| [**NT-Security-Descriptor**](a-ntsecuritydescriptor.md)                    | Verdadero      | **Top** (Principales)      |
+| [**Obj-Dist-Name**](a-distinguishedname.md)                                | Falso     | **Top** (Principales)      |
+| [**Object-Category**](a-objectcategory.md)                                 | Verdadero      | **Top** (Principales)      |
+| [**Object-Class**](a-objectclass.md)                                       | Verdadero      | **Top** (Principales)      |
+| [**Guid de objeto**](a-objectguid.md)                                         | Falso     | **Top** (Principales)      |
+| [**Object-Version**](a-objectversion.md)                                   | Falso     | **Top** (Principales)      |
+| [**Otros objetos well-known-objects**](a-otherwellknownobjects.md)                 | Falso     | **Top** (Principales)      |
+| [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)   | Falso     | **Top** (Principales)      |
+| [**Partial-Attribute-Set**](a-partialattributeset.md)                      | Falso     | **Top** (Principales)      |
+| [**Posibles inferiores**](a-possibleinferiors.md)                           | Falso     | **Top** (Principales)      |
+| [**Proxied-Object-Name**](a-proxiedobjectname.md)                          | Falso     | **Top** (Principales)      |
+| [**Direcciones de proxy**](a-proxyaddresses.md)                                 | Falso     | **Top** (Principales)      |
+| [**Query-Policy-BL**](a-querypolicybl.md)                                  | Falso     | **Top** (Principales)      |
+| [**Rdn**](a-name.md)                                                       | Falso     | **Top** (Principales)      |
+| [**Repl-Property-Meta-Data**](a-replpropertymetadata.md)                   | Falso     | **Top** (Principales)      |
+| [**Repl-UpToDate-Vector**](a-repluptodatevector.md)                        | Falso     | **Top** (Principales)      |
+| [**Informes**](a-directreports.md)                                          | Falso     | **Top** (Principales)      |
+| [**Reps-From**](a-repsfrom.md)                                             | Falso     | **Top** (Principales)      |
+| [**Reps-To**](a-repsto.md)                                                 | Falso     | **Top** (Principales)      |
+| [**Revisión**](a-revision.md)                                              | Falso     | **Top** (Principales)      |
+| [**SD-Rights-Effective**](a-sdrightseffective.md)                          | Falso     | **Top** (Principales)      |
+| [**Server-Reference-BL**](a-serverreferencebl.md)                          | Falso     | **Top** (Principales)      |
+| [**Mostrar solo en vista avanzada**](a-showinadvancedviewonly.md)              | Falso     | **Top** (Principales)      |
+| [**Site-Object-BL**](a-siteobjectbl.md)                                    | Falso     | **Top** (Principales)      |
+| [**Structural-Object-Class**](a-structuralobjectclass.md)                  | Falso     | **Top** (Principales)      |
+| [**Sub refs**](a-subrefs.md)                                               | Falso     | **Top** (Principales)      |
+| [**SubSchemaSubEntry**](a-subschemasubentry.md)                            | Falso     | **Top** (Principales)      |
+| [**Marcas del sistema**](a-systemflags.md)                                       | Falso     | **Top** (Principales)      |
+| [**USN cambiado**](a-usnchanged.md)                                         | Falso     | **Top** (Principales)      |
+| [**Creado por USN**](a-usncreated.md)                                         | Falso     | **Top** (Principales)      |
+| [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                  | Falso     | **Top** (Principales)      |
+| [**USN-Intersite**](a-usnintersite.md)                                     | Falso     | **Top** (Principales)      |
+| [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                 | Falso     | **Top** (Principales)      |
+| [**USN-Source**](a-usnsource.md)                                           | Falso     | **Top** (Principales)      |
+| [**Wbem-Path**](a-wbempath.md)                                             | Falso     | **Top** (Principales)      |
+| [**Objetos conocidos**](a-wellknownobjects.md)                            | Falso     | **Top** (Principales)      |
+| [**Cuándo se ha cambiado**](a-whenchanged.md)                                       | Falso     | **Top** (Principales)      |
+| [**Cuando se crea**](a-whencreated.md)                                       | Falso     | **Top** (Principales)      |
+| [**WWW-Página principal**](a-wwwhomepage.md)                                      | Falso     | **Top** (Principales)      |
+| [**WWW-Page-Other**](a-url.md)                                             | Falso     | **Top** (Principales)      |
 
 
 
@@ -523,22 +523,22 @@ Esta clase contiene los siguientes atributos para Windows Server 2003 R2:
 
 | Entrada | Value |
 |-----------------------------|----------------------------------------------------------------------------------------------|
-| System-Only                 | True                                                                                         |
+| System-Only                 | Verdadero                                                                                         |
 | Object-Category             | 2                                                                                            |
 | Default-Object-Category     | \-                                                                                           |
 | Governs-Id                  | 2.5.6.0                                                                                      |
-| Valor de ocultación predeterminada        | 1                                                                                            |
-| RDN-ATT-ID                  | [**Nombre común**](a-cn.md)<br/>                                                       |
+| Valor predeterminado de ocultación        | 1                                                                                            |
+| Rdn-Att-Id                  | [**Common-Name**](a-cn.md)<br/>                                                       |
 | Subclase de                 | **Top** (Principales)<br/>                                                                           |
-| Posibles superiores          | [**Perdidos y encontrados**](c-lostandfound.md)                                                     |
+| Posibles superiores          | [**Perdido y encontrado**](c-lostandfound.md)                                                     |
 | Clases auxiliares           | \-                                                                                           |
-| Descriptor de NT-Security-      | O:BAG: BAD: S:                                                                                 |
-| Descriptor de seguridad predeterminado | D: (A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A) (A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY) (A;; RPLCLORC;;; ESTÉ |
+| NT-Security-Descriptor      | O:BAG:BAD:S:                                                                                 |
+| Descriptor de seguridad predeterminado | D:(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A)(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY)(A;; RPLCLORC;;; AU) |
 | System-Flags                | 0x00000010                                                                                   |
 
 
 
-## <a name="windows-server-2008-attributes"></a>Atributos de Windows Server 2008
+## <a name="windows-server-2008-attributes"></a>Windows Atributos de Server 2008
 
 Esta clase contiene los siguientes atributos para Windows Server 2008:
 
@@ -546,111 +546,111 @@ Esta clase contiene los siguientes atributos para Windows Server 2008:
 
 | Atributo                                                                      | Mandatory | Derivado de |
 |--------------------------------------------------------------------------------|-----------|--------------|
-| [**Admin: Descripción**](a-admindescription.md)                                | False     | **Top** (Principales)      |
-| [**Admin-Display-Name**](a-admindisplayname.md)                               | False     | **Top** (Principales)      |
-| [**Permitido: atributos**](a-allowedattributes.md)                              | False     | **Top** (Principales)      |
-| [**Permitido: atributos: efectivos**](a-allowedattributeseffective.md)           | False     | **Top** (Principales)      |
-| [**Permitido: clases secundarias**](a-allowedchildclasses.md)                         | False     | **Top** (Principales)      |
-| [**Permitido-clases secundarias-eficaces**](a-allowedchildclasseseffective.md)      | False     | **Top** (Principales)      |
-| [**Cabeza de puente-servidor-lista-BL**](a-bridgeheadserverlistbl.md)                  | False     | **Top** (Principales)      |
-| [**Nombre canónico**](a-canonicalname.md)                                      | False     | **Top** (Principales)      |
-| [**Nombre común**](a-cn.md)                                                    | False     | **Top** (Principales)      |
-| [**Creación: marca de tiempo**](a-createtimestamp.md)                                 | False     | **Top** (Principales)      |
-| [**Descripción**](a-description.md)                                           | False     | **Top** (Principales)      |
-| [**Nombre para mostrar**](a-displayname.md)                                          | False     | **Top** (Principales)      |
-| [**Display-Name-printable**](a-displaynameprintable.md)                       | False     | **Top** (Principales)      |
-| [**DSA-firma**](a-dsasignature.md)                                        | False     | **Top** (Principales)      |
-| [**DS-Core-propagación-datos**](a-dscorepropagationdata.md)                    | False     | **Top** (Principales)      |
-| [**Nombre de extensión**](a-extensionname.md)                                      | False     | **Top** (Principales)      |
-| [**Marcas**](a-flags.md)                                                       | False     | **Top** (Principales)      |
-| [**De entrada**](a-fromentry.md)                                              | False     | **Top** (Principales)      |
-| [**FRS-Computer-Reference-BL**](a-frscomputerreferencebl.md)                  | False     | **Top** (Principales)      |
-| [**FRS-Member-Reference-BL**](a-frsmemberreferencebl.md)                      | False     | **Top** (Principales)      |
-| [**FSMO: rol-Propietario**](a-fsmoroleowner.md)                                     | False     | **Top** (Principales)      |
-| [**Tipo de instancia**](a-instancetype.md)                                        | True      | **Top** (Principales)      |
-| [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)                  | False     | **Top** (Principales)      |
-| [**Se elimina**](a-isdeleted.md)                                              | False     | **Top** (Principales)      |
-| [**Is-member-of-DL**](a-memberof.md)                                          | False     | **Top** (Principales)      |
-| [**Es-titular de privilegios**](a-isprivilegeholder.md)                             | False     | **Top** (Principales)      |
-| [**Último conocido-primario**](a-lastknownparent.md)                                 | False     | **Top** (Principales)      |
-| [**Objetos administrados**](a-managedobjects.md)                                    | False     | **Top** (Principales)      |
-| [**Maestro por**](a-masteredby.md)                                            | False     | **Top** (Principales)      |
-| [**Modificar: marca de tiempo**](a-modifytimestamp.md)                                 | False     | **Top** (Principales)      |
-| [**MS-COM-PartitionSetLink**](a-mscom-partitionsetlink.md)                    | False     | **Top** (Principales)      |
-| [**MS-COM-UserLink**](a-mscom-userlink.md)                                    | False     | **Top** (Principales)      |
-| [**MS-DFSR-ComputerReferenceBL**](a-msdfsr-computerreferencebl.md)            | False     | **Top** (Principales)      |
-| [**MS-DFSR-MemberReferenceBL**](a-msdfsr-memberreferencebl.md)                | False     | **Top** (Principales)      |
-| [**MS-DS-aprox-immed-subordinados**](a-msds-approx-immed-subordinates.md)    | False     | **Top** (Principales)      |
-| [**MS-DS-AuthenticatedTo-Accountlist**](a-msds-authenticatedtoaccountlist.md) | False     | **Top** (Principales)      |
-| [**MS-DS-Consistency-Child-Count**](a-ms-ds-consistencychildcount.md)         | False     | **Top** (Principales)      |
-| [**MS-DS-Consistency-Guid**](a-ms-ds-consistencyguid.md)                      | False     | **Top** (Principales)      |
-| [**MS-DS-IS-domain-para**](a-msds-isdomainfor.md)                              | False     | **Top** (Principales)      |
-| [**MS-DS-IS-FULL-Replica-para**](a-msds-isfullreplicafor.md)                   | False     | **Top** (Principales)      |
-| [**MS-DS-IS-Partial-Replica-para**](a-msds-ispartialreplicafor.md)             | False     | **Top** (Principales)      |
-| [**MS-DS-KrbTgt-Link-BL**](a-msds-krbtgtlinkbl.md)                            | False     | **Top** (Principales)      |
-| [**MS-DS-MASTERD-by**](a-msds-masteredby.md)                                 | False     | **Top** (Principales)      |
-| [**MS-DS-Members-for-AZ-role-BL**](a-msds-membersforazrolebl.md)              | False     | **Top** (Principales)      |
-| [**MS-DS-NC-REPL-cursores**](a-msds-ncreplcursors.md)                          | False     | **Top** (Principales)      |
-| [**MS-DS-NC-REPL-entrada-vecinos**](a-msds-ncreplinboundneighbors.md)       | False     | **Top** (Principales)      |
-| [**MS-DS-NC-REPL-Outbound-Neighbors**](a-msds-ncreploutboundneighbors.md)     | False     | **Top** (Principales)      |
-| [**MS-DS-NC-RO-Replica-locations-BL**](a-msds-nc-ro-replica-locations-bl.md)  | False     | **Top** (Principales)      |
-| [**Tipo MS-DS-NC**](a-msds-nctype.md)                                         | False     | **Top** (Principales)      |
-| [**MS-DS-non-Members-BL**](a-msds-nonmembersbl.md)                            | False     | **Top** (Principales)      |
-| [**MS-DS-Object-Reference-BL**](a-msds-objectreferencebl.md)                  | False     | **Top** (Principales)      |
-| [**MS-DS-Operations-for-AZ-role-BL**](a-msds-operationsforazrolebl.md)        | False     | **Top** (Principales)      |
-| [**MS-DS-Operations-for-AZ-Task-BL**](a-msds-operationsforaztaskbl.md)        | False     | **Top** (Principales)      |
-| [**Nombre de la entidad de seguridad de MS-DS**](a-msds-principalname.md)                           | False     | **Top** (Principales)      |
-| [**MS-DS-PSO: aplicado**](a-msds-psoapplied.md)                                 | False     | **Top** (Principales)      |
-| [**MS-DS-REPL-Attribute-meta-data**](a-msds-replattributemetadata.md)         | False     | **Top** (Principales)      |
-| [**MS-DS-REPL-Value-meta-data**](a-msds-replvaluemetadata.md)                 | False     | **Top** (Principales)      |
-| [**MS-DS-Revelód-DSA**](a-msds-revealeddsas.md)                             | False     | **Top** (Principales)      |
-| [**MS-DS-Revelad-List-BL**](a-msds-revealedlistbl.md)                        | False     | **Top** (Principales)      |
-| [**MS-DS-Tasks-for-AZ-role-BL**](a-msds-tasksforazrolebl.md)                  | False     | **Top** (Principales)      |
-| [**MS-DS-Tasks-for-AZ-Task-BL**](a-msds-tasksforaztaskbl.md)                  | False     | **Top** (Principales)      |
-| [**MS-Exch-Owner-BL**](a-ownerbl.md)                                          | False     | **Top** (Principales)      |
-| [**msSFU-30-POSIX-member-of**](a-mssfu30posixmemberof.md)                     | False     | **Top** (Principales)      |
-| [**netboot-SCP-BL**](a-netbootscpbl.md)                                       | False     | **Top** (Principales)      |
-| [**Miembro no de seguridad-BL**](a-nonsecuritymemberbl.md)                        | False     | **Top** (Principales)      |
-| [**Descriptor de NT-Security-**](a-ntsecuritydescriptor.md)                       | True      | **Top** (Principales)      |
-| [**Obj-Dist-nombre**](a-distinguishedname.md)                                   | False     | **Top** (Principales)      |
-| [**Objeto-categoría**](a-objectcategory.md)                                    | True      | **Top** (Principales)      |
-| [**Clase de objeto**](a-objectclass.md)                                          | True      | **Top** (Principales)      |
-| [**Object-GUID**](a-objectguid.md)                                            | False     | **Top** (Principales)      |
-| [**Versión del objeto**](a-objectversion.md)                                      | False     | **Top** (Principales)      |
-| [**Otros objetos conocidos**](a-otherwellknownobjects.md)                    | False     | **Top** (Principales)      |
-| [**Lista de atributos parciales eliminados**](a-partialattributedeletionlist.md)      | False     | **Top** (Principales)      |
-| [**Conjunto de atributos parciales**](a-partialattributeset.md)                         | False     | **Top** (Principales)      |
-| [**Posibles: inferiores**](a-possibleinferiors.md)                              | False     | **Top** (Principales)      |
-| [**Nombre-objeto-proxy**](a-proxiedobjectname.md)                             | False     | **Top** (Principales)      |
-| [**Direcciones proxy**](a-proxyaddresses.md)                                    | False     | **Top** (Principales)      |
-| [**Query: Directiva-BL**](a-querypolicybl.md)                                     | False     | **Top** (Principales)      |
-| [**RDN**](a-name.md)                                                          | False     | **Top** (Principales)      |
-| [**REPL-Property-meta-data**](a-replpropertymetadata.md)                      | False     | **Top** (Principales)      |
-| [**REPL-UpToDate-Vector**](a-repluptodatevector.md)                           | False     | **Top** (Principales)      |
-| [**Informes**](a-directreports.md)                                             | False     | **Top** (Principales)      |
-| [**Representantes: desde**](a-repsfrom.md)                                                | False     | **Top** (Principales)      |
-| [**Representantes-a**](a-repsto.md)                                                    | False     | **Top** (Principales)      |
-| [**Revisión**](a-revision.md)                                                 | False     | **Top** (Principales)      |
-| [**SD-derechos-efectivos**](a-sdrightseffective.md)                             | False     | **Top** (Principales)      |
-| [**Servidor-referencia-BL**](a-serverreferencebl.md)                             | False     | **Top** (Principales)      |
-| [**Mostrar en la vista avanzada**](a-showinadvancedviewonly.md)                 | False     | **Top** (Principales)      |
-| [**Sitio-objeto-BL**](a-siteobjectbl.md)                                       | False     | **Top** (Principales)      |
-| [**Clase de objeto estructural**](a-structuralobjectclass.md)                     | False     | **Top** (Principales)      |
-| [**Referencias secundarias**](a-subrefs.md)                                                  | False     | **Top** (Principales)      |
-| [**SubSchemaSubEntry**](a-subschemasubentry.md)                               | False     | **Top** (Principales)      |
-| [**Marcas de sistema**](a-systemflags.md)                                          | False     | **Top** (Principales)      |
-| [**USN: cambiado**](a-usnchanged.md)                                            | False     | **Top** (Principales)      |
-| [**USN: creado**](a-usncreated.md)                                            | False     | **Top** (Principales)      |
-| [**USN-DSA-Last-obj-quitado**](a-usndsalastobjremoved.md)                     | False     | **Top** (Principales)      |
-| [**USN: entre sitios**](a-usnintersite.md)                                        | False     | **Top** (Principales)      |
-| [**USN-Last-obj-REM**](a-usnlastobjrem.md)                                    | False     | **Top** (Principales)      |
-| [**USN: origen**](a-usnsource.md)                                              | False     | **Top** (Principales)      |
-| [**WBEM: ruta de acceso**](a-wbempath.md)                                                | False     | **Top** (Principales)      |
-| [**Well-Known-Objects**](a-wellknownobjects.md)                               | False     | **Top** (Principales)      |
-| [**Cuando se cambia**](a-whenchanged.md)                                          | False     | **Top** (Principales)      |
-| [**Cuándo se crea**](a-whencreated.md)                                          | False     | **Top** (Principales)      |
-| [**WWW-Página principal**](a-wwwhomepage.md)                                         | False     | **Top** (Principales)      |
-| [**WWW-página-otro**](a-url.md)                                                | False     | **Top** (Principales)      |
+| [**Admin-Description**](a-admindescription.md)                                | Falso     | **Top** (Principales)      |
+| [**Admin-Display-Name**](a-admindisplayname.md)                               | Falso     | **Top** (Principales)      |
+| [**Atributos permitidos**](a-allowedattributes.md)                              | Falso     | **Top** (Principales)      |
+| [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)           | Falso     | **Top** (Principales)      |
+| [**Allowed-Child-Classes**](a-allowedchildclasses.md)                         | Falso     | **Top** (Principales)      |
+| [**Allowed-Child-Classes-Effective**](a-allowedchildclasseseffective.md)      | Falso     | **Top** (Principales)      |
+| [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)                  | Falso     | **Top** (Principales)      |
+| [**Canonical-Name**](a-canonicalname.md)                                      | Falso     | **Top** (Principales)      |
+| [**Common-Name**](a-cn.md)                                                    | Falso     | **Top** (Principales)      |
+| [**Create-Time-Stamp**](a-createtimestamp.md)                                 | Falso     | **Top** (Principales)      |
+| [**Descripción**](a-description.md)                                           | Falso     | **Top** (Principales)      |
+| [**Nombre para mostrar**](a-displayname.md)                                          | Falso     | **Top** (Principales)      |
+| [**Display-Name-Printable**](a-displaynameprintable.md)                       | Falso     | **Top** (Principales)      |
+| [**Firma DSA**](a-dsasignature.md)                                        | Falso     | **Top** (Principales)      |
+| [**DS-Core-Propagation-Data**](a-dscorepropagationdata.md)                    | Falso     | **Top** (Principales)      |
+| [**Nombre de extensión**](a-extensionname.md)                                      | Falso     | **Top** (Principales)      |
+| [**Banderas**](a-flags.md)                                                       | Falso     | **Top** (Principales)      |
+| [**Desde entrada**](a-fromentry.md)                                              | Falso     | **Top** (Principales)      |
+| [**Frs-Computer-Reference-BL**](a-frscomputerreferencebl.md)                  | Falso     | **Top** (Principales)      |
+| [**FRS-Member-Reference-BL**](a-frsmemberreferencebl.md)                      | Falso     | **Top** (Principales)      |
+| [**FSMO-Role-Owner**](a-fsmoroleowner.md)                                     | Falso     | **Top** (Principales)      |
+| [**Tipo de instancia**](a-instancetype.md)                                        | Verdadero      | **Top** (Principales)      |
+| [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)                  | Falso     | **Top** (Principales)      |
+| [**Se elimina**](a-isdeleted.md)                                              | Falso     | **Top** (Principales)      |
+| [**Is-Member-Of-DL**](a-memberof.md)                                          | Falso     | **Top** (Principales)      |
+| [**Is-Privilege-Holder**](a-isprivilegeholder.md)                             | Falso     | **Top** (Principales)      |
+| [**Último elemento primario conocido**](a-lastknownparent.md)                                 | Falso     | **Top** (Principales)      |
+| [**Objetos administrados**](a-managedobjects.md)                                    | Falso     | **Top** (Principales)      |
+| [**Mastered-By**](a-masteredby.md)                                            | Falso     | **Top** (Principales)      |
+| [**Modify-Time-Stamp**](a-modifytimestamp.md)                                 | Falso     | **Top** (Principales)      |
+| [**ms-COM-PartitionSetLink**](a-mscom-partitionsetlink.md)                    | Falso     | **Top** (Principales)      |
+| [**ms-COM-UserLink**](a-mscom-userlink.md)                                    | Falso     | **Top** (Principales)      |
+| [**ms-DFSR-ComputerReferenceBL**](a-msdfsr-computerreferencebl.md)            | Falso     | **Top** (Principales)      |
+| [**ms-DFSR-MemberReferenceBL**](a-msdfsr-memberreferencebl.md)                | Falso     | **Top** (Principales)      |
+| [**ms-DS-Approx-Immed-Subordinates**](a-msds-approx-immed-subordinates.md)    | Falso     | **Top** (Principales)      |
+| [**ms-DS-AuthenticatedTo-Accountlist**](a-msds-authenticatedtoaccountlist.md) | Falso     | **Top** (Principales)      |
+| [**MS-DS-Consistency-Child-Count**](a-ms-ds-consistencychildcount.md)         | Falso     | **Top** (Principales)      |
+| [**MS-DS-Consistency-Guid**](a-ms-ds-consistencyguid.md)                      | Falso     | **Top** (Principales)      |
+| [**ms-DS-Is-Domain-For**](a-msds-isdomainfor.md)                              | Falso     | **Top** (Principales)      |
+| [**ms-DS-Is-Full-Replica-For**](a-msds-isfullreplicafor.md)                   | Falso     | **Top** (Principales)      |
+| [**ms-DS-Is-Partial-Replica-For**](a-msds-ispartialreplicafor.md)             | Falso     | **Top** (Principales)      |
+| [**ms-DS-KrbTgt-Link-BL**](a-msds-krbtgtlinkbl.md)                            | Falso     | **Top** (Principales)      |
+| [**ms-DS-Mastered-By**](a-msds-masteredby.md)                                 | Falso     | **Top** (Principales)      |
+| [**ms-DS-Members-For-Az-Role-BL**](a-msds-membersforazrolebl.md)              | Falso     | **Top** (Principales)      |
+| [**ms-DS-NC-Repl-Cursors**](a-msds-ncreplcursors.md)                          | Falso     | **Top** (Principales)      |
+| [**ms-DS-NC-Repl-Inbound-Neighbors**](a-msds-ncreplinboundneighbors.md)       | Falso     | **Top** (Principales)      |
+| [**ms-DS-NC-Repl-Outbound-Neighbors**](a-msds-ncreploutboundneighbors.md)     | Falso     | **Top** (Principales)      |
+| [**ms-DS-NC-RO-Replica-Locations-BL**](a-msds-nc-ro-replica-locations-bl.md)  | Falso     | **Top** (Principales)      |
+| [**ms-DS-NC-Type**](a-msds-nctype.md)                                         | Falso     | **Top** (Principales)      |
+| [**ms-DS-Non-Members-BL**](a-msds-nonmembersbl.md)                            | Falso     | **Top** (Principales)      |
+| [**ms-DS-Object-Reference-BL**](a-msds-objectreferencebl.md)                  | Falso     | **Top** (Principales)      |
+| [**ms-DS-Operations-For-Az-Role-BL**](a-msds-operationsforazrolebl.md)        | Falso     | **Top** (Principales)      |
+| [**ms-DS-Operations-For-Az-Task-BL**](a-msds-operationsforaztaskbl.md)        | Falso     | **Top** (Principales)      |
+| [**ms-DS-Principal-Name**](a-msds-principalname.md)                           | Falso     | **Top** (Principales)      |
+| [**ms-DS-PSO-Applied**](a-msds-psoapplied.md)                                 | Falso     | **Top** (Principales)      |
+| [**ms-DS-Repl-Attribute-Meta-Data**](a-msds-replattributemetadata.md)         | Falso     | **Top** (Principales)      |
+| [**ms-DS-Repl-Value-Meta-Data**](a-msds-replvaluemetadata.md)                 | Falso     | **Top** (Principales)      |
+| [**ms-DS-Revealed-DSA**](a-msds-revealeddsas.md)                             | Falso     | **Top** (Principales)      |
+| [**ms-DS-Revealed-List-BL**](a-msds-revealedlistbl.md)                        | Falso     | **Top** (Principales)      |
+| [**ms-DS-Tasks-For-Az-Role-BL**](a-msds-tasksforazrolebl.md)                  | Falso     | **Top** (Principales)      |
+| [**ms-DS-Tasks-For-Az-Task-BL**](a-msds-tasksforaztaskbl.md)                  | Falso     | **Top** (Principales)      |
+| [**ms-Exch-Owner-BL**](a-ownerbl.md)                                          | Falso     | **Top** (Principales)      |
+| [**msSFU-30-Posix-Member-Of**](a-mssfu30posixmemberof.md)                     | Falso     | **Top** (Principales)      |
+| [**netboot-SCP-BL**](a-netbootscpbl.md)                                       | Falso     | **Top** (Principales)      |
+| [**Miembro no de seguridad-BL**](a-nonsecuritymemberbl.md)                        | Falso     | **Top** (Principales)      |
+| [**NT-Security-Descriptor**](a-ntsecuritydescriptor.md)                       | Verdadero      | **Top** (Principales)      |
+| [**Obj-Dist-Name**](a-distinguishedname.md)                                   | Falso     | **Top** (Principales)      |
+| [**Object-Category**](a-objectcategory.md)                                    | Verdadero      | **Top** (Principales)      |
+| [**Object-Class**](a-objectclass.md)                                          | Verdadero      | **Top** (Principales)      |
+| [**Guid de objeto**](a-objectguid.md)                                            | Falso     | **Top** (Principales)      |
+| [**Object-Version**](a-objectversion.md)                                      | Falso     | **Top** (Principales)      |
+| [**Otros objetos conocidos**](a-otherwellknownobjects.md)                    | Falso     | **Top** (Principales)      |
+| [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)      | Falso     | **Top** (Principales)      |
+| [**Partial-Attribute-Set**](a-partialattributeset.md)                         | Falso     | **Top** (Principales)      |
+| [**Posibles inferiores**](a-possibleinferiors.md)                              | Falso     | **Top** (Principales)      |
+| [**Proxied-Object-Name**](a-proxiedobjectname.md)                             | Falso     | **Top** (Principales)      |
+| [**Direcciones proxy**](a-proxyaddresses.md)                                    | Falso     | **Top** (Principales)      |
+| [**Query-Policy-BL**](a-querypolicybl.md)                                     | Falso     | **Top** (Principales)      |
+| [**Rdn**](a-name.md)                                                          | Falso     | **Top** (Principales)      |
+| [**Repl-Property-Meta-Data**](a-replpropertymetadata.md)                      | Falso     | **Top** (Principales)      |
+| [**Repl-UpToDate-Vector**](a-repluptodatevector.md)                           | Falso     | **Top** (Principales)      |
+| [**Informes**](a-directreports.md)                                             | Falso     | **Top** (Principales)      |
+| [**Reps-From**](a-repsfrom.md)                                                | Falso     | **Top** (Principales)      |
+| [**Reps-To**](a-repsto.md)                                                    | Falso     | **Top** (Principales)      |
+| [**Revisión**](a-revision.md)                                                 | Falso     | **Top** (Principales)      |
+| [**SD-Rights-Effective**](a-sdrightseffective.md)                             | Falso     | **Top** (Principales)      |
+| [**Server-Reference-BL**](a-serverreferencebl.md)                             | Falso     | **Top** (Principales)      |
+| [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)                 | Falso     | **Top** (Principales)      |
+| [**Site-Object-BL**](a-siteobjectbl.md)                                       | Falso     | **Top** (Principales)      |
+| [**Structural-Object-Class**](a-structuralobjectclass.md)                     | Falso     | **Top** (Principales)      |
+| [**Sub refs**](a-subrefs.md)                                                  | Falso     | **Top** (Principales)      |
+| [**SubSchemaSubEntry**](a-subschemasubentry.md)                               | Falso     | **Top** (Principales)      |
+| [**Marcas del sistema**](a-systemflags.md)                                          | Falso     | **Top** (Principales)      |
+| [**USN cambiado**](a-usnchanged.md)                                            | Falso     | **Top** (Principales)      |
+| [**Creado por USN**](a-usncreated.md)                                            | Falso     | **Top** (Principales)      |
+| [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                     | Falso     | **Top** (Principales)      |
+| [**USN-Intersite**](a-usnintersite.md)                                        | Falso     | **Top** (Principales)      |
+| [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                    | Falso     | **Top** (Principales)      |
+| [**USN-Source**](a-usnsource.md)                                              | Falso     | **Top** (Principales)      |
+| [**Wbem-Path**](a-wbempath.md)                                                | Falso     | **Top** (Principales)      |
+| [**Objetos conocidos**](a-wellknownobjects.md)                               | Falso     | **Top** (Principales)      |
+| [**Cuándo se ha cambiado**](a-whenchanged.md)                                          | Falso     | **Top** (Principales)      |
+| [**Cuando se crea**](a-whencreated.md)                                          | Falso     | **Top** (Principales)      |
+| [**WWW-Página principal**](a-wwwhomepage.md)                                         | Falso     | **Top** (Principales)      |
+| [**WWW-Page-Other**](a-url.md)                                                | Falso     | **Top** (Principales)      |
 
 
 
@@ -662,141 +662,141 @@ Esta clase contiene los siguientes atributos para Windows Server 2008:
 
 | Entrada | Value |
 |-----------------------------|----------------------------------------------------------------------------------------------|
-| System-Only                 | True                                                                                         |
+| System-Only                 | Verdadero                                                                                         |
 | Object-Category             | 2                                                                                            |
 | Default-Object-Category     | \-                                                                                           |
 | Governs-Id                  | 2.5.6.0                                                                                      |
-| Valor de ocultación predeterminada        | 1                                                                                            |
-| RDN-ATT-ID                  | [**Nombre común**](a-cn.md)<br/>                                                       |
+| Valor predeterminado de ocultación        | 1                                                                                            |
+| Rdn-Att-Id                  | [**Common-Name**](a-cn.md)<br/>                                                       |
 | Subclase de                 | **Top** (Principales)<br/>                                                                           |
-| Posibles superiores          | [**Perdidos y encontrados**](c-lostandfound.md)                                                     |
+| Posibles superiores          | [**Perdido y encontrado**](c-lostandfound.md)                                                     |
 | Clases auxiliares           | \-                                                                                           |
-| Descriptor de NT-Security-      | O:BAG: BAD: S:                                                                                 |
-| Descriptor de seguridad predeterminado | D: (A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A) (A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY) (A;; RPLCLORC;;; ESTÉ |
+| NT-Security-Descriptor      | O:BAG:BAD:S:                                                                                 |
+| Descriptor de seguridad predeterminado | D:(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A)(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY)(A;; RPLCLORC;;; AU) |
 | System-Flags                | 0x00000010                                                                                   |
 
 
 
-## <a name="windows-server-2008-r2-attributes"></a>Atributos de Windows Server 2008 R2
+## <a name="windows-server-2008-r2-attributes"></a>Windows Atributos de Server 2008 R2
 
-Esta clase contiene los siguientes atributos para Windows Server 2008 R2:
+Esta clase contiene los atributos siguientes para Windows Server 2008 R2:
 
 
 
 | Atributo                                                                        | Mandatory | Derivado de |
 |----------------------------------------------------------------------------------|-----------|--------------|
-| [**Admin: Descripción**](a-admindescription.md)                                  | False     | **Top** (Principales)      |
-| [**Admin-Display-Name**](a-admindisplayname.md)                                 | False     | **Top** (Principales)      |
-| [**Permitido: atributos**](a-allowedattributes.md)                                | False     | **Top** (Principales)      |
-| [**Permitido: atributos: efectivos**](a-allowedattributeseffective.md)             | False     | **Top** (Principales)      |
-| [**Permitido: clases secundarias**](a-allowedchildclasses.md)                           | False     | **Top** (Principales)      |
-| [**Permitido-clases secundarias-eficaces**](a-allowedchildclasseseffective.md)        | False     | **Top** (Principales)      |
-| [**Cabeza de puente-servidor-lista-BL**](a-bridgeheadserverlistbl.md)                    | False     | **Top** (Principales)      |
-| [**Nombre canónico**](a-canonicalname.md)                                        | False     | **Top** (Principales)      |
-| [**Nombre común**](a-cn.md)                                                      | False     | **Top** (Principales)      |
-| [**Creación: marca de tiempo**](a-createtimestamp.md)                                   | False     | **Top** (Principales)      |
-| [**Descripción**](a-description.md)                                             | False     | **Top** (Principales)      |
-| [**Nombre para mostrar**](a-displayname.md)                                            | False     | **Top** (Principales)      |
-| [**Display-Name-printable**](a-displaynameprintable.md)                         | False     | **Top** (Principales)      |
-| [**DSA-firma**](a-dsasignature.md)                                          | False     | **Top** (Principales)      |
-| [**DS-Core-propagación-datos**](a-dscorepropagationdata.md)                      | False     | **Top** (Principales)      |
-| [**Nombre de extensión**](a-extensionname.md)                                        | False     | **Top** (Principales)      |
-| [**Marcas**](a-flags.md)                                                         | False     | **Top** (Principales)      |
-| [**De entrada**](a-fromentry.md)                                                | False     | **Top** (Principales)      |
-| [**FRS-Computer-Reference-BL**](a-frscomputerreferencebl.md)                    | False     | **Top** (Principales)      |
-| [**FRS-Member-Reference-BL**](a-frsmemberreferencebl.md)                        | False     | **Top** (Principales)      |
-| [**FSMO: rol-Propietario**](a-fsmoroleowner.md)                                       | False     | **Top** (Principales)      |
-| [**Tipo de instancia**](a-instancetype.md)                                          | True      | **Top** (Principales)      |
-| [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)                    | False     | **Top** (Principales)      |
-| [**Se elimina**](a-isdeleted.md)                                                | False     | **Top** (Principales)      |
-| [**Is-member-of-DL**](a-memberof.md)                                            | False     | **Top** (Principales)      |
-| [**Es-titular de privilegios**](a-isprivilegeholder.md)                               | False     | **Top** (Principales)      |
-| [**Se recicla**](a-isrecycled.md)                                              | False     | **Top** (Principales)      |
-| [**Último conocido-primario**](a-lastknownparent.md)                                   | False     | **Top** (Principales)      |
-| [**Objetos administrados**](a-managedobjects.md)                                      | False     | **Top** (Principales)      |
-| [**Maestro por**](a-masteredby.md)                                              | False     | **Top** (Principales)      |
-| [**Modificar: marca de tiempo**](a-modifytimestamp.md)                                   | False     | **Top** (Principales)      |
-| [**MS-COM-PartitionSetLink**](a-mscom-partitionsetlink.md)                      | False     | **Top** (Principales)      |
-| [**MS-COM-UserLink**](a-mscom-userlink.md)                                      | False     | **Top** (Principales)      |
-| [**MS-DFSR-ComputerReferenceBL**](a-msdfsr-computerreferencebl.md)              | False     | **Top** (Principales)      |
-| [**MS-DFSR-MemberReferenceBL**](a-msdfsr-memberreferencebl.md)                  | False     | **Top** (Principales)      |
-| [**MS-DS-aprox-immed-subordinados**](a-msds-approx-immed-subordinates.md)      | False     | **Top** (Principales)      |
-| [**MS-DS-AuthenticatedTo-Accountlist**](a-msds-authenticatedtoaccountlist.md)   | False     | **Top** (Principales)      |
-| [**MS-DS-Consistency-Child-Count**](a-ms-ds-consistencychildcount.md)           | False     | **Top** (Principales)      |
-| [**MS-DS-Consistency-Guid**](a-ms-ds-consistencyguid.md)                        | False     | **Top** (Principales)      |
-| [**MS-DS-Enabled-Feature-BL**](a-msds-enabledfeaturebl.md)                      | False     | **Top** (Principales)      |
-| [**MS-DS-host-Service-Account-BL**](a-msds-hostserviceaccountbl.md)             | False     | **Top** (Principales)      |
-| [**MS-DS-IS-domain-para**](a-msds-isdomainfor.md)                                | False     | **Top** (Principales)      |
-| [**MS-DS-IS-FULL-Replica-para**](a-msds-isfullreplicafor.md)                     | False     | **Top** (Principales)      |
-| [**MS-DS-IS-Partial-Replica-para**](a-msds-ispartialreplicafor.md)               | False     | **Top** (Principales)      |
-| [**MS-DS-KrbTgt-Link-BL**](a-msds-krbtgtlinkbl.md)                              | False     | **Top** (Principales)      |
-| [**MS-DS-Last-known-RDN**](a-msds-lastknownrdn.md)                              | False     | **Top** (Principales)      |
-| [**MS-DS-local-de eliminación efectiva**](a-msds-localeffectivedeletiontime.md) | False     | **Top** (Principales)      |
-| [**MS-DS-local-vigencia-reciclaje-hora**](a-msds-localeffectiverecycletime.md)   | False     | **Top** (Principales)      |
-| [**MS-DS-MASTERD-by**](a-msds-masteredby.md)                                   | False     | **Top** (Principales)      |
-| [**MS-DS-Members-for-AZ-role-BL**](a-msds-membersforazrolebl.md)                | False     | **Top** (Principales)      |
-| [**MS-DS-NC-REPL-cursores**](a-msds-ncreplcursors.md)                            | False     | **Top** (Principales)      |
-| [**MS-DS-NC-REPL-entrada-vecinos**](a-msds-ncreplinboundneighbors.md)         | False     | **Top** (Principales)      |
-| [**MS-DS-NC-REPL-Outbound-Neighbors**](a-msds-ncreploutboundneighbors.md)       | False     | **Top** (Principales)      |
-| [**MS-DS-NC-RO-Replica-locations-BL**](a-msds-nc-ro-replica-locations-bl.md)    | False     | **Top** (Principales)      |
-| [**Tipo MS-DS-NC**](a-msds-nctype.md)                                           | False     | **Top** (Principales)      |
-| [**MS-DS-non-Members-BL**](a-msds-nonmembersbl.md)                              | False     | **Top** (Principales)      |
-| [**MS-DS-Object-Reference-BL**](a-msds-objectreferencebl.md)                    | False     | **Top** (Principales)      |
-| [**MS-DS-OIDToGroup-Link-BL**](a-msds-oidtogrouplinkbl.md)                      | False     | **Top** (Principales)      |
-| [**MS-DS-Operations-for-AZ-role-BL**](a-msds-operationsforazrolebl.md)          | False     | **Top** (Principales)      |
-| [**MS-DS-Operations-for-AZ-Task-BL**](a-msds-operationsforaztaskbl.md)          | False     | **Top** (Principales)      |
-| [**Nombre de la entidad de seguridad de MS-DS**](a-msds-principalname.md)                             | False     | **Top** (Principales)      |
-| [**MS-DS-PSO: aplicado**](a-msds-psoapplied.md)                                   | False     | **Top** (Principales)      |
-| [**MS-DS-REPL-Attribute-meta-data**](a-msds-replattributemetadata.md)           | False     | **Top** (Principales)      |
-| [**MS-DS-REPL-Value-meta-data**](a-msds-replvaluemetadata.md)                   | False     | **Top** (Principales)      |
-| [**MS-DS-Revelód-DSA**](a-msds-revealeddsas.md)                               | False     | **Top** (Principales)      |
-| [**MS-DS-Revelad-List-BL**](a-msds-revealedlistbl.md)                          | False     | **Top** (Principales)      |
-| [**MS-DS-Tasks-for-AZ-role-BL**](a-msds-tasksforazrolebl.md)                    | False     | **Top** (Principales)      |
-| [**MS-DS-Tasks-for-AZ-Task-BL**](a-msds-tasksforaztaskbl.md)                    | False     | **Top** (Principales)      |
-| [**MS-Exch-Owner-BL**](a-ownerbl.md)                                            | False     | **Top** (Principales)      |
-| [**msSFU-30-POSIX-member-of**](a-mssfu30posixmemberof.md)                       | False     | **Top** (Principales)      |
-| [**netboot-SCP-BL**](a-netbootscpbl.md)                                         | False     | **Top** (Principales)      |
-| [**Miembro no de seguridad-BL**](a-nonsecuritymemberbl.md)                          | False     | **Top** (Principales)      |
-| [**Descriptor de NT-Security-**](a-ntsecuritydescriptor.md)                         | True      | **Top** (Principales)      |
-| [**Obj-Dist-nombre**](a-distinguishedname.md)                                     | False     | **Top** (Principales)      |
-| [**Objeto-categoría**](a-objectcategory.md)                                      | True      | **Top** (Principales)      |
-| [**Clase de objeto**](a-objectclass.md)                                            | True      | **Top** (Principales)      |
-| [**Object-GUID**](a-objectguid.md)                                              | False     | **Top** (Principales)      |
-| [**Versión del objeto**](a-objectversion.md)                                        | False     | **Top** (Principales)      |
-| [**Otros objetos conocidos**](a-otherwellknownobjects.md)                      | False     | **Top** (Principales)      |
-| [**Lista de atributos parciales eliminados**](a-partialattributedeletionlist.md)        | False     | **Top** (Principales)      |
-| [**Conjunto de atributos parciales**](a-partialattributeset.md)                           | False     | **Top** (Principales)      |
-| [**Posibles: inferiores**](a-possibleinferiors.md)                                | False     | **Top** (Principales)      |
-| [**Nombre-objeto-proxy**](a-proxiedobjectname.md)                               | False     | **Top** (Principales)      |
-| [**Direcciones proxy**](a-proxyaddresses.md)                                      | False     | **Top** (Principales)      |
-| [**Query: Directiva-BL**](a-querypolicybl.md)                                       | False     | **Top** (Principales)      |
-| [**RDN**](a-name.md)                                                            | False     | **Top** (Principales)      |
-| [**REPL-Property-meta-data**](a-replpropertymetadata.md)                        | False     | **Top** (Principales)      |
-| [**REPL-UpToDate-Vector**](a-repluptodatevector.md)                             | False     | **Top** (Principales)      |
-| [**Informes**](a-directreports.md)                                               | False     | **Top** (Principales)      |
-| [**Representantes: desde**](a-repsfrom.md)                                                  | False     | **Top** (Principales)      |
-| [**Representantes-a**](a-repsto.md)                                                      | False     | **Top** (Principales)      |
-| [**Revisión**](a-revision.md)                                                   | False     | **Top** (Principales)      |
-| [**SD-derechos-efectivos**](a-sdrightseffective.md)                               | False     | **Top** (Principales)      |
-| [**Servidor-referencia-BL**](a-serverreferencebl.md)                               | False     | **Top** (Principales)      |
-| [**Mostrar en la vista avanzada**](a-showinadvancedviewonly.md)                   | False     | **Top** (Principales)      |
-| [**Sitio-objeto-BL**](a-siteobjectbl.md)                                         | False     | **Top** (Principales)      |
-| [**Clase de objeto estructural**](a-structuralobjectclass.md)                       | False     | **Top** (Principales)      |
-| [**Referencias secundarias**](a-subrefs.md)                                                    | False     | **Top** (Principales)      |
-| [**SubSchemaSubEntry**](a-subschemasubentry.md)                                 | False     | **Top** (Principales)      |
-| [**Marcas de sistema**](a-systemflags.md)                                            | False     | **Top** (Principales)      |
-| [**USN: cambiado**](a-usnchanged.md)                                              | False     | **Top** (Principales)      |
-| [**USN: creado**](a-usncreated.md)                                              | False     | **Top** (Principales)      |
-| [**USN-DSA-Last-obj-quitado**](a-usndsalastobjremoved.md)                       | False     | **Top** (Principales)      |
-| [**USN: entre sitios**](a-usnintersite.md)                                          | False     | **Top** (Principales)      |
-| [**USN-Last-obj-REM**](a-usnlastobjrem.md)                                      | False     | **Top** (Principales)      |
-| [**USN: origen**](a-usnsource.md)                                                | False     | **Top** (Principales)      |
-| [**WBEM: ruta de acceso**](a-wbempath.md)                                                  | False     | **Top** (Principales)      |
-| [**Well-Known-Objects**](a-wellknownobjects.md)                                 | False     | **Top** (Principales)      |
-| [**Cuando se cambia**](a-whenchanged.md)                                            | False     | **Top** (Principales)      |
-| [**Cuándo se crea**](a-whencreated.md)                                            | False     | **Top** (Principales)      |
-| [**WWW-Página principal**](a-wwwhomepage.md)                                           | False     | **Top** (Principales)      |
-| [**WWW-página-otro**](a-url.md)                                                  | False     | **Top** (Principales)      |
+| [**Admin-Description**](a-admindescription.md)                                  | Falso     | **Top** (Principales)      |
+| [**Admin-Display-Name**](a-admindisplayname.md)                                 | Falso     | **Top** (Principales)      |
+| [**Atributos permitidos**](a-allowedattributes.md)                                | Falso     | **Top** (Principales)      |
+| [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)             | Falso     | **Top** (Principales)      |
+| [**Allowed-Child-Classes**](a-allowedchildclasses.md)                           | Falso     | **Top** (Principales)      |
+| [**Allowed-Child-Classes-Effective**](a-allowedchildclasseseffective.md)        | Falso     | **Top** (Principales)      |
+| [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)                    | Falso     | **Top** (Principales)      |
+| [**Canonical-Name**](a-canonicalname.md)                                        | Falso     | **Top** (Principales)      |
+| [**Common-Name**](a-cn.md)                                                      | Falso     | **Top** (Principales)      |
+| [**Create-Time-Stamp**](a-createtimestamp.md)                                   | Falso     | **Top** (Principales)      |
+| [**Descripción**](a-description.md)                                             | Falso     | **Top** (Principales)      |
+| [**Nombre para mostrar**](a-displayname.md)                                            | Falso     | **Top** (Principales)      |
+| [**Display-Name-Printable**](a-displaynameprintable.md)                         | Falso     | **Top** (Principales)      |
+| [**Firma DSA**](a-dsasignature.md)                                          | Falso     | **Top** (Principales)      |
+| [**DS-Core-Propagation-Data**](a-dscorepropagationdata.md)                      | Falso     | **Top** (Principales)      |
+| [**Nombre de extensión**](a-extensionname.md)                                        | Falso     | **Top** (Principales)      |
+| [**Banderas**](a-flags.md)                                                         | Falso     | **Top** (Principales)      |
+| [**Desde entrada**](a-fromentry.md)                                                | Falso     | **Top** (Principales)      |
+| [**Frs-Computer-Reference-BL**](a-frscomputerreferencebl.md)                    | Falso     | **Top** (Principales)      |
+| [**FRS-Member-Reference-BL**](a-frsmemberreferencebl.md)                        | Falso     | **Top** (Principales)      |
+| [**FSMO-Role-Owner**](a-fsmoroleowner.md)                                       | Falso     | **Top** (Principales)      |
+| [**Tipo de instancia**](a-instancetype.md)                                          | Verdadero      | **Top** (Principales)      |
+| [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)                    | Falso     | **Top** (Principales)      |
+| [**Se elimina**](a-isdeleted.md)                                                | Falso     | **Top** (Principales)      |
+| [**Is-Member-Of-DL**](a-memberof.md)                                            | Falso     | **Top** (Principales)      |
+| [**Is-Privilege-Holder**](a-isprivilegeholder.md)                               | Falso     | **Top** (Principales)      |
+| [**Se recicla**](a-isrecycled.md)                                              | Falso     | **Top** (Principales)      |
+| [**Último elemento primario conocido**](a-lastknownparent.md)                                   | Falso     | **Top** (Principales)      |
+| [**Objetos administrados**](a-managedobjects.md)                                      | Falso     | **Top** (Principales)      |
+| [**Mastered-By**](a-masteredby.md)                                              | Falso     | **Top** (Principales)      |
+| [**Modificación de marca de tiempo**](a-modifytimestamp.md)                                   | Falso     | **Top** (Principales)      |
+| [**ms-COM-PartitionSetLink**](a-mscom-partitionsetlink.md)                      | Falso     | **Top** (Principales)      |
+| [**ms-COM-UserLink**](a-mscom-userlink.md)                                      | Falso     | **Top** (Principales)      |
+| [**ms-DFSR-ComputerReferenceBL**](a-msdfsr-computerreferencebl.md)              | Falso     | **Top** (Principales)      |
+| [**ms-DFSR-MemberReferenceBL**](a-msdfsr-memberreferencebl.md)                  | Falso     | **Top** (Principales)      |
+| [**ms-DS-Approx-Immed-Subordinates**](a-msds-approx-immed-subordinates.md)      | Falso     | **Top** (Principales)      |
+| [**ms-DS-AuthenticatedTo-Accountlist**](a-msds-authenticatedtoaccountlist.md)   | Falso     | **Top** (Principales)      |
+| [**MS-DS-Consistency-Child-Count**](a-ms-ds-consistencychildcount.md)           | Falso     | **Top** (Principales)      |
+| [**MS-DS-Consistency-Guid**](a-ms-ds-consistencyguid.md)                        | Falso     | **Top** (Principales)      |
+| [**ms-DS-Enabled-Feature-BL**](a-msds-enabledfeaturebl.md)                      | Falso     | **Top** (Principales)      |
+| [**ms-DS-Host-Service-Account-BL**](a-msds-hostserviceaccountbl.md)             | Falso     | **Top** (Principales)      |
+| [**ms-DS-Is-Domain-For**](a-msds-isdomainfor.md)                                | Falso     | **Top** (Principales)      |
+| [**ms-DS-Is-Full-Replica-For**](a-msds-isfullreplicafor.md)                     | Falso     | **Top** (Principales)      |
+| [**ms-DS-Is-Partial-Replica-For**](a-msds-ispartialreplicafor.md)               | Falso     | **Top** (Principales)      |
+| [**ms-DS-KrbTgt-Link-BL**](a-msds-krbtgtlinkbl.md)                              | Falso     | **Top** (Principales)      |
+| [**ms-DS-Last-Known-RDN**](a-msds-lastknownrdn.md)                              | Falso     | **Top** (Principales)      |
+| [**ms-DS-local-Effective-Deletion-Time**](a-msds-localeffectivedeletiontime.md) | Falso     | **Top** (Principales)      |
+| [**ms-DS-local-Effective-Recycle-Time**](a-msds-localeffectiverecycletime.md)   | Falso     | **Top** (Principales)      |
+| [**ms-DS-Mastered-By**](a-msds-masteredby.md)                                   | Falso     | **Top** (Principales)      |
+| [**ms-DS-Members-For-Az-Role-BL**](a-msds-membersforazrolebl.md)                | Falso     | **Top** (Principales)      |
+| [**ms-DS-NC-Repl-Cursors**](a-msds-ncreplcursors.md)                            | Falso     | **Top** (Principales)      |
+| [**ms-DS-NC-Repl-Inbound-Neighbors**](a-msds-ncreplinboundneighbors.md)         | Falso     | **Top** (Principales)      |
+| [**ms-DS-NC-Repl-Outbound-Neighbors**](a-msds-ncreploutboundneighbors.md)       | Falso     | **Top** (Principales)      |
+| [**ms-DS-NC-RO-Replica-Locations-BL**](a-msds-nc-ro-replica-locations-bl.md)    | Falso     | **Top** (Principales)      |
+| [**ms-DS-NC-Type**](a-msds-nctype.md)                                           | Falso     | **Top** (Principales)      |
+| [**ms-DS-Non-Members-BL**](a-msds-nonmembersbl.md)                              | Falso     | **Top** (Principales)      |
+| [**ms-DS-Object-Reference-BL**](a-msds-objectreferencebl.md)                    | Falso     | **Top** (Principales)      |
+| [**ms-DS-OIDToGroup-Link-BL**](a-msds-oidtogrouplinkbl.md)                      | Falso     | **Top** (Principales)      |
+| [**ms-DS-Operations-For-Az-Role-BL**](a-msds-operationsforazrolebl.md)          | Falso     | **Top** (Principales)      |
+| [**ms-DS-Operations-For-Az-Task-BL**](a-msds-operationsforaztaskbl.md)          | Falso     | **Top** (Principales)      |
+| [**ms-DS-Principal-Name**](a-msds-principalname.md)                             | Falso     | **Top** (Principales)      |
+| [**ms-DS-PSO-Applied**](a-msds-psoapplied.md)                                   | Falso     | **Top** (Principales)      |
+| [**ms-DS-Repl-Attribute-Meta-Data**](a-msds-replattributemetadata.md)           | Falso     | **Top** (Principales)      |
+| [**ms-DS-Repl-Value-Meta-Data**](a-msds-replvaluemetadata.md)                   | Falso     | **Top** (Principales)      |
+| [**ms-DS-Revealed-DSA**](a-msds-revealeddsas.md)                               | Falso     | **Top** (Principales)      |
+| [**ms-DS-Revealed-List-BL**](a-msds-revealedlistbl.md)                          | Falso     | **Top** (Principales)      |
+| [**ms-DS-Tasks-For-Az-Role-BL**](a-msds-tasksforazrolebl.md)                    | Falso     | **Top** (Principales)      |
+| [**ms-DS-Tasks-For-Az-Task-BL**](a-msds-tasksforaztaskbl.md)                    | Falso     | **Top** (Principales)      |
+| [**ms-Exch-Owner-BL**](a-ownerbl.md)                                            | Falso     | **Top** (Principales)      |
+| [**msSFU-30-Posix-Member-Of**](a-mssfu30posixmemberof.md)                       | Falso     | **Top** (Principales)      |
+| [**netboot-SCP-BL**](a-netbootscpbl.md)                                         | Falso     | **Top** (Principales)      |
+| [**Miembro no de seguridad-BL**](a-nonsecuritymemberbl.md)                          | Falso     | **Top** (Principales)      |
+| [**NT-Security-Descriptor**](a-ntsecuritydescriptor.md)                         | Verdadero      | **Top** (Principales)      |
+| [**Obj-Dist-Name**](a-distinguishedname.md)                                     | Falso     | **Top** (Principales)      |
+| [**Object-Category**](a-objectcategory.md)                                      | Verdadero      | **Top** (Principales)      |
+| [**Object-Class**](a-objectclass.md)                                            | Verdadero      | **Top** (Principales)      |
+| [**Guid de objeto**](a-objectguid.md)                                              | Falso     | **Top** (Principales)      |
+| [**Object-Version**](a-objectversion.md)                                        | Falso     | **Top** (Principales)      |
+| [**Otros objetos conocidos**](a-otherwellknownobjects.md)                      | Falso     | **Top** (Principales)      |
+| [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)        | Falso     | **Top** (Principales)      |
+| [**Partial-Attribute-Set**](a-partialattributeset.md)                           | Falso     | **Top** (Principales)      |
+| [**Posibles inferiores**](a-possibleinferiors.md)                                | Falso     | **Top** (Principales)      |
+| [**Proxied-Object-Name**](a-proxiedobjectname.md)                               | Falso     | **Top** (Principales)      |
+| [**Direcciones proxy**](a-proxyaddresses.md)                                      | Falso     | **Top** (Principales)      |
+| [**Query-Policy-BL**](a-querypolicybl.md)                                       | Falso     | **Top** (Principales)      |
+| [**Rdn**](a-name.md)                                                            | Falso     | **Top** (Principales)      |
+| [**Repl-Property-Meta-Data**](a-replpropertymetadata.md)                        | Falso     | **Top** (Principales)      |
+| [**Repl-UpToDate-Vector**](a-repluptodatevector.md)                             | Falso     | **Top** (Principales)      |
+| [**Informes**](a-directreports.md)                                               | Falso     | **Top** (Principales)      |
+| [**Reps-From**](a-repsfrom.md)                                                  | Falso     | **Top** (Principales)      |
+| [**Reps-To**](a-repsto.md)                                                      | Falso     | **Top** (Principales)      |
+| [**Revisión**](a-revision.md)                                                   | Falso     | **Top** (Principales)      |
+| [**SD-Rights-Effective**](a-sdrightseffective.md)                               | Falso     | **Top** (Principales)      |
+| [**Server-Reference-BL**](a-serverreferencebl.md)                               | Falso     | **Top** (Principales)      |
+| [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)                   | Falso     | **Top** (Principales)      |
+| [**Site-Object-BL**](a-siteobjectbl.md)                                         | Falso     | **Top** (Principales)      |
+| [**Structural-Object-Class**](a-structuralobjectclass.md)                       | Falso     | **Top** (Principales)      |
+| [**Sub refs**](a-subrefs.md)                                                    | Falso     | **Top** (Principales)      |
+| [**SubSchemaSubEntry**](a-subschemasubentry.md)                                 | Falso     | **Top** (Principales)      |
+| [**Marcas del sistema**](a-systemflags.md)                                            | Falso     | **Top** (Principales)      |
+| [**USN cambiado**](a-usnchanged.md)                                              | Falso     | **Top** (Principales)      |
+| [**Creado por USN**](a-usncreated.md)                                              | Falso     | **Top** (Principales)      |
+| [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                       | Falso     | **Top** (Principales)      |
+| [**USN-Intersite**](a-usnintersite.md)                                          | Falso     | **Top** (Principales)      |
+| [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                      | Falso     | **Top** (Principales)      |
+| [**USN-Source**](a-usnsource.md)                                                | Falso     | **Top** (Principales)      |
+| [**Wbem-Path**](a-wbempath.md)                                                  | Falso     | **Top** (Principales)      |
+| [**Objetos conocidos**](a-wellknownobjects.md)                                 | Falso     | **Top** (Principales)      |
+| [**Cuándo se ha cambiado**](a-whenchanged.md)                                            | Falso     | **Top** (Principales)      |
+| [**Cuando se crea**](a-whencreated.md)                                            | Falso     | **Top** (Principales)      |
+| [**WWW-Página principal**](a-wwwhomepage.md)                                           | Falso     | **Top** (Principales)      |
+| [**WWW-Page-Other**](a-url.md)                                                  | Falso     | **Top** (Principales)      |
 
 
 
@@ -808,22 +808,22 @@ Esta clase contiene los siguientes atributos para Windows Server 2008 R2:
 
 | Entrada | Value |
 |-----------------------------|----------------------------------------------------------------------------------------------|
-| System-Only                 | True                                                                                         |
+| System-Only                 | Verdadero                                                                                         |
 | Object-Category             | 2                                                                                            |
 | Default-Object-Category     | \-                                                                                           |
 | Governs-Id                  | 2.5.6.0                                                                                      |
-| Valor de ocultación predeterminada        | 1                                                                                            |
-| RDN-ATT-ID                  | [**Nombre común**](a-cn.md)<br/>                                                       |
+| Valor predeterminado de ocultación        | 1                                                                                            |
+| Rdn-Att-Id                  | [**Common-Name**](a-cn.md)<br/>                                                       |
 | Subclase de                 | **Top** (Principales)<br/>                                                                           |
-| Posibles superiores          | [**Perdidos y encontrados**](c-lostandfound.md)                                                     |
+| Posibles superiores          | [**Perdido y encontrado**](c-lostandfound.md)                                                     |
 | Clases auxiliares           | \-                                                                                           |
-| Descriptor de NT-Security-      | O:BAG: BAD: S:                                                                                 |
-| Descriptor de seguridad predeterminado | D: (A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A) (A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY) (A;; RPLCLORC;;; ESTÉ |
+| NT-Security-Descriptor      | O:BAG:BAD:S:                                                                                 |
+| Descriptor de seguridad predeterminado | D:(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A)(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY)(A;; RPLCLORC;;; AU) |
 | System-Flags                | 0x00000010                                                                                   |
 
 
 
-## <a name="windows-server-2012-attributes"></a>Atributos de Windows Server 2012
+## <a name="windows-server-2012-attributes"></a>Windows Server 2012 Atributos
 
 Esta clase contiene los siguientes atributos para Windows Server 2012:
 
@@ -831,124 +831,124 @@ Esta clase contiene los siguientes atributos para Windows Server 2012:
 
 | Atributo                                                                                    | Mandatory | Derivado de |
 |----------------------------------------------------------------------------------------------|-----------|--------------|
-| [**Admin: Descripción**](a-admindescription.md)                                              | False     | **Top** (Principales)      |
-| [**Admin-Display-Name**](a-admindisplayname.md)                                             | False     | **Top** (Principales)      |
-| [**Permitido: atributos**](a-allowedattributes.md)                                            | False     | **Top** (Principales)      |
-| [**Permitido: atributos: efectivos**](a-allowedattributeseffective.md)                         | False     | **Top** (Principales)      |
-| [**Permitido: clases secundarias**](a-allowedchildclasses.md)                                       | False     | **Top** (Principales)      |
-| [**Permitido-clases secundarias-eficaces**](a-allowedchildclasseseffective.md)                    | False     | **Top** (Principales)      |
-| [**Cabeza de puente-servidor-lista-BL**](a-bridgeheadserverlistbl.md)                                | False     | **Top** (Principales)      |
-| [**Nombre canónico**](a-canonicalname.md)                                                    | False     | **Top** (Principales)      |
-| [**Nombre común**](a-cn.md)                                                                  | False     | **Top** (Principales)      |
-| [**Creación: marca de tiempo**](a-createtimestamp.md)                                               | False     | **Top** (Principales)      |
-| [**Descripción**](a-description.md)                                                         | False     | **Top** (Principales)      |
-| [**Nombre para mostrar**](a-displayname.md)                                                        | False     | **Top** (Principales)      |
-| [**Display-Name-printable**](a-displaynameprintable.md)                                     | False     | **Top** (Principales)      |
-| [**DSA-firma**](a-dsasignature.md)                                                      | False     | **Top** (Principales)      |
-| [**DS-Core-propagación-datos**](a-dscorepropagationdata.md)                                  | False     | **Top** (Principales)      |
-| [**Nombre de extensión**](a-extensionname.md)                                                    | False     | **Top** (Principales)      |
-| [**Marcas**](a-flags.md)                                                                     | False     | **Top** (Principales)      |
-| [**De entrada**](a-fromentry.md)                                                            | False     | **Top** (Principales)      |
-| [**FRS-Computer-Reference-BL**](a-frscomputerreferencebl.md)                                | False     | **Top** (Principales)      |
-| [**FRS-Member-Reference-BL**](a-frsmemberreferencebl.md)                                    | False     | **Top** (Principales)      |
-| [**FSMO: rol-Propietario**](a-fsmoroleowner.md)                                                   | False     | **Top** (Principales)      |
-| [**Tipo de instancia**](a-instancetype.md)                                                      | True      | **Top** (Principales)      |
-| [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)                                | False     | **Top** (Principales)      |
-| [**Se elimina**](a-isdeleted.md)                                                            | False     | **Top** (Principales)      |
-| [**Is-member-of-DL**](a-memberof.md)                                                        | False     | **Top** (Principales)      |
-| [**Es-titular de privilegios**](a-isprivilegeholder.md)                                           | False     | **Top** (Principales)      |
-| [**Se recicla**](a-isrecycled.md)                                                          | False     | **Top** (Principales)      |
-| [**Último conocido-primario**](a-lastknownparent.md)                                               | False     | **Top** (Principales)      |
-| [**Objetos administrados**](a-managedobjects.md)                                                  | False     | **Top** (Principales)      |
-| [**Maestro por**](a-masteredby.md)                                                          | False     | **Top** (Principales)      |
-| [**Modificar: marca de tiempo**](a-modifytimestamp.md)                                               | False     | **Top** (Principales)      |
-| [**MS-COM-PartitionSetLink**](a-mscom-partitionsetlink.md)                                  | False     | **Top** (Principales)      |
-| [**MS-COM-UserLink**](a-mscom-userlink.md)                                                  | False     | **Top** (Principales)      |
-| [**MS-DFSR-ComputerReferenceBL**](a-msdfsr-computerreferencebl.md)                          | False     | **Top** (Principales)      |
-| [**MS-DFSR-MemberReferenceBL**](a-msdfsr-memberreferencebl.md)                              | False     | **Top** (Principales)      |
-| [**MS-DS-aprox-immed-subordinados**](a-msds-approx-immed-subordinates.md)                  | False     | **Top** (Principales)      |
-| [**MS-DS-AuthenticatedTo-Accountlist**](a-msds-authenticatedtoaccountlist.md)               | False     | **Top** (Principales)      |
-| [**MS-DS-Claim-shares-posibles-Values-with-BL**](a-msds-claimsharespossiblevalueswithbl.md) | False     | **Top** (Principales)      |
-| [**MS-DS-Consistency-Child-Count**](a-ms-ds-consistencychildcount.md)                       | False     | **Top** (Principales)      |
-| [**MS-DS-Consistency-Guid**](a-ms-ds-consistencyguid.md)                                    | False     | **Top** (Principales)      |
-| [**MS-DS-Enabled-Feature-BL**](a-msds-enabledfeaturebl.md)                                  | False     | **Top** (Principales)      |
-| [**MS-DS-host-Service-Account-BL**](a-msds-hostserviceaccountbl.md)                         | False     | **Top** (Principales)      |
-| [**MS-DS-IS-domain-para**](a-msds-isdomainfor.md)                                            | False     | **Top** (Principales)      |
-| [**MS-DS-IS-FULL-Replica-para**](a-msds-isfullreplicafor.md)                                 | False     | **Top** (Principales)      |
-| [**MS-DS-IS-Partial-Replica-para**](a-msds-ispartialreplicafor.md)                           | False     | **Top** (Principales)      |
-| [**MS-DS-IS-Primary-Computer-para**](a-msds-isprimarycomputerfor.md)                         | False     | **Top** (Principales)      |
-| [**MS-DS-KrbTgt-Link-BL**](a-msds-krbtgtlinkbl.md)                                          | False     | **Top** (Principales)      |
-| [**MS-DS-Last-known-RDN**](a-msds-lastknownrdn.md)                                          | False     | **Top** (Principales)      |
-| [**MS-DS-local-de eliminación efectiva**](a-msds-localeffectivedeletiontime.md)             | False     | **Top** (Principales)      |
-| [**MS-DS-local-vigencia-reciclaje-hora**](a-msds-localeffectiverecycletime.md)               | False     | **Top** (Principales)      |
-| [**MS-DS-MASTERD-by**](a-msds-masteredby.md)                                               | False     | **Top** (Principales)      |
-| [**MS-DS-Members-for-AZ-role-BL**](a-msds-membersforazrolebl.md)                            | False     | **Top** (Principales)      |
-| [**MS-DS-Members-of-Resource-Property-List-BL**](a-msds-membersofresourcepropertylistbl.md) | False     | **Top** (Principales)      |
-| [**MS-DS-NC-REPL-cursores**](a-msds-ncreplcursors.md)                                        | False     | **Top** (Principales)      |
-| [**MS-DS-NC-REPL-entrada-vecinos**](a-msds-ncreplinboundneighbors.md)                     | False     | **Top** (Principales)      |
-| [**MS-DS-NC-REPL-Outbound-Neighbors**](a-msds-ncreploutboundneighbors.md)                   | False     | **Top** (Principales)      |
-| [**MS-DS-NC-RO-Replica-locations-BL**](a-msds-nc-ro-replica-locations-bl.md)                | False     | **Top** (Principales)      |
-| [**Tipo MS-DS-NC**](a-msds-nctype.md)                                                       | False     | **Top** (Principales)      |
-| [**MS-DS-non-Members-BL**](a-msds-nonmembersbl.md)                                          | False     | **Top** (Principales)      |
-| [**MS-DS-Object-Reference-BL**](a-msds-objectreferencebl.md)                                | False     | **Top** (Principales)      |
-| [**MS-DS-OIDToGroup-Link-BL**](a-msds-oidtogrouplinkbl.md)                                  | False     | **Top** (Principales)      |
-| [**MS-DS-Operations-for-AZ-role-BL**](a-msds-operationsforazrolebl.md)                      | False     | **Top** (Principales)      |
-| [**MS-DS-Operations-for-AZ-Task-BL**](a-msds-operationsforaztaskbl.md)                      | False     | **Top** (Principales)      |
-| [**Nombre de la entidad de seguridad de MS-DS**](a-msds-principalname.md)                                         | False     | **Top** (Principales)      |
-| [**MS-DS-PSO: aplicado**](a-msds-psoapplied.md)                                               | False     | **Top** (Principales)      |
-| [**MS-DS-REPL-Attribute-meta-data**](a-msds-replattributemetadata.md)                       | False     | **Top** (Principales)      |
-| [**MS-DS-REPL-Value-meta-data**](a-msds-replvaluemetadata.md)                               | False     | **Top** (Principales)      |
-| [**MS-DS-Revelód-DSA**](a-msds-revealeddsas.md)                                           | False     | **Top** (Principales)      |
-| [**MS-DS-Revelad-List-BL**](a-msds-revealedlistbl.md)                                      | False     | **Top** (Principales)      |
-| [**MS-DS-Tasks-for-AZ-role-BL**](a-msds-tasksforazrolebl.md)                                | False     | **Top** (Principales)      |
-| [**MS-DS-Tasks-for-AZ-Task-BL**](a-msds-tasksforaztaskbl.md)                                | False     | **Top** (Principales)      |
-| [**MS-DS-TDO-salida-BL**](a-msds-tdoegressbl.md)                                            | False     | **Top** (Principales)      |
-| [**MS-DS-TDO-entrada-BL**](a-msds-tdoingressbl.md)                                          | False     | **Top** (Principales)      |
-| [**MS-DS-Value-Type-Reference-BL**](a-msds-valuetypereferencebl.md)                         | False     | **Top** (Principales)      |
-| [**MS-Exch-Owner-BL**](a-ownerbl.md)                                                        | False     | **Top** (Principales)      |
-| [**msSFU-30-POSIX-member-of**](a-mssfu30posixmemberof.md)                                   | False     | **Top** (Principales)      |
-| [**netboot-SCP-BL**](a-netbootscpbl.md)                                                     | False     | **Top** (Principales)      |
-| [**Miembro no de seguridad-BL**](a-nonsecuritymemberbl.md)                                      | False     | **Top** (Principales)      |
-| [**Descriptor de NT-Security-**](a-ntsecuritydescriptor.md)                                     | True      | **Top** (Principales)      |
-| [**Obj-Dist-nombre**](a-distinguishedname.md)                                                 | False     | **Top** (Principales)      |
-| [**Objeto-categoría**](a-objectcategory.md)                                                  | True      | **Top** (Principales)      |
-| [**Clase de objeto**](a-objectclass.md)                                                        | True      | **Top** (Principales)      |
-| [**Object-GUID**](a-objectguid.md)                                                          | False     | **Top** (Principales)      |
-| [**Versión del objeto**](a-objectversion.md)                                                    | False     | **Top** (Principales)      |
-| [**Otros objetos conocidos**](a-otherwellknownobjects.md)                                  | False     | **Top** (Principales)      |
-| [**Lista de atributos parciales eliminados**](a-partialattributedeletionlist.md)                    | False     | **Top** (Principales)      |
-| [**Conjunto de atributos parciales**](a-partialattributeset.md)                                       | False     | **Top** (Principales)      |
-| [**Posibles: inferiores**](a-possibleinferiors.md)                                            | False     | **Top** (Principales)      |
-| [**Nombre-objeto-proxy**](a-proxiedobjectname.md)                                           | False     | **Top** (Principales)      |
-| [**Direcciones proxy**](a-proxyaddresses.md)                                                  | False     | **Top** (Principales)      |
-| [**Query: Directiva-BL**](a-querypolicybl.md)                                                   | False     | **Top** (Principales)      |
-| [**RDN**](a-name.md)                                                                        | False     | **Top** (Principales)      |
-| [**REPL-Property-meta-data**](a-replpropertymetadata.md)                                    | False     | **Top** (Principales)      |
-| [**REPL-UpToDate-Vector**](a-repluptodatevector.md)                                         | False     | **Top** (Principales)      |
-| [**Informes**](a-directreports.md)                                                           | False     | **Top** (Principales)      |
-| [**Representantes: desde**](a-repsfrom.md)                                                              | False     | **Top** (Principales)      |
-| [**Representantes-a**](a-repsto.md)                                                                  | False     | **Top** (Principales)      |
-| [**Revisión**](a-revision.md)                                                               | False     | **Top** (Principales)      |
-| [**SD-derechos-efectivos**](a-sdrightseffective.md)                                           | False     | **Top** (Principales)      |
-| [**Servidor-referencia-BL**](a-serverreferencebl.md)                                           | False     | **Top** (Principales)      |
-| [**Mostrar en la vista avanzada**](a-showinadvancedviewonly.md)                               | False     | **Top** (Principales)      |
-| [**Sitio-objeto-BL**](a-siteobjectbl.md)                                                     | False     | **Top** (Principales)      |
-| [**Clase de objeto estructural**](a-structuralobjectclass.md)                                   | False     | **Top** (Principales)      |
-| [**Referencias secundarias**](a-subrefs.md)                                                                | False     | **Top** (Principales)      |
-| [**SubSchemaSubEntry**](a-subschemasubentry.md)                                             | False     | **Top** (Principales)      |
-| [**Marcas de sistema**](a-systemflags.md)                                                        | False     | **Top** (Principales)      |
-| [**USN: cambiado**](a-usnchanged.md)                                                          | False     | **Top** (Principales)      |
-| [**USN: creado**](a-usncreated.md)                                                          | False     | **Top** (Principales)      |
-| [**USN-DSA-Last-obj-quitado**](a-usndsalastobjremoved.md)                                   | False     | **Top** (Principales)      |
-| [**USN: entre sitios**](a-usnintersite.md)                                                      | False     | **Top** (Principales)      |
-| [**USN-Last-obj-REM**](a-usnlastobjrem.md)                                                  | False     | **Top** (Principales)      |
-| [**USN: origen**](a-usnsource.md)                                                            | False     | **Top** (Principales)      |
-| [**WBEM: ruta de acceso**](a-wbempath.md)                                                              | False     | **Top** (Principales)      |
-| [**Well-Known-Objects**](a-wellknownobjects.md)                                             | False     | **Top** (Principales)      |
-| [**Cuando se cambia**](a-whenchanged.md)                                                        | False     | **Top** (Principales)      |
-| [**Cuándo se crea**](a-whencreated.md)                                                        | False     | **Top** (Principales)      |
-| [**WWW-Página principal**](a-wwwhomepage.md)                                                       | False     | **Top** (Principales)      |
-| [**WWW-página-otro**](a-url.md)                                                              | False     | **Top** (Principales)      |
+| [**Admin-Description**](a-admindescription.md)                                              | Falso     | **Top** (Principales)      |
+| [**Admin-Display-Name**](a-admindisplayname.md)                                             | Falso     | **Top** (Principales)      |
+| [**Atributos permitidos**](a-allowedattributes.md)                                            | Falso     | **Top** (Principales)      |
+| [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)                         | Falso     | **Top** (Principales)      |
+| [**Allowed-Child-Classes**](a-allowedchildclasses.md)                                       | Falso     | **Top** (Principales)      |
+| [**Allowed-Child-Classes-Effective**](a-allowedchildclasseseffective.md)                    | Falso     | **Top** (Principales)      |
+| [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)                                | Falso     | **Top** (Principales)      |
+| [**Canonical-Name**](a-canonicalname.md)                                                    | Falso     | **Top** (Principales)      |
+| [**Nombre común**](a-cn.md)                                                                  | Falso     | **Top** (Principales)      |
+| [**Crear marca de tiempo**](a-createtimestamp.md)                                               | Falso     | **Top** (Principales)      |
+| [**Descripción**](a-description.md)                                                         | Falso     | **Top** (Principales)      |
+| [**Nombre para mostrar**](a-displayname.md)                                                        | Falso     | **Top** (Principales)      |
+| [**Display-Name-Printable**](a-displaynameprintable.md)                                     | Falso     | **Top** (Principales)      |
+| [**Firma DSA**](a-dsasignature.md)                                                      | Falso     | **Top** (Principales)      |
+| [**DS-Core-Propagation-Data**](a-dscorepropagationdata.md)                                  | Falso     | **Top** (Principales)      |
+| [**Nombre de extensión**](a-extensionname.md)                                                    | Falso     | **Top** (Principales)      |
+| [**Banderas**](a-flags.md)                                                                     | Falso     | **Top** (Principales)      |
+| [**Desde entrada**](a-fromentry.md)                                                            | Falso     | **Top** (Principales)      |
+| [**Frs-Computer-Reference-BL**](a-frscomputerreferencebl.md)                                | Falso     | **Top** (Principales)      |
+| [**FRS-Member-Reference-BL**](a-frsmemberreferencebl.md)                                    | Falso     | **Top** (Principales)      |
+| [**FSMO-Role-Owner**](a-fsmoroleowner.md)                                                   | Falso     | **Top** (Principales)      |
+| [**Tipo de instancia**](a-instancetype.md)                                                      | Verdadero      | **Top** (Principales)      |
+| [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)                                | Falso     | **Top** (Principales)      |
+| [**Se elimina**](a-isdeleted.md)                                                            | Falso     | **Top** (Principales)      |
+| [**Is-Member-Of-DL**](a-memberof.md)                                                        | Falso     | **Top** (Principales)      |
+| [**Is-Privilege-Holder**](a-isprivilegeholder.md)                                           | Falso     | **Top** (Principales)      |
+| [**Se recicla**](a-isrecycled.md)                                                          | Falso     | **Top** (Principales)      |
+| [**Último elemento primario conocido**](a-lastknownparent.md)                                               | Falso     | **Top** (Principales)      |
+| [**Objetos administrados**](a-managedobjects.md)                                                  | Falso     | **Top** (Principales)      |
+| [**Mastered-By**](a-masteredby.md)                                                          | Falso     | **Top** (Principales)      |
+| [**Modificación de marca de tiempo**](a-modifytimestamp.md)                                               | Falso     | **Top** (Principales)      |
+| [**ms-COM-PartitionSetLink**](a-mscom-partitionsetlink.md)                                  | Falso     | **Top** (Principales)      |
+| [**ms-COM-UserLink**](a-mscom-userlink.md)                                                  | Falso     | **Top** (Principales)      |
+| [**ms-DFSR-ComputerReferenceBL**](a-msdfsr-computerreferencebl.md)                          | Falso     | **Top** (Principales)      |
+| [**ms-DFSR-MemberReferenceBL**](a-msdfsr-memberreferencebl.md)                              | Falso     | **Top** (Principales)      |
+| [**ms-DS-Approx-Immed-Subordinates**](a-msds-approx-immed-subordinates.md)                  | Falso     | **Top** (Principales)      |
+| [**ms-DS-AuthenticatedTo-Accountlist**](a-msds-authenticatedtoaccountlist.md)               | Falso     | **Top** (Principales)      |
+| [**ms-DS-Claim-Shares-Possible-Values-With-BL**](a-msds-claimsharespossiblevalueswithbl.md) | Falso     | **Top** (Principales)      |
+| [**MS-DS-Consistency-Child-Count**](a-ms-ds-consistencychildcount.md)                       | Falso     | **Top** (Principales)      |
+| [**MS-DS-Consistency-Guid**](a-ms-ds-consistencyguid.md)                                    | Falso     | **Top** (Principales)      |
+| [**ms-DS-Enabled-Feature-BL**](a-msds-enabledfeaturebl.md)                                  | Falso     | **Top** (Principales)      |
+| [**ms-DS-Host-Service-Account-BL**](a-msds-hostserviceaccountbl.md)                         | Falso     | **Top** (Principales)      |
+| [**ms-DS-Is-Domain-For**](a-msds-isdomainfor.md)                                            | Falso     | **Top** (Principales)      |
+| [**ms-DS-Is-Full-Replica-For**](a-msds-isfullreplicafor.md)                                 | Falso     | **Top** (Principales)      |
+| [**ms-DS-Is-Partial-Replica-For**](a-msds-ispartialreplicafor.md)                           | Falso     | **Top** (Principales)      |
+| [**ms-DS-Is-Primary-Computer-For**](a-msds-isprimarycomputerfor.md)                         | Falso     | **Top** (Principales)      |
+| [**ms-DS-KrbTgt-Link-BL**](a-msds-krbtgtlinkbl.md)                                          | Falso     | **Top** (Principales)      |
+| [**ms-DS-Last-Known-RDN**](a-msds-lastknownrdn.md)                                          | Falso     | **Top** (Principales)      |
+| [**ms-DS-local-Effective-Deletion-Time**](a-msds-localeffectivedeletiontime.md)             | Falso     | **Top** (Principales)      |
+| [**ms-DS-local-Effective-Recycle-Time**](a-msds-localeffectiverecycletime.md)               | Falso     | **Top** (Principales)      |
+| [**ms-DS-Mastered-By**](a-msds-masteredby.md)                                               | Falso     | **Top** (Principales)      |
+| [**ms-DS-Members-For-Az-Role-BL**](a-msds-membersforazrolebl.md)                            | Falso     | **Top** (Principales)      |
+| [**ms-DS-Members-Of-Resource-Property-List-BL**](a-msds-membersofresourcepropertylistbl.md) | Falso     | **Top** (Principales)      |
+| [**ms-DS-NC-Repl-Cursors**](a-msds-ncreplcursors.md)                                        | Falso     | **Top** (Principales)      |
+| [**ms-DS-NC-Repl-Inbound-Neighbors**](a-msds-ncreplinboundneighbors.md)                     | Falso     | **Top** (Principales)      |
+| [**ms-DS-NC-Repl-Outbound-Neighbors**](a-msds-ncreploutboundneighbors.md)                   | Falso     | **Top** (Principales)      |
+| [**ms-DS-NC-RO-Replica-Locations-BL**](a-msds-nc-ro-replica-locations-bl.md)                | Falso     | **Top** (Principales)      |
+| [**ms-DS-NC-Type**](a-msds-nctype.md)                                                       | Falso     | **Top** (Principales)      |
+| [**ms-DS-Non-Members-BL**](a-msds-nonmembersbl.md)                                          | Falso     | **Top** (Principales)      |
+| [**ms-DS-Object-Reference-BL**](a-msds-objectreferencebl.md)                                | Falso     | **Top** (Principales)      |
+| [**ms-DS-OIDToGroup-Link-BL**](a-msds-oidtogrouplinkbl.md)                                  | Falso     | **Top** (Principales)      |
+| [**ms-DS-Operations-For-Az-Role-BL**](a-msds-operationsforazrolebl.md)                      | Falso     | **Top** (Principales)      |
+| [**ms-DS-Operations-For-Az-Task-BL**](a-msds-operationsforaztaskbl.md)                      | Falso     | **Top** (Principales)      |
+| [**ms-DS-Principal-Name**](a-msds-principalname.md)                                         | Falso     | **Top** (Principales)      |
+| [**ms-DS-PSO-Applied**](a-msds-psoapplied.md)                                               | Falso     | **Top** (Principales)      |
+| [**ms-DS-Repl-Attribute-Meta-Data**](a-msds-replattributemetadata.md)                       | Falso     | **Top** (Principales)      |
+| [**ms-DS-Repl-Value-Meta-Data**](a-msds-replvaluemetadata.md)                               | Falso     | **Top** (Principales)      |
+| [**ms-DS-Revealed-DSA**](a-msds-revealeddsas.md)                                           | Falso     | **Top** (Principales)      |
+| [**ms-DS-Revealed-List-BL**](a-msds-revealedlistbl.md)                                      | Falso     | **Top** (Principales)      |
+| [**ms-DS-Tasks-For-Az-Role-BL**](a-msds-tasksforazrolebl.md)                                | Falso     | **Top** (Principales)      |
+| [**ms-DS-Tasks-For-Az-Task-BL**](a-msds-tasksforaztaskbl.md)                                | Falso     | **Top** (Principales)      |
+| [**ms-DS-TDO-Egress-BL**](a-msds-tdoegressbl.md)                                            | Falso     | **Top** (Principales)      |
+| [**ms-DS-TDO-Ingress-BL**](a-msds-tdoingressbl.md)                                          | Falso     | **Top** (Principales)      |
+| [**ms-DS-Value-Type-Reference-BL**](a-msds-valuetypereferencebl.md)                         | Falso     | **Top** (Principales)      |
+| [**ms-Exch-Owner-BL**](a-ownerbl.md)                                                        | Falso     | **Top** (Principales)      |
+| [**msSFU-30-Posix-Member-Of**](a-mssfu30posixmemberof.md)                                   | Falso     | **Top** (Principales)      |
+| [**netboot-SCP-BL**](a-netbootscpbl.md)                                                     | Falso     | **Top** (Principales)      |
+| [**Miembro no de seguridad-BL**](a-nonsecuritymemberbl.md)                                      | Falso     | **Top** (Principales)      |
+| [**NT-Security-Descriptor**](a-ntsecuritydescriptor.md)                                     | Verdadero      | **Top** (Principales)      |
+| [**Obj-Dist-Name**](a-distinguishedname.md)                                                 | Falso     | **Top** (Principales)      |
+| [**Object-Category**](a-objectcategory.md)                                                  | Verdadero      | **Top** (Principales)      |
+| [**Object-Class**](a-objectclass.md)                                                        | Verdadero      | **Top** (Principales)      |
+| [**Guid de objeto**](a-objectguid.md)                                                          | Falso     | **Top** (Principales)      |
+| [**Object-Version**](a-objectversion.md)                                                    | Falso     | **Top** (Principales)      |
+| [**Otros objetos conocidos**](a-otherwellknownobjects.md)                                  | Falso     | **Top** (Principales)      |
+| [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)                    | Falso     | **Top** (Principales)      |
+| [**Partial-Attribute-Set**](a-partialattributeset.md)                                       | Falso     | **Top** (Principales)      |
+| [**Posibles inferiores**](a-possibleinferiors.md)                                            | Falso     | **Top** (Principales)      |
+| [**Proxied-Object-Name**](a-proxiedobjectname.md)                                           | Falso     | **Top** (Principales)      |
+| [**Direcciones proxy**](a-proxyaddresses.md)                                                  | Falso     | **Top** (Principales)      |
+| [**Query-Policy-BL**](a-querypolicybl.md)                                                   | Falso     | **Top** (Principales)      |
+| [**Rdn**](a-name.md)                                                                        | Falso     | **Top** (Principales)      |
+| [**Repl-Property-Meta-Data**](a-replpropertymetadata.md)                                    | Falso     | **Top** (Principales)      |
+| [**Repl-UpToDate-Vector**](a-repluptodatevector.md)                                         | Falso     | **Top** (Principales)      |
+| [**Informes**](a-directreports.md)                                                           | Falso     | **Top** (Principales)      |
+| [**Reps-From**](a-repsfrom.md)                                                              | Falso     | **Top** (Principales)      |
+| [**Reps-To**](a-repsto.md)                                                                  | Falso     | **Top** (Principales)      |
+| [**Revisión**](a-revision.md)                                                               | Falso     | **Top** (Principales)      |
+| [**SD-Rights-Effective**](a-sdrightseffective.md)                                           | Falso     | **Top** (Principales)      |
+| [**Server-Reference-BL**](a-serverreferencebl.md)                                           | Falso     | **Top** (Principales)      |
+| [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)                               | Falso     | **Top** (Principales)      |
+| [**Site-Object-BL**](a-siteobjectbl.md)                                                     | Falso     | **Top** (Principales)      |
+| [**Structural-Object-Class**](a-structuralobjectclass.md)                                   | Falso     | **Top** (Principales)      |
+| [**Sub refs**](a-subrefs.md)                                                                | Falso     | **Top** (Principales)      |
+| [**SubSchemaSubEntry**](a-subschemasubentry.md)                                             | Falso     | **Top** (Principales)      |
+| [**Marcas del sistema**](a-systemflags.md)                                                        | Falso     | **Top** (Principales)      |
+| [**USN cambiado**](a-usnchanged.md)                                                          | Falso     | **Top** (Principales)      |
+| [**UsN creado**](a-usncreated.md)                                                          | Falso     | **Top** (Principales)      |
+| [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                                   | Falso     | **Top** (Principales)      |
+| [**USN-Intersite**](a-usnintersite.md)                                                      | Falso     | **Top** (Principales)      |
+| [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                                  | Falso     | **Top** (Principales)      |
+| [**USN-Source**](a-usnsource.md)                                                            | Falso     | **Top** (Principales)      |
+| [**Wbem-Path**](a-wbempath.md)                                                              | Falso     | **Top** (Principales)      |
+| [**Well-Known-Objects**](a-wellknownobjects.md)                                             | Falso     | **Top** (Principales)      |
+| [**Cuándo se ha cambiado**](a-whenchanged.md)                                                        | Falso     | **Top** (Principales)      |
+| [**Cuando se crea**](a-whencreated.md)                                                        | Falso     | **Top** (Principales)      |
+| [**PÁGINA PRINCIPAL DE WWW**](a-wwwhomepage.md)                                                       | Falso     | **Top** (Principales)      |
+| [**WWW-Page-Other**](a-url.md)                                                              | Falso     | **Top** (Principales)      |
 
 
 

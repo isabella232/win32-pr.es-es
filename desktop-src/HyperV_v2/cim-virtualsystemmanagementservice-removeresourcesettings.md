@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: e5c7daabcdcd732c3a5693664e1768ebf66668d6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4a3b94ff6ecd42ea362cc5caec91bdbd6c7f484acc687dc52d22acf4c1047f09
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119682725"
 ---
 # <a name="removeresourcesettings-method-of-the-cim_virtualsystemmanagementservice-class"></a>Método RemoveResourceSettings de la clase \_ CIM VirtualSystemManagementService
 
@@ -45,14 +45,14 @@ uint32 RemoveResourceSettings(
 *ResourceSettings* \[ En\]
 </dt> <dd>
 
-Matriz de referencias a instancias de la clase [**\_ CIM ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) donde cada instancia representa la configuración de un recurso virtual dentro de una configuración del sistema virtual que se va a quitar.
+Matriz de referencias a instancias de la clase [**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) donde cada instancia representa la configuración de un recurso virtual dentro de una configuración del sistema virtual que se va a quitar.
 
 </dd> <dt>
 
 *Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación es de larga duración, opcionalmente se puede devolver [**un \_ ConcreteJob cim**](cim-concretejob.md) que representa el trabajo.
+Si la operación es de larga duración, opcionalmente se puede devolver [**un \_ concretejob CIM**](cim-concretejob.md) que representa el trabajo.
 
 </dd> </dl>
 
@@ -96,7 +96,7 @@ Devuelve un 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -106,7 +106,7 @@ Devuelve un 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

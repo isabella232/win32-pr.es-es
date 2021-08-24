@@ -1,7 +1,7 @@
 ---
 description: Representa los datos de configuración de LAN virtual (VLAN).
 ms.assetid: c3a49021-5256-4751-a5a5-81bf1c6d6e6d
-title: Msvm_EthernetSwitchPortVlanSettingData (clase)
+title: Msvm_EthernetSwitchPortVlanSettingData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -26,18 +26,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 6fce6416696a99e5d928b774e2ba2a05b1dc21d3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8c4d9c3c3101cb7593f54e8624a2d7e316cb27378b0ad504cdf8364b03020efb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105670021"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119523775"
 ---
-# <a name="msvm_ethernetswitchportvlansettingdata-class"></a>MSVM \_ EthernetSwitchPortVlanSettingData (clase)
+# <a name="msvm_ethernetswitchportvlansettingdata-class"></a>Clase Msvm \_ EthernetSwitchPortVlanSettingData
 
 Representa los datos de configuración de LAN virtual (VLAN).
 
-La siguiente sintaxis es código simplificado de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se simplifica Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -63,23 +63,23 @@ class Msvm_EthernetSwitchPortVlanSettingData : Msvm_EthernetSwitchPortFeatureSet
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ EthernetSwitchPortVlanSettingData** tiene estos tipos de miembros:
+La **clase Msvm \_ EthernetSwitchPortVlanSettingData** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ EthernetSwitchPortVlanSettingData** tiene estas propiedades.
+La **clase Msvm \_ EthernetSwitchPortVlanSettingData** tiene estas propiedades.
 
 <dl> <dt>
 
 **AccessVlanId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (2), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -98,7 +98,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Breve descripción del objeto. Esta propiedad se hereda de [**la \_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "configuración de VLAN del puerto del conmutador Ethernet".
+Breve descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)de CIM y siempre se establece en "Ethernet Switch Port VLAN Configuración".
 
 </dd> <dt>
 
@@ -111,7 +111,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre está establecida en "representa los datos de configuración de VLAN".
+Descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "Representa los datos de configuración de vlan".
 
 </dd> <dt>
 
@@ -124,7 +124,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre para mostrar del objeto. Esta propiedad se hereda de [**la \_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "configuración de VLAN del puerto del conmutador Ethernet".
+Nombre para mostrar del objeto. Esta propiedad se hereda de [**\_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)de CIM y siempre se establece en "Ethernet Switch Port VLAN Configuración".
 
 </dd> <dt>
 
@@ -137,36 +137,36 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
-Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **NativeVlanId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (3), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Especifica el identificador de VLAN en el modo de tronco.
+Especifica el identificador de VLAN en modo de tronco.
 
 </dd> <dt>
 
 **OperationMode**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (1), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -202,10 +202,10 @@ Especifica el modo de operación de VLAN.
 **PrimaryVlanId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (5), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -218,32 +218,32 @@ Especifica el identificador de VLAN principal en modo privado.
 **PruneVlanIdArray**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (7), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Especifica el mapa de bits de la eliminación del identificador de VLAN en el modo de tronco.
+Especifica el mapa de bits del identificador de VLAN en modo de tronco.
 
 </dd> <dt>
 
 **PvlanMode**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (4), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Especifica el modo de VLAN privada.
+Especifica el modo VLAN privado.
 
 <dt>
 
@@ -256,14 +256,14 @@ Especifica el modo de VLAN privada.
 
 <span id="Community"></span><span id="community"></span><span id="COMMUNITY"></span>
 
-**Comunidad** (2)
+**Community** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Promiscuous"></span><span id="promiscuous"></span><span id="PROMISCUOUS"></span>
 
-**Promiscuo** (3)
+**Promiscuous** (3)
 
 
 </dt> <dd></dd> </dl>
@@ -273,10 +273,10 @@ Especifica el modo de VLAN privada.
 **SecondaryVlanId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (6), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -289,10 +289,10 @@ Especifica el identificador de VLAN secundario en modo privado.
 **SecondaryVlanIdArray**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (9), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -305,16 +305,16 @@ Especifica el mapa de bits del identificador de VLAN secundario en modo privado.
 **TrunkVlanIdArray**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (8), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Especifica el mapa de bits del identificador de VLAN de tronco en el modo de tronco.
+Especifica el mapa de bits del identificador de VLAN del tronco en modo de tronco.
 
 </dd> </dl>
 
@@ -322,12 +322,12 @@ Especifica el mapa de bits del identificador de VLAN de tronco en el modo de tro
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

@@ -4,33 +4,33 @@ ms.assetid: 33361a97-0f27-477a-a0ee-3d4d3aaeaacf
 title: Información de tipo de calendario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 17a8e334a1b05f372f51c81ab8158294d46eebfd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 57d59229517143444aa00be9907b7419e0656147ad2fdaacf4aa5cec6e872caa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912565"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147708"
 ---
 # <a name="calendar-type-information"></a>Información de tipo de calendario
 
-En este tema se describe la información de tipo de calendario (tipo de datos CALTYPE) utilizada en las funciones [**EnumCalendarInfo**](/windows/desktop/api/Winnls/nf-winnls-enumcalendarinfoa), [**EnumCalendarInfoEx**](/windows/desktop/api/Winnls/nf-winnls-enumcalendarinfoexa), [**EnumCalendarInfoExEx**](/windows/desktop/api/Winnls/nf-winnls-enumcalendarinfoexex), [**GetCalendarInfo**](/windows/desktop/api/Winnls/nf-winnls-getcalendarinfoa)y [**GetCalendarInfoEx**](/windows/desktop/api/Winnls/nf-winnls-getcalendarinfoex) . Algunos de estos valores también se usan en la función [**SetCalendarInfo**](/windows/desktop/api/Winnls/nf-winnls-setcalendarinfoa) .
+En este tema se describe la información de tipo de calendario (tipo de datos CALTYPE) utilizada en las funciones [**EnumCalendarInfo**](/windows/desktop/api/Winnls/nf-winnls-enumcalendarinfoa), [**EnumCalendarInfoEx,**](/windows/desktop/api/Winnls/nf-winnls-enumcalendarinfoexa) [**EnumCalendarInfoExEx,**](/windows/desktop/api/Winnls/nf-winnls-enumcalendarinfoexex) [**GetCalendarInfo**](/windows/desktop/api/Winnls/nf-winnls-getcalendarinfoa)y [**GetCalendarInfoEx.**](/windows/desktop/api/Winnls/nf-winnls-getcalendarinfoex) La función [**SetCalendarInfo**](/windows/desktop/api/Winnls/nf-winnls-setcalendarinfoa) también usa algunos de estos valores.
 
-Las constantes CALTYPE siguientes se pueden usar en combinación con cualquier otra constante CALTYPE.
+Las siguientes constantes CALTYPE se pueden usar en combinación con cualquier otra constante CALTYPE.
 
 
 
 | Constante                     | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CAL \_ NOUSEROVERRIDE          | **Windows Me/98, windows 2000:** Use el valor predeterminado del sistema en lugar de la elección del usuario.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| la \_ cal \_ devuelve \_ nombres genitivo | **Windows 7 y versiones posteriores:** Recupere el resultado de [**GetCalendarInfo**](/windows/desktop/api/Winnls/nf-winnls-getcalendarinfoa) en forma de nombres genitivo de meses, que son los nombres que se usan cuando los nombres de los meses se combinan con otros elementos. Por ejemplo, en ucraniano, el equivalente de enero se escribe "Січень" cuando el mes se denomina solo. Sin embargo, cuando el nombre del mes se usa en combinación, por ejemplo, en una fecha como el 5 de enero de 2003, se usa la forma genitivo del nombre. En el ejemplo ucraniano, el nombre del mes en genitivo se muestra como "5 січня 2003". Para obtener más información, vea [configuración \_ regional \_ devolver \_ nombres genitivo](locale-return-constants.md). |
-| \_número de devolución de cal \_          | **Windows Me/98, windows 2000:** Recupere el resultado de [**GetCalendarInfo**](/windows/desktop/api/Winnls/nf-winnls-getcalendarinfoa) como un número en lugar de una cadena. Esto solo es válido para los valores que comienzan con CAL \_ I.                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| CAL- \_ usar \_ CP \_ ACP            | **Windows Me/98, windows 2000:** Use la página de códigos ANSI (ACP) del sistema en lugar de la página de códigos de configuración regional para la traducción de cadenas. Esto solo es relevante para las versiones ANSI de funciones, por ejemplo, **EnumCalendarInfoA**.                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| CAL \_ NOUSEROVERRIDE          | **Windows Me/98, Windows 2000:** Use el valor predeterminado del sistema en lugar de la elección del usuario.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| CAL \_ DEVUELVE \_ NOMBRES TIVE \_ | **Windows 7 y versiones posteriores:** Recupere el resultado de [**GetCalendarInfo**](/windows/desktop/api/Winnls/nf-winnls-getcalendarinfoa) en forma de nombres adicionales de meses, que son los nombres que se usan cuando los nombres de mes se combinan con otros elementos. Por ejemplo, en Insensulte, el equivalente de enero se escribe "" cuando el mes se denomina por sí solo. Sin embargo, cuando el nombre del mes se usa en combinación, por ejemplo, en una fecha como el 5 de enero de 2003, se usa el formato tivetive del nombre. En el ejemplo Desastroso, el nombre del mes tive se muestra como "5 сtivos 2003". Para obtener más información, [vea LOCALE \_ RETURN \_ \_ TIVETIVE NAMES](locale-return-constants.md). |
+| CAL \_ RETURN \_ NUMBER          | **Windows Me/98, Windows 2000:** Recupere el resultado de [**GetCalendarInfo**](/windows/desktop/api/Winnls/nf-winnls-getcalendarinfoa) como un número en lugar de una cadena. Esto solo es válido para los valores que comienzan por CAL \_ I.                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| CAL \_ USE \_ CP \_ ACP            | **Windows Me/98, Windows 2000:** Use la página de códigos ANSI del sistema (ACP) en lugar de la página de códigos de configuración regional para la traducción de cadenas. Esto solo es relevante para las versiones ANSI de funciones, por ejemplo, **EnumCalendarInfoA**.                                                                                                                                                                                                                                                                                                                                                                                                                               |
 
 
 
  
 
-Las constantes CALTYPE siguientes se excluyen mutuamente y no se pueden usar en combinación entre sí en una llamada de función.
+Las siguientes constantes CALTYPE son mutuamente excluyentes y no se pueden usar en combinación entre sí en una llamada de función.
 
 
 
@@ -48,15 +48,15 @@ Las constantes CALTYPE siguientes se excluyen mutuamente y no se pueden usar en 
 <tbody>
 <tr class="odd">
 <td>CAL_ICALINTVALUE</td>
-<td>Un valor entero que indica el tipo de calendario del calendario alternativo.</td>
+<td>Valor entero que indica el tipo de calendario del calendario alternativo.</td>
 </tr>
 <tr class="even">
 <td>CAL_ITWODIGITYEARMAX</td>
-<td><strong>Windows Me/98, windows 2000:</strong> Un valor entero que indica el límite superior del intervalo de año de dos dígitos.</td>
+<td><strong>Windows Me/98, Windows 2000:</strong> Valor entero que indica el límite superior del intervalo de año de dos dígitos.</td>
 </tr>
 <tr class="odd">
 <td>CAL_IYEAROFFSETRANGE</td>
-<td>Una o más cadenas terminadas en null que especifican los desplazamientos de año para cada uno de los intervalos de la era. La última cadena tiene un carácter nulo de terminación adicional. Este valor varía en función del tipo de calendario opcional.</td>
+<td>Una o varias cadenas terminadas en NULL que especifican los desplazamientos de año para cada uno de los intervalos de era. La última cadena tiene un carácter nulo de terminación adicional. Este valor varía en formato en función del tipo de calendario opcional.</td>
 </tr>
 <tr class="even">
 <td>CAL_SABBREVDAYNAME1</td>
@@ -88,7 +88,7 @@ Las constantes CALTYPE siguientes se excluyen mutuamente y no se pueden usar en 
 </tr>
 <tr class="odd">
 <td>CAL_SABBREVERASTRING</td>
-<td><strong>Windows 7 y versiones posteriores:</strong> Nombre nativo abreviado de una era. La era completa se representa mediante la constante CAL_SERASTRING.</td>
+<td><strong>Windows 7 y versiones posteriores:</strong> Nombre nativo abreviado de una era. La era completa se representa mediante la CAL_SERASTRING constante.</td>
 </tr>
 <tr class="even">
 <td>CAL_SABBREVMONTHNAME1</td>
@@ -176,15 +176,15 @@ Las constantes CALTYPE siguientes se excluyen mutuamente y no se pueden usar en 
 </tr>
 <tr class="odd">
 <td>CAL_SERASTRING</td>
-<td>Una o más cadenas terminadas en null que especifican cada uno de los puntos de código Unicode que especifican la era asociada a CAL_IYEAROFFSETRANGE. La última cadena tiene un carácter nulo de terminación adicional. Este valor varía en función del tipo de calendario opcional.</td>
+<td>Una o varias cadenas terminadas en NULL que especifican cada uno de los puntos de código Unicode que especifican la era asociada a CAL_IYEAROFFSETRANGE. La última cadena tiene un carácter nulo de terminación adicional. Este valor varía en formato en función del tipo de calendario opcional.</td>
 </tr>
 <tr class="even">
 <td>CAL_SLONGDATE</td>
-<td>Formatos de fecha larga para el tipo de calendario.</td>
+<td>Formatos de fecha largos para el tipo de calendario.</td>
 </tr>
 <tr class="odd">
 <td>CAL_SMONTHDAY</td>
-<td><strong>Windows 7 y versiones posteriores:</strong> Formato del mes y día para el tipo de calendario. El formato es similar al de CAL_SLONGDATE. Por ejemplo, si el patrón de mes/día es el nombre completo del mes seguido del número de día con ceros a la izquierda, por ejemplo, &quot; el 03 de septiembre &quot; , el formato es &quot; mmmm DD &quot; . Las comillas simples se pueden usar para insertar caracteres sin formato, por ejemplo, ' de ' en español.
+<td><strong>Windows 7 y versiones posteriores:</strong> Formato del mes y día del tipo de calendario. El formato es similar al de los CAL_SLONGDATE. Por ejemplo, si el patrón Mes/Día es el nombre completo del mes seguido del número de día con ceros a la izquierda, por ejemplo, el 3 de septiembre, el formato es &quot; &quot; &quot; MMMM dd &quot; . Se pueden usar comillas simples para insertar caracteres sin formato, por ejemplo, "de" en español.
 <blockquote>
 [!Note]<br />
 Este tipo de calendario solo admite un formato.
@@ -245,7 +245,7 @@ Este tipo de calendario solo admite un formato.
 </tr>
 <tr class="odd">
 <td>CAL_SSHORTDATE</td>
-<td>Formatos de fecha corta para el tipo de calendario.</td>
+<td>Formatos de fecha cortos para el tipo de calendario.</td>
 </tr>
 <tr class="even">
 <td>CAL_SSHORTESTDAYNAME1</td>
@@ -277,7 +277,7 @@ Este tipo de calendario solo admite un formato.
 </tr>
 <tr class="odd">
 <td>CAL_SYEARMONTH</td>
-<td><strong>Windows Me/98, windows 2000:</strong> Formatos de año/mes para los calendarios especificados.</td>
+<td><strong>Windows Me/98, Windows 2000:</strong> Formatos de año/mes para los calendarios especificados.</td>
 </tr>
 </tbody>
 </table>
@@ -287,7 +287,7 @@ Este tipo de calendario solo admite un formato.
  
 
 > [!Note]  
-> Si el nombre nativo para el día de la semana o para un mes es una cadena vacía, ese nombre es idéntico al nombre especificado en la información de configuración regional correspondiente y, por tanto, no se duplica aquí.
+> Si el nombre nativo del día de la semana o de un mes es una cadena vacía, ese nombre es idéntico al nombre especificado en la información de configuración regional correspondiente y, por tanto, no se duplica aquí.
 
  
 

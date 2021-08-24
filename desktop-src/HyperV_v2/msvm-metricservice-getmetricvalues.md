@@ -1,7 +1,7 @@
 ---
 description: Obtiene los valores de métrica.
 ms.assetid: 71c614ef-a005-45aa-9999-a19dc9f9c0df
-title: Método GetMetricValues de la clase Msvm_MetricService
+title: Método GetMetricValues de la Msvm_MetricService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: fe3e32b21ec0baa497fcef781e1b48fae37fbf66
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c22aa9adab9fc69876329f6be0ff011765da61a714c518241c47d3b2bd882ec2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669770"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119521467"
 ---
-# <a name="getmetricvalues-method-of-the-msvm_metricservice-class"></a>Método GetMetricValues de la \_ clase MetricService de MSVM
+# <a name="getmetricvalues-method-of-the-msvm_metricservice-class"></a>Método GetMetricValues de la clase MetricService de Msvm \_
 
 Obtiene los valores de métrica.
 
@@ -42,17 +42,17 @@ uint32 GetMetricValues(
 
 <dl> <dt>
 
-*Definición* \[ de de\]
+*Definición* \[ En\]
 </dt> <dd>
 
-Identifica un [**\_ BaseMetricDefinition de CIM**](cim-basemetricdefinition.md) para el que se devolverán las métricas.
+Identifica una [**\_ baseMetricDefinition cim**](cim-basemetricdefinition.md) para la que se devolverán las métricas.
 
 </dd> <dt>
 
-*Intervalo* \[ de de\]
+*Intervalo* \[ En\]
 </dt> <dd>
 
-Identifica cómo se seleccionan las instancias. El algoritmo para ordenar instancias de valor es específico de la definición de métricas.
+Identifica cómo se seleccionan las instancias. El algoritmo para ordenar instancias de valor es específico de la definición de métrica.
 
 <dt>
 
@@ -79,22 +79,22 @@ Identifica cómo se seleccionan las instancias. El algoritmo para ordenar instan
 
 <span id="Vendor_Specific"></span><span id="vendor_specific"></span><span id="VENDOR_SPECIFIC"></span>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> <dt>
 
-*Recuento* \[ de\]
+*Recuento* \[ En\]
 </dt> <dd>
 
-Identifica el número máximo de instancias que debe devolver el método.
+Identifica el número máximo de instancias que va a devolver el método .
 
 </dd> <dt>
 
-*Valores* \[ de enuncia\]
+*Valores* \[ out\]
 </dt> <dd>
 
-Tras la finalización correcta del método, contiene referencias a instancias [**de \_ BaseMetricValue de CIM**](cim-basemetricvalue.md), filtradas según los valores de los parámetros de entrada.
+Tras la finalización correcta del método , contiene referencias a instancias de [**\_ CIM BaseMetricValue**](cim-basemetricvalue.md), filtradas según los valores de los parámetros de entrada.
 
 </dd> </dl>
 
@@ -116,7 +116,7 @@ Este método devuelve uno de los siguientes valores:
 **Método reservado** (..)
 </dt> <dt>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -126,9 +126,9 @@ Este método devuelve uno de los siguientes valores:
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
-| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -137,7 +137,7 @@ Este método devuelve uno de los siguientes valores:
 
 <dl> <dt>
 
-[**MSVM \_ MetricService**](msvm-metricservice.md)
+[**Msvm \_ MetricService**](msvm-metricservice.md)
 </dt> </dl>
 
  

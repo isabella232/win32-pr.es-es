@@ -1,30 +1,30 @@
 ---
 title: Inicializando
-description: Con la versión 1,1 de GLU o posterior, gluGetString devuelve el número de versión de la biblioteca GLU o el número de versión y cualquier llamada de extensión GLU específica del proveedor.
+description: Con la versión 1.1 o posterior de GLU, gluGetString devuelve el número de versión de la biblioteca GLU o el número de versión y las llamadas de extensión GLU específicas del proveedor.
 ms.assetid: 80dc317a-1cf8-48af-a787-b910bdca4701
 keywords:
-- Utilidad OpenGL (GLU), inicializar
-- GLU (utilidad OpenGL), inicializar
+- Utilidad OpenGL (GLU), inicialización
+- GLU (Utilidad OpenGL), inicializando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f56943f5663bc2cc283d89bc96928eeac6ba767
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3466ae5cd4b2ceb6a756f1268dc85872af0f9e9f9b32b1d0bb0a68091d0b386d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105665584"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119519435"
 ---
 # <a name="initializing"></a>Inicializando
 
-Con la versión 1,1 de GLU o posterior, [**gluGetString**](glugetstring.md) devuelve el número de versión de la biblioteca Glu o el número de versión y cualquier llamada de extensión Glu específica del proveedor.
+Con glu versión 1.1 o posterior, [**gluGetString**](glugetstring.md) devuelve el número de versión de la biblioteca GLU o el número de versión y las llamadas de extensión GLU específicas del proveedor.
 
-El prototipo de **gluGetString** es:
+El prototipo **de gluGetString** es:
 
-const **GLubyte** \* **gluGetString**( *nombre* de GLenum);
+const **GLubyte** \* *_gluGetString_*(**GLenum** *name* );
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-Disable-for-instances
-description: Conjunto de objetos DSA, que representan instancias de ADAM, para los que se debe deshabilitar la publicación de punto de conexión de servicio.
+title: Atributo ms-DS-Disable-For-Instances
+description: Conjunto de objetos DSA, que representan instancias de ADAM, para el que se debe deshabilitar la publicación del punto de conexión de servicio.
 ms.assetid: e6a6acab-99ec-46bd-93a1-f35ba661fbb7
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-DS-Disable-for-instances
-- Esquema de AD de atributo msDS-DisableForInstances
+- Esquema de AD del atributo ms-DS-Disable-For-Instances
+- Esquema de AD del atributo msDS-DisableForInstances
 topic_type:
 - apiref
 api_name:
@@ -14,54 +14,54 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0671d5cdca7d48b65491c2ad0114aaab6bd9fda7
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4c9fe837b1e93838e66927de5da8d5204c268211d179e7b17961b3cfc0a6a8f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659140"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119552655"
 ---
-# <a name="ms-ds-disable-for-instances-attribute"></a>atributo MS-DS-Disable-for-instances
+# <a name="ms-ds-disable-for-instances-attribute"></a>Atributo ms-DS-Disable-For-Instances
 
-Conjunto de objetos DSA, que representan instancias de ADAM, para los que se debe deshabilitar la publicación de punto de conexión de servicio.
+Conjunto de objetos DSA, que representan instancias de ADAM, para el que se debe deshabilitar la publicación del punto de conexión de servicio.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | MS-DS-Disable-for-instances             |
-| Nombre para mostrar de LDAP | msDS-DisableForInstances                |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | ms-DS-Disable-For-Instances             |
+| Ldap-Display-Name | msDS-DisableForInstances                |
+| Size              | \-                                      |
+| Privilegio actualizar  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1870                 |
-| System-ID-GUID    | 5f8f45cb-0fb7-fc4f-b44f-66f781aa66dd    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 5f8f45cb-0fb7-fc4f-b44f-66f781aa66dd    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
 ## <a name="implementations"></a>Implementaciones
 
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | 2042                                                                                                                     |
+| Id. de vínculo                | 2042                                                                                                                     |
 | MAPI-Id                | \-                                                                                                                       |
-| System-Only            | False                                                                                                                    |
-| Tiene un único valor       | False                                                                                                                    |
-| Está indexado             | False                                                                                                                    |
-| En el catálogo global      | False                                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                             |
+| System-Only            | Falso                                                                                                                    |
+| Es de un solo valor       | Falso                                                                                                                    |
+| Está indexado             | Falso                                                                                                                    |
+| En el catálogo global      | Falso                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                             |
 | Range-Lower            | \-                                                                                                                       |
 | Range-Upper            | \-                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                               |
 | System-Flags           | 0x00000010                                                                                                               |
-| Clases usadas en        | [**Servicio MS-DS-Service-Connection-Point-Publication-Service**](c-msds-serviceconnectionpointpublicationservice.md)<br/> |
+| Clases usadas en        | [**ms-DS-Service-Connection-Point-Publication-Service**](c-msds-serviceconnectionpointpublicationservice.md)<br/> |
 
 
 

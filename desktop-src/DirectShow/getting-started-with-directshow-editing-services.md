@@ -1,33 +1,33 @@
 ---
-description: Introducción con servicios de edición de DirectShow
+description: Tareas iniciales con DirectShow Editing Services
 ms.assetid: 63148895-5233-41f3-865a-5e8f83077437
-title: Introducción con servicios de edición de DirectShow
+title: Tareas iniciales con DirectShow Editing Services
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cc668fad63dbc7e450f23e8c10e2b6c3e19f0198
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b370fcefed0e37a5557b58102be5aeb40e84add77a40310db5f29d7623f4b5ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103997644"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119564854"
 ---
-# <a name="getting-started-with-directshow-editing-services"></a>Introducción con servicios de edición de DirectShow
+# <a name="getting-started-with-directshow-editing-services"></a>Tareas iniciales con DirectShow Editing Services
 
 \[Esta API no se admite y puede modificarse o no estar disponible en el futuro.\]
 
-En esta sección se describen los conceptos básicos que necesita para empezar a trabajar con los [servicios de edición de DirectShow](directshow-editing-services.md) (des). Incluye los temas siguientes:
+En esta sección se describen los conceptos básicos que necesita para empezar a [trabajar con DirectShow Editing Services](directshow-editing-services.md) (DES). Incluye los temas siguientes:
 
--   [Arquitectura de servicios de edición de DirectShow](directshow-editing-services-architecture.md)
+-   [DirectShow Arquitectura de servicios de edición](directshow-editing-services-architecture.md)
 -   [Modelo de escala de tiempo](the-timeline-model.md)
 -   [Transiciones](transitions.md)
--   [Composición y disposición en capas](composition-and-layering.md)
--   [Tiempo en los servicios de edición de DirectShow](time-in-directshow-editing-services.md)
+-   [Composición y capas](composition-and-layering.md)
+-   [Tiempo en los DirectShow edición de datos](time-in-directshow-editing-services.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Servicios de edición de DirectShow](directshow-editing-services.md)
+[DirectShow Servicios de edición](directshow-editing-services.md)
 </dt> </dl>
 
  

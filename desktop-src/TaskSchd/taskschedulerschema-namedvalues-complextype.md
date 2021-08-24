@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de namedValues
-description: Define un par nombre-valor en el que el nombre está asociado con el valor.
+title: tipo complejo namedValues
+description: Define un par nombre-valor en el que el nombre está asociado al valor.
 ms.assetid: 07c512fd-3eab-4238-8d75-83827a958a1e
 keywords:
-- tipo complejo de namedValues Programador de tareas
+- tipo complejo namedValues Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5f18c9fddab58f33ffc724a3e8df7bd65583cb88
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9d54e7c33d0b7ab2e5be3c4de6f3f648398a7e65670c0379f5621ae9e8a8bd46
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802773"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119513944"
 ---
-# <a name="namedvalues-complex-type"></a>Tipo complejo de namedValues
+# <a name="namedvalues-complex-type"></a>tipo complejo namedValues
 
-Define un par nombre-valor en el que el nombre está asociado con el valor.
+Define un par nombre-valor en el que el nombre está asociado al valor.
 
 ``` syntax
 <xs:complexType name="namedValues">
@@ -42,7 +42,7 @@ Define un par nombre-valor en el que el nombre está asociado con el valor.
 
 | Elemento                                                        | Tipo                                                | Descripción                                                                         |
 |----------------------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------------------------------------|
-| [**Value**](taskschedulerschema-value-namedvalues-element.md) | [**namedValue**](schema-namedvalue-complextype.md) | Especifica el valor que está asociado a un nombre en un par nombre-valor.<br/> |
+| [**Valor**](taskschedulerschema-value-namedvalues-element.md) | [**namedValue**](schema-namedvalue-complextype.md) | Especifica el valor asociado a un nombre en un par nombre-valor.<br/> |
 
 
 
@@ -50,10 +50,10 @@ Define un par nombre-valor en el que el nombre está asociado con el valor.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

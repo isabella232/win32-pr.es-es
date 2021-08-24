@@ -4,8 +4,8 @@ description: Indica si el MSMQ instalado en este equipo proporciona servicios de
 ms.assetid: ecaccc66-4ce5-4c5e-ab57-d519cf708185
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de servicios de enrutamiento de MSMQ
-- mSMQRoutingServices esquema de AD de atributos
+- Esquema de AD del atributo MSMQ-Routing-Services
+- Esquema de AD del atributo mSMQRoutingServices
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 56df6370a126b76c4f292b548b8cbca65397411e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 000d5bdea22d1e5dcee94b8e70fb44bdd8db8d3484c49f2480ea169d54d8aa37
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119543145"
 ---
 # <a name="msmq-routing-services-attribute"></a>Atributo MSMQ-Routing-Services
 
@@ -27,16 +27,16 @@ Indica si el MSMQ instalado en este equipo proporciona servicios de enrutamiento
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | Servicios de enrutamiento de MSMQ                |
-| Nombre para mostrar de LDAP | mSMQRoutingServices                  |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | MSMQ-Routing-Services                |
+| Ldap-Display-Name | mSMQRoutingServices                  |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1227              |
-| System-ID-GUID    | 2df90d77-009f-11d2-aa4c-00c04fd7d83a |
-| Sintaxis            | [**Booleano**](s-boolean.md)         |
+| System-Id-Guid    | 2df90d77-009f-11d2-aa4c-00c04fd7d83a |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 
@@ -55,18 +55,18 @@ Indica si el MSMQ instalado en este equipo proporciona servicios de enrutamiento
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | False                                                        |
-| En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | True                                                         |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Verdadero                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Clases usadas en        | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
+| Clases usadas en        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Indica si el MSMQ instalado en este equipo proporciona servicios de enrutamiento
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | False                                                        |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | True                                                         |
+| Está indexado             | Falso                                                        |
 | En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Clases usadas en        | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
+| Clases usadas en        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Indica si el MSMQ instalado en este equipo proporciona servicios de enrutamiento
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | False                                                        |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | True                                                         |
+| Está indexado             | Falso                                                        |
 | En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Clases usadas en        | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
+| Clases usadas en        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Indica si el MSMQ instalado en este equipo proporciona servicios de enrutamiento
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | False                                                        |
-| En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Verdadero                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Clases usadas en        | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
+| Clases usadas en        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Indica si el MSMQ instalado en este equipo proporciona servicios de enrutamiento
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | False                                                        |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | True                                                         |
+| Está indexado             | Falso                                                        |
 | En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Clases usadas en        | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
+| Clases usadas en        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Indica si el MSMQ instalado en este equipo proporciona servicios de enrutamiento
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | False                                                        |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | True                                                         |
+| Está indexado             | Falso                                                        |
 | En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Clases usadas en        | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
+| Clases usadas en        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 

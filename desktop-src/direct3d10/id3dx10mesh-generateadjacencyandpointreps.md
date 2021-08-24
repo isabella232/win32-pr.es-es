@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: e496f96f36805d411c71e9aba1e2560b0dcbe3c6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 55198648be8952f975313dad3019063917eddf4d38f0a7d636039d5802f08e00
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108083983"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119566945"
 ---
 # <a name="id3dx10meshgenerateadjacencyandpointreps-method"></a>Método ID3DX10Mesh::GenerateAdjacencyAndPointReps
 
@@ -59,7 +59,7 @@ El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Di
 
 Una vez que una aplicación genera información de adyacencia para una malla, los datos de la malla se pueden optimizar para mejorar el rendimiento del dibujo.
 
-El orden de las entradas del búfer de adyacencia viene determinado por el orden de los índices de vértices en el búfer de índice. El triángulo adyacente 0 siempre se corresponde con el borde entre los índices de las esquinas 0 y 1. El triángulo adyacente 1 siempre se corresponde con el borde entre los índices de las esquinas 1 y 2, mientras que el triángulo adyacente 2 se corresponde con el borde entre los índices de las esquinas 2 y 0.
+El orden de las entradas del búfer de adyacencia viene determinado por el orden de los índices de vértices en el búfer de índice. El triángulo adyacente 0 siempre se corresponde con el borde entre los índices de las esquinas 0 y 1. El triángulo adyacente 1 siempre se corresponde con el borde entre los índices de las esquinas 1 y 2, mientras que el triángulo adyacente 2 corresponde al borde entre los índices de las esquinas 2 y 0.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,7 +72,7 @@ El orden de las entradas del búfer de adyacencia viene determinado por el orden
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

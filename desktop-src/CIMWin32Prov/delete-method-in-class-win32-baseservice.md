@@ -1,8 +1,8 @@
 ---
-description: El método Delete WMI Class elimina un servicio existente.
+description: El método de clase WMI Delete elimina un servicio existente.
 ms.assetid: 040005a0-9584-4458-bd1e-a2d50f53a637
 ms.tgt_platform: multiple
-title: Método Delete de la clase Win32_BaseService
+title: Método Delete de la Win32_BaseService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 4683887aa8844e682a572126d3ad134315273c6b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8dab8d11ab6d30cf6d3e8dd2de41913e72bd0a67990275dff61f0794b33ce7b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153507"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119547425"
 ---
-# <a name="delete-method-of-the-win32_baseservice-class"></a>Método Delete de la \_ clase Win32 BaseService
+# <a name="delete-method-of-the-win32_baseservice-class"></a>Método Delete de la clase BaseService win32 \_
 
-El método **Delete** [WMI Class](/windows/desktop/WmiSdk/retrieving-a-class) elimina un servicio existente.
+El **método de** clase WMI [Delete](/windows/desktop/WmiSdk/retrieving-a-class) elimina un servicio existente.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -96,7 +96,7 @@ El código de control solicitado no es válido o no es aceptable para el servici
 
 5
 
-El código de control solicitado no se puede enviar al servicio porque el estado del servicio (propiedad de [**Estado**](win32-baseservice.md) [**\_ BaseService de Win32**](win32-baseservice.md)) es igual a 0, 1 o 2.
+El código de control solicitado no se puede enviar al servicio porque el estado del servicio (propiedad [**Estado de Servicio \_ Base Win32)**](win32-baseservice.md)es igual a 0, 1 o 2.[](win32-baseservice.md)
 
 </dd> <dt>
 
@@ -132,11 +132,11 @@ Proceso interactivo.
 
 9
 
-No se encontró la ruta de acceso al directorio del archivo ejecutable del servicio.
+No se encontró la ruta de acceso del directorio al archivo ejecutable del servicio.
 
 </dd> <dt>
 
-**El servicio ya se está ejecutando**
+**Servicio que ya se está ejecutando**
 </dt> <dd>
 
 10
@@ -208,7 +208,7 @@ No hay ningún subproceso de ejecución para el servicio.
 
 </dd> <dt>
 
-**Estado dependencia circular**
+**Dependencia circular de estado**
 </dt> <dd>
 
 18
@@ -217,7 +217,7 @@ Hay dependencias circulares al iniciarse el servicio.
 
 </dd> <dt>
 
-**Estado nombre duplicado**
+**Nombre duplicado de estado**
 </dt> <dd>
 
 19
@@ -226,7 +226,7 @@ Hay un servicio que se ejecuta con el mismo nombre.
 
 </dd> <dt>
 
-**Estado nombre no válido**
+**Nombre no válido del estado**
 </dt> <dd>
 
 20
@@ -235,7 +235,7 @@ Hay caracteres no válidos en el nombre del servicio.
 
 </dd> <dt>
 
-**Estado parámetro no válido**
+**Parámetro Status Invalid**
 </dt> <dd>
 
 21
@@ -244,12 +244,12 @@ Se han pasado parámetros no válidos al servicio.
 
 </dd> <dt>
 
-**Estado cuenta de servicio no válida**
+**Cuenta de servicio de estado no válida**
 </dt> <dd>
 
 22
 
-La cuenta con la que se va a ejecutar este servicio no es válida o carece de los permisos para ejecutar el servicio.
+La cuenta en la que se va a ejecutar este servicio no es válida o carece de los permisos para ejecutar el servicio.
 
 </dd> <dt>
 
@@ -262,7 +262,7 @@ El servicio existe en la base de datos de servicios disponibles del sistema.
 
 </dd> <dt>
 
-**Servicio ya pausado**
+**Servicio ya en pausa**
 </dt> <dd>
 
 24
@@ -282,12 +282,12 @@ El servicio se encuentra en pausa actualmente en el sistema.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

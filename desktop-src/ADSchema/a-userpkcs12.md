@@ -1,10 +1,10 @@
 ---
-title: atributo userPKCS12
-description: PDU de PFX PKCS \ 12 para el intercambio de información de identidad personal.
+title: Atributo userPKCS12
+description: PKCS \ 12 PFX PDU para el intercambio de información de identidad personal.
 ms.assetid: dbc35a0f-c42d-4d1d-8ac6-5eca997af0fe
 ms.tgt_platform: multiple
 keywords:
-- userPKCS12 esquema de AD de atributos
+- UserPKCS12 attribute AD Schema (Esquema de AD del atributo userPKCS12)
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d8493bf46bc41d062f254f6e7d50331ed22dec25
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b9afc52f10ad8fc4df6c7785b3d9cbe19e46707042a519446ae580c49fa38622
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104079841"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119644534"
 ---
-# <a name="userpkcs12-attribute"></a>atributo userPKCS12
+# <a name="userpkcs12-attribute"></a>Atributo userPKCS12
 
-\#PDU de PFX PKCS 12 para el intercambio de información de identidad personal.
+PDU \# PKCS 12 PFX para el intercambio de información de identidad personal.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | userPKCS12                                            |
-| Nombre para mostrar de LDAP | userPKCS12                                            |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| Ldap-Display-Name | userPKCS12                                            |
+| Size              | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 2.16.840.1.113730.3.1.216                             |
-| System-ID-GUID    | 23998ab5-70f8-4007-a4c1-a84a38311f9a                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 23998ab5-70f8-4007-a4c1-a84a38311f9a                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -53,18 +53,18 @@ ms.locfileid: "104079841"
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                    |
+| Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
-| System-Only            | False                                                                                 |
-| Tiene un único valor       | False                                                                                 |
-| Está indexado             | False                                                                                 |
-| En el catálogo global      | False                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                          |
+| System-Only            | Falso                                                                                 |
+| Es de un solo valor       | Falso                                                                                 |
+| Está indexado             | Falso                                                                                 |
+| En el catálogo global      | Falso                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -74,18 +74,18 @@ ms.locfileid: "104079841"
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                    |
+| Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
-| System-Only            | False                                                                                 |
-| Tiene un único valor       | False                                                                                 |
-| Está indexado             | False                                                                                 |
-| En el catálogo global      | False                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                          |
+| System-Only            | Falso                                                                                 |
+| Es de un solo valor       | Falso                                                                                 |
+| Está indexado             | Falso                                                                                 |
+| En el catálogo global      | Falso                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -95,18 +95,18 @@ ms.locfileid: "104079841"
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                    |
+| Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
-| System-Only            | False                                                                                 |
-| Tiene un único valor       | False                                                                                 |
-| Está indexado             | False                                                                                 |
-| En el catálogo global      | False                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                          |
+| System-Only            | Falso                                                                                 |
+| Es de un solo valor       | Falso                                                                                 |
+| Está indexado             | Falso                                                                                 |
+| En el catálogo global      | Falso                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -114,20 +114,20 @@ ms.locfileid: "104079841"
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                    |
+| Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
-| System-Only            | False                                                                                 |
-| Tiene un único valor       | False                                                                                 |
-| Está indexado             | False                                                                                 |
-| En el catálogo global      | False                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                          |
+| System-Only            | Falso                                                                                 |
+| Es de un solo valor       | Falso                                                                                 |
+| Está indexado             | Falso                                                                                 |
+| En el catálogo global      | Falso                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -137,13 +137,13 @@ ms.locfileid: "104079841"
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                    |
+| Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
-| System-Only            | False                                                                                 |
-| Tiene un único valor       | False                                                                                 |
-| Está indexado             | False                                                                                 |
-| En el catálogo global      | False                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                          |
+| System-Only            | Falso                                                                                 |
+| Es de un solo valor       | Falso                                                                                 |
+| Está indexado             | Falso                                                                                 |
+| En el catálogo global      | Falso                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |

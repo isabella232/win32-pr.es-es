@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-AZ-Minor-version
-description: Número de versión secundaria de AzRoles.
+title: Atributo ms-DS-Az-Minor-Version
+description: Número de versión secundaria para AzRoles.
 ms.assetid: 90e12e89-62cf-4e69-b497-d283d21ccb2c
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-AZ-Minor-version
-- Esquema de AD de atributo msDS-AzMinorVersion
+- Esquema de AD del atributo ms-DS-Az-Minor-Version
+- Esquema de AD del atributo msDS-AzMinorVersion
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3bf7513245b1eb138bb5a827eca38825e3dd2729
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5aa8fa5cab6ca55766e2abd3cd863471d67041ef4801877ebbb41c2647b64ca9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104493840"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119552765"
 ---
-# <a name="ms-ds-az-minor-version-attribute"></a>atributo MS-DS-AZ-Minor-version
+# <a name="ms-ds-az-minor-version-attribute"></a>Atributo ms-DS-Az-Minor-Version
 
-Número de versión secundaria de AzRoles.
+Número de versión secundaria para AzRoles.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-DS-AZ-Minor-version               |
-| Nombre para mostrar de LDAP | msDS-AzMinorVersion                  |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-DS-Az-Minor-Version               |
+| Ldap-Display-Name | msDS-AzMinorVersion                  |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1825              |
-| System-ID-GUID    | ee85ed93-b209-4788-8165-e702f51bfbf3 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | ee85ed93-b209-4788-8165-e702f51bfbf3 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -54,18 +54,18 @@ Número de versión secundaria de AzRoles.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-DS-AZ-admin-Manager**](c-msds-azadminmanager.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Admin-Manager**](c-msds-azadminmanager.md)<br/> |
 
 
 
@@ -73,20 +73,20 @@ Número de versión secundaria de AzRoles.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-DS-AZ-admin-Manager**](c-msds-azadminmanager.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Admin-Manager**](c-msds-azadminmanager.md)<br/> |
 
 
 
@@ -94,20 +94,20 @@ Número de versión secundaria de AzRoles.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-DS-AZ-admin-Manager**](c-msds-azadminmanager.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Admin-Manager**](c-msds-azadminmanager.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ Número de versión secundaria de AzRoles.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-DS-AZ-admin-Manager**](c-msds-azadminmanager.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Admin-Manager**](c-msds-azadminmanager.md)<br/> |
 
 
 
@@ -138,18 +138,18 @@ Número de versión secundaria de AzRoles.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-DS-AZ-admin-Manager**](c-msds-azadminmanager.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Admin-Manager**](c-msds-azadminmanager.md)<br/> |
 
 
 

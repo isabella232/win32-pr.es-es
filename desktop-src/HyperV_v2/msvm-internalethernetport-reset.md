@@ -1,7 +1,7 @@
 ---
 description: 'Método reset de la Msvm_InternalEthernetPort clase : solicita un restablecimiento.'
 ms.assetid: 28e4d174-6cea-4c9c-be29-78d63493c9a3
-title: Método reset de la Msvm_InternalEthernetPort clase
+title: Método Reset de la Msvm_InternalEthernetPort clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 13d683639dc9bb10428f7b33970ad47e868785e9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: fdf32719cfd12aa5418208c5c09e0b09eaba833bc9ad6c406c9ed451b2d594d3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118953"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119522415"
 ---
 # <a name="reset-method-of-the-msvm_internalethernetport-class"></a>Método Reset de la clase \_ Msvm InternalEthernetPort
 
@@ -53,7 +53,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -63,7 +63,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

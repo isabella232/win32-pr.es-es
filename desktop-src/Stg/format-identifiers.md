@@ -6,18 +6,18 @@ keywords:
 - Identificadores de formato
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b0202cd1287c3b4fef6e9e2b56e272541a03425b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 72ec9e9843b1dfe843e89ebf85eadbbcb5da8cb58dfc1b289eb88c844aae7456
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104356989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119663155"
 ---
 # <a name="format-identifiers"></a>Identificadores de formato
 
-Los valores del conjunto de propiedades se almacenan en una sección etiquetada con un FMTID único. Por ejemplo, FMTID para el conjunto de propiedades de información de Resumen de COM es **F29F85E0-4FF9-1068-AB91-08002B27B3D9**.
+Los valores del conjunto de propiedades se almacenan en una sección etiquetada con un FMTID único. Por ejemplo, el FMTID del conjunto de propiedades Información de resumen COM **es F29F85E0-4FF9-1068-AB91-08002B27B3D9**.
 
-Para definir un FMTID para el conjunto de propiedades de información de Resumen, use la macro **definir \_ GUID** en un archivo de inclusión para el código que manipula el conjunto de propiedades.
+Para definir un FMTID para el conjunto de propiedades Información de resumen, use la macro **DEFINE \_ GUID** en un archivo de include para el código que manipula el conjunto de propiedades.
 
 
 ```C++
@@ -27,13 +27,13 @@ DEFINE_GUID(FMTID_SummaryInformation, 0xF29F85E0, 0x4FF9, 0x1068,
 
 
 
-Cualquier código que requiera el valor de FMTID para el conjunto de propiedades de información de resumen puede acceder a él a través de la variable *\_ SummaryInformation de FMTID* .
+Cualquier código que requiera FMTID para el conjunto de propiedades Información de resumen puede acceder a él a través de la variable *FMTID \_ SummaryInformation.*
 
-Al almacenar conjuntos de propiedades en instancias de [**IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage) , convierta FMTID en un nombre de cadena para el objeto de almacenamiento.
+Al almacenar conjuntos de propiedades [**en instancias de IStorage,**](/windows/desktop/api/Objidl/nn-objidl-istorage) convierta FMTID en un nombre de cadena para el objeto de almacenamiento.
 
- 
+ 
 
- 
+ 
 
 
 

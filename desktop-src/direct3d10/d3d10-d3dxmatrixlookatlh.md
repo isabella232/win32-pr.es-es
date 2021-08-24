@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 3590d2cbdeead9e1b9b2547b2344163b81f05d11
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 749994cf02e4608f5e677d20bf0b1b0dab714e5df739e204a9e80ada4f41f3c5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119609505"
 ---
 # <a name="d3dxmatrixlookatlh-function-d3dx10mathh"></a>Función D3DXMatrixLookAtLH (D3DX10Math.h)
 
@@ -89,7 +89,7 @@ Puntero a una estructura D3DXMATRIX que es una matriz de mirada a la izquierda.
 
 El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXMatrixLookAtLH se puede usar como parámetro para otra función.
 
-Esta función usa la siguiente fórmula para calcular la matriz devuelta.
+Esta función usa la fórmula siguiente para calcular la matriz devuelta.
 
 
 ```
@@ -116,7 +116,7 @@ yaxis = cross(zaxis, xaxis)
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

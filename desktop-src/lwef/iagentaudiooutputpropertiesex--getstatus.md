@@ -4,12 +4,12 @@ description: IAgentAudioOutputPropertiesEx GetStatus
 ms.assetid: 29bf1379-eebe-4b8b-b8d0-b86d2da78b64
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f851c8fc73e9f427bd725d7ef647b84a68be13e4
-ms.sourcegitcommit: 59ec383331366f8a62c94bb88468ca03e95c43f8
+ms.openlocfilehash: feb161a72b536f85a8a82923841e2cd14ecd9e3525ab993f8b7c71f34630b0d4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107380749"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119601315"
 ---
 # <a name="iagentaudiooutputpropertiesexgetstatus"></a>IAgentAudioOutputPropertiesEx::GetStatus
 
@@ -34,7 +34,7 @@ Estado del canal de salida de audio, que puede ser uno de los siguientes valores
 
 
 
-| Value                                                                         | Descripción                                                                                                    |
+| Valor                                                                         | Descripción                                                                                                    |
 |-------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | **const unsigned short** **AUDIO STATUS AVAILABLE = \_ \_ 0;**<br/>         | El canal de salida de audio está disponible (no está ocupado).                                                              |
 | **const unsigned short** **AUDIO STATUS \_ \_ NOAUDIO = 1;**<br/>           | No hay compatibilidad con la salida de audio; por ejemplo, porque no hay ninguna tarjeta de sonido.                             |
@@ -50,7 +50,7 @@ Estado del canal de salida de audio, que puede ser uno de los siguientes valores
 
 </dd> </dl>
 
-Esta configuración permite a la aplicación cliente consultar el estado del canal de salida de audio. Puede usarlo para determinar si el carácter habla o si intenta activar el modo de escucha (mediante **IAgentCharacterEx::Listen).**
+Esta configuración permite a la aplicación cliente consultar el estado del canal de salida de audio. Puede usar esto para determinar si el carácter habla o si intenta activar el modo de escucha (mediante **IAgentCharacterEx::Listen).**
 
  
 

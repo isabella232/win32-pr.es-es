@@ -1,8 +1,8 @@
 ---
-description: El método reanudar clase WMI continúa un trabajo de impresión en pausa.
+description: El método de clase RESUME WMI continúa con un trabajo de impresión en pausa.
 ms.assetid: acfbca2b-19af-4339-bbca-834db50c3d8d
 ms.tgt_platform: multiple
-title: Método resume de la clase Win32_PrintJob
+title: Método Resume de la Win32_PrintJob clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: f8ca1602eb29e1e18d83d2e8b79760d13f63e101
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1dfc86b9b42c4373467fca89a46b2b4d8f42074e64836c554b325c8aebddf915
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119588215"
 ---
-# <a name="resume-method-of-the-win32_printjob-class"></a>Método resume de la \_ clase de Win32 PrintJob
+# <a name="resume-method-of-the-win32_printjob-class"></a>Método Resume de la clase PrintJob de Win32 \_
 
-El método **reanudar** [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) continúa un trabajo de impresión en pausa.
+El **método de** clase RESUME [WMI](/windows/desktop/WmiSdk/retrieving-a-class) continúa con un trabajo de impresión en pausa.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,7 +62,7 @@ Acceso denegado
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente ejemplo de código de VBScript reanuda todos los trabajos de impresión de un equipo.
+El siguiente ejemplo de código VBScript reanuda todos los trabajos de impresión en un equipo.
 
 
 ```VB
@@ -88,8 +88,8 @@ Next
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                      |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                        |
-| MOF<br/>                      | <dl> <dt>Win32 \_ printer. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                        |
+| MOF<br/>                      | <dl> <dt>Win32 \_ Printer.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl>       |
 
 
@@ -98,7 +98,7 @@ Next
 
 <dl> <dt>
 
-[Clases de hardware de sistema del equipo](computer-system-hardware-classes.md)
+[Clases de hardware del sistema de equipo](computer-system-hardware-classes.md)
 </dt> <dt>
 
 [**PrintJob de Win32 \_**](win32-printjob.md)

@@ -1,17 +1,17 @@
 ---
 description: Especifica el número de fotogramas predictivos bidireccionales (fotogramas B).
 ms.assetid: 8bd95baa-c130-4616-8ab7-7d902162e4ed
-title: Propiedad MFPKEY_NUMBFRAMES (Wmcodecdsp. h)
+title: MFPKEY_NUMBFRAMES propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc3b0655a4a5e24b92f9699b198f10232de8edf8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dfcf103da1d629c90209aef4badd604651d73af3e9101cac0f613b47c82883e3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105648305"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119555425"
 ---
-# <a name="mfpkey_numbframes-property"></a>\_Propiedad NUMBFRAMES de MFPKEY
+# <a name="mfpkey_numbframes-property"></a>Propiedad \_ MFPKEY DEFRAMES
 
 Especifica el número de fotogramas predictivos bidireccionales (fotogramas B).
 
@@ -27,15 +27,15 @@ VT-I4
 
 0
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-De forma predeterminada, Windows Media Video 9 solo utiliza intragramas (fotogramas I), también conocidos como fotogramas clave o fotogramas delimitadores, que son fotogramas totalmente codificados, y marcos de predicción (fotogramas P), que se codifican como una diferencia respecto del fotograma I anterior. Los fotogramas B son diferentes de los fotogramas P porque almacenan las diferencias con respecto al fotograma anterior y las diferencias con el siguiente fotograma.
+De forma predeterminada, Windows Media Video 9 solo usa intraframes (fotogramas I), también conocidos como fotogramas clave o fotogramas delimitadores, que son fotogramas totalmente codificados, y fotogramas predictivos (fotogramas P), que se codifican como una diferencia con respecto al marco I anterior. Los fotogramas B son diferentes de los fotogramas P porque almacenan las diferencias con respecto al fotograma anterior y las diferencias con respecto al fotograma siguiente.
 
-Al configurar el códec para que use fotogramas B, usará el número especificado de fotogramas B entre cada par de fotogramas de tipo I o P.
+Al configurar el códec para que use fotogramas B, usará el número especificado de fotogramas B entre cada par de fotogramas del tipo I o P.
 
-Por ejemplo, si una secuencia de marcos sin fotogramas B es "IPPPPPPPPI", la misma codificación de secuencia con dos fotogramas B sería "IBBPBBPBBI".
+Por ejemplo, si una secuencia de fotogramas sin fotogramas B es "IPPPPPP PPP", la misma codificación de secuencia con dos fotogramas B sería "IBBPBBPBBI".
 
-Para la mayoría del contenido, uno o dos fotogramas B son adecuados. Con una velocidad de datos superior, un fotograma B suele ser la opción óptima. Tres o más no suelen ser útiles.
+Para la mayoría del contenido, uno o dos fotogramas B son adecuados. A velocidades de datos más altas, una trama B suele ser la opción óptima. Tres o más son poco útiles.
 
 El intervalo válido de valores para esta propiedad es de 0 a 7.
 
@@ -43,11 +43,11 @@ El intervalo válido de valores para esta propiedad es de 0 a 7.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ El intervalo válido de valores para esta propiedad es de 0 a 7.
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

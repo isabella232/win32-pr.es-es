@@ -1,11 +1,11 @@
 ---
-title: atributo MS-FVE-RecoveryPassword
+title: Atributo ms-FVE-RecoveryPassword
 description: Contiene la contraseña necesaria para recuperar un volumen de cifrado de volumen completo (FVE).
 ms.assetid: 460e7014-42ce-4e49-a642-9f97fe9044fc
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-FVE-RecoveryPassword
-- msFVE-RecoveryPassword atributo AD Schema
+- Esquema de AD del atributo ms-FVE-RecoveryPassword
+- Esquema de AD del atributo msFVE-RecoveryPassword
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b8d9a5603c72d6707294a922aee8e49ab067afb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f1b200c9da2709f54e1206ff0c8d69e987eac0b627e6f9a819a92451a2a770fe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104493798"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544055"
 ---
-# <a name="ms-fve-recoverypassword-attribute"></a>atributo MS-FVE-RecoveryPassword
+# <a name="ms-fve-recoverypassword-attribute"></a>Atributo ms-FVE-RecoveryPassword
 
 Contiene la contraseña necesaria para recuperar un volumen de cifrado de volumen completo (FVE).
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-FVE-RecoveryPassword                     |
-| Nombre para mostrar de LDAP | msFVE-RecoveryPassword                      |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | ms-FVE-RecoveryPassword                     |
+| Ldap-Display-Name | msFVE-RecoveryPassword                      |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1964                     |
-| System-ID-GUID    | 43061ac1-c8ad-4ccc-b785-2bfac20fc60a        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 43061ac1-c8ad-4ccc-b785-2bfac20fc60a        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -52,18 +52,18 @@ Contiene la contraseña necesaria para recuperar un volumen de cifrado de volume
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                           |
+| Id. de vínculo                | \-                                                                           |
 | MAPI-Id                | \-                                                                           |
-| System-Only            | False                                                                        |
-| Tiene un único valor       | True                                                                         |
-| Está indexado             | False                                                                        |
-| En el catálogo global      | False                                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                 |
+| System-Only            | Falso                                                                        |
+| Es de un solo valor       | True                                                                         |
+| Está indexado             | Falso                                                                        |
+| En el catálogo global      | Falso                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                 |
 | Range-Lower            | \-                                                                           |
 | Range-Upper            | \-                                                                           |
 | Search-Flags           | 0x00000298                                                                   |
 | System-Flags           | 0x00000010                                                                   |
-| Clases usadas en        | [**MS-FVE-RecoveryInformation**](c-msfve-recoveryinformation.md)<br/> |
+| Clases usadas en        | [**ms-FVE-RecoveryInformation**](c-msfve-recoveryinformation.md)<br/> |
 
 
 
@@ -73,18 +73,18 @@ Contiene la contraseña necesaria para recuperar un volumen de cifrado de volume
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                           |
+| Id. de vínculo                | \-                                                                           |
 | MAPI-Id                | \-                                                                           |
-| System-Only            | False                                                                        |
-| Tiene un único valor       | True                                                                         |
-| Está indexado             | False                                                                        |
-| En el catálogo global      | False                                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                 |
+| System-Only            | Falso                                                                        |
+| Es de un solo valor       | True                                                                         |
+| Está indexado             | Falso                                                                        |
+| En el catálogo global      | Falso                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                 |
 | Range-Lower            | \-                                                                           |
 | Range-Upper            | \-                                                                           |
 | Search-Flags           | 0x00000298                                                                   |
 | System-Flags           | 0x00000010                                                                   |
-| Clases usadas en        | [**MS-FVE-RecoveryInformation**](c-msfve-recoveryinformation.md)<br/> |
+| Clases usadas en        | [**ms-FVE-RecoveryInformation**](c-msfve-recoveryinformation.md)<br/> |
 
 
 
@@ -94,18 +94,18 @@ Contiene la contraseña necesaria para recuperar un volumen de cifrado de volume
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                           |
+| Id. de vínculo                | \-                                                                           |
 | MAPI-Id                | \-                                                                           |
-| System-Only            | False                                                                        |
-| Tiene un único valor       | True                                                                         |
-| Está indexado             | False                                                                        |
-| En el catálogo global      | False                                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                 |
+| System-Only            | Falso                                                                        |
+| Es de un solo valor       | True                                                                         |
+| Está indexado             | Falso                                                                        |
+| En el catálogo global      | Falso                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                 |
 | Range-Lower            | \-                                                                           |
 | Range-Upper            | \-                                                                           |
 | Search-Flags           | 0x00000298                                                                   |
 | System-Flags           | 0x00000010                                                                   |
-| Clases usadas en        | [**MS-FVE-RecoveryInformation**](c-msfve-recoveryinformation.md)<br/> |
+| Clases usadas en        | [**ms-FVE-RecoveryInformation**](c-msfve-recoveryinformation.md)<br/> |
 
 
 

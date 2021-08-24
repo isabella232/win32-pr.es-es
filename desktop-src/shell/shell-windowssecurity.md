@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 94916E29-5960-4010-B2C6-0FAA1E4BF72D
-ms.openlocfilehash: 2c6e18ba2388909390b856deb03b65b078f810d9
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 327855763220fd2ea1c2e0e6b93538c16fa27cf35cd65cba06888879580259c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109840866"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119592005"
 ---
 # <a name="shellwindowssecurity-method"></a>Shell.WindowsSecurity (método)
 
@@ -55,9 +55,9 @@ Este método no devuelve ningún valor.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método muestra el cuadro de diálogo que se muestra después de presionar CTRL+ALT+SUPR o usar la opción de seguridad en **el menú** Inicio.
+Este método muestra el cuadro de diálogo que se muestra después de presionar CTRL+ALT+SUPR o usar la opción de seguridad en el **menú** Inicio.
 
 > [!Note]  
 > Este método solo se puede usar cuando se conecta mediante una sesión de terminal a Microsoft Terminal Server.
@@ -68,7 +68,7 @@ Este método muestra el cuadro de diálogo que se muestra después de presionar 
 
 En los ejemplos siguientes se muestra el uso de **WindowsSecurity** para JScript, VBScript y Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -120,10 +120,10 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                                                   |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                                                   |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
 | Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 6.0 o posterior)</dt> </dl> |

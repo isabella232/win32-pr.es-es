@@ -1,10 +1,10 @@
 ---
-title: Método ID3DX11EffectUnorderedAccessViewVariable SetUnorderedAccessView (D3dx11effect. h)
-description: Establecer una vista de acceso sin ordenar.
+title: Método ID3DX11EffectUnorderedAccessViewVariable SetUnorderedAccessView (D3dx11effect.h)
+description: Establezca una vista unordered-access-view.
 ms.assetid: a147879c-c5cf-4453-b27f-8716cb33962b
 keywords:
 - Método SetUnorderedAccessView Direct3D 11
-- Método SetUnorderedAccessView Direct3D 11, interfaz ID3DX11EffectUnorderedAccessViewVariable
+- Método SetUnorderedAccessView Direct3D 11 , ID3DX11EffectUnorderedAccessViewVariable (interfaz)
 - Interfaz ID3DX11EffectUnorderedAccessViewVariable Direct3D 11, método SetUnorderedAccessView
 topic_type:
 - apiref
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d665ab5b298e3a7549fb068cf0fcc4cce644765
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0d95dc15b0b79475cf7b8a731df291c73cb193db44fdc5bb917606dd916d6757
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104998346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119565745"
 ---
-# <a name="id3dx11effectunorderedaccessviewvariablesetunorderedaccessview-method"></a>ID3DX11EffectUnorderedAccessViewVariable:: SetUnorderedAccessView (método)
+# <a name="id3dx11effectunorderedaccessviewvariablesetunorderedaccessview-method"></a>Método ID3DX11EffectUnorderedAccessViewVariable::SetUnorderedAccessView
 
-Establecer una vista de acceso sin ordenar.
+Establezca una vista unordered-access-view.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,12 +43,12 @@ HRESULT SetUnorderedAccessView(
 
 <dl> <dt>
 
-*código fuente* 
+*pResource* 
 </dt> <dd>
 
 Tipo: **[ **ID3D11UnorderedAccessView**](/windows/desktop/api/D3D11/nn-d3d11-id3d11unorderedaccessview)\***
 
-Puntero a un [**ID3D11UnorderedAccessView**](/windows/desktop/api/D3D11/nn-d3d11-id3d11unorderedaccessview).
+Puntero a [**un id3D11UnorderedAccessView**](/windows/desktop/api/D3D11/nn-d3d11-id3d11unorderedaccessview).
 
 </dd> </dl>
 
@@ -56,12 +56,12 @@ Puntero a un [**ID3D11UnorderedAccessView**](/windows/desktop/api/D3D11/nn-d3d11
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -71,8 +71,8 @@ Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphi
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de efectos 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 

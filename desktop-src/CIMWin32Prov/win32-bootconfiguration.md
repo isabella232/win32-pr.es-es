@@ -1,8 +1,8 @@
 ---
-description: La \_ clase WMI BootConfiguration de Win32 representa la configuración de arranque de un equipo que ejecuta Windows.
+description: La clase WMI BootConfiguration de Win32 \_ representa la configuración de arranque de un sistema informático que ejecuta Windows.
 ms.assetid: c2db28dd-3feb-44bb-a532-c91cab980ba3
 ms.tgt_platform: multiple
-title: Win32_BootConfiguration (clase)
+title: Win32_BootConfiguration clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,16 +23,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 556688d7c80038f04dd5b94b7c61c5d6dfef3199
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: db18b6ebbd7ccc9e87bffb06cd2b40647e4a9509edc1c27779a0b55efc36b7e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659710"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119546525"
 ---
-# <a name="win32_bootconfiguration-class"></a>\_Clase Win32 BootConfiguration
+# <a name="win32_bootconfiguration-class"></a>Clase BootConfiguration de Win32 \_
 
-La [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ BootConfiguration de Win32** representa la configuración de arranque de un equipo que ejecuta Windows.
+La clase WMI **\_ BootConfiguration** [de](/windows/desktop/WmiSdk/retrieving-a-class) Win32 representa la configuración de arranque de un sistema informático que ejecuta Windows.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -75,7 +75,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("inesperados win32api \| Process and Thread Functions \| [**GetEnvironmentVariable**](/windows/desktop/api/winbase/nf-winbase-getenvironmentvariable) \| WinBootDir")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Process and Thread Functions \| [**GetEnvironmentVariable**](/windows/desktop/api/winbase/nf-winbase-getenvironmentvariable) \| WinBootDir")
 </dt> </dl>
 
 Ruta de acceso a los archivos del sistema necesarios para arrancar el sistema.
@@ -98,7 +98,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 
 Breve descripción textual del objeto actual.
 
-Esta propiedad se hereda de [**la \_ configuración de CIM**](cim-setting.md).
+Esta propiedad se hereda de la [**configuración de CIM \_**](cim-setting.md).
 
 </dd> <dt>
 
@@ -111,10 +111,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("inesperados win32api \| Process and Thread Functions \| [**GetEnvironmentVariable**](/windows/desktop/api/winbase/nf-winbase-getenvironmentvariable) \| WinBootDir")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Process and Thread Functions \| [**GetEnvironmentVariable**](/windows/desktop/api/winbase/nf-winbase-getenvironmentvariable) \| WinBootDir")
 </dt> </dl>
 
-Ruta de acceso a los archivos de configuración. Este valor puede ser similar al valor de la propiedad **BootDirectory** .
+Ruta de acceso a los archivos de configuración. Este valor puede ser similar al valor de la **propiedad BootDirectory.**
 
 </dd> <dt>
 
@@ -129,7 +129,7 @@ Tipo de acceso: solo lectura
 
 Descripción textual del objeto actual.
 
-Esta propiedad se hereda de [**la \_ configuración de CIM**](cim-setting.md).
+Esta propiedad se hereda de la [**configuración de CIM \_**](cim-setting.md).
 
 </dd> <dt>
 
@@ -142,7 +142,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("inesperados win32api \| File Functions \| GetDriveType")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Funciones de archivo Win32API \| \| GetDriveType")
 </dt> </dl>
 
 Última letra de unidad a la que se asigna una unidad física.
@@ -176,10 +176,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("inesperados win32api \| File Functions \| GetTempPath")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Funciones de archivo Win32API \| \| GetTempPath")
 </dt> </dl>
 
-Directorio en el que pueden residir los archivos temporales durante el arranque.
+Directorio donde pueden residir los archivos temporales durante el tiempo de arranque.
 
 </dd> <dt>
 
@@ -197,7 +197,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 
 Identificador por el que se conoce el objeto actual.
 
-Esta propiedad se hereda de [**la \_ configuración de CIM**](cim-setting.md).
+Esta propiedad se hereda de la [**configuración de CIM \_**](cim-setting.md).
 
 </dd> <dt>
 
@@ -210,22 +210,22 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("inesperados win32api \| File Functions \| GetTempPath")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Funciones de archivo Win32API \| \| GetTempPath")
 </dt> </dl>
 
 Directorio donde se almacenan los archivos temporales.
 
-Ejemplo: "C: \\ Temp"
+Ejemplo: "C: \\ TEMP"
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La **clase \_ BootConfiguration de Win32** se deriva de la [**\_ configuración de CIM**](cim-setting.md).
+La **clase \_ BootConfiguration de Win32** se deriva de [**cim \_ setting**](cim-setting.md).
 
 ## <a name="examples"></a>Ejemplos
 
-La [lista de las propiedades de configuración de arranque de un ejemplo Perl de equipo](https://Gallery.TechNet.Microsoft.Com/55c35de3-bb6a-47f0-89f9-d2c49ab4cf19) devuelve información de configuración de arranque para un equipo.
+El [ejemplo Enumerar las propiedades de configuración de arranque](https://Gallery.TechNet.Microsoft.Com/55c35de3-bb6a-47f0-89f9-d2c49ab4cf19) de un equipo Perl devuelve información de configuración de arranque para un equipo.
 
 El siguiente ejemplo de VBScript devuelve información de configuración de arranque para un equipo.
 
@@ -253,7 +253,7 @@ Next
 
 
 
-En el siguiente ejemplo de código se muestra el uso de la clase WMI **\_ BootConfiguration de Win32** .
+En el ejemplo de código siguiente se muestra el uso de la clase WMI **\_ BootConfiguration de Win32.**
 
 
 ```PowerShell
@@ -274,7 +274,7 @@ $boot = Get-WMIObject Win32_BootConfiguration
 
 
 
-En el ejemplo de código anterior se crea el siguiente resultado:
+El ejemplo de código anterior crea la salida siguiente:
 
 ``` syntax
 Boot Directory     : \WINDOWS
@@ -289,12 +289,12 @@ Temp Directory     : C:\WINDOWS\system32\config\systemprofile\Local Settings\Tem
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

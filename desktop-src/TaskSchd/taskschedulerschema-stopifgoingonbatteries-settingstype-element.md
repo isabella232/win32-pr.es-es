@@ -1,9 +1,9 @@
 ---
 title: Elemento StopIfGoingOnBatteries (settingsType)
-description: Especifica que la tarea se detendrá si el equipo pasa a baterías.
+description: Especifica que la tarea se detendrán si el equipo va a usar baterías.
 ms.assetid: 0d772dbb-a552-45ed-9dc0-7159f6ef12ed
 keywords:
-- Programador de tareas del elemento StopIfGoingOnBatteries
+- Elemento StopIfGoingOnBatteries Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2e7de57cde928760c15dd671010880e824c8979f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 50b92be11400d1dbb223115f11334e2a596e94e9df1fd018ce16e4a646c84825
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105685938"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119516105"
 ---
 # <a name="stopifgoingonbatteries-settingstype-element"></a>Elemento StopIfGoingOnBatteries (settingsType)
 
-Especifica que la tarea se detendrá si el equipo pasa a baterías.
+Especifica que la tarea se detendrán si el equipo va a usar baterías.
 
 ``` syntax
 <xs:element name="StopIfGoingOnBatteries"
@@ -32,7 +32,7 @@ Especifica que la tarea se detendrá si el equipo pasa a baterías.
  />
 ```
 
-El elemento **StopIfGoingOnBatteries** se define mediante el tipo complejo de [**settingsType**](taskschedulerschema-settingstype-complextype.md) .
+El **elemento StopIfGoingOnBatteries** se define mediante el [**tipo complejo settingsType.**](taskschedulerschema-settingstype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -40,21 +40,21 @@ El elemento **StopIfGoingOnBatteries** se define mediante el tipo complejo de [*
 
 | Elemento                                                           | Derivado de                                                         | Descripción                                                                        |
 |-------------------------------------------------------------------|----------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [**Configuración**](taskschedulerschema-settings-tasktype-element.md) | [**settingsType**](taskschedulerschema-settingstype-complextype.md) | Contiene la configuración que el Programador de tareas utiliza para realizar la tarea.<br/> |
+| [**Configuración**](taskschedulerschema-settings-tasktype-element.md) | [**settingsType**](taskschedulerschema-settingstype-complextype.md) | Contiene la configuración que el Programador de tareas usa para realizar la tarea.<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La configuración predeterminada de este elemento es false. Tenga en cuenta que el valor predeterminado ha cambiado respecto a las versiones anteriores de Programador de tareas.
+El valor predeterminado para este elemento es False. Tenga en cuenta que el valor predeterminado ha cambiado con respecto a las versiones anteriores de Programador de tareas.
 
-Para el desarrollo de scripting, este valor se especifica mediante la propiedad [**TaskSettings. StopIfGoingOnBatteries**](tasksettings-stopifgoingonbatteries.md) .
+Para el desarrollo de scripting, esta configuración se especifica mediante la [**propiedad TaskSettings.StopIfGoingOnBatteries.**](tasksettings-stopifgoingonbatteries.md)
 
-En el desarrollo de C++, este valor se especifica mediante la propiedad [**ITaskSettings:: StopIfGoingOnBatteries**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_stopifgoingonbatteries) .
+Para el desarrollo de C++, esta configuración se especifica mediante la [**propiedad ITaskSettings::StopIfGoingOnBatteries.**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_stopifgoingonbatteries)
 
 ## <a name="examples"></a>Ejemplos
 
-En el código XML siguiente se define un elemento de configuración que permite una finalización rígida de la tarea.
+El xml siguiente define un elemento de configuración que permite una terminación de la tarea.
 
 
 ```XML
@@ -69,10 +69,10 @@ En el código XML siguiente se define un elemento de configuración que permite 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -80,7 +80,7 @@ En el código XML siguiente se define un elemento de configuración que permite 
 
 <dl> <dt>
 
-[Programador de tareas elementos de esquema](task-scheduler-schema-elements.md)
+[Programador de tareas de esquema](task-scheduler-schema-elements.md)
 </dt> </dl>
 
  

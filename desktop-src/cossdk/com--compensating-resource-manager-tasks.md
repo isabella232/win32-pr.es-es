@@ -1,25 +1,25 @@
 ---
-description: Tareas Administrador de recursos de compensación de COM+
+description: Tareas de compensación de Resource Manager COM+
 ms.assetid: ce2d4a8e-5323-458f-8354-1a8c0a227752
-title: Tareas Administrador de recursos de compensación de COM+
+title: Tareas de compensación de Resource Manager COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cffd1b382e0cf73ad09b89614a42b11d5979d1ae
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a991772a420e3d1b1bbb539b41646c143793f39baeafeb6349cd9b3ca56ae741
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119638955"
 ---
-# <a name="com-compensating-resource-manager-tasks"></a>Tareas Administrador de recursos de compensación de COM+
+# <a name="com-compensating-resource-manager-tasks"></a>Tareas de compensación de Resource Manager COM+
 
-En los temas siguientes se proporcionan instrucciones paso a paso para configurar el Administrador de recursos de compensación de COM+ (CRM).
+En los temas siguientes se proporcionan instrucciones paso a paso para configurar com+ Compensating Resource Manager (CRM).
 
 
 
 | Tema                                                                  | Descripción                                                |
 |------------------------------------------------------------------------|------------------------------------------------------------|
-| [Configuración de componentes de COM+ CRM](configuring-com--crm-components.md) | Proporciona instrucciones sobre cómo configurar el CRM de COM+. |
+| [Configuración de componentes de COM+ CRM](configuring-com--crm-components.md) | Proporciona instrucciones sobre cómo configurar COM+ CRM. |
 
 
 
@@ -29,7 +29,7 @@ En los temas siguientes se proporcionan instrucciones paso a paso para configura
 
 <dl> <dt>
 
-[Conceptos de Administrador de recursos de compensación de COM+](com--compensating-resource-manager-concepts.md)
+[Conceptos de compensación Resource Manager COM+](com--compensating-resource-manager-concepts.md)
 </dt> </dl>
 
  

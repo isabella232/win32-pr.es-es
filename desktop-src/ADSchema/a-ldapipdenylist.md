@@ -4,8 +4,8 @@ description: Contiene una lista de direcciones IP binarias a las que se deniega 
 ms.assetid: 7d554d49-8934-4d71-b32f-8e59c22faf8c
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo LDAP-IPDeny-List
-- lDAPIPDenyList esquema de AD de atributos
+- Esquema de AD del atributo LDAP-IPDeny-List
+- Esquema de AD del atributo lDAPIPDenyList
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 43246b5bb5786eefafc8598e9d729d9a2f308e08
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f3c7a759e72680927a1143435e48940b88b7611f803c275ccdc65342f1ff4e62
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151692"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119302148"
 ---
 # <a name="ldap-ipdeny-list-attribute"></a>Atributo LDAP-IPDeny-List
 
@@ -30,13 +30,13 @@ Contiene una lista de direcciones IP binarias a las que se deniega el acceso a u
 | Entrada | Value |
 |-------------------|-------------------------------------------------------|
 | CN                | LDAP-IPDeny-List                                      |
-| Nombre para mostrar de LDAP | lDAPIPDenyList                                        |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| Ldap-Display-Name | lDAPIPDenyList                                        |
+| Size              | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.844                                |
-| System-ID-GUID    | 7359a353-90f7-11d1-aebc-0000f80367c1                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 7359a353-90f7-11d1-aebc-0000f80367c1                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -44,7 +44,7 @@ Contiene una lista de direcciones IP binarias a las que se deniega el acceso a u
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,13 +56,13 @@ Contiene una lista de direcciones IP binarias a las que se deniega el acceso a u
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | False                                            |
-| Tiene un único valor       | False                                            |
+| Es de un solo valor       | False                                            |
 | Está indexado             | False                                            |
 | En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -77,13 +77,13 @@ Contiene una lista de direcciones IP binarias a las que se deniega el acceso a u
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | False                                            |
-| Tiene un único valor       | False                                            |
+| Es de un solo valor       | False                                            |
 | Está indexado             | False                                            |
 | En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -92,19 +92,19 @@ Contiene una lista de direcciones IP binarias a las que se deniega el acceso a u
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | False                                            |
-| Tiene un único valor       | False                                            |
+| Es de un solo valor       | False                                            |
 | Está indexado             | False                                            |
 | En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -119,13 +119,13 @@ Contiene una lista de direcciones IP binarias a las que se deniega el acceso a u
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | False                                            |
-| Tiene un único valor       | False                                            |
+| Es de un solo valor       | False                                            |
 | Está indexado             | False                                            |
 | En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -140,13 +140,13 @@ Contiene una lista de direcciones IP binarias a las que se deniega el acceso a u
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | False                                            |
-| Tiene un único valor       | False                                            |
+| Es de un solo valor       | False                                            |
 | Está indexado             | False                                            |
 | En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -161,13 +161,13 @@ Contiene una lista de direcciones IP binarias a las que se deniega el acceso a u
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | False                                            |
-| Tiene un único valor       | False                                            |
+| Es de un solo valor       | False                                            |
 | Está indexado             | False                                            |
 | En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -182,13 +182,13 @@ Contiene una lista de direcciones IP binarias a las que se deniega el acceso a u
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | False                                            |
-| Tiene un único valor       | False                                            |
+| Es de un solo valor       | False                                            |
 | Está indexado             | False                                            |
 | En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |

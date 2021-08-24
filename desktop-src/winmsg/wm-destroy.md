@@ -1,23 +1,23 @@
 ---
 description: Se envía cuando se destruye una ventana. Se envía al procedimiento de ventana de la ventana que se va a destruir después de quitar la ventana de la pantalla.
 ms.assetid: 089c0645-199b-4a90-9cbc-740f0cf3267d
-title: Mensaje de WM_DESTROY (Winuser. h)
+title: WM_DESTROY mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1db195c22c38759146fb76e98edf4ca7f605a1c1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7acff03f01e9bf0c8021f8324411f646341a29a5b3b6dc1f9b3493ec89010c1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119587455"
 ---
-# <a name="wm_destroy-message"></a>Mensaje de destrucción de WM \_
+# <a name="wm_destroy-message"></a>Mensaje \_ WM DESTROY
 
 Se envía cuando se destruye una ventana. Se envía al procedimiento de ventana de la ventana que se va a destruir después de quitar la ventana de la pantalla.
 
-Este mensaje se envía primero a la ventana que se está destruyendo y, a continuación, a las ventanas secundarias (si existen) a medida que se destruyen. Durante el procesamiento del mensaje, se puede suponer que todas las ventanas secundarias todavía existen.
+Este mensaje se envía primero a la ventana que se está destruyendo y, después, a las ventanas secundarias (si existen) a medida que se destruyen. Durante el procesamiento del mensaje, se puede suponer que todas las ventanas secundarias siguen existiendo.
 
-Una ventana recibe este mensaje a través de su función [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una ventana recibe este mensaje a través de su [**función WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -50,9 +50,9 @@ Tipo: **LRESULT**
 
 Si una aplicación procesa este mensaje, debe devolver cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si la ventana que se va a destruir forma parte de la cadena del visor del portapapeles (establecida mediante una llamada a la función [**SetClipboardViewer**](/windows/win32/api/winuser/nf-winuser-setclipboardviewer) ), la ventana debe quitarse de la cadena procesando la función [**ChangeClipboardChain**](/windows/win32/api/winuser/nf-winuser-changeclipboardchain) antes de volver del mensaje de **\_ destrucción de WM** .
+Si la ventana que se destruye forma parte de la cadena del visor del Portapapeles (establecida mediante una llamada a la función [**SetClipboardViewer),**](/windows/win32/api/winuser/nf-winuser-setclipboardviewer) la ventana debe quitarse de la cadena procesando la función [**ChangeClipboardChain**](/windows/win32/api/winuser/nf-winuser-changeclipboardchain) antes de volver del **mensaje WM \_ DESTROY.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,7 +62,7 @@ Si la ventana que se va a destruir forma parte de la cadena del visor del portap
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -85,10 +85,10 @@ Si la ventana que se va a destruir forma parte de la cadena del visor del portap
 [**SetClipboardViewer**](/windows/win32/api/winuser/nf-winuser-setclipboardviewer)
 </dt> <dt>
 
-[**cierre de WM \_**](wm-close.md)
+[**WM \_ CLOSE**](wm-close.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Windows](windows.md)

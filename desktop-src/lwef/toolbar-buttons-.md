@@ -1,19 +1,19 @@
 ---
 title: Botones de la barra de herramientas (editor de caracteres del agente de Microsoft)
-description: Obtenga información acerca de los botones de la barra de herramientas del editor de caracteres de Microsoft Agent, como el nuevo botón de carácter personalizado.
+description: Obtenga información sobre los botones de la barra de herramientas del Editor de caracteres de Microsoft Agent, como el botón Nuevo carácter personalizado.
 ms.assetid: 8867a038-d2c4-43c1-b994-bd3779a251b9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a0e9e6a3d2393709c6f3033111c3c88899326d99
-ms.sourcegitcommit: af9983bab40fe0b042f177ce7ca79f2eb0f9d0e8
+ms.openlocfilehash: e2be6bc8ee19da1134dd86ce7fafb37578ef55efc27d30ac119a63d15b7c8856
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "104550258"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119608166"
 ---
 # <a name="toolbar-buttons-microsoft-agent-character-editor"></a>Botones de la barra de herramientas (editor de caracteres del agente de Microsoft)
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 :::image type="icon" source="images/f9charnew.gif":::
 
@@ -22,7 +22,7 @@ ms.locfileid: "104550258"
 <span id="New_Custom_Character"></span><span id="new_custom_character"></span><span id="NEW_CUSTOM_CHARACTER"></span>**Nuevo carácter personalizado**
 </dt> <dd>
 
-Restablece el editor para crear una nueva definición de caracteres personalizada. Si se carga un carácter existente y tiene ediciones sin guardar en un archivo (s), el editor muestra un mensaje para determinar si se deben guardar o descartar los cambios no guardados.
+Restablece el Editor para crear una nueva definición de caracteres personalizados. Si se carga un carácter existente y tiene ediciones sin guardar en un archivo, el editor muestra un mensaje para determinar si se deben guardar o descartar los cambios no guardados.
 
 </dd> </dl>
 
@@ -33,7 +33,7 @@ Restablece el editor para crear una nueva definición de caracteres personalizad
 <span id="Open_Character_Definition"></span><span id="open_character_definition"></span><span id="OPEN_CHARACTER_DEFINITION"></span>**Abrir definición de caracteres**
 </dt> <dd>
 
-Muestra el cuadro de diálogo Abrir archivo, que permite abrir un archivo de definición de caracteres existente para su edición. Si se carga un carácter existente y tiene ediciones sin guardar en un archivo (s), el editor muestra un mensaje para determinar si se deben guardar o descartar los cambios no guardados.
+Muestra el cuadro de diálogo Abrir archivo, lo que le permite abrir un archivo de definición de caracteres existente para su edición. Si se carga un carácter existente y tiene ediciones sin guardar en un archivo, el editor muestra un mensaje para determinar si se deben guardar o descartar los cambios no guardados.
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Guarda la definición de caracteres. Si la definición de caracteres no existe (
 <span id="Build_Character"></span><span id="build_character"></span><span id="BUILD_CHARACTER"></span>**Carácter de compilación**
 </dt> <dd>
 
-Crea un carácter de agente de Microsoft a partir de la definición de caracteres.
+Compila un carácter de Microsoft Agent a partir de la definición de caracteres.
 
 </dd> </dl>
 
@@ -63,10 +63,10 @@ Crea un carácter de agente de Microsoft a partir de la definición de caractere
 
 <dl> <dt>
 
-<span id="Print_Character_Definition"></span><span id="print_character_definition"></span><span id="PRINT_CHARACTER_DEFINITION"></span>**Imprimir definición de caracteres**
+<span id="Print_Character_Definition"></span><span id="print_character_definition"></span><span id="PRINT_CHARACTER_DEFINITION"></span>**Definición de caracteres de impresión**
 </dt> <dd>
 
-Imprime el archivo de definición de caracteres actual abierto en el editor.
+Imprime el archivo de definición de caracteres actual abierto en el Editor.
 
 </dd> </dl>
 
@@ -74,10 +74,10 @@ Imprime el archivo de definición de caracteres actual abierto en el editor.
 
 <dl> <dt>
 
-<span id="Cut"></span><span id="cut"></span><span id="CUT"></span>**Límite**
+<span id="Cut"></span><span id="cut"></span><span id="CUT"></span>**Cortar**
 </dt> <dd>
 
-Quita el elemento seleccionado en el editor y lo coloca en el portapapeles de Windows.
+Quita el elemento seleccionado en el Editor y lo coloca en el Portapapeles Windows texto.
 
 </dd> </dl>
 
@@ -85,10 +85,10 @@ Quita el elemento seleccionado en el editor y lo coloca en el portapapeles de Wi
 
 <dl> <dt>
 
-<span id="Copy"></span><span id="copy"></span><span id="COPY"></span>**Copiar**
+<span id="Copy"></span><span id="copy"></span><span id="COPY"></span>**Copia**
 </dt> <dd>
 
-Copia el elemento seleccionado en el editor en el portapapeles de Windows.
+Copia el elemento seleccionado en el Editor en Windows Portapapeles.
 
 </dd> </dl>
 
@@ -96,10 +96,10 @@ Copia el elemento seleccionado en el editor en el portapapeles de Windows.
 
 <dl> <dt>
 
-<span id="Paste"></span><span id="paste"></span><span id="PASTE"></span>**Copiar**
+<span id="Paste"></span><span id="paste"></span><span id="PASTE"></span>**Pegar**
 </dt> <dd>
 
-Copia datos del portapapeles de Windows actual a la ubicación seleccionada.
+Copia los datos del portapapeles Windows en la ubicación seleccionada.
 
 </dd> </dl>
 
@@ -107,7 +107,7 @@ Copia datos del portapapeles de Windows actual a la ubicación seleccionada.
 
 <dl> <dt>
 
-<span id="Delete"></span><span id="delete"></span><span id="DELETE"></span>**Elimínelos**
+<span id="Delete"></span><span id="delete"></span><span id="DELETE"></span>**Eliminar**
 </dt> <dd>
 
 Quita el elemento seleccionado del editor.
@@ -118,10 +118,10 @@ Quita el elemento seleccionado del editor.
 
 <dl> <dt>
 
-<span id="Undo"></span><span id="undo"></span><span id="UNDO"></span>**Hacer**
+<span id="Undo"></span><span id="undo"></span><span id="UNDO"></span>**Deshacer**
 </dt> <dd>
 
-Quita un cambio realizado en el editor.
+Quita un cambio realizado en el Editor.
 
 </dd> </dl>
 
@@ -129,10 +129,10 @@ Quita un cambio realizado en el editor.
 
 <dl> <dt>
 
-<span id="Redo"></span><span id="redo"></span><span id="REDO"></span>**Hace**
+<span id="Redo"></span><span id="redo"></span><span id="REDO"></span>**Rehacer**
 </dt> <dd>
 
-Invierte una acción de deshacer en el editor.
+Invierte una acción de deshacer en el Editor.
 
 </dd> </dl>
 
@@ -143,7 +143,7 @@ Invierte una acción de deshacer en el editor.
 <span id="New_Animation"></span><span id="new_animation"></span><span id="NEW_ANIMATION"></span>**Nueva animación**
 </dt> <dd>
 
-Crea un nuevo objeto Animation en el editor.
+Crea un nuevo objeto de animación en el Editor.
 
 </dd> </dl>
 
@@ -165,7 +165,7 @@ Crea un nuevo marco para una animación.
 <span id="Preview"></span><span id="preview"></span><span id="PREVIEW"></span>**Vista previa**
 </dt> <dd>
 
-Reproduce una animación, empezando por el fotograma seleccionado.
+Reproduce una animación, empezando por su fotograma seleccionado.
 
 </dd> </dl>
 
@@ -173,10 +173,10 @@ Reproduce una animación, empezando por el fotograma seleccionado.
 
 <dl> <dt>
 
-<span id="Preview_Exit_Branching"></span><span id="preview_exit_branching"></span><span id="PREVIEW_EXIT_BRANCHING"></span>**Vista previa de la bifurcación de salida**
+<span id="Preview_Exit_Branching"></span><span id="preview_exit_branching"></span><span id="PREVIEW_EXIT_BRANCHING"></span>**Rama de salida de vista previa**
 </dt> <dd>
 
-Reproduce la bifurcación de salida de una animación, empezando por el fotograma seleccionado.
+Reproduce la bifurcación de salida de una animación, empezando por su fotograma seleccionado.
 
 </dd> </dl>
 
@@ -187,7 +187,7 @@ Reproduce la bifurcación de salida de una animación, empezando por el fotogram
 <span id="Stop_Preview"></span><span id="stop_preview"></span><span id="STOP_PREVIEW"></span>**Detener vista previa**
 </dt> <dd>
 
-Detiene la reproducción de la vista previa de una animación.
+Deja de reproducir la vista previa de una animación.
 
 </dd> </dl>
 
@@ -198,7 +198,7 @@ Detiene la reproducción de la vista previa de una animación.
 <span id="Add_Image_File"></span><span id="add_image_file"></span><span id="ADD_IMAGE_FILE"></span>**Agregar archivo de imagen**
 </dt> <dd>
 
-Muestra el cuadro de diálogo Seleccionar archivo de imagen. Las imágenes seleccionadas se agregan a la lista.
+Muestra el cuadro de diálogo Seleccionar archivo de imagen . Las imágenes seleccionadas se agregan a la lista.
 
 </dd> </dl>
 
@@ -209,7 +209,7 @@ Muestra el cuadro de diálogo Seleccionar archivo de imagen. Las imágenes selec
 <span id="Move_Up"></span><span id="move_up"></span><span id="MOVE_UP"></span>**Subir**
 </dt> <dd>
 
-Mueve una imagen hacia arriba en la lista ordenada (ordenada z). En la lista de imágenes de un marco, se mueve la imagen hacia arriba en el orden z de visual.
+Mueve una imagen hacia arriba en la lista ordenada (ordenada por z). En la lista de imágenes de un fotograma, se mueve la imagen hacia arriba en el orden z visual.
 
 </dd> </dl>
 
@@ -220,7 +220,7 @@ Mueve una imagen hacia arriba en la lista ordenada (ordenada z). En la lista de 
 <span id="Move_Down"></span><span id="move_down"></span><span id="MOVE_DOWN"></span>**Bajar**
 </dt> <dd>
 
-Mueve una imagen hacia abajo en la lista ordenada (ordenada z). En la lista de imágenes de un marco, se mueve la imagen hacia abajo en el orden z de visual.
+Mueve una imagen hacia abajo en la lista ordenada (ordenada por z). En la lista de imágenes de un fotograma, se mueve la imagen hacia abajo en el orden z visual.
 
 </dd> </dl>
 
