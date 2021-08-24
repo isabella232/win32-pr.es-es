@@ -3,7 +3,7 @@ title: Método Rescan de la interfaz IMsRdpCameraRedirConfigCollection
 description: Enumera los dispositivos de cámara conectados.
 ms.tgt_platform: multiple
 keywords:
-- Volver a examinar el método Servicios de Escritorio remoto
+- Método rescan Servicios de Escritorio remoto
 - Método Rescan Servicios de Escritorio remoto, interfaz IMsRdpCameraRedirConfigCollection
 - Interfaz IMsRdpCameraRedirConfigCollection Servicios de Escritorio remoto, método Rescan
 topic_type:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: 3e615afa5f534c7e8fb71a88a5113782ba42da0e
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: cb2cef653d99ab6727f56f4ed1281b02956a4466108eedfe096977f3fbb4a48b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "105720243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119771825"
 ---
-# <a name="imsrdpcameraredirconfigcollectionrescan-method"></a>IMsRdpCameraRedirConfigCollection:: Rescan (método)
+# <a name="imsrdpcameraredirconfigcollectionrescan-method"></a>IMsRdpCameraRedirConfigCollection::Rescan (método)
 
 Enumera los dispositivos de cámara conectados.
 
@@ -39,7 +39,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Vuelva **a \_ Aceptar si es** correcto.
+Devuelve **S \_ OK si** se realiza correctamente.
 
 ## <a name="requirements"></a>Requisitos
 

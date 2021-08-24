@@ -1,27 +1,27 @@
 ---
-description: Describe cómo inicializar un OM de XPS, que permite a un programa crear un documento XPS.
+description: Describe cómo inicializar un XPS OM, que permite a un programa crear un documento XPS.
 ms.assetid: 920d940f-5ae2-4376-8c7b-0cef04f21df7
-title: Inicializar un OM XPS
+title: Inicialización de una instancia de XPS OM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cac44a69d171c1d38633512b0e275dcdeaea8738
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 16edb992efee7c9cba1d5bc454ca5bcb44bd3267a2e91d4ca714120182df0657
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360565"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119946997"
 ---
-# <a name="initialize-an-xps-om"></a>Inicializar un OM XPS
+# <a name="initialize-an-xps-om"></a>Inicialización de una instancia de XPS OM
 
-Describe cómo inicializar un OM de XPS, que permite a un programa crear un documento XPS.
+Describe cómo inicializar un XPS OM, que permite a un programa crear un documento XPS.
 
-Las interfaces de la API de documento XPS se crean mediante una interfaz [**IXpsOMObjectFactory**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomobjectfactory) . Para obtener un puntero a un **IXpsOMObjectFactory** que se pueda usar en el programa, llame a [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance).
+Las interfaces de la API de documentos XPS se crean mediante una [**interfaz IXpsOMObjectFactory.**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomobjectfactory) Para obtener un puntero a **IXpsOMObjectFactory** que se puede usar en el programa, llame a [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance).
 
-Antes de usar los siguientes ejemplos de código en el programa, lea la declinación de responsabilidades en [las tareas comunes de programación de documentos XPS](common-xps-document-tasks.md).
+Antes de usar los siguientes ejemplos de código en el programa, lea la declinación de responsabilidades en [Tareas comunes de programación de documentos XPS](common-xps-document-tasks.md).
 
 ## <a name="code-example"></a>Ejemplo de código
 
-En el ejemplo siguiente se crea el generador de objetos que se utilizará para crear interfaces XPS OM en otros ejemplos.
+En el ejemplo siguiente se crea el generador de objetos que se usará para crear interfaces XPS OM en otros ejemplos.
 
 
 ```C++
@@ -59,7 +59,7 @@ En el ejemplo siguiente se crea el generador de objetos que se utilizará para c
 
 ## <a name="best-practices"></a>Prácticas recomendadas
 
-Puede hacer que el programa sea más eficaz si obtiene un puntero a una interfaz [**IXpsOMObjectFactory**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomobjectfactory) la primera vez que necesita llamar a **IXpsOMObjectFactory** para crear una interfaz y, a continuación, guarda el puntero para usarlo en otras áreas del programa. Cuando el programa ya no necesita el generador de objetos o no lo necesita durante un tiempo, se puede liberar el puntero.
+Puede hacer que el programa sea más eficaz si obtiene un puntero a una interfaz [**IXpsOMObjectFactory**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomobjectfactory) la primera vez que necesita llamar a **IXpsOMObjectFactory** para crear una interfaz y, a continuación, guardar el puntero para usarlo en otras áreas del programa. Cuando el programa ya no necesita el generador de objetos o no lo necesitará durante un tiempo, se puede liberar el puntero.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -68,7 +68,7 @@ Puede hacer que el programa sea más eficaz si obtiene un puntero a una interfaz
 **Pasos siguientes**
 </dt> <dt>
 
-[Crear un OM XPS en blanco](create-a-blank-xps-om.md)
+[Crear un OM xps en blanco](create-a-blank-xps-om.md)
 </dt> <dt>
 
 **Se usa en esta sección**
@@ -77,7 +77,7 @@ Puede hacer que el programa sea más eficaz si obtiene un puntero a una interfaz
 [**IXpsOMObjectFactory**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomobjectfactory)
 </dt> <dt>
 
-[**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance)
+[**Cocreateinstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance)
 </dt> <dt>
 
 **Para obtener más información**
@@ -86,7 +86,7 @@ Puede hacer que el programa sea más eficaz si obtiene un puntero a una interfaz
 [Packaging](/previous-versions/windows/desktop/opc/packaging)
 </dt> <dt>
 
-[Referencia de la API de documentos XPS](xps-programming-reference.md)
+[Referencia de LA API del documento XPS](xps-programming-reference.md)
 </dt> <dt>
 
 [XML Paper Specification](https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf)

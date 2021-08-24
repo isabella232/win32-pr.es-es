@@ -1,7 +1,7 @@
 ---
 description: Identificador de clase (CLSID) del objeto.
 ms.assetid: d4816dad-c6cc-419e-8e9b-43edb4bf9928
-title: 'Miembro CBaseMediaFilter:: m_clsid (Amfilter. h)'
+title: Miembro CBaseMediaFilter::m_clsid (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c461f0ebe6eeb7f84c4e5b485626c33ffcd3d91e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a166757e7e9a487eb06a6fd604d65bac2cd064d672fa7a013d0afb83553d0d23
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660802"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119910835"
 ---
-# <a name="cbasemediafilterm_clsid-member"></a>Miembro CLSID CBaseMediaFilter:: m \_
+# <a name="cbasemediafilterm_clsid-member"></a>Miembro clsid CBaseMediaFilter::m \_
 
 Identificador de clase (CLSID) del objeto.
 
@@ -42,8 +42,8 @@ CLSID m_clsid;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ CLSID m_clsid;
 
 <dl> <dt>
 
-[**Clase CBaseMediaFilter**](cbasemediafilter.md)
+[**CBaseMediaFilter (clase)**](cbasemediafilter.md)
 </dt> </dl>
 
  

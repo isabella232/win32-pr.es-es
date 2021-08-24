@@ -4,12 +4,12 @@ ms.assetid: 6ec78ac9-c10c-4227-bead-5ddfc48ce27e
 title: Elemento Alternate (Wingdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 55dfb629aadea988a6aeec1cba1020c8ab47c994
-ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
+ms.openlocfilehash: 306371c1f2eff41629c115261fecb0d807652a598458be79bbabf8d7c7cc7587
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "114436610"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119884025"
 ---
 # <a name="alternate-element"></a>Elemento alternativo
 

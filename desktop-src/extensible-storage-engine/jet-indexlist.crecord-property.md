@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_INDEXLIST. cRecord'
-title: Propiedad JET_INDEXLIST. cRecord
+description: 'Más información sobre: JET_INDEXLIST.cRecord'
+title: JET_INDEXLIST.cRecord, propiedad
 TOCTitle: 'cRecord property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_INDEXLIST.cRecord
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_indexlist.crecord(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f21b2c1bd973f43358d45dd313f6ef880d0beb8b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 17c53a53ef21b42a7d3042d7b75ec8752f06c2d31b23cdb5b1fce8b0b7e9ef24
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687978"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119850135"
 ---
-# <a name="jet_indexlistcrecord-property"></a>Propiedad JET_INDEXLIST. cRecord
+# <a name="jet_indexlistcrecord-property"></a>JET_INDEXLIST.cRecord, propiedad
 
 Obtiene el número de registros de la tabla temporal.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -60,14 +60,14 @@ public int cRecord { get; internal set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_INDEXLIST (clase)](./jet-indexlist-class.md)
+[JET_INDEXLIST clase](./jet-indexlist-class.md)
 
-[Miembros de JET_INDEXLIST](./jet-indexlist-members.md)
+[JET_INDEXLIST miembros](./jet-indexlist-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

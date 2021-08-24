@@ -1,19 +1,19 @@
 ---
-description: Lo envía el navegador de DVD cuando necesita omitir fotogramas.
+description: Enviado por el navegador de DVD cuando necesita omitir fotogramas.
 ms.assetid: 252ffbcc-e81a-499d-9dd2-170be01f7ce1
-title: EC_SKIP_FRAMES (DShow. h)
+title: EC_SKIP_FRAMES (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7da28321ec06940cebf637c4da89290b69765f64
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c872d2a49af5226e60cbeffe3e7e9770dce5d61ae7995dad1f0a2dc99227db51
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119792445"
 ---
-# <a name="ec_skip_frames"></a>\_omitir \_ marcos de EC
+# <a name="ec_skip_frames"></a>MARCOS \_ DE EC SKIP \_
 
-Lo envía el navegador de DVD cuando necesita omitir fotogramas.
+Enviado por el navegador de DVD cuando necesita omitir fotogramas.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -22,7 +22,7 @@ Lo envía el navegador de DVD cuando necesita omitir fotogramas.
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-Número de fotogramas que se van a omitir.
+Número de fotogramas que se omitirán.
 
 </dd> <dt>
 
@@ -35,7 +35,7 @@ Reservado.
 
 ## <a name="default-action"></a>Acción predeterminada
 
-Este evento no se envía a la aplicación. Las aplicaciones no pueden reemplazar la acción predeterminada de este evento.
+Este evento no se envía a la aplicación. Las aplicaciones no pueden invalidar la acción predeterminada de este evento.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,7 +43,7 @@ Este evento no se envía a la aplicación. Las aplicaciones no pueden reemplazar
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>DShow. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

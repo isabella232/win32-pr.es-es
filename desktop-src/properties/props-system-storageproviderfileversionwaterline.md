@@ -1,19 +1,19 @@
 ---
-description: La z de la versión del archivo calculado del proveedor de almacenamiento para este archivo. Este valor se usa para detectar si un archivo ha cambiado.
+description: Línea de límite de la versión del archivo calculado del proveedor de almacenamiento para este archivo. Este valor se usa para detectar si un archivo ha cambiado.
 ms.assetid: 1b253fc9-ee0e-455a-9034-ead5202c6fff
-title: System. StorageProviderFileVersionWaterline
+title: System.StorageProviderFileVersionWaterline
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6589eaac31023b66de33bc77c11a3dbafff42416
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7068eb440a6f3d8389f1b3482f9519a7b60d22d958e27e53e76b91abdd1a9721
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104360827"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119938115"
 ---
-# <a name="systemstorageproviderfileversionwaterline"></a>System. StorageProviderFileVersionWaterline
+# <a name="systemstorageproviderfileversionwaterline"></a>System.StorageProviderFileVersionWaterline
 
-La z de la versión del archivo calculado del proveedor de almacenamiento para este archivo. Este valor se usa para detectar si un archivo ha cambiado.
+Línea de límite de la versión del archivo calculado del proveedor de almacenamiento para este archivo. Este valor se usa para detectar si un archivo ha cambiado.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = false
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

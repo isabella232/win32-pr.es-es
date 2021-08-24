@@ -1,7 +1,7 @@
 ---
-description: Fotograma real del controlador.
+description: Marco real del controlador.
 ms.assetid: 867082c1-196a-4580-ba24-187b0752f6f8
-title: Estructura de marco (Netmon. h)
+title: Estructura FRAME (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: b4ff8d66f88b18988cbb33bbcd8196cc01177b73
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7447e0ba8e13a593af6ac346ad47f8fe992b4a3187f0c46e8ee8fc28ddeb5646
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677289"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119910955"
 ---
-# <a name="frame-structure"></a>Estructura de marco
+# <a name="frame-structure"></a>Estructura FRAME
 
-La estructura del **marco** es un fotograma real del controlador.
+La **estructura FRAME** es un fotograma real del controlador.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,10 +42,10 @@ typedef struct _FRAME {
 
 <dl> <dt>
 
-**Indicaciones**
+**Timestamp**
 </dt> <dd>
 
-Tiempo transcurrido, en microsegundos, entre el inicio de la captura y el momento en que se capturó el fotograma.
+Tiempo transcurrido, en microsegundos, entre el inicio de la captura y la hora en que se capturó el fotograma.
 
 </dd> <dt>
 
@@ -59,7 +59,7 @@ Longitud del marco MAC.
 **nBytesAvail**
 </dt> <dd>
 
-Longitud de fotograma real copiada.
+Longitud real del fotograma copiada.
 
 </dd> <dt>
 
@@ -78,7 +78,7 @@ Datos de marco.
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

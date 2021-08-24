@@ -1,7 +1,7 @@
 ---
-description: Esta asociación establece un punto de acceso al servicio (SAP) como solicitante de servicios de protocolo desde un punto de conexión de protocolo.
+description: Esta asociación establece un punto de acceso de servicio (SAP) como solicitante de servicios de protocolo desde un punto de conexión de protocolo.
 ms.assetid: 14edefd8-d59b-4925-8b78-a979fb9a975f
-title: Msvm_BindsToLANEndpoint (clase)
+title: Msvm_BindsToLANEndpoint clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: c2fa01c8e9e7df40a2907e6e43a9cb4b507a53d3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 44dc8d88475b23d8d7ac12ec36eba96376cf19b7d4d3168556519597d445c73d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002788"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119870415"
 ---
-# <a name="msvm_bindstolanendpoint-class"></a>MSVM \_ BindsToLANEndpoint (clase)
+# <a name="msvm_bindstolanendpoint-class"></a>Clase \_ BindsToLANEndpoint de Msvm
 
-Esta asociación establece un punto de acceso al servicio (SAP) como solicitante de servicios de protocolo desde un punto de conexión de protocolo. Normalmente, esta asociación se ejecuta entre SAP y los puntos de conexión en un único sistema. Dado que un punto de conexión de protocolo es un tipo de SAP, este enlace se puede usar para establecer una capa de dos protocolos, con la capa superior representada por el **dependiente** y la capa inferior representada por el **antecedente**.
+Esta asociación establece un punto de acceso de servicio (SAP) como solicitante de servicios de protocolo desde un punto de conexión de protocolo. Normalmente, esta asociación se ejecuta entre los PUNTOS de conexión y LOSP en un único sistema. Dado que un punto de conexión de protocolo es un tipo de SAP, este enlace se puede usar para establecer una capa de dos protocolos, con la capa superior representada por **dependiente** y la capa inferior representada por el **antecedente**.
 
-La siguiente sintaxis es código simplificado de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se Managed Object Format código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,58 +43,58 @@ class Msvm_BindsToLANEndpoint : CIM_BindsToLANEndpoint
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ BindsToLANEndpoint** tiene estos tipos de miembros:
+La **clase \_ BindsToLANEndpoint de Msvm** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ BindsToLANEndpoint** tiene estas propiedades.
+La **clase \_ BindsToLANEndpoint de Msvm** tiene estas propiedades.
 
 <dl> <dt>
 
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **[ **MSVM \_ LANEndpoint**](msvm-lanendpoint.md)**
+Tipo de datos: **[ **Msvm \_ LANEndpoint**](msvm-lanendpoint.md)**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente")
 </dt> </dl>
 
-Una referencia a una clase [**MSVM \_ LANEndpoint**](msvm-lanendpoint.md) que representa el puerto del conmutador. Esta propiedad se hereda de [**la \_ dependencia CIM**](/windows/desktop/CIMWin32Prov/cim-dependency).
+Referencia a una clase [**\_ Msvm LANEndpoint**](msvm-lanendpoint.md) que representa el puerto switch. Esta propiedad se hereda de la [**dependencia \_ CIM**](/windows/desktop/CIMWin32Prov/cim-dependency).
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **[ **MSVM \_ VLANEndpoint**](msvm-vlanendpoint.md)**
+Tipo de datos: **[ **Msvm \_ VLANEndpoint**](msvm-vlanendpoint.md)**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependiente")
+Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
 </dt> </dl>
 
-Una referencia a [**MSVM \_ VLANEndpoint**](msvm-vlanendpoint.md) asociada con el puerto del conmutador. Esta propiedad se hereda de [**la \_ dependencia CIM**](/windows/desktop/CIMWin32Prov/cim-dependency).
+Referencia al punto de [**conexión \_ VLANendpoint de Msvm**](msvm-vlanendpoint.md) asociado al puerto del conmutador. Esta propiedad se hereda de la [**dependencia \_ CIM**](/windows/desktop/CIMWin32Prov/cim-dependency).
 
 </dd> <dt>
 
 **FrameType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Describe el método de tramas para el punto de conexión o SAP de nivel superior que está enlazado al punto de conexión de LAN. Esta propiedad se hereda de **CIM \_ BindsToLANEndpoint** y siempre está establecida en **null**.
+Describe el método de tramas para el punto de conexión o SAP de capa superior que está enlazado al punto de conexión DE LAN. Esta propiedad se hereda de **CIM \_ BindsToLANEndpoint** y siempre se establece en **Null.**
 
 </dd> </dl>
 
@@ -104,10 +104,10 @@ Describe el método de tramas para el punto de conexión o SAP de nivel superior
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

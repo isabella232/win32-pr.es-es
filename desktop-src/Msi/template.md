@@ -1,19 +1,19 @@
 ---
-description: El tipo de datos de la plantilla es una cadena de texto que puede contener propiedades que se incluyen entre corchetes \[ \] . El tipo de plantilla permite todos los formatos de tipo con formato, además \[ de 1, \] donde 1 es un número.
+description: El tipo de datos Template es una cadena de texto que puede contener propiedades que se incluyen entre \[ \] corchetes. El tipo de plantilla permite todos los formatos de tipo Con formato, más \[ \] 1, donde 1 es un número.
 ms.assetid: 1f084596-983e-494f-8697-7b68c78a40a4
 title: Plantilla
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8635e255fd8abc81695783da98d0077fa49a49b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 21b32d3f845345479b67882425fd7cea58b81cda6da3e55299874a7c787dee86
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909002"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119893415"
 ---
 # <a name="template"></a>Plantilla
 
-El tipo de datos de la plantilla es una cadena de texto que puede contener propiedades que se incluyen entre corchetes \[ \] . El tipo de plantilla permite todos los formatos de tipo [con formato](formatted.md) , además \[ de *1* , \] donde *1* es un número.
+El tipo de datos Template es una cadena de texto que puede contener propiedades que se incluyen entre \[ \] corchetes. El tipo de plantilla permite todos los [formatos de](formatted.md) tipo Con formato, más \[ *1,* \] donde *1* es un número.
 
  
 

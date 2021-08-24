@@ -4,16 +4,16 @@ ms.assetid: d5419c40-43e9-49ff-a378-9aeb0757e400
 title: ParameterInit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e0e0cadbf26d6ff516ab0ace90165e11420a9b7
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: b961ede78b313e7fb3655024705a13f04edb947344493be4fe49ff14b5d00843
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113118980"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119947861"
 ---
 # <a name="parameterinit"></a>ParameterInit
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Define un valor para una instancia de un elemento ParameterDef. Un elemento ParameterInit es el destino de la referencia realizada por un elemento ParameterRef.
 
@@ -35,7 +35,7 @@ En la tabla siguiente se enumeran los atributos XML que pueden pertenecer a este
 
  
 
-Para más información, consulte la [sección Atributos XML.](xml-attributes.md)
+Para obtener más información, vea la [sección Atributos XML.](xml-attributes.md)
 
 ## <a name="element-information"></a>Información de elemento
 
@@ -47,7 +47,7 @@ En la tabla siguiente se enumeran los elementos que pueden ser elementos primari
 |----------------------------|---------------------------------------------------------------------------------------------------|
 | Elementos primarios<br/> | PrintTicket (raíz de PrintTicket)<br/>                                                         |
 | Elementos secundarios<br/>  | Valor (uno)<br/>                                                                            |
-| Este elemento<br/>    | No se permiten datos de caracteres.<br/> No se permiten elementos secundarios duplicados relacionados.<br/> |
+| Este elemento<br/>    | No se permiten datos de caracteres.<br/> No se permiten elementos secundarios duplicados del mismo nivel.<br/> |
 
 
 
@@ -59,7 +59,7 @@ None
 
 ## <a name="example"></a>Ejemplo
 
-En el ejemplo siguiente se inicializa un parámetro en 1. En el ejemplo [de ParameterDef](parameterdef.md) se muestra cómo establecer todos los elementos Property necesarios para este parámetro.
+En el ejemplo siguiente se inicializa un parámetro en 1. En el ejemplo de [ParameterDef](parameterdef.md) se muestra cómo establecer todos los elementos Property necesarios para este parámetro.
 
 ``` syntax
 <psf:ParameterInit name="psk:PageCopyCount">
@@ -71,7 +71,7 @@ En el ejemplo siguiente se inicializa un parámetro en 1. En el ejemplo [de Para
 
 <dl> <dt>
 
-[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

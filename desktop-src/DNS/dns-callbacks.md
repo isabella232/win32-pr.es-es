@@ -1,20 +1,20 @@
 ---
-title: Devoluciones de llamada DNS
-description: Devoluciones de llamada DNS
+title: Devoluciones de llamada de DNS
+description: Devoluciones de llamada de DNS
 ms.assetid: 0564A588-F372-483E-AC12-9B8E834ECCFF
 ms.topic: article
 ms.date: 04/19/2019
 ms.custom: 19H1
-ms.openlocfilehash: 7f70f8e328e0c3dd43b7f2083617f80763154956
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2bf580a34f67dbc336134fc94bec1d532e452cbd168bc1771bde7912b29e97f2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103993802"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119825395"
 ---
-# <a name="dns-callbacks"></a>Devoluciones de llamada DNS
+# <a name="dns-callbacks"></a>Devoluciones de llamada de DNS
 
-Se definen las siguientes devoluciones de llamada para DNS.
+Las devoluciones de llamada siguientes se definen para DNS.
 
 - [**DNS_QUERY_COMPLETION_ROUTINE**](/windows/desktop/api/Windns/nc-windns-dns_query_completion_routine)
 - [**DNS_SERVICE_BROWSE_CALLBACK**](/windows/desktop/api/Windns/nc-windns-dns_service_browse_callback)

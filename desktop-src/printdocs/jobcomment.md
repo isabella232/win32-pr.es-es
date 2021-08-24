@@ -4,12 +4,12 @@ ms.assetid: 100fe310-8e64-453f-8eaf-10abaf8b10b7
 title: JobComment
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1decf4cf3af7b3a992b07d8008579ac005d3d14e
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 8132d3a6f1b7f488fe1f88e04d134b7d60cad8c415419b61ba794445aab44e95
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409048"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119845975"
 ---
 # <a name="jobcomment"></a>JobComment
 

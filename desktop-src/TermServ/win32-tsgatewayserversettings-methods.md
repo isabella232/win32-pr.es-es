@@ -1,29 +1,29 @@
 ---
-title: Métodos Win32_TSGatewayServerSettings
-description: La \_ clase TSGatewayServerSettings de Win32 expone los métodos siguientes.
+title: Win32_TSGatewayServerSettings métodos
+description: La clase \_ TSGatewayServerSettings de Win32 expone los métodos siguientes.
 ms.assetid: BD5A5D8E-2EAE-4806-8DE8-B6B02D9D0402
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 388712e8d9244e8d628c72c1fff80e5fc468a466
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 67cd80570441c470e5f4ea40e1a3ecd7ee6c34826f8db02940b63114466cb470
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103777743"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119769725"
 ---
-# <a name="win32_tsgatewayserversettings-methods"></a>\_Métodos TSGatewayServerSettings de Win32
+# <a name="win32_tsgatewayserversettings-methods"></a>Métodos \_ TSGatewayServerSettings de Win32
 
 La [**clase \_ TSGatewayServerSettings de Win32**](win32-tsgatewayserversettings.md) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**Configure (método)**](configure-win32-tsgatewayserversettings.md)
+-   [**Configuración del método**](configure-win32-tsgatewayserversettings.md)
 -   [**Método EnableCentralCAP**](enablecentralcap-win32-tsgatewayserversettings.md)
 -   [**Método EnableLogEvent**](enablelogevent-win32-tsgatewayserversettings.md)
 -   [**Método EnableOnlyConsentCapableClients**](enableonlyconsentcapableclients-win32-tsgatewayserversettings.md)
 -   [**Método EnableTransport**](enabletransport-win32-tsgatewayserversettings.md)
--   [**Método EnableRequestSOH**](win32-tsgatewayserversettings-enablerequestsoh.md)
+-   [**Método EnableRequestSHH**](win32-tsgatewayserversettings-enablerequestsoh.md)
 -   [**Método EnumAuthenticationPlugins**](enumauthenticationplugins-win32-tsgatewayserversettings.md)
 -   [**Método EnumAuthorizationPlugins**](enumauthorizationplugins-win32-tsgatewayserversettings.md)
 -   [**Método GetIPAndPort**](getipandport-win32-tsgatewayserversettings.md)
@@ -49,9 +49,9 @@ La [**clase \_ TSGatewayServerSettings de Win32**](win32-tsgatewayserversettings
 -   [**Método TSGStoreAdminMsg**](tsgstoreadminmsg-win32-tsgatewayserversettings.md)
 -   [**Método TSGStoreConsentMsg**](tsgstoreconsentmsg-win32-tsgatewayserversettings.md)
 
- 
+ 
 
- 
+ 
 
 
 

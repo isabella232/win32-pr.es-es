@@ -1,9 +1,9 @@
 ---
-title: Tipo simple de emptyString
-description: Obtenga información sobre el tipo simple emptyString, que no está en uso. Vea requisitos y ver recursos adicionales disponibles.
+title: emptyString Simple Type
+description: Obtenga información sobre el tipo simple emptyString, que no está en uso. Consulte los requisitos y vea los recursos adicionales disponibles.
 ms.assetid: e561b8d5-8683-41a1-bd72-73b1a767b6cf
 keywords:
-- emptyString tipo simple EAPHost
+- tipo simple emptyString EAPHost
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 756c8976c8b989cf77be921491770fcff9ea62d5
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 4f210fadeb0097ffd7a11d80dd47b252dbbfdc614950af0ac07d612b44edd0aa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104078391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119948215"
 ---
-# <a name="emptystring-simple-type"></a>Tipo simple de emptyString
+# <a name="emptystring-simple-type"></a>emptyString Simple Type
 
 El tipo simple **emptyString** no está en uso.
 
@@ -41,10 +41,10 @@ El tipo simple **emptyString** no está en uso.
 
 
 
-| Role | Versión mínima admitida del sistema operativo |
+| Rol | Versión mínima del sistema operativo admitida |
 |-------------------------------------|------------------------------------------------------|
-| Remoto<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -58,7 +58,7 @@ El tipo simple **emptyString** no está en uso.
 [Esquema eaptlsconnectionpropertiesv1](eaptlsconnectionpropertiesv1schema-schema.md)
 </dt> <dt>
 
-[Tipos simples de esquema de eaptlsconnectionpropertiesv1](eaptlsconnectionpropertiesv1schema-simple-types.md)
+[Tipos simples de esquema eaptlsconnectionpropertiesv1](eaptlsconnectionpropertiesv1schema-simple-types.md)
 </dt> </dl>
 
  

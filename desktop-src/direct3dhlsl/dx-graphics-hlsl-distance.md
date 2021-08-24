@@ -1,9 +1,9 @@
 ---
 title: distancia
-description: Devuelve un escalar de distancia entre dos vectores.
+description: Devuelve una distancia escalar entre dos vectores.
 ms.assetid: dda8dc39-fd72-4e92-bf9d-e700db0ede9e
 keywords:
-- HLSL de distancia
+- distance HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,20 +13,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c0f3a64778666ac8f7de16b91eed202e36e90ed1
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: f51c5e9865b9dfc1c5a941beb43010dc8fad64e2d8ac8763998c22cb3e0dfbd5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104359124"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119726545"
 ---
 # <a name="distance"></a>distancia
 
-Devuelve un escalar de distancia entre dos vectores.
+Devuelve una distancia escalar entre dos vectores.
 
 
 
-| distancia *RET* (*x*, *y*) |
+| *ret* distance(*x*, *y*) |
 |--------------------------|
 
 
@@ -39,8 +39,8 @@ Devuelve un escalar de distancia entre dos vectores.
 
 | Elemento                                                   | Descripción                                                    |
 |--------------------------------------------------------|----------------------------------------------------------------|
-| <span id="x"></span><span id="X"></span>*x1*<br/> | \[en \] el primer vector de punto flotante que se va a comparar.<br/>  |
-| <span id="y"></span><span id="Y"></span>*sí*<br/> | \[en \] el segundo vector de punto flotante que se va a comparar.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[en \] El primer vector de punto flotante que se comparará.<br/>  |
+| <span id="y"></span><span id="Y"></span>*y*<br/> | \[en \] El segundo vector de punto flotante que se comparará.<br/> |
 
 
 
@@ -48,23 +48,23 @@ Devuelve un escalar de distancia entre dos vectores.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Un valor escalar y de punto flotante que representa la distancia entre el parámetro *x* y el parámetro *y* .
+Valor escalar de punto flotante que representa la distancia entre el parámetro *x* y *el parámetro y.*
 
 ## <a name="type-description"></a>Descripción del tipo
 
 
 
-| Nombre  | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                       | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Tamaño                           |
+| Nombre  | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                       | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Size                           |
 |-------|-------------------------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------|
-| *x*   | [**medios**](dx-graphics-hlsl-intrinsic-functions.md) | [**flot**](/windows/desktop/WinProg/windows-data-types)                        | cualquiera                            |
-| *y*   | [**medios**](dx-graphics-hlsl-intrinsic-functions.md) | [**flot**](/windows/desktop/WinProg/windows-data-types)                        | mismas dimensiones que la entrada *x* |
-| *direcc* | [**escalar**](dx-graphics-hlsl-intrinsic-functions.md) | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | 1                              |
+| *x*   | [**Vector**](dx-graphics-hlsl-intrinsic-functions.md) | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | cualquiera                            |
+| *y*   | [**Vector**](dx-graphics-hlsl-intrinsic-functions.md) | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | las mismas dimensiones que la entrada *x* |
+| *Ret* | [**Escalar**](dx-graphics-hlsl-intrinsic-functions.md) | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | 1                              |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -72,7 +72,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                       | Compatible |
 |------------------------------------------------------------------------------------|-----------|
-| Modelador [modelo 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) y modelos de sombreador más altos | sí       |
+| [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) y modelos de sombreador superiores | Sí       |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | vs \_ 1 \_ 1  |
 
 
@@ -83,7 +83,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[**Funciones intrínsecas (DirectX HLSL)**](dx-graphics-hlsl-intrinsic-functions.md)
+[**Funciones intrínsecas (HLSL de DirectX)**](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> </dl>
 
  

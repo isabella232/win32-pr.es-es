@@ -1,7 +1,7 @@
 ---
 description: La propiedad PatchCode devuelve el GUID del código de revisión de la revisión.
 ms.assetid: fc2e453b-d37d-41dc-9854-800c2aab368b
-title: Patch. PatchCode (propiedad)
+title: Patch.PatchCode, propiedad
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 0582f8fd034dd576a4caebf040f29125cb7f4f6c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a853bd8a1159d2e02ffe1c8d81d0100ee9977da78ef3eafc40f3124648e740d6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653751"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119913215"
 ---
-# <a name="patchpatchcode-property"></a>Patch. PatchCode (propiedad)
+# <a name="patchpatchcode-property"></a>Patch.PatchCode, propiedad
 
-La propiedad **PatchCode** devuelve el GUID del código de revisión de la revisión.
+La **propiedad PatchCode** devuelve el GUID del código de revisión de la revisión.
 
 Esta propiedad es de solo lectura.
 
@@ -43,9 +43,9 @@ propVal = Patch.PatchCode
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer 3,0 o posterior en Windows Server 2003, Windows XP y Windows 2000<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 3.0 o posterior en Windows Server 2003, Windows XP y Windows 2000<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                                                   |
-| IID<br/>     | IID \_ IPatch se define como 000C10A1-0000-0000-C000-000000000046<br/>                                                                                                                                                                                                            |
+| IID<br/>     | IID IPatch se define como \_ 000C10A1-0000-0000-C000-000000000046<br/>                                                                                                                                                                                                            |
 
 
 
@@ -53,10 +53,10 @@ propVal = Patch.PatchCode
 
 <dl> <dt>
 
-[**Distribución**](patch-object.md)
+[**Parche**](patch-object.md)
 </dt> <dt>
 
-[No se admite en Windows Installer 2,0 y versiones anteriores](not-supported-in-windows-installer-version-2-0.md)
+[No se admite en Windows Installer 2.0 y versiones anteriores](not-supported-in-windows-installer-version-2-0.md)
 </dt> </dl>
 
  

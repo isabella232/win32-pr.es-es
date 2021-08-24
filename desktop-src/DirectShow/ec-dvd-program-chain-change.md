@@ -56,7 +56,7 @@ Este evento está deshabilitado de forma predeterminada. Para habilitar este eve
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -46,7 +46,7 @@ HRESULT RescanDevices(
 *vboolDynRedir* \[ En\]
 </dt> <dd>
 
-El estado de redireccionamiento predeterminado que se aplicará a los dispositivos o unidades recién detectados.
+Estado de redirección predeterminado que se aplicará a cualquier dispositivo o unidades recién detectados.
 
 </dd> </dl>
 
@@ -58,7 +58,7 @@ Si el método se realiza correctamente, **se devuelve S \_ OK.** Cualquier otro 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                            |
@@ -68,7 +68,7 @@ Si el método se realiza correctamente, **se devuelve S \_ OK.** Cualquier otro 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

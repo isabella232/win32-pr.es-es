@@ -1,7 +1,7 @@
 ---
 description: El método GetFlags recupera las marcas de contexto asociadas al comando diferido.
 ms.assetid: 3a96299a-b157-419b-a23e-86241e10566f
-title: CDeferredCommand. GetFlags (método) (Ctlutil. h)
+title: Método CDeferredCommand.GetFlags (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: aec9b97e42534d34c5033b3b86edb9c33366d639
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9c3ee5826c1b4ff81f90c86a6db4517aafc41313e53672486c41ab4847e82674
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681196"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119910195"
 ---
-# <a name="cdeferredcommandgetflags-method"></a>CDeferredCommand. GetFlags (método)
+# <a name="cdeferredcommandgetflags-method"></a>Método CDeferredCommand.GetFlags
 
 El `GetFlags` método recupera las marcas de contexto asociadas al comando diferido.
 
@@ -48,10 +48,10 @@ Devuelve una de las siguientes opciones:
 
 | Código devuelto                                                                                             | Descripción                                                                                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**DISPATCH ( \_ método)**</dt> </dl>         | Ejecute el miembro como un método. Si una propiedad tiene el mismo nombre, se pueden establecer tanto esta marca como la de envío \_ PropertyGet (.<br/>                                               |
-| <dl> <dt>**ENVIAR \_ PropertyGet (**</dt> </dl>    | El miembro se recupera como una propiedad o miembro de datos.<br/>                                                                                                         |
-| <dl> <dt>**ENVIAR \_ PROPERTYPUT**</dt> </dl>    | El miembro se está cambiando como una propiedad o un miembro de datos.<br/>                                                                                                           |
-| <dl> <dt>**ENVIAR \_ PROPERTYPUTREF**</dt> </dl> | El miembro se está cambiando a través de una asignación de referencia, en lugar de una asignación de valores. Esta marca solo es válida cuando la propiedad acepta una referencia a un objeto.<br/> |
+| <dl> <dt>**DISPATCH \_ (MÉTODO)**</dt> </dl>         | Ejecute el miembro como método. Si una propiedad tiene el mismo nombre, se pueden establecer tanto este como la marca DISPATCH \_ PROPERTYGET.<br/>                                               |
+| <dl> <dt>**DISPATCH \_ PROPERTYGET**</dt> </dl>    | El miembro se recupera como una propiedad o un miembro de datos.<br/>                                                                                                         |
+| <dl> <dt>**DISPATCH \_ PROPERTYPUT**</dt> </dl>    | El miembro se está cambiando como una propiedad o un miembro de datos.<br/>                                                                                                           |
+| <dl> <dt>**DISPATCH \_ PROPERTYPUTREF**</dt> </dl> | El miembro se cambia a través de una asignación de referencia, en lugar de una asignación de valor. Esta marca solo es válida cuando la propiedad acepta una referencia a un objeto .<br/> |
 
 
 
@@ -63,8 +63,8 @@ Devuelve una de las siguientes opciones:
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Devuelve una de las siguientes opciones:
 
 <dl> <dt>
 
-[**Clase CDeferredCommand**](cdeferredcommand.md)
+[**CDeferredCommand (clase)**](cdeferredcommand.md)
 </dt> </dl>
 
  

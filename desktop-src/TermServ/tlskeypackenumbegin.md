@@ -1,10 +1,10 @@
 ---
-title: TLSKeyPackEnumBegin función)
-description: Comienza la enumeración a través de todos los paquetes de claves instalados en un servidor de licencias de Escritorio remoto basado en criterios de búsqueda.
+title: Función TLSKeyPackEnumBegin
+description: Comienza la enumeración a través de todos los paquetes de claves instalados en un Escritorio remoto de licencias basado en criterios de búsqueda.
 ms.assetid: 2d847fe4-66ab-42df-8213-651e14257590
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la función TLSKeyPackEnumBegin
+- Función TLSKeyPackEnumBegin Servicios de Escritorio remoto
 topic_type:
 - apiref
 api_name:
@@ -15,19 +15,19 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: db8f61197e3c08f5608be954a9288ea54cad5586
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 469e4e255f3bdd64749060fcb712df480a8a1f6fc3683ebb25916be44856e211
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359849"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119869335"
 ---
-# <a name="tlskeypackenumbegin-function"></a>TLSKeyPackEnumBegin función)
+# <a name="tlskeypackenumbegin-function"></a>Función TLSKeyPackEnumBegin
 
-Comienza la enumeración a través de todos los paquetes de claves instalados en un servidor de licencias de Escritorio remoto basado en criterios de búsqueda.
+Comienza la enumeración a través de todos los paquetes de claves instalados en un Escritorio remoto de licencias basado en criterios de búsqueda.
 
 > [!Note]  
-> Esta función no tiene asociado ningún archivo de encabezado ni biblioteca de importación. Para llamar a esta función, debe crear un archivo de encabezado definido por el usuario y usar las funciones [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Mstlsapi.dll.
+> Esta función no tiene ningún archivo de encabezado asociado ni biblioteca de importación. Para llamar a esta función, debe crear un archivo de encabezado definido por el usuario y usar las funciones [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Mstlsapi.dll.
 
  
 
@@ -50,35 +50,35 @@ DWORD WINAPI TLSKeyPackEnumBegin(
 
 <dl> <dt>
 
-*hHandle* \[ de\]
+*hHandle* \[ En\]
 </dt> <dd>
 
-Identificador de un servidor de licencias de Escritorio remoto. Especifique un identificador abierto por la función [**TLSConnectToLsServer**](tlsconnecttolsserver.md) .
+Identificador de un Escritorio remoto de licencias. Especifique un identificador abierto por la [**función TLSConnectToLsServer.**](tlsconnecttolsserver.md)
 
 </dd> <dt>
 
-*dwSearchParm* \[ de\]
+*dwSearchParm* \[ En\]
 </dt> <dd>
 
-Especifica los criterios de búsqueda. Este parámetro se reserva para uso futuro y debe contener 0xFFFFFFFF.
+Especifica los criterios de búsqueda. Este parámetro está reservado para uso futuro y debe contener 0xFFFFFFFF.
 
 </dd> <dt>
 
-*bMatchAll* \[ de\]
+*bMatchAll* \[ En\]
 </dt> <dd>
 
-Especifica si se deben buscar coincidencias con todos los valores de búsqueda.
+Especifica si se deben coincidir todos los valores de búsqueda.
 
 </dd> <dt>
 
-*lpSearchParm* \[ de\]
+*lpSearchParm* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura [**LSKeyPack**](lskeypack.md) que especifica los parámetros de búsqueda que se van a buscar.
+Puntero a una [**estructura LSKeyPack**](lskeypack.md) que especifica los parámetros de búsqueda que se buscarán.
 
 </dd> <dt>
 
-*pdwErrCode* \[ enuncia\]
+*pdwErrCode* \[ out\]
 </dt> <dd>
 
 Puntero a una variable que recibe uno de los siguientes códigos de error en la devolución.
@@ -87,7 +87,7 @@ Puntero a una variable que recibe uno de los siguientes códigos de error en la 
 
 <span id="LSERVER_S_SUCCESS"></span><span id="lserver_s_success"></span>
 
-<span id="LSERVER_S_SUCCESS"></span><span id="lserver_s_success"></span>**LSERVER \_ S \_ correcto** (0)
+<span id="LSERVER_S_SUCCESS"></span><span id="lserver_s_success"></span>**LSERVER \_ S \_ SUCCESS** (0)
 
 
 </dt> <dd>
@@ -98,7 +98,7 @@ La llamada se realiza correctamente.
 
 <span id="LSERVER_E_INTERNAL_ERROR"></span><span id="lserver_e_internal_error"></span>
 
-<span id="LSERVER_E_INTERNAL_ERROR"></span><span id="lserver_e_internal_error"></span>**LSERVER \_ E \_ \_ error interno** (5001)
+<span id="LSERVER_E_INTERNAL_ERROR"></span><span id="lserver_e_internal_error"></span>**LSERVER \_ E \_ ERROR \_ INTERNO** (5001)
 
 
 </dt> <dd>
@@ -109,18 +109,18 @@ Error interno en el servidor de licencias.
 
 <span id="LSERVER_E_INVALID_SEQUENCE"></span><span id="lserver_e_invalid_sequence"></span>
 
-<span id="LSERVER_E_INVALID_SEQUENCE"></span><span id="lserver_e_invalid_sequence"></span>**LSERVER \_ E \_ \_ secuencia no válida** (5006)
+<span id="LSERVER_E_INVALID_SEQUENCE"></span><span id="lserver_e_invalid_sequence"></span>**LSERVER \_ E \_ SECUENCIA \_ NO VÁLIDA** (5006)
 
 
 </dt> <dd>
 
-La secuencia de llamada no era válida. Lo más probable es que una enumeración anterior no haya finalizado.
+La secuencia de llamada no era válida. Lo más probable es que no haya finalizado una enumeración anterior.
 
 </dd> <dt>
 
 <span id="LSERVER_E_SERVER_BUSY"></span><span id="lserver_e_server_busy"></span>
 
-<span id="LSERVER_E_SERVER_BUSY"></span><span id="lserver_e_server_busy"></span>**LSERVER \_ E \_ servidor \_ ocupado** (5007)
+<span id="LSERVER_E_SERVER_BUSY"></span><span id="lserver_e_server_busy"></span>**LSERVER \_ E \_ SERVER \_ BUSY** (5007)
 
 
 </dt> <dd>
@@ -136,13 +136,13 @@ El servidor de licencias está demasiado ocupado para procesar la solicitud.
 
 </dt> <dd>
 
-No se puede procesar la solicitud porque no hay memoria suficiente.
+No se puede procesar la solicitud debido a memoria insuficiente.
 
 </dd> <dt>
 
 <span id="LSERVER_E_INVALID_DATA"></span><span id="lserver_e_invalid_data"></span>
 
-<span id="LSERVER_E_INVALID_DATA"></span><span id="lserver_e_invalid_data"></span>**LSERVER \_ E \_ \_ datos no válidos** (5009)
+<span id="LSERVER_E_INVALID_DATA"></span><span id="lserver_e_invalid_data"></span>**LSERVER \_ E \_ DATOS NO \_ VÁLIDOS** (5009)
 
 
 </dt> <dd>
@@ -153,18 +153,18 @@ Los datos del parámetro de búsqueda no son válidos.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve los siguientes posibles valores devueltos.
+Esta función devuelve los siguientes valores devueltos posibles.
 
 <dl> <dt>
 
-**RPC \_ S \_ correcto**
+**RPC \_ S \_ OK**
 </dt> <dd>
 
-La llamada se realizó correctamente. Compruebe el valor del parámetro *pdwErrCode* para obtener el código de retorno de la llamada.
+La llamada se ha realiza correctamente. Compruebe el valor del *parámetro pdwErrCode* para obtener el código de retorno de la llamada.
 
 </dd> <dt>
 
-**\_ \_ argumento no válido de RPC S \_**
+**RPC \_ S ARGUMENTO NO \_ \_ VÁLIDO**
 </dt> <dd>
 
 El argumento no era válido.

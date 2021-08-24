@@ -1,10 +1,10 @@
 ---
-title: Estructura de TSMF_SUPPORT_NODEDATA_OUT
-description: Se usa dentro de la estructura de salida de datos de soporte de TSMF \_ \_ \_ para contener información acerca de los formatos multimedia admitidos.
+title: TSMF_SUPPORT_NODEDATA_OUT estructura
+description: Se usa dentro de la estructura \_ TSMF SUPPORT DATA OUT para contener información sobre los \_ \_ formatos multimedia admitidos.
 ms.assetid: cac0af9e-6750-4735-b075-46c77aea7d41
 ms.tgt_platform: multiple
 keywords:
-- Estructura de TSMF_SUPPORT_NODEDATA_OUT Servicios de Escritorio remoto
+- TSMF_SUPPORT_NODEDATA_OUT estructura Servicios de Escritorio remoto
 - PTSMF_SUPPORT_NODEDATA_OUT puntero de estructura Servicios de Escritorio remoto
 topic_type:
 - apiref
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 517170e9d6580f69b59f71e0994351ebe0484ddc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: df3eb4c515963e13d2a7919c58a6d55ca4b2a7600c429a33516093215b5ac0eb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119869015"
 ---
-# <a name="tsmf_support_nodedata_out-structure"></a>TSMF \_ support \_ NODEDATA \_ out Structure
+# <a name="tsmf_support_nodedata_out-structure"></a>TSMF \_ SUPPORT \_ NODEDATA OUT \_ structure
 
-Se usa dentro de la estructura de salida de datos de soporte de TSMF para contener información acerca de los formatos multimedia admitidos. [**\_ \_ \_**](tsmf-support-data-out.md)
+Se usa dentro de la [**estructura \_ TSMF SUPPORT DATA \_ \_ OUT**](tsmf-support-data-out.md) para contener información sobre los formatos multimedia admitidos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -54,7 +54,7 @@ El nodo.
 **hrSupportStatus**
 </dt> <dd>
 
-Indica si se admite el receptor identificado por el parámetro *clsidNewSink* .
+Si se admite el receptor identificado por *el parámetro clsidNewSink.*
 
 Los valores posibles son.
 
@@ -74,7 +74,7 @@ Compatible
 
 </dd> </dl>
 
-Otros valores son indefinidos.
+Otros valores no están definidos.
 
 </dd> <dt>
 
@@ -110,7 +110,7 @@ Receptor asociado al tipo de medio.
 [**QueryProperty**](/windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwrdsprotocolconnection-queryproperty)
 </dt> <dt>
 
-[**TSMF \_ admiten \_ datos de \_ salida**](tsmf-support-data-out.md)
+[**TSMF \_ ADMITE LA SALIDA DE \_ \_ DATOS**](tsmf-support-data-out.md)
 </dt> </dl>
 
  

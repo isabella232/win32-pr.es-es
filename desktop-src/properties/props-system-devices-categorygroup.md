@@ -1,19 +1,19 @@
 ---
-description: Plural de la categoría del dispositivo.
+description: Plural de categoría de dispositivo.
 ms.assetid: a695adab-99f7-4660-a5a3-2b3ec619a0f8
-title: System. Devices. CategoryGroup
+title: System.Devices.CategoryGroup
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e22dc53cb52b957fa439d2d55215aa65e07d44f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f5cb917ef8300bd9a2a10b2bd25db9bf796b163456205ff1ece5d9571ea67a35
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276629"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119938335"
 ---
-# <a name="systemdevicescategorygroup"></a>System. Devices. CategoryGroup
+# <a name="systemdevicescategorygroup"></a>System.Devices.CategoryGroup
 
-Plural de la categoría del dispositivo.
+Plural de categoría de dispositivo.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="windows-7"></a>Windows 7
+## <a name="windows-7"></a>Windows 7
 
 ```
 propertyDescription
@@ -47,9 +47,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -64,7 +64,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -76,7 +76,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -94,7 +94,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

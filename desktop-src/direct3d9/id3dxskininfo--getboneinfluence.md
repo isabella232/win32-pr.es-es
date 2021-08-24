@@ -1,7 +1,7 @@
 ---
-description: Obtiene los vértices y pesos que un hueso influye.
+description: Obtiene los vértices y pesos que influye en un influjo.
 ms.assetid: 84cb064b-b6b2-402d-81cc-8c02de6f8b52
-title: 'ID3DXSkinInfo:: GetBoneInfluence (método) (D3DX9Mesh. h)'
+title: Método ID3DXSkinInfo::GetIonalInfluence (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 8b4b31ab08aca476ced1cb28dfc5ed5bfe61d044
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8f49afb4175559bb5338c01c0ebb22fb89801aef5e7cafa62386e25c095ea139
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717545"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119847314"
 ---
-# <a name="id3dxskininfogetboneinfluence-method"></a>ID3DXSkinInfo:: GetBoneInfluence (método)
+# <a name="id3dxskininfogetboneinfluence-method"></a>Método ID3DXSkinInfo::GetIonalInfluence
 
-Obtiene los vértices y pesos que un hueso influye.
+Obtiene los vértices y pesos que influye en un influjo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,12 +42,12 @@ HRESULT GetBoneInfluence(
 
 <dl> <dt>
 
-*Hueso* \[ de\]
+*Desótola* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Número del hueso.
+Número de pándalo.
 
 </dd> <dt>
 
@@ -56,16 +56,16 @@ Número del hueso.
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Obtiene la matriz de vértices influida en un hueso.
+Obtenga la matriz de vértices influenciados por un pórtico.
 
 </dd> <dt>
 
 *pesos* \[ in, out\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Obtiene la matriz de pesos influida por un hueso.
+Obtiene la matriz de pesos influenciada por un póreo.
 
 </dd> </dl>
 
@@ -73,11 +73,11 @@ Obtiene la matriz de pesos influida por un hueso.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use [**ID3DXSkinInfo:: GetNumBoneInfluences**](id3dxskininfo--getnumboneinfluences.md) para averiguar el número de vértices que influyen en el hueso.
+Use [**ID3DXSkinInfo::GetNumIonalInfluences**](id3dxskininfo--getnumboneinfluences.md) para averiguar cuántos vértices influye el insómalo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,8 +85,8 @@ Use [**ID3DXSkinInfo:: GetNumBoneInfluences**](id3dxskininfo--getnumboneinfluenc
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -97,7 +97,7 @@ Use [**ID3DXSkinInfo:: GetNumBoneInfluences**](id3dxskininfo--getnumboneinfluenc
 [ID3DXSkinInfo](id3dxskininfo.md)
 </dt> <dt>
 
-[**ID3DXSkinInfo::SetBoneInfluence**](id3dxskininfo--setboneinfluence.md)
+[**ID3DXSkinInfo::SetIonalInfluence**](id3dxskininfo--setboneinfluence.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: modificador/oldtlb
-description: El modificador/oldtlb indica al compilador de MIDL que genere una biblioteca de tipos de formato antiguo.
+title: Modificador /oldtlb
+description: El modificador /oldtlb dirige al compilador MIDL para generar una biblioteca de tipos de formato antiguo.
 ms.assetid: cf5fe000-7262-4812-a6ab-f12a558ac068
 keywords:
-- /oldtlb modificador MIDL
+- /oldtlb switch MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,45 +12,45 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e7a08e468d0acff16aa1df4a45fcacafeb676b00
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 8a0b30a7bc905645523a81287eea2dfcdc408b8a4d172cc84282e0f1538e12cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104420599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119895995"
 ---
-# <a name="oldtlb-switch"></a>modificador/oldtlb
+# <a name="oldtlb-switch"></a>Modificador /oldtlb
 
-El modificador **/oldtlb** indica al compilador de MIDL que genere una biblioteca de tipos de formato antiguo.
+El **modificador /oldtlb** dirige al compilador MIDL para generar una biblioteca de tipos de formato antiguo.
 
 ``` syntax
 midl /oldtlb
 ```
 
-## <a name="switch-options"></a>Opciones de conmutador
+## <a name="switch-options"></a>Opciones de cambio
 
 Este modificador no tiene parámetros.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El modificador **/oldtlb** invalida el valor predeterminado y dirige el compilador MIDL para generar bibliotecas de tipos de formato antiguo incluso en las versiones actuales de Windows mediante [CreateTypeLib](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-createtypelib) en lugar de [CreateTypeLib2](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-createtypelib2).
+El modificador **/oldtlb** invalida el valor predeterminado y dirige al compilador MIDL a generar bibliotecas de tipos de formato antiguo incluso en las versiones actuales de Windows mediante [CreateTypeLib](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-createtypelib) en lugar de [CreateTypeLib2](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-createtypelib2).
 
 ## <a name="examples"></a>Ejemplos
 
-**MIDL/oldtlb nombrearchivo. idl**
+**midl /oldtlb filename.idl**
 
-**/oldtlb myoldodl. ODL de MIDL**
+**midl /oldtlb myoldodl.odl**
 
 ## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Sintaxis de línea de comandos de MIDL general](general-midl-command-line-syntax.md)
+[Sintaxis general de la línea de comandos de MIDL](general-midl-command-line-syntax.md)
 </dt> <dt>
 
 [**/newtlb**](-newtlb.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

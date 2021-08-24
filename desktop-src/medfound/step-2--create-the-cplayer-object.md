@@ -1,25 +1,25 @@
 ---
-description: En este tema se describe el paso 2 del tutorial sobre cómo reproducir archivos multimedia con Media Foundation.
+description: Este tema es el paso 2 del tutorial Cómo reproducir archivos multimedia con Media Foundation.
 ms.assetid: b489312f-ab8c-4ec6-8070-f5848034087e
-title: 'Paso 2: crear el objeto CPlayer'
+title: 'Paso 2: Crear el objeto CPlayer'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 021ffa383506c0ab1be8d6c1ca327f67ed8f52f4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: df004aa060a8ce8a46adbf0fdae438ca0a0cd1a454e9fc17889ad29eebef21ff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715483"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119847785"
 ---
-# <a name="step-2-create-the-cplayer-object"></a>Paso 2: crear el objeto CPlayer
+# <a name="step-2-create-the-cplayer-object"></a>Paso 2: Crear el objeto CPlayer
 
-En este tema se describe el paso 2 del tutorial sobre [Cómo reproducir archivos multimedia con Media Foundation](how-to-play-unprotected-media-files.md). El código completo se muestra en el tema [ejemplo de reproducción de sesión de medio](media-session-playback-example.md).
+Este tema es el paso 2 del tutorial Cómo reproducir archivos [multimedia con Media Foundation](how-to-play-unprotected-media-files.md). El código completo se muestra en el tema [Ejemplo de reproducción de sesión multimedia](media-session-playback-example.md).
 
-Para crear una instancia de la `CPlayer` clase, la aplicación llama al `CPlayer::CreateInstance` método estático. Este método toma los parámetros siguientes:
+Para crear una instancia de la `CPlayer` clase , la aplicación llama al método `CPlayer::CreateInstance` estático. Este método toma los parámetros siguientes:
 
--   *hVideo* especifica la ventana en la que se va a mostrar el vídeo.
+-   *hVideo* especifica la ventana para mostrar el vídeo.
 -   *hEvent* especifica una ventana para recibir eventos. Es válido pasar el mismo identificador para ambos identificadores de ventana.
--   *ppPlayer* recibe un puntero a una nueva `CPlayer` instancia de.
+-   *ppPlayer* recibe un puntero a una nueva `CPlayer` instancia.
 
 En el código siguiente se muestra el método `CreateInstance`:
 
@@ -73,7 +73,7 @@ HRESULT CPlayer::Initialize()
 
 
 
-En el código siguiente se muestra el `CPlayer` constructor:
+En el código siguiente se muestra el `CPlayer` constructor :
 
 
 ```C++
@@ -92,12 +92,12 @@ CPlayer::CPlayer(HWND hVideo, HWND hEvent) :
 
 
 
-El constructor realiza lo siguiente:
+El constructor hace lo siguiente:
 
-1.  Llama a [**MFStartup**](/windows/desktop/api/mfapi/nf-mfapi-mfstartup) para inicializar la plataforma Media Foundation.
-2.  Crea un evento de restablecimiento automático. Este evento se utiliza al cerrar la sesión multimedia; vea [paso 7: apagar la sesión multimedia](step-7--shut-down-the-media-session.md).
+1.  Llama [**a MFStartup**](/windows/desktop/api/mfapi/nf-mfapi-mfstartup) para inicializar Media Foundation plataforma.
+2.  Crea un evento de restablecimiento automático. Este evento se usa al cerrar la sesión multimedia; vea [Paso 7: Apagar la sesión multimedia.](step-7--shut-down-the-media-session.md)
 
-El destructor cierra la sesión multimedia, como se describe en [el paso 7: apagar la sesión multimedia](step-7--shut-down-the-media-session.md).
+El destructor cierra la sesión multimedia, como se describe en [Paso 7: Apagar la sesión multimedia.](step-7--shut-down-the-media-session.md)
 
 
 ```C++
@@ -123,9 +123,9 @@ CPlayer::~CPlayer()
 
 
 
-Tenga en cuenta que el constructor y el destructor son métodos de clase protegidos. La aplicación crea el objeto mediante el `CreateInstance` método estático. Destruye el objeto llamando a **IUnknown:: Release**, en lugar de usar explícitamente **Delete**.
+Tenga en cuenta que el constructor y el destructor son métodos de clase protegidos. La aplicación crea el objeto mediante el método `CreateInstance` estático. Destruye el objeto llamando a **IUnknown::Release**, en lugar de usar explícitamente **delete**.
 
-Siguiente: [paso 3: abrir un archivo multimedia](step-3--open-a-media-file.md)
+Siguiente: [Paso 3: Abrir un archivo multimedia](step-3--open-a-media-file.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

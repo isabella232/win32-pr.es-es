@@ -1,7 +1,7 @@
 ---
 description: Crea un objeto de sesión de clave multimedia con los datos de inicialización y los datos personalizados especificados. .
 ms.assetid: 9f11433c-7cff-4a59-9d4a-7f4b56ba62cf
-title: 'IMFMediaKeys:: CreateSession (método)'
+title: MÉTODO IMFMediaKeys::CreateSession
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: 89d3abce0c1c15d472f7008fa0ef2c5f27bba6ad
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 2dd9bcc7a1151b042d275917e8bd8106eb079de3315137ca41fa7faecaf5c957
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105697967"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119942045"
 ---
-# <a name="imfmediakeyscreatesession-method"></a>IMFMediaKeys:: CreateSession (método)
+# <a name="imfmediakeyscreatesession-method"></a>MÉTODO IMFMediaKeys::CreateSession
 
 Crea un objeto de sesión de clave multimedia con los datos de inicialización y los datos personalizados especificados. .
 
@@ -48,21 +48,21 @@ HRESULT CreateSession(
 *mimeType* 
 </dt> <dd>
 
-El tipo MIME del contenedor multimedia utilizado para el contenido.
+Tipo MIME del contenedor multimedia utilizado para el contenido.
 
 </dd> <dt>
 
 *initData* 
 </dt> <dd>
 
-Los datos de inicialización del sistema de claves.
+Datos de inicialización del sistema de claves.
 
 </dd> <dt>
 
-*CB* 
+*Cb* 
 </dt> <dd>
 
-El recuento en bytes de *initData*.
+Recuento en bytes de *initData.*
 
 </dd> <dt>
 
@@ -76,27 +76,27 @@ Datos personalizados enviados al sistema de claves.
 *cbCustomData* 
 </dt> <dd>
 
-El recuento en bytes de *cbCustomData*.
+Recuento en bytes de *cbCustomData.*
 
 </dd> <dt>
 
-*notificar a* 
+*Notificar* 
 </dt> <dd>
 
-notificar a
+Notificar
 
 </dd> <dt>
 
 *ppSession* 
 </dt> <dd>
 
-La sesión de la clave multimedia.
+Sesión de clave multimedia.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -104,9 +104,9 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                                 |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                      |
-| IDL<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                 |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 

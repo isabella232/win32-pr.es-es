@@ -1,4 +1,4 @@
-- name: Authorization
+- name: Autorización
   href: authorization-portal.md
   items:
     - name: Acerca de la autorización
@@ -9,10 +9,10 @@
           items:
             - name: Seguridad de nivel C2
               href: c2-level-security.md
-            - name: Modelo de Access Control
+            - name: Access Control modelo
               href: access-control-model.md
               items:
-                - name: Partes del modelo de Access Control
+                - name: Partes del modelo Access Control modelo
                   href: access-control-components.md
                   items:
                     - name: Tokens de acceso
@@ -20,16 +20,16 @@
                       items:
                         - name: Tokens restringidos
                           href: restricted-tokens.md
-                        - name: Atributos SID en un token de acceso
+                        - name: Atributos de SID en un token de acceso
                           href: sid-attributes-in-an-access-token.md
-                        - name: Derechos de acceso para objetos de Access-Token
+                        - name: Derechos de acceso para Access-Token objetos
                           href: access-rights-for-access-token-objects.md
                     - name: Descriptor de seguridad
                       href: security-descriptors.md
                       items:
-                        - name: Operaciones de descriptor de seguridad
+                        - name: Operaciones del descriptor de seguridad
                           href: security-descriptor-operations.md
-                        - name: Descriptores de seguridad para nuevos objetos
+                        - name: Descriptores de seguridad para objetos nuevos
                           href: security-descriptors-for-new-objects.md
                           items:
                             - name: DACL para un nuevo objeto
@@ -45,20 +45,20 @@
                     - name: Listas de control de acceso
                       href: access-control-lists.md
                       items:
-                        - name: Obtención de información de una ACL
+                        - name: Obtener información de una ACL
                           href: getting-information-from-an-acl.md
                         - name: Crear o modificar una ACL
                           href: creating-or-modifying-an-acl.md
                     - name: Access Control entradas
                       href: access-control-entries.md
                       items:
-                        - name: Confianza
+                        - name: Administradores
                           href: trustees.md
-                        - name: ACE específicas del objeto
+                        - name: A ACE específicas del objeto
                           href: object-specific-aces.md
-                        - name: Orden de ACE en una DACL
+                        - name: Orden de las ACE en una DACL
                           href: order-of-aces-in-a-dacl.md
-                        - name: Herencia ACE
+                        - name: Herencia de ACE
                           href: ace-inheritance.md
                         - name: Propagación automática de ACE heredables
                           href: automatic-propagation-of-inheritable-aces.md
@@ -75,11 +75,11 @@
                           href: generic-access-rights.md
                         - name: Derechos de acceso estándar
                           href: standard-access-rights.md
-                        - name: Derecho de acceso SACL
+                        - name: Derecho de acceso sacl
                           href: sacl-access-right.md
                         - name: Derechos de acceso de servicios de directorio
                           href: directory-services-access-rights.md
-                        - name: Solicitar derechos de acceso a un objeto
+                        - name: Solicitud de derechos de acceso a un objeto
                           href: requesting-access-rights-to-an-object.md
                     - name: Directiva de autorización centralizada
                       href: centralized-authorization-policy.md
@@ -91,26 +91,26 @@
                     - name: Identificadores de seguridad
                       href: security-identifiers.md
                       items:
-                        - name: Componentes SID
+                        - name: Componentes de SID
                           href: sid-components.md
                         - name: SID conocidos
                           href: well-known-sids.md
-                - name: Cómo funciona AccessCheck
+                - name: Funcionamiento de AccessCheck
                   href: how-dacls-control-access-to-an-object.md
                 - name: Interacción entre subprocesos y objetos protegibles
                   href: interaction-between-threads-and-securable-objects.md
                 - name: DACL y ACE
                   href: dacls-and-aces.md
-                - name: DACL NULL y listas DACL vacías
+                - name: DACL null y DACL vacías
                   href: null-dacls-and-empty-dacls.md
                 - name: Permitir el acceso anónimo
                   href: allowing-anonymous-access.md
-            - name: Lenguaje de definición de descriptores de seguridad
+            - name: Lenguaje de definición del descriptor de seguridad
               href: security-descriptor-definition-language.md
               items:
-                - name: Formato de cadena de descriptor de seguridad
+                - name: Formato de cadena del descriptor de seguridad
                   href: security-descriptor-string-format.md
-                - name: Lenguaje de definición de descriptores de seguridad para ACE condicionales.
+                - name: Lenguaje de definición de descriptores de seguridad para A ACE condicionales.
                   href: security-descriptor-definition-language-for-conditional-aces-.md
                 - name: Cadenas ACE
                   href: ace-strings.md
@@ -122,34 +122,34 @@
               href: audit-generation.md
             - name: Objetos protegibles
               href: securable-objects.md
-            - name: Access Control de bajo nivel
+            - name: Nivel bajo Access Control
               href: low-level-access-control.md
               items:
                 - name: 'Funciones de descriptor de seguridad de bajo nivel '
                   href: low-level-security-descriptor-functions.md
                 - name: Creación de descriptores de seguridad de bajo nivel
                   href: low-level-security-descriptor-creation.md
-                - name: Descriptores de seguridad Absolute y Self-Relative
+                - name: Descriptores de seguridad Self-Relative absolutos y de seguridad
                   href: absolute-and-self-relative-security-descriptors.md
-                - name: Funciones ACL y ACE de bajo nivel
+                - name: Funciones DE ACL y ACE de bajo nivel
                   href: low-level-acl-and-ace-functions.md
-        - name: Editor de Access Control
+        - name: Access Control Editor
           href: access-control-editor.md
           items:
-            - name: Página de propiedades seguridad básica
+            - name: Página de propiedades Seguridad básica
               href: basic-security-property-page.md
-            - name: Seguridad avanzada (hoja de propiedades)
+            - name: Hoja de propiedades de seguridad avanzada
               href: advanced-security-property-sheet.md
-            - name: Página de propiedades permisos
+            - name: Página de propiedades Permisos
               href: permissions-property-page.md
-            - name: Página de propiedades de auditoría
+            - name: Página de propiedades Auditoría
               href: auditing-property-page.md
             - name: Página de propiedades propietario
               href: owner-property-page.md
-        - name: Access Control cliente/servidor
+        - name: Cliente/servidor Access Control
           href: client-server-access-control.md
           items:
-            - name: Contexto de seguridad del cliente
+            - name: Contexto de seguridad de cliente
               href: the-client-security-context.md
             - name: Suplantación de cliente
               href: client-impersonation.md
@@ -160,20 +160,20 @@
                   href: impersonation-tokens.md
             - name: Sesiones de inicio de sesión de cliente
               href: client-logon-sessions.md
-            - name: Procesos en el contexto de seguridad del cliente
+            - name: Procesos en el contexto de seguridad de cliente
               href: processes-in-the-client-security-context.md
-            - name: Acceso de cliente a los recursos de red
+            - name: Acceso de cliente a recursos de red
               href: client-access-to-network-resources.md
-            - name: Access Control basados en ACL
+            - name: Datos basados en ACL Access Control
               href: acl-based-access-control.md
               items:
                 - name: Descriptores de seguridad para objetos privados
                   href: security-descriptors-for-private-objects.md
-                - name: Comprobar el acceso a objetos privados
+                - name: Comprobación del acceso a objetos privados
                   href: checking-access-to-private-objects.md
                 - name: Auditar el acceso a objetos privados
                   href: auditing-access-to-private-objects.md
-        - name: Access Control para los recursos de la aplicación
+        - name: Access Control para recursos de aplicación
           href: access-control-for-application-resources.md
           items:
             - name: Control de acceso basado en rol
@@ -181,7 +181,7 @@
               items:
                 - name: Ventajas de la autorización basada en roles
                   href: advantages-of-role-based-authorization.md
-                - name: Modelo de administrador de autorización
+                - name: Modelo del administrador de autorización
                   href: authorization-manager-model.md
                   items:
                     - name: 'Almacenes de directivas, aplicaciones y ámbitos'
@@ -201,7 +201,7 @@
           items:
             - name: Aislamiento de AppContainer
               href: appcontainer-isolation.md
-            - name: Implementar un AppContainer
+            - name: Implementación de un elemento AppContainer
               href: implementing-an-appcontainer.md
         - name: Control de integridad de credenciales
           href: mandatory-integrity-control.md
@@ -213,25 +213,25 @@
               items:
                 - name: Modelo de agente de administrador
                   href: administrator-broker-model.md
-                - name: Modelo de servicio del sistema operativo
+                - name: Modelo de servicio de sistema operativo
                   href: operating-system-service-model.md
-                - name: Modelo de tareas elevado
+                - name: Modelo de tareas con privilegios elevados
                   href: elevated-task-model.md
                 - name: Modelo de objetos COM de administrador
                   href: administrator-com-object-model.md
-    - name: Usar la autorización en C++
+    - name: Uso de la autorización en C++
       href: using-authorization-in-c--.md
       items:
         - name: Definir permisos en C++
           href: defining-permissions-in-c--.md
-        - name: Comprobar el acceso del cliente a un recurso solicitado en C++
+        - name: Comprobar el acceso de cliente a un recurso solicitado en C++
           href: verifying-client-access-to-a-requested-resource-in-c--.md
         - name: Delegación de la definición de permisos en C++
           href: delegating-the-defining-of-permissions-in-c--.md
-        - name: Tareas auxiliares de autorización en C++
+        - name: Tareas de compatibilidad para la autorización en C++
           href: supporting-tasks-for-authorization-in-c--.md
           items:
-            - name: Crear un almacén de directivas de autorización en C++
+            - name: Creación de un almacén de directivas de autorización en C++
               href: creating-an-authorization-policy-store-in-c--.md
               items:
                 - name: Crear un objeto de almacén de directivas de autorización en C++
@@ -240,19 +240,19 @@
                   href: creating-an-application-object-in-c--.md
                 - name: Definir operaciones en C++
                   href: defining-operations-in-c--.md
-                - name: Agrupar operaciones en tareas en C++
+                - name: Agrupación de operaciones en tareas en C++
                   href: grouping-operations-into-tasks-in-c--.md
-                - name: Agrupar tareas en roles en C++
+                - name: Agrupación de tareas en roles en C++
                   href: grouping-tasks-into-roles-in-c--.md
                 - name: Definir grupos de usuarios en C++
                   href: defining-groups-of-users-in-c--.md
                 - name: Agregar usuarios a un grupo de aplicaciones en C++
                   href: adding-users-to-an-application-group-in-c--.md
-            - name: Establecer un contexto de cliente con administrador de autorización en C++
+            - name: Establecimiento de un contexto de cliente con el Administrador de autorización en C++
               href: establishing-a-client-context-with-authorization-manager-in-c--.md
-            - name: Calificar el acceso con la lógica de negocios en C++
+            - name: Acceso apto con lógica de negocios en C++
               href: qualifying-access-with-business-logic-in-c--.md
-            - name: Definir permisos con ACL en C++
+            - name: Definición de permisos con ACL en C++
               href: defining-permissions-with-acls-in-c--.md
               items:
                 - name: Modificar las ACL de un objeto en C++
@@ -263,64 +263,64 @@
                   href: controlling-child-object-creation-in-c--.md
                 - name: Habilitar y deshabilitar privilegios en C++
                   href: enabling-and-disabling-privileges-in-c--.md
-            - name: Establecer un contexto de cliente a partir de un SID en C++
+            - name: Establecer un contexto de cliente desde un SID en C++
               href: establishing-a-client-context-from-a-sid-in-c--.md
               items:
-                - name: Buscar un SID en un token de acceso en C++
+                - name: Búsqueda de un SID en un token de acceso en C++
                   href: searching-for-a-sid-in-an-access-token-in-c--.md
-                - name: Convertir un SID binario en formato de cadena en C++
+                - name: Convertir un SID binario al formato de cadena en C++
                   href: converting-a-binary-sid-to-string-format-in-c--.md
-            - name: Comprobar el acceso de cliente con ACL en C++
+            - name: Comprobación del acceso de cliente con ACL en C++
               href: verifying-client-access-with-acls-in-c--.md
             - name: Buscar el propietario de un objeto de archivo en C++
               href: finding-the-owner-of-a-file-object-in-c--.md
-            - name: Tomar posesión de objetos en C++
+            - name: Tomar la propiedad del objeto en C++
               href: taking-object-ownership-in-c--.md
-    - name: Usar la autorización en el script
+    - name: Uso de la autorización en el script
       href: using-authorization-in-script.md
       items:
         - name: Definir permisos en el script
           href: defining-permissions-in-script.md
-        - name: Comprobando el acceso del cliente a un recurso solicitado en el script
+        - name: Comprobación del acceso de cliente a un recurso solicitado en el script
           href: verifying-client-access-to-a-requested-resource-in-script.md
         - name: Delegación de la definición de permisos en el script
           href: delegating-the-defining-of-permissions-in-script.md
-        - name: Tareas de soporte técnico para la autorización en el script
+        - name: Tareas de compatibilidad para la autorización en el script
           href: supporting-tasks-for-authorization-in-script.md
           items:
-            - name: Creación de un almacén de directivas de autorización en un script
+            - name: Creación de un almacén de directivas de autorización en script
               href: creating-an-authorization-policy-store-in-script.md
               items:
-                - name: Crear un objeto de almacén de directivas de autorización en el script
+                - name: Crear un objeto de almacén de directivas de autorización en script
                   href: creating-an-authorization-policy-store-object-in-script.md
-                - name: Crear un objeto de aplicación en el script
+                - name: Crear un objeto de aplicación en script
                   href: creating-an-application-object-in-script.md
-                - name: Definir operaciones en el script
+                - name: Definir operaciones en script
                   href: defining-operations-in-script.md
-                - name: Agrupar operaciones en tareas en script
+                - name: Agrupación de operaciones en tareas en script
                   href: grouping-operations-into-tasks-in-script.md
-                - name: Agrupar tareas en roles en el script
+                - name: Agrupación de tareas en roles en script
                   href: grouping-tasks-into-roles-in-script.md
-                - name: Definir grupos de usuarios en el script
+                - name: Definir grupos de usuarios en script
                   href: defining-groups-of-users-in-script.md
-                - name: Agregar usuarios a un grupo de aplicaciones en el script
+                - name: Agregar usuarios a un grupo de aplicaciones en script
                   href: adding-users-to-an-application-group-in-script.md
-            - name: Establecer un contexto de cliente en un script
+            - name: Establecimiento de un contexto de cliente en script
               href: establishing-a-client-context-in-script.md
-            - name: Acceso de calificación con lógica de negocios en script
+            - name: Calificar el acceso con lógica de negocios en el script
               href: qualifying-access-with-business-logic-in-script.md
-    - name: Uso de la API de authz
+    - name: Uso de Authz API
       href: using-authz-api.md
       items:
-        - name: Inicializar un contexto de cliente
+        - name: Inicialización de un contexto de cliente
           href: initializing-a-client-context.md
-        - name: Consultar un contexto de cliente
+        - name: Consulta de un contexto de cliente
           href: querying-a-client-context.md
         - name: Agregar SID a un contexto de cliente
           href: adding-sids-to-a-client-context.md
-        - name: Comprobación del acceso con la API de authz
+        - name: Comprobación del acceso con Authz API
           href: checking-access-with-authz-api.md
-        - name: Almacenar en caché comprobaciones de acceso
+        - name: Almacenamiento en caché de comprobaciones de acceso
           href: caching-access-checks.md
     - name: Referencia de autorización
       href: authorization-reference.md
@@ -330,13 +330,13 @@
           items:
             - name: Constantes de derechos de cuenta
               href: account-rights-constants.md
-            - name: Constantes de SID de contenedor de la aplicación
+            - name: Constantes de SID de contenedor de aplicaciones
               href: app-container-sid-constants.md
-            - name: Auditoría de constantes
+            - name: Constantes de auditoría
               href: auditing-constants.md
-            - name: Constantes de SID de capacidad
+            - name: Constantes de SID de funcionalidad
               href: capability-sid-constants.md
-            - name: Constantes de privilegio
+            - name: Constantes de privilegios
               href: privilege-constants.md
         - name: Tipos de datos de autorización
           href: authorization-data-types.md
@@ -613,9 +613,9 @@
               href: /windows/desktop/api/securitybaseapi/nf-securitybaseapi-destroyprivateobjectsecurity
             - name: DSCreateSecurityPage
               href: /windows/desktop/api/DSSec/nf-dssec-dscreatesecuritypage
-            - name: DSCreateISecurityInfoObject
+            - name: DSCreateiSecurityInfoObject
               href: /windows/desktop/api/DSSec/nf-dssec-dscreateisecurityinfoobject
-            - name: DSCreateISecurityInfoObjectEx
+            - name: DSCreateiSecurityInfoObjectEx
               href: /windows/desktop/api/DSSec/nf-dssec-dscreateisecurityinfoobjectex
             - name: DSEditSecurity
               href: /windows/desktop/api/DSSec/nf-dssec-dseditsecurity
@@ -846,63 +846,63 @@
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-addpolicyreader
                     - name: Método AddPolicyReaderName
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-addpolicyreadername
-                    - name: Método AddPropertyItem
+                    - name: AddPropertyItem (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-addpropertyitem
-                    - name: Método CreateApplicationGroup
+                    - name: CreateApplicationGroup (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-createapplicationgroup
-                    - name: Método CreateOperation
+                    - name: CreateOperation (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-createoperation
-                    - name: Método CreateRole
+                    - name: CreateRole (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-createrole
-                    - name: Método CreateScope
+                    - name: CreateScope (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-createscope
                     - name: CreateTask (Método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-createtask
-                    - name: Método DeleteApplicationGroup
+                    - name: DeleteApplicationGroup (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-deleteapplicationgroup
-                    - name: Método DeleteDelegatedPolicyUser
+                    - name: DeleteDelegatedPolicyUser (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-deletedelegatedpolicyuser
-                    - name: Método DeleteDelegatedPolicyUserName
+                    - name: DeleteDelegatedPolicyUserName (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-deletedelegatedpolicyusername
-                    - name: Método DeleteOperation
+                    - name: DeleteOperation (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-deleteoperation
-                    - name: Método DeletePolicyAdministrator
+                    - name: DeletePolicyAdministrator (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-deletepolicyadministrator
-                    - name: Método DeletePolicyAdministratorName
+                    - name: DeletePolicyAdministratorName (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-deletepolicyadministratorname
-                    - name: Método DeletePolicyReader
+                    - name: DeletePolicyReader (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-deletepolicyreader
-                    - name: Método DeletePolicyReaderName
+                    - name: DeletePolicyReaderName (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-deletepolicyreadername
-                    - name: Método DeletePropertyItem
+                    - name: DeletePropertyItem (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-deletepropertyitem
-                    - name: Método DeleteRole
+                    - name: DeleteRole (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-deleterole
-                    - name: Método DeleteScope
+                    - name: DeleteScope (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-deletescope
-                    - name: Método DeleteTask
+                    - name: DeleteTask (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-deletetask
                     - name: Método GetProperty
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-getproperty
-                    - name: Método InitializeClientContextFromName
+                    - name: InitializeClientContextFromName (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-initializeclientcontextfromname
-                    - name: Método InitializeClientContextFromStringSid
+                    - name: InitializeClientContextFromStringSid (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-initializeclientcontextfromstringsid
                     - name: Método InitializeClientContextFromToken
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-initializeclientcontextfromtoken
-                    - name: Método OpenApplicationGroup
+                    - name: OpenApplicationGroup (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-openapplicationgroup
-                    - name: Método OpenOperation
+                    - name: OpenOperation (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-openoperation
-                    - name: Método OpenRole
+                    - name: OpenRole (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-openrole
                     - name: OpenScope (Método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-openscope
-                    - name: Método OpenTask
+                    - name: OpenTask (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-opentask
                     - name: Método SetProperty
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-setproperty
-                    - name: Submit (método)
+                    - name: Método Submit
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-submit
                 - name: Propiedades de IAzApplication
                   href: iazapplication-properties.md
@@ -935,11 +935,11 @@
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-get_policyreaders
                     - name: Propiedad PolicyReadersName
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-get_policyreadersname
-                    - name: Propiedad roles
+                    - name: Propiedad Roles
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-get_roles
                     - name: Propiedad Scopes
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-get_scopes
-                    - name: Tasks (propiedad)
+                    - name: Propiedad Tasks
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-get_tasks
                     - name: Propiedad Version
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication-get_version
@@ -951,7 +951,7 @@
                 - name: Métodos IAzApplication2
                   href: iazapplication2-methods.md
                   items:
-                    - name: Método InitializeClientContext2
+                    - name: InitializeClientContext2 (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication2-initializeclientcontext2
                     - name: Método InitializeClientContextFromToken2
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication2-initializeclientcontextfromtoken2
@@ -961,25 +961,25 @@
                 - name: Métodos IAzApplication3
                   href: iazapplication3-methods.md
                   items:
-                    - name: Método CreateRoleAssignment
+                    - name: CreateRoleAssignment (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication3-createroleassignment
-                    - name: Método CreateRoleDefinition
+                    - name: CreateRoleDefinition (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication3-createroledefinition
-                    - name: Método CreateScope2
+                    - name: CreateScope2 (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication3-createscope2
-                    - name: Método DeleteRoleAssignment
+                    - name: DeleteRoleAssignment (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication3-deleteroleassignment
-                    - name: Método DeleteRoleDefinition
+                    - name: DeleteRoleDefinition (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication3-deleteroledefinition
-                    - name: Método DeleteScope2
+                    - name: DeleteScope2 (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication3-deletescope2
-                    - name: Método OpenRoleAssignment
+                    - name: OpenRoleAssignment (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication3-openroleassignment
-                    - name: Método OpenRoleDefinition
+                    - name: OpenRoleDefinition (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication3-openroledefinition
-                    - name: Método OpenScope2
+                    - name: OpenScope2 (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication3-openscope2
-                    - name: Método ScopeExists
+                    - name: ScopeExists (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplication3-scopeexists
                 - name: Propiedades de IAzApplication3
                   href: iazapplication3-properties.md
@@ -996,11 +996,11 @@
                 - name: Propiedades de IAzApplications
                   href: iazapplications-properties.md
                   items:
-                    - name: Propiedad Count
+                    - name: Count (propiedad)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplications-get_count
                     - name: Item (Propiedad)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplications-get_item
-                    - name: Propiedad _NewEnum
+                    - name: _NewEnum propiedad
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplications-get__newenum
             - name: IAzApplicationGroup
               href: /windows/desktop/api/Azroles/nn-azroles-iazapplicationgroup
@@ -1008,39 +1008,39 @@
                 - name: Métodos IAzApplicationGroup
                   href: iazapplicationgroup-methods.md
                   items:
-                    - name: Método AddAppMember
+                    - name: AddAppMember (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-addappmember
-                    - name: Método AddAppNonMember
+                    - name: AddAppNonMember (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-addappnonmember
-                    - name: Método AddMember
+                    - name: AddMember (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-addmember
-                    - name: Método AddMemberName
+                    - name: AddMemberName (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-addmembername
-                    - name: Método AddNonMember
+                    - name: AddNonMember (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-addnonmember
-                    - name: Método AddNonMemberName
+                    - name: AddNonMemberName (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-addnonmembername
-                    - name: Método AddPropertyItem
+                    - name: AddPropertyItem (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-addpropertyitem
-                    - name: Método DeleteAppMember
+                    - name: DeleteAppMember (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-deleteappmember
-                    - name: Método DeleteAppNonMember
+                    - name: DeleteAppNonMember (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-deleteappnonmember
-                    - name: Método DeleteMember
+                    - name: DeleteMember (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-deletemember
-                    - name: Método DeleteMemberName
+                    - name: DeleteMemberName (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-deletemembername
-                    - name: Método DeleteNonMember
+                    - name: DeleteNonMember (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-deletenonmember
-                    - name: Método DeleteNonMemberName
+                    - name: DeleteNonMemberName (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-deletenonmembername
-                    - name: Método DeletePropertyItem
+                    - name: DeletePropertyItem (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-deletepropertyitem
                     - name: Método GetProperty
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-getproperty
                     - name: Método SetProperty
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-setproperty
-                    - name: Submit (método)
+                    - name: Método Submit
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-submit
                 - name: Propiedades de IAzApplicationGroup
                   href: iazapplicationgroup-properties.md
@@ -1053,17 +1053,17 @@
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_description
                     - name: Propiedad LdapQuery
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_ldapquery
-                    - name: Propiedad members
+                    - name: Propiedad Members
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_members
                     - name: Propiedad MembersName
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_membersname
                     - name: Propiedad Name
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_name
-                    - name: Propiedad nonmembers
+                    - name: Propiedad NonMembers
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_nonmembers
                     - name: Propiedad NonMembersName
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_nonmembersname
-                    - name: Type (propiedad)
+                    - name: Propiedad Type
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_type
                     - name: Propiedad grabable
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_writable
@@ -1087,11 +1087,11 @@
                 - name: Propiedades de IAzApplicationGroups
                   href: iazapplicationgroups-properties.md
                   items:
-                    - name: Propiedad Count
+                    - name: Count (propiedad)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplicationgroups-get_count
                     - name: Item (Propiedad)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplicationgroups-get_item
-                    - name: Propiedad _NewEnum
+                    - name: _NewEnum propiedad
                       href: /windows/desktop/api/Azroles/nf-azroles-iazapplicationgroups-get__newenum
             - name: IAzAuthorizationStore
               href: /windows/desktop/api/Azroles/nn-azroles-iazauthorizationstore
@@ -1111,47 +1111,47 @@
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-addpolicyreader
                     - name: Método AddPolicyReaderName
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-addpolicyreadername
-                    - name: Método AddPropertyItem
+                    - name: AddPropertyItem (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-addpropertyitem
-                    - name: Método CloseApplication
+                    - name: CloseApplication (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-closeapplication
-                    - name: Método CreateApplication
+                    - name: CreateApplication (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-createapplication
-                    - name: Método CreateApplicationGroup
+                    - name: CreateApplicationGroup (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-createapplicationgroup
                     - name: Delete (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-delete
-                    - name: Método DeleteApplication
+                    - name: DeleteApplication (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-deleteapplication
-                    - name: Método DeleteApplicationGroup
+                    - name: DeleteApplicationGroup (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-deleteapplicationgroup
-                    - name: Método DeleteDelegatedPolicyUser
+                    - name: DeleteDelegatedPolicyUser (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-deletedelegatedpolicyuser
-                    - name: Método DeleteDelegatedPolicyUserName
+                    - name: DeleteDelegatedPolicyUserName (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-deletedelegatedpolicyusername
-                    - name: Método DeletePolicyAdministrator
+                    - name: DeletePolicyAdministrator (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-deletepolicyadministrator
-                    - name: Método DeletePolicyAdministratorName
+                    - name: DeletePolicyAdministratorName (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-deletepolicyadministratorname
-                    - name: Método DeletePolicyReader
+                    - name: DeletePolicyReader (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-deletepolicyreader
-                    - name: Método DeletePolicyReaderName
+                    - name: DeletePolicyReaderName (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-deletepolicyreadername
-                    - name: Método DeletePropertyItem
+                    - name: DeletePropertyItem (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-deletepropertyitem
                     - name: Método GetProperty
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-getproperty
                     - name: Método Initialize
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-initialize
-                    - name: Método OpenApplication
+                    - name: OpenApplication (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-openapplication
-                    - name: Método OpenApplicationGroup
+                    - name: OpenApplicationGroup (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-openapplicationgroup
                     - name: Método SetProperty
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-setproperty
-                    - name: Submit (método)
+                    - name: Método Submit
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-submit
-                    - name: Método UpdateCache
+                    - name: UpdateCache (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-updatecache
                 - name: Propiedades de IAzAuthorizationStore
                   href: iazauthorizationstore-properties.md
@@ -1160,7 +1160,7 @@
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_applicationdata
                     - name: Propiedad ApplicationGroups
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_applicationgroups
-                    - name: Propiedad Applications
+                    - name: Propiedad Aplicaciones
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_applications
                     - name: Propiedad ApplyStoreSacl
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_applystoresacl
@@ -1170,7 +1170,7 @@
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_delegatedpolicyusersname
                     - name: Description (propiedad)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_description
-                    - name: Propiedad DomainTimeout
+                    - name: DomainTimeout (propiedad)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_domaintimeout
                     - name: Propiedad GenerateAudits
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_generateaudits
@@ -1196,9 +1196,9 @@
                 - name: Métodos IAzAuthorizationStore2
                   href: iazauthorizationstore2-methods.md
                   items:
-                    - name: Método CreateApplication2
+                    - name: CreateApplication2 (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore2-createapplication2
-                    - name: Método OpenApplication2
+                    - name: OpenApplication2 (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore2-openapplication2
             - name: IAzAuthorizationStore3
               href: /windows/desktop/api/Azroles/nn-azroles-iazauthorizationstore3
@@ -1206,9 +1206,9 @@
                 - name: Métodos IAzAuthorizationStore3
                   href: iazauthorizationstore3-methods.md
                   items:
-                    - name: Método BizruleGroupSupported
+                    - name: BizruleGroupSupported (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore3-bizrulegroupsupported
-                    - name: Método GetSchemaVersion
+                    - name: GetSchemaVersion (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore3-getschemaversion
                     - name: Método IsFunctionalLevelUpgradeSupported
                       href: /windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore3-isfunctionallevelupgradesupported
@@ -1236,9 +1236,9 @@
                   items:
                     - name: AddInterface (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazbizruleinterfaces-addinterface
-                    - name: Método AddInterfaces
+                    - name: AddInterfaces (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazbizruleinterfaces-addinterfaces
-                    - name: Método GetInterfaceValue
+                    - name: GetInterfaceValue (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazbizruleinterfaces-getinterfacevalue
                     - name: Remove (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazbizruleinterfaces-remove
@@ -1247,7 +1247,7 @@
                 - name: Propiedades de IAzBizRuleInterfaces
                   href: iazbizruleinterfaces-properties.md
                   items:
-                    - name: Propiedad Count
+                    - name: Count (propiedad)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazbizruleinterfaces-get_count
             - name: IAzBizRuleParameters
               href: /windows/desktop/api/Azroles/nn-azroles-iazbizruleparameters
@@ -1255,11 +1255,11 @@
                 - name: Métodos IAzBizRuleParameters
                   href: iazbizruleparameters-methods.md
                   items:
-                    - name: Método AddParameter
+                    - name: AddParameter (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazbizruleparameters-addparameter
-                    - name: Método AddParameters
+                    - name: AddParameters (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazbizruleparameters-addparameters
-                    - name: Método GetParameterValue
+                    - name: GetParameterValue (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazbizruleparameters-getparametervalue
                     - name: Remove (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazbizruleparameters-remove
@@ -1268,7 +1268,7 @@
                 - name: Propiedades de IAzBizRuleParameters
                   href: iazbizruleparameters-properties.md
                   items:
-                    - name: Propiedad Count
+                    - name: Count (propiedad)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazbizruleparameters-get_count
             - name: IAzClientContext
               href: /windows/desktop/api/Azroles/nn-azroles-iazclientcontext
@@ -1276,32 +1276,32 @@
                 - name: Métodos IAzClientContext
                   href: iazclientcontext-methods.md
                   items:
-                    - name: AccessCheck (método)
+                    - name: Método AccessCheck
                       href: /windows/desktop/api/Azroles/nf-azroles-iazclientcontext-accesscheck
-                    - name: Método GetBusinessRuleString
+                    - name: GetBusinessRuleString (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazclientcontext-getbusinessrulestring
                     - name: Método GetProperty
                       href: /windows/desktop/api/Azroles/nf-azroles-iazclientcontext-getproperty
-                    - name: Método GetRoles
+                    - name: GetRoles (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazclientcontext-getroles
                 - name: Propiedades de IAzClientContext
                   href: iazclientcontext-properties.md
                   items:
                     - name: Propiedad RoleForAccessCheck
                       href: /windows/desktop/api/Azroles/nf-azroles-iazclientcontext-get_roleforaccesscheck
-                    - name: Propiedad UserCanonical
+                    - name: UserÓniconical (propiedad)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazclientcontext-get_usercanonical
                     - name: Propiedad UserDisplay
                       href: /windows/desktop/api/Azroles/nf-azroles-iazclientcontext-get_userdisplay
-                    - name: Propiedad Nombredistintivodelusuario
+                    - name: UserDn (propiedad)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazclientcontext-get_userdn
                     - name: Propiedad UserDnsSamCompat
                       href: /windows/desktop/api/Azroles/nf-azroles-iazclientcontext-get_userdnssamcompat
-                    - name: Propiedad UserGuid
+                    - name: UserGuid (propiedad)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazclientcontext-get_userguid
-                    - name: Propiedad UserSamCompat
+                    - name: UserSamCompat (propiedad)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazclientcontext-get_usersamcompat
-                    - name: Propiedad UserUpn
+                    - name: UserUpn (propiedad)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazclientcontext-get_userupn
             - name: IAzClientContext2
               href: /windows/desktop/api/Azroles/nn-azroles-iazclientcontext2
@@ -1309,11 +1309,11 @@
                 - name: Métodos IAzClientContext2
                   href: iazclientcontext2-methods.md
                   items:
-                    - name: Método AddApplicationGroups
+                    - name: AddApplicationGroups (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazclientcontext2-addapplicationgroups
-                    - name: Método AddRoles
+                    - name: AddRoles (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazclientcontext2-addroles
-                    - name: Método AddStringSids
+                    - name: AddStringSids (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazclientcontext2-addstringsids
                     - name: Método GetAssignedScopesPage
                       href: /windows/desktop/api/Azroles/nf-azroles-iazclientcontext2-getassignedscopespage
@@ -1330,9 +1330,9 @@
                   items:
                     - name: Método AccessCheck2
                       href: /windows/desktop/api/Azroles/nf-azroles-iazclientcontext3-accesscheck2
-                    - name: Método GetGroups
+                    - name: GetGroups (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazclientcontext3-getgroups
-                    - name: Método GetOperations
+                    - name: GetOperations (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazclientcontext3-getoperations
                     - name: Método GetTasks
                       href: /windows/desktop/api/Azroles/nf-azroles-iazclientcontext3-gettasks
@@ -1345,7 +1345,7 @@
                       href: /windows/desktop/api/Azroles/nf-azroles-iazclientcontext3-get_bizruleinterfaces
                     - name: Propiedad BizRuleParameters
                       href: /windows/desktop/api/Azroles/nf-azroles-iazclientcontext3-get_bizruleparameters
-                    - name: Propiedad SID
+                    - name: Propiedad Sids
                       href: /windows/desktop/api/Azroles/nf-azroles-iazclientcontext3-get_sids
             - name: IAzNameResolver
               href: /windows/desktop/api/Azroles/nn-azroles-iaznameresolver
@@ -1363,7 +1363,7 @@
                 - name: Métodos IAzObjectPicker
                   href: iazobjectpicker-methods.md
                   items:
-                    - name: Método GetPrincipals
+                    - name: GetPrincipals (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazobjectpicker-getprincipals
                     - name: Propiedad Name
                       href: /windows/desktop/api/Azroles/nf-azroles-iazobjectpicker-get_name
@@ -1377,7 +1377,7 @@
                       href: /windows/desktop/api/Azroles/nf-azroles-iazoperation-getproperty
                     - name: Método SetProperty
                       href: /windows/desktop/api/Azroles/nf-azroles-iazoperation-setproperty
-                    - name: Submit (método)
+                    - name: Método Submit
                       href: /windows/desktop/api/Azroles/nf-azroles-iazoperation-submit
                 - name: Propiedades de IAzOperation
                   href: iazoperation-properties.md
@@ -1398,7 +1398,7 @@
                 - name: Métodos IAzOperation2
                   href: iazoperation2-methods.md
                   items:
-                    - name: Método RoleAssignments
+                    - name: RoleAssignments (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazoperation2-roleassignments
             - name: IAzOperations
               href: /windows/desktop/api/Azroles/nn-azroles-iazoperations
@@ -1406,11 +1406,11 @@
                 - name: Propiedades de IAzOperations
                   href: iazoperations-properties.md
                   items:
-                    - name: Propiedad Count
+                    - name: Count (propiedad)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazoperations-get_count
                     - name: Item (Propiedad)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazoperations-get_item
-                    - name: Propiedad _NewEnum
+                    - name: _NewEnum propiedad
                       href: /windows/desktop/api/Azroles/nf-azroles-iazoperations-get__newenum
             - name: IAzPrincipalLocator
               href: /windows/desktop/api/Azroles/nn-azroles-iazprincipallocator
@@ -1418,7 +1418,7 @@
                 - name: Propiedades de IAzPrincipalLocator
                   href: iazprincipallocator-properties.md
                   items:
-                    - name: Propiedad NameResolver
+                    - name: NameResolver (propiedad)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazprincipallocator-get_nameresolver
                     - name: Propiedad ObjectPicker
                       href: /windows/desktop/api/Azroles/nf-azroles-iazprincipallocator-get_objectpicker
@@ -1428,35 +1428,35 @@
                 - name: Métodos IAzRole
                   href: iazrole-methods.md
                   items:
-                    - name: Método AddAppMember
+                    - name: AddAppMember (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazrole-addappmember
-                    - name: Método AddMember
+                    - name: AddMember (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazrole-addmember
-                    - name: Método AddMemberName
+                    - name: AddMemberName (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazrole-addmembername
-                    - name: Método AddOperation
+                    - name: AddOperation (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazrole-addoperation
-                    - name: Método AddPropertyItem
+                    - name: AddPropertyItem (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazrole-addpropertyitem
-                    - name: Método AddTask
+                    - name: AddTask (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazrole-addtask
-                    - name: Método DeleteAppMember
+                    - name: DeleteAppMember (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazrole-deleteappmember
-                    - name: Método DeleteMember
+                    - name: DeleteMember (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazrole-deletemember
-                    - name: Método DeleteMemberName
+                    - name: DeleteMemberName (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazrole-deletemembername
-                    - name: Método DeleteOperation
+                    - name: DeleteOperation (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazrole-deleteoperation
-                    - name: Método DeletePropertyItem
+                    - name: DeletePropertyItem (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazrole-deletepropertyitem
-                    - name: Método DeleteTask
+                    - name: DeleteTask (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazrole-deletetask
                     - name: Método GetProperty
                       href: /windows/desktop/api/Azroles/nf-azroles-iazrole-getproperty
                     - name: Método SetProperty
                       href: /windows/desktop/api/Azroles/nf-azroles-iazrole-setproperty
-                    - name: Submit (método)
+                    - name: Método Submit
                       href: /windows/desktop/api/Azroles/nf-azroles-iazrole-submit
                 - name: Propiedades de IAzRole
                   href: iazrole-properties.md
@@ -1467,7 +1467,7 @@
                       href: /windows/desktop/api/Azroles/nf-azroles-iazrole-get_appmembers
                     - name: Description (propiedad)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazrole-get_description
-                    - name: Propiedad members
+                    - name: Propiedad Members
                       href: /windows/desktop/api/Azroles/nf-azroles-iazrole-get_members
                     - name: Propiedad MembersName
                       href: /windows/desktop/api/Azroles/nf-azroles-iazrole-get_membersname
@@ -1475,7 +1475,7 @@
                       href: /windows/desktop/api/Azroles/nf-azroles-iazrole-get_name
                     - name: Propiedad Operations
                       href: /windows/desktop/api/Azroles/nf-azroles-iazrole-get_operations
-                    - name: Tasks (propiedad)
+                    - name: Propiedad Tasks
                       href: /windows/desktop/api/Azroles/nf-azroles-iazrole-get_tasks
                     - name: Propiedad grabable
                       href: /windows/desktop/api/Azroles/nf-azroles-iazrole-get_writable
@@ -1485,16 +1485,16 @@
                 - name: Métodos IAzRoleAssignment
                   href: iazroleassignment-methods.md
                   items:
-                    - name: Método AddRoleDefinition
+                    - name: AddRoleDefinition (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazroleassignment-addroledefinition
-                    - name: Método DeleteRoleDefinition
+                    - name: DeleteRoleDefinition (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazroleassignment-deleteroledefinition
-                - name: Propiedades de IAzRoleAssignment
+                - name: Propiedades IAzRoleAssignment
                   href: iazroleassignment-properties.md
                   items:
                     - name: Propiedad RoleDefinitions
                       href: /windows/desktop/api/Azroles/nf-azroles-iazroleassignment-get_roledefinitions
-                    - name: Propiedad de ámbito
+                    - name: Propiedad Scope
                       href: /windows/desktop/api/Azroles/nf-azroles-iazroleassignment-get_scope
             - name: IAzRoleAssignments
               href: /windows/desktop/api/Azroles/nn-azroles-iazroleassignments
@@ -1502,11 +1502,11 @@
                 - name: Propiedades de IAzRoleAssignments
                   href: iazroleassignments-properties.md
                   items:
-                    - name: Propiedad Count
+                    - name: Count (propiedad)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazroleassignments-get_count
                     - name: Item (Propiedad)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazroleassignments-get_item
-                    - name: Propiedad _NewEnum
+                    - name: _NewEnum propiedad
                       href: /windows/desktop/api/Azroles/nf-azroles-iazroleassignments-get__newenum
             - name: IAzRoleDefinition
               href: /windows/desktop/api/Azroles/nn-azroles-iazroledefinition
@@ -1514,9 +1514,9 @@
                 - name: Métodos IAzRoleDefinition
                   href: iazroledefinition-methods.md
                   items:
-                    - name: Método AddRoleDefinition
+                    - name: AddRoleDefinition (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazroledefinition-addroledefinition
-                    - name: Método DeleteRoleDefinition
+                    - name: DeleteRoleDefinition (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazroledefinition-deleteroledefinition
                 - name: Propiedades de IAzRoleDefinition
                   href: iazroledefinition-properties.md
@@ -1531,11 +1531,11 @@
                 - name: Propiedades de IAzRoleDefinitions
                   href: iazroledefinitions-properties.md
                   items:
-                    - name: Propiedad Count
+                    - name: Count (propiedad)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazroledefinitions-get_count
                     - name: Item (Propiedad)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazroledefinitions-get_item
-                    - name: Propiedad _NewEnum
+                    - name: _NewEnum propiedad
                       href: /windows/desktop/api/Azroles/nf-azroles-iazroledefinitions-get__newenum
             - name: IAzRoles
               href: /windows/desktop/api/Azroles/nn-azroles-iazroles
@@ -1543,16 +1543,16 @@
                 - name: Propiedades de IAzRoles
                   href: iazroles-properties.md
                   items:
-                    - name: Propiedad Count
+                    - name: Count (propiedad)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazroles-get_count
                     - name: Item (Propiedad)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazroles-get_item
-                    - name: Propiedad _NewEnum
+                    - name: _NewEnum propiedad
                       href: /windows/desktop/api/Azroles/nf-azroles-iazroles-get__newenum
             - name: IAzScope
               href: /windows/desktop/api/Azroles/nn-azroles-iazscope
               items:
-                - name: Métodos IAzScope
+                - name: Métodos de IAzScope
                   href: iazscope-methods.md
                   items:
                     - name: Método AddPolicyAdministrator
@@ -1563,41 +1563,41 @@
                       href: /windows/desktop/api/Azroles/nf-azroles-iazscope-addpolicyreader
                     - name: Método AddPolicyReaderName
                       href: /windows/desktop/api/Azroles/nf-azroles-iazscope-addpolicyreadername
-                    - name: Método AddPropertyItem
+                    - name: AddPropertyItem (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazscope-addpropertyitem
-                    - name: Método CreateApplicationGroup
+                    - name: CreateApplicationGroup (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazscope-createapplicationgroup
-                    - name: Método CreateRole
+                    - name: CreateRole (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazscope-createrole
                     - name: CreateTask (Método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazscope-createtask
-                    - name: Método DeleteApplicationGroup
+                    - name: DeleteApplicationGroup (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazscope-deleteapplicationgroup
-                    - name: Método DeletePolicyAdministrator
+                    - name: DeletePolicyAdministrator (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazscope-deletepolicyadministrator
-                    - name: Método DeletePolicyAdministratorName
+                    - name: DeletePolicyAdministratorName (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazscope-deletepolicyadministratorname
-                    - name: Método DeletePolicyReader
+                    - name: DeletePolicyReader (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazscope-deletepolicyreader
-                    - name: Método DeletePolicyReaderName
+                    - name: DeletePolicyReaderName (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazscope-deletepolicyreadername
-                    - name: Método DeletePropertyItem
+                    - name: DeletePropertyItem (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazscope-deletepropertyitem
-                    - name: Método DeleteRole
+                    - name: DeleteRole (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazscope-deleterole
-                    - name: Método DeleteTask
+                    - name: DeleteTask (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazscope-deletetask
                     - name: Método GetProperty
                       href: /windows/desktop/api/Azroles/nf-azroles-iazscope-getproperty
-                    - name: Método OpenApplicationGroup
+                    - name: OpenApplicationGroup (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazscope-openapplicationgroup
-                    - name: Método OpenRole
+                    - name: OpenRole (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazscope-openrole
-                    - name: Método OpenTask
+                    - name: OpenTask (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazscope-opentask
                     - name: Método SetProperty
                       href: /windows/desktop/api/Azroles/nf-azroles-iazscope-setproperty
-                    - name: Submit (método)
+                    - name: Método Submit
                       href: /windows/desktop/api/Azroles/nf-azroles-iazscope-submit
                 - name: Propiedades de IAzScope
                   href: iazscope-properties.md
@@ -1622,29 +1622,29 @@
                       href: /windows/desktop/api/Azroles/nf-azroles-iazscope-get_policyreaders
                     - name: Propiedad PolicyReadersName
                       href: /windows/desktop/api/Azroles/nf-azroles-iazscope-get_policyreadersname
-                    - name: Propiedad roles
+                    - name: Propiedad Roles
                       href: /windows/desktop/api/Azroles/nf-azroles-iazscope-get_roles
-                    - name: Tasks (propiedad)
+                    - name: Propiedad Tasks
                       href: /windows/desktop/api/Azroles/nf-azroles-iazscope-get_tasks
                     - name: Propiedad grabable
                       href: /windows/desktop/api/Azroles/nf-azroles-iazscope-get_writable
             - name: IAzScope2
               href: /windows/desktop/api/Azroles/nn-azroles-iazscope2
               items:
-                - name: Métodos IAzScope2
+                - name: Métodos de IAzScope2
                   href: iazscope2-methods.md
                   items:
-                    - name: Método CreateRoleAssignment
+                    - name: CreateRoleAssignment (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazscope2-createroleassignment
-                    - name: Método CreateRoleDefinition
+                    - name: CreateRoleDefinition (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazscope2-createroledefinition
-                    - name: Método DeleteRoleAssignment
+                    - name: DeleteRoleAssignment (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazscope2-deleteroleassignment
-                    - name: Método DeleteRoleDefinition
+                    - name: DeleteRoleDefinition (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazscope2-deleteroledefinition
-                    - name: Método OpenRoleAssignment
+                    - name: OpenRoleAssignment (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazscope2-openroleassignment
-                    - name: Método OpenRoleDefinition
+                    - name: OpenRoleDefinition (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazscope2-openroledefinition
                 - name: Propiedades de IAzScope2
                   href: iazscope2-properties.md
@@ -1659,7 +1659,7 @@
                 - name: Propiedades de IAzScopes
                   href: iazscopes-properties.md
                   items:
-                    - name: Propiedad Count
+                    - name: Count (propiedad)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazscopes-get_count
                     - name: Item (Propiedad)
                       href: /windows/desktop/api/Azroles/nf-azroles-iazscopes-get_item
@@ -1668,26 +1668,26 @@
             - name: IAzTask
               href: /windows/desktop/api/Azroles/nn-azroles-iaztask
               items:
-                - name: Métodos IAzTask
+                - name: Métodos de IAzTask
                   href: iaztask-methods.md
                   items:
-                    - name: Método AddOperation
+                    - name: AddOperation (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iaztask-addoperation
-                    - name: Método AddPropertyItem
+                    - name: AddPropertyItem (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iaztask-addpropertyitem
-                    - name: Método AddTask
+                    - name: AddTask (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iaztask-addtask
-                    - name: Método DeleteOperation
+                    - name: DeleteOperation (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iaztask-deleteoperation
-                    - name: Método DeletePropertyItem
+                    - name: DeletePropertyItem (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iaztask-deletepropertyitem
-                    - name: Método DeleteTask
+                    - name: DeleteTask (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iaztask-deletetask
                     - name: Método GetProperty
                       href: /windows/desktop/api/Azroles/nf-azroles-iaztask-getproperty
                     - name: Método SetProperty
                       href: /windows/desktop/api/Azroles/nf-azroles-iaztask-setproperty
-                    - name: Submit (método)
+                    - name: Método Submit
                       href: /windows/desktop/api/Azroles/nf-azroles-iaztask-submit
                 - name: Propiedades de IAzTask
                   href: iaztask-properties.md
@@ -1708,7 +1708,7 @@
                       href: /windows/desktop/api/Azroles/nf-azroles-iaztask-get_name
                     - name: Propiedad Operations
                       href: /windows/desktop/api/Azroles/nf-azroles-iaztask-get_operations
-                    - name: Tasks (propiedad)
+                    - name: Propiedad Tasks
                       href: /windows/desktop/api/Azroles/nf-azroles-iaztask-get_tasks
                     - name: Propiedad grabable
                       href: /windows/desktop/api/Azroles/nf-azroles-iaztask-get_writable
@@ -1718,7 +1718,7 @@
                 - name: Métodos IAzTask2
                   href: iaztask2-methods.md
                   items:
-                    - name: Método RoleAssignments
+                    - name: RoleAssignments (método)
                       href: /windows/desktop/api/Azroles/nf-azroles-iaztask2-roleassignments
             - name: IAzTasks
               href: /windows/desktop/api/Azroles/nn-azroles-iaztasks
@@ -1726,11 +1726,11 @@
                 - name: Propiedades de IAzTasks
                   href: iaztasks-properties.md
                   items:
-                    - name: Propiedad Count
+                    - name: Count (propiedad)
                       href: /windows/desktop/api/Azroles/nf-azroles-iaztasks-get_count
                     - name: Item (Propiedad)
                       href: /windows/desktop/api/Azroles/nf-azroles-iaztasks-get_item
-                    - name: Propiedad _NewEnum
+                    - name: _NewEnum propiedad
                       href: /windows/desktop/api/Azroles/nf-azroles-iaztasks-get__newenum
             - name: IeAxiService
               href: ieaxiservice.md
@@ -1748,15 +1748,15 @@
                 - name: Métodos IeAxiServiceCallback
                   href: ieaxiservicecallback-methods.md
                   items:
-                    - name: Método VerifyFile
+                    - name: VerifyFile (método)
                       href: ieaxiservicecallback-verifyfile.md
             - name: IeAxiSystemInstaller
               href: ieaxisysteminstaller.md
               items:
-                - name: Métodos IeAxiSystemInstaller
+                - name: Métodos de IeAxiSystemInstaller
                   href: ieaxisysteminstaller-methods.md
                   items:
-                    - name: Método InitializeSystemInstaller
+                    - name: InitializeSystemInstaller (método)
                       href: ieaxisysteminstaller-initializesysteminstaller.md
             - name: IEffectivePermission
               href: /windows/desktop/api/aclui/nn-aclui-ieffectivepermission
@@ -1764,7 +1764,7 @@
                 - name: Métodos IEffectivePermission
                   href: ieffectivepermission-methods.md
                   items:
-                    - name: Método GetEffectivePermission
+                    - name: GetEffectivePermission (método)
                       href: /windows/desktop/api/aclui/nf-aclui-ieffectivepermission-geteffectivepermission
             - name: IEffectivePermission2
               href: /windows/desktop/api/aclui/nn-aclui-ieffectivepermission2
@@ -1777,19 +1777,19 @@
                 - name: Métodos ISecurityInformation
                   href: isecurityinformation-methods.md
                   items:
-                    - name: Método GetAccessRights
+                    - name: GetAccessRights (método)
                       href: /windows/desktop/api/aclui/nf-aclui-isecurityinformation-getaccessrights
-                    - name: Método GetInheritTypes
+                    - name: GetInheritTypes (método)
                       href: /windows/desktop/api/aclui/nf-aclui-isecurityinformation-getinherittypes
-                    - name: Método GetObjectInformation
+                    - name: GetObjectInformation (método)
                       href: /windows/desktop/api/aclui/nf-aclui-isecurityinformation-getobjectinformation
-                    - name: Método GetSecurity
+                    - name: GetSecurity (método)
                       href: /windows/desktop/api/aclui/nf-aclui-isecurityinformation-getsecurity
-                    - name: Método MapGeneric
+                    - name: MapGeneric (método)
                       href: /windows/desktop/api/aclui/nf-aclui-isecurityinformation-mapgeneric
                     - name: Método PropertySheetPageCallback
                       href: /windows/desktop/api/aclui/nf-aclui-isecurityinformation-propertysheetpagecallback
-                    - name: Método SetSecurity
+                    - name: SetSecurity (método)
                       href: /windows/desktop/api/aclui/nf-aclui-isecurityinformation-setsecurity
             - name: ISecurityInformation2
               href: /windows/desktop/api/aclui/nn-aclui-isecurityinformation2
@@ -1797,9 +1797,9 @@
                 - name: Métodos ISecurityInformation2
                   href: isecurityinformation2-methods.md
                   items:
-                    - name: Método IsDaclCanonical
+                    - name: IsDaclCannical (método)
                       href: /windows/desktop/api/aclui/nf-aclui-isecurityinformation2-isdaclcanonical
-                    - name: Método LookupSids
+                    - name: LookupSids (método)
                       href: /windows/desktop/api/aclui/nf-aclui-isecurityinformation2-lookupsids
             - name: ISecurityInformation3
               href: /windows/desktop/api/aclui/nn-aclui-isecurityinformation3
@@ -1807,14 +1807,14 @@
                 - name: Métodos ISecurityInformation3
                   href: isecurityinformation3-methods.md
                   items:
-                    - name: Método GetFullResourceName
+                    - name: GetFullResourceName (método)
                       href: /windows/desktop/api/aclui/nf-aclui-isecurityinformation3-getfullresourcename
-                    - name: Método OpenElevatedEditor
+                    - name: OpenElevatedEditor (método)
                       href: /windows/desktop/api/aclui/nf-aclui-isecurityinformation3-openelevatededitor
             - name: ISecurityInformation4
               href: /windows/desktop/api/aclui/nn-aclui-isecurityinformation4
               items:
-                - name: Método GetSecondarySecurity
+                - name: GetSecondarySecurity (método)
                   href: /windows/desktop/api/aclui/nf-aclui-isecurityinformation4-getsecondarysecurity
             - name: ISecurityObjectTypeInfo
               href: /windows/desktop/api/aclui/nn-aclui-isecurityobjecttypeinfo
@@ -1822,7 +1822,7 @@
                 - name: Métodos ISecurityObjectTypeInfo
                   href: isecurityobjecttypeinfo-methods.md
                   items:
-                    - name: Método GetInheritSource
+                    - name: GetInheritSource (método)
                       href: /windows/desktop/api/aclui/nf-aclui-isecurityobjecttypeinfo-getinheritsource
         - name: Objetos de autorización
           href: authorization-objects.md
@@ -1848,7 +1848,7 @@
               href: /windows/win32/api/Winnt/ns-winnt-access_denied_callback_object_ace
             - name: ACCESS_DENIED_OBJECT_ACE
               href: /windows/win32/api/Winnt/ns-winnt-access_denied_object_ace
-            - name: PERMISO
+            - name: as
               href: ace.md
             - name: ACE_HEADER
               href: /windows/win32/api/Winnt/ns-winnt-ace_header
@@ -2002,76 +2002,76 @@
               href: /windows/win32/api/Winnt/ns-winnt-token_user
             - name: TOKEN_USER_CLAIMS
               href: /windows/win32/api/Winnt/ns-winnt-token_user_claims
-            - name: CONFIANZA
+            - name: Fideicomisario
               href: /windows/win32/api/AccCtrl/ns-accctrl-trustee_a
-    - name: Ensamblado Microsoft. Interop. Security. AzRoles
+    - name: Ensamblado Microsoft.Interop.Security.AzRoles
       href: microsoft-interop-security-azroles-assembly.md
       items:
-        - name: Microsoft. Interop. Security. AzRoles. IAzApplication
+        - name: Microsoft.Interop.Security.AzRoles.IAzApplication
           href: microsoft-interop-security-azroles-iazapplication-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzApplication2
+        - name: Microsoft.Interop.Security.AzRoles.IAzApplication2
           href: microsoft-interop-security-azroles-iazapplication2-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzApplication3
+        - name: Microsoft.Interop.Security.AzRoles.IAzApplication3
           href: microsoft-interop-security-azroles-iazapplication3-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzApplicationGroup
+        - name: Microsoft.Interop.Security.AzRoles.IAzApplicationGroup
           href: microsoft-interop-security-azroles-iazapplicationgroup-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzApplicationGroup2
+        - name: Microsoft.Interop.Security.AzRoles.IAzApplicationGroup2
           href: microsoft-interop-security-azroles-iazapplicationgroup2-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzApplicationGroups
+        - name: Microsoft.Interop.Security.AzRoles.IAzApplicationGroups
           href: microsoft-interop-security-azroles-iazapplicationgroups-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzApplications
+        - name: Microsoft.Interop.Security.AzRoles.IAzApplications
           href: microsoft-interop-security-azroles-iazapplications-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzAuthorizationStore
+        - name: Microsoft.Interop.Security.AzRoles.IAzAuthorizationStore
           href: microsoft-interop-security-azroles-azauthorizationstore-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzAuthorizationStore2
+        - name: Microsoft.Interop.Security.AzRoles.IAzAuthorizationStore2
           href: microsoft-interop-security-azroles-iazauthorizationstore2-interfac.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzAuthorizationStore3
+        - name: Microsoft.Interop.Security.AzRoles.IAzAuthorizationStore3
           href: microsoft-interop-security-azroles-iazauthorizationstore3-interfac.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzBizRuleContext
+        - name: Microsoft.Interop.Security.AzRoles.IAzBizRuleContext
           href: microsoft-interop-security-azroles-azbizrulecontext-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzBizRuleInterfaces
+        - name: Microsoft.Interop.Security.AzRoles.IAzBizRuleInterfaces
           href: microsoft-interop-security-azroles-iazbizruleinterfaces-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzBizRuleParameters
+        - name: Microsoft.Interop.Security.AzRoles.IAzBizRuleParameters
           href: microsoft-interop-security-azroles-iazbizruleparameters-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzClientContext
+        - name: Microsoft.Interop.Security.AzRoles.IAzClientContext
           href: microsoft-interop-security-azroles-iazclientcontext-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzClientContext2
+        - name: Microsoft.Interop.Security.AzRoles.IAzClientContext2
           href: microsoft-interop-security-azroles-iazclientcontext2-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzClientContext3
+        - name: Microsoft.Interop.Security.AzRoles.IAzClientContext3
           href: microsoft-interop-security-azroles-iazclientcontext3-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzNameResolver
+        - name: Microsoft.Interop.Security.AzRoles.IAzNameResolver
           href: microsoft-interop-security-azroles-iaznameresolver-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzObjectPicker
+        - name: Microsoft.Interop.Security.AzRoles.IAzObjectPicker
           href: microsoft-interop-security-azroles-iazobjectpicker-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzOperation
+        - name: Microsoft.Interop.Security.AzRoles.IAzOperation
           href: microsoft-interop-security-azroles-iazoperation-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzOperation2
+        - name: Microsoft.Interop.Security.AzRoles.IAzOperation2
           href: microsoft-interop-security-azroles-iazoperation2-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzOperations
+        - name: Microsoft.Interop.Security.AzRoles.IAzOperations
           href: microsoft-interop-security-azroles-iazoperations-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzPrincipalLocator
+        - name: Microsoft.Interop.Security.AzRoles.IAzPrincipalLocator
           href: microsoft-interop-security-azroles-iazprincipallocator-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzRole
+        - name: Microsoft.Interop.Security.AzRoles.IAzRole
           href: microsoft-interop-security-azroles-iazrole-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzRoleAssignment
+        - name: Microsoft.Interop.Security.AzRoles.IAzRoleAssignment
           href: microsoft-interop-security-azroles-iazroleassignment-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzRoleAssignments
+        - name: Microsoft.Interop.Security.AzRoles.IAzRoleAssignments
           href: microsoft-interop-security-azroles-iazroleassignments-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzRoleDefinition
+        - name: Microsoft.Interop.Security.AzRoles.IAzRoleDefinition
           href: microsoft-interop-security-azroles-iazroledefinition-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzRoleDefinitions
+        - name: Microsoft.Interop.Security.AzRoles.IAzRoleDefinitions
           href: microsoft-interop-security-azroles-iazroledefinitions-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzRoles
+        - name: Microsoft.Interop.Security.AzRoles.IAzRoles
           href: microsoft-interop-security-azroles-iazroles-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzScope
+        - name: Microsoft.Interop.Security.AzRoles.IAzScope
           href: microsoft-interop-security-azroles-iazscope-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzScope2
+        - name: Microsoft.Interop.Security.AzRoles.IAzScope2
           href: microsoft-interop-security-azroles-iazscope2-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzScopes
+        - name: Microsoft.Interop.Security.AzRoles.IAzScopes
           href: microsoft-interop-security-azroles-iazscopes-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzTask
+        - name: Microsoft.Interop.Security.AzRoles.IAzTask
           href: microsoft-interop-security-azroles-iaztask-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzTask2
+        - name: Microsoft.Interop.Security.AzRoles.IAzTask2
           href: microsoft-interop-security-azroles-iaztask2-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzTasks
+        - name: Microsoft.Interop.Security.AzRoles.IAzTasks
           href: microsoft-interop-security-azroles-iaztasks-interface.md

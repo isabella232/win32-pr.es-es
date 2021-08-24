@@ -1,7 +1,7 @@
 ---
 description: Representa la información de funcionalidad de la impresora.
 ms.assetid: 70120739-a4e0-4b87-ac7a-40a42fb509ee
-title: Estructura de PRINTPROCESSOR_CAPS_2 (winspool. h)
+title: PRINTPROCESSOR_CAPS_2 estructura (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 1847ffa1912a8638476ce80dfbdb71c40fc376d8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3425f9477b153721980e3bb44b919b0baea37aa645caea6a3ee328a9ff923eb8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119824744"
 ---
-# <a name="printprocessor_caps_2-structure"></a>Estructura de PRINTPROCESSOR \_ Cap \_ 2
+# <a name="printprocessor_caps_2-structure"></a>PRINTPROCESSOR \_ CAPS \_ 2 (estructura)
 
 Representa la información de funcionalidad de la impresora.
 
@@ -57,14 +57,14 @@ Valor que indica el número de versión de la estructura.
 **dwNupOptions**
 </dt> <dd>
 
-Máscara de bits que representa los diversos números de páginas del documento que la impresora puede imprimir en un lado único de una hoja física. El bit menos significativo representa una página de documento por lado, el siguiente bit representa 2 páginas de documento por lado, etc. Por ejemplo, 0x0000810B indica que la impresora admite 1, 2, 4, 9 y 16 páginas de documento por lado físico.
+Máscara de bits que representa los distintos números de páginas de documento que la impresora puede imprimir en un solo lado de una hoja física. El bit menos significativo representa una página de documento por lado, el bit siguiente representa 2 páginas de documento por lado, y así sucesivamente. Por ejemplo, 0x0000810B indica que la impresora admite 1, 2, 4, 9 y 16 páginas de documento por lado físico.
 
 </dd> <dt>
 
 **dwPageOrderFlags**
 </dt> <dd>
 
-Un valor de marca que indica el orden en el que se imprimirán las páginas. Puede ser impresión **normal \_**, impresión **inversa \_** o **folleto \_ impreso**.
+Valor de marca que indica el orden en el que se imprimirán las páginas. Puede ser **NORMAL \_ PRINT,** **REVERSE \_ PRINT** o **LA IMPRESIÓN \_ INVERTIDA.**
 
 </dd> <dt>
 
@@ -78,16 +78,16 @@ Número máximo de copias que la impresora puede controlar.
 **dwNupDirectionCaps**
 </dt> <dd>
 
-Los patrones disponibles cuando se imprimen varias páginas del documento en el mismo lado de una hoja de papel. Las posibles marcas son las siguientes:
+Patrones disponibles cuando se imprimen varias páginas de documento en el mismo lado de una hoja de papel. Las marcas posibles son las siguientes:
 
 
 
 | Value                     | Significado                                                                                             |
 |---------------------------|-----------------------------------------------------------------------------------------------------|
-| PPCAPS \_ a la derecha \_ \_ | Las páginas aparecen en filas de derecha a izquierda, cada fila subsiguiente debajo de su predecesor.                 |
-| PPCAPS \_ \_ a la \_ derecha | Las páginas aparecen en columnas de arriba abajo, cada columna subsiguiente a la derecha de su predecesora. |
-| PPCAPS \_ a la izquierda \_ \_  | Las páginas aparecen en filas de izquierda a derecha, cada fila subsiguiente debajo de su predecesor.                 |
-| PPCAPS \_ \_ a la \_ izquierda  | Las páginas aparecen en columnas de arriba abajo, cada columna subsiguiente a la izquierda de su predecesora.  |
+| PPCAPS \_ RIGHT \_ THEN \_ DOWN | Las páginas aparecen en filas de derecha a izquierda, cada fila posterior por debajo de su predecesor.                 |
+| PPCAPS \_ DOWN \_ THEN \_ RIGHT | Las páginas aparecen en columnas de arriba abajo, cada columna posterior a la derecha de su predecesor. |
+| PPCAPS \_ LEFT \_ THEN \_ DOWN  | Las páginas aparecen en filas de izquierda a derecha, cada fila posterior por debajo de su predecesor.                 |
+| PPCAPS \_ ABAJO Y A LA \_ \_ IZQUIERDA  | Las páginas aparecen en columnas de arriba abajo, cada columna posterior a la izquierda de su predecesor.  |
 
 
 
@@ -98,21 +98,21 @@ Los patrones disponibles cuando se imprimen varias páginas del documento en el 
 **dwNupBorderCaps**
 </dt> <dd>
 
-Solo puede ser PPCAPS \_ Border \_ Print, lo que indica que, cuando se imprimen varias páginas del documento en una sola cara de una hoja física, se puede indicar a la impresora si se imprime o no un borde alrededor del área de impresión de cada página del documento.
+Solo puede ser PPCAPS BORDER PRINT, lo que indica que, cuando se imprimen varias páginas de documento en un solo lado de una hoja física, se puede indicar a la impresora si se debe imprimir o no un borde alrededor del área de imagen de cada página de \_ \_ documento.
 
 </dd> <dt>
 
 **dwBookletHandlingCaps**
 </dt> <dd>
 
-Solo puede ser PPCAPS \_ \_ , lo que indica que la impresora puede imprimir el estilo de folleto.
+Solo puede ser PPCAPS \_ RESALTE \_ EDGE, lo que indica que la impresora puede imprimir el estilo de los folletos.
 
 </dd> <dt>**dwDuplexHandlingCaps**</dt> <dd> 
 
 | Value                                         | Significado                                                                                                                                                                                                                                                                                          |
 |-----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| PPCAPS \_ páginas inversas \_ \_ para \_ dúplex inverso \_  | Al imprimir en orden inverso y dúplex, el procesador puede imprimir el orden de cada par de páginas, por lo que en lugar de imprimir en el orden 4, 3, 2, 1, se imprimirán en el orden 3, 4, 1, 2.                                                                                                       |
-| PPCAPS \_ no \_ enviar \_ \_ páginas adicionales \_ para \_ dúplex | Al usar el dúplex, se puede indicar al procesador de impresión que no envíe una página adicional cuando hay un número impar de páginas del documento. El procesador respetará el valor de la mejor forma posible, pero en los casos en los que evitar una página en blanco adicional causaría una salida incorrecta, es posible que se sigan enviando las páginas adicionales. |
+| PÁGINAS INVERSAS DE PPCAPS \_ \_ PARA \_ \_ DÚPLEX \_ INVERSO  | Al imprimir en orden inverso y dúplex, el procesador puede imprimir intercambiar el orden de cada par de páginas, por lo que en lugar de imprimir en orden 4,3,2,1, imprimirá en el orden 3,4,1,2.                                                                                                       |
+| PPCAPS \_ NO ENVÍA PÁGINAS \_ \_ ADICIONALES PARA \_ \_ \_ DÚPLEX | Cuando se dúplex, se puede decir al procesador de impresión que no envíe una página adicional cuando hay un número impar de páginas de documento. El procesador respetará el valor lo mejor posible, pero en los casos en los que impedir una página en blanco adicional provocaría una salida incorrecta, se pueden enviar las páginas adicionales. |
 
 
 
@@ -123,15 +123,15 @@ Solo puede ser PPCAPS \_ \_ , lo que indica que la impresora puede imprimir el e
 **dwScalingCaps**
 </dt> <dd>
 
-Solo se puede \_ \_ escalar PPCAPS cuadrado, lo que indica que la impresora puede escalar la imagen de la página.
+Solo puede ser PPCAPS \_ SQUARE \_ SCALING, lo que indica que la impresora puede escalar la imagen de página.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores de todos los miembros de la estructura se proporcionan mediante la función **GetPrintProcessorCapabilities** , que se documenta en el kit de controladores de Windows.
+La función **GetPrintProcessorCapabilities** proporciona valores para todos los miembros de la estructura, que se documenta en Windows Driver Kit.
 
-Cuando una aplicación llama a [**GetPrinterData**](getprinterdata.md), el administrador de trabajos de impresión llama a la función **GetPrintProcessorCapabilities** de un procesador de impresión y especifica un nombre de valor que tiene un formato de **\_ PrintProcCaps**_DataType_, donde *DataType* es el nombre de un tipo de datos de entrada.
+Cuando una aplicación llama a [**GetPrinterData**](getprinterdata.md), el colador llama a la función **GetPrintProcessorCapabilities** de un procesador de impresión y especifica un nombre de valor que tiene un formato de tipo de datos **PrintProcCaps \_**_,_ donde *datatype* es el nombre de un tipo de datos de entrada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -139,9 +139,9 @@ Cuando una aplicación llama a [**GetPrinterData**](getprinterdata.md), el admin
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                      |
+| Header<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -152,7 +152,7 @@ Cuando una aplicación llama a [**GetPrinterData**](getprinterdata.md), el admin
 [Impresión](printdocs-printing.md)
 </dt> <dt>
 
-[Estructuras de API del administrador de trabajos de impresión](printing-and-print-spooler-structures.md)
+[Estructuras de API del colador de impresión](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**GetPrinterData**](getprinterdata.md)

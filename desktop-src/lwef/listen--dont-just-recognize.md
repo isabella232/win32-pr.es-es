@@ -1,31 +1,31 @@
 ---
-title: Escuche, no reconozca simplemente
-description: Escuche, no reconozca simplemente
+title: Listen, Dont Just Recognize
+description: Listen, Dont Just Recognize
 ms.assetid: 74bb2122-98c1-4a51-b894-93e1481aa46b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e972a8c98460e58d0f7080d7de7641fb856c8317
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b226b9172b10c70e4e699a98df49acc002dcd5add95986c9efbdf9e8f057648d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103779410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119888095"
 ---
-# <a name="listen-dont-just-recognize"></a>Escuche, no reconozca simplemente
+# <a name="listen-dont-just-recognize"></a>Listen, Dont Just Recognize
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
-La comunicación correcta implica más que el reconocimiento de palabras. El proceso de diálogo implica el intercambio de pilas para señalar la toma y la comprensión. Los caracteres pueden mejorar las interfaces de conversación proporcionando indicaciones como las inclinaciones de cabeza, nodos o sacudidas para indicar cuándo el motor de voz está en el estado escuchando y cuándo se reconoce algo. Por ejemplo, el agente de Microsoft Reproduce animaciones asignadas al estado de **escucha** cuando un usuario presiona la tecla de escucha de inserciones en la conversación y las animaciones asignadas al estado de la **audición** cuando se detecta un utterance. Al definir su propio carácter, asegúrese de crear y asignar animaciones adecuadas a estos Estados. Para obtener más información sobre el diseño de caracteres, vea [diseñar caracteres para el agente de Microsoft](designing-characters-for-microsoft-agent.md).
+La comunicación correcta implica más que el reconocimiento de palabras. El proceso de diálogo implica intercambiar indicaciones para indicar la toma de decisiones y la comprensión. Los caracteres pueden mejorar las interfaces conversacionales proporcionando indicaciones como inclinaciones de la cabeza, aserciones o agites para indicar cuándo el motor de voz está en estado de escucha y cuándo se reconoce algo. Por ejemplo, Microsoft Agent reproduce  animaciones asignadas al estado De escucha cuando un usuario presiona  la tecla de escucha push-to-talk y las animaciones asignadas al estado De escucha cuando se detecta una expresión. Al definir su propio carácter, asegúrese de crear y asignar animaciones adecuadas a estos estados. Para obtener más información sobre el diseño de caracteres, [vea Designing Characters for Microsoft Agent](designing-characters-for-microsoft-agent.md).
 
-Además de las señales no verbales, una conversación implica un contexto común entre las partes que intervienen. Del mismo modo, es más probable que los escenarios de entrada de voz con caracteres tengan éxito cuando el contexto esté bien establecido. Establecer el contexto le permite interpretar mejor las frases de sonido similares, como "comprobar en el correo" y "comprobar mi correo". También puede permitir que el usuario realice consultas en el contexto proporcionando un comando, como "Help" o "Where I", al que responde restatendo el contexto actual, como la última acción realizada por la aplicación.
+Además de las indicaciones no verbales, una conversación implica un contexto común entre las partes conversadores. De forma similar, los escenarios de entrada de voz con caracteres tienen más probabilidades de tener éxito cuando el contexto está bien establecido. Establecer el contexto le permite interpretar mejor frases similares, como "check's in the mail" y "check my mail". También puede permitir que el usuario consulte el contexto proporcionando un comando, como "Ayuda" o "Dónde estoy", al que responde reestableciendo el contexto actual, como la última acción que realizó la aplicación.
 
-El agente de Microsoft proporciona interfaces que permiten obtener acceso a la mejor coincidencia y a las dos mejores alternativas siguientes devueltas por el motor de reconocimiento de voz. Además, puede tener acceso a las puntuaciones de confianza para todas las coincidencias. Puede usar esta información para determinar mejor lo que se ha hablado. Por ejemplo, si las puntuaciones de confianza de la mejor coincidencia y la primera alternativa están cerca, puede indicar que el motor de voz tenía dificultades para distinguir la diferencia entre ellos. En tal caso, es posible que desee pedir al usuario que repita o vuelva a formular la solicitud en un esfuerzo por mejorar el rendimiento. Sin embargo, si la mejor coincidencia y la primera o la segunda alternativas devuelven el mismo comando, refuerza la indicación del reconocimiento correcto.
+Microsoft Agent proporciona interfaces que permiten acceder a la mejor coincidencia y a las dos siguientes mejores alternativas devueltas por el motor de reconocimiento de voz. Además, puede acceder a las puntuaciones de confianza para todas las coincidencias. Puede usar esta información para determinar mejor lo que se ha hablado. Por ejemplo, si las puntuaciones de confianza de la mejor coincidencia y la primera alternativa están cerca, puede indicar que el motor de voz tuvo dificultades para distinguir la diferencia entre ellas. En tal caso, es posible que quiera pedir al usuario que repita o vuelva a cambiar la solicitud en un esfuerzo por mejorar el rendimiento. Sin embargo, si la mejor coincidencia y la primera o segunda alternativas devuelven el mismo comando, reforzará la indicación del reconocimiento correcto.
 
-La naturaleza de una conversación o diálogo implica que debe haber una respuesta a la entrada de voz. Por lo tanto, siempre se debe responder a la entrada de un usuario con comentarios verbales o visuales que indican que se ha realizado una acción o que se ha producido un problema, o bien proporciona una respuesta adecuada.
+La naturaleza de una conversación o diálogo implica que debe haber una respuesta a la entrada hablada. Por lo tanto, siempre se debe responder a la entrada de un usuario con comentarios verbales o visuales que indiquen que se realizó una acción o se encontró un problema, o que proporciona una respuesta adecuada.
 
- 
+ 
 
- 
+ 
 
 
 

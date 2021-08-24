@@ -1,9 +1,9 @@
 ---
 title: Enumeración ResultsDisplayStyle
-description: Lo utiliza IResultsViewer ResultsStyle para establecer o determinar cómo se muestran los resultados.
+description: Usado por IResultsViewer ResultsStyle para establecer o determinar cómo se muestran los resultados.
 ms.assetid: 24b474f2-1aca-4556-ba9a-3b8139e80bf0
 keywords:
-- Enumeración ResultsDisplayStyle características de entorno heredado de Windows
+- ResultsDisplayStyle enumeration Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - IDLDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 26d564e0a7bb8a10b44e2957f26aa20a07afa535
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 97a045765b53f29e978c286a14a1d82b86ffb21b5046dee606029a957ee0434c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700114"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119726534"
 ---
 # <a name="resultsdisplaystyle-enumeration"></a>Enumeración ResultsDisplayStyle
 
 > [!NOTE]
-> Windows Desktop Search 2. x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use la [API de búsqueda de Windows](../search/-search-reference-entry-page.md) en su lugar. 
+> Windows Desktop Search 2.x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use Windows [Search API](../search/-search-reference-entry-page.md) en su lugar. 
 
-Usado por [**IResultsViewer:: ResultsStyle**](-search-2x-iresultsviewer-resultsstyle.md) para establecer o determinar cómo se muestran los resultados.
+[**IResultsViewer::ResultsStyle**](-search-2x-iresultsviewer-resultsstyle.md) lo usa para establecer o determinar cómo se muestran los resultados.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -62,9 +62,9 @@ Indica que los resultados se muestran como iconos grandes.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------|----------------------------------------------------------------------------------------|
-| IDL<br/> | <dl> <dt>WdsView. idl</dt> </dl> |
+| Idl<br/> | <dl> <dt>WdsView.idl</dt> </dl> |
 
 
 

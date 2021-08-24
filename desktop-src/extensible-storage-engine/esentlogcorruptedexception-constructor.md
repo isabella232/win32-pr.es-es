@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentLogCorruptedException'
-title: Constructor de EsentLogCorruptedException
+description: 'Más información sobre: Constructor EsentLogCorruptedException'
+title: Constructor EsentLogCorruptedException
 TOCTitle: 'EsentLogCorruptedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentLogCorruptedException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentlogcorruptedexception.esentlogcorruptedexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 01402851299285c55d7028c137e40b5afd7fb9c8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9ec703762e81dacf6d66b69a6803437d021c27622ed8804a7defee2459dce0da
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105717080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119723295"
 ---
-# <a name="esentlogcorruptedexception-constructor"></a>Constructor de EsentLogCorruptedException
+# <a name="esentlogcorruptedexception-constructor"></a>Constructor EsentLogCorruptedException
 
 Inicializa una nueva instancia de la clase EsentLogCorruptedException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentLogCorruptedException()
 public EsentLogCorruptedException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentLogCorruptedException()
 
 [Miembros de EsentLogCorruptedException](./esentlogcorruptedexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

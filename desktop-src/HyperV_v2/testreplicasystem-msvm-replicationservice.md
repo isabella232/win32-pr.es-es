@@ -1,7 +1,7 @@
 ---
 description: Crea una nueva réplica de una máquina virtual con la instantánea especificada con fines de prueba.
 ms.assetid: 447f3c8f-8c57-4874-9466-91c6aea533bc
-title: Método TestReplicaSystem de la clase Msvm_ReplicationService
+title: Método TestReplicaSystem de la Msvm_ReplicationService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 029130e619aa36d0aa9b9c1c85a877fb26e1b22b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d23a97e43dce07d8c0ac0b06f2b488f5966ee63d82f5d92eacac017dc8e05de1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912570"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119870255"
 ---
-# <a name="testreplicasystem-method-of-the-msvm_replicationservice-class"></a>Método TestReplicaSystem de la \_ clase ReplicationService de MSVM
+# <a name="testreplicasystem-method-of-the-msvm_replicationservice-class"></a>Método TestReplicaSystem de la clase ReplicationService de Msvm \_
 
 Crea una nueva réplica de una máquina virtual con la instantánea especificada con fines de prueba.
 
@@ -42,31 +42,31 @@ uint32 TestReplicaSystem(
 
 <dl> <dt>
 
-*ComputerSystem* \[ de\]
+*ComputerSystem* \[ En\]
 </dt> <dd>
 
-Referencia a una instancia de un [**\_ ComputerSystem de CIM**](/windows/desktop/CIMWin32Prov/cim-computersystem) que representa la máquina virtual para la que se debe probar la replicación.
+Referencia a una instancia [**\_ de Cim ComputerSystem**](/windows/desktop/CIMWin32Prov/cim-computersystem) que representa la máquina virtual para la que se debe probar la replicación.
 
 </dd> <dt>
 
-*SnapshotSettingData* \[ de\]
+*SnapshotSettingData* \[ En\]
 </dt> <dd>
 
-Referencia a una instancia [**de \_ VirtualSystemSettingData de CIM**](/previous-versions//cc136954(v=vs.85)) que representa la instantánea utilizada para crear el sistema de conmutación por error de prueba. Si este parámetro es **null**, la conmutación por error se realizará en el momento dado más reciente.
+Referencia a una instancia [**de CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)) que representa la instantánea usada para crear el sistema de conmutación por error de prueba. Si este parámetro es **Null,** la conmutación por error se realizará fuera del punto más reciente en el tiempo.
 
 </dd> <dt>
 
-*ResultingSystem* \[ enuncia\]
+*ResultingSystem* \[ out\]
 </dt> <dd>
 
-Si una máquina virtual se define correctamente, recibe una referencia a una instancia de la [**clase \_ ComputerSystem de CIM**](/windows/desktop/CIMWin32Prov/cim-computersystem) que representa la máquina virtual de prueba recién definida. Cuando este sistema ya no sea necesario, debe destruirlo llamando al método [**DestroySystem**](destroysystem-msvm-virtualsystemmanagementservice.md) .
+Si una máquina virtual se define correctamente, recibe una referencia a una instancia de la clase [**\_ ComputerSystem de CIM**](/windows/desktop/CIMWin32Prov/cim-computersystem) que representa la máquina virtual de prueba recién definida. Cuando este sistema ya no sea necesario, destruyémalo llamando al [**método DestroySystem.**](destroysystem-msvm-virtualsystemmanagementservice.md)
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ ConcreteJob CIM**](/previous-versions//cc136808(v=vs.85)).
+Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ CIM ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
 
 </dd> </dl>
 
@@ -91,16 +91,16 @@ Este método devuelve uno de los valores siguientes.
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**El sistema está en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -109,13 +109,13 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está disponible** (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> <dt>
 
-**No se encontró el archivo** (32779)
+**Archivo no encontrado** (32779)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -124,10 +124,10 @@ El **sistema no está disponible** (32777)
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -136,7 +136,7 @@ El **sistema no está disponible** (32777)
 
 <dl> <dt>
 
-[**MSVM \_ ReplicationService**](msvm-replicationservice.md)
+[**ReplicationService de Msvm \_**](msvm-replicationservice.md)
 </dt> </dl>
 
  

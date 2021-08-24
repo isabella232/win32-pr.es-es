@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3e981254677c2e0a361a0a21f125f734ff1403db
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9a48bd2d3231979a30f8f7ff0d8144929115c51b9ca3f464f85d6d0163954ad7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108095093"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119823725"
 ---
 # <a name="ctransforminputpincheckconnect-method"></a>Método CTransformInputPin.CheckConnect
 
@@ -58,7 +58,7 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran
 | Código devuelto                                                                                               | Descripción                    |
 |-----------------------------------------------------------------------------------------------------------|--------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                      | Correcto<br/>             |
-| <dl> <dt>**DIRECCIÓN NO VÁLIDA DE VFW \_ E \_ \_**</dt> </dl> | Dirección de anclado incorrecta<br/> |
+| <dl> <dt>**VFW \_ E DIRECCIÓN NO \_ \_ VÁLIDA**</dt> </dl> | Dirección de patilla incorrecta<br/> |
 
 
 
@@ -74,7 +74,7 @@ Este método invalida el [**método CBasePin::CheckConnect.**](cbasepin-checkcon
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 

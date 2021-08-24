@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: Propiedades de InstanceParameters'
-title: Propiedades de InstanceParameters
+description: 'Más información sobre: Propiedades instanceParameters'
+title: Propiedades instanceParameters
 TOCTitle: InstanceParameters properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.InstanceParameters
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instanceparameters_properties(v=EXCHG.10)
@@ -14,7 +14,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119721165"
 ---
-# <a name="instanceparameters-properties"></a>Propiedades de InstanceParameters
+# <a name="instanceparameters-properties"></a>Propiedades instanceParameters
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
@@ -35,7 +35,7 @@ El [tipo InstanceParameters](./instanceparameters-class.md) expone los miembros 
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn350971(v=exchg.10).md">AlternateDatabaseRecoveryDirectory</a></td>
-<td>Obtiene o establece la ruta de acceso del sistema de archivos relativa o absoluta de la carpeta donde la recuperación de bloqueos o una operación de restauración pueden encontrar las bases de datos a las que se hace referencia en el registro de transacciones en la carpeta especificada.</td>
+<td>Obtiene o establece la ruta de acceso del sistema de archivos relativa o absoluta de una carpeta donde la recuperación de bloqueos o una operación de restauración pueden encontrar las bases de datos a las que se hace referencia en el registro de transacciones en la carpeta especificada.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
@@ -50,7 +50,7 @@ El [tipo InstanceParameters](./instanceparameters-class.md) expone los miembros 
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn350974(v=exchg.10).md">CachePriority</a></td>
-<td>Obtiene o establece la propiedad por instancia para las prioridades de caché relativas (valor predeterminado = 100).</td>
+<td>Obtiene o establece la propiedad por instancia para las prioridades relativas de caché (valor predeterminado = 100).</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
@@ -60,12 +60,12 @@ El [tipo InstanceParameters](./instanceparameters-class.md) expone los miembros 
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn350977(v=exchg.10).md">CircularLog</a></td>
-<td>Obtiene o establece un valor que indica si el registro circular está en. Cuando el registro circular está desactivado, todos los archivos de registro de transacciones que se generan se conservan en el disco hasta que ya no son necesarios porque se ha realizado una copia de seguridad completa de la base de datos. Cuando el registro circular está habilitado, solo los archivos de registro de transacciones que son más pequeños que el punto de control actual se conservan en el disco. La ventaja de este modo es que las copias de seguridad no son necesarias para retirar los archivos de registro de transacciones antiguos.</td>
+<td>Obtiene o establece un valor que indica si el registro circular está habilitado. Cuando el registro circular está desactivado, todos los archivos de registro de transacciones que se generan se conservan en el disco hasta que ya no se necesitan porque se ha realizado una copia de seguridad completa de la base de datos. Cuando el registro circular está en, solo los archivos de registro de transacciones que son más pequeños que el punto de control actual se conservan en el disco. La ventaja de este modo es que las copias de seguridad no son necesarias para retirar los archivos de registro de transacciones antiguos.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn350955(v=exchg.10).md">CleanupMismatchedLogFiles</a></td>
-<td>Obtiene o establece un valor que indica si Se produce un error en JetInit cuando el motor de base de datos está configurado para empezar a usar archivos de registro de transacciones en disco que tienen un tamaño diferente al configurado. Normalmente, <a href="dn292210(v=exchg.10).md">JetInit(JET_INSTANCE)</a> recuperará correctamente las bases de datos, pero se producirá un error con <a href="hh564840(v=exchg.10).md">LogFileSizeMismatchDatabasesConsistent</a> para indicar que el tamaño del archivo de registro está mal configurado. Sin embargo, cuando este parámetro se establece en true, el motor de base de datos eliminará silenciosamente todos los archivos de registro antiguos e iniciará un nuevo conjunto de archivos de registro de transacciones con el tamaño de archivo de registro configurado. Este parámetro es útil cuando la aplicación desea cambiar de forma transparente su tamaño de archivo de registro de transacciones, pero sigue funcionando de forma transparente en escenarios de actualización y restauración.</td>
+<td>Obtiene o establece un valor que indica si Se produce un error en JetInit cuando el motor de base de datos está configurado para empezar a usar archivos de registro de transacciones en el disco que tienen un tamaño diferente al configurado. Normalmente, <a href="dn292210(v=exchg.10).md">JetInit(JET_INSTANCE)</a> recuperará correctamente las bases de datos, pero producirá un error <a href="hh564840(v=exchg.10).md">con LogFileSizeMismatchDatabasesConsistent</a> para indicar que el tamaño del archivo de registro está mal configurado. Sin embargo, cuando este parámetro se establece en true, el motor de base de datos eliminará silenciosamente todos los archivos de registro antiguos e iniciará un nuevo conjunto de archivos de registro de transacciones con el tamaño de archivo de registro configurado. Este parámetro es útil cuando la aplicación desea cambiar de forma transparente su tamaño de archivo de registro de transacciones, pero sigue funcionando de forma transparente en escenarios de actualización y restauración.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
@@ -80,7 +80,7 @@ El [tipo InstanceParameters](./instanceparameters-class.md) expone los miembros 
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn350980(v=exchg.10).md">DbScanIntervalMaxSec</a></td>
-<td>Obtiene o establece el intervalo máximo para permitir que finalice el examen de la base de datos, en segundos.</td>
+<td>Obtiene o establece el intervalo máximo para permitir que el examen de la base de datos finalice, en segundos.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
@@ -95,12 +95,12 @@ El [tipo InstanceParameters](./instanceparameters-class.md) expone los miembros 
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn350961(v=exchg.10).md">EnableDbScanInRecovery</a></td>
-<td>Obtiene o establece un valor que indica si el mantenimiento de base de datos debe ejecutarse durante la recuperación.</td>
+<td>Obtiene o establece un valor que indica si el mantenimiento de la base de datos debe ejecutarse durante la recuperación.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn350984(v=exchg.10).md">EnableDBScanSerialization</a></td>
-<td>Obtiene o establece un valor que indica si la serialización de mantenimiento de base de datos está habilitada para las bases de datos que comparten el mismo disco.</td>
+<td>Obtiene o establece un valor que indica si la serialización de mantenimiento de bases de datos está habilitada para las bases de datos que comparten el mismo disco.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
@@ -120,12 +120,12 @@ El [tipo InstanceParameters](./instanceparameters-class.md) expone los miembros 
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn350966(v=exchg.10).md">EventSourceKey</a></td>
-<td>Obtiene o establece el nombre del registro de eventos que usa el motor de base de datos para sus mensajes del registro de eventos. De forma predeterminada, todos los mensajes del registro de eventos irán al registro de eventos de la aplicación. Si el nombre de la clave del Registro para otro registro de eventos está configurado, los mensajes del registro de eventos irán allí en su lugar.</td>
+<td>Obtiene o establece el nombre del registro de eventos que el motor de base de datos utiliza para sus mensajes del registro de eventos. De forma predeterminada, todos los mensajes del registro de eventos irán al registro de eventos de la aplicación. Si el nombre de la clave del Registro para otro registro de eventos está configurado, los mensajes del registro de eventos irán allí en su lugar.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn350968(v=exchg.10).md">LogBuffers</a></td>
-<td>Obtiene o establece la cantidad de memoria usada para almacenar en caché las entradas de registro antes de que se escriban en el archivo de registro de transacciones. La unidad de este parámetro es el tamaño de sector del volumen que contiene los archivos de registro de transacciones. El tamaño del sector es casi siempre de 512 bytes, por lo que es seguro asumir ese tamaño para la unidad. Este parámetro afecta al rendimiento. Cuando el motor de base de datos está bajo una carga de actualización intensa, este búfer puede estar lleno muy rápidamente. Un tamaño de caché mayor para el archivo de registro de transacciones es fundamental para un buen rendimiento de actualización en una condición de carga tan alta. Se sabe que el valor predeterminado es demasiado pequeño para este caso. No establezca este parámetro en un número de búferes mayor (en bytes) que la mitad del tamaño de un archivo de registro de transacciones.</td>
+<td>Obtiene o establece la cantidad de memoria utilizada para almacenar en caché las entradas de registro antes de que se escriban en el archivo de registro de transacciones. La unidad de este parámetro es el tamaño del sector del volumen que contiene los archivos de registro de transacciones. El tamaño del sector es casi siempre de 512 bytes, por lo que es seguro suponer ese tamaño para la unidad. Este parámetro tiene un impacto en el rendimiento. Cuando el motor de base de datos está bajo una carga de actualización intensa, este búfer puede estar lleno muy rápidamente. Un tamaño de caché mayor para el archivo de registro de transacciones es fundamental para un buen rendimiento de actualización en una condición de carga tan alta. Se sabe que el valor predeterminado es demasiado pequeño para este caso. No establezca este parámetro en un número de búferes mayor (en bytes) que la mitad del tamaño de un archivo de registro de transacciones.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
@@ -135,7 +135,7 @@ El [tipo InstanceParameters](./instanceparameters-class.md) expone los miembros 
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn350969(v=exchg.10).md">LogFileSize</a></td>
-<td>Obtiene o establece el tamaño de los archivos de registro de transacciones. Este parámetro debe establecerse en unidades de 1024 bytes (por ejemplo, una configuración de 2048 dará archivos de registro de 2 MB).</td>
+<td>Obtiene o establece el tamaño de los archivos de registro de transacciones. Este parámetro debe establecerse en unidades de 1024 bytes (por ejemplo, un valor de 2048 dará archivos de registro de 2 MB).</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
@@ -223,7 +223,7 @@ El [tipo InstanceParameters](./instanceparameters-class.md) expone los miembros 
 
 Superior
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

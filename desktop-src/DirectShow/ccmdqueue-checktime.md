@@ -1,7 +1,7 @@
 ---
-description: El método CheckTime determina si se debe a una hora especificada.
+description: El método CheckTime determina si se debe una hora especificada.
 ms.assetid: 522bc7ae-f998-4a7d-8bc3-caf09b4108a6
-title: Método CCmdQueue. CheckTime (Winutil. h)
+title: Método CCmdQueue.CheckTime (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 17fd67973e122830e53d93d1d8db17046f716507
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 826b59d12c135e9c86ce923f37e1558dca4f13efafb4880aecab1384829a484a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681198"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119910435"
 ---
-# <a name="ccmdqueuechecktime-method"></a>CCmdQueue. CheckTime, método
+# <a name="ccmdqueuechecktime-method"></a>Método CCmdQueue.CheckTime
 
-El `CheckTime` método determina si se debe a una hora especificada.
+El `CheckTime` método determina si se debe un tiempo especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,20 +46,20 @@ BOOL CheckTime(
 *time* 
 </dt> <dd>
 
-Tiempo de comprobación.
+Hora de comprobación.
 
 </dd> <dt>
 
 *bStream* 
 </dt> <dd>
 
-**True** si el parámetro *Time* es un valor de tiempo de secuencia; **False** si la *hora* es un valor de tiempo de presentación.
+**TRUE** si el *parámetro time* es un valor de tiempo de secuencia; **FALSE** si *time* es un valor de tiempo de presentación.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si aún no se ha pasado la hora especificada.
+Devuelve **TRUE** si aún no se ha pasado la hora especificada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,8 +67,8 @@ Devuelve **true** si aún no se ha pasado la hora especificada.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -76,7 +76,7 @@ Devuelve **true** si aún no se ha pasado la hora especificada.
 
 <dl> <dt>
 
-[**Clase CCmdQueue**](ccmdqueue.md)
+[**CCmdQueue (clase)**](ccmdqueue.md)
 </dt> </dl>
 
  

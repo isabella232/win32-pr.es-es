@@ -1,7 +1,7 @@
 ---
-description: Desusado. Representa un instante de tiempo, normalmente expresado como una fecha y hora del día y un calendario correspondiente.
+description: Desusado. Representa un instante en el tiempo, normalmente expresado como una fecha y hora del día y un calendario correspondiente.
 ms.assetid: a714ff32-2b1f-4256-931e-324d64daf2ac
-title: Estructura CALDATETIME
+title: CALDATETIME (estructura)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 5e3f0099a8e1dd7794b960af3d753085f2a32eaa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 700e11f27b673d9ff706483cc4abcf2f06cd7d8bb779ef8eaf9b51a6d81b4068
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105689565"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119822835"
 ---
-# <a name="caldatetime-structure"></a>Estructura CALDATETIME
+# <a name="caldatetime-structure"></a>CALDATETIME (estructura)
 
-En desuso. Representa un instante de tiempo, normalmente expresado como una fecha y hora del día y un calendario correspondiente.
+En desuso. Representa un instante en el tiempo, normalmente expresado como una fecha y hora del día y un calendario correspondiente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,28 +50,28 @@ typedef struct _caldatetime {
 **CalId**
 </dt> <dd>
 
-[Identificador del calendario](calendar-identifiers.md) para el instante en el tiempo.
+Identificador [del calendario](calendar-identifiers.md) para el instante en el tiempo.
 
 </dd> <dt>
 
-**Período**
+**Era**
 </dt> <dd>
 
-Información de la era para el instante en el tiempo.
+Información de era del instante en el tiempo.
 
 </dd> <dt>
 
-**Anual**
+**año**
 </dt> <dd>
 
-Año para el instante en el tiempo.
+Año del instante en el tiempo.
 
 </dd> <dt>
 
-**Mensuales**
+**Month (Mes)**
 </dt> <dd>
 
-Mes para el instante en el tiempo.
+Mes del instante en el tiempo.
 
 </dd> <dt>
 
@@ -85,7 +85,7 @@ Día del instante en el tiempo.
 **DayOfWeek**
 </dt> <dd>
 
-El día de la semana para el instante en el tiempo.
+Día de la semana del instante en el tiempo.
 
 </dd> <dt>
 
@@ -96,10 +96,10 @@ Hora del instante en el tiempo.
 
 </dd> <dt>
 
-**Minute**
+**Minuto**
 </dt> <dd>
 
-Minuto para el instante en el tiempo.
+Minuto del instante en el tiempo.
 
 </dd> <dt>
 
@@ -110,10 +110,10 @@ Segundo para el instante en el tiempo.
 
 </dd> <dt>
 
-**Ticker**
+**Garrapata**
 </dt> <dd>
 
-El paso del instante en el tiempo.
+Tic para el instante en el tiempo.
 
 </dd> </dl>
 
@@ -123,8 +123,8 @@ El paso del instante en el tiempo.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -132,7 +132,7 @@ El paso del instante en el tiempo.
 
 <dl> <dt>
 
-[Estructuras de soporte de National Language](national-language-support-structures.md)
+[Estructuras de compatibilidad con idiomas nacionales](national-language-support-structures.md)
 </dt> </dl>
 
  

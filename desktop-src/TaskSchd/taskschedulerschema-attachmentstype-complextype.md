@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de attachmentsType
-description: Define los elementos utilizados para especificar los datos adjuntos enviados con un mensaje de correo electrónico.
+title: tipo complejo attachmentsType
+description: Define los elementos utilizados para especificar datos adjuntos enviados con un mensaje de correo electrónico.
 ms.assetid: b13d9346-a28d-4362-bcfc-dc11869fb8eb
 keywords:
-- tipo complejo de attachmentsType Programador de tareas
+- tipo complejo attachmentsType Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ce5bc25b74221112b487be58a729bffa47b8688d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0d98b266fcb15fbd47fbb2a5bb792b95e4fb765a48b2fbcf6c1185aad9475df1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686104"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119772395"
 ---
-# <a name="attachmentstype-complex-type"></a>Tipo complejo de attachmentsType
+# <a name="attachmentstype-complex-type"></a>tipo complejo attachmentsType
 
-Define los elementos utilizados para especificar los datos adjuntos enviados con un mensaje de correo electrónico.
+Define los elementos utilizados para especificar datos adjuntos enviados con un mensaje de correo electrónico.
 
 ``` syntax
 <xs:complexType name="attachmentsType">
@@ -52,8 +52,8 @@ Define los elementos utilizados para especificar los datos adjuntos enviados con
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

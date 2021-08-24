@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de NM_RELEASEDCAPTURE (buscapersonas) (commctrl. h)
-description: Notifica a la ventana primaria de un control de paginación que el control ha liberado la captura del mouse. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: NM_RELEASEDCAPTURE (paginar) código de notificación (Commctrl.h)
+description: Notifica a la ventana primaria de un control de paginación que el control ha liberado la captura del mouse. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 5ce9c38a-5d37-4ac7-8510-30bc59d85cca
 keywords:
-- Controles de Windows de código de notificación de NM_RELEASEDCAPTURE (buscapersonas)
+- NM_RELEASEDCAPTURE (paginación) de código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0fb1d258d9baa0952e1707e36884a492ff65f99b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f857f64b6964d9258aca6cb923553a85e11e8b0fd9931c3fe2ceb4050038a7ce
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905309"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119826065"
 ---
-# <a name="nm_releasedcapture-pager-notification-code"></a>Código de notificación de NM \_ RELEASEDCAPTURE (buscapersonas)
+# <a name="nm_releasedcapture-pager-notification-code"></a>Código \_ de notificación NM RELEASEDCAPTURE (pager)
 
-Notifica a la ventana primaria de un control de paginación que el control ha liberado la captura del mouse. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Notifica a la ventana primaria de un control de paginación que el control ha liberado la captura del mouse. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ NM_RELEASEDCAPTURE
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contiene información adicional sobre esta notificación.
+Puntero a una [**estructura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contiene información adicional sobre esta notificación.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ El control de paginación omite el valor devuelto.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,22 +1,22 @@
 ---
-description: XMUBYTEN2 describe un vector 2D para almacenar valores normalizados sin signo como enteros de 8 bits sin signo (1 byte).
+description: XMUBYTEN2 describe un vector 2D para almacenar valores normalizados sin signo como enteros de 8 bits (1 byte) sin signo.
 ms.assetid: 138f5158-eb63-4af8-ac9e-d20f3092c111
-title: Extensiones de XMUBYTEN2
+title: Extensiones XMUBYTEN2
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5198bd970a988e7c0cb0e05b568a38f693fbce09
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b3a132846da5c905205ed4cba5ae4e03f5e169d672cb6a553f9d9aca83a72abd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119948655"
 ---
-# <a name="xmubyten2-extensions"></a>Extensiones de XMUBYTEN2
+# <a name="xmubyten2-extensions"></a>Extensiones XMUBYTEN2
 
-[**XMUBYTEN2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmubyten2) describe un vector 2D para almacenar valores normalizados sin signo como enteros de 8 bits sin signo (1 byte).
+[**XMUBYTEN2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmubyten2) describe un vector 2D para almacenar valores normalizados sin signo como enteros de 8 bits (1 byte) sin signo.
 
 > [!Note]  
-> Las características que se enumeran aquí solo están disponibles cuando se desarrollan con C++.
+> Las características enumeradas aquí solo están disponibles al desarrollar con C++.
 
  
 

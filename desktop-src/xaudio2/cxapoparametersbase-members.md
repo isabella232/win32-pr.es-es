@@ -4,12 +4,12 @@ ms.assetid: C2113358-07DE-426E-AF26-BD8ED9902192
 title: CXAPOParametersBase Members
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 554aa66b4166bc3d0de4db685e0f6e7b54e6ebf5
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: ededac8054229cffa7799ced71653ab19cacf74f705e77163556cc5b60b7655d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110423875"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119770845"
 ---
 # <a name="cxapoparametersbase-members"></a>CXAPOParametersBase Members
 
@@ -42,14 +42,14 @@ Muestra los miembros de la [**clase CXAPOParametersBase.**](/windows/desktop/api
 | [**GetRegistrationProperties**](/windows/win32/api/xapo/nf-xapo-ixapo-getregistrationproperties) (heredado de [**IXAPO)**](/windows/desktop/api/XAPO/nn-xapo-ixapo)       | Devuelve las propiedades de registro de un XAPO.<br/>                                                                                                       |
 | [**Inicializar**](/windows/win32/api/xapo/nf-xapo-ixapo-initialize) (se hereda de [**IXAPO)**](/windows/desktop/api/XAPO/nn-xapo-ixapo)                                     | Realiza cualquier inicialización específica del efecto.<br/>                                                                                                          |
 | [**IsInputFormatSupported**](/windows/win32/api/xapo/nf-xapo-ixapo-isinputformatsupported) (se hereda de [**IXAPO)**](/windows/desktop/api/XAPO/nn-xapo-ixapo)             | Consulta si se admite un formato de entrada específico para un formato de salida determinado.<br/>                                                                            |
-| [**IsOutputFormatSupported**](/windows/win32/api/xapo/nf-xapo-ixapo-isoutputformatsupported) (se hereda de [**IXAPO)**](/windows/desktop/api/XAPO/nn-xapo-ixapo)           | Consulta si se admite un formato de salida específico para un formato de entrada determinado.<br/>                                                                            |
-| [**LockForProcess**](/windows/win32/api/xapo/nf-xapo-ixapo-lockforprocess) (heredado de [**IXAPO)**](/windows/desktop/api/XAPO/nn-xapo-ixapo)                             | Notifica a XAPO los formatos de secuencia [**que**](/windows/win32/api/xapo/nf-xapo-ixapo-process) se darán al proceso.<br/>                                                             |
+| [**IsOutputFormatSupported**](/windows/win32/api/xapo/nf-xapo-ixapo-isoutputformatsupported) (heredado de [**IXAPO)**](/windows/desktop/api/XAPO/nn-xapo-ixapo)           | Consulta si se admite un formato de salida específico para un formato de entrada determinado.<br/>                                                                            |
+| [**LockForProcess**](/windows/win32/api/xapo/nf-xapo-ixapo-lockforprocess) (heredado de [**IXAPO)**](/windows/desktop/api/XAPO/nn-xapo-ixapo)                             | Notifica a XAPO los formatos de [**secuencia**](/windows/win32/api/xapo/nf-xapo-ixapo-process) que se van a dar al proceso.<br/>                                                             |
 | [**OnSetParameters**](/windows/win32/api/xapobase/nf-xapobase-cxapoparametersbase-onsetparameters)                                                               | [**IXAPOParameters::SetParameters llama**](/windows/win32/api/xapo/nf-xapo-ixapoparameters-setparameters) a para permitir la validación de parámetros definidos por el usuario. <br/>          |
 | [**ParametersChanged**](/windows/win32/api/xapobase/nf-xapobase-cxapoparametersbase-parameterschanged)                                                           | Indica si se [**ha llamado a IXAPOParameters::SetParameters**](/windows/win32/api/xapo/nf-xapo-ixapoparameters-setparameters) desde el último paso de procesamiento. <br/>       |
-| [**QueryInterface**](/previous-versions/windows/desktop/legacy/ee418457(v=vs.85)) (se hereda de [**IXAPO)**](/windows/desktop/api/XAPO/nn-xapo-ixapo)                         | Recupera el puntero de interfaz solicitado si el XAPO lo admite.<br/>                                                                                    |
+| [**QueryInterface**](/previous-versions/windows/desktop/legacy/ee418457(v=vs.85)) (se hereda de [**IXAPO)**](/windows/desktop/api/XAPO/nn-xapo-ixapo)                         | Recupera el puntero de interfaz solicitado si XAPO lo admite.<br/>                                                                                    |
 | [**Versión**](/previous-versions/windows/desktop/legacy/ee418458(v=vs.85)) (heredada de [**IXAPO)**](/windows/desktop/api/XAPO/nn-xapo-ixapo)                                       | Disminuye el recuento de referencias del objeto XAPO y elimina el objeto si el recuento de referencias cae a cero.<br/>                                             |
-| [**Restablecimiento**](/windows/win32/api/xapo/nf-xapo-ixapo-reset) (heredado de [**IXAPO)**](/windows/desktop/api/XAPO/nn-xapo-ixapo)                                               | Devuelve el objeto al estado en el que estaba justo después de llamar a [**LockForProcess.**](/windows/win32/api/xapo/nf-xapo-ixapo-lockforprocess)<br/>                             |
-| [**SetParameters**](/windows/win32/api/xapo/nf-xapo-ixapoparameters-setparameters) (se hereda de [**IXAPOParameters)**](/windows/desktop/api/XAPO/nn-xapo-ixapoparameters) | Establece parámetros específicos del efecto.<br/>                                                                                                                      |
+| [**Restablecer**](/windows/win32/api/xapo/nf-xapo-ixapo-reset) (se hereda de [**IXAPO)**](/windows/desktop/api/XAPO/nn-xapo-ixapo)                                               | Devuelve el objeto al estado en el que estaba justo después de llamar a [**LockForProcess.**](/windows/win32/api/xapo/nf-xapo-ixapo-lockforprocess)<br/>                             |
+| [**SetParameters**](/windows/win32/api/xapo/nf-xapo-ixapoparameters-setparameters) (heredado de [**IXAPOParameters)**](/windows/desktop/api/XAPO/nn-xapo-ixapoparameters) | Establece parámetros específicos del efecto.<br/>                                                                                                                      |
 | [**UnlockForProcess**](/windows/win32/api/xapo/nf-xapo-ixapo-unlockforprocess) (heredado de [**IXAPO)**](/windows/desktop/api/XAPO/nn-xapo-ixapo)                         | Opuesto a LockForProcess: las variables asignadas [**durante LockForProcess**](/windows/win32/api/xapo/nf-xapo-ixapo-lockforprocess) se deben desasignar en este método.<br/> |
 
 
