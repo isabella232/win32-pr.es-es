@@ -1,46 +1,46 @@
 ---
-title: Mensajes de joystick multimedia
-description: Mensajes de joystick multimedia
+title: Mensajes multimedia multimedia
+description: Mensajes multimedia multimedia
 ms.assetid: 43904426-a5db-44cf-b094-cca87131b7c5
 keywords:
-- Windows multimedia, mensajes de joystick
-- multimedia, mensajes de joystick
-- entrada multimedia, mensajes de joystick
-- joysticks, mensajes
-- referencia de joysticks, mensajes
-- referencia de joystick, mensajes
+- Windows multimedia, mensajes de sms
+- multimedia, mensajes de sms
+- entrada multimedia, mensajes de sms
+- y, por último, mensajes
+- referencia de los mensajes,los mensajes
+- referencia de y mensajes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 01f53ec6c2414fad3e13fac129438be55426fb22
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e04ec9bc942e735016c9c233a8957e05323819f0a71525d6e7c0d8bab3c77a4c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994584"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119806745"
 ---
-# <a name="multimedia-joystick-messages"></a>Mensajes de joystick multimedia
+# <a name="multimedia-joystick-messages"></a>Mensajes multimedia multimedia
 
-Los siguientes mensajes se utilizan con los joysticks multimedia.
+Los mensajes siguientes se usan con multimedia multimedia.
 
--   [**MM \_ JOY1BUTTONDOWN**](mm-joy1buttondown.md)
--   [**MM \_ JOY1BUTTONUP**](mm-joy1buttonup.md)
--   [**MM \_ JOY1MOVE**](mm-joy1move.md)
--   [**MM \_ JOY1ZMOVE**](mm-joy1zmove.md)
--   [**MM \_ JOY2BUTTONDOWN**](mm-joy2buttondown.md)
--   [**MM \_ JOY2BUTTONUP**](mm-joy2buttonup.md)
--   [**MM \_ JOY2MOVE**](mm-joy2move.md)
--   [**MM \_ JOY2ZMOVE**](mm-joy2zmove.md)
+-   [**\_MMBUTTON1BUTTONDOWN**](mm-joy1buttondown.md)
+-   [**MM \_ MMMIENTO1BUTTONUP**](mm-joy1buttonup.md)
+-   [**MM \_ MM1MOVE**](mm-joy1move.md)
+-   [**\_MMMUT1ZMOVE**](mm-joy1zmove.md)
+-   [**\_MMIJO2BUTTONDOWN**](mm-joy2buttondown.md)
+-   [**\_MMIJO2BUTTONUP**](mm-joy2buttonup.md)
+-   [**\_MMIJO2MOVE**](mm-joy2move.md)
+-   [**\_MMIJO2ZMOVE**](mm-joy2zmove.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Referencia de joystick](joystick-reference.md)
+[Referencia de los resaltes](joystick-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: atributo netboot-SCP-BL
-description: Una lista de puntos de conexión de servicio que hacen referencia a este servidor de NetBoot.
+title: Atributo netboot-SCP-BL
+description: Lista de puntos de conexión de servicio que hacen referencia a este servidor NetBoot.
 ms.assetid: 65e7b762-ed7b-4edd-882f-df9b8f094c67
 ms.tgt_platform: multiple
 keywords:
-- netboot-SCP-BL atributo AD Schema
-- netbootSCPBL esquema de AD de atributos
+- Esquema de AD del atributo netboot-SCP-BL
+- Esquema de AD del atributo netbootSCPBL
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 46c95652dc7c4273029fb6f05f00b82a636cb16d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9771b430852aa77ff9633c16e203842649493163e220539c98acaae6171ed394
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804892"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648556"
 ---
-# <a name="netboot-scp-bl-attribute"></a>atributo netboot-SCP-BL
+# <a name="netboot-scp-bl-attribute"></a>Atributo netboot-SCP-BL
 
-Una lista de puntos de conexión de servicio que hacen referencia a este servidor de NetBoot.
+Lista de puntos de conexión de servicio que hacen referencia a este servidor NetBoot.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
 | CN                | netboot-SCP-BL                          |
-| Nombre para mostrar de LDAP | netbootSCPBL                            |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | El sistema establece este valor.        |
+| Ldap-Display-Name | netbootSCPBL                            |
+| Size              | \-                                      |
+| Actualizar privilegios  | El sistema establece este valor.        |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.864                  |
-| System-ID-GUID    | 07383082-91df-11d1-aebc-0000f80367c1    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 07383082-91df-11d1-aebc-0000f80367c1    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -55,13 +55,13 @@ Una lista de puntos de conexión de servicio que hacen referencia a este servido
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 101                             |
+| Id. de vínculo                | 101                             |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -76,13 +76,13 @@ Una lista de puntos de conexión de servicio que hacen referencia a este servido
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 101                             |
+| Id. de vínculo                | 101                             |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -97,13 +97,13 @@ Una lista de puntos de conexión de servicio que hacen referencia a este servido
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 101                             |
+| Id. de vínculo                | 101                             |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -116,15 +116,15 @@ Una lista de puntos de conexión de servicio que hacen referencia a este servido
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 101                             |
+| Id. de vínculo                | 101                             |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -139,13 +139,13 @@ Una lista de puntos de conexión de servicio que hacen referencia a este servido
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 101                             |
+| Id. de vínculo                | 101                             |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -160,13 +160,13 @@ Una lista de puntos de conexión de servicio que hacen referencia a este servido
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 101                             |
+| Id. de vínculo                | 101                             |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

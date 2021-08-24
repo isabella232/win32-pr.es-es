@@ -1,5 +1,5 @@
 ---
-title: Sintaxis de Object (punto de acceso)
+title: Sintaxis de objeto (punto de acceso)
 description: Sintaxis de objeto (punto de acceso).
 ms.assetid: b52cfa3b-2a5e-495c-9c1f-db7d04ccbfb2
 ms.tgt_platform: multiple
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 12f0d8f75b41ddd3f5365e43cf04e942b41badc9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b7000223442157024cce2c0306eafe4bfe3286d6cd7658e671991937cd09804a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905762"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119702566"
 ---
-# <a name="objectaccess-point-syntax"></a>Sintaxis de Object (punto de acceso)
+# <a name="objectaccess-point-syntax"></a>Sintaxis de objeto (punto de acceso)
 
-Sintaxis de objeto (punto de acceso). De X400.
+Sintaxis de objeto (punto de acceso). Desde X400.
 
 
 
 | Entrada | Value |
 |--------------|----------------------|
 | Nombre         | Object(Access-Point) |
-| IDENTIFICADOR de sintaxis    | 2.5.5.14             |
-| IDENTIFICADOR DE OM        | 127                  |
-| Tipo MAPI    | \-                   |
-| Tipo ADS     | ninguno                 |
-| Tipo Variant | ninguno                 |
-| Tipo de SDS     | ninguno                 |
+| Identificador de sintaxis    | 2.5.5.14             |
+| Id. de OM        | 127                  |
+| Tipo DE MAPI    | \-                   |
+| ADS Type     | ninguno                 |
+| Tipo de variante | ninguno                 |
+| Tipo sds     | ninguno                 |
 
 
 

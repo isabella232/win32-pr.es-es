@@ -1,19 +1,19 @@
 ---
-description: Fecha en que se tomó la foto, como se lee de la cámara en la etiqueta del archivo de imagen intercambiable (EXIF) del archivo.
+description: Fecha en que se tomó la foto, como se lee desde la cámara en la etiqueta Archivo de imagen intercambiable (EXIF) del archivo.
 ms.assetid: 197fb739-7fe6-47e8-908f-54e75cb47ec4
-title: System. Photo. DateTaken
+title: System.Photo.DateTaken
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a9fbcff8c490abc52516523f4b11503f7f8bfe5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dbd16e04957ebd53253d1a0168dfe626bf8181cce5ec1b33cded59c5c17f29eb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105648333"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119596665"
 ---
-# <a name="systemphotodatetaken"></a>System. Photo. DateTaken
+# <a name="systemphotodatetaken"></a>System.Photo.DateTaken
 
-Fecha en que se tomó la foto, como se lee de la cámara en la etiqueta del archivo de imagen intercambiable (EXIF) del archivo.
+Fecha en que se tomó la foto, como se lee desde la cámara en la etiqueta Archivo de imagen intercambiable (EXIF) del archivo.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -44,15 +44,15 @@ propertyDescription
       type = DateTime
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Exchangeable Image File Format para las cámaras digitales fijas: versión Exif 2,2](https://www.exif.org/Exif2-2.PDF)
+[Exchangeable Image File Format para cámaras de imágenes digitales: Exif versión 2.2](https://www.exif.org/Exif2-2.PDF)
 </dt> <dt>
 
 [propertyDescription](./propdesc-schema-propertydescription.md)
@@ -64,7 +64,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -76,7 +76,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -94,7 +94,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

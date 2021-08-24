@@ -1,9 +1,9 @@
 ---
 title: Recurso STRINGTABLE
-description: Define uno o más recursos de cadena para una aplicación. Los recursos de cadena son simplemente cadenas Unicode o ASCII terminadas en null que se pueden cargar cuando es necesario desde el archivo ejecutable, mediante la función LoadString.
+description: Define uno o varios recursos de cadena para una aplicación. Los recursos de cadena son simplemente cadenas Unicode o ASCII terminadas en NULL que se pueden cargar cuando sea necesario desde el archivo ejecutable mediante la función LoadString.
 ms.assetid: 5868245d-3445-4792-86f5-253945310d36
 keywords:
-- Menús de recursos de STRINGTABLE y otros recursos
+- Menús de recursos STRINGTABLE y otros recursos
 topic_type:
 - apiref
 api_name:
@@ -12,24 +12,24 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 271abd022bdedd3b27e0434e7364542fa51c8987
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 7994b6853195ba164c766ca6ee275e4535ab1249c0c78907ab996b9dc644013a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104149267"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119720655"
 ---
 # <a name="stringtable-resource"></a>Recurso STRINGTABLE
 
-Define uno o más recursos de cadena para una aplicación. Los recursos de cadena son simplemente cadenas Unicode o ASCII terminadas en null que se pueden cargar cuando es necesario desde el archivo ejecutable, mediante la función [**LoadString**](/windows/win32/api/winuser/nf-winuser-loadstringa) .
+Define uno o varios recursos de cadena para una aplicación. Los recursos de cadena son simplemente cadenas Unicode o ASCII terminadas en NULL que se pueden cargar cuando sea necesario desde el archivo ejecutable mediante la [**función LoadString.**](/windows/win32/api/winuser/nf-winuser-loadstringa)
 
-Hay dos maneras de dar formato a una instrucción **stringtable** :
+Hay dos maneras de dar formato a **una instrucción STRINGTABLE:**
 
 ``` syntax
 STRINGTABLE  [optional-statements] {stringID string  ...}
 ```
 
-\- o -
+\- O bien
 
 ``` syntax
 STRINGTABLE
@@ -44,7 +44,7 @@ END
 
 <dl> <dt>
 
-<span id="optional-statements"></span><span id="OPTIONAL-STATEMENTS"></span>*instrucciones opcionales*
+<span id="optional-statements"></span><span id="OPTIONAL-STATEMENTS"></span>*optional-statements*
 </dt> <dd>
 
 Este parámetro puede ser cero o más de las instrucciones siguientes.
@@ -53,13 +53,13 @@ Este parámetro puede ser cero o más de las instrucciones siguientes.
 
 | .                                                        | Descripción                                                                                                                                                                             |
 |------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Características**](characteristics-statement.md) *DWORD*     | Información definida por el usuario sobre un recurso que pueden usar las herramientas que leen y escriben archivos de recursos. Para obtener más información, vea [**características**](characteristics-statement.md). |
-| [](language-statement.md) *Idioma* del idioma, *subidioma* | Especifica el idioma del recurso. Para obtener más información, vea [**Language**](language-statement.md).                                                                              |
-| [**Versión**](version-statement.md) *DWORD*                     | Número de versión definido por el usuario para el recurso que pueden usar las herramientas que leen y escriben archivos de recursos. Para obtener más información, vea [**versión**](version-statement.md).              |
+| [**CHARACTERISTICS**](characteristics-statement.md) *dword*     | Información definida por el usuario sobre un recurso que pueden usar las herramientas que leen y escriben archivos de recursos. Para obtener más información, vea [**CHARACTERISTICS**](characteristics-statement.md). |
+| [**Language**](language-statement.md) *language*, *sublanguage* | Especifica el idioma del recurso. Para obtener más información, vea [**LANGUAGE**](language-statement.md).                                                                              |
+| [**VERSION**](version-statement.md) *dword*                     | Número de versión definido por el usuario para el recurso que pueden usar las herramientas que leen y escriben archivos de recursos. Para obtener más información, vea [**VERSION**](version-statement.md).              |
 
 
 
- 
+ 
 
 </dd> <dt>
 
@@ -70,37 +70,37 @@ Entero de 16 bits sin signo que identifica el recurso.
 
 </dd> <dt>
 
-<span id="string"></span><span id="STRING"></span>*String@*
+<span id="string"></span><span id="STRING"></span>*Cadena*
 </dt> <dd>
 
-Una o más cadenas, entre comillas. La cadena no debe tener más de 4097 caracteres y debe ocupar una sola línea en el archivo de código fuente. Para agregar un retorno de carro a la cadena, use esta secuencia de caracteres: \\ 012. Por ejemplo, "line One \\ 012Line two" define una cadena que se muestra de la siguiente manera:
+Una o varias cadenas, entre comillas. La cadena no debe tener más de 4097 caracteres y debe ocupar una sola línea en el archivo de origen. Para agregar un retorno de carro a la cadena, use esta secuencia de caracteres: \\ 012. Por ejemplo, "Línea \\ uno 012Line dos" define una cadena que se muestra de la siguiente manera:
 
 ``` syntax
 Line one
 Line two
 ```
 
-Para insertar comillas en la cadena, use la siguiente secuencia: "". Por ejemplo, "" "línea tres" "" define una cadena que se muestra de la siguiente manera:
+Para insertar comillas en la cadena, use la siguiente secuencia: "". Por ejemplo, """Línea tres""" define una cadena que se muestra de la siguiente manera:
 
 ``` syntax
 "Line three"
 ```
 
-Para codificar caracteres Unicode, utilice una "L" seguida de los caracteres Unicode entre comillas. Vea la sección ejemplos para obtener un ejemplo.
+Para codificar caracteres Unicode, use una "L" seguida de los caracteres Unicode entre comillas. Consulte la sección Ejemplos para obtener un ejemplo.
 
-El compilador de recursos también admite continuaciones de línea en la *cadena*. Vea la sección ejemplos para obtener un ejemplo.
+El compilador de recursos también admite continuaciones de línea en *la cadena*. Consulte la sección Ejemplos para obtener un ejemplo.
 
 </dd> </dl>
 
-Algunos atributos también se admiten por razones de compatibilidad con versiones anteriores. Para obtener más información, vea [atributos comunes de recursos](common-resource-attributes.md).
+Algunos atributos también se admiten por compatibilidad con versiones anteriores. Para más información, consulte [Atributos de recursos comunes.](common-resource-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-RC asigna 16 cadenas por sección y usa el valor del identificador para determinar qué sección va a contener la cadena. Las cadenas cuyos identificadores difieren solo en los 4 bits inferiores se colocan en la misma sección. Para obtener más información, vea [Q196774](https://support.microsoft.com/kb/196774).
+RC asigna 16 cadenas por sección y usa el valor de identificador para determinar qué sección debe contener la cadena. Las cadenas cuyos identificadores difieren solo en los 4 bits inferiores se colocan en la misma sección. Para obtener más información, [vea Q196774](https://support.microsoft.com/kb/196774).
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso de la instrucción **stringtable** para mostrar cadenas ASCII:
+En el ejemplo siguiente se muestra el uso de la **instrucción STRINGTABLE** para mostrar cadenas ASCII:
 
 ``` syntax
 #define IDS_HELLO    1
@@ -152,19 +152,19 @@ END
 
 <dl> <dt>
 
-[**Fall**](/windows/win32/api/winuser/nf-winuser-loadstringa)
+[**LoadString**](/windows/win32/api/winuser/nf-winuser-loadstringa)
 </dt> <dt>
 
-[**ACELERADORES**](accelerators-resource.md)
+[**Aceleradores**](accelerators-resource.md)
 </dt> <dt>
 
-[**SUS**](characteristics-statement.md)
+[**Características**](characteristics-statement.md)
 </dt> <dt>
 
-[**MÓDULO**](language-statement.md)
+[**Lengua**](language-statement.md)
 </dt> <dt>
 
-[**MENU**](menu-resource.md)
+[**Menú**](menu-resource.md)
 </dt> <dt>
 
 [**RCDATA**](rcdata-resource.md)
@@ -173,6 +173,6 @@ END
 [**Versión**](version-statement.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

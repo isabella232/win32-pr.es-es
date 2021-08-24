@@ -1,9 +1,9 @@
 ---
-title: VER. scriptFile
-description: El atributo scriptFile especifica los nombres de archivo de los archivos JScript que lo acompañan.
+title: VIEW.scriptFile
+description: El atributo scriptFile especifica los nombres de archivo de los archivos JScript adjuntos.
 ms.assetid: c285c467-5ba7-4f46-b316-977e833c3cdd
 keywords:
-- VIEW. scriptFile Windows Media Player
+- VIEW.scriptFile Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ac7f447f1934c2589b7ae52b3a24e2dcb2b1ef7b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1f22b0fb5f0815c8977a363c033d26c0d68f725e0cdcd546bc2f2c1a7b723c64
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119615335"
 ---
-# <a name="viewscriptfile"></a>VER. scriptFile
+# <a name="viewscriptfile"></a>VIEW.scriptFile
 
-El atributo **scriptFile** especifica los nombres de archivo de los archivos JScript que lo acompañan.
+El **atributo scriptFile** especifica los nombres de archivo de los archivos JScript adjuntos.
 
 ``` syntax
         elementID.scriptFile
@@ -29,11 +29,11 @@ El atributo **scriptFile** especifica los nombres de archivo de los archivos JSc
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de solo escritura sin ningún valor predeterminado. Los nombres de archivo de varios archivos JScript están delimitados por punto y coma. Los espacios iniciales y siguientes y los signos de punto y coma no deben estar presentes.
+Este atributo es una cadena de **solo** escritura sin ningún valor predeterminado. Los nombres de archivo de varios JScript están delimitados con punto y coma. Los espacios iniciales y los siguientes y punto y coma no deben estar presentes.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cualquier controlador de eventos de la vista puede utilizar el código de los archivos especificados. El código que usan los controladores de eventos en varias vistas puede colocarse en un archivo con el mismo nombre que el archivo de definición de máscara, pero con una extensión. js en lugar de una extensión. WMS. Este archivo se carga automáticamente y no es necesario especificarlo en el archivo de definición de máscara.
+Cualquier controlador de eventos de la vista puede usar el código de los archivos especificados. El código que usan los controladores de eventos en varias vistas se puede colocar en un archivo con el mismo nombre que el archivo de definición de máscara, pero con una extensión .js en lugar de una extensión .wms. Este archivo se carga automáticamente y no es necesario especificarlo en el archivo de definición de máscara.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -52,7 +52,7 @@ Cualquier controlador de eventos de la vista puede utilizar el código de los ar
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -60,7 +60,7 @@ Cualquier controlador de eventos de la vista puede utilizar el código de los ar
 
 <dl> <dt>
 
-[**Elemento de vista**](view-element.md)
+[**ELEMENTO VIEW**](view-element.md)
 </dt> </dl>
 
  

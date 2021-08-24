@@ -4,12 +4,12 @@ ms.assetid: b05bb76b-d4ba-42e6-92ea-8e48f4c8f409
 title: Propiedad TotalTitleTime
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 73a300a2da8de2698a74e0d72362818bd8a2a5ba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6fd809391394dc661745717ce7d173ad548dfd4d01206c07293024dc8e44a478
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103910406"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119650855"
 ---
 # <a name="totaltitletime-property"></a>Propiedad TotalTitleTime
 
@@ -26,11 +26,11 @@ La `TotalTitleTime` propiedad recupera el tiempo total de reproducción del tít
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el tiempo total de reproducción del título actual como una cadena con el formato "HH: mm: SS: FF".
+Devuelve el tiempo de reproducción total del título actual como una cadena con el formato "hh:mm:ss:ff".
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad es de solo lectura y no tiene ningún valor predeterminado. La cadena devuelta tendrá 11 caracteres de longitud en el formato "HH: mm: SS: FF" (horas, minutos, segundos, fotogramas).
+Esta propiedad es de solo lectura sin ningún valor predeterminado. La cadena devuelta tendrá 11 caracteres con el formato "hh:mm:ss:ff" (horas, minutos, segundos, fotogramas).
 
 ## <a name="see-also"></a>Vea también
 

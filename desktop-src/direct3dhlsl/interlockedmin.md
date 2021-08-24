@@ -1,9 +1,9 @@
 ---
-title: Función InterlockedMin (referencia de HLSL)
+title: Función InterlockedMin (referencia HLSL)
 description: Realiza un mínimo atómico garantizado.
 ms.assetid: a6d3d81c-45d7-4e15-b8ec-fa2e30f854ce
 keywords:
-- InterlockedMin de función HLSL
+- Función InterlockedMin HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9c85be82f87ce62d03c824e8cd895166c18c262c
-ms.sourcegitcommit: 12e9b14501d51641b690ee0cf764e2b91eb9a140
+ms.openlocfilehash: c84650ce8f95f9ba0aa6e3d5bf5d54f2915a1a94fdf96d9f89179598004744e2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "104420156"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119672665"
 ---
-# <a name="interlockedmin-function-hlsl-reference"></a>Función InterlockedMin (referencia de HLSL)
+# <a name="interlockedmin-function-hlsl-reference"></a>Función InterlockedMin (referencia HLSL)
 
 Realiza un mínimo atómico garantizado.
 
@@ -28,9 +28,9 @@ Realiza un mínimo atómico garantizado.
 
 ``` syntax
 void InterlockedMin(
-  in  R dest,
-  in  T value,
-  out T original_value
+  in  R dest,
+  in  T value,
+  out T original_value
 );
 ```
 
@@ -38,7 +38,7 @@ void InterlockedMin(
 
 <dl> <dt>
 
-*dest* \[ de\]
+*dest* \[ En\]
 </dt> <dd>
 
 Tipo: **R**
@@ -47,7 +47,7 @@ Dirección de destino.
 
 </dd> <dt>
 
-*valor* \[ de de\]
+*value* \[ En\]
 </dt> <dd>
 
 Tipo: **T**
@@ -56,7 +56,7 @@ Valor de entrada.
 
 </dd> <dt>
 
-*\_ valor original* \[ fuera\]
+*valor \_ de salida* \[ original\]
 </dt> <dd>
 
 Tipo: **T**
@@ -69,11 +69,11 @@ Opcional. Valor de entrada original.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta operación solo se puede realizar en los recursos con tipo int y uint y las variables de memoria compartida. Hay dos usos posibles para esta función. El primero es cuando R es un tipo de variable de memoria compartida. En este caso, la función realiza un mínimo atómico del valor en el registro de memoria compartida al que hace referencia dest. El segundo escenario es cuando R es un tipo de variable de recurso. En este escenario, la función realiza una mínima atómica de valor en la ubicación del recurso a la que hace referencia dest. La función sobrecargada tiene una variable de salida adicional que se establecerá en el valor original de dest. Esta operación sobrecargada solo está disponible cuando R es legible y grabable.
+Esta operación solo se puede realizar en recursos con tipo int y uint y variables de memoria compartida. Hay dos usos posibles para esta función. La primera es cuando R es un tipo de variable de memoria compartida. En este caso, la función realiza un mínimo atómico de valor en el registro de memoria compartida al que hace referencia dest. El segundo escenario es cuando R es un tipo de variable de recurso. En este escenario, la función realiza un mínimo atómico de valor en la ubicación del recurso a la que hace referencia dest. La función sobrecargada tiene una variable de salida adicional que se establecerá en el valor original de dest. Esta operación sobrecargada solo está disponible cuando R es legible y grabable.
 
-### <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+### <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -81,23 +81,23 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                | Compatible |
 |-----------------------------------------------------------------------------|-----------|
-| Modelos de sombreador [modelo 5](d3d11-graphics-reference-sm5.md) y versiones posteriores | sí       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) y modelos de sombreador posteriores | Sí       |
 
 
 
- 
+ 
 
 Esta función se admite en los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | x      |  x   |  x     |  x       | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vea también
 
@@ -109,9 +109,9 @@ Esta función se admite en los siguientes tipos de sombreadores:
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

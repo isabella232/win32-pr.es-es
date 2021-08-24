@@ -1,7 +1,7 @@
 ---
-description: Crea un nuevo catálogo personalizado en el indizador de Windows Search y devuelve una referencia a él.
+description: Crea un nuevo catálogo personalizado en el indexador Windows Search y devuelve una referencia a él.
 ms.assetid: 2ADC48B8-87A2-4527-9AA8-9B0BA3A12462
-title: 'ISearchManager2:: CreateCatalog (método)'
+title: ISearchManager2::CreateCatalog (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - searchapi.h
-ms.openlocfilehash: 009e34a2d1eb4d18df1747ba01ea39c3360ec81a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 34a4ceb37045ebbae62e04da0b5395673ed498c56189a26f2abaa376c960c511
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275256"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119597755"
 ---
-# <a name="isearchmanager2createcatalog-method"></a>ISearchManager2:: CreateCatalog (método)
+# <a name="isearchmanager2createcatalog-method"></a>ISearchManager2::CreateCatalog (método)
 
-Crea un nuevo catálogo personalizado en el indizador de Windows Search y devuelve una referencia a él.
+Crea un nuevo catálogo personalizado en el indexador Windows Search y devuelve una referencia a él.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,21 +40,21 @@ HRESULT CreateCatalog(
 
 <dl> <dt>
 
-*pszCatalog* \[ de\]
+*pszCatalog* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCWSTR**](../winprog/windows-data-types.md)**
 
-Nombre del catálogo que se va a crear. Puede ser cualquier nombre seleccionado por el autor de la llamada, solo debe contener caracteres alfanuméricos estándar y un carácter de subrayado.
+Nombre del catálogo que se creará. Puede ser cualquier nombre seleccionado por el autor de la llamada, solo debe contener caracteres alfanuméricos estándar y caracteres de subrayado.
 
 </dd> <dt>
 
-*ppCatalogManager* \[ enuncia\]
+*ppCatalogManager* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ISearchCatalogManager**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcatalogmanager)\*\***
 
-Si se ejecuta correctamente, se devuelve una referencia al catálogo creado como un puntero de interfaz [**ISearchCatalogManager**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcatalogmanager) . Se debe llamar a la versión () en esta interfaz después de que la aplicación que realiza la llamada haya terminado de usarla.
+Si se realiza correctamente, se devuelve una referencia al catálogo creado como puntero de [**interfaz ISearchCatalogManager.**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcatalogmanager) Se debe llamar a Release() en esta interfaz después de que la aplicación que realiza la llamada haya terminado de usarlo.
 
 </dd> </dl>
 
@@ -68,18 +68,18 @@ HRESULT que indica el estado de la operación:
 
 | Código devuelto                                                                             | Descripción                                                                                 |
 |-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>    | El catálogo no existía anteriormente y se creó. Referencia al catálogo devuelta.<br/> |
-| <dl> <dt>**S \_ false**</dt> </dl> | El catálogo existía anteriormente, se devolvió una referencia al catálogo.<br/>                       |
+| <dl> <dt>**S \_ OK**</dt> </dl>    | El catálogo no existía previamente y se creó. Referencia al catálogo devuelto.<br/> |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | Catálogo que existía anteriormente, referencia al catálogo devuelto.<br/>                       |
 
 
 
  
 
-ERROR HRESULT: error al crear el catálogo o argumentos no válidos pasados.
+FAILED HRESULT: error al crear el catálogo o se han pasado argumentos no válidos.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se llama para crear un nuevo catálogo en el indizador de Windows Search. Después de la creación, se pueden usar los métodos del administrador de [**ISearchCatalog**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcatalogmanager) devuelto para agregar ubicaciones que se van a indexar, supervisar el proceso de indexación y crear consultas para enviarlas al indexador y obtener los resultados. Consulte la documentación sobre la administración del índice para obtener más información: https://msdn.microsoft.com/library/bb266516(VS.85).aspx
+Se llama para crear un nuevo catálogo en el indexador Windows Search. Después de la creación, los métodos del administrador de [**ISearchCatalog**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcatalogmanager) devuelto se pueden usar para agregar ubicaciones para indexar, supervisar el proceso de indexación y construir consultas para enviar al indexador y obtener resultados. Consulte la documentación "Administración del índice" para obtener más información: https://msdn.microsoft.com/library/bb266516(VS.85).aspx
 
 ## <a name="requirements"></a>Requisitos
 
@@ -87,8 +87,8 @@ Se llama para crear un nuevo catálogo en el indizador de Windows Search. Despu�
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>           |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/> |
 
 
 

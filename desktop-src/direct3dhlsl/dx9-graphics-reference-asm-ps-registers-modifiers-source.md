@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: a9dd4476dd7a1a885edb2e62a29b5127f5ff0a14
-ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
+ms.openlocfilehash: 0626449e0a38cb695f5f3c9402969df3a25c192ad7a16ef3311053c7843e0667
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113129682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119673315"
 ---
 # <a name="pixel-shader-source-register-modifiers"></a>Modificadores de registro de origen del sombreador de píxeles
 
@@ -26,10 +26,10 @@ Esta tabla identifica las versiones que admiten cada modificador:
 
 
 
-| Modificadores de registro de origen                                                                                    | Sintaxis         | Versión 1 \_ 1 | Versión 1 \_ 2     | Versión 1 \_ 3     | Versión 1 \_ 4     |
+| Modificadores de registro de origen                                                                                    | Syntax         | Versión 1 \_ 1 | Versión 1 \_ 2     | Versión 1 \_ 3     | Versión 1 \_ 4     |
 |--------------------------------------------------------------------------------------------------------------|----------------|---------|------|------|------|
 | [predisposición](dx9-graphics-reference-asm-ps-registers-modifiers-bias.md)                                           | registro \_ de sesgo | X       | X    | X    | X    |
-| [Invertir](dx9-graphics-reference-asm-ps-registers-modifiers-invert.md)                                       | 1 : registro   | X       | X    | X    | X    |
+| [Invertir](dx9-graphics-reference-asm-ps-registers-modifiers-invert.md)                                       | 1: registro   | X       | X    | X    | X    |
 | [Negar](dx9-graphics-reference-asm-ps-registers-modifiers-negate.md)                                       | \- Registro    | X       | X    | X    | X    |
 | [escala en 2](dx9-graphics-reference-asm-ps-registers-modifiers-scale-x2.md)                                 | register \_ x2   |         |      |      | X    |
 | [escalado firmado](dx9-graphics-reference-asm-ps-registers-modifiers-signed-scale.md)                         | register \_ bx2  | X       | X    | X    | X    |
@@ -42,9 +42,9 @@ Esta tabla identifica las versiones que admiten cada modificador:
 
 Los modificadores de registro de origen solo se pueden usar en instrucciones aritméticas. No se pueden usar en instrucciones de dirección de textura. La excepción a esto es el [modificador de escala por 2.](dx9-graphics-reference-asm-ps-registers-modifiers-scale-x2.md) Para la versión \_ 1 1, se puede usar la escala con firma en el argumento de origen de cualquier instrucción \* texm. Para la versión 1 \_ 2 o 1 3, la escala con firma se puede usar en el argumento de origen \_ de cualquier instrucción de dirección de textura.
 
-Algunas restricciones específicas del modificador:
+Algunas restricciones específicas de modificador:
 
--   Negate se puede combinar con el sesgo, el escalado con firma o el modificador scalex2. Cuando se combina, negate se ejecuta en último lugar.
+-   Negate se puede combinar con el sesgo, el escalado firmado o el modificador scalex2. Cuando se combina, negate se ejecuta en último lugar.
 -   La inversión no se puede combinar con ningún otro modificador.
 -   Invert, negate, bias, signed scaling y scalex2 se pueden combinar con cualquiera de los selectores.
 -   Los modificadores de registro de origen no deben usarse en registros constantes porque provocarán resultados no definidos. Para la versión 1 4, no se permiten modificadores en constantes \_ y se producirá un error en la validación.
@@ -55,7 +55,7 @@ Para la versión ps 2 0 y versiones arriba, se ha simplificado el número \_ \_ 
 
 ### <a name="negate"></a>Negate
 
-Niega el contenido del registro de origen.
+Nega el contenido del registro de origen.
 
 
 

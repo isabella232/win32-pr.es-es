@@ -1,6 +1,6 @@
 ---
 title: Prototipos
-description: Una firma de sombreador es una lista de los parámetros que son la entrada o la salida de una función de sombreador.
+description: Una firma de sombreador es una lista de los parámetros que son entrada o salida de una función de sombreador.
 ms.assetid: c73a4f3e-e6fa-4e49-9ee8-4e200269dba7
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 37906222ec674c2c1bb5e1cdfea1cb2de2e1df3d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5631dbe473b2e3eea0abb525e58621faf9c5137dd5dc3d743bde53b0ae258f25
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104996796"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119789585"
 ---
 # <a name="signatures"></a>Prototipos
 
-Una firma de sombreador es una lista de los parámetros que son la entrada o la salida de una función de sombreador. En Direct3D 10, las fases adyacentes comparten eficazmente una matriz de registros, donde el sombreador de salida (o la fase de canalización) escribe datos en ubicaciones específicas de la matriz de registro y el sombreador de entrada debe leer desde las mismas ubicaciones. La API usa firmas de sombreador para enlazar salidas de sombreador con entradas sin la sobrecarga de la resolución semántica.
+Una firma de sombreador es una lista de los parámetros que son entrada o salida de una función de sombreador. En Direct3D 10, las fases adyacentes comparten eficazmente una matriz de registro, donde el sombreador de salida (o fase de canalización) escribe datos en ubicaciones específicas de la matriz de registro y el sombreador de entrada debe leer desde las mismas ubicaciones. La API usa firmas de sombreador para enlazar las salidas del sombreador con entradas sin la sobrecarga de resolución semántica.
 
-En Direct3D 10, las firmas de entrada se generan a partir de una declaración de entrada de sombreador y la firma de salida se genera a partir de una declaración de salida de sombreador. Se dice que una firma de entrada es compatible con una firma de salida cuando la firma de salida es un subconjunto estricto (tipo de argumento y coincidencia de orden) de la firma de entrada. La manera más sencilla de lograrlo es vincular las entradas y salidas de sombreador correspondientes con el mismo tipo de estructura.
+En Direct3D 10, las firmas de entrada se generan a partir de una declaración de entrada de sombreador y la firma de salida se genera a partir de una declaración de salida de sombreador. Se dice que una firma de entrada es compatible con una firma de salida cuando la firma de salida es un subconjunto estricto (tipo de argumento y coincidencia de orden) de la firma de entrada. La manera más sencilla de lograrlo es vincular las entradas y salidas del sombreador correspondientes por el mismo tipo de estructura.
 
 Este es un ejemplo de firmas compatibles.
 
@@ -44,7 +44,7 @@ Struct PSInWorks
 
 
 
-A continuación se muestra un ejemplo de firmas incompatibles; el orden de los parámetros en la signatura de entrada no coincide con el orden de la firma de salida.
+Este es un ejemplo de firmas incompatibles; el orden de los parámetros de la firma de entrada no coincide con el orden de la firma de salida.
 
 
 ```
@@ -66,7 +66,7 @@ Struct PSInFails
 
 
 
-PSInWorks es un subconjunto compatible de VSOut (las dos primeras entradas coinciden con el tipo y el orden con las dos primeras entradas en VSOut). Sin embargo, PSInFails es incompatible porque el orden no coincide con VSOut.
+PSInWorks es un subconjunto compatible de VSOut (las dos primeras entradas coinciden con el tipo y el orden con las dos primeras entradas de VSOut). Sin embargo, PSInFails no es compatible porque la ordenación no coincide con VSOut.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -75,9 +75,9 @@ PSInWorks es un subconjunto compatible de VSOut (las dos primeras entradas coinc
 [Funciones](dx-graphics-hlsl-functions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: if_comp-PS
-description: Iniciar un IF bool-PS... Else-PS... bloque endif-PS, con una condición basada en valores que podrían calcularse en un sombreador. Esta instrucción se usa para omitir un bloque de código, en función de una condición.
+title: 'if_comp: ps'
+description: 'Iniciar un if bool - ps... else: ps... endif: bloque ps, con una condición basada en valores que se podrían calcular en un sombreador. Esta instrucción se usa para omitir un bloque de código, en función de una condición.'
 ms.assetid: a641e347-df28-4a3f-a461-0b6aee758e59
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,59 +9,59 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: db30983c83bc7d66e06befd07f4eb1dcdc9b21ea
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 5d0a2271dbd67902a039ddadf585611ed98fdb115f468c3962baa8cb46f48508
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103784888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119788975"
 ---
-# <a name="if_comp---ps"></a>Si \_ COMP-PS
+# <a name="if_comp---ps"></a>if \_ comp : ps
 
-Iniciar un [If bool-PS](if-bool---ps.md)... [else-PS](else---ps.md)... bloque [endif-PS](endif---ps.md) , con una condición basada en valores que podrían calcularse en un sombreador. Esta instrucción se usa para omitir un bloque de código, en función de una condición.
+Iniciar un [if bool - ps](if-bool---ps.md)... [else - ps](else---ps.md)... [endif: bloque ps,](endif---ps.md) con una condición basada en valores que se podrían calcular en un sombreador. Esta instrucción se usa para omitir un bloque de código, en función de una condición.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| If \_ COMP src0, SRC1 |
+| if \_ comp src0, src1 |
 |---------------------|
 
 
 
- 
+ 
 
 Donde:
 
--   \_Comp es una comparación entre los dos registros de origen. Puede tener uno de los valores siguientes: 
+-   \_comp es una comparación entre los dos registros de origen. Puede tener uno de los valores siguientes: 
 
-    | Sintaxis | De comparación            |
+    | Syntax | De comparación            |
     |--------|-----------------------|
-    | \_bruto   | Mayor que          |
-    | \_plazo   | Menor que             |
-    | \_GE   | Mayor o igual que |
-    | \_cuarto   | Menor o igual que    |
-    | \_ajustes   | Igual a              |
-    | \_&   | No es igual a          |
+    | \_Gt   | Mayor que          |
+    | \_Lt   | Menor que             |
+    | \_Ge   | Mayor o igual que |
+    | \_le   | Menor o igual que    |
+    | \_Eq   | Igual a              |
+    | \_Ne   | No es igual a          |
 
     
 
-     
+     
 
--   src0 es un registro de origen. La replicación de swizzle es necesaria para seleccionar un componente.
--   SRC1 es un registro de origen. La replicación de swizzle es necesaria para seleccionar un componente.
+-   src0 es un registro de origen. Para seleccionar un componente, es necesario replicar sw swzzle.
+-   src1 es un registro de origen. Para seleccionar un componente, es necesario replicar sw swzzle.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
-| If \_ COMP              |      |      |      |      |      | x    | x     | x    | x     |
+| if \_ comp              |      |      |      |      |      | x    | x     | x    | x     |
 
 
 
- 
+ 
 
 Esta instrucción se usa para omitir un bloque de código, en función de una condición.
 
@@ -73,18 +73,18 @@ if (src0 comparison src1)
 
 
 
-Tenga cuidado al usar los modos de comparación es igual a y no es igual a los números de punto flotante. Dado que el redondeo se produce durante los cálculos de punto flotante, la comparación se puede realizar con un valor de épsilon (número pequeño distinto de cero) para evitar errores.
+Tenga cuidado al usar los modos de comparación iguales y no iguales en números de punto flotante. Dado que el redondeo se produce durante los cálculos de punto flotante, la comparación se puede realizar con un valor epsilon (número pequeño distinto de cero) para evitar errores.
 
 Entre las restricciones se incluyen:
 
--   If \_ comp... [else-PS](else---ps.md)... los bloques [endif-PS](endif---ps.md) (junto con los bloques [If](if-bool---ps.md) de predicado) se pueden anidar hasta 24 capas de profundidad.
--   los registros de src0 y SRC1 requieren un swizzle de replicación.
--   Si los \_ bloques de COMP deben terminar con una instrucción [else-vs](else---vs.md) o [endif-vs](endif---vs.md) .
--   If \_ comp... [else-PS](else---ps.md)... los bloques [endif-PS](endif---ps.md) no pueden ocupar un bloque de bucle. El \_ bloque if COMP debe estar completamente dentro o fuera del bloque de bucle.
+-   si \_ comp... [else - ps](else---ps.md)... [endif: los bloques ps](endif---ps.md) (junto con el predicado [if blocks)](if-bool---ps.md) se pueden anidar hasta 24 capas de profundidad.
+-   Los registros src0 y src1 requieren un swzzle de replicación.
+-   si \_ los bloques comp deben terminar con [una instrucción else - vs](else---vs.md) o [endif - vs.](endif---vs.md)
+-   si \_ comp... [else - ps](else---ps.md)... [endif: los bloques ps](endif---ps.md) no pueden bloquear un bloque de bucle. El bloque \_ if comp debe estar completamente dentro o fuera del bloque de bucle.
 
 ## <a name="example"></a>Ejemplo
 
-Esta instrucción proporciona el control de flujo dinámico condicional.
+Esta instrucción proporciona control de flujo dinámico condicional.
 
 
 ```
@@ -106,9 +106,9 @@ endif
 [Instrucciones del sombreador de píxeles](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

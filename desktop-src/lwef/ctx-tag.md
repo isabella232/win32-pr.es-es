@@ -1,39 +1,39 @@
 ---
-title: Etiqueta CTX
-description: Etiqueta CTX
+title: Etiqueta Ctx
+description: Etiqueta Ctx
 ms.assetid: 96ceaa98-869d-4c51-a419-882cc9d40ae2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f16beae0fd4ccc062969d9aafb4d8747e4c5afe9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7071994e741cb7dfd1147f163f0d7ef6299ec0dcb9d568ad068251d5a9436809
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075962"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119726114"
 ---
-# <a name="ctx-tag"></a>Etiqueta CTX
+# <a name="ctx-tag"></a>Etiqueta Ctx
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 <dl> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Denominación**
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Descripción**
 </dt> <dd>
 
 Establece el contexto del texto de salida.
 
 </dd> <dt>
 
-<span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintáctica**
+<span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxis**
 </dt> <dd>
 
-\\**CTX** = *cadena*\\
+\\**Ctx** = *string*\\
 
 
 
 | Parte     | Descripción                                                                                                                                                                                                                                                                                      |
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *string* | Cadena que especifica el contexto del texto que se muestra a continuación, que determina cómo se pronuncian los símbolos o las abreviaturas.<br/> **"Dirección"**    Direcciones o números de teléfono.<br/> **"Correo electrónico"**    Correo electrónico.<br/> Se desconoce el contexto **"desconocido"** (predeterminado).<br/> |
+| *string* | Cadena que especifica el contexto del texto siguiente, que determina cómo se pronuncian los símbolos o las abreviaturas.<br/> **"Dirección"**    Direcciones o números de teléfono.<br/> **"Correo electrónico"**    Correo electrónico.<br/> Se desconoce el contexto **"Desconocido"** (valor predeterminado).<br/> |
 
 
 
@@ -41,9 +41,9 @@ Establece el contexto del texto de salida.
 
 </dd> </dl>
 
-### <a name="remarks"></a>Observaciones
+### <a name="remarks"></a>Comentarios
 
-Esta etiqueta solo se admite para la salida generada por TTS. El intervalo de valores para el parámetro puede variar en función del motor TTS instalado.
+Esta etiqueta solo se admite para la salida generada por TTS. El intervalo de valores del parámetro puede variar en función del motor de TTS instalado.
 
  
 

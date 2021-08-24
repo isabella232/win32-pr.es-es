@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_TABLECREATE. szTemplateTableName'
-title: Propiedad JET_TABLECREATE. szTemplateTableName
+description: 'Más información sobre: JET_TABLECREATE.szTemplateTableName'
+title: JET_TABLECREATE.szTemplateTableName, propiedad
 TOCTitle: 'szTemplateTableName property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_TABLECREATE.szTemplateTableName
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_tablecreate.sztemplatetablename(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f3e78e1493ee14168e53366d320bd2acdebb337d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b3820c514851569a5f846256f513a06d2ecf9610da02b3017c78d2c162560dad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119729055"
 ---
-# <a name="jet_tablecreatesztemplatetablename-property"></a>Propiedad JET_TABLECREATE. szTemplateTableName
+# <a name="jet_tablecreatesztemplatetablename-property"></a>JET_TABLECREATE.szTemplateTableName, propiedad
 
 Obtiene o establece el nombre de la tabla de la que se va a heredar el DDL base.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public string szTemplateTableName { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. String](/dotnet/api/system.string)  
+Tipo: [System.String](/dotnet/api/system.string)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_TABLECREATE (clase)](./jet-tablecreate-class.md)
+[JET_TABLECREATE clase](./jet-tablecreate-class.md)
 
-[Miembros de JET_TABLECREATE](./jet-tablecreate-members.md)
+[JET_TABLECREATE miembros](./jet-tablecreate-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

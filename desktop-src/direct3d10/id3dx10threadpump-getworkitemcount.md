@@ -1,7 +1,7 @@
 ---
-description: Obtiene el número de elementos de trabajo actualmente en el bombeo de subprocesos.
+description: Obtenga el número de elementos de trabajo que hay actualmente en la bomba de subprocesos.
 ms.assetid: 0a3d5a7e-6fa5-4580-8912-c142eb99cef5
-title: 'ID3DX10ThreadPump:: GetWorkItemCount (método) (D3DX10. h)'
+title: Método ID3DX10ThreadPump::GetWorkItemCount (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 71c7bf8f73b79982b933ee5fa0481dc361685682
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e3980d2fc0e1756d1c3dc322bc053ca4d041efe7c7942a14acb8465553aff136
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280513"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634205"
 ---
-# <a name="id3dx10threadpumpgetworkitemcount-method"></a>ID3DX10ThreadPump:: GetWorkItemCount (método)
+# <a name="id3dx10threadpumpgetworkitemcount-method"></a>Método ID3DX10ThreadPump::GetWorkItemCount
 
-Obtiene el número de elementos de trabajo actualmente en el bombeo de subprocesos.
+Obtenga el número de elementos de trabajo que hay actualmente en la bomba de subprocesos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,7 +40,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Número de elementos de trabajo actualmente en cola en el bombeo de subprocesos.
 
@@ -50,8 +50,8 @@ Número de elementos de trabajo actualmente en cola en el bombeo de subprocesos.
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -62,7 +62,7 @@ Número de elementos de trabajo actualmente en cola en el bombeo de subprocesos.
 [ID3DX10ThreadPump](id3dx10threadpump.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

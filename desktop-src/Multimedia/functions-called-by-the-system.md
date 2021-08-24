@@ -3,28 +3,28 @@ title: Funciones llamadas por el sistema
 description: Funciones llamadas por el sistema
 ms.assetid: 006ac524-d456-44e9-957b-42a85dc92519
 keywords:
-- audio multimedia, funciones ACM
-- audio, funciones ACM
-- Administrador de compresión de audio (ACM), funciones
-- ACM (Administrador de compresión de audio), funciones
-- Funciones ACM
+- audio multimedia, funciones de ACM
+- audio, funciones de ACM
+- administrador de compresión de audio (ACM), funciones
+- ACM (administrador de compresión de audio), funciones
+- Funciones de ACM
 - funciones de devolución de llamada
 - Administrador de compresión de audio (ACM), funciones de devolución de llamada
-- ACM (Administrador de compresión de audio), funciones de devolución de llamada
+- ACM (administrador de compresión de audio), funciones de devolución de llamada
 - procedimientos de enlace
-- procedimientos del controlador
+- procedimientos de controlador
 - Administrador de compresión de audio (ACM), procedimientos de enlace
-- ACM (Administrador de compresión de audio), procedimientos de enlace
+- ACM (administrador de compresión de audio), procedimientos de enlace
 - Administrador de compresión de audio (ACM), procedimientos de controlador
-- ACM (Administrador de compresión de audio), procedimientos de controlador
+- ACM (administrador de compresión de audio), procedimientos de controlador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f1324ea168892d54f21754658607476c35075910
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 11b8a8c3615ae0124d4701f8d37d332e652d8390ef165cec8dc57d881cd328fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105651362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119678625"
 ---
 # <a name="functions-called-by-the-system"></a>Funciones llamadas por el sistema
 
@@ -39,23 +39,23 @@ Las funciones de devolución de llamada tienen los nombres siguientes:
 -   [**acmFormatTagEnumCallback**](/windows/desktop/api/Msacm/nc-msacm-acmformattagenumcb)
 -   [**acmStreamConvertCallback**](/previous-versions//dd742925(v=vs.85))
 
-La mayoría de las funciones de enumeración en ACM usan funciones de devolución de llamada. Por ejemplo, al llamar a una función de enumeración, el ACM enumera los elementos mediante una llamada repetida a la aplicación a través de la función de devolución de llamada.
+La mayoría de las funciones de enumeración del ACM usan funciones de devolución de llamada. Por ejemplo, cuando se llama a una función de enumeración, el ACM enumera los elementos llamando repetidamente a la aplicación a través de la función de devolución de llamada.
 
-No se puede llamar a algunas funciones desde estas funciones de devolución de llamada. Funciones a las que no se puede llamar manipular estructuras ACM internas usadas por las funciones de enumeración. No se debe llamar a las siguientes funciones desde una función de devolución de llamada:
+No se puede llamar a algunas funciones desde dentro de estas funciones de devolución de llamada. Las funciones a las que no se puede llamar manipulan estructuras internas de ACM que usan las funciones de enumeración. No se debe llamar a las siguientes funciones desde una función de devolución de llamada:
 
 -   [**acmDriverAdd**](/windows/desktop/api/Msacm/nf-msacm-acmdriveradd)
 -   [**acmDriverPriority**](/windows/desktop/api/Msacm/nf-msacm-acmdriverpriority)
 -   [**acmDriverRemove**](/windows/desktop/api/Msacm/nf-msacm-acmdriverremove)
 
-El sistema llama a las siguientes funciones para ayudar a que una aplicación controle la personalización de los cuadros de diálogo:
+El sistema llama a las funciones siguientes para ayudar a una aplicación a controlar la personalización de cuadros de diálogo:
 
 -   [**acmFilterChooseHookProc**](/windows/desktop/api/Msacm/nc-msacm-acmfilterchoosehookproc)
 -   [**acmFormatChooseHookProc**](/windows/desktop/api/Msacm/nc-msacm-acmformatchoosehookproc)
 
-La función siguiente se especifica como un prototipo que permite a una aplicación usar un códec, convertidor o filtro personalizado. Una función que se ajuste a este prototipo se puede pasar como argumento a la función [**acmDriverAdd**](/windows/desktop/api/Msacm/nf-msacm-acmdriveradd) .
+La siguiente función se especifica como un prototipo que permite a una aplicación usar un códec, convertidor o filtro personalizados. Una función que se ajuste a este prototipo se puede pasar como argumento a la [**función acmDriverAdd.**](/windows/desktop/api/Msacm/nf-msacm-acmdriveradd)
 
 -   [**acmDriverProc**](/windows/desktop/api/Msacm/nc-msacm-acmdriverproc)
 
- 
+ 
 
- 
+ 

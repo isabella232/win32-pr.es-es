@@ -1,6 +1,6 @@
 ---
-description: De forma predeterminada, a partir de los elementos del panel de control de Windows Vista no se muestran cuando Windows se ejecuta en modo seguro.
-title: Acceder al panel de control en modo seguro
+description: De forma predeterminada, a Windows vista Panel de control no se muestran los elementos cuando Windows se ejecuta en modo seguro.
+title: Acceso a la Panel de control en Caja fuerte modo de acceso
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: f37bcb0f-9417-4cc4-a57d-4f67a9ccda19
@@ -9,30 +9,30 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 0f7a401bbc22a7f8de3618f844bfe463fa3baa50
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 777a44c7fe30b0481096a1c5d62c98410277a3bc76169925aff4ae5e59e549d8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984367"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119710795"
 ---
-# <a name="accessing-the-control-panel-in-safe-mode"></a>Acceder al panel de control en modo seguro
+# <a name="accessing-the-control-panel-in-safe-mode"></a>Acceso a la Panel de control en Caja fuerte modo de acceso
 
-De forma predeterminada, a partir de los elementos del panel de control de Windows Vista no se muestran cuando Windows se ejecuta en modo seguro. Para que se pueda ver un nuevo elemento del panel de control en modo seguro, se pueden establecer los valores del registro adecuados para el tipo de elemento. Los valores se interpretan de la siguiente manera:
+De forma predeterminada, a Windows vista Panel de control no se muestran los elementos cuando Windows se ejecuta en modo seguro. Para permitir que un nuevo Panel de control elemento se vea en modo seguro, se pueden establecer los valores del Registro adecuados para el tipo de elemento. Los valores se interpretan de la siguiente manera:
 
 
 
 | Value | Significado                                                            |
 |-------|--------------------------------------------------------------------|
-| 1     | El elemento debe aparecer solo en el modo seguro mínimo.                  |
-| 2     | El elemento debe aparecer en modo seguro solo si está habilitada la red. |
+| 1     | El elemento solo debe aparecer en modo seguro mínimo.                  |
+| 2     | El elemento debe aparecer en modo seguro solo si las redes están habilitadas. |
 | 3     | El elemento siempre debe aparecer en cualquier forma de modo seguro.            |
 
 
 
  
 
-En este ejemplo se muestran las entradas necesarias para un elemento implementado como un archivo. cpl o. dll. Especifica que el elemento debe aparecer en modo seguro con funciones de red.
+En este ejemplo se muestran las entradas necesarias para un elemento implementado como .cpl o .dll archivo. Especifica que el elemento debe aparecer en modo seguro con redes.
 
 ```
 HKEY_LOCAL_MACHINE
@@ -46,7 +46,7 @@ HKEY_LOCAL_MACHINE
                         %ProgramFiles%\MyCorp\MyApp\MyCpl.cpl = [REG_DWORD] 2
 ```
 
-En este ejemplo se muestran las entradas necesarias para un elemento implementado como un archivo. exe. Especifica que el elemento debe aparecer en cualquier forma de modo seguro.
+En este ejemplo se muestran las entradas necesarias para un elemento implementado como un .exe archivo. Especifica que el elemento debe aparecer en cualquier forma de modo seguro.
 
 ```
 HKEY_CLASSES_ROOT
@@ -59,31 +59,31 @@ HKEY_CLASSES_ROOT
 
 <dl> <dt>
 
-[Elementos del panel de control](control-panel-applications.md)
+[Panel de control elementos](control-panel-applications.md)
 </dt> <dt>
 
 [Directrices de la experiencia de usuario](user-experience-guidelines.md)
 </dt> <dt>
 
-[Registrar elementos del panel de control](registering-control-panel-items.md)
+[Registro de Panel de control elementos](registering-control-panel-items.md)
 </dt> <dt>
 
-[Usar CPLApplet](using-cplapplet.md)
+[Uso de CPLApplet](using-cplapplet.md)
 </dt> <dt>
 
-[Procesamiento de mensajes del panel de control](message-processing.md)
+[Panel de control de mensajes](message-processing.md)
 </dt> <dt>
 
-[Ejecutar elementos del panel de control](executing-control-panel-items.md)
+[Ejecución de Panel de control elementos](executing-control-panel-items.md)
 </dt> <dt>
 
-[Extender elementos del panel de control del sistema](extending-system-control-panel-items.md)
+[Extender elementos de Panel de control sistema](extending-system-control-panel-items.md)
 </dt> <dt>
 
-[Asignar categorías del panel de control](assigning-control-panel-categories.md)
+[Asignación de Panel de control categorías](assigning-control-panel-categories.md)
 </dt> <dt>
 
-[Crear vínculos de tarea que se pueden buscar para un elemento del panel de control](creating-searchable-task-links.md)
+[Crear vínculos de tareas buscables para un elemento Panel de control búsqueda](creating-searchable-task-links.md)
 </dt> </dl>
 
  

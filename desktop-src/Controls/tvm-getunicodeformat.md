@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TVM_GETUNICODEFORMAT (commctrl. h)
-description: Recupera la marca del formato de caracteres Unicode para el control. Puede enviar este mensaje explícitamente o utilizar la \_ macro GetUnicodeFormat de TreeView.
+title: TVM_GETUNICODEFORMAT mensaje (Commctrl.h)
+description: Recupera la marca de formato de caracteres Unicode para el control . Puede enviar este mensaje explícitamente o usar la macro TreeView \_ GetUnicodeFormat.
 ms.assetid: d95f61b6-9ec1-4471-b24b-efe141428747
 keywords:
-- TVM_GETUNICODEFORMAT controles de mensajes de Windows
+- TVM_GETUNICODEFORMAT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 88478d30e8da98ebf2e2325d6152087a14bc066a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0f39bf926d488a8feb6a4015a531da34f88e4dbcb0452922c3f7715d0f14071e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079111"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119769215"
 ---
-# <a name="tvm_getunicodeformat-message"></a>\_Mensaje de GETUNICODEFORMAT TVM
+# <a name="tvm_getunicodeformat-message"></a>Mensaje \_ GETUNICODEFORMAT de TVM
 
-Recupera la marca del formato de caracteres Unicode para el control. Puede enviar este mensaje explícitamente o utilizar la [**macro \_ GetUnicodeFormat de TreeView**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_getunicodeformat) .
+Recupera la marca de formato de caracteres Unicode para el control . Puede enviar este mensaje explícitamente o usar la macro [**TreeView \_ GetUnicodeFormat.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_getunicodeformat)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -37,11 +37,11 @@ Recupera la marca del formato de caracteres Unicode para el control. Puede envia
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve la marca de formato Unicode para el control. Si este valor es distinto de cero, el control utiliza caracteres Unicode. Si este valor es cero, el control usa caracteres ANSI.
+Devuelve la marca de formato Unicode del control. Si este valor es distinto de cero, el control usa caracteres Unicode. Si este valor es cero, el control usa caracteres ANSI.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Vea la sección Comentarios para [**CCM \_ GETUNICODEFORMAT**](ccm-getunicodeformat.md) para obtener una descripción de este mensaje.
+Consulte los comentarios de [**CCM \_ GETUNICODEFORMAT para**](ccm-getunicodeformat.md) obtener una explicación de este mensaje.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ Vea la sección Comentarios para [**CCM \_ GETUNICODEFORMAT**](ccm-getunicodefor
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

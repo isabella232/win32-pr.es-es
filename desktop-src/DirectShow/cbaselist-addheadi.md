@@ -1,7 +1,7 @@
 ---
-description: El método AddHeadI agrega un elemento al principio de la lista.
+description: El método AddHeadI agrega un elemento al frente de la lista.
 ms.assetid: d83b3c5e-2c6d-4369-a74d-18bf19cfd34d
-title: Método CBaseList. AddHeadI (Wxlist. h)
+title: Método CBaseList.AddHeadI (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6104b6acae0f22c028f3bad050567f4da34ff0f6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4c1f22434aa2c927933c36ec496d5880ca8f3f673b314d7a8197079203757427
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670941"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119568125"
 ---
-# <a name="cbaselistaddheadi-method"></a>CBaseList. AddHeadI, método
+# <a name="cbaselistaddheadi-method"></a>Método CBaseList.AddHeadI
 
-El `AddHeadI` método agrega un elemento al principio de la lista.
+El `AddHeadI` método agrega un elemento al frente de la lista.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,11 +51,11 @@ Puntero al elemento.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de posición que indica la nueva posición del encabezado.
+Devuelve un valor POSITION que indica la nueva posición de la cabeza.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si se produce un error en el método, el valor devuelto es **null**.
+Si se produce un error en el método , el valor devuelto es **NULL.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Si se produce un error en el método, el valor devuelto es **null**.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxlist. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxlist.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Si se produce un error en el método, el valor devuelto es **null**.
 
 <dl> <dt>
 
-[**Clase CBaseList**](cbaselist.md)
+[**CBaseList (clase)**](cbaselist.md)
 </dt> </dl>
 
  

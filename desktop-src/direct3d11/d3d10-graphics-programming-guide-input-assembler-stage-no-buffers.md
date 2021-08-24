@@ -1,17 +1,17 @@
 ---
-title: Usar la fase Input-Assembler sin búferes
+title: Uso de la Input-Assembler sin búferes
 description: No es necesario crear y enlazar búferes si los sombreadores no requieren búferes. Esta sección contiene un ejemplo de sombreadores de vértices y píxeles simples que dibujan un solo triángulo.
 ms.assetid: 84d24494-f2cb-4ca1-84fd-635e20f2c9ad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a3aa4c63176d184e1e67349149bd1f4044159e1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b2bccbdb059e58efbef9e6c80eacbd9af5eb8a24045bdaab20bf540c13a9b719
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104983638"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119752545"
 ---
-# <a name="using-the-input-assembler-stage-without-buffers"></a>Usar la fase Input-Assembler sin búferes
+# <a name="using-the-input-assembler-stage-without-buffers"></a>Uso de la Input-Assembler sin búferes
 
 No es necesario crear y enlazar búferes si los sombreadores no requieren búferes. Esta sección contiene un ejemplo de sombreadores de vértices y píxeles simples que dibujan un solo triángulo.
 
@@ -91,7 +91,7 @@ PSOut PSmain(PSIn input)
 
 ## <a name="technique"></a>Técnica
 
-Una técnica es una colección de pasos de representación (debe haber al menos un paso).
+Una técnica es una colección de pases de representación (debe haber al menos un paso).
 
 
 ```
@@ -131,12 +131,12 @@ m_pD3D11Device->Draw( 3, 0 );
 
 <dl> <dt>
 
-[Introducción con la fase de Input-Assembler](d3d10-graphics-programming-guide-input-assembler-stage-getting-started.md)
+[Tareas iniciales con la fase Input-Assembler de trabajo](d3d10-graphics-programming-guide-input-assembler-stage-getting-started.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

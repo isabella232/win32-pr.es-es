@@ -1,9 +1,9 @@
 ---
 title: D3DCOLORtoUBYTE4
-description: Convierte un vector de punto flotante, 4D establecido por un D3DCOLOR en UBYTE4.
+description: Convierte un vector 4D de punto flotante establecido por D3DCOLOR en un UBYTE4.
 ms.assetid: 20a7be00-1e36-41c3-bc98-933b3faa8f35
 keywords:
-- HLSL de D3DCOLORtoUBYTE4
+- D3DCOLORtoUBYTE4 HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,27 +13,27 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c60f0934d6700ec7fbd9e6d9e6443cb6409ab15f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: cea438b8c305c7ff76b6f9795c9f2c869a0f262f70e670d2e34c5b882de7c9c5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104533459"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119789805"
 ---
 # <a name="d3dcolortoubyte4"></a>D3DCOLORtoUBYTE4
 
-Convierte un vector de punto flotante, 4D establecido por un D3DCOLOR en UBYTE4.
+Convierte un vector 4D de punto flotante establecido por D3DCOLOR en un UBYTE4.
 
 
 
-| *RET* D3DCOLORtoUBYTE4 (*x*) |
+| *ret* D3DCOLORtoUBYTE4(*x*) |
 |-----------------------------|
 
 
 
  
 
-Esta función swizzles y escala los componentes del parámetro *x* . Utilice esta función para compensar la falta de compatibilidad con UBYTE4 en algún hardware.
+Esta función desliza y escala los componentes del *parámetro x.* Use esta función para compensar la falta de compatibilidad con UBYTE4 en algún hardware.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -41,7 +41,7 @@ Esta función swizzles y escala los componentes del parámetro *x* . Utilice est
 
 | Elemento                                                   | Descripción                                              |
 |--------------------------------------------------------|----------------------------------------------------------|
-| <span id="x"></span><span id="X"></span>*x1*<br/> | \[en \] el Vector4 de punto flotante que se va a convertir.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[en \] vector4 de punto flotante que se convertirá.<br/> |
 
 
 
@@ -49,22 +49,22 @@ Esta función swizzles y escala los componentes del parámetro *x* . Utilice est
 
 ## <a name="return-value"></a>Valor devuelto
 
-Representación UBYTE4 del parámetro *x* .
+Representación UBYTE4 del *parámetro x.*
 
 ## <a name="type-description"></a>Descripción del tipo
 
 
 
-| Nombre  | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                       | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Tamaño |
+| Nombre  | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                       | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Size |
 |-------|-------------------------------------------------------------------------------------|----------------------------------------------------------------|------|
-| *x*   | [**medios**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | 4    |
-| *direcc* | [**medios**](dx-graphics-hlsl-intrinsic-functions.md) | [**integer**](/windows/desktop/WinProg/windows-data-types)                      | 4    |
+| *x*   | [**Vector**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | 4    |
+| *Ret* | [**Vector**](dx-graphics-hlsl-intrinsic-functions.md) | [**Entero**](/windows/desktop/WinProg/windows-data-types)                      | 4    |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -72,7 +72,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                       | Compatible |
 |------------------------------------------------------------------------------------|-----------|
-| Modelador [modelo 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) y modelos de sombreador más altos | sí       |
+| [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) y modelos de sombreador superiores | Sí       |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | vs \_ 1 \_ 1  |
 
 
@@ -83,7 +83,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[**Funciones intrínsecas (DirectX HLSL)**](dx-graphics-hlsl-intrinsic-functions.md)
+[**Funciones intrínsecas (HLSL de DirectX)**](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> </dl>
 
  

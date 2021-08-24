@@ -1,5 +1,5 @@
 ---
-description: Puede usar el modelo estándar de eventos intrínsecos y filtros de eventos en combinación con las \_ clases Win32 localtime o Win32 \_ UTCTime para recibir una notificación con hora.
+description: Puede usar el modelo estándar de eventos intrínsecos y filtros de eventos en combinación con las clases Win32 LocalTime o Win32 UTCTime para recibir una notificación \_ \_ con tiempo.
 ms.assetid: 89ba41e2-c9b5-4914-b8cb-13d21ff03402
 ms.tgt_platform: multiple
 title: Crear un evento de temporizador con Win32_LocalTime o Win32_UTCTime
@@ -10,26 +10,26 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 011b2270a80f6b632e832f77e8e7c528228801b1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f2dc2c3cbec2b87693920c0ed5ca113f7e6a04c9648f0ef2cc4bca9b4fa90f8d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278769"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119612415"
 ---
-# <a name="creating-a-timer-event-with-win32_localtime-or-win32_utctime"></a>Crear un evento de temporizador con Win32 \_ localtime o Win32 \_ UTCTime
+# <a name="creating-a-timer-event-with-win32_localtime-or-win32_utctime"></a>Creación de un evento de temporizador con Win32 \_ LocalTime o Win32 \_ UTCTime
 
-Puede usar el modelo estándar de eventos intrínsecos y filtros de eventos en combinación con las clases [**Win32 \_ localtime**](/previous-versions/windows/desktop/wmitimepprov/win32-localtime) o [**Win32 \_ UTCTime**](/previous-versions/windows/desktop/wmitimepprov/win32-utctime) para recibir una notificación con hora. El método intrínseco es una manera recomendada de generar eventos con tiempo, ya que es coherente con el resto del modelo de eventos de Microsoft y admite condiciones de programación complejas.
+Puede usar el modelo estándar de eventos intrínsecos y filtros de eventos en combinación con las clases [**Win32 \_ LocalTime**](/previous-versions/windows/desktop/wmitimepprov/win32-localtime) o [**Win32 \_ UTCTime**](/previous-versions/windows/desktop/wmitimepprov/win32-utctime) para recibir una notificación con tiempo. El método intrínseco es una manera recomendada de generar eventos con tiempo, ya que es coherente con el resto del modelo de eventos de Microsoft y admite condiciones de programación complejas.
 
-Las clases de [**Win32 \_ localtime**](/previous-versions/windows/desktop/wmitimepprov/win32-localtime) y [**Win32 \_ UTCTime**](/previous-versions/windows/desktop/wmitimepprov/win32-utctime) son clases Singleton en el \\ espacio de nombres root cimv2 que representan el reloj del sistema. Cuando se consulta, **Win32 \_ localtime** devuelve la hora actual en el momento de la recuperación de datos en un reloj de 24 horas con referencia local. La **clase \_ UTCTime de Win32** devuelve la hora actual con la referencia UTC.
+Las [**clases Win32 \_ LocalTime**](/previous-versions/windows/desktop/wmitimepprov/win32-localtime) y [**Win32 \_ UTCTime**](/previous-versions/windows/desktop/wmitimepprov/win32-utctime) son clases singleton en el espacio de nombres \\ raíz cimv2 que representan el reloj del sistema. Cuando se consulta, **Win32 \_ LocalTime** devuelve la hora actual en el momento de la recuperación de datos en un reloj de 24 horas con referencia local. La **clase \_ UTCTime de Win32** devuelve la hora actual con referencia UTC.
 
-**Para generar eventos Timed o repeating con Win32 \_ localtime o Win32 \_ UTCTime**
+**Para generar eventos con tiempo o repeticiones con Win32 \_ LocalTime o Win32 \_ UTCTime**
 
--   Configure un filtro de eventos de notificación intrínseco para [**Win32 \_ localtime**](/previous-versions/windows/desktop/wmitimepprov/win32-localtime) o [**Win32 \_ UTCTime**](/previous-versions/windows/desktop/wmitimepprov/win32-utctime) que solicite la notificación de una fecha y hora específicas.
+-   Configure un filtro de eventos de notificación intrínseco para [**Win32 \_ LocalTime**](/previous-versions/windows/desktop/wmitimepprov/win32-localtime) o [**Win32 \_ UTCTime**](/previous-versions/windows/desktop/wmitimepprov/win32-utctime) que solicite notificación para una fecha y hora específicas.
 
-Por ejemplo, si la hora local en horario de verano es 4 P.M. y la ubicación es GMT-8 y, a continuación, [**Win32 \_ localtime. hour**](/previous-versions/windows/desktop/wmitimepprov/win32-localtime) devuelve 16 y [**Win32 \_ UTCTime. hour**](/previous-versions/windows/desktop/wmitimepprov/win32-utctime) devuelve 23.
+Por ejemplo, si la hora local en Horario de verano es 4 p. m. y la ubicación es GMT -8, [**Win32 \_ LocalTime.Hour**](/previous-versions/windows/desktop/wmitimepprov/win32-localtime) devuelve 16 y [**Win32 \_ UTCTime.Hour**](/previous-versions/windows/desktop/wmitimepprov/win32-utctime) devuelve 23.
 
-En el ejemplo de código siguiente se describe cómo crear un filtro de eventos que señale un evento repetido cada día a medianoche.
+En el ejemplo de código siguiente se describe cómo crear un filtro de eventos que señale un evento repetido todos los días a medianoche.
 
 ``` syntax
 // Win32_LocalTime and Win32_UTCTime reside in root\cimv2 namespace. 

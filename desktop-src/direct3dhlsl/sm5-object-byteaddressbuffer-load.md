@@ -1,6 +1,6 @@
 ---
-title: 'ByteAddressBuffer:: Load (int) (función)'
-description: 'Obtiene un valor. | ByteAddressBuffer:: Load (int) (función)'
+title: Función ByteAddressBuffer::Load(int)
+description: Obtiene un valor. | Función ByteAddressBuffer::Load(int)
 ms.assetid: a63f4099-2c3b-4d37-9135-b8c63df30824
 keywords:
 - Carga de la función HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e0de7d1a8ef8a7fe3173016fe07a433a930c3d59
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 7a9854f85ebd92b9f57e4b2339f374ad8f7816ea7b9ba31e37c9404b08c14864
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104998060"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119671455"
 ---
-# <a name="byteaddressbufferloadint-function"></a>ByteAddressBuffer:: Load (int) (función)
+# <a name="byteaddressbufferloadint-function"></a>Función ByteAddressBuffer::Load(int)
 
 Obtiene un valor.
 
@@ -36,7 +36,7 @@ uint Load(
 
 <dl> <dt>
 
-*Dirección* \[ de de\]
+*address* \[ En\]
 </dt> <dd>
 
 Tipo: **int**
@@ -51,13 +51,13 @@ Tipo: **uint**
 
 Un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -69,7 +69,7 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
 <dl> <dt>
 
-[Cargar métodos](byteaddressbuffer-load.md)
+[Métodos de carga](byteaddressbuffer-load.md)
 </dt> <dt>
 
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)

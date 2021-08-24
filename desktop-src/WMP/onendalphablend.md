@@ -1,9 +1,9 @@
 ---
-title: onendalphablend
-description: El controlador de eventos onendalphablend controla un evento que se produce cuando un elemento completa una operación alphaBlendTo.
+title: oneefphablend
+description: El controlador de eventos onephphablend controla un evento que se produce cuando un elemento completa una operación alphaBlendTo.
 ms.assetid: 3d075ce5-3e95-4a00-bc77-068b88d6c54e
 keywords:
-- onendalphablend Windows Media Player
+- oneefphablend Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 81780d8a59d386513b97d137d43eb170c93034f1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d77f6a488546760f61fb04d57f01fe5ee3a74a23b8b8d975b791ae22a5e2304a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699787"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647215"
 ---
-# <a name="onendalphablend"></a>onendalphablend
+# <a name="onendalphablend"></a>oneefphablend
 
-El controlador de eventos **onendalphablend** controla un evento que se produce cuando un elemento completa una operación alphaBlendTo.
+El **controlador de eventos onephphablend** controla un evento que se produce cuando un elemento completa una operación alphaBlendTo.
 
 ``` syntax
 onendalphablend
@@ -32,9 +32,9 @@ onendalphablend
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
@@ -42,7 +42,7 @@ onendalphablend
 
 <dl> <dt>
 
-[**Controladores de eventos de ambiente**](ambient-event-handlers.md)
+[**Controladores de eventos ambiente**](ambient-event-handlers.md)
 </dt> <dt>
 
 [**AmbientAttributes.alphaBlendTo**](ambientattributes-alphablendto.md)

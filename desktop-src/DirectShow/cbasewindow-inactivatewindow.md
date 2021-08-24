@@ -1,7 +1,7 @@
 ---
-description: El método InactivateWindow desactiva la ventana. En la clase base, este método oculta la ventana.
+description: El método InactivateWindow inactiva la ventana. En la clase base, este método oculta la ventana.
 ms.assetid: b575d4fd-dee1-4ae5-abb4-e92ae361e82a
-title: Método CBaseWindow. InactivateWindow (Winutil. h)
+title: Método CBaseWindow.InactivateWindow (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d1c5e925a3d9b510918636a221d5ad6e1b7da736
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3cf175a55ab5739b0fa171fe4c9553d3691be82d71b38fd5eb480d6e28043440
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679564"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119567465"
 ---
-# <a name="cbasewindowinactivatewindow-method"></a>CBaseWindow. InactivateWindow, método
+# <a name="cbasewindowinactivatewindow-method"></a>Método CBaseWindow.InactivateWindow
 
-El `InactivateWindow` método desactiva la ventana. En la clase base, este método oculta la ventana.
+El `InactivateWindow` método inactiva la ventana. En la clase base, este método oculta la ventana.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,14 +42,14 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores **HRESULT** que se muestran en la tabla siguiente.
+Devuelve uno de los **valores HRESULT** que se muestran en la tabla siguiente.
 
 
 
 | Código devuelto                                                                             | Descripción                            |
 |-----------------------------------------------------------------------------------------|----------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>    | Correcto.<br/>                    |
-| <dl> <dt>**S \_ false**</dt> </dl> | La ventana ya está inactiva.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>    | Correcto.<br/>                    |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | La ventana ya está inactiva.<br/> |
 
 
 
@@ -61,8 +61,8 @@ Devuelve uno de los valores **HRESULT** que se muestran en la tabla siguiente.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -70,7 +70,7 @@ Devuelve uno de los valores **HRESULT** que se muestran en la tabla siguiente.
 
 <dl> <dt>
 
-[**Clase CBaseWindow**](cbasewindow.md)
+[**CBaseWindow (clase)**](cbasewindow.md)
 </dt> </dl>
 
  

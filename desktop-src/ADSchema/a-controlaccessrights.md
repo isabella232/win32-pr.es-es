@@ -1,11 +1,11 @@
 ---
-title: Atributo control-Access-Rights
-description: Lo utiliza la seguridad de DS para determinar qué usuarios pueden realizar operaciones específicas en el objeto host.
+title: Atributo Control-Access-Rights
+description: Usado por DS Security para determinar qué usuarios pueden realizar operaciones específicas en el objeto host.
 ms.assetid: 5e717160-519c-4e5a-b18f-05ee767a66a3
 ms.tgt_platform: multiple
 keywords:
-- Atributo control-Access-Rights AD Schema
-- controlAccessRights esquema de AD de atributos
+- Esquema de AD del atributo Control-Access-Rights
+- ControlAccessRights attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e3ee9075cfaf4c5bbfbf17e8e2cfef6166be032
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ce45f41d97c202b0836ff3537357b1d822a330210886d87bd0de1e8f0e104923
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104494098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119706835"
 ---
-# <a name="control-access-rights-attribute"></a>Atributo control-Access-Rights
+# <a name="control-access-rights-attribute"></a>Atributo Control-Access-Rights
 
-Lo utiliza la seguridad de DS para determinar qué usuarios pueden realizar operaciones específicas en el objeto host.
+Usado por DS Security para determinar qué usuarios pueden realizar operaciones específicas en el objeto host.
 
 
 
 | Entrada | Value |
 |-------------------|-------------------------------------------------------|
-| CN                | Derechos de acceso de control                                 |
-| Nombre para mostrar de LDAP | controlAccessRights                                   |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| CN                | Control-Access-Rights                                 |
+| Ldap-Display-Name | controlAccessRights                                   |
+| Size              | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.200                                |
-| System-ID-GUID    | 6da8a4fc-0e52-11d0-a286-00aa003049e2                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 6da8a4fc-0e52-11d0-a286-00aa003049e2                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -55,18 +55,18 @@ Lo utiliza la seguridad de DS para determinar qué usuarios pueden realizar oper
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                 |
+| Id. de vínculo                | \-                                                                                                                 |
 | MAPI-Id                | \-                                                                                                                 |
-| System-Only            | False                                                                                                              |
-| Tiene un único valor       | False                                                                                                              |
-| Está indexado             | False                                                                                                              |
-| En el catálogo global      | False                                                                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                       |
+| System-Only            | Falso                                                                                                              |
+| Es de un solo valor       | Falso                                                                                                              |
+| Está indexado             | Falso                                                                                                              |
+| En el catálogo global      | Falso                                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                       |
 | Range-Lower            | 16                                                                                                                 |
 | Range-Upper            | 16                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                         |
-| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Lo utiliza la seguridad de DS para determinar qué usuarios pueden realizar oper
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                 |
+| Id. de vínculo                | \-                                                                                                                 |
 | MAPI-Id                | \-                                                                                                                 |
-| System-Only            | False                                                                                                              |
-| Tiene un único valor       | False                                                                                                              |
-| Está indexado             | False                                                                                                              |
-| En el catálogo global      | False                                                                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                       |
+| System-Only            | Falso                                                                                                              |
+| Es de un solo valor       | Falso                                                                                                              |
+| Está indexado             | Falso                                                                                                              |
+| En el catálogo global      | Falso                                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                       |
 | Range-Lower            | 16                                                                                                                 |
 | Range-Upper            | 16                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                         |
-| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Lo utiliza la seguridad de DS para determinar qué usuarios pueden realizar oper
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                 |
+| Id. de vínculo                | \-                                                                                                                 |
 | MAPI-Id                | \-                                                                                                                 |
-| System-Only            | False                                                                                                              |
-| Tiene un único valor       | False                                                                                                              |
-| Está indexado             | False                                                                                                              |
-| En el catálogo global      | False                                                                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                       |
+| System-Only            | Falso                                                                                                              |
+| Es de un solo valor       | Falso                                                                                                              |
+| Está indexado             | Falso                                                                                                              |
+| En el catálogo global      | Falso                                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                       |
 | Range-Lower            | 16                                                                                                                 |
 | Range-Upper            | 16                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                         |
-| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Lo utiliza la seguridad de DS para determinar qué usuarios pueden realizar oper
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                 |
+| Id. de vínculo                | \-                                                                                                                 |
 | MAPI-Id                | \-                                                                                                                 |
-| System-Only            | False                                                                                                              |
-| Tiene un único valor       | False                                                                                                              |
-| Está indexado             | False                                                                                                              |
-| En el catálogo global      | False                                                                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                       |
+| System-Only            | Falso                                                                                                              |
+| Es de un solo valor       | Falso                                                                                                              |
+| Está indexado             | Falso                                                                                                              |
+| En el catálogo global      | Falso                                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                       |
 | Range-Lower            | 16                                                                                                                 |
 | Range-Upper            | 16                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                         |
-| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Lo utiliza la seguridad de DS para determinar qué usuarios pueden realizar oper
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                 |
+| Id. de vínculo                | \-                                                                                                                 |
 | MAPI-Id                | \-                                                                                                                 |
-| System-Only            | False                                                                                                              |
-| Tiene un único valor       | False                                                                                                              |
-| Está indexado             | False                                                                                                              |
-| En el catálogo global      | False                                                                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                       |
+| System-Only            | Falso                                                                                                              |
+| Es de un solo valor       | Falso                                                                                                              |
+| Está indexado             | Falso                                                                                                              |
+| En el catálogo global      | Falso                                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                       |
 | Range-Lower            | 16                                                                                                                 |
 | Range-Upper            | 16                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                         |
-| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Lo utiliza la seguridad de DS para determinar qué usuarios pueden realizar oper
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                 |
+| Id. de vínculo                | \-                                                                                                                 |
 | MAPI-Id                | \-                                                                                                                 |
-| System-Only            | False                                                                                                              |
-| Tiene un único valor       | False                                                                                                              |
-| Está indexado             | False                                                                                                              |
-| En el catálogo global      | False                                                                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                       |
+| System-Only            | Falso                                                                                                              |
+| Es de un solo valor       | Falso                                                                                                              |
+| Está indexado             | Falso                                                                                                              |
+| En el catálogo global      | Falso                                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                       |
 | Range-Lower            | 16                                                                                                                 |
 | Range-Upper            | 16                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                         |
-| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Usuario**](c-user.md)<br/> |
+| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 

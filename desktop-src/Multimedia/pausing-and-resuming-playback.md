@@ -3,24 +3,24 @@ title: Pausar y reanudar la reproducción
 description: Pausar y reanudar la reproducción
 ms.assetid: f5a7ef22-993c-4aab-bab0-2700289da7a7
 keywords:
-- MCIWndPause (macro)
-- MCIWndResume (macro)
+- Macro MCIWndPause
+- Macro MCIWndResume
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c1876417b821a57f7ebbac0cd35bec184cc9d2da
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ce70a95000cda6fc471967e5075b16fe7bad837c71eed4e6216ddeaddddc4508
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994118"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119805975"
 ---
 # <a name="pausing-and-resuming-playback"></a>Pausar y reanudar la reproducción
 
-Puede interrumpir la reproducción de un dispositivo o un archivo asociado a una ventana de MCIWnd mediante la macro [**MCIWndPause**](/windows/desktop/api/Vfw/nf-vfw-mciwndpause) . Después, puede reiniciar la reproducción mediante la macro [**MCIWndResume**](/windows/desktop/api/Vfw/nf-vfw-mciwndresume) . Si el dispositivo no admite reanudación o si se produce un error, puede usar la macro [**MCIWndPlay**](/windows/desktop/api/Vfw/nf-vfw-mciwndplay) para reiniciar la reproducción.
+Puede interrumpir la reproducción de un dispositivo o archivo asociado a una ventana de MCIWnd mediante la macro [**MCIWndPause.**](/windows/desktop/api/Vfw/nf-vfw-mciwndpause) A continuación, puede reiniciar la reproducción mediante la macro [**MCIWndResume.**](/windows/desktop/api/Vfw/nf-vfw-mciwndresume) Si el dispositivo no admite la reanudación o si se produce un error, puede usar la macro [**MCIWndPlay**](/windows/desktop/api/Vfw/nf-vfw-mciwndplay) para reiniciar la reproducción.
 
-En el ejemplo siguiente se crea una ventana de MCIWnd y se reproduce un archivo AVI. Los comandos de menú pausar y reanudar están disponibles para que el usuario interrumpa y reinicie la reproducción.
+En el ejemplo siguiente se crea una ventana MCIWnd y se reproduce un archivo AVI. Los comandos de menú Pausar y reanudar están disponibles para que el usuario interrumpa y reinicie la reproducción.
 
-Los estilos de ventana de MCIWnd se cambian temporalmente mediante la macro [**MCIWndChangeStyles**](/windows/desktop/api/Vfw/nf-vfw-mciwndchangestyles) para impedir que se muestre un cuadro de diálogo de error de MCI si [**MCIWndResume**](/windows/desktop/api/Vfw/nf-vfw-mciwndresume) produce un error.
+Los estilos de ventana de MCIWnd se cambian temporalmente mediante la macro [**MCIWndChangeStyles**](/windows/desktop/api/Vfw/nf-vfw-mciwndchangestyles) para impedir que se muestre un cuadro de diálogo de error de MCI si se produce un error en [**MCIWndResume.**](/windows/desktop/api/Vfw/nf-vfw-mciwndresume)
 
 
 ```C++
@@ -69,9 +69,9 @@ case WM_COMMAND:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

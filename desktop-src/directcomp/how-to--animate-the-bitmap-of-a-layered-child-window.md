@@ -1,24 +1,24 @@
 ---
-title: Cómo animar el mapa de bits de una ventana secundaria superpuesta
-description: En este tema se describe cómo crear y animar un elemento visual que utiliza el mapa de bits de una ventana secundaria superpuesta como contenido del elemento visual.
+title: Cómo animar el mapa de bits de una ventana secundaria en capas
+description: En este tema se describe cómo crear y animar un objeto visual que usa el mapa de bits de una ventana secundaria en capas como contenido del objeto visual.
 ms.assetid: 8912CCF9-C343-45CB-AB31-55D26C118AF2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 038ae3d32fd49a8f795a35f35c6c87889e4c9406
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: b882d1be2642f341e74a193605b217a9b7e2d0cc295370c7a5ec8bee4a844f03
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104420736"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119670975"
 ---
-# <a name="how-to-animate-the-bitmap-of-a-layered-child-window"></a>Cómo animar el mapa de bits de una ventana secundaria superpuesta
+# <a name="how-to-animate-the-bitmap-of-a-layered-child-window"></a>Cómo animar el mapa de bits de una ventana secundaria en capas
 
 > [!NOTE]
-> En el caso de las aplicaciones de Windows 10, se recomienda usar las API de Windows. UI. Composition en lugar de DirectComposition. Para obtener más información, consulte [modernice su aplicación de escritorio con el nivel de objetos visuales](/windows/uwp/composition/visual-layer-in-desktop-apps).
+> Para las aplicaciones Windows 10, se recomienda usar Windows.UI.Composition API en lugar de DirectComposition. Para obtener más información, [consulte Modernización de la aplicación de escritorio mediante la capa visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
 
-En este tema se describe cómo crear y animar un elemento visual que utiliza el mapa de bits de una ventana secundaria superpuesta como contenido del elemento visual. En el ejemplo que se describe en este tema se usa una transformación de escala animada para "aumentar" el mapa de bits de una ventana secundaria desde el tamaño de Thumb hasta el tamaño completo. Para obtener más información sobre las ventanas superpuestas, vea los [mapas de bits](bitmap-surfaces.md)de las ventanas.
+En este tema se describe cómo crear y animar un objeto visual que usa el mapa de bits de una ventana secundaria en capas como contenido del objeto visual. En el ejemplo descrito en este tema se usa una transformación de escala animada para "aumentar" el mapa de bits de una ventana secundaria de tamaño de posición a tamaño completo. Para obtener más información sobre las ventanas en capas, vea [Mapas de bits de ventana](bitmap-surfaces.md).
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
@@ -26,19 +26,19 @@ En este tema se describe cómo crear y animar un elemento visual que utiliza el 
 -   [Gráficos de Direct3D 11](/windows/desktop/direct3d11/atoc-dx-graphics-direct3d-11)
 -   [Infraestructura de gráficos de DirectX (DXGI)](/windows/desktop/direct3ddxgi/dx-graphics-dxgi)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
 -   Microsoft Win32
 -   Modelo de objetos componentes (COM)
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="step-1-create-a-layered-child-window"></a>Paso 1: crear una ventana secundaria superpuesta
+### <a name="step-1-create-a-layered-child-window"></a>Paso 1: Crear una ventana secundaria en capas
 
-Use los pasos siguientes para crear una ventana secundaria superpuesta.
+Siga estos pasos para crear una ventana secundaria en capas.
 
-1.  Registre la clase de ventana secundaria y cree una ventana secundaria que tenga el estilo de [**WS- \_ \_ Layer**](/windows/desktop/winmsg/extended-window-styles) . En el ejemplo siguiente, `m_dpiX` `m_dpiY` especifique la resolución de pantalla en píxeles por pulgada lógica y `m_hwndMain` es el identificador de la ventana de la aplicación principal.
+1.  Registre la clase de ventana secundaria y cree una ventana secundaria que tenga el [**estilo WS \_ EX \_ LAYERED.**](/windows/desktop/winmsg/extended-window-styles) En el ejemplo siguiente, especifique la resolución de pantalla en píxeles por pulgada lógica y es el `m_dpiX` identificador de la ventana principal de la `m_dpiY` `m_hwndMain` aplicación.
 ```C++
     HWND m_hwndLayeredChild;
 
@@ -82,7 +82,7 @@ HRESULT hr = S_OK;
 
     
 
-2.  Llame a la función [**SetLayeredWindowAttributes**](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes) para establecer la clave de color de transparencia y la opacidad de la ventana secundaria superpuesta. El siguiente código establece la clave de color de transparencia en cero y la opacidad en 255 (opaca).
+2.  Llame a [**la función SetLayeredWindowAttributes**](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes) para establecer la clave de color de transparencia y la opacidad de la ventana secundaria en capas. El código siguiente establece la clave de color de transparencia en cero y la opacidad en 255 (opaca).
 
 ```C++
     if (!SetLayeredWindowAttributes(m_hwndLayeredChild, 0, 255, LWA_ALPHA))
@@ -93,22 +93,22 @@ HRESULT hr = S_OK;
 
     
 
-3.  Representar cierto contenido en la ventana secundaria.
+3.  Represente algún contenido en la ventana secundaria.
 
-### <a name="step-2-initialize-directcomposition-objects"></a>Paso 2: inicializar objetos DirectComposition
+### <a name="step-2-initialize-directcomposition-objects"></a>Paso 2: Inicializar objetos DirectComposition
 
-Cree el objeto de dispositivo y el objeto de destino de composición. Para obtener más información, vea [cómo inicializar DirectComposition](initialize-directcomposition.md).
+Cree el objeto de dispositivo y el objeto de destino de composición. Para obtener más información, [vea Cómo inicializar DirectComposition](initialize-directcomposition.md).
 
-### <a name="step-3-create-a-visual-object-and-set-the-layered-child-windows-bitmap-as-the-content-property"></a>Paso 3: crear un objeto visual y establecer el mapa de bits de la ventana secundaria con capas como la propiedad de contenido
+### <a name="step-3-create-a-visual-object-and-set-the-layered-child-windows-bitmap-as-the-content-property"></a>Paso 3: Crear un objeto visual y establecer el mapa de bits de la ventana secundaria en capas como la propiedad content
 
-Use los pasos siguientes para crear un elemento visual, establezca su propiedad de contenido para usar el mapa de bits de la ventana secundaria superpuesta y, a continuación, agregue el elemento visual al árbol visual.
+Siga estos pasos para crear un objeto visual, establezca su propiedad de contenido para usar el mapa de bits de la ventana secundaria en capas y, a continuación, agregue el objeto visual al árbol visual.
 
-1.  Llame a [**IDCompositionDevice:: CreateVisual**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createvisual) para crear un objeto visual.
-2.  Cree una superficie DirectComposition de Microsoft para la ventana secundaria superpuesta pasando el identificador de la ventana secundaria a la función [**CreateSurfaceFromHwnd**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createsurfacefromhwnd) .
-3.  Llame al método [**IDCompositionVisual:: SetContent**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-setcontent) del objeto visual para establecer la nueva superficie como el contenido visual de la ventana secundaria superpuesta.
-4.  Agregue el objeto visual al árbol visual. Para agregar el visual a la raíz del árbol, llame al método [**IDCompositionTarget:: SetRoot**](/windows/win32/api/dcomp/nf-dcomp-idcompositiontarget-setroot) . Para agregar el objeto visual como un elemento secundario de otro objeto visual, use el método [**IDCompositionVisual:: AddVisual**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-addvisual) del objeto visual primario.
+1.  Llame a [**IDCompositionDevice::CreateVisual**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createvisual) para crear un objeto visual.
+2.  Cree una superficie de Microsoft DirectComposition para la ventana secundaria superada pasando el identificador de la ventana secundaria a la [**función CreateSurfaceFromHwnd.**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createsurfacefromhwnd)
+3.  Llame al método [**IDCompositionVisual::SetContent**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-setcontent) del objeto visual para establecer la nueva superficie como el contenido visual de la ventana secundaria superada.
+4.  Agregue el objeto visual al árbol visual. Para agregar el objeto visual a la raíz del árbol, llame al [**método IDCompositionTarget::SetRoot.**](/windows/win32/api/dcomp/nf-dcomp-idcompositiontarget-setroot) Para agregar el objeto visual como elemento secundario de otro objeto visual, use el [**método IDCompositionVisual::AddVisual**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-addvisual) del objeto visual primario.
 
-En el ejemplo siguiente se crea un objeto visual, se establece su propiedad de contenido para usar el mapa de bits de la ventana secundaria superpuesta y se agrega el objeto visual a la raíz del árbol visual.
+En el ejemplo siguiente se crea un objeto visual, se establece su propiedad Content para usar el mapa de bits de la ventana secundaria en capas y se agrega el objeto visual a la raíz del árbol visual.
 
 
 ```C++
@@ -134,9 +134,9 @@ if (SUCCEEDED(hr))
 
 
 
-### <a name="step-4-create-an-animation-object-and-a-scale-transform-object"></a>Paso 4: crear un objeto de animación y un objeto de transformación de escala
+### <a name="step-4-create-an-animation-object-and-a-scale-transform-object"></a>Paso 4: Crear un objeto de animación y un objeto de transformación de escala
 
-Use el método [**IDCompositionDevice:: CreateAnimation**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createanimation) para crear un objeto Animation y el método [**IDCompositionDevice:: CreateScaleTransform**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createscaletransform) para crear un objeto de transformación de escala.
+Use el [**método IDCompositionDevice::CreateAnimation**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createanimation) para crear un objeto de animación y el método [**IDCompositionDevice::CreateScaleTransform**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createscaletransform) para crear un objeto de transformación de escala.
 
 
 ```C++
@@ -157,11 +157,11 @@ if (SUCCEEDED(hr))
 
 
 
-### <a name="step-5-build-the-animation-function"></a>Paso 5: compilar la función de animación
+### <a name="step-5-build-the-animation-function"></a>Paso 5: Compilación de la función de animación
 
-Use los métodos de la interfaz [**IDCompositionAnimation**](/windows/desktop/api/DcompAnimation/nn-dcompanimation-idcompositionanimation) del objeto Animation para compilar una función de animación.
+Use los métodos de la interfaz [**IDCompositionAnimation**](/windows/desktop/api/DcompAnimation/nn-dcompanimation-idcompositionanimation) del objeto de animación para crear una función de animación.
 
-En el ejemplo siguiente se crea una función de animación simple que consta de un segmento polinómico cúbico y un segmento final.
+En el ejemplo siguiente se crea una función de animación sencilla que consta de un segmento polinómico cúbica y un segmento final.
 
 
 ```C++
@@ -176,9 +176,9 @@ pAnimateScale->End(1.0f, 1.0f);
 
 
 
-### <a name="step-6-apply-the-animation-object-to-properties-of-the-scale-transform-object"></a>Paso 6: aplicar el objeto de animación a las propiedades del objeto de transformación de escala
+### <a name="step-6-apply-the-animation-object-to-properties-of-the-scale-transform-object"></a>Paso 6: Aplicar el objeto de animación a las propiedades del objeto de transformación de escala
 
-Use los métodos [**IDCompositionScale:: SetScaleX**](/windows/win32/api/dcomp/nf-dcomp-idcompositionscaletransform-setscalex(idcompositionanimation)) y [**SetScaleY**](/windows/win32/api/dcomp/nf-dcomp-idcompositionscaletransform-setscaley(idcompositionanimation)) para aplicar el objeto de animación a las propiedades scaleX y scaleY del objeto de transformación de escala.
+Use los [**métodos IDCompositionScale::SetScaleX**](/windows/win32/api/dcomp/nf-dcomp-idcompositionscaletransform-setscalex(idcompositionanimation)) y [**SetScaleY**](/windows/win32/api/dcomp/nf-dcomp-idcompositionscaletransform-setscaley(idcompositionanimation)) para aplicar el objeto de animación a las propiedades ScaleX y ScaleY del objeto de transformación de escala.
 
 
 ```C++
@@ -200,9 +200,9 @@ pScale->SetScaleY(pAnimateScale);
 
 
 
-### <a name="step-7-apply-the-scale-transform-object-to-the-transform-property-of-the-visual"></a>Paso 7: aplicar el objeto de transformación de escala a la propiedad transform del objeto visual
+### <a name="step-7-apply-the-scale-transform-object-to-the-transform-property-of-the-visual"></a>Paso 7: Aplicar el objeto de transformación de escala a la propiedad de transformación del objeto visual
 
-Use el método [**IDCompositionVisual:: SetTransform**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-settransform(idcompositiontransform)) para aplicar el objeto de transformación de escala a la propiedad transform del objeto visual.
+Use el [**método IDCompositionVisual::SetTransform**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-settransform(idcompositiontransform)) para aplicar el objeto de transformación de escala a la propiedad Transform del objeto visual.
 
 
 ```C++
@@ -211,9 +211,9 @@ hr = pVisual->SetTransform(pScale);
 
 
 
-### <a name="step-8-cloak-the-layered-child-window"></a>Paso 8: ocultar la ventana secundaria superpuesta
+### <a name="step-8-cloak-the-layered-child-window"></a>Paso 8: Ocultación de la ventana secundaria en capas
 
-Antes de confirmar la animación, use la función [**DwmSetWindowAttribute**](/windows/desktop/api/dwmapi/nf-dwmapi-dwmsetwindowattribute) con la marca [**DWMWA de \_ Cloaking**](/windows/desktop/api/dwmapi/ne-dwmapi-dwmwindowattribute) para "esconder" la ventana secundaria superpuesta. La ocultación quita la ventana secundaria superpuesta de la vista mientras la versión animada de la vista de mapa de bits de la ventana se está representando en la pantalla.
+Antes de confirmar la animación, use la función [**DwmSetWindowAttribute**](/windows/desktop/api/dwmapi/nf-dwmapi-dwmsetwindowattribute) con la [**marca \_ DWMWAWINDOW PARA**](/windows/desktop/api/dwmapi/ne-dwmapi-dwmwindowattribute) "ocultar" la ventana secundaria en capas. La protección quita la ventana secundaria en capas de la vista mientras la versión animada de la vista de mapa de bits de la ventana se representa en la pantalla.
 
 
 ```C++
@@ -226,15 +226,15 @@ DwmSetWindowAttribute(pDemoApp->m_hwndLayeredChild,
 
 
 
-### <a name="step-9-commit-the-composition"></a>Paso 9: confirmar la composición
+### <a name="step-9-commit-the-composition"></a>Paso 9: Confirmar la composición
 
-Use el método [**IDCompositionDevice:: commit**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-commit) para confirmar el lote de comandos en Microsoft DirectComposition para su procesamiento. La animación aparecerá en la ventana de destino.
+Use el [**método IDCompositionDevice::Commit**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-commit) para confirmar el lote de comandos en Microsoft DirectComposition para su procesamiento. La animación aparecerá en la ventana de destino.
 
-### <a name="step-10-uncloak-the-layered-child-window"></a>Paso 10: anulación de la ocultación de la ventana secundaria superpuesta
+### <a name="step-10-uncloak-the-layered-child-window"></a>Paso 10: Desencapso de la ventana secundaria en capas
 
-Una vez finalizada la animación, use la función [**DwmSetWindowAttribute**](/windows/desktop/api/dwmapi/nf-dwmapi-dwmsetwindowattribute) con la marca **DWMWA de \_ Cloaking** para anular la ocultación de la ventana secundaria superpuesta.
+Una vez finalizada la animación, use la [**función DwmSetWindowAttribute**](/windows/desktop/api/dwmapi/nf-dwmapi-dwmsetwindowattribute) con la marca **\_ DWMWAWINDOW PARA** desencapso de la ventana secundaria en capas.
 
-### <a name="step-11-release-directcomposition-objects"></a>Paso 11: liberar objetos DirectComposition
+### <a name="step-11-release-directcomposition-objects"></a>Paso 11: Liberar objetos DirectComposition
 
 Asegúrese de liberar todos los objetos DirectComposition cuando ya no los necesite. En el ejemplo siguiente se llama a la macro [**SafeRelease**](/windows/desktop/medfound/saferelease) definida por la aplicación para liberar los objetos DirectComposition.
 
@@ -1281,12 +1281,12 @@ HRESULT DemoApp::LoadResourceD2DBitmap(
 [Animación](animation.md)
 </dt> <dt>
 
-[Objetos Bitmap](bitmap-surfaces.md)
+[Objetos de mapa de bits](bitmap-surfaces.md)
 </dt> <dt>
 
-[DirectComposition ejemplo de ventana secundaria superpuesta](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/DirectCompositionLayeredChildWindow)
+[Ejemplo de ventana secundaria en capas de DirectComposition](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/DirectCompositionLayeredChildWindow)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

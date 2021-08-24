@@ -1,5 +1,5 @@
 ---
-description: 'Método RequestStateChange de la Msvm_FcSwitchPort clase : solicita un cambio de estado.'
+description: 'Método RequestStateChange de la Msvm_FcSwitchPort: solicita un cambio de estado.'
 ms.assetid: 42b9b67d-ee64-4c78-860c-9af61f780ff8
 title: Método RequestStateChange de la Msvm_FcSwitchPort clase
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 74ef1d921cac8d6dc5b5ac1db84c343f0ff4bd06
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 10b3b57c783dc57c1c08d9fae7c45689ca7da57dd7dba52f3fbc5d97f11af698
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119003"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119789924"
 ---
 # <a name="requeststatechange-method-of-the-msvm_fcswitchport-class"></a>Método RequestStateChange de la clase \_ FcSwitchPort de Msvm
 
@@ -44,7 +44,7 @@ uint32 RequestStateChange(
 *RequestedState* \[ En\]
 </dt> <dd>
 
-El nuevo estado. La información se coloca en la **propiedad RequestedState** de la instancia si el código de retorno del método **RequestStateChange** es 0 (Trabajo completado sin error) o 4096 (Trabajo iniciado). Para obtener más información, vea la descripción de las propiedades **EnabledState** y **RequestedState** del elemento. Debe ser uno de los siguientes valores.
+El nuevo estado. La información se coloca en la propiedad **RequestedState** de la instancia si el código de retorno del método **RequestStateChange** es 0 (Trabajo completado sin error) o 4096 (Trabajo iniciado). Para obtener más información, vea la descripción de las propiedades **EnabledState** y **RequestedState** del elemento. Debe ser uno de los siguientes valores.
 
 <dt>
 
@@ -106,7 +106,7 @@ El nuevo estado. La información se coloca en la **propiedad RequestedState** de
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-**Restablecimiento** (11)
+**Restablecer** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -155,7 +155,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -165,7 +165,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

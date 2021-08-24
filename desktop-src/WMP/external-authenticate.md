@@ -1,11 +1,11 @@
 ---
-title: External. Authenticate (método)
-description: El método Authenticate inicia un intento de autenticación del usuario.
+title: Método External.authenticate
+description: El método authenticate inicia un intento de autenticar al usuario.
 ms.assetid: db4cd2c6-b735-40b1-af96-82a40bda9d97
 keywords:
-- autenticación de Windows de método Media Player
-- método de autenticación de Windows Media Player, clase externa
-- Clase externa Windows Media Player, método Authenticate
+- authenticate method Reproductor de Windows Media
+- authenticate method Reproductor de Windows Media , External (clase)
+- Clase externa Reproductor de Windows Media , método de autenticación
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aa2bba0afb80c4285ad8fa8d2c20191321315d60
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6b72c4d20cdd8232746175d966856a616bca9629657ca66c35727b8af8e21178
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699728"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119649555"
 ---
-# <a name="externalauthenticate-method"></a>External. Authenticate (método)
+# <a name="externalauthenticate-method"></a>Método External.authenticate
 
-El método **Authenticate** inicia un intento de autenticación del usuario.
+El **método authenticate** inicia un intento de autenticar al usuario.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,10 +42,10 @@ External.authenticate(
 
 <dl> <dt>
 
-*AuthenticationIndex* \[ de\]
+*AuthenticationIndex* \[ En\]
 </dt> <dd>
 
-**Número** (**largo**) que especifica el índice de una página web de autenticación correcta.
+**Number** (**long**) que especifica el índice de una página web de autenticación correcta.
 
 </dd> </dl>
 
@@ -53,22 +53,22 @@ External.authenticate(
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Algunos vínculos de una página de detección tienen destinos que deben mostrarse solo después de que el usuario se haya autenticado. En la página detección, en Windows Media Player y en el complemento de la tienda en línea, siga los pasos que se indican a continuación para autenticar al usuario y mostrar la Página Web de destino:
+Algunos vínculos de una página de detección tienen destinos que solo se deben mostrar una vez autenticado el usuario. La página de detección, Reproductor de Windows Media y el complemento de la tienda en línea usan los pasos siguientes para autenticar al usuario y mostrar la página web de destino:
 
-1.  El script de una página de detección llama a la *externa*. método de **autenticación** .
-2.  Windows Media Player muestra un cuadro de diálogo para obtener un nombre de usuario y una contraseña.
-3.  Windows Media Player llama a [IWMPContentPartner:: Authenticate](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartner-authenticate), que inicia el intento de autenticación y vuelve inmediatamente.
-4.  Cuando se completa el intento de autenticación, el complemento de la tienda en línea llama a [IWMPContentPartnerCallback:: Notify](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartnercallback-notify), pasando wmpcnAuthResult y un valor booleano que indica si el intento se realizó correctamente.
-5.  Si el intento de autenticación se realizó correctamente, Windows Media Player llama a [IWMPContentPartner:: GetItemInfo](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartner-getiteminfo), pasando g \_ szItemInfo \_ AuthenticationSuccessURL, para obtener la dirección URL de una página web de autenticación correcta. En esta llamada, Windows Media Player pasa el mismo índice que la página de detección pasada a la *externa*. método de **autenticación** .
-6.  Windows Media Player muestra la Página Web de autenticación correcta.
+1.  El script de una página de detección llama a *external*. **método authenticate.**
+2.  Reproductor de Windows Media muestra un cuadro de diálogo para obtener un nombre de usuario y una contraseña.
+3.  Reproductor de Windows Media llama a [IWMPContentPartner::Authenticate](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartner-authenticate), que inicia el intento de autenticación y devuelve inmediatamente.
+4.  Una vez completado el intento de autenticación, el complemento de la tienda en línea llama a [IWMPContentPartnerCallback::Notify](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartnercallback-notify), pasando wmpcnAuthResult y un valor booleano que indica si el intento se ha realizado correctamente.
+5.  Si el intento de autenticación se ha realizado correctamente, Reproductor de Windows Media llama a [IWMPContentPartner::GetItemInfo](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartner-getiteminfo), pasando g \_ szItemInfo AuthenticationSuccessURL, para obtener la dirección URL de una página web de autenticación \_ correcta. En esta llamada, Reproductor de Windows Media pasa el mismo índice que la página de detección pasado a *External*. **método authenticate.**
+6.  Reproductor de Windows Media muestra la página web de autenticación correcta.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media 11<br/>                                                 |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
@@ -79,13 +79,13 @@ Algunos vínculos de una página de detección tienen destinos que deben mostrar
 
 <dl> <dt>
 
-[**Objeto externo para las tiendas en línea de tipo 1**](external-object-for-type-1-online-stores.md)
+[**Objeto externo para almacenes en línea de tipo 1**](external-object-for-type-1-online-stores.md)
 </dt> <dt>
 
-[**External. attemptLogin**](external-attemptlogin.md)
+[**External.attemptLogin**](external-attemptlogin.md)
 </dt> <dt>
 
-[**External. userLoggedIn**](external-userloggedin.md)
+[**External.userLoggedIn**](external-userloggedin.md)
 </dt> </dl>
 
  

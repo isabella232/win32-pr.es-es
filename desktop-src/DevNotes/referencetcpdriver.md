@@ -1,7 +1,7 @@
 ---
-description: Obtiene una referencia a un objeto de controlador TCP V4.
+description: Obtiene una referencia a un objeto de controlador TCP v4.
 ms.assetid: 8f12fa58-1622-40d0-9a99-e7c8ede08b38
-title: ReferenceTcpDriver función)
+title: Función ReferenceTcpDriver
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - LibDef
 api_location:
 - Drvref.lib
-ms.openlocfilehash: 4a9068739517cceedee72a675739b2d8b067b2ef
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 36329ecb695c6fcc011f7e1fe4f44a149fbeac48b0125c34330b9bde51342f5c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105650161"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119690845"
 ---
-# <a name="referencetcpdriver-function"></a>ReferenceTcpDriver función)
+# <a name="referencetcpdriver-function"></a>Función ReferenceTcpDriver
 
-Obtiene una referencia a un objeto de controlador TCP V4.
+Obtiene una referencia a un objeto de controlador TCP v4.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,30 +39,30 @@ NTSTATUS WINAPI ReferenceTcpDriver(
 
 <dl> <dt>
 
-*ppDriverObject* \[ enuncia\]
+*ppDriverObject* \[ out\]
 </dt> <dd>
 
-Puntero a una estructura **de \_ objeto de controlador** . Para obtener más información, consulte la documentación del WDK.
+Puntero a una **estructura DRIVER \_ OBJECT.** Para más información, consulte la documentación de WDK.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, devuelve el **estado \_ correcto**. Si se produce un error, devolverá el código de estado adecuado.
+Si la función se realiza correctamente, devuelve **STATUS \_ SUCCESS**. Si se produce un error, devolverá el código de estado adecuado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Solo se puede llamar a esta función desde el modo kernel. El autor de la llamada debe reducir el recuento de referencias mediante una llamada a la función **ObDereferenceObject** cuando ha terminado con el objeto.
+Solo se puede llamar a esta función desde el modo kernel. El autor de la llamada debe disminuir el recuento de referencias llamando a la **función ObDereferenceObject** cuando haya terminado con el objeto .
 
-Esta función se implementa en Drvref. lib, que está disponible para su descarga. Vea [biblioteca de API de referencia de controladores de red de Windows](https://www.microsoft.com/downloads/details.aspx?FamilyID=85037e05-f8f8-46b4-a013-3aa6248396c0).
+Esta función se implementa en Drvref.lib, que está disponible para su descarga. Consulte [la Windows API de referencia del controlador de red.](https://www.microsoft.com/downloads/details.aspx?FamilyID=85037e05-f8f8-46b4-a013-3aa6248396c0)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| Biblioteca<br/> | <dl> <dt>Drvref. lib</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>Drvref.lib</dt> </dl> |
 
 
 

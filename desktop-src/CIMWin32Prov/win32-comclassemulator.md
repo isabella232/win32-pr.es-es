@@ -1,8 +1,8 @@
 ---
-description: La \_ clase WMI ComClassEmulator Association de Win32 relaciona dos versiones de una clase de modelo de objetos componentes (com).
+description: La clase WMI de asociación ComClassEmulator de Win32 relaciona dos versiones de una clase de Modelo de objetos componentes \_ (COM).
 ms.assetid: 33899c1e-911d-49ad-be25-355dcdb8f0c7
 ms.tgt_platform: multiple
-title: Win32_ComClassEmulator (clase)
+title: Win32_ComClassEmulator clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 9966ed85b0e0b4eeb25073e13ad679759f1d460b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 171210633fc829e6eca844979b66cbaa827f9106b0017079dffc9ce56f076a22
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104152865"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119751388"
 ---
-# <a name="win32_comclassemulator-class"></a>\_Clase Win32 ComClassEmulator
+# <a name="win32_comclassemulator-class"></a>Clase \_ ComClassEmulator de Win32
 
-La [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ ComClassEmulator** Association de Win32 relaciona dos versiones de una clase de modelo de objetos componentes (com).
+La clase WMI **de \_ asociación ComClassEmulator** [de](/windows/desktop/WmiSdk/retrieving-a-class) Win32 relaciona dos versiones de una clase de Modelo de objetos componentes (COM).
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -64,7 +64,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ ClassicCOMClass")
 </dt> </dl>
 
-Referencia a la instancia de que representa el componente COM que contiene interfaces emulando la versión anterior del componente.
+Referencia a la instancia de que representa el componente COM que contiene interfaces que emulan la versión anterior del componente.
 
 </dd> <dt>
 
@@ -80,7 +80,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ ClassicCOMClass")
 </dt> </dl>
 
-Referencia a la instancia de que representa el componente COM con interfaces que se pueden emular mediante la nueva versión del componente.
+Referencia a la instancia de que representa el componente COM con interfaces que puede emular la nueva versión del componente.
 
 </dd> </dl>
 
@@ -92,8 +92,8 @@ Referencia a la instancia de que representa el componente COM con interfaces que
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

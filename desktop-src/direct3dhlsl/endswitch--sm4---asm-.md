@@ -1,19 +1,19 @@
 ---
-title: endswitch (SM4-ASM)
+title: endswitch (sm4 - asm)
 description: Finaliza una instrucción switch.
 ms.assetid: ECAEECFD-B955-4356-B5C9-1D6A04C71D8F
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 523a4008ab976ee299758349d57c6e32a3f336b2
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 911c785f53286e95e89d1ce25156757a56bf104c489643ec556874434623f798
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104419877"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119673045"
 ---
-# <a name="endswitch-sm4---asm"></a>endswitch (SM4-ASM)
+# <a name="endswitch-sm4---asm"></a>endswitch (sm4 - asm)
 
-Finaliza una instrucción [Switch](switch--sm4---asm-.md) .
+Finaliza una [instrucción switch.](switch--sm4---asm-.md)
 
 
 
@@ -22,11 +22,11 @@ Finaliza una instrucción [Switch](switch--sm4---asm-.md) .
 
 
 
- 
+ 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El formato de token contiene el desplazamiento de la instrucción switch correspondiente en el sombreador como una comodidad.
+El formato del token contiene el desplazamiento de la instrucción switch correspondiente en el sombreador para mayor comodidad.
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
@@ -38,9 +38,9 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
 
 
- 
+ 
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -48,27 +48,27 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sí       |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Ensamblado modelo de sombreador 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo de sombreador 4 (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

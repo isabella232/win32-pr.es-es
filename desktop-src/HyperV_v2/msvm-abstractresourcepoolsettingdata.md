@@ -25,18 +25,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: dca3da14ac74a8d6fab1ba96db98f9e2eccd74ea
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 74e396da1135c481079e9fc20ce940774ef58dab983d36cabc131aa8bbe13f38
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119693655"
 ---
 # <a name="msvm_abstractresourcepoolsettingdata-class"></a>Clase Msvm \_ AbstractResourcePoolSettingData
 
 Representa la configuración de una instancia [**de \_ ResourcePool de Msvm**](msvm-resourcepool.md) que no está relacionada con la asignación.
 
-La sintaxis siguiente se simplifica Managed Object Format (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se Managed Object Format código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -222,7 +222,7 @@ Especifica si el grupo de recursos puede intentar usar otros recursos de host pa
 
 <span id="Hard_Affinity"></span><span id="hard_affinity"></span><span id="HARD_AFFINITY"></span>
 
-**Afinidad dura** (5)
+**Afinidad fuerte** (5)
 
 
 </dt> <dd></dd> <dt>
@@ -255,7 +255,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Msvm \_ ResourcePoolSettingData**](msvm-resourcepoolsettingdata.md).**MappingBehavior**")
 </dt> </dl>
 
-Especifica el orden en el que se seleccionarán los recursos de host disponibles a través de este grupo al intentar satisfacer una solicitud de asignación, y el recurso host solicitado no está disponible o no se especifica ningún recurso host.
+Especifica el orden en que se seleccionarán los recursos de host disponibles a través de este grupo al intentar satisfacer una solicitud de asignación, y el recurso host solicitado no está disponible o no se especifica ningún recurso de host.
 
 </dd> <dt>
 
@@ -408,7 +408,7 @@ Tipo de recurso que este grupo de recursos puede asignar.
 
 <span id="Other_Network_Adapter"></span><span id="other_network_adapter"></span><span id="OTHER_NETWORK_ADAPTER"></span>
 
-**Otro adaptador de red** (11)
+**Otro adaptador de** red (11)
 
 
 </dt> <dd></dd> <dt>
@@ -464,7 +464,7 @@ Tipo de recurso que este grupo de recursos puede asignar.
 
 <span id="Storage_Extent"></span><span id="storage_extent"></span><span id="STORAGE_EXTENT"></span>
 
-**Extensión de almacenamiento** (19)
+**Storage extensión** (19)
 
 
 </dt> <dd></dd> <dt>
@@ -555,7 +555,7 @@ Tipo de recurso que este grupo de recursos puede asignar.
 
 <span id="Storage_Volume"></span><span id="storage_volume"></span><span id="STORAGE_VOLUME"></span>
 
-**Volumen de almacenamiento** (32)
+**Storage volumen** (32)
 
 
 </dt> <dd></dd> <dt>
@@ -576,7 +576,7 @@ Tipo de recurso que este grupo de recursos puede asignar.
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Proveedor reservado** (0x8000.. 0xFFFF)
+**Reservado por** el proveedor (0x8000.. 0xFFFF)
 
 
 </dt> <dd></dd> </dl>
@@ -589,8 +589,8 @@ Tipo de recurso que este grupo de recursos puede asignar.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 8 solo \[ aplicaciones de escritorio\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
 | Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

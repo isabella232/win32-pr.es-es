@@ -1,23 +1,23 @@
 ---
-description: Un mensaje que se envía a todas las ventanas de nivel superior cuando la función SystemParametersInfo cambia una configuración de todo el sistema o cuando la configuración de Directiva ha cambiado.
+description: Mensaje que se envía a todas las ventanas de nivel superior cuando la función SystemParametersInfo cambia una configuración de todo el sistema o cuando la configuración de directiva ha cambiado.
 ms.assetid: 77174e06-a25b-440a-9e9c-4fd5979c433c
-title: Mensaje de WM_SETTINGCHANGE (Winuser. h)
+title: WM_SETTINGCHANGE mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f1c3d1360b5e4cc5de2dbd23b09b8f2ad034948f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 302f156da905263ed7f3d1d331d4dbb25af5b3e81d9df6136281c7dbc7b3914c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279017"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119710045"
 ---
-# <a name="wm_settingchange-message"></a>Mensaje de SETTINGCHANGE de WM \_
+# <a name="wm_settingchange-message"></a>Mensaje \_ WM SETTINGCHANGE
 
-Un mensaje que se envía a todas las ventanas de nivel superior cuando la función [**SystemParametersInfo**](/windows/win32/api/winuser/nf-winuser-systemparametersinfoa) cambia una configuración de todo el sistema o cuando la configuración de Directiva ha cambiado.
+Mensaje que se envía a todas las ventanas de nivel superior cuando la función [**SystemParametersInfo**](/windows/win32/api/winuser/nf-winuser-systemparametersinfoa) cambia una configuración de todo el sistema o cuando la configuración de directiva ha cambiado.
 
-Las aplicaciones deben enviar **WM \_ SETTINGCHANGE** a todas las ventanas de nivel superior cuando realizan cambios en los parámetros del sistema. (Este mensaje no se puede enviar directamente a una ventana). Para enviar el mensaje de **\_ SETTINGCHANGE de WM** a todas las ventanas de nivel superior, use la función [**SendMessageTimeout**](/windows/win32/api/winuser/nf-winuser-sendmessagetimeouta) con el parámetro *hWnd* establecido en la **\_ difusión HWND**.
+Las aplicaciones deben **enviar WM \_ SETTINGCHANGE** a todas las ventanas de nivel superior cuando realicen cambios en los parámetros del sistema. (Este mensaje no se puede enviar directamente a una ventana). Para enviar el **mensaje WM \_ SETTINGCHANGE** a todas las ventanas de nivel superior, use la función [**SendMessageTimeout**](/windows/win32/api/winuser/nf-winuser-sendmessagetimeouta) con el *parámetro hwnd* establecido en **HWND \_ BROADCAST**.
 
-Una ventana recibe este mensaje a través de su función [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una ventana recibe este mensaje a través de su [**función WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -34,28 +34,28 @@ Una ventana recibe este mensaje a través de su función [**WindowProc**](/previ
 *wParam* 
 </dt> <dd>
 
-Cuando el sistema envía este mensaje como resultado de una llamada [**SystemParametersInfo**](/windows/win32/api/winuser/nf-winuser-systemparametersinfoa) , el parámetro *wParam* es el valor del parámetro *uiAction* que se pasa a la función **SystemParametersInfo** . Para obtener una lista de valores, vea **SystemParametersInfo**.
+Cuando el sistema envía este mensaje como resultado de una llamada a [**SystemParametersInfo,**](/windows/win32/api/winuser/nf-winuser-systemparametersinfoa) el parámetro *wParam* es el valor del parámetro *uiAction* pasado a la **función SystemParametersInfo.** Para obtener una lista de valores, **vea SystemParametersInfo**.
 
-Cuando el sistema envía este mensaje como resultado de un cambio en la configuración de la Directiva, este parámetro indica el tipo de directiva que se ha aplicado. Este valor es 1 si se ha aplicado la Directiva de equipo o cero si se ha aplicado la Directiva de usuario.
+Cuando el sistema envía este mensaje como resultado de un cambio en la configuración de directiva, este parámetro indica el tipo de directiva que se aplicó. Este valor es 1 si se aplicó la directiva de equipo o cero si se aplicó la directiva de usuario.
 
 Cuando el sistema envía este mensaje como resultado de un cambio en la configuración regional, este parámetro es cero.
 
-Cuando una aplicación envía este mensaje, este parámetro debe ser **null**.
+Cuando una aplicación envía este mensaje, este parámetro debe ser **NULL.**
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Cuando el sistema envía este mensaje como resultado de una llamada [**SystemParametersInfo**](/windows/win32/api/winuser/nf-winuser-systemparametersinfoa) , *lParam* es un puntero a una cadena que indica el área que contiene el parámetro del sistema que se ha cambiado. Normalmente, este parámetro no indica qué parámetro del sistema concreto cambió. (Tenga en cuenta que algunas aplicaciones envían este mensaje con *lParam* establecido en **null**). En general, cuando reciba este mensaje, debe comprobar y volver a cargar cualquier configuración de parámetros del sistema utilizada por la aplicación.
+Cuando el sistema envía este mensaje como resultado de una llamada a [**SystemParametersInfo,**](/windows/win32/api/winuser/nf-winuser-systemparametersinfoa) *lParam* es un puntero a una cadena que indica el área que contiene el parámetro del sistema que se cambió. Este parámetro no suele indicar qué parámetro específico del sistema ha cambiado. (Tenga en cuenta que algunas aplicaciones envían este mensaje con *lParam* establecido en **NULL).** En general, cuando reciba este mensaje, debe comprobar y volver a cargar cualquier configuración de parámetros del sistema que utilice la aplicación.
 
-Esta cadena puede ser el nombre de una clave del registro o el nombre de una sección del archivo de Win.ini. Cuando la cadena es un nombre de registro, normalmente solo indica el nodo hoja del registro, no la ruta de acceso completa.
+Esta cadena puede ser el nombre de una clave del Registro o el nombre de una sección del Win.ini archivo. Cuando la cadena es un nombre del Registro, normalmente indica solo el nodo hoja del registro, no la ruta de acceso completa.
 
-Cuando el sistema envía este mensaje como resultado de un cambio en la configuración de la Directiva, este parámetro señala a la cadena "Policy".
+Cuando el sistema envía este mensaje como resultado de un cambio en la configuración de la directiva, este parámetro apunta a la cadena "Policy".
 
-Cuando el sistema envía este mensaje como resultado de un cambio en la configuración regional, este parámetro señala a la cadena "intl".
+Cuando el sistema envía este mensaje como resultado de un cambio en la configuración regional, este parámetro apunta a la cadena "intl".
 
-Para aplicar un cambio en las variables de entorno del sistema o del usuario, difunda este mensaje con *lParam* establecido en la cadena "Environment".
+Para efectuar un cambio en las variables de entorno para el sistema o el usuario, difusione este mensaje con *lParam* establecido en la cadena "Environment".
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Para aplicar un cambio en las variables de entorno del sistema o del usuario, di
 
 Tipo: **LRESULT**
 
-Si procesa este mensaje, devuelve cero.
+Si procesa este mensaje, devuelva cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El parámetro *lParam* indica qué métrica del sistema ha cambiado, por ejemplo, "ConvertibleSlateMode" si el indicador ConvertibleSlateMode se ha modificado o "SystemDockMode" si el indicador acoplado está activado.
+El parámetro *lParam* indica qué métrica del sistema ha cambiado, por ejemplo, "ConvertibleSlateMode" si se alternó el indicador CONVERTIBLESLATEMODE o "SystemDockMode" si se alternó el indicador DOCKED.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -77,7 +77,7 @@ El parámetro *lParam* indica qué métrica del sistema ha cambiado, por ejemplo
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -85,7 +85,7 @@ El parámetro *lParam* indica qué métrica del sistema ha cambiado, por ejemplo
 
 <dl> <dt>
 
-[Eventos de Directiva](/previous-versions/windows/desktop/Policy/policy-events)
+[Eventos de directiva](/previous-versions/windows/desktop/Policy/policy-events)
 </dt> <dt>
 
 [**SendMessageTimeout**](/windows/win32/api/winuser/nf-winuser-sendmessagetimeouta)

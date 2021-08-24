@@ -1,12 +1,12 @@
 ---
-title: Método SetSessionDirectoryProperty de la clase Win32_TSSessionDirectory
-description: Establece la propiedad SessionDirectoryLocation o la propiedad SessionDirectoryClusterName de la clase.
+title: Método SetSessionDirectoryProperty de la Win32_TSSessionDirectory clase
+description: Establece la propiedad SessionDirectoryLocation o la propiedad SessionDirectoryClusterName de la clase .
 ms.assetid: 728e1991-294f-4b80-86f8-a0c2cfd10e9c
 ms.tgt_platform: multiple
 keywords:
 - Método SetSessionDirectoryProperty Servicios de Escritorio remoto
-- Método SetSessionDirectoryProperty Servicios de Escritorio remoto, clase Win32_TSSessionDirectory
-- Win32_TSSessionDirectory de clase Servicios de Escritorio remoto, método SetSessionDirectoryProperty
+- Método SetSessionDirectoryProperty Servicios de Escritorio remoto , Win32_TSSessionDirectory clase
+- Win32_TSSessionDirectory clase Servicios de Escritorio remoto , método SetSessionDirectoryProperty
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 32357e662ec9b2edb05d75a2814d5215fc9ec7f1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cf09cbf8e832446831a5b12ecce8cc00b61bc49b23a8ed1da7f291d6f0c3562c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490084"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119769305"
 ---
-# <a name="setsessiondirectoryproperty-method-of-the-win32_tssessiondirectory-class"></a>Método SetSessionDirectoryProperty de la \_ clase TSSessionDirectory de Win32
+# <a name="setsessiondirectoryproperty-method-of-the-win32_tssessiondirectory-class"></a>Método SetSessionDirectoryProperty de la clase TSSessionDirectory de Win32 \_
 
-Establece la propiedad **SessionDirectoryLocation** o la propiedad **SessionDirectoryClusterName** de la clase.
+Establece la **propiedad SessionDirectoryLocation** o **la propiedad SessionDirectoryClusterName** de la clase .
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,12 +44,12 @@ uint32 SetSessionDirectoryProperty(
 
 <dl> <dt>
 
-*NombreDePropiedad* \[ de\]
+*PropertyName* \[ En\]
 </dt> <dd>
 
-Tipo: **String**
+Tipo: **cadena**
 
-Especifica la propiedad que está estableciendo el método.
+Especifica la propiedad que está estableciendo el método .
 
 <dt>
 
@@ -60,7 +60,7 @@ Especifica la propiedad que está estableciendo el método.
 
 </dt> <dd>
 
-El método está estableciendo la propiedad **SessionDirectoryLocation** .
+El método establece la **propiedad SessionDirectoryLocation.**
 
 </dd> <dt>
 
@@ -71,28 +71,28 @@ El método está estableciendo la propiedad **SessionDirectoryLocation** .
 
 </dt> <dd>
 
-El método está estableciendo la propiedad **SessionDirectoryClusterName** .
+El método establece la **propiedad SessionDirectoryClusterName.**
 
 </dd> </dl> </dd> <dt>
 
-*Valor* \[ de de\]
+*Valor* \[ En\]
 </dt> <dd>
 
-Tipo: **String**
+Tipo: **cadena**
 
-Nuevo valor de la propiedad especificada por el parámetro *PropertyName* .
+Nuevo valor de la propiedad especificada por el *parámetro PropertyName.*
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error de WMI. Consulte [servicios de escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md) para obtener una lista de estos valores. El método devuelve un error si la configuración está en control de directiva de grupo.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error wmi. Consulte los [Servicios de Escritorio remoto de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md) para obtener una lista de estos valores. El método devuelve un error si la configuración está bajo control de directiva de grupo.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del Kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -102,8 +102,8 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
