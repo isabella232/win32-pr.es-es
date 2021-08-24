@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: b9e021e767309007cfee2cfc78268fb7d7cea042
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 23ad48c673fb0c5925e796f77bd43c77f3abd0afd4511864a5b840214861f792
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108104283"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119660655"
 ---
 # <a name="shellgetsysteminformation-method"></a>Método Shell.GetSystemInformation
 
@@ -126,13 +126,13 @@ IsOS \_ Professional
 
 **Boolean**
 
-Se establece **en true** si el sistema operativo es Windows XP Professional Edition; de lo contrario, **false**.
+Se establece **en true** si el sistema operativo está Windows XP Professional Edition; de lo contrario, **false**.
 
 IsOS \_ Personal
 
 **Boolean**
 
-Se establece **en true** si el sistema operativo es Windows XP Home Edition; de lo contrario, **false**.
+Se establece **en true** si el sistema operativo está Windows XP Home Edition; de lo contrario, **false**.
 
 Lo siguiente solo es válido en Windows XP y versiones posteriores.
 
@@ -152,7 +152,7 @@ Este método no está disponible actualmente en Microsoft Visual Basic.
 
 En los ejemplos siguientes se muestra el uso **de GetSystemInformation** para JScript y VBScript.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -197,9 +197,9 @@ Vbscript:
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
+| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 

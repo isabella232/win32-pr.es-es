@@ -1,21 +1,21 @@
 ---
-description: El método SKIP omite el siguiente número de elementos especificado en la secuencia de enumeración. Este método está oculto en Visual Basic y en los lenguajes de scripting.
+description: El método Skip omite el siguiente número especificado de elementos en la secuencia de enumeración. Este método está oculto a los lenguajes Visual Basic y scripting.
 ms.assetid: 7f641354-c3f5-4eb3-ad1c-98abf7694106
-title: 'IEnumParticipant:: Skip (método) (Confpriv. h)'
+title: Método IEnumParticipant::Skip (Confpriv.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6dc406a69c126c25b1c554679595868a595b839b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 25a55eb3298578738bb427efd6ab2b830b9a7850668aa3c9fa4712cc1bf48d22
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690705"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119660705"
 ---
-# <a name="ienumparticipantskip-method"></a>IEnumParticipant:: Skip (método)
+# <a name="ienumparticipantskip-method"></a>IEnumParticipant::Skip (método)
 
-\[**SKIP** no está disponible para su uso en Windows Vista, windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[**Skip** no está disponible para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-El método **SKIP** omite el siguiente número de elementos especificado en la secuencia de enumeración. Este método está oculto en Visual Basic y en los lenguajes de scripting.
+El **método Skip** omite el siguiente número especificado de elementos en la secuencia de enumeración. Este método está oculto a los lenguajes Visual Basic y scripting.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,7 +32,7 @@ HRESULT Skip(
 
 <dl> <dt>
 
-*Celt* \[ de\]
+*celta* \[ En\]
 </dt> <dd>
 
 Número de elementos que se van a omitir.
@@ -47,9 +47,9 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                                   | Descripción                                                     |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>          | El número de elementos omitidos era *Celt*.<br/>               |
-| <dl> <dt>**S \_ false**</dt> </dl>       | El número de elementos omitidos no era *Celt*.<br/>           |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No hay memoria suficiente para realizar la operación.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | El número de elementos omitido era *celta*.<br/>               |
+| <dl> <dt>**S \_ FALSE**</dt> </dl>       | El número de elementos omitido no *era de centígrado.*<br/>           |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No existe memoria suficiente para realizar la operación.<br/> |
 
 
 
@@ -59,11 +59,11 @@ Este método puede devolver uno de estos valores.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,0 o posterior<br/>                                                 |
-| Encabezado<br/>       | <dl> <dt>Confpriv. h</dt> </dl> |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
+| Header<br/>       | <dl> <dt>Confpriv.h</dt> </dl> |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl>  |
 
 

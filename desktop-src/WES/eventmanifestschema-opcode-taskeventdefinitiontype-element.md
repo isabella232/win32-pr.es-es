@@ -1,9 +1,9 @@
 ---
-title: OpCode (TaskEventDefinitionType) (elemento)
-description: Contiene un código de operación específico de la tarea para un evento. Se supone que todas las definiciones de código de operación son específicas de la tarea para la tarea que contiene las definiciones de evento.
+title: opcode (TaskEventDefinitionType) (Elemento)
+description: Contiene un código de operación específico de la tarea para un evento. Se supone que todas las definiciones de código de operación son específicas de la tarea que contiene las definiciones de eventos.
 ms.assetid: c7192772-401b-4602-918d-0e0bc4b65ca7
 keywords:
-- elemento OpCode EventLog
+- elemento opcode EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,18 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d9f3b58353163e1ee5b9abeb04007a4a9d449e5c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7f3923e0a42375ac7d926d418943af81cc0264e111e6bdc4be56919780dfacf7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105696028"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119652155"
 ---
-# <a name="opcode-taskeventdefinitiontype-element"></a>OpCode (TaskEventDefinitionType) (elemento)
+# <a name="opcode-taskeventdefinitiontype-element"></a>opcode (TaskEventDefinitionType) (Elemento)
 
-\[A partir del compilador de mensajes que se incluye con la versión de Windows 7 del Windows SDK, este elemento ya no está disponible.\]
+\[A partir del compilador de mensajes que se incluye Windows versión 7 del SDK de Windows, este elemento ya no está disponible.\]
 
-Contiene un código de operación específico de la tarea para un evento. Se supone que todas las definiciones de código de operación son específicas de la tarea para la tarea que contiene las definiciones de evento.
+Contiene un código de operación específico de la tarea para un evento. Se supone que todas las definiciones de código de operación son específicas de la tarea que contiene las definiciones de eventos.
 
 ``` syntax
 <xs:element name="opcode">
@@ -43,7 +43,7 @@ Contiene un código de operación específico de la tarea para un evento. Se sup
 </xs:element>
 ```
 
-El elemento **OpCode** se define mediante el tipo complejo [**TaskEventDefinitionType**](eventmanifestschema-taskeventdefinitiontype-complextype.md) .
+El tipo complejo [**TaskEventDefinitionType**](eventmanifestschema-taskeventdefinitiontype-complextype.md) define el elemento **opcode.**
 
 ## <a name="child-elements"></a>Elementos secundarios
 
@@ -51,7 +51,7 @@ El elemento **OpCode** se define mediante el tipo complejo [**TaskEventDefinitio
 
 | Elemento                                                   | Tipo                                                                               | Descripción                                        |
 |-----------------------------------------------------------|------------------------------------------------------------------------------------|----------------------------------------------------|
-| [**ceso**](eventmanifestschema-event-opcode-element.md) | [**EventDefinitionType**](eventmanifestschema-eventdefinitiontype-complextype.md) | Evento que se publica con una tarea.<br/> |
+| [**Evento**](eventmanifestschema-event-opcode-element.md) | [**EventDefinitionType**](eventmanifestschema-eventdefinitiontype-complextype.md) | Evento que se publica con una tarea.<br/> |
 
 
 
@@ -71,8 +71,8 @@ El elemento **OpCode** se define mediante el tipo complejo [**TaskEventDefinitio
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -83,7 +83,7 @@ El elemento **OpCode** se define mediante el tipo complejo [**TaskEventDefinitio
 **Elemento primario**
 </dt> <dt>
 
-[**tarea (DefinitionType)**](eventmanifestschema-task-definitiontype-element.md)
+[**task (DefinitionType)**](eventmanifestschema-task-definitiontype-element.md)
 </dt> </dl>
 
  

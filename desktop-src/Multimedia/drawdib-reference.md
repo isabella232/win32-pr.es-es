@@ -7,23 +7,23 @@ keywords:
 - multimedia, referencia de DrawDib
 - Vídeo para Windows (VFW), referencia de DrawDib
 - VFW (vídeo para Windows), referencia de DrawDib
-- DrawDib, referencia
+- DrawDib,reference
 - Referencia de DrawDib, acerca de
-- referencia de DrawDib, acerca de
+- referencia de DrawDib,about
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: be359e2d0af6de28d6a054e60e0c5cac1de55c4a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: bed8a2469b473efdebbe8a3fdd55d9ba7d735328185f1d9297ddf533e61b0f02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104076211"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119678775"
 ---
 # <a name="drawdib-reference"></a>Referencia de DrawDib
 
 En esta sección se describen las funciones DrawDib y las estructuras asociadas. Estos elementos se agrupan de la siguiente manera:
 
-## <a name="drawdib-library-operations"></a>Operaciones de biblioteca DrawDib
+## <a name="drawdib-library-operations"></a>Operaciones de la biblioteca DrawDib
 
 -   [**DrawDibOpen**](/windows/desktop/api/Vfw/nf-vfw-drawdibopen)
 -   [**DrawDibClose**](/windows/desktop/api/Vfw/nf-vfw-drawdibclose)
@@ -43,20 +43,20 @@ En esta sección se describen las funciones DrawDib y las estructuras asociadas.
 -   [**DrawDibStart**](/windows/desktop/api/Vfw/nf-vfw-drawdibstart)
 -   [**DrawDibStop**](/windows/desktop/api/Vfw/nf-vfw-drawdibstop)
 
-## <a name="palettes"></a>Las paletas
+## <a name="palettes"></a>Paletas
 
 -   [**DrawDibRealize**](/windows/desktop/api/Vfw/nf-vfw-drawdibrealize)
 -   [**DrawDibSetPalette**](/windows/desktop/api/Vfw/nf-vfw-drawdibsetpalette)
 -   [**DrawDibGetPalette**](/windows/desktop/api/Vfw/nf-vfw-drawdibgetpalette)
 -   [**DrawDibChangePalette**](/windows/desktop/api/Vfw/nf-vfw-drawdibchangepalette)
 
-## <a name="timing-drawdib"></a>DrawDib de tiempo
+## <a name="timing-drawdib"></a>Timing DrawDib
 
 -   [**DRAWDIBTIME**](/windows/desktop/api/Vfw/ns-vfw-drawdibtime)
 
- 
+ 
 
- 
+ 
 
 
 

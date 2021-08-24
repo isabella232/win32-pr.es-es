@@ -1,11 +1,11 @@
 ---
-title: Propiedad BasicDevice. ManufacturerUrl
+title: BasicDevice.ManufacturerUrl, propiedad
 description: Obtiene la dirección URL del fabricante del dispositivo.
 ms.assetid: 5D65436F-2E0B-480E-886A-5E9AC90CE8BD
 keywords:
-- Propiedad ManufacturerUrl API de streaming de multimedia
-- Propiedad ManufacturerUrl API de streaming de multimedia, interfaz BasicDevice
-- Interfaz BasicDevice API de streaming de multimedia, propiedad ManufacturerUrl
+- Api de streaming multimedia de la propiedad ManufacturerUrl
+- Api de streaming multimedia de la propiedad ManufacturerUrl, interfaz BasicDevice
+- Interfaz basicDispositivo Media Streaming API, propiedad ManufacturerUrl
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ea2df39b5307a3eb895005630d3879c63cb11d7f
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 9bc0a5c603f7763b037344dd35b288567626cb2a0d070d35c8f29ec3d52cf9f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104420684"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119721285"
 ---
-# <a name="basicdevicemanufacturerurl-property"></a>Propiedad BasicDevice. ManufacturerUrl
+# <a name="basicdevicemanufacturerurl-property"></a>BasicDevice.ManufacturerUrl, propiedad
 
 Obtiene la dirección URL del fabricante del dispositivo.
 
@@ -33,7 +33,7 @@ Esta propiedad es de solo lectura.
 
 ```C++
 HRESULT get_ManufacturerUrl(
-  [out] HSTRING *value
+  [out] HSTRING *value
 );
 ```
 
@@ -41,7 +41,7 @@ HRESULT get_ManufacturerUrl(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Un puntero a la dirección URL del fabricante del dispositivo.
+Puntero a la dirección URL del fabricante del dispositivo.
 
 ## <a name="see-also"></a>Vea también
 
@@ -50,6 +50,6 @@ Un puntero a la dirección URL del fabricante del dispositivo.
 [**BasicDevice**](/previous-versions/windows/desktop/legacy/hh828813(v=vs.85))
 </dt> </dl>
 
- 
+ 
 
- 
+ 

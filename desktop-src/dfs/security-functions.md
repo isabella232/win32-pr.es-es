@@ -1,27 +1,27 @@
 ---
 title: Funciones de seguridad
-description: Las funciones de seguridad de administración de redes obtienen y establecen descriptores de seguridad para las raíces basadas en dominio DFS y independientes.
+description: Las funciones de seguridad de administración de red obtienen y establecen descriptores de seguridad para raíces independientes y basadas en dominio DFS.
 ms.assetid: 90860842-0f4d-49ad-b835-50305328a050
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 95f717ff3f5701e507087fcdac164d9357f2505a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: d31611aa650bb55ecdc29af468e0ef784b670555b247d536d27b397de356f4ec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104496637"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119677805"
 ---
 # <a name="security-functions"></a>Funciones de seguridad
 
-Las funciones de seguridad de administración de redes obtienen y establecen descriptores de seguridad para las raíces basadas en dominio DFS y independientes.
+Las funciones de seguridad de administración de red obtienen y establecen descriptores de seguridad para raíces independientes y basadas en dominio DFS.
 
-A continuación se enumeran las funciones de seguridad de DFS.
+Las funciones de seguridad DFS se enumeran a continuación.
 
 | Función                                                               | Descripción                                                                                                          |
 |------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | [**NetDfsGetSecurity**](/windows/desktop/api/lmdfs/nf-lmdfs-netdfsgetsecurity)                         | Obtiene el descriptor de seguridad para el objeto raíz de la raíz DFS especificada.                                       |
-| [**NetDfsSetSecurity**](/windows/desktop/api/lmdfs/nf-lmdfs-netdfssetsecurity)                         | Busca el objeto raíz de la raíz DFS especificada y establece el descriptor de seguridad proporcionado en él.                  |
+| [**NetDfsSetSecurity**](/windows/desktop/api/lmdfs/nf-lmdfs-netdfssetsecurity)                         | Busca el objeto raíz para la raíz DFS especificada y establece en él el descriptor de seguridad proporcionado.                  |
 | [**NetDfsGetStdContainerSecurity**](/windows/desktop/api/lmdfs/nf-lmdfs-netdfssetftcontainersecurity) | Obtiene el descriptor de seguridad para el objeto contenedor de la raíz independiente DFS especificada.                      |
-| [**NetDfsSetStdContainerSecurity**](/windows/desktop/api/lmdfs/nf-lmdfs-netdfssetstdcontainersecurity) | Busca el objeto contenedor de la raíz independiente DFS especificada y establece el descriptor de seguridad proporcionado en él. |
+| [**NetDfsSetStdContainerSecurity**](/windows/desktop/api/lmdfs/nf-lmdfs-netdfssetstdcontainersecurity) | Busca el objeto contenedor para la raíz independiente de DFS especificada y establece en él el descriptor de seguridad proporcionado. |
 | [**NetDfsGetFtContainerSecurity**](/windows/desktop/api/lmdfs/nf-lmdfs-netdfsgetftcontainersecurity)   | Obtiene el descriptor de seguridad para el objeto contenedor de la raíz de dominio DFS especificada.                           |
-| [**NetDfsSetFtContainerSecurity**](/windows/desktop/api/lmdfs/nf-lmdfs-netdfssetftcontainersecurity)   | Busca el objeto contenedor para la raíz de dominio DFS especificada y establece el descriptor de seguridad proporcionado en él.      |
+| [**NetDfsSetFtContainerSecurity**](/windows/desktop/api/lmdfs/nf-lmdfs-netdfssetftcontainersecurity)   | Busca el objeto contenedor para la raíz de dominio DFS especificada y establece en él el descriptor de seguridad proporcionado.      |

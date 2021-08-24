@@ -1,31 +1,31 @@
 ---
 title: Efecto de exposición
-description: Aumentar o disminuir la exposición de la imagen.
+description: Aumenta o reduce la exposición de la imagen.
 ms.assetid: d384f539-5c19-53c7-e52b-bf833e221449
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cb6f5bda52fecc0b5e3896515b04a6560f17da49
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bcdcd99e125251c3144d96ffd6054897e6801eb3299c1d1ae90e37494620faea
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996777"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119652934"
 ---
 # <a name="exposure-effect"></a>Efecto de exposición
 
-Aumentar o disminuir la exposición de la imagen.
+Aumenta o reduce la exposición de la imagen.
 
 El CLSID para este efecto es CLSID \_ D2D1Exposure.
 
 -   [Imagen de ejemplo](#example-image)
 -   [Código de ejemplo](#sample-code)
--   [Propiedades del efecto](#effect-properties)
+-   [Propiedades de efecto](#effect-properties)
 -   [Requisitos](#requirements)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="example-image"></a>Imagen de ejemplo
 
-![ejemplo de resultado de efecto](images/exposure-effect.png)
+![ejemplo de salida de efecto](images/exposure-effect.png)
 
 ## <a name="sample-code"></a>Código de ejemplo
 
@@ -46,20 +46,20 @@ m_d2dContext->EndDraw();
 
 
 
-## <a name="effect-properties"></a>Propiedades del efecto
+## <a name="effect-properties"></a>Propiedades de efecto
 
-Las propiedades del efecto exposición se definen mediante la enumeración de [**\_ \_ exposición D2D1**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_exposure_prop) .
+Las propiedades del efecto de exposición se definen mediante la [**enumeración D2D1 \_ EXPOSURE \_ PROP.**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_exposure_prop)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------------|---------------------------------------------------|
-| Cliente mínimo compatible | Aplicaciones de la tienda Windows de Windows 10 \[ Desktop apps \|\] |
-| Servidor mínimo compatible | Aplicaciones de la tienda Windows de Windows 10 \[ Desktop apps \|\] |
-| Encabezado                   | d2d1effects \_ 2. h                                  |
-| Biblioteca                  | d2d1. lib, dxguid. lib                              |
+| Cliente mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows store\] |
+| Servidor mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows store\] |
+| Header                   | d2d1effects \_ 2.h                                  |
+| Biblioteca                  | d2d1.lib, dxguid.lib                              |
 
 
 ## <a name="related-topics"></a>Temas relacionados

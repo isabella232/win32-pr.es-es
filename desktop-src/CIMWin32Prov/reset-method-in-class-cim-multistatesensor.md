@@ -1,5 +1,5 @@
 ---
-description: 'Método reset de la CIM_MultiStateSensor : el método Reset solicita un restablecimiento del dispositivo lógico. Este método se hereda de CIM \_ LogicalDevice.'
+description: 'Método reset de la CIM_MultiStateSensor : el método Reset solicita un restablecimiento del dispositivo lógico. Este método se hereda de \_ CIM LogicalDevice.'
 ms.assetid: 51234db3-496a-4750-a185-84a5945228b9
 ms.tgt_platform: multiple
 title: Método Reset de la CIM_MultiStateSensor clase
@@ -14,19 +14,19 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 41694086537fac64cc5c6eb3019a079649c1b248
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 67397c3b4401289d4d1429d5acf10152d13a13fa4287d785c9813206716f192c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119701555"
 ---
-# <a name="reset-method-of-the-cim_multistatesensor-class"></a>Método Reset de la clase \_ CIM MultiStateSensor
+# <a name="reset-method-of-the-cim_multistatesensor-class"></a>Método Reset de la clase \_ Cim MultiStateSensor
 
 El **método Reset** solicita un restablecimiento del dispositivo lógico. Este método se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -67,7 +67,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

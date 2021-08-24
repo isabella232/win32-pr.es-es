@@ -1,7 +1,7 @@
 ---
-description: Agrega dos valores de color juntos para crear un nuevo valor de color.
+description: Agrega dos valores de color para crear un nuevo valor de color.
 ms.assetid: 7743392d-4676-4408-93e9-f92d4bf02411
-title: Función D3DXColorAdd (D3dx9math. h)
+title: Función D3DXColorAdd (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: f326c9bec4802a9a94accc76b825cd1c6ea28fd5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: bb96d811f94975d8c7be3225349fd4412a0d1168167066001888084a4ef59136
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105678827"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119631615"
 ---
-# <a name="d3dxcoloradd-function"></a>D3DXColorAdd función)
+# <a name="d3dxcoloradd-function"></a>Función D3DXColorAdd
 
-Agrega dos valores de color juntos para crear un nuevo valor de color.
+Agrega dos valores de color para crear un nuevo valor de color.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,25 +47,25 @@ D3DXCOLOR* D3DXColorAdd(
 
 Tipo: **[ **D3DXCOLOR**](d3dxcolor.md)\***
 
-Puntero a una estructura [**D3DXCOLOR**](d3dxcolor.md) que es el resultado de la operación.
+Puntero a una [**estructura D3DXCOLOR**](d3dxcolor.md) que es el resultado de la operación.
 
 </dd> <dt>
 
-*pC1* \[ de\]
+*pC1* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXCOLOR**](d3dxcolor.md) \***
 
-Puntero a una estructura de [**D3DXCOLOR**](d3dxcolor.md) de origen.
+Puntero a una estructura [**D3DXCOLOR de**](d3dxcolor.md) origen.
 
 </dd> <dt>
 
-*pC2* \[ de\]
+*pC2* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXCOLOR**](d3dxcolor.md) \***
 
-Puntero a una estructura de [**D3DXCOLOR**](d3dxcolor.md) de origen.
+Puntero a una estructura [**D3DXCOLOR de**](d3dxcolor.md) origen.
 
 </dd> </dl>
 
@@ -73,11 +73,11 @@ Puntero a una estructura de [**D3DXCOLOR**](d3dxcolor.md) de origen.
 
 Tipo: **[ **D3DXCOLOR**](d3dxcolor.md)\***
 
-Esta función devuelve un puntero a una estructura [**D3DXCOLOR**](d3dxcolor.md) que es la suma de dos valores de color.
+Esta función devuelve un puntero a una [**estructura D3DXCOLOR**](d3dxcolor.md) que es la suma de dos valores de color.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor devuelto para esta función es el mismo valor devuelto en pOut. De esta manera, la función **D3DXColorAdd** se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en pOut. De esta manera, la **función D3DXColorAdd** se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,8 +85,8 @@ El valor devuelto para esta función es el mismo valor devuelto en pOut. De esta
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

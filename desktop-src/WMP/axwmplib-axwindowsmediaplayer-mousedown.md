@@ -1,9 +1,9 @@
 ---
 title: Evento MouseDown del objeto AxWindowsMediaPlayer
-description: El evento MouseDown se produce cuando el usuario presiona un botón del mouse. | Evento MouseDown del objeto AxWindowsMediaPlayer
+description: El evento MouseDown tiene lugar cuando el usuario presiona un botón del mouse. | Evento MouseDown del objeto AxWindowsMediaPlayer
 ms.assetid: 3dfbd034-67d4-4b7e-88d8-a77d301c5df7
 keywords:
-- Evento MouseDown del objeto AxWindowsMediaPlayer de Windows Media Player
+- Evento MouseDown del objeto AxWindowsMediaPlayer Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0779df27f406691903a0362c9eb3a1df993f595f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 73259fab6ffd268e1c9a581a4b7ba18fdfba6c1647b57ef12bcae1c3ab8c04a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700146"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509455"
 ---
 # <a name="mousedown-event-of-the-axwindowsmediaplayer-object"></a>Evento MouseDown del objeto AxWindowsMediaPlayer
 
-El evento MouseDown se produce cuando el usuario presiona un botón del mouse.
+El evento MouseDown tiene lugar cuando el usuario presiona un botón del mouse.
 
 ``` syntax
 [C#]
@@ -47,10 +47,10 @@ El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 | Propiedad    | Descripción                                                                                                                                                                                                                                                                                                                    |
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Nbotón     | Campo de bits System. Int16A con bits correspondientes al botón izquierdo (bit 0), botón derecho (bit 1) y botón central (bit 2). Estos bits corresponden a los valores 1, 2 y 4, respectivamente. Solo se establece uno de los bits, que indica el botón que causó el evento.<br/>                                                |
-| nShiftState | El campo de bits System. Int16A con los bits menos significativos correspondientes a la tecla Mayús (bit 0), la tecla CTRL (bit 1) y la tecla ALT (bit 2). Estos bits corresponden a los valores 1, 2 y 4, respectivamente. Se pueden establecer algunos, todos o ninguno de los bits, lo que indica que se presionan algunas, todas o ninguna de las teclas.<br/> |
-| Efectos          | System. Int32el coordenada x del puntero del mouse en relación con la esquina superior izquierda del control.<br/>                                                                                                                                                                                                                 |
-| fY          | Coordenada y de System. Int32el del puntero del mouse con respecto a la esquina superior izquierda del control.<br/>                                                                                                                                                                                                                 |
+| nButton     | Campo de bits System.Int16A con bits correspondientes al botón izquierdo (bit 0), botón derecho (bit 1) y botón central (bit 2). Estos bits corresponden a los valores 1, 2 y 4, respectivamente. Solo se establece uno de los bits, lo que indica el botón que produjo el evento.<br/>                                                |
+| nShiftState | Campo de bits System.Int16A con los bits menos significativos correspondientes a la tecla MAYÚS (bit 0), la tecla CTRL (bit 1) y la tecla ALT (bit 2). Estos bits corresponden a los valores 1, 2 y 4, respectivamente. Se pueden establecer algunos, todos o ninguno de los bits, lo que indica que se presionan algunas, todas o ninguna de las teclas.<br/> |
+| Fx          | System.Int32La coordenada x del puntero del mouse con respecto a la esquina superior izquierda del control.<br/>                                                                                                                                                                                                                 |
+| Fy          | System.Int32La coordenada y del puntero del mouse con respecto a la esquina superior izquierda del control.<br/>                                                                                                                                                                                                                 |
 
 
 
@@ -62,7 +62,7 @@ El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 | Requisito | Value |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                          |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Ensamblado<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 

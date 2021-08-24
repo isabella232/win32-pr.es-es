@@ -1,11 +1,11 @@
 ---
-title: IWMPMediaCollection setDeleted, método
-description: El método setDeleted mueve el elemento multimedia especificado a la carpeta elementos eliminados. | IWMPMediaCollection setDeleted, método
+title: Método IWMPMediaCollection setDeleted
+description: El método setDeleted mueve el elemento multimedia especificado a la carpeta de elementos eliminados. | Método IWMPMediaCollection setDeleted
 ms.assetid: 3fa7989e-8b98-44e1-93ca-8136aba358ea
 keywords:
-- método setDeleted de Windows Media Player
-- método setDeleted Windows Media Player, interfaz IWMPMediaCollection
-- Interfaz IWMPMediaCollection Windows Media Player, método setDeleted
+- Método setDeleted Reproductor de Windows Media
+- Método setDeleted Reproductor de Windows Media , interfaz IWMPMediaCollection
+- Interfaz IWMPMediaCollection Reproductor de Windows Media método , setDeleted
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 57ccf8cf2d36ab7e4aaf76fdbe5c28582650fcda
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7516d6aab26659fa2bba57bd961671b4dca0f92d367d5d9bb1f048e8fd19eb2e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700334"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119505955"
 ---
-# <a name="iwmpmediacollectionsetdeleted-method"></a>IWMPMediaCollection:: setDeleted (método)
+# <a name="iwmpmediacollectionsetdeleted-method"></a>IWMPMediaCollection::setDeleted (método)
 
-El `setDeleted` método mueve el elemento multimedia especificado a la carpeta elementos eliminados.
+El `setDeleted` método mueve el elemento multimedia especificado a la carpeta de elementos eliminados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,17 +55,17 @@ Implements IWMPMediaCollection.setDeleted
 
 <dl> <dt>
 
-*pItem* \[ de\]
+*pItem* \[ En\]
 </dt> <dd>
 
-Una interfaz **WMPLib. IWMPMedia** para el elemento que se va a desplace.
+Interfaz **WMPLib.IWMPMedia** para el elemento que se va a mover.
 
 </dd> <dt>
 
-*varfIsDeleted* \[ de\]
+*varfIsDeleted* \[ En\]
 </dt> <dd>
 
-Valor **System. Boolean** que especifica si el elemento debe moverse a la carpeta de elementos eliminados. Este valor siempre debe ser **true**.
+Valor **System.Boolean** que especifica si el elemento se debe mover a la carpeta de elementos eliminados. Este valor siempre debe ser **true.**
 
 </dd> </dl>
 
@@ -73,15 +73,15 @@ Valor **System. Boolean** que especifica si el elemento debe moverse a la carpet
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método no quita los archivos del equipo del usuario, simplemente los mueve a la carpeta elementos eliminados.
+Este método no quita archivos del equipo del usuario, simplemente los mueve a la carpeta de elementos eliminados.
 
-Antes de llamar a este método, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Antes de llamar a este método, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente `setDeleted` se usa para trasladar un elemento multimedia determinado a la carpeta elementos eliminados. El método **IsDeleted** comprueba primero si el elemento ya se ha eliminado. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo siguiente se `setDeleted` usa para mover un elemento multimedia determinado a la carpeta de elementos eliminados. El **método isDeleted** comprueba primero si el elemento ya se ha eliminado. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -129,9 +129,9 @@ End If
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

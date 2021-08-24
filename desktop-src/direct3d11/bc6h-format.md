@@ -7,12 +7,12 @@ keywords:
 - DXGI_FORMAT_BC6H
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 92ea15e0275bc478c0708ce08f531d8888a3c84d
-ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
+ms.openlocfilehash: 27422e177e98ecdc53b4152ba0514866f5ad75216e9ef789145d1af882a645d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110335229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119633825"
 ---
 # <a name="bc6h-format"></a>Formato BC6H
 
@@ -53,11 +53,11 @@ BC6H se especifica mediante los siguientes valores de enumeración DXGI \_ FORMA
 
 El formato BC6H se puede usar para los recursos de textura [Texture2D](/windows/desktop/direct3d10/d3d10-graphics-reference-resource-structures) (incluidas las matrices), Texture3D o TextureCube (incluidas las matrices). De forma similar, este formato se aplica a las superficies de mapa de MIP asociadas a estos recursos.
 
-BC6H usa un tamaño de bloque fijo de 16 bytes (128 bits) y un tamaño de mosaico fijo de 4 x 4 texturas. Al igual que con los formatos BC anteriores, las imágenes de textura mayores que el tamaño de mosaico admitido (4x4) se comprimen mediante el uso de varios bloques. Esta identidad de direccionamiento también se aplica a imágenes tridimensionales, mapas MIP, mapas de cubos y matrices de textura. Todos los iconos de imagen deben tener el mismo formato.
+BC6H usa un tamaño de bloque fijo de 16 bytes (128 bits) y un tamaño de mosaico fijo de 4x4 texels. Al igual que con los formatos bc anteriores, las imágenes de textura mayores que el tamaño de mosaico admitido (4x4) se comprimen mediante varios bloques. Esta identidad de direccionamiento también se aplica a imágenes tridimensionales, mapas MIP, mapas de cubo y matrices de textura. Todos los iconos de imagen deben tener el mismo formato.
 
 Algunas notas importantes sobre el formato BC6H:
 
--   BC6H admite la desnormalización de punto flotante, pero no admite INF (infinito) y NaN (no un número). La excepción es el modo firmado de BC6H (DXGI \_ FORMAT \_ BC6H \_ SF16), que admite -INF (infinito negativo). Tenga en cuenta que esta compatibilidad con -INF es simplemente un artefacto del propio formato y no es compatible específicamente con los codificadores para este formato. En general, cuando los codificadores encuentran datos de entrada INF (positivos o negativos) o NaN, deben convertir los datos en el valor de representación no INF máximo permitido y asignar NaN a 0 antes de la \\ compresión.
+-   BC6H admite la desnormalización de punto flotante, pero no admite INF (infinito) ni NaN (no un número). La excepción es el modo firmado de BC6H (DXGI \_ FORMAT \_ BC6H \_ SF16), que admite -INF (infinito negativo). Tenga en cuenta que esta compatibilidad con -INF es simplemente un artefacto del propio formato y no es específicamente compatible con los codificadores para este formato. En general, cuando los codificadores encuentran datos de entrada INF (positivos o negativos) o NaN, deben convertir los datos al valor máximo permitido de representación no INF y asignar NaN a 0 antes de la \\ compresión.
 -   BC6H no admite un canal alfa.
 -   El descodificador BC6H realiza la descompresión antes de realizar el filtrado de texturas.
 -   La descompresión de BC6H debe ser precisa en bits; Es decir, el hardware debe devolver resultados idénticos al descodificador descrito en esta documentación.
@@ -102,13 +102,13 @@ decompress_bc6h(x, y, block)
 
 La tabla siguiente contiene el número de bits y los valores de cada uno de los 14 formatos posibles para los bloques BC6H. 
 
-| Mode | Índices de partición | Partición | Puntos de conexión de color                  | Bits de modo      |
+| Modo | Índices de partición | Partition | Puntos de conexión de color                  | Bits de modo      |
 |------|-------------------|-----------|----------------------------------|----------------|
 | 1    | 46 bits           | 5 bits    | 75 bits (10,555, 10,555, 10,555) | 2 bits (00)    |
 | 2    | 46 bits           | 5 bits    | 75 bits (7666, 7666, 7666)       | 2 bits (01)    |
 | 3    | 46 bits           | 5 bits    | 72 bits (11,555, 11,444, 11,444) | 5 bits (00010) |
-| 4    | 46 bits           | 5 bits    | 72 bits (11,444, 11,555, 11,444) | 5 bits (00110) |
-| 5    | 46 bits           | 5 bits    | 72 bits (11,444, 11,444, 11,555) | 5 bits (01010) |
+| 4    | 46 bits           | 5 bits    | 72 bits (11.444, 11.555, 11.444) | 5 bits (00110) |
+| 5    | 46 bits           | 5 bits    | 72 bits (11.444, 11.444, 11.555) | 5 bits (01010) |
 | 6    | 46 bits           | 5 bits    | 72 bits (9555, 9555, 9555)       | 5 bits (01110) |
 | 7    | 46 bits           | 5 bits    | 72 bits (8666, 8555, 8555)       | 5 bits (10010) |
 | 8    | 46 bits           | 5 bits    | 72 bits (8555, 8666, 8555)       | 5 bits (10110) |
@@ -123,7 +123,7 @@ La tabla siguiente contiene el número de bits y los valores de cada uno de los 
 
  
 
-Los bits de modo pueden identificar de forma única cada formato de esta tabla. Los diez primeros modos se usan para los iconos de dos regiones y el campo de bits de modo puede tener una longitud de dos o cinco bits. Estos bloques también tienen campos para los puntos de conexión de color comprimidos (72 o 75 bits), la partición (5 bits) y los índices de partición (46 bits).
+Cada formato de esta tabla se puede identificar de forma única mediante los bits de modo. Los diez primeros modos se usan para iconos de dos regiones y el campo de bits de modo puede tener dos o cinco bits de longitud. Estos bloques también tienen campos para los puntos de conexión de color comprimidos (72 o 75 bits), la partición (5 bits) y los índices de partición (46 bits).
 
 Para los puntos de conexión de color comprimidos, los valores de la tabla anterior tienen en cuenta la precisión de los puntos de conexión RGB almacenados y el número de bits usados para cada valor de color. Por ejemplo, el modo 3 especifica un nivel de precisión de punto de conexión de color de 11 y el número de bits usados para almacenar los valores delta de los puntos de conexión transformados para los colores rojo, azul y verde (5, 4 y 4 respectivamente). El modo 10 no usa la compresión diferencial y, en su lugar, almacena los cuatro puntos de conexión de color explícitamente.
 
@@ -145,7 +145,7 @@ En esta tabla de conjuntos de particiones, la entrada en negrita y subrayado es 
 
 ![campos de bits para formatos de punto de conexión comprimido bc6h](images/bc6h-headers-med.png)
 
-En esta tabla se muestran los campos de bits de los puntos de conexión comprimidos como una función del formato de punto de conexión, donde cada columna especifica una codificación y cada fila especifica un campo de bits. Este enfoque toma 82 bits para los iconos de dos regiones y 65 bits para los iconos de una región. Por ejemplo, los primeros 5 bits para la codificación one-region 16 4 anterior (específicamente la columna más a la derecha) son \[ \] bits m 4:0, los 10 bits siguientes son bits rw 9:0, y así sucesivamente con los últimos 6 bits que contienen \[ bw \] \[ \] \[ 10:15 \] .
+En esta tabla se muestran los campos de bits de los puntos de conexión comprimidos como una función del formato de punto de conexión, donde cada columna especifica una codificación y cada fila especifica un campo de bits. Este enfoque ocupa 82 bits para los iconos de dos regiones y 65 bits para los iconos de una región. Por ejemplo, los primeros 5 bits para la codificación one-region 16 4 anterior (específicamente la columna más a la derecha) son \[ \] bits m 4:0, los 10 bits siguientes son bits rw 9:0, y así sucesivamente con los últimos 6 bits que contienen \[ bw \] \[ \] \[ 10:15 \] .
 
 Los nombres de campo de la tabla anterior se definen de la siguiente manera:
 
@@ -193,7 +193,7 @@ static void sign_extend_two_region(Pattern &p, IntEndpts endpts[NREGIONS_TWO])
 }
 ```
 
-En el caso de los iconos de una región, el comportamiento es el mismo, solo con el punto \[ final 1 \] quitado.
+En el caso de los iconos de una región, el comportamiento es el mismo, solo con el punto \[ 1 \] eliminado.
 
 ``` syntax
 static void sign_extend_one_region(Pattern &p, IntEndpts endpts[NREGIONS_ONE])
@@ -220,17 +220,17 @@ El descomprimidor debe asegurarse de que los resultados de la transformación in
 
 `B0 = (B0 + A0) & ((1 << p) - 1)`
 
-En el caso de los formatos firmados, los resultados del cálculo diferencial también se deben extender. Si la operación de extensión de signo considera extender ambos signos, donde 0 es positivo y 1 es negativo, la extensión de signo de 0 se encarga de la fijación anterior. De forma equivalente, después de la fijación anterior, solo es necesario firmar un valor de 1 (negativo).
+En el caso de los formatos firmados, los resultados del cálculo diferencial también deben ampliarse. Si la operación de extensión de signo considera extender ambos signos, donde 0 es positivo y 1 es negativo, la extensión de signo de 0 se encarga de la fijación anterior. De forma equivalente, después de la fijación anterior, solo es necesario extender un valor de 1 (negativo).
 
 ## <a name="unquantization-of-color-endpoints"></a>Descuantización de puntos de conexión de color
 
-Dados los puntos de conexión sin comprimir, el siguiente paso consiste en realizar una eliminación de la marca inicial de los puntos de conexión de color. Esto implica tres pasos:
+Dados los puntos de conexión sin comprimir, el siguiente paso consiste en realizar una eliminación de marca inicial de los puntos de conexión de color. Esto implica tres pasos:
 
 -   Un descuantización de las paletas de colores
 -   Interpolación de las paletas
 -   Fin de la descontización
 
-La separación del proceso de desquantización en dos partes (descuantización de la paleta de colores antes de la interpolación y desenlazamiento final después de la interpolación) reduce el número de operaciones de multiplicación necesarias en comparación con un proceso de descesión completo antes de la interpolación de la paleta.
+La separación del proceso de desquantización en dos partes (la desquantización de la paleta de colores antes de la interpolación y la desanquilación final después de la interpolación) reduce el número de operaciones de multiplicación necesarias en comparación con un proceso de desquantización completo antes de la interpolación de la paleta.
 
 El código siguiente muestra el proceso para recuperar estimaciones de los valores de color originales de 16 bits y, a continuación, usar los valores de peso proporcionados para agregar 6 valores de color adicionales a la paleta. La misma operación se realiza en cada canal.
 

@@ -1,7 +1,7 @@
 ---
 description: Finaliza el recurso compartido de IME.
 ms.assetid: aa33b5ed-fd4a-4829-9b7f-d545a4e7bd02
-title: EndIMEShare función)
+title: Función EndIMEShare
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - Imeshare.dll
-ms.openlocfilehash: 2a0d246537f2788afbb200cd35a81f7d6809ad89
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 079a8719aa8e48e8ae880f2ce2a83d5e4d0f89fda85298ec015a3f77acebeb9c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660165"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119653445"
 ---
-# <a name="endimeshare-function"></a>EndIMEShare función)
+# <a name="endimeshare-function"></a>Función EndIMEShare
 
 Finaliza el recurso compartido de IME.
 
@@ -41,17 +41,17 @@ Esta función no tiene parámetros.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función no tiene asociado ningún archivo de encabezado o biblioteca de importación. debe llamarlo mediante las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Esta función no tiene asociada la biblioteca de importación ni el archivo de encabezado; debe llamarlo mediante las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**y GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
-Se debe llamar a esta función después de que se llame a la última función de recurso compartido de IME.
+Se debe llamar a esta función después de llamar a la última función de recurso compartido de IME.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------|-----------------------------------------------------------------------------------------|
 | Archivo DLL<br/> | <dl> <dt>Imeshare.dll</dt> </dl> |
 

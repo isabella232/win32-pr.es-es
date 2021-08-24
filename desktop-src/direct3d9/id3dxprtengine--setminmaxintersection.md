@@ -1,7 +1,7 @@
 ---
-description: Establece las distancias mínima y máxima de intersección entre los objetos 3D.
+description: Establece las distancias mínima y máxima de intersección entre objetos 3D.
 ms.assetid: da825c70-0c55-4303-b78a-a761ba037182
-title: 'ID3DXPRTEngine:: SetMinMaxIntersection (método) (D3DX9Mesh. h)'
+title: Método ID3DXPRTEngine::SetMinMaxIntersection (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 68845f713289c524afc844037ca305909e5b89b0
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 2182714588e5d408c6928a677433e68dac44f09abf5ec6bd4cb4d6df7e4acf02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362629"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119629065"
 ---
-# <a name="id3dxprtenginesetminmaxintersection-method"></a>ID3DXPRTEngine:: SetMinMaxIntersection (método)
+# <a name="id3dxprtenginesetminmaxintersection-method"></a>Método ID3DXPRTEngine::SetMinMaxIntersection
 
-Establece las distancias mínima y máxima de intersección entre los objetos 3D. Estos valores de distancia se pueden usar para controlar la distancia mínima o máxima con la que los objetos pueden sombrear o reflejar la luz. Por ejemplo, el método se puede utilizar para limitar el sombreado de las características cercanas de un modelo 3D.
+Establece las distancias mínima y máxima de intersección entre objetos 3D. Estos valores de distancia se pueden usar para controlar la distancia mínima o máxima que los objetos pueden sombrar o reflejar la luz. Por ejemplo, el método se puede usar para limitar el sombreado de características cercanas de un modelo 3D.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,21 +41,21 @@ HRESULT SetMinMaxIntersection(
 
 <dl> <dt>
 
-*fMin (* \[ de\]
+*fMin* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Distancia de intersección mínima. Debe ser positivo y menor que fMax.
 
 </dd> <dt>
 
-*fMax* \[ de\]
+*fMax* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Distancia máxima de intersección. Si 0,0 f, se usará el valor anterior; de lo contrario, debe ser mayor que fMin (.
+Distancia de intersección máxima. Si es 0,0f, se usará el valor anterior; de lo contrario, debe ser mayor que fMin.
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Distancia máxima de intersección. Si 0,0 f, se usará el valor anterior; de lo
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método no se puede usar en las simulaciones de transferencia Radiance (PRT) precalculadas que se ejecutan en la GPU. Vea [**ID3DXPRTEngine:: ComputeDirectLightingSHGPU**](id3dxprtengine--computedirectlightingshgpu.md).
+Este método no se puede usar en simulaciones de transferencia de radiancia precalutadas (PRT) que se ejecutan en la GPU. Vea [**ID3DXPRTEngine::ComputeDirectLightingSHGPU**](id3dxprtengine--computedirectlightingshgpu.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,8 +75,8 @@ Este método no se puede usar en las simulaciones de transferencia Radiance (PRT
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

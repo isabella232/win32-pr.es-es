@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 4e06b181bb512e16e9caaa0d233ebbd3472bfcf8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6cdaedef52693810519ebb92e6f523afbfe078df68a2a13b7fae7ce0fad98fb1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634545"
 ---
 # <a name="id3dx10meshsetattributetable-method"></a>Método ID3DX10Mesh::SetAttributeTable
 
@@ -46,7 +46,7 @@ HRESULT SetAttributeTable(
 
 Tipo: **const [**D3DX10 \_ ATTRIBUTE \_ RANGE**](d3dx10-attribute-range.md) \***
 
-Puntero a una matriz de estructuras D3DX10 ATTRIBUTE RANGE, que representan \_ las entradas de la tabla de atributos de \_ malla.
+Puntero a una matriz de estructuras D3DX10 ATTRIBUTE RANGE, que \_ representan las entradas de la tabla de atributos de \_ malla.
 
 </dd> <dt>
 
@@ -80,7 +80,7 @@ Si una aplicación realiza un seguimiento de la información de una tabla de atr
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

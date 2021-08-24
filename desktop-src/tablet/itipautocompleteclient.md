@@ -1,7 +1,7 @@
 ---
-description: Permite al cliente llamar al objeto de proveedor de finalización automática del panel de entrada de texto de la aplicación.
+description: Permite al cliente llamar al objeto de proveedor autocompletar del Panel de entrada de texto de la aplicación.
 ms.assetid: 448b8136-ebcb-4116-9a81-a77a37d69e24
-title: Interfaz ITipAutocompleteClient (TipAutoComplete. h)
+title: Interfaz ITipAutocompleteClient (TipAutoComplete.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,36 +13,36 @@ api_type:
 - COM
 api_location:
 - tiptsf.dll
-ms.openlocfilehash: 7b9dad38d0e3f169019934b7e60a09096aced1b9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dac9b1a6c581be8a8fb19df4f812a5866403d949d19739bb8ae99a0fffbe5e79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105717069"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119590295"
 ---
 # <a name="itipautocompleteclient-interface"></a>Interfaz ITipAutocompleteClient
 
-Permite al cliente llamar al objeto de proveedor de finalización automática del panel de entrada de texto de la aplicación.
+Permite al cliente llamar al objeto de proveedor autocompletar del Panel de entrada de texto de la aplicación.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **ITipAutocompleteClient** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **ITipAutocompleteClient** también tiene estos tipos de miembros:
+La **interfaz ITipAutocompleteClient** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ITipAutocompleteClient** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **ITipAutocompleteClient** tiene estos métodos.
+La **interfaz ITipAutocompleteClient** tiene estos métodos.
 
 
 
 | Método                                                              | Descripción                                                                                                                                                          |
 |:--------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**AdviseProvider**](itipautocompleteclient-adviseprovider.md)     | Registra el proveedor con el cliente para permitir que el cliente llame al objeto de proveedor de autocompletar de la aplicación.<br/>                                      |
-| [**PreferredRects**](itipautocompleteclient-preferredrects.md)     | Permite al cliente sugerir dónde colocar la lista de Autocompletar para evitar la superposición del panel de entrada.<br/>                                               |
-| [**RequestShowUI**](itipautocompleteclient-requestshowui.md)       | Determina si el panel de entrada está listo para mostrar la lista de autocompletar.<br/>                                                                             |
+| [**AdviseProvider**](itipautocompleteclient-adviseprovider.md)     | Registra el proveedor con el cliente para permitir que el cliente llame al objeto de proveedor autocompletar de la aplicación.<br/>                                      |
+| [**PreferredRects**](itipautocompleteclient-preferredrects.md)     | Permite al cliente sugerir dónde colocar la lista de autocompletar para evitar que se superponga el Panel de entrada.<br/>                                               |
+| [**RequestShowUI**](itipautocompleteclient-requestshowui.md)       | Determina si el Panel de entrada está listo para que se muestra la lista autocompletar.<br/>                                                                             |
 | [**UnadviseProvider**](itipautocompleteclient-unadviseprovider.md) | Anula el registro del proveedor asociado.<br/>                                                                                                                      |
-| [**UserSelection**](itipautocompleteclient-userselection.md)       | Notifica al panel de entrada que el usuario ha seleccionado algo en la lista de autocompletar y descartar todo el texto restante que todavía no se ha insertado.<br/> |
+| [**UserSelection**](itipautocompleteclient-userselection.md)       | Notifica al Panel de entrada que el usuario ha seleccionado algo en la lista autocompletar y que descarta todo el texto restante que aún no se ha insertado.<br/> |
 
 
 
@@ -52,11 +52,11 @@ La interfaz **ITipAutocompleteClient** tiene estos métodos.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                                   |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                                   |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                                       |
-| Encabezado<br/>                   | <dl> <dt>TipAutoComplete. h (también requiere Peninputpanel \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>TipAutoComplete.h (también requiere Peninputpanel \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Tiptsf.dll</dt> </dl>                                           |
 
 

@@ -1,26 +1,26 @@
 ---
-title: Propiedad PersistCacheDirectory de IMsRdpClientAdvancedSettings
-description: Esta propiedad no es compatible. | Propiedad PersistCacheDirectory de IMsRdpClientAdvancedSettings
+title: IMsRdpClientAdvancedSettings PersistCacheDirectory, propiedad
+description: Esta propiedad no es compatible. | IMsRdpClientAdvancedSettings PersistCacheDirectory, propiedad
 ms.assetid: 4e92a1c8-a9e6-47c5-b231-e5c1a7e0701c
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad PersistCacheDirectory
-- Propiedad PersistCacheDirectory Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings, propiedad PersistCacheDirectory
-- Propiedad PersistCacheDirectory Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings2, propiedad PersistCacheDirectory
-- Propiedad PersistCacheDirectory Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings3, propiedad PersistCacheDirectory
-- Propiedad PersistCacheDirectory Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings4, propiedad PersistCacheDirectory
-- Propiedad PersistCacheDirectory Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad PersistCacheDirectory
-- Propiedad PersistCacheDirectory Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad PersistCacheDirectory
-- Propiedad PersistCacheDirectory Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad PersistCacheDirectory
-- Propiedad PersistCacheDirectory Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad PersistCacheDirectory
+- Propiedad PersistCacheDirectory Servicios de Escritorio remoto
+- Propiedad PersistCacheDirectory Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad PersistCacheDirectory
+- Propiedad PersistCacheDirectory Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad PersistCacheDirectory
+- Propiedad PersistCacheDirectory Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad PersistCacheDirectory
+- Propiedad PersistCacheDirectory Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad PersistCacheDirectory
+- Propiedad PersistCacheDirectory Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad PersistCacheDirectory
+- Propiedad PersistCacheDirectory Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad PersistCacheDirectory
+- Propiedad PersistCacheDirectory Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad PersistCacheDirectory
+- Propiedad PersistCacheDirectory Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad PersistCacheDirectory
 topic_type:
 - apiref
 api_name:
@@ -46,20 +46,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dab6b8e6c20aca6032cb8e8538a77af0e0cf5afe
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 39c5167b56c53d01501dd59f2577b22d1c28acb2c2314bd52a86e9b55e6feb07
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105678673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119574215"
 ---
-# <a name="imsrdpclientadvancedsettingspersistcachedirectory-property"></a>IMsRdpClientAdvancedSettings::P propiedad ersistCacheDirectory
+# <a name="imsrdpclientadvancedsettingspersistcachedirectory-property"></a>IMsRdpClientAdvancedSettings::P ersistCacheDirectory
 
 Esta propiedad no es compatible.
 
 Esta propiedad es de solo escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -72,17 +72,17 @@ HRESULT put_PersistCacheDirectory(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-La nueva ruta de acceso.
+Nueva ruta de acceso.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ false**.
+Devuelve **S \_ FALSE.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                       |

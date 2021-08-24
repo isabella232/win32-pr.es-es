@@ -1,7 +1,7 @@
 ---
-description: Obtenga información sobre el método de constructor CMediaPosition. CMediaPosition (Ctlutil. h). Este método usa los parámetros ' pName ' y ' pUnk '.
+description: Obtenga información sobre el método de constructor CMediaPosition.CMediaPosition (Ctlutil.h). Este método usa los parámetros "pName" y "pUnk".
 ms.assetid: 18a7785c-30c6-43b8-9a41-542a8424522c
-title: Constructor CMediaPosition. CMediaPosition (Ctlutil. h)-pName, parámetros pUnk
+title: Constructor CMediaPosition.CMediaPosition (Ctlutil.h):pName, pUnk parameters
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e65f034e5f8857b21bc706bce45aa74c3c3cf966
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 0df3337c07ed678354515bdf0c665a5d6157f158ac6c2370a8981d8e5028b27e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "105670271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634814"
 ---
-# <a name="cmediapositioncmediaposition-constructor-ctlutilh---pname-punk-parameters"></a>Constructor CMediaPosition. CMediaPosition (Ctlutil. h)-pName, parámetros pUnk
+# <a name="cmediapositioncmediaposition-constructor-ctlutilh---pname-punk-parameters"></a>Constructor CMediaPosition.CMediaPosition (Ctlutil.h): pName, parámetros pUnk
 
-Método de constructor.
+Método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,14 +46,14 @@ CMediaPosition(
 *pName* 
 </dt> <dd>
 
-Puntero al nombre del objeto, para la depuración. Asigne este parámetro en la memoria estática.
+Puntero al nombre del objeto para fines de depuración. Asigne este parámetro en la memoria estática.
 
 </dd> <dt>
 
-*pUnk* 
+*Punk* 
 </dt> <dd>
 
-Puntero al propietario de este objeto, o **null** si no se agrega el objeto.
+Puntero al propietario de este objeto o **NULL** si el objeto no se agrega.
 
 </dd> </dl>
 
@@ -61,14 +61,14 @@ Puntero al propietario de este objeto, o **null** si no se agrega el objeto.
 
 | Requisito | Value |
 |-|-|
-| Encabezado | Ctlutil. h (incluir streams. h) |
-| Biblioteca| Strmbase. lib (compilaciones comerciales); Strmbasd. lib (compilaciones de depuración) |
+| Encabezado | Ctlutil.h (incluir Secuencias.h) |
+| Biblioteca| Strmbase.lib (compilaciones comerciales); Strmbasd.lib (compilaciones de depuración) |
 
 ## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**Clase CMediaPosition**](cmediaposition.md)
+[**CMediaPosition (clase)**](cmediaposition.md)
 </dt> </dl>
 
  

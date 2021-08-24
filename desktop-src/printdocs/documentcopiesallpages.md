@@ -4,16 +4,16 @@ ms.assetid: 6319e8fc-787f-4bc8-8436-1b498b3882d2
 title: DocumentCopiesAllPages
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 05bf82c23b764f3fe1f8257f4cdb2e7fa03374bd
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: dc9ca45514896984f3edfa19eb2e703270883fe67b9d9b1a61806fff9a567d4e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409448"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119353945"
 ---
 # <a name="documentcopiesallpages"></a>DocumentCopiesAllPages
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Especifica el número de copias de un documento.
 
@@ -78,7 +78,7 @@ En la tabla siguiente se describen las características de las variables definid
 | MaxValue<br/>     | integer<br/> | no definido<br/>         |
 | MinValue<br/>     | integer<br/> | 1<br/>                 |
 | Mandatory<br/>    | string<br/>  | psk:Unconditional<br/> |
-| Múltiple<br/>     | integer<br/> | 1<br/>                 |
+| Varios<br/>     | integer<br/> | 1<br/>                 |
 | UnitType<br/>     | string<br/>  | Copias<br/>            |
 
 

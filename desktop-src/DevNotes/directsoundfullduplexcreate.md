@@ -1,7 +1,7 @@
 ---
-description: La función DirectSoundFullDuplexCreate se documenta con un nombre diferente. Para obtener la documentación completa de esta función, vea DirectSoundFullDuplexCreate8.
+description: La función DirectSoundFullDuplexCreate se documenta con un nombre diferente. Para obtener documentación completa de esta función, vea DirectSoundFullDuplexCreate8.
 ms.assetid: 321d6dd5-b9bd-4cb9-93cb-8db7b7792579
-title: Función DirectSoundFullDuplexCreate (dsound. h)
+title: Función DirectSoundFullDuplexCreate (Dsound.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Dsound.dll
-ms.openlocfilehash: 947f31d67a007e050f4ed031e2a15c5964fa63a1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 52a60c3cf77d1416cfe1d096b17c0892f2590b74894e09c325ad1c530c07ac22
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649891"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119654125"
 ---
-# <a name="directsoundfullduplexcreate-function"></a>DirectSoundFullDuplexCreate función)
+# <a name="directsoundfullduplexcreate-function"></a>Función DirectSoundFullDuplexCreate
 
-La función **DirectSoundFullDuplexCreate** se documenta con un nombre diferente. Para obtener la documentación completa de esta función, vea [DirectSoundFullDuplexCreate8](/previous-versions//bb219695(v=vs.85)).
+La **función DirectSoundFullDuplexCreate** se documenta con un nombre diferente. Para obtener documentación completa de esta función, [vea DirectSoundFullDuplexCreate8](/previous-versions//bb219695(v=vs.85)).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,7 +44,7 @@ HRESULT DirectSoundFullDuplexCreate(
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,7 +52,7 @@ Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo con
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dsound. h</dt> </dl>   |
+| Encabezado<br/> | <dl> <dt>Dsound.h</dt> </dl>   |
 | Archivo DLL<br/>    | <dl> <dt>Dsound.dll</dt> </dl> |
 
 

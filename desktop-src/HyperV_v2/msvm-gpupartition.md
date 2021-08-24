@@ -1,7 +1,7 @@
 ---
 description: Representa el estado de la partición de GPU.
 ms.assetid: 319b37d5-b5f0-4251-9482-316347a9015b
-title: Msvm_GpuPartition (clase)
+title: Msvm_GpuPartition clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: cc0975644609832c692f5522cc756240f7a5bff6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 601f1c10f2f9822972496097b8061859149eb5b862562b84fe4f755768248286
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686955"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119523285"
 ---
-# <a name="msvm_gpupartition-class"></a>MSVM \_ GpuPartition (clase)
+# <a name="msvm_gpupartition-class"></a>Clase GpuPartition de Msvm \_
 
 Representa el estado de la partición de GPU.
 
@@ -43,13 +43,13 @@ class Msvm_GpuPartition : CIM_LogicalDevice
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ GpuPartition** tiene estos tipos de miembros:
+La **clase \_ GpuPartition de Msvm** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ GpuPartition** tiene estas propiedades.
+La **clase \_ GpuPartition de Msvm** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -62,20 +62,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cadena que contiene la ruta de acceso de la instancia del dispositivo que identifica el dispositivo de partición GPU.
+Cadena que contiene la ruta de acceso de la instancia del dispositivo que identifica el dispositivo de partición de GPU.
 
 </dd> <dt>
 
 **PartitionId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El ID. de partición del dispositivo de partición GPU.
+Identificador de partición del dispositivo de partición de GPU.
 
 </dd> <dt>
 
@@ -88,7 +88,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-LUID de la función virtual, que representa una partición de GPU.
+La función virtual LUID, que representa una partición de GPU.
 
 </dd> </dl>
 
@@ -96,12 +96,12 @@ LUID de la función virtual, que representa una partición de GPU.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1703 \[\]<br/>                                               |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1703 \[\]<br/>                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -110,7 +110,7 @@ LUID de la función virtual, que representa una partición de GPU.
 
 <dl> <dt>
 
-[**LogicalDevice de CIM \_**](cim-logicaldevice.md)
+[**\_Dispositivo lógico CIM**](cim-logicaldevice.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de ICM_SETSTATE (VFW. h)
-description: El \_ mensaje de ICM SETSTATE informa a un controlador de compresión de vídeo para establecer el estado del compresor. Puede enviar este mensaje explícitamente o mediante la macro ICSetState.
+title: ICM_SETSTATE mensaje (Vfw.h)
+description: El ICM SETSTATE notifica a un controlador de compresión \_ de vídeo que establezca el estado del resalte. Puede enviar este mensaje explícitamente o mediante la macro ICSetState.
 ms.assetid: d1a91847-2893-4c8b-9ca1-02db71ec2c81
 keywords:
-- Mensaje de ICM_SETSTATE de Windows multimedia
+- ICM_SETSTATE mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 230e0aaf3752016efd276d7d55624ee2abb4f8e0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6ea6cd7aa0314520a30e293a8f029920c22b8baa58e995eed7ff9e5a96dd1b7b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105677021"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119525815"
 ---
-# <a name="icm_setstate-message"></a>Mensaje de ICM \_ SETSTATE
+# <a name="icm_setstate-message"></a>\_ICM Mensaje SETSTATE
 
-El mensaje de **ICM \_ SETSTATE** informa a un controlador de compresión de vídeo para establecer el estado del compresor. Puede enviar este mensaje explícitamente o mediante la macro [**ICSetState**](/windows/desktop/api/Vfw/nf-vfw-icsetstate) .
+El **ICM \_ SETSTATE** notifica a un controlador de compresión de vídeo que establezca el estado del resalte. Puede enviar este mensaje explícitamente o mediante la macro [**ICSetState.**](/windows/desktop/api/Vfw/nf-vfw-icsetstate)
 
 
 ```C++
@@ -38,14 +38,14 @@ lParam = (DWORD_PTR) cb;
 
 <dl> <dt>
 
-<span id="pv"></span><span id="PV"></span>*FV*
+<span id="pv"></span><span id="PV"></span>*Pv*
 </dt> <dd>
 
-Puntero a un bloque de memoria que contiene datos de configuración. Puede especificar **null** para este parámetro a fin de restablecer el compresor a su estado predeterminado.
+Puntero a un bloque de memoria que contiene datos de configuración. Puede especificar **NULL para** este parámetro a fin de restablecer el estado predeterminado del objeto.
 
 </dd> <dt>
 
-<span id="cb"></span><span id="CB"></span>*CB*
+<span id="cb"></span><span id="CB"></span>*Cb*
 </dt> <dd>
 
 Tamaño, en bytes, del bloque de memoria.
@@ -54,11 +54,11 @@ Tamaño, en bytes, del bloque de memoria.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el número de bytes utilizados por el compresor si es correcto o cero de lo contrario.
+Devuelve el número de bytes usados por el resalte si es correcto o cero en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La información que usa este mensaje es privada y específica de un compresor determinado. Las aplicaciones cliente deben usar este mensaje solo para restaurar la información obtenida previamente con el mensaje [**\_ GETSTATE ICM**](icm-getstate.md) y deben usar el mensaje de [**\_ configuración de ICM**](icm-configure.md) para ajustar la configuración de un controlador de compresión de vídeo.
+La información utilizada por este mensaje es privada y específica de un determinado resalte. Las aplicaciones cliente solo deben usar este mensaje para restaurar la información obtenida anteriormente con el mensaje [**\_ GETSTATE**](icm-getstate.md) de ICM y deben usar el mensaje [**\_ ICM CONFIGURE**](icm-configure.md) para ajustar la configuración de un controlador de compresión de vídeo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,7 +68,7 @@ La información que usa este mensaje es privada y específica de un compresor de
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

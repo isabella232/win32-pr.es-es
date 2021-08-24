@@ -1,11 +1,11 @@
 ---
-title: Método CANCEL IBackgroundCopyJob (Deliveryoptimization. h)
-description: Elimina el trabajo de la cola de transferencia y quita los archivos temporales relacionados del cliente (descargas) y del servidor (cargas).
+title: Método Cancel de IBackgroundCopyJob (Deliveryoptimization.h)
+description: Elimina el trabajo de la cola de transferencia y quita los archivos temporales relacionados del cliente (descargas) y el servidor (cargas).
 ms.assetid: DC502DC2-1335-476F-A1B8-FDB6BA595FF1
 keywords:
 - Método Cancel
-- Método CANCEL, interfaz IBackgroundCopyJob
-- Interfaz IBackgroundCopyJob, método CANCEL
+- Método Cancel, interfaz IBackgroundCopyJob
+- Interfaz IBackgroundCopyJob, método Cancel
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f72cdcea82ef7db30de141af295bb74594a7a630
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c30fa0d7dcc4aa6137fbfef8d40a91d4839bc59d624c8ba2c942fb6c2041fccb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905186"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119635855"
 ---
-# <a name="ibackgroundcopyjobcancel-method"></a>IBackgroundCopyJob:: CANCEL (método)
+# <a name="ibackgroundcopyjobcancel-method"></a>IBackgroundCopyJob::Cancel (método)
 
-Elimina el trabajo de la cola de transferencia y quita los archivos temporales relacionados del cliente (descargas) y del servidor (cargas).
+Elimina el trabajo de la cola de transferencia y quita los archivos temporales relacionados del cliente (descargas) y el servidor (cargas).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,22 +43,22 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este método devuelve los siguientes valores **HRESULT** , así como otros.
+Este método devuelve los siguientes **valores HRESULT,** así como otros.
 
 
 
 | Código devuelto                                                                                          | Descripción                                                                                              |
 |------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| <dl> <dt>S_OK * * * *</dt> </dl>             | El trabajo se canceló correctamente.<br/>                                                                |
-| <dl> <dt>**DO_E_INVALID_STATE**</dt> </dl> | No se puede cancelar un trabajo cuyo estado sea BG_JOB_STATE_CANCELLED o BG_JOB_STATE_ACKNOWLEDGED.<br/> |
+| <dl> <dt>S_OK**</dt> </dl>             | El trabajo se canceló correctamente.<br/>                                                                |
+| <dl> <dt>**DO_E_INVALID_STATE**</dt> </dl> | No se puede cancelar un trabajo cuyo estado BG_JOB_STATE_CANCELLED o BG_JOB_STATE_ACKNOWLEDGED.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Puede cancelar un trabajo en cualquier momento; sin embargo, el trabajo no se puede recuperar una vez cancelado.
+Puede cancelar un trabajo en cualquier momento; sin embargo, el trabajo no se puede recuperar después de que se cancele.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,11 +66,11 @@ Puede cancelar un trabajo en cualquier momento; sin embargo, el trabajo no se pu
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1709 \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Windows Server, versión 1709 \[ solo para aplicaciones de escritorio\]<br/>                                       |
-| Encabezado<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>DeliveryOptimization. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Dosvc. lib</dt> </dl>                |
+| Cliente mínimo compatible<br/> | Windows 10, versión 1709 \[ solo aplicaciones de escritorio\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                       |
+| Header<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | Archivo DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
 | IID<br/>                      | IID_IBackgroundCopyJob se define como 37668D37-507E-4160-9316-26306D150B12<br/>               |
 
@@ -83,13 +83,13 @@ Puede cancelar un trabajo en cualquier momento; sin embargo, el trabajo no se pu
 [**IBackgroundCopyJob**](ibackgroundcopyjob-.md)
 </dt> <dt>
 
-[**IBackgroundCopyJob:: Complete**](ibackgroundcopyjob-complete.md)
+[**IBackgroundCopyJob::Complete**](ibackgroundcopyjob-complete.md)
 </dt> <dt>
 
-[**IBackgroundCopyJob:: resume**](ibackgroundcopyjob-resume.md)
+[**IBackgroundCopyJob::Resume**](ibackgroundcopyjob-resume.md)
 </dt> <dt>
 
-[**IBackgroundCopyJob:: Suspend**](ibackgroundcopyjob-suspend.md)
+[**IBackgroundCopyJob::Suspend**](ibackgroundcopyjob-suspend.md)
 </dt> </dl>
 
  

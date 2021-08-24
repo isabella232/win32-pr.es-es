@@ -1,7 +1,7 @@
 ---
 description: Describe un parámetro utilizado para un objeto de efecto.
 ms.assetid: 60d19b52-67ef-4903-bbde-922a8fac1ad8
-title: D3DXPARAMETER_DESC estructura (D3dx9effect. h)
+title: D3DXPARAMETER_DESC estructura (D3dx9effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9effect.h
-ms.openlocfilehash: 2256e24daa6dc8b6e5da1528e9a5e5aefce8ec99
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a12541e9bfb33979b11f8198e218a3eb474f948aeb8c74982a5369eed782eaa3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119631155"
 ---
 # <a name="d3dxparameter_desc-structure"></a>D3DXPARAMETER \_ DESC (estructura)
 
@@ -74,29 +74,29 @@ Significado semántico, también denominado uso.
 **Clase**
 </dt> <dd>
 
-Type: **[ **\_ clase D3DXPARAMETER**](./d3dxparameter-class.md)**
+Tipo: **[ **D3DXPARAMETER \_ (CLASE)**](./d3dxparameter-class.md)**
 
 </dd> <dd>
 
-Clase de parámetro. Establézcalo en uno de los valores de la [**\_ clase D3DXPARAMETER**](./d3dxparameter-class.md).
+Clase de parámetro. Establezca esta propiedad en uno de los valores de [**D3DXPARAMETER \_ CLASS**](./d3dxparameter-class.md).
 
 </dd> <dt>
 
 **Tipo**
 </dt> <dd>
 
-Tipo: **[ **D3DXPARAMETER \_ Type**](./d3dxparameter-type.md)**
+Tipo: **[ **D3DXPARAMETER \_ TYPE**](./d3dxparameter-type.md)**
 
 </dd> <dd>
 
-Tipo de parámetro. Establézcalo en uno de los valores del [**\_ tipo D3DXPARAMETER**](./d3dxparameter-type.md).
+Tipo de parámetro. Establezca esta propiedad en uno de los valores de [**D3DXPARAMETER \_ TYPE**](./d3dxparameter-type.md).
 
 </dd> <dt>
 
 **Filas**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -107,7 +107,7 @@ Número de filas de la matriz.
 **Columnas**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -118,7 +118,7 @@ Número de columnas de la matriz.
 **Elementos**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -126,10 +126,10 @@ Número de elementos de la matriz.
 
 </dd> <dt>
 
-**Anotaciones**
+**anotaciones**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -140,7 +140,7 @@ Número de anotaciones.
 **StructMembers**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -155,14 +155,14 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Atributos de parámetro. Vea [constantes de efecto](dx9-graphics-reference-effects-constants.md).
+Atributos de parámetro. Vea [Constantes de efecto](dx9-graphics-reference-effects-constants.md).
 
 </dd> <dt>
 
 **Bytes**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -176,7 +176,7 @@ Tamaño del parámetro, en bytes.
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9effect. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9effect.h</dt> </dl> |
 
 
 
@@ -184,7 +184,7 @@ Tamaño del parámetro, en bytes.
 
 <dl> <dt>
 
-[Estructuras de efectos](dx9-graphics-reference-effects-structures.md)
+[Estructuras de efecto](dx9-graphics-reference-effects-structures.md)
 </dt> </dl>
 
  

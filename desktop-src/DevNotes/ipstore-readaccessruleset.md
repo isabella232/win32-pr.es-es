@@ -1,7 +1,7 @@
 ---
 description: Lee las reglas de acceso para un tipo determinado.
 ms.assetid: fd569e7f-ca5c-4571-bbaa-c669e8780a97
-title: 'IPStore:: ReadAccessRuleSet (método) (pstore. h)'
+title: Método IPStore::ReadAccessRuleSet (Pstore.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Pstorec.dll
-ms.openlocfilehash: f69c206bde67c2ddf9ed87ba0c50633ab9c15bc3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d22f56c14df4d11a8979065ede81ab8418909033ffd816a233a18c51af7f66c5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649962"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119749755"
 ---
-# <a name="ipstorereadaccessruleset-method"></a>IPStore:: ReadAccessRuleSet (método)
+# <a name="ipstorereadaccessruleset-method"></a>Método IPStore::ReadAccessRuleSet
 
-\[El almacenamiento protegido (pstore) está disponible para su uso en Windows Server 2003 y Windows XP. Solo está disponible para las operaciones de solo lectura en Windows Server 2008 y Windows Vista, pero puede no estar disponible en las versiones posteriores. Pstore usa una implementación anterior de la protección de datos. Se recomienda encarecidamente a los desarrolladores que aprovechen la protección de datos más segura proporcionada por las funciones [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) y [**CryptUnprotectData**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata) .\]
+\[La Storage protegida (Pstore) está disponible para su uso en Windows Server 2003 y Windows XP. Solo está disponible para operaciones de solo lectura en Windows Server 2008 y Windows Vista, pero puede que no esté disponible en versiones posteriores. Pstore usa una implementación anterior de la protección de datos. Se recomienda encarecidamente a los desarrolladores que aprovechen la protección de datos más segura que proporcionan las funciones [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) y [**CryptUnprotectData.**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata)\]
 
 \[Este método no se implementa.\]
 
@@ -48,42 +48,42 @@ HRESULT ReadAccessRuleSet(
 
 <dl> <dt>
 
-*Clave* \[ de de\]
+*Clave* \[ En\]
 </dt> <dd>
 
 Reservado.
 
 </dd> <dt>
 
-*pType* \[ de\]
+*pType* \[ En\]
 </dt> <dd>
 
 Reservado.
 
 </dd> <dt>
 
-*pSubtype* \[ de\]
+*pSubtype* \[ En\]
 </dt> <dd>
 
 Reservado.
 
 </dd> <dt>
 
-*Pinfo* \[ de\]
+*pInfo* \[ En\]
 </dt> <dd>
 
 Reservado.
 
 </dd> <dt>
 
-*ppRules* \[ de\]
+*ppRules* \[ En\]
 </dt> <dd>
 
 Reservado.
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
 Reservado.
@@ -92,7 +92,7 @@ Reservado.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Siempre se producirá un error en las llamadas a este método.
+Las llamadas a este método siempre producirán un error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -100,7 +100,7 @@ Siempre se producirá un error en las llamadas a este método.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Pstore. h</dt> </dl>    |
+| Encabezado<br/> | <dl> <dt>Pstore.h</dt> </dl>    |
 | Archivo DLL<br/>    | <dl> <dt>Pstorec.dll</dt> </dl> |
 
 

@@ -1,11 +1,11 @@
 ---
-title: Método Modify de la clase MicrosoftDNS_MDType
-description: El método Modify actualiza un registro de recursos de agente de correo para el dominio (MD).
+title: Método Modify de la MicrosoftDNS_MDType clase
+description: El método Modify actualiza un registro de recursos del Agente de correo para dominio (MD).
 ms.assetid: d14c8ada-d715-489f-9956-a940b94006e5
 keywords:
-- Modificar DNS de método
-- Modificar el método DNS, MicrosoftDNS_MDType clase
-- MicrosoftDNS_MDType de clase DNS, Modify (método)
+- Modificación del DNS del método
+- Modify method DNS , MicrosoftDNS_MDType class
+- MicrosoftDNS_MDType clase DNS , Método Modify
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 78ed5e3a8d7f819447d256ba3bce31f4eaa6986a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a8c402a753394c5ca7c12acf212377823a87d16e5d17f0d97981ab5e75d8a537
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150258"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119527265"
 ---
-# <a name="modify-method-of-the-microsoftdns_mdtype-class"></a>Método Modify de la \_ clase MicrosoftDNS MDType
+# <a name="modify-method-of-the-microsoftdns_mdtype-class"></a>Método Modify de la clase MDType de MicrosoftDNS \_
 
-El método **Modify** actualiza un registro de recursos de agente de correo para el dominio (MD).
+El **método Modify** actualiza un registro de recursos del Agente de correo para dominio (MD).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,21 +44,21 @@ void Modify(
 
 <dl> <dt>
 
-*TTL* \[ de en, opcional\]
+*TTL* \[ in, opcional\]
 </dt> <dd>
 
 Tiempo, en segundos, que un solucionador DNS puede almacenar en caché el RR.
 
 </dd> <dt>
 
-*MDHost* \[ en, opcional\]
+*MDHost* \[ in, opcional\]
 </dt> <dd>
 
 Cadena que representa el host de entrega de correo.
 
 </dd> <dt>
 
-*RR* \[ out, Ref\]
+*RR* \[ out, ref\]
 </dt> <dd>
 
 Referencia al objeto modificado.
@@ -69,9 +69,9 @@ Referencia al objeto modificado.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los parámetros no especificados se dejan sin cambios en el registro modificado.
+Cualquier parámetro no especificado se deja sin cambios en el registro modificado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -82,7 +82,7 @@ Los parámetros no especificados se dejan sin cambios en el registro modificado.
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Espacio de nombres<br/>                | \\MicrosoftDNS raíz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -93,10 +93,10 @@ Los parámetros no especificados se dejan sin cambios en el registro modificado.
 [**MicrosoftDNS \_ MDType**](microsoftdns-mdtype.md)
 </dt> <dt>
 
-[**Método CreateInstanceFromPropertyData de la \_ clase MicrosoftDNS MDType**](microsoftdns-mdtype-createinstancefrompropertydata.md)
+[**Método CreateInstanceFromPropertyData de la clase MDType de MicrosoftDNS \_**](microsoftdns-mdtype-createinstancefrompropertydata.md)
 </dt> <dt>
 
-[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
+[**ResourceRecord de MicrosoftDNS \_**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

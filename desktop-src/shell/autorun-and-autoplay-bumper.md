@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 63a0e2161a4c5479864116322d2c87997c4d779e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1e93affa174ba51361e268bf25a978ee62c544da5de2b04cefe25bd4cf5efd4c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119593525"
 ---
 # <a name="autorun-and-autoplay"></a>Ejecución automática y reproducción automática
 
--   [Creación de una aplicación de CD-ROM habilitada para AutoRun](autoplay.md)
+-   [Creación de una aplicación de CD-ROM habilitada para ejecución automática](autoplay.md)
 -   [Uso de la reproducción automática de hardware](autorun2k-intro.md)
 
  

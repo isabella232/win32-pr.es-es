@@ -1,7 +1,7 @@
 ---
-description: Establece los parámetros de desplazamiento de la geometría de malla.
+description: Establece parámetros de desplazamiento de geometría de malla.
 ms.assetid: 4c78e5b3-fb63-4341-a811-5531cf9564e7
-title: 'ID3DXPatchMesh:: SetDisplaceParam (método) (D3DX9Mesh. h)'
+title: Método ID3DXPatchMesh::SetDisplaceParam (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d1d59791859e0330415512db1551709729455d0d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 84445c3d18fa38bbeff4085c6da1fda191bb6ca5bbe147c17f3f5f8769d2a63d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105670246"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119629205"
 ---
-# <a name="id3dxpatchmeshsetdisplaceparam-method"></a>ID3DXPatchMesh:: SetDisplaceParam (método)
+# <a name="id3dxpatchmeshsetdisplaceparam-method"></a>Método ID3DXPatchMesh::SetDisplaceParam
 
-Establece los parámetros de desplazamiento de la geometría de malla.
+Establece parámetros de desplazamiento de geometría de malla.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ HRESULT SetDisplaceParam(
 
 <dl> <dt>
 
-*Textura* \[ de\]
+*Textura* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DBASETEXTURE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dbasetexture9)**
@@ -54,48 +54,48 @@ Textura que contiene los datos de desplazamiento.
 
 </dd> <dt>
 
-*MinFilter* \[ de\]
+*MinFilter* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **D3DTEXTUREFILTERTYPE**](./d3dtexturefiltertype.md)**
 
-Nivel de minificación. Para obtener más información, vea [**D3DTEXTUREFILTERTYPE**](./d3dtexturefiltertype.md).
+Nivel de minificación. Para obtener más información, [**vea D3DTEXTUREFILTERTYPE**](./d3dtexturefiltertype.md).
 
 </dd> <dt>
 
-*MagFilter* \[ de\]
+*MagFilter* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **D3DTEXTUREFILTERTYPE**](./d3dtexturefiltertype.md)**
 
-Nivel de ampliación. Para obtener más información, vea [**D3DTEXTUREFILTERTYPE**](./d3dtexturefiltertype.md).
+Nivel de ampliación. Para obtener más información, [**vea D3DTEXTUREFILTERTYPE**](./d3dtexturefiltertype.md).
 
 </dd> <dt>
 
-*MipFilter* \[ de\]
+*MipFilter* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **D3DTEXTUREFILTERTYPE**](./d3dtexturefiltertype.md)**
 
-Nivel de filtro MIP. Para obtener más información, vea [**D3DTEXTUREFILTERTYPE**](./d3dtexturefiltertype.md).
+Nivel de filtro mip. Para obtener más información, [**vea D3DTEXTUREFILTERTYPE**](./d3dtexturefiltertype.md).
 
 </dd> <dt>
 
-*Ajustar* \[ de\]
+*Encapsulado* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **D3DTEXTUREADDRESS**](./d3dtextureaddress.md)**
 
-Modo de ajuste de dirección de textura. Para obtener más información, consulte [ **D3DTEXTUREADDRESS**](./d3dtextureaddress.md)
+Modo de encapsulado de direcciones de textura. Para obtener más información, [ **vea D3DTEXTUREADDRESS.**](./d3dtextureaddress.md)
 
 </dd> <dt>
 
-*dwLODBias* \[ de\]
+*dwLODBias* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Nivel de valor de diferencia de detalle.
+Nivel de valor de sesgo de detalle.
 
 </dd> </dl>
 
@@ -103,11 +103,11 @@ Nivel de valor de diferencia de detalle.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los mapas de desplazamiento solo pueden ser texturas 2D. Mipmapping se omite para la teselación no adaptable.
+Los mapas de desplazamiento solo pueden ser texturas 2D. Mipmapping se omite para la teselación no pornóptica.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -115,8 +115,8 @@ Los mapas de desplazamiento solo pueden ser texturas 2D. Mipmapping se omite par
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

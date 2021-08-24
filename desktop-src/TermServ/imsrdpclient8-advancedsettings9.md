@@ -1,16 +1,16 @@
 ---
-title: Propiedad AdvancedSettings9 de IMsRdpClient8
+title: Propiedad IMsRdpClient8 AdvancedSettings9
 description: Contiene un objeto que admite la interfaz IMsRdpClientAdvancedSettings8.
 ms.assetid: eb7bf118-15e7-4a11-91b1-e48f18afb436
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad AdvancedSettings9
-- Propiedad AdvancedSettings9 Servicios de Escritorio remoto, interfaz IMsRdpClient8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient8, propiedad AdvancedSettings9
-- Propiedad AdvancedSettings9 Servicios de Escritorio remoto, interfaz IMsRdpClient9
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient9, propiedad AdvancedSettings9
-- Propiedad AdvancedSettings9 Servicios de Escritorio remoto, interfaz IMsRdpClient10
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient10, propiedad AdvancedSettings9
+- Propiedad AdvancedSettings9 Servicios de Escritorio remoto
+- Propiedad AdvancedSettings9 Servicios de Escritorio remoto , interfaz IMsRdpClient8
+- Interfaz IMsRdpClient8 Servicios de Escritorio remoto , propiedad AdvancedSettings9
+- Propiedad AdvancedSettings9 Servicios de Escritorio remoto , interfaz IMsRdpClient9
+- Interfaz IMsRdpClient9 Servicios de Escritorio remoto , propiedad AdvancedSettings9
+- Propiedad AdvancedSettings9 Servicios de Escritorio remoto , interfaz IMsRdpClient10
+- Interfaz IMsRdpClient10 Servicios de Escritorio remoto , propiedad AdvancedSettings9
 topic_type:
 - apiref
 api_name:
@@ -26,16 +26,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e5fce4c6f07b0c6c798d613e5312b3ae2b258c9c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d8ea5d275a215d55bd324d18ad8b9b3b771838f07441cb492f39f420a1260c89
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686242"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119574375"
 ---
-# <a name="imsrdpclient8advancedsettings9-property"></a>IMsRdpClient8:: AdvancedSettings9 (propiedad)
+# <a name="imsrdpclient8advancedsettings9-property"></a>Propiedad IMsRdpClient8::AdvancedSettings9
 
-Contiene un objeto que admite la interfaz [**IMsRdpClientAdvancedSettings8**](imsrdpclientadvancedsettings8.md) .
+Contiene un objeto que admite la [**interfaz IMsRdpClientAdvancedSettings8.**](imsrdpclientadvancedsettings8.md)
 
 Esta propiedad es de solo lectura.
 
@@ -52,7 +52,7 @@ HRESULT get_AdvancedSettings9(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Una interfaz [**IMsRdpClientAdvancedSettings8**](imsrdpclientadvancedsettings8.md) que representa el objeto de configuración.
+Interfaz [**IMsRdpClientAdvancedSettings8**](imsrdpclientadvancedsettings8.md) que representa el objeto de configuración.
 
 ## <a name="requirements"></a>Requisitos
 

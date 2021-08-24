@@ -1,7 +1,7 @@
 ---
 description: El método UsingImageAllocator indica si el asignador actual es un objeto CImageAllocator.
 ms.assetid: 842bbcbc-2cc8-4e9d-b6c0-e07f7e472ca1
-title: Método CDrawImage. UsingImageAllocator (Winutil. h)
+title: Método CDrawImage.UsingImageAllocator (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a61b4ece94c9c52a0f769a29ec32a26c08b33ee0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f10caec569733724a0c42b310facd36f74467472aee4339c83b68b382da09fa9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119539805"
 ---
-# <a name="cdrawimageusingimageallocator-method"></a>CDrawImage. UsingImageAllocator, método
+# <a name="cdrawimageusingimageallocator-method"></a>CDrawImage.UsingImageAllocator (método)
 
-El `UsingImageAllocator` método indica si el asignador actual es un objeto [**CImageAllocator**](cimageallocator.md) .
+El `UsingImageAllocator` método indica si el asignador actual es un objeto [**CImageAllocator.**](cimageallocator.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si el asignador actual es un objeto **CImageAllocator** o **false** en caso contrario.
+Devuelve **TRUE** si el asignador actual es **un objeto CImageAllocator** o **FALSE** en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve **true** si el asignador actual es un objeto **CImageAllocator** o **fa
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve **true** si el asignador actual es un objeto **CImageAllocator** o **fa
 
 <dl> <dt>
 
-[**Clase CDrawImage**](cdrawimage.md)
+[**CDrawImage (clase)**](cdrawimage.md)
 </dt> <dt>
 
 [**CDrawImage::NotifyAllocator**](cdrawimage-notifyallocator.md)

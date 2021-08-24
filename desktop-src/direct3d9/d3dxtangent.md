@@ -1,7 +1,7 @@
 ---
 description: Define la configuración utilizada para los cálculos de fotogramas tangentes de malla.
 ms.assetid: b525b4cc-9a2d-4569-bae8-7cc7f7832cbc
-title: Enumeración D3DXTANGENT (D3dx9mesh. h)
+title: Enumeración D3DXTANGENT (D3dx9mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: 43e3c5ced0eee3366b85070ce89d19154d048ab4
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5d6e57d2027a7366ec2b82ac7bd82aae4275d489c17f1922684e3ca6232be940
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717731"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119749775"
 ---
-# <a name="d3dxtangent-enumeration"></a>Enumeración D3DXTANGENT
+# <a name="d3dxtangent-enumeration"></a>D3DXTANGENT (enumeración)
 
 Define la configuración utilizada para los cálculos de fotogramas tangentes de malla.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -50,84 +50,84 @@ typedef enum D3DXTANGENT {
 
 <dl> <dt>
 
-<span id="D3DXTANGENT_WRAP_U"></span><span id="d3dxtangent_wrap_u"></span>**D3DXTANGENT \_ Wrap \_ U**
+<span id="D3DXTANGENT_WRAP_U"></span><span id="d3dxtangent_wrap_u"></span>**D3DXTANGENT \_ WRAP \_ U**
 </dt> <dd>
 
-Los valores de las coordenadas de textura en la dirección u se encuentran entre 0 y 1. En este caso, se elegirá un conjunto de coordenadas de textura que minimice el perímetro del triángulo. Vea [ajuste de textura (Direct3D 9)](texture-wrapping.md).
+Los valores de coordenadas de textura en la dirección u están entre 0 y 1. En este caso, se elegirá un conjunto de coordenadas de textura que minimice el perímetro del triángulo. Vea [Ajuste de textura (Direct3D 9).](texture-wrapping.md)
 
 </dd> <dt>
 
-<span id="D3DXTANGENT_WRAP_V"></span><span id="d3dxtangent_wrap_v"></span>**D3DXTANGENT \_ Wrap \_ V**
+<span id="D3DXTANGENT_WRAP_V"></span><span id="d3dxtangent_wrap_v"></span>**D3DXTANGENT \_ WRAP \_ V**
 </dt> <dd>
 
-Los valores de las coordenadas de textura en la dirección v se encuentran entre 0 y 1. En este caso, se elegirá un conjunto de coordenadas de textura que minimice el perímetro del triángulo. Vea [ajuste de textura (Direct3D 9)](texture-wrapping.md).
+Los valores de coordenadas de textura en la dirección v están entre 0 y 1. En este caso, se elegirá un conjunto de coordenadas de textura que minimice el perímetro del triángulo. Vea [Ajuste de textura (Direct3D 9).](texture-wrapping.md)
 
 </dd> <dt>
 
-<span id="D3DXTANGENT_WRAP_UV"></span><span id="d3dxtangent_wrap_uv"></span>**D3DXTANGENT \_ encapsulado \_ UV**
+<span id="D3DXTANGENT_WRAP_UV"></span><span id="d3dxtangent_wrap_uv"></span>**D3DXTANGENT \_ WRAP \_ UV**
 </dt> <dd>
 
-Los valores de las coordenadas de textura en ambas direcciones se encuentran entre 0 y 1. En este caso, se elegirá un conjunto de coordenadas de textura que minimice el perímetro del triángulo. Vea [ajuste de textura (Direct3D 9)](texture-wrapping.md).
+Los valores de coordenadas de textura en las direcciones v y usted están entre 0 y 1. En este caso, se elegirá un conjunto de coordenadas de textura que minimice el perímetro del triángulo. Vea [Ajuste de textura (Direct3D 9).](texture-wrapping.md)
 
 </dd> <dt>
 
-<span id="D3DXTANGENT_DONT_NORMALIZE_PARTIALS"></span><span id="d3dxtangent_dont_normalize_partials"></span>**D3DXTANGENT \_ no \_ normalizar las \_ partes parciales**
+<span id="D3DXTANGENT_DONT_NORMALIZE_PARTIALS"></span><span id="d3dxtangent_dont_normalize_partials"></span>**D3DXTANGENT \_ DONT \_ NORMALIZE \_ PARTIALS**
 </dt> <dd>
 
-No normalice las derivadas parciales con respecto a las coordenadas de textura. Si no se normaliza, la escala de los derivados parciales es proporcional a la escala del modelo 3D dividida por la escala del triángulo en el espacio (u, v). Este valor de escala proporciona una medida de cuánto se estira la textura en una dirección determinada. La longitud del vector resultante es una suma ponderada de las longitudes de los derivados parciales.
+No normalice los derivados parciales con respecto a las coordenadas de textura. Si no se normaliza, la escala de los derivados parciales es proporcional a la escala del modelo 3D dividida por la escala del triángulo en el espacio (u, v). Este valor de escala proporciona una medida de cuánto se ajusta la textura en una dirección determinada. La longitud del vector resultante es una suma ponderada de las longitudes de los derivados parciales.
 
 </dd> <dt>
 
-<span id="D3DXTANGENT_DONT_ORTHOGONALIZE"></span><span id="d3dxtangent_dont_orthogonalize"></span>**D3DXTANGENT no se \_ \_ corortogonal**
+<span id="D3DXTANGENT_DONT_ORTHOGONALIZE"></span><span id="d3dxtangent_dont_orthogonalize"></span>**D3DXTANGENT \_ DONT \_ ORTHOGONALIZE**
 </dt> <dd>
 
-No transforme las coordenadas de textura en coordenadas cartesianas ortogonales. Es mutuamente excluyente con D3DXTANGENT \_ ortogonal \_ desde el \_ usuario y D3DXTANGENT \_ ortogonal \_ desde \_ V.
+No transforme las coordenadas de textura en coordenadas cartesianas ortogonales. Mutuamente excluyente con D3DXTANGENT \_ ORTHOGONALIZE \_ FROM you y \_ D3DXTANGENT \_ ORTHOGONALIZE \_ FROM \_ V.
 
 </dd> <dt>
 
-<span id="D3DXTANGENT_ORTHOGONALIZE_FROM_V"></span><span id="d3dxtangent_orthogonalize_from_v"></span>**D3DXTANGENT \_ ortogonal \_ desde \_ V**
+<span id="D3DXTANGENT_ORTHOGONALIZE_FROM_V"></span><span id="d3dxtangent_orthogonalize_from_v"></span>**D3DXTANGENT \_ ORTHOGONALIZE \_ FROM \_ V**
 </dt> <dd>
 
-Calcule el derivado parcial con respecto a la coordenada de textura v independientemente para cada vértice y, a continuación, calcule el derivado parcial con respecto a usted como el producto cruzado de la derivada parcial con respecto a v y el vector normal. Mutuamente excluyente con D3DXTANGENT no se ortogonala \_ \_ y D3DXTANGENT se \_ ortogonala \_ desde \_ U.
+Calcule el derivado parcial con respecto a la coordenada de textura v de forma independiente para cada vértice y, a continuación, calcule el derivado parcial con respecto a usted como el producto cruzado del derivado parcial con respecto a v y el vector normal. Mutuamente excluyente con D3DXTANGENT \_ DONT \_ ORTHOGONALIZE y D3DXTANGENT \_ ORTHOGONALIZE \_ FROM \_ U.
 
 </dd> <dt>
 
-<span id="D3DXTANGENT_ORTHOGONALIZE_FROM_U"></span><span id="d3dxtangent_orthogonalize_from_u"></span>**D3DXTANGENT \_ ortogonal \_ desde \_ U**
+<span id="D3DXTANGENT_ORTHOGONALIZE_FROM_U"></span><span id="d3dxtangent_orthogonalize_from_u"></span>**D3DXTANGENT \_ ORTHOGONALIZE \_ FROM \_ U**
 </dt> <dd>
 
-Calcule el derivado parcial con respecto a la coordenada de textura u de forma independiente para cada vértice y, a continuación, calcule el derivado parcial con respecto a v como el producto cruzado del vector normal y el derivado parcial con respecto a usted. Mutuamente excluyente con D3DXTANGENT no se ha \_ \_ ortogonal y D3DXTANGENT \_ ortogonal \_ desde \_ V.
+Calcule el derivado parcial con respecto a la coordenada de textura u independientemente para cada vértice y, a continuación, calcule el derivado parcial con respecto a v como el producto cruzado del vector normal y el derivado parcial con respecto a usted. Mutuamente excluyente con D3DXTANGENT \_ DONT \_ ORTHOGONALIZE y D3DXTANGENT \_ ORTHOGONALIZE \_ FROM \_ V.
 
 </dd> <dt>
 
-<span id="D3DXTANGENT_WEIGHT_BY_AREA"></span><span id="d3dxtangent_weight_by_area"></span>**\_Peso \_ de D3DXTANGENT por \_ área**
+<span id="D3DXTANGENT_WEIGHT_BY_AREA"></span><span id="d3dxtangent_weight_by_area"></span>**D3DXTANGENT \_ WEIGHT \_ BY \_ AREA**
 </dt> <dd>
 
-Ponderación de la dirección del vector calculado por vértices normal o derivado parcial calculado según las áreas de los triángulos adjuntas a ese vértice. Es mutuamente excluyente con el peso de D3DXTANGENT \_ \_ .
+Pondera la dirección del vector derivado parcial o normal por vértice calculado según las áreas de los triángulos asociados a ese vértice. Mutuamente excluyente con D3DXTANGENT \_ WEIGHT \_ EQUAL.
 
 </dd> <dt>
 
-<span id="D3DXTANGENT_WEIGHT_EQUAL"></span><span id="d3dxtangent_weight_equal"></span>**Peso de D3DXTANGENT \_ \_ igual**
+<span id="D3DXTANGENT_WEIGHT_EQUAL"></span><span id="d3dxtangent_weight_equal"></span>**D3DXTANGENT \_ WEIGHT \_ EQUAL**
 </dt> <dd>
 
-Calcula un vector normal de longitud de unidad para cada triángulo de la malla de entrada. Es mutuamente excluyente con el peso de D3DXTANGENT \_ \_ por \_ área.
+Calcule un vector normal de longitud de unidad para cada triángulo de la malla de entrada. Mutuamente excluyente con D3DXTANGENT \_ WEIGHT \_ BY \_ AREA.
 
 </dd> <dt>
 
-<span id="D3DXTANGENT_WIND_CW"></span><span id="d3dxtangent_wind_cw"></span>**D3DXTANGENT de \_ viento \_ CW**
+<span id="D3DXTANGENT_WIND_CW"></span><span id="d3dxtangent_wind_cw"></span>**D3DXTANGENT \_ WIND \_ CW**
 </dt> <dd>
 
-Los vértices se ordenan en sentido de las agujas del reloj alrededor de cada triángulo. Por lo tanto, la dirección del vector normal calculado se invierte 180 grados de la dirección calculada mediante el orden de vértices en sentido contrario a las agujas del reloj.
+Los vértices se ordenan en una dirección en el sentido de las agujas del reloj alrededor de cada triángulo. Por lo tanto, la dirección del vector normal calculada se invierte 180 grados desde la dirección calculada mediante la ordenación de vértices en sentido contrario a las agujas del reloj.
 
 </dd> <dt>
 
-<span id="D3DXTANGENT_CALCULATE_NORMALS"></span><span id="d3dxtangent_calculate_normals"></span>**D3DXTANGENT \_ calcular \_ normales**
+<span id="D3DXTANGENT_CALCULATE_NORMALS"></span><span id="d3dxtangent_calculate_normals"></span>**D3DXTANGENT \_ CALCULATE \_ NORMALS**
 </dt> <dd>
 
-Calcule el vector normal por vértice para cada triángulo de la malla de entrada y omita los vectores normales que ya se encuentren en la malla de entrada.
+Calcule el vector normal por vértice para cada triángulo de la malla de entrada e ignore los vectores normales que ya están en la malla de entrada.
 
 </dd> <dt>
 
-<span id="D3DXTANGENT_GENERATE_IN_PLACE"></span><span id="d3dxtangent_generate_in_place"></span>**D3DXTANGENT \_ generar \_ en \_ contexto**
+<span id="D3DXTANGENT_GENERATE_IN_PLACE"></span><span id="d3dxtangent_generate_in_place"></span>**D3DXTANGENT \_ GENERATE \_ IN \_ PLACE**
 </dt> <dd>
 
 Los resultados se almacenan en la malla de entrada original y no se usa la malla de salida.
@@ -140,7 +140,7 @@ Los resultados se almacenan en la malla de entrada original y no se usa la malla
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9mesh. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9mesh.h</dt> </dl> |
 
 
 
@@ -148,7 +148,7 @@ Los resultados se almacenan en la malla de entrada original y no se usa la malla
 
 <dl> <dt>
 
-[Enumeraciones de D3DX](dx9-graphics-reference-d3dx-enums.md)
+[Enumeraciones D3DX](dx9-graphics-reference-d3dx-enums.md)
 </dt> <dt>
 
 [**D3DXComputeTangentFrameEx**](d3dxcomputetangentframeex.md)

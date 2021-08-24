@@ -1,7 +1,7 @@
 ---
-description: Define la asociación entre un conmutador Ethernet y un recurso switch.
+description: Define la asociación entre un conmutador Ethernet y un recurso de conmutador.
 ms.assetid: fb29f4cb-50c4-4865-b267-21ff99bb4a8b
-title: Msvm_EthernetSwitchInfo (clase)
+title: Msvm_EthernetSwitchInfo clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 1106e0930716572b10a95846865d8f90aa991cc4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aea2d0f2c1f139b6953f165c9482f28c770d1384bc71f885378fedcb586a8ac1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104003227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119524565"
 ---
-# <a name="msvm_ethernetswitchinfo-class"></a>MSVM \_ EthernetSwitchInfo (clase)
+# <a name="msvm_ethernetswitchinfo-class"></a>Clase EthernetSwitchInfo de Msvm \_
 
-Define la asociación entre un conmutador Ethernet y un recurso switch.
+Define la asociación entre un conmutador Ethernet y un recurso de conmutador.
 
-La siguiente sintaxis es código simplificado de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se simplifica Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,45 +41,45 @@ class Msvm_EthernetSwitchInfo : CIM_Dependency
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ EthernetSwitchInfo** tiene estos tipos de miembros:
+La **clase Msvm \_ EthernetSwitchInfo** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ EthernetSwitchInfo** tiene estas propiedades.
+La **clase Msvm \_ EthernetSwitchInfo** tiene estas propiedades.
 
 <dl> <dt>
 
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **MSVM \_ VirtualEthernetSwitch**
+Tipo de datos: **Msvm \_ VirtualEthernetSwitch**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente")
 </dt> </dl>
 
-Referencia a la clase [**MSVM \_ VirtualEthernetSwitch**](msvm-virtualethernetswitch.md) que representa el sistema de hospedaje. Esta propiedad se deriva de [**la \_ dependencia CIM**](/windows/desktop/CIMWin32Prov/cim-dependency).
+Referencia a la clase [**\_ VirtualEthernetSwitch de Msvm**](msvm-virtualethernetswitch.md) que representa el sistema de hospedaje. Esta propiedad se deriva de la [**dependencia \_ CIM**](/windows/desktop/CIMWin32Prov/cim-dependency).
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **MSVM \_ EthernetSwitchData**
+Tipo de datos: **Msvm \_ EthernetSwitchData**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependiente")
+Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
 </dt> </dl>
 
-Referencia a la clase [**MSVM \_ EthernetSwitchData**](msvm-ethernetswitchdata.md) que representa el recurso switch. Esta propiedad se deriva de [**la \_ dependencia CIM**](/windows/desktop/CIMWin32Prov/cim-dependency).
+Referencia a la clase [**\_ EthernetSwitchData de Msvm**](msvm-ethernetswitchdata.md) que representa el recurso switch. Esta propiedad se deriva de la [**dependencia \_ CIM**](/windows/desktop/CIMWin32Prov/cim-dependency).
 
 </dd> </dl>
 
@@ -87,12 +87,12 @@ Referencia a la clase [**MSVM \_ EthernetSwitchData**](msvm-ethernetswitchdata.m
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

@@ -1,9 +1,9 @@
 ---
-title: LISTBOX. descartar
-description: El método Dismiss oculta el control.
+title: LISTBOX.dismiss
+description: El método dismiss oculta el control.
 ms.assetid: 102f1223-7b03-4d60-b746-9abb4c8aef10
 keywords:
-- LISTBOX. descartar Windows Media Player
+- LISTBOX.dismiss Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 54a10fc643df91d3ce066f5abcec97f04c943295
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f5f1190d1f1bb5ae0481074f96c6b7d3bd2010bbe189f950fc6228e68f4702ab
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699648"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119617025"
 ---
-# <a name="listboxdismiss"></a>LISTBOX. descartar
+# <a name="listboxdismiss"></a>LISTBOX.dismiss
 
-El método **Dismiss** oculta el control.
+El **método dismiss** oculta el control.
 
 ``` syntax
         elementID.dismiss()
@@ -36,9 +36,9 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método se utiliza principalmente con el elemento **popup** , que representa un control de cuadro de lista que se muestra solo cuando es necesario.
+Este método se usa principalmente con el elemento **POPUP,** que representa un control de cuadro de lista que se muestra solo cuando es necesario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,7 +46,7 @@ Este método se utiliza principalmente con el elemento **popup** , que represent
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------|
-| Versión<br/> | Windows Media Player para Windows XP o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media para Windows XP o posterior<br/> |
 
 
 
@@ -57,7 +57,7 @@ Este método se utiliza principalmente con el elemento **popup** , que represent
 [**Elemento LISTBOX**](listbox-element.md)
 </dt> <dt>
 
-[**LISTBOX. show**](listbox-show.md)
+[**LISTBOX.show**](listbox-show.md)
 </dt> <dt>
 
 [**Elemento POPUP**](popup-element.md)
