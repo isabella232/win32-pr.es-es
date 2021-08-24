@@ -1,11 +1,11 @@
 ---
-title: atributo RPC-NS-bindings
+title: Atributo rpc-Ns-Bindings
 description: Lista de enlaces RPC para la interfaz actual.
 ms.assetid: e3893b80-c4d8-4af3-b5b5-b86304456748
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de enlace de RPC-NS
-- rpcNsBindings esquema de AD de atributos
+- Rpc-Ns-Bindings attribute AD Schema
+- Esquema de AD del atributo rpcNsBindings
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dd6f68227c2e57e39f3175e29efb9d82f957e926
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2b29b613e06202dd015b37aa18f1aece2ffba03aa7b3922fe7e461d41b722406
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804556"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837135"
 ---
-# <a name="rpc-ns-bindings-attribute"></a>atributo RPC-NS-bindings
+# <a name="rpc-ns-bindings-attribute"></a>Atributo rpc-Ns-Bindings
 
 Lista de enlaces RPC para la interfaz actual.
 
@@ -29,14 +29,14 @@ Lista de enlaces RPC para la interfaz actual.
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | Enlaces de RPC-NS                             |
-| Nombre para mostrar de LDAP | rpcNsBindings                               |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | rpc-Ns-Bindings                             |
+| Ldap-Display-Name | rpcNsBindings                               |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.113                      |
-| System-ID-GUID    | bf967a23-0de6-11d0-a285-00aa003049e2        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | bf967a23-0de6-11d0-a285-00aa003049e2        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,18 +55,18 @@ Lista de enlaces RPC para la interfaz actual.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                          |
+| Id. de vínculo                | \-                                                          |
 | MAPI-Id                | \-                                                          |
-| System-Only            | False                                                       |
-| Tiene un único valor       | False                                                       |
-| Está indexado             | False                                                       |
-| En el catálogo global      | False                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                |
+| System-Only            | Falso                                                       |
+| Es de un solo valor       | Falso                                                       |
+| Está indexado             | Falso                                                       |
+| En el catálogo global      | Falso                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Clases usadas en        | [**Elemento RPC-Server-**](c-rpcserverelement.md)<br/> |
+| Clases usadas en        | [**rpc-Server-Element**](c-rpcserverelement.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Lista de enlaces RPC para la interfaz actual.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                          |
+| Id. de vínculo                | \-                                                          |
 | MAPI-Id                | \-                                                          |
-| System-Only            | False                                                       |
-| Tiene un único valor       | False                                                       |
-| Está indexado             | False                                                       |
-| En el catálogo global      | False                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                |
+| System-Only            | Falso                                                       |
+| Es de un solo valor       | Falso                                                       |
+| Está indexado             | Falso                                                       |
+| En el catálogo global      | Falso                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Clases usadas en        | [**Elemento RPC-Server-**](c-rpcserverelement.md)<br/> |
+| Clases usadas en        | [**rpc-Server-Element**](c-rpcserverelement.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Lista de enlaces RPC para la interfaz actual.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                          |
+| Id. de vínculo                | \-                                                          |
 | MAPI-Id                | \-                                                          |
-| System-Only            | False                                                       |
-| Tiene un único valor       | False                                                       |
-| Está indexado             | False                                                       |
-| En el catálogo global      | False                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                |
+| System-Only            | Falso                                                       |
+| Es de un solo valor       | Falso                                                       |
+| Está indexado             | Falso                                                       |
+| En el catálogo global      | Falso                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Clases usadas en        | [**Elemento RPC-Server-**](c-rpcserverelement.md)<br/> |
+| Clases usadas en        | [**rpc-Server-Element**](c-rpcserverelement.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Lista de enlaces RPC para la interfaz actual.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                          |
+| Id. de vínculo                | \-                                                          |
 | MAPI-Id                | \-                                                          |
-| System-Only            | False                                                       |
-| Tiene un único valor       | False                                                       |
-| Está indexado             | False                                                       |
-| En el catálogo global      | False                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                |
+| System-Only            | Falso                                                       |
+| Es de un solo valor       | Falso                                                       |
+| Está indexado             | Falso                                                       |
+| En el catálogo global      | Falso                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Clases usadas en        | [**Elemento RPC-Server-**](c-rpcserverelement.md)<br/> |
+| Clases usadas en        | [**rpc-Server-Element**](c-rpcserverelement.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Lista de enlaces RPC para la interfaz actual.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                          |
+| Id. de vínculo                | \-                                                          |
 | MAPI-Id                | \-                                                          |
-| System-Only            | False                                                       |
-| Tiene un único valor       | False                                                       |
-| Está indexado             | False                                                       |
-| En el catálogo global      | False                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                |
+| System-Only            | Falso                                                       |
+| Es de un solo valor       | Falso                                                       |
+| Está indexado             | Falso                                                       |
+| En el catálogo global      | Falso                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Clases usadas en        | [**Elemento RPC-Server-**](c-rpcserverelement.md)<br/> |
+| Clases usadas en        | [**rpc-Server-Element**](c-rpcserverelement.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Lista de enlaces RPC para la interfaz actual.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                          |
+| Id. de vínculo                | \-                                                          |
 | MAPI-Id                | \-                                                          |
-| System-Only            | False                                                       |
-| Tiene un único valor       | False                                                       |
-| Está indexado             | False                                                       |
-| En el catálogo global      | False                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                |
+| System-Only            | Falso                                                       |
+| Es de un solo valor       | Falso                                                       |
+| Está indexado             | Falso                                                       |
+| En el catálogo global      | Falso                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Clases usadas en        | [**Elemento RPC-Server-**](c-rpcserverelement.md)<br/> |
+| Clases usadas en        | [**rpc-Server-Element**](c-rpcserverelement.md)<br/> |
 
 
 

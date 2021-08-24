@@ -1,27 +1,27 @@
 ---
-title: Referencia del mezclador de audio
-description: Referencia del mezclador de audio
+title: Referencia de Mixer audio
+description: Referencia de Mixer audio
 ms.assetid: 9d8751b1-9c0b-4238-a961-27c09a869bb3
 keywords:
 - audio multimedia, mezcladores de audio
-- audio, mezclador de audio
+- audio, mezcladores de audio
 - audio multimedia, referencia de mezclador
 - audio, referencia de mezclador
-- mezclador de audio, referencia
-- mezclador, referencia
-- referencia de los mezcladores de audio, acerca de
+- mezcladores de audio, referencia
+- mixers,reference
+- referencia de mezcladores de audio, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: be1d86f305714d72631b56495753417699b1a146
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 1602a9ac0631a3e81430285c8cd862215a437c72b03b41d87fad6cefa7e41827
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104271202"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119786225"
 ---
-# <a name="audio-mixer-reference"></a>Referencia del mezclador de audio
+# <a name="audio-mixer-reference"></a>Referencia de Mixer audio
 
-En esta sección se describen las funciones, las estructuras y los mensajes asociados a los mezcladores de audio. Estos elementos se agrupan de la siguiente manera.
+En esta sección se describen las funciones, las estructuras y los mensajes asociados a los mezcladores de audio. Estos elementos se agrupan como se muestra a continuación.
 
 ## <a name="querying-devices"></a>Consultar dispositivos
 
@@ -29,12 +29,12 @@ En esta sección se describen las funciones, las estructuras y los mensajes asoc
 -   [**mixerGetDevCaps**](/windows/win32/api/mmeapi/nf-mmeapi-mixergetdevcaps)
 -   [**mixerGetNumDevs**](/windows/win32/api/mmeapi/nf-mmeapi-mixergetnumdevs)
 
-## <a name="opening-and-closing"></a>Abrir y cerrar
+## <a name="opening-and-closing"></a>Apertura y cierre
 
 -   [**mixerClose**](/windows/win32/api/mmeapi/nf-mmeapi-mixerclose)
 -   [**mixerOpen**](/windows/win32/api/mmeapi/nf-mmeapi-mixeropen)
 
-## <a name="retrieving-mixer-identifiers"></a>Recuperando identificadores de mezclador
+## <a name="retrieving-mixer-identifiers"></a>Recuperación de Mixer identificadores
 
 -   [**mixerGetID**](/windows/win32/api/mmeapi/nf-mmeapi-mixergetid)
 
@@ -47,10 +47,10 @@ En esta sección se describen las funciones, las estructuras y los mensajes asoc
 ## <a name="changing-control-attributes"></a>Cambiar atributos de control
 
 -   [**MIXERCONTROLDETAILS**](/windows/win32/api/mmeapi/ns-mmeapi-mixercontroldetails_listtexta)
--   [**MIXERCONTROLDETAILS \_ booleano**](/previous-versions//dd757295(v=vs.85))
+-   [**MIXERCONTROLDETAILS \_ BOOLEAN**](/previous-versions//dd757295(v=vs.85))
 -   [**MIXERCONTROLDETAILS \_ LISTTEXT**](/previous-versions//dd757296(v=vs.85))
--   [**MIXERCONTROLDETAILS \_ firmado**](/previous-versions//dd757297(v=vs.85))
--   [**MIXERCONTROLDETAILS \_ sin signo**](/previous-versions//dd757298(v=vs.85))
+-   [**MIXERCONTROLDETAILS \_ FIRMADO**](/previous-versions//dd757297(v=vs.85))
+-   [**MIXERCONTROLDETAILS \_ SIN SIGNO**](/previous-versions//dd757298(v=vs.85))
 -   [**mixerGetControlDetails**](/windows/win32/api/mmeapi/nf-mmeapi-mixergetcontroldetails)
 -   [**mixerSetControlDetails**](/windows/win32/api/mmeapi/nf-mmeapi-mixersetcontroldetails)
 
@@ -58,10 +58,10 @@ En esta sección se describen las funciones, las estructuras y los mensajes asoc
 
 -   [**mixerGetLineInfo**](/windows/win32/api/mmeapi/nf-mmeapi-mixergetlineinfo)
 -   [**MIXERLINE**](/windows/win32/api/mmeapi/ns-mmeapi-mixerline)
--   [**cambio de control de MM \_ MIXM \_ \_**](mm-mixm-control-change.md)
--   [**\_cambio de \_ línea mm MIXM \_**](mm-mixm-line-change.md)
+-   [**CAMBIO \_ DE CONTROL DE MIXM \_ \_ MM**](mm-mixm-control-change.md)
+-   [**CAMBIO \_ DE LÍNEA DE MM MIXM \_ \_**](mm-mixm-line-change.md)
 
-## <a name="sending-user-defined-messages"></a>Envío de mensajes de User-Defined
+## <a name="sending-user-defined-messages"></a>Envío de User-Defined mensajes
 
 -   [**mixerMessage**](/windows/win32/api/mmeapi/nf-mmeapi-mixermessage)
 
@@ -69,9 +69,9 @@ En esta sección se describen las funciones, las estructuras y los mensajes asoc
 
 <dl> <dt>
 
-[Referencia del mezclador de audio](audio-mixer-reference.md)
+[Referencia de Mixer audio](audio-mixer-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

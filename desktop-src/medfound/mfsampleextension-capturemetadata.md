@@ -1,27 +1,27 @@
 ---
-description: El almacén de IMFAttributes para todos los metadatos relacionados con la canalización de captura.
+description: EL almacén DEATTRIBUTEAttributes para todos los metadatos relacionados con la canalización de captura.
 ms.assetid: 8F79B546-5E21-42D7-9168-6BB94245E665
-title: MFSampleExtension_CaptureMetadata atributo (mfapi. h)
+title: MFSampleExtension_CaptureMetadata atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f4f0da34316e2434f27cbd1467860c1d99331d72
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 16008aaad79da6162fef91f2e367de1887a8c1f13332d521d0b1c0a003936912
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696887"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119722625"
 ---
-# <a name="mfsampleextension_capturemetadata-attribute"></a>\_Atributo CaptureMetadata de MFSampleExtension
+# <a name="mfsampleextension_capturemetadata-attribute"></a>Atributo MFSampleExtension \_ CaptureMetadata
 
-El almacén de [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) para todos los metadatos relacionados con la canalización de captura.
+[**EL almacén DEATTRIBUTEAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) para todos los metadatos relacionados con la canalización de captura.
 
 ## <a name="data-type"></a>Tipo de datos
 
-**[**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes)** almacenado como **IUnknown** 
+**[**ATTRIBUTEAttributes almacenados**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes)** como **IUnknown** 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo puede estar presente en cualquier [**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample).
+Este atributo puede estar presente en cualquier [**ELEMENTO DESEMPLOTESample.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample)
 
 Este atributo es de solo lectura.
 
@@ -31,9 +31,9 @@ Este atributo es de solo lectura.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Aplicaciones \[ para UWP de Windows 8.1 Desktop apps \|\]<br/>                                |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2012 R2 \|\]<br/>                     |
-| Encabezado<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Aplicaciones de \[ escritorio R2 \| aplicaciones para UWP\]<br/>                     |
+| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -41,7 +41,7 @@ Este atributo es de solo lectura.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

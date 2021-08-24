@@ -1,17 +1,17 @@
 ---
 description: Nombres de todos los asistentes necesarios.
 ms.assetid: 6f83ab7e-8583-4872-b5d9-91ce227a7761
-title: System. Calendar. RequiredAttendeeNames
+title: System.Calendar.RequiredAttataeNames
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4bfc10fd4bd1daa15941c93230631d523f3b90f1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6c8786ed8ec1604de12e533ed7177d9667c2196a27f37de631a07b0877bb39bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360553"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119823475"
 ---
-# <a name="systemcalendarrequiredattendeenames"></a>System. Calendar. RequiredAttendeeNames
+# <a name="systemcalendarrequiredattendeenames"></a>System.Calendar.RequiredAttataeNames
 
 Nombres de todos los asistentes necesarios.
 
@@ -30,9 +30,9 @@ propertyDescription
       type = Multivalue String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

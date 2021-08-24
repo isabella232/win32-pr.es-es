@@ -1,7 +1,7 @@
 ---
-description: La función CreateNPPInterface usa el BLOB que devuelve el buscador para crear un NPP que la aplicación puede usar.
+description: La función CreateNPPInterface usa el BLOB devuelto desde el buscador para crear un NPP que la aplicación puede usar.
 ms.assetid: 41f48c72-3284-4ebc-baff-63553c8971e6
-title: Función CreateNPPInterface (Netmon. h)
+title: Función CreateNPPInterface (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: d0efa1c33dd5e0778f13ddd59290de324c92e813
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 03c2bb7fae0f68e6d38016df353266cfc9ec11757eeb98f6a5e41ab4316e63c6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002241"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119744545"
 ---
-# <a name="createnppinterface-function"></a>CreateNPPInterface función)
+# <a name="createnppinterface-function"></a>Función CreateNPPInterface
 
-La función **CreateNPPInterface** usa el BLOB que devuelve el buscador para crear un NPP que la aplicación puede usar.
+La **función CreateNPPInterface** usa el BLOB devuelto desde el buscador para crear un NPP que la aplicación puede usar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,21 +41,21 @@ DWORD CreateNPPInterface(
 
 <dl> <dt>
 
-*hBlob* \[ de\]
+*hBlob* \[ En\]
 </dt> <dd>
 
-Identificador del BLOB que devuelve el buscador.
+Identificador del BLOB devuelto desde el buscador.
 
 </dd> <dt>
 
-*IID* \[ en\]
+*iid* \[ en\]
 </dt> <dd>
 
-Identificador de la interfaz a la que se llama desde NPP (**IRTC** o **IDelaydC**, por ejemplo).
+Identificador de la interfaz a la que llama desde el NPP **(IRTC** o **IDelaydC,** por ejemplo).
 
 </dd> <dt>
 
-*ppvObject* \[ enuncia\]
+*ppvObject* \[ out\]
 </dt> <dd>
 
 Puntero al puntero devuelto a la interfaz solicitada.
@@ -64,9 +64,9 @@ Puntero al puntero devuelto a la interfaz solicitada.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente, el valor devuelto es NMERR \_ Success.
+Si la función se realiza correctamente, el valor devuelto es NMERR \_ SUCCESS.
 
-Si la función no es correcta, el valor devuelto es un valor de NMERR que describe el error.
+Si la función no se realiza correctamente, el valor devuelto es un valor NMERR que describe el error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,8 +76,8 @@ Si la función no es correcta, el valor devuelto es un valor de NMERR que descri
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 

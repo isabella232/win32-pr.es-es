@@ -1,11 +1,11 @@
 ---
-title: 'NT: atributo de dominio mixto'
-description: Indica que el dominio está en modo nativo o mixto. Este atributo se encuentra en el objeto domainDNS (Head) del dominio.
+title: Atributo NT-Mixed-Domain
+description: Indica que el dominio está en modo nativo o en modo mixto. Este atributo se encuentra en el objeto domainDNS (head) del dominio.
 ms.assetid: 49872cbc-844f-4d60-89b6-0150b9116740
 ms.tgt_platform: multiple
 keywords:
-- NT-Mixed-esquema de AD de atributos de dominio
-- nTMixedDomain esquema de AD de atributos
+- Esquema de AD del atributo NT-Mixed-Domain
+- Esquema de AD del atributo nTMixedDomain
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 217d73291f392141b80ca8916b86fffa0055226c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 39148883e2b5d57157c334854ab7ebdfa61b69ac61d7a0100fc8470b741909c4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119703035"
 ---
-# <a name="nt-mixed-domain-attribute"></a>NT: atributo de dominio mixto
+# <a name="nt-mixed-domain-attribute"></a>Atributo NT-Mixed-Domain
 
-Indica que el dominio está en modo nativo o mixto. Este atributo se encuentra en el objeto domainDNS (Head) del dominio.
+Indica que el dominio está en modo nativo o en modo mixto. Este atributo se encuentra en el objeto domainDNS (head) del dominio.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------|
 | CN                | NT-Mixed-Domain                       |
-| Nombre para mostrar de LDAP | nTMixedDomain                         |
-| Tamaño              | 4 bytes. Modo mixto 1, modo nativo 0. |
-| Actualizar privilegio  | \-                                    |
+| Ldap-Display-Name | nTMixedDomain                         |
+| Size              | 4 bytes. Modo mixto 1, modo nativo 0. |
+| Actualizar privilegios  | \-                                    |
 | Frecuencia de actualización  | \-                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.357                |
-| System-ID-GUID    | 3e97891f-8c01-11d0-afda-00c04fd930c9  |
-| Sintaxis            | [**Enumeración**](s-enumeration.md)  |
+| System-Id-Guid    | 3e97891f-8c01-11d0-afda-00c04fd930c9  |
+| Syntax            | [**Enumeración**](s-enumeration.md)  |
 
 
 
@@ -55,18 +55,18 @@ Indica que el dominio está en modo nativo o mixto. Este atributo se encuentra e
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Indica que el dominio está en modo nativo o mixto. Este atributo se encuentra e
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                      |
+| Id. de vínculo                | \-                                                                                      |
 | MAPI-Id                | \-                                                                                      |
-| System-Only            | False                                                                                   |
-| Tiene un único valor       | True                                                                                    |
-| Está indexado             | False                                                                                   |
-| En el catálogo global      | False                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                            |
+| System-Only            | Falso                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                    |
+| Está indexado             | Falso                                                                                   |
+| En el catálogo global      | Falso                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                            |
 | Range-Lower            | \-                                                                                      |
 | Range-Upper            | \-                                                                                      |
 | Search-Flags           | 0x00000000                                                                              |
 | System-Flags           | 0x00000010                                                                              |
-| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Indica que el dominio está en modo nativo o mixto. Este atributo se encuentra e
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                      |
+| Id. de vínculo                | \-                                                                                      |
 | MAPI-Id                | \-                                                                                      |
-| System-Only            | False                                                                                   |
-| Tiene un único valor       | True                                                                                    |
-| Está indexado             | False                                                                                   |
-| En el catálogo global      | False                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                            |
+| System-Only            | Falso                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                    |
+| Está indexado             | Falso                                                                                   |
+| En el catálogo global      | Falso                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                            |
 | Range-Lower            | \-                                                                                      |
 | Range-Upper            | \-                                                                                      |
 | Search-Flags           | 0x00000000                                                                              |
 | System-Flags           | 0x00000010                                                                              |
-| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Indica que el dominio está en modo nativo o mixto. Este atributo se encuentra e
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                      |
+| Id. de vínculo                | \-                                                                                      |
 | MAPI-Id                | \-                                                                                      |
-| System-Only            | False                                                                                   |
-| Tiene un único valor       | True                                                                                    |
-| Está indexado             | False                                                                                   |
-| En el catálogo global      | False                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                            |
+| System-Only            | Falso                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                    |
+| Está indexado             | Falso                                                                                   |
+| En el catálogo global      | Falso                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                            |
 | Range-Lower            | \-                                                                                      |
 | Range-Upper            | \-                                                                                      |
 | Search-Flags           | 0x00000000                                                                              |
 | System-Flags           | 0x00000010                                                                              |
-| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Indica que el dominio está en modo nativo o mixto. Este atributo se encuentra e
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                      |
+| Id. de vínculo                | \-                                                                                      |
 | MAPI-Id                | \-                                                                                      |
-| System-Only            | False                                                                                   |
-| Tiene un único valor       | True                                                                                    |
-| Está indexado             | False                                                                                   |
-| En el catálogo global      | False                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                            |
+| System-Only            | Falso                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                    |
+| Está indexado             | Falso                                                                                   |
+| En el catálogo global      | Falso                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                            |
 | Range-Lower            | \-                                                                                      |
 | Range-Upper            | \-                                                                                      |
 | Search-Flags           | 0x00000000                                                                              |
 | System-Flags           | 0x00000010                                                                              |
-| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Indica que el dominio está en modo nativo o mixto. Este atributo se encuentra e
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                      |
+| Id. de vínculo                | \-                                                                                      |
 | MAPI-Id                | \-                                                                                      |
-| System-Only            | False                                                                                   |
-| Tiene un único valor       | True                                                                                    |
-| Está indexado             | False                                                                                   |
-| En el catálogo global      | False                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                            |
+| System-Only            | Falso                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                    |
+| Está indexado             | Falso                                                                                   |
+| En el catálogo global      | Falso                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                            |
 | Range-Lower            | \-                                                                                      |
 | Range-Upper            | \-                                                                                      |
 | Search-Flags           | 0x00000000                                                                              |
 | System-Flags           | 0x00000010                                                                              |
-| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 

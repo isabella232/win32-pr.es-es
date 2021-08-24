@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentNotInDistributedTransactionException'
-title: Constructor de EsentNotInDistributedTransactionException
+description: 'Más información sobre: Constructor EsentNotInDistributedTransactionException'
+title: Constructor EsentNotInDistributedTransactionException
 TOCTitle: 'EsentNotInDistributedTransactionException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentNotInDistributedTransactionException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentnotindistributedtransactionexception.esentnotindistributedtransactionexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b1e3a121d71d243b91b0924f09703844213a012b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: df7bb390097538ec28b6d4ed21e51b4b562e189fbcea2b657de2568782749520
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105717183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119722775"
 ---
-# <a name="esentnotindistributedtransactionexception-constructor"></a>Constructor de EsentNotInDistributedTransactionException
+# <a name="esentnotindistributedtransactionexception-constructor"></a>Constructor EsentNotInDistributedTransactionException
 
 Inicializa una nueva instancia de la clase EsentNotInDistributedTransactionException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentNotInDistributedTransactionException()
 public EsentNotInDistributedTransactionException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentNotInDistributedTransactionException()
 
 [Miembros de EsentNotInDistributedTransactionException](./esentnotindistributedtransactionexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

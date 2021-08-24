@@ -1,11 +1,11 @@
 ---
-title: Atributo-Security-GUID (atributo)
-description: GUID que se va a utilizar para aplicar las credenciales de seguridad a un conjunto de objetos.
+title: Atributo Attribute-Security-GUID
+description: GUID que se va a usar para aplicar credenciales de seguridad a un conjunto de objetos.
 ms.assetid: df4709ec-273d-4294-8094-f396c10c06e2
 ms.tgt_platform: multiple
 keywords:
-- Attribute-Security-GUID atributo de esquema de AD
-- attributeSecurityGUID esquema de AD de atributos
+- Esquema de AD del atributo Attribute-Security-GUID
+- AttributeSecurityGUID attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d7b2ada7c6c806bec1c524b0408750144ca1fd8b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5f0ea0a234bb0b050dabb4c0c64306da719ba875791c7c0070d95e5dc80842c9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104274601"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119703475"
 ---
-# <a name="attribute-security-guid-attribute"></a>Atributo-Security-GUID (atributo)
+# <a name="attribute-security-guid-attribute"></a>Atributo Attribute-Security-GUID
 
-GUID que se va a utilizar para aplicar las credenciales de seguridad a un conjunto de objetos.
+GUID que se va a usar para aplicar credenciales de seguridad a un conjunto de objetos.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | Attribute-Security-GUID                               |
-| Nombre para mostrar de LDAP | attributeSecurityGUID                                 |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | Administrador de esquema                                  |
+| Ldap-Display-Name | attributeSecurityGUID                                 |
+| Size              | \-                                                    |
+| Actualizar privilegios  | Administrador de esquemas                                  |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.149                                |
-| System-ID-GUID    | bf967924-0de6-11d0-a285-00aa003049e2                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | bf967924-0de6-11d0-a285-00aa003049e2                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -44,7 +44,7 @@ GUID que se va a utilizar para aplicar las credenciales de seguridad a un conjun
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,18 +56,18 @@ GUID que se va a utilizar para aplicar las credenciales de seguridad a un conjun
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 16                                                       |
 | Range-Upper            | 16                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Clases usadas en        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
+| Clases usadas en        | [**Esquema de atributos**](c-attributeschema.md)<br/> |
 
 
 
@@ -77,39 +77,39 @@ GUID que se va a utilizar para aplicar las credenciales de seguridad a un conjun
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 16                                                       |
 | Range-Upper            | 16                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Clases usadas en        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
+| Clases usadas en        | [**Esquema de atributos**](c-attributeschema.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 16                                                       |
 | Range-Upper            | 16                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Clases usadas en        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
+| Clases usadas en        | [**Esquema de atributos**](c-attributeschema.md)<br/> |
 
 
 
@@ -117,20 +117,20 @@ GUID que se va a utilizar para aplicar las credenciales de seguridad a un conjun
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 16                                                       |
 | Range-Upper            | 16                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Clases usadas en        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
+| Clases usadas en        | [**Esquema de atributos**](c-attributeschema.md)<br/> |
 
 
 
@@ -140,18 +140,18 @@ GUID que se va a utilizar para aplicar las credenciales de seguridad a un conjun
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 16                                                       |
 | Range-Upper            | 16                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Clases usadas en        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
+| Clases usadas en        | [**Esquema de atributos**](c-attributeschema.md)<br/> |
 
 
 
@@ -161,18 +161,18 @@ GUID que se va a utilizar para aplicar las credenciales de seguridad a un conjun
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 16                                                       |
 | Range-Upper            | 16                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Clases usadas en        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
+| Clases usadas en        | [**Esquema de atributos**](c-attributeschema.md)<br/> |
 
 
 
@@ -182,18 +182,18 @@ GUID que se va a utilizar para aplicar las credenciales de seguridad a un conjun
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 16                                                       |
 | Range-Upper            | 16                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Clases usadas en        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
+| Clases usadas en        | [**Esquema de atributos**](c-attributeschema.md)<br/> |
 
 
 

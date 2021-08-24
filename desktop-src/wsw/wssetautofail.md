@@ -1,9 +1,9 @@
 ---
-title: Función WsSetAutoFail (WebServicesDebug. h)
-description: Establece el siguiente punto para insertar un error. Se trata de una función de solo depuración.
+title: Función WsSetAutoFail (WebServicesDebug.h)
+description: Establece el siguiente punto para insertar un error. Se trata de una función DEBUG ONLY.
 ms.assetid: b453dbc5-01ff-486d-8767-254b74cc5b6e
 keywords:
-- Servicios Web de la función WsSetAutoFail para Windows
+- Servicios web de la función WsSetAutoFail para Windows
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ba10b8b038f270f764b064fac1cb81e675f5239
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4e2ae3ed731edce429aac78700d52d0e7504a5688d1bf35bbb9c64a5d34bc0a1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534924"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119838545"
 ---
-# <a name="wssetautofail-function"></a>WsSetAutoFail función)
+# <a name="wssetautofail-function"></a>Función WsSetAutoFail
 
-Establece el siguiente punto para insertar un error. Se trata de una función de solo depuración.
+Establece el siguiente punto para insertar un error. Se trata de una función DEBUG ONLY.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,23 +41,23 @@ HRESULT WINAPI  WsSetAutoFail(
 
 <dl> <dt>
 
-*recuento* \[ de\]
+*count* \[ En\]
 </dt> <dd>
 
-Especifica cuántas operaciones antes de que se produzcan errores.
+Especifica cuántas operaciones antes de que comiencen a producirse errores.
 
 </dd> <dt>
 
-*error* \[ de en, opcional\]
+*error* \[ en, opcional\]
 </dt> <dd>
 
-Un puntero a un objeto de [ \_ error de WS](ws-error.md) en el que se debe almacenar información adicional sobre el error si se produce un error en la función.
+Puntero a un objeto [ERROR de WS \_ ](ws-error.md) donde se debe almacenar información adicional sobre el error si se produce un error en la función.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,9 +65,9 @@ Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo con
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                       |
-| Encabezado<br/>                   | <dl> <dt>WebServicesDebug. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                       |
+| Header<br/>                   | <dl> <dt>WebServicesDebug.h</dt> </dl> |
 
 
 

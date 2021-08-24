@@ -1,10 +1,10 @@
 ---
-title: atributo msRADIUSCallbackNumber
+title: Atributo msRADIUSCallbackNumber
 description: El atributo msRADIUSCallbackNumber se usa internamente.
 ms.assetid: a8861fc5-a2c0-41fd-b66f-65062c7f1b1b
 ms.tgt_platform: multiple
 keywords:
-- msRADIUSCallbackNumber esquema de AD de atributos
+- Esquema de AD del atributo msRADIUSCallbackNumber
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c58edd286f9390f19055f1006328424a6dfb0644
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6add47133a5d8b84c7a5b98f126c284225614407b3867a0a91e432b85e9d58ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905987"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119802845"
 ---
-# <a name="msradiuscallbacknumber-attribute"></a>atributo msRADIUSCallbackNumber
+# <a name="msradiuscallbacknumber-attribute"></a>Atributo msRADIUSCallbackNumber
 
-El atributo **msRADIUSCallbackNumber** se usa internamente. No modifique este valor directamente.
+El **atributo msRADIUSCallbackNumber** se usa internamente. No modifique este valor directamente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | msRADIUSCallbackNumber               |
-| Nombre para mostrar de LDAP | msRADIUSCallbackNumber               |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | msRADIUSCallbackNumber               |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1145              |
-| System-ID-GUID    | db0c909c-c1f2-11d1-bbc5-0080c76670c0 |
-| Sintaxis            | [**String(IA5)**](s-string-ia5.md)  |
+| System-Id-Guid    | db0c909c-c1f2-11d1-él5-0080c76670c0 |
+| Syntax            | [**String(IA5)**](s-string-ia5.md)  |
 
 
 
@@ -54,18 +54,18 @@ El atributo **msRADIUSCallbackNumber** se usa internamente. No modifique este va
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -75,18 +75,18 @@ El atributo **msRADIUSCallbackNumber** se usa internamente. No modifique este va
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -94,20 +94,20 @@ El atributo **msRADIUSCallbackNumber** se usa internamente. No modifique este va
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ El atributo **msRADIUSCallbackNumber** se usa internamente. No modifique este va
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -138,18 +138,18 @@ El atributo **msRADIUSCallbackNumber** se usa internamente. No modifique este va
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -159,18 +159,18 @@ El atributo **msRADIUSCallbackNumber** se usa internamente. No modifique este va
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 

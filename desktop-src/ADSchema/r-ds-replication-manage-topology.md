@@ -1,10 +1,10 @@
 ---
-title: DS-Replication-Manage-Topology Extended Right
-description: Derecho extendido necesario para actualizar la topología de replicación para un NC determinado.
+title: Derecho extendido DS-Replication-Manage-Topology
+description: Se ha ampliado el derecho necesario para actualizar la topología de replicación de una nc determinada.
 ms.assetid: 43f8554b-0934-487d-bac0-8f1351eae1cd
 ms.tgt_platform: multiple
 keywords:
-- DS-Replication-Manage-Topology esquema de AD derecho extendido de topología
+- Esquema de AD extendido DS-Replication-Manage-Topology
 topic_type:
 - apiref
 api_name:
@@ -13,20 +13,20 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27c27a08b39cc8ad7f6cb4fc31d68726a433a500
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 813179e371810dbf5be1b414a19542f10cd2faf231ab57bf92286cb677e69215
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104536352"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119702815"
 ---
-# <a name="ds-replication-manage-topology-extended-right"></a>DS-Replication-Manage-Topology Extended Right
+# <a name="ds-replication-manage-topology-extended-right"></a>Derecho extendido DS-Replication-Manage-Topology
 
-Derecho extendido necesario para actualizar la topología de replicación para un NC determinado.
+Se ha ampliado el derecho necesario para actualizar la topología de replicación de una nc determinada.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|--------------------------------------|
 | CN           | DS-Replication-Manage-Topology       |
 | Display-Name | Administrar la topología de replicación          |
@@ -38,7 +38,7 @@ Derecho extendido necesario para actualizar la topología de replicación para u
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -48,10 +48,10 @@ Derecho extendido necesario para actualizar la topología de replicación para u
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localización: ID. de presentación | 27                                                                                                                               |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 27                                                                                                                               |
 
 
 
@@ -61,19 +61,19 @@ Derecho extendido necesario para actualizar la topología de replicación para u
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localización: ID. de presentación | 27                                                                                                                               |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 27                                                                                                                               |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localización: ID. de presentación | 27                                                                                                                               |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 27                                                                                                                               |
 
 
 
@@ -83,8 +83,8 @@ Derecho extendido necesario para actualizar la topología de replicación para u
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localización: ID. de presentación | 27                                                                                                                               |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 27                                                                                                                               |
 
 
 
@@ -94,8 +94,8 @@ Derecho extendido necesario para actualizar la topología de replicación para u
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localización: ID. de presentación | 27                                                                                                                               |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 27                                                                                                                               |
 
 
 
@@ -105,8 +105,8 @@ Derecho extendido necesario para actualizar la topología de replicación para u
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localización: ID. de presentación | 27                                                                                                                               |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 27                                                                                                                               |
 
 
 
@@ -116,8 +116,8 @@ Derecho extendido necesario para actualizar la topología de replicación para u
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localización: ID. de presentación | 27                                                                                                                               |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 27                                                                                                                               |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Netboot-Machine-File-Path (atributo)
-description: Este atributo especifica el servidor que responde al cliente. A partir del sistema operativo Windows Server 2003, puede indicar el Startrom.com que el cliente obtiene.
+title: Atributo Netboot-Machine-File-Path
+description: Este atributo especifica el servidor que responde al cliente. A partir del Windows operativo Server 2003, puede indicar el Startrom.com que obtiene el cliente.
 ms.assetid: 8706bf38-8027-4260-b382-4d4c2a6e0f6e
 ms.tgt_platform: multiple
 keywords:
-- Netboot-Machine-File-path atributo AD Schema
-- netbootMachineFilePath esquema de AD de atributos
+- Esquema de AD del atributo Netboot-Machine-File-Path
+- Esquema de AD del atributo netbootMachineFilePath
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d03ead4f307b7c0b524192d9c865ee437fbd9d2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5495a56a5673a1aa8e62a1f57af89cc12a3f5383dbe9139625fe27c77931e8a7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658795"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119703385"
 ---
-# <a name="netboot-machine-file-path-attribute"></a>Netboot-Machine-File-Path (atributo)
+# <a name="netboot-machine-file-path-attribute"></a>Atributo Netboot-Machine-File-Path
 
-Este atributo especifica el servidor que responde al cliente. A partir del sistema operativo Windows Server 2003, puede indicar el Startrom.com que el cliente obtiene.
+Este atributo especifica el servidor que responde al cliente. A partir del Windows operativo Server 2003, puede indicar el Startrom.com que obtiene el cliente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Netboot-Machine-File-path                   |
-| Nombre para mostrar de LDAP | netbootMachineFilePath                      |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | El sistema establece este valor.            |
+| CN                | Netboot-Machine-File-Path                   |
+| Ldap-Display-Name | netbootMachineFilePath                      |
+| Size              | \-                                          |
+| Privilegio actualizar  | El sistema establece este valor.            |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.361                      |
-| System-ID-GUID    | 3e978923-8c01-11d0-afda-00c04fd930c9        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 3e978923-8c01-11d0-afda-00c04fd930c9        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,18 +55,18 @@ Este atributo especifica el servidor que responde al cliente. A partir del siste
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                   |
+| Id. de vínculo                | \-                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
-| System-Only            | False                                                                                                |
-| Tiene un único valor       | True                                                                                                 |
-| Está indexado             | False                                                                                                |
-| En el catálogo global      | True                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                         |
+| System-Only            | Falso                                                                                                |
+| Es de un solo valor       | Verdadero                                                                                                 |
+| Está indexado             | Falso                                                                                                |
+| En el catálogo global      | Verdadero                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                         |
 | Range-Lower            | \-                                                                                                   |
 | Range-Upper            | \-                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                           |
 | System-Flags           | 0x00000010                                                                                           |
-| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Este atributo especifica el servidor que responde al cliente. A partir del siste
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                   |
+| Id. de vínculo                | \-                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
-| System-Only            | False                                                                                                |
-| Tiene un único valor       | True                                                                                                 |
-| Está indexado             | False                                                                                                |
-| En el catálogo global      | True                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                         |
+| System-Only            | Falso                                                                                                |
+| Es de un solo valor       | Verdadero                                                                                                 |
+| Está indexado             | Falso                                                                                                |
+| En el catálogo global      | Verdadero                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                         |
 | Range-Lower            | \-                                                                                                   |
 | Range-Upper            | \-                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                           |
 | System-Flags           | 0x00000010                                                                                           |
-| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Este atributo especifica el servidor que responde al cliente. A partir del siste
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                   |
+| Id. de vínculo                | \-                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
-| System-Only            | False                                                                                                |
-| Tiene un único valor       | True                                                                                                 |
-| Está indexado             | False                                                                                                |
-| En el catálogo global      | True                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                         |
+| System-Only            | Falso                                                                                                |
+| Es de un solo valor       | Verdadero                                                                                                 |
+| Está indexado             | Falso                                                                                                |
+| En el catálogo global      | Verdadero                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                         |
 | Range-Lower            | \-                                                                                                   |
 | Range-Upper            | \-                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                           |
 | System-Flags           | 0x00000010                                                                                           |
-| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Este atributo especifica el servidor que responde al cliente. A partir del siste
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                   |
+| Id. de vínculo                | \-                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
-| System-Only            | False                                                                                                |
-| Tiene un único valor       | True                                                                                                 |
-| Está indexado             | False                                                                                                |
-| En el catálogo global      | True                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                         |
+| System-Only            | Falso                                                                                                |
+| Es de un solo valor       | Verdadero                                                                                                 |
+| Está indexado             | Falso                                                                                                |
+| En el catálogo global      | Verdadero                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                         |
 | Range-Lower            | \-                                                                                                   |
 | Range-Upper            | \-                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                           |
 | System-Flags           | 0x00000010                                                                                           |
-| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Este atributo especifica el servidor que responde al cliente. A partir del siste
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                   |
+| Id. de vínculo                | \-                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
-| System-Only            | False                                                                                                |
-| Tiene un único valor       | True                                                                                                 |
-| Está indexado             | False                                                                                                |
-| En el catálogo global      | True                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                         |
+| System-Only            | Falso                                                                                                |
+| Es de un solo valor       | Verdadero                                                                                                 |
+| Está indexado             | Falso                                                                                                |
+| En el catálogo global      | Verdadero                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                         |
 | Range-Lower            | \-                                                                                                   |
 | Range-Upper            | \-                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                           |
 | System-Flags           | 0x00000010                                                                                           |
-| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Este atributo especifica el servidor que responde al cliente. A partir del siste
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                   |
+| Id. de vínculo                | \-                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
-| System-Only            | False                                                                                                |
-| Tiene un único valor       | True                                                                                                 |
-| Está indexado             | False                                                                                                |
-| En el catálogo global      | True                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                         |
+| System-Only            | Falso                                                                                                |
+| Es de un solo valor       | Verdadero                                                                                                 |
+| Está indexado             | Falso                                                                                                |
+| En el catálogo global      | Verdadero                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                         |
 | Range-Lower            | \-                                                                                                   |
 | Range-Upper            | \-                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                           |
 | System-Flags           | 0x00000010                                                                                           |
-| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 

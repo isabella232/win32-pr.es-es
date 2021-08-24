@@ -1,39 +1,39 @@
 ---
-title: Propiedad connected
-description: Propiedad connected
+title: Propiedad Connected
+description: Propiedad Connected
 ms.assetid: 61b7f550-d8d6-4719-a0d4-0bf3a8cf096c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3bba78358c7c42f0754da017aa0c188d41acd189
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6af3a44e97236060733adc55ec6e44eddd0b1d8879250b2a28b54c0bca384cac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119726110"
 ---
-# <a name="connected-property"></a>Propiedad connected
+# <a name="connected-property"></a>Propiedad Connected
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 <dl> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Denominación**
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Descripción**
 </dt> <dd>
 
-Devuelve o establece si el control actual está conectado al servidor de agente de Microsoft.
+Devuelve o establece si el control actual está conectado al servidor de Microsoft Agent.
 
 </dd> <dt>
 
-<span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintáctica**
+<span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxis**
 </dt> <dd>
 
-*agente. * * * conectado* *  \[  =  *valor booleano*\]
+*agent.:Connected* *  \[  =  *booleano*\]
 
 
 
 | Parte      | Descripción                                                                                                     |
 |-----------|-----------------------------------------------------------------------------------------------------------------|
-| *boolean* | Una expresión booleana que especifica si el control está conectado. **True** El control está conectado.<br/> |
+| *boolean* | Expresión booleana que especifica si el control está conectado. **True** El control está conectado.<br/> |
 
 
 
@@ -41,11 +41,11 @@ Devuelve o establece si el control actual está conectado al servidor de agente 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En muchas situaciones, al especificar el control, se crea automáticamente una conexión con el servidor de agente de Microsoft. Por ejemplo, si se especifica el CLSID del control del agente de Microsoft en la <OBJECT> etiqueta de una página web, se abre automáticamente una conexión al servidor y se cierra la página. De forma similar, para Visual Basic u otros lenguajes que le permitan quitar un control de un formulario, al ejecutar el programa se abre automáticamente una conexión y al salir el programa se cierra la conexión. Si el servidor no se está ejecutando, se inicia automáticamente.
+En muchas situaciones, al especificar el control se crea automáticamente una conexión con el servidor de Microsoft Agent. Por ejemplo, si se especifica el CLSID del control Microsoft Agent en la etiqueta de una página web, se abre automáticamente una conexión de servidor y al salir de la página se <OBJECT> cierra la conexión. De forma similar, para Visual Basic u otros lenguajes que le permiten quitar un control en un formulario, al ejecutar el programa se abre automáticamente una conexión y al salir del programa se cierra la conexión. Si el servidor no se está ejecutando actualmente, se inicia automáticamente.
 
-Sin embargo, si desea crear un control de agente en tiempo de ejecución, es posible que también necesite abrir explícitamente una nueva conexión al servidor mediante la propiedad **Connected** . Por ejemplo, en Visual Basic puede crear un objeto ActiveX en tiempo de ejecución mediante la instrucción set con la palabra clave **New** (o la función CreateObject). Aunque esto crea el objeto, es posible que no cree la conexión al servidor. Puede usar la propiedad **Connected** antes del código que llama a la interfaz de programación de Microsoft Agent, como se muestra en el ejemplo siguiente:
+Sin embargo, si desea crear un control agente en tiempo de ejecución, es posible que también tenga que abrir explícitamente una nueva conexión al servidor mediante la **propiedad Conectado.** Por ejemplo, en Visual Basic puede crear un objeto ActiveX en tiempo de ejecución mediante la instrucción Set con la palabra clave **New** (o la función CreateObject). Aunque esto crea el objeto , es posible que no cree la conexión al servidor. Puede usar la propiedad **Connected antes** de cualquier código que llame a la interfaz de programación de Microsoft Agent, como se muestra en el ejemplo siguiente:
 
 
 ```
@@ -67,7 +67,7 @@ Sin embargo, si desea crear un control de agente en tiempo de ejecución, es pos
 
 
 
-La creación de un control con esta técnica no expone los eventos del control del agente. En Visual Basic 5,0 (y versiones posteriores), puede tener acceso a los eventos del control incluyendo el control en las referencias del proyecto y usar la palabra clave **WithEvents** en la declaración de variable:
+La creación de un control mediante esta técnica no expone los eventos del control Agente . En Visual Basic 5.0 (y versiones posteriores), puede acceder a los eventos del control incluyendo el control en las referencias del proyecto y usar la palabra clave **WithEvents** en la declaración de variable:
 
 
 ```
@@ -79,9 +79,9 @@ La creación de un control con esta técnica no expone los eventos del control d
 
 
 
-Al utilizar **WithEvents** para crear una instancia del control del agente en tiempo de ejecución, se abre automáticamente la conexión con el servidor del agente de Microsoft. Por lo tanto, no es necesario incluir una instrucción **conectada** .
+Al **usar WithEvents** para crear una instancia del control Agente en tiempo de ejecución, se abre automáticamente la conexión con el servidor de Microsoft Agent. Por lo tanto, no es necesario incluir una **instrucción Connected.**
 
-Puede cerrar la conexión al servidor liberando todas las referencias que creó a objetos de agente, como IAgentCtlCharacterEx y IAgentCtlCommandEx. También debe liberar su referencia al propio control del agente. En Visual Basic, puede liberar una referencia a un objeto estableciendo su variable en **Nothing**. Si ha cargado caracteres, descárguelos antes de liberar el objeto de carácter.
+Puede cerrar la conexión con el servidor liberando todas las referencias que creó a objetos del Agente, como IAgentCtlCharacterEx e IAgentCtlCommandEx. También debe liberar la referencia al propio control agente. En Visual Basic, puede liberar una referencia a un objeto estableciendo su variable en **Nothing**. Si ha cargado caracteres, debe descargarlos antes de liberar el objeto de carácter.
 
 
 ```
@@ -120,7 +120,7 @@ Puede cerrar la conexión al servidor liberando todas las referencias que creó 
 
 
 > [!Note]  
-> No se puede cerrar la conexión al servidor si se liberan las referencias a las que se ha agregado el componente. Por ejemplo, no se puede cerrar la conexión al servidor en páginas web en las que se usa la <OBJECT> etiqueta para declarar el control o en una aplicación Visual Basic en la que se coloca el control en un formulario. Mientras se liberan todas las referencias del agente, se reducirá el espacio de trabajo del agente, la conexión permanecerá hasta que vaya a la página siguiente o salga de la aplicación.
+> No se puede cerrar la conexión al servidor mediante la publicación de referencias donde se ha agregado el componente. Por ejemplo, no puede cerrar la conexión al servidor en páginas web donde use la etiqueta para declarar el control o en una aplicación Visual Basic donde coloque el control en <OBJECT> un formulario. Aunque liberar todas las referencias del Agente reducirá el conjunto de trabajo del Agente, la conexión permanecerá hasta que vaya a la página siguiente o salga de la aplicación.
 
  
 

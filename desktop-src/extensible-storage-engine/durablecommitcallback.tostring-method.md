@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: DurableCommitCallback. ToString (método)'
-title: Método DurableCommitCallback. ToString (Microsoft. ISAM. esent. Interop. Windows8)
+description: Más información sobre el método DurableCommitCallback.ToString
+title: Método DurableCommitCallback.ToString (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: 'ToString method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Windows8.DurableCommitCallback.ToString
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.durablecommitcallback.tostring(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e5283942b17da17309175f1fb2260a5b20b5bf5e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7ceeae9a04a423a2129c59601e883886a99072e690d97e9f5c56cf1a0ad3f68e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105717099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119786245"
 ---
-# <a name="durablecommitcallbacktostring-method"></a>DurableCommitCallback. ToString (método)
+# <a name="durablecommitcallbacktostring-method"></a>Método DurableCommitCallback.ToString
 
-Genera una representación de cadena de la estructura.
+Genera una representación de cadena de la estructura .
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,15 +56,15 @@ public override string ToString()
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. String](/dotnet/api/system.string)  
-La estructura como una cadena.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Estructura como una cadena.  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase DurableCommitCallback](./durablecommitcallback-class.md)
+[DurableCommitCallback (clase)](./durablecommitcallback-class.md)
 
-[Miembros de DurableCommitCallback](./durablecommitcallback-members.md)
+[Miembros DurableCommitCallback](./durablecommitcallback-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

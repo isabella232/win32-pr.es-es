@@ -1,11 +1,11 @@
 ---
-title: Atributo MSMQ-out-Routing-servers
-description: Los vínculos DN a los servidores de enrutamiento de MSMQ a través de los cuales se debe enrutar todo el tráfico saliente para este equipo.
+title: Atributo MSMQ-Out-Routing-Servers
+description: Vínculos de DN a servidores de enrutamiento de MSMQ a través de los cuales se debe enrutar todo el tráfico saliente de este equipo.
 ms.assetid: 169558e4-d2a6-4555-bc5f-7e6a89e51789
 ms.tgt_platform: multiple
 keywords:
-- Message Queue-out-Routing-Servers atributo AD Schema
-- mSMQOutRoutingServers esquema de AD de atributos
+- Esquema de AD del atributo MSMQ-Out-Routing-Servers
+- Esquema de AD del atributo mSMQOutRoutingServers
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bfc2265b2d809b7a73cd19faace87473552471a3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: bd36fa89ab33ac7757ed4cf14673d33bc32fc1495f95102454fc918b8f21c4bb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906003"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119762445"
 ---
-# <a name="msmq-out-routing-servers-attribute"></a>Atributo MSMQ-out-Routing-servers
+# <a name="msmq-out-routing-servers-attribute"></a>Atributo MSMQ-Out-Routing-Servers
 
-Los vínculos DN a los servidores de enrutamiento de MSMQ a través de los cuales se debe enrutar todo el tráfico saliente para este equipo.
+Vínculos de DN a servidores de enrutamiento de MSMQ a través de los cuales se debe enrutar todo el tráfico saliente de este equipo.
 
 
 
 | Entrada | Value |
 |-------------------|-----------------------------------------|
-| CN                | MSMQ-out-Routing-servers                |
-| Nombre para mostrar de LDAP | mSMQOutRoutingServers                   |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | MSMQ-Out-Routing-Servers                |
+| Ldap-Display-Name | mSMQOutRoutingServers                   |
+| Size              | \-                                      |
+| Actualizar privilegios  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.928                  |
-| System-ID-GUID    | 9a0dc32b-c100-11d1-bbc5-0080c76670c0    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 9a0dc32b-c100-11d1-gni5-0080c76670c0    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -55,18 +55,18 @@ Los vínculos DN a los servidores de enrutamiento de MSMQ a través de los cuale
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | False                                                        |
-| Está indexado             | False                                                        |
-| En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Falso                                                        |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Verdadero                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Clases usadas en        | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
+| Clases usadas en        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Los vínculos DN a los servidores de enrutamiento de MSMQ a través de los cuale
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | False                                                        |
-| Está indexado             | False                                                        |
-| En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Falso                                                        |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Verdadero                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Clases usadas en        | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
+| Clases usadas en        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Los vínculos DN a los servidores de enrutamiento de MSMQ a través de los cuale
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | False                                                        |
-| Está indexado             | False                                                        |
-| En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Falso                                                        |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Verdadero                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Clases usadas en        | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
+| Clases usadas en        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Los vínculos DN a los servidores de enrutamiento de MSMQ a través de los cuale
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | False                                                        |
-| Está indexado             | False                                                        |
-| En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Falso                                                        |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Verdadero                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Clases usadas en        | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
+| Clases usadas en        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Los vínculos DN a los servidores de enrutamiento de MSMQ a través de los cuale
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | False                                                        |
-| Está indexado             | False                                                        |
-| En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Falso                                                        |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Verdadero                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Clases usadas en        | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
+| Clases usadas en        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Los vínculos DN a los servidores de enrutamiento de MSMQ a través de los cuale
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | False                                                        |
-| Está indexado             | False                                                        |
-| En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Falso                                                        |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Verdadero                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Clases usadas en        | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
+| Clases usadas en        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 

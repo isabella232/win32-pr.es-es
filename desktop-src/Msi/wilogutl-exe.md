@@ -1,52 +1,52 @@
 ---
-description: Wilogutl.exe ayuda a analizar los archivos de registro desde una instalación de Windows Installer y muestra soluciones sugeridas a los errores que se encuentran en un archivo de registro.
+description: Wilogutl.exe ayuda al análisis de archivos de registro de una instalación de Windows Installer y muestra soluciones sugeridas a los errores que se encuentran en un archivo de registro.
 ms.assetid: 09aa03ba-992f-47ab-999b-ebdfe85c1ea7
 title: Wilogutl.exe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ec81c3c82299a08fd947fbbecc7afd8a373252b8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 74ee29553cba4105b5e6ff250f5b388adc964b9477bde5d1f25d073bbf2b1355
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119786604"
 ---
 # <a name="wilogutlexe"></a>Wilogutl.exe
 
-Wilogutl.exe ayuda a analizar los archivos de registro desde una instalación de Windows Installer y muestra soluciones sugeridas a los errores que se encuentran en un archivo de registro.
+Wilogutl.exe ayuda al análisis de archivos de registro de una instalación de Windows Installer y muestra soluciones sugeridas a los errores que se encuentran en un archivo de registro.
 
-No se muestran los errores no críticos. Wilogutl.exe puede ejecutarse en modo silencioso o con una interfaz de usuario (UI). La herramienta genera informes como archivos de texto en los modos de interfaz de usuario y de modo silencioso. Funciona mejor con los archivos de registro detallados de Windows Installer, pero también funciona con registros no detallados. Para obtener más información, vea [Registro](logging.md).
+No se muestran errores no críticos. Wilogutl.exe se puede ejecutar en modo silencioso o con una interfaz de usuario (UI). La herramienta genera informes como archivos de texto tanto en la interfaz de usuario como en los modos silenciosos. Funciona mejor con archivos de registro Windows instalador detallado, pero también funciona con registros no detallados. Para obtener más información, vea [Registro](logging.md).
 
-Esta herramienta solo está disponible en los [componentes de Windows SDK para los desarrolladores de Windows Installer](platform-sdk-components-for-windows-installer-developers.md).
+Esta herramienta solo está disponible en los componentes del [SDK de Windows para Windows programadores del instalador](platform-sdk-components-for-windows-installer-developers.md).
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 **wilogutl.exe***\[<options>\]\[<source file>\]\[<options>\]\[<report file directory>\]*
 
 Puede usar las siguientes líneas de comandos para ejecutarse en modo silencioso.
 
-**wilogutl/q/l** *c: \\ mymsilog. log* **/o** *c \\ outputDir \\*
+**wilogutl /q /l** *c: \\ mymsilog.log* **/o** *c \\ outputdir \\*
 
-**wilogutl/q/l** *c: \\ mymsilog. log*
+**wilogutl /q /l** *c: \\ mymsilog.log*
 
 ## <a name="command-line-options"></a>Opciones de la línea de comandos
 
-Wilogutl.exe usa las siguientes opciones de línea de comandos que no distinguen mayúsculas de minúsculas. Se puede usar un delimitador de guiones en lugar de una barra diagonal.
+Wilogutl.exe usa las siguientes opciones de línea de comandos que no tienen en cuenta mayúsculas de minúsculas. Se puede usar un delimitador de guiones en lugar de una barra diagonal.
 
 
 
 | Opción | Descripción                                                                                                                                                                                     |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ninguno   | Se ejecuta en modo de interfaz de usuario, sin opciones de línea de comandos.                                                                                                                                                   |
-| /q     | Especifica el modo silencioso. Wilogutl.exe genera archivos de informe y no muestra ninguna interfaz de usuario.                                                                                            |
+| /q     | Especifica el modo silencioso. Wilogutl.exe genera archivos de informe y no muestra una interfaz de usuario.                                                                                            |
 | /l     | Especifica el nombre del archivo de registro que se va a analizar. Esta opción es necesaria cuando se usa el modo silencioso.                                                                                           |
-| /o     | Especifica el directorio de salida para los archivos de informe. Esta ruta de acceso de salida solo se usa cuando se ejecuta en modo silencioso. Si la opción no está presente, los informes se colocan en el \\ directorio C: WiLogResults |
+| /o     | Especifica el directorio de salida para los archivos de informe. Esta ruta de acceso de salida solo se usa cuando se ejecuta en modo silencioso. Si la opción no está presente, los informes se colocarán en el directorio C: \\ WiLogResults. |
 
 
 
  
 
-Cuando se ejecuta en modo de interfaz de usuario, Wilogutl.exe muestra los siguientes cuadros de diálogo.
+Cuando se ejecuta en modo de interfaz de usuario, Wilogutl.exe muestra los cuadros de diálogo siguientes.
 
 
 
@@ -63,57 +63,57 @@ Cuando se ejecuta en modo de interfaz de usuario, Wilogutl.exe muestra los sigui
 </thead>
 <tbody>
 <tr class="odd">
-<td>Analizador de registros detallado Windows Installer</td>
-<td>El cuadro de diálogo Windows Installer analizador de registros detallado permite a los usuarios seleccionar un archivo de registro para su análisis:
+<td>Windows Analizador de registro detallado del instalador</td>
+<td>El cuadro Windows analizador de registro detallado del instalador de archivos permite a los usuarios seleccionar un archivo de registro para su análisis:
 <ul>
-<li>El botón <strong>abrir</strong> abre el archivo en el Bloc de notas. El área de vista previa se puede usar para comprobar que se ha seleccionado el archivo de registro correcto.</li>
-<li>El botón <strong>analizar</strong> inicia el análisis del archivo de registro y muestra el cuadro de diálogo vista de archivo de registro detallada.</li>
+<li>El <strong>botón</strong> Abrir abre el archivo en Bloc de notas. El área de vista previa se puede usar para comprobar que se ha seleccionado el archivo de registro correcto.</li>
+<li>El <strong>botón Analizar</strong> comienza el análisis de archivos de registro y muestra el cuadro de diálogo Vista detallada del archivo de registro.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Vista detallada del archivo de registro</td>
-<td>En el cuadro de diálogo vista de archivo de registro detallada se muestra la información de error registrada. Use los botones <strong>atrás</strong> y <strong>siguiente</strong> para navegar por varios errores. Para mostrar los errores no críticos, active la casilla <strong>Mostrar errores de depuración omitidos</strong> . Se muestra la versión del instalador en el equipo que se usa para ejecutar la instalación registrada. Si la instalación registrada se ejecutó con permisos elevados, la casilla de <strong>instalación</strong> con privilegios elevados está activada y se proporciona información en los cuadros de texto <strong>detalles de privilegios</strong> del lado del cliente y detalles de los <strong>privilegios del servidor</strong> . El cuadro de diálogo vista de archivo de registro detallado contiene los siguientes botones:<br/>
+<td>El cuadro de diálogo Vista detallada del archivo de registro muestra información de error registrada. Use los <strong>botones Atrás</strong> <strong>y</strong> Siguiente para navegar por varios errores. Para mostrar errores no críticos, active <strong>la casilla Mostrar errores de depuración omitido.</strong> Se muestra la versión del instalador en el equipo que se usa para ejecutar la instalación registrada. Si la instalación registrada se ha <strong></strong> ejecutado con permisos elevados, la <strong></strong> casilla Instalación con privilegios elevados está activada y se proporciona información en los cuadros de texto Detalles de privilegios del lado cliente y Detalles de <strong>privilegios</strong> del lado servidor. El cuadro de diálogo Vista detallada del archivo de registro contiene los siguientes botones:<br/>
 <ul>
-<li><strong>Estados</strong> - de Muestra el cuadro de diálogo Estados de características y componentes.</li>
-<li><strong>Propiedades</strong> - de Mostrar el cuadro de diálogo Propiedades.</li>
-<li><strong>Directivas</strong> - de Muestra el cuadro de diálogo directivas.</li>
-<li>Registro anotado <strong>HTML</strong> - Muestra el registro como archivo HTML anotado.</li>
-<li><strong>Guardar resultados</strong> - Guardar archivos de informe en el directorio especificado.</li>
-<li>Ayuda del mensaje de <strong>error</strong> - Muestra la ayuda del mensaje de error del instalador.</li>
-<li><strong>Ayuda</strong> - de Mostrar ayuda para Windows Installer el analizador de registros de instalación.</li>
-<li><strong>Cómo leer un archivo</strong> - de registro Muestra el documento de ayuda del archivo de registro.</li>
+<li><strong>Estados</strong> - Mostrar el cuadro de diálogo Estados de características y componentes .</li>
+<li><strong>Propiedades</strong> - Mostrar el cuadro de diálogo Propiedades .</li>
+<li><strong>Directivas</strong> - Mostrar el cuadro de diálogo Directivas.</li>
+<li><strong>Registro anotado en HTML</strong> - Mostrar el registro como archivo HTML anotado.</li>
+<li><strong>Guardar resultados</strong> - Guarde los archivos de informe en el directorio especificado.</li>
+<li><strong>Ayuda del mensaje de error</strong> - Mostrar la ayuda del mensaje de error del instalador.</li>
+<li><strong>Ayuda</strong> - Mostrar ayuda para el Windows de registro de instalación del instalador.</li>
+<li><strong>Cómo leer un archivo de registro</strong> - Mostrar el documento de ayuda del archivo de registro.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Estados de características y componentes</td>
-<td>El cuadro de diálogo Estados de características <strong>y</strong> componentes muestra los Estados de características y componentes:
+<td>El <strong>cuadro de diálogo Estados de características</strong> y componentes muestra los estados de características y componentes:
 <ul>
-<li>La columna <strong>característica</strong> muestra el nombre de la característica en el paquete de instalación.</li>
-<li>La columna <strong>componente</strong> muestra el nombre del componente en el paquete de instalación.</li>
-<li>La columna <strong>instalado</strong> muestra la característica o el estado del componente al final de la instalación.</li>
-<li>La columna <strong>solicitud</strong> muestra la selección del usuario durante la instalación del estado de la característica o del componente.</li>
-<li>La columna <strong>acción</strong> muestra la acción realizada por el instalador para la característica o componente.</li>
+<li>La <strong>columna</strong> Característica muestra el nombre de la característica en el paquete de instalación.</li>
+<li>La <strong>columna</strong> Componente muestra el nombre del componente en el paquete de instalación.</li>
+<li>La <strong>columna Instalado</strong> muestra el estado de la característica o componente al final de la instalación.</li>
+<li>La <strong>columna</strong> Solicitud muestra la selección del usuario durante la instalación para el estado de la característica o componente.</li>
+<li>La <strong>columna</strong> Acción muestra la acción realizada por el instalador para la característica o componente.</li>
 </ul>
-Para obtener más información, vea <a href="/windows/desktop/api/Msiquery/nf-msiquery-msigetcomponentstatea"><strong>MsiGetComponentState</strong></a> y <a href="/windows/desktop/api/Msiquery/nf-msiquery-msigetfeaturestatea"><strong>MsiGetFeatureState</strong></a>.<br/></td>
+Para obtener más información, <a href="/windows/desktop/api/Msiquery/nf-msiquery-msigetcomponentstatea"><strong>vea MsiGetComponentState</strong></a> y <a href="/windows/desktop/api/Msiquery/nf-msiquery-msigetfeaturestatea"><strong>MsiGetFeatureState.</strong></a><br/></td>
 </tr>
 <tr class="even">
 <td>Propiedades</td>
-<td>El cuadro de diálogo Propiedades muestra Windows Installer <a href="properties.md">propiedades</a> y sus valores al final de la instalación. Puede ordenar las propiedades por nombre o por valor:
+<td>El cuadro de diálogo Propiedades Windows propiedades <a href="properties.md">del instalador</a> y sus valores al final de la instalación. Puede ordenar las propiedades por nombre o por valor:
 <ul>
-<li>La pestaña <strong>cliente</strong> muestra propiedades y valores durante la parte del cliente de la instalación.</li>
-<li>En la pestaña <strong>servidor</strong> se muestran las propiedades y los valores durante la parte de servidor de la instalación.</li>
-<li>En la pestaña <strong>anidado</strong> se muestran las propiedades y los valores de las <a href="concurrent-installations.md">instalaciones simultáneas</a>.</li>
+<li>La <strong>pestaña</strong> Cliente muestra las propiedades y los valores durante la parte del lado cliente de la instalación.</li>
+<li>La <strong>pestaña</strong> Servidor muestra las propiedades y los valores durante la parte del servidor de la instalación.</li>
+<li>La <strong>pestaña Nested</strong> (Anidado) muestra las propiedades y los valores de cualquier instalación <a href="concurrent-installations.md">simultánea.</a></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Directivas</td>
-<td>En el cuadro de diálogo directivas se muestra el conjunto de <a href="system-policy.md">directivas del sistema</a> después de la instalación:
+<td>El cuadro de diálogo Directivas muestra el <a href="system-policy.md">conjunto de directivas del</a> sistema después de la instalación:
 <ul>
-<li>Un valor de 0 (cero) establecido para la directiva significa que la Directiva no está habilitada.</li>
-<li>Un valor de 1 (uno) significa que la Directiva está habilitada.</li>
-<li>Un valor de? (signo de interrogación) significa que el valor de la Directiva no se registra en el registro.</li>
+<li>Un valor de 0 (cero) establecido para la directiva significa que la directiva no está habilitada.</li>
+<li>Un valor de 1 (uno) significa que la directiva está habilitada.</li>
+<li>Un valor de ? (signo de interrogación) significa que el valor de la directiva no se registra en el registro.</li>
 </ul>
-Si necesita un valor de directiva que no esté en el registro, pruebe a usar Regedit.exe para comprobar las claves del registro en el equipo que no se puede realizar la instalación.<br/></td>
+Si necesita un valor de directiva que no esté en el registro, intente usar Regedit.exe para comprobar las claves del Registro en el equipo que no se pueden instalar.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -124,7 +124,7 @@ Si necesita un valor de directiva que no esté en el registro, pruebe a usar Reg
 
 ## <a name="report-files"></a>Archivos de informe
 
-Al realizar un análisis de modo silencioso o al hacer clic en el botón **Guardar resultados** en el cuadro de diálogo **vista detallada del archivo de registro** , la herramienta analizador de instalación de Windows Installer genera tres archivos de texto y un archivo de registro anotado en HTML.
+Al realizar un análisis en  modo silencioso o hacer clic en el botón Guardar resultados del cuadro de diálogo **Vista** detallada del archivo de registro, la herramienta Analizador de instalación del instalador de Windows genera tres archivos de texto y un archivo de registro anotado html.
 
 En la tabla siguiente se identifican los nombres y el contenido de los archivos de informe.
 
@@ -132,10 +132,10 @@ En la tabla siguiente se identifican los nombres y el contenido de los archivos 
 
 | Nombre                      | Descripción                                                                                                                    |
 |---------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| nombreDeArchivoDeRegistro \_summary.txt  | Resume el archivo de registro. Muestra la información que se muestra en el cuadro de diálogo vista de archivo de registro detallada y el primer error.         |
-| nombreDeArchivoDeRegistro \_errors.txt   | Identifica el número de errores, los errores y las soluciones recomendadas. En este archivo se enumeran los errores críticos y no críticos. |
-| nombreDeArchivoDeRegistro \_policies.txt | Identifica los nombres de directiva y los valores establecidos al final de la instalación, como en el cuadro de diálogo directivas.                       |
-| detalles \_logfilename.htm  | Un registro anotado en HTML con una leyenda para la codificación de colores.                                                                      |
+| logfilename \_summary.txt  | Resume el archivo de registro. Muestra la información que muestra el cuadro de diálogo Vista detallada del archivo de registro y el primer error.         |
+| logfilename \_errors.txt   | Identifica el número de errores, los errores y las soluciones recomendadas. En este archivo se enumeran los errores críticos y no críticos. |
+| logfilename \_policies.txt | Identifica los nombres y valores de directiva establecidos al final de la instalación como en el cuadro de diálogo Directivas .                       |
+| detalles \_logfilename.htm  | Registro anotado en HTML con una leyenda para la codificación de colores.                                                                      |
 
 
 
@@ -143,16 +143,16 @@ En la tabla siguiente se identifican los nombres y el contenido de los archivos 
 
 ## <a name="return-values"></a>Valores devueltos
 
-Si se pasan argumentos de línea de comandos no válidos para las operaciones de modo silencioso, Wilogutl.exe no hace nada y el proceso devuelve uno de los valores de la tabla siguiente.
+Si se pasan argumentos de línea de comandos no válidos para las operaciones en modo silencioso, Wilogutl.exe no hace nada y el proceso devuelve uno de los valores de la tabla siguiente.
 
 
 
-| Value | Significado                                                                 |
+| Valor | Significado                                                                 |
 |-------|-------------------------------------------------------------------------|
-| 1     | Se ha especificado un directorio de salida incorrecto.                                      |
-| 2     | Se ha especificado un nombre de archivo de registro incorrecto.                                         |
-| 3     | Se pasó/q, pero falta el modificador/l necesario para el nombre del archivo de registro. |
-| 4     | Se pasó/l, pero falta el modificador "/q" necesario para el modo silencioso.        |
+| 1     | Se especifica el directorio de salida no indicado.                                      |
+| 2     | Se especifica un nombre de archivo de registro no bueno.                                         |
+| 3     | Se ha pasado /q, pero falta el modificador /l necesario para el nombre del archivo de registro. |
+| 4     | Se ha pasado /l, pero falta el modificador /q necesario para el modo silencioso.        |
 
 
 
@@ -165,7 +165,7 @@ Si se pasan argumentos de línea de comandos no válidos para las operaciones de
 [Versiones publicadas, herramientas y redistribuibles](released-versions-tools-and-redistributables.md)
 </dt> <dt>
 
-[Herramientas de desarrollo de Windows Installer](windows-installer-development-tools.md)
+[Windows Herramientas de desarrollo del instalador](windows-installer-development-tools.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: User-Workstations atributo)
-description: Contiene los nombres NetBIOS o DNS de los equipos que ejecutan Windows NT Workstation o Windows 2000 Professional desde los que el usuario puede iniciar sesión.
+title: User-Workstations atributo
+description: Contiene los nombres NetBIOS o DNS de los equipos que ejecutan Windows estación de trabajo NT o Windows 2000 Professional desde los que el usuario puede iniciar sesión.
 ms.assetid: 92af070b-dadd-404d-8305-d85974639958
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de User-Workstations
-- userWorkstations esquema de AD de atributos
+- User-Workstations esquema de AD de atributo
+- UserWorkstations attribute AD Schema (Esquema de AD del atributo userWorkstations)
 topic_type:
 - apiref
 api_name:
@@ -14,30 +14,30 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3cad59905dbf24c8baa13969d9a2ce5452767163
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: dfe243275271088ed5634aa4a18ab053ecbad23ba6e844f8bbc18c5809cdfd72
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119702895"
 ---
-# <a name="user-workstations-attribute"></a>User-Workstations atributo)
+# <a name="user-workstations-attribute"></a>User-Workstations atributo
 
-Contiene los nombres NetBIOS o DNS de los equipos que ejecutan Windows NT Workstation o Windows 2000 Professional desde los que el usuario puede iniciar sesión. Cada nombre NetBIOS está separado por una coma. Los nombres múltiples deben separarse con comas.
+Contiene los nombres NetBIOS o DNS de los equipos que ejecutan Windows estación de trabajo NT o Windows 2000 Professional desde los que el usuario puede iniciar sesión. Cada nombre NetBIOS está separado por una coma. Varios nombres deben estar separados por comas.
 
 >[!Note]
->Este atributo de usuario ya no se debe usar. Para administrar qué cuentas pueden iniciar sesión en cada estación de trabajo, se recomienda usar "permitir el inicio de sesión local" y "denegar el inicio de sesión local" o "permitir el inicio de sesión a través de Servicios de Escritorio remoto" y "denegar el inicio de sesión a través de Servicios de Escritorio remoto".
+>Este atributo de usuario ya no debe usarse. Para administrar qué cuentas pueden iniciar sesión en cada estación de trabajo, se recomienda usar "Permitir el inicio de sesión local" y "Denegar el inicio de sesión localmente" o "Permitir el inicio de sesión a través de Servicios de Escritorio remoto" y "Denegar el inicio de sesión a través de Servicios de Escritorio remoto".
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------------------------------------------------------------|
 | CN                | User-Workstations                                                                          |
-| Nombre para mostrar de LDAP | userWorkstations                                                                           |
-| Tamaño              | \-                                                                                         |
-| Actualizar privilegio  | Administrador de dominio o propietario de la cuenta.                                                     |
-| Frecuencia de actualización  | Cuando se crea el registro del usuario y cada vez que es necesario cambiar el privilegio de inicio de sesión del usuario. |
+| Ldap-Display-Name | userWorkstations                                                                           |
+| Size              | \-                                                                                         |
+| Actualizar privilegios  | Administrador de dominio o propietario de la cuenta.                                                     |
+| Frecuencia de actualización  | Cuando se crea el registro del usuario y siempre que sea necesario cambiar el privilegio de inicio de sesión del usuario. |
 | Attribute-Id      | 1.2.840.113556.1.4.86                                                                      |
-| System-ID-GUID    | bf9679d7-0de6-11d0-a285-00aa003049e2                                                       |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                                                |
+| System-Id-Guid    | bf9679d7-0de6-11d0-a285-00aa003049e2                                                       |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                                |
 
 
 
@@ -56,18 +56,18 @@ Contiene los nombres NetBIOS o DNS de los equipos que ejecutan Windows NT Workst
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 1024                              |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -77,18 +77,18 @@ Contiene los nombres NetBIOS o DNS de los equipos que ejecutan Windows NT Workst
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 1024                              |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -96,20 +96,20 @@ Contiene los nombres NetBIOS o DNS de los equipos que ejecutan Windows NT Workst
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 1024                              |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -119,18 +119,18 @@ Contiene los nombres NetBIOS o DNS de los equipos que ejecutan Windows NT Workst
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 1024                              |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -140,18 +140,18 @@ Contiene los nombres NetBIOS o DNS de los equipos que ejecutan Windows NT Workst
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 1024                              |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -161,13 +161,13 @@ Contiene los nombres NetBIOS o DNS de los equipos que ejecutan Windows NT Workst
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 1024                              |
 | Search-Flags           | 0x00000010                        |

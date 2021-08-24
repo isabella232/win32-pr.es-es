@@ -1,9 +1,9 @@
 ---
-title: Función FreeRepairInfoExs (Ndattributils. h)
+title: Función FreeRepairInfoExs (Ndattributils.h)
 description: Desasigna la memoria asignada internamente a una matriz de estructuras RepairInfoEx.
 ms.assetid: b4e3e758-88cd-4ce2-b1a4-5b47889aae9b
 keywords:
-- FreeRepairInfoExs función NDF
+- Función FreeRepairInfoExs NDF
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 094c745486526caa870a500019de3aa819b6fe5a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b75d3d3ee8ba710b0b0ed4755e5ee01309f955bcc1658145dc1d42fe3b9e1ed8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534312"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119802425"
 ---
-# <a name="freerepairinfoexs-function"></a>FreeRepairInfoExs función)
+# <a name="freerepairinfoexs-function"></a>Función FreeRepairInfoExs
 
-La función **FreeRepairInfoExs** desasigna la memoria asignada internamente a una matriz de estructuras [**RepairInfoEx**](/windows/win32/api/ndattrib/ns-ndattrib-repairinfoex) . Esta función llama a [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) para desasignar memoria.
+La **función FreeRepairInfoExs** desasigna la memoria asignada internamente a una matriz de [**estructuras RepairInfoEx.**](/windows/win32/api/ndattrib/ns-ndattrib-repairinfoex) Esta función llama [**a CoTaskMemFree para**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) desasignar memoria.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,30 +42,30 @@ VOID FreeRepairInfoExs(
 
 <dl> <dt>
 
-*Pinfo* \[ de\]
+*pInfo* \[ En\]
 </dt> <dd>
 
-Tipo: **[**RepairInfoEx**](/windows/win32/api/ndattrib/ns-ndattrib-repairinfoex) \** _
+Tipo: **[ **RepairInfoEx**](/windows/win32/api/ndattrib/ns-ndattrib-repairinfoex)\***
 
-Matriz de estructuras. La memoria asignada a la que apuntan estas estructuras se liberará.
+Matriz de estructuras. Se liberará la memoria asignada a la que apuntan estas estructuras.
 
 </dd> <dt>
 
-_RepairCount * 
+*RepairCount* 
 </dt> <dd>
 
-Tipo: **ULong**
+Tipo: **ULONG**
 
-El número de estructuras de la matriz a las que apunta *Pinfo*.
+Número de estructuras de la matriz a las que apunta *pInfo*.
 
 </dd> <dt>
 
 *bFreePointer* 
 </dt> <dd>
 
-Tipo: **bool**
+Tipo: **BOOL**
 
-True si también se debe eliminar la matriz de estructuras; en caso contrario, false.
+True si también se debe eliminar la matriz de estructuras; de lo contrario, false.
 
 </dd> </dl>
 
@@ -79,9 +79,9 @@ Esta función no devuelve ningún valor.
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                 |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                       |
-| Encabezado<br/>                   | <dl> <dt>Ndattributils. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                 |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                       |
+| Header<br/>                   | <dl> <dt>Ndattributils.h</dt> </dl> |
 
 
 

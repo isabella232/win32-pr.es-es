@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: e6566a58212e8f20d0d999302f41ab97cb9f005e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7c98d947ad81dd1f2dc3e0dd19de144729ea8a069aefc12a820548aaeac4d15d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098413"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119742665"
 ---
 # <a name="istatsgettotalstatistics-method"></a>Método IStats::GetTotalStatistics
 
@@ -44,7 +44,7 @@ HRESULT STDMETHODCALLTYPE GetTotalStatistics(
 *lpStats* \[ out\]
 </dt> <dd>
 
-Puntero a una [estructura STATISTICS](statistics.md)que proporciona las estadísticas totales de la captura. Es responsabilidad del autor de la llamada asignar y liberar la memoria usada por la **estructura STATISTICS.**
+Puntero a una [estructura STATISTICS](statistics.md)que proporciona las estadísticas totales de la captura. Es responsabilidad del autor de la llamada asignar y liberar la memoria utilizada por la **estructura STATISTICS.**
 
 </dd> <dt>
 
@@ -59,14 +59,14 @@ Marca que se usa para Monitor de red cómo controlar el almacenamiento interno d
 
 Si el método es correcto, el valor devuelto es NMERR \_ SUCCESS.
 
-Si el método no es correcto, el valor devuelto es uno de los siguientes códigos de error:
+Si el método no se realiza correctamente, el valor devuelto es uno de los siguientes códigos de error:
 
 
 
 | Código devuelto                                                                                            | Descripción                                                                                                                                  |
 |--------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**NMERR \_ NO \_ CONECTADO**</dt> </dl>   | El NPP no está conectado a la red. Llame al [método IStats::Connect](istats-connect.md) para conectar el NPP a la red.<br/> |
-| <dl> <dt>**NMERR \_ NO SOLO \_ \_ ESTADÍSTICAS**</dt> </dl> | El NPP está conectado a la red, pero no con el [método IStats::Connect.](istats-connect.md)<br/>                                |
+| <dl> <dt>**NMERR \_ NO \_ CONECTADO**</dt> </dl>   | El NPP no está conectado a la red. Llame al [método IStats::Conectar](istats-connect.md) para conectar el NPP a la red.<br/> |
+| <dl> <dt>**NMERR \_ NO \_ SOLO \_ ESTADÍSTICAS**</dt> </dl> | El NPP está conectado a la red, pero no con el [método IStats::Conectar.](istats-connect.md)<br/>                                |
 | <dl> <dt>**NMERR \_ NO \_ CAPTURA**</dt> </dl>   | El NPP no captura datos. Llame al [método IStats::Start](istats-start.md) para empezar a capturar datos.<br/>                         |
 
 
@@ -75,15 +75,15 @@ Si el método no es correcto, el valor devuelto es uno de los siguientes código
 
 ## <a name="remarks"></a>Comentarios
 
-Este método devuelve datos solo mientras hay una captura en curso, incluso mientras la captura está en pausa.
+Este método devuelve datos solo mientras una captura está en curso, incluso mientras la captura está en pausa.
 
-Monitor de red también almacena [*estadísticas*](c.md)de conversación, que se pueden recuperar llamando al [método IStats::GetConversationStatistics.](istats-getconversationstatistics.md)
+Monitor de red también almacena las [*estadísticas*](c.md)de conversación, que se pueden recuperar llamando al [método IStats::GetConversationStatistics.](istats-getconversationstatistics.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                                                                     |
@@ -92,14 +92,14 @@ Monitor de red también almacena [*estadísticas*](c.md)de conversación, que se
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [IStats](istats.md)
 </dt> <dt>
 
-[IStats::Connect](istats-connect.md)
+[IStats::Conectar](istats-connect.md)
 </dt> <dt>
 
 [IStats::GetConversationStatistics](istats-getconversationstatistics.md)

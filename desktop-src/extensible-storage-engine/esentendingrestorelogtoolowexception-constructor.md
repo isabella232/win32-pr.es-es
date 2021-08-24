@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentEndingRestoreLogTooLowException'
-title: Constructor de EsentEndingRestoreLogTooLowException
+description: 'Más información sobre: Constructor EsentEndingRestoreLogTooLowException'
+title: Constructor EsentEndingRestoreLogTooLowException
 TOCTitle: 'EsentEndingRestoreLogTooLowException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentEndingRestoreLogTooLowException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentendingrestorelogtoolowexception.esentendingrestorelogtoolowexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7fd0c0d6f2c7b2a02b7dcc7da30ccd6c7da8494a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7a0a9286abce8f5ec68e60863baf69b90f771def25f203fc674b38b9ed5a19d8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083374"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119724775"
 ---
-# <a name="esentendingrestorelogtoolowexception-constructor"></a>Constructor de EsentEndingRestoreLogTooLowException
+# <a name="esentendingrestorelogtoolowexception-constructor"></a>Constructor EsentEndingRestoreLogTooLowException
 
 Inicializa una nueva instancia de la clase EsentEndingRestoreLogTooLowException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentEndingRestoreLogTooLowException()
 public EsentEndingRestoreLogTooLowException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentEndingRestoreLogTooLowException()
 
 [Miembros de EsentEndingRestoreLogTooLowException](./esentendingrestorelogtoolowexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,17 +1,17 @@
 ---
 description: Nombre del archivo del controlador de impresora.
 ms.assetid: 82366686-8661-466b-881D-EBB2E03993C5
-title: System. DeviceInterface. PrinterDriverName
+title: System.DeviceInterface.PrinterDriverName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c06e9bc6fa5fcbb4a6dcf34b872417c24b8663b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 045cdfc276a952a4255fc66bdaf1387c9559b4af874a69c1a9af7fd89634bcdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687422"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119823065"
 ---
-# <a name="systemdeviceinterfaceprinterdrivername"></a>System. DeviceInterface. PrinterDriverName
+# <a name="systemdeviceinterfaceprinterdrivername"></a>System.DeviceInterface.PrinterDriverName
 
 Nombre del archivo del controlador de impresora.
 
@@ -30,9 +30,9 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

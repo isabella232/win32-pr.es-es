@@ -1,11 +1,11 @@
 ---
-title: Reps-From atributo)
-description: Enumera los servidores de los que el directorio aceptará los cambios en el contexto de nomenclatura definido.
+title: Reps-From atributo
+description: Enumera los servidores desde los que el directorio aceptará cambios para el contexto de nomenclatura definido.
 ms.assetid: 2e18410b-d383-4838-aeaf-dd479be5f44d
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Reps-From
-- repsFrom esquema de AD de atributos
+- Reps-From esquema de AD de atributo
+- repsFrom attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc6981b71b6ec251eb27af0e7570fe1558d1ff20
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8dd71048e35e4308ea7377727a5be4040eeae1ef7973f1e1dabc893bcee3b157
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658755"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837435"
 ---
-# <a name="reps-from-attribute"></a>Reps-From atributo)
+# <a name="reps-from-attribute"></a>Reps-From atributo
 
-Enumera los servidores de los que el directorio aceptará los cambios en el contexto de nomenclatura definido.
+Enumera los servidores desde los que el directorio aceptará cambios para el contexto de nomenclatura definido.
 
 
 
 | Entrada | Value |
 |-------------------|-------------------------------------------------------|
 | CN                | Reps-From                                             |
-| Nombre para mostrar de LDAP | repsFrom                                              |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| Ldap-Display-Name | repsFrom                                              |
+| Size              | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.2.91                                 |
-| System-ID-GUID    | bf967a1d-0de6-11d0-a285-00aa003049e2                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | bf967a1d-0de6-11d0-a285-00aa003049e2                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -44,7 +44,7 @@ Enumera los servidores de los que el directorio aceptará los cambios en el cont
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,13 +56,13 @@ Enumera los servidores de los que el directorio aceptará los cambios en el cont
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | True                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Verdadero                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -77,13 +77,13 @@ Enumera los servidores de los que el directorio aceptará los cambios en el cont
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | True                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Verdadero                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -92,19 +92,19 @@ Enumera los servidores de los que el directorio aceptará los cambios en el cont
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | True                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Verdadero                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -119,13 +119,13 @@ Enumera los servidores de los que el directorio aceptará los cambios en el cont
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | True                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Verdadero                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -140,13 +140,13 @@ Enumera los servidores de los que el directorio aceptará los cambios en el cont
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | True                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Verdadero                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -161,13 +161,13 @@ Enumera los servidores de los que el directorio aceptará los cambios en el cont
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | True                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Verdadero                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -182,13 +182,13 @@ Enumera los servidores de los que el directorio aceptará los cambios en el cont
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | True                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Verdadero                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

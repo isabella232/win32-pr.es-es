@@ -1,11 +1,11 @@
 ---
-title: atributo de prioridad de RPC-NS
-description: La prioridad de una entrada de perfil RPC determinada.
+title: atributo rpc-Ns-Priority
+description: Prioridad de una entrada de perfil RPC determinada.
 ms.assetid: a4904b21-53b7-48e3-814a-948427984fcd
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de prioridad de RPC-NS
-- rpcNsPriority esquema de AD de atributos
+- Rpc-Ns-Priority attribute AD Schema
+- RpcNsPriority attribute AD Schema (Esquema de AD del atributo rpcNsPriority)
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 10cc2b472262d118ee4896935157d45952846db0
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1ea86dc78933e7647d1210397d5fd66c287c0ca4ad638959e6cfa1dc59993db7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804555"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837063"
 ---
-# <a name="rpc-ns-priority-attribute"></a>atributo de prioridad de RPC-NS
+# <a name="rpc-ns-priority-attribute"></a>atributo rpc-Ns-Priority
 
-La prioridad de una entrada de perfil RPC determinada.
+Prioridad de una entrada de perfil RPC determinada.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | RPC-NS-prioridad                      |
-| Nombre para mostrar de LDAP | rpcNsPriority                        |
-| Tamaño              | 4 bytes                              |
-| Actualizar privilegio  | \-                                   |
+| CN                | rpc-Ns-Priority                      |
+| Ldap-Display-Name | rpcNsPriority                        |
+| Size              | 4 bytes                              |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.117               |
-| System-ID-GUID    | bf967a27-0de6-11d0-a285-00aa003049e2 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | bf967a27-0de6-11d0-a285-00aa003049e2 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -55,18 +55,18 @@ La prioridad de una entrada de perfil RPC determinada.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                            |
+| Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | False                                                         |
-| Tiene un único valor       | False                                                         |
-| Está indexado             | False                                                         |
-| En el catálogo global      | False                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                  |
+| System-Only            | Falso                                                         |
+| Es de un solo valor       | Falso                                                         |
+| Está indexado             | Falso                                                         |
+| En el catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Clases usadas en        | [**Elemento de Perfil de RPC**](c-rpcprofileelement.md)<br/> |
+| Clases usadas en        | [**rpc-Profile-Element**](c-rpcprofileelement.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ La prioridad de una entrada de perfil RPC determinada.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                            |
+| Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | False                                                         |
-| Tiene un único valor       | False                                                         |
-| Está indexado             | False                                                         |
-| En el catálogo global      | False                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                  |
+| System-Only            | Falso                                                         |
+| Es de un solo valor       | Falso                                                         |
+| Está indexado             | Falso                                                         |
+| En el catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Clases usadas en        | [**Elemento de Perfil de RPC**](c-rpcprofileelement.md)<br/> |
+| Clases usadas en        | [**rpc-Profile-Element**](c-rpcprofileelement.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ La prioridad de una entrada de perfil RPC determinada.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                            |
+| Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | False                                                         |
-| Tiene un único valor       | False                                                         |
-| Está indexado             | False                                                         |
-| En el catálogo global      | False                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                  |
+| System-Only            | Falso                                                         |
+| Es de un solo valor       | Falso                                                         |
+| Está indexado             | Falso                                                         |
+| En el catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Clases usadas en        | [**Elemento de Perfil de RPC**](c-rpcprofileelement.md)<br/> |
+| Clases usadas en        | [**rpc-Profile-Element**](c-rpcprofileelement.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ La prioridad de una entrada de perfil RPC determinada.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                            |
+| Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | False                                                         |
-| Tiene un único valor       | False                                                         |
-| Está indexado             | False                                                         |
-| En el catálogo global      | False                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                  |
+| System-Only            | Falso                                                         |
+| Es de un solo valor       | Falso                                                         |
+| Está indexado             | Falso                                                         |
+| En el catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Clases usadas en        | [**Elemento de Perfil de RPC**](c-rpcprofileelement.md)<br/> |
+| Clases usadas en        | [**rpc-Profile-Element**](c-rpcprofileelement.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ La prioridad de una entrada de perfil RPC determinada.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                            |
+| Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | False                                                         |
-| Tiene un único valor       | False                                                         |
-| Está indexado             | False                                                         |
-| En el catálogo global      | False                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                  |
+| System-Only            | Falso                                                         |
+| Es de un solo valor       | Falso                                                         |
+| Está indexado             | Falso                                                         |
+| En el catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Clases usadas en        | [**Elemento de Perfil de RPC**](c-rpcprofileelement.md)<br/> |
+| Clases usadas en        | [**rpc-Profile-Element**](c-rpcprofileelement.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ La prioridad de una entrada de perfil RPC determinada.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                            |
+| Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | False                                                         |
-| Tiene un único valor       | False                                                         |
-| Está indexado             | False                                                         |
-| En el catálogo global      | False                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                  |
+| System-Only            | Falso                                                         |
+| Es de un solo valor       | Falso                                                         |
+| Está indexado             | Falso                                                         |
+| En el catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Clases usadas en        | [**Elemento de Perfil de RPC**](c-rpcprofileelement.md)<br/> |
+| Clases usadas en        | [**rpc-Profile-Element**](c-rpcprofileelement.md)<br/> |
 
 
 

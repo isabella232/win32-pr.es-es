@@ -1,6 +1,6 @@
 ---
-title: BITS_COST_STATE (Bits5 \_ 0. h)
-description: La \_ enumeración de estado de costo de bits \_ define los valores constantes que especifican el estado de costo de bits.
+title: BITS_COST_STATE (Bits5 \_ 0.h)
+description: La \_ enumeración BITS COST STATE define los valores constantes que especifican el estado de costo de \_ BITS.
 ms.assetid: A8C36D4E-98B3-45C4-9ECD-9B5280133176
 topic_type:
 - apiref
@@ -25,20 +25,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 02/20/2019
-ms.openlocfilehash: 88fb0b949fb06a6e1eb6e14cdf55c8d54d9ab33c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ecbe54966a54310af71a4c96a3d3c2423f524f9b8a8067b10350fba05675a54b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996510"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119701985"
 ---
-# <a name="bits_cost_state"></a>\_Estado de costo de bits \_
+# <a name="bits_cost_state"></a>ESTADO \_ DE COSTO DE \_ BITS
 
-Define constantes que especifican el estado del costo de BITS.
+Define constantes que especifican el estado de costo de BITS.
 
 <dl> <dt>
 
-<span id="BITS_COST_STATE_UNRESTRICTED"></span><span id="bits_cost_state_unrestricted"></span>**Estado de costo de BITS \_ \_ sin \_ restricciones**
+<span id="BITS_COST_STATE_UNRESTRICTED"></span><span id="bits_cost_state_unrestricted"></span>**BITS \_ COST \_ STATE \_ UNRESTRICTED**
 </dt> <dd> <dl> <dt>
 
 0x1
@@ -47,7 +47,7 @@ Define constantes que especifican el estado del costo de BITS.
 
 </dt> </dl> </dd> <dt>
 
-<span id="BITS_COST_STATE_CAPPED_USAGE_UNKNOWN"></span><span id="bits_cost_state_capped_usage_unknown"></span>**uso límite de estado de costo de BITS \_ \_ \_ \_ \_ desconocido**
+<span id="BITS_COST_STATE_CAPPED_USAGE_UNKNOWN"></span><span id="bits_cost_state_capped_usage_unknown"></span>**BITS \_ COST \_ STATE \_ CAPPED \_ USAGE \_ UNKNOWN**
 </dt> <dd> <dl> <dt>
 
 0x2
@@ -56,7 +56,7 @@ Define constantes que especifican el estado del costo de BITS.
 
 </dt> </dl> </dd> <dt>
 
-<span id="BITS_COST_STATE_BELOW_CAP"></span><span id="bits_cost_state_below_cap"></span>**Estado de costo de BITS \_ \_ \_ por debajo del \_ límite**
+<span id="BITS_COST_STATE_BELOW_CAP"></span><span id="bits_cost_state_below_cap"></span>**BITS \_ COST \_ STATE \_ BELOW \_ CAP**
 </dt> <dd> <dl> <dt>
 
 0x4
@@ -65,7 +65,7 @@ Define constantes que especifican el estado del costo de BITS.
 
 </dt> </dl> </dd> <dt>
 
-<span id="BITS_COST_STATE_NEAR_CAP"></span><span id="bits_cost_state_near_cap"></span>**Estado de costo de BITS \_ \_ \_ Near \_ Cap**
+<span id="BITS_COST_STATE_NEAR_CAP"></span><span id="bits_cost_state_near_cap"></span>**BITS \_ COST \_ STATE \_ NEAR \_ CAP**
 </dt> <dd> <dl> <dt>
 
 0x8
@@ -74,7 +74,7 @@ Define constantes que especifican el estado del costo de BITS.
 
 </dt> </dl> </dd> <dt>
 
-<span id="BITS_COST_STATE_OVERCAP_CHARGED"></span><span id="bits_cost_state_overcap_charged"></span>**Estado de costo de BITS \_ \_ \_ OVERCAP \_ cargado**
+<span id="BITS_COST_STATE_OVERCAP_CHARGED"></span><span id="bits_cost_state_overcap_charged"></span>**BITS \_ COST \_ STATE \_ OVERCAP \_ CHARGED**
 </dt> <dd> <dl> <dt>
 
 0x10
@@ -83,7 +83,7 @@ Define constantes que especifican el estado del costo de BITS.
 
 </dt> </dl> </dd> <dt>
 
-<span id="BITS_COST_STATE_OVERCAP_THROTTLED"></span><span id="bits_cost_state_overcap_throttled"></span>**Estado de costo de BITS \_ \_ \_ OVERCAP \_ limitado**
+<span id="BITS_COST_STATE_OVERCAP_THROTTLED"></span><span id="bits_cost_state_overcap_throttled"></span>**BITS \_ COST \_ STATE \_ OVERCAP \_ THROTTLED**
 </dt> <dd> <dl> <dt>
 
 0x20
@@ -92,7 +92,7 @@ Define constantes que especifican el estado del costo de BITS.
 
 </dt> </dl> </dd> <dt>
 
-<span id="BITS_COST_STATE_USAGE_BASED"></span><span id="bits_cost_state_usage_based"></span>**\_ \_ \_ basado en el uso de estado de costo de bits \_**
+<span id="BITS_COST_STATE_USAGE_BASED"></span><span id="bits_cost_state_usage_based"></span>**BITS \_ COST \_ STATE \_ USAGE \_ BASED**
 </dt> <dd> <dl> <dt>
 
 0x40
@@ -101,7 +101,7 @@ Define constantes que especifican el estado del costo de BITS.
 
 </dt> </dl> </dd> <dt>
 
-<span id="BITS_COST_OPTION_IGNORE_CONGESTION"></span><span id="bits_cost_option_ignore_congestion"></span>**opción de costo de BITS \_ \_ \_ omitir \_ congestión**
+<span id="BITS_COST_OPTION_IGNORE_CONGESTION"></span><span id="bits_cost_option_ignore_congestion"></span>**OPCIÓN BITS \_ COST \_ IGNORE \_ \_ CONGESTION**
 </dt> <dd> <dl> <dt>
 
 0x80000000
@@ -110,7 +110,7 @@ Define constantes que especifican el estado del costo de BITS.
 
 </dt> </dl> </dd> <dt>
 
-<span id="BITS_COST_STATE_RESERVED"></span><span id="bits_cost_state_reserved"></span>**Estado de costo de BITS \_ \_ \_ reservado**
+<span id="BITS_COST_STATE_RESERVED"></span><span id="bits_cost_state_reserved"></span>**BITS \_ COST \_ STATE \_ RESERVED**
 </dt> <dd> <dl> <dt>
 
 0x40000000
@@ -123,46 +123,46 @@ Reservado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="BITS_COST_STATE_TRANSFER_NOT_ROAMING"></span><span id="bits_cost_state_transfer_not_roaming"></span>**transferencia de estado de costo de BITS \_ \_ \_ \_ no \_ móvil**
+<span id="BITS_COST_STATE_TRANSFER_NOT_ROAMING"></span><span id="bits_cost_state_transfer_not_roaming"></span>**BITS \_ COST \_ STATE \_ TRANSFER \_ NOT \_ ROAMING**
 </dt> <dd> <dl> <dt>
 
-(BITS \_ opción de costo \_ \_ omitir \_ bits de congestión \| \_ costo \_ basado en el uso de estado bits costo OVERCAP bits limitado estado de bits limitados estado OVERCAP de bits de \_ carga aproximado estado de bits de \_ Cap estado por debajo \| \_ \_ \_ \_ \| \_ \_ \_ \_ \| \_ \_ \_ \_ \| \_ \_ \_ \_ \| \_ \_ \_ \_ \_ \| \_ \_ \_ del límite bits de Cap estado límite de uso límite bits desconocido estado de costo no restringido) 
+(BITS) \_ OPCIÓN COST IGNORE CONGESTION BITS COST STATE USAGE BASED BITS COST STATE OVERCAP THROTTLED BITS COST STATE OVERCAP CHARGED BITS COST STATE NEAR CAP BITS COST STATE BELOW CAP BITS COST STATE \_ \_ \_ \| \_ \_ \_ \_ \| \_ \_ \_ \_ \| \_ \_ \_ \_ \| \_ \_ \_ \_ \| \_ \_ \_ \_ \| \_ \_ \_ CAPPED \_ USAGE UNKNOWN BITS COST STATE \_ \| \_ \_ \_ UNRESTRICTED) 
 </dt> <dt>
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="BITS_COST_STATE_TRANSFER_NO_SURCHARGE"></span><span id="bits_cost_state_transfer_no_surcharge"></span>**transferencia de estado de costo de BITS \_ \_ \_ \_ sin \_ recargo**
+<span id="BITS_COST_STATE_TRANSFER_NO_SURCHARGE"></span><span id="bits_cost_state_transfer_no_surcharge"></span>**BITS \_ COST \_ STATE \_ TRANSFER \_ NO \_ SURCHARGE**
 </dt> <dd> <dl> <dt>
 
-(BITS \_ opción de costo \_ \_ omitir \_ bits de congestión \| \_ costo \_ basado en el uso de estado bits basado en el costo OVERCAP bits limitado estado del costo de bits \_ \_ \| \_ \_ \_ \_ \| \_ \_ \_ aproximado estado de bits por \_ debajo \| \_ \_ \_ \_ \| \_ \_ \_ \_ \_ \| \_ \_ \_ del límite bits de Cap estado límite de uso límite bits desconocido estado de costo sin restricción)
+(BITS) \_ OPCIÓN COST IGNORE CONGESTION BITS COST STATE USAGE BASED BITS COST STATE OVERCAP THROTTLED BITS COST STATE NEAR CAP BITS COST STATE BELOW CAP BITS COST \_ \_ \_ \| \_ \_ \_ \_ \| \_ \_ \_ \_ \| \_ \_ STATE \_ \_ \| \_ \_ \_ \_ \| \_ \_ \_ CAPPED USAGE UNKNOWN \_ BITS COST STATE \_ \| \_ \_ \_ UNRESTRICTED)
 </dt> <dt>
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="BITS_COST_STATE_TRANSFER_STANDARD"></span><span id="bits_cost_state_transfer_standard"></span>**\_estándar de \_ transferencia de estado de costo de bits \_ \_**
+<span id="BITS_COST_STATE_TRANSFER_STANDARD"></span><span id="bits_cost_state_transfer_standard"></span>**BITS \_ COST \_ STATE \_ TRANSFER \_ STANDARD**
 </dt> <dd> <dl> <dt>
 
-(BITS \_ opción de costo \_ \_ omitir \_ bits de congestión \| \_ costo \_ basado en el uso de estado bits basado en el costo \_ OVERCAP bits limitado estado del \_ \| \_ \_ \_ \_ \| \_ \_ \_ \_ \| \_ \_ \_ \_ \_ \| \_ \_ \_ costo de bits límite de bits de Cap estado límite de uso limitado bits desconocido estado de costo no restringido) 
+(BITS) \_ OPCIÓN COST IGNORE CONGESTION BITS COST \_ STATE USAGE BASED BITS \_ COST \_ STATE \| \_ \_ \_ \_ \| \_ \_ \_ OVERCAP THROTTLED BITS COST STATE BELOW CAP \_ BITS COST \| STATE \_ \_ \_ \_ \| \_ \_ \_ CAPPED USAGE UNKNOWN BITS \_ COST STATE \_ \| \_ \_ \_ UNRESTRICTED) 
 </dt> <dt>
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="BITS_COST_STATE_TRANSFER_UNRESTRICTED"></span><span id="bits_cost_state_transfer_unrestricted"></span>**transferencia de estado de costo de BITS \_ \_ \_ \_ sin restricciones**
+<span id="BITS_COST_STATE_TRANSFER_UNRESTRICTED"></span><span id="bits_cost_state_transfer_unrestricted"></span>**BITS \_ COST \_ STATE \_ TRANSFER \_ UNRESTRICTED**
 </dt> <dd> <dl> <dt>
 
-(BITS \_ opción de costo \_ \_ omitir \_ bits de congestión \| \_ \_ Estado costo \_ OVERCAP \_ \| bits limitado estado de costo no \_ \_ \_ restringido)
+(BITS) \_ OPCIÓN COST \_ IGNORE CONGESTION BITS COST STATE \_ \_ \| \_ \_ \_ OVERCAP \_ THROTTLED BITS COST STATE \| \_ \_ \_ UNRESTRICTED)
 </dt> <dt>
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="BITS_COST_STATE_TRANSFER_ALWAYS"></span><span id="bits_cost_state_transfer_always"></span>**transferencia de estado de costo de BITS \_ \_ \_ \_ siempre**
+<span id="BITS_COST_STATE_TRANSFER_ALWAYS"></span><span id="bits_cost_state_transfer_always"></span>**BITS \_ COST \_ STATE \_ TRANSFER \_ ALWAYS**
 </dt> <dd> <dl> <dt>
 
-(BITS \_ opción de costo omitir bits de congestión estado de costo de bits móvil de costo de bits basado en el uso de estado bits de estado OVERCAP de costo de bits limitado de estado OVERCAP de bits de carga de costo aproximado de bits de Cap estado de costo \_ \_ \_ \| \_ \_ \_ \| \_ \_ \_ \_ \| \_ \_ \_ \_ \| \_ \_ \_ \_ \| \_ \_ \_ \_ \| \_ \_ \_ por debajo \_ \| \_ \_ \_ \_ \_ \| \_ \_ \_ del límite de estado de costo límite de uso límite de bits desconocido de costo
+(BITS) \_ OPCIÓN COST IGNORE CONGESTION BITS COST STATE ROAMING BITS COST STATE USAGE BASED BITS COST COST STATE OVERCAP THROTTLED BITS COST STATE OVERCAP CHARGED BITS COST STATE NEAR CAP BITS COST STATE BELOW CAP BITS COST STATE CAP \_ \_ \_ \| \_ \_ \_ \| \_ \_ \_ \_ \| \_ \_ \_ \_ \| \_ \_ \_ \_ \| \_ BITS \_ \_ \_ \| \_ \_ \_ \_ \| \_ \_ \_ CAPPED USAGE UNKNOWN \_ BITS COST STATE \_ \| \_ \_ \_ UNRESTRICTED)
 </dt> <dt>
 
 
@@ -172,12 +172,12 @@ Reservado.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                   |
-| Encabezado<br/>                   | <dl> <dt>Bits5 \_ 0. h (incluye bits. h)</dt> </dl> |
-| IDL<br/>                      | <dl> <dt>Bits5 \_ 0. idl</dt> </dl>                |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                   |
+| Header<br/>                   | <dl> <dt>Bits5 \_ 0.h (incluir Bits.h)</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>Bits5 \_ 0.idl</dt> </dl>                |
 
 
 

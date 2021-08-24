@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentFragmentationException (SerializationInfo, StreamingContext)'
-title: Constructor EsentFragmentationException (SerializationInfo, StreamingContext)
+description: 'Más información sobre: Constructor EsentFragmentationException (SerializationInfo, StreamingContext)'
+title: EsentFragmentationException constructor (SerializationInfo, StreamingContext)
 TOCTitle: EsentFragmentationException constructor (SerializationInfo, StreamingContext)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentFragmentationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentfragmentationexception.esentfragmentationexception(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 251e4beaacb1e895c1da1d501b38cf03f211dd99
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ae29411554d8a734fc250c3d8c8a04b381b2013c79dcb5c2c7aad22ff34963cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361703"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119838635"
 ---
-# <a name="esentfragmentationexception-constructor-serializationinfo-streamingcontext"></a>Constructor EsentFragmentationException (SerializationInfo, StreamingContext)
+# <a name="esentfragmentationexception-constructor-serializationinfo-streamingcontext"></a>EsentFragmentationException constructor (SerializationInfo, StreamingContext)
 
-Inicializa una nueva instancia de la clase EsentFragmentationException. Este constructor se utiliza para deserializar una excepción serializada.
+Inicializa una nueva instancia de la clase EsentFragmentationException. Este constructor se usa para deserializar una excepción serializada.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,14 +59,14 @@ protected EsentFragmentationException(
 #### <a name="parameters"></a>Parámetros
 
   - info  
-    Tipo: [System. Runtime. Serialization. SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo)  
+    Tipo: [System.Runtime.Serialization.SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo)  
     
-    Los datos necesarios para deserializar el objeto.
+    Datos necesarios para deserializar el objeto.
 
 <!-- end list -->
 
   - context  
-    Tipo: [System. Runtime. Serialization. StreamingContext](/dotnet/api/system.runtime.serialization.streamingcontext)  
+    Tipo: [System.Runtime.Serialization.StreamingContext](/dotnet/api/system.runtime.serialization.streamingcontext)  
     
     Contexto de la deserialización.
 
@@ -78,6 +78,6 @@ protected EsentFragmentationException(
 
 [Miembros de EsentFragmentationException](./esentfragmentationexception-members.md)
 
-[Sobrecarga EsentFragmentationException](./esentfragmentationexception-constructor.md)
+[Sobrecarga de EsentFragmentationException](./esentfragmentationexception-constructor.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

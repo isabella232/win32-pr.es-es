@@ -1,11 +1,11 @@
 ---
-title: RID-Allocation-Pool (atributo)
-description: Un grupo que se capturó previamente para su uso por parte del administrador de RID cuando se ha usado el grupo RID-Previous-Allocation-Pool.
+title: Atributo RID-Allocation-Pool
+description: Un grupo que se ha previamente capturado para que lo use el administrador de RID cuando se ha usado rid-Previous-Allocation-Pool.
 ms.assetid: 6d49b497-322f-424c-badc-4801f51481f3
 ms.tgt_platform: multiple
 keywords:
-- RID-Allocation-Pool atributo AD Schema
-- rIDAllocationPool esquema de AD de atributos
+- Esquema de AD del atributo RID-Allocation-Pool
+- Esquema de AD del atributo rIDAllocationPool
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a035cef460cc3081144d66391db78fb32c61108b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ce6ff101ca49e8d2ffafdb31f2d05cf1cb2371ee3336525ab31318925d349805
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658753"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837385"
 ---
-# <a name="rid-allocation-pool-attribute"></a>RID-Allocation-Pool (atributo)
+# <a name="rid-allocation-pool-attribute"></a>Atributo RID-Allocation-Pool
 
-Un grupo que se capturó previamente para su uso por parte del administrador de RID cuando se ha usado el grupo RID-Previous-Allocation-Pool.
+Un grupo que se ha previamente capturado para que lo use el administrador de RID cuando se ha usado rid-Previous-Allocation-Pool.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | RID-asignación: Grupo                  |
-| Nombre para mostrar de LDAP | rIDAllocationPool                    |
-| Tamaño              | 8 bytes                              |
-| Actualizar privilegio  | El sistema establece este valor.     |
+| CN                | Rid-Allocation-Pool                  |
+| Ldap-Display-Name | rIDAllocationPool                    |
+| Size              | 8 bytes                              |
+| Privilegio actualizar  | El sistema establece este valor.     |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.371               |
-| System-ID-GUID    | 66171889-8f3c-11d0-afda-00c04fd930c9 |
-| Sintaxis            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | 66171889-8f3c-11d0-afda-00c04fd930c9 |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 
@@ -55,18 +55,18 @@ Un grupo que se capturó previamente para su uso por parte del administrador de 
 
 | Entrada | Value |
 |------------------------|----------------------------------------|
-| Identificador de vínculo                | \-                                     |
+| Id. de vínculo                | \-                                     |
 | MAPI-Id                | \-                                     |
-| System-Only            | True                                   |
-| Tiene un único valor       | True                                   |
-| Está indexado             | False                                  |
-| En el catálogo global      | False                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                           |
+| System-Only            | Verdadero                                   |
+| Es de un solo valor       | Verdadero                                   |
+| Está indexado             | Falso                                  |
+| En el catálogo global      | Falso                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                           |
 | Range-Lower            | \-                                     |
 | Range-Upper            | \-                                     |
 | Search-Flags           | 0x00000000                             |
 | System-Flags           | 0x00000010                             |
-| Clases usadas en        | [**RID: conjunto**](c-ridset.md)<br/> |
+| Clases usadas en        | [**CONJUNTO DE RID**](c-ridset.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Un grupo que se capturó previamente para su uso por parte del administrador de 
 
 | Entrada | Value |
 |------------------------|----------------------------------------|
-| Identificador de vínculo                | \-                                     |
+| Id. de vínculo                | \-                                     |
 | MAPI-Id                | \-                                     |
-| System-Only            | True                                   |
-| Tiene un único valor       | True                                   |
-| Está indexado             | False                                  |
-| En el catálogo global      | False                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                           |
+| System-Only            | Verdadero                                   |
+| Es de un solo valor       | Verdadero                                   |
+| Está indexado             | Falso                                  |
+| En el catálogo global      | Falso                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                           |
 | Range-Lower            | \-                                     |
 | Range-Upper            | \-                                     |
 | Search-Flags           | 0x00000000                             |
 | System-Flags           | 0x00000010                             |
-| Clases usadas en        | [**RID: conjunto**](c-ridset.md)<br/> |
+| Clases usadas en        | [**CONJUNTO DE RID**](c-ridset.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Un grupo que se capturó previamente para su uso por parte del administrador de 
 
 | Entrada | Value |
 |------------------------|----------------------------------------|
-| Identificador de vínculo                | \-                                     |
+| Id. de vínculo                | \-                                     |
 | MAPI-Id                | \-                                     |
-| System-Only            | True                                   |
-| Tiene un único valor       | True                                   |
-| Está indexado             | False                                  |
-| En el catálogo global      | False                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                           |
+| System-Only            | Verdadero                                   |
+| Es de un solo valor       | Verdadero                                   |
+| Está indexado             | Falso                                  |
+| En el catálogo global      | Falso                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                           |
 | Range-Lower            | \-                                     |
 | Range-Upper            | \-                                     |
 | Search-Flags           | 0x00000000                             |
 | System-Flags           | 0x00000010                             |
-| Clases usadas en        | [**RID: conjunto**](c-ridset.md)<br/> |
+| Clases usadas en        | [**CONJUNTO DE RID**](c-ridset.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Un grupo que se capturó previamente para su uso por parte del administrador de 
 
 | Entrada | Value |
 |------------------------|----------------------------------------|
-| Identificador de vínculo                | \-                                     |
+| Id. de vínculo                | \-                                     |
 | MAPI-Id                | \-                                     |
-| System-Only            | True                                   |
-| Tiene un único valor       | True                                   |
-| Está indexado             | False                                  |
-| En el catálogo global      | False                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                           |
+| System-Only            | Verdadero                                   |
+| Es de un solo valor       | Verdadero                                   |
+| Está indexado             | Falso                                  |
+| En el catálogo global      | Falso                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                           |
 | Range-Lower            | \-                                     |
 | Range-Upper            | \-                                     |
 | Search-Flags           | 0x00000000                             |
 | System-Flags           | 0x00000010                             |
-| Clases usadas en        | [**RID: conjunto**](c-ridset.md)<br/> |
+| Clases usadas en        | [**Conjunto de RID**](c-ridset.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Un grupo que se capturó previamente para su uso por parte del administrador de 
 
 | Entrada | Value |
 |------------------------|----------------------------------------|
-| Identificador de vínculo                | \-                                     |
+| Id. de vínculo                | \-                                     |
 | MAPI-Id                | \-                                     |
-| System-Only            | True                                   |
-| Tiene un único valor       | True                                   |
-| Está indexado             | False                                  |
-| En el catálogo global      | False                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                           |
+| System-Only            | Verdadero                                   |
+| Es de un solo valor       | Verdadero                                   |
+| Está indexado             | Falso                                  |
+| En el catálogo global      | Falso                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                           |
 | Range-Lower            | \-                                     |
 | Range-Upper            | \-                                     |
 | Search-Flags           | 0x00000000                             |
 | System-Flags           | 0x00000010                             |
-| Clases usadas en        | [**RID: conjunto**](c-ridset.md)<br/> |
+| Clases usadas en        | [**Conjunto de RID**](c-ridset.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Un grupo que se capturó previamente para su uso por parte del administrador de 
 
 | Entrada | Value |
 |------------------------|----------------------------------------|
-| Identificador de vínculo                | \-                                     |
+| Id. de vínculo                | \-                                     |
 | MAPI-Id                | \-                                     |
-| System-Only            | True                                   |
-| Tiene un único valor       | True                                   |
-| Está indexado             | False                                  |
-| En el catálogo global      | False                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                           |
+| System-Only            | Verdadero                                   |
+| Es de un solo valor       | Verdadero                                   |
+| Está indexado             | Falso                                  |
+| En el catálogo global      | Falso                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                           |
 | Range-Lower            | \-                                     |
 | Range-Upper            | \-                                     |
 | Search-Flags           | 0x00000000                             |
 | System-Flags           | 0x00000010                             |
-| Clases usadas en        | [**RID: conjunto**](c-ridset.md)<br/> |
+| Clases usadas en        | [**Conjunto de RID**](c-ridset.md)<br/> |
 
 
 

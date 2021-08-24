@@ -1,25 +1,25 @@
 ---
-description: En este tema se muestra cómo puede aplicar una cadena de efectos a una voz para permitir el procesamiento personalizado de los datos de audio de esa voz. En este tema se describe cómo usar el efecto Reverberación, que es uno de los efectos de XAudio2 integrados.
+description: En este tema se muestra cómo puede aplicar una cadena de efectos a una voz para permitir el procesamiento personalizado de los datos de audio para esa voz. En este tema se describe cómo usar el efecto de reverberación, que es uno de los efectos XAudio2 integrados.
 ms.assetid: 4c33bd83-2654-cd6f-ea6c-bbc0d5872638
 title: 'Cómo: crear un efecto en cadena'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 85d58186b623dca04da99001a29e54cf3ecc39fa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 46abd6372fe07f71d75a4963f6617cdeda15ecf8390e3142fcf110029bd8f6dd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154616"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119838417"
 ---
 # <a name="how-to-create-an-effect-chain"></a>Cómo: crear un efecto en cadena
 
-En este tema se muestra cómo puede aplicar una cadena de efectos a una voz para permitir el procesamiento personalizado de los datos de audio de esa voz. En este tema se describe cómo usar el efecto Reverberación, que es uno de los efectos de XAudio2 integrados.
+En este tema se muestra cómo puede aplicar una cadena de efectos a una voz para permitir el procesamiento personalizado de los datos de audio para esa voz. En este tema se describe cómo usar el efecto de reverberación, que es uno de los efectos XAudio2 integrados.
 
-## <a name="to-create-a-basic-effect-chain-that-applies-an-effect-to-a-voice"></a>Para crear una cadena de efectos básicos que aplique un efecto a una voz
+## <a name="to-create-a-basic-effect-chain-that-applies-an-effect-to-a-voice"></a>Para crear una cadena de efectos básica que aplique un efecto a una voz
 
 1.  Cree el efecto.
 
-    En este ejemplo, la función [**XAudio2CreateReverb**](/windows/desktop/api/xaudio2fx/nf-xaudio2fx-xaudio2createreverb) crea un efecto de reverberación. Consulte [efectos de audio de XAudio2](xaudio2-audio-effects.md) para obtener una lista de posibles orígenes de efectos para su uso con XAudio2.
+    En este ejemplo, la [**función XAudio2CreateReverb**](/windows/desktop/api/xaudio2fx/nf-xaudio2fx-xaudio2createreverb) crea un efecto de reverberación. Consulte [Efectos de audio de XAudio2](xaudio2-audio-effects.md) para obtener una lista de posibles orígenes de efectos para su uso con XAudio2.
 
     ```
     IUnknown * pXAPO;
@@ -28,9 +28,9 @@ En este tema se muestra cómo puede aplicar una cadena de efectos a una voz para
 
     
 
-2.  Rellenar una estructura de [**\_ \_ descriptor de efectos de XAUDIO2**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_effect_descriptor) con datos.
+2.  Rellene una [**estructura DEL DESCRIPTOR DE EFECTO \_ \_ XAUDIO2**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_effect_descriptor) con datos.
 
-    Si hay varios efectos en la cadena, cada efecto necesitará una estructura [**de \_ \_ descriptor de efectos de XAUDIO2**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_effect_descriptor) .
+    Si hay varios efectos en la cadena, cada efecto necesitará una estructura [**DESCRIPTOR DE \_ EFECTO \_ XAUDIO2.**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_effect_descriptor)
 
     ```
     XAUDIO2_EFFECT_DESCRIPTOR descriptor;
@@ -41,7 +41,7 @@ En este tema se muestra cómo puede aplicar una cadena de efectos a una voz para
 
     
 
-3.  Rellenar una estructura de [**\_ \_ cadena de efectos de XAUDIO2**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_effect_chain) con datos. En este caso, la cadena solo tiene un efecto. Si la cadena tiene más de un efecto, el miembro EffectCount contendrá el recuento de efectos y el miembro pEffectDescriptors apuntará a una matriz de \_ estructuras de \_ descriptor de efectos de XAUDIO2.
+3.  Rellene una [**estructura EFFECT \_ \_ CHAIN de XAUDIO2**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_effect_chain) con datos. En este caso, la cadena solo tiene un efecto. Si la cadena tiene más de un efecto, el miembro EffectCount contendrá el recuento de efectos y el miembro pEffectDescriptors apuntará a una matriz de estructuras DESCRIPTOR DE EFECTO \_ \_ XAUDIO2.
 
     ```
     XAUDIO2_EFFECT_CHAIN chain;
@@ -51,9 +51,9 @@ En este tema se muestra cómo puede aplicar una cadena de efectos a una voz para
 
     
 
-4.  Aplique la cadena de efectos a una voz con la función [**SetEffectChain**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-seteffectchain) .
+4.  Aplique la cadena de efectos a una voz con la [**función SetEffectChain.**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-seteffectchain)
 
-    Puede aplicar cadenas de efectos a las voces maestras, las voces de origen y las voces de submezcla.
+    Puede aplicar cadenas de efecto a voces maestras, voces de origen y voces de submezcla.
 
     ```
     pVoice->SetEffectChain(&chain);
@@ -61,9 +61,9 @@ En este tema se muestra cómo puede aplicar una cadena de efectos a una voz para
 
     
 
-5.  Libere el efecto con IUnknown:: Release.
+5.  Libere el efecto con IUnknown::Release.
 
-    Al crear un XAPO, tendrá un recuento de referencias de 1. Cuando el XAPO se pasa a XAudio2 con [**SetEffectChain**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-seteffectchain), XAudio2 incrementa el recuento de referencias en el XAPO. La liberación de la referencia del cliente a XAPO permite a XAudio2 tomar posesión del XAPO. Si XAudio2 tiene la única referencia a XAPO, se desechará cuando XAudio2 ya no la use en XAudio2. Si el código de cliente necesita mantener una referencia a XAPO (por ejemplo, para reutilizarlo más adelante), debe omitir este paso.
+    Al crear un XAPO, tendrá un recuento de referencias de 1. Cuando el XAPO se pasa a XAudio2 con [**SetEffectChain,**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-seteffectchain)XAudio2 incrementa el recuento de referencias en el XAPO. Liberar la referencia del cliente a XAPO permite que XAudio2 tome posesión del XAPO. Si XAudio2 tiene la única referencia al XAPO, se desechará cuando XAudio2 ya no lo esté utilizando. Si el código de cliente necesita mantener una referencia a XAPO (por ejemplo, para su reutilización posterior), debe omitir este paso.
 
     ```
     pXAPO->Release();
@@ -71,7 +71,7 @@ En este tema se muestra cómo puede aplicar una cadena de efectos a una voz para
 
     
 
-6.  Rellena la estructura del parámetro, si existe, asociada al efecto. El efecto de reverberación utiliza una estructura de [**\_ \_ parámetros de reverberación XAUDIO2FX**](/windows/desktop/api/xaudio2fx/ns-xaudio2fx-xaudio2fx_reverb_parameters) .
+6.  Rellene la estructura de parámetros, si la hubiera, asociada al efecto. El efecto reverberación usa una [**estructura \_ PARAMETERS de REVERB \_ de XAUDIO2FX.**](/windows/desktop/api/xaudio2fx/ns-xaudio2fx-xaudio2fx_reverb_parameters)
 
     ```
     XAUDIO2FX_REVERB_PARAMETERS reverbParameters;
@@ -101,7 +101,7 @@ En este tema se muestra cómo puede aplicar una cadena de efectos a una voz para
 
     
 
-7.  Para pasar la estructura del parámetro de efecto al efecto, llame a la función [**SetEffectParameters**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-seteffectparameters) en la voz a la que está asociado el efecto.
+7.  Pase la estructura de parámetros de efecto al efecto mediante una llamada a la función [**SetEffectParameters**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-seteffectparameters) en la voz a la que está asociado el efecto.
 
     ```
     hr = pVoice->SetEffectParameters( 0, &reverbParameters, sizeof( reverbParameters ) );
@@ -109,9 +109,9 @@ En este tema se muestra cómo puede aplicar una cadena de efectos a una voz para
 
     
 
-8.  Deshabilitar o habilitar el efecto, siempre que sea necesario.
+8.  Deshabilite o habilite el efecto, siempre que corresponda.
 
-    Puede usar [**DisableEffect**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-disableeffect) en cualquier momento para desactivar un efecto.
+    Puede usar [**DisableEffect en cualquier**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-disableeffect) momento para desactivar un efecto.
 
     ```
     pVoice->DisableEffect(0);
@@ -127,7 +127,7 @@ En este tema se muestra cómo puede aplicar una cadena de efectos a una voz para
 
     
 
-    Los parámetros de [**DisableEffect**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-disableeffect) y [**EnableEffect**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-enableeffect) especifican el efecto de la cadena que se va a habilitar o deshabilitar.
+    Los parámetros de [**DisableEffect**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-disableeffect) [**y EnableEffect**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-enableeffect) especifican el efecto en la cadena que se va a habilitar o deshabilitar.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -142,13 +142,13 @@ En este tema se muestra cómo puede aplicar una cadena de efectos a una voz para
 [Cómo: crear un gráfico de procesamiento de audio básico](how-to--build-a-basic-audio-processing-graph.md)
 </dt> <dt>
 
-[Información general de XAPO](xapo-overview.md)
+[Información general sobre XAPO](xapo-overview.md)
 </dt> <dt>
 
-[Cómo: usar XAOPFX en XAudio2](how-to--use-xapofx-in-xaudio2.md)
+[Cómo: Usar XAOPFX en XAudio2](how-to--use-xapofx-in-xaudio2.md)
 </dt> <dt>
 
-[Cómo: usar un XAOP en XAudio2](how-to--use-an-xapo-in-xaudio2.md)
+[Cómo: Usar un XAOP en XAudio2](how-to--use-an-xapo-in-xaudio2.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Obtiene un identificador de sesión único creado para esta sesión.
 ms.assetid: 779ebea9-69ff-469a-8ee0-06d570ede6cb
-title: 'IMFMediaKeySession:: get_SessionId (método)'
+title: MÉTODO IMFMediaKeySession::get_SessionId
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: 7110dbe6c24d1189019fb242621c7e3c01253264
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: f598cbb1d7122bb8597d5849778a833462b4e6d9de48942fdfabbc95bbc30898
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105670065"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119724555"
 ---
-# <a name="imfmediakeysessionget_sessionid-method"></a>IMFMediaKeySession:: get \_ SessionID (método)
+# <a name="imfmediakeysessionget_sessionid-method"></a>MÉTODO IMFMediaKeySession::get \_ SessionId
 
 Obtiene un identificador de sesión único creado para esta sesión.
 
@@ -48,17 +48,17 @@ Identificador de sesión de la clave multimedia.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                                 |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                      |
-| IDL<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                 |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 

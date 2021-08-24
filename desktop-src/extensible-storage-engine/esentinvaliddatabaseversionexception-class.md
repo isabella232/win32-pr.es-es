@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: clase EsentInvalidDatabaseVersionException'
+description: 'Más información sobre: Clase EsentInvalidDatabaseVersionException'
 title: Clase EsentInvalidDatabaseVersionException
 TOCTitle: EsentInvalidDatabaseVersionException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentInvalidDatabaseVersionException
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 24b3e348c0c0adaf4d261705c1e4de7bf5d7297b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4823b4135a0be6a20c6f7d73043b9ad7aaa120fb2813701c6e7686bdf8e5f777
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279589"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837425"
 ---
 # <a name="esentinvaliddatabaseversionexception-class"></a>Clase EsentInvalidDatabaseVersionException
 
@@ -39,16 +39,16 @@ Clase base para JET_err. Excepciones InvalidDatabaseVersion.
 
 [System.Object](/dotnet/api/system.object)  
   [System.Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. esent. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. esent. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. esent. Interop. EsentDataException](./esentdataexception-class.md)  
-          [Microsoft. ISAM. esent. Interop. EsentInconsistentException](./esentinconsistentexception-class.md)  
-            Microsoft. ISAM. esent. Interop. EsentInvalidDatabaseVersionException  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentDataException](./esentdataexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentInconsistentException](./esentinconsistentexception-class.md)  
+            Microsoft.Isam.Esent.Interop.EsentInvalidDatabaseVersionException  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -74,4 +74,4 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 [Miembros de EsentInvalidDatabaseVersionException](./esentinvaliddatabaseversionexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

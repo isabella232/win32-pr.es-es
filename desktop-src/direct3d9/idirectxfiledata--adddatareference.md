@@ -1,7 +1,7 @@
 ---
 description: Crea y agrega un objeto de referencia de datos como un objeto secundario. En desuso.
 ms.assetid: 71a770a2-1502-4b93-b368-990c3318bd33
-title: 'IDirectXFileData:: AddDataReference (método) (DXFile. h)'
+title: Método IDirectXFileData::AddDataReference (DXFile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dxof.lib
 - D3dxof.dll
-ms.openlocfilehash: 44834af51380c3b8bdbb4e9a4b24bf911ea6a07f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4c291e4f5754975f7e564c8c579b3651b29f0e6b684ad474f2f8436875dbf078
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717723"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119747265"
 ---
-# <a name="idirectxfiledataadddatareference-method"></a>IDirectXFileData:: AddDataReference (método)
+# <a name="idirectxfiledataadddatareference-method"></a>IDirectXFileData::AddDataReference (método)
 
 Crea y agrega un objeto de referencia de datos como un objeto secundario. En desuso.
 
@@ -41,21 +41,21 @@ HRESULT AddDataReference(
 
 <dl> <dt>
 
-*szRef* \[ de\]
+*szRef* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Puntero al nombre del objeto de datos al que se hace referencia. Este parámetro puede ser **null** si pguidRef proporciona una referencia al GUID.
+Puntero al nombre del objeto de datos al que se hace referencia. Este parámetro puede ser **NULL si** pguidRef proporciona una referencia al GUID.
 
 </dd> <dt>
 
-*pguidRef* \[ de\]
+*pguidRef* \[ En\]
 </dt> <dd>
 
 Tipo: **[**GUID**](guid.md) \* const**
 
-Puntero al GUID que representa los datos. Este parámetro puede ser **null** si szRef proporciona una referencia al nombre.
+Puntero al GUID que representa los datos. Este parámetro puede ser **NULL si** szRef proporciona una referencia al nombre.
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Puntero al GUID que representa los datos. Este parámetro puede ser **null** si 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es DXFILE \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los valores siguientes. DXFILEERR \_ BADALLOC DXFILEERR \_ BADVALUE
+Si el método se realiza correctamente, el valor devuelto es DXFILE \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes valores. DXFILEERR \_ BADALLOC DXFILEERR \_ BADVALUE
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para que este método se ejecute correctamente, el parámetro szRef o pguidRef no debe ser **null**.
+Para que este método se haga correctamente, el parámetro szRef o pguidRef debe ser distinto de **NULL.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,8 +75,8 @@ Para que este método se ejecute correctamente, el parámetro szRef o pguidRef n
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>DXFile. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3dxof. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>DXFile.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3dxof.lib</dt> </dl> |
 
 
 

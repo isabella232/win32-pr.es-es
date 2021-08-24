@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentFileIOBeyondEOFException'
-title: Constructor de EsentFileIOBeyondEOFException
+description: 'Más información sobre: Constructor EsentFileIOBeyondEOFException'
+title: Constructor EsentFileIOBeyondEOFException
 TOCTitle: 'EsentFileIOBeyondEOFException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentFileIOBeyondEOFException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentfileiobeyondeofexception.esentfileiobeyondeofexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b69e9389e5741adf0dd2d6cb191db8bac48e7ee9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 36bdc66f6e1ae816bcdd1a09612f17542e86d311110837dde4071e17d030995b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705772"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119838865"
 ---
-# <a name="esentfileiobeyondeofexception-constructor"></a>Constructor de EsentFileIOBeyondEOFException
+# <a name="esentfileiobeyondeofexception-constructor"></a>Constructor EsentFileIOBeyondEOFException
 
 Inicializa una nueva instancia de la clase EsentFileIOBeyondEOFException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentFileIOBeyondEOFException()
 public EsentFileIOBeyondEOFException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentFileIOBeyondEOFException()
 
 [Miembros de EsentFileIOBeyondEOFException](./esentfileiobeyondeofexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

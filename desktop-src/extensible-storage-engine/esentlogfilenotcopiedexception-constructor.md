@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentLogFileNotCopiedException'
-title: Constructor de EsentLogFileNotCopiedException
+description: 'Más información sobre: Constructor EsentLogFileNotCopiedException'
+title: Constructor EsentLogFileNotCopiedException
 TOCTitle: 'EsentLogFileNotCopiedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentLogFileNotCopiedException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentlogfilenotcopiedexception.esentlogfilenotcopiedexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8f3849abb9f61a6b8f68038d96c58e8932b08b5d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e895ca373c815effb9c1f3d958daa84fd99865376218f99a56984cbf655d082b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707460"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119836705"
 ---
-# <a name="esentlogfilenotcopiedexception-constructor"></a>Constructor de EsentLogFileNotCopiedException
+# <a name="esentlogfilenotcopiedexception-constructor"></a>Constructor EsentLogFileNotCopiedException
 
 Inicializa una nueva instancia de la clase EsentLogFileNotCopiedException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentLogFileNotCopiedException()
 public EsentLogFileNotCopiedException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentLogFileNotCopiedException()
 
 [Miembros de EsentLogFileNotCopiedException](./esentlogfilenotcopiedexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

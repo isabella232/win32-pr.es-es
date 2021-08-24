@@ -1,10 +1,10 @@
 ---
-title: atributo nisNetgroupTriple
-description: Representa una entrada de un mapa de netgroup.
+title: Atributo nisNetgroupTriple
+description: Representa una entrada de un mapa netgroup.
 ms.assetid: abf908f8-9f83-455a-8add-97a9ebccb5ae
 ms.tgt_platform: multiple
 keywords:
-- nisNetgroupTriple esquema de AD de atributos
+- Esquema de AD del atributo nisNetgroupTriple
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e05215a00788927f8c5f87de13b8f49f5e9ff9d0
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: fe50c77897d8e4a49a604235edc374a2cf48e986d0058abcaa12deb5475368a8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119703235"
 ---
-# <a name="nisnetgrouptriple-attribute"></a>atributo nisNetgroupTriple
+# <a name="nisnetgrouptriple-attribute"></a>Atributo nisNetgroupTriple
 
-Representa una entrada de un mapa de netgroup.
+Representa una entrada de un mapa netgroup.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | nisNetgroupTriple                    |
-| Nombre para mostrar de LDAP | nisNetgroupTriple                    |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | nisNetgroupTriple                    |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.14                     |
-| System-ID-GUID    | a8032e74-30ef-4ff5-affc-0fc217783fec |
-| Sintaxis            | [**String(IA5)**](s-string-ia5.md)  |
+| System-Id-Guid    | a8032e74-30ef-4ff5-affc-0fc217783fec |
+| Syntax            | [**String(IA5)**](s-string-ia5.md)  |
 
 
 
@@ -52,13 +52,13 @@ Representa una entrada de un mapa de netgroup.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------|
-| Identificador de vínculo                | \-                                              |
+| Id. de vínculo                | \-                                              |
 | MAPI-Id                | \-                                              |
-| System-Only            | False                                           |
-| Tiene un único valor       | False                                           |
-| Está indexado             | False                                           |
-| En el catálogo global      | False                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                    |
+| System-Only            | Falso                                           |
+| Es de un solo valor       | Falso                                           |
+| Está indexado             | Falso                                           |
+| En el catálogo global      | Falso                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                    |
 | Range-Lower            | \-                                              |
 | Range-Upper            | \-                                              |
 | Search-Flags           | 0x00000000                                      |
@@ -73,13 +73,13 @@ Representa una entrada de un mapa de netgroup.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------|
-| Identificador de vínculo                | \-                                              |
+| Id. de vínculo                | \-                                              |
 | MAPI-Id                | \-                                              |
-| System-Only            | False                                           |
-| Tiene un único valor       | False                                           |
-| Está indexado             | False                                           |
-| En el catálogo global      | False                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                    |
+| System-Only            | Falso                                           |
+| Es de un solo valor       | Falso                                           |
+| Está indexado             | Falso                                           |
+| En el catálogo global      | Falso                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                    |
 | Range-Lower            | \-                                              |
 | Range-Upper            | \-                                              |
 | Search-Flags           | 0x00000000                                      |
@@ -94,13 +94,13 @@ Representa una entrada de un mapa de netgroup.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------|
-| Identificador de vínculo                | \-                                              |
+| Id. de vínculo                | \-                                              |
 | MAPI-Id                | \-                                              |
-| System-Only            | False                                           |
-| Tiene un único valor       | False                                           |
-| Está indexado             | False                                           |
-| En el catálogo global      | False                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                    |
+| System-Only            | Falso                                           |
+| Es de un solo valor       | Falso                                           |
+| Está indexado             | Falso                                           |
+| En el catálogo global      | Falso                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                    |
 | Range-Lower            | \-                                              |
 | Range-Upper            | \-                                              |
 | Search-Flags           | 0x00000000                                      |
@@ -113,15 +113,15 @@ Representa una entrada de un mapa de netgroup.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------|
-| Identificador de vínculo                | \-                                              |
+| Id. de vínculo                | \-                                              |
 | MAPI-Id                | \-                                              |
-| System-Only            | False                                           |
-| Tiene un único valor       | False                                           |
-| Está indexado             | False                                           |
-| En el catálogo global      | False                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                    |
+| System-Only            | Falso                                           |
+| Es de un solo valor       | Falso                                           |
+| Está indexado             | Falso                                           |
+| En el catálogo global      | Falso                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                    |
 | Range-Lower            | \-                                              |
 | Range-Upper            | \-                                              |
 | Search-Flags           | 0x00000000                                      |

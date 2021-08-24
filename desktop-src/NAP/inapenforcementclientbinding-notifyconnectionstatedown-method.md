@@ -3,9 +3,9 @@ title: Método INapEnforcementClientBinding NotifyConnectionStateDown (NapEnforc
 description: Se usa para informar a NapAgent de que una conexión a un cliente de cumplimiento ha desaparecido.
 ms.assetid: 504c61c1-c8f9-46b8-87cd-c1f04846f0b3
 keywords:
-- Nap del método NotifyConnectionStateDown
-- Método NAP NotifyConnectionStateDown , interfaz INapEnforcementClientBinding
-- INapEnforcementClientBinding interface NAP , NotifyConnectionStateDown (método)
+- Método NAP NotifyConnectionStateDown
+- Método NAP notifyConnectionStateDown , interfaz INapEnforcementClientBinding
+- Método NAP de la interfaz INapEnforcementClientBinding , NotifyConnectionStateDown
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119803055"
 ---
-# <a name="inapenforcementclientbindingnotifyconnectionstatedown-method"></a>Método INapEnforcementClientBinding::NotifyConnectionStateDown
+# <a name="inapenforcementclientbindingnotifyconnectionstatedown-method"></a>INapEnforcementClientBinding::NotifyConnectionStateDown (método)
 
 > [!Note]  
 > La plataforma de protección de acceso a redes no está disponible a partir de Windows 10
@@ -73,11 +73,11 @@ También se pueden devolver otros códigos de error específicos de COM.
 
 ## <a name="remarks"></a>Comentarios
 
-Cuando alguna de las conexiones establecidas por un cliente de cumplimiento no se establece, el cliente de cumplimiento debe quitar la conexión de su lista activa e informar a NapAgent mediante este método. En cuanto se devuelve esta llamada, el objeto de conexión se puede liberar y liberar. NapAgent no contendrán referencias al objeto de conexión.
+Cuando alguna de las conexiones establecidas por un cliente de cumplimiento se desatas, el cliente de cumplimiento debe quitar la conexión de su lista activa e informar a NapAgent mediante este método. En cuanto se devuelve esta llamada, el objeto de conexión se puede liberar y liberar. NapAgent no contendrán referencias al objeto de conexión.
 
-Como resultado de esta notificación, NapAgent actualiza su estado de NAP del sistema según corresponda.
+Como resultado de esta notificación, NapAgent actualiza su estado nap del sistema según corresponda.
 
-El cliente de cumplimiento debe llamar al método [**INapEnforcementClientBinding::Initialize**](inapenforcementclientbinding-initialize-method.md) antes de llamar a este o a cualquier otro método de la interfaz [**INapEnforcementClientBinding.**](inapenforcementclientbinding.md)
+El cliente de cumplimiento debe llamar al método [**INapEnforcementClientBinding::Initialize**](inapenforcementclientbinding-initialize-method.md) antes de llamar a este o a cualquier otro método de la [**interfaz INapEnforcementClientBinding.**](inapenforcementclientbinding.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -93,7 +93,7 @@ El cliente de cumplimiento debe llamar al método [**INapEnforcementClientBindin
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

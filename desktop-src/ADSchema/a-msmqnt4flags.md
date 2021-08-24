@@ -53,7 +53,7 @@ El **atributo MSMQ-Nt4-Flags** contiene información de modo mixto de MSMQ.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------------|
 | Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
@@ -95,7 +95,7 @@ El **atributo MSMQ-Nt4-Flags** contiene información de modo mixto de MSMQ.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------------|
 | Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
@@ -137,7 +137,7 @@ El **atributo MSMQ-Nt4-Flags** contiene información de modo mixto de MSMQ.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------------|
 | Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
@@ -158,7 +158,7 @@ El **atributo MSMQ-Nt4-Flags** contiene información de modo mixto de MSMQ.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------------|
 | Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |

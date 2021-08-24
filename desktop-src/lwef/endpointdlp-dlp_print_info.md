@@ -1,6 +1,6 @@
 ---
 description: Especifica información sobre un documento asociado a una operación de impresión DLP de punto de conexión.
-title: DLP_PRINT_INFO estructura (endpointdlp.h)
+title: Estructura DLP_PRINT_INFO (endpointdlp.h)
 ms.topic: reference
 ms.date: 03/18/2021
 topic_type:
@@ -12,12 +12,12 @@ api_type:
 - COM
 api_location:
 - endpointdlp.h
-ms.openlocfilehash: 37bde9f62de07083aac6a3d2fb367b021caf3732
-ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
+ms.openlocfilehash: e55b3dc22c77d85e15499ea0fb2a6634ece044496637c811ae42e4afd632704e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107495958"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119725825"
 ---
 # <a name="dlp_print_info-structure"></a>DLP_PRINT_INFO estructura
 
@@ -44,7 +44,7 @@ typedef struct _DLP_PRINT_INFO {
 *Versión* \[ En\]
 </dt> <dd>
 
-DWORD que especifica la versión de LA API. Este valor siempre debe ser **DLP_PRINT_INFO_V_LATEST**. Esta constante se define en la lista de archivos de encabezado de ejemplo endpointdlp.h del artículo Prevención de [pérdida de datos de punto de conexión.](endpointdlp-endpoint-data-loss-prevention.md)
+DWORD que especifica la versión de la API. Este valor siempre debe ser **DLP_PRINT_INFO_V_LATEST**. Esta constante se define en la lista de archivos de encabezado de ejemplo endpointdlp.h del artículo Prevención de [pérdida de datos de punto de conexión.](endpointdlp-endpoint-data-loss-prevention.md)
 
 </dd> </dl>
 

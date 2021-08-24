@@ -1,7 +1,7 @@
 ---
-description: El método OpenDatabase del objeto Installer abre una base de datos existente o crea una nueva, devolviendo un objeto Database. Genera un error si el objeto Database no se puede crear y abrir correctamente.
+description: El método OpenDatabase del objeto Installer abre una base de datos existente o crea una nueva, devolviendo un objeto Database. Genera un error si el objeto Database no se puede crear ni abrir correctamente.
 ms.assetid: a77b3954-db27-41a0-8f8b-2654766bde6a
-title: Método Installer.OpenDatabase
+title: Installer.OpenDatabase (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 897e683fd56ce3e7496dd945ee068a9e6f0c0f77
-ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
+ms.openlocfilehash: aab1e66dd4208817f854db88c57db5b6269a7a0b912242da649dffcf24cabab3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107492274"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119821375"
 ---
-# <a name="installeropendatabase-method"></a>Método Installer.OpenDatabase
+# <a name="installeropendatabase-method"></a>Installer.OpenDatabase (método)
 
-El **método OpenDatabase** del objeto [**Installer**](installer-object.md) abre una base de datos existente o crea una nueva, devolviendo un objeto [**Database.**](database-object.md) Genera un error si el objeto **Database** no se puede crear y abrir correctamente.
+El **método OpenDatabase** del objeto [**Installer**](installer-object.md) abre una base de datos existente o crea una nueva, devolviendo un [**objeto Database.**](database-object.md) Genera un error si el objeto **Database** no se puede crear ni abrir correctamente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -74,7 +74,7 @@ Parámetro de la lista siguiente o una cadena que contiene el nombre de ruta de 
 
 Objeto [**Database**](database-object.md) que representa la base de datos existente o nueva del instalador que se abrió.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Cuando se abre una base de datos como salida de otra base de datos, el flujo de información de resumen de la base de datos de salida es realmente un reflejo de solo lectura de la base de datos original y, por tanto, no se puede cambiar. Además, no se conserva con la base de datos. Para crear o modificar la información de resumen de la base de datos de salida, debe cerrarse y volver a abrirse.
 
@@ -90,9 +90,9 @@ Si se produce un error en el método , puede obtener información de error exten
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
 | IID<br/>     | IID IInstaller se define como \_ 000C1090-0000-0000-C000-00000000046<br/>                                                                                                                                                                           |
 

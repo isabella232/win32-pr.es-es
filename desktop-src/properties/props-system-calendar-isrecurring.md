@@ -1,17 +1,17 @@
 ---
 description: Indica si el evento se repetirá.
 ms.assetid: be1551e6-861d-49cf-9050-9b98b7f79725
-title: System. Calendar. IsRecurring
+title: System.Calendar.IsRecurring
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 16133fff8d28eaeaf0344afd6bdc0844edf38f60
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 24b7fc7fde036737ce4b4e2947ceae2378aaab062394c845d1d176437cd0a185
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119823585"
 ---
-# <a name="systemcalendarisrecurring"></a>System. Calendar. IsRecurring
+# <a name="systemcalendarisrecurring"></a>System.Calendar.IsRecurring
 
 Indica si el evento se repetirá.
 
@@ -44,9 +44,9 @@ propertyDescription
       type = Boolean
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -61,7 +61,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -73,7 +73,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -91,7 +91,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

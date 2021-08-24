@@ -4,12 +4,12 @@ ms.assetid: 783a6552-9b22-4af4-9252-b443e2624687
 title: Recuperar métodos de servicio admitidos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b021aa868ffaa95df23a729e94d62eae8a0c632e
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: ce058fcab000a90459dcce5310645088b40a2432d1de8c9852c84770db058300
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110423805"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119839054"
 ---
 # <a name="retrieving-supported-service-methods"></a>Recuperar métodos de servicio admitidos
 
@@ -41,9 +41,9 @@ Cuando el usuario elige la opción "5" en la línea de comandos, la aplicación 
 
 Tenga en cuenta que antes de recuperar la lista de eventos, la aplicación de ejemplo abre un servicio Contactos en un dispositivo conectado.
 
-En WPD, un método se describe por su nombre, derechos de acceso, parámetros y datos relacionados. La aplicación de ejemplo muestra un nombre descriptivo, por ejemplo, "CustomMethod" o un GUID. El nombre del método o GUID va seguido de los datos de acceso ("lectura/escritura"), el nombre de cualquier formato asociado y los datos de parámetro. Estos datos incluyen el nombre del parámetro, el uso, VARTYPE y el formulario.
+En WPD, un método se describe por su nombre, derechos de acceso, parámetros y datos relacionados. La aplicación de ejemplo muestra un nombre descriptivo, por ejemplo, "CustomMethod" o un GUID. El nombre del método o GUID va seguido de los datos de acceso ("Lectura/Escritura"), el nombre de cualquier formato asociado y los datos de parámetro. Estos datos incluyen el nombre del parámetro, el uso, VARTYPE y el formulario.
 
-Cinco métodos del módulo ServiceMethods.cpp admiten la recuperación de métodos (y datos relacionados) para el servicio Contacts dado: **ListSupportedMethods,** **DisplayMethod,** **DisplayMethodAccess,** **DisplayFormat** y **DisplayMethodParameters.** El **método ListSupportedMethods** recupera un recuento de métodos admitidos y el identificador GUID de cada uno. a continuación, llama **al método DisplayMethod.** El **método DisplayMethod** llama al método [**IPortableDeviceServiceCapapbilities::GetMethodAttributes**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getmethodattributes) para recuperar las opciones, parámetros y así sucesivamente del método especificado. Una vez **que DisplayMethod** recupera los datos del método, representa el nombre (o GUID), las restricciones de acceso, el formato asociado (si hay alguno) y las descripciones de los parámetros. **DisplayMethodAccess,** **DisplayFormat** y **DisplayMethodParameters** son funciones auxiliares que representan sus respectivos campos de datos.
+Cinco métodos del módulo ServiceMethods.cpp admiten la recuperación de métodos (y datos relacionados) para el servicio Contacts dado: **ListSupportedMethods**, **DisplayMethod**, **DisplayMethodAccess,** **DisplayFormat** y **DisplayMethodParameters.** El **método ListSupportedMethods** recupera un recuento de métodos admitidos y el identificador GUID de cada uno. a continuación, llama **al método DisplayMethod.** El **método DisplayMethod** llama al método [**IPortableDeviceServiceCapapbilities::GetMethodAttributes**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getmethodattributes) para recuperar las opciones, parámetros y así sucesivamente del método especificado. Una vez **que DisplayMethod** recupera los datos del método, representa el nombre (o GUID), las restricciones de acceso, el formato asociado (si hay alguno) y las descripciones de los parámetros. **DisplayMethodAccess,** **DisplayFormat** y **DisplayMethodParameters** son funciones auxiliares que representan sus respectivos campos de datos.
 
 El **método ListSupportedMethods** invoca el método [**IPortableDeviceService::Capabilities**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservice-capabilities) para recuperar una [**interfaz IPortableDeviceServiceCapabilities.**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicecapabilities) Con esta interfaz, recupera los métodos admitidos llamando al método [**IPortableDeviceServiceCapabilities::GetSupportedMethods.**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getsupportedmethods) El **método GetSupportedMethods** recupera los GUID de cada método admitido por el servicio y copia ese GUID en un [**objeto IPortableDevicePropVariantCollection.**](iportabledevicepropvariantcollection.md)
 

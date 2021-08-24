@@ -1,7 +1,7 @@
 ---
 description: La función GetNPPPatternFilterFromBlob recupera el filtro de coincidencia de patrones de un BLOB específico.
 ms.assetid: b17cde55-8abb-4699-960f-676cbbb24326
-title: Función GetNPPPatternFilterFromBlob (Netmon. h)
+title: Función GetNPPPatternFilterFromBlob (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 5758c53fe21231d300058a9168e556e9f9ceaa43
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f54be7ac5d5b7a443f967d0f6aa1b4737f798a9459833fc87f07f50328f824c3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103808713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119743895"
 ---
-# <a name="getnpppatternfilterfromblob-function"></a>GetNPPPatternFilterFromBlob función)
+# <a name="getnpppatternfilterfromblob-function"></a>Función GetNPPPatternFilterFromBlob
 
-La función **GetNPPPatternFilterFromBlob** recupera el filtro de coincidencia de patrones de un BLOB específico.
+La **función GetNPPPatternFilterFromBlob** recupera el filtro de coincidencia de patrones de un BLOB específico.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,36 +41,36 @@ DWORD GetNPPPatternFilterFromBlob(
 
 <dl> <dt>
 
-*hBlob* \[ de\]
+*hBlob* \[ En\]
 </dt> <dd>
 
 Identificador del BLOB.
 
 </dd> <dt>
 
-*pExpression* \[ de\]
+*pExpression* \[ En\]
 </dt> <dd>
 
 Puntero a la expresión de filtro.
 
 </dd> <dt>
 
-*hErrorBlob* \[ enuncia\]
+*hErrorBlob* \[ out\]
 </dt> <dd>
 
-Identificador de un BLOB de error que especifica dónde se produjo el error (si existe) en el BLOB original.
+Controlar un BLOB de error que especifica dónde se produjo el error (si lo hubiera) en el BLOB original.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente, el valor devuelto es NMERR \_ Success.
+Si la función se realiza correctamente, el valor devuelto es NMERR \_ SUCCESS.
 
-Si la función no es correcta, el valor devuelto es un NMERR que indica el error.
+Si la función no se realiza correctamente, el valor devuelto es un NMERR que indica el error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La información del filtro de coincidencia de patrones se almacena en la categoría de **configuración** del BLOB.
+La información del filtro de coincidencia de patrones se almacena en la **categoría Config** del BLOB.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,8 +80,8 @@ La información del filtro de coincidencia de patrones se almacena en la categor
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 

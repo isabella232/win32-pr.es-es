@@ -1,26 +1,26 @@
 ---
-description: Efecto sobre volumen
+description: Efecto de sobre de volumen
 ms.assetid: 17b6d842-e79c-49b0-baa4-1535b4a2c6ae
-title: Efecto sobre volumen
+title: Efecto de sobre de volumen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9364b88b1928e533a031f0700cb8a2c44bc9822d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e4ecb66914063596849522a0e4bb340fc84f7d80e5ea1113bfdae2d32e855d3b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687862"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119746955"
 ---
-# <a name="volume-envelope-effect"></a>Efecto sobre volumen
+# <a name="volume-envelope-effect"></a>Efecto de sobre de volumen
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El efecto sobre volumen establece el volumen en una secuencia de audio.
+El efecto Sobre de volumen establece el volumen en una secuencia de audio.
 
-IDENTIFICADOR de clase (CLSID): {036A9790-C153-11D2-9EF7-006008039E37}
+Identificador de clase (CLSID): {036A9790-C153-11D2-9EF7-006008039E37}
 
 Nombre de la variable CLSID: CLSID \_ AudMixer
 
@@ -30,15 +30,15 @@ Propiedades
 
 | Propiedad | Tipo   | Valor predeterminado | Descripción                                                                                                           |
 |----------|--------|---------|-----------------------------------------------------------------------------------------------------------------------|
-| Vol      | double | 1,0     | Volumen, como porcentaje del volumen creado. Puede producir fundidos de audio modificando este valor de propiedad a lo largo del tiempo. |
+| Vol      | double | 1.0     | Volumen, como porcentaje del volumen autor. Puede generar atenuaciones de audio si varía este valor de propiedad con el tiempo. |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cada objeto de una escala de tiempo puede tener como máximo un efecto de sobre de volumen. En una composición o un grupo, el sobre del volumen se aplica primero, antes que cualquier otro efecto de audio, independientemente de su prioridad. En un origen o una pista, el efecto de volumen se aplica en función de su prioridad.
+Cada objeto de una escala de tiempo puede tener como máximo un efecto de sobre de volumen. En una composición o un grupo, el sobre de volumen se aplica primero, antes que cualquier otro efecto de audio, independientemente de su prioridad. En un origen o una pista, el efecto del volumen se aplica según su prioridad.
 
  
 

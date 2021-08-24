@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: DurableCommitCallback. ReleaseResource (método)'
-title: Método DurableCommitCallback. ReleaseResource (Microsoft. ISAM. esent. Interop. Windows8)
+description: Más información sobre el método DurableCommitCallback.ReleaseResource
+title: Método DurableCommitCallback.ReleaseResource (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: 'ReleaseResource method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Windows8.DurableCommitCallback.ReleaseResource
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.durablecommitcallback.releaseresource(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 634dd081513e576c7aabaac17cc5f9d207a8769f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 758c27b1b3a67b91b7921276ec26e9c9776b65255c4cfa88d32b839f9950c2af
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119725275"
 ---
-# <a name="durablecommitcallbackreleaseresource-method"></a>DurableCommitCallback. ReleaseResource, método
+# <a name="durablecommitcallbackreleaseresource-method"></a>Método DurableCommitCallback.ReleaseResource
 
 Libera la sesión de confirmación duradera.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,16 +52,16 @@ Me.ReleaseResource()
 protected override void ReleaseResource()
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-No intente establecer el parámetro de instancia en null, ya que la devolución de llamada se desecha después de JetTerm y la devolución de llamada no se puede establecer después de JetTerm.
+No intente establecer el parámetro de instancia en NULL, ya que la devolución de llamada se elimina después de JetTerm y la devolución de llamada no se puede establecer después de JetTerm.
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase DurableCommitCallback](./durablecommitcallback-class.md)
+[DurableCommitCallback (clase)](./durablecommitcallback-class.md)
 
-[Miembros de DurableCommitCallback](./durablecommitcallback-members.md)
+[Miembros DurableCommitCallback](./durablecommitcallback-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

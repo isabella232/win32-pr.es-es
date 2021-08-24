@@ -1,30 +1,30 @@
 ---
-description: La \_ clase CIM adaptador de clase expone los métodos siguientes.
+description: La clase \_ Cim NetworkAdapter expone los métodos siguientes.
 ms.assetid: C36E9588-6309-4650-A878-7D397C4B24C5
 ms.tgt_platform: multiple
-title: Métodos CIM_NetworkAdapter
+title: CIM_NetworkAdapter métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 96fe835a321334724f21e2b291203511249dfcb8
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 561acbf4fa9c7246d295faf79b83022f3fe924eb2c7a200269c83dbf98f22fd7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153225"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119820985"
 ---
-# <a name="cim_networkadapter-methods"></a>Métodos de la adaptador de la CIM \_
+# <a name="cim_networkadapter-methods"></a>\_Métodos networkAdapter de CIM
 
-La clase [**CIM \_ adaptador**](cim-networkadapter.md) de clase expone los métodos siguientes.
+La [**clase \_ NetworkAdapter**](cim-networkadapter.md) cim expone los métodos siguientes.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**RESET (método)**](reset-method-in-class-cim-networkadapter.md)
--   [**SetPowerState (método)**](setpowerstate-method-in-class-cim-networkadapter.md)
+-   [**Método de restablecimiento**](reset-method-in-class-cim-networkadapter.md)
+-   [**Método SetPowerState**](setpowerstate-method-in-class-cim-networkadapter.md)
 
  
 

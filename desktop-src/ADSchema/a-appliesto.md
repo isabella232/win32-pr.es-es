@@ -1,11 +1,11 @@
 ---
-title: Applies-To atributo)
-description: Contiene la lista de clases de objetos a la que se aplica el derecho extendido. En la lista, una clase de objeto se representa mediante la propiedad schemaIDGUID para su objeto schemaClass.
+title: Applies-To atributo
+description: Contiene la lista de clases de objeto a las que se aplica el derecho extendido. En la lista, la propiedad schemaIDGUID representa una clase de objeto para su objeto schemaClass.
 ms.assetid: 8333e508-627c-42ce-865b-db061a5603db
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Applies-To
-- atributo appliesTo esquema de AD
+- Applies-To esquema de AD de atributo
+- appliesTo attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 37b96a2690f420259b038b54b6d2b070b41f56d4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: af1182bf81ac1475c6880356064d3db1b4281951cead10217ae86614c476892a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151895"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119821285"
 ---
-# <a name="applies-to-attribute"></a>Applies-To atributo)
+# <a name="applies-to-attribute"></a>Applies-To atributo
 
-Contiene la lista de clases de objetos a la que se aplica el derecho extendido. En la lista, una clase de objeto se representa mediante la propiedad schemaIDGUID para su objeto schemaClass.
+Contiene la lista de clases de objeto a las que se aplica el derecho extendido. En la lista, la propiedad schemaIDGUID representa una clase de objeto para su objeto schemaClass.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | Applies-To                                  |
-| Nombre para mostrar de LDAP | appliesTo                                   |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | appliesTo                                   |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.341                      |
-| System-ID-GUID    | 8297931d-86d3-11d0-afda-00c04fd930c9        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 8297931d-86d3-11d0-afda-00c04fd930c9        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -44,7 +44,7 @@ Contiene la lista de clases de objetos a la que se aplica el derecho extendido. 
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,18 +56,18 @@ Contiene la lista de clases de objetos a la que se aplica el derecho extendido. 
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Tiene un único valor       | False                                                           |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Falso                                                           |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 36                                                              |
 | Range-Upper            | 36                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**Control-acceso-derecha**](c-controlaccessright.md)<br/> |
+| Clases usadas en        | [**Control-acceso-derecho**](c-controlaccessright.md)<br/> |
 
 
 
@@ -77,39 +77,39 @@ Contiene la lista de clases de objetos a la que se aplica el derecho extendido. 
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Tiene un único valor       | False                                                           |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Falso                                                           |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 36                                                              |
 | Range-Upper            | 36                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**Control-acceso-derecha**](c-controlaccessright.md)<br/> |
+| Clases usadas en        | [**Control-acceso-derecho**](c-controlaccessright.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Tiene un único valor       | False                                                           |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Falso                                                           |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 36                                                              |
 | Range-Upper            | 36                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**Control-acceso-derecha**](c-controlaccessright.md)<br/> |
+| Clases usadas en        | [**Control-acceso-derecho**](c-controlaccessright.md)<br/> |
 
 
 
@@ -117,20 +117,20 @@ Contiene la lista de clases de objetos a la que se aplica el derecho extendido. 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Tiene un único valor       | False                                                           |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Falso                                                           |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 36                                                              |
 | Range-Upper            | 36                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**Control-acceso-derecha**](c-controlaccessright.md)<br/> |
+| Clases usadas en        | [**Control-acceso-derecho**](c-controlaccessright.md)<br/> |
 
 
 
@@ -140,18 +140,18 @@ Contiene la lista de clases de objetos a la que se aplica el derecho extendido. 
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Tiene un único valor       | False                                                           |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Falso                                                           |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 36                                                              |
 | Range-Upper            | 36                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**Control-acceso-derecha**](c-controlaccessright.md)<br/> |
+| Clases usadas en        | [**Control-acceso-derecho**](c-controlaccessright.md)<br/> |
 
 
 
@@ -161,18 +161,18 @@ Contiene la lista de clases de objetos a la que se aplica el derecho extendido. 
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Tiene un único valor       | False                                                           |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Falso                                                           |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 36                                                              |
 | Range-Upper            | 36                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**Control-acceso-derecha**](c-controlaccessright.md)<br/> |
+| Clases usadas en        | [**Control-acceso-derecho**](c-controlaccessright.md)<br/> |
 
 
 
@@ -180,20 +180,20 @@ Contiene la lista de clases de objetos a la que se aplica el derecho extendido. 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Tiene un único valor       | False                                                           |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Falso                                                           |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 36                                                              |
 | Range-Upper            | 36                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**Control-acceso-derecha**](c-controlaccessright.md)<br/> |
+| Clases usadas en        | [**Control-acceso-derecho**](c-controlaccessright.md)<br/> |
 
 
 
