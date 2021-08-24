@@ -1,9 +1,9 @@
 ---
-title: Métodos IDCompositionScaleTransform3D SetScaleY (Dcomp. h)
-description: Cambia o anima el valor de la propiedad escalar de una transformación de escala.
+title: Métodos IDCompositionScaleTransform3D SetScaleY (Dcomp.h)
+description: Cambia o anima el valor de la propiedad ScaleY de una transformación de escala.
 ms.assetid: 90E48F55-B9A3-464D-9FB2-03AA27AA5A08
 keywords:
-- Métodos SetScaleY DirectComposition
+- Métodos SetScaleY de DirectComposition
 topic_type:
 - apiref
 api_location:
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 4ee5212631178ce97174d0b993f2c318bc134cc5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3ef20c014eb1f3426b9f63392787c673a280914d317db1e25e42361edfcb3a29
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151065"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119844335"
 ---
-# <a name="idcompositionscaletransform3dsetscaley-methods"></a>IDCompositionScaleTransform3D:: SetScaleY (métodos)
+# <a name="idcompositionscaletransform3dsetscaley-methods"></a>Métodos IDCompositionScaleTransform3D::SetScaleY
 
-Cambia o anima el valor de la propiedad escalar de una transformación de escala. La propiedad scaleY especifica el factor de escala a lo largo del eje y.
+Cambia o anima el valor de la propiedad ScaleY de una transformación de escala. La propiedad ScaleY especifica el factor de escala a lo largo del eje Y.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,8 +29,8 @@ Cambia o anima el valor de la propiedad escalar de una transformación de escala
 
 | Método                                                                                                        | Descripción                                           |
 |:--------------------------------------------------------------------------------------------------------------|:------------------------------------------------------|
-| [**SetScaleY (float)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionscaletransform3d-setscaley(float))                                     | Cambia el valor de la propiedad scaleY.<br/>  |
-| [**SetScaleY (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionscaletransform3d-setscaley(idcompositionanimation)) | Anima el valor de la propiedad scaleY.<br/> |
+| [**SetScaleY(float)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionscaletransform3d-setscaley(float))                                     | Cambia el valor de la propiedad ScaleY.<br/>  |
+| [**SetScaleY(IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionscaletransform3d-setscaley(idcompositionanimation)) | Anima el valor de la propiedad ScaleY.<br/> |
 
 
 
@@ -38,12 +38,12 @@ Cambia o anima el valor de la propiedad escalar de una transformación de escala
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Dcomp. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>Dcomp. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows solo 8 \[ aplicaciones de escritorio\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2012 \[\]<br/>                                 |
+| Header<br/>                   | <dl> <dt>Dcomp.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Dcomp.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Dcomp.dll</dt> </dl> |
 
 

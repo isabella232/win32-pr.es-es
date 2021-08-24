@@ -1,11 +1,11 @@
 ---
-title: Propiedad AxWindowsMediaPlayer. status
-description: La propiedad status obtiene un valor que indica el estado de Windows Media Player.
+title: Propiedad AxWindowsMediaPlayer.status
+description: La propiedad status obtiene un valor que indica el estado de Reproductor de Windows Media.
 ms.assetid: fefed54d-1fae-4599-8efc-eb2efdbd8ebd
 keywords:
-- propiedades de estado de Windows Media Player
-- propiedad status Windows Media Player, clase AxWindowsMediaPlayer
-- Clase AxWindowsMediaPlayer Windows Media Player, propiedad status
+- estado de la propiedad Reproductor de Windows Media
+- propiedad status Reproductor de Windows Media clase , AxWindowsMediaPlayer
+- Clase AxWindowsMediaPlayer Reproductor de Windows Media , propiedad status
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ea7e8c36ad05e2f9a4573d8e2433d705f354239
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ac46eeef411e1d728994d829d95727cdaf4020c2ef1b7511391b6ca0d2e31ff7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699703"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119864565"
 ---
-# <a name="axwindowsmediaplayerstatus-property"></a>Propiedad AxWindowsMediaPlayer. status
+# <a name="axwindowsmediaplayerstatus-property"></a>Propiedad AxWindowsMediaPlayer.status
 
-La propiedad status obtiene un valor que indica el estado de Windows Media Player.
+La propiedad status obtiene un valor que indica el estado de Reproductor de Windows Media.
 
 Esta propiedad es de solo lectura.
 
@@ -48,13 +48,13 @@ Public ReadOnly Property status As System.String
 
 ## <a name="property-value"></a>Valor de propiedad
 
-System. String que es el estado.
+System.String que es el estado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores contenidos en esta propiedad están sujetos a cambios en cualquier momento y deben usarse solo con fines de presentación.
+Los valores contenidos en esta propiedad están sujetos a cambios en cualquier momento y solo se deben usar con fines de presentación.
 
-AxWindowsMediaPlayer. El evento **StatusChange** se desencadena cuando esta propiedad cambia el valor.
+The AxWindowsMediaPlayer. **El evento StatusChange** se desencadena cada vez que esta propiedad cambia de valor.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,7 +62,7 @@ AxWindowsMediaPlayer. El evento **StatusChange** se desencadena cuando esta prop
 
 | Requisito | Value |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                          |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Ensamblado<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -75,7 +75,7 @@ AxWindowsMediaPlayer. El evento **StatusChange** se desencadena cuando esta prop
 [**Objeto AxWindowsMediaPlayer (VB y C#)**](axwindowsmediaplayer-object--vb-and-c.md)
 </dt> <dt>
 
-[**Evento AxWindowsMediaPlayer. StatusChange (VB y C#)**](axwmplib-axwindowsmediaplayer-statuschange.md)
+[**Evento AxWindowsMediaPlayer.StatusChange (VB y C#)**](axwmplib-axwindowsmediaplayer-statuschange.md)
 </dt> </dl>
 
  

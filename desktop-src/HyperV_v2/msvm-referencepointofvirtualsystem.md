@@ -1,7 +1,7 @@
 ---
-description: Asocia el \_ VirtualSystemReferencePoint MSVM a los objetos MSVM \_ VirtualSystem correspondientes.
+description: Asocia Msvm \_ VirtualSystemReferencePoint a los objetos Msvm \_ VirtualSystem correspondientes.
 ms.assetid: 5a9cb099-c0ae-4088-a64c-f2720a6cb9c8
-title: Msvm_ReferencePointOfVirtualSystem (clase)
+title: Msvm_ReferencePointOfVirtualSystem clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 8debe1931154c5c7a7868e8ee301daf977076b57
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d9224e0ce51608904f7cf2459dc3d1341d84dd005bd8fe4daee5707d22b38163
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103814219"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119789595"
 ---
-# <a name="msvm_referencepointofvirtualsystem-class"></a>MSVM \_ ReferencePointOfVirtualSystem (clase)
+# <a name="msvm_referencepointofvirtualsystem-class"></a>Clase Msvm \_ ReferencePointOfVirtualSystem
 
-Asocia el [**\_ VirtualSystemReferencePoint MSVM**](msvm-virtualsystemreferencepoint.md) a los objetos [**MSVM \_ VirtualSystem**](msvm-virtualsystemresourcecomponent.md) correspondientes.
+Asocia [**Msvm \_ VirtualSystemReferencePoint**](msvm-virtualsystemreferencepoint.md) a los objetos [**Msvm \_ VirtualSystem**](msvm-virtualsystemresourcecomponent.md) correspondientes.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -41,45 +41,45 @@ class Msvm_ReferencePointOfVirtualSystem : CIM_Dependency
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ ReferencePointOfVirtualSystem** tiene estos tipos de miembros:
+La **clase \_ ReferencePointOfVirtualSystem de Msvm** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ ReferencePointOfVirtualSystem** tiene estas propiedades.
+La **clase Msvm \_ ReferencePointOfVirtualSystem** tiene estas propiedades.
 
 <dl> <dt>
 
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **MSVM \_ ComputerSystem**
+Tipo de datos: **Msvm \_ ComputerSystem**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedentes")
 </dt> </dl>
 
-Un [**MSVM \_ ComputerSystem**](msvm-computersystem.md) que representa el objeto independiente de esta asociación.
+[**Msvm \_ ComputerSystem que**](msvm-computersystem.md) representa el objeto independiente de esta asociación.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **MSVM \_ VirtualSystemReferencePoint**
+Tipo de datos: **Msvm \_ VirtualSystemReferencePoint**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependiente")
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependent")
 </dt> </dl>
 
-[**MSVM \_ VirtualSystemReferencePoint**](msvm-virtualsystemreferencepoint.md) que representa el objeto que depende del **antecedente**.
+Objeto [**\_ VirtualSystemReferencePoint de Msvm**](msvm-virtualsystemreferencepoint.md) que representa el objeto que depende del **antecedente**.
 
 </dd> </dl>
 
@@ -89,10 +89,10 @@ Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidaci
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -101,7 +101,7 @@ Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidaci
 
 <dl> <dt>
 
-[**Dependencia de CIM \_**](cim-dependency.md)
+[**Dependencia \_ cim**](cim-dependency.md)
 </dt> </dl>
 
  

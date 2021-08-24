@@ -1,11 +1,11 @@
 ---
-title: Propiedad AxWindowsMediaPlayer. DVD
-description: La propiedad de DVD obtiene una interfaz IWMPDVD que proporciona propiedades y métodos para trabajar con DVDs.
+title: Propiedad AxWindowsMediaPlayer.dvd
+description: La propiedad dvd obtiene una interfaz IWMPDVD que proporciona propiedades y métodos para trabajar con DVD.
 ms.assetid: a1cafa04-33b6-42ff-86db-3ffc7f056907
 keywords:
-- propiedades de DVD Media Player de Windows
-- propiedad de DVD Windows Media Player, clase AxWindowsMediaPlayer
-- Clase AxWindowsMediaPlayer Windows Media Player, propiedad de DVD
+- propiedades de dvd Reproductor de Windows Media
+- Propiedad dvd Reproductor de Windows Media , clase AxWindowsMediaPlayer
+- Clase AxWindowsMediaPlayer Reproductor de Windows Media , propiedad dvd
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 63671e8658ecaf81db9ade5ce6efdbcfcb3e1734
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 65b956cdd96f20ee2981e53e4dd598ed20a2858aefadac2ade5a8b4f0cd7baeb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698555"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119864685"
 ---
-# <a name="axwindowsmediaplayerdvd-property"></a>Propiedad AxWindowsMediaPlayer. DVD
+# <a name="axwindowsmediaplayerdvd-property"></a>Propiedad AxWindowsMediaPlayer.dvd
 
-La propiedad de DVD obtiene una interfaz IWMPDVD que proporciona propiedades y métodos para trabajar con DVDs.
+La propiedad dvd obtiene una interfaz IWMPDVD que proporciona propiedades y métodos para trabajar con DVD.
 
 Esta propiedad es de solo lectura.
 
@@ -48,7 +48,7 @@ Public ReadOnly Property dvd As IWMPDVD
 
 ## <a name="property-value"></a>Valor de propiedad
 
-La interfaz WMPLib. IWMPDVD.
+Interfaz WMPLib.IWMPDVD.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,7 +56,7 @@ La interfaz WMPLib. IWMPDVD.
 
 | Requisito | Value |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                          |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Ensamblado<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 

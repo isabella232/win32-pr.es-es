@@ -1,23 +1,23 @@
 ---
-title: Obtención de las capacidades de un controlador de captura
-description: Obtención de las capacidades de un controlador de captura
+title: Obtener las funcionalidades de un controlador de captura
+description: Obtener las funcionalidades de un controlador de captura
 ms.assetid: 17e90ca6-3646-41cb-8d7a-a2102bc16cc5
 keywords:
-- Mensaje WM_CAP_DRIVER_GET_CAPS
-- capDriverGetCaps (macro)
-- Estructura CAPDRIVERCAPS
+- WM_CAP_DRIVER_GET_CAPS mensaje
+- CapDriverGetCaps macro
+- CAPDRIVERCAPS (estructura)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d15a3b1e01ccff738494f287126b7e1ab033056
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: bf6f717f1a7c19878ceeca2cccc2db309be3e62e0febf90dcb23376db73eed17
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105676279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119806575"
 ---
-# <a name="obtaining-the-capabilities-of-a-capture-driver"></a>Obtención de las capacidades de un controlador de captura
+# <a name="obtaining-the-capabilities-of-a-capture-driver"></a>Obtener las funcionalidades de un controlador de captura
 
-El [**mensaje \_ Cap \_ Cap \_ driver \_ Get**](wm-cap-driver-get-caps.md) devolverá las capacidades del controlador de captura y el hardware subyacente en la estructura [**CAPDRIVERCAPS**](/windows/win32/api/vfw/ns-vfw-capdrivercaps) . Cada vez que una aplicación conecta un nuevo controlador de captura a la ventana de captura, debe actualizar la estructura **CAPDRIVERCAPS** . En el ejemplo siguiente se usa la macro [**capDriverGetCaps**](/windows/desktop/api/Vfw/nf-vfw-capdrivergetcaps) para obtener las capacidades del controlador de captura.
+El [**mensaje WM CAP DRIVER GET \_ \_ \_ \_ CAPS**](wm-cap-driver-get-caps.md) devuelve las funciones del controlador de captura y el hardware subyacente en la [**estructura CAPDRIVERCAPS.**](/windows/win32/api/vfw/ns-vfw-capdrivercaps) Cada vez que una aplicación conecta un nuevo controlador de captura a la ventana de captura, debe actualizar la **estructura CAPDRIVERCAPS.** En el ejemplo siguiente se usa [**la macro capDriverGetCaps**](/windows/desktop/api/Vfw/nf-vfw-capdrivergetcaps) para obtener las funcionalidades del controlador de captura.
 
 
 ```C++
@@ -36,12 +36,12 @@ SendMessage (hWndC, WM_CAP_DRIVER_GET_CAPS,
 
 <dl> <dt>
 
-[Uso de la captura de vídeo](using-video-capture.md)
+[Uso de captura de vídeo](using-video-capture.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

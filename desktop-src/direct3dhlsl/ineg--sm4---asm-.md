@@ -1,23 +1,23 @@
 ---
-title: INEG (SM4-ASM)
-description: el complemento de 2.
+title: ineg (sm4 - asm)
+description: Complemento de 2.
 ms.assetid: 20C1EEC8-E349-4398-8EE3-EDD01EBCD4B1
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec4da3e0cbb08bee7bd732a4da8175705d1e1a0f
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 9c9994d9b21cc7d851c243294eb43e00e84024057f66da59f7ac96e961a30217
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104419957"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119788875"
 ---
-# <a name="ineg-sm4---asm"></a>INEG (SM4-ASM)
+# <a name="ineg-sm4---asm"></a>ineg (sm4 - asm)
 
-el complemento de 2.
+Complemento de 2.
 
 
 
-| INEG dest \[ . Mask \] , src0 \[ . swizzle |
+| ineg dest \[ .mask \] , src0 \[ .swzzle |
 |------------------------------------|
 
 
@@ -28,16 +28,16 @@ el complemento de 2.
 
 | Elemento                                                            | Descripción                                                   |
 |-----------------------------------------------------------------|---------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/> | \[en \] la dirección del resultado de la operación.<br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] contiene los valores de la operación.<br/>      |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[en \] La dirección del resultado de la operación.<br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] Contiene los valores de la operación.<br/>      |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta instrucción realiza el complemento del componente 2 de cada valor de 32 bits de *src0*. Los resultados de 32 bits se almacenan en *dest*.
+Esta instrucción realiza el complemento de 2 por componente de cada valor de 32 bits en *src0.* Los resultados de 32 bits se almacenan *en dest*.
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
@@ -51,7 +51,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -59,12 +59,12 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sí       |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
@@ -74,7 +74,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado modelo de sombreador 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo 4 del sombreador (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

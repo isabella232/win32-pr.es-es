@@ -4,33 +4,33 @@ description: En el ejemplo de esta sección se muestra cómo crear un control es
 ms.assetid: D2DA38CB-360C-49EC-90BC-9AFA88C4B751
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 217135a6590fcee60286d21f00233916c4eba967
-ms.sourcegitcommit: f0ca63c18dc52c357d3398af7be766d2bdd40be7
+ms.openlocfilehash: 3ef4bdb4cce808ab3f8f8133a731c7f4ef5638bb1fbf9fd45370e4304d0138d0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "104487378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119826390"
 ---
 # <a name="how-to-create-static-controls"></a>Cómo crear controles estáticos
 
 En el ejemplo de esta sección se muestra cómo crear un control estático animado.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
 ### <a name="create-a-static-control"></a>Crear un control estático
 
-En el ejemplo de código siguiente se usa un temporizador y el mensaje [**STM \_ SETICON**](stm-seticon.md) para animar un control de icono estático en un cuadro de diálogo.
+En el ejemplo de código siguiente se usa un temporizador y el [**mensaje \_ SETICON de STM**](stm-seticon.md) para animar un control de icono estático en un cuadro de diálogo.
 
 
 ```C++
@@ -98,9 +98,9 @@ INT_PTR CALLBACK StaticDlgProc(HWND hDlg, UINT message, WPARAM wParam,
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El identificador del control de icono estático (IDI \_ static \_ Icon) se define en un archivo de encabezado global y los iconos se cargan desde los recursos de la aplicación.
+El identificador del control de icono estático (ICONO ESTÁTICO de IDI) se define en un archivo de encabezado global y los iconos se cargan \_ desde los recursos de la \_ aplicación.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -109,12 +109,12 @@ El identificador del control de icono estático (IDI \_ static \_ Icon) se defin
 [Usar controles estáticos](using-static-controls.md)
 </dt> <dt>
 
-[Demostración de controles comunes de Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows demostración de controles comunes (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,9 +1,9 @@
 ---
 title: Evento PlaylistCollectionPlaylistSetAsDeleted del objeto AxWindowsMediaPlayer
-description: El evento PlaylistCollectionPlaylistSetAsDeleted se reserva para uso futuro.
+description: El evento PlaylistCollectionPlaylistSetAsDeleted está reservado para su uso futuro.
 ms.assetid: 6c0a4d2c-e965-4a88-acd4-2a2a12265e36
 keywords:
-- Evento PlaylistCollectionPlaylistSetAsDeleted del objeto AxWindowsMediaPlayer Media Player de Windows
+- Evento PlaylistCollectionPlaylistSetAsDeleted del objeto AxWindowsMediaPlayer Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bf432ede40298abed98cdf0c5b02b0a192f7b3a9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b11187ffaf6e16612ba7edb573e0b0bc71e9d2abf44ee509db2404026e3ed570
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700216"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119864585"
 ---
 # <a name="playlistcollectionplaylistsetasdeleted-event-of-the-axwindowsmediaplayer-object"></a>Evento PlaylistCollectionPlaylistSetAsDeleted del objeto AxWindowsMediaPlayer
 
-El evento PlaylistCollectionPlaylistSetAsDeleted se reserva para uso futuro.
+El evento PlaylistCollectionPlaylistSetAsDeleted está reservado para su uso futuro.
 
 ``` syntax
 [C#]
@@ -47,16 +47,16 @@ El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 | Propiedad         | Descripción                                 |
 |------------------|---------------------------------------------|
-| bstrPlaylistName | **System. String** No compatible.<br/>  |
-| varfIsDeleted    | **System. Boolean** No compatible.<br/> |
+| bstrPlaylistName | **System.String** No se admite.<br/>  |
+| varfIsDeleted    | **System.Boolean** No se admite.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este evento se reserva para uso futuro.
+Este evento está reservado para su uso futuro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,7 +64,7 @@ Este evento se reserva para uso futuro.
 
 | Requisito | Value |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                          |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Ensamblado<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 

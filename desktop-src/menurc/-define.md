@@ -1,19 +1,19 @@
 ---
 title: " define"
-description: La Directiva \ define asigna el valor dado al nombre especificado. Todas las repeticiones posteriores del nombre se reemplazan por el valor.
+description: La directiva \ define asigna el valor especificado al nombre especificado. Todas las apariciones posteriores del nombre se reemplazan por el valor .
 ms.assetid: 2699d2dc-caf8-47d6-8b2e-526357962532
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 557c6b486d9c2bd07b0b012c17e806f5d9eaae91
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2a8e8f99dc592eefb1fb79201883e8a32837633814b79d7819e84d283709a46f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103777485"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119826055"
 ---
-# <a name="define"></a>\#define
+# <a name="define"></a>\#Definir
 
-La directiva **\# define** asigna el valor dado al nombre especificado. Todas las repeticiones posteriores del nombre se reemplazan por el valor.
+La **\# directiva define** asigna el valor especificado al nombre especificado. Todas las apariciones posteriores del nombre se reemplazan por el valor .
 
 ``` syntax
 #define name value
@@ -21,14 +21,14 @@ La directiva **\# define** asigna el valor dado al nombre especificado. Todas la
 
 <dl> <dt>
 
-<span id="name"></span><span id="NAME"></span>*Name*
+<span id="name"></span><span id="NAME"></span>*Nombre*
 </dt> <dd>
 
-Nombre que se va a definir. Este valor es cualquier combinación de letras, dígitos y puntuación que sea válida para el preprocesador de C/C++.
+Nombre que se va a definir. Este valor es cualquier combinación de letras, dígitos y signos de puntuación que sea válido para el preprocesador de C/C++.
 
 </dd> <dt>
 
-<span id="value"></span><span id="VALUE"></span>*valor*
+<span id="value"></span><span id="VALUE"></span>*Valor*
 </dt> <dd>
 
 Entero, cadena de caracteres o línea de texto.
@@ -37,7 +37,7 @@ Entero, cadena de caracteres o línea de texto.
 
 ## <a name="example"></a>Ejemplo
 
-Este ejemplo asigna valores a los nombres NonZero y USERCLASS:
+En este ejemplo se asignan valores a los nombres NONZERO y USERCLASS:
 
 ``` syntax
 #define     NONZERO     1
@@ -51,9 +51,9 @@ Este ejemplo asigna valores a los nombres NonZero y USERCLASS:
 [Directivas de preprocesador](preprocessor-directives.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: El método NewSegment entrega un nuevo segmento al pin de entrada.
 ms.assetid: 53189729-9f47-425e-9df6-faea01dd4482
-title: Método COutputQueue. NewSegment (Outputq. h)
+title: Método COutputQueue.NewSegment (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e682211a98f4409fda35687160c88b121fa93898
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4057cafa3962c85fbca9342debbf7bb0e92355fc083e693889df298e53509259
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680476"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119768145"
 ---
-# <a name="coutputqueuenewsegment-method"></a>COutputQueue. NewSegment, método
+# <a name="coutputqueuenewsegment-method"></a>Método COutputQueue.NewSegment
 
-El `NewSegment` método entrega un nuevo segmento al pin de entrada.
+El `NewSegment` método entrega un nuevo segmento a la patilla de entrada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,36 +47,36 @@ HRESULT NewSegment(
 *tStart* 
 </dt> <dd>
 
-Posición del medio inicial del segmento, en unidades de 100-nanosegundos.
+Posición del medio inicial del segmento, en unidades de 100 nanosegundos.
 
 </dd> <dt>
 
 *tStop* 
 </dt> <dd>
 
-Fin de la posición del medio del segmento, en unidades de 100-nanosegundos.
+Posición del medio final del segmento, en unidades de 100 nanosegundos.
 
 </dd> <dt>
 
 *dRate* 
 </dt> <dd>
 
-Velocidad a la que se debe procesar este segmento, como porcentaje de la tasa original.
+Velocidad a la que se debe procesar este segmento, como porcentaje de la velocidad original.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el objeto utiliza un subproceso, pone en cola los elementos siguientes, en orden:
+Si el objeto usa un subproceso, pone en cola los siguientes elementos, en orden:
 
--   NUEVO \_ mensaje de control de segmento.
--   Datos del segmento.
+-   Mensaje de \_ control NEW SEGMENT.
+-   Datos de segmento.
 
-El nuevo \_ mensaje de segmento notifica al subproceso que el siguiente elemento de la cola contendrá datos de segmento. Los datos del segmento se agrupan en una estructura, que se declara de la siguiente manera:
+El mensaje NEW \_ SEGMENT notifica al subproceso que el siguiente elemento de la cola contendrá datos de segmento. Los datos de segmento se agrupan en una estructura, declarada de la siguiente manera:
 
 
 ```C++
@@ -89,9 +89,9 @@ struct NewSegmentPacket {
 
 
 
-El subproceso llama al método [**IPin:: NewSegment**](/windows/desktop/api/Strmif/nf-strmif-ipin-newsegment) en el PIN de entrada, con los datos especificados en la estructura.
+El subproceso llama al [**método IPin::NewSegment**](/windows/desktop/api/Strmif/nf-strmif-ipin-newsegment) en el pin de entrada, utilizando los datos dados en la estructura .
 
-Si el objeto no utiliza un subproceso, llama al método [**COutputQueue:: SendAnyway**](coutputqueue-sendanyway.md) para proporcionar cualquier ejemplo pendiente. A continuación, llama a **IPin:: NewSegment** en el PIN de entrada.
+Si el objeto no usa un subproceso, llama al método [**COutputQueue::SendAnyway**](coutputqueue-sendanyway.md) para entregar los ejemplos pendientes. A continuación, **llama a IPin::NewSegment en** el pin de entrada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -99,8 +99,8 @@ Si el objeto no utiliza un subproceso, llama al método [**COutputQueue:: SendAn
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Outputq. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Outputq.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -108,7 +108,7 @@ Si el objeto no utiliza un subproceso, llama al método [**COutputQueue:: SendAn
 
 <dl> <dt>
 
-[**Clase COutputQueue**](coutputqueue.md)
+[**COutputQueue (clase)**](coutputqueue.md)
 </dt> </dl>
 
  

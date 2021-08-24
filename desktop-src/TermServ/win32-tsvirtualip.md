@@ -1,11 +1,11 @@
 ---
-title: Win32_TSVirtualIP (clase)
-description: Define la configuración de virtualización del Protocolo de Internet (IP) para un servidor host de sesión de Escritorio remoto (host de sesión de escritorio remoto).
+title: Win32_TSVirtualIP clase
+description: Define la configuración de virtualización del protocolo de Internet (IP) para un Escritorio remoto host de sesión de escritorio remoto.
 ms.assetid: c37d572c-f6db-438b-8290-006a623c6593
 ms.tgt_platform: multiple
 keywords:
 - Win32_TSVirtualIP clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_TSVirtualIP de clase, se describe
+- Win32_TSVirtualIP clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -33,16 +33,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f87db04d61dda0c6034b536544362ec09e0aaa66
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 28830e44fd54e9246cb0affc5fdde1427673d92e843adfd3e1e19cd221af370e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801286"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119769055"
 ---
-# <a name="win32_tsvirtualip-class"></a>\_Clase Win32 TSVirtualIP
+# <a name="win32_tsvirtualip-class"></a>Clase \_ TSVirtualIP de Win32
 
-Define la configuración de virtualización del Protocolo de Internet (IP) para un servidor host de sesión de Escritorio remoto (host de sesión de escritorio remoto).
+Define la configuración de virtualización del protocolo de Internet (IP) para un Escritorio remoto host de sesión de escritorio remoto.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -81,19 +81,19 @@ La **clase \_ TSVirtualIP de Win32** tiene estos tipos de miembros:
 
 ### <a name="methods"></a>Métodos
 
-La clase **Win32 \_ TSVirtualIP** tiene estos métodos.
+La **clase \_ TSVirtualIP de Win32** tiene estos métodos.
 
 
 
 | Método                                                                                                   | Descripción                                                                                                                                                                  |
 |:---------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**AddProgram**](addprogram-win32-tsvirtualip.md)                                                       | Agrega un programa a la lista de programas que utilizan la virtualización de IP.<br/>                                                                                                |
-| [**RemoveProgram**](removeprogram-win32-tsvirtualip.md)                                                 | Quita un programa de la lista de programas que utilizan la virtualización de IP.<br/>                                                                                           |
-| [**SelectNetworkAdapter**](selectnetworkadapter-win32-tsvirtualip.md)                                   | Establece la dirección MAC del adaptador de red que se va a usar para la virtualización de IP.<br/>                                                                                         |
-| [**SetProgramList**](setprogramlist-win32-tsvirtualip.md)                                               | Sobrescribe la lista de programas que utilizan la virtualización de IP.<br/>                                                                                                       |
-| [**SetVirtualIPActive**](setvirtualipactive-win32-tsvirtualip.md)                                       | Establece el valor de la propiedad **VirtualIPActive** .<br/>                                                                                                                      |
-| [**SetVirtualIPMode**](setvirtualipmode-win32-tsvirtualip.md)                                           | Establece el valor de la propiedad **VirtualIPMode** .<br/>                                                                                                                        |
-| [**SetVirtualizeLoopbackAddressesEnabled**](setvirtualizeloopbackaddressesenabled-win32-tsvirtualip.md) | Establece el valor de la propiedad **VirtualizeLoopbackAddressesEnabled** .<br/> **Windows Server 2008 R2:** Este método no está disponible antes de Windows Server 2012.<br/> |
+| [**AddProgram**](addprogram-win32-tsvirtualip.md)                                                       | Agrega un programa a la lista de programas que usan la virtualización IP.<br/>                                                                                                |
+| [**RemoveProgram**](removeprogram-win32-tsvirtualip.md)                                                 | Quita un programa de la lista de programas que usan la virtualización ip.<br/>                                                                                           |
+| [**SeleccioneNetworkAdapter.**](selectnetworkadapter-win32-tsvirtualip.md)                                   | Establece la dirección MAC del adaptador de red que se usará para la virtualización de IP.<br/>                                                                                         |
+| [**SetProgramList**](setprogramlist-win32-tsvirtualip.md)                                               | Sobrescribe la lista de programas que usan la virtualización de IP.<br/>                                                                                                       |
+| [**SetVirtualIPActive**](setvirtualipactive-win32-tsvirtualip.md)                                       | Establece el **valor de la propiedad VirtualIPActive.**<br/>                                                                                                                      |
+| [**SetVirtualIPMode**](setvirtualipmode-win32-tsvirtualip.md)                                           | Establece el **valor de la propiedad VirtualIPMode.**<br/>                                                                                                                        |
+| [**SetVirtualizeLoopbackAddressesEnabled**](setvirtualizeloopbackaddressesenabled-win32-tsvirtualip.md) | Establece el **valor de la propiedad VirtualizeLoopbackAddressesEnabled.**<br/> **Windows Server 2008 R2:** Este método no está disponible antes de Windows Server 2012.<br/> |
 
 
 
@@ -119,7 +119,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 
 Descripción breve (cadena de una línea) del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -134,25 +134,25 @@ Tipo de acceso: solo lectura
 
 Descripción del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 ")
+Calificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5")
 </dt> </dl>
 
 Fecha en que se instaló el objeto. La falta de un valor no indica que el objeto no está instalado.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -167,7 +167,7 @@ Tipo de acceso: solo lectura
 
 El nombre del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -180,14 +180,14 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La descripción del adaptador de red.
+Descripción del adaptador de red.
 
 </dd> <dt>
 
 **NetworkAdapterDescriptionList**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -213,30 +213,30 @@ Dirección MAC del adaptador de red.
 **NetworkAdapterMacList**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La lista de direcciones MAC de los adaptadores de red físicos disponibles.
+Lista de direcciones MAC de los adaptadores de red físicos disponibles.
 
 </dd> <dt>
 
 **PolicySourceNetworkAdapter**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si el adaptador de red está configurado por el servidor o por la Directiva de grupo.
+Indica si el adaptador de red está configurado por el servidor o por la directiva de grupo.
 
 <dt>
 
-0 (0X0)
+0 (0x0)
 </dt> <dd>
 
 Servidor
@@ -255,17 +255,17 @@ Directiva de grupo
 **PolicySourceProgramList**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la propiedad **ProgramList** está configurada por el servidor o por la Directiva de grupo.
+Indica si la propiedad **ProgramList** está configurada por el servidor o por la directiva de grupo.
 
 <dt>
 
-0 (0X0)
+0 (0x0)
 </dt> <dd>
 
 Servidor
@@ -284,17 +284,17 @@ Directiva de grupo
 **PolicySourceVirtualIPActive**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la propiedad **VirtualIPActive** está configurada por el servidor o por la Directiva de grupo.
+Indica si el servidor o la directiva de grupo configuran la propiedad **VirtualIPActive.**
 
 <dt>
 
-0 (0X0)
+0 (0x0)
 </dt> <dd>
 
 Servidor
@@ -313,17 +313,17 @@ Directiva de grupo
 **PolicySourceVirtualIPMode**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la propiedad **VirtualIPMode** está configurada por el servidor o por la Directiva de grupo.
+Indica si el servidor o la directiva de grupo configuran la propiedad **VirtualIPMode.**
 
 <dt>
 
-0 (0X0)
+0 (0x0)
 </dt> <dd>
 
 Servidor
@@ -342,13 +342,13 @@ Directiva de grupo
 **ProgramList**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica los programas que están configurados para usar la virtualización de IP. Puede ser un nombre de programa o la ruta de acceso completa.
+Especifica los programas que están configurados para usar la virtualización ip. Puede ser un nombre de programa o la ruta de acceso completa.
 
 </dd> <dt>
 
@@ -364,15 +364,15 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios Estados operativos y no operativos. Los Estados operativos incluyen: "correcto", "degradado" y "Pred FAIL" (un elemento, como una unidad de disco duro habilitada para SMART, puede estar funcionando correctamente pero prediciendo un error en un futuro próximo). Los Estados no operativos incluyen: "error", "iniciando", "deteniendo" y "servicio". El último, "servicio", se puede aplicar durante la resilverización del reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo el trabajo está en línea, pero el elemento administrado no es "OK" ni está en uno de los otros Estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Los estados no operativo incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 <dt>
 
 
 
- ("Correcto")
+ ("Ok")
 
 
 </dt> <dd></dd> <dt>
@@ -400,21 +400,21 @@ Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsys
 
 
 
- ("Pred FAIL")
+ ("Error previo")
 
 
 </dt> <dd></dd> <dt>
 
 
 
- ("Iniciando")
+ ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 
 
- ("Deteniéndose")
+ ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -431,7 +431,7 @@ Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsys
 **VirtualIPActive**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -440,13 +440,13 @@ Tipo de acceso: solo lectura
 Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Especifica si la virtualización de IP está activa en el servidor. Puede ser uno de los valores siguientes.
+Especifica si la virtualización IP está activa en el servidor. Puede ser uno de los siguientes valores.
 
 <dt>
 
 <span id="FALSE"></span><span id="false"></span>
 
-<span id="FALSE"></span><span id="false"></span>**False** (0)
+<span id="FALSE"></span><span id="false"></span>**FALSE** (0)
 
 
 </dt> <dd>
@@ -457,7 +457,7 @@ La virtualización de IP no está activa.
 
 <span id="TRUE"></span><span id="true"></span>
 
-<span id="TRUE"></span><span id="true"></span>**True** (1)
+<span id="TRUE"></span><span id="true"></span>**TRUE** (1)
 
 
 </dt> <dd>
@@ -471,13 +471,13 @@ La virtualización de IP está activa.
 **VirtualIPMode**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica el modo de virtualización de IP que se utiliza en el servidor. Puede ser uno de los valores siguientes.
+Especifica qué modo de virtualización IP se usa en el servidor. Puede ser uno de los siguientes valores.
 
 <dt>
 
@@ -488,7 +488,7 @@ Especifica el modo de virtualización de IP que se utiliza en el servidor. Puede
 
 </dt> <dd>
 
-El modo de virtualización de IP es por sesión.
+El modo de virtualización ip es por sesión.
 
 </dd> <dt>
 
@@ -499,7 +499,7 @@ El modo de virtualización de IP es por sesión.
 
 </dt> <dd>
 
-El modo de virtualización de IP es por usuario.
+El modo de virtualización ip es por usuario.
 
 </dd> </dl>
 
@@ -508,13 +508,13 @@ El modo de virtualización de IP es por usuario.
 **VirtualizeLoopbackAddressesEnabled**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica si está habilitada la virtualización de la dirección de bucle invertido.
+Especifica si la virtualización de direcciones de bucleback está habilitada.
 
 **Windows Server 2008 R2:** Esta propiedad no está disponible antes de Windows Server 2012.
 
@@ -522,7 +522,7 @@ Especifica si está habilitada la virtualización de la dirección de bucle inve
 
 <span id="FALSE"></span><span id="false"></span>
 
-<span id="FALSE"></span><span id="false"></span>**False** (0)
+<span id="FALSE"></span><span id="false"></span>**FALSE** (0)
 
 
 </dt> <dd>
@@ -533,7 +533,7 @@ no habilitado.
 
 <span id="TRUE"></span><span id="true"></span>
 
-<span id="TRUE"></span><span id="true"></span>**True** (1)
+<span id="TRUE"></span><span id="true"></span>**TRUE** (1)
 
 
 </dt> <dd>
@@ -544,9 +544,9 @@ habilitado
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -556,8 +556,8 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                       |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 

@@ -1,36 +1,36 @@
 ---
-title: Cómo crear un TrackBar
-description: Cuando se crea la barra de inicio, se inicializan su intervalo y su intervalo de selección. También se establece el tamaño de página en este momento.
+title: Cómo crear una barra de seguimiento
+description: Cuando se crea la barra de seguimiento, se inicializan tanto su intervalo como su intervalo de selección. El tamaño de página también se establece en este momento.
 ms.assetid: FA110B4A-D3D7-49D8-A3DC-368099F6DA1E
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c9468ff044b94837f54d04cda4a9105f15410692
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 71713e09167812786a5d5f57986242ef5fcf016931cdff40d5190cd6e0daafea
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119826555"
 ---
-# <a name="how-to-create-a-trackbar"></a>Cómo crear un TrackBar
+# <a name="how-to-create-a-trackbar"></a>Cómo crear una barra de seguimiento
 
-Cuando se crea la barra de inicio, se inicializan su intervalo y su intervalo de selección. También se establece el tamaño de página en este momento.
+Cuando se crea la barra de seguimiento, se inicializan tanto su intervalo como su intervalo de selección. El tamaño de página también se establece en este momento.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="create-a-trackbar"></a>Crear un TrackBar
+### <a name="create-a-trackbar"></a>Creación de una barra de seguimiento
 
-En el ejemplo siguiente se muestra cómo crear una barra de aumento con los estilos [**TBS \_ autoticks**](trackbar-control-styles.md) y [**TBS \_ ENABLESELRANGE**](trackbar-control-styles.md) .
+En el ejemplo siguiente se muestra cómo crear una barra de seguimiento con los estilos [**\_ TBS AUTOTICKS**](trackbar-control-styles.md) y [**TBS \_ ENABLESELRANGE.**](trackbar-control-styles.md)
 
 
 ```
@@ -92,12 +92,12 @@ HWND WINAPI CreateTrackbar(
 
 <dl> <dt>
 
-[Usar controles TrackBar](using-trackbar-controls.md)
+[Usar controles Trackbar](using-trackbar-controls.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

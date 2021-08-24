@@ -1,19 +1,19 @@
 ---
-title: Interfaces (animación de Windows)
-description: Documentación de referencia para las interfaces definidas por el administrador de animaciones de Windows.
+title: Interfaces (Windows animación)
+description: Documentación de referencia de las interfaces definidas por Windows Animation Manager.
 ms.assetid: b54e319c-e140-4fd9-8045-5eb6f4a31326
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eb6755dd964c67d8af4e812b2f82fd5935a098d8
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: ebd211186fa38d302d7d6c9feb4ec4edf38d73b9d5aabfcbbd6613fcf6e44d89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104421747"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119768805"
 ---
-# <a name="interfaces-windows-animation"></a>Interfaces (animación de Windows)
+# <a name="interfaces-windows-animation"></a>Interfaces (Windows animación)
 
-Documentación de referencia para las interfaces definidas por el administrador de animaciones de Windows.
+Documentación de referencia de las interfaces definidas por Windows Animation Manager.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -21,10 +21,10 @@ Documentación de referencia para las interfaces definidas por el administrador 
 
 | Tema                                                                             | Descripción                                                                                                                                   |
 |-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| [Interfaces de administración de animaciones](animation-management-interfaces.md)<br/> | Esta sección contiene las especificaciones de referencia de las interfaces del administrador de animaciones de Windows que admiten la administración de animaciones.<br/> |
-| [Interfaces de guion gráfico](storyboard-interfaces.md)<br/>                     | Esta sección contiene las especificaciones de referencia de las interfaces del administrador de animaciones de Windows que admiten guiones gráficos.<br/>          |
-| [Interfaces de transición](transition-interfaces.md)<br/>                     | Esta sección contiene las especificaciones de referencia de las interfaces del administrador de animaciones de Windows que admiten transiciones.<br/>          |
-| [Interfaces del temporizador de animación](animation-timer-interfaces.md)<br/>           | Esta sección contiene las especificaciones de referencia de las interfaces del administrador de animaciones de Windows que admiten temporizadores de animación.<br/>     |
+| [Interfaces de administración de animaciones](animation-management-interfaces.md)<br/> | Esta sección contiene las especificaciones de referencia para las interfaces Windows Animation Manager que admiten la administración de animaciones.<br/> |
+| [Interfaces de guión gráfico](storyboard-interfaces.md)<br/>                     | Esta sección contiene las especificaciones de referencia para las interfaces Windows Animation Manager que admiten guiones gráficos.<br/>          |
+| [Interfaces de transición](transition-interfaces.md)<br/>                     | Esta sección contiene las especificaciones de referencia para las interfaces Windows Animation Manager que admiten transiciones.<br/>          |
+| [Interfaces de temporizador de animación](animation-timer-interfaces.md)<br/>           | Esta sección contiene las especificaciones de referencia para las interfaces Windows Animation Manager que admiten temporizadores de animación.<br/>     |
 
 
 
@@ -34,7 +34,7 @@ Documentación de referencia para las interfaces definidas por el administrador 
 
 <dl> <dt>
 
-[Referencia de animación de Windows](windows-animation-reference.md)
+[Windows Referencia de animación](windows-animation-reference.md)
 </dt> </dl>
 
  

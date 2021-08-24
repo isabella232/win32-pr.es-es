@@ -4,16 +4,16 @@ description: IAgentCharacter SetSoundEffectsOn
 ms.assetid: 141dd9a8-5fd8-42c6-880a-856c61cb8940
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a454a6ebeecc763cb7e5a964bb1f2897df6c291
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 71abb6adebf09182d4329202e77355e7dc365899291995e97eca66305a00ab94
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105714209"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119725025"
 ---
 # <a name="iagentcharactersetsoundeffectson"></a>IAgentCharacter::SetSoundEffectsOn
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 ``` syntax
 HRESULT SetSoundEffectsOn(
@@ -23,27 +23,27 @@ HRESULT SetSoundEffectsOn(
 
 Determina si se reproducen los efectos de sonido del carácter.
 
--   Devuelve S \_ OK para indicar que la operación se realizó correctamente.
+-   Devuelve S \_ OK para indicar que la operación se ha realizado correctamente.
 
 <dl> <dt>
 
-<span id="bOn"></span><span id="bon"></span><span id="BON"></span>*Despedida*
+<span id="bOn"></span><span id="bon"></span><span id="BON"></span>*Bon*
 </dt> <dd>
 
-Configuración de efectos de sonido. Si este parámetro es **true**, los efectos sonoros de las animaciones se reproducirán cuando se reproduzca la animación. Si **es false**, no se reproducen los efectos sonoros.
+Configuración de efectos de sonido. Si este parámetro es **True**, los efectos de sonido de las animaciones se reproducen cuando se reproduce la animación; si **es False**, no se reproducen los efectos de sonido.
 
 </dd> </dl>
 
-Esta configuración determina si se reproducen efectos sonoros compilados como parte del carácter al reproducir una animación asociada. La configuración de esta propiedad se aplica a todos los clientes del carácter. La configuración también está sujeta a la configuración de efectos de sonido globales del usuario en [**IAgentAudioOutputProperties:: GetUsingSoundEffects**](iagentaudiooutputproperties--getusingsoundeffects.md).
+Esta configuración determina si los efectos de sonido compilados como parte del carácter se reproducen cuando se reproduce una animación asociada. La configuración de esta propiedad se aplica a todos los clientes del carácter. La configuración también está sujeta a la configuración de efectos de sonido global del usuario [**en IAgentAudioOutputProperties::GetUsingSoundEffects**](iagentaudiooutputproperties--getusingsoundeffects.md).
 
 ## <a name="see-also"></a>Consulte también
 
-[**IAgentCharacter:: GetSoundEffectsOn**](iagentcharacter--getsoundeffectson.md), [ **IAgentAudioOutputProperties:: GetUsingSoundEffects**](iagentaudiooutputproperties--getusingsoundeffects.md)
+[**IAgentCharacter::GetSoundEffectsOn**](iagentcharacter--getsoundeffectson.md), [ **IAgentAudioOutputProperties::GetUsingSoundEffects**](iagentaudiooutputproperties--getusingsoundeffects.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

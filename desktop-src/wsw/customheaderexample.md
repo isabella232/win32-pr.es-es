@@ -3,27 +3,27 @@ title: CustomHeaderExample
 description: En este ejemplo se muestra cómo agregar y recuperar un encabezado personalizado.
 ms.assetid: 9c0cabee-4645-4b2d-a132-4494911f05b3
 keywords:
-- Servicios Web de CustomHeaderExample para Windows
+- CustomHeaderExample Web Services for Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b29c86dc8f88c8058ea9edf4e4d49adec9fad5cd
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0d512f594104a25061452c59c622cc341509eac2a5e677f1b6754f5cebb4c0b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105720087"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119805695"
 ---
 # <a name="customheaderexample"></a>CustomHeaderExample
 
 En este ejemplo se muestra cómo agregar y recuperar un encabezado personalizado.
 
--   [CustomHeader. cpp](#customheadercpp)
--   [PurchaseOrder. wsdl](#purchaseorderwsdl)
+-   [CustomHeader.cpp](#customheadercpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Archivo Make](#makefile)
 
-## <a name="customheadercpp"></a>CustomHeader. cpp
+## <a name="customheadercpp"></a>CustomHeader.cpp
 
 
 ```C++
@@ -192,7 +192,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. wsdl
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -331,9 +331,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

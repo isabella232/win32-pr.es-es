@@ -4,12 +4,12 @@ ms.assetid: 9a4640a7-cbd9-4304-88c6-86036423628d
 title: Evento InkPicture.TabletRemoved (Msmutut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 929458c6b972143852b5921a8c8364a54a4b6f41
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2f4fbd0839cb11d2da3fda65259b343934e866fc6fba08fb7d755799093fd496
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113654"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119844325"
 ---
 # <a name="inkpicturetabletremoved-event"></a>Evento InkPicture.TabletRemoved
 
@@ -43,7 +43,7 @@ Este evento no devuelve un valor.
 
 ## <a name="remarks"></a>Comentarios
 
-Este método de evento se define en las interfaces de solo envío (dispinterfaces) **\_ de IInkCollectorEvents,** **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** con un identificador de DISPID \_ ICETabletRemoved.
+Este método de evento se define en las interfaces de solo envío (dispinterfaces) de **\_ IInkCollectorEvents,** **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** con un identificador de \_ DISPID ICETabletRemoved.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,14 +51,14 @@ Este método de evento se define en las interfaces de solo envío (dispinterface
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC \[ Edition\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Encabezado<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

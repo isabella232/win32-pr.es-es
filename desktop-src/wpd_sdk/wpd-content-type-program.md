@@ -4,12 +4,12 @@ ms.assetid: 81eaf8cf-0f4f-4587-911a-063630af1c8e
 title: WPD_CONTENT_TYPE_PROGRAM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ddf3c5d406c16891c692e84fb37c4d21757f702
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: 7079b32dcac5b3277f7ed98ba16b9ce53bf965348bf3225c3c30b18c38a9954e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110423775"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119806106"
 ---
 # <a name="wpd_content_type_program"></a>PROGRAMA DE TIPO \_ DE \_ CONTENIDO \_ WPD
 
@@ -21,14 +21,14 @@ Este tipo de objeto admite las siguientes propiedades.
 
 | Nombre de la propiedad     | Obligatorio u opcional      |
 |-----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [IDENTIFICADOR DE OBJETO \_ \_ WPD](object-properties.md)                                                                | Obligatorio, pero de solo lectura. Un cliente no puede establecer esta propiedad, incluso en el momento de la creación. |
-| [IDENTIFICADOR PRIMARIO DEL \_ OBJETO \_ \_ WPD](object-properties.md)                                                 | Necesario.                                                                          |
+| [IDENTIFICADOR DE OBJETO \_ DE \_ WPD](object-properties.md)                                                                | Obligatorio, pero de solo lectura. Un cliente no puede establecer esta propiedad, incluso en el momento de la creación. |
+| [IDENTIFICADOR PRIMARIO DEL \_ OBJETO \_ \_ WPD](object-properties.md)                                                 | Obligatorio.                                                                          |
 | [NOMBRE DE OBJETO \_ \_ WPD](object-properties.md)                                                            | Obligatorio si el objeto representa un archivo.                                          |
-| [IDENTIFICADOR ÚNICO \_ PERSISTENTE \_ DEL OBJETO \_ \_ WPD](object-properties.md)                          | Obligatorio, de solo lectura. Un cliente no puede establecer esta propiedad ni siquiera en el momento de la creación.      |
-| [FORMATO DE OBJETO \_ \_ WPD](object-properties.md)                                                        | Necesario.                                                                          |
-| [TIPO DE CONTENIDO \_ DE \_ OBJETO \_ WPD](object-properties.md)                                           | Necesario.                                                                          |
+| [WPD \_ OBJECT \_ PERSISTENT \_ UNIQUE \_ ID](object-properties.md)                          | Obligatorio, de solo lectura. Un cliente no puede establecer esta propiedad ni siquiera en el momento de la creación.      |
+| [FORMATO DE OBJETO \_ \_ WPD](object-properties.md)                                                        | Obligatorio.                                                                          |
+| [TIPO DE CONTENIDO \_ DE \_ OBJETO \_ WPD](object-properties.md)                                           | Obligatorio.                                                                          |
 | [\_ISHIDDEN DEL \_ OBJETO WPD](object-properties.md)                                                    | Obligatorio si el objeto está oculto.                                                  |
-| [ISSYSTEM DEL \_ OBJETO \_ WPD](object-properties.md)                                                    | Obligatorio si el objeto es un objeto del sistema (representa un archivo del sistema).              |
+| [WPD \_ OBJECT \_ ISSYSTEM](object-properties.md)                                                    | Obligatorio si el objeto es un objeto del sistema (representa un archivo del sistema).              |
 | [TAMAÑO DEL OBJETO \_ WPD \_](object-properties.md)                                                            | Obligatorio si el objeto tiene al menos un recurso.                                  |
 | [NOMBRE DE ARCHIVO \_ \_ ORIGINAL DEL OBJETO \_ \_ WPD](object-properties.md)                              | Obligatorio si el objeto representa un archivo.                                          |
 | [OBJETO WPD \_ \_ NO \_ CONSUMIBLE](object-properties.md)                                       | Se recomienda si el objeto no está pensado para el consumo por parte del dispositivo.              |
@@ -43,7 +43,7 @@ Este tipo de objeto admite las siguientes propiedades.
 | [IDENTIFICADOR DE OBJETO \_ FUNCIONAL DEL CONTENEDOR DE OBJETOS \_ \_ \_ \_ WPD](object-properties.md)     | Opcional.                                                                          |
 | [WPD \_ OBJECT \_ GENERATE \_ THUMBNAIL \_ FROM \_ RESOURCE](object-properties.md) | Opcional.                                                                          |
 | [EL OBJETO \_ WPD \_ PUEDE \_ ELIMINAR](object-properties.md)                                                                     | Obligatorio si no se puede eliminar el objeto.                                          |
-| [CONFIGURACIÓN REGIONAL DEL \_ \_ LENGUAJE DE OBJETOS \_ WPD](object-properties.md)                                                                | Opcional.                                                                          |
+| [CONFIGURACIÓN REGIONAL \_ DEL LENGUAJE DE OBJETOS \_ \_ WPD](object-properties.md)                                                                | Opcional.                                                                          |
 
 
 
@@ -57,7 +57,7 @@ Estos objetos suelen incluir los siguientes recursos.
 
 | Nombre de recurso                                          | Obligatorio u opcional | Descripción                |
 |--------------------------------------------------------|----------------------|----------------------------|
-| [**WPD \_ RESOURCE \_ DEFAULT**](wpd-resource-default.md) | Necesario.            | Contiene el archivo de programa. |
+| [**WPD \_ RESOURCE \_ DEFAULT**](wpd-resource-default.md) | Obligatorio.            | Contiene el archivo de programa. |
 
 
 

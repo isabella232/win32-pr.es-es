@@ -1,19 +1,19 @@
 ---
-description: Al interrumpir las líneas o separar el texto de otro modo, la aplicación Unicode debe mantener los caracteres que no son de espacio con sus caracteres de base.
+description: Al dividir líneas o separar texto de otro modo, la aplicación Unicode debe mantener caracteres no superados con sus caracteres base.
 ms.assetid: 61be3fd8-e753-49e8-8b73-4ce08f6000be
-title: Usar caracteres que no son de espacio y signos diacríticos
+title: Usar caracteres sin espacio y caracteres diacríticos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f125a58940eba0ecde8864cca6f7c4d24e0381ee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 02a6becfdf96b3971c1e0e0d78aa6b2a2d05c64a44704ac67382968851bce8b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688694"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119787895"
 ---
-# <a name="using-nonspacing-characters-and-diacritics"></a>Usar caracteres que no son de espacio y signos diacríticos
+# <a name="using-nonspacing-characters-and-diacritics"></a>Usar caracteres sin espacio y caracteres diacríticos
 
-Al interrumpir las líneas o separar el texto de otro modo, la aplicación Unicode debe mantener los caracteres que no son de espacio con sus caracteres de base. Muchos scripts contienen caracteres que se combinan visualmente con otros caracteres en la salida, por ejemplo, marcas diacríticas ("acentos flotantes").
+Al dividir líneas o separar texto de otro modo, la aplicación Unicode debe mantener caracteres no superados con sus caracteres base. Muchos scripts contienen caracteres que se combinan visualmente con otros caracteres en la salida, por ejemplo, marcas diacríticas ("acentos flotantes").
 
 ## <a name="related-topics"></a>Temas relacionados
 

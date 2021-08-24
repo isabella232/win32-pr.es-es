@@ -1,29 +1,29 @@
 ---
-title: AsmxTerraServiceSampleWithCustomProxy
-description: En este ejemplo se muestra el proxy de servicio que se comunica con un servicio ASMX TerraService mediante la \_ \_ propiedad de \_ \_ canal personalizado del modo de configuración del proxy WS http \_ .
+title: AsmxServiceSampleWithCustomProxy
+description: En este ejemplo se muestra el proxy de servicio que se está hablando con un servicio ASMX TerraService mediante la propiedad de canal CUSTOM DEL MODO DE CONFIGURACIÓN \_ DE PROXY HTTP de \_ \_ \_ \_ WS.
 ms.assetid: 200dfcbc-ad16-4ac8-ab16-76291344a980
 keywords:
-- AsmxTerraServiceSampleWithCustomProxy Native-Web-Services
+- AsmxServiceSampleWithCustomProxy Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e38eefe8c5a3eb78063e3204d45f76b4cfa7477
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f940dcec3261aedfb79e03fd87f3b945e2449dcad99bcd068f58f0d214239544
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357232"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119805845"
 ---
-# <a name="asmxterraservicesamplewithcustomproxy"></a>AsmxTerraServiceSampleWithCustomProxy
+# <a name="asmxterraservicesamplewithcustomproxy"></a>AsmxServiceSampleWithCustomProxy
 
-En este ejemplo se muestra el proxy de servicio que se comunica con un servicio ASMX TerraService mediante la propiedad de canal [**personalizado del modo de \_ configuración del \_ proxy \_ \_ \_ WS http**](/windows/desktop/api/WebServices/ne-webservices-ws_http_proxy_setting_mode) .
+En este ejemplo se muestra el proxy de servicio que se está hablando con un servicio TerraService ASMX mediante la propiedad de canal CUSTOM DEL MODO DE CONFIGURACIÓN [**\_ \_ \_ \_ \_ DE PROXY HTTP de WS.**](/windows/desktop/api/WebServices/ne-webservices-ws_http_proxy_setting_mode)
 
--   [AsmxCustomProxyClient. cpp](#asmxcustomproxyclientcpp)
--   [terraserviceusa. com. wsdl](#terraserviceusacomwsdl)
+-   [AsmxCustomProxyClient.cpp](#asmxcustomproxyclientcpp)
+-   [terraserviceusa.com.wsdl](#terraserviceusacomwsdl)
 -   [Temas relacionados](#related-topics)
 
-## <a name="asmxcustomproxyclientcpp"></a>AsmxCustomProxyClient. cpp
+## <a name="asmxcustomproxyclientcpp"></a>AsmxCustomProxyClient.cpp
 
 
 ```C++
@@ -310,7 +310,7 @@ Exit:
 
 
 
-## <a name="terraserviceusacomwsdl"></a>terraserviceusa. com. wsdl
+## <a name="terraserviceusacomwsdl"></a>terraserviceusa.com.wsdl
 
 ``` syntax
 <?xml version="1.0" encoding="utf-8"?>
@@ -1073,12 +1073,12 @@ Exit:
 
 <dl> <dt>
 
-[**\_modo de \_ configuración de proxy WS http \_ \_ \_ personalizado**](/windows/desktop/api/WebServices/ne-webservices-ws_http_proxy_setting_mode)
+[**MODO DE CONFIGURACIÓN DE PROXY HTTP WS \_ \_ \_ \_ \_ PERSONALIZADO**](/windows/desktop/api/WebServices/ne-webservices-ws_http_proxy_setting_mode)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

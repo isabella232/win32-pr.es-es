@@ -4,41 +4,41 @@ ms.assetid: 32e46c52-5c3c-4e22-8f4e-05286ee213ba
 title: Servicios de transliteración
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cc00b96d56e6b05e70b352c81da0280e9ef35043
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d442ed0a9c45d5fb40ffa3f84438f6b2a46ad0a5a6587e3a9fd16dd2f2fd9cff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104156581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119788275"
 ---
 # <a name="transliteration-services"></a>Servicios de transliteración
 
-Los servicios de transliteración de ELS asignan texto UTF-16 de un sistema de escritura a otro sistema de escritura. En realidad, cada servicio se aplica a un conjunto específico de scripts Unicode de entrada y salida, y la transliteración real es interna de la plataforma ELS. Opcionalmente, la aplicación puede enumerar los servicios disponibles para los scripts de entrada y salida específicos y seleccionar el servicio que requiera.
+Los servicios de transliteración de ELS asignan texto UTF-16 de un sistema de escritura a otro sistema de escritura. Cada servicio es realmente datos que se aplican a un conjunto específico de scripts Unicode de entrada y salida, y la transliteración real es interna para la plataforma ELS. Opcionalmente, la aplicación puede enumerar los servicios disponibles para scripts de entrada y salida específicos y seleccionar el servicio que requiere.
 
-La plataforma mantiene los metadatos de los servicios de transliteración de ELS. Los metadatos de cada servicio proporcionan una descripción del servicio y enumeran los scripts de entrada y salida que admite el servicio. Los metadatos se representan mediante una estructura de [**\_ \_ información del servicio de asignación**](/windows/desktop/api/Elscore/ns-elscore-mapping_service_info) recuperada por la función [**MappingGetServices**](/windows/desktop/api/Elscore/nf-elscore-mappinggetservices) .
+La plataforma mantiene los metadatos de los servicios de transliteración de ELS. Los metadatos de cada servicio proporcionan una descripción del servicio y enumeran los scripts de entrada y salida que admite el servicio. Los metadatos se representan mediante una [**estructura MAPPING \_ SERVICE \_ INFO**](/windows/desktop/api/Elscore/ns-elscore-mapping_service_info) recuperada por la [**función MappingGetServices.**](/windows/desktop/api/Elscore/nf-elscore-mappinggetservices)
 
-## <a name="input-to-a-transliteration-service"></a>Entrada a un servicio transliteral
+## <a name="input-to-a-transliteration-service"></a>Entrada a un servicio de transliteración
 
-La entrada a un servicio transliteral es texto UTF-16 en un sistema de escritura.
+La entrada a un servicio de transliteración es texto UTF-16 en un sistema de escritura.
 
-## <a name="output-of-a-transliteration-service"></a>Salida de un servicio transliteral
+## <a name="output-of-a-transliteration-service"></a>Salida de un servicio de transliteración
 
-La salida de un servicio transliteral es UTF-16 texto asignada a un segundo sistema de escritura. Si no hay ninguna asignación de transliteración adecuada disponible para un fragmento determinado del texto de entrada, el fragmento permanece inalterado.
+La salida de un servicio de transliteración es texto UTF-16 asignado a un segundo sistema de escritura. Si no hay disponible ninguna asignación de transliteración adecuada para un fragmento determinado del texto de entrada, el fragmento permanece sin cambios.
 
-## <a name="transliteration-service-operation"></a>Operación de servicio transliteral
+## <a name="transliteration-service-operation"></a>Operación del servicio de transliteración
 
-Un servicio transliteral asigna texto Unicode de un script de entrada a un script de salida, carácter por carácter o término por término, según corresponda. La aplicación puede optar por obtener el servicio de transliteración específico de interés especificando los scripts de entrada y salida al llamar a [**MappingGetServices**](/windows/desktop/api/Elscore/nf-elscore-mappinggetservices)o proporcionando el GUID de servicio. Otra opción para la aplicación es enumerar todos los servicios de transliteración disponibles mediante la especificación de la categoría de servicio "transliteración" al llamar a **MappingGetServices**. En este caso, la aplicación llama a cada servicio y compara los resultados con el texto original para ver si los resultados han sido modificados por la operación de un servicio determinado.
+Un servicio de transliteración asigna texto Unicode de un script de entrada a un script de salida, carácter por carácter o término por término, según corresponda. La aplicación puede optar por obtener el servicio de transliteración específico de interés especificando scripts de entrada y salida al llamar a [**MappingGetServices**](/windows/desktop/api/Elscore/nf-elscore-mappinggetservices)o proporcionando el GUID del servicio. Otra opción para la aplicación es enumerar todos los servicios de transliteración disponibles especificando la categoría de servicio "Transliteration" al llamar a **MappingGetServices**. En este caso, la aplicación llama a cada servicio y compara los resultados con el texto original para ver si el funcionamiento de un servicio determinado ha cambiado los resultados.
 
-La aplicación puede solicitar el reconocimiento de texto para un servicio de transliteración de ELS con una llamada a [**MappingRecognizeText**](/windows/desktop/api/Elscore/nf-elscore-mappingrecognizetext). Cuando recibe la solicitud, el servicio transliteral asigna un búfer para que contenga los datos transliterales y, a continuación, realiza el reconocimiento de texto para cada punto de código de la cadena de entrada proporcionada por la aplicación.
+La aplicación puede solicitar el reconocimiento de texto para un servicio de transliteración de ELS con una llamada a [**MappingRecognizeText**](/windows/desktop/api/Elscore/nf-elscore-mappingrecognizetext). Cuando recibe la solicitud, el servicio de transliteración asigna un búfer para contener los datos transliterados y, a continuación, realiza el reconocimiento de texto para cada punto de código de la cadena de entrada proporcionada por la aplicación.
 
 > [!Note]  
 > El texto original y el texto transliterado pueden tener longitudes diferentes.
 
  
 
-## <a name="transliteration-service-guids"></a>GUID de servicio de transliteración
+## <a name="transliteration-service-guids"></a>GUID del servicio de transliteración
 
-Los GUID de los servicios de transliteración se declaran en Elssrvc. h, tal como se muestra en el código siguiente.
+Los GUID de los servicios de transliteración se declaran en Elssrvc.h, como se muestra en el código siguiente.
 
 
 ```C++
@@ -73,7 +73,7 @@ static const GUID ELS_GUID_TRANSLITERATION_BENGALI_TO_LATIN =
 
 <dl> <dt>
 
-[Acerca de los servicios lingüísticos extendidos](about-extended-linguistic-services.md)
+[Acerca de Los servicios lingüísticos extendidos](about-extended-linguistic-services.md)
 </dt> </dl>
 
  

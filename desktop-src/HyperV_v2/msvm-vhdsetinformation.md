@@ -1,7 +1,7 @@
 ---
 description: Proporciona información sobre un archivo de conjunto de VHD.
 ms.assetid: a975c131-d3f3-4be3-bc69-e277e3ce4d28
-title: Msvm_VHDSetInformation (clase)
+title: Msvm_VHDSetInformation clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 51f1371baea902627160c2c7a1fb31d156be8951
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d8cef737c02629ac0a1a026a459adf6eb7060e0dbdf8c0f9ecb20c66fce1259e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687112"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119789435"
 ---
-# <a name="msvm_vhdsetinformation-class"></a>MSVM \_ VHDSetInformation (clase)
+# <a name="msvm_vhdsetinformation-class"></a>Clase \_ VHDSetInformation de Msvm
 
 Proporciona información sobre un archivo de conjunto de VHD.
 
@@ -43,26 +43,26 @@ class Msvm_VHDSetInformation
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ VHDSetInformation** tiene estos tipos de miembros:
+La **clase \_ VHDSetInformation de Msvm** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ VHDSetInformation** tiene estas propiedades.
+La **clase \_ VHDSetInformation de Msvm** tiene estas propiedades.
 
 <dl> <dt>
 
 **AllPaths**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Una lista de todos los archivos englobados por el archivo de VHD Set, incluidos los archivos sin referencia y los elementos primarios del disco duro virtual raíz. Todos los archivos enumerados después del disco duro virtual raíz no están administrados por este archivo de VHD set. Este campo puede estar vacío si no se ha solicitado específicamente esta información.
+Lista de todos los archivos incluidos en el archivo de conjunto de VHD, incluidos los archivos sin referencia y los elementos raíz del disco duro virtual raíz. Todos los archivos enumerados después del disco duro virtual raíz no están administrados por este archivo de conjunto de discos duros virtuales. Este campo puede estar vacío si esta información no se solicitó específicamente.
 
 </dd> <dt>
 
@@ -75,20 +75,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Ruta de acceso del archivo de VHD set.
+Ruta de acceso del archivo de conjunto de VHD.
 
 </dd> <dt>
 
 **SnapshotIdList**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Una lista de GUID que representa todas las instantáneas que contiene este archivo de VHD set.
+Lista de GUID que representan todas las instantáneas contenidas en este archivo de conjunto de discos duros virtuales.
 
 </dd> </dl>
 
@@ -98,10 +98,10 @@ Una lista de GUID que representa todas las instantáneas que contiene este archi
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

@@ -6,12 +6,12 @@ keywords:
 - fase de fusión de salida (Direct3D 10)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c8de2851fdea3a22cc42033d2c13454be72ba8ab
-ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
+ms.openlocfilehash: c56566e6c193af2ea41c2553d4dffe9a6a9b673f53e21dba9b75b3dfb3f0cd2b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110335219"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119752425"
 ---
 # <a name="output-merger-stage"></a>Output-Merger fase
 
@@ -54,13 +54,13 @@ La combinación combina uno o varios valores de píxel para crear un color de p�
 
 Conceptualmente, puede visualizar este gráfico de flujo implementado dos veces en la fase de fusión de salida: el primero combina datos RGB, mientras que en paralelo, otro mezcla datos alfa. Para ver cómo usar la API para crear y establecer el estado de blend, consulte [Configuring Blending Functionality](d3d10-graphics-programming-guide-blend-state.md).
 
-La combinación de función fija se puede habilitar de forma independiente para cada destino de representación. Sin embargo, solo hay un conjunto de controles blend, por lo que la misma combinación se aplica a todos los RenderTargets con la combinación habilitada. Los valores de Blend (incluido BlendFactor) siempre se fijan al intervalo del formato de destino de representación antes de la combinación. La fijación se realiza por destino de representación, respetando el tipo de destino de representación. La única excepción es para los formatos float16, float11 o float10 que no están fijas para que las operaciones de combinación en estos formatos se puedan realizar con al menos la misma precisión o intervalo que el formato de salida. Los naN y los ceros con firma se propagan para todos los casos (incluidos 0,0 pesos de mezcla).
+La combinación de función fija se puede habilitar de forma independiente para cada destino de representación. Sin embargo, solo hay un conjunto de controles blend, por lo que la misma combinación se aplica a todos los RenderTargets con la combinación habilitada. Los valores de Blend (incluido BlendFactor) siempre se fijan al intervalo del formato de destino de representación antes de la combinación. La fijación se realiza por destino de representación, respetando el tipo de destino de representación. La única excepción es para los formatos float16, float11 o float10 que no están fijas para que las operaciones de combinación en estos formatos se puedan realizar con al menos la misma precisión o intervalo que el formato de salida. Los naN y los ceros con firma se propagan para todos los casos (incluidas las ponderaciones de mezcla de 0,0).
 
-Cuando se usan destinos de representación sRGB, el tiempo de ejecución convierte el color del destino de representación en espacio lineal antes de realizar la mezcla. El tiempo de ejecución vuelve a convertir el valor combinado final en espacio sRGB antes de volver a guardar el valor en el destino de representación.
+Cuando se usan destinos de representación sRGB, el tiempo de ejecución convierte el color del destino de representación en espacio lineal antes de realizar la combinación. El tiempo de ejecución vuelve a convertir el valor combinado final en espacio sRGB antes de volver a guardar el valor en el destino de representación.
 
 Diferencias entre Direct3D 9 y Direct3D 10:
 
-- En Direct3D 9, la combinación de funciones fijas se puede habilitar de forma independiente para cada destino de representación.
+- En Direct3D 9, la combinación de función fija se puede habilitar de forma independiente para cada destino de representación.
 - En Direct3D 10 y posteriores, hay una descripción de estado de mezcla; por lo tanto, se puede establecer un valor de combinación para todos los destinos de representación.
 
 
@@ -69,13 +69,13 @@ Diferencias entre Direct3D 9 y Direct3D 10:
 
 ### <a name="dual-source-color-blending"></a>Dual-Source combinación de colores
 
-Esta característica permite que la fase de fusión de salida use simultáneamente ambas salidas del sombreador de píxeles (o0 y o1) como entradas para una operación de mezcla con el destino de representación única en la ranura 0. Las operaciones de blend válidas incluyen: sumar, restar y revsubtract. Las opciones de mezcla válidas para SrcBlend, DestBlend, SrcBlendAlpha o DestBlendAlpha incluyen: **D3D11 \_ BLEND \_ SRC1 \_ COLOR,** **D3D11 \_ BLEND \_ INV \_ SRC1 \_ COLOR,** **D3D11 \_ BLEND \_ SRC1 \_ ALPHA**, **D3D11 \_ BLEND \_ INV \_ SRC1 \_ ALPHA**. La ecuación de mezcla y la máscara de escritura de salida especifican qué componentes genera el sombreador de píxeles. Se omiten los componentes adicionales.
+Esta característica permite que la fase de fusión de salida use simultáneamente ambas salidas de sombreador de píxeles (o0 y o1) como entradas para una operación de combinación con el destino de representación única en la ranura 0. Las operaciones de blend válidas incluyen: sumar, restar y revsubtract. Las opciones de combinación válidas para SrcBlend, DestBlend, SrcBlendAlpha o DestBlendAlpha incluyen: **D3D11 \_ BLEND \_ SRC1 \_ COLOR,** **D3D11 \_ BLEND \_ INV \_ SRC1 \_ COLOR**, **D3D11 \_ BLEND \_ SRC1 \_ ALPHA**, **D3D11 \_ BLEND \_ INV \_ SRC1 \_ ALPHA**. La ecuación de mezcla y la máscara de escritura de salida especifican qué componentes genera el sombreador de píxeles. Se omiten los componentes adicionales.
 
-Escribir en otras salidas del sombreador de píxeles (o2, o3, etc.) no está definida; No puede escribir en un destino de representación si no está enlazado a la ranura 0. Escribir oDepth es válido durante la combinación de colores de origen dual.
+La escritura en otras salidas del sombreador de píxeles (o2, o3, etc.) no está definida; No puede escribir en un destino de representación si no está enlazado a la ranura 0. Escribir oDepth es válido durante la combinación de colores de origen dual.
 
-Para obtener ejemplos, vea [Combinar salidas de sombreador de píxeles.](d3d10-graphics-programming-guide-blend-state.md)
+Para obtener ejemplos, vea Blending pixel shader outputs (Combinar [salidas de sombreador de píxeles).](d3d10-graphics-programming-guide-blend-state.md)
 
-## <a name="multiple-rendertargets-overview"></a>Información general sobre varios elementos RenderTargets
+## <a name="multiple-rendertargets-overview"></a>Información general sobre varios RenderTargets
 
 Un sombreador de píxeles se puede usar para representar al menos 8 destinos de representación independientes, todos los cuales deben ser del mismo tipo (buffer, Texture1D, Texture1DArray, y así sucesivamente). Además, todos los destinos de representación deben tener el mismo tamaño en todas las dimensiones (ancho, alto, profundidad, tamaño de matriz, recuentos de muestras). Cada destino de representación puede tener un formato de datos diferente.
 
@@ -96,7 +96,7 @@ Una máscara de ejemplo es una máscara de cobertura de varios ejemplos de 32 bi
 
 | Tema                                                                                                    | Descripción                                                                                                                                                                                                                                                      |
 |----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Configuración de Depth-Stencil funcionalidad](d3d10-graphics-programming-guide-depth-stencil.md)<br/> | En esta sección se tratan los pasos para configurar el búfer de galería de símbolos de profundidad y el estado de la galería de símbolos de profundidad para la fase de fusión de salida.<br/>                                                                                                                           |
+| [Configuración de Depth-Stencil funcionalidad](d3d10-graphics-programming-guide-depth-stencil.md)<br/> | En esta sección se tratan los pasos para configurar el búfer de la galería de símbolos de profundidad y el estado de la galería de símbolos de profundidad para la fase de fusión de salida.<br/>                                                                                                                           |
 | [Configuración de la funcionalidad de mezcla](d3d10-graphics-programming-guide-blend-state.md)<br/>        | Las operaciones de combinación se realizan en cada salida del sombreador de píxeles (valor RGBA) antes de que el valor de salida se escriba en un destino de representación. Si se habilita el multimuestreo, la combinación se realiza en cada multimuestreo. De lo contrario, la combinación se realiza en cada píxel.<br/> |
 | [Sesgo de profundidad](d3d10-graphics-programming-guide-output-merger-stage-depth-bias.md)<br/>             | Los polígonos que son coplanares en el espacio 3D pueden aparecer como si no fuera coplanar agregando un sesgo z (o sesgo de profundidad) a cada uno de ellos.<br/>                                                                                                              |
 

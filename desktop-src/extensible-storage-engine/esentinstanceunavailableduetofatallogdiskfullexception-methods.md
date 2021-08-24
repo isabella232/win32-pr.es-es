@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: métodos EsentInstanceUnavailableDueToFatalLogDiskFullException'
+description: 'Más información sobre: Métodos de EsentInstanceUnavailableDueToFatalLogDiskFullException'
 title: 'Métodos de EsentInstanceUnavailableDueToFatalLogDiskFullException '
 TOCTitle: EsentInstanceUnavailableDueToFatalLogDiskFullException methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentInstanceUnavailableDueToFatalLogDiskFullException
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101878
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 5e00e8dc3ded98821b7370208edcf057479da398
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 159eb25f77d97e0e47b615b99194c57683834badbe81ef9014d618c5c4db1185
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913786"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119724125"
 ---
 # <a name="esentinstanceunavailableduetofatallogdiskfullexception-methods"></a>Métodos de EsentInstanceUnavailableDueToFatalLogDiskFullException 
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El tipo [EsentInstanceUnavailableDueToFatalLogDiskFullException](./esentinstanceunavailableduetofatallogdiskfullexception-class.md) expone los siguientes miembros.
+El [tipo EsentInstanceUnavailableDueToFatalLogDiskFullException](./esentinstanceunavailableduetofatallogdiskfullexception-class.md) expone los miembros siguientes.
 
 ## <a name="methods"></a>Métodos
 
@@ -39,13 +39,13 @@ El tipo [EsentInstanceUnavailableDueToFatalLogDiskFullException](./esentinstance
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizar</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
-<td>(Se hereda de <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
@@ -55,12 +55,12 @@ El tipo [EsentInstanceUnavailableDueToFatalLogDiskFullException](./esentinstance
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn334369(v=exchg.10).md">GetObjectData</a></td>
-<td>Cuando se reemplaza en una clase derivada, establece <a href="/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> con información sobre la excepción. (Se hereda de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>).</td>
+<td>Cuando se invalida en una clase derivada, establece <a href="/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> con información sobre la excepción. (Se hereda de <a href="dn274314(v=exchg.10).md">EsentErrorException).</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
-<td>(Se hereda de <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">Gettype</a></td>
+<td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
@@ -70,7 +70,7 @@ El tipo [EsentInstanceUnavailableDueToFatalLogDiskFullException](./esentinstance
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.exception.tostring#System_Exception_ToString">ToString</a></td>
-<td>(Se hereda de <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -84,4 +84,4 @@ Superior
 
 [Clase EsentInstanceUnavailableDueToFatalLogDiskFullException](./esentinstanceunavailableduetofatallogdiskfullexception-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

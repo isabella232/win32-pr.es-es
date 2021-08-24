@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 512daf7e770c72fe038622877d1756a5fd3532bf
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: bb16cd5199a9f8638a1d50878bc10cbf264fa2ad1bce37ab61e4c312794710ca
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119790415"
 ---
 # <a name="id3dxtextureshadersetbool-method"></a>Método ID3DXTextureShader::SetBool
 
@@ -50,7 +50,7 @@ Identificador único de la constante. Vea [D3DXHANDLE](d3dxfx.md).
 
 </dd> <dt>
 
-*b* \[ en\]
+*b* \[ in\]
 </dt> <dd>
 
 Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
@@ -76,7 +76,7 @@ Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

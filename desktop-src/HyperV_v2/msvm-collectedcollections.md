@@ -1,5 +1,5 @@
 ---
-description: 'Msvm_CollectedCollections clase : asocia Msvm \_ VirtualSystemCollection a los objetos ComputerSystem de Msvm \_ contenidos.'
+description: 'Msvm_CollectedCollections clase : asocia Msvm VirtualSystemCollection a los objetos ComputerSystem de \_ Msvm \_ contenidos.'
 ms.assetid: bbf7713a-b331-4b40-bcb4-3545c26c6f3a
 title: Msvm_CollectedCollections clase
 ms.topic: reference
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 83719d364fac22923d68206c8cfe7d37adad5edb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c645bc4c6dbf7cf6f7b3fb43cc229af3ef744b264b088356d192e4ad58e68a88
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112133"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119790185"
 ---
 # <a name="msvm_collectedcollections-class"></a>Clase Msvm \_ CollectedCollections
 
-Asocia [**Msvm \_ VirtualSystemCollection a**](msvm-virtualsystemcollection.md) los objetos [**\_ ComputerSystem de Msvm**](msvm-computersystem.md) contenidos.
+Asocia [**Msvm \_ VirtualSystemCollection a**](msvm-virtualsystemcollection.md) los objetos [**de Msvm \_ ComputerSystem contenidos.**](msvm-computersystem.md)
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -63,14 +63,14 @@ Tipo de acceso: solo lectura
 Calificadores: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Collection")
 </dt> </dl>
 
-Una [**agrupación \_ Msvm ManagementCollection**](msvm-managementcollection.md) o un objeto "bag" que representa la colección.
+Objeto [**Msvm \_ ManagementCollection**](msvm-managementcollection.md) que agrupa o 'bag' que representa la colección.
 
 </dd> <dt>
 
-**Member**
+**Miembro**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **\_ Cim CollectionOfMSEs**
+Tipo de datos: **CIM \_ CollectionOfMSEs**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -79,7 +79,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Member")
 </dt> </dl>
 
-Colección [**\_ CIMOfMSE**](cim-collectionofmses.md) que contiene los miembros de la colección.
+Colección [**\_ CIMOfMSEs**](cim-collectionofmses.md) que contiene los miembros de la colección.
 
 </dd> </dl>
 
@@ -89,7 +89,7 @@ Colección [**\_ CIMOfMSE**](cim-collectionofmses.md) que contiene los miembros 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 10 solo \[ aplicaciones de escritorio\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
 | Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
@@ -97,7 +97,7 @@ Colección [**\_ CIMOfMSE**](cim-collectionofmses.md) que contiene los miembros 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

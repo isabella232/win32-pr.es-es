@@ -1,8 +1,8 @@
 ---
-description: El método StartService coloca el servicio en el estado Iniciado.
+description: El método StartService coloca el servicio en el estado iniciado.
 ms.assetid: 0f221db1-29ad-4071-98d3-6d06e4f5e026
 ms.tgt_platform: multiple
-title: Método StartService de la clase Win32_PrinterDriver
+title: Método StartService de la Win32_PrinterDriver clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 44e6fedb9e1d0edd9f355c654c7fe2cd25760ec7
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: fe5afb79f2c5d74f2e9a68093cb98ac0b8597d767a747c8bd66b766ba72dd00f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119752385"
 ---
-# <a name="startservice-method-of-the-win32_printerdriver-class"></a>Método StartService de la \_ clase PrinterDriver de Win32
+# <a name="startservice-method-of-the-win32_printerdriver-class"></a>Método StartService de la clase \_ PrinterDriver de Win32
 
-El método **StartService** coloca el servicio en el estado Iniciado.
+El **método StartService** coloca el servicio en el estado iniciado.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,14 +42,14 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro valor para indicar un error. Para valores distintos de los que aparecen en la lista siguiente, vea [**constantes error de WMI**](/windows/desktop/WmiSdk/wmi-error-constants).
+Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro valor para indicar un error. Para obtener valores diferentes de los enumerados en la lista siguiente, vea [**Constantes de error wmi**](/windows/desktop/WmiSdk/wmi-error-constants).
 
 <dl> <dt>
 
 **0**
 </dt> <dd>
 
-El servicio se ha iniciado correctamente.
+Servicio iniciado correctamente.
 
 </dd> <dt>
 
@@ -64,12 +64,12 @@ Solicitud no admitida.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                      |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                        |
-| MOF<br/>                      | <dl> <dt>Win32 \_ printer. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                        |
+| MOF<br/>                      | <dl> <dt>Win32 \_ Printer.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl>       |
 
 
@@ -78,7 +78,7 @@ Solicitud no admitida.
 
 <dl> <dt>
 
-[Clases de hardware de sistema del equipo](computer-system-hardware-classes.md)
+[Clases de hardware del sistema de equipo](computer-system-hardware-classes.md)
 </dt> <dt>
 
 [**Win32 \_ PrinterDriver**](win32-printerdriver.md)

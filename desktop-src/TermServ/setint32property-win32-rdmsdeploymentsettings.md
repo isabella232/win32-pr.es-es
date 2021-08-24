@@ -1,12 +1,12 @@
 ---
-title: Método SetInt32Property de la clase Win32_RDMSDeploymentSettings
+title: Método SetInt32Property de la Win32_RDMSDeploymentSettings clase
 description: Actualiza una propiedad de entero para la configuración de implementación de una colección de escritorios virtuales.
 ms.assetid: c5e6dbd5-7db7-4409-bf53-c2680e4a5319
 ms.tgt_platform: multiple
 keywords:
 - Método SetInt32Property Servicios de Escritorio remoto
-- Método SetInt32Property Servicios de Escritorio remoto, clase Win32_RDMSDeploymentSettings
-- Win32_RDMSDeploymentSettings de clase Servicios de Escritorio remoto, método SetInt32Property
+- Método SetInt32Property Servicios de Escritorio remoto , Win32_RDMSDeploymentSettings clase
+- Win32_RDMSDeploymentSettings clase Servicios de Escritorio remoto , método SetInt32Property
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3fecdc42031514d5219fc03172b951602ad021ba
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 73fa8f9ad7560e4d0eeeb8708feb547da00a8e9804e242ceb94666da211b03a5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686165"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119865385"
 ---
-# <a name="setint32property-method-of-the-win32_rdmsdeploymentsettings-class"></a>Método SetInt32Property de la \_ clase RDMSDeploymentSettings de Win32
+# <a name="setint32property-method-of-the-win32_rdmsdeploymentsettings-class"></a>Método SetInt32Property de la clase RDMSDeploymentSettings de Win32 \_
 
 Actualiza una propiedad de entero para la configuración de implementación de una colección de escritorios virtuales.
 
@@ -44,14 +44,14 @@ uint32 SetInt32Property(
 
 <dl> <dt>
 
-*Clave* \[ de de\]
+*Clave* \[ En\]
 </dt> <dd>
 
-El alias de la colección de escritorios virtuales.
+Alias de la colección de escritorios virtuales.
 
 </dd> <dt>
 
-*Valor* \[ de de\]
+*Valor* \[ En\]
 </dt> <dd>
 
 Nuevo valor de propiedad.
@@ -66,8 +66,8 @@ Nuevo valor de propiedad.
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                              |
-| Espacio de nombres<br/>                | RDMs raíz de \\ CIMv2 \\<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Rdms \\ de CIMv2 \\ raíz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -76,7 +76,7 @@ Nuevo valor de propiedad.
 
 <dl> <dt>
 
-[**Win32 \_ RDMSDeploymentSettings**](win32-rdmsdeploymentsettings.md)
+[**RDMSDeploymentSettings de Win32 \_**](win32-rdmsdeploymentsettings.md)
 </dt> </dl>
 
  

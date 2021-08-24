@@ -1,7 +1,7 @@
 ---
 description: Representa la configuración de un dispositivo de batería virtual.
 ms.assetid: 04fbad81-119d-437c-a0f8-5d2f073c465e
-title: Msvm_BatterySettingData (clase)
+title: Msvm_BatterySettingData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 6d4eb221ef6a9ce46d2017773e215c6525e4e7b4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cef653779d2226e2d7a0451ccbbc2b9d09de0b958f5d6185c76c1341f5d9e7f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668429"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119790205"
 ---
-# <a name="msvm_batterysettingdata-class"></a>MSVM \_ BatterySettingData (clase)
+# <a name="msvm_batterysettingdata-class"></a>Clase \_ BatterySettingData de Msvm
 
 Representa la configuración de un dispositivo de batería virtual.
 
@@ -37,7 +37,7 @@ class Msvm_BatterySettingData : CIM_ResourceAllocationSettingData
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ BatterySettingData** no define ningún miembro.
+La **clase \_ BatterySettingData de Msvm** no define ningún miembro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,10 +45,10 @@ La clase **MSVM \_ BatterySettingData** no define ningún miembro.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1709 \[\]<br/>                                               |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -57,7 +57,7 @@ La clase **MSVM \_ BatterySettingData** no define ningún miembro.
 
 <dl> <dt>
 
-[**\_RESOURCEALLOCATIONSETTINGDATA CIM**](cim-resourceallocationsettingdata.md)
+[**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md)
 </dt> </dl>
 
  
