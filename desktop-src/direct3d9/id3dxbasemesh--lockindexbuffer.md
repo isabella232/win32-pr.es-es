@@ -1,7 +1,7 @@
 ---
 description: Bloquea un búfer de índice y obtiene un puntero a la memoria del búfer de índice.
 ms.assetid: c8941164-1f2a-4aed-b0bd-8130aac61da4
-title: 'ID3DXBaseMesh:: LockIndexBuffer (método) (D3DX9Mesh. h)'
+title: Método ID3DXBaseMesh::LockIndexBuffer (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 388915d0d11ff910c19a2c70b305597a79cd04bb
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c2eab2806775572cb4e4c4a50899d48263c6ddf0d55138c37bcaff8367225c3f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104083702"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120118825"
 ---
-# <a name="id3dxbasemeshlockindexbuffer-method"></a>ID3DXBaseMesh:: LockIndexBuffer (método)
+# <a name="id3dxbasemeshlockindexbuffer-method"></a>Método ID3DXBaseMesh::LockIndexBuffer
 
 Bloquea un búfer de índice y obtiene un puntero a la memoria del búfer de índice.
 
@@ -41,17 +41,17 @@ HRESULT LockIndexBuffer(
 
 <dl> <dt>
 
-*Flags* \[in\]
+*Marcas* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinación de cero o más marcas de bloqueo que describen el tipo de bloqueo que se va a realizar. Para este método, las marcas válidas son:
+Combinación de cero o más marcas de bloqueo que describen el tipo de bloqueo que se debe realizar. Para este método, las marcas válidas son:
 
--   \_Descartar D3DLOCK
--   \_No se \_ pudo \_ Actualizar D3DLOCK
+-   D3DLOCK \_ DISCARD
+-   D3DLOCK \_ NO \_ DIRTY \_ UPDATE
 -   D3DLOCK \_ NOSYSLOCK
--   D3DLOCK \_ ReadOnly
+-   D3DLOCK \_ READONLY
 
 Para obtener una descripción de las marcas, vea [D3DLOCK](d3dlock.md).
 
@@ -62,7 +62,7 @@ Para obtener una descripción de las marcas, vea [D3DLOCK](d3dlock.md).
 
 Tipo: **[ **LPVOID**](../winprog/windows-data-types.md)\***
 
-\*Puntero void a un búfer que contiene los datos del índice. El número de índices de este búfer será igual a [**ID3DXBaseMesh:: GetNumFaces**](id3dxbasemesh--getnumfaces.md) \* 3.
+Puntero VOID \* a un búfer que contiene los datos de índice. El recuento de índices de este búfer será igual a [**ID3DXBaseMesh::GetNumFaces**](id3dxbasemesh--getnumfaces.md) \* 3.
 
 </dd> </dl>
 
@@ -70,11 +70,11 @@ Tipo: **[ **LPVOID**](../winprog/windows-data-types.md)\***
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Al trabajar con búferes de índice, se permite realizar varias llamadas de bloqueo. Sin embargo, debe asegurarse de que el número de llamadas de bloqueo coincide con el número de llamadas de desbloqueo. Las llamadas a DrawPrimitive no se realizarán correctamente con ningún recuento de bloqueos pendientes en ningún búfer de índice establecido actualmente.
+Al trabajar con búferes de índice, puede realizar varias llamadas de bloqueo. Sin embargo, debe asegurarse de que el número de llamadas de bloqueo coincide con el número de llamadas de desbloqueo. Las llamadas DrawPrimitive no se realizará correctamente con ningún recuento de bloqueos pendiente en ningún búfer de índice establecido actualmente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -82,8 +82,8 @@ Al trabajar con búferes de índice, se permite realizar varias llamadas de bloq
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -57,7 +57,7 @@ El **mensaje \_ SETNOTE de BCM** solo funciona con los estilos de botón [**\_ B
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
@@ -65,7 +65,7 @@ El **mensaje \_ SETNOTE de BCM** solo funciona con los estilos de botón [**\_ B
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

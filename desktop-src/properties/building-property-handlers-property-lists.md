@@ -4,16 +4,16 @@ ms.assetid: b7af0491-2ece-42b5-8eea-32643854632f
 title: Usar listas de propiedades
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ade6cba2807e87306aa9cacb3649499d9e5ffe1
-ms.sourcegitcommit: ecd0ba4732f5264aab9baa2839c11f7fea36318f
+ms.openlocfilehash: 72289612d61ebfb198ec0f2ee3d4a7d206209e91
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "113481920"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122477401"
 ---
 # <a name="using-property-lists"></a>Usar listas de propiedades
 
-Después de evaluar la estrategia de propiedades, debe determinar qué propiedades mostrar en la interfaz de usuario Windows Explorer y dónde. Hay varias ubicaciones en las que las propiedades se muestran de solo lectura. Por otro lado, la edición de propiedades solo está habilitada en el **cuadro de diálogo** Propiedades. Ese cuadro de diálogo se puede invocar mediante el vínculo **Editar** propiedades en el **panel** vista previa o el menú contextual de un elemento.
+Después de evaluar la estrategia de propiedades, debe determinar qué propiedades mostrar en la interfaz de usuario Windows Explorer y dónde. Hay varias ubicaciones donde las propiedades se muestran de solo lectura. Por otro lado, la edición de propiedades solo está habilitada en el **cuadro de diálogo** Propiedades. Ese cuadro de diálogo se puede invocar mediante el vínculo **Editar** propiedades del panel vista previa **o** el menú contextual de un elemento.
 
 Las listas de propiedades son cadenas delimitadas por punto y coma que tienen el formato siguiente.
 
@@ -40,63 +40,17 @@ Después de definir una lista de propiedades, puede almacenar esa cadena en el R
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>FullDetails</td>
-<td>Las propiedades se muestran en la <strong>pestaña Detalles</strong> del cuadro <strong>de diálogo</strong> Propiedades . Esta es la lista completa de propiedades que admite el tipo de archivo.</td>
-</tr>
-<tr class="even">
-<td>PreviewDetails</td>
-<td>Las propiedades se muestran en el panel <strong>vista previa</strong>.</td>
-</tr>
-<tr class="odd">
-<td>PreviewTitle</td>
-<td>Las propiedades se muestran en el área de título del panel <strong>vista previa</strong> junto a la miniatura del elemento. El número máximo de entradas es 3. Si la lista de propiedades contiene más del número máximo permitido, se omiten el resto de las entradas.</td>
-</tr>
-<tr class="even">
-<td>TileInfo</td>
-<td>Las propiedades se muestran cuando la vista de lista está en <strong>modo de vista</strong> Iconos. El número máximo de entradas es 3. Si la lista de propiedades contiene más del número máximo permitido, se omiten el resto de las entradas.
-<blockquote>
-[!Note]<br />
-Este valor estaba presente en Windows XP.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td>ExtendedTileInfo</td>
-<td>Las propiedades se muestran para un elemento cuando la vista de lista está en modo <strong>de vista icono</strong> extendido.</td>
-</tr>
-<tr class="even">
-<td>InfoTip</td>
-<td>Las propiedades se muestran en una información general cuando un usuario mantiene el puntero sobre un elemento.
-<blockquote>
-[!Note]<br />
-Este valor estaba presente en Windows XP.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td>Información rápida</td>
-<td>Las propiedades se muestran cuando es difícil recuperar propiedades directamente desde un elemento, por ejemplo, cuando se debe tener acceso al elemento a través de una conexión de red lenta. Se recomienda que las propiedades denominadas aquí, como Tipo o Tamaño, no requieran abrir la secuencia de archivos para determinar su valor.
-<blockquote>
-[!Note]<br />
-Este valor estaba presente en Windows XP.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Valor | Descripción | 
+|-------|-------------|
+| FullDetails | Las propiedades se muestran en la <strong>pestaña Detalles</strong> del cuadro <strong>de diálogo</strong> Propiedades . Esta es la lista completa de propiedades que admite el tipo de archivo. | 
+| PreviewDetails | Las propiedades se muestran en el panel <strong>vista previa</strong>. | 
+| PreviewTitle | Las propiedades se muestran en el área de título del panel <strong>vista</strong> previa junto a la miniatura del elemento. El número máximo de entradas es 3. Si la lista de propiedades contiene más del número máximo permitido, se omiten el resto de las entradas. | 
+| TileInfo | Las propiedades se muestran cuando la vista de lista está en <strong>modo de vista</strong> Iconos. El número máximo de entradas es 3. Si la lista de propiedades contiene más del número máximo permitido, se omiten el resto de las entradas.<blockquote>[!Note]<br />Este valor estaba presente en Windows XP.</blockquote><br /> | 
+| ExtendedTileInfo | Las propiedades se muestran para un elemento cuando la vista de lista está en <strong>modo de vista icono</strong> extendido. | 
+| InfoTip | Las propiedades se muestran en una información general cuando un usuario mantiene el puntero sobre un elemento.<blockquote>[!Note]<br />Este valor estaba presente en Windows XP.</blockquote><br /> | 
+| Información rápida | Las propiedades se muestran cuando es difícil recuperar propiedades directamente desde un elemento, como cuando se debe tener acceso al elemento a través de una conexión de red lenta. Se recomienda que las propiedades denominadas aquí, como Tipo o Tamaño, no requieran abrir la secuencia de archivos para determinar su valor.<blockquote>[!Note]<br />Este valor estaba presente en Windows XP.</blockquote><br /> | 
+
 
 
 

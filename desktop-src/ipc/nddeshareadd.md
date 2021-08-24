@@ -64,14 +64,14 @@ Nivel de información. Este parámetro debe ser 2.
 *pSD* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura [**\_ DE DESCRIPTOR DE SEGURIDAD**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) que se va a asociar a este recurso compartido y con la que se realizarán comprobaciones de acceso en los inicios posteriores de este recurso compartido. Este parámetro puede ser **NULL,** en cuyo caso DSDM crea un descriptor de seguridad predeterminado que concede "Control total" al propietario y "Leer y vincular" a todo el mundo.
+Puntero a una estructura [**\_ DE DESCRIPTOR DE SEGURIDAD**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) que se va a asociar a este recurso compartido y con la que se realizarán comprobaciones de acceso en los inicios posteriores de este recurso compartido. Este parámetro puede ser **NULL,** en cuyo caso DSDM crea un descriptor de seguridad predeterminado que concede "Control total" al propietario y "Leer y vincular" a todos los usuarios.
 
 </dd> <dt>
 
 *lpBuffer* \[in\]
 </dt> <dd>
 
-Puntero a la estructura [**NDDESHAREINFO**](nddeshareinfo-str.md) que define la lista ApplicationTopic asociada al recurso compartido DDE que se va a crear, así como a otros parámetros. Este parámetro no puede ser **NULL.**
+Puntero a la estructura [**NDDESHAREINFO**](nddeshareinfo-str.md) que define la lista ApplicationTopic asociada al recurso compartido DDE que se va a crear, así como otros parámetros. Este parámetro no puede ser **NULL.**
 
 </dd> <dt>
 
@@ -90,7 +90,7 @@ Si se produce un error en la función, el valor devuelto es un código de error,
 
 ## <a name="remarks"></a>Comentarios
 
-Para que un cliente pueda conectarse al recurso compartido de DDE, debe ser de confianza con [**NDdeSetTrustedShare**](nddesettrustedshare.md).
+Para que un cliente pueda conectarse al recurso compartido de DDE, debe ser de confianza [**con NDdeSetTrustedShare**](nddesettrustedshare.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -107,11 +107,11 @@ Para que un cliente pueda conectarse al recurso compartido de DDE, debe ser de c
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Información general sobre datos dinámicos Exchange red](network-dynamic-data-exchange.md)
+[Información general datos dinámicos Exchange red](network-dynamic-data-exchange.md)
 </dt> <dt>
 
 [Funciones DDE de red](network-dde-functions.md)

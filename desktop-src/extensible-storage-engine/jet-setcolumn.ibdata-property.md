@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_SETCOLUMN. ibData'
-title: Propiedad JET_SETCOLUMN. ibData
+description: 'Más información sobre: JET_SETCOLUMN.ibData'
+title: JET_SETCOLUMN.ibData, propiedad
 TOCTitle: 'ibData property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_SETCOLUMN.ibData
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_setcolumn.ibdata(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9996318a76c00bb399b51a7478bf9b1f34478f8f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a545a178a4c38f1a53d65687a519a605fb80a60585c3f7d6827ff39266bde35e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104497110"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119945275"
 ---
-# <a name="jet_setcolumnibdata-property"></a>Propiedad JET_SETCOLUMN. ibData
+# <a name="jet_setcolumnibdata-property"></a>JET_SETCOLUMN.ibData, propiedad
 
-Obtiene o establece el desplazamiento de los datos que se van a establecer.
+Obtiene o establece el desplazamiento de los datos que se establecerán.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public int ibData { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_SETCOLUMN (clase)](./jet-setcolumn-class.md)
+[JET_SETCOLUMN clase](./jet-setcolumn-class.md)
 
-[Miembros de JET_SETCOLUMN](./jet-setcolumn-members.md)
+[JET_SETCOLUMN miembros](./jet-setcolumn-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

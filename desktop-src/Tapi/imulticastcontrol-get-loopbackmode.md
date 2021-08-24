@@ -1,21 +1,21 @@
 ---
-description: El \_ método get LoopbackMode obtiene el modo de bucle invertido de multidifusión.
+description: El método get \_ LoopbackMode obtiene el modo de bucle recuperación de multidifusión.
 ms.assetid: 2499c108-f70b-4afe-aa2b-2376c95b84bd
-title: 'Método IMulticastControl:: get_LoopbackMode (Confpriv. h)'
+title: Método IMulticastControl::get_LoopbackMode (Confpriv.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 203d68f5b620ddf5e5ce7a36e4f8b85820deab2d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 87a3f9a600ea64bacf7cafdc5071df264d79079adfefd4a771eea9569fcbb092
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690316"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120013025"
 ---
-# <a name="imulticastcontrolget_loopbackmode-method"></a>IMulticastControl:: get \_ LoopbackMode (método)
+# <a name="imulticastcontrolget_loopbackmode-method"></a>IMulticastControl::get \_ LoopbackMode (método)
 
-\[**obtener \_ LoopbackMode** no está disponible para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[**get \_ LoopbackMode** no está disponible para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-El método **Get \_ LoopbackMode** obtiene el modo de bucle invertido de multidifusión.
+El **método get \_ LoopbackMode** obtiene el modo de bucle recuperación de multidifusión.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,10 +32,10 @@ HRESULT get_LoopbackMode(
 
 <dl> <dt>
 
-*pMode* \[ enuncia\]
+*pMode* \[ out\]
 </dt> <dd>
 
-Puntero al descriptor del [**\_ \_ modo de bucle invertido de multidifusión**](multicast-loopback-mode.md) del modo de bucle invertido actual.
+Puntero al descriptor [**MULTICAST \_ LOOPBACK \_ MODE**](multicast-loopback-mode.md) del modo de bucle recuperación actual.
 
 </dd> </dl>
 
@@ -45,10 +45,10 @@ Este método puede devolver uno de estos valores.
 
 
 
-| Value                                                                                        | Significado                                        |
+| Valor                                                                                        | Significado                                        |
 |----------------------------------------------------------------------------------------------|------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>         | El método se realizó correctamente.<br/>                   |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | El parámetro *pMode* no es válido.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | El método se realizó correctamente.<br/>                   |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | El *parámetro pMode* no es válido.<br/> |
 
 
 
@@ -58,11 +58,11 @@ Este método puede devolver uno de estos valores.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,0 o posterior<br/>                                                 |
-| Encabezado<br/>       | <dl> <dt>Confpriv. h</dt> </dl> |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
+| Header<br/>       | <dl> <dt>Confpriv.h</dt> </dl> |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl>  |
 
 

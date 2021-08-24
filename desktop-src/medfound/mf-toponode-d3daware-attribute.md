@@ -1,17 +1,17 @@
 ---
 description: Especifica si la transformación asociada a un nodo de topología admite la aceleración de vídeo de DirectX (DXVA).
 ms.assetid: b9e393be-0bc0-4cf6-be44-e9e95339c434
-title: MF_TOPONODE_D3DAWARE atributo (Mfidl. h)
+title: MF_TOPONODE_D3DAWARE atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c6d94d06f2834092159fb813ecffd69ec8a157c8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e49735a1178cc521efd152f4fa11ab7c84069b07d0e5001f0f0e8e38bec940ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104498112"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119607155"
 ---
-# <a name="mf_toponode_d3daware-attribute"></a>\_ \_ Atributo D3DAWARE de MF TOPONODE
+# <a name="mf_toponode_d3daware-attribute"></a>Atributo \_ MF TOPONODE \_ D3DAWARE
 
 Especifica si la transformación asociada a un nodo de topología admite la aceleración de vídeo de DirectX (DXVA).
 
@@ -19,15 +19,15 @@ Especifica si la transformación asociada a un nodo de topología admite la acel
 
 **UINT32**
 
-Trata como un valor booleano.
+Tratar como un valor booleano.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo se aplica a los nodos de transformación (**\_ nodo de \_ transformación \_ de topología MF**).
+Este atributo se aplica a los nodos de transformación **(MF \_ TOPOLOGY \_ TRANSFORM \_ NODE**).
 
-Normalmente, las aplicaciones no usan este atributo directamente. La sesión de medios establece este atributo en un nodo de transformación si la transformación de Media Foundation subyacente tiene el atributo [**MF \_ \_ \_ compatible**](mf-sa-d3d-aware-attribute.md) con el D3D de la SA.
+Normalmente, las aplicaciones no usan este atributo directamente. La sesión multimedia establece este atributo en un nodo de transformación si la transformación Media Foundation subyacente tiene el atributo [**MF \_ SA \_ D3D \_ AWARE.**](mf-sa-d3d-aware-attribute.md)
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,9 +35,9 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -45,16 +45,16 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**ATTRIBUTEAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**ATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
-[**IMFTopologyNode**](/windows/desktop/api/mfidl/nn-mfidl-imftopologynode)
+[**NODETopologyNode**](/windows/desktop/api/mfidl/nn-mfidl-imftopologynode)
 </dt> <dt>
 
 [Atributos de nodo de topología](topology-node-attributes.md)

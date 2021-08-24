@@ -23,7 +23,7 @@ ms.locfileid: "119926645"
 ---
 # <a name="mergecreatesourceimage-method"></a>Método Merge.CreateSourceImage
 
-El **método CreateSourceImage** del objeto [**Merge**](merge-object.md) permite al cliente extraer los archivos de un módulo a una imagen de origen en el disco después de una combinación, teniendo en cuenta los cambios en el módulo que se podrían haber realizado durante la configuración del módulo. La lista de archivos que se va a extraer se toma de la tabla de archivos del módulo durante el proceso de combinación. La lista de archivos consta de todos los archivos copiados correctamente de la tabla de archivos del módulo en la base de datos de destino. Las entradas de tabla de archivos que no se copiaron debido a conflictos de clave principal con filas existentes en la base de datos no forman parte de esta lista. En el momento de la creación de la imagen, el directorio de cada uno de estos archivos procede de la base de datos abierta (posterior a la combinación). La ruta de acceso especificada en el *parámetro Path* es la raíz de la imagen de origen para la instalación. *fLongFileNames determina* si se usan o no nombres de archivo largos para los segmentos de ruta de acceso y los nombres de archivo finales. Se produce un error en la función si no hay ninguna base de datos abierta, no hay ningún módulo abierto o no se ha realizado ninguna combinación.
+El **método CreateSourceImage** del objeto [**Merge**](merge-object.md) permite al cliente extraer los archivos de un módulo a una imagen de origen en el disco después de una combinación, teniendo en cuenta los cambios en el módulo que se podrían haber realizado durante la configuración del módulo. La lista de archivos que se va a extraer se toma de la tabla de archivos del módulo durante el proceso de combinación. La lista de archivos consta de todos los archivos copiados correctamente de la tabla de archivos del módulo a la base de datos de destino. Las entradas de tabla de archivos que no se copiaron debido a conflictos de clave principal con filas existentes en la base de datos no forman parte de esta lista. En el momento de la creación de la imagen, el directorio de cada uno de estos archivos procede de la base de datos abierta (posterior a la combinación). La ruta de acceso especificada en el *parámetro Path* es la raíz de la imagen de origen para la instalación. *fLongFileNames determina* si se usan o no nombres de archivo largos para los segmentos de ruta de acceso y los nombres de archivo finales. Se produce un error en la función si no hay ninguna base de datos abierta, no hay ningún módulo abierto o no se ha realizado ninguna combinación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -79,7 +79,7 @@ Vea [**Función CreateSourceImage.**](/windows/desktop/api/Mergemod/nf-mergemod-
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versión<br/> | Mergemod.dll 2.0 o posterior<br/>                                                    |
 | Header<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |

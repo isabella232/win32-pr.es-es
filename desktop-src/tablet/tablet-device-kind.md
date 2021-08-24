@@ -1,7 +1,7 @@
 ---
-description: Indica el tipo de dispositivo de Tablet PC, como un lápiz, mouse o digitalizador táctil.
+description: Indica el tipo de dispositivo de tableta, como un lápiz, un digitalizador táctil o de mouse.
 ms.assetid: 4cca1e09-99c0-4357-a6ef-159bc8d17d57
-title: Enumeración TABLET_DEVICE_KIND
+title: TABLET_DEVICE_KIND enumeración
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 18f691a2fa909ef28059a4788f4f8b4e184a61ee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 784e2393f5470f8abd966ca6dbdce3ac9d9bff734f1245ebd0ef169180c62d79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119820185"
 ---
-# <a name="tablet_device_kind-enumeration"></a>\_Enumeración de tipo de dispositivo de tableta \_
+# <a name="tablet_device_kind-enumeration"></a>Enumeración TABLET \_ DEVICE \_ KIND
 
-Indica el tipo de dispositivo de Tablet PC, como un lápiz, mouse o digitalizador táctil.
+Indica el tipo de dispositivo de tableta, como un lápiz, un digitalizador táctil o de mouse.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -40,24 +40,24 @@ typedef enum _TABLET_DEVICE_KIND {
 
 <dl> <dt>
 
-<span id="TABLET_DEVICE_MOUSE"></span><span id="tablet_device_mouse"></span>**\_mouse del dispositivo de tableta gráfica \_**
+<span id="TABLET_DEVICE_MOUSE"></span><span id="tablet_device_mouse"></span>**TABLET \_ DEVICE \_ MOUSE**
 </dt> <dd>
 
-La tableta es un mouse. Esto incluye los paneles táctiles que se encuentran en muchos equipos portátiles.
+La tableta es un mouse. Esto incluye los dispositivos táctiles que se encuentran en muchos equipos portátiles.
 
 </dd> <dt>
 
-<span id="TABLET_DEVICE_PEN"></span><span id="tablet_device_pen"></span>**\_lápiz del dispositivo TABLET PC \_**
+<span id="TABLET_DEVICE_PEN"></span><span id="tablet_device_pen"></span>**LÁPIZ \_ DEL DISPOSITIVO DE \_ TABLETA**
 </dt> <dd>
 
-La tableta emplea un lápiz y un digitalizador electromagnéticos.
+La tableta usa un lápiz y un digitalizador.
 
 </dd> <dt>
 
-<span id="TABLET_DEVICE_TOUCH"></span><span id="tablet_device_touch"></span>**\_Touch del dispositivo de tableta \_**
+<span id="TABLET_DEVICE_TOUCH"></span><span id="tablet_device_touch"></span>**TABLET \_ DEVICE \_ TOUCH**
 </dt> <dd>
 
-La tableta emplea un digitalizador con distinción de toque.
+La tableta usa un digitalizador táctil.
 
 </dd> </dl>
 
@@ -67,7 +67,7 @@ La tableta emplea un digitalizador con distinción de toque.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                     |
 
 
@@ -76,7 +76,7 @@ La tableta emplea un digitalizador con distinción de toque.
 
 <dl> <dt>
 
-[**ITablet2:: GetDeviceKind (método)**](itablet2-getdevicekind.md)
+[**ITablet2::GetDeviceKind (Método)**](itablet2-getdevicekind.md)
 </dt> </dl>
 
  

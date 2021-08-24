@@ -1,10 +1,10 @@
 ---
-title: MPCONFIGURATION_DATA estructura (MpClient. h)
+title: MPCONFIGURATION_DATA estructura (MpClient.h)
 description: Contiene datos sobre los cambios de configuración, incluidos los valores antiguos y nuevos.
 ms.assetid: AB70B1C0-C148-44BC-8C0E-CC5D2A66BCA5
 keywords:
-- MPCONFIGURATION_DATA estructura de las características heredadas del entorno de Windows
-- Puntero de estructura de PMPCONFIGURATION_DATA características de entorno heredado de Windows
+- MPCONFIGURATION_DATA estructura heredada de Windows environment
+- PMPCONFIGURATION_DATA puntero de estructura heredado Windows environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7bb54ae4e323f2144dd25c52005d8484b0a207e6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 192cb4d2e35d1b471ef92fb976535bb1e6ed733e2f29ebf86d357f722904514c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120114585"
 ---
-# <a name="mpconfiguration_data-structure"></a>\_Estructura de datos MPCONFIGURATION
+# <a name="mpconfiguration_data-structure"></a>Estructura DE \_ DATOS MPCONFIGURATION
 
 Contiene datos sobre los cambios de configuración, incluidos los valores antiguos y nuevos.
 
@@ -49,11 +49,11 @@ typedef struct tagMPCONFIGURATION_DATA {
 **ConfigurationName**
 </dt> <dd>
 
-Type: **MP \_ MIDL \_ String LPWStr**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd>
 
-Nombre de la configuración que cambió.
+Nombre de la configuración que ha cambiado.
 
 </dd> <dt>
 
@@ -64,7 +64,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-El tipo de datos utilizado.
+Tipo de datos usado.
 
 </dd> <dt>
 
@@ -82,15 +82,15 @@ Tamaño de los datos anteriores, en bytes.
 **pPreviousData**
 </dt> <dd>
 
-Tipo: **byte \** _
+Tipo: **\* BYTE**
 
 </dd> <dd>
 
-Puntero a los datos anteriores.
+Puntero a datos anteriores.
 
 </dd> <dt>
 
-_ *CurrentDataSize**
+**CurrentDataSize**
 </dt> <dd>
 
 Tipo: **DWORD**
@@ -104,11 +104,11 @@ Tamaño de los datos nuevos, en bytes.
 **pCurrentData**
 </dt> <dd>
 
-Tipo: **byte \***
+Tipo: **\* BYTE**
 
 </dd> <dd>
 
-Puntero a los nuevos datos.
+Puntero a datos nuevos.
 
 </dd> </dl>
 
@@ -118,9 +118,9 @@ Puntero a los nuevos datos.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

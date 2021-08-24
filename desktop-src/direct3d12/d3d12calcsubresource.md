@@ -1,9 +1,9 @@
 ---
-title: Función D3D12CalcSubresource (D3dx12. h)
+title: Función D3D12CalcSubresource (D3dx12.h)
 description: Calcula un índice de subrecurso para una textura.
 ms.assetid: 5C63A315-E21E-498B-A832-6BA2D17FF9A7
 keywords:
-- D3D12CalcSubresource función)
+- Función D3D12CalcSubresource
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e872d13ba5221ad50003d789b87f65fc64821dd0
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 08c704be7087d95d739685bc2823ec1c31a027b4406a3110986220927fdbbffa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707758"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119751725"
 ---
-# <a name="d3d12calcsubresource-function"></a>D3D12CalcSubresource función)
+# <a name="d3d12calcsubresource-function"></a>Función D3D12CalcSubresource
 
 Calcula un índice de subrecurso para una textura.
 
@@ -48,43 +48,43 @@ UINT inline D3D12CalcSubresource(
 *MipSlice* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Índice de base cero del nivel de mipmap que se va a direccionar; 0 indica el primer nivel de mapa MIP más detallado.
+Índice de base cero para el nivel de mapa mip que se debe direccionar; 0 indica el primer nivel de asignación mipmap más detallado.
 
 </dd> <dt>
 
 *ArraySlice* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Índice de base cero para el nivel de matriz que se va a direccionar; Use siempre 0 para las texturas de volumen (3D).
+Índice de base cero para el nivel de matriz que se debe abordar; use siempre 0 para las texturas de volumen (3D).
 
 </dd> <dt>
 
 *PlaneSlice* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Índice de base cero para el nivel de plano que se va a direccionar.
+Índice de base cero para el nivel de plano que se debe abordar.
 
 </dd> <dt>
 
 *MipLevels* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-El número de niveles de mipmap en el recurso.
+Número de niveles de mapa mip en el recurso.
 
 </dd> <dt>
 
 *ArraySize* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Número de elementos de la matriz.
 
@@ -92,15 +92,15 @@ Número de elementos de la matriz.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Índice que es igual a MipSlice + (ArraySlice \* MipLevels).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un búfer es un recurso no estructurado y, por tanto, se define como si contuviera un único subrecurso. Las API que toman búferes no necesitan un índice de subrecurso. Una textura por otro lado está muy estructurada. Cada objeto de textura puede contener uno o más Subrecursos en función del tamaño de la matriz y el número de niveles de mipmap.
+Un búfer es un recurso no estructurado y, por tanto, se define como que contiene un único subrecurso. Las API que toman búferes no necesitan un índice de subrecurso. Por otro lado, una textura está muy estructurada. Cada objeto de textura puede contener uno o varios subrecursos según el tamaño de la matriz y el número de niveles de mapa mip.
 
-En el caso de las texturas de volumen (3D), todos los segmentos de un nivel de mipmap determinado son un índice de un solo recurso.
+En el caso de las texturas de volumen (3D), todos los segmentos de un nivel de asignación mipmap determinado son un único índice de subrecurso.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -108,8 +108,8 @@ En el caso de las texturas de volumen (3D), todos los segmentos de un nivel de m
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx12. h</dt> </dl>  |
-| Biblioteca<br/> | <dl> <dt>D3D12. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx12.h</dt> </dl>  |
+| Biblioteca<br/> | <dl> <dt>D3D12.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>D3D12.dll</dt> </dl> |
 
 

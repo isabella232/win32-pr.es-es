@@ -1,21 +1,21 @@
 ---
-description: El <dateCreated> elemento opcional identifica la fecha y la hora en que se creó este conector de búsqueda con el estándar ISO 8601. No tiene elementos secundarios ni atributos.
+description: El elemento opcional identifica la fecha y la hora en que se creó este conector de búsqueda <dateCreated> mediante el estándar ISO 8601. No tiene elementos secundarios ni atributos.
 ms.assetid: 96d8b067-b5ab-4d36-a8d7-1d084a9f661d
-title: Elemento dateCreated (esquema del conector de búsqueda)
+title: elemento dateCreated (esquema del conector de búsqueda)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6017c0555d464a49192c4fe8cb7e347bbab0e367
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6b59af62b2bd7ce8678fafb1fdd84646314f41a51414b4285db3077b5db0e0f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103808906"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119944405"
 ---
-# <a name="datecreated-element-search-connector-schema"></a>Elemento dateCreated (esquema del conector de búsqueda)
+# <a name="datecreated-element-search-connector-schema"></a>elemento dateCreated (esquema del conector de búsqueda)
 
-El <dateCreated> elemento opcional identifica la fecha y la hora en que se creó este conector de búsqueda con el estándar ISO 8601. No tiene elementos secundarios ni atributos.
+El elemento opcional identifica la fecha y la hora en que se creó este conector de búsqueda <dateCreated> mediante el estándar ISO 8601. No tiene elementos secundarios ni atributos.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```
@@ -45,12 +45,12 @@ El <dateCreated> elemento opcional identifica la fecha y la hora en que se creó
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El formato del valor de este elemento sigue el estándar ISO 8601. Un uso común sería cualquiera de los siguientes:
 
--   \[YYYY \] - \[ mm \] - \[ DD \] T \[ HH \] : \[ mm \] : \[ SS \] ± \[ HH \] : \[ mm \] ("1981-04-05T14:30:30-05:00")
--   \[AAAA \] \[ mm \] \[ DD \] T \[ HH \] \[ mm \] \[ SS \] Z ("19810405T193030Z")
+-   \[YYYY \] - \[ MM \] - \[ DD \] T hh : mm : \[ \] \[ \] \[ ss ± hh : \] mm \[ \] \[ \] ("1981-04-05T14:30:30-05:00")
+-   \[YYYY \] \[ MM \] \[ DD \] T hh mm \[ \] \[ \] \[ ss Z \] ("19810405T193030Z")
 
 ## <a name="example"></a>Ejemplo
 

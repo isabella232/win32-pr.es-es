@@ -1,56 +1,56 @@
 ---
-title: Transiciones de imagen de vídeo
-description: Transiciones de imagen de vídeo
+title: Transiciones de imágenes de vídeo
+description: Transiciones de imágenes de vídeo
 ms.assetid: 201ddbfb-567b-4893-b754-569f1e7d8466
 keywords:
-- Windows Media Format, transiciones de vídeo
-- Formatos de sistema avanzado (ASF), transiciones de imagen de vídeo
+- Windows SDK de formato multimedia, transiciones de imágenes de vídeo
+- Formato de sistemas avanzados (ASF), transiciones de imagen de vídeo
 - ASF (formato de sistemas avanzados), transiciones de imagen de vídeo
-- transiciones de imagen de vídeo
-- Códec de imagen V2 de Windows Media Video 9
-- códecs, códec de Windows Media Video 9 Image V2
-- secuencias de vídeo, códec de Windows Media Video 9 Image V2
+- transiciones de imágenes de vídeo
+- Windows Códec de imagen v2 de Vídeo multimedia 9
+- códecs, Windows códec de imagen v2 de Vídeo multimedia 9
+- secuencias de vídeo, Windows códec de imagen v2 de Vídeo multimedia 9
 - secuencias de vídeo, transiciones de imagen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cbfd02628a78196a73750c2c0ff6b9e9c3d6729c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3b0a915f34ac9a2dcc00f8bcec739d48051361c1744e8e455166d56238529d9c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075530"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119771245"
 ---
-# <a name="video-image-transitions"></a>Transiciones de imagen de vídeo
+# <a name="video-image-transitions"></a>Transiciones de imágenes de vídeo
 
-El códec Windows Media Video 9 Image V2 anima una serie de imágenes, lo que da lugar a una secuencia de vídeo. El códec puede manipular dos imágenes a la vez, combinarlas y crear una transición de una a otra según la configuración proporcionada. En esta sección se describen las transiciones admitidas y los parámetros que requieren.
+El códec Windows Media Video 9 Image v2 anima una serie de imágenes, lo que da lugar a una secuencia de vídeo. El códec puede manipular dos imágenes a la vez, combinarlas y crear una transición de una a otra según la configuración que proporcione. En esta sección se describen las transiciones admitidas y los parámetros que requieren.
 
-Las transiciones se muestran en la siguiente tabla por sus identificadores globales.
+Las transiciones se enumeran en la tabla siguiente por sus identificadores globales.
 
 
 
 | Identificador de transición                                                                           | Descripción                                                                                                                                  |
 |-------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_ \_ vinculación de lazo de transición de imagen WMT \_ \_**](wmt-videoimage-transition-bow-tie.md)              | La nueva imagen se revela en un conjunto de triángulos en lados opuestos del marco.                                                                  |
-| [**Círculo de transición de \_ imagen WMT \_ \_**](wmt-videoimage-transition-circle.md)                 | La nueva imagen se revela en un círculo.                                                                                                           |
-| [**\_ \_ \_ difuminación cruzada de transición de imagen WMT \_**](wmt-videoimage-transition-cross-fade.md)        | Ninguna transición especial, los coeficientes de mezcla de las dos imágenes determinan el fundido transversal (disolver).                                         |
-| [**DIAGONAL de transición de imagen de videotransmisión WMT \_ \_ \_**](wmt-videoimage-transition-diagonal.md)             | La nueva imagen se revela a lo largo de una línea diagonal que se origina en una esquina del fotograma.                                                          |
-| [**diamante de transición de \_ imágenes WMT \_ \_**](wmt-videoimage-transition-diamond.md)               | La nueva imagen se revela en un rombo.                                                                                                          |
-| [**\_ \_ transición de imagen de transmisión de imágenes WMT \_ \_ a \_ color**](wmt-videoimage-transition-fade-to-color.md) | Se resuelve de la imagen en un marco de color sólido.                                                                                          |
-| [**\_transición de imagen de vídeo WMT \_ \_ rellenado \_ V**](wmt-videoimage-transition-filled-v.md)            | La nueva imagen se revela en un triángulo que se origina en un lado del marco.                                                                  |
-| [**\_volteo de transición de imagen de videoimágenes WMT \_ \_**](wmt-videoimage-transition-flip.md)                     | La imagen anterior se gira en un eje y a través del centro del marco. La nueva imagen se revela como la parte posterior de la imagen anterior.                    |
-| [**\_bajorrelieve de transición de imagen de videoimágenes WMT \_ \_**](wmt-videoimage-transition-inset.md)                   | Una nueva imagen se revela mediante un rectángulo que se origina en una esquina del fotograma.                                                               |
-| [**\_iris de transición de imagen de imágenes WMT \_ \_**](wmt-videoimage-transition-iris.md)                     | La nueva imagen se revela a lo largo de un eje x y un eje y.                                                                                          |
-| [**\_rollo de página de transición de VIDEOIMAGE WMT \_ \_ \_**](wmt-videoimage-transition-page-roll.md)          | La imagen antigua se transforma en un efecto de volteo de página y revela la nueva imagen debajo.                                                      |
-| [**\_rectángulo de transición de imagen de videoimágenes WMT \_ \_**](wmt-videoimage-transition-rectangle.md)           | Una nueva imagen se revela mediante un rectángulo dentro del marco.                                                                                       |
-| [**transición de imagen de transmisión de \_ imágenes WMT \_ \_**](wmt-videoimage-transition-reveal.md)                 | La nueva imagen se revela a lo largo de una línea recta que se origina en un lado del marco.                                                          |
-| [**diapositiva de transición de \_ imagen WMT \_ \_**](wmt-videoimage-transition-slide.md)                   | La imagen antigua se desliza fuera del fotograma y se revela la nueva imagen debajo.                                                                       |
-| [**División de transición de imagen de videotransmisión WMT \_ \_ \_**](wmt-videoimage-transition-split.md)                   | La nueva imagen se revela mediante una división horizontal o vertical en la imagen anterior. La división aparece a lo largo de una línea recta que comienza dentro del marco. |
-| [**estrella de transición de \_ imágenes WMT \_ \_**](wmt-videoimage-transition-star.md)                     | La nueva imagen se revela mediante una estrella de cinco puntas dentro del marco.                                                                               |
-| [**\_rueda de transición de VIDEOIMAGE WMT \_ \_**](wmt-videoimage-transition-wheel.md)                   | La nueva imagen se revela con cuatro radios rotatorios con un punto de pivote común.                                                                     |
+| [**WMT \_ VIDEOIMAGE \_ TRANSITION \_ BOW \_ TIE**](wmt-videoimage-transition-bow-tie.md)              | La nueva imagen se muestra en un conjunto de triángulos en los lados opuestos del marco.                                                                  |
+| [**CÍRCULO DE TRANSICIÓN \_ DE WMT VIDEOIMAGE \_ \_**](wmt-videoimage-transition-circle.md)                 | La nueva imagen se muestra en un círculo.                                                                                                           |
+| [**TRANSICIÓN CRUZADA \_ DE WMT VIDEOIMAGE \_ TRANSITION \_ \_**](wmt-videoimage-transition-cross-fade.md)        | Sin transición especial, los coeficientes de mezcla de las dos imágenes determinan la atenuación cruzada (disolver).                                         |
+| [**DIAGONAL DE TRANSICIÓN \_ DE WMT VIDEOIMAGE \_ \_**](wmt-videoimage-transition-diagonal.md)             | La nueva imagen se muestra a lo largo de una línea diagonal que se origina en una esquina del marco.                                                          |
+| [**WMT \_ VIDEOIMAGE \_ TRANSITION \_ DIAMOND**](wmt-videoimage-transition-diamond.md)               | La nueva imagen se muestra en un rombo.                                                                                                          |
+| [**TRANSICIÓN DE \_ WMT VIDEOIMAGE \_ A \_ \_ \_ COLOR**](wmt-videoimage-transition-fade-to-color.md) | Se desvía de la imagen a un marco de color sólido.                                                                                          |
+| [**WMT \_ VIDEOIMAGE \_ TRANSITION \_ FILLED \_ V**](wmt-videoimage-transition-filled-v.md)            | La nueva imagen se muestra en un triángulo que se origina en un lado del marco.                                                                  |
+| [**WMT \_ VIDEOIMAGE \_ TRANSITION \_ FLIP**](wmt-videoimage-transition-flip.md)                     | La imagen antigua se gira en un eje Y a través del centro del marco. La nueva imagen se muestra como la parte posterior de la imagen anterior.                    |
+| [**WMT \_ VIDEOIMAGE \_ TRANSITION \_ INSET**](wmt-videoimage-transition-inset.md)                   | La nueva imagen se muestra mediante un rectángulo que se origina en una esquina del marco.                                                               |
+| [**WMT \_ VIDEOIMAGE \_ TRANSITION \_ IRIS**](wmt-videoimage-transition-iris.md)                     | La nueva imagen se muestra a lo largo de un eje X y un eje Y.                                                                                          |
+| [**WMT \_ VIDEOIMAGE \_ TRANSITION \_ PAGE \_ ROLL**](wmt-videoimage-transition-page-roll.md)          | La imagen antigua se transforma en un efecto de volteo de página, lo que revela la nueva imagen debajo.                                                      |
+| [**RECTÁNGULO DE TRANSICIÓN \_ DE VIDEOIMAGE \_ DE WMT \_**](wmt-videoimage-transition-rectangle.md)           | Un rectángulo dentro del marco muestra una nueva imagen.                                                                                       |
+| [**WMT \_ VIDEOIMAGE \_ TRANSITION \_ REVEAL**](wmt-videoimage-transition-reveal.md)                 | La nueva imagen se muestra a lo largo de una línea recta que se origina en un lado del marco.                                                          |
+| [**DIAPOSITIVA DE TRANSICIÓN \_ WMT VIDEOIMAGE \_ \_**](wmt-videoimage-transition-slide.md)                   | La imagen antigua se desliza fuera del marco, lo que revela la nueva imagen debajo.                                                                       |
+| [**DIVISIÓN DE TRANSICIÓN \_ DE WMT VIDEOIMAGE \_ \_**](wmt-videoimage-transition-split.md)                   | La nueva imagen se revela mediante una división horizontal o vertical en la imagen anterior. La división aparece a lo largo de una línea recta a partir del marco. |
+| [**WMT \_ VIDEOIMAGE \_ TRANSITION \_ STAR**](wmt-videoimage-transition-star.md)                     | Una estrella de cinco puntas dentro del marco revela una nueva imagen.                                                                               |
+| [**WMT \_ VIDEOIMAGE \_ TRANSITION \_ WHEEL**](wmt-videoimage-transition-wheel.md)                   | La nueva imagen se revela mediante cuatro radios de rotación con un punto de pivote común.                                                                     |
 
 
 
- 
+ 
 
 Cada transición se describe completamente en su propio tema.
 
@@ -61,12 +61,12 @@ Cada transición se describe completamente en su propio tema.
 [**Referencia de programación**](programming-reference.md)
 </dt> <dt>
 
-[**\_SAMPLE2 de imágenes \_ WMT**](/previous-versions/windows/desktop/api/Wmsdkidl/ns-wmsdkidl-wmt_videoimage_sample2)
+[**WMT \_ VIDEOIMAGE \_ SAMPLE2**](/previous-versions/windows/desktop/api/Wmsdkidl/ns-wmsdkidl-wmt_videoimage_sample2)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

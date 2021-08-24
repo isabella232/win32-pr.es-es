@@ -1,19 +1,19 @@
 ---
-description: Cuando el usuario hace clic en definir la región de recorte, el sistema emite un mensaje de comando de WM \_ .
+description: Cuando el usuario hace clic en Definir región de recorte , el sistema emite un mensaje \_ WM COMMAND.
 ms.assetid: 4b20f310-98c0-42c1-b3b3-eadf9bb2003c
 title: Definir la región de recorte
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 45e49693c0e94ab9b43af817f80985af98ae2ede
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: caa56c2eb036430b90e3c8f7b6fc0894abdc37306edef77438afae796cb1cc04
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104544531"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120115315"
 ---
 # <a name="defining-the-clipping-region"></a>Definir la región de recorte
 
-Cuando el usuario hace clic en definir la región de recorte, el sistema emite un mensaje de [**\_ comando de WM**](../menurc/wm-command.md) . El parámetro *wParam* de este mensaje contiene una constante definida por la aplicación, de la definición de IDM \_ , que indica que el usuario seleccionó esta opción en el menú. La aplicación procesa esta entrada estableciendo una marca booleana, fDefineRegion, tal y como se muestra en el ejemplo de código siguiente.
+Cuando el usuario hace clic en Definir región de recorte , el sistema emite un [**mensaje \_ WM COMMAND.**](../menurc/wm-command.md) El *parámetro wParam* de este mensaje contiene una constante definida por la aplicación, IDM DEFINE, que indica que el usuario seleccionó esta opción \_ en el menú. La aplicación procesa esta entrada estableciendo una marca booleana, fDefineRegion, como se muestra en el ejemplo de código siguiente.
 
 
 ```C++
@@ -28,9 +28,9 @@ case WM_COMMAND:
 
 
 
-Después de hacer clic en **definir la región de recorte** , el usuario puede empezar a dibujar el rectángulo haciendo clic y arrastrando el mouse mientras el cursor se encuentra en el área cliente de la aplicación.
+Después de **hacer clic en** Definir región de recorte , el usuario puede empezar a dibujar el rectángulo haciendo clic y arrastrando el mouse mientras el cursor está en el área cliente de la aplicación.
 
-Cuando el usuario presiona el botón primario, el sistema emite un mensaje de [**\_ LBUTTONDOWN de WM**](../inputdev/wm-lbuttondown.md) . El parámetro *lParam* de este mensaje contiene las coordenadas del cursor, que corresponden a la esquina superior izquierda de un rectángulo que se usa para definir la región de recorte. La aplicación procesa el mensaje de **\_ LBUTTONDOWN de WM** , como se indica a continuación.
+Cuando el usuario presiona el botón izquierdo, el sistema emite un [**mensaje \_ WM LBUTTONDOWN.**](../inputdev/wm-lbuttondown.md) El *parámetro lParam* de este mensaje contiene las coordenadas del cursor, que corresponden a la esquina superior izquierda de un rectángulo utilizado para definir la región de recorte. La aplicación procesa el **mensaje \_ WM LBUTTONDOWN,** como se indica a continuación.
 
 
 ```C++
@@ -108,7 +108,7 @@ switch (message)
 
 
 
-Cuando el usuario arrastra el mouse, el sistema emite mensajes de [**WM \_ MOUSEMOVE**](../inputdev/wm-mousemove.md) y almacena las nuevas coordenadas del cursor en el parámetro *lParam* . Cada vez que la aplicación recibe un nuevo mensaje de de **WM \_ MOUSEMOVE** , borra el rectángulo anterior (si existe) y dibuja el nuevo rectángulo mediante una llamada a la función [**Polyline**](/windows/desktop/api/Wingdi/nf-wingdi-polyline) , pasándole las coordenadas de las cuatro esquinas del rectángulo. La aplicación realiza las siguientes tareas.
+A medida que el usuario arrastra el mouse, el sistema emite mensajes [**WM \_ MOUSEMOVE**](../inputdev/wm-mousemove.md) y almacena las nuevas coordenadas de cursor en el *parámetro lParam.* Cada vez que la aplicación recibe un nuevo mensaje **\_ WM MOUSEMOVE,** borra el rectángulo anterior (si existe) y dibuja el nuevo rectángulo mediante una llamada a la función [**Polilínea**](/windows/desktop/api/Wingdi/nf-wingdi-polyline) y le pasa las coordenadas de las cuatro esquinas del rectángulo. La aplicación realiza las siguientes tareas.
 
 
 ```C++

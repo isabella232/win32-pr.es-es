@@ -1,19 +1,19 @@
 ---
-description: En el ejemplo de código siguiente se muestra un controlador de eventos para eventos de dispositivo de dirección y teléfono. El código de cada evento muestra cómo crear la interfaz de eventos y cómo recuperar los datos de evento.
+description: En el ejemplo de código siguiente se muestra un controlador de eventos para eventos de dispositivo de teléfono y dirección. El código de cada evento muestra cómo crear la interfaz de evento y cómo recuperar los datos del evento.
 ms.assetid: 236d4e7f-865f-4b26-8da6-c86476588c47
-title: Eventos específicos del dispositivo y de la dirección del teléfono
+title: Teléfono y dirección de eventos específicos del dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 40cf4c45eb7c7b933a36814f8eba8cd5cc39d8cc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c69a8dd5bd941946d6d4b904e8bc367b9949d6782f350a1e065eb672b2db57ff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104543470"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120034545"
 ---
-# <a name="phone-and-address-device-specific-events"></a>Eventos específicos del dispositivo y de la dirección del teléfono
+# <a name="phone-and-address-device-specific-events"></a>Teléfono y dirección de eventos específicos del dispositivo
 
-En el ejemplo de código siguiente se muestra un controlador de eventos para eventos de dispositivo de dirección y teléfono. El código de cada evento muestra cómo crear la interfaz de eventos y cómo recuperar los datos de evento.
+En el ejemplo de código siguiente se muestra un controlador de eventos para eventos de dispositivo de teléfono y dirección. El código de cada evento muestra cómo crear la interfaz de evento y cómo recuperar los datos del evento.
 
 ``` syntax
 HRESULT STDMETHODCALLTYPE CMyEventNotification::Event(

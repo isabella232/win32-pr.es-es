@@ -1,27 +1,27 @@
 ---
-title: Definir canales
-description: Los eventos se pueden escribir en canales de registro de eventos, archivos de registro de seguimiento de eventos o ambos. Un canal es básicamente un receptor que recopila eventos.
+title: Definición de canales
+description: Los eventos se pueden escribir en canales de registro de eventos, archivos de registro de seguimiento de eventos o en ambos. Un canal es básicamente un receptor que recopila eventos.
 ms.assetid: 3c2f39ee-fbc0-40ae-8279-566905250f47
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ab3c73697aa11e7b63ace0ece33be23ca7a1b883
-ms.sourcegitcommit: c2a1c4314550ea9bd202d28adfcc7bfe6180932f
+ms.openlocfilehash: 89c2f932616a131e478c100996fd0b76034b3cccdebf4e3714fd5b9b38ba9678
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "104149134"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120032485"
 ---
-# <a name="defining-channels"></a>Definir canales
+# <a name="defining-channels"></a>Definición de canales
 
-Los eventos se pueden escribir en canales de registro de eventos, archivos de registro de seguimiento de eventos o ambos. Un canal es básicamente un receptor que recopila eventos. Si el público de destino de los eventos usa consumidores de eventos como el Visor de eventos de Windows, debe definir canales nuevos para recopilar los eventos o importar un canal existente definido por otro proveedor.
+Los eventos se pueden escribir en canales de registro de eventos, archivos de registro de seguimiento de eventos o en ambos. Un canal es básicamente un receptor que recopila eventos. Si la audiencia de destino de los eventos usa consumidores de eventos como Windows Visor de eventos, debe definir nuevos canales para recopilar los eventos o importar un canal existente definido por otro proveedor.
 
-Para definir sus propios canales, use el elemento **Channel** . Para definir un canal importado, use el elemento **importChannel** . Puede especificar hasta ocho canales en cualquier combinación de canales o canales importados que defina.
+Para definir sus propios canales, use el **elemento channel.** Para definir un canal importado, use el **elemento importChannel.** Puede especificar hasta ocho canales en cualquier combinación de canales o canales importados que defina.
 
-El canal debe ser de uno de cuatro tipos: admin, Operational, Analytics y Debug. Cada tipo de canal tiene un público previsto, que determina el tipo de eventos que se escriben en el canal. Para obtener una descripción de cada tipo, vea el tipo complejo de [**ChannelType**](eventmanifestschema-channeltype-complextype.md) .
+El canal debe ser de uno de cuatro tipos: Admin, Operational, Analytic y Debug. Cada tipo de canal tiene una audiencia prevista, que determina el tipo de eventos que se escriben en el canal. Para obtener una descripción de cada tipo, vea el [**tipo complejo ChannelType.**](eventmanifestschema-channeltype-complextype.md)
 
-Para especificar el canal en el que se escribe un evento, establezca el atributo de **canal** de la definición de evento en el mismo valor que el atributo **chid** de la definición de canal. Los eventos solo se pueden escribir en un canal cada vez, pero también se pueden recopilar hasta 7 otras sesiones de ETW al mismo tiempo.
+Para especificar el canal en el que se escribe  un evento, establezca el atributo channel de la definición de evento en el mismo valor que el atributo **chid** de la definición de canal. Los eventos solo se pueden escribir en un canal a la vez, pero también se pueden recopilar hasta siete sesiones etw al mismo tiempo.
 
-En el ejemplo siguiente se muestra cómo importar un canal. Debe establecer los atributos **chid** y **Name** . El atributo **chid** identifica de forma única el canal: cada identificador de canal de la lista de canales debe ser único. Establezca el atributo de **nombre** en el mismo nombre que el proveedor utilizado cuando definió el canal.
+En el ejemplo siguiente se muestra cómo importar un canal. Debe establecer los atributos **chid** **y name.** El **atributo chid** identifica de forma única el canal: cada identificador de canal de la lista de canales debe ser único. Establezca el **atributo name** en el mismo nombre que usó el proveedor al definir el canal.
 
 
 ```XML
@@ -64,9 +64,9 @@ En el ejemplo siguiente se muestra cómo importar un canal. Debe establecer los 
 </instrumentationManifest>
 ```
 
-Aunque Winmeta.xml define canales heredados que se pueden importar, no debe usarlos a menos que sea compatible con consumidores heredados que consuman eventos de los canales heredados (por ejemplo, aplicación o sistema). El archivo Winmeta.xml se incluye en el Windows SDK.
+Aunque Winmeta.xml define canales heredados que puede importar, no debe usarlos a menos que admita consumidores heredados que consuman eventos fuera de los canales heredados (por ejemplo, aplicación o sistema). El Winmeta.xml se incluye en el SDK de Windows.
 
-En el ejemplo siguiente se muestra cómo definir un canal. Debe establecer los atributos **chid**, **Name** y **Type** . El atributo **chid** identifica de forma única el canal: cada identificador de canal de la lista de canales debe ser único. Establezca el atributo **chid** en un valor que sea único para los canales enumerados por el proveedor. se hace referencia al identificador de canal en una o varias de sus definiciones de eventos. La Convención para asignar nombres al canal es usar el nombre del proveedor y el tipo de canal con el formato *providerName* / *channeltype*.
+En el ejemplo siguiente se muestra cómo definir un canal. Debe establecer los **atributos chid**, **name** y **type.** El **atributo chid** identifica de forma única el canal: cada identificador de canal de la lista de canales debe ser único. Establezca el **atributo chid** en un valor que sea único para los canales que el proveedor enumera; Se hace referencia al identificador del canal en una o varias de las definiciones de eventos. La convención para asignar un nombre al canal es usar el nombre del proveedor y el tipo de canal con el formato *providername* / *channeltype*.
 
 ```XML
 <instrumentationManifest

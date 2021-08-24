@@ -1,11 +1,11 @@
 ---
-title: Propiedad SAMIStyle de IWMPClosedCaption
-description: La propiedad SAMIStyle obtiene o establece el estilo de subtítulos (CC).
+title: IWMPClosedCaption SAMIStyle, propiedad
+description: La propiedad SAMIStyle obtiene o establece el estilo de subtítulos.
 ms.assetid: 0b1f92c6-b659-4ade-90c8-62a06e475f5c
 keywords:
-- Propiedades de SAMIStyle Media Player de Windows
-- Propiedad SAMIStyle de Windows Media Player, interfaz IWMPClosedCaption
-- Interfaz IWMPClosedCaption Windows Media Player, propiedad SAMIStyle
+- Propiedad SAMIStyle Reproductor de Windows Media
+- Propiedad SAMIStyle Reproductor de Windows Media interfaz , IWMPClosedCaption
+- Interfaz IWMPClosedCaption Reproductor de Windows Media , propiedad SAMIStyle
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9bd0b48fc1807d6ca1854651c7f222183a845be3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2cede8964636073c393cb34bfa1be22855467f4cb243834bd1e11a4ffc492665
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105650147"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120031425"
 ---
-# <a name="iwmpclosedcaptionsamistyle-property"></a>IWMPClosedCaption:: SAMIStyle (propiedad)
+# <a name="iwmpclosedcaptionsamistyle-property"></a>IWMPClosedCaption::SAMIStyle, propiedad
 
-La propiedad **SAMIStyle** obtiene o establece el estilo de subtítulos (CC).
+La **propiedad SAMIStyle** obtiene o establece el estilo de subtítulos.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp
@@ -46,11 +46,11 @@ Public Property SAMIStyle As System.String
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**System. String** que es el nombre especificado en el identificador de estilo de un archivo Sami.
+**System.String que** es el nombre especificado en el identificador de estilo de un archivo SAMI.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un archivo SAMI puede contener varias definiciones de estilo de formato. Los estilos SAMI se definen entre las etiquetas <STYLE> y </STYLE> del archivo Sami. Un estilo se define con una cadena de texto precedida por un \# carácter. Por ejemplo:
+Un archivo SAMI puede contener varias definiciones de estilo de formato. Los estilos SAMI se definen entre las <STYLE> etiquetas y </STYLE> en el archivo SAMI. Un estilo se define con una cadena de texto precedida de un \# carácter. Por ejemplo:
 
 
 ```
@@ -61,9 +61,9 @@ Un archivo SAMI puede contener varias definiciones de estilo de formato. Los est
 
 
 
-Especifica un estilo que genera una fuente determinada.
+Esto especifica un estilo que genera una fuente determinada.
 
-Si no se especifica ningún estilo SAMI, se usa de forma predeterminada el primer estilo definido en el archivo SAMI.
+Si no se especifica ningún estilo SAMI, el primer estilo definido en el archivo SAMI se usa de forma predeterminada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,7 +71,7 @@ Si no se especifica ningún estilo SAMI, se usa de forma predeterminada el prime
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -81,7 +81,7 @@ Si no se especifica ningún estilo SAMI, se usa de forma predeterminada el prime
 
 <dl> <dt>
 
-[**Agregar subtítulos a medios digitales**](adding-closed-captions-to-digital-media.md)
+[**Adición de subtítulos a medios digitales**](adding-closed-captions-to-digital-media.md)
 </dt> <dt>
 
 [**Interfaz IWMPClosedCaption (VB y C#)**](iwmpclosedcaption--vb-and-c.md)

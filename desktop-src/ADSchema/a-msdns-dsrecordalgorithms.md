@@ -27,12 +27,12 @@ Atributo que se usa para definir los algoritmos usados al escribir el archivo ds
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------|--------------------------------------|
 | CN                | ms-DNS-DS-Record-Algorithms          |
 | Ldap-Display-Name | msDNS-DSRecordAlgorithms             |
 | Size              | \-                                   |
-| Privilegio actualizar  | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2134              |
 | System-Id-Guid    | 5c5b7ad2-20fa-44bb-beb3-34b9c0f65579 |
@@ -48,7 +48,7 @@ Atributo que se usa para definir los algoritmos usados al escribir el archivo ds
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|------------------------------------------|
 | Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |
@@ -61,7 +61,7 @@ Atributo que se usa para definir los algoritmos usados al escribir el archivo ds
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000008                               |
 | System-Flags           | 0x00000010                               |
-| Clases usadas en        | [**Zona DNS**](c-dnszone.md)<br/> |
+| Clases usadas en        | [**Dns-Zone**](c-dnszone.md)<br/> |
 
 
 

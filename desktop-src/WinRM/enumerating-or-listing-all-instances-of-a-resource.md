@@ -1,6 +1,6 @@
 ---
 title: Enumerar o enumerar todas las instancias de un recurso
-description: El método Session. Enumerate es el Administración remota de Windows enfoque para obtener todas las instancias de un recurso especificado.
+description: El método Session.Enumerate es el Windows de administración remota para obtener todas las instancias de un recurso especificado.
 ms.assetid: c50c37bf-e19a-473b-8d27-ab3bb4ec86a0
 ms.tgt_platform: multiple
 ms.topic: article
@@ -10,20 +10,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 54587ce97ec6ed5e87af8b0424a6a18d684f7698
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 1f510d0e0cc8115ca4dca7c7e46dd5e987ef0dd15dd4fa7d92e47d737e467d8f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104271322"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119679995"
 ---
 # <a name="enumerating-or-listing-all-instances-of-a-resource"></a>Enumerar o enumerar todas las instancias de un recurso
 
-El método [**Session. Enumerate**](session-enumerate.md) es el administración remota de Windows enfoque para obtener todas las instancias de un recurso especificado.
+El [**método Session.Enumerate**](session-enumerate.md) es el Windows de administración remota para obtener todas las instancias de un recurso especificado.
 
-El método [**Session. Enumerate**](session-enumerate.md) no obtiene una colección en un objeto [**SWbemObjectSet**](/windows/desktop/WmiSdk/swbemobjectset) como una llamada a [**SWbemService.ExecQuery**](/windows/desktop/WmiSdk/swbemservices-execquery) con una [consulta WMI](/windows/desktop/WmiSdk/querying-wmi) como parámetro (por ejemplo, `ExecQuery("SELECT * from Win32_LogicalDisk")` ) o una llamada a un método como [**SWbemObject. instances \_**](/windows/desktop/WmiSdk/swbemobject-instances-). **Session. Enumerate** y los métodos del objeto de [**enumerador**](enumerator.md) son mucho más similares a la operación del objeto [TextStream](/previous-versions//312a5kbt(v=vs.85)) de scripting que se usa para leer archivos como una secuencia.
+El [**método Session.Enumerate**](session-enumerate.md) no obtiene una colección en un objeto [**SWbemObjectSet**](/windows/desktop/WmiSdk/swbemobjectset) como una llamada [**SWbemService.ExecQuery**](/windows/desktop/WmiSdk/swbemservices-execquery) con una consulta [WMI](/windows/desktop/WmiSdk/querying-wmi) como parámetro (por ejemplo, ) ni una llamada a un método como `ExecQuery("SELECT * from Win32_LogicalDisk")` [**SWbemObject.Instances \_**](/windows/desktop/WmiSdk/swbemobject-instances-). **Los métodos de objeto Session.Enumerate** y [**Enumerator**](enumerator.md) son mucho más similares al funcionamiento del objeto [TextStream](/previous-versions//312a5kbt(v=vs.85)) de scripting que se usa para leer archivos como una secuencia.
 
-Para leer archivos como una secuencia de texto, debe crear el objeto [TextStream](/previous-versions//312a5kbt(v=vs.85)) scripting y llamar al método [TextStream. ReadLine](/previous-versions//h7se9d4f(v=vs.85)) para leer cada línea del archivo. De forma similar, puede llamar al método [**Session. Enumerate**](session-enumerate.md) para obtener un objeto de [**enumerador**](enumerator.md) y llamar al método [**enumerador. ReadItem**](enumerator-readitem.md) para obtener el elemento siguiente. Como ocurre cuando se lee desde el archivo de texto, se puede llamar a la propiedad [**enumerador. AtEndOfStream**](enumerator-atendofstream.md) para comprobar si se ha alcanzado el final de los elementos de datos.
+Para leer archivos como una secuencia de texto, debe crear el objeto [TextStream](/previous-versions//312a5kbt(v=vs.85)) de scripting y llamar al [método TextStream.Readline](/previous-versions//h7se9d4f(v=vs.85)) para leer cada línea del archivo. De forma similar, puede llamar al método [**Session.Enumerate**](session-enumerate.md) para obtener un objeto [**Enumerator**](enumerator.md) y llamar al método [**Enumerator.ReadItem**](enumerator-readitem.md) para obtener el siguiente elemento. Como ocurre al leer desde el archivo de texto, puede llamar a la propiedad [**Enumerator.AtEndOfStream**](enumerator-atendofstream.md) para comprobar si ha llegado al final de los elementos de datos.
 
 **Para enumerar un recurso**
 
@@ -47,7 +47,7 @@ Para leer archivos como una secuencia de texto, debe crear el objeto [TextStream
 
     
 
-3.  Llame al método [**Session. Enumerate**](session-enumerate.md) . Esta llamada inicia una enumeración. En WinRM, una operación de enumeración no obtiene una colección del mismo modo que lo hace WMI. En su lugar, el método **Session. Enumerate** establece un contexto de enumeración de protocolo WS-Management que se mantiene en el objeto de [**enumerador**](enumerator.md) .
+3.  Llame al [**método Session.Enumerate.**](session-enumerate.md) Esta llamada inicia una enumeración . En WinRM, una operación de enumeración no obtiene una colección de la misma manera que WMI. En su lugar, **el método Session.Enumerate** establece un WS-Management de enumeración de protocolo que se mantiene en el [**objeto Enumerator.**](enumerator.md)
 
     ```VB
     Set EnumJobs = objSession.Enumerate( strResource )
@@ -55,7 +55,7 @@ Para leer archivos como una secuencia de texto, debe crear el objeto [TextStream
 
     
 
-4.  Llame al método [**enumerador. ReadItem**](enumerator-readitem.md) para obtener el siguiente elemento de los resultados. En WS-Management protocolo, esto corresponde a la operación de extracción. Use el método [**enumerador. AtEndOfStream**](enumerator-atendofstream.md) como control para saber cuándo detener la lectura.
+4.  Llame al [**método Enumerator.ReadItem**](enumerator-readitem.md) para obtener el siguiente elemento de los resultados. En WS-Management protocolo, corresponde a la operación de extracción. Use el [**método Enumerator.AtEndOfStream**](enumerator-atendofstream.md) como control para saber cuándo se debe detener la lectura.
 
     ```VB
     While Not EnumJobs.AtEndOfStream
@@ -66,7 +66,7 @@ Para leer archivos como una secuencia de texto, debe crear el objeto [TextStream
 
     
 
-En el siguiente ejemplo de código VBScript se muestra el script completo.
+En el siguiente ejemplo de código de VBScript se muestra el script completo.
 
 
 ```VB
@@ -103,15 +103,15 @@ End Sub
 
 <dl> <dt>
 
-[Acerca de Administración remota de Windows](about-windows-remote-management.md)
+[Acerca de Windows administración remota](about-windows-remote-management.md)
 </dt> <dt>
 
-[Usar Administración remota de Windows](using-windows-remote-management.md)
+[Uso de Windows administración remota](using-windows-remote-management.md)
 </dt> <dt>
 
-[Referencia de Administración remota de Windows](windows-remote-management-reference.md)
+[Windows Referencia de administración remota](windows-remote-management-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

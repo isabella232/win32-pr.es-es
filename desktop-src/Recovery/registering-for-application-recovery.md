@@ -1,45 +1,45 @@
 ---
-title: Registro para la recuperación de la aplicación
+title: Registro para Application Recovery
 ms.assetid: 2940b1b2-a0ca-4f81-a576-ae6d53ffd4a8
-description: Más información sobre el registro de la recuperación de aplicaciones
+description: 'Más información sobre: Registro para Application Recovery'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 056232bc2a8a10857ff07900ce261d95ed719b81
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3ce2a67a36b26895fdc16652dd271b3b244d0860c14c268144c1357fa3cf51c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120024595"
 ---
-# <a name="registering-for-application-recovery"></a>Registro para la recuperación de la aplicación
+# <a name="registering-for-application-recovery"></a>Registro para Application Recovery
 
-En esta sección se proporcionan detalles sobre cómo implementar una característica de recuperación en la aplicación. Considere la posibilidad de implementar esta característica para administrar los siguientes casos:
+En esta sección se proporcionan detalles sobre cómo implementar una característica de recuperación en la aplicación. Considere la posibilidad de implementar esta característica para controlar los casos siguientes:
 
 -   [Recuperación cuando una aplicación experimenta una excepción no controlada o deja de responder](#recovering-when-an-application-experiences-an-unhandled-exception-or-stops-responding)
 
-    Evita la pérdida de datos cuando la aplicación deja de funcionar de forma inesperada.
+    Evita la pérdida de datos cuando la aplicación deja de funcionar inesperadamente.
 
--   [Guardar los datos y el estado de la aplicación cuando se cierra la aplicación debido a una actualización de software](#saving-data-and-application-state-when-application-is-being-closed-due-to-a-software-update)
+-   [Guardar los datos y el estado de la aplicación cuando la aplicación se cierra debido a una actualización de software](#saving-data-and-application-state-when-application-is-being-closed-due-to-a-software-update)
 
-    Permite al usuario obtener datos de la aplicación sin problemas cuando se cierra la aplicación debido a una instalación de actualización de software (que puede estar ocurriendo sin ofrecer al usuario la oportunidad de guardar los datos).
+    Permite a un usuario recuperar sin problemas los datos de la aplicación cuando la aplicación se cierra debido a una instalación de actualización de software (lo que puede estar ocurriendo sin dar al usuario la oportunidad de guardar los datos).
 
 ## <a name="recovering-when-an-application-experiences-an-unhandled-exception-or-stops-responding"></a>Recuperación cuando una aplicación experimenta una excepción no controlada o deja de responder
 
-Para registrar una devolución de llamada de recuperación, llame a la función [**RegisterApplicationRecoveryCallback**](/windows/win32/api/winbase/nf-winbase-registerapplicationrecoverycallback) . [Informe de errores de Windows (WER)](/windows/desktop/wer/windows-error-reporting) llama a la devolución de llamada de recuperación antes de que se cierre la aplicación debido a una excepción no controlada o la aplicación no responde.
+Para registrar una devolución de llamada de recuperación, llame [**a la función RegisterApplicationRecoveryCallback.**](/windows/win32/api/winbase/nf-winbase-registerapplicationrecoverycallback) [Informe de errores de Windows (WER)](/windows/desktop/wer/windows-error-reporting) llama a la devolución de llamada de recuperación antes de que la aplicación se cierre debido a una excepción no controlada o a que la aplicación no responda.
 
-La devolución de llamada de recuperación se utiliza para intentar guardar los datos y la información de estado antes de que finalice la aplicación. Después, podría usar los datos guardados y la información de estado cuando se reinicie la aplicación.
+Use la devolución de llamada de recuperación para intentar guardar datos y la información de estado antes de que finalice la aplicación. Después, podría usar los datos guardados y la información de estado cuando se reinicie la aplicación.
 
-Durante el proceso de recuperación, debe llamar a la función [**ApplicationRecoveryInProgress**](/windows/win32/api/winbase/nf-winbase-applicationrecoveryinprogress) en el intervalo de ping especificado; de lo contrario, se finaliza el proceso de recuperación. La llamada a **ApplicationRecoveryInProgress** permite que wer sepa que todavía está recuperando datos de forma activa. Una vez completado el proceso de recuperación, llame a la función [**ApplicationRecoveryFinished**](/windows/win32/api/winbase/nf-winbase-applicationrecoveryfinished) . Tenga en cuenta que la función **ApplicationRecoveryFinished** debe ser la última llamada que realice antes de salir porque la función finaliza inmediatamente la aplicación.
+Durante el proceso de recuperación, debe llamar a [**la función ApplicationRecoveryInProgress**](/windows/win32/api/winbase/nf-winbase-applicationrecoveryinprogress) dentro del intervalo de ping especificado; De lo contrario, se finaliza el proceso de recuperación. Llamar **a ApplicationRecoveryInProgress** permite a WER saber que todavía está recuperando datos de forma activa. Una vez completado el proceso de recuperación, llame a [**la función ApplicationRecoveryFinished.**](/windows/win32/api/winbase/nf-winbase-applicationrecoveryfinished) Tenga en cuenta **que la función ApplicationRecoveryFinished** debe ser la última llamada que realice antes de salir porque la función finaliza inmediatamente la aplicación.
 
-Considere la posibilidad de guardar periódicamente copias temporales de los datos y la información de estado durante el curso normal del proceso de la aplicación. Guardar periódicamente los datos puede ahorrar tiempo en el proceso de recuperación.
+Debe considerar la posibilidad de guardar periódicamente copias temporales de los datos y la información de estado durante el curso normal del proceso de aplicación. Guardar periódicamente los datos puede ahorrar tiempo en el proceso de recuperación.
 
-## <a name="saving-data-and-application-state-when-application-is-being-closed-due-to-a-software-update"></a>Guardar los datos y el estado de la aplicación cuando se cierra la aplicación debido a una actualización de software
+## <a name="saving-data-and-application-state-when-application-is-being-closed-due-to-a-software-update"></a>Guardar los datos y el estado de la aplicación cuando la aplicación se cierra debido a una actualización de software
 
-Si se puede actualizar una aplicación Windows, la aplicación también debe procesar los mensajes [**WM \_ QUERYENDSESSION**](/windows/desktop/Shutdown/wm-queryendsession) y [**WM \_ ENDSESSION**](/windows/desktop/Shutdown/wm-endsession) . El instalador envía estos mensajes cuando el instalador necesita que la aplicación se cierre para completar la instalación o cuando es necesario reiniciar para completar la instalación. Tenga en cuenta que, en este caso, la aplicación tiene menos tiempo para realizar la recuperación. Por ejemplo, la aplicación debe responder a cada mensaje en un plazo de cinco segundos.
+Si se puede Windows aplicación, la aplicación también debe procesar los mensajes [**\_ WM QUERYENDSESSION**](/windows/desktop/Shutdown/wm-queryendsession) [**y WM \_ ENDSESSION.**](/windows/desktop/Shutdown/wm-endsession) El instalador envía estos mensajes cuando el instalador necesita que la aplicación se apague para completar la instalación o cuando se requiera un reinicio para completar la instalación. Tenga en cuenta que, en este caso, la aplicación tiene menos tiempo para realizar la recuperación. Por ejemplo, la aplicación debe responder a cada mensaje en un plazo de cinco segundos.
 
-En el caso de las aplicaciones de consola que podrían actualizarse, considere la posibilidad de controlar las \_ notificaciones de eventos de Ctrl C \_ . Para obtener un ejemplo, consulte [el registro para el reinicio de la aplicación](registering-for-application-restart.md). El instalador envía esta notificación cuando necesita que la aplicación se cierre para completar la actualización. La aplicación tiene 30 segundos para controlar la notificación.
+En el caso de las aplicaciones de consola que se podrían actualizar, debe considerar la posibilidad de controlar las notificaciones CTRL \_ C \_ EVENT. Para obtener un ejemplo, vea [Registro para reiniciar la aplicación.](registering-for-application-restart.md) El instalador envía esta notificación cuando necesita que la aplicación se apague para completar la actualización. La aplicación tiene 30 segundos para controlar la notificación.
 
-En el ejemplo siguiente se muestra cómo registrar para recuperación, una implementación de devolución de llamada de recuperación simple y cómo procesar los mensajes [**WM \_ QUERYENDSESSION**](/windows/desktop/Shutdown/wm-queryendsession) y [**WM \_ ENDSESSION**](/windows/desktop/Shutdown/wm-endsession) .
+En el ejemplo siguiente se muestra cómo registrarse para la recuperación, una implementación de devolución de llamada de recuperación simple y cómo procesar los mensajes [**\_ WM QUERYENDSESSION**](/windows/desktop/Shutdown/wm-queryendsession) y [**WM \_ ENDSESSION.**](/windows/desktop/Shutdown/wm-endsession)
 
 
 ```C++
@@ -556,7 +556,7 @@ BOOL IsRestartSelected()
 
 
 
-A continuación se incluye el archivo de inclusión de recover. h para el ejemplo de recuperación.
+El siguiente es el archivo de incluir recover.h para el ejemplo de recuperación.
 
 
 ```C++
@@ -567,7 +567,7 @@ A continuación se incluye el archivo de inclusión de recover. h para el ejempl
 
 
 
-A continuación se encuentra el archivo de recursos recover. RC para el ejemplo de recuperación.
+A continuación se muestra el archivo de recursos recover.rc para el ejemplo de recuperación.
 
 
 ```C++
@@ -657,7 +657,7 @@ END
 
 
 
-A continuación se incluye el archivo de inclusión Resource. h para el ejemplo de recuperación.
+A continuación se muestra el archivo de incluyeción resource.h para el ejemplo de recuperación.
 
 
 ```C++

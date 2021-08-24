@@ -4,12 +4,12 @@ ms.assetid: e3c9e7a8-8de6-4871-b386-2186883f2ee7
 title: Elemento Horizontal
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 50de08008d0243d27f8a8c5f64d6aeac5ddbcc1c
-ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
+ms.openlocfilehash: 97b66e8557d73570ce1a0b7eb7217c02435c51a6
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111432387"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122482691"
 ---
 # <a name="horizontal-element"></a>Elemento Horizontal
 
@@ -33,62 +33,14 @@ Ninguno.
 
 
 
-<table>
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Atributo</th>
-<th>Tipo</th>
-<th>Requerido</th>
-<th>Descripción</th>
-<th>Valores posibles</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Estilo</strong></td>
-<td><a href="linelayoutstyletype-simple-type.md"><strong>LineLayoutStyleType</strong></a> simpleType</td>
-<td>Requerido</td>
-<td>Especifica el tipo de línea que se va a dibujar.</td>
-<td><ul>
-<li>Ninguno</li>
-<li>Sólido</li>
-<li>Guión</li>
-<li>Punto</li>
-<li>DashDot</li>
-<li>DashDotDot</li>
-<li>Double</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><strong>Color</strong></td>
-<td><a href="colortype-simple-type.md"><strong>ColorType</strong></a> simpleType</td>
-<td>Opcionales</td>
-<td>Color del elemento.</td>
-<td>Valor RGB hexadecimal. Coincide con la siguiente expresión regular: #[0-9a-zA-Z] {6} . Por ejemplo, #4a79B5.<br/></td>
-</tr>
-<tr class="odd">
-<td><strong>SpacingBefore</strong></td>
-<td><strong>xs:nonNegativeInteger</strong></td>
-<td>Opcionales</td>
-<td>Espaciado delante del elemento.</td>
-<td>Cualquier entero no negativo.</td>
-</tr>
-<tr class="even">
-<td><strong>SpacingBetween</strong></td>
-<td><strong>xs:nonNegativeInteger</strong></td>
-<td>Opcionales</td>
-<td>Espaciado entre este elemento y los elementos circundantes.</td>
-<td>Cualquier entero no negativo.</td>
-</tr>
-</tbody>
-</table>
+
+| Atributo | Tipo | Requerido | Descripción | Valores posibles | 
+|-----------|------|----------|-------------|-----------------|
+| <strong>Estilo</strong> | <a href="linelayoutstyletype-simple-type.md"><strong>LineLayoutStyleType</strong></a> simpleType | Requerido | Especifica el tipo de línea que se va a dibujar. | <ul><li>Ninguno</li><li>Sólido</li><li>Guión</li><li>Punto</li><li>DashDot</li><li>DashDotDot</li><li>Doble</li></ul> | 
+| <strong>Color</strong> | <a href="colortype-simple-type.md"><strong>ColorType</strong></a> simpleType | Opcionales | Color del elemento. | Valor RGB hexadecimal. Coincide con la siguiente expresión regular: #[0-9a-zA-Z] {6} . Por ejemplo, #4a79B5.<br /> | 
+| <strong>SpacingBefore</strong> | <strong>xs:nonNegativeInteger</strong> | Opcionales | Espaciado delante del elemento . | Cualquier entero no negativo. | 
+| <strong>SpacingBetween</strong> | <strong>xs:nonNegativeInteger</strong> | Opcionales | Espaciado entre este elemento y los elementos circundantes. | Cualquier entero no negativo. | 
+
 
 
 

@@ -1,8 +1,8 @@
 ---
-description: La \_ clase VideoBIOSFeatureVideoBIOSElements de CIM asocia una característica de BIOS de vídeo y sus elementos de BIOS de vídeo agregados.
+description: La clase CIM VideoBIOSFeatureVideoBIOSElements asocia una característica bios de vídeo y sus elementos bios \_ de vídeo agregados.
 ms.assetid: f1419505-213f-450e-8c96-45f547dd71da
 ms.tgt_platform: multiple
-title: CIM_VideoBIOSFeatureVideoBIOSElements (clase)
+title: CIM_VideoBIOSFeatureVideoBIOSElements clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,23 +16,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 421b6814499240b3364ac1aed622e2b7c96e7313
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 97ef526077ebc38754519392c0b53f983e1ed3f58651bee6204f25c0412505f4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153047"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119817515"
 ---
-# <a name="cim_videobiosfeaturevideobioselements-class"></a>\_Clase VideoBIOSFeatureVideoBIOSElements de CIM
+# <a name="cim_videobiosfeaturevideobioselements-class"></a>Cim \_ VideoBIOSFeatureVideoBIOSElements (clase)
 
-La **clase \_ VideoBIOSFeatureVideoBIOSElements de CIM** asocia una característica de BIOS de vídeo y sus elementos de BIOS de vídeo agregados.
+La **clase CIM \_ VideoBIOSFeatureVideoBIOSElements** asocia una característica bios de vídeo y sus elementos bios de vídeo agregados.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,29 +47,29 @@ class CIM_VideoBIOSFeatureVideoBIOSElements : CIM_SoftwareFeatureSoftwareElement
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ VideoBIOSFeatureVideoBIOSElements** tiene estos tipos de miembros:
+La **clase \_ Cim VideoBIOSFeatureVideoBIOSElements** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ VideoBIOSFeatureVideoBIOSElements** tiene estas propiedades.
+La **clase \_ Cim VideoBIOSFeatureVideoBIOSElements** tiene estas propiedades.
 
 <dl> <dt>
 
 **GroupComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **CIM \_ VideoBIOSFeature**
+Tipo de datos: **\_ CIM VideoBIOSFeature**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
 </dt> </dl>
 
-Un [**\_ VideoBIOSFeature de CIM**](cim-videobiosfeature.md) que describe la característica BIOS de vídeo.
+Vídeo [**\_ CIMBIOSFeature que**](cim-videobiosfeature.md) describe la característica BIOS de vídeo.
 
 </dd> <dt>
 
@@ -82,31 +82,31 @@ Tipo de datos: **CIM \_ VideoBIOSElement**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
 </dt> </dl>
 
-Un [**\_ VideoBIOSElement de CIM**](cim-videobioselement.md) que describe el elemento de BIOS de vídeo que implementa las funciones descritas en la característica BIOS de vídeo.
+Un [**elemento \_ VideoBIOSElement de CIM**](cim-videobioselement.md) que describe el elemento BIOS de vídeo que implementa las funcionalidades descritas por la característica BIOS de vídeo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase **CIM \_ VideoBIOSFeatureVideoBIOSElements** se deriva de [**\_ SoftwareFeatureSoftwareElements de CIM**](cim-softwarefeaturesoftwareelements.md).
+La **clase \_ CIM VideoBIOSFeatureVideoBIOSElements** se deriva de [**CIM \_ SoftwareFeatureSoftwareElements**](cim-softwarefeaturesoftwareelements.md).
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -115,7 +115,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[**\_SOFTWAREFEATURESOFTWAREELEMENTS CIM**](cim-softwarefeaturesoftwareelements.md)
+[**CIM \_ SoftwareFeatureSoftwareElements**](cim-softwarefeaturesoftwareelements.md)
 </dt> </dl>
 
  

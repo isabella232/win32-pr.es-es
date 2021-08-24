@@ -1,7 +1,7 @@
 ---
 description: Agrega dos vectores 3D.
 ms.assetid: 2979e291-786b-4bc9-b584-421f08db949a
-title: Función D3DXVec3Add (D3dx9math. h)
+title: Función D3DXVec3Add (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 16fb06c5e7b32506a94a5828fe7f5e1305afff7b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 126eda973a2a8db9cf4431790ad6d0fee466cc71bb6d6b5a4f0af1df402f6a05
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698352"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120119045"
 ---
-# <a name="d3dxvec3add-function"></a>D3DXVec3Add función)
+# <a name="d3dxvec3add-function"></a>Función D3DXVec3Add
 
 Agrega dos vectores 3D.
 
@@ -47,25 +47,25 @@ D3DXVECTOR3* D3DXVec3Add(
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Puntero a la estructura [**D3DXVECTOR3**](d3dxvector3.md) que es el resultado de la operación.
+Puntero a la [**estructura D3DXVECTOR3**](d3dxvector3.md) que es el resultado de la operación.
 
 </dd> <dt>
 
-*pV1* \[ de\]
+*pV1* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntero a una estructura de [**D3DXVECTOR3**](d3dxvector3.md) de origen.
+Puntero a una estructura [**D3DXVECTOR3 de**](d3dxvector3.md) origen.
 
 </dd> <dt>
 
-*pV2* \[ de\]
+*pV2* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntero a una estructura de [**D3DXVECTOR3**](d3dxvector3.md) de origen.
+Puntero a una estructura [**D3DXVECTOR3 de**](d3dxvector3.md) origen.
 
 </dd> </dl>
 
@@ -73,11 +73,11 @@ Puntero a una estructura de [**D3DXVECTOR3**](d3dxvector3.md) de origen.
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Puntero a una estructura [**D3DXVECTOR3**](d3dxvector3.md) que es la suma de los dos vectores 3D.
+Puntero a una [**estructura D3DXVECTOR3**](d3dxvector3.md) que es la suma de los dos vectores 3D.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro *pOut* . De esta manera, la función **D3DXVec3Add** se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXVec3Add** se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,8 +85,8 @@ El valor devuelto para esta función es el mismo valor que se devuelve en el par
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

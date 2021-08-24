@@ -1,11 +1,11 @@
 ---
-title: Propiedad TaskService. Connected
-description: En el caso de scripting, obtiene un valor booleano que indica si está conectado al servicio Programador de tareas.
+title: Propiedad TaskService.Connected
+description: Para el scripting, obtiene un valor booleano que indica si está conectado al Programador de tareas servicio.
 ms.assetid: 2b04def0-c4eb-4c81-8aa0-6a5b47944243
 keywords:
-- Propiedad conectada Programador de tareas
-- Propiedad Connected Programador de tareas, objeto TaskService
-- Programador de tareas de objeto TaskService, propiedad conectada
+- Propiedades conectadas Programador de tareas
+- Propiedad conectada Programador de tareas , objeto TaskService
+- Objeto TaskService Programador de tareas propiedad , Connected
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 07e39d75f72139cfa141e969acadfc0a7ea2c019
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 60e66e22092d31a29cb15ca9c85b0bdea20f765e4244f39b8507c525e27383b7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535476"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119772015"
 ---
-# <a name="taskserviceconnected-property"></a>Propiedad TaskService. Connected
+# <a name="taskserviceconnected-property"></a>Propiedad TaskService.Connected
 
-En el caso de scripting, obtiene un valor booleano que indica si está conectado al servicio Programador de tareas.
+Para el scripting, obtiene un valor booleano que indica si está conectado al Programador de tareas servicio.
 
 Esta propiedad es de solo lectura.
 
@@ -40,7 +40,7 @@ TaskService.Connected
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Valor booleano que indica si está conectado al servicio de Programador de tareas.
+Valor booleano que indica si está conectado al Programador de tareas servicio.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -48,9 +48,9 @@ Valor booleano que indica si está conectado al servicio de Programador de tarea
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

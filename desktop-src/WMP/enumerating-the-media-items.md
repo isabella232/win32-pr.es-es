@@ -1,10 +1,10 @@
 ---
-title: Enumerar los elementos multimedia
-description: Enumerar los elementos multimedia
+title: Enumeración de los elementos multimedia
+description: Enumeración de los elementos multimedia
 ms.assetid: 1819b4c3-57ae-48fc-8a01-b699b5802b64
 keywords:
 - Reproductor de Windows Media,listas de reproducción de sincronización
-- Reproductor de Windows Media de objetos, listas de reproducción de sincronización
+- Reproductor de Windows Media modelo de objetos, listas de reproducción de sincronización
 - modelo de objetos, listas de reproducción de sincronización
 - Reproductor de Windows Media Móvil, listas de reproducción de sincronización
 - Reproductor de Windows Media ActiveX control, listas de reproducción de sincronización
@@ -14,7 +14,7 @@ keywords:
 - listas de reproducción de metarchivo, sincronización
 - Windows Listas de reproducción de metarchivo multimedia, sincronización
 - listas de reproducción de sincronización, enumeración
-- dispositivos portátiles, enumerar
+- dispositivos portátiles, enumeración
 - enumeraciones, listas de reproducción de sincronización
 ms.topic: article
 ms.date: 05/31/2018
@@ -25,7 +25,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119650915"
 ---
-# <a name="enumerating-the-media-items"></a>Enumerar los elementos multimedia
+# <a name="enumerating-the-media-items"></a>Enumeración de los elementos multimedia
 
 El código siguiente muestra los elementos multimedia contenidos en una lista de reproducción individual. Este código se ejecuta cuando el usuario hace clic en una lista de reproducción en el control ListView identificado por IDC \_ PLVIEW.
 
@@ -153,7 +153,7 @@ Para la implementación de la función GetPartnershipSyncState, vea Determinar e
 
 <dl> <dt>
 
-[**IWMPMedia (interfaz)**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpmedia)
+[**Interfaz IWMPMedia**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpmedia)
 </dt> <dt>
 
 [**IWMPPlaylist (Interfaz)**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpplaylist)

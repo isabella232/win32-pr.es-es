@@ -1,9 +1,9 @@
 ---
-title: 'TextureCubeArray:: GatherCmpBlue (S, Float, Float, uint) (función)'
-description: 'En el caso de cuatro valores de textura que se utilizarían en una operación de filtrado bilineal, devuelve una comparación de su componente azul con respecto a un valor de comparación junto con el estado de asignación de mosaicos. | TextureCubeArray:: GatherCmpBlue (S, Float, Float, uint) (función)'
+title: Función TextureCubeArray::GatherCmpBlue(S,float,float,uint)
+description: Para cuatro valores de texel que se usarían en una operación de filtrado bi linear, devuelve una comparación de su componente azul con un valor de comparación junto con el estado de asignación de mosaicos. | Función TextureCubeArray::GatherCmpBlue(S,float,float,uint)
 ms.assetid: 81F82EB1-D662-4A18-856F-26AE5C1A41C6
 keywords:
-- GatherCmpBlue de función HLSL
+- Función HLSL de GatherCmpBlue
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9de8d578706cd0799bd2132f05b8a31b7daa8afe
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 675c58a9c952bd6901058b776cbc74cb81039c8e7601268dd8181f18068046d8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104280022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120117945"
 ---
-# <a name="texturecubearraygathercmpbluesfloatfloatuint-function"></a>TextureCubeArray:: GatherCmpBlue (S, Float, Float, uint) (función)
+# <a name="texturecubearraygathercmpbluesfloatfloatuint-function"></a>Función TextureCubeArray::GatherCmpBlue(S,float,float,uint)
 
-En el caso de cuatro valores de textura que se utilizarían en una operación de filtrado bilineal, devuelve una comparación de su componente azul con respecto a un valor de comparación junto con el estado de asignación de mosaicos.
+Para cuatro valores de texel que se usarían en una operación de filtrado bi linear, devuelve una comparación de su componente azul con un valor de comparación junto con el estado de asignación de mosaicos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,34 +47,34 @@ TemplateType GatherCmpBlue(
 
 Tipo: **SamplerState**
 
-Índice de muestra de base cero.
+Índice de sampler de base cero.
 
 </dd> <dt>
 
-*Ubicación* \[ de de\]
+*Ubicación* \[ En\]
 </dt> <dd>
 
 Tipo: **float**
 
-Coordenadas de ejemplo (u, v).
+Coordenadas de ejemplo (u,v).
 
 </dd> <dt>
 
-*CompareValue* \[ de\]
+*CompareValue* \[ En\]
 </dt> <dd>
 
 Tipo: **float**
 
-Valor que se va a comparar cada uno con cada valor muestreado.
+Valor que se compara con cada valor muestreado.
 
 </dd> <dt>
 
-*Estado* \[ de enuncia\]
+*Estado* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Estado de la operación. No se puede tener acceso directamente al estado. en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped**](checkaccessfullymapped.md) . **CheckAccessFullyMapped** devuelve **true** si todos los valores de la operación de **ejemplo**, **recopilación** o **carga** correspondiente han tenido acceso a los mosaicos asignados en un [recurso en mosaico](/windows/desktop/direct3d11/direct3d-11-2-features). Si se tomó algún valor de un mosaico sin asignar, **CheckAccessFullyMapped** devuelve **false**.
+Estado de la operación. No se puede acceder al estado directamente; en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** devuelve **TRUE** si todos los valores de la operación **Sample**, **Gather** o **Load** correspondientes accedieron a iconos asignados en un recurso [en mosaico.](/windows/desktop/direct3d11/direct3d-11-2-features) Si se han tomado valores de un icono no asociado, **CheckAccessFullyMapped** devuelve **FALSE.**
 
 </dd> </dl>
 
@@ -82,17 +82,17 @@ Estado de la operación. No se puede tener acceso directamente al estado. en su 
 
 Tipo: **TemplateType**
 
-Un valor de cuatro componentes cuyo tipo es el mismo que el tipo de plantilla.
+Valor de cuatro componentes cuyo tipo es el mismo que el tipo de plantilla.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los ejemplos de textura se pueden usar para la interpolación bilineal.
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -104,7 +104,7 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
 <dl> <dt>
 
-[Métodos GatherCmpBlue](texturecubearray-gathercmpblue.md)
+[Métodos de GatherCmpBlue](texturecubearray-gathercmpblue.md)
 </dt> <dt>
 
 [**TextureCubeArray**](texturecubearray.md)

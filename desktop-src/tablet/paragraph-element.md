@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - windows.ui.xaml.documents.h
-ms.openlocfilehash: 2f246294c80814ec809c0a1ca035fcb4741c30c5
-ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
+ms.openlocfilehash: 877bede54ef714a011903424b1f323f004264affefedbcfae0ab44f2dcf58816
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111432237"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119843405"
 ---
 # <a name="paragraph-element"></a>Elemento Paragraph
 
@@ -46,14 +46,14 @@ Contiene un párrafo.
 
 
 
-| Atributo       | Tipo                      | Requerido | Descripción                                                                             | Valores posibles           |
+| Atributo       | Tipo                      | Obligatorio | Descripción                                                                             | Valores posibles           |
 |-----------------|---------------------------|----------|-----------------------------------------------------------------------------------------|---------------------------|
-| **Left**        | **xs:integer**            | Requerido | Distancia desde el origen hasta el punto situado más a la izquierda en el cuadro de límite del elemento. | Cualquier número entero.              |
-| **Top** (Principales)         | **xs:integer**            | Requerido | Distancia desde el origen hasta el punto superior del cuadro de límite del elemento.  | Cualquier número entero.              |
-| **Width**       | **xs:nonNegativeInteger** | Requerido | Ancho del cuadro de límite del elemento.                                          | Cualquier entero no negativo. |
-| **Height**      | **xs:nonNegativeInteger** | Requerido | Alto del cuadro de límite para el elemento.                                         | Cualquier entero no negativo. |
-| **BlockNumber** | **xs:nonNegativeInteger** | Requerido | Número de bloque.                                                                           | Cualquier entero no negativo. |
-| **LineNumber**  | **xs:nonNegativeInteger** | Requerido | Línea en la que comienza el párrafo.                                                 | Cualquier entero no negativo. |
+| **Left**        | **xs:integer**            | Obligatorio | Distancia desde el origen hasta el punto situado más a la izquierda en el cuadro de límite del elemento. | Cualquier número entero.              |
+| **Top** (Principales)         | **xs:integer**            | Obligatorio | Distancia desde el origen hasta el punto superior del cuadro de límite del elemento.  | Cualquier número entero.              |
+| **Width**       | **xs:nonNegativeInteger** | Obligatorio | Ancho del cuadro de límite para el elemento.                                          | Cualquier entero no negativo. |
+| **Height**      | **xs:nonNegativeInteger** | Obligatorio | Alto del cuadro de límite para el elemento.                                         | Cualquier entero no negativo. |
+| **BlockNumber** | **xs:nonNegativeInteger** | Obligatorio | Número de bloque.                                                                           | Cualquier entero no negativo. |
+| **LineNumber**  | **xs:nonNegativeInteger** | Obligatorio | Línea en la que comienza el párrafo.                                                 | Cualquier entero no negativo. |
 
 
 

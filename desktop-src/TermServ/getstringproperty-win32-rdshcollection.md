@@ -1,12 +1,12 @@
 ---
-title: Método GetStringProperty de la clase Win32_RDSHCollection
-description: Recupera un valor de propiedad de cadena de un \_ objeto RDSHCollection de Win32.
+title: Método GetStringProperty de la Win32_RDSHCollection clase
+description: Recupera un valor de propiedad de cadena de un objeto \_ RDSHCollection de Win32.
 ms.assetid: 8e97cd91-0e45-4d87-acfb-ee7d70376ce0
 ms.tgt_platform: multiple
 keywords:
 - Método GetStringProperty Servicios de Escritorio remoto
-- Método GetStringProperty Servicios de Escritorio remoto, clase Win32_RDSHCollection
-- Win32_RDSHCollection de clase Servicios de Escritorio remoto, método GetStringProperty
+- Método GetStringProperty Servicios de Escritorio remoto , Win32_RDSHCollection clase
+- Win32_RDSHCollection clase Servicios de Escritorio remoto método , GetStringProperty
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1895f05317850374a4f4b24d407a4c4ace9c5db7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 81aa383e339bda2620c4accf42f3cd810d867ae6f1e9c0d2716ed688583a1972
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996081"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119771835"
 ---
-# <a name="getstringproperty-method-of-the-win32_rdshcollection-class"></a>Método GetStringProperty de la \_ clase RDSHCollection de Win32
+# <a name="getstringproperty-method-of-the-win32_rdshcollection-class"></a>Método GetStringProperty de la clase RDSHCollection de Win32 \_
 
-Recupera un valor de propiedad de cadena de un objeto [**\_ RDSHCollection de Win32**](win32-rdshcollection.md) .
+Recupera un valor de propiedad de cadena de [**un objeto \_ RDSHCollection de Win32.**](win32-rdshcollection.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,23 +44,23 @@ uint32 GetStringProperty(
 
 <dl> <dt>
 
-*Clave* \[ de de\]
+*Clave* \[ En\]
 </dt> <dd>
 
-Clave que identifica la propiedad que se va a recuperar.
+Clave que identifica la propiedad que se debe recuperar.
 
 </dd> <dt>
 
-*Valor* \[ de enuncia\]
+*Valor* \[ out\]
 </dt> <dd>
 
-Recibe el valor de la propiedad recuperada.
+Recibe el valor de propiedad recuperado.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error de WMI.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error WMI.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,8 +70,8 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                              |
-| Espacio de nombres<br/>                | RDMs raíz de \\ CIMv2 \\<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Rdms \\ de CIMv2 \\ raíz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -80,7 +80,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 
 <dl> <dt>
 
-[**Win32 \_ RDSHCollection**](win32-rdshcollection.md)
+[**RDSHCollection de Win32 \_**](win32-rdshcollection.md)
 </dt> </dl>
 
  

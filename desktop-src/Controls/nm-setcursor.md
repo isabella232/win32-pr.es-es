@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de NM_SETCURSOR (commctrl. h)
-description: Notifica a la ventana primaria de un control que el control está estableciendo el cursor en respuesta a un \_ mensaje de SETCURSOR de WM. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: NM_SETCURSOR de notificación (Commctrl.h)
+description: Notifica a la ventana primaria de un control que el control está estableciendo el cursor en respuesta a un mensaje \_ SETCURSOR de WM. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 8d70563f-05a3-4116-b686-6d9063940fae
 keywords:
-- NM_SETCURSOR controles de código de notificación de Windows
+- NM_SETCURSOR código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e6cc3c48a0224efec0c8ab8844a3e7f234a9ba51
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2b41f8c0b713e48bfef3b4d447666d92ac87cd3180f3f0e02ee323d75ceececc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150128"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119834475"
 ---
-# <a name="nm_setcursor-notification-code"></a>Código de notificación de NM \_ SETCURSOR
+# <a name="nm_setcursor-notification-code"></a>Código \_ de notificación DE NM SETCURSOR
 
-Notifica a la ventana primaria de un control que el control está estableciendo el cursor en respuesta a un mensaje de [**\_ SETCURSOR de WM**](/windows/desktop/menurc/wm-setcursor) . Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Notifica a la ventana primaria de un control que el control está estableciendo el cursor en respuesta a un [**mensaje \_ SETCURSOR**](/windows/desktop/menurc/wm-setcursor) de WM. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,23 +41,23 @@ NM_SETCURSOR
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMMOUSE**](/windows/win32/api/commctrl/ns-commctrl-nmmouse) que contiene información adicional sobre esta notificación.
+Puntero a una [**estructura NMMOUSE**](/windows/win32/api/commctrl/ns-commctrl-nmmouse) que contiene información adicional sobre esta notificación.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero para permitir que el control establezca el cursor o un valor distinto de cero para evitar que el control establezca el cursor.
+Devuelve cero para permitir que el control establezca el cursor o distinto de cero para evitar que el control establezca el cursor.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

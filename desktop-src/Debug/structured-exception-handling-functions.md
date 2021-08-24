@@ -1,39 +1,39 @@
 ---
-description: Las siguientes funciones se usan en el control de excepciones estructurado.
+description: Las funciones siguientes se usan en el control estructurado de excepciones.
 ms.assetid: 61cf055b-eb9a-4e56-9d36-21fc95adea77
-title: Funciones de control de excepciones estructurado
+title: Funciones estructuradas de control de excepciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c70b431be2961a55bba28bdfe07723e93b95ac69
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 947cde636051e6d51428b1d75b7d299ce196b0f4335e096f99d6da6a277ae259
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659455"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119815505"
 ---
-# <a name="structured-exception-handling-functions"></a>Funciones de control de excepciones estructurado
+# <a name="structured-exception-handling-functions"></a>Funciones estructuradas de control de excepciones
 
-Las siguientes funciones se usan en el control de excepciones estructurado.
+Las funciones siguientes se usan en el control estructurado de excepciones.
 
 -   [**AbnormalTermination**](abnormaltermination.md)
 
-    Indica si el bloque **\_ \_ try** de un controlador de terminación terminó normalmente.
+    Indica si el bloque **\_ \_ try** de un controlador de terminación finalizó con normalidad.
 
 -   [**AddVectoredContinueHandler**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-addvectoredcontinuehandler)
 
-    Registra un controlador de continuación de vectores.
+    Registra un controlador de continuación vectorado.
 
 -   [**AddVectoredExceptionHandler**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-addvectoredexceptionhandler)
 
-    Registra un controlador de excepciones vectorizado.
+    Registra un controlador de excepciones vectorial.
 
 -   [**GetExceptionCode**](getexceptioncode.md)
 
-    Recupera un código que identifica el tipo de excepción que se ha producido.
+    Recupera un código que identifica el tipo de excepción que se produjo.
 
 -   [**GetExceptionInformation**](getexceptioninformation.md)
 
-    Recupera una descripción independiente de la máquina de una excepción e información sobre el estado del equipo que existía para el subproceso cuando se produjo la excepción.
+    Recupera una descripción independiente del equipo de una excepción e información sobre el estado de la máquina que existía para el subproceso cuando se produjo la excepción.
 
 -   [**RaiseException**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-raiseexception)
 
@@ -41,11 +41,11 @@ Las siguientes funciones se usan en el control de excepciones estructurado.
 
 -   [**RemoveVectoredContinueHandler**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-removevectoredcontinuehandler)
 
-    Anula el registro de un controlador de continuación vectorizado.
+    Anula el registro de un controlador de continuación vectorado.
 
 -   [**RemoveVectoredExceptionHandler**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-removevectoredexceptionhandler)
 
-    Anula el registro de un controlador de excepciones vectorizado.
+    Anula el registro de un controlador de excepciones vectorial.
 
 -   [**RtlAddGrowableFunctionTable**](/windows/desktop/api/WinNT/nf-winnt-rtladdgrowablefunctiontable)
 
@@ -61,17 +61,17 @@ Las siguientes funciones se usan en el control de excepciones estructurado.
 
 -   [**SetUnhandledExceptionFilter**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-setunhandledexceptionfilter)
 
-    Permite a una aplicación sustituir el controlador de excepciones de nivel superior de cada subproceso y proceso.
+    Permite que una aplicación sustituya al controlador de excepciones de nivel superior de cada subproceso y proceso.
 
 -   [**UnhandledExceptionFilter**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-unhandledexceptionfilter)
 
-    Pasa las excepciones no controladas al depurador, si se está depurando el proceso.
+    Pasa excepciones no controladas al depurador, si el proceso se está depurando.
 
 -   [**VectoredHandler**](/windows/desktop/api/WinNT/nc-winnt-pvectored_exception_handler)
 
-    Función definida por la aplicación que actúa como controlador de excepciones vectorizadas.
+    Función definida por la aplicación que actúa como controlador de excepciones vectorial.
 
-Las siguientes funciones solo se usan en Windows de 64 bits.
+Las siguientes funciones solo se usan en funciones de 64 Windows.
 
 -   [**RtlAddFunctionTable**](/windows/desktop/api/WinNT/nf-winnt-rtladdfunctiontable)
 
@@ -79,7 +79,7 @@ Las siguientes funciones solo se usan en Windows de 64 bits.
 
 -   [**RtlCaptureContext**](/windows/desktop/api/WinNT/nf-winnt-rtlcapturecontext)
 
-    Recupera un registro de contexto en el contexto del llamador.
+    Recupera un registro de contexto en el contexto del autor de la llamada.
 
 -   [**RtlDeleteFunctionTable**](/windows/desktop/api/WinNT/nf-winnt-rtldeletefunctiontable)
 
@@ -91,7 +91,7 @@ Las siguientes funciones solo se usan en Windows de 64 bits.
 
 -   [**RtlRestoreContext**](/windows/desktop/api/WinNT/nf-winnt-rtlrestorecontext)
 
-    Restaura el contexto del llamador en el registro de contexto especificado.
+    Restaura el contexto del autor de la llamada al registro de contexto especificado.
 
  
 

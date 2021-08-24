@@ -3,7 +3,7 @@ title: CDM_GETFOLDERPATH mensaje (Commdlg.h)
 description: Recupera la ruta de acceso de la carpeta o directorio actualmente abierto para un cuadro de diálogo Abrir o Guardar como de estilo explorador.
 ms.assetid: 7c3d4598-b45d-46c1-ad0d-cb0ecd20b3eb
 keywords:
-- CDM_GETFOLDERPATH cuadros de diálogo de mensaje
+- CDM_GETFOLDERPATH diálogo de mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d96b8d25714dc3f8bdcf016ac1fd69b2af2414f0
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: c6ccc4e1e9fec74b10c2d5937b35b7e9b3bba2005a504a79abe7b94f341732d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110550010"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119843455"
 ---
 # <a name="cdm_getfolderpath-message"></a>Mensaje \_ GETFOLDERPATH de CDM
 
-\[A partir de Windows Vista, **los** cuadros de **diálogo** Abrir y Guardar como comunes se han reemplazado por el [cuadro de diálogo Elemento común](../shell/common-file-dialog.md). Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca común de cuadros de diálogo.\]
+\[A partir Windows Vista,  los  cuadros de diálogo Abrir y Guardar como comunes se han reemplazado por el cuadro [de diálogo Elemento común](../shell/common-file-dialog.md). Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca de cuadros de diálogo común.\]
 
-Recupera la ruta de acceso de la carpeta  o directorio actualmente abierto para un cuadro de diálogo Abrir o Guardar **como** de estilo explorador. El cuadro de diálogo debe haber sido creado con la **marca OFN \_ EXPLORER;** de lo contrario, se produce un error en el mensaje.
+Recupera la ruta de acceso de la carpeta  o directorio actualmente abierto para un cuadro de diálogo Abrir o Guardar **como** de estilo explorador. El cuadro de diálogo se debe haber creado con la **marca OFN \_ EXPLORER;** de lo contrario, se produce un error en el mensaje.
 
 
 ```C++
@@ -80,7 +80,7 @@ int CommDlg_OpenSave_GetFolderPath(hwnd, lparam, wparam);
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

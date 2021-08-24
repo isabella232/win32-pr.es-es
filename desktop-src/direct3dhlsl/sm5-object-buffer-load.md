@@ -1,6 +1,6 @@
 ---
-title: 'Buffer:: Load (int, uint) (función)'
-description: 'Lee los datos de búfer y devuelve el estado de la operación. | Buffer:: Load (int, uint) (función)'
+title: Función Buffer::Load(int, uint)
+description: Lee los datos del búfer y devuelve el estado de la operación. | Función Buffer::Load(int, uint)
 ms.assetid: 0C7FC522-C962-4467-AA3E-6611064C188B
 keywords:
 - Carga de la función HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: eccd5c367e593559b6a719777dfd1535ae2d423a
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 091cda0570f288139a1aa57eb53755897ed9089d17a598da7b13d2873c5bd70f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119845765"
 ---
-# <a name="bufferloadint-uint-function"></a>Buffer:: Load (int, uint) (función)
+# <a name="bufferloadint-uint-function"></a>Función Buffer::Load(int, uint)
 
-Lee los datos de búfer y devuelve el estado de la operación.
+Lee los datos del búfer y devuelve el estado de la operación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -37,7 +37,7 @@ Lee los datos de búfer y devuelve el estado de la operación.
 
 <dl> <dt>
 
-*Ubicación* \[ de de\]
+*Ubicación* \[ En\]
 </dt> <dd>
 
 Tipo: **int**
@@ -46,12 +46,12 @@ Ubicación del búfer.
 
 </dd> <dt>
 
-*Estado* \[ de enuncia\]
+*Estado* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Estado de la operación. No se puede tener acceso directamente al estado. en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped**](checkaccessfullymapped.md) . **CheckAccessFullyMapped** devuelve **true** si todos los valores de la operación de **ejemplo**, **recopilación** o **carga** correspondiente han tenido acceso a los mosaicos asignados en un [recurso en mosaico](/windows/desktop/direct3d11/direct3d-11-2-features). Si se tomó algún valor de un mosaico sin asignar, **CheckAccessFullyMapped** devuelve **false**.
+Estado de la operación. No se puede acceder al estado directamente; en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** devuelve **TRUE** si todos los valores de la operación Sample **,** **Gather** o **Load** correspondientes accedieron a iconos asignados en un recurso [en mosaico.](/windows/desktop/direct3d11/direct3d-11-2-features) Si se tomaron valores de un icono no asociado, **CheckAccessFullyMapped** devuelve **FALSE.**
 
 </dd> </dl>
 
@@ -59,15 +59,15 @@ Estado de la operación. No se puede tener acceso directamente al estado. en su 
 
 Escriba:
 
-El tipo de valor devuelto coincide con el tipo en la declaración del objeto de [**búfer**](sm5-object-buffer.md) .
+El tipo de valor devuelto coincide con el tipo de la declaración del [**objeto Buffer.**](sm5-object-buffer.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -77,7 +77,7 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
 ## <a name="examples"></a>Ejemplos
 
-En este ejemplo se muestra cómo usar **Load**:
+En este ejemplo se muestra cómo usar **Cargar**:
 
 ``` syntax
 Buffer<float4> myBuffer;
@@ -90,7 +90,7 @@ float4 myColor = myBuffer.Load( loc , status );
 
 <dl> <dt>
 
-[Cargar métodos](buffer-load.md)
+[Métodos de carga](buffer-load.md)
 </dt> </dl>
 
  

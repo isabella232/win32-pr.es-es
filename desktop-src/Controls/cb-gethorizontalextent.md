@@ -1,9 +1,9 @@
 ---
-title: Mensaje de CB_GETHORIZONTALEXTENT (Winuser. h)
+title: CB_GETHORIZONTALEXTENT mensaje (Winuser.h)
 description: Obtiene el ancho, en píxeles, que el cuadro de lista se puede desplazar horizontalmente (el ancho desplazable). Esto solo es aplicable si el cuadro de lista tiene una barra de desplazamiento horizontal.
 ms.assetid: 7c9fff88-2750-4c94-b7f6-6bdd81c224e9
 keywords:
-- CB_GETHORIZONTALEXTENT controles de mensajes de Windows
+- CB_GETHORIZONTALEXTENT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a2b1fb7c8fe7549360801516364528c9a2ef1f1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 928561b812dd3a09909d8d89c7dda1dc67b63f9177769d80db2d16ac78cbbf72
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079367"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089215"
 ---
-# <a name="cb_gethorizontalextent-message"></a>\_Mensaje GETHORIZONTALEXTENT CB
+# <a name="cb_gethorizontalextent-message"></a>Mensaje \_ GETHORIZONTALEXTENT de CB
 
 Obtiene el ancho, en píxeles, que el cuadro de lista se puede desplazar horizontalmente (el ancho desplazable). Esto solo es aplicable si el cuadro de lista tiene una barra de desplazamiento horizontal.
 
@@ -32,14 +32,14 @@ Obtiene el ancho, en píxeles, que el cuadro de lista se puede desplazar horizon
 *wParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> </dl>
 
@@ -51,11 +51,11 @@ El valor devuelto es el ancho desplazable, en píxeles.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

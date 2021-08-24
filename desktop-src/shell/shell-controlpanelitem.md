@@ -79,7 +79,7 @@ Este método no devuelve ningún valor.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se **usa ControlPanelItem** para ejecutar el Panel de control **de** Propiedades de pantalla elemento . Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa ControlPanelItem** para ejecutar el Panel de control **de** Propiedades de pantalla elemento. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
 JScript:
 

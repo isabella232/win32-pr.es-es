@@ -4,7 +4,7 @@ description: GUID del cuadro de diálogo para crear el objeto asociado.
 ms.assetid: 6a5fb344-2fc9-46c7-aa0a-3fc6d67941fb
 ms.tgt_platform: multiple
 keywords:
-- Create-Dialog esquema de AD del atributo
+- Create-Dialog esquema de AD de atributo
 - Esquema de AD del atributo createDialog
 topic_type:
 - apiref
@@ -27,12 +27,12 @@ GUID del cuadro de diálogo para crear el objeto asociado.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------|---------------------------------------------|
 | CN                | Create-Dialog                               |
 | Ldap-Display-Name | createDialog                                |
 | Size              | \-                                          |
-| Privilegio actualizar  | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.810                      |
 | System-Id-Guid    | 2b09958a-8931-11d1-aebc-0000f80367c1        |
@@ -53,7 +53,7 @@ GUID del cuadro de diálogo para crear el objeto asociado.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|------------------------------------------------------------|
 | Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
@@ -74,7 +74,7 @@ GUID del cuadro de diálogo para crear el objeto asociado.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|------------------------------------------------------------|
 | Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
@@ -95,7 +95,7 @@ GUID del cuadro de diálogo para crear el objeto asociado.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|------------------------------------------------------------|
 | Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
@@ -116,7 +116,7 @@ GUID del cuadro de diálogo para crear el objeto asociado.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|------------------------------------------------------------|
 | Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
@@ -137,7 +137,7 @@ GUID del cuadro de diálogo para crear el objeto asociado.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|------------------------------------------------------------|
 | Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
@@ -158,7 +158,7 @@ GUID del cuadro de diálogo para crear el objeto asociado.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|------------------------------------------------------------|
 | Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |

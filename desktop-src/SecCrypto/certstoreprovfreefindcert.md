@@ -1,5 +1,5 @@
 ---
-description: Se llama cuando no se usó el certificado devuelto por la devolución de llamada CertStoreProvFindCert y, por tanto, se libera, en una llamada subsiguiente a CertStoreProvFindCert.
+description: Se llama cuando no se usa el certificado devuelto por la devolución de llamada CertStoreProvFindCert y, por tanto, se libera, en una llamada posterior a CertStoreProvFindCert.
 ms.assetid: be882b56-027c-4540-9426-27d3c2b262e9
 title: Función de devolución de llamada CertStoreProvFreeFindCert
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: 320145ebfe95d1e678193ea1b11e7cb0d5294c69
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ab2a6ae1bd8199e7bed97626c83241223fc3943b94fcb387868331329d8740a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668102"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119877305"
 ---
 # <a name="certstoreprovfreefindcert-callback-function"></a>Función de devolución de llamada CertStoreProvFreeFindCert
 
-Se llama a la función de devolución de llamada **CertStoreProvFreeFindCert** cuando no se usó el certificado devuelto por la devolución de llamada [**CertStoreProvFindCert**](certstoreprovfindcert.md) y, por tanto, se libera, en una llamada subsiguiente a **CertStoreProvFindCert**. Antes de que se llame a la devolución de llamada de cierre, el proveedor debe liberar todos los certificados devueltos por la devolución de llamada de [**CertStoreProvFindCert**](certstoreprovfindcert.md) mediante **CertStoreProvFindCert** o **CertStoreProvFreeFindCert**.
+Se llama a la función de devolución de llamada **CertStoreProvFreeFindCert** cuando no se usó el certificado devuelto por la devolución de llamada [**CertStoreProvFindCert**](certstoreprovfindcert.md) y, por tanto, se liberó en una llamada posterior a **CertStoreProvFindCert**. Antes de llamar a la devolución de llamada CLOSE, el proveedor debe liberar todos los certificados devueltos por la devolución de llamada [**CertStoreProvFindCert**](certstoreprovfindcert.md) mediante **CertStoreProvFindCert** o **CertStoreProvFreeFindCert.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,37 +41,37 @@ BOOL WINAPI CertStoreProvFreeFindCert(
 
 <dl> <dt>
 
-*hStoreProv* \[ de\]
+*hStoreProv* \[ En\]
 </dt> <dd>
 
-Identificador de **HCERTSTOREPROV** de un [*almacén de certificados*](../secgloss/c-gly.md).
+**Identificador de HCERTSTOREPROV** a un [*almacén de certificados*](../secgloss/c-gly.md).
 
 </dd> <dt>
 
-*pCertContext* \[ de\]
+*pCertContext* \[ En\]
 </dt> <dd>
 
-Un puntero a un [**\_ contexto de certificado**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context).
+Puntero a UN [**CONTEXTO \_ DE CERT**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context).
 
 </dd> <dt>
 
-*pvStoreProvFindInfo* \[ de\]
+*pvStoreProvFindInfo* \[ En\]
 </dt> <dd>
 
-Un puntero a un búfer que contiene información de búsqueda.
+Puntero a un búfer que contiene información de buscar.
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
-Los valores de marca necesarios.
+Cualquier valor de marca necesario.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si la función se ejecuta correctamente o **false** si se produce un error.
+Devuelve **TRUE** si la función se realiza correctamente o **FALSE** si se produce un error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,8 +79,8 @@ Devuelve **true** si la función se ejecuta correctamente o **false** si se prod
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 
 
 
@@ -88,7 +88,7 @@ Devuelve **true** si la función se ejecuta correctamente o **false** si se prod
 
 <dl> <dt>
 
-[**contexto de certificado \_**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context)
+[**CONTEXTO \_ DE CERT**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context)
 </dt> <dt>
 
 [**CertStoreProvFindCert**](certstoreprovfindcert.md)

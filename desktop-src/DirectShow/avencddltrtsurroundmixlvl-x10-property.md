@@ -1,19 +1,19 @@
 ---
-description: Especifica el cambio de nivel que se aplica a los canales de envolvente para LT/RT downmixing. Esta propiedad se aplica a los codificadores de audio Dolby digital.
+description: Especifica el cambio de nivel que se aplica a los canales envolventes para la mezclación Lt/Rt. Esta propiedad se aplica a los codificadores de audio Dolby Digital.
 ms.assetid: 95fd8b3e-de30-4d0d-be3c-8d7e0c925bae
-title: Propiedad AVEncDDLtRtSurroundMixLvl_x10 (Codecapi. h)
+title: AVEncDDLtRtSurroundMixLvl_x10 propiedad (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 15c645cad4bf491d285039d409184cf54f51b5e1
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 7f2cabeb27dadcc22001193700bd94fc297db830632fb5a26a9e2399da0f4f51
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104423064"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119873315"
 ---
-# <a name="avencddltrtsurroundmixlvl_x10-property"></a>\_Propiedad AVEncDDLtRtSurroundMixLvl x10
+# <a name="avencddltrtsurroundmixlvl_x10-property"></a>AvEncDDLtRtSurroundMixLvl \_ x10, propiedad
 
-Especifica el cambio de nivel que se aplica a los canales de envolvente para LT/RT downmixing. Esta propiedad se aplica a los codificadores de audio Dolby digital.
+Especifica el cambio de nivel que se aplica a los canales envolventes para la mezclación Lt/Rt. Esta propiedad se aplica a los codificadores de audio Dolby Digital.
 
 Esta propiedad es de lectura y escritura.
 
@@ -35,9 +35,9 @@ El valor se especifica como decibelios (dB) x 10.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -48,7 +48,7 @@ El valor se especifica como decibelios (dB) x 10.
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

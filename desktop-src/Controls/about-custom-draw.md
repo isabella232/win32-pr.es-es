@@ -33,14 +33,14 @@ Esta sección contiene información general sobre la funcionalidad de dibujo per
     -   [Dibujar el elemento usted mismo](#drawing-the-item-yourself)
     -   [Cambio de fuentes y colores](#changing-fonts-and-colors)
 -   [Dibujo personalizado con controles List-View y Tree-View personalizados](#custom-draw-with-list-view-and-tree-view-controls)
-    -   [Dibujo personalizado con List-View controles](#custom-draw-with-list-view-controls)
+    -   [Dibujo personalizado con controles List-View personalizados](#custom-draw-with-list-view-controls)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="about-custom-draw-notification-messages"></a>Acerca de los mensajes de notificación de dibujo personalizados
 
-Todos los controles comunes que admiten el dibujo personalizado envían códigos de notificación [ \_ NM CUSTOMDRAW](nm-customdraw.md) en puntos específicos durante las operaciones de dibujo. Estos códigos de notificación describen las operaciones de dibujo que se aplican a todo el control, así como las operaciones de dibujo específicas de los elementos del control. Al igual que muchos códigos de notificación, las notificaciones DE NM \_ CUSTOMDRAW se envían como [**mensajes WM \_ NOTIFY.**](wm-notify.md)
+Todos los controles comunes que admiten el dibujo personalizado envían códigos de notificación [ \_ NM CUSTOMDRAW](nm-customdraw.md) en puntos específicos durante las operaciones de dibujo. Estos códigos de notificación describen las operaciones de dibujo que se aplican a todo el control, así como las operaciones de dibujo específicas de los elementos dentro del control. Al igual que muchos códigos de notificación, las notificaciones DE NM CUSTOMDRAW se \_ envían como mensajes WM [**\_ NOTIFY.**](wm-notify.md)
 
-El *parámetro lParam* de una notificación de dibujo personalizada será la dirección de una estructura [**NMCUSTOMDRAW**](/windows/win32/api/commctrl/ns-commctrl-nmcustomdraw) o una estructura específica del control que contiene una estructura **NMCUSTOMDRAW** como su primer miembro. En la tabla siguiente se muestra la relación entre los controles y las estructuras que usan.
+El *parámetro lParam* de una notificación de dibujo personalizado será la dirección de una estructura [**NMCUSTOMDRAW**](/windows/win32/api/commctrl/ns-commctrl-nmcustomdraw) o una estructura específica del control que contiene una estructura **NMCUSTOMDRAW** como su primer miembro. En la tabla siguiente se muestra la relación entre los controles y las estructuras que usan.
 
 
 
@@ -58,15 +58,15 @@ El *parámetro lParam* de una notificación de dibujo personalizada será la dir
 
 ## <a name="paint-cycles-drawing-stages-and-notification-messages"></a>Paint Ciclos, etapas de dibujo y mensajes de notificación
 
-Al igual que Windows aplicaciones, los controles comunes se pintan y borran periódicamente en función de los mensajes recibidos del sistema u otras aplicaciones. El proceso de dibujo o borrado de un control se denomina ciclo *de pintura.* Los controles que admiten el dibujo personalizado envían [códigos de notificación NM \_ CUSTOMDRAW](nm-customdraw.md) periódicamente a través de cada ciclo de pintura. Este código de notificación va acompañado de una estructura [**NMCUSTOMDRAW**](/windows/win32/api/commctrl/ns-commctrl-nmcustomdraw) u otra estructura que contiene una estructura **NMCUSTOMDRAW** como su primer miembro.
+Al igual que Windows aplicaciones, los controles comunes se pintan y borran periódicamente en función de los mensajes recibidos del sistema u otras aplicaciones. El proceso de un control que se pinta o borra a sí mismo se denomina ciclo *de pintura.* Los controles que admiten el dibujo personalizado envían códigos [de \_ notificación NM CUSTOMDRAW](nm-customdraw.md) periódicamente a través de cada ciclo de pintura. Este código de notificación va acompañado de una [**estructura NMCUSTOMDRAW**](/windows/win32/api/commctrl/ns-commctrl-nmcustomdraw) u otra estructura que contiene una estructura **NMCUSTOMDRAW** como su primer miembro.
 
-Una parte de la información que contiene [**la estructura NMCUSTOMDRAW**](/windows/win32/api/commctrl/ns-commctrl-nmcustomdraw) es la fase actual del ciclo de pintura. Esto se conoce como fase *de* dibujo y se representa mediante el valor del miembro **dwDrawStage** de la estructura. Un control informa a su elemento primario de cuatro fases básicas de dibujo. Estas fases de dibujo básicas o globales se representan en la estructura mediante los siguientes valores de marca (definidos en Commctrl.h).
+Una parte de la información que contiene [**la estructura NMCUSTOMDRAW**](/windows/win32/api/commctrl/ns-commctrl-nmcustomdraw) es la fase actual del ciclo de pintura. Esto se conoce como fase *de* dibujo y se representa mediante el valor del miembro **dwDrawStage** de la estructura. Un control informa a su elemento primario sobre cuatro fases básicas de dibujo. Estas fases de dibujo básicas o globales se representan en la estructura mediante los siguientes valores de marca (definidos en Commctrl.h).
 
 
 
 | Valores de fase de dibujo global | Descripción                        |
 |--------------------------|------------------------------------|
-| PREPINTADO DE CDDS \_           | Antes de que comience el ciclo de pintura.     |
+| PREPINTADO DE \_ CDDS           | Antes de que comience el ciclo de pintura.     |
 | POSTPAINT de CDDS \_          | Una vez completado el ciclo de pintura. |
 | CDDS \_ PREERASE           | Antes de que comience el ciclo de borrado.     |
 | PÓSTERASE DE \_ CDDS          | Una vez completado el ciclo de borrado. |
@@ -75,27 +75,27 @@ Una parte de la información que contiene [**la estructura NMCUSTOMDRAW**](/wind
 
  
 
-Cada uno de los valores anteriores se puede combinar con la marca ITEM de CDDS \_ para especificar las fases de dibujo específicas de los elementos. Para mayor comodidad, Commctrl.h contiene los siguientes valores específicos del elemento.
+Cada uno de los valores anteriores se puede combinar con la marca ITEM de CDDS para especificar las \_ fases de dibujo específicas de los elementos. Para mayor comodidad, Commctrl.h contiene los siguientes valores específicos del elemento.
 
 
 
 | Valores de fase de dibujo específicos del elemento | Descripción                                                                                                                                                                                                                                                                         |
 |---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ELEMENTO DE \_ CDDSPREPAINT              | Antes de dibujar un elemento.                                                                                                                                                                                                                                                            |
-| ELEMENTO DE \_ CDDSPOSTPAINT             | Después de dibujar un elemento.                                                                                                                                                                                                                                                       |
-| ELEMENTO DE \_ CDDSPREERASE              | Antes de borrar un elemento.                                                                                                                                                                                                                                                           |
-| CDDS \_ ITEMPOSTERASE             | Una vez borrado un elemento.                                                                                                                                                                                                                                                      |
-| SUBELEMENTO DE CDDS \_                   | [Versiones de Common Control](common-control-versions.md) 4.71. Marca combinada con CDDS \_ ITEMPREPAINT o CDDS \_ ITEMPOSTPAINT si se dibuja un subelemento. Esto solo se establecerá si [**CDRF \_ NOTIFYITEMDRAW**](cdrf-constants.md) se devuelve desde CDDS \_ PREPAINT. |
+| ELEMENTO DE \_ CDDSPOSTPAINT             | Una vez dibujado un elemento.                                                                                                                                                                                                                                                       |
+| ELEMENTO \_ CDDSPREERASE              | Antes de borrar un elemento.                                                                                                                                                                                                                                                           |
+| ELEMENTO \_ CDDSPOSTERASE             | Una vez borrado un elemento.                                                                                                                                                                                                                                                      |
+| SUBELEMENTO \_ CDDS                   | [Versiones de control comunes](common-control-versions.md) 4.71. Marca combinada con CDDS \_ ITEMPREPAINT o CDDS \_ ITEMPOSTPAINT si se dibuja un subelemento. Esto solo se establecerá si [**CDRF \_ NOTIFYITEMDRAW**](cdrf-constants.md) se devuelve desde CDDS \_ PREPAINT. |
 
 
 
  
 
-La aplicación debe procesar el código [de notificación DE NM \_ CUSTOMDRAW](nm-customdraw.md) y, a continuación, devolver un valor específico que informa al control de lo que debe hacer. Consulte las secciones siguientes para obtener más información sobre estos valores devueltos.
+La aplicación debe procesar el código [de notificación \_ NM CUSTOMDRAW](nm-customdraw.md) y, a continuación, devolver un valor específico que informa al control de lo que debe hacer. Consulte las secciones siguientes para obtener más información sobre estos valores devueltos.
 
 ## <a name="taking-advantage-of-custom-draw-services"></a>Aprovechar los servicios de dibujo personalizados
 
-La clave para aprovechar la funcionalidad de dibujo personalizada es responder a los códigos de notificación [DE NM \_ CUSTOMDRAW](nm-customdraw.md) que envía un control. Los valores devueltos que la aplicación envía en respuesta a estas notificaciones determinan el comportamiento del control para ese ciclo de pintura.
+La clave para aprovechar la funcionalidad de dibujo personalizado es responder a los códigos [de notificación DE NM \_ CUSTOMDRAW](nm-customdraw.md) que envía un control. Los valores devueltos que la aplicación envía en respuesta a estas notificaciones determinan el comportamiento del control para ese ciclo de pintura.
 
 Esta sección contiene información sobre cómo la aplicación puede usar los valores devueltos de notificación [DE NM \_ CUSTOMDRAW](nm-customdraw.md) para determinar el comportamiento del control.
 
@@ -108,13 +108,13 @@ Los detalles se desglosan en los temas siguientes:
 
 ### <a name="responding-to-the-prepaint-notification"></a>Respuesta a la notificación de prepintado
 
-Al principio de cada ciclo de pintura, el control envía el código de notificación [NM \_ CUSTOMDRAW,](nm-customdraw.md) especificando el valor PREPAINT de CDDS en el miembro \_ **dwDrawStage** de la estructura CUSTOMDRAW de NM que lo \_ acompaña. El valor que la aplicación devuelve a esta primera notificación determina cómo y cuándo el control envía notificaciones de dibujo personalizadas posteriores para el resto de ese ciclo de pintura. La aplicación puede devolver una combinación de las marcas siguientes en respuesta a la primera notificación.
+Al principio de cada ciclo de pintura, el control envía el código de notificación [NM \_ CUSTOMDRAW,](nm-customdraw.md) especificando el valor PREPAINT de CDDS en el \_ miembro **dwDrawStage** de la estructura NM CUSTOMDRAW que lo \_ acompaña. El valor que la aplicación devuelve a esta primera notificación determina cómo y cuándo el control envía notificaciones de dibujo personalizadas posteriores para el resto de ese ciclo de pintura. La aplicación puede devolver una combinación de las marcas siguientes en respuesta a la primera notificación.
 
 
 
 | Valor devuelto            | Efecto                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CDRF \_ DODEFAULT         | El control se dibujará a sí mismo. No enviará notificaciones [adicionales de NM \_ CUSTOMDRAW](nm-customdraw.md) para este ciclo de pintura. Esta marca no se puede usar con ninguna otra marca.                                                                                                                                                                                                                                                                               |
+| CDRF \_ DODEFAULT         | El control se dibujará a sí mismo. No enviará notificaciones [ \_ CUSTOMDRAW de NM](nm-customdraw.md) adicionales para este ciclo de pintura. Esta marca no se puede usar con ninguna otra marca.                                                                                                                                                                                                                                                                               |
 | CDRF \_ DOERASE           | El control solo dibujará el fondo.                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | CDRF \_ NEWFONT           | La aplicación especificó una nueva fuente para el elemento; el control usará la nueva fuente. Para obtener más información sobre cómo cambiar las fuentes, vea [Cambiar fuentes y colores.](#changing-fonts-and-colors) Esto sucede cuando **dwDrawStage** es igual a \_ ITEMPREPAINT de CDDS.                                                                                                                                                                                                       |
 | CDRF \_ NOTIFYITEMDRAW    | El control notificará al elemento primario las operaciones de dibujo específicas del elemento. Enviará códigos [de notificación NM \_ CUSTOMDRAW](nm-customdraw.md) antes y después de dibujar elementos. Esto sucede cuando **dwDrawStage** es igual a PREPAINT de \_ CDDS.                                                                                                                                                                                                                       |
@@ -134,13 +134,13 @@ Si la aplicación devuelve [**CDRF \_ NOTIFYITEMDRAW**](cdrf-constants.md) a la 
 
 ### <a name="drawing-the-item-yourself"></a>Dibujar el elemento usted mismo
 
-Si la aplicación dibuja todo el elemento, devuelva [**CDRF \_ SKIPDEFAULT.**](cdrf-constants.md) Esto permite al control omitir los elementos que no necesita dibujar, lo que reduce la sobrecarga del sistema. Tenga en cuenta que devolver este valor significa que el control no dibujará ninguna parte del elemento.
+Si la aplicación dibuja todo el elemento, devuelva [**CDRF \_ SKIPDEFAULT**](cdrf-constants.md). Esto permite al control omitir los elementos que no necesita dibujar, lo que reduce la sobrecarga del sistema. Tenga en cuenta que devolver este valor significa que el control no dibujará ninguna parte del elemento.
 
 ### <a name="changing-fonts-and-colors"></a>Cambio de fuentes y colores
 
-La aplicación puede usar el dibujo personalizado para cambiar la fuente de un elemento. Solo tiene que seleccionar el HFONT que desea en el contexto de dispositivo especificado por el **miembro hdc** de la estructura [**NMCUSTOMDRAW**](/windows/win32/api/commctrl/ns-commctrl-nmcustomdraw) asociada a la notificación de dibujo personalizada. Puesto que la fuente que seleccione puede tener métricas diferentes de la fuente predeterminada, asegúrese de incluir el bit [**\_ NEWFONT**](cdrf-constants.md) de CDRF en el valor devuelto del mensaje de notificación. Para obtener más información sobre el uso de esta funcionalidad, vea el código de ejemplo en [Using Custom Draw](using-custom-draw.md). La fuente que especifica la aplicación se usa para mostrar ese elemento cuando no está seleccionado. El dibujo personalizado no permite cambiar los atributos de fuente de los elementos seleccionados.
+La aplicación puede usar el dibujo personalizado para cambiar la fuente de un elemento. Solo tiene que seleccionar el HFONT que desea en el contexto de dispositivo especificado por el **miembro hdc** de la estructura [**NMCUSTOMDRAW**](/windows/win32/api/commctrl/ns-commctrl-nmcustomdraw) asociada a la notificación de dibujo personalizada. Puesto que la fuente que seleccione puede tener métricas diferentes de la fuente predeterminada, asegúrese de incluir el bit [**\_ NEWFONT**](cdrf-constants.md) de CDRF en el valor devuelto para el mensaje de notificación. Para obtener más información sobre el uso de esta funcionalidad, vea el código de ejemplo en [Using Custom Draw](using-custom-draw.md). La fuente que especifica la aplicación se usa para mostrar ese elemento cuando no está seleccionado. El dibujo personalizado no permite cambiar los atributos de fuente de los elementos seleccionados.
 
-Para cambiar los colores de texto de todos los controles que admiten el dibujo personalizado, excepto la vista de lista y la vista de árbol, basta con establecer los colores de texto y fondo deseados en el contexto del dispositivo proporcionado en la estructura de notificación de dibujo personalizada con las funciones [**SetTextColor**](/windows/desktop/api/wingdi/nf-wingdi-settextcolor) y [**SetBkColor.**](/windows/desktop/api/wingdi/nf-wingdi-setbkcolor) Para modificar los colores de texto en la vista de lista o vista de árbol, debe colocar los valores de color deseados en los miembros **clrText** y **clrTextBk** de la estructura [**NMLVCUSTOMDRAW**](/windows/win32/api/commctrl/ns-commctrl-nmlvcustomdraw) o [**NMTVCUSTOMDRAW.**](/windows/win32/api/commctrl/ns-commctrl-nmtvcustomdraw)
+Para cambiar los colores de texto de todos los controles que admiten el dibujo personalizado, excepto la vista de lista y la vista de árbol, basta con establecer los colores de texto y fondo deseados en el contexto del dispositivo proporcionado en la estructura de notificación de dibujo personalizado con las funciones [**SetTextColor**](/windows/desktop/api/wingdi/nf-wingdi-settextcolor) y [**SetBkColor.**](/windows/desktop/api/wingdi/nf-wingdi-setbkcolor) Para modificar los colores de texto en la vista de lista o vista de árbol, debe colocar los valores de color deseados en los miembros **clrText** y **clrTextBk** de la estructura [**NMLVCUSTOMDRAW**](/windows/win32/api/commctrl/ns-commctrl-nmlvcustomdraw) o [**NMTVCUSTOMDRAW.**](/windows/win32/api/commctrl/ns-commctrl-nmtvcustomdraw)
 
 > [!Note]  
 > Antes de [la versión 6.0 de](common-control-versions.md) los controles comunes, las barras de herramientas ignoran la marca [**\_ NEWFONT de CDRF.**](cdrf-constants.md) La versión 6.0 admite la marca **\_ NEWFONT** de CDRF y puede usarla para seleccionar una fuente diferente para la barra de herramientas. Sin embargo, no se puede cambiar el color de una barra de herramientas cuando un estilo visual está activo. Para cambiar el color de una barra de herramientas en la versión 6.0, primero debe deshabilitar los estilos visuales llamando a [**SetWindowTheme**](/windows/desktop/api/Uxtheme/nf-uxtheme-setwindowtheme) y sin especificar ningún estilo visual:

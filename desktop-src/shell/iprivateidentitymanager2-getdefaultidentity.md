@@ -1,6 +1,6 @@
 ---
-description: Método IPrivateIdentityManager2::GetDefaultIdentity
-title: Método IPrivateIdentityManager2::GetDefaultIdentity
+description: IPrivateIdentityManager2::GetDefaultIdentity (método)
+title: IPrivateIdentityManager2::GetDefaultIdentity (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,7 +16,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119710445"
 ---
-# <a name="iprivateidentitymanager2getdefaultidentity-method"></a>Método IPrivateIdentityManager2::GetDefaultIdentity
+# <a name="iprivateidentitymanager2getdefaultidentity-method"></a>IPrivateIdentityManager2::GetDefaultIdentity (método)
 
 No se admite este método.
 

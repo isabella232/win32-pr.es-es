@@ -13,12 +13,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 25f8a3d55582a8875cb3ed581312255ef7209f73
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d207ad2b09a0b25374f694a137075abeb0cb548e72227572bc42abb7151b368b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103914378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119702605"
 ---
 # <a name="enumerationdelivery-mechanism-syntax"></a>Sintaxis de enumeración (mecanismo de entrega)
 
@@ -26,27 +26,27 @@ Sintaxis de enumeración (mecanismo de entrega).
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|---------------------------------------------------------------------------|
-| Nombre         | Enumeración (mecanismo de entrega)                                           |
-| IDENTIFICADOR de sintaxis    | 2.5.5.9                                                                   |
-| IDENTIFICADOR DE OM        | 10                                                                        |
-| Tipo MAPI    | LONG                                                                      |
-| Tipo ADS     | \_entero ADSTYPE                                                          |
-| Tipo Variant | VT \_ I4                                                                    |
-| Tipo de SDS     | [System. Int32](/dotnet/api/system.int32) |
+| Nombre         | Enumeration(Delivery-Mechanism)                                           |
+| Identificador de sintaxis    | 2.5.5.9                                                                   |
+| Id. de OM        | 10                                                                        |
+| Tipo DE ARCHIVO    | LONG                                                                      |
+| ADS Type     | ADSTYPE \_ INTEGER                                                          |
+| Tipo de variante | VT \_ I4                                                                    |
+| Tipo de SDS     | [System.Int32](/dotnet/api/system.int32) |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Definido por ITU. Active Directory trata como un entero.
+Definido por la ITU. Active Directory trata esto como un entero.
 
 ## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[System. Int32](/dotnet/api/system.int32)
+[System.Int32](/dotnet/api/system.int32)
 </dt> </dl>
 
  

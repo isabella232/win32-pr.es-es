@@ -1,6 +1,6 @@
 ---
 title: BCM_SETSHIELD mensaje (Commctrl.h)
-description: Establece el estado requerido de elevación para que un botón o vínculo de comando especificado muestre un icono con privilegios elevados. Envíe este mensaje explícitamente o mediante la macro \_ Button SetEintegraationRequiredState.
+description: Establece el estado requerido de elevación para que un botón o vínculo de comando especificado muestre un icono con privilegios elevados. Envíe este mensaje explícitamente o mediante la macro \_ Button SetElandationRequiredState.
 ms.assetid: 2ce2a006-7136-415b-824b-46b282b100f4
 keywords:
 - BCM_SETSHIELD controles de Windows mensaje
@@ -45,17 +45,17 @@ Un **VALOR BOOL que** es TRUE **para** dibujar un icono con privilegios elevados
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 1 si se realiza correctamente o un código de error de lo contrario.
+Devuelve 1 si se realiza correctamente o un código de error en caso contrario.
 
 ## <a name="remarks"></a>Comentarios
 
-Se debe manifiesto una aplicación para usar comctl32.dll versión 6 para obtener esta funcionalidad.
+Una aplicación debe estar manifestada para usar comctl32.dll versión 6 para obtener esta funcionalidad.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |

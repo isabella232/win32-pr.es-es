@@ -3,31 +3,31 @@ title: Para identificar entradas por número
 description: Para identificar entradas por número
 ms.assetid: f468f74d-7eed-4819-957d-241903f44d2d
 keywords:
-- Advanced Systems Format (ASF), identificación de entradas por número
+- Formato de sistemas avanzados (ASF), identificar entradas por número
 - ASF (formato de sistemas avanzados), identificar entradas por número
-- perfiles, identificación de entradas por número
+- profiles,identifying inputs by number
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0629776eaaff4252a690c0e31cd6002f5de42b31
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 36ff09a81cac98edc6f14ded98ba9852501bfdfef4c5e40affa908c0ff710e1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104077305"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119807535"
 ---
 # <a name="to-identify-inputs-by-number"></a>Para identificar entradas por número
 
-Cada muestra que se pasa al escritor debe estar asociada a un número de entrada. Cada número de entrada corresponde a una o más secuencias en el perfil que utiliza el escritor para escribir el archivo. En un perfil, los orígenes multimedia se identifican mediante un nombre de conexión. El escritor asocia un número de entrada con cada nombre de conexión cuando se establece el perfil para el escritor. Antes de poder pasar ejemplos al escritor, debe determinar qué datos esperan cada entrada. No se puede suponer que las entradas estarán en el mismo orden que los flujos de un perfil, aunque este sea el caso a menudo. Por lo tanto, la única manera confiable de hacer coincidir las entradas con secuencias es comparar el nombre de conexión de la entrada con el nombre de conexión de la secuencia.
+Cada ejemplo que pase al escritor debe estar asociado a un número de entrada. Cada número de entrada corresponde a una o varias secuencias del perfil que usa el escritor para escribir el archivo. En un perfil, los orígenes multimedia se identifican mediante un nombre de conexión. El escritor asocia un número de entrada a cada nombre de conexión cuando se establece el perfil para el escritor. Para poder pasar ejemplos al escritor, debe determinar qué datos espera cada entrada. No se puede suponer que las entradas estarán en el mismo orden que las secuencias de un perfil, aunque esto suele ser así. Por lo tanto, la única manera confiable de hacer coincidir entradas con secuencias es comparar el nombre de conexión de la entrada con el nombre de conexión de la secuencia.
 
 Para identificar los nombres de conexión y los números de entrada correspondientes para un perfil cargado, realice los pasos siguientes:
 
-1.  Cree un objeto de escritor y establezca un perfil para usarlo. Para obtener más información sobre la configuración de perfiles en el escritor, vea [para usar perfiles con el escritor](to-use-profiles-with-the-writer.md). Debe conocer los nombres de conexión que se usan para las secuencias en el perfil. Puede obtener el nombre de conexión desde dentro del perfil obteniendo el objeto de configuración de secuencia para cada flujo y llamando a [**IWMStreamConfig:: GetConnectionName**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstreamconfig-getconnectionname). Para obtener más información sobre los perfiles y los objetos de configuración de secuencias, vea [trabajar con perfiles](working-with-profiles.md).
-2.  Recupere el número total de entradas mediante una llamada a [**IWMWriter:: GetInputCount**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-getinputcount).
-3.  Recorra en bucle todas las entradas y realice los pasos siguientes para cada una de ellas.
-    -   Recupere la interfaz [**IWMInputMediaProps**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwminputmediaprops) para la entrada mediante una llamada a [**IWMWriter:: GetInputProps**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-getinputprops).
-    -   Recupere el nombre de conexión que corresponde al número de entrada mediante una llamada a [**IWMInputMediaProps:: GetConnectionName**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwminputmediaprops-getconnectionname). Una vez que tenga el nombre de la conexión, conocerá los flujos que están asociados a los números de entrada asignados por el escritor.
+1.  Cree un objeto de escritor y establezca un perfil que se usará. Para obtener más información sobre cómo establecer perfiles en el sistema de escritura, vea [Para usar perfiles con el escritor](to-use-profiles-with-the-writer.md). Debe conocer los nombres de conexión usados para las secuencias del perfil. Puede obtener el nombre de conexión desde dentro del perfil obteniendo el objeto de configuración de flujo para cada secuencia y llamando a [**IWMStreamConfig::GetConnectionName**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstreamconfig-getconnectionname). Para obtener más información sobre los perfiles y los objetos de configuración de secuencias, vea [Trabajar con perfiles.](working-with-profiles.md)
+2.  Recupere el número total de entradas llamando a [**IWMWriter::GetInputCount**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-getinputcount).
+3.  Recorrer en bucle todas las entradas y realizar los pasos siguientes para cada una de ellas.
+    -   Recupere la [**interfaz IWMInputMediaProps**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwminputmediaprops) para la entrada llamando a [**IWMWriter::GetInputProps**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-getinputprops).
+    -   Recupere el nombre de conexión que corresponde al número de entrada llamando a [**IWMInputMediaProps::GetConnectionName**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwminputmediaprops-getconnectionname). Una vez que tenga el nombre de conexión, conocerá las secuencias asociadas a los números de entrada asignados por el escritor.
 
-En el ejemplo de código siguiente se muestra el nombre de la conexión para cada entrada. Para obtener más información sobre el uso de este código, vea [usar los ejemplos de código](using-the-code-examples.md).
+En el código de ejemplo siguiente se muestra el nombre de conexión de cada entrada. Para obtener más información sobre el uso de este código, vea [Usar los ejemplos de código](using-the-code-examples.md).
 
 
 ```C++
@@ -92,15 +92,15 @@ Exit:
 
 <dl> <dt>
 
-[**Interfaz IWMWriter**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwriter)
+[**IWMWriter (Interfaz)**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwriter)
 </dt> <dt>
 
-[**Escribir archivos ASF**](writing-asf-files.md)
+[**Escritura de archivos ASF**](writing-asf-files.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

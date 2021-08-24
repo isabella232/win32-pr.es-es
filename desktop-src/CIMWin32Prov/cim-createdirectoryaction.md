@@ -1,5 +1,5 @@
 ---
-description: La clase CreateDirectoryAction de CIM crea directorios vacíos para que los elementos \_ de software se instalen localmente.
+description: La clase \_ CreateDirectoryAction de CIM crea directorios vacíos para que los elementos de software se instalen localmente.
 ms.assetid: e8587534-4bb3-44de-98a1-8d777f1da1b3
 ms.tgt_platform: multiple
 title: CIM_CreateDirectoryAction clase
@@ -36,7 +36,7 @@ ms.locfileid: "119924725"
 La **clase \_ CreateDirectoryAction de CIM** crea directorios vacíos para que los elementos de software se instalen localmente.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -76,7 +76,7 @@ La **clase \_ CreateDirectoryAction de CIM** tiene estos métodos.
 
 | Método                                                             | Descripción                                                                                                                                  |
 |:-------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Invocar**](invoke-method-in-class-cim-createdirectoryaction.md) | Realiza una acción determinada. Los detalles de cómo el método realiza la acción son específicos de la implementación. Wmi no implementa.<br/> |
+| [**Invocar**](invoke-method-in-class-cim-createdirectoryaction.md) | Realiza una acción determinada. Los detalles de cómo el método realiza la acción son específicos de la implementación. No implementado por WMI.<br/> |
 
 
 
@@ -163,7 +163,7 @@ Esta propiedad se hereda de la [**acción \_ CIM**](cim-action.md).
 
 <span id="Uninstall"></span><span id="uninstall"></span><span id="UNINSTALL"></span>
 
-**Desinstalación** (1)
+**Desinstalar** (1)
 
 
 </dt> <dd></dd> </dl>
@@ -184,7 +184,7 @@ Calificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (1024)
 
 Nombre del directorio al que se aplica la acción.
 
-Esta propiedad se hereda de [**CIM \_ DirectoryAction.**](cim-directoryaction.md)
+Esta propiedad se hereda de [**CIM \_ DirectoryAction**](cim-directoryaction.md).
 
 </dd> <dt>
 
@@ -197,7 +197,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Name**"), [**cim \_ key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Name**"), [**cim \_ key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identifica el elemento de software.
@@ -215,7 +215,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementID**"), [**\_ clave CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementID**"), [**\_ clave CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identificador del elemento de software.
@@ -233,7 +233,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementState**"), [**clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementState**"), [**clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Estado de un elemento de software.
@@ -271,7 +271,7 @@ Describe los detalles necesarios para una instalación correcta y los detalles (
 
 </dt> <dd>
 
-Describe los detalles necesarios para la ejecución correcta y los detalles (condiciones y acciones) necesarios para crear un elemento de software en estado de ejecución (es decir, el siguiente estado).
+Describe los detalles necesarios para la ejecución correcta y los detalles (condiciones y acciones) necesarios para crear un elemento de software en estado en ejecución (es decir, el siguiente estado).
 
 </dd> <dt>
 
@@ -282,7 +282,7 @@ Describe los detalles necesarios para la ejecución correcta y los detalles (con
 
 </dt> <dd>
 
-Describe los detalles necesarios para supervisar y operar en un elemento de inicio.
+Describe los detalles necesarios para supervisar y operar en un elemento start.
 
 </dd> </dl>
 
@@ -297,7 +297,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**TargetOperatingSystem**"), [**clave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Software Component Information \| 002.5")
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**TargetOperatingSystem**"), [**clave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Software Component Information \| 002.5")
 </dt> </dl>
 
 Sistema operativo de destino del elemento de software propietario.
@@ -366,7 +366,7 @@ Mac OS
 
 </dt> <dd>
 
-Apertura de MÁQUINAS VIRTUALES
+Abrir máquinas virtuales
 
 </dd> <dt>
 
@@ -404,7 +404,7 @@ HP-UX
 
 <span id="OS_2"></span><span id="os_2"></span>
 
-<span id="OS_2"></span><span id="os_2"></span>**SISTEMA OPERATIVO/2** (12)
+<span id="OS_2"></span><span id="os_2"></span>**SO/2** (12)
 
 
 </dt> <dd></dd> <dt>
@@ -623,7 +623,7 @@ BS2000/OSD
 
 <span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>
 
-<span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>**Estorba** (37)
+<span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>**Estaciones** (37)
 
 
 </dt> <dd></dd> <dt>
@@ -773,7 +773,7 @@ Ser sistema operativo
 
 </dt> <dd>
 
-So De remanso
+So de mano
 
 </dd> <dt>
 
@@ -823,12 +823,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Version**"), [**CIM \_ key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.3")
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Version**"), [**CIM \_ key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.3")
 </dt> </dl>
 
 Versión de la operación.
 
-La versión de la operación debe tener uno de los formatos siguientes:
+La versión de la operación debe tener uno de los siguientes formatos:
 
 -   <major>.<minor>.<revision>
 -   <major>.<minor><letter><revision>
@@ -841,15 +841,15 @@ Esta propiedad se hereda de la [**acción \_ CIM**](cim-action.md).
 
 La **clase \_ CreateDirectoryAction** de CIM se deriva de [**CIM \_ DirectoryAction**](cim-directoryaction.md).
 
-WMI no implementa esta clase. Para las clases derivadas de **\_ CIM CreateDirectoryAction**, vea [Clases win32](win32-provider.md).
+WMI no implementa esta clase. Para las clases derivadas de **\_ CREATEDirectoryAction de CIM,** vea [Clases win32.](win32-provider.md)
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -859,7 +859,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

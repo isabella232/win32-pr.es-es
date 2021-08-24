@@ -17,19 +17,19 @@ Estos son los recursos clave que le ayudarán a empezar a usar DirectX y C++ par
 
 ## <a name="get-started"></a>Introducción
 
-Estos son algunos temas clave. Configuración del proyecto de DirectX, aclimatándose a Windows aplicaciones de ejemplo.
+Estos son algunos temas clave. Configuración del proyecto de DirectX, acligándose a Windows aplicaciones de ejemplo.
 
 | Tema | Descripción |
 |-|-|
-| [Creación de la primera Windows aplicación mediante DirectX](building-your-first-directx-app.md) | Use este tutorial básico para empezar a trabajar con el desarrollo de aplicaciones de DirectX y, a continuación, use la hoja de ruta para seguir explorando DirectX. |
+| [Creación de la primera aplicación Windows con DirectX](building-your-first-directx-app.md) | Use este tutorial básico para empezar a trabajar con el desarrollo de aplicaciones de DirectX y, a continuación, use la hoja de ruta para seguir explorando DirectX. |
 | [Introducción a DirectX para Windows](getting-started-with-a-directx-game.md) | Revise los pasos que debe seguir para empezar a desarrollar un juego con DirectX y C++. |
-| [Código completo para un marco de trabajo de DirectX](complete-code-sample-for-using-a-corewindow-with-directx.md) | Obtenga el código para un marco de representación básico de DirectX. |
+| [Código completo para un marco De DirectX](complete-code-sample-for-using-a-corewindow-with-directx.md) | Obtenga el código de un marco de representación de DirectX básico. |
 | [Uso de Direct3D 11](/windows/desktop/direct3d11/how-to-use-direct3d-11) | En esta sección se muestra cómo usar la API de Microsoft Direct3D 11 para realizar varias tareas comunes. |
 | [Programming Guide for Direct3D 11 (Guía de programación para Direct3D 11)](/windows/desktop/direct3d11/dx-graphics-overviews) | La guía de programación contiene información sobre cómo usar la canalización programable de Microsoft Direct3D 11 para crear gráficos 3D en tiempo real para aplicaciones de escritorio. |
 | [Herramientas para gráficos DirectX](/windows/desktop/direct3dtools/dx-graphics-tools) | Documentación de las herramientas que se usan para admitir el desarrollo de DirectX. |
 | [Novedades de Direct3D 11](/windows/desktop/direct3d11/dx-graphics-overviews-introduction) | Un desglose de todas las características agregadas en las versiones más recientes de DirectX y Direct3D (actualmente 11.2). |
-| [Descarga de Visual Studio 2013](https://msdn.microsoft.com/windows/apps/br229516.aspx) | Debe tener la Visual Studio Express 2013 para escritorio de Windows crear juegos Windows Store. Para ver un paseo por Visual Studio, consulte [Desarrollo de Windows Store con Visual Studio 2012.](/previous-versions/windows/apps/br211384(v=win.10)) Para obtener información sobre las nuevas características Visual Studio, vea [Product Highlights for Visual Studio 2013](/previous-versions/visualstudio/visual-studio-2013/bb386063(v=vs.120)). |
-| [¿Dónde está el SDK de DirectX?](../directx-sdk--august-2009-.md) | Contiene instrucciones para desarrolladores que desean llevar sus proyectos de DirectX a Microsoft Visual Studio. |
+| [Descarga de Visual Studio 2013](https://msdn.microsoft.com/windows/apps/br229516.aspx) | Debe tener la Visual Studio Express 2013 para escritorio de Windows crear juegos Windows Store. Para ver un paseo por Visual Studio, consulte Desarrollo de Windows Store con [Visual Studio 2012.](/previous-versions/windows/apps/br211384(v=win.10)) Para obtener información sobre las nuevas características Visual Studio, vea [Product Highlights for Visual Studio 2013](/previous-versions/visualstudio/visual-studio-2013/bb386063(v=vs.120)). |
+| [¿Dónde está el SDK de DirectX?](../directx-sdk--august-2009-.md) | Contiene instrucciones para los desarrolladores que desean llevar sus proyectos de DirectX a Microsoft Visual Studio. |
 
 ## <a name="sample-applications"></a>Aplicaciones de ejemplo
 
@@ -43,8 +43,8 @@ Estos son algunos temas clave. Configuración del proyecto de DirectX, aclimatá
 | Tema | Descripción |
 |-|-|
 | [Canalización de gráficos](/windows/desktop/direct3d11/overviews-direct3d-11-graphics-pipeline) | Trata la canalización de gráficos básica de Direct3D 11. |
-| [Representación](/windows/desktop/direct3d11/overviews-direct3d-11-render) | Trata los modelos de representación de Direct3D, los componentes, los sombreadores y el flujo de llamadas de API. |
-| [Recursos](/windows/desktop/direct3d11/overviews-direct3d-11-resources) | Trata los "recursos" de Direct3D, como los búferes y otros tipos de recursos de GPU. |
+| [Representación](/windows/desktop/direct3d11/overviews-direct3d-11-render) | Trata los modelos de representación de Direct3D, los componentes, los sombreadores y el flujo de llamadas api. |
+| [Recursos](/windows/desktop/direct3d11/overviews-direct3d-11-resources) | Trata los "recursos" de Direct3D, como búferes y otros tipos de recursos de GPU. |
 | [Efectos](/windows/desktop/direct3d11/d3d11-graphics-programming-guide-effects) | Trata los efectos y la creación de instancias de varios sombreadores de Direct3D.  |
 | [Cómo: Crear una cadena de intercambio](/windows/desktop/direct3d11/overviews-direct3d-11-devices-create-swap-chain) | Cómo crear la cadena de intercambio usada para dibujar píxeles en una región de la pantalla. |
 | [Cómo: Crear un dispositivo y un contexto inmediato](/windows/desktop/direct3d11/overviews-direct3d-11-devices-initialize) | Cómo crear una abstracción de dispositivos Direct3D y un contexto inmediato para dibujar. |
@@ -52,8 +52,8 @@ Estos son algunos temas clave. Configuración del proyecto de DirectX, aclimatá
 | [Cómo: Crear un búfer de índice](/windows/desktop/direct3d11/overviews-direct3d-11-resources-buffers-index-how-to) | Cómo crear un búfer de índice que permita al sombreador de vértices recorrer el orden de los vértices en una malla. |
 | [Cómo: Crear un búfer constante](/windows/desktop/direct3d11/overviews-direct3d-11-resources-buffers-constant-how-to) | Cómo pasar datos constantes (uniformes) entre la CPU y la GPU durante la representación. |
 | [Cómo: Crear una textura](/windows/desktop/direct3d11/overviews-direct3d-11-resources-textures-create) | Cómo crear una textura u otro recurso de búfer que la GPU pueda muestrear. |
-| [Cómo: Inicializar una textura a partir de un archivo](/windows/desktop/direct3d11/overviews-direct3d-11-resources-textures-how-to) | Cómo cargar una textura de un archivo y procesarla para que la use la canalización del sombreador. |
-| [Cómo: Compilar un sombreador](../direct3d11/how-to--compile-a-shader.md) | Cómo compilar un sombreador para su uso en la aplicación de gráficos. |
+| [Cómo: Inicializar una textura a partir de un archivo](/windows/desktop/direct3d11/overviews-direct3d-11-resources-textures-how-to) | Cómo cargar una textura desde un archivo y procesarla para que la use la canalización del sombreador. |
+| [Cómo: Compilar un sombreador](../direct3d11/how-to--compile-a-shader.md) | Cómo compilar un sombreador para usarlo en la aplicación de gráficos. |
 
 ## <a name="graphics-apis"></a>API de gráficos
 
@@ -61,12 +61,12 @@ Estos son algunos temas clave. Configuración del proyecto de DirectX, aclimatá
 |-|-|
 | [Direct3D 11](/windows/desktop/direct3d11/d3d11-graphics-reference) | Documentación de las API principales para la virtualización de la GPU y sus recursos, y para dibujar gráficos mediante un modelo de sombreador unificado. |
 | [Direct3D HLSL](/windows/desktop/direct3dhlsl/dx-graphics-hlsl) | Documentación de referencia High-Level lenguaje de sombreador, la sintaxis y las reglas que se usan para definir programas de sombreador ejecutados como parte de la canalización de gráficos en un modelo de sombreador unificado. |
-| [Interfaz de gráficos DirectX (DXGI)](/windows/desktop/direct3ddxgi/dx-graphics-dxgi) | Documentación de las API de bajo nivel que se usan para adquirir la interfaz de GPU y los recursos del sistema. |
+| [DirectX Graphics Interface (DXGI)](/windows/desktop/direct3ddxgi/dx-graphics-dxgi) | Documentación de las API de bajo nivel que se usan para adquirir la interfaz de GPU y los recursos del sistema. |
 | [Direct2D](/windows/desktop/Direct2D/direct2d-portal) | Documentación de las API de Direct2D, que admiten el dibujo de primitivas 2D. Normalmente, Direct2D se usa para interfaces de usuario personalizadas, procesamiento y procesamiento por lotes de imágenes y juegos sencillos. |
-| [DirectWrite](/windows/desktop/DirectWrite/direct-write-portal) | Documentación de las API DirectWrite, que admiten la representación y el escalado de fuentes personalizadas. |
+| [DirectWrite](/windows/desktop/DirectWrite/direct-write-portal) | Documentación de las API DirectWrite, que admiten la representación y el escalado de fuentes personalizados. |
 | [Windows Imaging Component (WIC)](/windows/desktop/wic/-wic-api) | Documentación de las API de WIC, que se usan para leer y administrar diferentes formatos de imagen de mapa de bits. |
-| [Superficies DirectDraw (DDS)](/windows/desktop/direct3ddds/dx-graphics-dds) para texturas | Documentación de las API de DDS, que se usan para la compresión de textura 2D y la descompresión junto con las API de WIC. |
-| [DirectXMath](/windows/desktop/dxmath/directxmath-portal) | Documentación de las API de DirectXMath, que admiten Direct3D con un conjunto de tipos y funciones adecuados para el desarrollo de gráficos en tiempo real en 3D. (Anteriormente XNAMath). |
+| [Superficies DirectDraw (DDS)](/windows/desktop/direct3ddds/dx-graphics-dds) para texturas | Documentación de las API de DDS, que se usan para la compresión y descompresión de texturas 2D junto con las API de WIC. |
+| [DirectXMath](/windows/desktop/dxmath/directxmath-portal) | Documentación de las API de DirectXMath, que admiten Direct3D con un conjunto de tipos y funciones adecuados para el desarrollo de gráficos 3D en tiempo real. (Anteriormente XNAMath). |
 | [DirectCompute](https://walbourn.github.io/) | Documentación de las API de DirectCompute, que se usa para la funcionalidad de sombreador de uso general o de proceso. |
 
 ## <a name="audio-media-and-input-apis"></a>API de audio, multimedia y entrada
@@ -77,7 +77,7 @@ Estos son algunos temas clave. Configuración del proyecto de DirectX, aclimatá
 | [Referencia de programación de XAudio2](/windows/desktop/xaudio2/programming-reference) | Nodo de nivel superior para la documentación de referencia de la API de audio XAudio2. |
 | [Guía de programación de XInput](/windows/desktop/xinput/programming-guide) | Nodo de nivel superior para la documentación conceptual de la API del controlador XInput. |
 | [Referencia de programación de XInput](/windows/desktop/xinput/programming-reference) | Nodo de nivel superior para la documentación de referencia de la API del controlador XInput. |
-| [Media Foundation](/windows/desktop/medfound/about-the-media-foundation-sdk) | Nodo de nivel superior para la documentación Media Foundation API de reproducción de multimedia (MF) (audio/vídeo). Normalmente, MF se usa en juegos para la reproducción de música, mientras que XAudio2 se usa para el audio dinámico. |
+| [Media Foundation](/windows/desktop/medfound/about-the-media-foundation-sdk) | Nodo de nivel superior para la documentación de la API de reproducción de Media Foundation multimedia (MF) (audio/vídeo). Normalmente, MF se usa en juegos para la reproducción de música, mientras que XAudio2 se usa para el audio dinámico. |
 
 ## <a name="port-to-directx-11"></a>Puerto a DirectX 11
 
@@ -92,7 +92,7 @@ Estos son algunos temas clave. Configuración del proyecto de DirectX, aclimatá
 Si es una mano antigua con C++ en Windows plataformas, las cosas pueden parecer un poco diferentes. Estos son algunos punteros a temas que pueden ayudarle a controlar la diferencia.
 
 > [!NOTE]
-> Algunos de estos temas existen para ayudarle a mantener la aplicación de C++/CX. Pero se recomienda usar [C++/WinRT](/windows/uwp/cpp-and-winrt-apis/intro-to-using-cpp-with-winrt) para nuevas aplicaciones. C++/WinRT es una moderna proyección de lenguaje C++17 totalmente estándar para las API de Windows Runtime (WinRT), implementada como una biblioteca basada en archivos de encabezado y diseñada para darte acceso de primera clase a la API moderna de Windows.
+> Algunos de estos temas existen para ayudarle a mantener la aplicación de C++/CX. Pero se recomienda usar [C++/WinRT](/windows/uwp/cpp-and-winrt-apis/intro-to-using-cpp-with-winrt) para las nuevas aplicaciones. C++/WinRT es una moderna proyección de lenguaje C++17 totalmente estándar para las API de Windows Runtime (WinRT), implementada como una biblioteca basada en archivos de encabezado y diseñada para darte acceso de primera clase a la API moderna de Windows.
 
 | Tema | Descripción |
 |-|-|
@@ -104,8 +104,8 @@ Si es una mano antigua con C++ en Windows plataformas, las cosas pueden parecer 
 | Tema | Descripción |
 |-|-|
 | [Programación asincrónica (DirectX y C++)](/previous-versions/windows/apps/hh994919(v=win.10)) | Obtenga información sobre la programación asincrónica y multiproceso para aplicaciones y juegos de DirectX. |
-| [Programación asincrónica en C++](/previous-versions/windows/apps/hh780559(v=win.10)) | Describe las formas básicas de usar la clase de tarea para consumir Windows en tiempo de ejecución. |
-| [**task (Clase) (Runtime de simultaneidad)**](/previous-versions/visualstudio/visual-studio-2012/hh750113(v=vs.110)) | Documentación de referencia de la clase de tarea. |
+| [Programación asincrónica en C++](/previous-versions/windows/apps/hh780559(v=win.10)) | Describe las formas básicas de usar la clase de tarea para consumir Windows métodos asincrónicos en tiempo de ejecución. |
+| [**task (Clase, Runtime de simultaneidad)**](/previous-versions/visualstudio/visual-studio-2012/hh750113(v=vs.110)) | Documentación de referencia de la clase de tarea. |
 | [Paralelismo de tareas (Runtime de simultaneidad)](/previous-versions/visualstudio/visual-studio-2010/dd492427(v=vs.100)) | Explicación detallada sobre la clase de tarea y cómo usarla. |
 
 ## <a name="additional-useful-libraries-for-windows-c-programming"></a>Bibliotecas útiles adicionales para Windows programación de C++
