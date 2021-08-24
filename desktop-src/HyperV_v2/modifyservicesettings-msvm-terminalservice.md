@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 930b29c5c07c755b493a0aabad88ae776c0803e0
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b4e77cb68e1052cc91cd5b1ef459051fdde108ac3a044a6c8dcc6251ad57baca
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119333"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119693895"
 ---
-# <a name="modifyservicesettings-method-of-the-msvm_terminalservice-class"></a>Método ModifyServiceSettings de la clase TerminalService de \_ Msvm
+# <a name="modifyservicesettings-method-of-the-msvm_terminalservice-class"></a>Método ModifyServiceSettings de la clase TerminalService de Msvm \_
 
 Modifica los datos de configuración del servicio.
 
@@ -103,17 +103,17 @@ Este método devuelve uno de los valores siguientes.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 8 solo \[ aplicaciones de escritorio\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
 | Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

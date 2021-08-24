@@ -3,75 +3,75 @@ title: Perfiles del sistema localizados
 description: Perfiles del sistema localizados
 ms.assetid: 2c218ab4-ecdb-414c-aa42-b71a42e340e5
 keywords:
-- Windows Media Format SDK, perfiles del sistema
-- Advanced Systems Format (ASF), perfiles del sistema
-- ASF (formato de sistemas avanzados), perfiles del sistema
-- SDK de Windows Media Format, perfiles de sistema localizados
-- Advanced Systems Format (ASF), perfiles de sistema localizados
+- Windows SDK de formato multimedia, perfiles del sistema
+- Formato de sistemas avanzados (ASF), perfiles del sistema
+- ASF (formato de sistemas avanzados),perfiles del sistema
+- Windows SDK de formato multimedia, perfiles del sistema localizados
+- Formato de sistemas avanzados (ASF), perfiles de sistema localizados
 - ASF (formato de sistemas avanzados), perfiles de sistema localizados
 - perfiles del sistema, localizados
 - perfiles del sistema localizados, lista de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8aaeecdf1d1d62d78df18e0ac1c5bffbf39f9778
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: dbe3ca0abbe0e5b92645f6adaa1f6ebfdc44d52064d6fb8e1389420d19651b7c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104077272"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119707715"
 ---
 # <a name="localized-system-profiles"></a>Perfiles del sistema localizados
 
-En la tabla siguiente se enumeran los archivos de Perfil de sistema localizados que se incluyen con el SDK de Windows Media Format y los lenguajes asociados a cada uno de ellos. Estos archivos se instalan en \[ la \] \\ carpeta SDKRoot WMSDK \\ WMFSDK9 \\ LocalizedProfiles Para tener acceso a un archivo determinado con los métodos **IWMProfileManagerLanguage** , debe moverlo al directorio raíz del sistema junto con los archivos de Perfil de sistema predeterminados.
+En la tabla siguiente se enumeran los archivos de perfil del sistema localizados incluidos con Windows SDK de formato multimedia y los idiomas asociados a cada uno. Estos archivos se instalan en la \[ carpeta SDKRoot \] \\ WMSDK \\ WMFSDK9 \\ LocalizedProfiles. Para acceder a un archivo determinado con los métodos **IWMProfileManagerLanguage,** debe moverlo al directorio raíz del sistema junto con los archivos de perfil del sistema predeterminados.
 
 
 
-| Idioma              | Nombre de archivo    |
+| Lenguaje              | Nombre de archivo    |
 |-----------------------|--------------|
-| Árabe                | WMPrfAra. prx |
-| Chino (simplificado)  | WMPrfCHS. prx |
-| Chino (tradicional) | WMPrfCHT. prx |
-| Checo                 | WMPrfCsy. prx |
-| Danés                | WMPrfDan. prx |
-| Neerlandés                 | WMPrfNld. prx |
-| Finés               | WMPrfFin. prx |
-| Francés                | WMPrfFra. prx |
-| Alemán                | WMPrfDeu. prx |
-| Griego                 | WMPrfEll. prx |
-| Hebreo                | WMPrfHeb. prx |
-| Húngaro             | WMPrfHun. prx |
-| Italiano               | WMPrfIta. prx |
-| Japonés              | WMPrfJpn. prx |
-| Coreano                | WMPrfKor. prx |
-| Noruego             | WMPrfNor. prx |
-| Polaco                | WMPrfPlk. prx |
-| Portugués – Brasil   | WMPrfPtb. prx |
-| Portugués – Portugal | WMPrfPtg. prx |
-| Ruso               | WMPrfRus. prx |
-| Eslovaco                | WMPrfSky. prx |
-| Esloveno             | WMPrfSlv. prx |
-| Español               | WMPrfEsp. prx |
-| Sueco               | WMPrfSve. prx |
-| Turco               | WMPrfTrk. prx |
+| Árabe                | WMPrfAra.prx |
+| Chino simplificado  | WMPrfCHS.prx |
+| Chino: tradicional | WMPrfCHT.prx |
+| Checo                 | WMPrfCsy.prx |
+| Danés                | WMPrfDan.prx |
+| Neerlandés                 | WMPrfNld.prx |
+| Finés               | WMPrfFin.prx |
+| Francés                | WMPrfFra.prx |
+| Alemán                | WMPrfDeu.prx |
+| Griego                 | WMPrfEll.prx |
+| Hebreo                | WMPrfHeb.prx |
+| Húngaro             | WMPrfHun.prx |
+| Italiano               | WMPrfIta.prx |
+| Japonés              | WMPrfMetern.prx |
+| Coreano                | WMPrfCore.prx |
+| Noruego             | WMPrfNor.prx |
+| Polaco                | WMPrfPlk.prx |
+| Portugués – Brasil   | WMPrfPtb.prx |
+| Portugués – Portugal | WMPrfPtg.prx |
+| Ruso               | WMPrfRus.prx |
+| Eslovaco                | WMPrfSky.prx |
+| Esloveno             | WMPrfSlv.prx |
+| Español               | WMPrfEsp.prx |
+| Sueco               | WMPrfSve.prx |
+| Turco               | WMPrfTrk.prx |
 
 
 
- 
+ 
 
-Puede establecer el idioma del objeto de administrador de perfiles llamando al método [**IWMProfileManagerLanguage:: SetUserLanguageID**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofilemanagerlanguage-setuserlanguageid) . Para la mayoría de los lenguajes, solo se examina el identificador de idioma principal del LANGID. Las excepciones son para los idiomas chino y portugués, donde también se utiliza el identificador de idioma secundario. En la tabla siguiente se muestra cómo crear un LANGID para especificar en el método **SetUserLanguageID** .
+Puede establecer el idioma del objeto del administrador de perfiles llamando al método [**IWMProfileManagerLanguage::SetUserLanguageID.**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofilemanagerlanguage-setuserlanguageid) Para la mayoría de los idiomas, solo se examina el identificador de idioma principal del LANGID. Las excepciones son para los idiomas chino y portugués, donde también se usa el identificador de idioma secundario. En la tabla siguiente se muestra cómo crear un LANGID para especificarlo en el **método SetUserLanguageID.**
 
 
 
-| Idioma principal-secundario | MAKELANGID (macro)                                             |
+| Idioma principal y secundario | MakeLANGID (Macro)                                             |
 |----------------------------|--------------------------------------------------------------|
-| Chino simplificado       | MAKELANGID (LANG \_ chino, sublang \_ chino \_ simplificado)     |
-| Chino tradicional      | MAKELANGID (LANG \_ chino, sublang \_ chino \_ Singapur)      |
-| Portugués (Brasil)        | MAKELANGID (LANG \_ Portugués, sublang \_ Portugués \_ brasileño) |
-| Portugués (Portugal)      | MAKELANGID (LANG \_ Portugués, sublang \_ Portugués)            |
+| Chino simplificado       | MAKELANGID( LANG \_ CHINESE, SUBLANG \_ CHINESE \_ SIMPLIFIED)     |
+| Chino tradicional      | MAKELANGID( LANG \_ CHINESE, SUBLANG \_ CHINESE \_ SINGAPORE)      |
+| Portugués (Brasil)        | MAKELANGID(LANG \_ PORTUGUÉS, SUBLANG \_ PORTUGUÉS PORTUGUÉS \_ BRASIL) |
+| Portugués (Portugal)      | MAKELANGID(LANG \_ PORTUGUÉS, SUBLANG \_ PORTUGUÉS)            |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -83,9 +83,9 @@ Puede establecer el idioma del objeto de administrador de perfiles llamando al m
 [**Perfiles del sistema**](system-profiles.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

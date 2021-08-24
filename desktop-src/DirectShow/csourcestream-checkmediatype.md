@@ -1,7 +1,7 @@
 ---
-description: 'El método CheckMediaType determina si el PIN acepta un tipo de medio específico. Este método implementa el método CBasePin:: CheckMediaType virtual puro.'
+description: El método CheckMediaType determina si el pin acepta un tipo de medio específico. Este método implementa el método CBasePin::CheckMediaType virtual puro.
 ms.assetid: 3db7c74c-a6aa-4b49-b2a5-9bf8db35fd7e
-title: CSourceStream. CheckMediaType (método) (Source. h)
+title: Método CSourceStream.CheckMediaType (Source.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 62f8b6c18613f5c187fc637febd08b74260a1e44
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4cb900d4de448b59eadb4cfd4de28aebf3ac07845fff6a2769c003d37cac846a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660723"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119633935"
 ---
-# <a name="csourcestreamcheckmediatype-method"></a>CSourceStream. CheckMediaType, método
+# <a name="csourcestreamcheckmediatype-method"></a>Método CSourceStream.CheckMediaType
 
-El `CheckMediaType` método determina si el PIN acepta un tipo de medio específico. Este método implementa el método [**CBasePin:: CheckMediaType**](cbasepin-checkmediatype.md) virtual puro.
+El `CheckMediaType` método determina si el pin acepta un tipo de medio específico. Este método implementa el método [**CBasePin::CheckMediaType**](cbasepin-checkmediatype.md) virtual puro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,28 +45,28 @@ virtual HRESULT CheckMediaType(
 *pMediaType* 
 </dt> <dd>
 
-Puntero a un objeto [**CMediaType**](cmediatype.md) que contiene el tipo de medio propuesto.
+Puntero a un [**objeto CMediaType**](cmediatype.md) que contiene el tipo de medio propuesto.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores **HRESULT** que se muestran en la tabla siguiente.
+Devuelve uno de los **valores HRESULT** que se muestran en la tabla siguiente.
 
 
 
 | Código devuelto                                                                            | Descripción                                          |
 |----------------------------------------------------------------------------------------|------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>   | Este pin es compatible con este tipo de medio.<br/>        |
-| <dl> <dt>**E \_ FAIL**</dt> </dl> | El PIN no admite este tipo de medio.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | Este pin admite este tipo de medio.<br/>        |
+| <dl> <dt>**E \_ FAIL**</dt> </dl> | El pin no admite este tipo de medio.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-De forma predeterminada, el PIN admite un solo tipo de medio. Este método recupera el tipo admitido mediante una llamada a la versión de un solo parámetro del método [**CSourceStream:: GetMediaType**](csourcestream-getmediatype.md) y lo compara con el tipo propuesto. Si el PIN admite más de un tipo de medio, Invalide este método.
+De forma predeterminada, el pin admite un único tipo de medio. Este método recupera el tipo admitido llamando a la versión de parámetro único del método [**CSourceStream::GetMediaType**](csourcestream-getmediatype.md) y lo compara con el tipo propuesto. Si el pin admite más de un tipo de medio, invalide este método.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,8 +74,8 @@ De forma predeterminada, el PIN admite un solo tipo de medio. Este método recup
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Source. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Source.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ De forma predeterminada, el PIN admite un solo tipo de medio. Este método recup
 
 <dl> <dt>
 
-[**Clase CSourceStream**](csourcestream.md)
+[**CSourceStream (clase)**](csourcestream.md)
 </dt> </dl>
 
  

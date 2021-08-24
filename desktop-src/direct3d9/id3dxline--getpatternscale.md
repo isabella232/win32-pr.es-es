@@ -1,7 +1,7 @@
 ---
-description: Obtiene el valor de escala del patrón punteado.
+description: Obtiene el valor de escala de patrón de stipple.
 ms.assetid: cf80ae8c-493d-4f35-b4f9-5981e64cc842
-title: 'ID3DXLine:: GetPatternScale (método) (D3dx9core. h)'
+title: Método ID3DXLine::GetPatternScale (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 14a9919ede81eb64b844e1882725e37359ad6738
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3799901d071da08ee1bb0de4994ed330fabe2d8fedf3b59ce556105f0a280e3f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104424531"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119675154"
 ---
-# <a name="id3dxlinegetpatternscale-method"></a>ID3DXLine:: GetPatternScale (método)
+# <a name="id3dxlinegetpatternscale-method"></a>Método ID3DXLine::GetPatternScale
 
-Obtiene el valor de escala del patrón punteado.
+Obtiene el valor de escala de patrón de stipple.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,9 +40,9 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Devuelve el valor usado para escalar el patrón punteado. 1.0 f es el valor predeterminado y no representa ningún ajuste de escala. Un valor menor que 1,0 f reduce el modelo y un valor mayor que 1,0 expande el patrón.
+Devuelve el valor utilizado para escalar el patrón de stipple. 1.0f es el valor predeterminado y no representa ningún escalado. Un valor menor que 1,0f reduce el patrón y un valor mayor que 1,0 extiende el patrón.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve el valor usado para escalar el patrón punteado. 1.0 f es el valor pred
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

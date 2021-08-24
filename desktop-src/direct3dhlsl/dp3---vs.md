@@ -1,6 +1,6 @@
 ---
-title: DP3-vs
-description: Calcula el producto de tres componentes de los registros de origen. | DP3-vs
+title: 'dp3: vs'
+description: 'Calcula el producto de puntos de tres componentes de los registros de origen. | dp3: vs'
 ms.assetid: a5263a18-ed53-41eb-85ca-2cff872e03d8
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,39 +9,39 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 81580401f25ddcf7ce1c1d53475d0c3beba74a89
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: bf65f77a60ea7ac19ef5ea204f916387c65c3bee08c89ea274e800f650ef241d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104279933"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119673875"
 ---
-# <a name="dp3---vs"></a>DP3-vs
+# <a name="dp3---vs"></a>dp3: vs
 
-Calcula el producto de tres componentes de los registros de origen.
+Calcula el producto de puntos de tres componentes de los registros de origen.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| DP3 DST, src0, SRC1 |
+| dp3 dst, src0, src1 |
 |---------------------|
 
 
 
  
 
-, donde
+where
 
--   DST es el registro de destino.
+-   dst es el registro de destino.
 -   src0 es un registro de origen.
--   SRC1 es un registro de origen.
+-   src1 es un registro de origen.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
 | dp3                    | x    | x    | x    | x     | x    | x     |
 
@@ -49,7 +49,7 @@ Calcula el producto de tres componentes de los registros de origen.
 
  
 
-En el siguiente fragmento de código se muestran las operaciones realizadas:
+El fragmento de código siguiente muestra las operaciones realizadas:
 
 
 ```

@@ -1,10 +1,10 @@
 ---
-title: RAS_PORT_0 estructura (rassapi. h)
-description: La estructura del puerto de RAS \_ \_ 0 contiene información que describe un puerto ras.
+title: RAS_PORT_0 estructura (Rassapi.h)
+description: La estructura \_ RAS PORT \_ 0 contiene información que describe un puerto RAS.
 ms.assetid: 750fc705-0770-427b-b7d6-7876b8b9118a
 keywords:
-- RAS_PORT_0 de la estructura RAS
-- PRAS_PORT_0 de puntero de estructura RAS
+- RAS_PORT_0 ras de estructura
+- PRAS_PORT_0 de estructura ras
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 80d66725415d86aea44138f23fb3748e3187820f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 67891ccd65aaa56fc41dd077ae46bd4bf61f816cdc02afeb65964886cbaf9562
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534269"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119673135"
 ---
-# <a name="ras_port_0-structure"></a>\_Estructura del puerto 0 de Ras \_
+# <a name="ras_port_0-structure"></a>Estructura \_ RAS PORT \_ 0
 
-\[Esta versión de la estructura del **\_ Puerto \_ 0 de Ras** no es compatible con Windows Vista. En su lugar, use el [**\_ Puerto ras \_ 0**](/windows/desktop/api/Mprapi/ns-mprapi-ras_port_0) más reciente definido en mprapi. h.\]
+\[Esta versión de la **estructura \_ RAS PORT \_ 0** no se admite a partir Windows Vista. Use el puerto [**RAS \_ \_ 0 más**](/windows/desktop/api/Mprapi/ns-mprapi-ras_port_0) reciente definido en mprapi.h en su lugar.\]
 
-La estructura del **Puerto de Ras \_ \_ 0** contiene información que describe un puerto ras.
+La **estructura RAS PORT \_ \_ 0** contiene información que describe un puerto RAS.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,32 +56,32 @@ typedef struct _RAS_PORT_0 {
 **wszPortName**
 </dt> <dd>
 
-Una cadena Unicode terminada en null que especifica el nombre del puerto, como "COM1".
+Cadena Unicode terminada en NULL que especifica el nombre del puerto, como "COM1".
 
 </dd> <dt>
 
 **wszDeviceType**
 </dt> <dd>
 
-Una cadena Unicode terminada en null que especifica el tipo de dispositivo en el que se realizó la conexión, como módem o ISDN (RDSI). La lista de tipos de dispositivos que se pueden especificar en este miembro incluye todos los tipos de dispositivos instalados en el servidor, incluidos los dispositivos de terceros.
+Cadena Unicode terminada en NULL que especifica el tipo del dispositivo en el que se realizó la conexión, como Módem o ISDN. La lista de tipos de dispositivo que se pueden especificar en este miembro incluye todos los tipos de dispositivo instalados en el servidor, incluidos los dispositivos de terceros.
 
 </dd> <dt>
 
 **wszDeviceName**
 </dt> <dd>
 
-Una cadena Unicode terminada en null que especifica el nombre del dispositivo en el que se realizó la conexión, como "Hayes 9600" o "PCIMACISDN1".
+Cadena Unicode terminada en NULL que especifica el nombre del dispositivo en el que se realizó la conexión, como "Hayes 9600" o "PCIMACISDN1".
 
 </dd> <dt>
 
 **wszMediaName**
 </dt> <dd>
 
-Especifica una cadena Unicode terminada en null que especifica el nombre del medio utilizado para la conexión, como *Rasser* o *rastapi*.
+Especifica una cadena Unicode terminada en NULL que especifica el nombre del medio utilizado para la conexión, como *rasser* o *rastapi*.
 
 </dd> <dt>
 
-**sector**
+**reserved**
 </dt> <dd>
 
 Reservado.
@@ -91,59 +91,59 @@ Reservado.
 **Marcas**
 </dt> <dd>
 
-Especifica un conjunto de marcadores de bits que especifican la naturaleza de la conexión realizada en este puerto. Este miembro puede ser una combinación de las marcas siguientes.
+Especifica un conjunto de marcas de bits que especifican la naturaleza de la conexión realizada en este puerto. Este miembro puede ser una combinación de las marcas siguientes.
 
 
 
-| Value                                                                                                                                                                        | Significado                                                                                                                                                                                                                                                                                                                                                                                    |
+| Valor                                                                                                                                                                        | Significado                                                                                                                                                                                                                                                                                                                                                                                    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="GATEWAY_ACTIVE"></span><span id="gateway_active"></span><dl> <dt>**PUERTA de enlace \_ activa**</dt> </dl>             | Si se establece esta marca, la puerta de enlace NetBIOS está activa en el servidor.<br/>                                                                                                                                                                                                                                                                                                               |
-| <span id="MESSENGER_PRESENT"></span><span id="messenger_present"></span><dl> <dt>**MESSENGER \_ presente**</dt> </dl>    | Si se establece esta marca, el servicio mensajero se está ejecutando en el cliente remoto.<br/>                                                                                                                                                                                                                                                                                                     |
-| <span id="PORT_MULTILINKED"></span><span id="port_multilinked"></span><dl> <dt>**PUERTO con \_ MULTIvínculo**</dt> </dl>       | Si se establece esta marca, el puerto está vinculado a otros puertos. Use esta información para mostrar el estado de la conexión como un puerto multivínculo. <br/> En el caso de un puerto multivínculo, la estructura de [**\_ \_ estadísticas del puerto ras**](ras-port-statistics-str.md) contiene dos conjuntos de estadísticas: uno para el puerto independiente y otro para los puertos combinados en la conexión de multivínculo.<br/> |
-| <span id="PPP_CLIENT"></span><span id="ppp_client"></span><dl> <dt>**\_cliente ppp**</dt> </dl>                         | Si se establece esta marca, el cliente remoto se conecta mediante PPP. Si no se establece esta marca, el cliente remoto se conecta mediante el protocolo AMB.<br/>                                                                                                                                                                                                                                        |
-| <span id="REMOTE_LISTEN"></span><span id="remote_listen"></span><dl> <dt>**\_escucha remota**</dt> </dl>                | Si se establece esta marca, el parámetro RemoteListen de la puerta de enlace de NetBIOS se establece en 1 en el servidor.<br/>                                                                                                                                                                                                                                                                               |
-| <span id="USER_AUTHENTICATED"></span><span id="user_authenticated"></span><dl> <dt>**USUARIO \_ autenticado**</dt> </dl> | Si se establece esta marca, un cliente remoto está conectado al servidor y el usuario se ha autenticado. Active esta marca para asegurarse de que un cliente está conectado realmente a un puerto.<br/>                                                                                                                                                                                                   |
+| <span id="GATEWAY_ACTIVE"></span><span id="gateway_active"></span><dl> <dt>**PUERTA DE \_ ENLACE ACTIVA**</dt> </dl>             | Si se establece esta marca, la puerta de enlace NetBIOS está activa en el servidor.<br/>                                                                                                                                                                                                                                                                                                               |
+| <span id="MESSENGER_PRESENT"></span><span id="messenger_present"></span><dl> <dt>**MESSENGER \_ PRESENT**</dt> </dl>    | Si se establece esta marca, el servicio messenger se ejecuta en el cliente remoto.<br/>                                                                                                                                                                                                                                                                                                     |
+| <span id="PORT_MULTILINKED"></span><span id="port_multilinked"></span><dl> <dt>**PUERTO \_ MULTIVINCULADO**</dt> </dl>       | Si se establece esta marca, el puerto está multivinculado con otros puertos. Use esta información para mostrar el estado de la conexión como un puerto de varios vínculos. <br/> Para un puerto de varios vínculos, la estructura [**RAS \_ PORT \_ STATISTICS**](ras-port-statistics-str.md) contiene dos conjuntos de estadísticas: una para el puerto por sí sola y otra para los puertos combinados en la conexión de varios vínculos.<br/> |
+| <span id="PPP_CLIENT"></span><span id="ppp_client"></span><dl> <dt>**CLIENTE \_ PPP**</dt> </dl>                         | Si se establece esta marca, el cliente remoto conectado mediante PPP. Si no se establece esta marca, el cliente remoto conectado mediante el protocolo AMB.<br/>                                                                                                                                                                                                                                        |
+| <span id="REMOTE_LISTEN"></span><span id="remote_listen"></span><dl> <dt>**ESCUCHA \_ REMOTA**</dt> </dl>                | Si se establece esta marca, el parámetro RemoteListen de la puerta de enlace NetBIOS se establece en 1 en el servidor.<br/>                                                                                                                                                                                                                                                                               |
+| <span id="USER_AUTHENTICATED"></span><span id="user_authenticated"></span><dl> <dt>**USUARIO \_ AUTENTICADO**</dt> </dl> | Si se establece esta marca, un cliente remoto se conecta al servidor y el usuario se ha autenticado. Compruebe esta marca para asegurarse de que un cliente está conectado realmente a un puerto.<br/>                                                                                                                                                                                                   |
 
 
 
  
 
-Si \_ están configuradas las marcas Messenger presente, puerta de enlace \_ activa y \_ escucha remota, utilice el servicio mensajero para enviar un mensaje administrativo al cliente remoto. Si \_ se establecen Messenger presente y \_ la escucha remota, pero la puerta de enlace \_ activa no, envía mensajes al cliente solo desde el servidor RAS al que está conectado el cliente.
+Si se establecen las marcas MESSENGER PRESENT, GATEWAY ACTIVE y REMOTE LISTEN, use el servicio de mensajería para enviar un mensaje \_ \_ administrativo al cliente \_ remoto. Si MESSENGER PRESENT y REMOTE LISTEN están establecidos, pero GATEWAY ACTIVE no, envíe mensajes al cliente solo desde el servidor RAS al que \_ \_ está conectado el \_ cliente.
 
 </dd> <dt>
 
 **wszUserName**
 </dt> <dd>
 
-Una cadena Unicode terminada en null que especifica el nombre del usuario remoto conectado a este puerto.
+Cadena Unicode terminada en NULL que especifica el nombre del usuario remoto conectado a este puerto.
 
 </dd> <dt>
 
 **wszComputer**
 </dt> <dd>
 
-Una cadena Unicode terminada en null que especifica el nombre del equipo cliente remoto.
+Cadena Unicode terminada en NULL que especifica el nombre del equipo cliente remoto.
 
 </dd> <dt>
 
 **dwStartSessionTime**
 </dt> <dd>
 
-Especifica el tiempo, en segundos desde el 1 de enero de 1970, que el cliente conectó al servidor RAS en este puerto. Use las funciones estándar de hora para dar formato a este valor para su presentación.
+Especifica el tiempo, en segundos desde el 1 de enero de 1970, que el cliente se conectó al servidor RAS en este puerto. Use las funciones de hora estándar para dar formato a este valor para su presentación.
 
 </dd> <dt>
 
 **wszLogonDomain**
 </dt> <dd>
 
-Especifica una cadena Unicode terminada en null que especifica el nombre del dominio en el que se autenticó el usuario remoto. Esta cadena es solo el nombre de dominio, sin el \\ \\ prefijo "".
+Especifica una cadena Unicode terminada en NULL que especifica el nombre del dominio en el que se autenticó el usuario remoto. Esta cadena es solo el nombre de dominio, sin prefijo \\ \\ "".
 
 </dd> <dt>
 
 **fAdvancedServer**
 </dt> <dd>
 
-Especifica una marca que es distinto de cero si el servidor RAS asociado a este puerto es un servidor avanzado, como Windows 2000 Advanced Server. Utilice esta información para determinar el nombre del servidor que tiene la base de datos de cuentas de usuario. Si el servidor RAS es un servidor avanzado, obtenga el nombre del servidor de cuentas de usuario mediante la concatenación del prefijo " \\ \\ " en el nombre devuelto en el miembro **wszLogonDomain** . Esto se debe a que para un servidor avanzado, el nombre de dominio de inicio de sesión local es el mismo que el nombre del servidor. Si el servidor RAS es una estación de trabajo, utilice la función [**RasAdminGetUserAccountServer**](rasadmingetuseraccountserver.md) para obtener el nombre del servidor de cuentas de usuario.
+Especifica una marca que es distinta de cero si el servidor RAS asociado a este puerto es un servidor avanzado como Windows 2000 Advanced Server. Use esta información para determinar el nombre del servidor que tiene la base de datos de la cuenta de usuario. Si el servidor RAS es un servidor avanzado, obtenga el nombre del servidor de cuentas de usuario concatenando el prefijo " " con el nombre devuelto en el \\ \\ **miembro wszLogonDomain.** Esto se debe a que, para un servidor avanzado, el nombre de dominio de inicio de sesión local es el mismo que el nombre del servidor. Si el servidor RAS es una estación de trabajo, use la [**función RasAdminGetUserAccountServer**](rasadmingetuseraccountserver.md) para obtener el nombre del servidor de cuentas de usuario.
 
 </dd> </dl>
 
@@ -151,13 +151,13 @@ Especifica una marca que es distinto de cero si el servidor RAS asociado a este 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                       |
-| Encabezado<br/>                   | <dl> <dt>Rassapi. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Rassapi.h</dt> </dl> |
 
 
 
@@ -165,16 +165,16 @@ Especifica una marca que es distinto de cero si el servidor RAS asociado a este 
 
 <dl> <dt>
 
-[Introducción al servicio de acceso remoto (RAS)](about-remote-access-service.md)
+[Introducción al Servicio de acceso remoto (RAS)](about-remote-access-service.md)
 </dt> <dt>
 
 [Estructuras de administración del servidor RAS](ras-server-administration-structures.md)
 </dt> <dt>
 
-[**\_Puerto ras \_ 1**](ras-port-1-str.md)
+[**PUERTO \_ \_ RAS 1**](ras-port-1-str.md)
 </dt> <dt>
 
-[**\_estadísticas de Puerto ras \_**](ras-port-statistics-str.md)
+[**ESTADÍSTICAS \_ DE \_ PUERTO RAS**](ras-port-statistics-str.md)
 </dt> <dt>
 
 [**RasAdminGetUserAccountServer**](rasadmingetuseraccountserver.md)

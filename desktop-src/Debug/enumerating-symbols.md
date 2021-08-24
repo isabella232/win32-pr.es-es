@@ -1,19 +1,19 @@
 ---
-description: En el código siguiente se muestra el nombre, la dirección y el tamaño de cada símbolo cargado en el módulo especificado.
+description: El código siguiente muestra el nombre, la dirección y el tamaño de cada símbolo cargado en el módulo especificado.
 ms.assetid: 6ecdbd1e-406a-453e-9037-707ceb72074a
 title: Enumerar símbolos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 33f9a98f37ca5ef2249f68ffa9b8ef73198de242
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 041768d46fec2aada74ebef37fdf5ffbb719b7c691a5e037a0f2f0532390d54e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103998059"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119692035"
 ---
 # <a name="enumerating-symbols"></a>Enumerar símbolos
 
-En el código siguiente se muestra el nombre, la dirección y el tamaño de cada símbolo cargado en el módulo especificado. La función [**SymEnumSymbols**](/windows/desktop/api/Dbghelp/nf-dbghelp-symenumsymbols) requiere una función de devolución de llamada, a la que se llama una vez para cada módulo cargado. En este ejemplo, EnumSymProc es una implementación de la función de devolución de llamada.
+El código siguiente muestra el nombre, la dirección y el tamaño de cada símbolo cargado en el módulo especificado. La [**función SymEnumSymbols**](/windows/desktop/api/Dbghelp/nf-dbghelp-symenumsymbols) requiere una función de devolución de llamada, a la que se llama una vez para cada módulo cargado. En este ejemplo, EnumSymProc es una implementación de la función de devolución de llamada.
 
 
 ```C++

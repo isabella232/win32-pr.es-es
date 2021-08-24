@@ -1,7 +1,7 @@
 ---
-description: Describe el estado de la trama.
+description: Describe el estado de trama.
 ms.assetid: f7b5b714-8fc8-47b8-adec-1089b8d07081
-title: D3DRASTER_STATUS estructura (D3D9Types. h)
+title: D3DRASTER_STATUS estructura (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: e77ab0e6ee164eadae862ed03df5652c21ba7040
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: fc8a1e2995a9353a02df120b109eb32ad0914821e5690440c7228fbc8e7b6c8a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119676405"
 ---
-# <a name="d3draster_status-structure"></a>Estructura de estado de D3DRASTER \_
+# <a name="d3draster_status-structure"></a>D3DRASTER \_ STATUS (estructura)
 
-Describe el estado de la trama.
+Describe el estado de trama.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,24 +43,24 @@ typedef struct D3DRASTER_STATUS {
 **InVBlank**
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-**True** si la trama está en el período en blanco vertical. **False** si la trama no está en el período en blanco vertical.
+**TRUE** si el trama está en el período en blanco vertical. **FALSE** si el trama no está en el período en blanco vertical.
 
 </dd> <dt>
 
 **ScanLine**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Si InVBlank es **false**, este valor es un entero que se corresponde aproximadamente con la línea de recorrido actual dibujada por la trama. Las líneas de recorrido se numeran de la misma manera que las coordenadas de la superficie de Direct3D: 0 es la parte superior de la superficie principal, que se extiende hasta el valor (alto de la superficie-1) en la parte inferior de la pantalla.
+Si InVBlank es **FALSE,** este valor es un entero que corresponde aproximadamente a la línea de examen actual dibujada por el trama. Las líneas de examen se numeran de la misma manera que las coordenadas de superficie de Direct3D: 0 es la parte superior de la superficie principal, que se extiende al valor (alto de la superficie - 1) en la parte inferior de la pantalla.
 
-Si InVBlank es **true**, este valor se establece en cero y se puede omitir.
+Si InVBlank es **TRUE,** este valor se establece en cero y se puede omitir.
 
 </dd> </dl>
 
@@ -70,7 +70,7 @@ Si InVBlank es **true**, este valor se establece en cero y se puede omitir.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 

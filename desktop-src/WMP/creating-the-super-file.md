@@ -1,46 +1,46 @@
 ---
-title: Crear el súper archivo
-description: Crear el súper archivo
+title: Creación del super archivo
+description: Creación del super archivo
 ms.assetid: 7c2ad3a6-e749-4cb5-9f72-17273fdcd00d
 keywords:
-- Máscaras móviles de Windows Media Player, súper archivos
-- máscaras, súper archivos
-- crear máscaras, súper archivos
-- Súper archivos en máscaras
+- Reproductor de Windows Media Máscaras móviles, archivos super
+- skins,Super files
+- crear máscaras, archivos super
+- Archivos super en máscaras
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 10b9b282036b1613dd2e59e225a3d8370b1651cd
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d300097c3ffd7cd83d540dadd01c89057258f55be639cdbe8c940783831b13d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104356667"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119651685"
 ---
-# <a name="creating-the-super-file"></a>Crear el súper archivo
+# <a name="creating-the-super-file"></a>Creación del super archivo
 
-El súper archivo contiene la imagen deshabilitada para trackbars.
+El archivo Super contiene la imagen deshabilitada para las barras de seguimiento.
 
 > [!Note]  
-> Los súper archivos no se usan en máscaras para Windows Media Player 10 Mobile o posterior porque las imágenes deshabilitadas para Seek trackbars se encuentran en el archivo seekthumb.
+> Los archivos super no se usan en máscaras para Reproductor de Windows Media 10 Mobile o posterior porque las imágenes deshabilitadas para las barras de seguimiento de búsqueda se encuentran en el archivo seekthumb.
 
- 
+ 
 
-La siguiente imagen es el súper archivo.
+La siguiente imagen es el archivo Super.
 
-![Super File](images/ceswmsup.png)
+![super file](images/ceswmsup.png)
 
-Contiene la imagen de una barra de contenido deshabilitada de volumen.
+Contiene la imagen de una barra de seguimiento de volumen deshabilitada.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Crear el arte**](creating-the-art.md)
+[**Creación del arte**](creating-the-art.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

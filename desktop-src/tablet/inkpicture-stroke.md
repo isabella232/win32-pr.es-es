@@ -4,12 +4,12 @@ ms.assetid: 2829b65a-6120-402e-91e3-5587d1f456f9
 title: Evento InkPicture.Stroke (Msyecciónut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b181c8dc46348c76bd9c2d015d4a97c1f6911ff
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 706406ee4f29106fade395a86e9786dd76dec7f51ff2dd77047c2ae395088f89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113703"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119712505"
 ---
 # <a name="inkpicturestroke-event"></a>Evento InkPicture.Stroke
 
@@ -74,24 +74,24 @@ El **evento Stroke** tiene lugar cuando se está en modo de selección o borrado
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC \[ Edition\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Encabezado<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [InkPicture](inkpicture-control-reference.md)
 </dt> <dt>
 
-[**StrokesAdded Event \[ InkPicture Control\]**](inkpicture-strokesadded.md)
+[**StrokesAdded Event \[ InkPicture (Control InkPicture de eventos agregados)\]**](inkpicture-strokesadded.md)
 </dt> <dt>
 
-[**StrokesDeleted Event \[ InkPicture (Control InkPicture)\]**](inkpicture-strokesdeleted.md)
+[**StrokesDeleted Event \[ InkPicture Control\]**](inkpicture-strokesdeleted.md)
 </dt> <dt>
 
 [**IInkCursor (interfaz)**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor)

@@ -1,7 +1,7 @@
 ---
-description: Establece la matriz de desplazamiento del hueso.
+description: Establece la matriz de desplazamiento de desplazamiento de desplazamiento de desplazamiento de desplazamiento.
 ms.assetid: f8ac1117-510d-42af-a6bf-422cbaaf6b74
-title: 'ID3DXSkinInfo:: SetBoneOffsetMatrix (método) (D3DX9Mesh. h)'
+title: Método ID3DXSkinInfo::SetOffsetMatrix (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 283d36bb68e33cfa0e2349bab304b0cdde7ef77e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9d5daf20697777cfbf1b72d4ab18936f81c262ba9b23379d6089bffca8b9a516
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103820914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119674715"
 ---
-# <a name="id3dxskininfosetboneoffsetmatrix-method"></a>ID3DXSkinInfo:: SetBoneOffsetMatrix (método)
+# <a name="id3dxskininfosetboneoffsetmatrix-method"></a>Método ID3DXSkinInfo::SetOffsetMatrix
 
-Establece la matriz de desplazamiento del hueso.
+Establece la matriz de desplazamiento de desplazamiento de desplazamiento de desplazamiento de desplazamiento.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,21 +41,21 @@ HRESULT SetBoneOffsetMatrix(
 
 <dl> <dt>
 
-*Hueso* \[ de\]
+*Insólote* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Número del hueso.
+Número de pándalo.
 
 </dd> <dt>
 
-*pBoneTransform* \[ de\]
+*pTransformTransform* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Puntero a la matriz de desplazamiento del hueso.
+Puntero a la matriz de desplazamiento de desplazamiento de desplazamiento de desplazamiento.
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Puntero a la matriz de desplazamiento del hueso.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-[**D3DXLoadMeshFromXof**](d3dxloadmeshfromxof.md)devuelve los nombres de los huesos.
+[**D3DXLoadMeshFromXof**](d3dxloadmeshfromxof.md)devuelve los nombres de los cascos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,8 +75,8 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -87,7 +87,7 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 [ID3DXSkinInfo](id3dxskininfo.md)
 </dt> <dt>
 
-[**ID3DXSkinInfo::GetBoneOffsetMatrix**](id3dxskininfo--getboneoffsetmatrix.md)
+[**ID3DXSkinInfo::GetOffsetMatrix**](id3dxskininfo--getboneoffsetmatrix.md)
 </dt> </dl>
 
  

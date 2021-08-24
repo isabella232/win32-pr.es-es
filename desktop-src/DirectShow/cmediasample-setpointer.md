@@ -1,7 +1,7 @@
 ---
-description: El método SetPointer establece el puntero en el búfer de memoria.
+description: El método SetPointer establece el puntero al búfer de memoria.
 ms.assetid: 60627600-c982-462e-b540-327a58e57615
-title: Método CMediaSample. SetPointer (Amfilter. h)
+title: Método CMediaSample.SetPointer (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 67d9fc5d260cc627919a458593328c36f0de9a94
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: af6747eb9ed39a973d795d8701fd9d7afd1b88e9d0b0db577de6a8e963b840bd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679075"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634355"
 ---
-# <a name="cmediasamplesetpointer-method"></a>CMediaSample. SetPointer, método
+# <a name="cmediasamplesetpointer-method"></a>Método CMediaSample.SetPointer
 
-El `SetPointer` método establece el puntero en el búfer de memoria.
+El `SetPointer` método establece el puntero al búfer de memoria.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,10 +43,10 @@ HRESULT SetPointer(
 
 <dl> <dt>
 
-*ptr* 
+*Ptr* 
 </dt> <dd>
 
-Puntero a un búfer de memoria asignado por el autor de la llamada, de tamaño *cBytes*.
+Puntero a un búfer de memoria asignado por el autor de la llamada, de *tamaño cBytes*.
 
 </dd> <dt>
 
@@ -59,13 +59,13 @@ Longitud del búfer, en bytes.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este método permite al asignador establecer un nuevo puntero para el ejemplo.
 
-Este método no está disponible a través de la interfaz [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) . El objeto que crea el ejemplo puede tener acceso a este método (a través de **CMediaSample**), pero otros objetos no pueden.
+Este método no está disponible a través de la [**interfaz IMediaSample.**](/windows/desktop/api/Strmif/nn-strmif-imediasample) El objeto que crea el ejemplo puede tener acceso a este método (a través **de CMediaSample),** pero otros objetos no.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,8 +73,8 @@ Este método no está disponible a través de la interfaz [**IMediaSample**](/wi
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -82,7 +82,7 @@ Este método no está disponible a través de la interfaz [**IMediaSample**](/wi
 
 <dl> <dt>
 
-[**Clase CMediaSample**](cmediasample.md)
+[**CMediaSample (clase)**](cmediasample.md)
 </dt> </dl>
 
  

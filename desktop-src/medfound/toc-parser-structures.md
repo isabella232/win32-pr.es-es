@@ -1,17 +1,17 @@
 ---
-description: Estructuras de analizador de tabla de contenido
+description: Estructuras del analizador de tabla de contenido
 ms.assetid: 7438b09e-e649-462d-9a36-fb19e0817d75
-title: Estructuras de analizador de tabla de contenido
+title: Estructuras del analizador de tabla de contenido
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 50c4b5129c0418970050886bf65d8f1da4f9cb76
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1e9346b52d7f3a4836473b2b2356cafd4fc9121f6a42dec90a17e9d90167ae0c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908639"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119599855"
 ---
-# <a name="table-of-contents-parser-structures"></a>Estructuras de analizador de tabla de contenido
+# <a name="table-of-contents-parser-structures"></a>Estructuras del analizador de tabla de contenido
 
 El analizador de tabla de contenido usa las siguientes estructuras.
 
@@ -19,8 +19,8 @@ El analizador de tabla de contenido usa las siguientes estructuras.
 
 | Estructura                                              | Descripción                                                        |
 |--------------------------------------------------------|--------------------------------------------------------------------|
-| [**descriptor de TDC \_**](/windows/desktop/api/wmcodecdsp/ns-wmcodecdsp-toc_descriptor)              | Contiene información descriptiva para una tabla de contenido.             |
-| [**descriptor de entrada de TDC \_ \_**](/windows/desktop/api/wmcodecdsp/ns-wmcodecdsp-toc_entry_descriptor) | Contiene información descriptiva de una entrada en una tabla de contenido. |
+| [**DESCRIPTOR DE \_ TOC**](/windows/desktop/api/wmcodecdsp/ns-wmcodecdsp-toc_descriptor)              | Contiene información descriptiva para una tabla de contenido.             |
+| [**DESCRIPTOR DE \_ ENTRADA \_ DE TOC**](/windows/desktop/api/wmcodecdsp/ns-wmcodecdsp-toc_entry_descriptor) | Contiene información descriptiva para una entrada de una tabla de contenido. |
 
 
 

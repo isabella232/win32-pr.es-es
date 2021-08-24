@@ -1,7 +1,7 @@
 ---
 description: Marcas específicas del tipo. El significado de esta variable miembro depende del tipo de medio del ejemplo.
 ms.assetid: 3aca168e-b253-468e-a1a1-3c213f710dfd
-title: 'Miembro CMediaSample:: m_dwTypeSpecificFlags (Amfilter. h)'
+title: CMediaSample::m_dwTypeSpecificFlags miembro (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5cbe44c15d9d14eb7a31fc5378ca2f66e03fe150
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d85f1629906206013ddffde721f9eb213008412b899678c88f2a40efba25d323
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679005"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634615"
 ---
-# <a name="cmediasamplem_dwtypespecificflags-member"></a>Miembro dwTypeSpecificFlags CMediaSample:: m \_
+# <a name="cmediasamplem_dwtypespecificflags-member"></a>Miembro CMediaSample::m \_ dwTypeSpecificFlags
 
 Marcas específicas del tipo. El significado de esta variable miembro depende del tipo de medio del ejemplo.
 
@@ -42,8 +42,8 @@ DWORD m_dwTypeSpecificFlags;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ DWORD m_dwTypeSpecificFlags;
 
 <dl> <dt>
 
-[**Clase CMediaSample**](cmediasample.md)
+[**CMediaSample (clase)**](cmediasample.md)
 </dt> </dl>
 
  

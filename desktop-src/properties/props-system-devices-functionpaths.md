@@ -1,17 +1,17 @@
 ---
 description: Funciones disponibles para este dispositivo.
 ms.assetid: a944e89c-595e-4e7d-8590-4bc6763eee85
-title: System. Devices. FunctionPaths
+title: System.Devices.FunctionPaths
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b90514f03d868e6dec6f382d775511e8f16a10be
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1d5169eb115a110b5af0a1b5d8ef0c6582f76caa1f991441be9618f89ed39b66
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105649297"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119711205"
 ---
-# <a name="systemdevicesfunctionpaths"></a>System. Devices. FunctionPaths
+# <a name="systemdevicesfunctionpaths"></a>System.Devices.FunctionPaths
 
 Funciones disponibles para este dispositivo.
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

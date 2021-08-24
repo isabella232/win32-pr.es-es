@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 7d95d28b7f7106df9ddfb43a9175f5c19292d52c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6690211f177063b0ff9d90091d8d19a5cafd4d8b8a149e5ef95ad8829a3f2afa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103433"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119754325"
 ---
 # <a name="d3dxmatrixrotationquaternion-function-d3dx10mathh"></a>Función D3DXMatrixRotationQuaternion (D3DX10Math.h)
 
@@ -67,7 +67,7 @@ Puntero a una estructura D3DXMATRIX creada a partir del cuaternión de origen.
 
 ## <a name="remarks"></a>Comentarios
 
-El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la función D3DXMatrixRotationQuaternion se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXMatrixRotationQuaternion se puede usar como parámetro para otra función.
 
 Para obtener información sobre cómo calcular valores de cuaternión a partir de un vector de dirección (x, y, z) y un ángulo de rotación, vea [**D3DXQUATERNION**](d3d10-d3dxquaternion.md).
 
@@ -82,7 +82,7 @@ Para obtener información sobre cómo calcular valores de cuaternión a partir d
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,19 +1,19 @@
 ---
-description: Obtenga información sobre el GUID del servicio Bluetooth. En esta página de referencia se describe la propiedad System.Devices.AepService.Bluetooth.ServiceGuid.
+description: Obtenga información sobre Bluetooth GUID del servicio. En esta página de referencia se describe System.Devices.AepService. Bluetooth. Propiedad ServiceGuid.
 ms.assetid: b623c597-3cf3-4c46-a1df-3a15425a41c6
-title: System.Devices.AepService.Bluetooth.ServiceGuid
+title: System.Devices.AepService. Bluetooth. ServiceGuid
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b1f71d58b9661bdbbb7a531d6ce5d1364f79e19a
-ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
+ms.openlocfilehash: fb0f3be7b9fec56fc7830f981e64f8a25f84463400d1ac5d3cf800405f8199cb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112262567"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119775824"
 ---
-# <a name="systemdevicesaepservicebluetoothserviceguid"></a>System.Devices.AepService.Bluetooth.ServiceGuid
+# <a name="systemdevicesaepservicebluetoothserviceguid"></a>System.Devices.AepService. Bluetooth. ServiceGuid
 
-GUID del servicio Bluetooth.
+Bluetooth GUID del servicio.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607"></a>Windows 10, versión 1703, Windows 10, versión 1607
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los valores PKEY se definen en Propkey.h.
 

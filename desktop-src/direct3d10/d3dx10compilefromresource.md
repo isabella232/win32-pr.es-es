@@ -1,5 +1,5 @@
 ---
-description: Tenga en cuenta que, en lugar de usar esta función heredada, se recomienda compilar sin conexión mediante el compilador de línea de comandos de Fxc.exe o usar la API D3DCompile. Compilar un sombreador o un efecto desde un recurso.
+description: Nota En lugar de usar esta función heredada, se recomienda compilar sin conexión mediante el compilador de línea de comandos Fxc.exe o usar la API D3DCompile. Compile un sombreador o un efecto a partir de un recurso.
 ms.assetid: d291e47d-e04f-4e2d-9d05-9aef8e4fcf7e
 title: Función D3DX10CompileFromResource (D3DX10Async.h)
 ms.topic: reference
@@ -13,21 +13,21 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Async.h
-ms.openlocfilehash: 6b698700804ca767c953343e6d5a5e540ca77555
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 2c938ca302e21be16dfd1d2700a80e0ee350d7acb52ce7ab72fe2c52cbae4bf8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634935"
 ---
-# <a name="d3dx10compilefromresource-function"></a>D3DX10CompileFromResource función)
+# <a name="d3dx10compilefromresource-function"></a>Función D3DX10CompileFromResource
 
 > [!Note]  
-> En lugar de usar esta función heredada, se recomienda compilar sin conexión mediante el compilador de línea de comandos de Fxc.exe o usar la API [**D3DCompile**](/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3dcompile) .
+> En lugar de usar esta función heredada, se recomienda compilar sin conexión mediante el compilador de línea de comandos Fxc.exe o usar la API [**D3DCompile.**](/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3dcompile)
 
  
 
-Compilar un sombreador o un efecto desde un recurso.
+Compile un sombreador o un efecto a partir de un recurso.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,120 +56,120 @@ HRESULT D3DX10CompileFromResource(
 
 <dl> <dt>
 
-*hSrcModule* \[ de\]
+*hSrcModule* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **HMODULE**](../winprog/windows-data-types.md)**
 
-Identificador del módulo de recursos que contiene el sombreador. HMODULE se puede obtener con la [función GetModuleHandle](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulehandlea).
+Identificador del módulo de recursos que contiene el sombreador. HMODULE se puede obtener con [la función GetModuleHandle](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulehandlea).
 
 </dd> <dt>
 
-*pSrcResource* \[ de\]
+*pSrcResource* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCTSTR**](../winprog/windows-data-types.md)**
 
-Nombre del recurso que contiene el sombreador. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve como LPCWSTR. De lo contrario, el tipo de datos se resuelve como LPCSTR.
+Nombre del recurso que contiene el sombreador. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve en LPCWSTR. De lo contrario, el tipo de datos se resuelve en LPCSTR.
 
 </dd> <dt>
 
-*pSrcFileName* \[ de\]
+*pSrcFileName* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCTSTR**](../winprog/windows-data-types.md)**
 
-Opcional. Nombre del archivo de efectos, que solo se usa para los mensajes de error. Puede ser **null**.
+Opcional. Nombre de archivo de efecto, que solo se usa para los mensajes de error. Puede ser **NULL.**
 
 </dd> <dt>
 
-*pDefines* \[ de\]
+*pDefines* \[ En\]
 </dt> <dd>
 
-Type: **constante [**de \_ sombreador \_**](/windows/win32/api/d3dcommon/ns-d3dcommon-d3d_shader_macro) \*** de tipo const
+Tipo: **const [**D3D \_ SHADER \_ MACRO**](/windows/win32/api/d3dcommon/ns-d3dcommon-d3d_shader_macro) \***
 
-Opcional. Puntero a una matriz de definiciones de macro (vea la [**\_ \_ macro del sombreador de D3D**](/windows/win32/api/d3dcommon/ns-d3dcommon-d3d_shader_macro)). La última estructura de la matriz actúa como terminador y debe tener todos los miembros establecidos en 0. Si no se usa, establezca *pDefines* en **null**.
+Opcional. Puntero a una matriz de definiciones de macro (vea [**D3D \_ SHADER \_ MACRO**](/windows/win32/api/d3dcommon/ns-d3dcommon-d3d_shader_macro)). La última estructura de la matriz actúa como terminador y debe tener todos los miembros establecidos en 0. Si no se usa, establezca *pDefines* en **NULL.**
 
 </dd> <dt>
 
-*pInclude* \[ de\]
+*pInclude* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3D10INCLUDE**](/previous-versions/windows/desktop/legacy/bb173775(v=vs.85))**
 
-Opcional. Puntero a una interfaz de [**interfaz ID3D10Include**](/previous-versions/windows/desktop/legacy/bb173775(v=vs.85)) para administrar archivos de inclusión. Si se establece en **null** , se producirá un error de compilación si un sombreador contiene un \# include.
+Opcional. Puntero a una [**interfaz ID3D10Include Interface**](/previous-versions/windows/desktop/legacy/bb173775(v=vs.85)) para controlar archivos de incluyeción. Si se establece en **NULL,** se producirá un error de compilación si un sombreador contiene un \# valor de include.
 
 </dd> <dt>
 
-*pFunctionName* \[ de\]
+*pFunctionName* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Nombre de la función del punto de entrada del sombreador en el que comienza la ejecución del sombreador. Al compilar un efecto, **D3DX10CompileFromResource** omite *pFunctionName*; se recomienda establecer *pFunctionName* en **null** porque es una buena práctica de programación establecer un parámetro de puntero en **null** si la función llamada no lo va a usar.
+Nombre de la función de punto de entrada de sombreador donde comienza la ejecución del sombreador. Al compilar un efecto, **D3DX10CompileFromResource** omite *pFunctionName*; Se recomienda establecer *pFunctionName* en **NULL** porque es una buena práctica de programación establecer un parámetro de puntero en **NULL** si la función llamada no lo usará.
 
 </dd> <dt>
 
-*pProfile* \[ de\]
+*pProfile* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Cadena que especifica el modelo de sombreador; puede ser cualquier perfil en el modelo de sombreador [2](../direct3dhlsl/dx-graphics-hlsl-sm2.md), el [modelo de sombreador 3](../direct3dhlsl/dx-graphics-hlsl-sm3.md)o el [modelo de sombreador 4](../direct3dhlsl/dx-graphics-hlsl-sm4.md).
+Cadena que especifica el modelo de sombreador; puede ser cualquier perfil en el modelo [de sombreador 2,](../direct3dhlsl/dx-graphics-hlsl-sm2.md) [el modelo de sombreador 3](../direct3dhlsl/dx-graphics-hlsl-sm3.md)o el [modelo de sombreador 4.](../direct3dhlsl/dx-graphics-hlsl-sm4.md)
 
 </dd> <dt>
 
-*Flags1* \[ de\]
+*Flags1* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-[Marcas de compilación del sombreador](d3d10-shader.md).
+[Marcas de compilación de sombreador](d3d10-shader.md).
 
 </dd> <dt>
 
-*Flags2* \[ de\]
+*Flags2* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-[Marcas de compilación de efectos](d3d10-graphics-reference-effect-constants.md). Al compilar un sombreador y no un archivo de efectos, **D3DX10CompileFromResource** omite *Flags2*; se recomienda establecer *Flags2* en cero porque es una buena práctica de programación establecer un parámetro que no es de puntero en cero si la función llamada no lo va a usar.
+[Marcas de compilación de efecto](d3d10-graphics-reference-effect-constants.md). Al compilar un sombreador y no un archivo de efecto, **D3DX10CompileFromResource** omite *Flags2*; Se recomienda establecer *Flags2* en cero porque es una buena práctica de programación establecer un parámetro que no sea de punto en cero si la función llamada no lo usará.
 
 </dd> <dt>
 
-*pPump* \[ de\]
+*pPump* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX10ThreadPump**](id3dx10threadpump.md)\***
 
-Un puntero a una interfaz de bombeo de subprocesos (consulte la [**interfaz ID3DX10ThreadPump**](id3dx10threadpump.md)). Use **null** para especificar que esta función no debe devolver hasta que se complete.
+Puntero a una interfaz de bombeo de subprocesos [**(vea ID3DX10ThreadPump Interface**](id3dx10threadpump.md)). Use **NULL** para especificar que esta función no debe devolverse hasta que se complete.
 
 </dd> <dt>
 
-*ppShader* \[ enuncia\]
+*ppShader* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob)\*\***
 
-Puntero a una [**interfaz ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob) que contiene el sombreador compilado, así como cualquier información de depuración y de tabla de símbolos incrustada.
+Puntero a una interfaz [**ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob) que contiene el sombreador compilado, así como cualquier información incrustada de depuración y tabla de símbolos.
 
 </dd> <dt>
 
-*ppErrorMsgs* \[ enuncia\]
+*ppErrorMsgs* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob)\*\***
 
-Un puntero a una [**interfaz ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob) que contiene una lista de errores y advertencias que se produjeron durante la compilación. Estos errores y advertencias son idénticos a los resultados de depuración de un depurador.
+Puntero a una [**interfaz ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob) que contiene una lista de errores y advertencias que se produjeron durante la compilación. Estos errores y advertencias son idénticos a la salida de depuración de un depurador.
 
 </dd> <dt>
 
-*pHResult* \[ enuncia\]
+*pHResult* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)\***
 
-Puntero al valor devuelto. Puede ser **null**. Si *pPump* no es **null**, *pHResult* debe ser una ubicación de memoria válida hasta que se complete la ejecución asincrónica.
+Puntero al valor devuelto. Puede ser **NULL.** Si *pPump* no es **NULL,** *pHResult* debe ser una ubicación de memoria válida hasta que se complete la ejecución asincrónica.
 
 </dd> </dl>
 
@@ -177,7 +177,7 @@ Puntero al valor devuelto. Puede ser **null**. Si *pPump* no es **null**, *pHRes
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que aparecen en los [códigos de retorno de Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -185,7 +185,7 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3DX10Async. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3DX10Async.h</dt> </dl> |
 
 
 
@@ -193,7 +193,7 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 
 <dl> <dt>
 
-[Funciones de De uso general](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
+[De uso general Functions](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
 </dt> </dl>
 
  

@@ -3,7 +3,7 @@ title: printf (función)
 description: Envía un mensaje de sombreador personalizado a la cola de información.
 ms.assetid: 0c6c15fc-1da5-4a26-ade0-5a0489e4f564
 keywords:
-- función printf de HLSL
+- función printf HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 74492cc613e22f335eace684300f0380e5751a95
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 47131cacef436572f519b394a02b4aaa357a426dd80a192868712cb3d7779e24
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103994766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119672525"
 ---
 # <a name="printf-function"></a>printf (función)
 
@@ -28,8 +28,8 @@ Envía un mensaje de sombreador personalizado a la cola de información.
 
 ``` syntax
 void printf(
-   string format,
-    argument ...
+   string format,
+    argument ...
 );
 ```
 
@@ -44,7 +44,7 @@ Cadena de formato.
 
 </dd> <dt>
 
-*argumento...* 
+*Argumento...* 
 </dt> <dd>
 
 Argumentos opcionales.
@@ -55,11 +55,11 @@ Argumentos opcionales.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta operación no hace nada en los dispositivos que no lo admiten.
+Esta operación no hace nada en los dispositivos que no la admiten.
 
-### <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+### <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -67,11 +67,11 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                        | Compatible |
 |---------------------------------------------------------------------|-----------|
-| [Shader Model 4 (DirectX HLSL) o posterior.](dx-graphics-hlsl-sm3.md) | sí       |
+| [Shader Model 4 (DirectX HLSL) o posterior.](dx-graphics-hlsl-sm3.md) | Sí       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vea también
 
@@ -80,9 +80,9 @@ Esta función se admite en los siguientes modelos de sombreador.
 [Funciones intrínsecas](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

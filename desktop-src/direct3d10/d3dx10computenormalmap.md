@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DX10ComputeNormalMap: convierte un mapa de alto en un mapa normal. Los componentes (x,y,z) de cada normal se asignan a los canales (r,g,b) de la textura de salida.'
+description: 'Función D3DX10ComputeNormalMap: convierte un mapa de altura en un mapa normal. Los componentes (x, y,z) de cada normal se asignan a los canales (r, g, b) de la textura de salida.'
 ms.assetid: 535033dd-f078-4d56-8e5d-cdda80ef5992
 title: Función D3DX10ComputeNormalMap (D3DX10Tex.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 173a8e0c1b3130a399152187eb52288a0306051c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b719e1b40c3e8cd04ca0750e69c68bbd4a0a59394c3334818f091900606311af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105323"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634785"
 ---
 # <a name="d3dx10computenormalmap-function"></a>Función D3DX10ComputeNormalMap
 
-Convierte un mapa de alto en un mapa normal. Los componentes (x,y,z) de cada normal se asignan a los canales (r,g,b) de la textura de salida.
+Convierte un mapa de alto en un mapa normal. Los componentes (x, y,z) de cada normal se asignan a los canales (r, g, b) de la textura de salida.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,12 +53,12 @@ Puntero a una interfaz ID3D10Texture2D, que representa la textura del mapa de al
 
 </dd> <dt>
 
-*Flags* \[in\]
+*Marcas* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Una o varias marcas NORMALMAP de D3DX \_ que controlan la generación de mapas normales.
+Una o varias marcas D3DX NORMALMAP que \_ controlan la generación de mapas normales.
 
 </dd> <dt>
 
@@ -71,12 +71,12 @@ Una marca D3DX \_ CHANNEL que especifica el origen de la información de alto.
 
 </dd> <dt>
 
-*Amplitude* \[ En\]
+*Amplitud* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Multiplicador de valor constante que aumenta (o disminuye) los valores del mapa normal. Los valores más altos suelen hacer que los aumentos sean más visibles, y los valores más bajos suelen hacer que los aumentos sean menos visibles.
+Multiplicador de valores constantes que aumenta (o disminuye) los valores del mapa normal. Los valores más altos suelen hacer que los incrementos sean más visibles; los valores más bajos suelen hacer que los incrementos sean menos visibles.
 
 </dd> <dt>
 
@@ -97,7 +97,7 @@ Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 ## <a name="remarks"></a>Comentarios
 
-Este método calcula lo normal mediante la diferencia central con un tamaño de kernel de 3x3. Los canales RGB del destino contienen componentes sesgados (x, y,z) de lo normal. El denominador de diferenciación central se codifica de forma rígida en 2.0.
+Este método calcula lo normal mediante la diferencia central con un tamaño de kernel de 3x3. Los canales RGB del destino contienen componentes sesgados (x,y,z) de lo normal. El denominador de diferenciación central se codifica de forma rígida en 2.0.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -110,7 +110,7 @@ Este método calcula lo normal mediante la diferencia central con un tamaño de 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

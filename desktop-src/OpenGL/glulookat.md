@@ -1,9 +1,9 @@
 ---
-title: función gluLookAt (GLU. h)
+title: Función gluLookAt (Glu.h)
 description: La función gluLookAt define una transformación de visualización.
 ms.assetid: 1fd87701-19c2-49b9-99ac-10e70aaedbfd
 keywords:
-- gluLookAt (función) OpenGL
+- Función gluLookAt OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5866f3c06ef6969c95eeef4b23fff7a4e7852eb0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e9b21d0cb2fac6573ab2999eb96b2af8b1ecb670f4e51d1ffd2ad91ba001c9ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905651"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119675305"
 ---
-# <a name="glulookat-function"></a>gluLookAt función)
+# <a name="glulookat-function"></a>función gluLookAt
 
-La función **gluLookAt** define una transformación de visualización.
+La **función gluLookAt** define una transformación de visualización.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,32 +51,32 @@ void WINAPI gluLookAt(
 *eyex* 
 </dt> <dd>
 
-Posición del punto de ojo.
+Posición del punto del ojo.
 
 </dd> <dt>
 
 *eyey* 
 </dt> <dd>
 
-Posición del punto de ojo.
+Posición del punto del ojo.
 
 </dd> <dt>
 
-*eyez* 
+*Eyez* 
 </dt> <dd>
 
-Posición del punto de ojo.
+Posición del punto del ojo.
 
 </dd> <dt>
 
-*CenterX* 
+*centerx* 
 </dt> <dd>
 
 Posición del punto de referencia.
 
 </dd> <dt>
 
-*CenterY* 
+*central* 
 </dt> <dd>
 
 Posición del punto de referencia.
@@ -90,7 +90,7 @@ Posición del punto de referencia.
 
 </dd> <dt>
 
-*UPX* 
+*Upx* 
 </dt> <dd>
 
 Dirección del vector hacia arriba.
@@ -115,22 +115,22 @@ Dirección del vector hacia arriba.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **gluLookAt** crea una matriz de visualización derivada de un punto de vista, un punto de referencia que indica el centro de la escena y un vector hacia arriba. La matriz asigna el punto de referencia al eje z negativo y el punto de mira al origen, de modo que cuando se usa una matriz de proyección típica, el centro de la escena se asigna al centro de la ventanilla. Del mismo modo, la dirección que describe el vector hacia arriba proyectado en el plano de visualización se asigna al eje y positivo para que apunte hacia arriba en la ventanilla. El vector hacia arriba no debe ser paralelo a la línea de visión desde el ojo hasta el punto de referencia.
+La **función gluLookAt** crea una matriz de visualización derivada de un punto de vista, un punto de referencia que indica el centro de la escena y un vector hacia arriba. La matriz asigna el punto de referencia al eje Z negativo y el punto de los ojos al origen, de modo que cuando se usa una matriz de proyección típica, el centro de la escena se asigna al centro de la ventanilla. De forma similar, la dirección descrita por el vector hacia arriba proyectado en el plano de visualización se asigna al eje Y positivo para que apunta hacia arriba en la ventanilla. El vector hacia arriba no debe ser paralelo a la línea de visión desde el ojo hasta el punto de referencia.
 
-La matriz generada por **gluLookAt** postmultiplica la matriz actual.
+La matriz generada **por gluLookAt** posmultiplica la matriz actual.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Glu. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 

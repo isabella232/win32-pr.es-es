@@ -1,9 +1,9 @@
 ---
-title: DVD. dominio
-description: La propiedad de dominio recupera el dominio actual del DVD.
+title: DVD.domain
+description: La propiedad domain recupera el dominio actual del DVD.
 ms.assetid: 74f4a6a3-8518-48c7-b023-f0255a3a62fd
 keywords:
-- DVD. dominio Windows Media Player
+- Dvd.domain Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: db4a2af92abe533fed7a13e48cb7c0724223bbc1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f0db8e6e212fec11de5f3619c2c1f97a90f579b34515983b0384d0d08ab0ff60
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359717"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119651175"
 ---
-# <a name="dvddomain"></a>DVD. dominio
+# <a name="dvddomain"></a>DVD.domain
 
-La propiedad de **dominio** recupera el dominio actual del DVD.
+La **propiedad** domain recupera el dominio actual del DVD.
 
 ``` syntax
 player.dvd.domain
@@ -32,28 +32,28 @@ player.dvd.domain
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es una **cadena** de solo lectura que contiene uno de los valores siguientes.
+Esta propiedad es una cadena de solo **lectura** que contiene uno de los valores siguientes.
 
 
 
 | String            | Descripción                                                                                                                           |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| firstPlay         | Realizar la inicialización predeterminada de un disco DVD.                                                                                      |
-| videoManagerMenu  | Mostrar menús para todo el disco. También conocido como menú de Media Player para Windows. Normalmente denominado el menú de título o el menú superior. |
-| videoTitleSetMenu | Mostrar menús para el conjunto de títulos actual. También conocido como titleMenu para Windows Media Player. Normalmente denominado menú raíz.              |
-| title             | Normalmente, mostrando el título actual.                                                                                                 |
-| stop              | El navegador de DVD está en el dominio de detención de DVD.                                                                                          |
+| firstPlay         | Realizar la inicialización predeterminada de un disco de DVD.                                                                                      |
+| videoManagerMenu  | Mostrar menús para todo el disco. También se conoce como topMenu para Reproductor de Windows Media. Normalmente se denomina el menú de título o el menú superior. |
+| videoTitleSetMenu | Mostrar menús para el conjunto de títulos actual. También se conoce como titleMenu para Reproductor de Windows Media. Normalmente se denomina menú raíz.              |
+| title             | Normalmente se muestra el título actual.                                                                                                 |
+| stop              | El navegador de DVD está en el dominio DE DEtenerse de DVD.                                                                                          |
 | no definido         | El reproductor no está en ningún dominio de DVD.                                                                                                      |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cada DVD se crea de forma diferente. Algunos DVDs no contienen los dominios firstPlay, videoManagerMenu o videoTitleSetMenu.
+Cada DVD se ha escrito de forma diferente. Algunos DVD no contienen los dominios firstPlay, videoManagerMenu o videoTitleSetMenu.
 
-**Windows Media Player 10 Mobile:** Esta propiedad siempre devuelve una cadena vacía.
+**Reproductor de Windows Media 10 Mobile:** Esta propiedad siempre devuelve una cadena vacía.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,9 +61,9 @@ Cada DVD se crea de forma diferente. Algunos DVDs no contienen los dominios firs
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                               |
-| Versión<br/>                  | Windows Media Player para Windows XP o posterior<br/>                            |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                               |
+| Versión<br/>                  | Reproductor de Windows Media para Windows XP o posterior<br/>                            |
 | Archivo DLL<br/>                      | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -72,7 +72,7 @@ Cada DVD se crea de forma diferente. Algunos DVDs no contienen los dominios firs
 
 <dl> <dt>
 
-[**Objeto de DVD**](dvd-object.md)
+[**Dvd (objeto)**](dvd-object.md)
 </dt> </dl>
 
  

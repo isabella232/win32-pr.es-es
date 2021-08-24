@@ -1,9 +1,9 @@
 ---
-title: Command. TooltipTitle (propiedad)
+title: Propiedad Command.TooltipTitle
 description: Representa un título de información sobre herramientas.
 ms.assetid: b06a7a6a-fbdd-464b-b804-e62912d6e176
 keywords:
-- Command. TooltipTitle (propiedad) cinta de Windows
+- Command.TooltipTitle, propiedad Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c60f4ddea77fbf88a15d5d27e90ca5660bc0edb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9f9050c97980b0ffa2c2c4828a8ac1d85dfbd1a40ed8330d144db2c0d3802524
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492509"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119710555"
 ---
-# <a name="commandtooltiptitle-property"></a>Command. TooltipTitle (propiedad)
+# <a name="commandtooltiptitle-property"></a>Propiedad Command.TooltipTitle
 
 Representa un título de información sobre herramientas.
 
@@ -41,7 +41,7 @@ No hay atributos.
 
 | Elemento                                                   | Descripción                                   |
 |-----------------------------------------------------------|-----------------------------------------------|
-| [**String@**](windowsribbon-element-string.md)<br/> | Puede aparecer como máximo una vez<br/> <br/> |
+| [**String**](windowsribbon-element-string.md)<br/> | Puede producirse como máximo una vez<br/> <br/> |
 
 
 
@@ -51,37 +51,37 @@ No hay atributos.
 
 | Elemento                                                     |
 |-------------------------------------------------------------|
-| [**Get-Help**](windowsribbon-element-command.md)<br/> |
+| [**Comando**](windowsribbon-element-command.md)<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
-Puede producirse al menos una vez para cada [**comando**](windowsribbon-element-command.md).
+Puede producirse como máximo una vez para cada [**comando**](windowsribbon-element-command.md).
 
-**Command. TooltipTitle** puede contener un valor de tipo *xs: String* restringido a cualquier secuencia de caracteres, incluidos los caracteres de espacio en blanco y de salto de línea.
+**Command.TooltipTitle puede** contener un valor de tipo *xs:string* restringido a cualquier secuencia de caracteres, incluidos los espacios en blanco y los caracteres de salto de línea.
 
 > [!Note]  
-> Use la referencia de caracteres XML del juego de caracteres universal (UCS) `&#xA;` para especificar un salto de línea.
+> Use la referencia de caracteres XML de juego de caracteres universales (UCS) `&#xA;` para especificar un salto de línea.
 
  
 
-La longitud máxima es sin límite.
+La longitud máxima no está desenlazada.
 
-Si no se proporciona ningún valor para **Command. TooltipTitle**, se requiere el elemento secundario [**String**](windowsribbon-element-string.md) .
+Si no se proporciona ningún valor para **Command.TooltipTitle**, se [**requiere**](windowsribbon-element-string.md) el elemento secundario String.
 
 > [!Note]  
-> Si **Command. TooltipTitle** contiene un valor y un elemento secundario de [**cadena**](windowsribbon-element-string.md) , la **cadena** tiene prioridad.
+> Si **Command.TooltipTitle contiene** un valor y un elemento secundario [**String,**](windowsribbon-element-string.md) **String** tiene prioridad.
 
  
 
-**Command. TooltipTitle** solo admite la alineación izquierda.
+**Command.TooltipTitle** solo admite la alineación izquierda.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado de un elemento [**Command**](windowsribbon-element-command.md) con una declaración **Command. TooltipTitle** .
+En el ejemplo siguiente se muestra el marcado de un [**elemento Command**](windowsribbon-element-command.md) con una **declaración Command.TooltipTitle.**
 
 
 ```XML
@@ -111,8 +111,8 @@ En el ejemplo siguiente se muestra el marcado de un elemento [**Command**](windo
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 

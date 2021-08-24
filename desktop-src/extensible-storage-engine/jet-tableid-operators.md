@@ -1,25 +1,25 @@
 ---
-description: 'Más información acerca de: operadores de JET_TABLEID'
-title: Operadores de JET_TABLEID
+description: 'Más información sobre: operadores JET_TABLEID datos'
+title: JET_TABLEID operadores
 TOCTitle: JET_TABLEID operators
 ms:assetid: ef291f9a-8eed-fe37-7cc6-f32d84624f76
 ms:mtpsurl: https://msdn.microsoft.com/library/Hh163504(v=EXCHG.10)
 ms:contentKeyID: 39516407
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 1d55eaf7a21a4af07d182bce6ce6b4afd75409de
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 29861e7a9cab9046f170a27a9092a1b7fbfbc8dfeacc73b7af9ce31883c84bf1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278941"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119729036"
 ---
-# <a name="jet_tableid-operators"></a>Operadores de JET_TABLEID
+# <a name="jet_tableid-operators"></a>JET_TABLEID operadores
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El tipo de [JET_TABLEID](./jet-tableid-structure.md) expone los siguientes miembros.
+El [JET_TABLEID](./jet-tableid-structure.md) expone los miembros siguientes.
 
 ## <a name="operators"></a>Operadores
 
@@ -52,6 +52,6 @@ Superior
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_TABLEID](./jet-tableid-structure.md)
+[JET_TABLEID estructura](./jet-tableid-structure.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

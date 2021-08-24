@@ -1,7 +1,7 @@
 ---
 description: Anula el registro del proveedor asociado.
 ms.assetid: b5edc33d-dfd0-4350-b8cd-eaa30b726771
-title: 'ITipAutocompleteClient:: UnadviseProvider (método) (TipAutoComplete. h)'
+title: Método ITipAutocompleteClient::UnadviseProvider (TipAutoComplete.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - tiptsf.dll
-ms.openlocfilehash: 1100ebb700ef2fb769a13f9b62aacf5c1d007e0d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d4f573e1dab88e8556dc8c6011173cd3a2284a87d9f98ac6d05cea13cef65ab8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103910438"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119712105"
 ---
-# <a name="itipautocompleteclientunadviseprovider-method"></a>ITipAutocompleteClient:: UnadviseProvider (método)
+# <a name="itipautocompleteclientunadviseprovider-method"></a>ITipAutocompleteClient::UnadviseProvider (método)
 
 Anula el registro del proveedor asociado.
 
@@ -40,17 +40,17 @@ HRESULT UnadviseProvider(
 
 <dl> <dt>
 
-*hWndField* \[ de\]
+*hWndField* \[ En\]
 </dt> <dd>
 
-Identificador de ventana del campo que proporciona la característica Autocompletar.
+Identificador de ventana del campo que proporciona la característica autocompletar.
 
 </dd> <dt>
 
-*pIACProvider* \[ de\]
+*pIACProvider* \[ En\]
 </dt> <dd>
 
-Puntero de interfaz a la interfaz del proveedor de autocompletar cuya registro se va a anular.
+Puntero de interfaz a la interfaz del proveedor autocompletar que se va a anular el registro.
 
 </dd> </dl>
 
@@ -62,7 +62,7 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                            | Descripción                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>   | Correcto.<br/>                       |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | Correcto.<br/>                       |
 | <dl> <dt>**E \_ FAIL**</dt> </dl> | Se ha producido un error no especificado.<br/> |
 
 
@@ -73,11 +73,11 @@ Este método puede devolver uno de estos valores.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                                   |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                                   |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                                       |
-| Encabezado<br/>                   | <dl> <dt>TipAutoComplete. h (también requiere Peninputpanel \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>TipAutoComplete.h (también requiere Peninputpanel \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Tiptsf.dll</dt> </dl>                                           |
 
 
@@ -86,7 +86,7 @@ Este método puede devolver uno de estos valores.
 
 <dl> <dt>
 
-[**Interfaz ITipAutocompleteClient**](itipautocompleteclient.md)
+[**ITipAutocompleteClient (interfaz)**](itipautocompleteclient.md)
 </dt> <dt>
 
 [Referencia del panel de entrada de texto](text-input-panel-reference.md)

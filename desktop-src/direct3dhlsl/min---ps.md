@@ -1,6 +1,6 @@
 ---
-title: min-PS
-description: Calcula el mínimo de los orígenes. | min-PS
+title: min - ps
+description: Calcula el mínimo de los orígenes. | min - ps
 ms.assetid: 2ee6208d-a353-4747-8037-c21dd1a05016
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,47 +9,47 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 3a735b38769a30e9dccf544785d931641469f5dc
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: a0d2a91519c1f85d3b6a950a5df9a76324ba8439b25702f947779ef60b547826
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986443"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119672625"
 ---
-# <a name="min---ps"></a>min-PS
+# <a name="min---ps"></a>min - ps
 
 Calcula el mínimo de los orígenes.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| min DST, src0, SRC1 |
+| min dst, src0, src1 |
 |---------------------|
 
 
 
  
 
-, donde
+where
 
--   DST es el registro de destino.
+-   dst es el registro de destino.
 -   src0 es un registro de origen.
--   SRC1 es un registro de origen.
+-   src1 es un registro de origen.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
-| min.                   |      |      |      |      | x    | x    | x     | x    | x     |
+| mín.                   |      |      |      |      | x    | x    | x     | x    | x     |
 
 
 
  
 
-En el fragmento de código siguiente se muestran las operaciones realizadas.
+El siguiente fragmento de código muestra las operaciones realizadas.
 
 
 ```
