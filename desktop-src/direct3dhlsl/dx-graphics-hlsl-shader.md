@@ -1,6 +1,6 @@
 ---
 title: Tipo de sombreador
-description: La sintaxis para declarar una variable de sombreador en un efecto cambió de Direct3D 9 a Direct3D 10.
+description: La sintaxis para declarar una variable de sombreador en un efecto ha cambiado de Direct3D 9 a Direct3D 10.
 ms.assetid: d24ae9ad-1b3a-4a05-b28b-b6a0583c3da8
 keywords:
 - Tipo de sombreador HLSL
@@ -13,26 +13,26 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0ca3332c441279d7f9221efe8cfa7638908ddc44
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c08c0d68a57180c8d2cf0b566caaaa383f34fc0b9f096e34484811a73a20d0fa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104984055"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119854705"
 ---
 # <a name="shader-type"></a>Tipo de sombreador
 
-La sintaxis para declarar una variable de sombreador en un efecto cambió de Direct3D 9 a Direct3D 10.
+La sintaxis para declarar una variable de sombreador en un efecto ha cambiado de Direct3D 9 a Direct3D 10.
 
 ## <a name="shader-type-for-direct3d-10"></a>Tipo de sombreador para Direct3D 10
 
-Declare una variable de sombreador dentro de un paso de efecto (en Direct3D 10) con la sintaxis de tipo de sombreador:
+Declare una variable de sombreador dentro de un paso de efecto (en Direct3D 10) mediante la sintaxis de tipo de sombreador:
 
 
 
 |                                                                                                                                                                                                     |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **SetPixelShader** Compilar ( **ShaderTarget, ShaderFunction** ); **SetGeometryShader** Compilar ( **ShaderTarget, ShaderFunction** ); **SetVertexShader** Compilar ( **ShaderTarget, ShaderFunction** ); |
+| **SetPixelShader** Compile( **ShaderTarget, ShaderFunction** ); **SetGeometryShader** Compile( **ShaderTarget, ShaderFunction** ); **SetVertexShader** Compile( **ShaderTarget, ShaderFunction** ); |
 
 
 
@@ -44,9 +44,9 @@ Declare una variable de sombreador dentro de un paso de efecto (en Direct3D 10) 
 
 | Elemento                                                                                                                             | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 |----------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="SetXXXShader"></span><span id="setxxxshader"></span><span id="SETXXXSHADER"></span>**SetXXXShader**<br/>         | La llamada a la API de Direct3D que crea el objeto de sombreador. Puede ser: **SetPixelShader** o **SetGeometryShader** o **SetVertexShader**.<br/>                                                                                                                                                                                                                                                                                                   |
-| <span id="ShaderTarget"></span><span id="shadertarget"></span><span id="SHADERTARGET"></span>**ShaderTarget**<br/>         | Modelo de sombreador con el que se va a realizar la compilación. Esto es válido para cualquier destino, incluidos todos los destinos de Direct3D 9 más los destinos del [modelo de sombreador 4](dx-graphics-hlsl-sm4.md) : vs \_ 4 \_ 0, GS \_ 4 \_ 0 y PS \_ 4 \_ 0.<br/>                                                                                                                                                                                                                                          |
-| <span id="ShaderFunction"></span><span id="shaderfunction"></span><span id="SHADERFUNCTION"></span>**ShaderFunction**<br/> | Cadena ASCII que contiene el nombre de la función de punto de entrada del sombreador; Esta es la función que comienza la ejecución cuando se invoca el sombreador. (...) Representa los argumentos del sombreador; Estos son los mismos argumentos que se pasan a las API de creación de sombreador: [**VSSetShader**](/windows/desktop/api/d3d10/nf-d3d10-id3d10device-vssetshader) o [**GSSetShader**](/windows/desktop/api/d3d10/nf-d3d10-id3d10device-gssetshader) o [**PSSetShader**](/windows/desktop/api/d3d10/nf-d3d10-id3d10device-pssetshader).<br/> |
+| <span id="SetXXXShader"></span><span id="setxxxshader"></span><span id="SETXXXSHADER"></span>**SetXXXShader**<br/>         | La llamada API de Direct3D que crea el objeto de sombreador. Puede ser: **SetPixelShader,** **SetGeometryShader** o **SetVertexShader.**<br/>                                                                                                                                                                                                                                                                                                   |
+| <span id="ShaderTarget"></span><span id="shadertarget"></span><span id="SHADERTARGET"></span>**ShaderTarget**<br/>         | Modelo de sombreador con el que se compilará. Esto es válido para cualquier destino, incluidos todos los destinos de Direct3D 9 más el modelo de sombreador [4](dx-graphics-hlsl-sm4.md) destinos: frente a \_ 4 \_ 0, gs \_ 4 0 y ps \_ \_ 4 \_ 0.<br/>                                                                                                                                                                                                                                          |
+| <span id="ShaderFunction"></span><span id="shaderfunction"></span><span id="SHADERFUNCTION"></span>**ShaderFunction**<br/> | Cadena ASCII que contiene el nombre de la función de punto de entrada del sombreador; esta es la función que comienza la ejecución cuando se invoca el sombreador. (...) representa los argumentos del sombreador; estos son los mismos argumentos que se pasan a la API de creación del sombreador: [**VSSetShader,**](/windows/desktop/api/d3d10/nf-d3d10-id3d10device-vssetshader) [**GSSetShader**](/windows/desktop/api/d3d10/nf-d3d10-id3d10device-gssetshader) o [**PSSetShader.**](/windows/desktop/api/d3d10/nf-d3d10-id3d10device-pssetshader)<br/> |
 
 
 
@@ -54,7 +54,7 @@ Declare una variable de sombreador dentro de un paso de efecto (en Direct3D 10) 
 
 ### <a name="example"></a>Ejemplo
 
-Este es un ejemplo que crea un sombreador de vértices y un objeto de sombreador de píxeles, compilados para un modelo de sombreador determinado. En el ejemplo de Direct3D 10, no hay sombreador de geometría, por lo que el puntero se establece en **null**.
+Este es un ejemplo que crea un sombreador de vértices y un objeto de sombreador de píxeles, compilados para un modelo de sombreador determinado. En el ejemplo de Direct3D 10, no hay ningún sombreador de geometría, por lo que el puntero se establece en **NULL.**
 
 
 ```
@@ -74,13 +74,13 @@ technique10 Render
 
 ## <a name="shader-type-for-direct3d-9"></a>Tipo de sombreador para Direct3D 9
 
-Declare una variable de sombreador dentro de un paso de efecto (para Direct3D 9) con la sintaxis de tipo de sombreador:
+Declare una variable de sombreador dentro de un paso de efecto (para Direct3D 9) mediante la sintaxis de tipo de sombreador:
 
 
 
 |                                                                                                                             |
 |-----------------------------------------------------------------------------------------------------------------------------|
-| **U** = compilar **ShaderTarget ShaderFunction (...); VertexShader** = compilar **ShaderTarget ShaderFunction (...);** |
+| **PixelShader** = compile **ShaderTarget ShaderFunction(...); VertexShader** = compile **ShaderTarget ShaderFunction(...);** |
 
 
 
@@ -92,9 +92,9 @@ Declare una variable de sombreador dentro de un paso de efecto (para Direct3D 9)
 
 | Elemento                                                                                                                                                 | Descripción                                                                                                                                                                                                                                                                                                                                                                                                       |
 |------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="XXXShader"></span><span id="xxxshader"></span><span id="XXXSHADER"></span>**XXXShader**<br/>                                         | Una variable de sombreador, que representa el sombreador compilado. Puede ser: **u** o **VertexShader**.<br/>                                                                                                                                                                                                                                                                                           |
-| <span id="ShaderTarget"></span><span id="shadertarget"></span><span id="SHADERTARGET"></span>**ShaderTarget**<br/>                             | [Modelo de sombreador](dx-graphics-hlsl-models.md) con el que se va a realizar la compilación; depende del tipo de variable de sombreador.<br/>                                                                                                                                                                                                                                                                                            |
-| <span id="ShaderFunction_..._"></span><span id="shaderfunction_..._"></span><span id="SHADERFUNCTION_..._"></span>**ShaderFunction(...)**<br/> | Cadena ASCII que contiene el nombre de la función de punto de entrada del sombreador; Esta es la función que comienza la ejecución cuando se invoca el sombreador. (...) Representa los argumentos del sombreador; Estos son los mismos argumentos que se pasan a las API de creación de sombreador: [**SetVertexShader**](/windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setvertexshader) o [**SetPixelShader**](/windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setpixelshader).<br/> |
+| <span id="XXXShader"></span><span id="xxxshader"></span><span id="XXXSHADER"></span>**XXXShader**<br/>                                         | Variable de sombreador, que representa el sombreador compilado. Puede ser: **PixelShader o** **VertexShader.**<br/>                                                                                                                                                                                                                                                                                           |
+| <span id="ShaderTarget"></span><span id="shadertarget"></span><span id="SHADERTARGET"></span>**ShaderTarget**<br/>                             | Modelo [de sombreador con](dx-graphics-hlsl-models.md) el que se compilará; depende del tipo de variable de sombreador.<br/>                                                                                                                                                                                                                                                                                            |
+| <span id="ShaderFunction_..._"></span><span id="shaderfunction_..._"></span><span id="SHADERFUNCTION_..._"></span>**ShaderFunction(...)**<br/> | Cadena ASCII que contiene el nombre de la función de punto de entrada del sombreador; esta es la función que comienza la ejecución cuando se invoca el sombreador. (...) representa los argumentos del sombreador; estos son los mismos argumentos que se pasan a la API de creación del sombreador: [**SetVertexShader**](/windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setvertexshader) o [**SetPixelShader.**](/windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setpixelshader)<br/> |
 
 
 

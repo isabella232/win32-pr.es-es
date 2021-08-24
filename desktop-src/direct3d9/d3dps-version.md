@@ -1,7 +1,7 @@
 ---
 description: Cree un token de versión del sombreador de píxeles.
 ms.assetid: 70089a93-83df-4ac4-8d98-4e1bb6ad2581
-title: Macro D3DPS_VERSION (D3d9types. h)
+title: D3DPS_VERSION macro (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3d9types.h
-ms.openlocfilehash: c3f30d673145ec9dfe38bd8e2a636ac04c9a195a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a3958cfaa3afe06e22015a28e8e1ebfd8799c01e89772eb9794dd1249cc0df9d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119750905"
 ---
-# <a name="d3dps_version-macro"></a>D3DPS \_ versión (macro)
+# <a name="d3dps_version-macro"></a>Macro D3DPS \_ VERSION
 
 Cree un token de versión del sombreador de píxeles.
 
@@ -40,40 +40,40 @@ DWORD D3DPS_VERSION(
 
 <dl> <dt>
 
-*\_Principales* 
+*\_Principal* 
 </dt> <dd>
 
-Versión principal del sombreador de píxeles.
+La versión principal del sombreador de píxeles.
 
 </dd> <dt>
 
 *\_Minor* 
 </dt> <dd>
 
-Versión secundaria del sombreador de píxeles.
+Versión del sombreador de píxeles secundaria.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor DWORD que es una versión de sombreador de píxeles.
+Devuelve un valor DWORD que es una versión del sombreador de píxeles.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Números de versión
 
-El número de versión es una combinación de la versión principal y los números de versión del sombreador de vértices secundarios. Los números válidos se muestran en la tabla.
+El número de versión es una combinación de la versión principal y los números de versión del sombreador de vértices menores. Los números válidos se muestran en la tabla.
 
 
 
 | Principal | Minor | Ejemplo             |
 |-------|-------|---------------------|
-| 1     | 1     | \_Versión de D3DPS (1,1) |
-| 1     | 2     | \_Versión de D3DPS (1,2) |
-| 1     | 3     | \_Versión de D3DPS (1,1) |
-| 1     | 4     | \_Versión de D3DPS (1,1) |
-| 2     | 0     | \_Versión de D3DPS (2,0) |
-| 3     | 0     | \_Versión de D3DPS (3, 0) |
+| 1     | 1     | D3DPS \_ VERSION(1,1) |
+| 1     | 2     | D3DPS \_ VERSION(1,2) |
+| 1     | 3     | D3DPS \_ VERSION(1,3) |
+| 1     | 4     | D3DPS \_ VERSION(1,4) |
+| 2     | 0     | D3DPS \_ VERSION(2,0) |
+| 3     | 0     | D3DPS \_ VERSION(3,0) |
 
 
 
@@ -85,7 +85,7 @@ El número de versión es una combinación de la versión principal y los númer
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3d9types. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 

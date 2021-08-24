@@ -1,19 +1,19 @@
 ---
-description: El archivo de origen se cerró debido a un evento inesperado. Por ejemplo, el servidor de red se apagó.
+description: El archivo de origen se cerró debido a un evento inesperado. Por ejemplo, el servidor de red se cerró.
 ms.assetid: 1bbedf76-e840-4ec6-b3b2-c7e7dee47cf5
-title: EC_FILE_CLOSED (DShow. h)
+title: EC_FILE_CLOSED (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f4516c8a82f88c7685a41840d5da589c4a3741f2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 36b345bb364504a285b384a89f1fc6987a61ffba998608df0185f7871264d466
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679426"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119748895"
 ---
-# <a name="ec_file_closed"></a>\_archivo EC \_ cerrado
+# <a name="ec_file_closed"></a>ARCHIVO \_ EC \_ CERRADO
 
-El archivo de origen se cerró debido a un evento inesperado. Por ejemplo, el servidor de red se apagó.
+El archivo de origen se cerró debido a un evento inesperado. Por ejemplo, el servidor de red se cerró.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -37,9 +37,9 @@ Cero.
 
 Ninguno.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El filtro de origen de Windows Media heredado envía este evento. Los nuevos filtros no deben enviar este evento.
+El filtro heredado Windows origen multimedia envía este evento. Los nuevos filtros no deben enviar este evento.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,7 +47,7 @@ El filtro de origen de Windows Media heredado envía este evento. Los nuevos fil
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>DShow. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

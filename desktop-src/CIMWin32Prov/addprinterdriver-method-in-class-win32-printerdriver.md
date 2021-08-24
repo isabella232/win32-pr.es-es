@@ -2,7 +2,7 @@
 description: Crea un nuevo controlador de impresora.
 ms.assetid: 23d9ec50-235a-4bf8-ab6b-be3509c3869f
 ms.tgt_platform: multiple
-title: Método AddPrinterDriver de la clase Win32_PrinterDriver
+title: Método AddPrinterDriver de la Win32_PrinterDriver clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 03c029d7689743150235d20b0658cd154ef64a4c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 14681c381f8c8b9abbc5b28ec763b959854e2303b9a0b87af762238f4e5a8d27
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104423235"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119752805"
 ---
-# <a name="addprinterdriver-method-of-the-win32_printerdriver-class"></a>Método AddPrinterDriver de la \_ clase PrinterDriver de Win32
+# <a name="addprinterdriver-method-of-the-win32_printerdriver-class"></a>Método AddPrinterDriver de la clase \_ PrinterDriver de Win32
 
-El método de la clase **AddPrinterDriver** crea un nuevo controlador de impresora.
+El **método de clase AddPrinterDriver** crea un nuevo controlador de impresora.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,16 +42,16 @@ uint32 AddPrinterDriver(
 
 <dl> <dt>
 
-*DriverInfo* \[ de\]
+*DriverInfo* \[ En\]
 </dt> <dd>
 
-Instancia de la clase [**Win32 \_ PrinterDriver**](win32-printerdriver.md) que representa el controlador de impresora.
+Instancia de la [**clase \_ PrinterDriver win32**](win32-printerdriver.md) que representa el controlador de impresora.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro valor para indicar un error. Para valores distintos de los que aparecen en la lista siguiente, vea [**constantes error de WMI**](/windows/desktop/WmiSdk/wmi-error-constants).
+Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro valor para indicar un error. Para obtener valores diferentes de los enumerados en la lista siguiente, vea [**Constantes de error wmi**](/windows/desktop/WmiSdk/wmi-error-constants).
 
 <dl> <dt>
 
@@ -65,14 +65,14 @@ Correcto.
 **5**
 </dt> <dd>
 
-Acceso denegado.
+Acceso denegado:
 
 </dd> <dt>
 
 **87**
 </dt> <dd>
 
-El parámetro no es correcto. Puede producirse cuando el objeto no se rellena correctamente o cuando no se puede encontrar el controlador en el sistema. Como alternativa, el atributo name puede ser diferente del modelo especificado en el archivo. inf. O bien, es posible que falte una barra diagonal inversa (" \\ ") en un atributo PathFile.
+El parámetro no es correcto. Puede producirse cuando el objeto no se rellena correctamente o cuando no se encuentra el controlador en el sistema. Como alternativa, el atributo name puede ser diferente del modelo especificado en el archivo .inf. O bien, puede que falte una barra diagonal inversa (" \\ ") en un atributo PathFile.
 
 </dd> <dt>
 
@@ -83,18 +83,18 @@ Se desconoce el controlador de impresora.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> Al usar el método **AddPrinterDriver** , debe usar **SeLoadDriverPrivilege** para cargar o descargar un controlador de dispositivo.
+> Al usar el **método AddPrinterDriver,** debe usar **SeLoadDriverPrivilege** para cargar o descargar un controlador de dispositivo.
 
  
 
 ## <a name="examples"></a>Ejemplos
 
-El ejemplo de código[instalar un controlador de impresora no encontrado en el archivo. cab VBScript de los controladores](https://Gallery.TechNet.Microsoft.Com/1aac6333-a794-48d3-b7da-46d87df56ee1) instala una impresora hipotética con un controlador de impresión no encontrado en Drivers.cab.
+El[ejemplo de código](https://Gallery.TechNet.Microsoft.Com/1aac6333-a794-48d3-b7da-46d87df56ee1) Instalar un controlador de impresora no encontrado en el cab de controladores VBScript instala una impresora hipotética con un controlador de impresión que no se encuentra en Drivers.cab.
 
-En el siguiente ejemplo de VBScript se instala el controlador de impresora para una impresora Apple LaserWriter 8500.
+En el ejemplo de VBScript siguiente se instala el controlador de impresora para una impresora AppleWriter 8500.
 
 
 ```VB
@@ -122,8 +122,8 @@ intResult = objDriver.AddPrinterDriver(objDriver)
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                      |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                        |
-| MOF<br/>                      | <dl> <dt>Win32 \_ printer. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                        |
+| MOF<br/>                      | <dl> <dt>Win32 \_ Printer.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl>       |
 
 
@@ -132,7 +132,7 @@ intResult = objDriver.AddPrinterDriver(objDriver)
 
 <dl> <dt>
 
-[Clases de hardware de sistema del equipo](computer-system-hardware-classes.md)
+[Clases de hardware del sistema de equipo](computer-system-hardware-classes.md)
 </dt> <dt>
 
 [**Win32 \_ PrinterDriver**](win32-printerdriver.md)

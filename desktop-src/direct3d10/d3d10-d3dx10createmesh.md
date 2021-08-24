@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: cc744536336a4a102bafeaeae3ba87bbad58eb97
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a4f044d3337a2da05eb78b027492b870f450e4309c94faa8c72db935437511dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113363"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119853493"
 ---
 # <a name="d3dx10createmesh-function"></a>Función D3DX10CreateMesh
 
@@ -61,7 +61,7 @@ Puntero a una [**interfaz ID3D10Device ,**](/windows/desktop/api/D3D10/nn-d3d10-
 
 Tipo: **const [**D3D10 \_ INPUT ELEMENT \_ \_ DESC**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_input_element_desc) \***
 
-Matriz [**de elementos D3D10 \_ INPUT ELEMENT \_ \_ DESC,**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_input_element_desc) que describen el formato de vértice de la malla devuelta. Este parámetro debe asignarse directamente a un formato de vértice flexible (FVF).
+Matriz de [**elementos D3D10 \_ INPUT ELEMENT \_ \_ DESC,**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_input_element_desc) que describen el formato de vértice de la malla devuelta. Este parámetro debe asignarse directamente a un formato de vértice flexible (FVF).
 
 </dd> <dt>
 
@@ -88,7 +88,7 @@ Semántica que identifica qué parte de la declaración de vértice contiene inf
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número de vértices de la malla. Este parámetro debe ser mayor que 0.
+Número de vértices para la malla. Este parámetro debe ser mayor que 0.
 
 </dd> <dt>
 
@@ -136,7 +136,7 @@ Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

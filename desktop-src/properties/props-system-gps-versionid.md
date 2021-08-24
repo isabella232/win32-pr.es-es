@@ -1,17 +1,17 @@
 ---
 description: Indica la versión de la información de GPS.
 ms.assetid: 30d94f58-23e1-4d3a-8db9-88eecc9794bf
-title: System. GPS. VersionID
+title: System.GPS.VersionID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 443cc34c51a0534b23e41b3e03ccbf86e689eb1d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4dfdf69d0b06fc59748fe8edd768fb1c7d49f44f809b77e4dac099ed2883e504
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276595"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119775025"
 ---
-# <a name="systemgpsversionid"></a>System. GPS. VersionID
+# <a name="systemgpsversionid"></a>System.GPS.VersionID
 
 Indica la versión de la información de GPS.
 
@@ -30,9 +30,9 @@ propertyDescription
       type = Buffer
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

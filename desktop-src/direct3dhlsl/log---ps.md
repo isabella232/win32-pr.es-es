@@ -1,6 +1,6 @@
 ---
-title: 'registro: PS'
-description: '₂ de registro de precisión completa (x). | registro: PS'
+title: 'log: ps'
+description: 'Registro de precisión completa( x). | log: ps'
 ms.assetid: e540a082-5916-4111-b908-bb229c9e7dc8
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,38 +9,38 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: a8face264d5221cf4b39f99260bec476ee5742f0
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 4be7061b6e2e0bfa4fd86ffaeef1651cd114996bb9252192582f4c447aac09ce
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986689"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119854155"
 ---
-# <a name="log---ps"></a>registro: PS
+# <a name="log---ps"></a>log: ps
 
-₂ de registro de precisión completa (x).
+Registro de precisión completa( x).
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| DST de registro, src |
+| log dst, src |
 |--------------|
 
 
 
  
 
-, donde
+where
 
--   DST es el registro de destino.
--   src es un registro de origen. El registro de origen requiere el uso explícito de replicate swizzle; es decir, se debe especificar exactamente uno de los componentes. x,. y,. z,. w swizzle (o. r,. g,. b,. a equivalentes).
+-   dst es el registro de destino.
+-   src es un registro de origen. El registro de origen requiere el uso explícito de replicate swzzle; Es decir, se debe especificar exactamente uno de los componentes .x, .y, .z, .w swzzle (o .r, .g, .b, .a equivalentes).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | log                   |      |      |      |      | x    | x    | x     | x    | x     |
 
@@ -48,7 +48,7 @@ ms.locfileid: "104986689"
 
  
 
-En el fragmento de código siguiente se muestran las operaciones realizadas.
+El siguiente fragmento de código muestra las operaciones realizadas.
 
 
 ```

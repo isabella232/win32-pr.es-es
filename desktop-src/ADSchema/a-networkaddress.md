@@ -1,11 +1,11 @@
 ---
-title: Network-Address atributo)
-description: La dirección TCP/IP de un segmento de red. También se denomina dirección de subred.
+title: Network-Address atributo
+description: Dirección TCP/IP para un segmento de red. También se denomina dirección de subred.
 ms.assetid: caccb00f-8418-43b8-87c7-7ccb7e2ee51d
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Network-Address
-- atributo networkAddress esquema de AD
+- Network-Address esquema de AD del atributo
+- Esquema de AD del atributo networkAddress
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e869a176b2122ccb0a03c9e0920ca3dbd45f5664
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: aecb62701350c0a954a23dc403a314331920810b0b6778f90099c600ca738a60
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804891"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704765"
 ---
-# <a name="network-address-attribute"></a>Network-Address atributo)
+# <a name="network-address-attribute"></a>Network-Address atributo
 
-La dirección TCP/IP de un segmento de red. También se denomina dirección de subred.
+Dirección TCP/IP para un segmento de red. También se denomina dirección de subred.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
 | CN                | Network-Address                             |
-| Nombre para mostrar de LDAP | networkAddress                              |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | networkAddress                              |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.2.459                      |
-| System-ID-GUID    | bf9679d9-0de6-11d0-a285-00aa003049e2        |
-| Sintaxis            | [**String(Teletex)**](s-string-teletex.md) |
+| System-Id-Guid    | bf9679d9-0de6-11d0-a285-00aa003049e2        |
+| Syntax            | [**String(Teletex)**](s-string-teletex.md) |
 
 
 
@@ -44,7 +44,7 @@ La dirección TCP/IP de un segmento de red. También se denomina dirección de s
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,18 +56,18 @@ La dirección TCP/IP de un segmento de red. También se denomina dirección de s
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                                                                |
 | MAPI-Id                | 0x8170                                                                                                                                                            |
-| System-Only            | False                                                                                                                                                             |
-| Tiene un único valor       | False                                                                                                                                                             |
-| Está indexado             | False                                                                                                                                                             |
-| En el catálogo global      | False                                                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                      |
+| System-Only            | Falso                                                                                                                                                             |
+| Es de un solo valor       | Falso                                                                                                                                                             |
+| Está indexado             | Falso                                                                                                                                                             |
+| En el catálogo global      | Falso                                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                      |
 | Range-Lower            | 0                                                                                                                                                                 |
 | Range-Upper            | 256                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                        |
 | System-Flags           | 0x00000000                                                                                                                                                        |
-| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Clase de DHCP**](c-dhcpclass.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**CLASE DHCP**](c-dhcpclass.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -77,34 +77,34 @@ La dirección TCP/IP de un segmento de red. También se denomina dirección de s
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                                                                |
 | MAPI-Id                | 0x8170                                                                                                                                                            |
-| System-Only            | False                                                                                                                                                             |
-| Tiene un único valor       | False                                                                                                                                                             |
-| Está indexado             | False                                                                                                                                                             |
-| En el catálogo global      | False                                                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                      |
+| System-Only            | Falso                                                                                                                                                             |
+| Es de un solo valor       | Falso                                                                                                                                                             |
+| Está indexado             | Falso                                                                                                                                                             |
+| En el catálogo global      | Falso                                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                      |
 | Range-Lower            | 0                                                                                                                                                                 |
 | Range-Upper            | 256                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                        |
 | System-Flags           | 0x00000000                                                                                                                                                        |
-| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Clase de DHCP**](c-dhcpclass.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**CLASE DHCP**](c-dhcpclass.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | \-                                       |
+| Id. de vínculo                | \-                                       |
 | MAPI-Id                | 0x8170                                   |
-| System-Only            | False                                    |
-| Tiene un único valor       | False                                    |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Falso                                    |
+| Es de un solo valor       | Falso                                    |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | 0                                        |
 | Range-Upper            | 256                                      |
 | Search-Flags           | 0x00000000                               |
@@ -119,18 +119,18 @@ La dirección TCP/IP de un segmento de red. También se denomina dirección de s
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                                                                |
 | MAPI-Id                | 0x8170                                                                                                                                                            |
-| System-Only            | False                                                                                                                                                             |
-| Tiene un único valor       | False                                                                                                                                                             |
-| Está indexado             | False                                                                                                                                                             |
-| En el catálogo global      | False                                                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                      |
+| System-Only            | Falso                                                                                                                                                             |
+| Es de un solo valor       | Falso                                                                                                                                                             |
+| Está indexado             | Falso                                                                                                                                                             |
+| En el catálogo global      | Falso                                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                      |
 | Range-Lower            | 0                                                                                                                                                                 |
 | Range-Upper            | 256                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                        |
 | System-Flags           | 0x00000000                                                                                                                                                        |
-| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Clase de DHCP**](c-dhcpclass.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**CLASE DHCP**](c-dhcpclass.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -140,18 +140,18 @@ La dirección TCP/IP de un segmento de red. También se denomina dirección de s
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                                                                |
 | MAPI-Id                | 0x8170                                                                                                                                                            |
-| System-Only            | False                                                                                                                                                             |
-| Tiene un único valor       | False                                                                                                                                                             |
-| Está indexado             | False                                                                                                                                                             |
-| En el catálogo global      | False                                                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                      |
+| System-Only            | Falso                                                                                                                                                             |
+| Es de un solo valor       | Falso                                                                                                                                                             |
+| Está indexado             | Falso                                                                                                                                                             |
+| En el catálogo global      | Falso                                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                      |
 | Range-Lower            | 0                                                                                                                                                                 |
 | Range-Upper            | 256                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                        |
 | System-Flags           | 0x00000000                                                                                                                                                        |
-| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Clase de DHCP**](c-dhcpclass.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**CLASE DHCP**](c-dhcpclass.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -161,18 +161,18 @@ La dirección TCP/IP de un segmento de red. También se denomina dirección de s
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                                                                |
 | MAPI-Id                | 0x8170                                                                                                                                                            |
-| System-Only            | False                                                                                                                                                             |
-| Tiene un único valor       | False                                                                                                                                                             |
-| Está indexado             | False                                                                                                                                                             |
-| En el catálogo global      | False                                                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                      |
+| System-Only            | Falso                                                                                                                                                             |
+| Es de un solo valor       | Falso                                                                                                                                                             |
+| Está indexado             | Falso                                                                                                                                                             |
+| En el catálogo global      | Falso                                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                      |
 | Range-Lower            | 0                                                                                                                                                                 |
 | Range-Upper            | 256                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                        |
 | System-Flags           | 0x00000000                                                                                                                                                        |
-| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Clase de DHCP**](c-dhcpclass.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**CLASE DHCP**](c-dhcpclass.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -182,18 +182,18 @@ La dirección TCP/IP de un segmento de red. También se denomina dirección de s
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                                                                |
 | MAPI-Id                | 0x8170                                                                                                                                                            |
-| System-Only            | False                                                                                                                                                             |
-| Tiene un único valor       | False                                                                                                                                                             |
-| Está indexado             | False                                                                                                                                                             |
-| En el catálogo global      | False                                                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                      |
+| System-Only            | Falso                                                                                                                                                             |
+| Es de un solo valor       | Falso                                                                                                                                                             |
+| Está indexado             | Falso                                                                                                                                                             |
+| En el catálogo global      | Falso                                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                      |
 | Range-Lower            | 0                                                                                                                                                                 |
 | Range-Upper            | 256                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                        |
 | System-Flags           | 0x00000000                                                                                                                                                        |
-| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Clase de DHCP**](c-dhcpclass.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**Usuario**](c-user.md)<br/> |
+| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**DHCP-Class**](c-dhcpclass.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 

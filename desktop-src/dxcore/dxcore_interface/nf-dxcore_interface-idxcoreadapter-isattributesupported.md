@@ -4,14 +4,14 @@ description: Determina si este objeto de adaptador DXCore admite el atributo de 
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 06/20/2019
-ms.openlocfilehash: 9824595326f9e81bfa21ab198a3f5b2e6eae74bc
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 9dda05ca9dc1d3b7a7a84792c7ac122bb64144d5fdba3ad630be1a3f4d9ddf24
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104420858"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119787085"
 ---
-# <a name="idxcoreadapterisattributesupported-method"></a>IDXCoreAdapter:: IsAttributeSupported (método)
+# <a name="idxcoreadapterisattributesupported-method"></a>IDXCoreAdapter::IsAttributeSupported (método)
 
 Determina si este objeto de adaptador DXCore admite el atributo de adaptador especificado.
 
@@ -28,14 +28,14 @@ virtual bool STDMETHODCALLTYPE IsAttributeSupported(
 
 Tipo: **REFGUID**
 
-Referencia a un GUID de atributo de adaptador. Para obtener una lista de los GUID de atributo, consulte [GUID del atributo del adaptador de DXCore](../dxcore-adapter-attribute-guids.md).
+Referencia a un GUID de atributo de adaptador. Para obtener una lista de GUID de atributo, vea GUID de atributo del adaptador [de DXCore.](../dxcore-adapter-attribute-guids.md)
 
 ## <a name="returns"></a>Devoluciones
 
 Tipo: **bool**
 
-Devuelve  `true`   si este objeto de adaptador de DXCore admite el atributo de adaptador especificado. De lo contrario, devuelve  `false` .
+Devuelve `true` si este objeto de adaptador DXCore admite el atributo de adaptador especificado. De lo contrario, devuelve `false`.
 
 ## <a name="see-also"></a>Vea también
 
-[IDXCoreAdapter](./nn-dxcore_interface-idxcoreadapter.md), [DXCore Reference](../dxcore-reference.md), [DXCore GUID Attribute GUID](../dxcore-adapter-attribute-guids.md), [using DXCore to Enumerate Adapters](../dxcore-enum-adapters.md)
+[IDXCoreAdapter,](./nn-dxcore_interface-idxcoreadapter.md) [DXCore Reference,](../dxcore-reference.md) [DXCore adapter attribute GUIDs](../dxcore-adapter-attribute-guids.md), [Using DXCore to enumerate adapters](../dxcore-enum-adapters.md)

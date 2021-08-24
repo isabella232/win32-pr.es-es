@@ -1,24 +1,24 @@
 ---
-description: El método GetKaraokeChannelAssignment recupera un valor que indica cómo se asignan los canales de karaoke a los altavoces.
+description: El método GetKaraokeChannelAssignment recupera un valor que indica cómo se asignan los canales de canal a los hablantes.
 ms.assetid: 08e35fa6-fa1b-4f9f-8f56-d953c4422226
-title: Método GetKaraokeChannelAssignment
+title: GetKaraokeChannelAssignment (método)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dafe1217e08f3dc4f55aeec42424b1ebf9d86d22
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 010e8112ece9b3fc66831055995ebf46657d4216942ac3b9dee05b1b68d18761
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103906896"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119812555"
 ---
-# <a name="getkaraokechannelassignment-method"></a>Método GetKaraokeChannelAssignment
+# <a name="getkaraokechannelassignment-method"></a>GetKaraokeChannelAssignment (método)
 
 > [!Note]  
 > Este componente está disponible para su uso en los sistemas operativos Microsoft Windows 2000, Windows XP y Windows Server 2003. En versiones posteriores podría modificarse o no estar disponible.
 
  
 
-El `GetKaraokeChannelAssignment` método recupera un valor que indica cómo se asignan los canales de karaoke a los altavoces.
+El método recupera un valor que indica cómo se asignan los `GetKaraokeChannelAssignment` canales de canal a los hablantes.
 
 ``` syntax
 [ iAssignment = ] MSWebDVD.GetKaraokeChannelAssignment(iStream)
@@ -28,7 +28,7 @@ El `GetKaraokeChannelAssignment` método recupera un valor que indica cómo se a
 
 <dl> <dt>
 
-<span id="iStream"></span><span id="istream"></span><span id="ISTREAM"></span>*iStream*
+<span id="iStream"></span><span id="istream"></span><span id="ISTREAM"></span>*Istream*
 </dt> <dd>
 
 Especifica la secuencia de audio como un entero.
@@ -37,18 +37,18 @@ Especifica la secuencia de audio como un entero.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un entero que indica la asignación de altavoz para la secuencia especificada.
+Devuelve un entero que indica la asignación del hablante para la secuencia especificada.
 
 
 
 | Código devuelto | Descripción                                                             |
 |-------------|-------------------------------------------------------------------------|
 | 2           | La secuencia se asigna a los altavoces izquierdo y derecho.                  |
-| 3           | La secuencia se asigna a los altavoces izquierdo, derecho y medio.         |
-| 4           | La secuencia se asigna a los altavoces izquierdo, derecho y AUDIO1.         |
-| 5           | La secuencia se asigna a los altavoces izquierdo, derecho, medio y AUDIO1. |
-| 6           | La secuencia se asigna a los altavoces izquierdo, derecho y Audio2.         |
-| 7           | La secuencia se asigna a los altavoces izquierdo, derecho, medio y Audio2. |
+| 3           | La secuencia se asigna a los altavoces izquierdo, derecho y central.         |
+| 4           | La secuencia se asigna a los altavoces izquierdo, derecho y audio1.         |
+| 5           | La secuencia se asigna a los altavoces left, right, middle y audio1. |
+| 6           | La secuencia se asigna a los altavoces izquierdo, derecho y audio2.         |
+| 7           | La secuencia se asigna a los altavoces left, right, middle y audio2. |
 
 
 
@@ -58,7 +58,7 @@ Devuelve un entero que indica la asignación de altavoz para la secuencia especi
 
 <dl> <dt>
 
-[**KaraokeAudioPresentationMode**](karaokeaudiopresentationmode-property.md)
+[**AudioAudioPresentationMode**](karaokeaudiopresentationmode-property.md)
 </dt> </dl>
 
  

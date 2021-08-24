@@ -1,21 +1,21 @@
 ---
-description: Los formatos de archivo de imagen de formato de intercambio de gráficos (GIF) y Tagged Image File Format (TIFF) le permiten almacenar varios fotogramas en un único archivo de imagen.
+description: Los formatos Formato de intercambio de gráficos archivo de imagen Tagged Image File Format (GIF) y Tagged Image File Format (TIFF) permiten almacenar varios fotogramas en un único archivo de imagen.
 ms.assetid: 36fa4e77-0813-4f0e-a802-86be95caaf38
-title: Constantes de dimensión de fotogramas de imagen
+title: Constantes de dimensión de marco de imagen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 058aa25af891e258e8dc49f4d37fa4befb4e27ea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4385ffc5ce28e45192e2267d555dee563b76615d63e9fc63633cddc860a23a8f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104985199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119831095"
 ---
-# <a name="image-frame-dimension-constants"></a>Constantes de dimensión de fotogramas de imagen
+# <a name="image-frame-dimension-constants"></a>Constantes de dimensión de marco de imagen
 
-Los formatos de archivo de imagen de formato de intercambio de gráficos (GIF) y Tagged Image File Format (TIFF) le permiten almacenar varios fotogramas en un único archivo de imagen. Se usan varios marcos en un archivo GIF para animaciones, por lo que se dice que los fotogramas están en la dimensión de tiempo. Normalmente, se usan varios marcos en un archivo TIFF como páginas independientes, por lo que se dice que los fotogramas están en la dimensión de la página.
+Los formatos Formato de intercambio de gráficos archivo de imagen Tagged Image File Format (GIF) y Tagged Image File Format (TIFF) permiten almacenar varios fotogramas en un único archivo de imagen. Se usan varios fotogramas en un archivo GIF para la animación, por lo que se dice que los fotogramas están en la dimensión de tiempo. Varios fotogramas de un archivo TIFF se usan normalmente como páginas independientes, por lo que se dice que los marcos están en la dimensión de página.
 
-Las siguientes constantes, definidas en Gdiplusimaging. h, representan los GUID que identifican las dimensiones de la página y el tiempo.
+Las siguientes constantes, definidas en Gdiplusimaging.h, representan GUID que identifican las dimensiones de página y tiempo.
 
 -   FrameDimensionPage
 -   FrameDimensionTime

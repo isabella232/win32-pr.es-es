@@ -1,19 +1,19 @@
 ---
-description: 'D3DX proporciona las siguientes funciones de UVAtlas:'
+description: 'D3DX proporciona las siguientes funciones UVAtlas:'
 ms.assetid: 9c5c400e-0f00-4715-9e96-ce01a400c64d
-title: Funciones de UVAtlas
+title: Funciones DE UVAtlas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 48c2216e836fac7a17fd138f9ce5fb9b3355c771
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 7a63159b5017012cb550515d33e1a9fa107b877669dd5e21ee9748a54b0df634
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104152120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119749305"
 ---
-# <a name="uvatlas-functions"></a>Funciones de UVAtlas
+# <a name="uvatlas-functions"></a>Funciones DE UVAtlas
 
-D3DX proporciona las siguientes funciones de UVAtlas:
+D3DX proporciona las siguientes funciones UVAtlas:
 
 -   [**D3DXUVAtlasCreate**](d3dxuvatlascreate.md)
 -   [**D3DXUVAtlasPack**](d3dxuvatlaspack.md)
@@ -23,16 +23,16 @@ D3DX proporciona las siguientes funciones de UVAtlas:
 -   [**D3DXComputeIMTFromSignal**](d3dxcomputeimtfromsignal.md)
 -   [**D3DXComputeIMTFromTexture**](d3dxcomputeimtfromtexture.md)
 
-Las funciones UVAtlas calculan una parametrización de textura única y óptima para una malla de entrada mediante un tensores de métrica integrado por caras.
+Las funciones UVAtlas calculan una parametrización de textura única y óptima para una malla de entrada mediante un tensor de métricas integrado por cara.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Funciones de D3DX](dx9-graphics-reference-d3dx-functions.md)
+[Funciones D3DX](dx9-graphics-reference-d3dx-functions.md)
 </dt> <dt>
 
-[Usar UVAtlas (Direct3D 9)](using-uvatlas.md)
+[Uso de UVAtlas (Direct3D 9)](using-uvatlas.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: atributo msSFU-30-Map-Filter
+title: Atributo msSFU-30-Map-Filter
 description: Contiene una cadena que se usa para filtrar los datos de un mapa. Puede contener claves de mapa, el nombre de dominio y otros tipos de datos.
 ms.assetid: 8849439c-e0c3-488d-a1dc-d64a8d748549
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de filtro de msSFU-30-Map
-- msSFU30MapFilter esquema de AD de atributos
+- msSFU-30-Map-Filter attribute AD Schema
+- Esquema de AD del atributo msSFU30MapFilter
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e61413187597dfc11d374b0ef67946a74e084b1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: acbf404189b96a2b84077f47d74c924b1e8ed7f53013dc34ae80d17e68d11acb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906165"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704875"
 ---
-# <a name="mssfu-30-map-filter-attribute"></a>atributo msSFU-30-Map-Filter
+# <a name="mssfu-30-map-filter-attribute"></a>Atributo msSFU-30-Map-Filter
 
 Contiene una cadena que se usa para filtrar los datos de un mapa. Puede contener claves de mapa, el nombre de dominio y otros tipos de datos.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | msSFU-30-Map-Filter                         |
-| Nombre para mostrar de LDAP | msSFU30MapFilter                            |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | msSFU30MapFilter                            |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.6.18.1.306                 |
-| System-ID-GUID    | b7b16e01-024f-4e23-ad0d-71f1a406b684        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | b7b16e01-024f-4e23-ad0d-71f1a406b684        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -53,18 +53,18 @@ Contiene una cadena que se usa para filtrar los datos de un mapa. Puede contener
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000000                                                          |
-| Clases usadas en        | [**msSFU-30-NIS-Map-config**](c-mssfu30nismapconfig.md)<br/> |
+| Clases usadas en        | [**msSFU-30-NIS-Map-Config**](c-mssfu30nismapconfig.md)<br/> |
 
 
 
@@ -74,18 +74,18 @@ Contiene una cadena que se usa para filtrar los datos de un mapa. Puede contener
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000000                                                          |
-| Clases usadas en        | [**msSFU-30-NIS-Map-config**](c-mssfu30nismapconfig.md)<br/> |
+| Clases usadas en        | [**msSFU-30-NIS-Map-Config**](c-mssfu30nismapconfig.md)<br/> |
 
 
 
@@ -95,18 +95,18 @@ Contiene una cadena que se usa para filtrar los datos de un mapa. Puede contener
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000000                                                          |
-| Clases usadas en        | [**msSFU-30-NIS-Map-config**](c-mssfu30nismapconfig.md)<br/> |
+| Clases usadas en        | [**msSFU-30-NIS-Map-Config**](c-mssfu30nismapconfig.md)<br/> |
 
 
 
@@ -114,20 +114,20 @@ Contiene una cadena que se usa para filtrar los datos de un mapa. Puede contener
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000000                                                          |
-| Clases usadas en        | [**msSFU-30-NIS-Map-config**](c-mssfu30nismapconfig.md)<br/> |
+| Clases usadas en        | [**msSFU-30-NIS-Map-Config**](c-mssfu30nismapconfig.md)<br/> |
 
 
 

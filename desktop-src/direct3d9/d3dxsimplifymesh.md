@@ -1,7 +1,7 @@
 ---
-description: Genera una malla simplificada usando los pesos proporcionados lo más cerca posible del MinValue dado.
+description: Genera una malla simplificada con los pesos proporcionados que se acercan lo más posible al valor MinValue determinado.
 ms.assetid: 589356a9-f272-4851-92ae-54dbecc0b234
-title: Función D3DXSimplifyMesh (D3DX9Mesh. h)
+title: Función D3DXSimplifyMesh (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 0258047631a41e31d108ba45531988e4cb6a35ae
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3cc0bfe18afef7b91dbdf887500b485a446b154cb5775cbf950a7e712a332a9f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717735"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119749785"
 ---
-# <a name="d3dxsimplifymesh-function"></a>D3DXSimplifyMesh función)
+# <a name="d3dxsimplifymesh-function"></a>Función D3DXSimplifyMesh
 
-Genera una malla simplificada usando los pesos proporcionados lo más cerca posible del MinValue dado.
+Genera una malla simplificada con los pesos proporcionados que se acercan lo más posible al valor MinValue determinado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,66 +46,66 @@ HRESULT D3DXSimplifyMesh(
 
 <dl> <dt>
 
-*pmesh* \[ de\]
+*pMesh* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)**
 
-Puntero a una interfaz [**ID3DXMesh**](id3dxmesh.md) que representa la malla de origen.
+Puntero a una [**interfaz ID3DXMesh,**](id3dxmesh.md) que representa la malla de origen.
 
 </dd> <dt>
 
-*pAdjacency* \[ de\]
+*pAdjacency* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md) \***
 
-Puntero a una matriz de tres DWORD por cada tipo que especifica los tres vecinos para cada una de las caras de la malla que se van a simplificar.
+Puntero a una matriz de tres DWORD por cara que especifican los tres vecinos de cada cara de la malla que se va a simplificar.
 
 </dd> <dt>
 
-*pVertexAttributeWeights* \[ de\]
+*pVertexAttributeWeights* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXATTRIBUTEWEIGHTS**](d3dxattributeweights.md) \***
 
-Puntero a una estructura [**D3DXATTRIBUTEWEIGHTS**](d3dxattributeweights.md) , que contiene el peso de cada componente de vértice. Si este parámetro se establece en **null**, se usa una estructura predeterminada. Vea la sección Comentarios.
+Puntero a una [**estructura D3DXATTRIBUTEWEIGHTS,**](d3dxattributeweights.md) que contiene el peso de cada componente de vértice. Si este parámetro se establece en **NULL,** se usa una estructura predeterminada. Vea la sección Comentarios.
 
 </dd> <dt>
 
-*pVertexWeights* \[ de\]
+*pVertexWeights* \[ En\]
 </dt> <dd>
 
-Tipo: **const [**float**](../winprog/windows-data-types.md) \***
+Tipo: **const [**FLOAT**](../winprog/windows-data-types.md) \***
 
-Puntero a una matriz de pesos de vértice. Si este parámetro se establece en **null**, todos los pesos de vértice se establecen en 1,0.
-
-</dd> <dt>
-
-*MinValue* \[ de\]
-</dt> <dd>
-
-Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
-
-Número de vértices o caras, dependiendo del marcador establecido en el parámetro *Options* , por el que se va a simplificar la malla de origen.
+Puntero a una matriz de ponderaciones de vértices. Si este parámetro se establece en **NULL,** todos los pesos de vértice se establecen en 1,0.
 
 </dd> <dt>
 
-*Opciones* \[ de de\]
+*MinValue* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Especifica las opciones de simplificación para la malla. Se puede establecer una de las marcas de [**D3DXMESHSIMP**](./d3dxmeshsimp.md) .
+Número de vértices o caras, en función de la marca establecida en el parámetro *Options,* por el que se va a simplificar la malla de origen.
 
 </dd> <dt>
 
-*ppMesh* \[ enuncia\]
+*Opciones* \[ En\]
+</dt> <dd>
+
+Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
+
+Especifica opciones de simplificación para la malla. Se puede establecer una de las [**marcas de D3DXMESHSIMP.**](./d3dxmeshsimp.md)
+
+</dd> <dt>
+
+*ppMesh* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)\***
 
-Dirección de un puntero a una interfaz [**ID3DXMesh**](id3dxmesh.md) que representa la malla de simplificación devuelta.
+Dirección de un puntero a una [**interfaz ID3DXMesh,**](id3dxmesh.md) que representa la malla de simplificación devuelta.
 
 </dd> </dl>
 
@@ -113,15 +113,15 @@ Dirección de un puntero a una interfaz [**ID3DXMesh**](id3dxmesh.md) que repres
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
+Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función genera una malla que tiene vértices o caras *MinValue* .
+Esta función genera una malla que tiene vértices o caras *MinValue.*
 
-Si el proceso de simplificación no puede reducir la malla a *MinValue*, la llamada todavía se realiza correctamente porque *MinValue* es un mínimo deseado, no un mínimo absoluto.
+Si el proceso de simplificación no puede reducir la malla a *MinValue,* la llamada se realiza correctamente porque *MinValue* es un mínimo deseado, no un mínimo absoluto.
 
-Si *pVertexAttributeWeights* se establece en **null**, los valores siguientes se asignan a la estructura [**D3DXATTRIBUTEWEIGHTS**](d3dxattributeweights.md) predeterminada.
+Si *pVertexAttributeWeights* se establece en **NULL,** se asignan los valores siguientes a la estructura [**D3DXATTRIBUTEWEIGHTS**](d3dxattributeweights.md) predeterminada.
 
 
 ```
@@ -137,7 +137,7 @@ AttributeWeights.Tex[8]   =  {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
 
 
 
-Esta estructura predeterminada es lo que la mayoría de las aplicaciones deben usar porque solo tiene en cuenta el ajuste geométrico y normal. Solo en casos especiales, los demás campos de miembro deben modificarse.
+Esta estructura predeterminada es la que la mayoría de las aplicaciones deben usar porque solo tiene en cuenta el ajuste geométrico y normal. Solo en casos especiales se deben modificar los demás campos de miembro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -145,8 +145,8 @@ Esta estructura predeterminada es lo que la mayoría de las aplicaciones deben u
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

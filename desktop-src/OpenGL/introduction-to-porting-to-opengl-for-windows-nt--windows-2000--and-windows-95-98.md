@@ -1,36 +1,36 @@
 ---
-title: Introducción a la migración a OpenGL para Windows
-description: Introducción a la migración a OpenGL para Windows
+title: Introducción a la porte a OpenGL para Windows
+description: Introducción a la porte a OpenGL para Windows
 ms.assetid: d23edcf7-d673-42b6-831b-edb3a76754e1
 keywords:
-- OpenGL, trasladar a Windows
-- trasladar a OpenGL OpenGL
+- OpenGL, porting to Windows
+- porte a OpenGL OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b9b9cc013d57a6e14cc318c4f254b5369193286
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f41e690186d4bd44501efa59f5ee92b2507dbd46b273e4847e0b83a15060e786
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103775264"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119777405"
 ---
-# <a name="introduction-to-porting-to-opengl-for-windows"></a>Introducción a la migración a OpenGL para Windows
+# <a name="introduction-to-porting-to-opengl-for-windows"></a>Introducción a la porte a OpenGL para Windows
 
-En los temas siguientes se describe cómo migrar las aplicaciones de cada una de estas plataformas. En los temas se explica cómo trasladar únicamente el código OpenGL y de administración de ventanas. no hay ningún debate sobre otros problemas del puerto del sistema operativo, como la lectura de archivos, la mensajería, la creación de subprocesos, etc. Esta guía de migración se centra en problemas específicos de portabilidad y supone que conoce la programación de OpenGL y Windows.
+En los temas siguientes se describe cómo portabilidad de las aplicaciones desde cada una de estas plataformas. En los temas se describe la porción de OpenGL y solo el código de administración de ventanas; no hay ninguna explicación sobre otros problemas de puerto del sistema operativo, como la lectura de archivos, la mensajería, la creación de subprocesos, entre otros. Esta guía de porte se centra en problemas específicos de porte y supone que conoce OpenGL y Windows programación.
 
--   [Trasladar aplicaciones de sistema de ventana X](porting-x-window-system-applications.md)
+-   [Porting X Window System Applications](porting-x-window-system-applications.md)
 -   [Traducción de la biblioteca GLX](translating-the-glx-library.md)
--   [Portabilidad de los contextos de dispositivo y formatos de píxel](porting-device-contexts-and-pixel-formats.md)
--   [Trasladar contextos de representación](porting-rendering-contexts.md)
--   [Portabilidad de GLX Pixmap Code](porting-glx-pixmap-code.md)
--   [Trasladar otro código de GLX](porting-other-glx-code.md)
--   [Un ejemplo de portabilidad](a-porting-sample.md)
--   [Trasladar aplicaciones de IRIS GL](porting-applications-from-iris-gl.md)
--   [Problemas de migración del libro de contabilidad de IRIS especial](special-iris-gl-porting-issues.md)
+-   [Porte de contextos de dispositivo y formatos de píxel](porting-device-contexts-and-pixel-formats.md)
+-   [Porte de contextos de representación](porting-rendering-contexts.md)
+-   [Porting GLXMap Code](porting-glx-pixmap-code.md)
+-   [Porte de otro código GLX](porting-other-glx-code.md)
+-   [Un ejemplo de porte](a-porting-sample.md)
+-   [Porte de aplicaciones desde IRIS GL](porting-applications-from-iris-gl.md)
+-   [Problemas especiales de porte de IRIS GL](special-iris-gl-porting-issues.md)
 
- 
+ 
 
- 
+ 
 
 
 

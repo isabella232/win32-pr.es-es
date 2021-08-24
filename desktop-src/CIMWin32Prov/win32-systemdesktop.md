@@ -1,8 +1,8 @@
 ---
-description: La \_ clase WMI SystemDesktop Association de Win32 relaciona un equipo con la configuración del escritorio.
+description: La clase WMI de asociación SystemDesktop de Win32 \_ relaciona un sistema informático y su configuración de escritorio.
 ms.assetid: 2b024660-d707-4463-8207-73df74bfa7d6
 ms.tgt_platform: multiple
-title: Win32_SystemDesktop (clase)
+title: Win32_SystemDesktop clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 3e14cab58a445fd645b9d59c1aea713bf6c40ac0
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a7158e42589018364b9d55b578941bc3e6897576c6633b2a9fa0b0d09e4fede9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000786"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119751345"
 ---
-# <a name="win32_systemdesktop-class"></a>\_Clase Win32 SystemDesktop
+# <a name="win32_systemdesktop-class"></a>Clase SystemDesktop de Win32 \_
 
-La [clase WMI](../wmisdk/retrieving-a-class.md) **\_ SystemDesktop** Association de Win32 relaciona un equipo con la configuración del escritorio.
+La clase WMI **de asociación \_ SystemDesktop** [de](../wmisdk/retrieving-a-class.md) Win32 relaciona un sistema informático y su configuración de escritorio.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
 
@@ -61,32 +61,32 @@ Tipo de datos: **Win32 \_ ComputerSystem**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](../wmisdk/standard-qualifiers.md) ("Element"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ ComputerSystem")
+Calificadores: [**Override**](../wmisdk/standard-qualifiers.md) ("Element"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ ComputerSystem")
 </dt> </dl>
 
-Referencia a la instancia de que representa el sistema del equipo en el que existe la configuración de escritorio.
+Referencia a la instancia de que representa el sistema del equipo donde existe la configuración de escritorio.
 
 </dd> <dt>
 
 **Configuración**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ escritorio Win32**
+Tipo de datos: **Win32 \_ Desktop**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](../wmisdk/standard-qualifiers.md) ("Setting"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ Desktop")
+Calificadores: [**Override**](../wmisdk/standard-qualifiers.md) ("Setting"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ Desktop")
 </dt> </dl>
 
 Referencia a la instancia de que representa la configuración existente en el sistema del equipo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La **clase \_ SystemDesktop de Win32** se deriva de [**\_ SystemSetting de Win32**](win32-systemsetting.md).
+La **clase \_ SystemDesktop de Win32** se deriva de [**\_ SystemSetting de Win32.**](win32-systemsetting.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,8 +96,8 @@ La **clase \_ SystemDesktop de Win32** se deriva de [**\_ SystemSetting de Win32
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

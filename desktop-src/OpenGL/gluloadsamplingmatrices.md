@@ -1,9 +1,9 @@
 ---
-title: función gluLoadSamplingMatrices (GLU. h)
-description: La función gluLoadSamplingMatrices carga las matrices de muestreo y selección de la spline B-spline racional (NURBS) no uniformes.
+title: Función gluLoadSamplingMatrices (Glu.h)
+description: La función gluLoadSamplingMatrices carga matrices de muestreo y de selección no uniformes de B-Spline lógica (SPLINE).
 ms.assetid: 7fdbc4e2-a037-4f07-bb03-e51feea42775
 keywords:
-- gluLoadSamplingMatrices (función) OpenGL
+- Función GluLoadSamplingMatrices OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 293b8bace0dff7d89bfcffa2af33738e0e59de7a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e41b2f6b25e0cecf0d13d87760a941d5ea68baa1fdd85495c8a316e862c77aec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105665953"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119777535"
 ---
-# <a name="gluloadsamplingmatrices-function"></a>gluLoadSamplingMatrices función)
+# <a name="gluloadsamplingmatrices-function"></a>Función gluLoadSamplingMatrices
 
-La función **gluLoadSamplingMatrices** carga las matrices de muestreo y selección de la spline B-spline racional ([NURBS](using-nurbs-curves-and-surfaces.md)) no uniformes.
+La **función gluLoadSamplingMatrices** carga matrices de muestreo y de selección no uniformes de B-Spline racionalizadas [(SPLINEBS).](using-nurbs-curves-and-surfaces.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,28 +46,28 @@ void WINAPI gluLoadSamplingMatrices(
 *nobj* 
 </dt> <dd>
 
-El objeto NURBS (creado con [**gluNewNurbsRenderer**](glunewnurbsrenderer.md)).
+El objeto RGBBS (creado [**con gluNewNurbsRenderer).**](glunewnurbsrenderer.md)
 
 </dd> <dt>
 
 *modelMatrix* 
 </dt> <dd>
 
-Matriz MODELVIEW (a partir de una llamada a [**glGetFloatv**](glgetfloatv.md) ).
+Matriz modelview (como de una [**llamada a glGetFloatv).**](glgetfloatv.md)
 
 </dd> <dt>
 
 *projMatrix* 
 </dt> <dd>
 
-Matriz de proyección (a partir de una llamada a **glGetFloatv** ).
+Matriz de proyección (a partir de una **llamada a glGetFloatv).**
 
 </dd> <dt>
 
-*encuadre* 
+*Viewport* 
 </dt> <dd>
 
-Una ventanilla (a partir de una llamada a [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) ).
+Una ventanilla (como desde una [**llamada a glGetIntegerv).**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)
 
 </dd> </dl>
 
@@ -75,22 +75,22 @@ Una ventanilla (a partir de una llamada a [**glGetIntegerv**](glgetbooleanv--glg
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **gluLoadSamplingMatrices** usa *modelMatrix*, *projMatrix* y *viewport* para volver a calcular las matrices de muestreo y selección almacenadas en *nobj*. La matriz de muestreo determina la precisión con que una curva o superficie de NURBS debe ser teselada para satisfacer la tolerancia de muestreo (según lo determinado por la propiedad de tolerancia de muestreo de GLU \_ \_ ). La matriz de selección se usa para decidir si se debe seleccionar una curva o superficie de NURBS antes de la representación (cuando la \_ propiedad de selección de Glu está activada).
+La **función gluLoadSamplingMatrices** usa *modelMatrix*, *projMatrix* y *viewport* para volver a compilar las matrices de muestreo y de selección almacenadas *en nobj*. La matriz de muestreo determina la forma en que se debe teselar una curva o una superficie DE ASBS para satisfacer la tolerancia de muestreo (según lo determinado por la propiedad GLU \_ SAMPLING \_ TOLERANCE). La matriz de selección se usa para decidir si se debe realizar la selección de una curva o una superficie DE LABS antes de la representación (cuando se ha activado la propiedad GLU \_ CULLING).
 
-La función **gluLoadSamplingMatrices** solo es necesaria si la propiedad de la matriz de carga automática Glu está desactivada \_ \_ \_ (consulte [**gluNurbsProperty**](glunurbsproperty.md)). Aunque puede ser conveniente dejar \_ \_ activada la \_ propiedad de matriz de carga automática de Glu, al hacerlo se requiere un recorrido de ida y vuelta al servidor de OpenGL para obtener los valores actuales de la matriz de MODELVIEW, la matriz de proyección y la ventanilla).
+La **función gluLoadSamplingMatrices** solo es necesaria si la propiedad GLU AUTO LOAD MATRIX está desactivada \_ \_ \_ (vea [**gluNurbsProperty**](glunurbsproperty.md)). Aunque puede ser conveniente dejar activada la propiedad GLU AUTO LOAD MATRIX, para ello es necesario realizar un recorrido de ida y vuelta al servidor OpenGL para obtener los valores actuales de la matriz modelview, la matriz de proyección y la \_ \_ \_ ventanilla).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Glu. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 

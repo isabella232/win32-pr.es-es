@@ -1,7 +1,7 @@
 ---
 description: Función de proxy para el método CreateEncoder.
 ms.assetid: e3ffad7f-eb0e-481d-81ee-caf18e14ba59
-title: IWICImagingFactory_CreateEncoder_Proxy función)
+title: IWICImagingFactory_CreateEncoder_Proxy función
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 38e5dd19ddc07de42f8be9e8c887a4f412a853b5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 20e1a95253c0943383842b9667d93e4fc98c48ab2abf229bae7c0b3ad3f3fe63
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706488"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119812285"
 ---
-# <a name="iwicimagingfactory_createencoder_proxy-function"></a>IWICImagingFactory \_ CreateEncoder \_ función proxy
+# <a name="iwicimagingfactory_createencoder_proxy-function"></a>Función IWICImagingFactory \_ CreateEncoder \_ Proxy
 
-Función de proxy para el método [**CreateEncoder**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createencoder) .
+Función de proxy para [**el método CreateEncoder.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createencoder)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,14 +43,14 @@ HRESULT IWICImagingFactory_CreateEncoder_Proxy(
 
 <dl> <dt>
 
-*pFactory* \[ de\]
+*pFactory* \[ En\]
 </dt> <dd>
 
-Tipo: **[**IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) \** _
+Tipo: **[ **IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory)\***
 
 </dd> <dt>
 
-_guidContainerFormat * \[ en\]
+*guidContainerFormat* \[ En\]
 </dt> <dd>
 
 Tipo: **REFGUID**
@@ -59,21 +59,21 @@ GUID para el formato de contenedor deseado.
 
 </dd> <dt>
 
-*pguidVendor* \[ en, opcional\]
+*pguidVendor* \[ in, opcional\]
 </dt> <dd>
 
-Tipo: **const GUID \** _
+Tipo: **\* GUID const**
 
 GUID del proveedor para el codificador.
 
 </dd> <dt>
 
-_ppIEncoder * \[ out\]
+*ppIEncoder* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **IWICBitmapEncoder**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapencoder)\*\***
 
-Puntero que recibe un puntero a un nuevo [**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder).
+Puntero que recibe un puntero a un [**nuevo IWICBitmapDecoder.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder)
 
 </dd> </dl>
 
@@ -81,7 +81,7 @@ Puntero que recibe un puntero a un nuevo [**IWICBitmapDecoder**](/windows/deskto
 
 Tipo: **HRESULT**
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
@@ -89,11 +89,11 @@ Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo con
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP con SP2, \[ solo aplicaciones de escritorio de Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                                                                             |
-| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP con SP2, solo Windows aplicaciones \[ de escritorio de Vista\]<br/>                                                                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                                                                             |
+| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

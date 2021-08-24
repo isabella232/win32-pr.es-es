@@ -1,7 +1,7 @@
 ---
 description: Puntero al pin de entrada.
 ms.assetid: 0806074e-a844-40eb-b488-c00ba93f4cac
-title: 'Miembro CTransformFilter:: m_pInput (Transfrm. h)'
+title: CTransformFilter::m_pInput miembro (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6f7760e445c6f15dabbf43bf7bd5b4c601e9be1b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d22228f9b808f3ca03f933db787a147e232407d5bd13337cc45285872859f2b6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661027"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119767745"
 ---
-# <a name="ctransformfilterm_pinput-member"></a>Miembro pInput CTransformFilter:: m \_
+# <a name="ctransformfilterm_pinput-member"></a>Miembro CTransformFilter::m \_ pInput
 
 Puntero al pin de entrada.
 
@@ -42,8 +42,8 @@ CTransformInputPin *m_pInput;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transfrm. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ CTransformInputPin *m_pInput;
 
 <dl> <dt>
 
-[**Clase CTransformFilter**](ctransformfilter.md)
+[**CTransformFilter (clase)**](ctransformfilter.md)
 </dt> </dl>
 
  

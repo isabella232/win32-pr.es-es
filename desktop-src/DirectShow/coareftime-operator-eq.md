@@ -1,7 +1,7 @@
 ---
 description: Este operador comprueba la igualdad entre dos tiempos de referencia.
 ms.assetid: a265f7c6-8334-4bb3-8cb7-c7918ebdf97a
-title: Método COARefTime. Operator = = (Ctlutil. h)
+title: Método COARefTime.operator== (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 04b19f7b75be840a293920b36fe5ab63d30520d2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 36951e2a2d0f82d73106f5b78ef9eb7e0b067c34dc4db3fd72521f48d8d4beb7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681161"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119831825"
 ---
-# <a name="coareftimeoperator-method"></a>COARefTime. Operator = = (método)
+# <a name="coareftimeoperator-method"></a>Método COARefTime.operator==
 
 Este operador comprueba la igualdad entre dos tiempos de referencia.
 
@@ -42,16 +42,16 @@ BOOL operator==(
 
 <dl> <dt>
 
-*RT* \[ CLI\]
+*rt* \[ Ref\]
 </dt> <dd>
 
-Referencia al objeto **COARefTime** que se va a comparar.
+Referencia al **objeto COARefTime** que se comparará.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si los dos objetos son iguales. De lo contrario, devuelve **false**.
+Devuelve **TRUE** si los dos objetos son iguales. De lo contrario, **devuelve FALSE**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Devuelve **true** si los dos objetos son iguales. De lo contrario, devuelve **fa
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Devuelve **true** si los dos objetos son iguales. De lo contrario, devuelve **fa
 
 <dl> <dt>
 
-[**Clase COARefTime**](coareftime.md)
+[**COARefTime (clase)**](coareftime.md)
 </dt> </dl>
 
  

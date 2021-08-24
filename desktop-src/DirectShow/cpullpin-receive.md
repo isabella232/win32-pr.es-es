@@ -1,7 +1,7 @@
 ---
-description: Se llama al método Receive cuando el objeto recibe un ejemplo multimedia del terminal de salida. La clase derivada debe implementar este método.
+description: Se llama al método Receive cuando el objeto recibe un ejemplo multimedia del pin de salida. La clase derivada debe implementar este método.
 ms.assetid: ef45388b-b038-4838-b76b-dbbdc5388495
-title: Método CPullPin. Receive (Pullpin. h)
+title: Método CPullPin.Receive (Pullpin.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3a651822378b6a3c0754ecbd5ace4a5e464f014f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fdf38c9c873dd8d95ae60341fc2f7dba02abff1f8b34fd89d0d1f720dc59b55f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119831545"
 ---
-# <a name="cpullpinreceive-method"></a>CPullPin. Receive (método)
+# <a name="cpullpinreceive-method"></a>Método CPullPin.Receive
 
-`Receive`Se llama al método cuando el objeto recibe un ejemplo multimedia del terminal de salida. La clase derivada debe implementar este método.
+Se `Receive` llama al método cuando el objeto recibe un ejemplo multimedia del pin de salida. La clase derivada debe implementar este método.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,23 +45,23 @@ virtual HRESULT Receive(
 *pSample* 
 </dt> <dd>
 
-Puntero a la interfaz [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) del ejemplo multimedia.
+Puntero a la [**interfaz IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) del ejemplo multimedia.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Si se devuelve un valor distinto de S \_ OK, se detendrá el subproceso de extracción de datos.
+Devuelve un **valor HRESULT.** Si se devuelve un valor distinto de S \_ OK, se detendrá el subproceso de extracción de datos.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se llama a este método siempre que llega un nuevo ejemplo del código PIN de salida. Escriba este método de la misma manera que el método [**IMemInputPin:: Receive**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receive) .
+Se llama a este método cada vez que llega un nuevo ejemplo desde el pin de salida. Escriba este método de la misma manera que el [**método IMemInputPin::Receive.**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receive)
 
-Las marcas de tiempo del ejemplo especifican los desplazamientos de bytes con respecto a la posición inicial original que se especificó en el método [**CPullPin:: Seek**](cpullpin-seek.md) .
+Las marcas de tiempo del ejemplo especifican los desplazamientos de bytes, en relación con la posición inicial original que se especificó en el método [**CPullPin::Seek.**](cpullpin-seek.md)
 
-La posición inicial se redondea hacia abajo hasta el límite de alineación más cercano y la posición de detención se redondea al límite de alineación más cercano. Además, si la posición de detención supera la duración total, se usa la duración en su lugar.
+La posición inicial se redondea hacia abajo hasta el límite de alineación más cercano y la posición de detenerse se redondea al límite de alineación más cercano. Además, si la posición de detenerse supera la duración total, se usa la duración en su lugar.
 
-Todas las marcas de tiempo se proporcionan como un desplazamiento de bytes multiplicado por 10 millones, definidas como unidades de constantes. Por lo tanto, teóricamente un segundo es un byte. Para buscar los desplazamientos de bytes reales, llame a [**IMediaSample:: getTime**](/windows/desktop/api/Strmif/nf-strmif-imediasample-gettime) y divida los resultados por unidades.
+Todas las marcas de tiempo se dan como un desplazamiento de bytes multiplicado por 10 000 000, definido como la constante UNITS. Por lo tanto, no obstante, un segundo es un byte. Para buscar los desplazamientos de bytes reales, llame [**a IMediaSample::GetTime**](/windows/desktop/api/Strmif/nf-strmif-imediasample-gettime) y divida los resultados por UNITS.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -69,8 +69,8 @@ Todas las marcas de tiempo se proporcionan como un desplazamiento de bytes multi
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Pullpin. h</dt> </dl>                                                                                                       |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Pullpin.h</dt> </dl>                                                                                                       |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -78,7 +78,7 @@ Todas las marcas de tiempo se proporcionan como un desplazamiento de bytes multi
 
 <dl> <dt>
 
-[**Clase CPullPin**](cpullpin.md)
+[**CPullPin (clase)**](cpullpin.md)
 </dt> </dl>
 
  

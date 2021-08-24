@@ -1,26 +1,26 @@
 ---
-description: Espacio universal para las transformaciones Page-Space
+description: Espacio mundial para Page-Space transformaciones
 ms.assetid: 5563bc5f-8150-4ec7-a60c-d46ee6bf35cd
-title: Espacio universal para las transformaciones Page-Space
+title: Espacio mundial para Page-Space transformaciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ea851e7f498847bb9c4deb91ebb0a79de1196eb1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 854ba7c666e6aadc1e471ee431e9cfc84650fd22852a1b802daa52f43873bfb5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104997637"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119727295"
 ---
-# <a name="world-space-to-page-space-transformations"></a>Espacio universal para las transformaciones Page-Space
+# <a name="world-space-to-page-space-transformations"></a>Espacio mundial para Page-Space transformaciones
 
-Las transformaciones de espacio mundial a espacio de página admiten la traducción y el escalado. Además, admiten capacidades de rotación, recorte y reflexión. En las secciones siguientes se describen estas transformaciones, se ilustran sus efectos y se proporcionan los algoritmos que se usan para lograrlos.
+Las transformaciones de espacio mundial a espacio de página admiten la traducción y el escalado. Además, admiten funcionalidades de rotación, cizalla y reflexión. En las secciones siguientes se describen estas transformaciones, se ilustran sus efectos y se proporcionan los algoritmos que se usan para lograrlas.
 
 -   [Traducción](translation.md)
 -   [Escalado](scaling.md)
 -   [Rotación](rotation.md)
--   [Sesgo](shear.md)
+-   [Esquileo](shear.md)
 -   [Reflexión](reflection.md)
--   [Transformaciones de espacio de página universal combinadas](combined-world-to-page-space-transformations.md)
+-   [Transformaciones combinadas de espacio de mundo a página](combined-world-to-page-space-transformations.md)
 
  
 

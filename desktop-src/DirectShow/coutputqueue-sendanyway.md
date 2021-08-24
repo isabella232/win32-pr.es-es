@@ -1,7 +1,7 @@
 ---
-description: El método SendAnyway entrega cualquier ejemplo pendiente.
+description: El método SendAnyway entrega los ejemplos pendientes.
 ms.assetid: b4e3a0c6-0f72-4a00-963e-65ceed265f01
-title: Método COutputQueue. SendAnyway (Outputq. h)
+title: Método COutputQueue.SendAnyway (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a6fa5495371e020310e2367aea7e7bed9ef113f2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4aed3cdd37c50f20b48922c8c711266a111680506813ab4572800abbca971343
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105678972"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119831765"
 ---
-# <a name="coutputqueuesendanyway-method"></a>COutputQueue. SendAnyway, método
+# <a name="coutputqueuesendanyway-method"></a>Método COutputQueue.SendAnyway
 
-El `SendAnyway` método entrega cualquier ejemplo pendiente.
+El `SendAnyway` método entrega los ejemplos pendientes.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,9 +44,9 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si la variable miembro [**COutputQueue:: m \_ BBatchExact**](coutputqueue-m-bbatchexact.md) es **true**, el objeto rellena la matriz [**COutputQueue:: m \_ ppSamples**](coutputqueue-m-ppsamples.md) antes de entregar un lote de muestras. Llame a este método para proporcionar un lote parcial. Por ejemplo, el método [**COutputQueue:: EOS**](coutputqueue-eos.md) llama `SendAnyway` a para serializar los mensajes de fin de secuencia.
+Si la variable miembro [**COutputQueue::m \_ bBatchExact**](coutputqueue-m-bbatchexact.md) es **TRUE,** el objeto rellena la matriz [**COutputQueue::m \_ ppSamples**](coutputqueue-m-ppsamples.md) antes de entregar un lote de ejemplos. Llame a este método para entregar un lote parcial. Por ejemplo, el [**método COutputQueue::EOS**](coutputqueue-eos.md) llama a para serializar los `SendAnyway` mensajes de fin de secuencia.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Si la variable miembro [**COutputQueue:: m \_ BBatchExact**](coutputqueue-m-bbat
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Outputq. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Outputq.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Si la variable miembro [**COutputQueue:: m \_ BBatchExact**](coutputqueue-m-bbat
 
 <dl> <dt>
 
-[**Clase COutputQueue**](coutputqueue.md)
+[**COutputQueue (clase)**](coutputqueue.md)
 </dt> </dl>
 
  

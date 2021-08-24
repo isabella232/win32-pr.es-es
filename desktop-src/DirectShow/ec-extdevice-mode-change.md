@@ -1,17 +1,17 @@
 ---
-description: 'EC_EXTDEVICE_MODE_CHANGE: no compatible.'
+description: 'EC_EXTDEVICE_MODE_CHANGE: no se admite.'
 ms.assetid: d5f7da6a-f559-4ad3-af1d-3e6a8edb9b9b
 title: EC_EXTDEVICE_MODE_CHANGE (Evcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b00a9aa0083911531b65dc445d996e6ccd4aeabd
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 477f14bf5bfd17390cc47b054a643cc92aa656a531a29e5a0f8901f2ca8ed114
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119792635"
 ---
-# <a name="ec_extdevice_mode_change"></a>CAMBIO \_ DEL MODO EXTDEVICE DE \_ \_ EC
+# <a name="ec_extdevice_mode_change"></a>CAMBIO \_ DEL MODO EXTDEVICE \_ \_ EC
 
 No compatible.
 
@@ -25,7 +25,7 @@ No compatible.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

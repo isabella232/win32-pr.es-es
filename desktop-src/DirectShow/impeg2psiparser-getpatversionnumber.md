@@ -1,5 +1,5 @@
 ---
-description: 'Método IMpeg2PsiParser::GetPatVersionNumber: la implementación de este método se proporciona como código de ejemplo con el SDK de DirectShow. No es una API de DirectShow compatible.'
+description: 'Método IMpeg2PsiParser::GetPatVersionNumber: la implementación de este método se proporciona como código de ejemplo con DirectShow SDK. No es una API de DirectShow compatible.'
 ms.assetid: 2f5ad9bf-3d70-491a-ab45-15cd922a02d4
 title: IMpeg2PsiParser::GetPatVersionNumber (método)
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 978da4c7076bcf8ffe91bc2b9a4b2077d9d3d48a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ffd03bea09fb9041b91bb214287442eb59a7101be7a8841e0d38e28bcdaf3ecb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108089153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119767365"
 ---
 # <a name="impeg2psiparsergetpatversionnumber-method"></a>IMpeg2PsiParser::GetPatVersionNumber (método)
 
-La implementación de este método se proporciona como código de ejemplo con el SDK de DirectShow. No es una API de DirectShow compatible.
+La implementación de este método se proporciona como código de ejemplo con DirectShow SDK. No es una API de DirectShow compatible.
 
 El `GetPatVersionNumber` método recupera el campo de número de versión del \_ PAT. Una secuencia de transporte contiene como máximo un PAT. El número de versión se incrementa cada vez que cambia la información de la tabla.
 
@@ -61,7 +61,7 @@ El método devuelve un **valor HRESULT.** Los valores posibles incluyen, entre o
 
  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

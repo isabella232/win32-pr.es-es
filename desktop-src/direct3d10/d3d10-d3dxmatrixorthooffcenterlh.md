@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 2eb10963372519827eb544371ebb0df04df2e178
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4396f060d33efef454e87d8594c2b4ca29e46cbcbc08151cacaa76a7a4965735
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109143"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119852855"
 ---
 # <a name="d3dxmatrixorthooffcenterlh-function-d3dx10mathh"></a>Función D3DXMatrixOrthoOffCenterLH (D3DX10Math.h)
 
-Crea una matriz de proyección ortográfica a la izquierda personalizada.
+Crea una matriz de proyección ortográfica personalizada y a la izquierda.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,11 +60,11 @@ Puntero al [**D3DXMATRIX resultante.**](d3d10-d3dxmatrix.md)
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor X mínimo del volumen de vista.
+Valor x mínimo del volumen de vista.
 
 </dd> <dt>
 
-*r* \[ in\]
+*r* \[ en\]
 </dt> <dd>
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
@@ -73,7 +73,7 @@ Valor x máximo del volumen de vista.
 
 </dd> <dt>
 
-*b* \[ en\]
+*b* \[ in\]
 </dt> <dd>
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
@@ -154,7 +154,7 @@ Esta función usa la fórmula siguiente para calcular la matriz devuelta.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

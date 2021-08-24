@@ -1,23 +1,23 @@
 ---
-description: NTSC (Estados Unidos)
+description: HAN (Estados Unidos)
 ms.assetid: 371f91b9-d60b-477e-8f8c-a7fb01121aed
-title: NTSC (Estados Unidos)
+title: HAN (Estados Unidos)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ae84c864ec1b22f375ceb7e8059edbcec815df7
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: fa44b17d571df33405b9d0e4418c531d017329a6e15a39fbc3d558f4b2873225
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104494314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119830966"
 ---
-# <a name="ntsc-united-states"></a>NTSC (Estados Unidos)
+# <a name="ntsc-united-states"></a>HAN (Estados Unidos)
 
-Para obtener una explicación de las tablas siguientes, vea [tablas y asignaciones](tables-and-assignments.md).
+Para obtener una explicación de las tablas siguientes, vea [Tablas y asignaciones.](tables-and-assignments.md)
 
-Las tablas NTSC son adecuadas para cualquier configuración regional mediante las líneas de la línea de canales estándar NTSC. Tanto la difusión como los cables están normalizados y son estables. Además, los índices de frecuencia son adecuados para su uso como números de canal.
+Las tablas NTES son adecuadas para cualquier configuración regional mediante las líneas de canal estándar de NTES. Las líneas de difusión y cable están estandarizadas y estables. Además, los índices de frecuencia son adecuados para su uso como números de canal.
 
-### <a name="ntsc-broadcast-assignments"></a>Asignaciones de difusión NTSC
+### <a name="ntsc-broadcast-assignments"></a>Asignaciones de difusión de BROADCAST
 
 
 ```C++
@@ -99,7 +99,7 @@ Las tablas NTSC son adecuadas para cualquier configuración regional mediante la
 
 
 
-### <a name="ntsc-cable-assignments"></a>Asignaciones de cable NTSC
+### <a name="ntsc-cable-assignments"></a>Asignaciones de cable NTES
 
 ``` syntax
         1L,             // Lowest channel
@@ -271,7 +271,7 @@ Las tablas NTSC son adecuadas para cualquier configuración regional mediante la
 
 <dl> <dt>
 
-[Ajuste de TV analógica internacional](international-analog-tv-tuning.md)
+[Ajuste internacional de televisión análoga](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

@@ -4,18 +4,18 @@ ms.assetid: 553b0bc8-1bd8-4282-9260-cdc5f2b8788d
 title: Combinación alfa (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cd79c622778e17c5acb9b17d52b6d5db278b1508
-ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
+ms.openlocfilehash: 081c194b9eae85dca5599f2bf9f779d1cd896c8a37641df5105bb049b4a5bc22
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112262007"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119751585"
 ---
 # <a name="alpha-blending-direct3d-9"></a>Combinación alfa (Direct3D 9)
 
 La combinación alfa se usa para mostrar una imagen que tiene píxeles transparentes o semitransparentes. Además de un canal de color rojo, verde y azul, cada píxel de un mapa de bits alfa tiene un componente de transparencia conocido como su canal alfa. El canal alfa normalmente contiene tantos bits como un canal de color. Por ejemplo, un canal alfa de 8 bits puede representar 256 niveles de transparencia, de 0 (el píxel completo es transparente) a 255 (el píxel completo es opaco). En la lista siguiente se muestran algunos efectos especiales que puede crear mediante la combinación alfa.
 
-El color se puede definir con o sin valores alfa. Color sin alfa es color RGB con alfa se almacena como ARGB. Los datos de vértice, los datos de material y los datos de textura se pueden usar para proporcionar transparencia al objeto. El búfer de fotogramas también se puede usar para generar efectos de transparencia.
+El color se puede definir con o sin valores alfa. Color sin alfa es color RGB con alfa se almacena como ARGB. Los datos de vértices, los datos de material y los datos de textura se pueden usar para proporcionar transparencia al objeto. El búfer de fotogramas también se puede usar para generar efectos de transparencia.
 
 -   [Vértice alfa (Direct3D 9)](vertex-alpha.md)
 -   [Material Alfa (Direct3D 9)](material-alpha.md)

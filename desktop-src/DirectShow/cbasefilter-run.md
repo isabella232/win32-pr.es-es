@@ -1,7 +1,7 @@
 ---
-description: 'El método Run ejecuta el filtro. Este método implementa el método IMediaFilter:: Run.'
+description: El método Run ejecuta el filtro. Este método implementa el método IMediaFilter::Run.
 ms.assetid: fab2cef7-cad1-4933-92a4-5f41cd947c2f
-title: Método CBaseFilter. Run (Amfilter. h)
+title: Método CBaseFilter.Run (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0555733f53b4870a43dbcbf36c69061db19490a0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6259e6ce00b0a2f93e0b71d6b44d1c6ed4aa65eaadca21ed0a78f1d16d98a42b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660435"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119793285"
 ---
-# <a name="cbasefilterrun-method"></a>CBaseFilter. Run (método)
+# <a name="cbasefilterrun-method"></a>CBaseFilter.Run (método)
 
-El `Run` método ejecuta el filtro. Este método implementa el método [**IMediaFilter:: Run**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-run) .
+El `Run` método ejecuta el filtro. Este método implementa el [**método IMediaFilter::Run.**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-run)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,13 +51,13 @@ Hora de referencia correspondiente al tiempo de secuencia 0.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto si es correcto o un valor **HRESULT** que indica la causa del error.
+Devuelve S \_ OK si se realiza correctamente o un valor **HRESULT** que indica la causa del error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si se detiene el filtro, este método pausa el filtro llamando al método [**CBaseFilter::P ause**](cbasefilter-pause.md) . A continuación, llama al método [**CBasePin:: Run**](cbasepin-run.md) en cada una de las clavijas conectadas del filtro. Por último, establece la variable miembro de [**\_ Estado CBaseFilter:: m**](cbasefilter-m-state.md) en el estado en \_ ejecución.
+Si se detiene el filtro, este método pausa el filtro llamando al método [**CBaseFilter::P ause.**](cbasefilter-pause.md) A continuación, llama [**al método CBasePin::Run**](cbasepin-run.md) en cada uno de los pines conectados del filtro. Por último, establece la variable [**miembro de estado CBaseFilter::m \_**](cbasefilter-m-state.md) en State \_ Running.
 
-El tiempo de secuencia se calcula como el tiempo de referencia actual menos *tStart*. Un ejemplo multimedia con una marca de tiempo de cero se debe representar a la hora *tStart*.
+El tiempo de secuencia se calcula como el tiempo de referencia actual menos *tStart.* Un ejemplo multimedia con una marca de tiempo de cero debe representarse en el *momento tStart*.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ El tiempo de secuencia se calcula como el tiempo de referencia actual menos *tSt
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -74,7 +74,7 @@ El tiempo de secuencia se calcula como el tiempo de referencia actual menos *tSt
 
 <dl> <dt>
 
-[**Clase CBaseFilter**](cbasefilter.md)
+[**CBaseFilter (clase)**](cbasefilter.md)
 </dt> </dl>
 
  

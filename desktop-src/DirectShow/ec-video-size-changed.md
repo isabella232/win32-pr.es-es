@@ -1,19 +1,19 @@
 ---
-description: El tamaño de vídeo nativo ha cambiado.
+description: El tamaño del vídeo nativo ha cambiado.
 ms.assetid: 276f37b3-f981-4a01-bb37-1ee77248668f
-title: EC_VIDEO_SIZE_CHANGED (DShow. h)
+title: EC_VIDEO_SIZE_CHANGED (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b29a70ceab583d8dfc51b417fb701a2988b2e96f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: da9fc430b8d36a61b90f567f082c7224765a702549d050f11555c8e55c387a86
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119792385"
 ---
-# <a name="ec_video_size_changed"></a>tamaño de vídeo de EC \_ \_ \_ cambiado
+# <a name="ec_video_size_changed"></a>CAMBIO \_ EN EL TAMAÑO DEL VÍDEO DE \_ \_ EC
 
-El tamaño de vídeo nativo ha cambiado.
+El tamaño del vídeo nativo ha cambiado.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -22,7 +22,7 @@ El tamaño de vídeo nativo ha cambiado.
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-(**DWORD**) Palabra de orden inferior especifica el nuevo ancho, en píxeles. Palabra de orden superior especifica el nuevo alto, en píxeles.
+(**DWORD**) WORD de orden bajo especifica el nuevo ancho, en píxeles; WORD de orden superior especifica el nuevo alto, en píxeles.
 
 </dd> <dt>
 
@@ -37,11 +37,11 @@ Cero.
 
 Ninguno.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los representadores de vídeo pueden enviar este evento si detectan un cambio en el tamaño de vídeo nativo.
+Los representadores de vídeo pueden enviar este evento si detectan un cambio en el tamaño del vídeo nativo.
 
-El [representador de mezcla de vídeo 7](video-mixing-renderer-filter-7.md) (VMR-7) y el [representador de combinación de vídeo 9](video-mixing-renderer-filter-9.md) (VMR-9) envían este evento en modo de ventana, pero no en modo sin ventanas ni en modo sin procesar. Para obtener más información sobre el modo de ventana en VMR, consulte [representación de vídeo](video-rendering.md).
+El representador de mezcla de vídeo [7](video-mixing-renderer-filter-7.md) (VMR-7) y el representador de mezcla de vídeo [9](video-mixing-renderer-filter-9.md) (VMR-9) envían este evento en modo de ventana, pero no en modo sin ventanas ni en modo sin representación. Para obtener más información sobre el modo de ventana en VMR, vea [Video Rendering](video-rendering.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,7 +49,7 @@ El [representador de mezcla de vídeo 7](video-mixing-renderer-filter-7.md) (VMR
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>DShow. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

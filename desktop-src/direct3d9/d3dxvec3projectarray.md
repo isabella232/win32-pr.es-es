@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXVec3ProjectArray (D3dx9math.h): proyecta una matriz (x, y, z, 0) desde el espacio del objeto en el espacio de la pantalla.'
+description: 'Función D3DXVec3ProjectArray (D3dx9math.h): proyecta una matriz (x, y, z, 0) desde el espacio del objeto al espacio de pantalla.'
 ms.assetid: cf022741-0bae-4c22-872f-bd94c3721aff
 title: Función D3DXVec3ProjectArray (D3dx9math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 10f0e19ad5bdbff59d7386223c88ed867e8d0d88
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7ffc42934b9c341f4d07ef48a39470158155b4dfbcd352ffbc5e0ea188785752
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097813"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119749395"
 ---
 # <a name="d3dxvec3projectarray-function-d3dx9mathh"></a>Función D3DXVec3ProjectArray (D3dx9math.h)
 
-Proyecta una matriz (x, y, z, 0) desde el espacio del objeto al espacio de la pantalla.
+Proyecta una matriz (x, y, z, 0) desde el espacio del objeto al espacio de pantalla.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,7 +62,7 @@ Puntero a la [**estructura D3DXVECTOR3**](d3dxvector3.md) que es el resultado de
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Paso entre vectores en el flujo de datos de salida.
+Pasos entre vectores en el flujo de datos de salida.
 
 </dd> <dt>
 
@@ -80,7 +80,7 @@ Puntero a la estructura [**D3DXVECTOR3 de**](d3dxvector3.md) origen.
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Paso entre vectores en el flujo de datos de entrada.
+Pasos entre vectores en el flujo de datos de entrada.
 
 </dd> <dt>
 
@@ -133,7 +133,7 @@ Número de elementos de la matriz.
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Puntero a una [**estructura D3DXVECTOR3**](d3dxvector3.md) que es la matriz proyectada desde el espacio del objeto al espacio de pantalla.
+Puntero a una [**estructura D3DXVECTOR3**](d3dxvector3.md) que es la matriz proyectada desde el espacio de objetos al espacio de pantalla.
 
 ## <a name="remarks"></a>Comentarios
 
@@ -150,7 +150,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el *parámetr
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

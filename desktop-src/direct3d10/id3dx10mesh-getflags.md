@@ -1,7 +1,7 @@
 ---
-description: Acceder a las marcas de creación de la malla.
+description: Acceda a las marcas de creación de la malla.
 ms.assetid: df21aa5d-d8c4-43ee-8b22-ca1ee75ecf64
-title: 'ID3DX10Mesh:: GetFlags (método) (D3DX10. h)'
+title: Método ID3DX10Mesh::GetFlags (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: ac81d0f7371bd53bb05ce606f62c7ac44fb31a38
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4746f70044ce527f1a7b9290c047d495f615b076c9a5d3cd6005e335ca2fa853
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707893"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119752955"
 ---
-# <a name="id3dx10meshgetflags-method"></a>ID3DX10Mesh:: GetFlags (método)
+# <a name="id3dx10meshgetflags-method"></a>Método ID3DX10Mesh::GetFlags
 
-Acceder a las marcas de creación de la malla.
+Acceda a las marcas de creación de la malla.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,9 +40,9 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Las marcas de creación que se pasan al parámetro *Options* de [**D3DX10CreateMesh**](d3d10-d3dx10createmesh.md) cuando se creó la malla. Consulte [**D3DX10 \_ Mesh**](d3dx10-mesh.md).
+Marcas de creación pasadas al parámetro *options* de [**D3DX10CreateMesh**](d3d10-d3dx10createmesh.md) cuando se creó la malla. Vea [**D3DX10 \_ MESH.**](d3dx10-mesh.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Las marcas de creación que se pasan al parámetro *Options* de [**D3DX10CreateM
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -62,7 +62,7 @@ Las marcas de creación que se pasan al parámetro *Options* de [**D3DX10CreateM
 [ID3DX10Mesh](id3dx10mesh.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

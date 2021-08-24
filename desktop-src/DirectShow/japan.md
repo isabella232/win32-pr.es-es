@@ -4,16 +4,16 @@ ms.assetid: 4ce30b40-2d5d-449b-9314-45eabad16cce
 title: Japón
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e4c22f880802c2242865633c4d23aaa0ae43598
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: f058443498dba2d0ba2f796f2e687182d34d6255ddc6e88daa97d22b298512a5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103805648"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119766985"
 ---
 # <a name="japan"></a>Japón
 
-Para obtener una explicación de las tablas siguientes, vea [tablas y asignaciones](tables-and-assignments.md).
+Para obtener una explicación de las tablas siguientes, vea [Tablas y asignaciones.](tables-and-assignments.md)
 
 Los índices de frecuencia de las tablas de Japón son adecuados para su uso como números de canal.
 
@@ -216,7 +216,7 @@ Los índices de frecuencia de las tablas de Japón son adecuados para su uso com
 
 ## <a name="revised-channel-assignments"></a>Asignaciones de canal revisadas
 
-En la tabla siguiente se enumeran las asignaciones de canal de cable que requieren Windows XP Media Center Edition 1,1 y versiones posteriores.
+En la tabla siguiente se enumeran las asignaciones de canales de cable que Windows XP Media Center Edition 1.1 y versiones posteriores.
 
 Los índices de frecuencia de esta tabla de Japón son adecuados para su uso como números de canal.
 
@@ -298,7 +298,7 @@ Los índices de frecuencia de esta tabla de Japón son adecuados para su uso com
 
 <dl> <dt>
 
-[Ajuste de TV analógica internacional](international-analog-tv-tuning.md)
+[Ajuste internacional de televisión análoga](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

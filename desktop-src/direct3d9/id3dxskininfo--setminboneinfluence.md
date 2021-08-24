@@ -1,7 +1,7 @@
 ---
-description: Establece la influencia mínima del hueso. Los valores de influencia más pequeños se omiten.
+description: Establece la influencia mínima de los influjos. Se omiten los valores de influencia inferiores a este.
 ms.assetid: 9af19c9e-bb6e-4f93-973f-5c38f88eea3d
-title: 'ID3DXSkinInfo:: SetMinBoneInfluence (método) (D3DX9Mesh. h)'
+title: Método ID3DXSkinInfo::SetMinIonalInfluence (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 03e3aeeed31a58231644784ba5070bc9422f7820
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: abe9f1d7f9c54b9c3086160b974e2bc7dc659eb6dae3ff647f059627ff3ef145
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119747485"
 ---
-# <a name="id3dxskininfosetminboneinfluence-method"></a>ID3DXSkinInfo:: SetMinBoneInfluence (método)
+# <a name="id3dxskininfosetminboneinfluence-method"></a>Método ID3DXSkinInfo::SetMinIonalInfluence
 
-Establece la influencia mínima del hueso. Los valores de influencia más pequeños se omiten.
+Establece la influencia mínima de los influjos. Se omiten los valores de influencia inferiores a este.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,12 +40,12 @@ HRESULT SetMinBoneInfluence(
 
 <dl> <dt>
 
-*MinInfl* \[ de\]
+*MinInfl* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor de influencia mínimo. Los valores de influencia más pequeños se omiten.
+Valor de influencia mínimo. Se omiten los valores de influencia inferiores a este.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Valor de influencia mínimo. Los valores de influencia más pequeños se omiten.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -73,7 +73,7 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 [ID3DXSkinInfo](id3dxskininfo.md)
 </dt> <dt>
 
-[**ID3DXSkinInfo::GetMinBoneInfluence**](id3dxskininfo--getminboneinfluence.md)
+[**ID3DXSkinInfo::GetMinIonalInfluence**](id3dxskininfo--getminboneinfluence.md)
 </dt> </dl>
 
  

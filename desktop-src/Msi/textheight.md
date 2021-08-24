@@ -1,27 +1,27 @@
 ---
-description: El instalador establece la propiedad TextHeight en el alto (Ascent + descenso) de los caracteres en unidades lógicas.
+description: El instalador establece la propiedad TextHeight en el alto (subida y descenso) de caracteres en unidades lógicas.
 ms.assetid: 7714bf09-5f89-4e13-9eda-4cae9f6c2e44
-title: TextHeight (propiedad)
+title: Propiedad TextHeight
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d0f1675f0134db4a31ae1adef18c5e7518258bc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 52488f7ffa9685ffd655d5d201ec4f6691aa354aa47f6e5f52f63a6432c93bbb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119810765"
 ---
-# <a name="textheight-property"></a>TextHeight (propiedad)
+# <a name="textheight-property"></a>Propiedad TextHeight
 
-El instalador establece la propiedad **TextHeight** en el alto (Ascent + descenso) de los caracteres en unidades lógicas.
+El instalador establece la **propiedad TextHeight** en el alto (subida y descenso) de caracteres en unidades lógicas.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP. Consulte los [requisitos de Run-Time de Windows Installer](windows-installer-portal.md) para obtener información sobre la Service Pack mínima de Windows que requiere una versión Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una versión Windows Installer.<br/> |
 
 
 

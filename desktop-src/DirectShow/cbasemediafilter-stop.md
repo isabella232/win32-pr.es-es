@@ -1,7 +1,7 @@
 ---
-description: 'El método Stop detiene el objeto. Este método implementa el método IMediaFilter:: stop.'
+description: El método Stop detiene el objeto . Este método implementa el método IMediaFilter::Stop.
 ms.assetid: 9282d90a-932c-4ba0-84f1-1de2c125bfbd
-title: Método CBaseMediaFilter. STOP (Amfilter. h)
+title: Método CBaseMediaFilter.Stop (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 22bb45234c8be832f8ea30ed70b50c8f4919b7e9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: effe2df53508cd9c1f6523356eb7296458208c3ee0e61c1dd12c94bd87b6ad31
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660201"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119793235"
 ---
-# <a name="cbasemediafilterstop-method"></a>CBaseMediaFilter. STOP (método)
+# <a name="cbasemediafilterstop-method"></a>Método CBaseMediaFilter.Stop
 
-El `Stop` método detiene el objeto. Este método implementa el método [**IMediaFilter:: Stop**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-stop) .
+El `Stop` método detiene el objeto . Este método implementa el [**método IMediaFilter::Stop.**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-stop)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En la clase base, este método establece la variable miembro de [**\_ Estado CBaseMediaFilter:: m**](cbasemediafilter-m-state.md) en estado \_ detenido, pero no hace nada más.
+En la clase base, este método establece la variable miembro [**CBaseMediaFilter::m \_ State**](cbasemediafilter-m-state.md) en State Stopped, pero \_ no hace nada más.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ En la clase base, este método establece la variable miembro de [**\_ Estado CBa
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ En la clase base, este método establece la variable miembro de [**\_ Estado CBa
 
 <dl> <dt>
 
-[**Clase CBaseMediaFilter**](cbasemediafilter.md)
+[**CBaseMediaFilter (clase)**](cbasemediafilter.md)
 </dt> </dl>
 
  

@@ -1,8 +1,8 @@
 ---
-description: El método pausar clase WMI suspende un trabajo de impresión.
+description: El método de clase WMI Pause suspende un trabajo de impresión.
 ms.assetid: f1e3906f-1ca2-45c0-9863-5762e4e2119a
 ms.tgt_platform: multiple
-title: Método PAUSE de la clase Win32_PrintJob
+title: Método Pause de la Win32_PrintJob clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 785ba54b56c65fd298b6ef763ec2d7eca0d8f61a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1448e993a88f2f5ce800de041779fb66f383c8973143b90200622758511ef337
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907540"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119752825"
 ---
-# <a name="pause-method-of-the-win32_printjob-class"></a>Método PAUSE de la \_ clase PrintJob de Win32
+# <a name="pause-method-of-the-win32_printjob-class"></a>Método Pause de la clase PrintJob de Win32 \_
 
-El método **pausar** [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) suspende un trabajo de impresión.
+El **método de** clase WMI [Pause](/windows/desktop/WmiSdk/retrieving-a-class) suspende un trabajo de impresión.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,9 +62,9 @@ Acceso denegado
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código de VBScript [pausar todas las impresoras con colas de impresión vacías](https://Gallery.TechNet.Microsoft.Com/cf2b6b61-8ffe-444b-857b-e3a205bc693c) se usan todas las impresoras que no tienen trabajos de impresión pendientes.
+El ejemplo de código de VBScript Pausar todas las [impresoras](https://Gallery.TechNet.Microsoft.Com/cf2b6b61-8ffe-444b-857b-e3a205bc693c) con colas de impresión vacías pausa las impresoras que no tienen trabajos de impresión pendientes.
 
-El siguiente ejemplo de código de VBScript pone en pausa todos los trabajos de impresión en un servidor de impresión.
+El siguiente ejemplo de código de VBScript pausa todos los trabajos de impresión en un servidor de impresión.
 
 
 ```VB
@@ -90,8 +90,8 @@ Next
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                      |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                        |
-| MOF<br/>                      | <dl> <dt>Win32 \_ printer. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                        |
+| MOF<br/>                      | <dl> <dt>Win32 \_ Printer.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl>       |
 
 
@@ -100,7 +100,7 @@ Next
 
 <dl> <dt>
 
-[Clases de hardware de sistema del equipo](computer-system-hardware-classes.md)
+[Clases de hardware del sistema de equipo](computer-system-hardware-classes.md)
 </dt> <dt>
 
 [**PrintJob de Win32 \_**](win32-printjob.md)

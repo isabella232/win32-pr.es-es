@@ -1,7 +1,7 @@
 ---
 description: Evento que se usa para liberar el subproceso de streaming.
 ms.assetid: 612082ec-a5c9-4b20-abda-61432e839094
-title: 'Miembro CBaseRenderer:: m_ThreadSignal (Renbase. h)'
+title: CBaseRenderer::m_ThreadSignal miembro (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: eb8fc5f20a03fa48cc7c0d5b4bd1faaefe9a5646
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b8a0cf1190d1350b868e5254acc4fe80e48c9c6faf0de76d629b5a38494ba272
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671284"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119793195"
 ---
-# <a name="cbaserendererm_threadsignal-member"></a>Miembro ThreadSignal CBaseRenderer:: m \_
+# <a name="cbaserendererm_threadsignal-member"></a>Miembro ThreadSignal de CBaseRenderer::m \_
 
 Evento que se usa para liberar el subproceso de streaming.
 
@@ -42,8 +42,8 @@ CAMEvent m_ThreadSignal;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ CAMEvent m_ThreadSignal;
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  

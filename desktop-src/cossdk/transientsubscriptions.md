@@ -12,43 +12,43 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 6421cff326f4c33f0c77ae47d00e17c79c971443
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5053a4fd488ed38a637b4296f94caf20887f3ed924ae6d11b8f6a242669eccad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907308"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119853935"
 ---
 # <a name="transientsubscriptions-collection"></a>Colección TransientSubscriptions
 
 Contiene un objeto para cada suscripción transitoria. Las suscripciones transitorias se pueden crear sobre la marcha para ejecutar instancias de objeto y desaparecen cuando se destruye el objeto.
 
-Esta colección admite los métodos [**Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) y [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) del objeto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) .
+Esta colección admite los [**métodos Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) [**y Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) del [**objeto COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
 ## <a name="members"></a>Miembros
 
-La colección **TransientSubscriptions** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
+La **colección TransientSubscriptions** hereda de la [**interfaz IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
 
 ## <a name="related-collections"></a>Colecciones relacionadas
 
-Puede navegar desde esta colección hasta cualquiera de las siguientes colecciones:
+Puede navegar desde esta colección a cualquiera de las siguientes colecciones:
 
 -   [**ErrorInfo**](errorinfo.md)
--   [**PropertyInfo**](propertyinfo.md)
+-   [**Propertyinfo**](propertyinfo.md)
 -   [**RelatedCollectionInfo**](relatedcollectioninfo.md)
 -   [**TransientPublisherProperties**](transientpublisherproperties.md)
 -   [**TransientSubscriberProperties**](transientsubscriberproperties.md)
 
-Puede navegar a esta colección desde las colecciones siguientes:
+Puede navegar a esta colección desde las siguientes colecciones:
 
--   [**Raíces**](root.md)
+-   [**Raíz**](root.md)
 
 ## <a name="properties"></a>Propiedades
 
-El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las siguientes propiedades en la colección:
+El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las siguientes propiedades dentro de la colección:
 
 -   [Descripción](#description)
--   [Enabled](#enabled)
+-   [Habilitado](#enabled)
 -   [EventClassPartitionID](#eventclasspartitionid)
 -   [EventCLSID](#eventclsid)
 -   [FilterCriteria](#filtercriteria)
@@ -56,7 +56,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 -   [InterfaceID](#interfaceid)
 -   [MethodName](#methodname)
 -   [Nombre](#methodname)
--   [Perusuario](#peruser)
+-   [PerUser](#peruser)
 -   [PublisherID](#publisherid)
 -   [SubscriberInterface](#subscriberinterface)
 -   [SubscriberPartitionID](#subscriberpartitionid)
@@ -68,7 +68,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|-------------------------------------|
-| Descripción    | Una descripción de la suscripción. |
+| Descripción    | Descripción de la suscripción. |
 | Access         | ReadWrite                           |
 | Tipo           | String                              |
 | Predeterminado        | ""                                  |
@@ -87,7 +87,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 | Descripción    | Indica si la suscripción está habilitada actualmente. |
 | Access         | ReadWrite                                                |
 | Tipo           | Bool                                                     |
-| Valor predeterminado        | True                                                     |
+| Valor predeterminado        | Verdadero                                                     |
 | Sistema mínimo | Windows 2000                                             |
 
 
@@ -100,7 +100,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Al suscribirse a una clase de eventos, se usa para representar el GUID del identificador de la partición que contiene la clase de eventos. Al suscribirse a las clases de eventos, el suscriptor tiene la opción de suscribirse a una clase de eventos en la misma partición o en otra diferente. |
+| Descripción    | Al suscribirse a una clase de eventos, se usa para representar el GUID del identificador de partición que contiene la clase de evento. Al suscribirse a clases de eventos, el suscriptor tiene la opción de suscribirse a una clase de evento en la misma partición o en una partición diferente. |
 | Access         | ReadWrite                                                                                                                                                                                                                                          |
 | Tipo           | String                                                                                                                                                                                                                                             |
 | Predeterminado        | NULL                                                                                                                                                                                                                                               |
@@ -116,7 +116,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|----------------------------------------------------------------------------------------------|
-| Descripción    | El CLSID de la clase de evento. Puede indicar un EventCLSID o un PublisherID, pero no ambos. |
+| Descripción    | CLSID de la clase de eventos. Puede indicar un EventCLSID o publisherID, pero no ambos. |
 | Access         | WriteOnce                                                                                    |
 | Tipo           | String                                                                                       |
 | Predeterminado        | N/D                                                                                          |
@@ -132,7 +132,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|----------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Cadena que indica los criterios de filtro. Puede ser un CLSID para una clase [**PublisherFilter**](/windows/desktop/api/EventSys/nn-eventsys-ipublisherfilter) . |
+| Descripción    | Cadena que indica los criterios de filtro. Puede ser un CLSID para una [**clase PublisherFilter.**](/windows/desktop/api/EventSys/nn-eventsys-ipublisherfilter) |
 | Access         | ReadWrite                                                                                                            |
 | Tipo           | String                                                                                                               |
 | Predeterminado        | N/D                                                                                                                  |
@@ -142,13 +142,13 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
  
 
-### <a name="id"></a>id
+### <a name="id"></a>ID
 
 
 
 | Entrada | Value |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Identificador de la suscripción. Esta propiedad se devuelve cuando se llama al método de propiedad de [**clave**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) en un objeto de esta colección. |
+| Descripción    | Identificador de la suscripción. Esta propiedad se devuelve cuando se llama [**al método**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) de propiedad Key en un objeto de esta colección. |
 | Access         | WriteOnce                                                                                                                                                        |
 | Tipo           | String                                                                                                                                                           |
 | Predeterminado        | <Generated>                                                                                                                                                |
@@ -164,7 +164,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|----------------------------------|
-| Descripción    | IID de la interfaz suscrita a. |
+| Descripción    | IID de la interfaz a la que se ha suscrito. |
 | Access         | WriteOnce                        |
 | Tipo           | String                           |
 | Predeterminado        | N/D                              |
@@ -180,7 +180,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|----------------------------------------------|
-| Descripción    | Método de la interfaz a la que se suscribe. |
+| Descripción    | Método en la interfaz a la que se va a suscribir. |
 | Access         | ReadWrite                                    |
 | Tipo           | String                                       |
 | Predeterminado        | N/D                                          |
@@ -196,7 +196,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Nombre de la suscripción. Se quitan los espacios adicionales al principio y al final de la cadena. Esta propiedad se devuelve cuando se llama al método de la propiedad [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) en un objeto de esta colección. |
+| Descripción    | Nombre de la suscripción. Se quitan los espacios adicionales al principio y al final de la cadena. Esta propiedad se devuelve cuando se llama [**al método**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) de propiedad Name en un objeto de esta colección. |
 | Access         | ReadWrite                                                                                                                                                                                                                              |
 | Tipo           | String                                                                                                                                                                                                                                 |
 | Predeterminado        | "Nueva suscripción"                                                                                                                                                                                                                     |
@@ -206,13 +206,13 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
  
 
-### <a name="peruser"></a>Perusuario
+### <a name="peruser"></a>PerUser
 
 
 
 | Entrada | Value |
 |----------------|---------------------------------------------------------------------------------------------------------|
-| Descripción    | Indica si la suscripción se aplica solo a un usuario determinado, representado por la propiedad UserName. |
+| Descripción    | Indica si la suscripción solo se aplica a un usuario determinado, representado por la propiedad UserName. |
 | Access         | ReadWrite                                                                                               |
 | Tipo           | Bool                                                                                                    |
 | Valor predeterminado        | False                                                                                                   |
@@ -228,7 +228,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|-------------------------------------------------------------------------------------|
-| Descripción    | ID. del publicador. Puede indicar un EventCLSID o un PublisherID, pero no ambos. |
+| Descripción    | Identificador del publicador. Puede indicar un EventCLSID o publisherID, pero no ambos. |
 | Access         | WriteOnce                                                                           |
 | Tipo           | String                                                                              |
 | Predeterminado        | ""                                                                                  |
@@ -260,7 +260,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Al suscribirse a una clase de eventos en la misma partición, se usa para representar el GUID del ID. de partición del suscriptor. Al suscribirse a las clases de eventos, el suscriptor tiene la opción de suscribirse a una clase de eventos en la misma partición o en otra diferente. |
+| Descripción    | Al suscribirse a una clase de eventos en la misma partición, se usa para representar el GUID del identificador de partición del suscriptor. Al suscribirse a clases de eventos, el suscriptor tiene la opción de suscribirse a una clase de eventos en la misma partición o en una partición diferente. |
 | Access         | WriteOnce                                                                                                                                                                                                                                                       |
 | Tipo           | String                                                                                                                                                                                                                                                          |
 | Predeterminado        | <Generated>                                                                                                                                                                                                                                               |
@@ -276,7 +276,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|-------------------------------------------------------------------------|
-| Descripción    | Nombre del usuario al que se aplica la suscripción cuando peruser es true. |
+| Descripción    | Nombre del usuario al que se aplica la suscripción cuando PerUser es True. |
 | Access         | ReadWrite                                                               |
 | Tipo           | String                                                                  |
 | Predeterminado        | N/D                                                                     |

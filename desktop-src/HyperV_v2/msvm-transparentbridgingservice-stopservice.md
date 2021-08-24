@@ -1,5 +1,5 @@
 ---
-description: 'Método StopService de la Msvm_TransparentBridgingService clase : detiene el servicio.'
+description: 'Método StopService de la clase Msvm_TransparentBridgingService : detiene el servicio.'
 ms.assetid: ac6b8df2-e2f2-47df-8c1e-07460a15e8e2
 title: Método StopService de la Msvm_TransparentBridgingService clase
 ms.topic: reference
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 17bfea47a1bbd467e32e9e932587da8506276ee1
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1428a74b02df7774ff05cbfbc9a46de68b3211d58b5a69fc654b74c9c209c4e9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108111113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119746365"
 ---
-# <a name="stopservice-method-of-the-msvm_transparentbridgingservice-class"></a>Método StopService de la clase TransparentBridgingService de Msvm \_
+# <a name="stopservice-method-of-the-msvm_transparentbridgingservice-class"></a>Método StopService de la clase \_ Msvm TransparentBridgingService
 
 detiene el servicio.
 
@@ -53,7 +53,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -63,7 +63,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

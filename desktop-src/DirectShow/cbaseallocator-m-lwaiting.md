@@ -1,7 +1,7 @@
 ---
-description: Recuento de subprocesos en espera de ejemplos.
+description: Recuento de subprocesos que esperan ejemplos.
 ms.assetid: 0b383fbf-f3d4-4dcf-b33c-74b9595a3e11
-title: 'Miembro CBaseAllocator:: m_lWaiting (Amfilter. h)'
+title: CBaseAllocator::m_lWaiting miembro (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: eadf69088e1bcfa39e9f68b6ba570c1fc2d5b64c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 31261120e32bfcb06b4ea07c4a5044ddfd70ded38eebdbc70964f21302d9d5bd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671476"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119832745"
 ---
-# <a name="cbaseallocatorm_lwaiting-member"></a>Miembro lWaiting CBaseAllocator:: m \_
+# <a name="cbaseallocatorm_lwaiting-member"></a>Miembro CBaseAllocator::m \_ lWaiting
 
-Recuento de subprocesos en espera de ejemplos.
+Recuento de subprocesos que esperan ejemplos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ long m_lWaiting;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ long m_lWaiting;
 
 <dl> <dt>
 
-[**Clase CBaseAllocator**](cbaseallocator.md)
+[**CBaseAllocator (clase)**](cbaseallocator.md)
 </dt> </dl>
 
  

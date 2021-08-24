@@ -1,19 +1,19 @@
 ---
-description: Define un vector bidimensional que se usa para definir las coordenadas de textura de la malla (u, v).
+description: Define un vector bidimensional que se usa para definir las coordenadas de textura (u, v) de una malla.
 ms.assetid: 6e91f75b-1ca7-404a-96d8-135b73ac7d72
 title: Coords2d
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f728ce90803d9fd83adda2f834a3cd18827eb6f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8f9702b88b6a3b95d463986c499f3ce8f9afb06e932a2b03c0baca5784842d96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696118"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119751327"
 ---
 # <a name="coords2d"></a>Coords2d
 
-Define un vector bidimensional que se usa para definir las coordenadas de textura de la malla (u, v).
+Define un vector bidimensional que se usa para definir las coordenadas de textura (u, v) de una malla.
 
 ``` syntax
 template Coords2d
@@ -24,8 +24,8 @@ template Coords2d
 } 
 ```
 
--   valor de la coordenada u-u.
--   valor de la coordenada v-v.
+-   u : valor de coordenada u.
+-   v: valor de coordenada v.
 
 ## <a name="see-also"></a>Vea también
 

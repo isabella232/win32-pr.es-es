@@ -1,10 +1,10 @@
-- name: Optimización de entrega (DO)
+- name: Optimización de distribución (DO)
   href: delivery-optimization-portal.md
   items:
-    - name: Hacer referencia
+    - name: Referencia de DO
       href: do-reference.md
       items:
-        - name: REALIZAR enumeraciones
+        - name: Enumeraciones DO
           href: do-enumerations.md
           items:
             - name: BG_ERROR_CONTEXT
@@ -58,7 +58,7 @@
                   items:
                     - name: Método GetError
                       href: ibackgroundcopyerror-geterror-method.md
-                    - name: GetFile (método)
+                    - name: Método GetFile
                       href: ibackgroundcopyerror-getfile-method.md
             - name: IBackgroundCopyFile
               href: ibackgroundcopyfile.md
@@ -75,7 +75,7 @@
             - name: IBackgroundCopyFile2
               href: ibackgroundcopyfile2.md
               items:
-                - name: Métodos IBackgroundCopyFile2
+                - name: Métodos de IBackgroundCopyFile2
                   href: ibackgroundcopyfile2-methods.md
                   items:
                     - name: Método GetFileRanges
@@ -95,14 +95,14 @@
             - name: IBackgroundCopyJob
               href: ibackgroundcopyjob-.md
               items:
-                - name: Métodos IBackgroundCopyJob
+                - name: Métodos de IBackgroundCopyJob
                   href: ibackgroundcopyjob-methods.md
                   items:
                     - name: Método Cancel
                       href: ibackgroundcopyjob-cancel.md
-                    - name: Complete (método)
+                    - name: Método Complete
                       href: ibackgroundcopyjob-complete.md
-                    - name: Método Enumfiles (
+                    - name: Método EnumFiles
                       href: ibackgroundcopyjob-enumfiles.md
                     - name: GetDisplayName (método)
                       href: ibackgroundcopyjob-getdisplayname.md
@@ -116,7 +116,7 @@
                       href: ibackgroundcopyjob-getnotifyflags.md
                     - name: Método GetNotifyInterface
                       href: ibackgroundcopyjob-getnotifyinterface.md
-                    - name: Método GetPriority (
+                    - name: Método GetPriority
                       href: ibackgroundcopyjob-getpriority.md
                     - name: Método GetProgress
                       href: ibackgroundcopyjob-getprogress.md
@@ -134,14 +134,14 @@
                       href: ibackgroundcopyjob-setnotifyflags.md
                     - name: Método SetNotifyInterface
                       href: ibackgroundcopyjob-setnotifyinterface.md
-                    - name: SetPriority (método)
+                    - name: Método SetPriority
                       href: ibackgroundcopyjob-setpriority.md
                     - name: Método Suspend
                       href: ibackgroundcopyjob-suspend.md
             - name: IBackgroundCopyJob5
               href: ibackgroundcopyjob5.md
               items:
-                - name: Métodos IBackgroundCopyJob5
+                - name: Métodos de IBackgroundCopyJob5
                   href: ibackgroundcopyjob5-methods.md
                   items:
                     - name: Método GetProperty
@@ -151,7 +151,7 @@
             - name: IBackgroundCopyManager
               href: ibackgroundcopymanager.md
               items:
-                - name: Métodos IBackgroundCopyManager
+                - name: Métodos de IBackgroundCopyManager
                   href: ibackgroundcopymanager-methods.md
                   items:
                     - name: Método CreateJob
@@ -215,7 +215,7 @@
                   href: ./do/nf-do-idodownload-getproperty.md
                 - name: Método GetStatus
                   href: ./do/nf-do-idodownload-getstatus.md
-                - name: PAUSE (método)
+                - name: Método Pause
                   href: ./do/nf-do-idodownload-pause.md
                 - name: SetProperty (método)
                   href: ./do/nf-do-idodownload-setproperty.md
@@ -236,13 +236,13 @@
             - name: IDOManager
               href: ./do/nn-do-idomanager.md
               items:
-                - name: Método CreateDownload
+                - name: CreateDownload (método)
                   href: ./do/nf-do-idomanager-createdownload.md
                 - name: Método EnumDownloads
                   href: ./do/nf-do-idomanager-enumdownloads.md
-        - name: Devolver valores
+        - name: Valores devueltos de DO
           href: do-return-values.md
-        - name: Estructuras y uniones
+        - name: Estructuras y uniones de DO
           href: do-structures-and-unions.md
           items:
             - name: BG_FILE_PROGRESS
