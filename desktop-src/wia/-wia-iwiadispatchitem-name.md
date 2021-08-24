@@ -1,7 +1,7 @@
 ---
-description: Nombre del elemento tal y como aparece en la interfaz de usuario. Solo lectura.
+description: Nombre del elemento tal como aparece en la interfaz de usuario. Solo lectura.
 ms.assetid: fc469a6e-39d9-4b92-87a4-2f41cacb070d
-title: Propiedad Item.Name
+title: Item.Name propiedad
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: fc9775f869dc0a51eab394cc191e277c9a5ecf41
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9b9fd14bfe7836525080c9d706c601f8e3d65327a629d1b67fb72fc3df035e7d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104497717"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119549745"
 ---
-# <a name="itemname-property"></a>Propiedad Item.Name
+# <a name="itemname-property"></a>Item.Name propiedad
 
-Nombre del elemento tal y como aparece en la interfaz de usuario. Solo lectura.
+Nombre del elemento tal como aparece en la interfaz de usuario. Solo lectura.
 
 Esta propiedad es de solo lectura.
 
@@ -43,11 +43,11 @@ Cadena que recibe el nombre.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Archivo DLL<br/>                      | <dl> <dt>Wiascr.dll (versión 4,90 o posterior)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
+| Archivo DLL<br/>                      | <dl> <dt>Wiascr.dll (versión 4.90 o posterior)</dt> </dl> |
 
 
 

@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cc99d9b38ab43327b4a435c4128378d49682935
-ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
+ms.openlocfilehash: 69a8a22257aea0f30d2620d610a2ef3745c9c2a640f034bd1c30d1f582a6c9a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111386714"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119512305"
 ---
 # <a name="ivmguestossetparameter-method"></a>IVMGuestOS::SetParameter (método)
 
-\[Windows Virtual PC ya no está disponible para su uso a Windows 8. En su lugar, use el proveedor WMI de [Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Establece un parámetro con nombre dentro del sistema operativo invitado.
 
@@ -68,11 +68,11 @@ Este método puede devolver uno de estos valores.
 | Código o valor devuelto                                                                                                                                                                    | Descripción                                                     |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
 | <dl> <dt>**S \_ Ok**</dt> <dt>0</dt> </dl>                                          | La operación se realizó correctamente.<br/>                        |
-| <dl> <dt>**E \_ InvalidarG**</dt> <dt>0x80000003</dt> </dl>                         | Un parámetro no es válido o no se ha especificado.<br/>           |
-| <dl> <dt>**Máquina virtual \_ Se \_ ha \_ 0xA0040202**</dt> <dt></dt> </dl>                     | La operación no se ha completado a tiempo.<br/>   |
+| <dl> <dt>**E \_ Invalidarg**</dt> <dt>0x80000003</dt> </dl>                         | Un parámetro no es válido o no se ha especificado.<br/>           |
+| <dl> <dt>**Máquina virtual \_ E \_ TIEMPO DE ESPERA \_ 0XA0040202**</dt> <dt></dt> </dl>                     | La operación no se ha completado a tiempo.<br/>   |
 | <dl> <dt>**Máquina virtual \_ E \_ VM \_ NOT \_ RUNNING**</dt> <dt>0xA0040206</dt> </dl>               | La máquina virtual (VM) no se está ejecutando.<br/>             |
 | <dl> <dt>**Máquina virtual \_ E \_ VM \_ PAUSED**</dt> <dt>0xA00400507</dt> </dl>                    | La máquina virtual está en pausa.<br/>                                    |
-| <dl> <dt>**Máquina virtual \_ LA \_ CARACTERÍSTICA DE \_ ADICIONES \_ NO \_ ESTÁ**</dt> DISPONIBLE <dt>0XA0040505</dt> </dl> | Los componentes de integración no están instalados en esta máquina virtual.<br/> |
+| <dl> <dt>**Máquina virtual \_ E \_ ADDITIONS \_ FEATURE NOT \_ \_ AVAIL**</dt> <dt>0XA0040505</dt> </dl> | Los componentes de integración no están instalados en esta máquina virtual.<br/> |
 | <dl> <dt>**DISP \_ E \_ EXCEPTION**</dt> <dt>0x80020009</dt> </dl>                    | Se produjo un error inesperado.<br/>                    |
 
 
@@ -81,7 +81,7 @@ Este método puede devolver uno de estos valores.
 
 ## <a name="remarks"></a>Comentarios
 
-La máquina virtual debe estar en ejecución y los componentes de integración deben instalarse cuando se invoca este método. Este método solo se admite para sistemas operativos invitados basados en Windows.
+La máquina virtual debe estar en ejecución y los componentes de integración deben instalarse cuando se invoca este método. Este método solo es compatible con Windows sistemas operativos invitados basados en el cliente.
 
 Con los componentes de integración instalados, la siguiente clave se agrega automáticamente al registro del sistema operativo invitado:
 
@@ -100,11 +100,11 @@ Cuando se inicia el sistema operativo invitado, los siguientes valores de cadena
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
 | Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
 | IID<br/>                      | IID IVMGuestOS se define como \_ 99fea0db-4880-499a-b6d8-73dff9bc91be<br/>                 |
 
 

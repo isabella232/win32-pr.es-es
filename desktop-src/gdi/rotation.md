@@ -1,97 +1,97 @@
 ---
-description: Muchas aplicaciones de CAD proporcionan características que giran los objetos dibujados en el área de cliente.
+description: Muchas aplicaciones CAD proporcionan características que giran objetos dibujados en el área cliente.
 ms.assetid: 85d8fe2c-5ad9-4e98-b6ff-ca0a78abeee5
 title: Rotación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 17be42f2826cbad09333b2c37b607dc50c7c9d0c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6aa6552411e2e018d04ff55cbeeb430d185fe62d61dc59d421d08dbe6e0d7174
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104985999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119602705"
 ---
 # <a name="rotation"></a>Rotación
 
-Muchas aplicaciones de CAD proporcionan características que giran los objetos dibujados en el área de cliente. Las aplicaciones que incluyen capacidades de rotación utilizan la función [**SetWorldTransform**](/windows/desktop/api/Wingdi/nf-wingdi-setworldtransform) para establecer la transformación espacio mundial adecuado en la página. Esta función recibe un puntero a una estructura [**XForm**](/windows/win32/api/wingdi/ns-wingdi-xform) que contiene los valores adecuados. Los miembros eM11, eM12, eM21 y eM22 de XFORM especifican respectivamente, el coseno, el seno, el seno negativo y el coseno del ángulo de rotación.
+Muchas aplicaciones CAD proporcionan características que giran objetos dibujados en el área cliente. Las aplicaciones que incluyen funcionalidades de rotación usan [**la función SetWorldTransform**](/windows/desktop/api/Wingdi/nf-wingdi-setworldtransform) para establecer la transformación espacio del mundo adecuada en espacio de página. Esta función recibe un puntero a una [**estructura XFORM**](/windows/win32/api/wingdi/ns-wingdi-xform) que contiene los valores adecuados. Los miembros eM11, eM12, eM21 y eM22 de XFORM especifican respectivamente, el coseno, el seno, el seno negativo y el coseno del ángulo de rotación.
 
-Cuando se produce la *rotación* , los puntos que constituyen un objeto se giran con respecto al origen del espacio de coordenadas. En la ilustración siguiente se muestra un rectángulo de 20 por 20 unidades girado 30 grados cuando se copia del espacio de coordenadas universal en el espacio de coordenadas de la página.
+Cuando *se* produce la rotación, los puntos que constituyen un objeto se giran con respecto al origen del espacio de coordenadas. En la ilustración siguiente se muestra un rectángulo de 20 por 20 unidades girado 30 grados cuando se copia del espacio de coordenadas universales al espacio de coordenadas de página.
 
-![Ilustración que muestra dos espacios de coordenadas; cada una tiene un Rectange en una ubicación diferente y con una rotación diferente](images/cstrn-11.png)
+![ilustración que muestra dos espacios de coordenadas; cada tiene un rectarín en una ubicación diferente y con una rotación diferente](images/cstrn-11.png)
 
-En la ilustración anterior, cada punto del rectángulo se giró 30 grados con respecto al origen del espacio de coordenadas.
+En la ilustración anterior, cada punto del rectángulo se giraba 30 grados con respecto al origen del espacio de coordenadas.
 
-El algoritmo siguiente calcula la nueva coordenada x (x ') de un punto (x, y) que se gira por el ángulo A con respecto al origen del espacio de coordenadas.
+El algoritmo siguiente calcula la nueva coordenada x (x ') para un punto (x,y) que se gira mediante el ángulo A con respecto al origen del espacio de coordenadas.
 
 ``` syntax
 x' = (x * cos A) - (y * sin A) 
 ```
 
-El algoritmo siguiente calcula la coordenada y (y ') de un punto (x, y) que se gira por el ángulo A con respecto al origen.
+El algoritmo siguiente calcula la coordenada y (y ') para un punto (x,y) que gira el ángulo A con respecto al origen.
 
 ``` syntax
 y' = (x * sin A) + (y * cos A) 
 ```
 
-Las dos transformaciones de giro se pueden combinar en una matriz de 2 por 2 como se indica a continuación.
+Las dos transformaciones de rotación se pueden combinar en una matriz 2 por 2 como se muestra a continuación.
 
 ``` syntax
 |x' y'| == |x y| * | cos A   sin A| 
                    |-sin A   cos A| 
 ```
 
-La matriz de 2 por 2 que generó el giro contiene los valores siguientes.
+La matriz 2 por 2 que produjo la rotación contiene los valores siguientes.
 
 ``` syntax
 | .8660    .5000| 
 |-.5000    .8660| 
 ```
 
-## <a name="rotation-algorithm-derivation"></a>Derivación del algoritmo de rotación
+## <a name="rotation-algorithm-derivation"></a>Derivación de algoritmos de rotación
 
-Los algoritmos de rotación se basan en la suma de Teorema de trigonometría, lo que indica que la función trigonométrica de una suma de dos ángulos (a1 y a2) se puede expresar en términos de las funciones trigonométricas de los dos ángulos.
+Los algoritmos de rotación se basan en el teorema de adición de trigonometría que indica que la función trigonométrica de una suma de dos ángulos (A1 y A2) se puede expresar en términos de las funciones trigonométricas de los dos ángulos.
 
 ``` syntax
 sin(A1 + A2) = (sin A1 * cos A2) + (cos A1 * sin A2) 
 cos(A1 + A2) = (cos A1 * cos A2) - (sin A1 * sin A2) 
 ```
 
-En la ilustración siguiente se muestra un punto p girado en sentido contrario a las agujas del reloj hacia la nueva posición p '. Además, muestra dos triángulos formados por una línea dibujada a partir del origen del espacio de coordenadas hasta cada punto y una línea dibujada a partir de cada punto a través del eje x.
+En la ilustración siguiente se muestra un punto p girado en sentido contrario a las agujas del reloj a una nueva posición p'. Además, muestra dos triángulos formados por una línea dibujada desde el origen del espacio de coordenadas hasta cada punto y una línea dibujada desde cada punto a través del eje X.
 
-![diagrama que muestra el origen, p y p y dos triángulos](images/cstrn-12.png)
+![diagrama que muestra el origen, p y p', y dos triángulos](images/cstrn-12.png)
 
-Con trigonometría, la coordenada x del punto p se puede obtener multiplicando la longitud de la hipotenusa h por el coseno de a1.
+Mediante trigonometría, la coordenada x del punto p se puede obtener multiplicando la longitud de la hipotenusa h por el coseno de A1.
 
 ``` syntax
 x = h * cos A1 
 ```
 
-La coordenada y del punto p se puede obtener multiplicando la longitud de la hipotenusa h por el seno de a1.
+La coordenada y del punto p se puede obtener multiplicando la longitud de la hipotenusa h por el seno de A1.
 
 ``` syntax
 y = h * sin A1 
 ```
 
-Del mismo modo, la coordenada x del punto p ' se puede obtener multiplicando la longitud de la hipotenusa h por el coseno de (a1 + a2).
+Del mismo modo, la coordenada x del punto p' se puede obtener multiplicando la longitud de la hipotenusa h por el coseno de (A1 +A2).
 
 ``` syntax
 x' = h * cos (A1 + A2) 
 ```
 
-Por último, se puede obtener la coordenada y del punto p ' multiplicando la longitud de la hipotenusa h por el seno de (a1 + a2).
+Por último, la coordenada y del punto p' se puede obtener multiplicando la longitud de la hipotenusa h por el seno de (A1 +A2).
 
 ``` syntax
 y' = h * sin (A1 + A2) 
 ```
 
-Con la suma teorema, los algoritmos anteriores se convierten en los siguientes:
+Con el teorema de suma, los algoritmos anteriores se convierten en los siguientes:
 
 ``` syntax
 x' = (h * cos A1 * cos A2) - (h * sin A1 * sin A2) 
 y' = (h * cos A1 * sin A2) + (h * sin A1 * cos A2) 
 ```
 
-Los algoritmos de rotación de un punto determinado girados por el ángulo a2 se pueden obtener sustituyendo x por cada aparición de (h \* cos a1) y sustituyendo y por cada aparición de (h \* sin a1).
+Los algoritmos de rotación para un punto determinado girado por ángulo A2 se pueden obtener sustituyendo x por cada aparición de (h cos A1) y sustituyendo y por cada aparición de \* (h \* sin A1).
 
 ``` syntax
 x' = (x * cos A2) - (y * sin A2) 

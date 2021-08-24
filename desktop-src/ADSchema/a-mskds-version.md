@@ -1,11 +1,11 @@
 ---
-title: atributo MS-KDS-version
+title: Atributo ms-Kds-Version
 description: Número de versión de esta clave raíz.
 ms.assetid: ae91b32a-909f-4645-a520-d18eeba22208
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-KDS-version
-- 'msKds: esquema de AD de atributos de versión'
+- Esquema de AD del atributo ms-Kds-Version
+- Esquema de AD del atributo msKds-Version
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 31f4187fd70023db097fb1a29001810bca8a445c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 810e1fe57bd762ee683158820363d91ed0fbbcfbdcbf5cb9e816c13147a2322d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906175"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582745"
 ---
-# <a name="ms-kds-version-attribute"></a>atributo MS-KDS-version
+# <a name="ms-kds-version-attribute"></a>Atributo ms-Kds-Version
 
 Número de versión de esta clave raíz.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-KDS-versión                       |
-| Nombre para mostrar de LDAP | Versión de msKds                        |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-Kds-Version                       |
+| Ldap-Display-Name | msKds-Version                        |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2176              |
-| System-ID-GUID    | d5f07340-e6b0-1e4a-97be-0d3318bd9db1 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | d5f07340-e6b0-1e4a-97be-0d3318bd9db1 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -50,18 +50,18 @@ Número de versión de esta clave raíz.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                  |
+| Id. de vínculo                | \-                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                  |
-| System-Only            | False                                                                                                                                               |
-| Tiene un único valor       | True                                                                                                                                                |
-| Está indexado             | False                                                                                                                                               |
-| En el catálogo global      | False                                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                        |
+| System-Only            | Falso                                                                                                                                               |
+| Es de un solo valor       | Verdadero                                                                                                                                                |
+| Está indexado             | Falso                                                                                                                                               |
+| En el catálogo global      | Falso                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                                  |
 | Search-Flags           | 0x00000280                                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                                          |
-| Clases usadas en        | [**MS-KDS-Prov-ServerConfiguration**](c-mskds-provserverconfiguration.md)<br/> [**MS-KDS-Prov-RootKey**](c-mskds-provrootkey.md)<br/> |
+| Clases usadas en        | [**ms-Kds-Prov-ServerConfiguration**](c-mskds-provserverconfiguration.md)<br/> [**ms-Kds-Prov-RootKey**](c-mskds-provrootkey.md)<br/> |
 
 
 

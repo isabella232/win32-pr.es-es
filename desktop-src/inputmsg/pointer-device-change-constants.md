@@ -1,6 +1,6 @@
 ---
-title: Cambio de puntero de dispositivo
-description: Valores que se pueden pasar en el parámetro wParam del mensaje de WM_POINTERDEVICECHANGE.
+title: Cambio de dispositivo de puntero
+description: Valores que se pueden pasar en el parámetro wParam del WM_POINTERDEVICECHANGE mensaje.
 ms.assetid: B95191D7-820B-445A-A3A4-811F9F1A8C4F
 topic_type:
 - apiref
@@ -23,16 +23,16 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 5e4b85c17adcd2db7c0f2f672e27ca467b346b0b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 67dc120a4541b56638c2947c24534c9f42543533b4b1a97ace72297aaf48341c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996762"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119602555"
 ---
-# <a name="pointer-device-change"></a>Cambio de puntero de dispositivo
+# <a name="pointer-device-change"></a>Cambio de dispositivo de puntero
 
-Valores que se pueden pasar en el parámetro *wParam* del mensaje de [**WM_POINTERDEVICECHANGE**](wm-pointerdevicechange.md) .
+Valores que se pueden pasar en el *parámetro wParam* del [**WM_POINTERDEVICECHANGE**](wm-pointerdevicechange.md) mensaje.
 
 <dl> <dt>
 
@@ -148,7 +148,7 @@ Modo de presentación centrado.
 
 
 
-Cambio en la presentación en la asignación del digitalizador.
+El cambio en la presentación a la asignación del digitalizador.
 
 
 </dt> </dl> </dd> <dt>
@@ -174,7 +174,7 @@ Resolución de pantalla.
 
 
 
-El origen de la presentación.
+Origen para mostrar.
 
 
 </dt> </dl> </dd> <dt>
@@ -187,7 +187,7 @@ El origen de la presentación.
 
 
 
-La relación de aspecto de la pantalla.
+Relación de aspecto de la pantalla.
 
 
 </dt> </dl> </dd> </dl>
@@ -196,11 +196,11 @@ La relación de aspecto de la pantalla.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                           |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                 |
+| Header<br/>                   | <dl> <dt>Winuser.h</dt> </dl> |
 
 
 

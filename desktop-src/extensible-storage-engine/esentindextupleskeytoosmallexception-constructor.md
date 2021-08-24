@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentIndexTuplesKeyTooSmallException'
-title: Constructor de EsentIndexTuplesKeyTooSmallException
+description: 'Más información sobre: Constructor EsentIndexTuplesKeyTooSmallException'
+title: Constructor EsentIndexTuplesKeyTooSmallException
 TOCTitle: 'EsentIndexTuplesKeyTooSmallException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentIndexTuplesKeyTooSmallException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentindextupleskeytoosmallexception.esentindextupleskeytoosmallexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8f4601b7b4213c36e400a27d752df661eaa879e7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 008d67ded91a7daa339c5eb1d6fc3441d44f6dc553c96a89586e25ddb85d07b0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119454745"
 ---
-# <a name="esentindextupleskeytoosmallexception-constructor"></a>Constructor de EsentIndexTuplesKeyTooSmallException
+# <a name="esentindextupleskeytoosmallexception-constructor"></a>Constructor EsentIndexTuplesKeyTooSmallException
 
 Inicializa una nueva instancia de la clase EsentIndexTuplesKeyTooSmallException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentIndexTuplesKeyTooSmallException()
 public EsentIndexTuplesKeyTooSmallException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentIndexTuplesKeyTooSmallException()
 
 [Miembros de EsentIndexTuplesKeyTooSmallException](./esentindextupleskeytoosmallexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

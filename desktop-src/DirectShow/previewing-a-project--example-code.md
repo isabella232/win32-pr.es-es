@@ -1,21 +1,21 @@
 ---
-description: 'Obtener una vista previa de un proyecto: código de ejemplo'
+description: 'Vista previa de un Project: código de ejemplo'
 ms.assetid: 8a4af82a-5611-4c53-8de8-04eaefd51df9
-title: 'Obtener una vista previa de un proyecto: código de ejemplo'
+title: 'Vista previa de un Project: código de ejemplo'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c5527fd93d0f05d5388739cc936e4a4dd203e18
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d98a47970a333ed27e249bddc81ba6fb4fb6e2c706fdfa2dda7c29f886e74022
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104495046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119583575"
 ---
-# <a name="previewing-a-project-example-code"></a>Obtener una vista previa de un proyecto: código de ejemplo
+# <a name="previewing-a-project-example-code"></a>Vista previa de un Project: código de ejemplo
 
 \[Esta API no se admite y puede modificarse o no estar disponible en el futuro.\]
 
-En el ejemplo de código siguiente se muestra cómo cargar y obtener una vista previa de un proyecto de [servicios de edición de DirectShow](directshow-editing-services.md) . La comprobación de errores se omite para mayor claridad.
+En el ejemplo de código siguiente se muestra cómo cargar y obtener una vista previa de [DirectShow proyecto de Editing Services.](directshow-editing-services.md) La comprobación de errores se omite para mayor claridad.
 
 
 ```C++
@@ -88,7 +88,7 @@ void main( void )
 
 <dl> <dt>
 
-[Cargar y obtener una vista previa de un proyecto](loading-and-previewing-a-project.md)
+[Carga y vista previa de un Project](loading-and-previewing-a-project.md)
 </dt> </dl>
 
  

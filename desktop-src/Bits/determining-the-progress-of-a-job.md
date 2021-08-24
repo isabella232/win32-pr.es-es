@@ -1,23 +1,23 @@
 ---
 title: Determinar el progreso de un trabajo
-description: BITS mantiene información de progreso para cada trabajo. Utilice la información de progreso para determinar el número de bytes y archivos que se han transferido.
+description: BITS mantiene la información de progreso de cada trabajo. Use la información de progreso para determinar cuántos bytes y archivos se han transferido.
 ms.assetid: 8bac62b3-cb7e-45ba-85f0-95f3a7e8bffd
 keywords:
-- transferir BITS de trabajo, progreso
+- bits de trabajo de transferencia, progreso
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 085ddcdeea106be2998f828879bc92273f22b328
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 09da4791bffd075d1fb0dd5868f0b78c1b949a0384ff9203555bf18c10ff39cc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903141"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119323255"
 ---
 # <a name="determining-the-progress-of-a-job"></a>Determinar el progreso de un trabajo
 
-BITS mantiene información de progreso para cada trabajo. Utilice la información de progreso para determinar el número de bytes y archivos que se han transferido.
+BITS mantiene la información de progreso de cada trabajo. Use la información de progreso para determinar cuántos bytes y archivos se han transferido.
 
-Para recuperar la información de progreso del trabajo, llame al método [**IBackgroundCopyJob:: GetProgress**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-getprogress) tal y como se muestra en el ejemplo siguiente. En el ejemplo se da por supuesto que el puntero de la interfaz [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) es válido.
+Para recuperar la información de progreso del trabajo, llame al método [**IBackgroundCopyJob::GetProgress**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-getprogress) como se muestra en el ejemplo siguiente. En el ejemplo se da por supuesto que el puntero de interfaz [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) es válido.
 
 
 ```C++
@@ -52,7 +52,7 @@ else
 
 
 
-Para recuperar la información de progreso en la parte de respuesta de un trabajo de respuesta de carga, llame al método [**IBackgroundCopyJob2:: GetReplyProgress**](/windows/desktop/api/Bits1_5/nf-bits1_5-ibackgroundcopyjob2-getreplyprogress) tal como se muestra en el ejemplo siguiente. En el ejemplo se da por supuesto que el puntero de la interfaz [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) es válido.
+Para recuperar información de progreso sobre la parte de respuesta de un trabajo de respuesta de carga, llame al método [**IBackgroundCopyJob2::GetReplyProgress**](/windows/desktop/api/Bits1_5/nf-bits1_5-ibackgroundcopyjob2-getreplyprogress) como se muestra en el ejemplo siguiente. En el ejemplo se da por supuesto que el puntero de interfaz [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) es válido.
 
 
 ```C++
@@ -86,11 +86,11 @@ if (SUCCEEDED(hr))
 
 
 
-Los archivos también contienen información de progreso. Para recuperar la información de progreso, utilice el método [**IBackgroundCopyFile:: GetProgress**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyfile-getprogress) . Para obtener información sobre cómo recuperar los archivos de un trabajo, consulte [enumerar archivos en un trabajo](enumerating-files-in-a-job.md).
+Los archivos también contienen información de progreso. Para recuperar la información de progreso, use [**el método IBackgroundCopyFile::GetProgress.**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyfile-getprogress) Para obtener información sobre cómo recuperar los archivos de un trabajo, vea [Enumerar archivos en un trabajo.](enumerating-files-in-a-job.md)
 
- 
+ 
 
- 
+ 
 
 
 

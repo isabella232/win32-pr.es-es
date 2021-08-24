@@ -1,27 +1,27 @@
 ---
-description: 'Más información acerca de: JET_INDEX_COLUMN miembros'
-title: Miembros de JET_INDEX_COLUMN (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Más información sobre: JET_INDEX_COLUMN miembros'
+title: JET_INDEX_COLUMN miembros (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: JET_INDEX_COLUMN members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.Windows8.JET_INDEX_COLUMN
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.jet_index_column_members(v=EXCHG.10)
 ms:contentKeyID: 55104315
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 7f0729585a7b8f977b848029c68ccebe9854c75c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a7c8ee1eb572e5aca6f0a24c12959bacc5fa3c2e8e062c88dccf222eda9fa9df
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104556057"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119401705"
 ---
-# <a name="jet_index_column-members"></a>Miembros de JET_INDEX_COLUMN
+# <a name="jet_index_column-members"></a>JET_INDEX_COLUMN miembros
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Contiene la definición de filtro para [JetPrereadIndexRanges (JET_SESID, JET_TABLEID, \[ \] , Int32, Int32, Int32, \[ \] , PrereadIndexRangesGrbit)](./windows8api.jetprereadindexranges-method.md) y [JetSetCursorFilter (JET_SESID, JET_TABLEID, \[ \] , CursorFilterGrbit)](./windows8api.jetsetcursorfilter-method.md).
+Contiene la definición de filtro [para JetPrereadIndexRanges(JET_SESID, JET_TABLEID, \[ \] , Int32, Int32, Int32, \[ \] , PrereadIndexRangesGrbit)](./windows8api.jetprereadindexranges-method.md) y [JetSetCursorFilter(JET_SESID, JET_TABLEID, \[ \] , CursorFilterGrbit).](./windows8api.jetsetcursorfilter-method.md)
 
-El tipo de [JET_INDEX_COLUMN](./jet-index-column-class.md) expone los siguientes miembros.
+El [JET_INDEX_COLUMN](./jet-index-column-class.md) muestra los miembros siguientes.
 
 ## <a name="constructors"></a>Constructores
 
@@ -64,16 +64,16 @@ Superior
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn335357(v=exchg.10).md">grbit</a></td>
-<td>Obtiene o establece la opción para esta comparación de columna.</td>
+<td>Obtiene o establece la opción para esta comparación de columnas.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn335479(v=exchg.10).md">pvData</a></td>
-<td>Obtiene o establece el valor con el que se va a compartir la columna.</td>
+<td>Obtiene o establece el valor con el que se comparte la columna.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="dn335358(v=exchg.10).md">relop</a></td>
+<td><a href="dn335358(v=exchg.10).md">volver a reestechar</a></td>
 <td>Obtiene o establece la operación de comparación de filtros.</td>
 </tr>
 </tbody>
@@ -100,7 +100,7 @@ Superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizar</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
@@ -110,7 +110,7 @@ Superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">Gettype</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
@@ -121,7 +121,7 @@ Superior
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn335475(v=exchg.10).md">ToString</a></td>
-<td>Devuelve una <a href="/dotnet/api/system.string">cadena</a> que representa el <a href="dn335349(v=exchg.10).md">JET_INDEX_COLUMN</a>actual. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object. ToString ()</a>).</td>
+<td>Devuelve un <a href="/dotnet/api/system.string">objeto String</a> que representa el objeto <a href="dn335349(v=exchg.10).md">JET_INDEX_COLUMN</a>. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -133,6 +133,6 @@ Superior
 
 #### <a name="reference"></a>Referencia
 
-[JET_INDEX_COLUMN (clase)](./jet-index-column-class.md)
+[JET_INDEX_COLUMN clase](./jet-index-column-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

@@ -1,6 +1,6 @@
 ---
-title: M3x4-vs
-description: Multiplica un vector de tres componentes por una matriz de 3x4. | M3x4-vs
+title: 'm3x4: vs'
+description: 'Multiplica un vector de 3 componentes por una matriz de 3x4. | m3x4: vs'
 ms.assetid: 8bec1ac5-376b-4eae-ba82-b42a6c0e7c4e
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,39 +9,39 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: a4018698dbe6ab986945a84c1fcf9ce0431bd0fc
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 54137f2081a48158d306e882eab0dc912a8e50332b7d66cfb137c3c10b669570
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119457435"
 ---
-# <a name="m3x4---vs"></a>M3x4-vs
+# <a name="m3x4---vs"></a>m3x4: vs
 
-Multiplica un vector de tres componentes por una matriz de 3x4.
+Multiplica un vector de 3 componentes por una matriz de 3x4.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| M3x4 DST, src0, SRC1 |
+| m3x4 dst, src0, src1 |
 |----------------------|
 
 
 
  
 
-, donde
+where
 
--   DST es el registro de destino. El resultado es un vector de cuatro componentes.
--   src0 es un registro de origen que representa un vector de tres componentes.
--   SRC1 es un registro de origen que representa una matriz de 3x4, que se corresponde con el primero de 4 registros consecutivos.
+-   dst es el registro de destino. El resultado es un vector de 4 componentes.
+-   src0 es un registro de origen que representa un vector de 3 componentes.
+-   src1 es un registro de origen que representa una matriz 3x4, que corresponde al primero de cuatro registros consecutivos.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
 | m3x4                   | x    | x    | x    | x     | x    | x     |
 
@@ -49,9 +49,9 @@ Multiplica un vector de tres componentes por una matriz de 3x4.
 
  
 
-Se necesita la máscara xyzw (valor predeterminado) para el registro de destino. Los modificadores Negate y swizzle se permiten para src0, pero no para SRC1.
+La máscara xyzw (valor predeterminado) es necesaria para el registro de destino. Se permiten modificadores negate y swzzle para src0, pero no para src1.
 
-En el siguiente fragmento de código se muestran las operaciones realizadas.
+El fragmento de código siguiente muestra las operaciones realizadas.
 
 
 ```
@@ -64,9 +64,9 @@ dest.w = (src0.x * src4.x) + (src0.y * src4.y) + (src0.z * src4.z);
 
 
 
-El vector de entrada se encuentra en el registro src0. La matriz de 3x4 de entrada se encuentra en el registro SRC1 y los tres registros más altos, tal y como se muestra en la siguiente expansión.
+El vector de entrada está en el registro src0. La matriz de entrada 3x4 está en el registro src1 y los tres registros siguientes superiores, como se muestra en la expansión siguiente.
 
-Esta operación se utiliza normalmente para transformar un vector de posición por una matriz que tiene un efecto proyectado pero no aplica ninguna traducción. Esta instrucción se implementa como un par de productos DOT como se muestra aquí.
+Esta operación se usa normalmente para transformar un vector de posición mediante una matriz que tiene un efecto projective pero no aplica ninguna traducción. Esta instrucción se implementa como un par de productos de punto, como se muestra aquí.
 
 
 ```

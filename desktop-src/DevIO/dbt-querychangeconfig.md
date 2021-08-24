@@ -1,21 +1,21 @@
 ---
-description: El sistema difunde el \_ evento de dispositivo DBT QUERYCHANGECONFIG para solicitar permiso para cambiar la configuración actual (acoplar o desacoplar). Cualquier aplicación puede denegar esta solicitud y cancelar el cambio.
+description: El sistema difunde el evento de dispositivo DBT QUERYCHANGECONFIG para solicitar permiso para cambiar la configuración actual \_ (acoplar o desacoplar). Cualquier aplicación puede denegar esta solicitud y cancelar el cambio.
 ms.assetid: 2e452ea7-e2bf-4500-952a-ee7d891533a0
-title: Evento DBT_QUERYCHANGECONFIG (DBT. h)
+title: DBT_QUERYCHANGECONFIG evento (Dbt.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 48367da1788ae2985b21fad6e960153008e9ffd2
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4e9c222fdc29f635263b45b5fd7e54ee229a33d7dee1ff31cd1e3072bfe6e84f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104538890"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119318425"
 ---
-# <a name="dbt_querychangeconfig-event"></a>\_Evento DBT QUERYCHANGECONFIG
+# <a name="dbt_querychangeconfig-event"></a>Evento DBT \_ QUERYCHANGECONFIG
 
-El sistema difunde el \_ evento de dispositivo DBT QUERYCHANGECONFIG para solicitar permiso para cambiar la configuración actual (acoplar o desacoplar). Cualquier aplicación puede denegar esta solicitud y cancelar el cambio.
+El sistema difunde el evento de dispositivo DBT QUERYCHANGECONFIG para solicitar permiso para cambiar la configuración actual \_ (acoplar o desacoplar). Cualquier aplicación puede denegar esta solicitud y cancelar el cambio.
 
-Para difundir este evento de dispositivo, el sistema usa el mensaje de [**\_ DEVICECHANGE de WM**](wm-devicechange.md) con *wParam* establecido en DBT \_ QUERYCHANGECONFIG y *lParam* establecido en cero.
+Para difundir este evento de dispositivo, el sistema usa el mensaje [**\_ DEVICECHANGE**](wm-devicechange.md) de WM con *wParam* establecido en DBT \_ QUERYCHANGECONFIG y *lParam* establecido en cero.
 
 
 ```C++
@@ -33,7 +33,7 @@ LRESULT CALLBACK WindowProc(
 
 <dl> <dt>
 
-*identificador* 
+*Hwnd* 
 </dt> <dd>
 
 Identificador a una ventana.
@@ -43,14 +43,14 @@ Identificador a una ventana.
 *uMsg* 
 </dt> <dd>
 
-Identificador del mensaje de [**\_ DEVICECHANGE de WM**](wm-devicechange.md) .
+Identificador [**del mensaje \_ DEVICECHANGE**](wm-devicechange.md) de WM.
 
 </dd> <dt>
 
 *wParam* 
 </dt> <dd>
 
-Establézcalo en DBT \_ QUERYCHANGECONFIG.
+Establezca en DBT \_ QUERYCHANGECONFIG.
 
 </dd> <dt>
 
@@ -63,9 +63,9 @@ Establecer en cero.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelva **true** para conceder permiso para cambiar la configuración.
+Devuelve **TRUE** para conceder permiso para cambiar la configuración.
 
-Devuelve \_ la consulta \_ de difusión deny para denegar el permiso para cambiar la configuración.
+Devuelve BROADCAST \_ QUERY DENY para denegar el permiso para cambiar la \_ configuración.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,21 +75,21 @@ Devuelve \_ la consulta \_ de difusión deny para denegar el permiso para cambia
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP<br/>                                                            |
 | Servidor mínimo compatible<br/> | Windows Server 2003<br/>                                                   |
-| Encabezado<br/>                   | <dl> <dt>DBT. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Dbt.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Eventos de dispositivo](device-events.md)
 </dt> <dt>
 
-[Eventos de administración de dispositivos](device-management-events.md)
+[Administración de dispositivos eventos](device-management-events.md)
 </dt> <dt>
 
-[**DEVICECHANGE de WM \_**](wm-devicechange.md)
+[**WM \_ DEVICECHANGE**](wm-devicechange.md)
 </dt> </dl>
 
  

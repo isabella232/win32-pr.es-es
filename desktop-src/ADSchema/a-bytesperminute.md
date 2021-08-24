@@ -1,11 +1,11 @@
 ---
-title: Bytes por minuto (atributo)
+title: Atributo Bytes por minuto
 description: Velocidad de transferencia de datos de impresora.
 ms.assetid: e2ed6fb7-d833-40ed-925b-689246c2953b
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de bytes por minuto
-- bytesPerMinute esquema de AD de atributos
+- Esquema de AD de atributo bytes por minuto
+- Esquema de AD del atributo bytesPerMinute
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 280427bd69d6ee06c8f7a8dd13812c2c8ce7f898
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 20165f20a9c43e828ebef5f7ddaf06ac7ef93a1a26bd6b78456649591fdd3b38
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119307235"
 ---
-# <a name="bytes-per-minute-attribute"></a>Bytes por minuto (atributo)
+# <a name="bytes-per-minute-attribute"></a>Atributo Bytes por minuto
 
 Velocidad de transferencia de datos de impresora.
 
@@ -30,13 +30,13 @@ Velocidad de transferencia de datos de impresora.
 | Entrada | Value |
 |-------------------|--------------------------------------|
 | CN                | Bytes por minuto                     |
-| Nombre para mostrar de LDAP | bytesPerMinute                       |
-| Tamaño              | 4 bytes                              |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | bytesPerMinute                       |
+| Size              | 4 bytes                              |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.284               |
-| System-ID-GUID    | ba305f76-47e3-11d0-a1a6-00c04fd930c9 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | ba305f76-47e3-11d0-a1a6-00c04fd930c9 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -55,13 +55,13 @@ Velocidad de transferencia de datos de impresora.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -76,13 +76,13 @@ Velocidad de transferencia de datos de impresora.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -97,13 +97,13 @@ Velocidad de transferencia de datos de impresora.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -118,13 +118,13 @@ Velocidad de transferencia de datos de impresora.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -139,13 +139,13 @@ Velocidad de transferencia de datos de impresora.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -160,13 +160,13 @@ Velocidad de transferencia de datos de impresora.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |

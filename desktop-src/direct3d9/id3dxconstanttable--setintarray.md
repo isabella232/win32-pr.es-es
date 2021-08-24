@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5f674bc730398c386856314a7e7305f33f3e7fa1
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 54f2d7710d6315b2f17c9ce4a50eaee9e39ca928185d476c26c158d9827d3571
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119607095"
 ---
 # <a name="id3dxconstanttablesetintarray-method"></a>Método ID3DXConstantTable::SetIntArray
 
@@ -96,7 +96,7 @@ Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,39 +1,39 @@
 ---
-title: Propiedades del objeto de carácter
-description: Propiedades del objeto de carácter
+title: Propiedades del objeto character
+description: Propiedades del objeto character
 ms.assetid: 86748de2-f5c8-4057-bfa4-79d46cac1e62
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6212d6f0539b7fcb29faa883e6d88101952c12f5
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 3c80e16bdb35d3fdfd8687eb15f200d2005ab75027e4dcc786f883d21232af4e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104420539"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119610695"
 ---
-# <a name="character-object-properties"></a>Propiedades del objeto de carácter
+# <a name="character-object-properties"></a>Propiedades del objeto character
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
-El objeto de [**carácter**](/windows/desktop/lwef/the-characters-object) expone las siguientes propiedades:
+El [**objeto Character**](/windows/desktop/lwef/the-characters-object) expone las siguientes propiedades:
 
--   [**Active**](active-property.md)
+-   [**Activo**](active-property.md)
 -   [**AutoPopupMenu**](autopopupmenu-property.md)
 -   [**Descripción**](description-property.md)
 -   [**ExtraData**](extradata-property.md)
--   [**VOLUMEN**](guid-property.md)
+-   [**Guid**](guid-property.md)
 -   [**HasOtherClients**](hasotherclients-property.md)
--   [**Height**](height-property.md)
--   [**IDDelContextoDeAyuda**](helpcontextid-property-ch.md)
--   [**HelpFile**](helpfile-property.md)
+-   [**Alto**](height-property.md)
+-   [**HelpContextID**](helpcontextid-property-ch.md)
+-   [**Helpfile**](helpfile-property.md)
 -   [**HelpModeOn**](helpmodeon-property.md)
--   [**Inactivo**](idleon-property.md)
--   [**LanguageID**](languageid-property.md)
--   [**Salido**](left-property.md)
+-   [**IdleOn**](idleon-property.md)
+-   [**Languageid**](languageid-property.md)
+-   [**Izquierda**](left-property.md)
 -   [**MoveCause**](movecause-property.md)
--   [**Name**](name-property.md)
--   [**Altooriginal**](originalheight-property.md)
--   [**Anchooriginal**](originalwidth-property.md)
+-   [**Nombre**](name-property.md)
+-   [**OriginalHeight**](originalheight-property.md)
+-   [**OriginalWidth**](originalwidth-property.md)
 -   [**Inclinación**](pitch-property.md)
 -   [**SoundEffectsOn**](soundeffectson-property.md)
 -   [**Velocidad**](speed-property.md)
@@ -44,11 +44,11 @@ El objeto de [**carácter**](/windows/desktop/lwef/the-characters-object) expone
 -   [**Versión**](version-property.md)
 -   [**VisibilityCause**](visibilitycause-property.md)
 -   [**Visible**](visible-property-cob.md)
--   [**Width**](width-property-co.md)
+-   [**Ancho**](width-property-co.md)
 
-Tenga en cuenta que las propiedades [**altura**](height-property.md), [**izquierda**](left-property.md), [**superior**](top-property.md)y [**ancho**](width-property-co.md) de un carácter difieren de las que puede admitir el entorno de programación para la colocación del control. Las propiedades de [**caracteres**](/windows/desktop/lwef/the-characters-object) se aplican a la presentación visible de un carácter, no a la ubicación del control de Microsoft Agent.
+Tenga en cuenta que las propiedades [**Height**](height-property.md), [**Left**](left-property.md), [**Top**](top-property.md)y [**Width**](width-property-co.md) de un carácter difieren de las que puede ser compatible con el entorno de programación para la colocación del control. Las [**propiedades**](/windows/desktop/lwef/the-characters-object) Character se aplican a la presentación visible de un carácter, no a la ubicación del control Microsoft Agent.
 
-Al igual que con los métodos de objeto de [**carácter**](/windows/desktop/lwef/the-characters-object) , puede tener acceso a las propiedades de un carácter mediante la colección de [**caracteres**](/windows/desktop/lwef/the-characters-object) o simplificar la sintaxis declarando una variable de objeto y estableciéndolo en un carácter de la colección. En el ejemplo siguiente, test1 y test2 se establecerán en el mismo valor:
+Al igual que con [**los métodos**](/windows/desktop/lwef/the-characters-object) de objeto Character, puede acceder a las propiedades de un carácter mediante la colección [**Characters**](/windows/desktop/lwef/the-characters-object) o simplificar la sintaxis declarando una variable de objeto y estableciendo en un carácter de la colección. En el ejemplo siguiente, Test1 y Test2 se establecerán en el mismo valor:
 
 
 ```
@@ -79,8 +79,8 @@ Al igual que con los métodos de objeto de [**carácter**](/windows/desktop/lwef
 
 
 
-Dado que el servidor carga un carácter de forma asincrónica, asegúrese de que se ha cargado el carácter antes de consultar sus propiedades, por ejemplo, mediante el evento [**RequestComplete**](requestcomplete-event.md) . De lo contrario, las propiedades pueden devolver valores incorrectos.
+Dado que el servidor carga un carácter de forma asincrónica, asegúrese de que el carácter se ha cargado antes de consultar sus propiedades, por ejemplo, mediante el [**evento RequestComplete.**](requestcomplete-event.md) De lo contrario, las propiedades pueden devolver valores incorrectos.
 
- 
+ 
 
- 
+ 

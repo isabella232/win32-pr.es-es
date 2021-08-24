@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: Windows8Api. PrereadKeyRanges (método)'
-title: Método Windows8Api. PrereadKeyRanges (Microsoft. ISAM. esent. Interop. Windows8)
+description: Más información sobre el método Windows8Api.PrereadKeyRanges
+title: Método Windows8Api.PrereadKeyRanges (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: 'PrereadKeyRanges method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Windows8.Windows8Api.PrereadKeyRanges(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,System.Byte[][],System.Int32[],System.Byte[][],System.Int32[],System.Int32,System.Int32,System.Int32@,Microsoft.Isam.Esent.Interop.JET_COLUMNID[],Microsoft.Isam.Esent.Interop.Windows8.PrereadIndexRangesGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.windows8api.prereadkeyranges(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 091c1f92512fd9a55bb4acd4d824567acc19fdde
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 02328ddc47daec4fbd98f88222dd7519053ed92aa64d2a0048782340d626b03c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001411"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119452695"
 ---
-# <a name="windows8apiprereadkeyranges-method"></a>Windows8Api. PrereadKeyRanges, método
+# <a name="windows8apiprereadkeyranges-method"></a>Método Windows8Api.PrereadKeyRanges
 
-Si los registros con los intervalos de claves especificados no están en la caché del búfer, inicie las lecturas asincrónicas para traer los registros a la memoria caché del búfer de la base de datos.
+Si los registros con los intervalos de claves especificados no están en la caché del búfer, inicie lecturas asincrónicas para llevar los registros a la caché del búfer de base de datos.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -91,79 +91,79 @@ public static void PrereadKeyRanges(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión que se va a usar.
+    Sesión que se usará.
 
 <!-- end list -->
 
-  - TABLEID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    Tabla en la que se van a emitir las lecturas preleídas.
+    Tabla con la que se emitirán los preleciones.
 
 <!-- end list -->
 
   - keysStart  
-    Automáticamente \[\]  
+    Tipo: \[\]  
     
-    Inicio de los intervalos de clave que se van a leer.
+    Inicio de los intervalos de claves que se van a leer previamente.
 
 <!-- end list -->
 
   - keyStartLengths  
-    Automáticamente \[\]  
+    Tipo: \[\]  
     
-    Longitud de las claves de inicio que se van a leer como prelectura.
+    Longitudes de las claves de inicio que se leerán previamente.
 
 <!-- end list -->
 
   - keysEnd  
-    Automáticamente \[\]  
+    Tipo: \[\]  
     
-    Final del intervalo de claves que se va a leer.
+    Final del intervalo de claves que se va a leer previamente.
 
 <!-- end list -->
 
   - keyEndLengths  
-    Automáticamente \[\]  
+    Tipo: \[\]  
     
-    Longitud de las teclas finales que se van a leer.
+    Longitudes de las claves finales que se leerán previamente.
 
 <!-- end list -->
 
   - rangeIndex  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Índice del primer intervalo de claves de la matriz que se va a leer.
 
 <!-- end list -->
 
   - rangeCount  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Número máximo de intervalos de clave que se van a leer.
+    Número máximo de intervalos de claves que se van a leer previamente.
 
 <!-- end list -->
 
   - rangesPreread  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Devuelve el número de claves que se han preleído realmente.
+    Devuelve el número de claves que realmente se han leído previamente.
 
 <!-- end list -->
 
   - columnsPreread  
-    Automáticamente \[\]  
+    Tipo: \[\]  
     
-    Lista de identificadores de columna para las columnas de valor largo que se van a leer como prelectura.
+    Lista de identificadores de columna para las columnas de valor largo que se deben leer previamente.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. Windows8. PrereadIndexRangesGrbit](./prereadindexrangesgrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.Windows8.PrereadIndexRangesGrbit](./prereadindexrangesgrbit-enumeration.md)  
     
-    Opciones de lectura. Se utiliza para especificar la dirección de la lectura y escritura.
+    Opciones de lectura previa. Se usa para especificar la dirección de la lectura previa.
 
 ## <a name="see-also"></a>Vea también
 
@@ -173,4 +173,4 @@ public static void PrereadKeyRanges(
 
 [Miembros de Windows8Api](./windows8api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

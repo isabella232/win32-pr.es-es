@@ -1,9 +1,9 @@
 ---
-title: Mensaje de CCM_SETUNICODEFORMAT (commctrl. h)
-description: Establece la marca del formato de caracteres Unicode para el control. Este mensaje le permite cambiar el juego de caracteres utilizado por el control en tiempo de ejecución, en lugar de tener que volver a crear el control.
+title: CCM_SETUNICODEFORMAT mensaje (Commctrl.h)
+description: Establece la marca de formato de caracteres Unicode para el control. Este mensaje le permite cambiar el juego de caracteres utilizado por el control en tiempo de ejecución en lugar de tener que volver a crear el control.
 ms.assetid: 8028b7d7-30d2-4154-81c7-ba1ed095ef02
 keywords:
-- CCM_SETUNICODEFORMAT controles de mensajes de Windows
+- CCM_SETUNICODEFORMAT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ffbe9f5032c193cb612f68ca8ed6ec6b04ce8094
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9c687d476b5dc5aa65e876839dcd0c94c0f77c96f133db710d6b98f7114ab724
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491519"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119320155"
 ---
-# <a name="ccm_setunicodeformat-message"></a>\_Mensaje SETUNICODEFORMAT de CCM
+# <a name="ccm_setunicodeformat-message"></a>Mensaje \_ SETUNICODEFORMAT de CCM
 
-Establece la marca del formato de caracteres Unicode para el control. Este mensaje le permite cambiar el juego de caracteres utilizado por el control en tiempo de ejecución, en lugar de tener que volver a crear el control.
+Establece la marca de formato de caracteres Unicode para el control. Este mensaje le permite cambiar el juego de caracteres utilizado por el control en tiempo de ejecución en lugar de tener que volver a crear el control.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,7 +32,7 @@ Establece la marca del formato de caracteres Unicode para el control. Este mensa
 *wParam* 
 </dt> <dd>
 
-Valor que determina el juego de caracteres utilizado por el control. Si este valor es **true**, el control usará caracteres Unicode. Si este valor es **false**, el control usará caracteres ANSI.
+Valor que determina el juego de caracteres utilizado por el control . Si este valor es **TRUE,** el control usará caracteres Unicode. Si este valor es **FALSE,** el control usará caracteres ANSI.
 
 </dd> <dt>
 
@@ -41,25 +41,25 @@ Valor que determina el juego de caracteres utilizado por el control. Si este val
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve la marca de formato Unicode anterior para el control.
+Devuelve la marca de formato Unicode anterior para el control .
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_GETUNICODEFORMAT CCM**](ccm-getunicodeformat.md)
+[**CCM \_ GETUNICODEFORMAT**](ccm-getunicodeformat.md)
 </dt> </dl>
 
  

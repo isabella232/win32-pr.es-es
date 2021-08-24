@@ -1,9 +1,9 @@
 ---
-title: función gluNurbsSurface (GLU. h)
-description: La función gluNurbsSurface define la forma de una superficie no uniforme B-spline racional (NURBS).
+title: Función gluNurbsSurface (Glu.h)
+description: La función gluNurbsSurface define la forma de una superficie de spline B racionalizada no uniforme (SPLINEBS).
 ms.assetid: ee86376c-26ba-49a9-b0b0-4ca936b6614b
 keywords:
-- gluNurbsSurface (función) OpenGL
+- Función gluNurbsSurface OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c784741eded406a49bba90f67544a406ab024a6c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 50f56232ac891cbdfba18195741d875ecc5436112772ed4fa665903374e96602
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103995906"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119554195"
 ---
-# <a name="glunurbssurface-function"></a>gluNurbsSurface función)
+# <a name="glunurbssurface-function"></a>función gluNurbsSurface
 
-La función **gluNurbsSurface** define la forma de una superficie no uniforme B-spline racional ([NURBS](using-nurbs-curves-and-surfaces.md)).
+La **función gluNurbsSurface** define la forma de una superficie de spline B no uniforme de tipo rational [(SPLINEBS).](using-nurbs-curves-and-surfaces.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,77 +53,77 @@ void WINAPI gluNurbsSurface(
 *nobj* 
 </dt> <dd>
 
-El objeto NURBS (creado con [**gluNewNurbsRenderer**](glunewnurbsrenderer.md)).
+El objeto RGBBS (creado [**con gluNewNurbsRenderer).**](glunewnurbsrenderer.md)
 
 </dd> <dt>
 
-*recuento de sknot \_* 
+*sknot \_ count* 
 </dt> <dd>
 
-Número de nudos en la dirección de *u* paramétrica.
+Número de sincronos en la dirección U *paramétrica.*
 
 </dd> <dt>
 
 *sknot* 
 </dt> <dd>
 
-Una matriz de valores de *sknot de \_ recuento* de nondecreasing en la dirección *u* paramétrica.
+Matriz de valores *sknot \_ count* no decrecientes en la dirección *u* paramétrica.
 
 </dd> <dt>
 
-*recuento de tknot \_* 
+*tknot \_ count* 
 </dt> <dd>
 
-Número de nudos en la dirección de *v* paramétrica.
+Número de grados en la dirección v *paramétrica.*
 
 </dd> <dt>
 
 *tknot* 
 </dt> <dd>
 
-Una matriz de valores de *tknot de \_ recuento* de nondecreasing en la dirección *v* paramétrica.
+Matriz de valores de reducción no decrecientes de *tknot \_ count* en la dirección *v* paramétrica.
 
 </dd> <dt>
 
-*\_intervalo s* 
+*s \_ stride* 
 </dt> <dd>
 
-Desplazamiento (como número de valores únicos de precisionfloating) entre los puntos de control sucesivos de la dirección *u* paramétrica de *ctlarray*.
+Desplazamiento (como un número de valores de punto de precisión única)  entre los puntos de control sucesivos en la dirección u paramétrica en *ctlarray*.
 
 </dd> <dt>
 
-*\_intervalo t* 
+*t \_ stride* 
 </dt> <dd>
 
-Desplazamiento (en valores únicos de punto precisionfloating) entre los puntos de control sucesivos de la dirección *v* paramétrica en *ctlarray*.
+Desplazamiento (en valores de punto de precisión única) entre los  puntos de control sucesivos en la dirección v paramétrica en *ctlarray*.
 
 </dd> <dt>
 
 *ctlarray* 
 </dt> <dd>
 
-Una matriz que contiene los puntos de control para la superficie de NURBS. Los desplazamientos entre los puntos de control sucesivos de las direcciones de *u* y *v* paramétricas se proporcionan mediante el *\_ STRIDE* y el *\_ paso t*.
+Matriz que contiene puntos de control para la superficie DE LABS. Los desplazamientos entre los puntos de control sucesivos en *\_* las direcciones *u* y *v* paramétricas se dan por un intervalo y un intervalo *\_ de t.*
 
 </dd> <dt>
 
 *sorder* 
 </dt> <dd>
 
-El orden de la superficie NURBS en la dirección *u* paramétrica. El orden es uno más que el grado; por lo tanto, una superficie cúbica en *u* tiene un orden *u* de 4.
+El orden de la superficie de LABS en la *dirección* u paramétrica. El orden es uno más que el grado, por lo que una superficie que es cúbica en *u* tiene *un orden u* de 4.
 
 </dd> <dt>
 
 *torder* 
 </dt> <dd>
 
-El orden de la superficie NURBS en la dirección *v* paramétrica. El orden es uno más que el grado; por lo tanto, una superficie cúbica en *v* tiene un orden *v* de 4.
+El orden de la superficie de LABS en la dirección v *paramétrica.* El orden es uno más que el grado, por lo que una superficie que es cúbica en *v* tiene un *orden v* de 4.
 
 </dd> <dt>
 
 *type* 
 </dt> <dd>
 
-Tipo de la superficie. El parámetro de *tipo* puede ser cualquiera de los tipos de evaluador bidimensionales válidos (como GL \_ MAP2 ( \_ Vertex \_ 3 o GL \_ MAP2 ( \_ color \_ 4).
+Tipo de la superficie. El *parámetro* de tipo puede ser cualquiera de los tipos válidos de evaluador bidimensional (como GL \_ MAP2 VERTEX 3 o GL \_ \_ \_ MAP2 COLOR \_ \_ 4).
 
 </dd> </dl>
 
@@ -131,26 +131,26 @@ Tipo de la superficie. El parámetro de *tipo* puede ser cualquiera de los tipos
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use **gluNurbsSurface** en una definición de superficie de NURBS para describir la forma de una superficie NURBS (antes de cualquier recorte). Para marcar el inicio de una definición de superficie de NURBS, utilice la función [**gluBeginSurface**](glubeginsurface.md) . Para marcar el final de una definición de superficie de NURBS, utilice la función [**gluEndSurface**](gluendsurface.md) . Llame a **gluNurbsSurface** solo en una definición de Surface de NURBS.
+Use **gluNurbsSurface dentro** de una definición de superficie DE DSLBS para describir la forma de una superficie DE LABS (antes de cualquier recorte). Para marcar el principio de una definición de superficie DE LABS, use la [**función gluBeginSurface.**](glubeginsurface.md) Para marcar el final de una definición de superficie DE LABS, use la [**función gluEndSurface.**](gluendsurface.md) Llame **a gluNurbsSurface solo** dentro de una definición de superficie DE DSLBS.
 
-Las coordenadas de posición, textura y color se asocian con una superficie presentando cada una de ellas como un **gluNurbsSurface** independiente entre un par de gluEndSurface de **gluBeginSurface** /  . Dentro de un solo par de gluEndSurface de **gluBeginSurface** /  , solo puede hacer una llamada a **gluNurbsSurface** para los datos de color, posición y textura. Realice exactamente una llamada para describir la posición de la superficie (un *tipo* de GL \_ MAP2 ( \_ Vertex \_ 3 o GL \_ MAP2 ( \_ Vertex \_ 4).
+Las coordenadas de posición, textura y color se asocian a una superficie mediante la presentación de cada una como un **gluNurbsSurface** independiente entre un par **gluBeginSurface** / **gluEndSurface.** Dentro de un único par **gluBeginSurface** gluEndSurface, solo puede realizar una llamada a /  **gluNurbsSurface** para obtener datos de color, posición y textura. Realice exactamente una llamada para describir la  posición de la superficie (un tipo de GL \_ MAP2 VERTEX 3 o GL \_ \_ \_ MAP2 \_ VERTEX \_ 4).
 
-Puede recortar una superficie NURBS mediante las funciones [**gluNurbsCurve**](glunurbscurve.md) y [**gluPwlCurve**](glupwlcurve.md) entre las llamadas a [**gluBeginTrim**](glubegintrim.md) y [**gluEndTrim**](gluendtrim.md).
+Puede recortar una superficie DETRUBS mediante las funciones [**gluNurbsCurve**](glunurbscurve.md) y [**gluPwlCurve**](glupwlcurve.md) entre las llamadas a [**gluBeginTrim**](glubegintrim.md) y [**gluEndTrim**](gluendtrim.md).
 
-Un **gluNurbsSurface** con *sknotr \_* nudos en los nudos de la dirección *u* y *tknot \_ Count* en la dirección *v* con los pedidos *sorder* y *torder* debe tener (*sknot \_ Count*  - *sorder*) multipied por (*tknot \_ Count*  - *torder*) puntos de control.
+Un **gluNurbsSurface** con recuento de *sknot \_* en la dirección *u* y *tknot \_ count* en la *dirección v* con orders *sorder* y *torder* deben tener (*sknot \_ count*  - *sorder*) multipied por (*tknot \_ count*  - *torder*) puntos de control.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Glu. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 

@@ -1,21 +1,21 @@
 ---
-description: Cree una textura de mapa de entorno cúbica llamando al método CreateCubeTexture. Las texturas del mapa del entorno cúbica deben ser cuadradas, con dimensiones que son una potencia de dos.
+description: Para crear una textura de mapa de entorno cúbica, llame al método CreateCubeTexture. Las texturas de mapa de entorno cúbicas deben ser cuadradas, con dimensiones que son una potencia de dos.
 ms.assetid: 3879d215-064b-4d7d-afae-2ed46569c8bf
-title: Crear superficies de mapa de entorno cúbica (Direct3D 9)
+title: Crear superficies de mapa de entorno cúbicas (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 36be3067c6a5f21c39cfed7cab731ca875b70799
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 0b37321978a40170d47718318e4b3f6898ba04d5fa229e97ada47e08e589fdcb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104539028"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119608025"
 ---
-# <a name="creating-cubic-environment-map-surfaces-direct3d-9"></a>Crear superficies de mapa de entorno cúbica (Direct3D 9)
+# <a name="creating-cubic-environment-map-surfaces-direct3d-9"></a>Crear superficies de mapa de entorno cúbicas (Direct3D 9)
 
-Cree una textura de mapa de entorno cúbica llamando al método [**CreateCubeTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createcubetexture) . Las texturas del mapa del entorno cúbica deben ser cuadradas, con dimensiones que son una potencia de dos.
+Para crear una textura de mapa de entorno cúbica, llame al [**método CreateCubeTexture.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createcubetexture) Las texturas de mapa de entorno cúbicas deben ser cuadradas, con dimensiones que son una potencia de dos.
 
-En el ejemplo de código siguiente se muestra cómo la aplicación de C++ podría crear un mapa de entorno cúbico simple.
+En el ejemplo de código siguiente se muestra cómo la aplicación de C++ podría crear un mapa de entorno cúbica simple.
 
 
 ```
@@ -29,11 +29,11 @@ m_d3dDevice->CreateCubeTexture(256, 1, D3DUSAGE_RENDERTARGET, D3DFMT_R8G8B8,
 
 
 
-## <a name="accessing-cubic-environment-map-faces"></a>Acceso a caras de mapas de entorno cúbicos
+## <a name="accessing-cubic-environment-map-faces"></a>Acceso a caras de mapa de entorno cúbica
 
-Puede navegar entre caras de un mapa de entorno cúbico mediante el método [**GetCubeMapSurface**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dcubetexture9-getcubemapsurface) .
+Puede navegar entre las caras de un mapa de entorno cúbica mediante el [**método GetCubeMapSurface.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dcubetexture9-getcubemapsurface)
 
-En el ejemplo de código siguiente se usa [**GetCubeMapSurface**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dcubetexture9-getcubemapsurface) para recuperar la superficie del mapa de cubos usada para la cara y positiva (cara 2).
+En el ejemplo de código siguiente se [**usa GetCubeMapSurface para**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dcubetexture9-getcubemapsurface) recuperar la superficie de mapa de cubo usada para la cara Y positiva (cara 2).
 
 
 ```
@@ -45,19 +45,19 @@ m_pCubeMap->GetCubeMapSurface(D3DCUBEMAP_FACE_POSITIVE_Y, 0, &pFace2);
 
 
 
-El primer parámetro que [**GetCubeMapSurface**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dcubetexture9-getcubemapsurface) acepta es un valor enumerado de [**\_ caras D3DCUBEMAP**](./d3dcubemap-faces.md) que describe la superficie adjunta que el método debe recuperar. El segundo parámetro indica a Direct3D el nivel de la textura de un cubo de mipmapped que se va a recuperar. El tercer parámetro aceptado es la dirección de la interfaz [**IDirect3DSurface9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dsurface9) , que representa la superficie de textura del cubo devuelta. Dado que este mapa de cubo no es mipmapped, aquí se usa 0.
+El primer parámetro que [**acepta GetCubeMapSurface**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dcubetexture9-getcubemapsurface) es un valor enumerado de FACES de [**D3DCUBEMAP \_**](./d3dcubemap-faces.md) que describe la superficie adjunta que el método debe recuperar. El segundo parámetro indica a Direct3D qué nivel de una textura de cubo mipmapped se va a recuperar. El tercer parámetro aceptado es la dirección de la [**interfaz IDirect3DSurface9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dsurface9) que representa la superficie de textura del cubo devuelta. Dado que este mapa de cubo no es mipmapped, aquí se usa 0.
 
 > [!Note]
 >
-> Después de llamar a este método, se aumenta el recuento de referencias internas en la interfaz [**IDirect3DSurface9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dsurface9) . Cuando haya terminado de usar esta superficie, asegúrese de llamar al método [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) en esta interfaz **IDirect3DSurface9** o tendrá una pérdida de memoria.
+> Después de llamar a este método, se aumenta el recuento de referencias internas en [**la interfaz IDirect3DSurface9.**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dsurface9) Cuando haya terminado de usar esta superficie, asegúrese de llamar al método [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) en esta interfaz **IDirect3DSurface9** o tendrá una pérdida de memoria.
 
  
 
-## <a name="rendering-to-cubic-environment-maps"></a>Representación en mapas de entorno cúbicos
+## <a name="rendering-to-cubic-environment-maps"></a>Representación en el entorno cúbica Mapas
 
-Puede copiar imágenes en las caras individuales del mapa de cubo de la misma manera que cualquier otro objeto de textura o superficie. Lo más importante que hay que hacer antes de la representación en una esfera es establecer las matrices de transformación para que la cámara se coloque correctamente y apunte a la dirección adecuada para esa esfera: hacia delante (+ z), hacia atrás (-z), izquierda (-x), derecha (+ x), arriba (+ y) o hacia abajo (-y).
+Puede copiar imágenes en las caras individuales del mapa de cubo como lo haría con cualquier otro objeto de textura o superficie. Lo más importante que hay que hacer antes de representar una cara es establecer las matrices de transformación para que la cámara se coloque correctamente y apunta en la dirección adecuada para esa cara: hacia delante (+z), hacia atrás (-z), izquierda (-x), derecha (+x), arriba (+y) o hacia abajo (-y).
 
-En el siguiente ejemplo de código de C++ se prepara y establece una matriz de vistas según la superficie que se representa.
+El siguiente ejemplo de código de C++ prepara y establece una matriz de vistas según la cara que se representa.
 
 
 ```
@@ -79,9 +79,9 @@ void RenderFaces()
 
 
 
-Recuerde que cada una de las caras de un mapa de entorno cúbico representa un campo de vista de 90 grados. A menos que la aplicación requiera un campo diferente del ángulo de vista, para los efectos especiales, por ejemplo, tenga cuidado para establecer la matriz de proyección en consecuencia.
+Recuerde que cada cara de un mapa de entorno cúbica representa un campo de vista de 90 grados. A menos que la aplicación requiera un ángulo de campo de vista diferente (por ejemplo, para efectos especiales), tenga cuidado de establecer la matriz de proyección en consecuencia.
 
-En este ejemplo de código se crea y establece una matriz de proyección para el caso más común.
+Este ejemplo de código crea y establece una matriz de proyección para el caso más común.
 
 
 ```
@@ -132,7 +132,7 @@ En este ejemplo de código se crea y establece una matriz de proyección para el
 
 
 
-Cuando la cámara está en posición y el conjunto de matrices de proyección, puede representar la escena. Cada objeto de la escena debe colocarse tal como lo haría normalmente. En el ejemplo de código siguiente, que se proporciona para la integridad, se describe esta tarea.
+Cuando la cámara está en posición y la matriz de proyección establecida, puede representar la escena. Cada objeto de la escena debe colocarse como lo haría normalmente. En el ejemplo de código siguiente, proporcionado para su integridad, se describe esta tarea.
 
 
 ```
@@ -161,7 +161,7 @@ Cuando la cámara está en posición y el conjunto de matrices de proyección, p
 
 
 
-Observe la llamada al método [**SetRenderTarget**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrendertarget) . Al representar las caras del mapa de cubo, debe asignar la cara como la superficie de representación-destino actual. Las aplicaciones que usan búferes de profundidad pueden crear explícitamente un búfer de profundidad para el destino de representación o reasignar un búfer de profundidad existente a la superficie de representación-destino. En el ejemplo de código anterior se usa el último enfoque.
+Observe la llamada al [**método SetRenderTarget.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrendertarget) Al representar las caras del mapa de cubo, debe asignar la cara como la superficie de destino de representación actual. Las aplicaciones que usan búferes de profundidad pueden crear explícitamente un búfer de profundidad para render-target o reasignar un búfer de profundidad existente a la superficie render-target. En el ejemplo de código anterior se usa el último enfoque.
 
 ## <a name="related-topics"></a>Temas relacionados
 

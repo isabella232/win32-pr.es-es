@@ -4,16 +4,16 @@ description: Caché en modo kernel
 ms.assetid: f9a46ff4-779b-4b3a-b8f5-1ae10a3c0a61
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 83c409b00da03c0550899f5d26c4e6a0fa215118
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c34296ae6d0bca81988437478eb5893f1a7cb1b3c8a0dc2ae461356499bbfe10
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090893"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119340505"
 ---
 # <a name="kernel-mode-cache"></a>Caché en modo kernel
 
-La API del servidor HTTP versión 2.0 permite a las aplicaciones almacenar en caché respuestas con contenido estático en modo kernel. Se logra un mayor rendimiento cuando las solicitudes se atendidas desde la caché del kernel sin pasar al modo de usuario.
+La API del servidor HTTP versión 2.0 permite a las aplicaciones almacenar en caché las respuestas con contenido estático en modo kernel. Se logra un mayor rendimiento cuando las solicitudes se atendidas desde la caché del kernel sin pasar al modo de usuario.
 
 La API del servidor HTTP aplica las configuraciones de propiedad adecuadas a todas las solicitudes atendidas desde la caché del kernel, incluidas las respuestas de registro. Sin embargo, las solicitudes que requieren autenticación no se atendidas desde la memoria caché.
 
@@ -43,10 +43,10 @@ Además de las restricciones de la solicitud, la respuesta también debe cumplir
 
 -   Toda la respuesta debe proporcionarse en una sola llamada a [**HttpSendHttpResponse**](/windows/desktop/api/Http/nf-http-httpsendhttpresponse).
 -   No se debe suprimir el encabezado de fecha de la respuesta.
--   Si el encabezado modificado por última vez está presente, el valor del encabezado debe tener la sintaxis correcta. El valor de hora de este encabezado se usa para la comprobación del control de caché.
+-   Si el encabezado modificado por última vez está presente, el valor del encabezado debe tener la sintaxis correcta. El valor de tiempo de este encabezado se usa para la comprobación del control de caché.
 -   La caché en modo kernel tiene espacio suficiente para almacenar la respuesta.
 
-De forma predeterminada, la caché de respuestas en modo kernel está habilitada. Si no se cumple alguna de las condiciones de la solicitud o respuesta enumeradas anteriormente, se enviará la respuesta, pero no se almacenará en caché. En la API de servidor HTTP versión 2.0, [**HttpSendHttpResponse incluye**](/windows/desktop/api/Http/nf-http-httpsendhttpresponse) un parámetro *pCachePolicy* opcional para pasar la estructura [**HTTP CACHE \_ \_ POLICY.**](/windows/desktop/api/Http/ns-http-http_cache_policy) Las aplicaciones usan la estructura de directivas de caché para configurar la memoria caché.
+De forma predeterminada, la caché de respuestas en modo kernel está habilitada. Si no se cumple alguna de las condiciones de la solicitud o respuesta enumeradas anteriormente, se enviará la respuesta, pero no se almacenará en caché. En la API de servidor HTTP versión 2.0, [**HttpSendHttpResponse**](/windows/desktop/api/Http/nf-http-httpsendhttpresponse) incluye un parámetro *pCachePolicy* opcional para pasar la estructura [**DE DIRECTIVA DE \_ CACHÉ \_ HTTP.**](/windows/desktop/api/Http/ns-http-http_cache_policy) Las aplicaciones usan la estructura de directivas de caché para configurar la memoria caché.
 
  
 

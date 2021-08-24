@@ -3,33 +3,33 @@ title: Constantes de WCS
 description: Constantes de WCS
 ms.assetid: 13874b84-cce6-4165-8b22-01d84f8ea933
 keywords:
-- Sistema de color de Windows (WCS), constantes
-- WCS (sistema de colores de Windows), constantes
-- Administración del color de imagen, constantes
-- Administración del color, constantes
-- colores, constantes
-- Referencia WCS, constantes
-- referencia de las constantes WCS,
-- Sistema de color de Windows (WCS), marcas
-- WCS (sistema de colores de Windows), marcas
-- Administración del color de imagen, marcas
-- Administración del color, marcas
-- colores, marcas
-- Referencia WCS, marcas
-- referencia de WCS, marcas
+- Windows Sistema de colores (WCS), constantes
+- WCS (Windows de colores), constantes
+- administración de colores de imagen, constantes
+- administración de colores, constantes
+- colors,constants
+- referencia de WCS, constantes
+- referencia de WCS,constants
+- Windows Sistema de colores (WCS), marcas
+- WCS (Windows color),flags
+- administración de colores de imagen, marcas
+- administración de colores, marcas
+- colors,flags
+- WCS reference,flags
+- referencia de WCS,flags
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7703977fff5bedc3fb7cc85cd2c2c74098a7ec3d
-ms.sourcegitcommit: 38954f8f0d70f44bff4a943784f468ebd7ef691a
+ms.openlocfilehash: 58a761ce4354ce4a0ed8ee4da4192a2137752538a0d40b1ba06683efed39f793
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "105720796"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119442335"
 ---
 # <a name="wcs-constants"></a>Constantes de WCS
 
-Esta sección contiene información sobre las constantes y los valores de marca utilizados por WCS.
+Esta sección contiene información sobre las constantes y los valores de marca que usa WCS.
 
 -   [Constantes del espacio de color](color-space-constants.md)
 -   [Indicadores de creación de transformación de CMM](cmm-transform-creation-flags.md)

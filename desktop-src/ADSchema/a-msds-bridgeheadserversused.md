@@ -1,11 +1,11 @@
 ---
-title: atributo usado por MS-DS-cabeza de puente-servidores
-description: Lista de servidores principales de puente usados por KCC en la ejecución anterior.
+title: Atributo ms-DS-BridgeHead-Servers-Used
+description: Lista de servidores de puente principal usados por KCC en la ejecución anterior.
 ms.assetid: f99e9ef2-1a64-49ab-b6b7-7613f3246e61
 ms.tgt_platform: multiple
 keywords:
-- MS-DS-cabeza de puente-servidores-esquema de AD de atributos usados
-- Esquema de AD de atributo msDS-BridgeHeadServersUsed
+- ms-DS-BridgeHead-Servers-Used attribute AD Schema
+- msDS-BridgeHeadServersUsed attribute AD Schema (Esquema de AD del atributo msDS-BridgeHeadServersUsed)
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 52dca97dc5d8f501588cebc04ceae090fd1ce69c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 99d6f26e28528f633e9dd0593e60d2e4d7b54780740feab35ca211a2494751ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119552725"
 ---
-# <a name="ms-ds-bridgehead-servers-used-attribute"></a>atributo usado por MS-DS-cabeza de puente-servidores
+# <a name="ms-ds-bridgehead-servers-used-attribute"></a>Atributo ms-DS-BridgeHead-Servers-Used
 
-Lista de servidores principales de puente usados por KCC en la ejecución anterior.
+Lista de servidores de puente principal usados por KCC en la ejecución anterior.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------|
-| CN                | MS-DS-cabeza de puente-servidores-usados                   |
-| Nombre para mostrar de LDAP | msDS-BridgeHeadServersUsed                      |
-| Tamaño              | \-                                              |
-| Actualizar privilegio  | \-                                              |
+| CN                | ms-DS-BridgeHead-Servers-Used                   |
+| Ldap-Display-Name | msDS-BridgeHeadServersUsed                      |
+| Size              | \-                                              |
+| Actualizar privilegios  | \-                                              |
 | Frecuencia de actualización  | \-                                              |
 | Attribute-Id      | 1.2.840.113556.1.4.2049                         |
-| System-ID-GUID    | 3ced1465-7b71-2541-8780-1e1ea6243a82            |
-| Sintaxis            | [**Object(DN-Binary)**](s-object-dn-binary.md) |
+| System-Id-Guid    | 3ced1465-7b71-2541-8780-1e1ea6243a82            |
+| Syntax            | [**Object(DN-Binary)**](s-object-dn-binary.md) |
 
 
 
@@ -52,13 +52,13 @@ Lista de servidores principales de puente usados por KCC en la ejecución anteri
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | 2160                              |
+| Id. de vínculo                | 2160                              |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | False                             |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Falso                             |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -73,13 +73,13 @@ Lista de servidores principales de puente usados por KCC en la ejecución anteri
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | 2160                              |
+| Id. de vínculo                | 2160                              |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | False                             |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Falso                             |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -92,15 +92,15 @@ Lista de servidores principales de puente usados por KCC en la ejecución anteri
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | 2160                              |
+| Id. de vínculo                | 2160                              |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | False                             |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Falso                             |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |

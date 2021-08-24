@@ -1,12 +1,12 @@
 ---
-title: Propiedad DriveCount de IMsRdpDriveCollection
-description: Recupera el recuento de objetos de la colección. | Propiedad DriveCount de IMsRdpDriveCollection
+title: Propiedad IMsRdpDriveCollection DriveCount
+description: Recupera el recuento de objetos de la colección. | Propiedad IMsRdpDriveCollection DriveCount
 ms.assetid: 33b39657-2cc1-4f1e-b23a-809a9737ed8d
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad DriveCount
-- Propiedad DriveCount Servicios de Escritorio remoto, interfaz IMsRdpDriveCollection
-- Servicios de Escritorio remoto de la interfaz IMsRdpDriveCollection, propiedad DriveCount
+- Propiedad DriveCount Servicios de Escritorio remoto
+- Propiedad DriveCount Servicios de Escritorio remoto , interfaz IMsRdpDriveCollection
+- Interfaz IMsRdpDriveCollection Servicios de Escritorio remoto , propiedad DriveCount
 topic_type:
 - apiref
 api_name:
@@ -18,14 +18,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af724344cd7d88676483c13d1a6a8cfeb8548294
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 8ee79a361e8e24f8b699b8b5fae4aba923d11f62bf512f056a788c15d34d4805
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105689846"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119513295"
 ---
-# <a name="imsrdpdrivecollectiondrivecount-property"></a>IMsRdpDriveCollection::D propiedad riveCount
+# <a name="imsrdpdrivecollectiondrivecount-property"></a>IMsRdpDriveCollection::D riveCount, propiedad
 
 Recupera el recuento de objetos de la colección.
 
@@ -48,19 +48,19 @@ Recuento de objetos.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Si el método se ejecuta correctamente, se devuelve **S \_ OK** . Cualquier otro valor **HRESULT** indica que se produjo un error en la llamada.
+Si el método se realiza correctamente, **se devuelve S \_ OK.** Cualquier otro **valor HRESULT** indica que se ha dado error en la llamada.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>   |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>   |
-| IID<br/>                      | IID \_ IMsRdpDriveCollection se define como 7ff17599-da2c-4677-Ad35-f60c04fe1585<br/> |
+| IID<br/>                      | IID IMsRdpDriveCollection se define como \_ 7ff17599-da2c-4677-ad35-f60c04fe1585<br/> |
 
 
 

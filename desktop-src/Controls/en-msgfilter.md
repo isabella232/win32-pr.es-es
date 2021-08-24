@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de EN_MSGFILTER (RichEdit. h)
-description: Notifica a la ventana primaria de un control Rich Edit de un evento de teclado o del mouse en el control. Un control Rich Edit envía este código de notificación en forma de mensaje de \_ notificación de WM.
+title: EN_MSGFILTER de notificación (Richedit.h)
+description: Notifica a la ventana primaria de un control de edición enriquecido un evento de teclado o mouse en el control. Un control de edición enriquecido envía este código de notificación en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 96cf0047-baae-46cd-82e8-ab6f3f353260
 keywords:
-- EN_MSGFILTER controles de código de notificación de Windows
+- EN_MSGFILTER código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 40ddb3e9b1d5314e2e981b00f0e0ef8e22974242
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 87d2cbe47af3d74deb4795946d58871b4729118db0e839027e78e05976ebf855
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119436715"
 ---
-# <a name="en_msgfilter-notification-code"></a>\_Código de notificación en MSGFILTER
+# <a name="en_msgfilter-notification-code"></a>Código de notificación EN \_ MSGFILTER
 
-Notifica a la ventana primaria de un control Rich Edit de un evento de teclado o del mouse en el control. Un control Rich Edit envía este código de notificación en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Notifica a la ventana primaria de un control de edición enriquecido un evento de teclado o mouse en el control. Un control de edición enriquecido envía este código de notificación en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,27 +41,27 @@ EN_MSGFILTER
 *lParam* 
 </dt> <dd>
 
-Estructura [**MSGFILTER**](/windows/desktop/api/Richedit/ns-richedit-msgfilter) que contiene información sobre el mensaje del mouse o del teclado. Si la ventana primaria modifica esta estructura y devuelve un valor distinto de cero, el mensaje modificado se procesa en lugar del original.
+Estructura [**MSGFILTER que**](/windows/desktop/api/Richedit/ns-richedit-msgfilter) contiene información sobre el mensaje del teclado o del mouse. Si la ventana primaria modifica esta estructura y devuelve un valor distinto de cero, se procesa el mensaje modificado en lugar del original.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si el control debe procesar el evento de teclado o del mouse.
+Devuelve cero si el control debe procesar el evento de teclado o mouse.
 
-Devuelve un valor distinto de cero si el control debe omitir el evento de teclado o del mouse.
+Devuelve un valor distinto de cero si el control debe omitir el evento de teclado o mouse.
 
 ## <a name="remarks"></a>Observaciones
 
-Para recibir \_ los códigos de notificación en MSGFILTER para los eventos, especifique una o varias de las siguientes marcas en la máscara enviada con el mensaje [**em \_ SETEVENTMASK**](em-seteventmask.md) .
+Para recibir códigos de notificación EN MSGFILTER para eventos, especifique una o varias de las marcas siguientes en la máscara enviada con el mensaje \_ [**EM \_ SETEVENTMASK.**](em-seteventmask.md)
 
 
 
 | Marca                                                                             | Significado                                                |
 |----------------------------------------------------------------------------------|--------------------------------------------------------|
-| [**ENM \_ KEYEVENTS**](rich-edit-control-event-mask-flags.md)       | Para recibir códigos de notificación para los eventos de teclado.     |
-| [**ENM \_ MOUSEEVENTS**](rich-edit-control-event-mask-flags.md)   | Para recibir códigos de notificación para los eventos del mouse.        |
-| [**ENM \_ SCROLLEVENTS**](rich-edit-control-event-mask-flags.md) | Para recibir los códigos de notificación de un evento de rueda del mouse. |
+| [**ENM \_ KEYEVENTS**](rich-edit-control-event-mask-flags.md)       | Para recibir códigos de notificación para eventos de teclado.     |
+| [**ENM \_ MOUSEEVENTS**](rich-edit-control-event-mask-flags.md)   | Para recibir códigos de notificación para eventos del mouse.        |
+| [**EVENTOS DE DESPLAZAMIENTO DE ENM \_**](rich-edit-control-event-mask-flags.md) | Para recibir códigos de notificación para un evento de rueda del mouse. |
 
 
 
@@ -73,9 +73,9 @@ Para recibir \_ los códigos de notificación en MSGFILTER para los eventos, esp
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -89,7 +89,7 @@ Para recibir \_ los códigos de notificación en MSGFILTER para los eventos, esp
 [**MSGFILTER**](/windows/desktop/api/Richedit/ns-richedit-msgfilter)
 </dt> <dt>
 
-[**\_notificaciones de WM**](wm-notify.md)
+[**WM \_ NOTIFY**](wm-notify.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de LB_SETHORIZONTALEXTENT (Winuser. h)
-description: Establece el ancho, en píxeles, por el que se puede desplazar un cuadro de lista horizontalmente (el ancho desplazable).
+title: LB_SETHORIZONTALEXTENT mensaje (Winuser.h)
+description: Establece el ancho, en píxeles, por el que se puede desplazar horizontalmente un cuadro de lista (el ancho desplazable).
 ms.assetid: 7d59b6de-2a22-4246-936b-4c669d285392
 keywords:
-- LB_SETHORIZONTALEXTENT controles de mensajes de Windows
+- LB_SETHORIZONTALEXTENT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ded17b9ea2d78a77b030950877047256d0e2a1a1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ce248354b853dd3be15e76646958ed25068648182970d748da35fb5c596ca49e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905513"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119433885"
 ---
-# <a name="lb_sethorizontalextent-message"></a>\_Mensaje lb SETHORIZONTALEXTENT
+# <a name="lb_sethorizontalextent-message"></a>Mensaje \_ LB SETHORIZONTALEXTENT
 
-Establece el ancho, en píxeles, por el que se puede desplazar un cuadro de lista horizontalmente (el ancho desplazable). Si el ancho del cuadro de lista es menor que este valor, la barra de desplazamiento horizontal se desplaza horizontalmente por los elementos del cuadro de lista. Si el ancho del cuadro de lista es igual o mayor que este valor, se oculta la barra de desplazamiento horizontal.
+Establece el ancho, en píxeles, por el que se puede desplazar horizontalmente un cuadro de lista (el ancho desplazable). Si el ancho del cuadro de lista es menor que este valor, la barra de desplazamiento horizontal desplaza horizontalmente los elementos del cuadro de lista. Si el ancho del cuadro de lista es igual o mayor que este valor, la barra de desplazamiento horizontal está oculta.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,9 +32,9 @@ Establece el ancho, en píxeles, por el que se puede desplazar un cuadro de list
 *wParam* 
 </dt> <dd>
 
-Especifica el número de píxeles que se puede desplazar el cuadro de lista.
+Especifica el número de píxeles por los que se puede desplazar el cuadro de lista.
 
-Windows 95, Windows 98 o Windows Millennium Edition (Windows me): el parámetro *wParam* está limitado a valores de 16 bits.
+Windows 95/Windows 98/Windows Edition (Windows Me): el parámetro *wParam* está limitado a valores de 16 bits.
 
 </dd> <dt>
 
@@ -47,11 +47,11 @@ Este parámetro no se utiliza.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje no devuelve ningún valor.
+Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para responder al mensaje de **lb \_ SETHORIZONTALEXTENT** , el cuadro de lista se debe haber definido con el estilo [**WS \_ HSCROLL**](/windows/desktop/winmsg/window-styles) .
+Para responder al mensaje **\_ LB SETHORIZONTALEXTENT,** el cuadro de lista se debe haber definido con el estilo [**\_ HSCROLL de WS.**](/windows/desktop/winmsg/window-styles)
 
 Tenga en cuenta que un cuadro de lista no actualiza dinámicamente su extensión horizontal.
 
@@ -63,9 +63,9 @@ Este mensaje no tiene ningún efecto en un cuadro de lista de varias columnas.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

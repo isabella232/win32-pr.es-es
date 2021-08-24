@@ -1,6 +1,6 @@
 ---
 title: Sintaxis de cadena (imprimible)
-description: Cadena que distingue entre mayúsculas y minúsculas y que contiene caracteres del juego de caracteres imprimibles.
+description: Cadena que distingue mayúsculas de minúsculas que contiene caracteres del juego de caracteres imprimible.
 ms.assetid: c2c1685f-d03f-4436-8240-a97c8ce0f571
 ms.tgt_platform: multiple
 keywords:
@@ -13,27 +13,27 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 22cd5ebe2a9cca95324258c5b54f8aeaabdc7c06
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 086cfc65520514f3c2817746de23c88625e93ec43a0d367d61b86b34833afb1d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658461"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119580125"
 ---
 # <a name="stringprintable-syntax"></a>Sintaxis de cadena (imprimible)
 
-Cadena que distingue entre mayúsculas y minúsculas y que contiene caracteres del juego de caracteres imprimibles.
+Cadena que distingue mayúsculas de minúsculas que contiene caracteres del juego de caracteres imprimible.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|------------------------------------------------------------------------|
 | Nombre         | String(Printable)                                                      |
-| IDENTIFICADOR de sintaxis    | 2.5.5.5                                                                |
-| IDENTIFICADOR DE OM        | 19                                                                     |
-| Tipo MAPI    | TSTRING                                                                |
-| Tipo ADS     | ADSTYPE \_ cadena imprimible \_                                             |
-| Tipo Variant | VT \_ BSTR                                                               |
+| Identificador de sintaxis    | 2.5.5.5                                                                |
+| Id. de OM        | 19                                                                     |
+| Tipo DE ARCHIVO    | TSTRING                                                                |
+| ADS Type     | CADENA IMPRIMIBLE \_ ADSTYPE \_                                             |
+| Tipo de variante | VT \_ BSTR                                                               |
 | Tipo de SDS     | [System.String](/dotnet/api/system.string) |
 
 

@@ -4,43 +4,43 @@ description: Atributo StartArrowWidth de VML
 ms.assetid: 47b55330-7165-4368-ad01-5b7b38a6e5b2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 01ba4f5adddc328d1791fa2beb570f59da826f83
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: d427db8e504fca57fc77b24b7b5fa1360ed7716276cd67b43c55ee8d0552d8f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103792555"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119513245"
 ---
 # <a name="vml-startarrowwidth-attribute"></a>Atributo StartArrowWidth de VML
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Define el ancho de la punta de flecha para el inicio de una línea. Lectura/escritura **VgArrowheadWidth**.
+Define el ancho de la punta de flecha para el inicio de una línea. Lectura/escritura **DvArrowheadWidth**.
 
 **Se aplica a**
 
-[Stroke](msdn-online-vml-stroke-element.md)
+[Golpe](msdn-online-vml-stroke-element.md)
 
 **Sintaxis de etiquetas**
 
-<v: *Element* startarrowwidth = " *expresión* " >
+<v: *element* startarrowwidth=" *expression* ">
 
 **Sintaxis de script**
 
-*Element* . startarrowwidth = "*expresión*"
+*Element* .startarrowwidth="*expression*"
 
-*expresión* = de *elemento*. startarrowwidth
+*expresión* = *elemento*.startarrowwidth
 
 **Comentarios:**
 
 Estos valores incluyen:
 
--   Restrictiv
+-   Estrecho
 -   Media (valor predeterminado)
 -   Ancho
 
@@ -48,7 +48,7 @@ Atributo estándar de VML
 
 **Ejemplo**
 
-Una línea se dibuja con una punta de flecha clásica ancha en el inicio del trazo.
+Se dibuja una línea con una punta de flecha clásica ancha al principio del trazo.
 
 
 ```HTML
@@ -60,6 +60,6 @@ Una línea se dibuja con una punta de flecha clásica ancha en el inicio del tra
 
 
 
- 
+ 
 
- 
+ 

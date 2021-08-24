@@ -1,7 +1,7 @@
 ---
-description: Este método permite al usuario cambiar la declaración de la malla sin cambiar el diseño de los datos del búfer de vértices. La llamada solo es válida si los formatos de declaración anterior y nuevo tienen el mismo tamaño de vértice.
+description: Este método permite al usuario cambiar la declaración de malla sin cambiar el diseño de datos del búfer de vértices. La llamada solo es válida si los formatos de declaración antiguos y nuevos tienen el mismo tamaño de vértice.
 ms.assetid: ed2ad479-e0f7-4580-a20a-d3649759876a
-title: 'ID3DXBaseMesh:: UpdateSemantics (método) (D3DX9Mesh. h)'
+title: Método ID3DXBaseMesh::UpdateSemantics (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 6e31a6fe424d085467bfa795c7ce7b2d445a1f69
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3a9a628c16e7f4a26db9953298be1adcba2cef364153d4bb2e6b29dbc4d9ef83
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104083739"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119607325"
 ---
-# <a name="id3dxbasemeshupdatesemantics-method"></a>ID3DXBaseMesh:: UpdateSemantics (método)
+# <a name="id3dxbasemeshupdatesemantics-method"></a>Método ID3DXBaseMesh::UpdateSemantics
 
-Este método permite al usuario cambiar la declaración de la malla sin cambiar el diseño de los datos del búfer de vértices. La llamada solo es válida si los formatos de declaración anterior y nuevo tienen el mismo tamaño de vértice.
+Este método permite al usuario cambiar la declaración de malla sin cambiar el diseño de datos del búfer de vértices. La llamada solo es válida si los formatos de declaración antiguos y nuevos tienen el mismo tamaño de vértice.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,12 +40,12 @@ HRESULT UpdateSemantics(
 
 <dl> <dt>
 
-*Declaración* \[ de in, out\]
+*Declaración* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DVERTEXELEMENT9**](d3dvertexelement9.md)**
 
-Matriz de elementos [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) , que describe el formato de vértice de los vértices de malla. El límite superior de esta matriz de declarador es el [**tamaño máximo de \_ FVF \_ decl \_**](./max-fvf-decl-size.md).
+Matriz de [**elementos D3DVERTEXELEMENT9,**](d3dvertexelement9.md) que describe el formato de vértice de los vértices de la malla. El límite superior de esta matriz declarator es [**MAX \_ FVF \_ DECL \_ SIZE**](./max-fvf-decl-size.md).
 
 </dd> </dl>
 
@@ -53,13 +53,13 @@ Matriz de elementos [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) , que describe
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-[**ID3DXBaseMesh:: CloneMesh**](id3dxbasemesh--clonemesh.md) se usa para volver a formatear y cambiar el diseño de los datos de vértices. Por ejemplo, úselo para agregar espacio para las normales, coordenadas de textura, colores, pesos, etc., que no estaban presentes antes.
+[**ID3DXBaseMesh::CloneMesh**](id3dxbasemesh--clonemesh.md) se usa para volver a formatear y cambiar el diseño de datos del vértice. Por ejemplo, úselo para agregar espacio para normales, coordenadas de textura, colores, pesos, etc. que no estaban presentes antes.
 
-**ID3DXBaseMesh:: UpdateSemantics** es un método para actualizar la declaración de vértices con información semántica diferente, sin cambiar el diseño del búfer de vértices. Por ejemplo, úselo para cambiar la etiqueta de una coordenada de textura 3D como binormalización o tangente, o viceversa.
+**ID3DXBaseMesh::UpdateSemantics** es un método para actualizar la declaración de vértices con información semántica diferente, sin cambiar el diseño del búfer de vértices. Por ejemplo, úsela para volver a etiquetar una coordenada de textura 3D como binormal o tangente, o viceversa.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,8 +67,8 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

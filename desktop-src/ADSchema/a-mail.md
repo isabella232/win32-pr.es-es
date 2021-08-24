@@ -1,11 +1,11 @@
 ---
-title: Atributo de direcciones de correo electrónico
+title: Atributo E-mail-Addresses
 description: Lista de direcciones de correo electrónico de un contacto.
 ms.assetid: d8c75284-fdfd-4188-a4cf-ba2ddb9985fc
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de direcciones de correo electrónico
-- Esquema de AD de atributos de correo
+- Esquema de AD del atributo E-mail-Addresses
+- esquema de AD del atributo mail
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa769b886171211fc89ed5b1e3d5082e6eeedd2b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8e11247c9b81b378637fd751cd59ec76360e118da8220593340ff55ed25c7518
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658925"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301305"
 ---
-# <a name="e-mail-addresses-attribute"></a>Atributo de direcciones de correo electrónico
+# <a name="e-mail-addresses-attribute"></a>Atributo E-mail-Addresses
 
 Lista de direcciones de correo electrónico de un contacto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | Direcciones de correo electrónico                            |
-| Nombre para mostrar de LDAP | mail                                        |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | mail                                        |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 0.9.2342.19200300.100.1.3                   |
-| System-ID-GUID    | bf967961-0de6-11d0-a285-00aa003049e2        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | bf967961-0de6-11d0-a285-00aa003049e2        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -53,15 +53,15 @@ Lista de direcciones de correo electrónico de un contacto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                     |
+| Id. de vínculo                | \-                                                                                                     |
 | MAPI-Id                | 0x39FE                                                                                                 |
 | System-Only            | False                                                                                                  |
-| Tiene un único valor       | True                                                                                                   |
+| Es de un solo valor       | True                                                                                                   |
 | Está indexado             | True                                                                                                   |
 | En el catálogo global      | True                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                           |
 | Range-Lower            | 0                                                                                                      |
 | Range-Upper            | 256                                                                                                    |
 | Search-Flags           | 0x00000001                                                                                             |
@@ -74,20 +74,20 @@ Lista de direcciones de correo electrónico de un contacto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                           |
+| Id. de vínculo                | \-                                                                                                                                                                                           |
 | MAPI-Id                | 0x39FE                                                                                                                                                                                       |
 | System-Only            | False                                                                                                                                                                                        |
-| Tiene un único valor       | True                                                                                                                                                                                         |
+| Es de un solo valor       | True                                                                                                                                                                                         |
 | Está indexado             | True                                                                                                                                                                                         |
 | En el catálogo global      | True                                                                                                                                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                 |
 | Range-Lower            | 0                                                                                                                                                                                            |
 | Range-Upper            | 256                                                                                                                                                                                          |
 | Search-Flags           | 0x00000001                                                                                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                                                                                   |
-| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ Lista de direcciones de correo electrónico de un contacto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                           |
+| Id. de vínculo                | \-                                                                                                                                                                                           |
 | MAPI-Id                | 0x39FE                                                                                                                                                                                       |
 | System-Only            | False                                                                                                                                                                                        |
-| Tiene un único valor       | True                                                                                                                                                                                         |
+| Es de un solo valor       | True                                                                                                                                                                                         |
 | Está indexado             | True                                                                                                                                                                                         |
 | En el catálogo global      | True                                                                                                                                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                 |
 | Range-Lower            | 0                                                                                                                                                                                            |
 | Range-Upper            | 256                                                                                                                                                                                          |
 | Search-Flags           | 0x00000001                                                                                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                                                                                   |
-| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Lista de direcciones de correo electrónico de un contacto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                           |
+| Id. de vínculo                | \-                                                                                                                                                                                           |
 | MAPI-Id                | 0x39FE                                                                                                                                                                                       |
 | System-Only            | False                                                                                                                                                                                        |
-| Tiene un único valor       | True                                                                                                                                                                                         |
+| Es de un solo valor       | True                                                                                                                                                                                         |
 | Está indexado             | True                                                                                                                                                                                         |
 | En el catálogo global      | True                                                                                                                                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                 |
 | Range-Lower            | 0                                                                                                                                                                                            |
 | Range-Upper            | 256                                                                                                                                                                                          |
 | Search-Flags           | 0x00000001                                                                                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                                                                                   |
-| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ Lista de direcciones de correo electrónico de un contacto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                           |
+| Id. de vínculo                | \-                                                                                                                                                                                           |
 | MAPI-Id                | 0x39FE                                                                                                                                                                                       |
 | System-Only            | False                                                                                                                                                                                        |
-| Tiene un único valor       | True                                                                                                                                                                                         |
+| Es de un solo valor       | True                                                                                                                                                                                         |
 | Está indexado             | True                                                                                                                                                                                         |
 | En el catálogo global      | True                                                                                                                                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                 |
 | Range-Lower            | 0                                                                                                                                                                                            |
 | Range-Upper            | 256                                                                                                                                                                                          |
 | Search-Flags           | 0x00000001                                                                                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                                                                                   |
-| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -158,15 +158,15 @@ Lista de direcciones de correo electrónico de un contacto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                           |
+| Id. de vínculo                | \-                                                                                                                                                                                           |
 | MAPI-Id                | 0x39FE                                                                                                                                                                                       |
 | System-Only            | False                                                                                                                                                                                        |
-| Tiene un único valor       | True                                                                                                                                                                                         |
+| Es de un solo valor       | True                                                                                                                                                                                         |
 | Está indexado             | True                                                                                                                                                                                         |
 | En el catálogo global      | True                                                                                                                                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                 |
 | Range-Lower            | 0                                                                                                                                                                                            |
 | Range-Upper            | 256                                                                                                                                                                                          |
 | Search-Flags           | 0x00000001                                                                                                                                                                                   |

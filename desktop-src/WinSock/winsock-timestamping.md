@@ -1,44 +1,44 @@
 ---
 title: Marca de tiempo de Winsock
-description: Las marcas de tiempo de paquetes son una característica fundamental para muchas aplicaciones de sincronización de &mdash; reloj, por ejemplo, el Protocolo de tiempo de precisión. Cuanto más se acerque la generación de marca de tiempo a cuando el hardware del adaptador de red recibe o envía un paquete, más precisa puede ser la aplicación de sincronización.
+description: Las marcas de tiempo de paquetes son una característica fundamental para muchas aplicaciones de sincronización de &mdash; reloj, por ejemplo, el protocolo de tiempo de precisión. Cuanto más cercana sea la generación de marca de tiempo a cuando el hardware del adaptador de red recibe o envía un paquete, más precisa puede ser la aplicación de sincronización.
 ms.topic: article
 ms.date: 10/22/2020
-ms.openlocfilehash: eae0dce8c2c16bc187ef5522f323e7f36d7fc0b4
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 329c13d76fc0c4ce0d87550623e7419af14bfdd268bf359a8f50729e0b0596e3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110559990"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119568995"
 ---
 # <a name="winsock-timestamping"></a>Marca de tiempo de Winsock
 
 ## <a name="introduction"></a>Introducción
 
-Las marcas de tiempo de paquetes son una característica fundamental para muchas aplicaciones de sincronización de &mdash; reloj, por ejemplo, el Protocolo de tiempo de precisión. Cuanto más se acerque la generación de marca de tiempo a cuando el hardware del adaptador de red recibe o envía un paquete, más precisa puede ser la aplicación de sincronización.
+Las marcas de tiempo de paquetes son una característica fundamental para muchas aplicaciones de sincronización de &mdash; reloj, por ejemplo, el protocolo de tiempo de precisión. Cuanto más cercana sea la generación de marca de tiempo a cuando el hardware del adaptador de red recibe o envía un paquete, más precisa puede ser la aplicación de sincronización.
 
-Por lo tanto, las API de marca de tiempo descritas en este tema proporcionan a la aplicación un mecanismo para notificar las marcas de tiempo que se generan muy por debajo del nivel de aplicación. En concreto, una marca de tiempo de software en la interfaz entre el minipuerto y NDIS, y una marca de tiempo de hardware en el hardware NIC. La API de marca de tiempo puede mejorar en gran medida la precisión de la sincronización del reloj. Actualmente, la compatibilidad está en el ámbito de los sockets del Protocolo de datagramas de usuario (UDP).
+Por lo tanto, las API de marca de tiempo descritas en este tema proporcionan a la aplicación un mecanismo para notificar las marcas de tiempo que se generan muy por debajo del nivel de aplicación. En concreto, una marca de tiempo de software en la interfaz entre el minipuerto y NDIS, y una marca de tiempo de hardware en el hardware nic. La API de marca de tiempo puede mejorar en gran medida la precisión de sincronización del reloj. Actualmente, la compatibilidad está en el ámbito de los sockets del Protocolo de datagramas de usuario (UDP).
 
 ## <a name="receive-timestamps"></a>Marcas de tiempo de recepción
 
-Configure la recepción de marca de tiempo de recepción a [**través SIO_TIMESTAMPING**](/windows/win32/winsock/winsock-ioctls#sio_timestamping) IOCTL. Use esa IOCTL para habilitar la recepción de la marca de tiempo de recepción. Cuando recibe un datagrama mediante la función [**LPFN_WSARECVMSG (WSARecvMsg),**](/windows/win32/api/mswsock/nc-mswsock-lpfn_wsarecvmsg) su marca de tiempo (si está disponible) se encuentra en el mensaje SO_TIMESTAMP **control.**
+La recepción de la recepción de la marca de tiempo se configura mediante [**SIO_TIMESTAMPING**](/windows/win32/winsock/winsock-ioctls#sio_timestamping) IOCTL. Use esa IOCTL para habilitar la recepción de la marca de tiempo de recepción. Cuando recibe un datagrama mediante la función [**LPFN_WSARECVMSG (WSARecvMsg),**](/windows/win32/api/mswsock/nc-mswsock-lpfn_wsarecvmsg) su marca de tiempo (si está disponible) se incluye en el mensaje SO_TIMESTAMP **control.**
 
 **SO_TIMESTAMP** (0x300A) se define en `mstcpip.h` . Los datos del mensaje de control se devuelven como **UINT64.**
 
 ## <a name="transmit-timestamps"></a>Transmisión de marcas de tiempo
 
-La recepción de la marca de tiempo de transmisión también [**se configura a través SIO_TIMESTAMPING**](/windows/win32/winsock/winsock-ioctls#sio_timestamping) IOCTL. Use esa IOCTL para habilitar la recepción de marca de tiempo de transmisión y especifique el número de marcas de tiempo de transmisión que el sistema almacenará en búfer. A medida que se generan marcas de tiempo de transmisión, se agregan al búfer. Si el búfer está lleno, se descartan las nuevas marcas de tiempo de transmisión.
+La recepción de marca de tiempo de transmisión también se configura a [**través SIO_TIMESTAMPING**](/windows/win32/winsock/winsock-ioctls#sio_timestamping) IOCTL. Use esa IOCTL para habilitar la recepción de marca de tiempo de transmisión y especifique el número de marcas de tiempo de transmisión que el sistema almacenará en búfer. A medida que se generan marcas de tiempo de transmisión, se agregan al búfer. Si el búfer está lleno, se descartan las nuevas marcas de tiempo de transmisión.
 
-Al enviar un datagrama, asocie el datagrama con un **SO_TIMESTAMP_ID** de control. Debe contener un identificador único. Envíe el datagrama, junto con su **mensaje SO_TIMESTAMP_ID** control, mediante [**WSASendMsg**](/windows/win32/api/winsock2/nf-winsock2-wsasendmsg). Es posible que las marcas de tiempo de transmisión no estén disponibles inmediatamente después **de que WSASendMsg devuelva** . A medida que las marcas de tiempo de transmisión están disponibles, se colocan en un búfer por socket. Use la [**SIO_GET_TX_TIMESTAMP**](/windows/win32/winsock/winsock-ioctls#sio_get_tx_timestamp) IOCTL para sondear la marca de tiempo por su identificador. Si la marca de tiempo está disponible, se quita del búfer y se devuelve. Si la marca de tiempo no está disponible, [WSAGetLastError](/windows/win32/api/winsock/nf-winsock-wsagetlasterror) devuelve **WSAEWOULDBLOCK**. Si se genera una marca de tiempo de transmisión mientras el búfer está lleno, se descarta la nueva marca de tiempo.
+Al enviar un datagrama, asocie el datagrama con un **SO_TIMESTAMP_ID** de control. Debe contener un identificador único. Envíe el datagrama, junto con su **mensaje SO_TIMESTAMP_ID** control, mediante [**WSASendMsg**](/windows/win32/api/winsock2/nf-winsock2-wsasendmsg). Es posible que las marcas de tiempo de transmisión no estén disponibles inmediatamente después **de que WSASendMsg devuelva** . A medida que las marcas de tiempo de transmisión están disponibles, se colocan en un búfer por socket. Use la [**SIO_GET_TX_TIMESTAMP**](/windows/win32/winsock/winsock-ioctls#sio_get_tx_timestamp) IOCTL para sondear la marca de tiempo por su identificador. Si la marca de tiempo está disponible, se quita del búfer y se devuelve. Si la marca de tiempo no está disponible, [WSAGetLastError](/windows/win32/api/winsock/nf-winsock-wsagetlasterror) devuelve **WSAEWOULDBLOCK.** Si se genera una marca de tiempo de transmisión mientras el búfer está lleno, se descarta la nueva marca de tiempo.
 
 **SO_TIMESTAMP_ID** (0x300B) se define en `mstcpip.h` . Debe proporcionar los datos del mensaje de control como **UINT32**.
 
 Las marcas de tiempo se representan como un valor de contador de 64 bits. La frecuencia del contador depende del origen de la marca de tiempo. Para las marcas de tiempo de software, el contador es un valor [**QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter) (QPC) y puede determinar su frecuencia a través de [**QueryPerformanceFrequency**](/windows/win32/api/profileapi/nf-profileapi-queryperformancefrequency). En el caso de las marcas de tiempo de hardware nic, la frecuencia del contador depende del hardware nic y se puede determinar con información adicional que proporciona [**CaptureInterfaceHardwareCrossTimestamp.**](/windows/win32/api/iphlpapi/nf-iphlpapi-captureinterfacehardwarecrosstimestamp) Para determinar el origen de las marcas de tiempo, use las funciones [**GetInterfaceActiveTimestampCapabilities**](/windows/win32/api/iphlpapi/nf-iphlpapi-getinterfaceactivetimestampcapabilities) y [**GetInterfaceSupportedTimestampCapabilities.**](/windows/win32/api/iphlpapi/nf-iphlpapi-getinterfacesupportedtimestampcapabilities)
 
-Además de la configuración de nivel de socket mediante [**la opción SIO_TIMESTAMPING**](/windows/win32/winsock/winsock-ioctls#sio_timestamping) socket para habilitar la recepción de marca de tiempo para un socket, también se necesita la configuración de nivel de sistema.
+Además de la configuración de nivel de socket mediante la [**opción SIO_TIMESTAMPING**](/windows/win32/winsock/winsock-ioctls#sio_timestamping) socket para habilitar la recepción de marca de tiempo para un socket, también se necesita la configuración de nivel de sistema.
 
 ## <a name="estimating-latency-of-socket-send-path"></a>Estimación de la latencia de la ruta de acceso de envío del socket
 
-En esta sección, usaremos marcas de tiempo de transmisión para calcular la latencia de la ruta de acceso de envío del socket. Si tiene una aplicación existente que consume marcas de tiempo de E/S de nivel de aplicación donde la marca de tiempo debe estar lo más cerca posible del punto de transmisión real, este ejemplo proporciona una descripción cuantitativa de la cantidad de API de marca de tiempo de Winsock que puede mejorar la precisión de &mdash; &mdash; la aplicación.
+En esta sección, usaremos marcas de tiempo de transmisión para calcular la latencia de la ruta de acceso de envío del socket. Si tiene una aplicación existente que consume marcas de tiempo de E/S de nivel de aplicación donde la marca de tiempo debe estar lo más cerca posible del punto de transmisión real, este ejemplo proporciona una descripción cuantitativa de cuánto las API de marca de tiempo de Winsock pueden mejorar la precisión de &mdash; &mdash; la aplicación.
 
 En el ejemplo se supone que solo hay una tarjeta de interfaz de red (NIC) en el sistema y que *interfaceLuid* es el LUID de ese adaptador.
 
@@ -320,4 +320,4 @@ void estimate_receive_latency(SOCKET sock,
 
 ## <a name="a-limitation"></a>Una limitación
 
-Una limitación de las API de marca de tiempo de Winsock es que llamar a [**SIO_GET_TX_TIMESTAMP**](/windows/win32/winsock/winsock-ioctls#sio_get_tx_timestamp) es siempre una operación sin bloqueo. Incluso llamar a la IOCTL de forma OVERLAPPED da como resultado una devolución inmediata de **WSACTLCTLDBLOCK** si actualmente no hay marcas de tiempo de transmisión disponibles. Puesto que es posible que las marcas de tiempo de transmisión no estén disponibles inmediatamente después de que [**WSASendMsg**](/windows/win32/api/winsock2/nf-winsock2-wsasendmsg) vuelva, la aplicación debe sondear la IOCTL hasta que la marca de tiempo esté disponible. Se garantiza que una marca de tiempo de transmisión esté disponible después de una llamada correcta a **WSASendMsg,** dado que el búfer de marca de tiempo de transmisión no está lleno.
+Una limitación de las API de marca de tiempo de Winsock es que llamar a [**SIO_GET_TX_TIMESTAMP**](/windows/win32/winsock/winsock-ioctls#sio_get_tx_timestamp) es siempre una operación sin bloqueo. Incluso llamar a la IOCTL en modo OVERLAPPED da como resultado una devolución inmediata de **WSAEWOULDBLOCK** si actualmente no hay marcas de tiempo de transmisión disponibles. Dado que es posible que las marcas de tiempo de transmisión no estén disponibles inmediatamente después de que [**WSASendMsg**](/windows/win32/api/winsock2/nf-winsock2-wsasendmsg) vuelva, la aplicación debe sondear la IOCTL hasta que la marca de tiempo esté disponible. Se garantiza que una marca de tiempo de transmisión esté disponible después de una llamada correcta a **WSASendMsg,** dado que el búfer de marca de tiempo de transmisión no está lleno.

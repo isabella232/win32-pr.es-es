@@ -1,7 +1,7 @@
 ---
-description: Contiene información que se usa para crear un contexto de Tablet PC.
+description: Contiene información utilizada para crear un contexto de tableta.
 ms.assetid: 10466c23-f4cb-4205-886b-d85a2f530afe
-title: Estructura de TABLET_CONTEXT_SETTINGS
+title: TABLET_CONTEXT_SETTINGS estructura
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 9357281409ed4c48b4c6013a7a2be2997d58b094
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 75634cd635773ff0b009860256b1147c31ee43dde200586e12713a707aa999b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104003069"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119335085"
 ---
-# <a name="tablet_context_settings-structure"></a>Estructura de configuración de \_ contexto de Tablet \_
+# <a name="tablet_context_settings-structure"></a>Estructura TABLET \_ CONTEXT \_ SETTINGS
 
-Contiene información que se usa para crear un contexto de Tablet PC.
+Contiene información utilizada para crear un contexto de tableta.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,14 +48,14 @@ typedef struct _TABLET_CONTEXT_SETTINGS {
 **cPktProps**
 </dt> <dd>
 
-El número de propiedades de un paquete.
+Número de propiedades de un paquete.
 
 </dd> <dt>
 
 **pguidPktProps**
 </dt> <dd>
 
-Identificadores únicos para las propiedades de paquete.
+Identificadores únicos para las propiedades del paquete.
 
 </dd> <dt>
 
@@ -69,28 +69,28 @@ Número de botones.
 **pguidPktBtns**
 </dt> <dd>
 
-Identificadores únicos para los botones.
+Identificadores únicos de los botones.
 
 </dd> <dt>
 
 **pdwBtnDnMask**
 </dt> <dd>
 
-La máscara del botón hacia abajo.
+Máscara de botón hacia abajo.
 
 </dd> <dt>
 
 **pdwBtnUpMask**
 </dt> <dd>
 
-La máscara del botón arriba.
+Máscara de botón hacia arriba.
 
 </dd> <dt>
 
 **lXMargin**
 </dt> <dd>
 
-Margen de la dirección X.
+Margen de dirección X.
 
 </dd> <dt>
 
@@ -101,21 +101,21 @@ Margen de dirección Y.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Normalmente, una aplicación obtiene los valores predeterminados del [**método ITablet:: GetDefaultContextSettings**](itablet-getdefaultcontextsettings.md), modifica los valores para satisfacer sus necesidades y, a continuación, pasa la estructura de configuración modificada al [**método ITablet:: CreateContext**](itablet-createcontext.md).
+Normalmente, una aplicación obtiene los valores predeterminados del método [**ITablet::GetDefaultContextSettings**](itablet-getdefaultcontextsettings.md), modifica los valores para satisfacer sus necesidades y, a continuación, pasa la estructura de configuración modificada al método [**ITablet::CreateContext**](itablet-createcontext.md).
 
-Esta estructura determina qué eventos obtendrá una aplicación, cómo se procesarán y cómo se entregarán a la aplicación o a Windows.
+Esta estructura determina qué eventos recibirá una aplicación, cómo se procesarán y cómo se entregarán a la aplicación o a Windows sí misma.
 
-Las máscaras de botón juntas determinan qué tipos de eventos se procesarán en el contexto.
+Las máscaras de botón juntos determinan qué tipos de eventos procesará el contexto.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                     |
 
 

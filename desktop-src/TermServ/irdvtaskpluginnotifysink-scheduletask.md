@@ -1,12 +1,12 @@
 ---
-title: IRDVTaskPluginNotifySink ScheduleTask (método)
-description: Llamado por el agente de tareas para programar una tarea.
+title: Método IRDVTaskPluginNotifySink ScheduleTask
+description: Lo llama el agente de tareas para programar una tarea.
 ms.assetid: 06793439-cf16-40ca-8a91-08acc22c73ed
 ms.tgt_platform: multiple
 keywords:
-- ScheduleTask (método) Servicios de Escritorio remoto
-- Método ScheduleTask Servicios de Escritorio remoto, interfaz IRDVTaskPluginNotifySink
-- IRDVTaskPluginNotifySink interface Servicios de Escritorio remoto, ScheduleTask (método)
+- Método ScheduleTask Servicios de Escritorio remoto
+- Método ScheduleTask Servicios de Escritorio remoto , interfaz IRDVTaskPluginNotifySink
+- Interfaz IRDVTaskPluginNotifySink Servicios de Escritorio remoto método , ScheduleTask
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c9bde92992eec9c4ab3d4151c59e6d687ec2f3fe
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fdcecba38b1fd5eb773e5076f5485ae900e5423267a3a311091bf01e0ed86ac0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119512025"
 ---
-# <a name="irdvtaskpluginnotifysinkscheduletask-method"></a>IRDVTaskPluginNotifySink:: ScheduleTask (método)
+# <a name="irdvtaskpluginnotifysinkscheduletask-method"></a>IrDVTaskPluginNotifySink::ScheduleTask (método)
 
-Llamado por el agente de tareas para programar una tarea.
+Lo llama el agente de tareas para programar una tarea.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,57 +47,57 @@ HRESULT ScheduleTask(
 
 <dl> <dt>
 
-*ftStartTime* \[ de\]
+*ftStartTime* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)**
 
-La hora de inicio de la tarea más temprana, en formato UTC.
+La hora de inicio de la tarea más temprana, en UTC.
 
 </dd> <dt>
 
-*ftEndTime* \[ de\]
+*ftEndTime* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)**
 
-Hora de finalización de la tarea, en formato UTC. Pasar un valor de [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) a ceros si no se especifica ninguna hora de finalización.
+Hora de finalización de la tarea, en UTC. Pase un [**conjunto FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) a todos los ceros si no se especifica ninguna hora de finalización.
 
 </dd> <dt>
 
-*ftDeadline* \[ de\]
+*ftDeadline* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)**
 
-Fecha límite de la tarea, en UTC. Se usa para establecer la prioridad de varias tareas que se encuentran dentro de su ventana de inicio. Si se debe iniciar más de una tarea, primero se iniciará la que tenga la fecha límite más temprana.
+Fecha límite de la tarea, en FORMATO UTC. Esto se usa para establecer la prioridad de varias tareas que se encuentran dentro de su ventana de inicio. Si se debe iniciar más de una tarea, primero se inicia la que tenga la fecha límite más temprana.
 
 </dd> <dt>
 
-*bstrLabel* \[ de\]
+*bstrLabel* \[ En\]
 </dt> <dd>
 
 Tipo: **BSTR**
 
-Etiqueta de la tarea. Se pasa al método [**StartTask**](irdvtaskplugin-starttask.md) .
+Etiqueta de la tarea. Esto se pasa al [**método StartTask.**](irdvtaskplugin-starttask.md)
 
 </dd> <dt>
 
-*bstrIdentifier* \[ de\]
+*bstrIdentifier* \[ En\]
 </dt> <dd>
 
 Tipo: **BSTR**
 
-Identificador único de la tarea. Se pasa al método [**StartTask**](irdvtaskplugin-starttask.md) .
+Identificador único de la tarea. Esto se pasa al [**método StartTask.**](irdvtaskplugin-starttask.md)
 
 </dd> <dt>
 
-*saContext* \[ de\]
+*saContext* \[ En\]
 </dt> <dd>
 
-Tipo: **SAFEARRAY (byte)**
+Tipo: **SAFEARRAY(BYTE)**
 
-Datos opcionales para la tarea. Se pasa al método [**StartTask**](irdvtaskplugin-starttask.md) .
+Datos opcionales para la tarea. Esto se pasa al [**método StartTask.**](irdvtaskplugin-starttask.md)
 
 </dd> </dl>
 
@@ -105,15 +105,15 @@ Datos opcionales para la tarea. Se pasa al método [**StartTask**](irdvtaskplugi
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 Enterprise<br/>   |
+| Cliente mínimo compatible<br/> | Windows 7 Enterprise<br/>   |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/> |
 
 

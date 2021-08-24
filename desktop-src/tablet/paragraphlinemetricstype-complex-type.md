@@ -1,7 +1,7 @@
 ---
-description: Define el tipo que contiene información sobre las métricas de línea de un párrafo, como la línea de base.
+description: Define el tipo que contiene información sobre las métricas de línea de un párrafo, como la línea base.
 ms.assetid: 2c2aea52-ae03-428e-b576-187cbcf6eafd
-title: Tipo complejo de ParagraphLineMetricsType
+title: Tipo complejo ParagraphLineMetricsType
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: e3cafa4ac937f049de2698200b21a0e952edc660
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cec22ff65dc3afe452d59d3a9abb3201b8cddf70c4fed600bc4868ea91e7db84
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104546147"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119335595"
 ---
-# <a name="paragraphlinemetricstype-complex-type"></a>Tipo complejo de ParagraphLineMetricsType
+# <a name="paragraphlinemetricstype-complex-type"></a>Tipo complejo ParagraphLineMetricsType
 
-Define el tipo que contiene información sobre las métricas de línea de un párrafo, como la línea de base.
+Define el tipo que contiene información sobre las métricas de línea de un párrafo, como la línea base.
 
 ``` syntax
 <xs:complexType name="ParagraphLineMetricsType" />
@@ -31,9 +31,9 @@ Define el tipo que contiene información sobre las métricas de línea de un pá
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                     |
 
 

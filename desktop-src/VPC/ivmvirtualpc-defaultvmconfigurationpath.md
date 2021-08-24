@@ -3,8 +3,8 @@ title: Propiedad IVMVirtualPC DefaultVMConfigurationPath (VPCCOMInterfaces.h)
 description: Directorio predeterminado en el que se buscarán los archivos de configuración de máquina virtual disponibles.
 ms.assetid: 9ae63198-e3f6-4dcb-8edb-85adfbbdca26
 keywords:
-- Equipo virtual de la propiedad DefaultVMConfigurationPath
-- Propiedad DefaultVMConfigurationPath De PC virtual, interfaz IVMVirtualPC
+- DefaultVMConfigurationPath, propiedad Virtual PC
+- Propiedad DefaultVMConfigurationPath Virtual PC , interfaz IVMVirtualPC
 - IVMVirtualPC interface Virtual PC , Propiedad DefaultVMConfigurationPath
 topic_type:
 - apiref
@@ -18,22 +18,22 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 09f6370dfb868ec386e05f361240a74412f13a7d
-ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
+ms.openlocfilehash: 9ed7ec327fb845873c4c6305f3d121053a74c632be0ca451182b17da55763477
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111387641"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119394385"
 ---
 # <a name="ivmvirtualpcdefaultvmconfigurationpath-property"></a>IVMVirtualPC::D efaultVMConfigurationPath
 
-\[Windows Virtual PC ya no está disponible para su uso a Windows 8. En su lugar, use el proveedor WMI de [Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Recupera y establece el directorio predeterminado en el que se buscarán los archivos de configuración de máquina virtual disponibles.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -60,13 +60,13 @@ Especifica la ruta de acceso del directorio para los archivos de configuración 
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>S \_ Ok</dt> <dt>0</dt> </dl>                                                  | La operación se realizó correctamente.<br/>                                                                                                                 |
 | <dl> <dt>E \_ Puntero</dt> <dt>0x80004003</dt> </dl>                                    | El *parámetro configurationPath* es **NULL.**<br/>                                                                                                |
-| <dl> <dt>HRESULT \_ DESDE \_ WIN32(ARCHIVO DE ERROR \_ \_ NO \_ ENCONTRADO)</dt> <dt>0X80070002</dt> </dl> | El sistema no puede encontrar el directorio especificado por el *parámetro configurationPath.*<br/>                                                          |
-| <dl> <dt>HRESULT \_ DESDE \_ WIN32(RUTA DE ACCESO DE ERROR \_ \_ NO \_ ENCONTRADA)</dt> <dt>0X80070003</dt> </dl> | El sistema no puede encontrar la ruta de acceso especificada por el *parámetro configurationPath.*<br/>                                                               |
-| <dl> <dt>HRESULT \_ DESDE \_ WIN32(ERROR \_ NOMBRE NO \_ VÁLIDO)</dt> <dt>0x8007007b</dt> </dl>    | El *parámetro configurationPath* contiene un carácter no válido (uno de los siguientes: " \* ?<>/ \| ":").<br/>                                   |
-| <dl> <dt>HRESULT \_ DESDE \_ WIN32(ERROR \_ BAD \_ PATHNAME)</dt> <dt>0x800700a1</dt> </dl>    | El *parámetro configurationPath* especifica una ruta de acceso vacía o relativa. Se requiere una ruta de acceso absoluta.<br/>                                          |
-| <dl> <dt>HRESULT \_ DESDE \_ WIN32(ERROR \_ BUFFER \_ OVERFLOW)</dt> <dt>0x8007006f</dt> </dl> | La ruta de acceso especificada por el *parámetro configurationPath* es demasiado larga. La longitud de la ruta de acceso debe ser inferior a **MAX \_ PATH** (260) caracteres.<br/> |
+| <dl> <dt>HRESULT \_ DESDE \_ WIN32 (ARCHIVO DE ERROR \_ \_ NO \_ ENCONTRADO)</dt> <dt>0X80070002</dt> </dl> | El sistema no puede encontrar el directorio especificado por el *parámetro configurationPath.*<br/>                                                          |
+| <dl> <dt>HRESULT \_ DESDE \_ WIN32 (RUTA DE ACCESO DE ERROR \_ \_ NO \_ ENCONTRADA)</dt> <dt>0X80070003</dt> </dl> | El sistema no puede encontrar la ruta de acceso especificada por el *parámetro configurationPath.*<br/>                                                               |
+| <dl> <dt>HRESULT \_ DESDE \_ WIN32(ERROR \_ INVALID \_ NAME) 0X8007007B</dt> <dt></dt> </dl>    | El *parámetro configurationPath* contiene un carácter no válido (uno de los siguientes: " \* ?<>/ \| ":").<br/>                                   |
+| <dl> <dt>HRESULT \_ DESDE \_ WIN32(ERROR \_ BAD \_ PATHNAME)</dt> <dt>0X800700A1</dt> </dl>    | El *parámetro configurationPath* especifica una ruta de acceso vacía o relativa. Se requiere una ruta de acceso absoluta.<br/>                                          |
+| <dl> <dt>HRESULT \_ DESDE \_ WIN32(ERROR \_ BUFFER \_ OVERFLOW)</dt> <dt>0x8007006f</dt> </dl> | La ruta de acceso especificada por el *parámetro configurationPath* es demasiado larga. La longitud de la ruta de acceso debe ser menor que **MAX \_ PATH** (260) caracteres.<br/> |
 | <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl>                            | Se produjo un error inesperado.<br/>                                                                                                             |
-| <dl> <dt>Máquina virtual \_ E \_ \_ VIRTUALIZACIÓN DE HARDWARE \_ DESHABILITADA</dt> <dt>0xA0040951</dt> </dl>     | El procesador no admite extensiones de virtualización acelerada de hardware (HAV).<br/>                                                          |
+| <dl> <dt>Máquina virtual \_ E \_ HARDWARE VIRTUALIZATION DISABLED \_ \_ 0xA0040951</dt> <dt></dt> </dl>     | El procesador no admite extensiones de Virtualización acelerada por hardware (HAV).<br/>                                                          |
 
 
 
@@ -80,16 +80,16 @@ De forma predeterminada, este valor de propiedad se establece en el directorio s
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
 | Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
 | IID<br/>                      | IID IVMVirtualPC se define como \_ 236ba0d9-a24a-4292-a132-27c1421dfd01<br/>               |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

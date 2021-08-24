@@ -1,5 +1,5 @@
 ---
-title: Método IBackgroundCopyFile GetProgress (Deliveryoptimization. h)
+title: Método IBackgroundCopyFile GetProgress (Deliveryoptimization.h)
 description: Recupera información sobre el progreso de la transferencia de archivos.
 ms.assetid: 3D8AFD65-AF34-4000-A4A9-8A187427E85C
 keywords:
@@ -17,14 +17,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f0828105822700f9d34cd180c8877634bc3a6013
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a7c5fe4a9fcfac86403fd7f4c330d437156e57179b3bf692f53bf3777399b9bf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490265"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119610505"
 ---
-# <a name="ibackgroundcopyfilegetprogress-method"></a>IBackgroundCopyFile:: GetProgress (método)
+# <a name="ibackgroundcopyfilegetprogress-method"></a>IBackgroundCopyFile::GetProgress (método)
 
 Recupera información sobre el progreso de la transferencia de archivos.
 
@@ -43,16 +43,16 @@ HRESULT GetProgress(
 
 <dl> <dt>
 
-*pProgress* \[ enuncia\]
+*pProgress* \[ out\]
 </dt> <dd>
 
-Estructura cuyos miembros indican el progreso de la transferencia de archivos. Para obtener más información sobre el tipo de información de progreso disponible, vea la estructura [**BG_FILE_PROGRESS**](bg-file-progress.md) .
+Estructura cuyos miembros indican el progreso de la transferencia de archivos. Para obtener más información sobre el tipo de información de progreso disponible, consulte [**la estructura BG_FILE_PROGRESS**](bg-file-progress.md) datos.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este método devuelve **S_OK** si se ejecuta correctamente o uno de los valores de **HRESULT** de com estándar en caso de error.
+Este método devuelve **S_OK** correcto o uno de los valores **HRESULT COM** estándar en caso de error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,11 +60,11 @@ Este método devuelve **S_OK** si se ejecuta correctamente o uno de los valores 
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1709 \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Windows Server, versión 1709 \[ solo para aplicaciones de escritorio\]<br/>                                       |
-| Encabezado<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>DeliveryOptimization. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Dosvc. lib</dt> </dl>                |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                       |
+| Header<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | Archivo DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
 | IID<br/>                      | IID_IBackgroundCopyFile se define como 01B7BD23-FB88-4A77-8490-5891D3E4653A<br/>              |
 
@@ -80,7 +80,7 @@ Este método devuelve **S_OK** si se ejecuta correctamente o uno de los valores 
 [**IBackgroundCopyFile**](ibackgroundcopyfile.md)
 </dt> <dt>
 
-[**IBackgroundCopyJob:: GetProgress**](ibackgroundcopyjob-getprogress.md)
+[**IBackgroundCopyJob::GetProgress**](ibackgroundcopyjob-getprogress.md)
 </dt> </dl>
 
  

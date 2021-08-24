@@ -1,8 +1,8 @@
 ---
-description: La \_ clase CIM ClusterServiceAccessBySAP representa la relación entre un servicio de agrupación en clústeres y sus puntos de acceso.
+description: La clase CLUSTERServiceAccessBySAP de CIM representa la relación \_ entre un servicio de agrupación en clústeres y sus puntos de acceso.
 ms.assetid: b1e03ef1-909c-4836-a75f-c8d88a4d0087
 ms.tgt_platform: multiple
-title: CIM_ClusterServiceAccessBySAP (clase)
+title: CIM_ClusterServiceAccessBySAP clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 9b6e6f0df20f182be392de3fbb0cb13068cbeffc
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 298ec40908a6c09c63b7a3ee56ac18540bc4aec4bed64ae8613d9d48f3292346
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000668"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322315"
 ---
-# <a name="cim_clusterserviceaccessbysap-class"></a>\_Clase ClusterServiceAccessBySAP de CIM
+# <a name="cim_clusterserviceaccessbysap-class"></a>\_Cim ClusterServiceAccessBySAP (clase)
 
-La clase **CIM \_ ClusterServiceAccessBySAP** representa la relación entre un servicio de agrupación en clústeres y sus puntos de acceso.
+La **clase \_ CLUSTERServiceAccessBySAP** de CIM representa la relación entre un servicio de agrupación en clústeres y sus puntos de acceso.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -47,13 +47,13 @@ class CIM_ClusterServiceAccessBySAP : CIM_ServiceAccessBySAP
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ ClusterServiceAccessBySAP** tiene estos tipos de miembros:
+La **clase \_ CLUSTERServiceAccessBySAP** de CIM tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ ClusterServiceAccessBySAP** tiene estas propiedades.
+La **clase \_ CLUSTERServiceAccessBySAP** de CIM tiene estas propiedades.
 
 <dl> <dt>
 
@@ -66,14 +66,14 @@ Tipo de datos: **CIM \_ ClusteringService**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente")
 </dt> </dl>
 
-Un [**\_ ClusteringService de CIM**](cim-clusteringservice.md) que describe el servicio de agrupación en clústeres.
+Cim [**\_ ClusteringService**](cim-clusteringservice.md) que describe el servicio de agrupación en clústeres.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **CIM \_ ClusteringSAP**
@@ -82,40 +82,40 @@ Tipo de datos: **CIM \_ ClusteringSAP**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependiente")
+Calificadores: [**Invalidar**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
 </dt> </dl>
 
-Un [**\_ ClusteringSAP de CIM**](cim-clusteringsap.md) que describe un punto de acceso para el servicio de agrupación en clústeres.
+Clústeres [**\_ CIMSAP**](cim-clusteringsap.md) que describe un punto de acceso para el servicio de agrupación en clústeres.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase **CIM \_ ClusterServiceAccessBySAP** se deriva de [**\_ ServiceAccessBySAP de CIM**](cim-serviceaccessbysap.md).
+La **clase \_ CLUSTERServiceAccessBySAP** de CIM se deriva de [**CIM \_ ServiceAccessBySAP.**](cim-serviceaccessbysap.md)
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_SERVICEACCESSBYSAP CIM**](cim-serviceaccessbysap.md)
+[**Servicio \_ CIMAccessBySAP**](cim-serviceaccessbysap.md)
 </dt> </dl>
 
  

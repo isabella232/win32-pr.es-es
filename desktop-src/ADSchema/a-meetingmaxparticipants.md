@@ -1,10 +1,10 @@
 ---
-title: atributo meetingMaxParticipants
-description: Número máximo de participantes de una reunión.
+title: Atributo meetingMaxParticipants
+description: Número máximo de participantes para una reunión.
 ms.assetid: c1d03392-1877-4df5-a3d9-b89337f0eb41
 ms.tgt_platform: multiple
 keywords:
-- meetingMaxParticipants esquema de AD de atributos
+- Esquema de AD del atributo meetingMaxParticipants
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a31a0914884d8b7780d02ce2e339beba0b10c3d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9f5793a2ddcc0ad5943445e5a2ca458be8761abeac6dfb5df6ab35401dbd5ef2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104493865"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119300725"
 ---
-# <a name="meetingmaxparticipants-attribute"></a>atributo meetingMaxParticipants
+# <a name="meetingmaxparticipants-attribute"></a>Atributo meetingMaxParticipants
 
-Número máximo de participantes de una reunión.
+Número máximo de participantes para una reunión.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|----------------------------------------------------------------------------------|
 | CN                | meetingMaxParticipants                                                           |
-| Nombre para mostrar de LDAP | meetingMaxParticipants                                                           |
-| Tamaño              | \-                                                                               |
-| Actualizar privilegio  | Cualquier usuario puede actualizar este objeto en función de la seguridad del objeto que se va a crear. |
+| Ldap-Display-Name | meetingMaxParticipants                                                           |
+| Size              | \-                                                                               |
+| Actualizar privilegios  | Cualquiera puede actualizar este objeto en función de la seguridad del objeto que se va a crear. |
 | Frecuencia de actualización  | \-                                                                               |
 | Attribute-Id      | 1.2.840.113556.1.4.576                                                           |
-| System-ID-GUID    | 11b6cc85-48c4-11d1-a9c3-0000f80367c1                                             |
-| Sintaxis            | [**Enumeración**](s-enumeration.md)                                             |
+| System-Id-Guid    | 11b6cc85-48c4-11d1-a9c3-0000f80367c1                                             |
+| Syntax            | [**Enumeración**](s-enumeration.md)                                             |
 
 
 
@@ -54,18 +54,18 @@ Número máximo de participantes de una reunión.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Tiene un único valor       | True                                    |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Verdadero                                    |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -75,18 +75,18 @@ Número máximo de participantes de una reunión.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Tiene un único valor       | True                                    |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Verdadero                                    |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -96,18 +96,18 @@ Número máximo de participantes de una reunión.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Tiene un único valor       | True                                    |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Verdadero                                    |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -117,18 +117,18 @@ Número máximo de participantes de una reunión.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Tiene un único valor       | True                                    |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Verdadero                                    |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -138,18 +138,18 @@ Número máximo de participantes de una reunión.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Tiene un único valor       | True                                    |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Verdadero                                    |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -159,18 +159,18 @@ Número máximo de participantes de una reunión.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Tiene un único valor       | True                                    |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Verdadero                                    |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 

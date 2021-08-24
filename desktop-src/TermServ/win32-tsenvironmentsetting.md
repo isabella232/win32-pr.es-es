@@ -1,11 +1,11 @@
 ---
-title: Win32_TSEnvironmentSetting (clase)
-description: Define los valores de configuración para la \_ clase de terminal Win32, incluida la Directiva de programa inicial.
+title: Win32_TSEnvironmentSetting clase
+description: Define los valores de configuración de la clase Terminal Win32, \_ incluida la directiva de programa inicial.
 ms.assetid: 2d310a1e-a1bd-4ccb-965e-8389aaa2e4c1
 ms.tgt_platform: multiple
 keywords:
 - Win32_TSEnvironmentSetting clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_TSEnvironmentSetting de clase, se describe
+- Win32_TSEnvironmentSetting clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -29,18 +29,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0689536385644ae3ef95d106e50ab198e5a57f93
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 91ede3347581267d9fcec00a82c016c273c239c9673b536843753e6b59ec2341
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535200"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119514325"
 ---
-# <a name="win32_tsenvironmentsetting-class"></a>\_Clase Win32 TSEnvironmentSetting
+# <a name="win32_tsenvironmentsetting-class"></a>Clase \_ TSEnvironmentSetting de Win32
 
-La clase WMI **\_ TSEnvironmentSetting de Win32** define los valores de configuración para la clase de [**\_ terminal Win32**](win32-terminal.md) , incluida la Directiva de programa inicial.
+La clase WMI **Win32 \_ TSEnvironmentSetting** define los valores de configuración de la clase [**\_ Terminal Win32,**](win32-terminal.md) incluida la directiva de programa inicial.
 
-La siguiente sintaxis se simplifica desde el código MOF e incluye todas las propiedades definidas y heredadas, en orden alfabético. Para obtener información de referencia sobre los métodos, vea la tabla de métodos más adelante en este tema.
+La sintaxis siguiente se simplifica a partir del código MOF e incluye todas las propiedades definidas y heredadas, en orden alfabético. Para obtener información de referencia sobre los métodos, vea la tabla de métodos más adelante en este tema.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -73,14 +73,14 @@ La **clase \_ TSEnvironmentSetting de Win32** tiene estos tipos de miembros:
 
 ### <a name="methods"></a>Métodos
 
-La clase **Win32 \_ TSEnvironmentSetting** tiene estos métodos.
+La **clase \_ TSEnvironmentSetting de Win32** tiene estos métodos.
 
 
 
 | Método                                                                      | Descripción                                                            |
 |:----------------------------------------------------------------------------|:-----------------------------------------------------------------------|
 | [**InitialProgram**](win32-tsenvironmentsetting-initialprogram.md)         | Establece las propiedades del programa de inicio incluidas en esta clase.<br/> |
-| [**SetClientWallPaper**](win32-tsenvironmentsetting-setclientwallpaper.md) | Establece la propiedad **ClientWallPaper** .<br/>                      |
+| [**SetClientWallPaper**](win32-tsenvironmentsetting-setclientwallpaper.md) | Establece la **propiedad ClientWallPaper.**<br/>                      |
 
 
 
@@ -106,20 +106,20 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 
 Descripción breve (cadena de una línea) del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **ClientWallPaper**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica si la imagen del papel tapiz se muestra en el cliente. No mostrar la imagen del papel tapiz puede ahorrar recursos del sistema al reducir el tiempo necesario para volver a dibujar la pantalla.
+Especifica si la imagen de fondo de pantalla se muestra en el cliente. No mostrar la imagen de papel tapiz puede ahorrar recursos del sistema al reducir el tiempo necesario para volver a dibujar la pantalla.
 
 <dt>
 
@@ -130,7 +130,7 @@ Especifica si la imagen del papel tapiz se muestra en el cliente. No mostrar la 
 
 </dt> <dd>
 
-La imagen del papel tapiz no se muestra en el cliente.
+La imagen de fondo de pantalla no se muestra en el cliente.
 
 </dd> <dt>
 
@@ -141,7 +141,7 @@ La imagen del papel tapiz no se muestra en el cliente.
 
 </dt> <dd>
 
-La imagen del papel tapiz se muestra en el cliente.
+La imagen de fondo de pantalla se muestra en el cliente.
 
 </dd> </dl>
 
@@ -158,7 +158,7 @@ Tipo de acceso: solo lectura
 
 Descripción del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -171,20 +171,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El nombre y la ruta de acceso del programa que el usuario ejecutará inmediatamente después de iniciar sesión en el servidor host de sesión de escritorio remoto.
+El nombre y la ruta de acceso del programa que el usuario ejecutará inmediatamente después de iniciar sesión en el servidor host de sesión de Escritorio remoto.
 
 </dd> <dt>
 
 **InitialProgramPolicy**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-La Directiva que el servidor usa para determinar la ruta de acceso y el nombre de archivo del programa de inicio, así como el nombre de la carpeta en la que se encuentra.
+Directiva que usa el servidor para determinar la ruta de acceso del programa de inicio y el nombre de archivo, así como el nombre de la carpeta en la que se encuentra.
 
 <dt>
 
@@ -201,12 +201,12 @@ La configuración del programa de inicio del usuario está en vigor.
 
 <span id="Server-Override"></span><span id="server-override"></span><span id="SERVER-OVERRIDE"></span>
 
-<span id="Server-Override"></span><span id="server-override"></span><span id="SERVER-OVERRIDE"></span>**Invalidación de servidor** (1)
+<span id="Server-Override"></span><span id="server-override"></span><span id="SERVER-OVERRIDE"></span>**Invalidación de** servidor (1)
 
 
 </dt> <dd>
 
-El servidor invalida la configuración del programa de inicio del usuario.
+El servidor reemplaza la configuración del programa de inicio del usuario.
 
 </dd> <dt>
 
@@ -217,7 +217,7 @@ El servidor invalida la configuración del programa de inicio del usuario.
 
 </dt> <dd>
 
-En esta sesión solo se ejecutará una aplicación. Se omite la información del programa de inicio.
+Solo se ejecutará una aplicación en esta sesión. Se omite la información del programa de inicio.
 
 </dd> </dl>
 
@@ -226,18 +226,18 @@ En esta sesión solo se ejecutará una aplicación. Se omite la información del
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 ")
+Calificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5")
 </dt> </dl>
 
 Fecha en que se instaló el objeto. La falta de un valor no indica que el objeto no está instalado.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -252,20 +252,20 @@ Tipo de acceso: solo lectura
 
 El nombre del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **PolicySourceClientWallPaper**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la propiedad **ClientWallPaper** está configurada por el servidor, la Directiva de grupo o de forma predeterminada.
+Indica si la **propiedad ClientWallPaper** está configurada por el servidor, la directiva de grupo o de forma predeterminada.
 
 <dt>
 
@@ -295,13 +295,13 @@ Valor predeterminado
 **PolicySourceInitialProgramPath**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la propiedad **InitialProgramPath** está configurada por el servidor, la Directiva de grupo o de forma predeterminada.
+Indica si la **propiedad InitialProgramPath** está configurada por el servidor, la directiva de grupo o de forma predeterminada.
 
 <dt>
 
@@ -331,13 +331,13 @@ Valor predeterminado
 **PolicySourceStartIn**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la propiedad de **Inicio** está configurada por el servidor, la Directiva de grupo o de forma predeterminada.
+Indica si la **propiedad StartIn** está configurada por el servidor, la directiva de grupo o de forma predeterminada.
 
 <dt>
 
@@ -364,7 +364,7 @@ Valor predeterminado
 
 </dd> <dt>
 
-**Startin**
+**Inicio**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -373,7 +373,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La ruta de acceso del directorio de trabajo del programa que el usuario ejecutará inmediatamente después de iniciar sesión en el servidor host de sesión de escritorio remoto.
+La ruta de acceso del directorio de trabajo del programa que el usuario ejecutará inmediatamente después de iniciar sesión en el servidor host de sesión de Escritorio remoto.
 
 </dd> <dt>
 
@@ -389,15 +389,15 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios Estados operativos y no operativos. Los Estados operativos incluyen: "correcto", "degradado" y "Pred FAIL" (un elemento, como una unidad de disco duro habilitada para SMART, puede estar funcionando correctamente pero prediciendo un error en un futuro próximo). Los Estados no operativos incluyen: "error", "iniciando", "deteniendo" y "servicio". El último, "servicio", se puede aplicar durante la resilverización del reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo el trabajo está en línea, pero el elemento administrado no es "OK" ni está en uno de los otros Estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Los estados no operativo incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 <dt>
 
 
 
- ("Correcto")
+ ("Ok")
 
 
 </dt> <dd></dd> <dt>
@@ -425,21 +425,21 @@ Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsys
 
 
 
- ("Pred FAIL")
+ ("Error previo")
 
 
 </dt> <dd></dd> <dt>
 
 
 
- ("Iniciando")
+ ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 
 
- ("Deteniéndose")
+ ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -464,15 +464,15 @@ Tipo de acceso: solo lectura
 
 Nombre del terminal.
 
-Esta propiedad se hereda de [**Win32 \_ TerminalSetting**](win32-terminalsetting.md).
+Esta propiedad se hereda de [**\_ TerminalSetting de Win32.**](win32-terminalsetting.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Tenga en cuenta que los Winstations que están asociados a la sesión de consola no pueden tener acceso a los métodos y las propiedades de esta clase. Si se realiza un intento de hacerlo especificando "Console" como el valor de la propiedad **TerminalName** , los métodos de este objeto devuelven **WBEM \_ E \_ no \_ compatible**. Este código de error también se devuelve si una estación de ventana intenta llamar a métodos de este objeto para agregar o modificar las propiedades de seguridad de las cuentas LocalSystem, LocalService o NetworkService.
+Tenga en cuenta que las winstations asociadas a la sesión de consola no pueden tener acceso a los métodos y propiedades de esta clase. Si se intenta hacerlo especificando "Console" como valor de la propiedad **TerminalName,** los métodos de este objeto **devuelven WBEM \_ E NOT \_ \_ SUPPORTED**. Este código de error también se devuelve si una estación de ventana intenta llamar a métodos de este objeto para agregar o modificar las propiedades de seguridad de las cuentas LocalSystem, LocalService o NetworkService.
 
-Para conectarse al \\ espacio de \\ nombres TerminalServices de cimv2 raíz \\ , el nivel de autenticación debe incluir privacidad de paquetes. En el caso de las llamadas de C/C++, se trata de un nivel de autenticación de **\_ \_ \_ \_ \_ privacidad de nivel** de autenticación de RPC C. En el caso de las llamadas de Visual Basic y scripting, se trata de un nivel de autenticación de **WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de 6. En el siguiente ejemplo de Visual Basic Scripting Edition (VBScript) se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
+Para conectarse al espacio \\ de nombres raíz de \\ TerminalServices cimv2, el nivel de \\ autenticación debe incluir privacidad de paquetes. Para las llamadas de C/C++, se trata de un nivel de autenticación de **RPC \_ C \_ AUTHN LEVEL \_ \_ PKT \_ PRIVACY**. Para Visual Basic y llamadas de scripting, se trata de un nivel de autenticación de **WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de 6. En el ejemplo Visual Basic Scripting Edition (VBScript) siguiente se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
 
 
 ```VB
@@ -483,7 +483,7 @@ Set objServices = GetObject( _
 
 
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -493,8 +493,8 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -503,7 +503,7 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 
 <dl> <dt>
 
-[**Win32 \_ TerminalSetting**](win32-terminalsetting.md)
+[**Terminal \_ Win32Setting**](win32-terminalsetting.md)
 </dt> </dl>
 
  

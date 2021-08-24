@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: ColumnStream. ToString (método)'
-title: ColumnStream. ToString (método)
+description: Más información sobre el método ColumnStream.ToString
+title: Método ColumnStream.ToString
 TOCTitle: 'ToString method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.ColumnStream.ToString
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.columnstream.tostring(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 15a557c2e0570dc558a5eee66005976461d17659
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b6d4fb9b0dfe5ad76353e93e96f65c540fa7bc5fb7eb58d0fff18c0f75d879d1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105720424"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119454975"
 ---
-# <a name="columnstreamtostring-method"></a>ColumnStream. ToString (método)
+# <a name="columnstreamtostring-method"></a>Método ColumnStream.ToString
 
-Devuelve una [cadena](/dotnet/api/system.string) que representa el [ColumnStream](./columnstream-class.md)actual.
+Devuelve un [objeto String](/dotnet/api/system.string) que representa el [elemento ColumnStream actual.](./columnstream-class.md)
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,15 +56,15 @@ public override string ToString()
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. String](/dotnet/api/system.string)  
-[Cadena](/dotnet/api/system.string) que representa el [ColumnStream](./columnstream-class.md)actual.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Cadena [que](/dotnet/api/system.string) representa el elemento [ColumnStream actual.](./columnstream-class.md)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase ColumnStream](./columnstream-class.md)
+[ColumnStream (clase)](./columnstream-class.md)
 
-[Miembros de ColumnStream](./columnstream-members.md)
+[Miembros ColumnStream](./columnstream-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_GETUNDONAME (RichEdit. h)
-description: Microsoft Rich Edit 2,0 y versiones posteriores recupera el tipo de la siguiente acción de deshacer, si existe. Microsoft Rich Edit 1,0 este mensaje no se admite.
+title: EM_GETUNDONAME mensaje (Richedit.h)
+description: Microsoft Rich Edit 2.0 y versiones posteriores Recupera el tipo de la siguiente acción de deshacer, si la hay. Microsoft Rich Edit 1.0 Este mensaje no se admite.
 ms.assetid: 43351909-f8bc-425a-9d9b-655e3b47eb75
 keywords:
-- EM_GETUNDONAME controles de mensajes de Windows
+- EM_GETUNDONAME controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a0c29b5815da5569059ba80c007d6af39d1e389f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d133038c0adad2fe7eaa1ae98cf638fe6bd13fad82df3b3d2d1ac384a30e1a80
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996824"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119576645"
 ---
-# <a name="em_getundoname-message"></a>\_Mensaje GETUNDONAME em
+# <a name="em_getundoname-message"></a>Mensaje \_ GETUNDONAME de EM
 
-Microsoft Rich Edit 2,0 y versiones posteriores: recupera el tipo de la siguiente acción de deshacer, si existe.
+Microsoft Rich Edit 2.0 y versiones posteriores: recupera el tipo de la siguiente acción de deshacer, si la hay.
 
-Microsoft Rich Edit 1,0: este mensaje no se admite.
+Microsoft Rich Edit 1.0: este mensaje no se admite.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -34,36 +34,36 @@ Microsoft Rich Edit 1,0: este mensaje no se admite.
 *wParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si hay una acción de deshacer, el valor devuelto es un valor de enumeración [**UNDONAMEID**](/windows/desktop/api/Richedit/ne-richedit-undonameid) que indica el tipo de la siguiente acción en la cola de deshacer del control.
+Si hay una acción de deshacer, el valor devuelto es un valor de enumeración [**UNDONAMEID**](/windows/desktop/api/Richedit/ne-richedit-undonameid) que indica el tipo de la acción siguiente en la cola de deshacer del control.
 
-Si no hay ninguna acción que se pueda deshacer o se desconoce el tipo de la siguiente acción de deshacer, el valor devuelto es cero.
+Si no hay acciones que se puedan deshacer o se desconoce el tipo de la siguiente acción de deshacer, el valor devuelto es cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Entre los tipos de acciones que se pueden deshacer o rehacer se incluyen las operaciones de escribir, eliminar, arrastrar, colocar, cortar y pegar. Esta información puede ser útil para las aplicaciones que proporcionan una interfaz de usuario extendida para las operaciones de deshacer y rehacer, como un cuadro de lista desplegable de acciones que se pueden deshacer.
+Los tipos de acciones que se pueden deshacer o volver a escribir incluyen operaciones de escritura, eliminación, arrastrar, colocar, cortar y pegar. Esta información puede ser útil para las aplicaciones que proporcionan una interfaz de usuario extendida para las operaciones de deshacer y rehacer, como un cuadro de lista desplegable de acciones que se pueden deshacer.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -74,13 +74,13 @@ Entre los tipos de acciones que se pueden deshacer o rehacer se incluyen las ope
 **Referencia**
 </dt> <dt>
 
-[**\_GETREDONAME em**](em-getredoname.md)
+[**EM \_ GETREDONAME**](em-getredoname.md)
 </dt> <dt>
 
-[**rehacer EM \_**](em-redo.md)
+[**EM \_ REDO**](em-redo.md)
 </dt> <dt>
 
-[**deshacer EM \_**](em-undo.md)
+[**EM \_ UNDO**](em-undo.md)
 </dt> <dt>
 
 [**UNDONAMEID**](/windows/desktop/api/Richedit/ne-richedit-undonameid)

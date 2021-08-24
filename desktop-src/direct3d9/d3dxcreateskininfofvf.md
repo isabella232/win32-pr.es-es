@@ -1,7 +1,7 @@
 ---
-description: Crea un objeto de malla de máscara vacía con un código de formato de vértice flexible (FVF).
+description: Crea un objeto de malla de máscara vacío mediante un código de formato de vértice flexible (FVF).
 ms.assetid: 72e27850-0102-4121-a397-16f2e0220b93
-title: Función D3DXCreateSkinInfoFVF (D3DX9Mesh. h)
+title: Función D3DXCreateSkinInfoFVF (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 907ab874b8cd8b766e6f9413212ba8771df9b25c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ccf10bad879b51f42c743ddd18112e24d355b366691b7922816164e57ed1b3d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718216"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119495785"
 ---
-# <a name="d3dxcreateskininfofvf-function"></a>D3DXCreateSkinInfoFVF función)
+# <a name="d3dxcreateskininfofvf-function"></a>Función D3DXCreateSkinInfoFVF
 
-Crea un objeto de malla de máscara vacía con un código de formato de vértice flexible (FVF).
+Crea un objeto de malla de máscara vacío mediante un código de formato de vértice flexible (FVF).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,16 +43,16 @@ HRESULT D3DXCreateSkinInfoFVF(
 
 <dl> <dt>
 
-*NumVertices* \[ de\]
+*NumVertices* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Número de vértices para la malla de la máscara.
+Número de vértices para la malla de máscara.
 
 </dd> <dt>
 
-*FVF* \[ de\]
+*FVF* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -61,21 +61,21 @@ Combinación de [D3DFVF](d3dfvf.md) que describe el formato de vértice de la ma
 
 </dd> <dt>
 
-*NumBones* \[ de\]
+*NumBones* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Número de huesos para la malla de la máscara.
+Número de tejidos para la malla de máscara.
 
 </dd> <dt>
 
-*ppSkinInfo* \[ enuncia\]
+*ppSkinInfo* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXSKININFO**](id3dxskininfo.md)\***
 
-Dirección de un puntero a una interfaz [**ID3DXSkinInfo**](id3dxskininfo.md) que representa el objeto de información de máscara creado.
+Dirección de un puntero a una [**interfaz ID3DXSkinInfo,**](id3dxskininfo.md) que representa el objeto de información de máscara creado.
 
 </dd> </dl>
 
@@ -83,11 +83,11 @@ Dirección de un puntero a una interfaz [**ID3DXSkinInfo**](id3dxskininfo.md) qu
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use [**SetBoneInfluence**](id3dxskininfo--setboneinfluence.md) para rellenar el objeto de malla de máscara vacía devuelto por este método.
+Use [**SetIonalInfluence para**](id3dxskininfo--setboneinfluence.md) rellenar el objeto de malla de máscara vacío devuelto por este método.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -95,8 +95,8 @@ Use [**SetBoneInfluence**](id3dxskininfo--setboneinfluence.md) para rellenar el 
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -107,7 +107,7 @@ Use [**SetBoneInfluence**](id3dxskininfo--setboneinfluence.md) para rellenar el 
 [Funciones de malla](dx9-graphics-reference-d3dx-functions-mesh.md)
 </dt> <dt>
 
-[**SetBoneInfluence**](id3dxskininfo--setboneinfluence.md)
+[**SetIonalInfluence**](id3dxskininfo--setboneinfluence.md)
 </dt> </dl>
 
  

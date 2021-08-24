@@ -1,15 +1,15 @@
 ---
 description: Especifica el tamaño de la secuencia de vídeo cuando se descodifica.
 ms.assetid: db7b101a-5ff8-4a62-b9e2-d05fcdc44b3d
-title: Propiedad AVEncVideoDisplayDimension (Codecapi. h)
+title: Propiedad AVEncVideoDisplayDimension (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 57e5f611525e68f6f47c442c6e733c6c3e7de14d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: fe4c6f6fbcd3f4746b4ee3b807ebb098c1bfce728c9c01614943f05351f5bb18
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105659259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119540725"
 ---
 # <a name="avencvideodisplaydimension-property"></a>Propiedad AVEncVideoDisplayDimension
 
@@ -33,11 +33,11 @@ Los 16 bits superiores del valor contienen el ancho, en píxeles. Los 16 bits in
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -48,7 +48,7 @@ Los 16 bits superiores del valor contienen el ancho, en píxeles. Los 16 bits in
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

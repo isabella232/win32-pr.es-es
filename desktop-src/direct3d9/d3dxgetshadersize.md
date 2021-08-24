@@ -1,7 +1,7 @@
 ---
-description: Devuelve el tamaño del código de byte del sombreador, en bytes.
+description: Devuelve el tamaño del código de bytes del sombreador, en bytes.
 ms.assetid: 7dd091f7-fda9-49e1-982d-2eb57d9ecb23
-title: Función D3DXGetShaderSize (D3DX9Shader. h)
+title: Función D3DXGetShaderSize (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 3017c5a5371e99bcf9e1d69827de0227d929f33a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7354431fa8f9e8a177b8ccc63ef434a3f0a88add8e9e4736e3fd5fffb0cea811
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717756"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119564825"
 ---
-# <a name="d3dxgetshadersize-function"></a>D3DXGetShaderSize función)
+# <a name="d3dxgetshadersize-function"></a>Función D3DXGetShaderSize
 
-Devuelve el tamaño del código de byte del sombreador, en bytes.
+Devuelve el tamaño del código de bytes del sombreador, en bytes.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,7 +40,7 @@ UINT D3DXGetShaderSize(
 
 <dl> <dt>
 
-*pFunction* \[ de\]
+*pFunction* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md) \***
@@ -51,9 +51,9 @@ Puntero a la secuencia DWORD de la función.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Devuelve el tamaño del código de byte del sombreador, en bytes.
+Devuelve el tamaño del código de bytes del sombreador, en bytes.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Devuelve el tamaño del código de byte del sombreador, en bytes.
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
@@ -70,7 +70,7 @@ Devuelve el tamaño del código de byte del sombreador, en bytes.
 
 <dl> <dt>
 
-[Funciones del sombreador](dx9-graphics-reference-d3dx-functions-shader.md)
+[Funciones de sombreador](dx9-graphics-reference-d3dx-functions-shader.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: Método BasicDevice.add_ConnectionStatusChanged
-description: Registra un controlador de eventos para el evento ConnectionStatusChanged. | Método BasicDevice.add_ConnectionStatusChanged
+title: BasicDevice.add_ConnectionStatusChanged método
+description: Registra un controlador de eventos para el evento ConnectionStatusChanged. | BasicDevice.add_ConnectionStatusChanged método
 ms.assetid: FFAA0981-508C-4300-9CA9-24C6AFC1183D
 keywords:
-- método add_ConnectionStatusChanged API de streaming multimedia
-- método add_ConnectionStatusChanged API de streaming multimedia, interfaz BasicDevice
-- BasicDevice interface media streaming API, método add_ConnectionStatusChanged
+- add_ConnectionStatusChanged media streaming API
+- add_ConnectionStatusChanged media streaming API, interfaz BasicDevice
+- Interfaz basicDispositivo Media Streaming API , add_ConnectionStatusChanged método
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 61a36e46d554a953ecd061ccf2396d33b0578d8f
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: a416770a0ea3a4d317a2308fc9f5c9d940e89900aabbc7651ceb93b789454338
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105707663"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119462265"
 ---
-# <a name="basicdeviceadd_connectionstatuschanged-method"></a>BasicDevice. Add \_ ConnectionStatusChanged (método)
+# <a name="basicdeviceadd_connectionstatuschanged-method"></a>Método BasicDevice.add \_ ConnectionStatusChanged
 
-Registra un controlador de eventos para el evento [**ConnectionStatusChanged**](connectionstatuschanged.md) .
+Registra un controlador de eventos para el [**evento ConnectionStatusChanged.**](connectionstatuschanged.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,14 +42,14 @@ HRESULT add_ConnectionStatusChanged(
 
 <dl> <dt>
 
-*controlador* \[ de de\]
+*controlador* \[ En\]
 </dt> <dd>
 
-Función de controlador de eventos [**ConnectionStatusHandler**](/previous-versions/windows/desktop/legacy/hh828836(v=vs.85)) .
+Una [**función de controlador de eventos ConnectionStatusHandler.**](/previous-versions/windows/desktop/legacy/hh828836(v=vs.85))
 
 </dd> <dt>
 
-*token* \[ de out, retval\]
+*token* \[ out, retval\]
 </dt> <dd>
 
 Referencia a un token que se puede usar para anular el registro del controlador de eventos.
@@ -58,13 +58,13 @@ Referencia a un token que se puede usar para anular el registro del controlador 
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 
@@ -72,7 +72,7 @@ El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen
 
 ## <a name="remarks"></a>Observaciones
 
-Para anular el registro del controlador de eventos registrado por este método, pase el valor del *token* al método [**Remove \_ ConnectionStatusChanged**](basicdevice-remove-connectionstatuschanged.md) .
+Para anular el registro del controlador de eventos registrado por este método, pase el *valor del token* al método Remove [**\_ ConnectionStatusChanged.**](basicdevice-remove-connectionstatuschanged.md)
 
 ## <a name="see-also"></a>Vea también
 

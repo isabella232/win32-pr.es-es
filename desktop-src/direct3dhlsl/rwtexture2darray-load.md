@@ -1,9 +1,9 @@
 ---
-title: 'Métodos Load RWTexture2DArray:: RWTexture2DArray'
-description: Lee los datos de textura de un RWTexture2DArray.
+title: Métodos RWTexture2DArray::RWTexture2DArray Load
+description: Lee datos de textura de RWTexture2DArray.
 ms.assetid: 299A1C0E-2473-4FAB-AD0E-54AB4BABD5B7
 keywords:
-- Cargar métodos HLSL
+- Métodos de carga HLSL
 topic_type:
 - apiref
 api_type:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 2cb3181052b3c12f49928ef9c2d31cffd0a0ef5c
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
+ms.openlocfilehash: c191483efff015bb3038ec28e576c82d9a0adda6ed498b676f09927e36e9a46f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104983791"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119487125"
 ---
-# <a name="rwtexture2darrayload-methods"></a>RWTexture2DArray:: Load (métodos)
+# <a name="rwtexture2darrayload-methods"></a>RWTexture2DArray::Load (métodos)
 
-Lee los datos de textura de un [**RWTexture2DArray**](sm5-object-rwtexture2darray.md).
+Lee datos de textura de [**RWTexture2DArray**](sm5-object-rwtexture2darray.md).
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,8 +29,8 @@ Lee los datos de textura de un [**RWTexture2DArray**](sm5-object-rwtexture2darra
 
 | Método                                                      | Descripción                                                           |
 |:------------------------------------------------------------|:----------------------------------------------------------------------|
-| [**Load (int, uint)**](rwtexture2darray-load-float-uint-.md) | Lee los datos de textura y devuelve el estado de la operación.<br/> |
-| [**Load (int)**](rwtexture2darray-load-float-.md)           | Lee los datos de textura.<br/>                                        |
+| [**Load(int,uint)**](rwtexture2darray-load-float-uint-.md) | Lee los datos de textura y devuelve el estado de la operación.<br/> |
+| [**Load(int)**](rwtexture2darray-load-float-.md)           | Lee los datos de textura.<br/>                                        |
 
 
 
