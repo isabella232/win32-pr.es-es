@@ -1,21 +1,21 @@
-- name: 'Empaquetado, implementación y consulta de aplicaciones de Windows'
+- name: 'Empaquetado, implementación y consulta de Windows aplicaciones'
   href: appx-portal.md
   items:
-    - name: Cómo crear un paquete de la aplicación
+    - name: Creación de un paquete de aplicación
       href: how-to-create-a-package.md
     - name: How to create an app package signing certificate (Cómo crear un certificado de firma del paquete de la aplicación)
       href: how-to-create-a-package-signing-certificate.md
     - name: Cómo firmar un paquete de la aplicación con SignTool
       href: how-to-sign-a-package-using-signtool.md
-    - name: Cómo solucionar errores de firma de paquete de aplicaciones
+    - name: Solución de errores de firma de paquetes de aplicaciones
       href: how-to-troubleshoot-app-package-signature-errors.md
-    - name: Cómo firmar un paquete de aplicación mediante programación
+    - name: Cómo firmar mediante programación un paquete de aplicación
       href: how-to-programmatically-sign-a-package.md
-    - name: Cómo desarrollar una aplicación de OEM que use un archivo personalizado
+    - name: Desarrollo de una aplicación OEM que usa un archivo personalizado
       href: how-to-develop-oem-app-with-custom-file.md
-    - name: 'Inicio rápido: extraer el contenido del paquete de la aplicación'
+    - name: 'Inicio rápido: Extracción del contenido del paquete de la aplicación'
       href: how-to-extract-content-from-a-package.md
-    - name: 'Inicio rápido: información del manifiesto del paquete de la aplicación de consulta'
+    - name: 'Inicio rápido: Consulta de la información del manifiesto del paquete de aplicación'
       href: how-to-query-package-identity-information.md
     - name: Solución de problemas
       href: troubleshooting.md
@@ -35,7 +35,7 @@
             - name: IAppxBlockMapBlocksEnumerator
               href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxblockmapblocksenumerator
               items:
-                - name: GetCurrent (método)
+                - name: Método GetCurrent
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxblockmapblocksenumerator-getcurrent
                 - name: Método GetHasCurrent
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxblockmapblocksenumerator-gethascurrent
@@ -57,7 +57,7 @@
             - name: IAppxBlockMapFilesEnumerator
               href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxblockmapfilesenumerator
               items:
-                - name: GetCurrent (método)
+                - name: Método GetCurrent
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxblockmapfilesenumerator-getcurrent
                 - name: Método GetHasCurrent
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxblockmapfilesenumerator-gethascurrent
@@ -66,13 +66,13 @@
             - name: IAppxBlockMapReader
               href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxblockmapreader
               items:
-                - name: GetFile (método)
+                - name: Método GetFile
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxblockmapreader-getfile
-                - name: GetFiles (método)
+                - name: Método GetFiles
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxblockmapreader-getfiles
                 - name: Método GetHashMethod
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxblockmapreader-gethashmethod
-                - name: GetStream (método)
+                - name: Método GetStream
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxblockmapreader-getstream
             - name: IAppxBundleFactory
               href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxbundlefactory
@@ -89,14 +89,14 @@
               items:
                 - name: Método GetPackageId
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlemanifestoptionalbundleinfo-getpackageid
-                - name: GetFileName (método)
+                - name: Método GetFileName
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlemanifestoptionalbundleinfo-getfilename
                 - name: Método GetPackageInfoItems
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlemanifestoptionalbundleinfo-getpackageinfoitems
             - name: IAppxBundleManifestOptionalBundleInfoEnumerator
               href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxbundlemanifestoptionalbundleinfoenumerator
               items:
-                - name: GetCurrent (método)
+                - name: Método GetCurrent
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlemanifestoptionalbundleinfoenumerator-getcurrent
                 - name: Método GetHasCurrent
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlemanifestoptionalbundleinfoenumerator-gethascurrent
@@ -105,7 +105,7 @@
             - name: IAppxBundleManifestPackageInfo
               href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxbundlemanifestpackageinfo
               items:
-                - name: GetFileName (método)
+                - name: Método GetFileName
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlemanifestpackageinfo-getfilename
                 - name: GetOffset (método)
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlemanifestpackageinfo-getoffset
@@ -129,7 +129,7 @@
             - name: IAppxBundleManifestPackageInfoEnumerator
               href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxbundlemanifestpackageinfoenumerator
               items:
-                - name: GetCurrent (método)
+                - name: Método GetCurrent
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlemanifestpackageinfoenumerator-getcurrent
                 - name: Método GetHasCurrent
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlemanifestpackageinfoenumerator-gethascurrent
@@ -142,7 +142,7 @@
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlemanifestreader-getpackageid
                 - name: Método GetPackageInfoItems
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlemanifestreader-getpackageinfoitems
-                - name: GetStream (método)
+                - name: Método GetStream
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxbundlemanifestreader-getstream
             - name: IAppxBundleManifestReader2
               href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxbundlemanifestreader2
@@ -195,12 +195,12 @@
               items:
                 - name: GetName (método)
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxcontentgroup-getname
-                - name: GetFiles (método)
+                - name: Método GetFiles
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxcontentgroup-getfiles
             - name: IAppxContentGroupsEnumerator
               href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxcontentgroupsenumerator
               items:
-                - name: GetCurrent (método)
+                - name: Método GetCurrent
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxcontentgroupsenumerator-getcurrent
                 - name: Método GetHasCurrent
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxcontentgroupsenumerator-gethascurrent
@@ -209,7 +209,7 @@
             - name: IAppxContentGroupFilesEnumerator
               href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxcontentgroupfilesenumerator
               items:
-                - name: GetCurrent (método)
+                - name: Método GetCurrent
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxcontentgroupfilesenumerator-getcurrent
                 - name: Método GetHasCurrent
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxcontentgroupfilesenumerator-gethascurrent
@@ -234,7 +234,7 @@
               items:
                 - name: Método EncryptPackage
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxencryptionfactory-encryptpackage
-                - name: Método DecryptPackage
+                - name: DecryptPackage (método)
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxencryptionfactory-decryptpackage
                 - name: Método CreateEncryptedPackageWriter
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxencryptionfactory-createencryptedpackagewriter
@@ -350,18 +350,18 @@
               items:
                 - name: Método GetCompressionOption
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfile-getcompressionoption
-                - name: GetContentType (método)
+                - name: Método GetContentType
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfile-getcontenttype
                 - name: GetName (método)
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfile-getname
                 - name: GetSize (método)
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfile-getsize
-                - name: GetStream (método)
+                - name: Método GetStream
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfile-getstream
             - name: IAppxFilesEnumerator
               href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxfilesenumerator
               items:
-                - name: GetCurrent (método)
+                - name: Método GetCurrent
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfilesenumerator-getcurrent
                 - name: Método GetHasCurrent
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfilesenumerator-gethascurrent
@@ -372,12 +372,12 @@
               items:
                 - name: Método GetAppUserModelId
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestapplication-getappusermodelid
-                - name: GetStringValue (método)
+                - name: Método GetStringValue
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestapplication-getstringvalue
             - name: IAppxManifestApplicationsEnumerator
               href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestapplicationsenumerator
               items:
-                - name: GetCurrent (método)
+                - name: Método GetCurrent
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestapplicationsenumerator-getcurrent
                 - name: Método GetHasCurrent
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestapplicationsenumerator-gethascurrent
@@ -386,7 +386,7 @@
             - name: IAppxManifestDeviceCapabilitiesEnumerator
               href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestdevicecapabilitiesenumerator
               items:
-                - name: GetCurrent (método)
+                - name: Método GetCurrent
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestdevicecapabilitiesenumerator-getcurrent
                 - name: Método GetHasCurrent
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestdevicecapabilitiesenumerator-gethascurrent
@@ -404,7 +404,7 @@
             - name: IAppxManifestMainPackageDependenciesEnumerator
               href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestmainpackagedependenciesenumerator
               items:
-                - name: GetCurrent (método)
+                - name: Método GetCurrent
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestmainpackagedependenciesenumerator-getcurrent
                 - name: Método GetHasCurrent
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestmainpackagedependenciesenumerator-gethascurrent
@@ -420,7 +420,7 @@
             - name: IAppxManifestPackageDependenciesEnumerator
               href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestpackagedependenciesenumerator
               items:
-                - name: GetCurrent (método)
+                - name: Método GetCurrent
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestpackagedependenciesenumerator-getcurrent
                 - name: Método GetHasCurrent
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestpackagedependenciesenumerator-gethascurrent
@@ -469,7 +469,7 @@
               items:
                 - name: Método GetBoolValue
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestproperties-getboolvalue
-                - name: GetStringValue (método)
+                - name: Método GetStringValue
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestproperties-getstringvalue
             - name: IAppxManifestReader
               href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestreader
@@ -490,7 +490,7 @@
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestreader-getproperties
                 - name: Método GetResources
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestreader-getresources
-                - name: GetStream (método)
+                - name: Método GetStream
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestreader-getstream
             - name: IAppxManifestReader2
               href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestreader2
@@ -510,7 +510,7 @@
             - name: IAppxManifestResourcesEnumerator
               href: /windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestresourcesenumerator
               items:
-                - name: GetCurrent (método)
+                - name: Método GetCurrent
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestresourcesenumerator-getcurrent
                 - name: Método GetHasCurrent
                   href: /windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestresourcesenumerator-gethascurrent
@@ -654,7 +654,7 @@
               href: /windows/desktop/api/AppModel/nf-appmodel-getpackageinfo
             - name: GetPackageInfo2
               href: /windows/desktop/api/AppModel/nf-appmodel-getpackageinfo2
-            - name: Llamó a getpackagepath
+            - name: GetPackagePath
               href: /windows/desktop/api/AppModel/nf-appmodel-getpackagepath
             - name: GetPackagePathByFullName
               href: /windows/desktop/api/AppModel/nf-appmodel-getpackagepathbyfullname
@@ -696,7 +696,7 @@
               href: /windows/desktop/api/AppModel/ns-appmodel-package_version
         - name: Glosario
           href: appx-packaging-glossary.md
-        - name: API COM del administrador de paquetes de Windows
+        - name: Administrador de paquetes de Windows COM API
           href: windows-package-manager-com-api.md
     - name: Herramientas y cmdlets de PowerShell
       href: appx-packaging-tools.md

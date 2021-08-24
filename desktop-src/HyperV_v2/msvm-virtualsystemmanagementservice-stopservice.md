@@ -1,5 +1,5 @@
 ---
-description: 'Método StopService de la Msvm_VirtualSystemManagementService clase : detiene el servicio.'
+description: 'Método StopService de la clase Msvm_VirtualSystemManagementService : detiene el servicio.'
 ms.assetid: 215a9e6d-8f31-43a6-abf5-4eb72432e09f
 title: Método StopService de la Msvm_VirtualSystemManagementService clase
 ms.topic: reference
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 9ca47b0133944763bff2474a6511b7981b4c1884
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 500ebe5a0f353639ddfd5071ade7127eac5d30a058e950542845a9c670401d14
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109393"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119383395"
 ---
-# <a name="stopservice-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método StopService de la clase \_ Msvm VirtualSystemManagementService
+# <a name="stopservice-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método StopService de la clase Msvm \_ VirtualSystemManagementService
 
 detiene el servicio.
 
@@ -53,7 +53,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -63,7 +63,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

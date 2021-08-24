@@ -1,7 +1,7 @@
 ---
-description: Recupera los identificadores de las configuraciones regionales admitidas por este IInkAnalysisRecognizer.
+description: Recupera los identificadores de las configuraciones regionales que admite IInkAnalysisRecognizer.
 ms.assetid: 14c91ad0-f49e-43e7-848c-abc96b0dffa8
-title: 'IInkAnalysisRecognizer:: GetLanguages (método) (IACom. h)'
+title: Método IInkAnalysisRecognizer::GetLanguages (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 1e2b9792957b2de02daf45f8b662cfcb1174be72
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8a94b85dfe9a6b5dbbd755ff1e0a4cf2d68dccd5178da6d0578d6f50e8b48936
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908020"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119350975"
 ---
-# <a name="iinkanalysisrecognizergetlanguages-method"></a>IInkAnalysisRecognizer:: GetLanguages (método)
+# <a name="iinkanalysisrecognizergetlanguages-method"></a>IInkAnalysisRecognizer::GetLanguages (método)
 
-Recupera los identificadores de las configuraciones regionales admitidas por este [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md) .
+Recupera los identificadores de las configuraciones regionales que [**admite IInkAnalysisRecognizer.**](iinkanalysisrecognizer.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,20 +43,20 @@ HRESULT GetLanguages(
 *pulLanguagesCount* \[ in, out\]
 </dt> <dd>
 
-Número de identificadores de *ppulLanguages*.
+Número de identificadores en *ppulLanguages*.
 
 </dd> <dt>
 
-*ppulLanguages* \[ enuncia\]
+*ppulLanguages* \[ out\]
 </dt> <dd>
 
-Puntero a los identificadores de las configuraciones regionales admitidas por este [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md) .
+Puntero a los identificadores de las configuraciones regionales que [**admite este IInkAnalysisRecognizer.**](iinkanalysisrecognizer.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="remarks"></a>Observaciones
 
@@ -65,9 +65,9 @@ Para obtener una descripción de los valores devueltos, vea [clases e interfaces
 
  
 
-Este método devuelve una matriz vacía para los reconocedores de objetos y gestos.
+Este método devuelve una matriz vacía para reconocedores de objetos y gestos.
 
-Para obtener más información sobre los identificadores de idioma, vea [constantes y cadenas de identificador de idioma](/windows/desktop/Intl/language-identifier-constants-and-strings).
+Para obtener más información sobre los identificadores de idioma, vea [Constantes y cadenas de identificador de idioma.](/windows/desktop/Intl/language-identifier-constants-and-strings)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,9 +75,9 @@ Para obtener más información sobre los identificadores de idioma, vea [constan
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -89,7 +89,7 @@ Para obtener más información sobre los identificadores de idioma, vea [constan
 [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

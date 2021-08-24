@@ -1,19 +1,19 @@
 ---
 title: Temas "Cómo..." de objetos de geometría
-description: En los temas de esta sección se proporcionan ejemplos de tareas relacionadas con las geometrías.
+description: En los temas de esta sección se proporcionan ejemplos de tareas relacionadas con geometría.
 ms.assetid: 371a6662-f68f-418a-a81d-239de56877f1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e4db10352e60b872a345a836c7277bc27d2533e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: af25974c660f187f74dc63f5f9ce03b0cfed5b168dca767b970ac8785db15738
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105656275"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119260185"
 ---
 # <a name="geometries-how-to-topics"></a>Temas "Cómo..." de objetos de geometría
 
-En los temas de esta sección se proporcionan ejemplos de tareas relacionadas con las geometrías.
+En los temas de esta sección se proporcionan ejemplos de tareas relacionadas con geometría.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -24,7 +24,7 @@ En los temas de esta sección se proporcionan ejemplos de tareas relacionadas co
 | [Cómo transformar una geometría](how-to-transform-a-geometry.md)<br/>               | Muestra cómo transformar una geometría mediante Direct2D.<br/>                                       |
 | [Cómo crear grupos de geometría](how-to-create-geometry-groups.md)<br/>           | En este tema se describe cómo crear grupos de geometría.<br/>                                     |
 | [Cómo combinar geometrías](how-to-combine-geometries.md)<br/>                   | Muestra cómo combinar dos geometrías mediante Direct2D.<br/>                                     |
-| [Cómo recuperar datos de geometría](how-to-use-id2d1simplified-geometrysink.md)<br/> | Muestra cómo recuperar datos de geometría extendiendo la interfaz ID2D1SimplifiedGeometrySink.<br/> |
+| [Cómo recuperar datos de geometría](how-to-use-id2d1simplified-geometrysink.md)<br/> | Muestra cómo recuperar datos de geometría mediante la extensión de la interfaz ID2D1SimplifiedGeometrySink.<br/> |
 
 
 

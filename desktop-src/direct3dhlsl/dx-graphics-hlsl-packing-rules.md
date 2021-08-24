@@ -1,6 +1,6 @@
 ---
 title: Reglas de empaquetado para variables constantes
-description: Las reglas de empaquetado determinan la manera en que los datos se pueden organizar cuando se almacenan.
+description: Las reglas de empaquetado dictan la forma estricta en que se pueden organizar los datos cuando se almacenan.
 ms.assetid: 5c399342-06e1-47d2-8ecf-e093ed04be50
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,24 +9,24 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: d85566083dc9ead93a1a9e73fb06051b62178114
-ms.sourcegitcommit: 004d7881dc9ff92ea394cd2331774e13b1e7f13c
+ms.openlocfilehash: 49b10f6383344821c7659ac40b367a77e0421d33be68a374c59920a62d37697c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "103789424"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119120089"
 ---
 # <a name="packing-rules-for-constant-variables"></a>Reglas de empaquetado para variables constantes
 
-Las reglas de empaquetado determinan la manera en que los datos se pueden organizar cuando se almacenan. HLSL implementa reglas de empaquetado para datos de salida de VS, datos de entrada y salida de GS y datos de entrada y salida de PS. (Los datos no están empaquetados para entradas de VS porque la fase IA no puede desempaquetar los datos).
+Las reglas de empaquetado dictan la forma estricta en que se pueden organizar los datos cuando se almacenan. HLSL implementa reglas de empaquetado para los datos de salida de VS, los datos de entrada y salida de GS y los datos de entrada y salida de PS. (Los datos no se empaquetan para las entradas de VS porque la fase IA no puede desempaquetar datos).
 
-Las reglas de empaquetado de HLSL son similares a la ejecución de un **\# pragma Pack 4** con Visual Studio, que empaqueta los datos en límites de 4 bytes. Además, HLSL empaqueta los datos para que no cruce un límite de 16 bytes. Las variables se empaquetan en un vector de cuatro componentes determinado hasta que la variable va a ocupar un límite de 4 vectores; las variables siguientes se rebotarán al siguiente vector de cuatro componentes.
+Las reglas de empaquetado hlsl son similares a realizar un **\# paquete pragma 4** con Visual Studio, que empaqueta los datos en límites de 4 bytes. Además, HLSL empaqueta datos para que no crucen un límite de 16 bytes. Las variables se empaquetan en un vector de cuatro componentes determinado hasta que la variable se delimitará por un límite de 4 vectores. Las variables siguientes se saltarán al siguiente vector de cuatro componentes.
 
-Cada estructura obliga a que la variable siguiente se inicie en el siguiente vector de cuatro componentes. En ocasiones, esto genera relleno para las matrices de estructuras. El tamaño resultante de cualquier estructura siempre será divisible por **sizeof**(*Vector de cuatro componentes*).
+Cada estructura fuerza a la siguiente variable a iniciarse en el siguiente vector de cuatro componentes. Esto a veces genera relleno para matrices de estructuras. El tamaño resultante de cualquier estructura siempre será divisible uniformemente por **sizeof**(*vector de cuatro componentes*).
 
-De forma predeterminada, las matrices no están empaquetadas en HLSL. Para evitar que el sombreador asuma la sobrecarga de ALU para los cálculos de desplazamiento, todos los elementos de una matriz se almacenan en un vector de cuatro componentes. Tenga en cuenta que puede conseguir el empaquetado para matrices (e incurrir en los cálculos de direccionamiento) mediante la conversión.
+Las matrices no se empaquetan en HLSL de forma predeterminada. Para evitar forzar al sombreador a asumir la sobrecarga de ALU para cálculos de desplazamiento, todos los elementos de una matriz se almacenan en un vector de cuatro componentes. Tenga en cuenta que puede lograr el empaquetado de matrices (e incurrir en los cálculos de direccionamiento) mediante la conversión.
 
-A continuación se muestran ejemplos de estructuras y sus tamaños empaquetados correspondientes (dados: un **float1** ocupa 4 bytes):
+A continuación se muestran ejemplos de estructuras y sus tamaños empaquetados correspondientes (dado: **float1** ocupa 4 bytes):
 
 
 ```
@@ -132,7 +132,7 @@ cbuffer IE
 
 ## <a name="more-aggressive-packing"></a>Empaquetado más agresivo
 
-Podría empaquetar una matriz de forma más agresiva. Por ejemplo, dada una matriz de variables float:
+Puede empaquetar una matriz de forma más agresiva. Por ejemplo, dada una matriz de variables float:
 
 
 ```
@@ -141,7 +141,7 @@ float4 array[16];
 
 
 
-Podría elegir empaquetarla como esta, sin espacios en la matriz:
+Puede optar por empaquetar de esta manera, sin espacios en la matriz:
 
 
 ```
@@ -150,7 +150,7 @@ static float2 aggressivePackArray[32] = (float2[32])array;
 
 
 
-El empaquetado más estrecho es un equilibrio entre la necesidad de instrucciones adicionales del sombreador para el cálculo de direcciones.
+El empaquetado más estricto es una comparación con la necesidad de instrucciones adicionales del sombreador para el cálculo de direcciones.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -159,9 +159,9 @@ El empaquetado más estrecho es un equilibrio entre la necesidad de instruccione
 [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

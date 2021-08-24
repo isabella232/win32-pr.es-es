@@ -1,30 +1,30 @@
 ---
-title: Modificar el valor predeterminado de redirección del dispositivo
-description: Dado que Escritorio remoto servidores de puerta de enlace intentan exigir directivas de redirección de dispositivos seguras antes de pasar la conexión de cliente a un servidor host de sesión Escritorio remoto, puede que tenga que deshabilitar este valor predeterminado en algunos casos.
+title: Modificar el valor predeterminado de redirección de dispositivos
+description: Dado que Escritorio remoto Gateway intenta aplicar directivas de redireccionamiento de dispositivos seguros antes de pasar la conexión de cliente a un servidor host de sesión de Escritorio remoto, puede que tenga que deshabilitar este valor predeterminado en algunos casos.
 ms.assetid: 03F2617C-D478-4A51-9EEC-E9643CA831B7
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 925099b94c75dca39d381bdf57ae9730fb840da7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2b74515f6bf79b42c129ec7c113729b9871d4e4bfb0101f845f91dcac0d49237
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903548"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138181"
 ---
-# <a name="modify-device-redirection-default"></a>Modificar el valor predeterminado de redirección del dispositivo
+# <a name="modify-device-redirection-default"></a>Modificar el valor predeterminado de redirección de dispositivos
 
-Dado que Escritorio remoto servidores de puerta de enlace intentan exigir directivas de redirección de dispositivos seguras antes de pasar la conexión de cliente a un servidor host de sesión Escritorio remoto, puede que tenga que deshabilitar este valor predeterminado en algunos casos.
+Dado que Escritorio remoto Gateway intenta aplicar directivas de redireccionamiento de dispositivos seguros antes de pasar la conexión de cliente a un servidor host de sesión de Escritorio remoto, puede que tenga que deshabilitar este valor predeterminado en algunos casos.
 
-En Windows Server 2008 R2 y versiones posteriores, los servidores de puerta de enlace de Escritorio remoto de forma predeterminada intentarán aplicar directivas seguras de redireccionamiento de dispositivos antes de pasar la conexión de cliente a un servidor host de sesión Escritorio remoto. Sin embargo, esta característica no es compatible con algunos servidores. Por ejemplo, esto no se admite para las conexiones a las sesiones de la consola de Hyper-V y es posible que sea necesario deshabilitar el valor predeterminado para admitir la autenticación federada. En estos casos, esta característica puede deshabilitarse mediante la creación de la siguiente clave del registro para permitir que las conexiones pasen.
+En Windows Server 2008 R2 y versiones posteriores, los servidores de puerta de enlace de Escritorio remoto intentarán de forma predeterminada aplicar directivas de redireccionamiento de dispositivos seguros antes de pasar la conexión de cliente a un servidor host de sesión de Escritorio remoto. Sin embargo, algunos servidores no admiten esta característica. Por ejemplo, esto no se admite para las conexiones a sesiones de consola de Hyper-V y puede ser necesario deshabilitar el valor predeterminado para admitir la autenticación federada. En estos casos, esta característica se puede deshabilitar mediante la creación de la siguiente clave del Registro para permitir que pasen las conexiones.
 
-**HKEY \_ local \_ Machine \\ software \\ Microsoft \\ Terminal Server Gateway \\ preRDPDisableRegKey**
+**HKEY \_ LOCAL MACHINE Software Microsoft Terminal Server Gateway \_ \\ \\ \\ \\ preRDPDisableRegKey**
 
-Cuando exista esta clave, la puerta de enlace de Escritorio remoto no aplicará la redirección de dispositivos.
+Cuando esta clave existe, la Escritorio remoto de enlace no aplicará el redireccionamiento del dispositivo.
 
- 
+ 
 
- 
+ 
 
 
 

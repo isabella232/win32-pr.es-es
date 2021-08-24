@@ -1,7 +1,7 @@
 ---
 description: Se llama al método OnWaitEnd cuando finaliza un tiempo de espera.
 ms.assetid: 283627bb-599c-4711-abc4-b5f92dfd29a5
-title: Método CBaseVideoRenderer. OnWaitEnd (Renbase. h)
+title: Método CBaseVideoRenderer.OnWaitEnd (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 36377565556a759c9268ef1bf31ff7774933ccc2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b130bf38833951cad4f82fd559c0299d2aea86854ca0ab5545f3f2794ab9b4b1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660246"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119432475"
 ---
-# <a name="cbasevideorendereronwaitend-method"></a>CBaseVideoRenderer. OnWaitEnd, método
+# <a name="cbasevideorendereronwaitend-method"></a>Método CBaseVideoRenderer.OnWaitEnd
 
 Se llama al método OnWaitEnd cuando finaliza un tiempo de espera.
 
@@ -46,7 +46,7 @@ Este método no devuelve ningún valor.
 
 ## <a name="remarks"></a>Observaciones
 
-Esta función miembro solo realiza el registro de rendimiento. Se llama cuando el subproceso se awoken de esperar en la ventana o cuando el ejemplo siguiente se debe representar. Finalmente, podría usarse para recopilar información que controla la sincronización.
+Esta función miembro solo realiza el registro de rendimiento. Se llama cuando el subproceso no espera en la ventana o cuando se debe representar el ejemplo siguiente. Finalmente, se podría usar para recopilar información que controla la sincronización.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Esta función miembro solo realiza el registro de rendimiento. Se llama cuando e
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Esta función miembro solo realiza el registro de rendimiento. Se llama cuando e
 
 <dl> <dt>
 
-[**Clase CBaseVideoRenderer**](cbasevideorenderer.md)
+[**CBaseVideoRenderer (clase)**](cbasevideorenderer.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: 'Almacenamiento de dispositivo: notificación completa.'
+description: Notificación completa del almacenamiento del dispositivo.
 ms.assetid: 6b8d0801-14e6-4aff-8815-81d884955488
-title: System. Devices. notifications. StorageFull
+title: System.Devices.Notifications.StorageFull
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a882cf4abce08abec012eb96b7303d697efbfe6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fe39999e1ea3ef9cfe0c8fdbe6323ae48a89b7f410e8d3543b41e68ecf50f5be
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104498094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119353205"
 ---
-# <a name="systemdevicesnotificationsstoragefull"></a>System. Devices. notifications. StorageFull
+# <a name="systemdevicesnotificationsstoragefull"></a>System.Devices.Notifications.StorageFull
 
-Almacenamiento de dispositivo: notificación completa.
+Notificación completa del almacenamiento del dispositivo.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8
 
@@ -38,7 +38,7 @@ propertyDescription
             text = Your device is almost full. Delete files to create free space.
 ```
 
-## <a name="windows-7"></a>Windows 7
+## <a name="windows-7"></a>Windows 7
 
 ```
 propertyDescription
@@ -61,9 +61,9 @@ propertyDescription
             text = Your device is almost full. Delete files to create free space.
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -90,7 +90,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -108,7 +108,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
 title: entry (atributo)
-description: El atributo \ entry \ especifica una función exportada o una constante en un módulo mediante la identificación del punto de entrada en el archivo DLL.
+description: El atributo \ entry\ especifica una función o constante exportada en un módulo mediante la identificación del punto de entrada en el archivo DLL.
 ms.assetid: 1d2d6429-d828-44ec-8b0a-cefb64c6e706
 keywords:
 - atributo de entrada MIDL
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e596284a83c48bcfc84ef4f7985aed7c33ba7da
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 1f6dab1681cb04adbd48c4a27c14a359c87624870a43c118c6dd1a589689c00f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104358843"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013933"
 ---
 # <a name="entry-attribute"></a>entry (atributo)
 
-El atributo de **\[ entrada \]** especifica una función o constante exportada en un módulo mediante la identificación del punto de entrada en el archivo dll.
+El **\[ atributo \]** entry especifica una función o constante exportada en un módulo mediante la identificación del punto de entrada en el archivo DLL.
 
 ``` syntax
 [
@@ -39,44 +39,44 @@ module modulename
 
 <dl> <dt>
 
-*UUID-número* 
+*uuid-number* 
 </dt> <dd>
 
 Especifica un número de identificación único universal para el [**módulo**](module.md).
 
 </dd> <dt>
 
-*identificador de entrada* 
+*entry-id* 
 </dt> <dd>
 
-Especifica el nombre de función del punto de entrada del módulo o el número de identificación de entero.
+Especifica el nombre de la función de punto de entrada del módulo o el número de identificación de entero.
 
 </dd> <dt>
 
-*opcional-Attribute-List* 
+*optional-attribute-list* 
 </dt> <dd>
 
-Especifica cero o más atributos para que el compilador de MIDL los aplique al [**módulo**](module.md).
+Especifica cero o más atributos para que el compilador MIDL se aplique al [**módulo**](module.md).
 
 </dd> <dt>
 
-*ModuleName* 
+*modulename* 
 </dt> <dd>
 
-Especifica el nombre que otros componentes de software usan para denotar el [**módulo**](module.md).
+Especifica el nombre que otros componentes de software usan para indicar el [**módulo**](module.md).
 
 </dd> <dt>
 
 *elementlist* 
 </dt> <dd>
 
-Especifica una o más instrucciones de definición de elementos de módulo.
+Especifica una o varias instrucciones de definición de elemento de módulo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si la variable *EntryID* del atributo de **\[ entrada \]** es una cadena, se trata de un punto de entrada con nombre. Si *EntryID* es un número, el punto de entrada se define mediante un ordinal. Este atributo proporciona una manera de obtener la dirección de una función en un módulo.
+Si la variable *entryid* del atributo **\[ entry \]** es una cadena, se trata de un punto de entrada con nombre. Si *entryid* es un número, el punto de entrada se define mediante un ordinal. Este atributo proporciona una manera de obtener la dirección de una función en un módulo.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -102,13 +102,13 @@ module MyModule
 
 <dl> <dt>
 
-[**DllName**](dllname-str-.md)
+[**Dllname**](dllname-str-.md)
 </dt> <dt>
 
-[**destina**](module.md)
+[**Módulo**](module.md)
 </dt> <dt>
 
-[Sintaxis del archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxis de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [Ejemplo de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)
@@ -117,6 +117,6 @@ module MyModule
 [Generar una biblioteca de tipos con MIDL](generating-a-type-library-with-midl-2.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

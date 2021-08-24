@@ -1,12 +1,12 @@
 ---
-title: Método GetActiveServer de la clase Win32_RDMSEnvironment
-description: Recupera el nombre de dominio completo (FQDN) del entorno de servicios de administración de Escritorio remoto (RDMS).
+title: Método GetActiveServer de la Win32_RDMSEnvironment clase
+description: Recupera el nombre de dominio completo (FQDN) del Escritorio remoto Management Services (RDMS).
 ms.assetid: 87e25d11-de1d-41d1-974d-2871dde444b5
 ms.tgt_platform: multiple
 keywords:
 - Método GetActiveServer Servicios de Escritorio remoto
-- Método GetActiveServer Servicios de Escritorio remoto, clase Win32_RDMSEnvironment
-- Win32_RDMSEnvironment de clase Servicios de Escritorio remoto, método GetActiveServer
+- Método GetActiveServer Servicios de Escritorio remoto , Win32_RDMSEnvironment clase
+- Win32_RDMSEnvironment clase Servicios de Escritorio remoto , método GetActiveServer
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4265315e3ed2de87e564adab87c023401bbd55e8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 730fa1230ddf08f5bd598e2041cd82ab4287d30387fa61460771fea5bcf3ec50
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139018"
 ---
-# <a name="getactiveserver-method-of-the-win32_rdmsenvironment-class"></a>Método GetActiveServer de la \_ clase RDMSEnvironment de Win32
+# <a name="getactiveserver-method-of-the-win32_rdmsenvironment-class"></a>Método GetActiveServer de la clase \_ RDMSEnvironment de Win32
 
-Recupera el nombre de dominio completo (FQDN) del entorno de servicios de administración de Escritorio remoto (RDMS).
+Recupera el nombre de dominio completo (FQDN) del Escritorio remoto Management Services (RDMS).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,7 +43,7 @@ uint32 GetActiveServer(
 
 <dl> <dt>
 
-*NombreDeServidor* \[ enuncia\]
+*ServerName* \[ out\]
 </dt> <dd>
 
 Recibe el FQDN recuperado.
@@ -52,7 +52,7 @@ Recibe el FQDN recuperado.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error de WMI.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error WMI.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,8 +62,8 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                              |
-| Espacio de nombres<br/>                | RDMs raíz de \\ CIMv2 \\<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Rdms \\ de CIMv2 \\ raíz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -72,7 +72,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 
 <dl> <dt>
 
-[**Win32 \_ RDMSEnvironment**](win32-rdmsenvironment.md)
+[**\_RDMSEnvironment de Win32**](win32-rdmsenvironment.md)
 </dt> </dl>
 
  

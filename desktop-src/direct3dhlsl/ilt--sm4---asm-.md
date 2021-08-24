@@ -1,23 +1,23 @@
 ---
-title: ILT (SM4-ASM)
-description: Comparación de tipo entero de vector de modo de componente.
+title: ilt (sm4 - asm)
+description: Comparación de enteros vectoriales por componente menor que.
 ms.assetid: 5F06E568-6234-4778-8169-D8352FAB5297
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e2c2e5e47272412bb483e4782e9a6c35e971293c
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 5b8d70e2c71ad0e503e7119abc2b28e76819053d843b0091d15bfd2045d5351d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104358471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119119459"
 ---
-# <a name="ilt-sm4---asm"></a>ILT (SM4-ASM)
+# <a name="ilt-sm4---asm"></a>ilt (sm4 - asm)
 
-Comparación de tipo entero de vector de modo de componente.
+Comparación de enteros vectoriales por componente menor que.
 
 
 
-| ILT dest \[ . Mask \] , src0 \[ . swizzle \] , SRC1 \[ . swizzle\] |
+| ilt dest \[ .mask \] , src0 \[ .swzzle, \] src1 \[ .sw swzzle\] |
 |-------------------------------------------------------|
 
 
@@ -28,19 +28,19 @@ Comparación de tipo entero de vector de modo de componente.
 
 | Elemento                                                            | Descripción                                       |
 |-----------------------------------------------------------------|---------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/> | Resultado de la operación.<br/>           |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] el valor que se va a comparar con *SRC1*.<br/> |
-| <span id="src1"></span><span id="SRC1"></span>*SRC1*<br/> | \[en \] el valor que se va a comparar con *src0*.<br/> |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | Resultado de la operación.<br/>           |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] El valor que se va a comparar con *src1.*<br/> |
+| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[en \] El valor que se va a comparar con *src0.*<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Realiza la comparación de enteros *(src0*  <  *SRC1*) de cada componente y escribe el resultado en *dest*.
+Realiza la comparación de enteros *(src0*  <  *src1*) para cada componente y escribe el resultado *en dest.*
 
-Si la comparación es true, se devuelve 0xFFFFFFFF para ese componente. De lo contrario, se devuelve 0x0000000.
+Si la comparación es verdadera, 0xFFFFFFFF se devuelve para ese componente. De lo 0x0000000 se devuelve .
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
@@ -54,18 +54,18 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sí       |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
@@ -75,7 +75,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
 <dl> <dt>
 
-[Ensamblado modelo de sombreador 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo 4 del sombreador (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Convierte un código de error devuelto por una función DDE de red en una cadena de error que explica el código de error devuelto.
 ms.assetid: 7077e3bc-df6e-401b-9ac7-15144b79af96
-title: Función NDdeGetErrorString (Nddeapi. h)
+title: Función NDdeGetErrorString (Nddeapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - Nddeapi.dll
-ms.openlocfilehash: 8e043c8281d3ad049346ac7ce68991eb6bd08af6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 728ccd283f0f65caafd6f23781bd75f18e9c796ad2fb147f00ab6350c53bfd2c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104081981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119557045"
 ---
-# <a name="nddegeterrorstring-function"></a>NDdeGetErrorString función)
+# <a name="nddegeterrorstring-function"></a>Función NDdeGetErrorString
 
-\[Ya no se admite DDE de red. Nddeapi.dll está presente en Windows Vista, pero todas las llamadas de función devuelven NDDE \_ no \_ implementado.\]
+\[Ya no se admite DDE de red. Nddeapi.dll está presente en Windows Vista, pero todas las llamadas de función devuelven NDDE \_ NOT \_ IMPLEMENTED.\]
 
 Convierte un código de error devuelto por una función DDE de red en una cadena de error que explica el código de error devuelto.
 
@@ -45,24 +45,24 @@ UINT NDdeGetErrorString(
 
 <dl> <dt>
 
-*uErrorCode* \[ de\]
+*uErrorCode* \[ En\]
 </dt> <dd>
 
 Código de error que se va a convertir en una cadena de error.
 
 </dd> <dt>
 
-*lpszErrorString* \[ enuncia\]
+*lpszErrorString* \[ out\]
 </dt> <dd>
 
-Puntero a un búfer que recibe la cadena de error traducida. Este parámetro no puede ser **null**. Si el búfer no es lo suficientemente grande como para almacenar la cadena de error completa, se trunca la cadena.
+Puntero a un búfer que recibe la cadena de error traducida. Este parámetro no puede ser **NULL.** Si el búfer no es lo suficientemente grande como para almacenar la cadena de error completa, la cadena se trunca.
 
 </dd> <dt>
 
-*cBufSize* \[ de\]
+*cBufSize* \[ En\]
 </dt> <dd>
 
-Tamaño del búfer para recibir la cadena de error, en **TCHARs**.
+Tamaño del búfer para recibir la cadena de error, en **TCHAR.**
 
 </dd> </dl>
 
@@ -70,7 +70,7 @@ Tamaño del búfer para recibir la cadena de error, en **TCHARs**.
 
 Si la función es correcta, el valor devuelto es cero.
 
-Si se produce un error en la función, el valor devuelto es un código de error distinto de cero. Si el búfer de *lpszErrorString* no es lo suficientemente grande como para aceptar la cadena de error completa y se trunca la cadena, la función devuelve el valor NDDE \_ \_ error interno.
+Si se produce un error en la función, el valor devuelto es un código de error distinto de cero. Si el *búfer lpszErrorString* no es lo suficientemente grande como para aceptar la cadena de error completa y la cadena se trunca, la función devuelve el valor NDDE \_ INTERNAL \_ ERROR.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,8 +80,8 @@ Si se produce un error en la función, el valor devuelto es un código de error 
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
-| Encabezado<br/>                   | <dl> <dt>Nddeapi. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>Nddeapi. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Nddeapi.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Nddeapi.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Nddeapi.dll</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **NDdeGetErrorStringW** (Unicode) y **NDdeGetErrorStringA** (ANSI)<br/>        |
 
@@ -91,7 +91,7 @@ Si se produce un error en la función, el valor devuelto es un código de error 
 
 <dl> <dt>
 
-[Información general de Intercambio dinámico de datos de red](network-dynamic-data-exchange.md)
+[Información general sobre datos dinámicos Exchange red](network-dynamic-data-exchange.md)
 </dt> <dt>
 
 [Funciones DDE de red](network-dde-functions.md)

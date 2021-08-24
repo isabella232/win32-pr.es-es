@@ -1,41 +1,41 @@
 ---
-title: Cómo firmar un paquete de aplicación mediante programación (C++)
-description: Obtenga información sobre cómo firmar un paquete de aplicación mediante la función SignerSignEx2.
+title: Cómo firmar mediante programación un paquete de aplicación (C++)
+description: Aprenda a firmar un paquete de aplicación mediante la función SignerSignEx2.
 ms.assetid: 1183D665-83C9-4BE7-9C8D-834484B8C57F
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0310ba2a934a6986809329a12afa8ee20b2f6591
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 5a91cf2c7b7be674ff14d1ceada59be593a300d7ebf1964ddce4a7a5340ab74c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103789663"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119130247"
 ---
-# <a name="how-to-programmatically-sign-an-app-package-c"></a>Cómo firmar un paquete de aplicación mediante programación (C++)
+# <a name="how-to-programmatically-sign-an-app-package-c"></a>Cómo firmar mediante programación un paquete de aplicación (C++)
 
-Obtenga información sobre cómo firmar un paquete de aplicación mediante la función [**SignerSignEx2**](/windows/desktop/SecCrypto/signersignex2) .
+Aprenda a firmar un paquete de aplicación mediante la [**función SignerSignEx2.**](/windows/desktop/SecCrypto/signersignex2)
 
-Si desea crear paquetes de aplicaciones de Windows mediante programación con la [API de empaquetado](interfaces.md), también debe firmar los paquetes de la aplicación antes de que se puedan implementar. La API de empaquetado no proporciona un método especializado para firmar paquetes de aplicaciones. En su lugar, use las [funciones de criptografía](/windows/desktop/SecCrypto/cryptography-functions) estándar para firmar los paquetes de la aplicación.
+Si desea crear paquetes de aplicación Windows mediante programación mediante Packaging [API,](interfaces.md)también debe firmar los paquetes de aplicación antes de que se puedan implementar. Packaging API no proporciona un método especializado para firmar paquetes de aplicación. En su lugar, use las [funciones de criptografía estándar](/windows/desktop/SecCrypto/cryptography-functions) para firmar los paquetes de aplicación.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
 -   [Introducción a la firma de código](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537361(v=vs.85))
--   [Empaquetado, implementación y consulta de aplicaciones de Windows](appx-portal.md)
--   [funciones de criptografía](/windows/desktop/SecCrypto/cryptography-functions)
+-   [Empaquetado, implementación y consulta de Windows aplicaciones](appx-portal.md)
+-   [Funciones de criptografía](/windows/desktop/SecCrypto/cryptography-functions)
 
 ### <a name="prerequisites"></a>Requisitos previos
 
--   Debe tener una aplicación de Windows empaquetada. Para obtener información sobre cómo crear un paquete de la aplicación, consulte [Cómo crear un paquete de la aplicación](how-to-create-a-package.md).
--   Debe tener un certificado de firma de código adecuado para firmar el paquete de la aplicación. Para obtener información sobre cómo crear un certificado de firma de código de prueba, consulte [Cómo crear un certificado de firma de paquete de aplicación](how-to-create-a-package-signing-certificate.md). Cargue este certificado de firma en una estructura de [**\_ contexto de certificado**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_context) . Por ejemplo, puede usar [**PFXImportCertStore**](/windows/desktop/api/wincrypt/nf-wincrypt-pfximportcertstore) y [**CertFindCertificateInStore**](/windows/desktop/api/wincrypt/nf-wincrypt-certfindcertificateinstore) para cargar un certificado de firma.
--   Windows 8 presenta la función [**SignerSignEx2**](/windows/desktop/SecCrypto/signersignex2) . Use **SignerSignEx2** al firmar paquetes de aplicaciones de Windows.
+-   Debe tener un paquete de Windows aplicación. Para obtener información sobre cómo crear un paquete de aplicación, [consulte Creación de un paquete de aplicación.](how-to-create-a-package.md)
+-   Debe tener un certificado de firma de código adecuado para firmar el paquete de aplicación. Para obtener información sobre cómo crear un certificado de firma de código de prueba, [consulte Creación de un certificado de firma de paquete de aplicación.](how-to-create-a-package-signing-certificate.md) Cargue este certificado de firma en una [**estructura CERT \_ CONTEXT.**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_context) Por ejemplo, puede usar [**PFXImportCertStore**](/windows/desktop/api/wincrypt/nf-wincrypt-pfximportcertstore) y [**CertFindCertificateInStore**](/windows/desktop/api/wincrypt/nf-wincrypt-certfindcertificateinstore) para cargar un certificado de firma.
+-   Windows 8 presenta la [**función SignerSignEx2.**](/windows/desktop/SecCrypto/signersignex2) Use **SignerSignEx2 al** firmar Windows paquetes de aplicación.
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="step-1-define-the-required-structures-for-signersignex2"></a>Paso 1: definición de las estructuras necesarias para SignerSignEx2
+### <a name="step-1-define-the-required-structures-for-signersignex2"></a>Paso 1: Definir las estructuras necesarias para SignerSignEx2
 
-Además del encabezado Wincrypt. h, la función [**SignerSignEx2**](/windows/desktop/SecCrypto/signersignex2) depende de muchas estructuras que no están definidas en ningún archivo de encabezado del SDK. Para usar **SignerSignEx2**, debe definir estas estructuras por su cuenta:
+Además del encabezado Wincrypt.h, la función [**SignerSignEx2**](/windows/desktop/SecCrypto/signersignex2) depende de muchas estructuras que no están definidas en ningún archivo de encabezado del SDK. Para usar **SignerSignEx2,** debe definir estas estructuras usted mismo:
 
 
 ```C++
@@ -188,16 +188,16 @@ typedef struct _APPX_SIP_CLIENT_DATA
 
 
 
-### <a name="step-2-call-signersignex2-to-sign-the-app-package"></a>Paso 2: llamar a SignerSignEx2 para firmar el paquete de la aplicación
+### <a name="step-2-call-signersignex2-to-sign-the-app-package"></a>Paso 2: Llamar a SignerSignEx2 para firmar el paquete de aplicación
 
-Después de definir las estructuras necesarias que se especifican en el paso anterior, puede utilizar cualquiera de las opciones disponibles en la función [**SignerSignEx2**](/windows/desktop/SecCrypto/signersignex2) para firmar un paquete de la aplicación. Cuando se usa **SignerSignEx2** con paquetes de aplicaciones de Windows, estas restricciones se aplican:
+Después de definir las estructuras necesarias especificadas en el paso anterior, puede usar cualquiera de las opciones disponibles en la función [**SignerSignEx2**](/windows/desktop/SecCrypto/signersignex2) para firmar un paquete de aplicación. Al usar **SignerSignEx2 con** paquetes Windows aplicación, se aplican estas restricciones:
 
--   Debe proporcionar un puntero a una estructura **de \_ \_ \_ datos de cliente SIP de appx** como el parámetro *pSipData* al firmar un paquete de aplicación. Debe rellenar el miembro **pSignerParams** de los **\_ \_ \_ datos del cliente SIP de appx** con los mismos parámetros que usa para firmar el paquete de la aplicación. Para ello, defina los parámetros deseados en la estructura Signer **\_ Sign \_ EX2 \_ params** , asigne la dirección de esta estructura a **pSignerParams** y, a continuación, haga referencia directamente a los miembros de la estructura cuando llame a [**SignerSignEx2**](/windows/desktop/SecCrypto/signersignex2).
--   Después de llamar a [**SignerSignEx2**](/windows/desktop/SecCrypto/signersignex2), debe liberar **pAppxSipState** en *pSipData* llamando a [**IUnknown:: Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) en **pAppxSipState** si no es **null**.
--   El miembro **algidHash** de la estructura de **\_ \_ información de firma del firmante** debe ser el mismo algoritmo hash que se usó para crear el paquete de la aplicación. Para obtener información sobre cómo determinar el algoritmo hash del paquete de la aplicación, consulte [cómo firmar un paquete de aplicación mediante SignTool](how-to-sign-a-package-using-signtool.md). El algoritmo predeterminado de Windows 8 que se usa en [MakeAppx](make-appx-package--makeappx-exe-.md) y Visual Studio para crear paquetes de aplicaciones es "ALGIDHASH = CALG \_ Sha \_ 256".
--   Si desea marcar la firma en el paquete de la aplicación, debe hacerlo durante la llamada a [**SignerSignEx2**](/windows/desktop/SecCrypto/signersignex2) proporcionando los parámetros opcionales de marca de tiempo de **SignerSignEx2**(*dwTimestampFlags*, *pszTimestampAlgorithmOid*, *pwszHttpTimeStamp*, *psRequest*). No se admite la llamada a [**SignerTimeStampEx3**](/windows/desktop/SecCrypto/signertimestampex3) o sus variantes en un paquete de aplicación que ya está firmado.
+-   Debe proporcionar un puntero a una estructura **APPX \_ SIP CLIENT \_ \_ DATA** como parámetro *pSipData* al firmar un paquete de aplicación. Debe rellenar el miembro **pSignerParams** de **APPX \_ SIP CLIENT \_ \_ DATA** con los mismos parámetros que usa para firmar el paquete de aplicación. Para ello, defina los parámetros deseados en la estructura **SIGNER \_ SIGN \_ EX2 \_ PARAMS,** asigne la dirección de esta estructura a **pSignerParams** y, a continuación, haga referencia directamente a los miembros de la estructura también cuando llame a [**SignerSignEx2**](/windows/desktop/SecCrypto/signersignex2).
+-   Después de llamar a [**SignerSignEx2,**](/windows/desktop/SecCrypto/signersignex2)debe liberar **pAppxSipState** en *pSipData* mediante una llamada a [**IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) en **pAppxSipState** si no es **NULL.**
+-   El **miembro algidHash** de la estructura **SIGNER SIGNATURE \_ \_ INFO** debe ser el mismo algoritmo hash que se usó para crear el paquete de aplicación. Para obtener información sobre cómo determinar el algoritmo hash del paquete de aplicación, vea [Cómo firmar un paquete de aplicación mediante SignTool.](how-to-sign-a-package-using-signtool.md) El Windows 8 predeterminado que [MakeAppx](make-appx-package--makeappx-exe-.md) y Visual Studio para crear paquetes de aplicación es "algidHash = CALG \_ SHA \_ 256".
+-   Si también quiere marcar el tiempo de la firma en el paquete de la aplicación, debe hacerlo durante la llamada a [**SignerSignEx2**](/windows/desktop/SecCrypto/signersignex2) proporcionando los parámetros de marca de tiempo opcionales de **SignerSignEx2**(*dwTimestampFlags*, *pszTimestampAlgorithmOid*, *pwszHttpTimeStamp*, *psRequest*). No se admite la llamada a [**SignerTimeStampEx3**](/windows/desktop/SecCrypto/signertimestampex3) o sus variantes en un paquete de aplicación que ya está firmado.
 
-Este es un ejemplo de código que muestra cómo llamar a [**SignerSignEx2**](/windows/desktop/SecCrypto/signersignex2):
+Este es un código de ejemplo que muestra cómo llamar a [**SignerSignEx2**](/windows/desktop/SecCrypto/signersignex2):
 
 
 ```C++
@@ -315,9 +315,9 @@ HRESULT SignAppxPackage(
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Después de firmar el paquete de la aplicación, también puede intentar validar la firma mediante programación con la función [**WinVerifyTrust**](/windows/desktop/api/wintrust/nf-wintrust-winverifytrust) con la **\_ acción wintrust \_ genérica \_ Verify \_ V2**. En este caso, no hay ninguna consideración especial para usar **WinVerifyTrust** con paquetes de aplicaciones de Windows.
+Después de firmar el paquete de la aplicación, también puede intentar validar la firma mediante programación mediante la función [**WinVerifyTrust**](/windows/desktop/api/wintrust/nf-wintrust-winverifytrust) con **WINTRUST \_ ACTION GENERIC \_ VERIFY \_ \_ V2**. No hay ninguna consideración especial en este caso para usar **WinVerifyTrust con** Windows paquetes de aplicación.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -329,9 +329,9 @@ Después de firmar el paquete de la aplicación, también puede intentar validar
 [API de empaquetado](interfaces.md)
 </dt> <dt>
 
-[funciones de criptografía](/windows/desktop/SecCrypto/cryptography-functions)
+[Funciones de criptografía](/windows/desktop/SecCrypto/cryptography-functions)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

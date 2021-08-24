@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: cdd37ba72d9467c16d46b2aec3ec40c206466eaf
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f0fd5895ada4bbbd1bf4ad24710f7782fdfb9c932f2d9446ff0d992335437da9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096542"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119540564"
 ---
 # <a name="cameventcamevent-constructor"></a>Constructor DE EVENTOS.CAMEvent
 
@@ -63,7 +63,7 @@ Para la compatibilidad con versiones anteriores de strmbase.lib, el valor predet
 
 El evento comienza en un estado sin signo.
 
-Con un evento de restablecimiento automático, el método [**CAMEvent::Wait**](camevent-wait.md) restablece el evento a no firma cuando el método vuelve. Con un evento de restablecimiento manual, el evento permanece señalado hasta que se llama al [**método CAMEvent::Reset.**](camevent-reset.md)
+Con un evento de restablecimiento automático, el método [**CAMEvent::Wait**](camevent-wait.md) restablece el evento a sin signo cuando el método vuelve. Con un evento de restablecimiento manual, el evento permanece señalado hasta que se llama al [**método CAMEvent::Reset.**](camevent-reset.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,12 +71,12 @@ Con un evento de restablecimiento automático, el método [**CAMEvent::Wait**](c
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxutil.h (incluir Streams.h)</dt> </dl>                                                                                    |
+| Encabezado<br/>  | <dl> <dt>Wxutil.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

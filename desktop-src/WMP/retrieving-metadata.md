@@ -3,16 +3,16 @@ title: Recuperación de metadatos
 description: Recuperación de metadatos
 ms.assetid: f634118a-0a62-4407-8be1-a907347de55b
 keywords:
-- Listas de reproducción de metarchivos de Windows Media, recuperar metadatos
+- Windows Listas de reproducción de metarchivo multimedia, recuperación de metadatos
 - listas de reproducción, recuperar metadatos
-- listas de reproducción de metarchivos, recuperar metadatos
-- Listas de reproducción de metarchivos de Windows Media, recuperación de metadatos
+- listas de reproducción de metarchivo, recuperar metadatos
+- Windows Listas de reproducción de metarchivos multimedia, recuperación de metadatos
 - listas de reproducción, recuperación de metadatos
-- listas de reproducción de metarchivos, recuperación de metadatos
-- metadatos, recuperar
+- listas de reproducción de metarchivo, recuperación de metadatos
+- metadata,retrieving
 - recuperar metadatos
-- Windows Media Player, recuperar metadatos
-- Windows Media Player, recuperación de metadatos
+- Reproductor de Windows Media, recuperar metadatos
+- Reproductor de Windows Media,recuperación de metadatos
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -20,18 +20,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 3c9855ec1dc95a52429561e91aa82abdac088523
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: aad75f6d35108a21b772c58d0b7a0fed9b22b5247f829988ec6e9403e0fec561
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994368"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118833632"
 ---
 # <a name="retrieving-metadata"></a>Recuperación de metadatos
 
-Mientras se reproduce un programa o un clip, el script puede recuperar metadatos, como el título y el autor, mediante los métodos **getItemInfo** de los objetos **multimedia** y **lista de reproducción** de Windows Media Player. Puede recuperar los metadatos del ámbito de ASX mediante métodos de objeto de **lista de reproducción** y desde el ámbito de entrada mediante métodos de objetos **multimedia** .
+Mientras se reproduce un clip o una presentación, el script puede recuperar metadatos, como title y author, mediante los métodos **getItemInfo** de los objetos Reproductor de Windows Media **Media** y **Playlist.** Puede recuperar metadatos del ámbito ASX mediante métodos de objeto **De** lista de reproducción y desde el ámbito ENTRY mediante **métodos de objeto** Multimedia.
 
-Por ejemplo, para recuperar los valores de AUTHOR, ABSTRACT y PARAM en el siguiente archivo, use el método **getItemInfo** del objeto de **lista de reproducción** . El nombre de atributo es necesario para este método. Los nombres de atributo se pueden obtener proporcionando el número de índice a la propiedad **attributeName** . Los índices disponibles para un objeto de **lista de reproducción** se pueden obtener mediante la propiedad **attributeCount** .
+Por ejemplo, para recuperar los valores de AUTHOR, ABSTRACT y PARAM en el archivo siguiente, use el método **getItemInfo** del objeto **Playlist.** El nombre del atributo es necesario para este método. Los nombres de atributo se pueden obtener proporcionando el número de índice a la **propiedad attributeName.** Los índices disponibles para un objeto **Playlist** se pueden obtener mediante la **propiedad attributeCount.**
 
 ## <a name="example-code"></a>Código de ejemplo
 
@@ -56,26 +56,26 @@ Por ejemplo, para recuperar los valores de AUTHOR, ABSTRACT y PARAM en el siguie
 
 
 
-Para recuperar los valores del objeto **multimedia** actual en el ámbito de entrada para ref, title, copyright y param ("tres"), use la propiedad **CurrentMedia** del objeto **Player** . Use la propiedad **attributeCount** del objeto **multimedia** para determinar el número de atributos disponibles para el objeto **multimedia** especificado. Use los números de índice con el método **getItemInfoByAtom** para recuperar los valores de atributo. Use los números de índice con el método **getAttributeName** del objeto **multimedia** para determinar los nombres de los atributos disponibles y, a continuación, use los resultados con el método **getItemInfo** .
+Para recuperar los valores del objeto **Multimedia** actual en el ámbito ENTRY para REF, TITLE, COPYRIGHT y PARAM ("tres"), use la propiedad **currentMedia** del **objeto Player.** Use la **propiedad attributeCount** del **objeto Media** para determinar el número de atributos disponibles para el objeto **Media** especificado. Use números de índice con **el método getItemInfoByAtom para** recuperar valores de atributo. Use números de índice con el **método getAttributeName** del objeto **Media** para determinar los nombres de los atributos disponibles y, a continuación, use los resultados con el **método getItemInfo.**
 
-Para obtener un ejemplo del uso de métodos de objetos de Media Player de Windows para recuperar metadatos, vea [playlist. attributeCount](playlist-attributecount.md).
+Para obtener un ejemplo del uso de Reproductor de Windows Media de objetos para recuperar metadatos, vea [Playlist.attributeCount](playlist-attributecount.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Crear listas de reproducción de metarchivo**](creating-metafile-playlists.md)
+[**Creación de listas de reproducción de metarchivo**](creating-metafile-playlists.md)
 </dt> <dt>
 
-[**Listas de reproducción de metarchivos**](metafile-playlists.md)
+[**Listas de reproducción de metarchivo**](metafile-playlists.md)
 </dt> <dt>
 
-[**Guía de metarchivo de Windows Media**](windows-media-metafile-guide.md)
+[**Windows Guía de metarchivo multimedia**](windows-media-metafile-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

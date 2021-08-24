@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 93414156c7fa6e46fe80995d8d01eadc28796ec2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: aec93ec47a700902cb1275e25af6649e6988b76f7204b01487249e0130dd35b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118433"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118903107"
 ---
 # <a name="attributes-certificate-enrollment-api"></a>Atributos (API de inscripción de certificados)
 
-Los atributos se pueden agregar a una solicitud de certificado para proporcionar una entidad de certificación (CA) con información adicional que puede usar al crear y emitir un certificado. Cada atributo es una [*estructura*](/windows/desktop/SecGloss/d-gly) de notación [](/windows/desktop/SecGloss/a-gly) de sintaxis abstracta (ASN.1) codificada por reglas de codificación distinguida (DER) que contiene un identificador de objeto (OID) y cero o más valores. Los atributos se definen mediante interfaces incluidas con la API de inscripción de certificados. En los temas siguientes se tratan los atributos con más detalle:
+Los atributos se pueden agregar a una solicitud de certificado para proporcionar una entidad de certificación (CA) con información adicional que puede usar al crear y emitir un certificado. Cada atributo es una estructura de [*notación*](/windows/desktop/SecGloss/d-gly) de sintaxis abstracta (ASN.1) codificada por reglas de codificación distinguida (DER) que contiene un identificador de objeto (OID) y cero o más valores. [](/windows/desktop/SecGloss/a-gly) Los atributos se definen mediante interfaces incluidas con la API de inscripción de certificados. En los temas siguientes se tratan los atributos con más detalle:
 
 -   [Atributos compatibles](supported-attributes.md)
 -   [Arquitectura de atributos](attribute-architecture.md)

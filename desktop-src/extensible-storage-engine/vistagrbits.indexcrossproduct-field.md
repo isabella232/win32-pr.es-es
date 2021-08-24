@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: VistaGrbits. IndexCrossProduct, campo'
-title: Campo VistaGrbits. IndexCrossProduct (Microsoft. ISAM. esent. Interop. vista)
+description: 'Más información sobre: Campo VistaGrbits.IndexCrossProduct'
+title: Campo VistaGrbits.IndexCrossProduct (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: IndexCrossProduct field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Vista.VistaGrbits.IndexCrossProduct
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.vistagrbits.indexcrossproduct(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f1b16f741c63d455d18a887331505080aef62990
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ad3828411177d1c500c1b21b62797f093143ba1ac5b9770d9d6444d5c1a7aa9f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104003167"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119471135"
 ---
-# <a name="vistagrbitsindexcrossproduct-field"></a>VistaGrbits. IndexCrossProduct, campo
+# <a name="vistagrbitsindexcrossproduct-field"></a>Campo VistaGrbits.IndexCrossProduct
 
-Si se especifica esta marca para un índice que tiene más de una columna de clave que es una columna con varios valores, se creará una entrada de índice para cada resultado de un producto cruzado de todos los valores de esas columnas de clave. De lo contrario, el índice solo tendrá una entrada para cada valor múltiple de la columna de clave más importante que sea una columna con varios valores y cada una de esas entradas de índice usaría el primer valor entre las demás columnas de clave que son columnas con varios valores. Por ejemplo, si especificó esta marca para un índice sobre la columna A que tiene los valores "rojo" y "azul" y sobre la columna B que tiene los valores "1" y "2", se crearán las siguientes entradas de índice: "rojo", "1"; "rojo", "2"; "Blue", "1"; "Blue", "2". De lo contrario, se crearán las siguientes entradas de índice: "red", "1"; "Blue", "1".
+Si se especifica esta marca para un índice que tiene más de una columna de clave que es una columna con varios valores, se creará una entrada de índice para cada resultado de un producto cruzado de todos los valores de esas columnas de clave. De lo contrario, el índice solo tendría una entrada para cada valor múltiple en la columna de clave más significativa que es una columna con varios valores y cada una de esas entradas de índice usaría el primer valor múltiple de cualquier otra columna de clave que sea de varias columnas con varios valores. Por ejemplo, si especificó esta marca para un índice sobre la columna A que tiene los valores "red" y "blue" y sobre la columna B que tiene los valores "1" y "2", se crearían las siguientes entradas de índice: "red", "1"; "red", "2"; "blue", "1"; "blue", "2". De lo contrario, se crearían las siguientes entradas de índice: "red", "1"; "blue", "1".
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,12 +53,12 @@ value = VistaGrbits.IndexCrossProduct
 public const CreateIndexGrbit IndexCrossProduct
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase VistaGrbits](./vistagrbits-class.md)
+[VistaGrbits (clase)](./vistagrbits-class.md)
 
 [Miembros de VistaGrbits](./vistagrbits-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

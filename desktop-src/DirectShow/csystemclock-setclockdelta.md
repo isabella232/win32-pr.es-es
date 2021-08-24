@@ -1,7 +1,7 @@
 ---
-description: 'El método SetClockDelta ajusta la hora de reloj. Este método implementa el método IAMClockAdjust:: SetClockDelta.'
+description: El método SetClockDelta ajusta la hora del reloj. Este método implementa el método IAMClockAdjust::SetClockDelta.
 ms.assetid: 2bb9266f-3866-4b2e-92a8-cde31a501047
-title: Método CSystemClock. SetClockDelta (Sysclock. h)
+title: Método CSystemClock.SetClockDelta (Sysclock.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: cc1027081cc8713cffd2979e20627c037d0799f9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c98ccf35e41886594a3aab8c3abec6737128d8d7e22f6dfb75d0ac88ac3b7a02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660167"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119538665"
 ---
-# <a name="csystemclocksetclockdelta-method"></a>CSystemClock. SetClockDelta, método
+# <a name="csystemclocksetclockdelta-method"></a>Método CSystemClock.SetClockDelta
 
-El `SetClockDelta` método ajusta la hora de reloj. Este método implementa el método [**IAMClockAdjust:: SetClockDelta**](/windows/desktop/api/Strmif/nf-strmif-iamclockadjust-setclockdelta) .
+El `SetClockDelta` método ajusta la hora del reloj. Este método implementa el [**método IAMClockAdjust::SetClockDelta.**](/windows/desktop/api/Strmif/nf-strmif-iamclockadjust-setclockdelta)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,32 +42,32 @@ HRESULT SetClockDelta(
 
 <dl> <dt>
 
-*rtDelta* 
+*Rtdelta* 
 </dt> <dd>
 
-Especifica la cantidad por la que se va a ajustar el reloj, como un valor de [**\_ tiempo de referencia**](reference-time.md) . Un valor positivo mueve el reloj hacia delante y un valor negativo mueve el reloj hacia atrás.
+Especifica la cantidad por la que se va a ajustar el reloj, como un [**valor DE HORA \_ DE**](reference-time.md) REFERENCIA. Un valor positivo mueve el reloj hacia delante y un valor negativo mueve el reloj hacia atrás.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve \_ un código de error de correcto o **HRESULT** .
+Devuelve S \_ OK o un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método simplemente llama a [**CBaseReferenceClock:: SetTimeDelta**](cbasereferenceclock-settimedelta.md).
+Este método simplemente llama [**a CBaseReferenceClock::SetTimeDelta**](cbasereferenceclock-settimedelta.md).
 
-Los valores de hora devueltos por [**IReferenceClock:: getTime**](/windows/desktop/api/Strmif/nf-strmif-ireferenceclock-gettime) aumentan de forma continuada. Si vuelve a establecer el reloj, **getTime** continúa notificando la hora anterior hasta que el reloj interno se pone al día.
+Los valores de hora devueltos [**por IReferenceClock::GetTime**](/windows/desktop/api/Strmif/nf-strmif-ireferenceclock-gettime) aumentan de forma monótica. Si vuelve a establecer el reloj, **GetTime** continúa informando de la hora anterior hasta que el reloj interno se activa.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Clase CSystemClock<br/>                                                                                                                                                              |
-| Encabezado<br/>  | <dl> <dt>Sysclock. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Versión<br/> | CSystemClock (clase)<br/>                                                                                                                                                              |
+| Header<br/>  | <dl> <dt>Sysclock.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 

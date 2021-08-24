@@ -1,32 +1,32 @@
 ---
-title: Mostrando el progreso de la sincronización
-description: Mostrando el progreso de la sincronización
+title: Mostrar el progreso de la sincronización
+description: Mostrar el progreso de la sincronización
 ms.assetid: 5ca4d6ae-822e-4ddc-950d-cf7df6889108
 keywords:
-- Windows Media Player, dispositivos portátiles
-- Modelo de objetos de Windows Media Player, dispositivos portátiles
+- Reproductor de Windows Media dispositivos portátiles
+- Reproductor de Windows Media de objetos, dispositivos portátiles
 - modelo de objetos, dispositivos portátiles
-- Control ActiveX de Windows Media Player, dispositivos portátiles
-- Control ActiveX, dispositivos portátiles
-- Control ActiveX móvil de Windows Media Player, dispositivos portátiles
-- Windows Media Player dispositivos móviles y portátiles
+- Reproductor de Windows Media ActiveX, dispositivos portátiles
+- ActiveX, dispositivos portátiles
+- Reproductor de Windows Media Control ActiveX dispositivos móviles, dispositivos portátiles
+- Reproductor de Windows Media Dispositivos móviles y portátiles
 - dispositivos portátiles, progreso de sincronización
-- sincronización de dispositivos, mostrando el progreso
+- sincronización de dispositivos, que muestra el progreso
 - sincronizar dispositivos, mostrar el progreso
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f3f109f09d4efacef620a2c21691f50cc0ac2143
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 6126bff5f96aa9b18c1729d0da12b05a73da6eb43dd63d8135baf0544e19ada5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "103904406"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118833296"
 ---
-# <a name="showing-synchronization-progress"></a>Mostrando el progreso de la sincronización
+# <a name="showing-synchronization-progress"></a>Mostrar el progreso de la sincronización
 
-Puede mostrar el progreso de la sincronización al usuario. En el ejemplo de código siguiente se muestra cómo crear un temporizador para recuperar periódicamente el valor de progreso actual mediante **IWMPSyncDevice:: get \_ Progress**. Tenga en cuenta que el valor de progreso recuperado representa el progreso de la operación de sincronización completa de cada dispositivo. No se admite la recuperación del progreso de sincronización de elementos multimedia individuales.
+Puede mostrar el progreso de la sincronización al usuario. El código de ejemplo siguiente muestra cómo crear un temporizador para recuperar periódicamente el valor de progreso actual mediante **IWMPSyncDevice::get \_ progress**. Tenga en cuenta que el valor de progreso recuperado representa el progreso de toda la operación de sincronización para cada dispositivo. No se admite la recuperación del progreso de sincronización de elementos multimedia individuales.
 
-Para determinar cuándo debe iniciarse o detenerse el temporizador, controle el evento **DeviceSyncStateChange** . En la función de ejemplo siguiente se muestra este tipo de controlador de eventos. El código también muestra el estado de sincronización actual como una cadena de texto mediante un control de texto estático, denominado IDC \_ SYNCSTATE.
+Para determinar cuándo iniciar o detener el temporizador, controle el **evento DeviceSyncStateChange.** La siguiente función de ejemplo muestra este tipo de controlador de eventos. El código también muestra el estado de sincronización actual como una cadena de texto mediante un control de texto estático, denominado IDC \_ SYNCSTATE.
 
 
 ```C++
@@ -89,9 +89,9 @@ void CMainDlg::DeviceSyncStateChange( IWMPSyncDevice * pDevice, WMPSyncState New
 
 
 
-Cuando el temporizador se está ejecutando, envía un \_ mensaje del temporizador de WM a intervalos de un segundo. La aplicación controla el \_ temporizador de WM en su bucle de mensajes.
+Cuando se ejecuta el temporizador, envía un mensaje WM TIMER a \_ intervalos de un segundo. La aplicación controla WM \_ TIMER en su bucle de mensajes.
 
-En la función de ejemplo siguiente se muestra cómo mostrar el progreso mediante el uso de un control de texto estático (IDC \_ PROGSTATIC) y el uso de un control de progreso (IDC \_ SYNCPROG). Llame a esta función en respuesta al mensaje del temporizador de WM \_ y al finalizar el proceso de sincronización, como se muestra en el ejemplo anterior.
+En la siguiente función de ejemplo se muestra cómo mostrar el progreso mediante un control de texto estático (IDC PROGSTATIC) y un control de progreso \_ (IDC \_ SYNCPROG). Llame a esta función en respuesta al mensaje WM TIMER y tras la finalización del proceso de \_ sincronización, como se muestra en el ejemplo anterior.
 
 
 ```C++
@@ -133,13 +133,13 @@ STDMETHODIMP CMainDlg::ShowProgress(long lIndex)
 
 <dl> <dt>
 
-[**Enumerar dispositivos**](enumerating-devices.md)
+[**Enumeración de dispositivos**](enumerating-devices.md)
 </dt> <dt>
 
-[**Interfaz IWMPSyncDevice**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpsyncdevice)
+[**IWMPSyncDevice (interfaz)**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpsyncdevice)
 </dt> <dt>
 
-[**IWMPSyncDevice:: get \_ Progress**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-get_progress)
+[**IWMPSyncDevice::get \_ progress**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-get_progress)
 </dt> <dt>
 
 [**IWMPSyncDevice::isIdentical**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-isidentical)
@@ -148,9 +148,9 @@ STDMETHODIMP CMainDlg::ShowProgress(long lIndex)
 [**Trabajar con dispositivos portátiles**](working-with-portable-devices.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

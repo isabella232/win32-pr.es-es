@@ -1,26 +1,26 @@
 ---
-title: Atributo de ruta de acceso VML
-description: Atributo de ruta de acceso VML
+title: Atributo de ruta de acceso de VML
+description: Atributo de ruta de acceso de VML
 ms.assetid: ecb64a2f-65f7-4eb9-8d67-d7909bf52d9c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e43e453e982327549475de4643cc0ad21bc0b4db
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: f314956452db5a88011a147fd05302483e50cbce3724cf8188068770ec492db6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103904805"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136968"
 ---
-# <a name="vml-path-attribute"></a>Atributo de ruta de acceso VML
+# <a name="vml-path-attribute"></a>Atributo de ruta de acceso de VML
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Especifica la línea que constituye los bordes de una forma. Lectura/escritura **Cadena**.
+Especifica la línea que forma los bordes de una forma. Lectura/escritura **Cadena**.
 
 **Se aplica a**
 
@@ -28,23 +28,23 @@ Especifica la línea que constituye los bordes de una forma. Lectura/escritura *
 
 **Sintaxis de etiquetas**
 
-<v: *elemento* path = " *expresión* " >
+<v: *element* path=" *expression* ">
 
 **Sintaxis de script**
 
-*Element* . Path = "*expresión*"
+*element* .path="*expression*"
 
-*expresión* = de *Element*. Path
+*expresión* = *elemento*.path
 
 **Comentarios:**
 
-Si una forma contiene el elemento [path](msdn-online-vml-path-element.md) , los comandos path del elemento path tienen prioridad sobre el valor del atributo Shape. Vea el tema del elemento path para obtener más información sobre el conjunto de comandos que se usa para las rutas de **acceso** .
+Si una forma contiene el [elemento Path,](msdn-online-vml-path-element.md) los comandos path del elemento Path tienen prioridad sobre el valor del atributo de forma. Consulte el tema **elemento Path** para obtener más información sobre el conjunto de comandos que se usa para las rutas de acceso.
 
 *Atributo estándar de VML*
 
 **Ejemplo**
 
-Una ruta de acceso cuadrada cerrada se define en la cadena del atributo path. Un punto inicial se define con `m` (se usa para el comando **moveTo** ) en 1, 1 y se dibuja una línea con `l` (la letra "L" usada para la **línea** de comandos) desde la posición inicial (1,1) hasta los otros tres puntos (en orden): 1.200; 200.200; 200, 1. La línea se cierra con `x` (**Close**) y termina con `e` (**End**). Tenga en cuenta que las coordenadas se proporcionan en el espacio de coordenadas relativo y que el **ancho** y el **alto** determinan el tamaño real.
+Se define una ruta de acceso cuadrada cerrada en la cadena del atributo path. Un punto inicial se define con (se usa para el comando moveto) en 1,1 y se dibuja una línea con (la letra "L" usada para la línea de comandos para ) desde la posición inicial (1,1) a los otros tres puntos `m`  `l` (en orden): 1200; 200 200;  200,1. La línea se cierra con `x` (**close**) y termina con `e` (**end**). Tenga en cuenta que las coordenadas se dan en el espacio de coordenadas relativo y que el tamaño real viene determinado por **el ancho y** **alto.**
 
 
 ```HTML
@@ -58,8 +58,8 @@ Una ruta de acceso cuadrada cerrada se define en la cadena del atributo path. Un
 
 
 
-[Ejemplo de atributo de ruta de acceso](/previous-versions/bb264089(v=vs.85)). (Requiere Microsoft Internet Explorer 5 o posterior).
+[Ejemplo de atributo path](/previous-versions/bb264089(v=vs.85)). (Requiere Microsoft Internet Explorer 5 o superior).
 
- 
+ 
 
- 
+ 

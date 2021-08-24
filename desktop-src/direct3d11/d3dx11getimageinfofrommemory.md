@@ -1,6 +1,6 @@
 ---
-title: Función D3DX11GetImageInfoFromMemory (D3DX11tex. h)
-description: Tenga en cuenta que la biblioteca de utilidades de D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de la tienda Windows. Tenga en cuenta que, en lugar de usar esta función, se recomienda usar la biblioteca DirectXTex, GetMetadataFromXXXMemory (donde XXX es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 admitía TGA como formato de fuente de arte común para juegos. Obtiene información acerca de una imagen ya cargada en la memoria.
+title: Función D3DX11GetImageInfoFromMemory (D3DX11tex.h)
+description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para las aplicaciones de Windows Store. Nota En lugar de usar esta función, se recomienda usar la biblioteca DirectXTex, GetMetadataFromXXXMemory (donde XXX es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 admite TGA como un formato de origen de arte común para juegos). Obtenga información sobre una imagen ya cargada en la memoria.
 ms.assetid: b13192fa-4235-4c38-ba46-e14ffab2f653
 keywords:
 - Función D3DX11GetImageInfoFromMemory Direct3D 11
@@ -15,26 +15,26 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 85c5f1f04c9540614541b9f63b7833967d6ce959
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f64db94fd0827e1168c599c3a4b959da097faaf43231943d323a19917e18a8b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104987000"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119124710"
 ---
-# <a name="d3dx11getimageinfofrommemory-function"></a>D3DX11GetImageInfoFromMemory función)
+# <a name="d3dx11getimageinfofrommemory-function"></a>Función D3DX11GetImageInfoFromMemory
 
 > [!Note]  
-> La biblioteca de utilidades de D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para aplicaciones de la tienda Windows.
+> La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
 
  
 
 > [!Note]  
-> En lugar de usar esta función, se recomienda usar la biblioteca [DirectXTex](https://github.com/Microsoft/DirectXTex) , **GETMETADATAFROMXXXMEMORY** (donde xxx es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 admitía TGA como formato de fuente de arte común para juegos.
+> En lugar de usar esta función, se recomienda usar la biblioteca [DirectXTex,](https://github.com/Microsoft/DirectXTex) **GetMetadataFromXXXMemory** (donde XXX es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 admite TGA como un formato de origen de arte común para juegos).
 
  
 
-Obtiene información acerca de una imagen ya cargada en la memoria.
+Obtenga información sobre una imagen ya cargada en la memoria.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,7 +55,7 @@ HRESULT D3DX11GetImageInfoFromMemory(
 
 <dl> <dt>
 
-*pSrcData* \[ de\]
+*pSrcData* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCVOID**](/windows/desktop/WinProg/windows-data-types)**
@@ -64,39 +64,39 @@ Puntero a la imagen en memoria.
 
 </dd> <dt>
 
-*SrcDataSize* \[ de\]
+*SrcDataSize* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **tamaño \_ T**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **SIZE \_ T**](/windows/desktop/WinProg/windows-data-types)**
 
 Tamaño de la imagen en memoria, en bytes.
 
 </dd> <dt>
 
-*pPump* \[ de\]
+*pPump* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX11ThreadPump**](id3dx11threadpump.md)\***
 
-Bombeo de subprocesos opcional que se puede usar para cargar la información de forma asincrónica. Puede ser **null**. Consulte la [**interfaz ID3DX11ThreadPump**](id3dx11threadpump.md).
+Bomba de subproceso opcional que se puede usar para cargar la información de forma asincrónica. Puede ser **NULL.** Vea [**Id3DX11ThreadPump (interfaz).**](id3dx11threadpump.md)
 
 </dd> <dt>
 
-*pSrcInfo* \[ de\]
+*pSrcInfo* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **\_ \_ información de imagen de D3DX11**](d3dx11-image-info.md)\***
+Tipo: **[ **INFORMACIÓN DE \_ IMAGEN \_ D3DX11**](d3dx11-image-info.md)\***
 
 Información sobre la imagen en memoria.
 
 </dd> <dt>
 
-*pHResult* \[ enuncia\]
+*pHResult* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)\***
 
-Puntero al valor devuelto. Puede ser **null**. Si *pPump* no es **null**, *pHResult* debe ser una ubicación de memoria válida hasta que se complete la ejecución asincrónica.
+Puntero al valor devuelto. Puede ser **NULL.** Si *pPump* no es **NULL,** *pHResult* debe ser una ubicación de memoria válida hasta que se complete la ejecución asincrónica.
 
 </dd> </dl>
 
@@ -104,7 +104,7 @@ Puntero al valor devuelto. Puede ser **null**. Si *pPump* no es **null**, *pHRes
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que se muestran en [códigos de retorno de Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno [de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -112,8 +112,8 @@ El valor devuelto es uno de los valores que se muestran en [códigos de retorno 
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX11tex. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX11. lib</dt> </dl>  |
+| Encabezado<br/>  | <dl> <dt>D3DX11tex.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX11.lib</dt> </dl>  |
 
 
 
@@ -121,7 +121,7 @@ El valor devuelto es uno de los valores que se muestran en [códigos de retorno 
 
 <dl> <dt>
 
-[Funciones de D3DX](d3d11-graphics-reference-d3dx11-functions.md)
+[Funciones D3DX](d3d11-graphics-reference-d3dx11-functions.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: La función StringFromResource carga una cadena desde un archivo de recursos con el identificador de recursos especificado.
+description: La función StringFromResource carga una cadena desde un archivo de recursos con el identificador de recurso especificado.
 ms.assetid: 26b40905-db16-46d1-8621-9aa8cb8e7232
-title: Función StringFromResource (Wxutil. h)
+title: Función StringFromResource (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a9bb13944f281d528ff95a7856ebc8a0a2374c6e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2a12bffb3659bd18f630ce3ff06435a701ed77f8fba2af79b20df6d6b2574ad8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119329656"
 ---
-# <a name="stringfromresource-function"></a>StringFromResource función)
+# <a name="stringfromresource-function"></a>Función StringFromResource
 
-La `StringFromResource` función carga una cadena de un archivo de recursos con el identificador de recursos especificado.
+La `StringFromResource` función carga una cadena de un archivo de recursos con el identificador de recurso especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,24 +46,24 @@ TCHAR* WINAPI StringFromResource(
 *pBuffer* 
 </dt> <dd>
 
-Puntero a la cadena que corresponde a *iResourceID*.
+Puntero a la cadena correspondiente a *iResourceID.*
 
 </dd> <dt>
 
 *iResourceID* 
 </dt> <dd>
 
-Identificador de recurso de la cadena que se va a recuperar.
+Identificador de recurso de la cadena que se recuperará.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve la misma cadena que *pBuffer*. Si la función no es correcta, devuelve una cadena nula.
+Devuelve la misma cadena que *pBuffer.* Si la función no se realiza correctamente, devuelve una cadena null.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El búfer *pBuffer* debe ser al menos de \_ bytes de longitud máxima de Str \_ .
+El *búfer pBuffer* debe ser al menos bytes STR \_ MAX \_ LENGTH.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ El búfer *pBuffer* debe ser al menos de \_ bytes de longitud máxima de Str \_ 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxutil. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxutil.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ El búfer *pBuffer* debe ser al menos de \_ bytes de longitud máxima de Str \_ 
 
 <dl> <dt>
 
-[Funciones auxiliares de páginas de propiedades](property-page-helper-functions.md)
+[Funciones auxiliares de página de propiedades](property-page-helper-functions.md)
 </dt> </dl>
 
  

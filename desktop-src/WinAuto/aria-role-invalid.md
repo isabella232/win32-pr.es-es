@@ -6,18 +6,18 @@ keywords:
 - AriaRoleErrorId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: df04ad94d68ae1e8e2e8d3352aa349834a2389fa
-ms.sourcegitcommit: 773fa6257ead6c74154ad3cf46d21e49adc900aa
+ms.openlocfilehash: 51c0fcef639a54bcd805bcb3f239e8d42cfeda8c5111d128c5f54157db75d7ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "105685802"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134018"
 ---
 # <a name="aria-role-error"></a>Error de rol de ARIA
 
 ## <a name="text"></a>Texto
 
-El elemento tiene un rol WAI-ARIA no válido.
+El elemento tiene el rol DE-ARIA NO VÁLIDO.
 
 ## <a name="type"></a>Tipo
 
@@ -25,9 +25,9 @@ Error
 
 ## <a name="description"></a>Descripción
 
-Este error se aplica a todos los elementos que tienen el atributo [**role**](https://developer.mozilla.org/docs/Web/HTML/Reference) . Indica que el atributo **role** no es un valor de rol de aplicaciones de Internet enriquecidas (WAI-ARIA) accesible para la iniciativa de accesibilidad web, tal como se define en la especificación WAI-ARIA. Establecer un rol válido ayuda a garantizar que el elemento sea interpretado correctamente por los lectores de pantalla y otras herramientas de tecnología de asistencia.
+Este error se aplica a todos los elementos que tienen el [**atributo role.**](https://developer.mozilla.org/docs/Web/HTML/Reference) Indica que el  atributo de rol no es un valor válido del rol Iniciativa de accesibilidad web: aplicaciones de Internet enriquecidas accesibles (WAI-ARIA), tal como se define en la especificación DEIA-ARIA. Establecer un rol válido ayuda a garantizar que los lectores de pantalla y otras herramientas de tecnología de asistencia interpretan correctamente el elemento.
 
-Para corregir este error, establezca el atributo [**role**](https://developer.mozilla.org/docs/Web/HTML/Reference) en un valor de rol WAI-ARIA válido. Tenga en cuenta que los roles WAI-ARIA abstractos no son válidos.
+Para corregir este error, establezca el [**atributo de rol**](https://developer.mozilla.org/docs/Web/HTML/Reference) en un valor de rol VALID DE-ARIA. Tenga en cuenta que los roles ABSTRACT DE ARIA no son válidos.
 
 ## <a name="example"></a>Ejemplo
 
@@ -49,9 +49,9 @@ Para corregir este error, establezca el atributo [**role**](https://developer.mo
 [Error de rol de contenedor de ARIA](aria-container-role.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

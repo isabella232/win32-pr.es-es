@@ -1,11 +1,11 @@
 ---
-title: Code-Page atributo)
-description: Especifica la página de códigos para el idioma de elección del usuario. Windows 2000 no usa este valor.
+title: Code-Page atributo
+description: Especifica la página de códigos para el idioma que elija el usuario. No usa este valor Windows 2000.
 ms.assetid: f98e6fbe-0c9a-4ee0-8158-3eaaca359675
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Code-Page
-- atributo de página de códigos esquema de AD
+- Code-Page esquema de AD de atributo
+- CodePage attribute AD Schema (Esquema de AD del atributo codePage)
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 92c3e9858ba387b98d5556c6010490c024be836b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ff90ba0413288ff09c5793cf582a64d88e1de32ac4a3eeaba3b6ae688bf6f8eb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804453"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119442715"
 ---
-# <a name="code-page-attribute"></a>Code-Page atributo)
+# <a name="code-page-attribute"></a>Code-Page atributo
 
-Especifica la página de códigos para el idioma de elección del usuario. Windows 2000 no usa este valor.
+Especifica la página de códigos para el idioma que elija el usuario. No usa este valor Windows 2000.
 
 
 
 | Entrada | Value |
 |-------------------|-------------------------------------------------------|
 | CN                | Code-Page                                             |
-| Nombre para mostrar de LDAP | 737                                              |
-| Tamaño              | 4 bytes                                               |
-| Actualizar privilegio  | Administrador de dominio                                  |
+| Ldap-Display-Name | Codepage                                              |
+| Size              | 4 bytes                                               |
+| Actualizar privilegios  | Administrador de dominio                                  |
 | Frecuencia de actualización  | Cuando el usuario desea cambiar el idioma predeterminado. |
 | Attribute-Id      | 1.2.840.113556.1.4.16                                 |
-| System-ID-GUID    | bf967938-0de6-11d0-a285-00aa003049e2                  |
+| System-Id-Guid    | bf967938-0de6-11d0-a285-00aa003049e2                  |
 | Sintaxis            | [**Enumeración**](s-enumeration.md)                  |
 
 
@@ -55,18 +55,18 @@ Especifica la página de códigos para el idioma de elección del usuario. Windo
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | False                             |
-| Tiene un único valor       | True                              |
+| Es de un solo valor       | True                              |
 | Está indexado             | False                             |
 | En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Especifica la página de códigos para el idioma de elección del usuario. Windo
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | False                             |
-| Tiene un único valor       | True                              |
+| Es de un solo valor       | True                              |
 | Está indexado             | False                             |
 | En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 65535                             |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Especifica la página de códigos para el idioma de elección del usuario. Windo
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | False                             |
-| Tiene un único valor       | True                              |
+| Es de un solo valor       | True                              |
 | Está indexado             | False                             |
 | En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 65535                             |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Especifica la página de códigos para el idioma de elección del usuario. Windo
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | False                             |
-| Tiene un único valor       | True                              |
+| Es de un solo valor       | True                              |
 | Está indexado             | False                             |
 | En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 65535                             |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Especifica la página de códigos para el idioma de elección del usuario. Windo
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | False                             |
-| Tiene un único valor       | True                              |
+| Es de un solo valor       | True                              |
 | Está indexado             | False                             |
 | En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 65535                             |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -160,13 +160,13 @@ Especifica la página de códigos para el idioma de elección del usuario. Windo
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | False                             |
-| Tiene un único valor       | True                              |
+| Es de un solo valor       | True                              |
 | Está indexado             | False                             |
 | En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 65535                             |
 | Search-Flags           | 0x00000010                        |

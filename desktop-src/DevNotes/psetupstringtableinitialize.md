@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Setupapi.dll
-ms.openlocfilehash: 79638f9f1f80f4b9b3d54a33c7e94234174ffb19
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8dd3ea3cadbcbbeccf5801538ac45720dd4ead1c31b004c9c4ac999c0af1f029
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108089204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119386265"
 ---
 # <a name="psetupstringtableinitialize-function"></a>función pSetupStringTableInitialize
 
-\[Esta función no está disponible en Windows Vista o Windows Server 2008.\]
+\[Esta función no está disponible en Windows Vista ni Windows Server 2008.\]
 
 Inicializa una tabla de cadenas.
 

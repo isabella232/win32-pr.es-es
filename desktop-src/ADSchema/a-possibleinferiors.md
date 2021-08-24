@@ -1,11 +1,11 @@
 ---
-title: Possible-Inferiors atributo)
+title: Possible-Inferiors atributo
 description: Lista de objetos que este objeto puede contener.
 ms.assetid: f5588b24-7e50-4a65-bc70-a6b649b84fcb
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Possible-Inferiors
-- possibleInferiors esquema de AD de atributos
+- Possible-Inferiors esquema de AD de atributo
+- esquema de AD del atributo possibleInferiors
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 24b42808fc3e47eaef66a58b62f2ca2527374a95
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ca86027c138a2556c7c7a0514389c13e82533526a17dcffdde6bec2e530f83d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119442085"
 ---
-# <a name="possible-inferiors-attribute"></a>Possible-Inferiors atributo)
+# <a name="possible-inferiors-attribute"></a>Possible-Inferiors atributo
 
 Lista de objetos que este objeto puede contener.
 
@@ -30,12 +30,12 @@ Lista de objetos que este objeto puede contener.
 | Entrada | Value |
 |-------------------|-----------------------------------------------------------------|
 | CN                | Possible-Inferiors                                              |
-| Nombre para mostrar de LDAP | possibleInferiors                                               |
-| Tamaño              | \-                                                              |
-| Actualizar privilegio  | Administrador de dominio                                            |
-| Frecuencia de actualización  | Cuando se define la clase.                                      |
+| Ldap-Display-Name | possibleInferiors                                               |
+| Size              | \-                                                              |
+| Actualizar privilegios  | Administrador de dominio                                            |
+| Frecuencia de actualización  | Cuando se define la clase .                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.915                                          |
-| System-ID-GUID    | 9a7ad94c-ca53-11d1-bbd0-0080c76670c0                            |
+| System-Id-Guid    | 9a7ad94c-ca53-11d1-bbd0-0080c76670c0                            |
 | Sintaxis            | [**String(Object-Identifier)**](s-string-object-identifier.md) |
 
 
@@ -44,7 +44,7 @@ Lista de objetos que este objeto puede contener.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,13 +56,13 @@ Lista de objetos que este objeto puede contener.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -77,13 +77,13 @@ Lista de objetos que este objeto puede contener.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -92,19 +92,19 @@ Lista de objetos que este objeto puede contener.
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -119,13 +119,13 @@ Lista de objetos que este objeto puede contener.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -140,13 +140,13 @@ Lista de objetos que este objeto puede contener.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -161,13 +161,13 @@ Lista de objetos que este objeto puede contener.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -182,13 +182,13 @@ Lista de objetos que este objeto puede contener.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| Tiene un único valor       | False                           |
+| Es de un solo valor       | False                           |
 | Está indexado             | False                           |
 | En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

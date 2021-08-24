@@ -1,30 +1,30 @@
 ---
 title: Sintaxis
-description: Las siguientes sintaxis se definen mediante Active Directory.
+description: Las sintaxis siguientes se definen mediante Active Directory.
 ms.assetid: 8d777d93-19e3-465c-88c7-afe61c0fc114
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9215058550ebf70dd41c432b4efeae1fbf105df3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c88ebe2b15c12313ac1b661aef9379c021bff0a374880b0c1c79f9c4ce7c2b1a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994000"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119529945"
 ---
 # <a name="syntaxes"></a>Sintaxis
 
-Las siguientes sintaxis se definen mediante Active Directory.
+Las sintaxis siguientes se definen mediante Active Directory.
 
 <dl>
 
-[**Booleano**](s-boolean.md)  
+[**Booleana**](s-boolean.md)  
 [**Enumeración**](s-enumeration.md)  
-[**Enumeración (mecanismo de entrega)**](s-enumeration-delivery-mechanism.md)  
-[**Enumeración (Export-Information-LEVEL)**](s-enumeration-export-information-level.md)  
-[**Enumeración (preferida-Delivery-Method)**](s-enumeration-preferred-delivery-method.md)  
+[**Enumeración (delivery-mechanism)**](s-enumeration-delivery-mechanism.md)  
+[**Enumeration(Export-Information-Level)**](s-enumeration-export-information-level.md)  
+[**Enumeration(Preferred-Delivery-Method)**](s-enumeration-preferred-delivery-method.md)  
 [**Entero**](s-integer.md)  
-[**Interval**](s-interval.md)  
+[**Intervalo**](s-interval.md)  
 [**LargeInteger**](s-largeinteger.md)  
 [**Object(Access-Point)**](s-object-access-point.md)  
 [**Object(DN-Binary)**](s-object-dn-binary.md)  
@@ -41,15 +41,15 @@ Las siguientes sintaxis se definen mediante Active Directory.
 [**String(Object-Identifier)**](s-string-object-identifier.md)  
 [**String(Octet)**](s-string-octet.md)  
 [**String(Printable)**](s-string-printable.md)  
-[**Cadena (SID)**](s-string-sid.md)  
+[**String(Sid)**](s-string-sid.md)  
 [**String(Teletex)**](s-string-teletex.md)  
 [**String(Unicode)**](s-string-unicode.md)  
 [**String(UTC-Time)**](s-string-utc-time.md)  
 </dl>
 
- 
+ 
 
- 
+ 
 
 
 

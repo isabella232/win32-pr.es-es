@@ -1,9 +1,9 @@
 ---
-title: SLIDEr. onPositionChange
-description: El controlador de eventos onPositionChange controla un evento que se produce cuando cambia la posición del control deslizante a medida que el usuario hace clic o arrastra. | SLIDEr. onPositionChange
+title: SLIDER.onPositionChange
+description: El controlador de eventos onPositionChange controla un evento que se produce cuando cambia la posición del control deslizante como resultado de que el usuario hace clic o arrastra. | SLIDER.onPositionChange
 ms.assetid: c18e9a49-9576-42ae-9f30-249c44d40f41
 keywords:
-- CONTROL SLIDEr. onPositionChange Windows Media Player
+- SLIDER.onPositionChange Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,32 +12,32 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd68faa9e7addd85b9b5f02b8a6c445e7ddf54e9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e45fbb87c8b48b008c3f7d60d9bc83685fd24d8160e7eaf075dcd0b1b94b9141
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699971"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119507775"
 ---
-# <a name="slideronpositionchange"></a>SLIDEr. onPositionChange
+# <a name="slideronpositionchange"></a>SLIDER.onPositionChange
 
-El controlador de eventos **onPositionChange** controla un evento que se produce cuando cambia la posición del control deslizante a medida que el usuario hace clic o arrastra.
+El **controlador de eventos onPositionChange** controla un evento que se produce cuando cambia la posición del control deslizante como resultado de que el usuario hace clic o arrastra.
 
 ``` syntax
 onPositionChange
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si cambia la posición del control deslizante como resultado del atributo de **valor** que se está modificando en el script, este evento no se desencadena. Para dar cabida a esta posibilidad, implemente en su lugar el controlador de eventos **\_ onchange Value** .
+Si la posición del control deslizante cambia como resultado de la modificación del atributo **de** valor en el script, este evento no se desencadena. Para dar cabida a esta posibilidad, implemente el **controlador de eventos value \_ onchange** en su lugar.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -45,7 +45,7 @@ Si cambia la posición del control deslizante como resultado del atributo de **v
 
 <dl> <dt>
 
-[**Elemento SLIDEr**](slider-element.md)
+[**Elemento SLIDER**](slider-element.md)
 </dt> </dl>
 
  

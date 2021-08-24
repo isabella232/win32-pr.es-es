@@ -1,35 +1,35 @@
 ---
-title: Controlar la inercia en código no administrado
-description: En esta sección se explica cómo usar la interfaz IInertiaProcessor para controlar la inercia en el código no administrado.
+title: Control de la inercia en código no administrado
+description: En esta sección se explica cómo usar la interfaz IInertiaProcessor para controlar la inercia en código no administrado.
 ms.assetid: 3261b461-add2-4e92-9a51-b2d46630fb4f
 keywords:
-- Windows Touch, inercia
-- Windows Touch, procesador de manipulación
+- Windows Touch,inertia
+- Windows Táctil, procesador de manipulación
 - inercia, código no administrado
-- inercia, interfaz IInertiaProcessor
+- inertia,IInertiaProcessor (interfaz)
 - inercia, procesador de manipulación
 - procesador de manipulación, inercia
 - Interfaz IInertiaProcessor, código no administrado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3de56d06547f426de252a89ef5172df3fe4ca439
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6e112605b1f998b850c3a04a045166b376fc3a12d98615b9c2af72e756a1c1b9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075205"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119346505"
 ---
-# <a name="handling-inertia-in-unmanaged-code"></a>Controlar la inercia en código no administrado
+# <a name="handling-inertia-in-unmanaged-code"></a>Control de la inercia en código no administrado
 
-En esta sección se explica cómo usar la interfaz [**IInertiaProcessor**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor) para controlar la inercia en el código no administrado.
+En esta sección se explica cómo usar la [**interfaz IInertiaProcessor**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor) para controlar la inercia en código no administrado.
 
 ## <a name="overview"></a>Información general
 
-Para usar la inercia en código no administrado, debe implementar receptores de eventos para el procesador de manipulación y el procesador de inercia. Comience agregando compatibilidad de manipulación a la aplicación como se describe en la sección [Agregar compatibilidad de manipulación a código no administrado](adding-manipulation-support-in-unmanaged-code.md). Tenga en cuenta que la compatibilidad con la manipulación requiere que use mensajes táctiles en lugar de mensajes de gestos para alimentar datos de eventos al procesador de manipulación. Una vez que haya manipulado el trabajo, también debe implementar un segundo receptor de eventos para los eventos que la interfaz [**IInertiaProcessor**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor) va a generar o necesitará modificar el receptor de eventos existente para acomodar los eventos generados por las interfaces **IInertiaProcessor** y [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) . Para los fines de este ejemplo, es más fácil empezar por el receptor de eventos creado para la sección agregar compatibilidad de manipulación a código no administrado y agregar un segundo constructor que funcione con el procesador de inercia en lugar del procesador de manipulación. De este modo, la implementación del receptor de eventos puede funcionar en el procesador de manipulación o en el procesador de inercia. Además de agregar un segundo constructor, el receptor de eventos tendrá una variable que indica si realizará las operaciones basadas en la entrada de inercia en lugar de en la entrada de manipulación.
+Para usar la inercia en código no administrado, debe implementar receptores de eventos tanto para el procesador de manipulación como para el procesador de inercia. Empiece agregando compatibilidad con la manipulación a la aplicación como se describe en la sección [Adding Manipulation Support to Unmanaged Code](adding-manipulation-support-in-unmanaged-code.md). Tenga en cuenta que la compatibilidad con la manipulación requiere el uso de mensajes táctiles en lugar de mensajes de gestos para enviar datos de eventos al procesador de manipulación. Después de que la manipulación funcione, también debe implementar un segundo receptor de eventos para los eventos que la interfaz [**IInertiaProcessor**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor) va a generar o deberá modificar el receptor de eventos existente para dar cabida a los eventos generados por las interfaces **IInertiaProcessor** e [**IManipulationProcessor.**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) Para los fines de este ejemplo, es más fácil empezar desde el receptor de eventos creado para la sección Adding Manipulation Support to Unmanaged Code (Agregar compatibilidad con la manipulación al código no administrado) y agregar un segundo constructor que funcione con el procesador de inercia en lugar del procesador de manipulación. De este modo, la implementación del receptor de eventos puede funcionar para el procesador de manipulación o el procesador de inercia. Además de agregar un segundo constructor, el receptor de eventos tendrá una variable que indica si realizará las operaciones en función de la entrada de inercia en lugar de la entrada de manipulación.
 
-### <a name="add-inertia-support-to-a-manipulation-processor-event-sink"></a>Agregar compatibilidad de inercia a un receptor de eventos de procesador de manipulación
+### <a name="add-inertia-support-to-a-manipulation-processor-event-sink"></a>Agregar compatibilidad con inercia a un receptor de eventos de procesador de manipulación
 
-En el código siguiente se muestra el nuevo constructor del receptor de eventos, las nuevas variables de miembro de una interfaz [**IInertiaProcessor**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor) y una marca que indica si el receptor está extrapolando la inercia.
+El código siguiente muestra el nuevo constructor receptor de eventos, nuevas variables miembro para una [**interfaz IInertiaProcessor**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor) y una marca que indica si el receptor se está extrayendo para la inercia.
 
 
 ```C++
@@ -47,7 +47,7 @@ En el código siguiente se muestra el nuevo constructor del receptor de eventos,
 
 
 
-Después de que el encabezado de clase tenga los nuevos constructores y una marca que indique si está extrapolando, puede implementar el receptor de eventos para tener bloques de control independientes para los eventos [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) y [**IInertiaProcessor**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor) . El constructor que acepta un **IManipulationProcessor** y un **IInertiaProcessor** debe establecer la marca **fExtrapolating** en false, lo que indica que se trata de un controlador de eventos **IManipulationProcessor** . En el código siguiente se muestra cómo se puede implementar el constructor de un receptor de eventos que usa **IManipulationProcessor** .
+Una vez que el encabezado de clase tiene los nuevos constructores y una marca que indica si va a extrapolar, puede implementar el receptor de eventos para que tenga bloques de control independientes para los eventos [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) y los eventos [**IInertiaProcessor.**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor) El constructor que acepta un **IManipulationProcessor** y un **IInertiaProcessor** debe establecer la marca **fExtrapolating** en false, lo que indica que se trata de un controlador de eventos **IManipulationProcessor.** El código siguiente muestra cómo se podría implementar el constructor para un receptor de eventos que usa **IManipulationProcessor.**
 
 
 ```C++
@@ -100,7 +100,7 @@ CManipulationEventSink::CManipulationEventSink(IManipulationProcessor *pManip, I
 
 
 
-En el código siguiente se muestra cómo se puede implementar el constructor de un receptor de eventos que usa [**IInertiaProcessor**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor) . Este constructor establece la marca **fExtrapolating** en true, lo que indica que esta instancia de la clase del receptor de eventos realizará la extrapolación y realizará las operaciones de movimiento realizadas previamente por los eventos del procesador de manipulación.
+El código siguiente muestra cómo se podría implementar el constructor para un receptor de eventos que usa [**IInertiaProcessor.**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor) Este constructor establece la marca **fExtrapolating** en true, lo que indica que esta instancia de la clase receptora de eventos realizará la extrapolación y realizará las operaciones de movimiento realizadas anteriormente por los eventos del procesador de manipulación.
 
 
 ```C++
@@ -147,18 +147,18 @@ CManipulationEventSink::CManipulationEventSink(IInertiaProcessor *pInert, HWND h
 
 
 > [!Note]  
-> La implementación de la clase de receptor de eventos del receptor de eventos del procesador de manipulación se reutiliza como un receptor de eventos para el procesador de inercia.
+> La implementación de la clase de receptor de eventos del receptor de eventos del procesador de manipulación se reutiliza como receptor de eventos para el procesador de inercia.
 
- 
+ 
 
-Ahora, cuando se construye esta clase, **CManipulationEventSink**, se puede construir como un receptor de eventos para un procesador de manipulación o como un receptor de eventos para un procesador de inercia. Cuando se construye como un receptor de eventos del procesador de inercia, tendrá la marca **fExtrapolating** establecida en true, lo que indica que se deben extrapolar los eventos de manipulación.
+Ahora, cuando se construye esta clase, **CManipulationEventSink,** se puede construir como receptor de eventos para un procesador de manipulación o como receptor de eventos para un procesador de inercia. Cuando se construye como receptor de eventos de procesador de inercia, tendrá la marca **fExtrapolating** establecida en true, lo que indica que los eventos de manipulación se deben extrapolar.
 
 > [!Note]  
-> [**ManipulationStarted**](/windows/win32/api/manipulations/nf-manipulations-_imanipulationevents-manipulationstarted) se producirá mediante las interfaces [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) y [**IInertiaProcessor**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor) .
+> [**ManipulationStarted**](/windows/win32/api/manipulations/nf-manipulations-_imanipulationevents-manipulationstarted) se genera mediante las interfaces [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) e [**IInertiaProcessor.**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor)
 
- 
+ 
 
-Cuando se inicia la manipulación, se establecen las propiedades de la interfaz [**IInertiaProcessor**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor) . En el código siguiente se muestra cómo se administra el evento Started.
+Cuando se inicia la manipulación, se establecen las propiedades de la interfaz [**IInertiaProcessor.**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor) El código siguiente muestra cómo se controla el evento iniciado.
 
 
 ```C++
@@ -204,7 +204,7 @@ HRESULT STDMETHODCALLTYPE CManipulationEventSink::ManipulationStarted(
 
 
 
-En este ejemplo, se usan diferencias de manipulación para mover la ventana. En el código siguiente se muestra cómo se controla el evento Delta.
+En este ejemplo, se usan deltas de manipulación para mover la ventana. El código siguiente muestra cómo se controla el evento delta.
 
 
 ```C++
@@ -245,7 +245,7 @@ HRESULT STDMETHODCALLTYPE CManipulationEventSink::ManipulationDelta(
 
 
 
-En este ejemplo, los eventos de manipulación completada inician o detienen un temporizador que llamará al [**proceso**](/windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-process) en la interfaz [**IInertiaProcessor**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor) . En el código siguiente se muestra cómo se administra el evento de manipulación completado.
+En este ejemplo, la manipulación completó eventos que inician o detienen un temporizador que llamará a [**Process**](/windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-process) en la [**interfaz IInertiaProcessor.**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor) El código siguiente muestra cómo se controla el evento de manipulación completado.
 
 
 ```C++
@@ -301,7 +301,7 @@ HRESULT STDMETHODCALLTYPE CManipulationEventSink::ManipulationCompleted(
 
 
 
-En el código siguiente se muestra cómo se pueden interpretar los mensajes de **\_ temporizador de WM** en **WndProc** para realizar llamadas al [**proceso**](/windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-process) en la interfaz [**IInertiaProcessor**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor) .
+El código siguiente muestra cómo podría interpretar los mensajes **WM \_ TIMER** en **WndProc para** realizar llamadas a [**Process**](/windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-process) en la [**interfaz IInertiaProcessor.**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor)
 
 
 ```C++
@@ -315,9 +315,9 @@ case WM_TIMER:
 
 
 
-### <a name="coinitialize-the-inertia-processor-and-manipulation-processor-and-initialize-the-event-sinks"></a>Coinicializar el procesador de inercia y el procesador de manipulación e inicializar los receptores de eventos
+### <a name="coinitialize-the-inertia-processor-and-manipulation-processor-and-initialize-the-event-sinks"></a>Inicializar el procesador de inercia y el procesador de manipulación e inicializar los receptores de eventos
 
-Una vez que haya modificado el receptor de eventos para admitir el [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) y el [**IInertiaProcessor**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor), está listo para inicializar los receptores de eventos y configurarlos para que se ejecuten desde la aplicación. En el código siguiente se muestra cómo se asignan los punteros de interfaz.
+Después de modificar el receptor de eventos para admitir [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) y [**IInertiaProcessor,**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor)está listo para inicializar los receptores de eventos y configurarlos para que se ejecuten desde la aplicación. El código siguiente muestra cómo se asignan los punteros de interfaz.
 
 
 ```C++
@@ -334,7 +334,7 @@ IInertiaProcessor*      g_pIInertProc;
 
 
 
-En el ejemplo de código siguiente se muestra cómo crear una instancia de las interfaces.
+En el ejemplo de código siguiente se muestra cómo crear instancias de las interfaces.
 
 
 ```C++
@@ -357,7 +357,7 @@ En el ejemplo de código siguiente se muestra cómo crear una instancia de las i
 
 
 
-En el ejemplo de código siguiente se muestra cómo construir los receptores de eventos dados los punteros de interfaz y cómo registrar la ventana para la entrada táctil.
+En el ejemplo de código siguiente se muestra cómo construir los receptores de eventos dados los punteros de interfaz y registrar la ventana para la entrada táctil.
 
 
 ```C++
@@ -377,9 +377,9 @@ En el ejemplo de código siguiente se muestra cómo construir los receptores de 
 [Inercia](getting-started-with-inertia.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

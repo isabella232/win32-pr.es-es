@@ -1,5 +1,5 @@
 ---
-description: Reconstruye un puntero a una lista de identificadores de elemento (PIDL) a partir de una representación jerárquica de la carpeta Shell en una representación diferente.
+description: Reconstruye un puntero a una lista de identificadores de elemento (PIDL) de una representación jerárquica de la carpeta Shell en una representación diferente.
 title: IShellFolderViewType::TranslateViewPidl (método)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 3b7fa6c4-3d02-44ed-b63d-80a799e4017a
-ms.openlocfilehash: 537a77e7ffffb462e0031ea0959f60cd695f7d99
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 00d419d05a21c9328d29c23ee4c6475254cc6635594cc20e989144361caab3dc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842676"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119443285"
 ---
 # <a name="ishellfolderviewtypetranslateviewpidl-method"></a>IShellFolderViewType::TranslateViewPidl (método)
 
-Reconstruye un puntero a una lista de identificadores de elemento (PIDL) a partir de una representación jerárquica de la carpeta Shell en una representación diferente.
+Reconstruye un puntero a una lista de identificadores de elemento (PIDL) de una representación jerárquica de la carpeta Shell en una representación diferente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -74,7 +74,7 @@ Tipo: **HRESULT**
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Cuando termine, debe liberar el PIDL devuelto con [**ILFree.**](/windows/desktop/api/shlobj_core/nf-shlobj_core-ilfree)
 

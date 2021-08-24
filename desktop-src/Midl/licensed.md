@@ -1,9 +1,9 @@
 ---
 title: atributo con licencia
-description: El atributo \ licensed \ indica que la coclase a la que se aplica tiene licencia y se debe crear una instancia de con IClassFactory2.
+description: El atributo \licensed\ indica que la coclase a la que se aplica tiene licencia y se deben crear instancias mediante IClassFactory2.
 ms.assetid: c4789ea2-8ff6-423e-8b69-22a7a5392854
 keywords:
-- MIDL de atributo con licencia
+- atributo con licencia MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1394f24d8b6136cab86615e74838737bbda543b9
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 1b4320157216db18f595d67e172bc49de2d6050551732265060cb5a21339c908
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104077621"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119067215"
 ---
 # <a name="licensed-attribute"></a>atributo con licencia
 
-El atributo con **\[ licencia \]** indica que la [**coclase**](coclass.md) a la que se aplica tiene licencia y se debe crear una instancia de ella mediante [**IClassFactory2**](/windows/win32/api/ocidl/nn-ocidl-iclassfactory2).
+El **\[ atributo \]** con licencia indica que la [**coclase**](coclass.md) a la que se aplica tiene licencia y se deben crear instancias mediante [**IClassFactory2.**](/windows/win32/api/ocidl/nn-ocidl-iclassfactory2)
 
 ``` syntax
 [
@@ -38,10 +38,10 @@ coclass classname
 
 <dl> <dt>
 
-*lista de atributos* 
+*attribute-list* 
 </dt> <dd>
 
-Especifica cero o más atributos que se aplican a la instrucción [**CoClass**](coclass.md) . Los atributos de **coclase** permitidos son **\[** [**HelpString**](helpstring.md) **\]** , **\[** [**HelpContext**](helpcontext.md) **\]** , con **\[ licencia \]**, **\[** [**versión**](version.md) **\]** , **\[** [**control**](control.md) **\]** y **\[** [**oculto**](hidden.md) **\]** .
+Especifica cero o más atributos que se aplican a la [**instrucción coclass.**](coclass.md) Los atributos **de la coclase** permitidos **\[** [**son helpstring**](helpstring.md) **\]** , **\[** [**helpcontext**](helpcontext.md), **\]** **\[ licensed \]**, **\[** [**version**](version.md) **\]** , **\[** [**control**](control.md) **\]** y **\[** [**hidden.**](hidden.md) **\]**
 
 </dd> <dt>
 
@@ -52,16 +52,16 @@ Especifica el nombre por el que se conoce el objeto de componente en la bibliote
 
 </dd> <dt>
 
-*definición de coclases* 
+*coclass-definition* 
 </dt> <dd>
 
-Especifica las instrucciones que componen la definición de [**coclase**](coclass.md) .
+Especifica las instrucciones que son la definición [**de la clase conjunta.**](coclass.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La concesión de licencias es una característica de COM que proporciona control sobre la creación de objetos. Los objetos con licencia solo los pueden crear los clientes que tienen autorización para usarlos. Las licencias se implementan en COM a través de la interfaz [**IClassFactory2**](/windows/win32/api/ocidl/nn-ocidl-iclassfactory2) y admiten una clave de licencia que se puede pasar en tiempo de ejecución.
+Las licencias son una característica de COM que proporciona control sobre la creación de objetos. Los objetos con licencia solo los pueden crear los clientes que están autorizados para usarlos. Las licencias se implementan en COM mediante la [**interfaz IClassFactory2**](/windows/win32/api/ocidl/nn-ocidl-iclassfactory2) y la compatibilidad con una clave de licencia que se puede pasar en tiempo de ejecución.
 
 ### <a name="flags"></a>Marcas
 
@@ -91,7 +91,7 @@ coclass MyClass
 [Contenido de una biblioteca de tipos](/previous-versions/windows/desktop/automat/contents-of-a-type-library)
 </dt> <dt>
 
-[**control**](control.md)
+[**Control**](control.md)
 </dt> <dt>
 
 [Generar una biblioteca de tipos con MIDL](generating-a-type-library-with-midl-2.md)
@@ -103,10 +103,10 @@ coclass MyClass
 [**helpcontext**](helpcontext.md)
 </dt> <dt>
 
-[**plusvalía**](hidden.md)
+[**Oculto**](hidden.md)
 </dt> <dt>
 
-[Sintaxis del archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxis de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [TYPEFLAGS](/windows/win32/api/oaidl/ne-oaidl-typeflags)
@@ -115,6 +115,6 @@ coclass MyClass
 [**Versión**](version.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

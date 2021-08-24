@@ -1,10 +1,10 @@
 ---
-title: Generar-RSoP-planeación extendida derecha
-description: El usuario que tenga los derechos en una unidad organizativa o un dominio podrá generar datos de RSoP en modo de planeamiento para los usuarios o equipos de la unidad organizativa.
+title: Derecho extendido Generate-RSoP-Planning
+description: El usuario que tiene los derechos en una unidad organizativa o dominio podrá generar datos de RSoP en modo de planeamiento para los usuarios o equipos dentro de la unidad organizativa.
 ms.assetid: 4a874e47-c88b-4945-912b-7d4a2dd799df
 ms.tgt_platform: multiple
 keywords:
-- Generar-RSoP-planear el esquema de AD de derecho extendido
+- Generate-RSoP-Planning extended right AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,22 +13,22 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f20b7d3a6431dcc19e83f95c594fd0332e35eb2b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e00e8365f032559484d9c4dc1790586493dc5bb1b897e96dafb118c2c77c23a2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105651430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119531875"
 ---
-# <a name="generate-rsop-planning-extended-right"></a>Generar-RSoP-planeación extendida derecha
+# <a name="generate-rsop-planning-extended-right"></a>Derecho extendido Generate-RSoP-Planning
 
-El usuario que tenga los derechos en una unidad organizativa o un dominio podrá generar datos de RSoP en modo de planeamiento para los usuarios o equipos de la unidad organizativa.
+El usuario que tiene los derechos en una unidad organizativa o dominio podrá generar datos de RSoP en modo de planeamiento para los usuarios o equipos dentro de la unidad organizativa.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|---------------------------------------------|
-| CN           | Generación-RSoP-planeamiento                      |
+| CN           | Generate-RSoP-Planning                      |
 | Display-Name | Generar conjunto resultante de directivas (planeación) |
 | Rights-GUID  | b7b1b3dd-ab09-4242-9e30-9980e5d322f7        |
 
@@ -46,10 +46,10 @@ El usuario que tenga los derechos en una unidad organizativa o un dominio podrá
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|-------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Dominio DNS**](c-domaindns.md)<br/> |
-| Localización: ID. de presentación | 55                                                                                                          |
+| Applies-To              | [**Unidad organizativa**](c-organizationalunit.md)<br/> [**DNS de dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 55                                                                                                          |
 
 
 
@@ -59,8 +59,8 @@ El usuario que tenga los derechos en una unidad organizativa o un dominio podrá
 
 | Entrada | Value |
 |-------------------------|-------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Dominio DNS**](c-domaindns.md)<br/> |
-| Localización: ID. de presentación | 55                                                                                                          |
+| Applies-To              | [**Unidad organizativa**](c-organizationalunit.md)<br/> [**DNS de dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 55                                                                                                          |
 
 
 
@@ -68,10 +68,10 @@ El usuario que tenga los derechos en una unidad organizativa o un dominio podrá
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|-------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Dominio DNS**](c-domaindns.md)<br/> |
-| Localización: ID. de presentación | 55                                                                                                          |
+| Applies-To              | [**Unidad organizativa**](c-organizationalunit.md)<br/> [**DNS de dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 55                                                                                                          |
 
 
 
@@ -81,8 +81,8 @@ El usuario que tenga los derechos en una unidad organizativa o un dominio podrá
 
 | Entrada | Value |
 |-------------------------|-------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Dominio DNS**](c-domaindns.md)<br/> |
-| Localización: ID. de presentación | 55                                                                                                          |
+| Applies-To              | [**Unidad organizativa**](c-organizationalunit.md)<br/> [**DNS de dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 55                                                                                                          |
 
 
 
@@ -92,8 +92,8 @@ El usuario que tenga los derechos en una unidad organizativa o un dominio podrá
 
 | Entrada | Value |
 |-------------------------|-------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Unidad organizativa**](c-organizationalunit.md)<br/> [**Dominio DNS**](c-domaindns.md)<br/> |
-| Localización: ID. de presentación | 55                                                                                                          |
+| Applies-To              | [**Unidad organizativa**](c-organizationalunit.md)<br/> [**DNS de dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 55                                                                                                          |
 
 
 

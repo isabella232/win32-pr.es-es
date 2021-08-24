@@ -1,7 +1,7 @@
 ---
 description: Quita los datos de rotación en el fotograma clave especificado.
 ms.assetid: 8e95d684-fa22-4eba-a721-e7551e8f393b
-title: 'ID3DXKeyframedAnimationSet:: UnregisterRotationKey (método) (D3dx9anim. h)'
+title: Método ID3DXKeyframedAnimationSet::UnregisterRotationKey (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 420a15d0086f94def7db8c7d558640d03b69562f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a6e6d58695a8d1094fa8d4f5d8fac99d73dc0a4d9181801e0c5f2b4bf2458d5f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718459"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119121125"
 ---
-# <a name="id3dxkeyframedanimationsetunregisterrotationkey-method"></a>ID3DXKeyframedAnimationSet:: UnregisterRotationKey (método)
+# <a name="id3dxkeyframedanimationsetunregisterrotationkey-method"></a>Método ID3DXKeyframedAnimationSet::UnregisterRotationKey
 
 Quita los datos de rotación en el fotograma clave especificado.
 
@@ -41,19 +41,19 @@ HRESULT UnregisterRotationKey(
 
 <dl> <dt>
 
-*Animación* \[ de de\]
+*Animación* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Identificador de animación.
 
 </dd> <dt>
 
-*Clave* \[ de de\]
+*Clave* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Fotograma clave.
 
@@ -63,11 +63,11 @@ Fotograma clave.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el valor siguiente: D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el siguiente valor: D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método es lento y no debe usarse una vez iniciada la reproducción de una animación.
+Este método es lento y no debe usarse después de que una animación haya empezado a reproducirse.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,8 +75,8 @@ Este método es lento y no debe usarse una vez iniciada la reproducción de una 
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

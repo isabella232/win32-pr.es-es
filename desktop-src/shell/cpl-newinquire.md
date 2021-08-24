@@ -13,12 +13,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 90c5adf31c01fbab1b62aafd0714d165092f4e23
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f9455f6f2b89d7b63ad663bcd17d31363ab2c97fd1ba923ba22ebec62e0b04d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108104443"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119456355"
 ---
 # <a name="cpl_newinquire-message"></a>Mensaje \_ NEWINQUIRE de CPL
 
@@ -54,17 +54,17 @@ El Panel de control envía el **mensaje \_ NEWINQUIRE** de CPL una vez para cada
 
 Puede realizar la inicialización del cuadro de diálogo cuando reciba [**CPL \_ INQUIRE**](cpl-inquire.md). Si debe asignar memoria, debe hacerlo en respuesta al [**mensaje \_ INIT de CPL.**](cpl-init.md)
 
-[**CPL \_ INQUIRE**](cpl-inquire.md) es el mensaje preferido. Esto se debe a **que CPL \_ NEWINQUIRE** devuelve información de forma que el sistema no puede almacenar en caché. Por lo tanto, las aplicaciones que procesan **CPL \_ NEWINQUIRE** deben cargarse cada vez que el Panel de control necesita la información, lo que da lugar a una reducción significativa del rendimiento.
+[**CPL \_ INQUIRE**](cpl-inquire.md) es el mensaje preferido. Esto se debe a **que CPL \_ NEWINQUIRE** devuelve información en un formulario que el sistema no puede almacenar en caché. Por lo tanto, las aplicaciones que procesan **CPL \_ NEWINQUIRE** deben cargarse cada vez que el Panel de control necesita la información, lo que produce una reducción significativa del rendimiento.
 
-Las únicas aplicaciones que deben **usar CPL \_ NEWINQUIRE** son aquellas que necesitan cambiar su icono o mostrar cadenas en función del estado del equipo. En este caso, el controlador [**CPL \_ INQUIRE**](cpl-inquire.md) debe especificar el valor de CPL DYNAMIC RES para los miembros idIcon , idName o idInfo de la estructura \_ \_ [**CPLINFO,**](/windows/win32/api/cpl/ns-cpl-cplinfo)    en lugar de especificar un identificador de recurso válido. Esto hace que el Panel de control envíe el mensaje **\_ NEWINQUIRE** de CPL cada vez que necesite el icono y las cadenas de presentación, lo que le permite especificar información basada en el estado actual del equipo. Por supuesto, esto es significativamente más lento que usar la información almacenada en caché.
+Las únicas aplicaciones que deben usar **CPL \_ NEWINQUIRE** son aquellas que necesitan cambiar su icono o mostrar cadenas en función del estado del equipo. En este caso, el controlador [**CPL \_ INQUIRE**](cpl-inquire.md) debe especificar el valor CPL DYNAMIC RES para los miembros idIcon , idName o idInfo de la estructura \_ \_ [**CPLINFO,**](/windows/win32/api/cpl/ns-cpl-cplinfo)    en lugar de especificar un identificador de recurso válido. Esto hace que Panel de control el mensaje **\_ NEWINQUIRE** de CPL cada vez que necesite el icono y las cadenas de presentación, lo que le permite especificar información basada en el estado actual del equipo. Por supuesto, esto es significativamente más lento que usar la información almacenada en caché.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                      |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                      |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
 | Encabezado<br/>                   | <dl> <dt>Cpl.h</dt> </dl> |
 

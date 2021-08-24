@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7dc0edc642687518979eab1d47c69af039bc3173
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3894e701b22f6380e591eccf978e84a1321f57a84485cea8a6e3116181f3f2c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084913"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119538465"
 ---
-# <a name="ctransformoutputpincheckmediatype-method"></a>CTransformOutputPin.CheckMediaType (método)
+# <a name="ctransformoutputpincheckmediatype-method"></a>Método CTransformOutputPin.CheckMediaType
 
 El `CheckMediaType` método determina si el pin acepta un tipo de medio específico.
 
@@ -74,7 +74,7 @@ Este método implementa el método [**CBasePin::CheckMediaType**](cbasepin-check
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 

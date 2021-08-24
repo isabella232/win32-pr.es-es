@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 5c920dca-fbca-48e1-9dce-38713cf1fcef
-ms.openlocfilehash: 3146fea4f6c8d8547c8c86096b434cbaea5b5926
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: cb5c6e324e657962a4a0bbbfa64cb45fefa7d37a3ca5ce21cd25e072fc1a6594
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119223375"
 ---
 # <a name="ishellfoldersearchablecancelasyncsearch-method"></a>IShellFolderSearchable::CancelAsyncSearch (método)
 
@@ -66,7 +66,7 @@ Devuelve S \_ OK si se cancela, o S FALSE \_ si la búsqueda no se está ejecuta
 
 ## <a name="remarks"></a>Observaciones
 
-Cuando la búsqueda se cancele realmente, se llamará a [**RunEnd.**](ishellfoldersearchablecallback-runend.md)
+Cuando la búsqueda se cancele realmente, se llamará [**a RunEnd.**](ishellfoldersearchablecallback-runend.md)
 
 ## <a name="requirements"></a>Requisitos
 

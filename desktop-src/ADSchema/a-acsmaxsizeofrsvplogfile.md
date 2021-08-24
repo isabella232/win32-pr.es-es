@@ -1,11 +1,11 @@
 ---
-title: ACS-Max-Size-of-RSVP-log-file-atributo
-description: El tamaño máximo, en bytes, de un archivo de registro de RSVP.
+title: Atributo ACS-Max-Size-of-RSVP-Log-File
+description: Tamaño máximo, en bytes, de un archivo de registro RSVP.
 ms.assetid: 0b107185-baea-4be8-b4b7-d0865714a575
 ms.tgt_platform: multiple
 keywords:
-- ACS-Max-Size-of-RSVP-log-file atributo AD Schema
-- aCSMaxSizeOfRSVPLogFile esquema de AD de atributos
+- Esquema de AD del atributo ACS-Max-Size-Of-RSVP-Log-File
+- Esquema de AD del atributo aCSMaxSizeOfRSVPLogFile
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 24de3dbc025685cba01efc05a49a2e528165219d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 72650e6dcdaeb4642a4b8d3ef6b4056a94c3a5119469f93a24c9740917d9cfbc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658683"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119262045"
 ---
-# <a name="acs-max-size-of-rsvp-log-file-attribute"></a>ACS-Max-Size-of-RSVP-log-file-atributo
+# <a name="acs-max-size-of-rsvp-log-file-attribute"></a>Atributo ACS-Max-Size-of-RSVP-Log-File
 
-El tamaño máximo, en bytes, de un archivo de registro de RSVP.
+Tamaño máximo, en bytes, de un archivo de registro RSVP.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | ACS-Max-Size-of-RSVP-log-file        |
-| Nombre para mostrar de LDAP | aCSMaxSizeOfRSVPLogFile              |
-| Tamaño              | 4 bytes                              |
-| Actualizar privilegio  | \-                                   |
+| CN                | ACS-Max-Size-of-RSVP-Log-File        |
+| Ldap-Display-Name | aCSMaxSizeOfRSVPLogFile              |
+| Size              | 4 bytes                              |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.775               |
-| System-ID-GUID    | 1cb3559d-56d0-11d1-a9c6-0000f80367c1 |
+| System-Id-Guid    | 1cb3559d-56d0-11d1-a9c6-0000f80367c1 |
 | Sintaxis            | [**Enumeración**](s-enumeration.md) |
 
 
@@ -55,18 +55,18 @@ El tamaño máximo, en bytes, de un archivo de registro de RSVP.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
+| Es de un solo valor       | True                                         |
 | Está indexado             | False                                        |
 | En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ El tamaño máximo, en bytes, de un archivo de registro de RSVP.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
+| Es de un solo valor       | True                                         |
 | Está indexado             | False                                        |
 | En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ El tamaño máximo, en bytes, de un archivo de registro de RSVP.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
+| Es de un solo valor       | True                                         |
 | Está indexado             | False                                        |
 | En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ El tamaño máximo, en bytes, de un archivo de registro de RSVP.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
+| Es de un solo valor       | True                                         |
 | Está indexado             | False                                        |
 | En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ El tamaño máximo, en bytes, de un archivo de registro de RSVP.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
+| Es de un solo valor       | True                                         |
 | Está indexado             | False                                        |
 | En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ El tamaño máximo, en bytes, de un archivo de registro de RSVP.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
+| Es de un solo valor       | True                                         |
 | Está indexado             | False                                        |
 | En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 

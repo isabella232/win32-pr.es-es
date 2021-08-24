@@ -1,9 +1,9 @@
 ---
-title: TEXT. disabledFontStyle
-description: El atributo disabledFontStyle especifica o recupera el estilo de fuente utilizado para el control de texto cuando está deshabilitado.
+title: TEXT.disabledFontStyle
+description: El atributo disabledFontStyle especifica o recupera el estilo de fuente utilizado para el control Text cuando está deshabilitado.
 ms.assetid: d0593fe0-f80d-44a3-b989-e85887465d8a
 keywords:
-- Media Player de Windows TEXT. disabledFontStyle
+- TEXT.disabledFontStyle Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 563ab039a5eae00324f3a810c7d32f08729629b3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0119139e481eee6673c61f95425eac0a3918d738c3d18278442ba7713718b7bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718821"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119507595"
 ---
-# <a name="textdisabledfontstyle"></a>TEXT. disabledFontStyle
+# <a name="textdisabledfontstyle"></a>TEXT.disabledFontStyle
 
-El atributo **disabledFontStyle** especifica o recupera el estilo de fuente utilizado para el control de texto cuando está deshabilitado.
+El **atributo disabledFontStyle** especifica o recupera el estilo de fuente utilizado para el control Text cuando está deshabilitado.
 
 ``` syntax
         elementID.disabledFontStyle
@@ -29,37 +29,37 @@ El atributo **disabledFontStyle** especifica o recupera el estilo de fuente util
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura que contiene uno o varios de los valores siguientes.
+Este atributo es una cadena de **lectura** y escritura que contiene uno o varios de los valores siguientes.
 
 
 
-| Value     | Descripción           |
+| Valor     | Descripción           |
 |-----------|-----------------------|
-| Bold      | Estilo de fuente en negrita.      |
+| Negrita      | Estilo de fuente en negrita.      |
 | Cursiva    | Estilo de fuente cursiva.    |
 | Subrayado | Estilo de fuente de subrayado. |
-| Tacha | Estilo de fuente de tachado. |
+| Tachado | Estilo de fuente de tachón. |
 | Normal    | Estilo de fuente normal.    |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se puede usar cualquier combinación de valores, separados por espacios. El estilo normal tiene prioridad sobre todos los demás valores, y se omitirán los demás especificados junto con normal.
+Se puede usar cualquier combinación de los valores, separados por espacios. El estilo Normal tiene prioridad sobre todos los demás valores y se omitirán los demás especificados junto con Normal.
 
-Si no se especifica **disabledFontStyle** , se usa **fontStyle** .
+Si **no se especifica disabledFontStyle,** se usa **fontStyle.**
 
-Vea el atributo [Value](text-value.md) para ver un ejemplo que muestra cómo se utilizan los atributos del elemento de **texto** .
+Vea el [atributo value](text-value.md) para obtener un ejemplo que ilustra cómo se usan los atributos del **elemento TEXT.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -70,7 +70,7 @@ Vea el atributo [Value](text-value.md) para ver un ejemplo que muestra cómo se 
 [**Elemento TEXT**](text-element.md)
 </dt> <dt>
 
-[**TEXT. fontStyle**](text-fontstyle.md)
+[**TEXT.fontStyle**](text-fontstyle.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Comentarios (msfeeds. h)
-description: Agregue comentarios a los metaarchivos siguiendo la sintaxis de lenguaje de marcado extensible (XML). Los comentarios comienzan con \ 0034; --\ 0034; y terminan con \ 0034;--\ 0034;.
+title: Comentarios (Msfeeds.h)
+description: Agregue comentarios a metarchivos siguiendo la sintaxis lenguaje de marcado extensible (XML). Los comentarios comienzan por \ 0034; -- \ 0034; y terminan con \ 0034;-- \ 0034;.
 ms.assetid: 3d8dbf13-bd48-4405-804f-57e0f5eff642
 keywords:
-- Comentarios Media Player de Windows
+- Comentarios Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,25 +14,25 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 701f456cae9f1432ed42235a3a6e13af555b2b8d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0fe5aaf9dde3d804bb91a1e2551636c86aa54ff2bec599bf06100ee2622b592a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700415"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135788"
 ---
-# <a name="comments-msfeedsh"></a>Comentarios (msfeeds. h)
+# <a name="comments-msfeedsh"></a>Comentarios (Msfeeds.h)
 
-Agregue comentarios a los metaarchivos siguiendo la sintaxis de lenguaje de marcado extensible (XML). Los comentarios comienzan con " &lt; !--" y terminan con "-- &gt; ".
+Agregue comentarios a metarchivos siguiendo la sintaxis lenguaje de marcado extensible (XML). Los comentarios comienzan &lt; por "!--" y terminan con &gt; "--".
 
 ``` syntax
 
 <!--Enter your comment text here.-->
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los comentarios pueden aparecer en cualquier lugar excepto en el contenido del elemento (entre las etiquetas de apertura y cierre de elemento,  < >). No forman parte de los datos de caracteres del documento y se omiten cuando se analiza el metarchivo.
+Los comentarios pueden aparecer en cualquier lugar excepto dentro del contenido del elemento (entre etiquetas de apertura y cierre de elementos,  < >). No forman parte de los datos de caracteres del documento y se omiten cuando se analiza el metarchivo.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -62,7 +62,7 @@ Los comentarios pueden aparecer en cualquier lugar excepto en el contenido del e
 
 | Requisito | Value |
 |-------------------|--------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Msfeeds. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Msfeeds.h</dt> </dl> |
 
 
 
@@ -70,7 +70,7 @@ Los comentarios pueden aparecer en cualquier lugar excepto en el contenido del e
 
 <dl> <dt>
 
-[**Referencia de elementos de metarchivo de Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Referencia de elementos de metarchivo multimedia**](windows-media-metafile-elements-reference.md)
 </dt> </dl>
 
  

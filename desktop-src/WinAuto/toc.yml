@@ -1,20 +1,20 @@
 - name: Características de accesibilidad de Windows
   href: about-windows-accessibility-features.md
-- name: Referencia de características de accesibilidad de Windows
+- name: Windows Referencia de características de accesibilidad
   items:
     - name: Parámetros de accesibilidad
       items:
-        - name: Información general sobre parámetros de accesibilidad
+        - name: Introducción a los parámetros de accesibilidad
           href: accessibility-parameters.md
         - name: Parámetro de contraste alto
           href: high-contrast-parameter.md
-        - name: Parámetro de preferencias de teclado
+        - name: Parámetro de preferencia de teclado
           href: keyboard-preference-parameter.md
-        - name: Parámetro de lector de pantalla
+        - name: Parámetro lector de pantalla
           href: screen-reader-parameter.md
-        - name: Parámetro Mostrar sonidos (y marca de descripción de audio)
+        - name: Mostrar el parámetro sounds (y la marca de descripción de audio)
           href: showsounds-parameter.md
-        - name: Parámetro de animación del área de cliente
+        - name: Parámetro de animación de área de cliente
           href: client-area-animation.md
         - name: Parámetro de duración del mensaje
           href: message-duration.md
@@ -38,45 +38,45 @@
       items:
         - name: ACCESSTIMEOUT
           href: /windows/win32/api/Winuser/ns-winuser-accesstimeout
-        - name: ACTIVAR
+        - name: Filterkeys
           href: /windows/win32/api/Winuser/ns-winuser-filterkeys
-        - name: ALTO
+        - name: HIGHCONTRAST
           href: /windows/win32/api/Winuser/ns-winuser-highcontrasta
-        - name: MOUSEKEYS
+        - name: Mousekeys
           href: /windows/win32/api/Winuser/ns-winuser-mousekeys
-        - name: SERIALKEYS
+        - name: Serialkeys
           href: /windows/win32/api/Winuser/ns-winuser-serialkeysa
-        - name: SOUNDSENTRY
+        - name: Soundsentry
           href: /windows/win32/api/Winuser/ns-winuser-soundsentrya
-        - name: ACTIVAR
+        - name: Stickykeys
           href: /windows/win32/api/Winuser/ns-winuser-stickykeys
-        - name: ACTIVAR
+        - name: Togglekeys
           href: /windows/win32/api/Winuser/ns-winuser-togglekeys
-    - name: Comprobar el estado de un parámetro de accesibilidad
+    - name: Comprobación del estado de un parámetro de accesibilidad
       href: checking-the-state-of-an-accessibility-parameter.md
     - name: Habilitación de una característica de accesibilidad integrada
       href: enabling-a-built-in-accessibility-feature.md
-- name: Referencia de la API de accesibilidad de Windows
+- name: Windows API de accesibilidad referencia
   items:
-    - name: Información general de la API de accesibilidad de Windows
+    - name: Windows API de accesibilidad información general
       href: windows-automation-api-portal.md
-    - name: Comparación de Microsoft Active Accessibility y UI Automation
+    - name: Microsoft Active Accessibility y Automatización de la interfaz de usuario comparación
       href: microsoft-active-accessibility-and-ui-automation-compared.md
     - name: Arquitectura e interoperabilidad
       href: architecture-and-interoperability.md
-    - name: Especificación de UI Automation
+    - name: Automatización de la interfaz de usuario especificación
       href: ui-automation-specification.md
-    - name: interoperabilidad de 32 y 64 bits
+    - name: Interoperabilidad de 32 y 64 bits
       href: 32-bit-and-64-bit-interoperability.md
     - name: Automatización de la interfaz de usuario
       href: entry-uiauto-win32.md
       items:
-        - name: Aspectos básicos de la automatización de la interfaz de usuario
+        - name: Automatización de la interfaz de usuario básicos
           href: entry-uiautocore-overview.md
           items:
             - name: Información general sobre UI Automation
               href: uiauto-uiautomationoverview.md
-            - name: Automatización y Active Accessibility de la interfaz de usuario
+            - name: Automatización de la interfaz de usuario y Active Accessibility
               href: uiauto-msaa.md
             - name: Información general sobre el árbol de la UI Automation
               href: uiauto-treeoverview.md
@@ -88,59 +88,59 @@
               href: uiauto-propertiesoverview.md
             - name: Información general sobre eventos de UI Automation
               href: uiauto-eventsoverview.md
-            - name: 'Propiedades, eventos y patrones de control personalizados'
+            - name: 'Propiedades personalizadas, eventos y patrones de control'
               href: uiauto-custompropertieseventscontrolpatterns.md
               items:
-                - name: 'Diseño de propiedades, eventos y patrones de control personalizados'
+                - name: 'Diseño de propiedades personalizadas, eventos y patrones de control'
                   href: uiauto-designingcustompropseventpatterns.md
-                - name: 'Registrar propiedades, eventos y patrones de control personalizados'
+                - name: 'Registro de propiedades personalizadas, eventos y patrones de control'
                   href: uiauto-regcustompropseventpatterns.md
-            - name: Compatibilidad de UI Automation para el contenido textual
+            - name: Automatización de la interfaz de usuario compatibilidad con contenido textual
               href: uiauto-ui-automation-textpattern-overview.md
               items:
                 - name: Acerca de los patrones de control Text y TextRange
                   href: uiauto-about-text-and-textrange-patterns.md
-                - name: Cómo la automatización de la interfaz de usuario expone objetos incrustados
+                - name: Cómo Automatización de la interfaz de usuario expone objetos incrustados
                   href: uiauto-textpattern-and-embedded-objects-overview.md
-                - name: Atributos de texto de automatización de la interfaz de usuario
+                - name: Automatización de la interfaz de usuario de texto
                   href: uiauto-textattributes.md
                 - name: Unidades de texto de Automatización de la interfaz de usuario
                   href: uiauto-uiautomationtextunits.md
-            - name: Compatibilidad de UI Automation para arrastrar y colocar
+            - name: Automatización de la interfaz de usuario compatibilidad con arrastrar y colocar
               href: ui-automation-support-for-drag-and-drop.md
-            - name: Prácticas recomendadas para usar matrices seguras
+            - name: Procedimientos recomendados para usar Caja fuerte matrices
               href: uiauto-workingwithsafearrays.md
             - name: UI Automation Specification y Community Promise
               href: uiauto-specandcommunitypromise.md
-        - name: Guía del programador del proveedor de UI Automation
+        - name: Automatización de la interfaz de usuario del programador del proveedor de servicios
           href: uiauto-providerportal.md
           items:
             - name: Información general sobre proveedores de UI Automation
               href: uiauto-providersoverview.md
-            - name: Implementar un proveedor de automatización de la interfaz de usuario de Server-Side
+            - name: Implementación de un Server-Side Automatización de la interfaz de usuario proveedor
               href: uiauto-serversideprovider.md
-            - name: Implementar un proveedor de automatización de la interfaz de usuario de Client-Side (proxy)
+            - name: Implementación de un Client-Side de Automatización de la interfaz de usuario Client-Side (proxy)
               href: uiauto-clientsideprovider.md
-            - name: Agregar la funcionalidad de automatización de la interfaz de usuario a los servidores de Active Accessibility
+            - name: Agregar Automatización de la interfaz de usuario funcionalidad a Active Accessibility Server
               href: uiauto-usingiaccessibleex.md
-            - name: Implementar patrones de control de UI Automation
+            - name: Implementación de Automatización de la interfaz de usuario de control de datos
               href: uiauto-implementinguiautocontrolpatterns.md
               items:
-                - name: Patrón de control Annotation
+                - name: Patrón de control de anotación
                   href: uiauto-implementingannotation.md
                 - name: Patrón de control CustomNavigation
                   href: uiauto-implementingcustomnavigation.md
-                - name: Dock (patrón de control)
+                - name: Patrón de control de acoplamiento
                   href: uiauto-implementingdock.md
-                - name: Arrastrar patrón de control
+                - name: Patrón de control de arrastre
                   href: uiauto-implementingdrag.md
                 - name: Patrón de control DropTarget
                   href: uiauto-implementingdroptarget.md
                 - name: Patrón de control ExpandCollapse
                   href: uiauto-implementingexpandcollapse.md
-                - name: Grid (patrón de control)
+                - name: Patrón de control de cuadrícula
                   href: uiauto-implementinggrid.md
-                - name: GridItem (patrón de control)
+                - name: Patrón de control GridItem
                   href: uiauto-implementinggriditem.md
                 - name: Invocar patrón de control
                   href: uiauto-implementinginvoke.md
@@ -150,15 +150,15 @@
                   href: uiauto-implementinglegacyiaccessible.md
                 - name: Patrón de control MultipleView
                   href: uiauto-implementingmultipleview.md
-                - name: ObjectModel (patrón de control)
+                - name: Patrón de control ObjectModel
                   href: uiauto-implementingobjectmodel.md
                 - name: Patrón de control RangeValue
                   href: uiauto-implementingrangevalue.md
-                - name: Scroll (patrón de control)
+                - name: Patrón de control de desplazamiento
                   href: uiauto-implementingscroll.md
                 - name: Patrón de control ScrollItem
                   href: uiauto-implementingscrollitem.md
-                - name: Selection (patrón de control)
+                - name: Patrón de control de selección
                   href: uiauto-implementingselection.md
                 - name: Patrón de control SelectionItem
                   href: uiauto-implementingselectionitem.md
@@ -166,11 +166,11 @@
                   href: uiauto-implementingspreadsheet.md
                 - name: Patrón de control SpreadsheetItem
                   href: uiauto-implementingspreadsheetitem.md
-                - name: Styles (patrón de control)
+                - name: Patrón de control estilos
                   href: uiauto-implementingstyles.md
                 - name: Patrón de control SynchronizedInput
                   href: uiauto-implementingsynchronizedinput.md
-                - name: Table (patrón de control)
+                - name: Patrón de control de tabla
                   href: uiauto-implementingtable.md
                 - name: Patrón de control TableItem
                   href: uiauto-implementingtableitem.md
@@ -178,160 +178,160 @@
                   href: uiauto-implementingtextandtextrange.md
                 - name: Patrón de control TextChild
                   href: textchild-control-pattern.md
-                - name: Patrón de control TextEdit
+                - name: TextEdit (patrón de control)
                   href: textedit-control-pattern.md
                 - name: Alternar patrón de control
                   href: uiauto-implementingtoggle.md
-                - name: Transform (patrón de control)
+                - name: Transformar patrón de control
                   href: uiauto-implementingtransform.md
-                - name: Value (patrón de control)
+                - name: Patrón de control de valores
                   href: uiauto-implementingvalue.md
                 - name: Patrón de control VirtualizedItem
                   href: uiauto-implementingvirtualizeditem.md
-                - name: Window (patrón de control)
+                - name: Patrón de control de ventana
                   href: uiauto-implementingwindow.md
-            - name: Compatibilidad con tipos de control de UI Automation
+            - name: Compatibilidad con Automatización de la interfaz de usuario control
               href: uiauto-supportinguiautocontroltypes.md
               items:
-                - name: AppBar (tipo de control)
+                - name: Tipo de control AppBar
                   href: uiauto-supportappbarcontroltype.md
-                - name: Button (tipo de control)
+                - name: Tipo de control Button
                   href: uiauto-supportbuttoncontroltype.md
-                - name: Calendar (tipo de control)
+                - name: Tipo de control Calendar
                   href: uiauto-supportcalendarcontroltype.md
-                - name: CheckBox (tipo de control)
+                - name: Tipo de control CheckBox
                   href: uiauto-supportcheckboxcontroltype.md
-                - name: ComboBox (tipo de control)
+                - name: Tipo de control ComboBox
                   href: uiauto-supportcomboboxcontroltype.md
-                - name: DataGrid (tipo de control)
+                - name: Tipo de control DataGrid
                   href: uiauto-supportdatagridcontroltype.md
-                - name: DataItem (tipo de control)
+                - name: Tipo de control DataItem
                   href: uiauto-supportdataitemcontroltype.md
-                - name: Document (tipo de control)
+                - name: Tipo de control De documento
                   href: uiauto-supportdocumentcontroltype.md
                 - name: Editar tipo de control
                   href: uiauto-supporteditcontroltype.md
-                - name: Group (tipo de control)
+                - name: Tipo de control Group
                   href: uiauto-supportgroupcontroltype.md
-                - name: Header (tipo de control)
+                - name: Tipo de control De encabezado
                   href: uiauto-supportheadercontroltype.md
-                - name: HeaderItem (tipo de control)
+                - name: Tipo de control HeaderItem
                   href: uiauto-supportheaderitemcontroltype.md
-                - name: HYPERLINK (tipo de control)
+                - name: Tipo de control Hyperlink
                   href: uiauto-supporthyperlinkcontroltype.md
-                - name: Image (tipo de control)
+                - name: Tipo de control Image
                   href: uiauto-supportimagecontroltype.md
-                - name: List (tipo de control)
+                - name: Tipo de control List
                   href: uiauto-supportlistcontroltype.md
-                - name: ListItem (tipo de control)
+                - name: Tipo de control ListItem
                   href: uiauto-supportlistitemcontroltype.md
-                - name: Menu (tipo de control)
+                - name: Tipo de control menu
                   href: uiauto-supportmenucontroltype.md
-                - name: MenuBar (tipo de control)
+                - name: Tipo de control MenuBar
                   href: uiauto-supportmenubarcontroltype.md
                 - name: MenuItem (tipo de control)
                   href: uiauto-supportmenuitemcontroltype.md
-                - name: Pane (tipo de control)
+                - name: Tipo de control Panel
                   href: uiauto-supportpanecontroltype.md
-                - name: ProgressBar (tipo de control)
+                - name: Tipo de control ProgressBar
                   href: uiauto-supportprogressbarcontroltype.md
-                - name: RadioButton (tipo de control)
+                - name: Tipo de control RadioButton
                   href: uiauto-supportradiobuttoncontroltype.md
-                - name: ScrollBar (tipo de control)
+                - name: Tipo de control ScrollBar
                   href: uiauto-supportscrollbarcontroltype.md
-                - name: SemanticZoom (tipo de control)
+                - name: Tipo de control SemanticZoom
                   href: uiauto-supportsemanticzoomcontroltype.md
-                - name: Separator (tipo de control)
+                - name: Tipo de control Separator
                   href: uiauto-supportseparatorcontroltype.md
-                - name: Slide (tipo de control)
+                - name: Tipo de control deslizante
                   href: uiauto-supportslidercontroltype.md
-                - name: Spinner (tipo de control)
+                - name: Tipo de control Spinner
                   href: uiauto-supportspinnercontroltype.md
-                - name: SplitButton (tipo de control)
+                - name: Tipo de control SplitButton
                   href: uiauto-supportsplitbuttoncontroltype.md
-                - name: StatusBar (tipo de control)
+                - name: Tipo de control StatusBar
                   href: uiauto-supportstatusbarcontroltype.md
-                - name: Tab (tipo de control)
+                - name: Tipo de control Tab
                   href: uiauto-supporttabcontroltype.md
-                - name: TabItem (tipo de control)
+                - name: Tipo de control TabItem
                   href: uiauto-supporttabitemcontroltype.md
-                - name: Table (tipo de control)
+                - name: Tipo de control Table
                   href: uiauto-supporttablecontroltype.md
-                - name: Text (tipo de control)
+                - name: Tipo de control Text
                   href: uiauto-supporttextcontroltype.md
-                - name: Thumb (tipo de control)
+                - name: Tipo de control Thumb
                   href: uiauto-supportthumbcontroltype.md
-                - name: TitleBar (tipo de control)
+                - name: Tipo de control TitleBar
                   href: uiauto-supporttitlebarcontroltype.md
-                - name: ToolBar (tipo de control)
+                - name: Tipo de control ToolBar
                   href: uiauto-supporttoolbarcontroltype.md
-                - name: ToolTip (tipo de control)
+                - name: Tipo de control ToolTip
                   href: uiauto-supporttooltipcontroltype.md
-                - name: Tree (tipo de control)
+                - name: Tipo de control Tree
                   href: uiauto-supporttreecontroltype.md
                 - name: Tipo de control TreeItem
                   href: uiauto-supporttreeitemcontroltype.md
-                - name: Window (tipo de control)
+                - name: Tipo de control De ventana
                   href: uiauto-supportwindowcontroltype.md
-            - name: Temas de How-To para los proveedores de automatización de la interfaz de usuario
+            - name: How-To temas para Automatización de la interfaz de usuario proveedores
               href: uiauto-howto-topics-for-uiautomation-providers.md
               items:
-                - name: Cómo exponer un proveedor de automatización de la interfaz de usuario de Server-Side
+                - name: Cómo exponer un proveedor Server-Side Automatización de la interfaz de usuario datos
                   href: uiauto-howto-expose-serverside-uiautomation-provider.md
-                - name: Cómo devolver propiedades de un proveedor de automatización de la interfaz de usuario
+                - name: Cómo devolver propiedades de un proveedor Automatización de la interfaz de usuario datos
                   href: uiauto-howto-return-properties-from-uiautomation-provider.md
-                - name: Cómo generar eventos desde un proveedor de automatización de la interfaz de usuario
+                - name: Cómo generar eventos desde un proveedor Automatización de la interfaz de usuario datos
                   href: uiauto-howto-raise-events-from-uiautomation-provider.md
-                - name: Cómo habilitar la navegación en un proveedor de fragmentos de UI Automation
+                - name: Cómo habilitar la navegación en un proveedor Automatización de la interfaz de usuario fragmentos
                   href: uiauto-howto-enable-navigation-in-fragmentprovider.md
                 - name: Patrones de control compatibles en un proveedor de UI Automation
                   href: uiauto-howto-support-controlpatterns-in-provider.md
-                - name: Cómo crear un proveedor de automatización de la interfaz de usuario de Client-Side (proxy)
+                - name: Cómo crear un proveedor de Client-Side de Automatización de la interfaz de usuario (proxy)
                   href: uiauto-howto-create-clientside-provider.md
-        - name: Guía del programador del cliente de UI Automation
+        - name: Automatización de la interfaz de usuario guía del programador de cliente
           href: uiauto-clientportal.md
           items:
-            - name: Introducción a los clientes de UI Automation
+            - name: Automatización de la interfaz de usuario introducción a los clientes de Automatización de la interfaz de usuario
               href: uiauto-clientsoverview.md
             - name: Crear el objeto CUIAutomation
               href: uiauto-creatingcuiautomation.md
             - name: Obtener elementos de UI Automation
               href: uiauto-obtainingelements.md
-            - name: Recuperar propiedades de elementos de UI Automation
+            - name: Recuperar propiedades de Automatización de la interfaz de usuario elementos
               href: uiauto-propertiesforclients.md
-            - name: Propiedades y patrones de control de la automatización de la interfaz de usuario
+            - name: Almacenar en Automatización de la interfaz de usuario propiedades y patrones de control
               href: uiauto-cachingforclients.md
-            - name: Suscribirse a eventos de UI Automation
+            - name: Suscribirse a eventos Automatización de la interfaz de usuario eventos
               href: uiauto-eventsforclients.md
             - name: Trabajar con controles basados en texto
               href: uiauto-workingwithtextbasedcontrols.md
               items:
-                - name: Descripción del modelo de objetos de texto de automatización de la interfaz de usuario
+                - name: Descripción del modelo Automatización de la interfaz de usuario de objetos de texto
                   href: uiauto-understandingtheuiautomationtextobjectmodel.md
                 - name: Usar intervalos de texto
                   href: uiauto-usingtextrangeobjects.md
-                - name: Acceder al contenido de la hoja de cálculo
+                - name: Acceso al contenido de la hoja de cálculo
                   href: uiauto-accessingspreadsheetcontent.md
-                - name: Controlar eventos relacionados con el texto
+                - name: Controlar eventos relacionados con texto
                   href: uiauto-handlingtextrelatedevents.md
                 - name: Descripción de los problemas de rendimiento
                   href: uiauto-understandingperformanceissues.md
             - name: Trabajar con elementos virtualizados
               href: uiauto-workingwithvirtualizeditems.md
-            - name: Acceso a servidores de Microsoft Active Accessibility
+            - name: Acceso a Microsoft Active Accessibility server
               href: uiauto-accessingmsaaservers.md
             - name: Utilizar la UI Automation para pruebas automatizadas
               href: uiauto-usefortesting.md
             - name: Descripción de los problemas de escalado de pantalla
               href: uiauto-screenscaling.md
-            - name: Descripción de los problemas de subprocesos
+            - name: Descripción de los problemas de subprocesamiento
               href: uiauto-threading.md
-            - name: How-To temas para clientes de automatización de la interfaz de usuario
+            - name: How-To temas para Automatización de la interfaz de usuario clientes
               href: uiauto-howto-topics-for-uiautomation-clients.md
               items:
                 - name: Cómo buscar elementos de la interfaz de usuario
                   href: uiauto-howto-find-ui-elements.md
-                - name: Cómo recorrer el árbol de automatización de la interfaz de usuario
+                - name: How to Walk the Automatización de la interfaz de usuario Tree
                   href: uiauto-howto-walk-uiautomation-tree.md
                 - name: Uso del Almacenamiento en caché
                   href: uiauto-howto-use-caching.md
@@ -339,12 +339,12 @@
                   href: uiauto-howto-implement-event-handlers.md
                 - name: Cómo recuperar un elemento virtualizado
                   href: uiauto-howto-retrieve-virtualized-item.md
-                - name: Cómo consultar un elemento virtualizado en la vista de elementos
+                - name: Cómo consultar un elemento virtualizado en la vista Elementos
                   href: uiauto-howto-query-a-virtualized-item-in-itemsview.md
         - name: Referencia
           href: entry-uiautocore-ref.md
           items:
-            - name: Proveedores de UI Automation
+            - name: Automatización de la interfaz de usuario proveedores
               href: uiauto-entry-uiautoprovidersforwin32apps.md
               items:
                 - name: Interfaces para proveedores
@@ -400,9 +400,9 @@
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementproviderfragment-getembeddedfragmentroots
                         - name: Método GetRuntimeId
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementproviderfragment-getruntimeid
-                        - name: Navigate (método)
+                        - name: Método Navigate
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementproviderfragment-navigate
-                        - name: SetFocus (método)
+                        - name: Método SetFocus
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementproviderfragment-setfocus
                     - name: IRawElementProviderFragmentRoot
                       href: /windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementproviderfragmentroot
@@ -461,7 +461,7 @@
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iannotationprovider-get_annotationtypename
                         - name: Propiedad Author
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iannotationprovider-get_author
-                        - name: DateTime (propiedad)
+                        - name: Propiedad DateTime
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iannotationprovider-get_datetime
                         - name: Propiedad de destino
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iannotationprovider-get_target
@@ -475,9 +475,9 @@
                     - name: IDragProvider
                       href: /windows/desktop/api/UIAutomationCore/nn-uiautomationcore-idragprovider
                       items:
-                        - name: Propiedad DropEffect
+                        - name: 'DropEffect, propiedad'
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-idragprovider-get_dropeffect
-                        - name: Propiedad DropEffects
+                        - name: 'DropEffects, propiedad'
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-idragprovider-get_dropeffects
                         - name: Método GetGrabbedItems
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-idragprovider-getgrabbeditems
@@ -486,27 +486,27 @@
                     - name: IDropTargetProvider
                       href: /windows/desktop/api/UIAutomationCore/nn-uiautomationcore-idroptargetprovider
                       items:
-                        - name: Propiedad DropTargetEffect
+                        - name: 'DropTargetEffect, propiedad'
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-idroptargetprovider-get_droptargeteffect
-                        - name: Propiedad DropTargetEffects
+                        - name: 'DropTargetEffects, propiedad'
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-idroptargetprovider-get_droptargeteffects
                     - name: IExpandCollapseProvider
                       href: /windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iexpandcollapseprovider
                       items:
-                        - name: Collapse (método)
+                        - name: Método Collapse
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-collapse
-                        - name: Expand (método)
+                        - name: Método Expand
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-expand
                         - name: Propiedad ExpandCollapseState
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-get_expandcollapsestate
                     - name: IGridItemProvider
                       href: /windows/desktop/api/UIAutomationCore/nn-uiautomationcore-igriditemprovider
                       items:
-                        - name: Propiedad de columna
+                        - name: Propiedad Column
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-igriditemprovider-get_column
                         - name: Propiedad ColumnSpan
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-igriditemprovider-get_columnspan
-                        - name: Propiedad ContainingGrid
+                        - name: 'ContainingGrid, propiedad'
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-igriditemprovider-get_containinggrid
                         - name: Row (propiedad)
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-igriditemprovider-get_row
@@ -517,9 +517,9 @@
                       items:
                         - name: Propiedad ColumnCount
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-igridprovider-get_columncount
-                        - name: GetItem (método)
+                        - name: Método GetItem
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-igridprovider-getitem
-                        - name: RowCount (propiedad)
+                        - name: Propiedad RowCount
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-igridprovider-get_rowcount
                     - name: IInvokeProvider
                       href: /windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iinvokeprovider
@@ -540,19 +540,19 @@
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ilegacyiaccessibleprovider-get_defaultaction
                         - name: 'Description, propiedad'
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ilegacyiaccessibleprovider-get_description
-                        - name: DoDefaultAction (método)
+                        - name: Método DoDefaultAction
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ilegacyiaccessibleprovider-dodefaultaction
                         - name: Método GetIAccessible
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ilegacyiaccessibleprovider-getiaccessible
                         - name: Método GetSelection
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ilegacyiaccessibleprovider-getselection
-                        - name: Propiedad Help
+                        - name: Propiedad De ayuda
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ilegacyiaccessibleprovider-get_help
                         - name: Propiedad KeyboardShortcut
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ilegacyiaccessibleprovider-get_keyboardshortcut
                         - name: Name (propiedad)
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ilegacyiaccessibleprovider-get_name
-                        - name: Role (propiedad)
+                        - name: Propiedad Role
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ilegacyiaccessibleprovider-get_role
                         - name: Selección del método
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ilegacyiaccessibleprovider-select
@@ -583,7 +583,7 @@
                       items:
                         - name: 'IsReadOnly, propiedad'
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_isreadonly
-                        - name: LargeChange (propiedad)
+                        - name: Propiedad LargeChange
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_largechange
                         - name: Propiedad máxima
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_maximum
@@ -598,7 +598,7 @@
                     - name: IScrollItemProvider
                       href: /windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iscrollitemprovider
                       items:
-                        - name: ScrollIntoView (método)
+                        - name: Método ScrollIntoView
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iscrollitemprovider-scrollintoview
                     - name: IScrollProvider
                       href: /windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iscrollprovider
@@ -609,7 +609,7 @@
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iscrollprovider-get_horizontalscrollpercent
                         - name: Propiedad HorizontalViewSize
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iscrollprovider-get_horizontalviewsize
-                        - name: Scroll (método)
+                        - name: Método Scroll
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iscrollprovider-scroll
                         - name: Método SetScrollPercent
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iscrollprovider-setscrollpercent
@@ -624,13 +624,13 @@
                       items:
                         - name: Método AddToSelection
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionitemprovider-addtoselection
-                        - name: IsSelected (propiedad)
+                        - name: Propiedad IsSelected
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionitemprovider-get_isselected
                         - name: Método RemoveFromSelection
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionitemprovider-removefromselection
                         - name: Selección del método
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionitemprovider-select
-                        - name: SelectionContainer (propiedad)
+                        - name: Propiedad SelectionContainer
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionitemprovider-get_selectioncontainer
                     - name: ISelectionProvider
                       href: /windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iselectionprovider
@@ -655,7 +655,7 @@
                     - name: ISpreadsheetItemProvider
                       href: /windows/desktop/api/UIAutomationCore/nn-uiautomationcore-ispreadsheetitemprovider
                       items:
-                        - name: Propiedad de fórmula
+                        - name: Propiedad Fórmula
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ispreadsheetitemprovider-get_formula
                         - name: Método GetAnnotationObjects
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ispreadsheetitemprovider-getannotationobjects
@@ -671,13 +671,13 @@
                       items:
                         - name: ExtendedProperties (propiedad)
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-istylesprovider-get_extendedproperties
-                        - name: FillColor (propiedad)
+                        - name: 'FillColor, propiedad'
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-istylesprovider-get_fillcolor
-                        - name: Propiedad FillPatternColor
+                        - name: 'FillPatternColor, propiedad'
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-istylesprovider-get_fillpatterncolor
-                        - name: Propiedad FillPatternStyle
+                        - name: 'FillPatternStyle, propiedad'
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-istylesprovider-get_fillpatternstyle
-                        - name: Propiedad de forma
+                        - name: Propiedad Shape
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-istylesprovider-get_shape
                         - name: Propiedad StyleId
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-istylesprovider-get_styleid
@@ -711,7 +711,7 @@
                       items:
                         - name: Propiedad TextContainer
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itextchildprovider-get_textcontainer
-                        - name: TextRange (propiedad)
+                        - name: Propiedad TextRange
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itextchildprovider-get_textrange
                     - name: ITextEditProvider
                       href: /windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itexteditprovider
@@ -723,7 +723,7 @@
                     - name: ITextProvider
                       href: /windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itextprovider
                       items:
-                        - name: Propiedad DocumentRange
+                        - name: 'DocumentRange, propiedad'
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itextprovider-get_documentrange
                         - name: Método GetSelection
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itextprovider-getselection
@@ -731,9 +731,9 @@
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itextprovider-getvisibleranges
                         - name: Método RangeFromChild
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itextprovider-rangefromchild
-                        - name: RangeFromPoint (método)
+                        - name: Método RangeFromPoint
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itextprovider-rangefrompoint
-                        - name: Propiedad SupportedTextSelection
+                        - name: 'SupportedTextSelection, propiedad'
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itextprovider-get_supportedtextselection
                     - name: ITextProvider2
                       href: /windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itextprovider2
@@ -757,13 +757,13 @@
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itextrangeprovider-expandtoenclosingunit
                         - name: Método FindAttribute
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itextrangeprovider-findattribute
-                        - name: FindText (método)
+                        - name: Método FindText
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itextrangeprovider-findtext
                         - name: Método GetAttributeValue
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itextrangeprovider-getattributevalue
                         - name: Método GetBoundingRectangles
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itextrangeprovider-getboundingrectangles
-                        - name: GetChildren (método)
+                        - name: Método GetChildren
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itextrangeprovider-getchildren
                         - name: Método GetEnclosingElement
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itextrangeprovider-getenclosingelement
@@ -777,7 +777,7 @@
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itextrangeprovider-moveendpointbyunit
                         - name: Método RemoveFromSelection
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itextrangeprovider-removefromselection
-                        - name: ScrollIntoView (método)
+                        - name: Método ScrollIntoView
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itextrangeprovider-scrollintoview
                         - name: Selección del método
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itextrangeprovider-select
@@ -789,7 +789,7 @@
                     - name: IToggleProvider
                       href: /windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itoggleprovider
                       items:
-                        - name: Toggle (método)
+                        - name: Método Toggle
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itoggleprovider-toggle
                         - name: Propiedad ToggleState
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itoggleprovider-get_togglestate
@@ -804,7 +804,7 @@
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itransformprovider-get_canrotate
                         - name: método Move
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itransformprovider-move
-                        - name: Resize (método)
+                        - name: Cambio de tamaño del método
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itransformprovider-resize
                         - name: Rotate (método)
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itransformprovider-rotate
@@ -813,11 +813,11 @@
                       items:
                         - name: Propiedad CanZoom
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itransformprovider2-get_canzoom
-                        - name: Zoom (método)
+                        - name: Método de zoom
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itransformprovider2-zoom
                         - name: Método ZoomByUnit
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itransformprovider2-zoombyunit
-                        - name: Propiedad zoomLevel (
+                        - name: Propiedad ZoomLevel
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itransformprovider2-get_zoomlevel
                         - name: Propiedad ZoomMaximum
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itransformprovider2-get_zoommaximum
@@ -835,7 +835,7 @@
                     - name: IVirtualizedItemProvider
                       href: /windows/desktop/api/UIAutomationCore/nn-uiautomationcore-ivirtualizeditemprovider
                       items:
-                        - name: Método de realización
+                        - name: Método De realización
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ivirtualizeditemprovider-realize
                     - name: IWindowProvider
                       href: /windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iwindowprovider
@@ -852,7 +852,7 @@
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iwindowprovider-get_istopmost
                         - name: Método SetVisualState
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iwindowprovider-setvisualstate
-                        - name: WaitForInputIdle (método)
+                        - name: Método WaitForInputIdle
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iwindowprovider-waitforinputidle
                         - name: Propiedad WindowInteractionState
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iwindowprovider-get_windowinteractionstate
@@ -895,10 +895,10 @@
                       href: /windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uiaraisetextedittextchangedevent
                     - name: UiaReturnRawElementProvider
                       href: /windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uiareturnrawelementprovider
-            - name: Clientes de UI Automation
+            - name: Automatización de la interfaz de usuario clientes
               href: uiauto-entry-uiautoclientsforwin32apps.md
               items:
-                - name: Interfaces de elementos de UI Automation para clientes
+                - name: Automatización de la interfaz de usuario interfaces de elementos para clientes
                   href: uiauto-entry-uiautoclientinterfaces.md
                   items:
                     - name: IUIAutomation
@@ -920,13 +920,13 @@
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-compareelements
                         - name: Método CompareRuntimeIds
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-compareruntimeids
-                        - name: Propiedad ContentViewCondition
+                        - name: 'ContentViewCondition, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-get_contentviewcondition
-                        - name: Propiedad ContentViewWalker
+                        - name: 'ContentViewWalker, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-get_contentviewwalker
-                        - name: Propiedad ControlViewCondition
+                        - name: 'ControlViewCondition, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-get_controlviewcondition
-                        - name: Propiedad ControlViewWalker
+                        - name: 'ControlViewWalker, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-get_controlviewwalker
                         - name: Método CreateAndCondition
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-createandcondition
@@ -990,9 +990,9 @@
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-pollforpotentialsupportedproperties
                         - name: Propiedad ProxyFactoryMapping
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-get_proxyfactorymapping
-                        - name: Propiedad RawViewCondition
+                        - name: 'RawViewCondition, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-get_rawviewcondition
-                        - name: Propiedad RawViewWalker
+                        - name: 'RawViewWalker, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-get_rawviewwalker
                         - name: Método RectToVariant
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-recttovariant
@@ -1006,9 +1006,9 @@
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-removepropertychangedeventhandler
                         - name: Método RemoveStructureChangedEventHandler
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-removestructurechangedeventhandler
-                        - name: Propiedad ReservedMixedAttributeValue
+                        - name: 'ReservedMixedAttributeValue, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-get_reservedmixedattributevalue
-                        - name: Propiedad ReservedNotSupportedValue
+                        - name: 'ReservedNotSupportedValue, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-get_reservednotsupportedvalue
                         - name: Método SafeArrayToRectNativeArray
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-safearraytorectnativearray
@@ -1051,7 +1051,7 @@
                           href: /windows/desktop/api/uiautomationclient/nf-uiautomationclient-iuiautomation6-addactivetextpositionchangedeventhandler
                         - name: Método AddEventHandlerGroup
                           href: /windows/desktop/api/uiautomationclient/nf-uiautomationclient-iuiautomation6-addeventhandlergroup
-                        - name: Propiedad CoalesceEvents
+                        - name: 'CoalesceEvents, propiedad'
                           href: /windows/desktop/api/uiautomationclient/nf-uiautomationclient-iuiautomation6-get_coalesceevents
                         - name: Propiedad ConnectionRecoveryBehavior
                           href: /windows/desktop/api/uiautomationclient/nf-uiautomationclient-iuiautomation6-get_connectionrecoverybehavior
@@ -1068,112 +1068,112 @@
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationcacherequest-addpattern
                         - name: AddProperty (método)
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationcacherequest-addproperty
-                        - name: Propiedad AutomationElementMode
+                        - name: 'AutomationElementMode, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationcacherequest-get_automationelementmode
                         - name: Clone (método)
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationcacherequest-clone
                         - name: Propiedad TreeFilter
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationcacherequest-get_treefilter
-                        - name: TreeScope (propiedad)
+                        - name: Propiedad TreeScope
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationcacherequest-get_treescope
                     - name: IUIAutomationElement
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement
                       items:
                         - name: Método BuildUpdatedCache
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-buildupdatedcache
-                        - name: Propiedad CachedAcceleratorKey
+                        - name: 'CachedAcceleratorKey, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachedacceleratorkey
-                        - name: Propiedad CachedAccessKey
+                        - name: 'CachedAccessKey, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachedaccesskey
-                        - name: Propiedad CachedAriaProperties
+                        - name: 'CachedAriaProperties, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachedariaproperties
-                        - name: Propiedad CachedAriaRole
+                        - name: 'CachedAriaRole, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachedariarole
-                        - name: Propiedad CachedAutomationId
+                        - name: 'CachedAutomationId, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachedautomationid
-                        - name: Propiedad CachedBoundingRectangle
+                        - name: 'CachedBoundingRectangle, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachedboundingrectangle
-                        - name: Propiedad CachedClassName
+                        - name: 'CachedClassName, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachedclassname
-                        - name: Propiedad CachedControllerFor
+                        - name: 'CachedControllerFor, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachedcontrollerfor
-                        - name: Propiedad CachedControlType
+                        - name: 'CachedControlType, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachedcontroltype
-                        - name: Propiedad CachedCulture
+                        - name: 'CachedCulture, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachedculture
-                        - name: Propiedad CachedDescribedBy
+                        - name: 'CachedDescribedBy, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cacheddescribedby
-                        - name: Propiedad CachedFlowsTo
+                        - name: 'CachedFlowsTo, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachedflowsto
-                        - name: Propiedad CachedFrameworkId
+                        - name: 'CachedFrameworkId, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachedframeworkid
                         - name: Propiedad CachedHasKeyboardFocus
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachedhaskeyboardfocus
-                        - name: Propiedad CachedHelpText
+                        - name: 'CachedHelpText, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachedhelptext
-                        - name: Propiedad CachedIsContentElement
+                        - name: 'CachedIsContentElement, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachediscontentelement
                         - name: Propiedad CachedIsControlElement
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachediscontrolelement
-                        - name: Propiedad CachedIsDataValidForForm
+                        - name: 'CachedIsDataValidForForm, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachedisdatavalidforform
-                        - name: Propiedad CachedIsEnabled
+                        - name: 'CachedIsEnabled, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachedisenabled
                         - name: Propiedad CachedIsKeyboardFocusable
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachediskeyboardfocusable
-                        - name: Propiedad CachedIsOffscreen
+                        - name: 'CachedIsOffscreen, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachedisoffscreen
-                        - name: Propiedad CachedIsPassword
+                        - name: 'CachedIsPassword, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachedispassword
                         - name: Propiedad CachedIsRequiredForForm
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachedisrequiredforform
-                        - name: Propiedad CachedItemStatus
+                        - name: 'CachedItemStatus, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cacheditemstatus
-                        - name: Propiedad CachedItemType
+                        - name: 'CachedItemType, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cacheditemtype
-                        - name: Propiedad CachedLabeledBy
+                        - name: 'CachedLabeledBy, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachedlabeledby
-                        - name: Propiedad CachedLocalizedControlType
+                        - name: 'CachedLocalizedControlType, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachedlocalizedcontroltype
                         - name: Propiedad CachedName
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachedname
-                        - name: Propiedad CachedNativeWindowHandle
+                        - name: 'CachedNativeWindowHandle, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachednativewindowhandle
-                        - name: Propiedad CachedOrientation
+                        - name: 'CachedOrientation, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachedorientation
-                        - name: Propiedad CachedProcessId
+                        - name: 'CachedProcessId, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachedprocessid
-                        - name: Propiedad CachedProviderDescription
+                        - name: 'CachedProviderDescription, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachedproviderdescription
-                        - name: Propiedad CurrentAcceleratorKey
+                        - name: 'CurrentAcceleratorKey, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentacceleratorkey
-                        - name: Propiedad CurrentAccessKey
+                        - name: 'CurrentAccessKey, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentaccesskey
                         - name: Propiedad CurrentAriaProperties
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentariaproperties
-                        - name: Propiedad CurrentAriaRole
+                        - name: 'CurrentAriaRole, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentariarole
-                        - name: Propiedad CurrentAutomationId
+                        - name: 'CurrentAutomationId, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentautomationid
                         - name: Propiedad CurrentBoundingRectangle
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentboundingrectangle
                         - name: Propiedad CurrentClassName
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentclassname
-                        - name: Propiedad CurrentControllerFor
+                        - name: 'CurrentControllerFor, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentcontrollerfor
-                        - name: Propiedad CurrentControlType
+                        - name: 'CurrentControlType, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentcontroltype
                         - name: CurrentCulture (propiedad)
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentculture
-                        - name: Propiedad CurrentDescribedBy
+                        - name: 'CurrentDescribedBy, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentdescribedby
                         - name: Propiedad CurrentFlowsTo
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentflowsto
-                        - name: Propiedad CurrentFrameworkId
+                        - name: 'CurrentFrameworkId, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentframeworkid
                         - name: Propiedad CurrentHasKeyboardFocus
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currenthaskeyboardfocus
-                        - name: Propiedad CurrentHelpText
+                        - name: 'CurrentHelpText, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currenthelptext
                         - name: Propiedad CurrentIsContentElement
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentiscontentelement
@@ -1193,23 +1193,23 @@
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentisrequiredforform
                         - name: Propiedad CurrentItemStatus
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentitemstatus
-                        - name: Propiedad CurrentItemType
+                        - name: 'CurrentItemType, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentitemtype
                         - name: Propiedad CurrentLabeledBy
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentlabeledby
-                        - name: Propiedad CurrentLocalizedControlType
+                        - name: 'CurrentLocalizedControlType, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentlocalizedcontroltype
                         - name: Propiedad CurrentName
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentname
-                        - name: Propiedad CurrentNativeWindowHandle
+                        - name: 'CurrentNativeWindowHandle, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentnativewindowhandle
                         - name: Propiedad CurrentOrientation
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentorientation
-                        - name: Propiedad CurrentProcessId
+                        - name: 'CurrentProcessId, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentprocessid
                         - name: Propiedad CurrentProviderDescription
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentproviderdescription
-                        - name: FindAll (método)
+                        - name: Método FindAll
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-findall
                         - name: Método FindAllBuildCache
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-findallbuildcache
@@ -1241,22 +1241,22 @@
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-getcurrentpropertyvalueex
                         - name: Método GetRuntimeId
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-getruntimeid
-                        - name: SetFocus (método)
+                        - name: Método SetFocus
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-setfocus
                     - name: IUIAutomationElement2
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement2
                       items:
-                        - name: Propiedad CachedFlowsFrom
+                        - name: 'CachedFlowsFrom, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement2-get_cachedflowsfrom
-                        - name: Propiedad CachedLiveSetting
+                        - name: 'CachedLiveSetting, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement2-get_cachedlivesetting
-                        - name: Propiedad CachedOptimizeForVisualContent
+                        - name: 'CachedOptimizeForVisualContent, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement2-get_cachedoptimizeforvisualcontent
                         - name: Propiedad CurrentFlowsFrom
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement2-get_currentflowsfrom
-                        - name: Propiedad CurrentLiveSetting
+                        - name: 'CurrentLiveSetting, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement2-get_currentlivesetting
-                        - name: Propiedad CurrentOptimizeForVisualContent
+                        - name: 'CurrentOptimizeForVisualContent, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement2-get_currentoptimizeforvisualcontent
                     - name: IUIAutomationElement3
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement3
@@ -1272,17 +1272,17 @@
                       items:
                         - name: Propiedad CachedAnnotationObjects
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement4-get_cachedannotationobjects
-                        - name: Propiedad CachedAnnotationTypes
+                        - name: 'CachedAnnotationTypes, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement4-get_cachedannotationtypes
-                        - name: Propiedad CachedLevel
+                        - name: 'CachedLevel, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement4-get_cachedlevel
                         - name: Propiedad CachedPositionInSet
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement4-get_cachedpositioninset
-                        - name: Propiedad CachedSizeOfSet
+                        - name: 'CachedSizeOfSet, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement4-get_cachedsizeofset
-                        - name: Propiedad CurrentAnnotationObjects
+                        - name: 'CurrentAnnotationObjects, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement4-get_currentannotationobjects
-                        - name: Propiedad CurrentAnnotationTypes
+                        - name: 'CurrentAnnotationTypes, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement4-get_currentannotationtypes
                         - name: Propiedad CurrentLevel
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement4-get_currentlevel
@@ -1293,20 +1293,20 @@
                     - name: IUIAutomationElement5
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement5
                       items:
-                        - name: Propiedad CachedLandmarkType
+                        - name: 'CachedLandmarkType, propiedad'
                           href: /windows/desktop/api/uiautomationclient/nf-uiautomationclient-iuiautomationelement5-get_cachedlandmarktype
-                        - name: Propiedad CachedLocalizedLandmarkType
+                        - name: 'CachedLocalizedLandmarkType, propiedad'
                           href: /windows/desktop/api/uiautomationclient/nf-uiautomationclient-iuiautomationelement5-get_cachedlocalizedlandmarktype
-                        - name: Propiedad CurrentLandmarkType
+                        - name: 'CurrentLandmarkType, propiedad'
                           href: /windows/desktop/api/uiautomationclient/nf-uiautomationclient-iuiautomationelement5-get_currentlandmarktype
-                        - name: Propiedad CurrentLocalizedLandmarkType
+                        - name: 'CurrentLocalizedLandmarkType, propiedad'
                           href: /windows/desktop/api/uiautomationclient/nf-uiautomationclient-iuiautomationelement5-get_currentlocalizedlandmarktype
                     - name: IUIAutomationElement6
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement6
                       items:
-                        - name: Propiedad CachedFullDescription
+                        - name: 'CachedFullDescription, propiedad'
                           href: /windows/desktop/api/uiautomationclient/nf-uiautomationclient-iuiautomationelement6-get_cachedfulldescription
-                        - name: Propiedad CurrentFullDescription
+                        - name: 'CurrentFullDescription, propiedad'
                           href: /windows/desktop/api/uiautomationclient/nf-uiautomationclient-iuiautomationelement6-get_currentfulldescription
                     - name: IUIAutomationElement7
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement7
@@ -1324,14 +1324,14 @@
                     - name: IUIAutomationElement8
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement8
                       items:
-                        - name: Propiedad CachedHeadingLevel
+                        - name: 'CachedHeadingLevel, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement8-get_cachedheadinglevel
                         - name: Propiedad CurrentHeadingLevel
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement8-get_currentheadinglevel
                     - name: IUIAutomationElement9
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement9
                       items:
-                        - name: Propiedad CachedIsDialog
+                        - name: 'CachedIsDialog, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement9-get_cachedisdialog
                         - name: Propiedad CurrentIsDialog
                           href: /windows/desktop/api/uiautomationclient/nf-uiautomationclient-iuiautomationelement9-get_currentisdialog
@@ -1371,7 +1371,7 @@
                     - name: IUIAutomationTreeWalker
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationtreewalker
                       items:
-                        - name: Condition (propiedad)
+                        - name: Propiedad Condition
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtreewalker-get_condition
                         - name: Método GetFirstChildElement
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtreewalker-getfirstchildelement
@@ -1405,14 +1405,14 @@
                       items:
                         - name: Propiedad ChildCount
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationandcondition-get_childcount
-                        - name: GetChildren (método)
+                        - name: Método GetChildren
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationandcondition-getchildren
                         - name: Método GetChildrenAsNativeArray
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationandcondition-getchildrenasnativearray
                     - name: IUIAutomationBoolCondition
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationboolcondition
                       items:
-                        - name: Propiedad BooleanValue
+                        - name: 'BooleanValue, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationboolcondition-get_booleanvalue
                     - name: IUIAutomationCondition
                       href: /windows/desktop/api/uiautomationclient/nn-uiautomationclient-iuiautomationcondition
@@ -1426,7 +1426,7 @@
                       items:
                         - name: Propiedad ChildCount
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationorcondition-get_childcount
-                        - name: GetChildren (método)
+                        - name: Método GetChildren
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationorcondition-getchildren
                         - name: Método GetChildrenAsNativeArray
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationorcondition-getchildrenasnativearray
@@ -1435,7 +1435,7 @@
                       items:
                         - name: Propiedad PropertyConditionFlags
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationpropertycondition-get_propertyconditionflags
-                        - name: PropertyId (propiedad)
+                        - name: Propiedad PropertyId
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationpropertycondition-get_propertyid
                         - name: Propiedad PropertyValue
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationpropertycondition-get_propertyvalue
@@ -1445,35 +1445,35 @@
                     - name: IUIAutomationAnnotationPattern
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationannotationpattern
                       items:
-                        - name: Propiedad CachedAnnotationTypeId
+                        - name: 'CachedAnnotationTypeId, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationannotationpattern-get_cachedannotationtypeid
-                        - name: Propiedad CachedAnnotationTypeName
+                        - name: 'CachedAnnotationTypeName, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationannotationpattern-get_cachedannotationtypename
-                        - name: Propiedad CachedAuthor
+                        - name: 'CachedAuthor, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationannotationpattern-get_cachedauthor
-                        - name: Propiedad CachedDateTime
+                        - name: 'CachedDateTime, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationannotationpattern-get_cacheddatetime
-                        - name: Propiedad CachedTarget
+                        - name: 'CachedTarget, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationannotationpattern-get_cachedtarget
-                        - name: Propiedad CurrentAnnotationTypeId
+                        - name: 'CurrentAnnotationTypeId, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationannotationpattern-get_currentannotationtypeid
                         - name: Propiedad CurrentAnnotationTypeName
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationannotationpattern-get_currentannotationtypename
                         - name: Propiedad CurrentAuthor
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationannotationpattern-get_currentauthor
-                        - name: Propiedad CurrentDateTime
+                        - name: 'CurrentDateTime, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationannotationpattern-get_currentdatetime
-                        - name: Propiedad CurrentTarget
+                        - name: 'CurrentTarget, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationannotationpattern-get_currenttarget
                     - name: IUIAutomationCustomNavigationPattern
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationcustomnavigationpattern
                       items:
-                        - name: Navigate (método)
+                        - name: Método Navigate
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationcustomnavigationpattern-navigate
                     - name: IUIAutomationDockPattern
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationdockpattern
                       items:
-                        - name: Propiedad CachedDockPosition
+                        - name: 'CachedDockPosition, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationdockpattern-get_cacheddockposition
                         - name: Propiedad CurrentDockPosition
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationdockpattern-get_currentdockposition
@@ -1482,15 +1482,15 @@
                     - name: IUIAutomationDragPattern
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationdragpattern
                       items:
-                        - name: Propiedad CachedDropEffect
+                        - name: 'CachedDropEffect, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationdragpattern-get_cacheddropeffect
-                        - name: Propiedad CachedDropEffects
+                        - name: 'CachedDropEffects, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationdragpattern-get_cacheddropeffects
-                        - name: Propiedad CachedIsGrabbed
+                        - name: 'CachedIsGrabbed, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationdragpattern-get_cachedisgrabbed
                         - name: Propiedad CurrentDropEffect
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationdragpattern-get_currentdropeffect
-                        - name: Propiedad CurrentDropEffects
+                        - name: 'CurrentDropEffects, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationdragpattern-get_currentdropeffects
                         - name: Propiedad CurrentIsGrabbed
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationdragpattern-get_currentisgrabbed
@@ -1501,9 +1501,9 @@
                     - name: IUIAutomationDropTargetPattern
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationdroptargetpattern
                       items:
-                        - name: Propiedad CachedDropTargetEffect
+                        - name: 'CachedDropTargetEffect, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationdroptargetpattern-get_cacheddroptargeteffect
-                        - name: Propiedad CachedDropTargetEffects
+                        - name: 'CachedDropTargetEffects, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationdroptargetpattern-get_cacheddroptargeteffects
                         - name: Propiedad CurrentDropTargetEffect
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationdroptargetpattern-get_currentdroptargeteffect
@@ -1512,49 +1512,49 @@
                     - name: IUIAutomationExpandCollapsePattern
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationexpandcollapsepattern
                       items:
-                        - name: Propiedad CachedExpandCollapseState
+                        - name: 'CachedExpandCollapseState, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationexpandcollapsepattern-get_cachedexpandcollapsestate
-                        - name: Collapse (método)
+                        - name: Método Collapse
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationexpandcollapsepattern-collapse
                         - name: Propiedad CurrentExpandCollapseState
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationexpandcollapsepattern-get_currentexpandcollapsestate
-                        - name: Expand (método)
+                        - name: Método Expand
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationexpandcollapsepattern-expand
                     - name: IUIAutomationGridItemPattern
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationgriditempattern
                       items:
-                        - name: Propiedad CachedColumn
+                        - name: 'CachedColumn, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationgriditempattern-get_cachedcolumn
-                        - name: Propiedad CachedColumnSpan
+                        - name: 'CachedColumnSpan, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationgriditempattern-get_cachedcolumnspan
-                        - name: Propiedad CachedContainingGrid
+                        - name: 'CachedContainingGrid, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationgriditempattern-get_cachedcontaininggrid
-                        - name: Propiedad CachedRow
+                        - name: 'CachedRow, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationgriditempattern-get_cachedrow
-                        - name: Propiedad CachedRowSpan
+                        - name: 'CachedRowSpan, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationgriditempattern-get_cachedrowspan
                         - name: Propiedad CurrentColumn
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationgriditempattern-get_currentcolumn
                         - name: Propiedad CurrentColumnSpan
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationgriditempattern-get_currentcolumnspan
-                        - name: Propiedad CurrentContainingGrid
+                        - name: 'CurrentContainingGrid, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationgriditempattern-get_currentcontaininggrid
-                        - name: Propiedad CurrentRow
+                        - name: 'CurrentRow, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationgriditempattern-get_currentrow
-                        - name: Propiedad CurrentRowSpan
+                        - name: 'CurrentRowSpan, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationgriditempattern-get_currentrowspan
                     - name: IUIAutomationGridPattern
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationgridpattern
                       items:
-                        - name: Propiedad CachedColumnCount
+                        - name: 'CachedColumnCount, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationgridpattern-get_cachedcolumncount
-                        - name: Propiedad CachedRowCount
+                        - name: 'CachedRowCount, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationgridpattern-get_cachedrowcount
-                        - name: Propiedad CurrentColumnCount
+                        - name: 'CurrentColumnCount, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationgridpattern-get_currentcolumncount
-                        - name: Propiedad CurrentRowCount
+                        - name: 'CurrentRowCount, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationgridpattern-get_currentrowcount
-                        - name: GetItem (método)
+                        - name: Método GetItem
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationgridpattern-getitem
                     - name: IUIAutomationInvokePattern
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationinvokepattern
@@ -1569,47 +1569,47 @@
                     - name: IUIAutomationLegacyIAccessiblePattern
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationlegacyiaccessiblepattern
                       items:
-                        - name: Propiedad CachedChildId
+                        - name: 'CachedChildId, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationlegacyiaccessiblepattern-get_cachedchildid
-                        - name: Propiedad CachedDefaultAction
+                        - name: 'CachedDefaultAction, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationlegacyiaccessiblepattern-get_cacheddefaultaction
-                        - name: Propiedad CachedDescription
+                        - name: 'CachedDescription, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationlegacyiaccessiblepattern-get_cacheddescription
-                        - name: Propiedad CachedHelp
+                        - name: 'CachedHelp, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationlegacyiaccessiblepattern-get_cachedhelp
-                        - name: Propiedad CachedKeyboardShortcut
+                        - name: 'CachedKeyboardShortcut, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationlegacyiaccessiblepattern-get_cachedkeyboardshortcut
                         - name: Propiedad CachedName
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationlegacyiaccessiblepattern-get_cachedname
-                        - name: Propiedad CachedRole
+                        - name: 'CachedRole, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationlegacyiaccessiblepattern-get_cachedrole
-                        - name: Propiedad CachedState
+                        - name: 'CachedState, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationlegacyiaccessiblepattern-get_cachedstate
-                        - name: Propiedad CachedValue
+                        - name: 'CachedValue, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationlegacyiaccessiblepattern-get_cachedvalue
-                        - name: Propiedad CurrentChildId
+                        - name: 'CurrentChildId, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationlegacyiaccessiblepattern-get_currentchildid
-                        - name: Propiedad CurrentDefaultAction
+                        - name: 'CurrentDefaultAction, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationlegacyiaccessiblepattern-get_currentdefaultaction
                         - name: Propiedad CurrentDescription
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationlegacyiaccessiblepattern-get_currentdescription
-                        - name: Propiedad CurrentHelp
+                        - name: 'CurrentHelp, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationlegacyiaccessiblepattern-get_currenthelp
-                        - name: Propiedad CurrentKeyboardShortcut
+                        - name: 'CurrentKeyboardShortcut, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationlegacyiaccessiblepattern-get_currentkeyboardshortcut
                         - name: Propiedad CurrentName
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationlegacyiaccessiblepattern-get_currentname
                         - name: Propiedad CurrentRole
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationlegacyiaccessiblepattern-get_currentrole
-                        - name: CurrentState (propiedad)
+                        - name: Propiedad CurrentState
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationlegacyiaccessiblepattern-get_currentstate
                         - name: Propiedad CurrentValue
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationlegacyiaccessiblepattern-get_currentvalue
-                        - name: DoDefaultAction (método)
+                        - name: Método DoDefaultAction
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationlegacyiaccessiblepattern-dodefaultaction
                         - name: Método GetCachedSelection
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationlegacyiaccessiblepattern-getcachedselection
-                        - name: Método método getcurrentselection
+                        - name: Método GetCurrentSelection
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationlegacyiaccessiblepattern-getcurrentselection
                         - name: Método GetIAccessible
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationlegacyiaccessiblepattern-getiaccessible
@@ -1620,9 +1620,9 @@
                     - name: IUIAutomationMultipleViewPattern
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationmultipleviewpattern
                       items:
-                        - name: Propiedad CachedCurrentView
+                        - name: 'CachedCurrentView, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationmultipleviewpattern-get_cachedcurrentview
-                        - name: Propiedad CurrentCurrentView
+                        - name: 'CurrentCurrentView, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationmultipleviewpattern-get_currentcurrentview
                         - name: Método GetCachedSupportedViews
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationmultipleviewpattern-getcachedsupportedviews
@@ -1654,25 +1654,25 @@
                     - name: IUIAutomationRangeValuePattern
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationrangevaluepattern
                       items:
-                        - name: Propiedad CachedIsReadOnly
+                        - name: 'CachedIsReadOnly, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationrangevaluepattern-get_cachedisreadonly
-                        - name: Propiedad CachedLargeChange
+                        - name: 'CachedLargeChange, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationrangevaluepattern-get_cachedlargechange
-                        - name: Propiedad CachedMaximum
+                        - name: 'CachedMaximum, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationrangevaluepattern-get_cachedmaximum
-                        - name: Propiedad CachedMinimum
+                        - name: 'CachedMinimum, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationrangevaluepattern-get_cachedminimum
-                        - name: Propiedad CachedSmallChange
+                        - name: 'CachedSmallChange, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationrangevaluepattern-get_cachedsmallchange
-                        - name: Propiedad CachedValue
+                        - name: 'CachedValue, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationrangevaluepattern-get_cachedvalue
                         - name: Propiedad CurrentIsReadOnly
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationrangevaluepattern-get_currentisreadonly
-                        - name: Propiedad CurrentLargeChange
+                        - name: 'CurrentLargeChange, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationrangevaluepattern-get_currentlargechange
                         - name: Propiedad CurrentMaximum
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationrangevaluepattern-get_currentmaximum
-                        - name: Propiedad CurrentMinimum
+                        - name: 'CurrentMinimum, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationrangevaluepattern-get_currentminimum
                         - name: Propiedad CurrentSmallChange
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationrangevaluepattern-get_currentsmallchange
@@ -1683,36 +1683,36 @@
                     - name: IUIAutomationScrollItemPattern
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationscrollitempattern
                       items:
-                        - name: ScrollIntoView (método)
+                        - name: Método ScrollIntoView
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationscrollitempattern-scrollintoview
                     - name: IUIAutomationScrollPattern
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationscrollpattern
                       items:
-                        - name: Propiedad CachedHorizontallyScrollable
+                        - name: 'CachedHorizontallyScrollable, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationscrollpattern-get_cachedhorizontallyscrollable
-                        - name: Propiedad CachedHorizontalScrollPercent
+                        - name: 'CachedHorizontalScrollPercent, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationscrollpattern-get_cachedhorizontalscrollpercent
-                        - name: Propiedad CachedHorizontalViewSize
+                        - name: 'CachedHorizontalViewSize, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationscrollpattern-get_cachedhorizontalviewsize
-                        - name: Propiedad CachedVerticallyScrollable
+                        - name: 'CachedVerticallyScrollable, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationscrollpattern-get_cachedverticallyscrollable
-                        - name: Propiedad CachedVerticalScrollPercent
+                        - name: 'CachedVerticalScrollPercent, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationscrollpattern-get_cachedverticalscrollpercent
-                        - name: Propiedad CachedVerticalViewSize
+                        - name: 'CachedVerticalViewSize, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationscrollpattern-get_cachedverticalviewsize
                         - name: Propiedad CurrentHorizontallyScrollable
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationscrollpattern-get_currenthorizontallyscrollable
                         - name: Propiedad CurrentHorizontalScrollPercent
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationscrollpattern-get_currenthorizontalscrollpercent
-                        - name: Propiedad CurrentHorizontalViewSize
+                        - name: 'CurrentHorizontalViewSize, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationscrollpattern-get_currenthorizontalviewsize
                         - name: Propiedad CurrentVerticallyScrollable
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationscrollpattern-get_currentverticallyscrollable
-                        - name: Propiedad CurrentVerticalScrollPercent
+                        - name: 'CurrentVerticalScrollPercent, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationscrollpattern-get_currentverticalscrollpercent
-                        - name: Propiedad CurrentVerticalViewSize
+                        - name: 'CurrentVerticalViewSize, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationscrollpattern-get_currentverticalviewsize
-                        - name: Scroll (método)
+                        - name: Método Scroll
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationscrollpattern-scroll
                         - name: Método SetScrollPercent
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationscrollpattern-setscrollpercent
@@ -1727,7 +1727,7 @@
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationselectionitempattern-get_cachedselectioncontainer
                         - name: Propiedad CurrentIsSelected
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationselectionitempattern-get_currentisselected
-                        - name: Propiedad CurrentSelectionContainer
+                        - name: 'CurrentSelectionContainer, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationselectionitempattern-get_currentselectioncontainer
                         - name: Método RemoveFromSelection
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationselectionitempattern-removefromselection
@@ -1746,7 +1746,7 @@
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationselectionpattern-get_currentisselectionrequired
                         - name: Método GetCachedSelection
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationselectionpattern-getcachedselection
-                        - name: Método método getcurrentselection
+                        - name: Método GetCurrentSelection
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationselectionpattern-getcurrentselection
                     - name: IUIAutomationSelectionPattern2
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationselectionpattern2
@@ -1763,7 +1763,7 @@
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationselectionpattern2-get_currentcurrentselecteditem
                         - name: Propiedad CurrentFirstSelectedItem
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationselectionpattern2-get_currentfirstselecteditem
-                        - name: Propiedad CurrentItemCount
+                        - name: 'CurrentItemCount, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationselectionpattern2-get_currentitemcount
                         - name: Propiedad CurrentLastSelectedItem
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationselectionpattern2-get_currentlastselecteditem
@@ -1798,9 +1798,9 @@
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationstylespattern-get_cachedfillpatterncolor
                         - name: Propiedad CachedShape
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationstylespattern-get_cachedshape
-                        - name: Propiedad CachedStyleId
+                        - name: 'CachedStyleId, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationstylespattern-get_cachedstyleid
-                        - name: Propiedad CachedStyleName
+                        - name: 'CachedStyleName, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationstylespattern-get_cachedstylename
                         - name: Propiedad CurrentExtendedProperties
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationstylespattern-get_currentextendedproperties
@@ -1810,9 +1810,9 @@
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationstylespattern-get_currentfillpatterncolor
                         - name: Propiedad CurrentShape
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationstylespattern-get_currentshape
-                        - name: Propiedad CurrentStyleId
+                        - name: 'CurrentStyleId, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationstylespattern-get_currentstyleid
-                        - name: Propiedad CurrentStyleName
+                        - name: 'CurrentStyleName, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationstylespattern-get_currentstylename
                         - name: Método GetCachedExtendedPropertiesArray
                           href: /previous-versions/windows/desktop/legacy/hh437294(v=vs.85)
@@ -1856,7 +1856,7 @@
                       items:
                         - name: Propiedad TextContainer
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextchildpattern-get_textcontainer
-                        - name: TextRange (propiedad)
+                        - name: Propiedad TextRange
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextchildpattern-get_textrange
                     - name: IUIAutomationTextEditPattern
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationtexteditpattern
@@ -1868,7 +1868,7 @@
                     - name: IUIAutomationTextPattern
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationtextpattern
                       items:
-                        - name: Propiedad DocumentRange
+                        - name: 'DocumentRange, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextpattern-get_documentrange
                         - name: Método GetSelection
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextpattern-getselection
@@ -1876,9 +1876,9 @@
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextpattern-getvisibleranges
                         - name: Método RangeFromChild
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextpattern-rangefromchild
-                        - name: RangeFromPoint (método)
+                        - name: Método RangeFromPoint
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextpattern-rangefrompoint
-                        - name: Propiedad SupportedTextSelection
+                        - name: 'SupportedTextSelection, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextpattern-get_supportedtextselection
                     - name: IUIAutomationTextPattern2
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationtextpattern2
@@ -1902,13 +1902,13 @@
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-expandtoenclosingunit
                         - name: Método FindAttribute
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-findattribute
-                        - name: FindText (método)
+                        - name: Método FindText
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-findtext
                         - name: Método GetAttributeValue
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getattributevalue
                         - name: Método GetBoundingRectangles
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getboundingrectangles
-                        - name: GetChildren (método)
+                        - name: Método GetChildren
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getchildren
                         - name: Método GetEnclosingElement
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getenclosingelement
@@ -1922,7 +1922,7 @@
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-moveendpointbyunit
                         - name: Método RemoveFromSelection
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-removefromselection
-                        - name: ScrollIntoView (método)
+                        - name: Método ScrollIntoView
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-scrollintoview
                         - name: Selección del método
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-select
@@ -1950,43 +1950,43 @@
                     - name: IUIAutomationTogglePattern
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationtogglepattern
                       items:
-                        - name: Propiedad CachedToggleState
+                        - name: 'CachedToggleState, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtogglepattern-get_cachedtogglestate
                         - name: Propiedad CurrentToggleState
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtogglepattern-get_currenttogglestate
-                        - name: Toggle (método)
+                        - name: Método toggle
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtogglepattern-toggle
                     - name: IUIAutomationTransformPattern
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationtransformpattern
                       items:
                         - name: Propiedad CachedCanMove
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtransformpattern-get_cachedcanmove
-                        - name: Propiedad CachedCanResize
+                        - name: 'CachedCanResize, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtransformpattern-get_cachedcanresize
                         - name: Propiedad CachedCanRotate
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtransformpattern-get_cachedcanrotate
                         - name: Propiedad CurrentCanMove
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtransformpattern-get_currentcanmove
-                        - name: Propiedad CurrentCanResize
+                        - name: 'CurrentCanResize, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtransformpattern-get_currentcanresize
-                        - name: Propiedad CurrentCanRotate
+                        - name: 'CurrentCanRotate, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtransformpattern-get_currentcanrotate
                         - name: método Move
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtransformpattern-move
-                        - name: Resize (método)
+                        - name: Cambio de tamaño del método
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtransformpattern-resize
                         - name: Rotate (método)
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtransformpattern-rotate
                     - name: IUIAutomationTransformPattern2
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationtransformpattern2
                       items:
-                        - name: Propiedad CachedCanZoom
+                        - name: 'CachedCanZoom, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtransformpattern2-get_cachedcanzoom
-                        - name: Propiedad CachedZoomLevel
+                        - name: 'CachedZoomLevel, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtransformpattern2-get_cachedzoomlevel
-                        - name: Propiedad CachedZoomMaximum
+                        - name: 'CachedZoomMaximum, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtransformpattern2-get_cachedzoommaximum
-                        - name: Propiedad CachedZoomMinimum
+                        - name: 'CachedZoomMinimum, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtransformpattern2-get_cachedzoomminimum
                         - name: Propiedad CurrentCanZoom
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtransformpattern2-get_currentcanzoom
@@ -1994,18 +1994,18 @@
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtransformpattern2-get_currentzoomlevel
                         - name: Propiedad CurrentZoomMaximum
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtransformpattern2-get_currentzoommaximum
-                        - name: Propiedad CurrentZoomMinimum
+                        - name: 'CurrentZoomMinimum, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtransformpattern2-get_currentzoomminimum
-                        - name: Zoom (método)
+                        - name: Método de zoom
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtransformpattern2-zoom
                         - name: Método ZoomByUnit
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtransformpattern2-zoombyunit
                     - name: IUIAutomationValuePattern
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationvaluepattern
                       items:
-                        - name: Propiedad CachedIsReadOnly
+                        - name: 'CachedIsReadOnly, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationvaluepattern-get_cachedisreadonly
-                        - name: Propiedad CachedValue
+                        - name: 'CachedValue, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationvaluepattern-get_cachedvalue
                         - name: Propiedad CurrentIsReadOnly
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationvaluepattern-get_currentisreadonly
@@ -2016,20 +2016,20 @@
                     - name: IUIAutomationVirtualizedItemPattern
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationvirtualizeditempattern
                       items:
-                        - name: Método de realización
+                        - name: Método Realize
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationvirtualizeditempattern-realize
                     - name: IUIAutomationWindowPattern
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationwindowpattern
                       items:
-                        - name: Propiedad CachedCanMaximize
+                        - name: 'CachedCanMaximize, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationwindowpattern-get_cachedcanmaximize
-                        - name: Propiedad CachedCanMinimize
+                        - name: 'CachedCanMinimize, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationwindowpattern-get_cachedcanminimize
-                        - name: Propiedad CachedIsModal
+                        - name: 'CachedIsModal, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationwindowpattern-get_cachedismodal
-                        - name: Propiedad CachedIsTopmost
+                        - name: 'CachedIsTopmost, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationwindowpattern-get_cachedistopmost
-                        - name: Propiedad CachedWindowInteractionState
+                        - name: 'CachedWindowInteractionState, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationwindowpattern-get_cachedwindowinteractionstate
                         - name: Propiedad CachedWindowVisualState
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationwindowpattern-get_cachedwindowvisualstate
@@ -2049,7 +2049,7 @@
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationwindowpattern-get_currentwindowvisualstate
                         - name: Método SetWindowVisualState
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationwindowpattern-setwindowvisualstate
-                        - name: WaitForInputIdle (método)
+                        - name: Método WaitForInputIdle
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationwindowpattern-waitforinputidle
                 - name: Interfaces de control de eventos para clientes
                   href: uiauto-client-eventhandlinginterfaces.md
@@ -2107,17 +2107,17 @@
                     - name: IUIAutomationProxyFactoryEntry
                       href: /windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationproxyfactoryentry
                       items:
-                        - name: Propiedad AllowSubstringMatch
+                        - name: 'AllowSubstringMatch, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationproxyfactoryentry-get_allowsubstringmatch
                         - name: Propiedad CanCheckBaseClass
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationproxyfactoryentry-get_cancheckbaseclass
-                        - name: ClassName (propiedad)
+                        - name: 'ClassName, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationproxyfactoryentry-get_classname
                         - name: Método GetWinEventsForAutomationEvent
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationproxyfactoryentry-getwineventsforautomationevent
-                        - name: ImageName (propiedad)
+                        - name: Propiedad ImageName
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationproxyfactoryentry-get_imagename
-                        - name: Propiedad NeedsAdviseEvents
+                        - name: 'NeedsAdviseEvents, propiedad'
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationproxyfactoryentry-get_needsadviseevents
                         - name: Propiedad ProxyFactory
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationproxyfactoryentry-get_proxyfactory
@@ -2132,7 +2132,7 @@
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationproxyfactorymapping-get_count
                         - name: Método GetEntry
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationproxyfactorymapping-getentry
-                        - name: GetTable (método)
+                        - name: Método GetTable
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationproxyfactorymapping-gettable
                         - name: Método InsertEntries
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationproxyfactorymapping-insertentries
@@ -2142,14 +2142,14 @@
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationproxyfactorymapping-removeentry
                         - name: Método RestoreDefaultTable
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationproxyfactorymapping-restoredefaulttable
-                        - name: Método configurable
+                        - name: Método SetTable
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationproxyfactorymapping-settable
                 - name: Funciones para clientes
                   href: uiauto-entry-functionsforclients.md
                   items:
                     - name: UiaHasServerSideProvider
                       href: /windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uiahasserversideprovider
-                - name: Funciones de patrón de control desusadas
+                - name: Funciones de patrón de control en desuso
                   href: uiauto-entry-cpfunctions.md
                   items:
                     - name: DockPattern_SetDockPosition
@@ -2321,7 +2321,7 @@
                       href: /windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uiasetfocus
                     - name: UiaTextRangeRelease
                       href: /windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uiatextrangerelease
-            - name: Objetos de UI Automation
+            - name: Automatización de la interfaz de usuario objetos
               href: uiauto-entry-objects.md
               items:
                 - name: CUIAutomation
@@ -2330,7 +2330,7 @@
                   href: /previous-versions/windows/desktop/legacy/hh448746(v=vs.85)
                 - name: CUIAutomationRegistrar
                   href: /previous-versions/windows/desktop/legacy/ff384837(v=vs.85)
-            - name: Estructuras de UI Automation
+            - name: Automatización de la interfaz de usuario estructuras
               href: uiauto-entry-structures.md
               items:
                 - name: ExtendedProperty
@@ -2376,7 +2376,7 @@
                   href: /windows/desktop/api/UIAutomationCoreApi/ns-uiautomationcoreapi-uiastructurechangedeventargs
                 - name: UiaWindowClosedEventArgs
                   href: /windows/desktop/api/UIAutomationCoreApi/ns-uiautomationcoreapi-uiawindowclosedeventargs
-            - name: Enumeraciones de UI Automation
+            - name: Automatización de la interfaz de usuario enumeraciones
               href: uiauto-entry-enumerations.md
               items:
                 - name: ActiveEnd
@@ -2471,12 +2471,12 @@
                   href: /windows/desktop/api/UIAutomationCore/ne-uiautomationcore-windowvisualstate
                 - name: ZoomUnit
                   href: /windows/desktop/api/UIAutomationCore/ne-uiautomationcore-zoomunit
-            - name: Constantes de UI Automation
+            - name: Automatización de la interfaz de usuario constantes
               href: uiauto-entry-constants.md
               items:
                 - name: Identificadores de tipo de anotación
                   href: uiauto-annotation-type-identifiers.md
-                - name: Cambiar los identificadores de información
+                - name: Cambiar identificadores de información
                   href: change-info-identifiers.md
                 - name: Identificadores de patrón de control
                   href: uiauto-controlpattern-ids.md
@@ -2486,26 +2486,26 @@
                   href: uiauto-error-codes.md
                 - name: Identificadores de eventos
                   href: uiauto-event-ids.md
-                - name: Identificadores de nivel de título
+                - name: Identificadores de nivel de encabezado
                   href: uiauto-heading-level-identifiers.md
-                - name: Identificadores de tipos de puntos de referencia
+                - name: Identificadores de tipo de punto de referencia
                   href: landmark-type-identifiers.md
                 - name: Identificadores de metadatos
                   href: uiauto-metadata-identifiers.md
                 - name: Identificadores de propiedad
                   href: uiauto-entry-propids.md
                   items:
-                    - name: Identificadores de propiedad de elemento de automatización
+                    - name: Identificadores de propiedad de elementos de Automation
                       href: uiauto-automation-element-propids.md
                     - name: Identificadores de propiedad de patrón de control
                       href: uiauto-control-pattern-propids.md
-                    - name: Identificadores de propiedad de disponibilidad de patrón de control
+                    - name: Identificadores de propiedad de disponibilidad del patrón de control
                       href: uiauto-control-pattern-availability-propids.md
                 - name: Identificadores de estilo
                   href: uiauto-style-identifiers.md
-                - name: Identificadores de atributos de texto
+                - name: Identificadores de atributo de texto
                   href: uiauto-textattribute-ids.md
-                - name: GUID desusados
+                - name: GUID en desuso
                   href: uiauto-guids.md
         - name: Ejemplos
           href: samples-entry.md
@@ -2516,7 +2516,7 @@
               href: uiauto-controlsupport.md
             - name: Tipos de control y sus patrones de control admitidos
               href: uiauto-controlpatternmapping.md
-            - name: Especificación de automatización de la interfaz de usuario para aplicaciones de Internet enriquecidas accesible en W3C
+            - name: Automatización de la interfaz de usuario especificación de aplicaciones de Internet enriquecidas accesibles para W3C
               href: uiauto-ariaspecification.md
     - name: Microsoft Active Accessibility
       href: microsoft-active-accessibility.md
@@ -2526,10 +2526,10 @@
         - name: Introducción
           href: getting-started.md
           items:
-            - name: Componentes de Active Accessibility
+            - name: Active Accessibility componentes
               href: sdk-components.md
               items:
-                - name: Archivos de encabezado y lib
+                - name: Archivos de encabezado y biblioteca
                   href: header-and-lib-files.md
                 - name: Herramientas
                   href: tools.md
@@ -2538,76 +2538,76 @@
               items:
                 - name: Determinar la versión instalada de Active Accessibility
                   href: which-version-of-active-accessibility-is-currently-installed.md
-            - name: Active Accessibility y automatización de la interfaz de usuario
+            - name: Active Accessibility y Automatización de la interfaz de usuario
               href: active-accessibility-and-ui-automation.md
         - name: Introducción técnica
           href: technical-overview.md
           items:
-            - name: Cómo funciona Active Accessibility
+            - name: Funcionamiento de Active Accessibility
               href: how-active-accessibility-works.md
-            - name: Aspectos básicos de Active Accessibility
+            - name: Active Accessibility Basics
               href: active-accessibility-basics.md
               items:
-                - name: Objetos Active Accessibility
+                - name: Active Accessibility objetos
                   href: active-accessibility-objects.md
                   items:
                     - name: Objetos accesibles
                       href: accessible-objects.md
                     - name: Elementos simples
                       href: simple-elements.md
-                    - name: Cómo se usan los identificadores secundarios en los parámetros
+                    - name: Cómo se usan los iD secundarios en los parámetros
                       href: how-child-ids-are-used-in-parameters.md
-                    - name: Elementos de la interfaz de usuario personalizada
+                    - name: Elementos Interfaz de usuario personalizados
                       href: custom-user-interface-elements.md
-                    - name: 'Interfaces duales: IAccessible y IDispatch'
+                    - name: 'Interfaces duales: IAccessible e IDispatch'
                       href: dual-interfaces--iaccessible-and-idispatch.md
-                    - name: System-Provided elementos de la interfaz de usuario
+                    - name: System-Provided Interfaz de usuario elements
                       href: system-provided-user-interface-elements.md
-                - name: Tipos de compatibilidad de IAccessible
+                - name: Tipos de compatibilidad con IAccessible
                   href: types-of-iaccessible-support.md
                   items:
                     - name: Implementación de Active Accessibility nativa
                       href: native-active-accessibility-implementation.md
-                    - name: Proxies de IAccessible
+                    - name: Servidores proxy IAccessible
                       href: iaccessible-proxies.md
-                - name: Comunicación Client-Server
+                - name: Client-Server comunicación
                   href: client-server-communication.md
                   items:
                     - name: WinEvents y Active Accessibility
                       href: winevents-overview.md
-                    - name: Cómo funciona WM_GETOBJECT
+                    - name: Cómo funciona WM_GETOBJECT trabajo
                       href: how-wm-getobject-works.md
                     - name: Recuperar un objeto IAccessible
                       href: retrieving-an-iaccessible-object.md
-            - name: Instrucciones de servidor
+            - name: Directrices del servidor
               href: server-guidelines.md
               items:
-                - name: Cómo los servidores implementan identificadores secundarios
+                - name: Cómo implementan los servidores los iDs secundarios
                   href: how-servers-implement-child-ids.md
             - name: Directrices de cliente
               href: client-guidelines.md
               items:
-                - name: Cómo los clientes obtienen los identificadores secundarios
+                - name: Cómo obtienen los clientes los iDs secundarios
                   href: how-clients-obtain-child-ids.md
             - name: Instrucciones COM y Unicode
               href: com-and-unicode-guidelines.md
               items:
                 - name: VARIANT (estructura)
                   href: variant-structure.md
-                - name: Interfaz IDispatch
+                - name: IDispatch (interfaz)
                   href: idispatch-interface.md
-                - name: Convertir cadenas ANSI y Unicode
+                - name: Convertir cadenas Unicode y ANSI
                   href: converting-unicode-and-ansi-strings.md
         - name: Guía del desarrollador de C/C++
           href: c-c---developer-s-guide.md
           items:
-            - name: Active Accessibility servicios de la interfaz de usuario
+            - name: Active Accessibility Interfaz de usuario Services
               href: active-accessibility-user-interface-services-dev-guide.md
               items:
-                - name: API de la interfaz de usuario
+                - name: Interfaz de usuario API
                   href: user-interface-apis.md
                   items:
-                    - name: Usar la interfaz IAccessible
+                    - name: Uso de la interfaz IAccessible
                       href: using-iaccessible.md
                       items:
                         - name: Contenido de propiedades descriptivas
@@ -2615,7 +2615,7 @@
                           items:
                             - name: Propiedad Name
                               href: name-property.md
-                            - name: Role (propiedad)
+                            - name: Propiedad Role
                               href: role-property.md
                             - name: Propiedad State
                               href: state-property.md
@@ -2627,23 +2627,23 @@
                               href: help-property.md
                             - name: Propiedad HelpTopic
                               href: helptopic-property.md
-                            - name: Propiedad KeyboardShortcut
+                            - name: KeyboardShortcut (propiedad)
                               href: keyboardshortcut-property.md
                             - name: Propiedad DefaultAction
                               href: defaultaction-property.md
-                        - name: Propiedades y métodos de selección y foco
+                        - name: Métodos y propiedades de selección y foco
                           href: selection-and-focus-properties-and-methods.md
                           items:
-                            - name: Seleccionar objetos secundarios
+                            - name: Selección de objetos secundarios
                               href: selecting-child-objects.md
-                        - name: Métodos y propiedades de navegación de objetos
+                        - name: Propiedades y métodos de navegación de objetos
                           href: object-navigation-properties-and-methods.md
                           items:
                             - name: Navegación jerárquica
                               href: hierarchical-navigation.md
                             - name: Navegación espacial y lógica
                               href: spatial-and-logical-navigation.md
-                            - name: Navegación a través de la prueba de posicionamiento y la ubicación de la pantalla
+                            - name: Navegación a través de las pruebas de impacto y la ubicación de la pantalla
                               href: navigation-through-hit-testing-and-screen-location.md
                     - name: API de anotación dinámica
                       href: dynamic-annotation-api.md
@@ -2657,19 +2657,19 @@
                         - name: Anotación directa
                           href: direct-annotation.md
                           items:
-                            - name: Usar la anotación directa
+                            - name: Usar anotación directa
                               href: using-direct-annotation.md
-                        - name: Anotación de asignación de valores
+                        - name: Anotación de mapa de valores
                           href: value-map-annotation.md
                           items:
-                            - name: Usar anotación de asignación de valores
+                            - name: Usar anotación de mapa de valores
                               href: using-value-map-annotation.md
                             - name: Ejemplo de anotación de mapa de valores
                               href: value-map-annotation-sample.md
-                        - name: Anotación de servidor
+                        - name: Anotación del servidor
                           href: server-annotation.md
                           items:
-                            - name: Usar la anotación del servidor
+                            - name: Usar anotación de servidor
                               href: using-server-annotation.md
                             - name: Ejemplo de anotación de servidor
                               href: server-annotation-sample.md
@@ -2680,28 +2680,28 @@
                               href: scope-and-longevity-of-identity-string.md
                             - name: Varias anotaciones en un único elemento accesible
                               href: multiple-annotations-on-a-single-accessible-element.md
-                            - name: Propiedades de anotación que tienen el WinEvents correspondiente
+                            - name: Propiedades de anotación que tienen winEvents correspondientes
                               href: annotation-properties-that-have-corresponding-winevents.md
                             - name: Interacción con WinEvents
                               href: interaction-with-winevents.md
-                            - name: Compatibilidad con IAccessible nativo
+                            - name: Compatibilidad nativa con IAccessible
                               href: native-iaccessible-support.md
-                            - name: Compatibilidad con In-Process
+                            - name: In-Process compatibilidad
                               href: in-process-support.md
-                - name: Llamar a Active Accessibility API
+                - name: Llamada a Active Accessibility API
                   href: calling-active-accessibility-apis.md
-                - name: Guía del desarrollador para clientes de Active Accessibility
+                - name: Guía del desarrollador para clientes Active Accessibility desarrolladores
                   href: developer-s-guide-for-active-accessibility-clients.md
                   items:
                     - name: Obtener un puntero de interfaz de objeto accesible
                       href: getting-an-accessible-object-interface-pointer.md
-                    - name: Comprobar los valores devueltos de IAccessible
+                    - name: Comprobación de valores devueltos de IAccessible
                       href: checking-iaccessible-return-values.md
-                    - name: Recibir errores de punteros de interfaz IAccessible
+                    - name: Recepción de errores para punteros de interfaz IAccessible
                       href: receiving-errors-for-iaccessible-interface-pointers.md
-                    - name: Escalado de pantalla de Active Accessibility y Windows Vista
+                    - name: Active Accessibility y Windows de pantalla de Vista
                       href: active-accessibility-and-windows-vista-screen-scaling.md
-                - name: Guía del desarrollador de servidores de Active Accessibility
+                - name: Guía del desarrollador para servidores Active Accessibility desarrolladores
                   href: developer-s-guide-for-active-accessibility-servers.md
                   items:
                     - name: Crear objetos proxy
@@ -2718,20 +2718,20 @@
                       items:
                         - name: Elegir cuándo crear objetos accesibles
                           href: choosing-when-to-create-accessible-objects.md
-                        - name: Elección de las propiedades que se van a admitir
+                        - name: Elección de las propiedades que se admitirán
                           href: choosing-which-properties-to-support.md
-                        - name: Elección del contenido para propiedades descriptivas
+                        - name: Elegir el contenido para propiedades descriptivas
                           href: choosing-the-content-for-descriptive-properties.md
                         - name: Establecer propiedades para objetos animados o en movimiento
                           href: setting-properties-for-animated-or-moving-objects.md
-                        - name: Generar WinEvents adecuados
+                        - name: Generación de winevents adecuados
                           href: generating-appropriate-winevents.md
-                        - name: Exponer información adicional no incluida en la interfaz IAccessible
+                        - name: Exponer información adicional no cubierta por la interfaz IAccessible
                           href: exposing-additional-information-not-covered-by-iaccessible-interface.md
                           items:
-                            - name: Usar OBJID NATIVEOM para exponer una interfaz nativa para una ventana
+                            - name: Uso de OBJID NATIVEOM para exponer una interfaz nativa para una ventana
                               href: using-objid-nativeom-to-expose-a-native-object-model-interface-for-a-window.md
-                            - name: Usar QueryService para recuperar una interfaz nativa para un objeto IAccessible
+                            - name: Uso de QueryService para recuperar una interfaz nativa para un objeto IAccessible
                               href: using-queryservice-to-expose-a-native-object-model-interface-for-an-iaccessible-object.md
                     - name: Cómo controlar WM_GETOBJECT
                       href: how-to-handle-wm-getobject.md
@@ -2742,24 +2742,24 @@
                           href: reuse-existing-pointers-to-objects.md
                         - name: Crear nuevas interfaces para el mismo objeto
                           href: create-new-interfaces-to-the-same-object.md
-                    - name: Métodos abreviados para exponer elementos de la interfaz de usuario personalizados
+                    - name: Accesos directos para exponer elementos Interfaz de usuario personalizados
                       href: shortcuts-for-exposing-custom-user-interface-elements.md
                       items:
                         - name: Exponer controles basados en controles del sistema
                           href: exposing-controls-based-on-system-controls.md
-                        - name: Etiquetar controles de Owner-Drawn
+                        - name: Etiquetado de Owner-Drawn controles
                           href: labeling-owner-drawn-controls.md
                           items:
-                            - name: Exponer Owner-Drawn elementos de menú
+                            - name: Exposición de Owner-Drawn elementos de menú
                               href: exposing-owner-drawn-menu-items.md
-                            - name: Exponer Owner-Drawn elementos del cuadro de lista
+                            - name: Exposición de Owner-Drawn de cuadro de lista
                               href: exposing-owner-drawn-list-box-items.md
-                            - name: Exponer Owner-Drawn elementos del cuadro combinado
+                            - name: Exponer Owner-Drawn elementos de cuadro combinado
                               href: exposing-owner-drawn-combo-box-items.md
         - name: Referencia de C/C++
           href: c-c---reference.md
           items:
-            - name: Active Accessibility servicios de la interfaz de usuario
+            - name: Active Accessibility Interfaz de usuario Services
               href: active-accessibility-user-interface-services-ref.md
               items:
                 - name: Interfaces
@@ -2942,11 +2942,11 @@
                       href: object-roles.md
                     - name: Constantes de estado de objeto
                       href: object-state-constants.md
-                    - name: Constantes de SELFLAG
+                    - name: Constantes SELF CONSTANT
                       href: selflag.md
                 - name: Valores devueltos
                   href: return-values.md
-            - name: Active Accessibility servicios de texto
+            - name: Active Accessibility Text Services
               href: active-accessibility-text-services.md
               items:
                 - name: IAccServerDocMgr
@@ -3008,29 +3008,29 @@
         - name: Ejemplos
           href: samples.md
           items:
-            - name: Ejemplo de CustomAccServer
+            - name: Ejemplo CustomAccServer
               href: customaccserver-sample.md
         - name: Apéndices
           href: appendixes.md
           items:
-            - name: 'Apéndice A: referencia de elementos de la interfaz de usuario admitidos'
+            - name: 'Apéndice A: Referencia de elementos Interfaz de usuario admitidos'
               href: appendix-a--supported-user-interface-elements-reference.md
               items:
-                - name: Cómo expone Active Accessibility elementos de la interfaz de usuario
+                - name: Cómo Active Accessibility expone Interfaz de usuario elementos
                   href: how-active-accessibility-exposes-user-interface-elements.md
                   items:
-                    - name: Detección de objetos innecesarios
+                    - name: Filtrado de objetos innecesarios
                       href: screening-out-unnecessary-objects.md
                     - name: Proporcionar la propiedad Name
                       href: providing-the-name-property.md
-                    - name: Asegurarse de que los elementos de la interfaz de usuario se denominan correctamente
+                    - name: Asegurarse de que los elementos de la interfaz de usuario tienen el nombre correcto
                       href: ensure-that-ui-elements-are-named-correctly.md
-                    - name: Elementos de la interfaz de usuario no admitidos
+                    - name: Elementos de Interfaz de usuario no admitidos
                       href: unsupported-user-interface-elements.md
-                - name: Referencia de elementos de la interfaz de usuario
+                - name: Interfaz de usuario de elementos
                   href: user-interface-element-reference.md
                   items:
-                    - name: Animation (control)
+                    - name: Control de animación
                       href: animation-control.md
                     - name: Símbolo de intercalación
                       href: caret.md
@@ -3046,31 +3046,31 @@
                       href: desktop-window.md
                     - name: Cuadro de diálogo
                       href: dialog-box.md
-                    - name: Control de edición
+                    - name: Editar control
                       href: edit-control.md
                     - name: Cuadro de grupo
                       href: group-box.md
                     - name: Control de encabezado
                       href: header-control.md
-                    - name: Control de tecla de acceso rápido
+                    - name: Control de tecla de acceso remoto
                       href: hot-key-control.md
                     - name: Cuadro de lista
                       href: list-box.md
-                    - name: Control de vista de lista
+                    - name: Control Vista de lista
                       href: list-view-control.md
-                    - name: Ventana del cliente MDI
+                    - name: Ventana cliente de MDI
                       href: mdi-client-window.md
                     - name: Barra de menús
                       href: menu-bar.md
                     - name: Elemento de menú
                       href: menu-item.md
-                    - name: Month Calendar (control)
+                    - name: Month Calendar Control
                       href: calendar-control.md
                     - name: Menú emergente
                       href: pop-up-menu.md
-                    - name: Control de barra de progreso
+                    - name: Control barra de progreso
                       href: progress-bar-control.md
-                    - name: Botón de reenvío
+                    - name: Botón
                       href: push-button.md
                     - name: Radio Button
                       href: radio-button.md
@@ -3082,44 +3082,44 @@
                       href: slider-control.md
                     - name: Texto estático
                       href: static-text.md
-                    - name: Control de barra de estado
+                    - name: Control barra de estado
                       href: status-bar-control.md
-                    - name: Ventana cambiar
+                    - name: Cambiar ventana
                       href: switch-window.md
-                    - name: Control de pestaña
+                    - name: Control de pestañas
                       href: tab-control.md
                     - name: Barra de título
                       href: title-bar.md
-                    - name: Toolbar (control)
+                    - name: Control de barra de herramientas
                       href: toolbar-control.md
-                    - name: Control ToolTip
+                    - name: Control de información sobre herramientas
                       href: tooltip-control.md
-                    - name: Control de vista de árbol
+                    - name: Control Vista de árbol
                       href: tree-view-control.md
-                    - name: Control de Up-Down
+                    - name: Up-Down control
                       href: up-down-control.md
                     - name: Periodo
                       href: window.md
                     - name: Otros roles de objeto y métodos admitidos
                       href: other-object-roles-and-supported-methods.md
-            - name: 'Apéndice B: compatibilidad con el administrador de cuadros de diálogo estándar'
+            - name: 'Apéndice B: Compatibilidad con el Administrador de diálogos estándar'
               href: appendix-b--standard-dialog-manager-support.md
-            - name: 'Apéndice C: desspid de IAccessible'
+            - name: 'Apéndice C: IAccessible DISPIDs'
               href: appendix-c--iaccessible-dispids.md
-            - name: 'Apéndice D: notas para desarrolladores de Visual Basic'
+            - name: 'Apéndice D: Notas para Visual Basic desarrolladores'
               href: appendix-d--notes-for-visual-basic-developers.md
               items:
-                - name: 'Notas del método Visual Basic: accName'
+                - name: 'Visual Basic Notas del método: accName'
                   href: visual-basic-method-notes--accname.md
-                - name: 'Notas del método Visual Basic: accValue'
+                - name: 'Visual Basic Notas del método: accValue'
                   href: visual-basic-method-notes--accvalue.md
-                - name: Visual Basic programas de ejemplo
+                - name: Visual Basic Programas de ejemplo
                   href: visual-basic-sample-programs.md
-            - name: 'Apéndice E: atributos de texto para Active Accessibility Diccionario de servicios de texto'
+            - name: 'Apéndice E: Atributos de texto para el diccionario Active Accessibility Text Services'
               href: appendix-e--text-attributes-for-active-accessibility-text-services-dictionary.md
-            - name: 'Apéndice F: valores de identificador de objeto para OBJID_QUERYCLASSNAMEIDX'
+            - name: 'Apéndice F: Valores de identificador de objeto para OBJID_QUERYCLASSNAMEIDX'
               href: appendix-f--object-identifier-values-for-objid-queryclassnameidx.md
-            - name: 'Apéndice G: Active Accessibility Bridge a la automatización de la interfaz de usuario'
+            - name: 'Apéndice G: Active Accessibility Bridge to Automatización de la interfaz de usuario'
               href: appendix-g--active-accessibility-bridge-to-ui-automation.md
     - name: API de ampliación
       href: magapi/entry-magapi-sdk.md
@@ -3129,35 +3129,35 @@
         - name: WinEvents
           href: winevents-infrastructure.md
           items:
-            - name: ¿Qué son los WinEvents?
+            - name: ¿Qué son los winevents?
               href: what-are-winevents.md
             - name: Registro de una función de enlace
               href: registering-a-hook-function.md
-            - name: Eventos System-Level y Object-Level
+            - name: System-Level y Object-Level eventos
               href: system-level-and-object-level-events.md
-            - name: Funciones de enlace de In-Context y fuera de contexto
+            - name: In-Context y funciones de enlace fuera de contexto
               href: in-context-and-out-of-context-hook-functions.md
               items:
-                - name: In-Context funciones de enlace
+                - name: In-Context de enlace de datos
                   href: in-context-hook-functions.md
-                - name: Precauciones de la función de enlace de In-Context
+                - name: In-Context de la función de enlace de enlace
                   href: in-context-hook-function-precautions.md
                 - name: Funciones de enlace fuera de contexto
                   href: out-of-context-hook-functions.md
-            - name: Protección contra reentrada en funciones de enlace
+            - name: Protección contra la reenencia en funciones de enlace
               href: guarding-against-reentrancy-in-hook-functions.md
-            - name: Asignación de identificadores de WinEvent
+            - name: Asignación de los iDs de WinEvent
               href: allocation-of-winevent-ids.md
-        - name: El mensaje WM_GETOBJECT
+        - name: El WM_GETOBJECT mensaje
           href: the-wm-getobject-message.md
           items:
-            - name: Controlar el mensaje de WM_GETOBJECT
+            - name: Control del WM_GETOBJECT mensaje
               href: handling-the-wm-getobject-message.md
-            - name: Cuándo responder al mensaje de WM_GETOBJECT
+            - name: Cuándo responder al mensaje WM_GETOBJECT mensaje
               href: when-to-respond-to-the-wm-getobject-message.md
-            - name: Exponer una interfaz del modelo de objetos nativos
+            - name: Exponer una interfaz de modelo de objetos nativos
               href: exposing-a-native-object-model-interface.md
-            - name: Identificador del objeto OBJID_QUERYCLASSNAMEIDX
+            - name: Identificador OBJID_QUERYCLASSNAMEIDX objeto
               href: the-objid-queryclassnameidx-object-identifier.md
         - name: Anotación dinámica
           href: dynamic-annotation-common.md
@@ -3168,44 +3168,44 @@
               href: iaccessibleex-implementation-guidelines.md
             - name: Implementación de IAccessibleEx para proveedores
               href: implementing-iaccessibleex-for-providers.md
-            - name: Usar IAccessibleEx desde un cliente
+            - name: Uso de IAccessibleEx desde un cliente
               href: using-iaccessibleex-from-a-client.md
-        - name: Accesibilidad de controles ActiveX sin ventanas
+        - name: Accesibilidad del control ActiveX sin ventanas
           href: windowless-activex-control-accessibility.md
           items:
-            - name: Cómo usar la automatización de la interfaz de usuario para hacer que un control ActiveX sin ventanas sea accesible
+            - name: Cómo usar Automatización de la interfaz de usuario para que un control de ActiveX sin ventanas sea accesible
               href: use-ui-automation-to-make-an-windowless-activex-control-accessible.md
-            - name: Usar MSAA para hacer que un control ActiveX sin ventanas sea accesible
+            - name: Uso de MSAA para hacer que un control de ActiveX sin ventanas sea accesible
               href: use-msaa-to-make-an-windowless-activex-control-accessible.md
-            - name: Hospedar un control ActiveX sin ventanas de automatización de la interfaz de usuario
+            - name: Hospedar un control Automatización de la interfaz de usuario sin ActiveX ventana
               href: host-a-ui-automation-windowless-activex-control.md
-            - name: Cómo hospedar un control ActiveX sin ventanas de MSAA
+            - name: Cómo hospedar un control de ActiveX sin ventanas de MSAA
               href: host-an-msaa-windowless-activex-control.md
-- name: Prácticas recomendadas de accesibilidad
+- name: Procedimientos recomendados de accesibilidad
   href: accessibility-best-practices.md
-- name: Herramientas de prueba de accesibilidad
+- name: Herramientas de pruebas de accesibilidad
   href: testing-tools.md
   items:
-    - name: AccEvent (monitor de eventos accesibles)
+    - name: AccEvent (Accesible Event Watcher)
       href: accessible-event-watcher.md
     - name: Inspeccionar
       href: inspect-objects.md
     - name: AccScope
       href: accscope.md
-    - name: AccChecker (comprobador de accesibilidad de IU)
+    - name: AccChecker (Comprobador de accesibilidad de la interfaz de usuario)
       href: ui-accessibility-checker.md
       items:
         - name: Pruebas con AccChecker
           href: testing-with-accchecker.md
-        - name: La interfaz gráfica de usuario de AccChecker
+        - name: El gráfico AccChecker Interfaz de usuario
           href: the-accchecker-graphical-user-interface.md
         - name: La consola de AccChecker
           href: the-accchecker-console.md
-        - name: La API de AccChecker
+        - name: The AccChecker API
           href: the-accchecker-api.md
         - name: Rutinas de comprobación
           href: verification-routines.md
-        - name: Rutinas de comprobación personalizadas
+        - name: Rutinas de verificación personalizadas
           href: custom-verification-routines.md
         - name: Mensajes de registro de comprobación
           href: verification-log-messages.md
@@ -3226,27 +3226,27 @@
               href: accnavigate-returnedelementwithincorrectparent.md
             - name: AppearsToNotSupportTabbing
               href: appearstonotsupporttabbing.md
-            - name: Error de tabIndex del contenedor de ARIA
+            - name: Error de tabindex del contenedor de ARIA
               href: aria-container-tabindex.md
-            - name: Error de accesibilidad de teclado del rol de contenedor de ARIA
+            - name: Error de accesibilidad del teclado del rol de contenedor ARIA
               href: aria-container-keyboard-events.md
-            - name: Error de tabIndex del rol de contenedor de ARIA (sin activos descendientes)
+            - name: Error de tabindex del rol de contenedor ARIA (sin descendiente activo)
               href: aria-container--no-active-descendant--tabindex.md
-            - name: Rol de contenedor de ARIA (sin descendientes activo) error de accesibilidad de teclado
+            - name: Error de accesibilidad del teclado del rol de contenedor ARIA (sin descendiente activo)
               href: aria-container--no-active-descendants--keyboard-events.md
             - name: Error de rol de contenedor de ARIA
               href: aria-container-role.md
-            - name: Error de la tabla de datos ARIA
+            - name: Error de tabla de datos de ARIA
               href: aria-table-name-and-header.md
-            - name: ADVERTENCIA de la tabla de datos ARIA
+            - name: Advertencia de la tabla de datos ARIA
               href: aria-data-table-description.md
-            - name: Error de estructura de cuadrícula ARIA
+            - name: Error de estructura de cuadrícula de ARIA
               href: aria-grid-structure.md
-            - name: Error de etiqueta ARIA
+            - name: Error de etiqueta de ARIA
               href: aria-label.md
             - name: Error de tabla de presentación de ARIA
               href: aria-layout-table.md
-            - name: Faltan atributos de control de intervalo ARIA
+            - name: Faltan atributos de control de intervalo de ARIA
               href: aria-range-control-attributes-missing.md
             - name: Atributos de control de intervalo de ARIA incompatibles
               href: aria-range-control-attribute-out-of-range.md
@@ -3254,7 +3254,7 @@
               href: aria-role-invalid.md
             - name: Error de rol de ARIA para elementos con controladores de eventos
               href: aria-role-missing.md
-            - name: Error de TabIndex de ARIA
+            - name: ARIA Tabindex Error
               href: aria-click-tabindex.md
             - name: BoundingRectIsIncorrect
               href: boundingrectisincorrect.md
@@ -3262,7 +3262,7 @@
               href: boundingrectnothittestable.md
             - name: CheckTreeDepth
               href: checktreedepth.md
-            - name: ControlShouldHaveValue
+            - name: ControlShouldValue
               href: controlshouldhavevalue.md
             - name: ControlTypeNoExpectedPatternsSupported
               href: controltypenoexpectedpatternssupported.md
@@ -3270,9 +3270,9 @@
               href: controltyperequiredpatternnotsupported.md
             - name: CustomControlTypeWithoutLocalizedControlType
               href: customcontroltypewithoutlocalizedcontroltype.md
-            - name: Los elementos DragPattern/DragDropPattern requieren el nombre
+            - name: Los elementos DragPattern/DragDropPattern requieren Name
               href: dragpattern-dragdroppattern-elements-requires-name-.md
-            - name: Los elementos DragPattern/DragDropPattern requieren DropEffect válido
+            - name: Los elementos DragPattern/DragDropPattern requieren dropEffect válido
               href: dragpattern-dragdroppattern-elements-requires-valid-dropeffect.md
             - name: DuplicateAccessKey
               href: duplicateaccesskey.md
@@ -3352,16 +3352,16 @@
               href: variantnotint.md
             - name: VariantNotInt (CheckState)
               href: variantnotint--checkstate-.md
-    - name: Comprobación de automatización de la interfaz de usuario (comprobar UIA)
+    - name: Automatización de la interfaz de usuario Verify (UIA Verify)
       href: ui-automation-verify.md
       items:
-        - name: Biblioteca de pruebas de automatización de la interfaz de usuario
+        - name: Automatización de la interfaz de usuario de pruebas
           href: ui-automation-test-library.md
-        - name: Comprobación de automatización de la interfaz de usuario visual
+        - name: Comprobación de Automatización de la interfaz de usuario visual
           href: visual-ui-automation-verify.md
 - name: Consideraciones de seguridad para las tecnologías de asistencia
   href: uiauto-securityoverview.md
-- name: 'Facilidad de acceso: registro de tecnología de asistencia'
+- name: 'Accesibilidad: registro de tecnología de asistencia'
   href: ease-of-access---assistive-technology-registration.md
 - name: glosario
   href: uiauto-glossary.md

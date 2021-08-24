@@ -1,9 +1,9 @@
 ---
-title: BUTTON. downToolTip
-description: El atributo downToolTip especifica o recupera el texto de información sobre herramientas que aparece cuando el mouse está sobre el botón y el botón está en estado desactivado.
+title: BUTTON.downToolTip
+description: El atributo downToolTip especifica o recupera el texto de la información sobre herramientas que aparece cuando el mouse está sobre button y el botón está en estado de bajada.
 ms.assetid: 53a13aaf-34c8-4730-98b7-c9c3a4b64721
 keywords:
-- BUTTON. downToolTip Windows Media Player
+- Button.downToolTip Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 22f487c470f612a30919d2dae006f2ccbe64f26c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c32ad6138f0442fdcb4c76b0f50bb75158410cd2980cc32d4b6774a2cec18320
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119417275"
 ---
-# <a name="buttondowntooltip"></a>BUTTON. downToolTip
+# <a name="buttondowntooltip"></a>BUTTON.downToolTip
 
-El atributo **downToolTip** especifica o recupera el texto de información sobre herramientas que aparece cuando el mouse está sobre el **botón** y el **botón** está en estado desactivado.
+El **atributo downToolTip** especifica o recupera el texto de la información sobre herramientas que aparece cuando el mouse está sobre **button** y **el botón** está en estado de bajada.
 
 ``` syntax
         elementID.downToolTip
@@ -29,11 +29,11 @@ El atributo **downToolTip** especifica o recupera el texto de información sobre
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura con un valor predeterminado de "" (cadena vacía) y una longitud máxima de 1024 caracteres.
+Este atributo es una cadena de lectura y **escritura** con un valor predeterminado de "" (cadena vacía) y una longitud máxima de 1024 caracteres.
 
 ## <a name="remarks"></a>Observaciones
 
-Cuando este atributo se establece en "" (cadena vacía), no se muestra ninguna información sobre herramientas.
+Cuando este atributo se establece en "" (cadena vacía), no se muestra información sobre herramientas.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,7 +41,7 @@ Cuando este atributo se establece en "" (cadena vacía), no se muestra ninguna i
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -52,7 +52,7 @@ Cuando este atributo se establece en "" (cadena vacía), no se muestra ninguna i
 [**Elemento BUTTON**](button-element.md)
 </dt> <dt>
 
-[**BOTÓN. abajo**](button-down.md)
+[**BUTTON.down**](button-down.md)
 </dt> </dl>
 
  

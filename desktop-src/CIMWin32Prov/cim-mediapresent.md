@@ -1,8 +1,8 @@
 ---
-description: La \_ Asociación MediaPresent de CIM describe una relación en la que se debe tener acceso a una extensión de almacenamiento a través de un dispositivo de acceso a medios.
+description: La asociación CIM MediaPresent describe una relación en la que se debe acceder a una extensión de almacenamiento \_ a través de un dispositivo de acceso multimedia.
 ms.assetid: 84c4931c-1dc6-4fc1-b3b9-8252ecb627f5
 ms.tgt_platform: multiple
-title: CIM_MediaPresent (clase) (proveedores WMI de CIMWin32)
+title: CIM_MediaPresent clase (proveedores WMI CIMWin32)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: d033871a77a0433292c4a2ca1fae185df6aa5015
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: fb23d535c2bb189292281464e35897c5a877d467aac595ab18b3ef4f91d5e6e6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "103914158"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119507055"
 ---
-# <a name="cim_mediapresent-class-cimwin32-wmi-providers"></a>CIM_MediaPresent (clase) (proveedores WMI de CIMWin32)
+# <a name="cim_mediapresent-class-cimwin32-wmi-providers"></a>CIM_MediaPresent clase (proveedores WMI CIMWin32)
 
-La **Asociación \_ MediaPresent de CIM** describe una relación en la que se debe tener acceso a una extensión de almacenamiento a través de un dispositivo de acceso a medios.
+La **\_ asociación CIM MediaPresent** describe una relación en la que se debe acceder a una extensión de almacenamiento a través de un dispositivo de acceso multimedia.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -47,13 +47,13 @@ class CIM_MediaPresent : CIM_Dependency
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ MediaPresent** tiene estos tipos de miembros:
+La **clase \_ CIM MediaPresent** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ MediaPresent** tiene estas propiedades.
+La **clase \_ CIM MediaPresent** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -66,47 +66,47 @@ Tipo de datos: **CIM \_ MediaAccessDevice**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente")
 </dt> </dl>
 
-Un [**\_ MediaAccessDevice de CIM**](cim-mediaaccessdevice.md) que describe el dispositivo de acceso a medios.
+Cim [**\_ MediaAccessDevice**](cim-mediaaccessdevice.md) que describe el dispositivo de acceso multimedia.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **CIM \_ StorageExtent**
+Tipo de datos: **Cim \_ StorageExtent**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependiente")
+Calificadores: [**Invalidar**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
 </dt> </dl>
 
-Un [**\_ StorageExtent de CIM**](cim-storageextent.md) que describe la extensión de almacenamiento a la que se tiene acceso mediante el dispositivo de acceso a medios.
+[**\_ StorageExtent de CIM**](cim-storageextent.md) que describe la extensión de almacenamiento a la que se accede mediante el dispositivo de acceso multimedia.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase **CIM \_ MediaPresent** se deriva de [**la \_ dependencia CIM**](cim-dependency.md).
+La **clase \_ CIM MediaPresent** se deriva de [**la dependencia \_ CIM**](cim-dependency.md).
 
-WMI no implementa esta clase. Para las clases derivadas de **CIM \_ MediaPresent**, vea [clases Win32](win32-provider.md).
+WMI no implementa esta clase. Para las clases derivadas de **CIM \_ MediaPresent,** vea [Clases win32.](win32-provider.md)
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -115,7 +115,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[**Dependencia de CIM \_**](cim-dependency.md)
+[**Dependencia \_ cim**](cim-dependency.md)
 </dt> </dl>
 
  

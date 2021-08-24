@@ -1,7 +1,7 @@
 ---
-description: Recupera el tamaño total de los datos en el búfer.
+description: Recupera el tamaño total de los datos del búfer.
 ms.assetid: f26792bc-381b-4ee1-b7d2-2007790fc046
-title: 'ID3DXBuffer:: GetBufferSize (método) (D3DX9Mesh. h)'
+title: Método ID3DXBuffer::GetBufferSize (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: be8b427e59ac520a89877d7097cc5066633f6259
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d935321516dd0a05407b70aaa24acacec6f940b9f15c2d4c3d711129cfe7f472
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104083738"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119459915"
 ---
-# <a name="id3dxbuffergetbuffersize-method"></a>ID3DXBuffer:: GetBufferSize (método)
+# <a name="id3dxbuffergetbuffersize-method"></a>Método ID3DXBuffer::GetBufferSize
 
-Recupera el tamaño total de los datos en el búfer.
+Recupera el tamaño total de los datos del búfer.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Devuelve el tamaño total de los datos en el búfer, en bytes.
+Devuelve el tamaño total de los datos del búfer, en bytes.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve el tamaño total de los datos en el búfer, en bytes.
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

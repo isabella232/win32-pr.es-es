@@ -1,6 +1,6 @@
 ---
-title: DeducingStringGetter (D2d1effecthelpers. h)
-description: Deduce la clase y los argumentos y, a continuación, llama a una devolución de llamada del captador de propiedad de función miembro para una propiedad de tipo cadena.
+title: DeducingStringGetter (D2d1effecthelpers.h)
+description: Deduce la clase y los argumentos y, a continuación, llama a una devolución de llamada del getter de la propiedad member-function para una propiedad de tipo cadena.
 ms.assetid: 434E3360-D6C3-46CB-818E-15A185F4BB84
 keywords:
 - DeducingStringGetter Direct2D
@@ -14,19 +14,19 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ac65b9e5d7e37e2db83f06f80172e90f9f27f80b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c99e23a2f79f38527dfae76c74e5e2ad8b828dce1a0ff984f622bd95fd287c97
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660701"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119342965"
 ---
 # <a name="deducingstringgetter"></a>DeducingStringGetter
 
-Deduce la clase y los argumentos y, a continuación, llama a una devolución de llamada del captador de propiedad de función miembro para una propiedad de tipo cadena.
+Deduce la clase y los argumentos y, a continuación, llama a una devolución de llamada del getter de la propiedad member-function para una propiedad de tipo cadena.
 
 > [!Note]  
-> No se debe llamar a DeducingStringGetter directamente.
+> No se debe llamar directamente a DeducingStringGetter.
 
  
 
@@ -47,7 +47,7 @@ HRESULT DeducingStringGetter(
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D2d1effecthelpers. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D2d1effecthelpers.h</dt> </dl> |
 
 
 

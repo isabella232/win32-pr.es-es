@@ -1,11 +1,11 @@
 ---
-title: atributo de clase MS-WMI
-description: El nombre de un objeto de clase WMI en una codificación asociada (por ejemplo, Win32 \_ ComputerSystem). La codificación puede ser una instancia o un objeto de clase.
+title: Atributo ms-WMI-Class
+description: Nombre de un objeto de clase WMI en una codificación asociada (por ejemplo, Win32 \_ ComputerSystem). La codificación puede ser una instancia o un objeto de clase.
 ms.assetid: a0a4284e-3b52-4597-8656-df2f3297060d
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de clase de MS-WMI
-- 'msWMI: esquema de AD de atributo de clase'
+- Esquema de AD del atributo ms-WMI-Class
+- Esquema de AD del atributo msWMI-Class
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c4e69cd36fa4242203f0b36b8598d22bf96783b8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 70f185781b8ce7e4859cf5daf011713973d41d5e8cbdeb6bd89580e1ed245dd3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151621"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119507825"
 ---
-# <a name="ms-wmi-class-attribute"></a>atributo de clase MS-WMI
+# <a name="ms-wmi-class-attribute"></a>Atributo ms-WMI-Class
 
-El nombre de un objeto de clase WMI en una codificación asociada (por ejemplo, Win32 \_ ComputerSystem). La codificación puede ser una instancia o un objeto de clase.
+Nombre de un objeto de clase WMI en una codificación asociada (por ejemplo, Win32 \_ ComputerSystem). La codificación puede ser una instancia o un objeto de clase.
 
 
 
 | Entrada | Value |
 |-------------------|-----------------------------------------------------------------|
-| CN                | Clase MS-WMI                                                    |
-| Nombre para mostrar de LDAP | Clase msWMI                                                     |
-| Tamaño              | \-                                                              |
-| Actualizar privilegio  | Administrador de dominio                                            |
-| Frecuencia de actualización  | Siempre que se agrega o modifica una clase que contiene el atributo. |
+| CN                | ms-WMI-Class                                                    |
+| Ldap-Display-Name | msWMI-Class                                                     |
+| Size              | \-                                                              |
+| Privilegio actualizar  | Administrador de dominio                                            |
+| Frecuencia de actualización  | Cada vez que se agrega o modifica una clase que contiene el atributo. |
 | Attribute-Id      | 1.2.840.113556.1.4.1676                                         |
-| System-ID-GUID    | 90c1925f-4a24-4b07-b202-be32eb3c8b74                            |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                     |
+| System-Id-Guid    | 90c1925f-4a24-4b07-b202-be32eb3c8b74                            |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                     |
 
 
 
@@ -54,18 +54,18 @@ El nombre de un objeto de clase WMI en una codificación asociada (por ejemplo, 
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
+| Clases usadas en        | [**ms-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
 
 
 
@@ -75,18 +75,18 @@ El nombre de un objeto de clase WMI en una codificación asociada (por ejemplo, 
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
+| Clases usadas en        | [**ms-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
 
 
 
@@ -96,18 +96,18 @@ El nombre de un objeto de clase WMI en una codificación asociada (por ejemplo, 
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
+| Clases usadas en        | [**ms-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
 
 
 
@@ -117,18 +117,18 @@ El nombre de un objeto de clase WMI en una codificación asociada (por ejemplo, 
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
+| Clases usadas en        | [**ms-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
 
 
 
@@ -138,18 +138,18 @@ El nombre de un objeto de clase WMI en una codificación asociada (por ejemplo, 
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
+| Clases usadas en        | [**ms-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
 
 
 

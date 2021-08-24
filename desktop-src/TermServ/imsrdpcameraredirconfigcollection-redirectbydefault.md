@@ -3,9 +3,9 @@ title: Propiedad RedirectByDefault de la interfaz IMsRdpCameraRedirConfigCollect
 description: Especifica si cualquier cámara nueva se redirige de forma predeterminada.
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad RedirectByDefault
-- Propiedad RedirectByDefault Servicios de Escritorio remoto, interfaz IMsRdpCameraRedirConfigCollection
-- Servicios de Escritorio remoto de la interfaz IMsRdpCameraRedirConfigCollection, propiedad RedirectByDefault
+- Propiedad RedirectByDefault Servicios de Escritorio remoto
+- Propiedad RedirectByDefault Servicios de Escritorio remoto , interfaz IMsRdpCameraRedirConfigCollection
+- Interfaz IMsRdpCameraRedirConfigCollection Servicios de Escritorio remoto , propiedad RedirectByDefault
 topic_type:
 - apiref
 api_name:
@@ -18,20 +18,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: 810af200eefee0008aea21af684c02b6d31325eb
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: 8c95431132acf5e3c08ede859520c844c4cae542f6b07dcb8e5781726078e754
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "104151924"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119475875"
 ---
-# <a name="imsrdpcameraredirconfigcollectionredirectbydefault-property"></a>IMsRdpCameraRedirConfigCollection:: RedirectByDefault (propiedad)
+# <a name="imsrdpcameraredirconfigcollectionredirectbydefault-property"></a>IMsRdpCameraRedirConfigCollection::RedirectByDefault, propiedad
 
 Especifica si cualquier cámara nueva se redirige de forma predeterminada.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```C++
 HRESULT put_RedirectByDefault(
@@ -45,7 +45,7 @@ HRESULT get_RedirectByDefault(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Un valor que indica si cualquier cámara nueva se redirige de forma predeterminada.
+Valor que indica si alguna cámara nueva se redirige de forma predeterminada.
 
 ## <a name="requirements"></a>Requisitos
 

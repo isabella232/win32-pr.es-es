@@ -1,17 +1,17 @@
 ---
-title: Crear una tabla de función virtual para un controlador de flujo
-description: Crear una tabla de función virtual para un controlador de flujo
+title: Crear una tabla de funciones virtuales para un controlador de secuencias
+description: Crear una tabla de funciones virtuales para un controlador de secuencias
 ms.assetid: 8f43b0d4-6710-4175-8da0-aafd6b6d753a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 98c6398c34182218b902f276f98e513ce296f394
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a8281cee5a385a6a37e03e657facf4790fed504b18e38fb7b1825a2dce5690fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075444"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144728"
 ---
-# <a name="creating-a-virtual-function-table-for-a-stream-handler"></a>Crear una tabla de función virtual para un controlador de flujo
+# <a name="creating-a-virtual-function-table-for-a-stream-handler"></a>Crear una tabla de funciones virtuales para un controlador de secuencias
 
 En el ejemplo siguiente (escrito en C) se muestra cómo una aplicación (AVIBall) crea la tabla de funciones virtuales que se usa para hacer referencia a sus servicios.
 
@@ -62,11 +62,11 @@ IAVIStreamVtbl AVIBallHandler = {
 
 
 
-Los controladores de archivos usan un procedimiento similar, salvo que usan una definición diferente para la tabla de función virtual.
+Los controladores de archivos usan un procedimiento similar, salvo que usan una definición diferente para la tabla de funciones virtuales.
 
- 
+ 
 
- 
+ 
 
 
 

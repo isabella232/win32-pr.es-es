@@ -3,7 +3,7 @@ title: Elemento Data (comHandlerType)
 description: Especifica datos adicionales asociados al controlador.
 ms.assetid: 352cb92b-54bb-4bb0-8a43-123c88c80962
 keywords:
-- Programador de tareas de elementos de datos
+- Elemento data Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d009005dc2bb889c8bd9e34e84d853665310330a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 649cadf0fc10919902e65ce82df1b410708d74a9db8dd3638c6fb22753aa557a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996846"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119334595"
 ---
 # <a name="data-comhandlertype-element"></a>Elemento Data (comHandlerType)
 
@@ -30,7 +30,7 @@ Especifica datos adicionales asociados al controlador.
  />
 ```
 
-El elemento de **datos** se define mediante el tipo complejo de [**comHandlerType**](taskschedulerschema-comhandlertype-complextype.md) .
+El **tipo** complejo [**comHandlerType**](taskschedulerschema-comhandlertype-complextype.md) define el elemento Data.
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -38,30 +38,30 @@ El elemento de **datos** se define mediante el tipo complejo de [**comHandlerTyp
 
 | Elemento                                                                  | Derivado de                                                             | Descripción                                          |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------|------------------------------------------------------|
-| [**Controlador**](taskschedulerschema-comhandler-actiongroup-element.md) | [**comHandlerType**](taskschedulerschema-comhandlertype-complextype.md) | Especifica una acción que activa un controlador.<br/> |
+| [**ComHandler**](taskschedulerschema-comhandler-actiongroup-element.md) | [**comHandlerType**](taskschedulerschema-comhandlertype-complextype.md) | Especifica una acción que llama a un controlador.<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las aplicaciones definen los datos del controlador mediante la propiedad [**Data**](/windows/desktop/api/taskschd/nf-taskschd-icomhandleraction-get_data) de la interfaz [**IComHandlerAction**](/windows/desktop/api/taskschd/nn-taskschd-icomhandleraction) .
+Las aplicaciones definen los datos del controlador mediante [**la propiedad Data**](/windows/desktop/api/taskschd/nf-taskschd-icomhandleraction-get_data) de la interfaz [**IComHandlerAction.**](/windows/desktop/api/taskschd/nn-taskschd-icomhandleraction)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Programador de tareas elementos de esquema](task-scheduler-schema-elements.md)
+[Programador de tareas de esquema](task-scheduler-schema-elements.md)
 </dt> </dl>
 
  

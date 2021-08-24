@@ -1,9 +1,9 @@
 ---
-title: 'Texture2DArray:: GatherRed (S, Float, int, uint) (función)'
-description: 'Devuelve los componentes rojo de los cuatro valores de textura que se utilizarían en una operación de filtrado bilineal, junto con el estado de asignación de mosaicos. | Texture2DArray:: GatherRed (S, Float, int, uint) (función)'
+title: Función Texture2DArray::GatherRed(S,float,int,uint)
+description: Devuelve los componentes rojos de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal, junto con el estado de asignación de mosaicos. | Función Texture2DArray::GatherRed(S,float,int,uint)
 ms.assetid: 9FAFB594-5844-4A2D-9B45-7973B5F85E13
 keywords:
-- GatherRed de función HLSL
+- Función GatherRed HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7fdd250cb25f6085100bb88204cae6e67a3fc0b3
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d9cd35a50c11a4e00e4ba9582ea94be49602ec17c5e2922063a323e16510e010
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103820783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119276445"
 ---
-# <a name="texture2darraygatherredsfloatintuint-function"></a>Texture2DArray:: GatherRed (S, Float, int, uint) (función)
+# <a name="texture2darraygatherredsfloatintuint-function"></a>Función Texture2DArray::GatherRed(S,float,int,uint)
 
-Devuelve los componentes rojo de los cuatro valores de textura que se utilizarían en una operación de filtrado bilineal, junto con el estado de asignación de mosaicos.
+Devuelve los componentes rojos de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal, junto con el estado de asignación de mosaicos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,20 +47,20 @@ TemplateType GatherRed(
 
 Tipo: **SamplerState**
 
-Índice de muestra de base cero.
+Índice de sampler de base cero.
 
 </dd> <dt>
 
-*Ubicación* \[ de de\]
+*Ubicación* \[ En\]
 </dt> <dd>
 
 Tipo: **float**
 
-Coordenadas de ejemplo (u, v).
+Coordenadas de ejemplo (u,v).
 
 </dd> <dt>
 
-*Desplazamiento* \[ de\]
+*Desplazamiento* \[ En\]
 </dt> <dd>
 
 Tipo: **int**
@@ -69,12 +69,12 @@ Desplazamiento aplicado a las coordenadas de textura antes del muestreo.
 
 </dd> <dt>
 
-*Estado* \[ de enuncia\]
+*Estado* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Estado de la operación. No se puede tener acceso directamente al estado. en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped**](checkaccessfullymapped.md) . **CheckAccessFullyMapped** devuelve **true** si todos los valores de la operación de **ejemplo**, **recopilación** o **carga** correspondiente han tenido acceso a los mosaicos asignados en un [recurso en mosaico](/windows/desktop/direct3d11/direct3d-11-2-features). Si se tomó algún valor de un mosaico sin asignar, **CheckAccessFullyMapped** devuelve **false**.
+Estado de la operación. No se puede acceder al estado directamente; en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** devuelve **TRUE** si todos los valores de la operación Sample **,** **Gather** o **Load** correspondientes accedieron a iconos asignados en un recurso [en mosaico.](/windows/desktop/direct3d11/direct3d-11-2-features) Si se tomaron valores de un icono no asociado, **CheckAccessFullyMapped** devuelve **FALSE.**
 
 </dd> </dl>
 
@@ -82,17 +82,17 @@ Estado de la operación. No se puede tener acceso directamente al estado. en su 
 
 Tipo: **TemplateType**
 
-Un valor de cuatro componentes cuyo tipo es el mismo que el tipo de plantilla.
+Valor de cuatro componentes cuyo tipo es el mismo que el tipo de plantilla.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los ejemplos de textura se pueden usar para la interpolación bilineal.
+Las muestras de textura se pueden usar para la interpolación bilineal.
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -100,11 +100,11 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Métodos GatherRed](texture2darray-gatherred.md)
+[Métodos gatherRed](texture2darray-gatherred.md)
 </dt> </dl>
 
  

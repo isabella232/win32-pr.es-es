@@ -1,7 +1,7 @@
 ---
-description: El \_ método put DestinationTop establece la coordenada superior del rectángulo de destino.
+description: El método put \_ DestinationTop establece la coordenada superior del rectángulo de destino.
 ms.assetid: d18996ac-85f2-4778-b0aa-1bc0c4d5f7d9
-title: Método CBaseControlVideo.put_DestinationTop (Ctlutil. h)
+title: CBaseControlVideo.put_DestinationTop método (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c89e4693d424412a43869509e046a5023e76341c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 01820ef8df08d7d4359793a6400f5a5ec23d8b0a1f33f722173c83c705492d29
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660811"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119341736"
 ---
-# <a name="cbasecontrolvideoput_destinationtop-method"></a>CBaseControlVideo. put \_ DestinationTop (método)
+# <a name="cbasecontrolvideoput_destinationtop-method"></a>Método CBaseControlVideo.put \_ DestinationTop
 
 El `put_DestinationTop` método establece la coordenada superior del rectángulo de destino.
 
@@ -51,7 +51,7 @@ Nueva coordenada superior del rectángulo de destino.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** que depende de la implementación; puede ser uno de los valores siguientes u otros valores que no estén en la lista.
+Devuelve un **valor HRESULT** que depende de la implementación; puede ser uno de los siguientes valores u otros valores no enumerados.
 
 
 
@@ -59,17 +59,17 @@ Devuelve un valor **HRESULT** que depende de la implementación; puede ser uno d
 |-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
 | <dl> <dt>**E \_ FAIL**</dt> </dl>                | Error.<br/>                                                              |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>          | Argumento no válido.<br/>                                                     |
-| <dl> <dt>**\_puntero E**</dt> </dl>             | Argumento de puntero **nulo** .<br/>                                            |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>             | **Argumento de** puntero NULL.<br/>                                            |
 | <dl> <dt>**NOERROR**</dt> </dl>                | Correcto.<br/>                                                              |
-| <dl> <dt>**VFW \_ E \_ no \_ conectada**</dt> </dl> | No se puede realizar la operación porque los PIN no están conectados.<br/> |
+| <dl> <dt>**VFW \_ E \_ NO \_ CONECTADO**</dt> </dl> | No se puede realizar la operación porque las clavijas no están conectadas.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una aplicación puede cambiar los rectángulos de origen y de destino para el vídeo a través de la interfaz [**IBasicVideo**](/windows/desktop/api/Control/nn-control-ibasicvideo) . El rectángulo de origen afecta a qué sección del origen de vídeo nativo aparecerá en la pantalla. el rectángulo de destino afecta al lugar en el que aparecerá el vídeo cuando se reproduzca. El rectángulo de destino es relativo al área cliente de la ventana en la que se reproduce. La esquina superior izquierda de la ventana es la coordenada (0,0).
+Una aplicación puede cambiar los rectángulos de origen y destino del vídeo a través de la [**interfaz IBasicVideo.**](/windows/desktop/api/Control/nn-control-ibasicvideo) El rectángulo de origen afecta a la sección del origen de vídeo nativo que aparecerá en la pantalla; el rectángulo de destino afecta a dónde aparecerá el vídeo cuando se reproduce. El rectángulo de destino es relativo al área de cliente de la ventana en la que se reproduce. La esquina superior izquierda de la ventana es coordenada (0,0).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -77,8 +77,8 @@ Una aplicación puede cambiar los rectángulos de origen y de destino para el v�
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -86,7 +86,7 @@ Una aplicación puede cambiar los rectángulos de origen y de destino para el v�
 
 <dl> <dt>
 
-[**Clase CBaseControlVideo**](cbasecontrolvideo.md)
+[**CBaseControlVideo (clase)**](cbasecontrolvideo.md)
 </dt> </dl>
 
  

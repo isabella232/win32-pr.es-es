@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TB_SETINSERTMARKCOLOR (commctrl. h)
+title: TB_SETINSERTMARKCOLOR mensaje (Commctrl.h)
 description: Establece el color utilizado para dibujar la marca de inserción de la barra de herramientas.
 ms.assetid: 09a04449-9a1f-4f9a-b09f-9f22f930d735
 keywords:
-- TB_SETINSERTMARKCOLOR controles de mensajes de Windows
+- TB_SETINSERTMARKCOLOR controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 954654d71a3e3b7bba9af287d3e92fb2362e8711
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 466c9bfe27462b11cc0c6cf3a183328ddedb1b422b4d0c07b4496c7a90f83890
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104149886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119540045"
 ---
-# <a name="tb_setinsertmarkcolor-message"></a>\_Mensaje SETINSERTMARKCOLOR TB
+# <a name="tb_setinsertmarkcolor-message"></a>Mensaje \_ TB SETINSERTMARKCOLOR
 
 Establece el color utilizado para dibujar la marca de inserción de la barra de herramientas.
 
@@ -35,23 +35,23 @@ Establece el color utilizado para dibujar la marca de inserción de la barra de 
 *lParam* 
 </dt> <dd>
 
-Valor de **COLORREF** que contiene el nuevo color de la marca de inserción.
+**Valor COLORREF** que contiene el nuevo color de la marca de inserción.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de **COLORREF** que contiene el color anterior de la marca de inserción.
+Devuelve un **valor COLORREF** que contiene el color de la marca de inserción anterior.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
