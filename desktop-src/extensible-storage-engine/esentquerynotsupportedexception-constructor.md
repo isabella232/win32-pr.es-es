@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentQueryNotSupportedException'
-title: Constructor de EsentQueryNotSupportedException
+description: 'Más información sobre: Constructor EsentQueryNotSupportedException'
+title: Constructor EsentQueryNotSupportedException
 TOCTitle: 'EsentQueryNotSupportedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentQueryNotSupportedException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentquerynotsupportedexception.esentquerynotsupportedexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8ae84639cdcd0205c00c5412bac5f3c55b17b96f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fb0bc04ae000f1f1aaeb24ed9db0d8f426da5f9bf047925291e0e724aac51880
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706539"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119722375"
 ---
-# <a name="esentquerynotsupportedexception-constructor"></a>Constructor de EsentQueryNotSupportedException
+# <a name="esentquerynotsupportedexception-constructor"></a>Constructor EsentQueryNotSupportedException
 
 Inicializa una nueva instancia de la clase EsentQueryNotSupportedException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentQueryNotSupportedException()
 public EsentQueryNotSupportedException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentQueryNotSupportedException()
 
 [Miembros de EsentQueryNotSupportedException](./esentquerynotsupportedexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

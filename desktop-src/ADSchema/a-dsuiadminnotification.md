@@ -1,11 +1,11 @@
 ---
-title: Atributo DS-UI-admin-Notification
-description: Esta es una lista de los GUID de los objetos COM que admiten una interfaz de devolución de llamada a la que el DSAdmin llama cuando se ha producido una acción en un objeto a través de la interfaz de usuario.
+title: Atributo DS-UI-Admin-Notification
+description: Esta es una lista de los GUID de objetos COM que admiten una interfaz de devolución de llamada a la que DSAdmin llama cuando se ha producido una acción en un objeto a través de la interfaz de usuario.
 ms.assetid: 4845c221-087f-49f5-a95d-71f58a4e8819
 ms.tgt_platform: multiple
 keywords:
-- DS-UI-admin-esquema de AD de atributo de notificación
-- dSUIAdminNotification esquema de AD de atributos
+- Esquema de AD del atributo DS-UI-Admin-Notification
+- Esquema de AD del atributo dSUIAdminNotification
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7082d7a8fd751fa001ac796d2a86b60a28463e8b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c2465796ed1e0069206539a5d4b6b17080e5f751f5c9b79198c668316c6dec26
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658546"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119656565"
 ---
-# <a name="ds-ui-admin-notification-attribute"></a>Atributo DS-UI-admin-Notification
+# <a name="ds-ui-admin-notification-attribute"></a>Atributo DS-UI-Admin-Notification
 
-Esta es una lista de los GUID de los objetos COM que admiten una interfaz de devolución de llamada a la que el DSAdmin llama cuando se ha producido una acción en un objeto a través de la interfaz de usuario.
+Esta es una lista de los GUID de objetos COM que admiten una interfaz de devolución de llamada a la que DSAdmin llama cuando se ha producido una acción en un objeto a través de la interfaz de usuario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | DS-UI-admin-Notification                    |
-| Nombre para mostrar de LDAP | dSUIAdminNotification                       |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | Administrador de dominio                        |
+| CN                | DS-UI-Admin-Notification                    |
+| Ldap-Display-Name | dSUIAdminNotification                       |
+| Size              | \-                                          |
+| Privilegio actualizar  | Administrador de dominio                        |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1343                     |
-| System-ID-GUID    | f6ea0a94-6f91-11d2-9905-0000f87a57d4        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | f6ea0a94-6f91-11d2-9905-0000f87a57d4        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,18 +55,18 @@ Esta es una lista de los GUID de los objetos COM que admiten una interfaz de dev
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**DS-UI-configuración**](c-dsuisettings.md)<br/> |
+| Clases usadas en        | [**DS-UI-Configuración**](c-dsuisettings.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ Esta es una lista de los GUID de los objetos COM que admiten una interfaz de dev
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**DS-UI-configuración**](c-dsuisettings.md)<br/> |
+| Clases usadas en        | [**DS-UI-Configuración**](c-dsuisettings.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ Esta es una lista de los GUID de los objetos COM que admiten una interfaz de dev
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**DS-UI-configuración**](c-dsuisettings.md)<br/> |
+| Clases usadas en        | [**DS-UI-Configuración**](c-dsuisettings.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Esta es una lista de los GUID de los objetos COM que admiten una interfaz de dev
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**DS-UI-configuración**](c-dsuisettings.md)<br/> |
+| Clases usadas en        | [**DS-UI-Configuración**](c-dsuisettings.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Esta es una lista de los GUID de los objetos COM que admiten una interfaz de dev
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**DS-UI-configuración**](c-dsuisettings.md)<br/> |
+| Clases usadas en        | [**DS-UI-Configuración**](c-dsuisettings.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Esta es una lista de los GUID de los objetos COM que admiten una interfaz de dev
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**DS-UI-configuración**](c-dsuisettings.md)<br/> |
+| Clases usadas en        | [**DS-UI-Configuración**](c-dsuisettings.md)<br/> |
 
 
 

@@ -1,19 +1,19 @@
 ---
-title: Usar controles Up-Down
-description: Esta sección contiene código de ejemplo e información sobre cómo crear y usar controles de flechas.
+title: Uso de Up-Down controles
+description: Esta sección contiene código de ejemplo e información sobre cómo crear y usar controles de arriba a abajo.
 ms.assetid: B1199E81-8D82-4830-B109-E483A91A3B80
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 656c9206da2ad88d749efe553b01e325c914cdf8
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 7de4abea9c41e6fd9d768a4866c6c07eb62a6bade84469e7c0e8881f2528980e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104078447"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119695695"
 ---
-# <a name="using-up-down-controls"></a>Usar controles Up-Down
+# <a name="using-up-down-controls"></a>Uso de Up-Down controles
 
-Esta sección contiene código de ejemplo e información sobre cómo crear y usar controles de flechas.
+Esta sección contiene código de ejemplo e información sobre cómo crear y usar controles de arriba a abajo.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -21,7 +21,7 @@ Esta sección contiene código de ejemplo e información sobre cómo crear y usa
 
 | Tema                                                                      | Descripción                                                                                                                                                                                                                                          |
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Cómo crear controles de Up-Down](create-an-up-down-control.md)<br/> | Los controles de flechas se crean mediante una llamada a la función [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) y pasando la [**\_ clase**](common-control-window-classes.md) de valor inferior para el parámetro de clase de Windows *lpClassName*. <br/> |
+| [Cómo crear controles Up-Down datos](create-an-up-down-control.md)<br/> | Para crear controles de nivel inferior, llame a la función [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) y pase el valor [**UPDOWN \_ CLASS**](common-control-window-classes.md) para el parámetro Windows clase *lpClassName*. <br/> |
 
 
 

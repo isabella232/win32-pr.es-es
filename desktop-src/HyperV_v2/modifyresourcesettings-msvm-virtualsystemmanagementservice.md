@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 09ca0bb9fea02b6acc5599d9f907b1e60fdbd9ec
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ec7a2592bf6919616e424b7be22c6d5228a86ada16624d8732afd08d0f0be1dc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119693925"
 ---
-# <a name="modifyresourcesettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método ModifyResourceSettings de la clase Msvm \_ VirtualSystemManagementService
+# <a name="modifyresourcesettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método ModifyResourceSettings de la clase \_ Msvm VirtualSystemManagementService
 
 Modifica la configuración de recursos virtuales. Cuando se aplica a partes de una configuración de máquina virtual actual, como efecto secundario, se pueden modificar los recursos de la máquina virtual activa.
 
@@ -44,21 +44,21 @@ uint32 ModifyResourceSettings(
 *ResourceSettings* \[ En\]
 </dt> <dd>
 
-Matriz de cadenas que contienen una instancia incrustada de una clase derivada de [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata), que contienen los aspectos modificados de los recursos virtuales existentes. La **propiedad InstanceID** de cada instancia identifica la configuración del recurso virtual que se va a modificar.
+Matriz de cadenas que contienen una instancia incrustada de una clase derivada de [**\_ CIM ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata), que contienen los aspectos modificados de los recursos virtuales existentes. La **propiedad InstanceID** de cada instancia identifica la configuración del recurso virtual que se va a modificar.
 
 </dd> <dt>
 
 *ResultingResourceSettings* \[ out\]
 </dt> <dd>
 
-Matriz de referencias a instancias de objetos derivados de [**\_ ResourceAllocationSettingData de CIM**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata) que representan aspectos virtuales de los recursos virtuales modificados.
+Matriz de referencias a instancias de objetos derivados de [**\_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata) de CIM que representa aspectos virtuales de los recursos virtuales modificados.
 
 </dd> <dt>
 
 *Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ CIM ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
+Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
 
 </dd> </dl>
 
@@ -92,7 +92,7 @@ Este método devuelve uno de los valores siguientes.
 **DMTF reservado** (..)
 </dt> <dt>
 
-**Parámetros de método comprobados: trabajo iniciado** (4096)
+**Parámetros de método activados: trabajo iniciado** (4096)
 </dt> <dt>
 
 **Método reservado** (4097..32767)
@@ -105,17 +105,17 @@ Este método devuelve uno de los valores siguientes.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 8 solo \[ aplicaciones de escritorio\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
 | Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

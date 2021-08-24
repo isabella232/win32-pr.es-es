@@ -1,11 +1,11 @@
 ---
-title: Time-Refresh atributo)
-description: Este atributo tiene el intervalo durante el cual un registro de recursos incluido en una Active Directory zona integrada se debe actualizar para el servidor DNS. El intervalo predeterminado es de 7 días.
+title: Time-Refresh atributo
+description: Este atributo tiene el intervalo durante el cual se debe actualizar un registro de recursos contenido en una Active Directory zona integrada para el servidor DNS. El intervalo predeterminado es de 7 días.
 ms.assetid: 9e473c29-7fcf-4d6d-8a7c-2791c7822c7d
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Time-Refresh
-- timeRefresh esquema de AD de atributos
+- Time-Refresh esquema de AD del atributo
+- Esquema de AD del atributo timeRefresh
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 87bc360686b1692d2dbda1ee23ad6351e69d3afe
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 27705c55e3d16003bc40bfb72c3bf9d0b06260e239aa0c83dbd4e05a484dbc1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997495"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704075"
 ---
-# <a name="time-refresh-attribute"></a>Time-Refresh atributo)
+# <a name="time-refresh-attribute"></a>Time-Refresh atributo
 
-Este atributo tiene el intervalo durante el cual un registro de recursos incluido en una Active Directory zona integrada se debe actualizar para el servidor DNS. El intervalo predeterminado es de 7 días.
+Este atributo tiene el intervalo durante el cual se debe actualizar un registro de recursos contenido en una Active Directory zona integrada para el servidor DNS. El intervalo predeterminado es de 7 días.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | Time-Refresh                         |
-| Nombre para mostrar de LDAP | timeRefresh                          |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | timeRefresh                          |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.503               |
-| System-ID-GUID    | ddac0cf1-af8f-11d0-afeb-00c04fd930c9 |
-| Sintaxis            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | ddac0cf1-af8f-11d0-afeb-00c04fd930c9 |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 
@@ -55,18 +55,18 @@ Este atributo tiene el intervalo durante el cual un registro de recursos incluid
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
-| System-Only            | False                                                                                                                         |
-| Tiene un único valor       | True                                                                                                                          |
-| Está indexado             | False                                                                                                                         |
-| En el catálogo global      | False                                                                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                  |
+| System-Only            | Falso                                                                                                                         |
+| Es de un solo valor       | Verdadero                                                                                                                          |
+| Está indexado             | Falso                                                                                                                         |
+| En el catálogo global      | Falso                                                                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Clases usadas en        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Este atributo tiene el intervalo durante el cual un registro de recursos incluid
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
-| System-Only            | False                                                                                                                         |
-| Tiene un único valor       | True                                                                                                                          |
-| Está indexado             | False                                                                                                                         |
-| En el catálogo global      | False                                                                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                  |
+| System-Only            | Falso                                                                                                                         |
+| Es de un solo valor       | Verdadero                                                                                                                          |
+| Está indexado             | Falso                                                                                                                         |
+| En el catálogo global      | Falso                                                                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Clases usadas en        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Este atributo tiene el intervalo durante el cual un registro de recursos incluid
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
-| System-Only            | False                                                                                                                         |
-| Tiene un único valor       | True                                                                                                                          |
-| Está indexado             | False                                                                                                                         |
-| En el catálogo global      | False                                                                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                  |
+| System-Only            | Falso                                                                                                                         |
+| Es de un solo valor       | Verdadero                                                                                                                          |
+| Está indexado             | Falso                                                                                                                         |
+| En el catálogo global      | Falso                                                                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Clases usadas en        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Este atributo tiene el intervalo durante el cual un registro de recursos incluid
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
-| System-Only            | False                                                                                                                         |
-| Tiene un único valor       | True                                                                                                                          |
-| Está indexado             | False                                                                                                                         |
-| En el catálogo global      | False                                                                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                  |
+| System-Only            | Falso                                                                                                                         |
+| Es de un solo valor       | Verdadero                                                                                                                          |
+| Está indexado             | Falso                                                                                                                         |
+| En el catálogo global      | Falso                                                                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Clases usadas en        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Este atributo tiene el intervalo durante el cual un registro de recursos incluid
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
-| System-Only            | False                                                                                                                         |
-| Tiene un único valor       | True                                                                                                                          |
-| Está indexado             | False                                                                                                                         |
-| En el catálogo global      | False                                                                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                  |
+| System-Only            | Falso                                                                                                                         |
+| Es de un solo valor       | Verdadero                                                                                                                          |
+| Está indexado             | Falso                                                                                                                         |
+| En el catálogo global      | Falso                                                                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Clases usadas en        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Este atributo tiene el intervalo durante el cual un registro de recursos incluid
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
-| System-Only            | False                                                                                                                         |
-| Tiene un único valor       | True                                                                                                                          |
-| Está indexado             | False                                                                                                                         |
-| En el catálogo global      | False                                                                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                  |
+| System-Only            | Falso                                                                                                                         |
+| Es de un solo valor       | Verdadero                                                                                                                          |
+| Está indexado             | Falso                                                                                                                         |
+| En el catálogo global      | Falso                                                                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Clases usadas en        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 

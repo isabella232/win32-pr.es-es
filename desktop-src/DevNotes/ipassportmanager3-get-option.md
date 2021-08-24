@@ -1,7 +1,7 @@
 ---
-description: Recupera el valor de una opción específica de inicio de sesión de Microsoft .NET Passport.
+description: Recupera el valor de una opción de Microsoft .NET de inicio de sesión de Passport específica.
 ms.assetid: a38ffed3-a45b-4bac-8101-3e09f34f3891
-title: 'IPassportManager3:: get_Option (método)'
+title: IPassportManager3::get_Option método
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,19 +12,19 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 289daf9ffbaad872115d0abfd7a618a4f7e44c10
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5d7260e3c13be21f1cc963e1bca15a6126739a0075b94ee11f07d98901efd39b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104423199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119750045"
 ---
-# <a name="ipassportmanager3get_option-method"></a>IPassportManager3:: get ( \_ método de opción)
+# <a name="ipassportmanager3get_option-method"></a>IPassportManager3::get \_ (método)
 
-Recupera el valor de una opción específica de inicio de sesión de Microsoft .NET Passport.
+Recupera el valor de una opción de Microsoft .NET de inicio de sesión de Passport específica.
 
 > [!Note]  
-> El método **Get \_ Option** pertenece a la interfaz [**IPassportManager3**](/previous-versions/ms817681(v=msdn.10)) . En este tema se complementa la documentación inicial.
+> El **método get \_ Option** pertenece a la [**interfaz IPassportManager3.**](/previous-versions/ms817681(v=msdn.10)) Este tema complementa la documentación inicial.
 
  
 
@@ -44,25 +44,25 @@ HRESULT get_Option(
 
 <dl> <dt>
 
-*nombre* \[ de de\]
+*name* \[ En\]
 </dt> <dd>
 
 Opción de inicio de sesión que se va a recuperar. Actualmente, la única opción admitida es "iMode".
 
 </dd> <dt>
 
-*pval* \[ enuncia\]
+*pVal* \[ out\]
 </dt> <dd>
 
-Un puntero a una **variante** (VT \_ bool) que recibe el valor de la opción. Este valor puede ser true o false.
+Puntero a **un VARIANT** (VT \_ BOOL) que recibe el valor de la opción. Este valor puede ser True o False.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ OK cuando el método se ejecuta correctamente.
+Devuelve S \_ OK cuando el método se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este método se incluye con versiones anteriores del SDK de Passport.
 

@@ -1,11 +1,11 @@
 ---
-title: Propiedad ancho IVMDisplay (VPCCOMInterfaces. h)
+title: Propiedad IVMDisplay Width (VPCCOMInterfaces.h)
 description: Ancho de la pantalla de la máquina virtual, en píxeles.
 ms.assetid: a0062d75-dbb3-41ff-8112-87c1a31b088e
 keywords:
-- Propiedad width de Virtual PC
-- Propiedad Width Virtual PC, interfaz IVMDisplay
-- Interfaz IVMDisplay Virtual PC, propiedad width
+- Propiedad Width Virtual PC
+- Propiedad Width Virtual PC , interfaz IVMDisplay
+- IVMDisplay interface Virtual PC , propiedad Width
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 12b6fe7d329498b0f1ffc36304311f733cd990c9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0db106804f81f52b669b90920699761061d97fb3412dd58b761f7da1701ec53b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535188"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119654225"
 ---
-# <a name="ivmdisplaywidth-property"></a>IVMDisplay:: width (propiedad)
+# <a name="ivmdisplaywidth-property"></a>IVMDisplay::Width, propiedad
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
-Recupera el ancho de la pantalla (VM) de la máquina virtual, en píxeles.
+Recupera el ancho de la pantalla de la máquina virtual (VM), en píxeles.
 
 Esta propiedad es de solo lectura.
 
@@ -53,12 +53,12 @@ Ancho, en píxeles.
 
 | Nombre o valor                                                                                                                                                         | Significado                                                                  |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| <dl> <dt>S \_ Aceptar</dt> <dt>0</dt> </dl>                            | La operación se realizó correctamente.<br/>                                 |
-| <dl> <dt>E \_ PUNTERO</dt> <dt>0x80004003</dt> </dl>              | El parámetro es **null**.<br/>                                    |
-| <dl> <dt>Máquina virtual \_ La \_ VM E \_ no \_ ejecuta</dt> <dt>0xA0040206</dt> </dl> | La máquina virtual debe estar en ejecución para esta operación.<br/>       |
-| <dl> <dt>Máquina virtual \_ 0xA0040207 de \_ máquina virtual \_ desconocida</dt> <dt></dt> </dl>      | La máquina virtual no es válida o no se está ejecutando actualmente.<br/> |
-| <dl> <dt>Máquina virtual \_ E \_ no \_ Mostrar</dt> <dt>0xA0040850</dt> </dl>      | No se puede encontrar una pantalla válida para la máquina virtual.<br/>     |
-| <dl> <dt>DISP \_ . E \_ excepción</dt> <dt>0x80020009</dt> </dl>      | Se produjo un error inesperado.<br/>                             |
+| <dl> <dt>S \_ Ok</dt> <dt>0</dt> </dl>                            | La operación se realizó correctamente.<br/>                                 |
+| <dl> <dt>E \_ Puntero</dt> <dt>0x80004003</dt> </dl>              | El parámetro es **NULL.**<br/>                                    |
+| <dl> <dt>Máquina virtual \_ E \_ VM \_ NOT \_ RUNNING</dt> <dt>0xA0040206</dt> </dl> | La máquina virtual debe ejecutarse para esta operación.<br/>       |
+| <dl> <dt>Máquina virtual \_ E \_ VM \_ UNKNOWN</dt> <dt>0xA0040207</dt> </dl>      | La máquina virtual no es válida o no se está ejecutando actualmente.<br/> |
+| <dl> <dt>Máquina virtual \_ E \_ NO \_ DISPLAY</dt> <dt>0xA0040850</dt> </dl>      | No se puede encontrar una pantalla válida para la máquina virtual.<br/>     |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl>      | Se produjo un error inesperado.<br/>                             |
 
 
 
@@ -66,14 +66,14 @@ Ancho, en píxeles.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMDisplay se define como 960895e9-f743-4498-96aa-261f867e7fc5<br/>                 |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMDisplay se define como \_ 960895e9-f743-4498-96aa-261f867e7fc5<br/>                 |
 
 
 

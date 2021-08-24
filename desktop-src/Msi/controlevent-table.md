@@ -1,23 +1,23 @@
 ---
-description: La tabla ControlEvent, permite al autor especificar los eventos de control iniciados cuando un usuario interactúa con un control PushButton, un control CheckBox o un control SelectionTree.
+description: La tabla ControlEvent permite al autor especificar los eventos de control iniciados cuando un usuario interactúa con un control PushButton, un control CheckBox o un control SelectionTree.
 ms.assetid: e34d17e9-cd6b-4a21-9abc-9562ee648c59
-title: Tabla ControlEvent,
+title: Tabla ControlEvent
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 721dc7ac9a729b8df0623a2958a4d0fe32851307
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6fec4837fa7d98289495bbb0773ae7260f957485cd87214dabf1999b1e1a876c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913081"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119693005"
 ---
-# <a name="controlevent-table"></a>Tabla ControlEvent,
+# <a name="controlevent-table"></a>Tabla ControlEvent
 
-La tabla ControlEvent, permite al autor especificar los [eventos de control](control-events.md) iniciados cuando un usuario interactúa con un control [Pushbutton](pushbutton-control.md), un [control CheckBox](checkbox-control.md)o un [control SelectionTree](selectiontree-control.md). Estos son los únicos controles que los usuarios pueden usar para iniciar eventos de control. Cada control puede publicar varios eventos de control. El instalador inicia cada evento en el orden especificado en la columna de ordenación. Por ejemplo, un control de botón de control puede publicar eventos para iniciar una transición a otro cuadro de diálogo, salir de la secuencia del cuadro de diálogo e iniciar la instalación del archivo.
+La tabla ControlEvent permite al autor especificar los eventos [de control](control-events.md) iniciados cuando un usuario interactúa con un [control PushButton,](pushbutton-control.md) [un control CheckBox](checkbox-control.md)o [un control SelectionTree](selectiontree-control.md). Estos son los únicos controles que los usuarios pueden usar para iniciar eventos de control. Cada control puede publicar varios eventos de control. El instalador inicia cada evento en el orden especificado en la columna Ordering . Por ejemplo, un control de botón de inserción puede publicar eventos para iniciar una transición a otro cuadro de diálogo, salir de la secuencia del cuadro de diálogo y comenzar la instalación de archivos.
 
-La excepción a tener en cuenta es que cada control puede publicar más de un [NewDialog](newdialog-controlevent.md) o un evento [SpawnDialog](spawndialog-controlevent.md) . Si tiene que crear varios eventos de control NewDialog y SpawnDialog en esta tabla, incluya también instrucciones condicionales en los campos condición que garanticen que se publica como máximo un evento. Si se seleccionan varios eventos de control NewDialog y SpawnDialog para el mismo control, solo se publica el evento con el valor más grande de la columna de ordenación cuando se activa el control.
+La excepción que se debe tener en cuenta es que cada control puede publicar un evento [NewDialog](newdialog-controlevent.md) o [SpawnDialog](spawndialog-controlevent.md) como máximo. Si necesita crear varios eventos de control NewDialog y SpawnDialog en esta tabla, incluya también instrucciones condicionales en los campos Condición que garanticen que como máximo se publica un evento. Si se seleccionan varios eventos de control NewDialog y SpawnDialog para el mismo control, solo se publica el evento con el valor más grande de la columna Ordering cuando se activa el control.
 
-La tabla ControlEvent, tiene las columnas siguientes.
+La tabla ControlEvent tiene las columnas siguientes.
 
 
 
@@ -25,8 +25,8 @@ La tabla ControlEvent, tiene las columnas siguientes.
 |-----------|------------------------------|-----|----------|
 | Diálogo\_  | [Identificador](identifier.md) | Y   | N        |
 | control\_ | [Identificador](identifier.md) | Y   | N        |
-| Evento     | [Formatea](formatted.md)   | Y   | N        |
-| Argumento  | [Formatea](formatted.md)   | Y   | N        |
+| Evento     | [Formato](formatted.md)   | Y   | N        |
+| Argumento  | [Formato](formatted.md)   | Y   | N        |
 | Condición | [Condition](condition.md)   | Y   | Y        |
 | Ordenación  | [Entero](integer.md)       | N   | Y        |
 
@@ -41,54 +41,54 @@ La tabla ControlEvent, tiene las columnas siguientes.
 <span id="Dialog_"></span><span id="dialog_"></span><span id="DIALOG_"></span>Diálogo\_
 </dt> <dd>
 
-Una clave externa a la primera columna de la [tabla del cuadro de diálogo](dialog-table.md). La combinación de este campo con el campo de control \_ identifica un control único.
+Clave externa de la primera columna de la tabla [Dialog](dialog-table.md). La combinación de este campo con el campo Control \_ identifica un control único.
 
 </dd> <dt>
 
 <span id="Control_"></span><span id="control_"></span><span id="CONTROL_"></span>Control\_
 </dt> <dd>
 
-Una clave externa a la segunda columna de la [tabla de control](control-table.md). Al combinar este campo con el campo del cuadro de diálogo, se \_ identifica un control único.
+Clave externa de la segunda columna de la [tabla Control](control-table.md). La combinación de este campo con el campo \_ Diálogo identifica un control único.
 
 </dd> <dt>
 
-<span id="Event"></span><span id="event"></span><span id="EVENT"></span>Ceso
+<span id="Event"></span><span id="event"></span><span id="EVENT"></span>Evento
 </dt> <dd>
 
-Identificador que especifica el tipo de evento que debe tener lugar cuando el usuario interactúa con el control especificado por el cuadro de diálogo \_ y el control \_ . Para obtener una lista de los valores posibles, consulte [información general de ControlEvent,](controlevent-overview.md).
+Identificador que especifica el tipo de evento que debe tener lugar cuando el usuario interactúa con el control especificado por Dialog \_ y Control \_ . Para obtener una lista de valores posibles, [vea Información general de ControlEvent.](controlevent-overview.md)
 
-Para establecer una propiedad con un control, coloque \[ el \_ nombre \] de la propiedad en este campo y el nuevo valor en el campo argument. Put {} en el campo argument para escribir el valor null.
+Para establecer una propiedad con un control , coloque Nombre de propiedad en este campo y \[ el nuevo valor en el campo de \_ \] argumento. Coloque { } en el campo de argumento para escribir el valor NULL.
 
 </dd> <dt>
 
-<span id="Argument"></span><span id="argument"></span><span id="ARGUMENT"></span>Argument
+<span id="Argument"></span><span id="argument"></span><span id="ARGUMENT"></span>Argumento
 </dt> <dd>
 
-Un valor que se utiliza como modificador al desencadenar un evento determinado.
+Valor que se usa como modificador al desencadenar un evento determinado.
 
-Por ejemplo, el argumento de [NewDialog ControlEvent,](newdialog-controlevent.md) o [SpawnDialog ControlEvent,](spawndialog-controlevent.md) es el nombre del cuadro de diálogo y el argumento de la acción de [instalación](install-action.md) es un número que define el nivel de instalación.
+Por ejemplo, el argumento de [NewDialog ControlEvent](newdialog-controlevent.md) o [SpawnDialog ControlEvent](spawndialog-controlevent.md) es el nombre del cuadro de diálogo y el argumento de la acción [Install](install-action.md) es un número que define el nivel de instalación.
 
 </dd> <dt>
 
-<span id="Condition"></span><span id="condition"></span><span id="CONDITION"></span>Cumple
+<span id="Condition"></span><span id="condition"></span><span id="CONDITION"></span>Condición
 </dt> <dd>
 
-Instrucción condicional que determina si el instalador activa el evento en la columna de eventos. El instalador desencadena el evento si la instrucción condicional en el campo condition se evalúa como true. Por lo tanto, ponga un 1 en esta columna para asegurarse de que el instalador desencadena el evento. El instalador no desencadena el evento si el campo Condition contiene una instrucción que se evalúa como false. El instalador no desencadena un evento con un espacio en blanco en el campo condición a menos que ningún otro evento del control se evalúe como true. Si ninguno de los campos de condición para el control denominado en el \_ campo de control se evalúa como true, el instalador desencadena que un evento tiene un campo de condición en blanco y, si hay más de un campo de condición en blanco, desencadena el evento con el valor más grande en el campo de ordenación. Consulte [Sintaxis de la instrucción condicional](conditional-statement-syntax.md).
+Instrucción condicional que determina si el instalador activa el evento en la columna Evento . El instalador desencadena el evento si la instrucción condicional del campo Condición se evalúa como True. Por lo tanto, coloque un 1 en esta columna para asegurarse de que el instalador desencadena el evento . El instalador no desencadena el evento si el campo Condición contiene una instrucción que se evalúa como False. El instalador no desencadena un evento con un espacio en blanco en el campo Condición a menos que ningún otro evento del control se evalúe como True. Si ninguno de los campos Condición del control denominado en el campo Control se evalúa como True, el instalador desencadena el evento que tiene un campo Condición en blanco y, si hay más de un campo Condición en blanco, se desencadena el único evento de estos con el valor más grande en el \_ campo Ordenación. Vea [Sintaxis de instrucciones condicionales.](conditional-statement-syntax.md)
 
 </dd> <dt>
 
-<span id="Ordering"></span><span id="ordering"></span><span id="ORDERING"></span>Pide
+<span id="Ordering"></span><span id="ordering"></span><span id="ORDERING"></span>Ordenar
 </dt> <dd>
 
-Entero que se usa para ordenar varios eventos enlazados al mismo control. Debe ser un número no negativo. Este campo puede dejarse en blanco.
+Entero que se usa para ordenar varios eventos asociados al mismo control. Debe ser un número no negativo. Este campo se puede dejar en blanco.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En la [tabla EventMapping](eventmapping-table.md) se muestran los controles que se suscriben a algún evento de control y se muestra el atributo de control que se va a cambiar cuando el otro control o el instalador publique ese evento.
+En [la tabla EventMapping](eventmapping-table.md) se enumeran los controles que se suscriben a algún evento de control y se muestra el atributo de control que se va a cambiar cuando el otro control o el instalador publique ese evento.
 
-En Windows XP o sistemas operativos anteriores, los usuarios pueden publicar un evento de control solo interactuando con un [control CheckBox](checkbox-control.md) o un [control Pushbutton](pushbutton-control.md). Con Windows Server 2003, los usuarios pueden publicar un evento de control interactuando con un [control CheckBox](checkbox-control.md), un [control SelectionTree](selectiontree-control.md)y un [control Pushbutton](pushbutton-control.md). Mostrar otros controles en el campo de control \_ no tiene ningún efecto.
+En Windows XP o sistemas operativos anteriores, los usuarios pueden publicar un evento de control solo mediante la interacción con un [control checkbox o](checkbox-control.md) un control [pushbutton](pushbutton-control.md). Con Windows Server 2003, los usuarios pueden publicar un evento de control solo mediante la interacción con un [control Checkbox](checkbox-control.md), [selectiontree control](selectiontree-control.md)y [pushbutton control](pushbutton-control.md). Enumerar otros controles en el campo \_ Control no tiene ningún efecto.
 
 ## <a name="validation"></a>Validación
 

@@ -1,7 +1,7 @@
 ---
 description: El método Set señala el evento.
 ms.assetid: dfcb1601-aa65-47f5-ae3c-f13fcd7b1398
-title: Método CAMEvent. set (Wxutil. h)
+title: Método CAMEvent.Set (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c9caeed17d42d121ae9263bf6c1fcd011ed573c7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 84059a66a77744b7ea570473474f6b773beae8005b7c4a68e73e59c76829f13a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671424"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119794285"
 ---
-# <a name="cameventset-method"></a>CAMEvent. set (método)
+# <a name="cameventset-method"></a>Método CAMEvent.Set
 
-El `Set` método señala el evento.
+El `Set` método señala el evento .
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,12 +44,12 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El comportamiento depende de si el objeto es un evento de restablecimiento automático o un evento de restablecimiento manual:
 
--   **Restablecimiento automático**: Si algún subproceso está esperando en este evento, se libera un subproceso y se restablece el evento. Si no hay ningún subproceso esperando en este evento, el evento permanece señalado.
--   **Restablecimiento manual**: se liberan todos los subprocesos que esperan en este evento. El evento permanece señalado.
+-   **Restablecimiento automático:** si algún subproceso está esperando este evento, se libera un subproceso y se restablece el evento. Si no hay subprocesos esperando a este evento, el evento permanece señalado.
+-   **Restablecimiento manual:** se liberan todos los subprocesos que esperan este evento. El evento permanece señalado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,8 +57,8 @@ El comportamiento depende de si el objeto es un evento de restablecimiento autom
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxutil. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxutil.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -66,7 +66,7 @@ El comportamiento depende de si el objeto es un evento de restablecimiento autom
 
 <dl> <dt>
 
-[**Clase CAMEvent**](camevent.md)
+[**CLASE CAMEvent**](camevent.md)
 </dt> </dl>
 
  

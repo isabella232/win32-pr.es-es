@@ -1,45 +1,45 @@
 ---
-description: Usar COMREPL
+description: Uso de COMREPL
 ms.assetid: bf67b434-c082-472d-9eae-ae31969d9cb8
-title: Usar COMREPL
+title: Uso de COMREPL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3fb39640998b3b27ac25cbab2ae60948418d6cee
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 501cca8d32383e23fc636669e32a80cfdfe96dd658717e41c1618244fc5af81e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103807628"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119853885"
 ---
-# <a name="using-comrepl"></a>Usar COMREPL
+# <a name="using-comrepl"></a>Uso de COMREPL
 
 Para iniciar la utilidad de línea de comandos COMREPL, siga estos pasos:
 
-1.  Agregue% WINDIR% \\ system32 \\ com a la ruta de acceso predeterminada del entorno; para ello, escriba lo siguiente en el símbolo del sistema:
+1.  Agregue %windir% system32 Com a la ruta de acceso del entorno \\ predeterminada escribiendo lo siguiente en el símbolo del \\ sistema:
 
-    **establecer ruta de acceso =% PATH%;% WINDIR% \\ system32 \\ com**
+    **set path = %PATH%;%windir% \\ system32 \\ Com**
 
-2.  Escriba el siguiente comando de COMREPL:
+2.  Escriba el siguiente comando COMREPL:
 
-    **COMREPL** *es sourcecomputer,* *targetComputerList* **\[ \[ /n \] /v \]**
+    **COMREPL** *sourceComputer* *targetComputerList* **\[ /n \[ /v \] \]**
 
     donde:
 
-    -   *es sourcecomputer,* es el nombre de equipo del origen.
+    -   *sourceComputer es* el nombre del equipo del origen.
 
-    -   *targetComputerList* son los nombres de equipo de los destinos separados por espacios
+    -   *targetComputerList es* los nombres de equipo de los destinos separados por espacios.
 
-    -   **/n** suprime la solicitud de confirmación antes de iniciar la replicación
+    -   **/n suprime** el mensaje de confirmación antes de iniciar la replicación
 
-    -   **/v** muestra la salida del archivo de registro en la consola
+    -   **/v** hace eco de la salida del archivo de registro en la consola
 
 ## <a name="notes"></a>Notas
 
--   Dado que no se replica COM+ (solo los datos y las aplicaciones de configuración), todos los equipos de destino deben tener instalado COM+.
--   El usuario debe pasar las comprobaciones de roles para la aplicación del sistema en los equipos de origen y de destino.
--   No se replican las cuentas de equipo local que puedan usar los roles.
+-   Dado que COM+ no se replica (solo los datos de configuración y las aplicaciones), todos los equipos de destino ya deben tener instalado COM+.
+-   El usuario debe pasar comprobaciones de roles para la aplicación del sistema en los equipos de origen y de destino.
+-   No se replica ninguna cuenta de máquina local que puedan usar los roles.
 -   Los equipos de destino deben estar en línea.
--   El usuario es responsable de replicar todos los datos que no son COM (por ejemplo, tablas de base de datos, archivos de datos, etc.) en los equipos de destino.
+-   El usuario es responsable de replicar todos los datos que no son de COM+ (por ejemplo, tablas de base de datos, archivos de datos, etc.) en los equipos de destino.
 -   Los clústeres pueden participar en la replicación, pero tenga en cuenta que COMREPL solo se replica en equipos con nombre.
 
 ## <a name="related-topics"></a>Temas relacionados
@@ -55,7 +55,7 @@ Para iniciar la utilidad de línea de comandos COMREPL, siga estos pasos:
 [Fases de replicación](replication-phases.md)
 </dt> <dt>
 
-[Lo que se replica](what-gets-replicated.md)
+[Qué se replica](what-gets-replicated.md)
 </dt> </dl>
 
  

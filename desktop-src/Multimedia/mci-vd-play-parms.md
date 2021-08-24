@@ -1,9 +1,9 @@
 ---
-title: MCI_VD_PLAY_PARMS estructura (Mciapi. h)
-description: La \_ estructura MCI Vd \_ Play \_ parms contiene información sobre la posición y la velocidad del comando MCI \_ Play para dispositivos de VideoDisc.
+title: MCI_VD_PLAY_PARMS estructura (Mciapi.h)
+description: La estructura MCI VD PLAY PARMS contiene información de posición y velocidad para el \_ \_ comando \_ MCI PLAY para \_ dispositivos videodisc.
 ms.assetid: 9fa8418f-3f69-4a9c-b23e-7d2e2c75c7af
 keywords:
-- Estructura de MCI_VD_PLAY_PARMS de Windows multimedia
+- MCI_VD_PLAY_PARMS estructura Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c3ab04ba5cf0a2b507370a4b777c19fd60a05c30
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 62c2aef6915d1e3cc325d5b9f8e1c7fe176a878c2d84080b5f8a77eaf034afc9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079414"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119783870"
 ---
-# <a name="mci_vd_play_parms-structure"></a>MCI \_ Vd \_ Play \_ parms estructura
+# <a name="mci_vd_play_parms-structure"></a>Estructura MCI \_ VD \_ PLAY \_ PARMS
 
-La estructura **MCI \_ Vd \_ Play \_ parms** contiene información sobre la posición y la velocidad del comando [**MCI \_ Play**](mci-play.md) para dispositivos de VideoDisc.
+La **estructura MCI \_ VD PLAY \_ \_ PARMS** contiene información de posición y velocidad para el [**comando MCI \_ PLAY**](mci-play.md) para dispositivos videodisc.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,21 +46,21 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La palabra de orden inferior especifica un identificador de ventana que se usa para la marca de notificación de MCI \_ .
+La palabra de orden bajo especifica un identificador de ventana que se usa para la marca \_ MCI NOTIFY.
 
 </dd> <dt>
 
 **dwFrom**
 </dt> <dd>
 
-Posición desde la que se va a reproducir.
+Posición desde la que se reproducirá.
 
 </dd> <dt>
 
 **dwTo**
 </dt> <dd>
 
-Posición en la que se va a reproducir.
+Posición en la que se reproducirá.
 
 </dd> <dt>
 
@@ -71,11 +71,11 @@ Velocidad de reproducción en fotogramas por segundo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Al asignar datos a los miembros de esta estructura, establezca las marcas correspondientes en el parámetro *fdwCommand* de la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar los miembros.
 
-Puede usar la estructura [**de \_ \_ parms de reproducción de MCI**](mci-play-parms.md) en lugar de **MCI \_ Vd \_ Play \_ parms** si no está usando los miembros de datos extendidos.
+Puede usar la estructura [**MCI \_ PLAY \_ PARMS**](mci-play-parms.md) en lugar de **MCI \_ VD PLAY \_ \_ PARMS** si no usa los miembros de datos extendidos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,7 +85,7 @@ Puede usar la estructura [**de \_ \_ parms de reproducción de MCI**](mci-play-p
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -93,16 +93,16 @@ Puede usar la estructura [**de \_ \_ parms de reproducción de MCI**](mci-play-p
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)
 </dt> <dt>
 
-[**reproducción de MCI \_**](mci-play.md)
+[**MCI \_ PLAY**](mci-play.md)
 </dt> <dt>
 
-[**\_parms de reproducción de MCI \_**](mci-play-parms.md)
+[**MCI \_ PLAY \_ PARMS**](mci-play-parms.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

@@ -1,7 +1,7 @@
 ---
-description: Representa la configuración para la asignación del puerto Ethernet, además de los valores proporcionados por la \_ clase EthernetPort de CIM. Esta configuración se usa para proporcionar información específica del propio recurso.
+description: Representa la configuración para la asignación del puerto Ethernet, además de la configuración proporcionada por la clase EthernetPort de \_ CIM. Esta configuración se usa para proporcionar información específica del propio recurso.
 ms.assetid: f59ebaf1-60dd-49bd-b48e-d7a6c2650909
-title: CIM_EthernetPortAllocationSettingData (clase)
+title: CIM_EthernetPortAllocationSettingData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 7e77b4387f77e88ceaff273b8be72a354c989e7e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7546af167a6e13712119a081e7dbfaee118dc0c8a4912b8411d898a4ad90bc7b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686516"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119695805"
 ---
-# <a name="cim_ethernetportallocationsettingdata-class"></a>\_Clase EthernetPortAllocationSettingData de CIM
+# <a name="cim_ethernetportallocationsettingdata-class"></a>\_Clase Cim EthernetPortAllocationSettingData
 
-Representa la configuración para la asignación del puerto Ethernet, además de los valores proporcionados por la [**clase \_ EthernetPort de CIM**](cim-ethernetport.md) . Esta configuración se usa para proporcionar información específica del propio recurso.
+Representa la configuración para la asignación del puerto Ethernet, además de la configuración proporcionada por la [**clase \_ EthernetPort de CIM.**](cim-ethernetport.md) Esta configuración se usa para proporcionar información específica del propio recurso.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,29 +39,29 @@ class CIM_EthernetPortAllocationSettingData : CIM_ResourceAllocationSettingData
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ EthernetPortAllocationSettingData** tiene estos tipos de miembros:
+La **clase CIM \_ EthernetPortAllocationSettingData** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ EthernetPortAllocationSettingData** tiene estas propiedades.
+La **clase Cim \_ EthernetPortAllocationSettingData** tiene estas propiedades.
 
 <dl> <dt>
 
 **DesiredVLANEndpointMode**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ VLANEndpoint**](cim-vlanendpoint.md).**OperationalEndpointMode**","**\_ VLANEndpoint CIM**.**DesiredEndpointMode**","**\_ EthernetPortAllocationSettingData CIM**.**OtherEndpointMode**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ VLANEndpoint**](cim-vlanendpoint.md).**OperationalEndpointMode**", "**CIM \_ VLANEndpoint**.**DesiredEndpointMode**", "**CIM \_ EthernetPortAllocationSettingData**.**OtherEndpointMode**")
 </dt> </dl>
 
-El modo de VLAN solicitado. Esta propiedad se usa para establecer el valor de la propiedad **OperationalEndpointMode** inicial en la instancia de **\_ VLANEndpoint de CIM** asociada con el puerto Ethernet.
+Modo VLAN solicitado. Esta propiedad se usa para establecer el valor inicial de la propiedad **OperationalEndpointMode** en la instancia de **\_ CIM VLANEndpoint** asociada al puerto Ethernet.
 
 <dt>
 
@@ -74,7 +74,7 @@ El modo de VLAN solicitado. Esta propiedad se usa para establecer el valor de la
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -109,7 +109,7 @@ El modo de VLAN solicitado. Esta propiedad se usa para establecer el valor de la
 
 <span id="Dot1Q_Tunnel"></span><span id="dot1q_tunnel"></span><span id="DOT1Q_TUNNEL"></span>
 
-**Túnel Dot1Q** (6)
+**Dot1Q Tunnel** (6)
 
 
 </dt> <dd></dd> <dt>
@@ -123,7 +123,7 @@ El modo de VLAN solicitado. Esta propiedad se usa para establecer el valor de la
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Proveedor reservado** (0x8000... 0XFFFF
+**Reservado por el** proveedor (0x8000.. 0xFFFF)
 
 
 </dt> <dd></dd> </dl>
@@ -142,7 +142,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ EthernetPortAllocationSettingData**.**DesiredVLANEndpointMode**")
 </dt> </dl>
 
-El tipo de modelo de punto de conexión de VLAN que es compatible con este extremo de VLAN, cuando el valor de la propiedad Mode está establecido en "1" (otro). Esta propiedad debe establecerse en **null** cuando la propiedad de modo es cualquier valor distinto de "1".
+El tipo de modelo de punto de conexión de VLAN que admite este punto de conexión de VLAN, cuando el valor de la propiedad mode se establece en "1" (Otro). Esta propiedad debe establecerse en **NULL cuando** la propiedad mode sea cualquier valor distinto de "1".
 
 </dd> </dl>
 
@@ -150,12 +150,12 @@ El tipo de modelo de punto de conexión de VLAN que es compatible con este extre
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -164,7 +164,7 @@ El tipo de modelo de punto de conexión de VLAN que es compatible con este extre
 
 <dl> <dt>
 
-[**\_RESOURCEALLOCATIONSETTINGDATA CIM**](cim-resourceallocationsettingdata.md)
+[**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md)
 </dt> </dl>
 
  

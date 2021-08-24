@@ -1,7 +1,7 @@
 ---
 description: Valida una malla.
 ms.assetid: e5bec2f3-e914-4677-8114-77c71b8a586e
-title: Función D3DXValidMesh (D3DX9Mesh. h)
+title: Función D3DXValidMesh (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 469b9b32072107885417266266f804a955301668
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 299092700b015840376f3e4b297d7825366b6083e1458155f5963e1b5b1f4d73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362521"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119749675"
 ---
-# <a name="d3dxvalidmesh-function"></a>D3DXValidMesh función)
+# <a name="d3dxvalidmesh-function"></a>Función D3DXValidMesh
 
 Valida una malla.
 
@@ -42,25 +42,25 @@ HRESULT D3DXValidMesh(
 
 <dl> <dt>
 
-*pMeshIn* \[ de\]
+*pMeshIn* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)**
 
-Puntero a una interfaz [**ID3DXMesh**](id3dxmesh.md) que representa la malla que se va a probar.
+Puntero a una [**interfaz ID3DXMesh,**](id3dxmesh.md) que representa la malla que se va a probar.
 
 </dd> <dt>
 
-*pAdjacency* \[ de\]
+*pAdjacency* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md) \***
 
-Puntero a una matriz de tres DWORD por cada tipo que especifica los tres vecinos para cada una de las caras de la malla que se van a probar.
+Puntero a una matriz de tres DWORD por cara que especifican los tres vecinos de cada cara de la malla que se va a probar.
 
 </dd> <dt>
 
-*ppErrorsAndWarnings* \[ enuncia\]
+*ppErrorsAndWarnings* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
@@ -73,11 +73,11 @@ Devuelve un búfer que contiene una cadena de errores y advertencias, que explic
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DXERR \_ INVALIDMESH, D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DXERR \_ INVALIDMESH, D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método valida la malla comprobando si hay índices no válidos. La información del error está disponible en la salida del depurador.
+Este método valida la malla comprobando si hay índices no válidos. La información de error está disponible en la salida del depurador.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,8 +85,8 @@ Este método valida la malla comprobando si hay índices no válidos. La informa
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

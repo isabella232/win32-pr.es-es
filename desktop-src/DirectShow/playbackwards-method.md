@@ -4,12 +4,12 @@ ms.assetid: 7f8421e7-f835-4a10-a9c9-0e43de159e4f
 title: Método PlayBackwards
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 90b396c3829569d3f3ad25f0c0e8718dfd23f268
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b7236c225858d9508da0074ea64d104a50632b772302f42362dae373a987c352
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104494200"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119748365"
 ---
 # <a name="playbackwards-method"></a>Método PlayBackwards
 
@@ -31,7 +31,7 @@ MSWebDVD.PlayBackwards(nSpeed)
 <span id="nSpeed"></span><span id="nspeed"></span><span id="NSPEED"></span>*nSpeed*
 </dt> <dd>
 
-Especifica la velocidad a la que se reproducirá como un número. Este número es un multiplicador: 1,0 es la velocidad de reproducción normal; 2,0 es la velocidad doble, 0,5 es la velocidad media, etc. Cuando **nSpeed** no es igual a 1,0, el audio se silencia y la subimagen se desactiva.
+Especifica la velocidad a la que se va a reproducir como un número. Este número es un multiplicador: 1,0 es la velocidad de reproducción normal; 2.0 es de doble velocidad, 0.5 es de media velocidad, y así sucesivamente. Cuando **nSpeed** no es igual a 1,0, el audio se silencia y se apaga la subaspección.
 
 </dd> </dl>
 

@@ -1,7 +1,7 @@
 ---
 description: El método ClearPendingSample libera el ejemplo actual.
 ms.assetid: 55cb8eed-3ae5-4f45-a87e-e6da8ada5cf5
-title: Método CBaseRenderer. ClearPendingSample (Renbase. h)
+title: Método CBaseRenderer.ClearPendingSample (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 359d3cb7d7cd62d209c309ef4339651ee6cd852a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2368ada89245d35d58e34162e7e5cf07db815f6969e8c7579a91509275651c77
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671076"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119635155"
 ---
-# <a name="cbaserendererclearpendingsample-method"></a>CBaseRenderer. ClearPendingSample, método
+# <a name="cbaserendererclearpendingsample-method"></a>Método CBaseRenderer.ClearPendingSample
 
 El `ClearPendingSample` método libera el ejemplo actual.
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve S \_ correcto.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve S \_ correcto.
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  

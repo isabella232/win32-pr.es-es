@@ -1,5 +1,5 @@
 ---
-description: La presencia de la propiedad MSIINSTANCEGUID indica que un código de producto&\# 8211;cambio de transformación se registra en el producto.
+description: La presencia de la propiedad MSIINSTANCEGUID indica que un código de producto&8211; la transformación cambiante está \# registrada en el producto.
 ms.assetid: c39be15d-e10a-4055-bd81-aa7510a19fe4
 title: Propiedad MSIINSTANCEGUID
 ms.topic: reference
@@ -13,9 +13,9 @@ ms.locfileid: "119679535"
 ---
 # <a name="msiinstanceguid-property"></a>Propiedad MSIINSTANCEGUID
 
-La presencia de la **propiedad MSIINSTANCEGUID** indica que se ha registrado en el producto una transformación de cambio de código de producto. El valor de la **propiedad MSIINSTANCEGUID** especifica qué instancia de un producto se va a usar para la instalación. La **propiedad MSIINSTANCEGUID** solo puede hacer referencia a un producto que ya se ha instalado con una transformación de instancia.
+La presencia de la **propiedad MSIINSTANCEGUID** indica que una transformación que cambia el código del producto está registrada en el producto. El valor de la **propiedad MSIINSTANCEGUID** especifica qué instancia de un producto se va a usar para la instalación. La **propiedad MSIINSTANCEGUID** solo puede hacer referencia a un producto que ya se ha instalado con una transformación de instancia.
 
-Las transformaciones de instancia son transformaciones de cambio de código de producto disponibles con el instalador que se ejecuta en Windows Server 2003 o Windows XP. Para obtener más información, [vea Instalación de varias instancias de productos y revisiones.](installing-multiple-instances-of-products-and-patches.md)
+Las transformaciones de instancia son transformaciones de cambio de código de producto disponibles con el instalador que se ejecuta en Windows Server 2003 o Windows XP. Para obtener más información, vea [Installing Multiple Instances of Products and Patches](installing-multiple-instances-of-products-and-patches.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -23,7 +23,7 @@ Las transformaciones de instancia son transformaciones de cambio de código de p
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte Windows [Installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una versión Windows Installer.<br/> |
 
 
 

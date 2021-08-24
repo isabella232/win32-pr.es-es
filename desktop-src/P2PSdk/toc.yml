@@ -4,12 +4,12 @@
     - name: Infraestructura del mismo nivel
       href: peer-infrastructure.md
       items:
-        - name: Novedades
+        - name: What's New
           href: what-s-new.md
-        - name: Acerca de redes del mismo nivel
+        - name: Acerca de las redes del mismo nivel
           href: about-peer-networking.md
           items:
-            - name: ¿Qué es la red del mismo nivel?
+            - name: ¿Qué son las redes del mismo nivel?
               href: what-is-peer-networking-.md
             - name: Ventajas de las redes del mismo nivel
               href: benefits-of-peer-networking.md
@@ -24,7 +24,7 @@
               href: peer-names.md
             - name: Nubes
               href: clouds.md
-            - name: Usar la infraestructura del mismo nivel
+            - name: Uso de la infraestructura del mismo nivel
               href: using-the-peer-infrastructure.md
               items:
                 - name: Instalación de la infraestructura del mismo nivel
@@ -39,13 +39,13 @@
                   href: direct-connections.md
                 - name: Enumeraciones
                   href: enumerations.md
-                - name: Liberando datos del mismo nivel
+                - name: Liberar datos del mismo nivel
                   href: freeing-peer-data.md
                 - name: Infraestructura de eventos del mismo nivel
                   href: peer-events-infrastructure.md
-                - name: Importación y exportación de configuración de identidad y grupo
+                - name: Importación y exportación de la configuración de identidad y grupo
                   href: identity-and-group-configuration-import-and-export.md
-                - name: La infraestructura del mismo nivel y Teredo
+                - name: Infraestructura del mismo nivel y Teredo
                   href: the-peer-infrastructure-and-teredo.md
                 - name: Registros
                   href: records.md
@@ -106,22 +106,22 @@
                       href: /windows/win32/api/P2P/ne-p2p-peer_record_flags
                 - name: Códigos de retorno comunes
                   href: common-return-codes.md
-        - name: API de gráficos
+        - name: Graphing API
           href: graphing-api.md
           items:
-            - name: Acerca de la API de gráficos
+            - name: Acerca de Graphing API
               href: about-the-graphing-api.md
-            - name: Uso de la API de gráficos
+            - name: Uso de Graphing API
               href: using-the-graphing-api.md
               items:
                 - name: Trabajar con gráficos
                   href: working-with-graphs.md
                 - name: Proveedores de servicios de seguridad
                   href: security-service-providers.md
-            - name: Referencia de la API de gráficos
+            - name: Referencia de Graphing API
               href: the-graphing-api-reference.md
               items:
-                - name: Funciones de la API de gráficos
+                - name: Funciones de graphing API
                   href: graphing-api-functions.md
                   items:
                     - name: PeerGraphAddRecord
@@ -198,7 +198,7 @@
                       href: /windows/desktop/api/P2P/nf-p2p-peergraphupdaterecord
                     - name: PeerGraphValidateDeferredRecords
                       href: /windows/desktop/api/P2P/nf-p2p-peergraphvalidatedeferredrecords
-                - name: Devoluciones de llamada de la API de gráficos
+                - name: Devoluciones de llamada de Graphing API
                   href: graphing-api-callbacks.md
                   items:
                     - name: PFNPEER_FREE_SECURITY_DATA
@@ -207,7 +207,7 @@
                       href: /windows/desktop/api/P2P/nc-p2p-pfnpeer_secure_record
                     - name: PFNPEER_VALIDATE_RECORD
                       href: /windows/desktop/api/P2P/nc-p2p-pfnpeer_validate_record
-                - name: Gráficos de estructuras de API
+                - name: Estructuras de graphing API
                   href: graphing-api-structures.md
                   items:
                     - name: PEER_EVENT_NODE_CHANGE_DATA
@@ -224,7 +224,7 @@
                       href: /windows/win32/api/P2P/ns-p2p-peer_node_info
                     - name: PEER_SECURITY_INTERFACE
                       href: /windows/win32/api/P2P/ns-p2p-peer_security_interface
-                - name: Constantes de la API de gráficos
+                - name: Constantes de GRAPHING API
                   href: graphing-api-enumerations.md
                   items:
                     - name: PEER_GRAPH_EVENT_TYPE
@@ -237,7 +237,7 @@
                       href: /windows/win32/api/P2P/ne-p2p-peer_graph_status_flags
                     - name: PEER_NODE_CHANGE_TYPE
                       href: /windows/win32/api/P2P/ne-p2p-peer_node_change_type
-                - name: Vínculos de referencia de gráficos
+                - name: Vínculos de referencia de grafos
                   href: graphing-reference-links.md
         - name: API de agrupación
           href: grouping-api.md
@@ -247,23 +247,23 @@
               items:
                 - name: Cómo trabajar con grupos
                   href: how-to-work-with-groups.md
-                - name: Cómo funciona la seguridad de grupo
+                - name: Funcionamiento de la seguridad de grupo
                   href: how-group-security-works.md
-                - name: Cómo conectarse a un grupo del mismo nivel
+                - name: Cómo Conectar a un grupo del mismo nivel
                   href: how-to-connect-to-a-peer-group.md
-                - name: Invitar a un elemento del mismo nivel a un grupo
+                - name: Invitar a un grupo del mismo nivel
                   href: inviting-a-peer-to-a-group.md
-                - name: Administrar registros de grupo
+                - name: Administración de registros de grupo
                   href: managing-group-records.md
             - name: Uso de la API de agrupación
               href: using-the-grouping-api.md
               items:
                 - name: Creación de una aplicación de chat de grupo
                   href: creating-a-group-chat-application.md
-            - name: Referencia de la API de agrupación
+            - name: Referencia de API de agrupación
               href: the-grouping-api-reference.md
               items:
-                - name: Agrupar funciones de la API
+                - name: Agrupación de funciones de API
                   href: grouping-api-functions.md
                   items:
                     - name: PeerGroupAddRecord
@@ -340,7 +340,7 @@
                       href: /windows/desktop/api/P2P/nf-p2p-peergroupunregisterevent
                     - name: PeerGroupUpdateRecord
                       href: /windows/desktop/api/P2P/nf-p2p-peergroupupdaterecord
-                - name: Agrupar estructuras de API
+                - name: Agrupación de estructuras de API
                   href: grouping-api-structures.md
                   items:
                     - name: PEER_CREDENTIAL_INFO
@@ -357,7 +357,7 @@
                       href: /windows/win32/api/P2P/ns-p2p-peer_invitation_info
                     - name: PEER_MEMBER
                       href: /windows/win32/api/P2P/ns-p2p-peer_member
-                - name: Agrupar enumeraciones de API
+                - name: Agrupación de enumeraciones de API
                   href: grouping-api-enumerations.md
                   items:
                     - name: PEER_GROUP_AUTHENTICATION_SCHEME
@@ -374,15 +374,15 @@
                       href: /windows/win32/api/P2P/ne-p2p-peer_member_change_type
                     - name: PEER_MEMBER_FLAGS
                       href: /windows/win32/api/P2P/ne-p2p-peer_member_flags
-        - name: API de Identity Manager
+        - name: Identity Manager API
           href: identity-manager-api.md
           items:
             - name: Acerca de Identity Manager
               href: about-the-identity-manager-api.md
-            - name: Usar Identity Manager
+            - name: Uso de Identity Manager
               href: using-the-identity-manager-api.md
               items:
-                - name: Crear una identidad del mismo nivel
+                - name: Creación de una identidad del mismo nivel
                   href: creating-a-peer-identity.md
             - name: Referencia de Identity Manager
               href: the-identity-manager-api-reference.md
@@ -421,22 +421,22 @@
                       href: /windows/win32/api/P2P/ns-p2p-peer_name_pair
                 - name: Vínculos de referencia de Identity Manager
                   href: identity-manager-reference-links.md
-        - name: Table API de enrutamiento distribuido
+        - name: Enrutamiento distribuido Table API
           href: distributed-routing-table-api.md
           items:
             - name: Acerca de las tablas de enrutamiento distribuido
               href: about-distributed-routing-tables.md
-            - name: Usar el Table API de enrutamiento distribuido
+            - name: Uso del enrutamiento distribuido Table API
               href: using-the-distributed-routing-table-api.md
               items:
-                - name: Registrar y anular el registro de claves
+                - name: Registro y anulación del registro de claves
                   href: registering-and-deregistering-keys.md
-                - name: Buscar una tabla de enrutamiento distribuida
+                - name: Búsqueda de una tabla de enrutamiento distribuido
                   href: searching-a-distributed-routing-table.md
-            - name: Referencia de Table API de enrutamiento distribuido
+            - name: Referencia de Table API enrutamiento distribuido
               href: distributed-routing-table-api-reference.md
               items:
-                - name: Enumeraciones de tabla de enrutamiento distribuido
+                - name: Enumeraciones de tablas de enrutamiento distribuido
                   href: distributed-routing-table-enumerations.md
                   items:
                     - name: DRT_ADDRESS_FLAGS
@@ -537,23 +537,23 @@
                       href: /windows/desktop/api/drt/nf-drt-drtupdatekey
                 - name: Valores devueltos de la tabla de enrutamiento distribuido
                   href: distributed-routing-table-return-values.md
-        - name: API del proveedor de espacio de nombres PNRP
+        - name: API del proveedor de espacios de nombres PNRP
           href: pnrp-namespace-provider-api.md
           items:
             - name: Acerca de PNRP
               href: about-pnrp.md
-            - name: Usar PNRP
+            - name: Uso de PNRP
               href: using-pnrp.md
               items:
-                - name: Registrar un nombre de mismo nivel
+                - name: Registro de un nombre del mismo nivel
                   href: registering-a-peer-name.md
-                - name: Anular el registro de un nombre de mismo nivel
+                - name: Anulación del registro de un nombre del mismo nivel
                   href: unregistering-a-peer-name.md
                 - name: Resolución de un nombre de mismo nivel
                   href: resolving-a-peer-name.md
-                - name: Enumerar nubes
+                - name: Enumeración de nubes
                   href: enumerating-clouds.md
-            - name: Referencia PNRP
+            - name: Referencia de PNRP
               href: pnrp-reference.md
               items:
                 - name: Funciones PNRP
@@ -625,30 +625,30 @@
                       href: /windows/win32/api/Pnrpdef/ne-pnrpdef-pnrp_resolve_criteria
                 - name: Vínculos de referencia de Winsock NSP
                   href: winsock-nsp-reference-links.md
-                - name: Códigos de error NSP de PNRP
+                - name: Códigos de error de PNRP NSP
                   href: pnrp-nsp-error-codes.md
     - name: Colaboración del mismo nivel
       href: peer-collaboration.md
       items:
         - name: Acerca de la API de colaboración del mismo nivel
           href: about-the-peer-collaboration-api.md
-        - name: Acerca de People Near me
+        - name: Acerca de Equipos a mi alrededor
           href: about-people-near-me.md
           items:
-            - name: ¿Por qué usar People Near me?
+            - name: ¿Por qué usar Equipos a mi alrededor?
               href: why-use-people-near-me-.md
-            - name: Requisitos de equipos a mi alrededor
+            - name: Equipos a mi alrededor requisitos
               href: people-near-me-requirements.md
-            - name: Arquitectura de equipos a mi alrededor
+            - name: Equipos a mi alrededor arquitectura
               href: people-near-me-architecture.md
               items:
-                - name: API de equipos a mi alrededor
+                - name: Equipos a mi alrededor API
                   href: people-near-me-apis.md
-                - name: Tiendas de equipos a mi alrededor
+                - name: Equipos a mi alrededor Store
                   href: people-near-me-stores.md
-                - name: Componentes del mismo nivel de Windows para People Near me
+                - name: Windows Componentes del mismo nivel para Equipos a mi alrededor
                   href: windows-peer-components-for-people-near-me.md
-                - name: Componentes de Windows Vista para People Near me
+                - name: Windows Componentes de Vista para Equipos a mi alrededor
                   href: windows-vista-components-for-people-near-me.md
         - name: Referencia de la API de colaboración
           href: collaboration-api-reference.md
@@ -887,7 +887,7 @@
                   href: /windows/desktop/api/PeerDist/nf-peerdist-peerdistserverclosecontentinformation
                 - name: PeerDistServerRetrieveContentInformation
                   href: /windows/desktop/api/PeerDist/nf-peerdist-peerdistserverretrievecontentinformation
-            - name: Constantes de la API de distribución del mismo nivel
+            - name: Constantes de API de distribución del mismo nivel
               href: peer-distribution-api-constants.md
             - name: Tipos de datos de la API de distribución del mismo nivel
               href: peer-distribution-api-data-types.md

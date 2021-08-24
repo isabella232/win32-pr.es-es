@@ -1,24 +1,24 @@
 ---
-title: Funciones NDF
-description: Las siguientes funciones permiten a los desarrolladores de software usar la funcionalidad proporcionada por el marco de diagnóstico de redes (NDF).
+title: Funciones de NDF
+description: Las siguientes funciones permiten a los desarrolladores de software usar la funcionalidad proporcionada por Network Diagnostic Framework (NDF).
 ms.assetid: c2774e05-82f4-4d40-a80c-ad773bb03ca7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d3a039768b77d69072111f814cb871115bcca24
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 23a46ef79627583efd4d5fb0e0b63dd8e7283c1889e942197679037be38754e2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105676143"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119802355"
 ---
-# <a name="ndf-functions"></a>Funciones NDF
+# <a name="ndf-functions"></a>Funciones de NDF
 
-Las siguientes funciones permiten a los desarrolladores de software usar la funcionalidad proporcionada por el marco de diagnóstico de redes (NDF). Cuando se producen problemas en la red, NDF puede diagnosticar la causa principal y controlar la resolución necesaria correctamente, a veces incluso realizar las reparaciones necesarias.
+Las siguientes funciones permiten a los desarrolladores de software usar la funcionalidad proporcionada por Network Diagnostic Framework (NDF). Cuando se producen problemas de red, NDF puede diagnosticar la causa principal y controlar correctamente la resolución necesaria, a veces incluso realizando las reparaciones necesarias.
 
 > [!Note]  
-> Estas funciones son para los desarrolladores que implementan la funcionalidad básica de NDF en sus aplicaciones.
+> Estas funciones son para desarrolladores que implementan la funcionalidad básica de NDF en sus aplicaciones.
 
- 
+ 
 
 -   [**CopyHelperAttribute**](copyhelperattribute.md)
 -   [**CopyRepairInfo**](copyrepairinfo.md)
@@ -42,16 +42,16 @@ Las siguientes funciones permiten a los desarrolladores de software usar la func
 -   [**NdfCreateWebIncidentEx**](/windows/desktop/api/Ndfapi/nf-ndfapi-ndfcreatewebincidentex)
 -   [**NdfCreateWinSockIncident**](/windows/desktop/api/Ndfapi/nf-ndfapi-ndfcreatewinsockincident)
 -   [**NdfDiagnoseIncident**](/windows/desktop/api/Ndfapi/nf-ndfapi-ndfdiagnoseincident)
--   [**NdfExecuteDiagnosis**](/windows/desktop/api/Ndfapi/nf-ndfapi-ndfexecutediagnosis)
+-   [**NdfExecuteDiagdiagdiag**](/windows/desktop/api/Ndfapi/nf-ndfapi-ndfexecutediagnosis)
 -   [**NdfGetTraceFile**](/windows/desktop/api/Ndfapi/nf-ndfapi-ndfgettracefile)
 -   [**NdfRepairIncident**](/windows/desktop/api/Ndfapi/nf-ndfapi-ndfrepairincident)
 -   [**UtilAssembleStringsWithAlloc**](utilassemblestringswithalloc.md)
 -   [**UtilLoadStringWithAlloc**](utilloadstringwithalloc.md)
 -   [**UtilStringCopyWithAlloc**](utilstringcopywithalloc.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Se utiliza para habilitar el modo de usuario con el fin de obtener una descripción válida de la región de recorte para Windows en el escritorio. Este recorte puede cambiar de forma asincrónica desde el punto de vista de los subprocesos del modo de usuario.
+description: Se usa para permitir que el modo de usuario obtenga una descripción válida de la región de recorte para las ventanas del escritorio. Este recorte puede cambiar de forma asincrónica desde el punto de vista de los subprocesos en modo de usuario.
 ms.assetid: 286f1c06-c27b-42bd-aecc-3a6923e3df29
-title: Función NtGdiDdResetVisrgn (Ntgdi. h)
+title: Función NtGdiDdResetVisrgn (Ntgdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: dd83bcfd6c1f3dec31fb80cf78750bfdfef5e7a9
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3077351b804f854520cff421fcad8a575278bb5a960f60ef760db38e7ca2f3a8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103906972"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119833645"
 ---
-# <a name="ntgdiddresetvisrgn-function"></a>NtGdiDdResetVisrgn función)
+# <a name="ntgdiddresetvisrgn-function"></a>Función NtGdiDdResetVisrgn
 
-\[Esta función está sujeta a cambios en cada revisión del sistema operativo. En su lugar, use Microsoft DirectDraw y Microsoft Direct3DAPIs; estas API aíslan las aplicaciones de estos cambios del sistema operativo y ocultan muchas otras dificultades para interactuar directamente con los controladores de pantalla.\]
+\[Esta función está sujeta a cambios con cada revisión del sistema operativo. En su lugar, use Microsoft DirectDraw y Microsoft Direct3DAPIs; estas API aíslan las aplicaciones de estos cambios del sistema operativo y ocultan muchas otras dificultades implicadas en la interacción directa con los controladores de pantalla.\]
 
-Se utiliza para habilitar el modo de usuario con el fin de obtener una descripción válida de la región de recorte para Windows en el escritorio. Este recorte puede cambiar de forma asincrónica desde el punto de vista de los subprocesos del modo de usuario.
+Se usa para permitir que el modo de usuario obtenga una descripción válida de la región de recorte para las ventanas del escritorio. Este recorte puede cambiar de forma asincrónica desde el punto de vista de los subprocesos en modo de usuario.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,14 +45,14 @@ BOOL APIENTRY NtGdiDdResetVisrgn(
 
 <dl> <dt>
 
-*hSurface* \[ de\]
+*hSurface* \[ En\]
 </dt> <dd>
 
-Puntero al objeto de modo de usuario de cualquier superficie que pertenezca al dispositivo DirectDraw para el que se va a restablecer el recorte. Para obtener más información, consulte la documentación de DDK.
+Puntero al objeto en modo de usuario de cualquier superficie que pertenezca al dispositivo DirectDraw para el que se va a restablecer el recorte. Para más información, consulte la documentación de DDK.
 
 </dd> <dt>
 
-*hWnd* \[ de\]
+*hwnd* \[ En\]
 </dt> <dd>
 
 Reservado.
@@ -61,25 +61,25 @@ Reservado.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si se realiza correctamente, esta función devuelve **true**; en caso contrario, devuelve **false**.
+Si se realiza correctamente, esta función devuelve **TRUE**; de lo contrario, **devuelve FALSE.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El recorte puede cambiar de forma asincrónica desde el punto de vista de los subprocesos del modo de usuario. Las partes del modo kernel de DirectDraw y Windows Interfaz de dispositivo gráfico (GDI) mantienen un contador que se incrementa cada vez que cambia la lista de recortes para todo el escritorio. Una llamada a esta función registra este contador con todas las superficies principales de DirectDraw existentes en el sistema.
+El recorte puede cambiar de forma asincrónica desde el punto de vista de los subprocesos en modo de usuario. Las partes en modo kernel de DirectDraw y Windows Interfaz de dispositivo gráfico (GDI) mantienen un contador que se incrementa cada vez que cambia la lista de recorte para todo el escritorio. Una llamada a esta función registra este contador con todas las superficies principales existentes de DirectDraw en el sistema.
 
-En cualquier momento posterior, cuando una de estas superficies principales se modifica mediante una operación [IDirectDrawSurface7:: BLT](/windows/win32/api/ddraw/nf-ddraw-idirectdrawsurface7-blt) o [IDirectDrawSurface7:: Lock](/previous-versions/ms858221(v=msdn.10)) (consulte la documentación del DDK), el contador registrado con la superficie se compara con el contador global. Si estos valores son diferentes, se devuelve un código de error DDERR \_ VISRGNCHANGED al código del modo de usuario. Después, el código de modo de usuario volverá a consultar el recorte actual del escritorio, llamará a **NtGdiDdResetVisrgn** y volverá a intentar el IDirectDrawSurface7:: BLT aplicado a la superficie primaria, respetando el nuevo recorte. Finalmente, el recorte que ha muestreado el código en modo de usuario será el mismo que el recorte actual propiedad del modo kernel y se permitirá que IDirectDrawSurface7:: BLT continúe.
+En cualquier momento posterior cuando una de estas superficies principales se modifica mediante una operación [IDirectDrawSurface7::Blt](/windows/win32/api/ddraw/nf-ddraw-idirectdrawsurface7-blt) o [IDirectDrawSurface7::Lock](/previous-versions/ms858221(v=msdn.10)) (consulte la documentación del DDK), el contador registrado con la superficie se compara con el contador global. Si estos valores son diferentes, se devuelve un código de error DDERR \_ VISRGNCHANGED al código en modo de usuario. A continuación, el código en modo de usuario volverá a consultar el recorte actual del escritorio, llamará a **NtGdiDdResetVisrgn** y volverá a intentar el IDirectDrawSurface7::Blt aplicado a la superficie principal, respetando el nuevo recorte. Finalmente, el recorte muestreado por el código en modo de usuario será el mismo que el recorte actual que pertenece al modo kernel, y IDirectDrawSurface7::Blt podrá continuar.
 
-Se recomienda a las aplicaciones que usen la interfaz [IDirectDrawClipper](/previous-versions/aa919448(v=msdn.10)) o [IDirect3DDevice8::P método reenviado](/previous-versions/ms889707(v=msdn.10)) para controlar los cambios de recorte asincrónicos. Estas construcciones implementan el recorte asincrónico de una forma independiente del sistema operativo y automatizada.
+Se recomienda a las aplicaciones usar la [interfaz IDirectDrawClipper](/previous-versions/aa919448(v=msdn.10)) o el método [IDirect3DDevice8::P resent](/previous-versions/ms889707(v=msdn.10)) para controlar los cambios de recorte asincrónicos. Estas construcciones implementan el recorte asincrónico de una manera automatizada e independiente del sistema operativo.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Ntgdi. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Ntgdi.h</dt> </dl> |
 
 
 
@@ -87,7 +87,7 @@ Se recomienda a las aplicaciones que usen la interfaz [IDirectDrawClipper](/prev
 
 <dl> <dt>
 
-[Compatibilidad con clientes de nivel inferior de gráficos](-dxgkernel-low-level-client-support.md)
+[Compatibilidad con clientes de bajo nivel de gráficos](-dxgkernel-low-level-client-support.md)
 </dt> <dt>
 
 [**DdResetVisrgn**](/windows/desktop/api/Ddrawgdi/nf-ddrawgdi-ddresetvisrgn)

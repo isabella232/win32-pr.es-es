@@ -6,12 +6,12 @@ keywords:
 - OpenGL, información legal
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a41d5cfbe3d14b57d2d71312736f4006f08c7f8
-ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
+ms.openlocfilehash: 64f80933231af06e1925bf888c5dcc18803de1d687320182480465bee19db97f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111988920"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119777385"
 ---
 # <a name="legal-information-opengl"></a>Información legal (OpenGL)
 
@@ -25,7 +25,7 @@ Microsoft, MS-DOS, Windows, Windows NT y Win32 son marcas comerciales registrada
 
 TrueType es una marca comercial registrada de Apple Computer, Inc.
 
-UNIX es una marca comercial registrada del grupo abierto.
+UNIX es una marca comercial registrada de Open Group.
 
 Fragmentos de Silicon Graphics, Inc. de la Guía *de programación de OpenGL* y el *Manual de referencia de OpenGL*. Se vuelve a imprimir con el permiso de Silicon Graphics, Inc.
 

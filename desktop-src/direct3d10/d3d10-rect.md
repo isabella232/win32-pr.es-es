@@ -1,29 +1,29 @@
 ---
-description: 'D3D10 \_ Rect se declara como sigue:'
+description: 'D3D10 \_ RECT se declara como sigue:'
 ms.assetid: a0b27fb0-1e48-4e46-ad8c-99f197c31dc2
-title: D3D10_RECT (D3D10. h)
+title: D3D10_RECT (D3D10.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d978a3040e7dfd1cb916138991aa060f6663543f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 235a991942d2c6feba6070c4da3bb281692cbd6e0de69dc3cdfb9214ef60fb2a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104083784"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119635005"
 ---
-# <a name="d3d10_rect"></a>D3D10 \_ Rect
+# <a name="d3d10_rect"></a>D3D10 \_ RECT
 
-D3D10 \_ Rect se declara como sigue:
+D3D10 \_ RECT se declara como sigue:
 
 ``` syntax
 typedef RECT D3D10_RECT;
 ```
 
-Para obtener más información sobre esta estructura de rectángulos GDI, vea [Rect](/previous-versions//ms536136(v=vs.85)).
+Para obtener más información sobre esta estructura de rectángulo GDI, vea [RECT](/previous-versions//ms536136(v=vs.85)).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta estructura se usa para rectángulos con tijeras por [**ID3D10Device:: RSGetScissorRects**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-rsgetscissorrects) y [**ID3D10Device:: RSSetScissorRects**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-rssetscissorrects).
+[**Id3D10Device::RSGetScissorRects**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-rsgetscissorrects) e [**ID3D10Device::RSSetScissorRects**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-rssetscissorrects)usan esta estructura para rectángulos de rectángulos de rectángulos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -31,8 +31,8 @@ Esta estructura se usa para rectángulos con tijeras por [**ID3D10Device:: RSGet
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3D10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3D10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3D10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3D10.lib</dt> </dl> |
 
 
 

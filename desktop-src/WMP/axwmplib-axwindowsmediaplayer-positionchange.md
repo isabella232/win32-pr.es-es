@@ -1,9 +1,9 @@
 ---
 title: Evento PositionChange del objeto AxWindowsMediaPlayer
-description: El evento PositionChange se produce cuando se ha cambiado la posición de reproducción actual dentro del elemento multimedia.
+description: El evento PositionChange tiene lugar cuando se ha cambiado la posición de reproducción actual dentro del elemento multimedia.
 ms.assetid: 92d469b9-813a-4148-be68-0fcef2e41491
 keywords:
-- Evento PositionChange del objeto AxWindowsMediaPlayer de Windows Media Player
+- Evento PositionChange del objeto AxWindowsMediaPlayer Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 552b748121668e71ee4d2ffb54feed441620a1cb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 269d83c92687b5debda8b70fb4d6710b55eebd5476153759ebad36e5d17657d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119764685"
 ---
 # <a name="positionchange-event-of-the-axwindowsmediaplayer-object"></a>Evento PositionChange del objeto AxWindowsMediaPlayer
 
-El evento PositionChange se produce cuando se ha cambiado la posición de reproducción actual dentro del elemento multimedia.
+El evento PositionChange tiene lugar cuando se ha cambiado la posición de reproducción actual dentro del elemento multimedia.
 
 ``` syntax
 [C#]
@@ -47,14 +47,14 @@ El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 | Propiedad    | Descripción                                         |
 |-------------|-----------------------------------------------------|
-| oldPosition | System. DoubleSpecifies la posición anterior.<br/> |
-| newPosition | System. DoubleSpecifies la nueva posición.<br/> |
+| oldPosition | System.DoubleEspecifica la posición anterior.<br/> |
+| newPosition | System.DoubleEspecifica la nueva posición.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este evento no se genera rutinariamente durante la reproducción. Solo se produce cuando algo cambia activamente la posición actual del elemento multimedia de reproducción, como cuando el usuario mueve el identificador de búsqueda o cuando se ejecuta código que especifica un valor para IWMPControls. **currentPosition**.
 
@@ -62,9 +62,9 @@ Este evento no se genera rutinariamente durante la reproducción. Solo se produc
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                          |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Ensamblado<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -77,7 +77,7 @@ Este evento no se genera rutinariamente durante la reproducción. Solo se produc
 [**Objeto AxWindowsMediaPlayer (VB y C#)**](axwindowsmediaplayer-object--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPControls. currentPosition (VB y C#)**](wmplibiwmpcontrols-iwmpcontrols-currentposition--vb-and-c.md)
+[**IWMPControls.currentPosition (VB y C#)**](wmplibiwmpcontrols-iwmpcontrols-currentposition--vb-and-c.md)
 </dt> </dl>
 
  

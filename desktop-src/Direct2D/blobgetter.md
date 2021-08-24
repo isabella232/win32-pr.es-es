@@ -1,6 +1,6 @@
 ---
-title: BlobGetter (D2d1effecthelpers. h)
-description: Llama a una devolución de llamada de captador de propiedad de función miembro para una propiedad de tipo de BLOB.
+title: BlobGetter (D2d1effecthelpers.h)
+description: Llama a una devolución de llamada del getter de la propiedad member-function para una propiedad de tipo blob.
 ms.assetid: 55A41BE4-2AAE-480B-A143-86E8E7533210
 keywords:
 - BlobGetter Direct2D
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d9c638501c9c15abc2f895003fd79c481fd0e05b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 91e7c918965fc2d7cdf8948806ffffea32f35cafc061ff0d81addd5499c37072
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660213"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119653265"
 ---
 # <a name="blobgetter"></a>BlobGetter
 
-Llama a una devolución de llamada de captador de propiedad de función miembro para una propiedad de tipo de BLOB.
+Llama a una devolución de llamada del getter de la propiedad member-function para una propiedad de tipo blob.
 
 ``` syntax
 template<typename T, T P, typename I>
@@ -41,7 +41,7 @@ HRESULT CALLBACK BlobGetter(
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D2d1effecthelpers. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D2d1effecthelpers.h</dt> </dl> |
 
 
 
@@ -49,7 +49,7 @@ HRESULT CALLBACK BlobGetter(
 
 <dl> <dt>
 
-[**Direct2D:: BlobSetter**](blobsetter.md)
+[**Direct2D::BlobSetter**](blobsetter.md)
 </dt> </dl>
 
  

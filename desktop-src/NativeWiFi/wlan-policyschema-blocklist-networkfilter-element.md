@@ -1,7 +1,7 @@
 ---
-description: Especifica la lista de redes LAN inalámbricas a las que un equipo no debe conectarse.
+description: Especifica la lista de redes LAN inalámbricas a las que una máquina no debe conectarse.
 ms.assetid: 01db3f7e-1e27-4378-9c42-bc38192f9507
-title: Elemento de listas de bloqueo (networkFilter)
+title: Elemento blockList (networkFilter)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: e852286d00d93904bd185fef6c2f3444bb5987f9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9c5bd795ee9f5fc21dc205c24306820b4dec7f074638aa0e4f11ba3acde68cd0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000893"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119684425"
 ---
-# <a name="blocklist-networkfilter-element"></a>Elemento de listas de bloqueo (networkFilter)
+# <a name="blocklist-networkfilter-element"></a>Elemento blockList (networkFilter)
 
-El elemento de lista de bloqueo (networkFilter) especifica la lista de redes LAN inalámbricas a las que un equipo no debe conectarse.
+El elemento blockList (networkFilter) especifica la lista de redes LAN inalámbricas a las que una máquina no debe conectarse.
 
 ``` syntax
 <xs:element name="blockList">
@@ -42,7 +42,7 @@ El elemento de lista de bloqueo (networkFilter) especifica la lista de redes LAN
 </xs:element>
 ```
 
-El elemento de listas de **bloqueo** se define mediante el elemento [**networkFilter**](wlan-policyschema-networkfilter-wlanpolicy-element.md) .
+El **elemento blockList** se define mediante el [**elemento networkFilter.**](wlan-policyschema-networkfilter-wlanpolicy-element.md)
 
 ## <a name="child-elements"></a>Elementos secundarios
 
@@ -50,7 +50,7 @@ El elemento de listas de **bloqueo** se define mediante el elemento [**networkFi
 
 | Elemento                                                        | Tipo                                                                     | Descripción                      |
 |----------------------------------------------------------------|--------------------------------------------------------------------------|----------------------------------|
-| [**Storage**](wlan-policyschema-network-blocklist-element.md) | [**networkItemType**](wlan-policyschema-networkitemtype-complextype.md) | La red bloqueada. <br/> |
+| [**Red**](wlan-policyschema-network-blocklist-element.md) | [**networkItemType**](wlan-policyschema-networkitemtype-complextype.md) | Red bloqueada. <br/> |
 
 
 
@@ -60,8 +60,8 @@ El elemento de listas de **bloqueo** se define mediante el elemento [**networkFi
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

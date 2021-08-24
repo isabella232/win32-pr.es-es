@@ -12,14 +12,14 @@ api_type:
 - HeaderDef
 api_location:
 - ntetw.h
-ms.openlocfilehash: 5ea3de0dba842544b0ffacc785fb138bdda571a0
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1fd25931e6a58b97e052ecd7da43bd651688d2bf726d8b5ba2acd84ce820be7a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000705"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119653435"
 ---
-# <a name="etweventwritefull-function"></a>EtwEventWriteFull función)
+# <a name="etweventwritefull-function"></a>Función EtwEventWriteFull
 
 [La función EtwEventWriteFull y las estructuras que devuelve son internas del sistema operativo y están sujetas a cambios de una versión de Windows a otra.]
 
@@ -55,21 +55,21 @@ RegHandle para el proveedor.
 *EventDescriptor* 
 </dt> <dd>
 
-Descriptor de eventos del evento que se va a registrar.
+Descriptor de eventos del evento que se registrará.
 
 </dd> <dt>
 
 *EventProperty*
 </dt> <dd>
 
-Marca proporcionada por el usuario.
+Marca que ha dado el usuario.
 
 </dd> <dt>
 
 *ActivityId*
 </dt> <dd>
 
-ID. de actividad.
+Id. de actividad.
 
 </dd> <dt>
 
@@ -83,7 +83,7 @@ Identificador de actividad relacionado.
 *UserDataCount*
 </dt> <dd>
 
-El número de elementos de datos de usuario.
+Número de elementos de datos de usuario.
 
 </dd> <dt>
 
@@ -98,7 +98,7 @@ Puntero a una matriz de elementos de datos de usuario.
 
 Código de error de Win32.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La función EtwEventWriteFull y las estructuras que devuelve son internas del sistema operativo y están sujetas a cambios de una versión de Windows a otra. Para mantener la compatibilidad de la aplicación, es mejor usar funciones públicas en su lugar.
 
@@ -107,7 +107,7 @@ La función EtwEventWriteFull y las estructuras que devuelve son internas del si
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Plataforma de destino** | Windows |
-| **Header** | ntetw. h |
+| **Header** | ntetw.h |
 
 ## <a name="see-also"></a>Vea también
 

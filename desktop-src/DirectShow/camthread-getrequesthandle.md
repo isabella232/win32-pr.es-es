@@ -1,7 +1,7 @@
 ---
-description: 'El método GetRequestHandle recupera un identificador para el evento señalado por el método CAMThread:: CallWorker.'
+description: El método GetRequestHandle recupera un identificador para el evento señalado por el método CAMThread::CallWorker.
 ms.assetid: 6e4496ae-a635-4b55-ae7a-31748f21068b
-title: Método CAMThread. GetRequestHandle (Wxutil. h)
+title: Método CAMThread.GetRequestHandle (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 051a6a3e3daed1dae6df3bdbb42e36f07b852d85
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 82fa1be333ff35821f187cea980746c6b729a05c12e2103f4465bb44bbcc6f9d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690732"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119652595"
 ---
-# <a name="camthreadgetrequesthandle-method"></a>CAMThread. GetRequestHandle, método
+# <a name="camthreadgetrequesthandle-method"></a>Método CAMThread.GetRequestHandle
 
-El `GetRequestHandle` método recupera un identificador para el evento señalado por el método [**CAMThread:: CallWorker**](camthread-callworker.md) .
+El `GetRequestHandle` método recupera un identificador para el evento señalado por el método [**CAMThread::CallWorker.**](camthread-callworker.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un identificador de evento.
+Devuelve un identificador de eventos.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase CAMEvent mantiene un evento privado de restablecimiento manual, establecido por CallWorker y restablecido por el método [**CAMThread:: reply**](camthread-reply.md) .
+La clase CAMEvent mantiene un evento de restablecimiento manual privado, establecido por CallWorker y restablecido por el [**método CAMThread::Reply.**](camthread-reply.md)
 
 Si llama a una función como WaitForMultipleObjects, use GetRequestHandle para recuperar el identificador de eventos.
 
@@ -56,8 +56,8 @@ Si llama a una función como WaitForMultipleObjects, use GetRequestHandle para r
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxutil. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxutil.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Si llama a una función como WaitForMultipleObjects, use GetRequestHandle para r
 
 <dl> <dt>
 
-[**Clase CAMThread**](camthread.md)
+[**CLASE CAMThread**](camthread.md)
 </dt> </dl>
 
  

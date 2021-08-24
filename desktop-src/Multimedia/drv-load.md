@@ -1,9 +1,9 @@
 ---
-title: Mensaje de DRV_LOAD (mmsystem. h)
-description: Notifica al controlador que se ha cargado. El controlador debe asegurarse de que el hardware y los controladores auxiliares que necesita para funcionar correctamente estén presentes.
+title: DRV_LOAD mensaje (Mmsystem.h)
+description: Notifica al controlador que se ha cargado. El controlador debe asegurarse de que todos los controladores de hardware y de soporte que necesita para funcionar correctamente estén presentes.
 ms.assetid: f3642d91-cea8-499d-8d2e-bf01a59a7d72
 keywords:
-- Mensaje de DRV_LOAD de Windows multimedia
+- DRV_LOAD mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ca7dda950eaa84f924f4845d99d5740e37d6b354
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d74b8d0663e96f0dc700739c7b8b5f9304d478ed02bf9493f24d03a506c14a61
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103997089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119678715"
 ---
-# <a name="drv_load-message"></a>DRV \_ cargar mensaje
+# <a name="drv_load-message"></a>Mensaje DE CARGA DE DRV \_
 
-Notifica al controlador que se ha cargado. El controlador debe asegurarse de que el hardware y los controladores auxiliares que necesita para funcionar correctamente estén presentes.
+Notifica al controlador que se ha cargado. El controlador debe asegurarse de que todos los controladores de hardware y de soporte que necesita para funcionar correctamente estén presentes.
 
 ## <a name="parameters"></a>Parámetros
 
-El parámetro *hdrvr* siempre es cero. No se usan los parámetros *dwDriverId*, *lParam1* y *lParam2* .
+El *parámetro hdrvr* siempre es cero. No se usan los parámetros *dwDriverId,* *lParam1* y *lParam2.*
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor distinto de cero si es correcto o cero de lo contrario.
+Devuelve un valor distinto de cero si se realiza correctamente o cero de lo contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El mensaje de **\_ carga DRV** es siempre el primer mensaje que recibe un controlador de dispositivo.
+El **mensaje DRV \_ LOAD** siempre es el primer mensaje que recibe un controlador de dispositivo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,7 +45,7 @@ El mensaje de **\_ carga DRV** es siempre el primer mensaje que recibe un contro
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 

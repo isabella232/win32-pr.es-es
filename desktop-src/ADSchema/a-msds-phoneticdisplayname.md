@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-Phonetic-Display-Name
+title: Atributo ms-DS-Phonetic-Display-Name
 description: Nombre para mostrar fonético de un objeto. En ausencia de un nombre para mostrar fonético, se usa el nombre para mostrar existente.
 ms.assetid: d1dd7d20-c280-4533-9da9-a7b6ff224970
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-DS-Phonetic-Display-Name
-- Esquema de AD de atributo msDS-PhoneticDisplayName
+- Esquema de AD del atributo ms-DS-Phonetic-Display-Name
+- Esquema de AD del atributo msDS-PhoneticDisplayName
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 87be99b0937199b4467e12418761f21f1dbc4983
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 641b686fd1d96f12df973c75b297a85cdc83e0df4fc7c347ae7e28fb40502749
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997556"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803725"
 ---
-# <a name="ms-ds-phonetic-display-name-attribute"></a>atributo MS-DS-Phonetic-Display-Name
+# <a name="ms-ds-phonetic-display-name-attribute"></a>Atributo ms-DS-Phonetic-Display-Name
 
 Nombre para mostrar fonético de un objeto. En ausencia de un nombre para mostrar fonético, se usa el nombre para mostrar existente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Nombre de MS-DS-Phonetic-Display-Name                 |
-| Nombre para mostrar de LDAP | msDS-PhoneticDisplayName                    |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | ms-DS-Phonetic-Display-Name                 |
+| Ldap-Display-Name | msDS-PhoneticDisplayName                    |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1946                     |
-| System-ID-GUID    | e21a94e4-2d66-4ce5-b30d-0ef87a776ff0        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | e21a94e4-2d66-4ce5-b30d-0ef87a776ff0        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -52,18 +52,18 @@ Nombre para mostrar fonético de un objeto. En ausencia de un nombre para mostra
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                      |
 | MAPI-Id                | 0x8C92                                                                                                                  |
-| System-Only            | False                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                    |
-| Está indexado             | True                                                                                                                    |
-| En el catálogo global      | True                                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                            |
+| System-Only            | Falso                                                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                                                    |
+| Está indexado             | Verdadero                                                                                                                    |
+| En el catálogo global      | Verdadero                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                            |
 | Range-Lower            | 0                                                                                                                       |
 | Range-Upper            | 256                                                                                                                     |
 | Search-Flags           | 0x00000005                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                              |
-| Clases usadas en        | [**Destinatario de correo**](c-mailrecipient.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Clases usadas en        | [**Destinatario del correo**](c-mailrecipient.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -73,18 +73,18 @@ Nombre para mostrar fonético de un objeto. En ausencia de un nombre para mostra
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                      |
 | MAPI-Id                | 0x8C92                                                                                                                  |
-| System-Only            | False                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                    |
-| Está indexado             | True                                                                                                                    |
-| En el catálogo global      | True                                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                            |
+| System-Only            | Falso                                                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                                                    |
+| Está indexado             | Verdadero                                                                                                                    |
+| En el catálogo global      | Verdadero                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                            |
 | Range-Lower            | 0                                                                                                                       |
 | Range-Upper            | 256                                                                                                                     |
 | Search-Flags           | 0x00000005                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                              |
-| Clases usadas en        | [**Destinatario de correo**](c-mailrecipient.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Clases usadas en        | [**Destinatario del correo**](c-mailrecipient.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -92,20 +92,20 @@ Nombre para mostrar fonético de un objeto. En ausencia de un nombre para mostra
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                      |
 | MAPI-Id                | 0x8C92                                                                                                                  |
-| System-Only            | False                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                    |
-| Está indexado             | True                                                                                                                    |
-| En el catálogo global      | True                                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                            |
+| System-Only            | Falso                                                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                                                    |
+| Está indexado             | Verdadero                                                                                                                    |
+| En el catálogo global      | Verdadero                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                            |
 | Range-Lower            | 0                                                                                                                       |
 | Range-Upper            | 256                                                                                                                     |
 | Search-Flags           | 0x00000005                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                              |
-| Clases usadas en        | [**Destinatario de correo**](c-mailrecipient.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Clases usadas en        | [**Destinatario del correo**](c-mailrecipient.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 

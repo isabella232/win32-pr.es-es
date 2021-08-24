@@ -1,7 +1,7 @@
 ---
 description: El método AddBefore inserta una lista antes de la posición especificada. Este método usa los parámetros "pos" y "pList".
 ms.assetid: 0fdb2a59-d9de-4dbb-8536-8e10726201d0
-title: 'Método CGenericList.AddBefore (Wxlist.h): pos, pList parameters'
+title: 'Método CGenericList.AddBefore (Wxlist.h): pos, parámetros pList'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119697455"
 ---
-# <a name="cgenericlistaddbefore-method-wxlisth---pos-plist-parameters"></a>Método CGenericList.AddBefore (Wxlist.h): pos, pList parameters
+# <a name="cgenericlistaddbefore-method-wxlisth---pos-plist-parameters"></a>Método CGenericList.AddBefore (Wxlist.h): pos, parámetros pList
 
 El `AddBefore` método inserta una lista antes de la posición especificada.
 
@@ -68,7 +68,7 @@ Devuelve **TRUE si** se realiza correctamente. De lo contrario, **devuelve FALSE
 | Encabezado | Wxlist.h (incluir Secuencias.h) |
 | Biblioteca| Strmbase.lib (compilaciones comerciales); Strmbasd.lib (compilaciones de depuración) |
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

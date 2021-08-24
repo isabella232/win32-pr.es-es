@@ -4,37 +4,37 @@ ms.assetid: e07c3f31-3d53-4250-9634-f66690357f26
 title: Quality-Based codificación de velocidad de bits variable
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf12a60ab41b0ebf45c23fdb8a3f7ed330abda2b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d19c2cd63d5bc6f777f702827e999cd9d2ae2a272194f4b776205c1581376256
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119722205"
 ---
 # <a name="quality-based-variable-bit-rate-encoding"></a>Quality-Based codificación de velocidad de bits variable
 
-A diferencia de la [codificación de velocidad de bits constante](constant-bit-rate-encoding.md) (CBR), donde el codificador se esfuerza por mantener una velocidad de bits determinada de los medios codificados, en el modo de velocidad de bits variable (VBR), el codificador se esfuerza por lograr la mejor calidad posible de los medios codificados. La principal diferencia entre CBR y VBR es el tamaño de la ventana de búfer utilizada. Las secuencias con codificación VBR suelen tener ventanas de búfer grandes en comparación con las secuencias con codificación CBR.
+A diferencia de la codificación de velocidad de bits [constante](constant-bit-rate-encoding.md) (CBR), donde el codificador se esfuerza por mantener una velocidad de bits determinada de los medios codificados, en el modo de velocidad de bits variable (VBR), el codificador se esfuerza por lograr la mejor calidad posible de los medios codificados. La diferencia principal entre CBR y VBR es el tamaño de la ventana de búfer utilizada. Las secuencias codificadas con VBR suelen tener ventanas de búfer grandes en comparación con las secuencias codificadas en CBR.
 
-La calidad del contenido codificado viene determinada por la cantidad de datos que se pierden cuando se comprime el contenido. Muchos factores afectan a la pérdida de datos en el proceso de compresión; pero en general, cuanto más complejos sean los datos originales y mayor sea la razón de compresión, más detalles se perderán en el proceso de compresión.
+La calidad del contenido codificado viene determinada por la cantidad de datos que se pierden cuando se comprime el contenido. Muchos factores afectan a la pérdida de datos en el proceso de compresión. pero, en general, cuanto más complejos son los datos originales y mayor es la relación de compresión, más detalles se pierden en el proceso de compresión.
 
-En el modo VBR basado en la calidad, no se define una velocidad de bits o una ventana de búfer que el codificador debe seguir. En su lugar, especifique un nivel de calidad para una secuencia de medios digitales en lugar de una velocidad de bits. El codificador comprime el contenido para que todos los ejemplos sean de calidad comparable; Esto garantiza que la calidad sea coherente a lo largo de la duración de la reproducción, independientemente de los requisitos de búfer del flujo resultante.
+En el modo VBR basado en calidad, no se define una velocidad de bits ni una ventana de búfer que el codificador debe seguir. En su lugar, especifique un nivel de calidad para una secuencia multimedia digital en lugar de una velocidad de bits. El codificador comprime el contenido para que todas las muestras sean de una calidad comparable; esto garantiza que la calidad sea coherente a lo largo de la duración de reproducción, independientemente de los requisitos de búfer de la secuencia resultante.
 
-La codificación VBR basada en la calidad tiende a crear grandes flujos comprimidos. En general, este tipo de codificación es adecuado para la reproducción local o las conexiones de red de ancho de banda alto (o descarga y reproducción). Por ejemplo, puede escribir una aplicación para copiar canciones de archivos de CD a ASF en un equipo. El uso de la codificación VBR basada en la calidad garantiza que todas las canciones copiadas tengan la misma calidad. En esos casos, la calidad coherente proporcionará una mejor experiencia de usuario.
+La codificación VBR basada en calidad tiende a crear flujos comprimidos de gran tamaño. En general, este tipo de codificación es adecuado para la reproducción local o las conexiones de red de ancho de banda alto (o descargar y reproducir). Por ejemplo, puede escribir una aplicación para copiar canciones de cd a archivos ASF en un equipo. El uso de la codificación VBR basada en calidad garantizaría que todas las canciones copiadas sean de la misma calidad. En esos casos, la calidad coherente proporcionará una mejor experiencia de usuario.
 
-La desventaja de la codificación VBR basada en la calidad es que no hay ninguna manera de conocer los requisitos de tamaño o ancho de banda de los medios codificados antes de la sesión de codificación, ya que el codificador utiliza un único paso de codificación. Esto puede hacer que los archivos de codificación VBR basados en la calidad sean inadecuados para las circunstancias en las que la memoria o el ancho de banda están restringidos, como reproducir contenido en reproductores multimedia portátiles o streaming a través de una red de ancho de banda bajo.
+La desventaja de la codificación VBR basada en calidad es que realmente no hay ninguna manera de conocer los requisitos de tamaño o ancho de banda de los medios codificados antes de la sesión de codificación, porque el codificador usa un solo paso de codificación. Esto puede hacer que los archivos codificados en VBR basados en calidad sean inadecuados en circunstancias en las que la memoria o el ancho de banda están restringidos, como la reproducción de contenido en reproductores multimedia portátiles o el streaming a través de una red de ancho de banda bajo.
 
-## <a name="configuring-the-encoder-for-quality-based-vbr-encoding"></a>Configuración del codificador para la codificación VBR Quality-Based
+## <a name="configuring-the-encoder-for-quality-based-vbr-encoding"></a>Configuración del codificador para la codificación Quality-Based VBR
 
-La configuración del codificador se establece a través de los valores de propiedad. Estas propiedades se definen en wmcodecdsp. h. Las propiedades de configuración deben establecerse en el codificador antes de negociar el tipo de medio de salida. Para obtener información sobre cómo establecer propiedades en el codificador, consulte [configuración del codificador](configuring-the-encoder.md).
+La configuración del codificador se establece a través de valores de propiedad. Estas propiedades se definen en wmcodecdsp.h. Las propiedades de configuración deben establecerse en el codificador antes de negociar el tipo de medio de salida. Para obtener información sobre cómo establecer propiedades en el codificador, vea [Configuring the Encoder](configuring-the-encoder.md).
 
-En la lista siguiente se muestran las propiedades que se deben establecer para este tipo de codificación:
+En la lista siguiente se muestran las propiedades que debe establecer para este tipo de codificación:
 
--   Especifique el modo de codificación VBR estableciendo la propiedad **MFPKEY \_ VBRENABLED** en Variant \_ true.
--   Establezca **MFPKEY \_ PASSESUSED** en 1 porque este modo VBR usa un paso de codificación.
--   Establezca el nivel de calidad deseado (de 0 a 100) mediante el establecimiento de la propiedad **\_ \_ VBRQUALITY deseada de MFPKEY** . VBR basada en la calidad no codifica el contenido en ningún parámetro de búfer predefinido. Este nivel de calidad que se mantendrá para todo el flujo, independientemente de los requisitos de velocidad de bits que resulten.
--   En el caso de las secuencias de vídeo, establezca la velocidad de bits promedio en un valor distinto de cero en el atributo [**MF \_ MT \_ AVG \_ bitrate**](mf-mt-avg-bitrate-attribute.md) en el tipo de medio de salida del codificador. La velocidad de bits precisa se actualiza una vez completada la sesión de codificación.
+-   Especifique el modo de codificación de VBR estableciendo la **propiedad MFPKEY \_ VBRENABLED** en VARIANT \_ TRUE.
+-   Establezca **MFPKEY \_ PASSESUSED en** 1 porque este modo VBR usa un paso de codificación.
+-   Establezca el nivel de calidad deseado (de 0 a 100) estableciendo la propiedad **MFPKEY \_ DESIRED \_ VBRQUALITY.** VBR basado en calidad no codifica el contenido en ningún parámetro de búfer predefinido. Este nivel de calidad que se mantendrá para toda la secuencia, independientemente de los requisitos de velocidad de bits resultantes.
+-   En el caso de las secuencias de vídeo, establezca la velocidad de bits media en un valor distinto de cero en el atributo [**\_ MF MT AVG \_ \_ BITRATE**](mf-mt-avg-bitrate-attribute.md) en el tipo de medio de salida del codificador. La velocidad de bits precisa se actualiza una vez completada la sesión de codificación.
 
-En el ejemplo de código siguiente se muestra la implementación de SetEncodingProperties. Esta función establece las propiedades de codificación de nivel de secuencia para CBR y VBR.
+En el ejemplo de código siguiente se muestra la implementación de SetEncodingProperties. Esta función establece las propiedades de codificación de nivel de flujo para CBR y VBR.
 
 
 ```C++
@@ -173,7 +173,7 @@ done:
 
 <dl> <dt>
 
-[Tipos de codificación ASF](asf-encoding-types.md)
+[Tipos de codificación asf](asf-encoding-types.md)
 </dt> </dl>
 
  

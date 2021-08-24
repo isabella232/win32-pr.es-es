@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MOM_DONE (Mciapi. h)
-description: El \_ mensaje MOM done se envía a una función de devolución de llamada de salida MIDI cuando se ha reproducido el búfer de secuencia o exclusivo del sistema especificado y se va a devolver a la aplicación.
+title: MOM_DONE mensaje (Mciapi.h)
+description: El mensaje MOM DONE se envía a una función de devolución de llamada de salida DE MIDI cuando se ha reproducido el búfer de flujo o exclusivo del sistema especificado y se devuelve \_ a la aplicación.
 ms.assetid: 0b9bd0e1-c87d-4f21-912e-5ac9f5c04192
 keywords:
-- Mensaje de MOM_DONE de Windows multimedia
+- MOM_DONE mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8af3f58f7d8f4625971dde5d7ec807c9f963d40f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3b4361ef25af7bab629138d4371c852d661373891e9d9513ae30b8ad79e97670
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119807035"
 ---
-# <a name="mom_done-message"></a>Mensaje de MOM \_ Done
+# <a name="mom_done-message"></a>Mensaje \_ DE MOM DONE
 
-El mensaje **MOM \_ Done** se envía a una función de devolución de llamada de salida MIDI cuando se ha reproducido el búfer de secuencia o exclusivo del sistema especificado y se va a devolver a la aplicación.
+El **mensaje \_ MOM DONE** se envía a una función de devolución de llamada de salida DE MIDI cuando se ha reproducido el búfer de flujo o exclusivo del sistema especificado y se devuelve a la aplicación.
 
 
 ```C++
@@ -41,20 +41,20 @@ dwParam2 = reserved
 <span id="lpMidiHdr"></span><span id="lpmidihdr"></span><span id="LPMIDIHDR"></span>*lpMidiHdr*
 </dt> <dd>
 
-Puntero a una estructura [**MIDIHDR**](/windows/win32/api/mmeapi/ns-mmeapi-midihdr) que identifica el búfer.
+Puntero a una [**estructura MIDIHDR**](/windows/win32/api/mmeapi/ns-mmeapi-midihdr) que identifica el búfer.
 
 </dd> <dt>
 
 <span id="dwParam2"></span><span id="dwparam2"></span><span id="DWPARAM2"></span>*dwParam2*
 </dt> <dd>
 
-Sector No use.
+Reservado; no use.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje no devuelve ningún valor.
+Este mensaje no devuelve un valor.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,7 +64,7 @@ Este mensaje no devuelve ningún valor.
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Este mensaje no devuelve ningún valor.
 
 <dl> <dt>
 
-[Mensajes MIDI](midi-messages.md)
+[Mensajes DE MIDI](midi-messages.md)
 </dt> </dl>
 
  

@@ -1,25 +1,25 @@
 ---
-title: Macros multimedia
-description: Macros multimedia
+title: Multimedia Macros
+description: Multimedia Macros
 ms.assetid: 4b0d1f92-6e79-496b-ba35-7fc17a5127d4
 keywords:
-- Multimedia de Windows, macros
+- Windows multimedia,macros
 - multimedia, macros
 - referencia multimedia, macros
 - referencia de multimedia, macros
 - macros multimedia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aef29d18fc53d46e96de2a13d6e9e39e75e4dc6b
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: d9cdad8be1acfb92db2f58762fb5debe834dd52f7b5519f3ed4ed4d43d55cbd8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105651366"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119806765"
 ---
-# <a name="multimedia-macros"></a>Macros multimedia
+# <a name="multimedia-macros"></a>Multimedia Macros
 
-Las siguientes macros se utilizan con multimedia.
+Las macros siguientes se usan con multimedia.
 
 -   [**AVIStreamDataSize**](/windows/desktop/api/Vfw/nf-vfw-avistreamdatasize)
 -   [**AVIStreamEnd**](/windows/desktop/api/Vfw/nf-vfw-avistreamend)
@@ -112,7 +112,7 @@ Las siguientes macros se utilizan con multimedia.
 -   [**ICDecompressGetFormat**](/windows/desktop/api/Vfw/nf-vfw-icdecompressgetformat)
 -   [**ICDecompressGetFormatSize**](/windows/desktop/api/Vfw/nf-vfw-icdecompressgetformatsize)
 -   [**ICDecompressGetPalette**](/windows/desktop/api/Vfw/nf-vfw-icdecompressgetpalette)
--   [**ICDecompressOpen**](/windows/desktop/api/Vfw/nf-vfw-icdecompressopen)
+-   [**ICDecompressAbrir**](/windows/desktop/api/Vfw/nf-vfw-icdecompressopen)
 -   [**ICDecompressQuery**](/windows/desktop/api/Vfw/nf-vfw-icdecompressquery)
 -   [**ICDecompressSetPalette**](/windows/desktop/api/Vfw/nf-vfw-icdecompresssetpalette)
 -   [**ICDrawChangePalette**](/windows/desktop/api/Vfw/nf-vfw-icdrawchangepalette)
@@ -137,20 +137,20 @@ Las siguientes macros se utilizan con multimedia.
 -   [**ICQueryAbout**](/windows/desktop/api/Vfw/nf-vfw-icqueryabout)
 -   [**ICQueryConfigure**](/windows/desktop/api/Vfw/nf-vfw-icqueryconfigure)
 -   [**ICSetState**](/windows/desktop/api/Vfw/nf-vfw-icsetstate)
--   [**máx.**](max.md)
--   [**MCI \_ HMS \_ hora**](mci-hms-hour.md)
--   [**HMS de MCI \_ \_**](mci-hms-minute.md)
--   [**MCI \_ HMS \_ segundo**](mci-hms-second.md)
--   [**\_HMS MCI make \_**](mci-make-hms.md)
--   [**MCI \_ Make \_ MSF**](mci-make-msf.md)
--   [**\_TMSF MCI make \_**](mci-make-tmsf.md)
--   [**\_marco MCI MSF \_**](/previous-versions//dd743438(v=vs.85))
--   [**MCI \_ en \_ minuto de MSF**](mci-msf-minute.md)
--   [**MCI \_ MSF \_ Second**](mci-msf-second.md)
--   [**fotograma TMSF de MCI \_ \_**](mci-tmsf-frame.md)
--   [**TMSF de MCI \_ \_**](mci-tmsf-minute.md)
--   [**MCI \_ TMSF \_ segundo**](mci-tmsf-second.md)
--   [**\_pista de TMSF de MCI \_**](mci-tmsf-track.md)
+-   [**máximo**](max.md)
+-   [**MCI \_ HMS \_ HOUR**](mci-hms-hour.md)
+-   [**MCI \_ HMS \_ MINUTE**](mci-hms-minute.md)
+-   [**MCI \_ HMS \_ SECOND**](mci-hms-second.md)
+-   [**MCI \_ MAKE \_ HMS**](mci-make-hms.md)
+-   [**MCI \_ MAKE \_ MSF**](mci-make-msf.md)
+-   [**MCI \_ MAKE \_ TMSF**](mci-make-tmsf.md)
+-   [**MCI \_ MSF \_ FRAME**](/previous-versions//dd743438(v=vs.85))
+-   [**MCI \_ MSF \_ MINUTE**](mci-msf-minute.md)
+-   [**MCI \_ MSF \_ SECOND**](mci-msf-second.md)
+-   [**MCI \_ TMSF \_ FRAME**](mci-tmsf-frame.md)
+-   [**MCI \_ TMSF \_ MINUTE**](mci-tmsf-minute.md)
+-   [**MCI \_ TMSF \_ SECOND**](mci-tmsf-second.md)
+-   [**MCI \_ TMSF \_ TRACK**](mci-tmsf-track.md)
 -   [**MCIWndCanConfig**](/windows/desktop/api/Vfw/nf-vfw-mciwndcanconfig)
 -   [**MCIWndCanEject**](/windows/desktop/api/Vfw/nf-vfw-mciwndcaneject)
 -   [**MCIWndCanPlay**](/windows/desktop/api/Vfw/nf-vfw-mciwndcanplay)
@@ -222,7 +222,7 @@ Las siguientes macros se utilizan con multimedia.
 -   [**MCIWndValidateMedia**](/windows/desktop/api/Vfw/nf-vfw-mciwndvalidatemedia)
 -   [**MEVT \_ EVENTPARM**](/windows/win32/api/mmeapi/nf-mmeapi-mevt_eventparm)
 -   [**MEVT \_ EVENTTYPE**](/windows/win32/api/mmeapi/nf-mmeapi-mevt_eventtype)
--   [**minuto**](min.md)
+-   [**Min**](min.md)
 -   [**mmioFOURCC**](/windows/win32/api/vfw/nf-vfw-mmiofourcc)
 -   [**sndAlias**](/previous-versions//dd798675(v=vs.85))
 
@@ -233,6 +233,6 @@ Las siguientes macros se utilizan con multimedia.
 [Referencia multimedia](multimedia-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

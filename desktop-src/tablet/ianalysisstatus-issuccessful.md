@@ -1,7 +1,7 @@
 ---
 description: Recupera un resumen booleano de los resultados de la operación de análisis.
 ms.assetid: 9bc690f4-fb5f-449e-bde0-bd2277c4573b
-title: 'IAnalysisStatus:: IsSuccessful (método) (IACom. h)'
+title: Método IAnalysisStatus::IsSuccessful (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: daf7ec801773d855f0ed85a795bc492ef673a74e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0028b94042aa9397aea8e0164d57d0d647a75f37e3f5e2fd9d7b3982b5d57031
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119713835"
 ---
-# <a name="ianalysisstatusissuccessful-method"></a>IAnalysisStatus:: IsSuccessful (método)
+# <a name="ianalysisstatusissuccessful-method"></a>IAnalysisStatus::IsSuccessful (método)
 
 Recupera un resumen booleano de los resultados de la operación de análisis.
 
@@ -39,20 +39,20 @@ HRESULT IsSuccessful(
 
 <dl> <dt>
 
-*pfSuccessful* \[ enuncia\]
+*pfSuccessful* \[ out\]
 </dt> <dd>
 
-**Variante \_ TRUE** si la operación de análisis se completó sin ninguna advertencia o **Variant \_ false** si se produjo al menos una advertencia.
+**VARIANT \_ TRUE** si la operación de análisis se completó sin advertencias, o **VARIANT \_ FALSE** si se produjo al menos una advertencia.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra un esquema de un controlador de eventos para el evento [**\_ IAnalysisEvents:: Results**](-ianalysisevents-results.md) . El controlador comprueba **IAnalysisStatus:: IsSuccessful**. Si la operación de análisis genera advertencias, el controlador recorre en iteración la colección de objetos [**IAnalysisWarning**](ianalysiswarning.md) .
+En el ejemplo siguiente se muestra un esquema de un controlador de eventos para el [**\_ evento IAnalysisEvents::Results.**](-ianalysisevents-results.md) El controlador comprueba **IAnalysisStatus::IsSuccessful.** Si la operación de análisis genera advertencias, el controlador recorre en iteración la colección de [**objetos IAnalysisWarning.**](ianalysiswarning.md)
 
 
 ```C++
@@ -137,11 +137,11 @@ STDMETHODIMP CMyClass::Results(
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -153,7 +153,7 @@ STDMETHODIMP CMyClass::Results(
 [**IAnalysisStatus**](ianalysisstatus.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  
