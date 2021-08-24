@@ -1,10 +1,10 @@
 ---
-title: atributo shadowInactive
-description: Contiene el número de días de inactividad que se permite para el usuario.
+title: atributo shadow Que
+description: Contiene el número de días de inactividad permitido para el usuario.
 ms.assetid: 0e6b023f-9806-4c7e-82e4-505807647733
 ms.tgt_platform: multiple
 keywords:
-- shadowInactive esquema de AD de atributos
+- Esquema de AD del atributo shadow O
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c05a63ba03cc45e1c5c1914bda98d9c09b8a2f3f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: df5f399e400d0ddb0bbddab9deadfe89908c4d53144e1c2cad4ae603bbc3e6fd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905917"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119836575"
 ---
-# <a name="shadowinactive-attribute"></a>atributo shadowInactive
+# <a name="shadowinactive-attribute"></a>atributo shadow Que
 
-Contiene el número de días de inactividad que se permite para el usuario.
+Contiene el número de días de inactividad permitido para el usuario.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | shadowInactive                       |
-| Nombre para mostrar de LDAP | shadowInactive                       |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | shadow(shadow)//                       |
+| Ldap-Display-Name | shadow(shadow)//                       |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.9                      |
-| System-ID-GUID    | 86871d1f-3310-4312-8efd-af49dcfb2671 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | 86871d1f-3310-4312-8efd-af49dcfb2671 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -52,13 +52,13 @@ Contiene el número de días de inactividad que se permite para el usuario.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | True                                                |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Verdadero                                                |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
@@ -73,13 +73,13 @@ Contiene el número de días de inactividad que se permite para el usuario.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | True                                                |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Verdadero                                                |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
@@ -94,13 +94,13 @@ Contiene el número de días de inactividad que se permite para el usuario.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | True                                                |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Verdadero                                                |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
@@ -115,13 +115,13 @@ Contiene el número de días de inactividad que se permite para el usuario.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | True                                                |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Verdadero                                                |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |

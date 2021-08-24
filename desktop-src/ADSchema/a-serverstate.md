@@ -1,11 +1,11 @@
 ---
-title: Server-State atributo)
+title: Server-State atributo
 description: Indica si el servidor está habilitado o deshabilitado.
 ms.assetid: e062cbcf-c845-4dfd-9e9b-e21079276a3c
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Server-State
-- serverState esquema de AD de atributos
+- Server-State esquema de AD del atributo
+- Esquema de AD del atributo serverState
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7be4e236254486cd512eed480b380058048061fd
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 186f6c3da7371c82f7771261adbf09814ad16481a97050753b23ea8b3b5226cd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658739"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119836735"
 ---
-# <a name="server-state-attribute"></a>Server-State atributo)
+# <a name="server-state-attribute"></a>Server-State atributo
 
 Indica si el servidor está habilitado o deshabilitado. Un valor de 1 indica que el servidor está habilitado. Un valor de 2 indica que el servidor está deshabilitado. Los demás valores no son válidos.
 
@@ -30,13 +30,13 @@ Indica si el servidor está habilitado o deshabilitado. Un valor de 1 indica que
 | Entrada | Value |
 |-------------------|--------------------------------------|
 | CN                | Server-State                         |
-| Nombre para mostrar de LDAP | serverState                          |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | El sistema establece este valor.     |
-| Frecuencia de actualización  | Cuando cambia la Directiva de un usuario.  |
+| Ldap-Display-Name | serverState                          |
+| Size              | \-                                   |
+| Privilegio actualizar  | El sistema establece este valor.     |
+| Frecuencia de actualización  | Cuando cambia la directiva de un usuario.  |
 | Attribute-Id      | 1.2.840.113556.1.4.154               |
-| System-ID-GUID    | bf967a34-0de6-11d0-a285-00aa003049e2 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | bf967a34-0de6-11d0-a285-00aa003049e2 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -55,18 +55,18 @@ Indica si el servidor está habilitado o deshabilitado. Un valor de 1 indica que
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------|
-| Identificador de vínculo                | \-                                                    |
+| Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
-| System-Only            | False                                                 |
-| Tiene un único valor       | True                                                  |
-| Está indexado             | False                                                 |
-| En el catálogo global      | False                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                          |
+| System-Only            | Falso                                                 |
+| Es de un solo valor       | Verdadero                                                  |
+| Está indexado             | Falso                                                 |
+| En el catálogo global      | Falso                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000011                                            |
-| Clases usadas en        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Indica si el servidor está habilitado o deshabilitado. Un valor de 1 indica que
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------|
-| Identificador de vínculo                | \-                                                    |
+| Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
-| System-Only            | False                                                 |
-| Tiene un único valor       | True                                                  |
-| Está indexado             | False                                                 |
-| En el catálogo global      | False                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                          |
+| System-Only            | Falso                                                 |
+| Es de un solo valor       | Verdadero                                                  |
+| Está indexado             | Falso                                                 |
+| En el catálogo global      | Falso                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000011                                            |
-| Clases usadas en        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Indica si el servidor está habilitado o deshabilitado. Un valor de 1 indica que
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------|
-| Identificador de vínculo                | \-                                                    |
+| Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
-| System-Only            | False                                                 |
-| Tiene un único valor       | True                                                  |
-| Está indexado             | False                                                 |
-| En el catálogo global      | False                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                          |
+| System-Only            | Falso                                                 |
+| Es de un solo valor       | Verdadero                                                  |
+| Está indexado             | Falso                                                 |
+| En el catálogo global      | Falso                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000011                                            |
-| Clases usadas en        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Indica si el servidor está habilitado o deshabilitado. Un valor de 1 indica que
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------|
-| Identificador de vínculo                | \-                                                    |
+| Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
-| System-Only            | False                                                 |
-| Tiene un único valor       | True                                                  |
-| Está indexado             | False                                                 |
-| En el catálogo global      | False                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                          |
+| System-Only            | Falso                                                 |
+| Es de un solo valor       | Verdadero                                                  |
+| Está indexado             | Falso                                                 |
+| En el catálogo global      | Falso                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000011                                            |
-| Clases usadas en        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Indica si el servidor está habilitado o deshabilitado. Un valor de 1 indica que
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------|
-| Identificador de vínculo                | \-                                                    |
+| Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
-| System-Only            | False                                                 |
-| Tiene un único valor       | True                                                  |
-| Está indexado             | False                                                 |
-| En el catálogo global      | False                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                          |
+| System-Only            | Falso                                                 |
+| Es de un solo valor       | Verdadero                                                  |
+| Está indexado             | Falso                                                 |
+| En el catálogo global      | Falso                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000011                                            |
-| Clases usadas en        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Indica si el servidor está habilitado o deshabilitado. Un valor de 1 indica que
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------|
-| Identificador de vínculo                | \-                                                    |
+| Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
-| System-Only            | False                                                 |
-| Tiene un único valor       | True                                                  |
-| Está indexado             | False                                                 |
-| En el catálogo global      | False                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                          |
+| System-Only            | Falso                                                 |
+| Es de un solo valor       | Verdadero                                                  |
+| Está indexado             | Falso                                                 |
+| En el catálogo global      | Falso                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000011                                            |
-| Clases usadas en        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 

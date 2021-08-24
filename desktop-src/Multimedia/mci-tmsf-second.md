@@ -1,9 +1,9 @@
 ---
-title: Macro MCI_TMSF_SECOND (Mciapi. h)
-description: La \_ macro MCI TMSF \_ Second recupera el componente de segundos de un parámetro que contiene información de pistas empaquetadas/minutos/segundos/marcos (TMSF).
+title: MCI_TMSF_SECOND macro (Mciapi.h)
+description: La macro MCI TMSF SECOND recupera el componente seconds de un parámetro que contiene información empaquetada \_ \_ de pistas, minutos, segundos y fotogramas (TMSF).
 ms.assetid: 0f431545-bde0-4898-9a9d-993847aedf50
 keywords:
-- MCI_TMSF_SECOND de macros de Windows multimedia
+- MCI_TMSF_SECOND macro Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 722949487400f80ed72f9e120d5dbf8678ab81a3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 92dc8f7771df35e9ddc712d263e805ba1e844ca42cde607d7204dc6dc7b350d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150395"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119784204"
 ---
-# <a name="mci_tmsf_second-macro"></a>MCI \_ TMSF \_ segunda macro
+# <a name="mci_tmsf_second-macro"></a>Macro MCI \_ TMSF \_ SECOND
 
-La macro **MCI \_ TMSF \_ Second** recupera el componente de segundos de un parámetro que contiene información de pistas empaquetadas/minutos/segundos/marcos (TMSF).
+La **macro \_ MCI TMSF \_ SECOND** recupera el componente seconds de un parámetro que contiene información empaquetada de pistas, minutos, segundos y fotogramas (TMSF).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,11 +51,11 @@ Hora en formato TMSF.
 
 Devuelve el componente de segundos de la información de TMSF especificada.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La hora en formato TMSF se expresa como un valor **DWORD** con el byte menos significativo que contiene pistas, el siguiente byte menos significativo que contiene los minutos, el siguiente byte menos significativo que contiene los segundos y el byte más significativo que contiene fotogramas.
+El tiempo en formato TMSF se expresa como un valor **DWORD** con el byte menos significativo que contiene pistas, el siguiente byte menos significativo que contiene minutos, el siguiente byte menos significativo que contiene segundos y el byte más significativo que contiene fotogramas.
 
-La macro **MCI \_ TMSF \_ Second** se define de la siguiente manera:
+La **macro \_ MCI TMSF \_ SECOND** se define de la siguiente manera:
 
 
 ```C++
@@ -72,7 +72,7 @@ La macro **MCI \_ TMSF \_ Second** se define de la siguiente manera:
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -80,10 +80,10 @@ La macro **MCI \_ TMSF \_ Second** se define de la siguiente manera:
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
-[Macros MCI](mci-macros.md)
+[MCI Macros](mci-macros.md)
 </dt> </dl>
 
  

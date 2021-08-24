@@ -1,7 +1,7 @@
 ---
 description: Representa una solicitud de asignación para un puerto de conmutador estático o dinámico, o representa la configuración activa de un puerto de conmutador estático o dinámico asignado actualmente.
 ms.assetid: ef70b72f-75a0-448e-a648-6a28c12f0da1
-title: Msvm_EthernetPortAllocationSettingData (clase)
+title: Msvm_EthernetPortAllocationSettingData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -45,18 +45,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: a310daf30127aec5069efcf7ca4fd5ead9277e6b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: be3968f52065259cb69ad35721dffd3ac606da98e4189edaad1b762120f5a008
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687646"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119681585"
 ---
-# <a name="msvm_ethernetportallocationsettingdata-class"></a>MSVM \_ EthernetPortAllocationSettingData (clase)
+# <a name="msvm_ethernetportallocationsettingdata-class"></a>Clase Msvm \_ EthernetPortAllocationSettingData
 
-Representa una solicitud de asignación para un puerto de conmutador estático o dinámico, o representa la configuración activa de un puerto de conmutador estático o dinámico asignado actualmente. Una solicitud de asignación de un puerto de conmutador dinámico también se denomina solicitud de conexión.
+Representa una solicitud de asignación para un puerto de conmutador estático o dinámico, o representa la configuración activa de un puerto de conmutador estático o dinámico asignado actualmente. Una solicitud de asignación para un puerto de conmutador dinámico también se conoce como solicitud de conexión.
 
-La siguiente sintaxis es código simplificado de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se Managed Object Format código (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -101,13 +101,13 @@ class Msvm_EthernetPortAllocationSettingData : CIM_EthernetPortAllocationSetting
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ EthernetPortAllocationSettingData** tiene estos tipos de miembros:
+La **clase Msvm \_ EthernetPortAllocationSettingData** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ EthernetPortAllocationSettingData** tiene estas propiedades.
+La **clase Msvm \_ EthernetPortAllocationSettingData** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -120,7 +120,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Dirección del recurso. Esta propiedad se hereda de [**\_ ResourceAllocationSettingData CIM**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Dirección del recurso. Esta propiedad se hereda de [**\_ RESOURCEAllocationSettingData de CIM.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 </dd> <dt>
 
@@ -133,7 +133,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Describe la dirección de este recurso en el contexto del elemento primario. Las propiedades **Parent** y **AddressOnParent** se usan para describir la relación del controlador, así como el orden de los dispositivos en un controlador. Esta propiedad se hereda de [**\_ ResourceAllocationSettingData CIM**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Describe la dirección de este recurso en el contexto del elemento primario. Las **propiedades Parent** y **AddressOnParent** se usan para describir la relación del controlador, así como el orden de los dispositivos en un controlador. Esta propiedad se hereda de [**\_ RESOURCEAllocationSettingData de CIM.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 </dd> <dt>
 
@@ -146,7 +146,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Unidad de asignación utilizada por las propiedades de **límite** y **reserva** . Esta propiedad se hereda de [**\_ ResourceAllocationSettingData CIM**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Unidad de asignación usada por las propiedades **Reservation** **y Limit.** Esta propiedad se hereda de [**\_ RESOURCEAllocationSettingData de CIM.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 </dd> <dt>
 
@@ -159,7 +159,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si el recurso se asignará automáticamente. Esta propiedad se hereda de [**\_ ResourceAllocationSettingData CIM**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Indica si el recurso se asignará automáticamente. Esta propiedad se hereda de [**\_ RESOURCEAllocationSettingData de CIM.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 </dd> <dt>
 
@@ -172,7 +172,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si el recurso se desasignará automáticamente. Esta propiedad se hereda de [**\_ ResourceAllocationSettingData CIM**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Indica si el recurso se desasignará automáticamente. Esta propiedad se hereda de [**\_ RESOURCEAllocationSettingData de CIM.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 </dd> <dt>
 
@@ -188,7 +188,7 @@ Tipo de acceso: solo lectura
 Calificadores: **MaxLen** (64)
 </dt> </dl>
 
-Breve descripción del objeto. Esta propiedad se hereda de [**la \_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "configuración del puerto del conmutador Ethernet".
+Breve descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)de CIM y siempre se establece en "Puerto de conmutador Ethernet Configuración".
 
 </dd> <dt>
 
@@ -198,10 +198,10 @@ Breve descripción del objeto. Esta propiedad se hereda de [**la \_ ManagedEleme
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Esta propiedad especifica el compartimiento de red de destino para el puerto. Solo se admite para los adaptadores internos.
+Esta propiedad especifica el compartimiento de red de destino para el puerto. Solo se admite para adaptadores internos.
 
 > [!Note]  
 > Propiedad agregada en Windows 10.
@@ -213,26 +213,26 @@ Esta propiedad especifica el compartimiento de red de destino para el puerto. So
 **Connection**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El dispositivo al que está conectado este recurso. Esta propiedad se hereda de [**\_ ResourceAllocationSettingData CIM**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Dispositivo al que está conectado este recurso. Esta propiedad se hereda de [**\_ RESOURCEAllocationSettingData de CIM.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 </dd> <dt>
 
 **ConsumerVisibility**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Visibilidad del consumidor en el recurso asignado. Esta propiedad se hereda de [**\_ ResourceAllocationSettingData CIM**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)y siempre está establecida en 3 (virtualizado).
+Visibilidad del consumidor para el recurso asignado. Esta propiedad se hereda de [**\_ CIM ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)y siempre se establece en 3 (virtualizado).
 
 </dd> <dt>
 
@@ -245,20 +245,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Descripción del objeto. Esta propiedad se hereda de [**la \_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "configuración del puerto del conmutador Ethernet".
+Descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)de CIM y siempre se establece en "Puerto de conmutador Ethernet Configuración".
 
 </dd> <dt>
 
 **DesiredVLANEndpointMode**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El modo de configuración deseado para el extremo de VLAN. Esta propiedad se usa para establecer el valor de la propiedad **OperationalEndpointMode** inicial en la instancia de la clase [**MSVM \_ VLANEndpoint**](msvm-vlanendpoint.md) asociada al puerto Ethernet de destino. Vea la propiedad **OperationalEndpointMode** de la clase **MSVM \_ VLANEndpoint** para ver los posibles valores. Esta propiedad se hereda de **\_ EthernetPortAllocationSettingData CIM**.
+El modo de configuración deseado para el punto de conexión vlan. Esta propiedad se usa para establecer el valor inicial de la propiedad **OperationalEndpointMode** en la instancia de la clase [**\_ VLANEndpoint de Msvm**](msvm-vlanendpoint.md) asociada al puerto Ethernet de destino. Consulte la **propiedad OperationalEndpointMode** de la clase **\_ VLANEndpoint de Msvm** para ver los valores posibles. Esta propiedad se hereda de **CIM \_ EthernetPortAllocationSettingData**.
 
 </dd> <dt>
 
@@ -271,20 +271,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre para mostrar del objeto. Esta propiedad se hereda del [**\_ SettingData de CIM**](/previous-versions//cc136911(v=vs.85)). Al cambiar esta propiedad, se cambiará el nombre del elemento del derivado del dispositivo lógico asociado.
+Nombre para mostrar del objeto. Esta propiedad se hereda de [**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85)). Al cambiar esta propiedad, se cambiará el nombre del elemento del derivado del dispositivo lógico asociado.
 
 </dd> <dt>
 
 **EnabledState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la solicitud de asignación está habilitada o deshabilitada. Cuando una solicitud de asignación se marca como deshabilitada (3), la asignación no se procesa. El **EnabledState** de una configuración activa siempre está marcado como habilitado (2).
+Indica si la solicitud de asignación está habilitada o deshabilitada. Cuando una solicitud de asignación se marca como Deshabilitada (3), la asignación no se procesa. EnabledState **para** una configuración activa siempre se marca como Habilitado (2).
 
 <dt>
 
@@ -307,13 +307,13 @@ Indica si la solicitud de asignación está habilitada o deshabilitada. Cuando u
 **HostResource**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Solo se puede asignar un recurso de host a cada dispositivo del conmutador virtual, por lo que solo se puede establecer el primer elemento de esta matriz. En el caso de los dispositivos que admiten esta característica, establezca el primer elemento de la matriz **HostResource** para que contenga una referencia al recurso de host subyacente que se va a asignar. Esta propiedad se hereda de [**\_ ResourceAllocationSettingData CIM**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Solo se puede asignar un recurso de host a cada dispositivo del conmutador virtual, por lo que solo se puede establecer el primer elemento de esta matriz. En el caso de los dispositivos que admiten esta característica, establezca el primer elemento de la matriz **HostResource** para que contenga una referencia al recurso de host subyacente que se va a asignar. Esta propiedad se hereda de [**\_ RESOURCEAllocationSettingData de CIM.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 </dd> <dt>
 
@@ -326,10 +326,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
-Identifica de forma única una instancia de esta clase. Esta propiedad se hereda del [**\_ SettingData de CIM**](/previous-versions//cc136911(v=vs.85))y siempre se establece en "Microsoft:*GUID* \\ *DeviceSpecificData*".
+Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85))y siempre se establece en "Microsoft:*GUID* \\ *DeviceSpecificData".*
 
 </dd> <dt>
 
@@ -342,7 +342,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El último nombre descriptivo conocido del conmutador al que este puerto tenía una afinidad fuerte, si lo hubiera.
+El último nombre descriptivo conocido del conmutador en el que este puerto tenía una afinidad fuerte, si lo hubiera.
 
 > [!Note]  
 > Propiedad agregada en Windows 10.
@@ -354,26 +354,26 @@ El último nombre descriptivo conocido del conmutador al que este puerto tenía 
 **Límite**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La cantidad máxima de recursos de host correspondientes que puede consumir el conmutador virtual. Esta propiedad se hereda de [**\_ ResourceAllocationSettingData CIM**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+La cantidad máxima de recursos de host correspondientes que puede consumir el conmutador virtual. Esta propiedad se hereda de [**\_ RESOURCEAllocationSettingData de CIM.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 </dd> <dt>
 
 **MappingBehavior**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica cómo se asigna este recurso a los recursos subyacentes. Esta propiedad se hereda de [**\_ ResourceAllocationSettingData CIM**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Especifica cómo se asigna este recurso a los recursos subyacentes. Esta propiedad se hereda de [**\_ RESOURCEAllocationSettingData de CIM.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 </dd> <dt>
 
@@ -386,7 +386,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cadena que describe el tipo de modelo de punto de conexión de VLAN compatible con este extremo de VLAN. Esta propiedad solo se usa cuando la propiedad **DesiredVLANEndpointMode** se establece en 1 (otro). Esta propiedad debe establecerse en **null** cuando la propiedad **DesiredVLANEndpointMode** es cualquier valor distinto de 1. Esta propiedad se hereda de **\_ EthernetPortAllocationSettingData CIM**.
+Cadena que describe el tipo de modelo de punto de conexión de VLAN admitido por este punto de conexión de VLAN. Esta propiedad solo se usa cuando la **propiedad DesiredVLANEndpointMode** se establece en 1 (Otros). Esta propiedad debe establecerse en **Null cuando** la **propiedad DesiredVLANEndpointMode** sea cualquier valor distinto de 1. Esta propiedad se hereda de **CIM \_ EthernetPortAllocationSettingData**.
 
 </dd> <dt>
 
@@ -399,7 +399,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Una cadena que describe el tipo de recurso cuando un valor bien definido no está disponible y [**resourcetype**](msvm-processorsettingdata.md) tiene el valor 1 (otro). Esta propiedad se hereda de [**\_ ResourceAllocationSettingData CIM**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)y no se utiliza.
+Cadena que describe el tipo de recurso cuando un valor bien definido no está disponible y [**ResourceType**](msvm-processorsettingdata.md) tiene el valor 1 (Other). Esta propiedad se hereda de [**\_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)de CIM y no se usa.
 
 </dd> <dt>
 
@@ -412,7 +412,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Elemento primario del recurso. Esta propiedad se hereda de [**\_ ResourceAllocationSettingData CIM**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Elemento primario del recurso. Esta propiedad se hereda de [**\_ RESOURCEAllocationSettingData de CIM.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 </dd> <dt>
 
@@ -425,30 +425,30 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Identificador del grupo de recursos desde el que se asignó este recurso. Esta propiedad se hereda de [**\_ ResourceAllocationSettingData CIM**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Identificador del grupo de recursos desde el que se asignó este recurso. Esta propiedad se hereda de [**\_ RESOURCEAllocationSettingData de CIM.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 </dd> <dt>
 
 **RequiredFeatureHints**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La lista de nombres para mostrar que corresponden a cada entrada de la matriz **RequiredFeatures** .
+Lista de nombres para mostrar que corresponden a cada entrada de la **matriz RequiredFeatures.**
 
 </dd> <dt>
 
 **RequiredFeatures**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Lista de identificadores de características que representan todas las características necesarias para un puerto.
@@ -458,13 +458,13 @@ Lista de identificadores de características que representan todas las caracter�
 **Reserva**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La cantidad de recursos reservados para su uso por el conmutador virtual. Esta propiedad se hereda de [**\_ ResourceAllocationSettingData CIM**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Cantidad de recursos reservados para su uso por el conmutador virtual. Esta propiedad se hereda de [**\_ RESOURCEAllocationSettingData de CIM.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 </dd> <dt>
 
@@ -477,20 +477,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cadena que describe un subtipo específico de implementación para este recurso. Por ejemplo, se puede usar para distinguir los diferentes modelos del mismo tipo de recurso. Esta propiedad se hereda de [**\_ ResourceAllocationSettingData CIM**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Cadena que describe un subtipo específico de implementación para este recurso. Por ejemplo, esto se puede usar para distinguir diferentes modelos del mismo tipo de recurso. Esta propiedad se hereda de [**\_ RESOURCEAllocationSettingData de CIM.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 </dd> <dt>
 
 **ResourceType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Tipo de recurso que esta configuración de asignación representa. Esta propiedad se hereda de [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)y siempre está establecida en 33 (conexión Ethernet).
+Tipo de recurso que representa esta configuración de asignación. Esta propiedad se hereda de [**\_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)de CIM y siempre se establece en 33 (conexión Ethernet).
 
 </dd> <dt>
 
@@ -500,10 +500,10 @@ Tipo de recurso que esta configuración de asignación representa. Esta propieda
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Especifica el grupo de recursos de red desde el que se asignará una conexión al sistema de réplica de prueba cuando se cree.
+Especifica el grupo de recursos de red desde el que se asignará una conexión al sistema de réplicas de prueba cuando se cree.
 
 </dd> <dt>
 
@@ -513,23 +513,23 @@ Especifica el grupo de recursos de red desde el que se asignará una conexión a
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Especifica el nombre para mostrar del conmutador de red virtual al que se asignará una conexión para el sistema de réplica de prueba cuando se cree.
+Especifica el nombre para mostrar del conmutador de red virtual al que se asignará una conexión para el sistema de réplicas de prueba cuando se cree.
 
 </dd> <dt>
 
 **VirtualQuantity**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El número total de puertos en el conmutador virtual. Esta propiedad se hereda de [**\_ ResourceAllocationSettingData CIM**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Número total de puertos en el conmutador virtual. Esta propiedad se hereda de [**\_ RESOURCEAllocationSettingData de CIM.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 </dd> <dt>
 
@@ -542,20 +542,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica la unidad de medida para la propiedad **VirtualQuantity** . El valor de esta propiedad debe ser un valor válido del calificador de unidades de programación, tal y como se define en el anexo C. 1 de DSP0004 V 2.5 o posterior. Esta propiedad se hereda de [**\_ ResourceAllocationSettingData CIM**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Especifica la unidad de medida para la **propiedad VirtualQuantity.** El valor de esta propiedad debe ser un valor legal del calificador Unidades de programación, tal como se define en el anexo C.1 de DSP0004 V2.5 o posterior. Esta propiedad se hereda de [**\_ RESOURCEAllocationSettingData de CIM.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 </dd> <dt>
 
 **Peso**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Un entero que define el peso de cada conmutador virtual. Esta propiedad se hereda de [**\_ ResourceAllocationSettingData CIM**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Entero que define el peso de cada conmutador virtual. Esta propiedad se hereda de [**\_ RESOURCEAllocationSettingData de CIM.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 Intervalo: 0 1000
 
@@ -567,10 +567,10 @@ Intervalo: 0 1000
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

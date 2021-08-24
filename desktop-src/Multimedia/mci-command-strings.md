@@ -1,69 +1,69 @@
 ---
-title: Cadenas de comandos MCI
-description: Cadenas de comandos MCI
+title: Cadenas de comandos de MCI
+description: Cadenas de comandos de MCI
 ms.assetid: 8677aed7-ee7d-4fc7-bc83-f42498f07902
 keywords:
-- Cadenas de comandos MCI, referencia
+- Cadenas de comandos de MCI, referencia
 - Referencia de MCI, cadenas de comandos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d7298a1ad4d571446532f7198e5bd41ae988194e
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: cc2934f8770c7a68db7f1706705424d554bbd5f4840a7e19b0c57b695a9bad90
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104077695"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119784615"
 ---
-# <a name="mci-command-strings"></a>Cadenas de comandos MCI
+# <a name="mci-command-strings"></a>Cadenas de comandos de MCI
 
 Las siguientes cadenas de comandos se usan con MCI.
 
--   [**break**](break.md)
--   [**pueda**](capability.md)
--   [**grabar**](capture.md)
--   [**cercanos**](close.md)
--   [**configurar**](configure.md)
--   [**copiar**](copy.md)
--   [**indicación**](cue.md)
--   [**límite**](cut.md)
--   [**elimínelos**](delete.md)
--   [salida](escape.md)
--   [**Inmovilice**](freeze.md)
--   [**ajustar**](./windows-multimedia-start-page.md)
--   [**superclase**](info.md)
--   [**list**](list.md)
--   [**Dataloader**](load.md)
--   [**Rasa**](mark.md)
--   [**control**](monitor.md)
--   [**Ábra**](open.md)
--   [**copiar**](paste.md)
--   [**temporalmente**](pause.md)
--   [**reproducción**](play.md)
--   [**pondrán**](put.md)
--   [**calidad**](quality.md)
--   [**alcanzar**](realize.md)
--   [**registro**](record.md)
+-   [**Romper**](break.md)
+-   [**Capacidad**](capability.md)
+-   [**capturar**](capture.md)
+-   [**Cerca**](close.md)
+-   [**Configurar**](configure.md)
+-   [**Copia**](copy.md)
+-   [**Cue**](cue.md)
+-   [**Cortar**](cut.md)
+-   [**Eliminar**](delete.md)
+-   [Escapar](escape.md)
+-   [**Congelar**](freeze.md)
+-   [**Índice**](./windows-multimedia-start-page.md)
+-   [**Información**](info.md)
+-   [**Lista**](list.md)
+-   [**Carga**](load.md)
+-   [**Marca**](mark.md)
+-   [**Monitor**](monitor.md)
+-   [**abierto**](open.md)
+-   [**pegar**](paste.md)
+-   [**Pausa**](pause.md)
+-   [**Jugar**](play.md)
+-   [**Poner**](put.md)
+-   [**Calidad**](quality.md)
+-   [**darse cuenta de**](realize.md)
+-   [**grabar**](record.md)
 -   [**reserva**](reserve.md)
 -   [**restaurar**](restore.md)
--   [**Recuper**](resume.md)
--   [**guardar**](save.md)
--   [**desean**](seek.md)
--   [**set**](set.md)
+-   [**Reanudar**](resume.md)
+-   [**Salvar**](save.md)
+-   [**Buscar**](seek.md)
+-   [**Establecer**](set.md)
 -   [**setaudio**](setaudio.md)
 -   [**settimecode**](settimecode.md)
 -   [**settuner**](settuner.md)
 -   [**setvideo**](setvideo.md)
--   [**marcar**](signal.md)
--   [**bucle**](spin.md)
+-   [**signal**](signal.md)
+-   [**giro**](spin.md)
 -   [**status**](status.md)
--   [**pasar**](step.md)
--   [**detener**](stop.md)
--   [sysinfo](sysinfo.md)
--   [**hacer**](undo.md)
--   [**liberar**](unfreeze.md)
--   [**Update**](update.md)
--   [**where**](where.md)
--   [**ventana**](window.md)
+-   [**Paso**](step.md)
+-   [**Parada**](stop.md)
+-   [Sysinfo](sysinfo.md)
+-   [**Deshacer**](undo.md)
+-   [**Descongelar**](unfreeze.md)
+-   [**actualizar**](update.md)
+-   [**Dónde**](where.md)
+-   [**Ventana**](window.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -72,6 +72,6 @@ Las siguientes cadenas de comandos se usan con MCI.
 [Referencia de MCI](mci-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

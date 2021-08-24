@@ -1,4 +1,4 @@
-- name: Entrada de controlador radial
+- name: Entrada del controlador radial
   href: radialcontroller-portal.md
   items:
     - name: Interfaces de controlador radial

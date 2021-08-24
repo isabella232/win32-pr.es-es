@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: enumeración ObjectInfoFlags'
+description: 'Más información sobre: Enumeración ObjectInfoFlags'
 title: Enumeración ObjectInfoFlags
 TOCTitle: ObjectInfoFlags enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.ObjectInfoFlags
@@ -36,21 +36,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b3f301f1e786d126dbd57c071fe89356e0acc891
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 06cd7cecaa536106f70cc469e3b690a46bee8301fe2d1142bc3fa1ff2c045346
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103910241"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119780275"
 ---
 # <a name="objectinfoflags-enumeration"></a>Enumeración ObjectInfoFlags
 
-Marcas para objetos ESENT (tablas). Se usa en [JET_OBJECTINFO](./jet-objectinfo-class.md).
+Marcas para objetos ESENT (tablas). Se usa [en JET_OBJECTINFO](./jet-objectinfo-class.md).
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -80,13 +80,13 @@ public enum ObjectInfoFlags
 <tbody>
 <tr class="odd">
 <td></td>
-<td>None</td>
+<td>Ninguno</td>
 <td>Opciones predeterminadas.</td>
 </tr>
 <tr class="even">
 <td></td>
-<td>System</td>
-<td>El objeto solo es para uso interno.</td>
+<td>Sistema</td>
+<td>El objeto es solo para uso interno.</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -96,17 +96,17 @@ public enum ObjectInfoFlags
 <tr class="even">
 <td></td>
 <td>TableTemplate</td>
-<td>El DDL de la tabla es heredable.</td>
+<td>El DDL de table es heredable.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>TableDerived</td>
-<td>El DDL de la tabla se hereda de una tabla de plantillas.</td>
+<td>El DDL de tabla se hereda de una tabla de plantillas.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>TableNoFixedVarColumnsInDerivedTables</td>
-<td>Columnas fijas o variables en las tablas derivadas (de modo que se puedan agregar columnas fijas o de variables a la plantilla en el futuro). Se usa junto con TableTemplate.</td>
+<td>Columnas fijas o variables en tablas derivadas (de modo que las columnas fijas o variables se puedan agregar a la plantilla en el futuro). Se usa junto con TableTemplate.</td>
 </tr>
 </tbody>
 </table>
@@ -116,4 +116,4 @@ public enum ObjectInfoFlags
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

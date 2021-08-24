@@ -1,25 +1,25 @@
 ---
-title: Enumerar los objetos de una colección
-description: Enumerar los objetos de una colección
+title: Enumerar objetos en una colección
+description: Enumerar objetos en una colección
 ms.assetid: 664e4d99-48ed-4948-b816-e92ad1ca3ece
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e5f3c543e01f3c8f154628c6e204aff53c6ad210
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 77b0399a75e9301fcdb5e88e6f30b7e0b2ef66160fa05136ed43b51fa8e80eca
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105676493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119742115"
 ---
-# <a name="enumerating-objects-in-a-collection"></a>Enumerar los objetos de una colección
+# <a name="enumerating-objects-in-a-collection"></a>Enumerar objetos en una colección
 
 > [!Note]  
-> Se ha cambiado el nombre del servicio de autenticación de Internet (IAS) a partir de Windows Server 2008. El contenido de este tema se aplica a IAS y NPS. En todo el texto, NPS se usa para hacer referencia a todas las versiones del servicio, incluidas las versiones mencionadas originalmente como IAS.
+> El nombre del Servicio de autenticación de Internet (IAS) se ha cambiado a Servidor de directivas de red (NPS) a partir Windows Server 2008. El contenido de este tema se aplica a IAS y NPS. A lo largo del texto, NPS se usa para hacer referencia a todas las versiones del servicio, incluidas las versiones a las que se hizo referencia originalmente como IAS.
 
- 
+ 
 
-En el código siguiente se enumeran los protocolos de la colección de protocolos NPS.
+El código siguiente enumera los protocolos de la colección de protocolos NPS.
 
 
 ```C++
@@ -122,15 +122,15 @@ En el código siguiente se enumeran los protocolos de la colección de protocolo
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las variables vtName y vtProtocol son de tipo [ \_ variante \_ t](/previous-versions/visualstudio/visual-studio-6.0/aa278648(v=vs.60)). Un objeto [ \_ Variant \_ t](/previous-versions/visualstudio/visual-studio-6.0/aa278648(v=vs.60)) encapsula, o agrega, el tipo de datos **Variant** . La clase administra la asignación y desasignación de recursos, y realiza llamadas de función a [**VariantInit**](/windows/win32/api/oleauto/nf-oleauto-variantinit) y [**VariantClear**](/windows/win32/api/oleauto/nf-oleauto-variantclear) según corresponda.
+Las variables vtName y vtProtocol son de tipo [ \_ variant \_ t](/previous-versions/visualstudio/visual-studio-6.0/aa278648(v=vs.60)). Un [ \_ objeto variant \_ t](/previous-versions/visualstudio/visual-studio-6.0/aa278648(v=vs.60)) encapsula o encierra el tipo de datos **VARIANT.** La clase administra la asignación y desasignación de recursos, y realiza llamadas de función a [**VariantInit**](/windows/win32/api/oleauto/nf-oleauto-variantinit) y [**VariantClear**](/windows/win32/api/oleauto/nf-oleauto-variantclear) según corresponda.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[\_variante \_ t](/previous-versions/visualstudio/visual-studio-6.0/aa278648(v=vs.60))
+[\_variant \_ t](/previous-versions/visualstudio/visual-studio-6.0/aa278648(v=vs.60))
 </dt> <dt>
 
 [Agregar un cliente](/windows/desktop/Nps/sdo-adding-a-client)
@@ -142,7 +142,7 @@ Las variables vtName y vtProtocol son de tipo [ \_ variante \_ t](/previous-vers
 [**IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant)
 </dt> <dt>
 
-[**ISdo:: GetProperty**](/windows/desktop/api/sdoias/nf-sdoias-isdo-getproperty)
+[**ISdo::GetProperty**](/windows/desktop/api/sdoias/nf-sdoias-isdo-getproperty)
 </dt> <dt>
 
 [Recuperación de un SDO de servicio](/windows/desktop/Nps/sdo-retrieving-a-service-sdo)
@@ -154,9 +154,9 @@ Las variables vtName y vtProtocol son de tipo [ \_ variante \_ t](/previous-vers
 [**VariantInit**](/windows/win32/api/oleauto/nf-oleauto-variantinit)
 </dt> <dt>
 
-[**VARIANTE**](/windows/win32/api/oaidl/ns-oaidl-variant)
+[**Variante**](/windows/win32/api/oaidl/ns-oaidl-variant)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

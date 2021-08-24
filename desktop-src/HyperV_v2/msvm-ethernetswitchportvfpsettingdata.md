@@ -1,7 +1,7 @@
 ---
 description: Use para establecer VFP como obligatorio en un puerto.
 ms.assetid: efc54e06-26ff-4773-b4b4-a1c5e03d06cc
-title: Msvm_EthernetSwitchPortVfpSettingData (clase)
+title: Msvm_EthernetSwitchPortVfpSettingData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 95d143b8e5cbc4845cc25361204fafa9efa45459
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9eb92e71944f43d87228667754df19874a65c6009637a5730d736cb80bb26b9a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105670022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119681396"
 ---
-# <a name="msvm_ethernetswitchportvfpsettingdata-class"></a>MSVM \_ EthernetSwitchPortVfpSettingData (clase)
+# <a name="msvm_ethernetswitchportvfpsettingdata-class"></a>Clase Msvm \_ EthernetSwitchPortVfpSettingData
 
 Use para establecer VFP como obligatorio en un puerto.
 
@@ -37,7 +37,7 @@ class Msvm_EthernetSwitchPortVfpSettingData : Msvm_EthernetSwitchPortFeatureSett
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ EthernetSwitchPortVfpSettingData** no define ningún miembro.
+La **clase Msvm \_ EthernetSwitchPortVfpSettingData** no define ningún miembro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,10 +45,10 @@ La clase **MSVM \_ EthernetSwitchPortVfpSettingData** no define ningún miembro.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -57,7 +57,7 @@ La clase **MSVM \_ EthernetSwitchPortVfpSettingData** no define ningún miembro.
 
 <dl> <dt>
 
-[**MSVM \_ EthernetSwitchPortFeatureSettingData**](msvm-ethernetswitchportfeaturesettingdata.md)
+[**Msvm \_ EthernetSwitchPortFeatureSettingData**](msvm-ethernetswitchportfeaturesettingdata.md)
 </dt> </dl>
 
  

@@ -1,8 +1,8 @@
 ---
-description: El método Reset de la \_ clase SerialController de CIM solicita un restablecimiento del dispositivo lógico.
+description: El método Reset de la clase \_ CIM SerialController solicita un restablecimiento del dispositivo lógico.
 ms.assetid: b4d99f49-52ac-4f62-9573-c712d0cafdd0
 ms.tgt_platform: multiple
-title: Método Reset de la clase CIM_SerialController
+title: Método reset de la CIM_SerialController clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,19 +14,19 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a764eb74be90cf42dd898ca0b6dd88efbed4286f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4fca63cfc772b4b91e77d126f0ff769a89417a11ed393d2c8e6d8cad17d10938
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119701065"
 ---
-# <a name="reset-method-of-the-cim_serialcontroller-class"></a>Método Reset de la \_ clase SerialController de CIM
+# <a name="reset-method-of-the-cim_serialcontroller-class"></a>Método Reset de la clase \_ SerialController de CIM
 
-El método **RESET** de la \_ clase SerialController de CIM solicita un restablecimiento del dispositivo lógico. Este método se hereda del [**\_ LogicalDevice de CIM**](cim-logicaldevice.md).
+El **método Reset** de la clase SerialController de CIM solicita un \_ restablecimiento del dispositivo lógico. Este método se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -45,13 +45,13 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 (cero) si la solicitud se ejecutó correctamente, 1 (uno) si no se admite la solicitud y otro valor si se produjo un error.
+Devuelve 0 (cero) si la solicitud se ejecutó correctamente, 1 (uno) si no se admite la solicitud y algún otro valor si se produjo un error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método no está implementado actualmente por WMI. Para usar este método, debe implementarlo en su propio proveedor.
+Wmi no implementa actualmente este método. Para usar este método, debe implementarlo en su propio proveedor.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -71,10 +71,10 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[\_SERIALCONTROLLER CIM](reset-method-in-class-cim-serialcontroller.md)
+[CIM \_ SerialController](reset-method-in-class-cim-serialcontroller.md)
 </dt> <dt>
 
-[**\_SERIALCONTROLLER CIM**](cim-serialcontroller.md)
+[**CIM \_ SerialController**](cim-serialcontroller.md)
 </dt> </dl>
 
  

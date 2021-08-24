@@ -1,7 +1,7 @@
 ---
-description: La función GetFrame devuelve un identificador a un marco determinado dentro de una captura.
+description: La función GetFrame devuelve un identificador a un fotograma determinado dentro de una captura.
 ms.assetid: d40bc364-0028-4006-a6c2-6ee100366ba3
-title: GetFrame (función) (Netmon. h)
+title: Función GetFrame (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 3f79e7fa6fc4e79f4dea804769cc9d51b8096860
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5f6f992c0c61978e2de6f90755852c9e29d6ac51d7ae7f2405ef981ed695c4b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153858"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119779255"
 ---
-# <a name="getframe-function"></a>GetFrame (función)
+# <a name="getframe-function"></a>Función GetFrame
 
-La función **GetFrame** devuelve un identificador a un marco determinado dentro de una captura.
+La **función GetFrame** devuelve un identificador a un fotograma determinado dentro de una captura.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,14 +40,14 @@ HFRAME WINAPI GetFrame(
 
 <dl> <dt>
 
-*hCapture* \[ de\]
+*hCapture* \[ En\]
 </dt> <dd>
 
-Identificador de una captura. Para obtener el identificador de captura, llame a la función [GetFrameCaptureHandle](getframecapturehandle.md) .
+Identificador de una captura. Para obtener el identificador de captura, llame a [la función GetFrameCaptureHandle.](getframecapturehandle.md)
 
 </dd> <dt>
 
-*Númeromarco* \[ de\]
+*FrameNumber* \[ En\]
 </dt> <dd>
 
 Número (basado en cero) del marco. El número del primer fotograma de una captura es cero.
@@ -56,15 +56,15 @@ Número (basado en cero) del marco. El número del primer fotograma de una captu
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente, el valor devuelto es un identificador del marco.
+Si la función se realiza correctamente, el valor devuelto es un identificador para el marco.
 
-Si la función no es correcta (es decir, si *hCapture* no es válida o el número de marco está fuera del intervalo), el valor devuelto es **null**.
+Si la función no se realiza correctamente (es decir, si *hCapture* no es válido o el número de fotograma está fuera del intervalo), el valor devuelto es **NULL.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Utilice la función **GetFrame** para obtener el identificador de marco necesario al buscar instancias de una propiedad. Las funciones que se usan para buscar instancias de propiedad son [FindPropertyInstance](findpropertyinstance.md) , que localiza la primera instancia y [FindPropertyInstanceRestart](findpropertyinstancerestart.md) , que busca la instancia siguiente.
+Use la **función GetFrame** para obtener el identificador de marco necesario al buscar instancias de una propiedad. Las funciones que se usan para buscar instancias de propiedad son [FindPropertyInstance,](findpropertyinstance.md) que busca la primera instancia, y [FindPropertyInstanceRestart,](findpropertyinstancerestart.md) que busca la instancia siguiente.
 
-Los [*expertos*](e.md) y [*analizadores*](p.md) pueden llamar a la función **GetFrame** .
+[*Los*](e.md) expertos [*y analizadores pueden*](p.md) llamar a **la función GetFrame.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,8 +74,8 @@ Los [*expertos*](e.md) y [*analizadores*](p.md) pueden llamar a la función **Ge
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Biblioteca<br/>                  | <dl> <dt>Nmapi. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Biblioteca<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 

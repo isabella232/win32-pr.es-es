@@ -1,17 +1,17 @@
 ---
 description: Valor hash que indica la sesión de adquisición.
 ms.assetid: 7c05639d-7324-4132-9d8d-f6bdd38b8e88
-title: System. AcquisitionID
+title: System.AcquisitionID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c7b391509a62f1685f1277754d6cef4ef9c85906
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7cfcc7651ed449dcd4c6b70fb0cb4a17f30c42c2e28aa1b219e0d531aa5ae36d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105706112"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119718015"
 ---
-# <a name="systemacquisitionid"></a>System. AcquisitionID
+# <a name="systemacquisitionid"></a>System.AcquisitionID
 
 Valor hash que indica la sesión de adquisición.
 
@@ -30,9 +30,9 @@ propertyDescription
       type = Int32
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

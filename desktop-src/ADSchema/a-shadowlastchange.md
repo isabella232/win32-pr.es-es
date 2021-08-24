@@ -1,10 +1,10 @@
 ---
-title: atributo shadowLastChange
-description: Contiene el último cambio de la información de la sombra.
+title: Atributo shadowLastChange
+description: Contiene el último cambio de la información de sombra.
 ms.assetid: 397b32f4-9657-40ab-9525-a27474c978cf
 ms.tgt_platform: multiple
 keywords:
-- shadowLastChange esquema de AD de atributos
+- Esquema de AD del atributo shadowLastChange
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eeb8e7b75d6b1ba3b6751dc27774caf5d04935b5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 07d50e5f6ec31d950609c9503d40ede80ad7d019c649c1a26e026758fb919c66
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151719"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119802295"
 ---
-# <a name="shadowlastchange-attribute"></a>atributo shadowLastChange
+# <a name="shadowlastchange-attribute"></a>Atributo shadowLastChange
 
-Contiene el último cambio de la información de la sombra.
+Contiene el último cambio de la información de sombra.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | shadowLastChange                     |
-| Nombre para mostrar de LDAP | shadowLastChange                     |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | shadowLastChange                     |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.5                      |
-| System-ID-GUID    | f8f2689c-29e8-4843-8177-e8b98e15eeac |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | f8f2689c-29e8-4843-8177-e8b98e15eeac |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -52,13 +52,13 @@ Contiene el último cambio de la información de la sombra.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | True                                                |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Verdadero                                                |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
@@ -73,13 +73,13 @@ Contiene el último cambio de la información de la sombra.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | True                                                |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Verdadero                                                |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
@@ -94,13 +94,13 @@ Contiene el último cambio de la información de la sombra.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | True                                                |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Verdadero                                                |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
@@ -113,15 +113,15 @@ Contiene el último cambio de la información de la sombra.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | True                                                |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Verdadero                                                |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |

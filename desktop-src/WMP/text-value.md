@@ -1,9 +1,9 @@
 ---
-title: TEXT. Value
-description: El atributo value especifica o recupera el texto que se muestra en el control de texto.
+title: TEXT.value
+description: El atributo value especifica o recupera el texto que se muestra en el control Text.
 ms.assetid: dbc50be2-ee18-4661-a343-9e906879aba0
 keywords:
-- Windows Media Player TEXT. Value
+- Text.value Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d87f688f7afffeb588a37ac13ebff4cdc7cc105
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8eef6b17428831a52a0e3cf5b8f8ec3dd7f795d5d4b78e2c4700a6274b877820
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649765"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119762865"
 ---
-# <a name="textvalue"></a>TEXT. Value
+# <a name="textvalue"></a>TEXT.value
 
-El atributo **Value** especifica o recupera el texto que se muestra en el control de texto.
+El **atributo** value especifica o recupera el texto que se muestra en el control Text.
 
 ``` syntax
         elementID.value
@@ -29,21 +29,21 @@ El atributo **Value** especifica o recupera el texto que se muestra en el contro
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura.
+Este atributo es una cadena de lectura y **escritura.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el ancho del control de texto no es suficiente para contener el texto proporcionado, se recorta el texto y se muestra un botón de puntos suspensivos para ilustrar el hecho. Si no se ha establecido el atributo **ToolTip** , el texto completo aparecerá como información sobre herramientas cuando el cursor se mantenga sobre el control.
+Si el ancho del control Text no es suficiente para contener el texto proporcionado, el texto se recorta y se muestran puntos suspensivos para ilustrar el hecho. Si no se ha establecido el atributo **toolTip,** el texto completo aparecerá como información sobre herramientas cuando el cursor mantenga el puntero sobre el control.
 
 Si no se especifica un ancho, el ancho predeterminado del control es el ancho de la cadena.
 
 Si no se especifica el alto del control, el alto predeterminado es una línea.
 
-Si el atributo **WordWrap** está establecido en true y el alto del control es suficiente para alojar otra línea de texto, el texto se ajusta a una línea posterior. El ajuste solo se produce entre palabras. También se pueden forzar saltos de línea, como se explica en **WordWrap**.
+Si el **atributo wordWrap** se establece en true y el alto del control es suficiente para dar cabida a otra línea de texto, el texto se ajusta a una línea posterior. El ajuste solo se produce entre palabras. Los saltos de línea también se pueden forzar, como se explica **en wordWrap**.
 
 ## <a name="examples"></a>Ejemplos
 
-El ejemplo siguiente es un archivo de definición de máscara completo que muestra cómo se utilizan los atributos del elemento de **texto** . Se puede encontrar en el directorio Samples que se instaló con el SDK.
+El ejemplo siguiente es un archivo de definición de máscara completo que muestra cómo se usan los atributos del **elemento TEXT.** Se puede encontrar en el directorio Ejemplos que se instaló con el SDK.
 
 
 ```C++
@@ -156,7 +156,7 @@ El ejemplo siguiente es un archivo de definición de máscara completo que muest
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -167,10 +167,10 @@ El ejemplo siguiente es un archivo de definición de máscara completo que muest
 [**Elemento TEXT**](text-element.md)
 </dt> <dt>
 
-[**TEXTO. toolTip**](text-tooltip.md)
+[**Text.toolTip**](text-tooltip.md)
 </dt> <dt>
 
-[**TEXT. wordWrap**](text-wordwrap.md)
+[**TEXT.wordWrap**](text-wordwrap.md)
 </dt> </dl>
 
  

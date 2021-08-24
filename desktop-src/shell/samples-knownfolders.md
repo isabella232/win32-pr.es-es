@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 8d3784e64986a338f6554534199852191bd06ca7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c189b315387bfbd5e6051ecc382d2ea354d18925c15b11763c28602d2015c482
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119820315"
 ---
 # <a name="known-folders-sample"></a>Ejemplo de carpetas conocidas
 
@@ -26,12 +26,12 @@ En este tema se incluyen las siguientes secciones.
 -   [Requisitos](#requirements)
 -   [Descargar el ejemplo](#downloading-the-sample)
 -   [Compilar el ejemplo](#building-the-sample)
--   [Ejecutar el ejemplo](#running-the-sample)
+-   [Ejecución del ejemplo](#running-the-sample)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="description"></a>Descripción
 
-En este ejemplo se incluye un archivo de registro que muestra cómo registrar una carpeta conocida escribiendo algunas claves y valores de registro comunes para los desarrolladores que prefieren el acceso al registro.
+Este ejemplo incluye un archivo del Registro que muestra cómo registrar una carpeta conocida escribiendo algunas claves y valores comunes del Registro para los desarrolladores que prefieren el acceso al Registro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,21 +46,21 @@ En este ejemplo se incluye un archivo de registro que muestra cómo registrar un
 
  
 
-Para conocer los requisitos adicionales, consulte el archivo Léame incluido con el ejemplo.
+Para obtener requisitos adicionales, consulte el archivo Léame incluido con el ejemplo.
 
 ## <a name="downloading-the-sample"></a>Descargar el ejemplo
 
-| Ubicación      | URL de ruta de acceso                                                                                             |
+| Ubicación      | Dirección URL de ruta de acceso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
 | GitHub  | [Ejemplo de KnownFolders](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/knownfolders) |
 
 ## <a name="building-the-sample"></a>Generar el ejemplo
 
-Para obtener instrucciones sobre cómo generar el ejemplo, vea el archivo Léame incluido con el ejemplo.
+Para obtener instrucciones sobre cómo compilar el ejemplo, consulte el archivo Léame incluido con el ejemplo.
 
 ## <a name="running-the-sample"></a>Ejecutar el ejemplo
 
-Para obtener instrucciones sobre cómo generar el ejemplo, vea el archivo Léame incluido con el ejemplo.
+Para obtener instrucciones sobre cómo compilar el ejemplo, consulte el archivo Léame incluido con el ejemplo.
 
 ## <a name="related-topics"></a>Temas relacionados
 

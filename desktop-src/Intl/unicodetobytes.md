@@ -1,7 +1,7 @@
 ---
 UID: ''
-title: UnicodeToBytes función)
-description: Convierte los caracteres Unicode a GB18030 bytes.
+title: Función UnicodeToBytes
+description: Convierte caracteres Unicode en bytes GB18030.
 old-location: ''
 ms.assetid: na
 ms.date: 04/10/2019
@@ -34,20 +34,20 @@ api_name:
 targetos: Windows
 req.typenames: ''
 req.redist: ''
-ms.openlocfilehash: 66ed21768c3acef7f2aa2128df057da8552b2ad2
-ms.sourcegitcommit: 1f6a1bfc1c4bb2641bc3ba44beb1f2727c94681b
+ms.openlocfilehash: 01109763644dc04aeb398e5fc64e221cd5f3d18870df2654fa5348bc163a277c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "103785489"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119764743"
 ---
-# <a name="unicodetobytes-function"></a>UnicodeToBytes función)
+# <a name="unicodetobytes-function"></a>Función UnicodeToBytes
 
 ## <a name="description"></a>Descripción
 
-En desuso. Convierte los caracteres Unicode a GB18030 bytes.
+En desuso. Convierte caracteres Unicode en bytes GB18030.
 
-**Nota:**  Al convertir los caracteres Unicode a GB18030 bytes, una aplicación que se ejecute en Windows Vista y versiones posteriores debería usar la función [WideCharToMultiByte](/windows/desktop/api/stringapiset/nf-stringapiset-widechartomultibyte) .
+**Nota**  Al convertir caracteres Unicode en bytes GB18030, una aplicación para ejecutarse en Windows Vista y versiones posteriores debe usar la función [WideCharToMultiByte.](/windows/desktop/api/stringapiset/nf-stringapiset-widechartomultibyte)
 
 ```cpp
 DWORD UnicodeToBytes(
@@ -62,27 +62,27 @@ DWORD UnicodeToBytes(
 
 ### <a name="lpwidecharstr-in"></a>lpWideCharStr [in]
 
-Puntero a la cadena Unicode que se va a convertir.
+Puntero a la cadena Unicode que se convertirá.
 
 ### <a name="cchwidechar-in"></a>cchWideChar [in]
 
-Recuento de caracteres de la cadena Unicode que se va a convertir.
+Recuento de caracteres de la cadena Unicode que se convertirá.
 
 ### <a name="lpmultibytestr-in"></a>lpMultiByteStr [in]
 
 Puntero al búfer multibyte de destino.
-Si *lpMultiByteStr* es 0, se devuelve el recuento de bytes del resultado de GB18030 y no se realiza ninguna conversión.
+Si *lpMultiByteStr* es 0, se devuelve el recuento de bytes del resultado GB18030 y no se realiza ninguna conversión.
 
 ### <a name="cchmultibyte-in"></a>cchMultiByte [in]
 
 Recuento de bytes del búfer multibyte de destino.
-Si *cchMultiByte* es 0, se devuelve el recuento de bytes del resultado de GB18030 y no se realiza ninguna conversión.
+Si *cchMultiByte* es 0, se devuelve el recuento de bytes del resultado GB18030 y no se realiza ninguna conversión.
 
 ## <a name="returns"></a>Devoluciones
 
-Devuelve el recuento de bytes de los caracteres multibyte que se generan si se realiza correctamente.
+Devuelve el recuento de bytes de los caracteres multibyte que se generan, si se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ## <a name="see-also"></a>Vea también
 

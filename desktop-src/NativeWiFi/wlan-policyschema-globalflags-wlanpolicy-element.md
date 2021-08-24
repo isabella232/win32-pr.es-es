@@ -1,7 +1,7 @@
 ---
 description: Contiene la configuración global del módulo de configuración automática (ACM).
 ms.assetid: fb2b96d0-38cc-44fe-a82a-97e73b6a8f2a
-title: Elemento Indicadores_globales (WLANPolicy)
+title: Elemento globalFlags (WLANPolicy)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 97d0b8ee90407efd94ac46cc1df6b084b9dcc54d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2851ae779bf1693d44642f87d33a71c17000e9dc0b68eeb8daab83972b37457d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104546814"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119800335"
 ---
-# <a name="globalflags-wlanpolicy-element"></a>Elemento Indicadores_globales (WLANPolicy)
+# <a name="globalflags-wlanpolicy-element"></a>Elemento globalFlags (WLANPolicy)
 
-El elemento Indicadores_globales (WLANPolicy) contiene la configuración global para el módulo de configuración automática (ACM). Este elemento es obligatorio.
+El elemento globalFlags (WLANPolicy) contiene la configuración global del módulo de configuración automática (ACM). Este elemento es obligatorio.
 
 ``` syntax
 <xs:element name="globalFlags">
@@ -47,7 +47,7 @@ El elemento Indicadores_globales (WLANPolicy) contiene la configuración global 
 </xs:element>
 ```
 
-El elemento **indicadores_globales** se define mediante el elemento [**WLANPolicy**](wlan-policyschema-wlanpolicy-element.md) .
+El **elemento globalFlags** se define mediante el [**elemento WLANPolicy.**](wlan-policyschema-wlanpolicy-element.md)
 
 ## <a name="child-elements"></a>Elementos secundarios
 
@@ -55,9 +55,9 @@ El elemento **indicadores_globales** se define mediante el elemento [**WLANPolic
 
 | Elemento                                                                                                                    | Tipo    | Descripción                                                                                                                          |
 |----------------------------------------------------------------------------------------------------------------------------|---------|--------------------------------------------------------------------------------------------------------------------------------------|
-| [**allowEveryoneToCreateAllUserProfiles**](wlan-policyschema-alloweveryonetocreatealluserprofiles-globalflags-element.md) | boolean | Especifica si un usuario puede crear un perfil de todos los usuarios. <br/>                                                               |
-| [**enableAutoConfig**](wlan-policyschema-enableautoconfig-globalflags-element.md)                                         | boolean | Especifica si los equipos usan el servicio de configuración automática (AutoConfig) integrado para administrar las conexiones inalámbricas. <br/> |
-| [**showDeniedNetwork**](wlan-policyschema-showdeniednetwork-globalflags-element.md)                                       | boolean | Especifica si las redes denegadas aparecen en el Asistente para **conectarse a una red** . <br/>                                         |
+| [**allowEveryoneToCreateAllUserProfiles**](wlan-policyschema-alloweveryonetocreatealluserprofiles-globalflags-element.md) | boolean | Especifica si un usuario puede crear un perfil de todo el usuario. <br/>                                                               |
+| [**enableAutoConfig**](wlan-policyschema-enableautoconfig-globalflags-element.md)                                         | boolean | Especifica si las máquinas usan el servicio de configuración automática (AutoConfig) integrado para administrar conexiones inalámbricas. <br/> |
+| [**showDeniedNetwork**](wlan-policyschema-showdeniednetwork-globalflags-element.md)                                       | boolean | Especifica si las redes denegadas aparecen en el **Conectar a un Asistente para** redes. <br/>                                         |
 
 
 
@@ -65,10 +65,10 @@ El elemento **indicadores_globales** se define mediante el elemento [**WLANPolic
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

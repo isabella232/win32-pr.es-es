@@ -59,7 +59,7 @@ Consulte los comentarios de [**CCM \_ SETUNICODEFORMAT para**](ccm-setunicodefor
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

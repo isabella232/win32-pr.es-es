@@ -1,9 +1,9 @@
 ---
-title: MCI_WAVE_SET_PARMS estructura (Mciapi. h)
-description: La \_ estructura parms de MCI Wave \_ set \_ contiene información para el \_ comando MCI set para dispositivos de audio de forma de onda.
+title: MCI_WAVE_SET_PARMS estructura (Mciapi.h)
+description: La estructura MCI \_ WAVE \_ SET \_ PARMS contiene información para el comando MCI \_ SET para dispositivos de audio de onda.
 ms.assetid: 24c26124-274f-457e-ab87-887f3bcffce3
 keywords:
-- Estructura de MCI_WAVE_SET_PARMS de Windows multimedia
+- MCI_WAVE_SET_PARMS estructura Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 11446eda931da1a645b9bb6218c93898862b59bd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 85508ec493ecdc38825b90877e608683fe6c0bb7c099365c187a434890c605d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905571"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119783755"
 ---
-# <a name="mci_wave_set_parms-structure"></a>\_Estructura parms de MCI Wave \_ set \_
+# <a name="mci_wave_set_parms-structure"></a>Estructura MCI \_ WAVE \_ SET \_ PARMS
 
-La estructura **parms de MCI \_ Wave \_ set \_** contiene información para el comando [**MCI \_ set**](mci-set.md) para dispositivos de audio de forma de onda.
+La **estructura MCI \_ WAVE SET \_ \_ PARMS** contiene información para el [**comando MCI \_ SET**](mci-set.md) para dispositivos de audio de onda.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,7 +57,7 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La palabra de orden inferior especifica un identificador de ventana que se usa para la marca de notificación de MCI \_ .
+La palabra de orden bajo especifica un identificador de ventana usado para la marca \_ MCI NOTIFY.
 
 </dd> <dt>
 
@@ -71,7 +71,7 @@ Formato de hora del dispositivo.
 **dwAudio**
 </dt> <dd>
 
-Número de canal para la salida de audio. Se usa normalmente al activar o desactivar un canal.
+Número de canal para la salida de audio. Normalmente se usa al activar o desactivar un canal.
 
 </dd> <dt>
 
@@ -85,14 +85,14 @@ Canal de entrada de audio.
 **wOutput**
 </dt> <dd>
 
-Dispositivo de salida que se va a usar. Por ejemplo, este valor podría ser 2 Si un sistema tuviera dos tarjetas de sonido instaladas.
+Dispositivo de salida que se usará. Por ejemplo, este valor podría ser 2 si un sistema tuviera dos tarjetas de sonido instaladas.
 
 </dd> <dt>
 
 **wFormatTag**
 </dt> <dd>
 
-Formato de los datos de audio de forma de onda, como PCM con formato de onda \_ \_ . Los valores posibles se definen en Mmreg. h.
+Formato de los datos de audio de forma de onda, como WAVE \_ FORMAT \_ PCM. Los valores posibles se definen en Mmreg.h.
 
 </dd> <dt>
 
@@ -120,21 +120,21 @@ Reservado.
 **nSamplesPerSec**
 </dt> <dd>
 
-Muestras por segundo.
+Ejemplos por segundo.
 
 </dd> <dt>
 
 **nAvgBytesPerSec**
 </dt> <dd>
 
-Velocidad de muestra en bytes por segundo.
+Frecuencia de muestreo en bytes por segundo.
 
 </dd> <dt>
 
 **nBlockAlign**
 </dt> <dd>
 
-Alineación de bloque de los datos.
+Bloquear la alineación de los datos.
 
 </dd> <dt>
 
@@ -159,7 +159,7 @@ Reservado.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Al asignar datos a los miembros de esta estructura, establezca las marcas correspondientes en el parámetro *fdwCommand* de la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar los miembros.
 
@@ -171,7 +171,7 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -179,13 +179,13 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)
 </dt> <dt>
 
-[**MCI \_ set**](mci-set.md)
+[**MCI \_ SET**](mci-set.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

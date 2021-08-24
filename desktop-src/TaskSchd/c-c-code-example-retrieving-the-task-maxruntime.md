@@ -1,22 +1,22 @@
 ---
-title: Ejemplo de código de C/C++ recuperar la tarea MaxRunTime
-description: En este ejemplo se recupera la cantidad máxima de tiempo que se puede ejecutar la tarea (en milisegundos) y se muestra ese número en la pantalla. En este ejemplo se da por supuesto que la tarea y la tarea de prueba ya existen en el equipo local.
+title: Ejemplo de código de C/C++ recuperando la tarea MaxRunTime
+description: En este ejemplo se recupera la cantidad máxima de tiempo que se puede ejecutar la tarea (en milisegundos) y se muestra ese número en la pantalla. En este ejemplo se supone que la tarea y la tarea de prueba ya existen en el equipo local.
 ms.assetid: 33873fef-1b67-4010-8bda-b75e1dfa80d5
 keywords:
-- recuperando Programador de tareas de MaxRunTime de tareas
-- recuperación de las propiedades de la tarea Programador de tareas, MaxRunTime
+- recuperación de la tarea MaxRunTime Programador de tareas
+- recuperar las propiedades de Programador de tareas , MaxRunTime
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 20fcf442e2936de48a11aea4d81de6e0bac18f92
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: cbc060884be207081d56f0325d2e1f4228ef609e7733738874e61d68e1d2eec2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418432"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119738615"
 ---
-# <a name="cc-code-example-retrieving-the-task-maxruntime"></a>Ejemplo de código de C/C++: recuperar la tarea MaxRunTime
+# <a name="cc-code-example-retrieving-the-task-maxruntime"></a>Ejemplo de código de C/C++: recuperación de la tarea MaxRunTime
 
-En este ejemplo se recupera la cantidad máxima de tiempo que se puede ejecutar la tarea (en milisegundos) y se muestra ese número en la pantalla. En este ejemplo se da por supuesto que la tarea y la tarea de prueba ya existen en el equipo local.
+En este ejemplo se recupera la cantidad máxima de tiempo que se puede ejecutar la tarea (en milisegundos) y se muestra ese número en la pantalla. En este ejemplo se supone que la tarea y la tarea de prueba ya existen en el equipo local.
 
 
 ```C++
@@ -108,12 +108,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Ejemplos de Programador de tareas 1,0](task-scheduler-1-0-examples.md)
+[Programador de tareas ejemplos de 1.0](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

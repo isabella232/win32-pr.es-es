@@ -1,9 +1,9 @@
 ---
-title: COLUMN. columnResizeMode
-description: El atributo columnResizeMode especifica o recupera el modo de cambiar el tamaño de esta columna.
+title: COLUMN.columnResizeMode
+description: El atributo columnResizeMode especifica o recupera el modo de cambio de tamaño de esta columna.
 ms.assetid: 95ece2a3-20a6-4b9d-a2eb-fc69fc612f29
 keywords:
-- COLUMN. columnResizeMode Windows Media Player
+- COLUMN.columnResizeMode Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 52d17b1a2edd878fb15e69c595e3c061c1963a5b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c59046aa76c01a1439e5db8f0fb6850e7df74d874cba555d1f9c3829f09d9598
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699669"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119764005"
 ---
-# <a name="columncolumnresizemode"></a>COLUMN. columnResizeMode
+# <a name="columncolumnresizemode"></a>COLUMN.columnResizeMode
 
-El atributo **columnResizeMode** especifica o recupera el modo de cambiar el tamaño de esta columna.
+El **atributo columnResizeMode** especifica o recupera el modo de cambio de tamaño de esta columna.
 
 ``` syntax
         elementID.columnResizeMode
@@ -29,16 +29,16 @@ El atributo **columnResizeMode** especifica o recupera el modo de cambiar el tam
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura que contiene uno de los valores siguientes.
+Este atributo es una cadena de **lectura** y escritura que contiene uno de los valores siguientes.
 
 
 
-| Value          | Descripción                                                                                                    |
+| Valor          | Descripción                                                                                                    |
 |----------------|----------------------------------------------------------------------------------------------------------------|
-| AutosizeHeader | Predeterminada. La columna cambia de tamaño para dar cabida a todos los datos de la columna y del encabezado.                         |
-| AutosizeData   | La columna cambia de tamaño para alojar solo todos los datos de la columna.                                                 |
+| AutosizeHeader | Predeterminada. El tamaño de la columna cambia de tamaño para dar cabida a todos los datos de la columna y del encabezado.                         |
+| AutosizeData   | El tamaño de la columna cambia de tamaño para dar cabida solo a todos los datos de la columna.                                                 |
 | Fijo          | La columna tiene un tamaño fijo.                                                                                    |
-| Se expande      | La columna cambia de tamaño para usar el espacio restante en el control de la **lista de reproducción** después de cambiar el tamaño de todas las demás columnas. |
+| Se extiende      | La columna cambia de tamaño para usar el espacio restante en el control **PLAYLIST** después de cambiar el tamaño de todas las demás columnas. |
 
 
 
@@ -48,9 +48,9 @@ Este atributo es una **cadena** de lectura/escritura que contiene uno de los val
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
@@ -58,7 +58,7 @@ Este atributo es una **cadena** de lectura/escritura que contiene uno de los val
 
 <dl> <dt>
 
-[**COLUMN, elemento**](column-element.md)
+[**ELEMENTO COLUMN**](column-element.md)
 </dt> </dl>
 
  

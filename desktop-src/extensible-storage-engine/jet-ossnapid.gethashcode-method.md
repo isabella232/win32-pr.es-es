@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_OSSNAPID. GetHashCode (método)'
-title: JET_OSSNAPID. GetHashCode (método)
+description: 'Más información sobre: JET_OSSNAPID. Método GetHashCode'
+title: JET_OSSNAPID. Método GetHashCode
 TOCTitle: 'GetHashCode method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_OSSNAPID.GetHashCode
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_ossnapid.gethashcode(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f58da671a2803a0b16c9c7b868137d0a271c9e66
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7d79b3fcc833740f5fe5b70aa185ea28fc038a30014c12254b2652bc020b6e7e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706799"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119720115"
 ---
-# <a name="jet_ossnapidgethashcode-method"></a>JET_OSSNAPID. GetHashCode (método)
+# <a name="jet_ossnapidgethashcode-method"></a>JET_OSSNAPID. Método GetHashCode
 
 Devuelve el código hash de esta instancia.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,15 +56,15 @@ public override int GetHashCode()
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 Código hash de esta instancia.  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_OSSNAPID](./jet-ossnapid-structure.md)
+[JET_OSSNAPID estructura](./jet-ossnapid-structure.md)
 
-[Miembros de JET_OSSNAPID](./jet-ossnapid-members.md)
+[JET_OSSNAPID miembros](./jet-ossnapid-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,23 +1,23 @@
 ---
-description: Puede iniciar una vista con raíz de un punto de unión a través de un archivo de acceso directo a ese punto de unión.
+description: Puede iniciar una vista raíz de un punto de unión a través de un archivo de acceso directo a ese punto de unión.
 title: Cómo abrir una vista raíz de un punto de unión a través de un archivo de acceso directo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 52096f0dbbcebadb60e2612f0304ed497199b2ed
-ms.sourcegitcommit: 822413efb4a70dd464e5db4d9e8693ef74f8132f
+ms.openlocfilehash: 9337caa955164dad36456feb7d58efd8768928429c06d22e90d9fbbf28e68bd6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113581613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119714895"
 ---
 # <a name="how-to-open-a-rooted-view-of-a-junction-point-through-a-shortcut-file"></a>Cómo abrir una vista raíz de un punto de unión a través de un archivo de acceso directo
 
-Puede iniciar una vista con raíz de un punto de unión a través de un archivo [de acceso directo](./links.md) a ese punto de unión.
+Puede iniciar una vista raíz de un punto de unión a través de un archivo [de acceso directo](./links.md) a ese punto de unión.
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
 
-Establezca la línea Destino del archivo de acceso directo en Explorer.exe con una marca /root. La forma exacta del comando depende de la ubicación del punto de unión:
+Establezca la línea de destino del archivo de acceso directo Explorer.exe con una marca /root. La forma exacta del comando depende de la ubicación del punto de unión:
 
 -   Si el punto de unión es una subcarpeta del escritorio, use:
 
@@ -59,7 +59,7 @@ Establezca la línea Destino del archivo de acceso directo en Explorer.exe con u
 [Especificar la ubicación de una extensión de espacio de nombres](nse-junction.md)
 </dt> <dt>
 
-[Cómo abrir una vista con raíz de un punto de unión a través del Registro](how-to-use-a-junction-point-to-open-a-rooted-view.md)
+[Cómo abrir una vista raíz de un punto de unión a través del Registro](how-to-use-a-junction-point-to-open-a-rooted-view.md)
 </dt> </dl>
 
  

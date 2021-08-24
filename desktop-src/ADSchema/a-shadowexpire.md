@@ -1,10 +1,10 @@
 ---
 title: atributo shadowExpire
-description: Contiene la fecha absoluta para la expiración de la cuenta.
+description: Contiene la fecha absoluta para expirar la cuenta.
 ms.assetid: a16c5c46-eafd-457f-b39c-8b7053db9195
 ms.tgt_platform: multiple
 keywords:
-- shadowExpire esquema de AD de atributos
+- Esquema de AD del atributo shadowExpire
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e647b401f47ac11dd375cb8c33571606fddd81a7
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7bc62541eba4b756fd7d9e2065216e6d6a403824beba702d738c07b57459f119
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905918"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119836595"
 ---
 # <a name="shadowexpire-attribute"></a>atributo shadowExpire
 
-Contiene la fecha absoluta para la expiración de la cuenta.
+Contiene la fecha absoluta para expirar la cuenta.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
 | CN                | shadowExpire                         |
-| Nombre para mostrar de LDAP | shadowExpire                         |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | shadowExpire                         |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.10                     |
-| System-ID-GUID    | 75159a00-1fff-4cf4-8bff-4ef2695cf643 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | 75159a00-1fff-4cf4-8bff-4ef2695cf643 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -52,13 +52,13 @@ Contiene la fecha absoluta para la expiración de la cuenta.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | True                                                |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Verdadero                                                |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
@@ -73,13 +73,13 @@ Contiene la fecha absoluta para la expiración de la cuenta.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | True                                                |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Verdadero                                                |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
@@ -94,13 +94,13 @@ Contiene la fecha absoluta para la expiración de la cuenta.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | True                                                |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Verdadero                                                |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
@@ -115,13 +115,13 @@ Contiene la fecha absoluta para la expiración de la cuenta.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | True                                                |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Verdadero                                                |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |

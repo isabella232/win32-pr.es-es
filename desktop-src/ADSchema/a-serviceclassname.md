@@ -1,11 +1,11 @@
 ---
-title: Atributo de nombre de clase de servicio
-description: El nombre de cadena del servicio que representa un punto de administración.
+title: Atributo Service-Class-Name
+description: Nombre de cadena del servicio que representa un punto de administración.
 ms.assetid: b49a9570-eda0-49ca-8dd4-7d3639a7a319
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de nombre de clase de servicio
-- serviceClassName esquema de AD de atributos
+- Esquema de AD del atributo Service-Class-Name
+- Esquema de AD del atributo serviceClassName
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 740190d81994a5e31b3dce4dafb284a77e3c7e9a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6d82c43e7634a2874bcbf52efe87814220554b6c21bce2b7afa4b886852462fe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905920"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119836645"
 ---
-# <a name="service-class-name-attribute"></a>Atributo de nombre de clase de servicio
+# <a name="service-class-name-attribute"></a>Atributo Service-Class-Name
 
-El nombre de cadena del servicio que representa un punto de administración.
+Nombre de cadena del servicio que representa un punto de administración.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
 | CN                | Nombre de clase de servicio                          |
-| Nombre para mostrar de LDAP | serviceClassName                            |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | serviceClassName                            |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.509                      |
-| System-ID-GUID    | b7b1311d-b82e-11d0-afee-0000f80367c1        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | b7b1311d-b82e-11d0-afee-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,13 +55,13 @@ El nombre de cadena del servicio que representa un punto de administración.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | True                                                                    |
-| Está indexado             | True                                                                    |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Verdadero                                                                    |
+| Está indexado             | Verdadero                                                                    |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000001                                                              |
@@ -76,13 +76,13 @@ El nombre de cadena del servicio que representa un punto de administración.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | True                                                                    |
-| Está indexado             | True                                                                    |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Verdadero                                                                    |
+| Está indexado             | Verdadero                                                                    |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000001                                                              |
@@ -97,13 +97,13 @@ El nombre de cadena del servicio que representa un punto de administración.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | True                                                                    |
-| Está indexado             | True                                                                    |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Verdadero                                                                    |
+| Está indexado             | Verdadero                                                                    |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000001                                                              |
@@ -118,13 +118,13 @@ El nombre de cadena del servicio que representa un punto de administración.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | True                                                                    |
-| Está indexado             | True                                                                    |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Verdadero                                                                    |
+| Está indexado             | Verdadero                                                                    |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000001                                                              |
@@ -139,13 +139,13 @@ El nombre de cadena del servicio que representa un punto de administración.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | True                                                                    |
-| Está indexado             | True                                                                    |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Verdadero                                                                    |
+| Está indexado             | Verdadero                                                                    |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000001                                                              |
@@ -160,13 +160,13 @@ El nombre de cadena del servicio que representa un punto de administración.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | True                                                                    |
-| Está indexado             | True                                                                    |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Verdadero                                                                    |
+| Está indexado             | Verdadero                                                                    |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000001                                                              |

@@ -4,16 +4,16 @@ ms.assetid: 29d0bf2d-4897-43ed-ba3d-0b38b2f30375
 title: DocumentCoverBack
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad5c75fd4bbce89bbc707c17a82202846cf2490a
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: ae46d2672e53a72e015cf7b12559f727ae184ef7132ca1b7ea8014c7a984a46a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409388"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119719375"
 ---
 # <a name="documentcoverback"></a>DocumentCoverBack
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Describe la hoja de información posterior (final). Cada documento tendrá una hoja independiente. La hoja de cobertura debe imprimirse en pageMediaSize y PageMediaType usados para la página final del documento. La hoja de cobertura debe integrarse en las opciones de procesamiento (como DocumentDuplex o DocumentNUp), tal como se indica en la opción especificada.
 
@@ -25,7 +25,7 @@ Describe la hoja de información posterior (final). Cada documento tendrá una h
 
 
 
-| Nombre | Valor |
+| Nombre | Value |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | Característica<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Prefijo de ámbito <br/> | Documento<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -73,7 +73,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 ## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
 
-Las palabras clave públicas del esquema de impresión se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) de esta palabra clave se define a continuación:
+Las palabras clave de esquema de impresión públicas se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible (XML) de esta palabra clave se define a continuación:
 
 ``` syntax
 <psf:Feature name="psk:DocumentCoverBack">

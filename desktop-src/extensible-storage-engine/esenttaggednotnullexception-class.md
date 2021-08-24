@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: clase EsentTaggedNotNULLException'
+description: 'Más información sobre: Clase EsentTaggedNotNULLException'
 title: Clase EsentTaggedNotNULLException
 TOCTitle: EsentTaggedNotNULLException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentTaggedNotNULLException
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cf1d64e769bc2b1c9d26300c92d25a5df06ccf4a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2c876d58df63b70f1b30c48a8dd08790039962cb7acedc1a79dedb712b0de446
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119781435"
 ---
 # <a name="esenttaggednotnullexception-class"></a>Clase EsentTaggedNotNULLException
 
@@ -39,16 +39,16 @@ Clase base para JET_err. Excepciones TaggedNotNULL.
 
 [System.Object](/dotnet/api/system.object)  
   [System.Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. esent. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. esent. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. esent. Interop. EsentApiException](./esentapiexception-class.md)  
-          [Microsoft. ISAM. esent. Interop. EsentObsoleteException](./esentobsoleteexception-class.md)  
-            Microsoft. ISAM. esent. Interop. EsentTaggedNotNULLException  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentApiException](./esentapiexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentObsoleteException](./esentobsoleteexception-class.md)  
+            Microsoft.Isam.Esent.Interop.EsentTaggedNotNULLException  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -74,4 +74,4 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 [Miembros de EsentTaggedNotNULLException](./esenttaggednotnullexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
