@@ -1,7 +1,7 @@
 ---
-description: El \_ método put BorderWidth especifica el ancho del borde sólido a lo largo de los bordes del patrón de barrido.
+description: El método put BorderWidth especifica el ancho del borde sólido a lo largo de \_ los bordes del patrón de borrado.
 ms.assetid: a618926a-efa4-47a2-9ce9-ae298ed41083
-title: 'IDxtJpeg: método de ut_BorderWidth de:p (QEDIT. h)'
+title: Método IDxtAsynceg::p ut_BorderWidth (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: df7435b8a516b818b6d7c86e907ba75cce86f6c2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d5c73121c3a7f4c1db45768fde1d19865648d7ada23ad488f417812471bd9912
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680984"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119697445"
 ---
-# <a name="idxtjpegput_borderwidth-method"></a>IDxtJpeg::p \_ método BorderWidth
+# <a name="idxtjpegput_borderwidth-method"></a>IDxtAsynceg::p ut \_ BorderWidth (método)
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El `put_BorderWidth` método especifica el ancho del borde sólido a lo largo de los bordes del patrón de barrido.
+El `put_BorderWidth` método especifica el ancho del borde sólido a lo largo de los bordes del patrón de borrado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ HRESULT put_BorderWidth(
 
 <dl> <dt>
 
-*newVal* \[ de\]
+*newVal* \[ En\]
 </dt> <dd>
 
 Ancho del borde, en píxeles.
@@ -54,17 +54,17 @@ Ancho del borde, en píxeles.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -74,8 +74,8 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 <dl> <dt>
 
-[**Interfaz IDxtJpeg**](idxtjpeg.md)
+[**IDxtEnceeg (interfaz)**](idxtjpeg.md)
 </dt> </dl>
 
  

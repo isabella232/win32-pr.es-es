@@ -1,11 +1,11 @@
 ---
-title: Atributo MSMQ-site-Gates
-description: La lista de DNs para los servidores de enrutamiento MSMQ, a través de la cual se debe enrutar todo el tráfico entre sitios.
+title: Atributo MSMQ-Site-Gates
+description: Lista de DN para servidores de enrutamiento de MSMQ, a través de la cual se debe enrutar todo el tráfico entre sitios.
 ms.assetid: 4c00553e-6439-4fad-974c-3bfbb61d8f2d
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MSMQ-site-Gates
-- mSMQSiteGates esquema de AD de atributos
+- Esquema de AD del atributo MSMQ-Site-Gates
+- Esquema de AD del atributo mSMQSiteGates
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b970c979bb34ef0854755e042b6d36457c999be0
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: dd960081a21f51916f91d76c8235967b733848624cf36e02e20af792242b2a4e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119762045"
 ---
-# <a name="msmq-site-gates-attribute"></a>Atributo MSMQ-site-Gates
+# <a name="msmq-site-gates-attribute"></a>Atributo MSMQ-Site-Gates
 
-La lista de DNs para los servidores de enrutamiento MSMQ, a través de la cual se debe enrutar todo el tráfico entre sitios.
+Lista de DN para servidores de enrutamiento de MSMQ, a través de la cual se debe enrutar todo el tráfico entre sitios.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | MSMQ-sitio-puertas                         |
-| Nombre para mostrar de LDAP | mSMQSiteGates                           |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | MSMQ-Site-Gates                         |
+| Ldap-Display-Name | mSMQSiteGates                           |
+| Size              | \-                                      |
+| Privilegio actualizar  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.945                  |
-| System-ID-GUID    | 9a0dc339-c100-11d1-bbc5-0080c76670c0    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 9a0dc339-c100-11d1-ero5-0080c76670c0    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -55,18 +55,18 @@ La lista de DNs para los servidores de enrutamiento MSMQ, a través de la cual s
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**Vínculo de MSMQ-sitio**](c-msmqsitelink.md)<br/> |
+| Clases usadas en        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ La lista de DNs para los servidores de enrutamiento MSMQ, a través de la cual s
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**Vínculo de MSMQ-sitio**](c-msmqsitelink.md)<br/> |
+| Clases usadas en        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ La lista de DNs para los servidores de enrutamiento MSMQ, a través de la cual s
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**Vínculo de MSMQ-sitio**](c-msmqsitelink.md)<br/> |
+| Clases usadas en        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ La lista de DNs para los servidores de enrutamiento MSMQ, a través de la cual s
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**Vínculo de MSMQ-sitio**](c-msmqsitelink.md)<br/> |
+| Clases usadas en        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ La lista de DNs para los servidores de enrutamiento MSMQ, a través de la cual s
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**Vínculo de MSMQ-sitio**](c-msmqsitelink.md)<br/> |
+| Clases usadas en        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ La lista de DNs para los servidores de enrutamiento MSMQ, a través de la cual s
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**Vínculo de MSMQ-sitio**](c-msmqsitelink.md)<br/> |
+| Clases usadas en        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 

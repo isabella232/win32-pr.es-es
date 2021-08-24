@@ -1,9 +1,9 @@
 ---
-title: Enumeración BG_JOB_TYPE (Deliveryoptimization. h)
-description: La enumeración BG_JOB_TYPE define valores constantes que especifican el tipo de trabajo de transferencia, como la descarga.
+title: BG_JOB_TYPE enumeración (Deliveryoptimization.h)
+description: La BG_JOB_TYPE enumeración define valores constantes que especifican el tipo de trabajo de transferencia, como descargar.
 ms.assetid: 696A43C3-1FA2-436D-B34A-3544E7C9A66A
 keywords:
-- Enumeración BG_JOB_TYPE
+- BG_JOB_TYPE enumeración
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f1f672bcf2d2538bfaa9b9573fa1dfa71ee7b9cd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9ae722871435af316e045b293f2cf439a07600af1823202b7bfda654bf01d771
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490066"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119755825"
 ---
-# <a name="bg_job_type-enumeration"></a>Enumeración BG_JOB_TYPE
+# <a name="bg_job_type-enumeration"></a>BG_JOB_TYPE enumeración
 
-La enumeración **BG_JOB_TYPE** define valores constantes que especifican el tipo de trabajo de transferencia, como la descarga.
+La **BG_JOB_TYPE** enumeración define valores constantes que especifican el tipo de trabajo de transferencia, como descargar.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -54,9 +54,9 @@ Especifica que el trabajo descarga archivos en el cliente.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1709 \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Windows Server, versión 1709 \[ solo para aplicaciones de escritorio\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl> |
 
 
 
@@ -64,10 +64,10 @@ Especifica que el trabajo descarga archivos en el cliente.
 
 <dl> <dt>
 
-[**IBackgroundCopyJob:: GetType**](ibackgroundcopyjob-gettype.md)
+[**IBackgroundCopyJob::GetType**](ibackgroundcopyjob-gettype.md)
 </dt> <dt>
 
-[**IBackgroundCopyManager:: CreateJob**](ibackgroundcopymanager-createjob.md)
+[**IBackgroundCopyManager::CreateJob**](ibackgroundcopymanager-createjob.md)
 </dt> </dl>
 
  

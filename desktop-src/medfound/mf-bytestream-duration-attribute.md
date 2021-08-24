@@ -1,45 +1,45 @@
 ---
-description: Especifica la duración de una secuencia de bytes, en unidades de 100-nanosegundos.
+description: Especifica la duración de una secuencia de bytes, en unidades de 100 nanosegundos.
 ms.assetid: afa4930c-544b-4d66-94fe-9795bb526e0a
-title: MF_BYTESTREAM_DURATION atributo (Mfobjects. h)
+title: MF_BYTESTREAM_DURATION atributo (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: df264416b8a805e6d239cfcc457f4a6db2a8e4dc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 46ba32b394fa776b5b70a5a649292ffa205132645b15c24a57591483c734b238
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360516"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119826735"
 ---
-# <a name="mf_bytestream_duration-attribute"></a>\_Atributo de \_ duración MF BYTESTREAM
+# <a name="mf_bytestream_duration-attribute"></a>Atributo \_ MF BYTESTREAM \_ DURATION
 
-Especifica la duración de una secuencia de bytes, en unidades de 100-nanosegundos.
+Especifica la duración de una secuencia de bytes, en unidades de 100 nanosegundos.
 
 ## <a name="data-type"></a>Tipo de datos
 
 **UINT64**
 
-Trata como un valor de **LONGLONG** .
+Tratar como **un valor LONGLONG.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo es opcional. Si el objeto que crea el flujo de bytes puede determinar la duración, puede establecer este atributo. (Por ejemplo, en un flujo de red, la duración puede ser parte de la descripción de la sesión).
+Este atributo es opcional. Si el objeto que crea la secuencia de bytes puede determinar la duración, puede establecer este atributo. (Por ejemplo, en un flujo de red, la duración puede formar parte de la descripción de la sesión).
 
-Para obtener el valor del atributo, llame a **QueryInterface** en el flujo de bytes para obtener un puntero a la interfaz [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) .
+Para obtener el valor del atributo, llame a **QueryInterface** en la secuencia de bytes para obtener un puntero a la [**interfaz DEATTRIBUTEAttributes.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes)
 
-Este atributo es un valor con signo, aunque se almacena como **UINT64**.
+Este atributo es un valor con firma, aunque se almacena como **UINT64**.
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Vista \|\]<br/>                                                    |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2008 \|\]<br/>                                              |
-| Encabezado<br/>                   | <dl> <dt>Mfobjects. h (incluye Mfidl. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                                                    |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| para aplicaciones para UWP\]<br/>                                              |
+| Header<br/>                   | <dl> <dt>Mfobjects.h (incluir Mfidl.h)</dt> </dl> |
 
 
 
@@ -47,16 +47,16 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Atributos de secuencia de bytes](byte-stream-attributes.md)
+[Atributos de flujo de bytes](byte-stream-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes::GetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint64)
+[**ATTRIBUTEAttributes::GetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint64)
 </dt> <dt>
 
-[**IMFAttributes::SetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint64)
+[**ATTRIBUTEAttributes::SetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint64)
 </dt> <dt>
 
 [**IMFByteStream**](/windows/desktop/api/mfobjects/nn-mfobjects-imfbytestream)

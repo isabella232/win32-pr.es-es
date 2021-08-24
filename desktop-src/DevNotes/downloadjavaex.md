@@ -1,7 +1,7 @@
 ---
-description: Descarga la firma del archivo. cab, comprueba los permisos asociados a los paquetes y los ejecuta según la autenticación.
+description: Descarga la .cab de archivo, comprueba los permisos asociados a los paquetes y los ejecuta en función de la autenticación.
 ms.assetid: b86a8f39-73a1-4e17-ac83-9ed095de4922
-title: DownloadJavaEX función)
+title: Función DownloadJavaEX
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Javacypt.dll
-ms.openlocfilehash: 31371e91599d604db591ee3e921b42bc809aae21
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 628fdb1b8b0ec9979d844c8f48fb02fbf8f6a642a96c925f427c868160dd6b27
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660656"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119795265"
 ---
-# <a name="downloadjavaex-function"></a>DownloadJavaEX función)
+# <a name="downloadjavaex-function"></a>Función DownloadJavaEX
 
-Descarga la firma del archivo. cab, comprueba los permisos asociados a los paquetes y los ejecuta según la autenticación.
+Descarga la .cab de archivo, comprueba los permisos asociados a los paquetes y los ejecuta en función de la autenticación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,61 +44,61 @@ HRESULT WINAPI DownloadJavaEX(
 
 <dl> <dt>
 
-*Reservado* \[ de\]
+*Reservado* \[ En\]
 </dt> <dd>
 
 Este parámetro está reservado.
 
 </dd> <dt>
 
-*pProviderData* \[ de\]
+*pProviderData* \[ En\]
 </dt> <dd>
 
-Una estructura de [**\_ \_ datos del proveedor de cifrado**](/windows/win32/api/wintrust/ns-wintrust-crypt_provider_data) que contiene los datos del certificado, como los permisos de archivo y de zona.
+Estructura [**CRYPT \_ PROVIDER DATA \_ que**](/windows/win32/api/wintrust/ns-wintrust-crypt_provider_data) contiene datos de certificado, como permisos de archivo y zona.
 
 </dd> <dt>
 
-*pJava* \[ de\]
+*pJava* \[ En\]
 </dt> <dd>
 
-Estructura [**del \_ \_ proveedor de directivas de Java**](/previous-versions//bb432350(v=vs.85)) que contiene los datos relacionados con el proveedor de directivas.
+Estructura [**JAVA POLICY PROVIDER \_ \_ que**](/previous-versions//bb432350(v=vs.85)) contiene datos relacionados con el proveedor de directivas.
 
 </dd> <dt>
 
-*pFunctions* \[ de\]
+*pFunctions* \[ En\]
 </dt> <dd>
 
-Una estructura de [**\_ \_ funciones de proveedor de cifrado**](/windows/win32/api/wintrust/ns-wintrust-crypt_provider_functions) que contiene una lista de métodos para comprobar objetos de certificado, firmas y directivas finales.
+Estructura [**CRYPT \_ PROVIDER \_ FUNCTIONS**](/windows/win32/api/wintrust/ns-wintrust-crypt_provider_functions) que contiene una lista de métodos para comprobar objetos de certificado, firmas y directivas finales.
 
 </dd> <dt>
 
-*fCertificate* \[ de\]
+*fCertificate* \[ En\]
 </dt> <dd>
 
-Si hay un certificado, este parámetro es **true**. De lo contrario, es **false**.
+Si hay un certificado, este parámetro es **TRUE.** De lo contrario, es **FALSE.**
 
 </dd> <dt>
 
-*pTrust* \[ de\]
+*pTrust* \[ En\]
 </dt> <dd>
 
-Una estructura de [**\_ confianza de Java**](/windows/desktop/api/Capi/ns-capi-java_trust) que contiene información de confianza como el permiso codificado, la firma del codificador y el código de la Directiva de devolución auténtica.
+Estructura [**TRUST \_ de JAVA**](/windows/desktop/api/Capi/ns-capi-java_trust) que contiene información de confianza, como el permiso codificado, la firma del codificador y el código de directiva de devolución auténtico.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto es **S \_ OK**. De lo contrario, el valor devuelto es un código de error.
+Si la función se realiza correctamente, el valor devuelto es **S \_ OK**. De lo contrario, el valor devuelto es un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función no tiene asociado ningún archivo de encabezado o biblioteca de importación. debe llamarlo mediante las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Esta función no tiene asociada la biblioteca de importación ni el archivo de encabezado; Debe llamarlo mediante las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**y GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------|-----------------------------------------------------------------------------------------|
 | Archivo DLL<br/> | <dl> <dt>Javacypt.dll</dt> </dl> |
 

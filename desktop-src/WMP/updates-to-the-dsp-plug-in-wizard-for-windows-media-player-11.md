@@ -1,43 +1,43 @@
 ---
-title: Actualizaciones del Asistente para complementos de DSP para Windows Media Player 11
-description: Actualizaciones del Asistente para complementos de DSP para Windows Media Player 11
+title: Actualizaciones del Asistente para complementos DE DSP para Reproductor de Windows Media 11
+description: Actualizaciones del Asistente para complementos DE DSP para Reproductor de Windows Media 11
 ms.assetid: 975c18d5-06d7-4db2-a558-bc6557963425
 keywords:
-- Complementos de Windows Media Player, Asistente para complementos
-- complementos, Asistente para complementos
-- Complementos de procesamiento de señal digital, Asistente para complementos
-- Complementos DSP, Asistente para complementos
+- Reproductor de Windows Media complementos, asistente para complementos
+- complementos, asistente para complementos
+- complementos de procesamiento de señales digitales, asistente para complementos
+- Complementos de DSP, asistente para complementos
 - Asistente para complementos
-- Visual Studio, Asistente para complementos de DSP
+- Visual Studio, asistente para complementos DE DSP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a8efe798a3c324f9ecfac0a5b6021db4ea5abdf
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: e2fb6ffaa9384f46e4630b16310a599de8508d953aabd4a5cdf277e91c130641
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104420272"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119762175"
 ---
-# <a name="updates-to-the-dsp-plug-in-wizard-for-windows-media-player-11"></a>Actualizaciones del Asistente para complementos de DSP para Windows Media Player 11
+# <a name="updates-to-the-dsp-plug-in-wizard-for-windows-media-player-11"></a>Actualizaciones del Asistente para complementos DE DSP para Reproductor de Windows Media 11
 
-El SDK de Windows Media Player 11 presenta los siguientes cambios en el Asistente para complementos de DSP:
+El SDK Reproductor de Windows Media 11 presenta los siguientes cambios en el asistente para complementos DE DSP:
 
--   Los complementos registran el modelo de subprocesos como "ambos". Esto permite que el complemento se ejecute en la canalización de Media Foundation en Windows Vista. Vea el archivo *projectname*. RGS.
+-   Los complementos registran el modelo de subprocesos como "Ambos". Esto permite que el complemento se ejecute en la canalización Media Foundation en Windows Vista. Vea el *archivo projectname*.rgs.
 
-    -   Los complementos de DSP de audio tienen compatibilidad con los dos formatos adicionales siguientes:
+    -   Los complementos DSP de audio admiten los dos formatos adicionales siguientes:
 
     <!-- -->
 
-    -   \_formato Wave \_ IEEE \_ float
-    -   \_Formato \_ de onda extensible con SUBformato KSDATAFORMAT \_ SubType \_ IEEE \_ float.
+    -   FORMATO WAVE \_ \_ IEEE \_ FLOAT
+    -   WAVE \_ FORMAT EXTENSIBLE con \_ subformato KSDATAFORMAT \_ SUBTYPE IEEE \_ \_ FLOAT.
 
-    Vea el archivo *projectname*. cpp.
+    Consulte el *archivo projectname*.cpp.
 
-    1.  Los complementos de DSP de vídeo admiten el formato de vídeo NV12.
-    2.  Los complementos realizan llamadas adicionales a [IWMPMediaPluginRegistrar:: WMPRegisterPlayerPlugin](/previous-versions/windows/desktop/api/wmpservices/nf-wmpservices-iwmpmediapluginregistrar-wmpregisterplayerplugin) y [IWMPMediaPluginRegistrar:: WMPUnRegisterPlayerPlugin](/previous-versions/windows/desktop/api/wmpservices/nf-wmpservices-iwmpmediapluginregistrar-wmpunregisterplayerplugin) con un nuevo tipo de complemento: wmp \_ PLUGINTYPE \_ DSP \_ OUTOFPROC. Vea el archivo *projectnamedll*. cpp del proyecto.
-    3.  Un proyecto adicional en cada solución crea un archivo DLL de proxy/stub para la interfaz personalizada de configuración de la página de propiedades. Vea el proyecto *projectnamePS* .
+    1.  Los complementos DSP de vídeo admiten el formato de vídeo NV12.
+    2.  Los complementos hacen llamadas adicionales a [IWMPMediaPluginRegistrar::WMPRegisterPlayerPlugin](/previous-versions/windows/desktop/api/wmpservices/nf-wmpservices-iwmpmediapluginregistrar-wmpregisterplayerplugin) e [IWMPMediaPluginRegistrar::WMPUnRegisterPlayerPlugin](/previous-versions/windows/desktop/api/wmpservices/nf-wmpservices-iwmpmediapluginregistrar-wmpunregisterplayerplugin) con un nuevo tipo de complemento: WMP \_ PLUGINTYPE \_ DSP \_ OUTOFPROC. Consulte el archivo *.cpp projectnamedll* del proyecto.
+    3.  Un proyecto adicional en cada solución crea un archivo DLL de proxy/stub para la interfaz personalizada de configuración de la página de propiedades. Consulte el *proyecto projectnamePS.*
     4.  Las llamadas a métodos en desuso se han cambiado para usar las versiones más recientes.
-    5.  El asistente puede generar un complemento de modo dual que funcione como DMO, implementando **IMediaObject** y como MFT, implementando **IMFTransform**.
+    5.  El asistente puede generar un complemento de modo dual que funcione como un DMO, mediante la implementación de **IMediaObject** y como un MFT, mediante la implementación **de IMFTransform**.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -46,9 +46,9 @@ El SDK de Windows Media Player 11 presenta los siguientes cambios en el Asistent
 [**Asistente para complementos de DSP**](dsp-plug-in-wizard.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

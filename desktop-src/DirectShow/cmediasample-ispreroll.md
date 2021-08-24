@@ -1,7 +1,7 @@
 ---
-description: 'El método IsPreroll determina si este ejemplo es un ejemplo de relanzamiento. No se debe mostrar un ejemplo de prelanzamiento. Este método implementa el método IMediaSample:: IsPreroll.'
+description: El método IsPreroll determina si este ejemplo es un ejemplo de preinselección. No se debe mostrar un ejemplo de inscripción previa. Este método implementa el método IMediaSample::IsPreroll.
 ms.assetid: fbcf7aab-473c-49c1-9a8f-4a619f4e28f4
-title: Método CMediaSample. IsPreroll (Amfilter. h)
+title: Método CMediaSample.IsPreroll (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b40cf8fd6a1adb5186309f47da0f0ae3dc30412a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7f4c4b192d72c5edcfdb9c318f7420ca6ae5797446ec4f99cb6871aad2abd241
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670473"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634645"
 ---
-# <a name="cmediasampleispreroll-method"></a>CMediaSample. IsPreroll, método
+# <a name="cmediasampleispreroll-method"></a>Método CMediaSample.IsPreroll
 
-El `IsPreroll` método determina si este ejemplo es un ejemplo de relanzamiento. No se debe mostrar un ejemplo de prelanzamiento. Este método implementa el método [**IMediaSample:: IsPreroll**](/windows/desktop/api/Strmif/nf-strmif-imediasample-ispreroll) .
+El `IsPreroll` método determina si este ejemplo es un ejemplo de inscripción previa. No se debe mostrar un ejemplo de inscripción previa. Este método implementa el [**método IMediaSample::IsPreroll.**](/windows/desktop/api/Strmif/nf-strmif-imediasample-ispreroll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ OK si el ejemplo es un ejemplo de relanzamiento y S \_ false en caso contrario.
+Devuelve S OK si el ejemplo es un ejemplo de inscripción previa y S FALSE en caso \_ \_ contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La variable miembro [**CMediaSample:: m \_ dwFlags**](cmediasample-m-dwflags.md) especifica esta propiedad.
+La variable [**miembro CMediaSample::m \_ dwFlags**](cmediasample-m-dwflags.md) especifica esta propiedad.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ La variable miembro [**CMediaSample:: m \_ dwFlags**](cmediasample-m-dwflags.md)
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ La variable miembro [**CMediaSample:: m \_ dwFlags**](cmediasample-m-dwflags.md)
 
 <dl> <dt>
 
-[**Clase CMediaSample**](cmediasample.md)
+[**CMediaSample (clase)**](cmediasample.md)
 </dt> </dl>
 
  

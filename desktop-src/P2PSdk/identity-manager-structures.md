@@ -1,25 +1,25 @@
 ---
-description: 'La API del administrador de identidades del mismo nivel usa la siguiente estructura:'
+description: 'La API de Peer Identity Manager usa la siguiente estructura:'
 ms.assetid: 687478b5-0c58-47c3-94c2-f44976436ec2
 title: Estructuras de Identity Manager
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8932c582710494f3740a5c3947f8cd486d890ba2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e72ec29f39ce65b71a40abb6bdc1d933c4358c799328908c6218932e06d02e48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119776105"
 ---
 # <a name="identity-manager-structures"></a>Estructuras de Identity Manager
 
-La API del administrador de identidades del mismo nivel usa la siguiente estructura:
+La API de Peer Identity Manager usa la siguiente estructura:
 
 
 
 | Estructura                                  | Descripción                                                                   |
 |--------------------------------------------|-------------------------------------------------------------------------------|
-| [**\_par de nombre del mismo nivel \_**](/windows/desktop/api/P2P/ns-p2p-peer_name_pair) | Contiene los resultados de una llamada a [**PeerGetNextItem**](/windows/desktop/api/P2P/nf-p2p-peergetnextitem). |
+| [**PAR \_ DE NOMBRES DEL MISMO \_ NIVEL**](/windows/desktop/api/P2P/ns-p2p-peer_name_pair) | Contiene los resultados de una llamada a [**PeerGetNextItem.**](/windows/desktop/api/P2P/nf-p2p-peergetnextitem) |
 
 
 

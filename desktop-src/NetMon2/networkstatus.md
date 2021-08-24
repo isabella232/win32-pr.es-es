@@ -1,7 +1,7 @@
 ---
 description: La estructura NETWORKSTATUS describe el estado actual del NPP.
 ms.assetid: e5e07480-cfc3-408f-9ca2-48a697e4b875
-title: Estructura NETWORKSTATUS (Netmon. h)
+title: Estructura NETWORKSTATUS (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 067a57dabfb5222deb27de44c60c6eb121cd8c36
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3031cd8bd8f1af4e5ea5f03aec93b9a2f28b3ec098a8110563bb89869c97ae3f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104546995"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119799525"
 ---
 # <a name="networkstatus-structure"></a>Estructura NETWORKSTATUS
 
-La estructura **NETWORKSTATUS** describe el estado actual del NPP.
+La **estructura NETWORKSTATUS** describe el estado actual del NPP.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,11 +47,11 @@ Indica el estado actual del NPP.
 
 
 
-| Value                                                                                                                                                                                                          | Significado                                                                                 |
+| Valor                                                                                                                                                                                                          | Significado                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| <span id="NETWORKSTATUS_STATE_VOID"></span><span id="networkstatus_state_void"></span><dl> <dt>**NETWORKSTATUS \_ estado \_ void**</dt> </dl>                | NPP no está conectado o está conectado y la captura no se ha iniciado.<br/> |
-| <span id="NETWORKSTATUS_STATE_CAPTURING"></span><span id="networkstatus_state_capturing"></span><dl> <dt>**\_captura de estado de NETWORKSTATUS \_**</dt> </dl> | NPP está capturando datos.<br/>                                                   |
-| <span id="NETWORKSTATUS_STATE_PAUSED"></span><span id="networkstatus_state_paused"></span><dl> <dt>**Estado de NETWORKSTATUS en \_ \_ pausa**</dt> </dl>          | El NPP se ha pausado durante la captura de datos.<br/>                                     |
+| <span id="NETWORKSTATUS_STATE_VOID"></span><span id="networkstatus_state_void"></span><dl> <dt>**NETWORKSTATUS \_ STATE \_ VOID**</dt> </dl>                | El NPP no está conectado o está conectado y no se inicia la captura.<br/> |
+| <span id="NETWORKSTATUS_STATE_CAPTURING"></span><span id="networkstatus_state_capturing"></span><dl> <dt>**CAPTURA DE ESTADO \_ NETWORKSTATUS \_**</dt> </dl> | El NPP captura datos.<br/>                                                   |
+| <span id="NETWORKSTATUS_STATE_PAUSED"></span><span id="networkstatus_state_paused"></span><dl> <dt>**ESTADO NETWORKSTATUS \_ \_ EN PAUSA**</dt> </dl>          | El NPP se ha detenido al capturar datos.<br/>                                     |
 
 
 
@@ -66,9 +66,9 @@ Marcas que describen el estado actual del NPP.
 
 
 
-| Value                                                                                                                                                                                                                             | Significado                                            |
+| Valor                                                                                                                                                                                                                             | Significado                                            |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| <span id="NETWORKSTATUS_FLAGS_TRIGGER_PENDING"></span><span id="networkstatus_flags_trigger_pending"></span><dl> <dt>**\_desencadenador de marcas de NETWORKSTATUS \_ \_ pendiente**</dt> </dl> | Hay un desencadenador pendiente para el NPP.<br/> |
+| <span id="NETWORKSTATUS_FLAGS_TRIGGER_PENDING"></span><span id="networkstatus_flags_trigger_pending"></span><dl> <dt>**NETWORKSTATUS \_ FLAGS \_ TRIGGER \_ PENDING**</dt> </dl> | Hay un desencadenador pendiente para el NPP.<br/> |
 
 
 
@@ -76,21 +76,21 @@ Marcas que describen el estado actual del NPP.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Al utilizar esta estructura, debe asignar la memoria de la estructura antes de que se pueda utilizar y liberar la memoria cuando la estructura ya no se necesite.
+Al usar esta estructura, debe asignar la memoria para la estructura antes de que se pueda usar y liberar la memoria cuando la estructura ya no sea necesaria.
 
-En la lista vea también en la parte inferior de este tema se enumeran todos los métodos que utilizan esta estructura.
+En la lista Ver también de la parte inferior de este tema se enumeran todos los métodos que usan esta estructura.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 
@@ -98,16 +98,16 @@ En la lista vea también en la parte inferior de este tema se enumeran todos los
 
 <dl> <dt>
 
-[IDelaydC:: QueryStatus](idelaydc-querystatus.md)
+[IDelaydC::QueryStatus](idelaydc-querystatus.md)
 </dt> <dt>
 
-[IESP:: QueryStatus](iesp-querystatus.md)
+[IESP::QueryStatus](iesp-querystatus.md)
 </dt> <dt>
 
-[IRTC:: QueryStatus](irtc-querystatus.md)
+[IRTC::QueryStatus](irtc-querystatus.md)
 </dt> <dt>
 
-[IStas:: QueryStatus](istats-querystatus.md)
+[IStats::QueryStatus](istats-querystatus.md)
 </dt> </dl>
 
  

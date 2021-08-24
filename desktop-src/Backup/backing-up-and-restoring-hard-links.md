@@ -1,23 +1,23 @@
 ---
-title: Copia de seguridad y restauración de vínculos físicos
-description: Para realizar una copia de seguridad y restaurar los vínculos físicos, use las funciones CreateFile, CreateHardLink, FindFirstFileNameW, FindNextFileNameW, BackupRead, GetFileInformationByHandle y BackupWrite, tal como se muestra en los siguientes ejemplos de pseudocódigo.
+title: Copia de seguridad y restauración de vínculos duros
+description: Para realizar copias de seguridad y restaurar vínculos duros, use las funciones CreateFile, CreateHardLink, FindFirstFileNameW, FindNextFileNameW, BackupRead, GetFileInformationByHandle y BackupWrite, como se muestra en los siguientes ejemplos de pseudocódigo.
 ms.assetid: 129e9cf4-8ab1-45d2-8e1a-4bc85b9de668
 keywords:
-- Copia de seguridad de vínculos físicos
+- copias de seguridad de vínculos duros
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c72155231295a1eb07b6b565c018b765693c8f46
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 25e5cf5a114160456e83e39cb06f441554f998df65bed2ea8f0e63b036c33c94
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104078175"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119702225"
 ---
-# <a name="backing-up-and-restoring-hard-links"></a>Copia de seguridad y restauración de vínculos físicos
+# <a name="backing-up-and-restoring-hard-links"></a>Copia de seguridad y restauración de vínculos duros
 
-Para realizar una copia de seguridad y restaurar los vínculos físicos, use las funciones [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea), [**CreateHardLink**](/windows/desktop/api/winbase/nf-winbase-createhardlinka), [**FindFirstFileNameW**](/windows/desktop/api/fileapi/nf-fileapi-findfirstfilenamew), [**FindNextFileNameW**](/windows/desktop/api/fileapi/nf-fileapi-findnextfilenamew), [**BackupRead**](/windows/desktop/api/Winbase/nf-winbase-backupread), [**GetFileInformationByHandle**](/windows/desktop/api/fileapi/nf-fileapi-getfileinformationbyhandle)y [**BackupWrite**](/windows/desktop/api/Winbase/nf-winbase-backupwrite) , tal como se muestra en los siguientes ejemplos de pseudocódigo.
+Para realizar copias de seguridad y restaurar vínculos duros, use las funciones [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea), [**CreateHardLink**](/windows/desktop/api/winbase/nf-winbase-createhardlinka), [**FindFirstFileNameW**](/windows/desktop/api/fileapi/nf-fileapi-findfirstfilenamew), [**FindNextFileNameW,**](/windows/desktop/api/fileapi/nf-fileapi-findnextfilenamew) [**BackupRead,**](/windows/desktop/api/Winbase/nf-winbase-backupread) [**GetFileInformationByHandle**](/windows/desktop/api/fileapi/nf-fileapi-getfileinformationbyhandle)y [**BackupWrite,**](/windows/desktop/api/Winbase/nf-winbase-backupwrite) como se muestra en los siguientes ejemplos de pseudocódigo.
 
-## <a name="pseudocode-algorithm-for-backing-up-hard-links"></a>Algoritmo pseudocódigo para la copia de seguridad de vínculos físicos
+## <a name="pseudocode-algorithm-for-backing-up-hard-links"></a>Algoritmo de seudocódigo para hacer una copia de seguridad de vínculos duros
 
 ``` syntax
 1.  Initialize and empty a list of known links. 
@@ -49,7 +49,7 @@ Para realizar una copia de seguridad y restaurar los vínculos físicos, use las
 22. EndWhile
 ```
 
-## <a name="pseudocode-algorithm-for-restoring-hard-links"></a>Algoritmo de pseudocódigo para restaurar vínculos físicos
+## <a name="pseudocode-algorithm-for-restoring-hard-links"></a>Algoritmo de pseudocódigo para restaurar vínculos duros
 
 ``` syntax
 1.  While there are more files to restore 
@@ -60,9 +60,9 @@ Para realizar una copia de seguridad y restaurar los vínculos físicos, use las
 6.  EndWhile
 ```
 
-**Windows Server 2003 y Windows XP:** No se admiten las funciones [**FindFirstFileNameW**](/windows/desktop/api/fileapi/nf-fileapi-findfirstfilenamew) y [**FindNextFileNameW**](/windows/desktop/api/fileapi/nf-fileapi-findnextfilenamew) . En su lugar, puede usar el procedimiento descrito en el siguiente ejemplo de pseudocódigo.
+**Windows Server 2003 y Windows XP:** No se admiten las funciones [**FindFirstFileNameW**](/windows/desktop/api/fileapi/nf-fileapi-findfirstfilenamew) [**y FindNextFileNameW.**](/windows/desktop/api/fileapi/nf-fileapi-findnextfilenamew) En su lugar, puede usar el procedimiento descrito en el siguiente ejemplo de pseudocódigo.
 
-## <a name="alternate-pseudocode-algorithm-for-backing-up-hard-links"></a>Algoritmo de pseudocódigo alternativo para la copia de seguridad de vínculos físicos
+## <a name="alternate-pseudocode-algorithm-for-backing-up-hard-links"></a>Algoritmo de seudocódigo alternativo para hacer una copia de seguridad de vínculos duros
 
 ``` syntax
 1.  Initialize and empty a list of known links. 
@@ -91,6 +91,6 @@ Para realizar una copia de seguridad y restaurar los vínculos físicos, use las
 18. EndWhile
 ```
 
- 
+ 
 
- 
+ 

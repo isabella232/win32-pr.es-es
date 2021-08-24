@@ -1,7 +1,7 @@
 ---
 description: Representa la configuración actual de un conmutador Ethernet virtual.
 ms.assetid: a7c03517-332d-47ce-8e04-c2187bcb2977
-title: Msvm_VirtualEthernetSwitchSettingData (clase)
+title: Msvm_VirtualEthernetSwitchSettingData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -42,18 +42,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 3eccbd9dabe853f01c54c78ca651d590afc49f17
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bbd8cd77a96301187e9b5c9f8544a23b616bf9db78af6560296660b0a3995bed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687260"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119681245"
 ---
-# <a name="msvm_virtualethernetswitchsettingdata-class"></a>MSVM \_ VirtualEthernetSwitchSettingData (clase)
+# <a name="msvm_virtualethernetswitchsettingdata-class"></a>Clase \_ VirtualEthernetSwitchSettingData de Msvm
 
 Representa la configuración actual de un conmutador Ethernet virtual.
 
-La siguiente sintaxis es código simplificado de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se simplifica Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -95,101 +95,101 @@ class Msvm_VirtualEthernetSwitchSettingData : CIM_VirtualEthernetSwitchSettingDa
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ VirtualEthernetSwitchSettingData** tiene estos tipos de miembros:
+La **clase \_ VirtualEthernetSwitchSettingData de Msvm** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ VirtualEthernetSwitchSettingData** tiene estas propiedades.
+La **clase \_ VirtualEthernetSwitchSettingData de Msvm** tiene estas propiedades.
 
 <dl> <dt>
 
 **AssociatedResourcePool**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Una lista de grupos de recursos de host que se van a asociar o que están asociados actualmente con el conmutador Ethernet con el fin de asignar conexiones Ethernet entre una máquina virtual y un conmutador Ethernet. Cada valor debe ajustarse al URI de WBEM de producción \_ \_ UntypedInstancePath, tal y como se define en DSP0207. Esta propiedad se hereda de **\_ VirtualEthernetSwitchSettingData CIM**.
+Lista de grupos de recursos de host que se van a asociar o que están asociados actualmente al conmutador Ethernet para la asignación de conexiones Ethernet entre una máquina virtual y un conmutador Ethernet. Cada valor debe ajustarse al URI de WBEM de producción \_ \_ UntypedInstancePath tal como se define en DSP0207. Esta propiedad se hereda de **CIM \_ VirtualEthernetSwitchSettingData**.
 
 </dd> <dt>
 
 **AutomaticRecoveryAction**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Acción que se debe realizar para la máquina virtual cuando se produce un error en el software ejecutado por la máquina virtual. Los errores en este caso significan un error que es detectado por la plataforma del host, como una condición de estado de espera no interrumpida. Esta propiedad se hereda de [**\_ VirtualSystemSettingData CIM**](/previous-versions//cc136954(v=vs.85))y no se utiliza.
+Acción que se debe realizar para la máquina virtual cuando se produce un error en el software ejecutado por la máquina virtual. Los errores en este caso significan un error que la plataforma host detecta, como una condición de estado de espera no interrumpible. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85))y no se usa.
 
 </dd> <dt>
 
 **AutomaticShutdownAction**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Acción que se realizará para la máquina virtual cuando se apague el host. Esta propiedad se hereda de [**\_ VirtualSystemSettingData CIM**](/previous-versions//cc136954(v=vs.85))y no se utiliza.
+Acción que se debe realizar para la máquina virtual cuando se apague el host. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85))y no se usa.
 
 </dd> <dt>
 
 **AutomaticStartupAction**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Acción que se realizará para la máquina virtual cuando se inicie el host. Esta propiedad se hereda de [**\_ VirtualSystemSettingData CIM**](/previous-versions//cc136954(v=vs.85))y no se utiliza.
+Acción que se debe realizar para la máquina virtual cuando se inicia el host. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85))y no se usa.
 
 </dd> <dt>
 
 **AutomaticStartupActionDelay**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El tiempo de retardo antes de que la máquina virtual se inicie automáticamente. Esta propiedad se hereda de [**\_ VirtualSystemSettingData CIM**](/previous-versions//cc136954(v=vs.85))y no se utiliza.
+El tiempo de retraso antes de que la máquina virtual se inicie automáticamente. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85))y no se usa.
 
 </dd> <dt>
 
 **AutomaticStartupActionSequenceNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número que indica la secuencia relativa de activación de la máquina virtual cuando se inicia el sistema host. Un número menor indica la activación anterior. Esta propiedad se hereda de [**\_ VirtualSystemSettingData CIM**](/previous-versions//cc136954(v=vs.85))y no se utiliza.
+Número que indica la secuencia relativa de activación de la máquina virtual cuando se inicia el sistema host. Un número inferior indica la activación anterior. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85))y no se usa.
 
 </dd> <dt>
 
 **BandwidthReservationMode**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Modo de reserva de ancho de banda.
@@ -198,7 +198,7 @@ Modo de reserva de ancho de banda.
 
 <span id="Default"></span><span id="default"></span><span id="DEFAULT"></span>
 
-**Valor predeterminado** (0)
+**Valor** predeterminado (0)
 
 
 </dt> <dd></dd> <dt>
@@ -212,7 +212,7 @@ Modo de reserva de ancho de banda.
 
 <span id="Absolute"></span><span id="absolute"></span><span id="ABSOLUTE"></span>
 
-**Absolute** (2)
+**Absoluto** (2)
 
 
 </dt> <dd></dd> <dt>
@@ -235,7 +235,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Breve descripción del objeto. Esta propiedad se hereda de [**la \_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "configuración del conmutador Ethernet virtual".
+Breve descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "Conmutador Ethernet virtual Configuración".
 
 </dd> <dt>
 
@@ -248,7 +248,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La ruta de acceso de un directorio donde se almacena la información sobre la configuración de la máquina virtual. Esta propiedad se hereda de [**\_ VirtualSystemSettingData CIM**](/previous-versions//cc136954(v=vs.85))y no se utiliza.
+Ruta de acceso de un directorio donde se almacena información sobre la configuración de la máquina virtual. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85))y no se usa.
 
 </dd> <dt>
 
@@ -261,7 +261,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La ruta de acceso relativa y el nombre de un archivo donde se almacena la información sobre la configuración de la máquina virtual. Esta ruta de acceso es relativa a la propiedad **ConfigurationDataRoot** . Esta propiedad se hereda de [**\_ VirtualSystemSettingData CIM**](/previous-versions//cc136954(v=vs.85))y no se utiliza.
+Ruta de acceso relativa y nombre de archivo de un archivo donde se almacena información sobre la configuración de la máquina virtual. Esta ruta de acceso es relativa a la **propiedad ConfigurationDataRoot.** Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85))y no se usa.
 
 </dd> <dt>
 
@@ -274,20 +274,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Identificador único de la configuración de la máquina virtual. Esta propiedad se hereda de [**\_ VirtualSystemSettingData CIM**](/previous-versions//cc136954(v=vs.85))y no se utiliza.
+Identificador único de la configuración de la máquina virtual. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85))y no se usa.
 
 </dd> <dt>
 
 **CreationTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Fecha y hora en que se creó la configuración. Esta propiedad se hereda de [**\_ VirtualSystemSettingData CIM**](/previous-versions//cc136954(v=vs.85)).
+Fecha y hora en que se creó la configuración. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData.**](/previous-versions//cc136954(v=vs.85))
 
 </dd> <dt>
 
@@ -300,7 +300,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Descripción del objeto. Esta propiedad se hereda de [**la \_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre está establecida en "configuración activa del conmutador Ethernet virtual".
+Descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "Configuración activa para el conmutador Ethernet virtual".
 
 </dd> <dt>
 
@@ -313,20 +313,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre para mostrar del objeto. Esta propiedad se hereda de [**\_ VirtualSystemSettingData CIM**](/previous-versions//cc136954(v=vs.85)).
+Nombre para mostrar del objeto. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData.**](/previous-versions//cc136954(v=vs.85))
 
 </dd> <dt>
 
 **ExtensionOrder**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Matriz de instancias incrustadas de la clase [**MSVM \_ EthernetSwitchExtension**](msvm-ethernetswitchextension.md) que representan las extensiones de conmutador enlazadas a este modificador en el orden en que se aplican.
+Matriz de instancias insertadas de la clase [**\_ EthernetSwitchExtension de Msvm**](msvm-ethernetswitchextension.md) que representan las extensiones de modificador enlazadas a este modificador, en el orden en que se aplican.
 
 </dd> <dt>
 
@@ -339,10 +339,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
-Identifica de forma única una instancia de esta clase. Esta propiedad se hereda del [**\_ SettingData de CIM**](/previous-versions//cc136911(v=vs.85)) y siempre se establece en "Microsoft:*GUID* \\ *DeviceSpecificData*".
+Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85)) y siempre se establece en "Microsoft:*GUID* \\ *DeviceSpecificData".*
 
 </dd> <dt>
 
@@ -352,10 +352,10 @@ Identifica de forma única una instancia de esta clase. Esta propiedad se hereda
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Especifica si la virtualización de e/s de raíz única (SR-IOV) es preferida o no, si está disponible, en el adaptador subyacente.
+Especifica si se prefiere la virtualización de E/S raíz única (SR-IOV) o no, si está disponible, en el adaptador subyacente.
 
 </dd> <dt>
 
@@ -368,33 +368,33 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La ruta de acceso de un directorio en el que se almacena la información de registro de la máquina virtual. Esta propiedad se hereda de [**\_ VirtualSystemSettingData CIM**](/previous-versions//cc136954(v=vs.85))y no se utiliza.
+Ruta de acceso de un directorio donde se almacena la información de registro de la máquina virtual. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85))y no se usa.
 
 </dd> <dt>
 
 **MaxNumMACAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica el número máximo de direcciones MAC únicas que puede obtener el conmutador para admitir el aprendizaje de direcciones MAC, tal como se define en el estándar IEEE 802,1. Esta propiedad se hereda de **\_ VirtualEthernetSwitchSettingData CIM**.
+Especifica el número máximo de direcciones MAC únicas que puede aprender el modificador para admitir direcciones MAC Learning, tal como se define en el estándar IEEE 802.1. Esta propiedad se hereda de **CIM \_ VirtualEthernetSwitchSettingData**.
 
 </dd> <dt>
 
 **Notas**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Notas proporcionadas por el usuario que están relacionadas con la máquina virtual. Esta propiedad se hereda de [**\_ VirtualSystemSettingData CIM**](/previous-versions//cc136954(v=vs.85)).
+Notas proporcionadas por el usuario relacionadas con la máquina virtual. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData.**](/previous-versions//cc136954(v=vs.85))
 
 </dd> <dt>
 
@@ -404,7 +404,7 @@ Notas proporcionadas por el usuario que están relacionadas con la máquina virt
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Especifica si se debe usar PacketDirect, si está disponible. El valor predeterminado es **false**.
@@ -425,7 +425,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La ruta de acceso completa de un archivo donde se almacena información relacionada con la recuperación de la máquina virtual. Esta propiedad se hereda de [**\_ VirtualSystemSettingData CIM**](/previous-versions//cc136954(v=vs.85))y no se utiliza.
+Ruta de acceso completa de un archivo donde se almacena la información relacionada con la recuperación de la máquina virtual. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85))y no se usa.
 
 </dd> <dt>
 
@@ -438,7 +438,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La ruta de acceso de un directorio donde se almacena información sobre las instantáneas de la máquina virtual. Esta propiedad se hereda de [**\_ VirtualSystemSettingData CIM**](/previous-versions//cc136954(v=vs.85))y no se utiliza.
+Ruta de acceso de un directorio donde se almacena información sobre las instantáneas de máquina virtual. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85))y no se usa.
 
 </dd> <dt>
 
@@ -451,7 +451,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La ruta de acceso de un directorio donde se almacena información relacionada con la suspensión de la máquina virtual. Esta propiedad se hereda de [**\_ VirtualSystemSettingData CIM**](/previous-versions//cc136954(v=vs.85))y no se utiliza.
+Ruta de acceso de un directorio donde se almacena información sobre la máquina virtual relacionada con la suspensión. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85))y no se usa.
 
 </dd> <dt>
 
@@ -464,7 +464,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La ruta de acceso de un directorio donde se almacenan los archivos de intercambio de la máquina virtual. Esta propiedad se hereda de [**\_ VirtualSystemSettingData CIM**](/previous-versions//cc136954(v=vs.85))y no se utiliza.
+Ruta de acceso de un directorio donde se almacenan los archivos de intercambio de la máquina virtual. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85))y no se usa.
 
 </dd> <dt>
 
@@ -474,19 +474,19 @@ La ruta de acceso de un directorio donde se almacenan los archivos de intercambi
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Especifica si se debe usar la formación de equipos NIC. El valor predeterminado es **false**.
 
 > [!Note]  
-> Esta propiedad se agregó en Windows 10 y Windows Server 2016.
+> Esta propiedad se agregó enWindows 10 y Windows Server 2016.
 
  
 
 </dd> <dt>
 
-**Virtualsystemidentifer**
+**VirtualSystemIdentifier**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -495,7 +495,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre del objeto [**\_ ComputerSystem de CIM**](/windows/desktop/CIMWin32Prov/cim-computersystem) al que pertenecen estos datos de configuración. Esta propiedad es una invalidación de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)).
+Nombre del objeto [**\_ ComputerSystem cim**](/windows/desktop/CIMWin32Prov/cim-computersystem) al que pertenecen estos datos de configuración. Esta propiedad es una invalidación de [**CIM \_ VirtualSystemSettingData.**](/previous-versions//cc136954(v=vs.85))
 
 </dd> <dt>
 
@@ -508,20 +508,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica el tipo de máquina virtual que representan los datos de configuración. Esta propiedad se hereda de la [**\_ VirtualSystemSettingData CIM**](/previous-versions//cc136954(v=vs.85)).
+Especifica el tipo de máquina virtual que representan los datos de configuración. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)).
 
 </dd> <dt>
 
 **VLANConnection**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Una lista de identificadores de VLAN a los que puede tener acceso este conmutador. Esta propiedad se hereda de **\_ VirtualEthernetSwitchSettingData CIM**.
+Lista de identificadores de VLAN a los que puede acceder este conmutador. Esta propiedad se hereda de **CIM \_ VirtualEthernetSwitchSettingData**.
 
 </dd> </dl>
 
@@ -531,10 +531,10 @@ Una lista de identificadores de VLAN a los que puede tener acceso este conmutado
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

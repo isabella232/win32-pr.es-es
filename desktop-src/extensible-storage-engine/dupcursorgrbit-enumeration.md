@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: enumeración DupCursorGrbit'
-title: Enumeración DupCursorGrbit
+description: 'Más información sobre: Enumeración DupCursorGrbit'
+title: DupCursorGrbit (enumeración)
 TOCTitle: DupCursorGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.DupCursorGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.dupcursorgrbit(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5217d2aeae127a1bf8c649312874b31d305da9e7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aa4b7ece939815325fd66765b08643543c46c4445457923d32897778adb56680
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155420"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119737785"
 ---
-# <a name="dupcursorgrbit-enumeration"></a>Enumeración DupCursorGrbit
+# <a name="dupcursorgrbit-enumeration"></a>DupCursorGrbit (enumeración)
 
-Opciones para [JetDupCursor (JET_SESID, JET_TABLEID, JET_TABLEID, DupCursorGrbit)](./api.jetdupcursor-method.md).
+Opciones de [JetDupCursor(JET_SESID, JET_TABLEID, JET_TABLEID, DupCursorGrbit).](./api.jetdupcursor-method.md)
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -70,7 +70,7 @@ public enum DupCursorGrbit
 <tbody>
 <tr class="odd">
 <td></td>
-<td>None</td>
+<td>Ninguno</td>
 <td>Opciones predeterminadas.</td>
 </tr>
 </tbody>
@@ -81,4 +81,4 @@ public enum DupCursorGrbit
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

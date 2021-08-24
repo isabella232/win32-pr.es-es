@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de CBN_ERRSPACE (Winuser. h)
-description: Se envía cuando un cuadro combinado no puede asignar suficiente memoria para satisfacer una solicitud concreta. La ventana primaria del cuadro combinado recibe este código de notificación a través del \_ mensaje de comando de WM.
+title: CBN_ERRSPACE de notificación (Winuser.h)
+description: Se envía cuando un cuadro combinado no puede asignar suficiente memoria para satisfacer una solicitud específica. La ventana primaria del cuadro combinado recibe este código de notificación a través del mensaje \_ WM COMMAND.
 ms.assetid: c1c19c40-fc88-47d0-9676-7a267a48ae98
 keywords:
-- CBN_ERRSPACE controles de código de notificación de Windows
+- CBN_ERRSPACE código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d74e46e4435a03a0233ce6591d3c36cefb4d880a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ba62469480ec4aee97670ec4346a97ba2db91ae6e57b54e0fb766f3e78dd9591
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119699065"
 ---
-# <a name="cbn_errspace-notification-code"></a>Código de notificación de ERRSPACE de CBN \_
+# <a name="cbn_errspace-notification-code"></a>Código de notificación \_ DE ERRSPACE de CBN
 
-Se envía cuando un cuadro combinado no puede asignar suficiente memoria para satisfacer una solicitud concreta. La ventana primaria del cuadro combinado recibe este código de notificación a través del mensaje de [**\_ comando de WM**](/windows/desktop/menurc/wm-command) .
+Se envía cuando un cuadro combinado no puede asignar suficiente memoria para satisfacer una solicitud específica. La ventana primaria del cuadro combinado recibe este código de notificación a través del [**mensaje \_ WM COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -42,7 +42,7 @@ CBN_ERRSPACE
 *wParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene el identificador de control del cuadro combinado. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) especifica el código de notificación.
+LOWORD [**contiene**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) el identificador de control del cuadro combinado. [**HIWORD especifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) el código de notificación.
 
 </dd> <dt>
 
@@ -57,11 +57,11 @@ Identificador del cuadro combinado.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -78,7 +78,7 @@ Identificador del cuadro combinado.
 [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))
 </dt> <dt>
 
-[**comando de WM \_**](/windows/desktop/menurc/wm-command)
+[**COMANDO \_ WM**](/windows/desktop/menurc/wm-command)
 </dt> </dl>
 
  

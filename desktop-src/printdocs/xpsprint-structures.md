@@ -1,17 +1,17 @@
 ---
-description: Estructuras de LA API de impresión xps
+description: Estructuras de LA API de impresión XPS
 ms.assetid: 13aa0d6b-8964-4d41-9fec-98c09b764a77
-title: Estructuras de LA API de impresión xps
+title: Estructuras de LA API de impresión XPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 05f9ba240f31de8b8ca301b98e30fb9f80a76784
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: fa219d4ec92b24f58d02548d9684b0848bb3dbb4cd6fd660df6777abd28de0ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105213"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119823575"
 ---
-# <a name="xps-print-api-structures"></a>Estructuras de LA API de impresión xps
+# <a name="xps-print-api-structures"></a>Estructuras de LA API de impresión XPS
 
 \[Las estructuras descritas en esta sección están en desuso. Las aplicaciones cliente deben usar [la API Print Document Package en](./tailored-app-printing-api.md) su lugar.\]
 

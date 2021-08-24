@@ -14,12 +14,12 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: cf7cfa41c3decc964492258dad9c6a3a497f504b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1aca1eac7218528e897a2a519543d80ab4ae2be3fa5d11a4107b02f1b23f2061
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108089193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119698195"
 ---
 # <a name="direct2d-and-direct3d-interoperability-overview"></a>Introducción a la interoperabilidad de Direct2D y Direct3D
 
@@ -41,9 +41,9 @@ Contiene las siguientes secciones:
 -   [Redimensionar un destino de representación de superficie DXGI](#resizing-a-dxgi-surface-render-target)
 -   [Temas relacionados](#related-topics)
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
-En esta introducción se supone que está familiarizado con las operaciones básicas de dibujo de Direct2D. Para ver un tutorial, consulte el inicio [rápido de Direct2D.](direct2d-quickstart.md) También se supone que puede programar mediante [Direct3D 10.1.](/windows/desktop/direct3d10/d3d10-graphics)
+En esta introducción se da por supuesto que está familiarizado con las operaciones básicas de dibujo de Direct2D. Para ver un tutorial, consulte la [guía de inicio rápido de Direct2D.](direct2d-quickstart.md) También se supone que puede programar mediante [Direct3D 10.1](/windows/desktop/direct3d10/d3d10-graphics).
 
 ## <a name="supported-direct3d-versions"></a>Versiones admitidas de Direct3D
 
@@ -51,22 +51,22 @@ Con DirectX 11.0, Direct2D solo admite la interoperabilidad con dispositivos Dir
 
 ## <a name="interoperability-through-dxgi"></a>Interoperabilidad a través de DXGI
 
-A partir de Direct3D 10, el entorno de ejecución de Direct3D usa [DXGI para](/windows/desktop/direct3ddxgi/d3d10-graphics-programming-guide-dxgi) la administración de recursos. El nivel de tiempo de ejecución DXGI proporciona uso compartido entre procesos de superficies de memoria de vídeo y sirve como base para otras plataformas de tiempo de ejecución basadas en memoria de vídeo. Direct2D usa DXGI para interoperar con Direct3D.
+A partir de Direct3D 10, el entorno de ejecución de Direct3D usa [DXGI para](/windows/desktop/direct3ddxgi/d3d10-graphics-programming-guide-dxgi) la administración de recursos. La capa de tiempo de ejecución de DXGI proporciona uso compartido entre procesos de superficies de memoria de vídeo y sirve como base para otras plataformas de tiempo de ejecución basadas en memoria de vídeo. Direct2D usa DXGI para interoperar con Direct3D.
 
 Hay dos maneras principales de usar Direct2D y Direct3D juntos:
 
--   Puede escribir contenido de Direct2D en una superficie de Direct3D si obtiene un [**IDXGISurface**](/windows/desktop/api/dxgi/nn-dxgi-idxgisurface) y lo usa con [**CreateDxgiSurfaceRenderTarget**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createdxgisurfacerendertarget(idxgisurface_constd2d1_render_target_properties__id2d1rendertarget)) para crear un [**id2D1RenderTarget.**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget) A continuación, puede usar el destino de representación para agregar una interfaz bidimensional o un fondo a gráficos tridimensionales, o usar un dibujo de Direct2D como textura para un objeto tridimensional.
--   Mediante el uso de [**CreateSharedBitmap**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createsharedbitmap) para crear un [**id2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) a partir de [**un IDXGISurface,**](/windows/desktop/api/dxgi/nn-dxgi-idxgisurface)puede escribir una escena de Direct3D en un mapa de bits y representarla con Direct2D.
+-   Puede escribir contenido de Direct2D en una superficie de Direct3D obteniendo un [**IDXGISurface**](/windows/desktop/api/dxgi/nn-dxgi-idxgisurface) y usándose con [**CreateDxgiSurfaceRenderTarget**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createdxgisurfacerendertarget(idxgisurface_constd2d1_render_target_properties__id2d1rendertarget)) para crear un [**id2D1RenderTarget.**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget) A continuación, puede usar el destino de representación para agregar una interfaz bidimensional o un fondo a gráficos tridimensionales, o bien usar un dibujo de Direct2D como textura para un objeto tridimensional.
+-   Mediante el uso de [**CreateSharedBitmap**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createsharedbitmap) para crear un [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) a partir de [**IDXGISurface,**](/windows/desktop/api/dxgi/nn-dxgi-idxgisurface)puede escribir una escena de Direct3D en un mapa de bits y representarla con Direct2D.
 
 ## <a name="writing-to-a-direct3d-surface-with-a-dxgi-surface-render-target"></a>Escritura en una superficie de Direct3D con un destino de representación de superficie DXGI
 
-Para escribir en una superficie de Direct3D, se obtiene [**un IDXGISurface**](/windows/desktop/api/dxgi/nn-dxgi-idxgisurface) y se pasa al [**método CreateDxgiSurfaceRenderTarget**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createdxgisurfacerendertarget(idxgisurface_constd2d1_render_target_properties__id2d1rendertarget)) para crear un destino de representación de superficie DXGI. A continuación, puede usar el destino de representación de superficie DXGI para dibujar contenido 2D en la superficie DXGI.
+Para escribir en una superficie de Direct3D, se obtiene un [**IDXGISurface**](/windows/desktop/api/dxgi/nn-dxgi-idxgisurface) y se pasa al [**método CreateDxgiSurfaceRenderTarget**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createdxgisurfacerendertarget(idxgisurface_constd2d1_render_target_properties__id2d1rendertarget)) para crear un destino de representación de superficie DXGI. A continuación, puede usar el destino de representación de superficie DXGI para dibujar contenido 2D en la superficie DXGI.
 
 Un destino de representación de superficie DXGI es un tipo [**de ID2D1RenderTarget.**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget) Al igual que otros destinos de representación de Direct2D, puede usarlo para crear recursos y emitir comandos de dibujo.
 
 El destino de representación de la superficie DXGI y la superficie DXGI deben usar el mismo formato DXGI. Si especifica el formato [**DXGI \_ FORMAT \_ UNICIALMENTEN**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) al crear el destino de representación, usará automáticamente el formato de la superficie.
 
-El destino de representación de superficie DXGI no realiza la sincronización de la superficie DXGI.
+El destino de representación de la superficie DXGI no realiza la sincronización de la superficie DXGI.
 
 ### <a name="creating-a-dxgi-surface"></a>Creación de una superficie DXGI
 
@@ -74,9 +74,9 @@ Con Direct3D 10, hay varias maneras de obtener una superficie DXGI. Puede crear 
 
 Independientemente de cómo cree la superficie DXGI, la superficie debe usar uno de los formatos DXGI admitidos por los destinos de representación de la superficie DXGI. Para obtener una lista, vea [Supported Pixel Formats and Alpha Modes](supported-pixel-formats-and-alpha-modes.md).
 
-Además, el [**id3D10Device1**](/windows/desktop/api/d3d10_1/nn-d3d10_1-id3d10device1) asociado a la superficie DXGI debe admitir formatos BGRA DXGI para que la superficie funcione con Direct2D. Para garantizar esta compatibilidad, use la marca [**D3D10 \_ CREATE \_ DEVICE \_ BGRA \_ SUPPORT**](/windows/desktop/api/d3d10/ne-d3d10-d3d10_create_device_flag) al llamar al método [**D3D10CreateDevice1**](/windows/desktop/api/d3d10_1/nf-d3d10_1-d3d10createdevice1) para crear el dispositivo.
+Además, el [**ID3D10Device1**](/windows/desktop/api/d3d10_1/nn-d3d10_1-id3d10device1) asociado a la superficie DXGI debe admitir formatos BGRA DXGI para que la superficie funcione con Direct2D. Para garantizar esta compatibilidad, use la marca [**D3D10 \_ CREATE \_ DEVICE \_ BGRA \_ SUPPORT**](/windows/desktop/api/d3d10/ne-d3d10-d3d10_create_device_flag) al llamar al método [**D3D10CreateDevice1**](/windows/desktop/api/d3d10_1/nf-d3d10_1-d3d10createdevice1) para crear el dispositivo.
 
-El código siguiente define un método que crea un [**id3D10Device1**](/windows/desktop/api/d3d10_1/nn-d3d10_1-id3d10device1). Selecciona el mejor nivel de característica disponible y vuelve a la Plataforma avanzada de [rasterización de Windows (WARP)](./installing-the-direct2d-debug-layer.md) cuando la representación de hardware no está disponible.
+El código siguiente define un método que crea un [**ID3D10Device1**](/windows/desktop/api/d3d10_1/nn-d3d10_1-id3d10device1). Selecciona el mejor nivel de características disponible y vuelve a Windows [Advanced Rasterization Platform (WARP)](./installing-the-direct2d-debug-layer.md) cuando la representación de hardware no está disponible.
 
 
 ```C++
@@ -126,7 +126,7 @@ HRESULT DXGISampleApp::CreateD3DDevice(
 
 
 
-En el ejemplo de código siguiente se usa el método mostrado en el ejemplo anterior para crear un dispositivo Direct3D que puede crear superficies DXGI para su uso `CreateD3DDevice` con Direct2D.
+En el ejemplo de código siguiente se usa el método que se muestra en el ejemplo anterior para crear un dispositivo Direct3D que puede crear superficies DXGI para su uso `CreateD3DDevice` con Direct2D.
 
 
 ```C++
@@ -151,9 +151,9 @@ if (FAILED(hr))
 
 
 
-## <a name="writing-direct2d-content-to-a-swap-chain-buffer"></a>Escribir contenido de Direct2D en un búfer de cadena de intercambio
+## <a name="writing-direct2d-content-to-a-swap-chain-buffer"></a>Escritura de contenido de Direct2D en un búfer de cadena de intercambio
 
-La manera más sencilla de agregar contenido de Direct2D a una escena de Direct3D es usar el método [**GetBuffer**](/windows/desktop/api/dxgi/nf-dxgi-idxgiswapchain-getbuffer) de un [**IDXGISwapChain**](/windows/desktop/api/dxgi/nn-dxgi-idxgiswapchain) para obtener una superficie DXGI y, a continuación, usar la superficie con el método [**CreateDxgiSurfaceRenderTarget para**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createdxgisurfacerendertarget(idxgisurface_constd2d1_render_target_properties__id2d1rendertarget)) crear un [**ID2D1RenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget) con el que dibujar el contenido 2D.
+La manera más sencilla de agregar contenido de Direct2D a una escena de Direct3D es usar el método [**GetBuffer**](/windows/desktop/api/dxgi/nf-dxgi-idxgiswapchain-getbuffer) de un [**IDXGISwapChain**](/windows/desktop/api/dxgi/nn-dxgi-idxgiswapchain) para obtener una superficie DXGI y, a continuación, usar la superficie con el método [**CreateDxgiSurfaceRenderTarget**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createdxgisurfacerendertarget(idxgisurface_constd2d1_render_target_properties__id2d1rendertarget)) para crear un [**ID2D1RenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget) con el que dibujar el contenido 2D.
 
 Este enfoque no representa el contenido en tres dimensiones; no tendrá perspectiva ni profundidad. Sin embargo, es útil para varias tareas comunes:
 
@@ -298,7 +298,7 @@ Otra manera de usar contenido de Direct2D con Direct3D es usar Direct2D para gen
 
 ### <a name="example-use-direct2d-content-as-a-texture"></a>Ejemplo: Uso de contenido de Direct2D como textura
 
-En los ejemplos siguientes se muestra cómo crear un destino de representación de superficie DXGI que se representa en una textura 2D (representada por un [**ID3D10Texture2D**](/windows/desktop/api/d3d10/nn-d3d10-id3d10texture2d)).
+En los ejemplos siguientes se muestra cómo crear un destino de representación de superficie DXGI que se representa en una textura 2D (representada por [**un ID3D10Texture2D**](/windows/desktop/api/d3d10/nn-d3d10-id3d10texture2d)).
 
 1.  En primer lugar, use un dispositivo Direct3D para crear una textura 2D. La textura usa las marcas de enlace [**D3D10 \_ BIND \_ RENDER \_ TARGET**](/windows/desktop/api/d3d10/ne-d3d10-d3d10_bind_flag) y **D3D10 \_ BIND SHADER \_ \_ RESOURCE,** y usa el formato [**DXGI FORMAT \_ \_ B8G8R8A8 \_ UNORM**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) DXGI, uno de los formatos DXGI admitidos por Direct2D.
 
@@ -335,7 +335,7 @@ hr = m_pOffscreenTexture->QueryInterface(&pDxgiSurface);
 
     
 
-3.  Use la superficie con el [**método CreateDxgiSurfaceRenderTarget para**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createdxgisurfacerendertarget(idxgisurface_constd2d1_render_target_properties__id2d1rendertarget)) obtener un destino de representación de Direct2D.
+3.  Use la superficie con el [**método CreateDxgiSurfaceRenderTarget**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createdxgisurfacerendertarget(idxgisurface_constd2d1_render_target_properties__id2d1rendertarget)) para obtener un destino de representación de Direct2D.
 
 ```C++
     if (SUCCEEDED(hr))
@@ -364,23 +364,23 @@ hr = m_pOffscreenTexture->QueryInterface(&pDxgiSurface);
 
     
 
-Ahora que ha obtenido un destino de representación de Direct2D y lo ha asociado a una textura de Direct3D, puede usar el destino de representación para dibujar contenido de Direct2D en esa textura y aplicar esa textura a primitivas de Direct3D.
+Ahora que ha obtenido un destino de representación de Direct2D y lo ha asociado a una textura de Direct3D, puede usar el destino de representación para dibujar contenido de Direct2D en esa textura y aplicar esa textura a las primitivas de Direct3D.
 
 El código se omite en este ejemplo.
 
-## <a name="resizing-a-dxgi-surface-render-target"></a>Redimensionamiento de un destino de representación de superficie DXGI
+## <a name="resizing-a-dxgi-surface-render-target"></a>Redimensionar un destino de representación de superficie DXGI
 
 Los destinos de representación de superficie DXGI no admiten [**el método ID2D1RenderTarget::Resize.**](/windows/desktop/api/d2d1/nf-d2d1-id2d1hwndrendertarget-resize(constd2d1_size_u)) Para cambiar el tamaño de un destino de representación de superficie DXGI, la aplicación debe liberarlo y volver a crearlo.
 
-Esta operación puede crear posibles problemas de rendimiento. El destino de representación podría ser el último recurso activo de Direct2D que mantiene una referencia al [**id3D10Device1**](/windows/desktop/api/d3d10_1/nn-d3d10_1-id3d10device1) asociado a la superficie DXGI del destino de representación. Si la aplicación libera el destino de representación y se destruye la referencia **ID3D10Device1,** se debe volver a crear uno nuevo.
+Esta operación puede crear posibles problemas de rendimiento. El destino de representación podría ser el último recurso activo de Direct2D que mantiene una referencia al [**ID3D10Device1**](/windows/desktop/api/d3d10_1/nn-d3d10_1-id3d10device1) asociado a la superficie DXGI del destino de representación. Si la aplicación libera el destino de representación y se destruye la referencia **ID3D10Device1,** se debe volver a crear uno nuevo.
 
 Puede evitar esta operación potencialmente costosa manteniendo al menos un recurso de Direct2D creado por el destino de representación mientras vuelve a crear ese destino de representación. Estos son algunos recursos de Direct2D que funcionan para este enfoque:
 
--   [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) (que puede ser mantenido indirectamente por [**id2D1BitmapBrush)**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush)
+-   [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) (que puede ser mantenido indirectamente por un [**objeto ID2D1BitmapBrush)**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush)
 -   [**ID2D1Layer**](/windows/win32/api/d2d1/nn-d2d1-id2d1layer)
 -   [**ID2D1Mesh**](/windows/win32/api/d2d1/nn-d2d1-id2d1mesh)
 
-Para dar cabida a este enfoque, el método de cambio de tamaño debe probar para ver si el dispositivo Direct3D está disponible. Si está disponible, libere y vuelva a crear los destinos de representación de la superficie DXGI, pero mantenga todos los recursos que creó anteriormente y vuelva a usarlos. Esto funciona porque, como se describe en Información general de [recursos,](resources-and-resource-domains.md)los recursos creados por dos destinos de representación son compatibles cuando ambos destinos de representación están asociados al mismo dispositivo Direct3D.
+Para adaptarse a este enfoque, el método de cambio de tamaño debe probar para ver si el dispositivo Direct3D está disponible. Si está disponible, libere y vuelva a crear los destinos de representación de la superficie DXGI, pero mantenga todos los recursos que creó anteriormente y vuelva a usarlos. Esto funciona porque, como se describe en Información general de [recursos,](resources-and-resource-domains.md)los recursos creados por dos destinos de representación son compatibles cuando ambos destinos de representación están asociados al mismo dispositivo Direct3D.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -392,7 +392,7 @@ Para dar cabida a este enfoque, el método de cambio de tamaño debe probar para
 [**CreateDxgiSurfaceRenderTarget**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createdxgisurfacerendertarget(idxgisurface_constd2d1_render_target_properties__id2d1rendertarget))
 </dt> <dt>
 
-[Gráficos de Windows DirectX](../graphics-and-multimedia.md)
+[Windows Gráficos de DirectX](../graphics-and-multimedia.md)
 </dt> </dl>
 
  

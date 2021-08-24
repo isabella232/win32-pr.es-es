@@ -1,9 +1,9 @@
 ---
-title: D3DX_Truncate_FLOAT función)
+title: D3DX_Truncate_FLOAT función
 description: Trunca un valor FLOAT.
 ms.assetid: 47d59c96-1f2d-4878-9fe5-7817107cc837
 keywords:
-- D3DX_Truncate_FLOAT de la función HLSL
+- D3DX_Truncate_FLOAT función HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8768a38fbcf2ef8058c2652e177d317e5b055e90
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 296c4297b10cca14c3413dc71f1a85251fb65a83bbd1cfa0373de48dc2f5da49
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104998377"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119673995"
 ---
-# <a name="d3dx_truncate_float-function"></a>D3DX \_ TRUNCATE \_ float (función)
+# <a name="d3dx_truncate_float-function"></a>Función \_ Truncate FLOAT de D3DX \_
 
 Trunca un valor FLOAT.
 
@@ -54,7 +54,7 @@ Valor truncado.
 
 | Requisito | Value |
 |-------------------|--------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert. INL</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert.inl</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Valor truncado.
 [Funciones](format-conversion-functions.md)
 </dt> <dt>
 
-[Desempaquetar y empaquetar el \_ formato de DXGI para la edición de In-Place imagen](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Desempaquetar y empaquetar DXGI \_ FORMAT para la edición In-Place imágenes](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
  

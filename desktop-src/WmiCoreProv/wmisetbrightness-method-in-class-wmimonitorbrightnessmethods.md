@@ -1,5 +1,5 @@
 ---
-description: Establece el brillo de la pantalla del monitor de un equipo.
+description: Establece el brillo de la pantalla de un monitor de equipo.
 ms.assetid: 900cf5fd-6888-4f0b-8e0b-01eeaaeeeb8f
 title: Método WmiSetBrightness de la clase WmiMonitorBrightnessMethods
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: 599610b0d81de283d97ca347486c4adcbe0103dd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0a9425668ad00422033a77233ade2822966db0f19d6e6628ada24866be9953f7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104082867"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119794445"
 ---
 # <a name="wmisetbrightness-method-of-the-wmimonitorbrightnessmethods-class"></a>Método WmiSetBrightness de la clase WmiMonitorBrightnessMethods
 
-El método **WmiSetBrightness** establece el brillo de la pantalla de un monitor del equipo.
+El **método WmiSetBrightness** establece el brillo de pantalla de un monitor de equipo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,13 +56,13 @@ Brillo, en porcentaje.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero (0) para indicar que la operación se ha realizado correctamente. Cualquier otro número indica que hubo un error. Para obtener más información sobre los códigos de error, vea [**constantes error de WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum).
+Devuelve cero (0) para indicar que se ha correcto. Cualquier otro número indica que hubo un error. Para obtener más información sobre los códigos de error, vea [**Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum).
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener una explicación amplia de cómo recuperar y establecer el brillo del monitor, vea el tema blog sobre el [uso de PowerShell para notificar y establecer el brillo del monitor](https://blogs.technet.com/b/heyscriptingguy/archive/2013/07/25/use-powershell-to-report-and-set-monitor-brightness.aspx) .
+Para obtener una explicación extendida sobre cómo recuperar y establecer el brillo del monitor, vea el tema de blog Scripting Guy's [Use PowerShell to Report and Set Monitor Brightness](https://blogs.technet.com/b/heyscriptingguy/archive/2013/07/25/use-powershell-to-report-and-set-monitor-brightness.aspx) (Uso de PowerShell para informar y establecer el brillo del monitor).
 
-En el siguiente ejemplo de PowerShell se establece el brillo del monitor en 50%.
+El siguiente ejemplo de PowerShell establece el brillo del monitor en el 50 %.
 
 
 ```PowerShell
@@ -82,8 +82,8 @@ $myMonitor.wmisetbrightness($delay, $brightness)
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
-| Espacio de nombres<br/>                | \\WMI raíz<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>WmiCore. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Wmi \\ raíz<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>WmiCore.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>WmiProv.dll</dt> </dl> |
 
 

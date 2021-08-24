@@ -1,10 +1,10 @@
 ---
-title: atributo x500uniqueIdentifier
-description: Se usa para distinguir entre los objetos cuando se ha reusado un nombre distintivo. Se trata de un tipo de atributo diferente de los tipos UID y uniqueIdentifier.
+title: Atributo x500uniqueIdentifier
+description: Se usa para distinguir entre objetos cuando se ha reutilizado un nombre distintivo. Se trata de un tipo de atributo diferente de los tipos uid y uniqueIdentifier.
 ms.assetid: 72975f85-2e0a-4b4e-8fc2-8eeb2d744563
 ms.tgt_platform: multiple
 keywords:
-- x500uniqueIdentifier esquema de AD de atributos
+- Esquema de AD del atributo x500uniqueIdentifier
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f2b6be2dd1beca51dbc3ad2de2caa8ef6afb11a5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a1a25a9bf61ddfe489492a6e6ff6a960ecfc172d01469f7bb844bc5248e9b466
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151701"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119702385"
 ---
-# <a name="x500uniqueidentifier-attribute"></a>atributo x500uniqueIdentifier
+# <a name="x500uniqueidentifier-attribute"></a>Atributo x500uniqueIdentifier
 
-Se usa para distinguir entre los objetos cuando se ha reusado un nombre distintivo. Se trata de un tipo de atributo diferente de los tipos UID y uniqueIdentifier.
+Se usa para distinguir entre objetos cuando se ha reutilizado un nombre distintivo. Se trata de un tipo de atributo diferente de los tipos uid y uniqueIdentifier.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | x500uniqueIdentifier                                  |
-| Nombre para mostrar de LDAP | x500uniqueIdentifier                                  |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| Ldap-Display-Name | x500uniqueIdentifier                                  |
+| Size              | \-                                                    |
+| Privilegio actualizar  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 2.5.4.45                                              |
-| System-ID-GUID    | d07da11f-8a3d-42b6-b0aa-76c962be719a                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | d07da11f-8a3d-42b6-b0aa-76c962be719a                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -53,18 +53,18 @@ Se usa para distinguir entre los objetos cuando se ha reusado un nombre distinti
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                    |
+| Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
-| System-Only            | False                                                                                 |
-| Tiene un único valor       | False                                                                                 |
-| Está indexado             | False                                                                                 |
-| En el catálogo global      | False                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                          |
+| System-Only            | Falso                                                                                 |
+| Es de un solo valor       | Falso                                                                                 |
+| Está indexado             | Falso                                                                                 |
+| En el catálogo global      | Falso                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -74,18 +74,18 @@ Se usa para distinguir entre los objetos cuando se ha reusado un nombre distinti
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                    |
+| Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
-| System-Only            | False                                                                                 |
-| Tiene un único valor       | False                                                                                 |
-| Está indexado             | False                                                                                 |
-| En el catálogo global      | False                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                          |
+| System-Only            | Falso                                                                                 |
+| Es de un solo valor       | Falso                                                                                 |
+| Está indexado             | Falso                                                                                 |
+| En el catálogo global      | Falso                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -93,20 +93,20 @@ Se usa para distinguir entre los objetos cuando se ha reusado un nombre distinti
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                    |
+| Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
-| System-Only            | False                                                                                 |
-| Tiene un único valor       | False                                                                                 |
-| Está indexado             | False                                                                                 |
-| En el catálogo global      | False                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                          |
+| System-Only            | Falso                                                                                 |
+| Es de un solo valor       | Falso                                                                                 |
+| Está indexado             | Falso                                                                                 |
+| En el catálogo global      | Falso                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -114,20 +114,20 @@ Se usa para distinguir entre los objetos cuando se ha reusado un nombre distinti
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                    |
+| Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
-| System-Only            | False                                                                                 |
-| Tiene un único valor       | False                                                                                 |
-| Está indexado             | False                                                                                 |
-| En el catálogo global      | False                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                          |
+| System-Only            | Falso                                                                                 |
+| Es de un solo valor       | Falso                                                                                 |
+| Está indexado             | Falso                                                                                 |
+| En el catálogo global      | Falso                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -137,13 +137,13 @@ Se usa para distinguir entre los objetos cuando se ha reusado un nombre distinti
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                    |
+| Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
-| System-Only            | False                                                                                 |
-| Tiene un único valor       | False                                                                                 |
-| Está indexado             | False                                                                                 |
-| En el catálogo global      | False                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                          |
+| System-Only            | Falso                                                                                 |
+| Es de un solo valor       | Falso                                                                                 |
+| Está indexado             | Falso                                                                                 |
+| En el catálogo global      | Falso                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |

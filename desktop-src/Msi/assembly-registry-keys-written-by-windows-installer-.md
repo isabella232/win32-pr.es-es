@@ -1,49 +1,49 @@
 ---
-description: Si un paquete de Windows Installer instala o anuncia ensamblados, el instalador almacena información sobre esos ensamblados en el registro del sistema local.
+description: Si un Windows installer instala o anuncia ensamblados, el instalador almacena información sobre esos ensamblados en el registro del sistema local.
 ms.assetid: 1a6b0530-b5ad-49db-bc08-5b20d32420ef
-title: Claves del registro de ensamblado escritas por Windows Installer
+title: Claves del Registro de ensamblados escritas por Windows Installer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7bdd2ea7d290659fa9c1578d89be9a77dcc5cc10
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f3fd4a9bf3fa5e1eb557c2a179ec3e9a0853149ff197922a9fbf633a2869f41c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104545182"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119746025"
 ---
-# <a name="assembly-registry-keys-written-by-windows-installer"></a>Claves del registro de ensamblado escritas por Windows Installer
+# <a name="assembly-registry-keys-written-by-windows-installer"></a>Claves del Registro de ensamblados escritas por Windows Installer
 
-Si un paquete de Windows Installer instala o anuncia ensamblados, el instalador almacena información sobre esos ensamblados en el registro del sistema local. Tenga en cuenta que estas claves del registro solo están pensadas para que las use internamente Windows Installer y no deben depender de la aplicación. El contenido, la ubicación y la estructura de la información almacenada en estas claves están sujetos a cambios. Las aplicaciones deben basarse en [**MsiProvideAssembly**](/windows/desktop/api/Msi/nf-msi-msiprovideassemblya) para administrar ensamblados.
+Si un Windows installer instala o anuncia ensamblados, el instalador almacena información sobre esos ensamblados en el registro del sistema local. Tenga en cuenta que estas claves del Registro solo están diseñadas para ser usadas internamente por Windows Installer y la aplicación no debe confiar en ellas. El contenido, la ubicación y la estructura de la información almacenada en estas claves están sujetos a cambios. Las aplicaciones deben basarse [**en MsiProvideAssembly para**](/windows/desktop/api/Msi/nf-msi-msiprovideassemblya) administrar ensamblados.
 
-Los ensamblados se registran con los nombres de ensamblado. Los nombres de los valores almacenados en las siguientes ubicaciones son los nombres de ensamblado. Los valores reales son del tipo REG \_ multi \_ SZ y contienen datos usados por [**MsiProvideAssembly**](/windows/desktop/api/Msi/nf-msi-msiprovideassemblya) para instalar o reparar ensamblados.
+Los ensamblados se registran por sus nombres de ensamblado. Los nombres de los valores almacenados en las siguientes ubicaciones son los nombres de ensamblado. Los valores reales son del tipo REG MULTI SZ y contienen datos usados por \_ \_ [**MsiProvideAssembly para**](/windows/desktop/api/Msi/nf-msi-msiprovideassemblya) instalar o reparar ensamblados.
 
-## <a name="information-about-private-assemblies"></a>Información sobre ensamblados privados
+## <a name="information-about-private-assemblies"></a>Información acerca de los ensamblados privados
 
-Windows Installer almacena información acerca de los ensamblados privados que llevan Windows Installer paquetes que se han instalado como aplicaciones administradas por usuario en la siguiente clave del registro:
+Windows El instalador almacena información sobre los ensamblados privados llevados por Windows Installer que se han instalado como aplicaciones administradas por usuario con la siguiente clave del Registro:
 
-**HKLM** \\ **Software** \\ de **Microsoft** \\ **Windows** \\ **CurrentVersion** \\ **Instalador** \\ de **Administrados** \\ **SID *_\\_* de usuario Instalador** \\ de **ensamblados** \\ * *_ruta de acceso al archivo de configuración_* _
+**HKLM** \\ **SOFTWARE** \\ **Microsoft** \\ **Windows** \\ **CurrentVersion** \\ **Instalador** \\ **Administrado** \\ **_SID de usuario_ *_\\_* Ruta** \\ **de acceso de** \\ **_ensamblados del instalador al archivo de configuración_**
 
-Windows Installer almacena información sobre los ensamblados privados que llevan Windows Installer paquetes que se han instalado por usuario en la siguiente clave del registro:
+Windows El instalador almacena información sobre los ensamblados privados que Windows paquetes del instalador que se han instalado por usuario con la siguiente clave del Registro:
 
-_*HKCU **\\** software **\\** Microsoft **\\** Installer **\\** ensamblados **\\** _ruta de acceso al archivo de configuración_*_
+**HKCU** \\ **Software** \\ **Microsoft** \\ **Instalador** \\ **Ensamblados** \\ **_ruta de acceso al archivo de configuración_**
 
-Windows Installer almacena información sobre los ensamblados privados que llevan Windows Installer paquetes y que se instalan por equipo en la siguiente clave del registro:
+Windows El instalador almacena información sobre los ensamblados privados que Windows paquetes del instalador e instala por equipo con la siguiente clave del Registro:
 
-_*HKLM **\\** **\\** **\\** instalación de clases **\\** de software ensamblados **\\** _ruta de acceso al archivo de configuración_*_
+**HKLM** \\ **SOFTWARE** \\ **Clases** \\ **Instalador** \\ **Ensamblados** \\ **_ruta de acceso al archivo de configuración_**
 
-## <a name="information-about-global-or-shared-assemblies"></a>Información sobre ensamblados globales o compartidos
+## <a name="information-about-global-or-shared-assemblies"></a>Información acerca de los ensamblados globales o compartidos
 
-Windows Installer almacena información sobre los ensamblados compartidos que llevan Windows Installer paquetes que se han instalado como aplicaciones administradas por usuario en la siguiente clave del registro:
+Windows El instalador almacena información sobre los ensamblados compartidos llevados por Windows Installer que se han instalado como aplicaciones administradas por usuario en la siguiente clave del Registro:
 
-_*HKLM **\\** SOFTWARE **\\** Microsoft **\\** Windows **\\** CurrentVersion **\\** Installer **\\** Managed **\\** _User SID_*_ \\ _ *Installer **\\** assemblies **\\** global**
+**HKLM** \\ **SOFTWARE** \\ **Microsoft** \\ **Windows** \\ **CurrentVersion** \\ **Instalador** \\ **Administrado** \\ **_SID de usuario_ *_\\_* Ensamblados** \\ **del instalador** \\ **globales**
 
-Windows Installer almacena información sobre los ensamblados compartidos que llevan Windows Installer paquetes que se han instalado por usuario en la siguiente clave del registro:
+Windows El instalador almacena información sobre los ensamblados compartidos llevados por Windows Installer que se han instalado por usuario con la siguiente clave del Registro:
 
-**HKCU** \\ **Software** \\ de **Microsoft** \\ **Instalador** \\ de **Ensamblados** \\ **Nivel global**
+**HKCU** \\ **Software** \\ **Microsoft** \\ **Instalador** \\ **Ensamblados** \\ **Global**
 
-Windows Installer almacena información sobre los ensamblados compartidos que llevan Windows Installer paquetes y que se instalan por equipo en la siguiente clave del registro:
+Windows El instalador almacena información sobre los ensamblados compartidos que Windows paquetes del instalador e instala por equipo con la siguiente clave del Registro:
 
-**HKLM** \\ **Software** \\ de **Clases** \\ de **Instalador** \\ de **Ensamblados** \\ **Nivel global**
+**HKLM** \\ **SOFTWARE** \\ **Clases** \\ **Instalador** \\ **Ensamblados** \\ **Global**
 
  
 

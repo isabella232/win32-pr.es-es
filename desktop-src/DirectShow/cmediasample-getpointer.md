@@ -1,7 +1,7 @@
 ---
-description: 'El método GetPointer recupera un puntero de lectura/escritura al búfer. Este método implementa el método IMediaSample:: GetPointer.'
+description: El método GetPointer recupera un puntero de lectura y escritura al búfer. Este método implementa el método IMediaSample::GetPointer.
 ms.assetid: dd797ad5-6066-4366-a56f-621132f2e6ea
-title: Método CMediaSample. GetPointer (Amfilter. h)
+title: Método CMediaSample.GetPointer (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fe8d8785bd52fbe601d9980f8fc146a2c6f41e40
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 21a39fae4f243c0a4e7305573f1b06ee2f11766729ef4933124d059b20b3a14b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679332"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119832275"
 ---
-# <a name="cmediasamplegetpointer-method"></a>CMediaSample. GetPointer, método
+# <a name="cmediasamplegetpointer-method"></a>Método CMediaSample.GetPointer
 
-El `GetPointer` método recupera un puntero de lectura/escritura en el búfer. Este método implementa el método [**IMediaSample:: GetPointer**](/windows/desktop/api/Strmif/nf-strmif-imediasample-getpointer) .
+El `GetPointer` método recupera un puntero de lectura y escritura al búfer. Este método implementa el [**método IMediaSample::GetPointer.**](/windows/desktop/api/Strmif/nf-strmif-imediasample-getpointer)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,7 +51,7 @@ Dirección de una variable que recibe un puntero al búfer.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Devuelve S \_ correcto.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Devuelve S \_ correcto.
 
 <dl> <dt>
 
-[**Clase CMediaSample**](cmediasample.md)
+[**CMediaSample (clase)**](cmediasample.md)
 </dt> </dl>
 
  

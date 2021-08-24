@@ -1,7 +1,7 @@
 ---
-description: Escribe una entrada nula en la base de datos especificada.
+description: Escribe una entrada NULL en la base de datos especificada.
 ms.assetid: 2a29389b-d4f6-4527-a429-c9459b095f2f
-title: SdbWriteNULLTag función)
+title: Función SdbWriteNULLTag
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 662d5c4db31f199df8b3b9f7368aba118ea6e8fd
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 363f137ecc7887114040bac76607438e0b0bfd4dbf4f3e74659c98c0906164a0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104274901"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119815085"
 ---
-# <a name="sdbwritenulltag-function"></a>SdbWriteNULLTag función)
+# <a name="sdbwritenulltag-function"></a>Función SdbWriteNULLTag
 
-Escribe una entrada **nula** en la base de datos especificada.
+Escribe una entrada **NULL** en la base de datos especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,23 +40,23 @@ BOOL WINAPI SdbWriteNULLTag(
 
 <dl> <dt>
 
-archivo *PDB* \[ de\]
+*pdb* \[ En\]
 </dt> <dd>
 
-Identificador de la base de datos de correcciones de compatibilidad.
+Identificador de la base de datos shim.
 
 </dd> <dt>
 
-*tTag* \[ de\]
+*tTag* \[ En\]
 </dt> <dd>
 
-ETIQUETA de la entrada. Esta etiqueta debe ser de tipo **etiqueta \_ \_ null**.
+Etiqueta de la entrada. Esta ETIQUETA debe ser de tipo **TAG \_ TYPE \_ NULL.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función devuelve **true** si se ejecuta correctamente o **false** en caso de error.
+La función devuelve **TRUE si** se ejecuta correctamente o **FALSE** en caso de error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,8 +64,8 @@ La función devuelve **true** si se ejecuta correctamente o **false** en caso de
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                   |
 | Archivo DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

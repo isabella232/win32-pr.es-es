@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_CAP_PAL_MANUALCREATE (VFW. h)
-description: El \_ mensaje MANUALCREATE Cap de WM Cap \_ \_ solicita que el controlador de captura muestre manualmente los fotogramas de vídeo y cree una nueva paleta. Puede enviar este mensaje explícitamente o mediante la macro capPaletteManual.
+title: WM_CAP_PAL_MANUALCREATE mensaje (Vfw.h)
+description: El mensaje WM CAP PAL MANUALCREATE solicita que el controlador de captura muestree manualmente fotogramas de vídeo \_ y cree una nueva \_ \_ paleta. Puede enviar este mensaje explícitamente o mediante la macro capPaletteManual.
 ms.assetid: 96b6b2d6-084a-411e-8495-ea27e0c4f04f
 keywords:
-- Mensaje de WM_CAP_PAL_MANUALCREATE de Windows multimedia
+- WM_CAP_PAL_MANUALCREATE mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4dfd5b6588381ede0faaae539d3d8418b041f458
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c8cc313cb6eae8e757d0777642bbc0ab72fe07fcfbf5b530a6479675c8ab3c07
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801868"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119781296"
 ---
-# <a name="wm_cap_pal_manualcreate-message"></a>\_ \_ Mensaje MANUALCREATE de PAL Cap de WM \_
+# <a name="wm_cap_pal_manualcreate-message"></a>WM \_ CAP \_ PAL \_ MANUALCREATE message
 
-El **mensaje \_ \_ \_ MANUALCREATE Cap de WM Cap** solicita que el controlador de captura muestre manualmente los fotogramas de vídeo y cree una nueva paleta. Puede enviar este mensaje explícitamente o mediante la macro [**capPaletteManual**](/windows/desktop/api/Vfw/nf-vfw-cappalettemanual) .
+El **mensaje WM CAP PAL \_ \_ \_ MANUALCREATE** solicita que el controlador de captura muestree manualmente fotogramas de vídeo y cree una nueva paleta. Puede enviar este mensaje explícitamente o mediante la [**macro capPaletteManual.**](/windows/desktop/api/Vfw/nf-vfw-cappalettemanual)
 
 
 ```C++
@@ -41,7 +41,7 @@ lParam = (LPARAM) (DWORD) (iColors);
 <span id="fGrab"></span><span id="fgrab"></span><span id="FGRAB"></span>*fGrab*
 </dt> <dd>
 
-Marca de histograma de la paleta. Establezca este parámetro en **true** para cada marco incluido en la creación de la paleta óptima. Después de recopilar el último fotograma, establezca este parámetro en **false** para calcular la paleta óptima y enviarlo al controlador de captura.
+Marca de histograma de paleta. Establezca este parámetro en **TRUE para** cada fotograma incluido en la creación de la paleta óptima. Una vez recopilado el último fotograma, establezca este parámetro en **FALSE** para calcular la paleta óptima y enviarlo al controlador de captura.
 
 </dd> <dt>
 
@@ -54,9 +54,9 @@ Número de colores de la paleta. El valor máximo de este parámetro es 256. Est
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto o **false** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o FALSE **de** lo contrario.
 
-Si se produce un error y se establece una función de devolución de llamada de error con el mensaje de [**\_ error de devolución de \_ \_ llamada \_ de Cap de WM**](wm-cap-set-callback-error.md) , se llama a la función de devolución de llamada de error.
+Si se produce un error y se establece una función de devolución de llamada de error mediante el mensaje [**WM \_ CAP SET \_ \_ CALLBACK \_ ERROR,**](wm-cap-set-callback-error.md) se llama a la función de devolución de llamada de error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,7 +66,7 @@ Si se produce un error y se establece una función de devolución de llamada de 
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

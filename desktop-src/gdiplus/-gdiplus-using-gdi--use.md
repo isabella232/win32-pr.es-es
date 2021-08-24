@@ -1,25 +1,25 @@
 ---
-description: 'En los temas siguientes se describe cómo usar la API GDI+ con el lenguaje de programación C++:'
+description: 'En los temas siguientes se describe cómo usar GDI+ API con el lenguaje de programación C++:'
 ms.assetid: 659881f3-ada3-4731-95b9-2ef7a8a445a9
-title: Usar GDI+
+title: Uso de GDI+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ecbf4b72d3d4519bafb035a0c9c3b20e55cd71c6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a9ff833fdfd5cc4a68df7ea78ce0246e3cd39395d4195152fbd32e9e8f9aaf37
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275373"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119778575"
 ---
-# <a name="using-gdi"></a>Usar GDI+
+# <a name="using-gdi"></a>Uso de GDI+
 
-En los temas siguientes se describe cómo usar la API GDI+ con el lenguaje de programación C++:
+En los temas siguientes se describe cómo usar GDI+ API con el lenguaje de programación C++:
 
 -   [Introducción](-gdiplus-getting-started-use.md)
 -   [Uso de un lápiz para dibujar líneas y formas](-gdiplus-using-a-pen-to-draw-lines-and-shapes-use.md)
 -   [Utilizar un pincel para rellenar formas](-gdiplus-using-a-brush-to-fill-shapes-use.md)
--   [Usar imágenes, mapas de bits y metaarchivos](-gdiplus-using-images-bitmaps-and-metafiles-use.md)
--   [Usar codificadores y descodificadores de imágenes](-gdiplus-using-image-encoders-and-decoders-use.md)
+-   [Uso de imágenes, mapas de bits y metarchivos](-gdiplus-using-images-bitmaps-and-metafiles-use.md)
+-   [Uso de codificadores y descodificadores de imágenes](-gdiplus-using-image-encoders-and-decoders-use.md)
 -   [Líneas y rellenos con mezcla alfa](-gdiplus-alpha-blending-lines-and-fills-use.md)
 -   [Usar texto y fuentes](-gdiplus-using-text-and-fonts-use.md)
 -   [Crear y dibujar curvas](-gdiplus-constructing-and-drawing-curves-use.md)

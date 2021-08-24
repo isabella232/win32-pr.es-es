@@ -1,7 +1,7 @@
 ---
 description: Crea un subproceso.
 ms.assetid: 40785522-dc6e-41af-8b27-9e8875a0dd84
-title: Método CMsgThread. CreateThread (Msgthrd. h)
+title: Método CMsgThread.CreateThread (Msgthrd.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8951995de18158fe4d1e5f84b1d98da701067ab6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3681716af79d0c47ae08371caa2d03d236b9748d98b08098d7a6834a93ed9b2b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119831875"
 ---
-# <a name="cmsgthreadcreatethread-method"></a>CMsgThread. CreateThread (método)
+# <a name="cmsgthreadcreatethread-method"></a>Método CMsgThread.CreateThread
 
 Crea un subproceso.
 
@@ -48,16 +48,16 @@ Devuelve uno de los valores siguientes.
 
 | Código devuelto                                                                              | Descripción                                     |
 |------------------------------------------------------------------------------------------|-------------------------------------------------|
-| <dl> <dt>TRUE * * * *</dt> </dl>  | El subproceso se ha creado correctamente.<br/>     |
-| <dl> <dt>FALSE * * * *</dt> </dl> | El subproceso no se creó correctamente.<br/> |
+| <dl> <dt>TRUE*"</dt> </dl>  | El subproceso se creó correctamente.<br/>     |
+| <dl> <dt>FALSE**</dt> </dl> | El subproceso no se creó correctamente.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El subproceso creará un bucle, se bloqueará hasta que una solicitud se pone en cola (a través de la función miembro [**CMsgThread::P utthreadmsg**](cmsgthread-putthreadmsg.md) ) y, a continuación, llama a la función miembro [**CMsgThread:: ThreadMessageProc**](cmsgthread-threadmessageproc.md) con cada mensaje.
+El subproceso se recorrerá en bucle, bloqueando hasta que se pone en cola una solicitud (a través de la función miembro [**CMsgThread::P utThreadMsg)**](cmsgthread-putthreadmsg.md) y, a continuación, llamando a la función miembro [**CMsgThread::ThreadMessageProc**](cmsgthread-threadmessageproc.md) con cada mensaje.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ El subproceso creará un bucle, se bloqueará hasta que una solicitud se pone en
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Msgthrd. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Msgthrd.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -74,7 +74,7 @@ El subproceso creará un bucle, se bloqueará hasta que una solicitud se pone en
 
 <dl> <dt>
 
-[**Clase CMsgThread**](cmsgthread.md)
+[**CMsgThread (clase)**](cmsgthread.md)
 </dt> </dl>
 
  

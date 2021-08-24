@@ -1,19 +1,19 @@
 ---
-description: Forma descriptiva de System. importance. Este valor no se ha diseñado para analizarse mediante programación.
+description: La forma fácil de usar de System.Importance. Este valor no está pensado para analizarse mediante programación.
 ms.assetid: 04bd4b6c-b850-4c55-bb8f-20bb45a7a5e5
-title: System. ImportanceText
+title: System.ImportanceText
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 20ebbda4196c76871124676cfe4d91ffb6a24d19
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8910428a04eac775ba84e748d152a9b500e659e886cba4004845b5c3ad66a732
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276589"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119716865"
 ---
-# <a name="systemimportancetext"></a>System. ImportanceText
+# <a name="systemimportancetext"></a>System.ImportanceText
 
-Forma descriptiva de [System. importance](./props-system-importance.md). Este valor no se ha diseñado para analizarse mediante programación.
+La forma fácil de usar [de System.Importance](./props-system-importance.md). Este valor no está pensado para analizarse mediante programación.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

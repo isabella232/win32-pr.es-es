@@ -1,7 +1,7 @@
 ---
 description: Define los tipos de red inalámbrica.
 ms.assetid: 03236db9-4f58-4fe3-82ff-d4b3a387490a
-title: Tipo simple de networkTypeType
+title: tipo simple networkTypeType
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: d0acb998c879e718a0e201418610bb0aa6db8c31
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 40184bb027f80826baa3ad56090755a2cd9ec630f9eb105e402d30a6ecf2661c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688324"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119800115"
 ---
-# <a name="networktypetype-simple-type"></a>Tipo simple de networkTypeType
+# <a name="networktypetype-simple-type"></a>tipo simple networkTypeType
 
 El tipo simple networkTypeType define los tipos de red inalámbrica. Hay dos tipos de redes: redes de infraestructura (ESS) y redes ad hoc (IBSS).
 
@@ -40,14 +40,14 @@ El tipo simple networkTypeType define los tipos de red inalámbrica. Hay dos tip
 
 ## <a name="enumeration-values"></a>Valores de enumeración
 
-El tipo simple **networkTypeType** define los siguientes valores.
+El **tipo simple networkTypeType** define los siguientes valores.
 
 
 
-| Value | Descripción |
+| Valor | Descripción |
 |-------|-------------|
 | IBSS  |             |
-| ESS   |             |
+| Ess   |             |
 
 
 
@@ -55,10 +55,10 @@ El tipo simple **networkTypeType** define los siguientes valores.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

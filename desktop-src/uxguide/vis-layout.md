@@ -4,12 +4,12 @@ description: El diseño es el tamaño, el espaciado y la ubicación del contenid
 ms.assetid: 39cd896f-d3cc-4768-a20c-a7f598da7136
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 8577843f3e54744cabe970e3b9132df1d9fb45df
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 2bd705346f979a44cc2a8c7917f81b9e918ce5277893b5a377ab1ede4b945bb6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119817357"
 ---
 # <a name="layout"></a>Layout
 
@@ -26,11 +26,11 @@ El diseño es el tamaño, el espaciado y la ubicación del contenido dentro de u
 
 Una ventana o página tiene una jerarquía visual clara cuando su apariencia indica la relación y la prioridad de sus elementos. Sin una jerarquía visual, los usuarios tendrían que averiguar estas relaciones y prioridades por sí mismos.
 
-La jerarquía visual se logra combinando con habilidad los atributos siguientes:
+La jerarquía visual se logra combinando con habilidad los siguientes atributos:
 
 -   **centro de atención.** El diseño indica dónde deben buscar primero los usuarios.
--   **Flujo.** El ojo fluye sin problemas y de forma natural mediante una ruta de acceso clara a través de la superficie, buscando elementos de la interfaz de usuario (UI) en el orden adecuado para su uso.
--   **Agrupación.** Los elementos de interfaz de usuario relacionados lógicamente tienen una relación visual clara. Los elementos relacionados se agrupan; los elementos no relacionados son independientes.
+-   **Flow.** El ojo fluye sin problemas y de forma natural mediante una ruta de acceso clara a través de la superficie, buscando elementos de la interfaz de usuario (UI) en el orden adecuado para su uso.
+-   **Agrupación.** Los elementos de interfaz de usuario relacionados lógicamente tienen una relación visual clara. Los elementos relacionados se agrupan juntos; los elementos no relacionados son independientes.
 -   **Énfasis.** Los elementos de la interfaz de usuario se resaltan en función de su importancia relativa.
 -   **Alineación.** Los elementos de la interfaz de usuario tienen una ubicación coordinada, por lo que son fáciles de examinar y aparecen de forma ordenada.
 
@@ -44,7 +44,7 @@ Además, el diseño efectivo tiene estos atributos:
 -   **Simplicidad visual.** La percepción de que un diseño no es más complicado de lo que debe ser. Los usuarios no se ven abrumados por la apariencia del diseño.
 -   **Coherencia.** Las ventanas o páginas similares usan un diseño similar, por lo que los usuarios siempre se sienten orientados.
 
-Aunque el tamaño, el espaciado y la colocación son conceptos sencillos, el desafío con el diseño es lograr la combinación correcta de estos atributos.
+Aunque el tamaño, el espaciado y la selección de ubicación son conceptos sencillos, el desafío del diseño es lograr la combinación adecuada de estos atributos.
 
 En Windows, el diseño se comunica mediante métricas independientes del dispositivo, como unidades de diálogo (D DLL) y píxeles relativos.
 
@@ -71,15 +71,15 @@ Puede tomar decisiones de diseño mediante este modelo de diseño para leer:
 
     Si hay texto en ejecución a lo largo del borde izquierdo de una página, los usuarios examinarán primero el borde izquierdo.
 
--   Cuando se usa software, los usuarios no están inmersos en la propia interfaz de usuario, sino en su trabajo. Por lo tanto, los usuarios normalmente no leen el texto de la interfaz de usuario que lo analizan. A continuación, leen los bits de texto de forma completa solo cuando creen que es necesario.
--   Los usuarios tienden a omitir los paneles de navegación en el lado izquierdo o derecho de una página. Los usuarios reconocen que están ahí, pero miran los paneles de navegación solo cuando desean navegar.
+-   Cuando se usa software, los usuarios no están inmersos en la propia interfaz de usuario, sino en su trabajo. Por lo tanto, los usuarios normalmente no leen el texto de la interfaz de usuario que lo analizan. A continuación, leen los bits de texto de forma completa solo cuando creen que lo necesitan.
+-   Los usuarios tienden a omitir los paneles de navegación a la izquierda o derecha de una página. Los usuarios reconocen que están ahí, pero miran los paneles de navegación solo cuando desean navegar.
 -   Los usuarios tienden a omitir grandes bloques de texto sin formato sin leerlos en absoluto.
 
     ![figura de texto con flechas que muestran el texto de examen ](images/vis-layout-image4.png)
 
     Los usuarios tienden a omitir grandes bloques de texto y paneles de navegación al examinar.
 
--   Todos los aspectos son iguales, los usuarios buscan primero en la esquina superior izquierda de una ventana, analizan la página y finalizan su examen en la esquina inferior derecha. Tienden a omitir la esquina inferior izquierda.
+-   Todas las cosas son iguales, los usuarios buscan primero en la esquina superior izquierda de una ventana, analizan la página y finalizan su examen en la esquina inferior derecha. Tienden a omitir la esquina inferior izquierda.
 
     ![figura de la página y flecha de arriba izquierda a derecha ](images/vis-layout-image5.png)
 
@@ -92,8 +92,8 @@ Puede tomar decisiones de diseño mediante este modelo de diseño para leer:
 Los usuarios se centran en los controles interactivos principales y en la instrucción principal destacada, y miran otras cosas solo cuando es necesario.
 
 -   Los usuarios tienden a leer etiquetas de control interactivas, especialmente aquellas que parecen relevantes para completar la tarea en cuestión. Por el contrario, los usuarios tienden a leer texto estático solo cuando creen que lo necesitan.
--   Los elementos que parecen diferentes llaman la atención. El texto en negrita y el texto grande se destaca del texto normal. Los elementos de la interfaz de usuario con color o sobre un fondo coloreado destacan. Los elementos con iconos se destacan de los elementos sin iconos.
--   Los usuarios no se desplazan a menos que tengan una razón para hacerlo. Si el contenido [sobre el plegado](glossary.md) no proporciona un motivo para desplazarse, no lo hace.
+-   Los elementos que parecen diferentes llaman la atención. El texto en negrita y el texto grande se destaca del texto normal. Los elementos de la interfaz de usuario con color o en un fondo coloreado destacan. Los elementos con iconos se destacan de los elementos sin iconos.
+-   Los usuarios no se desplazan a menos que tengan una razón para hacerlo. Si el contenido [sobre el plegado](glossary.md) no proporciona una razón para desplazarse, no lo hace.
 -   Una vez que los usuarios han decidido qué hacer, detienen inmediatamente el examen y lo hacen.
 -   Dado que los usuarios dejan de examinar cuando creen que han terminado, tienden a ignorar cualquier cosa más allá de lo que parece ser el punto de finalización.
 
@@ -115,7 +115,7 @@ Para diseñar para el examen:
     -   Controles interactivos encontrados en otro lugar
     -   Instrucción principal
     -   Explicaciones complementarias
-    -   Texto que aparece con un icono de advertencia
+    -   Texto presentado con un icono de advertencia
     -   Título de la ventana
     -   Otro texto estático en el cuerpo principal
     -   Notas al pie
@@ -131,7 +131,7 @@ Siempre que sea posible, trabaje con este modelo en lugar de hacerlo; pero habr�
 Para resaltar los elementos principales de la interfaz de usuario:
 
 -   Coloque los elementos principales de la interfaz de usuario en la [ruta de acceso de examen.](glossary.md)
--   Coloque cualquier interfaz de usuario para iniciar una tarea en la esquina superior izquierda o en el centro superior.
+-   Coloque cualquier interfaz de usuario para iniciar una tarea en la esquina superior izquierda o en la parte superior central.
 -   Coloque los botones de confirmación en la esquina inferior derecha.
 -   Coloque la interfaz de usuario principal restante en el centro.
 -   Use controles que atraigan la atención, como botones de comando, vínculos de comandos e iconos.
@@ -191,15 +191,15 @@ Elija tamaños de ventana que sean lo suficientemente grandes como para satisfac
 
 ### <a name="control-sizing"></a>Control del tamaño
 
-Normalmente, el primer paso para usar el espacio de pantalla de forma eficaz es determinar el tamaño correcto para los distintos elementos de la interfaz de usuario. Consulte la tabla [Control de tamaño,](#recommended-sizing-and-spacing) así como el tamaño recomendado en los artículos de instrucciones de control específicos.
+Normalmente, el primer paso para usar el espacio de pantalla de forma eficaz es determinar el tamaño adecuado para los distintos elementos de la interfaz de usuario. Consulte la tabla [Control de tamaño,](#recommended-sizing-and-spacing) así como el tamaño recomendado en los artículos de instrucciones de control específicos.
 
-La ley de Fitts indica que cuanto menor sea un destino, más tiempo se tarda en adquirirlo con el mouse. Además, en el caso de los equipos que usan tabletas Windows y tecnología táctil, el "mouse" podría ser realmente un lápiz o el dedo del usuario, por lo que debe considerar dispositivos de entrada alternativos al determinar los tamaños de los controles pequeños. **Un tamaño de control de 16 x 16 píxeles relativos es un buen tamaño mínimo para cualquier dispositivo de entrada.** Por el contrario, los botones estándar de control de número de píxeles relativos de 15 x 9 son demasiado pequeños para que los lápices los usen de forma eficaz.
+La ley de Fitts indica que cuanto menor sea un destino, más tiempo se tarda en adquirirlo con el mouse. Además, en el caso de los equipos que usan Tecnología táctil y Tablet PC de Windows, el "mouse" podría ser realmente un lápiz o el dedo del usuario, por lo que debe tener en cuenta dispositivos de entrada alternativos al determinar los tamaños de los controles pequeños. **Un tamaño de control de 16 x 16 píxeles relativos es un buen tamaño mínimo para cualquier dispositivo de entrada.** Por el contrario, los botones estándar de control de número de píxeles relativos de 15 x 9 son demasiado pequeños para que los lápices los usen de forma eficaz.
 
 ### <a name="spacing"></a>Espaciado
 
 Proporcionar un espacio amplio (pero no excesivo) hace que el diseño se sienta más cómodo y fácil de analizar. El espacio efectivo no es un espacio sin usar, desempeña un papel importante en la mejora de la capacidad de examen de los usuarios y también agrega al atractivo visual del diseño. Para obtener instrucciones, consulte la [tabla Espaciado](#recommended-sizing-and-spacing).
 
-En el caso de los equipos que usan tabletas Windows y tecnología táctil, de nuevo el "mouse" podría ser realmente un lápiz o el dedo del usuario. La orientación es más difícil cuando se usa un lápiz o un dedo como dispositivo que apunta, lo que da lugar a que los usuarios toque fuera del destino previsto. Cuando los controles interactivos se colocan muy cerca, pero no se tocan realmente, los usuarios pueden hacer clic en el espacio inactivo entre los controles. Dado que hacer clic en el espacio inactivo no tiene ningún resultado o comentarios visuales, los usuarios a menudo no saben lo que salió mal. Si los controles pequeños están demasiado espaciados, el usuario debe pulsar con precisión para evitar pulsar el objeto incorrecto. **Para solucionar estos problemas, las regiones de destino de los controles interactivos deben tocar o tener al menos 3 D DLL (5 píxeles relativos) de espacio entre ellos.**
+En el caso de Tecnología táctil y Tablet PC de Windows, de nuevo el "mouse" podría ser realmente un lápiz o el dedo del usuario. La orientación es más difícil cuando se usa un lápiz o un dedo como dispositivo que apunta, lo que da lugar a que los usuarios toque fuera del destino previsto. Cuando los controles interactivos se colocan muy cerca, pero no se tocan realmente, los usuarios pueden hacer clic en el espacio inactivo entre los controles. Dado que hacer clic en el espacio inactivo no tiene ningún resultado o comentarios visuales, los usuarios a menudo no saben lo que salió mal. Si los controles pequeños están demasiado espaciados, el usuario debe pulsar con precisión para evitar pulsar el objeto incorrecto. **Para solucionar estos problemas, las regiones de destino de los controles interactivos deben tocar o tener al menos 3 D DLL (5 píxeles relativos) de espacio entre ellas.**
 
 Sabe que un diseño tiene un espaciado correcto cuando:
 
@@ -210,7 +210,7 @@ Sabe que un diseño tiene un espaciado correcto cuando:
 
 ### <a name="resizable-windows"></a>Ventanas de tamaño ajustable
 
-Las ventanas de tamaño ajustable también son un factor para usar el espacio de pantalla de forma eficaz. Algunas ventanas constan de contenido fijo y no se benefician de la redimensionable, pero las ventanas con contenido de tamaño ajustable deben ser ajustables. Por supuesto, el motivo por el que los usuarios cambian el tamaño de una ventana es avanzar en el espacio de pantalla adicional, por lo que el contenido debe expandirse en consecuencia al proporcionar más espacio a los elementos de la interfaz de usuario que lo necesitan. Las ventanas con contenido dinámico, documentos, imágenes, listas y árboles son las que más se benefician de las ventanas de tamaño ajustable.
+Las ventanas de tamaño ajustable también son un factor para usar el espacio de pantalla de forma eficaz. Algunas ventanas constan de contenido fijo y no se benefician de ser de tamaño ajustable, pero las ventanas con contenido de tamaño ajustable deben ser de tamaño ajustable. Por supuesto, el motivo por el que los usuarios cambian el tamaño de una ventana es avanzar en el espacio de pantalla adicional, por lo que el contenido debe expandirse en consecuencia al proporcionar más espacio a los elementos de la interfaz de usuario que lo necesitan. Windows con contenido dinámico, documentos, imágenes, listas y árboles se benefician al máximo de las ventanas de tamaño ajustable.
 
 ![captura de pantalla del control de cambio de tamaño al obtener la barra de desplazamiento ](images/vis-layout-image12.png)
 
@@ -226,7 +226,7 @@ El texto se vuelve difícil de leer a medida que aumenta la longitud de la líne
 
 En este ejemplo, la longitud larga del texto dificulta la lectura.
 
-Por último, las ventanas que se pueden cambiar de tamaño también necesitan usar el espacio de pantalla de forma eficaz cuando se reducen, ya que reducen el tamaño del contenido y quitan espacio de los elementos de la interfaz de usuario que pueden funcionar de forma eficaz sin él. En algún momento, la ventana o sus elementos de interfaz de usuario se vuelven demasiado pequeños para poder usarse, por lo que se les debe asignar un tamaño mínimo o algunos elementos se deben quitar por completo.
+Por último, las ventanas que se pueden cambiar de tamaño también deben usar el espacio de pantalla de forma eficaz cuando se reducen, ya que reducen el tamaño del contenido y quitan espacio de los elementos de la interfaz de usuario que pueden funcionar de forma eficaz sin él. En algún momento, la ventana o sus elementos de interfaz de usuario se vuelven demasiado pequeños para poderse usar, por lo que se les debe asignar un tamaño mínimo o algunos elementos deben quitarse por completo.
 
 ![captura de pantalla de la ventana con cinta de opciones alta e intrusiva ](images/vis-layout-image14.png)
 
@@ -234,7 +234,7 @@ Por último, las ventanas que se pueden cambiar de tamaño también necesitan us
 
 En este ejemplo, el panel tiene un tamaño mínimo.
 
-Algunos programas se benefician de usar una presentación completamente diferente para que el contenido se puede usar en tamaños más pequeños.
+Algunos programas se benefician del uso de una presentación completamente diferente para que el contenido se puede usar en tamaños más pequeños.
 
 ![captura de pantalla de los botones del reproductor multimedia centrado ](images/vis-layout-image16.png)
 
@@ -242,19 +242,19 @@ En este ejemplo, Reproductor de Windows Media cambia su formato cuando la ventan
 
 ### <a name="focus"></a>Foco
 
-Un diseño tiene el foco cuando hay un lugar obvio en el que mirar primero. El foco es importante para mostrar a los usuarios dónde empezar a examinar la ventana o página. Sin un foco claro, el ojo del usuario se despedará sin objetivo. El punto focal debe ser algo importante que los usuarios necesitan encontrar y comprender rápidamente, y debe tener el mayor énfasis visual. La esquina superior izquierda es el punto focal natural para la mayoría de las ventanas.
+Un diseño tiene el foco cuando hay un lugar obvio donde buscar primero. El foco es importante para mostrar a los usuarios dónde empezar a examinar la ventana o página. Sin el foco claro, el ojo del usuario se desenfocan sin objetivo. El punto focal debe ser algo importante que los usuarios necesitan encontrar y comprender rápidamente, y deben tener el mayor énfasis visual. La esquina superior izquierda es el punto focal natural para la mayoría de las ventanas.
 
 Solo debe haber un punto focal. Al igual que en la vida real, el ojo puede centrarse solo en una cosa a la vez, los usuarios no pueden centrarse en varios lugares simultáneamente.
 
-Para convertir un elemento de interfaz de usuario en el punto focal, puede darle énfasis visual mediante:
+Para convertir un elemento de la interfaz de usuario en el punto focal, puede darle énfasis visual:
 
 -   Colocarlo en la parte superior izquierda o superior central de la superficie.
 -   Uso de controles interactivos que son importantes y fáciles de comprender.
 -   Usar texto destacado, como una instrucción principal.
 -   Dar a los controles la selección predeterminada y el foco de entrada inicial.
--   Colocar los controles en un fondo de color diferente.
+-   Colocación de los controles en un fondo de color diferente.
 
-Considere Windows Search. El punto focal para Windows Search debe ser el cuadro de búsqueda porque es el punto inicial de la tarea. Sin embargo, se encuentra en la esquina superior derecha para ser coherente con la ubicación estándar del cuadro de búsqueda. El cuadro de búsqueda tiene el foco de entrada, pero dada su ubicación en la ruta de acceso del examen, esa pista por sí sola no es suficiente.
+Considere la Windows Search. El punto focal para Windows search debe ser el cuadro de búsqueda porque es el punto inicial de la tarea. Sin embargo, se encuentra en la esquina superior derecha para ser coherente con la ubicación estándar del cuadro de búsqueda. El cuadro de búsqueda tiene el foco de entrada, pero dada su ubicación en la ruta de acceso del examen, esa pista por sí sola no es suficiente.
 
 Para solucionar este problema, hay instrucciones destacadas en la parte superior central de la ventana para dirigir a los usuarios a la ubicación correcta.
 
@@ -262,7 +262,7 @@ Para solucionar este problema, hay instrucciones destacadas en la parte superior
 
 ![captura de pantalla del cuadro de diálogo de búsqueda con texto útil ](images/vis-layout-image17.png)
 
-En este ejemplo, una instrucción destacada en la parte superior central de la ventana dirige a los usuarios al cuadro buscar.
+En este ejemplo, una instrucción destacada en la parte superior central de la ventana dirige a los usuarios al cuadro De búsqueda.
 
 Sin las instrucciones, la ventana no tendría un punto focal obvio.
 
@@ -272,7 +272,7 @@ Sin las instrucciones, la ventana no tendría un punto focal obvio.
 
 Este ejemplo no tiene ningún punto focal obvio. Los usuarios no saben dónde buscar.
 
-Si da énfasis visual a un elemento de la interfaz de usuario, asegúrese de que la atención está garantizada. En el ejemplo Windows Search incorrecto anterior, el botón Todo resaltado está en la esquina superior izquierda y tiene el énfasis más visual, pero no es el punto focal previsto. Los usuarios pueden quedarse atascados viendo este botón intentando averiguar qué hacer con él.
+Si da énfasis visual a un elemento de la interfaz de usuario, asegúrese de que la atención está garantizada. En el ejemplo Windows search incorrecto anterior, el botón Todo resaltado está en la esquina superior izquierda y tiene el énfasis más visual, pero no es el punto focal previsto. Los usuarios pueden quedarse atascados viendo este botón intentando averiguar qué hacer con él.
 
 **Incorrecto:**
 
@@ -282,7 +282,7 @@ Sin la instrucción destacada como punto focal, el botón Todo resaltado es un p
 
 ### <a name="flow"></a>Flujo
 
-Un diseño tiene flujo cuando los usuarios se guían de forma fluida y natural por una ruta de acceso clara a través de su superficie, buscando elementos de la interfaz de usuario en el orden adecuado para su uso. Una vez que los usuarios identifican el punto focal, deben determinar cómo completar la tarea. La ubicación de los elementos de la interfaz de usuario transmite su relación y debe reflejar los pasos para realizar la tarea. Normalmente, esto significa que los pasos de la tarea deben fluir de forma natural en un orden de izquierda a derecha, de arriba a abajo (en las culturas occidental).
+Un diseño tiene flujo cuando los usuarios se guían sin problemas y de forma natural por una ruta de acceso clara a través de su superficie, buscando elementos de interfaz de usuario en el orden adecuado para su uso. Una vez que los usuarios identifican el punto focal, deben determinar cómo completar la tarea. La colocación de los elementos de la interfaz de usuario transmite su relación y debe reflejar los pasos para realizar la tarea. Normalmente, esto significa que los pasos de la tarea deben fluir de forma natural en orden de izquierda a derecha, de arriba a abajo (en las culturas occidental).
 
 Sabe que un diseño tiene un buen flujo cuando:
 
@@ -291,7 +291,7 @@ Sabe que un diseño tiene un buen flujo cuando:
 -   Los elementos de la interfaz de usuario que completan una tarea se encuentran en la esquina inferior derecha.
 -   Los elementos de interfaz de usuario relacionados están juntos; los elementos no relacionados son independientes.
 -   Los pasos necesarios están en el flujo principal.
--   Los pasos opcionales están fuera del flujo principal, posiblemente desacentados mediante un fondo adecuado o una divulgación progresiva.
+-   Los pasos opcionales están fuera del flujo principal, posiblemente desacentrados mediante un fondo adecuado o una divulgación progresiva.
 -   Los elementos usados con frecuencia aparecen antes que los elementos usados con poca frecuencia en la ruta de acceso del examen.
 -   Los usuarios siempre saben qué hacer a continuación. No hay saltos o saltos inesperados en el flujo de tareas.
 
@@ -299,7 +299,7 @@ Sabe que un diseño tiene un buen flujo cuando:
 
 ![captura de pantalla del diseño confuso del cuadro de diálogo ](images/vis-layout-image20.png)
 
-En este ejemplo, los usuarios no saben qué hacer a continuación. Hay saltos y saltos inesperados en el flujo de tareas.
+En este ejemplo, los usuarios no saben qué hacer a continuación. Hay saltos e interrupciones inesperados en el flujo de tareas.
 
 **Correcto:**
 
@@ -307,13 +307,13 @@ En este ejemplo, los usuarios no saben qué hacer a continuación. Hay saltos y 
 
 En este ejemplo, la presentación de los elementos de la interfaz de usuario refleja los pasos para realizar la tarea.
 
-### <a name="grouping"></a>Agrupar
+### <a name="grouping"></a>Agrupación
 
-Un diseño tiene agrupación cuando los elementos de la interfaz de usuario relacionados lógicamente tienen una relación visual clara. Los grupos son importantes porque es más fácil que los usuarios comprendan y se centren en un grupo de elementos relacionados que los elementos individualmente. Los grupos hacen que un diseño parezca más sencillo y fácil de analizar.
+Un diseño tiene agrupación cuando los elementos de la interfaz de usuario relacionados lógicamente tienen una relación visual clara. Los grupos son importantes porque es más fácil para los usuarios comprender y centrarse en un grupo de elementos relacionados que en los elementos individualmente. Los grupos hacen que un diseño parezca más sencillo y fácil de analizar.
 
-Puede mostrar la agrupación de las maneras siguientes (con una mayor peso):
+Puede mostrar la agrupación de las maneras siguientes (en una mayor cantidad de peso):
 
--   **Diseño.** Puede agrupar los controles relacionados entre sí y colocar espaciado adicional entre controles no relacionados.
+-   **Diseño.** Puede agrupar controles relacionados entre sí y colocar espaciado adicional entre controles no relacionados.
 
     ![ilustración de cuatro iconos que muestran cuatro grupos de tareas ](images/vis-layout-image22.png)
 
@@ -323,7 +323,7 @@ Puede mostrar la agrupación de las maneras siguientes (con una mayor peso):
 
     ![captura de pantalla de tres iconos y tres separadores ](images/vis-layout-image23.png)
 
-    En este ejemplo, los separadores etiquetados se usan para mostrar las relaciones de control.
+    En este ejemplo, se usan separadores etiquetados para mostrar relaciones de control.
 
 -   **Agregadores.** Un agregador es un gráfico que crea una relación visual entre controles fuertemente relacionados.
 
@@ -341,11 +341,11 @@ Puede mostrar la agrupación de las maneras siguientes (con una mayor peso):
 
     ![captura de pantalla del lado izquierdo del panel de control ](images/vis-layout-image26.png)
 
-    En este ejemplo, el panel de tareas del panel de control se usa para agrupar tareas relacionadas y elementos del panel de control.
+    En este ejemplo, el panel de tareas del panel de control se usa para agrupar las tareas relacionadas y los elementos del panel de control.
 
-    Para evitar el desorden visual, la agrupación más ligera que hace bien el trabajo es la mejor opción. Para obtener más información, [vea Cuadros de grupo](ctrl-group-boxes.md), [pestañas,](ctrl-tabs.md) [separadores y fondos.](vis-graphic.md)
+    Para evitar el desorden visual, la agrupación más ligera que realiza bien el trabajo es la mejor opción. Para obtener más información, [vea Cuadros de grupo](ctrl-group-boxes.md), [Pestañas,](ctrl-tabs.md) [Separadores y Fondos.](vis-graphic.md)
 
-Independientemente del estilo de agrupación, puede usar la sangría para mostrar la relación de los controles dentro de un grupo. Los controles que son pares entre sí deben estar alineados a la izquierda y los controles dependientes tienen una sangría de 12 D DLL o 18 píxeles relativos.
+Independientemente del estilo de agrupación, puede usar la sangría para mostrar la relación de los controles dentro de un grupo. Los controles que están emparejados entre sí deben estar alineados a la izquierda y los controles dependientes tienen sangría de 12 D DLL o 18 píxeles relativos.
 
 ![captura de pantalla de tres niveles de controles con sangría ](images/vis-layout-image27.png)
 
@@ -353,40 +353,40 @@ Los controles dependientes tienen una sangría de 12 DLUS o 18 píxeles relativo
 
 Sabe que un diseño tiene una buena agrupación cuando:
 
--   La ventana o páginas tiene como máximo 7 grupos.
+-   La ventana o las páginas tienen como máximo 7 grupos.
 -   El propósito de cada grupo es obvio.
 -   La relación de los controles dentro de cada grupo es obvia, especialmente la dependencia de control.
 -   La agrupación simplifica el contenido en lugar de hacerlo más complejo.
 
 ### <a name="alignment"></a>Alignment
 
-La alineación es la colocación coordinada de los elementos de la interfaz de usuario. La alineación es importante porque facilita el examen del contenido y afecta a la percepción de la complejidad visual de los usuarios.
+La alineación es la ubicación coordinada de los elementos de la interfaz de usuario. La alineación es importante porque facilita el examen del contenido y afecta a la percepción de la complejidad visual de los usuarios.
 
 Hay varios objetivos que se deben tener en cuenta al determinar la alineación:
 
--   **Facilidad en el examen horizontal.** Los usuarios pueden leer horizontalmente y buscar elementos relacionados uno al lado del otro, sin ningún hueco complicado.
--   **Facilidad en el examen vertical.** Los usuarios pueden examinar columnas de elementos relacionados y encontrar inmediatamente lo que buscan, con un movimiento de los ojos horizontal mínimo.
+-   **Facilidad en el examen horizontal.** Los usuarios pueden leer horizontalmente y buscar elementos relacionados unos junto a otros, sin espacios difíciles.
+-   **Facilidad en el examen vertical.** Los usuarios pueden examinar columnas de elementos relacionados y encontrar inmediatamente lo que buscan, con un movimiento horizontal mínimo de los ojos.
 -   **Complejidad visual mínima.** Los usuarios perciben que un diseño es visualmente complejo si tiene líneas de cuadrícula de alineación vertical innecesarias.
 
 ### <a name="horizontal-alignment"></a>Alineación horizontal
 
 **Alineación izquierda**
 
-Debido al orden de lectura de izquierda a derecha, la alineación izquierda funciona bien para la mayoría del contenido. La alineación izquierda facilita el examen vertical de los datos en columnas.
+Debido al orden de lectura de izquierda a derecha, la alineación izquierda funciona bien para la mayoría del contenido. La alineación izquierda facilita el análisis vertical de los datos en columnas.
 
 **Alineación derecha**
 
-La alineación derecha es la mejor opción para los datos numéricos, especialmente [las columnas de datos numéricos.](ctrl-text-boxes.md) La alineación derecha también funciona bien para [los botones de](glossary.md) confirmación, así como para los controles alineados con el borde de la ventana derecha.
+La alineación derecha es la mejor opción para los datos numéricos, especialmente [las columnas de datos numéricos](ctrl-text-boxes.md). La alineación derecha también funciona bien para [los botones de](glossary.md) confirmación, así como para los controles alineados con el borde derecho de la ventana.
 
 ![captura de pantalla del botón de flecha abajo de búsqueda avanzada ](images/vis-layout-image28.png)
 
-En este ejemplo, el control de divulgación progresiva de búsqueda avanzada está alineado correctamente porque se coloca en el borde de la ventana derecha.
+En este ejemplo, el control de divulgación progresiva de búsqueda avanzada está alineado a la derecha porque se coloca en el borde de la ventana derecha.
 
 **Alineación del centro**
 
-La alineación central se reserva mejor para situaciones en las que la alineación izquierda o derecha no es adecuada o parece desequilibrada.
+La alineación del centro se reserva mejor para situaciones en las que la alineación izquierda o derecha no es adecuada o parece desequilibrada.
 
-![captura de pantalla de los controles del reproductor multimedia centrado ](images/vis-layout-image29.png)
+![captura de pantalla de los controles del reproductor multimedia centrados ](images/vis-layout-image29.png)
 
 En este ejemplo, el control del reproductor multimedia se centra para proporcionar una apariencia equilibrada.
 
@@ -410,58 +410,58 @@ Al alinear verticalmente los controles con texto, alinee las líneas base de tex
 
 **Correcto:**
 
-![captura de pantalla de botón y texto de etiqueta alineado ](images/vis-layout-image31.png)
+![captura de pantalla de texto de botón y etiqueta alineado ](images/vis-layout-image31.png)
 
 **Incorrecto:**
 
-![captura de pantalla del botón y texto de etiqueta no alineado ](images/vis-layout-image32.png)
+![captura de pantalla de texto de botón y etiqueta no alineado ](images/vis-layout-image32.png)
 
 En el ejemplo correcto, el control y su etiqueta se alinean verticalmente por sus líneas base de texto.
 
 Sabe que un diseño tiene una buena alineación cuando:
 
 -   Es fácil examinar horizontal y verticalmente.
--   Tiene una apariencia visual simple.
+-   Tiene una apariencia visual sencilla.
 
 ### <a name="label-alignment"></a>Alineación de etiquetas
 
 Las reglas generales de alineación se aplican a las etiquetas de control, pero es un problema común merecedor de atención específica. La alineación de etiquetas tiene estos objetivos:
 
--   Facilitar el examen vertical para encontrar el control correcto.
+-   Facilidad en el examen vertical para encontrar el control correcto.
 -   Facilitar el examen horizontal para asociar etiquetas a sus controles.
--   Facilidad de localización, control de etiquetas que difieren en longitud entre idiomas.
--   Funciona bien con una combinación de diferentes longitudes de etiqueta.
+-   Facilidad en la localización, control de etiquetas que difieren en longitud entre idiomas.
+-   Funciona bien con una mezcla de diferentes longitudes de etiqueta.
 -   Hace un uso eficaz del espacio disponible y evita el texto truncado.
 
-El objetivo general es reducir la cantidad de movimiento de los ojos necesario para encontrar lo que es probable que busquen los usuarios, pero la naturaleza de los controles y lo que buscan los usuarios depende del contexto.
+El objetivo general es reducir la cantidad de movimiento de los ojos necesario para encontrar lo que los usuarios probablemente buscan, pero la naturaleza de los controles y lo que buscan los usuarios depende del contexto.
 
-Hay cuatro estilos comunes de colocación y alineación de etiquetas, cada uno con sus ventajas:
+Hay cuatro estilos comunes de alineación y colocación de etiquetas, cada uno con sus ventajas:
 
 -   Etiquetas justificadas a la izquierda sobre los controles
 -   Etiquetas justificadas a la izquierda a la izquierda de los controles
--   Etiquetas justificadas a la izquierda de los controles, controles desiguales a la izquierda
+-   Etiquetas justificadas a la izquierda a la izquierda de los controles, controles desiguales a la izquierda
 -   Etiquetas justificadas a la derecha a la izquierda de los controles
 
 **Etiquetas justificadas a la izquierda sobre los controles**
 
-Este estilo es el más fácil de localizar porque el diseño no depende de la longitud de las etiquetas, pero ocupa el espacio más vertical.
+Este estilo es el más fácil de encontrar porque el diseño no depende de la longitud de las etiquetas, pero ocupa el mayor espacio vertical.
 
-![lista con dos columnas de etiquetas por encima de los controles ](images/vis-layout-image33.png)
+![lista con dos columnas de etiquetas encima de los controles ](images/vis-layout-image33.png)
 
-Este estilo toma el espacio más vertical, pero es más fácil de encontrar. Es una mejor opción para etiquetar principalmente controles interactivos.
+Este estilo toma el mayor espacio vertical, pero es más fácil de encontrar. Es una mejor opción para etiquetar principalmente controles interactivos.
 
 Se usa mejor cuando:
 
 -   Los controles que se etiquetan son interactivos (no solo texto).
 -   La interfaz de usuario se localizará. Este estilo a menudo ofrece espacio para duplicar o incluso triplicar la longitud de la etiqueta.
 -   La interfaz de usuario usa una tecnología de diseño fijo (como Win32).
--   Hay diez controles o menos. Con más controles, las etiquetas son difíciles de examinar.
+-   Hay diez o menos controles. Con más controles, las etiquetas son difíciles de examinar.
 -   Hay suficiente espacio vertical para alojar las etiquetas.
 -   El diseño debe ser de forma libre, no solo columnas.
 
 **Etiquetas justificadas a la izquierda a la izquierda de los controles**
 
-Este estilo es el más fácil de examinar verticalmente y también funciona bien cuando las etiquetas difieren mucho en longitud, pero es más difícil asociar la etiqueta a su control. Este estilo puede usar etiquetas de varias líneas si es necesario.
+Este estilo es el más fácil de examinar verticalmente y también funciona bien cuando las etiquetas difieren en gran medida, pero es más difícil asociar la etiqueta a su control. Este estilo puede usar etiquetas de varias líneas si es necesario.
 
 ![lista con cuatro columnas de etiquetas a la izquierda de los controles ](images/vis-layout-image34.png)
 
@@ -476,9 +476,9 @@ Se usa mejor cuando:
 -   Hay muchos controles, como con formularios.
 -   Hay pocas columnas. Visualmente, las etiquetas y los controles aparecen como dos columnas individuales.
 
-**Etiquetas justificadas a la izquierda de los controles, controles desiguales a la izquierda**
+**Etiquetas justificadas a la izquierda a la izquierda de los controles, controles desiguales a la izquierda**
 
-Este estilo facilita el examen de las etiquetas verticalmente y las etiquetas y controles horizontalmente, y es muy eficiente en el espacio. pero es más difícil examinar los controles verticalmente. Los controles se justifican a la derecha para aprovechar al máximo el espacio disponible.
+Este estilo facilita el examen vertical de las etiquetas y las etiquetas y los controles horizontalmente, y es muy eficiente en el espacio. pero es más difícil examinar los controles verticalmente. Los controles se justifican a la derecha para aprovechar al máximo el espacio disponible.
 
 ![lista de dos columnas de etiquetas con controles desiguales ](images/vis-layout-image35.png)
 
@@ -486,12 +486,12 @@ Este estilo es compacto y fácil de leer, pero es difícil examinar los controle
 
 Se usa mejor cuando:
 
--   La interfaz de usuario usa una tecnología de diseño variable (por ejemplo, Windows Presentation Foundation).
+-   La interfaz de usuario usa una tecnología de diseño variable (como Windows Presentation Foundation).
 -   Es probable que los usuarios analicen verticalmente para buscar etiquetas específicas.
 -   Es probable que los usuarios lean las etiquetas y los controles de izquierda a derecha, de arriba a abajo.
 -   Es probable que los usuarios no analicen los controles verticalmente.
--   El texto del control varía de longitud y probablemente se truncaría si se usara otro estilo.
--   Los controles son de solo lectura, como cuadros de texto de solo lectura. Para otros controles, esta alineación tendrá un aspecto poco sencillo. Sin embargo, los controles pueden ser editables al hacer clic.
+-   El texto del control varía en longitud y probablemente se truncaría si se usara otro estilo.
+-   Los controles son de solo lectura, como cuadros de texto de solo lectura. Para otros controles, esta alineación tendrá un aspecto desalineado. Sin embargo, los controles pueden modificarse al hacer clic.
 -   Hay muchas columnas, pero pocos controles en una columna.
 
 **Etiquetas justificadas a la derecha a la izquierda de los controles**
@@ -508,7 +508,7 @@ Se usa mejor cuando:
 -   Es probable que los usuarios no analicen verticalmente para buscar etiquetas específicas, posiblemente porque:
     -   Hay pocos controles.
     -   Las etiquetas son conocidas.
-    -   Los controles son principalmente autoexplicativos y rara vez están en blanco (posiblemente con valores predeterminados para evitar controles en blanco).
+    -   Los controles son principalmente explicativos y rara vez están en blanco (posiblemente tengan valores predeterminados para evitar controles en blanco).
 -   Hay suficiente espacio horizontal para alojar las etiquetas.
 -   Las etiquetas no varían significativamente de longitud.
 -   Hay muchas columnas. Visualmente, las etiquetas y los controles aparecen como una sola columna.
@@ -516,7 +516,7 @@ Se usa mejor cuando:
 Sin embargo, antes de adoptar cualquiera de estos estilos, tenga en cuenta dos factores más:
 
 -   Prefiere un estilo que pueda usar de forma coherente en todo el programa.
--   Las etiquetas que se justifican a la izquierda o los controles situados a la izquierda de los controles son los estilos más comunes, por lo que se les debe dar preferencia.
+-   Las etiquetas justificadas a la izquierda de los controles anteriores a la izquierda de los controles son los estilos más comunes, por lo que se les debe dar preferencia.
 
 ### <a name="balance"></a>Saldo
 
@@ -525,14 +525,14 @@ Una ventana o página tiene un equilibrio cuando su contenido aparece distribuid
 El problema de equilibrio más común es tener demasiado contenido en el lado izquierdo de una ventana o página. Puede crear el equilibrio de las maneras siguientes:
 
 -   Usar márgenes más grandes en el lado izquierdo que en la derecha.
--   Colocación de elementos de interfaz de usuario usados para completar una tarea a la derecha.
+-   Colocación de elementos de la interfaz de usuario usados para completar una tarea a la derecha.
 -   Colocación de elementos de interfaz de usuario usados en toda la tarea en el centro.
 -   Longitud de controles de varias líneas o de tamaño variable.
 -   Usar la alineación del centro estratégicamente.
 
 ![captura de pantalla de la impresora a la izquierda y texto a la derecha ](images/vis-layout-image37.png)
 
-Este diseño de página del asistente bien equilibrado muestra un margen izquierdo mayor que el derecho para mejorar el equilibrio.
+Este diseño de página del asistente equilibrado muestra un margen izquierdo mayor que el derecho para mejorar el equilibrio.
 
 Si estas técnicas no logran el equilibrio, considere la posibilidad de reducir el ancho de la ventana o página para que coincida mejor con su contenido.
 
@@ -556,7 +556,7 @@ Las líneas de cuadrícula innecesarias crean complejidad visual.
 
 Sabe que un diseño usa cuadrículas de forma eficaz cuando:
 
--   Windows o las páginas con contenido o función similares tienen un diseño similar.
+-   Windows o páginas con contenido o función similares tienen un diseño similar.
 -   Los elementos de diseño repetidos aparecen en ubicaciones similares en ventanas y páginas.
 -   No hay líneas de cuadrícula de alineación verticales y horizontales innecesarias.
 
@@ -566,8 +566,8 @@ La simplicidad visual es la percepción de que un diseño no es más complicado 
 
 Sabe que un diseño tiene simplicidad visual cuando:
 
--   Elimina las capas innecesarias de chrome de la ventana.
--   Presenta el contenido usando como máximo siete grupos fácilmente identificables.
+-   Elimina las capas innecesarias de chrome de ventana.
+-   Presenta el contenido mediante como máximo siete grupos fácilmente identificables.
 -   Usa agrupaciones ligeras, como diseño y separadores en lugar de cuadros de grupo.
 -   Usa controles ligeros, como vínculos en lugar de botones de comando para comandos secundarios, y listas desplegables en lugar de listas para las opciones.
 -   Reduce el número de líneas de cuadrícula de alineación vertical y horizontal.
@@ -577,55 +577,55 @@ Sabe que un diseño tiene simplicidad visual cuando:
 -   Tamaños adecuados de las ventanas y los controles para eliminar el desplazamiento innecesario.
 -   Usa una sola fuente con un pequeño número de tamaños y colores de texto.
 
-Como regla general, si se puede eliminar un elemento de diseño sin dañar la eficacia de la interfaz de usuario, probablemente debería serlo.
+Como regla general, si un elemento de diseño se puede eliminar sin dañar la eficacia de la interfaz de usuario, probablemente debería serlo.
 
 ## <a name="guidelines"></a>Directrices
 
 ### <a name="screen-resolution-and-dpi"></a>Resolución de pantalla y ppp
 
--   **Admite la resolución efectiva mínima de Windows de 800 x 600 píxeles.** En el caso de las URI críticas que deben funcionar en modo seguro, admite una resolución efectiva de 640 x 480 píxeles. Asegúrese de tener en cuenta el espacio utilizado por la barra de tareas reservando 48 píxeles [relativos](glossary.md) verticales para las ventanas mostradas con la barra de tareas.
--   **Optimice los diseños de ventana de tamaño ajustable para una resolución efectiva de 1024 x 768 píxeles.** Cambie automáticamente el tamaño de estas ventanas para obtener resoluciones de pantalla inferiores de forma que todavía sea funcional.
--   **Asegúrese de probar las ventanas en los modos de 96 puntos por pulgada (ppp) (a 800 x 600 píxeles), 120 ppp (a 1024 x 768 píxeles) y 144 ppp (a 1200 x 900 píxeles).** Compruebe si hay problemas de diseño, como el recorte de controles, texto y ventanas, y la extensión de iconos y mapas de bits.
+-   **Admite la resolución Windows una resolución efectiva de 800 x 600 píxeles.** En el caso de las URI críticas que deben funcionar en modo seguro, admite una resolución efectiva de 640 x 480 píxeles. Asegúrese de tener en cuenta el espacio utilizado por la barra de tareas reservando 48 píxeles relativos [verticales](glossary.md) para las ventanas mostradas con la barra de tareas.
+-   **Optimice los diseños de ventana de tamaño ajustable para una resolución efectiva de 1024 x 768 píxeles.** Cambie automáticamente el tamaño de estas ventanas para resoluciones de pantalla inferiores de forma que todavía sea funcional.
+-   **Asegúrese de probar las ventanas en modos de 96 puntos por pulgada (ppp) (a 800 x 600 píxeles), 120 ppp (a 1024 x 768 píxeles) y 144 ppp (a 1200 x 900 píxeles).** Compruebe si hay problemas de diseño, como el recorte de controles, texto y ventanas, y la extensión de iconos y mapas de bits.
 -   **Para los programas con escenarios de uso táctil y móvil, optimice para 120 ppp.** Actualmente, las pantallas de valores altos de ppp son frecuentes en equipos táctiles y móviles.
 
 ### <a name="window-size"></a>Tamaño de la ventana
 
 -   **Elija un tamaño de ventana predeterminado adecuado para su contenido.** No tenga miedo de usar tamaños de ventana iniciales mayores si puede usar el espacio de forma eficaz.
 -   **Use una relación de aspecto de alto a ancho equilibrada.** Se prefiere una relación de aspecto entre 3:5 y 5:3, aunque se puede usar una relación de aspecto de 1:3 para los cuadros de diálogo de mensaje (como errores y advertencias).
--   **Use ventanas de tamaño ajustable siempre que sea práctico para evitar barras de desplazamiento y datos truncados.** Las ventanas con contenido dinámico, documentos, imágenes, listas y árboles son las que más se benefician de las ventanas de tamaño ajustable.
--   **En el caso de los documentos de texto,** considere la posibilidad de una longitud de línea máxima de 80 caracteres para facilitar la lectura del texto. (Los caracteres incluyen letras, signos de puntuación y espacios).
+-   **Use ventanas de tamaño ajustable siempre que sea práctico para evitar barras de desplazamiento y datos truncados.** Windows con contenido dinámico, documentos, imágenes, listas y árboles se benefician al máximo de las ventanas de tamaño ajustable.
+-   En el caso de los documentos de texto, considere una **longitud de línea máxima de 80 caracteres** para facilitar la lectura del texto. (Los caracteres incluyen letras, signos de puntuación y espacios).
 -   Ventanas de tamaño fijo:
-    -   **Las ventanas de tamaño fijo deben ser totalmente visibles y ajustarse al área de trabajo.**
+    -   **Las ventanas de tamaño fijo deben estar completamente visibles y ajustarse para ajustarse al área de trabajo.**
 -   Ventanas de tamaño ajustable:
-    -   **Las ventanas que se pueden cambiar de tamaño se pueden optimizar para resoluciones más altas, pero se puede cambiar el tamaño según sea necesario en tiempo de presentación a la resolución de pantalla real.**
-    -   **Los tamaños de ventana cada vez más grandes deben mostrar más información progresivamente.** Asegúrese de que al menos una parte o control de la ventana tiene contenido que se puede tamaño.
-    -   **Mantenga el origen superior izquierdo del contenido fijo a medida que se cambia el tamaño de la ventana.** No mueva el origen para equilibrar el contenido a medida que cambia el tamaño de la ventana.
-    -   **Establezca un tamaño de contenido máximo si el contenido puede estar demasiado extendido demasiado ancho.** Si el contenido se vuelve difícil de manejar, no cambie el tamaño del área de contenido más allá de su ancho máximo ni cambie el origen del contenido a medida que la ventana cambia de tamaño. En su lugar, mantenga un ancho máximo y un origen fijo superior izquierdo.
-    -   **Establezca un tamaño mínimo de ventana si hay un tamaño por debajo del cual el contenido ya no se puede utilizar.** Para los controles que se pueden cambiar de tamaño, establezca los tamaños mínimos de elementos que se pueden cambiar de tamaño en sus tamaños funcionales más pequeños, como los anchos de columna funcionales mínimos en las vistas de lista. Los elementos opcionales de la interfaz de usuario se deben quitar completamente.
+    -   **Las ventanas que se pueden cambiar de tamaño se pueden optimizar para resoluciones más altas, pero se puede cambiar el tamaño según sea necesario en el momento de la presentación a la resolución de pantalla real.**
+    -   **Los tamaños de ventana progresivamente mayores deben mostrar más información progresivamente.** Asegúrese de que al menos una parte o control de la ventana tiene contenido que se puede tamaño.
+    -   **Mantenga el origen superior izquierdo del contenido fijo a medida que se cambia el tamaño de la ventana.** No mueva el origen para equilibrar el contenido a medida que cambie el tamaño de la ventana.
+    -   **Establezca un tamaño de contenido máximo si el contenido puede estar demasiado extendido.** Si el contenido se vuelve difícil de manejar, no cambie el tamaño del área de contenido más allá de su ancho máximo ni cambie el origen del contenido a medida que se cambie el tamaño de la ventana. En su lugar, mantenga un ancho máximo y un origen fijo superior izquierdo.
+    -   **Establezca un tamaño mínimo de ventana si hay un tamaño por debajo del cual el contenido ya no se puede utilizar.** En el caso de los controles que se pueden cambiar de tamaño, establezca los tamaños mínimos de los elementos que se pueden cambiar de tamaño en sus tamaños funcionales más pequeños, como el ancho mínimo de columna funcional en las vistas de lista. Los elementos opcionales de la interfaz de usuario deben quitarse completamente.
     -   **Considere la posibilidad de modificar la presentación para que el contenido se pueda usar en tamaños más pequeños.**
 
         ![captura de pantalla de los controles del reproductor multimedia ](images/vis-layout-image16.png)
 
         En este ejemplo, Reproductor de Windows Media cambia su formato cuando la ventana se vuelve demasiado pequeña para el formato estándar.
 
-### <a name="control-size"></a>Tamaño del control
+### <a name="control-size"></a>Control de tamaño
 
--   **Haga que todos los controles interactivos se hagan al menos 16 x 16 píxeles relativos.** Esto funciona bien para todos los dispositivos de entrada, incluida la tableta Windows y la tecnología táctil.
--   **Controles de tamaño para evitar datos truncados.** No truncar los datos que se deben leer para realizar una tarea. Columnas de vista de lista de tamaño para evitar datos truncados.
--   **Controles de tamaño para eliminar el desplazamiento innecesario.** Si lo hace, haga que los controles sea ligeramente más grandes, se elimina una barra de desplazamiento. Debe haber pocas barras de desplazamiento verticales y ninguna barra de desplazamiento horizontal innecesaria.
+-   **Haga que todos los controles interactivos se realicen con un mínimo relativo de 16 x 16 píxeles.** Esto funciona bien para todos los dispositivos de entrada, incluidos Tecnología táctil y Tablet PC de Windows.
+-   **Controles de tamaño para evitar datos truncados.** No trunca los datos que se deben leer para realizar una tarea. Columnas de vista de lista de tamaño para evitar datos truncados.
+-   **Controles de tamaño para eliminar el desplazamiento innecesario.** Haga controles ligeramente más grandes si al hacerlo se elimina una barra de desplazamiento. Debe haber pocas barras de desplazamiento verticales y ninguna barra de desplazamiento horizontal innecesaria.
 
-    ![captura de pantalla de tamaño de lista para evitar una barra de desplazamiento ](images/vis-layout-image40.png)
+    ![captura de pantalla del tamaño de la lista para evitar una barra de desplazamiento ](images/vis-layout-image40.png)
 
     En este ejemplo, el tamaño de la lista desplegable es para eliminar la barra de desplazamiento.
 
--   **Reduzca el número de tamaños de control en una superficie.** Prefiere usar los [tamaños de control recomendados estándar](#recommended-sizing-and-spacing) y, cuando sea necesario, use algunos controles de tamaño constante más grandes o más pequeños. Intente usar un ancho único para los cuadros de lista y las vistas de árbol, y no más de tres anchos para los botones de comando y las listas desplegables. Sin embargo, los anchos de cuadro de texto y cuadro combinado deben sugerir la longitud de la entrada más larga o esperada.
+-   **Reducir el número de tamaños de control en una superficie.** Prefiere usar los [tamaños de control recomendados estándar](#recommended-sizing-and-spacing) y, cuando sea necesario, use algunos controles de tamaño constante más grandes o más pequeños. Intente usar un ancho único para los cuadros de lista y las vistas de árbol, y no más de tres anchos para los botones de comando y las listas desplegables. Sin embargo, los anchos de cuadro de texto y cuadro combinado deben sugerir la longitud de la entrada más larga o esperada.
 
     ![captura de pantalla del cuadro de diálogo con listas y botones ](images/vis-layout-image41.png)
 
     En este ejemplo, se usa un cuadro de lista y un tamaño de botón de comando de forma coherente.
 
--   **Para los controles que tienen un tamaño en función de su texto, incluya un 30 % adicional (hasta un 200 % para texto más corto) para cualquier texto que se va a localizar.** En esta guía se da por supuesto que el diseño está diseñado con texto en inglés. Tenga en cuenta también que esta directriz hace referencia al texto localizado, no a los números.
--   **Extienda los controles de texto estático, las casillas y los botones de radio al ancho máximo que cabe en el diseño.** De este modo, se evita el truncamiento del texto de longitud variable y la localización.
+-   **Para los controles que tienen un tamaño basado en su texto, incluya un 30 % adicional (hasta un 200 % para texto más corto) para cualquier texto que se localizará.** En esta guía se da por supuesto que el diseño está diseñado con texto en inglés. Tenga en cuenta también que esta guía hace referencia al texto localizado, no a los números.
+-   **Extienda los controles de texto estático, las casillas y los botones de radio al ancho máximo que cabe en el diseño.** Al hacerlo, se evita el truncamiento del texto de longitud variable y la localización.
 
     **Incorrecto:**
 
@@ -635,7 +635,7 @@ Como regla general, si se puede eliminar un elemento de diseño sin dañar la ef
 
 ### <a name="control-spacing"></a>Espaciado de control
 
--   **Si los controles no se tocan, tenga al menos 3 ARCHIVOS DLL (5 píxeles relativos) de espacio entre ellos.** De lo contrario, los usuarios pueden hacer clic en el espacio inactivo entre los controles. Dado que hacer clic en el espacio inactivo no tiene ningún resultado o comentarios visuales, los usuarios a menudo no saben lo que salió mal.
+-   **Si los controles no se tocan, tenga al menos 3 D DLL (5 píxeles relativos) de espacio entre ellos.** De lo contrario, los usuarios pueden hacer clic en el espacio inactivo entre los controles. Puesto que hacer clic en el espacio inactivo no tiene ningún resultado o comentarios visuales, los usuarios a menudo no están seguros de lo que salió mal.
 
 ### <a name="placement"></a>Selección de ubicación
 
@@ -645,22 +645,22 @@ Como regla general, si se puede eliminar un elemento de diseño sin dañar la ef
 -   **Coloque los elementos de la interfaz de usuario relacionados juntos y separe los elementos no relacionados.**
 -   **Coloque los pasos necesarios en el flujo principal.**
 -   **Coloque pasos opcionales fuera del flujo principal,** posiblemente desacentados mediante un fondo adecuado o una divulgación progresiva.
--   **Coloque los elementos usados con frecuencia antes de los** elementos usados con poca frecuencia en la ruta de acceso del examen.
+-   **Coloque los elementos usados con frecuencia antes que los elementos** usados con poca frecuencia en la ruta de acceso del examen.
 
 ### <a name="focus"></a>Foco
 
--   **Elija un único elemento de interfaz de usuario que los usuarios deben mirar primero para ser el punto focal.** El punto focal debe ser algo importante que los usuarios necesitan encontrar y comprender rápidamente.
+-   **Elija un único elemento de la interfaz de usuario que los usuarios deben mirar primero para ser el punto focal.** El punto focal debe ser algo importante que los usuarios necesitan encontrar y comprender rápidamente.
 -   **Coloque el punto focal en la esquina superior izquierda o en el centro superior.**
 -   **Dé al punto focal el mayor énfasis visual,** como texto destacado, selección predeterminada o foco de entrada inicial.
 
 ### <a name="alignment"></a>Alignment
 
 -   Normalmente, use la alineación izquierda.
--   Use la alineación correcta para los datos numéricos, especialmente las columnas de datos numéricos.
--   Use la alineación derecha para los botones de confirmación, así como los controles alineados con el borde de la ventana derecha.
--   Use la alineación central cuando la alineación izquierda o derecha sea inapropiada o parezca desequilibrada.
+-   Use la alineación derecha para los datos numéricos, especialmente las columnas de datos numéricos.
+-   Use la alineación derecha para los botones de confirmación, así como los controles alineados con el borde derecho de la ventana.
+-   Use la alineación del centro cuando la alineación izquierda o derecha sea inapropiada o parezca desequilibrada.
 -   Al alinear verticalmente los controles con texto, alinee las líneas base de texto para proporcionar un flujo de lectura horizontal suave.
--   Para la alineación de etiquetas, consulte la sección [Alineación de etiquetas](#label-alignment) en Conceptos de diseño.
+-   Para la alineación de etiquetas, consulte la [sección Alineación de etiquetas](#label-alignment) en Conceptos de diseño.
 
 ### <a name="accessibility"></a>Accesibilidad
 
@@ -679,7 +679,7 @@ Como regla general, si se puede eliminar un elemento de diseño sin dañar la ef
 
     En este caso, el cuadro de texto se coloca después de la etiqueta de casilla.
 
--   **Haga que la agrupación sea accesible.** Los grupos definidos por paneles de ventana, cuadros de grupo, separadores, etiquetas de texto y agregadores se controlan automáticamente mediante las ayuda de accesibilidad. Sin embargo, los grupos definidos solo por ubicación y fondos no lo son y deben definirse mediante programación para la accesibilidad.
+-   **Haga que la agrupación sea accesible.** Los grupos definidos por paneles de ventana, cuadros de grupo, separadores, etiquetas de texto y agregadores se controlan automáticamente mediante las ayuda de accesibilidad. Sin embargo, los grupos definidos solo por la selección de ubicación y los fondos no lo son y deben definirse mediante programación para la accesibilidad.
 
 Para obtener más instrucciones, vea [Accesibilidad.](inter-accessibility.md)
 
@@ -687,7 +687,7 @@ Para obtener más instrucciones, vea [Accesibilidad.](inter-accessibility.md)
 
 **Control del tamaño**
 
-En la tabla siguiente se enumeran los tamaños recomendados (ancho x alto o alto si es un número único) para los elementos comunes de la interfaz de usuario (para 9 pt. Segoe UI 96 ppp). Los anchos basados en el elemento más largo en inglés agregan un 30 por ciento para la localización (hasta un 200 por ciento para texto más corto) para cualquier texto (pero no números) que se localizará.
+En la tabla siguiente se enumeran los tamaños recomendados (ancho x alto o alto si es un único número) para los elementos comunes de la interfaz de usuario (para 9 pt. Segoe UI 96 ppp). Los anchos basados en el elemento más largo en inglés agregan un 30 por ciento para la localización (hasta un 200 por ciento para texto más corto) para cualquier texto (pero no números) que se localizará.
 
 
 
@@ -703,7 +703,7 @@ En la tabla siguiente se enumeran los tamaños recomendados (ancho x alto o alto
 | ![captura de pantalla de una barra de progreso ](images/vis-layout-image52.png)<br/>                     | Barras de progreso<br/>   | 107 o 237 x 8<br/>                                                                         | 160 o 355 x 15<br/>                                                                                 |
 | ![captura de pantalla de botones de radio ](images/vis-layout-image53.png)<br/>                      | Botones de radio<br/>   | 10<br/>                                                                                     | 17<br/>                                                                                              |
 | ![captura de pantalla del control deslizante ](images/vis-layout-image54.png)<br/>                     | Controles deslizantes<br/>         | 15<br/>                                                                                     | 24<br/>                                                                                              |
-| ![captura de pantalla de texto: "seleccionar zona horaria" ](images/vis-layout-image55.png)<br/>           | Texto (estático)<br/>   | 8<br/>                                                                                      | 13<br/>                                                                                              |
+| ![captura de pantalla de texto: "select time zone" ](images/vis-layout-image55.png)<br/>           | Texto (estático)<br/>   | 8<br/>                                                                                      | 13<br/>                                                                                              |
 | ![captura de pantalla del cuadro de texto vacío ](images/vis-layout-image56.png)<br/>                     | Cuadros de texto<br/>      | ancho de entrada más larga o esperada + 30 % x 14 (una línea) + 10 para cada línea adicional<br/> | ancho de datos válidos más largos + 30 % x 23 píxeles relativos (una línea) + 16 para cada línea adicional<br/> |
 | ![captura de pantalla de carpetas anidadas en el Explorador de Windows ](images/vis-layout-image57.png)<br/> | Vistas de árbol<br/>      | ancho del elemento más largo + 30 % x un número entero de elementos (5 elementos como mínimo)<br/>            |                                                                                                            |
 
@@ -713,7 +713,7 @@ En la tabla siguiente se enumeran los tamaños recomendados (ancho x alto o alto
 
 **Espaciado**
 
-En la tabla siguiente se muestra el espaciado recomendado entre los elementos comunes de la interfaz de usuario (para 9 puntos. Segoe UI 96 ppp).
+En la tabla siguiente se muestra el espaciado recomendado entre elementos comunes de la interfaz de usuario (para 9 pt. Segoe UI 96 ppp).
 
 
 
@@ -725,7 +725,7 @@ En la tabla siguiente se muestra el espaciado recomendado entre los elementos co
 | ![Imagen que muestra el espaciado entre controles no relacionados ](images/vis_layout_image61.jpeg)<br/>   | Entre controles no relacionados<br/>                                                                 | 7<br/>                                                                              | 11<br/>                                                                             |
 | ![Imagen que muestra el espaciado del primer control en un grupo ](images/vis_layout_image62.jpeg)<br/>  | Primer control en un cuadro de grupo<br/>                                                               | 11 hacia abajo desde la parte superior del cuadro de grupo; alinear verticalmente con el título del cuadro de grupo<br/> | 16 hacia abajo desde la parte superior del cuadro de grupo; alinear verticalmente con el título del cuadro de grupo<br/> |
 | ![Aa511279.between-related(en-us,MSDN.10).jpg](images/vis_layout_image60.jpeg)<br/>         | Entre controles de un cuadro de grupo<br/>                                                            | 4<br/>                                                                              | 7<br/>                                                                              |
-| ![Imagen que muestra el espaciado entre botones ](images/vis_layout_image63.jpeg)<br/>              | Entre botones organizados horizontal o verticalmente<br/>                                        | 4<br/>                                                                              | 7<br/>                                                                              |
+| ![Imagen que muestra el espaciado entre botones ](images/vis_layout_image63.jpeg)<br/>              | Botones organizados horizontal o verticalmente<br/>                                        | 4<br/>                                                                              | 7<br/>                                                                              |
 | ![Imagen que muestra el espaciado del último control de un grupo ](images/vis_layout_image64.jpeg)<br/>   | Último control en un cuadro de grupo<br/>                                                                | 7 encima de la parte inferior del cuadro de grupo<br/>                                            | 11 encima de la parte inferior del cuadro de grupo<br/>                                           |
 | ![Imagen que muestra el espaciado desde el borde izquierdo del cuadro de grupo ](images/vis_layout_image65.jpeg)<br/>  | Desde el borde izquierdo de un cuadro de grupo<br/>                                                          | 6<br/>                                                                              | 9<br/>                                                                              |
 | ![Imagen que muestra el espaciado de la etiqueta de texto junto al control ](images/vis_layout_image66.jpeg)<br/> | Etiqueta de texto junto a un control<br/>                                                                | 3 hacia abajo desde la parte superior del control<br/>                                             | 5 hacia abajo desde la parte superior del control<br/>                                             |

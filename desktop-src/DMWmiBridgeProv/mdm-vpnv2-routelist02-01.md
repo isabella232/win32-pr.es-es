@@ -1,9 +1,9 @@
 ---
-title: MDM_VPNv2_RouteList02_01 (clase)
-description: La \_ clase VPNv2 \_ RouteList02 \_ 01 de MDM contiene una lista opcional de rutas que se van a agregar a la tabla de enrutamiento para la interfaz VPN.
+title: MDM_VPNv2_RouteList02_01 clase
+description: La clase MDM \_ VPNv2 \_ RouteList02 01 contiene una lista opcional de rutas que se agregarán a la tabla de enrutamiento de \_ la interfaz VPN.
 ms.assetid: 4271b0c4-9d29-4148-b956-ac9306316c9b
 keywords:
-- MDM_VPNv2_RouteList02_01 (clase)
+- MDM_VPNv2_RouteList02_01 clase
 - MDM_VPNv2_RouteList02_01 clase, descrita
 topic_type:
 - apiref
@@ -17,24 +17,24 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ebc274bb3efd2bc78850dd37c95b25db35c4cbe
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 14ea9725d70d3acfe4e6831d1d386aedecfd9374728b103d50b67aa15cb61ec9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079591"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119750275"
 ---
-# <a name="mdm_vpnv2_routelist02_01-class"></a>\_Clase VPNv2 \_ RouteList02 \_ 01 de MDM
+# <a name="mdm_vpnv2_routelist02_01-class"></a>Clase \_ MDM VPNv2 \_ RouteList02 \_ 01
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-La **clase \_ VPNv2 \_ RouteList02 \_ 01 de MDM** contiene una lista opcional de rutas que se van a agregar a la tabla de enrutamiento para la interfaz VPN.
+La **clase MDM \_ VPNv2 \_ RouteList02 \_ 01** contiene una lista opcional de rutas que se agregarán a la tabla de enrutamiento de la interfaz VPN.
 
-Esto es necesario para el caso de túnel dividido en el que el sitio del servidor VPN tiene más subredes que la subred predeterminada en función de la dirección IP asignada a la interfaz.
+Esto es necesario para el caso de tunelización dividida en el que el sitio del servidor VPN tiene más subredes que la subred predeterminada en función de la dirección IP asignada a la interfaz.
 
-Cada equipo que ejecuta TCP/IP realiza decisiones de enrutamiento. Estas decisiones están controladas por la tabla de enrutamiento IP. Al agregar valores en este nodo se actualiza la tabla de enrutamiento con rutas para la interfaz VPN post Connection. Los valores de este nodo representan el prefijo de destino de las rutas IP. Un prefijo de destino consta de un prefijo de dirección IP y una longitud de prefijo.
+Cada equipo que ejecuta TCP/IP realiza decisiones de enrutamiento. Estas decisiones están controladas por la tabla de enrutamiento IP. Al agregar valores en este nodo, se actualiza la tabla de enrutamiento con rutas para la conexión posterior a la interfaz VPN. Los valores de este nodo representan el prefijo de destino de las rutas IP. Un prefijo de destino consta de un prefijo de dirección IP y una longitud de prefijo.
 
-Agregar una ruta aquí permite que la pila de red identifique el tráfico que necesita para pasar por la interfaz VPN para la VPN de túnel dividido. Algunos servidores VPN pueden configurar esto durante la negociación de la conexión y no necesitan esta información en el perfil de VPN. Consulte con el administrador del servidor VPN para determinar si necesita esta información en el perfil de VPN.
+La adición de una ruta aquí permite a la pila de redes identificar el tráfico que debe pasar a través de la interfaz VPN para la VPN de túnel dividido. Algunos servidores VPN pueden configurar esto durante la negociación de conexión y no necesitan esta información en el perfil de VPN. Póngase en contacto con el administrador del servidor VPN para determinar si necesita esta información en el perfil de VPN.
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -53,13 +53,13 @@ class MDM_VPNv2_RouteList02_01
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ VPNv2 \_ RouteList02 \_ 01 de MDM** tiene estos tipos de miembros:
+La **clase \_ MDM VPNv2 \_ RouteList02 \_ 01** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ VPNv2 \_ RouteList02 \_ 01 de MDM** tiene estas propiedades.
+La **clase \_ MDM VPNv2 \_ RouteList02 \_ 01** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -69,7 +69,7 @@ La **clase \_ VPNv2 \_ RouteList02 \_ 01 de MDM** tiene estas propiedades.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -83,7 +83,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Identifica el nombre del nodo primario.
@@ -99,7 +99,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/VPNv2/*ProfileName*/RouteList"
@@ -112,7 +112,7 @@ Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> </dl>
@@ -123,10 +123,10 @@ Tipo de acceso: lectura/escritura
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                      |
-| Espacio de nombres<br/>                | Dmmap de MDM raíz de \\ cimv2 \\ \\<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ cimv2 \\ mdm \\ dmmap<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 
@@ -135,7 +135,7 @@ Tipo de acceso: lectura/escritura
 
 <dl> <dt>
 
-[Usar scripting de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso de scripting de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

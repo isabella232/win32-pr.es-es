@@ -1,48 +1,48 @@
 ---
-title: Trasladar los planos de recorte
-description: OpenGL implementa los planos de recorte de forma similar a IRIS GL. Además, en OpenGL puede consultar los planos de recorte. En la tabla siguiente se enumeran las funciones de plano de recorte del IRIS GL y sus funciones de OpenGL equivalentes.
+title: Porte de planos de recorte
+description: OpenGL implementa planos de recorte de forma similar a IRIS GL. Además, en OpenGL puede consultar planos de recorte. En la tabla siguiente se enumeran las funciones del plano de recorte de IRIS GL y sus funciones OpenGL equivalentes.
 ms.assetid: bfca59c3-b7ef-4545-8b8d-022ea782569b
 keywords:
-- Migración de GL de IRIS, planos de recorte
-- portabilidad de IRIS GL, planos de recorte
-- portabilidad a OpenGL desde IRIS GL, planos de recorte
-- Exportación de OpenGL desde IRIS GL, planos de recorte
+- Porte de IRIS GL, planos de recorte
+- porte desde IRIS GL, planos de recorte
+- porte a OpenGL desde IRIS GL, planos de recorte
+- Porte de OpenGL desde IRIS GL, planos de recorte
 - planos de recorte
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d3b531b39daf6670a3a99d9a4cbcf55158ea2d4f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f314b7c6453de3b0933970b7d520a8c161d6eef4a9bb98ea891c73665fba4933
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103779117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119777125"
 ---
-# <a name="porting-clipping-planes"></a>Trasladar los planos de recorte
+# <a name="porting-clipping-planes"></a>Porte de planos de recorte
 
-OpenGL implementa los planos de recorte de forma similar a IRIS GL. Además, en OpenGL puede consultar los planos de recorte. En la tabla siguiente se enumeran las funciones de plano de recorte del IRIS GL y sus funciones de OpenGL equivalentes.
+OpenGL implementa planos de recorte de forma similar a IRIS GL. Además, en OpenGL puede consultar planos de recorte. En la tabla siguiente se enumeran las funciones del plano de recorte de IRIS GL y sus funciones OpenGL equivalentes.
 
 
 
-| Función de GL de IRIS                          | Función OpenGL                                                                               | Significado                                  |
+| Función GL de IRIS                          | Función OpenGL                                                                               | Significado                                  |
 |-------------------------------------------|-----------------------------------------------------------------------------------------------|------------------------------------------|
-| **clipplane** (i, **CP \_ on**, params)     | [**glEnable**](glenable.md) (plano de clip de contabilidad \_ \_ )                                             | Habilita el recorte en el plano i.             |
-| **clipplane**(i, **\_ definición de CP**, plano) | [**glClipPlane**](glclipplane.md) ( \_ \_ plano de clip de contabilidad general, plano)                                | Define el plano de recorte.                  |
+| **clipplane** (i, **CP \_ ON,** params)     | [**glEnable**](glenable.md) ( GL \_ CLIP \_ PLANEi )                                             | Habilita el recorte en el plano i.             |
+| **clipplane**( i, **CP \_ DEFINE**, plane ) | [**glClipPlane**](glclipplane.md) (GL \_ CLIP \_ PLANEi, plane )                                | Define el plano de recorte.                  |
 |                                           | [**glGetClipPlane**](glgetclipplane.md)                                                      | Devuelve la ecuación del plano de recorte.         |
-|                                           | [**glIsEnabled**](glisenabled.md) (plano de clip de contabilidad \_ \_ )                                       | Devuelve true si está habilitado el plano de recortes. |
-| **scrmask**                               | [**glScissor**](glscissor.md)                                                                | Define el cuadro de tijeras.                 |
-| **getscrmask**                            | [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) ( \_ cuadro de tijeras de contabilidad \_ ) | Devuelve el rectángulo de tijeras actual.         |
+|                                           | [**glIsEnabled**](glisenabled.md) ( GL \_ CLIP \_ PLANEi )                                       | Devuelve true si el plano de recorte i está habilitado. |
+| **scrmask**                               | [**glScissor**](glscissor.md)                                                                | Define el cuadro de verificación.                 |
+| **getscrmask**                            | [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) ( GL \_ DESERTE \_ DE LA CAJA ) | Devuelve el cuadro actual de la torción.         |
 
 
 
- 
+ 
 
-Para activar la prueba de tijeras, llame a **glEnable** con \_ el cuadro con tijeras de GL \_ como parámetro.
+Para activar la prueba de la estorba, llame **a glEnable** mediante GL \_ \_ LODO BOX como parámetro.
 
 ??
 
- 
+ 
 
- 
+ 
 
 
 

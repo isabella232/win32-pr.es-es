@@ -1,21 +1,21 @@
 ---
-description: Enumeraciones de la API de impresión XPS
+description: Enumeraciones de API de impresión XPS
 ms.assetid: 1cb26594-6a15-4f36-b83a-f1c4418619d3
-title: Enumeraciones de la API de impresión XPS
+title: Enumeraciones de API de impresión XPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28c141f1f5d0ec6f452e2119e1d41691b6126f46
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 473204be02ed8b59669562ea5db65fa3bffe2a1fa7676183764fe2c9a69fad65
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082425"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119718285"
 ---
-# <a name="xps-print-api-enumerations"></a>Enumeraciones de la API de impresión XPS
+# <a name="xps-print-api-enumerations"></a>Enumeraciones de API de impresión XPS
 
-\[Las enumeraciones descritas en esta sección están desusadas. En su lugar, las aplicaciones cliente deben usar la [API Print Document Package](./tailored-app-printing-api.md) .\]
+\[Las enumeraciones descritas en esta sección están en desuso. En su lugar, las aplicaciones cliente [deben usar print document package API.](./tailored-app-printing-api.md)\]
 
-\[**XPS \_ No se admite la \_ finalización del trabajo** y puede modificarse o no estar disponible en el futuro. \]
+\[**XPS \_ JOB \_ COMPLETION** no se admite y puede modificarse o no estar disponible en el futuro. \]
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -23,7 +23,7 @@ ms.locfileid: "104082425"
 
 | Enumeración                                                   | Descripción                                                |
 |---------------------------------------------------------------|------------------------------------------------------------|
-| [**\_finalización del trabajo de XPS \_**](/windows/win32/api/xpsprint/ne-xpsprint-xps_job_completion)<br/> | Indica el estado de finalización de un trabajo de impresión.<br/> |
+| [**FINALIZACIÓN DEL \_ TRABAJO XPS \_**](/windows/win32/api/xpsprint/ne-xpsprint-xps_job_completion)<br/> | Indica el estado de finalización de un trabajo de impresión.<br/> |
 
 
 

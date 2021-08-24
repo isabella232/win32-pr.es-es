@@ -1,11 +1,11 @@
 ---
-title: atributo MS-KDS-UseStartTime
-description: Hora a partir de la cual se puede usar esta clave raíz.
+title: Atributo ms-Kds-UseStartTime
+description: La hora después de la cual se puede usar esta clave raíz.
 ms.assetid: ef6e1f4b-1c2c-4473-bce3-2d54a80b0493
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-KDS-UseStartTime
-- msKds-UseStartTime atributo AD Schema
+- ms-Kds-UseStartTime attribute AD Schema
+- Esquema de AD del atributo msKds-UseStartTime
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3bbcd67b21370dc41d244505ad15ee0a2f5f563a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 0d06ea535a264d9efa97374080743fed8c2d9c0c140d760bb16d673a2837931d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906009"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119762735"
 ---
-# <a name="ms-kds-usestarttime-attribute"></a>atributo MS-KDS-UseStartTime
+# <a name="ms-kds-usestarttime-attribute"></a>Atributo ms-Kds-UseStartTime
 
-Hora a partir de la cual se puede usar esta clave raíz.
+La hora después de la cual se puede usar esta clave raíz.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | MS-KDS-UseStartTime                  |
-| Nombre para mostrar de LDAP | msKds-UseStartTime                   |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-Kds-UseStartTime                  |
+| Ldap-Display-Name | msKds-UseStartTime                   |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2178              |
-| System-ID-GUID    | 6cdc047f-f522-b74a-9a9c-d95ac8cdfda2 |
-| Sintaxis            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | 6cdc047f-f522-b74a-9a9c-d95ac8cdfda2 |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 
@@ -50,18 +50,18 @@ Hora a partir de la cual se puede usar esta clave raíz.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                            |
+| Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | False                                                         |
-| Tiene un único valor       | True                                                          |
-| Está indexado             | False                                                         |
-| En el catálogo global      | False                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                  |
+| System-Only            | Falso                                                         |
+| Es de un solo valor       | Verdadero                                                          |
+| Está indexado             | Falso                                                         |
+| En el catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000280                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Clases usadas en        | [**MS-KDS-Prov-RootKey**](c-mskds-provrootkey.md)<br/> |
+| Clases usadas en        | [**ms-Kds-Prov-RootKey**](c-mskds-provrootkey.md)<br/> |
 
 
 

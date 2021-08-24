@@ -4,12 +4,12 @@ ms.assetid: 16f67edc-ca8a-4c2e-9d9b-be8600446e51
 title: System.ItemFolderPathDisplay
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c12909b29790ea2c016154cea9fccf7c53e45630
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: e8fd2288f12073fe8e36707bf49aca2bc5e000d0bbe25d95fba0736b4e77af44
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112403938"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119822345"
 ---
 # <a name="systemitemfolderpathdisplay"></a>System.ItemFolderPathDisplay
 
@@ -31,11 +31,11 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los valores PKEY se definen en Propkey.h.
 
-Si [System.ItemPathDisplay es](./props-system-itempathdisplay.md) VT \_ EMPTY, esta propiedad también debe estar vacía. De lo contrario, el origen de datos debe derivarlo correctamente de System.ItemPathDisplay.
+Si [System.ItemPathDisplay es](./props-system-itempathdisplay.md) VT \_ EMPTY, esta propiedad también debe estar vacía. De lo contrario, el origen de datos de System.ItemPathDisplay debe derivarlo correctamente.
 
 Valores de ejemplo:
 

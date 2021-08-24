@@ -4,12 +4,12 @@ ms.assetid: ce79131c-0abc-4b18-834b-5c94103fd3dc
 title: System.Contact.BusinessAddress2Locality
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ad039d9916d09bc46fd13ff95de6369d8619069
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: fc17c8e5a58fcefb42973e9fd34550c1beeee0adc262f6a5f392e4adc612d253
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108104813"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119717885"
 ---
 # <a name="systemcontactbusinessaddress2locality"></a>System.Contact.BusinessAddress2Locality
 

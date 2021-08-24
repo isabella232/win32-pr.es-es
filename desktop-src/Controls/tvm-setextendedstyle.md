@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TVM_SETEXTENDEDSTYLE (commctrl. h)
-description: Informa al control de vista de árbol para establecer los estilos extendidos. Envíe este mensaje o use la macro TreeView \_ SetExtendedStyle.
+title: TVM_SETEXTENDEDSTYLE mensaje (Commctrl.h)
+description: Informa al control de vista de árbol para establecer estilos extendidos. Envíe este mensaje o use la macro TreeView \_ SetExtendedStyle.
 ms.assetid: 35cb6ac8-1c1e-4ecd-88b2-878d3f6ccaa5
 keywords:
-- TVM_SETEXTENDEDSTYLE controles de mensajes de Windows
+- TVM_SETEXTENDEDSTYLE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c450f72f85e40514c35f08284428feec4f7caf9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d13d99a2f7a27475c30867f007f45d7525118d3077ebdce235c6bd33e1f8aafe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119750965"
 ---
-# <a name="tvm_setextendedstyle-message"></a>\_Mensaje de SETEXTENDEDSTYLE TVM
+# <a name="tvm_setextendedstyle-message"></a>Mensaje \_ DE TVM SETEXTENDEDSTYLE
 
-Informa al control de vista de árbol para establecer los estilos extendidos. Envíe este mensaje o use la macro [**TreeView \_ SetExtendedStyle**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_setextendedstyle).
+Informa al control de vista de árbol para establecer estilos extendidos. Envíe este mensaje o use la macro [**TreeView \_ SetExtendedStyle**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_setextendedstyle).
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,24 +32,24 @@ Informa al control de vista de árbol para establecer los estilos extendidos. En
 *wParam* 
 </dt> <dd>
 
-Máscara que se usa para seleccionar los estilos que se van a establecer.
+Máscara usada para seleccionar los estilos que se establecerán.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Valor que indica el estilo extendido. Para obtener más información sobre los estilos, vea los [estilos extendidos del control de vista de árbol](tree-view-control-window-extended-styles.md).
+Valor que indica el estilo extendido. Para obtener más información sobre los estilos, vea [Estilos extendidos del control De vista de árbol.](tree-view-control-window-extended-styles.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este mensaje se realiza correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este mensaje se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los estilos extendidos para un control de vista de árbol no tienen nada que ver con los estilos extendidos que se usan con la función [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) o la función [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga).
+Los estilos extendidos de un control de vista de árbol no tienen nada que ver con los estilos extendidos usados con la función [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) o [**la función SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,9 +57,9 @@ Los estilos extendidos para un control de vista de árbol no tienen nada que ver
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

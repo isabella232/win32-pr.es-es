@@ -1,27 +1,27 @@
 ---
-title: 'Ejemplos del proveedor WMI de DNS: administración de un servidor DNS'
-description: 'Ejemplos del proveedor WMI de DNS: administración de un servidor DNS'
+title: 'Ejemplos de proveedores WMI de DNS: administración de un servidor DNS'
+description: 'Ejemplos de proveedores WMI de DNS: administración de un servidor DNS'
 ms.assetid: 7846fbaf-cc15-4cd0-aa3f-796617380bb6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c3ea632aa7e490ce77f86e314e4d949a39335fa
-ms.sourcegitcommit: 03fb201e1ea36e353c335ff063ed993fb5993e61
+ms.openlocfilehash: ac5f1becb8b9883d22eadb46357303f3cb5fdd1d61807285d8a59e21fb0e347d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104536418"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119795715"
 ---
-# <a name="dns-wmi-provider-samplesmanaging-a-dns-server"></a>Ejemplos del proveedor WMI de DNS: administración de un servidor DNS
+# <a name="dns-wmi-provider-samplesmanaging-a-dns-server"></a>Ejemplos de proveedores WMI de DNS: administración de un servidor DNS
 
 > [!NOTE]
 > Este artículo contiene referencias al término esclavo, un término que Microsoft ya no usa. Cuando se quite el término del software, se quitará también del artículo.
 
-En esta sección se muestran las tareas de scripting asociadas a la administración de un servidor DNS. Los vínculos siguientes saltan a las subrutinas del archivo de script:
+En esta sección se muestran las tareas de scripting asociadas a la administración de un servidor DNS. Los vínculos siguientes saltan a subrutinas en el archivo de script:
 
--   [Enumerar las propiedades del servidor DNS](#list-dns-server-properties)
+-   [Enumeración de las propiedades del servidor DNS](#list-dns-server-properties)
 -   [Detener, iniciar o reiniciar un servidor DNS](#stop-start-or-restart-a-dns-server)
--   [Modificar las propiedades del servidor DNS](#modify-dns-server-properties)
--   [Agregar una dirección IP](#add-an-ip-address)
+-   [Modificación de las propiedades del servidor DNS](#modify-dns-server-properties)
+-   [Adición de una dirección IP](#add-an-ip-address)
 -   [Eliminación de una dirección IP](#delete-an-ip-address)
 -   [Enumerar zonas](#list-zones)
 
@@ -148,7 +148,7 @@ OPTION EXPLICIT
 
 
 
-## <a name="list-dns-server-properties"></a>Enumerar las propiedades del servidor DNS
+## <a name="list-dns-server-properties"></a>Enumeración de las propiedades del servidor DNS
 
 
 ```VB

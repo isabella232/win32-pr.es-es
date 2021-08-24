@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0cb40310afb1c22d00a5394c0a0667fc8d22eb03
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b223c8c75cd2345c80b5f0905ef7c6699ccc2499b209cbd17681bec5fec01142
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094913"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119756775"
 ---
 # <a name="ctransformoutputpincurrentmediatype-method"></a>Método CTransformOutputPin.CurrentMediaType
 
@@ -50,7 +50,7 @@ Devuelve una referencia a la variable [**miembro CBasePin::m \_ mt.**](cbasepin-
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
