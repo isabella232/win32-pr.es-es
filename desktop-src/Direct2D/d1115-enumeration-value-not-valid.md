@@ -1,9 +1,9 @@
 ---
-title: El valor de enumeración D1115 no es válido
-description: El valor de enumeración D1115 no es válido
+title: Valor de enumeración D1115 no válido
+description: Valor de enumeración D1115 no válido
 ms.assetid: cfffd2b8-a7d3-4a60-8586-81d8435936a6
 keywords:
-- Valor de enumeración D1115 no válido Direct2D
+- Valor de enumeración D1115 no válido de Direct2D
 topic_type:
 - apiref
 api_name:
@@ -12,43 +12,43 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: edcfe70c67e61a3b8bfc435adfdaa017a1c62b22
-ms.sourcegitcommit: 80ee822f6ebcbcc8f60042e0d14a39ef6989c731
+ms.openlocfilehash: 11800acaae350b5289b339738448300c91db32a16c0d3f3d9224f08b6079fba2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105650255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119758125"
 ---
-# <a name="d1115-enumeration-value-not-valid"></a>D1115: el valor de enumeración no es válido
+# <a name="d1115-enumeration-value-not-valid"></a>D1115: El valor de enumeración no es válido
 
-El parámetro de parámetro \[  \] con \[ *valor* \] de valor para *interface*::*Method* no es un valor de enumeración válido.
+El parámetro \[ *con* \] valor de \[ *valor* para \] la *interfaz*::*el método* no es un valor de enumeración válido.
 
 ## <a name="placeholders"></a>Marcadores de posición
 
 <dl> <dt>
 
-<span id="parameter"></span><span id="PARAMETER"></span>*parámetro*
+<span id="parameter"></span><span id="PARAMETER"></span>*Parámetro*
 </dt> <dd>
 
 Nombre del parámetro que recibió el tipo inesperado.
 
 </dd> <dt>
 
-<span id="value"></span><span id="VALUE"></span>*valor*
+<span id="value"></span><span id="VALUE"></span>*Valor*
 </dt> <dd>
 
 Valor de enumeración no válido.
 
 </dd> <dt>
 
-<span id="interface"></span><span id="INTERFACE"></span>*interfaz*
+<span id="interface"></span><span id="INTERFACE"></span>*Interfaz*
 </dt> <dd>
 
-Nombre de la interfaz a la que pertenece el *método* .
+Nombre de la interfaz a la que pertenece *el método.*
 
 </dd> <dt>
 
-<span id="method"></span><span id="METHOD"></span>*forma*
+<span id="method"></span><span id="METHOD"></span>*Método*
 </dt> <dd>
 
 Nombre del método que recibió el valor de enumeración no válido.
@@ -62,7 +62,7 @@ Nombre del método que recibió el valor de enumeración no válido.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se especifica un valor de enumeración de tipo de destino de representación de D2D1 de 30, que está fuera del intervalo esperado. [**\_ \_ \_**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_render_target_type)
+En el ejemplo siguiente se especifica un valor de [**enumeración D2D1 \_ RENDER TARGET \_ \_ TYPE**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_render_target_type) de 30, que está fuera del intervalo esperado.
 
 
 ```C++
@@ -75,7 +75,7 @@ En el ejemplo siguiente se especifica un valor de enumeración de tipo de destin
 
 
 
-Este ejemplo genera el siguiente mensaje de depuración:
+En este ejemplo se genera el siguiente mensaje de depuración:
 
 ``` syntax
 D2D DEBUG ERROR - The parameter [renderTargetProperties->type] with value [30] 
@@ -91,7 +91,7 @@ Un parámetro usó un valor de enumeración no válido.
 Use un valor de enumeración válido.
 
 > [!Note]  
-> La capa de depuración solo comprueba actualmente los valores de enumeración individuales; no comprueba si una combinación bit a bit es válida.
+> La capa de depuración comprueba actualmente solo los valores de enumeración individuales; no comprueba si una combinación bit a bit es válida.
 
  
 

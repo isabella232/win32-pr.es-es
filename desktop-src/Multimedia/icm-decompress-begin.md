@@ -1,9 +1,9 @@
 ---
-title: Mensaje de ICM_DECOMPRESS_BEGIN (VFW. h)
-description: El \_ mensaje de \_ Inicio de descompresión ICM informa a un controlador de descompresión de vídeo para preparar la descomprimición de los datos. Puede enviar este mensaje explícitamente o mediante la macro ICDecompressBegin.
+title: ICM_DECOMPRESS_BEGIN mensaje (Vfw.h)
+description: El ICM DECOMPRESS BEGIN notifica a un controlador \_ \_ de descompresión de vídeo que se prepare para descomprimir los datos. Puede enviar este mensaje explícitamente o mediante la macro ICDecompressBegin.
 ms.assetid: 24cd5220-d473-4968-8678-b00670eecf8f
 keywords:
-- Mensaje de ICM_DECOMPRESS_BEGIN de Windows multimedia
+- ICM_DECOMPRESS_BEGIN mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 59b8f55ebb5543c73e0d7a9c9ee800fabfc483d8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f1d26a0ea99f089d558da639dfad99d4551237b180e595912973e0d22f634f5f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150871"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119678355"
 ---
-# <a name="icm_decompress_begin-message"></a>\_Mensaje de inicio de descompresión ICM \_
+# <a name="icm_decompress_begin-message"></a>\_ICM Mensaje BEGIN de \_ DECOMPRESS
 
-El mensaje de **\_ \_ Inicio** de descompresión ICM informa a un controlador de descompresión de vídeo para preparar la descomprimición de los datos. Puede enviar este mensaje explícitamente o mediante la macro [**ICDecompressBegin**](/windows/desktop/api/Vfw/nf-vfw-icdecompressbegin) .
+El **ICM \_ DECOMPRESS \_ BEGIN** notifica a un controlador de descompresión de vídeo que se prepare para descomprimir los datos. Puede enviar este mensaje explícitamente o mediante la macro [**ICDecompressBegin.**](/windows/desktop/api/Vfw/nf-vfw-icdecompressbegin)
 
 
 ```C++
@@ -41,14 +41,14 @@ lParam = (DWORD_PTR) (LPVOID) lpbiOutput;
 <span id="lpbiInput"></span><span id="lpbiinput"></span><span id="LPBIINPUT"></span>*lpbiInput*
 </dt> <dd>
 
-Puntero a una estructura [**bitmapinfo (**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) que contiene el formato de entrada.
+Puntero a una [**estructura BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) que contiene el formato de entrada.
 
 </dd> <dt>
 
 <span id="lpbiOutput"></span><span id="lpbioutput"></span><span id="LPBIOUTPUT"></span>*lpbiOutput*
 </dt> <dd>
 
-Puntero a una estructura [**bitmapinfo (**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) que contiene el formato de salida.
+Puntero a una [**estructura BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) que contiene el formato de salida.
 
 </dd> </dl>
 
@@ -56,13 +56,13 @@ Puntero a una estructura [**bitmapinfo (**](/windows/win32/api/wingdi/ns-wingdi-
 
 Devuelve ICERR \_ OK si se admite la descompresión especificada o ICERR \_ BADFORMAT en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando el controlador recibe este mensaje, debe asignar búferes y realizar operaciones que consumen mucho tiempo para que pueda procesar los mensajes de [**\_ descomprimir ICM**](icm-decompress.md) de forma eficaz.
+Cuando el controlador recibe este mensaje, debe asignar búferes y realizar las operaciones que requieren mucho tiempo para que pueda procesar ICM [**\_ mensajes DECOMPRESS**](icm-decompress.md) de forma eficaz.
 
-Si desea que el controlador Descomprima los datos directamente en la pantalla, envíe el mensaje de [**\_ dibujo ICM**](icm-draw.md) .
+Si desea que el controlador descomprima los datos directamente en la pantalla, envíe el [**ICM \_ DRAW.**](icm-draw.md)
 
-Los mensajes de **\_ \_ Inicio de descompresión de ICM** y [**\_ \_ fin de descompresión ICM**](icm-decompress-end.md) no se anidan. Si el controlador recibe **el \_ \_ Inicio** de la descompresión ICM antes de que se detenga la descompresión con el **\_ \_ fin de descomprimir ICM**, debe reiniciar la descompresión con nuevos parámetros.
+Los **ICM \_ DECOMPRESS \_ BEGIN** [**y ICM \_ end de DECOMPRESS \_ no**](icm-decompress-end.md) anidan. Si el controlador recibe **ICM \_ DECOMPRESS \_ BEGIN** antes de detener la descompresión con **ICM END de \_ DECOMPRESS, \_** debe reiniciar la descompresión con nuevos parámetros.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,7 +72,7 @@ Los mensajes de **\_ \_ Inicio de descompresión de ICM** y [**\_ \_ fin de desc
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

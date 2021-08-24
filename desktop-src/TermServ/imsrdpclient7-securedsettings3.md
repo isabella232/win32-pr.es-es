@@ -1,18 +1,18 @@
 ---
-title: Propiedad SecuredSettings3 de IMsRdpClient7
+title: Propiedad IMsRdpClient7 SecuredSettings3
 description: Recupera un objeto que admite la interfaz IMsRdpClientSecuredSettings2.
 ms.assetid: 500ce7ed-bd86-434c-baf8-f30dd667dca3
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad SecuredSettings3
-- Propiedad SecuredSettings3 Servicios de Escritorio remoto, interfaz IMsRdpClient7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient7, propiedad SecuredSettings3
-- Propiedad SecuredSettings3 Servicios de Escritorio remoto, interfaz IMsRdpClient8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient8, propiedad SecuredSettings3
-- Propiedad SecuredSettings3 Servicios de Escritorio remoto, interfaz IMsRdpClient9
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient9, propiedad SecuredSettings3
-- Propiedad SecuredSettings3 Servicios de Escritorio remoto, interfaz IMsRdpClient10
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient10, propiedad SecuredSettings3
+- Propiedad SecuredSettings3 Servicios de Escritorio remoto
+- Propiedad SecuredSettings3 Servicios de Escritorio remoto , interfaz IMsRdpClient7
+- Interfaz IMsRdpClient7 Servicios de Escritorio remoto , propiedad SecuredSettings3
+- Propiedad SecuredSettings3 Servicios de Escritorio remoto , interfaz IMsRdpClient8
+- Interfaz IMsRdpClient8 Servicios de Escritorio remoto , propiedad SecuredSettings3
+- Propiedad SecuredSettings3 Servicios de Escritorio remoto , interfaz IMsRdpClient9
+- Interfaz IMsRdpClient9 Servicios de Escritorio remoto , propiedad SecuredSettings3
+- Propiedad SecuredSettings3 Servicios de Escritorio remoto , interfaz IMsRdpClient10
+- Interfaz IMsRdpClient10 Servicios de Escritorio remoto , propiedad SecuredSettings3
 topic_type:
 - apiref
 api_name:
@@ -30,16 +30,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 219e3373a6ecb2f5b963a82800f4415f7de64534
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 77bcdaae672ca59c65bea46d97a34046c7e48c6f0964c1a5b97cdcef77c14ffd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422079"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119737175"
 ---
-# <a name="imsrdpclient7securedsettings3-property"></a>IMsRdpClient7:: SecuredSettings3 (propiedad)
+# <a name="imsrdpclient7securedsettings3-property"></a>Propiedad IMsRdpClient7::SecuredSettings3
 
-Recupera un objeto que admite la interfaz [**IMsRdpClientSecuredSettings2**](imsrdpclientsecuredsettings2.md) .
+Recupera un objeto que admite la [**interfaz IMsRdpClientSecuredSettings2.**](imsrdpclientsecuredsettings2.md)
 
 Esta propiedad es de solo lectura.
 
@@ -56,7 +56,7 @@ HRESULT get_SecuredSettings3(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Dirección de un puntero de interfaz [**IMsRdpClientSecuredSettings2**](imsrdpclientsecuredsettings2.md) que recibe el objeto.
+Dirección de un [**puntero de interfaz IMsRdpClientSecuredSettings2**](imsrdpclientsecuredsettings2.md) que recibe el objeto .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,11 +64,11 @@ Dirección de un puntero de interfaz [**IMsRdpClientSecuredSettings2**](imsrdpcl
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                   |
+| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                      |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsRdpClient7 se define como b2a5b5ce-3461-444A-91d4-add26d070638<br/>       |
+| IID<br/>                      | IID IMsRdpClient7 se define como \_ b2a5b5ce-3461-444a-91d4-add26d070638<br/>       |
 
 
 

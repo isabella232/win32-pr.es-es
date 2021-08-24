@@ -1,11 +1,11 @@
 ---
-title: Win32_TSIssuedLicense (clase)
-description: Describe las instancias de Servicios de Escritorio remoto licencias de acceso de cliente por dispositivo (RDS \ 160; Cal por dispositivo) que se emiten desde un servidor de licencias de Escritorio remoto.
+title: Win32_TSIssuedLicense clase
+description: Describe las instancias de Servicios de Escritorio remoto licencias de acceso de cliente por dispositivo (RDS \ 160; CAL por dispositivo) que se emiten desde un Escritorio remoto de licencias.
 ms.assetid: 15825dc5-9ada-4c11-ac77-beb681e9b33c
 ms.tgt_platform: multiple
 keywords:
 - Win32_TSIssuedLicense clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_TSIssuedLicense de clase, se describe
+- Win32_TSIssuedLicense clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -24,16 +24,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c3d08a68ddcc15a912de4c674403928211a297e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b76127d41c6a571b6bc75bc74378b21f76f4b38c05f0a223d36e979dccf89a4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105685996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119656165"
 ---
-# <a name="win32_tsissuedlicense-class"></a>\_Clase Win32 TSIssuedLicense
+# <a name="win32_tsissuedlicense-class"></a>Clase \_ TSIssuedLicense de Win32
 
-Describe las instancias de Servicios de Escritorio remoto licencias de acceso de cliente por dispositivo (cal por dispositivo de RDS) que se emiten desde un servidor de licencias de Escritorio remoto.
+Describe las instancias de Servicios de Escritorio remoto licencias de acceso de cliente por dispositivo (CAL de RDS por dispositivo) que se emiten desde un Escritorio remoto de licencias.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,13 +61,13 @@ La **clase \_ TSIssuedLicense de Win32** tiene estos tipos de miembros:
 
 ### <a name="methods"></a>Métodos
 
-La clase **Win32 \_ TSIssuedLicense** tiene estos métodos.
+La **clase \_ TSIssuedLicense de Win32** tiene estos métodos.
 
 
 
 | Método                                         | Descripción                                                                                               |
 |:-----------------------------------------------|:----------------------------------------------------------------------------------------------------------|
-| [**Revocar**](revoke-win32-tsissuedlicense.md) | Revoca las cal por dispositivo de RDS representadas por el **objeto \_ TSIssuedLicense de Win32** .<br/> |
+| [**Revocar**](revoke-win32-tsissuedlicense.md) | Revoca las CAL de RDS por dispositivo representadas por el **\_ objeto TSIssuedLicense de Win32.**<br/> |
 
 
 
@@ -75,72 +75,72 @@ La clase **Win32 \_ TSIssuedLicense** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ TSIssuedLicense de Win32** tiene estas propiedades.
+La **clase Win32 \_ TSIssuedLicense** tiene estas propiedades.
 
 <dl> <dt>
 
 **ExpirationDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **DATETIME**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Identifica la fecha en la que expirará la licencia.
+Identifica la fecha en que expirará la licencia.
 
 </dd> <dt>
 
 **IssueDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **DATETIME**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Identifica la fecha en la que se emitió la licencia.
+Identifica la fecha en que se emitió la licencia.
 
 </dd> <dt>
 
 **KeyPackId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Identifica el paquete de claves de licencia de Servicios de Escritorio remoto.
+Identifica el paquete Servicios de Escritorio remoto clave de licencia.
 
 </dd> <dt>
 
 **LicenseId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Identificador único para esta licencia.
+Identificador único de esta licencia.
 
 </dd> <dt>
 
 **Estado de la licencia**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -181,14 +181,14 @@ La licencia es una licencia de actualización.
 4
 </dt> <dd>
 
-La licencia se ha revocado.
+Se ha revocado la licencia.
 
 </dd> <dt>
 
 5
 </dt> <dd>
 
-El estado de la licencia es pendiente.
+El estado de la licencia está pendiente.
 
 </dd> <dt>
 
@@ -240,22 +240,22 @@ Nombre de usuario para el que se emitió la licencia.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para usar esta clase, debe ser miembro del grupo administradores.
+Debe ser miembro del grupo Administradores para usar esta clase.
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del Kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                            |
 | Espacio de nombres<br/>                | Root\\CIMv2<br/>                                                                    |
-| MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TlsWmiProv.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 
 

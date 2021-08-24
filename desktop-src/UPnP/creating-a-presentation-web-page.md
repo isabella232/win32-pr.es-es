@@ -1,24 +1,24 @@
 ---
 title: Crear una página web de presentación
-description: En el código de ejemplo de esta sección se usa la API de punto de control con tecnología UPnP para crear una página web sencilla con el fin de controlar los dispositivos de reproductor multimedia ficticios basados en UPnP. La página web se muestra en la siguiente ilustración.
+description: El código de ejemplo de esta sección usa la API de punto de control con tecnología UPnP para crear una página web sencilla para controlar dispositivos de reproductor multimedia basados en UPnP ficticios. La página web se muestra en la ilustración siguiente.
 ms.assetid: 7eae71eb-9ec9-4c0f-b231-5d659f12b9f5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 31133a6e92b31fa7ddeef94174cc29a4c07a1d9f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b3bfe5ffdb4781ed42f0bcab5d1a8c1bf172fe098906860bec5384311e403adb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103774989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119655974"
 ---
 # <a name="creating-a-presentation-web-page"></a>Crear una página web de presentación
 
-En el código de ejemplo de esta sección se usa la API de punto de control con tecnología UPnP para crear una página web sencilla con el fin de controlar los dispositivos de reproductor multimedia ficticios basados en UPnP. La página web se muestra en la siguiente ilustración.
+El código de ejemplo de esta sección usa la API de punto de control con tecnología UPnP para crear una página web sencilla para controlar dispositivos de reproductor multimedia basados en UPnP ficticios. La página web se muestra en la ilustración siguiente.
 
 > [!Note]  
-> Este código de ejemplo solo funciona para los exploradores que se ejecutan en Windows; no funciona en exploradores que se ejecutan en otros sistemas operativos.
+> Este código de ejemplo solo funciona para exploradores que se ejecutan en Windows; no funciona en exploradores que se ejecutan en otros sistemas operativos.
 
- 
+ 
 
 ![presentación de ejemplo de una página web](images/new-samp-media-player.png)
 
@@ -200,9 +200,9 @@ end function
 </HTML>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

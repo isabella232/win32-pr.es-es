@@ -1,5 +1,5 @@
 ---
-description: Proporciona al sistema información sobre un documento antes de iniciar una operación de guardar como.
+description: Proporciona al sistema información sobre un documento antes de iniciar una operación guardar como.
 title: Función DlpNotifyPreSaveAsDocument (endpointdlp.h)
 ms.topic: reference
 ms.date: 03/18/2021
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 api_location:
 - EndpointDlp.dll
-ms.openlocfilehash: 5226ed63227e2d9dd01155066e2e6e19f77e063f
-ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
+ms.openlocfilehash: 1dbd565ac7a86e381e1e70facf79a2883182260f82c31a2e8a9a3de4f6da8f2a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107495820"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119778225"
 ---
 # <a name="dlpnotifypresaveasdocument-function"></a>Función DlpNotifyPreSaveAsDocument
 
-Proporciona al sistema información sobre un documento antes de iniciar una operación de guardar como.
+Proporciona al sistema información sobre un documento antes de iniciar una operación guardar como.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,7 +39,7 @@ void WINAPI DlpNotifyPreSaveAsDocument(_In_ const PDLP_DOCUMENT_INFO DocumentInf
 *DocumentInfo* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura [PDLP_DOCUMENT_INFO](endpointdlp-dlp_document_info.md) que contiene información sobre el documento que se va a guardar.
+Puntero a una [estructura PDLP_DOCUMENT_INFO](endpointdlp-dlp_document_info.md) que contiene información sobre el documento que se va a guardar.
 
 </dd> </dl>
 

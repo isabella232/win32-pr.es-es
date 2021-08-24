@@ -1,19 +1,19 @@
 ---
-description: El nombre de un archivo. exe o. dll tal como está almacenado en una sección de recursos de ese archivo.
+description: Nombre de un archivo .exe o .dll como se almacena en una sección de recursos dentro de ese archivo.
 ms.assetid: a521f727-b024-44ef-98ae-98986254857f
-title: System. InternalName
+title: System.InternalName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 07a1ed9063d19aa0bd2735c6c59626de483173c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 75aa55edafe0f66faf6ed5474617738e6a02a01d00e434254514c44c8b7a352f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105648340"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119716785"
 ---
-# <a name="systeminternalname"></a>System. InternalName
+# <a name="systeminternalname"></a>System.InternalName
 
-El nombre de un archivo. exe o. dll tal como está almacenado en una sección de recursos de ese archivo.
+Nombre de un archivo .exe o .dll como se almacena en una sección de recursos dentro de ese archivo.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -30,11 +30,11 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
-Históricamente, esta información se mostraba a menudo en la página de la hoja de propiedades de Windows XPÂ **version** . En Windows Vista, la información se ha migrado a la pestaña **detalles** . Sin embargo, esta propiedad determinada no se hizo pública en Windows vista hasta el Service Pack 1 (SP1).
+Históricamente, esta información se mostró a menudo en la Windows **hoja** de propiedades xpâ versión. En Windows Vista, la información se movió a la **pestaña** Detalles. Sin embargo, esta propiedad determinada no se hizo pública en Windows Vista hasta Service Pack 1 (SP1).
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -49,7 +49,7 @@ Históricamente, esta información se mostraba a menudo en la página de la hoja
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -61,7 +61,7 @@ Históricamente, esta información se mostraba a menudo en la página de la hoja
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -79,7 +79,7 @@ Históricamente, esta información se mostraba a menudo en la página de la hoja
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

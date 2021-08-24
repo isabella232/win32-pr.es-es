@@ -1,7 +1,7 @@
 ---
 description: El método Insert agrega un objeto CDeferredCommand a la cola.
 ms.assetid: 41f9c30c-6267-435a-9089-eb34ae606896
-title: Método CCmdQueue. Insert (Winutil. h)
+title: Método CCmdQueue.Insert (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6bad004641258e29ed42d7142a5b0ab2c0ceb78d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 90e2bab4a3545e8a02315155ad4a477511ecf961c93a511ccba268b7fde7dd0c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660169"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119757325"
 ---
-# <a name="ccmdqueueinsert-method"></a>CCmdQueue. Insert (método)
+# <a name="ccmdqueueinsert-method"></a>Método CCmdQueue.Insert
 
 El `Insert` método agrega un objeto [**CDeferredCommand**](cdeferredcommand.md) a la cola.
 
@@ -45,7 +45,7 @@ virtual HRESULT Insert(
 *pCmd* 
 </dt> <dd>
 
-Puntero al objeto **CDeferredCommand** que se va a agregar a la cola.
+Puntero al **objeto CDeferredCommand** que se agrega a la cola.
 
 </dd> </dl>
 
@@ -59,8 +59,8 @@ Devuelve S \_ OK en la implementación predeterminada.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Devuelve S \_ OK en la implementación predeterminada.
 
 <dl> <dt>
 
-[**Clase CCmdQueue**](ccmdqueue.md)
+[**CCmdQueue (clase)**](ccmdqueue.md)
 </dt> </dl>
 
  

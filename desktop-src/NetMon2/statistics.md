@@ -1,7 +1,7 @@
 ---
-description: La estructura STATISTICs proporciona estadísticas para la captura. Algunas de estas estadísticas las genera Monitor de red, mientras que otras las genera la NIC a la que está conectado el NPP.
+description: La estructura STATISTICS proporciona estadísticas para la captura. Algunas de estas estadísticas se generan mediante Monitor de red, mientras que otras las genera la NIC a la que está conectado el NPP.
 ms.assetid: 5e30ae30-d8ad-4336-9e4d-fa10ceefc966
-title: STATISTICs (estructura) (Netmon. h)
+title: Estructura STATISTICS (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: a3798f32f7341722432441272eded7d7605cf8a0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 273e6ba9e32337cc65b3dce979d2ff407b904595237b60025e42fc58e57d9823
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677632"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119778285"
 ---
-# <a name="statistics-structure"></a>STATISTICs (estructura)
+# <a name="statistics-structure"></a>ESTRUCTURA STATISTICS
 
-La estructura **Statistics** proporciona estadísticas para la captura. Algunas de estas estadísticas las genera Monitor de red, mientras que otras las genera la NIC a la que está conectado el NPP.
+La **estructura STATISTICS** proporciona estadísticas para la captura. Algunas de estas estadísticas se generan mediante Monitor de red, mientras que otras las genera la NIC a la que está conectado el NPP.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -68,28 +68,28 @@ Tiempo transcurrido, en microsegundos.
 **TotalFramesCaptured**
 </dt> <dd>
 
-Número total de Marcos almacenados actualmente. Este número está limitado por el tamaño del archivo o búfer de captura que se usa para almacenar los fotogramas.
+Número total de fotogramas almacenados actualmente. Este número está limitado por el tamaño del archivo de captura o búfer usado para almacenar los fotogramas.
 
 </dd> <dt>
 
 **TotalBytesCaptured**
 </dt> <dd>
 
-Número total de bytes almacenados actualmente. Este número está limitado por el tamaño del archivo o búfer de captura que se usa para almacenar los fotogramas.
+Número total de bytes almacenados actualmente. Este número está limitado por el tamaño del archivo de captura o búfer usado para almacenar los fotogramas.
 
 </dd> <dt>
 
 **TotalFramesFiltered**
 </dt> <dd>
 
-Número total de fotogramas que pasan a través del filtro de captura actual. Si no se usa un filtro, este valor es el mismo que el de **TotalFramesSeen**.
+Número total de fotogramas que pasaron por el filtro de captura actual. Si no se usa un filtro, este valor es el mismo que **TotalFramesSeen.**
 
 </dd> <dt>
 
 **TotalBytesFiltered**
 </dt> <dd>
 
-Número total de fotogramas que pasan a través del filtro de captura actual. Si no se usa un filtro, este valor es el mismo que el de **TotalBytesSeen**.
+Número total de fotogramas que pasaron por el filtro de captura actual. Si no se usa un filtro, este valor es el mismo que **TotalBytesSeen**.
 
 </dd> <dt>
 
@@ -110,14 +110,14 @@ Este miembro está obsoleto.
 **TotalFramesSeen**
 </dt> <dd>
 
-Número total de fotogramas administrados por la NIC.
+Número total de fotogramas que controla la NIC.
 
 </dd> <dt>
 
 **TotalBytesSeen**
 </dt> <dd>
 
-Número total de bytes administrados por la NIC.
+Número total de bytes que controla la NIC.
 
 </dd> <dt>
 
@@ -138,81 +138,81 @@ Este miembro está obsoleto.
 **TotalFramesDropped**
 </dt> <dd>
 
-Número total de fotogramas quitados (fotogramas que pasaron el filtro pero no se guardaron).
+Número total de fotogramas descartados (fotogramas que pasaron el filtro pero no se guardaron).
 
 </dd> <dt>
 
 **TotalFramesDroppedFromBuffer**
 </dt> <dd>
 
-Número de fotogramas quitados del búfer o archivo de captura. Cuando el búfer está lleno, se quitan los fotogramas más antiguos para dejar espacio a los nuevos.
+Número de fotogramas eliminados del archivo o búfer de captura. Cuando el búfer está lleno, se quitan los fotogramas más antiguos para hacer espacio para los nuevos.
 
 </dd> <dt>
 
 **MacFramesReceived**
 </dt> <dd>
 
-Número de fotogramas que los informes de NIC han recibido.
+Número de fotogramas que la NIC notifica haber recibido.
 
 </dd> <dt>
 
 **MacCRCErrors**
 </dt> <dd>
 
-Número de errores de CRC informados por la NIC.
+Número de errores de CRC notificados por la NIC.
 
 </dd> <dt>
 
 **MacBytesReceivedEx**
 </dt> <dd>
 
-Número de bytes que los informes de NIC han recibido.
+Número de bytes que la NIC notifica que ha recibido.
 
 </dd> <dt>
 
-**MacFramesDropped \_ Nobuffers**
+**MacFramesDropped \_ NoBuffers**
 </dt> <dd>
 
-Número de fotogramas que la NIC informa de que se han quitado debido a la falta de espacio en el búfer.
+Número de fotogramas que la NIC notifica que se han eliminado debido a la falta de espacio en búfer.
 
 </dd> <dt>
 
 **MacMulticastsReceived**
 </dt> <dd>
 
-Número de multidifusiones que han recibido los informes de NIC.
+Número de multidifusión que notifica la NIC que ha recibido.
 
 </dd> <dt>
 
 **MacBroadcastsReceived**
 </dt> <dd>
 
-Número de difusiones que los informes de NIC han recibido.
+Número de difusión que han recibido los informes nic.
 
 </dd> <dt>
 
 **MacFramesDropped \_ HwError**
 </dt> <dd>
 
-Número de fotogramas que la NIC informa de que se han quitado debido a errores de hardware.
+Número de fotogramas que la NIC indica que se han eliminado debido a errores de hardware.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta estructura se usa para recuperar [*Estadísticas totales*](t.md)y para pausar o detener la captura actual.
+Esta estructura se usa para recuperar el [*total de estadísticas*](t.md)y para pausar o detener la captura actual.
 
-No se pueden recuperar las estadísticas totales cuando se usa la interfaz [iesp](iesp.md) NPP.
+No se pueden recuperar las estadísticas totales cuando se usa la interfaz de NPP de [IESP.](iesp.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 
@@ -226,7 +226,7 @@ No se pueden recuperar las estadísticas totales cuando se usa la interfaz [iesp
 [IRTC::GetTotalStatistics](irtc-gettotalstatistics.md)
 </dt> <dt>
 
-[IStas:: GetTotalStatistics](istats-gettotalstatistics.md)
+[IStats::GetTotalStatistics](istats-gettotalstatistics.md)
 </dt> <dt>
 
 [IDelaydC::P ause](idelaydc-pause.md)
@@ -238,19 +238,19 @@ No se pueden recuperar las estadísticas totales cuando se usa la interfaz [iesp
 [IRTC::P ause](irtc-pause.md)
 </dt> <dt>
 
-[IStas::P ause](istats-pause.md)
+[IStats::P ause](istats-pause.md)
 </dt> <dt>
 
-[IDelaydC:: Stop](idelaydc-stop.md)
+[IDelaydC::Stop](idelaydc-stop.md)
 </dt> <dt>
 
-[IESP:: Stop](iesp-stop.md)
+[IESP::Stop](iesp-stop.md)
 </dt> <dt>
 
-[IRTC:: Stop](irtc-stop.md)
+[IRTC::Stop](irtc-stop.md)
 </dt> <dt>
 
-[IStatsC:: Stop](istats-stop.md)
+[IStatsC::Stop](istats-stop.md)
 </dt> </dl>
 
  

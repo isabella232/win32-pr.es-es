@@ -1,7 +1,7 @@
 ---
-description: Permite iniciar la especificación de la recopilación de métricas puntuales y especificar el tiempo de intervalo de muestra preferido para la recopilación periódica de datos.
+description: Permite especificar la especificación de la recopilación de métricas a un momento dado que se debe iniciar y especificar el tiempo de intervalo de muestra preferido para la recopilación periódica de datos.
 ms.assetid: 3dd6dc16-a618-49ff-bbaf-cfa25c249cf1
-title: Método ControlSampleTimes de la clase CIM_MetricService
+title: Método ControlSampleTimes de la CIM_MetricService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 2e32d184199ff7ddc63be5d1fcfcd4ea376dad89
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 833e828a7622dfcd76a7b061e3890fbe111de10a6b8c3c2d3faf0801429678f3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687650"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119695075"
 ---
-# <a name="controlsampletimes-method-of-the-cim_metricservice-class"></a>Método ControlSampleTimes de la \_ clase MetricService de CIM
+# <a name="controlsampletimes-method-of-the-cim_metricservice-class"></a>Método ControlSampleTimes de la clase \_ MetricService de CIM
 
-Permite iniciar la especificación de la recopilación de métricas puntuales y especificar el tiempo de intervalo de muestra preferido para la recopilación periódica de datos.
+Permite especificar la especificación de la recopilación de métricas a un momento dado que se debe iniciar y especificar el tiempo de intervalo de muestra preferido para la recopilación periódica de datos.
 
 Cada vez que se inicia el muestreo de métricas adicionales, se puede usar la configuración especificada por este método.
 
@@ -43,36 +43,36 @@ uint32 ControlSampleTimes(
 
 <dl> <dt>
 
-*StartSampleTime* \[ de\]
+*StartSampleTime* \[ En\]
 </dt> <dd>
 
-Un momento dado en el que se va a iniciar el muestreo de las métricas.
+Momento dado en el que se va a iniciar el muestreo de las métricas.
 
-Un valor de 99990101000000.000000 + 000 indicará que el muestreo debe iniciarse en la próxima vez que se sincronice con la hora completa. El muestreo se sincroniza con la hora completa si los segundos desde el intervalo de ejemplo de módulo medianoche en segundos es igual a 0.
+Un valor de 99990101000000.000000+000 indicará que el muestreo debe comenzar la próxima vez que se sincronice a la hora completa. El muestreo se sincroniza con la hora completa si los segundos desde el intervalo de muestra del módulo de medianoche en segundos es igual a 0.
 
 </dd> <dt>
 
-*PreferredSampleInterval* \[ de\]
+*PreferredSampleInterval* \[ En\]
 </dt> <dd>
 
-Tiempo de intervalo de muestra preferido. Para obtener métricas que se pueden correlacionar, se recomienda elegir el intervalo de ejemplo de modo que el tiempo de intervalo de ejemplo de módulo 3600 en segundos sea igual a 0.
+Tiempo de intervalo de ejemplo preferido. Para obtener métricas correlacionables, se recomienda elegir el intervalo de muestra de forma que el tiempo del intervalo de muestra de módulo de 3600 en segundos sea igual a 0.
 
-Es responsabilidad de la implementación del servicio de métricas de CIM decidir si se respeta el tiempo de intervalo de muestra solicitado.
+Es responsabilidad de la implementación del servicio de métricas CIM decidir si se respeta el tiempo de intervalo de ejemplo solicitado.
 
-El cliente CIM puede comprobar si los proveedores de métricas respetan el tiempo de intervalo de muestra solicitado recuperando instancias de BaseMetricDefinition relacionadas y comprobando el contenido de la [**\_ BaseMetricDefinition de CIM**](cim-basemetricdefinition.md).**Propiedad SampleInterval** .
+El cliente CIM puede comprobar si los proveedores de métricas respetan o no el tiempo de intervalo de ejemplo solicitado recuperando instancias de BaseMetricDefinition relacionadas y comprobando el contenido de [**\_ Cim BaseMetricDefinition**](cim-basemetricdefinition.md).**Propiedad SampleInterval.**
 
 </dd> <dt>
 
-*RestartGathering* \[ de\]
+*RestartGathering* \[ En\]
 </dt> <dd>
 
-**True** para solicitar que la recopilación de todas las métricas asociadas al servicio de métrica se reinicie con esta llamada al método.
+**TRUE** para solicitar que la recopilación de todas las métricas asociadas al servicio de métricas se vuelva a iniciar con esta llamada de método.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
+Devuelve un 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 <dl> <dt>
 
@@ -88,7 +88,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 **Método reservado** (..)
 </dt> <dt>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -98,9 +98,9 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
-| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -109,7 +109,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 <dl> <dt>
 
-[**\_METRICSERVICE CIM**](cim-metricservice.md)
+[**CIM \_ MetricService**](cim-metricservice.md)
 </dt> </dl>
 
  

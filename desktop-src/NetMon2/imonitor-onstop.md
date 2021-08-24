@@ -1,7 +1,7 @@
 ---
-description: El monitor debe implementar el método OnStop. MSCVC llama a este método para notificar al monitor que se va a detener la captura.
+description: El monitor debe implementar el método OnStop. MSCVC llama a este método para notificar al monitor que se detendrán las capturas.
 ms.assetid: 5988bfb8-2068-42a1-a774-6f6be9828568
-title: 'IMonitor:: OnStop (método) (Netmon. h)'
+title: Método IMonitor::OnStop (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Netmon.h
-ms.openlocfilehash: a737aa5bede443b63f2074239eec17ea8a205cc8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cb81042395de2a2381921cfd0b30c18af22df320b8ce8db228cf65743b1fe334
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677274"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119778995"
 ---
-# <a name="imonitoronstop-method"></a>IMonitor:: OnStop (método)
+# <a name="imonitoronstop-method"></a>IMonitor::OnStop (método)
 
-El monitor debe implementar el método **OnStop** . MSCVC llama a este método para notificar al monitor que se va a detener la captura.
+El monitor debe implementar el método **OnStop.** MSCVC llama a este método para notificar al monitor que se detendrán las capturas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,13 +39,13 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se realiza correctamente, el valor devuelto es S \_ OK (que es igual que NoError).
+Si el método es correcto, el valor devuelto es S \_ OK (que es igual que NOERROR).
 
-Si el método no se realiza correctamente, el valor devuelto es un código de error. Cuando se devuelve un código de error, el monitor no se puede reiniciar.
+Si el método no es correcto, el valor devuelto es un código de error. Cuando se devuelve un código de error, no se puede reiniciar el monitor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-MCSVC llama a este método después de llamar a [IRTC:: Stop](irtc-stop.md) .
+McSVC llama a este método después de [llamar a IRTC::Stop.](irtc-stop.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,7 +55,7 @@ MCSVC llama a este método después de llamar a [IRTC:: Stop](irtc-stop.md) .
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TVM_SETINSERTMARKCOLOR (commctrl. h)
-description: Establece el color utilizado para dibujar la marca de inserción para la vista de árbol. Puede enviar este mensaje explícitamente o mediante la \_ macro SetInsertMarkColor de TreeView.
+title: TVM_SETINSERTMARKCOLOR mensaje (Commctrl.h)
+description: Establece el color utilizado para dibujar la marca de inserción para la vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro TreeView \_ SetInsertMarkColor.
 ms.assetid: c82304a8-3726-42c0-81e7-90d8f8205ead
 keywords:
-- TVM_SETINSERTMARKCOLOR controles de mensajes de Windows
+- TVM_SETINSERTMARKCOLOR controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 92668b1137b089f9a09cc9a34d63d472742bce4d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 05d5fd9984b77c99a13e1c7eab24c231e0ce7f601ecb79f8747cdf7ea3011327
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150451"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119636765"
 ---
-# <a name="tvm_setinsertmarkcolor-message"></a>\_Mensaje de SETINSERTMARKCOLOR TVM
+# <a name="tvm_setinsertmarkcolor-message"></a>Mensaje DE TVM \_ SETINSERTMARKCOLOR
 
-Establece el color utilizado para dibujar la marca de inserción para la vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro [**\_ SetInsertMarkColor de TreeView**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_setinsertmarkcolor) .
+Establece el color utilizado para dibujar la marca de inserción para la vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro [**\_ SetInsertMarkColor de TreeView.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_setinsertmarkcolor)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -35,23 +35,23 @@ Establece el color utilizado para dibujar la marca de inserción para la vista d
 *lParam* 
 </dt> <dd>
 
-Valor de [**COLORREF**](/windows/desktop/gdi/colorref) que contiene el nuevo color de la marca de inserción.
+[**Valor COLORREF**](/windows/desktop/gdi/colorref) que contiene el nuevo color de la marca de inserción.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de **COLORREF** que contiene el color anterior de la marca de inserción.
+Devuelve un **valor COLORREF** que contiene el color de la marca de inserción anterior.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

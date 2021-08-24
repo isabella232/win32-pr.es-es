@@ -1,10 +1,10 @@
 ---
-title: Interfaz IWMPError (VB y C) (WMP. h)
-description: Proporciona propiedades y métodos para tener acceso a una colección de interfaces IWMPErrorItem para recuperar información de error. La interfaz IWMPError expone las siguientes propiedades.
+title: Interfaz IWMPError (VB y C) (Wmp.h)
+description: Proporciona propiedades y métodos para acceder a una colección de interfaces IWMPErrorItem para recuperar información de error. La interfaz IWMPError expone las siguientes propiedades.
 ms.assetid: c7d9f834-43ed-40a2-95a3-b1633f025118
 keywords:
-- IWMPError (VB y C) interfaz de Windows Media Player
-- IWMPError (VB y C) interfaz de Windows Media Player, se describe
+- Interfaz IWMPError (VB y C) Reproductor de Windows Media
+- Interfaz IWMPError (VB y C) Reproductor de Windows Media , descrito
 topic_type:
 - apiref
 api_name:
@@ -15,36 +15,36 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 289a39093c38e7a4b0cc43cb8f318e321ae8ef53
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5f3ff7635e423d70447e371d61fbbadf02aa14c2476e118be79cbb25d974348b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690422"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119736185"
 ---
 # <a name="iwmperror-vb-and-c-interface"></a>Interfaz IWMPError (VB y C#)
 
-Proporciona propiedades y métodos para tener acceso a una colección de interfaces **IWMPErrorItem** para recuperar información de error.
+Proporciona propiedades y métodos para acceder a una colección de interfaces **IWMPErrorItem** para recuperar información de error.
 
-La interfaz **IWMPError** expone las siguientes propiedades.
+La **interfaz IWMPError** expone las siguientes propiedades.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IWMPError (VB y C#)** tiene estos tipos de miembros:
+La **interfaz IWMPError (VB y C#)** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **IWMPError (VB y C#)** tiene estos métodos.
+La **interfaz IWMPError (VB y C#)** tiene estos métodos.
 
 
 
 | Método                                                                         | Descripción                                                                                                                                   |
 |:-------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
 | [**clearErrorQueue**](wmplibiwmperror-iwmperror-clearerrorqueue--vb-and-c.md) | Borra los errores de la cola de errores.<br/>                                                                                            |
-| [**WebHelp**](wmplibiwmperror-iwmperror-webhelp--vb-and-c.md)                 | Inicia la página de ayuda Web de Microsoft Windows Media Player para mostrar información adicional sobre el primer error en la cola de errores.<br/> |
+| [**Webhelp**](wmplibiwmperror-iwmperror-webhelp--vb-and-c.md)                 | Inicia la página microsoft Reproductor de Windows Media Web Help para mostrar más información sobre el primer error en la cola de errores.<br/> |
 
 
 
@@ -52,20 +52,20 @@ La interfaz **IWMPError (VB y C#)** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La interfaz **IWMPError (VB y C#)** tiene estas propiedades.
+La **interfaz IWMPError (VB y C#)** tiene estas propiedades.
 
 
 
 | Propiedad                                                                        | Tipo de acceso           | Descripción                                                                                                                         |
 |:--------------------------------------------------------------------------------|:----------------------|:------------------------------------------------------------------------------------------------------------------------------------|
-| [**errorCount**](wmplibiwmperror-iwmperror-errorcount--vb-and-c.md)<br/> | Solo lectura<br/>  | Obtiene el número de errores en la cola de errores.<br/>                                                                            |
-| [**Elemento**](iwmperror-item--vb-and-c.md)<br/>                             | Lectura/escritura<br/> | Obtiene una interfaz **IWMPErrorItem** en el índice especificado de la cola de errores. En C#, este es el método **Get \_ Item** .<br/> |
+| [**errorCount**](wmplibiwmperror-iwmperror-errorcount--vb-and-c.md)<br/> | Solo lectura<br/>  | Obtiene el número de errores de la cola de errores.<br/>                                                                            |
+| [**Elemento**](iwmperror-item--vb-and-c.md)<br/>                             | Lectura/escritura<br/> | Obtiene una **interfaz IWMPErrorItem** en el índice especificado de la cola de errores. En C#, este es el **método get \_ Item.**<br/> |
 
 
 
  
 
-Obtenga una interfaz **IWMPError** con la siguiente propiedad.
+Obtenga una **interfaz IWMPError** mediante la siguiente propiedad.
 
 
 
@@ -83,7 +83,7 @@ Obtenga una interfaz **IWMPError** con la siguiente propiedad.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>WMP. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmp.h</dt> </dl> |
 
 
 

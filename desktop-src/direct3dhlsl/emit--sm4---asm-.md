@@ -1,38 +1,38 @@
 ---
-title: emisión (SM4-ASM)
-description: Emita un vértice.
+title: emit (sm4 - asm)
+description: Emitir un vértice.
 ms.assetid: FDD18CCD-8088-46BD-897C-434B77FF81E6
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b17711b6f9cf5d707fb8eae3465100a78620c0c
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: ce90ed4ea87c74c09c6f45d590e8bc7a70bbb8178988b059c2b3a79726aabcb2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103784894"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119673085"
 ---
-# <a name="emit-sm4---asm"></a>emisión (SM4-ASM)
+# <a name="emit-sm4---asm"></a>emit (sm4 - asm)
 
-Emita un vértice.
+Emitir un vértice.
 
 
 
-| reflexión |
+| Emitir |
 |------|
 
 
 
- 
+ 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**Emit** hace que todos los registros o declarados \# se lean fuera del sombreador de geometría para generar un vértice.
+**emit** hace que todos los registros o \# declarados se lean fuera del Sombreador de geometría para generar un vértice.
 
-Cuando se emiten varias llamadas a **emisión** , se generan primitivas.
+A medida **que se emiten** varias llamadas de emisión, se generan primitivas.
 
-**Emit** puede aparecer cualquier número de veces en un sombreador de geometría, incluido en el control de flujo.
+**emit** puede aparecer varias veces en un sombreador de geometría, incluido el control de flujo.
 
-Si se han declarado secuencias, debe usar [Emit \_ Stream](emit-stream--sm5---asm-.md).
+Si se han declarado secuencias, debe usar [emit \_ stream](emit-stream--sm5---asm-.md).
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
@@ -44,9 +44,9 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
 
 
- 
+ 
 
-### <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+### <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -54,27 +54,27 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sí       |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Ensamblado modelo de sombreador 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo de sombreador 4 (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

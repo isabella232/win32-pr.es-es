@@ -4,12 +4,12 @@ ms.assetid: 8ed1c68f-331d-42f9-80df-bdcb42962482
 title: ICE78
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8993a0a03b0f70bf2d99511782bc9b7d259d4c9a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d39061872b716c9cc05e983d72615bf287683fd9c316df5661c3085e545169f1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154813"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119638125"
 ---
 # <a name="ice78"></a>ICE78
 
@@ -23,7 +23,7 @@ ICE78 publica un error si la tabla AdvtUISequence existe y no está vacía.
 
 ICE78 notifica el siguiente error para el ejemplo:
 
-Se encontró la acción ' Action1 ' en la tabla AdvtUISequence. No se permite ninguna interfaz de usuario durante la publicidad. Por lo tanto, la tabla AdvtUISequence debe estar vacía o no presente.
+La acción "Action1" se encuentra en la tabla AdvtUISequence. No se permite ninguna interfaz de usuario durante la publicidad. Por lo tanto, la tabla AdvtUISequence debe estar vacía o no estar presente.
 
 [Tabla AdvtUISequence](advtuisequence-table.md)(parcial)
 

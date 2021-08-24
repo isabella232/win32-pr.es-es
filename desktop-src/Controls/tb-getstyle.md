@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TB_GETSTYLE (commctrl. h)
+title: TB_GETSTYLE mensaje (Commctrl.h)
 description: Recupera los estilos actualmente en uso para un control de barra de herramientas.
 ms.assetid: 6fbe8733-79df-462e-acb6-6568105e5058
 keywords:
-- TB_GETSTYLE controles de mensajes de Windows
+- TB_GETSTYLE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 14f8de0addae729a4a8c641d21fd1771137d8c8e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a0704e1cb886bb8a684ab4a1a1e827218fc5f57d4d90778e859e5224ef5f129e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492130"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119696175"
 ---
-# <a name="tb_getstyle-message"></a>\_Mensaje GETSTYLE de TB
+# <a name="tb_getstyle-message"></a>Mensaje \_ GETSTYLE de TB
 
 Recupera los estilos actualmente en uso para un control de barra de herramientas.
 
@@ -37,17 +37,17 @@ Recupera los estilos actualmente en uso para un control de barra de herramientas
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **DWORD** que es una combinación de [estilos de control de barra de herramientas](toolbar-control-and-button-styles.md).
+Devuelve un valor **DWORD que** es una combinación de estilos de [control de barra de herramientas](toolbar-control-and-button-styles.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,15 +1,15 @@
 ---
-description: El método DVDAdm. GetParentalCountry recupera el país o la región parental que se guardó por última vez en el registro.
+description: El método DVDAdm.GetParentalCountry recupera el país o región parental que se guardó por última vez en el registro.
 ms.assetid: 947c5e2a-dfd5-4900-87d4-0ec967b99a22
-title: Método GetParentalCountry (Segment. h)
+title: Método GetParentalCountry (Segment.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e6fcee63fd3cad64498d95ca74e81a9f02804a3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: eeeee55a3e39449c48e1af6b2674db85d5c4a964e730e5a66bb91be6dca2c393
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653837"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119756765"
 ---
 # <a name="getparentalcountry-method"></a>Método GetParentalCountry
 
@@ -18,7 +18,7 @@ ms.locfileid: "105653837"
 
  
 
-El `DVDAdm.GetParentalCountry` método recupera el país o la región parental que se guardó por última vez en el registro.
+El `DVDAdm.GetParentalCountry` método recupera el país o región parental que se guardó por última vez en el registro.
 
 ``` syntax
 [ iParentalCountry = ] DVD.DVDAdm.GetParentalCountry()
@@ -26,11 +26,11 @@ El `DVDAdm.GetParentalCountry` método recupera el país o la región parental q
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un entero que indica el código de país o región predeterminado almacenado en el registro.
+Devuelve un entero que indica el código de país o región predeterminado almacenado en el Registro.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El país o región parental que este método recupera no es necesariamente el mismo país o región almacenado actualmente en el objeto MSWebDVD.
+El país o región parental que recupera este método no es necesariamente el mismo país o región almacenado actualmente en el objeto MSWebDVD.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,7 +38,7 @@ El país o región parental que este método recupera no es necesariamente el mi
 
 | Requisito | Value |
 |-------------------|--------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Segmento. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Segment.h</dt> </dl> |
 
 
 

@@ -6,7 +6,7 @@
       items:
         - name: Identificadores de recursos de comunicaciones
           href: communications-resource-handles.md
-        - name: Modificación de la configuración de los recursos de comunicaciones
+        - name: Modificación del recurso de comunicaciones Configuración
           href: modification-of-communications-resource-settings.md
         - name: Configuración de recursos de comunicaciones
           href: communications-resource-configuration.md
@@ -19,7 +19,7 @@
               href: overlapped-operations.md
             - name: Tiempos de espera
               href: time-outs.md
-            - name: Errores de comunicación
+            - name: Errores de comunicaciones
               href: communications-errors.md
         - name: Eventos de comunicaciones
           href: communications-events.md
@@ -30,7 +30,7 @@
       items:
         - name: Configuración de un recurso de comunicaciones
           href: configuring-a-communications-resource.md
-        - name: Supervisar eventos de comunicaciones
+        - name: Supervisión de eventos de comunicaciones
           href: monitoring-communications-events.md
     - name: Referencia de comunicaciones
       href: communications-reference.md
@@ -98,45 +98,45 @@
               href: /windows/win32/api/WinBase/ns-winbase-commprop
             - name: COMMTIMEOUTS
               href: /windows/win32/api/Winbase/ns-winbase-commtimeouts
-            - name: Comstat
+            - name: COMSTAT
               href: /windows/win32/api/Winbase/ns-winbase-comstat
             - name: DCB
               href: /windows/win32/api/Winbase/ns-winbase-dcb
-            - name: MODEMDEVCAPS
+            - name: MÓDEMDEVCAPS
               href: /windows/win32/api/Mcx/ns-mcx-modemdevcaps
-            - name: MODEMSETTINGS
+            - name: MÓDEMSETTINGS
               href: /windows/win32/api/Mcx/ns-mcx-modemsettings
 - name: Administración del dispositivo
   href: device-management.md
   items:
-    - name: Acerca de la administración de dispositivos
+    - name: Acerca de Administración de dispositivos
       href: about-device-management.md
       items:
         - name: Mensajes del dispositivo
           href: device-messages.md
         - name: Tipos de eventos de dispositivo
           href: device-event-types.md
-        - name: Notificaciones de dispositivo
+        - name: Notificaciones de dispositivos
           href: device-notifications.md
         - name: Eventos de dispositivo
           href: device-events.md
-        - name: Control de entrada y salida de dispositivo (IOCTL)
+        - name: Control de entrada y salida del dispositivo (IOCTL)
           href: device-input-and-output-control-ioctl-.md
-    - name: Uso de la administración de dispositivos
+    - name: Uso de Administración de dispositivos
       href: using-device-management.md
       items:
-        - name: Llamar a DeviceIoControl
+        - name: Llamada a DeviceIoControl
           href: calling-deviceiocontrol.md
         - name: Registro para recibir notificaciones del dispositivo
           href: registering-for-device-notification.md
-        - name: Detección de la inserción o eliminación de medios
+        - name: Detectar inserción o eliminación de medios
           href: detecting-media-insertion-or-removal.md
         - name: Procesamiento de una solicitud para quitar un dispositivo
           href: processing-a-request-to-remove-a-device.md
-    - name: Referencia de administración de dispositivos
+    - name: Administración de dispositivos referencia
       href: device-management-reference.md
       items:
-        - name: Funciones de administración de dispositivos
+        - name: Administración de dispositivos functions
           href: device-management-functions.md
           items:
             - name: CdromDisableDigitalPlayback
@@ -157,12 +157,12 @@
               href: /windows/desktop/api/Winuser/nf-winuser-registerdevicenotificationa
             - name: UnregisterDeviceNotification
               href: /windows/desktop/api/Winuser/nf-winuser-unregisterdevicenotification
-        - name: Constantes de administración de dispositivos
+        - name: Administración de dispositivos constantes
           href: device-management-constants.md
           items:
             - name: DEVICE_DATA_MANAGEMENT_SET_ACTION
               href: device-data-management-set-action.md
-        - name: Códigos de control de administración de dispositivos
+        - name: Administración de dispositivos de control
           href: device-management-control-codes.md
           items:
             - name: IOCTL_CHANGER_EXCHANGE_MEDIUM
@@ -215,7 +215,7 @@
               href: /windows/desktop/api/WinIoCtl/ni-winioctl-ioctl_storage_read_capacity
             - name: 'IOCTL_STORAGE_SET_HOTPLUG_INFO '
               href: /windows/desktop/api/WinIoCtl/ni-winioctl-ioctl_storage_set_hotplug_info
-        - name: Mensajes de administración de dispositivos
+        - name: Administración de dispositivos mensajes
           href: device-management-messages.md
           items:
             - name: WM_DEVICECHANGE
@@ -247,7 +247,7 @@
               href: dbt-querychangeconfig.md
             - name: DBT_USERDEFINED
               href: dbt-userdefined.md
-        - name: Estructuras de administración de dispositivos
+        - name: Administración de dispositivos estructuras
           href: device-management-structures.md
           items:
             - name: CHANGER_ELEMENT
@@ -330,7 +330,7 @@
               href: /windows/win32/api/WinIoCtl/ns-winioctl-storage_offload_write_output
             - name: STORAGE_READ_CAPACITY
               href: storage-read-capacity.md
-        - name: Tipos de enumeración de administración de dispositivos
+        - name: Administración de dispositivos de enumeración
           href: device-management-enumeration-types.md
           items:
             - name: ELEMENT_TYPE
@@ -339,10 +339,10 @@
               href: /windows/desktop/api/winioctl/ne-winioctl-storage_bus_type
             - name: STORAGE_MEDIA_TYPE
               href: /windows/win32/api/WinIoCtl/ne-winioctl-storage_media_type
-- name: API DE PWM
+- name: PWM API
   href: pwm-api.md
   items:
-    - name: Códigos de control PWM
+    - name: Códigos de control de PWM
       href: pwm-control-codes.md
       items:
         - name: IOCTL_PWM_CONTROLLER_GET_ACTUAL_PERIOD

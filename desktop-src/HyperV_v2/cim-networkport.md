@@ -31,7 +31,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119694715"
 ---
-# <a name="cim_networkport-class"></a>Cim \_ NetworkPort (clase)
+# <a name="cim_networkport-class"></a>\_Cim NetworkPort (clase)
 
 Representación lógica de un puerto de red en un dispositivo de red.
 
@@ -63,7 +63,7 @@ La **clase \_ NetworkPort de CIM** tiene estos tipos de miembros:
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ Cim NetworkPort** tiene estas propiedades.
+La **clase \_ NetworkPort de CIM** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -76,7 +76,7 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("Bytes"), **PUnit** ("byte")
+Calificadores: [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("Bytes"), **PUnit** ("byte")
 </dt> </dl>
 
 Unidad de transmisión máxima (MTU) activa o negociada que es compatible con el puerto.
@@ -92,7 +92,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-**true** si el puerto puede determinar automáticamente la velocidad u otra característica de comunicaciones de los medios de red conectados; de lo contrario, **false**.
+**true** si el puerto puede determinar automáticamente la velocidad u otras características de comunicaciones de los medios de red conectados; de lo contrario, **false**.
 
 </dd> <dt>
 
@@ -121,7 +121,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ NetworkPort**.**OtherLinkTechnology**")
 </dt> </dl>
 
-Tecnología de vínculo utilizada por el puerto. Cuando se establece en "1" (otro), la **propiedad OtherLinkTechnology** contiene una descripción del tipo de vínculo.
+Tecnología de vínculo usada por el puerto. Cuando se establece en "1" (otro), la **propiedad OtherLinkTechnology** contiene una descripción del tipo de vínculo.
 
 <dt>
 
@@ -190,7 +190,7 @@ Tecnología de vínculo utilizada por el puerto. Cuando se establece en "1" (otr
 
 <span id="Infrared"></span><span id="infrared"></span><span id="INFRARED"></span>
 
-**Desarroba** (9)
+**Insondes** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -239,7 +239,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ NetworkPort**.**LinkTechnology**")
 </dt> </dl>
 
-Tecnología de vínculo cuando **LinkTechnology** está establecido en "1", (otro).
+La tecnología de vínculo **cuando LinkTechnology** está establecido en "1", (otro).
 
 </dd> <dt>
 
@@ -252,7 +252,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**en desuso**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("**CIM \_ NetworkPort**.**OtherPortType**"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ LogicalPort**](cim-logicalport.md).**PortType**")
+Calificadores: [**En desuso**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("**CIM \_ NetworkPort**.**OtherPortType**"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ LogicalPort**](cim-logicalport.md).**PortType**")
 </dt> </dl>
 
 > [!Note]  
@@ -318,10 +318,10 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("Bytes"), **PUnit** ("byte")
+Calificadores: [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("Bytes"), **PUnit** ("byte")
 </dt> </dl>
 
-La unidad de transmisión máxima (MTU) que admite el puerto.
+Unidad de transmisión máxima (MTU) que admite el puerto.
 
 </dd> </dl>
 
@@ -339,7 +339,7 @@ La unidad de transmisión máxima (MTU) que admite el puerto.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

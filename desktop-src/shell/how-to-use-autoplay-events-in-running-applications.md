@@ -1,46 +1,46 @@
 ---
-description: La interfaz IHWEventHandler se puede registrar en la tabla de objetos en ejecución (ROT) para que las aplicaciones en ejecución tengan acceso a los eventos de reproducción automática.
+description: La interfaz IHWEventHandler se puede registrar en la tabla de objetos en ejecución (ROT) para que las aplicaciones en ejecución tengan acceso a eventos de Reproducción automática.
 ms.assetid: 6FEFFB5D-DD8B-4FEA-B273-D32FC30CAFEA
 title: Cómo usar eventos de reproducción automática en aplicaciones en ejecución
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 51795a3992bdb40dde833bb3e352905efaa2be63
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ab30fa020b5501f8832a5b350ad409934ecbb4258d75adf147e908c699516474
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001900"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119714825"
 ---
 # <a name="how-to-use-autoplay-events-in-running-applications"></a>Cómo usar eventos de reproducción automática en aplicaciones en ejecución
 
-La interfaz [**IHWEventHandler**](/windows/desktop/api/Shobjidl/nn-shobjidl-ihweventhandler) se puede registrar en la tabla de objetos en ejecución (Rot) para que las aplicaciones en ejecución tengan acceso a los eventos de reproducción automática.
+La [**interfaz IHWEventHandler**](/windows/desktop/api/Shobjidl/nn-shobjidl-ihweventhandler) se puede registrar en la tabla de objetos en ejecución (ROT) para que las aplicaciones en ejecución tengan acceso a eventos de Reproducción automática.
 
-Las instrucciones siguientes describen cómo usar eventos de reproducción automática en aplicaciones en ejecución.
+En las instrucciones siguientes se describe cómo usar eventos de Reproducción automática en aplicaciones en ejecución.
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
 ### <a name="step-1"></a>Paso 1:
 
-Cree un nuevo componente que implemente la interfaz [**IHWEventHandler**](/windows/desktop/api/Shobjidl/nn-shobjidl-ihweventhandler) .
+Cree un nuevo componente que implemente la [**interfaz IHWEventHandler.**](/windows/desktop/api/Shobjidl/nn-shobjidl-ihweventhandler)
 
 ### <a name="step-2"></a>Paso 2:
 
-Inicialice el nuevo componente con el valor InitCmdLine de la entrada del controlador en cuestión bajo la clave **handlers** .
+Inicialice el nuevo componente con el valor InitCmdLine de la entrada del controlador en particular en la **clave Handlers.**
 
-Este paso es necesario porque la reproducción automática no llama al método Initialize.
+Este paso es necesario porque Reproducción automática no llama al método Initialize.
 
 ### <a name="step-3"></a>Paso 3:
 
-Llame a la función [**CreateHardwareEventMoniker**](createhardwareeventmoniker.md) para obtener un moniker que represente el componente y el controlador de eventos a los que desea llamar.
+Llame a [**la función CreateHardwareEventMoniker**](createhardwareeventmoniker.md) para obtener un moniker que represente el componente y el controlador de eventos al que desea llamar.
 
 ### <a name="step-4"></a>Paso 4:
 
-Use el parámetro *ppmoniker* para registrar su componente en la tabla Rot.
+Use el *parámetro ppmoniker* para registrar el componente en ROT.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) puede suponer riesgos para la seguridad. Consulte la documentación de **LoadLibrary** para obtener información sobre cómo cargar correctamente archivos DLL con diferentes versiones de Windows.
+> [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) puede suponer riesgos de seguridad. Consulte la documentación **de LoadLibrary** para obtener información sobre cómo cargar correctamente archivos DLL con diferentes versiones de Windows.
 
 ```cpp
 typedef HRESULT (*CREATEHARDWAREEVENTMONIKER)(REFCLSID clsid, LPCWSTR pszEventHandler, IMoniker **ppmoniker);
@@ -78,7 +78,7 @@ HRESULT RegisterComponent(IUnknown* punk, DWORD* dpwToken)
 }
 ```
 
-La llamada a [**IRunningObjectTable:: Register**](/windows/win32/api/objidl/nf-objidl-irunningobjecttable-register) requiere que el componente tenga la siguiente información de **AppID** en el registro.
+La llamada a [**IRunningObjectTable::Register**](/windows/win32/api/objidl/nf-objidl-irunningobjecttable-register) requiere que el componente tenga la **siguiente información de AppID** en el Registro.
 
 ```
 HKEY_CLASSES_ROOT

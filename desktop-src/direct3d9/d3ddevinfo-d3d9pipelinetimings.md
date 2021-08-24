@@ -1,7 +1,7 @@
 ---
 description: Porcentaje de tiempo de procesamiento de datos en la canalización.
 ms.assetid: eb9dec27-2e45-4897-92af-8415c8fa08d4
-title: D3DDEVINFO_D3D9PIPELINETIMINGS estructura (D3D9Types. h)
+title: D3DDEVINFO_D3D9PIPELINETIMINGS estructura (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 627eec0ea93181b14c308ab229ed603412511a91
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4d938fd2e1ca0f52d2ea7787f54b430a84907ad5f04f066bc90f0867825745a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105678783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119676745"
 ---
-# <a name="d3ddevinfo_d3d9pipelinetimings-structure"></a>D3DDEVINFO \_ estructura D3D9PIPELINETIMINGS
+# <a name="d3ddevinfo_d3d9pipelinetimings-structure"></a>D3DDEVINFO \_ D3D9PIPELINETIMINGS (estructura)
 
 Porcentaje de tiempo de procesamiento de datos en la canalización.
 
@@ -45,40 +45,40 @@ typedef struct D3DDEVINFO_D3D9PIPELINETIMINGS {
 **VertexProcessingTimePercent**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Porcentaje de tiempo invertido en ejecutar sombreadores de vértices.
+Porcentaje de tiempo dedicado a ejecutar sombreadores de vértices.
 
 </dd> <dt>
 
 **PixelProcessingTimePercent**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Porcentaje de tiempo invertido en ejecutar sombreadores de píxeles.
+Porcentaje de tiempo dedicado a ejecutar sombreadores de píxeles.
 
 </dd> <dt>
 
 **OtherGPUProcessingTimePercent**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Porcentaje de tiempo invertido en realizar otro procesamiento.
+Porcentaje de tiempo dedicado a realizar otro procesamiento.
 
 </dd> <dt>
 
 **GPUIdleTimePercent**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -86,7 +86,7 @@ Porcentaje de tiempo que no procesa nada.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Para obtener el mejor rendimiento, se recomienda una carga equilibrada.
 
@@ -96,7 +96,7 @@ Para obtener el mejor rendimiento, se recomienda una carga equilibrada.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 7a7ffd54-09e9-412d-a637-5dc27597b46e
 title: literalInclude, elemento
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e1f43f1b8d3d95e2ad8a378dd1c8cbada7758ad
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: f1bda6586de7c1bc253a9dd1f348ba644b4f29b7f928335bb0cdd148c0fd1536
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107995132"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119757175"
 ---
 # <a name="literalinclude-element"></a>literalInclude, elemento
 
@@ -38,7 +38,7 @@ Coloca una instrucción include de C o IDL en el código generado.
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Obligatorio</th>
+<th>Requerido</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -54,7 +54,7 @@ Coloca una instrucción include de C o IDL en el código generado.
 <td><strong>Local</strong><br/></td>
 <td>Boolean<br/></td>
 <td>No<br/></td>
-<td>Este atributo solo se usa cuando <strong>Language</strong> se establece en &quot; C &quot; .<br/> <br/>
+<td>Este atributo solo se usa cuando <strong>Language</strong> se establece en &quot; &quot; C.<br/> <br/>
 <dt><strong>Verdad</strong></dt> <dd> Busca en el directorio actual el encabezado con nombre antes de buscar en los directorios del sistema.<br/> </dd> <dt><strong>Falso</strong></dt> <dd> Busque solo los directorios del sistema para el encabezado con nombre.<br/> </dd> </dl></td>
 </tr>
 </tbody>

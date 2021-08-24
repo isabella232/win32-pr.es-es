@@ -68,12 +68,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cb62977a48400866e9fa8829696c884e58e54325
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 2ff5c73941b0235788772522f5551f73faea30d06e91e582dcdbe97433ca85c2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110548990"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119638465"
 ---
 # <a name="mdm-registration-error-values"></a>Valores de error de registro de MDM
 
@@ -94,7 +94,7 @@ El tipo de datos no coincide con el tipo de datos esperado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="MREGISTER_E_DEVICE_MESSAGE_FORMAT_ERROR"></span><span id="mregister_e_device_message_format_error"></span>**MREGISTER \_ E \_ DEVICE \_ MESSAGE \_ FORMAT \_ ERROR**
+<span id="MREGISTER_E_DEVICE_MESSAGE_FORMAT_ERROR"></span><span id="mregister_e_device_message_format_error"></span>**ERROR DE \_ FORMATO DE MENSAJE DE \_ \_ \_ DISPOSITIVO \_ MREGISTER E**
 </dt> <dd> <dl> <dt>
 
 0x80190001
@@ -102,7 +102,7 @@ El tipo de datos no coincide con el tipo de datos esperado.
 
 
 
-Esquema no válido, Error de formato de mensaje del servidor.
+Esquema no válido, error de formato de mensaje del servidor.
 
 
 </dt> </dl> </dd> <dt>
@@ -115,14 +115,14 @@ Esquema no válido, Error de formato de mensaje del servidor.
 
 
 
-Esquema no válido, Error de formato de mensaje del servidor.
+Esquema no válido, error de formato de mensaje del servidor.
 
 **Windows 8.1:** Esta constante no está disponible antes de Windows 10.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="MREGISTER_E_DEVICE_AUTHENTICATION_ERROR"></span><span id="mregister_e_device_authentication_error"></span>**MREGISTER \_ E \_ DEVICE \_ AUTHENTICATION \_ ERROR**
+<span id="MREGISTER_E_DEVICE_AUTHENTICATION_ERROR"></span><span id="mregister_e_device_authentication_error"></span>**ERROR DE \_ AUTENTICACIÓN \_ DEL DISPOSITIVO \_ MREGISTER E \_**
 </dt> <dd> <dl> <dt>
 
 0x80190002
@@ -135,7 +135,7 @@ El servidor no pudo autenticar al usuario.
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_E_DEVICE_AUTHENTICATION_ERROR"></span><span id="menroll_e_device_authentication_error"></span>**ERROR DE \_ AUTENTICACIÓN \_ DE DISPOSITIVO \_ \_ MENROLL E**
+<span id="MENROLL_E_DEVICE_AUTHENTICATION_ERROR"></span><span id="menroll_e_device_authentication_error"></span>**ERROR DE \_ \_ AUTENTICACIÓN DEL DISPOSITIVO \_ MENROLL E \_**
 </dt> <dd> <dl> <dt>
 
 0x80180002
@@ -247,7 +247,7 @@ Se produjo una excepción no controlada en el servidor.
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_E_DEVICE_INTERNALSERVICE_ERROR"></span><span id="menroll_e_device_internalservice_error"></span>**MENROLL \_ E \_ DEVICE \_ INTERNALSERVICE \_ ERROR**
+<span id="MENROLL_E_DEVICE_INTERNALSERVICE_ERROR"></span><span id="menroll_e_device_internalservice_error"></span>**ERROR DE SERVICIO \_ \_ INTERNO DEL DISPOSITIVO \_ MENROLL E \_**
 </dt> <dd> <dl> <dt>
 
 0x80180006
@@ -255,14 +255,14 @@ Se produjo una excepción no controlada en el servidor.
 
 
 
-Hubo una excepción no controlada en el servidor.
+Se produjo una excepción no controlada en el servidor.
 
 **Windows 8.1:** Esta constante no está disponible antes de Windows 10.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="MREGISTER_E_DEVICE_INVALIDSECURITY_ERROR"></span><span id="mregister_e_device_invalidsecurity_error"></span>**MREGISTER \_ E \_ DEVICE \_ INVALIDSECURITY \_ ERROR**
+<span id="MREGISTER_E_DEVICE_INVALIDSECURITY_ERROR"></span><span id="mregister_e_device_invalidsecurity_error"></span>**ERROR \_ \_ INVALIDSECURITY DEL DISPOSITIVO \_ MREGISTER E \_**
 </dt> <dd> <dl> <dt>
 
 0x80190007
@@ -275,7 +275,7 @@ Se produjo una excepción no controlada en el servidor.
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_E_DEVICE_INVALIDSECURITY_ERROR"></span><span id="menroll_e_device_invalidsecurity_error"></span>**ERROR DE \_ SEGURIDAD DE LA SEGURIDAD DEL DISPOSITIVO \_ \_ MENROLL E \_**
+<span id="MENROLL_E_DEVICE_INVALIDSECURITY_ERROR"></span><span id="menroll_e_device_invalidsecurity_error"></span>**ERROR DE SEGURIDAD \_ DE SEGURIDAD DEL DISPOSITIVO \_ \_ MENROLL E \_**
 </dt> <dd> <dl> <dt>
 
 0x80180007
@@ -416,7 +416,7 @@ El dispositivo no está inscrito.
 
 Ya no se usa.
 
-**Windows 8.1:** Se necesita redirección.
+**Windows 8.1:** Se necesita redireccionamiento.
 
 
 </dt> </dl> </dd> <dt>
@@ -519,7 +519,7 @@ Se produjo un error de red, como DNS o un tiempo de espera de red.
 
 
 
-La inscripción se suspendió. Ya no se admite.
+Se suspendió la inscripción. Ya no se admite.
 
 **Windows 8.1:** Esta constante no está disponible antes de Windows 10.
 
@@ -624,7 +624,7 @@ La cuenta está en mantenimiento; vuelva a intentarlo más adelante. El usuario 
 
 
 
-La licencia del usuario está en estado de bloqueo de inscripción; el usuario tendrá que llamar al administrador.
+La licencia del usuario está en mal estado bloqueando la inscripción; el usuario tendrá que llamar al administrador.
 
 **Windows 8.1:** Esta constante no está disponible antes de Windows 10.
 
@@ -661,7 +661,7 @@ El servidor solicitó HTTP en lugar de HTTPS, pero no se aceptó.
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_E_PLATFORM_WRONG_STATE"></span><span id="menroll_e_platform_wrong_state"></span>**ESTADO INCORRECTO DE \_ \_ LA PLATAFORMA MENROLL E \_ \_**
+<span id="MENROLL_E_PLATFORM_WRONG_STATE"></span><span id="menroll_e_platform_wrong_state"></span>**MENROLL \_ E \_ PLATFORM \_ WRONG \_ STATE**
 </dt> <dd> <dl> <dt>
 
 0x8018001B
@@ -669,14 +669,14 @@ El servidor solicitó HTTP en lugar de HTTPS, pero no se aceptó.
 
 
 
-Se intentó realizar una operación no válida, como intentar inscribir el mismo dispositivo dos veces o deshacer la inscripción de un dispositivo desconocido.
+Se intentó realizar una operación no válida, como intentar inscribir el mismo dispositivo dos veces o anule la inscripción de un dispositivo desconocido.
 
 **Windows 8.1:** Esta constante no está disponible antes de Windows 10.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_E_PLATFORM_LICENSE_ERROR"></span><span id="menroll_e_platform_license_error"></span>**ERROR DE \_ LICENCIA DE LA PLATAFORMA MENROLL E \_ \_ \_**
+<span id="MENROLL_E_PLATFORM_LICENSE_ERROR"></span><span id="menroll_e_platform_license_error"></span>**ERROR DE \_ LICENCIA DE LA PLATAFORMA \_ MENROLL E \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x8018001C
@@ -766,7 +766,7 @@ Error de aprovisionamiento en un CSP de Passport for Work.
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_E_PROV_CSP_MISC"></span><span id="menroll_e_prov_csp_misc"></span>**MISC DEL CSP DE MENROLL \_ E \_ \_ \_ PROV**
+<span id="MENROLL_E_PROV_CSP_MISC"></span><span id="menroll_e_prov_csp_misc"></span>**MISC DE CSP DE MENROLL \_ E \_ \_ \_ PROV**
 </dt> <dd> <dl> <dt>
 
 0x80180022
@@ -837,7 +837,7 @@ Error de aprovisionamiento en el CSP de EnterpriseAppManagement.
 
 
 
-Los Administración de dispositivos móviles (MDM) se bloquearon, posiblemente por directiva de grupo o la [**función SetManagedExternally.**](/windows/desktop/api/MDMRegistration/nf-mdmregistration-setmanagedexternally)
+La Administración de dispositivos móvil (MDM) se bloqueó, posiblemente por directiva de grupo o la [**función SetManagedExternally.**](/windows/desktop/api/MDMRegistration/nf-mdmregistration-setmanagedexternally)
 
 > [!Note]  
 > Esta constante no está disponible antes de Windows 10, versión 1709.
@@ -873,7 +873,7 @@ No se pudo crear la clave privada.
 
 
 
-Se solicitó la autenticación de certificado, pero no se pudo encontrar un certificado para usar.
+Se solicitó la autenticación de certificado, pero no se pudo encontrar un certificado para usarlo.
 
 > [!Note]  
 > Esta constante no está disponible antes de Windows 10, versión 1709.
@@ -939,11 +939,11 @@ La Administración de dispositivos móvil (MDM) no está configurada.
 
 ## <a name="requirements"></a>Requisitos
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                    |
-| Encabezado<br/>                   | <dl> <dt>MDMRegistration.h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>MDMRegistration.h</dt> </dl> |
 
 
 

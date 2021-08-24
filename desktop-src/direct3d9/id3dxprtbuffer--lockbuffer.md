@@ -1,7 +1,7 @@
 ---
-description: Bloquea un intervalo de datos de ejemplo de vértice o textura y obtiene un puntero a la ubicación en la memoria de búfer.
+description: Bloquea un intervalo de datos de muestra de vértices o texeles y obtiene un puntero a la ubicación en la memoria del búfer.
 ms.assetid: 8de2725f-507e-41ee-828d-2fb19cc2252c
-title: 'ID3DXPRTBuffer:: LockBuffer (método) (D3DX9Mesh. h)'
+title: Método ID3DXPRTBuffer::LockBuffer (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a2da8cb5a6a2e036fb7b495a129a5ef29d9ff749
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5d8e3b6310951a5784af99b913298c20d5556baa10b012926f3b68e44d402dbb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698311"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119606895"
 ---
-# <a name="id3dxprtbufferlockbuffer-method"></a>ID3DXPRTBuffer:: LockBuffer (método)
+# <a name="id3dxprtbufferlockbuffer-method"></a>Método ID3DXPRTBuffer::LockBuffer
 
-Bloquea un intervalo de datos de ejemplo de vértice o textura y obtiene un puntero a la ubicación en la memoria de búfer.
+Bloquea un intervalo de datos de muestra de vértices o texeles y obtiene un puntero a la ubicación en la memoria del búfer.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,30 +42,30 @@ HRESULT LockBuffer(
 
 <dl> <dt>
 
-*Iniciar* \[ de\]
+*Inicio* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Índice de la muestra de datos de vértice o textura.
+Índice de la muestra de datos de vértices o texeles.
 
 </dd> <dt>
 
-*NumSamples* \[ de\]
+*NumSamples* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número de vértices (o textura) muestreados.
+Número de vértices (o texeles) muestreados.
 
 </dd> <dt>
 
-*ppData* \[ enuncia\]
+*ppData* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\*\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\*\***
 
-Puntero a la ubicación en memoria donde comienza el ejemplo de inicio. El diseño de memoria de los datos del búfer es:
+Puntero a la ubicación en memoria donde comienza el ejemplo De inicio. El diseño de memoria de los datos del búfer es:
 
 
 ```
@@ -80,7 +80,7 @@ float fData[NumberSamples][NumberChannels][NumberCoefficients]
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el siguiente valor:
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el siguiente valor:
 
 ## <a name="remarks"></a>Observaciones
 
@@ -90,8 +90,8 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

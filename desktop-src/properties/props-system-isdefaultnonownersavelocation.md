@@ -1,19 +1,19 @@
 ---
-description: Identifica la ubicación de almacenamiento predeterminada para una biblioteca para los usuarios que no son propietarios de la biblioteca.
+description: Identifica la ubicación de guardado predeterminada de una biblioteca para los no propietarios de la biblioteca.
 ms.assetid: e6fe96de-4895-477e-a442-746fd34a7433
-title: System. IsDefaultNonOwnerSaveLocation
+title: System.IsDefaultNonOwnerSaveLocation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c0922ab8667784ad4ab0394767786c9ecc555c4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d8e8ff6591f83364ec2c074cfd29d9ef5e1f76e9a039d988da51009735836c39
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715357"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119716616"
 ---
-# <a name="systemisdefaultnonownersavelocation"></a>System. IsDefaultNonOwnerSaveLocation
+# <a name="systemisdefaultnonownersavelocation"></a>System.IsDefaultNonOwnerSaveLocation
 
-Identifica la ubicación de almacenamiento predeterminada para una biblioteca para los usuarios que no son propietarios de la biblioteca.
+Identifica la ubicación de guardado predeterminada de una biblioteca para los no propietarios de la biblioteca.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8
 
@@ -42,7 +42,7 @@ propertyDescription
             defineToken = ISDEFAULTPUBLICSAVE_NO
 ```
 
-## <a name="windows-7"></a>Windows 7
+## <a name="windows-7"></a>Windows 7
 
 ```
 propertyDescription
@@ -57,9 +57,9 @@ propertyDescription
       type = Boolean
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -74,7 +74,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -86,7 +86,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -104,7 +104,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

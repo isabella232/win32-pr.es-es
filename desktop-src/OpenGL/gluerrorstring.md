@@ -1,9 +1,9 @@
 ---
-title: función gluErrorString (GLU. h)
-description: La función gluErrorString genera una cadena de error a partir de un código de error OpenGL o GLU. La cadena de error es sólo ANSI.
+title: Función gluErrorString (Glu.h)
+description: La función gluErrorString genera una cadena de error a partir de un código de error de OpenGL o GLU. La cadena de error es solo ANSI.
 ms.assetid: 6d71a6d5-ac00-49f9-a56c-cfeeb88963eb
 keywords:
-- gluErrorString (función) OpenGL
+- Función gluErrorString OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0cdcfad0e2a943bf3a475317f32d37921878a8f8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: beef90cfced2b33b612e15c1ef6918de81997520483acfb141f3a307ad64096d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119777655"
 ---
-# <a name="gluerrorstring-function"></a>gluErrorString función)
+# <a name="gluerrorstring-function"></a>Función gluErrorString
 
-La función **gluErrorString** genera una cadena de error a partir de un código de error OpenGL o Glu. La cadena de error es sólo ANSI.
+La **función gluErrorString** genera una cadena de error a partir de un código de error de OpenGL o GLU. La cadena de error es solo ANSI.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,31 +40,31 @@ const GLubyte* WINAPI gluErrorString(
 
 <dl> <dt>
 
-*errCode* 
+*Errcode* 
 </dt> <dd>
 
-Un código de error de OpenGL o GLU.
+Código de error OpenGL o GLU.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **gluErrorString** genera una cadena de error a partir de un código de error OpenGL o Glu. La cadena tiene un formato ISO Latín 1. Por ejemplo, **gluErrorString**(libro \_ \_ de memoria insuficiente \_ ) devuelve la cadena "memoria insuficiente".
+La **función gluErrorString** genera una cadena de error a partir de un código de error de OpenGL o GLU. La cadena está en formato ISO Latin 1. Por ejemplo, **gluErrorString**(GL \_ OUT OF \_ \_ MEMORY) devuelve la cadena "fuera de memoria".
 
-Los códigos de error de GLU estándar son GLU \_ \_ enumeración no válida, Glu \_ valor no válido \_ y Glu \_ memoria insuficiente \_ \_ . Algunas otras funciones GLU pueden devolver códigos de error especializados a través de las devoluciones de llamada. Para obtener la lista de códigos de error de OpenGL, vea [**glGetError**](glgeterror.md).
+Los códigos de error estándar de GLU son GLU \_ INVALID \_ ENUM, GLU \_ INVALID VALUE y GLU OUT OF \_ \_ \_ \_ MEMORY. Algunas otras funciones GLU pueden devolver códigos de error especializados a través de devoluciones de llamada. Para obtener la lista de códigos de error de OpenGL, [**vea glGetError**](glgeterror.md).
 
-La función **gluErrorString** solo genera cadenas de error en ANSI. Siempre que sea posible, use **gluErrorStringWIN**, que permite cadenas de error ANSI o Unicode. De este modo, resulta más fácil localizar el programa para usarlo con otro lenguaje.
+La **función gluErrorString** genera cadenas de error solo en ANSI. Siempre que sea posible, **use gluErrorStringWIN**, que permite cadenas de error ANSI o Unicode. Esto facilita la localización del programa para su uso con otro idioma.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Glu. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 

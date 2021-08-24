@@ -1,7 +1,7 @@
 ---
 description: Inserta una interrupción no enmascarable en la máquina virtual.
 ms.assetid: 897AD1B9-0EDD-4DCE-963D-D5DE03AF55A9
-title: 'Msvm_ComputerSystem:: InjectNonMaskableInterrupt (método)'
+title: Msvm_ComputerSystem::InjectNonMaskableInterrupt (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 5798079a8866d9fb67356adff43c0ac1e993e6fb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e9019492299d03b31001b60934e00dc40c41b4328e4809fe8e864ef378c30a89
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666337"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119694445"
 ---
-# <a name="msvm_computersysteminjectnonmaskableinterrupt-method"></a>MSVM \_ ComputerSystem:: InjectNonMaskableInterrupt (método)
+# <a name="msvm_computersysteminjectnonmaskableinterrupt-method"></a>Método Msvm \_ ComputerSystem::InjectNonMaskableInterrupt
 
 Inserta una interrupción no enmascarable en la máquina virtual.
 
@@ -39,10 +39,10 @@ uint32 InjectNonMaskableInterrupt(
 
 <dl> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)) para realizar un seguimiento del estado de la inserción de interrupción. Esta referencia puede ser **null** si la tarea se ha completado.
+Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ CIM ConcreteJob**](/previous-versions//cc136808(v=vs.85)) para realizar un seguimiento del estado de la inserción de interrupciones. Esta referencia puede ser **NULL** si la tarea se ha completado.
 
 </dd> </dl>
 
@@ -67,10 +67,10 @@ Este método devuelve uno de los valores siguientes.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                                 |
-| Espacio de nombres<br/>                | \\\\\\Virtualización de raíz \\ V2<br/>                                                                 |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                            |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                                 |
+| Espacio de nombres<br/>                | \\\\Root \\ Virtualization \\ V2<br/>                                                                 |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -79,7 +79,7 @@ Este método devuelve uno de los valores siguientes.
 
 <dl> <dt>
 
-[**MSVM \_ ComputerSystem**](msvm-computersystem.md)
+[**Msvm \_ ComputerSystem**](msvm-computersystem.md)
 </dt> </dl>
 
  

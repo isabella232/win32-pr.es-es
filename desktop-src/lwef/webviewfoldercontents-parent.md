@@ -1,11 +1,11 @@
 ---
-title: WebViewFolderContents. Parent (propiedad)
-description: WebViewFolderContents. Parent (propiedad)
+title: Propiedad WebViewFolderContents.Parent
+description: Propiedad WebViewFolderContents.Parent
 ms.assetid: f70820ee-1654-4678-8840-1a03a3bc867b
 keywords:
-- Propiedades principales características de entorno de Windows heredadas
-- Propiedad primaria características de entorno de Windows heredadas, objeto WebViewFolderContents
-- Objeto WebViewFolderContents características de entorno de Windows heredadas, propiedad Parent
+- Características del entorno de Windows propiedad principal
+- Propiedad principal Legacy Windows Environment Features , Objeto WebViewFolderContents
+- Objeto WebViewFolderContents Heredado de Windows Environment Features , Propiedad primaria
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,20 +13,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: f11aeddf9f062d6ec43fc1d8695f30df5da61fa7
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 1a6b3409432fda53bed63fad311921bb72f281de8acf473cd0d77ed36eafbdc2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104358202"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119715704"
 ---
-# <a name="webviewfoldercontentsparent-property"></a>WebViewFolderContents. Parent (propiedad)
+# <a name="webviewfoldercontentsparent-property"></a>Propiedad WebViewFolderContents.Parent
 
 Esta propiedad no está implementada.
 
- 
+ 
 
- 
+ 
 
 
 

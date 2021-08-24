@@ -4,12 +4,12 @@ ms.assetid: 1cca3539-a920-4938-93b9-ae41e1c0a287
 title: Tipos de medios principales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 56553ac635f0e767e43e057b2a468027dcefb730
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: ec660dcb86cfd1da5a80bef106ee8ddd17cf1e89899fea6b824fba5ab9be04e6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110549580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119715305"
 ---
 # <a name="major-media-types"></a>Tipos de medios principales
 
@@ -41,10 +41,10 @@ Se definen los siguientes tipos principales.
 | **Imagen \_ MFMediaType**        | Todavía secuencia de imágenes.                                                                                                                                        | [GUID de WIC y CLID](../wic/-wic-guids-clsids.md).       |
 | **Metadatos de MFMediaType \_**        | Flujo de metadatos.                                                                                                                                        | Ninguno.       |
 | **MFMediaType \_ Protected**    | Medios protegidos.                                                                                                                                           | El subtipo especifica el esquema de protección de contenido. |
-| **MFMediaType \_ Perception**   | Secuencias desde un sensor de cámara o una unidad de procesamiento que explican y entienden los datos de vídeo sin procesar y proporcionan información sobre el entorno o los seres humanos que contiene. | Ninguno.                                                |
-| **MFMediaType \_ SAMI**         | Títulos de intercambio multimedia accesible sincronizado (SAMI).                                                                                                 | Ninguno.                                                |
+| **MFMediaType \_ Perception**   | Secuencias desde un sensor de cámara o una unidad de procesamiento que razones y comprenden los datos de vídeo sin procesar y proporcionan comprensión del entorno o de los seres humanos que contiene. | Ninguno.                                                |
+| **MFMediaType \_ SAMI**         | Subtítulos sincronizados de intercambio multimedia accesible (SAMI).                                                                                                 | Ninguno.                                                |
 | **MFMediaType \_ Script**       | Secuencia de scripts.                                                                                                                                             | Ninguno.                                                |
-| **Flujo \_ MFMediaType**       | Secuencia multiplexada o secuencia elemental.                                                                                                                   | [GUID de subtipo de secuencia](stream-subtype-guids.md)     |
+| **MFMediaType \_ Stream**       | Flujo multiplexado o flujo elemental.                                                                                                                   | [GUID de subtipo de secuencia](stream-subtype-guids.md)     |
 | **VÍDEO \_ MFMediaType**        | Video.                                                                                                                                                     | [GUID de subtipo de vídeo](video-subtype-guids.md).      |
 
 

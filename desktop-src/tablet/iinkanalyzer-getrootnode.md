@@ -1,7 +1,7 @@
 ---
 description: Obtiene el IContextNode raíz del árbol de contexto del objeto IInkAnalyzer.
 ms.assetid: 6c073952-7962-4f38-89ae-f543e64e904f
-title: 'IInkAnalyzer:: GetRootNode (método) (IACom. h)'
+title: Método IInkAnalyzer::GetRootNode (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 280c1907558372d247f25a0f760990d7c3c53a07
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ff2181eacd3df1d2815448a0c2d7cafce4d521fa0abbc7b26492d9c078982dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696522"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119713425"
 ---
-# <a name="iinkanalyzergetrootnode-method"></a>IInkAnalyzer:: GetRootNode (método)
+# <a name="iinkanalyzergetrootnode-method"></a>IInkAnalyzer::GetRootNode (método)
 
-Obtiene el [**IContextNode**](icontextnode.md) raíz del árbol de contexto del objeto [**IInkAnalyzer**](iinkanalyzer.md) .
+Obtiene el [**IContextNode raíz**](icontextnode.md) del árbol de contexto del objeto [**IInkAnalyzer.**](iinkanalyzer.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,32 +39,32 @@ HRESULT GetRootNode(
 
 <dl> <dt>
 
-*ppRootNode* \[ enuncia\]
+*ppRootNode* \[ out\]
 </dt> <dd>
 
-[**IContextNode**](icontextnode.md) raíz del árbol de contexto del objeto [**IInkAnalyzer**](iinkanalyzer.md) .
+[**IContextNode raíz**](icontextnode.md) del árbol de contexto del objeto [**IInkAnalyzer.**](iinkanalyzer.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Caution]  
-> Para evitar una pérdida de memoria, llame a [**IUnknown:: Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) en *ppRootNode* cuando ya no necesite usar el nodo raíz.
+> Para evitar una pérdida de memoria, llame a [**IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) en *ppRootNode* cuando ya no necesite usar el nodo raíz.
 
  
 
-[**IInkAnalyzer**](iinkanalyzer.md) mantiene un árbol de objetos [**IContextNode**](icontextnode.md) . Estos objetos contienen la entrada para el análisis y los resultados del análisis. Cuando los trazos se agregan inicialmente al **IInkAnalyzer**, el **IInkAnalyzer** los asigna a un **IContextNode** de tipo UnclassifiedInk (vea [**IContextNode:: GetType**](icontextnode-gettype.md) y tipos de nodo de [contexto](context-node-types.md)). Una vez analizados los trazos, el **IInkAnalyzer** los asigna a los objetos **IContextNode** adecuados en el árbol. Para obtener más información sobre el uso de **IInkAnalyzer** para analizar la entrada de lápiz, consulte [información general del análisis de tinta](ink-analysis-overview.md).
+[**IInkAnalyzer**](iinkanalyzer.md) mantiene un árbol de [**objetos IContextNode.**](icontextnode.md) Estos objetos contienen entradas para el análisis y los resultados del análisis. Cuando los trazos se agregan inicialmente a **IInkAnalyzer,** **IInkAnalyzer** los asigna a un **IContextNode** de tipo UnclassifiedInk (vea [**IContextNode::GetType**](icontextnode-gettype.md) y Tipos de nodo de [contexto).](context-node-types.md) Después de analizar los trazos, **IInkAnalyzer** los asigna a los objetos **IContextNode** adecuados del árbol. Para obtener más información sobre el uso de **IInkAnalyzer para** analizar la entrada de lápiz, vea [Ink Analysis Overview](ink-analysis-overview.md).
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra un método que recorre el árbol de resultados [**IContextNode**](icontextnode.md) del analizador de tinta. Si el IInkAnlyzer no está realizando actualmente el análisis de tinta, el método hace lo siguiente.
+En el ejemplo siguiente se muestra un método que recorre el árbol de resultados [**de IContextNode**](icontextnode.md) del analizador de entrada manuscrita. Si IInkAnlyzer no está realizando actualmente análisis de entrada de lápiz, el método hace lo siguiente.
 
 -   Obtiene la cadena de reconocimiento superior.
--   Obtiene el nodo raíz del analizador de tinta.
+-   Obtiene el nodo raíz del analizador de entrada de lápiz.
 -   Llama a un método auxiliar, `ExploreContextNode` , para examinar el nodo raíz y sus nodos secundarios.
 
 
@@ -125,11 +125,11 @@ HRESULT CMyClass::ExploreAnalysisResults(
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -147,7 +147,7 @@ HRESULT CMyClass::ExploreAnalysisResults(
 [Tipos de nodo de contexto](context-node-types.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

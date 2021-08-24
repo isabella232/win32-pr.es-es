@@ -1,17 +1,17 @@
 ---
 description: Especifica si el localizador de proxy predeterminado debe forzar la detección automática del proxy.
 ms.assetid: ab547a92-94a2-482e-b7ac-aeb3fdfb6b91
-title: Propiedad MFNETSOURCE_PROXYRERUNAUTODETECTION (Mfidl. h)
+title: MFNETSOURCE_PROXYRERUNAUTODETECTION propiedad (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 37021c7e96b135389f0dffa2f8c26b8067df2b7a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3351766302952390bbe67ea2d86cd76e93b9267328fe2c07e2656a38b3fd2906
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104544326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119713995"
 ---
-# <a name="mfnetsource_proxyrerunautodetection-property"></a>\_Propiedad PROXYRERUNAUTODETECTION de MFNETSOURCE
+# <a name="mfnetsource_proxyrerunautodetection-property"></a>Propiedad MFNETSOURCE \_ PROXYRERUNAUTODETECTION
 
 Especifica si el localizador de proxy predeterminado debe forzar la detección automática del proxy.
 
@@ -19,11 +19,11 @@ Especifica si el localizador de proxy predeterminado debe forzar la detección a
 
 Tipo de datos
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 Miembro de PROPVARIANT
 
-Booleano (**Long**)
+Booleano (**LONG**)
 
 VT \_ I4
 
@@ -31,11 +31,11 @@ VT \_ I4
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La constante **MFNETSOURCE \_ PROXYSETTINGS** define el GUID para esta clave de propiedad. El identificador de propiedad (PID) es cero.
+La constante **MFNETSOURCE \_ PROXYSETTINGS** define el GUID de esta clave de propiedad. El identificador de propiedad (PID) es cero.
 
-Las aplicaciones pueden utilizar esta propiedad para configurar el localizador de proxy al crear el objeto de localizador de proxy. Para establecer la propiedad, pase un puntero **IPropertyStore** en el parámetro *pProxyConfig* de la función [**MFCreateProxyLocator**](/windows/desktop/api/mfidl/nf-mfidl-mfcreateproxylocator) . En el modo de detección automática, el localizador proxy utiliza el mecanismo de detección de proxy WinInet. Para forzar la detección automática, establezca el valor en 0.
+Las aplicaciones pueden usar esta propiedad para configurar el localizador de proxy al crear el objeto de localizador de proxy. Para establecer la propiedad , pase un **puntero IPropertyStore** en el *parámetro pProxyConfig* de la [**función MFCreateProxyLocator.**](/windows/desktop/api/mfidl/nf-mfidl-mfcreateproxylocator) En el modo de detección automática, el localizador de proxy usa el mecanismo de detección de proxy WinInet. Para forzar la detección automática, establezca el valor en 0.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,9 +43,9 @@ Las aplicaciones pueden utilizar esta propiedad para configurar el localizador d
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -53,10 +53,10 @@ Las aplicaciones pueden utilizar esta propiedad para configurar el localizador d
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> <dt>
 
-[Funciones de red en Media Foundation](networking-in-media-foundation.md)
+[Redes en Media Foundation](networking-in-media-foundation.md)
 </dt> <dt>
 
 [Compatibilidad con proxy para orígenes de red](proxy-support-for-network-sources.md)

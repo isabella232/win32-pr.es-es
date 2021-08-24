@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentDatabaseSignInUseException'
-title: Constructor de EsentDatabaseSignInUseException
+description: 'Más información sobre: Constructor EsentDatabaseSignInUseException'
+title: Constructor EsentDatabaseSignInUseException
 TOCTitle: 'EsentDatabaseSignInUseException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentDatabaseSignInUseException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentdatabasesigninuseexception.esentdatabasesigninuseexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 62948d9d338542ce39643839568fbd8f3b4c7694
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 965bbddfa99555481ac8a642ddab2cf8485a0bf0f794d81451e58a071d186654
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119735695"
 ---
-# <a name="esentdatabasesigninuseexception-constructor"></a>Constructor de EsentDatabaseSignInUseException
+# <a name="esentdatabasesigninuseexception-constructor"></a>Constructor EsentDatabaseSignInUseException
 
 Inicializa una nueva instancia de la clase EsentDatabaseSignInUseException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentDatabaseSignInUseException()
 public EsentDatabaseSignInUseException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentDatabaseSignInUseException()
 
 [Miembros de EsentDatabaseSignInUseException](./esentdatabasesigninuseexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,7 +1,7 @@
 ---
-description: Hora de inicio del medio.
+description: Hora de inicio de los medios.
 ms.assetid: 04ae3862-00b1-4c99-b535-756067cdf4c4
-title: 'Miembro CMediaSample:: m_MediaStart (Amfilter. h)'
+title: CMediaSample::m_MediaStart miembro (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6878f24a13c660eb5fb0560152e334547a248036
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5c564b85843b93364daf55f31f17e33ef4e7d60a1653dd4fa70cf0fb59b62034
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670465"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634595"
 ---
-# <a name="cmediasamplem_mediastart-member"></a>Miembro MediaStart CMediaSample:: m \_
+# <a name="cmediasamplem_mediastart-member"></a>Miembro De MediaStart de CMediaSample::m \_
 
-Hora de inicio del medio.
+Hora de inicio de los medios.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ LONGLONG m_MediaStart;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ LONGLONG m_MediaStart;
 
 <dl> <dt>
 
-[**Clase CMediaSample**](cmediasample.md)
+[**CMediaSample (clase)**](cmediasample.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: El numerador de PKEY \_ Photo \_ DigitalZoom.
+description: Numerador de PKEY \_ Photo \_ DigitalZoom.
 ms.assetid: d497d550-88bf-49dc-99d2-464a7caaac5f
-title: System. Photo. DigitalZoomNumerator
+title: System.Photo.DigitalZoomNumerator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 373c220fe6261b0fe4d01a79b97f64e8560be7c3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d555fbab7118b606dc8bbca8784099a7d69b76d1b48f3fee130401e7b918ce5b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105697093"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119716505"
 ---
-# <a name="systemphotodigitalzoomnumerator"></a>System. Photo. DigitalZoomNumerator
+# <a name="systemphotodigitalzoomnumerator"></a>System.Photo.DigitalZoomNumerator
 
-El numerador de PKEY \_ Photo \_ DigitalZoom.
+Numerador de PKEY \_ Photo \_ DigitalZoom.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -30,9 +30,9 @@ propertyDescription
       type = UInt32
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

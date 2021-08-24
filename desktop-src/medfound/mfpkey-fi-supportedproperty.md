@@ -1,17 +1,17 @@
 ---
 description: Especifica si el descodificador admite la interpolación de fotogramas.
 ms.assetid: cc7fb83d-8423-4e0a-a520-b58d3345ef89
-title: Propiedad MFPKEY_FI_SUPPORTED (Wmcodecdsp. h)
+title: MFPKEY_FI_SUPPORTED propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1bd056ec0895b63d315c5f3371ab7befff7ca85a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4504e3bf6b6010fb27c08750e521aaa740b05f78c434dfac5a11ffacbbd66327
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649668"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119713955"
 ---
-# <a name="mfpkey_fi_supported-property"></a>\_ \_ Propiedad compatible con MFPKEY fi
+# <a name="mfpkey_fi_supported-property"></a>Propiedad COMPATIBLE con \_ MFPKEY FI \_
 
 Especifica si el descodificador admite la interpolación de fotogramas.
 
@@ -21,11 +21,11 @@ Especifica si el descodificador admite la interpolación de fotogramas.
 
 ## <a name="data-type"></a>Tipo de datos
 
-**VT \_ bool**
+**VT \_ BOOL**
 
 ## <a name="default-value"></a>Valor predeterminado
 
-**VARIANTE \_ false**
+**VARIANT \_ FALSE**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -33,8 +33,8 @@ Especifica si el descodificador admite la interpolación de fotogramas.
 
 | Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Remoto<br/> | Windows XP, Windows Vista o Windows 7<br/>                                       |
-| Encabezado<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente<br/> | Windows XP, Windows Vista o Windows 7<br/>                                       |
+| Header<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -42,10 +42,10 @@ Especifica si el descodificador admite la interpolación de fotogramas.
 
 <dl> <dt>
 
-[**MFPKEY \_ fi \_ habilitado**](mfpkey-fi-enabledproperty.md)
+[**MFPKEY \_ FI \_ HABILITADO**](mfpkey-fi-enabledproperty.md)
 </dt> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

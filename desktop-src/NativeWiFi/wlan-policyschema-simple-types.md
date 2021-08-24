@@ -1,7 +1,7 @@
 ---
-description: 'Más información sobre: WLAN_policy tipos simples de esquemas'
+description: 'Más información sobre: tipos simples WLAN_policy esquema'
 ms.assetid: d964a84c-a2a1-4584-8f49-05bb271466a6
-title: Tipos simples de esquema de WLAN_policy
+title: WLAN_policy simples de esquema
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: a3046c6c863552b8d51bd4598a6511508cd8e626
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 91b1696d63374d3085e995f8e625ef697100a1eea60c09ecf7b8132436b70f89
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687134"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119799945"
 ---
-# <a name="wlan_policy-schema-simple-types"></a>\_Tipos simples de esquema de directiva de WLAN
+# <a name="wlan_policy-schema-simple-types"></a>Tipos simples de esquema de directiva WLAN \_
 
-El esquema de la Directiva de WLAN \_ define los siguientes tipos simples:
+El esquema \_ de directiva WLAN define los siguientes tipos simples:
 
 -   [**nameType**](wlan-policyschema-nametype-simpletype.md)
 -   [**networkNameType**](wlan-policyschema-networknametype-simpletype.md)
