@@ -1,9 +1,9 @@
 ---
-title: Mensaje de SB_SETTIPTEXT (commctrl. h)
-description: Establece el texto de información sobre herramientas para un elemento de una barra de estado. La barra de estado se debe haber creado con el \_ estilo de información sobre herramientas de SBT para habilitar la información sobre herramientas.
+title: SB_SETTIPTEXT mensaje (Commctrl.h)
+description: Establece el texto de información sobre herramientas de un elemento en una barra de estado. La barra de estado debe haber sido creada con el estilo SBT \_ TOOLTIPS para habilitar la información sobre herramientas.
 ms.assetid: 8fc3cc00-9742-4861-b2c2-b8aa30f75aaa
 keywords:
-- SB_SETTIPTEXT controles de mensajes de Windows
+- SB_SETTIPTEXT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 52d5ddb3f4fdfe18525e2b444438295f8a926180
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 864ba53066b000f9f7ae65365341238a701b4e70bc4ce8cc70adba923d57a5f9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491987"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119637025"
 ---
-# <a name="sb_settiptext-message"></a>\_Mensaje SETTIPTEXT de SB
+# <a name="sb_settiptext-message"></a>Mensaje \_ SB SETTIPTEXT
 
-Establece el texto de información sobre herramientas para un elemento de una barra de estado. La barra de estado se debe haber creado con el estilo de [**\_ información sobre herramientas de SBT**](status-bar-styles.md) para habilitar la información sobre herramientas.
+Establece el texto de información sobre herramientas de un elemento en una barra de estado. La barra de estado debe haber sido creada con el estilo [**SBT \_ TOOLTIPS**](status-bar-styles.md) para habilitar la información sobre herramientas.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -34,7 +34,7 @@ Establece el texto de información sobre herramientas para un elemento de una ba
 *wParam* 
 </dt> <dd>
 
-Índice de base cero del elemento que recibirá el texto de información sobre herramientas.
+Índice de base cero del elemento que recibirá el texto de la información sobre herramientas.
 
 </dd> <dt>
 
@@ -47,9 +47,9 @@ Puntero a un búfer de caracteres que contiene el nuevo texto de información so
 
 ## <a name="return-value"></a>Valor devuelto
 
-No se utiliza el valor devuelto.
+No se usa el valor devuelto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este texto de información sobre herramientas se muestra en dos situaciones:
 
@@ -62,9 +62,9 @@ Este texto de información sobre herramientas se muestra en dos situaciones:
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **SB \_ SETTIPTEXTW** (Unicode) y **SB \_ SETTIPTEXTA** (ANSI)<br/>               |
 
 

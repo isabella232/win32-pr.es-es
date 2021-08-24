@@ -1,5 +1,5 @@
 ---
-description: 'Método TakeOwnerShip de CIM_Directory clase : el método TakeOwnerShip obtiene la propiedad del archivo lógico especificado en la ruta de acceso del objeto.'
+description: 'Método TakeOwnerShip de la CIM_Directory : el método TakeOwnerShip obtiene la propiedad del archivo lógico especificado en la ruta de acceso del objeto.'
 ms.assetid: 053647d0-3ba0-4cd4-a84a-a1a96ef7151c
 ms.tgt_platform: multiple
 title: Método TakeOwnerShip de la CIM_Directory clase
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 12c328f30e56db348b018b73b02aa4320bf99505
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7f994c858b9a2817ac89a5d5c6db794e054652fb2a57c69404030074ad14cd45
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086063"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119800755"
 ---
-# <a name="takeownership-method-of-the-cim_directory-class"></a>Método TakeOwnerShip de la clase \_ De directorio CIM
+# <a name="takeownership-method-of-the-cim_directory-class"></a>Método TakeOwnerShip de la clase \_ Cim Directory
 
 El **método TakeOwnerShip** obtiene la propiedad del archivo lógico especificado en la ruta de acceso del objeto. Si el archivo lógico es un directorio, este método actúa de forma recursiva, tomando posesión de todos los archivos y subdirectorios que contiene el directorio. Este método se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-En este tema se usa Managed Object Format sintaxis MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,7 +61,7 @@ Correcto.
 **2**
 </dt> <dd>
 
-Acceso denegado.
+Acceso denegado:
 
 </dd> <dt>
 
@@ -89,14 +89,14 @@ El objeto ya existe.
 **11**
 </dt> <dd>
 
-El sistema de archivos no es NTFS.
+Sistema de archivos no NTFS.
 
 </dd> <dt>
 
 **12**
 </dt> <dd>
 
-La plataforma no es Windows.
+La plataforma no está Windows.
 
 </dd> <dt>
 
@@ -131,7 +131,7 @@ Archivo de inicio no válido.
 **17**
 </dt> <dd>
 
-Privilegios no mantenidos.
+Privilegio no mantenido.
 
 </dd> <dt>
 
@@ -187,7 +187,7 @@ wscript.echo objOutParams.ReturnValue
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

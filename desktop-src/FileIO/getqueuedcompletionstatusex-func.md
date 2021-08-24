@@ -1,7 +1,7 @@
 ---
-description: Recupera simultáneamente varias entradas del puerto de finalización.
+description: Recupera varias entradas de puerto de finalización simultáneamente.
 ms.assetid: 3996c02c-562c-4697-a091-e241ad54b239
-title: Función GetQueuedCompletionStatusEx (IoAPI. h)
+title: Función GetQueuedCompletionStatusEx (IoAPI.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,18 +18,18 @@ api_location:
 - MinKernelBase.dll
 - API-MS-Win-Core-io-l1-1-1.dll
 - api-ms-win-downlevel-kernel32-l1-1-0.dll
-ms.openlocfilehash: d45471cc066e6de7cb388036e06e727fe828a532
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f81bc0c997e3637fa941cb5a23f6394ba1f585566c8d633cadb00c9fd75ac805
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669693"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119696125"
 ---
-# <a name="getqueuedcompletionstatusex-function"></a>GetQueuedCompletionStatusEx función)
+# <a name="getqueuedcompletionstatusex-function"></a>Función GetQueuedCompletionStatusEx
 
-Recupera simultáneamente varias entradas del puerto de finalización. Espera a que se completen las operaciones de e/s pendientes asociadas al puerto de finalización especificado.
+Recupera varias entradas de puerto de finalización simultáneamente. Espera a que se completen las operaciones de E/S pendientes asociadas al puerto de finalización especificado.
 
-Para quitar de la cola los paquetes de finalización de e/s de uno en uno, use la función [**GetQueuedCompletionStatus**](/windows/win32/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus) .
+Para quitar de la cola los paquetes de finalización de E/S de uno en uno, use la [**función GetQueuedCompletionStatus.**](/windows/win32/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,61 +51,61 @@ BOOL WINAPI GetQueuedCompletionStatusEx(
 
 <dl> <dt>
 
-*CompletionPort* \[ de\]
+*CompletionPort* \[ En\]
 </dt> <dd>
 
-Identificador del puerto de finalización. Para crear un puerto de finalización, utilice la función [**CreateIoCompletionPort**](createiocompletionport.md) .
+Identificador del puerto de finalización. Para crear un puerto de finalización, use [**la función CreateIoCompletionPort.**](createiocompletionport.md)
 
 </dd> <dt>
 
-*lpCompletionPortEntries* \[ enuncia\]
+*lpCompletionPortEntries* \[ out\]
 </dt> <dd>
 
-En la entrada, apunta a una matriz preasignada de estructuras de [**\_ entrada superpuestas**](/windows/desktop/api/MinWinBase/ns-minwinbase-overlapped_entry) .
+En la entrada, apunta a una matriz preasignada de [**estructuras OVERLAPPED \_ ENTRY.**](/windows/desktop/api/MinWinBase/ns-minwinbase-overlapped_entry)
 
-En la salida, recibe una matriz de estructuras de [**\_ entrada superpuestas**](/windows/desktop/api/MinWinBase/ns-minwinbase-overlapped_entry) que contienen las entradas. El número de elementos de matriz lo proporciona *ulNumEntriesRemoved*.
+En la salida, recibe una matriz de [**estructuras OVERLAPPED \_ ENTRY**](/windows/desktop/api/MinWinBase/ns-minwinbase-overlapped_entry) que contiene las entradas. *UlNumEntriesRemoved* proporciona el número de elementos de matriz.
 
-Número de bytes transferidos durante cada operación de e/s, la clave de finalización que indica en qué archivo se produjo cada e/s y la dirección de la estructura superpuesta utilizada en cada e/s original se devuelve en la matriz *lpCompletionPortEntries* .
+El número de bytes transferidos durante cada E/S, la clave de finalización que indica en qué archivo se produjo cada E/S y la dirección de estructura superpuesta usada en cada E/S original se devuelven en la matriz *lpCompletionPortEntries.*
 
 </dd> <dt>
 
-*ulCount* \[ de\]
+*ulCount* \[ En\]
 </dt> <dd>
 
-Número máximo de entradas que se van a quitar.
+Número máximo de entradas que se quitarán.
 
 </dd> <dt>
 
-*ulNumEntriesRemoved* \[ enuncia\]
+*ulNumEntriesRemoved* \[ out\]
 </dt> <dd>
 
-Puntero a una variable que recibe el número de entradas realmente quitadas.
+Puntero a una variable que recibe el número de entradas quitadas realmente.
 
 </dd> <dt>
 
-*dwMilliseconds* \[ de\]
+*dwMilliseconds* \[ En\]
 </dt> <dd>
 
-Número de milisegundos que el llamador está dispuesto a esperar a que aparezca un paquete de finalización en el puerto de finalización. Si un paquete de finalización no aparece en el tiempo especificado, la función agota el tiempo de espera y devuelve **false**.
+Número de milisegundos que el autor de la llamada está dispuesto a esperar a que aparezca un paquete de finalización en el puerto de finalización. Si un paquete de finalización no aparece dentro del tiempo especificado, la función se completa con el tiempo de espera y devuelve **FALSE.**
 
-Si *dwMilliseconds* es **infinito** (0xFFFFFFFF), la función nunca agotará el tiempo de espera. Si *dwMilliseconds* es cero y no hay ninguna operación de e/s para quitar de la cola, se agotará el tiempo de espera de la función de inmediato.
+Si *dwMilliseconds* es **INFINITE** (0xFFFFFFFF), la función nunca pasará el tiempo de espera. Si *dwMilliseconds* es cero y no hay ninguna operación de E/S para quitar de la cola, la función se tiempo de espera inmediatamente.
 
 </dd> <dt>
 
-*fAlertable* \[ de\]
+*fAlertable* \[ En\]
 </dt> <dd>
 
-Si este parámetro es **false**, la función no devuelve ningún resultado hasta que haya transcurrido el período de tiempo de espera o se haya recuperado una entrada.
+Si este parámetro es **FALSE**, la función no se devuelve hasta que haya transcurrido el período de tiempo de espera o se recupere una entrada.
 
-Si el parámetro es **true** y no hay ninguna entrada disponible, la función realiza una espera de alerta. El subproceso devuelve cuando el sistema pone en cola una rutina de finalización de e/s o APC en el subproceso y el subproceso ejecuta la función.
+Si el parámetro es **TRUE** y no hay ninguna entrada disponible, la función realiza una espera que se puede alertar. El subproceso devuelve cuando el sistema pone en cola una rutina de finalización de E/S o APC en el subproceso y el subproceso ejecuta la función .
 
-Una rutina de finalización se pone en cola cuando se ha completado la función [**ReadFileEx**](/windows/desktop/api/FileAPI/nf-fileapi-readfileex) o [**WriteFileEx**](/windows/desktop/api/FileAPI/nf-fileapi-writefileex) en la que se especificó, y el subproceso que realiza la llamada es el subproceso que inició la operación. Un APC se pone en cola cuando se llama a [**QueueUserAPC**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-queueuserapc).
+Una rutina de finalización se pone en cola cuando se ha completado la función [**ReadFileEx**](/windows/desktop/api/FileAPI/nf-fileapi-readfileex) o [**WriteFileEx**](/windows/desktop/api/FileAPI/nf-fileapi-writefileex) en la que se especificó y el subproceso que realiza la llamada es el subproceso que inició la operación. Un APC se pone en cola cuando se llama a [**QueueUserAPC.**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-queueuserapc)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor distinto de cero (**true**) si es correcto o cero (**false**) en caso contrario.
+Devuelve un valor distinto de cero (**TRUE**) si es correcto o cero (**FALSE**) de lo contrario.
 
 Para obtener información de error extendida, llame a [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
@@ -113,26 +113,26 @@ Para obtener información de error extendida, llame a [**GetLastError**](/window
 
 Esta función asocia un subproceso al puerto de finalización especificado. Un subproceso se puede asociar a un puerto de finalización como máximo.
 
-Esta función devuelve **true** cuando se ha completado al menos una e/s pendiente, pero es posible que se haya producido un error en una o varias operaciones de e/s. Tenga en cuenta que el usuario de esta función puede comprobar la lista de entradas devueltas en el parámetro *lpCompletionPortEntries* para determinar cuáles se corresponden con las posibles operaciones de e/s con errores examinando el estado contenido en el miembro **lpOverlapped** de cada [**\_ entrada superpuesta**](/windows/desktop/api/MinWinBase/ns-minwinbase-overlapped_entry).
+Esta función devuelve **TRUE cuando** se completa al menos una E/S pendiente, pero es posible que se haya realizado un error en una o varias operaciones de E/S. Tenga en cuenta que es el usuario de esta función quien debe comprobar la lista de entradas devueltas en el parámetro *lpCompletionPortEntries* para determinar cuál de ellas corresponde a las posibles operaciones de E/S con error al consultar el estado contenido en el miembro **lpOverlapped** en cada [**OVERLAPPED \_ ENTRY.**](/windows/desktop/api/MinWinBase/ns-minwinbase-overlapped_entry)
 
-Esta función devuelve **false** cuando no se quitó la cola de ninguna operación de e/s. Esto suele significar que se ha producido un error al procesar los parámetros de esta llamada o que el identificador *CompletionPort* se cerró o no es válido. La función [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) proporciona información de error extendida.
+Esta función devuelve **FALSE cuando** no se ha descolado ninguna operación de E/S. Esto suele significar que se produjo un error al procesar los parámetros para esta llamada, o que el identificador *CompletionPort* se cerró o no es válido de otro modo. La [**función GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) proporciona información de error extendida.
 
-Si se produce un error en una llamada a [**GetQueuedCompletionStatusEx**](/windows/win32/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus) porque el identificador asociado a él está cerrado, la función devuelve **false** y [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) devolverá el error que se ha **\_ abandonado \_ Wait \_ 0**.
+Si se produce un error en una llamada a [**GetQueuedCompletionStatusEx**](/windows/win32/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus) porque el identificador asociado a él está cerrado, la función devuelve **FALSE** y [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) devolverá **ERROR \_ ABANDONED \_ WAIT \_ 0.**
 
-Las aplicaciones de servidor pueden tener varios subprocesos que llaman a la función **GetQueuedCompletionStatusEx** para el mismo puerto de finalización. A medida que se completan las operaciones de e/s, se ponen en cola en este puerto en el orden de los primeros en salir. Si un subproceso está esperando activamente en esta llamada, una o varias solicitudes en cola completan la llamada solo para ese subproceso.
+Las aplicaciones de servidor pueden tener varios subprocesos que llaman a la función **GetQueuedCompletionStatusEx** para el mismo puerto de finalización. A medida que se completan las operaciones de E/S, se ponen en cola en este puerto en orden primero en salir. Si un subproceso está esperando activamente esta llamada, una o varias solicitudes en cola completan la llamada solo para ese subproceso.
 
-Para obtener más información sobre la teoría del puerto de finalización de e/s, el uso y las funciones asociadas, consulte [puertos de finalización de e/s](i-o-completion-ports.md).
+Para obtener más información sobre la teoría del puerto de finalización de E/S, el uso y las funciones asociadas, vea [Puertos de finalización de E/S.](i-o-completion-ports.md)
 
 En Windows 8 y Windows Server 2012, esta función es compatible con las siguientes tecnologías.
 
 
 
-| Technology                                           | Compatible      |
+| Tecnología                                           | Compatible      |
 |------------------------------------------------------|----------------|
-| Protocolo bloque de mensajes del servidor (SMB) 3,0<br/>   | Sí<br/> |
-| Conmutación por error transparente SMB 3,0 (TFO)<br/>        | Sí<br/> |
-| SMB 3,0 con recursos compartidos de archivos de escalabilidad horizontal (por lo tanto)<br/>   | Sí<br/> |
-| Sistema de archivos Volumen compartido de clúster (CsvFS)<br/> | Sí<br/> |
+| Protocolo bloque de mensajes de servidor (SMB) 3.0<br/>   | Sí<br/> |
+| Conmutación por error transparente (TFO) de SMB 3.0<br/>        | Sí<br/> |
+| SMB 3.0 con recursos compartidos de archivos de escalabilidad horizontal (SO)<br/>   | Sí<br/> |
+| Volumen compartido de clúster file system (CsvFS)<br/> | Sí<br/> |
 | Sistema de archivos resistente a errores (ReFS)<br/>              | Sí<br/> |
 
 
@@ -143,11 +143,11 @@ En Windows 8 y Windows Server 2012, esta función es compatible con las siguient
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Vista \|\]<br/>                                                                                                                                                                                                                   |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2008 \|\]<br/>                                                                                                                                                                                                             |
-| Encabezado<br/>                   | <dl> <dt>IoAPI. h (incluye Windows. h); </dt> <dt>Winbase. h en Windows server 2008 R2, Windows 7, Windows server 2008 y Windows Vista (incluido Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                                                                                                                                                                                                                   |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| aplicaciones para UWP\]<br/>                                                                                                                                                                                                             |
+| Header<br/>                   | <dl> <dt>IoAPI.h (incluir Windows.h);</dt> <dt>WinBase.h en Windows Server 2008 R2, Windows 7, Windows Server 2008 y Windows Vista (incluido Windows.h)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Kernel32.lib</dt> </dl>                                                                                                                                                                                 |
 | Archivo DLL<br/>                      | <dl> <dt>Kernel32.dll</dt> </dl>                                                                                                                                                                                 |
 
@@ -163,10 +163,10 @@ En Windows 8 y Windows Server 2012, esta función es compatible con las siguient
 [Funciones de administración de archivos](file-management-functions.md)
 </dt> <dt>
 
-[Puertos de finalización de e/s](i-o-completion-ports.md)
+[Puertos de finalización de E/S](i-o-completion-ports.md)
 </dt> <dt>
 
-[Usar los encabezados de Windows](/windows/desktop/WinProg/using-the-windows-headers)
+[Uso de los Windows encabezados](/windows/desktop/WinProg/using-the-windows-headers)
 </dt> <dt>
 
 **Funciones**

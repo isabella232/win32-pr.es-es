@@ -1,7 +1,7 @@
 ---
 description: Modifica la configuración de características de un puerto de conmutador Ethernet.
 ms.assetid: 8c21a932-fffb-40fd-9166-d7e351329217
-title: Método ModifyFeatureSettings de la clase Msvm_VirtualEthernetSwitchManagementService
+title: Método ModifyFeatureSettings de la Msvm_VirtualEthernetSwitchManagementService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 0bee92019f9457a42a0c87ab619f7de1f7d203ab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f400ec4ef7318a51fde09defee96112bf2247c897a323509084731974af88d9e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687784"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119694205"
 ---
-# <a name="modifyfeaturesettings-method-of-the-msvm_virtualethernetswitchmanagementservice-class"></a>Método ModifyFeatureSettings de la \_ clase VirtualEthernetSwitchManagementService de MSVM
+# <a name="modifyfeaturesettings-method-of-the-msvm_virtualethernetswitchmanagementservice-class"></a>Método ModifyFeatureSettings de la clase \_ Msvm VirtualEthernetSwitchManagementService
 
 Modifica la configuración de características de un puerto de conmutador Ethernet.
 
@@ -41,24 +41,24 @@ uint32 ModifyFeatureSettings(
 
 <dl> <dt>
 
-*FeatureSettings* \[ de\]
+*FeatureSettings* \[ En\]
 </dt> <dd>
 
-Matriz de cadenas que contiene una instancia incrustada de una clase derivada de la clase [**MSVM \_ FeatureSettingData**](msvm-featuresettingdata.md) , que describe la configuración de las características del puerto del conmutador que se va a modificar.
+Matriz de cadenas que contienen una instancia incrustada de una clase derivada de la clase [**\_ FeatureSettingData de Msvm,**](msvm-featuresettingdata.md) que describe la configuración de la característica de puerto switch que se va a modificar.
 
 </dd> <dt>
 
-*ResultingFeatureSettings* \[ enuncia\]
+*ResultingFeatureSettings* \[ out\]
 </dt> <dd>
 
-Una matriz de referencias a las instancias de la clase [**MSVM \_ FeatureSettingData**](msvm-featuresettingdata.md) que representan la configuración de características modificada.
+Matriz de referencias a instancias de la clase [**\_ FeatureSettingData de Msvm**](msvm-featuresettingdata.md) que representan la configuración de características modificada.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ ConcreteJob CIM**](/previous-versions//cc136808(v=vs.85)).
+Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
 
 </dd> </dl>
 
@@ -77,7 +77,7 @@ Este método devuelve uno de los valores siguientes.
 **Error** (2)
 </dt> <dt>
 
-**Tiempo de espera** (3)
+**Tiempo de** espera (3)
 </dt> <dt>
 
 **Parámetro no válido** (4)
@@ -92,13 +92,13 @@ Este método devuelve uno de los valores siguientes.
 **DMTF reservado** (..)
 </dt> <dt>
 
-**Parámetros de método comprobados: trabajo iniciado** (4096)
+**Parámetros de método activados: trabajo iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (de no.. 32767)
+**Método reservado** (4097..32767)
 </dt> <dt>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -107,10 +107,10 @@ Este método devuelve uno de los valores siguientes.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -125,7 +125,7 @@ Este método devuelve uno de los valores siguientes.
 [**RemoveFeatureSettings**](removefeaturesettings-msvm-virtualethernetswitchmanagementservice.md)
 </dt> <dt>
 
-[**MSVM \_ VirtualEthernetSwitchManagementService**](msvm-virtualethernetswitchmanagementservice.md)
+[**Msvm \_ VirtualEthernetSwitchManagementService**](msvm-virtualethernetswitchmanagementservice.md)
 </dt> </dl>
 
  

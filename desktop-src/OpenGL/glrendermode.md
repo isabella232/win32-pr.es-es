@@ -1,9 +1,9 @@
 ---
-title: función glRenderMode (GL. h)
+title: Función glRenderMode (Gl.h)
 description: La función glRenderMode establece el modo de rasterización.
 ms.assetid: bcbc3bba-c552-425b-8284-6cadff0c9f56
 keywords:
-- glRenderMode (función) OpenGL
+- Función glRenderMode OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af07d2492d70f9c0a3a764d767b52b2f71204939
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 93eb3c7e2d7f4a6d261632e0f010cf0e1c7a2410a5a8364a6cf1fd65f36ada99
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151125"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119777935"
 ---
-# <a name="glrendermode-function"></a>glRenderMode función)
+# <a name="glrendermode-function"></a>Función glRenderMode
 
-La función **glRenderMode** establece el modo de rasterización.
+La **función glRenderMode** establece el modo de rasterización.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,15 +43,15 @@ GLint WINAPI glRenderMode(
 *mode* 
 </dt> <dd>
 
-Modo de rasterización. Se aceptan los siguientes tres valores. El valor predeterminado es GL \_ Render.
+Modo de rasterización. Se aceptan los tres valores siguientes. El valor predeterminado es GL \_ RENDER.
 
 
 
 | Value                                                                                                                                                   | Significado                                                                                                                                                                                                                                                                                                                                                                       |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="GL_RENDER"></span><span id="gl_render"></span><dl> <dt>**representación en GL \_**</dt> </dl>       | Modo de representación. Las primitivas se rasterizan, lo que produce fragmentos de píxeles, que se escriben en el fotogramas. Este es el modo normal y también el modo predeterminado.<br/>                                                                                                                                                                                                      |
-| <span id="GL_SELECT"></span><span id="gl_select"></span><dl> <dt>**selección de contabilidad \_**</dt> </dl>       | Modo de selección. No se generan fragmentos de píxeles y no se realiza ningún cambio en el contenido de fotogramas. En su lugar, se devuelve un registro de los nombres de primitivas que se habrían dibujado si el modo de representación se \_ representase en GL en un búfer de selección, que se debe crear (vea [**glSelectBuffer**](glselectbuffer.md)) antes de que se escriba el modo de selección.<br/>               |
-| <span id="GL_FEEDBACK"></span><span id="gl_feedback"></span><dl> <dt>**Comentarios de contabilidad \_**</dt> </dl> | Modo de comentarios. No se generan fragmentos de píxeles y no se realiza ningún cambio en el contenido de fotogramas. En su lugar, las coordenadas y los atributos de los vértices que se habrían dibujado tenían el modo de representación \_ en GL se devuelve en un búfer de comentarios, que se debe crear (vea [**glFeedbackBuffer**](glfeedbackbuffer.md)) antes de que se escriba el modo de comentarios.<br/> |
+| <span id="GL_RENDER"></span><span id="gl_render"></span><dl> <dt>**GL \_ RENDER**</dt> </dl>       | Modo de representación. Las primitivas se rasterizan y producen fragmentos de píxeles, que se escriben en el búfer de fotogramas. Este es el modo normal y también el modo predeterminado.<br/>                                                                                                                                                                                                      |
+| <span id="GL_SELECT"></span><span id="gl_select"></span><dl> <dt>**GL \_ SELECT**</dt> </dl>       | Modo de selección. No se generan fragmentos de píxeles y no se realiza ningún cambio en el contenido del búfer de fotogramas. En su lugar, se devuelve un registro de los nombres de primitivos que se hubieran dibujado si el modo de representación fuera GL RENDER en un búfer de selección, que se debe crear \_ (vea [**glSelectBuffer)**](glselectbuffer.md)antes de que se entre en modo de selección.<br/>               |
+| <span id="GL_FEEDBACK"></span><span id="gl_feedback"></span><dl> <dt>**COMENTARIOS \_ DE GL**</dt> </dl> | Modo de comentarios. No se generan fragmentos de píxeles y no se realiza ningún cambio en el contenido del búfer de fotogramas. En su lugar, las coordenadas y los atributos de los vértices que se hubieran dibujado si el modo de representación fuera GL RENDER se devuelven en un búfer de comentarios, que se debe crear \_ (consulte [**glFeedbackBuffer)**](glfeedbackbuffer.md)antes de que se entre en modo de comentarios.<br/> |
 
 
 
@@ -67,49 +67,49 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                                  | Significado                                                                                                                                     |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_enumeración GL no válida \_**</dt> </dl>      | el *modo* no era uno de los tres valores aceptados.<br/>                                                                                     |
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función con el argumento GL \_ Select antes de que se llamara a [**glSelectBuffer**](glselectbuffer.md) al menos una vez.<br/>       |
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función con los comentarios de GL del argumento \_ antes de que se llamara a [**glBeedbackBuffer**](glfeedbackbuffer.md) al menos una vez.<br/> |
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md).<br/>       |
+| <dl> <dt>**ENUMERACIÓN \_ NO \_ VÁLIDA DE GL**</dt> </dl>      | *el modo* no era uno de los tres valores aceptados.<br/>                                                                                     |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función con el argumento GL SELECT antes de llamar a \_ [**glSelectBuffer**](glselectbuffer.md) al menos una vez.<br/>       |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función con el argumento GL \_ FEEDBACK antes de llamar a [**glBeedbackBuffer**](glfeedbackbuffer.md) al menos una vez.<br/> |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/>       |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **glRenderMode** toma un argumento, *mode*, que puede suponer uno de los tres valores predefinidos anteriores.
+La **función glRenderMode** toma un argumento, *mode*, que puede suponer uno de los tres valores predefinidos anteriores.
 
-El valor devuelto de la función **glRenderMode** viene determinado por el modo de representación en el momento en que se llama a **glRenderMode** , en lugar de por el *modo*. Los valores devueltos para los tres modos de representación son los siguientes.
+El valor devuelto de la **función glRenderMode** viene determinado por el modo de representación en el momento en que se llama **a glRenderMode,** en lugar del *modo*. Los valores devueltos para los tres modos de representación son los siguientes.
 
 
 
 | Value        | Significado                                                                 |
 |--------------|-------------------------------------------------------------------------|
-| representación en GL \_   | Cero.                                                                   |
-| selección de contabilidad \_   | El número de registros de aciertos transferidos al búfer seleccionado.             |
-| Comentarios de contabilidad \_ | El número de valores (no los vértices) transferidos al búfer de comentarios. |
+| GL \_ RENDER   | Cero.                                                                   |
+| GL \_ SELECT   | Número de registros de llamadas transferidos al búfer seleccionado.             |
+| COMENTARIOS \_ DE GL | Número de valores (no vértices) transferidos al búfer de comentarios. |
 
 
 
  
 
-Consulte [**glSelectBuffer**](glselectbuffer.md) y [**glFeedbackBuffer**](glfeedbackbuffer.md) para obtener más detalles sobre la operación de selección y comentarios.
+Consulte [**glSelectBuffer**](glselectbuffer.md) y [**glFeedbackBuffer**](glfeedbackbuffer.md) para obtener más detalles sobre la selección y la operación de comentarios.
 
-Si se genera un error, **glRenderMode** devuelve cero independientemente del modo de presentación actual.
+Si se genera un error, **glRenderMode** devuelve cero independientemente del modo de representación actual.
 
-La siguiente función recupera información relacionada con **glRenderMode**:
+La función siguiente recupera información relacionada con **glRenderMode**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el \_ modo de representación de contabilidad de argumentos \_
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ RENDER \_ MODE
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

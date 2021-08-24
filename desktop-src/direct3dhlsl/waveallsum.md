@@ -1,9 +1,9 @@
 ---
-title: WaveActiveSum función)
-description: Suma el valor de la expresión en todas las calles activas de la ola actual y lo replica en todas las calles de la ola actual.
+title: Función WaveActiveSum
+description: Suma el valor de la expresión en todos los calles activas de la onda actual y la replica en todos los sentidos de la onda actual.
 ms.assetid: 94CEF4AA-D6DE-4B00-9743-F491F255FE3D
 keywords:
-- WaveActiveSum de función HLSL
+- Función HlSL de WaveActiveSum
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b98ecf2521841b9da73e1b917d44f1d91b7876d2
-ms.sourcegitcommit: f01bc6744cea55ad1aeeace7981a30b567e6fe60
+ms.openlocfilehash: 403768b875ed9462b79fb5d0abeee9539189597591f3a3b20f5a3b9662995542
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103995734"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119742265"
 ---
-# <a name="waveactivesum-function"></a>WaveActiveSum función)
+# <a name="waveactivesum-function"></a>Función WaveActiveSum
 
-Suma el valor de la expresión en todas las calles activas de la ola actual y lo replica en todas las calles de la ola actual.
+Suma el valor de la expresión en todos los calles activas de la onda actual y la replica en todos los sentidos de la onda actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,11 +47,11 @@ La expresión que se va a evaluar.
 
 Valor de suma.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El orden de las operaciones es indefinido.
 
-Esta función se admite desde el modelo de sombreador 6,0 en todas las fases del sombreador. 
+Esta función se admite desde el modelo de sombreador 6.0 en todas las fases del sombreador. 
 
 
 
@@ -68,7 +68,7 @@ float3 center = total/count;           // compute average of these positions
 
 <dl> <dt>
 
-[Información general sobre el modelo de sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
+[Información general del modelo de sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
 </dt> <dt>
 
 [Modelo de sombreador 6](shader-model-6-0.md)

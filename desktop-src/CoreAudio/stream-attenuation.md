@@ -1,27 +1,27 @@
 ---
-description: Experiencia predeterminada de los patos
+description: Experiencia de afición predeterminada
 ms.assetid: 2ad9482f-1888-4f19-bc41-9d47a8e0ed15
-title: Experiencia predeterminada de los patos
+title: Experiencia de afición predeterminada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d81aa22254ab33ee7396fd4a22d83cc7f5a58041
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ec323bdaf01a7bba0821a9dee2c349239b3a53660334d2ac57edbf71287f396d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103807549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119695025"
 ---
-# <a name="default-ducking-experience"></a>Experiencia predeterminada de los patos
+# <a name="default-ducking-experience"></a>Experiencia de afición predeterminada
 
-Considere un escenario en el que un usuario recibe una llamada telefónica mientras escucha música en el equipo. Durante la llamada de teléfono, el usuario desea reducir el nivel de volumen de la música mientras asiste a la llamada de teléfono y reanudar el volumen original una vez finalizada la llamada telefónica. En función de las opciones especificadas por el usuario en el panel de control **sonidos** , el sistema operativo proporciona automáticamente esta *funcionalidad a través* de la función de la pérdida de la *secuencia* o la reducción de la intensidad de una secuencia de audio.
+Considere un escenario en el que un usuario recibe una llamada telefónica mientras escucha música en el equipo. Durante la llamada telefónica, el usuario quiere reducir el nivel de volumen de la música mientras asiste a la llamada de teléfono y reanudar el volumen original una vez finalizada la llamada telefónica. En función de las opciones especificadas por el usuario en el panel  de  **control** Sonidos, el sistema operativo proporciona automáticamente esta funcionalidad a través de la atenuación de secuencias o de agresiones, lo que reduce la intensidad de una secuencia de audio.
 
-La experiencia de atenuación predeterminada depende de las preferencias del usuario, tal y como se especifica en la opción de **sonido** del panel de control. En la pestaña **comunicaciones** , el usuario puede elegir un nivel de atenuación (el valor predeterminado es 80%), silenciar todas las secuencias que no son de comunicación o deshabilitar la experiencia de atenuación de flujo predeterminada. El sistema permite que se abran nuevas secuencias no de comunicación (excepto para nuevos sonidos del sistema) durante la sesión de comunicación, pero las nuevas secuencias no se atenúan automáticamente. Cuando se cierran todas las secuencias de comunicación, el sistema finaliza la sesión de comunicación y restaura el volumen de las secuencias que se atenuaron durante la sesión de comunicación.
+La experiencia de atenuación predeterminada depende de la preferencia del usuario, como se especifica en la opción Sonido del panel **de** control. En la **pestaña** Comunicaciones, el usuario puede elegir un nivel de atenuación (el valor predeterminado es 80%), silenciar todos los flujos que no son de comunicación o deshabilitar la experiencia de atenuación de secuencia predeterminada. El sistema permite abrir nuevas secuencias que no son de comunicación (excepto los sonidos del sistema nuevos) durante la sesión de comunicación, pero las nuevas secuencias no se atenuan automáticamente. Cuando se cierran todos los flujos de comunicación, el sistema finaliza la sesión de comunicación y restaura el volumen de las secuencias que se atenuaron durante la sesión de comunicación.
 
-Para indicar la atenuación de la secuencia visualmente, el sistema cambia la configuración del mezclador de volumen en función de las preferencias del usuario. Por ejemplo, si el usuario especifica un nivel de atenuación, el mezclador de volumen baja el control deslizante, muestra el nuevo volumen atenuado y muestra el nivel de volumen original. En la imagen siguiente se ilustra este proceso.
+Para indicar visualmente la atenuación de secuencias, el sistema cambia la configuración del mezclador de volumen en función de las preferencias del usuario. Por ejemplo, si el usuario especifica un nivel de atenuación, el mezclador de volumen reduce el control deslizante, muestra el nuevo volumen atenuado y muestra el nivel de volumen original. En la imagen siguiente se muestra este proceso.
 
-![diagrama del comportamiento de atenuación de secuencias predeterminado proporcionado en Windows 7](images/stream-aatenuation.jpg)
+![diagrama del comportamiento de atenuación de flujo predeterminado proporcionado en Windows 7](images/stream-aatenuation.jpg)
 
-Una aplicación puede invalidar la atenuación de flujos e implementar una experiencia personalizada de pato si sabe cuándo se inicia y finaliza la sesión de comunicación. Para obtener más información, vea [proporcionar un comportamiento personalizado de patos](providing-a-custom-ducking-experience.md).
+Una aplicación puede invalidar la atenuación de secuencias e implementar una experiencia de afijo personalizada si sabe cuándo se inicia y finaliza la sesión de comunicación. Para obtener más información, vea [Proporcionar un comportamiento de afijo personalizado.](providing-a-custom-ducking-experience.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -30,16 +30,16 @@ Una aplicación puede invalidar la atenuación de flujos e implementar una exper
 [Uso de un dispositivo de comunicación](using-the-communication-device.md)
 </dt> <dt>
 
-[Deshabilitación de la experiencia de patos predeterminada](disabling-the-ducking-experience.md)
+[Deshabilitación de la experiencia de afición predeterminada](disabling-the-ducking-experience.md)
 </dt> <dt>
 
-[Proporcionar un comportamiento personalizado de patos](providing-a-custom-ducking-experience.md)
+[Proporcionar un comportamiento de afijo personalizado](providing-a-custom-ducking-experience.md)
 </dt> <dt>
 
-[Consideraciones de implementación para las notificaciones de patos](handling-audio-ducking-events-from-communication-devices.md)
+[Consideraciones de implementación para notificaciones de afijo](handling-audio-ducking-events-from-communication-devices.md)
 </dt> <dt>
 
-[Obtención de eventos de pato](getting-ducking-events-from-a-communication-device.md)
+[Obtención de eventos de afición](getting-ducking-events-from-a-communication-device.md)
 </dt> </dl>
 
  

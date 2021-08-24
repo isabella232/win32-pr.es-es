@@ -1,107 +1,107 @@
 ---
 description: En la tabla siguiente se describen los cambios entre Microsoft Internet Explorer 6 y Windows Internet Explorer 8.
 ms.assetid: 5A7DDFC4-69A4-4B5A-9C0A-6172E2142494
-title: Cambios del explorador de IE 8
+title: Cambios en el explorador de IE 8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7abf978d2211a03b59a78847a66efc21f3213c41
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c775448d8eca55097b0121592c28ece0b2c347f4492e7a48b2d51d9ab688fa89
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103909974"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119680295"
 ---
-# <a name="appendix-1-internet-explorer-6-to-internet-explorer-8-browser-changes"></a>Apéndice 1: cambios del explorador de Internet Explorer 6 a Internet Explorer 8
+# <a name="appendix-1-internet-explorer-6-to-internet-explorer-8-browser-changes"></a>Apéndice 1: Internet Explorer 6 a Internet Explorer 8 cambios en el explorador
 
 En la tabla siguiente se describen los cambios entre Microsoft Internet Explorer 6 y Windows Internet Explorer 8.
 
 
 
-Cambios de diseño de Internet Explorer 6 a Internet Explorer 7
+Diseño de cambios de Internet Explorer 6 a Internet Explorer 7
 
 Cambios de diseño de Internet Explorer 7 a Internet Explorer 8
 
-$ {ROWSPAN2} $Internet Explorer control de versiones $ {REMOVE} $  
+${ROWSPAN2}$Internet Explorer versioning${REMOVE}$  
 
-Busque código que tenga casos especiales incorrectamente relacionados con Internet Explorer 6, Windows Internet Explorer 7 o Internet Explorer 8 a través [del examen de cadenas de agente de usuario, vectores de versiones o Comentarios condicionales](/previous-versions/windows/internet-explorer/ie-developer/compatibility/ms537503(v=vs.85)).
+Compruebe si hay código que no sea correcto en casos especiales en torno a Internet Explorer 6, Windows Internet Explorer 7 o Internet Explorer 8 a través del control de cadenas de agente de [usuario, vectores](/previous-versions/windows/internet-explorer/ie-developer/compatibility/ms537503(v=vs.85))de versiones o comentarios condicionales .
 
--   Cuando una cadena de agente de usuario largo (UA) encuentra un servidor que solo acepta cadenas de UA más cortas, los usuarios verán [una página de error](https://www.enhanceie.com/ua.aspx).
+-   Cuando una cadena larga del Agente de usuario (UA) encuentra un servidor que solo acepta cadenas de UA más cortas, los usuarios ven [una página de error](https://www.enhanceie.com/ua.aspx).
 
 <!-- -->
 
--   La vista de compatibilidad de Internet Explorer 8, que está activada de forma predeterminada para los sitios de intranet, envía una cadena de agente de usuario de Internet Explorer 7. Para diferenciar entre Internet Explorer 7 y la vista de compatibilidad, busque el nuevo [token Trident](/archive/blogs/ie/).
+-   El Vista de compatibilidad en Internet Explorer 8, que está activado de forma predeterminada para los sitios de intranet, envía una cadena de agente de Internet Explorer 7. Para diferenciar entre Internet Explorer 7 y Vista de compatibilidad, busque el nuevo [token de Trident.](/archive/blogs/ie/)
 
-$ {ROWSPAN3} $ actualizaciones de cumplimiento de estándares
+${ROWSPAN3}$ Actualizaciones de cumplimiento de estándares
 
--   Se aplica a los [modos de documento especificados](/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85)).
--   El [modo vista de compatibilidad de Internet Explorer 8](/archive/blogs/ie/), que está activado de forma predeterminada para los sitios de intranet, normalmente [revierte las actualizaciones de estándares de Internet Explorer 7 a Internet Explorer 8](/archive/blogs/ie/site-compatibility-and-ie8).
--   Use el encabezado HTTP o el elemento **meta** [EMULATEIE7 X-UA-compatible](https://msdn.microsoft.com/library/Cc843977(v=VS.85).aspx) para habilitar la vista de compatibilidad en sitios web o páginas web específicas.
+-   Se aplica a [los modos de documento especificados.](/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85))
+-   [Internet Explorer modo 8 Vista de compatibilidad](/archive/blogs/ie/), que está en modo predeterminado para los sitios de intranet, normalmente revierte las actualizaciones de estándares de [Internet Explorer 7 a Internet Explorer 8](/archive/blogs/ie/site-compatibility-and-ie8).
+-   Use el encabezado HTTP compatible con [X-UA EmulaIE7](https://msdn.microsoft.com/library/Cc843977(v=VS.85).aspx) o **el elemento meta** para habilitar Vista de compatibilidad en sitios web o páginas web específicas.
 
-$ {REMOVE} $  
+${REMOVE}$  
 
-Excepción del modo no estándar: no es necesario realizar cambios de cumplimiento de normas para las páginas web que especifican el DOCTYPE del modo no estándar (estableciendo el modificador de documento de cumplimiento de estándares en "desactivado").
+Excepción de modo de quirks: no es necesario realizar cambios de cumplimiento de estándares para las páginas web que especifican el modo quirks DOCTYPE (estableciendo el modificador DOCTYPE "standards-compliance" en "off").
 
 Se aplica al modo "Estricto" o Estándar de Internet Explorer 7 y posteriores:
 
--   Los [proregistros XML](/previous-versions/windows/internet-explorer/ie-developer/) en la primera línea del código fuente ya no hacen que se produzca un error en las declaraciones DOCTYPE.
--   El contenido de desbordamiento del [modelo de cuadros](/previous-versions/windows/internet-explorer/ie-developer/) se cruza y ya no aumenta automáticamente el div de caja para ajustarse al contenido.
--   [Ciertos filtros CSS](/previous-versions/windows/internet-explorer/ie-developer/) (por ejemplo, \* HTML, \_ carácter de subrayado y/ \* \* /comentario) no se admiten.
--   Solo se crea una instancia [del elemento de objeto externo en objetos anidados](/previous-versions/windows/internet-explorer/ie-developer/) .
--   [Las aplicaciones que se basan en el elemento Select](/previous-versions/windows/internet-explorer/ie-developer/) para obtener un HWND para usarlo con las API de Microsoft Win32 podrían interrumpirse porque el [elemento Select](/archive/blogs/ie/) es ahora un control sin ventana.
--   El [formato de definición de canal (CDF)](/previous-versions/aa740486(v=msdn.10)) no se admite, en favor de fuentes RSS.
--   [XBM](/previous-versions/aa740486(v=msdn.10)), un formato de imagen diseñado para sistemas basados en X, no se admite.
--   No se permiten [etiquetas base](/previous-versions/aa740486(v=msdn.10)) fuera del documento principal.
+-   [Los prólogos XML](/previous-versions/windows/internet-explorer/ie-developer/) de la primera línea del código fuente ya no provocan errores en las declaraciones DOCTYPE.
+-   [El contenido de desbordamiento](/previous-versions/windows/internet-explorer/ie-developer/) del modelo de cuadro forma una intersección con el cuadro y ya no aumenta automáticamente el contenido del elemento div del cuadro.
+-   [No se admiten](/previous-versions/windows/internet-explorer/ie-developer/) determinados filtros CSS (por ejemplo, HTML, carácter de subrayado y \* \_ \* \* //comentario).
+-   [Solo se crea una instancia del elemento OBJECT](/previous-versions/windows/internet-explorer/ie-developer/) más externo de los objetos anidados.
+-   [Las aplicaciones que se basan](/previous-versions/windows/internet-explorer/ie-developer/) en el elemento SELECT para obtener un HWND para usarlo con las API de Microsoft Win32 pueden interrumpirse porque el elemento [SELECT](/archive/blogs/ie/) es ahora un control sin ventanas.
+-   No se admite el formato de definición de canal [(CDF),](/previous-versions/aa740486(v=msdn.10)) en favor de las fuentes RSS.
+-   [XBM,](/previous-versions/aa740486(v=msdn.10))un formato de creación de imágenes diseñado para sistemas basados en X, no se admite.
+-   [No se](/previous-versions/aa740486(v=msdn.10)) permiten etiquetas BASE fuera del documento HEAD.
 
 Se aplica al modo Estándar de Internet Explorer 8 y posteriores:
 
--   [Los elementos P](https://msdn.microsoft.com/library/Cc843977(v=VS.85).aspx) no cerrados se cierran automáticamente cuando van seguidos de elementos de [**tabla**](https://msdn.microsoft.com/library/ms535901(v=VS.85).aspx), [**formulario**](https://msdn.microsoft.com/library/ms535249(v=VS.85).aspx), [**noframes**](https://msdn.microsoft.com/library/ms535857(v=VS.85).aspx)o [**NoScript**](https://msdn.microsoft.com/library/ms535858(v=VS.85).aspx) .
--   No se admite [HTML con formato](/archive/blogs/ie/site-compatibility-and-ie8) incorrecto, en favor del marcado válido y con formato correcto.
--   No se admite la sintaxis de [atributo "className"](/archive/blogs/ie/site-compatibility-and-ie8) , en favor de la sintaxis de "class".
--   [La colección de atributos](/archive/blogs/ie/site-compatibility-and-ie8) no contiene todos los atributos posibles que reconoce Windows Internet Explorer.
--   El orden de los [atributos ha cambiado](/archive/blogs/ie/site-compatibility-and-ie8), lo que afecta a la colección de atributos, innerHTML y outerHTML.
--   [GetElementById](/archive/blogs/ie/site-compatibility-and-ie8) distingue mayúsculas de minúsculas y no busca atributos de nombre.
--   Los [selectores de prefijos CSS genéricos](/archive/blogs/ie/site-compatibility-and-ie8) (es decir, v \\ : \* Syntax) no se admiten, en favor de los nombres de etiqueta explícitos.
--   No se admiten las [expresiones CSS](/archive/blogs/ie/site-compatibility-and-ie8) , en favor de la compatibilidad mejorada con CSS o la lógica DHTML.
--   El código que está destinado a los métodos de objeto JSON personalizados puede entrar en conflicto con el [nuevo objeto JSON nativo](/archive/blogs/ie/site-compatibility-and-ie8) en Internet Explorer 8.
--   Si no se [anulan las propiedades iniciales](/archive/blogs/ie/site-compatibility-and-ie8) del objeto currentstyle devuelven, se devuelve su valor inicial.
--   [Los valores de las propiedades no especificadas](/archive/blogs/ie/site-compatibility-and-ie8) en el objeto de estilo de objeto currentstyle devuelven devuelven una cadena vacía (por ejemplo, consulte el menú ASP.net y la entrada de blog sobre la [representación de IE8 en blanco](/archive/blogs/giorgio/) ).
+-   [Los elementos P sin](https://msdn.microsoft.com/library/Cc843977(v=VS.85).aspx) cerrar se cierran automáticamente cuando van seguidos de [**elementos TABLE**](https://msdn.microsoft.com/library/ms535901(v=VS.85).aspx), [**FORM,**](https://msdn.microsoft.com/library/ms535249(v=VS.85).aspx) [**NOFRAMES**](https://msdn.microsoft.com/library/ms535857(v=VS.85).aspx) [**o NOSCRIPT.**](https://msdn.microsoft.com/library/ms535858(v=VS.85).aspx)
+-   [No se admite HTML con](/archive/blogs/ie/site-compatibility-and-ie8) formato correcto, en favor del marcado válido y correcto.
+-   No se admite la sintaxis del atributo ["className",](/archive/blogs/ie/site-compatibility-and-ie8) en favor de la sintaxis "class".
+-   [La colección de atributos](/archive/blogs/ie/site-compatibility-and-ie8) no contiene todos los atributos posibles que Windows Internet Explorer reconoce.
+-   [La ordenación de atributos ha cambiado,](/archive/blogs/ie/site-compatibility-and-ie8)lo que afecta a la colección de atributos, innerHTML y outerHTML.
+-   [GetElementById distingue mayúsculas](/archive/blogs/ie/site-compatibility-and-ie8) de minúsculas y no busca atributos de nombre.
+-   [No se admiten selectores de](/archive/blogs/ie/site-compatibility-and-ie8) prefijo CSS genéricos (es decir, v : sintaxis), en favor de \\ nombres de etiqueta \* explícitos.
+-   [No se admiten expresiones CSS,](/archive/blogs/ie/site-compatibility-and-ie8) en favor de la compatibilidad mejorada con CSS o la lógica DHTML.
+-   El código destinado a métodos de objeto JSON personalizados podría estar en conflicto con el nuevo objeto [JSON](/archive/blogs/ie/site-compatibility-and-ie8) nativo Internet Explorer 8.
+-   [Las propiedades iniciales de unset](/archive/blogs/ie/site-compatibility-and-ie8) en el objeto currentStyle devuelven su valor inicial.
+-   [Los valores](/archive/blogs/ie/site-compatibility-and-ie8) de propiedades no especificadas en el objeto de estilo de objeto currentStyle devuelven una cadena vacía (por ejemplo, vea la entrada de blog del problema de representación en blanco del menú [ASP.NET e IE8).](/archive/blogs/giorgio/)
 
 <!-- -->
 
--   En el caso de los sitios y las aplicaciones en los que la accesibilidad es un problema, actualice la [Sintaxis de Aria en todos los modos de representación de Internet Explorer](/archive/blogs/ie/).
--   Consulte la [lista completa de actualizaciones de CSS de Internet Explorer 6 a Internet Explorer 8](https://msdn.microsoft.com/library/Cc843977(v=VS.85).aspx).
+-   Para sitios y aplicaciones en los que la accesibilidad es un problema, actualice la [sintaxis de ARIA](/archive/blogs/ie/)en todos los Internet Explorer modos de representación .
+-   Compruebe la [lista completa de actualizaciones de CSS de Internet Explorer 6 a Internet Explorer 8](https://msdn.microsoft.com/library/Cc843977(v=VS.85).aspx).
 
 Mejoras de seguridad
 
 -   Se aplica independientemente del modo de documento.
--   Puede desactivar las características de seguridad mediante [Directiva de grupo](https://www.microsoft.com/p/group-policy/9wzdncrfjtm4?activetab=pivot:overviewtab).
+-   Puede desactivar las características de seguridad mediante [directiva de grupo](https://www.microsoft.com/p/group-policy/9wzdncrfjtm4?activetab=pivot:overviewtab).
 
 <!-- -->
 
--   No se permite la omisión de [window. Opener](/previous-versions/aa740486(v=msdn.10)) en el símbolo del sistema Window. Close.
--   La [protección del almacenamiento en caché de objetos](/previous-versions/windows/internet-explorer/ie-developer/) está habilitada de forma predeterminada, lo que bloquea el acceso a las referencias de objetos cuando los usuarios navegan a un nuevo dominio (se aplica a Internet Explorer 6 y versiones posteriores en Windows XP con Service Pack 2 (SP2) y versiones posteriores).
--   Los [scriptlets DHTML](/previous-versions/windows/internet-explorer/ie-developer/) están deshabilitados de forma predeterminada.
+-   No [se permite la omisión de window.opener](/previous-versions/aa740486(v=msdn.10)) al símbolo del sistema window.close.
+-   [](/previous-versions/windows/internet-explorer/ie-developer/) La protección de almacenamiento en caché de objetos está habilitada de forma predeterminada, lo que bloquea el acceso a las referencias de objetos cuando los usuarios navegan a un nuevo dominio (se aplica a Internet Explorer 6 y versiones posteriores en Windows XP con Service Pack 2 (SP2) y versiones posteriores).
+-   [Los scriptlets DHTML están deshabilitados](/previous-versions/windows/internet-explorer/ie-developer/) de forma predeterminada.
 -   [Los scripts que escriben en la barra de estado](/previous-versions/windows/internet-explorer/ie-developer/) están bloqueados.
--   [Podría producirse un error](/previous-versions/windows/internet-explorer/ie-developer/) en la creación de direcciones URL si las direcciones URL no cumplen las directrices de RFC.
--   [Las páginas HTTPS muestran una página de error](/previous-versions/windows/internet-explorer/ie-developer/) si el sitio está configurado para SSLv2 solo, o si el certificado de seguridad del sitio está obsoleto o no es válido, tiene errores o tiene cifrados débiles.
--   Solo se admiten [nombres de dominio internacionalizados codificados con "Punycode"](/previous-versions/windows/internet-explorer/ie-developer/) . Otros formatos como ANSI y UTF-8 están bloqueados.
--   Las [direcciones URL de script entre dominios](/previous-versions/windows/internet-explorer/ie-developer/), la navegación redirigida en objetos DOM y las navegaciones de fotogramas están bloqueadas.
--   Los [cuadros de diálogo modales o no modales](/previous-versions/aa740486(v=msdn.10)) que se crean a partir de script pueden parecer [ligeramente más grandes](/archive/blogs/ie/).
--   Los [protocolos no seguros](/previous-versions/aa740486(v=msdn.10)) View-source, Gopher (en el nivel WinINET) y telnet no funcionan.
+-   [La creación de direcciones URL podría producir un error](/previous-versions/windows/internet-explorer/ie-developer/) si las direcciones URL no cumplen las directrices de RFC.
+-   Las [páginas HTTPS](/previous-versions/windows/internet-explorer/ie-developer/) muestran una página de error si el sitio está configurado solo para SSLv2, o si el certificado de seguridad del sitio no está actualizado o no es válido, tiene errores o tiene cifrados débiles.
+-   Solo se admiten nombres de dominio [internacionalizados codificados "Punycode".](/previous-versions/windows/internet-explorer/ie-developer/) Otros formatos como ANSI y UTF-8 están bloqueados.
+-   [Se bloquean las direcciones URL de script entre](/previous-versions/windows/internet-explorer/ie-developer/)dominios, la navegación redirigida en objetos DOM y las navegaciones de fotogramas.
+-   [Los cuadros de diálogo modales o](/previous-versions/aa740486(v=msdn.10)) no modales que se crean a partir del script pueden parecer [ligeramente más grandes.](/archive/blogs/ie/)
+-   [Los protocolos no](/previous-versions/aa740486(v=msdn.10)) seguros view-source, Gopher (en el nivel WinINET) y Telnet no funcionan.
 
 <!-- -->
 
--   El [filtro XSS](/archive/blogs/ie/) está activado de forma predeterminada, lo que impide que los patrones de script se parezcan a los ataques XSS de tipo 1, a menos que los deshabilite a través de un encabezado HTTP X-XSS-Protection.
--   No se admiten ataques de comunicación entre dominios y entre documentos, como [script src](/archive/blogs/jscript/) , en favor de las características más seguras de [XDM y XDR Ajax](/archive/blogs/ie/).
--   Los sitios habilitados para AJAX que [manipulan manualmente el hash de la dirección URL](/previous-versions//cc891506(v=vs.85)) podrían estar rotos por la nueva propiedad de navegación Window. Location. hash.
--   [Las nuevas características de Ajax](https://msdn.microsoft.com/library/Gg598940(v=VS.85).aspx) como [XDM](/archive/blogs/ie/) tienen [**propiedades nativas**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/cc288548(v=vs.85)) que pueden entrar en conflicto con las propiedades personalizadas existentes.
--   El [control de carga de archivos](/archive/blogs/ie/) solo envía al servidor la ruta de acceso del archivo, no la ruta de acceso completa.
--   No se pudo ejecutar el código HTML o el script que se entrega con un [ \* tipo MIME "Image/"](/archive/blogs/ie/) .
--   Al [navegar por un marco de nivel superior](/previous-versions/windows/internet-explorer/ie-developer/compatibility/dd565638(v=vs.85)) a un sitio en un contexto de seguridad diferente, se abre una nueva ventana o pestaña en lugar de navegar dentro del marco existente.
--   El [script codificado UTF-7](/previous-versions/windows/internet-explorer/ie-developer/compatibility/dd565635(v=vs.85)) se fuerza a la codificación Windows-1252, lo que podría producir una representación de texto sin formato.
--   [Las páginas http/https "modo mixto"](/archive/blogs/askie/mixed-content-and-internet-explorer-8-0) muestran un cuadro de diálogo que tiene como valor predeterminado Mostrar solo los elementos seguros (frente a los valores predeterminados no seguros anteriores). Los usuarios pueden [optar por erróneas a bloquear elementos http](/archive/blogs/askie/mixed-content-and-internet-explorer-8-0), como imágenes de clave.
--   [DEP/NX está activado de forma predeterminada](https://www.microsoft.com/windows/internet-explorer/readiness/developers-existing.aspx#depnx), lo que impide que determinados complementos (es decir, controles ActiveX y objetos com) compilados con versiones anteriores de ATL ejecuten código marcado como "no ejecutable" en la memoria.
--   El [contenido devuelto por un proxy web](/previous-versions/windows/internet-explorer/ie-developer/compatibility/dd565641(v=vs.85)) se bloquea si no se establece un túnel SSL en respuesta a una solicitud de conexión al servidor original.
+-   El filtro [XSS](/archive/blogs/ie/) está en activarse de forma predeterminada, lo que bloquea los patrones de script que suelen parecerse a ataques XSS de tipo 1, a menos que los deshabilite a través de un encabezado HTTP X-XSS-Protection.
+-   No se admiten ataques de comunicación entre dominios y documentos, como [SCRIPT SRC,](/archive/blogs/jscript/) en favor de características de AJAX XDM y XDR más [seguras.](/archive/blogs/ie/)
+-   La nueva propiedad de navegación window.location.hash podría dividir los sitios habilitados para AJAX que manipulan manualmente el [hash](/previous-versions//cc891506(v=vs.85)) de la dirección URL.
+-   [Las nuevas características de AJAX,](https://msdn.microsoft.com/library/Gg598940(v=VS.85).aspx) [como XDM,](/archive/blogs/ie/) tienen [**propiedades nativas**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/cc288548(v=vs.85)) que podrían estar en conflicto con las propiedades personalizadas existentes.
+-   [El control de carga](/archive/blogs/ie/) de archivos envía solo la ruta de acceso del archivo, no la ruta de acceso completa, al servidor.
+-   Se bloquea la ejecución de código HTML o script que se entrega con un [tipo \* MIME "image/".](/archive/blogs/ie/)
+-   [Al navegar por un marco de nivel](/previous-versions/windows/internet-explorer/ie-developer/compatibility/dd565638(v=vs.85)) superior a un sitio en un contexto de seguridad diferente, se abre una nueva ventana o pestaña en lugar de navegar dentro del marco existente.
+-   [El script con codificación UTF-7](/previous-versions/windows/internet-explorer/ie-developer/compatibility/dd565635(v=vs.85)) se fuerza en la codificación Windows-1252, lo que podría provocar la representación de texto sin formato.
+-   [Las páginas "modo mixto" HTTP/HTTPS](/archive/blogs/askie/mixed-content-and-internet-explorer-8-0) muestran un cuadro de diálogo que muestra de forma predeterminada solo elementos seguros (frente al valor predeterminado anterior no seguro). Los usuarios podrían elegir por error [bloquear elementos HTTP,](/archive/blogs/askie/mixed-content-and-internet-explorer-8-0)como imágenes clave.
+-   [DEP/NX](https://www.microsoft.com/windows/internet-explorer/readiness/developers-existing.aspx#depnx)está encendido de forma predeterminada, lo que impide que determinados complementos (es decir, controles ActiveX y objetos COM) creados mediante versiones anteriores de ATL ejecuten código marcado como "no ejecutable" en memoria.
+-   [El contenido devuelto por un proxy web](/previous-versions/windows/internet-explorer/ie-developer/compatibility/dd565641(v=vs.85)) se bloquea si no se establece un túnel SSL en respuesta a una solicitud CONNECT al servidor original.
 
 Cambios de arquitectura
 
@@ -109,15 +109,15 @@ Cambios de arquitectura
 
 <!-- -->
 
--   El [modo protegido](/previous-versions/windows/internet-explorer/ie-developer/) está habilitado de forma predeterminada para las [zonas de Internet, intranet y sitios restringidos](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537187(v=vs.85)). Este modo [bloquea las extensiones del explorador que podrían suponer un riesgo para la seguridad](/previous-versions/windows/internet-explorer/ie-developer/compatibility/dd565645(v=vs.85)) que impiden que las aplicaciones con privilegios de ejecución y [menos tengan acceso a procesos de privilegios más elevados](/previous-versions/windows/internet-explorer/ie-developer/compatibility/dd565646(v=vs.85)), como el menú Inicio, el panel de control y el registro de Microsoft Windows (se aplica a Internet Explorer 7 y versiones posteriores en Windows Vista y versiones posteriores).
+-   [El modo protegido](/previous-versions/windows/internet-explorer/ie-developer/) está habilitado de forma predeterminada para las zonas [De Internet, Intranet y Sitios restringidos.](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537187(v=vs.85)) Este [](/previous-versions/windows/internet-explorer/ie-developer/compatibility/dd565645(v=vs.85)) modo impide que las extensiones del explorador que podrían suponer un riesgo de seguridad al ejecutar aplicaciones con privilegios más bajos accedan a procesos con privilegios más [altos,](/previous-versions/windows/internet-explorer/ie-developer/compatibility/dd565646(v=vs.85))como menú Inicio, Panel de control y el Registro de Microsoft Windows (se aplica a Internet Explorer 7 y versiones posteriores en Windows Vista y versiones posteriores).
 
 <!-- -->
 
--   [Actualización en modo protegido](/previous-versions/windows/internet-explorer/ie-developer/compatibility/dd565648(v=vs.85)): la intranet se ejecuta de forma predeterminada en el nivel de integridad medio (en lugar de bajo).
--   [Internet Explorer de acoplamiento flexible](https://www.microsoft.com/windows/internet-explorer/readiness/developers-existing.aspx#lcie) podría bloquear complementos (es decir, controles ActiveX y objetos com) que realizan una de las acciones siguientes:
-    -   Use las técnicas de la jerarquía de Windows para buscar el marco de interfaz de usuario y las ventanas de pestaña (que ahora se ejecutan en procesos independientes con diferentes niveles de integridad).
-    -   Cree una subclase del marco de la interfaz de usuario (ahora en el nivel de integridad medio) desde un proceso de la pestaña de integridad baja.
-    -   Usar técnicas de mensajería no admitidas entre las pestañas y el marco de la interfaz de usuario.
+-   [Actualización del modo protegido:](/previous-versions/windows/internet-explorer/ie-developer/compatibility/dd565648(v=vs.85))la intranet se ejecuta en un nivel de integridad medio (en lugar de bajo) de forma predeterminada.
+-   [Las Internet Explorer](https://www.microsoft.com/windows/internet-explorer/readiness/developers-existing.aspx#lcie) de acoplamiento flexible pueden bloquear complementos (es decir, controles ActiveX y objetos COM) que realicen una de las siguientes acciones:
+    -   Use técnicas de jerarquía de windows para buscar ventanas de tabulación y marco de interfaz de usuario (que ahora se ejecutan en procesos independientes en distintos niveles de integridad).
+    -   Cree una subclase del marco de interfaz de usuario (ahora en el nivel de integridad medio) a partir de un proceso de pestaña de baja integridad.
+    -   Use técnicas de mensajería no admitidas entre el marco de interfaz de usuario y las pestañas.
 
 
 

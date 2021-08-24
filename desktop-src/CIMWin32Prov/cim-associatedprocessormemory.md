@@ -1,8 +1,8 @@
 ---
-description: La \_ clase AssociatedProcessorMemory de CIM asocia el procesador y la memoria del sistema, o la memoria caché de un procesador.
+description: La clase AssociatedProcessorMemory de CIM asocia el procesador y la memoria del sistema, o la memoria \_ caché de un procesador.
 ms.assetid: a4c28a0a-e4cc-4db2-bd77-b7b5023eace6
 ms.tgt_platform: multiple
-title: CIM_AssociatedProcessorMemory (clase)
+title: CIM_AssociatedProcessorMemory clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,19 +17,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: f35cdca92cb15e1c6fff215ff1363844e0d47012
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 23b2ee879752365e3100866a4ea82a33b01a2236f4f3266539e79b3ee37b94e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000697"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119701165"
 ---
-# <a name="cim_associatedprocessormemory-class"></a>\_Clase AssociatedProcessorMemory de CIM
+# <a name="cim_associatedprocessormemory-class"></a>Cim \_ AssociatedProcessorMemory (clase)
 
-La **clase \_ AssociatedProcessorMemory de CIM** asocia el procesador y la memoria del sistema, o la memoria caché de un procesador.
+La **clase \_ AssociatedProcessorMemory** de CIM asocia el procesador y la memoria del sistema, o la memoria caché de un procesador.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -49,35 +49,35 @@ class CIM_AssociatedProcessorMemory : CIM_AssociatedMemory
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ AssociatedProcessorMemory** tiene estos tipos de miembros:
+La **clase \_ AssociatedProcessorMemory** de CIM tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ AssociatedProcessorMemory** tiene estas propiedades.
+La **clase \_ AssociatedProcessorMemory** de CIM tiene estas propiedades.
 
 <dl> <dt>
 
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ memoria CIM**
+Tipo de datos: **Memoria CIM \_**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-[**\_ Memoria de CIM**](cim-memory.md) que describe la memoria instalada en o asociada a un dispositivo.
+Memoria [**CIM \_ que**](cim-memory.md) describe la memoria instalada en un dispositivo o asociada a él.
 
-Esta propiedad se hereda de [**\_ AssociatedMemory CIM**](cim-associatedmemory.md).
+Esta propiedad se hereda de [**\_ CIM AssociatedMemory.**](cim-associatedmemory.md)
 
 </dd> <dt>
 
 **BusSpeed**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -90,40 +90,40 @@ Velocidad del bus, en megahercios (MHz), entre el procesador y la memoria.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ procesador CIM**
+Tipo de datos: **Procesador CIM \_**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependiente")
+Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
 </dt> </dl>
 
-Un [**\_ procesador CIM**](cim-processor.md) que describe el procesador que tiene acceso a la memoria o utiliza la memoria caché.
+Procesador [**CIM \_ que**](cim-processor.md) describe el procesador que tiene acceso a la memoria o usa la memoria caché.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase **CIM \_ AssociatedProcessorMemory** se deriva de [**\_ AssociatedMemory de CIM**](cim-associatedmemory.md).
+La **clase \_ CIM AssociatedProcessorMemory** se deriva de [**CIM \_ AssociatedMemory**](cim-associatedmemory.md).
 
-WMI no implementa esta clase. Para obtener más información sobre las clases derivadas de **CIM \_ AssociatedProcessorMemory**, vea [Win32 classes](win32-provider.md).
+WMI no implementa esta clase. Para obtener más información sobre las clases derivadas de **CIM \_ AssociatedProcessorMemory**, vea [Clases win32](win32-provider.md).
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -132,7 +132,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[**\_ASSOCIATEDMEMORY CIM**](cim-associatedmemory.md)
+[**CIM \_ AssociatedMemory**](cim-associatedmemory.md)
 </dt> </dl>
 
  

@@ -1,10 +1,10 @@
 ---
-description: Una solicitud asincrónica para obtener datos del sombreador de cálculo para el envío especificado.
+description: Una solicitud asincrónica para obtener datos del sombreador de proceso para el envío especificado.
 MS-HAID: vspixengine.IPipeLineStagesRequest2\_RequestComputeShaderDataAsync\_EventID\_IPipeLineStagesCallback2\_ptr\_DWORD\_DWORD
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'IPipeLineStagesRequest2:: RequestComputeShaderDataAsync (método)'
+title: Método IPipeLineStagesRequest2::RequestComputeShaderDataAsync
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: F73EA7B4-9E20-4BFD-8F87-20CE0B6C96D8
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: cf0d4725d8d2172900a96e58b4c8786ca2a9c851
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 3a864f16d80280f5b4da19b4f80b76a7f00a523b0b876bf89c6735d1c8483331
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105714753"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119741945"
 ---
-# <a name="span-idvspixengineipipelinestagesrequest2_requestcomputeshaderdataasync_eventid_ipipelinestagescallback2_ptr_dword_dwordspanipipelinestagesrequest2requestcomputeshaderdataasync-method"></a><span id="vspixengine.ipipelinestagesrequest2_requestcomputeshaderdataasync_eventid_ipipelinestagescallback2_ptr_dword_dword"></span>IPipeLineStagesRequest2:: RequestComputeShaderDataAsync (método)
+# <a name="span-idvspixengineipipelinestagesrequest2_requestcomputeshaderdataasync_eventid_ipipelinestagescallback2_ptr_dword_dwordspanipipelinestagesrequest2requestcomputeshaderdataasync-method"></a><span id="vspixengine.ipipelinestagesrequest2_requestcomputeshaderdataasync_eventid_ipipelinestagescallback2_ptr_dword_dword"></span>Método IPipeLineStagesRequest2::RequestComputeShaderDataAsync
 
-Una solicitud asincrónica para obtener datos del sombreador de cálculo para el envío especificado.
+Una solicitud asincrónica para obtener datos del sombreador de proceso para el envío especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,25 +42,25 @@ HRESULT RequestComputeShaderDataAsync(
 
 ## <a name="parameters"></a>Parámetros
 
-*eventID*   
-Evento de envío especificado.
+*Eventid*   
+Evento de distribución especificado.
 
 *requestCallback*   
-Dirección de devolución de llamada que se utiliza para notificar al host los resultados.
+Dirección de devolución de llamada usada para notificar al host de resultados.
 
 *requestCookie*   
-Cookie que identifica de forma única la solicitud y que se puede usar para indicar que se va a cancelar.
+Cookie que identifica de forma única la solicitud y se puede usar para indicar que se cancele.
 
 *progressIntervalMsecs*   
-No se utiliza.
+No se usa.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Header</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vea también
 

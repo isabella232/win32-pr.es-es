@@ -1,8 +1,8 @@
 ---
-description: El método Reset de la \_ clase PCVideoController de CIM solicita un restablecimiento del dispositivo lógico.
+description: El método Reset de la clase \_ CIM PCVideoController solicita un restablecimiento del dispositivo lógico.
 ms.assetid: 0dbed7af-6c7a-4bbb-b1ae-d768d2f88697
 ms.tgt_platform: multiple
-title: Método Reset de la clase CIM_PCVideoController
+title: Método Reset de la CIM_PCVideoController clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,19 +14,19 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b156f4c440e98ebc51618ca8350696f23b55074b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 05a10737eac27b4c06380cae37af3ad9b235123dafbddfc3069a42221706806b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659571"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119701495"
 ---
-# <a name="reset-method-of-the-cim_pcvideocontroller-class"></a>Método Reset de la \_ clase PCVideoController de CIM
+# <a name="reset-method-of-the-cim_pcvideocontroller-class"></a>Método Reset de la \_ clase CIM PCVideoController
 
-El método **RESET** de la \_ clase PCVideoController de CIM solicita un restablecimiento del dispositivo lógico. Este método se hereda del [**\_ LogicalDevice de CIM**](cim-logicaldevice.md).
+El **método Reset** de la clase CIM \_ PCVideoController solicita un restablecimiento del dispositivo lógico. Este método se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -45,24 +45,24 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 (cero) si la solicitud se ejecutó correctamente, 1 (uno) si no se admite la solicitud y otro valor si se produjo un error.
+Devuelve 0 (cero) si la solicitud se ejecutó correctamente, 1 (uno) si no se admite la solicitud y algún otro valor si se produjo un error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método no está implementado actualmente por WMI. Para usar este método, debe implementarlo en su propio proveedor. Para las clases WMI derivadas de [**CIM \_ PCVideoController**](cim-pcvideocontroller.md), vea [clases Win32](win32-provider.md).
+Wmi no implementa actualmente este método. Para usar este método, debe implementarlo en su propio proveedor. Para las clases WMI derivadas de [**CIM \_ PCVideoController,**](cim-pcvideocontroller.md)vea [Clases win32](win32-provider.md).
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -71,10 +71,10 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[\_PCVIDEOCONTROLLER CIM](reset-method-in-class-cim-pcvideocontroller.md)
+[CIM \_ PCVideoController](reset-method-in-class-cim-pcvideocontroller.md)
 </dt> <dt>
 
-[**\_PCVIDEOCONTROLLER CIM**](cim-pcvideocontroller.md)
+[**CIM \_ PCVideoController**](cim-pcvideocontroller.md)
 </dt> </dl>
 
  

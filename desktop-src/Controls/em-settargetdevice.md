@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_SETTARGETDEVICE (RichEdit. h)
-description: Establece el dispositivo de destino y el ancho de línea usados para \ 0034; lo que se ve es lo que se obtiene \ 0034; (WYSIWYG) formato en un control Rich Edit.
+title: EM_SETTARGETDEVICE mensaje (Richedit.h)
+description: Establece el dispositivo de destino y el ancho de línea que se usa para \ 0034; lo que ve es lo que obtiene \ 0034; (WYSIWYG) formato en un control de edición enriquecido.
 ms.assetid: dfc829f5-e711-419e-abb5-c1e8df994c4a
 keywords:
-- EM_SETTARGETDEVICE controles de mensajes de Windows
+- EM_SETTARGETDEVICE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f82d6ee5df86572564cffcf192395ccee1fbd05
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2d9a3cd4e59f3800b91fedee446e927ab0ec39988474752561a04dace5572ef0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119697595"
 ---
-# <a name="em_settargetdevice-message"></a>\_Mensaje SETTARGETDEVICE em
+# <a name="em_settargetdevice-message"></a>Mensaje \_ EM SETTARGETDEVICE
 
-Establece el dispositivo de destino y el ancho de línea que se usan para el formato de "lo que se ve es lo que se obtiene" (WYSIWYG) en un control Rich Edit.
+Establece el dispositivo de destino y el ancho de línea usados para el formato "lo que se ve es lo que se obtiene" (WYSIWYG) en un control de edición enriquecido.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -39,17 +39,17 @@ HDC para el dispositivo de destino.
 *lParam* 
 </dt> <dd>
 
-Ancho de línea que se va a usar para dar formato.
+Ancho de línea que se usará para el formato.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es cero si se produce un error en la operación, o es distinto de cero si se realiza correctamente.
+El valor devuelto es cero si se produce un error en la operación o distinto de cero si se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La HDC para la impresora predeterminada se puede obtener como se indica a continuación.
+El HDC de la impresora predeterminada se puede obtener como se muestra a continuación.
 
 
 ```
@@ -64,17 +64,17 @@ if (PrintDlg(&pd))
 
 
 
-Si *lParam* es cero, no se crean saltos de línea.
+Si *lParam es* cero, no se crea ningún salto de línea.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

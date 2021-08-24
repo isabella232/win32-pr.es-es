@@ -1,7 +1,7 @@
 ---
-description: El monitor llama a la función LoadIPAddresses para rellenar una lista de direcciones IP con las direcciones tomadas de una variable de cadena de configuración HTML.
+description: El monitor llama a la función LoadIPAddresses para rellenar una lista de direcciones IP con direcciones tomadas de una variable de cadena de configuración HTML.
 ms.assetid: d0b5d686-5a98-4d61-aa28-24ea71fcb06b
-title: Función LoadIPAddresses (Netmon. h)
+title: Función LoadIPAddresses (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 4a5c172117081777b2a89b875401ec0645dd643e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2f56517fd0caf4762be2848ac9a6f3094ed5e3194b2eb84123bf2fcc2bf67bcd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119742677"
 ---
-# <a name="loadipaddresses-function"></a>LoadIPAddresses función)
+# <a name="loadipaddresses-function"></a>Función LoadIPAddresses
 
-El monitor llama a la función **LoadIPAddresses** para rellenar una lista de direcciones IP con las direcciones tomadas de una variable de cadena de configuración HTML.
+El monitor llama a la función **LoadIPAddresses** para rellenar una lista de direcciones IP con direcciones tomadas de una variable de cadena de configuración HTML.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,28 +42,28 @@ BOOL LoadIPAddresses(
 
 <dl> <dt>
 
-*pConfig* \[ de\]
+*pConfig* \[ En\]
 </dt> <dd>
 
-Puntero a la cadena de configuración HTML que el método [IMonitor::D oconfigure](imonitor-doconfigure.md) pasa al monitor.
+Puntero a la cadena de configuración HTML pasada al monitor por el [método IMonitor::D oConfigure.](imonitor-doconfigure.md)
 
 </dd> <dt>
 
-*pVarName* \[ de\]
+*pVarName* \[ En\]
 </dt> <dd>
 
 Puntero al nombre de la variable en la cadena de configuración.
 
 </dd> <dt>
 
-*ppAddresses* \[ enuncia\]
+*ppAddresses* \[ out\]
 </dt> <dd>
 
-Puntero a un puntero a una matriz de direcciones. Si se encuentra la variable especificada en *pVarName* y tiene una longitud distinta de cero, la función asigna espacio suficiente y almacena todas las direcciones IP como una matriz.
+Puntero a un puntero a una matriz de direcciones. Si se encuentra la variable especificada en *pVarName* y tiene una longitud que no es cero, la función asigna espacio suficiente y almacena todas las direcciones IP como una matriz.
 
 </dd> <dt>
 
-*pNumAddresses* \[ enuncia\]
+*pNumAddresses* \[ out\]
 </dt> <dd>
 
 Puntero a la variable **DWORD** que se establece en el número de direcciones IP tomadas de la cadena de configuración.
@@ -72,13 +72,13 @@ Puntero a la variable **DWORD** que se establece en el número de direcciones IP
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función es correcta (se encontró el nombre de la variable y tenía una cadena que no es de longitud cero que representaba direcciones IP), el valor devuelto es **true**.
+Si la función se realiza correctamente (se encontró el nombre de la variable y tenía una cadena de longitud no cero que representara direcciones IP), el valor devuelto es **TRUE.**
 
-Si la función no se realiza correctamente, el valor devuelto es **false**.
+Si la función no se realiza correctamente, el valor devuelto es **FALSE.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las direcciones IP deben estar en formato x.x.x. x (por ejemplo, 127.0.0.1).
+Las direcciones IP deben estar en formato x.x.x.x (por ejemplo, 127.0.0.1).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -88,8 +88,8 @@ Las direcciones IP deben estar en formato x.x.x. x (por ejemplo, 127.0.0.1).
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Biblioteca<br/>                  | <dl> <dt>Nmapi. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Biblioteca<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 

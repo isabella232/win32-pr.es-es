@@ -1,7 +1,7 @@
 ---
 description: La función ExpertMemorySize devuelve la cantidad de memoria asignada por la función ExpertAllocMemory.
 ms.assetid: 60d3f33d-dc03-4c39-98fa-ec093398b51b
-title: Función ExpertMemorySize (Netmon. h)
+title: Función ExpertMemorySize (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 57c83bc3e9535550086c9732b33a71a357e4da42
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 69dae4ca2a7f7a9e3b2f77047475c5dd35f54a3394b4481c2f452a46e983c35e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907675"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119744275"
 ---
-# <a name="expertmemorysize-function"></a>ExpertMemorySize función)
+# <a name="expertmemorysize-function"></a>Función ExpertMemorySize
 
-La función **ExpertMemorySize** devuelve la cantidad de memoria asignada por la función [ExpertAllocMemory](expertallocmemory.md) .
+La **función ExpertMemorySize** devuelve la cantidad de memoria asignada por la [función ExpertAllocMemory.](expertallocmemory.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,14 +40,14 @@ SIZE_T WINAPI ExpertMemorySize(
 
 <dl> <dt>
 
-*hExpertKey* \[ de\]
+*hExpertKey* \[ En\]
 </dt> <dd>
 
-Identificador de experto único. Monitor de red pasa *hExpertKey* al experto cuando llama a la función [Run](run.md) .
+Identificador único de experto. Monitor de red pasa *hExpertKey* al experto cuando llama a la [función Run.](run.md)
 
 </dd> <dt>
 
-*pOriginalMemory* \[ de\]
+*pOriginalMemory* \[ En\]
 </dt> <dd>
 
 Puntero a la dirección de memoria del experto asignado por [ExpertAllocMemory](expertallocmemory.md).
@@ -58,9 +58,9 @@ Puntero a la dirección de memoria del experto asignado por [ExpertAllocMemory](
 
 La función devuelve la cantidad de memoria asignada en bytes.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener información sobre el tipo de datos de **tamaño \_ T** que devuelve **ExpertMemorySize** , vea tipos de datos.
+Para obtener información sobre el **tipo de datos SIZE \_ T** que **devuelve ExpertMemorySize,** vea Tipos de datos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,8 +70,8 @@ Para obtener información sobre el tipo de datos de **tamaño \_ T** que devuelv
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Biblioteca<br/>                  | <dl> <dt>Nmapi. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Biblioteca<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 

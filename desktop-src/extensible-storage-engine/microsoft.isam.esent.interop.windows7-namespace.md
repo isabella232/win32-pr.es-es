@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: espacio de nombres Microsoft. ISAM. esent. Interop. Windows7'
-title: Espacio de nombres Microsoft. ISAM. esent. Interop. Windows7 ()
+description: 'Más información sobre: Espacio de nombres Microsoft.Isam.Esent.Interop.Windows7'
+title: Espacio de nombres Microsoft.Isam.Esent.Interop.Windows7 ()
 TOCTitle: '@NoTitle'
 ms:assetid: N:Microsoft.Isam.Esent.Interop.Windows7
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows7(v=EXCHG.10)
@@ -14,14 +14,14 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: e1e55e2b06092f8d29eb4261c9afb26028a1a261
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a6372f556f15d099800915de9399a43128ba6275e59a847ed987669577d9f51a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104567268"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119780315"
 ---
-# <a name="microsoftisamesentinteropwindows7-namespace"></a>Espacio de nombres Microsoft. ISAM. esent. Interop. Windows7
+# <a name="microsoftisamesentinteropwindows7-namespace"></a>Espacio de nombres Microsoft.Isam.Esent.Interop.Windows7
 
 ## <a name="classes"></a>Clases
 
@@ -42,22 +42,22 @@ ms.locfileid: "104567268"
 <tr class="even">
 <td><img src="../images/dn292085.pubclass(EXCHG.10).gif" title="Clase pública" alt="Public class" /></td>
 <td><a href="dn335302(v=exchg.10).md">Windows7ExceptionAction</a></td>
-<td>Acción de excepción que se ha agregado a la versión de Windows 7 de ESENT.</td>
+<td>Acción de excepción que se ha agregado a la versión Windows 7 de ESENT.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292085.pubclass(EXCHG.10).gif" title="Clase pública" alt="Public class" /></td>
 <td><a href="dn335303(v=exchg.10).md">Windows7Grbits</a></td>
-<td>Grbits que se han agregado a la versión de Windows 7 de ESENT.</td>
+<td>Grbits que se han agregado a la versión Windows 7 de ESENT.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292085.pubclass(EXCHG.10).gif" title="Clase pública" alt="Public class" /></td>
 <td><a href="dn335311(v=exchg.10).md">Windows7IdxInfo</a></td>
-<td>Niveles de información de columna que se han agregado a la versión de Windows 7 de ESENT.</td>
+<td>Niveles de información de columna que se han agregado a la Windows 7 de ESENT.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292085.pubclass(EXCHG.10).gif" title="Clase pública" alt="Public class" /></td>
 <td><a href="dn335429(v=exchg.10).md">Windows7Param</a></td>
-<td>Parámetros del sistema que se han agregado a la versión de Windows 7 de ESENT.</td>
+<td>Parámetros del sistema que se han agregado a la versión Windows 7 de ESENT.</td>
 </tr>
 </tbody>
 </table>

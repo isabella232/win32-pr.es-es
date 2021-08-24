@@ -1,6 +1,6 @@
 ---
 title: MIM_MOREDATA mensaje (Mmsystem.h)
-description: El mensaje MOREDATA de MIM se envía a una función de devolución de llamada de entrada DE MIDI cuando un dispositivo de entrada DE MIDI recibe un mensaje MIDI, pero la aplicación no procesa los mensajes DE DATOS DE MIM lo suficientemente rápido como para mantenerse al día con el controlador de dispositivo de \_ \_ entrada.
+description: El mensaje MIM MOREDATA se envía a una función de devolución de llamada de entrada DE MIDI cuando un dispositivo de entrada DE LÍNEA recibe un mensaje MIDI, pero la aplicación no procesa los mensajes data de MIM lo suficientemente rápido como para mantenerse al día con el controlador del dispositivo de \_ \_ entrada.
 ms.assetid: 74ed46ab-a18e-4df5-bf36-ab3dec7fafa5
 keywords:
 - MIM_MOREDATA mensaje Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c6342823e13a085b377a3e71f28a0f9ff016681c
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 130a07d1d205e9944c7be6ab9ad1294e09d0ebdcdb81d5befc5468ff5a65218f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119419"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119782975"
 ---
-# <a name="mim_moredata-message"></a>Mensaje \_ MOREDATA de MIM
+# <a name="mim_moredata-message"></a>\_MIM Mensaje MOREDATA
 
-El **mensaje \_ MOREDATA** de MIM se envía a una función de devolución de llamada de entrada DE MIDI cuando un dispositivo de entrada DE LÍNEA recibe un mensaje MIDI, pero la aplicación no procesa los mensajes DE DATOS DE [**\_ MIM**](mim-data.md) lo suficientemente rápido como para mantenerse al día con el controlador del dispositivo de entrada. La función de devolución de llamada recibe este mensaje solo cuando la aplicación especifica EL ESTADO DE E/S de MIDI en la llamada \_ \_ a la función [**midiInOpen.**](/windows/win32/api/mmeapi/nf-mmeapi-midiinopen)
+El **MIM \_ mensaje MOREDATA** se envía a una función de devolución de llamada de entrada DE MIDI cuando un dispositivo de entrada DE LÍNEA recibe un mensaje MIDI, pero la aplicación no procesa los mensajes data de [**MIM \_**](mim-data.md) lo suficientemente rápido como para mantenerse al día con el controlador del dispositivo de entrada. La función de devolución de llamada recibe este mensaje solo cuando la aplicación especifica EL ESTADO DE E/S de MIDI en la llamada \_ \_ a la función [**midiInOpen.**](/windows/win32/api/mmeapi/nf-mmeapi-midiinopen)
 
 
 ```C++
@@ -45,10 +45,10 @@ Especifica el mensaje MIDI que se recibió. El mensaje se empaqueta en un **valo
 
 
 
-| Requisito | Valor | Descripción |
+| Requisito | Value | Descripción |
 |-----------|-----------------|-----------------------------------------------------|
 | Palabra alta | Byte de orden superior | No se usa.                                           |
-|           | Byte de orden bajo  | Contiene un segundo byte de datos MIDI (cuando sea necesario).  |
+|           | Byte de orden bajo  | Contiene un segundo byte de datos DE MIDI (cuando sea necesario).  |
 | Palabra baja  | Byte de orden superior | Contiene el primer byte de datos DE MIDI (cuando sea necesario). |
 |           | Byte de orden bajo  | Contiene el estado de MIDI.                           |
 
@@ -63,7 +63,7 @@ Los dos bytes de datos de MIDI son opcionales, dependiendo del byte de estado de
 <span id="dwTimestamp"></span><span id="dwtimestamp"></span><span id="DWTIMESTAMP"></span>*dwTimestamp*
 </dt> <dd>
 
-Especifica la hora a la que el controlador de dispositivo de entrada recibió el mensaje. La marca de tiempo se especifica en milisegundos, empezando por 0 cuando se llamó a la [**función midiInStart.**](/windows/win32/api/mmeapi/nf-mmeapi-midiinstart)
+Especifica la hora a la que el controlador de dispositivo de entrada recibió el mensaje. La marca de tiempo se especifica en milisegundos, empezando en 0 cuando se llamó [**a la función midiInStart.**](/windows/win32/api/mmeapi/nf-mmeapi-midiinstart)
 
 </dd> </dl>
 
@@ -71,13 +71,13 @@ Especifica la hora a la que el controlador de dispositivo de entrada recibió el
 
 Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una aplicación solo debe realizar una cantidad mínima de procesamiento de mensajes \_ MOREDATA de MIM. (En concreto, las aplicaciones no deben llamar a la [función PostMessage](/windows/win32/api/winuser/nf-winuser-postmessagea) durante el procesamiento de MIM \_ MOREDATA). En su lugar, la aplicación debe colocar los datos del evento en un búfer y, a continuación, devolver.
+Una aplicación solo debe realizar una cantidad mínima de procesamiento de MIM \_ mensajes MOREDATA. (En concreto, las aplicaciones no deben llamar a la [función PostMessage](/windows/win32/api/winuser/nf-winuser-postmessagea) mientras se procesa MIM \_ MOREDATA). En su lugar, la aplicación debe colocar los datos del evento en un búfer y, a continuación, devolver.
 
-Cuando una aplicación recibe un mensaje DE DATOS DE [**MIM \_**](mim-data.md) después de una serie de mensajes MOREDATA de MIM, se ha puesto al día con los eventos ENTRANTES DE MIDI y puede llamar de forma segura a funciones que consumen mucho \_ tiempo.
+Cuando una aplicación recibe un mensaje [**MIM \_ DATA**](mim-data.md) después de una serie de mensajes MOREDATA de MIM, se ha puesto al día con los eventos ENTRANTEs de MIDI y puede llamar de forma segura a funciones que requieren mucho \_ tiempo.
 
-Los mensajes MIDI recibidos de un puerto de entrada DE MIDI tienen deshabilitado el estado de ejecución; cada mensaje se expande para incluir el byte de estado DE MIDI.
+Los mensajes DE MIDI recibidos de un puerto de entrada de MIDI tienen el estado de ejecución deshabilitado; cada mensaje se expande para incluir el byte de estado DE MIDI.
 
 Este mensaje no se envía cuando se recibe un mensaje exclusivo del sistema MIDI.
 
@@ -85,15 +85,15 @@ Este mensaje no se envía cuando se recibe un mensaje exclusivo del sistema MIDI
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluye Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

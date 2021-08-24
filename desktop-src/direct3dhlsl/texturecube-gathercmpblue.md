@@ -1,9 +1,9 @@
 ---
-title: 'Métodos TextureCube:: TextureCube GatherCmpBlue'
-description: 'Muestras y comparan una textura y devuelven el componente azul. | Métodos TextureCube:: TextureCube GatherCmpBlue'
+title: Métodos TextureCube::TextureCube GatherCmpBlue
+description: Muestrea y compara una textura y devuelve el componente azul. | Métodos TextureCube::TextureCube GatherCmpBlue
 ms.assetid: 28BF865B-906E-4BAC-9EBE-F75590346392
 keywords:
-- GatherCmpBlue métodos HLSL
+- Métodos HLSL de GatherCmpBlue
 topic_type:
 - apiref
 api_type:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 7124d9bfa3aadd201604aef91b25ba06ad45ca79
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 217ce618acbc16382da17155245c1534cd043b7b9593aa00f79f5b4b9f9ff440
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104998097"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119742635"
 ---
-# <a name="texturecubegathercmpblue-methods"></a>TextureCube:: GatherCmpBlue (métodos)
+# <a name="texturecubegathercmpblue-methods"></a>Métodos TextureCube::GatherCmpBlue
 
-Muestras y comparan una textura y devuelven el componente azul.
+Muestrea y compara una textura y devuelve el componente azul.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,7 +29,7 @@ Muestras y comparan una textura y devuelven el componente azul.
 
 | Método                                                                               | Descripción                                                                                                     |
 |:-------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------|
-| [**GatherCmpBlue (S, Float, Float, uint)**](tcube-gathercmpblue-s-float-float-uint-.md) | Muestras y comparan una textura y devuelven el componente azul junto con el estado de la operación.<br/> |
+| [**GatherCmpBlue(S,float,float,uint)**](tcube-gathercmpblue-s-float-float-uint-.md) | Muestrea y compara una textura y devuelve el componente azul junto con el estado de la operación.<br/> |
 
 
 

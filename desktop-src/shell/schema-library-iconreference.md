@@ -9,18 +9,18 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 1f307ecd4fa523cc28881164869dca3329dfd698
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 84e200fa4969dc376661bd32851296d80c74120939afc995754cb2937ea04be3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104997441"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119820235"
 ---
 # <a name="iconreference-element-library-schema"></a>Elemento iconReference (esquema de biblioteca)
 
 El <iconReference> elemento especifica un icono personalizado para esta biblioteca. Este elemento es opcional y no tiene atributos ni elementos secundarios.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```
@@ -42,9 +42,9 @@ El <iconReference> elemento especifica un icono personalizado para esta bibliote
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La referencia de icono debe especificarse en un formato adecuado para la función [**PathParseIconLocation**](/windows/desktop/api/Shlwapi/nf-shlwapi-pathparseiconlocationa) . Por ejemplo: `ModuleFileName,IconResourceIndex`.
+La referencia de icono debe especificarse en un formulario adecuado para la [**función PathParseIconLocation.**](/windows/desktop/api/Shlwapi/nf-shlwapi-pathparseiconlocationa) Por ejemplo: `ModuleFileName,IconResourceIndex`.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -59,25 +59,25 @@ La referencia de icono debe especificarse en un formato adecuado para la funció
 [Elemento libraryDescription (esquema de biblioteca)](schema-librarydescription.md)
 </dt> <dt>
 
-[Name (elemento, esquema de biblioteca)](schema-library-name.md)
+[elemento name (Esquema de biblioteca)](schema-library-name.md)
 </dt> <dt>
 
-[Elemento ownerSID (esquema de biblioteca)](schema-library-ownersid.md)
+[elemento ownerSID (esquema de biblioteca)](schema-library-ownersid.md)
 </dt> <dt>
 
-[Elemento propertyStore (esquema de biblioteca)](schema-library-propertystore.md)
+[elemento propertyStore (esquema de biblioteca)](schema-library-propertystore.md)
 </dt> <dt>
 
-[Elemento searchConnectorDescription (esquema de biblioteca)](schema-library-searchconnectordescription.md)
+[elemento searchConnectorDescription (esquema de biblioteca)](schema-library-searchconnectordescription.md)
 </dt> <dt>
 
-[Elemento searchConnectorDescriptionList (esquema de biblioteca)](schema-library-searchconnectordescriptionlist.md)
+[elemento searchConnectorDescriptionList (esquema de biblioteca)](schema-library-searchconnectordescriptionlist.md)
 </dt> <dt>
 
 [Elemento templateInfo (esquema de biblioteca)](schema-library-templateinfo.md)
 </dt> <dt>
 
-[version (elemento, esquema de biblioteca)](schema-library-version.md)
+[elemento version (esquema de biblioteca)](schema-library-version.md)
 </dt> </dl>
 
  

@@ -1,10 +1,10 @@
 ---
 title: Enumeración ControlReconnectStatus
-description: Especifica el resultado del método de reconexión IMsRdpClient8.
+description: Especifica el resultado del método IMsRdpClient8 Reconnect.
 ms.assetid: FB0AC4CF-18F5-4CDD-A75C-59A7CF716688
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto enumeración ControlReconnectStatus
+- ControlReconnectStatus enumeración Servicios de Escritorio remoto
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5638cbdda268dd453881ee1d88085728479aada6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 635adbcafd5180dad967e2488b793f6907fd38cc848935a088bee59aad536354
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119738085"
 ---
 # <a name="controlreconnectstatus-enumeration"></a>Enumeración ControlReconnectStatus
 
-Especifica el resultado del método [**IMsRdpClient8:: reconnect**](imsrdpclient8-reconnect.md) .
+Especifica el resultado del método [**IMsRdpClient8::Reconnect.**](imsrdpclient8-reconnect.md)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -72,7 +72,7 @@ No se pudo iniciar la operación de reconexión.
 
 <dl> <dt>
 
-[**IMsRdpClient8:: reconnect**](imsrdpclient8-reconnect.md)
+[**IMsRdpClient8::Reconnect**](imsrdpclient8-reconnect.md)
 </dt> </dl>
 
  
