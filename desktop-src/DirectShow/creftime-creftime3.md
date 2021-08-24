@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3d5f20fcca6e05810320af8fad7ea79035fd1591
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0ab8d2124e63be2c85f5a056e2f546f70c5441a24f427594bb775e14e4788490
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098943"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073409"
 ---
 # <a name="creftimecreftime-constructor-reftimeh"></a>Constructor CRefTime.CRefTime (Reftime.h)
 
@@ -42,7 +42,7 @@ CRefTime(
 
 <dl> <dt>
 
-*rt* 
+*Rt* 
 </dt> <dd>
 
 Tiempo en unidades de 100 nanosegundos.
@@ -59,7 +59,7 @@ El valor predeterminado de la hora de referencia es cero.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Reftime.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Encabezado<br/>  | <dl> <dt>Reftime.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 

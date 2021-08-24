@@ -10,53 +10,53 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 33cc82925b6afc1690f2cd87607f21e9ea02fdbe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 881435986a1097c2ba97160693ed15e28bae3d86019fb703adf6bf1e8b07f8a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119049733"
 ---
 # <a name="writing-to-a-log-file-based-on-an-event"></a>Escribir en un archivo de registro basado en un evento
 
-La clase [**LogFileEventConsumer**](logfileeventconsumer.md) puede escribir texto predefinido en un archivo de registro cuando se produce un evento especificado. Esta clase es un consumidor de eventos estándar que proporciona WMI.
+La [**clase LogFileEventConsumer**](logfileeventconsumer.md) puede escribir texto predefinido en un archivo de registro cuando se produce un evento especificado. Esta clase es un consumidor de eventos estándar que proporciona WMI.
 
-El procedimiento básico para usar consumidores estándar siempre es el mismo y se encuentra en [supervisión y respuesta a eventos con consumidores estándar](monitoring-and-responding-to-events-with-standard-consumers.md).
+El procedimiento básico para usar consumidores estándar es siempre el mismo y se encuentra en Supervisión y respuesta a eventos [con consumidores estándar.](monitoring-and-responding-to-events-with-standard-consumers.md)
 
-El siguiente procedimiento se agrega al procedimiento básico, es específico de la clase [**LogFileEventConsumer**](logfileeventconsumer.md) y describe cómo crear un consumidor de eventos que ejecute un programa.
+El procedimiento siguiente agrega al procedimiento básico, es específico de la clase [**LogFileEventConsumer**](logfileeventconsumer.md) y describe cómo crear un consumidor de eventos que ejecuta un programa.
 
 **Para crear un consumidor de eventos que escribe en un archivo de registro**
 
-1.  En el archivo Managed Object Format (MOF), cree una instancia de [**LogFileEventConsumer**](logfileeventconsumer.md) para recibir los eventos solicitados en la consulta, asigne un nombre a la instancia en la propiedad **nombre** y, a continuación, coloque la ruta de acceso al archivo de registro en **la propiedad nombre de archivo.**
+1.  En el archivo Managed Object Format (MOF), cree una instancia de [**LogFileEventConsumer**](logfileeventconsumer.md) para recibir los eventos que solicite en la consulta, asigne un nombre a la instancia en la propiedad **Name** y, a continuación, coloque la ruta de acceso al archivo de registro en la propiedad **Filename.**
 
-    Para obtener más información, vea [diseñar clases Managed Object Format (MOF)](designing-managed-object-format--mof--classes.md).
+    Para obtener más información, vea [Designing Managed Object Format (MOF) Classes](designing-managed-object-format--mof--classes.md).
 
 2.  Proporcione la plantilla de texto para escribir en el archivo de registro en la propiedad Text.
 
-    Para obtener más información, consulte [uso de plantillas de cadena estándar](using-standard-string-templates.md).
+    Para obtener más información, vea [Usar plantillas de cadena estándar.](using-standard-string-templates.md)
 
-3.  Cree una instancia de [**\_ \_ EventFilter**](--eventfilter.md) y defina una consulta para especificar los eventos que activarán al consumidor.
+3.  Cree una instancia de [**\_ \_ EventFilter**](--eventfilter.md) y defina una consulta para especificar los eventos que activarán el consumidor.
 
-    Para obtener más información, vea [consultas con WQL](querying-with-wql.md).
+    Para obtener más información, [vea Consulta con WQL.](querying-with-wql.md)
 
-4.  Cree una instancia de [**\_ \_ FilterToConsumerBinding**](--filtertoconsumerbinding.md) para asociar el filtro a la instancia de [**LogFileEventConsumer**](logfileeventconsumer.md).
+4.  Cree una instancia de [**\_ \_ FilterToConsumerBinding para**](--filtertoconsumerbinding.md) asociar el filtro a la instancia de [**LogFileEventConsumer.**](logfileeventconsumer.md)
 5.  Para controlar quién lee o escribe en el archivo de registro, establezca la seguridad en el directorio donde se encuentra el registro en el nivel requerido.
 6.  Compile el archivo MOF mediante [**Mofcomp.exe**](mofcomp.md).
 
 ## <a name="example"></a>Ejemplo
 
-El ejemplo de esta sección está en código MOF, pero puede crear las instancias mediante programación con la API de [scripting para WMI](scripting-api-for-wmi.md) o la [API com para WMI](com-api-for-wmi.md). En el ejemplo se usa el LogFileEventConsumer estándar para crear una clase de consumidor denominada LogFileEvent que escribe una línea en el archivo c: \\ logfile. log cuando se crea una instancia de la clase LogFileEvent.
+El ejemplo de esta sección está en código MOF, pero puede crear las instancias mediante programación mediante [scripting API](scripting-api-for-wmi.md) para WMI o la API COM [para WMI.](com-api-for-wmi.md) En el ejemplo se usa el estándar LogFileEventConsumer para crear una clase de consumidor denominada LogFileEvent que escribe una línea en el archivo c: Logfile.log cuando se crea una instancia de la \\ clase LogFileEvent.
 
-En el procedimiento siguiente se describe cómo utilizar el ejemplo.
+En el procedimiento siguiente se describe cómo usar el ejemplo.
 
 **Para usar el ejemplo**
 
-1.  Copie la siguiente lista de MOF en un archivo de texto y guárdelo con una extensión. mof.
-2.  En una ventana de comandos, compile el archivo MOF con el siguiente comando.
+1.  Copie la lista MOF siguiente en un archivo de texto y guárdelo con una extensión .mof.
+2.  En una ventana de comandos, compile el archivo MOF mediante el comando siguiente.
 
-    Nombre de archivo de **MOFCOMP** ** * *. mof**
+    **Mofcomp** *filename:.mof**
 
-3.  Abra logfile. log para ver la línea especificada por LogFileEvent.Name: "logfile Event Consumer Event".
+3.  Abra Logfile.log para ver la línea especificada por LogFileEvent.Name: "Evento de consumidor de eventos de archivo de registro".
 
 ``` syntax
 // Set the namespace as root\subscription.

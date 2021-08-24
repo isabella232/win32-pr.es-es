@@ -1,19 +1,19 @@
 ---
-description: La notificación de COPYERROR de SPFILENOTIFY \_ se envía a la rutina de devolución de llamada si se produce un error durante una operación de copia de archivos.
+description: La notificación COPYERROR SPFILENOTIFY se envía a la rutina de devolución de llamada si \_ se produce un error durante una operación de copia de archivos.
 ms.assetid: d6096954-c6a5-44d4-a358-c1320c50730a
-title: Mensaje de SPFILENOTIFY_COPYERROR (setupapi. h)
+title: SPFILENOTIFY_COPYERROR mensaje (Setupapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f6cd44daabd6a4aed5e61a716bab3df44f35fc0b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 80160af9d8053a90c1848d397da6bbb9bf41f2793756e1d5491fb0d6f5e39abc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103910333"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119665155"
 ---
-# <a name="spfilenotify_copyerror-message"></a>SPFILENOTIFY \_ COPYERROR
+# <a name="spfilenotify_copyerror-message"></a>SpFILENOTIFY \_ COPYERROR message
 
-La notificación de **\_ COPYERROR de SPFILENOTIFY** se envía a la rutina de devolución de llamada si se produce un error durante una operación de copia de archivos.
+La **notificación \_ COPYERROR SPFILENOTIFY** se envía a la rutina de devolución de llamada si se produce un error durante una operación de copia de archivos.
 
 
 ```C++
@@ -29,17 +29,17 @@ SPFILENOTIFY_COPYERROR
 
 <dl> <dt>
 
-*Parámetro1* 
+*Param1* 
 </dt> <dd>
 
-Puntero a una estructura [**FILEPATHS**](/windows/desktop/api/Setupapi/ns-setupapi-filepaths_a) .
+Puntero a una [**estructura FILEPATHS.**](/windows/desktop/api/Setupapi/ns-setupapi-filepaths_a)
 
 </dd> <dt>
 
 *Param2* 
 </dt> <dd>
 
-Puntero a un búfer, de tamaño máximo de \_ caracteres de ruta de acceso, que almacena la nueva información de ruta de acceso especificada por el usuario.
+Puntero a un búfer, de tamaño MAX PATH, que almacena la nueva información de ruta \_ de acceso especificada por el usuario.
 
 </dd> </dl>
 
@@ -51,10 +51,10 @@ La devolución de llamada debe devolver uno de los valores siguientes.
 
 | Código devuelto                                                                                    | Descripción                                                                                                                                                                                                                                                                   |
 |------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_anulación de FILEOP**</dt> </dl>   | Se debe cancelar el procesamiento de la cola. [**SetupCommitFileQueue**](/windows/desktop/api/Setupapi/nf-setupapi-setupcommitfilequeuea) devuelve cero y [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) devuelve información de ERROR extendida como error \_ cancelado (si el usuario canceló) o error \_ no \_ hay suficiente \_ memoria.<br/> |
-| <dl> <dt>**FILEOP \_ NEWPATH**</dt> </dl> | Vuelva a intentar la operación de copia mediante la ruta de acceso de la función de devolución de llamada colocada en el búfer al que apunta el parámetro *parám2* . La rutina de devolución de llamada debe asegurarse de que la ruta de acceso no desborda el tamaño de búfer de una matriz TCHAR de \_ elementos de ruta de acceso máxima.<br/>                |
-| <dl> <dt>**FILEOP \_ reintentar**</dt> </dl>   | El usuario está intentando volver a realizar la operación de copia.<br/>                                                                                                                                                                                                                   |
-| <dl> <dt>**FILEOP \_ SKIP**</dt> </dl>    | El usuario está omitiendo la operación de copia de archivos.<br/>                                                                                                                                                                                                                      |
+| <dl> <dt>**FILEOP \_ ABORT**</dt> </dl>   | Se debe cancelar el procesamiento de la cola. [**SetupCommitFileQueue**](/windows/desktop/api/Setupapi/nf-setupapi-setupcommitfilequeuea) devuelve cero y [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) devuelve información de error extendida, como ERROR CANCELLED (si el usuario canceló) o \_ ERROR NOT ENOUGH \_ \_ \_ MEMORY.<br/> |
+| <dl> <dt>**FILEOP \_ NEWPATH**</dt> </dl> | Vuelva a intentar la operación de copia mediante la ruta de acceso a la función de devolución de llamada colocada en el búfer al que apunta *el parámetro Param2.* La rutina de devolución de llamada debe asegurarse de que la ruta de acceso no desborda el tamaño de búfer de una matriz TCHAR de elementos MAX \_ PATH.<br/>                |
+| <dl> <dt>**REINTENTO \_ DE FILEOP**</dt> </dl>   | El usuario está intentando de nuevo la operación de copia.<br/>                                                                                                                                                                                                                   |
+| <dl> <dt>**FILEOP \_ SKIP**</dt> </dl>    | El usuario omite la operación de copia de archivos.<br/>                                                                                                                                                                                                                      |
 
 
 
@@ -64,11 +64,11 @@ La devolución de llamada debe devolver uno de los valores siguientes.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Setupapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Setupapi.h</dt> </dl> |
 
 
 

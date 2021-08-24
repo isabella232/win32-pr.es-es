@@ -1,37 +1,37 @@
 ---
 title: Funciones auxiliares de enumeración
-description: Hay tres funciones auxiliares de enumerador que se pueden usar desde C/C++ para ayudar en la navegación de objetos de Active Directory. Son ADsBuildEnumerator, ADsEnumerateNext y ADsFreeEnumerator.
+description: Hay tres funciones auxiliares de enumerador que se pueden usar desde C/C++ para ayudar en la navegación de Active Directory objetos. Son ADsBuildEnumerator, ADsEnumerateNext y ADsFreeEnumerator.
 ms.assetid: 019958c8-5bf5-45eb-871c-796ff3750cdc
 ms.tgt_platform: multiple
 keywords:
-- ADsBuildEnumerator ADSI, usar
-- ADsEnumerateNext ADSI, usar
-- ADsFreeEnumerator ADSI, usar
-- ADSI ADSI, código de ejemplo C/C++, uso de ADsBuildEnumerator ADsEnumerateNext y ADsFreeEnumerator
+- ADsBuildEnumerator ADSI ,using
+- ADsEnumerateNext ADSI ,using
+- ADsFreeEnumerator ADSI ,using
+- ADSI ADSI , código de ejemplo C/C++ , mediante ADsBuildEnumerator ADsEnumerateNext y ADsFreeEnumerator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: af9597787202adf183435262eab9341957e19457
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: c110fbc4fddd420bf8205d6c2d894c7d4f4daf8287312c2d0d86002f5520310b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104149622"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119082659"
 ---
 # <a name="enumeration-helper-functions"></a>Funciones auxiliares de enumeración
 
-Hay tres funciones auxiliares de enumerador que se pueden usar desde C/C++ para ayudar en la navegación de objetos de Active Directory. Son [**ADsBuildEnumerator**](/windows/desktop/api/Adshlp/nf-adshlp-adsbuildenumerator), [**ADsEnumerateNext**](/windows/desktop/api/Adshlp/nf-adshlp-adsenumeratenext)y [**ADsFreeEnumerator**](/windows/desktop/api/Adshlp/nf-adshlp-adsfreeenumerator).
+Hay tres funciones auxiliares de enumerador que se pueden usar desde C/C++ para ayudar en la navegación de Active Directory objetos. Son [**ADsBuildEnumerator,**](/windows/desktop/api/Adshlp/nf-adshlp-adsbuildenumerator) [**ADsEnumerateNext**](/windows/desktop/api/Adshlp/nf-adshlp-adsenumeratenext)y [**ADsFreeEnumerator.**](/windows/desktop/api/Adshlp/nf-adshlp-adsfreeenumerator)
 
 ## <a name="adsbuildenumerator"></a>ADsBuildEnumerator
 
-La función auxiliar [**ADsBuildEnumerator**](/windows/desktop/api/Adshlp/nf-adshlp-adsbuildenumerator) encapsula el código necesario para crear un objeto de enumerador. Llama al método [**IADsContainer:: get \_ \_ NewEnum**](/windows/desktop/api/Iads/nf-iads-iadscontainer-get__newenum) para crear un objeto de enumerador y, a continuación, llama al método [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) de [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) para obtener un puntero a la interfaz [**IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) para ese objeto. El objeto de enumeración es el mecanismo de automatización que se va a enumerar en contenedores. Utilice la función [**ADsFreeEnumerator**](/windows/desktop/api/Adshlp/nf-adshlp-adsfreeenumerator) para liberar este objeto de enumerador.
+La [**función auxiliar ADsBuildEnumerator**](/windows/desktop/api/Adshlp/nf-adshlp-adsbuildenumerator) encapsula el código necesario para crear un objeto enumerador. Llama al método [**IADsContainer::get \_ \_ NewEnum**](/windows/desktop/api/Iads/nf-iads-iadscontainer-get__newenum) para crear un objeto enumerador y, a continuación, llama al método [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) de [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) para obtener un puntero a la [**interfaz IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) para ese objeto. El objeto de enumeración es el mecanismo de Automation para enumerar sobre contenedores. Use la [**función ADsFreeEnumerator para**](/windows/desktop/api/Adshlp/nf-adshlp-adsfreeenumerator) liberar este objeto enumerador.
 
 ## <a name="adsenumeratenext"></a>ADsEnumerateNext
 
-La función auxiliar [**ADsEnumerateNext**](/windows/desktop/api/Adshlp/nf-adshlp-adsenumeratenext) rellena una matriz de variantes con elementos capturados de un objeto de enumerador. El número de elementos recuperados puede ser menor que el número solicitado.
+La [**función auxiliar ADsEnumerateNext**](/windows/desktop/api/Adshlp/nf-adshlp-adsenumeratenext) rellena una matriz VARIANT con elementos obtenidos de un objeto enumerador. El número de elementos recuperados puede ser menor que el número solicitado.
 
 ## <a name="adsfreeenumerator"></a>ADsFreeEnumerator
 
-Libera un objeto de enumerador creado previamente a través de la función [**ADsBuildEnumerator**](/windows/desktop/api/Adshlp/nf-adshlp-adsbuildenumerator) .
+Libera un objeto enumerador creado anteriormente a través de [**la función ADsBuildEnumerator.**](/windows/desktop/api/Adshlp/nf-adshlp-adsbuildenumerator)
 
 En el ejemplo de código siguiente se muestra una función que usa funciones auxiliares de enumerador en C++.
 
@@ -145,6 +145,6 @@ exitpoint:
 
 
 
- 
+ 
 
- 
+ 

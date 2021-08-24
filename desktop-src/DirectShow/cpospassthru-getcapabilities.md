@@ -45,7 +45,7 @@ HRESULT GetCapabilities(
 *pCapabilities* 
 </dt> <dd>
 
-Puntero a una variable que recibe una combinación bit a bit de marcas [**AM \_ SEEKING SEEKING \_ \_ CAPABILITIES.**](/windows/win32/api/strmif/ne-strmif-am_seeking_seeking_capabilities)
+Puntero a una variable que recibe una combinación bit a bit de marcas [**\_ AM SEEKING SEEKING \_ \_ CAPABILITIES.**](/windows/win32/api/strmif/ne-strmif-am_seeking_seeking_capabilities)
 
 </dd> </dl>
 
@@ -64,7 +64,7 @@ Devuelve el **valor HRESULT** del pin conectado.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

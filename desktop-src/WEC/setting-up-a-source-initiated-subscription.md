@@ -1,6 +1,6 @@
 ---
 title: Configuración de una suscripción iniciada por origen
-description: Las suscripciones iniciadas por el origen permiten definir una suscripción en un equipo recopilador de eventos sin definir los equipos de origen de eventos y, a continuación, se pueden configurar varios equipos de origen de eventos remotos (mediante una configuración de directiva de grupo) para reenviar eventos al equipo del recopilador de eventos.
+description: Las suscripciones iniciadas por el origen permiten definir una suscripción en un equipo del recopilador de eventos sin definir los equipos de origen de eventos y, a continuación, se pueden configurar varios equipos de origen de eventos remotos (mediante una configuración de directiva de grupo) para reenviar eventos al equipo del recopilador de eventos.
 ms.assetid: c02b5075-d685-44cf-937f-a1edfd2550ca
 ms.tgt_platform: multiple
 ms.topic: article
@@ -14,35 +14,35 @@ ms.locfileid: "119620655"
 ---
 # <a name="setting-up-a-source-initiated-subscription"></a>Configuración de una suscripción iniciada por origen
 
-Las suscripciones iniciadas por el origen permiten definir una suscripción en un equipo recopilador de eventos sin definir los equipos de origen de eventos y, a continuación, se pueden configurar varios equipos de origen de eventos remotos (mediante una configuración de directiva de grupo) para reenviar eventos al equipo del recopilador de eventos. Esto difiere de una suscripción iniciada por el recopilador porque, en el modelo de suscripción iniciada por el recopilador, el recopilador de eventos debe definir todos los orígenes de eventos de la suscripción de eventos.
+Las suscripciones iniciadas por el origen permiten definir una suscripción en un equipo del recopilador de eventos sin definir los equipos de origen de eventos y, a continuación, se pueden configurar varios equipos de origen de eventos remotos (mediante una configuración de directiva de grupo) para reenviar eventos al equipo del recopilador de eventos. Esto difiere de una suscripción iniciada por el recopilador porque, en el modelo de suscripción iniciada por el recopilador, el recopilador de eventos debe definir todos los orígenes de eventos de la suscripción de eventos.
 
 Al configurar una suscripción iniciada por el origen, tenga en cuenta si los equipos de origen de eventos están en el mismo dominio que el equipo del recopilador de eventos. En las secciones siguientes se describen los pasos que deben seguirse cuando los orígenes de eventos están en el mismo dominio o no en el mismo dominio que el equipo del recopilador de eventos.
 
 > [!Note]  
 > Cualquier equipo de un dominio, local o remoto, puede ser un recopilador de eventos. Sin embargo, al elegir un recopilador de eventos, es importante seleccionar una máquina que esté topológicamente cerca de donde se generará la mayoría de los eventos. El envío de eventos a una máquina en una ubicación de red lejana en una WAN puede reducir el rendimiento general y la eficacia en la recopilación de eventos.
 
-## <a name="setting-up-a-source-initiated-subscription-where-the-event-sources-are-in-the-same-domain-as-the-event-collector-computer"></a>Configuración de una suscripción iniciada por el origen en la que los orígenes de eventos están en el mismo dominio que el equipo del recopilador de eventos
+## <a name="setting-up-a-source-initiated-subscription-where-the-event-sources-are-in-the-same-domain-as-the-event-collector-computer"></a>Configuración de una suscripción iniciada por el origen en la que los orígenes de eventos se encuentran en el mismo dominio que el equipo del recopilador de eventos
 
 Tanto los equipos de origen de eventos como el equipo del recopilador de eventos deben configurarse para configurar una suscripción iniciada por el origen.
 
 > [!Note]  
 > En estas instrucciones se supone que tiene acceso de administrador al controlador de dominio de Windows Server que atiende al dominio en el que el equipo remoto o los equipos se configurarán para recopilar eventos.
 
-### <a name="configuring-the-event-source-computer"></a>Configuración del equipo de origen de eventos
+### <a name="configuring-the-event-source-computer"></a>Configuración del equipo de origen del evento
 
 1. Ejecute el siguiente comando desde un símbolo del sistema con privilegios elevados en el controlador de dominio de Windows Server para configurar Windows administración remota:
 
     **winrm qc -q**
 
-2. Inicie la directiva de grupo mediante la ejecución del siguiente comando:
+2. Ejecute el siguiente comando para iniciar la directiva de grupo:
 
     **%SYSTEMROOT% \\ System32 \\ gpedit.msc**
 
-3. En el **nodo Configuración**  del equipo, expanda el nodo Plantillas administrativas, expanda el nodo **Componentes** de Windows y, a continuación, seleccione el nodo **Reenvío de** eventos.
+3. En el **nodo Configuración del** equipo, expanda el nodo **Plantillas administrativas,** expanda el nodo Componentes Windows **y,** a continuación, seleccione el nodo **Reenvío de** eventos.
 
-4. Haga clic con el botón derecho en la opción **SubscriptionManager** y seleccione **Propiedades.** Habilite la **opción SubscriptionManager** y haga clic en **el botón Mostrar** para agregar una dirección de servidor a la configuración. Agregue al menos una configuración que especifique el equipo del recopilador de eventos. La **ventana Propiedades de SubscriptionManager** contiene una **pestaña** Explicar que describe la sintaxis de la configuración.
+4. Haga clic con el botón derecho **en la configuración SubscriptionManager** y seleccione **Propiedades.** Habilite la **opción SubscriptionManager** y haga clic en **el botón Mostrar** para agregar una dirección de servidor a la configuración. Agregue al menos una configuración que especifique el equipo del recopilador de eventos. La **ventana Propiedades de SubscriptionManager** contiene una pestaña **Explicar** que describe la sintaxis de la configuración.
 
-5. Una vez agregada la configuración **subscriptionManager,** ejecute el siguiente comando para asegurarse de que se aplica la directiva:
+5. Una vez agregada la configuración de **SubscriptionManager,** ejecute el siguiente comando para asegurarse de que se aplica la directiva:
 
     **gpupdate /force**
 
@@ -56,7 +56,7 @@ Tanto los equipos de origen de eventos como el equipo del recopilador de eventos
 
     **wecutil qc /q**
 
-3. Cree una suscripción iniciada por el origen. Esto se puede hacer mediante programación, mediante el Visor de eventos o mediante [**Wecutil.exe**](wecutil.md). Para obtener más información sobre cómo crear la suscripción mediante programación, vea el ejemplo de código de [Creación de una suscripción iniciada por origen](creating-a-source-initiated-subscription.md). Si usa Wecutil.exe, debe crear un archivo XML de suscripción de eventos y usar el siguiente comando:
+3. Cree una suscripción iniciada por el origen. Esto se puede hacer mediante programación, mediante el Visor de eventos o mediante [**Wecutil.exe**](wecutil.md). Para obtener más información sobre cómo crear la suscripción mediante programación, vea el ejemplo de código en [Creating a Source Initiated Subscription](creating-a-source-initiated-subscription.md). Si usa Wecutil.exe, debe crear un archivo XML de suscripción de eventos y usar el comando siguiente:
 
     **wecutil cs** *configurationFile.xml*
 
@@ -106,13 +106,13 @@ Tanto los equipos de origen de eventos como el equipo del recopilador de eventos
     ```
 
     > [!Note]  
-    > Al crear una suscripción iniciada por el origen, si AllowedSourceDomainComputers, AllowedSourceNonDomainComputers/IssuerCAList, AllowedSubjectList y DeniedSubjectList están vacíos, "O:NSG:NSD:(A;; GA;;;D C)(A;; GA;;; NS)" se usará como descriptor de seguridad predeterminado para AllowedSourceDomainComputers. El descriptor predeterminado concede a los miembros del grupo de dominio Equipos de dominio, así como al grupo de servicios de red local (para el reenviador local), la capacidad de generar eventos para esta suscripción.
+    > Al crear una suscripción iniciada por el origen, si AllowedSourceDomainComputers, AllowedSourceNonDomainComputers/IssuerCAList, AllowedSubjectList y DeniedSubjectList están vacíos, "O:NSG:NSD:(A;; GA;;;D C)(A;; GA;;; NS)" se usará como descriptor de seguridad predeterminado para AllowedSourceDomainComputers. El descriptor predeterminado concede a los miembros del grupo de dominio Equipos de dominio, así como al grupo servicio de red local (para el reenviador local), la capacidad de generar eventos para esta suscripción.
 
 ### <a name="to-validate-that-the-subscription-works-correctly"></a>Para validar que la suscripción funciona correctamente
 
 1. En el equipo del recopilador de eventos, realice los pasos siguientes:
 
-    1. Ejecute el siguiente comando desde un símbolo del sistema con privilegios elevados en el controlador de dominio de Windows Server para obtener el estado en tiempo de ejecución de la suscripción:
+    1. Ejecute el siguiente comando desde un símbolo del sistema con privilegios elevados en el controlador de dominio de Windows Server para obtener el estado de tiempo de ejecución de la suscripción:
 
         **wecutil gr** *&lt; subscriptionID &gt;*
 
@@ -123,8 +123,8 @@ Tanto los equipos de origen de eventos como el equipo del recopilador de eventos
 
     4. Obtenga el valor DeliveryMaxItems de la información de la suscripción.
 
-2. En el equipo de origen del evento, genera los eventos que coinciden con la consulta de la suscripción de eventos. Se debe generar el número de eventos DeliveryMaxItems para que se reenvía.
-3. En el equipo del recopilador de eventos, valide que los eventos se han reenviado al registro ForwardedEvents o al registro especificado en la suscripción.
+2. En el equipo de origen del evento, genera los eventos que coinciden con la consulta de la suscripción de eventos. Se debe generar el número de eventos DeliveryMaxItems para que los eventos se reenván.
+3. En el equipo del recopilador de eventos, compruebe que los eventos se han reenviado al registro ForwardedEvents o al registro especificado en la suscripción.
 
 ## <a name="forwarding-the-security-log"></a>Reenvío del registro de seguridad
 
@@ -133,7 +133,7 @@ Para poder reenviar el registro de seguridad, debe agregar la cuenta DE SERVICIO
 ## <a name="setting-up-a-source-initiated-subscription-where-the-event-sources-are-not-in-the-same-domain-as-the-event-collector-computer"></a>Configuración de una suscripción iniciada por el origen en la que los orígenes de eventos no están en el mismo dominio que el equipo del recopilador de eventos
 
 > [!Note]  
-> En estas instrucciones se supone que tiene acceso de administrador a un controlador de dominio Windows Server. En este caso, dado que los equipos o equipos del recopilador de eventos remotos no están en el dominio al que sirve el controlador de dominio, es esencial iniciar un cliente individual estableciendo Windows Administración remota en "automático" mediante Servicios (services.msc). Como alternativa, puede ejecutar "winrm quickconfig" en cada cliente remoto.
+> En estas instrucciones se supone que tiene acceso de administrador a un controlador de dominio Windows Server. En este caso, dado que los equipos o equipos del recopilador de eventos remotos no están en el dominio al que sirve el controlador de dominio, es esencial iniciar un cliente individual estableciendo Windows Remote Management en "automatic" mediante Services (services.msc). Como alternativa, puede ejecutar "winrm quickconfig" en cada cliente remoto.
 
 Se deben cumplir los siguientes requisitos previos antes de crear la suscripción.
 
@@ -144,25 +144,25 @@ Se deben cumplir los siguientes requisitos previos antes de crear la suscripció
     **wecutil qc /q**
 
 2. El equipo recopilador debe tener un certificado de autenticación de servidor (certificado con un propósito de autenticación de servidor) en un almacén de certificados de equipo local.
-3. En el equipo de origen del evento, ejecute el siguiente comando para configurar Windows administración remota:
+3. En el equipo de origen del evento, ejecute el siguiente comando para configurar la Windows remota:
 
     **winrm qc -q**
 
 4. La máquina de origen debe tener un certificado de autenticación de cliente (certificado con un propósito de autenticación de cliente) en un almacén de certificados de equipo local.
 5. El puerto 5986 se abre en el equipo del recopilador de eventos. Para abrir este puerto, ejecute el comando :
 
-    **El firewall netsh agrega tcp 5986 "Administración remota https de Winrm"**
+    **netsh firewall add que permite usar TCP 5986 "Winrm HTTPS Remote Management"**
 
 ### <a name="certificates-requirements"></a>Requisitos de certificados
 
-- Debe instalarse un certificado de autenticación de servidor en el equipo del recopilador de eventos en el almacén Personal de la máquina local. El firmante de este certificado debe coincidir con el FQDN del recopilador.
-- Debe instalarse un certificado de autenticación de cliente en los equipos de origen de eventos en el almacén Personal de la máquina local. El firmante de este certificado debe coincidir con el FQDN del equipo.
+- Debe instalarse un certificado de autenticación de servidor en el equipo del recopilador de eventos en el almacén personal de la máquina local. El firmante de este certificado debe coincidir con el FQDN del recopilador.
+- Un certificado de autenticación de cliente debe instalarse en los equipos de origen de eventos en el almacén personal de la máquina local. El firmante de este certificado debe coincidir con el FQDN del equipo.
 - Si el certificado de cliente lo ha emitido una entidad de certificación diferente a la del recopilador de eventos, esos certificados raíz e intermedio también deben instalarse en el recopilador de eventos.
 - Si el certificado de cliente lo emitió una entidad de certificación intermedia y el recopilador se ejecuta Windows 2012 o posterior, tendrá que configurar la siguiente clave del Registro:
 
     **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\Schannel\ClientAuthTrustMode (DWORD) = 2**
  
-- Compruebe que tanto el servidor como el cliente pueden comprobar correctamente el estado de revocación en todos los certificados. El uso del **comando certutil** puede ayudar a solucionar los errores.
+- Compruebe que el servidor y el cliente pueden comprobar correctamente el estado de revocación en todos los certificados. El uso del **comando certutil** puede ayudar a solucionar los errores.
 
 Encuentre más información en este artículo: https://technet.microsoft.com/library/dn786429(v=ws.11).aspx
 
@@ -172,26 +172,26 @@ Encuentre más información en este artículo: https://technet.microsoft.com/lib
 
     **winrm set winrm/config/service/auth @{Certificate="true"}**
 
-2. Debe existir un agente de escucha HTTPS de WinRM con la huella digital del certificado de autenticación de servidor en el equipo del recopilador de eventos. Esto se puede comprobar con el siguiente comando:
+2. Debe existir un agente de escucha HTTPS de WinRM con la huella digital del certificado de autenticación del servidor en el equipo del recopilador de eventos. Esto se puede comprobar con el siguiente comando:
 
     **winrm e winrm/config/listener**
 
-3. Si no ve el agente de escucha HTTPS, o si la huella digital del agente de escucha HTTPS no es la misma que la huella digital del certificado de autenticación de servidor en el equipo recopilador, puede eliminar ese agente de escucha y crear uno con la huella digital correcta. Para eliminar el agente de escucha https, use el siguiente comando:
+3. Si no ve el agente de escucha HTTPS, o si la huella digital del agente de escucha HTTPS no es la misma que la huella digital del certificado de autenticación del servidor en el equipo recopilador, puede eliminar ese agente de escucha y crear uno con la huella digital correcta. Para eliminar el agente de escucha https, use el siguiente comando:
 
     **winrm delete winrm/config/Listener? Address=*+Transport=HTTPS**
 
     Para crear un nuevo agente de escucha, use el siguiente comando:
 
-    **winrm create winrm/config/Listener? Address=&#42;+Transport=HTTPS @{Hostname="** &lt; _FQDN del recopilador_ &gt; **"; CertificateThumbprint="** &lt; _Huella digital del certificado de autenticación de servidor_ &gt; **"}**
+    **winrm create winrm/config/Listener? Address=&#42;+Transport=HTTPS @{Hostname="** &lt; _FQDN del recopilador_ &gt; **"; CertificateThumbprint="** &lt; _Huella digital del certificado de autenticación del servidor_ &gt; **"}**
 
 ### <a name="configure-certificate-mapping-on-the-event-collector"></a>Configuración de la asignación de certificados en el recopilador de eventos
 
 1. Cree un nuevo usuario local y agrégrélo al grupo administradores local.
 2. Cree la asignación de certificados mediante un certificado que esté presente en la "entidades de certificación raíz de confianza" o "Entidades de certificación intermedias" de la máquina.
 
-    Este es el certificado de la entidad de certificación raíz o intermedia que emitió los certificados instalados en los equipos de origen de eventos (para evitar confusiones, esta es la CA inmediatamente superior al certificado en la cadena de *certificados):*
+    Este es el certificado de la ENTIDAD de certificación raíz o intermedia que emitió los certificados instalados en los equipos de origen de eventos (para evitar confusiones, esta es la CA inmediatamente por encima del certificado en la cadena de *certificados):*
 
-    **winrm create winrm/config/service/certmapping? Huella digital del** emisor del certificado de ca emisora = &lt;  &gt; **+Subject=&#42;+URI=&#42; nombre de usuario @{UserName="** &lt;  &gt; **"; Password="** &lt; _password_ &gt; **"} -remote:localhost**
+    **winrm create winrm/config/service/certmapping? Huella digital** del emisor del certificado de ca emisora = &lt;  &gt; **+Subject=&#42;+URI=&#42; nombre de usuario @{UserName="** &lt;  &gt; **"; Password="** &lt; _password_ &gt; **"} -remote:localhost**
 
 3. Desde un cliente, pruebe el agente de escucha y la asignación de certificados con el siguiente comando:
 
@@ -208,7 +208,7 @@ Encuentre más información en este artículo: https://technet.microsoft.com/lib
 > [!NOTE]
 > Es posible que reciba un error de acceso denegado que se queje del método de autenticación, lo que podría ser engañoso. Para solucionar problemas, compruebe el registro capi en el recopilador de eventos.
 
-4. Enumerar las entradas de certmapping configuradas con el comando: **winrm enum winrm/config/service/certmapping**
+4. Enume las entradas de certmapping configuradas con el comando: **winrm enum winrm/config/service/certmapping**
 
 ### <a name="event-source-computer-configuration"></a>Configuración del equipo de origen de eventos
 

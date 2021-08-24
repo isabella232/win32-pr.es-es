@@ -1,11 +1,11 @@
 ---
-title: Método IWMDRMLicense GetInclusionList (wmdrmsdk. h)
-description: El método GetInclusionList recupera la lista de inclusión completa para la licencia actual o la cadena de licencias.
+title: Método IWMDRMLicense GetInclusionList (Wmdrmsdk.h)
+description: El método GetInclusionList recupera toda la lista de inclusión para la cadena de licencias o licencias actual.
 ms.assetid: a3cb70c5-7d20-413c-aeb8-66c9233b384e
 keywords:
-- Método GetInclusionList formato de Windows Media
-- Método GetInclusionList formato de Windows Media, interfaz IWMDRMLicense
-- Interfaz IWMDRMLicense formato de Windows Media, método GetInclusionList
+- Método GetInclusionList windows Media Format
+- Método GetInclusionList windows Media Format , interfaz IWMDRMLicense
+- IWMDRMLicense interfaz windows Media Format , Método GetInclusionList
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f0d2837a4bb84c07214cce3e4fbc3d4d96b9583
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6389ac30d5bffeb6ad354ec6c7e83f2834921fe8fb83c1abe2bca2d0c2f43bfd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708167"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705245"
 ---
-# <a name="iwmdrmlicensegetinclusionlist-method"></a>IWMDRMLicense:: GetInclusionList (método)
+# <a name="iwmdrmlicensegetinclusionlist-method"></a>IWMDRMLicense::GetInclusionList (método)
 
-El método **GetInclusionList** recupera la lista de inclusión completa para la licencia actual o la cadena de licencias.
+El **método GetInclusionList** recupera toda la lista de inclusión para la cadena de licencias o licencias actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,37 +44,37 @@ HRESULT GetInclusionList(
 
 <dl> <dt>
 
-*ppGuids* \[ enuncia\]
+*ppGuids* \[ out\]
 </dt> <dd>
 
 Recibe una matriz de GUID que identifican las tecnologías incluidas.
 
 </dd> <dt>
 
-*pcGuids* \[ enuncia\]
+*pcGuids* \[ out\]
 </dt> <dd>
 
-Recibe el número de elementos de la matriz *ppGuids* . La matriz se asigna mediante **CoTaskMemAlloc**. Cuando termine la lista, libere la memoria mediante una llamada a **CoTaskMemFree**.
+Recibe el número de elementos de la matriz *ppGuids.* La matriz se asigna mediante **CoTaskMemAlloc**. Cuando termine con la lista, libere la memoria mediante una llamada **a CoTaskMemFree**.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El emisor de la licencia puede especificar otros sistemas de protección a los que se pueda convertir el contenido cifrado. La lista de GUID recuperada por este método identifica los sistemas de protección permitidos. Al entrar en un contrato de licencia con Microsoft para obtener la biblioteca de código auxiliar, recibirá una lista de los sistemas de protección admitidos actualmente y los GUID que se usan para identificarlos.
+El emisor de la licencia puede especificar otros sistemas de protección a los que se puede convertir el contenido cifrado. La lista de GUID recuperada por este método identifica los sistemas de protección permitidos. Al entrar en un contrato de licencia con Microsoft para obtener la biblioteca de código auxiliar, recibirá una lista de los sistemas de protección admitidos actualmente y los GUID que se usan para identificarlos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -82,8 +82,8 @@ El emisor de la licencia puede especificar otros sistemas de protección a los q
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 
 
 
@@ -91,7 +91,7 @@ El emisor de la licencia puede especificar otros sistemas de protección a los q
 
 <dl> <dt>
 
-[**Listas de inclusión y autorización explícitas**](explicit-authorization-and-inclusion-lists.md)
+[**Listas explícitas de autorización e inclusión**](explicit-authorization-and-inclusion-lists.md)
 </dt> <dt>
 
 [**Interfaz IWMDRMLicense**](iwmdrmlicense.md)

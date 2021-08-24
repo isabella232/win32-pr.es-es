@@ -1,24 +1,24 @@
 ---
-title: Ubicación del texto
-description: Ubicación del texto
+title: Ubicación de texto
+description: Ubicación de texto
 ms.assetid: b05c3594-9249-4612-b4a3-f624832d1073
 keywords:
-- Aspectos de Windows Media Player Mobile, texto
-- máscaras, texto
-- referencia de máscaras, texto
-- texto en máscaras, ubicación
+- Reproductor de Windows Media Máscaras móviles, texto
+- skins,text
+- referencia de máscaras,texto
+- text in skins,location
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7b11f753cc6f85f57f04c14529752bd0fb53232
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0d02a8b7f3a2309af7e480bcd6238c070d59424fa27b3798f68be96dabf92559
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119507525"
 ---
-# <a name="text-location"></a>Ubicación del texto
+# <a name="text-location"></a>Ubicación de texto
 
-Debe definir la ubicación del cuadro de texto que desea utilizar. Para ello, debe proporcionar cuatro enteros positivos, separados por comas, que definan la izquierda, la parte superior, el ancho y el alto del cuadro de visualización de texto, en píxeles, con respecto a la imagen de fondo.
+Debe definir la ubicación del cuadro de presentación de texto que desea usar. Para ello, debe proporcionar cuatro enteros positivos, separados por comas, que definen la izquierda, la parte superior, el ancho y el alto del cuadro de presentación de texto, en píxeles, con respecto a la imagen de fondo.
 
 
 ```C++
@@ -35,9 +35,9 @@ Debe definir la ubicación del cuadro de texto que desea utilizar. Para ello, de
 [**Texto**](text.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

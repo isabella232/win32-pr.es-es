@@ -1,35 +1,35 @@
 ---
 title: Cómo obtener el último conjunto de encabezados HTTP recibidos para cada archivo en un trabajo de descarga de BITS
-description: En este ejemplo se muestra cómo usar el método GetProperty de la nueva interfaz IBackgroundCopyJob5 para obtener los últimos encabezados HTTP Set recibidos para cada archivo en un trabajo de descarga de Servicio de transferencia inteligente en segundo plano (BITS).
+description: En este ejemplo se muestra cómo usar el método GetProperty de la nueva interfaz IBackgroundCopyJob5 para obtener los últimos encabezados HTTP establecidos recibidos para cada archivo en un trabajo de descarga de Servicio de transferencia inteligente en segundo plano (BITS).
 ms.assetid: 38808AB2-0D7A-46C6-A666-F3E0DB8A3009
 keywords:
 - descargar BITS, encabezado HTTP
 ms.topic: article
 ms.date: 10/04/2018
-ms.openlocfilehash: 0b7858d5b2467f52681b325e2bfbe65b96889e0d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 92e9fe2c1671d26854da119938b426bc662324fe701d7f24d1885ff7b88e2df1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104268375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119528535"
 ---
 # <a name="how-to-get-the-last-set-of-http-headers-received-for-each-file-in-a-bits-download-job"></a>Cómo obtener el último conjunto de encabezados HTTP recibidos para cada archivo en un trabajo de descarga de BITS
 
-En este ejemplo se muestra cómo usar el método [**GetProperty**](/windows/desktop/api/Bits5_0/nf-bits5_0-ibackgroundcopyjob5-getproperty) de la nueva interfaz [**IBackgroundCopyJob5**](/windows/desktop/api/Bits5_0/nn-bits5_0-ibackgroundcopyjob5) para obtener los últimos encabezados HTTP Set recibidos para cada archivo en un trabajo de descarga de servicio de transferencia inteligente en segundo plano (bits). La información del encabezado HTTP podría usarse, por ejemplo, para determinar el tipo de archivo o la última vez que se modificó en el servidor. Antes de Windows 8 y Windows Server 2012, BITS no proporcionaba un medio por el que la aplicación podía recuperar e inspeccionar los encabezados de respuesta HTTP de una descarga completada. En este ejemplo se muestra cómo usar la API de BITS para crear un trabajo de BITS con varias direcciones URL para descargar, enumerar las direcciones URL de un trabajo y recuperar los encabezados de respuesta HTTP para cada dirección URL.
+En este ejemplo se muestra cómo usar el método [**GetProperty**](/windows/desktop/api/Bits5_0/nf-bits5_0-ibackgroundcopyjob5-getproperty) de la nueva interfaz [**IBackgroundCopyJob5**](/windows/desktop/api/Bits5_0/nn-bits5_0-ibackgroundcopyjob5) para obtener los últimos encabezados HTTP establecidos recibidos para cada archivo en un trabajo de descarga de Servicio de transferencia inteligente en segundo plano (BITS). La información del encabezado HTTP podría usarse, por ejemplo, para determinar el tipo de archivo o cuándo cambió por última vez en el servidor. Antes de Windows 8 y Windows Server 2012, BITS no proporcionaba un medio por el que la aplicación pudiera recuperar e inspeccionar los encabezados de respuesta HTTP de una descarga completada. En este ejemplo se muestra cómo usar la API de BITS para crear un trabajo de BITS con varias direcciones URL para descargar, enumerar las direcciones URL de un trabajo y recuperar los encabezados de respuesta HTTP para cada dirección URL.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   Microsoft Visual Studio
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="step-1-include-the-required-bits-header-files"></a>Paso 1: incluir los archivos de encabezado de BITS necesarios
+### <a name="step-1-include-the-required-bits-header-files"></a>Paso 1: Incluir los archivos de encabezado BITS necesarios
 
-Inserte las siguientes directivas de encabezado en la parte superior del archivo de código fuente.
+Inserte las siguientes directivas de encabezado en la parte superior del archivo de origen.
 
 
 ```C++
@@ -38,9 +38,9 @@ Inserte las siguientes directivas de encabezado en la parte superior del archivo
 
 
 
-### <a name="step-2-initialize-com-and-instantiate-a-bits-background-copy-manager-object-interface"></a>Paso 2: inicializar COM y crear una instancia de una interfaz de objeto de administrador de copia en segundo plano de BITS
+### <a name="step-2-initialize-com-and-instantiate-a-bits-background-copy-manager-object-interface"></a>Paso 2: Inicializar COM y crear una instancia de una interfaz de objeto del Administrador de copias en segundo plano de BITS
 
-Antes de crear una instancia de la interfaz [**IBackgroundCopyManager**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopymanager) (que se usa para crear un trabajo de bits), debe inicializar com y establecer el modelo de subprocesos com deseado.
+Antes de crear instancias de la [**interfaz IBackgroundCopyManager**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopymanager) (que se usa para crear un trabajo de BITS), debe inicializar COM y establecer el modelo de subproceso COM deseado.
 
 
 ```C++
@@ -60,9 +60,9 @@ if (SUCCEEDED(hr))
 
 
 
-### <a name="step-3-create-the-bits-job"></a>Paso 3: crear el trabajo de BITS
+### <a name="step-3-create-the-bits-job"></a>Paso 3: Creación del trabajo de BITS
 
-Solo el usuario que crea el trabajo o un usuario con privilegios de administrador puede Agregar archivos al trabajo y cambiar las propiedades del trabajo.
+Solo el usuario que crea el trabajo o un usuario con privilegios de administrador pueden agregar archivos al trabajo y cambiar las propiedades del trabajo.
 
 
 ```C++
@@ -77,9 +77,9 @@ hr = pManager->CreateJob(L"TransferPolicy",
 
 
 
-### <a name="step-4-add-the-files-to-the-bits-job"></a>Paso 4: agregar los archivos al trabajo de BITS
+### <a name="step-4-add-the-files-to-the-bits-job"></a>Paso 4: Agregar los archivos al trabajo de BITS
 
-En el siguiente ejemplo se descargan documentos disponibles públicamente desde el centro de descarga de Microsoft. Deberá cambiar estos valores para su entorno específico.
+En el ejemplo siguiente se descargan los documentos disponibles públicamente desde el Centro de descarga de Microsoft. Deberá cambiar estos valores para su entorno específico.
 
 
 ```C++
@@ -114,9 +114,9 @@ for (int i=0; i < ARRAY_LENGTH(FileList); ++i)
 
 
 
-### <a name="step-5-start-the-bits-job"></a>Paso 5: iniciar el trabajo de BITS
+### <a name="step-5-start-the-bits-job"></a>Paso 5: Iniciar el trabajo de BITS
 
-Después de configurar el trabajo de BITS, llame a la función de [**reanudación**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-resume) de la interfaz [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) para iniciar o continuar la descarga.
+Después de configurar el trabajo de BITS, llame a la función [**Resume**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-resume) de la interfaz [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) para iniciar o continuar la descarga.
 
 
 ```C++
@@ -126,9 +126,9 @@ hr = pBackgroundJob->Resume();
 
 
 
-### <a name="step-6-monitor-and-display-the-bits-jobs-progress"></a>Paso 6: supervisar y mostrar el progreso del trabajo de BITS
+### <a name="step-6-monitor-and-display-the-bits-jobs-progress"></a>Paso 6: Supervisión y visualización del progreso del trabajo de BITS
 
-La `MonitorJobProgress` función auxiliar toma un objeto [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) como su único parámetro y sondea el trabajo para obtener un estado cada 500 milisegundos. Esta función no devuelve ningún resultado hasta que el trabajo se haya completado o cancelado.
+La función auxiliar toma un objeto IBackgroundCopyJob como único parámetro y sondea el trabajo para obtener un estado `MonitorJobProgress` cada 500 milisegundos. [](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) Esta función no se devuelve hasta que el trabajo se ha completado o se ha cancelado.
 
 
 ```C++
@@ -233,9 +233,9 @@ VOID DisplayProgress(__in IBackgroundCopyJob *Job)
 
 
 
-### <a name="step-7-display-the-downloaded-file-headers"></a>Paso 7: mostrar los encabezados de archivo descargados
+### <a name="step-7-display-the-downloaded-file-headers"></a>Paso 7: Mostrar los encabezados de archivo descargados
 
-La `DisplayFileHeaders` función auxiliar enumera los trabajos definidos para un objeto [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) .
+La `DisplayFileHeaders` función auxiliar enumera los trabajos definidos para un objeto [**IBackgroundCopyJob.**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob)
 
 
 ```C++
@@ -305,7 +305,7 @@ HRESULT DisplayFileHeaders(__in IBackgroundCopyJob *Job)
 
 ## <a name="example"></a>Ejemplo
 
-El siguiente ejemplo de código es una aplicación de consola totalmente operativa que muestra cómo usar la API de BITS para crear un trabajo de BITS con varias direcciones URL para descargar, enumerar las direcciones URL de un trabajo y recuperar los encabezados de respuesta HTTP para cada dirección URL.
+El ejemplo de código siguiente es una aplicación de consola totalmente funcional que muestra cómo usar la API de BITS para crear un trabajo de BITS con varias direcciones URL para descargar, enumerar las direcciones URL de un trabajo y recuperar los encabezados de respuesta HTTP para cada dirección URL.
 
 
 ```C++
@@ -730,9 +730,9 @@ VOID DisplayError(__in IBackgroundCopyJob *Job)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

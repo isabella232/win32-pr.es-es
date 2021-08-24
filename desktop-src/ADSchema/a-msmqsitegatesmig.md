@@ -1,11 +1,11 @@
 ---
-title: MSMQ-site-Gates-atributo MIG
-description: En el modo mixto de MSMQ, el valor anterior de mSMQSiteGates.
+title: Atributo MSMQ-Site-Gates-Mig
+description: En modo mixto de MSMQ, el valor anterior de mSMQSiteGates.
 ms.assetid: d9a89b2d-c400-45ea-a063-7c615228b8e5
 ms.tgt_platform: multiple
 keywords:
-- MSMQ-site-Gates-MIG atributo AD Schema
-- mSMQSiteGatesMig esquema de AD de atributos
+- Esquema de AD del atributo MSMQ-Site-Gates-Mig
+- Esquema de AD del atributo mSMQSiteGatesMig
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 73b8afdee3c1e96f171651c454fd0b29bfbefbd5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7b71c43cc954c34dbc5500d4f39bef15c0dbd12f64ca33998cdb1eb7f955a379
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659074"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582295"
 ---
-# <a name="msmq-site-gates-mig-attribute"></a>MSMQ-site-Gates-atributo MIG
+# <a name="msmq-site-gates-mig-attribute"></a>Atributo MSMQ-Site-Gates-Mig
 
-En el modo mixto de MSMQ, el valor anterior de mSMQSiteGates.
+En modo mixto de MSMQ, el valor anterior de mSMQSiteGates.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | MSMQ-sitio-puertas-MIG                     |
-| Nombre para mostrar de LDAP | mSMQSiteGatesMig                        |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | MSMQ-Site-Gates-Mig                     |
+| Ldap-Display-Name | mSMQSiteGatesMig                        |
+| Size              | \-                                      |
+| Privilegio actualizar  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1310                 |
-| System-ID-GUID    | e2704852-3b7b-11d2-90cc-00c04fd91ab1    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | e2704852-3b7b-11d2-90cc-00c04fd91ab1    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -55,18 +55,18 @@ En el modo mixto de MSMQ, el valor anterior de mSMQSiteGates.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**Vínculo de MSMQ-sitio**](c-msmqsitelink.md)<br/> |
+| Clases usadas en        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ En el modo mixto de MSMQ, el valor anterior de mSMQSiteGates.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**Vínculo de MSMQ-sitio**](c-msmqsitelink.md)<br/> |
+| Clases usadas en        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ En el modo mixto de MSMQ, el valor anterior de mSMQSiteGates.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**Vínculo de MSMQ-sitio**](c-msmqsitelink.md)<br/> |
+| Clases usadas en        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ En el modo mixto de MSMQ, el valor anterior de mSMQSiteGates.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**Vínculo de MSMQ-sitio**](c-msmqsitelink.md)<br/> |
+| Clases usadas en        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ En el modo mixto de MSMQ, el valor anterior de mSMQSiteGates.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**Vínculo de MSMQ-sitio**](c-msmqsitelink.md)<br/> |
+| Clases usadas en        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ En el modo mixto de MSMQ, el valor anterior de mSMQSiteGates.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**Vínculo de MSMQ-sitio**](c-msmqsitelink.md)<br/> |
+| Clases usadas en        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 

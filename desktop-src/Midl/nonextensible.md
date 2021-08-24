@@ -1,9 +1,9 @@
 ---
 title: nonextensible (atributo)
-description: El atributo \ nonextensible (\ especifica que la implementación de IDispatch solo incluye las propiedades y los métodos enumerados en la descripción de la interfaz y no se puede extender con miembros adicionales en tiempo de ejecución.
+description: El atributo \nonextensible\ especifica que la implementación de IDispatch solo incluye las propiedades y los métodos enumerados en la descripción de la interfaz y no se puede extender con miembros adicionales en tiempo de ejecución.
 ms.assetid: 5fcffa65-4f0c-4180-a6c2-f68d63ff99ae
 keywords:
-- nonextensible ((atributo) MIDL
+- atributo nonextensible MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e591ea4ab0647449ca9296b3b14a4aab9fff6991
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 96c4e55cf5cf2c05ff9c3619b19e7a9b0582f3cf64bc0f9a711fb1af274bfb9a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105651352"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119066885"
 ---
 # <a name="nonextensible-attribute"></a>nonextensible (atributo)
 
-El atributo **\[ \] nonextensible (** especifica que la implementación de [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) solo incluye las propiedades y los métodos enumerados en la descripción de la interfaz y no se puede extender con miembros adicionales en tiempo de ejecución. (De forma predeterminada, la automatización presupone que las interfaces pueden agregar miembros en tiempo de ejecución; es decir, se supone que son extensibles).
+El **\[ atributo nonextensible \]** especifica que la implementación de [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) solo incluye las propiedades y métodos enumerados en la descripción de la interfaz y no se puede extender con miembros adicionales en tiempo de ejecución. (De forma predeterminada, Automation supone que las interfaces pueden agregar miembros en tiempo de ejecución; es decir, se supone que son extensibles).
 
 ``` syntax
 [
@@ -39,37 +39,37 @@ interface | dispinterface interface-name
 
 <dl> <dt>
 
-*UUID-número* 
+*uuid-number* 
 </dt> <dd>
 
 Especifica un número de identificación único universal para la [**interfaz**](interface.md).
 
 </dd> <dt>
 
-*opcional-Attribute-List* 
+*optional-attribute-list* 
 </dt> <dd>
 
-Especifica una lista de cero o más atributos de la interfaz de MIDL.
+Especifica una lista de cero o más atributos de interfaz MIDL.
 
 </dd> <dt>
 
-*nombre de interfaz* 
+*interface-name* 
 </dt> <dd>
 
-Especifica el nombre de la [**interfaz**](interface.md) o [**dispinterface**](dispinterface.md).
+Especifica el nombre de la [**interfaz o**](interface.md) [**dispinterface**](dispinterface.md).
 
 </dd> <dt>
 
-*definición de interfaz* 
+*interface-definition* 
 </dt> <dd>
 
 Especifica instrucciones IDL que forman la definición de la [**interfaz**](interface.md) o [**dispinterface**](dispinterface.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Puede aplicar el atributo **\[ nonextensible ( \]** a una interfaz o dispinterface. Sin embargo, una interfaz también debe tener los **\[** atributos [**dual**](dual.md) **\]** y **\[** [**oleautomation**](oleautomation.md) **\]** .
+Puede aplicar el **\[ atributo nonextensible \]** a una interfaz o a una interfaz dispinterface. Sin embargo, una interfaz también debe tener **\[** [**los atributos dual**](dual.md) y **\]** **\[** [**oleautomation.**](oleautomation.md) **\]**
 
 ### <a name="flags"></a>Marcas
 
@@ -101,19 +101,19 @@ library Hello
 [Contenido de una biblioteca de tipos](/previous-versions/windows/desktop/automat/contents-of-a-type-library)
 </dt> <dt>
 
-[**dispinterface**](dispinterface.md)
+[**Dispinterface**](dispinterface.md)
 </dt> <dt>
 
-[**BI**](dual.md)
+[**Doble**](dual.md)
 </dt> <dt>
 
 [Generar una biblioteca de tipos con MIDL](generating-a-type-library-with-midl-2.md)
 </dt> <dt>
 
-[**interfaz**](interface.md)
+[**Interfaz**](interface.md)
 </dt> <dt>
 
-[Sintaxis del archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxis de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [**oleautomation**](oleautomation.md)
@@ -122,6 +122,6 @@ library Hello
 [**TYPEFLAGS**](/windows/win32/api/oaidl/ne-oaidl-typeflags)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

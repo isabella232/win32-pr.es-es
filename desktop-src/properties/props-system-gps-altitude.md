@@ -1,19 +1,19 @@
 ---
-description: Indica altitud basada en la referencia de PKEY \_ GPS \_ AltitudeRef.
+description: Indica la altitud en función de la referencia de PKEY \_ GPS \_ AltitudeRef.
 ms.assetid: 396f9c9e-4d13-4e0d-9ec5-14a1c49f059e
-title: System. GPS. altitud
+title: System.GPS.Altitude
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 181c3c07c81f905d627169c0ca51700298860a7b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 30035cb0b99dd08ff600dbad46d1219394d3c7abcf1297c3f520c0c7b19d04df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105648352"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119033543"
 ---
-# <a name="systemgpsaltitude"></a>System. GPS. altitud
+# <a name="systemgpsaltitude"></a>System.GPS.Altitude
 
-Indica altitud basada en la referencia de PKEY \_ GPS \_ AltitudeRef. Se calcula a partir de PKEY \_ GPS \_ ALTITUDENUMERATOR y PKEY \_ GPS \_ AltitudeDenominator.
+Indica la altitud en función de la referencia de PKEY \_ GPS \_ AltitudeRef. Se calcula a partir de PKEY \_ GPS \_ AltitudeNumerator y PKEY \_ GPS \_ AltitudeDenominator.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -31,11 +31,11 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
-El requisito de una referencia de cadena indirecta específica para el `label` atributo de **labelInfo** se agregó para Windows Vista con Service Pack 1 (SP1).
+El requisito de una referencia de cadena indirecta específica para el atributo de labelInfo se agregó `label` para Windows Vista con Service Pack 1 (SP1). 
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -50,7 +50,7 @@ El requisito de una referencia de cadena indirecta específica para el `label` a
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -62,7 +62,7 @@ El requisito de una referencia de cadena indirecta específica para el `label` a
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -80,7 +80,7 @@ El requisito de una referencia de cadena indirecta específica para el `label` a
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

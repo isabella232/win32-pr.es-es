@@ -101,7 +101,7 @@ La función siguiente recupera información relacionada con **glGenTextures**:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

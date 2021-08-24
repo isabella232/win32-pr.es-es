@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de TVN_ITEMEXPANDED (commctrl. h)
-description: Notifica a la ventana primaria de un control de vista de árbol que la lista de elementos secundarios de un elemento primario se ha expandido o contraído. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: TVN_ITEMEXPANDED de notificación (Commctrl.h)
+description: Notifica a la ventana primaria de un control de vista de árbol que la lista de elementos secundarios de un elemento primario se ha expandido o contraído. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 18d9d61d-6ec5-4d3b-9c02-36d0e61ed232
 keywords:
-- TVN_ITEMEXPANDED controles de código de notificación de Windows
+- TVN_ITEMEXPANDED código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f193e9a0ff029ca607748fe4bbb6d61f781c1248
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 18af761c7580707bfd0926874e25069ca15b564bf6ef205cd6dc7aaaecb6a772
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151041"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119018633"
 ---
-# <a name="tvn_itemexpanded-notification-code"></a>Código de notificación de ITEMEXPANDED de TVN \_
+# <a name="tvn_itemexpanded-notification-code"></a>Código de notificación \_ ITEMEXPANDED de TVN
 
-Notifica a la ventana primaria de un control de vista de árbol que la lista de elementos secundarios de un elemento primario se ha expandido o contraído. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Notifica a la ventana primaria de un control de vista de árbol que la lista de elementos secundarios de un elemento primario se ha expandido o contraído. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -43,7 +43,7 @@ TVN_ITEMEXPANDED
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMTREEVIEW**](/windows/win32/api/commctrl/ns-commctrl-nmtreeviewa) . El miembro **itemNew** es una estructura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) que contiene información válida sobre el elemento primario en los miembros **hItem**, **State** y **lParam** . El miembro de **acción** indica si la lista está expandida o contraída. Para obtener una lista de los valores posibles, vea la descripción del mensaje de [**\_ expansión TVM**](tvm-expand.md) .
+Puntero a una [**estructura NMTREEVIEW.**](/windows/win32/api/commctrl/ns-commctrl-nmtreeviewa) El **miembro itemNew** es una [**estructura TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) que contiene información válida sobre el elemento primario en los **miembros hItem**, **state** y **lParam.** El **miembro** de acción indica si la lista se expande o se contrae. Para obtener una lista de los valores posibles, vea la descripción del [**mensaje \_ TVM EXPAND.**](tvm-expand.md)
 
 </dd> </dl>
 
@@ -57,9 +57,9 @@ Se omite el valor devuelto.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **TVN \_ ITEMEXPANDEDW** (Unicode) y **TVN \_ ITEMEXPANDEDA** (ANSI)<br/>         |
 
 

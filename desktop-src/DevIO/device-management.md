@@ -1,23 +1,23 @@
 ---
-description: La administración de dispositivos notifica a todas las aplicaciones y características del sistema los cambios que pueden afectar a su funcionamiento o a los recursos.
+description: La administración de dispositivos notifica a todas las aplicaciones y características del sistema los cambios que pueden afectar a su funcionamiento o acceso a los recursos.
 ms.assetid: 7d5c0933-c543-41ef-9418-4a288748f841
 title: Administración de dispositivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e18dd282772c7158792e4b78a1dc3deabe168c99
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ac285484e3adcf992a59145ccfa0c59bcc80b5ec81b57229370dc99b7d082b66
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153336"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119572805"
 ---
 # <a name="device-management"></a>Administración de dispositivos
 
-La administración de dispositivos proporciona una manera de notificar de forma uniforme todas las aplicaciones y las características del sistema de los cambios que pueden afectar a su funcionamiento o a los recursos. Las aplicaciones y el sistema usan y procesan eventos de dispositivo para aprovechar los nuevos recursos cuando están disponibles y para evitar la pérdida de datos cuando los recursos existentes dejan de estar disponibles.
+La administración de dispositivos proporciona una manera uniforme de notificar a todas las aplicaciones y características del sistema los cambios que pueden afectar a su funcionamiento o acceso a los recursos. Las aplicaciones y el sistema usan y procesan eventos de dispositivo para aprovechar los nuevos recursos cuando estén disponibles y evitar la pérdida de datos cuando los recursos existentes no estén disponibles.
 
--   [Acerca de la administración de dispositivos](about-device-management.md)
--   [Uso de la administración de dispositivos](using-device-management.md)
--   [Referencia de administración de dispositivos](device-management-reference.md)
+-   [Acerca de Administración de dispositivos](about-device-management.md)
+-   [Uso de Administración de dispositivos](using-device-management.md)
+-   [Administración de dispositivos referencia](device-management-reference.md)
 
  
 

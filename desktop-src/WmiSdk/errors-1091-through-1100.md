@@ -18,13 +18,13 @@ Describe los errores del proveedor SNMP de WMI de 1091 a 1100.
 
 [Advertencia 1091](#warning-1091)
 
-[Error irreales 1092](#fatal-error-1092)
+[Error irresal 1092](#fatal-error-1092)
 
 [Error irreales 1093](#fatal-error-1093)
 
 [Error irreales 1094](#fatal-error-1094)
 
-[Error irreales 1095](#fatal-error-1095)
+[Error irresal 1095](#fatal-error-1095)
 
 [Error irresal 1097](#fatal-error-1097)
 
@@ -76,7 +76,7 @@ Asignación de tipos, error semántico de módulo específico de SNMPv2C. El tip
 
 </dd> </dl>
 
-## <a name="fatal-error-1095"></a>Error irreales 1095
+## <a name="fatal-error-1095"></a>Error irresal 1095
 
 <dl> <dt>
 
@@ -98,7 +98,7 @@ Asignación de tipos, error semántico de módulo específico de SNMPv2C. Los va
 
 </dd> </dl>
 
-## <a name="fatal-error-1098"></a>Error irresal 1098
+## <a name="fatal-error-1098"></a>Error irreales 1098
 
 <dl> <dt>
 
@@ -109,11 +109,11 @@ Asignación de tipos, error semántico de módulo específico de SNMPv2C. No deb
 
 </dd> </dl>
 
-## <a name="fatal-error-1099"></a>Error irreales 1099
+## <a name="fatal-error-1099"></a>Error irresal 1099
 
 <dl> <dt>
 
-<span id="_1099__Fatal_____fileName__line____Duplicate_name__identifier__in_BITS_construct_"></span><span id="_1099__fatal_____filename__line____duplicate_name__identifier__in_bits_construct_"></span><span id="_1099__FATAL_____FILENAME__LINE____DUPLICATE_NAME__IDENTIFIER__IN_BITS_CONSTRUCT_"></span>**<1099, Error irres>: "<línea>: Nombre duplicado en la <fileName> \# construcción <identifier> bits"**
+<span id="_1099__Fatal_____fileName__line____Duplicate_name__identifier__in_BITS_construct_"></span><span id="_1099__fatal_____filename__line____duplicate_name__identifier__in_bits_construct_"></span><span id="_1099__FATAL_____FILENAME__LINE____DUPLICATE_NAME__IDENTIFIER__IN_BITS_CONSTRUCT_"></span>**<1099, Error>: "<línea>: Nombre duplicado en la <fileName> \# construcción <identifier> bits"**
 </dt> <dd>
 
 Asignación de tipos, error semántico de módulo específico de SNMPv2C. No debe haber nombres ni valores duplicados en una construcción BITS. El <línea \#> parámetro es la posición de la periodicidad del nombre o valor.

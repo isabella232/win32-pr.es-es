@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-allowed-to-Act-on-nombre-of-Other-Identity
-description: Este atributo se usa para las comprobaciones de acceso para determinar si un solicitante tiene permiso para actuar en el nombre de otras identidades de los servicios que se ejecutan como esta cuenta.
+title: Atributo ms-DS-Allowed-To-Act-On-Behalf-Of-Other-Identity
+description: Este atributo se usa para las comprobaciones de acceso a fin de determinar si un solicitante tiene permiso para actuar en nombre de otras identidades para los servicios que se ejecutan como esta cuenta.
 ms.assetid: 38203665-4505-461b-b6ab-b634725ac2fa
 ms.tgt_platform: multiple
 keywords:
-- MS-DS-allowed-to-Act-on-nombre-of-Other-Identity atributo AD Schema
-- Esquema de AD de atributo msDS-AllowedToActOnBehalfOfOtherIdentity
+- Esquema de AD del atributo ms-DS-Allowed-To-Act-On-Behalf-Of-Other-Identity
+- msDS-AllowedToActOnBehalfOfOtherIdentity attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 45dacd532b1d8a55b3656dc1d65fc1ebd940476c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: cad3ea9795dd89777d390235193ff2663e5b514125cdf539c34dfc85ad1664bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906211"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119552845"
 ---
-# <a name="ms-ds-allowed-to-act-on-behalf-of-other-identity-attribute"></a>atributo MS-DS-allowed-to-Act-on-nombre-of-Other-Identity
+# <a name="ms-ds-allowed-to-act-on-behalf-of-other-identity-attribute"></a>Atributo ms-DS-Allowed-To-Act-On-Behalf-Of-Other-Identity
 
-Este atributo se usa para las comprobaciones de acceso para determinar si un solicitante tiene permiso para actuar en el nombre de otras identidades de los servicios que se ejecutan como esta cuenta.
+Este atributo se usa para las comprobaciones de acceso a fin de determinar si un solicitante tiene permiso para actuar en nombre de otras identidades para los servicios que se ejecutan como esta cuenta.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------------------|
-| CN                | MS-DS-allowed-to-Act-on-nombre-of-Other-Identity    |
-| Nombre para mostrar de LDAP | msDS-AllowedToActOnBehalfOfOtherIdentity            |
-| Tamaño              | \-                                                  |
-| Actualizar privilegio  | \-                                                  |
+| CN                | ms-DS-Allowed-To-Act-On-Behalf-Of-Other-Identity    |
+| Ldap-Display-Name | msDS-AllowedToActOnBehalfOfOtherIdentity            |
+| Size              | \-                                                  |
+| Privilegio actualizar  | \-                                                  |
 | Frecuencia de actualización  | \-                                                  |
 | Attribute-Id      | 1.2.840.113556.1.4.2182                             |
-| System-ID-GUID    | 3f78c3e5-f79a-46bd-a0b8-9d18116ddc79                |
-| Sintaxis            | [**String(NT-Sec-Desc)**](s-string-nt-sec-desc.md) |
+| System-Id-Guid    | 3f78c3e5-f79a-46bd-a0b8-9d18116ddc79                |
+| Syntax            | [**String(NT-Sec-Desc)**](s-string-nt-sec-desc.md) |
 
 
 
@@ -50,13 +50,13 @@ Este atributo se usa para las comprobaciones de acceso para determinar si un sol
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | True                                                               |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Verdadero                                                               |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 0                                                                  |
 | Range-Upper            | 132096                                                             |
 | Search-Flags           | 0x00000000                                                         |

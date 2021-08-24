@@ -1,11 +1,11 @@
 ---
-title: Atributo de tipo de origen remoto
+title: Atributo Remote-Source-Type
 description: Tipo de puntero a objeto externo.
 ms.assetid: 9d0c2624-4f46-4155-83f5-0c163d03a257
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de tipo de origen remoto
-- remoteSourceType esquema de AD de atributos
+- Esquema de AD del atributo Remote-Source-Type
+- Esquema de AD del atributo remoteSourceType
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef8e54ab72294f426275a5873bc6a60beafd5cbc
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4678a8edba83bbaeeb81756e3043d46f90c0d39e868680255ba2c9570cdcee2d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151729"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119646951"
 ---
-# <a name="remote-source-type-attribute"></a>Atributo de tipo de origen remoto
+# <a name="remote-source-type-attribute"></a>Atributo Remote-Source-Type
 
 Tipo de puntero a objeto externo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | Tipo de origen remoto                   |
-| Nombre para mostrar de LDAP | remoteSourceType                     |
-| Tamaño              | 4 bytes                              |
-| Actualizar privilegio  | \-                                   |
+| CN                | Remote-Source-Type                   |
+| Ldap-Display-Name | remoteSourceType                     |
+| Size              | 4 bytes                              |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.108               |
-| System-ID-GUID    | bf967a15-0de6-11d0-a285-00aa003049e2 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | bf967a15-0de6-11d0-a285-00aa003049e2 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -55,13 +55,13 @@ Tipo de puntero a objeto externo.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                |
+| Id. de vínculo                | \-                                                                |
 | MAPI-Id                | \-                                                                |
-| System-Only            | False                                                             |
-| Tiene un único valor       | True                                                              |
-| Está indexado             | False                                                             |
-| En el catálogo global      | False                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                      |
+| System-Only            | Falso                                                             |
+| Es de un solo valor       | Verdadero                                                              |
+| Está indexado             | Falso                                                             |
+| En el catálogo global      | Falso                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
@@ -76,13 +76,13 @@ Tipo de puntero a objeto externo.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                |
+| Id. de vínculo                | \-                                                                |
 | MAPI-Id                | \-                                                                |
-| System-Only            | False                                                             |
-| Tiene un único valor       | True                                                              |
-| Está indexado             | False                                                             |
-| En el catálogo global      | False                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                      |
+| System-Only            | Falso                                                             |
+| Es de un solo valor       | Verdadero                                                              |
+| Está indexado             | Falso                                                             |
+| En el catálogo global      | Falso                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
@@ -97,13 +97,13 @@ Tipo de puntero a objeto externo.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                |
+| Id. de vínculo                | \-                                                                |
 | MAPI-Id                | \-                                                                |
-| System-Only            | False                                                             |
-| Tiene un único valor       | True                                                              |
-| Está indexado             | False                                                             |
-| En el catálogo global      | False                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                      |
+| System-Only            | Falso                                                             |
+| Es de un solo valor       | Verdadero                                                              |
+| Está indexado             | Falso                                                             |
+| En el catálogo global      | Falso                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
@@ -116,20 +116,20 @@ Tipo de puntero a objeto externo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                |
+| Id. de vínculo                | \-                                                                |
 | MAPI-Id                | \-                                                                |
-| System-Only            | False                                                             |
-| Tiene un único valor       | True                                                              |
-| Está indexado             | False                                                             |
-| En el catálogo global      | False                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                      |
+| System-Only            | Falso                                                             |
+| Es de un solo valor       | Verdadero                                                              |
+| Está indexado             | Falso                                                             |
+| En el catálogo global      | Falso                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Clases usadas en        | [**Destinatario de correo remoto**](c-remotemailrecipient.md)<br/> |
+| Clases usadas en        | [**Remote-Mail-Recipient**](c-remotemailrecipient.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Tipo de puntero a objeto externo.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                |
+| Id. de vínculo                | \-                                                                |
 | MAPI-Id                | \-                                                                |
-| System-Only            | False                                                             |
-| Tiene un único valor       | True                                                              |
-| Está indexado             | False                                                             |
-| En el catálogo global      | False                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                      |
+| System-Only            | Falso                                                             |
+| Es de un solo valor       | Verdadero                                                              |
+| Está indexado             | Falso                                                             |
+| En el catálogo global      | Falso                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Clases usadas en        | [**Destinatario de correo remoto**](c-remotemailrecipient.md)<br/> |
+| Clases usadas en        | [**Remote-Mail-Recipient**](c-remotemailrecipient.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Tipo de puntero a objeto externo.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                |
+| Id. de vínculo                | \-                                                                |
 | MAPI-Id                | \-                                                                |
-| System-Only            | False                                                             |
-| Tiene un único valor       | True                                                              |
-| Está indexado             | False                                                             |
-| En el catálogo global      | False                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                      |
+| System-Only            | Falso                                                             |
+| Es de un solo valor       | Verdadero                                                              |
+| Está indexado             | Falso                                                             |
+| En el catálogo global      | Falso                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Clases usadas en        | [**Destinatario de correo remoto**](c-remotemailrecipient.md)<br/> |
+| Clases usadas en        | [**Remote-Mail-Recipient**](c-remotemailrecipient.md)<br/> |
 
 
 

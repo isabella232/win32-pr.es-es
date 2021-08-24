@@ -1,8 +1,8 @@
 ---
-description: La \_ clase MemoryOnCard de CIM asocia la memoria física que se encuentra en los paneles de hospedaje, las tarjetas de adaptador, etc. Esta asociación define explícitamente la relación de memoria con las tarjetas.
+description: La clase MemoryOnCard de CIM asocia la memoria física ubicada en paneles de \_ hospedaje, tarjetas adaptadoras, entre otras. Esta asociación define explícitamente la relación de la memoria con las tarjetas.
 ms.assetid: 0d094cad-c542-4794-b6e1-87cdc8067668
 ms.tgt_platform: multiple
-title: CIM_MemoryOnCard (clase)
+title: CIM_MemoryOnCard clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,19 +17,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 2094101ab0cbbbc769194793273bf080cfe52818
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a07a8894e237be24a4c7b49e8491278ffb9e9ea82109fee00c27fc4eb9d5fcb5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659618"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119506795"
 ---
-# <a name="cim_memoryoncard-class"></a>\_Clase MemoryOnCard de CIM
+# <a name="cim_memoryoncard-class"></a>Cim \_ MemoryOnCard (clase)
 
-La **clase \_ MemoryOnCard de CIM** asocia la memoria física que se encuentra en los paneles de hospedaje, las tarjetas de adaptador, etc. Esta asociación define explícitamente la relación de memoria con las tarjetas.
+La **clase \_ MemoryOnCard de CIM** asocia la memoria física ubicada en paneles de hospedaje, tarjetas adaptadoras, entre otras. Esta asociación define explícitamente la relación de la memoria con las tarjetas.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -49,29 +49,29 @@ class CIM_MemoryOnCard : CIM_PackagedComponent
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ MemoryOnCard** tiene estos tipos de miembros:
+La **clase \_ MemoryOnCard de CIM** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ MemoryOnCard** tiene estas propiedades.
+La **clase \_ MemoryOnCard de CIM** tiene estas propiedades.
 
 <dl> <dt>
 
 **GroupComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ tarjeta CIM**
+Tipo de datos: **Tarjeta CIM \_**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
-Una [**\_ tarjeta CIM**](cim-card.md) que describe la tarjeta que incluye o "contiene" memoria.
+Una [**tarjeta CIM \_**](cim-card.md) que describe la tarjeta que incluye o "contiene" memoria.
 
 </dd> <dt>
 
@@ -84,46 +84,46 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cadena de forma libre que representa la posición del elemento físico en el paquete físico. La información relativa a los elementos estacionarios del contenedor (por ejemplo, "segunda Bahía de unidad de la parte superior"), ángulos, altitudes y otros datos se puede grabar en esta propiedad. Esta cadena se puede complementar o utilizar en lugar de crear una instancia del objeto de [**\_ Ubicación CIM**](cim-location.md) .
+Cadena de forma libre que representa el posicionamiento del elemento físico dentro del paquete físico. En esta propiedad se puede registrar información relativa a los elementos stationary del contenedor (por ejemplo, "second drive bay from the top"), ángulos, altitudes y otros datos. Esta cadena podría complementar o usarse en lugar de crear instancias del [**objeto Cim \_ Location.**](cim-location.md)
 
-Esta propiedad se hereda del [**\_ contenedor CIM**](cim-container.md).
+Esta propiedad se hereda del [**contenedor CIM \_**](cim-container.md).
 
 </dd> <dt>
 
 **PartComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **CIM \_ PhysicalMemory**
+Tipo de datos: **\_ CIM PhysicalMemory**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
 </dt> </dl>
 
-Un [**\_ PhysicalMemory de CIM**](cim-physicalmemory.md) que describe la memoria física que se encuentra en la tarjeta.
+Memoria [**\_ física CIM que**](cim-physicalmemory.md) describe la memoria física que se encuentra en la tarjeta.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase **CIM \_ MemoryOnCard** se deriva de [**\_ PackagedComponent de CIM**](cim-packagedcomponent.md).
+La **clase \_ MemoryOnCard** de CIM se deriva de [**CIM \_ PackagedComponent**](cim-packagedcomponent.md).
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -132,7 +132,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[**\_PACKAGEDCOMPONENT CIM**](cim-packagedcomponent.md)
+[**CIM \_ PackagedComponent**](cim-packagedcomponent.md)
 </dt> </dl>
 
  

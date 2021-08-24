@@ -1,11 +1,11 @@
 ---
-title: atributo RPC-NS-Group
-description: Una referencia a una entrada de servidor RPC u otro grupo de RPC.
+title: atributo rpc-Ns-Group
+description: Referencia a una entrada de servidor RPC u otro grupo RPC.
 ms.assetid: d497b58d-28b6-4b31-a784-5df79ebc81bd
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de grupo de RPC-NS
-- rpcNsGroup esquema de AD de atributos
+- Rpc-Ns-Group attribute AD Schema
+- Esquema de AD del atributo rpcNsGroup
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b4e5e577f929ea31ed0c4affeb9585674a23f1d8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 53bfe60da4d61628ac4a9ed48ece35d96f8546aaf43209c4d3525cc5d76d569f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104422697"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119646555"
 ---
-# <a name="rpc-ns-group-attribute"></a>atributo RPC-NS-Group
+# <a name="rpc-ns-group-attribute"></a>atributo rpc-Ns-Group
 
-Una referencia a una entrada de servidor RPC u otro grupo de RPC.
+Referencia a una entrada de servidor RPC u otro grupo RPC.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | RPC-NS-Group                                |
-| Nombre para mostrar de LDAP | rpcNsGroup                                  |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | rpc-Ns-Group                                |
+| Ldap-Display-Name | rpcNsGroup                                  |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.114                      |
-| System-ID-GUID    | bf967a24-0de6-11d0-a285-00aa003049e2        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | bf967a24-0de6-11d0-a285-00aa003049e2        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,18 +55,18 @@ Una referencia a una entrada de servidor RPC u otro grupo de RPC.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | \-                                         |
+| Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Tiene un único valor       | False                                      |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Falso                                      |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Clases usadas en        | [**Grupo RPC**](c-rpcgroup.md)<br/> |
+| Clases usadas en        | [**rpc-Group**](c-rpcgroup.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Una referencia a una entrada de servidor RPC u otro grupo de RPC.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | \-                                         |
+| Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Tiene un único valor       | False                                      |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Falso                                      |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Clases usadas en        | [**Grupo RPC**](c-rpcgroup.md)<br/> |
+| Clases usadas en        | [**rpc-Group**](c-rpcgroup.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ Una referencia a una entrada de servidor RPC u otro grupo de RPC.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | \-                                         |
+| Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Tiene un único valor       | False                                      |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Falso                                      |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Clases usadas en        | [**Grupo RPC**](c-rpcgroup.md)<br/> |
+| Clases usadas en        | [**rpc-Group**](c-rpcgroup.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Una referencia a una entrada de servidor RPC u otro grupo de RPC.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | \-                                         |
+| Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Tiene un único valor       | False                                      |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Falso                                      |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Clases usadas en        | [**Grupo RPC**](c-rpcgroup.md)<br/> |
+| Clases usadas en        | [**rpc-Group**](c-rpcgroup.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Una referencia a una entrada de servidor RPC u otro grupo de RPC.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | \-                                         |
+| Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Tiene un único valor       | False                                      |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Falso                                      |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Clases usadas en        | [**Grupo RPC**](c-rpcgroup.md)<br/> |
+| Clases usadas en        | [**rpc-Group**](c-rpcgroup.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Una referencia a una entrada de servidor RPC u otro grupo de RPC.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------|
-| Identificador de vínculo                | \-                                         |
+| Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
-| System-Only            | False                                      |
-| Tiene un único valor       | False                                      |
-| Está indexado             | False                                      |
-| En el catálogo global      | False                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                               |
+| System-Only            | Falso                                      |
+| Es de un solo valor       | Falso                                      |
+| Está indexado             | Falso                                      |
+| En el catálogo global      | Falso                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Clases usadas en        | [**Grupo RPC**](c-rpcgroup.md)<br/> |
+| Clases usadas en        | [**rpc-Group**](c-rpcgroup.md)<br/> |
 
 
 

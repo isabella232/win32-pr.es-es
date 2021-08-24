@@ -5,8 +5,8 @@ ms.assetid: 70d12df4-f0ac-499a-8b2f-6ba83b77869e
 ms.tgt_platform: multiple
 keywords:
 - Método SessionFlagCredUsernamePassword Windows Remote Management
-- Método SessionFlagCredUsernamePassword Windows remote management , objeto WSMan
-- WSMan object Windows Remote Management , SessionFlagCredUsernamePassword method
+- Método SessionFlagCredUsernamePassword Windows administración remota , objeto WSMan
+- Objeto WSMan Windows administración remota , método SessionFlagCredUsernamePassword
 topic_type:
 - apiref
 api_name:
@@ -60,7 +60,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
@@ -71,7 +71,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

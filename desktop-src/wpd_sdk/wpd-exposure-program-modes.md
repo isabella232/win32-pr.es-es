@@ -1,7 +1,7 @@
 ---
-description: El \_ tipo de \_ enumeración modos del programa de exposición de WPD \_ describe un modo de exposición que se usa al capturar imágenes con un dispositivo.
+description: El tipo de enumeración WPD EXPOSURE PROGRAM MODES describe un modo de exposición que se usará al \_ capturar imágenes con un \_ \_ dispositivo.
 ms.assetid: 68b76294-6ad3-4f4a-bf02-bc31c9e8ac62
-title: Enumeración WPD_EXPOSURE_PROGRAM_MODES (PortableDevice. h)
+title: WPD_EXPOSURE_PROGRAM_MODES enumeración (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: a88ce90bb9e776cd45245b32a363635c2ccf0560
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dc64012c4f13f84abef55d2426c856b931eb447e61df4f04c69781c089857930
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119083279"
 ---
-# <a name="wpd_exposure_program_modes-enumeration"></a>\_ \_ Enumeración de modos de programa de exposición de WPD \_
+# <a name="wpd_exposure_program_modes-enumeration"></a>Enumeración WPD \_ EXPOSURE \_ PROGRAM \_ MODES
 
-El tipo de enumeración modos del programa de exposición de WPD describe un modo de exposición que se usa al capturar imágenes con un dispositivo. **\_ \_ \_**
+El **tipo de \_ enumeración WPD EXPOSURE \_ PROGRAM \_ MODES** describe un modo de exposición que se usará al capturar imágenes con un dispositivo.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -46,65 +46,65 @@ typedef enum WPD_EXPOSURE_PROGRAM_MODES {
 
 <dl> <dt>
 
-<span id="WPD_EXPOSURE_PROGRAM_MODE_UNDEFINED"></span><span id="wpd_exposure_program_mode_undefined"></span>**modo de programa de exposición de WPD \_ \_ \_ \_ sin definir**
+<span id="WPD_EXPOSURE_PROGRAM_MODE_UNDEFINED"></span><span id="wpd_exposure_program_mode_undefined"></span>**MODO DE PROGRAMA DE EXPOSICIÓN DE WPD \_ \_ SIN \_ \_ DEFINIR**
 </dt> <dd>
 
 No se ha especificado el modo de exposición.
 
 </dd> <dt>
 
-<span id="WPD_EXPOSURE_PROGRAM_MODE_MANUAL"></span><span id="wpd_exposure_program_mode_manual"></span>**\_manual del \_ modo de programa de exposición de WPD \_ \_**
+<span id="WPD_EXPOSURE_PROGRAM_MODE_MANUAL"></span><span id="wpd_exposure_program_mode_manual"></span>**MANUAL DEL \_ MODO DE PROGRAMA DE EXPOSICIÓN \_ \_ DE \_ WPD**
 </dt> <dd>
 
 La aplicación debe especificar toda la configuración de exposición.
 
 </dd> <dt>
 
-<span id="WPD_EXPOSURE_PROGRAM_MODE_AUTO"></span><span id="wpd_exposure_program_mode_auto"></span>**modo de programa de exposición de WPD \_ \_ \_ \_ auto**
+<span id="WPD_EXPOSURE_PROGRAM_MODE_AUTO"></span><span id="wpd_exposure_program_mode_auto"></span>**MODO AUTOMÁTICO \_ DEL PROGRAMA DE EXPOSICIÓN \_ \_ WPD \_**
 </dt> <dd>
 
 Use un modo de exposición automática definido por el dispositivo.
 
 </dd> <dt>
 
-<span id="WPD_EXPOSURE_PROGRAM_MODE_APERTURE_PRIORITY"></span><span id="wpd_exposure_program_mode_aperture_priority"></span>**\_prioridad de \_ abertura del modo de programa de exposición de \_ \_ WPD \_**
+<span id="WPD_EXPOSURE_PROGRAM_MODE_APERTURE_PRIORITY"></span><span id="wpd_exposure_program_mode_aperture_priority"></span>**PRIORIDAD DE APERTURA \_ DEL MODO DE EXPOSICIÓN \_ \_ DE \_ \_ WPD**
 </dt> <dd>
 
-Un modo de exposición automatizada que indica que el valor de apertura de la lente debe permanecer fijo, pero el dispositivo debe determinar la velocidad del obturador.
+Modo de exposición automatizado que indica que el valor de la apertura de la lente debe permanecer fijo, pero el dispositivo debe determinar la velocidad de obturación.
 
 </dd> <dt>
 
-<span id="WPD_EXPOSURE_PROGRAM_MODE_SHUTTER_PRIORITY"></span><span id="wpd_exposure_program_mode_shutter_priority"></span>**\_prioridad de \_ \_ \_ obturador del \_ modo de exposición de WPD**
+<span id="WPD_EXPOSURE_PROGRAM_MODE_SHUTTER_PRIORITY"></span><span id="wpd_exposure_program_mode_shutter_priority"></span>**PRIORIDAD DE PRIORIDAD DE \_ PRIORIDAD DEL PROGRAMA DE \_ \_ \_ \_ EXPOSICIÓN DE WPD**
 </dt> <dd>
 
-Un modo de exposición automatizada que indica que la velocidad del obturador debe permanecer fija, pero el dispositivo debe determinar la abertura del objetivo.
+Un modo de exposición automatizado que indica que la velocidad de obturación debe permanecer fija, pero el dispositivo debe determinar esa apertura de la lente.
 
 </dd> <dt>
 
-<span id="WPD_EXPOSURE_PROGRAM_MODE_CREATIVE"></span><span id="wpd_exposure_program_mode_creative"></span>**\_creatividad del \_ modo de programa de exposición de WPD \_ \_**
+<span id="WPD_EXPOSURE_PROGRAM_MODE_CREATIVE"></span><span id="wpd_exposure_program_mode_creative"></span>**WPD \_ EXPOSURE \_ PROGRAM \_ MODE \_ CREATIVE**
 </dt> <dd>
 
-Modo de exposición automatizada que intenta maximizar la profundidad del campo.
+Modo de exposición automatizado que intenta maximizar la profundidad de campo.
 
 </dd> <dt>
 
-<span id="WPD_EXPOSURE_PROGRAM_MODE_ACTION"></span><span id="wpd_exposure_program_mode_action"></span>**\_acción del \_ modo de programa de exposición de WPD \_ \_**
+<span id="WPD_EXPOSURE_PROGRAM_MODE_ACTION"></span><span id="wpd_exposure_program_mode_action"></span>**ACCIÓN DEL \_ MODO DE PROGRAMA DE EXPOSICIÓN DE \_ \_ \_ WPD**
 </dt> <dd>
 
-Modo de exposición automatizada que intenta maximizar la velocidad del obturador.
+Modo de exposición automatizado que intenta maximizar la velocidad de obturación.
 
 </dd> <dt>
 
-<span id="WPD_EXPOSURE_PROGRAM_MODE_PORTRAIT"></span><span id="wpd_exposure_program_mode_portrait"></span>**modo de programa de exposición de WPD \_ \_ \_ \_ vertical**
+<span id="WPD_EXPOSURE_PROGRAM_MODE_PORTRAIT"></span><span id="wpd_exposure_program_mode_portrait"></span>**WPD \_ EXPOSURE \_ PROGRAM \_ MODE \_ PORTRAIT**
 </dt> <dd>
 
-Modo de exposición automatizada que especifica una profundidad relativamente superficial de campo.
+Modo de exposición automatizado que especifica una profundidad de campo relativamente superficial.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Indica el modo del programa de exposición del dispositivo. Esta enumeración se usa en la propiedad del [modo de programa de \_ \_ exposición de imagen \_ \_ \_ estática de WPD](still-image-properties.md) .
+Indica el modo de programa de exposición del dispositivo. Esta enumeración la usa la [propiedad \_ WPD STILL \_ IMAGE EXPOSURE \_ PROGRAM \_ \_ MODE.](still-image-properties.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -112,7 +112,7 @@ Indica el modo del programa de exposición del dispositivo. Esta enumeración se
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 

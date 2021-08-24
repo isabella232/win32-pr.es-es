@@ -32,7 +32,7 @@ Devuelve el número de secuencias disponibles como un entero.
 
 Esta propiedad es de solo lectura sin ningún valor predeterminado. Para consultar su atributo de lenguaje en cada secuencia, primero llame a este método para obtener el límite superior.
 
-La numeración de secuencias es de base cero.
+La numeración de secuencias está basada en cero.
 
  
 

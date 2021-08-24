@@ -36,7 +36,7 @@ ms.locfileid: "119323285"
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.41                |
 | System-Id-Guid    | bf96797a-0de6-11d0-a285-00aa003049e2 |
-| Syntax            | [**Booleana**](s-boolean.md)         |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 
@@ -54,7 +54,7 @@ ms.locfileid: "119323285"
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------|
 | Id. de vínculo                | \-                                                     |
 | MAPI-Id                | \-                                                     |
@@ -75,7 +75,7 @@ ms.locfileid: "119323285"
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------|
 | Id. de vínculo                | \-                                                     |
 | MAPI-Id                | \-                                                     |
@@ -96,7 +96,7 @@ ms.locfileid: "119323285"
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------|
 | Id. de vínculo                | \-                                                     |
 | MAPI-Id                | \-                                                     |
@@ -138,7 +138,7 @@ ms.locfileid: "119323285"
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------|
 | Id. de vínculo                | \-                                                     |
 | MAPI-Id                | \-                                                     |
@@ -159,7 +159,7 @@ ms.locfileid: "119323285"
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------|
 | Id. de vínculo                | \-                                                     |
 | MAPI-Id                | \-                                                     |

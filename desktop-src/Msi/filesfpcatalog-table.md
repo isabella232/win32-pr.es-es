@@ -1,21 +1,21 @@
 ---
-description: La tabla FileSFPCatalog asocia los archivos especificados con los archivos de catálogo usados por la protección de archivos del sistema.
+description: La tabla FileSFPCatalog asocia los archivos especificados con los archivos de catálogo utilizados por la protección de archivos del sistema.
 ms.assetid: 70c8b64a-cf15-411c-8388-4a7e3051f45c
 title: Tabla FileSFPCatalog
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a2300b73cc1639d8a54e206ea609043cf657c91f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 41bec6e31cba93730cc65b04ffdfb4a509f0cd817ba709cc029edfb47c4c4e60
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119581595"
 ---
 # <a name="filesfpcatalog-table"></a>Tabla FileSFPCatalog
 
-La tabla FileSFPCatalog asocia los archivos especificados con los archivos de catálogo usados por la protección de archivos del sistema.
+La tabla FileSFPCatalog asocia los archivos especificados con los archivos de catálogo utilizados por la protección de archivos del sistema.
 
-**Windows Vista, Windows Server 2003 y Windows XP:** No compatible.
+**Windows Vista, Windows Server 2003 y Windows XP:** No se admite.
 
 La tabla FileSFPCatalog tiene las columnas siguientes.
 
@@ -34,23 +34,23 @@ La tabla FileSFPCatalog tiene las columnas siguientes.
 
 <dl> <dt>
 
-<span id="File_"></span><span id="file_"></span><span id="FILE_"></span>Filesystem\_
+<span id="File_"></span><span id="file_"></span><span id="FILE_"></span>Archivo\_
 </dt> <dd>
 
-Clave externa de la [tabla de archivos](file-table.md).
+Clave externa a la [tabla File](file-table.md).
 
 </dd> <dt>
 
 <span id="SFPCatalog_"></span><span id="sfpcatalog_"></span><span id="SFPCATALOG_"></span>SFPCatalog\_
 </dt> <dd>
 
-Clave externa para la [tabla SFPCatalog](sfpcatalog-table.md).
+Clave externa a la [tabla SFPCatalog](sfpcatalog-table.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La [acción InstallSFPCatalogFile](installsfpcatalogfile-action.md) consulta la tabla de [componentes](component-table.md), la tabla de [archivos](file-table.md), la tabla FileSFPCatalog y la tabla [SFPCatalog](sfpcatalog-table.md).
+La [acción InstallSFPCatalogFile](installsfpcatalogfile-action.md) consulta la tabla [Component](component-table.md), la [tabla File,](file-table.md)la tabla FileSFPCatalog y [la tabla SFPCatalog](sfpcatalog-table.md).
 
 ## <a name="validation"></a>Validación
 

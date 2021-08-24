@@ -1,9 +1,9 @@
 ---
 title: Elemento FriendlyName
-description: Tenga en cuenta que en esta sección se describe la funcionalidad diseñada para su uso en tiendas en línea. | Elemento FriendlyName
+description: Nota En esta sección se describe la funcionalidad diseñada para su uso por las tiendas en línea. | Elemento FriendlyName
 ms.assetid: 9f5de0f9-609c-4b4d-8fda-4d65995aea79
 keywords:
-- FriendlyName (elemento) Windows Media Player
+- Elemento FriendlyName Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,21 +13,21 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d93484937f14b233c995a041acc21f5e5eae383b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f48f14dac372767c0553f3215a2336a5ebedbfb1a363ec91d17309efb2cced21
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699916"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648115"
 ---
 # <a name="friendlyname-element"></a>Elemento FriendlyName
 
 > [!Note]  
-> En esta sección se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
+> En esta sección se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
 
  
 
-El elemento **FriendlyName** especifica la cadena de texto que Windows Media Player muestra al usuario para identificar la tienda en línea.
+El **elemento FriendlyName** especifica la cadena de texto que Reproductor de Windows Media muestra al usuario para identificar el almacén en línea.
 
 ``` syntax
 <FriendlyName>
@@ -56,9 +56,9 @@ Este elemento no tiene atributos.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|----------------------------------------------|
-| Versión<br/> | Windows Media Player 10 o posterior.<br/> |
+| Versión<br/> | Reproductor de Windows Media 10 o posterior.<br/> |
 
 
 
@@ -66,10 +66,10 @@ Este elemento no tiene atributos.
 
 <dl> <dt>
 
-[**Ejemplo de documento ServiceInfo para una tienda en línea de tipo 1**](example-serviceinfo-document-for-a-type-1-online-store.md)
+[**Documento ServiceInfo de ejemplo para un almacén en línea de tipo 1**](example-serviceinfo-document-for-a-type-1-online-store.md)
 </dt> <dt>
 
-[**Ejemplo de documento ServiceInfo para una tienda en línea de tipo 2**](example-serviceinfo-document-for-a-type-2-online-store.md)
+[**Documento ServiceInfo de ejemplo para una tienda en línea de tipo 2**](example-serviceinfo-document-for-a-type-2-online-store.md)
 </dt> <dt>
 
 [**Documento ServiceInfo**](serviceinfo-document.md)

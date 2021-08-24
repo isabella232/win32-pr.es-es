@@ -1,9 +1,9 @@
 ---
-title: Mensaje de DRV_OPEN (mmsystem. h)
-description: Indica al controlador que abra una nueva instancia de.
+title: DRV_OPEN mensaje (Mmsystem.h)
+description: Dirige al controlador para que abra una nueva instancia.
 ms.assetid: 6b5e21e3-dc29-4f0f-84cb-bd2d2e3c54e9
 keywords:
-- Mensaje de DRV_OPEN de Windows multimedia
+- DRV_OPEN mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 53c56e62cb85f09a3846c6d95d723b9fa05d95a7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 537d3067c85cf3f92eaf2fae81cd392490ff9fa728ed8377d8241c7204cf64e1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151133"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119691585"
 ---
-# <a name="drv_open-message"></a>DRV \_ Open Message
+# <a name="drv_open-message"></a>Mensaje DE \_ DRV OPEN
 
-Indica al controlador que abra una nueva instancia de.
+Dirige al controlador para que abra una nueva instancia.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -46,24 +46,24 @@ Identificador de la instancia del controlador instalable.
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-Dirección de una cadena de caracteres anchos terminada en null que especifica la información de configuración utilizada para abrir la instancia. Si no hay información de configuración disponible, significa que esta cadena está vacía o el parámetro es **null**.
+Dirección de una cadena de caracteres anchos terminada en NULL que especifica la información de configuración utilizada para abrir la instancia. Si no hay información de configuración disponible, esta cadena está vacía o el parámetro es **NULL.**
 
 </dd> <dt>
 
 <span id="lParam2"></span><span id="lparam2"></span><span id="LPARAM2"></span>*lParam2*
 </dt> <dd>
 
-datos específicos del controlador de 32 bits.
+Datos específicos del controlador de 32 bits.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor distinto de cero si es correcto o cero de lo contrario.
+Devuelve un valor distinto de cero si se realiza correctamente o cero de lo contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el controlador devuelve un valor distinto de cero, el sistema utiliza ese valor como identificador de controlador (el parámetro *dwDriverId* ) en los mensajes que envía posteriormente a la instancia del controlador. El controlador puede devolver cualquier tipo de valor como identificador. Por ejemplo, algunos controladores devuelven direcciones de memoria que apuntan a información específica de la instancia. El uso de este método para especificar los identificadores de una instancia de controlador proporciona a los controladores acceso a la información mientras están procesando mensajes.
+Si el controlador devuelve un valor distinto de cero, el sistema usa ese valor como identificador del controlador (el parámetro *dwDriverId)* en los mensajes que envía posteriormente a la instancia del controlador. El controlador puede devolver cualquier tipo de valor como identificador. Por ejemplo, algunos controladores devuelven direcciones de memoria que apuntan a información específica de la instancia. El uso de este método para especificar identificadores para una instancia de controlador proporciona a los controladores acceso listo a la información mientras están procesando mensajes.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,7 +73,7 @@ Si el controlador devuelve un valor distinto de cero, el sistema utiliza ese val
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 

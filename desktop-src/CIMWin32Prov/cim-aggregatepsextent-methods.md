@@ -12,12 +12,12 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119322855"
 ---
-# <a name="cim_aggregatepsextent-methods"></a>\_Métodos aggregatePSExtent de CIM
+# <a name="cim_aggregatepsextent-methods"></a>Métodos \_ AggregatePSExtent de CIM
 
 La [**clase \_ AggregatePSExtent de CIM**](cim-aggregatepsextent.md) expone los métodos siguientes.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 

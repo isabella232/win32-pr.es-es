@@ -1,68 +1,68 @@
 ---
-title: Extensiones de dispositivo de Windows Media Administrador de dispositivos para la transferencia de metadatos
-description: Extensiones de dispositivo de Windows Media Administrador de dispositivos para la transferencia de metadatos
+title: Windows Extensiones de Administrador de dispositivos multimedia para la transferencia de metadatos
+description: Windows Extensiones de Administrador de dispositivos multimedia para la transferencia de metadatos
 ms.assetid: c1d84225-b5b1-4f9e-8694-a229653e53de
 keywords:
-- Windows Media Player, extensiones de dispositivo
-- Windows Media Player, extensiones
-- Media Player de Windows, metadatos
-- Windows Media Player, transferencia acelerada de metadatos
-- Windows Media Player, transferencia acelerada de metadatos
-- metadatos, extensiones de dispositivo
-- metadatos, extensiones
+- Reproductor de Windows Media,extensiones de dispositivo
+- Reproductor de Windows Media,extensions
+- Reproductor de Windows Media,metadata
+- Reproductor de Windows Media, transferencia acelerada de metadatos
+- Reproductor de Windows Media, transferencia acelerada de metadatos
+- metadata,device extensions
+- metadata,extensions
 - extensiones de dispositivo, transferencia de metadatos
 - extensiones, transferencia de metadatos
 - transferencia acelerada de metadatos
 - metadatos, transferencia acelerada
 - extensiones de dispositivo, transferencia acelerada de metadatos
-- extensiones, transferencia de metadatos acelerada
+- extensiones, transferencia acelerada de metadatos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d85ff7026e3395338fdf048c54b8ff7401c9ee7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9a9b37271fc9714bf3665dccf1475da1a5840c429d7df9136a50fe95789f7a02
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104486882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119571645"
 ---
-# <a name="windows-media-device-manager-device-extensions-for-metadata-transfer"></a>Extensiones de dispositivo de Windows Media Administrador de dispositivos para la transferencia de metadatos
+# <a name="windows-media-device-manager-device-extensions-for-metadata-transfer"></a>Windows Extensiones de Administrador de dispositivos multimedia para la transferencia de metadatos
 
-Para habilitar la transferencia de metadatos acelerada, los fabricantes de dispositivos que no admiten MTP deben hacer lo siguiente en el código fuente:
+Para habilitar la transferencia acelerada de metadatos, los fabricantes de dispositivos que no admiten MTP deben hacer lo siguiente en el código fuente:
 
--   Definir **la \_ \_ \_ compatibilidad con dispositivos de WMP WMDM**.
--   Incluya wmpdevices. h, que se instala como parte del SDK de Windows Media Player.
+-   Defina la **compatibilidad con \_ dispositivos WMDM \_ de \_ WMP.**
+-   Incluya wmpdevices.h, que se instala como parte del SDK de Reproductor de Windows Media.
 
-Wmpdevices. h define las siguientes estructuras.
+Wmpdevices.h define las estructuras siguientes.
 
 
 
 | Estructura                                                                                 | Descripción                                                                                                                                       |
 |-------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Ciclo de ida y \_ vuelta de metadatos de WMP WMDM \_ \_ \_ \_ PC2DEVICE](/previous-versions/windows/desktop/api/wmpdevices/ns-wmpdevices-wmp_wmdm_metadata_round_trip_pc2device) | Estructura utilizada por Windows Media Player para solicitar información de sincronización de metadatos acelerada de dispositivos portátiles que no son compatibles con MTP. |
-| [Ciclo de ida y \_ vuelta de metadatos de WMP WMDM \_ \_ \_ \_ DEVICE2PC](/previous-versions/windows/desktop/api/wmpdevices/ns-wmpdevices-wmp_wmdm_metadata_round_trip_device2pc) | Estructura utilizada por Windows Media Player para recibir información de sincronización de metadatos acelerada de dispositivos portátiles que no son compatibles con MTP. |
+| [WMP \_ WMDM \_ METADATA \_ ROUND \_ TRIP \_ PC2DEVICE](/previous-versions/windows/desktop/api/wmpdevices/ns-wmpdevices-wmp_wmdm_metadata_round_trip_pc2device) | Estructura usada por Reproductor de Windows Media para solicitar información de sincronización acelerada de metadatos desde dispositivos portátiles que no admiten MTP. |
+| [WMP \_ WMDM \_ METADATA \_ ROUND \_ TRIP \_ DEVICE2PC](/previous-versions/windows/desktop/api/wmpdevices/ns-wmpdevices-wmp_wmdm_metadata_round_trip_device2pc) | Estructura usada por Reproductor de Windows Media para recibir información de sincronización acelerada de metadatos de dispositivos portátiles que no admiten MTP. |
 
 
 
- 
+ 
 
-Para solicitar información del dispositivo sobre los metadatos que han cambiado, Windows Media Player 10 o posterior llama al método de Administrador de dispositivos de Windows Media **IWMDMDevice3::D eviceiocontrol**. Al realizar esta llamada, el reproductor sigue los pasos específicos, como se indica a continuación:
+Para solicitar información del dispositivo sobre los metadatos que han cambiado, Reproductor de Windows Media 10 o posterior llama al método Windows Media Administrador de dispositivos **IWMDMDevice3::D eviceIoControl**. Al realizar esta llamada, el reproductor sigue pasos específicos, como se muestra a continuación:
 
--   El primer parámetro, *dwIoControlCode*, contiene la constante **ioctl \_ WMP \_ Metadata \_ Round \_ Trip**. Esta constante se define en wmpdevices. h.
--   El segundo parámetro, *lpInBuffer*, apunta a una estructura de PC2DEVICE de ida y **\_ \_ \_ \_ \_ vuelta de metadatos de WMP WMDM** .
+-   El primer parámetro, *dwIoControlCode*, contiene la constante **IOCTL \_ WMP \_ METADATA ROUND \_ \_ TRIP**. Esta constante se define en wmpdevices.h.
+-   El segundo parámetro, *lpInBuffer*, apunta a una estructura **\_ WMP WMDM \_ METADATA ROUND TRIP \_ \_ \_ PC2DEVICE.**
 -   El tercer parámetro, *nInBufferSize*, contiene el tamaño del búfer de entrada.
--   El cuarto parámetro, *lpOutBuffer*, apunta a una estructura de DEVICE2PC de ida y **\_ \_ \_ \_ \_ vuelta de metadatos de WMP WMDM** . El dispositivo debe rellenar esta estructura con información sobre los cambios.
--   El quinto parámetro, *pnOutBufferSize*, recibe el tamaño del búfer de salida.
+-   El cuarto parámetro, *lpOutBuffer*, apunta a una estructura **\_ WMP WMDM \_ METADATA ROUND TRIP \_ \_ \_ DEVICE2PC.** El dispositivo debe rellenar esta estructura con información sobre los cambios.
+-   El quinto parámetro, *pnOutBufferSize,* recibe el tamaño del búfer de salida.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Extensiones de dispositivo para la transferencia de metadatos acelerada**](device-extensions-for-accelerated-metadata-transfer.md)
+[**Extensiones de dispositivo para la transferencia acelerada de metadatos**](device-extensions-for-accelerated-metadata-transfer.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

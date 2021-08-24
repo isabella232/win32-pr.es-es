@@ -1,7 +1,7 @@
 ---
-description: Representa un trabajo de operación del servicio de archivos invitados.
+description: Representa un trabajo de operación del servicio de archivos invitado.
 ms.assetid: 3750707e-e8c8-4188-aed8-1a394d142140
-title: Msvm_CopyFileToGuestJob (clase)
+title: Msvm_CopyFileToGuestJob clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -29,16 +29,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 57e27b4ba610eea4559f3b045b2d823661cf4cc9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 33fe43612425c96a5374603e6bb3a3cb6a3a56083113cc7628075ccf75c71056
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105667823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119531745"
 ---
-# <a name="msvm_copyfiletoguestjob-class"></a>MSVM \_ CopyFileToGuestJob (clase)
+# <a name="msvm_copyfiletoguestjob-class"></a>Clase \_ CopyFileToGuestJob de Msvm
 
-Representa un trabajo de operación del servicio de archivos invitados. Esta clase deriva de [**MSVM \_ GuestFileService**](msvm-guestfileservice.md).
+Representa un trabajo de operación del servicio de archivos invitado. Esta clase se deriva de [**Msvm \_ GuestFileService**](msvm-guestfileservice.md).
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -67,21 +67,21 @@ class Msvm_CopyFileToGuestJob : CIM_ConcreteJob
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ CopyFileToGuestJob** tiene estos tipos de miembros:
+La **clase \_ CopyFileToGuestJob de Msvm** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La clase **MSVM \_ CopyFileToGuestJob** tiene estos métodos.
+La **clase \_ CopyFileToGuestJob de Msvm** tiene estos métodos.
 
 
 
 | Método                                                                   | Descripción                                                           |
 |:-------------------------------------------------------------------------|:----------------------------------------------------------------------|
-| [**CopyFilesToGuest**](copyfilestoguest-msvm-guestfileservice.md)       | Copia archivos del host de Hyper-V a la máquina virtual.<br/> |
-| [**GetError**](geterror-msvm-copyfiletoguestjob.md)                     | Recupera el objeto de error del trabajo.<br/>                    |
+| [**CopyFilesToGuest**](copyfilestoguest-msvm-guestfileservice.md)       | Copia los archivos del host de Hyper-V en la máquina virtual.<br/> |
+| [**GetError**](geterror-msvm-copyfiletoguestjob.md)                     | Recupera el objeto de error para el trabajo.<br/>                    |
 | [**GetErrorEx**](geterrorex-msvm-copyfiletoguestjob.md)                 | Recupera los objetos de error del trabajo.<br/>                   |
 | [**RequestStateChange**](requeststatechange-msvm-copyfiletoguestjob.md) | Cambia el estado del trabajo.<br/>                              |
 | **StartService**                                                         | No se admite este método.<br/>                              |
@@ -93,7 +93,7 @@ La clase **MSVM \_ CopyFileToGuestJob** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ CopyFileToGuestJob** tiene estas propiedades.
+La **clase \_ CopyFileToGuestJob de Msvm** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -106,7 +106,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si se puede cancelar el trabajo. El valor de esta propiedad no garantiza que una solicitud para cancelar el trabajo se realizará correctamente. Si **es true**, el trabajo se puede cancelar; en caso contrario, **false**.
+Indica si se puede cancelar el trabajo. El valor de esta propiedad no garantiza que una solicitud para cancelar el trabajo se realizará correctamente. Si **es TRUE,** se puede cancelar el trabajo; de lo contrario, **FALSE**.
 
 </dd> <dt>
 
@@ -119,14 +119,14 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Breve descripción textual del objeto. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Breve descripción textual del objeto. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **CopyFileToGuestSettingData**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -145,7 +145,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre de la clase o subclase utilizada en la creación de una instancia de. Cuando se usa con otras propiedades de clave de la clase, esta propiedad permite que todas las instancias de la clase y sus subclases se identifiquen de forma única.
+Nombre de la clase o subclase usada en la creación de una instancia de . Cuando se usa con otras propiedades clave de la clase , esta propiedad permite identificar de forma única todas las instancias de la clase y sus subclases.
 
 </dd> <dt>
 
@@ -158,7 +158,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Descripción textual del objeto. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Descripción textual del objeto. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
@@ -171,23 +171,23 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**\_ trabajo de CIM**](cim-job.md).**ErrorCode**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Cim \_ Job**](cim-job.md).**ErrorCode**")
 </dt> </dl>
 
-Descripción breve del error, si está presente. Esta propiedad se hereda del [**\_ trabajo CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Una descripción resumida del error, si está presente. Esta propiedad se hereda del [**trabajo \_ cim**](/windows/desktop/CIMWin32Prov/cim-job).
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Fecha y hora en que se instaló el objeto. Esta propiedad no necesita un valor para indicar que el objeto está instalado. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Fecha y hora en que se instaló el objeto. Esta propiedad no necesita un valor para indicar que el objeto está instalado. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
@@ -200,11 +200,11 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Identificador único para el servicio que también proporciona una indicación de la funcionalidad que se administra. Para obtener más información sobre la funcionalidad, vea la propiedad **Description** del objeto. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Identificador único para el servicio que también proporciona una indicación de la funcionalidad que se administra. Para obtener más información sobre la funcionalidad, vea la propiedad **Description del** objeto. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
-**Iniciado**
+**Comenzó**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
@@ -213,7 +213,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es true**, el servicio se ha iniciado.
+Si **es TRUE,** el servicio se ha iniciado.
 
 </dd> <dt>
 
@@ -226,16 +226,16 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si el servicio se inicia automáticamente (por ejemplo, por un sistema operativo) o solo se inicia después de la solicitud.
+Indica si el servicio se inicia automáticamente (por ejemplo, por un sistema operativo) o solo se inicia a petición.
 
 Los valores son los siguientes:
 
 <dl><span id="Automatic"></span><span id="automatic"></span><span id="AUTOMATIC"></span><dt>
 
-**Automático**
+**"Automático"**
 </dt><span id="Manual"></span><span id="manual"></span><span id="MANUAL"></span><dt>
 
-**Manualmente**
+**"Manual"**
 </dt> </dl>
 
 </dd> <dt>
@@ -249,46 +249,46 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Estado actual del objeto. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Estado actual del objeto. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 Los valores son los siguientes:
 
 <dl><span id="OK"></span><span id="ok"></span><dt>
 
-**ACEPTAR**
+**"Ok" (Aceptar)**
 </dt><span id="Error"></span><span id="error"></span><span id="ERROR"></span><dt>
 
-**Error**
+**"Error"**
 </dt><span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span><dt>
 
-**Degradado**
+**"Degradado"**
 </dt><span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span><dt>
 
-**Unknown**
+**"Desconocido"**
 </dt><span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span><dt>
 
-**"Pred FAIL"**
+**"Error previo"**
 </dt><span id="Starting"></span><span id="starting"></span><span id="STARTING"></span><dt>
 
-**Comenzar**
+**"Starting"**
 </dt><span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span><dt>
 
-**Bloqueo**
+**"Deteniendo"**
 </dt><span id="Service"></span><span id="service"></span><span id="SERVICE"></span><dt>
 
-**Servicio**
+**"Servicio"**
 </dt><span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span><dt>
 
-**Calca**
+**"Estresado"**
 </dt><span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span><dt>
 
-**"Recover"**
+**"NonRecover"**
 </dt><span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span><dt>
 
 **"Sin contacto"**
 </dt><span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span><dt>
 
-**"Pérdida de comunicación"**
+**"Lost Comm"**
 </dt> </dl>
 
 </dd> <dt>
@@ -302,7 +302,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre de la clase de creación del sistema de ámbito.
+Nombre de clase de creación del sistema de ámbito.
 
 </dd> <dt>
 
@@ -336,12 +336,12 @@ GUID del sistema virtual afectado.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                                 |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                            |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                                 |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -350,13 +350,13 @@ GUID del sistema virtual afectado.
 
 <dl> <dt>
 
-[**\_CONCRETEJOB CIM**](cim-concretejob.md)
+[**CIM \_ ConcreteJob**](cim-concretejob.md)
 </dt> <dt>
 
-[**MSVM \_ GuestFileService**](msvm-guestfileservice.md)
+[**Msvm \_ GuestFileService**](msvm-guestfileservice.md)
 </dt> <dt>
 
-[**MSVM \_ GuestService**](msvm-guestservice.md)
+[**Msvm \_ GuestService**](msvm-guestservice.md)
 </dt> </dl>
 
  

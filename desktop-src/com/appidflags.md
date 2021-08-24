@@ -77,7 +77,7 @@ Si no se establece la marca **APPIDREGFLAGS \_ ISSUE ACTIVATION RPC AT \_ \_ \_ 
 
 Se deben tener en cuenta las siguientes consideraciones de seguridad al usar la marca **APPIDREGFLAGS \_ ISSUE ACTIVATION RPC AT \_ \_ \_ \_ IDENTIFY:**
 
--   La **marca APPIDREGFLAGS \_ ISSUE ACTIVATION RPC AT \_ \_ \_ \_ IDENTIFY** está pensada para que la usen los servidores COM que no realizan el trabajo en nombre de los clientes en las solicitudes de activación de objetos. Para estos servidores, si el SCM COM emite solicitudes de activación de objetos en [RPC C IMP LEVEL \_ \_ \_ \_ IDENTIFY,](impersonation-levels.md) se minimizan las posibilidades de que aparezcan SE tokens con privilegios con un nivel [**\_ IMPERSONATE \_ NAME**](/windows/desktop/SecAuthZ/privilege-constants) en el proceso.
+-   La **marca APPIDREGFLAGS \_ ISSUE ACTIVATION RPC AT \_ \_ \_ \_ IDENTIFY** está pensada para que la usen los servidores COM que no realizan el trabajo en nombre de los clientes en las solicitudes de activación de objetos. En el caso de estos servidores, si el SCM COM emite solicitudes de activación de objetos en [RPC C IMP LEVEL \_ \_ \_ \_ IDENTIFY,](impersonation-levels.md) se minimizan las posibilidades de que aparezcan tokens con privilegios con SE nivel [**\_ IMPERSONATE \_ NAME**](/windows/desktop/SecAuthZ/privilege-constants) en el proceso.
 
 La **marca APPIDREGFLAGS \_ ISSUE ACTIVATION RPC AT \_ \_ \_ \_ IDENTIFY** se admite en Windows 7 y versiones posteriores de Windows.
 

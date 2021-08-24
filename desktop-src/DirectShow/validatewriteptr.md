@@ -45,7 +45,7 @@ void ValidateWritePtr(
 
 <dl> <dt>
 
-*p* 
+*P* 
 </dt> <dd>
 
 Puntero a un bloque de memoria.
@@ -65,7 +65,7 @@ Esta macro no devuelve un valor.
 
 ## <a name="remarks"></a>Comentarios
 
-Esta macro se omite a menos que se defina DEBUG, DEBUG o VFWROBUST cuando se DirectShow archivo de encabezado de \_ clase base. Esta macro puede tener un costo de rendimiento significativo.
+Esta macro se omite a menos que se defina DEBUG, DEBUG o VFWROBUST cuando se DirectShow archivo de encabezado \_ de clase base. Esta macro puede tener un costo de rendimiento significativo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -77,7 +77,7 @@ Esta macro se omite a menos que se defina DEBUG, DEBUG o VFWROBUST cuando se Dir
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_RBUTTONUP (Winuser. h)
-description: Se envía cuando el usuario suelta el botón secundario del mouse mientras el cursor está en el área de cliente de una ventana.
+title: WM_RBUTTONUP mensaje (Winuser.h)
+description: Se publica cuando el usuario suelta el botón derecho del mouse mientras el cursor está en el área cliente de una ventana.
 ms.assetid: 12d148ba-9324-4db3-b537-b2cd4d0b8f32
 keywords:
-- Entrada de mouse y teclado de mensaje de WM_RBUTTONUP
+- WM_RBUTTONUP entrada de teclado y mouse
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 85a1426b92e8f3aa05c25b551b42ce271b35c673
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 74b5b101f01da1c5ac778a321dc2606aa498b986490d016a870162719b0b6ba0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105714622"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119557135"
 ---
-# <a name="wm_rbuttonup-message"></a>Mensaje de RBUTTONUP de WM \_
+# <a name="wm_rbuttonup-message"></a>Mensaje \_ RBUTTONUP de WM
 
-Se envía cuando el usuario suelta el botón secundario del mouse mientras el cursor está en el área de cliente de una ventana. Si no se captura el mouse, el mensaje se envía a la ventana debajo del cursor. De lo contrario, el mensaje se envía a la ventana que ha capturado el mouse.
+Se publica cuando el usuario suelta el botón derecho del mouse mientras el cursor está en el área cliente de una ventana. Si no se captura el mouse, el mensaje se publica en la ventana debajo del cursor. De lo contrario, el mensaje se publica en la ventana que ha capturado el mouse.
 
-Una ventana recibe este mensaje a través de su función [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una ventana recibe este mensaje a través de su [**función WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -41,18 +41,18 @@ Una ventana recibe este mensaje a través de su función [**WindowProc**](/previ
 *wParam* 
 </dt> <dd>
 
-Indica si varias claves virtuales están inactivas. Este parámetro puede ser uno o varios de los valores siguientes.
+Indica si varias claves virtuales están sin servicio. Este parámetro puede ser uno o varios de los valores siguientes.
 
 
 
-| Value                                                                                                                                                                                                               | Significado                                     |
+| Valor                                                                                                                                                                                                               | Significado                                     |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|
-| <span id="MK_CONTROL"></span><span id="mk_control"></span><dl> <dt>**MK \_**</dt> <dt>0X0008</dt> de control </dl>    | La tecla CTRL está presionada.<br/>            |
-| <span id="MK_LBUTTON"></span><span id="mk_lbutton"></span><dl> <dt>**MK \_ LBUTTON**</dt> <dt>0x0001</dt> </dl>    | El botón primario del mouse está inactivo.<br/>   |
-| <span id="MK_MBUTTON"></span><span id="mk_mbutton"></span><dl> <dt>**MK \_ MBUTTON**</dt> <dt>0x0010</dt> </dl>    | El botón central del mouse está presionado.<br/> |
-| <span id="MK_RBUTTON"></span><span id="mk_rbutton"></span><dl> <dt>**MK \_ RBUTTON**</dt> <dt>0x0002</dt> </dl>    | La tecla Mayús está presionada.<br/>           |
-| <span id="MK_XBUTTON1"></span><span id="mk_xbutton1"></span><dl> <dt>**MK \_ XBUTTON1**</dt> <dt>0x0020</dt> </dl> | El primer botón X está inactivo.<br/>      |
-| <span id="MK_XBUTTON2"></span><span id="mk_xbutton2"></span><dl> <dt>**MK \_ XBUTTON2**</dt> <dt>0x0040</dt> </dl> | El segundo botón X está inactivo.<br/>     |
+| <span id="MK_CONTROL"></span><span id="mk_control"></span><dl> <dt>**MK \_ Control**</dt> <dt>0x0008</dt> </dl>    | La tecla CTRL está presionada.<br/>            |
+| <span id="MK_LBUTTON"></span><span id="mk_lbutton"></span><dl> <dt>**MK \_ LBUTTON**</dt> <dt>0x0001</dt> </dl>    | El botón izquierdo del mouse está apagado.<br/>   |
+| <span id="MK_MBUTTON"></span><span id="mk_mbutton"></span><dl> <dt>**MK \_ MBUTTON**</dt> <dt>0x0010</dt> </dl>    | El botón central del mouse está apagado.<br/> |
+| <span id="MK_RBUTTON"></span><span id="mk_rbutton"></span><dl> <dt>**MK \_ RBUTTON**</dt> <dt>0x0002</dt> </dl>    | La tecla MAYÚS está abajo.<br/>           |
+| <span id="MK_XBUTTON1"></span><span id="mk_xbutton1"></span><dl> <dt>**MK \_ XBUTTON1**</dt> <dt>0x0020</dt> </dl> | El primer botón X está apagado.<br/>      |
+| <span id="MK_XBUTTON2"></span><span id="mk_xbutton2"></span><dl> <dt>**MK \_ XBUTTON2**</dt> <dt>0x0040</dt> </dl> | El segundo botón X está apagado.<br/>     |
 
 
 
@@ -63,9 +63,9 @@ Indica si varias claves virtuales están inactivas. Este parámetro puede ser un
 *lParam* 
 </dt> <dd>
 
-La palabra de orden inferior especifica la coordenada x del cursor. La coordenada es relativa a la esquina superior izquierda del área cliente.
+La palabra de orden bajo especifica la coordenada X del cursor. La coordenada es relativa a la esquina superior izquierda del área de cliente.
 
-La palabra de orden superior especifica la coordenada y del cursor. La coordenada es relativa a la esquina superior izquierda del área cliente.
+La palabra de orden superior especifica la coordenada y del cursor. La coordenada es relativa a la esquina superior izquierda del área de cliente.
 
 </dd> </dl>
 
@@ -73,7 +73,7 @@ La palabra de orden superior especifica la coordenada y del cursor. La coordenad
 
 Si una aplicación procesa este mensaje, debe devolver cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Use el código siguiente para obtener la posición horizontal y vertical:
 
@@ -85,10 +85,10 @@ yPos = GET_Y_LPARAM(lParam);
 
 
 
-Como se indicó anteriormente, la coordenada x está en el **corto** orden inferior del valor devuelto. la coordenada y está en el valor **Short** de orden superior (ambos representan valores *firmados* porque pueden tomar valores negativos en sistemas con varios monitores). Si el valor devuelto se asigna a una variable, puede usar la macro [**MAKEPOINTS**](/windows/desktop/api/wingdi/nf-wingdi-makepoints) para obtener una estructura [**Points**](/previous-versions//dd162808(v=vs.85)) del valor devuelto. También puede usar la macro [**Get \_ x \_ lParam**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam) u [**Get \_ Y \_ lParam**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam) para extraer la coordenada x o y.
+Como se indicó anteriormente, la coordenada x está en el orden bajo **corto** del valor devuelto; la coordenada y está en orden  alto **corto** (ambos representan valores firmados porque pueden tomar valores negativos en sistemas con varios monitores). Si el valor devuelto se asigna a una variable, puede usar la macro [**MAKEPOINTS**](/windows/desktop/api/wingdi/nf-wingdi-makepoints) para obtener una estructura [**POINTS**](/previous-versions//dd162808(v=vs.85)) a partir del valor devuelto. También puede usar la macro [**GET \_ X \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam) o [**GET Y \_ \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam) para extraer la coordenada x o y.
 
 > [!IMPORTANT]
-> No use las macros [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) o [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) para extraer las coordenadas x e y de la posición del cursor porque estas macros devuelven resultados incorrectos en sistemas con varios monitores. Los sistemas con varios monitores pueden tener coordenadas x e y negativas, y **LOWORD** y **HIWORD** tratan las coordenadas como cantidades sin signo.
+> No use las macros [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) o [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) para extraer las coordenadas x e y- de la posición del cursor porque estas macros devuelven resultados incorrectos en sistemas con varios monitores. Los sistemas con varios monitores pueden tener coordenadas x e y negativas, y **LOWORD** e **HIWORD** tratan las coordenadas como cantidades sin signo.
 
  
 
@@ -96,11 +96,11 @@ Como se indicó anteriormente, la coordenada x está en el **corto** orden infer
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir windowsx. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windowsx.h)</dt> </dl> |
 
 
 
@@ -111,10 +111,10 @@ Como se indicó anteriormente, la coordenada x está en el **corto** orden infer
 **Referencia**
 </dt> <dt>
 
-[**OBTENER \_ X \_ lParam**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam)
+[**GET \_ X \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam)
 </dt> <dt>
 
-[**OBTENER \_ \_ lParam**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam)
+[**GET \_ Y \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam)
 </dt> <dt>
 
 [**GetCapture**](/windows/win32/api/winuser/nf-winuser-getcapture)
@@ -123,13 +123,13 @@ Como se indicó anteriormente, la coordenada x está en el **corto** orden infer
 [**SetCapture**](/windows/win32/api/winuser/nf-winuser-setcapture)
 </dt> <dt>
 
-[**RBUTTONDBLCLK de WM \_**](wm-rbuttondblclk.md)
+[**WM \_ RBUTTONDBLCLK**](wm-rbuttondblclk.md)
 </dt> <dt>
 
-[**RBUTTONDOWN de WM \_**](wm-rbuttondown.md)
+[**WM \_ RBUTTONDOWN**](wm-rbuttondown.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Entrada del mouse](mouse-input.md)
@@ -141,7 +141,7 @@ Como se indicó anteriormente, la coordenada x está en el **corto** orden infer
 [**MAKEPOINTS**](/windows/desktop/api/wingdi/nf-wingdi-makepoints)
 </dt> <dt>
 
-[**CIMA**](/previous-versions//dd162808(v=vs.85))
+[**Puntos**](/previous-versions//dd162808(v=vs.85))
 </dt> </dl>
 
  

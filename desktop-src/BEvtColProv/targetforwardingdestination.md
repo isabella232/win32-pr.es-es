@@ -26,12 +26,12 @@ api_type:
 - DllExport
 api_location:
 - BEvtCol.exe
-ms.openlocfilehash: 735b6179fe9d72b5faf0cad976410aeace427f63
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 58492b8b334085a6dd03c397558c4f10bc1fa4aff441f5b7bbfc7ba7cf37b0bc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104495850"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119589005"
 ---
 # <a name="targetforwardingdestination-class"></a>Clase TargetForwardingDestination
 
@@ -62,13 +62,13 @@ class TargetForwardingDestination
 
 ## <a name="members"></a>Miembros
 
-La clase **TargetForwardingDestination** tiene estos tipos de miembros:
+La **clase TargetForwardingDestination** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **TargetForwardingDestination** tiene estas propiedades.
+La **clase TargetForwardingDestination** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -81,10 +81,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **fijos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [ **Corregido**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-La información de host: Puerto del punto de conexión en el lado del recopilador.
+Información de host:puerto del punto de conexión en el lado del recopilador.
 
 </dd> <dt>
 
@@ -97,7 +97,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **fijos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [ **Corregido**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Nombre del equipo de destino, determinado por el recopilador según su configuración.
@@ -107,13 +107,13 @@ Nombre del equipo de destino, determinado por el recopilador según su configura
 **ConnectedSince**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **DATETIME**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **fijos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [ **Corregido**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Marca de tiempo de cuando se estableció la conexión.
@@ -129,10 +129,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**fijo**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Fixed**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Destino de los datos. El significado depende del tipo de reenviador. Puede ser un nombre de archivo u otra identificación.
+Destino de los datos. El significado depende del tipo de reenviador. Puede ser un nombre de archivo o alguna otra identificación.
 
 </dd> <dt>
 
@@ -145,26 +145,26 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **fijos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [ **Corregido**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Patrón utilizado para generar el destino de los datos. El significado depende del tipo y la configuración del reenviador. Para un destino fijo, sería el mismo que el propio destino. Para el destino con rotación de los archivos, contendría los caracteres de patrón que se reemplazarán por el índice real en el destino.
+Patrón utilizado para generar el destino de los datos. El significado depende del tipo y la configuración del reenviador. Para un destino fijo, sería el mismo que el propio destino. Para el destino con rotación de los archivos contendrá los caracteres de patrón que se reemplazarán por el índice real en el destino.
 
 </dd> <dt>
 
 **DisconnectedSince**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **DATETIME**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **fijos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [ **Corregido**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Marca de tiempo de cuando se quitó la conexión.
+Marca de tiempo de cuando se ha eliminado la conexión.
 
 </dd> <dt>
 
@@ -177,10 +177,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **fijos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [ **Corregido**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Mensaje de error si se ha producido un error. De lo contrario, estará vacío.
+Mensaje de error si se ha encontrado un error. De lo contrario, estará vacío.
 
 </dd> <dt>
 
@@ -193,10 +193,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**fijo**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Fixed**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Tipo del reenviador (por ejemplo, ' ETL ').
+Tipo del reenviador (por ejemplo, "etl").
 
 </dd> <dt>
 
@@ -209,10 +209,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **fijos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [ **Corregido**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-La información del punto de conexión del equipo de destino, en formato legible. Esta propiedad tiene el formato de cadena *host*:*Puerto* . Por ejemplo, "127.0.0.1:50000".
+Información del punto de conexión del equipo de destino, en formato legible para el usuario. Esta propiedad tiene formato de *host:* cadena *de* puerto. Por ejemplo, "127.0.0.1:50000".
 
 </dd> <dt>
 
@@ -225,7 +225,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **fijos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [ **Corregido**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 GUID de SMBIOS del equipo de destino (si se conoce).
@@ -241,7 +241,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **fijos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [ **Corregido**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Dirección MAC del equipo de destino (si se conoce).
@@ -251,16 +251,16 @@ Dirección MAC del equipo de destino (si se conoce).
 **WmiDateTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **DATETIME**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **fijos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [ **Corregido**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Marca de tiempo de Cuándo se registró este cambio de estado.
+Marca de tiempo de cuando se registró este cambio de estado.
 
 </dd> </dl>
 
@@ -272,8 +272,8 @@ Marca de tiempo de Cuándo se registró este cambio de estado.
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                            |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                       |
-| Espacio de nombres<br/>                | Raíz de \\ Microsoft \\ Windows \\ BootEventCollector<br/>                                              |
-| MOF<br/>                      | <dl> <dt>BootEventCollectorWMI. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Raíz \\ de Microsoft Windows \\ \\ BootEventCollector<br/>                                              |
+| MOF<br/>                      | <dl> <dt>BootEventCollectorWMI.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>BEvtCol.exe</dt> </dl>               |
 
 

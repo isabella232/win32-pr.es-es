@@ -1,26 +1,26 @@
 ---
-title: Funciones de glTexCoord
+title: funciones glTexCoord
 description: Estas funciones establecen las coordenadas de textura actuales.
 ms.assetid: 71eb39f1-e1ad-4b97-83e0-d2670f5a7545
 keywords:
-- Funciones OpenGL, glTexCoord
-- Referencia de OpenGL, funciones de glTexCoord
-- referencia de las funciones OpenGL, glTexCoord
-- funciones de glTexCoord
+- Funciones OpenGL,glTexCoord
+- Referencia de OpenGL, funciones glTexCoord
+- referencia de las funciones OpenGL,glTexCoord
+- Funciones glTexCoord
 - OpenGL, funciones de textura
 - Referencia de OpenGL, funciones de textura
-- referencia para OpenGL, funciones de textura
+- referencia de OpenGL, funciones de textura
 - funciones de textura
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e3e9db3aa5a8aa62ba1e581d8a005c1ea6fa72d3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: efcfbd28098ec81e6518273f222f6b04c13cb8a0c0ecfcec97f039de8074e162
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418458"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119491475"
 ---
-# <a name="gltexcoord-functions"></a>Funciones de glTexCoord
+# <a name="gltexcoord-functions"></a>funciones glTexCoord
 
 Estas funciones establecen las coordenadas de textura actuales:
 
@@ -56,9 +56,9 @@ Estas funciones establecen las coordenadas de textura actuales:
 -   [**glTexCoord4iv**](gltexcoord4iv.md)
 -   [**glTexCoord4sv**](gltexcoord4sv.md)
 
- 
+ 
 
- 
+ 
 
 
 

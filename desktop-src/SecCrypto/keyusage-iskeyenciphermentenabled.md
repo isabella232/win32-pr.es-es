@@ -1,7 +1,7 @@
 ---
 description: Recupera un valor booleano que indica si se establece el bit keyEncipherment.
 ms.assetid: 2bdce181-3de7-4dc1-8059-1e1ca96c0d2d
-title: KeyUsage.IsKeyEnciphermentEnabled, propiedad
+title: Propiedad KeyUsage.IsKeyEnciphermentEnabled
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119622295"
 ---
-# <a name="keyusageiskeyenciphermentenabled-property"></a>KeyUsage.IsKeyEnciphermentEnabled, propiedad
+# <a name="keyusageiskeyenciphermentenabled-property"></a>Propiedad KeyUsage.IsKeyEnciphermentEnabled
 
 \[La **propiedad IsKeyEnciphermentEnabled** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. En su lugar, use la clase [**X509EnhancedKeyUsageExtension**](/dotnet/api/system.security.cryptography.x509certificates.x509enhancedkeyusageextension?view=netcore-3.1) en el espacio de nombres [**System.Security.Cryptography.X509Certificates.**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1)\]
 
@@ -37,7 +37,7 @@ KeyUsage.IsKeyEnciphermentEnabled As Boolean
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Si **es true**, se establece el bit keyEncipherment.
+Si **es true,** se establece el bit keyEncipherment.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,7 +50,7 @@ Si **es true**, se establece el bit keyEncipherment.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

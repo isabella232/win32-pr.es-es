@@ -1,21 +1,21 @@
 ---
-description: Cuando el sistema operativo, o incluso una aplicación, está configurado para usar un idioma y una configuración regional determinados, se ven afectados muchos valores de configuración.
+description: Cuando el sistema operativo, o incluso una aplicación, se establece para usar un idioma y una configuración regional determinados, muchas configuraciones se ven afectadas.
 ms.assetid: cec164d1-125f-483c-9d74-0e24b8215157
-title: Configuración regional del sistema y del documento
+title: Documentación y configuración regional del sistema Configuración
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9408093a8583a4b17566b5fcd118b30439c0ebda
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ed43ae52d7626b759563069b05fe4ae03649feb63fd1af8dab1b80cfd4d558a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715004"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119594785"
 ---
-# <a name="document-and-system-locale-settings"></a>Configuración regional del sistema y del documento
+# <a name="document-and-system-locale-settings"></a>Documentación y configuración regional del sistema Configuración
 
-Cuando el sistema operativo, o incluso una aplicación, está configurado para usar un idioma y una configuración regional determinados, se ven afectados muchos valores de configuración. Estas opciones incluyen el formato numérico, el formato de fecha, el formato de moneda, la asignación en mayúsculas y minúsculas, el orden de ordenación del diccionario, la tokenización y otros. Aunque esta configuración ayuda a la búsqueda de Windows a proporcionar una excelente compatibilidad localizada, pueden producirse resultados inesperados cuando se buscan documentos de una configuración regional mediante un sistema que está establecido en otra configuración regional.
+Cuando el sistema operativo, o incluso una aplicación, se establece para usar un idioma y una configuración regional determinados, muchas configuraciones se ven afectadas. Estas opciones incluyen formato numérico, formato de fecha, formato de moneda, asignación en mayúsculas y minúsculas, ordenación de diccionarios, tokenización, etc. Aunque esta configuración ayuda a Windows Search proporciona una compatibilidad localizada excelente, pueden producirse resultados inesperados cuando se buscan documentos de una configuración regional mediante un sistema establecido en otra configuración regional.
 
-Cuando el objeto [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) procesa el contenido y las propiedades de texto de un documento, informa del idioma de dicho documento al indizador de contenido. Con esta información, Windows Search puede aplicar el separador de palabras adecuado.
+Cuando el [**objeto IFilter**](/windows/win32/api/filter/nn-filter-ifilter) procesa las propiedades de texto y el contenido de un documento, notifica el idioma de ese documento al indexador de contenido. Con esta información, Windows Search puede aplicar el separador de palabras adecuado.
 
  
 

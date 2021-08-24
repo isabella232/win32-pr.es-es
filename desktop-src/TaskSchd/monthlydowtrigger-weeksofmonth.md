@@ -1,11 +1,11 @@
 ---
-title: Propiedad MonthlyDOWTrigger. WeeksOfMonth
-description: En el caso de scripting, obtiene o establece las semanas del mes en las que se ejecuta la tarea.
+title: MonthlyDOWTrigger.WeeksOfMonth, propiedad
+description: Para el scripting, obtiene o establece las semanas del mes durante las que se ejecuta la tarea.
 ms.assetid: 62c3b654-622e-4a71-b77e-1b3fd5fb46b8
 keywords:
-- Programador de tareas de la propiedad WeeksOfMonth
-- Programador de tareas de la propiedad WeeksOfMonth, objeto MonthlyDOWTrigger
-- Programador de tareas de objeto MonthlyDOWTrigger, propiedad WeeksOfMonth
+- Propiedad WeeksOfMonth Programador de tareas
+- Propiedad WeeksOfMonth Programador de tareas , objeto MonthlyDOWTrigger
+- Objeto MonthlyDOWTrigger Programador de tareas propiedad , WeeksOfMonth
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d7efea628e6eefdef07bdc50b9719a7c404f78bc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 323ee8b93411d7ef176fa9dc2ffb3a4acfd1f902c0dc481fe48e07b82821227b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489700"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119517445"
 ---
-# <a name="monthlydowtriggerweeksofmonth-property"></a>Propiedad MonthlyDOWTrigger. WeeksOfMonth
+# <a name="monthlydowtriggerweeksofmonth-property"></a>MonthlyDOWTrigger.WeeksOfMonth, propiedad
 
-En el caso de scripting, obtiene o establece las semanas del mes en las que se ejecuta la tarea.
+Para el scripting, obtiene o establece las semanas del mes durante las que se ejecuta la tarea.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -38,9 +38,9 @@ MonthlyDOWTrigger.WeeksOfMonth As short
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Máscara bit a bit que indica los días de la semana en los que se ejecuta la tarea.
+Máscara bit a bit que indica los días de la semana durante los que se ejecuta la tarea.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 En la tabla siguiente se muestra la asignación de la máscara bit a bit utilizada por esta propiedad.
 
@@ -57,7 +57,7 @@ En la tabla siguiente se muestra la asignación de la máscara bit a bit utiliza
 
  
 
-Al leer o escribir XML para una tarea, los días de la semana de un calendario mensual de día de la semana se especifican mediante el elemento [**weeks**](taskschedulerschema-weeks-monthlydayofweekscheduletype-element.md) .
+Al leer o escribir XML para una tarea, el elemento [**Weeks**](taskschedulerschema-weeks-monthlydayofweekscheduletype-element.md) especifica los días de la semana de un calendario mensual del día de la semana.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,9 +65,9 @@ Al leer o escribir XML para una tarea, los días de la semana de un calendario m
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

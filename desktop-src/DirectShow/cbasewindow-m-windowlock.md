@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119567385"
 ---
-# <a name="cbasewindowm_windowlock-member"></a>Miembro CBaseWindow::m \_ WindowLock
+# <a name="cbasewindowm_windowlock-member"></a>CBaseWindow::m \_ Miembro WindowLock
 
 Sección crítica, para serializar el acceso al objeto .
 
@@ -47,7 +47,7 @@ CCritSec m_WindowLock;
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

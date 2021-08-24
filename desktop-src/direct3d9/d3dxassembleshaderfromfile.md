@@ -105,7 +105,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La configuración del compilador también determina la versión de la función. Si se define Unicode, la llamada a la función se resuelve en D3DXAssembleShaderFromFileW. De lo contrario, la llamada de función se resuelve en D3DXAssembleShaderFromFileA porque se usan cadenas ANSI.
 

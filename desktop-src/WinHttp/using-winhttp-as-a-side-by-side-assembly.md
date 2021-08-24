@@ -1,35 +1,35 @@
 ---
-description: En Windows Server 2003, WinHTTP se implementa como un ensamblado en paralelo y debe estar vinculado a como tal. Tenga en cuenta que esto no se aplica a Windows Vista y versiones posteriores.
+description: En Windows Server 2003, WinHTTP se implementa como un ensamblado en paralelo y debe estar vinculado como tal. Tenga en cuenta que esto no se aplica a Windows Vista y versiones posteriores.
 ms.assetid: 524d926d-4d8a-4576-96fd-c533517ba28e
-title: Usar WinHTTP como un ensamblado en paralelo
+title: Uso de WinHTTP como ensamblado en paralelo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a74a0e5cf842fdd1e20c6d6d271de482e361c4af
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8c8c6312fb57f210e0324c1ae89bb785fd5b51bcb2b1ea4ba1a4959a3d0fd540
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103809782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119614095"
 ---
-# <a name="using-winhttp-as-a-side-by-side-assembly"></a>Usar WinHTTP como un ensamblado en paralelo
+# <a name="using-winhttp-as-a-side-by-side-assembly"></a>Uso de WinHTTP como ensamblado en paralelo
 
-En Windows Server 2003, WinHTTP se implementa como un ensamblado en paralelo y debe estar vinculado a como tal. Tenga en cuenta que esto no se aplica a Windows Vista y versiones posteriores.
+En Windows Server 2003, WinHTTP se implementa como un ensamblado en paralelo y debe estar vinculado como tal. Tenga en cuenta que esto no se aplica a Windows Vista y versiones posteriores.
 
 ## <a name="side-by-side-assemblies"></a>Ensamblados en paralelo
 
-A partir de Microsoft Windows XP, se proporciona un mecanismo de ensamblados en paralelo para controlar la vinculación en tiempo de ejecución para evitar conflictos de versiones de la biblioteca de vínculos dinámicos (DLL). Para obtener información sobre los ensamblados en paralelo, vea [acerca de las aplicaciones aisladas y los ensamblados en paralelo](/windows/desktop/SbsCs/about-isolated-applications-and-side-by-side-assemblies).
+A partir de Microsoft Windows XP, se proporcionó un mecanismo de ensamblados en paralelo para controlar la vinculación en tiempo de ejecución para evitar conflictos de control de versiones de dynamic-link-library (DLL). Para obtener información sobre los ensamblados en paralelo, vea Acerca de las aplicaciones aisladas y los ensamblados [en paralelo.](/windows/desktop/SbsCs/about-isolated-applications-and-side-by-side-assemblies)
 
-Para usar este mecanismo para vincular a la versión 5,1 de WinHTTP en Windows Server 2003, una aplicación debe incorporar un manifiesto que especifique WinHTTP como ensamblado dependiente. Vea [usar ensamblados en paralelo](/windows/desktop/SbsCs/using-side-by-side-assemblies) para obtener más información sobre cómo hacerlo.
+Para usar este mecanismo para vincular a WinHTTP versión 5.1 en Windows Server 2003, una aplicación debe incorporar un manifiesto que especifique WinHTTP como ensamblado dependiente. Vea [Using Side-by-side Assemblies (Uso](/windows/desktop/SbsCs/using-side-by-side-assemblies) de ensamblados en paralelo) para obtener más información sobre cómo hacerlo.
 
 ## <a name="a-sample-winhttp-application-manifest"></a>Un manifiesto de aplicación WinHTTP de ejemplo
 
-En el manifiesto de ejemplo siguiente se muestra un manifiesto de aplicación que se puede usar para vincular a WinHTTP.
+El siguiente manifiesto de ejemplo muestra un manifiesto de aplicación que se puede usar para vincular a WinHTTP.
 
-Todos los atributos excepto "tipo" de " <assembly> <assemblyIdentity> " se deben modificar según sea necesario para la aplicación en cuestión. Lo mismo sucede con el contenido del elemento " &lt; Description &gt; ".
+Todos los atributos excepto "type" de " <assembly> <assemblyIdentity> " deben modificarse según corresponda para la aplicación en particular. Lo mismo sucede con el contenido del elemento " &lt; description &gt; ".
 
-Además, asegúrese de que el atributo "processorArchitecture" de " <dependentAssembly> <assemblyIdentity> " coincide con el atributo "processorArchitecture" de " <assembly> <assemblyIdentity> ". A continuación, por ejemplo, ambos se establecen en "x86".
+Además, asegúrese de que el atributo "processorArchitecture" de " " coincide con el atributo <dependentAssembly> <assemblyIdentity> "processorArchitecture" de " <assembly> <assemblyIdentity> ". A continuación, por ejemplo, ambos se establecen en "x86".
 
-Todos los valores que no son específicos de la aplicación deben tener los formularios que se muestran a continuación.
+Todos los valores no específicos de la aplicación deben tener los formularios que se muestran a continuación.
 
 ``` syntax
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>

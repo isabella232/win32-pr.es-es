@@ -54,13 +54,13 @@ Especifica el nombre del archivo al que se transfieren los datos.
 
 Tipo: **VARIANT \_ BOOL**
 
-Valor booleano que especifica si la transferencia debe ejecutarse como una llamada asincrónica.
+Valor booleano que especifica si la transferencia se debe ejecutar como una llamada asincrónica.
 
 <dt>
 
 
 
- (VARIANT \_ BOOL)
+ (VARIANT) \_ BOOL)
 
 
 </dt> <dd>
@@ -81,7 +81,7 @@ Use "portapapeles" como parámetro *Filename* para transferir un elemento al Por
 
 Establezca el valor *de AsyncTransfer* en **false** para las transferencias dentro de cualquier aplicación o script que se ejecute en un entorno que finalice un proceso al final de un script, como Windows Script Host (WSH). De lo contrario, el script puede finalizar y finalizar el proceso antes de que se complete la transferencia.
 
-El **método Transfer** no tiene ningún valor devuelto. Tras la finalización de una transferencia, este método envía un [**evento OnTransferComplete**](-wia--iwiaevents-ontransfercomplete.md) al script o a la aplicación.
+El **método Transfer** no tiene ningún valor devuelto. Tras la finalización de una transferencia, este método envía un [**evento OnTransferComplete**](-wia--iwiaevents-ontransfercomplete.md) al script o la aplicación.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -119,7 +119,7 @@ Next
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de \[ escritorio XP\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
 | Archivo DLL<br/>                      | <dl> <dt>Wiascr.dll (versión 4.90 o posterior)</dt> </dl> |
 

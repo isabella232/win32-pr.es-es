@@ -20,7 +20,7 @@ ms.locfileid: "119589245"
 
 En la sección siguiente se describen los pasos básicos necesarios para agregar TraceLogging al código administrado.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 -   Windows 10
 
@@ -85,7 +85,7 @@ Una vez creado el proveedor, el código siguiente del ejemplo anterior registra 
 
 ### <a name="log-structured-event-payload-data"></a>Registrar datos de carga de eventos estructurados
 
-Puede definir datos de carga estructurados que se registran con el evento . Proporcione datos de carga estructurados como un tipo anónimo o como una instancia de una clase que se ha anotado con el atributo , como se muestra `[EventData]` en el ejemplo siguiente.
+Puede definir datos de carga estructurados que se registran con el evento . Proporcione datos de carga estructurados como un tipo anónimo o como una instancia de una clase que se ha anotado con el atributo como se muestra `[EventData]` en el ejemplo siguiente.
 
 
 ```CSharp
@@ -115,7 +115,7 @@ El atributo reemplaza la necesidad de crear manualmente un archivo de manifiesto
 
 ## <a name="summary-and-next-steps"></a>Resumen y pasos siguientes
 
-Vea [Registrar y mostrar eventos de](tracelogging-record-and-display-tracelogging-events.md) seguimiento para obtener información sobre cómo capturar y ver datos de TraceLogging mediante las versiones internas más recientes de Windows Performance Tools (WPT).
+Vea [Registrar y mostrar eventos de](tracelogging-record-and-display-tracelogging-events.md) seguimiento para obtener información sobre cómo capturar y ver los datos de TraceLogging mediante las versiones internas más recientes de Windows Performance Tools (WPT).
 
 Consulte [Ejemplos de registro de seguimiento de .NET](tracelogging-net-examples.md) para obtener más ejemplos administrados de TraceLogging.
 

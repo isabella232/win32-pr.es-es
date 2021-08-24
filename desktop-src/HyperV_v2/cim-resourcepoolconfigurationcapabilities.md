@@ -1,7 +1,7 @@
 ---
-description: Administra las capacidades de la instancia de ResourcePoolConfigurationService de CIM \_ para un \_ objeto RESOURCEPOOL de CIM.
+description: Administra las funciones de la instancia \_ de ResourcePoolConfigurationService de CIM para un objeto \_ ResourcePool de CIM.
 ms.assetid: bd2eb4da-8ecd-4adb-b657-837c8da4dcdc
-title: CIM_ResourcePoolConfigurationCapabilities (clase)
+title: CIM_ResourcePoolConfigurationCapabilities clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 967b307049fa9c5f81b8deb6da96bcaa3be9acc8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 61d4154f6400c94827b5b8561e70e547235b59502a51a03e9bd9cfdb83515fa1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686910"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119561845"
 ---
-# <a name="cim_resourcepoolconfigurationcapabilities-class"></a>\_Clase ResourcePoolConfigurationCapabilities de CIM
+# <a name="cim_resourcepoolconfigurationcapabilities-class"></a>Clase \_ ResourcePoolConfigurationCapabilities de CIM
 
-Administra las capacidades de la instancia de [**\_ ResourcePoolConfigurationService de CIM**](cim-resourcepoolconfigurationservice.md) para un objeto [**\_ ResourcePool de CIM**](cim-resourcepool.md) .
+Administra las funciones de la instancia [**\_ de ResourcePoolConfigurationService de CIM**](cim-resourcepoolconfigurationservice.md) para un objeto [**\_ ResourcePool de CIM.**](cim-resourcepool.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,26 +39,26 @@ class CIM_ResourcePoolConfigurationCapabilities : CIM_Capabilities
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ ResourcePoolConfigurationCapabilities** tiene estos tipos de miembros:
+La **clase \_ ResourcePoolConfigurationCapabilities** de CIM tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ ResourcePoolConfigurationCapabilities** tiene estas propiedades.
+La **clase \_ ResourcePoolConfigurationCapabilities** de CIM tiene estas propiedades.
 
 <dl> <dt>
 
 **AsynchronousMethodsSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32** array
+Tipo de datos: **matriz uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Los métodos del servicio de configuración que se admiten para las operaciones asincrónicas.
+Métodos del servicio de configuración que se admiten para las operaciones asincrónicas.
 
 <dt>
 
@@ -113,7 +113,7 @@ Los métodos del servicio de configuración que se admiten para las operaciones 
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Proveedor reservado** (32768... 65535)
+**Vendor Reserved** (32768..65535)
 
 
 </dt> <dd></dd> </dl>
@@ -123,13 +123,13 @@ Los métodos del servicio de configuración que se admiten para las operaciones 
 **SynchronousMethodsSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32** array
+Tipo de datos: **matriz uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Los métodos del servicio de configuración que se admiten para las operaciones sincrónicas.
+Métodos del servicio de configuración que se admiten para operaciones sincrónicas.
 
 <dt>
 
@@ -184,7 +184,7 @@ Los métodos del servicio de configuración que se admiten para las operaciones 
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Proveedor reservado** (32768... 65535)
+**Vendor Reserved** (32768..65535)
 
 
 </dt> <dd></dd> </dl>
@@ -195,12 +195,12 @@ Los métodos del servicio de configuración que se admiten para las operaciones 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
-| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -209,7 +209,7 @@ Los métodos del servicio de configuración que se admiten para las operaciones 
 
 <dl> <dt>
 
-[**Capacidades de CIM \_**](cim-capabilities.md)
+[**Funcionalidades de CIM \_**](cim-capabilities.md)
 </dt> </dl>
 
  

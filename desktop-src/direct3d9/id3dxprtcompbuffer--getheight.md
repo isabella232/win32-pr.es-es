@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5d418f039fdd48d02cd92c6605e159c381e5c43c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: cdfda8d21dbaade2ba1a6fdc3691aa8a04b45733164e104723da4a9d0c314cf4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119492705"
 ---
 # <a name="id3dxprtcompbuffergetheight-method"></a>Método ID3DXPRTCompBuffer::GetHeight
 
@@ -55,7 +55,7 @@ Devuelve el alto de la textura, en píxeles.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

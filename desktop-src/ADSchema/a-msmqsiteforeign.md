@@ -36,7 +36,7 @@ Valor booleano que indica si es un sitio de MSMQ externo.
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.961               |
 | System-Id-Guid    | fd129d8a-d57e-11d1-90a2-00c04fd91ab1 |
-| Syntax            | [**Booleana**](s-boolean.md)         |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 
@@ -53,7 +53,7 @@ Valor booleano que indica si es un sitio de MSMQ externo.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------|
 | Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
@@ -74,7 +74,7 @@ Valor booleano que indica si es un sitio de MSMQ externo.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------|
 | Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
@@ -95,7 +95,7 @@ Valor booleano que indica si es un sitio de MSMQ externo.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------|
 | Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
@@ -137,7 +137,7 @@ Valor booleano que indica si es un sitio de MSMQ externo.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------|
 | Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
@@ -158,7 +158,7 @@ Valor booleano que indica si es un sitio de MSMQ externo.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------|
 | Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |

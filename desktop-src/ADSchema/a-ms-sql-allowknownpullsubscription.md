@@ -32,11 +32,11 @@ True si la publicación permite que los suscriptores registrados se suscriban.
 | CN                | MS-SQL-AllowKnownPullSubscription    |
 | Ldap-Display-Name | mS-SQL-AllowKnownPullSubscription    |
 | Size              | 4 bytes                              |
-| Privilegio actualizar  | El sistema establece este valor.     |
+| Actualizar privilegios  | El sistema establece este valor.     |
 | Frecuencia de actualización  | Cuando se configura la replicación.           |
 | Attribute-Id      | 1.2.840.113556.1.4.1403              |
 | System-Id-Guid    | c3bb7054-d34b-11d2-999a-0000f87a57d4 |
-| Syntax            | [**Booleana**](s-boolean.md)         |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 
@@ -53,7 +53,7 @@ True si la publicación permite que los suscriptores registrados se suscriban.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
@@ -74,7 +74,7 @@ True si la publicación permite que los suscriptores registrados se suscriban.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
@@ -95,7 +95,7 @@ True si la publicación permite que los suscriptores registrados se suscriban.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
@@ -137,7 +137,7 @@ True si la publicación permite que los suscriptores registrados se suscriban.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
@@ -158,7 +158,7 @@ True si la publicación permite que los suscriptores registrados se suscriban.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |

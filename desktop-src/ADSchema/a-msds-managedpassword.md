@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-ManagedPassword
-description: Este atributo construido devuelve un BLOB que contiene la contraseña anterior y actual de texto no cifrado, TimeUntilEpochExpires y TimeUntilNextScheduledUpdate para un grupo MSA.
+title: Atributo ms-DS-ManagedPassword
+description: Este atributo construido devuelve un blob que contiene la contraseña anterior y actual sin texto, TimeUntilEpochExpires y TimeUntilNextScheduledUpdate para una MSA de grupo.
 ms.assetid: bcabb20f-46f3-4c15-b71b-a8dfc43678bc
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-ManagedPassword
-- Esquema de AD de atributo msDS-ManagedPassword
+- Esquema de AD del atributo ms-DS-ManagedPassword
+- Esquema de AD del atributo msDS-ManagedPassword
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a440f1849e01ae4930b72441f75b17ce51a0566b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: dfdd5c8b86c07d86bf93aa1ce2c3c9887454dfbaa2be93a514bcb9c40f1f47e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151663"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119552335"
 ---
-# <a name="ms-ds-managedpassword-attribute"></a>atributo MS-DS-ManagedPassword
+# <a name="ms-ds-managedpassword-attribute"></a>Atributo ms-DS-ManagedPassword
 
-Este atributo construido devuelve un BLOB que contiene la contraseña anterior y actual de texto no cifrado, TimeUntilEpochExpires y TimeUntilNextScheduledUpdate para un grupo MSA.
+Este atributo construido devuelve un blob que contiene la contraseña anterior y actual sin texto, TimeUntilEpochExpires y TimeUntilNextScheduledUpdate para una MSA de grupo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | MS-DS-ManagedPassword                                 |
-| Nombre para mostrar de LDAP | msDS-ManagedPassword                                  |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| CN                | ms-DS-ManagedPassword                                 |
+| Ldap-Display-Name | msDS-ManagedPassword                                  |
+| Size              | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.2196                               |
-| System-ID-GUID    | e362ed86-b728-0842-b27d-2dea7a9df218                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | e362ed86-b728-0842-b27d-2dea7a9df218                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -50,18 +50,18 @@ Este atributo construido devuelve un BLOB que contiene la contraseña anterior y
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                          |
+| Id. de vínculo                | \-                                                                                          |
 | MAPI-Id                | \-                                                                                          |
-| System-Only            | False                                                                                       |
-| Tiene un único valor       | True                                                                                        |
-| Está indexado             | False                                                                                       |
-| En el catálogo global      | False                                                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                |
+| System-Only            | Falso                                                                                       |
+| Es de un solo valor       | Verdadero                                                                                        |
+| Está indexado             | Falso                                                                                       |
+| En el catálogo global      | Falso                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                |
 | Range-Lower            | \-                                                                                          |
 | Range-Upper            | \-                                                                                          |
 | Search-Flags           | 0x00000000                                                                                  |
 | System-Flags           | 0x00000014                                                                                  |
-| Clases usadas en        | [**MS-DS-Group-Managed-Service-Account**](c-msds-groupmanagedserviceaccount.md)<br/> |
+| Clases usadas en        | [**ms-DS-Group-Managed-Service-Account**](c-msds-groupmanagedserviceaccount.md)<br/> |
 
 
 

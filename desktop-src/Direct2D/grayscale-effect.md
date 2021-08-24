@@ -15,7 +15,7 @@ ms.locfileid: "119075343"
 
 Convierte una imagen a gris monocromático.
 
-La escala de grises usa el efecto de matriz de colores para convertir a escala de grises, mediante la siguiente matriz:
+Escala de grises usa el efecto de matriz de colores para convertir a escala de grises, mediante la siguiente matriz:
 
 ![Matriz de conversión](images/grayscale-effect-matrix.png)
 
@@ -40,8 +40,8 @@ Este efecto no tiene propiedades.
 
 | Requisito | Valor |
 |--------------------------|---------------------------------------------------|
-| Cliente mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows store\] |
-| Servidor mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows store\] |
+| Cliente mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows aplicaciones de la Tienda\] |
+| Servidor mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows aplicaciones de la Tienda\] |
 | Header                   | d2d1effects \_ 2.h                                  |
 | Biblioteca                  | d2d1.lib, dxguid.lib                              |
 

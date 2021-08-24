@@ -1,7 +1,7 @@
 ---
-description: Identificador del evento.
+description: Identificador de eventos.
 ms.assetid: e68df736-c17e-4b08-a161-b6d9a7ead22b
-title: 'Miembro CAMEvent:: m_hEvent (Wxutil. h)'
+title: Miembro DE M_HEVENT (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Wxutil.h
-ms.openlocfilehash: 53e8a16146cf29255a62f6f5f90371bd2ad2f8f8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 159a095ae57c96249c70e5821a3926264009ebc2493ad1386742489325428075
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660160"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119540455"
 ---
-# <a name="cameventm_hevent-member"></a>Miembro hEvent CAMEvent:: m \_
+# <a name="cameventm_hevent-member"></a>Miembro DEEVENT::m \_ hEvent
 
-Identificador del evento.
+Identificador de eventos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,7 +39,7 @@ HANDLE m_hEvent;
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wxutil. h (incluir streams. h)</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wxutil.h (incluir Secuencias.h)</dt> </dl> |
 
 
 
@@ -47,7 +47,7 @@ HANDLE m_hEvent;
 
 <dl> <dt>
 
-[**Clase CAMEvent**](camevent.md)
+[**CLASE CAMEvent**](camevent.md)
 </dt> </dl>
 
  

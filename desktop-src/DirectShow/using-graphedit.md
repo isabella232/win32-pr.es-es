@@ -42,7 +42,7 @@ Para agregar un filtro al gráfico, seleccione el  nombre del filtro y haga clic
 
 ## <a name="run-the-graph"></a>Ejecute el Graph
 
-Una vez que haya creado un gráfico de filtro Graph editar, puede ejecutar el gráfico para ver si funciona según lo previsto. El **Graph** menú contiene los comandos de menú **Reproducir,** **Pausar** y **Detener**. Estos comandos invocan a los métodos [**Run**](/windows/desktop/api/Control/nf-control-imediacontrol-run), [**Pause**](/windows/desktop/api/Control/nf-control-imediacontrol-pause)y [**Stop**](/windows/desktop/api/Control/nf-control-imediacontrol-stop)de [**IMediaControl,**](/windows/desktop/api/Control/nn-control-imediacontrol) respectivamente. La barra de herramientas GraphEdit también tiene botones para estos comandos:
+Una vez que haya creado un gráfico de filtro en Graph Editar, puede ejecutar el gráfico para ver si funciona según lo previsto. El **Graph** menú contiene los comandos de menú **Reproducir,** **Pausar** y **Detener**. Estos comandos invocan a los métodos [**Run**](/windows/desktop/api/Control/nf-control-imediacontrol-run), [**Pause**](/windows/desktop/api/Control/nf-control-imediacontrol-pause)y [**Stop**](/windows/desktop/api/Control/nf-control-imediacontrol-stop)de [**IMediaControl,**](/windows/desktop/api/Control/nn-control-imediacontrol) respectivamente. La barra de herramientas GraphEdit también tiene botones para estos comandos:
 
 ![pausar, reproducir y detener botones](images/gedit-toolbar.png)
 
@@ -58,7 +58,7 @@ Si el gráfico es buscable, puede buscarlo arrastrando la barra deslizante que a
 Algunos filtros admiten páginas de propiedades personalizadas, que proporcionan una interfaz de usuario para establecer propiedades en el filtro. Para ver la página de propiedades de un filtro en GraphEdit, haga clic con el botón derecho en el filtro y seleccione **Propiedades** en la ventana emergente. GraphEdit muestra una página de propiedades que contiene las hojas de propiedades definidas por el filtro (si las hay). Además, GraphEdit incluye una hoja de propiedades para cada pin del filtro. GraphEdit define las hojas de propiedades de pin, no el filtro. Si el pin está conectado, la hoja de propiedades de pin muestra el tipo de medio para la conexión. De lo contrario, enumera los tipos de medios preferidos del pin.
 
 > [!Note]  
-> Para usar las páginas de propiedades integradas de GraphEdit, debe registrar proppage.dll. Este archivo DLL está disponible en Windows SDK. El archivo DLL también contiene páginas de propiedades adicionales para algunos DirectShow filtros. Estas páginas de propiedades solo se proporcionan con fines de depuración.
+> Para usar las páginas de propiedades integradas de GraphEdit, debe registrar proppage.dll. Este archivo DLL está disponible en el SDK Windows. El archivo DLL también contiene páginas de propiedades adicionales para algunos DirectShow filtros. Estas páginas de propiedades solo se proporcionan con fines de depuración.
 
  
 

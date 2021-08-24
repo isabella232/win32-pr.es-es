@@ -1,7 +1,7 @@
 ---
-description: Métricas de rendimiento para ayudarle a comprender el rendimiento de una aplicación.
+description: Métricas de rendimiento para ayudar a comprender el rendimiento de una aplicación.
 ms.assetid: c0bcf060-a0ed-4c85-9554-398ffe4b4235
-title: D3DDEVINFO_D3D9BANDWIDTHTIMINGS estructura (D3D9Types. h)
+title: D3DDEVINFO_D3D9BANDWIDTHTIMINGS estructura (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 3bfb98045e645f20fa77cf8523040b995f6c254a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f9c92a3eae10ef289e53764c7568f826640edf66c3351edaadf3d922515a3eda
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119565035"
 ---
-# <a name="d3ddevinfo_d3d9bandwidthtimings-structure"></a>D3DDEVINFO \_ estructura D3D9BANDWIDTHTIMINGS
+# <a name="d3ddevinfo_d3d9bandwidthtimings-structure"></a>D3DDEVINFO \_ D3D9BANDWIDTHTIMINGS (estructura)
 
-Métricas de rendimiento para ayudarle a comprender el rendimiento de una aplicación.
+Métricas de rendimiento para ayudar a comprender el rendimiento de una aplicación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,55 +46,55 @@ typedef struct D3DDEVINFO_D3D9BANDWIDTHTIMINGS {
 **MaxBandwidthUtilized**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-El ancho de banda o la velocidad de transferencia de datos máxima de la CPU del host a la GPU. Suele ser el ancho de banda del bus PCI o AGP que conecta la CPU y la GPU.
+El ancho de banda o la velocidad máxima de transferencia de datos desde la CPU del host a la GPU. Suele ser el ancho de banda del bus PCI o AGP que conecta la CPU y la GPU.
 
 </dd> <dt>
 
 **FrontEndUploadMemoryUtilizedPercent**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Porcentaje de uso de memoria al cargar datos desde la CPU del host a la GPU.
+Porcentaje de memoria utilizada al cargar datos desde la CPU del host a la GPU.
 
 </dd> <dt>
 
 **VertexRateUtilizedPercent**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Porcentaje de rendimiento de vértices. Es el número de vértices procesados en comparación con la velocidad máxima de procesamiento de vértices teóricos.
+Porcentaje de rendimiento de vértices. Este es el número de vértices procesados en comparación con la tasa de procesamiento de vértices máxima teórica.
 
 </dd> <dt>
 
 **TriangleSetupRateUtilizedPercent**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Porcentaje de rendimiento de configuración de triángulo. Es el número de triángulos que se configuran para la rasterización en comparación con la tasa de configuración del triángulo máximo teórico.
+Porcentaje de rendimiento de configuración de triángulos. Este es el número de triángulos configurados para la rasterización en comparación con la tasa de configuración de triángulos máxima teórica.
 
 </dd> <dt>
 
 **FillRateUtilizedPercent**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Porcentaje de rendimiento de relleno de píxeles. Es el número de píxeles que se rellenan en comparación con el relleno de píxeles teórico.
+Porcentaje de rendimiento de relleno de píxeles. Este es el número de píxeles que se rellenan en comparación con el relleno teórico de píxeles.
 
 </dd> </dl>
 
@@ -104,7 +104,7 @@ Porcentaje de rendimiento de relleno de píxeles. Es el número de píxeles que 
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 

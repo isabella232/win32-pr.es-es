@@ -1,11 +1,11 @@
 ---
-title: Atributo MSMQ-Prev-site-Gates
-description: El atributo MSMQ-Prev-site-Gates contiene información de modo mixto de MSMQ.
+title: Atributo MSMQ-Prev-Site-Gates
+description: El atributo MSMQ-Prev-Site-Gates contiene información de modo mixto de MSMQ.
 ms.assetid: 117a4f7a-78dd-4efe-81fa-81fdc4eb5ce2
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MSMQ-Prev-site-Gates
-- mSMQPrevSiteGates esquema de AD de atributos
+- Esquema de AD del atributo MSMQ-Prev-Site-Gates
+- Esquema de AD del atributo mSMQPrevSiteGates
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 30dca1c597e26d315ac3abd95eca578f65a0349d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: bcbd58cfdcb66a7d4d82270f071c1333f97e2982787f685d17d9eff615d3c7b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804639"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081829"
 ---
-# <a name="msmq-prev-site-gates-attribute"></a>Atributo MSMQ-Prev-site-Gates
+# <a name="msmq-prev-site-gates-attribute"></a>Atributo MSMQ-Prev-Site-Gates
 
-El atributo **MSMQ-Prev-site-Gates** contiene información de modo mixto de MSMQ.
+El **atributo MSMQ-Prev-Site-Gates** contiene información de modo mixto de MSMQ.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | MSMQ-Prev-site-Gates                    |
-| Nombre para mostrar de LDAP | mSMQPrevSiteGates                       |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | MSMQ-Prev-Site-Gates                    |
+| Ldap-Display-Name | mSMQPrevSiteGates                       |
+| Size              | \-                                      |
+| Actualizar privilegios  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1225                 |
-| System-ID-GUID    | 2df90d75-009f-11d2-aa4c-00c04fd7d83a    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 2df90d75-009f-11d2-aa4c-00c04fd7d83a    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -55,13 +55,13 @@ El atributo **MSMQ-Prev-site-Gates** contiene información de modo mixto de MSMQ
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -76,13 +76,13 @@ El atributo **MSMQ-Prev-site-Gates** contiene información de modo mixto de MSMQ
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -95,15 +95,15 @@ El atributo **MSMQ-Prev-site-Gates** contiene información de modo mixto de MSMQ
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -116,15 +116,15 @@ El atributo **MSMQ-Prev-site-Gates** contiene información de modo mixto de MSMQ
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -137,15 +137,15 @@ El atributo **MSMQ-Prev-site-Gates** contiene información de modo mixto de MSMQ
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -160,13 +160,13 @@ El atributo **MSMQ-Prev-site-Gates** contiene información de modo mixto de MSMQ
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |

@@ -13,9 +13,9 @@ ms.locfileid: "119685675"
 ---
 # <a name="external-device-transport-property-set"></a>Conjunto de propiedades de transporte de dispositivos externos
 
-Este conjunto de propiedades controla el transporte de datos hacia y desde un dispositivo externo. En la mayoría de los casos, las aplicaciones no deben usar este conjunto de propiedades directamente. En su [**lugar, use la interfaz IAMExtTransport.**](/windows/desktop/api/Strmif/nn-strmif-iamexttransport)
+Este conjunto de propiedades controla el transporte de datos hacia y desde un dispositivo externo. En la mayoría de los casos, las aplicaciones no deben usar directamente este conjunto de propiedades. Use la [**interfaz IAMExtTransport**](/windows/desktop/api/Strmif/nn-strmif-iamexttransport) en su lugar.
 
-En la tabla siguiente se enumeran las propiedades que son relevantes para las aplicaciones en modo de usuario. Para obtener una descripción completa de este conjunto de propiedades, consulte el DDK de Microsoft Windows Driver Development Kit.
+En la tabla siguiente se enumeran las propiedades que son relevantes para las aplicaciones en modo de usuario. Para obtener una descripción completa de este conjunto de propiedades, consulte el DDK Windows Driver Development Kit de Microsoft.
 
 
 
@@ -32,7 +32,7 @@ En la tabla siguiente se enumeran las propiedades que son relevantes para las ap
 | Id. de propiedad                                                                           | Descripción                                  |
 |---------------------------------------------------------------------------------------|----------------------------------------------|
 | [**KSPROPERTY \_ EXTXPORT \_ ATN \_ SEARCH**](ksproperty-extxport-atn-search.md)           | Busca un número de seguimiento absoluto (ATN). |
-| [**KSPROPERTY \_ EXTXPORT \_ TIMECODE \_ SEARCH**](ksproperty-extxport-timecode-search.md) | Busca un código de hora.                    |
+| [**BÚSQUEDA DE CÓDIGO \_ DE TIEMPO DE EXTXPORT \_ DE KSPROPERTY \_**](ksproperty-extxport-timecode-search.md) | Busca un código de hora.                    |
 
 
 

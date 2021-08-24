@@ -3,7 +3,7 @@ title: Propiedad AxWindowsMediaPlayer.openState
 description: La propiedad openState obtiene un valor de enumeración que indica el estado del origen de contenido.
 ms.assetid: 7a76814a-649f-4516-a92a-5f536fb1b147
 keywords:
-- Propiedad openState Reproductor de Windows Media
+- propiedad openState Reproductor de Windows Media
 - Propiedad openState Reproductor de Windows Media clase , AxWindowsMediaPlayer
 - Clase AxWindowsMediaPlayer Reproductor de Windows Media , propiedad openState
 topic_type:
@@ -52,7 +52,7 @@ Valor de enumeración WMPLib.WMPOpenState.
 
 ## <a name="remarks"></a>Comentarios
 
-Reproductor de Windows Media se garantiza que los estados se produzcan en un orden determinado. Además, no todos los estados se producen necesariamente durante una secuencia de eventos. No debe escribir código que se base en el orden de estado.
+Reproductor de Windows Media no se garantiza que los estados se produzcan en un orden determinado. Además, no todos los estados se producen necesariamente durante una secuencia de eventos. No debe escribir código que se base en el orden de estado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,7 +66,7 @@ Reproductor de Windows Media se garantiza que los estados se produzcan en un ord
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

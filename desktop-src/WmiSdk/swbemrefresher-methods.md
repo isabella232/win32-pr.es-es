@@ -5,23 +5,23 @@ ms.tgt_platform: multiple
 title: Métodos SWbemRefresher
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 65375555650af7b473b98cd9c8339225f1881a45
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 17f16782addfb5a6a83358fbd55cd82ec0e168e4900e9e3289265c1a77b327b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105707554"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119639705"
 ---
 # <a name="swbemrefresher-methods"></a>Métodos SWbemRefresher
 
-El objeto [**SWbemRefresher**](swbemrefresher.md) expone los métodos siguientes.
+El [**objeto SWbemRefresher**](swbemrefresher.md) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**Add (método)**](swbemrefresher-add.md)
+-   [**Agregar método**](swbemrefresher-add.md)
 -   [**Método AddEnum**](swbemrefresher-addenum.md)
--   [**DeleteAll (método)**](swbemrefresher-deleteall.md)
--   [**Item (método)**](swbemrefresher-item.md)
+-   [**Método DeleteAll**](swbemrefresher-deleteall.md)
+-   [**Método Item**](swbemrefresher-item.md)
 -   [**Método Refresh**](swbemrefresher-refresh.md)
 -   [**Remove (método)**](swbemrefresher-remove.md)
 

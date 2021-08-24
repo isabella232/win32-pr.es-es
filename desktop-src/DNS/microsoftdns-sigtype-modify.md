@@ -3,8 +3,8 @@ title: Método Modify de la MicrosoftDNS_SIGType clase
 description: El método Modify actualiza un RR de firma (SIG).
 ms.assetid: 6a7017da-d3f1-4aba-a53a-96f578518304
 keywords:
-- Modificación del dns del método
-- Modificar el método DNS , MicrosoftDNS_SIGType clase
+- Modificación del DNS del método
+- Modify method DNS , MicrosoftDNS_SIGType class
 - MicrosoftDNS_SIGType clase DNS , Método Modify
 topic_type:
 - apiref
@@ -52,7 +52,7 @@ void Modify(
 
 <dl> <dt>
 
-*TTL* \[ en, opcional\]
+*TTL* \[ in, opcional\]
 </dt> <dd>
 
 Tiempo, en segundos, que un solucionador DNS puede almacenar en caché el RR.
@@ -62,7 +62,7 @@ Tiempo, en segundos, que un solucionador DNS puede almacenar en caché el RR.
 *TypeCovered* \[ En\]
 </dt> <dd>
 
-Tipo de RR cubierto por este SIG.
+Tipo de RR cubierto por esta SIG.
 
 </dd> <dt>
 
@@ -89,35 +89,35 @@ Algoritmo utilizado con la clave especificada en el registro de recursos. Los va
 *Etiquetas* \[ En\]
 </dt> <dd>
 
-Recuento sin signo de etiquetas en el nombre de propietario de RR SIG original. El recuento no incluye la etiqueta NULL para la raíz ni ningún carácter comodín inicial.
+Recuento sin signo de etiquetas en el nombre de propietario de RR sig original. El recuento no incluye la etiqueta NULL para la raíz ni ningún carácter comodín inicial.
 
 </dd> <dt>
 
 *OriginalTTL* \[ En\]
 </dt> <dd>
 
-TTL del conjunto rr firmado por sig.
+TTL del conjunto RR firmado por sig.
 
 </dd> <dt>
 
 *SignatureExpiration* \[ En\]
 </dt> <dd>
 
-Fecha de expiración de la firma, expresada en segundos desde el principio del 1 de enero de 1970, hora media de Greenwich (GMT), excepto los segundos bisiestos.
+Fecha de expiración de la firma, expresada en segundos desde el 1 de enero de 1970, hora media de Greenwich (GMT), excepto los segundos bisiestos.
 
 </dd> <dt>
 
 *SignatureInception* \[ En\]
 </dt> <dd>
 
-Fecha y hora en que la firma se convierte en válida, expresada en segundos desde el principio del 1 de enero de 1970, hora media de Greenwich (GMT), excepto los segundos bisiestos.
+Fecha y hora en que la firma pasa a ser válida, expresada en segundos desde el principio del 1 de enero de 1970, hora media de Greenwich (GMT), excepto los segundos bisiestos.
 
 </dd> <dt>
 
 *KeyTag* \[ En\]
 </dt> <dd>
 
-Método utilizado para elegir una clave que comprueba una SIG. Consulte RFC 2535, Apéndice C para ver el método usado para calcular un KeyTag.
+Método utilizado para elegir una clave que comprueba una SIG. Consulte RFC 2535, Apéndice C para el método usado para calcular un KeyTag.
 
 </dd> <dt>
 
@@ -148,7 +148,7 @@ Este método no devuelve ningún valor.
 
 ## <a name="remarks"></a>Comentarios
 
-Cualquier parámetro no especificado se deja sin modificar en el registro modificado.
+Cualquier parámetro no especificado se deja sin cambios en el registro modificado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -163,11 +163,11 @@ Cualquier parámetro no especificado se deja sin modificar en el registro modifi
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**MicrosoftDNS \_ SIGType**](microsoftdns-sigtype.md)
+[**SigType de MicrosoftDNS \_**](microsoftdns-sigtype.md)
 </dt> <dt>
 
 [**Método CreateInstanceFromPropertyData de la clase SIGType de MicrosoftDNS \_**](microsoftdns-sigtype-createinstancefrompropertydata.md)

@@ -55,7 +55,7 @@ Devuelve la [**variable miembro CBaseInputPin::m \_ bFlushing.**](cbaseinputpin-
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -20,7 +20,7 @@ La [**interfaz ICategory**](/windows/desktop/api/Wuapi/nn-wuapi-icategory) defin
 | Propiedad                                     | Descripción                                                                                       |
 |----------------------------------------------|---------------------------------------------------------------------------------------------------|
 | [**Idcategoría**](/windows/desktop/api/Wuapi/nf-wuapi-icategory-get_categoryid)   | Obtiene el identificador de la categoría.                                                              |
-| [**Children**](/windows/desktop/api/Wuapi/nf-wuapi-icategory-get_children)       | Obtiene una colección de interfaz que contiene las categorías secundarias de esta categoría.                 |
+| [**Children**](/windows/desktop/api/Wuapi/nf-wuapi-icategory-get_children)       | Obtiene una colección de interfaces que contiene las categorías secundarias de esta categoría.                 |
 | [**Descripción**](/windows/desktop/api/Wuapi/nf-wuapi-icategory-get_description) | Obtiene la descripción de la categoría.                                                             |
 | [**Imagen**](/windows/desktop/api/Wuapi/nf-wuapi-icategory-get_image)             | Obtiene una interfaz que contiene información sobre la imagen asociada a la categoría . |
 | [**Nombre**](/windows/desktop/api/Wuapi/nf-wuapi-icategory-get_name)               | Obtiene el nombre localizado de la categoría.                                                          |

@@ -1,6 +1,6 @@
 ---
-title: Constantes de tipo de NAP (NapTypes. h)
-description: Se definen las siguientes constantes de NAP.
+title: Constantes de tipo NAP (NapTypes.h)
+description: Se definen las siguientes constantes nap.
 ms.assetid: 2727487c-8c6a-4cd9-b6d8-253191a7d7f6
 topic_type:
 - apiref
@@ -37,23 +37,23 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 85692a7ccc9cbb602a34da714a5eeb488ea5c4a7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3f0201f29d19969de6050ce3eeebf29a7bee73792dcc6b61b2359e5660db12d4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676884"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119685925"
 ---
-# <a name="nap-type-constants"></a>Constantes de tipo de NAP
+# <a name="nap-type-constants"></a>Constantes de tipo NAP
 
 > [!Note]  
 > La plataforma de protección de acceso a redes no está disponible a partir de Windows 10
 
  
 
-Se definen las siguientes constantes de NAP.
+Se definen las siguientes constantes nap.
 
-Las siguientes constantes de NAP se definen en NapTypes. h:
+Las siguientes constantes nap se definen en NapTypes.h:
 
 <dl> <dt>
 
@@ -65,7 +65,7 @@ Las siguientes constantes de NAP se definen en NapTypes. h:
 
 
 
-Número máximo de objetos [**SoHAttribute**](/windows/win32/api/naptypes/ns-naptypes-sohattribute) tipo-longitud-valor (TLV) asociados a un paquete [**SOH**](/windows/win32/api/naptypes/ns-naptypes-soh) .
+Número máximo de [**objetos SoHAttribute**](/windows/win32/api/naptypes/ns-naptypes-sohattribute) type-length-value (TLV) asociados a un [**paquete SoH.**](/windows/win32/api/naptypes/ns-naptypes-soh)
 
 
 </dt> </dl> </dd> <dt>
@@ -78,7 +78,7 @@ Número máximo de objetos [**SoHAttribute**](/windows/win32/api/naptypes/ns-nap
 
 
 
-Tamaño máximo, en bytes, de un objeto [**SoHAttribute**](/windows/win32/api/naptypes/ns-naptypes-sohattribute) asociado a un paquete de informe de mantenimiento ([**SOH**](/windows/win32/api/naptypes/ns-naptypes-soh)).
+Tamaño máximo, en bytes, de un [**objeto SoHAttribute**](/windows/win32/api/naptypes/ns-naptypes-sohattribute) asociado a un paquete de instrucción de mantenimiento [**(SoH).**](/windows/win32/api/naptypes/ns-naptypes-soh)
 
 
 </dt> </dl> </dd> <dt>
@@ -91,7 +91,7 @@ Tamaño máximo, en bytes, de un objeto [**SoHAttribute**](/windows/win32/api/na
 
 
 
-El tamaño mínimo, en bytes, de un paquete [**SOH**](/windows/win32/api/naptypes/ns-naptypes-soh) .
+Tamaño mínimo, en bytes, de un [**paquete SoH.**](/windows/win32/api/naptypes/ns-naptypes-soh)
 
 
 </dt> </dl> </dd> <dt>
@@ -104,7 +104,7 @@ El tamaño mínimo, en bytes, de un paquete [**SOH**](/windows/win32/api/naptype
 
 
 
-El tamaño máximo, en bytes, de un paquete [**SOH**](/windows/win32/api/naptypes/ns-naptypes-soh) .
+Tamaño máximo, en bytes, de un [**paquete SoH.**](/windows/win32/api/naptypes/ns-naptypes-soh)
 
 
 </dt> </dl> </dd> <dt>
@@ -112,12 +112,12 @@ El tamaño máximo, en bytes, de un paquete [**SOH**](/windows/win32/api/naptype
 <span id="maxDwordCountPerSoHAttribute"></span><span id="maxdwordcountpersohattribute"></span><span id="MAXDWORDCOUNTPERSOHATTRIBUTE"></span>**maxDwordCountPerSoHAttribute**
 </dt> <dd> <dl> <dt>
 
-maxSoHAttributeSize/sizeof (DWORD)
+maxSoHAttributeSize/ sizeof(DWORD)
 </dt> <dt>
 
 
 
-Número máximo de valores DWORD asociados a un [**SoHAttribute**](/windows/win32/api/naptypes/ns-naptypes-sohattribute).
+Número máximo de valores DWORD asociados a [**soHAttribute.**](/windows/win32/api/naptypes/ns-naptypes-sohattribute)
 
 
 </dt> </dl> </dd> <dt>
@@ -130,7 +130,7 @@ maxSoHAttributeSize/0x4
 
 
 
-Número máximo de direcciones IPv4 asociadas a un [**SoHAttribute**](/windows/win32/api/naptypes/ns-naptypes-sohattribute).
+Número máximo de direcciones IPv4 asociadas a [**soHAttribute.**](/windows/win32/api/naptypes/ns-naptypes-sohattribute)
 
 
 </dt> </dl> </dd> <dt>
@@ -143,7 +143,7 @@ maxSoHAttributeSize/0x10
 
 
 
-Número máximo de direcciones IPv6 asociadas a un [**SoHAttribute**](/windows/win32/api/naptypes/ns-naptypes-sohattribute).
+Número máximo de direcciones IPv6 asociadas a [**soHAttribute.**](/windows/win32/api/naptypes/ns-naptypes-sohattribute)
 
 
 </dt> </dl> </dd> <dt>
@@ -156,7 +156,7 @@ Número máximo de direcciones IPv6 asociadas a un [**SoHAttribute**](/windows/w
 
 
 
-La longitud máxima de una cadena especificada por la estructura [**CountedString**](/windows/win32/api/naptypes/ns-naptypes-countedstring) .
+Longitud máxima de una cadena especificada por la [**estructura CountedString.**](/windows/win32/api/naptypes/ns-naptypes-countedstring)
 
 
 </dt> </dl> </dd> <dt>
@@ -164,12 +164,12 @@ La longitud máxima de una cadena especificada por la estructura [**CountedStrin
 <span id="maxStringLengthInBytes"></span><span id="maxstringlengthinbytes"></span><span id="MAXSTRINGLENGTHINBYTES"></span>**maxStringLengthInBytes**
 </dt> <dd> <dl> <dt>
 
-(maxStringLength + 1) \* sizeof (WCHAR)
+(maxStringLength + 1) \* sizeof(WCHAR)
 </dt> <dt>
 
 
 
-La longitud máxima, en bytes, de una cadena especificada por la estructura [**CountedString**](/windows/win32/api/naptypes/ns-naptypes-countedstring) .
+Longitud máxima, en bytes, de una cadena especificada por la [**estructura CountedString.**](/windows/win32/api/naptypes/ns-naptypes-countedstring)
 
 
 </dt> </dl> </dd> <dt>
@@ -182,7 +182,7 @@ La longitud máxima, en bytes, de una cadena especificada por la estructura [**C
 
 
 
-Número máximo de entidades de mantenimiento del sistema, como SHV y Sha.
+Número máximo de entidades de mantenimiento del sistema, como SHV y SHA.
 
 
 </dt> </dl> </dd> <dt>
@@ -190,12 +190,12 @@ Número máximo de entidades de mantenimiento del sistema, como SHV y Sha.
 <span id="SystemHealthEntityCount"></span><span id="systemhealthentitycount"></span><span id="SYSTEMHEALTHENTITYCOUNT"></span>**SystemHealthEntityCount**
 </dt> <dd> <dl> <dt>
 
-\[intervalo (0, maxSystemHealthEntityCount)\] 
+\[range(0, maxSystemHealthEntityCount)\] 
 </dt> <dt>
 
 
 
-El intervalo de valores posibles para el número de entidades de mantenimiento del sistema.
+Intervalo de valores posibles para el número de entidades de mantenimiento del sistema.
 
 
 </dt> </dl> </dd> <dt>
@@ -208,7 +208,7 @@ El intervalo de valores posibles para el número de entidades de mantenimiento d
 
 
 
-Número máximo de entidades de cumplimiento, como QECs.
+Número máximo de entidades de cumplimiento, como los QEC.
 
 
 </dt> </dl> </dd> <dt>
@@ -216,12 +216,12 @@ Número máximo de entidades de cumplimiento, como QECs.
 <span id="EnforcementEntityCount"></span><span id="enforcemententitycount"></span><span id="ENFORCEMENTENTITYCOUNT"></span>**EnforcementEntityCount**
 </dt> <dd> <dl> <dt>
 
-\[intervalo (0, maxEnforcerCount)\]
+\[range(0, maxEnforcerCount)\]
 </dt> <dt>
 
 
 
-El intervalo de valores posibles para el número de entidades de aplicación.
+Intervalo de valores posibles para el número de entidades de cumplimiento.
 
 
 </dt> </dl> </dd> <dt>
@@ -234,7 +234,7 @@ El intervalo de valores posibles para el número de entidades de aplicación.
 
 
 
-Tamaño máximo, en bytes, de una estructura [**PrivateData**](/windows/win32/api/naptypes/ns-naptypes-privatedata) .
+Tamaño máximo, en bytes, de una [**estructura PrivateData.**](/windows/win32/api/naptypes/ns-naptypes-privatedata)
 
 
 </dt> </dl> </dd> <dt>
@@ -247,7 +247,7 @@ Tamaño máximo, en bytes, de una estructura [**PrivateData**](/windows/win32/ap
 
 
 
-Número máximo de objetos [**INapEnforcementClientConnection**](inapenforcementclientconnection.md) asociados a una entidad de aplicación.
+Número máximo de [**objetos INapEnforcementClientConnection**](inapenforcementclientconnection.md) asociados a una entidad de cumplimiento.
 
 
 </dt> </dl> </dd> <dt>
@@ -260,7 +260,7 @@ maxSystemHealthEntityCount \* maxEnforcerCount \* maxConnectionCountPerEnforcer
 
 
 
-Número máximo de conexiones de SoH almacenadas en caché para todas las entidades de mantenimiento y cumplimiento del sistema.
+Número máximo de conexiones SoH almacenadas en caché para todas las entidades de cumplimiento y mantenimiento del sistema.
 
 
 </dt> </dl> </dd> <dt>
@@ -273,7 +273,7 @@ Número máximo de conexiones de SoH almacenadas en caché para todas las entida
 
 
 
-Especifica que un [**SoHResponse**](/windows/win32/api/naptypes/ns-naptypes-networksoh)se debe a una nueva solicitud, no a una solicitud almacenada en caché. Este marcador lo usa el agente NAP en un objeto [**INapEnforcementClientConnection**](inapenforcementclientconnection.md) .
+Especifica que [**soHResponse**](/windows/win32/api/naptypes/ns-naptypes-networksoh)se debe a una nueva solicitud, no a una solicitud almacenada en caché. El agente NAP usa esta marca en un [**objeto INapEnforcementClientConnection.**](inapenforcementclientconnection.md)
 
 
 </dt> </dl> </dd> <dt>
@@ -286,7 +286,7 @@ Especifica que un [**SoHResponse**](/windows/win32/api/naptypes/ns-naptypes-netw
 
 
 
-Especifica que se requiere corrección. Este marcador lo usa un SHA.
+Especifica que se requiere una corrección. Sha usa esta marca.
 
 
 </dt> </dl> </dd> <dt>
@@ -294,12 +294,12 @@ Especifica que se requiere corrección. Este marcador lo usa un SHA.
 <span id="failureCategoryCount"></span><span id="failurecategorycount"></span><span id="FAILURECATEGORYCOUNT"></span>**failureCategoryCount**
 </dt> <dd> <dl> <dt>
 
-0X5
+0x5
 </dt> <dt>
 
 
 
-Número de categorías de error contenidas dentro de una estructura [**FailureCategoryMapping**](/windows/win32/api/naptypes/ns-naptypes-failurecategorymapping) .
+Número de categorías de error contenidas en una [**estructura FailureCategoryMapping.**](/windows/win32/api/naptypes/ns-naptypes-failurecategorymapping)
 
 
 </dt> </dl> </dd> <dt>
@@ -312,10 +312,10 @@ Número de categorías de error contenidas dentro de una estructura [**FailureCa
 
 
 
-El componente es un cliente de cumplimiento de cuarentena (QEC) que envía un paquete [**SOH**](/windows/win32/api/naptypes/ns-naptypes-soh) en banda durante la autenticación de la conexión.
+El componente es un cliente de cumplimiento de cuarentena (QEC) que envía un [**paquete SoH**](/windows/win32/api/naptypes/ns-naptypes-soh) en banda durante la autenticación de conexión.
 
 > [!Note]  
-> Los Sha y los SHV no utilizan este valor.
+> Este valor no lo usan las SHA y SHV.
 
  
 
@@ -333,14 +333,14 @@ El componente es un cliente de cumplimiento de cuarentena (QEC) que envía un pa
 El componente es un QEC que implementa [**INapCertRelyingParty**](inapcertrelyingparty.md) y debe interactuar con el servidor de certificados de mantenimiento (HCS) para obtener un certificado de mantenimiento.
 
 > [!Note]  
-> Los Sha y los SHV no utilizan este valor.
+> Este valor no lo usan las SHA y SHV.
 
  
 
 
 </dt> </dl> </dd> </dl>
 
-Las siguientes constantes de NAP se definen en NapEnforcementClient. h.
+Las siguientes constantes nap se definen en NapEnforcementClient.h.
 
 <dl> <dt>
 
@@ -352,7 +352,7 @@ Las siguientes constantes de NAP se definen en NapEnforcementClient. h.
 
 
 
-El tamaño máximo predeterminado, en bytes, de un paquete SoH.
+Tamaño máximo predeterminado, en bytes, de un paquete SoH.
 
 
 </dt> </dl> </dd> <dt>
@@ -365,7 +365,7 @@ El tamaño máximo predeterminado, en bytes, de un paquete SoH.
 
 
 
-El tamaño máximo posible, en bytes, de un paquete SoH.
+Tamaño máximo posible, en bytes, de un paquete SoH.
 
 
 </dt> </dl> </dd> <dt>
@@ -378,7 +378,7 @@ El tamaño máximo posible, en bytes, de un paquete SoH.
 
 
 
-Tamaño máximo posible mínimo, en bytes, de un paquete SoH. El tamaño real del paquete SoH puede ser menor que **minProtocolMaxSize**.
+El tamaño máximo más pequeño posible, en bytes, de un paquete SoH. El tamaño real del paquete SoH puede ser menor que **minProtocolMaxSize.**
 
 
 </dt> </dl> </dd> <dt>
@@ -386,12 +386,12 @@ Tamaño máximo posible mínimo, en bytes, de un paquete SoH. El tamaño real de
 <span id="ProtocolMaxSize"></span><span id="protocolmaxsize"></span><span id="PROTOCOLMAXSIZE"></span>**ProtocolMaxSize**
 </dt> <dd> <dl> <dt>
 
-Range (minProtocolMaxSize, maxProtocolMaxSize)
+range(minProtocolMaxSize, maxProtocolMaxSize)
 </dt> <dt>
 
 
 
-El intervalo de valores posibles para el tamaño máximo de un paquete SoH.
+Intervalo de valores posibles para el tamaño máximo de un paquete SoH.
 
 
 </dt> </dl> </dd> </dl>
@@ -400,11 +400,11 @@ El intervalo de valores posibles para el tamaño máximo de un paquete SoH.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                                                                                      |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                                                                                |
-| Encabezado<br/>                   | <dl> <dt>NapTypes. h; </dt> <dt>NapEnforcementClient. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                                                                                      |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                                                                                |
+| Header<br/>                   | <dl> <dt>NapTypes.h; </dt> <dt>NapEnforcementClient.h</dt> </dl> |
 
 
 
@@ -412,7 +412,7 @@ El intervalo de valores posibles para el tamaño máximo de un paquete SoH.
 
 <dl> <dt>
 
-[**Constantes de NAP**](nap-constants.md)
+[**Constantes nap**](nap-constants.md)
 </dt> </dl>
 
  
