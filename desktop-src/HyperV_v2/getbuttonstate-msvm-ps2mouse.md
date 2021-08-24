@@ -1,5 +1,5 @@
 ---
-description: 'Método GetButtonState de Msvm_Ps2Mouse clase : recupera el estado actual del botón de dispositivo especificado.'
+description: 'Método GetButtonState de la Msvm_Ps2Mouse : recupera el estado actual del botón de dispositivo especificado.'
 ms.assetid: 7772A3AC-1677-44A7-9E5E-D31E90988705
 title: Método GetButtonState de la Msvm_Ps2Mouse clase
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 160134a2ae48bb23dc525eeded70b483484e0b71
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: dbbd77b87c0df1d12b20958497d145b77ad62ed5b9691b443be2596fd58e4df6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119682525"
 ---
 # <a name="getbuttonstate-method-of-the-msvm_ps2mouse-class"></a>Método GetButtonState de la clase \_ Ps2Mouse de Msvm
 
@@ -54,7 +54,7 @@ Tipo: **uint32**
 
 Tipo: **booleano**
 
-Estado de apagado actual del botón. Un **valor True** significa que el botón está apagado.
+Estado actual hacia abajo del botón. Un **valor True** significa que el botón está apagado.
 
 </dd> </dl>
 
@@ -62,7 +62,7 @@ Estado de apagado actual del botón. Un **valor True** significa que el botón e
 
 Tipo: **uint32**
 
-Un valor devuelto de cero indica que el resultado es correcto. Un valor distinto de cero indica un error de consulta.
+Un valor devuelto de cero indica que se ha correcto. Un valor distinto de cero indica un error de consulta.
 
 <dl> <dt>
 
@@ -107,7 +107,7 @@ Un valor devuelto de cero indica que el resultado es correcto. Un valor distinto
 
 ## <a name="remarks"></a>Comentarios
 
-El acceso a [**la clase \_ Ps2Mouse de Msvm**](msvm-ps2mouse.md) puede estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
+El acceso a [**la clase \_ Ps2Mouse de Msvm**](msvm-ps2mouse.md) podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -115,15 +115,15 @@ El acceso a [**la clase \_ Ps2Mouse de Msvm**](msvm-ps2mouse.md) puede estar res
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 8 solo \[ aplicaciones de escritorio\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
 | Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

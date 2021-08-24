@@ -1,7 +1,7 @@
 ---
 description: Crea una instantánea de una máquina virtual.
 ms.assetid: 2de12fe7-5ec2-49d0-87ff-cd48c34fec46
-title: Método CreateSnapshot de la clase Msvm_VirtualSystemSnapshotService (Dbdaoint. h)
+title: Método CreateSnapshot de la Msvm_VirtualSystemSnapshotService (Dbdaoint.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: c62b4abf60e367da1c4ac4b176e5f5d70f547c9f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c6b86f8b6d0b2fc5ff9ed8c968c9c3a321623c81e1613ce82aca18944e9ac6c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104360872"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119682605"
 ---
-# <a name="createsnapshot-method-of-the-msvm_virtualsystemsnapshotservice-class"></a>Método CreateSnapshot de la \_ clase VirtualSystemSnapshotService de MSVM
+# <a name="createsnapshot-method-of-the-msvm_virtualsystemsnapshotservice-class"></a>Método CreateSnapshot de la clase Msvm \_ VirtualSystemSnapshotService
 
 Crea una instantánea de una máquina virtual.
 
@@ -43,24 +43,24 @@ uint32 CreateSnapshot(
 
 <dl> <dt>
 
-*AffectedSystem* \[ de\]
+*AffectedSystem* \[ En\]
 </dt> <dd>
 
-Referencia a una clase [**de \_ ComputerSystem de CIM**](/windows/desktop/CIMWin32Prov/cim-computersystem) que representa la máquina virtual de la que se va a crear una instantánea.
+Referencia a una clase [**\_ ComputerSystem cim**](/windows/desktop/CIMWin32Prov/cim-computersystem) que representa la máquina virtual de la que se creará una instantánea.
 
 </dd> <dt>
 
-*SnapshotSettings* \[ de\]
+*SnapshotSettings* \[ En\]
 </dt> <dd>
 
-Una cadena que contiene una instancia incrustada de una clase [**\_ SettingData de CIM**](/previous-versions//cc136911(v=vs.85)) que contiene la configuración de parámetros de la instantánea. Este parámetro es opcional y puede ser una cadena vacía.
+Cadena que contiene una instancia incrustada de una [**clase \_ SettingData de CIM**](/previous-versions//cc136911(v=vs.85)) que contiene la configuración de parámetros para la instantánea. Este parámetro es opcional y puede ser una cadena vacía.
 
 </dd> <dt>
 
-*SnapshotType* \[ de\]
+*SnapshotType* \[ En\]
 </dt> <dd>
 
-Especifica el tipo de instantánea solicitada. Debe ser uno de los valores siguientes.
+Especifica el tipo de instantánea solicitada. Debe ser uno de los siguientes valores.
 
 <dt>
 
@@ -95,7 +95,7 @@ Instantánea de discos de máquina virtual.
 
 <span id="Vendor_Specific"></span><span id="vendor_specific"></span><span id="VENDOR_SPECIFIC"></span>
 
-<span id="Vendor_Specific"></span><span id="vendor_specific"></span><span id="VENDOR_SPECIFIC"></span>**Específico del proveedor** (32768... 65535)
+<span id="Vendor_Specific"></span><span id="vendor_specific"></span><span id="VENDOR_SPECIFIC"></span>**Específico del** proveedor (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> <dt>
@@ -103,14 +103,14 @@ Instantánea de discos de máquina virtual.
 *ResultingSnapshot* \[ in, out\]
 </dt> <dd>
 
-Referencia a un objeto [**\_ VirtualSystemSettingData de CIM**](/previous-versions//cc136954(v=vs.85)) que representa la instantánea de máquina virtual resultante.
+Referencia a un objeto [**\_ CIM VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)) que representa la instantánea de máquina virtual resultante.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ ConcreteJob CIM**](/previous-versions//cc136808(v=vs.85)).
+Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
 
 </dd> </dl>
 
@@ -129,7 +129,7 @@ Este método devuelve uno de los valores siguientes.
 **Error** (2)
 </dt> <dt>
 
-**Tiempo de espera** (3)
+**Tiempo de** espera (3)
 </dt> <dt>
 
 **Parámetro no válido** (4)
@@ -138,7 +138,7 @@ Este método devuelve uno de los valores siguientes.
 **Estado no válido** (5)
 </dt> <dt>
 
-**Tipo no válido** (6)
+**Tipo no** válido (6)
 </dt> <dt>
 
 **DMTF reservado** (..)
@@ -147,18 +147,18 @@ Este método devuelve uno de los valores siguientes.
 **Parámetros de método comprobados: trabajo iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (de no.. 32767)
+**Método reservado** (4097..32767)
 </dt> <dt>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535)
 </dt> </dl>
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente código de ejemplo de C# se crea una máquina virtual. Las utilidades a las que se hace referencia se pueden encontrar en [utilidades comunes para los ejemplos de virtualización (V2)](common-utilities-for-the-virtualization-samples-v2.md).
+El siguiente código de ejemplo de C# crea una máquina virtual. Las utilidades a las que se hace referencia se pueden encontrar [en Utilidades comunes para los ejemplos de virtualización (V2).](common-utilities-for-the-virtualization-samples-v2.md)
 
 > [!IMPORTANT]
-> Para que funcione correctamente, se debe ejecutar el código siguiente en el servidor host de máquina virtual y se debe ejecutar con privilegios de administrador.
+> Para funcionar correctamente, el código siguiente debe ejecutarse en el servidor host de la máquina virtual y debe ejecutarse con privilegios de administrador.
 
  
 
@@ -227,13 +227,13 @@ public static void CreateSnapshot(string vmName)
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| Encabezado<br/>                   | <dl> <dt>Dbdaoint. h</dt> </dl>                   |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| Header<br/>                   | <dl> <dt>Dbdaoint.h</dt> </dl>                   |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -242,7 +242,7 @@ public static void CreateSnapshot(string vmName)
 
 <dl> <dt>
 
-[**MSVM \_ VirtualSystemSnapshotService**](msvm-virtualsystemsnapshotservice.md)
+[**Msvm \_ VirtualSystemSnapshotService**](msvm-virtualsystemsnapshotservice.md)
 </dt> <dt>
 
 [**CreateVirtualSystemSnapshot (V1)**](/previous-versions/windows/desktop/virtual/createvirtualsystemsnapshot-msvm-virtualsystemmanagementservice)

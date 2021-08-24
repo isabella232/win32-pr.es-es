@@ -1,36 +1,36 @@
 ---
-title: Cómo proporcionar controles Rich Edit sin ventanas con funcionalidad de ventana
-description: La funcionalidad de la ventana incluye la capacidad de recibir mensajes y la propiedad de un contexto de dispositivo en el que dibujar. Los controles de edición enriquecida sin ventanas reciben esta funcionalidad por medio de un par de interfaces ITextServices y ITextHost.
+title: Cómo proporcionar controles rich edit sin ventana con funcionalidad de ventana
+description: La funcionalidad de ventana incluye la capacidad de recibir mensajes y la propiedad de un contexto de dispositivo en el que se va a dibujar. Los controles de edición enriquecciones sin ventanas reciben esta funcionalidad mediante un par de interfaces ITextServices e ITextHost.
 ms.assetid: 085CBC61-50AE-4F74-8C6A-436176DE0031
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fce987630c21b1e15a2237066b39dd264125a857
-ms.sourcegitcommit: f0ca63c18dc52c357d3398af7be766d2bdd40be7
+ms.openlocfilehash: 3ce68a9e4e186be79e8f62cb009748916725e4af4f67d6522ed5eb47a92f33fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "103995041"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119698605"
 ---
-# <a name="how-to-provide-windowless-rich-edit-controls-with-window-functionality"></a>Cómo proporcionar controles Rich Edit sin ventanas con funcionalidad de ventana
+# <a name="how-to-provide-windowless-rich-edit-controls-with-window-functionality"></a>Cómo proporcionar controles rich edit sin ventana con funcionalidad de ventana
 
-La funcionalidad de la ventana incluye la capacidad de recibir mensajes y la propiedad de un contexto de dispositivo en el que dibujar. Los controles de edición enriquecida sin ventanas reciben esta funcionalidad por medio de un par de interfaces: [**ITextServices**](/windows/desktop/api/Textserv/nl-textserv-itextservices) y [**ITextHost**](/windows/desktop/api/Textserv/nl-textserv-itexthost).
+La funcionalidad de ventana incluye la capacidad de recibir mensajes y la propiedad de un contexto de dispositivo en el que se va a dibujar. Los controles de edición enriquecciones sin ventanas reciben esta funcionalidad mediante un par de interfaces: [**ITextServices**](/windows/desktop/api/Textserv/nl-textserv-itextservices) e [**ITextHost**](/windows/desktop/api/Textserv/nl-textserv-itexthost).
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="establish-the-window-functionality"></a>Establecer la funcionalidad de la ventana
+### <a name="establish-the-window-functionality"></a>Establecer la funcionalidad de ventana
 
-En el ejemplo de código siguiente se muestra cómo crear el host de texto y los servicios de texto.
+En el código de ejemplo siguiente se muestra cómo crear el host de texto y los servicios de texto.
 
 
 ```
@@ -63,9 +63,9 @@ En el ejemplo de código siguiente se muestra cómo crear el host de texto y los
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El parámetro *hmodRichEdit* en el ejemplo de código es un identificador del módulo de Msftedit.dll y se supone que ya se ha recuperado este identificador mediante una llamada a la función **GetModuleHandle** .
+El *parámetro hmodRichEdit* del ejemplo de código es un identificador del módulo Msftedit.dll y se supone que este identificador ya se ha recuperado mediante una llamada a la función **GetModuleHandle.**
 
 ## <a name="complete-example"></a>Ejemplo completo
 
@@ -73,18 +73,18 @@ El parámetro *hmodRichEdit* en el ejemplo de código es un identificador del m�
 
 <dl> <dt>
 
-[Usar controles Rich Edit sin ventanas](using-windowless-rich-edit-controls.md)
+[Usar controles rich edit sin ventanas](using-windowless-rich-edit-controls.md)
 </dt> <dt>
 
 [Usar controles Rich Edit](using-rich-edit-controls.md)
 </dt> <dt>
 
-[Demostración de controles comunes de Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows demostración de controles comunes (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

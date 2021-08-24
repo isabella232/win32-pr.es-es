@@ -1,22 +1,22 @@
 ---
-title: Ejemplo de código de C/C++ que recupera parámetros de tarea
-description: En este ejemplo se recupera la cadena de parámetro que se ejecuta cuando se ejecuta la tarea y se muestra esa cadena en la pantalla. En este ejemplo se da por supuesto que la tarea y la tarea de prueba ya existen en el equipo local.
+title: Ejemplo de código de C/C++ para recuperar parámetros de tarea
+description: En este ejemplo se recupera la cadena de parámetro que se ejecuta cuando se ejecuta la tarea y se muestra esa cadena en la pantalla. En este ejemplo se supone que la tarea y la tarea de prueba ya existen en el equipo local.
 ms.assetid: fefa668e-803f-4e05-8097-b75231ee8f72
 keywords:
-- recuperación de parámetros de tarea Programador de tareas
-- recuperar propiedades de tarea Programador de tareas, parámetros
+- recuperar parámetros de tarea Programador de tareas
+- recuperar propiedades de tarea Programador de tareas , parámetros
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6adff7baeb4d4151c06ab192e336712716fb9d80
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e18df24eee8f2de6d7a796aeb11febad8d9e79e95be6dd47bcd9be0a5392078d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418712"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119738755"
 ---
-# <a name="cc-code-example-retrieving-task-parameters"></a>Ejemplo de código de C/C++: recuperar parámetros de tarea
+# <a name="cc-code-example-retrieving-task-parameters"></a>Ejemplo de código de C/C++: Recuperar parámetros de tarea
 
-En este ejemplo se recupera la cadena de parámetro que se ejecuta cuando se ejecuta la tarea y se muestra esa cadena en la pantalla. En este ejemplo se da por supuesto que la tarea y la tarea de prueba ya existen en el equipo local.
+En este ejemplo se recupera la cadena de parámetro que se ejecuta cuando se ejecuta la tarea y se muestra esa cadena en la pantalla. En este ejemplo se supone que la tarea y la tarea de prueba ya existen en el equipo local.
 
 
 ```C++
@@ -120,12 +120,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Ejemplos de Programador de tareas 1,0](task-scheduler-1-0-examples.md)
+[Programador de tareas ejemplos de 1.0](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

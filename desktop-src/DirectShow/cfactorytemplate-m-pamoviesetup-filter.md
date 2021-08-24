@@ -1,7 +1,7 @@
 ---
-description: Puntero a una \_ estructura de filtro AMOVIESETUP.
+description: Puntero a una estructura FILTER \_ de AMOVIESETUP.
 ms.assetid: 72db601b-78a3-484a-a27f-147ec36022ab
-title: 'Miembro CFactoryTemplate:: m_pAMovieSetup_Filter (ComBase. h)'
+title: CFactoryTemplate::m_pAMovieSetup_Filter miembro (Combase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 087612acf99a41966ccd98d3b41d2b83255a86f9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bc4ee059eb47e08ae827392e8f29968463bb9bd4ca86e0c6b8a87a9f3bbd5667
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671147"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119697715"
 ---
-# <a name="cfactorytemplatem_pamoviesetup_filter-member"></a>Miembro de filtro CFactoryTemplate:: m \_ pAMovieSetup \_
+# <a name="cfactorytemplatem_pamoviesetup_filter-member"></a>Miembro de filtro CFactoryTemplate::m \_ pAMovieSetup \_
 
-Puntero a una estructura de [**\_ filtro AMOVIESETUP**](amoviesetup-filter.md) .
+Puntero a una [**estructura FILTER \_ de AMOVIESETUP.**](amoviesetup-filter.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,9 +36,9 @@ const AMOVIESETUP_FILTER *m_pAMovieSetup_Filter;
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use esta estructura para realizar un registro automático del filtro. Si el componente no es un filtro, esta variable miembro puede ser **null**. Para obtener más información, consulte Cómo registrar filtros de DirectShow.
+Use esta estructura para crear un filtro de registro propio. Si el componente no es un filtro, esta variable miembro puede ser **NULL.** Para obtener más información, vea How to Register DirectShow Filters.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,8 +46,8 @@ Use esta estructura para realizar un registro automático del filtro. Si el comp
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>ComBase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Combase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ Use esta estructura para realizar un registro automático del filtro. Si el comp
 
 <dl> <dt>
 
-[**Clase CFactoryTemplate**](cfactorytemplate.md)
+[**CFactoryTemplate (clase)**](cfactorytemplate.md)
 </dt> </dl>
 
  

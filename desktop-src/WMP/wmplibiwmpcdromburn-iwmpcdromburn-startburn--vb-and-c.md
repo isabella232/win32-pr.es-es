@@ -1,11 +1,11 @@
 ---
-title: IWMPCdromBurn startBurn, método
-description: El método startBurn graba el CD.
+title: IWMPCdromAsync startAsync (método)
+description: El método startAsync abate el CD.
 ms.assetid: e852c011-5f54-469f-aead-37fa711ef876
 keywords:
-- método startBurn de Windows Media Player
-- método startBurn Windows Media Player, interfaz IWMPCdromBurn
-- Interfaz IWMPCdromBurn Windows Media Player, método startBurn
+- Método startAsync Reproductor de Windows Media
+- Método startAsync Reproductor de Windows Media , interfaz IWMPCdromAsync
+- Interfaz IWMPCdromAsync Reproductor de Windows Media método , startAsync
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe185d8993286e4be3935b43f6c1e9757623309d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7806501a619d6172d9f1ce0715045c822b30326c2b59c268f432708ea13923ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718826"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119761075"
 ---
-# <a name="iwmpcdromburnstartburn-method"></a>IWMPCdromBurn:: startBurn (método)
+# <a name="iwmpcdromburnstartburn-method"></a>IWMPCdromAsync::startAsync (método)
 
-El método **startBurn** graba el CD.
+El **método startAsync** abate el CD.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,19 +53,19 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor de **burnstate** debe ser WmpbsReady o wmpbsStopped antes de llamar a este método.
+El valor de **burnstate** debe ser wmpbsReady o wmpbsStopped antes de llamar a este método.
 
-Este método no funcionará si la unidad de CD no es una grabadora o si no se puede escribir en el disco de la unidad. Use **isavailable** para determinar si se puede grabar un CD.
+Este método no funcionará si la unidad de CD no es un resalte o si el disco de la unidad no se puede escribir. Use **isAvailable para** determinar si un CD se puede inquiete.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 11.<br/>                                                                                    |
+| Versión<br/>   | Reproductor de Windows Media 11.<br/>                                                                                    |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -75,16 +75,16 @@ Este método no funcionará si la unidad de CD no es una grabadora o si no se pu
 
 <dl> <dt>
 
-[**Interfaz IWMPCdromBurn (VB y C#)**](iwmpcdromburn--vb-and-c.md)
+[**Interfaz IWMPCdromRomRom (VB y C#)**](iwmpcdromburn--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPCdromBurn. burnState (VB y C#)**](wmplibiwmpcdromburn-iwmpcdromburn-burnstate--vb-and-c.md)
+[**IWMPCdromIntegración.burnState (VB y C#)**](wmplibiwmpcdromburn-iwmpcdromburn-burnstate--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPCdromBurn. isAvailable (VB y C#)**](wmplibiwmpcdromburn-iwmpcdromburn-isavailable--vb-and-c.md)
+[**IWMPCdromRom.isAvailable (VB y C#)**](wmplibiwmpcdromburn-iwmpcdromburn-isavailable--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPCdromBurn. stopBurn (VB y C#)**](wmplibiwmpcdromburn-iwmpcdromburn-stopburn-iwmpcdromburn.md)
+[**IWMPCdromRom.stopRom (VB y C#)**](wmplibiwmpcdromburn-iwmpcdromburn-stopburn-iwmpcdromburn.md)
 </dt> </dl>
 
  

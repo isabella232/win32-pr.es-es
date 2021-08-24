@@ -1,7 +1,7 @@
 ---
-description: Recupera un objeto InternetExplorer que representa la ventana del shell.
+description: Recupera un objeto InternetExplorer que representa la ventana shell.
 ms.assetid: 32390f35-f83a-45d9-a240-282da7cb2b13
-title: Método ShellWindows. Item (exdisp. h)
+title: Método ShellWindows.Item (Exdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: ccdb73deb1d97d9c6e1ad8c335db3c58d796a299
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fdc64659037cbdb471d7c2142ed6c096684966cd920d4e1f6ecee046d28cce8b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119660592"
 ---
-# <a name="shellwindowsitem-method"></a>ShellWindows. Item (método)
+# <a name="shellwindowsitem-method"></a>Método ShellWindows.Item
 
-Recupera un objeto [**InternetExplorer**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752084(v=vs.85)) que representa la ventana del shell.
+Recupera un objeto [**InternetExplorer**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752084(v=vs.85)) que representa la ventana shell.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,12 +39,12 @@ retVal = ShellWindows.Item(
 
 <dl> <dt>
 
-*iIndex* \[ en, opcional\]
+*iIndex* \[ in, opcional\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variant**
 
-Índice de base cero del elemento que se va a recuperar. Este valor debe ser menor que el valor de la propiedad [**Count**](shellwindows-count.md) . Si se omite este valor, se usa un valor predeterminado de 0.
+Índice de base cero del elemento que se va a recuperar. Este valor debe ser menor que el valor de la [**propiedad Count.**](shellwindows-count.md) Si se omite este valor, se usa un valor predeterminado de 0.
 
 </dd> </dl>
 
@@ -52,13 +52,13 @@ Tipo: **variante**
 
 Tipo: **[ **IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch)\*\***
 
-Una referencia de objeto al objeto [**InternetExplorer**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752084(v=vs.85)) que representa la ventana de Shell.
+Referencia de objeto al [**objeto InternetExplorer**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752084(v=vs.85)) que representa la ventana shell.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa [**Item**](folderitemverbs-item.md) para recuperar el objeto [**InternetExplorer**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752084(v=vs.85)) que representa el primer elemento de la ventana de Shell. Se muestra el uso correcto de JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se [**usa Item**](folderitemverbs-item.md) para recuperar el [**objeto InternetExplorer**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752084(v=vs.85)) que representa el primer elemento de ventana de Shell. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JavaScript
@@ -85,7 +85,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -149,12 +149,12 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Exdisp. h</dt> </dl>                            |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Exdisp.h</dt> </dl>                            |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

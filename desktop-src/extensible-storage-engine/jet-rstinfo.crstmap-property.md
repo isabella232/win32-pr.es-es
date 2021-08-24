@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_RSTINFO. crstmap'
-title: Propiedad JET_RSTINFO. crstmap
+description: 'Más información sobre: JET_RSTINFO.crstmap'
+title: JET_RSTINFO.crstmap, propiedad
 TOCTitle: 'crstmap property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_RSTINFO.crstmap
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_rstinfo.crstmap(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 42f1a225df4c22c6b3e8e9c3a0c388fa05070a71
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0bbfc20e93fabd5e430add72378ecdea649d55e4f1e2daafc7dcd741cdecee98
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686632"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119719785"
 ---
-# <a name="jet_rstinfocrstmap-property"></a>Propiedad JET_RSTINFO. crstmap
+# <a name="jet_rstinfocrstmap-property"></a>JET_RSTINFO.crstmap, propiedad
 
-Obtiene o establece el número de elementos de la matriz de asignación de restauración.
+Obtiene o establece el número de elementos de la matriz restore-map.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public int crstmap { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_RSTINFO (clase)](./jet-rstinfo-class.md)
+[JET_RSTINFO clase](./jet-rstinfo-class.md)
 
-[Miembros de JET_RSTINFO](./jet-rstinfo-members.md)
+[JET_RSTINFO miembros](./jet-rstinfo-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

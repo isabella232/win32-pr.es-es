@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXSHEvalDirection (D3dx9math.h): evalúa las funciones básicas de armónica esférica (SH) a partir de un vector de dirección de entrada.'
+description: 'Función D3DXSHEvalDirection (D3dx9math.h): evalúa las funciones de base de armónica esférica (SH) a partir de un vector de dirección de entrada.'
 ms.assetid: f30ba32c-d6b0-4e4e-b5cd-839ed7821855
 title: Función D3DXSHEvalDirection (D3dx9math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e02f0f3d8770b4b703f275de3225eacb301a7843
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 16b2d75c885a2d5328b9a11ff9c8924ad78bf3e514e5b5696397625b5b080529
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093970"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119676085"
 ---
 # <a name="d3dxshevaldirection-function-d3dx9mathh"></a>Función D3DXSHEvalDirection (D3dx9math.h)
 
-Evalúa las funciones básicas de armónica esférica (SH) a partir de un vector de dirección de entrada.
+Evalúa las funciones de base armónica esféricas (SH) a partir de un vector de dirección de entrada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ FLOAT* D3DXSHEvalDirection(
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntero a coeficientes de salida de armónica esférica (SH). La evaluación genera coeficientes order-to-order. Vea la sección Comentarios.
+Puntero a coeficientes de salida armónicos esféricos (SH). La evaluación genera coeficientes order-to-order. Vea la sección Comentarios.
 
 </dd> <dt>
 
@@ -65,7 +65,7 @@ Orden de la evaluación de SH. Debe estar en el intervalo de [D3DXSH \_ MINORDER
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-(x, y, z) vector de dirección en el que se evaluarán las funciones de base sh. Debe normalizarse. Vea la sección Comentarios.
+Vector de dirección (x, y, z) en el que se evalúan las funciones de base sh. Debe normalizarse. Vea la sección Comentarios.
 
 </dd> </dl>
 
@@ -101,7 +101,7 @@ Las ecuaciones siguientes muestran la relación entre las coordenadas cartesiana
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

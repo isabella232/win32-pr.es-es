@@ -1,5 +1,5 @@
 ---
-description: IUserIdentity::GetName no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, use Cuentas de usuario con cambio rápido de usuario y Escritorio remoto.
+description: IUserIdentity::GetName no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, use cuentas de usuario con cambio rápido de usuario y Escritorio remoto.
 ms.assetid: 4db24dd2-d2b8-4a58-9c16-0e721bc195da
 title: Método IUserIdentity::GetName (Msident.h)
 ms.topic: reference
@@ -82,7 +82,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

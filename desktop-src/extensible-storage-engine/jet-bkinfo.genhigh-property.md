@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_BKINFO. genHigh'
-title: Propiedad JET_BKINFO. genHigh
+description: 'Más información sobre: JET_BKINFO.genHigh'
+title: JET_BKINFO.genHigh, propiedad
 TOCTitle: 'genHigh property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_BKINFO.genHigh
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_bkinfo.genhigh(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 01d88f766fa50801cc92bf7629f3a2e15cbb7272
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 87f9d5386c9d38fef17050800d290f9a3067b32e1435a9444a2c3010cbf7d2da
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912178"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119721085"
 ---
-# <a name="jet_bkinfogenhigh-property"></a>Propiedad JET_BKINFO. genHigh
+# <a name="jet_bkinfogenhigh-property"></a>JET_BKINFO.genHigh, propiedad
 
 Obtiene o establece la alta generación de la copia de seguridad.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public int genHigh { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_BKINFO](./jet-bkinfo-structure2.md)
+[JET_BKINFO estructura](./jet-bkinfo-structure2.md)
 
-[Miembros de JET_BKINFO](./jet-bkinfo-members.md)
+[JET_BKINFO miembros](./jet-bkinfo-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

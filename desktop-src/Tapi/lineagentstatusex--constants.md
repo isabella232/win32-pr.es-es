@@ -1,19 +1,19 @@
 ---
-description: Las \_ constantes LINEAGENTSTATUSEX describen el estado de un agente.
+description: Las constantes LINEAGENTSTATUSEX \_ describen el estado de un agente.
 ms.assetid: 4edebbb4-e031-468e-ad88-3226814a606b
-title: Constantes de LINEAGENTSTATUSEX_ (TAPI. h)
+title: LINEAGENTSTATUSEX_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ada704a79310233140425e71b95295a1b9c43d97
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c42fa69c4218bbf16a2017608190bbed28920e1906c92d402d6ab776346259ed
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690971"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119682025"
 ---
-# <a name="lineagentstatusex_-constants"></a>Constantes de LINEAGENTSTATUSEX \_
+# <a name="lineagentstatusex_-constants"></a>Constantes LINEAGENTSTATUSEX \_
 
-Las **\_ constantes LINEAGENTSTATUSEX** describen el estado de un agente.
+Las **constantes LINEAGENTSTATUSEX \_ describen** el estado de un agente.
 
 <dl> <dt>
 
@@ -27,7 +27,7 @@ Se ha agregado un agente.
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEAGENTSTATUSEX_STATE"></span><span id="lineagentstatusex_state"></span>**Estado de LINEAGENTSTATUSEX \_**
+<span id="LINEAGENTSTATUSEX_STATE"></span><span id="lineagentstatusex_state"></span>**ESTADO DE \_ LINEAGENTSTATUSEX**
 </dt> <dd> <dl> <dt>
 
 
@@ -51,10 +51,10 @@ El estado del agente tiene información actualizada.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 2,2<br/>                                                      |
-| Encabezado<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 2.2<br/>                                                      |
+| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

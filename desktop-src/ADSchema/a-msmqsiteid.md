@@ -32,10 +32,10 @@ El **atributo MSMQ-Site-ID** contiene información de modo mixto de MSMQ.
 | CN                | MSMQ-Site-ID                                          |
 | Ldap-Display-Name | mSMQSiteID                                            |
 | Size              | \-                                                    |
-| Privilegio actualizar  | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.953                                |
-| System-Id-Guid    | 9a0dc340-c100-11d1-ero5-0080c76670c0                  |
+| System-Id-Guid    | 9a0dc340-c100-11d1-gni5-0080c76670c0                  |
 | Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -53,7 +53,7 @@ El **atributo MSMQ-Site-ID** contiene información de modo mixto de MSMQ.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------|
 | Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
@@ -74,7 +74,7 @@ El **atributo MSMQ-Site-ID** contiene información de modo mixto de MSMQ.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------|
 | Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
@@ -95,7 +95,7 @@ El **atributo MSMQ-Site-ID** contiene información de modo mixto de MSMQ.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------|
 | Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
@@ -116,7 +116,7 @@ El **atributo MSMQ-Site-ID** contiene información de modo mixto de MSMQ.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------|
 | Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
@@ -137,7 +137,7 @@ El **atributo MSMQ-Site-ID** contiene información de modo mixto de MSMQ.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------|
 | Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
@@ -158,7 +158,7 @@ El **atributo MSMQ-Site-ID** contiene información de modo mixto de MSMQ.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------|
 | Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |

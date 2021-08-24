@@ -1,63 +1,63 @@
 ---
 title: Marco de ventana personalizado mediante DWM
-description: En este tema se muestra cómo usar las API de Administrador de ventanas de escritorio (DWM) para crear marcos de ventana personalizados para la aplicación.
+description: En este tema se muestra cómo usar las API Administrador de ventanas de escritorio (DWM) para crear marcos de ventana personalizados para la aplicación.
 ms.assetid: 7f7dc902-40d3-44e9-adc2-05a39c634eb3
 keywords:
 - Administrador de ventanas de escritorio (DWM), marcos de ventana personalizados
 - DWM (Administrador de ventanas de escritorio), marcos de ventana personalizados
 - marcos de ventana personalizados
 - quitar fotogramas estándar
-- extender fotogramas de cliente
-- Administrador de ventanas de escritorio (DWM), extender fotogramas de cliente
-- DWM (Administrador de ventanas de escritorio), extender fotogramas de cliente
+- ampliación de marcos de cliente
+- Administrador de ventanas de escritorio (DWM), ampliar marcos de cliente
+- DWM (Administrador de ventanas de escritorio), ampliación de marcos de cliente
 - Administrador de ventanas de escritorio (DWM), quitar fotogramas estándar
 - DWM (Administrador de ventanas de escritorio), quitar fotogramas estándar
 - Administrador de ventanas de escritorio (DWM), dibujar en marcos extendidos
 - DWM (Administrador de ventanas de escritorio), dibujar en marcos extendidos
 - dibujar en marcos extendidos
 - comprobación de visitas
-- Administrador de ventanas de escritorio (DWM), prueba de posicionamiento
-- DWM (Administrador de ventanas de escritorio), prueba de posicionamiento
+- Administrador de ventanas de escritorio (DWM), pruebas de impacto
+- DWM (Administrador de ventanas de escritorio), pruebas de impacto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 66a27a9b71dd2dd91cb000a352ef039de2a71cd9
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 0b440f475dfacc610354ce151ab0be42dbbe3069390b1efa211195252f7a3914
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104078337"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119741478"
 ---
 # <a name="custom-window-frame-using-dwm"></a>Marco de ventana personalizado mediante DWM
 
-En este tema se muestra cómo usar las API de Administrador de ventanas de escritorio (DWM) para crear marcos de ventana personalizados para la aplicación.
+En este tema se muestra cómo usar las API Administrador de ventanas de escritorio (DWM) para crear marcos de ventana personalizados para la aplicación.
 
 -   [Introducción](#introduction)
--   [Extender el marco de cliente](#extending-the-client-frame)
--   [Quitar el fotograma estándar](#removing-the-standard-frame)
--   [Dibujar en la ventana de marco extendido](#drawing-in-the-extended-frame-window)
--   [Habilitar la prueba de posicionamiento para el marco personalizado](#enabling-hit-testing-for-the-custom-frame)
--   [Apéndice A: procedimiento de ventana de ejemplo](#appendix-a-sample-window-procedure)
--   [Apéndice B: pintar el título del título](#appendix-b-painting-the-caption-title)
--   [Apéndice C: función HitTestNCA](#appendix-c-hittestnca-function)
+-   [Extensión del marco de cliente](#extending-the-client-frame)
+-   [Quitar el marco estándar](#removing-the-standard-frame)
+-   [Dibujo en la ventana marco extendido](#drawing-in-the-extended-frame-window)
+-   [Habilitación de las pruebas de acceso para el marco personalizado](#enabling-hit-testing-for-the-custom-frame)
+-   [Apéndice A: Procedimiento de ventana de ejemplo](#appendix-a-sample-window-procedure)
+-   [Apéndice B: Pintar el título del título](#appendix-b-painting-the-caption-title)
+-   [Apéndice C: Función HitTestNCA](#appendix-c-hittestnca-function)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="introduction"></a>Introducción
 
-En Windows Vista y versiones posteriores, el DWM controla la apariencia de las áreas no cliente de las ventanas de la aplicación (la barra de título, el icono, el borde de la ventana y los botones de título). Con las API de DWM, puede cambiar la forma en que DWM representa el marco de una ventana.
+En Windows Vista y versiones posteriores, el DWM controla la apariencia de las áreas que no son cliente de las ventanas de la aplicación (la barra de título, el icono, el borde de la ventana y los botones de título). Con las API de DWM, puede cambiar la forma en que DWM representa el marco de una ventana.
 
-Una característica de las API de DWM es la capacidad de extender el marco de aplicación en el área de cliente. Esto le permite integrar un elemento de la interfaz de usuario de cliente (por ejemplo, una barra de herramientas) en el marco, de forma que la interfaz de usuario controla un lugar más destacado en la interfaz de usuario de la aplicación. Por ejemplo, Windows Internet Explorer 7 en Windows Vista integra la barra de navegación en el marco de la ventana extendiendo la parte superior del marco, tal como se muestra en la siguiente captura de pantalla.
+Una característica de las API de DWM es la capacidad de ampliar el marco de aplicación en el área cliente. Esto le permite integrar un elemento de interfaz de usuario de cliente,como una barra de herramientas, en el marco, lo que proporciona a los controles de interfaz de usuario un lugar más destacado en la interfaz de usuario de la aplicación. Por ejemplo, Windows Internet Explorer 7 en Windows Vista integra la barra de navegación en el marco de ventana extendiendo la parte superior del marco, como se muestra en la siguiente captura de pantalla.
 
-![barra de navegación integrada en el marco de la ventana.](images/ie7-extendedborder-boxed.png)
+![barra de navegación integrada en el marco de ventana.](images/ie7-extendedborder-boxed.png)
 
-La capacidad de extender el marco de ventana también le permite crear fotogramas personalizados mientras mantiene la apariencia y el funcionamiento de la ventana. Por ejemplo, Microsoft Office Word 2007 dibuja el botón de Office y la barra de herramientas de acceso rápido dentro del marco personalizado, a la vez que proporciona los botones estándar minimizar, maximizar y cerrar título, como se muestra en la siguiente captura de pantalla.
+La capacidad de ampliar el marco de ventana también le permite crear fotogramas personalizados mientras mantiene la apariencia de la ventana. Por ejemplo, Microsoft Office Word 2007 dibuja el botón Office y la barra de herramientas acceso rápido dentro del marco personalizado, al tiempo que proporciona los botones estándar Minimizar, Maximizar y Cerrar título, como se muestra en la siguiente captura de pantalla.
 
-![botón de Office y barra de herramientas de acceso rápido en Word 2007](images/word2007-customborder-boxed.png)
+![Botón office y barra de herramientas de acceso rápido en word 2007](images/word2007-customborder-boxed.png)
 
-## <a name="extending-the-client-frame"></a>Extender el marco de cliente
+## <a name="extending-the-client-frame"></a>Extensión del marco de cliente
 
-La función [**DwmExtendFrameIntoClientArea**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmextendframeintoclientarea) expone la funcionalidad para extender el marco en el área cliente. Para extender el marco, pase el identificador de la ventana de destino junto con los valores de margen de margen a **DwmExtendFrameIntoClientArea**. Los valores de bajorrelieve del margen determinan hasta qué punto se extiende el marco en los cuatro lados de la ventana.
+La función [**DwmExtendFrameIntoClientArea**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmextendframeintoclientarea) expone la funcionalidad para ampliar el marco en el área de cliente. Para extender el marco, pase el identificador de la ventana de destino junto con los valores del conjunto de márgenes a **DwmExtendFrameIntoClientArea**. Los valores del conjunto de márgenes determinan hasta qué punto extender el marco en los cuatro lados de la ventana.
 
-En el código siguiente se muestra el uso de [**DwmExtendFrameIntoClientArea**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmextendframeintoclientarea) para extender el marco.
+En el código siguiente se muestra el uso [**de DwmExtendFrameIntoClientArea para**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmextendframeintoclientarea) ampliar el marco.
 
 
 ```
@@ -86,25 +86,25 @@ if (message == WM_ACTIVATE)
 
 
 
-Tenga en cuenta que la extensión de marco se realiza dentro del mensaje de [**\_ activación de WM**](/windows/desktop/inputdev/wm-activate) en lugar del mensaje de [**\_ creación de WM**](/windows/desktop/winmsg/wm-create) . Esto garantiza que la extensión de marco se administra correctamente cuando la ventana tiene el tamaño predeterminado y cuando está maximizada.
+Tenga en cuenta que la extensión de marco se realiza dentro del [**mensaje WM \_ ACTIVATE**](/windows/desktop/inputdev/wm-activate) en lugar del [**mensaje WM \_ CREATE.**](/windows/desktop/winmsg/wm-create) Esto garantiza que la extensión de marco se controla correctamente cuando la ventana tiene su tamaño predeterminado y cuando está maximizada.
 
-La siguiente imagen muestra un marco de ventana estándar (a la izquierda) y el mismo marco de ventana extendido (a la derecha). El marco se extiende mediante el ejemplo de código anterior y el predeterminado Microsoft Visual Studio [**WNDCLASS**](/windows/win32/api/winuser/ns-winuser-wndclassa) / [**WNDCLASSEX**](/windows/win32/api/winuser/ns-winuser-wndclassexa) background (color \_ window + 1).
+En la imagen siguiente se muestra un marco de ventana estándar (a la izquierda) y el mismo marco de ventana extendido (a la derecha). El marco se extiende con el ejemplo de código anterior y el Microsoft Visual Studio [**WNDCLASS**](/windows/win32/api/winuser/ns-winuser-wndclassa) / [**WNDCLASSEX**](/windows/win32/api/winuser/ns-winuser-wndclassexa) (COLOR \_ WINDOW +1).
 
-![captura de pantalla de un fotograma estándar (izquierda) y marco extendido (derecha) con fondo blanco](images/white-sidebyside.png)
+![captura de pantalla de un marco estándar (izquierda) y extendido (derecha) con fondo blanco](images/white-sidebyside.png)
 
-La diferencia visual entre estas dos ventanas es muy sutil. La única diferencia entre los dos es que en la ventana de la derecha falta el borde de línea negra fina de la región cliente en la ventana de la izquierda. El motivo de este borde que falta es que se incorpora en el marco extendido, pero el resto del área cliente no lo está. Para que los fotogramas extendidos sean visibles, las regiones subyacentes de cada uno de los lados del marco extendido deben tener datos de píxeles con un valor alfa de 0. El borde negro alrededor de la región del cliente tiene datos de píxeles en los que todos los valores de color (rojo, verde, azul y alfa) se establecen en 0. El resto del fondo no tiene el valor alfa establecido en 0, por lo que el resto del marco extendido no es visible.
+La diferencia visual entre estas dos ventanas es muy sutil. La única diferencia entre los dos es que falta el borde fino de la línea negra de la región del cliente en la ventana de la izquierda en la ventana de la derecha. El motivo de que falte este borde es que se incorpora en el marco extendido, pero el resto del área cliente no lo está. Para que los fotogramas extendidos sean visibles, las regiones subyacentes a cada uno de los lados del marco extendido deben tener datos de píxeles con un valor alfa de 0. El borde negro alrededor de la región del cliente tiene datos de píxeles en los que todos los valores de color (rojo, verde, azul y alfa) se establecen en 0. El resto del fondo no tiene el valor alfa establecido en 0, por lo que el resto del marco extendido no está visible.
 
-La manera más sencilla de asegurarse de que los fotogramas extendidos están visibles es pintar todo el color de la región cliente. Para ello, inicialice el miembro *hbrBackground* de la estructura [**WNDCLASS**](/windows/win32/api/winuser/ns-winuser-wndclassa) o [**WNDCLASSEX**](/windows/win32/api/winuser/ns-winuser-wndclassexa) en el identificador del pincel negro de acciones \_ . La siguiente imagen muestra el mismo marco estándar (izquierda) y el marco extendido (derecha) mostrados anteriormente. Sin embargo, esta vez *hbrBackground* se establece en el \_ controlador de pincel negro Obtenido de la función [**GetStockObject**](/windows/desktop/api/wingdi/nf-wingdi-getstockobject) .
+La manera más fácil de asegurarse de que los marcos extendidos son visibles es pintar toda la región de cliente en negro. Para ello, inicialice el *miembro hbrBackground* de la estructura [**WNDCLASS**](/windows/win32/api/winuser/ns-winuser-wndclassa) o [**WNDCLASSEX**](/windows/win32/api/winuser/ns-winuser-wndclassexa) en el identificador del pincel negro \_ de existencias. En la imagen siguiente se muestra el mismo marco estándar (izquierdo) y el marco extendido (derecha) mostrados anteriormente. Esta vez, sin embargo, *hbrBackground* se establece en el identificador BLACK BRUSH obtenido \_ de la función [**GetStockObject.**](/windows/desktop/api/wingdi/nf-wingdi-getstockobject)
 
-![captura de pantalla de un fotograma estándar (izquierda) y marco extendido (derecha) con fondo negro](images/standard-extended-sidebyside.png)
+![captura de pantalla de un marco estándar (izquierda) y extendido (derecha) con fondo negro](images/standard-extended-sidebyside.png)
 
-## <a name="removing-the-standard-frame"></a>Quitar el fotograma estándar
+## <a name="removing-the-standard-frame"></a>Quitar el marco estándar
 
-Después de extender el marco de la aplicación y hacer que esté visible, puede quitar el fotograma estándar. Quitar el fotograma estándar permite controlar el ancho de cada lado del marco en lugar de simplemente extender el fotograma estándar.
+Una vez que haya ampliado el marco de la aplicación y lo haya hecho visible, puede quitar el marco estándar. Quitar el marco estándar le permite controlar el ancho de cada lado del marco en lugar de simplemente extender el marco estándar.
 
-Para quitar el marco de ventana estándar, debe controlar el mensaje de [**\_ NCCALCSIZE de WM**](/windows/desktop/winmsg/wm-nccalcsize) , en concreto cuando el valor de *wParam* es **true** y el valor devuelto es 0. Al hacerlo, la aplicación usa toda la región de la ventana como el área cliente, quitando el fotograma estándar.
+Para quitar el marco de ventana estándar, debe controlar el mensaje [**\_ WM NCCALCSIZE,**](/windows/desktop/winmsg/wm-nccalcsize) específicamente cuando su valor *wParam* es **TRUE** y el valor devuelto es 0. Al hacerlo, la aplicación usa toda la región de ventana como área de cliente, quitando el marco estándar.
 
-Los resultados del control del mensaje de [**\_ NCCALCSIZE de WM**](/windows/desktop/winmsg/wm-nccalcsize) no estarán visibles hasta que sea necesario cambiar el tamaño de la región del cliente. Hasta ese momento, la vista inicial de la ventana aparece con el marco estándar y los bordes extendidos. Para solucionar este error, debe cambiar el tamaño de la ventana o realizar una acción que inicie un mensaje de **\_ NCCALCSIZE de WM** en el momento de la creación de la ventana. Esto puede realizarse mediante el uso de la función [**SetWindowPos**](/windows/desktop/api/winuser/nf-winuser-setwindowpos) para desplace la ventana y cambiar su tamaño. En el código siguiente se muestra una llamada a **SetWindowPos** que fuerza el envío de un mensaje de **WM \_ NCCALCSIZE** con los atributos de rectángulo de la ventana actual y la \_ marca FRAMECHANGED de SWP.
+Los resultados del control del [**mensaje \_ WM NCCALCSIZE**](/windows/desktop/winmsg/wm-nccalcsize) no son visibles hasta que sea necesario cambiar el tamaño de la región del cliente. Hasta ese momento, la vista inicial de la ventana aparece con el marco estándar y los bordes extendidos. Para solucionar este problema, debe cambiar el tamaño de la ventana o realizar una acción que inicie un mensaje **\_ WM NCCALCSIZE** en el momento de la creación de la ventana. Esto se puede lograr mediante la función [**SetWindowPos**](/windows/desktop/api/winuser/nf-winuser-setwindowpos) para mover la ventana y cambiar su tamaño. El código siguiente muestra una llamada a **SetWindowPos** que fuerza el envío de un mensaje **\_ WM NCCALCSIZE** mediante los atributos de rectángulo de ventana actuales y la marca \_ SWP FRAMECHANGED.
 
 
 ```
@@ -128,34 +128,34 @@ if (message == WM_CREATE)
 
 
 
-En la imagen siguiente se muestra el marco estándar (izquierda) y el fotograma recién extendido sin el marco estándar (derecha).
+En la imagen siguiente se muestra el marco estándar (izquierda) y el marco recién extendido sin el marco estándar (derecha).
 
-![captura de pantalla de un fotograma estándar (izquierda) y un fotograma personalizado (derecha)](images/standard-custom-sidebyside.png)
+![captura de pantalla de un marco estándar (izquierda) y marco personalizado (derecha)](images/standard-custom-sidebyside.png)
 
-## <a name="drawing-in-the-extended-frame-window"></a>Dibujar en la ventana de marco extendido
+## <a name="drawing-in-the-extended-frame-window"></a>Dibujo en la ventana marco extendido
 
-Al quitar el fotograma estándar, pierde el dibujo automático del icono de la aplicación y del título. Para volver a agregarlos a la aplicación, debe dibujarlos usted mismo. Para ello, primero examine el cambio que se ha producido en el área de cliente.
+Al quitar el marco estándar, se pierde el dibujo automático del icono y el título de la aplicación. Para volver a agregarlos a la aplicación, debe dibujarlos usted mismo. Para ello, primero debe ver el cambio que se ha producido en el área cliente.
 
-Con la eliminación del fotograma estándar, el área de cliente ahora se compone de toda la ventana, incluido el marco extendido. Esto incluye la región donde se dibujan los botones de título. En la siguiente comparación en paralelo, el área cliente para el fotograma estándar y el marco extendido personalizado se resaltan en rojo. El área cliente de la ventana de marco estándar (izquierda) es la región negra. En la ventana marco extendido (derecha), el área cliente es toda la ventana.
+Con la eliminación del marco estándar, el área de cliente ahora consta de toda la ventana, incluido el marco extendido. Esto incluye la región donde se dibujan los botones de título. En la siguiente comparación en paralelo, el área de cliente para el marco estándar y el marco extendido personalizado se resalta en rojo. El área de cliente de la ventana de marco estándar (izquierda) es la región negra. En la ventana marco extendido (derecha), el área de cliente es toda la ventana.
 
-![captura de pantalla de las áreas de cliente destacadas en rojo en el marco estándar y personalizado](images/clientarea-sidebyside.png)
+![captura de pantalla de las áreas de cliente resaltadas de color rojo en el marco estándar y personalizado](images/clientarea-sidebyside.png)
 
-Dado que toda la ventana es el área de cliente, puede dibujar simplemente lo que desea en el marco extendido. Para agregar un título a la aplicación, solo tiene que dibujar texto en la región adecuada. En la imagen siguiente se muestra el texto con los que se dibuja en el marco de título personalizado. El título se dibuja con la función [**DrawThemeTextEx**](/windows/win32/api/uxtheme/nf-uxtheme-drawthemetextex) . Para ver el código que pinta el título, vea [el Apéndice B: pintar el título del](#appendix-b-painting-the-caption-title)título.
+Dado que toda la ventana es el área de cliente, simplemente puede dibujar lo que quiera en el marco extendido. Para agregar un título a la aplicación, basta con dibujar texto en la región adecuada. En la imagen siguiente se muestra el texto con temas dibujado en el marco de título personalizado. El título se dibuja mediante [**la función DrawThemeTextEx.**](/windows/win32/api/uxtheme/nf-uxtheme-drawthemetextex) Para ver el código que pinta el título, vea [Apéndice B: Pintar el título del título](#appendix-b-painting-the-caption-title).
 
 ![captura de pantalla de un marco personalizado con título](images/custom-caption-title.png)
 
 > [!Note]  
-> Al dibujar en el marco personalizado, tenga cuidado al colocar controles de interfaz de usuario. Dado que toda la ventana es su región de cliente, debe ajustar la posición del control de interfaz de usuario para cada ancho de marco si no desea que aparezcan en o en el marco extendido.
+> Al dibujar en el marco personalizado, tenga cuidado al colocar controles de interfaz de usuario. Dado que toda la ventana es la región del cliente, debe ajustar la ubicación del control de interfaz de usuario para cada ancho de marco si no desea que aparezcan en o en el marco extendido.
 
- 
+ 
 
-## <a name="enabling-hit-testing-for-the-custom-frame"></a>Habilitar la prueba de posicionamiento para el marco personalizado
+## <a name="enabling-hit-testing-for-the-custom-frame"></a>Habilitación de las pruebas de acceso para el marco personalizado
 
-Un efecto secundario de quitar el fotograma estándar es la pérdida del cambio de tamaño y el comportamiento de movimiento predeterminados. Para que la aplicación eMule correctamente el comportamiento estándar de las ventanas, debe implementar la lógica para controlar las pruebas de posicionamiento de los botones de título y el cambio de tamaño o movimiento de fotogramas.
+Un efecto secundario de quitar el marco estándar es la pérdida del comportamiento de cambio de tamaño y movimiento predeterminado. Para que la aplicación emule correctamente el comportamiento de la ventana estándar, deberá implementar lógica para controlar las pruebas de posición del botón de título y cambiar el tamaño o el movimiento del marco.
 
-En el caso de las pruebas de posicionamiento de los botones de título, DWM proporciona la función [**DwmDefWindowProc**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmdefwindowproc) . Para realizar correctamente una prueba de posicionamiento de los botones de título en escenarios de fotogramas personalizados, los mensajes se deben pasar primero a **DwmDefWindowProc** para el control. **DwmDefWindowProc** devuelve **true** si se controla un mensaje y **false** en caso contrario. Si **DwmDefWindowProc** no controla el mensaje, la aplicación debe controlar el mensaje en sí o pasar el mensaje a [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca).
+Para las pruebas de pulsación del botón de título, DWM [**proporciona la función DwmDefWindowProc.**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmdefwindowproc) Para probar correctamente los botones de título en escenarios de fotogramas personalizados, primero se deben pasar mensajes a **DwmDefWindowProc** para su control. **DwmDefWindowProc devuelve** **TRUE si** se controla un mensaje y **FALSE** si no lo está. Si **DwmDefWindowProc** no controla el mensaje, la aplicación debe controlar el propio mensaje o pasarlo [**a DefWindowProc.**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)
 
-Para cambiar el tamaño y mover el marco, la aplicación debe proporcionar la lógica de la prueba de posicionamiento y controlar los mensajes de prueba de posicionamiento del marco. Los mensajes de prueba de posicionamiento de fotogramas se le envían a través del mensaje de [**\_ NCHITTEST de WM**](/windows/desktop/inputdev/wm-nchittest) , incluso si la aplicación crea un marco personalizado sin el marco estándar. En el código siguiente se muestra cómo controlar el mensaje de **\_ NCHITTEST de WM** cuando [**DwmDefWindowProc**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmdefwindowproc) no lo controla. Para ver el código de la `HitTestNCA` función llamada, vea [Apéndice C: función HitTestNCA](#appendix-c-hittestnca-function).
+Para cambiar el tamaño y el movimiento de fotogramas, la aplicación debe proporcionar la lógica de prueba de impacto y controlar los mensajes de prueba de impacto del marco. Los mensajes de prueba de acceso de marco se envían a través del mensaje [**\_ WM NCHITTEST,**](/windows/desktop/inputdev/wm-nchittest) incluso si la aplicación crea un marco personalizado sin el marco estándar. El código siguiente muestra cómo controlar el **mensaje \_ WM NCHITTEST** [**cuando DwmDefWindowProc**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmdefwindowproc) no lo controla. Para ver el código de la función `HitTestNCA` llamada, vea [Apéndice C: HitTestNCA Function](#appendix-c-hittestnca-function).
 
 
 ```
@@ -173,9 +173,9 @@ if ((message == WM_NCHITTEST) && (lRet == 0))
 
 
 
-## <a name="appendix-a-sample-window-procedure"></a>Apéndice A: procedimiento de ventana de ejemplo
+## <a name="appendix-a-sample-window-procedure"></a>Apéndice A: Procedimiento de ventana de ejemplo
 
-En el ejemplo de código siguiente se muestra un procedimiento de ventana y sus funciones de trabajo auxiliares que se usan para crear una aplicación de marco personalizada.
+En el ejemplo de código siguiente se muestra un procedimiento de ventana y sus funciones de trabajo compatibles que se usan para crear una aplicación de marco personalizado.
 
 
 ```
@@ -350,9 +350,9 @@ LRESULT AppWinProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 
 
 
-## <a name="appendix-b-painting-the-caption-title"></a>Apéndice B: pintar el título del título
+## <a name="appendix-b-painting-the-caption-title"></a>Apéndice B: Pintar el título del título
 
-En el código siguiente se muestra cómo pintar un título de título en el marco extendido. Se debe llamar a esta función desde las llamadas a [**BeginPaint**](/windows/desktop/api/winuser/nf-winuser-beginpaint) y [**EndPaint**](/windows/desktop/api/winuser/nf-winuser-endpaint) .
+En el código siguiente se muestra cómo pintar un título de título en el marco extendido. Se debe llamar a esta función desde dentro de [**las llamadas BeginPaint**](/windows/desktop/api/winuser/nf-winuser-beginpaint) [**y EndPaint.**](/windows/desktop/api/winuser/nf-winuser-endpaint)
 
 
 ```
@@ -436,9 +436,9 @@ void PaintCustomCaption(HWND hWnd, HDC hdc)
 
 
 
-## <a name="appendix-c-hittestnca-function"></a>Apéndice C: función HitTestNCA
+## <a name="appendix-c-hittestnca-function"></a>Apéndice C: Función HitTestNCA
 
-En el código siguiente se muestra la función que se `HitTestNCA` usa [para habilitar la prueba de posicionamiento para el marco personalizado](#enabling-hit-testing-for-the-custom-frame). Esta función controla la lógica de la prueba de posicionamiento para el [**\_ NCHITTEST de WM**](/windows/desktop/inputdev/wm-nchittest) cuando [**DwmDefWindowProc**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmdefwindowproc) no controla el mensaje.
+En el código siguiente se muestra `HitTestNCA` la función utilizada en Habilitar las [pruebas de acceso para el marco personalizado.](#enabling-hit-testing-for-the-custom-frame) Esta función controla la lógica de prueba de acceso para [**WM \_ NCHITTEST**](/windows/desktop/inputdev/wm-nchittest) cuando [**DwmDefWindowProc**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmdefwindowproc) no controla el mensaje.
 
 
 ```
@@ -503,6 +503,6 @@ LRESULT HitTestNCA(HWND hWnd, WPARAM wParam, LPARAM lParam)
 [Desktop Window Manager Overview](dwm-overview.md) (Administrador de ventanas de escritorio)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

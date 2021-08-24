@@ -1,8 +1,8 @@
 ---
-description: La \_ Asociación AdjacentSlots de CIM describe el diseño de las ranuras en una placa de hospedaje o en una tarjeta de adaptador.
+description: La \_ asociación CIM AdjacentSlots describe el diseño de ranuras en una tarjeta de hospedaje o adaptador.
 ms.assetid: d604647f-7b2f-4f99-8d98-adf115ae9dfb
 ms.tgt_platform: multiple
-title: CIM_AdjacentSlots (clase)
+title: CIM_AdjacentSlots clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,19 +18,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 695f9c668d6f75864e46026deac9a969993596ff
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a219c2bbe95d8ccf3f89c029b4cb9f417ef8e2f0633a058c736b1339a41d7571
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119701305"
 ---
-# <a name="cim_adjacentslots-class"></a>\_Clase AdjacentSlots de CIM
+# <a name="cim_adjacentslots-class"></a>\_Cim AdjacentSlots (clase)
 
-La **Asociación \_ AdjacentSlots de CIM** describe el diseño de las ranuras en una placa de hospedaje o en una tarjeta de adaptador. La información, como la distancia entre las ranuras y si están "compartidas" (si se ha rellenado una, no se puede usar la otra ranura), se transmite como propiedades de asociación.
+La **\_ asociación CIM AdjacentSlots** describe el diseño de ranuras en una tarjeta de hospedaje o adaptador. La información, como la distancia entre las ranuras y si se "comparten" (si se rellena una, no se puede usar la otra ranura), se transmite como propiedades de asociación.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -51,13 +51,13 @@ class CIM_AdjacentSlots
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ AdjacentSlots** tiene estos tipos de miembros:
+La **clase \_ CIM AdjacentSlots** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ AdjacentSlots** tiene estas propiedades.
+La **clase \_ CIM AdjacentSlots** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -86,14 +86,14 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si es **true**, una tarjeta adaptador rellena una de las ranuras; la otra ranura debe dejarse vacía.
+Si **es TRUE,** una de las ranuras se rellena mediante una tarjeta adaptadora; La otra ranura se debe dejar vacía.
 
 </dd> <dt>
 
-**Ranuraa**
+**Slota**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ ranura CIM**
+Tipo de datos: **Ranura CIM \_**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -106,32 +106,32 @@ Referencia a una de las ranuras adyacentes.
 **SlotB**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ ranura CIM**
+Tipo de datos: **Ranura CIM \_**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Referencia a la ranura adyacente "otros".
+Referencia a la "otra" ranura adyacente.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

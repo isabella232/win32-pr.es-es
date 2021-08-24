@@ -1,11 +1,11 @@
 ---
-title: Atributo MSMQ-base-Priority
-description: La prioridad base de los mensajes transmitidos a esta cola.
+title: Atributo MSMQ-Base-Priority
+description: Prioridad base de los mensajes transmitidos a esta cola.
 ms.assetid: bcb2b13d-67f0-44d1-ae2c-129528fdf36d
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de prioridad de base de MSMQ
-- mSMQBasePriority esquema de AD de atributos
+- Esquema de AD del atributo MSMQ-Base-Priority
+- Esquema de AD del atributo mSMQBasePriority
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 67ea41f559b6fe9c9ef3dd43aed8ad5df3809702
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 0ad15423fbabfadab29fbc2c818ba244536eac6685f94540f7699ac5a4a8e394
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997417"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119762645"
 ---
-# <a name="msmq-base-priority-attribute"></a>Atributo MSMQ-base-Priority
+# <a name="msmq-base-priority-attribute"></a>Atributo MSMQ-Base-Priority
 
-La prioridad base de los mensajes transmitidos a esta cola.
+Prioridad base de los mensajes transmitidos a esta cola.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MSMQ-base-prioridad                   |
-| Nombre para mostrar de LDAP | mSMQBasePriority                     |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | Prioridad base de MSMQ                   |
+| Ldap-Display-Name | mSMQBasePriority                     |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.920               |
-| System-ID-GUID    | 9a0dc323-c100-11d1-bbc5-0080c76670c0 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | 9a0dc323-c100-11d1-ero5-0080c76670c0 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -55,18 +55,18 @@ La prioridad base de los mensajes transmitidos a esta cola.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | True                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Verdadero                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
+| Clases usadas en        | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ La prioridad base de los mensajes transmitidos a esta cola.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | True                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Verdadero                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
+| Clases usadas en        | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ La prioridad base de los mensajes transmitidos a esta cola.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | True                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Verdadero                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
+| Clases usadas en        | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ La prioridad base de los mensajes transmitidos a esta cola.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | True                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Verdadero                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
+| Clases usadas en        | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ La prioridad base de los mensajes transmitidos a esta cola.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | True                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Verdadero                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
+| Clases usadas en        | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ La prioridad base de los mensajes transmitidos a esta cola.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | True                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Verdadero                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
+| Clases usadas en        | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 
 
 

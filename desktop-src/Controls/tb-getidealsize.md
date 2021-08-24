@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TB_GETIDEALSIZE (commctrl. h)
+title: TB_GETIDEALSIZE mensaje (Commctrl.h)
 description: Obtiene el tamaño ideal de la barra de herramientas.
 ms.assetid: d3b5ea4d-fd80-4f07-be4f-89b53a8bdf4d
 keywords:
-- TB_GETIDEALSIZE controles de mensajes de Windows
+- TB_GETIDEALSIZE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a59b8701a4f4debcfb8e43f37068e7e7a4ef4f11
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1844f3ae4200c1120f784c03e5f80d2df4457319cf81e12c88ce0ed84525117d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104078998"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119816315"
 ---
-# <a name="tb_getidealsize-message"></a>\_Mensaje GETIDEALSIZE TB
+# <a name="tb_getidealsize-message"></a>Mensaje \_ GETIDEALSIZE de TB
 
 Obtiene el tamaño ideal de la barra de herramientas.
 
@@ -30,28 +30,28 @@ Obtiene el tamaño ideal de la barra de herramientas.
 <dl> <dt>
 
 *wParam* 
-</dt> <dd>Un **booleano** que indica si se va a recuperar el alto o ancho idóneos de la barra de herramientas. Use **true** para recuperar el alto ideal, **false** para recuperar el ancho ideal.</dd> <dt>
+</dt> <dd>Un **valor BOOL** que indica si se debe recuperar el alto o ancho ideales de la barra de herramientas. Use **TRUE** para recuperar el alto ideal, **FALSE,** para recuperar el ancho ideal.</dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura de [**tamaño**](/previous-versions//dd145106(v=vs.85)) que recibe el alto o el ancho en el que se mostrarán todos los botones. Si *wParam* es **true**, solo el miembro **CY** (height) es válido. Si *wParam* es **false**, solo el miembro de **CX** (width) es válido.
+Puntero a una [**estructura SIZE**](/previous-versions//dd145106(v=vs.85)) que recibe el alto o ancho en el que se mostrarían todos los botones. Si *wParam es* **TRUE,** solo el **miembro cy** (height) es válido. Si *wParam* es **FALSE,** solo el **miembro cx** (ancho) es válido.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto, o **false** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

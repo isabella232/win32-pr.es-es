@@ -1,10 +1,10 @@
 ---
-title: DRM_AUDIO_OUTPUT_PROTECTION_IDS estructura (wmdrmsdk. h)
-description: La \_ \_ \_ \_ estructura de ID. de protección de salida de audio DRM contiene una lista de identificadores de protección de salida de audio.
+title: DRM_AUDIO_OUTPUT_PROTECTION_IDS estructura (Wmdrmsdk.h)
+description: La estructura DRM \_ AUDIO \_ OUTPUT PROTECTION \_ \_ IDS contiene una lista de identificadores de protección de salida de audio.
 ms.assetid: 21972b18-334b-4a4d-812d-21cbfaf7cc58
 keywords:
-- DRM_AUDIO_OUTPUT_PROTECTION_IDS estructura de Windows Media Format
-- Formato de Windows Media de estructura
+- DRM_AUDIO_OUTPUT_PROTECTION_IDS structure windows Media Format
+- Estructura de windows Formato multimedia
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d3c7142f5f575413f72885aa60a0ccb826ecfab
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7e31589a229dcd5e32a0198cf7f3679846574bdb605e25a8df272b1793704b92
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718963"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119659015"
 ---
-# <a name="drm_audio_output_protection_ids-structure"></a>\_Estructura de \_ IDS de protección de salida de audio DRM \_ \_
+# <a name="drm_audio_output_protection_ids-structure"></a>Estructura DE \_ \_ IDENTIFICADORES DE \_ PROTECCIÓN DE SALIDA DE AUDIO \_ DRM
 
-La estructura de ID. de **\_ protección de salida de audio \_ \_ \_ DRM** contiene una lista de identificadores de protección de salida de audio.
+La **estructura DRM AUDIO OUTPUT PROTECTION \_ \_ \_ \_ IDS** contiene una lista de identificadores de protección de salida de audio.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,14 +45,14 @@ typedef struct DRM_AUDIO_OUTPUT_PROTECTION_IDS {
 **cEntries**
 </dt> <dd>
 
-Número de entradas de la matriz **rgAop** .
+Número de entradas de la **matriz rgAop.**
 
 </dd> <dt>
 
 **rgAop**
 </dt> <dd>
 
-Matriz de estructuras de **\_ protección de \_ salida \_ de audio DRM** . **DRM \_ La \_ \_ protección de salida de audio** es un tipo definido como [**\_ \_ protección de salida de DRM**](drm-output-protection.md).
+Matriz de **estructuras DRM AUDIO OUTPUT \_ \_ \_ PROTECTION.** **DRM \_ AUDIO \_ OUTPUT \_ PROTECTION es** un tipo definido como DRM OUTPUT [**\_ \_ PROTECTION**](drm-output-protection.md).
 
 </dd> </dl>
 
@@ -66,7 +66,7 @@ Ninguno.
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 
@@ -74,10 +74,10 @@ Ninguno.
 
 <dl> <dt>
 
-[**\_ \_ \_ identificadores de protección de salida de \_ audio DRM \_**](drm-audio-output-protection-ids-ex.md)
+[**IDENTIFICADORES \_ DE PROTECCIÓN DE SALIDA DE AUDIO \_ \_ \_ \_ DRM, POR EJEMPLO,**](drm-audio-output-protection-ids-ex.md)
 </dt> <dt>
 
-[**\_ \_ \_ identificadores de protección de salida de vídeo DRM \_**](drmdrm-video-output-protection-ids.md)
+[**IDENTIFICADORES \_ DE PROTECCIÓN DE SALIDA DE VÍDEO \_ \_ \_ DRM**](drmdrm-video-output-protection-ids.md)
 </dt> <dt>
 
 [**Estructuras**](drm-structures.md)

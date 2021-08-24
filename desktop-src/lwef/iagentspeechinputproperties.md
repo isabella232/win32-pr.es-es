@@ -13,9 +13,9 @@ ms.locfileid: "119609335"
 ---
 # <a name="iagentspeechinputproperties"></a>IAgentSpeechInputProperties
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
-IAgentSpeechInputProperties proporciona acceso a las propiedades de entrada de voz que mantiene el servidor. La mayoría de las propiedades son de solo lectura para las aplicaciones cliente, pero el usuario puede cambiarlas en la hoja de propiedades de Microsoft Agent. El servidor de Microsoft Agent devuelve valores solo si se ha instalado y habilitado un motor de voz compatible. Al consultar estas propiedades se intenta iniciar el motor de voz.
+IAgentSpeechInputProperties proporciona acceso a las propiedades de entrada de voz que mantiene el servidor. La mayoría de las propiedades son de solo lectura para las aplicaciones cliente, pero el usuario puede cambiarlas en la hoja de propiedades de Microsoft Agent. El servidor de Microsoft Agent devuelve valores solo si se ha instalado un motor de voz compatible y está habilitado. La consulta de estas propiedades intenta iniciar el motor de voz.
 
 **Métodos en orden de Vtable**
 
@@ -31,7 +31,7 @@ IAgentSpeechInputProperties proporciona acceso a las propiedades de entrada de v
 
  
 
-[**Los métodos GetInstalled,**](https://www.bing.com/search?q=**GetInstalled**) [**GetLCID,**](https://www.bing.com/search?q=**GetLCID**) [**GetEngine**](https://www.bing.com/search?q=**GetEngine**)y [**SetEngine**](https://www.bing.com/search?q=**SetEngine**) (admitidos en versiones anteriores de Microsoft Agent) siguen siendo compatibles con versiones anteriores. Sin embargo, los métodos no tienen código auxiliar y no devuelven valores útiles. Use [**GetSRModeID**](https://www.bing.com/search?q=**GetSRModeID**) y [**SetSRModeID**](https://www.bing.com/search?q=**SetSRModeID**) para consultar y establecer el motor de reconocimiento de voz que se usará con el carácter . Tenga en cuenta que el motor debe coincidir con la configuración de idioma actual del carácter.
+[**Los métodos GetInstalled**](https://www.bing.com/search?q=**GetInstalled**), [**GetLCID,**](https://www.bing.com/search?q=**GetLCID**) [**GetEngine**](https://www.bing.com/search?q=**GetEngine**)y [**SetEngine**](https://www.bing.com/search?q=**SetEngine**) (admitidos en versiones anteriores de Microsoft Agent) siguen siendo compatibles con versiones anteriores. Sin embargo, los métodos no tienen código auxiliar y no devuelven valores útiles. Use [**GetSRModeID y**](https://www.bing.com/search?q=**GetSRModeID**) [**SetSRModeID**](https://www.bing.com/search?q=**SetSRModeID**) para consultar y establecer el motor de reconocimiento de voz que se usará con el carácter . Tenga en cuenta que el motor debe coincidir con la configuración de idioma actual del carácter.
 
  
 

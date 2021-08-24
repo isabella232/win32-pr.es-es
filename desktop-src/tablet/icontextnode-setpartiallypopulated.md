@@ -1,7 +1,7 @@
 ---
-description: Modifica el valor que indica si este IContextNode se rellena parcial o totalmente.
+description: Modifica el valor que indica si este IContextNode está parcial o totalmente rellenado.
 ms.assetid: 4d8e1ec0-757d-4346-a77e-263bd612972b
-title: 'IContextNode:: SetPartiallyPopulated (método) (IACom. h)'
+title: Método IContextNode::SetPartiallyPopulated (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 31707468945fd3c5eb413bcdb984748a55867982
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6df87085a82117a694b48d08c3e6e1f8500c8959060052f553a53f1a285d9707
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119713474"
 ---
-# <a name="icontextnodesetpartiallypopulated-method"></a>IContextNode:: SetPartiallyPopulated (método)
+# <a name="icontextnodesetpartiallypopulated-method"></a>IContextNode::SetPartiallyPopulated (método)
 
-Modifica el valor que indica si este [**IContextNode**](icontextnode.md) se rellena parcial o totalmente.
+Modifica el valor que indica si este [**IContextNode**](icontextnode.md) está parcial o totalmente rellenado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,32 +39,32 @@ HRESULT SetPartiallyPopulated(
 
 <dl> <dt>
 
-*fPartiallyPopulated* \[ de\]
+*fPartiallyPopulated* \[ En\]
 </dt> <dd>
 
-**Variante \_ TRUE** si este [**IContextNode**](icontextnode.md) se rellena parcialmente; de lo contrario, **Variant \_ false**.
+**VARIANT \_ TRUE** si [**este IContextNode**](icontextnode.md) se rellena parcialmente; en caso contrario, **VARIANT \_ FALSE**.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use este método cuando la aplicación mantenga su propia estructura de datos, que está sincronizada con la de [**IInkAnalyzer**](iinkanalyzer.md). Para obtener más información, consulte [Data proxy with Ink Analysis](data-proxy-with-ink-analysis.md).
+Use este método cuando la aplicación mantenga su propia estructura de datos, que se sincroniza con la de [**IInkAnalyzer**](iinkanalyzer.md). Para obtener más información, vea [Proxy de datos con análisis de entrada de lápiz.](data-proxy-with-ink-analysis.md)
 
-Al virtualizar el árbol del documento, asegúrese de establecer el valor PropertyGuidsForContextNodes. RotatedBoundingBox (mediante ContextNode. AddPropertyValue) en todos los objetos ContextNode. La propiedad RotatedBoundingBox se calcula mediante InkAnalyzer y, de forma predeterminada, debe estar en todos los ContextNodes de escritura. Sin embargo, si la aplicación Virtualiza los resultados del análisis estableciendo la propiedad PartiallyPopulated, al controlar el evento PopulateContextNode Asegúrese de rellenar la propiedad RotatedBoundingBox. Si no se establece la propiedad RotatedBoundingBox, se usarán potencialmente más datos de documento en la operación de análisis actual.
+Al virtualizar el árbol de documentos, asegúrese de establecer el valor PropertyGuidsForContextNodes.RotatedBoundingBox (mediante ContextNode.AddPropertyValue) en todos los objetos ContextNode. InkAnalyzer calcula la propiedad RotatedBoundingBox y, de forma predeterminada, debe estar en todos los contextNodes de escritura. Sin embargo, si la aplicación virtualiza los resultados del análisis estableciendo la propiedad PartiallyPopulated, al controlar el evento PopulateContextNode, asegúrese de rellenar la propiedad RotatedBoundingBox. Si no se establece la propiedad RotatedBoundingBox, se podrían usar más datos de documento en la operación de análisis actual.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -85,7 +85,7 @@ Al virtualizar el árbol del documento, asegúrese de establecer el valor Proper
 [**IContextNode::GetPartiallyPopulated**](icontextnode-getpartiallypopulated.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

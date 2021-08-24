@@ -1,11 +1,11 @@
 ---
-title: Site-Server atributo)
+title: Site-Server atributo
 description: Servidor principal de licencias para un sitio determinado.
 ms.assetid: bcae8c63-a953-4721-b2d1-96d0376592c6
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Site-Server
-- Esquema de AD de atributos de siteServer
+- Site-Server esquema de AD de atributo
+- SiteServer attribute AD Schema (Esquema de AD del atributo siteServer)
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 785057cd9ea23c05d58541450dc4c92a502877e5
-ms.sourcegitcommit: f10bb95039c20a9de79f21e3fcb93a543f30a00e
+ms.openlocfilehash: 3995d7a1b85acbbef07b93cc035e11434f5c6becaeac82b31b4e669ea1b5ef13
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "104274605"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119802095"
 ---
-# <a name="site-server-attribute"></a>Site-Server atributo)
+# <a name="site-server-attribute"></a>Site-Server atributo
 
 Servidor principal de licencias para un sitio determinado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|----------------------------------------------|
 | CN                | Site-Server                                  |
-| Nombre para mostrar de LDAP | siteServer                                   |
-| Tamaño              | \-                                           |
-| Actualizar privilegio  | Administrador de dominio                         |
-| Frecuencia de actualización  | Cada vez que el sitio de licencias debe cambiar. |
+| Ldap-Display-Name | siteServer                                   |
+| Size              | \-                                           |
+| Actualizar privilegios  | Administrador de dominio                         |
+| Frecuencia de actualización  | Siempre que sea necesario cambiar el sitio de licencias. |
 | Attribute-Id      | 1.2.840.113556.1.4.494                       |
-| System-ID-GUID    | 1be8f17c-a9ff-11d0-afe2-00c04fd930c9         |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md)      |
+| System-Id-Guid    | 1be8f17c-a9ff-11d0-afe2-00c04fd930c9         |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md)      |
 
 
 
@@ -44,7 +44,7 @@ Servidor principal de licencias para un sitio determinado.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,18 +56,18 @@ Servidor principal de licencias para un sitio determinado.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                    |
+| Id. de vínculo                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
-| System-Only            | False                                                                 |
-| Tiene un único valor       | False                                                                 |
-| Está indexado             | False                                                                 |
-| En el catálogo global      | False                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                          |
+| System-Only            | Falso                                                                 |
+| Es de un solo valor       | Falso                                                                 |
+| Está indexado             | Falso                                                                 |
+| En el catálogo global      | Falso                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Clases usadas en        | [**Licencias: configuración del sitio**](c-licensingsitesettings.md)<br/> |
+| Clases usadas en        | [**Licensing-Site-Configuración**](c-licensingsitesettings.md)<br/> |
 
 
 
@@ -77,34 +77,34 @@ Servidor principal de licencias para un sitio determinado.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                    |
+| Id. de vínculo                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
-| System-Only            | False                                                                 |
-| Tiene un único valor       | False                                                                 |
-| Está indexado             | False                                                                 |
-| En el catálogo global      | False                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                          |
+| System-Only            | Falso                                                                 |
+| Es de un solo valor       | Falso                                                                 |
+| Está indexado             | Falso                                                                 |
+| En el catálogo global      | Falso                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Clases usadas en        | [**Licencias: configuración del sitio**](c-licensingsitesettings.md)<br/> |
+| Clases usadas en        | [**Licensing-Site-Configuración**](c-licensingsitesettings.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -117,20 +117,20 @@ Servidor principal de licencias para un sitio determinado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                    |
+| Id. de vínculo                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
-| System-Only            | False                                                                 |
-| Tiene un único valor       | False                                                                 |
-| Está indexado             | False                                                                 |
-| En el catálogo global      | False                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                          |
+| System-Only            | Falso                                                                 |
+| Es de un solo valor       | Falso                                                                 |
+| Está indexado             | Falso                                                                 |
+| En el catálogo global      | Falso                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Clases usadas en        | [**Licencias: configuración del sitio**](c-licensingsitesettings.md)<br/> |
+| Clases usadas en        | [**Licensing-Site-Configuración**](c-licensingsitesettings.md)<br/> |
 
 
 
@@ -140,18 +140,18 @@ Servidor principal de licencias para un sitio determinado.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                    |
+| Id. de vínculo                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
-| System-Only            | False                                                                 |
-| Tiene un único valor       | False                                                                 |
-| Está indexado             | False                                                                 |
-| En el catálogo global      | False                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                          |
+| System-Only            | Falso                                                                 |
+| Es de un solo valor       | Falso                                                                 |
+| Está indexado             | Falso                                                                 |
+| En el catálogo global      | Falso                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Clases usadas en        | [**Licencias: configuración del sitio**](c-licensingsitesettings.md)<br/> |
+| Clases usadas en        | [**Licensing-Site-Configuración**](c-licensingsitesettings.md)<br/> |
 
 
 
@@ -161,18 +161,18 @@ Servidor principal de licencias para un sitio determinado.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                    |
+| Id. de vínculo                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
-| System-Only            | False                                                                 |
-| Tiene un único valor       | False                                                                 |
-| Está indexado             | False                                                                 |
-| En el catálogo global      | False                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                          |
+| System-Only            | Falso                                                                 |
+| Es de un solo valor       | Falso                                                                 |
+| Está indexado             | Falso                                                                 |
+| En el catálogo global      | Falso                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Clases usadas en        | [**Licencias: configuración del sitio**](c-licensingsitesettings.md)<br/> |
+| Clases usadas en        | [**Licensing-Site-Configuración**](c-licensingsitesettings.md)<br/> |
 
 
 
@@ -180,20 +180,20 @@ Servidor principal de licencias para un sitio determinado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                    |
+| Id. de vínculo                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
-| System-Only            | False                                                                 |
-| Tiene un único valor       | False                                                                 |
-| Está indexado             | False                                                                 |
-| En el catálogo global      | False                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                          |
+| System-Only            | Falso                                                                 |
+| Es de un solo valor       | Falso                                                                 |
+| Está indexado             | Falso                                                                 |
+| En el catálogo global      | Falso                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Clases usadas en        | [**Licencias: configuración del sitio**](c-licensingsitesettings.md)<br/> |
+| Clases usadas en        | [**Licensing-Site-Configuración**](c-licensingsitesettings.md)<br/> |
 
 
 

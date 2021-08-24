@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MCIWNDM_NOTIFYMEDIA (VFW. h)
-description: El \_ mensaje MCIWNDM NOTIFYMEDIA notifica a la ventana primaria de una aplicación que el medio ha cambiado.
+title: MCIWNDM_NOTIFYMEDIA mensaje (Vfw.h)
+description: El mensaje MCIWNDM NOTIFYMEDIA notifica a la ventana primaria de una \_ aplicación que el medio ha cambiado.
 ms.assetid: cc31502d-09a9-4580-9ff8-9c2be51c8e35
 keywords:
-- Mensaje de MCIWNDM_NOTIFYMEDIA de Windows multimedia
+- MCIWNDM_NOTIFYMEDIA mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7026bd984e1d79775aac52caad56c87be6e8098e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: aa64b17fb3910e518e5b5d4318f8d988cf71f8c314f047a5f2eed1ff80cc843d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119783026"
 ---
-# <a name="mciwndm_notifymedia-message"></a>MCIWNDM \_ NOTIFYMEDIA
+# <a name="mciwndm_notifymedia-message"></a>Mensaje NOTIFYMEDIA de MCIWNDM \_
 
-El mensaje **MCIWNDM \_ NOTIFYMEDIA** notifica a la ventana primaria de una aplicación que el medio ha cambiado.
+El **mensaje MCIWNDM \_ NOTIFYMEDIA** notifica a la ventana primaria de una aplicación que el medio ha cambiado.
 
 
 ```C++
@@ -38,23 +38,23 @@ lParam = (LPARAM) (LPSTR) lp;
 
 <dl> <dt>
 
-<span id="hwnd"></span><span id="HWND"></span>*identificador*
+<span id="hwnd"></span><span id="HWND"></span>*Hwnd*
 </dt> <dd>
 
-Identificador de la ventana de MCIWnd.
+Identificador de la ventana MCIWnd.
 
 </dd> <dt>
 
-<span id="lp"></span><span id="LP"></span>*LP*
+<span id="lp"></span><span id="LP"></span>*Lp*
 </dt> <dd>
 
-Puntero a una cadena terminada en null que contiene el nuevo nombre de archivo. Si el medio se está cerrando, especifica una cadena nula.
+Puntero a una cadena terminada en NULL que contiene el nuevo nombre de archivo. Si el medio se está cerrando, especifica una cadena null.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Puede habilitar la notificación de cambios de medios especificando el estilo de ventana de MCIWNDF \_ NOTIFYMEDIA.
+Puede habilitar la notificación de cambios en los medios especificando el estilo de ventana MCIWNDF \_ NOTIFYMEDIA.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,7 +64,7 @@ Puede habilitar la notificación de cambios de medios especificando el estilo de
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

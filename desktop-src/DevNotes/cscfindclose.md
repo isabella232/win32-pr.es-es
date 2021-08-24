@@ -1,7 +1,7 @@
 ---
 description: Cierra un identificador de búsqueda.
 ms.assetid: 2e6a547f-26a7-401a-b1e4-3f085ce82729
-title: CSCFindClose (función)
+title: Función CSCFindClose
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119758725"
 ---
-# <a name="cscfindclose-function"></a>CSCFindClose (función)
+# <a name="cscfindclose-function"></a>Función CSCFindClose
 
 \[Esta función no se admite y no se debe usar.\]
 
@@ -50,11 +50,11 @@ Identificador de búsqueda devuelto por la [**función CSCFindFirstFileW.**](csc
 
 ## <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve **TRUE si** se realiza correctamente; de lo contrario, devuelve **FALSE**.
+Esta función devuelve **TRUE** si se realiza correctamente; de lo contrario, devuelve **FALSE**.
 
 ## <a name="remarks"></a>Comentarios
 
-Esta función no tiene asociada la biblioteca de importación ni el archivo de encabezado; Debe llamarlo mediante las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**y GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
+Esta función no tiene asociada la biblioteca de importación ni el archivo de encabezado; debe llamarlo mediante las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**y GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,7 +66,7 @@ Esta función no tiene asociada la biblioteca de importación ni el archivo de e
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

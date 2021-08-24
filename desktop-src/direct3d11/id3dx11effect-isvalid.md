@@ -5,7 +5,7 @@ ms.assetid: 42bf0069-1828-4f55-99f5-d0f81eb04336
 keywords:
 - Método IsValid Direct3D 11
 - Método IsValid Direct3D 11, interfaz ID3DX11Effect
-- Interfaz ID3DX11Effect Direct3D 11, método IsValid
+- ID3DX11Effect interface Direct3D 11 , IsValid method
 topic_type:
 - apiref
 api_name:
@@ -50,7 +50,7 @@ Tipo: **[ **BOOL**](/windows/desktop/WinProg/windows-data-types)**
 ## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -61,11 +61,11 @@ Tipo: **[ **BOOL**](/windows/desktop/WinProg/windows-data-types)**
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de efectos 11 está disponible en línea como origen compartido).</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

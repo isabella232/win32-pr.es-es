@@ -1,7 +1,7 @@
 ---
-description: La estructura de \_ direcciones IP de Vines \_ es una dirección IP en una red de Vines.
+description: La estructura DE \_ DIRECCIONES IP \_ de SARS es una dirección IP en una red de Dpis.
 ms.assetid: 681753a5-08a2-48e6-9e46-c028c12ad9c1
-title: Estructura de VINES_IP_ADDRESS (Netmon. h)
+title: VINES_IP_ADDRESS estructura (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: c198c8c109d5aa5b841272173966ec7d9fd22299
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 23a590679fd2b4a147a8bc0f92a4d4c7b4afb8c746526de9fba7cfc388e4e1c5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104360858"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119742205"
 ---
-# <a name="vines_ip_address-structure"></a>Estructura de \_ direcciones IP de Vines \_
+# <a name="vines_ip_address-structure"></a>ESTRUCTURA DE \_ DIRECCIONES IP \_ DE ASÍNS
 
-La estructura de **\_ \_ direcciones IP de Vines** es una dirección IP en una red de Vines.
+La **estructura DE DIRECCIONES IP \_ \_ de SARS** es una dirección IP en una red de Dpis.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,17 +40,17 @@ typedef struct _VINES_IP_ADDRESS {
 
 <dl> <dt>
 
-**NetId**
+**NetID**
 </dt> <dd>
 
-El identificador de un equipo específico en una subred específica.
+Identificador de una máquina específica en una subred específica.
 
 </dd> <dt>
 
 **SubnetID**
 </dt> <dd>
 
-El identificador de una subred específica en toda la red.
+Identificador de una subred específica en toda la red.
 
 </dd> </dl>
 
@@ -62,7 +62,7 @@ El identificador de una subred específica en toda la red.
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

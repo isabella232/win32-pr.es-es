@@ -1,7 +1,7 @@
 ---
-description: Abre una instancia de un proveedor de entradas de impresión.
+description: Abre una instancia de un proveedor de vales de impresión.
 ms.assetid: 815cc360-8dcd-4c58-a64d-5d77436a8623
-title: BindPTProviderThunk función)
+title: Función BindPTProviderThunk
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - prntvpt.dll
-ms.openlocfilehash: bf63fc6faf9d47993fafb97c8d3a1c18d6d6c985
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 460728eac742fb96ca122981a5874408e12e6c8eddd36fc901e70874e5e040c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276670"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119720235"
 ---
-# <a name="bindptproviderthunk-function"></a>BindPTProviderThunk función)
+# <a name="bindptproviderthunk-function"></a>Función BindPTProviderThunk
 
-\[Esta función no se admite y podría deshabilitarse o eliminarse en versiones futuras de Windows. [**PTOpenProviderEx**](/windows/desktop/api/prntvpt/nf-prntvpt-ptopenproviderex) proporciona una funcionalidad equivalente y se debe usar en su lugar.\]
+\[Esta función no se admite y podría deshabilitarse o eliminarse en versiones futuras de Windows. [**PTOpenProviderEx proporciona**](/windows/desktop/api/prntvpt/nf-prntvpt-ptopenproviderex) una funcionalidad equivalente y se debe usar en su lugar.\]
 
-Abre una instancia de un proveedor de entradas de impresión.
+Abre una instancia de un proveedor de vales de impresión.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,57 +45,57 @@ HRESULT BindPTProviderThunk(
 
 <dl> <dt>
 
-*pszPrinterName* \[ de\]
+*pszPrinterName* \[ En\]
 </dt> <dd>
 
 Nombre completo de una cola de impresión.
 
 </dd> <dt>
 
-*MaxVersion* \[ de\]
+*maxVersion* \[ En\]
 </dt> <dd>
 
-La versión más reciente del [esquema de impresión](./printschema.md) que admite el autor de la llamada.
+La versión más reciente del [esquema de impresión que](./printschema.md) admite el autor de la llamada.
 
 </dd> <dt>
 
-*prefVersion* \[ de\]
+*prefVersion* \[ En\]
 </dt> <dd>
 
-Versión del esquema de [impresión](./printschema.md) solicitado por el autor de la llamada.
+Versión del esquema de [impresión solicitada](./printschema.md) por el autor de la llamada.
 
 </dd> <dt>
 
-*phProvider* \[ enuncia\]
+*phProvider* \[ out\]
 </dt> <dd>
 
-Un puntero a un identificador para el proveedor de entradas de impresión.
+Puntero a un identificador al proveedor de vales de impresión.
 
 </dd> <dt>
 
-*usedVersion* \[ enuncia\]
+*usedVersion* \[ out\]
 </dt> <dd>
 
-Versión del esquema de [impresión](./printschema.md) que utilizará el proveedor de entradas de impresión.
+Versión del esquema de [impresión que](./printschema.md) usará el proveedor de vales de impresión.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, devuelve **S \_ OK**; de lo contrario, devuelve un código de error **HRESULT** . Para obtener más información sobre los códigos de error COM, vea [control de errores](../com/error-handling-in-com.md).
+Si el método se realiza correctamente, devuelve **S \_ OK;** de lo contrario, devuelve un código de error **HRESULT.** Para obtener más información sobre los códigos de error COM, vea [Control de errores.](../com/error-handling-in-com.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Antes de llamar a esta función, el subproceso que realiza la llamada debe inicializar COM llamando a [**CoInitializeEx**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex).
+Antes de llamar a esta función, el subproceso que realiza la llamada debe inicializar COM mediante [**una llamada a CoInitializeEx**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
 | Archivo DLL<br/>                      | <dl> <dt>Prntvpt.dll</dt> </dl> |
 
 
@@ -104,7 +104,7 @@ Antes de llamar a esta función, el subproceso que realiza la llamada debe inici
 
 <dl> <dt>
 
-[Imprimir esquema](./printschema.md)
+[Esquema de impresión](./printschema.md)
 </dt> <dt>
 
 [**PTOpenProviderEx**](/windows/desktop/api/prntvpt/nf-prntvpt-ptopenproviderex)

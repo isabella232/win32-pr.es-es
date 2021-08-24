@@ -1,49 +1,49 @@
 ---
-description: Al anular el registro de un nombre de mismo nivel, se quita un nombre registrado de una nube de protocolo de resolución de nombres de mismo nivel (PNRP).
+description: Al anular el registro de un nombre del mismo nivel, se quita un nombre registrado de una nube del Protocolo de resolución de nombres del mismo nivel (PNRP).
 ms.assetid: a451988e-7026-4b3c-a7a3-366f9886aa02
-title: Anular el registro de un nombre de mismo nivel
+title: Anulación del registro de un nombre del mismo nivel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cd482cc9cfd8c32d7bc95edd00e866e2d87b7a55
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a6ee0bd03e881f93321c31dfccd03cc71459b323f1ed356a88f829489c578a80
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001992"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119675015"
 ---
-# <a name="unregistering-a-peer-name"></a>Anular el registro de un nombre de mismo nivel
+# <a name="unregistering-a-peer-name"></a>Anulación del registro de un nombre del mismo nivel
 
-Al anular el registro de un nombre de mismo nivel, se quita un nombre registrado de una nube de protocolo de resolución de nombres de mismo nivel (PNRP).
+Al anular el registro de un nombre del mismo nivel, se quita un nombre registrado de una nube del Protocolo de resolución de nombres del mismo nivel (PNRP).
 
-## <a name="unregistering-a-peer-name"></a>Anular el registro de un nombre de mismo nivel
+## <a name="unregistering-a-peer-name"></a>Anulación del registro de un nombre del mismo nivel
 
-Para anular el registro de un nombre de mismo nivel, llame a [**WSASetService**](pnrp-and-wsasetservice.md). El parámetro *essOperation* debe tener un valor de **RNRSERVICE \_ Delete**. Siga las instrucciones de las siguientes secciones de este tema para realizar las configuraciones necesarias para los parámetros **WSASetService** y la estructura [**WSAQUERYSET**](pnrp-and-wsaqueryset.md) .
+Para anular el registro de un nombre del mismo nivel, llame [**a WSASetService**](pnrp-and-wsasetservice.md). El *parámetro essOperation* debe tener un valor **de RNRSERVICE \_ DELETE**. Use las instrucciones de las secciones siguientes de este tema para realizar las configuraciones necesarias para los parámetros **WSASetService** y la estructura [**WSAQUERYSET.**](pnrp-and-wsaqueryset.md)
 
 ## <a name="configuring-wsasetservice"></a>Configuración de WSASetService
 
-Cuando una aplicación llama a [**WSASetService**](pnrp-and-wsasetservice.md), los parámetros deben configurarse de acuerdo con las especificaciones siguientes:
+Cuando una aplicación llama a [**WSASetService**](pnrp-and-wsasetservice.md), los parámetros deben configurarse según las especificaciones siguientes:
 
--   *essOperation* debe tener un valor de **RNRSERVICE \_ Delete**.
+-   *essOperation* debe tener un valor de **RNRSERVICE \_ DELETE**.
 -   *dwFlags* debe ser cero (0).
--   *lpqsRegInfo* debe apuntar a una estructura [**WSAQUERYSET**](pnrp-and-wsaqueryset.md) , que debe configurarse siguiendo las instrucciones de la siguiente sección de este tema.
+-   *lpqsRegInfo* debe apuntar a una estructura [**WSAQUERYSET,**](pnrp-and-wsaqueryset.md) que debe configurarse mediante las directrices de la sección siguiente de este tema.
 
 ## <a name="configuring-wsaqueryset"></a>Configuración de WSAQUERYSET
 
-La estructura [**WSAQUERYSET**](pnrp-and-wsaqueryset.md) se debe configurar de acuerdo con las especificaciones siguientes:
+La [**estructura WSAQUERYSET**](pnrp-and-wsaqueryset.md) debe configurarse según las especificaciones siguientes:
 
--   **dwSize** debe especificar el tamaño de la estructura [**WSAQUERYSET**](pnrp-and-wsaqueryset.md) .
--   **lpszServiceInstanceName** debe apuntar al nombre del mismo nivel cuyo registro se va a anular.
--   **lpBlob** debe apuntar a una estructura [**PNRPINFO**](/windows/desktop/api/Pnrpns/ns-pnrpns-pnrpinfo_v1) .
--   **lpcsaBuffer** debe apuntar a la lista de direcciones.
+-   **dwSize** debe especificar el tamaño de la [**estructura WSAQUERYSET.**](pnrp-and-wsaqueryset.md)
+-   **lpszServiceInstanceName** debe apuntar al nombre del mismo nivel que se está anulando el registro.
+-   **lpBlob** debe apuntar a una [**estructura PNRPINFO.**](/windows/desktop/api/Pnrpns/ns-pnrpns-pnrpinfo_v1)
+-   **lpcsaBuffer debe** apuntar a la lista de direcciones.
 
 > [!Note]  
-> Los miembros restantes se describen en [**PNRP y WSASetService**](pnrp-and-wsasetservice.md).
+> Los miembros restantes se describen [**en PNRP y WSASetService**](pnrp-and-wsasetservice.md).
 
  
 
-## <a name="an-example-of-unregistering-a-peer-name"></a>Ejemplo de anulación del registro de un nombre de mismo nivel
+## <a name="an-example-of-unregistering-a-peer-name"></a>Ejemplo de anulación del registro de un nombre del mismo nivel
 
-En el fragmento de código siguiente se muestra cómo anular el registro de un nombre del mismo nivel proporcionando la información correcta al llamar a [**WSASetService**](pnrp-and-wsasetservice.md) mediante la estructura [**WSAQUERYSET**](pnrp-and-wsaqueryset.md) .
+El siguiente fragmento de código muestra cómo anular el registro de un nombre del mismo nivel proporcionando la información correcta al llamar a [**WSASetService**](pnrp-and-wsasetservice.md) mediante la estructura [**WSAQUERYSET.**](pnrp-and-wsaqueryset.md)
 
 
 ```C++

@@ -1,26 +1,26 @@
 ---
-title: On (atributo) (relleno) (VML)
-description: On (atributo) (relleno) (VML)
+title: Atributo On (Fill)(VML)
+description: Atributo On (Fill)(VML)
 ms.assetid: 9b7d42e5-4fd9-402d-8d1f-af01f6577475
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 79e25e805be23b4678b1be828b711365a8624f10
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ee692bf1beb8c9a7c79b50ef8be3c115deea615f18ee6702d0817d4f81439555
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105695724"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119680645"
 ---
-# <a name="on-attribute-fillvml"></a>On (atributo) (relleno) (VML)
+# <a name="on-attribute-fillvml"></a>Atributo On (Fill)(VML)
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Determina si se mostrará el relleno. Lectura/escritura **VgTriState**.
+Determina si se mostrará el relleno. Lectura/escritura **DvTriState**.
 
 **Se aplica a**
 
@@ -28,17 +28,17 @@ Determina si se mostrará el relleno. Lectura/escritura **VgTriState**.
 
 **Sintaxis de etiquetas**
 
-<v: *Element* on = " *expresión* " >
+<v: *element* on=" *expression* ">
 
 **Sintaxis de script**
 
-*Element* . on = "*expresión*"
+*Element* .on="*expression*"
 
-*expresión* = de *elemento*. on
+*expresión* = *elemento*.on
 
 **Comentarios:**
 
-Si es **false**, no se muestra el relleno. El valor predeterminado es **True**.
+Si **es False**, no se muestra el relleno. El valor predeterminado es **True**.
 
 *Atributo estándar de VML*
 
@@ -59,6 +59,6 @@ Aunque el relleno se define como rojo, no se muestra.
 
 
 
- 
+ 
 
- 
+ 

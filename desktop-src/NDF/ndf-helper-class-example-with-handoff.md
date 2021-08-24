@@ -1,23 +1,23 @@
 ---
-title: Extensión de clase auxiliar NDF con entrega
-description: Esta clase auxiliar tiene una dependencia de mantenimiento bajo en el SimpleFileHelperClass codificado en el primer ejemplo.
+title: Extensión de clase auxiliar de NDF con Handoff
+description: Esta clase auxiliar tiene una dependencia de mantenimiento bajo en simpleFileHelperClass codificada en el primer ejemplo.
 ms.assetid: b59cd855-c68a-4f5c-b145-ceac395ddcc4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b799b795fcf23cbddf268056e23db433566c8a1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1dab07fb29b8ccebad0263cd3c71cccd83c98ba6d28b8ceb05e4334d61d1059c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994220"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119802185"
 ---
-# <a name="ndf-helper-class-extension-with-handoff"></a>Extensión de clase auxiliar NDF con entrega
+# <a name="ndf-helper-class-extension-with-handoff"></a>Extensión de clase auxiliar de NDF con Handoff
 
-Esta clase auxiliar tiene una dependencia de mantenimiento bajo en el SimpleFileHelperClass codificado en el primer ejemplo.
+Esta clase auxiliar tiene una dependencia de mantenimiento bajo en simpleFileHelperClass codificada en el primer ejemplo.
 
-La segunda clase auxiliar de entrega es una sencilla clase auxiliar de paso a través que no realiza ningún diagnóstico. En su lugar, siempre genera una hipótesis de mantenimiento inferior para el SimpleFileHelperClass. Esto resulta útil para servir como un marcador de posición para futuras adiciones de capacidad de diagnóstico en esta clase auxiliar. La clase auxiliar de entrega implementa dos métodos.
+La segunda clase auxiliar de entrega es una clase auxiliar de paso a través simple que no realiza ningún diagnóstico. En su lugar, siempre genera una hipótesis de mantenimiento inferior para SimpleFileHelperClass. Esto resulta útil para servir como marcador de posición para la futura adición de la funcionalidad de diagnóstico en esta clase auxiliar. La clase auxiliar handoff implementa dos métodos.
 
-El método LowHealth se usa para establecer el estado de diagnóstico en DS \_ indeterminado. Esto hace que la llamada NDF GetLowerHypotheses.
+El método LowHealth se usa para establecer el estado de diagnóstico en DS \_ INDETERMINATE. Esto hace que NDF llame a GetLowerHypotheses.
 
 
 ```C++
@@ -38,7 +38,7 @@ HRESULT HandOffTestHelperClass::LowHealth(
 
 
 
-A continuación, se implementa GetLowerHypotheses para indicar a NDF la clase auxiliar que se va a diagnosticar.
+A continuación, GetLowerHypotheses se implementa para decir a NDF qué clase auxiliar diagnosticar.
 
 
 ```C++
@@ -124,9 +124,9 @@ Error:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

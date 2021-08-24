@@ -1,6 +1,6 @@
 ---
 title: creación de particiones
-description: Define el esquema tesselation que se va a usar en el sombreador de casco.
+description: Define el esquema de teselación que se va a usar en el sombreador de casco.
 ms.assetid: 29dc4abb-4d29-4538-8680-a4fcbfd8235b
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 6bf0744481a123998b64693d669e9cb7255599f8
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 0d7b4dd7c2f292b41eaee18bd2dc0b8914783516c4cdc9f9bc913542e0ebcaff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103904296"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119671475"
 ---
 # <a name="partitioning"></a>creación de particiones
 
-Define el esquema tesselation que se va a usar en el sombreador de casco.
+Define el esquema de teselación que se va a usar en el sombreador de casco.
 
 
 ```
@@ -27,21 +27,21 @@ partitioning(X)
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Puede ser un **entero**, un valor **fraccionario \_ par**, una **fracción \_ impar** o **pow2**.
+Puede ser **entero,** **fraccionamiento \_ incluso**, **\_ impar fraccionrio** o **pow2.**
 
-Este atributo es compatible con los siguientes tipos de sombreadores:
+Este atributo se admite en los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        | x    |        |          |       |         |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -53,9 +53,9 @@ Este atributo es compatible con los siguientes tipos de sombreadores:
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

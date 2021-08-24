@@ -13,7 +13,7 @@ ms.locfileid: "119678255"
 ---
 # <a name="creating-com-applications"></a>Creación de aplicaciones COM+
 
-En esta sección se describe cómo crear una nueva aplicación COM+ (vacía) y, a continuación, agregar componentes a esa aplicación. También se describe cómo agregar y quitar componentes COM de las aplicaciones COM+ existentes y cómo mover y copiar componentes de una aplicación COM+ a otra.
+En esta sección se describe cómo crear una nueva aplicación COM+ (vacía) y, a continuación, agregar componentes a esa aplicación. También se describe cómo agregar y quitar componentes COM a aplicaciones COM+ existentes y cómo mover y copiar componentes de una aplicación COM+ a otra.
 
 
 

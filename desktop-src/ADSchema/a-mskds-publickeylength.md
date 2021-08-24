@@ -1,11 +1,11 @@
 ---
-title: atributo MS-KDS-PublicKey-length
-description: La longitud de la clave pública del acuerdo secreto.
+title: Atributo ms-Kds-PublicKey-Length
+description: Longitud de la clave pública del contrato secreto.
 ms.assetid: d99e1ad8-1dab-4763-a2d3-ec1ded36788d
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-KDS-PublicKey-length
-- msKds-PublicKeyLength atributo AD Schema
+- ms-Kds-PublicKey-Length attribute AD Schema
+- msKds-PublicKeyLength attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e09630516b45c9400d34f1f0ee66f4eb1fc59eb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 49015468756c2017c759a2f635340d180dd04dd4904a85e6a19ae6e76fa5b3b6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906010"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119762955"
 ---
-# <a name="ms-kds-publickey-length-attribute"></a>atributo MS-KDS-PublicKey-length
+# <a name="ms-kds-publickey-length-attribute"></a>Atributo ms-Kds-PublicKey-Length
 
-La longitud de la clave pública del acuerdo secreto.
+Longitud de la clave pública del contrato secreto.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | MS-KDS-PublicKey-longitud              |
-| Nombre para mostrar de LDAP | msKds-PublicKeyLength                |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-Kds-PublicKey-Length              |
+| Ldap-Display-Name | msKds-PublicKeyLength                |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2173              |
-| System-ID-GUID    | e338f470-39cd-4549-AB5B-f69f9e583fe0 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | e338f470-39cd-4549-ab5b-f69f9e583fe0 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -50,18 +50,18 @@ La longitud de la clave pública del acuerdo secreto.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                  |
+| Id. de vínculo                | \-                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                  |
-| System-Only            | False                                                                                                                                               |
-| Tiene un único valor       | True                                                                                                                                                |
-| Está indexado             | False                                                                                                                                               |
-| En el catálogo global      | False                                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                        |
+| System-Only            | Falso                                                                                                                                               |
+| Es de un solo valor       | Verdadero                                                                                                                                                |
+| Está indexado             | Falso                                                                                                                                               |
+| En el catálogo global      | Falso                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                                  |
 | Search-Flags           | 0x00000280                                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                                          |
-| Clases usadas en        | [**MS-KDS-Prov-ServerConfiguration**](c-mskds-provserverconfiguration.md)<br/> [**MS-KDS-Prov-RootKey**](c-mskds-provrootkey.md)<br/> |
+| Clases usadas en        | [**ms-Kds-Prov-ServerConfiguration**](c-mskds-provserverconfiguration.md)<br/> [**ms-Kds-Prov-RootKey**](c-mskds-provrootkey.md)<br/> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Función UtilStringCopyWithAlloc (Ndattributils. h)
+title: Función UtilStringCopyWithAlloc (Ndattributils.h)
 description: Asigna y copia una cadena de origen.
 ms.assetid: e1400ae1-0edd-4b59-af03-3da1b9d7073b
 keywords:
-- UtilStringCopyWithAlloc función NDF
+- Función NDF UtilStringCopyWithAlloc
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b68bd1815ff09473f0431dde19a12a87603a9dec
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3654fa5eefd45a51d963325e10fbcba765420afe25a5c47a058bbaf4e4093ef0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676691"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119801535"
 ---
-# <a name="utilstringcopywithalloc-function"></a>UtilStringCopyWithAlloc función)
+# <a name="utilstringcopywithalloc-function"></a>Función UtilStringCopyWithAlloc
 
-La función **UtilStringCopyWithAlloc** asigna y copia una cadena de origen.
+La **función UtilStringCopyWithAlloc** asigna y copia una cadena de origen.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,25 +42,25 @@ HRESULT UtilStringCopyWithAlloc(
 
 <dl> <dt>
 
-*Búfer* \[ de enuncia\]
+*Búfer* \[ out\]
 </dt> <dd>
 
-Tipo: **LPWStr \** _
+Tipo: **LPWSTR \***
 
-La ubicación donde se almacena el puntero a la memoria asignada. Cuando ya no se necesiten, se debe liberar con [_ *CoTaskMemFree* *](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree). Este búfer siempre termina en NULL.
+Ubicación donde se almacena el puntero a la memoria asignada. Cuando ya no los necesite, debe publicarse [**con CoTaskMemFree.**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) Este búfer siempre termina en NULL.
 
 </dd> <dt>
 
-*BufferMax* \[ de\]
+*BufferMax* \[ En\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
-Número máximo de caracteres que se van a leer del *origen*.
+Número máximo de caracteres que se leerán del *origen*.
 
 </dd> <dt>
 
-*Origen* \[ de de\]
+*Origen* \[ En\]
 </dt> <dd>
 
 Tipo: **LPCWSTR**
@@ -79,8 +79,8 @@ Los valores devueltos posibles incluyen, entre otros, lo siguiente.
 
 | Código devuelto                                                                                  | Descripción                                                        |
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>         | La operación se realizó correctamente.<br/>                                |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | No se ha proporcionado correctamente uno o más parámetros.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | La operación se realizó correctamente.<br/>                                |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Uno o varios parámetros no se han proporcionado correctamente.<br/> |
 
 
 
@@ -90,11 +90,11 @@ Los valores devueltos posibles incluyen, entre otros, lo siguiente.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                 |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                       |
-| Encabezado<br/>                   | <dl> <dt>Ndattributils. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                 |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                       |
+| Header<br/>                   | <dl> <dt>Ndattributils.h</dt> </dl> |
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: La pendiente del lado izquierdo del BoundingFrustum.
+description: Pendiente del lado izquierdo de BoundingFrustum.
 ms.assetid: c83a022a-4213-41a8-8dbe-5e4ec80069b3
-title: BoundingFrustum. LeftSlope (DirectXCollision. h)
+title: BoundingFrustum.LeftSlope (DirectXCollision.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d42a7f0efea79ba101ca157dc4a03853ce15169
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d512e7123022baa1bf8ac6643e4a9aedbc7cec94adb027c028a22a615f9d9a2a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718947"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119740905"
 ---
 # <a name="boundingfrustumleftslope"></a>BoundingFrustum.LeftSlope
 
-La pendiente del lado izquierdo del [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).
+Pendiente del lado izquierdo de [**BoundingFrustum.**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum)
 
 
 ```C++
@@ -23,11 +23,11 @@ public:
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ### <a name="platform-requirements"></a>Requisitos de la plataforma
 
-Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el Windows SDK para Windows 8. Se admite para aplicaciones de escritorio de Win32, aplicaciones de la tienda Windows y Windows Phone 8 aplicaciones.
+Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el SDK Windows para Windows 8. Compatible con aplicaciones de escritorio Win32, Windows store y Windows Phone 8 aplicaciones.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,7 +35,7 @@ Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el Windows SDK p
 
 | Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>DirectXCollision. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>DirectXCollision.h</dt> </dl> |
 
 
 

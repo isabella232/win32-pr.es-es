@@ -1,7 +1,7 @@
 ---
 description: Esta clase representa un trabajo de operación de exportación de punto de referencia de colección.
 ms.assetid: c752ff1d-163c-4aa9-b29e-76478a18a08c
-title: Msvm_CollectionReferencePointExportJob (clase)
+title: Msvm_CollectionReferencePointExportJob clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -25,14 +25,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: d21fab1519664471bdc2bb5d7102d94cbe3dde1f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3baf6405f160401b3a2fe8024861d92560484a513e1c55436f9e149e92daed7f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688718"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119681915"
 ---
-# <a name="msvm_collectionreferencepointexportjob-class"></a>MSVM \_ CollectionReferencePointExportJob (clase)
+# <a name="msvm_collectionreferencepointexportjob-class"></a>Clase \_ CollectionReferencePointExportJob de Msvm
 
 Esta clase representa un trabajo de operación de exportación de punto de referencia de colección.
 
@@ -61,21 +61,21 @@ class Msvm_CollectionReferencePointExportJob : CIM_ConcreteJob
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ CollectionReferencePointExportJob** tiene estos tipos de miembros:
+La **clase \_ CollectionReferencePointExportJob de Msvm** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La clase **MSVM \_ CollectionReferencePointExportJob** tiene estos métodos.
+La **clase \_ CollectionReferencePointExportJob de Msvm** tiene estos métodos.
 
 
 
 | Método                                                                                  | Descripción                                        |
 |:----------------------------------------------------------------------------------------|:---------------------------------------------------|
 | [**GetError**](msvm-collectionreferencepointexportjob-geterror.md)                     | Recupera un error.<br/>                     |
-| [**GetErrorEx**](msvm-collectionreferencepointexportjob-geterrorex.md)                 | Recupera información adicional sobre el error.<br/> |
+| [**GetErrorEx**](msvm-collectionreferencepointexportjob-geterrorex.md)                 | Recupera información de error adicional.<br/> |
 | [**RequestStateChange**](msvm-collectionreferencepointexportjob-requeststatechange.md) | Solicita un cambio de estado.<br/>                |
 
 
@@ -84,7 +84,7 @@ La clase **MSVM \_ CollectionReferencePointExportJob** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ CollectionReferencePointExportJob** tiene estas propiedades.
+La **clase \_ CollectionReferencePointExportJob de Msvm** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -97,7 +97,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-GUID del punto de referencia de colección que se usa como base en exportoperation.
+GUID del punto de referencia de colección que se usa como base en la operación exportoperation.
 
 </dd> <dt>
 
@@ -114,7 +114,7 @@ Indica si se puede cancelar el trabajo. El valor de esta propiedad no garantiza 
 
 </dd> <dt>
 
-**Recopilación**
+**CollectionId**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -123,7 +123,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-GUID del grupo de máquinas virtuales para el que los archivos de registro wereexported.
+GUID del grupo de máquinas virtuales para el que se hanexportado los archivos de registro.
 
 </dd> <dt>
 
@@ -136,10 +136,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**\_ trabajo de CIM**](cim-job.md).**ErrorCode**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Cim \_ Job**](cim-job.md).**ErrorCode**")
 </dt> </dl>
 
-Contiene una descripción del Resumen de errores.
+Contiene una descripción de resumen de errores.
 
 </dd> <dt>
 
@@ -159,7 +159,7 @@ Ubicación de exportación.
 **ExportedConfigFilePaths**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -172,29 +172,29 @@ Ruta de acceso del archivo de configuración de la máquina virtual exportada.
 **ExportedDisks**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Identificadores de instancia de los discos virtuales para los que se exportaron los archivos de registro.
+Los ID de instancia de los discos virtuales para los que se exportaron los archivos de registro.
 
 </dd> <dt>
 
 **ExportedGuestStateFilePaths**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Ruta de acceso del archivo de estado invitado de la máquina virtual exportada.
+Ruta de acceso del archivo de estado de invitado de la máquina virtual exportada.
 
 > [!Note]  
-> Agregado en Windows 10, versión 1709.
+> Se ha agregado Windows 10, versión 1709.
 
  
 
@@ -203,7 +203,7 @@ Ruta de acceso del archivo de estado invitado de la máquina virtual exportada.
 **ExportedLogFilePaths**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -216,13 +216,13 @@ Rutas de acceso de los archivos de registro que se exportaron.
 **ExportedRuntimeFilePaths**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Ruta de acceso del archivo de estado de tiempo de ejecución de la máquina virtual exportado.
+Ruta de acceso del archivo de estado en tiempo de ejecución de la máquina virtual exportada.
 
 </dd> <dt>
 
@@ -235,14 +235,14 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-GUID del punto de referencia de la colección que se exporta.
+GUID del punto de referencia de colección que se exporta.
 
 </dd> <dt>
 
 **VirtualMachineId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -256,12 +256,12 @@ GUID de las máquinas virtuales para las que se ha realizado la operación de ex
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1703 \[\]<br/>                                               |
+| Cliente mínimo compatible<br/> | Windows 10, versión 1703 \[ solo para aplicaciones de escritorio\]<br/>                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -270,7 +270,7 @@ GUID de las máquinas virtuales para las que se ha realizado la operación de ex
 
 <dl> <dt>
 
-[**\_CONCRETEJOB CIM**](cim-concretejob.md)
+[**CIM \_ ConcreteJob**](cim-concretejob.md)
 </dt> </dl>
 
  

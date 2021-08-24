@@ -13,9 +13,9 @@ ms.locfileid: "119661685"
 ---
 # <a name="structured-storage-server-sample-stoserve"></a>Ejemplo Storage servidor estructurado (StoServe)
 
-El Tutorial de Structured Storage Server para StoServe proporciona información completa y ejemplos de código para crear un proceso de servidor de modelos. **StoServe** es un archivo DLL destinado principalmente a un servidor COM y es un servidor en proceso que se registra automáticamente.
+El Tutorial de Structured Storage Server para StoServe proporciona información completa y ejemplos de código para crear un proceso de servidor de modelos. **StoServe** es un archivo DLL que está pensado principalmente como servidor COM y es un servidor en proceso que se registra automáticamente.
 
-En las secciones siguientes se proporcionan las instrucciones **de ejemplo de StoServe,** la información de referencia y los vínculos **al código de ejemplo de StoServe.**
+En las secciones siguientes se proporcionan instrucciones **de ejemplo de StoServe,** información de referencia y vínculos al **código de ejemplo de StoServe.**
 
 -   [Información general de StoServe](stoserve-overview.md)
 -   [Uso de StoServe](using-stoserve.md)

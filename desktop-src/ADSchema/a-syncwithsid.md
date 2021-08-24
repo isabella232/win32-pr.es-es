@@ -1,6 +1,6 @@
 ---
 title: Atributo Sync-With-SID
-description: Para la sincronización de directiva local o objeto de grupo integrado sam, este es el grupo local al que corresponde un objeto.
+description: Para la sincronización de directiva local o objeto de grupo integrado de SAM, este es el grupo local al que corresponde un objeto.
 ms.assetid: b983210d-1c54-4355-bc37-771e51016175
 ms.tgt_platform: multiple
 keywords:
@@ -23,7 +23,7 @@ ms.locfileid: "119802025"
 ---
 # <a name="sync-with-sid-attribute"></a>Atributo Sync-With-SID
 
-Para la sincronización de directiva local o objeto de grupo integrado sam, este es el grupo local al que corresponde un objeto.
+Para la sincronización de directiva local o objeto de grupo integrado de SAM, este es el grupo local al que corresponde un objeto.
 
 
 
@@ -32,7 +32,7 @@ Para la sincronización de directiva local o objeto de grupo integrado sam, este
 | CN                | Sincronización con SID                        |
 | Ldap-Display-Name | syncWithSID                          |
 | Size              | \-                                   |
-| Privilegio actualizar  | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.667               |
 | System-Id-Guid    | 037651e5-441d-11d1-a9c3-0000f80367c1 |
@@ -53,7 +53,7 @@ Para la sincronización de directiva local o objeto de grupo integrado sam, este
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------|
 | Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
@@ -74,7 +74,7 @@ Para la sincronización de directiva local o objeto de grupo integrado sam, este
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------|
 | Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
@@ -95,7 +95,7 @@ Para la sincronización de directiva local o objeto de grupo integrado sam, este
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------|
 | Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
@@ -116,7 +116,7 @@ Para la sincronización de directiva local o objeto de grupo integrado sam, este
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------|
 | Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
@@ -158,7 +158,7 @@ Para la sincronización de directiva local o objeto de grupo integrado sam, este
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------|
 | Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |

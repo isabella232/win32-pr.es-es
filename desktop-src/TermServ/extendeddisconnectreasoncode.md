@@ -1,10 +1,10 @@
 ---
-title: Enumeración ExtendedDisconnectReasonCode
-description: Define la información extendida sobre el motivo del control para la desconexión.
+title: ExtendedDisconnectReasonCode (enumeración)
+description: Define información extendida sobre el motivo de la desconexión del control.
 ms.assetid: E73E73B4-6C6B-4270-A1BD-947FA6D7B31B
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto enumeración ExtendedDisconnectReasonCode
+- Enumeración ExtendedDisconnectReasonCode Servicios de Escritorio remoto
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 657d0faee03ca37b9a5a49b95b978a24b0c8955c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8cfb917e2a74b82b55dc91a507e2c5815fbe83c632c4b3e29eb76941ab07662e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676938"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119737845"
 ---
-# <a name="extendeddisconnectreasoncode-enumeration"></a>Enumeración ExtendedDisconnectReasonCode
+# <a name="extendeddisconnectreasoncode-enumeration"></a>ExtendedDisconnectReasonCode (enumeración)
 
-Define la información extendida sobre el motivo del control para la desconexión.
+Define información extendida sobre el motivo de la desconexión del control.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -85,7 +85,7 @@ Una aplicación inició la desconexión.
 <span id="exDiscReasonAPIInitiatedLogoff"></span><span id="exdiscreasonapiinitiatedlogoff"></span><span id="EXDISCREASONAPIINITIATEDLOGOFF"></span>**exDiscReasonAPIInitiatedLogoff**
 </dt> <dd>
 
-Una aplicación cerró sesión en el cliente.
+Una aplicación ha cerrado la sesión del cliente.
 
 </dd> <dt>
 
@@ -106,7 +106,7 @@ El servidor ha desconectado el cliente porque el cliente ha superado el período
 <span id="exDiscReasonReplacedByOtherConnection"></span><span id="exdiscreasonreplacedbyotherconnection"></span><span id="EXDISCREASONREPLACEDBYOTHERCONNECTION"></span>**exDiscReasonReplacedByOtherConnection**
 </dt> <dd>
 
-La conexión del cliente se ha reemplazado por otra conexión.
+La conexión del cliente se reemplazó por otra conexión.
 
 </dd> <dt>
 
@@ -120,7 +120,7 @@ No hay memoria disponible.
 <span id="exDiscReasonServerDeniedConnection"></span><span id="exdiscreasonserverdeniedconnection"></span><span id="EXDISCREASONSERVERDENIEDCONNECTION"></span>**exDiscReasonServerDeniedConnection**
 </dt> <dd>
 
-El servidor ha denegado la conexión.
+El servidor denegó la conexión.
 
 </dd> <dt>
 
@@ -148,21 +148,21 @@ Se requieren credenciales nuevas.
 <span id="exDiscReasonRpcInitiatedDisconnectByUser"></span><span id="exdiscreasonrpcinitiateddisconnectbyuser"></span><span id="EXDISCREASONRPCINITIATEDDISCONNECTBYUSER"></span>**exDiscReasonRpcInitiatedDisconnectByUser**
 </dt> <dd>
 
-La actividad de usuario ha iniciado la desconexión.
+La actividad del usuario ha iniciado la desconexión.
 
 </dd> <dt>
 
 <span id="exDiscReasonLogoffByUser"></span><span id="exdiscreasonlogoffbyuser"></span><span id="EXDISCREASONLOGOFFBYUSER"></span>**exDiscReasonLogoffByUser**
 </dt> <dd>
 
-El usuario cerró sesión, desconectando la sesión.
+El usuario ha cerrado sesión, desconectando la sesión.
 
 </dd> <dt>
 
 <span id="exDiscReasonLicenseInternal"></span><span id="exdiscreasonlicenseinternal"></span><span id="EXDISCREASONLICENSEINTERNAL"></span>**exDiscReasonLicenseInternal**
 </dt> <dd>
 
-Error de licencia interno.
+Error interno de licencia.
 
 </dd> <dt>
 
@@ -176,7 +176,7 @@ No había ningún servidor de licencias disponible.
 <span id="exDiscReasonLicenseNoLicense"></span><span id="exdiscreasonlicensenolicense"></span><span id="EXDISCREASONLICENSENOLICENSE"></span>**exDiscReasonLicenseNoLicense**
 </dt> <dd>
 
-No había disponible ninguna licencia de software válida.
+No había ninguna licencia de software válida disponible.
 
 </dd> <dt>
 
@@ -218,14 +218,14 @@ El cliente finalizó el protocolo de licencias prematuramente.
 <span id="exDiscReasonLicenseErrClientEncryption"></span><span id="exdiscreasonlicenseerrclientencryption"></span><span id="EXDISCREASONLICENSEERRCLIENTENCRYPTION"></span>**exDiscReasonLicenseErrClientEncryption**
 </dt> <dd>
 
-Un mensaje de licencia se cifró incorrectamente.
+Un mensaje de licencia se ha cifrado incorrectamente.
 
 </dd> <dt>
 
 <span id="exDiscReasonLicenseCantUpgradeLicense"></span><span id="exdiscreasonlicensecantupgradelicense"></span><span id="EXDISCREASONLICENSECANTUPGRADELICENSE"></span>**exDiscReasonLicenseCantUpgradeLicense**
 </dt> <dd>
 
-La licencia de acceso de cliente del equipo local no se pudo actualizar ni renovar.
+No se pudo actualizar ni renovar la licencia de acceso de cliente del equipo local.
 
 </dd> <dt>
 
@@ -239,7 +239,7 @@ El equipo remoto no tiene licencia para aceptar conexiones remotas.
 <span id="exDiscReasonLicenseCreatingLicStoreAccDenied"></span><span id="exdiscreasonlicensecreatinglicstoreaccdenied"></span><span id="EXDISCREASONLICENSECREATINGLICSTOREACCDENIED"></span>**exDiscReasonLicenseCreatingLicStoreAccDenied**
 </dt> <dd>
 
-Se recibió un error de acceso denegado al crear una clave del registro para el almacén de licencias.
+Se recibió un error de acceso denegado al crear una clave del Registro para el almacén de licencias.
 
 </dd> <dt>
 
@@ -253,14 +253,14 @@ Se encontraron credenciales no válidas.
 <span id="exDiscReasonProtocolRangeStart"></span><span id="exdiscreasonprotocolrangestart"></span><span id="EXDISCREASONPROTOCOLRANGESTART"></span>**exDiscReasonProtocolRangeStart**
 </dt> <dd>
 
-Inicio del intervalo de errores internos del protocolo. Compruebe el registro de eventos del servidor para obtener más detalles.
+A partir del intervalo de errores de protocolo internos. Compruebe el registro de eventos del servidor para obtener más detalles.
 
 </dd> <dt>
 
 <span id="exDiscReasonProtocolRangeEnd"></span><span id="exdiscreasonprotocolrangeend"></span><span id="EXDISCREASONPROTOCOLRANGEEND"></span>**exDiscReasonProtocolRangeEnd**
 </dt> <dd>
 
-Finalización del intervalo de errores internos del protocolo.
+Finalizar el intervalo de errores de protocolo internos.
 
 </dd> </dl>
 

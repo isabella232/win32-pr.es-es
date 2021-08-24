@@ -1,22 +1,22 @@
 ---
-title: Ejemplo de código de C/C++ recuperar un Comentario de tarea
-description: En este ejemplo se recupera la cadena de comentario de una tarea conocida y se muestra la cadena de comentario en la pantalla. En este ejemplo se da por supuesto que la tarea y la tarea de prueba ya existen en el equipo local.
+title: Ejemplo de código de C/C++ recuperación de un comentario de tarea
+description: En este ejemplo se recupera la cadena de comentario de una tarea conocida y se muestra la cadena de comentario en la pantalla. En este ejemplo se supone que la tarea y la tarea de prueba ya existen en el equipo local.
 ms.assetid: f6f558d8-2e34-4314-9583-f815921aac7e
 keywords:
-- recuperando Programador de tareas de comentario de tarea
-- recuperar propiedades de elementos de trabajo Programador de tareas, comentario de tarea
+- recuperación de comentarios de Programador de tareas
+- recuperar propiedades de elemento de trabajo Programador de tareas , comentario de tarea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b89ada9b135e42e25a81baf9bee60910b4e1a483
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 77aa94b5832d8f0a109ad07f1d8cbdd799dd81ac7ab25c4ed202d87f16ae468c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357149"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119738895"
 ---
-# <a name="cc-code-example-retrieving-a-task-comment"></a>Ejemplo de código de C/C++: recuperar un Comentario de tarea
+# <a name="cc-code-example-retrieving-a-task-comment"></a>Ejemplo de código de C/C++: recuperar un comentario de tarea
 
-En este ejemplo se recupera la cadena de comentario de una tarea conocida y se muestra la cadena de comentario en la pantalla. En este ejemplo se da por supuesto que la tarea y la tarea de prueba ya existen en el equipo local.
+En este ejemplo se recupera la cadena de comentario de una tarea conocida y se muestra la cadena de comentario en la pantalla. En este ejemplo se supone que la tarea y la tarea de prueba ya existen en el equipo local.
 
 
 ```C++
@@ -119,12 +119,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Ejemplos de Programador de tareas 1,0](task-scheduler-1-0-examples.md)
+[Programador de tareas ejemplos de 1.0](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
