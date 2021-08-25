@@ -1,11 +1,11 @@
 ---
-title: atributo MS-WMI-género
+title: Atributo ms-WMI-Deserción
 description: Identifica el tipo de objeto de una codificación.
 ms.assetid: 924363f5-dabf-46ce-a5de-bbecf401db61
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-WMI-género
-- msWMI-género Attribute AD Schema
+- Esquema de AD del atributo ms-WMI-Deserción
+- Esquema de AD del atributo msWMI-Deserción
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e901c0e9d64c02bee04e9a8e6b5cc50bbcb726a4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 10d14dc879cbd60f326b52c2bcd46a37276c0ea4120da19fa01d10b4396f19f9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997528"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119760795"
 ---
-# <a name="ms-wmi-genus-attribute"></a>atributo MS-WMI-género
+# <a name="ms-wmi-genus-attribute"></a>Atributo ms-WMI-Deserción
 
 Identifica el tipo de objeto de una codificación.
 
@@ -29,14 +29,14 @@ Identifica el tipo de objeto de una codificación.
 
 | Entrada | Value |
 |-------------------|-----------------------------------------------------------------|
-| CN                | MS-WMI-género                                                    |
-| Nombre para mostrar de LDAP | msWMI-género                                                     |
-| Tamaño              | 4 bytes. 1 indica una clase. 2 indica una instancia de.          |
-| Actualizar privilegio  | Administrador de dominio                                            |
-| Frecuencia de actualización  | Siempre que se agrega o modifica una clase que contiene el atributo. |
+| CN                | ms-WMI-Deserción                                                    |
+| Ldap-Display-Name | msWMI-Estaciones                                                     |
+| Size              | 4 bytes. 1 indica una clase. 2 indica una instancia de .          |
+| Actualizar privilegios  | Administrador de dominio                                            |
+| Frecuencia de actualización  | Cada vez que se agrega o modifica una clase que contiene el atributo. |
 | Attribute-Id      | 1.2.840.113556.1.4.1677                                         |
-| System-ID-GUID    | 50c8673a-8f56-4614-9308-9e1340fb9af3                            |
-| Sintaxis            | [**Enumeración**](s-enumeration.md)                            |
+| System-Id-Guid    | 50c8673a-8f56-4614-9308-9e1340fb9af3                            |
+| Syntax            | [**Enumeración**](s-enumeration.md)                            |
 
 
 
@@ -54,18 +54,18 @@ Identifica el tipo de objeto de una codificación.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
+| Clases usadas en        | [**ms-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
 
 
 
@@ -75,18 +75,18 @@ Identifica el tipo de objeto de una codificación.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
+| Clases usadas en        | [**ms-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
 
 
 
@@ -96,18 +96,18 @@ Identifica el tipo de objeto de una codificación.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
+| Clases usadas en        | [**ms-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
 
 
 
@@ -117,18 +117,18 @@ Identifica el tipo de objeto de una codificación.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
+| Clases usadas en        | [**ms-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
 
 
 
@@ -138,18 +138,18 @@ Identifica el tipo de objeto de una codificación.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
+| Clases usadas en        | [**ms-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
 
 
 

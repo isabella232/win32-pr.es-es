@@ -1,9 +1,9 @@
 ---
-title: Mensaje de ICM_GETSTATE (VFW. h)
-description: El \_ mensaje GETSTATE ICM consulta un controlador de compresión de vídeo para devolver su configuración actual en un bloque de memoria o para determinar la cantidad de memoria necesaria para recuperar la información de configuración.
+title: ICM_GETSTATE mensaje (Vfw.h)
+description: El ICM GETSTATE consulta un controlador de compresión de vídeo para devolver su configuración actual en un bloque de memoria o para determinar la cantidad de memoria necesaria para recuperar la información \_ de configuración.
 ms.assetid: 4b77e294-f3aa-45f9-a4f4-f103b83eae8d
 keywords:
-- Mensaje de ICM_GETSTATE de Windows multimedia
+- ICM_GETSTATE mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b6a45dcde627a02c1a4a402ea9a2a725f0429a7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c9bf21d808752b8a3ac3ba71a8593cd6dc577b3af4f34f421682d126c73b3578
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151242"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119784955"
 ---
-# <a name="icm_getstate-message"></a>\_Mensaje GETSTATE ICM
+# <a name="icm_getstate-message"></a>\_ICM Mensaje GETSTATE
 
-El **mensaje \_ GETSTATE ICM** consulta un controlador de compresión de vídeo para devolver su configuración actual en un bloque de memoria o para determinar la cantidad de memoria necesaria para recuperar la información de configuración. Puede enviar este mensaje explícitamente o mediante la macro [**ICGetState**](/windows/desktop/api/Vfw/nf-vfw-icgetstate) .
+El **ICM \_ GETSTATE** consulta a un controlador de compresión de vídeo para devolver su configuración actual en un bloque de memoria o para determinar la cantidad de memoria necesaria para recuperar la información de configuración. Puede enviar este mensaje explícitamente o mediante la macro [**ICGetState.**](/windows/desktop/api/Vfw/nf-vfw-icgetstate)
 
 
 ```C++
@@ -38,14 +38,14 @@ lParam = (DWORD_PTR) cb;
 
 <dl> <dt>
 
-<span id="pv"></span><span id="PV"></span>*FV*
+<span id="pv"></span><span id="PV"></span>*Pv*
 </dt> <dd>
 
-Puntero a un bloque de memoria que va a contener la información de configuración actual. Puede especificar **null** para este parámetro para determinar la cantidad de memoria necesaria para la información de configuración, como en [**ICGetStateSize**](/windows/desktop/api/Vfw/nf-vfw-icgetstatesize).
+Puntero a un bloque de memoria para contener la información de configuración actual. Puede especificar **NULL para** este parámetro para determinar la cantidad de memoria necesaria para la información de configuración, como en [**ICGetStateSize**](/windows/desktop/api/Vfw/nf-vfw-icgetstatesize).
 
 </dd> <dt>
 
-<span id="cb"></span><span id="CB"></span>*CB*
+<span id="cb"></span><span id="CB"></span>*Cb*
 </dt> <dd>
 
 Tamaño, en bytes, del bloque de memoria.
@@ -54,13 +54,13 @@ Tamaño, en bytes, del bloque de memoria.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si *PV* es **null**, devuelve la cantidad de memoria, en bytes, necesaria para la información de configuración.
+Si *pv* es **NULL,** devuelve la cantidad de memoria, en bytes, necesaria para la información de configuración.
 
-Si *PV* no es **null**, devuelve ICERR \_ OK si es correcto o un error en caso contrario.
+Si *pv* no es **NULL,** devuelve ICERR \_ OK si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La estructura que se usa para representar la información de configuración es específica del controlador y está definida por el controlador.
+La estructura utilizada para representar la información de configuración es específica del controlador y la define el controlador.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,7 +70,7 @@ La estructura que se usa para representar la información de configuración es e
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

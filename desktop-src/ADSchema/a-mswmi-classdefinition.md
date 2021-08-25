@@ -1,11 +1,11 @@
 ---
-title: atributo MS-WMI-ClassDefinition
-description: Contiene una definición de clase que se va a establecer en algún espacio de nombres WMI.
+title: Atributo ms-WMI-ClassDefinition
+description: Contiene una definición de clase que se va a definir en algún espacio de nombres WMI.
 ms.assetid: b57026f6-2e77-4853-b118-3edb6effc54c
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-WMI-ClassDefinition
-- msWMI-ClassDefinition atributo AD Schema
+- Esquema de AD del atributo ms-WMI-ClassDefinition
+- Esquema de AD del atributo msWMI-ClassDefinition
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b6d3da6b610aa92dda706f9184c54a7605b48773
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 03a2e43803aa67a4c53811e20fd8e6ae4c7c3d105b09f2592eabb0ea6d957905
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119760805"
 ---
-# <a name="ms-wmi-classdefinition-attribute"></a>atributo MS-WMI-ClassDefinition
+# <a name="ms-wmi-classdefinition-attribute"></a>Atributo ms-WMI-ClassDefinition
 
-Contiene una definición de clase que se va a establecer en algún espacio de nombres WMI.
+Contiene una definición de clase que se va a definir en algún espacio de nombres WMI.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-WMI-ClassDefinition                      |
-| Nombre para mostrar de LDAP | msWMI-ClassDefinition                       |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | El sistema establece este valor.            |
+| CN                | ms-WMI-ClassDefinition                      |
+| Ldap-Display-Name | msWMI-ClassDefinition                       |
+| Size              | \-                                          |
+| Actualizar privilegios  | El sistema establece este valor.            |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1625                     |
-| System-ID-GUID    | 2b9c0ebc-c272-45cb-99d2-4d0e691632e0        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 2b9c0ebc-c272-45cb-99d2-4d0e691632e0        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -54,13 +54,13 @@ Contiene una definición de clase que se va a establecer en algún espacio de no
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -75,13 +75,13 @@ Contiene una definición de clase que se va a establecer en algún espacio de no
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -96,13 +96,13 @@ Contiene una definición de clase que se va a establecer en algún espacio de no
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -117,13 +117,13 @@ Contiene una definición de clase que se va a establecer en algún espacio de no
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -138,13 +138,13 @@ Contiene una definición de clase que se va a establecer en algún espacio de no
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |

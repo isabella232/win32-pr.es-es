@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ca3c3847d9c4802154e04627e06e97a2ca3f1d3f493edfcd5bb1367fd354dde6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1261cc75575a5b59d200ff965a5325caef9fa966
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117988357"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122481561"
 ---
 # <a name="freeze-command"></a>comando freeze
 
@@ -49,47 +49,17 @@ Identificador de un dispositivo MCI. Este identificador o alias se asigna cuando
 <span id="lpszFreezeFlags"></span><span id="lpszfreezeflags"></span><span id="LPSZFREEZEFLAGS"></span>*lpszFreezeFlags*
 </dt> <dd>
 
-Marca que identifica qué se va a inmovilizar. En la tabla siguiente se enumeran los tipos de dispositivo que reconocen el comando **freeze** y las marcas usadas por cada tipo.
+Marca que identifica qué se debe inmovilizar. En la tabla siguiente se enumeran los tipos de dispositivo que reconocen el comando **freeze** y las marcas usadas por cada tipo.
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Significado</th>
-<th>Significado</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>digitalvideo</td>
-<td>en <em>rectángulo</em></td>
-<td>Fuera</td>
-</tr>
-<tr class="even">
-<td>overlay</td>
-<td>en <em>rectángulo</em></td>
 
-</tr>
-<tr class="odd">
-<td>Vcr</td>
-<td><ul>
-<li>campo</li>
-<li>frame</li>
-</ul></td>
-<td><ul>
-<li>input</li>
-<li>output</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+| Valor | Significado | Significado | 
+|-------|---------|---------|
+| digitalvideo | en <em>rectángulo</em> | Fuera | 
+| overlay | en <em>rectángulo</em> | 
+| Vcr | <ul><li>campo</li><li>frame</li></ul> | <ul><li>input</li><li>output</li></ul> | 
+
 
 
 
@@ -99,13 +69,13 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el par
 
 
 
-| Value          | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Valor          | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| en *rectángulo* | Especifica la región que se inmovilizará. En el caso de los dispositivos de superposición de vídeo, esta región tendrá deshabilitada la adquisición de vídeo. En el caso de los dispositivos de vídeo digital, los píxeles del rectángulo tendrán activado su bit de máscara de bloqueo (a menos que se especifique la marca "fuera"). El rectángulo es relativo al origen del búfer de vídeo y se especifica como *X1 Y1 X2 Y2.* Las coordenadas *X1 Y1* especifican la esquina superior izquierda del rectángulo y las coordenadas *X2 Y2* especifican el ancho y el alto. |
-| campo          | Inmoviliza el primer campo. El campo se supone de forma predeterminada (si no se especifica ningún marco ni campo).                                                                                                                                                                                                                                                                                                                                                                                               |
+| en *rectángulo* | Especifica la región que se inmovilizará. En el caso de los dispositivos de superposición de vídeo, esta región tendrá deshabilitada la adquisición de vídeo. En el caso de los dispositivos de vídeo digital, los píxeles dentro del rectángulo tendrán el bit de máscara de bloqueo activado (a menos que se especifique la marca "fuera"). El rectángulo es relativo al origen del búfer de vídeo y se especifica como *X1 Y1 X2 Y2*. Las coordenadas *X1 Y1* especifican la esquina superior izquierda del rectángulo y las coordenadas *X2 Y2* especifican el ancho y el alto. |
+| campo          | Inmoviliza el primer campo. El campo se asume de forma predeterminada (si no se especifica ningún marco ni campo).                                                                                                                                                                                                                                                                                                                                                                                               |
 | frame          | Inmoviliza todo el marco y muestra ambos campos.                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| input          | Inmoviliza el marco actual de la imagen de entrada, tanto si está en pausa como si está en ejecución.                                                                                                                                                                                                                                                                                                                                                                                                                |
-| output         | Inmoviliza el marco actual de la salida del VCR. Si el VCR se reproduce cuando se emite inmovilización, el fotograma actual se inmoviliza y el VCR está en pausa. Si el VCR se pausa cuando se emite este comando, el fotograma actual se inmoviliza. La imagen inmovilizada permanece en el dispositivo de salida hasta que se [emite un](unfreeze.md) comando de descongelar. Si no se especifica "input" ni "output", se supone "output".                                                                                    |
+| input          | Inmoviliza el marco actual de la imagen de entrada, ya sea en pausa o en ejecución.                                                                                                                                                                                                                                                                                                                                                                                                                |
+| output         | Inmoviliza el marco actual de la salida del VCR. Si el VCR se reproduce cuando se emite inmovilización, el marco actual se inmoviliza y el VCR se pausa. Si el VCR se pausa cuando se emite este comando, se inmoviliza el marco actual. La imagen inmovilizada permanece en el dispositivo de salida hasta que [se emite](unfreeze.md) un comando de descongelar. Si no se especifica "input" ni "output", se asume "output".                                                                                    |
 | Fuera        | Indica que el área fuera de la región especificada mediante la marca "at" está inmovilizada.                                                                                                                                                                                                                                                                                                                                                                                                           |
 
 
@@ -123,15 +93,15 @@ Puede ser "wait", "notify" o ambos. En el caso de los dispositivos de vídeo dig
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
 ## <a name="remarks"></a>Comentarios
 
 Cuando se usa con dispositivos VCR, este comando está pensado para tarjetas de captura de fotogramas.
 
-Para especificar regiones de adquisición irregulares con la marca "at", use una serie de comandos inmovilizar y [descongelar.](unfreeze.md) Algunos dispositivos de superposición de vídeo limitan la complejidad de la región de adquisición.
+Para especificar regiones de adquisición irregulares con la marca "at", use una serie de comandos freeze y [unfreeze.](unfreeze.md) Algunos dispositivos de superposición de vídeo limitan la complejidad de la región de adquisición.
 
-Este comando solo se admite si una llamada al comando [de funcionalidad](capability.md) con la marca "can freeze" devuelve **TRUE.**
+Este comando solo se admite si una llamada al comando [de](capability.md) funcionalidad con la marca "can freeze" devuelve **TRUE.**
 
 ## <a name="examples"></a>Ejemplos
 
@@ -145,18 +115,18 @@ freeze vboard at 0 0 100 100
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Cadenas de comandos de MCI](mci-command-strings.md)

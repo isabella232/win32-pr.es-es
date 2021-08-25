@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c8b6952ff50dc2266655c58bd5c2e1ed13105598
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4cdd7e26b0c08b154c6cffd08066e8ae841a6aa849db4751ffa0cdf252848719
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108095713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055955"
 ---
 # <a name="cdynamicoutputpindeliverendflush-method"></a>Método CDynamicOutputPin.DeliverEndFlush
 
@@ -54,12 +54,12 @@ Este método invalida el [**método CBaseOutputPin::D eliverEndFlush.**](cbaseou
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

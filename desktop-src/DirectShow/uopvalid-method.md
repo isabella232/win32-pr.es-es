@@ -1,24 +1,24 @@
 ---
-description: El método UOPValid recupera un valor que indica si la operación de usuario especificada (UOP) es válida actualmente.
+description: El método UOPValid recupera un valor que indica si la operación de usuario (UOP) especificada es válida actualmente.
 ms.assetid: 0d2c4693-95eb-4cc8-a8f6-61fd0b6d57be
-title: Método UOPValid (Segment. h)
+title: Método UOPValid (Segment.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d3051ad20c496713880407270c7054839520ce5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2eee8f11fbcc51c982b2a619f35fdd56b0f0eebe86945e84f18d6ce62afa783b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078675"
 ---
-# <a name="uopvalid-method"></a>Método UOPValid
+# <a name="uopvalid-method"></a>UOPValid (método)
 
 > [!Note]  
 > Este componente está disponible para su uso en los sistemas operativos Microsoft Windows 2000, Windows XP y Windows Server 2003. En versiones posteriores podría modificarse o no estar disponible.
 
  
 
-El `UOPValid` método recupera un valor que indica si la operación de usuario especificada (UOP) es válida actualmente.
+El método recupera un valor que indica si la operación de usuario `UOPValid` (UOP) especificada es válida actualmente.
 
 ``` syntax
 [ bIsValid = ] MSWebDVD.UOPValid(iUOP)
@@ -35,7 +35,7 @@ Especifica la operación de usuario (UOP) como un entero.
 
 
 
-| Value | Descripción                                                                                                                                                                                                              |
+| Valor | Descripción                                                                                                                                                                                                              |
 |-------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0     | [**PlayTitle**](playtitle-method.md), [**PlayAtTime**](playattime-method.md)[**PlayAtTimeInTitle**](playattimeintitle-method.md)                                                                                      |
 | 1     | [**PlayChapter**](playchapter-method.md)                                                                                                                                                                                |
@@ -47,21 +47,21 @@ Especifica la operación de usuario (UOP) como un entero.
 | 7     | [**PlayNextChapter**](playnextchapter-method.md)                                                                                                                                                                        |
 | 8     | [**PlayForwards**](playforwards-method.md)                                                                                                                                                                              |
 | 9     | [**PlayBackwards**](playbackwards-method.md)                                                                                                                                                                            |
-| 10    | [**Showmenu**](showmenu-method.md) con un valor de parámetro de 2 ( \_ título de menú de DVD \_ )                                                                                                                                       |
-| 11    | [**Showmenu**](showmenu-method.md) con un valor de parámetro de 3 ( \_ raíz de menú de DVD \_ )                                                                                                                                        |
-| 12    | [**Showmenu**](showmenu-method.md) con un valor de parámetro de 4 ( \_ subimagen de menú de DVD \_ )                                                                                                                                  |
-| 13    | [**Showmenu**](showmenu-method.md) con un valor de parámetro de 5 ( \_ audio de menú de DVD \_ )                                                                                                                                       |
-| 14    | [**Showmenu**](showmenu-method.md) con un valor de parámetro de 6 ( \_ ángulo de menú de DVD \_ )                                                                                                                                       |
-| 15    | [**Showmenu**](showmenu-method.md) con un valor de parámetro de 7 ( \_ capítulo de menú de DVD \_ )                                                                                                                                     |
+| 10    | [**ShowMenu**](showmenu-method.md) con un valor de parámetro de 2 (TÍTULO \_ DEL MENÚ DE \_ DVD)                                                                                                                                       |
+| 11    | [**ShowMenu**](showmenu-method.md) con un valor de parámetro de 3 (RAÍZ \_ DE MENÚ DE \_ DVD)                                                                                                                                        |
+| 12    | [**ShowMenu**](showmenu-method.md) con un valor de parámetro de 4 \_ (subpicture DVD \_ MENU)                                                                                                                                  |
+| 13    | [**ShowMenu**](showmenu-method.md) con un valor de parámetro de 5 (DVD \_ MENU \_ Audio)                                                                                                                                       |
+| 14    | [**ShowMenu**](showmenu-method.md) con un valor de parámetro de 6 (DVD \_ MENU \_ Angle)                                                                                                                                       |
+| 15    | [**ShowMenu**](showmenu-method.md) con un valor de parámetro de 7 (capítulo DVD \_ \_ MENU)                                                                                                                                     |
 | 16    | [**Reanudar**](resume-method.md)                                                                                                                                                                                          |
-| 17    | [**SelectLeftButton**](selectleftbutton-method.md), [**SelectRightButton**](selectrightbutton-method.md), [**SelectUpperButton**](selectupperbutton-method.md), [**SelectLowerButton**](selectlowerbutton-method.md) |
+| 17    | [**SelectLeftButton,**](selectleftbutton-method.md) [**SelectRightButton,**](selectrightbutton-method.md) [**SelectUpperButton**](selectupperbutton-method.md)y [**SelectLowerButton**](selectlowerbutton-method.md) |
 | 18    | [**StillOff**](stilloff-method.md)                                                                                                                                                                                      |
 | 19    | [**Pausar**](pause-method.md)                                                                                                                                                                                            |
 | 20    | [**CurrentAudioStream**](currentaudiostream-property.md)                                                                                                                                                                |
 | 21    | [**CurrentSubpictureStream**](currentsubpicturestream-property.md)                                                                                                                                                      |
 | 22    | [**CurrentAngle**](currentangle-property.md), [ **SelectParentalLevel**](selectparentallevel-method.md)                                                                                                                 |
-| 23    | [**KaraokeAudioPresentationMode**](karaokeaudiopresentationmode-property.md)                                                                                                                                            |
-| 24    | Seleccione Preferencias del modo de vídeo.                                                                                                                                                                                            |
+| 23    | [**AudioAudioPresentationMode**](karaokeaudiopresentationmode-property.md)                                                                                                                                            |
+| 24    | Seleccione la preferencia del modo de vídeo.                                                                                                                                                                                            |
 
 
 
@@ -79,7 +79,7 @@ Devuelve un valor booleano que indica si el control UOP permite la operación es
 
 | Requisito | Value |
 |-------------------|--------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Segmento. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Segment.h</dt> </dl> |
 
 
 

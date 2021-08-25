@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_TABLECREATE. pLVSpacehints'
-title: Propiedad JET_TABLECREATE. pLVSpacehints
+description: 'Más información sobre: JET_TABLECREATE.pLVSpacehints'
+title: JET_TABLECREATE.pLVSpacehints, propiedad
 TOCTitle: 'pLVSpacehints property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_TABLECREATE.pLVSpacehints
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_tablecreate.plvspacehints(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 508eb7731dc08089e1142ad267672a1c3976dd3e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 744e5eb988a4831349c02f7ebb13c2108589248d2062a02e32ee7e469cea0c0c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105649204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120016424"
 ---
-# <a name="jet_tablecreateplvspacehints-property"></a>Propiedad JET_TABLECREATE. pLVSpacehints
+# <a name="jet_tablecreateplvspacehints-property"></a>JET_TABLECREATE.pLVSpacehints, propiedad
 
-Obtiene o establece las sugerencias de asignación, mantenimiento y uso de espacio para el árbol LV separado, de tipo [JET_SPACEHINTS](./jet-spacehints-class.md).
+Obtiene o establece sugerencias de asignación, mantenimiento y uso de espacio para el árbol lv separado, de [tipo JET_SPACEHINTS](./jet-spacehints-class.md).
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public JET_SPACEHINTS pLVSpacehints { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_SPACEHINTS](./jet-spacehints-class.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_SPACEHINTS](./jet-spacehints-class.md)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_TABLECREATE (clase)](./jet-tablecreate-class.md)
+[JET_TABLECREATE clase](./jet-tablecreate-class.md)
 
-[Miembros de JET_TABLECREATE](./jet-tablecreate-members.md)
+[JET_TABLECREATE miembros](./jet-tablecreate-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

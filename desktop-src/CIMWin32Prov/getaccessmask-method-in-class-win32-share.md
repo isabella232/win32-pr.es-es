@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: fcd6396f6421060a67108e7c428c99bcd7ca9651
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ebc2b2620b0bdc019e117f9a4b2c376be6320be968fdae42509dc3f62c3cc9a6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077665"
 ---
 # <a name="getaccessmask-method-of-the-win32_share-class"></a>Método GetAccessMask de la clase Win32 \_ Share
 
 El **método GetAccessMask** devuelve un mapa de bits uint32 con los derechos de acceso al recurso compartido que mantiene el usuario o grupo en cuyo nombre se devuelve la instancia.
 
-En este tema se Managed Object Format sintaxis de MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,7 +51,7 @@ Derechos de acceso al recurso compartido que mantiene el usuario o grupo.
 
 1 (0x1)
 
-Concede el derecho de leer datos del archivo. Para un directorio, este valor concede el derecho de enumerar el contenido del directorio.
+Concede el derecho a leer datos del archivo. Para un directorio, este valor concede el derecho a enumerar el contenido del directorio.
 
 </dd> <dt>
 
@@ -73,7 +73,7 @@ Concede el derecho a anexar datos al archivo. Para un directorio, este valor con
 
 </dd> <dt>
 
-**FILE \_ READ \_ EA**
+**EA \_ DE LECTURA DE \_ ARCHIVOS**
 </dt> <dd>
 
 8 (0x8)
@@ -163,7 +163,7 @@ Asigna el propietario de escritura.
 
 </dd> <dt>
 
-**SYNCHRONIZE**
+**Sincronizar**
 </dt> <dd>
 
 1048576 (0x100000)
@@ -206,7 +206,7 @@ WScript.Echo Return
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -216,7 +216,7 @@ WScript.Echo Return
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

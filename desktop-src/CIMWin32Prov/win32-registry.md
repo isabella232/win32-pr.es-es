@@ -1,8 +1,8 @@
 ---
-description: El registro de Win32 \_&\# 8194; La clase WMI representa el registro del sistema en un equipo que ejecuta Windows.
+description: El registro de Win32 \_&\# 8194; La clase WMI representa el registro del sistema en un sistema de equipo que ejecuta Windows.
 ms.assetid: 4a6cd7d7-2845-434d-b024-d6dbb77371ea
 ms.tgt_platform: multiple
-title: Win32_Registry (clase)
+title: Win32_Registry clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,18 +22,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a1dc5fd89ee589aabda5da5f97632d86b39f6beb
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 64611f35e08d9b816d990602b43c62330431e8afb65874cee284fac5778a898d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103998147"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119971581"
 ---
-# <a name="win32_registry-class"></a>\_Clase del registro Win32
+# <a name="win32_registry-class"></a>Win32 \_ Registry (clase)
 
-La  [clase WMI](../wmisdk/retrieving-a-class.md) **\_ del registro de Win32** representa el registro del sistema en un equipo que ejecuta Windows.
+La **clase \_ WMI del Registro Win32** representa el registro del sistema en un sistema informático que ejecuta Windows. [](../wmisdk/retrieving-a-class.md)
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
+La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -54,13 +54,13 @@ class Win32_Registry : CIM_LogicalElement
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ del registro Win32** tiene estos tipos de miembros:
+La **clase Registry \_ de Win32** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ del registro Win32** tiene estas propiedades.
+La **clase Registry \_ de Win32** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -73,28 +73,28 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**displayName**](../wmisdk/standard-qualifiers.md) ("Caption")
+Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Caption")
 </dt> </dl>
 
 Breve descripción textual del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **CurrentSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \|NTDLL.DLL\| [**NtQuerySystemInformation**](/windows/win32/api/winternl/nf-winternl-ntquerysysteminformation) \| SystemRegistryQuotaInformation"), [**unidades**](../wmisdk/standard-qualifiers.md) ("megabytes")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \|NTDLL.DLL\| [**NtQuerySystemInformation**](/windows/win32/api/winternl/nf-winternl-ntquerysysteminformation) \| SystemRegistryQuotaInformation"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("megabytes")
 </dt> </dl>
 
-Tamaño físico actual del registro de Windows.
+Tamaño físico actual del registro Windows datos.
 
 Ejemplo: 10
 
@@ -109,46 +109,46 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](../wmisdk/standard-qualifiers.md) ("Descripción")
+Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Description")
 </dt> </dl>
 
-Una descripción textual del objeto.
+Descripción textual del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001,5 "), [**displayName**](../wmisdk/standard-qualifiers.md) (" instalación de fecha ")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Fecha de instalación")
 </dt> </dl>
 
 Indica cuándo se instaló el objeto. La falta de un valor no indica que el objeto no está instalado.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
-**Tamañomáximo**
+**MaximumSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ control \| RegistrySizeLimit"), [**unidades**](../wmisdk/standard-qualifiers.md) ("megabytes")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control \| RegistrySizeLimit"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("megabytes")
 </dt> </dl>
 
-Tamaño máximo del registro de Windows. Si el sistema se ejecuta correctamente con la propiedad **ProposedSize** , **MaximumSize** debe contener el mismo valor.
+Tamaño máximo del registro Windows datos. Si el sistema usa correctamente la **propiedad ProposedSize,** **MaximumSize** debe contener el mismo valor.
 
 </dd> <dt>
 
@@ -161,26 +161,26 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](../wmisdk/key-qualifier.md), [**invalidación**](../wmisdk/standard-qualifiers.md) ("Name"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry")
+Calificadores: [**key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("Name"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry")
 </dt> </dl>
 
-Nombre del registro de Windows. La longitud máxima es de 256 caracteres.
+Nombre de la Windows registro. La longitud máxima es de 256 caracteres.
 
 </dd> <dt>
 
 **ProposedSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ control \| RegistrySizeLimit"), [**unidades**](../wmisdk/standard-qualifiers.md) ("megabytes")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control \| RegistrySizeLimit"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("megabytes")
 </dt> </dl>
 
-Tamaño propuesto del registro de Windows. Es la única configuración del registro que se puede modificar y se intenta su propuesta la próxima vez que se arranque el sistema.
+Tamaño propuesto del registro Windows datos. Es la única configuración del Registro que se puede modificar y su propuesta se intenta la próxima vez que se inicie el sistema.
 
 </dd> <dt>
 
@@ -193,14 +193,14 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**displayName**](../wmisdk/standard-qualifiers.md) ("status")
+Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
 </dt> </dl>
 
-Cadena que indica el estado actual del objeto. Se puede definir un estado operativo y no operativo. El estado operativo puede ser "correcto", "degradado" y "Pred FAIL". "Pred FAIL" indica que un elemento funciona correctamente, pero está prediciendo un error (por ejemplo, una unidad de disco duro habilitada para SMART).
+Cadena que indica el estado actual del objeto. Se puede definir el estado operativo y no operativo. El estado operativo puede incluir "Ok", "Degraded" y "Pred Fail". "Error previo" indica que un elemento funciona correctamente, pero predice un error (por ejemplo, una unidad de disco duro habilitada para SMART).
 
-El estado no operativo puede incluir "error", "iniciando", "deteniendo" y "servicio". "Servicio" puede aplicarse durante el reflejo del disco: Resilvering, recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo el trabajo está en línea, pero el elemento administrado no es "OK" ni en ninguno de los otros Estados.
+El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". El "servicio" se puede aplicar durante la resilvering del reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Los valores son los siguientes:
 
@@ -208,93 +208,93 @@ Los valores son los siguientes:
 
 <span id="OK"></span><span id="ok"></span>
 
-**Aceptar** ("Aceptar")
+**Ok** ("OK")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Error** ("error")
+**Error** ("Error")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradado** ("degradado")
+**Degradado** ("Degradado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("desconocido")
+**Desconocido** ("Desconocido")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Pred FAIL** ("Pred FAIL")
+**Error de pred** ("error de pred")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Iniciando** ("iniciando")
+**A partir** de ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("detener")
+**Detener** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servicio** ("servicio")
+**Servicio** ("Servicio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-Con **estrés** ("acentuado")
+**Estresado** ("estresado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Recover** ("Recover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Sin contacto** ("sin contacto")
+**Sin contacto** ("Sin contacto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicación perdida** ("pérdida de comunicación")
+**Comm perdido** ("Comm perdido")
 
 
 </dt> <dd></dd> </dl>
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La **clase \_ del registro Win32** se deriva [**de \_ LogicalElement CIM**](cim-logicalelement.md).
+La **clase Registry \_ de Win32** se deriva de [**CIM \_ LogicalElement**](cim-logicalelement.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -304,8 +304,8 @@ La **clase \_ del registro Win32** se deriva [**de \_ LogicalElement CIM**](cim-
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -314,7 +314,7 @@ La **clase \_ del registro Win32** se deriva [**de \_ LogicalElement CIM**](cim-
 
 <dl> <dt>
 
-[**\_LOGICALELEMENT CIM**](cim-logicalelement.md)
+[**Elemento \_ lógico CIM**](cim-logicalelement.md)
 </dt> <dt>
 
 [Clases de sistema operativo](./operating-system-classes.md)

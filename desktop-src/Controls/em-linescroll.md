@@ -1,9 +1,9 @@
 ---
-title: Mensaje de EM_LINESCROLL (Winuser. h)
+title: EM_LINESCROLL mensaje (Winuser.h)
 description: Desplaza el texto en un control de edición multilínea.
 ms.assetid: 5398082d-f1ef-4a3a-9e5a-83cf286adbf1
 keywords:
-- EM_LINESCROLL controles de mensajes de Windows
+- EM_LINESCROLL controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 646e225ef269ccddca2cdc29caf635d94c1671e8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f6da4adbd789a8d9ae3344a1a49d39c7f5fbe22b7ec1ca51fcc6cead98ea7780
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079567"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120048645"
 ---
-# <a name="em_linescroll-message"></a>\_Mensaje LINESCROLL em
+# <a name="em_linescroll-message"></a>MENSAJE EM \_ LINESCROLL
 
 Desplaza el texto en un control de edición multilínea.
 
@@ -32,32 +32,32 @@ Desplaza el texto en un control de edición multilínea.
 *wParam* 
 </dt> <dd>
 
-**Controles de edición:** Número de caracteres que se va a desplazar horizontalmente.
+**Editar controles:** Número de caracteres que se desplazarán horizontalmente.
 
-**Controles Rich Edit:** Este parámetro no se usa; debe ser cero.
+**Controles de edición enriquecciones:** Este parámetro no se utiliza; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Número de líneas que se va a desplazar verticalmente.
+Número de líneas que se desplazarán verticalmente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el mensaje se envía a un control de edición de varias líneas, el valor devuelto es **true**.
+Si el mensaje se envía a un control de edición multilínea, el valor devuelto es **TRUE.**
 
-Si el mensaje se envía a un control de edición de una sola línea, el valor devuelto es **false**.
+Si el mensaje se envía a un control de edición de una sola línea, el valor devuelto es **FALSE.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El control no se desplaza verticalmente más allá de la última línea de texto del control de edición. Si la línea actual más el número de líneas especificadas por el parámetro *lParam* supera el número total de líneas en el control de edición, el valor se ajusta de modo que la última línea del control de edición se desplaza a la parte superior de la ventana Editar control.
+El control no se desplaza verticalmente más allá de la última línea de texto del control de edición. Si la línea actual más el número de líneas especificadas por el parámetro *lParam* supera el número total de líneas del control de edición, el valor se ajusta para que la última línea del control de edición se desplace hasta la parte superior de la ventana de control de edición.
 
-**Controles de edición:** El **mensaje \_ LINESCROLL em** desplaza el texto vertical u horizontalmente en un control de edición multilínea. El **mensaje \_ LINESCROLL em** se puede usar para desplazarse horizontalmente más allá del último carácter de cualquier línea.
+**Editar controles:** El **mensaje EM \_ LINESCROLL** desplaza el texto vertical u horizontalmente en un control de edición multilínea. El **mensaje EM \_ LINESCROLL** se puede usar para desplazarse horizontalmente más allá del último carácter de cualquier línea.
 
-**Edición enriquecida:** Compatible con Microsoft Rich Edit 1,0 y versiones posteriores. El **mensaje \_ LINESCROLL em** desplaza el texto verticalmente en un control de edición multilínea. Para obtener información sobre la compatibilidad de las versiones de edición enriquecidas con las distintas versiones del sistema, vea acerca de los [controles Rich Edit](about-rich-edit-controls.md).
+**Edición enriquecte:** Compatible con Microsoft Rich Edit 1.0 y versiones posteriores. El **mensaje EM \_ LINESCROLL** desplaza el texto verticalmente en un control de edición multilínea. Para obtener información sobre la compatibilidad de las versiones de edición enriquecciones con las distintas versiones del sistema, vea [About Rich Edit Controls](about-rich-edit-controls.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,9 +65,9 @@ El control no se desplaza verticalmente más allá de la última línea de texto
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

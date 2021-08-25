@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4e1642cbd5cbdef162511185e9d2c05e849d78486b82e8219623286f33e39223
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a53a2953ba7d77f1969a7d5dabef3c17437e8bbb
+ms.sourcegitcommit: 8d7ce0c4827f8a4fd501cc6487f1a8360e944577
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118504940"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122767609"
 ---
 # <a name="waveactivecountbits-function"></a>Función WaveActiveCountBits
 
@@ -48,9 +48,9 @@ Variables booleanas que se evaluarán. Si se proporciona un valor booleano verda
 
 ## <a name="return-value"></a>Valor devuelto
 
-El número de que se evalúan como true en todos los carriles activos de la ola actual.
+Número de rutas para las que la variable booleana se evalúa como true en todos los carriles activos de la ola actual.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función se admite desde el modelo de sombreador 6.0 en todas las fases del sombreador. 
 

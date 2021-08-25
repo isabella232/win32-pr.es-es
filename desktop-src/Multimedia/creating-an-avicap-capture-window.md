@@ -1,27 +1,27 @@
 ---
-title: Crear una ventana de captura de AVICap
-description: Crear una ventana de captura de AVICap
+title: Creación de una ventana de captura de AVICap
+description: Creación de una ventana de captura de AVICap
 ms.assetid: a1418e98-f16d-401a-94a7-64fb272a39e2
 keywords:
-- capCreateCaptureWindow función)
+- Función capCreateCaptureWindow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 084d035d44b8d0b46df31afa5c3235e59286121c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 665a194759edbf4a690b1966c4cd0c175ba05b9cd099d80412e5c5353183bcab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104356924"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119785785"
 ---
-# <a name="creating-an-avicap-capture-window"></a>Crear una ventana de captura de AVICap
+# <a name="creating-an-avicap-capture-window"></a>Creación de una ventana de captura de AVICap
 
-Puede crear una ventana de captura de la clase de ventana AVICap mediante la función [**capCreateCaptureWindow**](/windows/desktop/api/Vfw/nf-vfw-capcreatecapturewindowa) . Esta función devuelve un identificador de ventana que identifica la ventana de captura y que una aplicación usa para enviar mensajes posteriores a la ventana.
+Puede crear una ventana de captura de la clase de ventana AVICap mediante la [**función capCreateCaptureWindow.**](/windows/desktop/api/Vfw/nf-vfw-capcreatecapturewindowa) Esta función devuelve un identificador de ventana que identifica la ventana de captura y lo usa una aplicación para enviar mensajes posteriores a la ventana.
 
 Puede crear una o varias ventanas de captura en una aplicación y conectar cada ventana de captura a un dispositivo de captura diferente.
 
- 
+ 
 
- 
+ 
 
 
 

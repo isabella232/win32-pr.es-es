@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 38ddb306ee6fdcbd1eb792b2c29ca367adc0f4b88cc25dfcbdde22c2638258d1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 546ace6b93328c3420a33c131250510d8421491b
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118765059"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122470841"
 ---
 # <a name="jet_ls"></a>JET_LS
 
@@ -29,7 +29,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jet_ls"></a>JET_LS
 
-El **JET_LS** de datos contiene un identificador de contexto para el almacenamiento local (LS). Este identificador podría estar asociado a un cursor o una tabla y podría hacer referencia a recursos asignados dinámicamente.
+El **JET_LS** tipo de datos contiene un identificador de contexto para el almacenamiento local (LS). Este identificador puede estar asociado a un cursor o una tabla y puede hacer referencia a recursos asignados dinámicamente.
 
 **Windows XP: JET_LS** se introduce en Windows XP.
 
@@ -45,66 +45,27 @@ Un valor de JET_LSNil indica un identificador de contexto no válido.
 
 ### <a name="remarks"></a>Comentarios
 
-Un identificador de contexto se asocia inicialmente al **tipo JET_LS** datos, mediante [JetSetLS](./jetsetls-function.md). El identificador de contexto se puede recuperar del **tipo JET_LS** datos, mediante [JetGetLS.](./jetgetls-function.md)
+Un identificador de contexto se asocia inicialmente al **tipo JET_LS** datos, mediante [JetSetLS.](./jetsetls-function.md) El identificador de contexto se puede recuperar del tipo **JET_LS** datos, mediante [JetGetLS.](./jetgetls-function.md)
 
-El identificador de contexto se puede desasociar explícitamente del **tipo JET_LS** de datos mediante [JetGetLS](./jetgetls-function.md) con JET_bitLSReset. Como alternativa, el identificador de contexto se puede desasociar implícitamente del tipo de datos **JET_LS** cuando el motor de base de datos libera el objeto subyacente como resultado de una acción directa o indirecta por parte de la aplicación. En el caso implícito, se emite una devolución de llamada en tiempo de ejecución a la aplicación para que pueda limpiar el identificador de contexto. Para obtener más información sobre la desasociación implícita del **tipo JET_LS** datos, vea [JetSetLS](./jetsetls-function.md).
+El identificador de contexto se puede desasociar explícitamente del tipo **de JET_LS** datos mediante [JetGetLS](./jetgetls-function.md) con JET_bitLSReset. Como alternativa, el identificador de contexto se puede desasociar implícitamente del tipo de datos **JET_LS** cuando el motor de base de datos libera el objeto subyacente como resultado de una acción directa o indirecta por parte de la aplicación. En el caso implícito, se emite una devolución de llamada en tiempo de ejecución a la aplicación para que pueda limpiar el identificador de contexto. Para obtener más información sobre la desasociación implícita del **tipo JET_LS** datos, vea [JetSetLS](./jetsetls-function.md).
 
 Las marcas siguientes están asociadas al tipo JET_LS datos.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Término</p></th>
-<th><p>Descripción</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_bitLSReset</p></td>
-<td><p>El identificador de contexto se desasocia del objeto .</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitLSCursor</p></td>
-<td><p>Establezca o recupere el almacenamiento local asociado a un cursor de tabla.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitLSTable</p></td>
-<td><p>Establezca o recupere el almacenamiento local asociado a una tabla.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_LSNil</p></td>
-<td><p>El identificador de contexto no es válido.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Término</p> | <p>Descripción</p> | 
+|-------------|--------------------|
+| <p>JET_bitLSReset</p> | <p>El identificador de contexto se desasocia del objeto .</p> | 
+| <p>JET_bitLSCursor</p> | <p>Establezca o recupere el almacenamiento local asociado a un cursor de tabla.</p> | 
+| <p>JET_bitLSTable</p> | <p>Establezca o recupere el almacenamiento local asociado a una tabla.</p> | 
+| <p>JET_LSNil</p> | <p>El identificador de contexto no es válido.</p> | 
+
 
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista o Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requiere Windows Server 2008 o Windows Server 2003.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en Esent.h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte también

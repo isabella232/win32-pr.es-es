@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_GETREDONAME (RichEdit. h)
-description: Recupera el tipo de la siguiente acción, si existe, en la cola de rehacer del control Rich Edit.
+title: EM_GETREDONAME mensaje (Richedit.h)
+description: Recupera el tipo de la acción siguiente, si la hay, en la cola de rehacer del control de edición enriquecido.
 ms.assetid: 8649236f-32dc-45d3-847e-c9f65ffba44c
 keywords:
-- EM_GETREDONAME controles de mensajes de Windows
+- EM_GETREDONAME controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ea44257344b9ebdb8ffe91ad97e939aae0db9b9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9687ae54223ec7cc0f908d747eff2504216b79469b5f285863f8c8ffdfe91b3b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996504"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120048825"
 ---
-# <a name="em_getredoname-message"></a>\_Mensaje GETREDONAME em
+# <a name="em_getredoname-message"></a>Mensaje \_ GETREDONAME DE EM
 
-Recupera el tipo de la siguiente acción, si existe, en la cola de rehacer del control Rich Edit.
+Recupera el tipo de la acción siguiente, si la hay, en la cola de rehacer del control de edición enriquecido.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,26 +32,26 @@ Recupera el tipo de la siguiente acción, si existe, en la cola de rehacer del c
 *wParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la cola rehecha del control no está vacía, el valor devuelto es un valor de enumeración [**UNDONAMEID**](/windows/desktop/api/Richedit/ne-richedit-undonameid) que indica el tipo de la siguiente acción en la cola de puesta al día del control.
+Si la cola de rehacer del control no está vacía, el valor devuelto es un valor de enumeración [**UNDONAMEID**](/windows/desktop/api/Richedit/ne-richedit-undonameid) que indica el tipo de la acción siguiente en la cola de rehacer del control.
 
-Si no hay ninguna acción que se puedan rehacer o se desconoce el tipo de la siguiente acción que se pueden rehacer, el valor devuelto es cero.
+Si no hay ninguna acción que se puede rehacer o se desconoce el tipo de la siguiente acción que se puede rehacer, el valor devuelto es cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Entre los tipos de acciones que se pueden deshacer o rehacer se incluyen las operaciones de escribir, eliminar, arrastrar y colocar, cortar y pegar. Esta información puede ser útil para las aplicaciones que proporcionan una interfaz de usuario extendida para las operaciones de deshacer y rehacer, como un cuadro de lista desplegable de acciones que se pueden rehacer.
+Los tipos de acciones que se pueden deshacer o volver a escribir incluyen operaciones de escritura, eliminación, arrastrar y colocar, cortar y pegar. Esta información puede ser útil para las aplicaciones que proporcionan una interfaz de usuario extendida para las operaciones de deshacer y rehacer, como un cuadro de lista desplegable de acciones rehables.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ Entre los tipos de acciones que se pueden deshacer o rehacer se incluyen las ope
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -72,13 +72,13 @@ Entre los tipos de acciones que se pueden deshacer o rehacer se incluyen las ope
 **Referencia**
 </dt> <dt>
 
-[**\_GETUNDONAME em**](em-getundoname.md)
+[**EM \_ GETUNDONAME**](em-getundoname.md)
 </dt> <dt>
 
-[**rehacer EM \_**](em-redo.md)
+[**EM \_ REDO**](em-redo.md)
 </dt> <dt>
 
-[**deshacer EM \_**](em-undo.md)
+[**EM \_ UNDO**](em-undo.md)
 </dt> <dt>
 
 [**UNDONAMEID**](/windows/desktop/api/Richedit/ne-richedit-undonameid)

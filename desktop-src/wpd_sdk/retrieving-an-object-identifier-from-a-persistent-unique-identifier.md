@@ -1,23 +1,23 @@
 ---
-description: Recuperar un identificador de objeto de un identificador único persistente
+description: Recuperar un identificador de objeto a partir de un identificador único persistente
 ms.assetid: 146f8943-d4e1-4b87-a812-e534082a4f14
-title: Recuperar un identificador de objeto de un identificador único persistente
+title: Recuperar un identificador de objeto a partir de un identificador único persistente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c4f997f0faf586a374e5a83c6f96b6508f02eb41
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b6d4f08d496c7c03101602c945e6c27e7a2624fe84957eda932ead806f964d3f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054775"
 ---
-# <a name="retrieving-an-object-id-from-a-persistent-unique-id"></a>Recuperar un identificador de objeto de un identificador único persistente
+# <a name="retrieving-an-object-id-from-a-persistent-unique-id"></a>Recuperar un identificador de objeto a partir de un identificador único persistente
 
-Solo se garantiza que los identificadores de objeto son únicos para una sesión de dispositivo determinada; Si el usuario establece una nueva conexión, es posible que los identificadores de una sesión anterior no coincidan con los identificadores de la sesión actual. Para resolver este problema, la API de WPD admite identificadores únicos persistentes (PUID), que se conservan en las sesiones de dispositivo.
+Solo se garantiza que los identificadores de objeto sean únicos para una sesión de dispositivo determinada. Si el usuario establece una nueva conexión, es posible que los identificadores de una sesión anterior no coincidan con los identificadores de la sesión actual. Para resolver este problema, la API de WPD admite identificadores únicos persistentes (PUID), que se conservan entre sesiones de dispositivo.
 
-Algunos dispositivos almacenan sus PUID de forma nativa con un objeto determinado. Otros pueden generar el PUID basándose en un hash de los datos del objeto seleccionado. Otros pueden tratar identificadores de objeto como PUID (porque pueden garantizar que estos identificadores nunca cambian).
+Algunos dispositivos almacenan sus PUID de forma nativa con un objeto determinado. Otros pueden generar el PUID basándose en un hash de los datos de objeto seleccionados. Otros pueden tratar los identificadores de objeto como PUID (porque pueden garantizar que estos identificadores nunca cambien).
 
-La función GetObjectIdentifierFromPersistentUniqueIdentifier del módulo ContentProperties. cpp muestra la recuperación de un identificador de objeto para un PUID determinado.
+La función GetObjectIdentifierFromPersistentUniqueIdentifier del módulo ContentProperties.cpp muestra la recuperación de un identificador de objeto para un PUID determinado.
 
 La aplicación puede recuperar un identificador de objeto para un PUID correspondiente mediante las interfaces descritas en la tabla siguiente.
 
@@ -25,8 +25,8 @@ La aplicación puede recuperar un identificador de objeto para un PUID correspon
 
 | Interfaz                                                                                      | Descripción                                                                                         |
 |------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| [**Interfaz IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)                             | Proporciona acceso al método de recuperación.                                                            |
-| [**Interfaz IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) | Se utiliza para almacenar el identificador de objeto y el identificador único persistente (PUID) correspondiente. |
+| [**IPortableDeviceContent (interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)                             | Proporciona acceso al método de recuperación.                                                            |
+| [**IPortableDevicePropVariantCollection (Interfaz)**](iportabledevicepropvariantcollection.md) | Se usa para almacenar el identificador de objeto y el identificador único persistente (PUID) correspondiente. |
 
 
 
@@ -47,7 +47,7 @@ if (FAILED(hr))
 
 
 
-Después, la aplicación de ejemplo recupera un objeto [**IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent) , que se usará para invocar el método [**GetObjectIDsFromPersistentUniqueIDs**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecontent-getobjectidsfrompersistentuniqueids) .
+Después de esto, la aplicación de ejemplo recupera un objeto [**IPortableDeviceContent,**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent) que usará para invocar el [**método GetObjectIDsFromPersistentUniqueIDs.**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecontent-getobjectidsfrompersistentuniqueids)
 
 
 ```C++
@@ -63,7 +63,7 @@ if (SUCCEEDED(hr))
 
 
 
-A continuación, crea un objeto [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) que contendrá el PUID proporcionado por el usuario.
+A continuación, crea [**un objeto IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) que contendrán el PUID proporcionado por el usuario.
 
 
 ```C++
@@ -75,7 +75,7 @@ hr = CoCreateInstance(CLSID_PortableDevicePropVariantCollection,
 
 
 
-Una vez realizados los tres pasos anteriores, el ejemplo está listo para recuperar el identificador de objeto que coincide con el PUID proporcionado por el usuario. Esto se logra mediante una llamada al método [**IPortableDeviceContent:: GetObjectIDsFromPersistentUniqueIDs**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecontent-getobjectidsfrompersistentuniqueids) . Antes de llamar a este método, el ejemplo Inicializa una estructura PROPVARIANT, escribe el PUID proporcionado por el usuario en esta estructura y lo agrega al objeto IPortableDevicePropVariantCollection en el que pPersistentUniqueIDs apunta. Este puntero se pasa como primer argumento al método GetObjectIDsFromPersistentUniqueIDs. El segundo argumento de GetObjectIDsFromPersistentUniqueIDs es un objeto IPortableDevicePropVariantCollection que recibe el identificador de objeto coincidente.
+Una vez que se han realizado los tres pasos anteriores, el ejemplo está listo para recuperar el identificador de objeto que coincide con el PUID proporcionado por el usuario. Esto se logra llamando al método [**IPortableDeviceContent::GetObjectIDsFromPersistentUniqueIDs.**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecontent-getobjectidsfrompersistentuniqueids) Antes de llamar a este método, el ejemplo inicializa una estructura PROPVARIANT, escribe el PUID proporcionado por el usuario en esta estructura y lo agrega al objeto IPortableDevicePropVariantCollection en el que apunta pPersistentUniqueIDs. Este puntero se pasa como primer argumento al método GetObjectIDsFromPersistentUniqueIDs. El segundo argumento de GetObjectIDsFromPersistentUniqueIDs es un objeto IPortableDevicePropVariantCollection que recibe el identificador de objeto correspondiente.
 
 
 ```C++
@@ -146,13 +146,13 @@ if (SUCCEEDED(hr))
 
 <dl> <dt>
 
-[**Interfaz IPortableDevice**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)
+[**IPortableDevice (Interfaz)**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)
 </dt> <dt>
 
-[**Interfaz IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)
+[**IPortableDeviceContent (interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)
 </dt> <dt>
 
-[**Interfaz IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md)
+[**IPortableDevicePropVariantCollection (Interfaz)**](iportabledevicepropvariantcollection.md)
 </dt> <dt>
 
 [**Guía de programación**](programming-guide.md)

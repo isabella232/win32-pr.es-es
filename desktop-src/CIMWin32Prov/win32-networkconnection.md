@@ -1,8 +1,8 @@
 ---
-description: Representa una conexión de red activa en un entorno basado en Windows.
+description: Representa una conexión de red activa en un Windows basado en datos.
 ms.assetid: e16e5f13-ea28-4d75-9978-4ff2ef5e5506
 ms.tgt_platform: multiple
-title: Win32_NetworkConnection (clase)
+title: Win32_NetworkConnection clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -31,16 +31,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 96d91008ff8ad2f947e6c9957d16c4f007d15e47
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b4a8c712e8eb373730d24841133264e312694d79b593e83e89a1fc7387e7a77a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103807832"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119972635"
 ---
-# <a name="win32_networkconnection-class"></a>\_Clase Win32 NetworkConnection
+# <a name="win32_networkconnection-class"></a>Clase NetworkConnection de Win32 \_
 
-La [clase WMI](../wmisdk/retrieving-a-class.md) **\_ NetworkConnection de Win32** representa una conexión de red activa en un entorno basado en Windows.
+La **clase WMI \_ NetworkConnection** [de](../wmisdk/retrieving-a-class.md)Win32 representa una conexión de red activa en un Windows basado en datos.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
 
@@ -82,124 +82,124 @@ La **clase \_ NetworkConnection de Win32** tiene estas propiedades.
 
 <dl> <dt>
 
-**AccessMask**
+**Máscara de acceso**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**esquema**](../wmisdk/standard-qualifiers.md) ("Win32")
+Calificadores: [**Esquema**](../wmisdk/standard-qualifiers.md) ("Win32")
 </dt> </dl>
 
-Lista de derechos de acceso al archivo o directorio especificado que mantiene el usuario o grupo en cuyo nombre se devuelve la instancia. En los volúmenes FAT, se devuelve el valor de **\_ acceso completo** en su lugar, lo que indica que no se ha establecido ninguna seguridad en el objeto.
+Lista de derechos de acceso al archivo o directorio especificado que mantiene el usuario o grupo en cuyo nombre se devuelve la instancia. En los volúmenes FAT, se devuelve el valor **\_ FULL ACCESS** en su lugar, lo que indica que no se ha establecido ninguna seguridad en el objeto .
 
 <dt>
 
 <span id="FILE_READ_DATA__file__or_FILE_LIST_DIRECTORY__directory_"></span><span id="file_read_data__file__or_file_list_directory__directory_"></span><span id="FILE_READ_DATA__FILE__OR_FILE_LIST_DIRECTORY__DIRECTORY_"></span>
 
-<span id="FILE_READ_DATA__file__or_FILE_LIST_DIRECTORY__directory_"></span><span id="file_read_data__file__or_file_list_directory__directory_"></span><span id="FILE_READ_DATA__FILE__OR_FILE_LIST_DIRECTORY__DIRECTORY_"></span>**Archivo \_ de LEER \_ datos (archivo) o directorio de lista de archivos \_ \_ (directorio)** (1)
+<span id="FILE_READ_DATA__file__or_FILE_LIST_DIRECTORY__directory_"></span><span id="file_read_data__file__or_file_list_directory__directory_"></span><span id="FILE_READ_DATA__FILE__OR_FILE_LIST_DIRECTORY__DIRECTORY_"></span>**FILE \_ READ \_ DATA (archivo) o FILE \_ LIST DIRECTORY \_ (directorio)** (1)
 
 
 </dt> <dd>
 
-Concede el derecho a leer los datos del archivo. Para un directorio, este valor concede el derecho para mostrar el contenido del directorio.
+Concede el derecho de leer datos del archivo. Para un directorio, este valor concede el derecho de enumerar el contenido del directorio.
 
 </dd> <dt>
 
 <span id="FILE_WRITE_DATA__file__or_FILE_ADD_FILE__directory_"></span><span id="file_write_data__file__or_file_add_file__directory_"></span><span id="FILE_WRITE_DATA__FILE__OR_FILE_ADD_FILE__DIRECTORY_"></span>
 
-<span id="FILE_WRITE_DATA__file__or_FILE_ADD_FILE__directory_"></span><span id="file_write_data__file__or_file_add_file__directory_"></span><span id="FILE_WRITE_DATA__FILE__OR_FILE_ADD_FILE__DIRECTORY_"></span>**Archivo \_ de ESCRIBIR \_ datos (archivo) o archivo \_ agregar \_ archivo (directorio)** (2)
+<span id="FILE_WRITE_DATA__file__or_FILE_ADD_FILE__directory_"></span><span id="file_write_data__file__or_file_add_file__directory_"></span><span id="FILE_WRITE_DATA__FILE__OR_FILE_ADD_FILE__DIRECTORY_"></span>**FILE \_ WRITE \_ DATA (archivo) o FILE \_ ADD FILE \_ (directorio)** (2)
 
 
 </dt> <dd>
 
-Concede el derecho para escribir datos en el archivo. Para un directorio, este valor concede el derecho a crear un archivo en el directorio.
+Concede el derecho de escribir datos en el archivo. Para un directorio, este valor concede el derecho de crear un archivo en el directorio.
 
 </dd> <dt>
 
 <span id="FILE_APPEND_DATA__file__or_FILE_ADD_SUBDIRECTORY"></span><span id="file_append_data__file__or_file_add_subdirectory"></span><span id="FILE_APPEND_DATA__FILE__OR_FILE_ADD_SUBDIRECTORY"></span>
 
-<span id="FILE_APPEND_DATA__file__or_FILE_ADD_SUBDIRECTORY"></span><span id="file_append_data__file__or_file_add_subdirectory"></span><span id="FILE_APPEND_DATA__FILE__OR_FILE_ADD_SUBDIRECTORY"></span>**Archivo \_ de ANEXAr \_ datos (archivo) o \_ \_ subdirectorio de adición de archivo** (4)
+<span id="FILE_APPEND_DATA__file__or_FILE_ADD_SUBDIRECTORY"></span><span id="file_append_data__file__or_file_add_subdirectory"></span><span id="FILE_APPEND_DATA__FILE__OR_FILE_ADD_SUBDIRECTORY"></span>**FILE \_ APPEND \_ DATA (archivo) o \_ \_ SUBDIRECTORIO ADD DE ARCHIVO** (4)
 
 
 </dt> <dd>
 
-Concede el derecho para anexar datos al archivo. Para un directorio, este valor concede el derecho a crear un subdirectorio.
+Concede el derecho a anexar datos al archivo. Para un directorio, este valor concede el derecho a crear un subdirectorio.
 
 </dd> <dt>
 
 <span id="FILE_READ_EA"></span><span id="file_read_ea"></span>
 
-<span id="FILE_READ_EA"></span><span id="file_read_ea"></span>**Archivo \_ de LEER \_ EA** (8)
+<span id="FILE_READ_EA"></span><span id="file_read_ea"></span>**FILE \_ READ \_ EA** (8)
 
 
 </dt> <dd>
 
-Concede el derecho para leer atributos extendidos.
+Concede el derecho de leer atributos extendidos.
 
 </dd> <dt>
 
 <span id="FILE_WRITE_EA"></span><span id="file_write_ea"></span>
 
-<span id="FILE_WRITE_EA"></span><span id="file_write_ea"></span>**Archivo \_ de ESCRIBIR \_ EA** (16)
+<span id="FILE_WRITE_EA"></span><span id="file_write_ea"></span>**FILE \_ WRITE \_ EA** (16)
 
 
 </dt> <dd>
 
-Concede el derecho para escribir atributos extendidos.
+Concede el derecho a escribir atributos extendidos.
 
 </dd> <dt>
 
 <span id="FILE_EXECUTE__file__or_FILE_TRAVERSE__directory_"></span><span id="file_execute__file__or_file_traverse__directory_"></span><span id="FILE_EXECUTE__FILE__OR_FILE_TRAVERSE__DIRECTORY_"></span>
 
-<span id="FILE_EXECUTE__file__or_FILE_TRAVERSE__directory_"></span><span id="file_execute__file__or_file_traverse__directory_"></span><span id="FILE_EXECUTE__FILE__OR_FILE_TRAVERSE__DIRECTORY_"></span>**Archivo \_ de EJECUTAR (archivo) o \_ atravesar archivos (directorio)** (32)
+<span id="FILE_EXECUTE__file__or_FILE_TRAVERSE__directory_"></span><span id="file_execute__file__or_file_traverse__directory_"></span><span id="FILE_EXECUTE__FILE__OR_FILE_TRAVERSE__DIRECTORY_"></span>**FILE \_ EXECUTE (archivo) o FILE \_ TRAVERSE (directorio)** (32)
 
 
 </dt> <dd>
 
-Concede el derecho para ejecutar un archivo. Para un directorio, se puede atravesar el directorio.
+Concede el derecho a ejecutar un archivo. Para un directorio, se puede recorrer el directorio.
 
 </dd> <dt>
 
 <span id="FILE_DELETE_CHILD__directory_"></span><span id="file_delete_child__directory_"></span><span id="FILE_DELETE_CHILD__DIRECTORY_"></span>
 
-<span id="FILE_DELETE_CHILD__directory_"></span><span id="file_delete_child__directory_"></span><span id="FILE_DELETE_CHILD__DIRECTORY_"></span>**Archivo \_ de ELIMINAR \_ secundario (directorio)** (64)
+<span id="FILE_DELETE_CHILD__directory_"></span><span id="file_delete_child__directory_"></span><span id="FILE_DELETE_CHILD__DIRECTORY_"></span>**FILE \_ DELETE \_ CHILD (directorio)** (64)
 
 
 </dt> <dd>
 
-Concede el derecho para eliminar un directorio y todos los archivos que contiene (sus elementos secundarios), incluso si los archivos son de solo lectura.
+Concede el derecho a eliminar un directorio y todos los archivos que contiene (sus elementos secundarios), incluso si los archivos son de solo lectura.
 
 </dd> <dt>
 
 <span id="FILE_READ_ATTRIBUTES"></span><span id="file_read_attributes"></span>
 
-<span id="FILE_READ_ATTRIBUTES"></span><span id="file_read_attributes"></span>**Archivo \_ de \_Atributos de lectura** (128)
+<span id="FILE_READ_ATTRIBUTES"></span><span id="file_read_attributes"></span>**FILE \_ LEER \_ ATRIBUTOS** (128)
 
 
 </dt> <dd>
 
-Concede el derecho a leer los atributos de archivo.
+Concede el derecho a leer atributos de archivo.
 
 </dd> <dt>
 
 <span id="FILE_WRITE_ATTRIBUTES"></span><span id="file_write_attributes"></span>
 
-<span id="FILE_WRITE_ATTRIBUTES"></span><span id="file_write_attributes"></span>**Archivo \_ de \_Atributos de escritura** (256)
+<span id="FILE_WRITE_ATTRIBUTES"></span><span id="file_write_attributes"></span>**FILE \_ ATRIBUTOS \_ DE ESCRITURA** (256)
 
 
 </dt> <dd>
 
-Concede el derecho para cambiar los atributos de archivo.
+Concede el derecho a cambiar los atributos de archivo.
 
 </dd> <dt>
 
 <span id="DELETE"></span><span id="delete"></span>
 
-<span id="DELETE"></span><span id="delete"></span>**Eliminar** (65536)
+<span id="DELETE"></span><span id="delete"></span>**DELETE** (65536)
 
 
 </dt> <dd>
@@ -210,7 +210,7 @@ Concede acceso de eliminación.
 
 <span id="READ_CONTROL"></span><span id="read_control"></span>
 
-<span id="READ_CONTROL"></span><span id="read_control"></span>**Leer \_ CONTROL** (131072)
+<span id="READ_CONTROL"></span><span id="read_control"></span>**READ \_ CONTROL** (131072)
 
 
 </dt> <dd>
@@ -221,7 +221,7 @@ Concede acceso de lectura al descriptor de seguridad y al propietario.
 
 <span id="WRITE_DAC"></span><span id="write_dac"></span>
 
-<span id="WRITE_DAC"></span><span id="write_dac"></span>**Escribir \_ DAC** (262144)
+<span id="WRITE_DAC"></span><span id="write_dac"></span>**WRITE \_ DAC** (262144)
 
 
 </dt> <dd>
@@ -232,18 +232,18 @@ Concede acceso de escritura a la lista de control de acceso discrecional (DACL).
 
 <span id="WRITE_OWNER"></span><span id="write_owner"></span>
 
-<span id="WRITE_OWNER"></span><span id="write_owner"></span>**Escribir \_ PROPIETARIO** (524288)
+<span id="WRITE_OWNER"></span><span id="write_owner"></span>**WRITE \_ OWNER** (524288)
 
 
 </dt> <dd>
 
-Asigna el propietario de la escritura.
+Asigna el propietario de escritura.
 
 </dd> <dt>
 
 <span id="SYNCHRONIZE"></span><span id="synchronize"></span>
 
-<span id="SYNCHRONIZE"></span><span id="synchronize"></span>**Sincronizar** (1048576)
+<span id="SYNCHRONIZE"></span><span id="synchronize"></span>**SYNCHRONIZE** (1048576)
 
 
 </dt> <dd>
@@ -263,16 +263,16 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**displayName**](../wmisdk/standard-qualifiers.md) ("Caption")
+Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Caption")
 </dt> </dl>
 
 Breve descripción textual del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
-**Comentario**
+**Comment**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -281,7 +281,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| estructuras de redes de Windows \| [**NETRESOURCE**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig) \| *lpComment*")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Windows Networking Structures \| [**NETRESOURCE**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig) \| *lpComment*")
 </dt> </dl>
 
 Comentario proporcionado por el proveedor de red.
@@ -297,7 +297,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (20), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Network Management Structures \| [**use \_ info \_ 1**](/windows/win32/api/lmuse/ns-lmuse-use_info_1) \| **ui1 \_ status**")
+Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (20), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Structures USE INFO \| [**\_ \_ 1**](/windows/win32/api/lmuse/ns-lmuse-use_info_1) \| **ui1 \_ status**")
 </dt> </dl>
 
 Estado actual de la conexión de red.
@@ -306,42 +306,42 @@ Estado actual de la conexión de red.
 
 <span id="Connected"></span><span id="connected"></span><span id="CONNECTED"></span>
 
-**Conectado** ("conectado")
+**Conectado** ("Conectado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Error** ("error")
+**Error** ("Error")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>
 
-En **pausa** ("en pausa")
+**En pausa** ("en pausa")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Disconnected"></span><span id="disconnected"></span><span id="DISCONNECTED"></span>
 
-**Desconectada** ("desconectada")
+**Desconectado** ("Desconectado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Connecting"></span><span id="connecting"></span><span id="CONNECTING"></span>
 
-**Conectando** ("conectando")
+**Conexión** ("Conectando")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Reconnecting"></span><span id="reconnecting"></span><span id="RECONNECTING"></span>
 
-**Volver a conectar** ("reconectar")
+**Volver a conectar** ("Volver a conectar")
 
 
 </dt> <dd></dd> </dl>
@@ -357,7 +357,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| estructuras de redes de Windows \| [**NETRESOURCE**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig) \| **dwScope**")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Windows networking structures \| [**NETRESOURCE**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig) \| **dwScope**")
 </dt> </dl>
 
 Tipo de persistencia de la conexión utilizada para conectarse a la red.
@@ -366,14 +366,14 @@ Tipo de persistencia de la conexión utilizada para conectarse a la red.
 
 <span id="Current_Connection"></span><span id="current_connection"></span><span id="CURRENT_CONNECTION"></span>
 
-**Conexión actual** ("conexión actual")
+**Conexión actual** ("Conexión actual")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Persistent_Connection"></span><span id="persistent_connection"></span><span id="PERSISTENT_CONNECTION"></span>
 
-**Conexión persistente** ("conexión persistente")
+**Conexión persistente** ("Conexión persistente")
 
 
 </dt> <dd></dd> </dl>
@@ -389,16 +389,16 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](../wmisdk/standard-qualifiers.md) ("Descripción")
+Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Description")
 </dt> </dl>
 
-Una descripción textual del objeto.
+Descripción textual del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
-**TipoDePresentación**
+**Displaytype**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -407,7 +407,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| estructuras de redes de Windows \| [**NETRESOURCE**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig) \| **dwDisplayType**")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Windows networking structures \| [**NETRESOURCE**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig) \| **dwDisplayType**")
 </dt> </dl>
 
 El objeto de red debe mostrarse en una interfaz de usuario de exploración de red.
@@ -416,28 +416,28 @@ El objeto de red debe mostrarse en una interfaz de usuario de exploración de re
 
 <span id="Domain"></span><span id="domain"></span><span id="DOMAIN"></span>
 
-**Dominio** ("dominio")
+**Dominio** ("Dominio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Generic"></span><span id="generic"></span><span id="GENERIC"></span>
 
-**Generic** ("Generic")
+**Genérico** ("genérico")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Server"></span><span id="server"></span><span id="SERVER"></span>
 
-**Servidor** ("servidor")
+**Servidor** ("Servidor")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Share"></span><span id="share"></span><span id="SHARE"></span>
 
-**Compartir** ("compartir")
+**Compartir** ("Compartir")
 
 
 </dt> <dd></dd> </dl>
@@ -447,22 +447,22 @@ El objeto de red debe mostrarse en una interfaz de usuario de exploración de re
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001,5 "), [**displayName**](../wmisdk/standard-qualifiers.md) (" instalación de fecha ")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Fecha de instalación")
 </dt> </dl>
 
 Indica cuándo se instaló el objeto. La falta de un valor no indica que el objeto no está instalado.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
-**LocalName**
+**Localname**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -471,12 +471,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| estructuras de redes de Windows \| [**NETRESOURCE**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig) \| **lpLocalName**")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Windows Networking Structures \| [**NETRESOURCE**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig) \| **lpLocalName**")
 </dt> </dl>
 
 Nombre local del dispositivo de red conectado.
 
-Ejemplo: "c: \\ Public"
+Ejemplo: "c: \\ public"
 
 </dd> <dt>
 
@@ -489,12 +489,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](../wmisdk/key-qualifier.md), [**invalidación**](../wmisdk/standard-qualifiers.md) ("nombre"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| estructuras de redes de Windows \| [**NETRESOURCE**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig)")
+Calificadores: [**key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("Name"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Windows Networking Structures \| [**NETRESOURCE**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig)")
 </dt> </dl>
 
-Nombre de la conexión de red actual. Es la combinación de los valores de **RemoteName** y **localname**.
+Nombre de la conexión de red actual. Es la combinación de los valores de **RemoteName** y **LocalName.**
 
-Ejemplo: " \\ \\ NTRELEASE (c: \\ Public)"
+Ejemplo: \\ \\ "NTRELEASE (c: \\ public)"
 
 </dd> <dt>
 
@@ -507,10 +507,10 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| funciones de red de Windows \| [**WNetEnumResource**](/windows/win32/api/winnetwk/nf-winnetwk-wnetenumresourcea)")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Windows networking functions \| [**WNetEnumResource**](/windows/win32/api/winnetwk/nf-winnetwk-wnetenumresourcea)")
 </dt> </dl>
 
-El sistema operativo volverá a conectar automáticamente la conexión en el siguiente inicio de sesión.
+El sistema operativo volverá a conectar la conexión automáticamente en el siguiente inicio de sesión.
 
 </dd> <dt>
 
@@ -523,10 +523,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| estructuras de redes de Windows \| [**NETRESOURCE**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig) \| **lpProvider**")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Windows networking structures \| [**NETRESOURCE**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig) \| **lpProvider**")
 </dt> </dl>
 
-Nombre del proveedor que posee el recurso. Esta propiedad puede ser **null** si se desconoce el nombre del proveedor.
+Nombre del proveedor que posee el recurso. Esta propiedad puede ser **NULL si** se desconoce el nombre del proveedor.
 
 </dd> <dt>
 
@@ -539,12 +539,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| estructuras de redes de Windows \| [**NETRESOURCE**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig) \| **lpRemoteName**")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Windows Networking Structures \| [**NETRESOURCE**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig) \| **lpRemoteName**")
 </dt> </dl>
 
-Nombre de recurso de red remota para un recurso de red. Para una conexión actual o persistente, **RemoteName** contiene el nombre de red asociado al nombre del valor en la propiedad **localname** . El nombre de **RemoteName** debe seguir las convenciones de nomenclatura del proveedor de red.
+Nombre del recurso de red remoto para un recurso de red. Para una conexión actual o persistente, **RemoteName contiene** el nombre de red asociado al nombre del valor en la **propiedad LocalName.** El nombre de **RemoteName** debe seguir las convenciones de nomenclatura del proveedor de red.
 
-Ejemplo: " \\ \\ NTRELEASE"
+Ejemplo: \\ \\ "NTRELEASE"
 
 </dd> <dt>
 
@@ -557,12 +557,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| estructuras de redes de Windows \| [**NETRESOURCE**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig) \| **lpRemoteName**")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Windows Networking Structures \| [**NETRESOURCE**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig) \| **lpRemoteName**")
 </dt> </dl>
 
 Ruta de acceso completa al recurso de red.
 
-Ejemplo: " \\ \\ infosrv1 \\ Public"
+Ejemplo: " \\ \\ infosrv1 \\ public"
 
 </dd> <dt>
 
@@ -575,16 +575,16 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| estructuras de redes de Windows \| [**NETRESOURCE**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig) \| **dwType**")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Windows networking structures \| [**NETRESOURCE**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig) \| **dwType**")
 </dt> </dl>
 
-Tipo de recurso que se va a enumerar o al que se va a conectar.
+Tipo de recurso al que se enumerará o se conectará.
 
 <dt>
 
 <span id="Disk"></span><span id="disk"></span><span id="DISK"></span>
 
-**Disco** ("disco")
+**Disco** ("Disco")
 
 
 </dt> <dd></dd> <dt>
@@ -598,7 +598,7 @@ Tipo de recurso que se va a enumerar o al que se va a conectar.
 
 <span id="Any"></span><span id="any"></span><span id="ANY"></span>
 
-**Any** ("any")
+**Cualquiera** ("Cualquiera")
 
 
 </dt> <dd></dd> </dl>
@@ -614,14 +614,14 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**displayName**](../wmisdk/standard-qualifiers.md) ("status")
+Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
 </dt> </dl>
 
-Cadena que indica el estado actual del objeto. Se puede definir un estado operativo y no operativo. El estado operativo puede ser "correcto", "degradado" y "Pred FAIL". "Pred FAIL" indica que un elemento funciona correctamente, pero está prediciendo un error (por ejemplo, una unidad de disco duro habilitada para SMART).
+Cadena que indica el estado actual del objeto. Se puede definir el estado operativo y no operativo. El estado operativo puede incluir "Ok", "Degraded" y "Pred Fail". "Error previo" indica que un elemento funciona correctamente, pero predice un error (por ejemplo, una unidad de disco duro habilitada para SMART).
 
-El estado no operativo puede incluir "error", "iniciando", "deteniendo" y "servicio". "Servicio" puede aplicarse durante el reflejo del disco: Resilvering, recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo el trabajo está en línea, pero el elemento administrado no es "OK" ni en ninguno de los otros Estados.
+El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". "Servicio" se puede aplicar durante la resilvering de reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Los valores son los siguientes:
 
@@ -629,84 +629,84 @@ Los valores son los siguientes:
 
 <span id="OK"></span><span id="ok"></span>
 
-**Aceptar** ("Aceptar")
+**Ok** ("OK")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Error** ("error")
+**Error** ("Error")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradado** ("degradado")
+**Degradado** ("Degradado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Pred FAIL** ("Pred FAIL")
+**Error de pred** ("error previo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Iniciando** ("iniciando")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("detener")
+**Detención** ("Detención")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servicio** ("servicio")
+**Servicio** ("Servicio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-Con **estrés** ("acentuado")
+**Estresado** ("estresado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Recover** ("Recover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Sin contacto** ("sin contacto")
+**Sin contacto** ("Sin contacto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicación perdida** ("pérdida de comunicación")
+**Comm perdido** ("Comm perdido")
 
 
 </dt> <dd></dd> </dl>
@@ -722,7 +722,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| funciones de red de Windows \| [**WNetGetUser**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetusera)")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Windows Networking Functions \| [**WNetGetUser**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetusera)")
 </dt> </dl>
 
 Nombre de usuario o nombre de usuario predeterminado que se usa para establecer una conexión de red.
@@ -731,13 +731,13 @@ Ejemplo: "SYSTEM"
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La **clase \_ NetworkConnection de Win32** se deriva de [**\_ LogicalElement de CIM**](cim-logicalelement.md).
+La **clase \_ NetworkConnection de Win32** se deriva de [**CIM \_ LogicalElement**](cim-logicalelement.md).
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente ejemplo de código de VBScript recupera información sobre la conexión de red local.
+El siguiente ejemplo de código VBScript recupera información sobre la conexión de red local.
 
 
 ```VB
@@ -776,8 +776,8 @@ Next
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -786,7 +786,7 @@ Next
 
 <dl> <dt>
 
-[**\_LOGICALELEMENT CIM**](cim-logicalelement.md)
+[**Elemento \_ lógico CIM**](cim-logicalelement.md)
 </dt> <dt>
 
 [Clases de sistema operativo](./operating-system-classes.md)

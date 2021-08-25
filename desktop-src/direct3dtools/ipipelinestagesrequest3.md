@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 6408159a58c7410520c08b3901119ca5c0f72caec5bee2142193f3246d8b5032
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bb7881f233016026c06b48da05bfd368c229d594
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119741915"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122623711"
 ---
 # <a name="span-idvspixengineipipelinestagesrequest3spanipipelinestagesrequest3-interface"></a><span id="vspixengine.ipipelinestagesrequest3"></span>Interfaz IPipeLineStagesRequest3
 
@@ -30,7 +30,7 @@ Solicitud de datos de fases de canalización.
 
 ## <a name="members"></a>Miembros
 
-La **interfaz IPipeLineStagesRequest3** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IPipeLineStagesRequest3** también tiene estos tipos de miembros:
+La **interfaz IPipeLineStagesRequest3** hereda de [**la interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IPipeLineStagesRequest3** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
@@ -38,13 +38,13 @@ La **interfaz IPipeLineStagesRequest3** hereda de la [**interfaz IUnknown.**](/w
 
 La **interfaz IPipeLineStagesRequest3** tiene estos métodos.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipipelinestagesrequest3-requestmeshasync-eventid-bstr-ipipelinestagescallback3-ptr-dword-dword"><strong>RequestMeshAsync</strong></a></td><td style="text-align: left;"><p>Solicitud asincrónica para obtener datos de malla del evento especificado.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipipelinestagesrequest3-requestmeshasync-eventid-bstr-ipipelinestagescallback3-ptr-dword-dword"><strong>RequestMeshAsync</strong></a></td><td style="text-align: left;"><p>Solicitud asincrónica para obtener datos de malla del evento especificado.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Header</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

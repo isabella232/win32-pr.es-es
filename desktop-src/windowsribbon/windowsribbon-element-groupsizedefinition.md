@@ -1,9 +1,9 @@
 ---
 title: Elemento GroupSizeDefinition
-description: Representa un tamaño de diseño para un grupo de controles en una plantilla personalizada.
+description: Representa un tamaño de diseño para un grupo de controles de una plantilla personalizada.
 ms.assetid: c0e20c80-16af-41d5-81e1-0dc32e92e3fa
 keywords:
-- GroupSizeDefinition, elemento de la cinta de opciones de Windows
+- GroupSizeDefinition, elemento Windows Cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 650301a29ace2c6df9316a315d4cdbad448e5573
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: dc3184f18bf692c333d7088ade79ff4ac5360f1a
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443386"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122631363"
 ---
 # <a name="groupsizedefinition-element"></a>Elemento GroupSizeDefinition
 
-Representa un tamaño de diseño para un grupo de controles en una plantilla personalizada.
+Representa un tamaño de diseño para un grupo de controles de una plantilla personalizada.
 
 ## <a name="usage"></a>Uso
 
@@ -39,16 +39,16 @@ Representa un tamaño de diseño para un grupo de controles en una plantilla per
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Requerido</th>
+<th>Obligatorio</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -92,7 +92,7 @@ Representa un tamaño de diseño para un grupo de controles en una plantilla per
 
 Opcional.
 
-Puede producirse hasta tres veces para cada [**elemento SizeDefinition**](windowsribbon-element-sizedefinition.md) (una vez para cada *size*).
+Puede producirse hasta tres veces por cada [**elemento SizeDefinition**](windowsribbon-element-sizedefinition.md) (una vez para cada *size*).
 
 ## <a name="examples"></a>Ejemplos
 
@@ -197,7 +197,7 @@ En el ejemplo de código siguiente se muestra una plantilla personalizada básic
 
 <dl> <dt>
 
-[Personalizar una cinta de opciones mediante definiciones de tamaño y directivas de escalado](windowsribbon-templates.md)
+[Personalización de una cinta de opciones mediante definiciones de tamaño y directivas de escalado](windowsribbon-templates.md)
 </dt> </dl>
 
  

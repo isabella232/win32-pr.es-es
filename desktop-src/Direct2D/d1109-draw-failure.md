@@ -1,7 +1,7 @@
 ---
 title: Error de dibujo D1109
 ms.assetid: 76154839-719e-4c73-a80e-f9216f3468e3
-description: Error al llamar a Draw de un destino de representación
+description: Error en una llamada a Draw de un destino de representación
 keywords:
 - Error de dibujo D1109 Direct2D
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: 09d84f549b2361d2753ac40650ce057de9e4f84c
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: b1d30d0b33cbeb053e37f9e52c3948009a19692dbe1c53eedab9dfd6623726a2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110549970"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119814796"
 ---
 # <a name="d1109-draw-failure"></a>D1109: Error de dibujo
 
-Error al llamar a Draw de un recurso de destino de \[ *representación.* \] Etiquetas \[ *tag1,* *tag2* \] .
+Error en una llamada a Draw de un recurso de destino \[ *de representación.* \] Etiquetas \[ *tag1*, *tag2* \] .
 
 ## <a name="placeholders"></a>Marcadores de posición
 
@@ -38,7 +38,7 @@ Dirección del destino de representación.
 <span id="tag1"></span><span id="TAG1"></span>*tag1*
 </dt> <dd>
 
-Primer valor de etiqueta (vea [**SetTags**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-settags) más para obtener información).
+Primer valor de etiqueta (consulte [**SetTags**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-settags) más para obtener información).
 
 </dd> <dt>
 

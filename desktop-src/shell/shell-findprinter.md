@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 17d04b60de2b52ca3d2f17fbdccf7de93ac095b3
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3c3208d001f501371245e578ca691267604be691076f858b0a9f8bb7eeb36279
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108104313"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120111155"
 ---
 # <a name="shellfindprinter-method"></a>Método Shell.FindPrinter
 
@@ -53,7 +53,7 @@ Shell.FindPrinter( _
 
 <dl> <dt>
 
-*sName* \[ en, opcional\]
+*sName* \[ in, opcional\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
@@ -88,9 +88,9 @@ Este método no está disponible actualmente en Microsoft Visual Basic.
 
 ## <a name="examples"></a>Ejemplos
 
-En los ejemplos siguientes se muestra el uso **de FindPrinter para** mostrar el **cuadro de diálogo** Buscar impresora para una aplicación determinada. El uso se muestra para JScript, VBScript y Visual Basic.
+En los ejemplos siguientes se muestra el uso **de FindPrinter para** mostrar el **cuadro de diálogo** Buscar impresora de una aplicación determinada. El uso se muestra para JScript, VBScript y Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -129,11 +129,11 @@ Vbscript:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
+| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 

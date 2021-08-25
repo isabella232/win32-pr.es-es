@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 3242c2f1e753407d239057fdc4af0a6f04d6d83a66e2a22ffb1be929583c21c8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8214287a4afb4c683a94e213cdfed133c03219e2
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118986745"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122467012"
 ---
 # <a name="dcl_input-sm4---asm"></a>entrada dcl \_ (sm4 - asm)
 
@@ -31,39 +31,12 @@ Declara un registro de entrada de sombreador.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span id="vN_.mask_"></span><span id="vn_.mask_"></span><span id="VN_.MASK_"></span>v<em>N[.mask]</em><br/></td>
-<td>[in] Registro de datos de vértice. <br/>
-<ul>
-<li><em>N</em> es un entero que identifica el número de registro.</li>
-<li><em>[.mask] es</em> una máscara de componente opcional (.xyzw) que especifica cuál de los componentes de registro se va a usar.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><span id="interpolationMode"></span><span id="interpolationmode"></span><span id="INTERPOLATIONMODE"></span><em>interpolationMode</em><br/></td>
-<td>[in] Opcional. Modo de interpolación, que solo se respeta en los registros de entrada del sombreador de píxeles. Puede ser uno de los siguientes valores: <br/>
-<ul>
-<li>constant: no interpola entre los valores de registro.</li>
-<li>linear: interpola linealmente entre los valores de registro.</li>
-<li>linearCentroid: igual que lineal pero centroide fija al multimuestreo.</li>
-<li>linearNoperspective: igual que lineal pero sin corrección de perspectiva.</li>
-<li>linearNoperspectiveCentroid: igual que lineal, centroide con fijación cuando se multimuestreo, sin corrección de perspectiva.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento | Descripción | 
+|------|-------------|
+| <span id="vN_.mask_"></span><span id="vn_.mask_"></span><span id="VN_.MASK_"></span>v<em>N[.mask]</em><br /> | [in] Registro de datos de vértice. <br /><ul><li><em>N</em> es un entero que identifica el número de registro.</li><li><em>[.mask] es</em> una máscara de componente opcional (.xyzw) que especifica cuál de los componentes de registro se va a usar.</li></ul> | 
+| <span id="interpolationMode"></span><span id="interpolationmode"></span><span id="INTERPOLATIONMODE"></span><em>interpolationMode</em><br /> | [in] Opcional. Modo de interpolación, que solo se respeta en los registros de entrada del sombreador de píxeles. Puede ser uno de los siguientes valores: <br /><ul><li>constant: no interpola entre los valores de registro.</li><li>linear: interpola linealmente entre los valores de registro.</li><li>linearCentroid: igual que lineal pero centroide fija al multimuestreo.</li><li>linearNoperspective: igual que lineal pero sin corrección de perspectiva.</li><li>linearNoperspectiveCentroid: igual que lineal, centroide con fijación cuando se multimuestreo, sin corrección de perspectiva.</li></ul> | 
+
 
 
 
@@ -93,7 +66,7 @@ Esta instrucción se incluye para ayudar a depurar un sombreador en el ensamblad
 
 ## <a name="example"></a>Ejemplo
 
-A continuación se muestran algunos ejemplos.
+Estos son algunos ejemplos.
 
 
 ```
@@ -113,7 +86,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
 | [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
-| [Shader Model 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
 | [Shader Model 4](dx-graphics-hlsl-sm4.md)                | Sí       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
 | [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |

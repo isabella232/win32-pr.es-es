@@ -1,15 +1,15 @@
 ---
-description: La propiedad CurrentCCService establece o recupera el servicio de subtítulos (CC) actual.
+description: La propiedad CurrentCCService establece o recupera el servicio de subtítulos actual.
 ms.assetid: 094cf812-3122-4d5f-af8a-afd1c2264a2b
 title: Propiedad CurrentCCService
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bb5c1ddf243b0ec943be1f22930a8802d28d1bda
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d836e852d1a144abb5422f71d0127eb9c37b8f333dce0723db2c2b3b1889ec50
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103906696"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120075965"
 ---
 # <a name="currentccservice-property"></a>Propiedad CurrentCCService
 
@@ -18,7 +18,7 @@ ms.locfileid: "103906696"
 
  
 
-La `CurrentCCService` propiedad establece o recupera el servicio de subtítulos (CC) actual.
+La `CurrentCCService` propiedad establece o recupera el servicio de subtítulos actual.
 
 ``` syntax
 [ iService = ] MSWebDVD.CurrentCCService
@@ -26,19 +26,19 @@ La `CurrentCCService` propiedad establece o recupera el servicio de subtítulos 
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor entero que indica el tipo de servicio de subtítulos (CC) habilitado.
+Devuelve un valor entero que indica el tipo de servicio de subtítulos habilitado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los valores posibles de esta propiedad son:
 
 
 
-| Value | Descripción                                                          |
+| Valor | Descripción                                                          |
 |-------|----------------------------------------------------------------------|
 | 0x0   | No hay ningún servicio actual. Este es el valor predeterminado.                       |
-| 0x1   | Título real, primer campo. Servicio predeterminado.                       |
-| 0x2   | Subtítulos para el segundo campo del idioma secundario. Por lo general, no se usa. |
+| 0x1   | Subtítulos verdaderos, primer campo. Servicio predeterminado.                       |
+| 0x2   | Subtítulos para el idioma secundario, segundo campo. Por lo general, no se usa. |
 
 
 

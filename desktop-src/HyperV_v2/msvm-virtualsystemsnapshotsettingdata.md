@@ -1,7 +1,7 @@
 ---
-description: Proporciona información adicional que se va a usar con el método CreateSnapshot de la \_ clase VirtualSystemSnapshotService de MSVM.
+description: Proporciona información adicional que se usará con el método CreateSnapshot de la clase Msvm \_ VirtualSystemSnapshotService.
 ms.assetid: d4a025c4-6a3c-4ae0-8f2c-421c1aa1eb23
-title: Msvm_VirtualSystemSnapshotSettingData (clase)
+title: Msvm_VirtualSystemSnapshotSettingData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 32ab52da97e9fcc943c3a70548bb6b1a6d7994a0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d112e4109ed6d0ab899aadf59f0e991f52259eaf2c514c6d9215b04a8cafcab8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104423687"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046255"
 ---
-# <a name="msvm_virtualsystemsnapshotsettingdata-class"></a>MSVM \_ VirtualSystemSnapshotSettingData (clase)
+# <a name="msvm_virtualsystemsnapshotsettingdata-class"></a>Clase Msvm \_ VirtualSystemSnapshotSettingData
 
-Proporciona información adicional que se va a usar con el método [**CreateSnapshot**](cim-virtualsystemsnapshotservice-createsnapshot.md) de la clase [**\_ VirtualSystemSnapshotService de MSVM**](msvm-virtualsystemsnapshotservice.md) .
+Proporciona información adicional que se usará con el [**método CreateSnapshot**](cim-virtualsystemsnapshotservice-createsnapshot.md) de la [**clase Msvm \_ VirtualSystemSnapshotService.**](msvm-virtualsystemsnapshotservice.md)
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -43,26 +43,26 @@ class Msvm_VirtualSystemSnapshotSettingData : CIM_SettingData
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ VirtualSystemSnapshotSettingData** tiene estos tipos de miembros:
+La **clase \_ VirtualSystemSnapshotSettingData de Msvm** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ VirtualSystemSnapshotSettingData** tiene estas propiedades.
+La **clase Msvm \_ VirtualSystemSnapshotSettingData** tiene estas propiedades.
 
 <dl> <dt>
 
 **ConsistencyLevel**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El nivel de coherencia de la instantánea.
+Nivel de coherencia de la instantánea.
 
 <dt>
 
@@ -75,14 +75,14 @@ El nivel de coherencia de la instantánea.
 
 <span id="Application_Consistent"></span><span id="application_consistent"></span><span id="APPLICATION_CONSISTENT"></span>
 
-**Coherente** con la aplicación (1)
+**Coherente con la** aplicación (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Crash_Consistent"></span><span id="crash_consistent"></span><span id="CRASH_CONSISTENT"></span>
 
-**Coherencia de bloqueos** (2)
+**Coherente con bloqueos** (2)
 
 
 </dt> <dd></dd> </dl>
@@ -92,13 +92,13 @@ El nivel de coherencia de la instantánea.
 **GuestBackupType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Tipo de copia de seguridad que se va a usar en el invitado.
+Tipo de copia de seguridad que se va a usar dentro del invitado.
 
 > [!Note]  
 > Propiedad agregada en Windows 10, versión 1703
@@ -116,7 +116,7 @@ Tipo de copia de seguridad que se va a usar en el invitado.
 
 <span id="Full"></span><span id="full"></span><span id="FULL"></span>
 
-**Full** (1)
+**Completo** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -139,7 +139,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica si los discos que no son de snapshottable, como los discos de acceso directo y los discos Canal de fibra, se omitirán al crear la instantánea.
+Especifica si los discos que no se pueden crear instantáneas, como los discos de acceso directo y Canal de fibra, se omitirán al crear la instantánea.
 
 </dd> </dl>
 
@@ -149,10 +149,10 @@ Especifica si los discos que no son de snapshottable, como los discos de acceso 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -161,7 +161,7 @@ Especifica si los discos que no son de snapshottable, como los discos de acceso 
 
 <dl> <dt>
 
-[**SettingData de CIM \_**](cim-settingdata.md)
+[**CIM \_ SettingData**](cim-settingdata.md)
 </dt> </dl>
 
  

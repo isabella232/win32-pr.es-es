@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: b9648b1b662cb98bc762a479782e4d3742d4d32056fc9f15f43f58f8f4a89659
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f6a3b46dc226a85593a17b02118ed52088ed75d6
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117726946"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122472001"
 ---
 # <a name="dcl_outputtopology-sm4---asm"></a>dcl \_ outputTopology (sm4 - asm)
 
@@ -31,29 +31,11 @@ Declara los datos de salida del sombreador de geometría de tipo primitivo.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span id="Type"></span><span id="type"></span><span id="TYPE"></span><em>Tipo</em><br/></td>
-<td>[in] Una topología primitiva de salida, que es uno de los siguientes valores: <br/>
-<ul>
-<li><em>Pointlist</em></li>
-<li><em>linestrip</em></li>
-<li><em>trianglestrip</em></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento | Descripción | 
+|------|-------------|
+| <span id="Type"></span><span id="type"></span><span id="TYPE"></span><em>Tipo</em><br /> | [in] Una topología primitiva de salida, que es uno de los siguientes valores: <br /><ul><li><em>Pointlist</em></li><li><em>linestrip</em></li><li><em>trianglestrip</em></li></ul> | 
+
 
 
 
@@ -71,7 +53,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-Esta instrucción se incluye para ayudar a depurar un sombreador en ensamblado; No se puede crear un sombreador en el lenguaje de ensamblado mediante El modelo de sombreador 4.
+Esta instrucción se incluye para ayudar a depurar un sombreador en el ensamblado; No se puede crear un sombreador en el lenguaje de ensamblado mediante El modelo de sombreador 4.
 
 ## <a name="example"></a>Ejemplo
 
@@ -92,9 +74,9 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
 | [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | Sí       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
 | [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
@@ -107,7 +89,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado del modelo de sombreador 4 (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo de sombreador 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

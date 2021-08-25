@@ -3,7 +3,7 @@ title: Elemento Scale
 description: Representa la preferencia de tamaño y diseño de un grupo de controles a través de un par Group, SizeDefinition.
 ms.assetid: feef3721-c779-4c64-96c6-9d951ac32277
 keywords:
-- Escala de elementos de la cinta de opciones de Windows
+- Escala del elemento Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e3ba922b65525b92189673020f7155275bdf49f9
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 580cfad910a727f7e4392489adc8cb8baec9a0bc
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111445016"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122630206"
 ---
 # <a name="scale-element"></a>Elemento Scale
 
@@ -39,16 +39,16 @@ Representa el tamaño y la preferencia de diseño de [**un grupo de**](windowsri
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Requerido</th>
+<th>Obligatorio</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -93,13 +93,13 @@ Opcional.
 
 Puede producirse una o varias veces para [**cada ScalingPolicy**](windowsribbon-element-scalingpolicy.md) o [**ScalingPolicy.IdealSizes.**](windowsribbon-element-scalingpolicy-idealsizes.md)
 
-Cada par de atributos *(Group*, *Size)* debe ser único.
+Cada par *de atributos (Group*, *Size)* debe ser único.
 
 ## <a name="examples"></a>Ejemplos
 
 En el ejemplo siguiente se muestra cómo se puede personalizar la apariencia de los controles de un grupo [**mediante**](windowsribbon-element-group.md) la funcionalidad de diseño adaptable de las plantillas [**SizeDefinition de**](windowsribbon-element-sizedefinition.md) la cinta de opciones.
 
-El [**manifiesto ScalingPolicy**](windowsribbon-element-scalingpolicy.md) de este ejemplo especifica una preferencia [**ScalingPolicy.IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) [**SizeDefinition**](windowsribbon-element-sizedefinition.md) para cada uno de los cuatro grupos de controles de una **pestaña** Inicio. Además, los **elementos Scale** se especifican para influir en el comportamiento de conserción, en orden descendente, de cada grupo.
+El [**manifiesto ScalingPolicy**](windowsribbon-element-scalingpolicy.md) de este ejemplo especifica una preferencia [**ScalingPolicy.IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) [**SizeDefinition**](windowsribbon-element-sizedefinition.md) para cada uno de los cuatro grupos de controles de una **pestaña** Inicio. Además, se **especifican elementos Scale** para influir en el comportamiento de conserción, en orden descendente, de cada grupo.
 
 
 ```XML

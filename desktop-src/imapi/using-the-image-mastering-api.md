@@ -1,29 +1,29 @@
 ---
-title: Uso de la API de masterización de imágenes
-description: En los siguientes ejemplos se muestra el uso de IMAPi
+title: Uso de Image Mastering API
+description: En los ejemplos siguientes se muestra el uso de IMAPI
 ms.assetid: 93f56e35-698e-4031-8595-9ff2ffb933ae
 keywords:
-- API de patrón de imágenes IMAPi, usar
+- IMAGE Mastering API IMAPI , mediante
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fb700a0e69f182df6189e47745d93c0d8c431810
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a00972f446c62c4e5e1aa73108fc0474437a7a355d41964cd5ed299b9bdf82e3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104076365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062505"
 ---
-# <a name="using-the-image-mastering-api"></a>Uso de la API de masterización de imágenes
+# <a name="using-the-image-mastering-api"></a>Uso de Image Mastering API
 
-En los siguientes ejemplos se muestra el uso de IMAPi:
+En los ejemplos siguientes se muestra el uso de IMAPI:
 
--   [Interactuar con IMAPi](interacting-with-imapi.md)
--   [Evitar el cierre de sesión o la suspensión durante una grabación](preventing-logoff-or-suspend-during-a-burn.md)
--   [Crear discos con varias sesiones](creating-discs-with-multiple-sessions.md)
+-   [Interacción con IMAPI](interacting-with-imapi.md)
+-   [Evitar el cierre de sesión o suspender durante una grabación](preventing-logoff-or-suspend-during-a-burn.md)
+-   [Creación de discos con varias sesiones](creating-discs-with-multiple-sessions.md)
 
- 
+ 
 
- 
+ 
 
 
 

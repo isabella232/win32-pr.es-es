@@ -1,21 +1,21 @@
 ---
-description: 'Especifica cómo IPropertyDescription:: FormatForDisplay debe formatear el valor de la propiedad como una cadena. Esto solo es aplicable si <displayInfo displayType=&\#0034;DateTime&\#0034;> .'
+description: Especifica cómo IPropertyDescription::FormatForDisplay debe dar formato al valor de la propiedad como una cadena. Esto solo es aplicable si <displayInfo displayType=&\#0034;DateTime&\#0034;> .
 ms.assetid: c290fb2e-ef5b-4dea-ba42-7c9e273a89dc
 title: dateTimeFormat
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 091898f77f4dcc37bbe65515f8606104a4d968bb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 950f10106d7850f4a5b58aeb165e8cb4cc9ffcd4
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276205"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122629177"
 ---
 # <a name="datetimeformat"></a>dateTimeFormat
 
-Especifica cómo [**IPropertyDescription:: FormatForDisplay**](/windows/win32/api/propsys/nf-propsys-ipropertydescription-formatfordisplay) debe formatear el valor de la propiedad como una cadena. Esto solo es aplicable si <displayInfo displayType="DateTime"> . Solo debe haber un elemento [DateTimeFormat]() para cada elemento [displayInfo](./propdesc-schema-displayinfo.md) .
+Especifica cómo [**IPropertyDescription::FormatForDisplay**](/windows/win32/api/propsys/nf-propsys-ipropertydescription-formatfordisplay) debe dar formato al valor de la propiedad como una cadena. Esto solo es aplicable si <displayInfo displayType="DateTime"> . Solo debe haber un [elemento dateTimeFormat]() para cada [elemento displayInfo.](./propdesc-schema-displayinfo.md)
 
-Si hay varios elementos, se usa el último. Si no se proporciona ningún elemento [DateTimeFormat]() , se aplica la configuración de atributo predeterminada a la descripción de la propiedad.
+Si hay varios elementos, se usa el último. Si no [se proporciona ningún elemento dateTimeFormat,]() la configuración de atributo predeterminada se aplica a la descripción de la propiedad.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -78,8 +78,8 @@ Si hay varios elementos, se usa el último. Si no se proporciona ningún element
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -89,8 +89,8 @@ Si hay varios elementos, se usa el último. Si no se proporciona ningún element
 </thead>
 <tbody>
 <tr class="odd">
-<td>formatas</td>
-<td>Público. Opcional. El valor predeterminado es &quot; General &quot; . Estos son los valores válidos. 
+<td>formatAs</td>
+<td>Público. Opcional. El valor predeterminado &quot; es &quot; General. Estos son los valores válidos. 
 <table>
 <thead>
 <tr class="header">
@@ -101,15 +101,15 @@ Si hay varios elementos, se usa el último. Si no se proporciona ningún element
 <tbody>
 <tr class="odd">
 <td>General</td>
-<td>Predeterminada. Da formato al valor de fecha y hora mediante <a href="/windows/desktop/api/shlwapi/nf-shlwapi-shformatdatetimea"><strong>SHFormatDateTime</strong></a>. Use los atributos <em>formatTimeAs</em> y <em>formatDateAs</em> para especificar cómo se da formato a la fecha y hora. Requiere que el tipo de propiedad sea DateTime.</td>
+<td>Predeterminada. Da formato al valor de fecha y hora <a href="/windows/desktop/api/shlwapi/nf-shlwapi-shformatdatetimea"><strong>mediante SHFormatDateTime.</strong></a> Use los <em>atributos formatTimeAs</em> <em>y formatDateAs</em> para especificar cómo se formatea la hora y la fecha. Requiere que el tipo de propiedad sea DateTime.</td>
 </tr>
 <tr class="even">
-<td>Mes</td>
-<td>Da formato al valor como uno de los meses del año. Requiere que el tipo de propiedad sea Int32. El valor debe almacenarse como un valor numérico con 1 que representa el primer mes del año.</td>
+<td>Month (Mes)</td>
+<td>Da formato al valor como uno de los meses del año. Requiere que el tipo de propiedad sea Int32. El valor debe almacenarse como un valor numérico con 1 que represente el primer mes del año.</td>
 </tr>
 <tr class="odd">
 <td>YearMonth</td>
-<td>Da formato al valor como &quot; año-mes &quot; . Requiere que el tipo de propiedad sea Int32. El valor se debe almacenar de forma que los dos bytes más altos especifiquen el año y los dos bytes inferiores especifiquen el mes.</td>
+<td>Da formato al valor &quot; como Año - Mes &quot; . Requiere que el tipo de propiedad sea Int32. El valor debe almacenarse de forma que los dos bytes más altos especifiquen el año y los dos bytes inferiores especifiquen el mes.</td>
 </tr>
 <tr class="even">
 <td>Year</td>
@@ -122,7 +122,7 @@ Si hay varios elementos, se usa el último. Si no se proporciona ningún element
 </tr>
 <tr class="even">
 <td>formatTimeAs</td>
-<td>Público. Opcional. El valor predeterminado es &quot; ShortTime &quot; . Especifica el formato en el que se va a mostrar la hora. Se aplica cuando <strong>formatas &quot; = &quot; General</strong>. Estos son los valores válidos. 
+<td>Público. Opcional. El valor predeterminado &quot; es &quot; ShortTime. Especifica el formato en el que se va a mostrar la hora. Se aplica cuando <strong>formatAs= &quot; General &quot; </strong>. Estos son los valores válidos. 
 <table>
 <thead>
 <tr class="header">
@@ -133,15 +133,15 @@ Si hay varios elementos, se usa el último. Si no se proporciona ningún element
 <tbody>
 <tr class="odd">
 <td>ShortTime</td>
-<td>Predeterminada. Mostrar la hora como &quot; 7:48 PM &quot; .</td>
+<td>Predeterminada. Muestre la hora como &quot; 7:48 p. &quot; m.</td>
 </tr>
 <tr class="even">
-<td>Sido</td>
-<td>Mostrar la hora como &quot; 7:48:33 PM &quot; .</td>
+<td>Largo</td>
+<td>Muestre la hora como &quot; 7:48:33 p. &quot; m.</td>
 </tr>
 <tr class="odd">
 <td>HideTime</td>
-<td>No muestra la parte de hora de la fecha.</td>
+<td>No muestre la parte de hora de la fecha.</td>
 </tr>
 </tbody>
 </table>
@@ -150,7 +150,7 @@ Si hay varios elementos, se usa el último. Si no se proporciona ningún element
 </tr>
 <tr class="odd">
 <td>formatDateAs</td>
-<td>Público. Opcional. El valor predeterminado es &quot; fechacorta &quot; . Especifica el formato en el que se va a mostrar la fecha. Se aplica cuando <strong>formatas &quot; = &quot; General</strong>. Estos son los valores válidos. 
+<td>Público. Opcional. El valor predeterminado &quot; es &quot; ShortDate. Especifica el formato en el que se va a mostrar la fecha. Se aplica cuando <strong>formatAs= &quot; General &quot; </strong>. Estos son los valores válidos. 
 <table>
 <thead>
 <tr class="header">
@@ -160,24 +160,24 @@ Si hay varios elementos, se usa el último. Si no se proporciona ningún element
 </thead>
 <tbody>
 <tr class="odd">
-<td>Fechacorta</td>
-<td>Predeterminada. Muestra la fecha como &quot; 5/13/59 &quot; .</td>
+<td>ShortDate</td>
+<td>Predeterminada. Muestre la fecha como &quot; 5/13/59 &quot; .</td>
 </tr>
 <tr class="even">
 <td>LongDate</td>
-<td>Mostrar la fecha como el &quot; miércoles, 13 de mayo de 1959 &quot; .</td>
+<td>Muestre la fecha como &quot; miércoles, 13 de mayo de 1959. &quot;</td>
 </tr>
 <tr class="odd">
 <td>HideDate</td>
-<td>No mostrar la parte de la fecha.</td>
+<td>No muestre la parte de la fecha.</td>
 </tr>
 <tr class="even">
 <td>RelativeShortDate</td>
-<td>Muestre la fecha como &quot; fechacorta &quot; , pero use descripciones relativas, como &quot; ayer &quot; , siempre que sea posible.</td>
+<td>Muestre la fecha como &quot; &quot; ShortDate, pero use descripciones relativas, como &quot; &quot; ayer, siempre que sea posible.</td>
 </tr>
 <tr class="odd">
 <td>RelativeLongDate</td>
-<td>Muestre la fecha como &quot; LongDate &quot; , pero use descripciones relativas, como &quot; ayer &quot; , siempre que sea posible.</td>
+<td>Muestre la fecha como &quot; &quot; LongDate, pero use descripciones relativas, como &quot; &quot; ayer, siempre que sea posible.</td>
 </tr>
 </tbody>
 </table>

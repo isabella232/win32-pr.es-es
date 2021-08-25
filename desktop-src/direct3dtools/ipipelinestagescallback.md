@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 7782985f4317a02d2b159722f7a5897978b952b5
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7c37fa4d282c8c17237a5e0149debb481c6325c9
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108087903"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622761"
 ---
 # <a name="span-idvspixengineipipelinestagescallbackspanipipelinestagescallback-interface"></a><span id="vspixengine.ipipelinestagescallback"></span>IPipeLineStagesCallback (interfaz)
 
@@ -38,13 +38,13 @@ La **interfaz IPipeLineStagesCallback** hereda de la [**interfaz IUnknown.**](/w
 
 La **interfaz IPipeLineStagesCallback** tiene estos métodos.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipipelinestagescallback-getsupportedstages-dword-pipelinestage-arr-uint-uint"><strong>GetSupportedStages</strong></a></td><td style="text-align: left;"><p>Devolución de llamada que notifica al host qué fases de canalización se usan en la llamada a draw de la solicitud assocaited.</p></td></tr><tr class="even"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipipelinestagescallback-meshdatanotavailablecallback-uint-pipelinestageerror-arr-uint-uint-eventid"><strong>MeshDataNotAvailableCallback</strong></a></td><td style="text-align: left;"><p>Devolución de llamada que notifica al host qué fases de canalización no pueden devolver datos de malla para el evento especificado en la solicitud asociada.</p></td></tr><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipipelinestagescallback-meshdatavertcallback-uint-uint-meshdatabufferlayoutentry-arr-uint-uint-byte-arr-uint-byte-arr-uint-uint-uint-uint-bool-uint-uint"><strong>MeshDataVertCallback</strong></a></td><td style="text-align: left;"><p>Devolución de llamada que notifica al host la información de malla de fases de canalización devuelta por la solicitud assocaited.</p></td></tr><tr class="even"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipipelinestagescallback-resultcallback-pipelinestagesid-eventid-dword-dword-dword-dword-byte-arr"><strong>ResultCallback</strong></a></td><td style="text-align: left;"><p>Devolución de llamada que notifica al host la información de la imagen de las fases de canalización devuelta por la solicitud assocaited.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipipelinestagescallback-getsupportedstages-dword-pipelinestage-arr-uint-uint"><strong>GetSupportedStages</strong></a></td><td style="text-align: left;"><p>Devolución de llamada que notifica al host qué fases de canalización se usan en la llamada a draw de la solicitud assocaited.</p></td></tr><tr class="even"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipipelinestagescallback-meshdatanotavailablecallback-uint-pipelinestageerror-arr-uint-uint-eventid"><strong>MeshDataNotAvailableCallback</strong></a></td><td style="text-align: left;"><p>Devolución de llamada que notifica al host qué fases de canalización no pueden devolver datos de malla para el evento especificado en la solicitud asociada.</p></td></tr><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipipelinestagescallback-meshdatavertcallback-uint-uint-meshdatabufferlayoutentry-arr-uint-uint-byte-arr-uint-byte-arr-uint-uint-uint-uint-bool-uint-uint"><strong>MeshDataVertCallback</strong></a></td><td style="text-align: left;"><p>Devolución de llamada que notifica al host la información de malla de fases de canalización devuelta por la solicitud assocaited.</p></td></tr><tr class="even"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipipelinestagescallback-resultcallback-pipelinestagesid-eventid-dword-dword-dword-dword-byte-arr"><strong>ResultCallback</strong></a></td><td style="text-align: left;"><p>Devolución de llamada que notifica al host la información de la imagen de las fases de canalización devuelta por la solicitud assocaited.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 
